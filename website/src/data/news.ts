@@ -68,6 +68,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "sentinelone-ai-detects-autonomous-artex-attacks-d429a6af",
+    "title": "SentinelOne AI Detects Autonomous ARTEX Attacks",
+    "summary": "SentinelOne demonstrates its Behavioral AI, Singularity AI SIEM, and Purple AI modules detecting autonomous ARTEX attacks across cloud, identity, and endpoint platforms. The framework uses machine‑learning models trained on ARTEX command‑and‑control traffic, enabling real‑time threat isolation without manual signatures. Teams should integrate these AI modules into SIEM pipelines to improve visibility and accelerate response to AI‑driven threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/artex-unmasked-the-rise-of-ai-powered-artex-in-cybercrime-espionage/",
+    "publishedAt": "2026-11-13T21:23:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sentinelone-ai-detects-autonomous-artex-attacks",
+      "article-d429a6af",
+      "d429a6af",
+      "sentinelone-ai-detects-autonomous-artex-attacks-63b621"
+    ]
+  },
+  {
     "slug": "ai-enabled-pentest-platforms-lower-attack-skill-th-0112375a",
     "title": "AI‑Enabled Pentest Platforms Lower Attack Skill Threshold",
     "summary": "AI‑enabled pentest and red‑team frameworks automate reconnaissance, vulnerability testing, and follow‑on actions, reducing the skill required for attackers. These tools chain operations seamlessly, enabling rapid exploitation cycles and accelerating intrusion timelines when misused by threat actors. Security teams should assess the risk of adopting such platforms, enforce strict access controls, and monitor for anomalous usage patterns.",
@@ -102,6 +120,25 @@ export const news: NewsBrief[] = [
       "article-3fd9c401",
       "3fd9c401",
       "arcticrat-expands-to-full-device-control-using-ai-6c13e7"
+    ]
+  },
+  {
+    "slug": "cloudflare-releases-kitesurf-browser-engine-open-s-503d6c59",
+    "title": "Cloudflare Releases Kitesurf Browser Engine Open Source",
+    "summary": "Cloudflare has open‑sourced Kitesurf, an experimental browser engine designed for AI agents, allowing developers to inspect, run, and deploy it locally or on Cloudflare Workers. The source code is available on GitHub, enabling community contributions and custom deployments in edge computing environments. Security teams should review the repository for potential vulnerabilities and consider integrating Kitesurf into their AI‑agent testing pipelines.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/kitesurf-open-source/",
+    "publishedAt": "2026-11-13T20:20:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-releases-kitesurf-browser-engine-open-s",
+      "article-503d6c59",
+      "503d6c59",
+      "cloudflare-releases-kitesurf-browser-engine-open-s-314cfe",
+      "cloudflare-releases-kitesurf-browser-engine-open-source"
     ]
   },
   {
@@ -143,6 +180,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cloudflare-warns-of-ai-powered-pen-testing-threats-ed7d3290",
+    "title": "Cloudflare Warns of AI-Powered Pen Testing Threats",
+    "summary": "Cloudflare reports AI‑orchestrated penetration testing platforms like ARTEX can launch attacks against exposed enterprise infrastructure. These platforms automate reconnaissance, exploit publicly disclosed vulnerabilities, and harvest credentials, creating a scalable threat vector that bypasses manual testing. Cloudflare advises continuous monitoring, hardened segmentation, and AI‑driven anomaly detection to mitigate critical orchestrated attacks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/",
+    "publishedAt": "2026-11-13T19:26:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-warns-of-ai-powered-pen-testing-threats",
+      "article-ed7d3290",
+      "ed7d3290",
+      "cloudflare-warns-of-ai-powered-pen-testing-threats-44a566"
+    ]
+  },
+  {
     "slug": "nyc-imposes-1-000-fine-for-surveillance-pricing-c5a51994",
     "title": "NYC Imposes $1,000 Fine for Surveillance Pricing",
     "summary": "NYC will levy a $1,000 penalty on companies that charge customers for surveillance services, curbing hidden pricing practices. The fine applies after a verified instance, requiring firms to document pricing structures and submit evidence to the city’s enforcement office. Businesses should review pricing policies, keep transparent records, and seek legal counsel to ensure compliance before enforcement.",
@@ -177,6 +232,25 @@ export const news: NewsBrief[] = [
       "2be048f4",
       "weekly-cybersecurity-roundup-crypto-scams-turla-ra-5e83ec",
       "weekly-cybersecurity-roundup-crypto-scams-turla-railway-brea"
+    ]
+  },
+  {
+    "slug": "quantum-systems-reports-drone-operation-disruption-4c32ae5e",
+    "title": "Quantum Systems Reports Drone Operation Disruption by Cyberattack",
+    "summary": "Quantum Systems, a German defense tech firm, reported hostile actors disrupted its drone operations in late October. The attack targeted operational control systems, causing temporary loss of flight control and mission data integrity, with no physical damage reported. Quantum Systems is conducting forensic analysis, applied emergency firmware patches, and advises operators to enforce stricter access controls and continuous monitoring.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
+    "publishedAt": "2026-11-13T17:31:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "quantum-systems-reports-drone-operation-disruption",
+      "article-4c32ae5e",
+      "4c32ae5e",
+      "quantum-systems-reports-drone-operation-disruption-285183",
+      "quantum-systems-reports-drone-operation-disruption-by-cybera"
     ]
   },
   {
@@ -255,6 +329,69 @@ export const news: NewsBrief[] = [
       "12ca6dd7",
       "check-point-gateways-targeted-by-php2shell-for-esx-276e8a",
       "check-point-gateways-targeted-by-php2shell-for-esxi-wiper"
+    ]
+  },
+  {
+    "slug": "windows-graphics-kernel-exposes-information-via-cv-85632a60",
+    "title": "Windows Graphics Kernel Exposes Information via CVE-2026-96144",
+    "summary": "A Windows Graphics Kernel information‑disclosure flaw (CVE‑2026‑96144) allows local users to read protected memory through the kernel’s rendering subsystem. The flaw results from unchecked pointer dereference during rendering, permitting local users to read kernel memory and potentially expose sensitive data. Microsoft recommends installing the latest Office update that includes the kernel patch; no work‑around is available.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96144",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-96144"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-graphics-kernel-exposes-information-via-cv",
+      "article-85632a60",
+      "85632a60",
+      "windows-graphics-kernel-exposes-information-via-cv-743184",
+      "windows-graphics-kernel-exposes-information-via-cve-2026-961"
+    ]
+  },
+  {
+    "slug": "windows-graphics-kernel-exposes-data-via-cve-2026-fdcccb30",
+    "title": "Windows Graphics Kernel Exposes Data via CVE-2026-88217",
+    "summary": "A Windows Graphics Kernel information‑disclosure flaw (CVE‑2026‑88217) permits local users to read protected memory through the kernel’s rendering subsystem. The vulnerability stems from unchecked pointer dereference during rendering, allowing local users to extract kernel data and potentially expose sensitive information. Microsoft advises installing the latest Office update that contains the kernel patch; no workaround exists.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88217",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-88217"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-graphics-kernel-exposes-data-via-cve-2026",
+      "article-fdcccb30",
+      "fdcccb30",
+      "windows-graphics-kernel-exposes-data-via-cve-2026-743eaf",
+      "windows-graphics-kernel-exposes-data-via-cve-2026-88217"
+    ]
+  },
+  {
+    "slug": "windows-graphics-kernel-privilege-escalation-via-c-87afd1a9",
+    "title": "Windows Graphics Kernel Privilege Escalation via CVE-2026-95932",
+    "summary": "A Windows Graphics Kernel privilege‑escalation flaw (CVE‑2026‑95932) enables local users to gain elevated kernel privileges through the rendering subsystem. The root cause is an unchecked pointer dereference during graphics command processing, allowing attackers to execute arbitrary kernel code and elevate privileges without authentication. Microsoft recommends applying the latest Office update that includes the kernel patch; no workaround is available.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95932",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-95932"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-graphics-kernel-privilege-escalation-via-c",
+      "article-87afd1a9",
+      "87afd1a9",
+      "windows-graphics-kernel-privilege-escalation-via-c-7431db",
+      "windows-graphics-kernel-privilege-escalation-via-cve-2026-95"
     ]
   },
   {
@@ -1599,6 +1736,85 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "linux-kernel-pagemap-use-after-free-exploits-local-9aa6ce78",
+    "title": "Linux Kernel Pagemap Use‑After‑Free Exploits Local Privilege Escalation",
+    "summary": "A Linux Kernel pagemap scan use‑after‑free flaw (ZDI‑26‑999) permits local attackers to execute arbitrary code with elevated privileges. The flaw stems from a race condition that frees the pagemap buffer prematurely, enabling kernel memory read/write; CVSS 8.8. Kernel maintainers patched the issue in the 6.5 series; users should update or apply the vendor backport.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-999/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-pagemap-use-after-free-exploits-local",
+      "article-9aa6ce78",
+      "9aa6ce78",
+      "linux-kernel-pagemap-use-after-free-exploits-local-6f3d2a",
+      "linux-kernel-pagemap-use-after-free-exploits-local-privilege"
+    ]
+  },
+  {
+    "slug": "linux-kernel-ksmbd-smb-direct-rce-integer-underflo-53c0777d",
+    "title": "Linux Kernel KSMBD SMB Direct RCE Integer Underflow",
+    "summary": "A remote integer underflow in Linux Kernel KSMBD’s SMB Direct allows code execution on affected systems. The flaw stems from unchecked arithmetic on SMB Direct packet lengths, enabling unauthenticated RCE in affected configurations; CVSS 9.0. Kernel maintainers released a patch; administrators should update to the latest kernel release or disable SMB Direct to mitigate.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-998/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-ksmbd-smb-direct-rce-integer-underflo",
+      "article-53c0777d",
+      "53c0777d",
+      "linux-kernel-ksmbd-smb-direct-rce-integer-underflo-6f3d2a",
+      "linux-kernel-ksmbd-smb-direct-rce-integer-underflow"
+    ]
+  },
+  {
+    "slug": "smartermail-authentication-bypass-via-low-entropy-6663343c",
+    "title": "SmarterMail Authentication Bypass via Low Entropy",
+    "summary": "An authentication bypass flaw in SmarterTools SmarterMail allows remote attackers to access accounts without credentials. The vulnerability arises from insufficient entropy in password hashing, enabling brute‑force or dictionary attacks; CVE-2026-126969 carries a CVSS score of 9.1. Administrators should apply the vendor‑issued patch or upgrade to the latest SmarterMail release to eliminate the bypass.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-997/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126969"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "smartermail-authentication-bypass-via-low-entropy",
+      "article-6663343c",
+      "6663343c",
+      "smartermail-authentication-bypass-via-low-entropy-6f3d2a"
+    ]
+  },
+  {
+    "slug": "smartertools-smartermail-privilege-escalation-vuln-ea8ce86c",
+    "title": "SmarterTools SmarterMail Privilege Escalation Vulnerability",
+    "summary": "Remote attackers can exploit a privilege escalation flaw in SmarterTools SmarterMail installations, requiring authenticated access. The flaw, tracked as CVE-2026-126966 with CVSS 8.8, enables authenticated remote code execution via missing authorization checks, allowing full system compromise. SmarterTools should issue a patch fixing the missing authorization check, and administrators must apply updates promptly to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-995/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126966"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "smartertools-smartermail-privilege-escalation-vuln",
+      "article-ea8ce86c",
+      "ea8ce86c",
+      "smartertools-smartermail-privilege-escalation-vuln-6f3d2a",
+      "smartertools-smartermail-privilege-escalation-vulnerability"
     ]
   },
   {
@@ -9345,246 +9561,6 @@ export const news: NewsBrief[] = [
       "afced55d",
       "xen-orchestra-auth-bypass-vsa-2026-062-patched-5e576d",
       "xen-orchestra-auth-bypass-cve-2026-123158-patched-0e92fe33"
-    ]
-  },
-  {
-    "slug": "claude-code-ai-discovers-technique-to-turn-dormant-7cfee60b",
-    "title": "Claude Code AI Discovers Technique to Turn Dormant Model Neurons Into Hidden Malware Triggers",
-    "summary": "Claude Code helped uncover a technique that can turn an otherwise capable AI model into a sleeper agent by changing fewer than 10 dormant neurons. Called Lazarus, the method plants a hidden backdoor in model weights, allowing an attacker’s trigger to make an AI agent produce commands that download and run malicious code.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/claude-code-ai/",
-    "publishedAt": "2026-11-11T11:57:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-code-ai-discovers-technique-to-turn-dormant",
-      "article-7cfee60b",
-      "7cfee60b",
-      "claude-code-ai-discovers-technique-to-turn-dormant-228793",
-      "claude-code-ai-discovers-technique-to-turn-dormant-model-neu"
-    ]
-  },
-  {
-    "slug": "git-fixes-6-vulnerabilities-enabling-code-executio-6e926cb9",
-    "title": "Git Fixes 6 Vulnerabilities Enabling Code Execution via Cloning",
-    "summary": "Git released 2.56.1, fixing six flaws that could allow code execution during recursive cloning. The critical bug causes an out‑of‑bounds write in the clone process; the others involve unsafe file writes and memory corruption in merges and patches. Upgrade to 2.56.1 or backport the patches to older releases like 2.55.1 and 2.54.1.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/git-fixes-security-vulnerabilities/",
-    "publishedAt": "2026-11-11T11:33:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "git-fixes-6-vulnerabilities-enabling-code-executio",
-      "article-6e926cb9",
-      "6e926cb9",
-      "git-fixes-6-vulnerabilities-enabling-code-executio-5c5eb7",
-      "git-fixes-6-vulnerabilities-enabling-code-execution-via-clon"
-    ]
-  },
-  {
-    "slug": "windows-bitlocker-vulnerabilities-allow-attackers-7dee1c25",
-    "title": "Windows BitLocker Vulnerabilities Allow Attackers to Bypass Security Feature",
-    "summary": "Microsoft has disclosed two Windows BitLocker security feature bypass vulnerabilities that could allow attackers with physical access to weaken device protections. Published on November 10, 2026, the flaws are tracked as CVE-2026-97015 and CVE-2026-119832. Microsoft rates both as Important, with CVSS base scores of 6.8 and 5.9, respectively.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/windows-bitlocker-security-bypass/",
-    "publishedAt": "2026-11-11T11:31:29.000Z",
-    "cves": [
-      "CVE-2026-97015",
-      "CVE-2026-119832"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-bitlocker-vulnerabilities-allow-attackers",
-      "article-7dee1c25",
-      "7dee1c25",
-      "windows-bitlocker-vulnerabilities-allow-attackers-6df65b",
-      "windows-bitlocker-vulnerabilities-allow-attackers-to-bypass-"
-    ]
-  },
-  {
-    "slug": "microsoft-patch-tuesday-addresses-actively-exploit-a1376189",
-    "title": "Microsoft Patch Tuesday Addresses Actively Exploited Outlook CVE",
-    "summary": "Microsoft released a Patch Tuesday update for Outlook to remediate an actively exploited vulnerability identified as CVE-2026-124194. The flaw permits remote code execution via malicious email attachments, enabling attackers to execute arbitrary code on affected systems. Administrators should apply the Outlook patch immediately and verify Office updates to close the exploitation vector.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/microsoft-patch-tuesday-fixes-outlook-flaw-already-under-attack",
-    "publishedAt": "2026-11-11T11:25:05.000Z",
-    "cves": [
-      "CVE-2026-124194"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patch-tuesday-addresses-actively-exploit",
-      "article-a1376189",
-      "a1376189",
-      "microsoft-patch-tuesday-addresses-actively-exploit-344499",
-      "microsoft-patch-tuesday-addresses-actively-exploited-outlook"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98588-moderate-openssl-security-bug-fix-00a2dfee",
-    "title": "RHSA-2026:98588: Moderate: openssl security, bug fix, and enhancement update",
-    "summary": "An update for openssl is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98588",
-    "publishedAt": "2026-11-11T11:23:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98588-moderate-openssl-security-bug-fix",
-      "article-00a2dfee",
-      "00a2dfee",
-      "rhsa-2026-98588-moderate-openssl-security-bug-fix-37d6e4",
-      "rhsa-2026-98588-moderate-openssl-security-bug-fix-and-enhanc"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98586-important-networkmanager-security-54b55bf3",
-    "title": "RHSA-2026:98586: Important: NetworkManager security update",
-    "summary": "An update for NetworkManager is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98586",
-    "publishedAt": "2026-11-11T11:23:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98586-important-networkmanager-security",
-      "article-54b55bf3",
-      "54b55bf3",
-      "rhsa-2026-98586-important-networkmanager-security-37d6e4",
-      "rhsa-2026-98586-important-networkmanager-security-update"
-    ]
-  },
-  {
-    "slug": "multiple-windows-remote-desktop-flaws-allow-attack-59540717",
-    "title": "Multiple Windows Remote Desktop Flaws Allow Attackers to Execute Code Over Network",
-    "summary": "Microsoft has released security updates for four Windows Remote Desktop Client vulnerabilities that could allow attackers to run code through network connections or local access. Published on November 10, 2026, the flaws involve memory handling errors and a race condition. The vulnerabilities are tracked as CVE-2026-119934, CVE-2026-119858, CVE-2026-95964.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/multiple-windows-remote-desktop-vulnerabilities/",
-    "publishedAt": "2026-11-11T11:22:00.000Z",
-    "cves": [
-      "CVE-2026-119934",
-      "CVE-2026-119858",
-      "CVE-2026-95964",
-      "CVE-2026-119390"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "multiple-windows-remote-desktop-flaws-allow-attack",
-      "article-59540717",
-      "59540717",
-      "multiple-windows-remote-desktop-flaws-allow-attack-653499",
-      "multiple-windows-remote-desktop-flaws-allow-attackers-to-exe"
-    ]
-  },
-  {
-    "slug": "microsoft-resolves-usb-audio-issues-from-september-f7c039c5",
-    "title": "Microsoft Resolves USB Audio Issues from September Updates",
-    "summary": "Microsoft addressed USB audio problems affecting Windows users who installed September security updates. The issue stemmed from a driver patch that caused device enumeration failures, disrupting sound output for affected systems; no exploitation was reported. The November 2026 cumulative update restores driver behavior, and users are advised to install the latest package to eliminate the audio malfunction.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/",
-    "publishedAt": "2026-11-11T11:18:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-resolves-usb-audio-issues-from-september",
-      "article-f7c039c5",
-      "f7c039c5",
-      "microsoft-resolves-usb-audio-issues-from-september-7d9763",
-      "microsoft-resolves-usb-audio-issues-from-september-updates"
-    ]
-  },
-  {
-    "slug": "microsoft-researchers-demonstrate-hidden-backdoor-7a159787",
-    "title": "Microsoft researchers demonstrate hidden backdoor technique for AI agents",
-    "summary": "Microsoft researchers have demonstrated how small changes to an AI model can implant a hidden backdoor, causing an agent to execute an attacker’s command when a specific trigger appears. The technique, called Lazarus, requires no model retraining and allows the agent to behave normally during standard safety evaluations.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/microsoft-hidden-ai-backdoors-lazarus/",
-    "publishedAt": "2026-11-11T10:55:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-researchers-demonstrate-hidden-backdoor",
-      "article-7a159787",
-      "7a159787",
-      "microsoft-researchers-demonstrate-hidden-backdoor-39d37f",
-      "microsoft-researchers-demonstrate-hidden-backdoor-technique-"
-    ]
-  },
-  {
-    "slug": "usn-9041-1-uutils-coreutils-vulnerabilities-8f597bd7",
-    "title": "USN-9041-1: uutils coreutils vulnerabilities",
-    "summary": "A local attacker could possibly use this issue to obtain sensitive information or modify file permissions unexpectedly. (CVE-2026-35341) It was discovered that uutils coreutils dd incorrectly suppressed errors during file truncation operations. A local attacker could possibly use this issue to cause silent data corruption. (CVE-2026-35344) It was discovered that uutils coreutils tail incorrectly followed symbolic links when using the --follow=name option.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9041-1",
-    "publishedAt": "2026-11-11T10:45:28.000Z",
-    "cves": [
-      "CVE-2026-35341",
-      "CVE-2026-35344",
-      "CVE-2026-35345",
-      "CVE-2026-35348",
-      "CVE-2026-35350",
-      "CVE-2026-35351",
-      "CVE-2026-35354",
-      "CVE-2026-35357",
-      "CVE-2026-35359",
-      "CVE-2026-35360",
-      "CVE-2026-35363",
-      "CVE-2026-35364",
-      "CVE-2026-35367",
-      "CVE-2026-35368",
-      "CVE-2026-35373",
-      "CVE-2026-35374",
-      "CVE-2026-35376",
-      "CVE-2026-35377",
-      "CVE-2026-93658"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9041-1-uutils-coreutils-vulnerabilities",
-      "article-8f597bd7",
-      "8f597bd7",
-      "usn-9041-1-uutils-coreutils-vulnerabilities-7e87e6"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-ahsaycbs-vulnerabilities-to-hide-m-23540e14",
-    "title": "Hackers Exploit AhsayCBS Vulnerabilities to Hide Malware in PNG Images and Deploy Stealthy Backdoors",
-    "summary": "Hackers exploiting AhsayCBS backup servers have planted webshells, hidden encrypted code inside PNG images, and staged a Python implant designed to run only on its intended host. The findings show an intrusion that extended beyond cryptocurrency mining, giving attackers several ways to keep access to systems responsible for protecting an organization’s backups. The flaw is tracked as CVE-2026-105133.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-ahsaycbs-vulnerabilities/",
-    "publishedAt": "2026-11-11T10:44:43.000Z",
-    "cves": [
-      "CVE-2026-105133"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-ahsaycbs-vulnerabilities-to-hide-m",
-      "article-23540e14",
-      "23540e14",
-      "hackers-exploit-ahsaycbs-vulnerabilities-to-hide-m-4181d5",
-      "hackers-exploit-ahsaycbs-vulnerabilities-to-hide-malware-in-"
     ]
   }
 ];

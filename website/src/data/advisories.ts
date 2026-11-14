@@ -2,6 +2,84 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-126299",
+    "slug": "cve-2026-126299",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
+    "dateAdded": "2026-11-14",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "The public CCG lexicon parser nltk.ccg.lexicon.fromstring parses caller-influenced lexicon text with two pure-Python loops whose cost is quadratic in the input width. A service that parses an untrusted CCG lexicon string can be driven into tens of seconds of single-threaded CPU by a few-megabyte input, starving the request worker. No authentication or user interaction is required.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-89p3-fcch-88ph"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126299"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126298",
+    "slug": "cve-2026-126298",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+    "dateAdded": "2026-11-14",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "Tree.chomsky_normal_form() binarizes a parse tree and defaults to right factoring. For a node with N children the right-factor branch repeatedly removes the first element of a working list with list.pop(0), which shifts all remaining elements each time, so binarizing one wide node costs O(N^2).",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r53h-rw34-8h97"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126298"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126297",
+    "slug": "cve-2026-126297",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+    "dateAdded": "2026-11-14",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "ConllCorpusReader.srl_instances() builds semantic-role-labeling instances from a CoNLL corpus block. For a sentence block with P predicates and P span columns, the instance builder rescans every span column (and every span within it) once per predicate while searching for each predicate's head, giving O(P^2 * R) work.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-v8f3-6phw-6mh9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126297"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-114713",
     "slug": "cve-2026-114713",
     "vendor": "UnrealIRCd",
@@ -990,6 +1068,50 @@ export const advisories: Advisory[] = [
     "source": "GITHUB"
   },
   {
+    "cve": "GHSA-6665-2vj3-h76r",
+    "slug": "ghsa-6665-2vj3-h76r",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "Duplicate Advisory: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-r53h-rw34-8h97. This link is maintained to preserve external references. NLTK before 3.10.4 contains a denial of service vulnerability in Tree.chomsky_normal_form that allows remote attackers to exhaust CPU through quadratic-time right-factor binarization using list.pop(0).",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6665-2vj3-h76r"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-qvhx-rvgc-jhwf",
+    "slug": "ghsa-qvhx-rvgc-jhwf",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "Duplicate Advisory: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-v8f3-6phw-6mh9. This link is maintained to preserve external references. NLTK before 3.10.4 contains a quadratic-time denial of service vulnerability in ConllCorpusReader._get_srl_instances that allows remote attackers to exhaust CPU through nested span rescans.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qvhx-rvgc-jhwf"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-f7j6-hf97-9v99",
     "slug": "ghsa-f7j6-hf97-9v99",
     "vendor": "Pip",
@@ -1189,136 +1311,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126078"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126070",
-    "slug": "cve-2026-126070",
-    "vendor": "RubyGems",
-    "product": "actionview",
-    "name": "Action View: Possible XSS vulnerability in strip_tags",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "strip_tags in Action View returns its sanitized output marked html_safe, but the underlying sanitizer encodes only &, < and >, leaving \" and ' unencoded. Because ERB does not escape a string marked html_safe, untrusted input passed through strip_tags and rendered inside a quoted HTML attribute value could close the attribute and add new attributes, possibly leading to XSS.",
-    "requiredAction": "Upgrade actionview to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rq8q-p985-fjq7"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126070"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126079",
-    "slug": "cve-2026-126079",
-    "vendor": "RubyGems",
-    "product": "actionview",
-    "name": "Action View: Possible XSS vulnerability in text helpers",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "With the HTML5 sanitizer (Rails::HTML5::Sanitizer, the default vendor on CRuby for applications using load_defaults 7.1 or later), Nokogiri before 1.19.5 serializes < and > unescaped inside attribute values.",
-    "requiredAction": "Upgrade actionview to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2p2f-4rq4-gjwc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126079"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126084",
-    "slug": "cve-2026-126084",
-    "vendor": "RubyGems",
-    "product": "activestorage",
-    "name": "Active Storage: Unsigned Content-Type in GCS direct uploads with cache_control",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 4.7,
-    "severity": "Medium",
-    "cwe": "CWE-345",
-    "ransomware": false,
-    "description": "When a GCS service is configured with the cache_control option, ActiveStorage::Service::GCSService#url_for_direct_upload signs direct-upload URLs with V4, and the V4 signature covers only the Cache-Control and Host headers. A direct-upload client can therefore send a Content-Type of its choosing, and can omit the declared Content-MD5, without invalidating the URL.",
-    "requiredAction": "Upgrade activestorage to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3w93-6hmw-whh4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126084"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126081",
-    "slug": "cve-2026-126081",
-    "vendor": "RubyGems",
-    "product": "actionpack",
-    "name": "Action Pack: Possible Strong Parameters Bypass in Parameters#each_key",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-915",
-    "ransomware": false,
-    "description": "ActionController::Parameters#each_key delegates to the internal ActiveSupport::HashWithIndifferentAccess that holds the request parameters, so when called with a block it returns that hash instead of the Parameters instance. The hash does not respond to permitted?, so Active Model mass assignment (new, assign_attributes, update) accepts it without raising ActiveModel::ForbiddenAttributesError.",
-    "requiredAction": "Upgrade actionpack to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wm3x-v3qw-4jh3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126081"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128066",
-    "slug": "cve-2026-128066",
-    "vendor": "Pip",
-    "product": "Pillow",
-    "name": "Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 0,
-    "severity": "Medium",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "A small, crafted image file can make Pillow use thousands of times its own size in memory while the file is only being opened, which lets anyone who can submit an image crash or stall the process handling it. A 144 KB TIFF makes Image.open() return normally while holding 1.6 GiB of memory.",
-    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wqgw-9xfh-qf2g"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128066"
       }
     ],
     "source": "GITHUB"
