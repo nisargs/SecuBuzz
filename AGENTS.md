@@ -31,6 +31,10 @@
   - **Strict Separation of Mobile vs. Desktop Layouts (Zero Cross-Breakpoint Regressions):**
     - **Advisories & News Desktop Filter Toolbars Are Permanently Locked:** NEVER alter, wrap, or refactor desktop filter toolbars when addressing mobile browser requests.
     - Any mobile-specific fixes or responsive adjustments MUST be strictly isolated under mobile-only media queries (`max-md:`, `hidden md:flex`, etc.) or mobile-specific modals (`MobileMyStackModal`). Shared desktop layout containers (`md:`, `lg:`) must never be modified or polluted with mobile overrides that break desktop spacing, wrapping, or alignment.
+- **Continuous Architecture & Status Quo Synchronization Mandate (Zero Architectural Drift):**
+  - **Whenever we fix a bug, add a new feature, refactor code, or update system configurations, we MUST immediately document it in `AGENTS.md` (project architecture and status quo).**
+  - This ensures persistent memory across turns and sessions, keeping the team and assistant 100% synchronized with the live state of the website, mobile app, edge worker, and database schemas.
+  - Every update must explicitly record: the root cause, the architectural solution/invariant, and the live verification telemetry (commit hash, worker version ID, or EAS update group).
 
 
 ## 3. Threat Severity Classification (Objective Criteria)
@@ -147,7 +151,16 @@
       - **Automated Integrity Gate (`scripts/verify_vendor_radar.mjs`)**: Running `npm run verify:radar` audits both website and worker registries, asserting 100% operational baselines and valid HTTPS telemetry endpoints.
 
 ## 6. Native `.aab` Releases & Production Updates
-- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a1bba8-6bf0-7623-97dc-23190724bc08` / Group `4ceb3a54-7d0b-40b1-9fb8-4699f913938a` / Worker `9150d025-372d-4885-8022-eda450be58b1`):**
+- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a1bba8-6bf0-7623-97dc-23190724bc08` / Group `4ceb3a54-7d0b-40b1-9fb8-4699f913938a` / Worker `2a9a11df-874d-4104-8a59-22ce59ddd896` / Git `3e7bc4a`):**
+  - **Vendor Radar Zero-Ghost-Outages & 100% Operational Baseline Overhaul (Nov 14, 2026 / Worker `2a9a11df-874d-4104-8a59-22ce59ddd896` / Live on `secubuzz.com`)**:
+    - *Root Cause Resolved*: Microsoft (M365) was missing from `LIVE_STATUS_SOURCES` and hardcoded as `OUTAGE` in `BASELINE_VENDOR_REGISTRY` from a historical incident, causing it to permanently render in red. Additionally, 5 other vendors (Palo Alto Networks, Cloudflare, Check Point, SonicWall, Tenable) had non-operational baseline fallbacks that could resurrect stale incidents on temporary polling timeouts.
+    - *Architectural Standard & Permanent Invariants*:
+      - **100% Operational Baseline (Innocent-Until-Proven-Guilty)**: Every single vendor entry in `BASELINE_VENDOR_REGISTRY` (`worker/src/index.ts`) and `VENDOR_STATUS_REGISTRY` (`website/src/data/vendorHealth.ts`) MUST ALWAYS have `status: 'OPERATIONAL'`. Never hardcode `OUTAGE` or `DEGRADED` into baseline registries or fallback mocks under any circumstance.
+      - **Zero Ghost Outages on Network / Poller Failure**: If a vendor's status endpoint times out (>3.5s), rate limits (429), or errors (5xx), the vendor safely defaults to its clean `OPERATIONAL` baseline rather than falling back to stale historical incidents.
+      - **Dedicated Microsoft Admin Center Poller**: Added `type: 'microsoft_mac'` for `https://status.cloud.microsoft/api/feed/mac`, parsing official Microsoft status strings (`Available`, `Service degradation`, `Service restored`).
+      - **Incident Staleness TTL**: Incidents with no updates in >14 days are excluded to prevent abandoned vendor tickets from permanently degrading statuses.
+      - **Expanded Live Coverage (19 Sources)**: Live edge polling across Azure, Microsoft Admin Center (M365), Google Cloud (`incidents.json`), Slack (`current`), Palo Alto Networks, Cloudflare, Check Point, Ivanti, Tenable, Qualys, Rapid7, Red Hat, Cisco Duo, Atlassian, GitHub, SentinelOne, HashiCorp, 1Password, and SonicWall.
+      - **Automated Radar Integrity Gate (`scripts/verify_vendor_radar.mjs`)**: Added `npm run verify:radar` to CI/build pipelines, asserting 100% operational baselines and valid HTTPS telemetry endpoints.
   - **Comprehensive Site Audit & Production Resilience Hardening (Nov 13, 2026 / Worker `9150d025-372d-4885-8022-eda450be58b1` / Live on `secubuzz.com`)**:
     - **D1 News Search for Rotated-Out CVEs (C1 Fixed)**:
       - *Root Cause Resolved*: In `worker/src/index.ts`, `/api/news/search` previously aborted with `{ count: 0, results: [] }` if a queried CVE was not in `getKnownCveSet()`. Because `getKnownCveSet()` was scoped strictly to the active 500-article live R2 feed window (~2.3 days), older CVEs stored in D1 (e.g. `CVE-2026-41709`, `CVE-2026-48356`, `CVE-2026-123158`) were blocked from querying the database and cached as misses.
