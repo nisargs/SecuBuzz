@@ -16,7 +16,7 @@ import type { Advisory } from '../types/advisory';
 
 type AdvisorySourceFilter = 'ALL' | 'CISA' | 'GITHUB';
 type AdvisorySeverityFilter = 'ALL' | 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW' | 'RANSOMWARE';
-type SortKey = 'added' | 'due';
+type SortKey = 'added' | 'due' | 'severity';
 const PAGE_SIZE = 25;
 
 export function Advisories() {
@@ -292,6 +292,28 @@ export function Advisories() {
           return b.dateAdded.localeCompare(a.dateAdded);
         }
 
+        if (sort === 'severity') {
+          const SEVERITY_WEIGHT: Record<string, number> = {
+            CRITICAL: 4,
+            HIGH: 3,
+            MEDIUM: 2,
+            LOW: 1,
+          };
+          const sevA = getCvssSeverity(a.cvss, a.severity).toUpperCase();
+          const sevB = getCvssSeverity(b.cvss, b.severity).toUpperCase();
+          const weightA = SEVERITY_WEIGHT[sevA] || 0;
+          const weightB = SEVERITY_WEIGHT[sevB] || 0;
+          if (weightB !== weightA) {
+            return weightB - weightA;
+          }
+          if (typeof a.cvss === 'number' && typeof b.cvss === 'number' && a.cvss !== b.cvss) {
+            return b.cvss - a.cvss;
+          }
+          if (typeof b.cvss === 'number' && typeof a.cvss !== 'number') return 1;
+          if (typeof a.cvss === 'number' && typeof b.cvss !== 'number') return -1;
+          return b.dateAdded.localeCompare(a.dateAdded);
+        }
+
         // Soonest due sorting:
         const daysA = daysUntil(a.dueDate);
         const daysB = daysUntil(b.dueDate);
@@ -419,11 +441,12 @@ export function Advisories() {
                   }}
                   className="h-7.5 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none cursor-pointer">
                   <option value="added">Newest added</option>
+                  <option value="severity">Highest severity</option>
                   <option value="due">Soonest due</option>
                 </select>
               </label>
 
-              {(vendorFilter !== 'ALL' || severityFilter !== 'ALL' || sourceFilter !== 'ALL' || stackFilterActive || dueThisWeekOnly || query) && (
+              {(vendorFilter !== 'ALL' || severityFilter !== 'ALL' || sourceFilter !== 'ALL' || stackFilterActive || dueThisWeekOnly || query || sort !== 'added') && (
                 <button
                   type="button"
                   onClick={() => {
@@ -433,6 +456,7 @@ export function Advisories() {
                     setSourceFilter('ALL');
                     setDueThisWeekOnly(false);
                     setStackFilterActive(false);
+                    setSort('added');
                     setPage(1);
                   }}
                   className="rounded border border-line bg-surface px-2 py-0.5 text-xs text-accent hover:border-accent transition-colors duration-150">
