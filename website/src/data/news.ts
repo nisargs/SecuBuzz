@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cursor-breach-enables-malicious-claude-code-extens-cda432ca",
+    "title": "Cursor Breach Enables Malicious Claude Code Extension Distribution",
+    "summary": "Cursor confirmed a breach that allowed attackers to distribute a Claude Code extension via marketplace after compromising Fireworks AI credentials. Attackers used stolen API keys to inject the extension, bypassing vetting and delivering malware to users, potentially exposing sensitive data. Cursor released a patch tightening marketplace authentication and advises users to uninstall the rogue extension and reset Fireworks AI credentials.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+    "publishedAt": "2026-11-14T17:27:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cursor-breach-enables-malicious-claude-code-extens",
+      "article-cda432ca",
+      "cda432ca",
+      "cursor-breach-enables-malicious-claude-code-extens-1baa8d",
+      "cursor-breach-enables-malicious-claude-code-extension-distri"
+    ]
+  },
+  {
     "slug": "us-disrupts-north-korean-facestealer-crypto-theft-d875fe40",
     "title": "US Disrupts North Korean FaceStealer Crypto Theft",
     "summary": "U.S. authorities disrupted a North Korean social‑engineering campaign named FaceStealer that stole over $400 million in cryptocurrency. The operation exploited phishing emails and credential harvesting to gain wallet access, enabling large‑scale transfers to untraceable addresses. Affected actors should immediately revoke compromised credentials, monitor wallet activity, and apply multi‑factor authentication to mitigate future theft.",
@@ -9582,24 +9601,6 @@ export const news: NewsBrief[] = [
       "86863f57",
       "ubuntu-patches-type-confusion-flaw-in-pecl-http-ex-7e8763",
       "ubuntu-patches-type-confusion-flaw-in-pecl-http-extension"
-    ]
-  },
-  {
-    "slug": "usn-9054-1-babel-vulnerability-ae357dd6",
-    "title": "USN-9054-1: Babel vulnerability",
-    "summary": "It was discovered that Babel incorrectly evaluated certain code during compilation when used with certain plugins. If a user or an automated system were tricked into compiling specially crafted code, an attacker could possibly use this issue to execute arbitrary code.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9054-1",
-    "publishedAt": "2026-11-11T18:32:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9054-1-babel-vulnerability",
-      "article-ae357dd6",
-      "ae357dd6",
-      "usn-9054-1-babel-vulnerability-7e8766"
     ]
   }
 ];

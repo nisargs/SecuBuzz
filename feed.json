@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+    "title": "Cursor Breach Enables Malicious Claude Code Extension Distribution",
+    "headline": "Cursor Breach Enables Malicious Claude Code Extension Distribution",
+    "summary": "Cursor confirmed a breach that allowed attackers to distribute a Claude Code extension via marketplace after compromising Fireworks AI credentials. Attackers used stolen API keys to inject the extension, bypassing vetting and delivering malware to users, potentially exposing sensitive data. Cursor released a patch tightening marketplace authentication and advises users to uninstall the rogue extension and reset Fireworks AI credentials.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-14T17:27:25.000Z",
+    "ingestedAt": "2026-11-14T17:43:15.431Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
     "title": "US Disrupts North Korean FaceStealer Crypto Theft",
@@ -8258,22 +8274,5 @@
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-9055-1",
     "additionalSources": []
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-9054-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9054-1",
-    "title": "USN-9054-1: Babel vulnerability",
-    "headline": "USN-9054-1: Babel vulnerability",
-    "summary": "It was discovered that Babel incorrectly evaluated certain code during compilation when used with certain plugins. If a user or an automated system were tricked into compiling specially crafted code, an attacker could possibly use this issue to execute arbitrary code.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-11-11T18:32:25.000Z",
-    "ingestedAt": "2026-11-12T04:43:28.434Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
   }
 ]
