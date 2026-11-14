@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 01:48:18 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 02:48:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Uber Confirms Driver Data Breach by Fireworks AI Hackers</title>
+      <link>https://secubuzz.com/news/uber-confirms-driver-data-breach-by-fireworks-ai-h-33a7b6d3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uber-confirms-driver-data-breach-by-fireworks-ai-h-33a7b6d3</guid>
+      <description><![CDATA[Uber confirmed a breach exposing personal data of thousands of U.S. drivers after hackers accessed records held by Fireworks AI. Exposed data includes driver license details; Uber is notifying affected individuals while the total number impacted nationwide remains undisclosed. Security teams should monitor for credential misuse, enforce MFA, and verify Fireworks AI’s data controls to mitigate further exposure.]]></description>
+      <pubDate>Sat, 14 Nov 2026 01:19:57 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/uber-confirms-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>FAA Ground Stop Triggered by Unexplained Communications Disruption</title>
       <link>https://secubuzz.com/news/faa-ground-stop-triggered-by-unexplained-communica-b99cf554</link>
@@ -107,6 +116,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Apple Releases tvOS 27.2.1 Security Update</title>
+      <link>https://secubuzz.com/news/apple-releases-tvos-27-2-1-security-update-4049a8e7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-tvos-27-2-1-security-update-4049a8e7</guid>
+      <description><![CDATA[Apple released tvOS 27.2.1 (24K157), a new operating system update for Apple TV devices. The update contains unspecified security, stability, and performance enhancements, typical of Apple’s routine releases, and may address known vulnerabilities. Users should install the update via the Settings app to ensure device security and functionality in the field.]]></description>
+      <pubDate>Fri, 13 Nov 2026 18:00:00 GMT</pubDate>
+      <source url="https://developer.apple.com/news/releases/?id=11132026a">Apple Security Updates</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Weekly Cybersecurity Roundup: Crypto Scams, Turla, Railway Breach</title>
       <link>https://secubuzz.com/news/weekly-cybersecurity-roundup-crypto-scams-turla-ra-2be048f4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/weekly-cybersecurity-roundup-crypto-scams-turla-ra-2be048f4</guid>
@@ -161,6 +179,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>NYC Bans Surveillance-Based Pricing</title>
+      <link>https://secubuzz.com/news/nyc-bans-surveillance-based-pricing-29f7a2e5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nyc-bans-surveillance-based-pricing-29f7a2e5</guid>
+      <description><![CDATA[New York City passed legislation prohibiting the use of personal data for individualized pricing, targeting surveillance-based pricing models. The law aims to protect consumers from opaque price discrimination by preventing companies from leveraging behavioral data to set higher rates. Businesses must adjust pricing strategies and ensure compliance with the new regulation, or face potential penalties.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:52:36 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/new-york-city-council-votes-to-ban-surveillance-pricing">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Germany Passes Legislation Authorizing Intelligence Agency Hacking Powers</title>
       <link>https://secubuzz.com/news/germany-passes-legislation-authorizing-intelligenc-0544a143</link>
       <guid isPermaLink="true">https://secubuzz.com/news/germany-passes-legislation-authorizing-intelligenc-0544a143</guid>
@@ -177,6 +204,51 @@
       <pubDate>Fri, 13 Nov 2026 16:21:43 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI Launches ChatGPT Wallet for Agent Payments</title>
+      <link>https://secubuzz.com/news/openai-launches-chatgpt-wallet-for-agent-payments-4e48330f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-launches-chatgpt-wallet-for-agent-payments-4e48330f</guid>
+      <description><![CDATA[OpenAI launched ChatGPT Wallet, letting agents pay with stand‑in card numbers while hiding user card details. The wallet integrates with American Express, Mastercard, and Visa, operating within OpenAI's dot environment, the user’s dot completes purchases, and merchants may need to adjust for agent transactions. Users should review merchant compatibility and monitor for unintended blocks; OpenAI advises merchants to handle adjustments.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:15:25 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/13/openai-chatgpt-wallet/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Patches Print Spooler Privilege Escalation</title>
+      <link>https://secubuzz.com/news/microsoft-patches-print-spooler-privilege-escalati-a48cea58</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-print-spooler-privilege-escalati-a48cea58</guid>
+      <description><![CDATA[A Windows Print Spooler Components Elevation of Privilege vulnerability (CVE-2026-112765) was disclosed. The flaw allows local privilege escalation by manipulating spooler service components, potentially enabling an attacker to gain SYSTEM rights; no active exploitation reported. Microsoft has released a patch in the latest cumulative update; administrators should apply the update promptly.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112765">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium CVE-2026-125342 Uninitialized Resource Fixed</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-125342-uninitialized-resource-fi-989bb965</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-125342-uninitialized-resource-fi-989bb965</guid>
+      <description><![CDATA[Chromium CVE-2026-125342, an uninitialized resource flaw, was assigned by Google. The vulnerability could lead to undefined behavior in Chromium-based browsers, potentially exposing memory contents; currently no exploitation evidence reported in the wild. Microsoft Edge incorporates the Chromium fix; users should update to the latest Edge release to mitigate the issue.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125342">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Edge Patches Chromium Type Confusion CVE-2026-125344</title>
+      <link>https://secubuzz.com/news/microsoft-edge-patches-chromium-type-confusion-cve-7a337439</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-patches-chromium-type-confusion-cve-7a337439</guid>
+      <description><![CDATA[Microsoft Edge is affected by Chromium vulnerability CVE-2026-125344, a type confusion issue inherited through its Chromium-based browser engine. The flaw stems from incorrect type handling in Chromium, which Microsoft Edge ingests and addresses through Chromium updates. Security teams should apply available Microsoft Edge updates containing the Chromium fix to remediate the vulnerability.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125344">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Edge Fixes Chromium Out-of-Bounds Write CVE-2026-125348</title>
+      <link>https://secubuzz.com/news/microsoft-edge-fixes-chromium-out-of-bounds-write-5f75bb80</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-fixes-chromium-out-of-bounds-write-5f75bb80</guid>
+      <description><![CDATA[Microsoft Edge is affected by Chromium vulnerability CVE-2026-125348, an out-of-bounds write issue inherited through its Chromium-based browser engine. The flaw involves improper memory bounds handling in Chromium, which Microsoft Edge ingests and addresses through Chromium updates. Security teams should apply available Microsoft Edge updates containing the Chromium fix to remediate the vulnerability.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125348">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Microsoft Windows Graphics Kernel Elevation Vulnerability</title>
@@ -296,6 +368,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Mior, Skyfall Expose AMD SEV‑SNP VM Data Theft</title>
+      <link>https://secubuzz.com/news/mior-skyfall-expose-amd-sev-snp-vm-data-theft-4c0accf3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mior-skyfall-expose-amd-sev-snp-vm-data-theft-4c0accf3</guid>
+      <description><![CDATA[Mior and Skyfall attacks let malicious hosts read data inside AMD SEV‑SNP‑protected VMs, bypassing isolation from the server operator. Mior needs hypervisor and BIOS control to modify VM memory and forge signed reports; Skyfall exploits a kernel‑level flaw; both are publicly disclosed and pose active RCE risk. Admins should apply firmware updates, restrict hypervisor access, and monitor anomalous memory activity.]]></description>
+      <pubDate>Fri, 13 Nov 2026 15:27:05 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>TypoPrompting Turns AI Site Typos Into Malware Traps</title>
       <link>https://secubuzz.com/news/typoprompting-turns-ai-site-typos-into-malware-tra-922df6c5</link>
       <guid isPermaLink="true">https://secubuzz.com/news/typoprompting-turns-ai-site-typos-into-malware-tra-922df6c5</guid>
@@ -350,6 +431,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Red Hat Satellite 6.19.6 Receives Critical Async Update</title>
+      <link>https://secubuzz.com/news/red-hat-satellite-6-19-6-receives-critical-async-u-6d655171</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-satellite-6-19-6-receives-critical-async-u-6d655171</guid>
+      <description><![CDATA[Red Hat released a critical async update for Satellite 6.19.6, addressing a security issue affecting RHEL 9 deployments. The patch resolves a vulnerability that could allow unauthorized access to satellite management functions, potentially compromising configuration data and control plane integrity. Administrators should download and install the RHSA-2026:100120 update immediately, following Red Hat’s installation guidelines to ensure secure operation.]]></description>
+      <pubDate>Fri, 13 Nov 2026 14:45:23 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100120">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>North Korean Hackers Steal $400M Crypto via Deepfake Calls</title>
       <link>https://secubuzz.com/news/north-korean-hackers-steal-400m-crypto-via-deepfak-9bfeac72</link>
       <guid isPermaLink="true">https://secubuzz.com/news/north-korean-hackers-steal-400m-crypto-via-deepfak-9bfeac72</guid>
@@ -366,96 +456,6 @@
       <pubDate>Fri, 13 Nov 2026 14:28:00 GMT</pubDate>
       <source url="https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack">The Record</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Citrix Releases Critical Patch for NetScaler CVE-2026-120868</title>
-      <link>https://secubuzz.com/news/citrix-releases-critical-patch-for-netscaler-cve-2-b2949ed4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-releases-critical-patch-for-netscaler-cve-2-b2949ed4</guid>
-      <description><![CDATA[Citrix disclosed 28 security flaws in NetScaler ADC and Gateway, including CVE-2026-120868, a memory overflow affecting default installations. The CVE-2026-120868 vulnerability, rated CVSS 9.3, allows remote attackers to execute arbitrary code via malformed packet processing, posing a high‑risk RCE threat. Citrix released patch CTX697305; administrators should apply the update immediately and verify default configurations to eliminate the overflow risk.]]></description>
-      <pubDate>Fri, 13 Nov 2026 14:18:29 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/citrix-patches-netscaler-security-vulnerabilities/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Hackers Use Fake Purchase Order Emails to Deliver XLoader Malware Through Malicious Word Documents</title>
-      <link>https://secubuzz.com/news/hackers-use-fake-purchase-order-emails-to-deliver-210f891d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-fake-purchase-order-emails-to-deliver-210f891d</guid>
-      <description><![CDATA[Hackers are sending fake purchase order emails to trick recipients into opening Word documents that deliver XLoader, an information-stealing malware. The attack uses an embedded document, an old Microsoft Equation Editor vulnerability, and several script stages to reach its final payload.]]></description>
-      <pubDate>Fri, 13 Nov 2026 14:09:51 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fake-purchase-order-emails/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare Launches Spend Management for Workers</title>
-      <link>https://secubuzz.com/news/cloudflare-launches-spend-management-for-workers-21979760</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-spend-management-for-workers-21979760</guid>
-      <description><![CDATA[Cloudflare introduces Spend Management, adding spending caps and alerts for Workers and Durable Objects, with plans to extend to services. The feature uses a metering pipeline that translates usage metrics into runtime decisions, enabling real‑time cost control and budget enforcement. Users can configure thresholds, receive notifications, and enforce limits through the Cloudflare dashboard, reducing accidental over‑spending and improving cost visibility.]]></description>
-      <pubDate>Fri, 13 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/spend-management/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chrome Dev 160 Released for Android</title>
-      <link>https://secubuzz.com/news/chrome-dev-160-released-for-android-12652645</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-160-released-for-android-12652645</guid>
-      <description><![CDATA[Google released Chrome Dev 160 for Android, updating the browser on Google Play with new features and bug fixes. The update includes platform enhancements and a partial list of changes documented in the Git log, with further details on the Chromium blog. Users should install the new version via Google Play and file any issues through the bug‑filing system.]]></description>
-      <pubDate>Fri, 13 Nov 2026 13:58:32 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-dev-for-android-update_0625376735.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Trezor Detects Recovery Phrase‑Stealing Implants</title>
-      <link>https://secubuzz.com/news/trezor-detects-recovery-phrase-stealing-implants-c1952591</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trezor-detects-recovery-phrase-stealing-implants-c1952591</guid>
-      <description><![CDATA[Trezor identified hardware implants in three Safe 5 wallets purchased from CryptoBilis that can steal recovery phrases. The implant reads the phrase from the wallet's screen and transmits it over the mobile network to an attacker‑controlled server, exposing users' seed phrases to theft. Trezor recommends inspecting devices for the circuit board, replacing compromised wallets, and monitoring for network traffic.]]></description>
-      <pubDate>Fri, 13 Nov 2026 13:54:20 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Microsoft Battles Global Outage, Email Services Down</title>
-      <link>https://secubuzz.com/news/microsoft-battles-global-outage-email-services-dow-f1308f2a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-battles-global-outage-email-services-dow-f1308f2a</guid>
-      <description><![CDATA[Microsoft experienced a global outage disrupting email and other services across its cloud infrastructure. The root cause remains unidentified; Microsoft is isolating and repairing affected infrastructure, suggesting underlying network or configuration issues. Microsoft is actively investigating, restoring services, and advising users to monitor official updates for status in the coming hours.]]></description>
-      <pubDate>Fri, 13 Nov 2026 13:47:42 GMT</pubDate>
-      <source url="https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Binance Breach Exploits Known Weakness, Lacks Controls</title>
-      <link>https://secubuzz.com/news/binance-breach-exploits-known-weakness-lacks-contr-f0a16de5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/binance-breach-exploits-known-weakness-lacks-contr-f0a16de5</guid>
-      <description><![CDATA[Attackers breached Binance by exploiting a known weakness and missing security controls in the exchange’s blockchain infrastructure. The flaw allowed attacker‑deployed sweepers to bypass safeguards, potentially enabling rapid asset transfer and undermining transaction integrity. Binance has issued a security advisory and is tightening monitoring, but no public patch is available for the underlying weakness.]]></description>
-      <pubDate>Fri, 13 Nov 2026 13:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Apify Breach: Customer Accounts Compromised</title>
-      <link>https://secubuzz.com/news/apify-breach-customer-accounts-compromised-efc65745</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apify-breach-customer-accounts-compromised-efc65745</guid>
-      <description><![CDATA[Apify, a web scraping platform, confirmed that an intruder accessed customer accounts and retrieved personal information. The breach exposed stored data, potentially including credentials and sensitive user details, but no exploitation of the platform’s core services was reported. Apify advised affected customers to reset credentials and monitor accounts, and it is implementing additional monitoring and security controls.]]></description>
-      <pubDate>Fri, 13 Nov 2026 12:41:01 GMT</pubDate>
-      <source url="https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Microsoft Printing Issues from November Updates</title>
-      <link>https://secubuzz.com/news/microsoft-printing-issues-from-november-updates-3651ef0f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-printing-issues-from-november-updates-3651ef0f</guid>
-      <description><![CDATA[Microsoft warned that the November 2026 security updates could disrupt printing for documents with complex formatting. The issue arises from changes to the printing subsystem that affect rendering of advanced layout features, but no security impact is reported. Microsoft recommends users apply the latest cumulative update and, if problems persist, roll back the printing components or use alternative drivers.]]></description>
-      <pubDate>Fri, 13 Nov 2026 12:27:40 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SilentAir Hijacks Mobile Nodes to Intercept Calls</title>
-      <link>https://secubuzz.com/news/silentair-hijacks-mobile-nodes-to-intercept-calls-6b9ba7bc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/silentair-hijacks-mobile-nodes-to-intercept-calls-6b9ba7bc</guid>
-      <description><![CDATA[SilentAir attackers compromised Taiwanese mobile network nodes, enabling interception of voice calls and SMS traffic. The intrusion leveraged an unpatched firmware flaw in the node’s authentication module, allowing remote code execution with a CVSS of 9.0; no public exploit yet. Network operators should apply the vendor’s firmware update immediately, enforce strict access controls, and monitor for anomalous traffic patterns.]]></description>
-      <pubDate>Fri, 13 Nov 2026 12:20:28 GMT</pubDate>
-      <source url="https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

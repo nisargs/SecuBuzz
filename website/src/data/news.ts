@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "uber-confirms-driver-data-breach-by-fireworks-ai-h-33a7b6d3",
+    "title": "Uber Confirms Driver Data Breach by Fireworks AI Hackers",
+    "summary": "Uber confirmed a breach exposing personal data of thousands of U.S. drivers after hackers accessed records held by Fireworks AI. Exposed data includes driver license details; Uber is notifying affected individuals while the total number impacted nationwide remains undisclosed. Security teams should monitor for credential misuse, enforce MFA, and verify Fireworks AI’s data controls to mitigate further exposure.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/uber-confirms-data-breach/",
+    "publishedAt": "2026-11-14T01:19:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uber-confirms-driver-data-breach-by-fireworks-ai-h",
+      "article-33a7b6d3",
+      "33a7b6d3",
+      "uber-confirms-driver-data-breach-by-fireworks-ai-h-60cbbc",
+      "uber-confirms-driver-data-breach-by-fireworks-ai-hackers"
+    ]
+  },
+  {
     "slug": "faa-ground-stop-triggered-by-unexplained-communica-b99cf554",
     "title": "FAA Ground Stop Triggered by Unexplained Communications Disruption",
     "summary": "A Federal Aviation Administration ground stop was imposed after an unexplained communications disruption, raising concerns of a potential cyberattack. The incident disrupted flight operations nationwide, but officials have not confirmed the cause or identified any exploited vulnerability. Air traffic control systems should monitor for anomalous traffic, apply the latest firmware patches, and enforce strict authentication to mitigate similar disruptions.",
@@ -216,6 +235,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-releases-tvos-27-2-1-security-update-4049a8e7",
+    "title": "Apple Releases tvOS 27.2.1 Security Update",
+    "summary": "Apple released tvOS 27.2.1 (24K157), a new operating system update for Apple TV devices. The update contains unspecified security, stability, and performance enhancements, typical of Apple’s routine releases, and may address known vulnerabilities. Users should install the update via the Settings app to ensure device security and functionality in the field.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11132026a",
+    "publishedAt": "2026-11-13T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-tvos-27-2-1-security-update",
+      "article-4049a8e7",
+      "4049a8e7",
+      "apple-releases-tvos-27-2-1-security-update-645c12"
+    ]
+  },
+  {
     "slug": "weekly-cybersecurity-roundup-crypto-scams-turla-ra-2be048f4",
     "title": "Weekly Cybersecurity Roundup: Crypto Scams, Turla, Railway Breach",
     "summary": "This week, law enforcement dismantled several crypto‑scam operations and seized associated malware infrastructure. Meanwhile, the Turla APT group deployed the Cereal spyware to target government entities, while attackers breached Railway’s systems to exfiltrate AI research. Security teams should monitor for Cereal indicators, review Railway security controls, and stay alert to emerging crypto‑scam tactics.",
@@ -331,6 +368,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "nyc-bans-surveillance-based-pricing-29f7a2e5",
+    "title": "NYC Bans Surveillance-Based Pricing",
+    "summary": "New York City passed legislation prohibiting the use of personal data for individualized pricing, targeting surveillance-based pricing models. The law aims to protect consumers from opaque price discrimination by preventing companies from leveraging behavioral data to set higher rates. Businesses must adjust pricing strategies and ensure compliance with the new regulation, or face potential penalties.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/new-york-city-council-votes-to-ban-surveillance-pricing",
+    "publishedAt": "2026-11-13T16:52:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nyc-bans-surveillance-based-pricing",
+      "article-29f7a2e5",
+      "29f7a2e5",
+      "nyc-bans-surveillance-based-pricing-843e2f"
+    ]
+  },
+  {
     "slug": "germany-passes-legislation-authorizing-intelligenc-0544a143",
     "title": "Germany Passes Legislation Authorizing Intelligence Agency Hacking Powers",
     "summary": "The German Bundestag passed legislation granting national spy agencies expanded authority for cyber hacking and sabotage activities. Approved by a vote of 308 to 190 with 71 abstentions, the bill marks the biggest postwar overhaul of the country's intelligence laws. This parliamentary enactment follows initial approval of the draft legislation by Chancellor Friedrich Merz's cabinet several months prior.",
@@ -366,6 +421,108 @@ export const news: NewsBrief[] = [
       "12ca6dd7",
       "check-point-gateways-targeted-by-php2shell-for-esx-276e8a",
       "check-point-gateways-targeted-by-php2shell-for-esxi-wiper"
+    ]
+  },
+  {
+    "slug": "openai-launches-chatgpt-wallet-for-agent-payments-4e48330f",
+    "title": "OpenAI Launches ChatGPT Wallet for Agent Payments",
+    "summary": "OpenAI launched ChatGPT Wallet, letting agents pay with stand‑in card numbers while hiding user card details. The wallet integrates with American Express, Mastercard, and Visa, operating within OpenAI's dot environment, the user’s dot completes purchases, and merchants may need to adjust for agent transactions. Users should review merchant compatibility and monitor for unintended blocks; OpenAI advises merchants to handle adjustments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/openai-chatgpt-wallet/",
+    "publishedAt": "2026-11-13T16:15:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-launches-chatgpt-wallet-for-agent-payments",
+      "article-4e48330f",
+      "4e48330f",
+      "openai-launches-chatgpt-wallet-for-agent-payments-25f506"
+    ]
+  },
+  {
+    "slug": "microsoft-patches-print-spooler-privilege-escalati-a48cea58",
+    "title": "Microsoft Patches Print Spooler Privilege Escalation",
+    "summary": "A Windows Print Spooler Components Elevation of Privilege vulnerability (CVE-2026-112765) was disclosed. The flaw allows local privilege escalation by manipulating spooler service components, potentially enabling an attacker to gain SYSTEM rights; no active exploitation reported. Microsoft has released a patch in the latest cumulative update; administrators should apply the update promptly.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112765",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-112765"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patches-print-spooler-privilege-escalati",
+      "article-a48cea58",
+      "a48cea58",
+      "microsoft-patches-print-spooler-privilege-escalati-1febc6",
+      "microsoft-patches-print-spooler-privilege-escalation"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-125342-uninitialized-resource-fi-989bb965",
+    "title": "Chromium CVE-2026-125342 Uninitialized Resource Fixed",
+    "summary": "Chromium CVE-2026-125342, an uninitialized resource flaw, was assigned by Google. The vulnerability could lead to undefined behavior in Chromium-based browsers, potentially exposing memory contents; currently no exploitation evidence reported in the wild. Microsoft Edge incorporates the Chromium fix; users should update to the latest Edge release to mitigate the issue.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125342",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-125342"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-125342-uninitialized-resource-fi",
+      "article-989bb965",
+      "989bb965",
+      "chromium-cve-2026-125342-uninitialized-resource-fi-1fdc61",
+      "chromium-cve-2026-125342-uninitialized-resource-fixed"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-patches-chromium-type-confusion-cve-7a337439",
+    "title": "Microsoft Edge Patches Chromium Type Confusion CVE-2026-125344",
+    "summary": "Microsoft Edge is affected by Chromium vulnerability CVE-2026-125344, a type confusion issue inherited through its Chromium-based browser engine. The flaw stems from incorrect type handling in Chromium, which Microsoft Edge ingests and addresses through Chromium updates. Security teams should apply available Microsoft Edge updates containing the Chromium fix to remediate the vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125344",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-125344"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-patches-chromium-type-confusion-cve",
+      "article-7a337439",
+      "7a337439",
+      "microsoft-edge-patches-chromium-type-confusion-cve-1fdc61",
+      "microsoft-edge-patches-chromium-type-confusion-cve-2026-1253"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-fixes-chromium-out-of-bounds-write-5f75bb80",
+    "title": "Microsoft Edge Fixes Chromium Out-of-Bounds Write CVE-2026-125348",
+    "summary": "Microsoft Edge is affected by Chromium vulnerability CVE-2026-125348, an out-of-bounds write issue inherited through its Chromium-based browser engine. The flaw involves improper memory bounds handling in Chromium, which Microsoft Edge ingests and addresses through Chromium updates. Security teams should apply available Microsoft Edge updates containing the Chromium fix to remediate the vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125348",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-125348"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-fixes-chromium-out-of-bounds-write",
+      "article-5f75bb80",
+      "5f75bb80",
+      "microsoft-edge-fixes-chromium-out-of-bounds-write-1fdc61",
+      "microsoft-edge-fixes-chromium-out-of-bounds-write-cve-2026-1"
     ]
   },
   {
@@ -648,6 +805,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "mior-skyfall-expose-amd-sev-snp-vm-data-theft-4c0accf3",
+    "title": "Mior, Skyfall Expose AMD SEV‑SNP VM Data Theft",
+    "summary": "Mior and Skyfall attacks let malicious hosts read data inside AMD SEV‑SNP‑protected VMs, bypassing isolation from the server operator. Mior needs hypervisor and BIOS control to modify VM memory and forge signed reports; Skyfall exploits a kernel‑level flaw; both are publicly disclosed and pose active RCE risk. Admins should apply firmware updates, restrict hypervisor access, and monitor anomalous memory activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+    "publishedAt": "2026-11-13T15:27:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mior-skyfall-expose-amd-sev-snp-vm-data-theft",
+      "article-4c0accf3",
+      "4c0accf3",
+      "mior-skyfall-expose-amd-sev-snp-vm-data-theft-3ce129"
+    ]
+  },
+  {
     "slug": "typoprompting-turns-ai-site-typos-into-malware-tra-922df6c5",
     "title": "TypoPrompting Turns AI Site Typos Into Malware Traps",
     "summary": "Researchers discovered TypoPrompting attacks that redirect users typing mistyped AI tool URLs to fake verification pages hosting malware installers. The study mapped 186 lookalike domains across 27 AI brands, including Claude, ChatGPT, and Midjourney, exposing a widespread phishing surface. Defenders should enforce strict URL filtering, educate users on correct domain spelling, and deploy anti‑phishing solutions to mitigate the risk.",
@@ -761,6 +936,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-satellite-6-19-6-receives-critical-async-u-6d655171",
+    "title": "Red Hat Satellite 6.19.6 Receives Critical Async Update",
+    "summary": "Red Hat released a critical async update for Satellite 6.19.6, addressing a security issue affecting RHEL 9 deployments. The patch resolves a vulnerability that could allow unauthorized access to satellite management functions, potentially compromising configuration data and control plane integrity. Administrators should download and install the RHSA-2026:100120 update immediately, following Red Hat’s installation guidelines to ensure secure operation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100120",
+    "publishedAt": "2026-11-13T14:45:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-6-19-6-receives-critical-async-u",
+      "article-6d655171",
+      "6d655171",
+      "red-hat-satellite-6-19-6-receives-critical-async-u-2ee071",
+      "red-hat-satellite-6-19-6-receives-critical-async-update"
+    ]
+  },
+  {
     "slug": "north-korean-hackers-steal-400m-crypto-via-deepfak-9bfeac72",
     "title": "North Korean Hackers Steal $400M Crypto via Deepfake Calls",
     "summary": "North Korean threat actors used deepfake video calls to socially engineer victims and steal more than $400 million in cryptocurrency. The FaceStealer campaign used convincing video impersonations to bypass authentication, exploiting human trust rather than software flaws, and caused significant financial loss. Organizations should verify call authenticity, enforce multi‑factor authentication, and monitor wallet activity for anomalous transfers to mitigate attacks.",
@@ -836,6 +1030,24 @@ export const news: NewsBrief[] = [
       "210f891d",
       "hackers-use-fake-purchase-order-emails-to-deliver-55ae55",
       "hackers-use-fake-purchase-order-emails-to-deliver-xloader-ma"
+    ]
+  },
+  {
+    "slug": "geovision-cameras-used-to-deploy-xmrig-miner-3ee0cef0",
+    "title": "GeoVision Cameras Used to Deploy XMRig Miner",
+    "summary": "Attackers abused publicly exposed GeoVision camera software at 13 organizations, disabling Defender and deploying XMRig cryptominer. The vulnerability permits remote code execution via exposed management interfaces, enabling malware installation without user interaction and causing unauthorized cryptocurrency mining. Security teams should patch GeoVision firmware, restrict network access to camera interfaces, and monitor for anomalous mining processes.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/geovision-camera-software-xmrig-cryptominer",
+    "publishedAt": "2026-11-13T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "geovision-cameras-used-to-deploy-xmrig-miner",
+      "article-3ee0cef0",
+      "3ee0cef0",
+      "geovision-cameras-used-to-deploy-xmrig-miner-4742ec"
     ]
   },
   {
@@ -1836,6 +2048,90 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "trendai-vision-one-agent-vulnerability-enables-loc-460e149b",
+    "title": "TrendAI Vision One Agent Vulnerability Enables Local Privilege Escalation",
+    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low‑privileged code gain elevated rights on installations. Identified as CVE‑2026‑111790, the flaw has a CVSS score of 7.8 and requires local code execution, exposing systems to administrative access. TrendAI has issued a patch; apply it promptly and verify agent configuration to mitigate exploitation. The flaw is tracked as CVE-2026-111790.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-988/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111790"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "trendai-vision-one-agent-vulnerability-enables-loc",
+      "article-460e149b",
+      "460e149b",
+      "trendai-vision-one-agent-vulnerability-enables-loc-6f3d26",
+      "trendai-vision-one-agent-vulnerability-enables-local-privile"
+    ]
+  },
+  {
+    "slug": "trendai-vision-one-agent-type-confusion-escalates-995aacb7",
+    "title": "TrendAI Vision One Agent Type Confusion Escalates Privileges",
+    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low‑privileged code gain elevated rights on installations. Identified as CVE‑2026‑111788, the flaw carries a CVSS score of 7.8 and requires local code execution, exposing systems to administrative access. TrendAI has released a patch; apply it promptly and verify agent configuration to mitigate exploitation. The flaw is tracked as CVE-2026-111788.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-987/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111788"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "trendai-vision-one-agent-type-confusion-escalates",
+      "article-995aacb7",
+      "995aacb7",
+      "trendai-vision-one-agent-type-confusion-escalates-6f3d26",
+      "trendai-vision-one-agent-type-confusion-escalates-privileges"
+    ]
+  },
+  {
+    "slug": "trendai-vision-one-agent-type-confusion-grants-pri-6004f032",
+    "title": "TrendAI Vision One Agent Type Confusion Grants Privilege Escalation",
+    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low‑privileged code gain elevated rights on installations. Identified as CVE‑2026‑111787, the flaw has a CVSS score of 7.8 and requires local code execution, exposing systems to administrative access. TrendAI has released a patch; apply it promptly and verify agent configuration to mitigate exploitation. The flaw is tracked as CVE-2026-111787.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-986/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111787"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "trendai-vision-one-agent-type-confusion-grants-pri",
+      "article-6004f032",
+      "6004f032",
+      "trendai-vision-one-agent-type-confusion-grants-pri-6f3d26",
+      "trendai-vision-one-agent-type-confusion-grants-privilege-esc"
+    ]
+  },
+  {
+    "slug": "trendai-vision-one-agent-flaw-enables-privilege-es-875437a6",
+    "title": "TrendAI Vision One Agent Flaw Enables Privilege Escalation",
+    "summary": "A local privilege escalation vulnerability affects TrendAI Vision One Security Agent within the TMBMServer component. Tracked as CVE-2026-111786 with a CVSS rating of 7.8, the security flaw stems from an out-of-bounds read mechanism. To exploit this flaw, local attackers must first possess low-privileged code execution access on the targeted system to elevate rights.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-985/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111786"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "trendai-vision-one-agent-flaw-enables-privilege-es",
+      "article-875437a6",
+      "875437a6",
+      "trendai-vision-one-agent-flaw-enables-privilege-es-6f3d26",
+      "trendai-vision-one-agent-flaw-enables-privilege-escalation"
     ]
   },
   {
@@ -9290,290 +9586,6 @@ export const news: NewsBrief[] = [
       "9b10f27d",
       "citrix-ivanti-release-patches-for-rce-vulnerabilit-3eadc4",
       "citrix-ivanti-release-patches-for-rce-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98595-important-flatpak-security-update-defea441",
-    "title": "RHSA-2026:98595: Important: flatpak security update",
-    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98595",
-    "publishedAt": "2026-11-11T13:37:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98595-important-flatpak-security-update",
-      "article-defea441",
-      "defea441",
-      "rhsa-2026-98595-important-flatpak-security-update-37d6e4"
-    ]
-  },
-  {
-    "slug": "poland-shuts-down-epuap-after-cyberattack-b4bd6997",
-    "title": "Poland Shuts Down ePUAP After Cyberattack",
-    "summary": "Poland’s nationwide ePUAP platform, used for submitting official documents and communicating with government agencies, was shut down after a cyberattack. The attack disrupted the platform’s availability, preventing citizens from completing administrative procedures online. Polish authorities are investigating the incident, and the platform will be restored after security measures are verified.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/poland-shuts-down-government-services-platform-cyberattack",
-    "publishedAt": "2026-11-11T13:18:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "poland-shuts-down-epuap-after-cyberattack",
-      "article-b4bd6997",
-      "b4bd6997",
-      "poland-shuts-down-epuap-after-cyberattack-3e57c8"
-    ]
-  },
-  {
-    "slug": "britain-france-issue-guidelines-for-hacking-firms-94bb8378",
-    "title": "Britain, France Issue Guidelines for Hacking Firms",
-    "summary": "Britain and France have released the first regulatory guidelines targeting commercial hacking firms that develop, sell, or finance cyber‑crime infrastructure components (CCICs). The guidelines require firms to vet customers, implement technical safeguards against misuse, and maintain monitoring and reporting systems for abuse incidents. Compliance will be monitored by national authorities, and non‑compliance could result in licensing revocation or legal action.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/britain-france-set-out-guidelines-for-commercial-hacking-firms",
-    "publishedAt": "2026-11-11T13:11:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "britain-france-issue-guidelines-for-hacking-firms",
-      "article-94bb8378",
-      "94bb8378",
-      "britain-france-issue-guidelines-for-hacking-firms-51648b"
-    ]
-  },
-  {
-    "slug": "blind-eagle-targets-latin-america-with-fake-court-95822401",
-    "title": "Blind Eagle Targets Latin America with Fake Court RATs",
-    "summary": "Law enforcement intelligence reports that the state‑backed threat actor Blind Eagle targets Latin American entities with fake court‑related RATs. The RATs masquerade as legitimate court software, allowing attackers to establish persistent footholds and exfiltrate sensitive data. Security teams should verify software authenticity, enforce strict application whitelisting, and monitor for anomalous remote access activity.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/blind-eagle-uses-fake-court-notices-to-deliver-remote-a",
-    "publishedAt": "2026-11-11T13:10:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "blind-eagle-targets-latin-america-with-fake-court",
-      "article-95822401",
-      "95822401",
-      "blind-eagle-targets-latin-america-with-fake-court-196cd8",
-      "blind-eagle-targets-latin-america-with-fake-court-rats"
-    ]
-  },
-  {
-    "slug": "git-cve-2026-111760-enables-remote-code-execution-c8ba2879",
-    "title": "Git CVE-2026-111760 Enables Remote Code Execution",
-    "summary": "Git introduced CVE-2026-111760, a flaw that permits remote code execution in enterprise environments. The vulnerability arises from improper input validation in the Git server component, allowing attackers to inject malicious commands; no public exploit is documented. A patch is available; administrators should update Git to the latest release and monitor logs for suspicious activity.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/git-patches-flaw-that-lets-malicious-repositories-execu",
-    "publishedAt": "2026-11-11T13:10:43.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "git-cve-2026-111760-enables-remote-code-execution",
-      "article-c8ba2879",
-      "c8ba2879",
-      "git-cve-2026-111760-enables-remote-code-execution-3a8d59"
-    ]
-  },
-  {
-    "slug": "cisa-kev-catalog-detect-patch-six-new-exploits-379e8ffb",
-    "title": "CISA KEV Catalog: Detect & Patch Six New Exploits",
-    "summary": "Critical security intelligence alert regarding CISA KEV Catalog: Detect & Patch Six. Review root-cause telemetry, hunt via detection rules, and patch today. The vulnerability is tracked as CVE-2026-20320.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cisa-adds-six-known-exploited-vulnerabilities-to-catalo",
-    "publishedAt": "2026-11-11T13:10:29.000Z",
-    "cves": [
-      "CVE-2026-20320"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-kev-catalog-detect-patch-six-new-exploits",
-      "article-379e8ffb",
-      "379e8ffb",
-      "cisa-kev-catalog-detect-patch-six-new-exploits-1b6aff"
-    ]
-  },
-  {
-    "slug": "microsoft-alerts-security-teams-to-ai-agent-backdo-48c2503d",
-    "title": "Microsoft Alerts Security Teams to AI Agent Backdoors",
-    "summary": "A critical security alert from Microsoft identifies malicious backdoor activity targeting enterprise AI agents associated with Lazarus threat tactics. Telemetry analysis indicates that these backdoors disrupt essential root-cause controls and compromise agent execution environments without authorization. Security administrators must analyze system telemetry, deploy proactive threat-hunting detection rules, and apply mandatory software updates immediately.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/microsoft-researchers-show-ai-agents-can-be-backdoored",
-    "publishedAt": "2026-11-11T13:10:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-alerts-security-teams-to-ai-agent-backdo",
-      "article-48c2503d",
-      "48c2503d",
-      "microsoft-alerts-security-teams-to-ai-agent-backdo-6fa77a",
-      "microsoft-alerts-security-teams-to-ai-agent-backdoors"
-    ]
-  },
-  {
-    "slug": "cisco-broadworks-cve-2026-20320-xxe-flaw-patch-cfad1869",
-    "title": "Cisco BroadWorks CVE-2026-20320: XXE Flaw Patch",
-    "summary": "Cisco BroadWorks is affected by CVE-2026-20320, an XML External Entity (XXE) flaw that can enable remote code execution. The vulnerability allows attackers to read arbitrary files and execute commands on the BroadWorks server when processing crafted XML requests. Cisco has released a patch; administrators should apply the update immediately and enable input validation to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cisa-flags-cisco-broadworks-flaw-as-actively-exploited",
-    "publishedAt": "2026-11-11T13:10:06.000Z",
-    "cves": [
-      "CVE-2026-20320"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-broadworks-cve-2026-20320-xxe-flaw-patch",
-      "article-cfad1869",
-      "cfad1869",
-      "cisco-broadworks-cve-2026-20320-xxe-flaw-patch-2ca8f4"
-    ]
-  },
-  {
-    "slug": "microsoft-cve-2026-124194-enables-outlook-rce-ac9d4617",
-    "title": "Microsoft CVE-2026-124194 Enables Outlook RCE",
-    "summary": "Microsoft disclosed CVE-2026-124194, a flaw that allows remote code execution in Outlook on enterprise systems. The issue stems from improper handling of email attachments, enabling attackers to execute arbitrary code; no public exploit is reported. Microsoft has released a patch; users should update Outlook immediately and disable macro execution as a precaution.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws",
-    "publishedAt": "2026-11-11T13:09:51.000Z",
-    "cves": [
-      "CVE-2026-124194"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-cve-2026-124194-enables-outlook-rce",
-      "article-ac9d4617",
-      "ac9d4617",
-      "microsoft-cve-2026-124194-enables-outlook-rce-1cb212"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98471-important-openexr-security-update-56dd69b3",
-    "title": "RHSA-2026:98471: Important: openexr security update",
-    "summary": "An update for openexr is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98471",
-    "publishedAt": "2026-11-11T13:07:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98471-important-openexr-security-update",
-      "article-56dd69b3",
-      "56dd69b3",
-      "rhsa-2026-98471-important-openexr-security-update-37d6e8"
-    ]
-  },
-  {
-    "slug": "n-able-issues-emergency-hotfix-after-33-vulnerabil-9ad632e5",
-    "title": "N‑able Issues Emergency Hotfix After 33 Vulnerabilities Shutdown",
-    "summary": "N‑able’s hosted remote monitoring platform suffered a worldwide shutdown after the public disclosure of 33 vulnerabilities. The emergency update, build 2026.4.1.26, addresses seven published CVEs and implements server, agent, and probe hardening to mitigate the identified weaknesses. Security teams should apply the hotfix immediately and review configuration settings to prevent similar disruptions.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/n-able-n-central-security-vulnerabilities/",
-    "publishedAt": "2026-11-11T12:57:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-issues-emergency-hotfix-after-33-vulnerabil",
-      "article-9ad632e5",
-      "9ad632e5",
-      "n-able-issues-emergency-hotfix-after-33-vulnerabil-dd18ec",
-      "n-able-issues-emergency-hotfix-after-33-vulnerabilities-shut"
-    ]
-  },
-  {
-    "slug": "red-hat-rhc-update-addresses-important-vulnerabili-dc8f8a9d",
-    "title": "Red Hat rhc Update Addresses Important Vulnerabilities",
-    "summary": "Red Hat released a security update for the rhc client on Enterprise Linux 7, addressing vulnerabilities that could allow privilege escalation. The advisory references several CVEs with CVSS scores ranging from 7.5 to 8.3, indicating high exploitation potential for authenticated users. Administrators should apply the rhc update immediately and verify that all affected components are patched to prevent unauthorized access.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98794",
-    "publishedAt": "2026-11-11T12:40:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-rhc-update-addresses-important-vulnerabili",
-      "article-dc8f8a9d",
-      "dc8f8a9d",
-      "red-hat-rhc-update-addresses-important-vulnerabili-37d6dc",
-      "red-hat-rhc-update-addresses-important-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "red-hat-tigervnc-update-fixes-important-vulnerabil-b8109f0a",
-    "title": "Red Hat tigervnc Update Fixes Important Vulnerabilities",
-    "summary": "Red Hat issued an update for tigervnc on Enterprise Linux 9, fixing vulnerabilities that could enable code execution via the VNC protocol. The advisory lists CVEs with CVSS scores of 9.0, indicating a severe risk for systems exposed to untrusted network traffic. Users must apply the tigervnc patch immediately and restrict VNC access to trusted hosts to mitigate the threat.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98538",
-    "publishedAt": "2026-11-11T12:39:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-tigervnc-update-fixes-important-vulnerabil",
-      "article-b8109f0a",
-      "b8109f0a",
-      "red-hat-tigervnc-update-fixes-important-vulnerabil-37d6e5",
-      "red-hat-tigervnc-update-fixes-important-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98531-important-qt5-qtdeclarative-securi-511b4b77",
-    "title": "RHSA-2026:98531: Important: qt5-qtdeclarative security update",
-    "summary": "An update for qt5-qtdeclarative is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98531",
-    "publishedAt": "2026-11-11T12:34:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98531-important-qt5-qtdeclarative-securi",
-      "article-511b4b77",
-      "511b4b77",
-      "rhsa-2026-98531-important-qt5-qtdeclarative-securi-37d6e5",
-      "rhsa-2026-98531-important-qt5-qtdeclarative-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98529-important-nginx-security-update-cf63534c",
-    "title": "RHSA-2026:98529: Important: nginx security update",
-    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98529",
-    "publishedAt": "2026-11-11T12:34:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98529-important-nginx-security-update",
-      "article-cf63534c",
-      "cf63534c",
-      "rhsa-2026-98529-important-nginx-security-update-37d6e5"
     ]
   }
 ];
