@@ -153,7 +153,7 @@
 
 ## 6. Native `.aab` Releases & Production Updates
 - **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a1bba8-6bf0-7623-97dc-23190724bc08` / Group `4ceb3a54-7d0b-40b1-9fb8-4699f913938a` / Worker `2a9a11df-874d-4104-8a59-22ce59ddd896` / Git `3e7bc4a`):**
-  - **Google Threat Intelligence & Mandiant Research Feed Integration (Nov 14, 2026 / Commit `086422f` / Live on `secubuzz.com`)**:
+  - **Google Threat Intelligence & Mandiant Research Feed Integration (Nov 14, 2026 / Worker Version `818c1de7-1ac8-4c41-b165-1334b23c64a8` / Commit `b4f72ce` / Live on `secubuzz.com`)**:
     - *Scope & Capability*: Integrated official Google Threat Intelligence & Mandiant research RSS feed (`https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/`) into `scripts/ingest.mjs`, `website/src/data/sources.ts`, and `docs/FEEDS_AND_SOURCES.md` (Total active feeds expanded from 47 to 48: 33 threat/industry newsrooms + 15 vendor PSIRT/advisory feeds).
     - *Coverage*: Delivers authoritative research on nation-state APT campaigns (TAG), cloud infrastructure hijacking (LLMJacking), agentic offensive frameworks, and Mandiant incident response investigations.
     - *Zero-Rate-Limit Invariant*: Bounded by `MAX_NEW_CANDIDATES = 40` global candidate ceiling, 6,000ms delay pacing, and active dual-key API pooling (`GROQ_API_KEYS`, `GEMINI_API_KEYS`).
