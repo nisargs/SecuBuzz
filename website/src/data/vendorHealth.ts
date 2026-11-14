@@ -23,14 +23,14 @@ export const VENDOR_STATUS_REGISTRY: Record<string, VendorHealth> = {
   },
   'Palo Alto Networks': {
     vendor: 'Palo Alto Networks',
-    status: 'DEGRADED',
-    summary: 'Prisma Cloud: Alert Manual and Automated Remediation is unavailable',
+    status: 'OPERATIONAL',
+    summary: 'All Prisma Cloud & Strata services operational',
     statusUrl: 'https://status.paloaltonetworks.com/',
   },
   SonicWall: {
     vendor: 'SonicWall',
-    status: 'DEGRADED',
-    summary: 'Email delivery to some mail services impacted (HES NA) & WNM login issue',
+    status: 'OPERATIONAL',
+    summary: 'All SonicWall services & NSM operational',
     statusUrl: 'https://status.sonicwall.com/',
   },
   Ivanti: {
@@ -41,20 +41,20 @@ export const VENDOR_STATUS_REGISTRY: Record<string, VendorHealth> = {
   },
   Cloudflare: {
     vendor: 'Cloudflare',
-    status: 'DEGRADED',
-    summary: 'Durable Objects increased error rates in North America',
+    status: 'OPERATIONAL',
+    summary: 'All Cloudflare edge and cloud services operational',
     statusUrl: 'https://www.cloudflarestatus.com/',
   },
   'Check Point': {
     vendor: 'Check Point',
-    status: 'DEGRADED',
-    summary: 'Smart-1 Cloud unavailable in UAE region',
+    status: 'OPERATIONAL',
+    summary: 'All Check Point cloud services operational',
     statusUrl: 'https://status.checkpoint.com/',
   },
   Tenable: {
     vendor: 'Tenable',
-    status: 'DEGRADED',
-    summary: 'Tenable One & Vulnerability Management platform issues',
+    status: 'OPERATIONAL',
+    summary: 'All Tenable platforms operational',
     statusUrl: 'https://status.tenable.com/',
   },
   AWS: {

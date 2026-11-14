@@ -46,7 +46,8 @@
     "feed:sync": "node scripts/sync_website_data.mjs && npx wrangler r2 object put secubuzz-feed/feed.json --file ./feed.json --remote",
     "test:push": "node scripts/test_push_targeting.mjs",
     "track:push": "node scripts/track_broadcast_clicks.mjs",
-    "verify:slugs": "node scripts/verify_slug_collisions.mjs"
+    "verify:slugs": "node scripts/verify_slug_collisions.mjs",
+    "verify:radar": "node scripts/verify_vendor_radar.mjs"
   },
   "private": true
 }

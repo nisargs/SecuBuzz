@@ -419,8 +419,8 @@ const BASELINE_VENDOR_REGISTRY: Record<string, VendorHealthTelemetry> = {
   },
   'Palo Alto Networks': {
     vendor: 'Palo Alto Networks',
-    status: 'DEGRADED',
-    summary: 'Prisma Cloud: Alert Manual and Automated Remediation is unavailable',
+    status: 'OPERATIONAL',
+    summary: 'All Prisma Cloud & Strata services operational',
     statusUrl: 'https://status.paloaltonetworks.com/',
   },
   CrowdStrike: {
@@ -431,8 +431,8 @@ const BASELINE_VENDOR_REGISTRY: Record<string, VendorHealthTelemetry> = {
   },
   Cloudflare: {
     vendor: 'Cloudflare',
-    status: 'DEGRADED',
-    summary: 'Durable Objects increased error rates in North America',
+    status: 'OPERATIONAL',
+    summary: 'All Cloudflare edge and cloud services operational',
     statusUrl: 'https://www.cloudflarestatus.com/',
   },
   Cisco: {
@@ -491,14 +491,14 @@ const BASELINE_VENDOR_REGISTRY: Record<string, VendorHealthTelemetry> = {
   },
   'Check Point': {
     vendor: 'Check Point',
-    status: 'DEGRADED',
-    summary: 'Smart-1 Cloud unavailable in UAE region',
+    status: 'OPERATIONAL',
+    summary: 'All Check Point cloud services operational',
     statusUrl: 'https://status.checkpoint.com/',
   },
   SonicWall: {
     vendor: 'SonicWall',
-    status: 'DEGRADED',
-    summary: 'Email delivery to some mail services impacted (HES NA) & WNM login issue',
+    status: 'OPERATIONAL',
+    summary: 'All SonicWall services & NSM operational',
     statusUrl: 'https://status.sonicwall.com/',
   },
   VMware: {
@@ -557,14 +557,14 @@ const BASELINE_VENDOR_REGISTRY: Record<string, VendorHealthTelemetry> = {
   },
   Tenable: {
     vendor: 'Tenable',
-    status: 'OUTAGE',
-    summary: 'Tenable One & Vulnerability Management platform issues',
+    status: 'OPERATIONAL',
+    summary: 'All Tenable platforms operational',
     statusUrl: 'https://status.tenable.com/',
   },
   Qualys: {
     vendor: 'Qualys',
-    status: 'DEGRADED',
-    summary: 'Qualys Cloud Platform operational issues',
+    status: 'OPERATIONAL',
+    summary: 'Qualys Cloud Platform operational',
     statusUrl: 'https://status.qualys.com/',
   },
   Rapid7: {
@@ -602,6 +602,8 @@ const BASELINE_VENDOR_REGISTRY: Record<string, VendorHealthTelemetry> = {
 const LIVE_STATUS_SOURCES = [
   { vendor: 'Azure', type: 'rss', url: 'https://azure.status.microsoft/en-us/status/feed/', statusUrl: 'https://azure.status.microsoft/en-us/status' },
   { vendor: 'Microsoft', type: 'microsoft_mac', url: 'https://status.cloud.microsoft/api/feed/mac', statusUrl: 'https://status.cloud.microsoft/m365/referrer=serviceStatusRedirect' },
+  { vendor: 'Google', type: 'google_cloud', url: 'https://status.cloud.google.com/incidents.json', statusUrl: 'https://status.cloud.google.com/' },
+  { vendor: 'Slack', type: 'slack', url: 'https://status.slack.com/api/v2.0.0/current', statusUrl: 'https://status.slack.com/' },
   { vendor: 'Palo Alto Networks', type: 'statuspage', url: 'https://status.paloaltonetworks.com/api/v2/summary.json', statusUrl: 'https://status.paloaltonetworks.com/' },
   { vendor: 'Cloudflare', type: 'statuspage', url: 'https://www.cloudflarestatus.com/api/v2/summary.json', statusUrl: 'https://www.cloudflarestatus.com/' },
   { vendor: 'Check Point', type: 'statuspage', url: 'https://status.checkpoint.com/api/v2/summary.json', statusUrl: 'https://status.checkpoint.com/' },
@@ -656,20 +658,50 @@ async function getVendorStatusTelemetry(): Promise<Record<string, VendorHealthTe
           if (!res.ok) return null;
 
           let status: 'OPERATIONAL' | 'DEGRADED' | 'OUTAGE' = 'OPERATIONAL';
-          let summary = 'All systems operational';
+          let summary = `All ${src.vendor} services operational`;
 
           if (src.type === 'statuspage') {
             const data: any = await res.json();
             const indicator = data.status?.indicator || 'none';
-            const incidents = (data.incidents || []).filter((i: any) => i.status !== 'resolved');
+            // Only consider incidents that are NOT resolved AND have recent updates within the last 14 days
+            const fourteenDaysAgo = Date.now() - 14 * 24 * 3600 * 1000;
+            const incidents = (data.incidents || []).filter((i: any) => {
+              if (i.status === 'resolved' || i.resolved_at) return false;
+              const incidentTime = new Date(i.updated_at || i.created_at || 0).getTime();
+              return incidentTime >= fourteenDaysAgo;
+            });
             const maintenances = (data.scheduled_maintenances || []).filter((m: any) => m.status === 'in_progress');
 
             if (indicator === 'critical' || indicator === 'major') {
               status = 'OUTAGE';
-              summary = incidents[0]?.name || data.status?.description || 'Major service outage';
+              summary = incidents[0]?.name || data.status?.description || `${src.vendor} service outage`;
             } else if (indicator !== 'none' || incidents.length > 0 || maintenances.length > 0) {
               status = 'DEGRADED';
-              summary = incidents[0]?.name || (maintenances[0] ? `${maintenances[0].name} in progress` : data.status?.description) || 'Service degradation';
+              summary = incidents[0]?.name || (maintenances[0] ? `${maintenances[0].name} in progress` : data.status?.description) || `${src.vendor} service degradation`;
+            } else {
+              status = 'OPERATIONAL';
+              summary = `All ${src.vendor} services operational`;
+            }
+          } else if (src.type === 'google_cloud') {
+            const data: any = await res.json();
+            if (Array.isArray(data)) {
+              const active = data.filter((i: any) => !i.end);
+              if (active.length > 0) {
+                status = 'DEGRADED';
+                summary = active[0].external_desc || active[0].summary || 'Google Cloud platform incident';
+              } else {
+                status = 'OPERATIONAL';
+                summary = 'Google Cloud Platform operational';
+              }
+            }
+          } else if (src.type === 'slack') {
+            const data: any = await res.json();
+            if (data.active_incidents && Array.isArray(data.active_incidents) && data.active_incidents.length > 0) {
+              status = 'DEGRADED';
+              summary = data.active_incidents[0].title || 'Slack service disruption';
+            } else {
+              status = 'OPERATIONAL';
+              summary = 'All Slack services operational';
             }
           } else if (src.type === 'statushub') {
             const data: any = await res.json();
