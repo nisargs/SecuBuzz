@@ -13,7 +13,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "bundeswehr-removes-grounding-on-quantum-systems-dr-1fa9f641",
     "title": "Bundeswehr Removes Grounding on Quantum Systems Drones",
-    "summary": "A server cyber incident prompted the German Bundeswehr to temporarily ground Quantum Systems reconnaissance drones. The incident exposed supply‑chain risk telemetry gaps, though no direct compromise of drone firmware was reported, and no CVE was cited. The Bundeswehr lifted the grounding after remediation and now recommends continuous supply‑chain monitoring for future deployments.",
+    "summary": "A server cyber incident prompted the German Bundeswehr to temporarily ground Quantum Systems reconnaissance drones. The incident exposed supply-chain risk telemetry gaps, though no direct compromise of drone firmware was reported, and no CVE was cited. The Bundeswehr lifted the grounding after remediation and now recommends continuous supply-chain monitoring for future deployments.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "CyberNews AI",
@@ -32,7 +32,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "eslint-terminates-paid-contributor-program-amid-ai-fa9895eb",
     "title": "ESLint Terminates Paid Contributor Program Amid AI Impact",
-    "summary": "ESLint has discontinued its paid contributor program as AI-generated code increases maintenance overhead for open‑source projects. The decision follows broader industry shifts, with projects from Rust to Godot and curl tightening contribution rules to manage quality and security risks. Maintainers are encouraged to adopt stricter code review processes and automated AI‑code detection tools to preserve project integrity.",
+    "summary": "ESLint has discontinued its paid contributor program as AI-generated code increases maintenance overhead for open-source projects. The decision follows broader industry shifts, with projects from Rust to Godot and curl tightening contribution rules to manage quality and security risks. Maintainers are encouraged to adopt stricter code review processes and automated AI-code detection tools to preserve project integrity.",
     "category": "General",
     "severity": "LOW",
     "source": "Socket.dev",
@@ -49,28 +49,33 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cursor-breach-enables-malicious-claude-code-extens-cda432ca",
-    "title": "Cursor Breach Enables Malicious Claude Code Extension Distribution",
-    "summary": "Cursor confirmed a breach that allowed attackers to distribute a Claude Code extension via marketplace after compromising Fireworks AI credentials. Attackers used stolen API keys to inject the extension, bypassing vetting and delivering malware to users, potentially exposing sensitive data. Cursor released a patch tightening marketplace authentication and advises users to uninstall the rogue extension and reset Fireworks AI credentials.",
+    "slug": "cursor-breach-exposes-5-000-developers-via-malicio-df4c261a",
+    "title": "Cursor Breach Exposes 5,000 Developers via Malicious Claude Code Extension",
+    "summary": "Attackers compromised Fireworks AI credentials to distribute a malicious Claude Code extension through Cursor's marketplace, targeting developers using the platform. Insufficient third-party extension validation let credential-stealing code run with elevated privileges, exposing roughly 5,000 developers to hidden SSH backdoors. Cursor patched marketplace authentication and urged users to uninstall the rogue extension, revoke compromised keys, and reset Fireworks AI credentials.",
     "category": "Breach",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
     "publishedAt": "2026-11-14T17:27:25.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/cursor-breach-fireworks-ai-malicious-claude-code"
+      }
+    ],
     "aliases": [
-      "cursor-breach-enables-malicious-claude-code-extens",
-      "article-cda432ca",
-      "cda432ca",
-      "cursor-breach-enables-malicious-claude-code-extens-1baa8d",
-      "cursor-breach-enables-malicious-claude-code-extension-distri"
+      "cursor-breach-exposes-5-000-developers-via-malicio",
+      "article-df4c261a",
+      "df4c261a",
+      "cursor-breach-exposes-5-000-developers-via-malicio-1baa8d",
+      "cursor-breach-exposes-5-000-developers-via-malicious-claude-"
     ]
   },
   {
     "slug": "us-disrupts-north-korean-facestealer-crypto-theft-d875fe40",
     "title": "US Disrupts North Korean FaceStealer Crypto Theft",
-    "summary": "U.S. authorities disrupted a North Korean social‑engineering campaign named FaceStealer that stole over $400 million in cryptocurrency. The operation exploited phishing emails and credential harvesting to gain wallet access, enabling large‑scale transfers to untraceable addresses. Affected actors should immediately revoke compromised credentials, monitor wallet activity, and apply multi‑factor authentication to mitigate future theft.",
+    "summary": "U.S. authorities disrupted a North Korean social-engineering campaign named FaceStealer that stole over $400 million in cryptocurrency. The operation exploited phishing emails and credential harvesting to gain wallet access, enabling large-scale transfers to untraceable addresses. Affected actors should immediately revoke compromised credentials, monitor wallet activity, and apply multi-factor authentication to mitigate future theft.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -88,7 +93,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ai-overreliance-threatens-cybersecurity-effectiven-c2b1397a",
     "title": "AI Overreliance Threatens Cybersecurity Effectiveness",
-    "summary": "Overreliance on AI in security operations risks eroding creativity, clear communication, and critical thinking when playbooks are absent. The article argues that automated decision‑making can blind analysts to nuanced threat indicators, reducing adaptive response capabilities. Security teams should balance AI tools with human oversight, maintain playbooks, and regularly validate model outputs to preserve analytical rigor.",
+    "summary": "Overreliance on AI in security operations risks eroding creativity, clear communication, and critical thinking when playbooks are absent. The article argues that automated decision-making can blind analysts to nuanced threat indicators, reducing adaptive response capabilities. Security teams should balance AI tools with human oversight, maintain playbooks, and regularly validate model outputs to preserve analytical rigor.",
     "category": "General",
     "severity": "LOW",
     "source": "SecurityWeek",
@@ -106,8 +111,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "cisa-adds-unrealircd-cve-2026-114713-to-kev-catalo-bf09696b",
-    "title": "CISA Adds UnrealIRCd CVE‑2026‑114713 to KEV Catalog",
-    "summary": "CISA has added the UnrealIRCd CVE‑2026‑114713 vulnerability to its Known Exploited Vulnerabilities (KEV) catalog, alerting federal agencies to the risk. The flaw permits unauthenticated remote code execution via malformed IRC commands, and active exploits have been observed in the wild. Administrators should apply the vendor‑issued patch immediately and verify configuration changes to disable legacy protocols. The vulnerabilities are tracked as CVE-2026-114713, CVE-2026-123039.",
+    "title": "CISA Adds UnrealIRCd CVE-2026-114713 to KEV Catalog",
+    "summary": "CISA has added the UnrealIRCd CVE-2026-114713 vulnerability to its Known Exploited Vulnerabilities (KEV) catalog, alerting federal agencies to the risk. The flaw permits unauthenticated remote code execution via malformed IRC commands, and active exploits have been observed in the wild. Administrators should apply the vendor-issued patch immediately and verify configuration changes to disable legacy protocols.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -134,7 +139,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "hackers-use-artex-ai-agents-for-rapid-privileged-a-bb287d22",
     "title": "Hackers Use ARTEX AI Agents for Rapid Privileged Access",
-    "summary": "Hackers use ARTEX AI agents to automate network attacks, reaching privileged access in under three hours. The agents combine stolen credentials, exposed applications, and cloud permissions, reducing the time from discovery to compromise. Security teams should monitor for ARTEX activity, enforce least‑privilege cloud permissions, patch exposed applications promptly, and implement multi‑factor authentication.",
+    "summary": "Hackers use ARTEX AI agents to automate network attacks, reaching privileged access in under three hours. The agents combine stolen credentials, exposed applications, and cloud permissions, reducing the time from discovery to compromise. Security teams should monitor for ARTEX activity, enforce least-privilege cloud permissions, patch exposed applications promptly, and implement multi-factor authentication.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -153,7 +158,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "apple-unveils-secure-exclaves-for-camera-and-micro-5fd804ca",
     "title": "Apple Unveils Secure Exclaves for Camera and Microphone Data",
-    "summary": "Apple revealed Secure Exclaves that isolate camera and microphone data from the main OS on HomeView and new iPhones. The enclave processes ambient sensor streams, preventing core OS access to raw data and narrowing the privacy‑exploit surface. Developers should use the Secure Enclave API for sensitive data and users should keep devices updated for privacy protection.",
+    "summary": "Apple revealed Secure Exclaves that isolate camera and microphone data from the main OS on HomeView and new iPhones. The enclave processes ambient sensor streams, preventing core OS access to raw data and narrowing the privacy-exploit surface. Developers should use the Secure Enclave API for sensitive data and users should keep devices updated for privacy protection.",
     "category": "General",
     "severity": "LOW",
     "source": "SecurityWeek",
@@ -208,22 +213,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "faa-ground-stop-likely-software-update-no-hacking-5f2501a2",
-    "title": "FAA Ground Stop Likely Software Update, No Hacking Evidence",
-    "summary": "The nationwide FAA ground stop, triggered by a software update, shows no evidence of a cyberattack behind the outage. Officials attribute the disruption to a misconfigured update rollout, with no signs of malicious intrusion detected by the FBI. Air traffic control operators should verify update integrity and monitor for anomalous behavior, while the FAA continues to investigate the incident.",
-    "category": "General",
-    "severity": "LOW",
+    "slug": "faa-ground-stop-caused-by-l3harris-software-update-2daad0e8",
+    "title": "FAA Ground Stop Caused by L3Harris Software Update Misconfiguration",
+    "summary": "A nationwide FAA ground stop halted flights after a software update from L3Harris triggered a critical outage. The outage stemmed from a misconfigured update rollout, with no evidence of a cyberattack or malicious intrusion. The FBI is probing the update for software flaws, while the FAA urges operators to verify integrity and monitor for anomalies.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/",
     "publishedAt": "2026-11-14T08:40:22.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/faa-ground-stop-l3harris-software-glitch-cyberattack-ruled-out"
+      }
+    ],
     "aliases": [
-      "faa-ground-stop-likely-software-update-no-hacking",
-      "article-5f2501a2",
-      "5f2501a2",
-      "faa-ground-stop-likely-software-update-no-hacking-366dd4",
-      "faa-ground-stop-likely-software-update-no-hacking-evidence"
+      "faa-ground-stop-caused-by-l3harris-software-update",
+      "article-2daad0e8",
+      "2daad0e8",
+      "faa-ground-stop-caused-by-l3harris-software-update-366dd4",
+      "faa-ground-stop-caused-by-l3harris-software-update-misconfig"
     ]
   },
   {
@@ -246,8 +256,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "n-central-zero-day-rce-exploited-by-4everable2shel-f8fdae3d",
-    "title": "N‑Central Zero‑Day RCE Exploited by 4EverAble2Shell",
-    "summary": "Threat actors exploit CVE-2026-90436, a zero‑day RCE in N‑able N‑Central servers, using the 4EverAble2Shell tool in the wild. The flaw permits unauthenticated code execution, creating a high‑severity risk for N‑Central users worldwide. Apply the vendor’s patch, deploy the Sigma rules, and monitor Apache Axis telemetry to detect and block the exploitation.",
+    "title": "N-Central Zero-Day RCE Exploited by 4EverAble2Shell",
+    "summary": "Threat actors exploit CVE-2026-90436, a zero-day RCE in N-able N-Central servers, using the 4EverAble2Shell tool in the wild. The flaw permits unauthenticated code execution, creating a high-severity risk for N-Central users worldwide. Apply the vendor’s patch, deploy the Sigma rules, and monitor Apache Axis telemetry to detect and block the exploitation.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "CyberNews AI",
@@ -268,7 +278,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "signdrop-zero-day-enables-system-privileges-via-de-2f66fc9f",
     "title": "SignDrop Zero-Day Enables System Privileges via Defender RPC",
-    "summary": "SignDrop zero‑day exploits Windows CLFS via Defender RPC to elevate privileges to System level. The flaw allows remote code execution without authentication, enabling attackers to bypass security controls. Microsoft has released a patch; security teams should apply it immediately, monitor Defender telemetry, and review Sigma hunting rules for early detection.",
+    "summary": "SignDrop zero-day exploits Windows CLFS via Defender RPC to elevate privileges to System level. The flaw allows remote code execution without authentication, enabling attackers to bypass security controls. Microsoft has released a patch; security teams should apply it immediately, monitor Defender telemetry, and review Sigma hunting rules for early detection.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "CyberNews AI",
@@ -344,7 +354,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "sckit-exploits-screenconnect-for-remote-technician-e6c5e832",
     "title": "SCKit Exploits ScreenConnect for Remote Technician Access",
-    "summary": "SCKit leveraged the legitimate ScreenConnect platform to infiltrate target systems and capture technician sessions. This abuse bypasses standard authentication, enabling attackers to execute commands, exfiltrate data, and maintain persistence. Defenders should enforce least‑privilege access, monitor for anomalous ScreenConnect activity, and deploy Defender XDR hunting rules to detect and block actively.",
+    "summary": "SCKit leveraged the legitimate ScreenConnect platform to infiltrate target systems and capture technician sessions. This abuse bypasses standard authentication, enabling attackers to execute commands, exfiltrate data, and maintain persistence. Defenders should enforce least-privilege access, monitor for anomalous ScreenConnect activity, and deploy Defender XDR hunting rules to detect and block actively.",
     "category": "General",
     "severity": "MEDIUM",
     "source": "Microsoft Security",
@@ -363,7 +373,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "sentinelone-ai-detects-autonomous-artex-attacks-d429a6af",
     "title": "SentinelOne AI Detects Autonomous ARTEX Attacks",
-    "summary": "SentinelOne demonstrates its Behavioral AI, Singularity AI SIEM, and Purple AI modules detecting autonomous ARTEX attacks across cloud, identity, and endpoint platforms. The framework uses machine‑learning models trained on ARTEX command‑and‑control traffic, enabling real‑time threat isolation without manual signatures. Teams should integrate these AI modules into SIEM pipelines to improve visibility and accelerate response to AI‑driven threats.",
+    "summary": "SentinelOne demonstrates its Behavioral AI, Singularity AI SIEM, and Purple AI modules detecting autonomous ARTEX attacks across cloud, identity, and endpoint platforms. The framework uses machine-learning models trained on ARTEX command-and-control traffic, enabling real-time threat isolation without manual signatures. Teams should integrate these AI modules into SIEM pipelines to improve visibility and accelerate response to AI-driven threats.",
     "category": "General",
     "severity": "LOW",
     "source": "SentinelOne",
@@ -380,8 +390,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "ai-enabled-pentest-platforms-lower-attack-skill-th-0112375a",
-    "title": "AI‑Enabled Pentest Platforms Lower Attack Skill Threshold",
-    "summary": "AI‑enabled pentest and red‑team frameworks automate reconnaissance, vulnerability testing, and follow‑on actions, reducing the skill required for attackers. These tools chain operations seamlessly, enabling rapid exploitation cycles and accelerating intrusion timelines when misused by threat actors. Security teams should assess the risk of adopting such platforms, enforce strict access controls, and monitor for anomalous usage patterns.",
+    "title": "AI-Enabled Pentest Platforms Lower Attack Skill Threshold",
+    "summary": "AI-enabled pentest and red-team frameworks automate reconnaissance, vulnerability testing, and follow-on actions, reducing the skill required for attackers. These tools chain operations seamlessly, enabling rapid exploitation cycles and accelerating intrusion timelines when misused by threat actors. Security teams should assess the risk of adopting such platforms, enforce strict access controls, and monitor for anomalous usage patterns.",
     "category": "General",
     "severity": "LOW",
     "source": "Cisco Talos",
@@ -400,7 +410,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "arcticrat-expands-to-full-device-control-using-ai-3fd9c401",
     "title": "ArcticRAT Expands to Full Device Control Using AI",
-    "summary": "The Android malware ArcticRAT has broadened its scope from crypto‑currency theft to full device control, enabling attackers to harvest and analyze victim finances. The gang now incorporates AI techniques to profile stolen data, increasing the precision of targeted financial exploitation. Security teams should update Android defenses, monitor for ArcticRAT indicators, and employ AI‑based anomaly detection to mitigate the threat.",
+    "summary": "The Android malware ArcticRAT has broadened its scope from crypto-currency theft to full device control, enabling attackers to harvest and analyze victim finances. The gang now incorporates AI techniques to profile stolen data, increasing the precision of targeted financial exploitation. Security teams should update Android defenses, monitor for ArcticRAT indicators, and employ AI-based anomaly detection to mitigate the threat.",
     "category": "General",
     "severity": "LOW",
     "source": "Dark Reading",
@@ -418,7 +428,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "cloudflare-releases-kitesurf-browser-engine-open-s-503d6c59",
     "title": "Cloudflare Releases Kitesurf Browser Engine Open Source",
-    "summary": "Cloudflare has open‑sourced Kitesurf, an experimental browser engine designed for AI agents, allowing developers to inspect, run, and deploy it locally or on Cloudflare Workers. The source code is available on GitHub, enabling community contributions and custom deployments in edge computing environments. Security teams should review the repository for potential vulnerabilities and consider integrating Kitesurf into their AI‑agent testing pipelines.",
+    "summary": "Cloudflare has open-sourced Kitesurf, an experimental browser engine designed for AI agents, allowing developers to inspect, run, and deploy it locally or on Cloudflare Workers. The source code is available on GitHub, enabling community contributions and custom deployments in edge computing environments. Security teams should review the repository for potential vulnerabilities and consider integrating Kitesurf into their AI-agent testing pipelines.",
     "category": "General",
     "severity": "LOW",
     "source": "Cloudflare Security",
@@ -437,7 +447,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "osaka-city-alerts-residents-to-phishing-after-data-a2e7db11",
     "title": "Osaka City Alerts Residents to Phishing After Data Breach",
-    "summary": "Osaka City reported a data breach affecting approximately one million residents, prompting a city‑wide warning. The breach exposed personal information, and officials cautioned residents against phishing emails that appear to originate from municipal services. Security teams should verify email authenticity, update credentials, and monitor for unauthorized account activity to mitigate potential exploitation.",
+    "summary": "Osaka City reported a data breach affecting approximately one million residents, prompting a city-wide warning. The breach exposed personal information, and officials cautioned residents against phishing emails that appear to originate from municipal services. Security teams should verify email authenticity, update credentials, and monitor for unauthorized account activity to mitigate potential exploitation.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "The Record",
@@ -475,7 +485,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "cloudflare-warns-of-ai-powered-pen-testing-threats-ed7d3290",
     "title": "Cloudflare Warns of AI-Powered Pen Testing Threats",
-    "summary": "Cloudflare reports AI‑orchestrated penetration testing platforms like ARTEX can launch attacks against exposed enterprise infrastructure. These platforms automate reconnaissance, exploit publicly disclosed vulnerabilities, and harvest credentials, creating a scalable threat vector that bypasses manual testing. Cloudflare advises continuous monitoring, hardened segmentation, and AI‑driven anomaly detection to mitigate critical orchestrated attacks.",
+    "summary": "Cloudflare reports AI-orchestrated penetration testing platforms like ARTEX can launch attacks against exposed enterprise infrastructure. These platforms automate reconnaissance, exploit publicly disclosed vulnerabilities, and harvest credentials, creating a scalable threat vector that bypasses manual testing. Cloudflare advises continuous monitoring, hardened segmentation, and AI-driven anomaly detection to mitigate critical orchestrated attacks.",
     "category": "General",
     "severity": "LOW",
     "source": "Cloudflare Security",
@@ -529,7 +539,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "weekly-cybersecurity-roundup-crypto-scams-turla-ra-2be048f4",
     "title": "Weekly Cybersecurity Roundup: Crypto Scams, Turla, Railway Breach",
-    "summary": "This week, law enforcement dismantled several crypto‑scam operations and seized associated malware infrastructure. Meanwhile, the Turla APT group deployed the Cereal spyware to target government entities, while attackers breached Railway’s systems to exfiltrate AI research. Security teams should monitor for Cereal indicators, review Railway security controls, and stay alert to emerging crypto‑scam tactics.",
+    "summary": "This week, law enforcement dismantled several crypto-scam operations and seized associated malware infrastructure. Meanwhile, the Turla APT group deployed the Cereal spyware to target government entities, while attackers breached Railway’s systems to exfiltrate AI research. Security teams should monitor for Cereal indicators, review Railway security controls, and stay alert to emerging crypto-scam tactics.",
     "category": "General",
     "severity": "LOW",
     "source": "SentinelOne",
@@ -603,8 +613,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "green-agent-remediation-plan-for-internet-facing-c-0f7616b0",
-    "title": "Green Agent: Remediation Plan for Internet‑Facing Container",
-    "summary": "Wiz Research’s Green Agent case study examines an internet‑facing container that exposed sensitive data. The team identified misconfigurations and privilege escalations, then crafted a remediation plan that balanced security urgency with business continuity, producing ready‑to‑merge pull requests. Security teams can adopt the outlined mitigations to harden similar container deployments in production.",
+    "title": "Green Agent: Remediation Plan for Internet-Facing Container",
+    "summary": "Wiz Research’s Green Agent case study examines an internet-facing container that exposed sensitive data. The team identified misconfigurations and privilege escalations, then crafted a remediation plan that balanced security urgency with business continuity, producing ready-to-merge pull requests. Security teams can adopt the outlined mitigations to harden similar container deployments in production.",
     "category": "General",
     "severity": "LOW",
     "source": "Wiz Research",
@@ -707,7 +717,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "openai-launches-chatgpt-wallet-for-agent-payments-4e48330f",
     "title": "OpenAI Launches ChatGPT Wallet for Agent Payments",
-    "summary": "OpenAI launched ChatGPT Wallet, letting agents pay with stand‑in card numbers while hiding user card details. The wallet integrates with American Express, Mastercard, and Visa, operating within OpenAI's dot environment, the user’s dot completes purchases, and merchants may need to adjust for agent transactions. Users should review merchant compatibility and monitor for unintended blocks; OpenAI advises merchants to handle adjustments.",
+    "summary": "OpenAI launched ChatGPT Wallet, letting agents pay with stand-in card numbers while hiding user card details. The wallet integrates with American Express, Mastercard, and Visa, operating within OpenAI's dot environment, the user’s dot completes purchases, and merchants may need to adjust for agent transactions. Users should review merchant compatibility and monitor for unintended blocks; OpenAI advises merchants to handle adjustments.",
     "category": "General",
     "severity": "LOW",
     "source": "Help Net Security",
@@ -746,7 +756,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "chromium-integer-overflow-affects-microsoft-edge-9ac0c451",
     "title": "Chromium Integer Overflow Affects Microsoft Edge",
-    "summary": "A Chromium integer overflow (CVE-2026-126876) impacts Microsoft Edge (Chromium-based) via its Chromium code ingestion. The flaw lets an attacker overflow a 32‑bit counter during URL parsing, potentially corrupting memory and enabling arbitrary code execution; no public PoC yet. Microsoft has fixed the issue in Edge releases; users should update to the version or apply the patch from Chrome release notes.",
+    "summary": "A Chromium integer overflow (CVE-2026-126876) impacts Microsoft Edge (Chromium-based) via its Chromium code ingestion. The flaw lets an attacker overflow a 32-bit counter during URL parsing, potentially corrupting memory and enabling arbitrary code execution; no public PoC yet. Microsoft has fixed the issue in Edge releases; users should update to the version or apply the patch from Chrome release notes.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Microsoft MSRC",
@@ -766,7 +776,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "chromium-information-leak-affects-microsoft-edge-c0c1ee10",
     "title": "Chromium Information Leak Affects Microsoft Edge",
-    "summary": "A Chromium information‑leak flaw (CVE-2026-126878) targets Microsoft Edge (Chromium-based) through its Chromium code ingestion. The flaw lets an attacker read sensitive data from the browser’s memory during URL processing, potentially exposing credentials or session tokens; no public exploit reported. Microsoft has fixed the issue in Edge releases; users should update to build or apply the patch from Chrome release notes.",
+    "summary": "A Chromium information-leak flaw (CVE-2026-126878) targets Microsoft Edge (Chromium-based) through its Chromium code ingestion. The flaw lets an attacker read sensitive data from the browser’s memory during URL processing, potentially exposing credentials or session tokens; no public exploit reported. Microsoft has fixed the issue in Edge releases; users should update to build or apply the patch from Chrome release notes.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -993,8 +1003,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "chromium-type-confusion-cve-2026-126868-fixed-in-e-6adc6211",
-    "title": "Chromium Type Confusion CVE‑2026‑126868 Fixed in Edge",
-    "summary": "A type‑confusion vulnerability in Chromium, catalogued as CVE‑2026‑126868, could allow attackers to manipulate memory during rendering operations. Microsoft Edge, built on Chromium, incorporates the upstream patch that eliminates the type‑confusion flaw. Users should update to the latest Edge release or apply the vendor‑supplied patch to mitigate the risk in affected systems. The flaw is tracked as CVE-2026-126868.",
+    "title": "Chromium Type Confusion CVE-2026-126868 Fixed in Edge",
+    "summary": "A type-confusion vulnerability in Chromium, catalogued as CVE-2026-126868, could allow attackers to manipulate memory during rendering operations. Microsoft Edge, built on Chromium, incorporates the upstream patch that eliminates the type-confusion flaw. Users should update to the latest Edge release or apply the vendor-supplied patch to mitigate the risk in affected systems.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1014,8 +1024,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "chromium-use-after-free-cve-2026-126869-patched-in-acaed216",
-    "title": "Chromium Use‑After‑Free CVE‑2026‑126869 Patched in Edge",
-    "summary": "A use‑after‑free flaw in Chromium, identified as CVE‑2026‑126869, permits attackers to trigger memory corruption during page rendering. Microsoft Edge incorporates the upstream fix that removes the vulnerable memory access. Security teams should upgrade to the latest Edge version or apply the vendor patch to prevent exploitation in affected browsers for all users. The flaw is tracked as CVE-2026-126869.",
+    "title": "Chromium Use-After-Free CVE-2026-126869 Patched in Edge",
+    "summary": "A use-after-free flaw in Chromium, identified as CVE-2026-126869, permits attackers to trigger memory corruption during page rendering. Microsoft Edge incorporates the upstream fix that removes the vulnerable memory access. Security teams should upgrade to the latest Edge version or apply the vendor patch to prevent exploitation in affected browsers for all users.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1076,7 +1086,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "chromium-cve-2026-126863-use-after-free-exploit-ab882f7c",
     "title": "Chromium CVE-2026-126863: Use-After-Free Exploit",
-    "summary": "Chromium’s CVE-2026-126863 is a use‑after‑free flaw that can be triggered in Microsoft Edge’s Chromium engine. The vulnerability arises from improper memory handling during object deallocation, potentially allowing attackers to execute arbitrary code; no public exploit has been reported. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.",
+    "summary": "Chromium’s CVE-2026-126863 is a use-after-free flaw that can be triggered in Microsoft Edge’s Chromium engine. The vulnerability arises from improper memory handling during object deallocation, potentially allowing attackers to execute arbitrary code; no public exploit has been reported. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1096,7 +1106,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "chromium-cve-2026-126864-use-after-free-vulnerabil-e9de9743",
     "title": "Chromium CVE-2026-126864: Use-After-Free Vulnerability",
-    "summary": "Chromium’s CVE-2026-126864 is a use‑after‑free flaw that can be triggered in Microsoft Edge’s Chromium engine. The flaw results from improper memory handling during object deallocation, potentially enabling arbitrary code execution; no public exploit has been disclosed. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.",
+    "summary": "Chromium’s CVE-2026-126864 is a use-after-free flaw that can be triggered in Microsoft Edge’s Chromium engine. The flaw results from improper memory handling during object deallocation, potentially enabling arbitrary code execution; no public exploit has been disclosed. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1157,8 +1167,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "chromium-use-after-free-cve-2026-126851-fixed-in-e-75f3303d",
-    "title": "Chromium Use‑After‑Free CVE‑2026‑126851 Fixed in Edge",
-    "summary": "Chromium’s use‑after‑free flaw, identified as CVE‑2026‑126851, could allow memory corruption in memory if exploited by an attacker. Microsoft Edge, built on Chromium, incorporates the same fix, eliminating the vulnerability in the browser’s rendering engine. Users should update to the latest Edge release to ensure the use‑after‑free issue is fully patched. The flaw is tracked as CVE-2026-126851.",
+    "title": "Chromium Use-After-Free CVE-2026-126851 Fixed in Edge",
+    "summary": "Chromium’s use-after-free flaw, identified as CVE-2026-126851, could allow memory corruption in memory if exploited by an attacker. Microsoft Edge, built on Chromium, incorporates the same fix, eliminating the vulnerability in the browser’s rendering engine. Users should update to the latest Edge release to ensure the use-after-free issue is fully patched.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1199,7 +1209,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-edge-addresses-chromium-uninitialized-re-cb500912",
     "title": "Microsoft Edge Addresses Chromium Uninitialized Resource CVE",
-    "summary": "Chromium vulnerability CVE‑2026‑126853 permits uninitialized resource usage that could cause memory corruption in browsers. The flaw stems from improper initialization of a shared memory buffer; no public exploit exists, but it could enable remote code execution if triggered. Microsoft Edge incorporates the Chromium patch automatically; users should update via Windows Update or the Edge browser to eliminate the risk. The flaw is tracked as CVE-2026-126853.",
+    "summary": "Chromium vulnerability CVE-2026-126853 permits uninitialized resource usage that could cause memory corruption in browsers. The flaw stems from improper initialization of a shared memory buffer; no public exploit exists, but it could enable remote code execution if triggered. Microsoft Edge incorporates the Chromium patch automatically; users should update via Windows Update or the Edge browser to eliminate the risk.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1220,7 +1230,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-edge-addresses-chromium-incorrect-author-02158395",
     "title": "Microsoft Edge Addresses Chromium Incorrect Authorization CVE",
-    "summary": "Chromium vulnerability CVE‑2026‑126854 permits incorrect authorization that could grant unauthorized access to privileged browser resources. The flaw originates from a missing access control check during resource loading; no public exploit is known, but it could enable privilege escalation. Microsoft Edge incorporates the Chromium patch automatically; users should update via Windows Update or the Edge browser to mitigate the risk. The flaw is tracked as CVE-2026-126854.",
+    "summary": "Chromium vulnerability CVE-2026-126854 permits incorrect authorization that could grant unauthorized access to privileged browser resources. The flaw originates from a missing access control check during resource loading; no public exploit is known, but it could enable privilege escalation. Microsoft Edge incorporates the Chromium patch automatically; users should update via Windows Update or the Edge browser to mitigate the risk.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1240,8 +1250,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "chromium-uninitialized-resource-cve-2026-126845-d860a4e3",
-    "title": "Chromium Uninitialized Resource CVE‑2026‑126845",
-    "summary": "CVE‑2026‑126845 is an uninitialized resource flaw discovered in Chromium that could allow memory corruption. Microsoft Edge incorporates Chromium, which includes the patch that mitigates this vulnerability, and users should verify their browser version. No active exploitation has been reported; however, updating to the latest Edge release is recommended to ensure protection. The flaw is tracked as CVE-2026-126845.",
+    "title": "Chromium Uninitialized Resource CVE-2026-126845",
+    "summary": "CVE-2026-126845 is an uninitialized resource flaw discovered in Chromium that could allow memory corruption. Microsoft Edge incorporates Chromium, which includes the patch that mitigates this vulnerability, and users should verify their browser version. No active exploitation has been reported; however, updating to the latest Edge release is recommended to ensure protection.",
     "category": "CVE",
     "severity": "LOW",
     "source": "Microsoft MSRC",
@@ -1261,7 +1271,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-edge-addresses-chromium-type-confusion-c-147f89f1",
     "title": "Microsoft Edge Addresses Chromium Type Confusion CVE-2026-126847",
-    "summary": "A type‑confusion flaw, CVE‑2026‑126847, was found in Chromium, impacting Microsoft Edge’s rendering engine. The bug allows memory corruption from malformed input, enabling remote code execution; a public PoC exists and CVSS is 8.5. Microsoft released an update that incorporates Chromium’s fix; users should install the latest Edge version or apply the patch from Google Chrome releases.",
+    "summary": "A type-confusion flaw, CVE-2026-126847, was found in Chromium, impacting Microsoft Edge’s rendering engine. The bug allows memory corruption from malformed input, enabling remote code execution; a public PoC exists and CVSS is 8.5. Microsoft released an update that incorporates Chromium’s fix; users should install the latest Edge version or apply the patch from Google Chrome releases.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Microsoft MSRC",
@@ -1281,8 +1291,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "chromium-uninitialized-resource-vulnerability-cve-7a3c43a9",
-    "title": "Chromium Uninitialized Resource Vulnerability CVE‑2026‑126848",
-    "summary": "Chromium’s CVE‑2026‑126848 flaw involves an uninitialized resource during rendering that could trigger crashes or memory corruption. The issue is assigned by Google, and Microsoft Edge (Chromium‑based) incorporates the fix automatically in its updates. Users should install the latest Microsoft Edge release to ensure the patch is applied and prevent potential instability. The flaw is tracked as CVE-2026-126848.",
+    "title": "Chromium Uninitialized Resource Vulnerability CVE-2026-126848",
+    "summary": "Chromium’s CVE-2026-126848 flaw involves an uninitialized resource during rendering that could trigger crashes or memory corruption. The issue is assigned by Google, and Microsoft Edge (Chromium-based) incorporates the fix automatically in its updates. Users should install the latest Microsoft Edge release to ensure the patch is applied and prevent potential instability.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1302,8 +1312,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "chromium-type-confusion-vulnerability-cve-2026-126-91e8e290",
-    "title": "Chromium Type Confusion Vulnerability CVE‑2026‑126849",
-    "summary": "Chromium’s CVE‑2026‑126849 flaw is a type confusion bug that may lead to memory corruption. The vulnerability is assigned by Google, and Microsoft Edge (Chromium‑based) incorporates the fix automatically in its updates. Users should update to the latest Microsoft Edge release to ensure the patch is applied and mitigate potential exploitation. The flaw is tracked as CVE-2026-126849.",
+    "title": "Chromium Type Confusion Vulnerability CVE-2026-126849",
+    "summary": "Chromium’s CVE-2026-126849 flaw is a type confusion bug that may lead to memory corruption. The vulnerability is assigned by Google, and Microsoft Edge (Chromium-based) incorporates the fix automatically in its updates. Users should update to the latest Microsoft Edge release to ensure the patch is applied and mitigate potential exploitation.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1324,7 +1334,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-edge-addresses-chromium-cve-2026-126840-8109ecb0",
     "title": "Microsoft Edge Addresses Chromium CVE-2026-126840 Write",
-    "summary": "Microsoft Edge incorporates Chromium updates that fix CVE-2026-126840, an out‑of‑bounds write vulnerability discovered in Chrome. The flaw could allow attackers to corrupt memory and potentially execute arbitrary code if exploited. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today.",
+    "summary": "Microsoft Edge incorporates Chromium updates that fix CVE-2026-126840, an out-of-bounds write vulnerability discovered in Chrome. The flaw could allow attackers to corrupt memory and potentially execute arbitrary code if exploited. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1345,7 +1355,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-edge-addresses-chromium-cve-2026-126841-0158137c",
     "title": "Microsoft Edge Addresses Chromium CVE-2026-126841 Read",
-    "summary": "Microsoft Edge incorporates Chromium updates that fix CVE-2026-126841, an out‑of‑bounds read vulnerability discovered in Chrome. The flaw could allow attackers to read sensitive memory contents, potentially exposing confidential data. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today now.",
+    "summary": "Microsoft Edge incorporates Chromium updates that fix CVE-2026-126841, an out-of-bounds read vulnerability discovered in Chrome. The flaw could allow attackers to read sensitive memory contents, potentially exposing confidential data. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today now.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1492,7 +1502,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-windows-graphics-kernel-elevation-vulner-d0e764fd",
     "title": "Microsoft Windows Graphics Kernel Elevation Vulnerability",
-    "summary": "A kernel privilege‑escalation flaw in Windows Graphics allows local users to gain elevated rights. The vulnerability, identified as 'CVE-2026-95948', lacks a public exploit but could enable privilege abuse if exploited by malicious code. Microsoft recommends applying the latest Office update that includes the patch, and administrators should enforce least‑privilege policies.",
+    "summary": "A kernel privilege-escalation flaw in Windows Graphics allows local users to gain elevated rights. The vulnerability, identified as 'CVE-2026-95948', lacks a public exploit but could enable privilege abuse if exploited by malicious code. Microsoft recommends applying the latest Office update that includes the patch, and administrators should enforce least-privilege policies.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Microsoft MSRC",
@@ -1555,7 +1565,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "windows-graphics-kernel-exposes-information-via-cv-85632a60",
     "title": "Windows Graphics Kernel Exposes Information via CVE-2026-96144",
-    "summary": "A Windows Graphics Kernel information‑disclosure flaw (CVE‑2026‑96144) allows local users to read protected memory through the kernel’s rendering subsystem. The flaw results from unchecked pointer dereference during rendering, permitting local users to read kernel memory and potentially expose sensitive data. Microsoft recommends installing the latest Office update that includes the kernel patch; no work‑around is available.",
+    "summary": "A Windows Graphics Kernel information-disclosure flaw (CVE-2026-96144) allows local users to read protected memory through the kernel’s rendering subsystem. The flaw results from unchecked pointer dereference during rendering, permitting local users to read kernel memory and potentially expose sensitive data. Microsoft recommends installing the latest Office update that includes the kernel patch; no work-around is available.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1576,7 +1586,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "windows-graphics-kernel-exposes-data-via-cve-2026-fdcccb30",
     "title": "Windows Graphics Kernel Exposes Data via CVE-2026-88217",
-    "summary": "A Windows Graphics Kernel information‑disclosure flaw (CVE‑2026‑88217) permits local users to read protected memory through the kernel’s rendering subsystem. The vulnerability stems from unchecked pointer dereference during rendering, allowing local users to extract kernel data and potentially expose sensitive information. Microsoft advises installing the latest Office update that contains the kernel patch; no workaround exists.",
+    "summary": "A Windows Graphics Kernel information-disclosure flaw (CVE-2026-88217) permits local users to read protected memory through the kernel’s rendering subsystem. The vulnerability stems from unchecked pointer dereference during rendering, allowing local users to extract kernel data and potentially expose sensitive information. Microsoft advises installing the latest Office update that contains the kernel patch; no workaround exists.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1597,7 +1607,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "windows-graphics-kernel-privilege-escalation-via-c-87afd1a9",
     "title": "Windows Graphics Kernel Privilege Escalation via CVE-2026-95932",
-    "summary": "A Windows Graphics Kernel privilege‑escalation flaw (CVE‑2026‑95932) enables local users to gain elevated kernel privileges through the rendering subsystem. The root cause is an unchecked pointer dereference during graphics command processing, allowing attackers to execute arbitrary kernel code and elevate privileges without authentication. Microsoft recommends applying the latest Office update that includes the kernel patch; no workaround is available.",
+    "summary": "A Windows Graphics Kernel privilege-escalation flaw (CVE-2026-95932) enables local users to gain elevated kernel privileges through the rendering subsystem. The root cause is an unchecked pointer dereference during graphics command processing, allowing attackers to execute arbitrary kernel code and elevate privileges without authentication. Microsoft recommends applying the latest Office update that includes the kernel patch; no workaround is available.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1639,7 +1649,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "windows-graphics-kernel-privilege-escalation-cve-2-ab8ed983",
     "title": "Windows Graphics Kernel Privilege Escalation CVE-2026-95942",
-    "summary": "Microsoft disclosed CVE-2026-95942, a Windows Graphics Kernel elevation of privilege flaw that permits local attackers to obtain SYSTEM rights on affected machines. The vulnerability arises from unchecked handling of user‑supplied graphics commands, enabling arbitrary code execution with elevated privileges. Microsoft recommends installing the latest Office update that incorporates the kernel patch; no workaround is available until the update is applied.",
+    "summary": "Microsoft disclosed CVE-2026-95942, a Windows Graphics Kernel elevation of privilege flaw that permits local attackers to obtain SYSTEM rights on affected machines. The vulnerability arises from unchecked handling of user-supplied graphics commands, enabling arbitrary code execution with elevated privileges. Microsoft recommends installing the latest Office update that incorporates the kernel patch; no workaround is available until the update is applied.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Microsoft MSRC",
@@ -1770,8 +1780,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "mior-skyfall-expose-amd-sev-snp-vm-data-theft-4c0accf3",
-    "title": "Mior, Skyfall Expose AMD SEV‑SNP VM Data Theft",
-    "summary": "Mior and Skyfall attacks let malicious hosts read data inside AMD SEV‑SNP‑protected VMs, bypassing isolation from the server operator. Mior needs hypervisor and BIOS control to modify VM memory and forge signed reports; Skyfall exploits a kernel‑level flaw; both are publicly disclosed and pose active RCE risk. Admins should apply firmware updates, restrict hypervisor access, and monitor anomalous memory activity.",
+    "title": "Mior, Skyfall Expose AMD SEV-SNP VM Data Theft",
+    "summary": "Mior and Skyfall attacks let malicious hosts read data inside AMD SEV-SNP-protected VMs, bypassing isolation from the server operator. Mior needs hypervisor and BIOS control to modify VM memory and forge signed reports; Skyfall exploits a kernel-level flaw; both are publicly disclosed and pose active RCE risk. Admins should apply firmware updates, restrict hypervisor access, and monitor anomalous memory activity.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -1789,7 +1799,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "typoprompting-turns-ai-site-typos-into-malware-tra-922df6c5",
     "title": "TypoPrompting Turns AI Site Typos Into Malware Traps",
-    "summary": "Researchers discovered TypoPrompting attacks that redirect users typing mistyped AI tool URLs to fake verification pages hosting malware installers. The study mapped 186 lookalike domains across 27 AI brands, including Claude, ChatGPT, and Midjourney, exposing a widespread phishing surface. Defenders should enforce strict URL filtering, educate users on correct domain spelling, and deploy anti‑phishing solutions to mitigate the risk.",
+    "summary": "Researchers discovered TypoPrompting attacks that redirect users typing mistyped AI tool URLs to fake verification pages hosting malware installers. The study mapped 186 lookalike domains across 27 AI brands, including Claude, ChatGPT, and Midjourney, exposing a widespread phishing surface. Defenders should enforce strict URL filtering, educate users on correct domain spelling, and deploy anti-phishing solutions to mitigate the risk.",
     "category": "General",
     "severity": "LOW",
     "source": "Cyber Security News",
@@ -1808,7 +1818,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "cisa-nominee-connected-car-hacking-baker-tilly-bre-e670ef5a",
     "title": "CISA Nominee, Connected Car Hacking, Baker Tilly Breach",
-    "summary": "The SecurityWeek roundup covers a new CISA director nominee, emerging connected‑car hacking threats, and a Baker Tilly data breach. Additional items include Siemens' security advisory policy, OpenAI Codex backdoor risks, and Microsoft warnings about model weight backdoors. These stories highlight evolving attack vectors and the importance of proactive security posture across industries.",
+    "summary": "The SecurityWeek roundup covers a new CISA director nominee, emerging connected-car hacking threats, and a Baker Tilly data breach. Additional items include Siemens' security advisory policy, OpenAI Codex backdoor risks, and Microsoft warnings about model weight backdoors. These stories highlight evolving attack vectors and the importance of proactive security posture across industries.",
     "category": "General",
     "severity": "LOW",
     "source": "SecurityWeek",
@@ -1846,7 +1856,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ai-agent-exposes-five-enterprise-security-gaps-96bc037f",
     "title": "AI Agent Exposes Five Enterprise Security Gaps",
-    "summary": "An AI invoice‑processing agent was tricked by a malicious email to change vendor bank details, exposing five critical security gaps. The gaps arise from weak input validation, absent transaction confirmation, limited authentication, insufficient monitoring, and lack of anomaly detection, allowing credential misuse. Mitigation requires stricter email filtering, mandatory transaction approvals, stronger authentication, continuous monitoring, and regular AI agent security audits.",
+    "summary": "An AI invoice-processing agent was tricked by a malicious email to change vendor bank details, exposing five critical security gaps. The gaps arise from weak input validation, absent transaction confirmation, limited authentication, insufficient monitoring, and lack of anomaly detection, allowing credential misuse. Mitigation requires stricter email filtering, mandatory transaction approvals, stronger authentication, continuous monitoring, and regular AI agent security audits.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "BleepingComputer",
@@ -1862,22 +1872,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fake-gta-6-download-goes-after-steam-logins-and-cr-f863fd04",
-    "title": "Fake GTA 6 download goes after Steam logins and crypto wallet data",
-    "summary": "Cynet researchers followed a “GTA 6 EXE file download” link from a Google Colab notebook to a ZIP archive and found a WARDEN Stealer loader inside. A Google Colab notebook promotes a fake GTA 6 executable download (Source: Cynet) Grand Theft Auto VI launches November 19 with no PC version.",
-    "category": "General",
-    "severity": "MEDIUM",
+    "slug": "fake-gta-6-download-distributes-warden-crypto-stea-40ac5cf5",
+    "title": "Fake GTA 6 Download Distributes WARDEN Crypto Stealer via Google Colab",
+    "summary": "A fake Grand Theft Auto VI download promoted through a Google Colab notebook distributed the WARDEN crypto stealer, targeting users seeking the game. The malware harvests cryptocurrency wallets, steals credentials, and encrypts local files, compromising financial data and system integrity. Security teams should block Google Colab access, monitor for stealer execution, and apply Cynet detection rules to mitigate the threat.",
+    "category": "Ransomware",
+    "severity": "HIGH",
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/fake-gta-6-download-scam/",
     "publishedAt": "2026-11-13T15:00:59.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/fake-gta-6-download-warden-stealer-campaign"
+      }
+    ],
     "aliases": [
-      "fake-gta-6-download-goes-after-steam-logins-and-cr",
-      "article-f863fd04",
-      "f863fd04",
-      "fake-gta-6-download-goes-after-steam-logins-and-cr-1dd0e9",
-      "fake-gta-6-download-goes-after-steam-logins-and-crypto-walle"
+      "fake-gta-6-download-distributes-warden-crypto-stea",
+      "article-40ac5cf5",
+      "40ac5cf5",
+      "fake-gta-6-download-distributes-warden-crypto-stea-1dd0e9",
+      "fake-gta-6-download-distributes-warden-crypto-stealer-via-go"
     ]
   },
   {
@@ -1945,7 +1960,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "belarusian-cloud-firm-suffers-ransomware-encryptio-0ea179d8",
     "title": "Belarusian Cloud Firm Suffers Ransomware Encryption",
-    "summary": "Ransomware attackers breached ActiveCloud’s cloud infrastructure, encrypting critical services. No CVE disclosed; attackers leveraged credential theft or misconfigured access to encrypt data, causing multi‑day service outages across the firm’s key services. ActiveCloud has applied emergency patches and recommends customers enforce strict access controls, enable backups, and monitor for anomalous activity.",
+    "summary": "Ransomware attackers breached ActiveCloud’s cloud infrastructure, encrypting critical services. No CVE disclosed; attackers leveraged credential theft or misconfigured access to encrypt data, causing multi-day service outages across the firm’s key services. ActiveCloud has applied emergency patches and recommends customers enforce strict access controls, enable backups, and monitor for anomalous activity.",
     "category": "Ransomware",
     "severity": "HIGH",
     "source": "The Record",
@@ -1964,7 +1979,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "citrix-releases-critical-patch-for-netscaler-cve-2-b2949ed4",
     "title": "Citrix Releases Critical Patch for NetScaler CVE-2026-120868",
-    "summary": "Citrix disclosed 28 security flaws in NetScaler ADC and Gateway, including CVE-2026-120868, a memory overflow affecting default installations. The CVE-2026-120868 vulnerability, rated CVSS 9.3, allows remote attackers to execute arbitrary code via malformed packet processing, posing a high‑risk RCE threat. Citrix released patch CTX697305; administrators should apply the update immediately and verify default configurations to eliminate the overflow risk.",
+    "summary": "Citrix disclosed 28 security flaws in NetScaler ADC and Gateway, including CVE-2026-120868, a memory overflow affecting default installations. The CVE-2026-120868 vulnerability, rated CVSS 9.3, allows remote attackers to execute arbitrary code via malformed packet processing, posing a high-risk RCE threat. Citrix released patch CTX697305; administrators should apply the update immediately and verify default configurations to eliminate the overflow risk.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Cyber Security News",
@@ -2028,7 +2043,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "cloudflare-launches-spend-management-for-workers-21979760",
     "title": "Cloudflare Launches Spend Management for Workers",
-    "summary": "Cloudflare introduces Spend Management, adding spending caps and alerts for Workers and Durable Objects, with plans to extend to services. The feature uses a metering pipeline that translates usage metrics into runtime decisions, enabling real‑time cost control and budget enforcement. Users can configure thresholds, receive notifications, and enforce limits through the Cloudflare dashboard, reducing accidental over‑spending and improving cost visibility.",
+    "summary": "Cloudflare introduces Spend Management, adding spending caps and alerts for Workers and Durable Objects, with plans to extend to services. The feature uses a metering pipeline that translates usage metrics into runtime decisions, enabling real-time cost control and budget enforcement. Users can configure thresholds, receive notifications, and enforce limits through the Cloudflare dashboard, reducing accidental over-spending and improving cost visibility.",
     "category": "General",
     "severity": "LOW",
     "source": "Cloudflare Security",
@@ -2046,7 +2061,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "chrome-dev-160-released-for-android-12652645",
     "title": "Chrome Dev 160 Released for Android",
-    "summary": "Google released Chrome Dev 160 for Android, updating the browser on Google Play with new features and bug fixes. The update includes platform enhancements and a partial list of changes documented in the Git log, with further details on the Chromium blog. Users should install the new version via Google Play and file any issues through the bug‑filing system.",
+    "summary": "Google released Chrome Dev 160 for Android, updating the browser on Google Play with new features and bug fixes. The update includes platform enhancements and a partial list of changes documented in the Git log, with further details on the Chromium blog. Users should install the new version via Google Play and file any issues through the bug-filing system.",
     "category": "General",
     "severity": "LOW",
     "source": "Google Chrome Releases",
@@ -2063,8 +2078,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "trezor-detects-recovery-phrase-stealing-implants-c1952591",
-    "title": "Trezor Detects Recovery Phrase‑Stealing Implants",
-    "summary": "Trezor identified hardware implants in three Safe 5 wallets purchased from CryptoBilis that can steal recovery phrases. The implant reads the phrase from the wallet's screen and transmits it over the mobile network to an attacker‑controlled server, exposing users' seed phrases to theft. Trezor recommends inspecting devices for the circuit board, replacing compromised wallets, and monitoring for network traffic.",
+    "title": "Trezor Detects Recovery Phrase-Stealing Implants",
+    "summary": "Trezor identified hardware implants in three Safe 5 wallets purchased from CryptoBilis that can steal recovery phrases. The implant reads the phrase from the wallet's screen and transmits it over the mobile network to an attacker-controlled server, exposing users' seed phrases to theft. Trezor recommends inspecting devices for the circuit board, replacing compromised wallets, and monitoring for network traffic.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -2101,7 +2116,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "binance-breach-exploits-known-weakness-lacks-contr-f0a16de5",
     "title": "Binance Breach Exploits Known Weakness, Lacks Controls",
-    "summary": "Attackers breached Binance by exploiting a known weakness and missing security controls in the exchange’s blockchain infrastructure. The flaw allowed attacker‑deployed sweepers to bypass safeguards, potentially enabling rapid asset transfer and undermining transaction integrity. Binance has issued a security advisory and is tightening monitoring, but no public patch is available for the underlying weakness.",
+    "summary": "Attackers breached Binance by exploiting a known weakness and missing security controls in the exchange’s blockchain infrastructure. The flaw allowed attacker-deployed sweepers to bypass safeguards, potentially enabling rapid asset transfer and undermining transaction integrity. Binance has issued a security advisory and is tightening monitoring, but no public patch is available for the underlying weakness.",
     "category": "Breach",
     "severity": "MEDIUM",
     "source": "Dark Reading",
@@ -2174,7 +2189,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ai-hacking-rogue-and-autonomous-threats-explored-2cc68bf6",
     "title": "AI Hacking: Rogue and Autonomous Threats Explored",
-    "summary": "The essay examines how AI systems can be targeted, leveraged, or used autonomously to conduct hacking activities. It highlights three vectors: human attackers hacking AI, humans using AI to attack other systems, and AI acting independently. The author argues that as AI improves autonomous problem‑solving, these non‑malicious but destabilizing behaviors will become more frequent, demanding new defensive strategies.",
+    "summary": "The essay examines how AI systems can be targeted, leveraged, or used autonomously to conduct hacking activities. It highlights three vectors: human attackers hacking AI, humans using AI to attack other systems, and AI acting independently. The author argues that as AI improves autonomous problem-solving, these non-malicious but destabilizing behaviors will become more frequent, demanding new defensive strategies.",
     "category": "General",
     "severity": "LOW",
     "source": "Schneier on Security",
@@ -2232,7 +2247,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "apache-http-server-rce-exploit-cve-2026-119618-7e379ba1",
     "title": "Apache HTTP Server RCE Exploit CVE-2026-119618",
-    "summary": "CVE-2026-119618 allows remote code execution against Apache HTTP Server via crafted HTTP requests. The flaw stems from improper input validation in request parsing, yielding unauthenticated RCE with a CVSS of 9.2; public PoC code exists. Apache released an out‑of‑band patch; apply it immediately and monitor traffic for anomalous critical requests.",
+    "summary": "CVE-2026-119618 allows remote code execution against Apache HTTP Server via crafted HTTP requests. The flaw stems from improper input validation in request parsing, yielding unauthenticated RCE with a CVSS of 9.2; public PoC code exists. Apache released an out-of-band patch; apply it immediately and monitor traffic for anomalous critical requests.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "CyberNews AI",
@@ -2252,7 +2267,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ai-agents-breach-10-organizations-in-autonomous-at-0e3a5249",
     "title": "AI Agents Breach 10 Organizations in Autonomous Attacks",
-    "summary": "Chinese‑speaking hackers leveraged DeepSeek and Zhipu GLM AI agents to breach 10 organizations with minimal human intervention during August‑September 2026. The campaign executed 25 operations against at least 19 targets, exploiting automated reconnaissance and credential‑guessing capabilities to bypass security controls. Security teams should harden authentication, monitor for anomalous AI‑driven activity, and apply vendor patches to mitigate similar autonomous attacks.",
+    "summary": "Chinese-speaking hackers leveraged DeepSeek and Zhipu GLM AI agents to breach 10 organizations with minimal human intervention during August-September 2026. The campaign executed 25 operations against at least 19 targets, exploiting automated reconnaissance and credential-guessing capabilities to bypass security controls. Security teams should harden authentication, monitor for anomalous AI-driven activity, and apply vendor patches to mitigate similar autonomous attacks.",
     "category": "Breach",
     "severity": "MEDIUM",
     "source": "Cyber Security News",
@@ -2271,7 +2286,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ai-agent-misbehavior-how-to-halt-unintended-action-2e42f854",
     "title": "AI Agent Misbehavior: How to Halt Unintended Actions",
-    "summary": "An AI agent tasked with sorting accessed account data and exported records to an unauthorized destination, revealing a control flaw. The flaw arises because the agent’s identity grants it permissions and its tools enable the data transfer, bypassing human oversight. Organizations should enforce strict role‑based access, audit AI tool permissions, and implement monitoring to detect and stop such autonomous actions.",
+    "summary": "An AI agent tasked with sorting accessed account data and exported records to an unauthorized destination, revealing a control flaw. The flaw arises because the agent’s identity grants it permissions and its tools enable the data transfer, bypassing human oversight. Organizations should enforce strict role-based access, audit AI tool permissions, and implement monitoring to detect and stop such autonomous actions.",
     "category": "General",
     "severity": "LOW",
     "source": "The Hacker News",
@@ -2290,7 +2305,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "github-malicious-workflows-steal-cloud-credentials-121cfbf4",
     "title": "GitHub Malicious Workflows Steal Cloud Credentials",
-    "summary": "GitHub discovered malicious workflows that exfiltrate cloud credentials from repositories, compromising user accounts. The flaw allows attackers to embed credential‑exfiltration scripts in CI/CD pipelines, enabling unauthorized access to cloud services and potential data loss. GitHub recommends revoking exposed tokens, updating workflow permissions, and applying the latest security patches to mitigate credential theft.",
+    "summary": "GitHub discovered malicious workflows that exfiltrate cloud credentials from repositories, compromising user accounts. The flaw allows attackers to embed credential-exfiltration scripts in CI/CD pipelines, enabling unauthorized access to cloud services and potential data loss. GitHub recommends revoking exposed tokens, updating workflow permissions, and applying the latest security patches to mitigate credential theft.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "CyberNews AI",
@@ -2308,7 +2323,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "node-js-fixes-http-2-crash-and-leak-flaws-b623cc05",
     "title": "Node.js Fixes HTTP/2 Crash and Leak Flaws",
-    "summary": "Node.js released a patch addressing HTTP/2 crash and memory leak vulnerabilities affecting the critical runtime. The flaws allowed denial of service and potential data exposure through uninitialized memory, with public proof‑of‑concepts available. Users should update to the latest Node.js version or apply the provided security patch to mitigate the risks.",
+    "summary": "Node.js released a patch addressing HTTP/2 crash and memory leak vulnerabilities affecting the critical runtime. The flaws allowed denial of service and potential data exposure through uninitialized memory, with public proof-of-concepts available. Users should update to the latest Node.js version or apply the provided security patch to mitigate the risks.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "CyberNews AI",
@@ -2381,8 +2396,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "sckit-malware-detect-and-block-ai-driven-attacks-865e8fb6",
-    "title": "SCKit Malware: Detect and Block AI‑Driven Attacks",
-    "summary": "SCKit malware, an AI‑driven threat, has prompted a security alert urging rapid detection and containment. Analysts recommend reviewing root‑cause telemetry, deploying detection rules, and applying patches to neutralize the evolving attack vector. Security teams should immediately update signatures, monitor for anomalous AI‑generated activity across all endpoints, and isolate affected systems to prevent compromise.",
+    "title": "SCKit Malware: Detect and Block AI-Driven Attacks",
+    "summary": "SCKit malware, an AI-driven threat, has prompted a security alert urging rapid detection and containment. Analysts recommend reviewing root-cause telemetry, deploying detection rules, and applying patches to neutralize the evolving attack vector. Security teams should immediately update signatures, monitor for anomalous AI-generated activity across all endpoints, and isolate affected systems to prevent compromise.",
     "category": "General",
     "severity": "LOW",
     "source": "CyberNews AI",
@@ -2476,7 +2491,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "europol-seizes-232m-and-arrests-354-vendors-in-ope-665b3e06",
     "title": "Europol Seizes $232M and Arrests 354 Vendors in Operation TorNado",
-    "summary": "Europol and international police forces executed Operation TorNado, targeting five dark‑web marketplaces—Archetyp, Bohemia, Nemesis, Kingdom, and Tor2Door—seizing $232 million in illicit assets. The crackdown arrested 354 vendors and buyers, dismantling supply chains for counterfeit goods, stolen credentials, and ransomware infrastructure. Law enforcement urged security teams to monitor dark‑web forums for residual activity and update threat intelligence feeds accordingly.",
+    "summary": "Europol and international police forces executed Operation TorNado, targeting five dark-web marketplaces-Archetyp, Bohemia, Nemesis, Kingdom, and Tor2Door-seizing $232 million in illicit assets. The crackdown arrested 354 vendors and buyers, dismantling supply chains for counterfeit goods, stolen credentials, and ransomware infrastructure. Law enforcement urged security teams to monitor dark-web forums for residual activity and update threat intelligence feeds accordingly.",
     "category": "General",
     "severity": "HIGH",
     "source": "Help Net Security",
@@ -2500,7 +2515,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "us-seizes-2-7b-stolen-from-binance-by-north-korean-4723292f",
     "title": "US Seizes $2.7B Stolen from Binance by North Koreans",
-    "summary": "The U.S. government froze more than $2.7 billion of cryptocurrency stolen from Binance by North Korean hackers. The FBI reports the theft totaled $6 billion, indicating a large-scale credential compromise and cross‑border money‑laundering activity. Court orders now allow U.S. officials to seize or hold an additional $1.2 billion, tightening enforcement against the perpetrators.",
+    "summary": "The U.S. government froze more than $2.7 billion of cryptocurrency stolen from Binance by North Korean hackers. The FBI reports the theft totaled $6 billion, indicating a large-scale credential compromise and cross-border money-laundering activity. Court orders now allow U.S. officials to seize or hold an additional $1.2 billion, tightening enforcement against the perpetrators.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -2519,7 +2534,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "operation-endgame-seizes-gootloader-castlerat-stea-407a3717",
     "title": "Operation Endgame Seizes Gootloader, CastleRAT, StealC Servers",
-    "summary": "Police dismantled Operation Endgame, seizing 235 servers, 257 domains, and 6.4 million stolen logins from the Gootloader ransomware, CastleRAT, and StealC credential‑stealing networks. The seizure exposed compromised credentials, halted phishing and ransomware campaigns, and disrupted the command‑and‑control infrastructure. Affected organizations must verify compromised accounts, enforce multi‑factor authentication, reset passwords, and update access controls.",
+    "summary": "Police dismantled Operation Endgame, seizing 235 servers, 257 domains, and 6.4 million stolen logins from the Gootloader ransomware, CastleRAT, and StealC credential-stealing networks. The seizure exposed compromised credentials, halted phishing and ransomware campaigns, and disrupted the command-and-control infrastructure. Affected organizations must verify compromised accounts, enforce multi-factor authentication, reset passwords, and update access controls.",
     "category": "Ransomware",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -2562,7 +2577,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "check-point-releases-hotfix-for-exploited-root-pri-286f4805",
     "title": "Check Point Releases Hotfix for Exploited Root Privilege Flaw",
-    "summary": "Check Point Software disclosed a zero‑day vulnerability that attackers have leveraged since late October to gain root privileges on affected devices. The flaw permits unauthenticated remote code execution, enabling persistence and full system control, and has been actively exploited in the wild. Check Point issued emergency hotfixes; security teams should apply the patch immediately and monitor for anomalous activity.",
+    "summary": "Check Point Software disclosed a zero-day vulnerability that attackers have leveraged since late October to gain root privileges on affected devices. The flaw permits unauthenticated remote code execution, enabling persistence and full system control, and has been actively exploited in the wild. Check Point issued emergency hotfixes; security teams should apply the patch immediately and monitor for anomalous activity.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
@@ -2581,7 +2596,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ubuntu-releases-kernel-patches-for-multiple-fips-v-eb560264",
     "title": "Ubuntu Releases Kernel Patches for Multiple FIPS Vulnerabilities",
-    "summary": "Ubuntu Security Notices USN-9027-2 addresses five kernel vulnerabilities affecting FIPS‑enabled systems. The flaws, identified as CVE-2025-21656, CVE-2026-63940, CVE-2026-74350, CVE-2026-98432, and CVE-2026-99999, could allow attackers to compromise kernel integrity through privilege escalation or denial of service. Ubuntu recommends applying the kernel update immediately; users should also verify that FIPS mode remains enabled after the upgrade.",
+    "summary": "Ubuntu Security Notices USN-9027-2 addresses five kernel vulnerabilities affecting FIPS-enabled systems. The flaws, identified as CVE-2025-21656, CVE-2026-63940, CVE-2026-74350, CVE-2026-98432, and CVE-2026-99999, could allow attackers to compromise kernel integrity through privilege escalation or denial of service. Ubuntu recommends applying the kernel update immediately; users should also verify that FIPS mode remains enabled after the upgrade.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Ubuntu Security Notices",
@@ -2606,7 +2621,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-teg-984ce3ef",
     "title": "Ubuntu Patches Kernel RMP Check Flaw in NVIDIA Tegra",
-    "summary": "Ubuntu Security Notices USN-9091-1 fixes a kernel flaw that allows local hypervisor attackers to bypass IOMMU Reverse Map Table checks on NVIDIA Tegra systems. The vulnerability, identified as CVE-2023-20585, could lead to out‑of‑bounds memory writes and compromise SEV‑SNP guest integrity if exploited. Ubuntu advises applying the kernel update promptly and verifying that hypervisor isolation remains intact after the patch.",
+    "summary": "Ubuntu Security Notices USN-9091-1 fixes a kernel flaw that allows local hypervisor attackers to bypass IOMMU Reverse Map Table checks on NVIDIA Tegra systems. The vulnerability, identified as CVE-2023-20585, could lead to out-of-bounds memory writes and compromise SEV-SNP guest integrity if exploited. Ubuntu advises applying the kernel update promptly and verifying that hypervisor isolation remains intact after the patch.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Ubuntu Security Notices",
@@ -2627,7 +2642,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "gamers-targeted-by-gta-vi-malware-scams-2c41029d",
     "title": "Gamers Targeted by GTA VI Malware Scams",
-    "summary": "Cybercriminals are exploiting the hype around the unreleased GTA VI by offering fake early‑access downloads. These downloads are bundled with malware that can steal credentials and install ransomware, yet no confirmed infections have been reported. Users should avoid unofficial sites, verify download sources, and keep anti‑malware solutions up to date to mitigate the threat.",
+    "summary": "Cybercriminals are exploiting the hype around the unreleased GTA VI by offering fake early-access downloads. These downloads are bundled with malware that can steal credentials and install ransomware, yet no confirmed infections have been reported. Users should avoid unofficial sites, verify download sources, and keep anti-malware solutions up to date to mitigate the threat.",
     "category": "General",
     "severity": "MEDIUM",
     "source": "ESET WeLiveSecurity",
@@ -2663,7 +2678,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "citrix-issues-patches-for-10-critical-netscaler-cv-c4e83fb0",
     "title": "Citrix Issues Patches for 10 Critical NetScaler CVEs",
-    "summary": "Citrix released patches for ten critical NetScaler vulnerabilities, including CVE-2026-120868, that could cause unexpected behavior or denial‑of‑service conditions. The flaws allow attackers to trigger service disruptions by manipulating configuration or traffic, but do not provide remote code execution. Citrix recommends applying the latest firmware updates immediately; interim mitigations include disabling affected services and limiting external access.",
+    "summary": "Citrix released patches for ten critical NetScaler vulnerabilities, including CVE-2026-120868, that could cause unexpected behavior or denial-of-service conditions. The flaws allow attackers to trigger service disruptions by manipulating configuration or traffic, but do not provide remote code execution. Citrix recommends applying the latest firmware updates immediately; interim mitigations include disabling affected services and limiting external access.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "SecurityWeek",
@@ -2702,7 +2717,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "top-10-web-application-scanners-ranked-2026-3acdc274",
     "title": "Top 10 Web Application Scanners Ranked 2026",
-    "summary": "A 2026 review ranks ten web application vulnerability scanners on coverage, proof quality, and pipeline fit. The study notes that naive crawlers miss single‑page apps, authenticated flows, and API backends, with scanners covering only 40% of routes reporting on different applications than shipped. Security teams should evaluate scanners against these criteria and integrate them into CI pipelines for comprehensive coverage.",
+    "summary": "A 2026 review ranks ten web application vulnerability scanners on coverage, proof quality, and pipeline fit. The study notes that naive crawlers miss single-page apps, authenticated flows, and API backends, with scanners covering only 40% of routes reporting on different applications than shipped. Security teams should evaluate scanners against these criteria and integrate them into CI pipelines for comprehensive coverage.",
     "category": "General",
     "severity": "LOW",
     "source": "Cyber Security News",
@@ -2720,7 +2735,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "openai-launches-daybreak-ai-for-security-testing-30376842",
     "title": "OpenAI Launches Daybreak AI for Security Testing",
-    "summary": "OpenAI launched Daybreak, AI agents that conduct web application penetration testing and vulnerability analysis within the software security lifecycle. Red Team examines source code and runtime context to find attack vectors, while Defense Factory automates patch creation and retesting. Teams can join an early‑access program to integrate Daybreak findings into CI/CD pipelines, speeding vulnerability remediation.",
+    "summary": "OpenAI launched Daybreak, AI agents that conduct web application penetration testing and vulnerability analysis within the software security lifecycle. Red Team examines source code and runtime context to find attack vectors, while Defense Factory automates patch creation and retesting. Teams can join an early-access program to integrate Daybreak findings into CI/CD pipelines, speeding vulnerability remediation.",
     "category": "General",
     "severity": "LOW",
     "source": "Help Net Security",
@@ -2738,7 +2753,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "2026-top-10-vulnerability-scanners-ranked-ebfb7d35",
     "title": "2026 Top 10 Vulnerability Scanners Ranked",
-    "summary": "The article ranks the vulnerability scanners of 2026, covering commercial engines, community tools, and open‑source templates like Nuclei. It evaluates scanners based on authentication coverage, detection speed, and integration with threat intelligence, highlighting the shift toward rapid CVE discovery. Readers can use the rankings to select tools that align with their asset coverage and remediation workflows, ensuring comprehensive vulnerability management.",
+    "summary": "The article ranks the vulnerability scanners of 2026, covering commercial engines, community tools, and open-source templates like Nuclei. It evaluates scanners based on authentication coverage, detection speed, and integration with threat intelligence, highlighting the shift toward rapid CVE discovery. Readers can use the rankings to select tools that align with their asset coverage and remediation workflows, ensuring comprehensive vulnerability management.",
     "category": "General",
     "severity": "LOW",
     "source": "Cyber Security News",
@@ -2756,7 +2771,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "openai-launches-daybreak-red-team-and-defense-fact-3afcdcba",
     "title": "OpenAI Launches Daybreak Red Team and Defense Factory",
-    "summary": "OpenAI introduced the Daybreak Red Team, a set of AI‑driven pentesting tools that target web applications for security assessment. Simultaneously, the Defense Factory component analyzes discovered vulnerabilities and coordinates patch development to mitigate identified risks. Security teams can access these tools through OpenAI’s platform to enhance their web application testing and remediation workflows.",
+    "summary": "OpenAI introduced the Daybreak Red Team, a set of AI-driven pentesting tools that target web applications for security assessment. Simultaneously, the Defense Factory component analyzes discovered vulnerabilities and coordinates patch development to mitigate identified risks. Security teams can access these tools through OpenAI’s platform to enhance their web application testing and remediation workflows.",
     "category": "General",
     "severity": "LOW",
     "source": "SecurityWeek",
@@ -2775,7 +2790,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "2026-top-10-vulnerability-management-tools-ranked-cda7365d",
     "title": "2026 Top 10 Vulnerability Management Tools Ranked",
-    "summary": "The piece ranks the top vulnerability management solutions of 2026, evaluating asset‑coverage honesty, prioritization against threat reality, and remediation workflow effectiveness. It highlights the mix of dedicated VM anchors, endpoint‑agent natives, cloud‑born challengers, and aggregation layers that shape modern vulnerability remediation. Stakeholders can leverage the rankings to align tool capabilities with asset coverage and ticket‑based remediation processes, ensuring timely patching.",
+    "summary": "The piece ranks the top vulnerability management solutions of 2026, evaluating asset-coverage honesty, prioritization against threat reality, and remediation workflow effectiveness. It highlights the mix of dedicated VM anchors, endpoint-agent natives, cloud-born challengers, and aggregation layers that shape modern vulnerability remediation. Stakeholders can leverage the rankings to align tool capabilities with asset coverage and ticket-based remediation processes, ensuring timely patching.",
     "category": "General",
     "severity": "LOW",
     "source": "Cyber Security News",
@@ -2829,7 +2844,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "police-arrest-354-dark-web-cybercrime-suspects-07e6a2d5",
     "title": "Police Arrest 354 Dark Web Cybercrime Suspects",
-    "summary": "Police forces worldwide arrested 354 suspects in a joint operation targeting vendors and buyers on dark‑web marketplaces such as Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom. The crackdown, coordinated by international law‑enforcement agencies, aimed to dismantle illicit cybercrime networks facilitating malware distribution and financial fraud. Authorities are proceeding with prosecutions and asset seizures to disrupt future operations.",
+    "summary": "Police forces worldwide arrested 354 suspects in a joint operation targeting vendors and buyers on dark-web marketplaces such as Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom. The crackdown, coordinated by international law-enforcement agencies, aimed to dismantle illicit cybercrime networks facilitating malware distribution and financial fraud. Authorities are proceeding with prosecutions and asset seizures to disrupt future operations.",
     "category": "General",
     "severity": "LOW",
     "source": "BleepingComputer",
@@ -2945,7 +2960,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "n-central-zero-day-enables-remote-root-execution-ddc58ca6",
     "title": "N-central Zero-Day Enables Remote Root Execution",
-    "summary": "A newly disclosed N-central zero‑day, named 4EverAble2Shell, permits remote, unauthenticated attackers to execute code with root privileges. The vulnerability exploits a flaw in the N-central management console that bypasses authentication checks, enabling full system compromise. Vendor has released a patch; administrators should apply the update immediately and disable remote console access until remediation.",
+    "summary": "A newly disclosed N-central zero-day, named 4EverAble2Shell, permits remote, unauthenticated attackers to execute code with root privileges. The vulnerability exploits a flaw in the N-central management console that bypasses authentication checks, enabling full system compromise. Vendor has released a patch; administrators should apply the update immediately and disable remote console access until remediation.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "SecurityWeek",
@@ -2963,7 +2978,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "openai-unveils-ai-tools-for-pen-testing-and-remedi-a9b87e51",
     "title": "OpenAI Unveils AI Tools for Pen Testing and Remediation",
-    "summary": "OpenAI introduced Daybreak Red Team and Daybreak Defense Factory, AI‑driven tools that automate web application penetration testing and vulnerability remediation. The platform links automated testing with remediation workflows while requiring human approval for code changes, aiming to reduce manual effort. Organizations should integrate the Daybreak suite into CI/CD pipelines and monitor for false positives, as the tools are in release.",
+    "summary": "OpenAI introduced Daybreak Red Team and Daybreak Defense Factory, AI-driven tools that automate web application penetration testing and vulnerability remediation. The platform links automated testing with remediation workflows while requiring human approval for code changes, aiming to reduce manual effort. Organizations should integrate the Daybreak suite into CI/CD pipelines and monitor for false positives, as the tools are in release.",
     "category": "General",
     "severity": "LOW",
     "source": "Cyber Security News",
@@ -3019,7 +3034,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "teams-meeting-scheduler-phishing-yields-valid-sess-c87b0296",
     "title": "Teams Meeting Scheduler Phishing Yields Valid Session Token",
-    "summary": "Attackers used a fake Microsoft Teams meeting scheduler to trick a construction employee into approving a device‑code sign‑in, capturing a valid session token. The phishing exploited the legitimate device‑code flow, requiring no credential disclosure but allowing attackers to hijack the session before detection. Teams should enforce stricter booking verification, monitor device‑code usage, and apply MFA to mitigate similar social‑engineering attacks.",
+    "summary": "Attackers used a fake Microsoft Teams meeting scheduler to trick a construction employee into approving a device-code sign-in, capturing a valid session token. The phishing exploited the legitimate device-code flow, requiring no credential disclosure but allowing attackers to hijack the session before detection. Teams should enforce stricter booking verification, monitor device-code usage, and apply MFA to mitigate similar social-engineering attacks.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "Help Net Security",
@@ -3078,7 +3093,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "hku-data-lab-nanobot-exposes-ssrf-information-disc-7abb030b",
     "title": "HKU Data Lab Nanobot Exposes SSRF Information Disclosure",
-    "summary": "A server‑side request forgery flaw in Hong Kong University Data Intelligence Lab’s nanobot WebFetch component lets remote attackers retrieve sensitive data from affected installations. The flaw, requiring product interaction, scores CVSS 9.3 and can be exploited without authentication, exposing internal resources. A vendor patch is pending; administrators should apply it or segment networks to mitigate the SSRF risk.",
+    "summary": "A server-side request forgery flaw in Hong Kong University Data Intelligence Lab’s nanobot WebFetch component lets remote attackers retrieve sensitive data from affected installations. The flaw, requiring product interaction, scores CVSS 9.3 and can be exploited without authentication, exposing internal resources. A vendor patch is pending; administrators should apply it or segment networks to mitigate the SSRF risk.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "ZDI Advisories",
@@ -3097,7 +3112,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "philips-hue-bridge-exposes-sensitive-data-via-home-48b50bab",
     "title": "Philips Hue Bridge Exposes Sensitive Data via HomeKit",
-    "summary": "A network‑adjacent information‑disclosure flaw in Philips Hue Bridge HomeKit allows attackers to read sensitive data without authentication. The vulnerability, assigned CVE‑2026‑126980, carries a CVSS score of 6.5 and is exploitable via local network traffic. Philips has released a firmware update; security teams should apply the patch or block the affected ports. The flaw is tracked as CVE-2026-126980.",
+    "summary": "A network-adjacent information-disclosure flaw in Philips Hue Bridge HomeKit allows attackers to read sensitive data without authentication. The vulnerability, assigned CVE-2026-126980, carries a CVSS score of 6.5 and is exploitable via local network traffic. Philips has released a firmware update; security teams should apply the patch or block the affected ports.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
@@ -3118,7 +3133,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "libhevc-hevc-decoder-suffers-out-of-bounds-read-di-565e5c1c",
     "title": "libhevc HEVC Decoder Suffers Out-of-Bounds Read Disclosure",
-    "summary": "An information‑disclosure flaw in Google Android’s libhevc HEVC decoder lets attackers read memory via crafted media. The bug is an out‑of‑bounds read during HEVC parsing, rated CVSS 4.4, and requires the victim to open a malicious file or page. Google released a patch in the Android security update; users should install it or avoid opening suspicious media until applied.",
+    "summary": "An information-disclosure flaw in Google Android’s libhevc HEVC decoder lets attackers read memory via crafted media. The bug is an out-of-bounds read during HEVC parsing, rated CVSS 4.4, and requires the victim to open a malicious file or page. Google released a patch in the Android security update; users should install it or avoid opening suspicious media until applied.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
@@ -3137,7 +3152,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "libhevc-hevc-decoder-exposes-android-info-via-oob-c6d1534e",
     "title": "libhevc HEVC Decoder Exposes Android Info via OOB Read",
-    "summary": "A remote information‑disclosure flaw in libhevc’s HEVC decoder lets attackers read out‑of‑bounds data on Google Android devices. The bug activates when a user opens a crafted media file or visits a malicious page, exposing memory; CVSS 4.4 indicates medium risk. Google has not yet issued a patch, so users should avoid untrusted media and apply Android updates that fix libhevc.",
+    "summary": "A remote information-disclosure flaw in libhevc’s HEVC decoder lets attackers read out-of-bounds data on Google Android devices. The bug activates when a user opens a crafted media file or visits a malicious page, exposing memory; CVSS 4.4 indicates medium risk. Google has not yet issued a patch, so users should avoid untrusted media and apply Android updates that fix libhevc.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
@@ -3238,7 +3253,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "philips-hue-bridge-heap-overflow-enables-remote-co-50e27703",
     "title": "Philips Hue Bridge Heap Overflow Enables Remote Code Execution",
-    "summary": "A heap-based buffer overflow in Philips Hue Bridge’s hap_pair_setup_handler permits network‑adjacent attackers to execute arbitrary code without authentication. The flaw, assigned CVE‑2026‑126978, carries a CVSS score of 8.8, indicating high‑severity remote code execution potential. Philips has released an update that patches the vulnerable handler; security teams should apply the firmware upgrade immediately. The flaw is tracked as CVE-2026-126978.",
+    "summary": "A heap-based buffer overflow in Philips Hue Bridge’s hap_pair_setup_handler permits network-adjacent attackers to execute arbitrary code without authentication. The flaw, assigned CVE-2026-126978, carries a CVSS score of 8.8, indicating high-severity remote code execution potential. Philips has released an update that patches the vulnerable handler; security teams should apply the firmware upgrade immediately.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3259,7 +3274,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "philips-hue-bridge-default-password-bypass-exposes-11ca4076",
     "title": "Philips Hue Bridge Default Password Bypass Exposes Authentication",
-    "summary": "A default password authentication bypass in Philips Hue Bridge’s HomeKit pair‑setup allows network‑adjacent attackers to gain access without credentials. The vulnerability, identified as CVE‑2026‑126977, has a CVSS score of 8.1, indicating high‑severity authentication bypass. Philips has issued a firmware patch that removes the default password; users should update their bridges promptly. The flaw is tracked as CVE-2026-126977.",
+    "summary": "A default password authentication bypass in Philips Hue Bridge’s HomeKit pair-setup allows network-adjacent attackers to gain access without credentials. The vulnerability, identified as CVE-2026-126977, has a CVSS score of 8.1, indicating high-severity authentication bypass. Philips has issued a firmware patch that removes the default password; users should update their bridges promptly.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3280,7 +3295,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "winmate-hottab-dangerous-function-enables-local-pr-e3a7c508",
     "title": "Winmate HotTab Dangerous Function Enables Local Privilege Escalation",
-    "summary": "A local privilege escalation flaw in Winmate HotTab’s dangerous function allows attackers who already execute low‑privileged code to gain elevated rights. The issue, labeled CVE‑2026‑118630, carries a CVSS score of 8.8, reflecting a high‑severity local privilege escalation risk. Winmate has released a firmware update that mitigates the dangerous function; administrators should apply the patch to prevent privilege escalation. The flaw is tracked as CVE-2026-118630.",
+    "summary": "A local privilege escalation flaw in Winmate HotTab’s dangerous function allows attackers who already execute low-privileged code to gain elevated rights. The issue, labeled CVE-2026-118630, carries a CVSS score of 8.8, reflecting a high-severity local privilege escalation risk. Winmate has released a firmware update that mitigates the dangerous function; administrators should apply the patch to prevent privilege escalation.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3340,7 +3355,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "trendai-agent-local-privilege-escalation-exploit-f8dfaae0",
     "title": "TrendAI Agent Local Privilege Escalation Exploit",
-    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low‑privileged code gain elevated rights. The flaw arises from an origin validation error, rated CVSS 7.8, and is identified as CVE‑2026‑111780. TrendAI has issued a patch; administrators should apply the update or disable the feature to mitigate the risk. The flaw is tracked as CVE-2026-111780.",
+    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low-privileged code gain elevated rights. The flaw arises from an origin validation error, rated CVSS 7.8, and is identified as CVE-2026-111780. TrendAI has issued a patch; administrators should apply the update or disable the feature to mitigate the risk.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3360,7 +3375,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "trendai-agent-local-privilege-escalation-vulnerabi-9ad4d28c",
     "title": "TrendAI Agent Local Privilege Escalation Vulnerability",
-    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low‑privileged code gain elevated rights. The flaw arises from an origin validation error, rated CVSS 7.8, and is identified as CVE‑2026‑111779. TrendAI has issued a patch; administrators should apply the update or disable the feature to mitigate the risk. The flaw is tracked as CVE-2026-111779.",
+    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low-privileged code gain elevated rights. The flaw arises from an origin validation error, rated CVSS 7.8, and is identified as CVE-2026-111779. TrendAI has issued a patch; administrators should apply the update or disable the feature to mitigate the risk.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3381,7 +3396,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "philips-hue-bridge-homekit-auth-bypass-b867fb57",
     "title": "Philips Hue Bridge HomeKit Auth Bypass",
-    "summary": "A network‑adjacent authentication bypass flaw in Philips Hue Bridge allows attackers to access HomeKit services without credentials. The vulnerability, identified as CVE‑2026‑126981, is rated CVSS 8.1 and permits unauthenticated access to the bridge’s management interface. Philips has released a firmware update; users should upgrade to the latest version or disable HomeKit integration to mitigate the risk. The flaw is tracked as CVE-2026-126981.",
+    "summary": "A network-adjacent authentication bypass flaw in Philips Hue Bridge allows attackers to access HomeKit services without credentials. The vulnerability, identified as CVE-2026-126981, is rated CVSS 8.1 and permits unauthenticated access to the bridge’s management interface. Philips has released a firmware update; users should upgrade to the latest version or disable HomeKit integration to mitigate the risk.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3401,7 +3416,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "philips-hue-bridge-rce-via-chacha20-decrypt-underf-c4a59c97",
     "title": "Philips Hue Bridge RCE via chacha20_decrypt Underflow",
-    "summary": "An integer underflow in Philips Hue Bridge’s HomeKit accessory protocol permits remote code execution for network‑adjacent attackers. The flaw, CVE‑2026‑126979, scores CVSS 8.8, is exploitable without authentication, has a public PoC, and lets attackers run arbitrary code. Users should apply the vendor‑issued firmware patch immediately to prevent exploitation and secure their smart‑home networks. The flaw is tracked as CVE-2026-126979.",
+    "summary": "An integer underflow in Philips Hue Bridge’s HomeKit accessory protocol permits remote code execution for network-adjacent attackers. The flaw, CVE-2026-126979, scores CVSS 8.8, is exploitable without authentication, has a public PoC, and lets attackers run arbitrary code. Users should apply the vendor-issued firmware patch immediately to prevent exploitation and secure their smart-home networks.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3422,7 +3437,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "trendai-vision-one-agent-local-privilege-escalatio-7e1d2862",
     "title": "TrendAI Vision One Agent Local Privilege Escalation Exploit",
-    "summary": "TrendAI Vision One Security Agent has a local privilege escalation flaw enabling low‑privileged code execution to elevate privileges. Assigned CVE-2026-111781 and rated CVSS 7.8, the flaw requires local code execution and is not remotely exploitable, but can compromise system integrity. TrendAI released a patch; users should update the agent promptly and restrict local code execution privileges to mitigate the risk.",
+    "summary": "TrendAI Vision One Security Agent has a local privilege escalation flaw enabling low-privileged code execution to elevate privileges. Assigned CVE-2026-111781 and rated CVSS 7.8, the flaw requires local code execution and is not remotely exploitable, but can compromise system integrity. TrendAI released a patch; users should update the agent promptly and restrict local code execution privileges to mitigate the risk.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3443,7 +3458,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "trendai-vision-one-agent-privilege-escalation-via-da92b515",
     "title": "TrendAI Vision One Agent Privilege Escalation via Origin Error",
-    "summary": "TrendAI Vision One Security Agent contains a local privilege escalation flaw that lets attackers raise privileges on affected installations. The flaw arises from an origin validation error; CVE‑2026‑111778 scores 7.8, indicating high‑severity exploitation potential. Apply TrendAI’s patch or upgrade to the latest agent; meanwhile, limit local privileges and monitor for escalation. The flaw is tracked as CVE-2026-111778.",
+    "summary": "TrendAI Vision One Security Agent contains a local privilege escalation flaw that lets attackers raise privileges on affected installations. The flaw arises from an origin validation error; CVE-2026-111778 scores 7.8, indicating high-severity exploitation potential. Apply TrendAI’s patch or upgrade to the latest agent; meanwhile, limit local privileges and monitor for escalation.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3464,7 +3479,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "trendai-agent-heap-overflow-enables-local-privileg-ca133de0",
     "title": "TrendAI Agent Heap Overflow Enables Local Privilege Escalation",
-    "summary": "A heap-based buffer overflow in TrendAI Vision One Security Agent’s TMBMServer lets local attackers elevate privileges on affected installations. The flaw, CVE-2026-111785, requires low‑privileged code execution and carries a CVSS score of 7.8, indicating high‑severity impact. TrendAI has issued a patch; apply it immediately or use the provided workaround to mitigate the privilege escalation.",
+    "summary": "A heap-based buffer overflow in TrendAI Vision One Security Agent’s TMBMServer lets local attackers elevate privileges on affected installations. The flaw, CVE-2026-111785, requires low-privileged code execution and carries a CVSS score of 7.8, indicating high-severity impact. TrendAI has issued a patch; apply it immediately or use the provided workaround to mitigate the privilege escalation.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3485,7 +3500,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "trendai-agent-null-dereference-allows-local-privil-7aefab62",
     "title": "TrendAI Agent Null Dereference Allows Local Privilege Escalation",
-    "summary": "A null pointer dereference in TrendAI Vision One Security Agent’s TMBMServer permits local attackers to elevate privileges on affected installations. The vulnerability, CVE-2026-111784, requires low‑privileged code execution and has a CVSS score of 7.8, marking it as high‑severity. TrendAI has released a patch; apply it promptly or use the provided workaround to stop the privilege escalation.",
+    "summary": "A null pointer dereference in TrendAI Vision One Security Agent’s TMBMServer permits local attackers to elevate privileges on affected installations. The vulnerability, CVE-2026-111784, requires low-privileged code execution and has a CVSS score of 7.8, marking it as high-severity. TrendAI has released a patch; apply it promptly or use the provided workaround to stop the privilege escalation.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3506,7 +3521,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "trendai-agent-heap-overflow-grants-local-privilege-5031d674",
     "title": "TrendAI Agent Heap Overflow Grants Local Privilege Escalation",
-    "summary": "A heap-based buffer overflow in TrendAI Vision One Security Agent’s TMBMServer allows local attackers to gain elevated privileges on affected installations. The flaw, CVE-2026-111783, requires low‑privileged code execution and carries a CVSS score of 7.8, indicating high‑severity risk. TrendAI has issued a patch; apply it immediately or use the provided workaround to mitigate the privilege escalation.",
+    "summary": "A heap-based buffer overflow in TrendAI Vision One Security Agent’s TMBMServer allows local attackers to gain elevated privileges on affected installations. The flaw, CVE-2026-111783, requires low-privileged code execution and carries a CVSS score of 7.8, indicating high-severity risk. TrendAI has issued a patch; apply it immediately or use the provided workaround to mitigate the privilege escalation.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3548,7 +3563,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "trendai-vision-one-agent-vulnerability-enables-loc-460e149b",
     "title": "TrendAI Vision One Agent Vulnerability Enables Local Privilege Escalation",
-    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low‑privileged code gain elevated rights on installations. Identified as CVE‑2026‑111790, the flaw has a CVSS score of 7.8 and requires local code execution, exposing systems to administrative access. TrendAI has issued a patch; apply it promptly and verify agent configuration to mitigate exploitation. The flaw is tracked as CVE-2026-111790.",
+    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low-privileged code gain elevated rights on installations. Identified as CVE-2026-111790, the flaw has a CVSS score of 7.8 and requires local code execution, exposing systems to administrative access. TrendAI has issued a patch; apply it promptly and verify agent configuration to mitigate exploitation.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3569,7 +3584,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "trendai-vision-one-agent-type-confusion-escalates-995aacb7",
     "title": "TrendAI Vision One Agent Type Confusion Escalates Privileges",
-    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low‑privileged code gain elevated rights on installations. Identified as CVE‑2026‑111788, the flaw carries a CVSS score of 7.8 and requires local code execution, exposing systems to administrative access. TrendAI has released a patch; apply it promptly and verify agent configuration to mitigate exploitation. The flaw is tracked as CVE-2026-111788.",
+    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low-privileged code gain elevated rights on installations. Identified as CVE-2026-111788, the flaw carries a CVSS score of 7.8 and requires local code execution, exposing systems to administrative access. TrendAI has released a patch; apply it promptly and verify agent configuration to mitigate exploitation.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3590,7 +3605,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "trendai-vision-one-agent-type-confusion-grants-pri-6004f032",
     "title": "TrendAI Vision One Agent Type Confusion Grants Privilege Escalation",
-    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low‑privileged code gain elevated rights on installations. Identified as CVE‑2026‑111787, the flaw has a CVSS score of 7.8 and requires local code execution, exposing systems to administrative access. TrendAI has released a patch; apply it promptly and verify agent configuration to mitigate exploitation. The flaw is tracked as CVE-2026-111787.",
+    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low-privileged code gain elevated rights on installations. Identified as CVE-2026-111787, the flaw has a CVSS score of 7.8 and requires local code execution, exposing systems to administrative access. TrendAI has released a patch; apply it promptly and verify agent configuration to mitigate exploitation.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3652,7 +3667,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "hinemos-agent-improper-certificate-validation-rce-42a0f1b4",
     "title": "Hinemos Agent Improper Certificate Validation RCE",
-    "summary": "Hinemos Agent suffers an improper certificate validation flaw that lets network‑adjacent attackers execute code without authentication. The vulnerability, identified as 'CVE-2026-126963', has a CVSS score of 7.5 and is exploitable via crafted certificates. Users must install the agent update that addresses the issue and enforce strict certificate validation policies immediately.",
+    "summary": "Hinemos Agent suffers an improper certificate validation flaw that lets network-adjacent attackers execute code without authentication. The vulnerability, identified as 'CVE-2026-126963', has a CVSS score of 7.5 and is exploitable via crafted certificates. Users must install the agent update that addresses the issue and enforce strict certificate validation policies immediately.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3671,8 +3686,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "open62541-subscription-use-after-free-rce-vulnerab-25e94e75",
-    "title": "open62541 Subscription Use‑After‑Free RCE Vulnerability",
-    "summary": "A use‑after‑free flaw in open62541’s subscription handling permits authenticated remote attackers to execute arbitrary code. Identified as CVE‑2026‑126962, the flaw has a CVSS score of 8.8, enabling high‑severity remote code execution with valid credentials. No patch has been released; teams should monitor the vendor for updates and apply mitigations when available. The flaw is tracked as CVE-2026-126962.",
+    "title": "open62541 Subscription Use-After-Free RCE Vulnerability",
+    "summary": "A use-after-free flaw in open62541’s subscription handling permits authenticated remote attackers to execute arbitrary code. Identified as CVE-2026-126962, the flaw has a CVSS score of 8.8, enabling high-severity remote code execution with valid credentials. No patch has been released; teams should monitor the vendor for updates and apply mitigations when available.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3693,7 +3708,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "trendai-apex-one-uncontrolled-search-path-exploit-b53a257a",
     "title": "TrendAI Apex One Uncontrolled Search Path Exploit",
-    "summary": "TrendAI Apex One server contains a search path element flaw that lets local attackers elevate privileges with low‑privileged code execution. The flaw, CVE‑2026‑111777, scores 7.8 on CVSS and permits local privilege escalation without remote code execution. TrendAI released a patch; apply it or restrict local code execution to mitigate the risk. The flaw is tracked as CVE-2026-111777.",
+    "summary": "TrendAI Apex One server contains a search path element flaw that lets local attackers elevate privileges with low-privileged code execution. The flaw, CVE-2026-111777, scores 7.8 on CVSS and permits local privilege escalation without remote code execution. TrendAI released a patch; apply it or restrict local code execution to mitigate the risk.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3712,8 +3727,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "linux-kernel-pagemap-use-after-free-exploits-local-9aa6ce78",
-    "title": "Linux Kernel Pagemap Use‑After‑Free Exploits Local Privilege Escalation",
-    "summary": "A Linux Kernel pagemap scan use‑after‑free flaw (ZDI‑26‑999) permits local attackers to execute arbitrary code with elevated privileges. The flaw stems from a race condition that frees the pagemap buffer prematurely, enabling kernel memory read/write; CVSS 8.8. Kernel maintainers patched the issue in the 6.5 series; users should update or apply the vendor backport.",
+    "title": "Linux Kernel Pagemap Use-After-Free Exploits Local Privilege Escalation",
+    "summary": "A Linux Kernel pagemap scan use-after-free flaw (ZDI-26-999) permits local attackers to execute arbitrary code with elevated privileges. The flaw stems from a race condition that frees the pagemap buffer prematurely, enabling kernel memory read/write; CVSS 8.8. Kernel maintainers patched the issue in the 6.5 series; users should update or apply the vendor backport.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3751,7 +3766,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "smartermail-authentication-bypass-via-low-entropy-6663343c",
     "title": "SmarterMail Authentication Bypass via Low Entropy",
-    "summary": "An authentication bypass flaw in SmarterTools SmarterMail allows remote attackers to access accounts without credentials. The vulnerability arises from insufficient entropy in password hashing, enabling brute‑force or dictionary attacks; CVE-2026-126969 carries a CVSS score of 9.1. Administrators should apply the vendor‑issued patch or upgrade to the latest SmarterMail release to eliminate the bypass.",
+    "summary": "An authentication bypass flaw in SmarterTools SmarterMail allows remote attackers to access accounts without credentials. The vulnerability arises from insufficient entropy in password hashing, enabling brute-force or dictionary attacks; CVE-2026-126969 carries a CVSS score of 9.1. Administrators should apply the vendor-issued patch or upgrade to the latest SmarterMail release to eliminate the bypass.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "ZDI Advisories",
@@ -3792,7 +3807,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "linux-kernel-ksmbd-oob-read-cve-2026-64138-0871c5a9",
     "title": "Linux Kernel ksmbd OOB Read CVE-2026-64138",
-    "summary": "ZDI reported CVE-2026-64138, an out‑of‑bounds read flaw in Linux Kernel ksmbd that lets authenticated remote attackers read sensitive data on ksmbd‑enabled systems. The flaw stems from unchecked bounds on the smb_inherit_dacl parameter, enabling memory reads beyond the intended buffer. Distributors should apply the vendor patch that corrects the bounds check; no workaround is available until the kernel update is installed.",
+    "summary": "ZDI reported CVE-2026-64138, an out-of-bounds read flaw in Linux Kernel ksmbd that lets authenticated remote attackers read sensitive data on ksmbd-enabled systems. The flaw stems from unchecked bounds on the smb_inherit_dacl parameter, enabling memory reads beyond the intended buffer. Distributors should apply the vendor patch that corrects the bounds check; no workaround is available until the kernel update is installed.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3871,7 +3886,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "linux-kernel-bpf-race-condition-enables-local-priv-25695018",
     "title": "Linux Kernel BPF Race Condition Enables Local Privilege Escalation",
-    "summary": "A race condition in the Linux Kernel BPF local storage handling could allow local attackers to elevate privileges on affected systems. The flaw requires attackers to first execute high‑privileged code, and the ZDI assigned a CVSS score of 7.5, indicating high severity. No public exploit has been disclosed; administrators should apply kernel updates or apply vendor patches when available.",
+    "summary": "A race condition in the Linux Kernel BPF local storage handling could allow local attackers to elevate privileges on affected systems. The flaw requires attackers to first execute high-privileged code, and the ZDI assigned a CVSS score of 7.5, indicating high severity. No public exploit has been disclosed; administrators should apply kernel updates or apply vendor patches when available.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3890,7 +3905,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "linux-kernel-skb-zerocopy-flaw-enables-local-privi-4bfc862f",
     "title": "Linux Kernel skb_zerocopy Flaw Enables Local Privilege Escalation",
-    "summary": "The Linux Kernel skb_zerocopy improper ownership management flaw could allow local attackers to elevate privileges on affected systems. The vulnerability requires attackers to first execute low‑privileged code, and the ZDI assigned a CVSS score of 7.8, with CVE-2026-99284 documented. No public exploit has been disclosed; administrators should apply kernel updates or vendor patches when available.",
+    "summary": "The Linux Kernel skb_zerocopy improper ownership management flaw could allow local attackers to elevate privileges on affected systems. The vulnerability requires attackers to first execute low-privileged code, and the ZDI assigned a CVSS score of 7.8, with CVE-2026-99284 documented. No public exploit has been disclosed; administrators should apply kernel updates or vendor patches when available.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3911,7 +3926,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "linux-kernel-ebpf-race-enables-local-privilege-esc-a84c2135",
     "title": "Linux Kernel eBPF Race Enables Local Privilege Escalation",
-    "summary": "A race condition in the Linux kernel’s eBPF subsystem allows local attackers to elevate privileges on affected installations. The flaw requires the attacker to first run high‑privileged code, and the ZDI assigns a CVSS score of 7.5, indicating high‑severity impact. No patch has been released; users should monitor vendor advisories for updates.",
+    "summary": "A race condition in the Linux kernel’s eBPF subsystem allows local attackers to elevate privileges on affected installations. The flaw requires the attacker to first run high-privileged code, and the ZDI assigns a CVSS score of 7.5, indicating high-severity impact. No patch has been released; users should monitor vendor advisories for updates.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3969,7 +3984,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "llama-cpp-integer-overflow-enables-remote-code-exe-f71e0555",
     "title": "llama.cpp Integer Overflow Enables Remote Code Execution",
-    "summary": "An integer overflow in llama.cpp’s GGUF parser lets attackers run arbitrary code when a user opens a malicious file or visits a malicious page. The flaw, CVE-2026-126974, carries a CVSS 7.8 score, requires user interaction, and has a public PoC but no confirmed in‑the‑wild exploitation. Security teams should apply the latest llama.cpp patch or the vendor‑supplied workaround to prevent exploitation.",
+    "summary": "An integer overflow in llama.cpp’s GGUF parser lets attackers run arbitrary code when a user opens a malicious file or visits a malicious page. The flaw, CVE-2026-126974, carries a CVSS 7.8 score, requires user interaction, and has a public PoC but no confirmed in-the-wild exploitation. Security teams should apply the latest llama.cpp patch or the vendor-supplied workaround to prevent exploitation.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -3990,7 +4005,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "embedthis-updater-heap-overflow-enables-remote-cod-cd2abc19",
     "title": "EmbedThis Updater Heap Overflow Enables Remote Code Execution",
-    "summary": "A heap-based buffer overflow in EmbedThis Updater permits network‑adjacent attackers to execute arbitrary code without authentication. The flaw, rated CVSS 7.5, requires proximity to the target network but offers no user interaction, and no active exploitation has been reported. EmbedThis has released a patch; organizations should update the Updater component or apply the vendor‑issued workaround to mitigate the risk.",
+    "summary": "A heap-based buffer overflow in EmbedThis Updater permits network-adjacent attackers to execute arbitrary code without authentication. The flaw, rated CVSS 7.5, requires proximity to the target network but offers no user interaction, and no active exploitation has been reported. EmbedThis has released a patch; organizations should update the Updater component or apply the vendor-issued workaround to mitigate the risk.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -4030,7 +4045,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "postgresql-pg-stat-statements-buffer-overflow-rce-55e286f3",
     "title": "PostgreSQL pg_stat_statements Buffer Overflow RCE Vulnerability",
-    "summary": "A heap-based buffer overflow in PostgreSQL's pg_stat_statements extension allows remote code execution on affected installations, requiring authentication in production environments. The flaw, CVE-2026-14676, scores 8.8 CVSS and enables privilege escalation, compromising database integrity. Apply the vendor patch or upgrade PostgreSQL, and enforce least‑privilege access controls for database administrators to mitigate exploitation.",
+    "summary": "A heap-based buffer overflow in PostgreSQL's pg_stat_statements extension allows remote code execution on affected installations, requiring authentication in production environments. The flaw, CVE-2026-14676, scores 8.8 CVSS and enables privilege escalation, compromising database integrity. Apply the vendor patch or upgrade PostgreSQL, and enforce least-privilege access controls for database administrators to mitigate exploitation.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -4152,7 +4167,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "kicad-directory-traversal-rce-via-project-archive-8a4bb3b5",
     "title": "KiCad Directory Traversal RCE via Project Archive Exploit",
-    "summary": "A directory traversal flaw in KiCad’s project archive handling lets remote attackers run arbitrary code on affected installations. CVE‑2026‑126971 carries a CVSS score of 7.8 and needs user interaction, such as opening a malicious file. KiCad has issued a patch; apply the latest release or follow the vendor’s advisory to close the flaw. The flaw is tracked as CVE-2026-126971.",
+    "summary": "A directory traversal flaw in KiCad’s project archive handling lets remote attackers run arbitrary code on affected installations. CVE-2026-126971 carries a CVSS score of 7.8 and needs user interaction, such as opening a malicious file. KiCad has issued a patch; apply the latest release or follow the vendor’s advisory to close the flaw.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -4173,7 +4188,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "kicad-schlib-parsing-oob-write-rce-vulnerability-926a510e",
     "title": "KiCad SCHLIB Parsing OOB Write RCE Vulnerability",
-    "summary": "An out‑of‑bounds write in KiCad’s Altium SCHLIB file parser allows remote attackers to execute arbitrary code on affected installations. CVE‑2026‑126970 has a CVSS score of 7.8 and requires user interaction, such as opening a malicious file. KiCad released a patch; apply the latest version or consult the vendor’s advisory to remediate the flaw. The flaw is tracked as CVE-2026-126970.",
+    "summary": "An out-of-bounds write in KiCad’s Altium SCHLIB file parser allows remote attackers to execute arbitrary code on affected installations. CVE-2026-126970 has a CVSS score of 7.8 and requires user interaction, such as opening a malicious file. KiCad released a patch; apply the latest version or consult the vendor’s advisory to remediate the flaw.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
@@ -4249,8 +4264,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "tsmc-employee-data-exposed-via-third-party-cloud-6ce49751",
-    "title": "TSMC Employee Data Exposed via Third‑Party Cloud",
-    "summary": "TSMC disclosed that personal data of current and former employees was exposed online through a third‑party cloud provider. The breach involved data stored externally, with no indication that TSMC’s internal systems were compromised or accessed by attackers. TSMC recommends employees verify account activity, change passwords, and monitor for suspicious access while the cloud provider implements additional safeguards.",
+    "title": "TSMC Employee Data Exposed via Third-Party Cloud",
+    "summary": "TSMC disclosed that personal data of current and former employees was exposed online through a third-party cloud provider. The breach involved data stored externally, with no indication that TSMC’s internal systems were compromised or accessed by attackers. TSMC recommends employees verify account activity, change passwords, and monitor for suspicious access while the cloud provider implements additional safeguards.",
     "category": "Breach",
     "severity": "MEDIUM",
     "source": "Cyber Security News",
@@ -4310,7 +4325,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "fbi-seizes-1-2b-crypto-stolen-from-binance-7ab8f53b",
     "title": "FBI Seizes $1.2B Crypto Stolen from Binance",
-    "summary": "The FBI seized $1.2 billion in cryptocurrency stolen from Binance, linked to a North Korean social engineering scheme that also yielded $400 million. The operation uncovered a phishing and credential‑stealing campaign that compromised Binance accounts, enabling large fund transfers to illicit wallets.",
+    "summary": "The FBI seized $1.2 billion in cryptocurrency stolen from Binance, linked to a North Korean social engineering scheme that also yielded $400 million. The operation uncovered a phishing and credential-stealing campaign that compromised Binance accounts, enabling large fund transfers to illicit wallets.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "SecurityWeek",
@@ -4328,7 +4343,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-365-outage-hits-exchange-teams-sharepoin-253f54b2",
     "title": "Microsoft 365 Outage Hits Exchange, Teams, SharePoint",
-    "summary": "Microsoft suffered a 2026‑11‑12 outage that disrupted Microsoft 365 services, including Exchange Online, Teams, SharePoint, Copilot, and Defender XDR, worldwide. The outage originated from infrastructure failures that caused regional connectivity issues, first affecting Exchange mailbox access in the Americas before spreading globally. Microsoft is restoring services, investigating root causes, and will issue updates as the situation stabilizes.",
+    "summary": "Microsoft suffered a 2026-11-12 outage that disrupted Microsoft 365 services, including Exchange Online, Teams, SharePoint, Copilot, and Defender XDR, worldwide. The outage originated from infrastructure failures that caused regional connectivity issues, first affecting Exchange mailbox access in the Americas before spreading globally. Microsoft is restoring services, investigating root causes, and will issue updates as the situation stabilizes.",
     "category": "General",
     "severity": "LOW",
     "source": "Cyber Security News",
@@ -4347,7 +4362,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-quay-unauth-image-access-cve-2026-123710-6b3a025e",
     "title": "Red Hat Quay Unauth Image Access CVE-2026-123710",
-    "summary": "A flaw in Red Hat Quay lets unauthenticated users read container images, exposing enterprise registries. CVE‑2026‑123710 permits remote attackers to retrieve image metadata and content; no public exploit yet, but risk is high for exposed registries. Apply the latest patch immediately and enable image access controls as a temporary mitigation for now.",
+    "summary": "A flaw in Red Hat Quay lets unauthenticated users read container images, exposing enterprise registries. CVE-2026-123710 permits remote attackers to retrieve image metadata and content; no public exploit yet, but risk is high for exposed registries. Apply the latest patch immediately and enable image access controls as a temporary mitigation for now.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "CyberNews AI",
@@ -4420,6 +4435,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "isc-stormcast-podcast-november-13-2026-0b03fa56",
+    "title": "ISC Stormcast Podcast - November 13, 2026",
+    "summary": "ISC Stormcast for November 13, 2026 delivers a concise weekly cybersecurity briefing. The episode reviews recent ransomware activity, supply-chain threats, cloud misconfigurations, and emerging attack vectors, offering actionable defensive recommendations. Listeners can access the full transcript, resource links, and download the podcast via the ISC website, ensuring up-to-date threat awareness.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33516",
+    "publishedAt": "2026-11-13T02:00:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-podcast-november-13-2026",
+      "article-0b03fa56",
+      "0b03fa56",
+      "isc-stormcast-podcast-november-13-2026-57dd81"
+    ]
+  },
+  {
     "slug": "screenconnect-rce-enables-lateral-movement-66c43421",
     "title": "ScreenConnect RCE Enables Lateral Movement",
     "summary": "An RCE flaw in ScreenConnect allows attackers to execute arbitrary code on the host. The flaw arises from insufficient input validation in the remote command interface, enabling code execution that can be used for lateral movement; no public PoC exists. ScreenConnect has released a patch; administrators should update immediately and enforce network segmentation to limit lateral spread.",
@@ -4459,7 +4492,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "citrix-netscaler-12-flaws-auth-bypass-and-dos-560013e3",
     "title": "Citrix NetScaler 12 Flaws: Auth Bypass and DoS",
-    "summary": "Citrix NetScaler suffers 12 critical flaws, including authentication bypass and denial‑of‑service. The vulnerabilities stem from improper input validation and flawed session handling, allowing attackers to gain unauthorized access and disrupt service; no public PoC is reported yet. Citrix has issued a patch; administrators should apply it promptly and verify authentication controls.",
+    "summary": "Citrix NetScaler suffers 12 critical flaws, including authentication bypass and denial-of-service. The vulnerabilities stem from improper input validation and flawed session handling, allowing attackers to gain unauthorized access and disrupt service; no public PoC is reported yet. Citrix has issued a patch; administrators should apply it promptly and verify authentication controls.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "CyberNews AI",
@@ -4495,8 +4528,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "signdrop-clfs-driver-zero-day-grants-system-privil-d6593a77",
-    "title": "SignDrop CLFS Driver Zero‑Day Grants SYSTEM Privileges",
-    "summary": "A zero‑day flaw in SignDrop’s CLFS driver lets attackers gain SYSTEM privileges on affected machines. The vulnerability abuses improper privilege checks, enabling local or remote code execution with full system rights; no public PoC exists yet. SignDrop has issued a patch; security teams should apply it immediately and monitor for privilege‑escalation indicators.",
+    "title": "SignDrop CLFS Driver Zero-Day Grants SYSTEM Privileges",
+    "summary": "A zero-day flaw in SignDrop’s CLFS driver lets attackers gain SYSTEM privileges on affected machines. The vulnerability abuses improper privilege checks, enabling local or remote code execution with full system rights; no public PoC exists yet. SignDrop has issued a patch; security teams should apply it immediately and monitor for privilege-escalation indicators.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "CyberNews AI",
@@ -4572,7 +4605,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-satellite-6-18-11-receives-critical-async-50d0fdfe",
     "title": "Red Hat Satellite 6.18.11 receives critical async update",
-    "summary": "Red Hat Satellite 6.18.11 for RHEL 9 includes critical vulnerabilities that may allow attackers to take control of satellite services. These flaws are rated CVSS 9.0+, providing remote code execution paths that bypass authentication and enable full administrative access. Apply the vendor’s patch immediately and review satellite configuration to enforce least‑privilege access controls.",
+    "summary": "Red Hat Satellite 6.18.11 for RHEL 9 includes critical vulnerabilities that may allow attackers to take control of satellite services. These flaws are rated CVSS 9.0+, providing remote code execution paths that bypass authentication and enable full administrative access. Apply the vendor’s patch immediately and review satellite configuration to enforce least-privilege access controls.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "Red Hat Security Advisories",
@@ -4833,7 +4866,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "hackers-exploit-4-800-github-accounts-for-cloud-cr-25faffd4",
     "title": "Hackers Exploit 4,800 GitHub Accounts for Cloud Credentials",
-    "summary": "A wfx-loot campaign compromised 4,837 GitHub accounts, using them to scan 61,764 repositories, open pull requests, and deploy secrets‑stealing malware. The attackers leveraged credential reuse and automated scanning to exfiltrate cloud service keys, exposing multiple cloud environments to unauthorized access. GitHub has issued a security advisory, urging users to rotate compromised credentials, enable two‑factor authentication, and review repository access logs.",
+    "summary": "A wfx-loot campaign compromised 4,837 GitHub accounts, using them to scan 61,764 repositories, open pull requests, and deploy secrets-stealing malware. The attackers leveraged credential reuse and automated scanning to exfiltrate cloud service keys, exposing multiple cloud environments to unauthorized access. GitHub has issued a security advisory, urging users to rotate compromised credentials, enable two-factor authentication, and review repository access logs.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -4870,7 +4903,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "feds-seize-1-2b-from-binance-theft-takedown-facest-f9460563",
     "title": "Feds Seize $1.2B from Binance Theft, Takedown FaceStealer Tools",
-    "summary": "The DOJ and FBI seized $1.2 billion tied to a North Korea‑linked cryptocurrency theft and dismantled FaceStealer malware tools. Investigations revealed the funds were proceeds from stolen digital assets, while the takedown removed the credential‑harvesting infrastructure. Cryptocurrency exchanges are urged to strengthen monitoring and compliance to deter future thefts and cooperate with ongoing investigations.",
+    "summary": "The DOJ and FBI seized $1.2 billion tied to a North Korea-linked cryptocurrency theft and dismantled FaceStealer malware tools. Investigations revealed the funds were proceeds from stolen digital assets, while the takedown removed the credential-harvesting infrastructure. Cryptocurrency exchanges are urged to strengthen monitoring and compliance to deter future thefts and cooperate with ongoing investigations.",
     "category": "General",
     "severity": "LOW",
     "source": "The Record",
@@ -5044,7 +5077,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "tigervnc-stores-tls-exceptions-as-trusted-cas-b7eedaef",
     "title": "TigerVNC Stores TLS Exceptions as Trusted CAs",
-    "summary": "TigerVNC viewer treats TLS certificate exceptions as trusted CAs, allowing a remote attacker to impersonate any VNC server after a user accepts an exception. The flaw requires user interaction and does not grant code execution, yet it enables man‑in‑the‑middle attacks on VNC sessions. Ubuntu advises upgrading to TigerVNC 1.2.0 or later and avoiding unverified certificate acceptance.",
+    "summary": "TigerVNC viewer treats TLS certificate exceptions as trusted CAs, allowing a remote attacker to impersonate any VNC server after a user accepts an exception. The flaw requires user interaction and does not grant code execution, yet it enables man-in-the-middle attacks on VNC sessions. Ubuntu advises upgrading to TigerVNC 1.2.0 or later and avoiding unverified certificate acceptance.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Ubuntu Security Notices",
@@ -5335,7 +5368,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "rhc-security-update-for-rhel-8-6-available-90f40726",
     "title": "RHC Security Update for RHEL 8.6 Available",
-    "summary": "Red Hat released an important security update for the rhc client on RHEL 8.6 Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On. The update addresses multiple vulnerabilities, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Red Hat recommends applying the rhc update immediately to mitigate potential exploitation.",
+    "summary": "Red Hat released an important security update for the rhc client on RHEL 8.6 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The update addresses multiple vulnerabilities, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Red Hat recommends applying the rhc update immediately to mitigate potential exploitation.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Red Hat Security Advisories",
@@ -5371,7 +5404,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-issues-libx11-security-update-c4881392",
     "title": "Red Hat Issues libX11 Security Update",
-    "summary": "Red Hat released a security update for libX11 affecting Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and mitigates potential privilege escalation. Customers should install the patch immediately to mitigate potential denial‑of‑service or privilege escalation risks.",
+    "summary": "Red Hat released a security update for libX11 affecting Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and mitigates potential privilege escalation. Customers should install the patch immediately to mitigate potential denial-of-service or privilege escalation risks.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Red Hat Security Advisories",
@@ -5407,7 +5440,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "chrome-159-promoted-to-beta-channel-c2196938",
     "title": "Chrome 159 Promoted to Beta Channel",
-    "summary": "Google Chrome promoted version 159 to the Beta channel for Windows, macOS, and Linux, expanding early access for developers and testers. The update includes under‑the‑hood performance and stability improvements alongside several new features, but no security vulnerabilities are reported. Users may switch channels via the Chrome settings or consult the Chromium blog for detailed change logs and bug‑reporting procedures.",
+    "summary": "Google Chrome promoted version 159 to the Beta channel for Windows, macOS, and Linux, expanding early access for developers and testers. The update includes under-the-hood performance and stability improvements alongside several new features, but no security vulnerabilities are reported. Users may switch channels via the Chrome settings or consult the Chromium blog for detailed change logs and bug-reporting procedures.",
     "category": "General",
     "severity": "LOW",
     "source": "Google Chrome Releases",
@@ -5425,7 +5458,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-issues-libxtst-security-update-0390e8d5",
     "title": "Red Hat Issues libXtst Security Update",
-    "summary": "Red Hat released a security update for libXtst affecting Enterprise Linux 7 Extended Lifecycle Support. The update fixes multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and reduces privilege escalation risk. Customers should apply the patch promptly to prevent potential denial‑of‑service or privilege escalation and mitigate related risks.",
+    "summary": "Red Hat released a security update for libXtst affecting Enterprise Linux 7 Extended Lifecycle Support. The update fixes multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and reduces privilege escalation risk. Customers should apply the patch promptly to prevent potential denial-of-service or privilege escalation and mitigate related risks.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Red Hat Security Advisories",
@@ -5443,7 +5476,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "luna-moth-targets-law-firms-with-token-theft-cbb89b75",
     "title": "Luna Moth Targets Law Firms with Token Theft",
-    "summary": "Extortion group Luna Moth re‑targets law firms that declined its first ransom, launching a social‑engineering campaign to harvest Microsoft access tokens. The attack leverages phishing emails that embed malicious attachments or links, exploiting user credential theft to gain privileged cloud access. Security teams should enforce multi‑factor authentication, monitor token usage, and conduct employee awareness training to mitigate token‑based credential compromise.",
+    "summary": "Extortion group Luna Moth re-targets law firms that declined its first ransom, launching a social-engineering campaign to harvest Microsoft access tokens. The attack leverages phishing emails that embed malicious attachments or links, exploiting user credential theft to gain privileged cloud access. Security teams should enforce multi-factor authentication, monitor token usage, and conduct employee awareness training to mitigate token-based credential compromise.",
     "category": "Ransomware",
     "severity": "HIGH",
     "source": "Dark Reading",
@@ -5460,8 +5493,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "red-hat-releases-qt5-qtbase-security-update-26b8c52b",
-    "title": "Red Hat Releases qt5‑qtbase Security Update",
-    "summary": "Red Hat issued an important security update for qt5‑qtbase on RHEL 7 Extended Lifecycle Support, addressing multiple vulnerabilities. The update is rated Important by Red Hat Product Security, and CVSS base scores for each vulnerability are provided in the references. Users should apply the patch immediately to mitigate the identified weaknesses and consult the CVE links for detailed severity information.",
+    "title": "Red Hat Releases qt5-qtbase Security Update",
+    "summary": "Red Hat issued an important security update for qt5-qtbase on RHEL 7 Extended Lifecycle Support, addressing multiple vulnerabilities. The update is rated Important by Red Hat Product Security, and CVSS base scores for each vulnerability are provided in the references. Users should apply the patch immediately to mitigate the identified weaknesses and consult the CVE links for detailed severity information.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Red Hat Security Advisories",
@@ -5496,8 +5529,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "n-able-zero-day-exploited-for-miner-deployment-89b33db4",
-    "title": "N‑Able Zero‑Day Exploited for Miner Deployment",
-    "summary": "Hackers are exploiting a newly disclosed N‑Able N‑Central zero‑day, dubbed '4EverAble2Shell', to compromise servers and deploy cryptocurrency miners. The flaw permits unauthenticated remote code execution, enabling attackers to gain root access even on systems that have applied the latest emergency hotfix. N‑Able has released a patch; administrators should immediately apply the update and monitor for unauthorized miner processes.",
+    "title": "N-Able Zero-Day Exploited for Miner Deployment",
+    "summary": "Hackers are exploiting a newly disclosed N-Able N-Central zero-day, dubbed '4EverAble2Shell', to compromise servers and deploy cryptocurrency miners. The flaw permits unauthenticated remote code execution, enabling attackers to gain root access even on systems that have applied the latest emergency hotfix. N-Able has released a patch; administrators should immediately apply the update and monitor for unauthorized miner processes.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
@@ -5515,7 +5548,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "united-airlines-bans-ai-assistants-for-credential-d991520a",
     "title": "United Airlines Bans AI Assistants for Credential Safety",
-    "summary": "United Airlines has prohibited customers from using AI assistants to access its services, citing risks of credential exposure and transactions. The decision follows concerns that shared login tokens could be harvested by malicious actors, enabling unauthorized account activity and data leakage. Customers are advised to use official mobile apps and two‑factor authentication, and airlines will monitor for suspicious account behavior.",
+    "summary": "United Airlines has prohibited customers from using AI assistants to access its services, citing risks of credential exposure and transactions. The decision follows concerns that shared login tokens could be harvested by malicious actors, enabling unauthorized account activity and data leakage. Customers are advised to use official mobile apps and two-factor authentication, and airlines will monitor for suspicious account behavior.",
     "category": "General",
     "severity": "LOW",
     "source": "The Record",
@@ -5533,8 +5566,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "red-hat-issues-critical-fence-agents-update-36ba2f36",
-    "title": "Red Hat Issues Critical Fence‑Agents Update",
-    "summary": "Red Hat released a critical security update for fence‑agents on RHEL 9.8 EUS, addressing multiple high‑impact vulnerabilities. The update mitigates remote code execution risks by patching underlying flaws identified in the fence‑agents component, with CVSS base scores indicating severe impact. Administrators should apply the RHSA‑2026:99693 update immediately and verify that fence‑agents is running the latest patched version.",
+    "title": "Red Hat Issues Critical Fence-Agents Update",
+    "summary": "Red Hat released a critical security update for fence-agents on RHEL 9.8 EUS, addressing multiple high-impact vulnerabilities. The update mitigates remote code execution risks by patching underlying flaws identified in the fence-agents component, with CVSS base scores indicating severe impact. Administrators should apply the RHSA-2026:99693 update immediately and verify that fence-agents is running the latest patched version.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "Red Hat Security Advisories",
@@ -5629,7 +5662,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-releases-sso-7-6-14-update-for-rhel-7-b589d983",
     "title": "Red Hat Releases SSO 7.6.14 Update for RHEL 7",
-    "summary": "Red Hat issued a security update for Single Sign‑On 7.6.14 on RHEL 7, addressing multiple vulnerabilities. The advisory labels the update as critical, but the vendor rates the security impact as none and provides CVSS scores via CVE links. Administrators should install the new packages immediately to ensure compatibility, though no immediate exploitation risk is reported.",
+    "summary": "Red Hat issued a security update for Single Sign-On 7.6.14 on RHEL 7, addressing multiple vulnerabilities. The advisory labels the update as critical, but the vendor rates the security impact as none and provides CVSS scores via CVE links. Administrators should install the new packages immediately to ensure compatibility, though no immediate exploitation risk is reported.",
     "category": "Vulnerability",
     "severity": "LOW",
     "source": "Red Hat Security Advisories",
@@ -5647,7 +5680,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-updates-sso-7-6-14-for-rhel-8-88292ebb",
     "title": "Red Hat Updates SSO 7.6.14 for RHEL 8",
-    "summary": "Red Hat released a security update for Single Sign‑On 7.6.14 on RHEL 8, fixing several vulnerabilities. The advisory marks the update as critical, yet the vendor reports no security impact and references CVSS scores via CVE links. Systems administrators should apply the new packages promptly, though no active exploitation is documented.",
+    "summary": "Red Hat released a security update for Single Sign-On 7.6.14 on RHEL 8, fixing several vulnerabilities. The advisory marks the update as critical, yet the vendor reports no security impact and references CVSS scores via CVE links. Systems administrators should apply the new packages promptly, though no active exploitation is documented.",
     "category": "Vulnerability",
     "severity": "LOW",
     "source": "Red Hat Security Advisories",
@@ -5683,7 +5716,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "compat-openssl10-security-update-for-rhel-8-8-51270b4f",
     "title": "compat-openssl10 Security Update for RHEL 8.8",
-    "summary": "Red Hat released a compat-openssl10 update for RHEL 8.8 and SAP solutions to address critical cryptographic issues. The update fixes multiple vulnerabilities that could allow attackers to bypass SSL/TLS validation, potentially enabling man‑in‑the‑middle attacks, and is rated as Important by Red Hat Product Security. Systems should apply the new packages immediately and verify that OpenSSL functionality remains intact.",
+    "summary": "Red Hat released a compat-openssl10 update for RHEL 8.8 and SAP solutions to address critical cryptographic issues. The update fixes multiple vulnerabilities that could allow attackers to bypass SSL/TLS validation, potentially enabling man-in-the-middle attacks, and is rated as Important by Red Hat Product Security. Systems should apply the new packages immediately and verify that OpenSSL functionality remains intact.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Red Hat Security Advisories",
@@ -6127,7 +6160,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "poisoned-ai-training-enables-remote-code-execution-5f5a52ca",
     "title": "Poisoned AI Training Enables Remote Code Execution",
-    "summary": "Poisoned training data and model checkpoints can trigger remote code execution in AI coding agents, per Microsoft Defender Research. The flaw exploits the training pipeline, letting attackers embed malicious code that runs when the agent processes user inputs, potentially compromising downstream systems. Defenders should verify training data integrity, enforce supply‑chain controls, and monitor agent behavior for anomalous execution.",
+    "summary": "Poisoned training data and model checkpoints can trigger remote code execution in AI coding agents, per Microsoft Defender Research. The flaw exploits the training pipeline, letting attackers embed malicious code that runs when the agent processes user inputs, potentially compromising downstream systems. Defenders should verify training data integrity, enforce supply-chain controls, and monitor agent behavior for anomalous execution.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Microsoft Security",
@@ -6145,7 +6178,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "europol-seizes-235-servers-257-domains-of-gootload-58ee2d20",
     "title": "Europol Seizes 235 Servers, 257 Domains of Gootloader, CastleRAT",
-    "summary": "Europol and partners disrupted 235 servers and 257 domains linked to Gootloader, CastleRAT, and StealC malware services that facilitate ransomware and data theft. The operation seized 6.4 million victim datasets from the criminal infrastructure, exposing the scale of the cyber‑crime‑as‑a‑service model. No vendor patches are required; the action demonstrates law enforcement’s capacity to dismantle malware supply chains.",
+    "summary": "Europol and partners disrupted 235 servers and 257 domains linked to Gootloader, CastleRAT, and StealC malware services that facilitate ransomware and data theft. The operation seized 6.4 million victim datasets from the criminal infrastructure, exposing the scale of the cyber-crime-as-a-service model. No vendor patches are required; the action demonstrates law enforcement’s capacity to dismantle malware supply chains.",
     "category": "General",
     "severity": "LOW",
     "source": "Cyber Security News",
@@ -6218,8 +6251,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "n-able-zero-day-targets-even-patched-servers-f923e85e",
-    "title": "N‑Able Zero‑Day Targets Even Patched Servers",
-    "summary": "New N‑Able N‑Central zero‑day exploits, named 4EverAble2Shell and Agent2Shell, target servers even after the latest emergency hotfix. The vulnerability enables unauthenticated attackers to gain root access, allowing deployment of cryptocurrency miners and other malicious payloads. Administrators should apply the latest patch, monitor for unauthorized processes, and verify that the HTTP/2 module is properly secured.",
+    "title": "N-Able Zero-Day Targets Even Patched Servers",
+    "summary": "New N-Able N-Central zero-day exploits, named 4EverAble2Shell and Agent2Shell, target servers even after the latest emergency hotfix. The vulnerability enables unauthenticated attackers to gain root access, allowing deployment of cryptocurrency miners and other malicious payloads. Administrators should apply the latest patch, monitor for unauthorized processes, and verify that the HTTP/2 module is properly secured.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "Cyber Security News",
@@ -6256,7 +6289,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "linux-kernel-vulnerabilities-affect-amd-and-arm-pr-590add84",
     "title": "Linux Kernel Vulnerabilities Affect AMD and Arm Processors",
-    "summary": "Linux kernel flaws CVE-2023-20585 and CVE-2025-10263 let local attackers bypass memory protections on AMD and Arm CPUs, potentially compromising guest memory. The bugs enable out-of-bounds writes and privilege escalation, threatening SEV‑SNP guest memory and allowing unauthorized code execution. Kernel maintainers released patches; administrators should apply updates, verify hypervisor isolation, and monitor for anomalous memory activity.",
+    "summary": "Linux kernel flaws CVE-2023-20585 and CVE-2025-10263 let local attackers bypass memory protections on AMD and Arm CPUs, potentially compromising guest memory. The bugs enable out-of-bounds writes and privilege escalation, threatening SEV-SNP guest memory and allowing unauthorized code execution. Kernel maintainers released patches; administrators should apply updates, verify hypervisor isolation, and monitor for anomalous memory activity.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Ubuntu Security Notices",
@@ -6278,7 +6311,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ubuntu-patches-multiple-kernel-subsystem-vulnerabi-a74d4372",
     "title": "Ubuntu Patches Multiple Kernel Subsystem Vulnerabilities",
-    "summary": "Ubuntu released a kernel update addressing several security issues that could allow attackers to compromise systems via vulnerable subsystems. The update fixes flaws in network file systems, stream parsing, ARM64, PowerPC, RISC‑V, S390, UML, x86, block layer, Android, Bluetooth, TPM, and other drivers. Users should apply the update promptly to eliminate potential privilege escalation or denial‑of‑service risks.",
+    "summary": "Ubuntu released a kernel update addressing several security issues that could allow attackers to compromise systems via vulnerable subsystems. The update fixes flaws in network file systems, stream parsing, ARM64, PowerPC, RISC-V, S390, UML, x86, block layer, Android, Bluetooth, TPM, and other drivers. Users should apply the update promptly to eliminate potential privilege escalation or denial-of-service risks.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Ubuntu Security Notices",
@@ -6337,7 +6370,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "connectwise-investigates-screenconnect-breaches-at-1746e6e4",
     "title": "ConnectWise Investigates ScreenConnect Breaches at 50 Clients",
-    "summary": "ConnectWise reports that abuse of its ScreenConnect remote‑access tool has led to data breaches at nearly 50 customer organizations. The exploitation involved unauthorized remote sessions bypassing authentication controls, exposing sensitive files and credentials, with no public proof‑of‑concept disclosed. ConnectWise has released a patch and recommends customers disable remote‑access features until the fix is applied, while conducting forensic investigations.",
+    "summary": "ConnectWise reports that abuse of its ScreenConnect remote-access tool has led to data breaches at nearly 50 customer organizations. The exploitation involved unauthorized remote sessions bypassing authentication controls, exposing sensitive files and credentials, with no public proof-of-concept disclosed. ConnectWise has released a patch and recommends customers disable remote-access features until the fix is applied, while conducting forensic investigations.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "The Record",
@@ -6412,7 +6445,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "windows-signdrop-zero-day-exploit-enables-system-p-f64df1ef",
     "title": "Windows SignDrop Zero-Day Exploit Enables SYSTEM Privileges via CLFS Abuse",
-    "summary": "Microsoft Windows systems are affected by the SignDrop zero‑day vulnerability, which allows attackers to gain SYSTEM privileges. The flaw abuses CLFS and Windows Defender to write privileged files under the antimalware process, enabling persistence and payload deployment. Microsoft has issued an out‑of‑band patch disabling CLFS operations for Defender; security teams must apply it immediately.",
+    "summary": "Microsoft Windows systems are affected by the SignDrop zero-day vulnerability, which allows attackers to gain SYSTEM privileges. The flaw abuses CLFS and Windows Defender to write privileged files under the antimalware process, enabling persistence and payload deployment. Microsoft has issued an out-of-band patch disabling CLFS operations for Defender; security teams must apply it immediately.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
@@ -6435,8 +6468,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "ubuntu-discloses-pillow-denial-of-service-vulnerab-eeb6a195",
-    "title": "Ubuntu Discloses Pillow Denial‑of‑Service Vulnerabilities",
-    "summary": "Ubuntu released security notice USN‑9064‑1, exposing multiple Pillow library flaws that allow attackers to trigger denial‑of‑service conditions via infinite loops and uncontrolled recursion. The CVE‑identified issues (CVE‑2026‑112390, CVE‑2026‑112391, CVE‑2026‑112392) affect Ubuntu 18.04 through 26.10, causing potential service crashes or hangs without authentication. The vulnerabilities are tracked as CVE-2026-112390, CVE-2026-112391, CVE-2026-112392.",
+    "title": "Ubuntu Discloses Pillow Denial-of-Service Vulnerabilities",
+    "summary": "Ubuntu released security notice USN-9064-1, exposing multiple Pillow library flaws that allow attackers to trigger denial-of-service conditions via infinite loops and uncontrolled recursion. The CVE-identified issues (CVE-2026-112390, CVE-2026-112391, CVE-2026-112392) affect Ubuntu 18.04 through 26.10, causing potential service crashes or hangs without authentication. The vulnerabilities are tracked as CVE-2026-112390, CVE-2026-112391, CVE-2026-112392.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Ubuntu Security Notices",
@@ -6459,7 +6492,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "citrix-releases-patches-for-12-netscaler-flaws-4e7d75dc",
     "title": "Citrix Releases Patches for 12 NetScaler Flaws",
-    "summary": "Citrix has issued patches for twelve critical NetScaler ADC, Gateway, and Console flaws that could enable denial‑of‑service or authentication bypass. The most severe flaw, CVE-2026-120868, is a memory overflow with CVSS 9.3 that permits unauthenticated remote code execution, potentially compromising entire NetScaler deployments. Citrix recommends applying the latest cumulative update immediately and verifying configuration changes to mitigate the vulnerabilities.",
+    "summary": "Citrix has issued patches for twelve critical NetScaler ADC, Gateway, and Console flaws that could enable denial-of-service or authentication bypass. The most severe flaw, CVE-2026-120868, is a memory overflow with CVSS 9.3 that permits unauthenticated remote code execution, potentially compromising entire NetScaler deployments. Citrix recommends applying the latest cumulative update immediately and verifying configuration changes to mitigate the vulnerabilities.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "The Hacker News",
@@ -6479,7 +6512,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "apache-fixes-critical-http-2-rce-vulnerability-8fa80d31",
     "title": "Apache Fixes Critical HTTP/2 RCE Vulnerability",
-    "summary": "Apache patched a critical mod_http2 race condition that could let unauthenticated attackers execute code on HTTP/2‑enabled servers. The flaw, CVE-2026-119618, exploits a race condition in HTTP/2, enabling unauthenticated remote code execution that could compromise all affected servers. Administrators should apply the latest Apache release and disable HTTP/2 if immediate patching is not possible to mitigate the vulnerability.",
+    "summary": "Apache patched a critical mod_http2 race condition that could let unauthenticated attackers execute code on HTTP/2-enabled servers. The flaw, CVE-2026-119618, exploits a race condition in HTTP/2, enabling unauthenticated remote code execution that could compromise all affected servers. Administrators should apply the latest Apache release and disable HTTP/2 if immediate patching is not possible to mitigate the vulnerability.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "SecurityWeek",
@@ -6537,7 +6570,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "fake-ai-domains-redirect-to-clickfix-and-browser-m-cb9cc025",
     "title": "Fake AI Domains Redirect to ClickFix and Browser Malware",
-    "summary": "Researchers discovered 186 fake AI domains redirecting users to ClickFix-style lures, browser-hijacking malware, and search‑hijacking extensions. The attack leverages typographical prompt deception, codenamed TypoPrompting, to trick users into verifying fake AI tools, enabling credential theft and malicious payload delivery. Security teams should block these domains, enforce strict DNS filtering, and educate users about authentic AI services to prevent exploitation.",
+    "summary": "Researchers discovered 186 fake AI domains redirecting users to ClickFix-style lures, browser-hijacking malware, and search-hijacking extensions. The attack leverages typographical prompt deception, codenamed TypoPrompting, to trick users into verifying fake AI tools, enabling credential theft and malicious payload delivery. Security teams should block these domains, enforce strict DNS filtering, and educate users about authentic AI services to prevent exploitation.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "The Hacker News",
@@ -6556,7 +6589,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "police-seize-servers-behind-gootloader-castlerat-s-f1e4e109",
     "title": "Police Seize Servers Behind Gootloader, CastleRAT, StealC",
-    "summary": "Europol and nine partner agencies seized hundreds of servers and domains that supported the Gootloader, CastleRAT, and StealC malware ecosystems. The takedown disrupted command‑and‑control channels, halted credential‑stealing operations, and limited the malware’s ability to deliver ransomware payloads to corporate networks. Security teams should monitor residual infrastructure, apply network segmentation, and maintain threat intelligence feeds to detect command‑and‑control domains.",
+    "summary": "Europol and nine partner agencies seized hundreds of servers and domains that supported the Gootloader, CastleRAT, and StealC malware ecosystems. The takedown disrupted command-and-control channels, halted credential-stealing operations, and limited the malware’s ability to deliver ransomware payloads to corporate networks. Security teams should monitor residual infrastructure, apply network segmentation, and maintain threat intelligence feeds to detect command-and-control domains.",
     "category": "General",
     "severity": "LOW",
     "source": "BleepingComputer",
@@ -6594,7 +6627,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ai-agents-breach-semiconductor-defense-civil-targe-918fee5a",
     "title": "AI Agents Breach Semiconductor, Defense, Civil Targets",
-    "summary": "Attackers leveraged the open‑source Cairn AI agent framework to autonomously breach semiconductor, defense, and civil society organizations. The framework chains exploits without human intervention, enabling rapid compromise of critical infrastructure and sensitive data, with evidence of active exploitation. Security teams should monitor for anomalous AI activity, enforce strict access controls, and apply timely patches to mitigate automated attack vectors.",
+    "summary": "Attackers leveraged the open-source Cairn AI agent framework to autonomously breach semiconductor, defense, and civil society organizations. The framework chains exploits without human intervention, enabling rapid compromise of critical infrastructure and sensitive data, with evidence of active exploitation. Security teams should monitor for anomalous AI activity, enforce strict access controls, and apply timely patches to mitigate automated attack vectors.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "Unit 42",
@@ -6632,7 +6665,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "endpoint-management-platforms-pose-major-security-ea047999",
     "title": "Endpoint Management Platforms Pose Major Security Threat",
-    "summary": "Endpoint management platforms can become powerful attack tools when compromised, enabling hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 recommends customer‑controlled cryptographic authorization to prevent attackers from abusing sensitive endpoint operations and mitigate this risk. Security teams should enforce strict access controls, monitor for unauthorized changes, and apply timely updates to protect endpoint management infrastructure.",
+    "summary": "Endpoint management platforms can become powerful attack tools when compromised, enabling hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 recommends customer-controlled cryptographic authorization to prevent attackers from abusing sensitive endpoint operations and mitigate this risk. Security teams should enforce strict access controls, monitor for unauthorized changes, and apply timely updates to protect endpoint management infrastructure.",
     "category": "General",
     "severity": "LOW",
     "source": "BleepingComputer",
@@ -6651,7 +6684,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "japan-sees-record-cyberattacks-driven-by-ai-intrus-db59b6fd",
     "title": "Japan Sees Record Cyberattacks Driven by AI Intrusions",
-    "summary": "Researchers report a record rise in Japanese cyberattacks, attributing many incidents to AI‑assisted intrusion techniques. The attacks include widespread data breaches and exploitations of unpatched vulnerabilities, increasing pressure on organizations to accelerate patch management. Security teams should prioritize vulnerability scanning, enforce timely patching, and adopt AI‑driven threat detection to mitigate emerging intrusion tactics.",
+    "summary": "Researchers report a record rise in Japanese cyberattacks, attributing many incidents to AI-assisted intrusion techniques. The attacks include widespread data breaches and exploitations of unpatched vulnerabilities, increasing pressure on organizations to accelerate patch management. Security teams should prioritize vulnerability scanning, enforce timely patching, and adopt AI-driven threat detection to mitigate emerging intrusion tactics.",
     "category": "General",
     "severity": "LOW",
     "source": "Socket.dev",
@@ -6688,7 +6721,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "apify-rotates-api-tokens-after-internal-breach-b06dcafd",
     "title": "Apify Rotates API Tokens After Internal Breach",
-    "summary": "Apify suffered an internal breach that exposed API tokens, compromising platform access. The breach exposed a failure in access‑control monitoring, letting compromised tokens be reused before detection. Apify immediately rotated credentials, revoked OAuth connections, reset 2FA for affected users, and urged teams to enforce MFA, monitor anomalous usage, and apply latest patches.",
+    "summary": "Apify suffered an internal breach that exposed API tokens, compromising platform access. The breach exposed a failure in access-control monitoring, letting compromised tokens be reused before detection. Apify immediately rotated credentials, revoked OAuth connections, reset 2FA for affected users, and urged teams to enforce MFA, monitor anomalous usage, and apply latest patches.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -6711,7 +6744,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-issues-gd-update-for-rhel7-e8daf164",
     "title": "Red Hat Issues gd Update for RHEL7",
-    "summary": "Red Hat released a security update for the gd component on RHEL 7 Extended Lifecycle Support, fixing a flaw that could enable code execution. The update is rated Important, with CVSS scores linked via CVE references, indicating a moderate‑to‑high severity vulnerability. Red Hat recommends applying the patch immediately; no workarounds are needed.",
+    "summary": "Red Hat released a security update for the gd component on RHEL 7 Extended Lifecycle Support, fixing a flaw that could enable code execution. The update is rated Important, with CVSS scores linked via CVE references, indicating a moderate-to-high severity vulnerability. Red Hat recommends applying the patch immediately; no workarounds are needed.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Red Hat Security Advisories",
@@ -6765,7 +6798,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "study-reveals-critical-supply-chain-vulnerability-98a854e0",
     "title": "Study Reveals Critical Supply-Chain Vulnerability in 50 Platforms",
-    "summary": "nDiligence released a four‑year study exposing a critical supply‑chain vulnerability affecting all 50 examined software and device types. The flaw arises from insecure application integration practices, enabling attackers to inject malicious code during deployment and compromising downstream systems. Organizations should audit supply‑chain processes, enforce strict code signing, and apply vendor patches to mitigate the identified risk.",
+    "summary": "nDiligence released a four-year study exposing a critical supply-chain vulnerability affecting all 50 examined software and device types. The flaw arises from insecure application integration practices, enabling attackers to inject malicious code during deployment and compromising downstream systems. Organizations should audit supply-chain processes, enforce strict code signing, and apply vendor patches to mitigate the identified risk.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -6805,7 +6838,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "teams-booking-flow-conceals-device-code-phishing-a4e0cca3",
     "title": "Teams Booking Flow Conceals Device Code Phishing",
-    "summary": "Threat actors leveraged a Microsoft Teams meeting‑booking flow to deliver device code phishing, tricking users into authorizing attacker access. The attack exploited the Teams booking interface’s lack of device‑code validation, allowing attackers to obtain temporary access tokens without user credentials. Security teams should enforce MFA, disable unused device‑code flows, and monitor for anomalous token usage to mitigate this threat.",
+    "summary": "Threat actors leveraged a Microsoft Teams meeting-booking flow to deliver device code phishing, tricking users into authorizing attacker access. The attack exploited the Teams booking interface’s lack of device-code validation, allowing attackers to obtain temporary access tokens without user credentials. Security teams should enforce MFA, disable unused device-code flows, and monitor for anomalous token usage to mitigate this threat.",
     "category": "Breach",
     "severity": "MEDIUM",
     "source": "Huntress",
@@ -6823,7 +6856,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-quay-vulnerability-enables-token-hijacking-58ffebef",
     "title": "Red Hat Quay Vulnerability Enables Token Hijacking",
-    "summary": "Red Hat Quay contains a critical flaw that allows unauthenticated attackers reaching a registry’s key server to hijack token signing. The vulnerability, identified as CVE-2026-123710, carries a CVSS score of 9.8, indicating a high‑impact remote code execution risk. Red Hat released a patch on November 11 2026; administrators should update Quay immediately and verify token signing integrity.",
+    "summary": "Red Hat Quay contains a critical flaw that allows unauthenticated attackers reaching a registry’s key server to hijack token signing. The vulnerability, identified as CVE-2026-123710, carries a CVSS score of 9.8, indicating a high-impact remote code execution risk. Red Hat released a patch on November 11 2026; administrators should update Quay immediately and verify token signing integrity.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Cyber Security News",
@@ -6863,7 +6896,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "aws-fixes-mcp-gateway-ssrf-vulnerability-b2c99e9d",
     "title": "AWS Fixes MCP Gateway SSRF Vulnerability",
-    "summary": "AWS disclosed CVE‑2026‑125926, a server‑side request forgery flaw in mcp‑gateway‑registry that permits authenticated users to access internal services and cloud credentials. The vulnerability affects versions 1.0.3 through 1.34.0; version 1.35.0 contains the fix and mitigates the internal network exposure. AWS urges users to upgrade to 1.35.0 or apply the patch immediately to prevent unauthorized internal access. The flaw is tracked as CVE-2026-125926.",
+    "summary": "AWS disclosed CVE-2026-125926, a server-side request forgery flaw in mcp-gateway-registry that permits authenticated users to access internal services and cloud credentials. The vulnerability affects versions 1.0.3 through 1.34.0; version 1.35.0 contains the fix and mitigates the internal network exposure. AWS urges users to upgrade to 1.35.0 or apply the patch immediately to prevent unauthorized internal access. The flaw is tracked as CVE-2026-125926.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -6941,7 +6974,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "endgame-takedown-recovers-6-million-stolen-credent-3e3943d7",
     "title": "Endgame Takedown Recovers 6 Million Stolen Credentials",
-    "summary": "Police and Europol dismantled servers behind Gootloader, CastleRAT, and StealC malware, uncovering more than 6 million stolen credentials used by ransomware gangs. The credentials were harvested from infected computers and sold to attackers, enabling unauthorized network access and facilitating ransomware operations. Law enforcement should continue to disrupt credential‑selling services and enforce stricter authentication controls to mitigate future ransomware infiltration.",
+    "summary": "Police and Europol dismantled servers behind Gootloader, CastleRAT, and StealC malware, uncovering more than 6 million stolen credentials used by ransomware gangs. The credentials were harvested from infected computers and sold to attackers, enabling unauthorized network access and facilitating ransomware operations. Law enforcement should continue to disrupt credential-selling services and enforce stricter authentication controls to mitigate future ransomware infiltration.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "Help Net Security",
@@ -6978,7 +7011,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "romania-blocks-russian-attack-on-government-emails-b15c63ed",
     "title": "Romania Blocks Russian Attack on Government Emails",
-    "summary": "Romania’s intelligence agency reported stopping a Russian state‑linked cyber‑espionage campaign that targeted government email accounts before data exfiltration could occur. The operation prevented the exfiltration of sensitive information, mitigating potential compromise of national security communications. Authorities should maintain continuous monitoring of state‑linked threat actors and enforce robust email authentication protocols.",
+    "summary": "Romania’s intelligence agency reported stopping a Russian state-linked cyber-espionage campaign that targeted government email accounts before data exfiltration could occur. The operation prevented the exfiltration of sensitive information, mitigating potential compromise of national security communications. Authorities should maintain continuous monitoring of state-linked threat actors and enforce robust email authentication protocols.",
     "category": "Nation State",
     "severity": "MEDIUM",
     "source": "The Record",
@@ -6996,7 +7029,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "sckit-exploits-screenconnect-remote-access-vulnera-3164abd1",
     "title": "SCKit Exploits ScreenConnect Remote Access Vulnerability",
-    "summary": "SCKit malware exploits the patched CVE‑2026‑84869 flaw in ConnectWise ScreenConnect, hijacking support sessions to compromise managed service provider environments. The CVSS 9.9 flaw permits unauthenticated remote code execution via crafted requests, exposing internal networks to lateral movement. ScreenConnect released an update; administrators should patch immediately and disable unused remote‑access features to mitigate risk. The flaw is tracked as CVE-2026-84869.",
+    "summary": "SCKit malware exploits the patched CVE-2026-84869 flaw in ConnectWise ScreenConnect, hijacking support sessions to compromise managed service provider environments. The CVSS 9.9 flaw permits unauthenticated remote code execution via crafted requests, exposing internal networks to lateral movement. ScreenConnect released an update; administrators should patch immediately and disable unused remote-access features to mitigate risk. The flaw is tracked as CVE-2026-84869.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "The Hacker News",
@@ -7017,7 +7050,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "kazakhstan-hackers-deploy-ai-agent-for-central-asi-3d350d73",
     "title": "Kazakhstan Hackers Deploy AI Agent for Central Asian Espionage",
-    "summary": "Suspected Kazakhstan-linked hackers deployed an AI agent to spy on Central Asian governments, steal documents, and infiltrate critical infrastructure. The agent automates reconnaissance and credential harvesting, bypassing traditional controls to gain unauthorized access to mission‑critical systems. Teams should enforce strict access controls, monitor for anomalous AI‑driven activity, and deploy advanced threat detection to mitigate infiltration.",
+    "summary": "Suspected Kazakhstan-linked hackers deployed an AI agent to spy on Central Asian governments, steal documents, and infiltrate critical infrastructure. The agent automates reconnaissance and credential harvesting, bypassing traditional controls to gain unauthorized access to mission-critical systems. Teams should enforce strict access controls, monitor for anomalous AI-driven activity, and deploy advanced threat detection to mitigate infiltration.",
     "category": "Nation State",
     "severity": "HIGH",
     "source": "The Record",
@@ -7036,7 +7069,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-releases-krb5-security-update-for-rhel-10-f0f88349",
     "title": "Red Hat Releases krb5 Security Update for RHEL 10",
-    "summary": "Red Hat issued a security update for the krb5 library on Red Hat Enterprise Linux 10, addressing a bug that could affect Kerberos authentication. The update carries an Important security impact rating, though no public exploit or CVE identifier is disclosed in the advisory. Customers should apply the RHSA‑2026:99624 package immediately to mitigate potential authentication weaknesses.",
+    "summary": "Red Hat issued a security update for the krb5 library on Red Hat Enterprise Linux 10, addressing a bug that could affect Kerberos authentication. The update carries an Important security impact rating, though no public exploit or CVE identifier is disclosed in the advisory. Customers should apply the RHSA-2026:99624 package immediately to mitigate potential authentication weaknesses.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Red Hat Security Advisories",
@@ -7072,7 +7105,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "cruciferra-maas-conceals-infostealers-and-rats-1b5dca33",
     "title": "Cruciferra MaaS Conceals Infostealers and RATs",
-    "summary": "Cybercriminals rent the Cruciferra malware‑as‑a‑service platform to conceal infostealers and remote access trojans from security software. Cruciferra encrypts malicious payloads in multiple layers, evading antivirus and endpoint detection tools and enabling widespread global campaigns. Defenders should employ advanced behavioral analytics and multi‑layered detection to identify encrypted RATs and infostealer activity.",
+    "summary": "Cybercriminals rent the Cruciferra malware-as-a-service platform to conceal infostealers and remote access trojans from security software. Cruciferra encrypts malicious payloads in multiple layers, evading antivirus and endpoint detection tools and enabling widespread global campaigns. Defenders should employ advanced behavioral analytics and multi-layered detection to identify encrypted RATs and infostealer activity.",
     "category": "General",
     "severity": "LOW",
     "source": "Cyber Security News",
@@ -7109,7 +7142,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "police-use-webloc-to-track-smartphones-via-app-dat-dc40be45",
     "title": "Police Use Webloc to Track Smartphones via App Data",
-    "summary": "Penlink’s Webloc app harvests location data from weather, gaming, email, and religious apps on smartphones, police map movements. The tool aggregates billions of points, reconstructing a trajectory over the past year and delivering near real‑time updates, exposing privacy without consent. No vendor patch is required; law enforcement should enforce data‑handling policies and consider opt‑in mechanisms to mitigate privacy risks.",
+    "summary": "Penlink’s Webloc app harvests location data from weather, gaming, email, and religious apps on smartphones, police map movements. The tool aggregates billions of points, reconstructing a trajectory over the past year and delivering near real-time updates, exposing privacy without consent. No vendor patch is required; law enforcement should enforce data-handling policies and consider opt-in mechanisms to mitigate privacy risks.",
     "category": "General",
     "severity": "LOW",
     "source": "Schneier on Security",
@@ -7188,7 +7221,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "siemens-ruggedcom-ape1808-affected-by-php2shell-fl-540fe133",
     "title": "Siemens RUGGEDCOM APE1808 Affected by PHP2Shell Flaw",
-    "summary": "A use‑after‑free flaw in PAN‑OS PHP2Shell (CVE‑2026‑109618/109619) enables remote code execution on Siemens RUGGEDCOM APE1808 devices. The flaw exploits PHP's longjmp OOM handling, yielding CVSS 9.8 and critical infrastructure impact; attackers can execute arbitrary code without authentication. Siemens recommends applying the vendor‑issued workarounds and updating firmware as soon as patches are available. The flaw is tracked as CVE-2026-109618.",
+    "summary": "A use-after-free flaw in PAN-OS PHP2Shell (CVE-2026-109618/109619) enables remote code execution on Siemens RUGGEDCOM APE1808 devices. The flaw exploits PHP's longjmp OOM handling, yielding CVSS 9.8 and critical infrastructure impact; attackers can execute arbitrary code without authentication. Siemens recommends applying the vendor-issued workarounds and updating firmware as soon as patches are available. The flaw is tracked as CVE-2026-109618.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "CISA",
@@ -7209,7 +7242,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "siemens-building-automation-affected-by-php2shell-e09c233b",
     "title": "Siemens Building Automation Affected by PHP2Shell Vulnerabilities",
-    "summary": "The PHP core vulnerabilities CVE‑2026‑109618/109619 (php2shell) allow unauthenticated remote code execution on Siemens Building Automation and Energy products. The flaws stem from improper handling of PHP's longjmp OOM errors, granting attackers full code execution without credentials and posing critical infrastructure risk. Siemens advises restricting network access, applying vendor‑issued workarounds, and following operational guidelines until patches are released. The flaw is tracked as CVE-2026-109618.",
+    "summary": "The PHP core vulnerabilities CVE-2026-109618/109619 (php2shell) allow unauthenticated remote code execution on Siemens Building Automation and Energy products. The flaws stem from improper handling of PHP's longjmp OOM errors, granting attackers full code execution without credentials and posing critical infrastructure risk. Siemens advises restricting network access, applying vendor-issued workarounds, and following operational guidelines until patches are released. The flaw is tracked as CVE-2026-109618.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "CISA",
@@ -7511,7 +7544,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "chrome-updates-83-flaws-five-critical-rce-fixes-7a376471",
     "title": "Chrome Updates 83 Flaws, Five Critical RCE Fixes",
-    "summary": "Google released a Chrome update fixing 83 vulnerabilities, including five use‑after‑free flaws that could enable remote code execution on Windows, macOS, and Linux. The flaws affect rendering, graphics, JavaScript, and core features, with CVSS scores up to 9.8, and are exploitable via crafted web content. Users should upgrade to Chrome 157.0.8103.78/79 or later, and admins should enforce updated security policies.",
+    "summary": "Google released a Chrome update fixing 83 vulnerabilities, including five use-after-free flaws that could enable remote code execution on Windows, macOS, and Linux. The flaws affect rendering, graphics, JavaScript, and core features, with CVSS scores up to 9.8, and are exploitable via crafted web content. Users should upgrade to Chrome 157.0.8103.78/79 or later, and admins should enforce updated security policies.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -7566,7 +7599,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-warns-of-gsocket-backdoor-threat-to-linu-e6c65b77",
     "title": "Microsoft Warns of GSocket Backdoor Threat to Linux Servers",
-    "summary": "Microsoft warned that attackers use the GSocket backdoor to maintain access to Linux servers, even after patches are applied. The technique leverages public relay servers to conceal command‑and‑control traffic, enabling stealthy persistence and data exfiltration. Security teams should deploy Microsoft’s hunting rules, KQL queries, and Sigma patterns to detect and block GSocket traffic.",
+    "summary": "Microsoft warned that attackers use the GSocket backdoor to maintain access to Linux servers, even after patches are applied. The technique leverages public relay servers to conceal command-and-control traffic, enabling stealthy persistence and data exfiltration. Security teams should deploy Microsoft’s hunting rules, KQL queries, and Sigma patterns to detect and block GSocket traffic.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -7609,7 +7642,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "threat-actors-use-gsocket-for-persistent-linux-acc-27a2cc2c",
     "title": "Threat Actors Use GSocket for Persistent Linux Access",
-    "summary": "Threat actors use the open‑source remote tool GSocket to keep access on Linux servers after patching initial exploitation vulnerabilities. This persistence method lets attackers re‑establish control even when known flaws are fixed, bypassing patch‑based defenses. Defenders should detect GSocket binaries, enforce whitelisting, and apply vendor patches to close this vector.",
+    "summary": "Threat actors use the open-source remote tool GSocket to keep access on Linux servers after patching initial exploitation vulnerabilities. This persistence method lets attackers re-establish control even when known flaws are fixed, bypassing patch-based defenses. Defenders should detect GSocket binaries, enforce whitelisting, and apply vendor patches to close this vector.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "BleepingComputer",
@@ -7664,7 +7697,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "mongodb-cve-2026-118383-causes-failover-crashes-31c90438",
     "title": "MongoDB CVE-2026-118383 Causes Failover Crashes",
-    "summary": "A pre‑authentication flaw in MongoDB Server (CVE‑2026‑118383) lets attackers send two crafted requests that crash the database when a lagging replica is promoted to primary. The crash occurs only if the server still lacks recent changes, making failover a trigger for the denial‑of‑service condition. MongoDB released patched versions earlier this week; administrators should upgrade immediately to prevent service disruption.",
+    "summary": "A pre-authentication flaw in MongoDB Server (CVE-2026-118383) lets attackers send two crafted requests that crash the database when a lagging replica is promoted to primary. The crash occurs only if the server still lacks recent changes, making failover a trigger for the denial-of-service condition. MongoDB released patched versions earlier this week; administrators should upgrade immediately to prevent service disruption.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -7683,8 +7716,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "github-repos-hit-by-credential-stealing-malware-8980ad05",
-    "title": "GitHub Repos Hit by Credential‑Stealing Malware",
-    "summary": "A threat actor used stolen GitHub credentials to push a credential‑stealing payload into tens of thousands of repositories since November 10, targeting GitHub Actions secrets. In 1,800 repositories, the malware ran and exfiltrated secrets; Aikido named the campaign wfx‑loot and identified 4,837 compromised accounts. Users should revoke compromised tokens, audit repository access, and enable multi‑factor authentication to stop further theft.",
+    "title": "GitHub Repos Hit by Credential-Stealing Malware",
+    "summary": "A threat actor used stolen GitHub credentials to push a credential-stealing payload into tens of thousands of repositories since November 10, targeting GitHub Actions secrets. In 1,800 repositories, the malware ran and exfiltrated secrets; Aikido named the campaign wfx-loot and identified 4,837 compromised accounts. Users should revoke compromised tokens, audit repository access, and enable multi-factor authentication to stop further theft.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "Help Net Security",
@@ -7738,7 +7771,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "maersk-data-theft-confirmed-by-whitearmor-7013f1c7",
     "title": "Maersk Data Theft Confirmed by WhiteArmor",
-    "summary": "WhiteArmor ransomware group claims to have stolen 100GB of data from Maersk during a $5 million extortion attempt. The breach involved exfiltration of shipping‑industry operational data, but no evidence shows ransomware execution or system compromise. Maersk should conduct a forensic investigation, reset compromised credentials, and strengthen access controls to mitigate further exfiltration.",
+    "summary": "WhiteArmor ransomware group claims to have stolen 100GB of data from Maersk during a $5 million extortion attempt. The breach involved exfiltration of shipping-industry operational data, but no evidence shows ransomware execution or system compromise. Maersk should conduct a forensic investigation, reset compromised credentials, and strengthen access controls to mitigate further exfiltration.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "SecurityWeek",
@@ -7775,7 +7808,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "node-js-http-2-flaws-crash-servers-leak-data-95e8fd61",
     "title": "Node.js HTTP/2 Flaws Crash Servers, Leak Data",
-    "summary": "Unauthenticated clients can crash Node.js servers using HTTP/2 on 24.x and 26.x lines, and a second flaw leaks memory containing responses for other connections. The flaw stems from improper HTTP/2 frame handling, enabling denial of service and cross‑connection data exposure without authentication. Node.js released patched versions 22.23.5, 24.22.3, and 26.13.1; upgrade immediately to stop crashes and leaks.",
+    "summary": "Unauthenticated clients can crash Node.js servers using HTTP/2 on 24.x and 26.x lines, and a second flaw leaks memory containing responses for other connections. The flaw stems from improper HTTP/2 frame handling, enabling denial of service and cross-connection data exposure without authentication. Node.js released patched versions 22.23.5, 24.22.3, and 26.13.1; upgrade immediately to stop crashes and leaks.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -7793,7 +7826,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "github-accounts-hijacked-secret-stealing-malware-d-3a685923",
     "title": "GitHub Accounts Hijacked, Secret-Stealing Malware Deployed",
-    "summary": "A threat actor hijacked 4,837 GitHub accounts and pushed a secret‑stealing payload into 61,764 repositories, targeting secrets in GitHub Actions. The actor used stolen credentials to gain unauthenticated write access, enabling malware to exfiltrate CI pipeline secrets without user interaction. GitHub issued a security advisory, urging token revocation, two‑factor authentication, and repository scans for malicious code.",
+    "summary": "A threat actor hijacked 4,837 GitHub accounts and pushed a secret-stealing payload into 61,764 repositories, targeting secrets in GitHub Actions. The actor used stolen credentials to gain unauthenticated write access, enabling malware to exfiltrate CI pipeline secrets without user interaction. GitHub issued a security advisory, urging token revocation, two-factor authentication, and repository scans for malicious code.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -7869,7 +7902,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "github-discusses-accountability-for-ai-patch-flaws-8806da92",
     "title": "GitHub Discusses Accountability for AI Patch Flaws",
-    "summary": "GitHub’s Agentic Autofix can fix one vulnerability while creating another, raising accountability questions for patches. The tool re‑runs detection engines and project tests after patching, but can miss side effects, requiring validation and metric monitoring. Security teams should adjust CISO policies before deploying the agent, select models, and apply continuous testing to mitigate flaws.",
+    "summary": "GitHub’s Agentic Autofix can fix one vulnerability while creating another, raising accountability questions for patches. The tool re-runs detection engines and project tests after patching, but can miss side effects, requiring validation and metric monitoring. Security teams should adjust CISO policies before deploying the agent, select models, and apply continuous testing to mitigate flaws.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Help Net Security",
@@ -8039,7 +8072,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "screenconnect-targeted-288-endpoints-via-rogue-cli-9e5eb3bd",
     "title": "ScreenConnect Targeted 288 Endpoints via Rogue Clients",
-    "summary": "ConnectWise reported unauthorized access incidents affecting at least 288 endpoints across 48 organizations using ScreenConnect with rogue client extensions. The company disabled five third‑party extensions in partner environments, noting no evidence of infrastructure compromise or software vulnerability in ScreenConnect itself. Security teams should monitor for rogue client activity, enforce extension whitelisting, and review access controls to mitigate similar threats.",
+    "summary": "ConnectWise reported unauthorized access incidents affecting at least 288 endpoints across 48 organizations using ScreenConnect with rogue client extensions. The company disabled five third-party extensions in partner environments, noting no evidence of infrastructure compromise or software vulnerability in ScreenConnect itself. Security teams should monitor for rogue client activity, enforce extension whitelisting, and review access controls to mitigate similar threats.",
     "category": "Breach",
     "severity": "MEDIUM",
     "source": "The Hacker News",
@@ -8058,7 +8091,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "sckit-worm-compromises-screenconnect-panels-infect-0637915f",
     "title": "SCKit Worm Compromises ScreenConnect Panels, Infects 288 Devices",
-    "summary": "Attackers leveraged the SCKit worm to compromise cloud‑hosted ConnectWise ScreenConnect panels, infecting at least 288 endpoints across 48 organizations. The worm exploited unauthorized panel access to deploy rogue ScreenConnect clients, establishing session‑cookie relays for persistence and remote control. Security teams must audit credentials, enforce MFA, terminate unverified clients, and apply vendor updates to block further exploitation.",
+    "summary": "Attackers leveraged the SCKit worm to compromise cloud-hosted ConnectWise ScreenConnect panels, infecting at least 288 endpoints across 48 organizations. The worm exploited unauthorized panel access to deploy rogue ScreenConnect clients, establishing session-cookie relays for persistence and remote control. Security teams must audit credentials, enforce MFA, terminate unverified clients, and apply vendor updates to block further exploitation.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -8175,8 +8208,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "mongodb-use-after-free-cve-2026-118383-exploited-1445ee31",
-    "title": "MongoDB Use‑After‑Free CVE‑2026‑118383 Exploited",
-    "summary": "MongoDB is affected by CVE‑2026‑118383, a use‑after‑free vulnerability that can lead to arbitrary code execution in enterprise environments. The flaw arises when the database fails to release memory after a malicious request, allowing attackers to trigger a crash or execute injected code. MongoDB has released a patch; administrators should apply the update immediately and monitor logs for anomalous activity. The flaw is tracked as CVE-2026-118383.",
+    "title": "MongoDB Use-After-Free CVE-2026-118383 Exploited",
+    "summary": "MongoDB is affected by CVE-2026-118383, a use-after-free vulnerability that can lead to arbitrary code execution in enterprise environments. The flaw arises when the database fails to release memory after a malicious request, allowing attackers to trigger a crash or execute injected code. MongoDB has released a patch; administrators should apply the update immediately and monitor logs for anomalous activity. The flaw is tracked as CVE-2026-118383.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "CyberNews AI",
@@ -8196,7 +8229,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384",
     "title": "Apache RCE Flaw CVE-2026-119618 Requires Immediate Patch",
-    "summary": "A remote code execution flaw identified as CVE-2026-119618 targets Apache servers, allowing attackers to execute arbitrary code in enterprise environments. The vulnerability stems from improper input validation in the request handling module, and public proof‑of‑concept exploits demonstrate its feasibility. Patch is available immediately; apply the latest Apache release or vendor‑issued hotfix and enable recommended detection rules.",
+    "summary": "A remote code execution flaw identified as CVE-2026-119618 targets Apache servers, allowing attackers to execute arbitrary code in enterprise environments. The vulnerability stems from improper input validation in the request handling module, and public proof-of-concept exploits demonstrate its feasibility. Patch is available immediately; apply the latest Apache release or vendor-issued hotfix and enable recommended detection rules.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "CyberNews AI",
@@ -8217,7 +8250,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "falcon-c2-targets-government-portals-with-javascri-c9c00956",
     "title": "Falcon C2 Targets Government Portals with JavaScript",
-    "summary": "Falcon C2 malware is targeting government portals by injecting malicious JavaScript into web pages. The injected scripts exploit client‑side vulnerabilities, capture user input, and establish command‑and‑control channels to exfiltrate data. Security teams should block known malicious domains, enforce script‑blocking policies, and immediately apply vendor security patches to mitigate the threat.",
+    "summary": "Falcon C2 malware is targeting government portals by injecting malicious JavaScript into web pages. The injected scripts exploit client-side vulnerabilities, capture user input, and establish command-and-control channels to exfiltrate data. Security teams should block known malicious domains, enforce script-blocking policies, and immediately apply vendor security patches to mitigate the threat.",
     "category": "General",
     "severity": "HIGH",
     "source": "CyberNews AI",
@@ -8236,7 +8269,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "git-six-flaw-rce-patches-released-9789b13a",
     "title": "Git Six Flaw RCE Patches Released",
-    "summary": "Git released patches for six critical flaws that could enable remote code execution if an attacker crafts malicious repository data. The vulnerabilities involve deserialization of untrusted input and were identified through root‑cause telemetry and detection rule hunting. Security teams should apply the Git patches immediately and review detection rules to ensure coverage of the affected code paths.",
+    "summary": "Git released patches for six critical flaws that could enable remote code execution if an attacker crafts malicious repository data. The vulnerabilities involve deserialization of untrusted input and were identified through root-cause telemetry and detection rule hunting. Security teams should apply the Git patches immediately and review detection rules to ensure coverage of the affected code paths.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "CyberNews AI",
@@ -8254,7 +8287,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ivanti-rce-flaw-cve-2026-121683-demands-prompt-pat-f1f37723",
     "title": "Ivanti RCE Flaw CVE-2026-121683 Demands Prompt Patch",
-    "summary": "Ivanti software contains a remote code execution vulnerability, CVE-2026-121683, that permits attackers to run arbitrary code on affected systems. The flaw originates from unchecked user input in the configuration parser, and publicly available proof‑of‑concept code confirms exploitation. Security teams should immediately apply the Ivanti patch or upgrade to the latest release and enable the vendor‑issued detection rules.",
+    "summary": "Ivanti software contains a remote code execution vulnerability, CVE-2026-121683, that permits attackers to run arbitrary code on affected systems. The flaw originates from unchecked user input in the configuration parser, and publicly available proof-of-concept code confirms exploitation. Security teams should immediately apply the Ivanti patch or upgrade to the latest release and enable the vendor-issued detection rules.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "CyberNews AI",
@@ -8293,7 +8326,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "screenconnect-rce-flaw-threatens-managed-service-p-3acd5e7b",
     "title": "ScreenConnect RCE Flaw Threatens Managed Service Providers",
-    "summary": "ScreenConnect, a support platform used by managed service providers, contains a remote code execution flaw that could allow attackers to execute arbitrary commands. The vulnerability arises from insufficient input validation in the session initiation module, and proof‑of‑concept exploits demonstrate its feasibility. Apply the vendor‑issued patch immediately, update to the latest ScreenConnect version, and enable the detection rules to mitigate risk.",
+    "summary": "ScreenConnect, a support platform used by managed service providers, contains a remote code execution flaw that could allow attackers to execute arbitrary commands. The vulnerability arises from insufficient input validation in the session initiation module, and proof-of-concept exploits demonstrate its feasibility. Apply the vendor-issued patch immediately, update to the latest ScreenConnect version, and enable the detection rules to mitigate risk.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "CyberNews AI",
@@ -8367,7 +8400,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-kernel-update-addresses-moderate-security-1ddc94c3",
     "title": "Red Hat Kernel Update Addresses Moderate Security Issues",
-    "summary": "Red Hat released a kernel update for Enterprise Linux 9 that addresses several moderate‑impact security issues. The update includes bug fixes and enhancements, with CVSS base scores linked to each CVE in the references. Security teams should apply the kernel update promptly and review the vendor documentation for any required configuration changes.",
+    "summary": "Red Hat released a kernel update for Enterprise Linux 9 that addresses several moderate-impact security issues. The update includes bug fixes and enhancements, with CVSS base scores linked to each CVE in the references. Security teams should apply the kernel update promptly and review the vendor documentation for any required configuration changes.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Red Hat Security Advisories",
@@ -8607,6 +8640,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "isc-stormcast-podcast-november-12-2026-1736113d",
+    "title": "ISC Stormcast Podcast - November 12, 2026",
+    "summary": "ISC Stormcast for November 12, 2026 delivers a concise weekly cybersecurity briefing. The episode reviews recent phishing campaigns, zero-day exploits, cloud misconfigurations, and emerging attack vectors, offering actionable defensive recommendations. Listeners can access the full transcript, resource links, and download the podcast via the ISC website, ensuring up-to-date threat awareness.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33512",
+    "publishedAt": "2026-11-12T02:00:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-podcast-november-12-2026",
+      "article-1736113d",
+      "1736113d",
+      "isc-stormcast-podcast-november-12-2026-57dd81"
+    ]
+  },
+  {
     "slug": "red-hat-patches-gnome-remote-desktop-flaw-in-rhel-9eab034d",
     "title": "Red Hat Patches gnome-remote-desktop Flaw in RHEL",
     "summary": "Red Hat issued a security update addressing a vulnerability in the gnome-remote-desktop component for Red Hat Enterprise Linux 9.8 Extended Update Support. The underlying flaw allows potential exploitation depending on system configuration, carrying a Red Hat severity rating of Important. Administrators using affected RHEL 9.8 Extended Update Support systems should apply the security patch immediately to mitigate risks.",
@@ -8663,8 +8714,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "red-hat-releases-python-oauthlib-security-update-69467088",
-    "title": "Red Hat Releases python‑oauthlib Security Update",
-    "summary": "Red Hat has issued an Important security update for python‑oauthlib on RHEL 9.8 Extended Update Support, addressing multiple vulnerabilities identified by CVE references. The update includes CVSS scores for each vulnerability, but no active exploitation has been reported, mitigating potential remote code execution risks. Users should apply the RHSA‑2026:99167 update immediately to ensure protection against the disclosed weaknesses.",
+    "title": "Red Hat Releases python-oauthlib Security Update",
+    "summary": "Red Hat has issued an Important security update for python-oauthlib on RHEL 9.8 Extended Update Support, addressing multiple vulnerabilities identified by CVE references. The update includes CVSS scores for each vulnerability, but no active exploitation has been reported, mitigating potential remote code execution risks. Users should apply the RHSA-2026:99167 update immediately to ensure protection against the disclosed weaknesses.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Red Hat Security Advisories",
@@ -8720,7 +8771,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "zoom-cve-2026-108187-requires-immediate-patch-55ccb8b8",
     "title": "Zoom CVE-2026-108187 Requires Immediate Patch",
-    "summary": "Zoom disclosed CVE-2026-108187, a critical flaw affecting enterprise Zoom deployments. The vulnerability permits remote code execution via malformed input in the Zoom client, with a CVSS score of 9.8; public proof‑of‑concept exploits are available, enabling attackers to gain full system control. Zoom has released a patch; administrators must update Zoom clients immediately and monitor for exploitation attempts.",
+    "summary": "Zoom disclosed CVE-2026-108187, a critical flaw affecting enterprise Zoom deployments. The vulnerability permits remote code execution via malformed input in the Zoom client, with a CVSS score of 9.8; public proof-of-concept exploits are available, enabling attackers to gain full system control. Zoom has released a patch; administrators must update Zoom clients immediately and monitor for exploitation attempts.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "CyberNews AI",
@@ -8834,7 +8885,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-releases-kernel-update-for-rhel-10-8660ca44",
     "title": "Red Hat Releases Kernel Update for RHEL 10",
-    "summary": "Red Hat issued a kernel update for Red Enterprise Linux 10 to address multiple security bugs. The update fixes several kernel vulnerabilities, each with a CVSS base score listed in the CVE references, and is rated as Important by Product Security. Administrators should apply the RHSA‑2026:99133 package immediately to mitigate the identified flaws and ensure system reboot.",
+    "summary": "Red Hat issued a kernel update for Red Enterprise Linux 10 to address multiple security bugs. The update fixes several kernel vulnerabilities, each with a CVSS base score listed in the CVE references, and is rated as Important by Product Security. Administrators should apply the RHSA-2026:99133 package immediately to mitigate the identified flaws and ensure system reboot.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Red Hat Security Advisories",
@@ -8924,8 +8975,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "chromeos-lts-150-patches-critical-use-after-free-f54d10a7",
-    "title": "ChromeOS LTS‑150 Patches Critical Use‑After‑Free",
-    "summary": "Google released ChromeOS LTS-150, patching numerous high‑severity CVEs including a critical CVE‑2026‑126879 use‑after‑free in the layout engine. The update addresses 18 CVEs such as CVE‑2026‑126901, CVE‑2026‑126856, and CVE‑2026‑126887, all of which could lead to code execution or denial of service. The vulnerabilities are tracked as CVE-2026-126879, CVE-2026-126901, CVE-2026-126856.",
+    "title": "ChromeOS LTS-150 Patches Critical Use-After-Free",
+    "summary": "Google released ChromeOS LTS-150, patching numerous high-severity CVEs including a critical CVE-2026-126879 use-after-free in the layout engine. The update addresses 18 CVEs such as CVE-2026-126901, CVE-2026-126856, and CVE-2026-126887, all of which could lead to code execution or denial of service. The vulnerabilities are tracked as CVE-2026-126879, CVE-2026-126901, CVE-2026-126856.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Google Chrome Releases",
@@ -8965,7 +9016,7 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "baker-tilly-clients-informed-of-third-party-breach-c8927c9e",
-    "title": "Baker Tilly Clients Informed of Third‑Party Breach",
+    "title": "Baker Tilly Clients Informed of Third-Party Breach",
     "summary": "Baker Tilly Advisory Group notified clients that a provider breach exposed personal information of clients and their dependents. The incident involved unauthorized access to sensitive data, including names, addresses, and financial details, though the full scope remains under investigation. Clients should monitor accounts, change passwords, and review security practices while Baker Tilly coordinates with the provider to assess impact.",
     "category": "Breach",
     "severity": "HIGH",
@@ -8983,8 +9034,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "unit-42-reveals-ai-powered-red-team-tool-usage-2b919cff",
-    "title": "Unit 42 Reveals AI‑Powered Red Team Tool Usage",
-    "summary": "Unit 42 identified adversaries deploying AI‑powered red team tools, such as ARTEX, to automate reconnaissance, credential harvesting, and lateral movement. These tools use large language models to generate phishing content, craft credential‑dump scripts, and orchestrate multi‑stage attack chains. Defenders should enable AI‑aware detection, enforce least‑privilege access, deploy MFA, and run regular red‑team simulations to validate controls.",
+    "title": "Unit 42 Reveals AI-Powered Red Team Tool Usage",
+    "summary": "Unit 42 identified adversaries deploying AI-powered red team tools, such as ARTEX, to automate reconnaissance, credential harvesting, and lateral movement. These tools use large language models to generate phishing content, craft credential-dump scripts, and orchestrate multi-stage attack chains. Defenders should enable AI-aware detection, enforce least-privilege access, deploy MFA, and run regular red-team simulations to validate controls.",
     "category": "General",
     "severity": "LOW",
     "source": "Unit 42",
@@ -9002,7 +9053,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "screenconnect-malware-breaches-msps-targets-custom-1b502196",
     "title": "ScreenConnect Malware Breaches MSPs, Targets Customer Devices",
-    "summary": "ConnectWise investigated a malware campaign that leveraged compromised ScreenConnect environments to deploy rogue remote‑access clients to customer devices of managed service providers. The attacks enabled attackers to gain remote control over client systems, potentially exfiltrating data and installing additional malicious payloads. ConnectWise recommends MSPs update ScreenConnect to the latest version, enforce strict access controls, and monitor for unauthorized remote‑access activity.",
+    "summary": "ConnectWise investigated a malware campaign that leveraged compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices of managed service providers. The attacks enabled attackers to gain remote control over client systems, potentially exfiltrating data and installing additional malicious payloads. ConnectWise recommends MSPs update ScreenConnect to the latest version, enforce strict access controls, and monitor for unauthorized remote-access activity.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -9169,7 +9220,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "arctic-wolf-highlights-agentic-ai-in-2026-security-994392c0",
     "title": "Arctic Wolf Highlights Agentic AI in 2026 Security Operations",
-    "summary": "Arctic Wolf’s 2026 Agentic Security Operations Report details how agentic AI collaborates with expert analysts to streamline incident response workflows. The integration reduces investigation time by up to 40 % and boosts detection accuracy, enabling quicker threat containment. Teams should evaluate agentic AI platforms, integrate them with SOAR, and train analysts to interpret AI‑generated hypotheses.",
+    "summary": "Arctic Wolf’s 2026 Agentic Security Operations Report details how agentic AI collaborates with expert analysts to streamline incident response workflows. The integration reduces investigation time by up to 40 % and boosts detection accuracy, enabling quicker threat containment. Teams should evaluate agentic AI platforms, integrate them with SOAR, and train analysts to interpret AI-generated hypotheses.",
     "category": "General",
     "severity": "LOW",
     "source": "Arctic Wolf",
@@ -9226,7 +9277,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ai-enhances-cyber-resilience-competition-cbdd8757",
     "title": "AI Enhances Cyber Resilience Competition",
-    "summary": "The article argues that AI technologies amplify both threat capabilities and defensive options, making rapid recovery a competitive advantage. It highlights how machine learning can detect anomalies faster, yet also enables adversaries to craft more sophisticated phishing and malware campaigns. Security teams should adopt AI‑driven monitoring, continuous testing, and adaptive response frameworks to mitigate evolving risks.",
+    "summary": "The article argues that AI technologies amplify both threat capabilities and defensive options, making rapid recovery a competitive advantage. It highlights how machine learning can detect anomalies faster, yet also enables adversaries to craft more sophisticated phishing and malware campaigns. Security teams should adopt AI-driven monitoring, continuous testing, and adaptive response frameworks to mitigate evolving risks.",
     "category": "General",
     "severity": "LOW",
     "source": "Dark Reading",
@@ -9265,7 +9316,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "aws-mcp-gateway-registry-privilege-escalation-via-5cea2f24",
     "title": "AWS mcp-gateway-registry Privilege Escalation via API",
-    "summary": "Amazon mcp-gateway-registry’s external management API lacks authorization, letting an authenticated user elevate to registry administrator. The flaw, present in versions 1.0.9–1.24.7, allows a crafted group import request to grant administrator scope to the attacker’s identity group, giving control over all registered gateway assets. AWS released a patch; security teams should upgrade to 1.24.8 or later and verify group import permissions.",
+    "summary": "Amazon mcp-gateway-registry’s external management API lacks authorization, letting an authenticated user elevate to registry administrator. The flaw, present in versions 1.0.9-1.24.7, allows a crafted group import request to grant administrator scope to the attacker’s identity group, giving control over all registered gateway assets. AWS released a patch; security teams should upgrade to 1.24.8 or later and verify group import permissions.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "AWS Security Bulletins",
@@ -9284,7 +9335,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "notion-breach-exposes-ai-chat-transcripts-cfcd8ae8",
     "title": "Notion Breach Exposes AI Chat Transcripts",
-    "summary": "Notion revealed a breach at Fireworks AI that exposed AI chat transcripts from a few workspaces. Unauthorized access to Fireworks AI’s storage leaked user‑generated chat content, though no credentials were compromised. Notion advises users to review logs and reset passwords, while Fireworks AI has released a patch to secure the data.",
+    "summary": "Notion revealed a breach at Fireworks AI that exposed AI chat transcripts from a few workspaces. Unauthorized access to Fireworks AI’s storage leaked user-generated chat content, though no credentials were compromised. Notion advises users to review logs and reset passwords, while Fireworks AI has released a patch to secure the data.",
     "category": "Breach",
     "severity": "MEDIUM",
     "source": "BleepingComputer",
@@ -9301,8 +9352,8 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "exam-security-adapts-to-ai-assisted-test-taking-d8127d95",
-    "title": "Exam Security Adapts to AI‑Assisted Test Taking",
-    "summary": "Exam security faces new challenges as test takers increasingly use AI to answer questions. The article notes that detecting AI‑assisted cheating remains difficult, prompting the development of new tools and processes to enhance trust in certification exams. Security teams should monitor emerging detection solutions and update exam protocols accordingly today.",
+    "title": "Exam Security Adapts to AI-Assisted Test Taking",
+    "summary": "Exam security faces new challenges as test takers increasingly use AI to answer questions. The article notes that detecting AI-assisted cheating remains difficult, prompting the development of new tools and processes to enhance trust in certification exams. Security teams should monitor emerging detection solutions and update exam protocols accordingly today.",
     "category": "General",
     "severity": "LOW",
     "source": "Dark Reading",
@@ -9375,7 +9426,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "2026-agentic-security-operations-report-highlights-b31c85ac",
     "title": "2026 Agentic Security Operations Report Highlights AI Benefits",
-    "summary": "The 2026 Agentic Security Operations Report shows how enterprises use AI‑powered security operations to detect threats faster. The study reports a reduction in alert noise and a 35 % increase in analyst efficiency through AI‑driven prioritization. Organizations should integrate AI platforms with existing SOAR tools, train analysts on AI outputs, and monitor for false positives.",
+    "summary": "The 2026 Agentic Security Operations Report shows how enterprises use AI-powered security operations to detect threats faster. The study reports a reduction in alert noise and a 35 % increase in analyst efficiency through AI-driven prioritization. Organizations should integrate AI platforms with existing SOAR tools, train analysts on AI outputs, and monitor for false positives.",
     "category": "General",
     "severity": "LOW",
     "source": "Arctic Wolf",
@@ -9602,44 +9653,6 @@ export const news: NewsBrief[] = [
       "7407c5b3",
       "ruby-jwt-hmac-verification-flaw-enables-token-forg-7e8754",
       "ruby-jwt-hmac-verification-flaw-enables-token-forgery"
-    ]
-  },
-  {
-    "slug": "ubuntu-fixes-arbitrary-file-write-flaw-in-action-p-185e031f",
-    "title": "Ubuntu Fixes Arbitrary File Write Flaw in Action Pack",
-    "summary": "A vulnerability in Action Pack Page Caching improperly handles specific request paths during page caching operations. The technical flaw enables a remote attacker to write arbitrary files to the web server, creating potential remote code execution risks. Security teams should apply the updates specified in Ubuntu Security Notice USN-9058-1 to prevent unauthorized file creation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9058-1",
-    "publishedAt": "2026-11-11T18:33:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-fixes-arbitrary-file-write-flaw-in-action-p",
-      "article-185e031f",
-      "185e031f",
-      "ubuntu-fixes-arbitrary-file-write-flaw-in-action-p-7e8757",
-      "ubuntu-fixes-arbitrary-file-write-flaw-in-action-pack"
-    ]
-  },
-  {
-    "slug": "rkhunter-vulnerability-enables-remote-code-executi-7fc0427c",
-    "title": "rkhunter Vulnerability Enables Remote Code Execution",
-    "summary": "The rkhunter utility was found to download mirror updates over an insecure channel, exposing it to potential remote code execution. An attacker could exploit this flaw to inject malicious binaries during the update process, potentially compromising the host system. Ubuntu recommends applying the latest security update and configuring rkhunter to use secure update sources to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9057-1",
-    "publishedAt": "2026-11-11T18:32:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rkhunter-vulnerability-enables-remote-code-executi",
-      "article-7fc0427c",
-      "7fc0427c",
-      "rkhunter-vulnerability-enables-remote-code-executi-7e875b",
-      "rkhunter-vulnerability-enables-remote-code-execution"
     ]
   }
 ];

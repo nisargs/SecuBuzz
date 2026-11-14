@@ -5,13 +5,13 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 19:16:29 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 20:44:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Bundeswehr Removes Grounding on Quantum Systems Drones</title>
       <link>https://secubuzz.com/news/bundeswehr-removes-grounding-on-quantum-systems-dr-1fa9f641</link>
       <guid isPermaLink="true">https://secubuzz.com/news/bundeswehr-removes-grounding-on-quantum-systems-dr-1fa9f641</guid>
-      <description><![CDATA[A server cyber incident prompted the German Bundeswehr to temporarily ground Quantum Systems reconnaissance drones. The incident exposed supply‑chain risk telemetry gaps, though no direct compromise of drone firmware was reported, and no CVE was cited. The Bundeswehr lifted the grounding after remediation and now recommends continuous supply‑chain monitoring for future deployments.]]></description>
+      <description><![CDATA[A server cyber incident prompted the German Bundeswehr to temporarily ground Quantum Systems reconnaissance drones. The incident exposed supply-chain risk telemetry gaps, though no direct compromise of drone firmware was reported, and no CVE was cited. The Bundeswehr lifted the grounding after remediation and now recommends continuous supply-chain monitoring for future deployments.]]></description>
       <pubDate>Sat, 14 Nov 2026 17:45:33 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/quantum-systems-drones-bundeswehr-malware-scare">CyberNews AI</source>
       <category>Vulnerability</category>
@@ -20,16 +20,16 @@
       <title>ESLint Terminates Paid Contributor Program Amid AI Impact</title>
       <link>https://secubuzz.com/news/eslint-terminates-paid-contributor-program-amid-ai-fa9895eb</link>
       <guid isPermaLink="true">https://secubuzz.com/news/eslint-terminates-paid-contributor-program-amid-ai-fa9895eb</guid>
-      <description><![CDATA[ESLint has discontinued its paid contributor program as AI-generated code increases maintenance overhead for open‑source projects. The decision follows broader industry shifts, with projects from Rust to Godot and curl tightening contribution rules to manage quality and security risks. Maintainers are encouraged to adopt stricter code review processes and automated AI‑code detection tools to preserve project integrity.]]></description>
+      <description><![CDATA[ESLint has discontinued its paid contributor program as AI-generated code increases maintenance overhead for open-source projects. The decision follows broader industry shifts, with projects from Rust to Godot and curl tightening contribution rules to manage quality and security risks. Maintainers are encouraged to adopt stricter code review processes and automated AI-code detection tools to preserve project integrity.]]></description>
       <pubDate>Sat, 14 Nov 2026 17:27:29 GMT</pubDate>
       <source url="https://socket.dev/blog/eslint-ends-paid-contributor-program">Socket.dev</source>
       <category>General</category>
     </item>
     <item>
-      <title>Cursor Breach Enables Malicious Claude Code Extension Distribution</title>
-      <link>https://secubuzz.com/news/cursor-breach-enables-malicious-claude-code-extens-cda432ca</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cursor-breach-enables-malicious-claude-code-extens-cda432ca</guid>
-      <description><![CDATA[Cursor confirmed a breach that allowed attackers to distribute a Claude Code extension via marketplace after compromising Fireworks AI credentials. Attackers used stolen API keys to inject the extension, bypassing vetting and delivering malware to users, potentially exposing sensitive data. Cursor released a patch tightening marketplace authentication and advises users to uninstall the rogue extension and reset Fireworks AI credentials.]]></description>
+      <title>Cursor Breach Exposes 5,000 Developers via Malicious Claude Code Extension</title>
+      <link>https://secubuzz.com/news/cursor-breach-exposes-5-000-developers-via-malicio-df4c261a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cursor-breach-exposes-5-000-developers-via-malicio-df4c261a</guid>
+      <description><![CDATA[Attackers compromised Fireworks AI credentials to distribute a malicious Claude Code extension through Cursor's marketplace, targeting developers using the platform. Insufficient third-party extension validation let credential-stealing code run with elevated privileges, exposing roughly 5,000 developers to hidden SSH backdoors. Cursor patched marketplace authentication and urged users to uninstall the rogue extension, revoke compromised keys, and reset Fireworks AI credentials.]]></description>
       <pubDate>Sat, 14 Nov 2026 17:27:25 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/">BleepingComputer</source>
       <category>Breach</category>
@@ -38,7 +38,7 @@
       <title>US Disrupts North Korean FaceStealer Crypto Theft</title>
       <link>https://secubuzz.com/news/us-disrupts-north-korean-facestealer-crypto-theft-d875fe40</link>
       <guid isPermaLink="true">https://secubuzz.com/news/us-disrupts-north-korean-facestealer-crypto-theft-d875fe40</guid>
-      <description><![CDATA[U.S. authorities disrupted a North Korean social‑engineering campaign named FaceStealer that stole over $400 million in cryptocurrency. The operation exploited phishing emails and credential harvesting to gain wallet access, enabling large‑scale transfers to untraceable addresses. Affected actors should immediately revoke compromised credentials, monitor wallet activity, and apply multi‑factor authentication to mitigate future theft.]]></description>
+      <description><![CDATA[U.S. authorities disrupted a North Korean social-engineering campaign named FaceStealer that stole over $400 million in cryptocurrency. The operation exploited phishing emails and credential harvesting to gain wallet access, enabling large-scale transfers to untraceable addresses. Affected actors should immediately revoke compromised credentials, monitor wallet activity, and apply multi-factor authentication to mitigate future theft.]]></description>
       <pubDate>Sat, 14 Nov 2026 15:15:49 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/">BleepingComputer</source>
       <category>Breach</category>
@@ -47,16 +47,16 @@
       <title>AI Overreliance Threatens Cybersecurity Effectiveness</title>
       <link>https://secubuzz.com/news/ai-overreliance-threatens-cybersecurity-effectiven-c2b1397a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-overreliance-threatens-cybersecurity-effectiven-c2b1397a</guid>
-      <description><![CDATA[Overreliance on AI in security operations risks eroding creativity, clear communication, and critical thinking when playbooks are absent. The article argues that automated decision‑making can blind analysts to nuanced threat indicators, reducing adaptive response capabilities. Security teams should balance AI tools with human oversight, maintain playbooks, and regularly validate model outputs to preserve analytical rigor.]]></description>
+      <description><![CDATA[Overreliance on AI in security operations risks eroding creativity, clear communication, and critical thinking when playbooks are absent. The article argues that automated decision-making can blind analysts to nuanced threat indicators, reducing adaptive response capabilities. Security teams should balance AI tools with human oversight, maintain playbooks, and regularly validate model outputs to preserve analytical rigor.]]></description>
       <pubDate>Sat, 14 Nov 2026 14:00:00 GMT</pubDate>
       <source url="https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/">SecurityWeek</source>
       <category>General</category>
     </item>
     <item>
-      <title>CISA Adds UnrealIRCd CVE‑2026‑114713 to KEV Catalog</title>
+      <title>CISA Adds UnrealIRCd CVE-2026-114713 to KEV Catalog</title>
       <link>https://secubuzz.com/news/cisa-adds-unrealircd-cve-2026-114713-to-kev-catalo-bf09696b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-unrealircd-cve-2026-114713-to-kev-catalo-bf09696b</guid>
-      <description><![CDATA[CISA has added the UnrealIRCd CVE‑2026‑114713 vulnerability to its Known Exploited Vulnerabilities (KEV) catalog, alerting federal agencies to the risk. The flaw permits unauthenticated remote code execution via malformed IRC commands, and active exploits have been observed in the wild. Administrators should apply the vendor‑issued patch immediately and verify configuration changes to disable legacy protocols. The vulnerabilities are tracked as CVE-2026-114713, CVE-2026-123039.]]></description>
+      <description><![CDATA[CISA has added the UnrealIRCd CVE-2026-114713 vulnerability to its Known Exploited Vulnerabilities (KEV) catalog, alerting federal agencies to the risk. The flaw permits unauthenticated remote code execution via malformed IRC commands, and active exploits have been observed in the wild. Administrators should apply the vendor-issued patch immediately and verify configuration changes to disable legacy protocols.]]></description>
       <pubDate>Sat, 14 Nov 2026 12:38:35 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html">The Hacker News</source>
       <category>CVE</category>
@@ -65,7 +65,7 @@
       <title>Hackers Use ARTEX AI Agents for Rapid Privileged Access</title>
       <link>https://secubuzz.com/news/hackers-use-artex-ai-agents-for-rapid-privileged-a-bb287d22</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-artex-ai-agents-for-rapid-privileged-a-bb287d22</guid>
-      <description><![CDATA[Hackers use ARTEX AI agents to automate network attacks, reaching privileged access in under three hours. The agents combine stolen credentials, exposed applications, and cloud permissions, reducing the time from discovery to compromise. Security teams should monitor for ARTEX activity, enforce least‑privilege cloud permissions, patch exposed applications promptly, and implement multi‑factor authentication.]]></description>
+      <description><![CDATA[Hackers use ARTEX AI agents to automate network attacks, reaching privileged access in under three hours. The agents combine stolen credentials, exposed applications, and cloud permissions, reducing the time from discovery to compromise. Security teams should monitor for ARTEX activity, enforce least-privilege cloud permissions, patch exposed applications promptly, and implement multi-factor authentication.]]></description>
       <pubDate>Sat, 14 Nov 2026 11:21:17 GMT</pubDate>
       <source url="https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage/">Cyber Security News</source>
       <category>Vulnerability</category>
@@ -74,7 +74,7 @@
       <title>Apple Unveils Secure Exclaves for Camera and Microphone Data</title>
       <link>https://secubuzz.com/news/apple-unveils-secure-exclaves-for-camera-and-micro-5fd804ca</link>
       <guid isPermaLink="true">https://secubuzz.com/news/apple-unveils-secure-exclaves-for-camera-and-micro-5fd804ca</guid>
-      <description><![CDATA[Apple revealed Secure Exclaves that isolate camera and microphone data from the main OS on HomeView and new iPhones. The enclave processes ambient sensor streams, preventing core OS access to raw data and narrowing the privacy‑exploit surface. Developers should use the Secure Enclave API for sensitive data and users should keep devices updated for privacy protection.]]></description>
+      <description><![CDATA[Apple revealed Secure Exclaves that isolate camera and microphone data from the main OS on HomeView and new iPhones. The enclave processes ambient sensor streams, preventing core OS access to raw data and narrowing the privacy-exploit surface. Developers should use the Secure Enclave API for sensitive data and users should keep devices updated for privacy protection.]]></description>
       <pubDate>Sat, 14 Nov 2026 11:00:00 GMT</pubDate>
       <source url="https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/">SecurityWeek</source>
       <category>General</category>
@@ -98,13 +98,13 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>FAA Ground Stop Likely Software Update, No Hacking Evidence</title>
-      <link>https://secubuzz.com/news/faa-ground-stop-likely-software-update-no-hacking-5f2501a2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/faa-ground-stop-likely-software-update-no-hacking-5f2501a2</guid>
-      <description><![CDATA[The nationwide FAA ground stop, triggered by a software update, shows no evidence of a cyberattack behind the outage. Officials attribute the disruption to a misconfigured update rollout, with no signs of malicious intrusion detected by the FBI. Air traffic control operators should verify update integrity and monitor for anomalous behavior, while the FAA continues to investigate the incident.]]></description>
+      <title>FAA Ground Stop Caused by L3Harris Software Update Misconfiguration</title>
+      <link>https://secubuzz.com/news/faa-ground-stop-caused-by-l3harris-software-update-2daad0e8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/faa-ground-stop-caused-by-l3harris-software-update-2daad0e8</guid>
+      <description><![CDATA[A nationwide FAA ground stop halted flights after a software update from L3Harris triggered a critical outage. The outage stemmed from a misconfigured update rollout, with no evidence of a cyberattack or malicious intrusion. The FBI is probing the update for software flaws, while the FAA urges operators to verify integrity and monitor for anomalies.]]></description>
       <pubDate>Sat, 14 Nov 2026 08:40:22 GMT</pubDate>
       <source url="https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/">SecurityWeek</source>
-      <category>General</category>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>ChromeOS Stable Channel Update M-156 Released</title>
@@ -116,10 +116,10 @@
       <category>General</category>
     </item>
     <item>
-      <title>N‑Central Zero‑Day RCE Exploited by 4EverAble2Shell</title>
+      <title>N-Central Zero-Day RCE Exploited by 4EverAble2Shell</title>
       <link>https://secubuzz.com/news/n-central-zero-day-rce-exploited-by-4everable2shel-f8fdae3d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/n-central-zero-day-rce-exploited-by-4everable2shel-f8fdae3d</guid>
-      <description><![CDATA[Threat actors exploit CVE-2026-90436, a zero‑day RCE in N‑able N‑Central servers, using the 4EverAble2Shell tool in the wild. The flaw permits unauthenticated code execution, creating a high‑severity risk for N‑Central users worldwide. Apply the vendor’s patch, deploy the Sigma rules, and monitor Apache Axis telemetry to detect and block the exploitation.]]></description>
+      <description><![CDATA[Threat actors exploit CVE-2026-90436, a zero-day RCE in N-able N-Central servers, using the 4EverAble2Shell tool in the wild. The flaw permits unauthenticated code execution, creating a high-severity risk for N-Central users worldwide. Apply the vendor’s patch, deploy the Sigma rules, and monitor Apache Axis telemetry to detect and block the exploitation.]]></description>
       <pubDate>Sat, 14 Nov 2026 03:05:27 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/cve-2026-90436-n-central-4everable2shell-zero-day-rce">CyberNews AI</source>
       <category>CVE</category>
@@ -128,7 +128,7 @@
       <title>SignDrop Zero-Day Enables System Privileges via Defender RPC</title>
       <link>https://secubuzz.com/news/signdrop-zero-day-enables-system-privileges-via-de-2f66fc9f</link>
       <guid isPermaLink="true">https://secubuzz.com/news/signdrop-zero-day-enables-system-privileges-via-de-2f66fc9f</guid>
-      <description><![CDATA[SignDrop zero‑day exploits Windows CLFS via Defender RPC to elevate privileges to System level. The flaw allows remote code execution without authentication, enabling attackers to bypass security controls. Microsoft has released a patch; security teams should apply it immediately, monitor Defender telemetry, and review Sigma hunting rules for early detection.]]></description>
+      <description><![CDATA[SignDrop zero-day exploits Windows CLFS via Defender RPC to elevate privileges to System level. The flaw allows remote code execution without authentication, enabling attackers to bypass security controls. Microsoft has released a patch; security teams should apply it immediately, monitor Defender telemetry, and review Sigma hunting rules for early detection.]]></description>
       <pubDate>Sat, 14 Nov 2026 02:41:38 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/signdrop-zero-day-windows-clfs-privilege-escalation">CyberNews AI</source>
       <category>Vulnerability</category>
@@ -164,7 +164,7 @@
       <title>SCKit Exploits ScreenConnect for Remote Technician Access</title>
       <link>https://secubuzz.com/news/sckit-exploits-screenconnect-for-remote-technician-e6c5e832</link>
       <guid isPermaLink="true">https://secubuzz.com/news/sckit-exploits-screenconnect-for-remote-technician-e6c5e832</guid>
-      <description><![CDATA[SCKit leveraged the legitimate ScreenConnect platform to infiltrate target systems and capture technician sessions. This abuse bypasses standard authentication, enabling attackers to execute commands, exfiltrate data, and maintain persistence. Defenders should enforce least‑privilege access, monitor for anomalous ScreenConnect activity, and deploy Defender XDR hunting rules to detect and block actively.]]></description>
+      <description><![CDATA[SCKit leveraged the legitimate ScreenConnect platform to infiltrate target systems and capture technician sessions. This abuse bypasses standard authentication, enabling attackers to execute commands, exfiltrate data, and maintain persistence. Defenders should enforce least-privilege access, monitor for anomalous ScreenConnect activity, and deploy Defender XDR hunting rules to detect and block actively.]]></description>
       <pubDate>Fri, 13 Nov 2026 21:31:44 GMT</pubDate>
       <source url="https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/">Microsoft Security</source>
       <category>General</category>
@@ -173,16 +173,16 @@
       <title>SentinelOne AI Detects Autonomous ARTEX Attacks</title>
       <link>https://secubuzz.com/news/sentinelone-ai-detects-autonomous-artex-attacks-d429a6af</link>
       <guid isPermaLink="true">https://secubuzz.com/news/sentinelone-ai-detects-autonomous-artex-attacks-d429a6af</guid>
-      <description><![CDATA[SentinelOne demonstrates its Behavioral AI, Singularity AI SIEM, and Purple AI modules detecting autonomous ARTEX attacks across cloud, identity, and endpoint platforms. The framework uses machine‑learning models trained on ARTEX command‑and‑control traffic, enabling real‑time threat isolation without manual signatures. Teams should integrate these AI modules into SIEM pipelines to improve visibility and accelerate response to AI‑driven threats.]]></description>
+      <description><![CDATA[SentinelOne demonstrates its Behavioral AI, Singularity AI SIEM, and Purple AI modules detecting autonomous ARTEX attacks across cloud, identity, and endpoint platforms. The framework uses machine-learning models trained on ARTEX command-and-control traffic, enabling real-time threat isolation without manual signatures. Teams should integrate these AI modules into SIEM pipelines to improve visibility and accelerate response to AI-driven threats.]]></description>
       <pubDate>Fri, 13 Nov 2026 21:23:19 GMT</pubDate>
       <source url="https://www.sentinelone.com/blog/artex-unmasked-the-rise-of-ai-powered-artex-in-cybercrime-espionage/">SentinelOne</source>
       <category>General</category>
     </item>
     <item>
-      <title>AI‑Enabled Pentest Platforms Lower Attack Skill Threshold</title>
+      <title>AI-Enabled Pentest Platforms Lower Attack Skill Threshold</title>
       <link>https://secubuzz.com/news/ai-enabled-pentest-platforms-lower-attack-skill-th-0112375a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-enabled-pentest-platforms-lower-attack-skill-th-0112375a</guid>
-      <description><![CDATA[AI‑enabled pentest and red‑team frameworks automate reconnaissance, vulnerability testing, and follow‑on actions, reducing the skill required for attackers. These tools chain operations seamlessly, enabling rapid exploitation cycles and accelerating intrusion timelines when misused by threat actors. Security teams should assess the risk of adopting such platforms, enforce strict access controls, and monitor for anomalous usage patterns.]]></description>
+      <description><![CDATA[AI-enabled pentest and red-team frameworks automate reconnaissance, vulnerability testing, and follow-on actions, reducing the skill required for attackers. These tools chain operations seamlessly, enabling rapid exploitation cycles and accelerating intrusion timelines when misused by threat actors. Security teams should assess the risk of adopting such platforms, enforce strict access controls, and monitor for anomalous usage patterns.]]></description>
       <pubDate>Fri, 13 Nov 2026 20:57:13 GMT</pubDate>
       <source url="https://blog.talosintelligence.com/artex-and-beyond/">Cisco Talos</source>
       <category>General</category>
@@ -191,7 +191,7 @@
       <title>ArcticRAT Expands to Full Device Control Using AI</title>
       <link>https://secubuzz.com/news/arcticrat-expands-to-full-device-control-using-ai-3fd9c401</link>
       <guid isPermaLink="true">https://secubuzz.com/news/arcticrat-expands-to-full-device-control-using-ai-3fd9c401</guid>
-      <description><![CDATA[The Android malware ArcticRAT has broadened its scope from crypto‑currency theft to full device control, enabling attackers to harvest and analyze victim finances. The gang now incorporates AI techniques to profile stolen data, increasing the precision of targeted financial exploitation. Security teams should update Android defenses, monitor for ArcticRAT indicators, and employ AI‑based anomaly detection to mitigate the threat.]]></description>
+      <description><![CDATA[The Android malware ArcticRAT has broadened its scope from crypto-currency theft to full device control, enabling attackers to harvest and analyze victim finances. The gang now incorporates AI techniques to profile stolen data, increasing the precision of targeted financial exploitation. Security teams should update Android defenses, monitor for ArcticRAT indicators, and employ AI-based anomaly detection to mitigate the threat.]]></description>
       <pubDate>Fri, 13 Nov 2026 20:20:27 GMT</pubDate>
       <source url="https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai">Dark Reading</source>
       <category>General</category>
@@ -200,7 +200,7 @@
       <title>Cloudflare Releases Kitesurf Browser Engine Open Source</title>
       <link>https://secubuzz.com/news/cloudflare-releases-kitesurf-browser-engine-open-s-503d6c59</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-releases-kitesurf-browser-engine-open-s-503d6c59</guid>
-      <description><![CDATA[Cloudflare has open‑sourced Kitesurf, an experimental browser engine designed for AI agents, allowing developers to inspect, run, and deploy it locally or on Cloudflare Workers. The source code is available on GitHub, enabling community contributions and custom deployments in edge computing environments. Security teams should review the repository for potential vulnerabilities and consider integrating Kitesurf into their AI‑agent testing pipelines.]]></description>
+      <description><![CDATA[Cloudflare has open-sourced Kitesurf, an experimental browser engine designed for AI agents, allowing developers to inspect, run, and deploy it locally or on Cloudflare Workers. The source code is available on GitHub, enabling community contributions and custom deployments in edge computing environments. Security teams should review the repository for potential vulnerabilities and consider integrating Kitesurf into their AI-agent testing pipelines.]]></description>
       <pubDate>Fri, 13 Nov 2026 20:20:21 GMT</pubDate>
       <source url="https://blog.cloudflare.com/kitesurf-open-source/">Cloudflare Security</source>
       <category>General</category>
@@ -209,7 +209,7 @@
       <title>Osaka City Alerts Residents to Phishing After Data Breach</title>
       <link>https://secubuzz.com/news/osaka-city-alerts-residents-to-phishing-after-data-a2e7db11</link>
       <guid isPermaLink="true">https://secubuzz.com/news/osaka-city-alerts-residents-to-phishing-after-data-a2e7db11</guid>
-      <description><![CDATA[Osaka City reported a data breach affecting approximately one million residents, prompting a city‑wide warning. The breach exposed personal information, and officials cautioned residents against phishing emails that appear to originate from municipal services. Security teams should verify email authenticity, update credentials, and monitor for unauthorized account activity to mitigate potential exploitation.]]></description>
+      <description><![CDATA[Osaka City reported a data breach affecting approximately one million residents, prompting a city-wide warning. The breach exposed personal information, and officials cautioned residents against phishing emails that appear to originate from municipal services. Security teams should verify email authenticity, update credentials, and monitor for unauthorized account activity to mitigate potential exploitation.]]></description>
       <pubDate>Fri, 13 Nov 2026 19:43:00 GMT</pubDate>
       <source url="https://therecord.media/city-of-osaka-japan-email-data-breach">The Record</source>
       <category>Breach</category>
@@ -227,7 +227,7 @@
       <title>Cloudflare Warns of AI-Powered Pen Testing Threats</title>
       <link>https://secubuzz.com/news/cloudflare-warns-of-ai-powered-pen-testing-threats-ed7d3290</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-warns-of-ai-powered-pen-testing-threats-ed7d3290</guid>
-      <description><![CDATA[Cloudflare reports AI‑orchestrated penetration testing platforms like ARTEX can launch attacks against exposed enterprise infrastructure. These platforms automate reconnaissance, exploit publicly disclosed vulnerabilities, and harvest credentials, creating a scalable threat vector that bypasses manual testing. Cloudflare advises continuous monitoring, hardened segmentation, and AI‑driven anomaly detection to mitigate critical orchestrated attacks.]]></description>
+      <description><![CDATA[Cloudflare reports AI-orchestrated penetration testing platforms like ARTEX can launch attacks against exposed enterprise infrastructure. These platforms automate reconnaissance, exploit publicly disclosed vulnerabilities, and harvest credentials, creating a scalable threat vector that bypasses manual testing. Cloudflare advises continuous monitoring, hardened segmentation, and AI-driven anomaly detection to mitigate critical orchestrated attacks.]]></description>
       <pubDate>Fri, 13 Nov 2026 19:26:07 GMT</pubDate>
       <source url="https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/">Cloudflare Security</source>
       <category>General</category>
@@ -254,7 +254,7 @@
       <title>Weekly Cybersecurity Roundup: Crypto Scams, Turla, Railway Breach</title>
       <link>https://secubuzz.com/news/weekly-cybersecurity-roundup-crypto-scams-turla-ra-2be048f4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/weekly-cybersecurity-roundup-crypto-scams-turla-ra-2be048f4</guid>
-      <description><![CDATA[This week, law enforcement dismantled several crypto‑scam operations and seized associated malware infrastructure. Meanwhile, the Turla APT group deployed the Cereal spyware to target government entities, while attackers breached Railway’s systems to exfiltrate AI research. Security teams should monitor for Cereal indicators, review Railway security controls, and stay alert to emerging crypto‑scam tactics.]]></description>
+      <description><![CDATA[This week, law enforcement dismantled several crypto-scam operations and seized associated malware infrastructure. Meanwhile, the Turla APT group deployed the Cereal spyware to target government entities, while attackers breached Railway’s systems to exfiltrate AI research. Security teams should monitor for Cereal indicators, review Railway security controls, and stay alert to emerging crypto-scam tactics.]]></description>
       <pubDate>Fri, 13 Nov 2026 17:46:55 GMT</pubDate>
       <source url="https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-46-8">SentinelOne</source>
       <category>General</category>
@@ -287,10 +287,10 @@
       <category>General</category>
     </item>
     <item>
-      <title>Green Agent: Remediation Plan for Internet‑Facing Container</title>
+      <title>Green Agent: Remediation Plan for Internet-Facing Container</title>
       <link>https://secubuzz.com/news/green-agent-remediation-plan-for-internet-facing-c-0f7616b0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/green-agent-remediation-plan-for-internet-facing-c-0f7616b0</guid>
-      <description><![CDATA[Wiz Research’s Green Agent case study examines an internet‑facing container that exposed sensitive data. The team identified misconfigurations and privilege escalations, then crafted a remediation plan that balanced security urgency with business continuity, producing ready‑to‑merge pull requests. Security teams can adopt the outlined mitigations to harden similar container deployments in production.]]></description>
+      <description><![CDATA[Wiz Research’s Green Agent case study examines an internet-facing container that exposed sensitive data. The team identified misconfigurations and privilege escalations, then crafted a remediation plan that balanced security urgency with business continuity, producing ready-to-merge pull requests. Security teams can adopt the outlined mitigations to harden similar container deployments in production.]]></description>
       <pubDate>Fri, 13 Nov 2026 17:05:02 GMT</pubDate>
       <source url="https://www.wiz.io/blog/inside-green-agent-investigation">Wiz Research</source>
       <category>General</category>
@@ -335,7 +335,7 @@
       <title>OpenAI Launches ChatGPT Wallet for Agent Payments</title>
       <link>https://secubuzz.com/news/openai-launches-chatgpt-wallet-for-agent-payments-4e48330f</link>
       <guid isPermaLink="true">https://secubuzz.com/news/openai-launches-chatgpt-wallet-for-agent-payments-4e48330f</guid>
-      <description><![CDATA[OpenAI launched ChatGPT Wallet, letting agents pay with stand‑in card numbers while hiding user card details. The wallet integrates with American Express, Mastercard, and Visa, operating within OpenAI's dot environment, the user’s dot completes purchases, and merchants may need to adjust for agent transactions. Users should review merchant compatibility and monitor for unintended blocks; OpenAI advises merchants to handle adjustments.]]></description>
+      <description><![CDATA[OpenAI launched ChatGPT Wallet, letting agents pay with stand-in card numbers while hiding user card details. The wallet integrates with American Express, Mastercard, and Visa, operating within OpenAI's dot environment, the user’s dot completes purchases, and merchants may need to adjust for agent transactions. Users should review merchant compatibility and monitor for unintended blocks; OpenAI advises merchants to handle adjustments.]]></description>
       <pubDate>Fri, 13 Nov 2026 16:15:25 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/13/openai-chatgpt-wallet/">Help Net Security</source>
       <category>General</category>
@@ -353,7 +353,7 @@
       <title>Chromium Integer Overflow Affects Microsoft Edge</title>
       <link>https://secubuzz.com/news/chromium-integer-overflow-affects-microsoft-edge-9ac0c451</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chromium-integer-overflow-affects-microsoft-edge-9ac0c451</guid>
-      <description><![CDATA[A Chromium integer overflow (CVE-2026-126876) impacts Microsoft Edge (Chromium-based) via its Chromium code ingestion. The flaw lets an attacker overflow a 32‑bit counter during URL parsing, potentially corrupting memory and enabling arbitrary code execution; no public PoC yet. Microsoft has fixed the issue in Edge releases; users should update to the version or apply the patch from Chrome release notes.]]></description>
+      <description><![CDATA[A Chromium integer overflow (CVE-2026-126876) impacts Microsoft Edge (Chromium-based) via its Chromium code ingestion. The flaw lets an attacker overflow a 32-bit counter during URL parsing, potentially corrupting memory and enabling arbitrary code execution; no public PoC yet. Microsoft has fixed the issue in Edge releases; users should update to the version or apply the patch from Chrome release notes.]]></description>
       <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126876">Microsoft MSRC</source>
       <category>CVE</category>
@@ -362,7 +362,7 @@
       <title>Chromium Information Leak Affects Microsoft Edge</title>
       <link>https://secubuzz.com/news/chromium-information-leak-affects-microsoft-edge-c0c1ee10</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chromium-information-leak-affects-microsoft-edge-c0c1ee10</guid>
-      <description><![CDATA[A Chromium information‑leak flaw (CVE-2026-126878) targets Microsoft Edge (Chromium-based) through its Chromium code ingestion. The flaw lets an attacker read sensitive data from the browser’s memory during URL processing, potentially exposing credentials or session tokens; no public exploit reported. Microsoft has fixed the issue in Edge releases; users should update to build or apply the patch from Chrome release notes.]]></description>
+      <description><![CDATA[A Chromium information-leak flaw (CVE-2026-126878) targets Microsoft Edge (Chromium-based) through its Chromium code ingestion. The flaw lets an attacker read sensitive data from the browser’s memory during URL processing, potentially exposing credentials or session tokens; no public exploit reported. Microsoft has fixed the issue in Edge releases; users should update to build or apply the patch from Chrome release notes.]]></description>
       <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126878">Microsoft MSRC</source>
       <category>CVE</category>
