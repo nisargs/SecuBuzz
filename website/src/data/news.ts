@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "bundeswehr-removes-grounding-on-quantum-systems-dr-1fa9f641",
+    "title": "Bundeswehr Removes Grounding on Quantum Systems Drones",
+    "summary": "A server cyber incident prompted the German Bundeswehr to temporarily ground Quantum Systems reconnaissance drones. The incident exposed supply‑chain risk telemetry gaps, though no direct compromise of drone firmware was reported, and no CVE was cited. The Bundeswehr lifted the grounding after remediation and now recommends continuous supply‑chain monitoring for future deployments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/quantum-systems-drones-bundeswehr-malware-scare",
+    "publishedAt": "2026-11-14T17:45:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bundeswehr-removes-grounding-on-quantum-systems-dr",
+      "article-1fa9f641",
+      "1fa9f641",
+      "bundeswehr-removes-grounding-on-quantum-systems-dr-240f34",
+      "bundeswehr-removes-grounding-on-quantum-systems-drones"
+    ]
+  },
+  {
+    "slug": "eslint-terminates-paid-contributor-program-amid-ai-fa9895eb",
+    "title": "ESLint Terminates Paid Contributor Program Amid AI Impact",
+    "summary": "ESLint has discontinued its paid contributor program as AI-generated code increases maintenance overhead for open‑source projects. The decision follows broader industry shifts, with projects from Rust to Godot and curl tightening contribution rules to manage quality and security risks. Maintainers are encouraged to adopt stricter code review processes and automated AI‑code detection tools to preserve project integrity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/eslint-ends-paid-contributor-program",
+    "publishedAt": "2026-11-14T17:27:29.411Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eslint-terminates-paid-contributor-program-amid-ai",
+      "article-fa9895eb",
+      "fa9895eb",
+      "eslint-terminates-paid-contributor-program-amid-ai-31073e",
+      "eslint-terminates-paid-contributor-program-amid-ai-impact"
+    ]
+  },
+  {
     "slug": "cursor-breach-enables-malicious-claude-code-extens-cda432ca",
     "title": "Cursor Breach Enables Malicious Claude Code Extension Distribution",
     "summary": "Cursor confirmed a breach that allowed attackers to distribute a Claude Code extension via marketplace after compromising Fireworks AI credentials. Attackers used stolen API keys to inject the extension, bypassing vetting and delivering malware to users, potentially exposing sensitive data. Cursor released a patch tightening marketplace authentication and advises users to uninstall the rogue extension and reset Fireworks AI credentials.",
@@ -1953,21 +1991,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "geovision-cameras-used-to-deploy-xmrig-miner-3ee0cef0",
-    "title": "GeoVision Cameras Used to Deploy XMRig Miner",
-    "summary": "Attackers abused publicly exposed GeoVision camera software at 13 organizations, disabling Defender and deploying XMRig cryptominer. The vulnerability permits remote code execution via exposed management interfaces, enabling malware installation without user interaction and causing unauthorized cryptocurrency mining. Security teams should patch GeoVision firmware, restrict network access to camera interfaces, and monitor for anomalous mining processes.",
+    "slug": "geovision-cameras-exploited-to-deploy-xmrig-crypto-82b4b717",
+    "title": "GeoVision Cameras Exploited to Deploy XMRig Cryptominers",
+    "summary": "Huntress reported attackers exploiting publicly exposed GeoVision surveillance cameras at 13 organizations to deploy XMRig cryptominers. The attacks abuse a firmware logic flaw enabling unauthorized driver loading via BYOVD and IFEO hijacking, disabling Defender and permitting remote code execution without user interaction. Administrators should patch firmware, disable BYOVD support, restrict management interface access, and monitor for unauthorized driver activity.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Huntress",
     "sourceUrl": "https://www.huntress.com/blog/geovision-camera-software-xmrig-cryptominer",
     "publishedAt": "2026-11-13T14:00:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/geovision-surveillance-software-xmrig-byovd-attacks"
+      }
+    ],
     "aliases": [
-      "geovision-cameras-used-to-deploy-xmrig-miner",
-      "article-3ee0cef0",
-      "3ee0cef0",
-      "geovision-cameras-used-to-deploy-xmrig-miner-4742ec"
+      "geovision-cameras-exploited-to-deploy-xmrig-crypto",
+      "article-82b4b717",
+      "82b4b717",
+      "geovision-cameras-exploited-to-deploy-xmrig-crypto-4742ec",
+      "geovision-cameras-exploited-to-deploy-xmrig-cryptominers"
     ]
   },
   {
@@ -2419,21 +2463,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "354-dark-web-vendors-arrested-in-operation-tornado-47248c71",
-    "title": "354 Dark Web Vendors Arrested in Operation TorNado",
-    "summary": "Europol and police in 14 countries arrested 354 dark web vendors and buyers during Operation TorNado, which operated from May 2025 to October 2026. The crackdown targeted users of five marketplaces—Archetyp, Bohemia, Nemesis, Kingdom, and Tor2Door—and seized funds reported by Europol. Law enforcement also pursued vendors and buyers on forums, single‑vendor shops, and encrypted channels to dismantle the supply chain.",
+    "slug": "europol-seizes-232m-and-arrests-354-vendors-in-ope-665b3e06",
+    "title": "Europol Seizes $232M and Arrests 354 Vendors in Operation TorNado",
+    "summary": "Europol and international police forces executed Operation TorNado, targeting five dark‑web marketplaces—Archetyp, Bohemia, Nemesis, Kingdom, and Tor2Door—seizing $232 million in illicit assets. The crackdown arrested 354 vendors and buyers, dismantling supply chains for counterfeit goods, stolen credentials, and ransomware infrastructure. Law enforcement urged security teams to monitor dark‑web forums for residual activity and update threat intelligence feeds accordingly.",
     "category": "General",
-    "severity": "LOW",
+    "severity": "HIGH",
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/europol-dark-web-arrests-cybercrime/",
     "publishedAt": "2026-11-13T11:06:29.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/operation-tornado-dark-web-marketplaces-global-arrests"
+      }
+    ],
     "aliases": [
-      "354-dark-web-vendors-arrested-in-operation-tornado",
-      "article-47248c71",
-      "47248c71",
-      "354-dark-web-vendors-arrested-in-operation-tornado-5b7edd"
+      "europol-seizes-232m-and-arrests-354-vendors-in-ope",
+      "article-665b3e06",
+      "665b3e06",
+      "europol-seizes-232m-and-arrests-354-vendors-in-ope-5b7edd",
+      "europol-seizes-232m-and-arrests-354-vendors-in-operation-tor"
     ]
   },
   {
@@ -2458,14 +2508,19 @@ export const news: NewsBrief[] = [
   {
     "slug": "operation-endgame-seizes-gootloader-castlerat-stea-407a3717",
     "title": "Operation Endgame Seizes Gootloader, CastleRAT, StealC Servers",
-    "summary": "International police forces dismantled servers powering Gootloader, CastleRAT, and StealC malware, halting credential theft and ransomware campaigns. The operation uncovered 6.4 million stolen logins from over 40,000 victims, exposing widespread credential compromise across multiple sectors. Law‑enforcement agencies now hold the compromised credentials, and affected organizations should enforce multi‑factor authentication and reset passwords.",
-    "category": "Breach",
+    "summary": "Police dismantled Operation Endgame, seizing 235 servers, 257 domains, and 6.4 million stolen logins from the Gootloader ransomware, CastleRAT, and StealC credential‑stealing networks. The seizure exposed compromised credentials, halted phishing and ransomware campaigns, and disrupted the command‑and‑control infrastructure. Affected organizations must verify compromised accounts, enforce multi‑factor authentication, reset passwords, and update access controls.",
+    "category": "Ransomware",
     "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
     "publishedAt": "2026-11-13T10:55:03.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/operation-endgame-gootloader-castlerat-stealc-takedown"
+      }
+    ],
     "aliases": [
       "operation-endgame-seizes-gootloader-castlerat-stea",
       "article-407a3717",
@@ -9564,43 +9619,6 @@ export const news: NewsBrief[] = [
       "7fc0427c",
       "rkhunter-vulnerability-enables-remote-code-executi-7e875b",
       "rkhunter-vulnerability-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "usn-9056-1-prosody-community-modules-vulnerability-9f9f99e0",
-    "title": "USN-9056-1: Prosody Community Modules vulnerability",
-    "summary": "It was discovered that the LDAP authentication modules in Prosody Community Modules did not fully verify XMPP addresses when checking for administrator privileges. A remote attacker could possibly use this issue to gain administrator privileges.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9056-1",
-    "publishedAt": "2026-11-11T18:32:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9056-1-prosody-community-modules-vulnerability",
-      "article-9f9f99e0",
-      "9f9f99e0",
-      "usn-9056-1-prosody-community-modules-vulnerability-7e875f"
-    ]
-  },
-  {
-    "slug": "ubuntu-patches-type-confusion-flaw-in-pecl-http-ex-86863f57",
-    "title": "Ubuntu Patches Type Confusion Flaw in pecl_http Extension",
-    "summary": "Ubuntu issued a security notice addressing a parameter handling vulnerability in the pecl_http PHP extension. The root cause involves a type confusion mechanism that allows remote attackers to cause PHP crashes or potentially execute arbitrary code. Administrators using affected Ubuntu systems should apply the USN-9055-1 security updates to mitigate denial of service and execution risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9055-1",
-    "publishedAt": "2026-11-11T18:32:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-patches-type-confusion-flaw-in-pecl-http-ex",
-      "article-86863f57",
-      "86863f57",
-      "ubuntu-patches-type-confusion-flaw-in-pecl-http-ex-7e8763",
-      "ubuntu-patches-type-confusion-flaw-in-pecl-http-extension"
     ]
   }
 ];
