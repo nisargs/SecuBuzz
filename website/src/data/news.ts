@@ -5387,6 +5387,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "google-chrome-vulnerabilities-affect-stable-channe-a897f5ba",
+    "title": "Google Chrome Vulnerabilities Affect Stable Channel Versions",
+    "summary": "Google Chrome stable channel versions before 157.0.8103.78/79 on Windows/Mac and 157.0.8103.78 on Linux contain undisclosed vulnerabilities that could enable remote code execution. The advisory does not disclose the flaw’s mechanism, but it warns of potential exploitation that could compromise user data or system integrity. Google urges users to review the advisory and install released patches to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1157",
+    "publishedAt": "2026-11-12T20:39:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-chrome-vulnerabilities-affect-stable-channe",
+      "article-a897f5ba",
+      "a897f5ba",
+      "google-chrome-vulnerabilities-affect-stable-channe-170ca3",
+      "google-chrome-vulnerabilities-affect-stable-channel-versions"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99846-important-pki-deps-10-6-security-b-9d58449f",
     "title": "RHSA-2026:99846: Important: pki-deps:10.6 security, bug fix, and enhancement update",
     "summary": "An update for the pki-deps:10.6 module is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
@@ -5439,6 +5458,25 @@ export const news: NewsBrief[] = [
       "article-50925d94",
       "50925d94",
       "red-hat-releases-mysql-8-4-security-update-37d669"
+    ]
+  },
+  {
+    "slug": "node-js-vulnerabilities-affect-versions-prior-to-2-6b138317",
+    "title": "Node.js Vulnerabilities Affect Versions Prior to 26.13.1",
+    "summary": "Node.js versions prior to v24.22.3, v26.13.1, and v22.23.5 contain undisclosed vulnerabilities that could allow remote code execution or privilege escalation. The advisory does not reveal the specific flaw, but warns that exploitation could compromise application data or system integrity. Node.js recommends reviewing the advisory and applying available patches as soon as they are released to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/nodejs-security-advisory-av26-1156",
+    "publishedAt": "2026-11-12T20:35:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "node-js-vulnerabilities-affect-versions-prior-to-2",
+      "article-6b138317",
+      "6b138317",
+      "node-js-vulnerabilities-affect-versions-prior-to-2-0bd8f1",
+      "node-js-vulnerabilities-affect-versions-prior-to-26-13-1"
     ]
   },
   {
@@ -5888,6 +5926,28 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "citrix-netscaler-vulnerabilities-affect-multiple-p-16b51358",
+    "title": "Citrix NetScaler Vulnerabilities Affect Multiple Products",
+    "summary": "Citrix NetScaler ADC, Gateway, Console, and Secure Access Client products prior to versions contain CVE-2026-120869 and CVE-2026-118269 vulnerabilities that could allow remote code execution. The advisory does not disclose the exploitation mechanism, but warns that the flaws could compromise system integrity or allow unauthorized access. Citrix recommends reviewing the advisory and applying available patches to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/citrix-security-advisory-av26-1150",
+    "publishedAt": "2026-11-12T18:37:14.000Z",
+    "cves": [
+      "CVE-2026-120869",
+      "CVE-2026-118269"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "citrix-netscaler-vulnerabilities-affect-multiple-p",
+      "article-16b51358",
+      "16b51358",
+      "citrix-netscaler-vulnerabilities-affect-multiple-p-32a708",
+      "citrix-netscaler-vulnerabilities-affect-multiple-products"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99763-critical-red-hat-single-sign-on-7-9a27c18e",
     "title": "RHSA-2026:99763: Critical: Red Hat Single Sign-On 7.6.14 security update",
     "summary": "A security update is now available for Red Hat Single Sign-On 7.6 from the Customer Portal. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -5904,6 +5964,25 @@ export const news: NewsBrief[] = [
       "9a27c18e",
       "rhsa-2026-99763-critical-red-hat-single-sign-on-7-37d668",
       "rhsa-2026-99763-critical-red-hat-single-sign-on-7-6-14-secur"
+    ]
+  },
+  {
+    "slug": "apple-os-vulnerabilities-affect-ios-macos-visionos-f2004518",
+    "title": "Apple OS Vulnerabilities Affect iOS, macOS, visionOS, watchOS",
+    "summary": "Apple iOS, iPadOS, macOS, visionOS, and watchOS versions before 18.7.12, 26.7.3, 27.2.1, 15.8.3, and 26.6.1 contain undisclosed vulnerabilities that could enable remote code execution. The advisory does not disclose the flaw’s mechanism, but warns that exploitation could compromise user data or system integrity. Apple advises users to review the advisory and install any released patches promptly to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/apple-security-advisory-av26-1149",
+    "publishedAt": "2026-11-12T18:35:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-os-vulnerabilities-affect-ios-macos-visionos",
+      "article-f2004518",
+      "f2004518",
+      "apple-os-vulnerabilities-affect-ios-macos-visionos-337e98",
+      "apple-os-vulnerabilities-affect-ios-macos-visionos-watchos"
     ]
   },
   {
@@ -9594,82 +9673,6 @@ export const news: NewsBrief[] = [
       "d1633deb",
       "emudhra-revokes-eight-ca-certificates-after-key-mi-38f63a",
       "emudhra-revokes-eight-ca-certificates-after-key-mishap"
-    ]
-  },
-  {
-    "slug": "ai-enhances-cyber-resilience-competition-cbdd8757",
-    "title": "AI Enhances Cyber Resilience Competition",
-    "summary": "The article argues that AI technologies amplify both threat capabilities and defensive options, making rapid recovery a competitive advantage. It highlights how machine learning can detect anomalies faster, yet also enables adversaries to craft more sophisticated phishing and malware campaigns. Security teams should adopt AI-driven monitoring, continuous testing, and adaptive response frameworks to mitigate evolving risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience",
-    "publishedAt": "2026-11-11T21:20:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-enhances-cyber-resilience-competition",
-      "article-cbdd8757",
-      "cbdd8757",
-      "ai-enhances-cyber-resilience-competition-d0d80c"
-    ]
-  },
-  {
-    "slug": "cve-2026-125926-server-side-request-forgery-in-the-a8e51a20",
-    "title": "CVE-2026-125926 - Server-side request forgery in the server registration and update API in mcp-gateway-registry",
-    "summary": "Server-side request forgery (SSRF) in the server registration and update API in Amazon mcp-gateway-registry before 1.35.0 might allow an authenticated remote user to send requests from the gateway to internal network services and cloud instance metadata endpoints and read the responses via a crafted request.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-180-aws/",
-    "publishedAt": "2026-11-11T21:04:56.000Z",
-    "cves": [
-      "CVE-2026-125926"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-125926-server-side-request-forgery-in-the",
-      "article-a8e51a20",
-      "a8e51a20",
-      "cve-2026-125926-server-side-request-forgery-in-the-16ddb3",
-      "cve-2026-125926-server-side-request-forgery-in-the-server-re"
-    ]
-  },
-  {
-    "slug": "aws-mcp-gateway-registry-privilege-escalation-via-5cea2f24",
-    "title": "AWS mcp-gateway-registry Privilege Escalation via API",
-    "summary": "Amazon mcp-gateway-registry’s external management API lacks authorization, letting an authenticated user elevate to registry administrator. The flaw, present in versions 1.0.9-1.24.7, allows a crafted group import request to grant administrator scope to the attacker’s identity group, giving control over all registered gateway assets. AWS released a patch; security teams should upgrade to 1.24.8 or later and verify group import permissions.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-179-aws/",
-    "publishedAt": "2026-11-11T21:03:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aws-mcp-gateway-registry-privilege-escalation-via",
-      "article-5cea2f24",
-      "5cea2f24",
-      "aws-mcp-gateway-registry-privilege-escalation-via-3c6851",
-      "aws-mcp-gateway-registry-privilege-escalation-via-api"
-    ]
-  },
-  {
-    "slug": "notion-breach-exposes-ai-chat-transcripts-cfcd8ae8",
-    "title": "Notion Breach Exposes AI Chat Transcripts",
-    "summary": "Notion revealed a breach at Fireworks AI that exposed AI chat transcripts from a few workspaces. Unauthorized access to Fireworks AI’s storage leaked user-generated chat content, though no credentials were compromised. Notion advises users to review logs and reset passwords, while Fireworks AI has released a patch to secure the data.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
-    "publishedAt": "2026-11-11T20:54:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "notion-breach-exposes-ai-chat-transcripts",
-      "article-cfcd8ae8",
-      "cfcd8ae8",
-      "notion-breach-exposes-ai-chat-transcripts-2b1180"
     ]
   }
 ];
