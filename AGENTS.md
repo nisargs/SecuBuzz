@@ -13,7 +13,7 @@
   - **Android 15 Native Edge-to-Edge**: `androidNavigationBar` is completely deprecated and removed from `app.json`. Edge-to-edge display is handled natively by Android 15 / React Native 0.88.
   - **Native Bootstrap Invariant (`index.js`)**: In React Native 0.88 Bridgeless mode, `index.js` MUST explicitly import `expo/build/Expo.fx` and invoke `TurboModuleRegistry.get('ExpoModulesCore')?.installModules?.()` before `import 'expo-router/entry'`. This guarantees that `globalThis.expo` is populated natively before route components (`useFonts`, `Haptics`, `SplashScreen`) evaluate, preventing `TypeError: Cannot read property 'EventEmitter' of undefined`.
   - **Full-Color Notification Drawer Branding**: Added `largeIcon: "./assets/icon.png"` to `expo-notifications` plugin in `app.json`. Notifications display the high-res SecuBuzz emblem in the notification drawer alongside the monochrome status bar icon.
-  - **Release v1.1.0 Telemetry**: Version code bumped to `11` (`version: "1.1.0"`). All 20/20 `npx expo-doctor` checks passing, `tsc --noEmit` 0 errors. Verified on physical device via Expo Go 58.0.5.
+  - **Release v1.1.0 Telemetry**: Version code bumped to `11` (`version: "1.1.0"`, commit `af26f31`). Submitted to Google Play Production on Nov 15, 2026. All 20/20 `npx expo-doctor` checks passing, `tsc --noEmit` 0 errors. Target SDK 36, API 24+, universal 4-ABI coverage. Verified on physical device via Expo Go 58.0.5.
   - **v1.2.0 Roadmap**: Native home screen widgets (`expo-widgets` with Jetpack Compose) are slated for Release v1.2.0 as a dedicated standalone feature release.
 
 
