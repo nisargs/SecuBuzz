@@ -2,7 +2,7 @@
 
 This document provides the authoritative, single source of truth for all active news feeds, official vendor PSIRT bulletins, security advisory databases, and threat telemetry powering the SecuBuzz ecosystem.
 
-Last Updated: November 2026 | Total Active Sources: 48 Hourly Feeds + 33 Vendor Outage Radars + Android Security Bulletin (Monthly) + 2 Advisory Databases (1,806 Tracked Advisories) + FIRST.org EPSS Radar
+Last Updated: November 2026 | Total Active Sources: 49 Hourly Feeds + 33 Vendor Outage Radars + Android Security Bulletin (Monthly) + 2 Advisory Databases (1,806 Tracked Advisories) + FIRST.org EPSS Radar
 
 ---
 
@@ -47,7 +47,7 @@ Ingested hourly by `scripts/ingest.mjs` running on GitHub Actions (`cron: "17 * 
 
 ---
 
-## 2. Active Vendor PSIRT & Security Release Feeds (15 Official Platforms & Advisories)
+## 2. Active Vendor PSIRT & Security Release Feeds (16 Official Platforms & Advisories)
 These official Product Security Incident Response Team (PSIRT) and official vendor security release feeds provide direct, authoritative dispatches directly from platform vendors before secondary journalism reports them. They serve as the foundational pipeline for the upcoming **P0: "My Stack / Am I Affected?"** enterprise personal radar.
 
 | # | Vendor / Platform | Feed URL | Primary Focus & Ecosystem |
@@ -67,8 +67,9 @@ These official Product Security Incident Response Team (PSIRT) and official vend
 | **46** | **ZDI Published Advisories** | `https://www.zerodayinitiative.com/rss/published/` | Raw coordinated zero-day vulnerability disclosures & CVE advisories |
 | **47** | **CERT-EU Security Advisories** | `https://cert.europa.eu/publications/security-advisories-rss` | Authoritative EU institutional threat alerts & critical vulnerability notices |
 | **48** | **Oracle Security Alerts** | `https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/rss-otn-sec.xml` | Oracle Critical Patch Updates (CPU), Database, WebLogic, Java SE alerts |
+| **49** | **Canadian Centre for Cyber Security** | `https://www.cyber.gc.ca/api/cccs/atom/v1/get?feed=alerts_advisories&lang=en` | Cyber Centre (CCCS) official Canadian national cyber defense alerts & enterprise advisories |
 
-### Monthly Batch Pipeline: Android Security Bulletin (#49)
+### Monthly Batch Pipeline: Android Security Bulletin (#50)
 - **Source**: Android Open Source Project (AOSP) Security Bulletins (`source.android.com/docs/security/bulletin`)
 - **Cadence**: Monthly batch on the 5th of each month via `.github/workflows/asb.yml`.
 - **Scope**: Framework, System, Media, Linux kernel, Qualcomm, MediaTek, and Arm CVE patch level summaries.

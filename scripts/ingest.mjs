@@ -327,6 +327,10 @@ const FEEDS = [
     url: "https://cert.europa.eu/publications/security-advisories-rss",
   },
   {
+    name: "Canadian Centre for Cyber Security",
+    url: "https://www.cyber.gc.ca/api/cccs/atom/v1/get?feed=alerts_advisories&lang=en",
+  },
+  {
     name: "Oracle Security Alerts",
     url: "https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/rss-otn-sec.xml",
   },
@@ -2463,7 +2467,7 @@ function extractCorroborationCves(text) {
 
 function extractCorroborationAdvisoryIds(text) {
   const matches = normalizeCorroborationHyphens(text).match(
-    /\b(?:ZDI-\d{2}-\d+|RHSA-\d{4}:\d+|USN-\d+-\d+|GHSA-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}|VSA-\d{4}-\d+|APSB\d{2}-\d+|FG-IR-\d{2}-\d+|PAN-SA-\d{4}-\d+|CISCO-SA-[a-z0-9-]+|MNDT-\d{4}-\d+)\b/gi
+    /\b(?:ZDI-\d{2}-\d+|RHSA-\d{4}:\d+|USN-\d+-\d+|GHSA-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}|VSA-\d{4}-\d+|APSB\d{2}-\d+|FG-IR-\d{2}-\d+|PAN-SA-\d{4}-\d+|CISCO-SA-[a-z0-9-]+|MNDT-\d{4}-\d+|AV\d{2}-\d+)\b/gi
   );
   return matches ? Array.from(new Set(matches.map(x => x.toUpperCase()))) : [];
 }

@@ -321,7 +321,7 @@ export function hasIdentifiableEntity(title, brief) {
   const combined = `${title} ${brief}`;
 
   // 1. Explicit CVE or Structured Advisory Identifier (do NOT reject advisories just because they use a CVE ID)
-  if (/\b(?:CVE-\d{4}-\d{4,7}|GHSA-[a-z0-9-]{14,20}|RHSA-\d{4}:\d+|USN-\d+-\d+|VMSA-\d{4}-\d+|ZDI-CAN-\d+)\b/i.test(combined)) {
+  if (/\b(?:CVE-\d{4}-\d{4,7}|GHSA-[a-z0-9-]{14,20}|RHSA-\d{4}:\d+|USN-\d+-\d+|VMSA-\d{4}-\d+|ZDI-CAN-\d+|AV\d{2}-\d+)\b/i.test(combined)) {
     return true;
   }
 

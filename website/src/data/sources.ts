@@ -24,7 +24,7 @@ export interface SourceGroup {
 
 export const SOURCES: SourceItem[] = [
   // ---------------------------------------------------------------------------
-  // 1. Official Vendor PSIRT & Advisories (16 feeds, Alphabetical)
+  // 1. Official Vendor PSIRT & Advisories (17 feeds, Alphabetical)
   // ---------------------------------------------------------------------------
   {
     name: 'Android Security Bulletin',
@@ -55,6 +55,14 @@ export const SOURCES: SourceItem[] = [
     domain: 'cert.europa.eu',
     url: 'https://cert.europa.eu/publications/security-advisories/',
     focus: 'Technical security advisories and coordinated disclosures for European Union institutions, bodies, and agencies.',
+    category: 'vendor-psirt',
+    cadence: 'Continuous alerts',
+  },
+  {
+    name: 'Canadian Centre for Cyber Security',
+    domain: 'cyber.gc.ca',
+    url: 'https://www.cyber.gc.ca/en/alerts-advisories',
+    focus: 'Official cyber threat alerts, critical infrastructure advisories, and coordinated vulnerability notices from the Cyber Centre (CCCS).',
     category: 'vendor-psirt',
     cadence: 'Continuous alerts',
   },
