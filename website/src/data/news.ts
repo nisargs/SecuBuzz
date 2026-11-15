@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "pentagon-renames-cdao-to-super-intelligence-office-c032a376",
+    "title": "Pentagon Renames CDAO to Super Intelligence Office",
+    "summary": "Pentagon renamed its Chief Data and Analytics Office to the 'Super Intelligence Office' per a directive to replace 'artificial intelligence' with 'super intelligence' in executive communications. The rename signals a rebranding effort across agencies but does not alter analytics capabilities or security controls. No patches are needed; agencies should update internal and public documents to reflect the new office name.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/",
+    "publishedAt": "2026-11-15T12:51:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pentagon-renames-cdao-to-super-intelligence-office",
+      "article-c032a376",
+      "c032a376",
+      "pentagon-renames-cdao-to-super-intelligence-office-56a44f"
+    ]
+  },
+  {
     "slug": "meta-fined-805m-for-facebook-android-gallery-acces-fea28f49",
     "title": "Meta Fined €805M for Facebook Android Gallery Access",
     "summary": "Meta was fined €805 million by Italy's data protection authority for its Facebook Android app's default gallery access feature. The feature accessed users' photos, videos, and metadata without explicit consent, violating privacy regulations. Meta has 60 days to modify the default setting or implement a consent prompt to comply with GDPR.",
@@ -9658,25 +9676,6 @@ export const news: NewsBrief[] = [
       "article-333c9897",
       "333c9897",
       "rhsa-2026-99141-important-mutter-security-update-37d67f"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99125-moderate-gnome-remote-desktop-secu-89fe8809",
-    "title": "RHSA-2026:99125: Moderate: gnome-remote-desktop security update",
-    "summary": "An update for gnome-remote-desktop is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99125",
-    "publishedAt": "2026-11-11T22:34:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99125-moderate-gnome-remote-desktop-secu",
-      "article-89fe8809",
-      "89fe8809",
-      "rhsa-2026-99125-moderate-gnome-remote-desktop-secu-37d67f",
-      "rhsa-2026-99125-moderate-gnome-remote-desktop-security-updat"
     ]
   }
 ];
