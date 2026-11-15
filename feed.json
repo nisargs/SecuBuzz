@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+    "title": "TSMC Employee Data Breach Linked to Cloud Provider",
+    "headline": "TSMC Employee Data Breach Linked to Cloud Provider",
+    "summary": "A threat actor leaked 6.9 GB of TSMC employee data online and listed it for auction after confirmation. The leak stems from a compromise of TSMC’s cloud provider, exposing personal identifiers and employment details now publicly available. TSMC has not issued a patch; teams should audit cloud access controls, enforce MFA, and monitor for credential misuse.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-15T15:23:48.000Z",
+    "ingestedAt": "2026-11-15T15:43:13.376Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/",
     "sourceUrl": "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/",
     "title": "Pentagon Renames CDAO to Super Intelligence Office",
@@ -8305,22 +8321,5 @@
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:99155",
     "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99141",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99141",
-    "title": "RHSA-2026:99141: Important: mutter security update",
-    "headline": "RHSA-2026:99141: Important: mutter security update",
-    "summary": "An update for mutter is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-11T22:35:31.000Z",
-    "ingestedAt": "2026-11-12T09:46:02.407Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
   }
 ]

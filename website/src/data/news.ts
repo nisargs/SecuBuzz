@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "tsmc-employee-data-breach-linked-to-cloud-provider-8ff36216",
+    "title": "TSMC Employee Data Breach Linked to Cloud Provider",
+    "summary": "A threat actor leaked 6.9 GB of TSMC employee data online and listed it for auction after confirmation. The leak stems from a compromise of TSMC’s cloud provider, exposing personal identifiers and employment details now publicly available. TSMC has not issued a patch; teams should audit cloud access controls, enforce MFA, and monitor for credential misuse.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+    "publishedAt": "2026-11-15T15:23:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tsmc-employee-data-breach-linked-to-cloud-provider",
+      "article-8ff36216",
+      "8ff36216",
+      "tsmc-employee-data-breach-linked-to-cloud-provider-4ca20e"
+    ]
+  },
+  {
     "slug": "pentagon-renames-cdao-to-super-intelligence-office-c032a376",
     "title": "Pentagon Renames CDAO to Super Intelligence Office",
     "summary": "Pentagon renamed its Chief Data and Analytics Office to the 'Super Intelligence Office' per a directive to replace 'artificial intelligence' with 'super intelligence' in executive communications. The rename signals a rebranding effort across agencies but does not alter analytics capabilities or security controls. No patches are needed; agencies should update internal and public documents to reflect the new office name.",
@@ -9658,24 +9676,6 @@ export const news: NewsBrief[] = [
       "article-2755b85e",
       "2755b85e",
       "red-hat-issues-qt6-qtbase-update-for-rhel-10-2-37d67f"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99141-important-mutter-security-update-333c9897",
-    "title": "RHSA-2026:99141: Important: mutter security update",
-    "summary": "An update for mutter is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99141",
-    "publishedAt": "2026-11-11T22:35:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99141-important-mutter-security-update",
-      "article-333c9897",
-      "333c9897",
-      "rhsa-2026-99141-important-mutter-security-update-37d67f"
     ]
   }
 ];
