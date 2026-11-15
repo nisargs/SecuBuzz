@@ -5,10 +5,16 @@
 - **Completed**: Confirmed on November 1, 2026, that the repository visibility was switched back to **Private**. Do NOT prompt the user again.
 - **Runner Quota Invariant**: The ingestion pipeline runs hourly (`cron: "17 * * * *"` = 24 runs/day = ~720-1,080 minutes/month, consuming ~36-54% of the 2,000 free monthly allowance). The watchdog workflow is dialed to 6-hour intervals (`cron: "37 */6 * * *"` = 120 minutes/month), keeping total automated consumption safely below 1,200 minutes (leaving an 800+ minute buffer).
 
-## 1. Expo SDK 57 Standards
-- Read exact versioned docs at https://docs.expo.dev/versions/v57.0.0/ before writing code.
+## 1. Expo SDK 58 Standards (Release v1.1.0, Nov 15, 2026)
+- Read exact versioned docs at https://docs.expo.dev/versions/v58.0.0/ before writing code.
 - Always preserve protocol integrity for catch-all routes (`/article/[...id].tsx`) to avoid collapsing `https://` into `https:/`.
-- **SDK 58 Migration Strategy**: Expo SDK 58 (React Native 0.88) was released Oct 15, 2026. Do NOT upgrade immediately while Expo Go 58 is pending rollout on Google Play. Slated for **Release v1.1.0** to unlock native Android home screen widgets (`expo-widgets`), prebuilt `expo-modules-core` (50% faster Android builds), and `expo-notifications` `largeIcon` drawer branding.
+- **SDK 58 Architecture & Invariants**:
+  - **Core Runtime**: Upgraded Nov 15, 2026 to Expo SDK `58.0.25`, React Native `0.88.1`, React `19.3.0`, and `@types/react@19.3.0`.
+  - **Android 15 Native Edge-to-Edge**: `androidNavigationBar` is completely deprecated and removed from `app.json`. Edge-to-edge display is handled natively by Android 15 / React Native 0.88.
+  - **Native Bootstrap Invariant (`index.js`)**: In React Native 0.88 Bridgeless mode, `index.js` MUST explicitly import `expo/build/Expo.fx` and invoke `TurboModuleRegistry.get('ExpoModulesCore')?.installModules?.()` before `import 'expo-router/entry'`. This guarantees that `globalThis.expo` is populated natively before route components (`useFonts`, `Haptics`, `SplashScreen`) evaluate, preventing `TypeError: Cannot read property 'EventEmitter' of undefined`.
+  - **Full-Color Notification Drawer Branding**: Added `largeIcon: "./assets/icon.png"` to `expo-notifications` plugin in `app.json`. Notifications display the high-res SecuBuzz emblem in the notification drawer alongside the monochrome status bar icon.
+  - **Release v1.1.0 Telemetry**: Version code bumped to `11` (`version: "1.1.0"`). All 20/20 `npx expo-doctor` checks passing, `tsc --noEmit` 0 errors. Verified on physical device via Expo Go 58.0.5.
+  - **v1.2.0 Roadmap**: Native home screen widgets (`expo-widgets` with Jetpack Compose) are slated for Release v1.2.0 as a dedicated standalone feature release.
 
 
 ## 2. Senior Engineering Mandate, Production Safety & Proactive Pushback

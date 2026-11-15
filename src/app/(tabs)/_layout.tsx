@@ -63,7 +63,7 @@ export default function TabsLayout() {
                   : 'newspaper-outline'
               }
               size={22}
-              color={color}
+              color={typeof color === 'string' ? color : undefined}
             />
           ),
         }}
@@ -85,7 +85,7 @@ export default function TabsLayout() {
                   : 'shield-checkmark-outline'
               }
               size={22}
-              color={color}
+              color={typeof color === 'string' ? color : undefined}
             />
           ),
         }}
@@ -107,7 +107,7 @@ export default function TabsLayout() {
                   : 'bookmark-outline'
               }
               size={22}
-              color={color}
+              color={typeof color === 'string' ? color : undefined}
             />
           ),
         }}
@@ -129,7 +129,7 @@ export default function TabsLayout() {
                   : 'settings-outline'
               }
               size={22}
-              color={color}
+              color={typeof color === 'string' ? color : undefined}
             />
           ),
         }}

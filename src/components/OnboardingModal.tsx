@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ElementRef } from 'react';
 import {
   Dimensions,
   Modal,
@@ -88,7 +88,7 @@ interface OnboardingModalProps {
 export function OnboardingModal({ visible, onClose }: OnboardingModalProps) {
   const { colors, isDark, accentColor } = useTheme();
   const [activeIndex, setActiveIndex] = useState(0);
-  const scrollRef = useRef<ScrollView>(null);
+  const scrollRef = useRef<ElementRef<typeof ScrollView>>(null);
   const screenWidth = Dimensions.get('window').width;
 
   async function handleComplete() {

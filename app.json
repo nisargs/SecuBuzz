@@ -2,7 +2,7 @@
   "expo": {
     "name": "SecuBuzz",
     "slug": "secubuzz",
-    "version": "1.0.4",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -13,7 +13,7 @@
     },
     "android": {
       "package": "com.secubuzz.app",
-      "versionCode": 10,
+      "versionCode": 11,
       "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "backgroundColor": "#0B0F14",
@@ -22,10 +22,6 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
-    },
-    "androidNavigationBar": {
-      "backgroundColor": "#0B0F14",
-      "barStyle": "light-content"
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -47,6 +43,7 @@
         "expo-notifications",
         {
           "icon": "./assets/android-icon-monochrome.png",
+          "largeIcon": "./assets/icon.png",
           "color": "#4CC9F0",
           "defaultChannel": "secubuzz-news"
         }
