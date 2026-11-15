@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "meta-fined-805m-for-facebook-android-gallery-acces-fea28f49",
+    "title": "Meta Fined €805M for Facebook Android Gallery Access",
+    "summary": "Meta was fined €805 million by Italy's data protection authority for its Facebook Android app's default gallery access feature. The feature accessed users' photos, videos, and metadata without explicit consent, violating privacy regulations. Meta has 60 days to modify the default setting or implement a consent prompt to comply with GDPR.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+    "publishedAt": "2026-11-15T11:27:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fined-805m-for-facebook-android-gallery-acces",
+      "article-fea28f49",
+      "fea28f49",
+      "meta-fined-805m-for-facebook-android-gallery-acces-41170b",
+      "meta-fined-805m-for-facebook-android-gallery-access"
+    ]
+  },
+  {
     "slug": "secret-stealer-hits-github-claude-code-becomes-imp-03fc331b",
     "title": "Secret Stealer Hits GitHub, Claude Code Becomes Implant",
     "summary": "A credential stealer infected multiple GitHub repositories, exposing stored secrets. The same actor compromised Anthropic’s Claude Code extension, turning it into a remote-controlled implant capable of exfiltrating data. Security teams should audit repository access, rotate exposed keys, and update the extension to the latest patched version and monitor for anomalous activity.",
@@ -9658,24 +9677,6 @@ export const news: NewsBrief[] = [
       "89fe8809",
       "rhsa-2026-99125-moderate-gnome-remote-desktop-secu-37d67f",
       "rhsa-2026-99125-moderate-gnome-remote-desktop-security-updat"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99112-important-firefox-security-update-660e2ead",
-    "title": "RHSA-2026:99112: Important: firefox security update",
-    "summary": "An update for firefox is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99112",
-    "publishedAt": "2026-11-11T22:34:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99112-important-firefox-security-update",
-      "article-660e2ead",
-      "660e2ead",
-      "rhsa-2026-99112-important-firefox-security-update-37d680"
     ]
   }
 ];
