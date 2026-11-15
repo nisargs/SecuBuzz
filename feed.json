@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/15/week-in-review-secret-stealer-hits-github-repos-claude-code-turned-into-remote-controlled-implant/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/15/week-in-review-secret-stealer-hits-github-repos-claude-code-turned-into-remote-controlled-implant/",
+    "title": "Secret Stealer Hits GitHub, Claude Code Becomes Implant",
+    "headline": "Secret Stealer Hits GitHub, Claude Code Becomes Implant",
+    "summary": "A credential stealer infected multiple GitHub repositories, exposing stored secrets. The same actor compromised Anthropic’s Claude Code extension, turning it into a remote-controlled implant capable of exfiltrating data. Security teams should audit repository access, rotate exposed keys, and update the extension to the latest patched version and monitor for anomalous activity.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-15T09:00:37.000Z",
+    "ingestedAt": "2026-11-15T09:43:20.383Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/15/week-in-review-secret-stealer-hits-github-repos-claude-code-turned-into-remote-controlled-implant/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/quantum-systems-drones-bundeswehr-malware-scare",
     "sourceUrl": "https://cybernewsai.com/blog/quantum-systems-drones-bundeswehr-malware-scare",
     "title": "Bundeswehr Removes Grounding on Quantum Systems Drones",
@@ -176,18 +192,23 @@
   {
     "id": "https://cybersecuritynews.com/cursor-data-breach/",
     "sourceUrl": "https://cybersecuritynews.com/cursor-data-breach/",
-    "title": "Cursor Links Fireworks AI Key Leak to Backdoored Extensions",
-    "headline": "Cursor Links Fireworks AI Key Leak to Backdoored Extensions",
-    "summary": "Cursor traced an October breach to a leaked Fireworks AI key that attackers used to infiltrate its marketplace. The key enabled theft of coding agent records, credential harvesting, and insertion of malicious Claude Code extensions, creating a backdoor. Cursor’s November 13 update links the exposure to the malicious packages and urges immediate review of marketplace integrity and key management.",
+    "title": "Fireworks AI Key Leak Enables Malicious Extensions in Cursor Marketplace",
+    "headline": "Fireworks AI Key Leak Enables Malicious Extensions in Cursor Marketplace",
+    "summary": "A stolen Fireworks AI key infiltrated Cursor’s marketplace, enabling attackers to exfiltrate data and deploy malicious Claude Code extensions. The compromised extensions allowed remote-controlled implants, credential harvesting, and trojanized code, exposing users to data theft. Cursor and Anthropic issued a patch, revoked the key, and urged users to update extensions and monitor anomalies.",
     "category": "BREACH",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "Cyber Security News",
     "publishedAt": "2026-11-14T09:09:31.000Z",
     "ingestedAt": "2026-11-14T10:43:21.271Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/cursor-data-breach/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html"
+      }
+    ]
   },
   {
     "id": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/",
@@ -8304,21 +8325,5 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches-japanese",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches-japanese",
-    "title": "Japan Allocates Emergency Cybersecurity Funding for Proactive Defense",
-    "headline": "Japan Allocates Emergency Cybersecurity Funding for Proactive Defense",
-    "summary": "Japan announced an emergency cybersecurity funding package to counter an increasing volume of AI-enabled cyberattacks against national infrastructure. The initiative establishes public-private cyber response units, an AI specialist team led by the Ministry of Economy, and expanded active defense authorities. Government authorities plan to leverage the enhanced operational discretion and specialized units to strengthen national proactive defense posture.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-11-11T22:14:44.000Z",
-    "ingestedAt": "2026-11-12T23:45:25.812Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches-japanese",
-    "additionalSources": []
   }
 ]
