@@ -88,7 +88,18 @@ Triage threats at machine speed. Stay ahead of zero-days, ransomware syndicates,
 
 ---
 
-## 2. Store Categorization & Tags
+## 5. Release Notes for Google Play Console (What's New in this release)
+
+### Version 1.1.0 (versionCode 11) - November 2026
+```text
+• Upgraded core architecture to React Native 0.88 & Expo SDK 58 for up to 50% faster startup speeds.
+• Full native Android 15 edge-to-edge support with seamless navigation bar immersion.
+• Enriched notification drawer alerts with full-color SecuBuzz threat branding.
+• Enhanced JSI bridge performance and reduced memory consumption across all devices.
+• Continuous security intelligence pipeline improvements and threat triage stability.
+```
+
+---
 
 In **Store presence > Store settings > Category and tags**:
 
