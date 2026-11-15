@@ -11,21 +11,46 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "tsmc-employee-data-breach-linked-to-cloud-provider-8ff36216",
-    "title": "TSMC Employee Data Breach Linked to Cloud Provider",
-    "summary": "A threat actor leaked 6.9 GB of TSMC employee data online and listed it for auction after confirmation. The leak stems from a compromise of TSMC’s cloud provider, exposing personal identifiers and employment details now publicly available. TSMC has not issued a patch; teams should audit cloud access controls, enforce MFA, and monitor for credential misuse.",
+    "slug": "tsmc-employee-data-breach-exposes-46-000-records-v-f97fceb8",
+    "title": "TSMC Employee Data Breach Exposes 46,000 Records via Cloud Provider Compromise",
+    "summary": "A breach of TSMC’s external cloud provider exposed 6.9 GB of employee data, including 46,000 records with national IDs and banking details. The leak, publicly listed for auction, threatens credential theft and potential financial fraud across the workforce. TSMC urges immediate credential rotation, MFA enforcement, and a comprehensive incident response review for affected employees.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
     "publishedAt": "2026-11-15T15:23:48.000Z",
     "cves": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/tsmc-employee-data-breach-cloud-provider-leak"
+      }
+    ],
+    "aliases": [
+      "tsmc-employee-data-breach-exposes-46-000-records-v",
+      "article-f97fceb8",
+      "f97fceb8",
+      "tsmc-employee-data-breach-exposes-46-000-records-v-4ca20e",
+      "tsmc-employee-data-breach-exposes-46-000-records-via-cloud-p"
+    ]
+  },
+  {
+    "slug": "six-zero-day-flaws-enable-remote-takeover-of-danfo-374a5179",
+    "title": "Six Zero-Day Flaws Enable Remote Takeover of Danfoss Fridges",
+    "summary": "Six pre-authentication remote code execution flaws were found in Danfoss AK-SM800A fridge controllers, letting attackers seize control of refrigeration units. Stack-based buffer overflows affect firmware up to 5.3.2, lack CVE IDs, and allow takeover within about an hour if exploited. Danfoss has not yet issued a patch; users should upgrade to firmware 5.3.3 or later when available and monitor advisories.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/supermarket-refrigeration-systems-0-day/",
+    "publishedAt": "2026-11-15T15:23:22.000Z",
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "tsmc-employee-data-breach-linked-to-cloud-provider",
-      "article-8ff36216",
-      "8ff36216",
-      "tsmc-employee-data-breach-linked-to-cloud-provider-4ca20e"
+      "six-zero-day-flaws-enable-remote-takeover-of-danfo",
+      "article-374a5179",
+      "374a5179",
+      "six-zero-day-flaws-enable-remote-takeover-of-danfo-105066",
+      "six-zero-day-flaws-enable-remote-takeover-of-danfoss-fridges"
     ]
   },
   {
@@ -47,22 +72,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "meta-fined-805m-for-facebook-android-gallery-acces-fea28f49",
-    "title": "Meta Fined €805M for Facebook Android Gallery Access",
-    "summary": "Meta was fined €805 million by Italy's data protection authority for its Facebook Android app's default gallery access feature. The feature accessed users' photos, videos, and metadata without explicit consent, violating privacy regulations. Meta has 60 days to modify the default setting or implement a consent prompt to comply with GDPR.",
-    "category": "General",
-    "severity": "LOW",
+    "slug": "meta-fined-805m-by-italy-for-facebook-android-gall-fb57ca77",
+    "title": "Meta Fined €805M by Italy for Facebook Android Gallery Access",
+    "summary": "Italy’s data authority fined Meta €805 million for Facebook’s Android app’s default access to users’ photo galleries without explicit consent. The unauthorized access to photos, videos, and metadata violated GDPR and Italian privacy law, exposing user data to misuse. Meta has 60 days to modify the default setting or add opt-in controls, implementing stricter permission handling to comply with regulations.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
     "publishedAt": "2026-11-15T11:27:31.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/meta-fined-805m-italy-facebook-android-gallery-privacy"
+      }
+    ],
     "aliases": [
-      "meta-fined-805m-for-facebook-android-gallery-acces",
-      "article-fea28f49",
-      "fea28f49",
-      "meta-fined-805m-for-facebook-android-gallery-acces-41170b",
-      "meta-fined-805m-for-facebook-android-gallery-access"
+      "meta-fined-805m-by-italy-for-facebook-android-gall",
+      "article-fb57ca77",
+      "fb57ca77",
+      "meta-fined-805m-by-italy-for-facebook-android-gall-41170b",
+      "meta-fined-805m-by-italy-for-facebook-android-gallery-access"
     ]
   },
   {
@@ -9658,24 +9688,6 @@ export const news: NewsBrief[] = [
       "3b2b8dad",
       "red-hat-releases-c-ares-security-update-for-rhel-1-37d67f",
       "red-hat-releases-c-ares-security-update-for-rhel-10-2"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-qt6-qtbase-update-for-rhel-10-2-2755b85e",
-    "title": "Red Hat Issues qt6-qtbase Update for RHEL 10.2",
-    "summary": "Red Hat has issued a security update for qt6-qtbase on RHEL 10.2 EUS, addressing multiple vulnerabilities with CVSS base scores listed in the CVE references. The update is marked as Important by Red Hat Product Security, indicating a high severity impact on Qt framework functionality. Apply the qt6-qtbase update promptly to protect against the disclosed vulnerabilities.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99155",
-    "publishedAt": "2026-11-11T22:37:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-qt6-qtbase-update-for-rhel-10-2",
-      "article-2755b85e",
-      "2755b85e",
-      "red-hat-issues-qt6-qtbase-update-for-rhel-10-2-37d67f"
     ]
   }
 ];
