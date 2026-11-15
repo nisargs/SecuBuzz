@@ -426,6 +426,7 @@
 - **Private / Admin-Protected Endpoints (HTTP 401 Unauthorized if unauthenticated):**
   - `GET /api/analytics/install-clicks`: Real-time install button click telemetry, unique visitors, repeat clickers, and breakdown by source/country.
   - `GET /api/analytics/support-clicks`: Real-time Ko-fi support link click telemetry, unique visitors, repeat clickers, and placement breakdown.
+  - `GET /api/analytics/founder-clicks`: Real-time founder LinkedIn profile click telemetry, unique visitors, repeat clickers, and referring URLs.
   - `GET /api/analytics/vendor-status-clicks`: Outbound vendor status link click telemetry (60s in-memory cache, top vendors, recent clicks).
   - `GET /api/push-tokens`: Internal Expo push token registry.
   - `POST /api/push-tokens/deactivate`: Deactivation of stale/invalid device tokens.
@@ -441,13 +442,14 @@
   - `GET /api/cve-metrics?cve={CVE-ID}`: NIST NVD CVSS vectors proxy (edge-cached 24h).
   - `POST /api/push-tokens`: Safe write-only device registration on app install (accepts token, never returns any stored token data).
   - `GET /support`: Public 302 redirect to Ko-fi page with automatic D1 click tracking (`support_clicks`).
+  - `GET /go/linkedin` (also `/founder`, `/nisarg`): Public 302 redirect to Nisarg Soni's LinkedIn profile with UTM tracking and automatic D1 click tracking (`founder_clicks`).
   - `GET /health`: Watchdog uptime endpoint reporting feed age & R2 status for external monitors (HetrixTools).
   - *Probes & Unknown `/api/*` Routes*: Always return `404 API endpoint not found`.
 - **Telemetry & Count Inquiries Protocol (Zero-Fumble Responsibility):**
   - When the user asks for stats, traffic, install counts, or repeat visitor metrics:
     - **NEVER** ask the user for secrets, API keys, or credentials.
     - Run `npx wrangler d1 execute secubuzz-push-db --remote --command "..."` (via `worker/` directory) and `node scripts/cf_analytics.mjs` / `node scripts/track_repeat_users.mjs`.
-    - **Mandatory 6-Point Reporting Format**: Always deliver the exact structure:
+    - **Mandatory 7-Point Reporting Format**: Always deliver the exact structure:
       1. *Real User Numbers (Traffic & Sessions)*: 7-day daily breakdown table of unique visitors, total requests, page views, new mobile app installs (measured by fresh push token registrations in D1), bandwidth, and top countries (US, DE, CA, NL, IN, AU, etc.).
       2. *Pages Checked*: Breakdown of RUM page views by route (`/`, `/news`, `/advisories`, `/download`, `/publishers`, `/about`, and specific CVE/brief URLs).
       3. *Repeat Users & Push Notification Fleet Reach*: Always explicitly report:
@@ -459,6 +461,7 @@
       4. *Time on Site & Engagement*: Pages/session (~2.9 pages), dwell time (~1.5–2.5 min for 60-word briefs), inbound referrers (Reddit, Google, direct), and device OS split (Windows, iOS, Android, macOS). Note bot anomalies (e.g. Germany ~16 req/visit vs US ~3 req/visit reflects cloud scrapers).
       5. *Download Clicks*: Breakdown of `/go/play` button clicks by country/source (human vs crawler) and `/download` visits.
       6. *Support & Ko-fi Clicks*: Breakdown of `/support` clicks by source (`footer_card`, `about_page`, `download_page`, `footer_nav`), unique clickers, repeat clicks, country, and recent referral stream.
+      7. *Founder & LinkedIn Clicks*: Breakdown of `/go/linkedin` profile clicks by source, unique clickers, repeat clicks, country, and timestamp.
 - **Authoritative Inventory Counts:**
   - **Advisories count:** Exactly **1,806 active advisories** (1,756 live CISA KEV + 50 GitHub Advisories). Kept strictly consistent across mobile app (`1,806 active`) and website (`1,806 active advisories`).
   - **News feed count:** Up to **500 active articles** (~10–14 days of rolling intelligence across 43 verified threat feeds), backed by permanent Cloudflare D1 historical archive storing **1,356+ unique articles** with live search and zero 404s.

@@ -67,7 +67,7 @@ export function About() {
           <p className="border-t border-line/60 pt-4 text-xs text-subtle">
             SecuBuzz is an independent threat intelligence project architected and maintained by{' '}
             <a
-              href="https://www.linkedin.com/in/soni-nisarg/"
+              href="/go/linkedin"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted underline decoration-dotted transition-colors hover:text-ink"

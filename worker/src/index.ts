@@ -29,6 +29,10 @@ const CORS_HEADERS = {
 // Single source of truth for the /support redirect destination (kept in one config spot)
 export const SUPPORT_TARGET_URL = 'https://ko-fi.com/secubuzz';
 
+// Single source of truth for founder / LinkedIn profile redirect destination with UTM attribution
+export const LINKEDIN_TARGET_URL =
+  'https://www.linkedin.com/in/soni-nisarg/?utm_source=secubuzz&utm_medium=website&utm_campaign=about_page';
+
 const SECURITY_HEADERS = {
   'X-Content-Type-Options': 'nosniff',
   'X-Frame-Options': 'DENY',
@@ -1193,6 +1197,121 @@ export default {
           const { results: recent } = await env.DB.prepare(
             `SELECT source, is_repeat, country, referer, clicked_at
              FROM support_clicks
+             ORDER BY clicked_at DESC
+             LIMIT 25;`
+          ).all();
+
+          return jsonResponse({
+            success: true,
+            totalClicks: Number(stats?.total_clicks || 0),
+            uniqueClickers: Number(stats?.unique_clickers || 0),
+            repeatClicks: Number(stats?.repeat_clicks || 0),
+            breakdown: totals ?? [],
+            countries: countries ?? [],
+            recent: recent ?? [],
+          });
+        } catch (dbErr: any) {
+          return errorResponse(`Database error: ${dbErr?.message || 'unknown'}`, 500);
+        }
+      }
+
+      // Public Founder LinkedIn Redirect (/go/linkedin, /founder, /nisarg) -> Records click telemetry in D1 and redirects to LinkedIn
+      if (
+        url.pathname === '/go/linkedin' ||
+        url.pathname === '/go/linkedin/' ||
+        url.pathname === '/founder' ||
+        url.pathname === '/founder/' ||
+        url.pathname === '/nisarg' ||
+        url.pathname === '/nisarg/'
+      ) {
+        const source = (url.searchParams.get('src') || url.searchParams.get('source') || 'about_page').slice(0, 64);
+        const country = request.headers.get('cf-ipcountry') || 'XX';
+        const referer = (request.headers.get('Referer') || '').slice(0, 255);
+        const userAgent = (request.headers.get('User-Agent') || '').slice(0, 255);
+        const now = new Date().toISOString();
+        const { visitorId, isRepeat, isNewCookie } = getVisitorInfo(request);
+
+        if (env.DB) {
+          try {
+            await env.DB.prepare(
+              `INSERT INTO founder_clicks (visitor_id, source, is_repeat, country, referer, user_agent, clicked_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?);`
+            ).bind(visitorId, source, isRepeat, country, referer, userAgent, now).run();
+          } catch (dbErr: any) {
+            // Self-healing: auto-create founder_clicks table if missing and retry once
+            if (String(dbErr?.message || '').toLowerCase().includes('no such table')) {
+              try {
+                await env.DB.prepare(
+                  `CREATE TABLE IF NOT EXISTS founder_clicks (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    visitor_id TEXT,
+                    source TEXT NOT NULL,
+                    is_repeat INTEGER DEFAULT 0,
+                    country TEXT,
+                    referer TEXT,
+                    user_agent TEXT,
+                    clicked_at TEXT NOT NULL
+                  );`
+                ).run();
+                await env.DB.prepare(
+                  `INSERT INTO founder_clicks (visitor_id, source, is_repeat, country, referer, user_agent, clicked_at)
+                   VALUES (?, ?, ?, ?, ?, ?, ?);`
+                ).bind(visitorId, source, isRepeat, country, referer, userAgent, now).run();
+              } catch (createErr) {
+                console.warn('Failed to auto-create founder_clicks table:', createErr);
+              }
+            } else {
+              console.warn('Failed to record founder click:', dbErr);
+            }
+          }
+        }
+
+        const headers = new Headers({
+          'Location': LINKEDIN_TARGET_URL,
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+        });
+        if (isNewCookie) {
+          headers.append('Set-Cookie', `sb_vid=${visitorId}; Path=/; Max-Age=31536000; SameSite=Lax; Secure`);
+        }
+
+        return new Response(null, {
+          status: 302,
+          headers,
+        });
+      }
+
+      // API: Telemetry for Founder / LinkedIn Clicks (Private - Admin Only)
+      if (url.pathname === '/api/analytics/founder-clicks') {
+        if (!isAuthorized(request, env)) {
+          return errorResponse('Unauthorized. Admin access required.', 401);
+        }
+        if (!env.DB) return jsonResponse({ totalClicks: 0, uniqueClickers: 0, repeatClicks: 0, breakdown: [], countries: [], recent: [] });
+        try {
+          const stats: any = await env.DB.prepare(
+            `SELECT COUNT(*) as total_clicks,
+                    COUNT(DISTINCT visitor_id) as unique_clickers,
+                    SUM(is_repeat) as repeat_clicks
+             FROM founder_clicks;`
+          ).first();
+
+          const { results: totals } = await env.DB.prepare(
+            `SELECT source, COUNT(*) as count, COUNT(DISTINCT visitor_id) as unique_clickers, SUM(is_repeat) as repeats
+             FROM founder_clicks
+             GROUP BY source
+             ORDER BY count DESC;`
+          ).all();
+
+          const { results: countries } = await env.DB.prepare(
+            `SELECT country, COUNT(*) as count
+             FROM founder_clicks
+             GROUP BY country
+             ORDER BY count DESC
+             LIMIT 10;`
+          ).all();
+
+          const { results: recent } = await env.DB.prepare(
+            `SELECT source, is_repeat, country, referer, clicked_at
+             FROM founder_clicks
              ORDER BY clicked_at DESC
              LIMIT 25;`
           ).all();

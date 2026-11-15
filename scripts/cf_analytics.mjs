@@ -206,6 +206,7 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
 
   let installClicks = null;
   let supportClicks = null;
+  let founderClicks = null;
   let vendorClicks = null;
   let modalOpens = null;
   let deviceTokens = null;
@@ -239,6 +240,25 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
         breakdown: supportBreakdownRes?.[0]?.results || [],
         countries: supportCountriesRes?.[0]?.results || [],
         recent: supportRecentRes?.[0]?.results || []
+      };
+    } catch {
+      // Non-fatal
+    }
+
+    try {
+      const fStatsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT COUNT(*) as totalClicks, COUNT(DISTINCT visitor_id) as uniqueClickers, SUM(is_repeat) as repeatClicks FROM founder_clicks');
+      const fBreakdownRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT source, COUNT(*) as count, COUNT(DISTINCT visitor_id) as unique_clickers, SUM(is_repeat) as repeats FROM founder_clicks GROUP BY source ORDER BY count DESC');
+      const fCountriesRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT country, COUNT(*) as count FROM founder_clicks GROUP BY country ORDER BY count DESC LIMIT 10');
+      const fRecentRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT source, is_repeat, country, referer, clicked_at FROM founder_clicks ORDER BY clicked_at DESC LIMIT 25');
+
+      const fStats = fStatsRes?.[0]?.results?.[0] || {};
+      founderClicks = {
+        totalClicks: Number(fStats.totalClicks || 0),
+        uniqueClickers: Number(fStats.uniqueClickers || 0),
+        repeatClicks: Number(fStats.repeatClicks || 0),
+        breakdown: fBreakdownRes?.[0]?.results || [],
+        countries: fCountriesRes?.[0]?.results || [],
+        recent: fRecentRes?.[0]?.results || []
       };
     } catch {
       // Non-fatal
@@ -340,6 +360,7 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
     rum: rumRes.data?.viewer?.accounts?.[0] || {},
     installClicks,
     supportClicks,
+    founderClicks,
     vendorClicks,
     modalOpens,
     deviceTokens
@@ -353,6 +374,7 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
     const r = data.rum;
     const clicks = data.installClicks;
     const supportClicks = data.supportClicks;
+    const founderClicks = data.founderClicks;
     const vendorClicks = data.vendorClicks;
     const modalOpens = data.modalOpens;
     const tokens = data.deviceTokens;
@@ -429,6 +451,32 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
       if (supportClicks.recent && supportClicks.recent.length > 0) {
         console.log('  Recent Referrals:');
         for (const rc of supportClicks.recent.slice(0, 5)) {
+          const repeatTag = rc.is_repeat ? '[Repeat]' : '[New]';
+          const ref = rc.referer ? ` via ${rc.referer}` : '';
+          console.log(`    ${rc.clicked_at.slice(0, 19)} | ${rc.country} | ${rc.source} ${repeatTag}${ref}`);
+        }
+      }
+    }
+
+    if (founderClicks) {
+      console.log('\n--- Founder Profile / LinkedIn Clicks (/go/linkedin) ---');
+      console.log(`  Total Clicks: ${founderClicks.totalClicks || 0} | Unique Clickers: ${founderClicks.uniqueClickers || 0} | Repeat Clicks: ${founderClicks.repeatClicks || 0}`);
+      
+      if (founderClicks.breakdown && founderClicks.breakdown.length > 0) {
+        console.log('  Breakdown by Source:');
+        for (const b of founderClicks.breakdown) {
+          console.log(`    - ${b.source.padEnd(16)}: ${b.count.toString().padStart(3)} clicks (${b.unique_clickers || b.count} uniques, ${b.repeats || 0} repeats)`);
+        }
+      }
+
+      if (founderClicks.countries && founderClicks.countries.length > 0) {
+        console.log('  Top Countries:');
+        console.log(`    ${founderClicks.countries.map(c => `${c.country}: ${c.count}`).join(' | ')}`);
+      }
+
+      if (founderClicks.recent && founderClicks.recent.length > 0) {
+        console.log('  Recent Referrals:');
+        for (const rc of founderClicks.recent.slice(0, 5)) {
           const repeatTag = rc.is_repeat ? '[Repeat]' : '[New]';
           const ref = rc.referer ? ` via ${rc.referer}` : '';
           console.log(`    ${rc.clicked_at.slice(0, 19)} | ${rc.country} | ${rc.source} ${repeatTag}${ref}`);
