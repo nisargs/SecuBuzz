@@ -6570,6 +6570,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "watchguard-endpoint-security-local-privilege-escal-7cd0f18b",
+    "title": "WatchGuard Endpoint Security Local Privilege Escalation Exploited",
+    "summary": "A local privilege escalation flaw in WatchGuard Endpoint Security before 8.00.26.0011 lets attackers execute SYSTEM code via console-service communication. Identified as CVE-2026-57907, the flaw permits authenticated users to gain SYSTEM-level execution, potentially compromising the endpoint and enabling lateral movement. WatchGuard released patches; administrators should update to 8.00.26.0011 or later and review advisories for comprehensive mitigations.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/watchguard-security-advisory-av26-1147",
+    "publishedAt": "2026-11-12T15:52:53.000Z",
+    "cves": [
+      "CVE-2026-57907"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "watchguard-endpoint-security-local-privilege-escal",
+      "article-7cd0f18b",
+      "7cd0f18b",
+      "watchguard-endpoint-security-local-privilege-escal-33503e",
+      "watchguard-endpoint-security-local-privilege-escalation-expl"
+    ]
+  },
+  {
     "slug": "citrix-releases-patches-for-12-netscaler-flaws-4e7d75dc",
     "title": "Citrix Releases Patches for 12 NetScaler Flaws",
     "summary": "Citrix has issued patches for twelve critical NetScaler ADC, Gateway, and Console flaws that could enable denial-of-service or authentication bypass. The most severe flaw, CVE-2026-120868, is a memory overflow with CVSS 9.3 that permits unauthenticated remote code execution, potentially compromising entire NetScaler deployments. Citrix recommends applying the latest cumulative update immediately and verifying configuration changes to mitigate the vulnerabilities.",
@@ -6762,6 +6783,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "n-central-vulnerability-cve-2026-125883-exploited-0ccb4f56",
+    "title": "N-Central Vulnerability CVE-2026-125883 Exploited in Wild",
+    "summary": "A vulnerability in N-Central versions before 2026.4.1.26, identified as CVE-2026-125883, is actively exploited in the wild. The flaw allows attackers to gain unauthorized access to the management console, potentially enabling credential theft and lateral movement across managed endpoints. N-Able has issued a patch; administrators should upgrade to 2026.4.1.26 or later and apply any vendor-recommended mitigations.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1143",
+    "publishedAt": "2026-11-12T14:56:51.000Z",
+    "cves": [
+      "CVE-2026-125883"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "n-central-vulnerability-cve-2026-125883-exploited",
+      "article-0ccb4f56",
+      "0ccb4f56",
+      "n-central-vulnerability-cve-2026-125883-exploited-761d20",
+      "n-central-vulnerability-cve-2026-125883-exploited-in-wild"
+    ]
+  },
+  {
     "slug": "japan-sees-record-cyberattacks-driven-by-ai-intrus-db59b6fd",
     "title": "Japan Sees Record Cyberattacks Driven by AI Intrusions",
     "summary": "Researchers report a record rise in Japanese cyberattacks, attributing many incidents to AI-assisted intrusion techniques. The attacks include widespread data breaches and exploitations of unpatched vulnerabilities, increasing pressure on organizations to accelerate patch management. Security teams should prioritize vulnerability scanning, enforce timely patching, and adopt AI-driven threat detection to mitigate emerging intrusion tactics.",
@@ -6822,6 +6864,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-vulnerability-cve-2026-125350-exploited-in-4badf29e",
+    "title": "Chrome Vulnerability CVE-2026-125350 Exploited in Wild",
+    "summary": "Chrome stable channel desktop versions before 157.0.8103.50/.51 contain CVE-2026-125350, which is actively exploited in the wild. The vulnerability permits attackers to execute arbitrary code with elevated privileges, potentially compromising user data and system integrity. Google released patches; users should update to 157.0.8103.50/.51 or later and follow advisories for comprehensive effective mitigations.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1140",
+    "publishedAt": "2026-11-12T14:29:08.000Z",
+    "cves": [
+      "CVE-2026-125350"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-vulnerability-cve-2026-125350-exploited-in",
+      "article-4badf29e",
+      "4badf29e",
+      "chrome-vulnerability-cve-2026-125350-exploited-in-170ca3",
+      "chrome-vulnerability-cve-2026-125350-exploited-in-wild"
+    ]
+  },
+  {
     "slug": "red-hat-issues-gd-update-for-rhel7-e8daf164",
     "title": "Red Hat Issues gd Update for RHEL7",
     "summary": "Red Hat released a security update for the gd component on RHEL 7 Extended Lifecycle Support, fixing a flaw that could enable code execution. The update is rated Important, with CVSS scores linked via CVE references, indicating a moderate-to-high severity vulnerability. Red Hat recommends applying the patch immediately; no workarounds are needed.",
@@ -6873,6 +6936,27 @@ export const news: NewsBrief[] = [
       "article-796cd2ac",
       "796cd2ac",
       "red-hat-updates-crun-for-rhel-9-8-eus-37d680"
+    ]
+  },
+  {
+    "slug": "cisco-broadworks-vulnerability-cve-2026-20320-expl-ca82082f",
+    "title": "Cisco BroadWorks Vulnerability CVE-2026-20320 Exploited",
+    "summary": "Cisco BroadWorks and related Crosswork products before RI.2026.07 or 7.2.1-SP contain CVE-2026-20320, which is actively exploited in the wild. The flaw allows attackers to gain unauthorized access to management interfaces, potentially enabling remote code execution and lateral movement across the network. Cisco has issued patches; administrators should upgrade to RI.2026.07 or 7.2.1-SP and apply vendor advisories for mitigations.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-834",
+    "publishedAt": "2026-11-12T14:25:44.000Z",
+    "cves": [
+      "CVE-2026-20320"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-broadworks-vulnerability-cve-2026-20320-expl",
+      "article-ca82082f",
+      "ca82082f",
+      "cisco-broadworks-vulnerability-cve-2026-20320-expl-537666",
+      "cisco-broadworks-vulnerability-cve-2026-20320-exploited"
     ]
   },
   {
@@ -9586,80 +9670,6 @@ export const news: NewsBrief[] = [
       "37bdb08b",
       "apache-patches-critical-http-2-remote-code-executi-178ef9",
       "apache-patches-critical-http-2-remote-code-execution-vulnera"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99089-moderate-gcc-security-update-f85d34b2",
-    "title": "RHSA-2026:99089: Moderate: gcc security update",
-    "summary": "An update for gcc is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99089",
-    "publishedAt": "2026-11-11T19:10:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99089-moderate-gcc-security-update",
-      "article-f85d34b2",
-      "f85d34b2",
-      "rhsa-2026-99089-moderate-gcc-security-update-37d682"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99094-moderate-qt6-qtbase-security-updat-f4273b76",
-    "title": "RHSA-2026:99094: Moderate: qt6-qtbase security update",
-    "summary": "An update for qt6-qtbase is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99094",
-    "publishedAt": "2026-11-11T19:01:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99094-moderate-qt6-qtbase-security-updat",
-      "article-f4273b76",
-      "f4273b76",
-      "rhsa-2026-99094-moderate-qt6-qtbase-security-updat-37d682",
-      "rhsa-2026-99094-moderate-qt6-qtbase-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99090-important-gstreamer1-security-upda-02b99d36",
-    "title": "RHSA-2026:99090: Important: gstreamer1 security update",
-    "summary": "An update for gstreamer1 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99090",
-    "publishedAt": "2026-11-11T19:00:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99090-important-gstreamer1-security-upda",
-      "article-02b99d36",
-      "02b99d36",
-      "rhsa-2026-99090-important-gstreamer1-security-upda-37d682",
-      "rhsa-2026-99090-important-gstreamer1-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99091-important-guava-security-update-54632ed4",
-    "title": "RHSA-2026:99091: Important: guava security update",
-    "summary": "An update for guava is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99091",
-    "publishedAt": "2026-11-11T18:55:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99091-important-guava-security-update",
-      "article-54632ed4",
-      "54632ed4",
-      "rhsa-2026-99091-important-guava-security-update-37d682"
     ]
   }
 ];
