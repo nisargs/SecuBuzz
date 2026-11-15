@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fbi-alerts-artex-ai-tool-fuels-global-attacks-eee6630a",
+    "title": "FBI Alerts: ARTEX AI Tool Fuels Global Attacks",
+    "summary": "FBI warns that ARTEX AI-powered framework automates attacks worldwide, including a ConnectWise supply-chain breach exposing Microsoft 365 customer environments. The tool automates exploitation of known vulnerabilities and credential theft, letting attackers bypass controls and access tenant data, risking exfiltration. Teams should monitor ARTEX activity, enforce MFA, apply ConnectWise patches, and review Microsoft 365 tenant settings to mitigate exploitation.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+    "publishedAt": "2026-11-15T18:29:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-alerts-artex-ai-tool-fuels-global-attacks",
+      "article-eee6630a",
+      "eee6630a",
+      "fbi-alerts-artex-ai-tool-fuels-global-attacks-3fc41a"
+    ]
+  },
+  {
+    "slug": "yara-x-1-23-0-release-adds-improvements-and-fixes-a08baaeb",
+    "title": "YARA-X 1.23.0 Release Adds Improvements and Fixes",
+    "summary": "YARA-X released version 1.23.0, adding four improvements and fixing sixteen bugs. The update enhances rule parsing performance, stabilizes memory handling, and resolves known false-positive triggers reported by users. Users should download the latest release from the official repository, replace the existing binary, and test comprehensive rule sets to ensure compatibility.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33496",
+    "publishedAt": "2026-11-15T18:17:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "yara-x-1-23-0-release-adds-improvements-and-fixes",
+      "article-a08baaeb",
+      "a08baaeb",
+      "yara-x-1-23-0-release-adds-improvements-and-fixes-57dd7e"
+    ]
+  },
+  {
     "slug": "tsmc-employee-data-breach-exposes-46-000-records-v-f97fceb8",
     "title": "TSMC Employee Data Breach Exposes 46,000 Records via Cloud Provider Compromise",
     "summary": "A breach of TSMC’s external cloud provider exposed 6.9 GB of employee data, including 46,000 records with national IDs and banking details. The leak, publicly listed for auction, threatens credential theft and potential financial fraud across the workforce. TSMC urges immediate credential rotation, MFA enforcement, and a comprehensive incident response review for affected employees.",
@@ -9650,44 +9686,6 @@ export const news: NewsBrief[] = [
       "1b502196",
       "screenconnect-malware-breaches-msps-targets-custom-308e6c",
       "screenconnect-malware-breaches-msps-targets-customer-devices"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99132-important-webkit2gtk3-security-upd-c7d0806f",
-    "title": "RHSA-2026:99132: Important: webkit2gtk3 security update",
-    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99132",
-    "publishedAt": "2026-11-11T22:47:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99132-important-webkit2gtk3-security-upd",
-      "article-c7d0806f",
-      "c7d0806f",
-      "rhsa-2026-99132-important-webkit2gtk3-security-upd-37d67f",
-      "rhsa-2026-99132-important-webkit2gtk3-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-c-ares-security-update-for-rhel-1-3b2b8dad",
-    "title": "Red Hat Releases c-ares Security Update for RHEL 10.2",
-    "summary": "Red Hat has released a security update for c-ares on RHEL 10.2 EUS, addressing multiple vulnerabilities with a CVSS base score available in the CVE references. The update is classified as Important by Red Hat Product Security, implying a high severity impact on DNS resolution functionality. Security teams should apply the c-ares update immediately to mitigate the identified vulnerabilities.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99168",
-    "publishedAt": "2026-11-11T22:40:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-c-ares-security-update-for-rhel-1",
-      "article-3b2b8dad",
-      "3b2b8dad",
-      "red-hat-releases-c-ares-security-update-for-rhel-1-37d67f",
-      "red-hat-releases-c-ares-security-update-for-rhel-10-2"
     ]
   }
 ];

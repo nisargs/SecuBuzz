@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2026 17:48:33 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 18:43:42 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>FBI Alerts: ARTEX AI Tool Fuels Global Attacks</title>
+      <link>https://secubuzz.com/news/fbi-alerts-artex-ai-tool-fuels-global-attacks-eee6630a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-alerts-artex-ai-tool-fuels-global-attacks-eee6630a</guid>
+      <description><![CDATA[FBI warns that ARTEX AI-powered framework automates attacks worldwide, including a ConnectWise supply-chain breach exposing Microsoft 365 customer environments. The tool automates exploitation of known vulnerabilities and credential theft, letting attackers bypass controls and access tenant data, risking exfiltration. Teams should monitor ARTEX activity, enforce MFA, apply ConnectWise patches, and review Microsoft 365 tenant settings to mitigate exploitation.]]></description>
+      <pubDate>Sun, 15 Nov 2026 18:29:53 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>YARA-X 1.23.0 Release Adds Improvements and Fixes</title>
+      <link>https://secubuzz.com/news/yara-x-1-23-0-release-adds-improvements-and-fixes-a08baaeb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/yara-x-1-23-0-release-adds-improvements-and-fixes-a08baaeb</guid>
+      <description><![CDATA[YARA-X released version 1.23.0, adding four improvements and fixing sixteen bugs. The update enhances rule parsing performance, stabilizes memory handling, and resolves known false-positive triggers reported by users. Users should download the latest release from the official repository, replace the existing binary, and test comprehensive rule sets to ensure compatibility.]]></description>
+      <pubDate>Sun, 15 Nov 2026 18:17:27 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33496">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
     <item>
       <title>TSMC Employee Data Breach Exposes 46,000 Records via Cloud Provider Compromise</title>
       <link>https://secubuzz.com/news/tsmc-employee-data-breach-exposes-46-000-records-v-f97fceb8</link>
@@ -437,24 +455,6 @@
       <description><![CDATA[Microsoft Edge is affected by an upstream browser engine vulnerability identified in the Chromium code base. Cataloged as CVE-2026-126879, the issue involves a use-after-free memory flaw that can lead to remote memory corruption during browser execution. Microsoft released an Edge update incorporating the Chromium patch, and organizations should apply browser updates immediately.]]></description>
       <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126879">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Edge Updates Address Chromium Type Confusion Flaw</title>
-      <link>https://secubuzz.com/news/microsoft-edge-updates-address-chromium-type-confu-b30fc932</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-updates-address-chromium-type-confu-b30fc932</guid>
-      <description><![CDATA[Microsoft Edge incorporates security fixes to mitigate a browser engine weakness discovered within upstream Chromium software. Tracked as CVE-2026-126880, the flaw results from a type confusion error, enabling potential memory corruption or execution manipulation upon rendering malicious web content. Microsoft published Edge updates containing the resolved Chromium code, recommending security teams deploy updated browser versions to all end-user workstations.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126880">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Edge Addresses Chromium Type Confusion CVE-2026-126874</title>
-      <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-type-confusion-c-8386f473</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-type-confusion-c-8386f473</guid>
-      <description><![CDATA[Microsoft Edge (Chromium-based) addresses a type confusion vulnerability identified as CVE-2026-126874 in Chromium. The flaw arises from improper type handling during memory operations, potentially allowing an attacker to corrupt data or cause a crash; no active exploitation reported. Microsoft recommends applying the latest Edge update, which incorporates the Chromium patch; users should also keep Chrome updated for comprehensive protection.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126874">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>

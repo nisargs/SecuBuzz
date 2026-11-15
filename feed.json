@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+    "title": "FBI Alerts: ARTEX AI Tool Fuels Global Attacks",
+    "headline": "FBI Alerts: ARTEX AI Tool Fuels Global Attacks",
+    "summary": "FBI warns that ARTEX AI-powered framework automates attacks worldwide, including a ConnectWise supply-chain breach exposing Microsoft 365 customer environments. The tool automates exploitation of known vulnerabilities and credential theft, letting attackers bypass controls and access tenant data, risking exfiltration. Teams should monitor ARTEX activity, enforce MFA, apply ConnectWise patches, and review Microsoft 365 tenant settings to mitigate exploitation.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-15T18:29:53.000Z",
+    "ingestedAt": "2026-11-15T18:43:14.510Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33496",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33496",
+    "title": "YARA-X 1.23.0 Release Adds Improvements and Fixes",
+    "headline": "YARA-X 1.23.0 Release Adds Improvements and Fixes",
+    "summary": "YARA-X released version 1.23.0, adding four improvements and fixing sixteen bugs. The update enhances rule parsing performance, stabilizes memory handling, and resolves known false-positive triggers reported by users. Users should download the latest release from the official repository, replace the existing binary, and test comprehensive rule sets to ensure compatibility.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-11-15T18:17:27.000Z",
+    "ingestedAt": "2026-11-15T18:43:14.510Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://isc.sans.edu/diary/rss/33496",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
     "title": "TSMC Employee Data Breach Exposes 46,000 Records via Cloud Provider Compromise",
@@ -8297,39 +8329,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99132",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99132",
-    "title": "RHSA-2026:99132: Important: webkit2gtk3 security update",
-    "headline": "RHSA-2026:99132: Important: webkit2gtk3 security update",
-    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-11T22:47:35.000Z",
-    "ingestedAt": "2026-11-12T10:46:45.112Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99168",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99168",
-    "title": "Red Hat Releases c-ares Security Update for RHEL 10.2",
-    "headline": "Red Hat Releases c-ares Security Update for RHEL 10.2",
-    "summary": "Red Hat has released a security update for c-ares on RHEL 10.2 EUS, addressing multiple vulnerabilities with a CVSS base score available in the CVE references. The update is classified as Important by Red Hat Product Security, implying a high severity impact on DNS resolution functionality. Security teams should apply the c-ares update immediately to mitigate the identified vulnerabilities.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-11T22:40:55.000Z",
-    "ingestedAt": "2026-11-11T22:43:22.116Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99168",
     "additionalSources": []
   }
 ]
