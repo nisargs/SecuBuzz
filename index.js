@@ -1,13 +1,14 @@
-import { registerRootComponent } from 'expo';
-import { ExpoRoot } from 'expo-router';
+import 'expo/build/Expo.fx';
+import { TurboModuleRegistry } from 'react-native';
 
-/**
- * Custom entry so Metro always gets a real folder string for routes.
- * Expo Router then loads every screen under src/app/.
- */
-export function App() {
-  const ctx = require.context('./src/app');
-  return <ExpoRoot context={ctx} />;
+// Ensure Expo native JSI bindings (globalThis.expo) are installed in the runtime
+if (!globalThis.expo) {
+  try {
+    const ExpoModulesCore = TurboModuleRegistry.get('ExpoModulesCore');
+    ExpoModulesCore?.installModules?.();
+  } catch (e) {
+    // Graceful fallback
+  }
 }
 
-registerRootComponent(App);
+import 'expo-router/entry';

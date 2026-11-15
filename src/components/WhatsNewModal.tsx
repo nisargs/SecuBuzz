@@ -19,7 +19,7 @@ import { spacing } from '../theme/theme';
 import { haptics } from '../utils/haptics';
 
 export const WHATS_NEW_STORAGE_KEY = '@secubuzz_whats_new_version';
-export const CURRENT_RELEASE_VERSION = '1.0.4';
+export const CURRENT_RELEASE_VERSION = '1.1.0';
 
 interface WhatsNewModalProps {
   visible: boolean;
@@ -160,9 +160,8 @@ export function WhatsNewModal({ visible, onClose }: WhatsNewModalProps) {
                 </View>
               </View>
 
-              {/* Release Timeline Card */}
+              {/* Release Timeline Card v1.1.0 */}
               <View style={styles.timelineRow}>
-                {/* Timeline Node */}
                 <View style={styles.timelineNodeColumn}>
                   <View
                     style={[
@@ -185,12 +184,10 @@ export function WhatsNewModal({ visible, onClose }: WhatsNewModalProps) {
                   />
                 </View>
 
-                {/* Timeline Content */}
                 <View style={styles.timelineContent}>
-                  {/* Version & Badge */}
                   <View style={styles.versionRow}>
                     <Text style={[styles.versionText, { color: colors.textPrimary }]}>
-                      v1.0.4
+                      v1.1.0
                     </Text>
                     <View
                       style={[
@@ -205,6 +202,87 @@ export function WhatsNewModal({ visible, onClose }: WhatsNewModalProps) {
                         LATEST
                       </Text>
                     </View>
+                    <Text style={[styles.dateText, { color: colors.textMuted }]}>
+                      · November 2026
+                    </Text>
+                  </View>
+
+                  <Text style={[styles.taglineText, { color: colors.textSecondary }]}>
+                    Expo SDK 58, React Native 0.88 & Android 15 Edge-to-Edge
+                  </Text>
+
+                  <View style={styles.highlightsContainer}>
+                    <View style={styles.highlightItem}>
+                      <View style={[styles.bullet, { backgroundColor: accentColor }]} />
+                      <View style={{ flex: 1 }}>
+                        <Text style={[styles.highlightTitle, { color: colors.textPrimary }]}>
+                          React Native 0.88 & React 19 Engine
+                        </Text>
+                        <Text style={[styles.highlightDesc, { color: colors.textSecondary }]}>
+                          Modernized core runtime delivering up to 50% faster startup speeds, reduced memory footprint, and enhanced JSI performance.
+                        </Text>
+                      </View>
+                    </View>
+
+                    <View style={styles.highlightItem}>
+                      <View style={[styles.bullet, { backgroundColor: accentColor }]} />
+                      <View style={{ flex: 1 }}>
+                        <Text style={[styles.highlightTitle, { color: colors.textPrimary }]}>
+                          Android 15 Native Edge-to-Edge
+                        </Text>
+                        <Text style={[styles.highlightDesc, { color: colors.textSecondary }]}>
+                          Full-screen architectural immersion seamlessly harmonized with SecuBuzz obsidian dark and AMOLED themes.
+                        </Text>
+                      </View>
+                    </View>
+
+                    <View style={styles.highlightItem}>
+                      <View style={[styles.bullet, { backgroundColor: accentColor }]} />
+                      <View style={{ flex: 1 }}>
+                        <Text style={[styles.highlightTitle, { color: colors.textPrimary }]}>
+                          Enriched Push Notification Drawer Branding
+                        </Text>
+                        <Text style={[styles.highlightDesc, { color: colors.textSecondary }]}>
+                          Threat advisories and breaking news alerts now display the high-resolution SecuBuzz emblem in the notification drawer.
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+
+              {/* Release Timeline Card v1.0.4 */}
+              <View style={styles.timelineRow}>
+                {/* Timeline Node */}
+                <View style={styles.timelineNodeColumn}>
+                  <View
+                    style={[
+                      styles.timelineOuterDot,
+                      { borderColor: colors.border },
+                    ]}
+                  >
+                    <View
+                      style={[
+                        styles.timelineInnerDot,
+                        { backgroundColor: colors.textMuted },
+                      ]}
+                    />
+                  </View>
+                  <View
+                    style={[
+                      styles.timelineLine,
+                      { backgroundColor: colors.border },
+                    ]}
+                  />
+                </View>
+
+                {/* Timeline Content */}
+                <View style={styles.timelineContent}>
+                  {/* Version & Badge */}
+                  <View style={styles.versionRow}>
+                    <Text style={[styles.versionText, { color: colors.textPrimary }]}>
+                      v1.0.4
+                    </Text>
                     <Text style={[styles.dateText, { color: colors.textMuted }]}>
                       · November 2026
                     </Text>
