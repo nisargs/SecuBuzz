@@ -1728,6 +1728,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://cyber.gc.ca/en/alerts-advisories/control-systems-johnson-controls-security-advisory-av26-1158",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/control-systems-johnson-controls-security-advisory-av26-1158",
+    "title": "Johnson Controls EasyIO Firmware Vulnerability",
+    "headline": "Johnson Controls EasyIO Firmware Vulnerability",
+    "summary": "A vulnerability exists in Johnson Controls EasyIO firmware versions up to V3.0b25, potentially affecting industrial control systems. Root cause details are not disclosed, but the flaw could enable unauthorized manipulation of device configuration or operation. Johnson Controls advises users to review the advisory and apply any available firmware updates to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "publishedAt": "2026-11-13T13:56:59.000Z",
+    "ingestedAt": "2026-11-15T06:43:11.234Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cyber.gc.ca/en/alerts-advisories/control-systems-johnson-controls-security-advisory-av26-1158",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
     "sourceUrl": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
     "title": "Trezor Detects Recovery Phrase-Stealing Implants",
@@ -4477,6 +4493,22 @@
     "isFallback": true
   },
   {
+    "id": "https://cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-november-2026-monthly-rollup-av26-1142",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-november-2026-monthly-rollup-av26-1142",
+    "title": "Microsoft Broad Vulnerability Rollup 2026",
+    "headline": "Microsoft Broad Vulnerability Rollup 2026",
+    "summary": "Microsoft disclosed a collection of vulnerabilities affecting .NET, Azure services, Microsoft 365, and other products in its November 2026 security advisory. Specific root causes are not detailed, but the flaws could allow attackers to execute code or elevate privileges within affected components. Microsoft recommends applying the latest cumulative updates and following vendor guidance to remediate the identified weaknesses.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "publishedAt": "2026-11-12T20:42:34.000Z",
+    "ingestedAt": "2026-11-15T06:43:11.234Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-november-2026-monthly-rollup-av26-1142",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:99864",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99864",
     "title": "Red Hat Releases glib2 Security Update",
@@ -5286,6 +5318,22 @@
     "isFallback": true
   },
   {
+    "id": "https://cyber.gc.ca/en/alerts-advisories/progress-software-security-advisory-av26-1148",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/progress-software-security-advisory-av26-1148",
+    "title": "Progress Software Multiple CVE Vulnerabilities",
+    "headline": "Progress Software Multiple CVE Vulnerabilities",
+    "summary": "Progress Software disclosed CVE-identified vulnerabilities in Telerik components, including CVE-2026-106137, CVE-2026-106140, CVE-2026-106152, and CVE-2026-124699. Root causes involve class factory race conditions, deserialization of untrusted data, external configuration control, and improper code generation, potentially enabling remote code execution. Progress recommends applying the latest security patches or upgrading to the specified versions to mitigate the identified risks.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "publishedAt": "2026-11-12T17:01:14.000Z",
+    "ingestedAt": "2026-11-15T06:43:11.234Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cyber.gc.ca/en/alerts-advisories/progress-software-security-advisory-av26-1148",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
     "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
     "title": "Poisoned AI Training Enables Remote Code Execution",
@@ -5611,6 +5659,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cyber.gc.ca/en/alerts-advisories/watchguard-security-advisory-av26-1147",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cyber.gc.ca/en/alerts-advisories/adobe-security-advisory-av26-1146",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/adobe-security-advisory-av26-1146",
+    "title": "Adobe Multiple Product Vulnerabilities 2026",
+    "headline": "Adobe Multiple Product Vulnerabilities 2026",
+    "summary": "Adobe disclosed vulnerabilities in Experience Manager Cloud Service, AEM 6.5, Premiere, Photoshop, and Media Encoder in its November 2026 advisory. Root causes are not disclosed, but the flaws could allow unauthorized code execution or privilege escalation within the affected applications. Adobe recommends applying the latest patches or upgrading to the specified service pack levels to mitigate the risks.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "publishedAt": "2026-11-12T15:45:47.000Z",
+    "ingestedAt": "2026-11-15T06:43:11.234Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cyber.gc.ca/en/alerts-advisories/adobe-security-advisory-av26-1146",
     "additionalSources": []
   },
   {
@@ -8258,70 +8322,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
-    "title": "Exam Security Adapts to AI-Assisted Test Taking",
-    "headline": "Exam Security Adapts to AI-Assisted Test Taking",
-    "summary": "Exam security faces new challenges as test takers increasingly use AI to answer questions. The article notes that detecting AI-assisted cheating remains difficult, prompting the development of new tools and processes to enhance trust in certification exams. Security teams should monitor emerging detection solutions and update exam protocols accordingly today.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-11-11T20:27:00.000Z",
-    "ingestedAt": "2026-11-13T17:51:26.028Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
-    "sourceUrl": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
-    "title": "N-able N-central Platform Offline Over 33 Flaws",
-    "headline": "N-able N-central Platform Offline Over 33 Flaws",
-    "summary": "N-able’s N-central RMM platform was taken offline after the discovery of 33 critical flaws that enable attacker takeover via public exploits. The vulnerabilities lack a single CVE identifier but collectively allow remote code execution and privilege escalation on affected installations. N-able released a hotfix; administrators should apply the update immediately and monitor for unauthorized access attempts.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-11-11T20:05:18.000Z",
-    "ingestedAt": "2026-11-11T21:43:20.158Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
-    "additionalSources": []
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01570615041.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01570615041.html",
-    "title": "Chrome Extended Stable Update 156.0.8078.100 Released",
-    "headline": "Chrome Extended Stable Update 156.0.8078.100 Released",
-    "summary": "Google Chrome released Stable channel build 156.0.8078.100 for Windows and Mac, rolling out over the next weeks. The update includes security patches, but the full list of changes is available in the release log, and users are encouraged to review it. Users should install the update via browser settings or wait for automatic rollout to ensure protection against known vulnerabilities.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-11-11T20:02:29.991Z",
-    "ingestedAt": "2026-11-11T21:44:45.614Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01570615041.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01744469280.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01744469280.html",
-    "title": "Chrome Stable Channel Updated to 157.0.8103.78",
-    "headline": "Chrome Stable Channel Updated to 157.0.8103.78",
-    "summary": "Google Chrome updated the Stable channel to build 157.0.8103.78 for Windows, Mac, and Linux, with rollout scheduled over the coming weeks. Security changes are included, and a list of modifications can be found in the release log, with users advised to review the details. Installation can be performed manually via browser settings or will occur automatically, ensuring users receive protections.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-11-11T20:02:26.373Z",
-    "ingestedAt": "2026-11-11T21:44:45.614Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01744469280.html",
     "additionalSources": []
   }
 ]
