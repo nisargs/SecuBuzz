@@ -1610,6 +1610,22 @@
     ]
   },
   {
+    "id": "https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1160",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1160",
+    "title": "n8n OAuth Account Hijack Vulnerability Exposed",
+    "headline": "n8n OAuth Account Hijack Vulnerability Exposed",
+    "summary": "An OAuth Account Hijack flaw in n8n’s Credential Connect Flow allows attackers to hijack accounts via an unauthenticated callback. The flaw exists in n8n versions prior to 2.45.5, 2.46.1, and 3.0.1, enabling unauthorized access without credentials and granting user control. Administrators should apply the latest n8n release or patch, following the Cyber Centre’s guidance, to eliminate the unauthenticated callback risk.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "publishedAt": "2026-11-13T14:28:49.000Z",
+    "ingestedAt": "2026-11-15T05:43:12.739Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1160",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack",
     "sourceUrl": "https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack",
     "title": "Belarusian Cloud Firm Suffers Ransomware Encryption",
@@ -4739,9 +4755,9 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
-    "title": "Apache HTTP/2 Module Vulnerability Allows Remote Code Execution",
-    "headline": "Apache HTTP/2 Module Vulnerability Allows Remote Code Execution",
-    "summary": "Apache HTTP Server's HTTP/2 module contains a critical flaw that permits unauthenticated remote code execution. The vulnerability, which lacks a CVE identifier, could allow attackers to run arbitrary code on affected servers without credentials. Apache has released an update; administrators should apply the patch immediately and verify that HTTP/2 traffic is properly secured.",
+    "title": "Apache HTTP Server 2.4.71 Vulnerability Enables Remote Code Execution via HTTP/2",
+    "headline": "Apache HTTP Server 2.4.71 Vulnerability Enables Remote Code Execution via HTTP/2",
+    "summary": "Apache HTTP Server 2.4.71 flaw exposes remote code execution via HTTP/2 requests, affecting all versions prior to 2.4.71. The vulnerability allows attackers to run arbitrary code without authentication, potentially compromising entire web servers and exposing sensitive data. Administrators must upgrade to 2.4.71 or later and verify HTTP/2 traffic is secured to mitigate exploitation.",
     "category": "VULNERABILITY",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
@@ -4750,7 +4766,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Canadian Centre for Cyber Security",
+        "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1159"
+      }
+    ]
   },
   {
     "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/",
@@ -5631,6 +5652,22 @@
     ]
   },
   {
+    "id": "https://cyber.gc.ca/en/alerts-advisories/fortinet-security-advisory-av26-1145",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/fortinet-security-advisory-av26-1145",
+    "title": "Fortinet Products Vulnerable to Multiple Flaws",
+    "headline": "Fortinet Products Vulnerable to Multiple Flaws",
+    "summary": "Fortinet products such as FortiAnalyzer, FortiAuthenticator, FortiClient, FortiMail, FortiManager, FortiOS, and FortiPAM contain multiple vulnerabilities. The flaws exist in versions prior to 8.0.3, 8.0.4, 7.6.8, 7.4.8, 7.2.12, and earlier, enabling unauthenticated remote code execution and privilege escalation. Fortinet recommends upgrading to the latest firmware releases or applying the published patches, as detailed in the advisory, to mitigate the exploitation risk.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Canadian Centre for Cyber Security",
+    "publishedAt": "2026-11-12T15:26:42.000Z",
+    "ingestedAt": "2026-11-15T05:43:12.740Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cyber.gc.ca/en/alerts-advisories/fortinet-security-advisory-av26-1145",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:99632",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99632",
     "title": "RHSA-2026:99632: Moderate: gcc-toolset-15-gcc security update",
@@ -5710,6 +5747,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/12/picus-autonomous-penetration-testing/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cyber.gc.ca/en/alerts-advisories/hpe-security-advisory-av26-1144",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/hpe-security-advisory-av26-1144",
+    "title": "HPE Private 5G Core Multiple Vulnerabilities Identified",
+    "headline": "HPE Private 5G Core Multiple Vulnerabilities Identified",
+    "summary": "Multiple vulnerabilities in HPE Networking Private 5G Core versions 1.26.1.4 and earlier allow attackers to compromise core network functions. The flaws enable unauthenticated remote code execution and privilege escalation, potentially disrupting 5G services and exposing sensitive traffic. HPE recommends applying the latest firmware update or patch, as detailed in the security bulletin, to eliminate the core network vulnerabilities.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Canadian Centre for Cyber Security",
+    "publishedAt": "2026-11-12T15:04:28.000Z",
+    "ingestedAt": "2026-11-15T05:43:12.740Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cyber.gc.ca/en/alerts-advisories/hpe-security-advisory-av26-1144",
     "additionalSources": []
   },
   {
@@ -8270,62 +8323,5 @@
     "isFutureSkew": false,
     "url": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01744469280.html",
     "additionalSources": []
-  },
-  {
-    "id": "https://arcticwolf.com/resources/report-de/2026-agentic-security-operations-report-de/",
-    "sourceUrl": "https://arcticwolf.com/resources/report-de/2026-agentic-security-operations-report-de/",
-    "title": "2026 Agentic Security Operations Report Highlights AI Benefits",
-    "headline": "2026 Agentic Security Operations Report Highlights AI Benefits",
-    "summary": "The 2026 Agentic Security Operations Report shows how enterprises use AI-powered security operations to detect threats faster. The study reports a reduction in alert noise and a 35 % increase in analyst efficiency through AI-driven prioritization. Organizations should integrate AI platforms with existing SOAR tools, train analysts on AI outputs, and monitor for false positives.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "publishedAt": "2026-11-11T19:50:23.000Z",
-    "ingestedAt": "2026-11-11T23:44:19.939Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://arcticwolf.com/resources/report-de/2026-agentic-security-operations-report-de/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
-    "title": "The global socket: how threat actors are weaponizing GSocket for stealthy C2",
-    "headline": "The global socket: how threat actors are weaponizing GSocket for stealthy C2",
-    "summary": "Threat actors are deploying GSocket on compromised Linux servers to keep encrypted remote access after the original vulnerability is patched. Learn how to detect, investigate, and remediate this activity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-11-11T19:49:57.000Z",
-    "ingestedAt": "2026-11-11T21:43:53.380Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-    "sourceUrl": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-    "title": "Apache Patches Critical HTTP/2 Remote Code Execution Vulnerability (CVE-2026-119618)",
-    "headline": "Apache Patches Critical HTTP/2 Remote Code Execution Vulnerability (CVE-2026-119618)",
-    "summary": "Apache HTTP Server maintainers released patches addressing a critical remote code execution vulnerability impacting global cloud environments. Tracked as CVE-2026-119618, the flaw in the HTTP/2 module enables unauthenticated remote attackers to execute arbitrary code using specially crafted HTTP requests. Organizations must immediately upgrade to Apache version 2.4.71 or apply the latest security updates to mitigate server compromise risks.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Wiz Research",
-    "publishedAt": "2026-11-11T19:49:10.000Z",
-    "ingestedAt": "2026-11-11T21:43:10.760Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/apache-patches-critical-http-2-flaw/"
-      }
-    ],
-    "cves": [
-      "CVE-2026-119618"
-    ]
   }
 ]
