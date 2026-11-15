@@ -17,6 +17,7 @@ export const VENDOR_PSIRT_SOURCES = [
   'GitHub Security Blog',
   'ZDI Advisories',
   'CERT-EU Security Advisories',
+  'Canadian Centre for Cyber Security',
   'Oracle Security Alerts',
   'Android Security Bulletin',
 ] as const;
@@ -66,6 +67,7 @@ export function getVendorFromSource(source?: string | null): string {
   if (/github/i.test(s)) return 'GitHub';
   if (/zero\s*day\s*initiative|zdi/i.test(s)) return 'ZDI';
   if (/cert-eu/i.test(s)) return 'CERT-EU';
+  if (/canadian\s*centre|cyber\.gc\.ca/i.test(s)) return 'Canadian Centre for Cyber Security';
   if (/splunk/i.test(s)) return 'Splunk';
   if (/oracle/i.test(s)) return 'Oracle';
   if (/android/i.test(s)) return 'Android / Google';
