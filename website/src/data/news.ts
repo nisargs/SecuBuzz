@@ -30,6 +30,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "meta-faces-887m-fine-over-android-photo-access-75c65644",
+    "title": "Meta Faces $887M Fine Over Android Photo Access",
+    "summary": "Meta was fined $887 million by Italian regulators for accessing Android gallery photos and videos on Facebook without explicit user consent. The directive protects smartphones as part of a private sphere, requiring explicit permission before any media access to address privacy violations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/",
+    "publishedAt": "2026-11-14T19:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-faces-887m-fine-over-android-photo-access",
+      "article-75c65644",
+      "75c65644",
+      "meta-faces-887m-fine-over-android-photo-access-3f3ad7"
+    ]
+  },
+  {
     "slug": "bundeswehr-removes-grounding-on-quantum-systems-dr-1fa9f641",
     "title": "Bundeswehr Removes Grounding on Quantum Systems Drones",
     "summary": "A server cyber incident prompted the German Bundeswehr to temporarily ground Quantum Systems reconnaissance drones. The incident exposed supply-chain risk telemetry gaps, though no direct compromise of drone firmware was reported, and no CVE was cited. The Bundeswehr lifted the grounding after remediation and now recommends continuous supply-chain monitoring for future deployments.",
@@ -9658,24 +9676,6 @@ export const news: NewsBrief[] = [
       "article-660e2ead",
       "660e2ead",
       "rhsa-2026-99112-important-firefox-security-update-37d680"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99134-important-grafana-security-update-71fbc78e",
-    "title": "RHSA-2026:99134: Important: grafana security update",
-    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99134",
-    "publishedAt": "2026-11-11T22:31:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99134-important-grafana-security-update",
-      "article-71fbc78e",
-      "71fbc78e",
-      "rhsa-2026-99134-important-grafana-security-update-37d67f"
     ]
   }
 ];

@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2026 10:43:02 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 11:07:49 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Secret Stealer Hits GitHub, Claude Code Becomes Implant</title>
@@ -15,6 +15,15 @@
       <pubDate>Sun, 15 Nov 2026 09:00:37 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/15/week-in-review-secret-stealer-hits-github-repos-claude-code-turned-into-remote-controlled-implant/">Help Net Security</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Meta Faces $887M Fine Over Android Photo Access</title>
+      <link>https://secubuzz.com/news/meta-faces-887m-fine-over-android-photo-access-75c65644</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/meta-faces-887m-fine-over-android-photo-access-75c65644</guid>
+      <description><![CDATA[Meta was fined $887 million by Italian regulators for accessing Android gallery photos and videos on Facebook without explicit user consent. The directive protects smartphones as part of a private sphere, requiring explicit permission before any media access to address privacy violations.]]></description>
+      <pubDate>Sat, 14 Nov 2026 19:00:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/">SecurityWeek</source>
+      <category>General</category>
     </item>
     <item>
       <title>Bundeswehr Removes Grounding on Quantum Systems Drones</title>
@@ -446,15 +455,6 @@
       <description><![CDATA[A Chrome-assigned CVE-2026-126872 exposes incorrect authorization in Chromium's rendering engine, potentially allowing attackers to elevate privileges within Edge. The flaw arises from insufficient access checks during resource loading, enabling unauthorized access to privileged data. Microsoft Edge has released a patch in the latest update; users should install the new version immediately.]]></description>
       <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126872">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium CVE-2026-126873: Use-After-Free Vulnerability</title>
-      <link>https://secubuzz.com/news/chromium-cve-2026-126873-use-after-free-vulnerabil-4d096bab</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-126873-use-after-free-vulnerabil-4d096bab</guid>
-      <description><![CDATA[A Chrome-assigned CVE-2026-126873 triggers a use-after-free in Chromium's memory allocator, potentially enabling remote code execution in Microsoft Edge. The flaw occurs when freed memory is accessed during script execution, allowing attackers to inject malicious code. Microsoft Edge has issued a patch in the latest release; users must update immediately today.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126873">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>
