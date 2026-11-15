@@ -2223,11 +2223,11 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisa-adds-two-known-exploited-vulnerabilities-to-c-b28c58cf",
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability CVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.",
-    "category": "CVE",
-    "severity": "HIGH",
+    "slug": "check-point-vulnerabilities-exploited-in-wild-ee2cd901",
+    "title": "Check Point Vulnerabilities Exploited in Wild",
+    "summary": "Check Point Force Firewalls, Management and Log Servers, Multi-Domain Security Management, and Maestro Orchestrator were compromised by CVE-2026-123039, an input-validation flaw enabling authenticated attackers to elevate privileges. CISA lists the flaw as a known exploited vulnerability, confirming active exploitation in the wild and urging urgent patching. Check Point recommends applying the latest firmware updates and monitoring for unauthorized privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
     "source": "CISA",
     "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
     "publishedAt": "2026-11-13T12:00:00.000Z",
@@ -2235,13 +2235,17 @@ export const news: NewsBrief[] = [
       "CVE-2026-114713",
       "CVE-2026-123039"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Canadian Centre for Cyber Security",
+        "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/check-point-security-advisory-av26-1154"
+      }
+    ],
     "aliases": [
-      "cisa-adds-two-known-exploited-vulnerabilities-to-c",
-      "article-b28c58cf",
-      "b28c58cf",
-      "cisa-adds-two-known-exploited-vulnerabilities-to-c-6c3514",
-      "cisa-adds-two-known-exploited-vulnerabilities-to-catalog"
+      "check-point-vulnerabilities-exploited-in-wild",
+      "article-ee2cd901",
+      "ee2cd901",
+      "check-point-vulnerabilities-exploited-in-wild-6c3514"
     ]
   },
   {
@@ -5751,6 +5755,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "react-server-components-unauthenticated-rce-vulner-53c3d981",
+    "title": "React Server Components Unauthenticated RCE Vulnerability",
+    "summary": "React Server Components in versions prior to 19.0.9, 19.1.10, 19.2.9, and 19.3.1 are vulnerable to an unauthenticated remote code execution flaw. The flaw allows attackers to execute arbitrary code on the server without authentication, potentially compromising application integrity and data. React recommends applying the latest patch releases and updating all affected components to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/react-security-advisory-av26-1152",
+    "publishedAt": "2026-11-12T18:51:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "react-server-components-unauthenticated-rce-vulner",
+      "article-53c3d981",
+      "53c3d981",
+      "react-server-components-unauthenticated-rce-vulner-79bac3",
+      "react-server-components-unauthenticated-rce-vulnerability"
+    ]
+  },
+  {
     "slug": "compat-openssl10-security-update-for-rhel-8-8-51270b4f",
     "title": "compat-openssl10 Security Update for RHEL 8.8",
     "summary": "Red Hat released a compat-openssl10 update for RHEL 8.8 and SAP solutions to address critical cryptographic issues. The update fixes multiple vulnerabilities that could allow attackers to bypass SSL/TLS validation, potentially enabling man-in-the-middle attacks, and is rated as Important by Red Hat Product Security. Systems should apply the new packages immediately and verify that OpenSSL functionality remains intact.",
@@ -6527,6 +6550,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "craft-cms-vulnerability-cve-2026-123488-exploited-bd17b004",
+    "title": "Craft CMS Vulnerability CVE-2026-123488 Exploited",
+    "summary": "Craft CMS versions prior to 4.18.9, 5.11.2, and Commerce-mollie prior to 4.4.3 contain CVE-2026-123488, a vulnerability that has been exploited in the wild. The flaw permits attackers to execute arbitrary code on the server, enabling full compromise of affected installations. Administrators should apply the latest Craft CMS and Commerce-mollie updates and monitor for unauthorized activity.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/craft-cms-security-advisory-av26-1086",
+    "publishedAt": "2026-11-12T15:54:21.000Z",
+    "cves": [
+      "CVE-2026-123488"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "craft-cms-vulnerability-cve-2026-123488-exploited",
+      "article-bd17b004",
+      "bd17b004",
+      "craft-cms-vulnerability-cve-2026-123488-exploited-30b06c"
+    ]
+  },
+  {
     "slug": "citrix-releases-patches-for-12-netscaler-flaws-4e7d75dc",
     "title": "Citrix Releases Patches for 12 NetScaler Flaws",
     "summary": "Citrix has issued patches for twelve critical NetScaler ADC, Gateway, and Console flaws that could enable denial-of-service or authentication bypass. The most severe flaw, CVE-2026-120868, is a memory overflow with CVSS 9.3 that permits unauthenticated remote code execution, potentially compromising entire NetScaler deployments. Citrix recommends applying the latest cumulative update immediately and verifying configuration changes to mitigate the vulnerabilities.",
@@ -6849,6 +6892,27 @@ export const news: NewsBrief[] = [
       "98a854e0",
       "study-reveals-critical-supply-chain-vulnerability-2e6aa5",
       "study-reveals-critical-supply-chain-vulnerability-in-50-plat"
+    ]
+  },
+  {
+    "slug": "barracuda-vulnerabilities-cve-2026-116606-exploite-8eb71774",
+    "title": "Barracuda Vulnerabilities CVE-2026-116606 Exploited",
+    "summary": "Barracuda Email Security Gateway, Load Balancer ADC, Web Application Firewall, and Web Security Gateway are affected by CVE-2026-116606, a vulnerability exploited in the wild. The flaw allows attackers to execute arbitrary code on the affected devices, potentially compromising network traffic and user data. Barracuda recommends applying the latest firmware updates and reviewing the advisory links to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/barracuda-networks-security-advisory-av26-1112",
+    "publishedAt": "2026-11-12T14:22:59.000Z",
+    "cves": [
+      "CVE-2026-116606"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "barracuda-vulnerabilities-cve-2026-116606-exploite",
+      "article-8eb71774",
+      "8eb71774",
+      "barracuda-vulnerabilities-cve-2026-116606-exploite-76d542",
+      "barracuda-vulnerabilities-cve-2026-116606-exploited"
     ]
   },
   {
@@ -9596,62 +9660,6 @@ export const news: NewsBrief[] = [
       "article-54632ed4",
       "54632ed4",
       "rhsa-2026-99091-important-guava-security-update-37d682"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99088-important-containernetworking-plug-61aef30b",
-    "title": "RHSA-2026:99088: Important: containernetworking-plugins security update",
-    "summary": "An update for containernetworking-plugins is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99088",
-    "publishedAt": "2026-11-11T18:44:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99088-important-containernetworking-plug",
-      "article-61aef30b",
-      "61aef30b",
-      "rhsa-2026-99088-important-containernetworking-plug-37d682",
-      "rhsa-2026-99088-important-containernetworking-plugins-securi"
-    ]
-  },
-  {
-    "slug": "yodl-buffer-over-read-causes-denial-of-service-a3e333a7",
-    "title": "Yodl Buffer Over-Read Causes Denial of Service",
-    "summary": "Ubuntu identified a buffer over-read in Yodl that could be triggered by malformed input. The flaw may allow an attacker to crash Yodl, leading to a denial of service, though no active exploitation has been reported. Users should update to the latest Yodl package via Ubuntu repositories; no additional workarounds are required.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9063-1",
-    "publishedAt": "2026-11-11T18:33:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "yodl-buffer-over-read-causes-denial-of-service",
-      "article-a3e333a7",
-      "a3e333a7",
-      "yodl-buffer-over-read-causes-denial-of-service-7e86f6"
-    ]
-  },
-  {
-    "slug": "snmptt-allows-remote-command-execution-via-unsanit-67af8411",
-    "title": "SNMPTT Allows Remote Command Execution via Unsanitized Traps",
-    "summary": "Ubuntu discovered that SNMPTT fails to sanitize trap data passed to EXEC, PREEXEC, and unknown_trap_exec commands. A remote attacker could exploit this flaw to run arbitrary shell commands, potentially compromising the host system without authentication. Apply the latest SNMPTT update from Ubuntu repositories immediately, promptly; no additional mitigations are necessary.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9062-1",
-    "publishedAt": "2026-11-11T18:33:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "snmptt-allows-remote-command-execution-via-unsanit",
-      "article-67af8411",
-      "67af8411",
-      "snmptt-allows-remote-command-execution-via-unsanit-7e86f9",
-      "snmptt-allows-remote-command-execution-via-unsanitized-traps"
     ]
   }
 ];
