@@ -5516,6 +5516,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "amd-advises-on-processor-vulnerability-fixes-76a36aa4",
+    "title": "AMD Advises on Processor Vulnerability Fixes",
+    "summary": "AMD disclosed vulnerabilities in multiple Athlon and EPYC processor families, excluding certain firmware revisions, that could enable unauthorized code execution via microcode. Root cause details are not specified, and no active exploitation has been reported, but the flaw could allow remote code execution. AMD advises applying the latest firmware updates from its support portal to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/amd-security-advisory-av26-1155",
+    "publishedAt": "2026-11-12T20:24:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "amd-advises-on-processor-vulnerability-fixes",
+      "article-76a36aa4",
+      "76a36aa4",
+      "amd-advises-on-processor-vulnerability-fixes-39e93f"
+    ]
+  },
+  {
     "slug": "red-hat-issues-libx11-security-update-c4881392",
     "title": "Red Hat Issues libX11 Security Update",
     "summary": "Red Hat released a security update for libX11 affecting Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and mitigates potential privilege escalation. Customers should install the patch immediately to mitigate potential denial-of-service or privilege escalation risks.",
@@ -5798,6 +5816,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "docker-issues-advisory-on-engine-and-swarmkit-vuln-f9cf6c63",
+    "title": "Docker Issues Advisory on Engine and SwarmKit Vulnerabilities",
+    "summary": "Docker issued an advisory for vulnerabilities in Engine, Moby, and SwarmKit before 23.0.0, 2.0.0-beta.28, and 1.12.1 that could overwrite forwarded client identity. The flaw stems from a proxy that mishandles identity headers, but no exploitation has been reported. Docker advises reviewing links and applying available updates immediately to secure deployments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/docker-security-advisory-av26-1153",
+    "publishedAt": "2026-11-12T18:58:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "docker-issues-advisory-on-engine-and-swarmkit-vuln",
+      "article-f9cf6c63",
+      "f9cf6c63",
+      "docker-issues-advisory-on-engine-and-swarmkit-vuln-656362",
+      "docker-issues-advisory-on-engine-and-swarmkit-vulnerabilitie"
+    ]
+  },
+  {
     "slug": "red-hat-releases-sso-7-6-14-update-for-rhel-7-b589d983",
     "title": "Red Hat Releases SSO 7.6.14 Update for RHEL 7",
     "summary": "Red Hat issued a security update for Single Sign-On 7.6.14 on RHEL 7, addressing multiple vulnerabilities. The advisory labels the update as critical, but the vendor rates the security impact as none and provides CVSS scores via CVE links. Administrators should install the new packages immediately to ensure compatibility, though no immediate exploitation risk is reported.",
@@ -5904,6 +5941,24 @@ export const news: NewsBrief[] = [
       "article-6c9f2bc5",
       "6c9f2bc5",
       "rhsa-2026-99723-important-dnsmasq-security-update-37d669"
+    ]
+  },
+  {
+    "slug": "mongodb-advises-on-server-vulnerabilities-1c9addb3",
+    "title": "MongoDB Advises on Server Vulnerabilities",
+    "summary": "MongoDB released an advisory for vulnerabilities affecting Server versions prior to 4.4.32, 5.0.35, 6.0.30, 7.0.48, 8.0.37, 8.3.16, and 9.0.7 that could allow use of readConcern afterOpTime. Root cause details are not disclosed, and no active exploitation has been reported, though the flaw could enable privilege escalation. MongoDB recommends applying the latest server updates and restricting readConcern usage to system users.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/mongodb-security-advisory-av26-1151",
+    "publishedAt": "2026-11-12T18:43:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mongodb-advises-on-server-vulnerabilities",
+      "article-1c9addb3",
+      "1c9addb3",
+      "mongodb-advises-on-server-vulnerabilities-399fba"
     ]
   },
   {
@@ -9616,63 +9671,6 @@ export const news: NewsBrief[] = [
       "53025add",
       "japan-allocates-emergency-cybersecurity-funding-fo-3197c7",
       "japan-allocates-emergency-cybersecurity-funding-for-proactiv"
-    ]
-  },
-  {
-    "slug": "arctic-wolf-highlights-agentic-ai-in-2026-security-994392c0",
-    "title": "Arctic Wolf Highlights Agentic AI in 2026 Security Operations",
-    "summary": "Arctic Wolf’s 2026 Agentic Security Operations Report details how agentic AI collaborates with expert analysts to streamline incident response workflows. The integration reduces investigation time by up to 40 % and boosts detection accuracy, enabling quicker threat containment. Teams should evaluate agentic AI platforms, integrate them with SOAR, and train analysts to interpret AI-generated hypotheses.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/on-demand-webinar/inside-the-2026-agentic-security-operations-report/",
-    "publishedAt": "2026-11-11T22:12:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arctic-wolf-highlights-agentic-ai-in-2026-security",
-      "article-994392c0",
-      "994392c0",
-      "arctic-wolf-highlights-agentic-ai-in-2026-security-74fba6",
-      "arctic-wolf-highlights-agentic-ai-in-2026-security-operation"
-    ]
-  },
-  {
-    "slug": "greeter-attack-chain-leaves-hello-trail-in-cloud-l-562a968e",
-    "title": "Greeter Attack Chain Leaves 'Hello' Trail in Cloud Logs",
-    "summary": "Researchers identified a new cloud attack chain named Greeter, in which adversaries embed 'hello' messages in log files to obscure their activity. The technique masks lateral movement and persistence indicators, making forensic analysis more difficult and delaying incident response. Defenders should enable log integrity monitoring, correlate anomalous 'hello' entries with known threat patterns, and apply stricter log retention policies.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
-    "publishedAt": "2026-11-11T21:44:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "greeter-attack-chain-leaves-hello-trail-in-cloud-l",
-      "article-562a968e",
-      "562a968e",
-      "greeter-attack-chain-leaves-hello-trail-in-cloud-l-2e556e",
-      "greeter-attack-chain-leaves-hello-trail-in-cloud-logs"
-    ]
-  },
-  {
-    "slug": "emudhra-revokes-eight-ca-certificates-after-key-mi-d1633deb",
-    "title": "eMudhra Revokes Eight CA Certificates After Key Mishap",
-    "summary": "eMudhra revoked eight intermediate CA certificates after discovering improper private key handling during certificate generation. The mishandling exposed the possibility of unauthorized certificate issuance, but no active exploitation has been reported. eMudhra has issued revocation notices, is reviewing its key management procedures, and will implement additional safeguards to prevent future incidents.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
-    "publishedAt": "2026-11-11T21:27:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "emudhra-revokes-eight-ca-certificates-after-key-mi",
-      "article-d1633deb",
-      "d1633deb",
-      "emudhra-revokes-eight-ca-certificates-after-key-mi-38f63a",
-      "emudhra-revokes-eight-ca-certificates-after-key-mishap"
     ]
   }
 ];

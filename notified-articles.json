@@ -5059,5 +5059,8 @@
   "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1157",
   "https://cyber.gc.ca/en/alerts-advisories/nodejs-security-advisory-av26-1156",
   "https://cyber.gc.ca/en/alerts-advisories/apple-security-advisory-av26-1149",
-  "https://cyber.gc.ca/en/alerts-advisories/citrix-security-advisory-av26-1150"
+  "https://cyber.gc.ca/en/alerts-advisories/citrix-security-advisory-av26-1150",
+  "https://cyber.gc.ca/en/alerts-advisories/amd-security-advisory-av26-1155",
+  "https://cyber.gc.ca/en/alerts-advisories/docker-security-advisory-av26-1153",
+  "https://cyber.gc.ca/en/alerts-advisories/mongodb-security-advisory-av26-1151"
 ]
