@@ -13,7 +13,7 @@
   - **Android 15 Native Edge-to-Edge**: `androidNavigationBar` is completely deprecated and removed from `app.json`. Edge-to-edge display is handled natively by Android 15 / React Native 0.88.
   - **Native Bootstrap Invariant (`index.js`)**: In React Native 0.88 Bridgeless mode, `index.js` MUST explicitly import `expo/build/Expo.fx` and invoke `TurboModuleRegistry.get('ExpoModulesCore')?.installModules?.()` before `import 'expo-router/entry'`. This guarantees that `globalThis.expo` is populated natively before route components (`useFonts`, `Haptics`, `SplashScreen`) evaluate, preventing `TypeError: Cannot read property 'EventEmitter' of undefined`.
   - **Full-Color Notification Drawer Branding**: Added `largeIcon: "./assets/icon.png"` to `expo-notifications` plugin in `app.json`. Notifications display the high-res SecuBuzz emblem in the notification drawer alongside the monochrome status bar icon.
-  - **Release v1.1.0 Telemetry**: Version code bumped to `11` (`version: "1.1.0"`, commit `af26f31`). Submitted to Google Play Production on Nov 15, 2026. All 20/20 `npx expo-doctor` checks passing, `tsc --noEmit` 0 errors. Target SDK 36, API 24+, universal 4-ABI coverage. Verified on physical device via Expo Go 58.0.5.
+  - **Release v1.1.0 Telemetry**: Version code bumped to `11` (`version: "1.1.0"`, commit `af26f31`). Officially APPROVED and PUBLISHED to Google Play Production on Nov 15, 2026. All 20/20 `npx expo-doctor` checks passing, `tsc --noEmit` 0 errors. Target SDK 36, API 24+, universal 4-ABI coverage. Verified on physical device via Expo Go 58.0.5.
   - **v1.2.0 Roadmap**: Native home screen widgets (`expo-widgets` with Jetpack Compose) are slated for Release v1.2.0 as a dedicated standalone feature release.
 
 
@@ -158,7 +158,7 @@
       - **Automated Integrity Gate (`scripts/verify_vendor_radar.mjs`)**: Running `npm run verify:radar` audits both website and worker registries, asserting 100% operational baselines and valid HTTPS telemetry endpoints.
 
 ## 6. Native `.aab` Releases & Production Updates
-- **Release v1.1.0 (Version Code 11 - SUBMITTED to Google Play Store Nov 15, 2026 / Git `44ae4f5` / Engine: Expo SDK 58.0.25 & React Native 0.88.1):**
+- **Release v1.1.0 (Version Code 11 - PUBLISHED & LIVE on Google Play Store Nov 15, 2026 / Git `af26f31` / Engine: Expo SDK 58.0.25 & React Native 0.88.1):**
   - **Core Runtime & Engine Upgrade (Nov 15, 2026)**:
     - Upgraded Expo from SDK 57 to SDK `58.0.25`, React Native from `0.86.3` to `0.88.1`, React from `19.2.3` to `19.3.0`, and `@types/react` to `19.3.0`.
     - Modernized core architecture to React Native 0.88 Bridgeless mode, delivering up to 50% faster startup speeds, reduced memory footprint, and enhanced JSI performance.
@@ -571,14 +571,17 @@
        - High-limit & keyless architecture: Shodan InternetDB (open ports + CVEs, 0 keys, 100% free) + RDAP (`rdap.org`, WHOIS, 0 keys) + IP-API (ISP/geo, 0 keys) + AbuseIPDB + 24-72h Cloudflare edge cache.
        - High evergreen SEO value driving organic web visitors to the Google Play Store app.
 - **Recent Production Deployments Record**:
-  - **Release v1.1.0: Expo SDK 58, React Native 0.88 & Android 15 Edge-to-Edge (Nov 15, 2026 / Version Code 11 / Commit `44ae4f5`)**:
+  - **Release v1.1.0: Expo SDK 58, React Native 0.88 & Android 15 Edge-to-Edge (PUBLISHED & LIVE on Google Play Nov 15, 2026 / Version Code 11 / Commit `af26f31`)**:
     - Upgraded mobile app core runtime to Expo SDK `58.0.25`, React Native `0.88.1`, React `19.3.0`, and `@types/react@19.3.0`.
     - Android 15 native edge-to-edge layout fully enforced (removed deprecated `androidNavigationBar` from `app.json`).
     - Configured native JSI bootstrap sequence in `index.js` (`Expo.fx` + `ExpoModulesCore.installModules`) preventing `TypeError: Cannot read property 'EventEmitter' of undefined` in Bridgeless mode.
     - Added full-color notification drawer branding via `largeIcon: "./assets/icon.png"` in `expo-notifications`.
     - Cleaned React 19 ref typing in `OnboardingModal.tsx` and RN 0.88 tab bar icon color typing in `_layout.tsx`.
     - Verified all 20/20 `npx expo-doctor` checks, `tsc --noEmit` 0 errors, Metro Android bundle 1,354 modules.
-    - Successfully built and submitted `.aab` (Target SDK 36, API 24+) to Google Play Console for production rollout across 178 countries.
+    - Successfully built and submitted `.aab` (Target SDK 36, API 24+); officially approved and published by Google Play across 178 countries within 35 minutes.
+  - **Website Founder LinkedIn Click Telemetry & UTM Attribution (Nov 15, 2026 / Worker Version `970439da-1b99-464b-8ba1-beef5094bb6e` / Commit `e321b54`)**:
+    - Architected `/go/linkedin` (also `/founder`, `/nisarg`) edge redirect with automatic D1 click tracking (`founder_clicks`), anonymous cookie attribution, and UTM tagging for LinkedIn profile analytics.
+    - Auto-migrated schema with self-healing table creation on initial hit. Integrated telemetry reporting into `cf_analytics.mjs` (7-point report).
   - **Website Navigation, Filter Sorting & Copy Modernization (Oct 28, 2026)**:
     - Alphabetical Category Sorting: Scoped and sorted the Category dropdown in `website/src/pages/News.tsx` alphabetically (`Breach`, `CVE`, `General`, `Nation State`, `Ransomware`, `Vulnerability`) using `localeCompare`.
     - Alphabetical Vendor PSIRT Select with Live Search: Upgraded `website/src/components/VendorSelect.tsx` with alphabetical vendor ordering and an internal search filter (`Search vendors...`), harmonizing news vendor filtering with the advisories experience.
