@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-tools-artex-pentagi-hexstrike-automate-attacks-e278896a",
+    "title": "AI Tools ARTEX, PentAGI, HexStrike Automate Attacks",
+    "summary": "Cisco Talos reports that ARTEX, PentAGI, and HexStrike AI platforms automate reconnaissance, vulnerability testing, and follow-on exploits. These tools combine security utilities with AI agents, enabling operators to run tasks concurrently and accelerate target selection; no public exploit yet. Security teams should monitor AI-driven activity, enforce strict access controls on testing tools, and update detection rules to flag automated scanning.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-artex/",
+    "publishedAt": "2026-11-16T15:48:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-tools-artex-pentagi-hexstrike-automate-attacks",
+      "article-e278896a",
+      "e278896a",
+      "ai-tools-artex-pentagi-hexstrike-automate-attacks-7c2a26"
+    ]
+  },
+  {
+    "slug": "fandango-breach-exposes-payment-card-details-d376f4c2",
+    "title": "Fandango Breach Exposes Payment Card Details",
+    "summary": "Fandango Media disclosed that attackers accessed payment card information entered on its checkout pages. The breach exposed credit and debit card numbers, potentially enabling fraudulent transactions; no evidence of data exfiltration beyond card details has been reported. Fandango should enforce PCI DSS controls, rotate affected credentials, and notify affected customers while monitoring for suspicious activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
+    "publishedAt": "2026-11-16T15:44:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fandango-breach-exposes-payment-card-details",
+      "article-d376f4c2",
+      "d376f4c2",
+      "fandango-breach-exposes-payment-card-details-a34d81"
+    ]
+  },
+  {
     "slug": "qualcomm-releases-advisory-for-product-vulnerabili-cbcbddc5",
     "title": "Qualcomm Releases Advisory for Product Vulnerabilities",
     "summary": "Qualcomm released advisory AV26-1164 on November 2, 2026, detailing multiple vulnerabilities affecting its product line. The flaws could allow attackers to gain unauthorized access or disrupt device operation, though no public exploits have been reported. Users and administrators should review the advisory link and apply available updates to mitigate the risks.",
@@ -251,6 +287,24 @@ export const news: NewsBrief[] = [
       "article-aa9c40c0",
       "aa9c40c0",
       "huntress-ctf-2026-retro-explores-ai-assistance-47c7e4"
+    ]
+  },
+  {
+    "slug": "fake-prime-gaming-site-steals-ea-credentials-391fe224",
+    "title": "Fake Prime Gaming Site Steals EA Credentials",
+    "summary": "A counterfeit Prime Gaming offer lures FIFA 27 players into submitting EA passwords and 2FA codes. The phishing page mimics official branding, captures credentials via a hidden form, and forwards them to an attacker-controlled server, enabling account takeover. Users should verify URLs, enable MFA, reset passwords, and report the spoofed site to EA and Prime Gaming to stop credential theft.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/fake-prime-gaming-x-fc-27-reward-site-harvests-ea-passwords-and-2fa-codes",
+    "publishedAt": "2026-11-16T13:38:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-prime-gaming-site-steals-ea-credentials",
+      "article-391fe224",
+      "391fe224",
+      "fake-prime-gaming-site-steals-ea-credentials-3cd584"
     ]
   },
   {
@@ -773,6 +827,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "backdoored-lora-models-pose-supply-chain-threat-50a4e18d",
+    "title": "Backdoored LoRA Models Pose Supply Chain Threat",
+    "summary": "Backdoored LoRA models introduce supply chain risk by embedding malicious code within AI training weights. These compromised models can execute hidden payloads during inference, potentially compromising downstream applications; no public exploit yet, but the risk is amplified by widespread model sharing. Organizations should verify model provenance, employ integrity checks, and isolate inference environments to mitigate potential attacks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/",
+    "publishedAt": "2026-11-16T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "backdoored-lora-models-pose-supply-chain-threat",
+      "article-50a4e18d",
+      "50a4e18d",
+      "backdoored-lora-models-pose-supply-chain-threat-559524"
+    ]
+  },
+  {
     "slug": "eset-mobile-security-adds-phishing-protection-to-i-c388edf8",
     "title": "ESET Mobile Security Adds Phishing Protection to iOS",
     "summary": "ESET released Mobile Security for iOS 18.0+, offering link verification and device scans for iPhone users. The app performs real-time link analysis, reviews permissions, and evaluates Wi-Fi connections, providing recommendations to mitigate phishing and configuration risks. Users can install the free app without an account; security teams should enable it on corporate devices to enforce link checks and monitor settings.",
@@ -1286,9 +1358,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fireworks-ai-key-leak-enables-malicious-extensions-c1622694",
-    "title": "Fireworks AI Key Leak Enables Malicious Extensions in Cursor Marketplace",
-    "summary": "A stolen Fireworks AI key infiltrated Cursor’s marketplace, enabling attackers to exfiltrate data and deploy malicious Claude Code extensions. The compromised extensions allowed remote-controlled implants, credential harvesting, and trojanized code, exposing users to data theft. Cursor and Anthropic issued a patch, revoked the key, and urged users to update extensions and monitor anomalies.",
+    "slug": "fireworks-ai-key-leak-enables-malicious-claude-cod-a45996bf",
+    "title": "Fireworks AI Key Leak Enables Malicious Claude Code Extensions",
+    "summary": "Fireworks AI’s stolen API key was used to deploy malicious Claude Code extensions, compromising users’ AI environments. The extensions exfiltrated credentials, enabled remote implants, and trojanized code, exposing sensitive data to attackers. Fireworks AI revoked the key, enforced MFA, and urged users to update extensions and monitor logs for anomalies.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -1299,14 +1371,18 @@ export const news: NewsBrief[] = [
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/"
       }
     ],
     "aliases": [
-      "fireworks-ai-key-leak-enables-malicious-extensions",
-      "article-c1622694",
-      "c1622694",
-      "fireworks-ai-key-leak-enables-malicious-extensions-4e02b7",
-      "fireworks-ai-key-leak-enables-malicious-extensions-in-cursor"
+      "fireworks-ai-key-leak-enables-malicious-claude-cod",
+      "article-a45996bf",
+      "a45996bf",
+      "fireworks-ai-key-leak-enables-malicious-claude-cod-4e02b7",
+      "fireworks-ai-key-leak-enables-malicious-claude-code-extensio"
     ]
   },
   {
@@ -9635,87 +9711,6 @@ export const news: NewsBrief[] = [
       "aa1e061e",
       "critical-apache-http-2-flaw-could-let-unauthentica-267175",
       "critical-apache-http-2-flaw-could-let-unauthenticated-attack"
-    ]
-  },
-  {
-    "slug": "screenconnect-targeted-288-endpoints-via-rogue-cli-9e5eb3bd",
-    "title": "ScreenConnect Targeted 288 Endpoints via Rogue Clients",
-    "summary": "ConnectWise reported unauthorized access incidents affecting at least 288 endpoints across 48 organizations using ScreenConnect with rogue client extensions. The company disabled five third-party extensions in partner environments, noting no evidence of infrastructure compromise or software vulnerability in ScreenConnect itself. Security teams should monitor for rogue client activity, enforce extension whitelisting, and review access controls to mitigate similar threats.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
-    "publishedAt": "2026-11-12T04:39:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "screenconnect-targeted-288-endpoints-via-rogue-cli",
-      "article-9e5eb3bd",
-      "9e5eb3bd",
-      "screenconnect-targeted-288-endpoints-via-rogue-cli-5b399d",
-      "screenconnect-targeted-288-endpoints-via-rogue-clients"
-    ]
-  },
-  {
-    "slug": "sckit-worm-compromises-screenconnect-panels-infect-0637915f",
-    "title": "SCKit Worm Compromises ScreenConnect Panels, Infects 288 Devices",
-    "summary": "Attackers leveraged the SCKit worm to compromise cloud-hosted ConnectWise ScreenConnect panels, infecting at least 288 endpoints across 48 organizations. The worm exploited unauthorized panel access to deploy rogue ScreenConnect clients, establishing session-cookie relays for persistence and remote control. Security teams must audit credentials, enforce MFA, terminate unverified clients, and apply vendor updates to block further exploitation.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/connectwise-screenconnect-hijacked/",
-    "publishedAt": "2026-11-12T03:57:06.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Huntress",
-        "sourceUrl": "https://www.huntress.com/blog/sckit-worm-rogue-screenconnect"
-      }
-    ],
-    "aliases": [
-      "sckit-worm-compromises-screenconnect-panels-infect",
-      "article-0637915f",
-      "0637915f",
-      "sckit-worm-compromises-screenconnect-panels-infect-3c4796",
-      "sckit-worm-compromises-screenconnect-panels-infects-288-devi"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99148-important-kernel-security-bug-fix-fdd9b60e",
-    "title": "RHSA-2026:99148: Important: kernel security, bug fix, and enhancement update",
-    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99148",
-    "publishedAt": "2026-11-12T03:54:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99148-important-kernel-security-bug-fix",
-      "article-fdd9b60e",
-      "fdd9b60e",
-      "rhsa-2026-99148-important-kernel-security-bug-fix-37d67f",
-      "rhsa-2026-99148-important-kernel-security-bug-fix-and-enhanc"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99166-important-vim-security-bug-fix-and-deb62b73",
-    "title": "RHSA-2026:99166: Important: vim security, bug fix, and enhancement update",
-    "summary": "An update for vim is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99166",
-    "publishedAt": "2026-11-12T03:48:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99166-important-vim-security-bug-fix-and",
-      "article-deb62b73",
-      "deb62b73",
-      "rhsa-2026-99166-important-vim-security-bug-fix-and-37d67f",
-      "rhsa-2026-99166-important-vim-security-bug-fix-and-enhanceme"
     ]
   }
 ];

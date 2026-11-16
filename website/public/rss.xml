@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 15:48:54 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 16:45:06 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Tools ARTEX, PentAGI, HexStrike Automate Attacks</title>
+      <link>https://secubuzz.com/news/ai-tools-artex-pentagi-hexstrike-automate-attacks-e278896a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-tools-artex-pentagi-hexstrike-automate-attacks-e278896a</guid>
+      <description><![CDATA[Cisco Talos reports that ARTEX, PentAGI, and HexStrike AI platforms automate reconnaissance, vulnerability testing, and follow-on exploits. These tools combine security utilities with AI agents, enabling operators to run tasks concurrently and accelerate target selection; no public exploit yet. Security teams should monitor AI-driven activity, enforce strict access controls on testing tools, and update detection rules to flag automated scanning.]]></description>
+      <pubDate>Mon, 16 Nov 2026 15:48:20 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-artex/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Fandango Breach Exposes Payment Card Details</title>
+      <link>https://secubuzz.com/news/fandango-breach-exposes-payment-card-details-d376f4c2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fandango-breach-exposes-payment-card-details-d376f4c2</guid>
+      <description><![CDATA[Fandango Media disclosed that attackers accessed payment card information entered on its checkout pages. The breach exposed credit and debit card numbers, potentially enabling fraudulent transactions; no evidence of data exfiltration beyond card details has been reported. Fandango should enforce PCI DSS controls, rotate affected credentials, and notify affected customers while monitoring for suspicious activity.]]></description>
+      <pubDate>Mon, 16 Nov 2026 15:44:21 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Qualcomm Releases Advisory for Product Vulnerabilities</title>
       <link>https://secubuzz.com/news/qualcomm-releases-advisory-for-product-vulnerabili-cbcbddc5</link>
@@ -123,6 +141,15 @@
       <pubDate>Mon, 16 Nov 2026 14:00:00 GMT</pubDate>
       <source url="https://www.huntress.com/blog/ai-arena-huntress-ctf-2026-retro">Huntress</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Fake Prime Gaming Site Steals EA Credentials</title>
+      <link>https://secubuzz.com/news/fake-prime-gaming-site-steals-ea-credentials-391fe224</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-prime-gaming-site-steals-ea-credentials-391fe224</guid>
+      <description><![CDATA[A counterfeit Prime Gaming offer lures FIFA 27 players into submitting EA passwords and 2FA codes. The phishing page mimics official branding, captures credentials via a hidden form, and forwards them to an attacker-controlled server, enabling account takeover. Users should verify URLs, enable MFA, reset passwords, and report the spoofed site to EA and Prime Gaming to stop credential theft.]]></description>
+      <pubDate>Mon, 16 Nov 2026 13:38:18 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/threat-intel/2026/11/fake-prime-gaming-x-fc-27-reward-site-harvests-ea-passwords-and-2fa-codes">Malwarebytes Labs</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>LiteLLM/Starlette CVE Exploitation Attempts Detected</title>
@@ -377,6 +404,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Backdoored LoRA Models Pose Supply Chain Threat</title>
+      <link>https://secubuzz.com/news/backdoored-lora-models-pose-supply-chain-threat-50a4e18d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/backdoored-lora-models-pose-supply-chain-threat-50a4e18d</guid>
+      <description><![CDATA[Backdoored LoRA models introduce supply chain risk by embedding malicious code within AI training weights. These compromised models can execute hidden payloads during inference, potentially compromising downstream applications; no public exploit yet, but the risk is amplified by widespread model sharing. Organizations should verify model provenance, employ integrity checks, and isolate inference environments to mitigate potential attacks.]]></description>
+      <pubDate>Mon, 16 Nov 2026 06:00:00 GMT</pubDate>
+      <source url="https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/">CrowdStrike</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>ESET Mobile Security Adds Phishing Protection to iOS</title>
       <link>https://secubuzz.com/news/eset-mobile-security-adds-phishing-protection-to-i-c388edf8</link>
       <guid isPermaLink="true">https://secubuzz.com/news/eset-mobile-security-adds-phishing-protection-to-i-c388edf8</guid>
@@ -419,42 +455,6 @@
       <description><![CDATA[Law enforcement released intelligence on ARTEX AI, a group automating global cyberattacks. The report details court findings, threat actor profiles, and defensive controls, outlining the group's tactics, techniques, and procedures. Security teams should review the provided defensive controls, update monitoring, and deploy detection rules across enterprise networks to detect ARTEX AI activity.]]></description>
       <pubDate>Mon, 16 Nov 2026 03:25:10 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/fbi-warns-artex-ai-hacking-tool-is-powering-global-cybe">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Tor Issues Emergency Update Amid Relay DDoS Attack</title>
-      <link>https://secubuzz.com/news/tor-issues-emergency-update-amid-relay-ddos-attack-ff7f5f74</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tor-issues-emergency-update-amid-relay-ddos-attack-ff7f5f74</guid>
-      <description><![CDATA[The Tor Project released version 0.4.9.17 to mitigate an ongoing DDoS attack that overwhelmed network relays. The update includes fixes for IPv6 handling in relay denial-of-service defenses, addressing a flaw that allowed attackers to exhaust relay resources and disrupt anonymity services. Relay operators should upgrade to 0.4.9.17 immediately and monitor relay traffic for abnormal patterns to maintain network stability.]]></description>
-      <pubDate>Mon, 16 Nov 2026 03:23:56 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/tor-ddos-attack/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Agent Decodes 1994 Jeep ECU with Arduino Nano</title>
-      <link>https://secubuzz.com/news/ai-agent-decodes-1994-jeep-ecu-with-arduino-nano-53c9a07a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-decodes-1994-jeep-ecu-with-arduino-nano-53c9a07a</guid>
-      <description><![CDATA[Claude, an AI agent, enabled a Jeep owner to read, copy, and run code inside a 1994 Jeep Cherokee’s ECU. Using a $3 Arduino Nano, the attacker interfaced the ECU’s serial bus to inject firmware that passed California’s smog test, exposing attack vectors. No vendor patch exists; update ECU firmware, secure the diagnostic port, and monitor unauthorized code.]]></description>
-      <pubDate>Mon, 16 Nov 2026 02:09:56 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/claude-cracks-32-year-old-jeep-ecu/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ISC Stormcast Released for Monday, November 16</title>
-      <link>https://secubuzz.com/news/isc-stormcast-released-for-monday-november-16-d34c2895</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-released-for-monday-november-16-d34c2895</guid>
-      <description><![CDATA[ISC Stormcast for Monday, November 16, 2026 was released by SANS Internet Storm Center. The broadcast covers current threat landscape, emerging attack trends, and defensive recommendations, with a focus on real-time analysis. Listeners can access the episode via the ISC website, download the podcast file, and review the accompanying transcript for detailed insights.]]></description>
-      <pubDate>Mon, 16 Nov 2026 02:00:05 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33520">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>FBI Alerts: ARTEX AI Tool Fuels Global Attacks</title>
-      <link>https://secubuzz.com/news/fbi-alerts-artex-ai-tool-fuels-global-attacks-eee6630a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-alerts-artex-ai-tool-fuels-global-attacks-eee6630a</guid>
-      <description><![CDATA[FBI warns that ARTEX AI-powered framework automates attacks worldwide, including a ConnectWise supply-chain breach exposing Microsoft 365 customer environments. The tool automates exploitation of known vulnerabilities and credential theft, letting attackers bypass controls and access tenant data, risking exfiltration. Teams should monitor ARTEX activity, enforce MFA, apply ConnectWise patches, and review Microsoft 365 tenant settings to mitigate exploitation.]]></description>
-      <pubDate>Sun, 15 Nov 2026 18:29:53 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/">BleepingComputer</source>
       <category>General</category>
     </item>
   </channel>
