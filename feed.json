@@ -1,5 +1,38 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
+    "title": "Microsoft says months-old bug caused global Microsoft 365 outage",
+    "headline": "Microsoft says months-old bug caused global Microsoft 365 outage",
+    "summary": "Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-16T16:43:24.000Z",
+    "ingestedAt": "2026-11-16T17:44:58.854Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://therecord.media/uk-ofcom-child-safety-rules-client-side-scanning-left-out",
+    "sourceUrl": "https://therecord.media/uk-ofcom-child-safety-rules-client-side-scanning-left-out",
+    "title": "UK Excludes Client-Side Scanning from Child-Safety Rules",
+    "headline": "UK Excludes Client-Side Scanning from Child-Safety Rules",
+    "summary": "Ofcom said UK child-safety rules will not mandate client-side scanning of personal devices for child-abuse images, leaving tech firms without a regulatory requirement. The decision reflects Ofcom’s limited authority over device-level enforcement, creating a gap that could let child-abuse content remain undetected. Tech firms should adopt internal scanning, user-reporting, and privacy-preserving detection tools to mitigate the regulatory shortfall.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-11-16T15:56:00.000Z",
+    "ingestedAt": "2026-11-16T17:45:09.579Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/uk-ofcom-child-safety-rules-client-side-scanning-left-out",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/hackers-use-artex/",
     "sourceUrl": "https://cybersecuritynews.com/hackers-use-artex/",
     "title": "AI Tools ARTEX, PentAGI, HexStrike Automate Attacks",
@@ -192,6 +225,23 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+    "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+    "headline": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+    "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-16T14:00:00.000Z",
+    "ingestedAt": "2026-11-16T17:43:50.722Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/",
     "sourceUrl": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/",
     "title": "Threat Actors Deploy Autonomous AI Frameworks for Rapid Exploitation",
@@ -253,6 +303,39 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/threat-intel/2026/11/fake-prime-gaming-x-fc-27-reward-site-harvests-ea-passwords-and-2fa-codes",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/microsoft-windows-licensing-error/",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-windows-licensing-error/",
+    "title": "Microsoft Releases Out-of-band Update to Address Windows Licensing and Activation Errors",
+    "headline": "Microsoft Releases Out-of-band Update to Address Windows Licensing and Activation Errors",
+    "summary": "Microsoft released an out-of-band Windows update on November 13, 2026, to fix licensing and activation errors affecting a limited number of enterprise devices. The issue appeared after the November 2026 Windows security update and mainly affects organizations that use scripts or automated tools to manage Windows licenses.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-16T13:36:54.000Z",
+    "ingestedAt": "2026-11-16T17:44:58.855Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+    "title": "Multiple Zero-Days Exploited in N-able, Windows, Chrome, Fridge",
+    "headline": "Multiple Zero-Days Exploited in N-able, Windows, Chrome, Fridge",
+    "summary": "Multiple zero-day vulnerabilities in N-able, Windows, Chrome, and smart-fridge software were exploited across enterprise networks. Attackers leveraged default passwords, malicious updates, and compromised security features to gain unauthorized access and exfiltrate data. Vendors have released patches; organizations should apply updates, enforce strong passwords, implement MFA, and monitor for anomalous activity.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-16T13:27:20.000Z",
+    "ingestedAt": "2026-11-16T17:43:17.871Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
     "additionalSources": []
   },
   {
@@ -354,18 +437,23 @@
   {
     "id": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
     "sourceUrl": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
-    "title": "Retadup Worm Resurfaces, Spreading CoffeeLoader Variant",
-    "headline": "Retadup Worm Resurfaces, Spreading CoffeeLoader Variant",
-    "summary": "Retadup worm resurfaces seven years after takedown, now delivering a new variant of CoffeeLoader malware to infected systems. The NSIS-based installer drops a patched 7z.dll into a temporary directory and executes it via rundll32.exe, enabling payload delivery. Security teams should monitor for the worm’s execution patterns, block rundll32 usage from unknown sources, and apply updated antivirus signatures.",
+    "title": "Retadup USB Worm Resurfaces After 7 Years, Delivering CoffeeLoader Variant to Windows Systems",
+    "headline": "Retadup USB Worm Resurfaces After 7 Years, Delivering CoffeeLoader Variant to Windows Systems",
+    "summary": "The Retadup USB worm resurfaced after seven years, targeting Windows computers via infected USB drives. It delivers a CoffeeLoader variant that exploits graphics hardware during decryption and drops a patched 7z.dll, enabling payload execution through rundll32.exe. Security teams should block rundll32 usage from unknown sources, update antivirus signatures, and monitor for the worm’s execution patterns to mitigate infection.",
     "category": "GENERAL",
-    "severity": "LOW",
+    "severity": "MEDIUM",
     "source": "The Hacker News",
     "publishedAt": "2026-11-16T12:33:18.000Z",
     "ingestedAt": "2026-11-16T14:43:23.609Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/retadup-usb-worm-returns/"
+      }
+    ]
   },
   {
     "id": "https://www.malwarebytes.com/blog/podcast/2026/11/how-to-prepare-your-data-for-your-death-lock-and-code-s07e23",
@@ -7388,18 +7476,23 @@
   {
     "id": "https://therecord.media/romania-russia-cyberattack-emails",
     "sourceUrl": "https://therecord.media/romania-russia-cyberattack-emails",
-    "title": "Romania Blocks Russian Attack on Government Emails",
-    "headline": "Romania Blocks Russian Attack on Government Emails",
-    "summary": "Romania’s intelligence agency reported stopping a Russian state-linked cyber-espionage campaign that targeted government email accounts before data exfiltration could occur. The operation prevented the exfiltration of sensitive information, mitigating potential compromise of national security communications. Authorities should maintain continuous monitoring of state-linked threat actors and enforce robust email authentication protocols.",
+    "title": "Romania Thwarts Russian Cyber-Espionage Targeting Government Emails",
+    "headline": "Romania Thwarts Russian Cyber-Espionage Targeting Government Emails",
+    "summary": "Romanian intelligence thwarted a Russian state-linked cyber-espionage campaign targeting government email accounts exchanging sensitive communications with NATO and EU institutions. The operation aimed to intercept diplomatic correspondence but was halted before any data exfiltration occurred, preserving national security communications. Authorities maintain continuous monitoring of threat actors and enforce robust email authentication protocols to prevent future compromise.",
     "category": "NATION_STATE",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "The Record",
     "publishedAt": "2026-11-12T13:30:00.000Z",
     "ingestedAt": "2026-11-12T13:43:11.611Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://therecord.media/romania-russia-cyberattack-emails",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/romania-russia-cyberattack-espionage"
+      }
+    ]
   },
   {
     "id": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
@@ -8247,88 +8340,5 @@
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:99516",
     "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99514",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99514",
-    "title": "Red Hat httpd:2.4 Update Covers Important Vulnerability",
-    "headline": "Red Hat httpd:2.4 Update Covers Important Vulnerability",
-    "summary": "Red Hat released a security update for the httpd:2.4 module on Enterprise Linux 8.6 Advanced Mission Critical and Extended Update Support platforms. The advisory marks the update as Important, implying a CVSS score in the 7.0-8.9 range, though specific CVE IDs are not listed. Users should apply the update immediately to mitigate potential exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T06:13:43.000Z",
-    "ingestedAt": "2026-11-12T06:43:12.716Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99514",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99513",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99513",
-    "title": "Red Hat Releases Important Update for httpd:2.4",
-    "headline": "Red Hat Releases Important Update for httpd:2.4",
-    "summary": "Red Hat issued an important security update for the httpd:2.4 module on RHEL 8.4 AMCS and EUS LLA platforms. The update addresses multiple vulnerabilities with CVSS scores indicating significant risk, though specific CVE identifiers are referenced in the advisory. Security teams should apply the patch immediately to mitigate potential exploitation and maintain compliance with Red Hat’s security guidance.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T06:09:05.000Z",
-    "ingestedAt": "2026-11-12T07:43:09.779Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99513",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99511",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99511",
-    "title": "Red Hat Issues Important Update for aspell",
-    "headline": "Red Hat Issues Important Update for aspell",
-    "summary": "Red Hat released an important security update for the aspell package on RHEL 9.6 Extended Update Support. The advisory covers multiple vulnerabilities with CVSS scores indicating significant risk, with CVE references provided in the documentation. Administrators should apply the patch promptly to prevent exploitation and align with Red Hat’s security maintenance schedule.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T05:49:15.000Z",
-    "ingestedAt": "2026-11-12T07:43:09.780Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99511",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/12/sans-industrial-cybersecurity-survey/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/sans-industrial-cybersecurity-survey/",
-    "title": "CISOs and OT Engineers Disagree on Cyber Resilience",
-    "headline": "CISOs and OT Engineers Disagree on Cyber Resilience",
-    "summary": "According to a SANS survey, CISOs and engineers disagree on operational technology resilience during IT compromises. While all surveyed security chiefs expect facilities to maintain output using manual controls, only 15% of engineering practitioners express confidence in process survival. Industrial organizations should align leadership expectations with frontline engineering capabilities to improve manual operational procedures and threat response plans.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-12T05:30:13.000Z",
-    "ingestedAt": "2026-11-12T09:46:30.095Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/12/sans-industrial-cybersecurity-survey/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-    "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
-    "headline": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
-    "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-12T05:12:26.000Z",
-    "ingestedAt": "2026-11-12T05:43:31.676Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-119618"
-    ],
-    "additionalSources": [],
-    "isFallback": true
   }
 ]

@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 16:45:06 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 17:47:57 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft says months-old bug caused global Microsoft 365 outage</title>
+      <link>https://secubuzz.com/news/microsoft-says-months-old-bug-caused-global-micros-b35814fa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-says-months-old-bug-caused-global-micros-b35814fa</guid>
+      <description><![CDATA[Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive.]]></description>
+      <pubDate>Mon, 16 Nov 2026 16:43:24 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>UK Excludes Client-Side Scanning from Child-Safety Rules</title>
+      <link>https://secubuzz.com/news/uk-excludes-client-side-scanning-from-child-safety-6ac8bc86</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uk-excludes-client-side-scanning-from-child-safety-6ac8bc86</guid>
+      <description><![CDATA[Ofcom said UK child-safety rules will not mandate client-side scanning of personal devices for child-abuse images, leaving tech firms without a regulatory requirement. The decision reflects Ofcom’s limited authority over device-level enforcement, creating a gap that could let child-abuse content remain undetected. Tech firms should adopt internal scanning, user-reporting, and privacy-preserving detection tools to mitigate the regulatory shortfall.]]></description>
+      <pubDate>Mon, 16 Nov 2026 15:56:00 GMT</pubDate>
+      <source url="https://therecord.media/uk-ofcom-child-safety-rules-client-side-scanning-left-out">The Record</source>
+      <category>General</category>
+    </item>
     <item>
       <title>AI Tools ARTEX, PentAGI, HexStrike Automate Attacks</title>
       <link>https://secubuzz.com/news/ai-tools-artex-pentagi-hexstrike-automate-attacks-e278896a</link>
@@ -116,6 +134,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches</title>
+      <link>https://secubuzz.com/news/google-finds-hackers-using-ai-agents-to-build-and-42d8d822</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-finds-hackers-using-ai-agents-to-build-and-42d8d822</guid>
+      <description><![CDATA[Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Threat Actors Deploy Autonomous AI Frameworks for Rapid Exploitation</title>
       <link>https://secubuzz.com/news/threat-actors-deploy-autonomous-ai-frameworks-for-8c2c702c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/threat-actors-deploy-autonomous-ai-frameworks-for-8c2c702c</guid>
@@ -150,6 +177,24 @@
       <pubDate>Mon, 16 Nov 2026 13:38:18 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/threat-intel/2026/11/fake-prime-gaming-x-fc-27-reward-site-harvests-ea-passwords-and-2fa-codes">Malwarebytes Labs</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft Releases Out-of-band Update to Address Windows Licensing and Activation Errors</title>
+      <link>https://secubuzz.com/news/microsoft-releases-out-of-band-update-to-address-w-80fed11e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-out-of-band-update-to-address-w-80fed11e</guid>
+      <description><![CDATA[Microsoft released an out-of-band Windows update on November 13, 2026, to fix licensing and activation errors affecting a limited number of enterprise devices. The issue appeared after the November 2026 Windows security update and mainly affects organizations that use scripts or automated tools to manage Windows licenses.]]></description>
+      <pubDate>Mon, 16 Nov 2026 13:36:54 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsoft-windows-licensing-error/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Multiple Zero-Days Exploited in N-able, Windows, Chrome, Fridge</title>
+      <link>https://secubuzz.com/news/multiple-zero-days-exploited-in-n-able-windows-chr-242212c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/multiple-zero-days-exploited-in-n-able-windows-chr-242212c8</guid>
+      <description><![CDATA[Multiple zero-day vulnerabilities in N-able, Windows, Chrome, and smart-fridge software were exploited across enterprise networks. Attackers leveraged default passwords, malicious updates, and compromised security features to gain unauthorized access and exfiltrate data. Vendors have released patches; organizations should apply updates, enforce strong passwords, implement MFA, and monitor for anomalous activity.]]></description>
+      <pubDate>Mon, 16 Nov 2026 13:27:20 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html">The Hacker News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>LiteLLM/Starlette CVE Exploitation Attempts Detected</title>
@@ -206,10 +251,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Retadup Worm Resurfaces, Spreading CoffeeLoader Variant</title>
-      <link>https://secubuzz.com/news/retadup-worm-resurfaces-spreading-coffeeloader-var-93de52ed</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/retadup-worm-resurfaces-spreading-coffeeloader-var-93de52ed</guid>
-      <description><![CDATA[Retadup worm resurfaces seven years after takedown, now delivering a new variant of CoffeeLoader malware to infected systems. The NSIS-based installer drops a patched 7z.dll into a temporary directory and executes it via rundll32.exe, enabling payload delivery. Security teams should monitor for the worm’s execution patterns, block rundll32 usage from unknown sources, and apply updated antivirus signatures.]]></description>
+      <title>Retadup USB Worm Resurfaces After 7 Years, Delivering CoffeeLoader Variant to Windows Systems</title>
+      <link>https://secubuzz.com/news/retadup-usb-worm-resurfaces-after-7-years-deliveri-f42411fb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/retadup-usb-worm-resurfaces-after-7-years-deliveri-f42411fb</guid>
+      <description><![CDATA[The Retadup USB worm resurfaced after seven years, targeting Windows computers via infected USB drives. It delivers a CoffeeLoader variant that exploits graphics hardware during decryption and drops a patched 7z.dll, enabling payload execution through rundll32.exe. Security teams should block rundll32 usage from unknown sources, update antivirus signatures, and monitor for the worm’s execution patterns to mitigate infection.]]></description>
       <pubDate>Mon, 16 Nov 2026 12:33:18 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html">The Hacker News</source>
       <category>General</category>
@@ -411,51 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 06:00:00 GMT</pubDate>
       <source url="https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/">CrowdStrike</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ESET Mobile Security Adds Phishing Protection to iOS</title>
-      <link>https://secubuzz.com/news/eset-mobile-security-adds-phishing-protection-to-i-c388edf8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eset-mobile-security-adds-phishing-protection-to-i-c388edf8</guid>
-      <description><![CDATA[ESET released Mobile Security for iOS 18.0+, offering link verification and device scans for iPhone users. The app performs real-time link analysis, reviews permissions, and evaluates Wi-Fi connections, providing recommendations to mitigate phishing and configuration risks. Users can install the free app without an account; security teams should enable it on corporate devices to enforce link checks and monitor settings.]]></description>
-      <pubDate>Mon, 16 Nov 2026 05:30:19 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/16/product-showcase-eset-mobile-security-ios/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Linux Kernel NoisyTCP Crash Vulnerability Exposed (CVE-2026-99288)</title>
-      <link>https://secubuzz.com/news/linux-kernel-noisytcp-crash-vulnerability-exposed-bffb7b54</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-noisytcp-crash-vulnerability-exposed-bffb7b54</guid>
-      <description><![CDATA[A kernel flaw named NoisyTCP (CVE-2026-99288) allows unauthenticated attackers to crash Linux servers running Nginx, Apache, or SSH with default settings. The race condition in TCP packet handling triggers a kernel panic, causing a denial-of-service without remote code execution. Linux distributions have issued patches; administrators should update kernels or apply the advisory’s suggested work-around to mitigate the crash risk.]]></description>
-      <pubDate>Mon, 16 Nov 2026 05:26:51 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/noisytcp-linux-kernel-vulnerability/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Tool Finds 99 Vulnerabilities in Discontinued TCP/IP Stacks</title>
-      <link>https://secubuzz.com/news/ai-tool-finds-99-vulnerabilities-in-discontinued-t-ffa2ce34</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-tool-finds-99-vulnerabilities-in-discontinued-t-ffa2ce34</guid>
-      <description><![CDATA[Forescout researchers used an AI-driven tool to scan 10 legacy TCP/IP stacks lacking vendor support, uncovering 99 security flaws. Of those, 66 were unknown and 52% rated high, indicating potential remote exploitation via buffer overflows or improper input handling. No vendor patches exist; teams should perform manual code reviews, apply custom mitigations, and monitor devices for exploitation attempts.]]></description>
-      <pubDate>Mon, 16 Nov 2026 05:00:22 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/16/forescout-ai-models-vulnerability-research/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AWS Restores US-EAST-1 After Three-Hour Outage</title>
-      <link>https://secubuzz.com/news/aws-restores-us-east-1-after-three-hour-outage-a21b6100</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aws-restores-us-east-1-after-three-hour-outage-a21b6100</guid>
-      <description><![CDATA[AWS suffered a multi-hour outage in US-EAST-1 that disrupted account sign-ups, authentication, and network connectivity. The failure began at 3:05 a.m. PST and lasted until 6:21 a.m. PST, impacting IAM services for over three hours. AWS restored services by 6:21 a.m. PST and advised customers to verify account status and monitor for residual issues.]]></description>
-      <pubDate>Mon, 16 Nov 2026 03:43:23 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/aws-services-outage/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ARTEX AI Group Automates Global Cyberattacks</title>
-      <link>https://secubuzz.com/news/artex-ai-group-automates-global-cyberattacks-8e3876de</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/artex-ai-group-automates-global-cyberattacks-8e3876de</guid>
-      <description><![CDATA[Law enforcement released intelligence on ARTEX AI, a group automating global cyberattacks. The report details court findings, threat actor profiles, and defensive controls, outlining the group's tactics, techniques, and procedures. Security teams should review the provided defensive controls, update monitoring, and deploy detection rules across enterprise networks to detect ARTEX AI activity.]]></description>
-      <pubDate>Mon, 16 Nov 2026 03:25:10 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/fbi-warns-artex-ai-hacking-tool-is-powering-global-cybe">CyberNews AI</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

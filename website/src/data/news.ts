@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-says-months-old-bug-caused-global-micros-b35814fa",
+    "title": "Microsoft says months-old bug caused global Microsoft 365 outage",
+    "summary": "Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
+    "publishedAt": "2026-11-16T16:43:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-says-months-old-bug-caused-global-micros",
+      "article-b35814fa",
+      "b35814fa",
+      "microsoft-says-months-old-bug-caused-global-micros-241a63",
+      "microsoft-says-months-old-bug-caused-global-microsoft-365-ou"
+    ]
+  },
+  {
+    "slug": "uk-excludes-client-side-scanning-from-child-safety-6ac8bc86",
+    "title": "UK Excludes Client-Side Scanning from Child-Safety Rules",
+    "summary": "Ofcom said UK child-safety rules will not mandate client-side scanning of personal devices for child-abuse images, leaving tech firms without a regulatory requirement. The decision reflects Ofcom’s limited authority over device-level enforcement, creating a gap that could let child-abuse content remain undetected. Tech firms should adopt internal scanning, user-reporting, and privacy-preserving detection tools to mitigate the regulatory shortfall.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/uk-ofcom-child-safety-rules-client-side-scanning-left-out",
+    "publishedAt": "2026-11-16T15:56:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uk-excludes-client-side-scanning-from-child-safety",
+      "article-6ac8bc86",
+      "6ac8bc86",
+      "uk-excludes-client-side-scanning-from-child-safety-55151c",
+      "uk-excludes-client-side-scanning-from-child-safety-rules"
+    ]
+  },
+  {
     "slug": "ai-tools-artex-pentagi-hexstrike-automate-attacks-e278896a",
     "title": "AI Tools ARTEX, PentAGI, HexStrike Automate Attacks",
     "summary": "Cisco Talos reports that ARTEX, PentAGI, and HexStrike AI platforms automate reconnaissance, vulnerability testing, and follow-on exploits. These tools combine security utilities with AI agents, enabling operators to run tasks concurrently and accelerate target selection; no public exploit yet. Security teams should monitor AI-driven activity, enforce strict access controls on testing tools, and update detection rules to flag automated scanning.",
@@ -234,6 +272,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "google-finds-hackers-using-ai-agents-to-build-and-42d8d822",
+    "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+    "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+    "publishedAt": "2026-11-16T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-finds-hackers-using-ai-agents-to-build-and",
+      "article-42d8d822",
+      "42d8d822",
+      "google-finds-hackers-using-ai-agents-to-build-and-73b8b6",
+      "google-finds-hackers-using-ai-agents-to-build-and-run-exploi"
+    ]
+  },
+  {
     "slug": "threat-actors-deploy-autonomous-ai-frameworks-for-8c2c702c",
     "title": "Threat Actors Deploy Autonomous AI Frameworks for Rapid Exploitation",
     "summary": "Threat actors are increasingly deploying autonomous multi-agent frameworks and LLMJacking to accelerate vulnerability exploitation, per a Google Threat Intelligence update. The report highlights generative AI compressing attack timelines, scaling operations, and enabling machine-speed multi-stage intrusions, marking a critical inflection point. Security teams should monitor AI-driven threat activity, update detection rules, and prepare for rapid exploitation pipelines.",
@@ -305,6 +362,44 @@ export const news: NewsBrief[] = [
       "article-391fe224",
       "391fe224",
       "fake-prime-gaming-site-steals-ea-credentials-3cd584"
+    ]
+  },
+  {
+    "slug": "microsoft-releases-out-of-band-update-to-address-w-80fed11e",
+    "title": "Microsoft Releases Out-of-band Update to Address Windows Licensing and Activation Errors",
+    "summary": "Microsoft released an out-of-band Windows update on November 13, 2026, to fix licensing and activation errors affecting a limited number of enterprise devices. The issue appeared after the November 2026 Windows security update and mainly affects organizations that use scripts or automated tools to manage Windows licenses.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-windows-licensing-error/",
+    "publishedAt": "2026-11-16T13:36:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-releases-out-of-band-update-to-address-w",
+      "article-80fed11e",
+      "80fed11e",
+      "microsoft-releases-out-of-band-update-to-address-w-19dc42",
+      "microsoft-releases-out-of-band-update-to-address-windows-lic"
+    ]
+  },
+  {
+    "slug": "multiple-zero-days-exploited-in-n-able-windows-chr-242212c8",
+    "title": "Multiple Zero-Days Exploited in N-able, Windows, Chrome, Fridge",
+    "summary": "Multiple zero-day vulnerabilities in N-able, Windows, Chrome, and smart-fridge software were exploited across enterprise networks. Attackers leveraged default passwords, malicious updates, and compromised security features to gain unauthorized access and exfiltrate data. Vendors have released patches; organizations should apply updates, enforce strong passwords, implement MFA, and monitor for anomalous activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+    "publishedAt": "2026-11-16T13:27:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "multiple-zero-days-exploited-in-n-able-windows-chr",
+      "article-242212c8",
+      "242212c8",
+      "multiple-zero-days-exploited-in-n-able-windows-chr-7e0991",
+      "multiple-zero-days-exploited-in-n-able-windows-chrome-fridge"
     ]
   },
   {
@@ -422,22 +517,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "retadup-worm-resurfaces-spreading-coffeeloader-var-93de52ed",
-    "title": "Retadup Worm Resurfaces, Spreading CoffeeLoader Variant",
-    "summary": "Retadup worm resurfaces seven years after takedown, now delivering a new variant of CoffeeLoader malware to infected systems. The NSIS-based installer drops a patched 7z.dll into a temporary directory and executes it via rundll32.exe, enabling payload delivery. Security teams should monitor for the worm’s execution patterns, block rundll32 usage from unknown sources, and apply updated antivirus signatures.",
+    "slug": "retadup-usb-worm-resurfaces-after-7-years-deliveri-f42411fb",
+    "title": "Retadup USB Worm Resurfaces After 7 Years, Delivering CoffeeLoader Variant to Windows Systems",
+    "summary": "The Retadup USB worm resurfaced after seven years, targeting Windows computers via infected USB drives. It delivers a CoffeeLoader variant that exploits graphics hardware during decryption and drops a patched 7z.dll, enabling payload execution through rundll32.exe. Security teams should block rundll32 usage from unknown sources, update antivirus signatures, and monitor for the worm’s execution patterns to mitigate infection.",
     "category": "General",
-    "severity": "LOW",
+    "severity": "MEDIUM",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
     "publishedAt": "2026-11-16T12:33:18.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/retadup-usb-worm-returns/"
+      }
+    ],
     "aliases": [
-      "retadup-worm-resurfaces-spreading-coffeeloader-var",
-      "article-93de52ed",
-      "93de52ed",
-      "retadup-worm-resurfaces-spreading-coffeeloader-var-7b2640",
-      "retadup-worm-resurfaces-spreading-coffeeloader-variant"
+      "retadup-usb-worm-resurfaces-after-7-years-deliveri",
+      "article-f42411fb",
+      "f42411fb",
+      "retadup-usb-worm-resurfaces-after-7-years-deliveri-7b2640",
+      "retadup-usb-worm-resurfaces-after-7-years-delivering-coffeel"
     ]
   },
   {
@@ -8653,21 +8753,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "romania-blocks-russian-attack-on-government-emails-b15c63ed",
-    "title": "Romania Blocks Russian Attack on Government Emails",
-    "summary": "Romania’s intelligence agency reported stopping a Russian state-linked cyber-espionage campaign that targeted government email accounts before data exfiltration could occur. The operation prevented the exfiltration of sensitive information, mitigating potential compromise of national security communications. Authorities should maintain continuous monitoring of state-linked threat actors and enforce robust email authentication protocols.",
+    "slug": "romania-thwarts-russian-cyber-espionage-targeting-5c81f579",
+    "title": "Romania Thwarts Russian Cyber-Espionage Targeting Government Emails",
+    "summary": "Romanian intelligence thwarted a Russian state-linked cyber-espionage campaign targeting government email accounts exchanging sensitive communications with NATO and EU institutions. The operation aimed to intercept diplomatic correspondence but was halted before any data exfiltration occurred, preserving national security communications. Authorities maintain continuous monitoring of threat actors and enforce robust email authentication protocols to prevent future compromise.",
     "category": "Nation State",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "The Record",
     "sourceUrl": "https://therecord.media/romania-russia-cyberattack-emails",
     "publishedAt": "2026-11-12T13:30:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/romania-russia-cyberattack-espionage"
+      }
+    ],
     "aliases": [
-      "romania-blocks-russian-attack-on-government-emails",
-      "article-b15c63ed",
-      "b15c63ed",
-      "romania-blocks-russian-attack-on-government-emails-29f0e5"
+      "romania-thwarts-russian-cyber-espionage-targeting",
+      "article-5c81f579",
+      "5c81f579",
+      "romania-thwarts-russian-cyber-espionage-targeting-29f0e5",
+      "romania-thwarts-russian-cyber-espionage-targeting-government"
     ]
   },
   {
@@ -9616,101 +9722,6 @@ export const news: NewsBrief[] = [
       "e4671609",
       "red-hat-freerdp-update-addresses-important-vulnera-37d671",
       "red-hat-freerdp-update-addresses-important-vulnerability"
-    ]
-  },
-  {
-    "slug": "red-hat-httpd-2-4-update-covers-important-vulnerab-6bc501bd",
-    "title": "Red Hat httpd:2.4 Update Covers Important Vulnerability",
-    "summary": "Red Hat released a security update for the httpd:2.4 module on Enterprise Linux 8.6 Advanced Mission Critical and Extended Update Support platforms. The advisory marks the update as Important, implying a CVSS score in the 7.0-8.9 range, though specific CVE IDs are not listed. Users should apply the update immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99514",
-    "publishedAt": "2026-11-12T06:13:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-httpd-2-4-update-covers-important-vulnerab",
-      "article-6bc501bd",
-      "6bc501bd",
-      "red-hat-httpd-2-4-update-covers-important-vulnerab-37d671",
-      "red-hat-httpd-2-4-update-covers-important-vulnerability"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-important-update-for-httpd-2-4-4c245b5a",
-    "title": "Red Hat Releases Important Update for httpd:2.4",
-    "summary": "Red Hat issued an important security update for the httpd:2.4 module on RHEL 8.4 AMCS and EUS LLA platforms. The update addresses multiple vulnerabilities with CVSS scores indicating significant risk, though specific CVE identifiers are referenced in the advisory. Security teams should apply the patch immediately to mitigate potential exploitation and maintain compliance with Red Hat’s security guidance.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99513",
-    "publishedAt": "2026-11-12T06:09:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-important-update-for-httpd-2-4",
-      "article-4c245b5a",
-      "4c245b5a",
-      "red-hat-releases-important-update-for-httpd-2-4-37d671"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-update-for-aspell-512bf67b",
-    "title": "Red Hat Issues Important Update for aspell",
-    "summary": "Red Hat released an important security update for the aspell package on RHEL 9.6 Extended Update Support. The advisory covers multiple vulnerabilities with CVSS scores indicating significant risk, with CVE references provided in the documentation. Administrators should apply the patch promptly to prevent exploitation and align with Red Hat’s security maintenance schedule.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99511",
-    "publishedAt": "2026-11-12T05:49:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-update-for-aspell",
-      "article-512bf67b",
-      "512bf67b",
-      "red-hat-issues-important-update-for-aspell-37d671"
-    ]
-  },
-  {
-    "slug": "cisos-and-ot-engineers-disagree-on-cyber-resilienc-74ca386a",
-    "title": "CISOs and OT Engineers Disagree on Cyber Resilience",
-    "summary": "According to a SANS survey, CISOs and engineers disagree on operational technology resilience during IT compromises. While all surveyed security chiefs expect facilities to maintain output using manual controls, only 15% of engineering practitioners express confidence in process survival. Industrial organizations should align leadership expectations with frontline engineering capabilities to improve manual operational procedures and threat response plans.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/sans-industrial-cybersecurity-survey/",
-    "publishedAt": "2026-11-12T05:30:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisos-and-ot-engineers-disagree-on-cyber-resilienc",
-      "article-74ca386a",
-      "74ca386a",
-      "cisos-and-ot-engineers-disagree-on-cyber-resilienc-192a98",
-      "cisos-and-ot-engineers-disagree-on-cyber-resilience"
-    ]
-  },
-  {
-    "slug": "critical-apache-http-2-flaw-could-let-unauthentica-aa1e061e",
-    "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
-    "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-    "publishedAt": "2026-11-12T05:12:26.000Z",
-    "cves": [
-      "CVE-2026-119618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-apache-http-2-flaw-could-let-unauthentica",
-      "article-aa1e061e",
-      "aa1e061e",
-      "critical-apache-http-2-flaw-could-let-unauthentica-267175",
-      "critical-apache-http-2-flaw-could-let-unauthenticated-attack"
     ]
   }
 ];
