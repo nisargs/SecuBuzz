@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/16/rspamd-4-3-0-released/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/rspamd-4-3-0-released/",
+    "title": "Rspamd 4.3.0 Patch Stops Worker Crashes and Forged Auth",
+    "headline": "Rspamd 4.3.0 Patch Stops Worker Crashes and Forged Auth",
+    "summary": "Rspamd 4.3.0 fixes bugs that let unauthenticated attackers crash workers or forge authentication to bypass DMARC. A single HTTP request with a header lacking a colon or an empty Deliver-To header could terminate workers, causing a denial-of-service without code execution. Administrators should upgrade to Rspamd 4.3.0 or apply the patch to remove the crash and authentication bypass.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-16T09:27:24.000Z",
+    "ingestedAt": "2026-11-16T09:43:19.686Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/16/rspamd-4-3-0-released/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/",
+    "sourceUrl": "https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/",
+    "title": "Tor 0.4.9.17 Enhances IPv6 DoS Protections",
+    "headline": "Tor 0.4.9.17 Enhances IPv6 DoS Protections",
+    "summary": "Tor 0.4.9.17 patches multiple security issues, including a flaw in the built-in DoS defenses that mishandled IPv6 traffic. The flaw could allow attackers to trigger denial-of-service on relay nodes by sending IPv6 packets, but it does not provide remote code execution. Tor developers released the update; users should upgrade to 0.4.9.17 or apply the patch to mitigate the DoS risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-11-16T08:55:32.000Z",
+    "ingestedAt": "2026-11-16T09:43:19.686Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
     "title": "Microsoft Releases Emergency Windows Activation Patches",
@@ -45,6 +77,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/best-caasm-tools/",
+    "sourceUrl": "https://cybersecuritynews.com/best-caasm-tools/",
+    "title": "Top Ten CAASM Tools Ranked for 2026",
+    "headline": "Top Ten CAASM Tools Ranked for 2026",
+    "summary": "The article ranks the top ten CAASM tools for 2026, comparing each platform’s capabilities and market position. It explains how CAASM solutions aggregate asset data from tools, merge duplicates, and enable queries, resolving inconsistencies across EDRs and scanners. The piece recommends evaluating tools on integration depth, data accuracy, and user experience, and suggests pilot testing before full deployment.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-16T07:19:56.000Z",
+    "ingestedAt": "2026-11-16T09:43:23.254Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/best-caasm-tools/",
     "additionalSources": []
   },
   {
@@ -178,10 +226,10 @@
   {
     "id": "https://cybersecuritynews.com/noisytcp-linux-kernel-vulnerability/",
     "sourceUrl": "https://cybersecuritynews.com/noisytcp-linux-kernel-vulnerability/",
-    "title": "Linux Kernel NoisyTCP Crash Vulnerability Exposed",
-    "headline": "Linux Kernel NoisyTCP Crash Vulnerability Exposed",
-    "summary": "A 11-year-old Linux kernel flaw, NoisyTCP, permits unauthenticated remote attackers to crash servers. The flaw, tracked as CVE-2026-99288, resides in the kernel’s TCP code and triggers a kernel panic without authentication, causing a denial-of-service that can disrupt services. Linux distributions have released patches; administrators should apply kernel updates or use the advisory’s suggested work-around to mitigate the crash risk.",
-    "category": "CVE",
+    "title": "Linux Kernel NoisyTCP Crash Vulnerability Exposed (CVE-2026-99288)",
+    "headline": "Linux Kernel NoisyTCP Crash Vulnerability Exposed (CVE-2026-99288)",
+    "summary": "A kernel flaw named NoisyTCP (CVE-2026-99288) allows unauthenticated attackers to crash Linux servers running Nginx, Apache, or SSH with default settings. The race condition in TCP packet handling triggers a kernel panic, causing a denial-of-service without remote code execution. Linux distributions have issued patches; administrators should update kernels or apply the advisory’s suggested work-around to mitigate the crash risk.",
+    "category": "VULNERABILITY",
     "severity": "HIGH",
     "source": "Cyber Security News",
     "publishedAt": "2026-11-16T05:26:51.000Z",
@@ -189,7 +237,15 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/noisytcp-linux-kernel-vulnerability/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/"
+      }
+    ],
+    "cves": [
+      "CVE-2026-99288"
+    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/11/16/forescout-ai-models-vulnerability-research/",
@@ -8271,56 +8327,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:99136",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99173",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99173",
-    "title": "RHSA-2026:99173: Low: .NET 11.0 security, bug fix, and enhancement update",
-    "headline": "RHSA-2026:99173: Low: .NET 11.0 security, bug fix, and enhancement update",
-    "summary": "An update for .NET 11.0 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T01:54:23.000Z",
-    "ingestedAt": "2026-11-12T12:43:46.722Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99116",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99116",
-    "title": "RHSA-2026:99116: Important: raptor2 security update",
-    "headline": "RHSA-2026:99116: Important: raptor2 security update",
-    "summary": "An update for raptor2 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T01:53:23.000Z",
-    "ingestedAt": "2026-11-12T12:43:46.722Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99167",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99167",
-    "title": "Red Hat Releases python-oauthlib Security Update",
-    "headline": "Red Hat Releases python-oauthlib Security Update",
-    "summary": "Red Hat has issued an Important security update for python-oauthlib on RHEL 9.8 Extended Update Support, addressing multiple vulnerabilities identified by CVE references. The update includes CVSS scores for each vulnerability, but no active exploitation has been reported, mitigating potential remote code execution risks. Users should apply the RHSA-2026:99167 update immediately to ensure protection against the disclosed weaknesses.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T01:32:17.000Z",
-    "ingestedAt": "2026-11-12T01:43:13.906Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99167",
     "additionalSources": []
   }
 ]

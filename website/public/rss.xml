@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 08:45:12 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 09:44:13 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Rspamd 4.3.0 Patch Stops Worker Crashes and Forged Auth</title>
+      <link>https://secubuzz.com/news/rspamd-4-3-0-patch-stops-worker-crashes-and-forged-0b1aaa62</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rspamd-4-3-0-patch-stops-worker-crashes-and-forged-0b1aaa62</guid>
+      <description><![CDATA[Rspamd 4.3.0 fixes bugs that let unauthenticated attackers crash workers or forge authentication to bypass DMARC. A single HTTP request with a header lacking a colon or an empty Deliver-To header could terminate workers, causing a denial-of-service without code execution. Administrators should upgrade to Rspamd 4.3.0 or apply the patch to remove the crash and authentication bypass.]]></description>
+      <pubDate>Mon, 16 Nov 2026 09:27:24 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/16/rspamd-4-3-0-released/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Tor 0.4.9.17 Enhances IPv6 DoS Protections</title>
+      <link>https://secubuzz.com/news/tor-0-4-9-17-enhances-ipv6-dos-protections-bd50295f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tor-0-4-9-17-enhances-ipv6-dos-protections-bd50295f</guid>
+      <description><![CDATA[Tor 0.4.9.17 patches multiple security issues, including a flaw in the built-in DoS defenses that mishandled IPv6 traffic. The flaw could allow attackers to trigger denial-of-service on relay nodes by sending IPv6 packets, but it does not provide remote code execution. Tor developers released the update; users should upgrade to 0.4.9.17 or apply the patch to mitigate the DoS risk.]]></description>
+      <pubDate>Mon, 16 Nov 2026 08:55:32 GMT</pubDate>
+      <source url="https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Microsoft Releases Emergency Windows Activation Patches</title>
       <link>https://secubuzz.com/news/microsoft-releases-emergency-windows-activation-pa-87f9e41a</link>
@@ -33,6 +51,15 @@
       <pubDate>Mon, 16 Nov 2026 07:34:21 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html">The Hacker News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Top Ten CAASM Tools Ranked for 2026</title>
+      <link>https://secubuzz.com/news/top-ten-caasm-tools-ranked-for-2026-5a2d540f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-ten-caasm-tools-ranked-for-2026-5a2d540f</guid>
+      <description><![CDATA[The article ranks the top ten CAASM tools for 2026, comparing each platform’s capabilities and market position. It explains how CAASM solutions aggregate asset data from tools, merge duplicates, and enable queries, resolving inconsistencies across EDRs and scanners. The piece recommends evaluating tools on integration depth, data accuracy, and user experience, and suggests pilot testing before full deployment.]]></description>
+      <pubDate>Mon, 16 Nov 2026 07:19:56 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-caasm-tools/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Top 10 ASM/EASM Tools Ranked for 2026</title>
@@ -107,13 +134,13 @@
       <category>General</category>
     </item>
     <item>
-      <title>Linux Kernel NoisyTCP Crash Vulnerability Exposed</title>
+      <title>Linux Kernel NoisyTCP Crash Vulnerability Exposed (CVE-2026-99288)</title>
       <link>https://secubuzz.com/news/linux-kernel-noisytcp-crash-vulnerability-exposed-bffb7b54</link>
       <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-noisytcp-crash-vulnerability-exposed-bffb7b54</guid>
-      <description><![CDATA[A 11-year-old Linux kernel flaw, NoisyTCP, permits unauthenticated remote attackers to crash servers. The flaw, tracked as CVE-2026-99288, resides in the kernel’s TCP code and triggers a kernel panic without authentication, causing a denial-of-service that can disrupt services. Linux distributions have released patches; administrators should apply kernel updates or use the advisory’s suggested work-around to mitigate the crash risk.]]></description>
+      <description><![CDATA[A kernel flaw named NoisyTCP (CVE-2026-99288) allows unauthenticated attackers to crash Linux servers running Nginx, Apache, or SSH with default settings. The race condition in TCP packet handling triggers a kernel panic, causing a denial-of-service without remote code execution. Linux distributions have issued patches; administrators should update kernels or apply the advisory’s suggested work-around to mitigate the crash risk.]]></description>
       <pubDate>Mon, 16 Nov 2026 05:26:51 GMT</pubDate>
       <source url="https://cybersecuritynews.com/noisytcp-linux-kernel-vulnerability/">Cyber Security News</source>
-      <category>CVE</category>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>AI Tool Finds 99 Vulnerabilities in Discontinued TCP/IP Stacks</title>
@@ -429,33 +456,6 @@
       <pubDate>Fri, 13 Nov 2026 20:57:13 GMT</pubDate>
       <source url="https://blog.talosintelligence.com/artex-and-beyond/">Cisco Talos</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>ArcticRAT Expands to Full Device Control Using AI</title>
-      <link>https://secubuzz.com/news/arcticrat-expands-to-full-device-control-using-ai-3fd9c401</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arcticrat-expands-to-full-device-control-using-ai-3fd9c401</guid>
-      <description><![CDATA[The Android malware ArcticRAT has broadened its scope from crypto-currency theft to full device control, enabling attackers to harvest and analyze victim finances. The gang now incorporates AI techniques to profile stolen data, increasing the precision of targeted financial exploitation. Security teams should update Android defenses, monitor for ArcticRAT indicators, and employ AI-based anomaly detection to mitigate the threat.]]></description>
-      <pubDate>Fri, 13 Nov 2026 20:20:27 GMT</pubDate>
-      <source url="https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cloudflare Open-Sources Kitesurf Browser Engine for AI Agents</title>
-      <link>https://secubuzz.com/news/cloudflare-open-sources-kitesurf-browser-engine-fo-a79a0945</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-open-sources-kitesurf-browser-engine-fo-a79a0945</guid>
-      <description><![CDATA[Cloudflare announced the open-source release of Kitesurf, a lightweight browser engine for AI agents to render pages and run JavaScript on Workers. It eliminates the Chromium container, letting developers test, inspect, and customize Kitesurf locally before deploying it to edge environments. Security teams should review the GitHub repo for vulnerabilities and consider integrating Kitesurf into AI-agent testing pipelines.]]></description>
-      <pubDate>Fri, 13 Nov 2026 20:20:21 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/kitesurf-open-source/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Osaka City Alerts Residents to Phishing After Data Breach</title>
-      <link>https://secubuzz.com/news/osaka-city-alerts-residents-to-phishing-after-data-a2e7db11</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/osaka-city-alerts-residents-to-phishing-after-data-a2e7db11</guid>
-      <description><![CDATA[Osaka City reported a data breach affecting approximately one million residents, prompting a city-wide warning. The breach exposed personal information, and officials cautioned residents against phishing emails that appear to originate from municipal services. Security teams should verify email authenticity, update credentials, and monitor for unauthorized account activity to mitigate potential exploitation.]]></description>
-      <pubDate>Fri, 13 Nov 2026 19:43:00 GMT</pubDate>
-      <source url="https://therecord.media/city-of-osaka-japan-email-data-breach">The Record</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
