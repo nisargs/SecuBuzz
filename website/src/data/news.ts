@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-agent-decodes-1994-jeep-ecu-with-arduino-nano-53c9a07a",
+    "title": "AI Agent Decodes 1994 Jeep ECU with Arduino Nano",
+    "summary": "Claude, an AI agent, enabled a Jeep owner to read, copy, and run code inside a 1994 Jeep Cherokee’s ECU. Using a $3 Arduino Nano, the attacker interfaced the ECU’s serial bus to inject firmware that passed California’s smog test, exposing attack vectors. No vendor patch exists; update ECU firmware, secure the diagnostic port, and monitor unauthorized code.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/claude-cracks-32-year-old-jeep-ecu/",
+    "publishedAt": "2026-11-16T02:09:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agent-decodes-1994-jeep-ecu-with-arduino-nano",
+      "article-53c9a07a",
+      "53c9a07a",
+      "ai-agent-decodes-1994-jeep-ecu-with-arduino-nano-725da4"
+    ]
+  },
+  {
     "slug": "fbi-alerts-artex-ai-tool-fuels-global-attacks-eee6630a",
     "title": "FBI Alerts: ARTEX AI Tool Fuels Global Attacks",
     "summary": "FBI warns that ARTEX AI-powered framework automates attacks worldwide, including a ConnectWise supply-chain breach exposing Microsoft 365 customer environments. The tool automates exploitation of known vulnerabilities and credential theft, letting attackers bypass controls and access tenant data, risking exfiltration. Teams should monitor ARTEX activity, enforce MFA, apply ConnectWise patches, and review Microsoft 365 tenant settings to mitigate exploitation.",
@@ -9667,25 +9685,6 @@ export const news: NewsBrief[] = [
       "article-2b919cff",
       "2b919cff",
       "unit-42-reveals-ai-powered-red-team-tool-usage-381d02"
-    ]
-  },
-  {
-    "slug": "screenconnect-malware-breaches-msps-targets-custom-1b502196",
-    "title": "ScreenConnect Malware Breaches MSPs, Targets Customer Devices",
-    "summary": "ConnectWise investigated a malware campaign that leveraged compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices of managed service providers. The attacks enabled attackers to gain remote control over client systems, potentially exfiltrating data and installing additional malicious payloads. ConnectWise recommends MSPs update ScreenConnect to the latest version, enforce strict access controls, and monitor for unauthorized remote-access activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
-    "publishedAt": "2026-11-11T22:56:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "screenconnect-malware-breaches-msps-targets-custom",
-      "article-1b502196",
-      "1b502196",
-      "screenconnect-malware-breaches-msps-targets-custom-308e6c",
-      "screenconnect-malware-breaches-msps-targets-customer-devices"
     ]
   }
 ];

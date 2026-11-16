@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/claude-cracks-32-year-old-jeep-ecu/",
+    "sourceUrl": "https://cybersecuritynews.com/claude-cracks-32-year-old-jeep-ecu/",
+    "title": "AI Agent Decodes 1994 Jeep ECU with Arduino Nano",
+    "headline": "AI Agent Decodes 1994 Jeep ECU with Arduino Nano",
+    "summary": "Claude, an AI agent, enabled a Jeep owner to read, copy, and run code inside a 1994 Jeep Cherokee’s ECU. Using a $3 Arduino Nano, the attacker interfaced the ECU’s serial bus to inject firmware that passed California’s smog test, exposing attack vectors. No vendor patch exists; update ECU firmware, secure the diagnostic port, and monitor unauthorized code.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-16T02:09:56.000Z",
+    "ingestedAt": "2026-11-16T02:43:19.821Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/claude-cracks-32-year-old-jeep-ecu/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
     "title": "FBI Alerts: ARTEX AI Tool Fuels Global Attacks",
@@ -8313,22 +8329,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
-    "title": "ScreenConnect Malware Breaches MSPs, Targets Customer Devices",
-    "headline": "ScreenConnect Malware Breaches MSPs, Targets Customer Devices",
-    "summary": "ConnectWise investigated a malware campaign that leveraged compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices of managed service providers. The attacks enabled attackers to gain remote control over client systems, potentially exfiltrating data and installing additional malicious payloads. ConnectWise recommends MSPs update ScreenConnect to the latest version, enforce strict access controls, and monitor for unauthorized remote-access activity.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-11T22:56:21.000Z",
-    "ingestedAt": "2026-11-11T23:43:18.501Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
     "additionalSources": []
   }
 ]
