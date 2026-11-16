@@ -11,6 +11,151 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-releases-emergency-windows-activation-pa-87f9e41a",
+    "title": "Microsoft Releases Emergency Windows Activation Patches",
+    "summary": "Microsoft released emergency out-of-band updates to correct Windows activation and licensing failures triggered by this month’s security patches. The flaw stemmed from a mis-handled activation state that caused legitimate users to lose license validation, creating a denial-of-service effect on activation services. Users should apply the OOB patches immediately or install the latest cumulative update to restore proper activation functionality.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
+    "publishedAt": "2026-11-16T08:26:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-releases-emergency-windows-activation-pa",
+      "article-87f9e41a",
+      "87f9e41a",
+      "microsoft-releases-emergency-windows-activation-pa-612157",
+      "microsoft-releases-emergency-windows-activation-patches"
+    ]
+  },
+  {
+    "slug": "microsoft-denies-outage-attack-alerts-to-phishing-02a2bcde",
+    "title": "Microsoft Denies Outage Attack, Alerts to Phishing",
+    "summary": "Microsoft confirmed that the 2026 service outage was not caused by a cyberattack and issued a warning about a phishing campaign exploiting the outage narrative. Phishing emails impersonated 365 service notices and threatened to delete held messages, leveraging the outage to increase credibility. Security teams should verify email authenticity, enforce MFA, and educate users to avoid interacting with suspicious links.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
+    "publishedAt": "2026-11-16T08:15:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-denies-outage-attack-alerts-to-phishing",
+      "article-02a2bcde",
+      "02a2bcde",
+      "microsoft-denies-outage-attack-alerts-to-phishing-5a1839"
+    ]
+  },
+  {
+    "slug": "ai-agents-target-litellm-dify-for-api-keys-93f2f541",
+    "title": "AI Agents Target LiteLLM, Dify for API Keys",
+    "summary": "Attackers used autonomous AI agents to scan internet-exposed AI platforms like LiteLLM, One API, and Dify for embedded API keys. Stolen keys authenticated to providers, allowing agents to run AI models that searched for more keys, creating a loop. Amazon’s threat team captured the activity with decoy servers and recommends revoking exposed keys, tightening storage, and enforcing stricter controls.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+    "publishedAt": "2026-11-16T07:34:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agents-target-litellm-dify-for-api-keys",
+      "article-93f2f541",
+      "93f2f541",
+      "ai-agents-target-litellm-dify-for-api-keys-782911"
+    ]
+  },
+  {
+    "slug": "top-10-asm-easm-tools-ranked-for-2026-28f402fb",
+    "title": "Top 10 ASM/EASM Tools Ranked for 2026",
+    "summary": "The 2026 ASM/EASM market is divided into continuous-discovery engines, suite-integrated modules, and internet-scan authorities, each assessed for reachability and attribution accuracy. Palo Alto Cortex and other vendors lead the ranking for continuous-discovery capabilities, while the list stresses accurate asset ownership mapping. Defenders should use the rankings to prioritize continuous monitoring, validate inventories, and integrate surface modules into operations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-attack-surface-management/",
+    "publishedAt": "2026-11-16T07:13:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-asm-easm-tools-ranked-for-2026",
+      "article-28f402fb",
+      "28f402fb",
+      "top-10-asm-easm-tools-ranked-for-2026-3b9d2d"
+    ]
+  },
+  {
+    "slug": "2026-ctem-platform-rankings-revealed-4506872f",
+    "title": "2026 CTEM Platform Rankings Revealed",
+    "summary": "The article presents a 2026 ranking of Continuous Threat Exposure Management platforms, evaluating their coverage across the five-stage CTEM operating rhythm. It emphasizes that no single product fully implements all stages, with validation often omitted, distinguishing exposure management from vulnerability management. Readers are guided to assess each platform’s stage coverage and validation capabilities before procurement decisions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-ctem-platforms/",
+    "publishedAt": "2026-11-16T07:08:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-ctem-platform-rankings-revealed",
+      "article-4506872f",
+      "4506872f",
+      "2026-ctem-platform-rankings-revealed-30b100"
+    ]
+  },
+  {
+    "slug": "2026-risk-based-vulnerability-tool-rankings-1e125d39",
+    "title": "2026 Risk-Based Vulnerability Tool Rankings",
+    "summary": "The article lists the top 2026 risk-based vulnerability management tools, highlighting how they re-rank vulnerabilities by exploitation evidence, asset criticality, and reachability. The review notes that native scoring is now embedded in scanners, with aggregation layers and exposure-math engines augmenting the core platforms. Decision makers should evaluate how each tool integrates aggregation and exposure modeling to align with asset prioritization.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-rbvm-tools/",
+    "publishedAt": "2026-11-16T07:03:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-risk-based-vulnerability-tool-rankings",
+      "article-1e125d39",
+      "1e125d39",
+      "2026-risk-based-vulnerability-tool-rankings-25242a"
+    ]
+  },
+  {
+    "slug": "top-cloud-vulnerability-management-tools-2026-8e822cdf",
+    "title": "Top Cloud Vulnerability Management Tools 2026",
+    "summary": "The article ranks leading cloud vulnerability management tools for 2026, spotlighting agentless snapshot scanning that maps entire estates in hours. It highlights how vendors integrate vulnerability data with exposure, identity, and data sensitivity contexts to prioritize actionable risks. The list names Wiz as top performer, followed by Palo Alto and others, providing a comparative scoring framework for security teams.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-cloud-vulnerability-management/",
+    "publishedAt": "2026-11-16T06:55:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-cloud-vulnerability-management-tools-2026",
+      "article-8e822cdf",
+      "8e822cdf",
+      "top-cloud-vulnerability-management-tools-2026-583723"
+    ]
+  },
+  {
+    "slug": "bo-team-exploits-log4shell-in-vmware-vcenter-a4b47175",
+    "title": "BO Team Exploits Log4Shell in VMware vCenter",
+    "summary": "BO Team exploited Log4Shell in VMware vCenter to gain unauthenticated remote code execution in a Russian developer’s network. The attackers maintained a months-long presence, compromising the code-signing server and development infrastructure, allowing them to sign malicious binaries for downstream customers. Kaspersky’s ICs CERT documented the activity and recommends patching vCenter, revoking compromised signing certificates, and auditing signed binaries.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+    "publishedAt": "2026-11-16T06:53:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bo-team-exploits-log4shell-in-vmware-vcenter",
+      "article-a4b47175",
+      "a4b47175",
+      "bo-team-exploits-log4shell-in-vmware-vcenter-3a53c0"
+    ]
+  },
+  {
     "slug": "project-zero-to-publish-bugs-after-90-days-854e3824",
     "title": "Project Zero to Publish Bugs After 90 Days",
     "summary": "Google Project Zero announced a policy to publish vulnerabilities 90 days after vendor notification, regardless of patch status. The 'Full X' policy will cut the disclosure window to 60 days on Feb 2, 2027, and 30 days on Jan 3, 2028, replacing the 90+30 rule. Teams should track Project Zero releases and adjust patch timelines to match the new schedule.",
@@ -9536,158 +9681,6 @@ export const news: NewsBrief[] = [
       "article-69467088",
       "69467088",
       "red-hat-releases-python-oauthlib-security-update-37d67f"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99170-important-net-11-0-security-bug-fi-561a40cc",
-    "title": "RHSA-2026:99170: Important: .NET 11.0 security, bug fix, and enhancement update",
-    "summary": "An update for .NET 11.0 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99170",
-    "publishedAt": "2026-11-12T01:21:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99170-important-net-11-0-security-bug-fi",
-      "article-561a40cc",
-      "561a40cc",
-      "rhsa-2026-99170-important-net-11-0-security-bug-fi-37d67f",
-      "rhsa-2026-99170-important-net-11-0-security-bug-fix-and-enha"
-    ]
-  },
-  {
-    "slug": "chinese-ai-project-gathers-taiwan-chip-industry-da-9c2c0544",
-    "title": "Chinese AI Project Gathers Taiwan Chip Industry Data",
-    "summary": "Chinese state-sponsored AI system collects data on Taiwan chip industry personnel. The system scrapes publicly available information and internal documents, building a database that could enable targeted exploitation of individuals abroad. Security teams should monitor for credential compromise, enforce strict access controls, and protect sensitive personnel data in the organization.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
-    "publishedAt": "2026-11-12T01:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chinese-ai-project-gathers-taiwan-chip-industry-da",
-      "article-9c2c0544",
-      "9c2c0544",
-      "chinese-ai-project-gathers-taiwan-chip-industry-da-223b95",
-      "chinese-ai-project-gathers-taiwan-chip-industry-data"
-    ]
-  },
-  {
-    "slug": "zoom-cve-2026-108187-requires-immediate-patch-55ccb8b8",
-    "title": "Zoom CVE-2026-108187 Requires Immediate Patch",
-    "summary": "Zoom disclosed CVE-2026-108187, a critical flaw affecting enterprise Zoom deployments. The vulnerability permits remote code execution via malformed input in the Zoom client, with a CVSS score of 9.8; public proof-of-concept exploits are available, enabling attackers to gain full system control. Zoom has released a patch; administrators must update Zoom clients immediately and monitor for exploitation attempts.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/critical-zoom-workplace-flaw-could-allow-unauthenticate",
-    "publishedAt": "2026-11-12T00:16:26.000Z",
-    "cves": [
-      "CVE-2026-108187"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zoom-cve-2026-108187-requires-immediate-patch",
-      "article-55ccb8b8",
-      "55ccb8b8",
-      "zoom-cve-2026-108187-requires-immediate-patch-410f0c"
-    ]
-  },
-  {
-    "slug": "greynoise-benchmarks-46-ai-models-for-defensive-se-38d76cb0",
-    "title": "GreyNoise Benchmarks 46 AI Models for Defensive Security",
-    "summary": "GreyNoise Labs evaluated 46 artificial intelligence models on defensive cybersecurity capabilities across real-world operational tasks. The benchmark assessed model performance across specific defensive domains including network detections, file-based detections, and attack forensic analysis. Security teams can utilize the index findings to evaluate AI model efficacy for defensive SOC automation and threat analysis workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "GreyNoise Labs",
-    "sourceUrl": "https://www.greynoise.io/blog/ai-cyber-index-benchmarking-defensive-capabilities",
-    "publishedAt": "2026-11-12T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "greynoise-benchmarks-46-ai-models-for-defensive-se",
-      "article-38d76cb0",
-      "38d76cb0",
-      "greynoise-benchmarks-46-ai-models-for-defensive-se-4c6dce",
-      "greynoise-benchmarks-46-ai-models-for-defensive-security"
-    ]
-  },
-  {
-    "slug": "japan-allocates-emergency-cybersecurity-funding-am-8e5a6186",
-    "title": "Japan Allocates Emergency Cybersecurity Funding Amid AI Cyber Threats",
-    "summary": "Japan has announced an emergency funding package to strengthen national cybersecurity following an increase in AI-assisted breaches. The policy initiative funds public-private cyber responders, creates an economic ministry AI team, and expands government active cyber-defense powers. Defense leadership intends for these measures to bolster incident response capabilities and neutralize emerging threats against critical infrastructure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
-    "publishedAt": "2026-11-12T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "japan-allocates-emergency-cybersecurity-funding-am",
-      "article-8e5a6186",
-      "8e5a6186",
-      "japan-allocates-emergency-cybersecurity-funding-am-1cd82f",
-      "japan-allocates-emergency-cybersecurity-funding-amid-ai-cybe"
-    ]
-  },
-  {
-    "slug": "gitlab-patch-release-19-5-5-19-4-7-be8ffb8f",
-    "title": "GitLab Patch Release: 19.5.5, 19.4.7",
-    "summary": "GitLab released security and maintenance patch updates 19.5.5 and 19.4.7 for Community Edition and Enterprise Edition. The updates resolve native memory-safety bugs in dependencies, fix GCS default credential metadata timeouts, and correct approval policy scanner mappings. GitLab strongly recommends administrators upgrade to these patch versions immediately.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "GitLab Security Releases",
-    "sourceUrl": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-5-released/",
-    "publishedAt": "2026-11-12T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gitlab-patch-release-19-5-5-19-4-7",
-      "article-be8ffb8f",
-      "be8ffb8f",
-      "gitlab-patch-release-19-5-5-19-4-7-1c11ae"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-net-9-0-update-with-security-fixe-1986e8d3",
-    "title": "Red Hat Releases .NET 9.0 Update with Security Fixes",
-    "summary": "Red Hat released a .NET 9.0 update for RHEL 10 to fix multiple security issues. The update addresses several vulnerabilities with CVSS scores marked Important, though no specific CVE IDs are cited; the flaws could enable exploitation of the .NET runtime. Red Hat advises installing the package from standard RHEL repositories immediately and verifying checksums to ensure integrity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99145",
-    "publishedAt": "2026-11-11T23:51:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-net-9-0-update-with-security-fixe",
-      "article-1986e8d3",
-      "1986e8d3",
-      "red-hat-releases-net-9-0-update-with-security-fixe-37d67f",
-      "red-hat-releases-net-9-0-update-with-security-fixes"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99147-important-net-8-0-security-bug-fix-eb1059f4",
-    "title": "RHSA-2026:99147: Important: .NET 8.0 security, bug fix, and enhancement update",
-    "summary": "An update for .NET 8.0 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99147",
-    "publishedAt": "2026-11-11T23:49:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99147-important-net-8-0-security-bug-fix",
-      "article-eb1059f4",
-      "eb1059f4",
-      "rhsa-2026-99147-important-net-8-0-security-bug-fix-37d67f",
-      "rhsa-2026-99147-important-net-8-0-security-bug-fix-and-enhan"
     ]
   }
 ];

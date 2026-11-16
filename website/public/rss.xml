@@ -5,8 +5,80 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 07:12:43 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 08:45:12 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Releases Emergency Windows Activation Patches</title>
+      <link>https://secubuzz.com/news/microsoft-releases-emergency-windows-activation-pa-87f9e41a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-emergency-windows-activation-pa-87f9e41a</guid>
+      <description><![CDATA[Microsoft released emergency out-of-band updates to correct Windows activation and licensing failures triggered by this month’s security patches. The flaw stemmed from a mis-handled activation state that caused legitimate users to lose license validation, creating a denial-of-service effect on activation services. Users should apply the OOB patches immediately or install the latest cumulative update to restore proper activation functionality.]]></description>
+      <pubDate>Mon, 16 Nov 2026 08:26:52 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Denies Outage Attack, Alerts to Phishing</title>
+      <link>https://secubuzz.com/news/microsoft-denies-outage-attack-alerts-to-phishing-02a2bcde</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-denies-outage-attack-alerts-to-phishing-02a2bcde</guid>
+      <description><![CDATA[Microsoft confirmed that the 2026 service outage was not caused by a cyberattack and issued a warning about a phishing campaign exploiting the outage narrative. Phishing emails impersonated 365 service notices and threatened to delete held messages, leveraging the outage to increase credibility. Security teams should verify email authenticity, enforce MFA, and educate users to avoid interacting with suspicious links.]]></description>
+      <pubDate>Mon, 16 Nov 2026 08:15:12 GMT</pubDate>
+      <source url="https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI Agents Target LiteLLM, Dify for API Keys</title>
+      <link>https://secubuzz.com/news/ai-agents-target-litellm-dify-for-api-keys-93f2f541</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-target-litellm-dify-for-api-keys-93f2f541</guid>
+      <description><![CDATA[Attackers used autonomous AI agents to scan internet-exposed AI platforms like LiteLLM, One API, and Dify for embedded API keys. Stolen keys authenticated to providers, allowing agents to run AI models that searched for more keys, creating a loop. Amazon’s threat team captured the activity with decoy servers and recommends revoking exposed keys, tightening storage, and enforcing stricter controls.]]></description>
+      <pubDate>Mon, 16 Nov 2026 07:34:21 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Top 10 ASM/EASM Tools Ranked for 2026</title>
+      <link>https://secubuzz.com/news/top-10-asm-easm-tools-ranked-for-2026-28f402fb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-10-asm-easm-tools-ranked-for-2026-28f402fb</guid>
+      <description><![CDATA[The 2026 ASM/EASM market is divided into continuous-discovery engines, suite-integrated modules, and internet-scan authorities, each assessed for reachability and attribution accuracy. Palo Alto Cortex and other vendors lead the ranking for continuous-discovery capabilities, while the list stresses accurate asset ownership mapping. Defenders should use the rankings to prioritize continuous monitoring, validate inventories, and integrate surface modules into operations.]]></description>
+      <pubDate>Mon, 16 Nov 2026 07:13:15 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-attack-surface-management/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>2026 CTEM Platform Rankings Revealed</title>
+      <link>https://secubuzz.com/news/2026-ctem-platform-rankings-revealed-4506872f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/2026-ctem-platform-rankings-revealed-4506872f</guid>
+      <description><![CDATA[The article presents a 2026 ranking of Continuous Threat Exposure Management platforms, evaluating their coverage across the five-stage CTEM operating rhythm. It emphasizes that no single product fully implements all stages, with validation often omitted, distinguishing exposure management from vulnerability management. Readers are guided to assess each platform’s stage coverage and validation capabilities before procurement decisions.]]></description>
+      <pubDate>Mon, 16 Nov 2026 07:08:54 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-ctem-platforms/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>2026 Risk-Based Vulnerability Tool Rankings</title>
+      <link>https://secubuzz.com/news/2026-risk-based-vulnerability-tool-rankings-1e125d39</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/2026-risk-based-vulnerability-tool-rankings-1e125d39</guid>
+      <description><![CDATA[The article lists the top 2026 risk-based vulnerability management tools, highlighting how they re-rank vulnerabilities by exploitation evidence, asset criticality, and reachability. The review notes that native scoring is now embedded in scanners, with aggregation layers and exposure-math engines augmenting the core platforms. Decision makers should evaluate how each tool integrates aggregation and exposure modeling to align with asset prioritization.]]></description>
+      <pubDate>Mon, 16 Nov 2026 07:03:19 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-rbvm-tools/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Top Cloud Vulnerability Management Tools 2026</title>
+      <link>https://secubuzz.com/news/top-cloud-vulnerability-management-tools-2026-8e822cdf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-cloud-vulnerability-management-tools-2026-8e822cdf</guid>
+      <description><![CDATA[The article ranks leading cloud vulnerability management tools for 2026, spotlighting agentless snapshot scanning that maps entire estates in hours. It highlights how vendors integrate vulnerability data with exposure, identity, and data sensitivity contexts to prioritize actionable risks. The list names Wiz as top performer, followed by Palo Alto and others, providing a comparative scoring framework for security teams.]]></description>
+      <pubDate>Mon, 16 Nov 2026 06:55:22 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-cloud-vulnerability-management/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>BO Team Exploits Log4Shell in VMware vCenter</title>
+      <link>https://secubuzz.com/news/bo-team-exploits-log4shell-in-vmware-vcenter-a4b47175</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bo-team-exploits-log4shell-in-vmware-vcenter-a4b47175</guid>
+      <description><![CDATA[BO Team exploited Log4Shell in VMware vCenter to gain unauthenticated remote code execution in a Russian developer’s network. The attackers maintained a months-long presence, compromising the code-signing server and development infrastructure, allowing them to sign malicious binaries for downstream customers. Kaspersky’s ICs CERT documented the activity and recommends patching vCenter, revoking compromised signing certificates, and auditing signed binaries.]]></description>
+      <pubDate>Mon, 16 Nov 2026 06:53:34 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Project Zero to Publish Bugs After 90 Days</title>
       <link>https://secubuzz.com/news/project-zero-to-publish-bugs-after-90-days-854e3824</link>
@@ -384,78 +456,6 @@
       <pubDate>Fri, 13 Nov 2026 19:43:00 GMT</pubDate>
       <source url="https://therecord.media/city-of-osaka-japan-email-data-breach">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Trezor Confirms Hardware Implants in Safe 5 Wallets</title>
-      <link>https://secubuzz.com/news/trezor-confirms-hardware-implants-in-safe-5-wallet-7d6ffefc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trezor-confirms-hardware-implants-in-safe-5-wallet-7d6ffefc</guid>
-      <description><![CDATA[Trezor confirmed that three Safe 5 wallets sold by CryptoBilis contained malicious implants that exfiltrate recovery phrases over cellular networks. The implants capture seed phrases during device setup and transmit them to attackers, enabling full wallet takeover. Trezor issued a firmware patch that disables the vulnerable hardware path; users must upgrade and verify device authenticity.]]></description>
-      <pubDate>Fri, 13 Nov 2026 19:38:36 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Cloudflare Warns of AI-Powered Pen Testing Threats</title>
-      <link>https://secubuzz.com/news/cloudflare-warns-of-ai-powered-pen-testing-threats-ed7d3290</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-warns-of-ai-powered-pen-testing-threats-ed7d3290</guid>
-      <description><![CDATA[Cloudflare reports AI-orchestrated penetration testing platforms like ARTEX can launch attacks against exposed enterprise infrastructure. These platforms automate reconnaissance, exploit publicly disclosed vulnerabilities, and harvest credentials, creating a scalable threat vector that bypasses manual testing. Cloudflare advises continuous monitoring, hardened segmentation, and AI-driven anomaly detection to mitigate critical orchestrated attacks.]]></description>
-      <pubDate>Fri, 13 Nov 2026 19:26:07 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>NYC Imposes $1,000 Fine for Surveillance Pricing</title>
-      <link>https://secubuzz.com/news/nyc-imposes-1-000-fine-for-surveillance-pricing-c5a51994</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nyc-imposes-1-000-fine-for-surveillance-pricing-c5a51994</guid>
-      <description><![CDATA[NYC will levy a $1,000 penalty on companies that charge customers for surveillance services, curbing hidden pricing practices. The fine applies after a verified instance, requiring firms to document pricing structures and submit evidence to the city’s enforcement office. Businesses should review pricing policies, keep transparent records, and seek legal counsel to ensure compliance before enforcement.]]></description>
-      <pubDate>Fri, 13 Nov 2026 18:35:00 GMT</pubDate>
-      <source url="https://therecord.media/nyc-council-passes-bill-ban-surveillance-pricing">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apple Releases tvOS 27.2.1 Security Update</title>
-      <link>https://secubuzz.com/news/apple-releases-tvos-27-2-1-security-update-4049a8e7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-tvos-27-2-1-security-update-4049a8e7</guid>
-      <description><![CDATA[Apple released tvOS 27.2.1 (24K157), a new operating system update for Apple TV devices. The update contains unspecified security, stability, and performance enhancements, typical of Apple’s routine releases, and may address known vulnerabilities. Users should install the update via the Settings app to ensure device security and functionality in the field.]]></description>
-      <pubDate>Fri, 13 Nov 2026 18:00:00 GMT</pubDate>
-      <source url="https://developer.apple.com/news/releases/?id=11132026a">Apple Security Updates</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Weekly Cybersecurity Roundup: Crypto Scams, Turla, Railway Breach</title>
-      <link>https://secubuzz.com/news/weekly-cybersecurity-roundup-crypto-scams-turla-ra-2be048f4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/weekly-cybersecurity-roundup-crypto-scams-turla-ra-2be048f4</guid>
-      <description><![CDATA[This week, law enforcement dismantled several crypto-scam operations and seized associated malware infrastructure. Meanwhile, the Turla APT group deployed the Cereal spyware to target government entities, while attackers breached Railway’s systems to exfiltrate AI research. Security teams should monitor for Cereal indicators, review Railway security controls, and stay alert to emerging crypto-scam tactics.]]></description>
-      <pubDate>Fri, 13 Nov 2026 17:46:55 GMT</pubDate>
-      <source url="https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-46-8">SentinelOne</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chrome Dev Channel Updated to 160.0.8157.0</title>
-      <link>https://secubuzz.com/news/chrome-dev-channel-updated-to-160-0-8157-0-604ea908</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-channel-updated-to-160-0-8157-0-604ea908</guid>
-      <description><![CDATA[Google Chrome Dev channel updated to version 160.0.8157.0 across Windows, macOS, and Linux. The update includes various bug fixes and performance improvements, with a partial list of changes available in the Git log, and addresses several security patches. Users are encouraged to update to the latest Dev build to benefit from these enhancements.]]></description>
-      <pubDate>Fri, 13 Nov 2026 17:43:38 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update_01047619778.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Quantum Systems Reports Drone Operation Disruption by Cyberattack</title>
-      <link>https://secubuzz.com/news/quantum-systems-reports-drone-operation-disruption-4c32ae5e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/quantum-systems-reports-drone-operation-disruption-4c32ae5e</guid>
-      <description><![CDATA[Quantum Systems, a German defense tech firm, reported hostile actors disrupted its drone operations in late October. The attack targeted operational control systems, causing temporary loss of flight control and mission data integrity, with no physical damage reported. Quantum Systems is conducting forensic analysis, applied emergency firmware patches, and advises operators to enforce stricter access controls and continuous monitoring.]]></description>
-      <pubDate>Fri, 13 Nov 2026 17:31:56 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>University of Texas at Arlington warns personal information stolen during cyberattack</title>
-      <link>https://secubuzz.com/news/university-of-texas-at-arlington-warns-personal-in-b90429e7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/university-of-texas-at-arlington-warns-personal-in-b90429e7</guid>
-      <description><![CDATA[In a statement to Recorded Future News, a spokesperson said an investigation into the attack confirmed the stolen data but declined to say what information was obtained by the threat actors.]]></description>
-      <pubDate>Fri, 13 Nov 2026 17:26:00 GMT</pubDate>
-      <source url="https://therecord.media/university-of-texas-arlington-warns-data-breach">The Record</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
