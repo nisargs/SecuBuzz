@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 11:39:58 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 12:44:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Lock and Code Podcast: Preparing Data for Death</title>
+      <link>https://secubuzz.com/news/lock-and-code-podcast-preparing-data-for-death-034f28fd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/lock-and-code-podcast-preparing-data-for-death-034f28fd</guid>
+      <description><![CDATA[The Lock and Code podcast episode S07E23 discusses data organization and preparation for posthumous access. Interviewee Jed Brubaker explains strategies for securing personal data, setting up digital wills, and ensuring family members can retrieve information after death. Listeners are advised to use secure storage solutions and clear documentation, but no immediate patches or vulnerabilities are addressed.]]></description>
+      <pubDate>Mon, 16 Nov 2026 12:20:44 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/podcast/2026/11/how-to-prepare-your-data-for-your-death-lock-and-code-s07e23">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Hotel Staff Compromised by Fake Booking Email Scam</title>
+      <link>https://secubuzz.com/news/hotel-staff-compromised-by-fake-booking-email-scam-55bce6fb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hotel-staff-compromised-by-fake-booking-email-scam-55bce6fb</guid>
+      <description><![CDATA[Luxury hotel employees were deceived by a forged booking request, granting attackers access to the reservations inbox. The attackers copied legitimate refund requests and submitted fraudulent ones, exploiting the hotel’s guest-first culture and fragmented accountability across owner, operator, and brand. Security teams should enforce email authentication, implement role-based access controls, and conduct staff training to prevent similar social-engineering breaches.]]></description>
+      <pubDate>Mon, 16 Nov 2026 12:04:42 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html">Schneier on Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft Previewing Remote Lock for Lost Windows Devices</title>
+      <link>https://secubuzz.com/news/microsoft-previewing-remote-lock-for-lost-windows-015ae66c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-previewing-remote-lock-for-lost-windows-015ae66c</guid>
+      <description><![CDATA[Microsoft previewed a remote lock that lets Intune admins lock lost or stolen Windows devices without wiping them. The lock signs out sessions, hides sign-in options, shows a lock screen, and persists across restarts on Windows 10, 11, and Server editions. Admins should enable the preview in Intune, test on pilot devices, and plan a full rollout once stable.]]></description>
+      <pubDate>Mon, 16 Nov 2026 11:57:54 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/16/microsoft-remote-lock-feature-preview/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>UnrealIRCd Vulnerability Enables Command Execution with IRCOp Privileges</title>
+      <link>https://secubuzz.com/news/unrealircd-vulnerability-enables-command-execution-21745f13</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unrealircd-vulnerability-enables-command-execution-21745f13</guid>
+      <description><![CDATA[A high-severity flaw in UnrealIRCd, tracked as CVE-2026-114713, permits attackers to execute arbitrary commands with server or IRCOp privileges. The vulnerability stems from improper validation of privileged IRC commands, enabling remote code execution without authentication and potentially compromising entire IRC networks. UnrealIRCd developers released an update on 2026-11-15; administrators should upgrade immediately and disable unused IRCOp accounts.]]></description>
+      <pubDate>Mon, 16 Nov 2026 11:15:48 GMT</pubDate>
+      <source url="https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Copeland Controllers Face Rapid Exploit Attempts on 14 Vulnerabilities</title>
+      <link>https://secubuzz.com/news/copeland-controllers-face-rapid-exploit-attempts-o-5f4d80e0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/copeland-controllers-face-rapid-exploit-attempts-o-5f4d80e0</guid>
+      <description><![CDATA[Vulncheck identified fourteen security flaws in Copeland XWEB EVO refrigeration controllers, two of which threat actors have already targeted. The weaknesses involve improper input validation and insecure default credentials, enabling remote code execution or denial of service on the controllers' operating system. Copeland has issued firmware updates; operators should apply the latest patch and disable default accounts to mitigate exploitation.]]></description>
+      <pubDate>Mon, 16 Nov 2026 11:05:42 GMT</pubDate>
+      <source url="https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Anthropic Releases Claude Mythos 5.2, Fable 5.2</title>
+      <link>https://secubuzz.com/news/anthropic-releases-claude-mythos-5-2-fable-5-2-40b6d9d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-releases-claude-mythos-5-2-fable-5-2-40b6d9d4</guid>
+      <description><![CDATA[Anthropic released Claude Mythos 5.2 and Fable 5.2 for developers. Updates enhance coding and reasoning but reduce coverage of some security tasks, while Mythos improves bug detection. No security patches or mitigations are required; users should adopt the new models for improved code quality to reduce bugs in production environments.]]></description>
+      <pubDate>Mon, 16 Nov 2026 11:00:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/">BleepingComputer</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Rspamd 4.3.0 Patch Stops Worker Crashes and Forged Auth</title>
       <link>https://secubuzz.com/news/rspamd-4-3-0-patch-stops-worker-crashes-and-forged-0b1aaa62</link>
@@ -41,6 +95,15 @@
       <description><![CDATA[Microsoft confirmed that the 2026 service outage was not caused by a cyberattack and issued a warning about a phishing campaign exploiting the outage narrative. Phishing emails impersonated 365 service notices and threatened to delete held messages, leveraging the outage to increase credibility. Security teams should verify email authenticity, enforce MFA, and educate users to avoid interacting with suspicious links.]]></description>
       <pubDate>Mon, 16 Nov 2026 08:15:12 GMT</pubDate>
       <source url="https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Malwarebytes Labs Weekly Security Roundup November 9-15</title>
+      <link>https://secubuzz.com/news/malwarebytes-labs-weekly-security-roundup-november-7b526ec1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malwarebytes-labs-weekly-security-roundup-november-7b526ec1</guid>
+      <description><![CDATA[Malwarebytes Labs released a weekly security roundup covering November 9-15, 2026, summarizing emerging threats and vulnerability disclosures. The article details zero-day exploits, phishing campaigns, and new defensive tools observed during that period, offering context for security teams. No specific patches or mitigations are announced, making this a general industry update rather than an actionable advisory.]]></description>
+      <pubDate>Mon, 16 Nov 2026 08:01:00 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/uncategorized/2026/11/a-week-in-security-november-9-november-15-2">Malwarebytes Labs</source>
       <category>General</category>
     </item>
     <item>
@@ -393,69 +456,6 @@
       <pubDate>Sat, 14 Nov 2026 03:05:27 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/cve-2026-90436-n-central-4everable2shell-zero-day-rce">CyberNews AI</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>SignDrop Zero-Day Enables System Privileges via Defender RPC</title>
-      <link>https://secubuzz.com/news/signdrop-zero-day-enables-system-privileges-via-de-2f66fc9f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/signdrop-zero-day-enables-system-privileges-via-de-2f66fc9f</guid>
-      <description><![CDATA[SignDrop zero-day exploits Windows CLFS via Defender RPC to elevate privileges to System level. The flaw allows remote code execution without authentication, enabling attackers to bypass security controls. Microsoft has released a patch; security teams should apply it immediately, monitor Defender telemetry, and review Sigma hunting rules for early detection.]]></description>
-      <pubDate>Sat, 14 Nov 2026 02:41:38 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/signdrop-zero-day-windows-clfs-privilege-escalation">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Uber Driver Data Breach Exposes 150,000 Records via Fireworks AI</title>
-      <link>https://secubuzz.com/news/uber-driver-data-breach-exposes-150-000-records-vi-b16dbed3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uber-driver-data-breach-exposes-150-000-records-vi-b16dbed3</guid>
-      <description><![CDATA[Uber suffered a data breach after hackers compromised a third-party services provider, exposing personal information belonging to 150,000 drivers, including names, addresses, and driver’s license numbers. The intruders accessed records held by Fireworks AI, creating identity-theft and credential-misuse risks for affected U.S. drivers. Uber is notifying victims, investigating the incident, and strengthening third-party security controls.]]></description>
-      <pubDate>Sat, 14 Nov 2026 01:19:57 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/uber-confirms-data-breach/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>FAA Ground Stop Triggered by Unexplained Communications Disruption</title>
-      <link>https://secubuzz.com/news/faa-ground-stop-triggered-by-unexplained-communica-b99cf554</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/faa-ground-stop-triggered-by-unexplained-communica-b99cf554</guid>
-      <description><![CDATA[A Federal Aviation Administration ground stop was imposed after an unexplained communications disruption, raising concerns of a potential cyberattack. The incident disrupted flight operations nationwide, but officials have not confirmed the cause or identified any exploited vulnerability. Air traffic control systems should monitor for anomalous traffic, apply the latest firmware patches, and enforce strict authentication to mitigate similar disruptions.]]></description>
-      <pubDate>Fri, 13 Nov 2026 21:33:27 GMT</pubDate>
-      <source url="https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>FBI flash alert says Artex tool automating cyberattacks at ‘machine speed’</title>
-      <link>https://secubuzz.com/news/fbi-flash-alert-says-artex-tool-automating-cyberat-213b5384</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-flash-alert-says-artex-tool-automating-cyberat-213b5384</guid>
-      <description><![CDATA[Open source hacking tool Artex "significantly reduces the time required to chain attack techniques, with some intrusions progressing from initial targeting to privileged access in under three hours," the FBI said.]]></description>
-      <pubDate>Fri, 13 Nov 2026 21:32:00 GMT</pubDate>
-      <source url="https://therecord.media/artex-ai-tool-fbi-flash-alert">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SCKit Exploits ScreenConnect for Remote Technician Access</title>
-      <link>https://secubuzz.com/news/sckit-exploits-screenconnect-for-remote-technician-e6c5e832</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sckit-exploits-screenconnect-for-remote-technician-e6c5e832</guid>
-      <description><![CDATA[SCKit leveraged the legitimate ScreenConnect platform to infiltrate target systems and capture technician sessions. This abuse bypasses standard authentication, enabling attackers to execute commands, exfiltrate data, and maintain persistence. Defenders should enforce least-privilege access, monitor for anomalous ScreenConnect activity, and deploy Defender XDR hunting rules to detect and block actively.]]></description>
-      <pubDate>Fri, 13 Nov 2026 21:31:44 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/">Microsoft Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SentinelOne AI Detects Autonomous ARTEX Attacks</title>
-      <link>https://secubuzz.com/news/sentinelone-ai-detects-autonomous-artex-attacks-d429a6af</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sentinelone-ai-detects-autonomous-artex-attacks-d429a6af</guid>
-      <description><![CDATA[SentinelOne demonstrates its Behavioral AI, Singularity AI SIEM, and Purple AI modules detecting autonomous ARTEX attacks across cloud, identity, and endpoint platforms. The framework uses machine-learning models trained on ARTEX command-and-control traffic, enabling real-time threat isolation without manual signatures. Teams should integrate these AI modules into SIEM pipelines to improve visibility and accelerate response to AI-driven threats.]]></description>
-      <pubDate>Fri, 13 Nov 2026 21:23:19 GMT</pubDate>
-      <source url="https://www.sentinelone.com/blog/artex-unmasked-the-rise-of-ai-powered-artex-in-cybercrime-espionage/">SentinelOne</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI-Enabled Pentest Platforms Lower Attack Skill Threshold</title>
-      <link>https://secubuzz.com/news/ai-enabled-pentest-platforms-lower-attack-skill-th-0112375a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-enabled-pentest-platforms-lower-attack-skill-th-0112375a</guid>
-      <description><![CDATA[AI-enabled pentest and red-team frameworks automate reconnaissance, vulnerability testing, and follow-on actions, reducing the skill required for attackers. These tools chain operations seamlessly, enabling rapid exploitation cycles and accelerating intrusion timelines when misused by threat actors. Security teams should assess the risk of adopting such platforms, enforce strict access controls, and monitor for anomalous usage patterns.]]></description>
-      <pubDate>Fri, 13 Nov 2026 20:57:13 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/artex-and-beyond/">Cisco Talos</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

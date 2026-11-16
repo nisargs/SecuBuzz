@@ -11,6 +11,119 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "lock-and-code-podcast-preparing-data-for-death-034f28fd",
+    "title": "Lock and Code Podcast: Preparing Data for Death",
+    "summary": "The Lock and Code podcast episode S07E23 discusses data organization and preparation for posthumous access. Interviewee Jed Brubaker explains strategies for securing personal data, setting up digital wills, and ensuring family members can retrieve information after death. Listeners are advised to use secure storage solutions and clear documentation, but no immediate patches or vulnerabilities are addressed.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/podcast/2026/11/how-to-prepare-your-data-for-your-death-lock-and-code-s07e23",
+    "publishedAt": "2026-11-16T12:20:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "lock-and-code-podcast-preparing-data-for-death",
+      "article-034f28fd",
+      "034f28fd",
+      "lock-and-code-podcast-preparing-data-for-death-550a30"
+    ]
+  },
+  {
+    "slug": "hotel-staff-compromised-by-fake-booking-email-scam-55bce6fb",
+    "title": "Hotel Staff Compromised by Fake Booking Email Scam",
+    "summary": "Luxury hotel employees were deceived by a forged booking request, granting attackers access to the reservations inbox. The attackers copied legitimate refund requests and submitted fraudulent ones, exploiting the hotel’s guest-first culture and fragmented accountability across owner, operator, and brand. Security teams should enforce email authentication, implement role-based access controls, and conduct staff training to prevent similar social-engineering breaches.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html",
+    "publishedAt": "2026-11-16T12:04:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hotel-staff-compromised-by-fake-booking-email-scam",
+      "article-55bce6fb",
+      "55bce6fb",
+      "hotel-staff-compromised-by-fake-booking-email-scam-7f3882"
+    ]
+  },
+  {
+    "slug": "microsoft-previewing-remote-lock-for-lost-windows-015ae66c",
+    "title": "Microsoft Previewing Remote Lock for Lost Windows Devices",
+    "summary": "Microsoft previewed a remote lock that lets Intune admins lock lost or stolen Windows devices without wiping them. The lock signs out sessions, hides sign-in options, shows a lock screen, and persists across restarts on Windows 10, 11, and Server editions. Admins should enable the preview in Intune, test on pilot devices, and plan a full rollout once stable.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/microsoft-remote-lock-feature-preview/",
+    "publishedAt": "2026-11-16T11:57:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-previewing-remote-lock-for-lost-windows",
+      "article-015ae66c",
+      "015ae66c",
+      "microsoft-previewing-remote-lock-for-lost-windows-68e979",
+      "microsoft-previewing-remote-lock-for-lost-windows-devices"
+    ]
+  },
+  {
+    "slug": "unrealircd-vulnerability-enables-command-execution-21745f13",
+    "title": "UnrealIRCd Vulnerability Enables Command Execution with IRCOp Privileges",
+    "summary": "A high-severity flaw in UnrealIRCd, tracked as CVE-2026-114713, permits attackers to execute arbitrary commands with server or IRCOp privileges. The vulnerability stems from improper validation of privileged IRC commands, enabling remote code execution without authentication and potentially compromising entire IRC networks. UnrealIRCd developers released an update on 2026-11-15; administrators should upgrade immediately and disable unused IRCOp accounts.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/",
+    "publishedAt": "2026-11-16T11:15:48.000Z",
+    "cves": [
+      "CVE-2026-114713"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "unrealircd-vulnerability-enables-command-execution",
+      "article-21745f13",
+      "21745f13",
+      "unrealircd-vulnerability-enables-command-execution-682a36",
+      "unrealircd-vulnerability-enables-command-execution-with-irco"
+    ]
+  },
+  {
+    "slug": "copeland-controllers-face-rapid-exploit-attempts-o-5f4d80e0",
+    "title": "Copeland Controllers Face Rapid Exploit Attempts on 14 Vulnerabilities",
+    "summary": "Vulncheck identified fourteen security flaws in Copeland XWEB EVO refrigeration controllers, two of which threat actors have already targeted. The weaknesses involve improper input validation and insecure default credentials, enabling remote code execution or denial of service on the controllers' operating system. Copeland has issued firmware updates; operators should apply the latest patch and disable default accounts to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/",
+    "publishedAt": "2026-11-16T11:05:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "copeland-controllers-face-rapid-exploit-attempts-o",
+      "article-5f4d80e0",
+      "5f4d80e0",
+      "copeland-controllers-face-rapid-exploit-attempts-o-1c142a",
+      "copeland-controllers-face-rapid-exploit-attempts-on-14-vulne"
+    ]
+  },
+  {
+    "slug": "anthropic-releases-claude-mythos-5-2-fable-5-2-40b6d9d4",
+    "title": "Anthropic Releases Claude Mythos 5.2, Fable 5.2",
+    "summary": "Anthropic released Claude Mythos 5.2 and Fable 5.2 for developers. Updates enhance coding and reasoning but reduce coverage of some security tasks, while Mythos improves bug detection. No security patches or mitigations are required; users should adopt the new models for improved code quality to reduce bugs in production environments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
+    "publishedAt": "2026-11-16T11:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-releases-claude-mythos-5-2-fable-5-2",
+      "article-40b6d9d4",
+      "40b6d9d4",
+      "anthropic-releases-claude-mythos-5-2-fable-5-2-232a57"
+    ]
+  },
+  {
     "slug": "rspamd-4-3-0-patch-stops-worker-crashes-and-forged-0b1aaa62",
     "title": "Rspamd 4.3.0 Patch Stops Worker Crashes and Forged Auth",
     "summary": "Rspamd 4.3.0 fixes bugs that let unauthenticated attackers crash workers or forge authentication to bypass DMARC. A single HTTP request with a header lacking a colon or an empty Deliver-To header could terminate workers, causing a denial-of-service without code execution. Administrators should upgrade to Rspamd 4.3.0 or apply the patch to remove the crash and authentication bypass.",
@@ -82,6 +195,25 @@ export const news: NewsBrief[] = [
       "article-02a2bcde",
       "02a2bcde",
       "microsoft-denies-outage-attack-alerts-to-phishing-5a1839"
+    ]
+  },
+  {
+    "slug": "malwarebytes-labs-weekly-security-roundup-november-7b526ec1",
+    "title": "Malwarebytes Labs Weekly Security Roundup November 9-15",
+    "summary": "Malwarebytes Labs released a weekly security roundup covering November 9-15, 2026, summarizing emerging threats and vulnerability disclosures. The article details zero-day exploits, phishing campaigns, and new defensive tools observed during that period, offering context for security teams. No specific patches or mitigations are announced, making this a general industry update rather than an actionable advisory.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/uncategorized/2026/11/a-week-in-security-november-9-november-15-2",
+    "publishedAt": "2026-11-16T08:01:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malwarebytes-labs-weekly-security-roundup-november",
+      "article-7b526ec1",
+      "7b526ec1",
+      "malwarebytes-labs-weekly-security-roundup-november-33432a",
+      "malwarebytes-labs-weekly-security-roundup-november-9-15"
     ]
   },
   {
@@ -9583,133 +9715,6 @@ export const news: NewsBrief[] = [
       "9a3f5d54",
       "rhsa-2026-99169-important-oci-seccomp-bpf-hook-sec-37d67f",
       "rhsa-2026-99169-important-oci-seccomp-bpf-hook-security-upda"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99161-moderate-patch-security-update-902bf761",
-    "title": "RHSA-2026:99161: Moderate: patch security update",
-    "summary": "An update for patch is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99161",
-    "publishedAt": "2026-11-12T02:31:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99161-moderate-patch-security-update",
-      "article-902bf761",
-      "902bf761",
-      "rhsa-2026-99161-moderate-patch-security-update-37d67f"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99124-important-squid-security-update-5e3f8556",
-    "title": "RHSA-2026:99124: Important: squid security update",
-    "summary": "An update for squid is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99124",
-    "publishedAt": "2026-11-12T02:27:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99124-important-squid-security-update",
-      "article-5e3f8556",
-      "5e3f8556",
-      "rhsa-2026-99124-important-squid-security-update-37d67f"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99146-important-net-8-0-security-bug-fix-cb21ce40",
-    "title": "RHSA-2026:99146: Important: .NET 8.0 security, bug fix, and enhancement update",
-    "summary": "An update for .NET 8.0 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99146",
-    "publishedAt": "2026-11-12T02:21:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99146-important-net-8-0-security-bug-fix",
-      "article-cb21ce40",
-      "cb21ce40",
-      "rhsa-2026-99146-important-net-8-0-security-bug-fix-37d67f",
-      "rhsa-2026-99146-important-net-8-0-security-bug-fix-and-enhan"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99151-important-grafana-security-update-6dea7678",
-    "title": "RHSA-2026:99151: Important: grafana security update",
-    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99151",
-    "publishedAt": "2026-11-12T02:03:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99151-important-grafana-security-update",
-      "article-6dea7678",
-      "6dea7678",
-      "rhsa-2026-99151-important-grafana-security-update-37d67f"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-perl-dbi-security-update-f9d01140",
-    "title": "Red Hat Releases perl-DBI Security Update",
-    "summary": "Red Hat has released an important security update for perl-DBI on RHEL 9.8 EUS, addressing multiple vulnerabilities. The update carries a CVSS base score of 7.5 for the most critical issue, and Red Hat rates the patch as Important. Administrators should apply the perl-DBI update immediately to mitigate the identified security weaknesses.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99121",
-    "publishedAt": "2026-11-12T02:02:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-perl-dbi-security-update",
-      "article-f9d01140",
-      "f9d01140",
-      "red-hat-releases-perl-dbi-security-update-37d67f"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-podcast-november-12-2026-1736113d",
-    "title": "ISC Stormcast Podcast - November 12, 2026",
-    "summary": "ISC Stormcast for November 12, 2026 delivers a concise weekly cybersecurity briefing. The episode reviews recent phishing campaigns, zero-day exploits, cloud misconfigurations, and emerging attack vectors, offering actionable defensive recommendations. Listeners can access the full transcript, resource links, and download the podcast via the ISC website, ensuring up-to-date threat awareness.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33512",
-    "publishedAt": "2026-11-12T02:00:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-podcast-november-12-2026",
-      "article-1736113d",
-      "1736113d",
-      "isc-stormcast-podcast-november-12-2026-57dd81"
-    ]
-  },
-  {
-    "slug": "red-hat-patches-gnome-remote-desktop-flaw-in-rhel-9eab034d",
-    "title": "Red Hat Patches gnome-remote-desktop Flaw in RHEL",
-    "summary": "Red Hat issued a security update addressing a vulnerability in the gnome-remote-desktop component for Red Hat Enterprise Linux 9.8 Extended Update Support. The underlying flaw allows potential exploitation depending on system configuration, carrying a Red Hat severity rating of Important. Administrators using affected RHEL 9.8 Extended Update Support systems should apply the security patch immediately to mitigate risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99136",
-    "publishedAt": "2026-11-12T01:57:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-patches-gnome-remote-desktop-flaw-in-rhel",
-      "article-9eab034d",
-      "9eab034d",
-      "red-hat-patches-gnome-remote-desktop-flaw-in-rhel-37d67f"
     ]
   }
 ];
