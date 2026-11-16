@@ -577,15 +577,8 @@ export function MyStackSidebar({
             </button>
           </div>
         </div>
-
-        {/* Quiet Educational Note (Only when unconfigured) */}
-        {!hasItems && (
-          <p className="text-xs text-subtle leading-relaxed border-t border-line/60 pt-3">
-            Stored 100% on this device. Zero accounts, zero PII, zero third-party disclosure.
-          </p>
-        )}
-        </div>
-      )}
+      </div>
+    )}
     </div>
   );
 }
