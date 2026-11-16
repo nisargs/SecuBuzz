@@ -2,6 +2,33 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-128134",
+    "cveID": "CVE-2026-128134",
+    "slug": "cve-2026-128134",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 7.8,
+    "severity": "High",
+    "cwe": "CWE-426",
+    "ransomware": false,
+    "description": "nltk.parse.dependencygraph.dot2img invokes the Graphviz dot executable without the trusted-execution guarantees that NLTK applies to its other native-tool wrappers. The function resolves dot by bare name and then runs the resolved absolute path with a raw subprocess.run, omitting the ownership/writability check and the loader-environment scrub that nltk.pathsec.spawn_trusted provides.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7mxv-7h3q-9324"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128134"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-128076",
     "cveID": "CVE-2026-128076",
     "slug": "cve-2026-128076",
@@ -1370,33 +1397,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128070"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128069",
-    "cveID": "CVE-2026-128069",
-    "slug": "cve-2026-128069",
-    "vendor": "RubyGems",
-    "product": "rails-html-sanitizer",
-    "name": "rails-html-sanitizer: Possible XSS via shared scrubber state in concurrent calls",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 4.7,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "Rails::HTML::SafeListSanitizer (both the HTML4 and HTML5 variants) shares one Rails::HTML::PermitScrubber across every sanitize call on the same instance, assigning its tags and attributes on each call without synchronization. Two concurrent sanitize calls with different tags: or attributes: options can interleave, so one call is scrubbed with the other call's allowlist.",
-    "requiredAction": "Upgrade rails-html-sanitizer to version 1.7.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h7wh-q2qr-458c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128069"
       }
     ],
     "source": "GITHUB"

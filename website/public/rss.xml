@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 17:47:57 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 18:46:35 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library</title>
+      <link>https://secubuzz.com/news/cve-2026-129266-arbitrary-local-file-read-via-unva-6e650c0c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-129266-arbitrary-local-file-read-via-unva-6e650c0c</guid>
+      <description><![CDATA[Bulletin ID: 2026-183-AWS Publication Date: 11/16/2026 10:30 AM PST Description: External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can access.]]></description>
+      <pubDate>Mon, 16 Nov 2026 18:37:04 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-183-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>USN-9064-2: Pillow regression</title>
+      <link>https://secubuzz.com/news/usn-9064-2-pillow-regression-71f5af14</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9064-2-pillow-regression-71f5af14</guid>
+      <description><![CDATA[USN-9064-1 fixed vulnerabilities in Pillow. Unfortunately, the fix for CVE-2026-112402 introduced a regression that caused resizing images with the NEAREST filter, and resizing any "1" or "P" mode image, to fail. This issue only affected Ubuntu 26.10, Ubuntu 26.04 LTS, Ubuntu 24.04 LTS, and Ubuntu 22.04 LTS. (CVE-2026-112390) It was discovered that Pillow's PdfParser.get_value() could recurse without a limit while reading nested PDF objects.]]></description>
+      <pubDate>Mon, 16 Nov 2026 18:07:22 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9064-2">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>UK Opens HQ for National Cyber Force</title>
+      <link>https://secubuzz.com/news/uk-opens-hq-for-national-cyber-force-d204fa0f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uk-opens-hq-for-national-cyber-force-d204fa0f</guid>
+      <description><![CDATA[The United Kingdom opened a new headquarters for its National Cyber Force, the covert unit that conducts offensive cyber operations. The building, near Samlesbury in Lancashire, consolidates teams that plan, develop, and deploy state-level cyber attacks, expanding the UK’s offensive posture. The move signals a strategic expansion, highlighting the importance of defensive readiness against potential state-level campaigns.]]></description>
+      <pubDate>Mon, 16 Nov 2026 17:22:00 GMT</pubDate>
+      <source url="https://therecord.media/uk-national-cyber-force-headquarters-opens">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Wiz Launches AI Security Agent</title>
+      <link>https://secubuzz.com/news/wiz-launches-ai-security-agent-75657370</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wiz-launches-ai-security-agent-75657370</guid>
+      <description><![CDATA[Wiz released its AI Security Agent, a tool designed to detect and analyze AI agents operating within an organization. The agent maps AI agent intent, monitors interactions, and surfaces hidden risks such as data exfiltration or policy violations, providing actionable insights. Wiz recommends integrating the agent into existing security stacks and enabling continuous monitoring to mitigate emerging AI-driven threats.]]></description>
+      <pubDate>Mon, 16 Nov 2026 17:02:41 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/introducing-wiz-ai-security-agent">Wiz Research</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Microsoft says months-old bug caused global Microsoft 365 outage</title>
       <link>https://secubuzz.com/news/microsoft-says-months-old-bug-caused-global-micros-b35814fa</link>
@@ -44,6 +80,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Google: Hackers Automate Attacks Using AI Agents</title>
+      <link>https://secubuzz.com/news/google-hackers-automate-attacks-using-ai-agents-5c88e7c2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-hackers-automate-attacks-using-ai-agents-5c88e7c2</guid>
+      <description><![CDATA[Hackers deploy AI agents that autonomously scan, breach, and move through networks, per Google and Mandiant. These agents use AI to reduce human oversight, enabling rapid lateral movement and exploitation of network vulnerabilities, raising threat level to critical. Security teams should monitor for automated reconnaissance, enforce strict access controls, and update detection rules to flag AI-driven activity.]]></description>
+      <pubDate>Mon, 16 Nov 2026 15:36:55 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fully-automated-ai-attacks/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Qualcomm Releases Advisory for Product Vulnerabilities</title>
       <link>https://secubuzz.com/news/qualcomm-releases-advisory-for-product-vulnerabili-cbcbddc5</link>
       <guid isPermaLink="true">https://secubuzz.com/news/qualcomm-releases-advisory-for-product-vulnerabili-cbcbddc5</guid>
@@ -60,6 +105,15 @@
       <pubDate>Mon, 16 Nov 2026 15:31:25 GMT</pubDate>
       <source url="https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/">SecurityWeek</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Net-SNMP SMUX Module Causes Denial of Service</title>
+      <link>https://secubuzz.com/news/net-snmp-smux-module-causes-denial-of-service-fc20a4af</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/net-snmp-smux-module-causes-denial-of-service-fc20a4af</guid>
+      <description><![CDATA[A flaw in Net-SNMP’s SMUX module allows unauthenticated remote connections to be mishandled, potentially causing the daemon to block indefinitely. The resulting denial of service could disrupt SNMP monitoring on affected Ubuntu LTS releases, though no active exploitation has been reported. Ubuntu has released USN-8997-2 to patch the issue; administrators should apply the update promptly to restore service availability.]]></description>
+      <pubDate>Mon, 16 Nov 2026 15:28:07 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8997-2">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Barracuda Breached Using AI-Powered Artex Framework</title>
@@ -96,6 +150,24 @@
       <pubDate>Mon, 16 Nov 2026 14:44:36 GMT</pubDate>
       <source url="https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/">Check Point Research</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>IBM Products Vulnerable to Confidentiality Loss and DoS</title>
+      <link>https://secubuzz.com/news/ibm-products-vulnerable-to-confidentiality-loss-an-580b3421</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ibm-products-vulnerable-to-confidentiality-loss-an-580b3421</guid>
+      <description><![CDATA[IBM disclosed vulnerabilities in App Connect Operator, ContextForge MCP Gateway, QRadar EDR, and webMethods Integration Server that can expose data and cause DoS. The weaknesses arise from inadequate input validation and insecure defaults, allowing attackers to exfiltrate information or disrupt service. IBM advises applying the latest patches, reviewing configurations, and monitoring for anomalous activity to mitigate exposure.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:41:37 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/ibm-security-advisory-av26-1162">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>GitGuardian Expands Good Samaritan Program for Enterprises</title>
+      <link>https://secubuzz.com/news/gitguardian-expands-good-samaritan-program-for-ent-e25bcde5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gitguardian-expands-good-samaritan-program-for-ent-e25bcde5</guid>
+      <description><![CDATA[GitGuardian reports over 3,913 high-impact credential leaks affecting 1,532 companies since spring, highlighting enterprise exposure. Leaks arise from accidental exposure of secrets in code repositories and cloud configs, enabling credential theft and lateral movement. GitGuardian expanded its Good Samaritan Program, granting security teams free access to secret-detection tools and remediation guidance to curb future leaks.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:38:24 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/leaked-credentials-are-an-enterprise-problem-gitguardian-extends-its-good-samaritan-program-to-security-teams/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>UK Criticized for Cyber Security Bill Shortcomings</title>
@@ -384,78 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 07:19:56 GMT</pubDate>
       <source url="https://cybersecuritynews.com/best-caasm-tools/">Cyber Security News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Top 10 ASM/EASM Tools Ranked for 2026</title>
-      <link>https://secubuzz.com/news/top-10-asm-easm-tools-ranked-for-2026-28f402fb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-10-asm-easm-tools-ranked-for-2026-28f402fb</guid>
-      <description><![CDATA[The 2026 ASM/EASM market is divided into continuous-discovery engines, suite-integrated modules, and internet-scan authorities, each assessed for reachability and attribution accuracy. Palo Alto Cortex and other vendors lead the ranking for continuous-discovery capabilities, while the list stresses accurate asset ownership mapping. Defenders should use the rankings to prioritize continuous monitoring, validate inventories, and integrate surface modules into operations.]]></description>
-      <pubDate>Mon, 16 Nov 2026 07:13:15 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-attack-surface-management/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>2026 CTEM Platform Rankings Revealed</title>
-      <link>https://secubuzz.com/news/2026-ctem-platform-rankings-revealed-4506872f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/2026-ctem-platform-rankings-revealed-4506872f</guid>
-      <description><![CDATA[The article presents a 2026 ranking of Continuous Threat Exposure Management platforms, evaluating their coverage across the five-stage CTEM operating rhythm. It emphasizes that no single product fully implements all stages, with validation often omitted, distinguishing exposure management from vulnerability management. Readers are guided to assess each platform’s stage coverage and validation capabilities before procurement decisions.]]></description>
-      <pubDate>Mon, 16 Nov 2026 07:08:54 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-ctem-platforms/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>2026 Risk-Based Vulnerability Tool Rankings</title>
-      <link>https://secubuzz.com/news/2026-risk-based-vulnerability-tool-rankings-1e125d39</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/2026-risk-based-vulnerability-tool-rankings-1e125d39</guid>
-      <description><![CDATA[The article lists the top 2026 risk-based vulnerability management tools, highlighting how they re-rank vulnerabilities by exploitation evidence, asset criticality, and reachability. The review notes that native scoring is now embedded in scanners, with aggregation layers and exposure-math engines augmenting the core platforms. Decision makers should evaluate how each tool integrates aggregation and exposure modeling to align with asset prioritization.]]></description>
-      <pubDate>Mon, 16 Nov 2026 07:03:19 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-rbvm-tools/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Top Cloud Vulnerability Management Tools 2026</title>
-      <link>https://secubuzz.com/news/top-cloud-vulnerability-management-tools-2026-8e822cdf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-cloud-vulnerability-management-tools-2026-8e822cdf</guid>
-      <description><![CDATA[The article ranks leading cloud vulnerability management tools for 2026, spotlighting agentless snapshot scanning that maps entire estates in hours. It highlights how vendors integrate vulnerability data with exposure, identity, and data sensitivity contexts to prioritize actionable risks. The list names Wiz as top performer, followed by Palo Alto and others, providing a comparative scoring framework for security teams.]]></description>
-      <pubDate>Mon, 16 Nov 2026 06:55:22 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-cloud-vulnerability-management/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>BO Team Exploits Log4Shell in VMware vCenter</title>
-      <link>https://secubuzz.com/news/bo-team-exploits-log4shell-in-vmware-vcenter-a4b47175</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bo-team-exploits-log4shell-in-vmware-vcenter-a4b47175</guid>
-      <description><![CDATA[BO Team exploited Log4Shell in VMware vCenter to gain unauthenticated remote code execution in a Russian developer’s network. The attackers maintained a months-long presence, compromising the code-signing server and development infrastructure, allowing them to sign malicious binaries for downstream customers. Kaspersky’s ICs CERT documented the activity and recommends patching vCenter, revoking compromised signing certificates, and auditing signed binaries.]]></description>
-      <pubDate>Mon, 16 Nov 2026 06:53:34 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Project Zero to Publish Bugs After 90 Days</title>
-      <link>https://secubuzz.com/news/project-zero-to-publish-bugs-after-90-days-854e3824</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/project-zero-to-publish-bugs-after-90-days-854e3824</guid>
-      <description><![CDATA[Google Project Zero announced a policy to publish vulnerabilities 90 days after vendor notification, regardless of patch status. The 'Full X' policy will cut the disclosure window to 60 days on Feb 2, 2027, and 30 days on Jan 3, 2028, replacing the 90+30 rule. Teams should track Project Zero releases and adjust patch timelines to match the new schedule.]]></description>
-      <pubDate>Mon, 16 Nov 2026 06:30:02 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/16/google-project-zero-disclosure-policy/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ory Hydra: Open-Source OAuth 2.0 Server</title>
-      <link>https://secubuzz.com/news/ory-hydra-open-source-oauth-2-0-server-e82d7d08</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ory-hydra-open-source-oauth-2-0-server-e82d7d08</guid>
-      <description><![CDATA[Ory Hydra is an open-source OAuth 2.0 server and OpenID Connect provider that issues and validates tokens, registers client apps, and manages signing keys. Hydra stores no usernames or passwords, delegating authentication to an external identity system and reducing credential exposure. Developers should follow the full OAuth spec and implement robust key management for secure token issuance.]]></description>
-      <pubDate>Mon, 16 Nov 2026 06:00:29 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/16/ory-hydra-oauth-server-open-source/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Backdoored LoRA Models Pose Supply Chain Threat</title>
-      <link>https://secubuzz.com/news/backdoored-lora-models-pose-supply-chain-threat-50a4e18d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/backdoored-lora-models-pose-supply-chain-threat-50a4e18d</guid>
-      <description><![CDATA[Backdoored LoRA models introduce supply chain risk by embedding malicious code within AI training weights. These compromised models can execute hidden payloads during inference, potentially compromising downstream applications; no public exploit yet, but the risk is amplified by widespread model sharing. Organizations should verify model provenance, employ integrity checks, and isolate inference environments to mitigate potential attacks.]]></description>
-      <pubDate>Mon, 16 Nov 2026 06:00:00 GMT</pubDate>
-      <source url="https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/">CrowdStrike</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

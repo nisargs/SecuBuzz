@@ -11,6 +11,121 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-129266-arbitrary-local-file-read-via-unva-6e650c0c",
+    "title": "CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library",
+    "summary": "Bulletin ID: 2026-183-AWS Publication Date: 11/16/2026 10:30 AM PST Description: External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can access.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-183-aws/",
+    "publishedAt": "2026-11-16T18:37:04.000Z",
+    "cves": [
+      "CVE-2026-129266"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-129266-arbitrary-local-file-read-via-unva",
+      "article-6e650c0c",
+      "6e650c0c",
+      "cve-2026-129266-arbitrary-local-file-read-via-unva-11bf2a",
+      "cve-2026-129266-arbitrary-local-file-read-via-unvalidated-re"
+    ]
+  },
+  {
+    "slug": "usn-9064-2-pillow-regression-71f5af14",
+    "title": "USN-9064-2: Pillow regression",
+    "summary": "USN-9064-1 fixed vulnerabilities in Pillow. Unfortunately, the fix for CVE-2026-112402 introduced a regression that caused resizing images with the NEAREST filter, and resizing any \"1\" or \"P\" mode image, to fail. This issue only affected Ubuntu 26.10, Ubuntu 26.04 LTS, Ubuntu 24.04 LTS, and Ubuntu 22.04 LTS. (CVE-2026-112390) It was discovered that Pillow's PdfParser.get_value() could recurse without a limit while reading nested PDF objects.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9064-2",
+    "publishedAt": "2026-11-16T18:07:22.000Z",
+    "cves": [
+      "CVE-2026-112402",
+      "CVE-2026-112390",
+      "CVE-2026-112391",
+      "CVE-2026-112392",
+      "CVE-2026-112393",
+      "CVE-2026-112394",
+      "CVE-2026-112395",
+      "CVE-2026-112396",
+      "CVE-2026-112397",
+      "CVE-2026-112398",
+      "CVE-2026-112399",
+      "CVE-2026-112400",
+      "CVE-2026-112401",
+      "CVE-2026-112403",
+      "CVE-2026-112404",
+      "CVE-2026-112405",
+      "CVE-2026-112406",
+      "CVE-2026-112891",
+      "CVE-2026-112892",
+      "CVE-2026-112893",
+      "CVE-2026-112894",
+      "CVE-2026-112895",
+      "CVE-2026-112896",
+      "CVE-2026-112897",
+      "CVE-2026-112898",
+      "CVE-2026-112900",
+      "CVE-2026-112901",
+      "CVE-2026-114501",
+      "CVE-2026-42308",
+      "CVE-2026-42310",
+      "CVE-2026-96636",
+      "CVE-2026-96637",
+      "CVE-2026-96638",
+      "CVE-2026-96639",
+      "CVE-2026-96640",
+      "CVE-2026-96641",
+      "CVE-2026-96642",
+      "CVE-2026-96643",
+      "CVE-2026-96778"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9064-2-pillow-regression",
+      "article-71f5af14",
+      "71f5af14",
+      "usn-9064-2-pillow-regression-7e86f2"
+    ]
+  },
+  {
+    "slug": "uk-opens-hq-for-national-cyber-force-d204fa0f",
+    "title": "UK Opens HQ for National Cyber Force",
+    "summary": "The United Kingdom opened a new headquarters for its National Cyber Force, the covert unit that conducts offensive cyber operations. The building, near Samlesbury in Lancashire, consolidates teams that plan, develop, and deploy state-level cyber attacks, expanding the UK’s offensive posture. The move signals a strategic expansion, highlighting the importance of defensive readiness against potential state-level campaigns.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/uk-national-cyber-force-headquarters-opens",
+    "publishedAt": "2026-11-16T17:22:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uk-opens-hq-for-national-cyber-force",
+      "article-d204fa0f",
+      "d204fa0f",
+      "uk-opens-hq-for-national-cyber-force-64c455"
+    ]
+  },
+  {
+    "slug": "wiz-launches-ai-security-agent-75657370",
+    "title": "Wiz Launches AI Security Agent",
+    "summary": "Wiz released its AI Security Agent, a tool designed to detect and analyze AI agents operating within an organization. The agent maps AI agent intent, monitors interactions, and surfaces hidden risks such as data exfiltration or policy violations, providing actionable insights. Wiz recommends integrating the agent into existing security stacks and enabling continuous monitoring to mitigate emerging AI-driven threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/introducing-wiz-ai-security-agent",
+    "publishedAt": "2026-11-16T17:02:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wiz-launches-ai-security-agent",
+      "article-75657370",
+      "75657370",
+      "wiz-launches-ai-security-agent-26d3a7"
+    ]
+  },
+  {
     "slug": "microsoft-says-months-old-bug-caused-global-micros-b35814fa",
     "title": "Microsoft says months-old bug caused global Microsoft 365 outage",
     "summary": "Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive.",
@@ -85,6 +200,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "google-hackers-automate-attacks-using-ai-agents-5c88e7c2",
+    "title": "Google: Hackers Automate Attacks Using AI Agents",
+    "summary": "Hackers deploy AI agents that autonomously scan, breach, and move through networks, per Google and Mandiant. These agents use AI to reduce human oversight, enabling rapid lateral movement and exploitation of network vulnerabilities, raising threat level to critical. Security teams should monitor for automated reconnaissance, enforce strict access controls, and update detection rules to flag AI-driven activity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fully-automated-ai-attacks/",
+    "publishedAt": "2026-11-16T15:36:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-hackers-automate-attacks-using-ai-agents",
+      "article-5c88e7c2",
+      "5c88e7c2",
+      "google-hackers-automate-attacks-using-ai-agents-189e80"
+    ]
+  },
+  {
     "slug": "qualcomm-releases-advisory-for-product-vulnerabili-cbcbddc5",
     "title": "Qualcomm Releases Advisory for Product Vulnerabilities",
     "summary": "Qualcomm released advisory AV26-1164 on November 2, 2026, detailing multiple vulnerabilities affecting its product line. The flaws could allow attackers to gain unauthorized access or disrupt device operation, though no public exploits have been reported. Users and administrators should review the advisory link and apply available updates to mitigate the risks.",
@@ -119,6 +252,24 @@ export const news: NewsBrief[] = [
       "article-a77de7f8",
       "a77de7f8",
       "google-project-zero-shortens-disclosure-window-5ffe67"
+    ]
+  },
+  {
+    "slug": "net-snmp-smux-module-causes-denial-of-service-fc20a4af",
+    "title": "Net-SNMP SMUX Module Causes Denial of Service",
+    "summary": "A flaw in Net-SNMP’s SMUX module allows unauthenticated remote connections to be mishandled, potentially causing the daemon to block indefinitely. The resulting denial of service could disrupt SNMP monitoring on affected Ubuntu LTS releases, though no active exploitation has been reported. Ubuntu has released USN-8997-2 to patch the issue; administrators should apply the update promptly to restore service availability.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8997-2",
+    "publishedAt": "2026-11-16T15:28:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "net-snmp-smux-module-causes-denial-of-service",
+      "article-fc20a4af",
+      "fc20a4af",
+      "net-snmp-smux-module-causes-denial-of-service-7fbb8f"
     ]
   },
   {
@@ -194,6 +345,44 @@ export const news: NewsBrief[] = [
       "0a66e85f",
       "tsmc-confirms-cloud-provider-data-breach-exposing-7e6eb0",
       "tsmc-confirms-cloud-provider-data-breach-exposing-employee-i"
+    ]
+  },
+  {
+    "slug": "ibm-products-vulnerable-to-confidentiality-loss-an-580b3421",
+    "title": "IBM Products Vulnerable to Confidentiality Loss and DoS",
+    "summary": "IBM disclosed vulnerabilities in App Connect Operator, ContextForge MCP Gateway, QRadar EDR, and webMethods Integration Server that can expose data and cause DoS. The weaknesses arise from inadequate input validation and insecure defaults, allowing attackers to exfiltrate information or disrupt service. IBM advises applying the latest patches, reviewing configurations, and monitoring for anomalous activity to mitigate exposure.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/ibm-security-advisory-av26-1162",
+    "publishedAt": "2026-11-16T14:41:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ibm-products-vulnerable-to-confidentiality-loss-an",
+      "article-580b3421",
+      "580b3421",
+      "ibm-products-vulnerable-to-confidentiality-loss-an-4d932a",
+      "ibm-products-vulnerable-to-confidentiality-loss-and-dos"
+    ]
+  },
+  {
+    "slug": "gitguardian-expands-good-samaritan-program-for-ent-e25bcde5",
+    "title": "GitGuardian Expands Good Samaritan Program for Enterprises",
+    "summary": "GitGuardian reports over 3,913 high-impact credential leaks affecting 1,532 companies since spring, highlighting enterprise exposure. Leaks arise from accidental exposure of secrets in code repositories and cloud configs, enabling credential theft and lateral movement. GitGuardian expanded its Good Samaritan Program, granting security teams free access to secret-detection tools and remediation guidance to curb future leaks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/leaked-credentials-are-an-enterprise-problem-gitguardian-extends-its-good-samaritan-program-to-security-teams/",
+    "publishedAt": "2026-11-16T14:38:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gitguardian-expands-good-samaritan-program-for-ent",
+      "article-e25bcde5",
+      "e25bcde5",
+      "gitguardian-expands-good-samaritan-program-for-ent-566c5a",
+      "gitguardian-expands-good-samaritan-program-for-enterprises"
     ]
   },
   {
@@ -9571,157 +9760,6 @@ export const news: NewsBrief[] = [
       "article-95e8fd61",
       "95e8fd61",
       "node-js-http-2-flaws-crash-servers-leak-data-160886"
-    ]
-  },
-  {
-    "slug": "github-accounts-hijacked-secret-stealing-malware-d-3a685923",
-    "title": "GitHub Accounts Hijacked, Secret-Stealing Malware Deployed",
-    "summary": "A threat actor hijacked 4,837 GitHub accounts and pushed a secret-stealing payload into 61,764 repositories, targeting secrets in GitHub Actions. The actor used stolen credentials to gain unauthenticated write access, enabling malware to exfiltrate CI pipeline secrets without user interaction. GitHub issued a security advisory, urging token revocation, two-factor authentication, and repository scans for malicious code.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/github-accounts/",
-    "publishedAt": "2026-11-12T08:15:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-accounts-hijacked-secret-stealing-malware-d",
-      "article-3a685923",
-      "3a685923",
-      "github-accounts-hijacked-secret-stealing-malware-d-71b926",
-      "github-accounts-hijacked-secret-stealing-malware-deployed"
-    ]
-  },
-  {
-    "slug": "palo-alto-pan-os-enables-root-code-execution-291262c4",
-    "title": "Palo Alto PAN-OS Enables Root Code Execution",
-    "summary": "A PAN-OS Panorama RCE flaw lets authenticated admins run arbitrary code with root privileges. CVE-2026-0330 exploits improper privilege checks during configuration, enabling full system compromise; no public exploit yet. Apply the critical November 11 patch for Panorama and update Cloud NGFW, Prisma Access, and standalone PAN-OS immediately in all affected environments.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/palo-alto-networks-pan-os-rce-vulnerability/",
-    "publishedAt": "2026-11-12T08:09:33.000Z",
-    "cves": [
-      "CVE-2026-0330"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "palo-alto-pan-os-enables-root-code-execution",
-      "article-291262c4",
-      "291262c4",
-      "palo-alto-pan-os-enables-root-code-execution-6d5f41"
-    ]
-  },
-  {
-    "slug": "pci-dss-4-0-compliance-tool-rankings-released-c2ea2380",
-    "title": "PCI DSS 4.0 Compliance Tool Rankings Released",
-    "summary": "Cyber Security News released a comparative guide evaluating ten top compliance platforms designed for PCI DSS 4.x standards. The analysis reviews platforms across scope-reduction architecture, continuous technical controls, merchant management, and Qualified Security Assessor assessment automation stacks. Organizations subject to payment card security standards should review these tool benchmarks to streamline audit preparation and continuous control compliance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/top-10-best-pci-dss-compliance-tools-in-2026-ranked-scored-best-pci-dss-compliance-tools/",
-    "publishedAt": "2026-11-12T07:39:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pci-dss-4-0-compliance-tool-rankings-released",
-      "article-c2ea2380",
-      "c2ea2380",
-      "pci-dss-4-0-compliance-tool-rankings-released-544998"
-    ]
-  },
-  {
-    "slug": "cyber-security-news-ranks-top-risk-management-plat-ea8b549b",
-    "title": "Cyber Security News Ranks Top Risk Management Platforms",
-    "summary": "Cyber Security News published a review ranking ten leading IT and cybersecurity risk management platforms for enterprise governance. The evaluation scored tools based on workflow effectiveness, tracking risk intake, treatment, exception management, and financial risk quantification capabilities. Security teams can evaluate these platform rankings to optimize risk register tracking, streamline accountability, and improve overall risk remediation workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-it-cyber-risk-tools/",
-    "publishedAt": "2026-11-12T07:35:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyber-security-news-ranks-top-risk-management-plat",
-      "article-ea8b549b",
-      "ea8b549b",
-      "cyber-security-news-ranks-top-risk-management-plat-44a65b",
-      "cyber-security-news-ranks-top-risk-management-platforms"
-    ]
-  },
-  {
-    "slug": "github-discusses-accountability-for-ai-patch-flaws-8806da92",
-    "title": "GitHub Discusses Accountability for AI Patch Flaws",
-    "summary": "GitHub’s Agentic Autofix can fix one vulnerability while creating another, raising accountability questions for patches. The tool re-runs detection engines and project tests after patching, but can miss side effects, requiring validation and metric monitoring. Security teams should adjust CISO policies before deploying the agent, select models, and apply continuous testing to mitigate flaws.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/marcelo-oliveira-github-agentic-autofix/",
-    "publishedAt": "2026-11-12T07:00:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-discusses-accountability-for-ai-patch-flaws",
-      "article-8806da92",
-      "8806da92",
-      "github-discusses-accountability-for-ai-patch-flaws-537beb"
-    ]
-  },
-  {
-    "slug": "hackers-abuse-windows-group-policy-to-deploy-citru-d80c4fa9",
-    "title": "Hackers Abuse Windows Group Policy to Deploy Citrus Ransomware and Disable Microsoft Defender",
-    "summary": "A new ransomware group called Citrus is using Windows Group Policy to push its malware across entire company networks and switch off Microsoft Defender first. Group Policy is a trusted Windows tool that admins use to manage many computers at once.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-abuse-windows-group-policy/",
-    "publishedAt": "2026-11-12T06:46:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-abuse-windows-group-policy-to-deploy-citru",
-      "article-d80c4fa9",
-      "d80c4fa9",
-      "hackers-abuse-windows-group-policy-to-deploy-citru-5ff205",
-      "hackers-abuse-windows-group-policy-to-deploy-citrus-ransomwa"
-    ]
-  },
-  {
-    "slug": "attacker-used-4-837-hijacked-github-accounts-to-ru-9de107bb",
-    "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
-    "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
-    "publishedAt": "2026-11-12T06:42:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "attacker-used-4-837-hijacked-github-accounts-to-ru",
-      "article-9de107bb",
-      "9de107bb",
-      "attacker-used-4-837-hijacked-github-accounts-to-ru-13a496",
-      "attacker-used-4-837-hijacked-github-accounts-to-run-a-ci-sec"
-    ]
-  },
-  {
-    "slug": "red-hat-freerdp-update-addresses-important-vulnera-e4671609",
-    "title": "Red Hat Freerdp Update Addresses Important Vulnerability",
-    "summary": "Red Hat released a security update for the freerdp component on its Enterprise Linux 10.0 Extended Update Support platform. The update addresses an important vulnerability, rated by Red Hat as Important, though the specific CVE identifiers are not listed in the advisory. Users should apply the update immediately to mitigate potential exploitation risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99516",
-    "publishedAt": "2026-11-12T06:33:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-freerdp-update-addresses-important-vulnera",
-      "article-e4671609",
-      "e4671609",
-      "red-hat-freerdp-update-addresses-important-vulnera-37d671",
-      "red-hat-freerdp-update-addresses-important-vulnerability"
     ]
   }
 ];
