@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 04:44:22 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 05:43:41 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ESET Mobile Security Adds Phishing Protection to iOS</title>
+      <link>https://secubuzz.com/news/eset-mobile-security-adds-phishing-protection-to-i-c388edf8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/eset-mobile-security-adds-phishing-protection-to-i-c388edf8</guid>
+      <description><![CDATA[ESET released Mobile Security for iOS 18.0+, offering link verification and device scans for iPhone users. The app performs real-time link analysis, reviews permissions, and evaluates Wi-Fi connections, providing recommendations to mitigate phishing and configuration risks. Users can install the free app without an account; security teams should enable it on corporate devices to enforce link checks and monitor settings.]]></description>
+      <pubDate>Mon, 16 Nov 2026 05:30:19 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/16/product-showcase-eset-mobile-security-ios/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI Tool Finds 99 Vulnerabilities in Discontinued TCP/IP Stacks</title>
+      <link>https://secubuzz.com/news/ai-tool-finds-99-vulnerabilities-in-discontinued-t-ffa2ce34</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-tool-finds-99-vulnerabilities-in-discontinued-t-ffa2ce34</guid>
+      <description><![CDATA[Forescout researchers used an AI-driven tool to scan 10 legacy TCP/IP stacks lacking vendor support, uncovering 99 security flaws. Of those, 66 were unknown and 52% rated high, indicating potential remote exploitation via buffer overflows or improper input handling. No vendor patches exist; teams should perform manual code reviews, apply custom mitigations, and monitor devices for exploitation attempts.]]></description>
+      <pubDate>Mon, 16 Nov 2026 05:00:22 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/16/forescout-ai-models-vulnerability-research/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AWS Restores US-EAST-1 After Three-Hour Outage</title>
+      <link>https://secubuzz.com/news/aws-restores-us-east-1-after-three-hour-outage-a21b6100</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aws-restores-us-east-1-after-three-hour-outage-a21b6100</guid>
+      <description><![CDATA[AWS suffered a multi-hour outage in US-EAST-1 that disrupted account sign-ups, authentication, and network connectivity. The failure began at 3:05 a.m. PST and lasted until 6:21 a.m. PST, impacting IAM services for over three hours. AWS restored services by 6:21 a.m. PST and advised customers to verify account status and monitor for residual issues.]]></description>
+      <pubDate>Mon, 16 Nov 2026 03:43:23 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/aws-services-outage/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>ARTEX AI Group Automates Global Cyberattacks</title>
       <link>https://secubuzz.com/news/artex-ai-group-automates-global-cyberattacks-8e3876de</link>
@@ -15,6 +42,15 @@
       <pubDate>Mon, 16 Nov 2026 03:25:10 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/fbi-warns-artex-ai-hacking-tool-is-powering-global-cybe">CyberNews AI</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Tor Issues Emergency Update Amid Relay DDoS Attack</title>
+      <link>https://secubuzz.com/news/tor-issues-emergency-update-amid-relay-ddos-attack-ff7f5f74</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tor-issues-emergency-update-amid-relay-ddos-attack-ff7f5f74</guid>
+      <description><![CDATA[The Tor Project released version 0.4.9.17 to mitigate an ongoing DDoS attack that overwhelmed network relays. The update includes fixes for IPv6 handling in relay denial-of-service defenses, addressing a flaw that allowed attackers to exhaust relay resources and disrupt anonymity services. Relay operators should upgrade to 0.4.9.17 immediately and monitor relay traffic for abnormal patterns to maintain network stability.]]></description>
+      <pubDate>Mon, 16 Nov 2026 03:23:56 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/tor-ddos-attack/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>AI Agent Decodes 1994 Jeep ECU with Arduino Nano</title>
@@ -420,42 +456,6 @@
       <pubDate>Fri, 13 Nov 2026 16:52:36 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/11/new-york-city-council-votes-to-ban-surveillance-pricing">Malwarebytes Labs</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Germany Passes Legislation Authorizing Intelligence Agency Hacking Powers</title>
-      <link>https://secubuzz.com/news/germany-passes-legislation-authorizing-intelligenc-0544a143</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/germany-passes-legislation-authorizing-intelligenc-0544a143</guid>
-      <description><![CDATA[The German Bundestag passed legislation granting national spy agencies expanded authority for cyber hacking and sabotage activities. Approved by a vote of 308 to 190 with 71 abstentions, the bill marks the biggest postwar overhaul of the country's intelligence laws. This parliamentary enactment follows initial approval of the draft legislation by Chancellor Friedrich Merz's cabinet several months prior.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:32:00 GMT</pubDate>
-      <source url="https://therecord.media/german-parliament-passes-law-giving-spy-agencies-hacking-power">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Check Point Patches Actively Exploited CVE-2026-123039 Gateway Flaw Enabling RCE and ESXi Wiping</title>
-      <link>https://secubuzz.com/news/check-point-patches-actively-exploited-cve-2026-12-f2d0dffc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/check-point-patches-actively-exploited-cve-2026-12-f2d0dffc</guid>
-      <description><![CDATA[Check Point Security Gateway appliances are actively exploited via CVE-2026-123039, also called PHP2Shell, allowing unauthenticated remote code execution and root access. Attackers compromise virtual infrastructure and deploy data-wiping malware against connected VMware ESXi hosts. Check Point issued an emergency hotfix; administrators must patch immediately, monitor DynamicCLI root socket telemetry, and audit logs for compromise.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:21:43 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/">BleepingComputer</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>OpenAI Launches ChatGPT Wallet for Agent Payments</title>
-      <link>https://secubuzz.com/news/openai-launches-chatgpt-wallet-for-agent-payments-4e48330f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-launches-chatgpt-wallet-for-agent-payments-4e48330f</guid>
-      <description><![CDATA[OpenAI launched ChatGPT Wallet, letting agents pay with stand-in card numbers while hiding user card details. The wallet integrates with American Express, Mastercard, and Visa, operating within OpenAI's dot environment, the user’s dot completes purchases, and merchants may need to adjust for agent transactions. Users should review merchant compatibility and monitor for unintended blocks; OpenAI advises merchants to handle adjustments.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:15:25 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/13/openai-chatgpt-wallet/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chromium CVE-2026-126881 Improper Initialization Exploit</title>
-      <link>https://secubuzz.com/news/chromium-cve-2026-126881-improper-initialization-e-58bafcc4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-126881-improper-initialization-e-58bafcc4</guid>
-      <description><![CDATA[Chromium CVE-2026-126881 describes an improper initialization flaw in the Chromium engine. The vulnerability could allow attackers to exploit uninitialized memory, potentially leading to denial of service or memory corruption, though no active exploitation has been reported. Microsoft Edge users should update to the latest Chromium-based release, and Chrome users should apply the patch released by Google.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126881">Microsoft MSRC</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

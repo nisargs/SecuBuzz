@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "eset-mobile-security-adds-phishing-protection-to-i-c388edf8",
+    "title": "ESET Mobile Security Adds Phishing Protection to iOS",
+    "summary": "ESET released Mobile Security for iOS 18.0+, offering link verification and device scans for iPhone users. The app performs real-time link analysis, reviews permissions, and evaluates Wi-Fi connections, providing recommendations to mitigate phishing and configuration risks. Users can install the free app without an account; security teams should enable it on corporate devices to enforce link checks and monitor settings.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/product-showcase-eset-mobile-security-ios/",
+    "publishedAt": "2026-11-16T05:30:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eset-mobile-security-adds-phishing-protection-to-i",
+      "article-c388edf8",
+      "c388edf8",
+      "eset-mobile-security-adds-phishing-protection-to-i-170ec0",
+      "eset-mobile-security-adds-phishing-protection-to-ios"
+    ]
+  },
+  {
+    "slug": "ai-tool-finds-99-vulnerabilities-in-discontinued-t-ffa2ce34",
+    "title": "AI Tool Finds 99 Vulnerabilities in Discontinued TCP/IP Stacks",
+    "summary": "Forescout researchers used an AI-driven tool to scan 10 legacy TCP/IP stacks lacking vendor support, uncovering 99 security flaws. Of those, 66 were unknown and 52% rated high, indicating potential remote exploitation via buffer overflows or improper input handling. No vendor patches exist; teams should perform manual code reviews, apply custom mitigations, and monitor devices for exploitation attempts.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/forescout-ai-models-vulnerability-research/",
+    "publishedAt": "2026-11-16T05:00:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-tool-finds-99-vulnerabilities-in-discontinued-t",
+      "article-ffa2ce34",
+      "ffa2ce34",
+      "ai-tool-finds-99-vulnerabilities-in-discontinued-t-7eb186",
+      "ai-tool-finds-99-vulnerabilities-in-discontinued-tcp-ip-stac"
+    ]
+  },
+  {
+    "slug": "aws-restores-us-east-1-after-three-hour-outage-a21b6100",
+    "title": "AWS Restores US-EAST-1 After Three-Hour Outage",
+    "summary": "AWS suffered a multi-hour outage in US-EAST-1 that disrupted account sign-ups, authentication, and network connectivity. The failure began at 3:05 a.m. PST and lasted until 6:21 a.m. PST, impacting IAM services for over three hours. AWS restored services by 6:21 a.m. PST and advised customers to verify account status and monitor for residual issues.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/aws-services-outage/",
+    "publishedAt": "2026-11-16T03:43:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aws-restores-us-east-1-after-three-hour-outage",
+      "article-a21b6100",
+      "a21b6100",
+      "aws-restores-us-east-1-after-three-hour-outage-42e62c"
+    ]
+  },
+  {
     "slug": "artex-ai-group-automates-global-cyberattacks-8e3876de",
     "title": "ARTEX AI Group Automates Global Cyberattacks",
     "summary": "Law enforcement released intelligence on ARTEX AI, a group automating global cyberattacks. The report details court findings, threat actor profiles, and defensive controls, outlining the group's tactics, techniques, and procedures. Security teams should review the provided defensive controls, update monitoring, and deploy detection rules across enterprise networks to detect ARTEX AI activity.",
@@ -26,6 +82,24 @@ export const news: NewsBrief[] = [
       "article-8e3876de",
       "8e3876de",
       "artex-ai-group-automates-global-cyberattacks-6a8fc8"
+    ]
+  },
+  {
+    "slug": "tor-issues-emergency-update-amid-relay-ddos-attack-ff7f5f74",
+    "title": "Tor Issues Emergency Update Amid Relay DDoS Attack",
+    "summary": "The Tor Project released version 0.4.9.17 to mitigate an ongoing DDoS attack that overwhelmed network relays. The update includes fixes for IPv6 handling in relay denial-of-service defenses, addressing a flaw that allowed attackers to exhaust relay resources and disrupt anonymity services. Relay operators should upgrade to 0.4.9.17 immediately and monitor relay traffic for abnormal patterns to maintain network stability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/tor-ddos-attack/",
+    "publishedAt": "2026-11-16T03:23:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tor-issues-emergency-update-amid-relay-ddos-attack",
+      "article-ff7f5f74",
+      "ff7f5f74",
+      "tor-issues-emergency-update-amid-relay-ddos-attack-25c9f7"
     ]
   },
   {
@@ -9608,83 +9682,6 @@ export const news: NewsBrief[] = [
       "388a861b",
       "google-releases-chrome-157-update-for-android-devi-790e97",
       "google-releases-chrome-157-update-for-android-devices"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-net-10-0-security-update-cc10fd3f",
-    "title": "Red Hat Issues .NET 10.0 Security Update",
-    "summary": "Red Hat released a .NET 10.0 security update for RHEL 10, addressing multiple vulnerabilities that could allow remote code execution via the .NET runtime. The update contains fixes for several CVEs, each with a CVSS base score, but no active exploitation reported. Red Hat recommends applying the RHSA-2026:99143 update immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99143",
-    "publishedAt": "2026-11-11T23:25:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-net-10-0-security-update",
-      "article-cc10fd3f",
-      "cc10fd3f",
-      "red-hat-issues-net-10-0-security-update-37d67f"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-perl-dbi-1-641-security-update-adaf0bb9",
-    "title": "Red Hat Issues Perl-DBI 1.641 Security Update",
-    "summary": "Red Hat released a security update for the perl-DBI 1.641 module on RHEL 8. The update addresses multiple vulnerabilities that could allow attackers to gain elevated privileges or execute arbitrary code, as indicated by the CVSS scores linked in the advisory. Administrators should apply the patch immediately and verify module integrity to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99210",
-    "publishedAt": "2026-11-11T23:16:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-perl-dbi-1-641-security-update",
-      "article-adaf0bb9",
-      "adaf0bb9",
-      "red-hat-issues-perl-dbi-1-641-security-update-37d67c"
-    ]
-  },
-  {
-    "slug": "chromeos-lts-150-patches-critical-use-after-free-f54d10a7",
-    "title": "ChromeOS LTS-150 Patches Critical Use-After-Free",
-    "summary": "Google released ChromeOS LTS-150, patching numerous high-severity CVEs including a critical CVE-2026-126879 use-after-free in the layout engine. The update addresses 18 CVEs such as CVE-2026-126901, CVE-2026-126856, and CVE-2026-126887, all of which could lead to code execution or denial of service. The vulnerabilities are tracked as CVE-2026-126879, CVE-2026-126901, CVE-2026-126856.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/long-term-support-channel-update-for.html",
-    "publishedAt": "2026-11-11T23:06:31.103Z",
-    "cves": [
-      "CVE-2026-126879",
-      "CVE-2026-126901",
-      "CVE-2026-126856",
-      "CVE-2026-126887"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromeos-lts-150-patches-critical-use-after-free",
-      "article-f54d10a7",
-      "f54d10a7",
-      "chromeos-lts-150-patches-critical-use-after-free-be27e9"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99209-important-perl-dbi-security-update-401ead4f",
-    "title": "RHSA-2026:99209: Important: perl-DBI security update",
-    "summary": "An update for perl-DBI is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99209",
-    "publishedAt": "2026-11-11T23:02:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99209-important-perl-dbi-security-update",
-      "article-401ead4f",
-      "401ead4f",
-      "rhsa-2026-99209-important-perl-dbi-security-update-37d67c"
     ]
   }
 ];
