@@ -582,9 +582,10 @@
   - **Website Founder LinkedIn Click Telemetry & UTM Attribution (Nov 15, 2026 / Worker Version `970439da-1b99-464b-8ba1-beef5094bb6e` / Commit `e321b54`)**:
     - Architected `/go/linkedin` (also `/founder`, `/nisarg`) edge redirect with automatic D1 click tracking (`founder_clicks`), anonymous cookie attribution, and UTM tagging for LinkedIn profile analytics.
     - Auto-migrated schema with self-healing table creation on initial hit. Integrated telemetry reporting into `cf_analytics.mjs` (7-point report).
-  - **Website MyStackSidebar Copy Streamlining (Nov 16, 2026 / Commit `6f55d91`)**:
+  - **Website MyStackSidebar Copy Streamlining & Deployment (Nov 16, 2026 / Worker Version `0a1b99ce-ea41-424a-b896-5a6bb6e84b8a` / Commit `0abd1ac`)**:
     - Removed unconfigured educational footnote (`Stored 100% on this device. Zero accounts, zero PII, zero third-party disclosure.`) from `website/src/components/MyStackSidebar.tsx`.
     - Maintained clean component structure and verified with `npx --prefix website tsc --noEmit` (0 errors) and `vite build` (clean production bundle).
+    - Deployed to Cloudflare production (`secubuzz.com`). Verified live bundle endpoint (`/assets/index-CiNfoPja.js`) returning HTTP 200 with text verified absent.
   - **Website Navigation, Filter Sorting & Copy Modernization (Oct 28, 2026)**:
     - Alphabetical Category Sorting: Scoped and sorted the Category dropdown in `website/src/pages/News.tsx` alphabetically (`Breach`, `CVE`, `General`, `Nation State`, `Ransomware`, `Vulnerability`) using `localeCompare`.
     - Alphabetical Vendor PSIRT Select with Live Search: Upgraded `website/src/components/VendorSelect.tsx` with alphabetical vendor ordering and an internal search filter (`Search vendors...`), harmonizing news vendor filtering with the advisories experience.
