@@ -11,6 +11,120 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "litellm-starlette-cve-exploitation-attempts-detect-00547fd8",
+    "title": "LiteLLM/Starlette CVE Exploitation Attempts Detected",
+    "summary": "Attackers are probing LiteLLM/Starlette for CVE-2026-42271 and CVE-2026-48710 via /mcp-rest/test/tools/list requests. Both CVEs allow unauthenticated remote code execution when chained, as detailed by Horizon3.ai, exposing servers to arbitrary code execution. Patches for both CVEs are available; administrators should apply vendor updates immediately in production environments and monitor for similar request patterns.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33522",
+    "publishedAt": "2026-11-16T13:11:04.000Z",
+    "cves": [
+      "CVE-2026-42271",
+      "CVE-2026-48710"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "litellm-starlette-cve-exploitation-attempts-detect",
+      "article-00547fd8",
+      "00547fd8",
+      "litellm-starlette-cve-exploitation-attempts-detect-57dd81",
+      "litellm-starlette-cve-exploitation-attempts-detected"
+    ]
+  },
+  {
+    "slug": "marketplace-sells-infostealer-logs-with-ai-profile-afcc64fa",
+    "title": "Marketplace Sells Infostealer Logs with AI Profiles",
+    "summary": "A cybercrime forum advertises a service selling infostealer malware logs accompanied by AI-generated owner profiles. The marketplace offers searchable plain-language queries to identify victims, including employment details and valuable accounts, facilitating targeted credential theft. Security teams should block access to the forum, monitor for credential reuse, and enforce multi-factor authentication to mitigate potential account compromise.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/ai-powered-infostealer-marketplace-victim-profiles/",
+    "publishedAt": "2026-11-16T13:03:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "marketplace-sells-infostealer-logs-with-ai-profile",
+      "article-afcc64fa",
+      "afcc64fa",
+      "marketplace-sells-infostealer-logs-with-ai-profile-7939c8",
+      "marketplace-sells-infostealer-logs-with-ai-profiles"
+    ]
+  },
+  {
+    "slug": "windows-server-2016-support-ends-in-60-days-d681de56",
+    "title": "Windows Server 2016 Support Ends in 60 Days",
+    "summary": "Microsoft announced that Windows Server 2016 will reach end-of-support in two months, ceasing security updates and bug fixes. The announcement follows the 2024 release cycle, meaning affected servers will no longer receive patches for vulnerabilities or performance improvements. Customers are urged to migrate to newer Windows Server versions or apply extended support agreements to maintain security compliance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/",
+    "publishedAt": "2026-11-16T12:53:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-server-2016-support-ends-in-60-days",
+      "article-d681de56",
+      "d681de56",
+      "windows-server-2016-support-ends-in-60-days-36db59"
+    ]
+  },
+  {
+    "slug": "plan-digital-accounts-for-after-death-access-0b96360b",
+    "title": "Plan Digital Accounts for After-Death Access",
+    "summary": "The article explains preparing accounts for death access, targeting people who want loved ones to manage services after death. It notes major platforms lack native account-inheritance, so without planning access may be permanently lost. The guide recommends designating trusted managers, using secure vaults, and configuring recovery options like alternate email.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/how-to/2026/11/how-to-prepare-your-digital-accounts-for-after-your-death",
+    "publishedAt": "2026-11-16T12:52:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "plan-digital-accounts-for-after-death-access",
+      "article-0b96360b",
+      "0b96360b",
+      "plan-digital-accounts-for-after-death-access-71f5b7"
+    ]
+  },
+  {
+    "slug": "telegram-widgets-vulnerable-to-rce-demonstrated-5838e2f1",
+    "title": "Telegram Widgets Vulnerable to RCE Demonstrated",
+    "summary": "Researchers demonstrated remote code execution against Telegram’s launched widgets, targeting the platform’s web-based interface. The vulnerability allows attackers to inject malicious code via widget configuration, potentially delivering a WebRAT, as Kaspersky reports, though Telegram’s founder disputes the claims. Telegram has not released a patch; users should disable widgets until an official fix is issued and monitor for suspicious widget activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch/",
+    "publishedAt": "2026-11-16T12:48:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "telegram-widgets-vulnerable-to-rce-demonstrated",
+      "article-5838e2f1",
+      "5838e2f1",
+      "telegram-widgets-vulnerable-to-rce-demonstrated-5ba252"
+    ]
+  },
+  {
+    "slug": "six-danfoss-controller-flaws-enable-remote-takeove-5d6e8e5e",
+    "title": "Six Danfoss Controller Flaws Enable Remote Takeover",
+    "summary": "Six unpatched vulnerabilities in Danfoss AK-SM800A refrigeration controllers allow remote attackers to take full control without authentication. The flaws reside in the device’s firmware and network interface, enabling arbitrary command execution and disabling built-in authentication checks. No patch exists; operators should isolate affected units, apply firmware 5.4.0 only if it lacks the flaws, and monitor for anomalous traffic.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+    "publishedAt": "2026-11-16T12:34:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "six-danfoss-controller-flaws-enable-remote-takeove",
+      "article-5d6e8e5e",
+      "5d6e8e5e",
+      "six-danfoss-controller-flaws-enable-remote-takeove-1b640a",
+      "six-danfoss-controller-flaws-enable-remote-takeover"
+    ]
+  },
+  {
     "slug": "lock-and-code-podcast-preparing-data-for-death-034f28fd",
     "title": "Lock and Code Podcast: Preparing Data for Death",
     "summary": "The Lock and Code podcast episode S07E23 discusses data organization and preparation for posthumous access. Interviewee Jed Brubaker explains strategies for securing personal data, setting up digital wills, and ensuring family members can retrieve information after death. Listeners are advised to use secure storage solutions and clear documentation, but no immediate patches or vulnerabilities are addressed.",
@@ -63,6 +177,24 @@ export const news: NewsBrief[] = [
       "015ae66c",
       "microsoft-previewing-remote-lock-for-lost-windows-68e979",
       "microsoft-previewing-remote-lock-for-lost-windows-devices"
+    ]
+  },
+  {
+    "slug": "coles-investigates-reported-cybersecurity-incident-46318045",
+    "title": "Coles Investigates Reported Cybersecurity Incident",
+    "summary": "Coles Group Limited is investigating a reported cybersecurity incident that reportedly did not affect its retail stores. The company has not disclosed specific details, but authorities are monitoring for potential data exposure or system compromise. Security teams should review access logs, verify system integrity, and ensure incident response plans are activated.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/",
+    "publishedAt": "2026-11-16T11:18:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "coles-investigates-reported-cybersecurity-incident",
+      "article-46318045",
+      "46318045",
+      "coles-investigates-reported-cybersecurity-incident-352f67"
     ]
   },
   {
@@ -1041,22 +1173,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fbi-flash-alert-says-artex-tool-automating-cyberat-213b5384",
-    "title": "FBI flash alert says Artex tool automating cyberattacks at ‘machine speed’",
-    "summary": "Open source hacking tool Artex \"significantly reduces the time required to chain attack techniques, with some intrusions progressing from initial targeting to privileged access in under three hours,\" the FBI said.",
+    "slug": "fbi-warns-of-rapid-credential-escalation-via-artex-31724c67",
+    "title": "FBI Warns of Rapid Credential Escalation via ARTEX AI Tool Abuse",
+    "summary": "FBI alerts that attackers use ARTEX AI security-testing platform to automate vulnerability discovery and exploitation, reaching privileged access within hours. The tool bypasses multi-factor authentication and accelerates credential escalation, enabling rapid intrusions across networks. Security teams must restrict ARTEX usage, monitor API activity, enforce least-privilege controls, and vendors should update detection rules.",
     "category": "General",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "The Record",
     "sourceUrl": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
     "publishedAt": "2026-11-13T21:32:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Malwarebytes Labs",
+        "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/criminals-are-using-artex-ai-agents-to-speed-up-cyberattacks-fbi-warns"
+      }
+    ],
     "aliases": [
-      "fbi-flash-alert-says-artex-tool-automating-cyberat",
-      "article-213b5384",
-      "213b5384",
-      "fbi-flash-alert-says-artex-tool-automating-cyberat-112dcf",
-      "fbi-flash-alert-says-artex-tool-automating-cyberattacks-at-m"
+      "fbi-warns-of-rapid-credential-escalation-via-artex",
+      "article-31724c67",
+      "31724c67",
+      "fbi-warns-of-rapid-credential-escalation-via-artex-112dcf",
+      "fbi-warns-of-rapid-credential-escalation-via-artex-ai-tool-a"
     ]
   },
   {
@@ -9583,138 +9720,6 @@ export const news: NewsBrief[] = [
       "1ddc94c3",
       "red-hat-kernel-update-addresses-moderate-security-37d67f",
       "red-hat-kernel-update-addresses-moderate-security-issues"
-    ]
-  },
-  {
-    "slug": "baker-tilly-reports-third-party-data-exposure-inci-9f880bf1",
-    "title": "Baker Tilly Reports Third-Party Data Exposure Incident",
-    "summary": "Baker Tilly reported a third-party data breach that exposed sensitive corporate audit and financial data. The security incident originated within an external vendor integration, resulting in unauthorized third-party access to confidential enterprise records. Security teams should review root-cause telemetry, implement proactive threat detection rules, and apply essential vendor patches immediately.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/baker-tilly-notifies-clients-of-data-breach-at-third-pa",
-    "publishedAt": "2026-11-12T03:03:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "baker-tilly-reports-third-party-data-exposure-inci",
-      "article-9f880bf1",
-      "9f880bf1",
-      "baker-tilly-reports-third-party-data-exposure-inci-1f8243",
-      "baker-tilly-reports-third-party-data-exposure-incident"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99122-moderate-xorg-x11-server-security-33a55dd2",
-    "title": "RHSA-2026:99122: Moderate: xorg-x11-server security update",
-    "summary": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99122",
-    "publishedAt": "2026-11-12T02:41:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99122-moderate-xorg-x11-server-security",
-      "article-33a55dd2",
-      "33a55dd2",
-      "rhsa-2026-99122-moderate-xorg-x11-server-security-37d67f",
-      "rhsa-2026-99122-moderate-xorg-x11-server-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99154-important-gimp-security-update-eaa56947",
-    "title": "RHSA-2026:99154: Important: gimp security update",
-    "summary": "An update for gimp is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99154",
-    "publishedAt": "2026-11-12T02:40:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99154-important-gimp-security-update",
-      "article-eaa56947",
-      "eaa56947",
-      "rhsa-2026-99154-important-gimp-security-update-37d67f"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99131-important-webkit2gtk3-security-bug-f8593654",
-    "title": "RHSA-2026:99131: Important: webkit2gtk3 security, bug fix, and enhancement update",
-    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99131",
-    "publishedAt": "2026-11-12T02:38:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99131-important-webkit2gtk3-security-bug",
-      "article-f8593654",
-      "f8593654",
-      "rhsa-2026-99131-important-webkit2gtk3-security-bug-37d67f",
-      "rhsa-2026-99131-important-webkit2gtk3-security-bug-fix-and-e"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99127-important-qt5-qtdeclarative-securi-4fe2f1df",
-    "title": "RHSA-2026:99127: Important: qt5-qtdeclarative security update",
-    "summary": "An update for qt5-qtdeclarative is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99127",
-    "publishedAt": "2026-11-12T02:37:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99127-important-qt5-qtdeclarative-securi",
-      "article-4fe2f1df",
-      "4fe2f1df",
-      "rhsa-2026-99127-important-qt5-qtdeclarative-securi-37d67f",
-      "rhsa-2026-99127-important-qt5-qtdeclarative-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99152-important-grafana-pcp-security-upd-699f7d6c",
-    "title": "RHSA-2026:99152: Important: grafana-pcp security update",
-    "summary": "An update for grafana-pcp is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99152",
-    "publishedAt": "2026-11-12T02:36:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99152-important-grafana-pcp-security-upd",
-      "article-699f7d6c",
-      "699f7d6c",
-      "rhsa-2026-99152-important-grafana-pcp-security-upd-37d67f",
-      "rhsa-2026-99152-important-grafana-pcp-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99169-important-oci-seccomp-bpf-hook-sec-9a3f5d54",
-    "title": "RHSA-2026:99169: Important: oci-seccomp-bpf-hook security update",
-    "summary": "An update for oci-seccomp-bpf-hook is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99169",
-    "publishedAt": "2026-11-12T02:33:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99169-important-oci-seccomp-bpf-hook-sec",
-      "article-9a3f5d54",
-      "9a3f5d54",
-      "rhsa-2026-99169-important-oci-seccomp-bpf-hook-sec-37d67f",
-      "rhsa-2026-99169-important-oci-seccomp-bpf-hook-security-upda"
     ]
   }
 ];
