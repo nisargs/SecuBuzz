@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/fbi-warns-artex-ai-hacking-tool-is-powering-global-cybe",
+    "sourceUrl": "https://cybernewsai.com/blog/fbi-warns-artex-ai-hacking-tool-is-powering-global-cybe",
+    "title": "ARTEX AI Group Automates Global Cyberattacks",
+    "headline": "ARTEX AI Group Automates Global Cyberattacks",
+    "summary": "Law enforcement released intelligence on ARTEX AI, a group automating global cyberattacks. The report details court findings, threat actor profiles, and defensive controls, outlining the group's tactics, techniques, and procedures. Security teams should review the provided defensive controls, update monitoring, and deploy detection rules across enterprise networks to detect ARTEX AI activity.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-11-16T03:25:10.000Z",
+    "ingestedAt": "2026-11-16T04:43:15.502Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybernewsai.com/blog/fbi-warns-artex-ai-hacking-tool-is-powering-global-cybe",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/claude-cracks-32-year-old-jeep-ecu/",
     "sourceUrl": "https://cybersecuritynews.com/claude-cracks-32-year-old-jeep-ecu/",
     "title": "AI Agent Decodes 1994 Jeep ECU with Arduino Nano",
@@ -13,6 +29,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/claude-cracks-32-year-old-jeep-ecu/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33520",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33520",
+    "title": "ISC Stormcast Released for Monday, November 16",
+    "headline": "ISC Stormcast Released for Monday, November 16",
+    "summary": "ISC Stormcast for Monday, November 16, 2026 was released by SANS Internet Storm Center. The broadcast covers current threat landscape, emerging attack trends, and defensive recommendations, with a focus on real-time analysis. Listeners can access the episode via the ISC website, download the podcast file, and review the accompanying transcript for detailed insights.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-11-16T02:00:05.000Z",
+    "ingestedAt": "2026-11-16T04:43:15.502Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://isc.sans.edu/diary/rss/33520",
     "additionalSources": []
   },
   {
@@ -8298,37 +8330,5 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
-    "title": "Baker Tilly Clients Informed of Third-Party Breach",
-    "headline": "Baker Tilly Clients Informed of Third-Party Breach",
-    "summary": "Baker Tilly Advisory Group notified clients that a provider breach exposed personal information of clients and their dependents. The incident involved unauthorized access to sensitive data, including names, addresses, and financial details, though the full scope remains under investigation. Clients should monitor accounts, change passwords, and review security practices while Baker Tilly coordinates with the provider to assess impact.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-11T23:01:31.000Z",
-    "ingestedAt": "2026-11-11T23:43:18.501Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/",
-    "title": "Unit 42 Reveals AI-Powered Red Team Tool Usage",
-    "headline": "Unit 42 Reveals AI-Powered Red Team Tool Usage",
-    "summary": "Unit 42 identified adversaries deploying AI-powered red team tools, such as ARTEX, to automate reconnaissance, credential harvesting, and lateral movement. These tools use large language models to generate phishing content, craft credential-dump scripts, and orchestrate multi-stage attack chains. Defenders should enable AI-aware detection, enforce least-privilege access, deploy MFA, and run regular red-team simulations to validate controls.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Unit 42",
-    "publishedAt": "2026-11-11T23:00:53.000Z",
-    "ingestedAt": "2026-11-11T23:44:19.938Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/",
-    "additionalSources": []
   }
 ]
