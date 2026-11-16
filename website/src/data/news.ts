@@ -90,6 +90,61 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "meta-fined-886m-by-italian-regulator-4ab95a4b",
+    "title": "Meta Fined $886M by Italian Regulator",
+    "summary": "The Italian data protection authority fined Meta $886 million for violating privacy law via Facebook’s camera roll suggestions feature. The feature accessed Android users’ photo galleries to recommend posts that could be enhanced with personal media, breaching consent. Meta must adjust its recommendation algorithms to prevent unauthorized gallery access and comply with Italian privacy regulations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/italian-regulator-fines-meta-886-million-privacy",
+    "publishedAt": "2026-11-16T18:05:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fined-886m-by-italian-regulator",
+      "article-4ab95a4b",
+      "4ab95a4b",
+      "meta-fined-886m-by-italian-regulator-979fe6"
+    ]
+  },
+  {
+    "slug": "rapid7-finds-container-escapes-in-onlyoffice-docs-6a7300f3",
+    "title": "Rapid7 Finds Container Escapes in ONLYOFFICE Docs",
+    "summary": "Rapid7 identified five vulnerabilities in ONLYOFFICE Docs that chain view-only access to container root execution. The flaw permits attackers to escape the document container, potentially compromising the host system with critical elevated privileges. Users should upgrade to Document Server 10.0 and monitor for container escape indicators to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/onlyoffice-docs-container-root-vulnerabilities",
+    "publishedAt": "2026-11-16T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rapid7-finds-container-escapes-in-onlyoffice-docs",
+      "article-6a7300f3",
+      "6a7300f3",
+      "rapid7-finds-container-escapes-in-onlyoffice-docs-6a048f"
+    ]
+  },
+  {
+    "slug": "retadup-worm-resurfaces-deploys-coffeeloader-via-d-3004114e",
+    "title": "Retadup Worm Resurfaces, Deploys CoffeeLoader via DLL",
+    "summary": "Retadup worm reappears, re-registering command-and-control domains and using USB media to deliver the CoffeeLoader backdoor. The malware exploits DLL side-loading by loading 7z.dll, enabling execution of malicious code without user consent and bypassing integrity checks. Security teams should deploy Sigma rules and KQL queries to detect DLL loads and block the worm’s C2 traffic, while disabling USB autorun policies.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/retadup-worm-coffeeloader-malware",
+    "publishedAt": "2026-11-16T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "retadup-worm-resurfaces-deploys-coffeeloader-via-d",
+      "article-3004114e",
+      "3004114e",
+      "retadup-worm-resurfaces-deploys-coffeeloader-via-d-545838",
+      "retadup-worm-resurfaces-deploys-coffeeloader-via-dll"
+    ]
+  },
+  {
     "slug": "uk-opens-hq-for-national-cyber-force-d204fa0f",
     "title": "UK Opens HQ for National Cyber Force",
     "summary": "The United Kingdom opened a new headquarters for its National Cyber Force, the covert unit that conducts offensive cyber operations. The building, near Samlesbury in Lancashire, consolidates teams that plan, develop, and deploy state-level cyber attacks, expanding the UK’s offensive posture. The move signals a strategic expansion, highlighting the importance of defensive readiness against potential state-level campaigns.",
@@ -126,6 +181,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "claude-code-extension-exposes-files-outside-truste-fa9b27ad",
+    "title": "Claude Code Extension Exposes Files Outside Trusted Workspaces",
+    "summary": "Researchers discovered the Claude Code extension for VS Code can prompt users for file access while hiding the file location. The flaw lets users approve seemingly safe paths, granting the extension access to files outside the trusted workspace and exposing sensitive data. Teams should audit extension permissions, enforce workspace boundaries, and monitor for unauthorized file access to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/claude-code-vs-code-extension/",
+    "publishedAt": "2026-11-16T16:51:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-code-extension-exposes-files-outside-truste",
+      "article-fa9b27ad",
+      "fa9b27ad",
+      "claude-code-extension-exposes-files-outside-truste-f09d73",
+      "claude-code-extension-exposes-files-outside-trusted-workspac"
+    ]
+  },
+  {
     "slug": "microsoft-says-months-old-bug-caused-global-micros-b35814fa",
     "title": "Microsoft says months-old bug caused global Microsoft 365 outage",
     "summary": "Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive.",
@@ -142,6 +216,105 @@ export const news: NewsBrief[] = [
       "b35814fa",
       "microsoft-says-months-old-bug-caused-global-micros-241a63",
       "microsoft-says-months-old-bug-caused-global-microsoft-365-ou"
+    ]
+  },
+  {
+    "slug": "ai-marketplace-enables-targeted-search-of-compromi-11a0d3fa",
+    "title": "AI Marketplace Enables Targeted Search of Compromised VPN Systems",
+    "summary": "An underground AI-powered marketplace now lets attackers search for infected computers with corporate VPN access. The service indexes compromised machines, enabling buyers to filter by VPN usage or cloud provider, cutting discovery time. Security teams should monitor VPN logs for anomalous queries, enforce least-privilege access, and actively deploy endpoint detection.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ai-powered-marketplace/",
+    "publishedAt": "2026-11-16T16:41:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-marketplace-enables-targeted-search-of-compromi",
+      "article-11a0d3fa",
+      "11a0d3fa",
+      "ai-marketplace-enables-targeted-search-of-compromi-379c27",
+      "ai-marketplace-enables-targeted-search-of-compromised-vpn-sy"
+    ]
+  },
+  {
+    "slug": "china-nexus-actors-breach-ten-organizations-with-a-0050d0d2",
+    "title": "China-Nexus Actors Breach Ten Organizations with AI Attacks",
+    "summary": "China-linked actors used the autonomous tool Cairn to breach ten organizations across advanced manufacturing, defense, and civil-rights sectors. The attacks leveraged AI-driven credential harvesting and lateral movement, enabling attackers to exfiltrate sensitive data without detection. Affected organizations should enforce multi-factor authentication, monitor for anomalous lateral activity, and apply the latest security patches.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/china-nexus-actors-breach-10-organizations-ai-driven-attacks",
+    "publishedAt": "2026-11-16T16:36:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "china-nexus-actors-breach-ten-organizations-with-a",
+      "article-0050d0d2",
+      "0050d0d2",
+      "china-nexus-actors-breach-ten-organizations-with-a-2de34b",
+      "china-nexus-actors-breach-ten-organizations-with-ai-attacks"
+    ]
+  },
+  {
+    "slug": "apple-details-secure-exclaves-protecting-camera-an-1a71bf89",
+    "title": "Apple Details Secure Exclaves Protecting Camera and Microphone Data",
+    "summary": "Apple disclosed the Secure Exclaves architecture designed to isolate camera and microphone data from the main operating system. The design employs hardware isolation, strict data-sharing rules, and protected privacy indicators to prevent background sensing from accessing active recordings. Security teams should review the new hardware isolation features and update device firmware to ensure compliance with the latest privacy safeguards.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/apple-reveals-secure-exclaves/",
+    "publishedAt": "2026-11-16T16:04:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-details-secure-exclaves-protecting-camera-an",
+      "article-1a71bf89",
+      "1a71bf89",
+      "apple-details-secure-exclaves-protecting-camera-an-18122a",
+      "apple-details-secure-exclaves-protecting-camera-and-micropho"
+    ]
+  },
+  {
+    "slug": "cve-2026-124223-microsoft-office-sharepoint-remote-5ed714a4",
+    "title": "CVE-2026-124223 Microsoft Office SharePoint Remote Code Execution Vulnerability",
+    "summary": "This CVE was addressed by updates that were released in November 2026, but the CVE was inadvertently omitted from the November 2026 Security Updates. Customers who have already installed the November 2026 updates do not need to take any further action.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124223",
+    "publishedAt": "2026-11-16T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-124223"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-124223-microsoft-office-sharepoint-remote",
+      "article-5ed714a4",
+      "5ed714a4",
+      "cve-2026-124223-microsoft-office-sharepoint-remote-1fdcd9",
+      "cve-2026-124223-microsoft-office-sharepoint-remote-code-exec"
+    ]
+  },
+  {
+    "slug": "microsoft-office-sharepoint-elevation-vulnerabilit-e5b15521",
+    "title": "Microsoft Office SharePoint Elevation Vulnerability CVE-2026-124222",
+    "summary": "Microsoft Office SharePoint contains an elevation of privilege flaw identified as CVE-2026-124222, affecting privileged users. The flaw was patched in November 2026 updates, but the CVE was inadvertently omitted from the release notes. Customers who have installed the November 2026 updates need not take further action, but should verify patch status.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124222",
+    "publishedAt": "2026-11-16T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-124222"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-office-sharepoint-elevation-vulnerabilit",
+      "article-e5b15521",
+      "e5b15521",
+      "microsoft-office-sharepoint-elevation-vulnerabilit-1fdcd9",
+      "microsoft-office-sharepoint-elevation-vulnerability-cve-2026"
     ]
   },
   {
@@ -326,6 +499,25 @@ export const news: NewsBrief[] = [
       "060a1a9e",
       "red-hat-issues-advisory-for-multiple-product-vulne-cc2e0c",
       "red-hat-issues-advisory-for-multiple-product-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "mustang-panda-deploys-lotuslite-v2-via-zoho-workdr-81300585",
+    "title": "Mustang Panda Deploys LOTUSLITE V2 via Zoho WorkDrive",
+    "summary": "Mustang Panda-linked actors are distributing LOTUSLITE V2 malware through malicious Zoho WorkDrive downloads, targeting Thai organizations. The campaign embeds a trusted PDFgear executable, loads malicious DLLs, establishes registry persistence, and uses encrypted C2 to maintain Windows access. Defenders should block Zoho WorkDrive traffic, monitor for PDFgear execution, and enforce application whitelisting to mitigate this threat.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/mustang-panda-linked-hackers/",
+    "publishedAt": "2026-11-16T14:48:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mustang-panda-deploys-lotuslite-v2-via-zoho-workdr",
+      "article-81300585",
+      "81300585",
+      "mustang-panda-deploys-lotuslite-v2-via-zoho-workdr-e8e23f",
+      "mustang-panda-deploys-lotuslite-v2-via-zoho-workdrive"
     ]
   },
   {
@@ -533,6 +725,25 @@ export const news: NewsBrief[] = [
       "article-aa9c40c0",
       "aa9c40c0",
       "huntress-ctf-2026-retro-explores-ai-assistance-47c7e4"
+    ]
+  },
+  {
+    "slug": "bitly-links-hijacked-redirecting-brand-posts-to-wi-acf59f17",
+    "title": "Bitly Links Hijacked, Redirecting Brand Posts to Wikipedia",
+    "summary": "Hijacked Bitly links redirect old brand social posts from McDonald's, Burger King, and others to unrelated Wikipedia pages. The flaw allows attackers to alter short URLs, causing visitors to view unrelated content and potentially exposing brand reputation. Security teams should verify link integrity, revoke compromised Bitly links, and monitor for similar hijacks to protect brand communications.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/hijacked-bitly-links-turn-old-brand-posts-into-offensive-redirects",
+    "publishedAt": "2026-11-16T13:50:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bitly-links-hijacked-redirecting-brand-posts-to-wi",
+      "article-acf59f17",
+      "acf59f17",
+      "bitly-links-hijacked-redirecting-brand-posts-to-wi-1a6362",
+      "bitly-links-hijacked-redirecting-brand-posts-to-wikipedia"
     ]
   },
   {
@@ -858,6 +1069,24 @@ export const news: NewsBrief[] = [
       "article-40b6d9d4",
       "40b6d9d4",
       "anthropic-releases-claude-mythos-5-2-fable-5-2-232a57"
+    ]
+  },
+  {
+    "slug": "sos-clean-utility-enables-arbitrary-file-overwrite-56ac22fb",
+    "title": "SoS Clean Utility Enables Arbitrary File Overwrite",
+    "summary": "Ubuntu’s SoS clean utility flaw permits improper symlink/hardlink validation during archive extraction, enabling arbitrary file creation or overwrite. Root cause is missing target checks, allowing local file overwrite without authentication; no public exploit yet, but abuse possible during extraction. Ubuntu patched in USN-9093-1; users should update SoS or apply the workaround to enforce strict target checks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9093-1",
+    "publishedAt": "2026-11-16T09:50:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sos-clean-utility-enables-arbitrary-file-overwrite",
+      "article-56ac22fb",
+      "56ac22fb",
+      "sos-clean-utility-enables-arbitrary-file-overwrite-7e8599"
     ]
   },
   {
@@ -9533,233 +9762,6 @@ export const news: NewsBrief[] = [
       "article-418db160",
       "418db160",
       "red-hat-issues-openssh-security-update-37d670"
-    ]
-  },
-  {
-    "slug": "microsoft-warns-of-gsocket-backdoor-threat-to-linu-e6c65b77",
-    "title": "Microsoft Warns of GSocket Backdoor Threat to Linux Servers",
-    "summary": "Microsoft warned that attackers use the GSocket backdoor to maintain access to Linux servers, even after patches are applied. The technique leverages public relay servers to conceal command-and-control traffic, enabling stealthy persistence and data exfiltration. Security teams should deploy Microsoft’s hunting rules, KQL queries, and Sigma patterns to detect and block GSocket traffic.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/gsocket-backdoors/",
-    "publishedAt": "2026-11-12T09:44:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/gsocket-linux-stealth-c2-relay-detection"
-      }
-    ],
-    "aliases": [
-      "microsoft-warns-of-gsocket-backdoor-threat-to-linu",
-      "article-e6c65b77",
-      "e6c65b77",
-      "microsoft-warns-of-gsocket-backdoor-threat-to-linu-2b8f06",
-      "microsoft-warns-of-gsocket-backdoor-threat-to-linux-servers"
-    ]
-  },
-  {
-    "slug": "n-able-rushes-patches-for-exploited-n-central-zero-e8c9811c",
-    "title": "N-able Rushes Patches for Exploited N-central Zero-Days",
-    "summary": "Threat actors are actively targeting zero-day vulnerabilities within N-able N-central remote management software following recent public disclosures. The malicious campaign surfaced shortly after a security researcher publicly dropped over 30 zero-day flaws affecting the enterprise management platform. In response to active threat activity, N-able released urgent patches specifically addressing the unauthenticated security vulnerabilities.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/",
-    "publishedAt": "2026-11-12T09:39:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-rushes-patches-for-exploited-n-central-zero",
-      "article-e8c9811c",
-      "e8c9811c",
-      "n-able-rushes-patches-for-exploited-n-central-zero-208753",
-      "n-able-rushes-patches-for-exploited-n-central-zero-days"
-    ]
-  },
-  {
-    "slug": "threat-actors-use-gsocket-for-persistent-linux-acc-27a2cc2c",
-    "title": "Threat Actors Use GSocket for Persistent Linux Access",
-    "summary": "Threat actors use the open-source remote tool GSocket to keep access on Linux servers after patching initial exploitation vulnerabilities. This persistence method lets attackers re-establish control even when known flaws are fixed, bypassing patch-based defenses. Defenders should detect GSocket binaries, enforce whitelisting, and apply vendor patches to close this vector.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/",
-    "publishedAt": "2026-11-12T09:38:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "threat-actors-use-gsocket-for-persistent-linux-acc",
-      "article-27a2cc2c",
-      "27a2cc2c",
-      "threat-actors-use-gsocket-for-persistent-linux-acc-4192a0",
-      "threat-actors-use-gsocket-for-persistent-linux-access"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-libx11-security-update-for-rhel-8-8-2ee8cd62",
-    "title": "Red Hat Issues libX11 Security Update for RHEL 8.8",
-    "summary": "Red Hat released a libX11 security update for RHEL 8.8 SAP and Telecommunications services, fixing multiple X11 client library vulnerabilities. The patch is rated Important, with CVSS base scores provided via CVE references, though no active exploitation has been reported. Red Hat advises immediate installation to prevent potential privilege escalation or denial-of-service attacks stemming from the affected functions.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99565",
-    "publishedAt": "2026-11-12T09:32:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-libx11-security-update-for-rhel-8-8",
-      "article-2ee8cd62",
-      "2ee8cd62",
-      "red-hat-issues-libx11-security-update-for-rhel-8-8-37d670"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-libx11-update-for-rhel-8-6-support-ecf27d5a",
-    "title": "Red Hat Issues libX11 Update for RHEL 8.6 Support",
-    "summary": "Red Hat issued a libX11 security update for RHEL 8.6 Advanced Mission Critical and Extended Update Support, fixing several X11 client library flaws. The update is rated Important, with CVSS scores via CVE links, but no active exploitation has been seen. Red Hat recommends applying the patch promptly to mitigate privilege escalation or denial-of-service risks from the affected functions.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99566",
-    "publishedAt": "2026-11-12T09:28:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-libx11-update-for-rhel-8-6-support",
-      "article-ecf27d5a",
-      "ecf27d5a",
-      "red-hat-issues-libx11-update-for-rhel-8-6-support-37d670"
-    ]
-  },
-  {
-    "slug": "mongodb-cve-2026-118383-causes-failover-crashes-31c90438",
-    "title": "MongoDB CVE-2026-118383 Causes Failover Crashes",
-    "summary": "A pre-authentication flaw in MongoDB Server (CVE-2026-118383) lets attackers send two crafted requests that crash the database when a lagging replica is promoted to primary. The crash occurs only if the server still lacks recent changes, making failover a trigger for the denial-of-service condition. MongoDB released patched versions earlier this week; administrators should upgrade immediately to prevent service disruption.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-    "publishedAt": "2026-11-12T09:25:00.000Z",
-    "cves": [
-      "CVE-2026-118383"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "mongodb-cve-2026-118383-causes-failover-crashes",
-      "article-31c90438",
-      "31c90438",
-      "mongodb-cve-2026-118383-causes-failover-crashes-5586e8"
-    ]
-  },
-  {
-    "slug": "github-repos-hit-by-credential-stealing-malware-8980ad05",
-    "title": "GitHub Repos Hit by Credential-Stealing Malware",
-    "summary": "A threat actor used stolen GitHub credentials to push a credential-stealing payload into tens of thousands of repositories since November 10, targeting GitHub Actions secrets. In 1,800 repositories, the malware ran and exfiltrated secrets; Aikido named the campaign wfx-loot and identified 4,837 compromised accounts. Users should revoke compromised tokens, audit repository access, and enable multi-factor authentication to stop further theft.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/wfx-loot-github-actions-secret-stealer/",
-    "publishedAt": "2026-11-12T09:24:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-repos-hit-by-credential-stealing-malware",
-      "article-8980ad05",
-      "8980ad05",
-      "github-repos-hit-by-credential-stealing-malware-6f9485"
-    ]
-  },
-  {
-    "slug": "red-hat-quay-flaw-enables-private-image-theft-d1443023",
-    "title": "Red Hat Quay Flaw Enables Private Image Theft",
-    "summary": "A critical flaw in Red Hat Quay lets attackers steal private container images, overwrite repositories, and maintain persistent access. The vulnerability permits unauthorized read and write operations on image repositories, potentially exposing sensitive code and facilitating further lateral movement. Red Hat recommends applying the latest Quay patch or upgrading to a supported version to stop data exfiltration.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/",
-    "publishedAt": "2026-11-12T09:23:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-quay-flaw-enables-private-image-theft",
-      "article-d1443023",
-      "d1443023",
-      "red-hat-quay-flaw-enables-private-image-theft-3bd886"
-    ]
-  },
-  {
-    "slug": "fbi-agent-stole-2-47m-in-crypto-d8f9416e",
-    "title": "FBI Agent Stole $2.47M in Crypto",
-    "summary": "A former FBI supervisor stole $2.47 million in cryptocurrency from criminal wallets by memorizing wallet recovery phrases. The theft was uncovered when the agent confessed, citing internal moral conflict, and authorities seized the stolen assets. The incident underscores the need for strict access controls, monitoring of privileged accounts, and robust recovery phrase management.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/fbi-agent-stole-2-47m-in-crypto-from-criminal-wallets",
-    "publishedAt": "2026-11-12T09:03:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-agent-stole-2-47m-in-crypto",
-      "article-d8f9416e",
-      "d8f9416e",
-      "fbi-agent-stole-2-47m-in-crypto-48c625"
-    ]
-  },
-  {
-    "slug": "maersk-data-theft-confirmed-by-whitearmor-7013f1c7",
-    "title": "Maersk Data Theft Confirmed by WhiteArmor",
-    "summary": "WhiteArmor ransomware group claims to have stolen 100GB of data from Maersk during a $5 million extortion attempt. The breach involved exfiltration of shipping-industry operational data, but no evidence shows ransomware execution or system compromise. Maersk should conduct a forensic investigation, reset compromised credentials, and strengthen access controls to mitigate further exfiltration.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/",
-    "publishedAt": "2026-11-12T08:38:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "maersk-data-theft-confirmed-by-whitearmor",
-      "article-7013f1c7",
-      "7013f1c7",
-      "maersk-data-theft-confirmed-by-whitearmor-3e04dc"
-    ]
-  },
-  {
-    "slug": "net-11-introduces-supply-chain-security-enhanceme-603ed7a2",
-    "title": ".NET 11 Introduces Supply Chain Security Enhancements",
-    "summary": "Microsoft released .NET 11, a Standard Term Support release, adding C# 15, ASP.NET Core, .NET MAUI, and Windows development features. The update introduces changes to software supply chain integrity, authentication handling, and platform lifecycle to reduce future attack vectors. Defenders should adopt .NET 11 and plan migrations from unsupported .NET 8/9 to benefit from these security improvements.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/net-11-security-changes/",
-    "publishedAt": "2026-11-12T08:23:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "net-11-introduces-supply-chain-security-enhanceme",
-      "article-603ed7a2",
-      "603ed7a2",
-      "net-11-introduces-supply-chain-security-enhanceme-2b5a01",
-      "net-11-introduces-supply-chain-security-enhancements"
-    ]
-  },
-  {
-    "slug": "node-js-http-2-flaws-crash-servers-leak-data-95e8fd61",
-    "title": "Node.js HTTP/2 Flaws Crash Servers, Leak Data",
-    "summary": "Unauthenticated clients can crash Node.js servers using HTTP/2 on 24.x and 26.x lines, and a second flaw leaks memory containing responses for other connections. The flaw stems from improper HTTP/2 frame handling, enabling denial of service and cross-connection data exposure without authentication. Node.js released patched versions 22.23.5, 24.22.3, and 26.13.1; upgrade immediately to stop crashes and leaks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
-    "publishedAt": "2026-11-12T08:20:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "node-js-http-2-flaws-crash-servers-leak-data",
-      "article-95e8fd61",
-      "95e8fd61",
-      "node-js-http-2-flaws-crash-servers-leak-data-160886"
     ]
   }
 ];

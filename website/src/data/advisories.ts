@@ -2,6 +2,33 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-119790",
+    "cveID": "CVE-2026-119790",
+    "slug": "cve-2026-119790",
+    "vendor": "npm",
+    "product": "next",
+    "name": "Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache()",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-362",
+    "ransomware": false,
+    "description": "Next.js applications with 'use cache' can disclose cached data across root params when the same 'use cache' function is called both directly during rendering and through unstable_cache(), and that function reads a root param. Root params are route parameters of the root layout, and applications commonly use them to scope data, for example per locale.",
+    "requiredAction": "Upgrade next to version 16.4.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mfr8-8qww-v76h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119790"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-128134",
     "cveID": "CVE-2026-128134",
     "slug": "cve-2026-128134",
@@ -1370,33 +1397,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126364"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128070",
-    "cveID": "CVE-2026-128070",
-    "slug": "cve-2026-128070",
-    "vendor": "npm",
-    "product": "@nuxt/schema",
-    "name": "Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-552",
-    "ransomware": false,
-    "description": "Nuxt can pick a parent directory that does not declare a workspace as its default workspaceDir: the farthest directory with a lockfile when the project is not inside a git repository, or the farthest directory with a pnpm-workspace.yaml or deno.json file, even one that only holds settings. The Vite dev server allows /_nuxt/@fs/ requests for any file under workspaceDir.",
-    "requiredAction": "Upgrade @nuxt/schema to version 4.6.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mjrq-cffv-q4qc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128070"
       }
     ],
     "source": "GITHUB"

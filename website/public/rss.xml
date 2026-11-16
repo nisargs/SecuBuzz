@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 18:46:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 19:46:13 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library</title>
@@ -26,6 +26,33 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Meta Fined $886M by Italian Regulator</title>
+      <link>https://secubuzz.com/news/meta-fined-886m-by-italian-regulator-4ab95a4b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/meta-fined-886m-by-italian-regulator-4ab95a4b</guid>
+      <description><![CDATA[The Italian data protection authority fined Meta $886 million for violating privacy law via Facebook’s camera roll suggestions feature. The feature accessed Android users’ photo galleries to recommend posts that could be enhanced with personal media, breaching consent. Meta must adjust its recommendation algorithms to prevent unauthorized gallery access and comply with Italian privacy regulations.]]></description>
+      <pubDate>Mon, 16 Nov 2026 18:05:00 GMT</pubDate>
+      <source url="https://therecord.media/italian-regulator-fines-meta-886-million-privacy">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Rapid7 Finds Container Escapes in ONLYOFFICE Docs</title>
+      <link>https://secubuzz.com/news/rapid7-finds-container-escapes-in-onlyoffice-docs-6a7300f3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rapid7-finds-container-escapes-in-onlyoffice-docs-6a7300f3</guid>
+      <description><![CDATA[Rapid7 identified five vulnerabilities in ONLYOFFICE Docs that chain view-only access to container root execution. The flaw permits attackers to escape the document container, potentially compromising the host system with critical elevated privileges. Users should upgrade to Document Server 10.0 and monitor for container escape indicators to mitigate the risk.]]></description>
+      <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/onlyoffice-docs-container-root-vulnerabilities">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Retadup Worm Resurfaces, Deploys CoffeeLoader via DLL</title>
+      <link>https://secubuzz.com/news/retadup-worm-resurfaces-deploys-coffeeloader-via-d-3004114e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/retadup-worm-resurfaces-deploys-coffeeloader-via-d-3004114e</guid>
+      <description><![CDATA[Retadup worm reappears, re-registering command-and-control domains and using USB media to deliver the CoffeeLoader backdoor. The malware exploits DLL side-loading by loading 7z.dll, enabling execution of malicious code without user consent and bypassing integrity checks. Security teams should deploy Sigma rules and KQL queries to detect DLL loads and block the worm’s C2 traffic, while disabling USB autorun policies.]]></description>
+      <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/retadup-worm-coffeeloader-malware">CyberNews AI</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>UK Opens HQ for National Cyber Force</title>
       <link>https://secubuzz.com/news/uk-opens-hq-for-national-cyber-force-d204fa0f</link>
       <guid isPermaLink="true">https://secubuzz.com/news/uk-opens-hq-for-national-cyber-force-d204fa0f</guid>
@@ -44,6 +71,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Claude Code Extension Exposes Files Outside Trusted Workspaces</title>
+      <link>https://secubuzz.com/news/claude-code-extension-exposes-files-outside-truste-fa9b27ad</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/claude-code-extension-exposes-files-outside-truste-fa9b27ad</guid>
+      <description><![CDATA[Researchers discovered the Claude Code extension for VS Code can prompt users for file access while hiding the file location. The flaw lets users approve seemingly safe paths, granting the extension access to files outside the trusted workspace and exposing sensitive data. Teams should audit extension permissions, enforce workspace boundaries, and monitor for unauthorized file access to mitigate the risk.]]></description>
+      <pubDate>Mon, 16 Nov 2026 16:51:53 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/claude-code-vs-code-extension/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Microsoft says months-old bug caused global Microsoft 365 outage</title>
       <link>https://secubuzz.com/news/microsoft-says-months-old-bug-caused-global-micros-b35814fa</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-says-months-old-bug-caused-global-micros-b35814fa</guid>
@@ -51,6 +87,51 @@
       <pubDate>Mon, 16 Nov 2026 16:43:24 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>AI Marketplace Enables Targeted Search of Compromised VPN Systems</title>
+      <link>https://secubuzz.com/news/ai-marketplace-enables-targeted-search-of-compromi-11a0d3fa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-marketplace-enables-targeted-search-of-compromi-11a0d3fa</guid>
+      <description><![CDATA[An underground AI-powered marketplace now lets attackers search for infected computers with corporate VPN access. The service indexes compromised machines, enabling buyers to filter by VPN usage or cloud provider, cutting discovery time. Security teams should monitor VPN logs for anomalous queries, enforce least-privilege access, and actively deploy endpoint detection.]]></description>
+      <pubDate>Mon, 16 Nov 2026 16:41:44 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-ai-powered-marketplace/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>China-Nexus Actors Breach Ten Organizations with AI Attacks</title>
+      <link>https://secubuzz.com/news/china-nexus-actors-breach-ten-organizations-with-a-0050d0d2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/china-nexus-actors-breach-ten-organizations-with-a-0050d0d2</guid>
+      <description><![CDATA[China-linked actors used the autonomous tool Cairn to breach ten organizations across advanced manufacturing, defense, and civil-rights sectors. The attacks leveraged AI-driven credential harvesting and lateral movement, enabling attackers to exfiltrate sensitive data without detection. Affected organizations should enforce multi-factor authentication, monitor for anomalous lateral activity, and apply the latest security patches.]]></description>
+      <pubDate>Mon, 16 Nov 2026 16:36:55 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/china-nexus-actors-breach-10-organizations-ai-driven-attacks">Dark Reading</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Apple Details Secure Exclaves Protecting Camera and Microphone Data</title>
+      <link>https://secubuzz.com/news/apple-details-secure-exclaves-protecting-camera-an-1a71bf89</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-details-secure-exclaves-protecting-camera-an-1a71bf89</guid>
+      <description><![CDATA[Apple disclosed the Secure Exclaves architecture designed to isolate camera and microphone data from the main operating system. The design employs hardware isolation, strict data-sharing rules, and protected privacy indicators to prevent background sensing from accessing active recordings. Security teams should review the new hardware isolation features and update device firmware to ensure compliance with the latest privacy safeguards.]]></description>
+      <pubDate>Mon, 16 Nov 2026 16:04:06 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/apple-reveals-secure-exclaves/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CVE-2026-124223 Microsoft Office SharePoint Remote Code Execution Vulnerability</title>
+      <link>https://secubuzz.com/news/cve-2026-124223-microsoft-office-sharepoint-remote-5ed714a4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-124223-microsoft-office-sharepoint-remote-5ed714a4</guid>
+      <description><![CDATA[This CVE was addressed by updates that were released in November 2026, but the CVE was inadvertently omitted from the November 2026 Security Updates. Customers who have already installed the November 2026 updates do not need to take any further action.]]></description>
+      <pubDate>Mon, 16 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124223">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Office SharePoint Elevation Vulnerability CVE-2026-124222</title>
+      <link>https://secubuzz.com/news/microsoft-office-sharepoint-elevation-vulnerabilit-e5b15521</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-office-sharepoint-elevation-vulnerabilit-e5b15521</guid>
+      <description><![CDATA[Microsoft Office SharePoint contains an elevation of privilege flaw identified as CVE-2026-124222, affecting privileged users. The flaw was patched in November 2026 updates, but the CVE was inadvertently omitted from the release notes. Customers who have installed the November 2026 updates need not take further action, but should verify patch status.]]></description>
+      <pubDate>Mon, 16 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124222">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>UK Excludes Client-Side Scanning from Child-Safety Rules</title>
@@ -141,6 +222,15 @@
       <pubDate>Mon, 16 Nov 2026 14:57:54 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1163">Canadian Centre for Cyber Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Mustang Panda Deploys LOTUSLITE V2 via Zoho WorkDrive</title>
+      <link>https://secubuzz.com/news/mustang-panda-deploys-lotuslite-v2-via-zoho-workdr-81300585</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mustang-panda-deploys-lotuslite-v2-via-zoho-workdr-81300585</guid>
+      <description><![CDATA[Mustang Panda-linked actors are distributing LOTUSLITE V2 malware through malicious Zoho WorkDrive downloads, targeting Thai organizations. The campaign embeds a trusted PDFgear executable, loads malicious DLLs, establishes registry persistence, and uses encrypted C2 to maintain Windows access. Defenders should block Zoho WorkDrive traffic, monitor for PDFgear execution, and enforce application whitelisting to mitigate this threat.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:48:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/mustang-panda-linked-hackers/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>TSMC Confirms Cloud Provider Data Breach Exposing Employee Info</title>
@@ -240,6 +330,15 @@
       <pubDate>Mon, 16 Nov 2026 14:00:00 GMT</pubDate>
       <source url="https://www.huntress.com/blog/ai-arena-huntress-ctf-2026-retro">Huntress</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Bitly Links Hijacked, Redirecting Brand Posts to Wikipedia</title>
+      <link>https://secubuzz.com/news/bitly-links-hijacked-redirecting-brand-posts-to-wi-acf59f17</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bitly-links-hijacked-redirecting-brand-posts-to-wi-acf59f17</guid>
+      <description><![CDATA[Hijacked Bitly links redirect old brand social posts from McDonald's, Burger King, and others to unrelated Wikipedia pages. The flaw allows attackers to alter short URLs, causing visitors to view unrelated content and potentially exposing brand reputation. Security teams should verify link integrity, revoke compromised Bitly links, and monitor for similar hijacks to protect brand communications.]]></description>
+      <pubDate>Mon, 16 Nov 2026 13:50:47 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/hijacked-bitly-links-turn-old-brand-posts-into-offensive-redirects">Malwarebytes Labs</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Fake Prime Gaming Site Steals EA Credentials</title>
@@ -356,105 +455,6 @@
       <description><![CDATA[Microsoft previewed a remote lock that lets Intune admins lock lost or stolen Windows devices without wiping them. The lock signs out sessions, hides sign-in options, shows a lock screen, and persists across restarts on Windows 10, 11, and Server editions. Admins should enable the preview in Intune, test on pilot devices, and plan a full rollout once stable.]]></description>
       <pubDate>Mon, 16 Nov 2026 11:57:54 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/16/microsoft-remote-lock-feature-preview/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Coles Investigates Reported Cybersecurity Incident</title>
-      <link>https://secubuzz.com/news/coles-investigates-reported-cybersecurity-incident-46318045</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/coles-investigates-reported-cybersecurity-incident-46318045</guid>
-      <description><![CDATA[Coles Group Limited is investigating a reported cybersecurity incident that reportedly did not affect its retail stores. The company has not disclosed specific details, but authorities are monitoring for potential data exposure or system compromise. Security teams should review access logs, verify system integrity, and ensure incident response plans are activated.]]></description>
-      <pubDate>Mon, 16 Nov 2026 11:18:09 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>UnrealIRCd Vulnerability Enables Command Execution with IRCOp Privileges</title>
-      <link>https://secubuzz.com/news/unrealircd-vulnerability-enables-command-execution-21745f13</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unrealircd-vulnerability-enables-command-execution-21745f13</guid>
-      <description><![CDATA[A high-severity flaw in UnrealIRCd, tracked as CVE-2026-114713, permits attackers to execute arbitrary commands with server or IRCOp privileges. The vulnerability stems from improper validation of privileged IRC commands, enabling remote code execution without authentication and potentially compromising entire IRC networks. UnrealIRCd developers released an update on 2026-11-15; administrators should upgrade immediately and disable unused IRCOp accounts.]]></description>
-      <pubDate>Mon, 16 Nov 2026 11:15:48 GMT</pubDate>
-      <source url="https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/">SecurityWeek</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Copeland Controllers Face Rapid Exploit Attempts on 14 Vulnerabilities</title>
-      <link>https://secubuzz.com/news/copeland-controllers-face-rapid-exploit-attempts-o-5f4d80e0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/copeland-controllers-face-rapid-exploit-attempts-o-5f4d80e0</guid>
-      <description><![CDATA[Vulncheck identified fourteen security flaws in Copeland XWEB EVO refrigeration controllers, two of which threat actors have already targeted. The weaknesses involve improper input validation and insecure default credentials, enabling remote code execution or denial of service on the controllers' operating system. Copeland has issued firmware updates; operators should apply the latest patch and disable default accounts to mitigate exploitation.]]></description>
-      <pubDate>Mon, 16 Nov 2026 11:05:42 GMT</pubDate>
-      <source url="https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Anthropic Releases Claude Mythos 5.2, Fable 5.2</title>
-      <link>https://secubuzz.com/news/anthropic-releases-claude-mythos-5-2-fable-5-2-40b6d9d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-releases-claude-mythos-5-2-fable-5-2-40b6d9d4</guid>
-      <description><![CDATA[Anthropic released Claude Mythos 5.2 and Fable 5.2 for developers. Updates enhance coding and reasoning but reduce coverage of some security tasks, while Mythos improves bug detection. No security patches or mitigations are required; users should adopt the new models for improved code quality to reduce bugs in production environments.]]></description>
-      <pubDate>Mon, 16 Nov 2026 11:00:00 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Rspamd 4.3.0 Patch Stops Worker Crashes and Forged Auth</title>
-      <link>https://secubuzz.com/news/rspamd-4-3-0-patch-stops-worker-crashes-and-forged-0b1aaa62</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rspamd-4-3-0-patch-stops-worker-crashes-and-forged-0b1aaa62</guid>
-      <description><![CDATA[Rspamd 4.3.0 fixes bugs that let unauthenticated attackers crash workers or forge authentication to bypass DMARC. A single HTTP request with a header lacking a colon or an empty Deliver-To header could terminate workers, causing a denial-of-service without code execution. Administrators should upgrade to Rspamd 4.3.0 or apply the patch to remove the crash and authentication bypass.]]></description>
-      <pubDate>Mon, 16 Nov 2026 09:27:24 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/16/rspamd-4-3-0-released/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Tor 0.4.9.17 Enhances IPv6 DoS Protections</title>
-      <link>https://secubuzz.com/news/tor-0-4-9-17-enhances-ipv6-dos-protections-bd50295f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tor-0-4-9-17-enhances-ipv6-dos-protections-bd50295f</guid>
-      <description><![CDATA[Tor 0.4.9.17 patches multiple security issues, including a flaw in the built-in DoS defenses that mishandled IPv6 traffic. The flaw could allow attackers to trigger denial-of-service on relay nodes by sending IPv6 packets, but it does not provide remote code execution. Tor developers released the update; users should upgrade to 0.4.9.17 or apply the patch to mitigate the DoS risk.]]></description>
-      <pubDate>Mon, 16 Nov 2026 08:55:32 GMT</pubDate>
-      <source url="https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Releases Emergency Windows Activation Patches</title>
-      <link>https://secubuzz.com/news/microsoft-releases-emergency-windows-activation-pa-87f9e41a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-emergency-windows-activation-pa-87f9e41a</guid>
-      <description><![CDATA[Microsoft released emergency out-of-band updates to correct Windows activation and licensing failures triggered by this month’s security patches. The flaw stemmed from a mis-handled activation state that caused legitimate users to lose license validation, creating a denial-of-service effect on activation services. Users should apply the OOB patches immediately or install the latest cumulative update to restore proper activation functionality.]]></description>
-      <pubDate>Mon, 16 Nov 2026 08:26:52 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Denies Outage Attack, Alerts to Phishing</title>
-      <link>https://secubuzz.com/news/microsoft-denies-outage-attack-alerts-to-phishing-02a2bcde</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-denies-outage-attack-alerts-to-phishing-02a2bcde</guid>
-      <description><![CDATA[Microsoft confirmed that the 2026 service outage was not caused by a cyberattack and issued a warning about a phishing campaign exploiting the outage narrative. Phishing emails impersonated 365 service notices and threatened to delete held messages, leveraging the outage to increase credibility. Security teams should verify email authenticity, enforce MFA, and educate users to avoid interacting with suspicious links.]]></description>
-      <pubDate>Mon, 16 Nov 2026 08:15:12 GMT</pubDate>
-      <source url="https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Malwarebytes Labs Weekly Security Roundup November 9-15</title>
-      <link>https://secubuzz.com/news/malwarebytes-labs-weekly-security-roundup-november-7b526ec1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malwarebytes-labs-weekly-security-roundup-november-7b526ec1</guid>
-      <description><![CDATA[Malwarebytes Labs released a weekly security roundup covering November 9-15, 2026, summarizing emerging threats and vulnerability disclosures. The article details zero-day exploits, phishing campaigns, and new defensive tools observed during that period, offering context for security teams. No specific patches or mitigations are announced, making this a general industry update rather than an actionable advisory.]]></description>
-      <pubDate>Mon, 16 Nov 2026 08:01:00 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/uncategorized/2026/11/a-week-in-security-november-9-november-15-2">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Agents Target LiteLLM, Dify for API Keys</title>
-      <link>https://secubuzz.com/news/ai-agents-target-litellm-dify-for-api-keys-93f2f541</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-target-litellm-dify-for-api-keys-93f2f541</guid>
-      <description><![CDATA[Attackers used autonomous AI agents to scan internet-exposed AI platforms like LiteLLM, One API, and Dify for embedded API keys. Stolen keys authenticated to providers, allowing agents to run AI models that searched for more keys, creating a loop. Amazon’s threat team captured the activity with decoy servers and recommends revoking exposed keys, tightening storage, and enforcing stricter controls.]]></description>
-      <pubDate>Mon, 16 Nov 2026 07:34:21 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Top Ten CAASM Tools Ranked for 2026</title>
-      <link>https://secubuzz.com/news/top-ten-caasm-tools-ranked-for-2026-5a2d540f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-ten-caasm-tools-ranked-for-2026-5a2d540f</guid>
-      <description><![CDATA[The article ranks the top ten CAASM tools for 2026, comparing each platform’s capabilities and market position. It explains how CAASM solutions aggregate asset data from tools, merge duplicates, and enable queries, resolving inconsistencies across EDRs and scanners. The piece recommends evaluating tools on integration depth, data accuracy, and user experience, and suggests pilot testing before full deployment.]]></description>
-      <pubDate>Mon, 16 Nov 2026 07:19:56 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-caasm-tools/">Cyber Security News</source>
       <category>General</category>
     </item>
   </channel>
