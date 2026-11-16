@@ -2,6 +2,303 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-129237",
+    "cveID": "CVE-2026-129237",
+    "slug": "cve-2026-129237",
+    "vendor": "Go",
+    "product": "go.qbee.io/agent",
+    "name": "qbee-agent: Docker Compose build context Zip Slip writes outside context directory",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "qbee-agent contains a Zip Slip vulnerability in app/utils/tar.go. The tar extractor checks whether an entry remains inside the destination directory with: This does not enforce a path separator boundary. If the destination directory is /tmp/.../context, a tar entry such as ../context-outside/payload.txt cleans to /tmp/.../context-outside/payload.txt and still passes the prefix check.",
+    "requiredAction": "Upgrade go.qbee.io/agent to version 0.0.0-20260908095235-eb7875f0a849 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vx32-xf7g-9ghr"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129237"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-91115",
+    "cveID": "CVE-2026-91115",
+    "slug": "cve-2026-91115",
+    "vendor": "Composer",
+    "product": "silverstripe/framework",
+    "name": "Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-470",
+    "ransomware": false,
+    "description": "The writer option of the i18nTextCollectorTask dev task was passed to the injector without validation. A crafted dev task URL could create arbitrary objects with attacker-controlled constructor arguments and run code on the server. Because the dev task did not ask for confirmation, an administrator could be tricked into running it by following a link. On a site in dev mode, no login was needed.",
+    "requiredAction": "Upgrade silverstripe/framework to version 6.2.13 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-c94f-87xg-65wf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91115"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-91113",
+    "cveID": "CVE-2026-91113",
+    "slug": "cve-2026-91113",
+    "vendor": "Composer",
+    "product": "silverstripe/framework",
+    "name": "Silverstripe Framework: User-controlled ClassName allows unauthorized record type change",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-862",
+    "ransomware": false,
+    "description": "A user who can edit a record through a GridField detail form could change the record to an unrelated class, without the permission checks for that class. Lachlan Davidson, Carapace",
+    "requiredAction": "Upgrade silverstripe/framework to version 6.2.13 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4qv2-g5vp-wjjw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91113"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-91112",
+    "cveID": "CVE-2026-91112",
+    "slug": "cve-2026-91112",
+    "vendor": "Composer",
+    "product": "silverstripe/framework",
+    "name": "Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "CWE-269",
+    "ransomware": false,
+    "description": "A user with access to the Security section (CMS_ACCESS_SecurityAdmin) but without the ADMIN permission could edit a group that grants ADMIN through a role or a parent group, and use it to escalate their own privileges. Lachlan Davidson, Carapace",
+    "requiredAction": "Upgrade silverstripe/framework to version 6.2.13 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rg72-5958-c65m"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91112"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-88989",
+    "cveID": "CVE-2026-88989",
+    "slug": "cve-2026-88989",
+    "vendor": "Composer",
+    "product": "silverstripe/framework",
+    "name": "Silverstripe Framework: Auth bypass GridFieldDetailForm",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-862",
+    "ransomware": false,
+    "description": "A CMS user who can edit records through a GridField detail form could create new records without the permission to create them, by sending a save request directly. HDWSec -",
+    "requiredAction": "Upgrade silverstripe/framework to version 6.2.13 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3qh3-54qg-gpq3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88989"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-88988",
+    "cveID": "CVE-2026-88988",
+    "slug": "cve-2026-88988",
+    "vendor": "Composer",
+    "product": "silverstripe/framework",
+    "name": "Silverstripe Framework: XSS via SVG data URI",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The HTML sanitiser did not remove SVG data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it. HDWSec -",
+    "requiredAction": "Upgrade silverstripe/framework to version 6.2.13 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xwg4-8hqh-79jq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88988"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-88987",
+    "cveID": "CVE-2026-88987",
+    "slug": "cve-2026-88987",
+    "vendor": "Composer",
+    "product": "silverstripe/framework",
+    "name": "Silverstripe Framework: XSS via XHTML data URI",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The HTML sanitiser did not remove XHTML and XML data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it. Jack Wallace from Bastion Security",
+    "requiredAction": "Upgrade silverstripe/framework to version 6.2.13 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qqrg-8jpm-8mph"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88987"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129239",
+    "cveID": "CVE-2026-129239",
+    "slug": "cve-2026-129239",
+    "vendor": "npm",
+    "product": "directus",
+    "name": "Directus: Share update allows reassigning user_created and role",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-269",
+    "ransomware": false,
+    "description": "A non-admin user who can update their own shares can reassign a share's creator (user_created), role, item, and collection fields after the share is created. The update is authorized against the row as it existed before the change, and the resulting row is never revalidated, so these fields can be set to values the user would not be permitted to assign when creating a share.",
+    "requiredAction": "Upgrade directus to version 12.3.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7h45-q5jx-7r87"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129239"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129301",
+    "cveID": "CVE-2026-129301",
+    "slug": "cve-2026-129301",
+    "vendor": "Pip",
+    "product": "mail-parser",
+    "name": "mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "write_attachments() called _safe_attachment_filename() and write_sample() inside its loop with no guard, so a single crafted attachment raised out of the whole save. Every attachment after the malicious one was silently never written, with no error surfaced to a caller that catches only MailParserError.",
+    "requiredAction": "Upgrade mail-parser to version 4.6.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8cgq-x343-p74c"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129301"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129300",
+    "cveID": "CVE-2026-129300",
+    "slug": "cve-2026-129300",
+    "vendor": "Pip",
+    "product": "mail-parser",
+    "name": "mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "A Received header whose trailing date carries an out-of-range year, or a timezone offset large enough to push the timestamp past the int64 epoch range, raises an exception that is *outside the MailParser hierarchy.",
+    "requiredAction": "Upgrade mail-parser to version 4.6.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xhrq-2mqv-q8wx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129300"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129235",
+    "cveID": "CVE-2026-129235",
+    "slug": "cve-2026-129235",
+    "vendor": "Go",
+    "product": "kubeshark · kubeshark",
+    "name": "Kubeshark: MCP `download_file` writes fetched bytes to an unvalidated destination path",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "The download_file MCP tool fetches a caller-supplied path from the Kubeshark Hub API and writes the response body to a caller-supplied dest on the local filesystem with no validation of dest. An attacker who can influence the MCP tool arguments — e.g.",
+    "requiredAction": "Upgrade kubeshark · kubeshark to version 0.0.2-0.20260812200004-a76a1920dc75 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gj7r-p794-hhq5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129235"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-129236",
     "cveID": "CVE-2026-129236",
     "slug": "cve-2026-129236",
@@ -1100,303 +1397,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126303"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126304",
-    "cveID": "CVE-2026-126304",
-    "slug": "cve-2026-126304",
-    "vendor": "Pip",
-    "product": "nltk",
-    "name": "NLTK: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-59",
-    "ransomware": false,
-    "description": "YCOECorpusReader builds two nested corpus sub-readers whose roots are derived from self.root.join(\"psd\") and self.root.join(\"pos\") (nltk/corpus/reader/ycoe.py).",
-    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qg35-44qx-7vrr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126304"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128117",
-    "cveID": "CVE-2026-128117",
-    "slug": "cve-2026-128117",
-    "vendor": "npm",
-    "product": "@sveltejs/kit",
-    "name": "SvelteKit: adapter-node crashes with an unhandled URIError when `reroute` rewrites malformed pathnames",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "When reroute turned an invalid percent-encoded path into a valid path, it could potentially trigger a comparison that would crash the server.",
-    "requiredAction": "Upgrade @sveltejs/kit to version 3.1.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mw6w-2fmv-pvw3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128117"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128121",
-    "cveID": "CVE-2026-128121",
-    "slug": "cve-2026-128121",
-    "vendor": "npm",
-    "product": "@sveltejs/adapter-vercel",
-    "name": "SvelteKit: Prerendered paths are interpreted as regular expressions in Vercel route config generated by @sveltejs/adapter-vercel and @sveltejs/adapter-static",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-116",
-    "ransomware": false,
-    "description": "If an attacker could influence a link that was crawled during the prerender phase, that link could later be interpreted as a regex in the Vercel routing configuration.",
-    "requiredAction": "Upgrade @sveltejs/adapter-vercel to version 6.3.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jf9x-2fg2-hx4w"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128121"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128122",
-    "cveID": "CVE-2026-128122",
-    "slug": "cve-2026-128122",
-    "vendor": "npm",
-    "product": "@sveltejs/adapter-cloudflare",
-    "name": "SvelteKit: Prerendered redirect paths can inject arbitrary rules into the `_redirects` file generated by `@sveltejs/adapter-cloudflare`",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "If an attacker can influence the links crawled during prerendering, they can influence the redirects entries that are added to the Cloudflare platform redirects generated during the adapt phase of the build.",
-    "requiredAction": "Upgrade @sveltejs/adapter-cloudflare to version 7.2.10 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5wg4-q3ww-283h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128122"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128123",
-    "cveID": "CVE-2026-128123",
-    "slug": "cve-2026-128123",
-    "vendor": "npm",
-    "product": "@sveltejs/adapter-node",
-    "name": "SvelteKit: `@sveltejs/adapter-node` crashes when proxying certain requests via `fetch`",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "In affected versions, @sveltejs/adapter-node can attempt to add a header to an immutable request in a context that causes the server to crash, denying service to any other requests routed to that server.",
-    "requiredAction": "Upgrade @sveltejs/adapter-node to version 5.5.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rqw3-x7hx-mm3p"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128123"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126347",
-    "cveID": "CVE-2026-126347",
-    "slug": "cve-2026-126347",
-    "vendor": "Pip",
-    "product": "tornado",
-    "name": "Tornado: Open redirect via triple-slash redirect paths",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 3.1,
-    "severity": "Low",
-    "cwe": "CWE-601",
-    "ransomware": false,
-    "description": "Due to differences in the way browsers and Python's urllib parse urls, browsers treat a string starting with three or more slashes as a protocol-level redirect, while urllib does not. This means that the 6.6.0 fix for the RedirectHandler open redirect (CVE-2026-116578, commit cc75ab0e) is incomplete.",
-    "requiredAction": "Upgrade tornado to version 6.6.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5cjw-f85j-cv6r"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126347"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128089",
-    "cveID": "CVE-2026-128089",
-    "slug": "cve-2026-128089",
-    "vendor": "Pip",
-    "product": "dnspython",
-    "name": "dnspython has excessive memory and CPU use",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "A maliciously crafted zone file could use a WKS record to consume excessive memory and CPU, possibly causing the process to exit due to memory exhaustion.",
-    "requiredAction": "Upgrade dnspython to version 2.9.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vvf4-9x63-8xvv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128089"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128077",
-    "cveID": "CVE-2026-128077",
-    "slug": "cve-2026-128077",
-    "vendor": "npm",
-    "product": "@nuxt/nitro-server",
-    "name": "Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-436",
-    "ransomware": false,
-    "description": "Since 4.6.0, Nuxt parses a request path that starts with // as a URL with a host before rendering a page, so //x/admin renders the page at /admin. Nitro's routing, Nitro's route rules and server/middleware see the path as //x/admin, so server-side checks keyed on /admin do not apply. The fix for GHSA-9v7c-q64q-vv33 in 4.6.3 covered dot segments but not this form.",
-    "requiredAction": "Upgrade @nuxt/nitro-server to version 4.6.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r99w-jh2x-3mg9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128077"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128080",
-    "cveID": "CVE-2026-128080",
-    "slug": "cve-2026-128080",
-    "vendor": "npm",
-    "product": "@opentelemetry/instrumentation-http",
-    "name": "OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 5.8,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "@opentelemetry/instrumentation-http redacts sensitive URL query parameters on outgoing (client) spans but not on incoming (server) spans.",
-    "requiredAction": "Upgrade @opentelemetry/instrumentation-http to version 0.222.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3v2p-hm54-8qcq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128080"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128082",
-    "cveID": "CVE-2026-128082",
-    "slug": "cve-2026-128082",
-    "vendor": ".NET (NuGet)",
-    "product": "AutoMapper",
-    "name": "AutoMapper: Uncontrolled Recursion with Constructor Parameters",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-674",
-    "ransomware": false,
-    "description": "MaxDepth, whether set explicitly or applied by default (64) to self-referential type maps, was not enforced when the recursion goes through constructor parameters. Mapping a deeply nested source to a destination built through its constructor, such as a positional record, recurses without bound and throws a StackOverflowException. That exception can't be caught and terminates the process.",
-    "requiredAction": "Upgrade AutoMapper to version 16.3.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6vhm-j9h7-f9gh"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128082"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128087",
-    "cveID": "CVE-2026-128087",
-    "slug": "cve-2026-128087",
-    "vendor": "Rust (Cargo)",
-    "product": "russh",
-    "name": "russh kex_done: Shared-secret callback runs before server host-key verification",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-696",
-    "ransomware": false,
-    "description": "A malicious SSH server whose host key is rejected can still cause russh's client::Handler::kex_done() callback to execute with the raw key-exchange shared secret. Applications using the callback for its documented protocol-bridging purpose may derive keys, initialize a secondary data channel, or perform another externally visible action before russh calls check_server_key() and rejects the server.",
-    "requiredAction": "Upgrade russh to version 0.65.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9264-jvgf-6w2f"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128087"
       }
     ],
     "source": "GITHUB"
