@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "project-zero-to-publish-bugs-after-90-days-854e3824",
+    "title": "Project Zero to Publish Bugs After 90 Days",
+    "summary": "Google Project Zero announced a policy to publish vulnerabilities 90 days after vendor notification, regardless of patch status. The 'Full X' policy will cut the disclosure window to 60 days on Feb 2, 2027, and 30 days on Jan 3, 2028, replacing the 90+30 rule. Teams should track Project Zero releases and adjust patch timelines to match the new schedule.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/google-project-zero-disclosure-policy/",
+    "publishedAt": "2026-11-16T06:30:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "project-zero-to-publish-bugs-after-90-days",
+      "article-854e3824",
+      "854e3824",
+      "project-zero-to-publish-bugs-after-90-days-632f73"
+    ]
+  },
+  {
+    "slug": "ory-hydra-open-source-oauth-2-0-server-e82d7d08",
+    "title": "Ory Hydra: Open-Source OAuth 2.0 Server",
+    "summary": "Ory Hydra is an open-source OAuth 2.0 server and OpenID Connect provider that issues and validates tokens, registers client apps, and manages signing keys. Hydra stores no usernames or passwords, delegating authentication to an external identity system and reducing credential exposure. Developers should follow the full OAuth spec and implement robust key management for secure token issuance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/ory-hydra-oauth-server-open-source/",
+    "publishedAt": "2026-11-16T06:00:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ory-hydra-open-source-oauth-2-0-server",
+      "article-e82d7d08",
+      "e82d7d08",
+      "ory-hydra-open-source-oauth-2-0-server-705454"
+    ]
+  },
+  {
     "slug": "eset-mobile-security-adds-phishing-protection-to-i-c388edf8",
     "title": "ESET Mobile Security Adds Phishing Protection to iOS",
     "summary": "ESET released Mobile Security for iOS 18.0+, offering link verification and device scans for iPhone users. The app performs real-time link analysis, reviews permissions, and evaluates Wi-Fi connections, providing recommendations to mitigate phishing and configuration risks. Users can install the free app without an account; security teams should enable it on corporate devices to enforce link checks and monitor settings.",
@@ -27,6 +63,26 @@ export const news: NewsBrief[] = [
       "c388edf8",
       "eset-mobile-security-adds-phishing-protection-to-i-170ec0",
       "eset-mobile-security-adds-phishing-protection-to-ios"
+    ]
+  },
+  {
+    "slug": "linux-kernel-noisytcp-crash-vulnerability-exposed-bffb7b54",
+    "title": "Linux Kernel NoisyTCP Crash Vulnerability Exposed",
+    "summary": "A 11-year-old Linux kernel flaw, NoisyTCP, permits unauthenticated remote attackers to crash servers. The flaw, tracked as CVE-2026-99288, resides in the kernel’s TCP code and triggers a kernel panic without authentication, causing a denial-of-service that can disrupt services. Linux distributions have released patches; administrators should apply kernel updates or use the advisory’s suggested work-around to mitigate the crash risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/noisytcp-linux-kernel-vulnerability/",
+    "publishedAt": "2026-11-16T05:26:51.000Z",
+    "cves": [
+      "CVE-2026-99288"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-noisytcp-crash-vulnerability-exposed",
+      "article-bffb7b54",
+      "bffb7b54",
+      "linux-kernel-noisytcp-crash-vulnerability-exposed-4c5c52"
     ]
   },
   {
@@ -9627,61 +9683,6 @@ export const news: NewsBrief[] = [
       "eb1059f4",
       "rhsa-2026-99147-important-net-8-0-security-bug-fix-37d67f",
       "rhsa-2026-99147-important-net-8-0-security-bug-fix-and-enhan"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-update-for-rhel-10-8660ca44",
-    "title": "Red Hat Releases Kernel Update for RHEL 10",
-    "summary": "Red Hat issued a kernel update for Red Enterprise Linux 10 to address multiple security bugs. The update fixes several kernel vulnerabilities, each with a CVSS base score listed in the CVE references, and is rated as Important by Product Security. Administrators should apply the RHSA-2026:99133 package immediately to mitigate the identified flaws and ensure system reboot.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99133",
-    "publishedAt": "2026-11-11T23:46:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-update-for-rhel-10",
-      "article-8660ca44",
-      "8660ca44",
-      "red-hat-releases-kernel-update-for-rhel-10-37d67f"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-security-update-dcf5048d",
-    "title": "Red Hat Releases Kernel Security Update",
-    "summary": "Red Hat released a kernel update for Enterprise Linux 10, fixing multiple security issues that could enable privilege escalation or denial of service. The advisory labels the update Important and lists CVSS scores, but omits CVE IDs. Apply the patch promptly to close the flaws, as it includes bug fixes and enhancements that address the reported weaknesses.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99139",
-    "publishedAt": "2026-11-11T23:34:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-security-update",
-      "article-dcf5048d",
-      "dcf5048d",
-      "red-hat-releases-kernel-security-update-37d67f"
-    ]
-  },
-  {
-    "slug": "google-releases-chrome-157-update-for-android-devi-388a861b",
-    "title": "Google Releases Chrome 157 Update for Android Devices",
-    "summary": "Google has released Chrome version 157 for Android devices to resolve stability issues and address underlying security flaws. This update incorporates the security fixes included in desktop releases alongside performance improvements across mobile browser environments. Mobile administrators and end users should update to version 157.0.8103.78 via Google Play to ensure proper patch deployment.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_02063106877.html",
-    "publishedAt": "2026-11-11T23:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-releases-chrome-157-update-for-android-devi",
-      "article-388a861b",
-      "388a861b",
-      "google-releases-chrome-157-update-for-android-devi-790e97",
-      "google-releases-chrome-157-update-for-android-devices"
     ]
   }
 ];
