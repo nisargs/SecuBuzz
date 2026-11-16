@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 13:44:41 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 14:45:09 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>EU Sanctions Pro-Russian Hacktivists and Disinformation Firm</title>
+      <link>https://secubuzz.com/news/eu-sanctions-pro-russian-hacktivists-and-disinform-a24641d8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/eu-sanctions-pro-russian-hacktivists-and-disinform-a24641d8</guid>
+      <description><![CDATA[The European Union imposed sanctions on a pro-Russian hacktivist group and two dozen employees of the Moscow firm behind the Doppelgänger disinformation campaign. The sanctions aim to curb state-backed cyber operations and disrupt the firm’s influence-operations infrastructure. Affected actors must now face travel restrictions, asset freezes, and limited access to EU financial systems.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:15:00 GMT</pubDate>
+      <source url="https://therecord.media/russia-europe-sanctions-doppelganger">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Dell Advises Patches for Multiple Storage Vulnerabilities</title>
+      <link>https://secubuzz.com/news/dell-advises-patches-for-multiple-storage-vulnerab-48c5c219</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dell-advises-patches-for-multiple-storage-vulnerab-48c5c219</guid>
+      <description><![CDATA[Dell issued advisory AV26-1161, noting multiple vulnerabilities in Ansible Storage, OpenManage Ansible Modules, PowerScale InsightIQ, PowerStore, and Terraform Providers for Dell Storage. Affected versions include Ansible Storage for PowerFlex <3.2.0, PowerStore <3.9.0, Unity <1.2.13, and PowerScale InsightIQ <6.4.1. Administrators should review Dell’s links and apply the available patches or firmware upgrades to mitigate the vulnerabilities.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:12:42 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/dell-security-advisory-av26-1161">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Lithuanian Customs Restores Portal After Cyberattack</title>
+      <link>https://secubuzz.com/news/lithuanian-customs-restores-portal-after-cyberatta-d61d6b19</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/lithuanian-customs-restores-portal-after-cyberatta-d61d6b19</guid>
+      <description><![CDATA[Lithuanian Customs experienced a cyberattack that forced the temporary shutdown of its main user-management portal on November 10. The incident may have led to a data breach, prompting the agency to investigate and remediate the vulnerability. Services were restored over the weekend after the agency applied fixes and reinforced security controls.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:06:00 GMT</pubDate>
+      <source url="https://therecord.media/lithuania-customs-agency-cyberattack">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Threat Actors Deploy Autonomous AI Frameworks for Rapid Exploitation</title>
+      <link>https://secubuzz.com/news/threat-actors-deploy-autonomous-ai-frameworks-for-8c2c702c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/threat-actors-deploy-autonomous-ai-frameworks-for-8c2c702c</guid>
+      <description><![CDATA[Threat actors are increasingly deploying autonomous multi-agent frameworks and LLMJacking to accelerate vulnerability exploitation, per a Google Threat Intelligence update. The report highlights generative AI compressing attack timelines, scaling operations, and enabling machine-speed multi-stage intrusions, marking a critical inflection point. Security teams should monitor AI-driven threat activity, update detection rules, and prepare for rapid exploitation pipelines.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/">Google Threat Intelligence</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Google Warns of Imminent Fully-Automated AI Attacks</title>
+      <link>https://secubuzz.com/news/google-warns-of-imminent-fully-automated-ai-attack-b65b40f0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-warns-of-imminent-fully-automated-ai-attack-b65b40f0</guid>
+      <description><![CDATA[Google warns that threat actors are deploying AI-powered workflows to automate vulnerability discovery and exploitation, accelerating attacks to machine speed. These AI frameworks autonomously identify software weaknesses, potentially increasing attack frequency, though no specific CVE is cited. Security teams should monitor AI-driven threat intelligence, update detection rules, and apply rapid patches to mitigate automated exploitation.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Huntress CTF 2026 Retro Explores AI Assistance</title>
+      <link>https://secubuzz.com/news/huntress-ctf-2026-retro-explores-ai-assistance-aa9c40c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/huntress-ctf-2026-retro-explores-ai-assistance-aa9c40c0</guid>
+      <description><![CDATA[Huntress hosted a retrospective of its 2026 Capture The Flag event, showcasing challenges that blended real-world scenarios with AI-driven support. Participants leveraged machine learning models to analyze logs, identify indicators, and accelerate solution development, highlighting AI’s potential in collaborative defense. The event’s findings are documented in a public report, offering guidance for integrating AI tools into security operations.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.huntress.com/blog/ai-arena-huntress-ctf-2026-retro">Huntress</source>
+      <category>General</category>
+    </item>
     <item>
       <title>LiteLLM/Starlette CVE Exploitation Attempts Detected</title>
       <link>https://secubuzz.com/news/litellm-starlette-cve-exploitation-attempts-detect-00547fd8</link>
@@ -60,6 +114,15 @@
       <pubDate>Mon, 16 Nov 2026 12:34:21 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html">The Hacker News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Retadup Worm Resurfaces, Spreading CoffeeLoader Variant</title>
+      <link>https://secubuzz.com/news/retadup-worm-resurfaces-spreading-coffeeloader-var-93de52ed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/retadup-worm-resurfaces-spreading-coffeeloader-var-93de52ed</guid>
+      <description><![CDATA[Retadup worm resurfaces seven years after takedown, now delivering a new variant of CoffeeLoader malware to infected systems. The NSIS-based installer drops a patched 7z.dll into a temporary directory and executes it via rundll32.exe, enabling payload delivery. Security teams should monitor for the worm’s execution patterns, block rundll32 usage from unknown sources, and apply updated antivirus signatures.]]></description>
+      <pubDate>Mon, 16 Nov 2026 12:33:18 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html">The Hacker News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Lock and Code Podcast: Preparing Data for Death</title>
@@ -393,69 +456,6 @@
       <pubDate>Sat, 14 Nov 2026 19:00:00 GMT</pubDate>
       <source url="https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/">SecurityWeek</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Bundeswehr Removes Grounding on Quantum Systems Drones</title>
-      <link>https://secubuzz.com/news/bundeswehr-removes-grounding-on-quantum-systems-dr-1fa9f641</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bundeswehr-removes-grounding-on-quantum-systems-dr-1fa9f641</guid>
-      <description><![CDATA[A server cyber incident prompted the German Bundeswehr to temporarily ground Quantum Systems reconnaissance drones. The incident exposed supply-chain risk telemetry gaps, though no direct compromise of drone firmware was reported, and no CVE was cited. The Bundeswehr lifted the grounding after remediation and now recommends continuous supply-chain monitoring for future deployments.]]></description>
-      <pubDate>Sat, 14 Nov 2026 17:45:33 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/quantum-systems-drones-bundeswehr-malware-scare">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ESLint Terminates Paid Contributor Program Amid AI Impact</title>
-      <link>https://secubuzz.com/news/eslint-terminates-paid-contributor-program-amid-ai-fa9895eb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eslint-terminates-paid-contributor-program-amid-ai-fa9895eb</guid>
-      <description><![CDATA[ESLint has discontinued its paid contributor program as AI-generated code increases maintenance overhead for open-source projects. The decision follows broader industry shifts, with projects from Rust to Godot and curl tightening contribution rules to manage quality and security risks. Maintainers are encouraged to adopt stricter code review processes and automated AI-code detection tools to preserve project integrity.]]></description>
-      <pubDate>Sat, 14 Nov 2026 17:27:29 GMT</pubDate>
-      <source url="https://socket.dev/blog/eslint-ends-paid-contributor-program">Socket.dev</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cursor Breach Exposes 5,000 Developers via Malicious Claude Code Extension</title>
-      <link>https://secubuzz.com/news/cursor-breach-exposes-5-000-developers-via-malicio-df4c261a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cursor-breach-exposes-5-000-developers-via-malicio-df4c261a</guid>
-      <description><![CDATA[Attackers compromised Fireworks AI credentials to distribute a malicious Claude Code extension through Cursor's marketplace, targeting developers using the platform. Insufficient third-party extension validation let credential-stealing code run with elevated privileges, exposing roughly 5,000 developers to hidden SSH backdoors. Cursor patched marketplace authentication and urged users to uninstall the rogue extension, revoke compromised keys, and reset Fireworks AI credentials.]]></description>
-      <pubDate>Sat, 14 Nov 2026 17:27:25 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Schneier Announces Upcoming Speaking Engagements</title>
-      <link>https://secubuzz.com/news/schneier-announces-upcoming-speaking-engagements-527b2d00</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/schneier-announces-upcoming-speaking-engagements-527b2d00</guid>
-      <description><![CDATA[Schneier announces upcoming speaking engagements at Catalyst Summit in Brampton, Ontario, Canada, on November 18, 2026, and at QT Qonference 2026 in Toronto, Ontario, Canada, on November 19, 2026, as part of his public outreach. The schedule is maintained and updated on his website, which also hosts additional event details. No technical vulnerabilities or incidents are reported in this announcement.]]></description>
-      <pubDate>Sat, 14 Nov 2026 17:02:39 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html">Schneier on Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>US Disrupts North Korean FaceStealer Crypto Theft</title>
-      <link>https://secubuzz.com/news/us-disrupts-north-korean-facestealer-crypto-theft-d875fe40</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-disrupts-north-korean-facestealer-crypto-theft-d875fe40</guid>
-      <description><![CDATA[U.S. authorities disrupted a North Korean social-engineering campaign named FaceStealer that stole over $400 million in cryptocurrency. The operation exploited phishing emails and credential harvesting to gain wallet access, enabling large-scale transfers to untraceable addresses. Affected actors should immediately revoke compromised credentials, monitor wallet activity, and apply multi-factor authentication to mitigate future theft.]]></description>
-      <pubDate>Sat, 14 Nov 2026 15:15:49 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AI Overreliance Threatens Cybersecurity Effectiveness</title>
-      <link>https://secubuzz.com/news/ai-overreliance-threatens-cybersecurity-effectiven-c2b1397a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-overreliance-threatens-cybersecurity-effectiven-c2b1397a</guid>
-      <description><![CDATA[Overreliance on AI in security operations risks eroding creativity, clear communication, and critical thinking when playbooks are absent. The article argues that automated decision-making can blind analysts to nuanced threat indicators, reducing adaptive response capabilities. Security teams should balance AI tools with human oversight, maintain playbooks, and regularly validate model outputs to preserve analytical rigor.]]></description>
-      <pubDate>Sat, 14 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CISA Adds UnrealIRCd CVE-2026-114713 to KEV Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-unrealircd-cve-2026-114713-to-kev-catalo-bf09696b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-unrealircd-cve-2026-114713-to-kev-catalo-bf09696b</guid>
-      <description><![CDATA[CISA has added the UnrealIRCd CVE-2026-114713 vulnerability to its Known Exploited Vulnerabilities (KEV) catalog, alerting federal agencies to the risk. The flaw permits unauthenticated remote code execution via malformed IRC commands, and active exploits have been observed in the wild. Administrators should apply the vendor-issued patch immediately and verify configuration changes to disable legacy protocols.]]></description>
-      <pubDate>Sat, 14 Nov 2026 12:38:35 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html">The Hacker News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

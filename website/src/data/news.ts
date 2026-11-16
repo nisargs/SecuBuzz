@@ -11,6 +11,119 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "eu-sanctions-pro-russian-hacktivists-and-disinform-a24641d8",
+    "title": "EU Sanctions Pro-Russian Hacktivists and Disinformation Firm",
+    "summary": "The European Union imposed sanctions on a pro-Russian hacktivist group and two dozen employees of the Moscow firm behind the Doppelgänger disinformation campaign. The sanctions aim to curb state-backed cyber operations and disrupt the firm’s influence-operations infrastructure. Affected actors must now face travel restrictions, asset freezes, and limited access to EU financial systems.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/russia-europe-sanctions-doppelganger",
+    "publishedAt": "2026-11-16T14:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eu-sanctions-pro-russian-hacktivists-and-disinform",
+      "article-a24641d8",
+      "a24641d8",
+      "eu-sanctions-pro-russian-hacktivists-and-disinform-1690be",
+      "eu-sanctions-pro-russian-hacktivists-and-disinformation-firm"
+    ]
+  },
+  {
+    "slug": "dell-advises-patches-for-multiple-storage-vulnerab-48c5c219",
+    "title": "Dell Advises Patches for Multiple Storage Vulnerabilities",
+    "summary": "Dell issued advisory AV26-1161, noting multiple vulnerabilities in Ansible Storage, OpenManage Ansible Modules, PowerScale InsightIQ, PowerStore, and Terraform Providers for Dell Storage. Affected versions include Ansible Storage for PowerFlex <3.2.0, PowerStore <3.9.0, Unity <1.2.13, and PowerScale InsightIQ <6.4.1. Administrators should review Dell’s links and apply the available patches or firmware upgrades to mitigate the vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/dell-security-advisory-av26-1161",
+    "publishedAt": "2026-11-16T14:12:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dell-advises-patches-for-multiple-storage-vulnerab",
+      "article-48c5c219",
+      "48c5c219",
+      "dell-advises-patches-for-multiple-storage-vulnerab-699b84",
+      "dell-advises-patches-for-multiple-storage-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "lithuanian-customs-restores-portal-after-cyberatta-d61d6b19",
+    "title": "Lithuanian Customs Restores Portal After Cyberattack",
+    "summary": "Lithuanian Customs experienced a cyberattack that forced the temporary shutdown of its main user-management portal on November 10. The incident may have led to a data breach, prompting the agency to investigate and remediate the vulnerability. Services were restored over the weekend after the agency applied fixes and reinforced security controls.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/lithuania-customs-agency-cyberattack",
+    "publishedAt": "2026-11-16T14:06:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "lithuanian-customs-restores-portal-after-cyberatta",
+      "article-d61d6b19",
+      "d61d6b19",
+      "lithuanian-customs-restores-portal-after-cyberatta-55119b",
+      "lithuanian-customs-restores-portal-after-cyberattack"
+    ]
+  },
+  {
+    "slug": "threat-actors-deploy-autonomous-ai-frameworks-for-8c2c702c",
+    "title": "Threat Actors Deploy Autonomous AI Frameworks for Rapid Exploitation",
+    "summary": "Threat actors are increasingly deploying autonomous multi-agent frameworks and LLMJacking to accelerate vulnerability exploitation, per a Google Threat Intelligence update. The report highlights generative AI compressing attack timelines, scaling operations, and enabling machine-speed multi-stage intrusions, marking a critical inflection point. Security teams should monitor AI-driven threat activity, update detection rules, and prepare for rapid exploitation pipelines.",
+    "category": "General",
+    "severity": "CRITICAL",
+    "source": "Google Threat Intelligence",
+    "sourceUrl": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/",
+    "publishedAt": "2026-11-16T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "threat-actors-deploy-autonomous-ai-frameworks-for",
+      "article-8c2c702c",
+      "8c2c702c",
+      "threat-actors-deploy-autonomous-ai-frameworks-for-645570",
+      "threat-actors-deploy-autonomous-ai-frameworks-for-rapid-expl"
+    ]
+  },
+  {
+    "slug": "google-warns-of-imminent-fully-automated-ai-attack-b65b40f0",
+    "title": "Google Warns of Imminent Fully-Automated AI Attacks",
+    "summary": "Google warns that threat actors are deploying AI-powered workflows to automate vulnerability discovery and exploitation, accelerating attacks to machine speed. These AI frameworks autonomously identify software weaknesses, potentially increasing attack frequency, though no specific CVE is cited. Security teams should monitor AI-driven threat intelligence, update detection rules, and apply rapid patches to mitigate automated exploitation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
+    "publishedAt": "2026-11-16T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-warns-of-imminent-fully-automated-ai-attack",
+      "article-b65b40f0",
+      "b65b40f0",
+      "google-warns-of-imminent-fully-automated-ai-attack-35a171",
+      "google-warns-of-imminent-fully-automated-ai-attacks"
+    ]
+  },
+  {
+    "slug": "huntress-ctf-2026-retro-explores-ai-assistance-aa9c40c0",
+    "title": "Huntress CTF 2026 Retro Explores AI Assistance",
+    "summary": "Huntress hosted a retrospective of its 2026 Capture The Flag event, showcasing challenges that blended real-world scenarios with AI-driven support. Participants leveraged machine learning models to analyze logs, identify indicators, and accelerate solution development, highlighting AI’s potential in collaborative defense. The event’s findings are documented in a public report, offering guidance for integrating AI tools into security operations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/ai-arena-huntress-ctf-2026-retro",
+    "publishedAt": "2026-11-16T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "huntress-ctf-2026-retro-explores-ai-assistance",
+      "article-aa9c40c0",
+      "aa9c40c0",
+      "huntress-ctf-2026-retro-explores-ai-assistance-47c7e4"
+    ]
+  },
+  {
     "slug": "litellm-starlette-cve-exploitation-attempts-detect-00547fd8",
     "title": "LiteLLM/Starlette CVE Exploitation Attempts Detected",
     "summary": "Attackers are probing LiteLLM/Starlette for CVE-2026-42271 and CVE-2026-48710 via /mcp-rest/test/tools/list requests. Both CVEs allow unauthenticated remote code execution when chained, as detailed by Horizon3.ai, exposing servers to arbitrary code execution. Patches for both CVEs are available; administrators should apply vendor updates immediately in production environments and monitor for similar request patterns.",
@@ -122,6 +235,25 @@ export const news: NewsBrief[] = [
       "5d6e8e5e",
       "six-danfoss-controller-flaws-enable-remote-takeove-1b640a",
       "six-danfoss-controller-flaws-enable-remote-takeover"
+    ]
+  },
+  {
+    "slug": "retadup-worm-resurfaces-spreading-coffeeloader-var-93de52ed",
+    "title": "Retadup Worm Resurfaces, Spreading CoffeeLoader Variant",
+    "summary": "Retadup worm resurfaces seven years after takedown, now delivering a new variant of CoffeeLoader malware to infected systems. The NSIS-based installer drops a patched 7z.dll into a temporary directory and executes it via rundll32.exe, enabling payload delivery. Security teams should monitor for the worm’s execution patterns, block rundll32 usage from unknown sources, and apply updated antivirus signatures.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+    "publishedAt": "2026-11-16T12:33:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "retadup-worm-resurfaces-spreading-coffeeloader-var",
+      "article-93de52ed",
+      "93de52ed",
+      "retadup-worm-resurfaces-spreading-coffeeloader-var-7b2640",
+      "retadup-worm-resurfaces-spreading-coffeeloader-variant"
     ]
   },
   {
@@ -9588,138 +9720,6 @@ export const news: NewsBrief[] = [
       "article-9789b13a",
       "9789b13a",
       "git-six-flaw-rce-patches-released-2013f7"
-    ]
-  },
-  {
-    "slug": "ivanti-rce-flaw-cve-2026-121683-demands-prompt-pat-f1f37723",
-    "title": "Ivanti RCE Flaw CVE-2026-121683 Demands Prompt Patch",
-    "summary": "Ivanti software contains a remote code execution vulnerability, CVE-2026-121683, that permits attackers to run arbitrary code on affected systems. The flaw originates from unchecked user input in the configuration parser, and publicly available proof-of-concept code confirms exploitation. Security teams should immediately apply the Ivanti patch or upgrade to the latest release and enable the vendor-issued detection rules.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/citrix-ivanti-patch-critical-and-high-severity-vulnerab",
-    "publishedAt": "2026-11-12T03:19:15.000Z",
-    "cves": [
-      "CVE-2026-121683"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ivanti-rce-flaw-cve-2026-121683-demands-prompt-pat",
-      "article-f1f37723",
-      "f1f37723",
-      "ivanti-rce-flaw-cve-2026-121683-demands-prompt-pat-7473b0",
-      "ivanti-rce-flaw-cve-2026-121683-demands-prompt-patch"
-    ]
-  },
-  {
-    "slug": "fireworks-ai-incident-exposes-notion-chat-data-ccb5b9d7",
-    "title": "Fireworks AI Incident Exposes Notion Chat Data",
-    "summary": "Notion experienced a data breach stemming from a security incident involving Fireworks AI, exposing user chat data. The incident allowed unauthorized access to sensitive chat telemetry and conversational records through third-party platform integration. Security teams must review root-cause telemetry, deploy threat detection rules, and apply recommended patches to secure impacted integrations.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/notion-says-fireworks-breach-exposed-customer-ai-chat-t",
-    "publishedAt": "2026-11-12T03:18:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fireworks-ai-incident-exposes-notion-chat-data",
-      "article-ccb5b9d7",
-      "ccb5b9d7",
-      "fireworks-ai-incident-exposes-notion-chat-data-b780d3"
-    ]
-  },
-  {
-    "slug": "screenconnect-rce-flaw-threatens-managed-service-p-3acd5e7b",
-    "title": "ScreenConnect RCE Flaw Threatens Managed Service Providers",
-    "summary": "ScreenConnect, a support platform used by managed service providers, contains a remote code execution flaw that could allow attackers to execute arbitrary commands. The vulnerability arises from insufficient input validation in the session initiation module, and proof-of-concept exploits demonstrate its feasibility. Apply the vendor-issued patch immediately, update to the latest ScreenConnect version, and enable the detection rules to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/active-screenconnect-attacks-breach-msps-impact-dozens",
-    "publishedAt": "2026-11-12T03:18:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "screenconnect-rce-flaw-threatens-managed-service-p",
-      "article-3acd5e7b",
-      "3acd5e7b",
-      "screenconnect-rce-flaw-threatens-managed-service-p-10ffc9",
-      "screenconnect-rce-flaw-threatens-managed-service-providers"
-    ]
-  },
-  {
-    "slug": "whitearmor-ransomware-targets-maersk-shipping-13a6ca81",
-    "title": "WhiteArmor Ransomware Targets Maersk Shipping",
-    "summary": "WhiteArmor ransomware infected Maersk's network, exfiltrating sensitive data before encrypting files. The malware leveraged credential theft and lateral movement, exploiting unpatched Windows services, causing operational disruption and potential data loss. Maersk should apply vendor-supplied patches, isolate affected systems, enforce multi-factor authentication, and conduct forensic analysis to mitigate further spread.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/maersk-confirms-data-breach-as-whitearmor-ransomware-de",
-    "publishedAt": "2026-11-12T03:12:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "whitearmor-ransomware-targets-maersk-shipping",
-      "article-13a6ca81",
-      "13a6ca81",
-      "whitearmor-ransomware-targets-maersk-shipping-7cb745"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99142-important-net-10-0-security-bug-fi-0618a1cd",
-    "title": "RHSA-2026:99142: Important: .NET 10.0 security, bug fix, and enhancement update",
-    "summary": "An update for .NET 10.0 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99142",
-    "publishedAt": "2026-11-12T03:11:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99142-important-net-10-0-security-bug-fi",
-      "article-0618a1cd",
-      "0618a1cd",
-      "rhsa-2026-99142-important-net-10-0-security-bug-fi-37d67f",
-      "rhsa-2026-99142-important-net-10-0-security-bug-fix-and-enha"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99208-important-perl-dbi-security-update-7024703b",
-    "title": "RHSA-2026:99208: Important: perl-DBI security update",
-    "summary": "An update for perl-DBI is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99208",
-    "publishedAt": "2026-11-12T03:10:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99208-important-perl-dbi-security-update",
-      "article-7024703b",
-      "7024703b",
-      "rhsa-2026-99208-important-perl-dbi-security-update-37d67c"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-update-addresses-moderate-security-1ddc94c3",
-    "title": "Red Hat Kernel Update Addresses Moderate Security Issues",
-    "summary": "Red Hat released a kernel update for Enterprise Linux 9 that addresses several moderate-impact security issues. The update includes bug fixes and enhancements, with CVSS base scores linked to each CVE in the references. Security teams should apply the kernel update promptly and review the vendor documentation for any required configuration changes.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99135",
-    "publishedAt": "2026-11-12T03:05:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-kernel-update-addresses-moderate-security",
-      "article-1ddc94c3",
-      "1ddc94c3",
-      "red-hat-kernel-update-addresses-moderate-security-37d67f",
-      "red-hat-kernel-update-addresses-moderate-security-issues"
     ]
   }
 ];
