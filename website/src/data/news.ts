@@ -11,6 +11,136 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "qualcomm-releases-advisory-for-product-vulnerabili-cbcbddc5",
+    "title": "Qualcomm Releases Advisory for Product Vulnerabilities",
+    "summary": "Qualcomm released advisory AV26-1164 on November 2, 2026, detailing multiple vulnerabilities affecting its product line. The flaws could allow attackers to gain unauthorized access or disrupt device operation, though no public exploits have been reported. Users and administrators should review the advisory link and apply available updates to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/qualcomm-security-advisory-av26-1164",
+    "publishedAt": "2026-11-16T15:31:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "qualcomm-releases-advisory-for-product-vulnerabili",
+      "article-cbcbddc5",
+      "cbcbddc5",
+      "qualcomm-releases-advisory-for-product-vulnerabili-41869e",
+      "qualcomm-releases-advisory-for-product-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "google-project-zero-shortens-disclosure-window-a77de7f8",
+    "title": "Google Project Zero Shortens Disclosure Window",
+    "summary": "Google Project Zero announced a shift to a 30-day vulnerability disclosure deadline, replacing the current 60-day window. The change aims to accelerate vulnerability reporting and reduce the time attackers can exploit disclosed flaws, though it does not alter disclosure procedures. Security researchers should adjust their reporting timelines accordingly, and vendors should prepare to address findings within the new 30-day period.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/",
+    "publishedAt": "2026-11-16T15:31:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-project-zero-shortens-disclosure-window",
+      "article-a77de7f8",
+      "a77de7f8",
+      "google-project-zero-shortens-disclosure-window-5ffe67"
+    ]
+  },
+  {
+    "slug": "barracuda-breached-using-ai-powered-artex-framewor-f608e6b2",
+    "title": "Barracuda Breached Using AI-Powered Artex Framework",
+    "summary": "Barracuda Networks suffered a breach as attackers leveraged the Artex agentic AI penetration testing framework. The attack exploited automated vulnerability discovery and exploitation capabilities, enabling rapid compromise of Barracuda’s security appliances without prior credential theft. Security teams should review Barracuda appliance logs, apply the latest vendor patches, and implement network segmentation to contain potential lateral movement.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/",
+    "publishedAt": "2026-11-16T15:07:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "barracuda-breached-using-ai-powered-artex-framewor",
+      "article-f608e6b2",
+      "f608e6b2",
+      "barracuda-breached-using-ai-powered-artex-framewor-77adb8",
+      "barracuda-breached-using-ai-powered-artex-framework"
+    ]
+  },
+  {
+    "slug": "cjis-password-and-mfa-compliance-steps-3bc60c58",
+    "title": "CJIS Password and MFA Compliance Steps",
+    "summary": "The FBI’s CJIS Security Policy now mandates stronger passwords and MFA enforcement for all law-enforcement accounts. Specops Software provides seven practical steps to block compromised passwords, enforce MFA, and satisfy the updated policy. Organizations should implement these controls, audit password hygiene, and verify MFA deployment to remain compliant with CJIS regulations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
+    "publishedAt": "2026-11-16T15:01:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cjis-password-and-mfa-compliance-steps",
+      "article-3bc60c58",
+      "3bc60c58",
+      "cjis-password-and-mfa-compliance-steps-5b6c7c"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-advisory-for-multiple-product-vulne-060a1a9e",
+    "title": "Red Hat Issues Advisory for Multiple Product Vulnerabilities",
+    "summary": "Red Hat issued advisory AV26-1163 on November 16, 2026, covering vulnerabilities in RHEL 6/7/10, Hardened Images, OpenShift Dev Spaces, Satellite, and Quay. The weaknesses could enable unauthorized access or privilege escalation across affected versions, yet no active exploitation has been confirmed. Administrators should review the advisory and apply the recommended patches or updates to secure their environments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1163",
+    "publishedAt": "2026-11-16T14:57:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-advisory-for-multiple-product-vulne",
+      "article-060a1a9e",
+      "060a1a9e",
+      "red-hat-issues-advisory-for-multiple-product-vulne-cc2e0c",
+      "red-hat-issues-advisory-for-multiple-product-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "tsmc-confirms-cloud-provider-data-breach-exposing-0a66e85f",
+    "title": "TSMC Confirms Cloud Provider Data Breach Exposing Employee Info",
+    "summary": "TSMC confirmed a data breach at an unnamed cloud provider that exposed personal information of current and former employees. The exfiltration involved roughly 6.9 GB of data, including names, addresses, and employment details, with no credential compromise reported. Affected parties should verify data integrity, monitor for suspicious activity, and coordinate with the provider to assess controls and remediate.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/",
+    "publishedAt": "2026-11-16T14:44:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tsmc-confirms-cloud-provider-data-breach-exposing",
+      "article-0a66e85f",
+      "0a66e85f",
+      "tsmc-confirms-cloud-provider-data-breach-exposing-7e6eb0",
+      "tsmc-confirms-cloud-provider-data-breach-exposing-employee-i"
+    ]
+  },
+  {
+    "slug": "uk-criticized-for-cyber-security-bill-shortcomings-cccc7f37",
+    "title": "UK Criticized for Cyber Security Bill Shortcomings",
+    "summary": "A National Resilience Committee report warns that Britain’s upcoming Cyber Security and Resilience Bill falls short of required security standards. The report, released eight days before the bill’s vote, highlights gaps in protecting critical infrastructure from hostile state actors. Stakeholders should demand stronger safeguards, enforce compliance, and accelerate implementation of robust cyber resilience measures.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/british-government-complacent-foreign-cyber-threats",
+    "publishedAt": "2026-11-16T14:21:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uk-criticized-for-cyber-security-bill-shortcomings",
+      "article-cccc7f37",
+      "cccc7f37",
+      "uk-criticized-for-cyber-security-bill-shortcomings-182453"
+    ]
+  },
+  {
     "slug": "eu-sanctions-pro-russian-hacktivists-and-disinform-a24641d8",
     "title": "EU Sanctions Pro-Russian Hacktivists and Disinformation Firm",
     "summary": "The European Union imposed sanctions on a pro-Russian hacktivist group and two dozen employees of the Moscow firm behind the Doppelgänger disinformation campaign. The sanctions aim to curb state-backed cyber operations and disrupt the firm’s influence-operations infrastructure. Affected actors must now face travel restrictions, asset freezes, and limited access to EU financial systems.",
@@ -9586,140 +9716,6 @@ export const news: NewsBrief[] = [
       "deb62b73",
       "rhsa-2026-99166-important-vim-security-bug-fix-and-37d67f",
       "rhsa-2026-99166-important-vim-security-bug-fix-and-enhanceme"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99157-important-nginx-security-update-629a570c",
-    "title": "RHSA-2026:99157: Important: nginx security update",
-    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99157",
-    "publishedAt": "2026-11-12T03:32:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99157-important-nginx-security-update",
-      "article-629a570c",
-      "629a570c",
-      "rhsa-2026-99157-important-nginx-security-update-37d67f"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99158-important-nginx-1-24-security-upda-21fd5044",
-    "title": "RHSA-2026:99158: Important: nginx:1.24 security update",
-    "summary": "An update for the nginx:1.24 module is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99158",
-    "publishedAt": "2026-11-12T03:32:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99158-important-nginx-1-24-security-upda",
-      "article-21fd5044",
-      "21fd5044",
-      "rhsa-2026-99158-important-nginx-1-24-security-upda-37d67f",
-      "rhsa-2026-99158-important-nginx-1-24-security-update"
-    ]
-  },
-  {
-    "slug": "node-js-fixes-16-security-flaws-that-could-expose-5283b59f",
-    "title": "Node.js Fixes 16 Security Flaws That Could Expose TLS Private Keys and Crash Servers Remotely",
-    "summary": "The Node.js project has released fixes for 16 security flaws across its 22.x, 24.x and 26.x lines. The official advisory says the patched builds are v22.23.5, v24.22.3 and v26.13.1. The update also refreshes three bundled parts: llhttp, undici, and sqlite.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/node-js-fixes-16-security-vulnerabilities/",
-    "publishedAt": "2026-11-12T03:30:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "node-js-fixes-16-security-flaws-that-could-expose",
-      "article-5283b59f",
-      "5283b59f",
-      "node-js-fixes-16-security-flaws-that-could-expose-3c1029",
-      "node-js-fixes-16-security-flaws-that-could-expose-tls-privat"
-    ]
-  },
-  {
-    "slug": "mongodb-use-after-free-cve-2026-118383-exploited-1445ee31",
-    "title": "MongoDB Use-After-Free CVE-2026-118383 Exploited",
-    "summary": "MongoDB is affected by CVE-2026-118383, a use-after-free vulnerability that can lead to arbitrary code execution in enterprise environments. The flaw arises when the database fails to release memory after a malicious request, allowing attackers to trigger a crash or execute injected code. MongoDB has released a patch; administrators should apply the update immediately and monitor logs for anomalous activity. The flaw is tracked as CVE-2026-118383.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-118383-use-after-free-vulnerability-in-mongodb",
-    "publishedAt": "2026-11-12T03:24:43.000Z",
-    "cves": [
-      "CVE-2026-118383"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "mongodb-use-after-free-cve-2026-118383-exploited",
-      "article-1445ee31",
-      "1445ee31",
-      "mongodb-use-after-free-cve-2026-118383-exploited-13fac4"
-    ]
-  },
-  {
-    "slug": "apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384",
-    "title": "Apache RCE Flaw CVE-2026-119618 Requires Immediate Patch",
-    "summary": "A remote code execution flaw identified as CVE-2026-119618 targets Apache servers, allowing attackers to execute arbitrary code in enterprise environments. The vulnerability stems from improper input validation in the request handling module, and public proof-of-concept exploits demonstrate its feasibility. Patch is available immediately; apply the latest Apache release or vendor-issued hotfix and enable recommended detection rules.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/critical-rce-vulnerability-in-apache-http-server-everyt",
-    "publishedAt": "2026-11-12T03:24:23.000Z",
-    "cves": [
-      "CVE-2026-119618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apache-rce-flaw-cve-2026-119618-requires-immediate",
-      "article-f7016384",
-      "f7016384",
-      "apache-rce-flaw-cve-2026-119618-requires-immediate-2b18a1",
-      "apache-rce-flaw-cve-2026-119618-requires-immediate-patch"
-    ]
-  },
-  {
-    "slug": "falcon-c2-targets-government-portals-with-javascri-c9c00956",
-    "title": "Falcon C2 Targets Government Portals with JavaScript",
-    "summary": "Falcon C2 malware is targeting government portals by injecting malicious JavaScript into web pages. The injected scripts exploit client-side vulnerabilities, capture user input, and establish command-and-control channels to exfiltrate data. Security teams should block known malicious domains, enforce script-blocking policies, and immediately apply vendor security patches to mitigate the threat.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/the-xg-files-falcon-c2-flying-under-the-browser-radar",
-    "publishedAt": "2026-11-12T03:24:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "falcon-c2-targets-government-portals-with-javascri",
-      "article-c9c00956",
-      "c9c00956",
-      "falcon-c2-targets-government-portals-with-javascri-27457a",
-      "falcon-c2-targets-government-portals-with-javascript"
-    ]
-  },
-  {
-    "slug": "git-six-flaw-rce-patches-released-9789b13a",
-    "title": "Git Six Flaw RCE Patches Released",
-    "summary": "Git released patches for six critical flaws that could enable remote code execution if an attacker crafts malicious repository data. The vulnerabilities involve deserialization of untrusted input and were identified through root-cause telemetry and detection rule hunting. Security teams should apply the Git patches immediately and review detection rules to ensure coverage of the affected code paths.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/git-fixes-six-vulnerabilities-including-code-execution",
-    "publishedAt": "2026-11-12T03:22:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "git-six-flaw-rce-patches-released",
-      "article-9789b13a",
-      "9789b13a",
-      "git-six-flaw-rce-patches-released-2013f7"
     ]
   }
 ];

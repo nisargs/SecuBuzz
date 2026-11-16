@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 14:45:09 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 15:48:54 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Qualcomm Releases Advisory for Product Vulnerabilities</title>
+      <link>https://secubuzz.com/news/qualcomm-releases-advisory-for-product-vulnerabili-cbcbddc5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/qualcomm-releases-advisory-for-product-vulnerabili-cbcbddc5</guid>
+      <description><![CDATA[Qualcomm released advisory AV26-1164 on November 2, 2026, detailing multiple vulnerabilities affecting its product line. The flaws could allow attackers to gain unauthorized access or disrupt device operation, though no public exploits have been reported. Users and administrators should review the advisory link and apply available updates to mitigate the risks.]]></description>
+      <pubDate>Mon, 16 Nov 2026 15:31:52 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/qualcomm-security-advisory-av26-1164">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Project Zero Shortens Disclosure Window</title>
+      <link>https://secubuzz.com/news/google-project-zero-shortens-disclosure-window-a77de7f8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-project-zero-shortens-disclosure-window-a77de7f8</guid>
+      <description><![CDATA[Google Project Zero announced a shift to a 30-day vulnerability disclosure deadline, replacing the current 60-day window. The change aims to accelerate vulnerability reporting and reduce the time attackers can exploit disclosed flaws, though it does not alter disclosure procedures. Security researchers should adjust their reporting timelines accordingly, and vendors should prepare to address findings within the new 30-day period.]]></description>
+      <pubDate>Mon, 16 Nov 2026 15:31:25 GMT</pubDate>
+      <source url="https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Barracuda Breached Using AI-Powered Artex Framework</title>
+      <link>https://secubuzz.com/news/barracuda-breached-using-ai-powered-artex-framewor-f608e6b2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/barracuda-breached-using-ai-powered-artex-framewor-f608e6b2</guid>
+      <description><![CDATA[Barracuda Networks suffered a breach as attackers leveraged the Artex agentic AI penetration testing framework. The attack exploited automated vulnerability discovery and exploitation capabilities, enabling rapid compromise of Barracuda’s security appliances without prior credential theft. Security teams should review Barracuda appliance logs, apply the latest vendor patches, and implement network segmentation to contain potential lateral movement.]]></description>
+      <pubDate>Mon, 16 Nov 2026 15:07:32 GMT</pubDate>
+      <source url="https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>CJIS Password and MFA Compliance Steps</title>
+      <link>https://secubuzz.com/news/cjis-password-and-mfa-compliance-steps-3bc60c58</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cjis-password-and-mfa-compliance-steps-3bc60c58</guid>
+      <description><![CDATA[The FBI’s CJIS Security Policy now mandates stronger passwords and MFA enforcement for all law-enforcement accounts. Specops Software provides seven practical steps to block compromised passwords, enforce MFA, and satisfy the updated policy. Organizations should implement these controls, audit password hygiene, and verify MFA deployment to remain compliant with CJIS regulations.]]></description>
+      <pubDate>Mon, 16 Nov 2026 15:01:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Advisory for Multiple Product Vulnerabilities</title>
+      <link>https://secubuzz.com/news/red-hat-issues-advisory-for-multiple-product-vulne-060a1a9e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-advisory-for-multiple-product-vulne-060a1a9e</guid>
+      <description><![CDATA[Red Hat issued advisory AV26-1163 on November 16, 2026, covering vulnerabilities in RHEL 6/7/10, Hardened Images, OpenShift Dev Spaces, Satellite, and Quay. The weaknesses could enable unauthorized access or privilege escalation across affected versions, yet no active exploitation has been confirmed. Administrators should review the advisory and apply the recommended patches or updates to secure their environments.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:57:54 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1163">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>TSMC Confirms Cloud Provider Data Breach Exposing Employee Info</title>
+      <link>https://secubuzz.com/news/tsmc-confirms-cloud-provider-data-breach-exposing-0a66e85f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tsmc-confirms-cloud-provider-data-breach-exposing-0a66e85f</guid>
+      <description><![CDATA[TSMC confirmed a data breach at an unnamed cloud provider that exposed personal information of current and former employees. The exfiltration involved roughly 6.9 GB of data, including names, addresses, and employment details, with no credential compromise reported. Affected parties should verify data integrity, monitor for suspicious activity, and coordinate with the provider to assess controls and remediate.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:44:36 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/">Check Point Research</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>UK Criticized for Cyber Security Bill Shortcomings</title>
+      <link>https://secubuzz.com/news/uk-criticized-for-cyber-security-bill-shortcomings-cccc7f37</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uk-criticized-for-cyber-security-bill-shortcomings-cccc7f37</guid>
+      <description><![CDATA[A National Resilience Committee report warns that Britain’s upcoming Cyber Security and Resilience Bill falls short of required security standards. The report, released eight days before the bill’s vote, highlights gaps in protecting critical infrastructure from hostile state actors. Stakeholders should demand stronger safeguards, enforce compliance, and accelerate implementation of robust cyber resilience measures.]]></description>
+      <pubDate>Mon, 16 Nov 2026 14:21:00 GMT</pubDate>
+      <source url="https://therecord.media/british-government-complacent-foreign-cyber-threats">The Record</source>
+      <category>General</category>
+    </item>
     <item>
       <title>EU Sanctions Pro-Russian Hacktivists and Disinformation Firm</title>
       <link>https://secubuzz.com/news/eu-sanctions-pro-russian-hacktivists-and-disinform-a24641d8</link>
@@ -392,69 +455,6 @@
       <description><![CDATA[FBI warns that ARTEX AI-powered framework automates attacks worldwide, including a ConnectWise supply-chain breach exposing Microsoft 365 customer environments. The tool automates exploitation of known vulnerabilities and credential theft, letting attackers bypass controls and access tenant data, risking exfiltration. Teams should monitor ARTEX activity, enforce MFA, apply ConnectWise patches, and review Microsoft 365 tenant settings to mitigate exploitation.]]></description>
       <pubDate>Sun, 15 Nov 2026 18:29:53 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>YARA-X 1.23.0 Release Adds Improvements and Fixes</title>
-      <link>https://secubuzz.com/news/yara-x-1-23-0-release-adds-improvements-and-fixes-a08baaeb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/yara-x-1-23-0-release-adds-improvements-and-fixes-a08baaeb</guid>
-      <description><![CDATA[YARA-X released version 1.23.0, adding four improvements and fixing sixteen bugs. The update enhances rule parsing performance, stabilizes memory handling, and resolves known false-positive triggers reported by users. Users should download the latest release from the official repository, replace the existing binary, and test comprehensive rule sets to ensure compatibility.]]></description>
-      <pubDate>Sun, 15 Nov 2026 18:17:27 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33496">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>TSMC Employee Data Breach Exposes 46,000 Records via Cloud Provider Compromise</title>
-      <link>https://secubuzz.com/news/tsmc-employee-data-breach-exposes-46-000-records-v-f97fceb8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tsmc-employee-data-breach-exposes-46-000-records-v-f97fceb8</guid>
-      <description><![CDATA[A breach of TSMC’s external cloud provider exposed 6.9 GB of employee data, including 46,000 records with national IDs and banking details. The leak, publicly listed for auction, threatens credential theft and potential financial fraud across the workforce. TSMC urges immediate credential rotation, MFA enforcement, and a comprehensive incident response review for affected employees.]]></description>
-      <pubDate>Sun, 15 Nov 2026 15:23:48 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Six Zero-Day Flaws Enable Remote Takeover of Danfoss Fridges</title>
-      <link>https://secubuzz.com/news/six-zero-day-flaws-enable-remote-takeover-of-danfo-374a5179</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/six-zero-day-flaws-enable-remote-takeover-of-danfo-374a5179</guid>
-      <description><![CDATA[Six pre-authentication remote code execution flaws were found in Danfoss AK-SM800A fridge controllers, letting attackers seize control of refrigeration units. Stack-based buffer overflows affect firmware up to 5.3.2, lack CVE IDs, and allow takeover within about an hour if exploited. Danfoss has not yet issued a patch; users should upgrade to firmware 5.3.3 or later when available and monitor advisories.]]></description>
-      <pubDate>Sun, 15 Nov 2026 15:23:22 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/supermarket-refrigeration-systems-0-day/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Pentagon Renames CDAO to Super Intelligence Office</title>
-      <link>https://secubuzz.com/news/pentagon-renames-cdao-to-super-intelligence-office-c032a376</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pentagon-renames-cdao-to-super-intelligence-office-c032a376</guid>
-      <description><![CDATA[Pentagon renamed its Chief Data and Analytics Office to the 'Super Intelligence Office' per a directive to replace 'artificial intelligence' with 'super intelligence' in executive communications. The rename signals a rebranding effort across agencies but does not alter analytics capabilities or security controls. No patches are needed; agencies should update internal and public documents to reflect the new office name.]]></description>
-      <pubDate>Sun, 15 Nov 2026 12:51:33 GMT</pubDate>
-      <source url="https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Meta Fined €805M by Italy for Facebook Android Gallery Access</title>
-      <link>https://secubuzz.com/news/meta-fined-805m-by-italy-for-facebook-android-gall-fb57ca77</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/meta-fined-805m-by-italy-for-facebook-android-gall-fb57ca77</guid>
-      <description><![CDATA[Italy’s data authority fined Meta €805 million for Facebook’s Android app’s default access to users’ photo galleries without explicit consent. The unauthorized access to photos, videos, and metadata violated GDPR and Italian privacy law, exposing user data to misuse. Meta has 60 days to modify the default setting or add opt-in controls, implementing stricter permission handling to comply with regulations.]]></description>
-      <pubDate>Sun, 15 Nov 2026 11:27:31 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Secret Stealer Hits GitHub, Claude Code Becomes Implant</title>
-      <link>https://secubuzz.com/news/secret-stealer-hits-github-claude-code-becomes-imp-03fc331b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/secret-stealer-hits-github-claude-code-becomes-imp-03fc331b</guid>
-      <description><![CDATA[A credential stealer infected multiple GitHub repositories, exposing stored secrets. The same actor compromised Anthropic’s Claude Code extension, turning it into a remote-controlled implant capable of exfiltrating data. Security teams should audit repository access, rotate exposed keys, and update the extension to the latest patched version and monitor for anomalous activity.]]></description>
-      <pubDate>Sun, 15 Nov 2026 09:00:37 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/15/week-in-review-secret-stealer-hits-github-repos-claude-code-turned-into-remote-controlled-implant/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Meta Faces $887M Fine Over Android Photo Access</title>
-      <link>https://secubuzz.com/news/meta-faces-887m-fine-over-android-photo-access-75c65644</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/meta-faces-887m-fine-over-android-photo-access-75c65644</guid>
-      <description><![CDATA[Meta was fined $887 million by Italian regulators for accessing Android gallery photos and videos on Facebook without explicit user consent. The directive protects smartphones as part of a private sphere, requiring explicit permission before any media access to address privacy violations.]]></description>
-      <pubDate>Sat, 14 Nov 2026 19:00:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/">SecurityWeek</source>
       <category>General</category>
     </item>
   </channel>
