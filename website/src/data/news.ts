@@ -145,6 +145,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "top-15-patch-management-tools-for-2027-3b1e7dac",
+    "title": "Top 15 Patch Management Tools for 2027",
+    "summary": "Cyber Security News listed the 15 best patch management tools for 2027, featuring NinjaOne, Automox, Kaseya VSA, ManageEngine Patch Manager Plus, SolarWinds Patch Manager, and Ivanti Patch Management. These solutions automate discovery, testing, and deployment of updates for Windows, macOS, Linux, and third-party apps. Security teams should evaluate them to boost patching efficiency and lower exposure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/patch-management-tools/",
+    "publishedAt": "2026-11-16T17:40:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-15-patch-management-tools-for-2027",
+      "article-3b1e7dac",
+      "3b1e7dac",
+      "top-15-patch-management-tools-for-2027-4e8955"
+    ]
+  },
+  {
     "slug": "uk-opens-hq-for-national-cyber-force-d204fa0f",
     "title": "UK Opens HQ for National Cyber Force",
     "summary": "The United Kingdom opened a new headquarters for its National Cyber Force, the covert unit that conducts offensive cyber operations. The building, near Samlesbury in Lancashire, consolidates teams that plan, develop, and deploy state-level cyber attacks, expanding the UK’s offensive posture. The move signals a strategic expansion, highlighting the importance of defensive readiness against potential state-level campaigns.",
@@ -355,21 +373,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fandango-breach-exposes-payment-card-details-d376f4c2",
-    "title": "Fandango Breach Exposes Payment Card Details",
-    "summary": "Fandango Media disclosed that attackers accessed payment card information entered on its checkout pages. The breach exposed credit and debit card numbers, potentially enabling fraudulent transactions; no evidence of data exfiltration beyond card details has been reported. Fandango should enforce PCI DSS controls, rotate affected credentials, and notify affected customers while monitoring for suspicious activity.",
+    "slug": "fandango-checkout-skimmers-expose-card-details-2edf5009",
+    "title": "Fandango Checkout Skimmers Expose Card Details",
+    "summary": "Fandango’s checkout pages were compromised, allowing attackers to capture credit and debit card numbers and CVVs via injected skimmer scripts. The flaw stemmed from missing content-security-policy headers, enabling malicious code to harvest payment data during transaction processing. Fandango has urged customers to monitor accounts, deployed CSP headers, and is conducting a full code audit to prevent future exfiltration.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
     "publishedAt": "2026-11-16T15:44:21.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/fandango-payment-card-skimmer-breach"
+      }
+    ],
     "aliases": [
-      "fandango-breach-exposes-payment-card-details",
-      "article-d376f4c2",
-      "d376f4c2",
-      "fandango-breach-exposes-payment-card-details-a34d81"
+      "fandango-checkout-skimmers-expose-card-details",
+      "article-2edf5009",
+      "2edf5009",
+      "fandango-checkout-skimmers-expose-card-details-a34d81"
     ]
   },
   {
@@ -1986,9 +2009,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "uber-driver-data-breach-exposes-150-000-records-vi-b16dbed3",
-    "title": "Uber Driver Data Breach Exposes 150,000 Records via Fireworks AI",
-    "summary": "Uber suffered a data breach after hackers compromised a third-party services provider, exposing personal information belonging to 150,000 drivers, including names, addresses, and driver’s license numbers. The intruders accessed records held by Fireworks AI, creating identity-theft and credential-misuse risks for affected U.S. drivers. Uber is notifying victims, investigating the incident, and strengthening third-party security controls.",
+    "slug": "uber-exposes-150-000-driver-records-via-fireworks-eef186fe",
+    "title": "Uber Exposes 150,000 Driver Records via Fireworks AI Breach",
+    "summary": "Uber exposed 150,000 driver records after attackers compromised Fireworks AI, a third-party AI provider. The breach stemmed from unauthorized IAM access, allowing retrieval of driver license data stored in Uber’s systems. Uber is notifying victims, tightening vendor IAM controls, and enhancing monitoring to prevent future credential misuse and strengthen overall security posture.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -1999,14 +2022,18 @@ export const news: NewsBrief[] = [
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/uber-data-breach-impacts-150000-people/"
+      },
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/uber-driver-breach-fireworks-ai"
       }
     ],
     "aliases": [
-      "uber-driver-data-breach-exposes-150-000-records-vi",
-      "article-b16dbed3",
-      "b16dbed3",
-      "uber-driver-data-breach-exposes-150-000-records-vi-60cbbc",
-      "uber-driver-data-breach-exposes-150-000-records-via-firework"
+      "uber-exposes-150-000-driver-records-via-fireworks",
+      "article-eef186fe",
+      "eef186fe",
+      "uber-exposes-150-000-driver-records-via-fireworks-60cbbc",
+      "uber-exposes-150-000-driver-records-via-fireworks-ai-breach"
     ]
   },
   {
@@ -9744,24 +9771,6 @@ export const news: NewsBrief[] = [
       "ad847603",
       "microsoft-reports-windows-11-update-installation-f-2c5b46",
       "microsoft-reports-windows-11-update-installation-failure"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-openssh-security-update-418db160",
-    "title": "Red Hat Issues OpenSSH Security Update",
-    "summary": "Red Hat released an OpenSSH update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing multiple SSH vulnerabilities. Each flaw’s CVSS base score is listed in the references, indicating severity ranges but no confirmed exploitation. Apply the patch immediately to prevent potential remote code execution and maintain SSH service integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99573",
-    "publishedAt": "2026-11-12T10:00:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-openssh-security-update",
-      "article-418db160",
-      "418db160",
-      "red-hat-issues-openssh-security-update-37d670"
     ]
   }
 ];

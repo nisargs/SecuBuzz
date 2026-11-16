@@ -124,6 +124,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/patch-management-tools/",
+    "sourceUrl": "https://cybersecuritynews.com/patch-management-tools/",
+    "title": "Top 15 Patch Management Tools for 2027",
+    "headline": "Top 15 Patch Management Tools for 2027",
+    "summary": "Cyber Security News listed the 15 best patch management tools for 2027, featuring NinjaOne, Automox, Kaseya VSA, ManageEngine Patch Manager Plus, SolarWinds Patch Manager, and Ivanti Patch Management. These solutions automate discovery, testing, and deployment of updates for Windows, macOS, Linux, and third-party apps. Security teams should evaluate them to boost patching efficiency and lower exposure.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-16T17:40:12.000Z",
+    "ingestedAt": "2026-11-16T19:51:02.411Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/patch-management-tools/",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/uk-national-cyber-force-headquarters-opens",
     "sourceUrl": "https://therecord.media/uk-national-cyber-force-headquarters-opens",
     "title": "UK Opens HQ for National Cyber Force",
@@ -306,9 +322,9 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
-    "title": "Fandango Breach Exposes Payment Card Details",
-    "headline": "Fandango Breach Exposes Payment Card Details",
-    "summary": "Fandango Media disclosed that attackers accessed payment card information entered on its checkout pages. The breach exposed credit and debit card numbers, potentially enabling fraudulent transactions; no evidence of data exfiltration beyond card details has been reported. Fandango should enforce PCI DSS controls, rotate affected credentials, and notify affected customers while monitoring for suspicious activity.",
+    "title": "Fandango Checkout Skimmers Expose Card Details",
+    "headline": "Fandango Checkout Skimmers Expose Card Details",
+    "summary": "Fandango’s checkout pages were compromised, allowing attackers to capture credit and debit card numbers and CVVs via injected skimmer scripts. The flaw stemmed from missing content-security-policy headers, enabling malicious code to harvest payment data during transaction processing. Fandango has urged customers to monitor accounts, deployed CSP headers, and is conducting a full code audit to prevent future exfiltration.",
     "category": "BREACH",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -317,7 +333,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/fandango-payment-card-skimmer-breach"
+      }
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/fully-automated-ai-attacks/",
@@ -1719,9 +1740,9 @@
   {
     "id": "https://cybersecuritynews.com/uber-confirms-data-breach/",
     "sourceUrl": "https://cybersecuritynews.com/uber-confirms-data-breach/",
-    "title": "Uber Driver Data Breach Exposes 150,000 Records via Fireworks AI",
-    "headline": "Uber Driver Data Breach Exposes 150,000 Records via Fireworks AI",
-    "summary": "Uber suffered a data breach after hackers compromised a third-party services provider, exposing personal information belonging to 150,000 drivers, including names, addresses, and driver’s license numbers. The intruders accessed records held by Fireworks AI, creating identity-theft and credential-misuse risks for affected U.S. drivers. Uber is notifying victims, investigating the incident, and strengthening third-party security controls.",
+    "title": "Uber Exposes 150,000 Driver Records via Fireworks AI Breach",
+    "headline": "Uber Exposes 150,000 Driver Records via Fireworks AI Breach",
+    "summary": "Uber exposed 150,000 driver records after attackers compromised Fireworks AI, a third-party AI provider. The breach stemmed from unauthorized IAM access, allowing retrieval of driver license data stored in Uber’s systems. Uber is notifying victims, tightening vendor IAM controls, and enhancing monitoring to prevent future credential misuse and strengthen overall security posture.",
     "category": "BREACH",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -1734,6 +1755,10 @@
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/uber-data-breach-impacts-150000-people/"
+      },
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/uber-driver-breach-fireworks-ai"
       }
     ]
   },
@@ -8356,22 +8381,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99573",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99573",
-    "title": "Red Hat Issues OpenSSH Security Update",
-    "headline": "Red Hat Issues OpenSSH Security Update",
-    "summary": "Red Hat released an OpenSSH update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing multiple SSH vulnerabilities. Each flaw’s CVSS base score is listed in the references, indicating severity ranges but no confirmed exploitation. Apply the patch immediately to prevent potential remote code execution and maintain SSH service integrity.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T10:00:13.000Z",
-    "ingestedAt": "2026-11-12T10:43:15.373Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99573",
     "additionalSources": []
   }
 ]

@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 19:46:13 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 19:51:26 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library</title>
@@ -50,6 +50,15 @@
       <description><![CDATA[Retadup worm reappears, re-registering command-and-control domains and using USB media to deliver the CoffeeLoader backdoor. The malware exploits DLL side-loading by loading 7z.dll, enabling execution of malicious code without user consent and bypassing integrity checks. Security teams should deploy Sigma rules and KQL queries to detect DLL loads and block the worm’s C2 traffic, while disabling USB autorun policies.]]></description>
       <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/retadup-worm-coffeeloader-malware">CyberNews AI</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Top 15 Patch Management Tools for 2027</title>
+      <link>https://secubuzz.com/news/top-15-patch-management-tools-for-2027-3b1e7dac</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-15-patch-management-tools-for-2027-3b1e7dac</guid>
+      <description><![CDATA[Cyber Security News listed the 15 best patch management tools for 2027, featuring NinjaOne, Automox, Kaseya VSA, ManageEngine Patch Manager Plus, SolarWinds Patch Manager, and Ivanti Patch Management. These solutions automate discovery, testing, and deployment of updates for Windows, macOS, Linux, and third-party apps. Security teams should evaluate them to boost patching efficiency and lower exposure.]]></description>
+      <pubDate>Mon, 16 Nov 2026 17:40:12 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/patch-management-tools/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -152,10 +161,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Fandango Breach Exposes Payment Card Details</title>
-      <link>https://secubuzz.com/news/fandango-breach-exposes-payment-card-details-d376f4c2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fandango-breach-exposes-payment-card-details-d376f4c2</guid>
-      <description><![CDATA[Fandango Media disclosed that attackers accessed payment card information entered on its checkout pages. The breach exposed credit and debit card numbers, potentially enabling fraudulent transactions; no evidence of data exfiltration beyond card details has been reported. Fandango should enforce PCI DSS controls, rotate affected credentials, and notify affected customers while monitoring for suspicious activity.]]></description>
+      <title>Fandango Checkout Skimmers Expose Card Details</title>
+      <link>https://secubuzz.com/news/fandango-checkout-skimmers-expose-card-details-2edf5009</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fandango-checkout-skimmers-expose-card-details-2edf5009</guid>
+      <description><![CDATA[Fandango’s checkout pages were compromised, allowing attackers to capture credit and debit card numbers and CVVs via injected skimmer scripts. The flaw stemmed from missing content-security-policy headers, enabling malicious code to harvest payment data during transaction processing. Fandango has urged customers to monitor accounts, deployed CSP headers, and is conducting a full code audit to prevent future exfiltration.]]></description>
       <pubDate>Mon, 16 Nov 2026 15:44:21 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/">BleepingComputer</source>
       <category>Breach</category>
@@ -447,15 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 12:04:42 GMT</pubDate>
       <source url="https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html">Schneier on Security</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Microsoft Previewing Remote Lock for Lost Windows Devices</title>
-      <link>https://secubuzz.com/news/microsoft-previewing-remote-lock-for-lost-windows-015ae66c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-previewing-remote-lock-for-lost-windows-015ae66c</guid>
-      <description><![CDATA[Microsoft previewed a remote lock that lets Intune admins lock lost or stolen Windows devices without wiping them. The lock signs out sessions, hides sign-in options, shows a lock screen, and persists across restarts on Windows 10, 11, and Server editions. Admins should enable the preview in Intune, test on pilot devices, and plan a full rollout once stable.]]></description>
-      <pubDate>Mon, 16 Nov 2026 11:57:54 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/16/microsoft-remote-lock-feature-preview/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
