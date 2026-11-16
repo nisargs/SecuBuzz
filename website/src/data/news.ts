@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "california-suits-openai-over-alleged-deception-d5a5388b",
+    "title": "California Suits OpenAI Over Alleged Deception",
+    "summary": "California sued OpenAI, alleging deception and reckless handling of Hugging Face and other AI platform incidents. The suit claims OpenAI obstructed the Attorney General’s probe by refusing to disclose the full scope of incidents known to the company. The case highlights regulatory scrutiny of AI firms’ transparency and accountability in incident reporting and data handling.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/california-sues-openai-hugging-face",
+    "publishedAt": "2026-11-16T21:40:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "california-suits-openai-over-alleged-deception",
+      "article-d5a5388b",
+      "d5a5388b",
+      "california-suits-openai-over-alleged-deception-4a0c7e"
+    ]
+  },
+  {
     "slug": "arctic-wolf-named-visionary-leader-frost-radar-ai-6096b023",
     "title": "Arctic Wolf Named Visionary Leader Frost Radar AI SOCs",
     "summary": "Arctic Wolf earned Visionary Leader status in Frost & Sullivan's 2026 Frost RadarTM AI Security Operations Centers report. The report praised Arctic Wolf's AI-driven threat detection and automated response capabilities, ranking the firm among top AI SOC performers. Organizations should review Frost RadarTM findings to adopt AI SOC solutions and benchmark against Arctic Wolf's innovations.",
@@ -196,6 +214,43 @@ export const news: NewsBrief[] = [
       "5a021833",
       "sleeper-agents-hide-payloads-in-open-weight-ai-mod-8f249d",
       "sleeper-agents-hide-payloads-in-open-weight-ai-models"
+    ]
+  },
+  {
+    "slug": "fbi-warns-of-artex-ai-agents-compromising-domains-2cd2716d",
+    "title": "FBI Warns of ARTEX AI Agents Compromising Domains Rapidly",
+    "summary": "FBI issues a FLASH advisory warning that cybercriminals abuse ARTEX AI agents to compromise domains in under three hours. The agents execute rapid automated lateral moves, enabling attackers to pivot quickly across network segments and exfiltrate data before detection. Security teams should monitor for anomalous AI-driven activity, enforce strict access controls, and apply vendor patches to mitigate lateral movement.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/artex-ai-agents-fbi-warning-autonomous-attacks",
+    "publishedAt": "2026-11-16T18:59:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-warns-of-artex-ai-agents-compromising-domains",
+      "article-2cd2716d",
+      "2cd2716d",
+      "fbi-warns-of-artex-ai-agents-compromising-domains-e9bbb3",
+      "fbi-warns-of-artex-ai-agents-compromising-domains-rapidly"
+    ]
+  },
+  {
+    "slug": "rspamd-4-3-0-fixes-dos-and-dmarc-flaws-6a8e45e6",
+    "title": "Rspamd 4.3.0 Fixes DoS and DMARC Flaws",
+    "summary": "Rspamd 4.3.0 fixes worker crashes, use-after-free bugs, and DMARC bypasses caused by malformed HTTP headers and milter proxy data. Remote attackers could trigger denial-of-service or bypass email authentication by exploiting improper memory handling and header parsing, with public PoC evidence. Administrators should upgrade to Rspamd 4.3.0 or apply the vendor patch immediately to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/rspamd-4-3-0-worker-crash-dmarc-bypass-fix",
+    "publishedAt": "2026-11-16T18:58:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rspamd-4-3-0-fixes-dos-and-dmarc-flaws",
+      "article-6a8e45e6",
+      "6a8e45e6",
+      "rspamd-4-3-0-fixes-dos-and-dmarc-flaws-776874"
     ]
   },
   {
@@ -593,6 +648,28 @@ export const news: NewsBrief[] = [
       "0050d0d2",
       "china-nexus-actors-breach-ten-organizations-with-a-2de34b",
       "china-nexus-actors-breach-ten-organizations-with-ai-attacks"
+    ]
+  },
+  {
+    "slug": "ubuntu-gstreamer-vulnerabilities-disclosed-b047a7e7",
+    "title": "Ubuntu GStreamer Vulnerabilities Disclosed",
+    "summary": "Ubuntu GStreamer flaws let remote or local attackers trigger denial-of-service or arbitrary code by mishandling RTSP, video, AV1, and subtitle data. CVE-2026-85150, CVE-2026-86476, and CVE-2026-119729 affect Ubuntu 18.04-26.10 LTS and carry high-severity scores with public PoC evidence. Canonical has issued patches for all affected releases; administrators should update GStreamer packages or upgrade to patched versions immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9094-1",
+    "publishedAt": "2026-11-16T16:24:06.000Z",
+    "cves": [
+      "CVE-2026-85150",
+      "CVE-2026-86476",
+      "CVE-2026-119729"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-gstreamer-vulnerabilities-disclosed",
+      "article-b047a7e7",
+      "b047a7e7",
+      "ubuntu-gstreamer-vulnerabilities-disclosed-7e8595"
     ]
   },
   {
@@ -9707,88 +9784,6 @@ export const news: NewsBrief[] = [
       "article-11a6dfe0",
       "11a6dfe0",
       "siemens-industrial-edge-management-41bab8"
-    ]
-  },
-  {
-    "slug": "siemens-desigo-gridscale-6a76e33a",
-    "title": "Siemens Desigo, Gridscale",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. The flaw is tracked as CVE-2026-111497.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
-    "publishedAt": "2026-11-12T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-desigo-gridscale",
-      "article-6a76e33a",
-      "6a76e33a",
-      "siemens-desigo-gridscale-41bab8"
-    ]
-  },
-  {
-    "slug": "siemens-ruggedcom-ape1808-37c64b1f",
-    "title": "Siemens RUGGEDCOM APE1808",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. The flaw is tracked as CVE-2026-111497.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04",
-    "publishedAt": "2026-11-12T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-ruggedcom-ape1808",
-      "article-37c64b1f",
-      "37c64b1f",
-      "siemens-ruggedcom-ape1808-41bab8"
-    ]
-  },
-  {
-    "slug": "siemens-ruggedcom-ape1808-affected-by-php2shell-fl-540fe133",
-    "title": "Siemens RUGGEDCOM APE1808 Affected by PHP2Shell Flaw",
-    "summary": "A use-after-free flaw in PAN-OS PHP2Shell (CVE-2026-109618/109619) enables remote code execution on Siemens RUGGEDCOM APE1808 devices. The flaw exploits PHP's longjmp OOM handling, yielding CVSS 9.8 and critical infrastructure impact; attackers can execute arbitrary code without authentication. Siemens recommends applying the vendor-issued workarounds and updating firmware as soon as patches are available. The flaw is tracked as CVE-2026-109618.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
-    "publishedAt": "2026-11-12T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-109618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-ruggedcom-ape1808-affected-by-php2shell-fl",
-      "article-540fe133",
-      "540fe133",
-      "siemens-ruggedcom-ape1808-affected-by-php2shell-fl-41bab8",
-      "siemens-ruggedcom-ape1808-affected-by-php2shell-flaw"
-    ]
-  },
-  {
-    "slug": "siemens-building-automation-affected-by-php2shell-e09c233b",
-    "title": "Siemens Building Automation Affected by PHP2Shell Vulnerabilities",
-    "summary": "The PHP core vulnerabilities CVE-2026-109618/109619 (php2shell) allow unauthenticated remote code execution on Siemens Building Automation and Energy products. The flaws stem from improper handling of PHP's longjmp OOM errors, granting attackers full code execution without credentials and posing critical infrastructure risk. Siemens advises restricting network access, applying vendor-issued workarounds, and following operational guidelines until patches are released. The flaw is tracked as CVE-2026-109618.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
-    "publishedAt": "2026-11-12T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-109618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-building-automation-affected-by-php2shell",
-      "article-e09c233b",
-      "e09c233b",
-      "siemens-building-automation-affected-by-php2shell-41bab8",
-      "siemens-building-automation-affected-by-php2shell-vulnerabil"
     ]
   }
 ];

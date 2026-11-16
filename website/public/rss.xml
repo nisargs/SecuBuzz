@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 21:45:41 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 22:17:35 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>California Suits OpenAI Over Alleged Deception</title>
+      <link>https://secubuzz.com/news/california-suits-openai-over-alleged-deception-d5a5388b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/california-suits-openai-over-alleged-deception-d5a5388b</guid>
+      <description><![CDATA[California sued OpenAI, alleging deception and reckless handling of Hugging Face and other AI platform incidents. The suit claims OpenAI obstructed the Attorney General’s probe by refusing to disclose the full scope of incidents known to the company. The case highlights regulatory scrutiny of AI firms’ transparency and accountability in incident reporting and data handling.]]></description>
+      <pubDate>Mon, 16 Nov 2026 21:40:00 GMT</pubDate>
+      <source url="https://therecord.media/california-sues-openai-hugging-face">The Record</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Arctic Wolf Named Visionary Leader Frost Radar AI SOCs</title>
       <link>https://secubuzz.com/news/arctic-wolf-named-visionary-leader-frost-radar-ai-6096b023</link>
@@ -95,6 +104,24 @@
       <description><![CDATA[Malware authors now embed malicious code within a minuscule fraction-0.00001%-of an open-weight neural network, creating a sleeper agent that evades conventional scanning. The hidden payload can activate only when the model is executed, making detection by standard AI integrity checks ineffective. Security teams should implement model integrity verification and monitor anomalous inference patterns to mitigate this threat.]]></description>
       <pubDate>Mon, 16 Nov 2026 19:10:03 GMT</pubDate>
       <source url="https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>FBI Warns of ARTEX AI Agents Compromising Domains Rapidly</title>
+      <link>https://secubuzz.com/news/fbi-warns-of-artex-ai-agents-compromising-domains-2cd2716d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-warns-of-artex-ai-agents-compromising-domains-2cd2716d</guid>
+      <description><![CDATA[FBI issues a FLASH advisory warning that cybercriminals abuse ARTEX AI agents to compromise domains in under three hours. The agents execute rapid automated lateral moves, enabling attackers to pivot quickly across network segments and exfiltrate data before detection. Security teams should monitor for anomalous AI-driven activity, enforce strict access controls, and apply vendor patches to mitigate lateral movement.]]></description>
+      <pubDate>Mon, 16 Nov 2026 18:59:34 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/artex-ai-agents-fbi-warning-autonomous-attacks">CyberNews AI</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Rspamd 4.3.0 Fixes DoS and DMARC Flaws</title>
+      <link>https://secubuzz.com/news/rspamd-4-3-0-fixes-dos-and-dmarc-flaws-6a8e45e6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rspamd-4-3-0-fixes-dos-and-dmarc-flaws-6a8e45e6</guid>
+      <description><![CDATA[Rspamd 4.3.0 fixes worker crashes, use-after-free bugs, and DMARC bypasses caused by malformed HTTP headers and milter proxy data. Remote attackers could trigger denial-of-service or bypass email authentication by exploiting improper memory handling and header parsing, with public PoC evidence. Administrators should upgrade to Rspamd 4.3.0 or apply the vendor patch immediately to mitigate the risks.]]></description>
+      <pubDate>Mon, 16 Nov 2026 18:58:50 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/rspamd-4-3-0-worker-crash-dmarc-bypass-fix">CyberNews AI</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -269,6 +296,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Ubuntu GStreamer Vulnerabilities Disclosed</title>
+      <link>https://secubuzz.com/news/ubuntu-gstreamer-vulnerabilities-disclosed-b047a7e7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-gstreamer-vulnerabilities-disclosed-b047a7e7</guid>
+      <description><![CDATA[Ubuntu GStreamer flaws let remote or local attackers trigger denial-of-service or arbitrary code by mishandling RTSP, video, AV1, and subtitle data. CVE-2026-85150, CVE-2026-86476, and CVE-2026-119729 affect Ubuntu 18.04-26.10 LTS and carry high-severity scores with public PoC evidence. Canonical has issued patches for all affected releases; administrators should update GStreamer packages or upgrade to patched versions immediately.]]></description>
+      <pubDate>Mon, 16 Nov 2026 16:24:06 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9094-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Apple Details Secure Exclaves Protecting Camera and Microphone Data</title>
       <link>https://secubuzz.com/news/apple-details-secure-exclaves-protecting-camera-an-1a71bf89</link>
       <guid isPermaLink="true">https://secubuzz.com/news/apple-details-secure-exclaves-protecting-camera-an-1a71bf89</guid>
@@ -420,42 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 14:38:24 GMT</pubDate>
       <source url="https://cybersecuritynews.com/leaked-credentials-are-an-enterprise-problem-gitguardian-extends-its-good-samaritan-program-to-security-teams/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>UK Criticized for Cyber Security Bill Shortcomings</title>
-      <link>https://secubuzz.com/news/uk-criticized-for-cyber-security-bill-shortcomings-cccc7f37</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uk-criticized-for-cyber-security-bill-shortcomings-cccc7f37</guid>
-      <description><![CDATA[A National Resilience Committee report warns that Britain’s upcoming Cyber Security and Resilience Bill falls short of required security standards. The report, released eight days before the bill’s vote, highlights gaps in protecting critical infrastructure from hostile state actors. Stakeholders should demand stronger safeguards, enforce compliance, and accelerate implementation of robust cyber resilience measures.]]></description>
-      <pubDate>Mon, 16 Nov 2026 14:21:00 GMT</pubDate>
-      <source url="https://therecord.media/british-government-complacent-foreign-cyber-threats">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>EU Sanctions Pro-Russian Hacktivists and Disinformation Firm</title>
-      <link>https://secubuzz.com/news/eu-sanctions-pro-russian-hacktivists-and-disinform-a24641d8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eu-sanctions-pro-russian-hacktivists-and-disinform-a24641d8</guid>
-      <description><![CDATA[The European Union imposed sanctions on a pro-Russian hacktivist group and two dozen employees of the Moscow firm behind the Doppelgänger disinformation campaign. The sanctions aim to curb state-backed cyber operations and disrupt the firm’s influence-operations infrastructure. Affected actors must now face travel restrictions, asset freezes, and limited access to EU financial systems.]]></description>
-      <pubDate>Mon, 16 Nov 2026 14:15:00 GMT</pubDate>
-      <source url="https://therecord.media/russia-europe-sanctions-doppelganger">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Dell Advises Patches for Multiple Storage Vulnerabilities</title>
-      <link>https://secubuzz.com/news/dell-advises-patches-for-multiple-storage-vulnerab-48c5c219</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dell-advises-patches-for-multiple-storage-vulnerab-48c5c219</guid>
-      <description><![CDATA[Dell issued advisory AV26-1161, noting multiple vulnerabilities in Ansible Storage, OpenManage Ansible Modules, PowerScale InsightIQ, PowerStore, and Terraform Providers for Dell Storage. Affected versions include Ansible Storage for PowerFlex <3.2.0, PowerStore <3.9.0, Unity <1.2.13, and PowerScale InsightIQ <6.4.1. Administrators should review Dell’s links and apply the available patches or firmware upgrades to mitigate the vulnerabilities.]]></description>
-      <pubDate>Mon, 16 Nov 2026 14:12:42 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/dell-security-advisory-av26-1161">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Lithuanian Customs Restores Portal After Cyberattack</title>
-      <link>https://secubuzz.com/news/lithuanian-customs-restores-portal-after-cyberatta-d61d6b19</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/lithuanian-customs-restores-portal-after-cyberatta-d61d6b19</guid>
-      <description><![CDATA[Lithuanian Customs experienced a cyberattack that forced the temporary shutdown of its main user-management portal on November 10. The incident may have led to a data breach, prompting the agency to investigate and remediate the vulnerability. Services were restored over the weekend after the agency applied fixes and reinforced security controls.]]></description>
-      <pubDate>Mon, 16 Nov 2026 14:06:00 GMT</pubDate>
-      <source url="https://therecord.media/lithuania-customs-agency-cyberattack">The Record</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

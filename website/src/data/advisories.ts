@@ -2,6 +2,222 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-129236",
+    "cveID": "CVE-2026-129236",
+    "slug": "cve-2026-129236",
+    "vendor": "Go",
+    "product": "kubeshark · kubeshark",
+    "name": "Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 7.2,
+    "severity": "High",
+    "cwe": "CWE-88",
+    "ransomware": false,
+    "description": "The start_kubeshark MCP tool builds a kubeshark tap command by appending the caller-supplied pod_regex as a bare positional argument, with no -- end-of-options separator. Because tap is a cobra command, a pod_regex that begins with -/--set= is parsed as a flag, not as the pod regex. An attacker who can influence the tool arguments (e.g.",
+    "requiredAction": "Upgrade kubeshark · kubeshark to version 0.0.2-0.20260812200004-a76a1920dc75 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8vf2-hxg5-crqh"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129236"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129299",
+    "cveID": "CVE-2026-129299",
+    "slug": "cve-2026-129299",
+    "vendor": "Pip",
+    "product": "mail-parser",
+    "name": "mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "Two effects, sharing the root cause of Advisory 1 — header names chosen by the sender were resolved through Python attribute lookup and rewritten before lookup. Uncaught exceptions. A crafted message raises an exception that is outside the MailParser hierarchy, so a caller catching only mail-parser exceptions does not catch it and the worker dies.",
+    "requiredAction": "Upgrade mail-parser to version 4.6.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-24mq-4vc6-2prf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129299"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129297",
+    "cveID": "CVE-2026-129297",
+    "slug": "cve-2026-129297",
+    "vendor": "Pip",
+    "product": "mail-parser",
+    "name": "mail-parser: Sender IP address spoofing in get_server_ipaddress()",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "Fixed in 4.6.2. Upgrade with pip install --upgrade mail-parser. Candidate addresses are now selected by position, not by appearance — a bracketed address the sender wrote is byte-identical to one the MTA wrote, so no amount of pattern matching can tell them apart: - the first token of the from clause is the HELO name, whatever its shape, and is never a candidate; - an explicit HELO marker inside...",
+    "requiredAction": "Upgrade mail-parser to version 4.6.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-72px-j8gh-p79x"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129297"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129295",
+    "cveID": "CVE-2026-129295",
+    "slug": "cve-2026-129295",
+    "vendor": "Pip",
+    "product": "mail-parser",
+    "name": "mail-parser is vulnerable to polynomial ReDoS in email header parsing",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "Two regular expressions used while parsing email headers backtrack polynomially on attacker-controlled input. Parsing a single small, well-formed email can consume minutes to hours of CPU, denying service to any process that parses untrusted mail.",
+    "requiredAction": "Upgrade mail-parser to version 4.6.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r7w7-vpq8-c5vv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129295"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129296",
+    "cveID": "CVE-2026-129296",
+    "slug": "cve-2026-129296",
+    "vendor": "Pip",
+    "product": "mail-parser",
+    "name": "mail-parser: Path Traversal vulnerability in attachment extraction",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "A path traversal vulnerability was identified in mail-parser when extracting email attachments using the write_attachments() and write_sample() APIs. A specially crafted email containing malicious attachment filenames (for example, using directory traversal sequences such as \"../\" or absolute filesystem paths) could cause files to be written outside the intended output directory.",
+    "requiredAction": "Upgrade mail-parser to version 4.6.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fr3h-cpq2-9496"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129296"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-86046",
+    "cveID": "CVE-2026-86046",
+    "slug": "cve-2026-86046",
+    "vendor": "Pip",
+    "product": "termux-sync",
+    "name": "termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "termux-sync restore trusts fields inside an untrusted backup manifest and uses them as the extraction destination without validation.",
+    "requiredAction": "Upgrade termux-sync to version 1.2.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-259w-wmqg-fp76"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86046"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-68934",
+    "cveID": "CVE-2026-68934",
+    "slug": "cve-2026-68934",
+    "vendor": "npm",
+    "product": "code-review-mcp-server",
+    "name": "code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "code-review-mcp-server exposes MCP tools (getLocalGitDiff, codeReview, createPR, getPRTemplate) that accept folderPath and baseBranch string parameters. These caller-controlled values were interpolated directly into shell command strings executed via child_process.execSync(), which runs commands through /bin/sh.",
+    "requiredAction": "Upgrade code-review-mcp-server to version 1.5.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jq3q-62jc-fqq9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68934"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63182",
+    "cveID": "CVE-2026-63182",
+    "slug": "cve-2026-63182",
+    "vendor": "Composer",
+    "product": "litesaml/lightsaml",
+    "name": "lightsaml allows Signature wrapping bypass",
+    "dateAdded": "2026-11-16",
+    "dueDate": "",
+    "cvss": 8.1,
+    "severity": "High",
+    "cwe": "CWE-347",
+    "ransomware": false,
+    "description": "LightSaml 5.0.0 (latest release; also confirmed on 4.6.1) validates an inbound samlp:Response by collecting its direct-child saml:Assertion elements and validating each one's ds:Signature via robrichards/xmlseclibs.",
+    "requiredAction": "Upgrade litesaml/lightsaml to version 5.0.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w553-pwx6-3mg9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63182"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-119790",
     "cveID": "CVE-2026-119790",
     "slug": "cve-2026-119790",
@@ -1181,222 +1397,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128087"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128088",
-    "cveID": "CVE-2026-128088",
-    "slug": "cve-2026-128088",
-    "vendor": "Rust (Cargo)",
-    "product": "russh",
-    "name": "russh try_sign: asynchronous confirmation can sign after agent lock",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 2.2,
-    "severity": "Low",
-    "cwe": "CWE-367",
-    "ransomware": false,
-    "description": "In russh 0.65.0, a sign request for a confirmation-constrained key can retain and use the private key after another connection locks the agent. try_sign() snapshots an Arc<PrivateKey> before awaiting Agent::confirm() and does not revalidate the shared lock state after the await.",
-    "requiredAction": "Upgrade russh to version 0.65.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-736f-c93q-9fwx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128088"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128086",
-    "cveID": "CVE-2026-128086",
-    "slug": "cve-2026-128086",
-    "vendor": "Go",
-    "product": "go.opentelemetry.io/otel/baggage",
-    "name": "OpenTelemetry-Go: Eager W3C baggage-property materialization causes bounded memory-allocation amplification",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "OpenTelemetry Go eagerly materializes W3C baggage metadata into property objects during parsing. Slice growth, serialization, and copying into the internal representation cause bounded but disproportionate memory-allocation amplification for a valid, densely populated header.",
-    "requiredAction": "Upgrade go.opentelemetry.io/otel/baggage to version 1.47.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rrfc-gjm9-cgrj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128086"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128085",
-    "cveID": "CVE-2026-128085",
-    "slug": "cve-2026-128085",
-    "vendor": "Go",
-    "product": "go.opentelemetry.io/otel/sdk",
-    "name": "opentelemetry-go: AttributeValueLengthLimit is fully bypassed by attribute values composed of valid U+FFFD runes",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-135",
-    "ransomware": false,
-    "description": "The AttributeValueLengthLimit span/log-record limit can be bypassed entirely with attribute values that consist of valid U+FFFD (REPLACEMENT CHARACTER) runes.",
-    "requiredAction": "Upgrade go.opentelemetry.io/otel/sdk to version 1.47.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-q7gw-24fr-5p69"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128085"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128084",
-    "cveID": "CVE-2026-128084",
-    "slug": "cve-2026-128084",
-    "vendor": "RubyGems",
-    "product": "sqlite3",
-    "name": "sqlite3-ruby: Possible SQL query truncation when a string is 4 GiB or larger",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 4.8,
-    "severity": "Medium",
-    "cwe": "CWE-681",
-    "ransomware": false,
-    "description": "sqlite3-ruby cast Ruby string lengths (long) to int before passing them to SQLite. On 64-bit platforms, a string of 4 GiB (2^32 bytes) or larger had its length wrap, so SQLite saw only the first length mod 2^32 bytes. An attacker who controls the length of a SQL string could truncate the query, for example dropping a trailing WHERE clause.",
-    "requiredAction": "Upgrade sqlite3 to version 2.10.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4fqr-96q8-xrfx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128084"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128083",
-    "cveID": "CVE-2026-128083",
-    "slug": "cve-2026-128083",
-    "vendor": "Composer",
-    "product": "laravel/framework",
-    "name": "Laravel: Task Output Injection - Concurrency Process",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-502",
-    "ransomware": false,
-    "description": "If a concurrency task prints user-controlled text, an attacker can forge the framework's internal result message and achieve remote code execution in certain conditions",
-    "requiredAction": "Upgrade laravel/framework to version 12.71.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-63hm-g96r-2m2q"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128083"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128081",
-    "cveID": "CVE-2026-128081",
-    "slug": "cve-2026-128081",
-    "vendor": ".NET (NuGet)",
-    "product": "AutoMapper",
-    "name": "AutoMapper: Denial of Service via uncontrolled recursion that bypasses MaxDepth",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-674",
-    "ransomware": false,
-    "description": "The default and explicit MaxDepth limits added for CVE-2026-32933 don't apply to several mapping paths. Mapping a deeply nested source through any of them recurses without bound and throws a StackOverflowException, which can't be caught and terminates the process.",
-    "requiredAction": "Upgrade AutoMapper to version 16.3.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gpwp-5797-mjff"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128081"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126361",
-    "cveID": "CVE-2026-126361",
-    "slug": "cve-2026-126361",
-    "vendor": "npm",
-    "product": "astro",
-    "name": "Astro: XSS via attribute injection in dynamic tag names",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "When a dynamic tag (const Tag = ...; <Tag />) resolves to a string, Astro renders it as a raw HTML element name. The name was filtered to remove characters that could inject attributes, but the filter did not handle /. Because HTML parsers treat / inside a tag as an attribute separator, a tag name such as img/src/onerror=alert(1) was rendered as an element with an onerror attribute.",
-    "requiredAction": "Upgrade astro to version 7.4.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mh32-jxcr-mh9f"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126361"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126364",
-    "cveID": "CVE-2026-126364",
-    "slug": "cve-2026-126364",
-    "vendor": "npm",
-    "product": "@astrojs/node",
-    "name": "Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "The /_image endpoint used by the @astrojs/node adapter checks that a requested local image is inside the build output directory before reading it from disk. That check compared paths case-insensitively. On case-sensitive filesystems (such as Linux), a directory whose path differs from the output directory only by letter case is a different directory, but it passed the check.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r3h5-4585-7x3w"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126364"
       }
     ],
     "source": "GITHUB"
