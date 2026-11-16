@@ -677,9 +677,9 @@
   {
     "id": "https://blog.cloudflare.com/kitesurf-open-source/",
     "sourceUrl": "https://blog.cloudflare.com/kitesurf-open-source/",
-    "title": "Cloudflare Releases Kitesurf Browser Engine Open Source",
-    "headline": "Cloudflare Releases Kitesurf Browser Engine Open Source",
-    "summary": "Cloudflare has open-sourced Kitesurf, an experimental browser engine designed for AI agents, allowing developers to inspect, run, and deploy it locally or on Cloudflare Workers. The source code is available on GitHub, enabling community contributions and custom deployments in edge computing environments. Security teams should review the repository for potential vulnerabilities and consider integrating Kitesurf into their AI-agent testing pipelines.",
+    "title": "Cloudflare Open-Sources Kitesurf Browser Engine for AI Agents",
+    "headline": "Cloudflare Open-Sources Kitesurf Browser Engine for AI Agents",
+    "summary": "Cloudflare announced the open-source release of Kitesurf, a lightweight browser engine for AI agents to render pages and run JavaScript on Workers. It eliminates the Chromium container, letting developers test, inspect, and customize Kitesurf locally before deploying it to edge environments. Security teams should review the GitHub repo for vulnerabilities and consider integrating Kitesurf into AI-agent testing pipelines.",
     "category": "GENERAL",
     "severity": "LOW",
     "source": "Cloudflare Security",
@@ -688,7 +688,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://blog.cloudflare.com/kitesurf-open-source/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/cloudflare-kitesurf-open-source/"
+      }
+    ]
   },
   {
     "id": "https://therecord.media/city-of-osaka-japan-email-data-breach",

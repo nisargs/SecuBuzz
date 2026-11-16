@@ -791,22 +791,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cloudflare-releases-kitesurf-browser-engine-open-s-503d6c59",
-    "title": "Cloudflare Releases Kitesurf Browser Engine Open Source",
-    "summary": "Cloudflare has open-sourced Kitesurf, an experimental browser engine designed for AI agents, allowing developers to inspect, run, and deploy it locally or on Cloudflare Workers. The source code is available on GitHub, enabling community contributions and custom deployments in edge computing environments. Security teams should review the repository for potential vulnerabilities and consider integrating Kitesurf into their AI-agent testing pipelines.",
+    "slug": "cloudflare-open-sources-kitesurf-browser-engine-fo-a79a0945",
+    "title": "Cloudflare Open-Sources Kitesurf Browser Engine for AI Agents",
+    "summary": "Cloudflare announced the open-source release of Kitesurf, a lightweight browser engine for AI agents to render pages and run JavaScript on Workers. It eliminates the Chromium container, letting developers test, inspect, and customize Kitesurf locally before deploying it to edge environments. Security teams should review the GitHub repo for vulnerabilities and consider integrating Kitesurf into AI-agent testing pipelines.",
     "category": "General",
     "severity": "LOW",
     "source": "Cloudflare Security",
     "sourceUrl": "https://blog.cloudflare.com/kitesurf-open-source/",
     "publishedAt": "2026-11-13T20:20:21.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/cloudflare-kitesurf-open-source/"
+      }
+    ],
     "aliases": [
-      "cloudflare-releases-kitesurf-browser-engine-open-s",
-      "article-503d6c59",
-      "503d6c59",
-      "cloudflare-releases-kitesurf-browser-engine-open-s-314cfe",
-      "cloudflare-releases-kitesurf-browser-engine-open-source"
+      "cloudflare-open-sources-kitesurf-browser-engine-fo",
+      "article-a79a0945",
+      "a79a0945",
+      "cloudflare-open-sources-kitesurf-browser-engine-fo-314cfe",
+      "cloudflare-open-sources-kitesurf-browser-engine-for-ai-agent"
     ]
   },
   {
