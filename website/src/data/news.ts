@@ -2707,22 +2707,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "microsoft-battles-global-outage-email-services-dow-f1308f2a",
-    "title": "Microsoft Battles Global Outage, Email Services Down",
-    "summary": "Microsoft experienced a global outage disrupting email and other services across its cloud infrastructure. The root cause remains unidentified; Microsoft is isolating and repairing affected infrastructure, suggesting underlying network or configuration issues. Microsoft is actively investigating, restoring services, and advising users to monitor official updates for status in the coming hours.",
-    "category": "General",
-    "severity": "LOW",
+    "slug": "microsoft-365-outage-caused-by-hidden-windows-bug-b2a47d0c",
+    "title": "Microsoft 365 Outage Caused by Hidden Windows Bug",
+    "summary": "Microsoft 365 services worldwide were disrupted on November 12-13, 2026, affecting email, collaboration, and cloud connectivity. The outage was traced to a hidden Windows defect that overloaded servers handling cloud connections, causing widespread failures. Microsoft released a preliminary incident report, isolated affected infrastructure, and applied patches to restore services, advising users to monitor updates.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/",
     "publishedAt": "2026-11-13T13:47:42.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/microsoft-outage-incident-report/"
+      }
+    ],
     "aliases": [
-      "microsoft-battles-global-outage-email-services-dow",
-      "article-f1308f2a",
-      "f1308f2a",
-      "microsoft-battles-global-outage-email-services-dow-d66625",
-      "microsoft-battles-global-outage-email-services-down"
+      "microsoft-365-outage-caused-by-hidden-windows-bug",
+      "article-b2a47d0c",
+      "b2a47d0c",
+      "microsoft-365-outage-caused-by-hidden-windows-bug-d66625"
     ]
   },
   {
@@ -7633,22 +7637,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "japan-sees-record-cyberattacks-driven-by-ai-intrus-db59b6fd",
-    "title": "Japan Sees Record Cyberattacks Driven by AI Intrusions",
-    "summary": "Researchers report a record rise in Japanese cyberattacks, attributing many incidents to AI-assisted intrusion techniques. The attacks include widespread data breaches and exploitations of unpatched vulnerabilities, increasing pressure on organizations to accelerate patch management. Security teams should prioritize vulnerability scanning, enforce timely patching, and adopt AI-driven threat detection to mitigate emerging intrusion tactics.",
+    "slug": "japan-records-233-cyber-incidents-185-million-pers-b7b4ecf2",
+    "title": "Japan Records 233 Cyber Incidents, 185 Million Personal Records at Risk",
+    "summary": "Japan reported 233 publicly disclosed cyber incidents in October 2026, a record 2.4 times the previous monthly high, exposing 185 million personal records. The attacks, many driven by AI-assisted intrusion techniques, exploited unpatched vulnerabilities across businesses, service providers, and public institutions. Organizations must accelerate patch management, enforce timely updates, and adopt AI-driven threat detection to mitigate the escalating threat landscape.",
     "category": "General",
-    "severity": "LOW",
+    "severity": "HIGH",
     "source": "Socket.dev",
     "sourceUrl": "https://socket.dev/blog/japan-cyberattack-surge",
     "publishedAt": "2026-11-12T14:51:52.947Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/233-cyber-incidents/"
+      }
+    ],
     "aliases": [
-      "japan-sees-record-cyberattacks-driven-by-ai-intrus",
-      "article-db59b6fd",
-      "db59b6fd",
-      "japan-sees-record-cyberattacks-driven-by-ai-intrus-683cad",
-      "japan-sees-record-cyberattacks-driven-by-ai-intrusions"
+      "japan-records-233-cyber-incidents-185-million-pers",
+      "article-b7b4ecf2",
+      "b7b4ecf2",
+      "japan-records-233-cyber-incidents-185-million-pers-683cad",
+      "japan-records-233-cyber-incidents-185-million-personal-recor"
     ]
   },
   {

@@ -2254,18 +2254,23 @@
   {
     "id": "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/",
     "sourceUrl": "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/",
-    "title": "Microsoft Battles Global Outage, Email Services Down",
-    "headline": "Microsoft Battles Global Outage, Email Services Down",
-    "summary": "Microsoft experienced a global outage disrupting email and other services across its cloud infrastructure. The root cause remains unidentified; Microsoft is isolating and repairing affected infrastructure, suggesting underlying network or configuration issues. Microsoft is actively investigating, restoring services, and advising users to monitor official updates for status in the coming hours.",
-    "category": "GENERAL",
-    "severity": "LOW",
+    "title": "Microsoft 365 Outage Caused by Hidden Windows Bug",
+    "headline": "Microsoft 365 Outage Caused by Hidden Windows Bug",
+    "summary": "Microsoft 365 services worldwide were disrupted on November 12-13, 2026, affecting email, collaboration, and cloud connectivity. The outage was traced to a hidden Windows defect that overloaded servers handling cloud connections, causing widespread failures. Microsoft released a preliminary incident report, isolated affected infrastructure, and applied patches to restore services, advising users to monitor updates.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
     "source": "SecurityWeek",
     "publishedAt": "2026-11-13T13:47:42.000Z",
     "ingestedAt": "2026-11-13T14:43:15.185Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/microsoft-outage-incident-report/"
+      }
+    ]
   },
   {
     "id": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
@@ -6501,18 +6506,23 @@
   {
     "id": "https://socket.dev/blog/japan-cyberattack-surge",
     "sourceUrl": "https://socket.dev/blog/japan-cyberattack-surge",
-    "title": "Japan Sees Record Cyberattacks Driven by AI Intrusions",
-    "headline": "Japan Sees Record Cyberattacks Driven by AI Intrusions",
-    "summary": "Researchers report a record rise in Japanese cyberattacks, attributing many incidents to AI-assisted intrusion techniques. The attacks include widespread data breaches and exploitations of unpatched vulnerabilities, increasing pressure on organizations to accelerate patch management. Security teams should prioritize vulnerability scanning, enforce timely patching, and adopt AI-driven threat detection to mitigate emerging intrusion tactics.",
+    "title": "Japan Records 233 Cyber Incidents, 185 Million Personal Records at Risk",
+    "headline": "Japan Records 233 Cyber Incidents, 185 Million Personal Records at Risk",
+    "summary": "Japan reported 233 publicly disclosed cyber incidents in October 2026, a record 2.4 times the previous monthly high, exposing 185 million personal records. The attacks, many driven by AI-assisted intrusion techniques, exploited unpatched vulnerabilities across businesses, service providers, and public institutions. Organizations must accelerate patch management, enforce timely updates, and adopt AI-driven threat detection to mitigate the escalating threat landscape.",
     "category": "GENERAL",
-    "severity": "LOW",
+    "severity": "HIGH",
     "source": "Socket.dev",
     "publishedAt": "2026-11-12T14:51:52.947Z",
     "ingestedAt": "2026-11-12T21:43:33.838Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://socket.dev/blog/japan-cyberattack-surge",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/233-cyber-incidents/"
+      }
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:99593",
