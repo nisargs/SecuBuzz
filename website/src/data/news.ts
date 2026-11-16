@@ -11,6 +11,157 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "aurora-aatp-detects-ransomware-early-with-ai-c1969540",
+    "title": "Aurora AATP Detects Ransomware Early with AI",
+    "summary": "Aurora Adaptive Threat Protection (AATP) employs AI-driven intent detection to identify ransomware and credential-stealing attacks during the initial chain stages. The solution monitors behavioral anomalies and halts malicious payloads before execution, reducing the risk of data loss and credential compromise. Deploying AATP alongside existing endpoint defenses enhances early threat visibility and containment.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/datasheet-jp/aurora-adaptive-threat-protection/",
+    "publishedAt": "2026-11-16T20:38:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aurora-aatp-detects-ransomware-early-with-ai",
+      "article-c1969540",
+      "c1969540",
+      "aurora-aatp-detects-ransomware-early-with-ai-379d15"
+    ]
+  },
+  {
+    "slug": "match-group-fined-10m-for-tinder-privacy-violation-bf195256",
+    "title": "Match Group Fined $10M for Tinder Privacy Violations",
+    "summary": "Ireland’s Data Protection Commission imposed a €10 million fine on Match Group for Tinder’s alleged failure to supply users with their personal data upon request. The regulator cited non-compliance with GDPR data-subject rights, specifically the right of access. Match Group must implement data-subject request processes and audit compliance to avoid further penalties.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ireland-tinder-privacy-fine",
+    "publishedAt": "2026-11-16T20:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "match-group-fined-10m-for-tinder-privacy-violation",
+      "article-bf195256",
+      "bf195256",
+      "match-group-fined-10m-for-tinder-privacy-violation-1a3c9b",
+      "match-group-fined-10m-for-tinder-privacy-violations"
+    ]
+  },
+  {
+    "slug": "aws-pricing-server-path-traversal-cve-2026-126816-e31a177c",
+    "title": "AWS Pricing Server Path Traversal CVE-2026-126816",
+    "summary": "CVE-2026-126816 allows path traversal and arbitrary file writes in the cost report generator of aws-pricing-mcp-server before version 1.0.31. An attacker who can influence the MCP agent can supply absolute paths or traversal sequences to write actor-controlled content outside the intended output directory. Apply the latest patch (1.0.31 or newer) and validate report output paths to prevent unauthorized writes.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-184-aws/",
+    "publishedAt": "2026-11-16T20:12:51.000Z",
+    "cves": [
+      "CVE-2026-126816"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aws-pricing-server-path-traversal-cve-2026-126816",
+      "article-e31a177c",
+      "e31a177c",
+      "aws-pricing-server-path-traversal-cve-2026-126816-100a51"
+    ]
+  },
+  {
+    "slug": "us-blocks-china-from-indirect-ai-access-58d859bb",
+    "title": "US Blocks China From Indirect AI Access",
+    "summary": "The Trump Administration issued a rule blocking overseas data centers serving China, Russia, Iran, and Cuba from indirect U.S. AI access. The rule mandates these centers to identify end users, curbing foreign entities’ ability to obtain AI services without disclosure. Compliance requires user-identification procedures and reporting to U.S. authorities, with enforcement for non-compliance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/",
+    "publishedAt": "2026-11-16T20:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-blocks-china-from-indirect-ai-access",
+      "article-58d859bb",
+      "58d859bb",
+      "us-blocks-china-from-indirect-ai-access-2ee6c3"
+    ]
+  },
+  {
+    "slug": "barracuda-cloud-breach-via-artex-ai-framework-b497c069",
+    "title": "Barracuda Cloud Breach via ARTEX AI Framework",
+    "summary": "Barracuda’s cloud environment was breached using a stolen cloud access key and the ARTEX AI penetration testing framework. The attackers leveraged ARTEX’s automated exploitation capabilities to gain persistence and exfiltrate configuration data from the cloud platform. Security teams should rotate compromised keys, enable multi-factor authentication, and audit cloud access logs for anomalous activity.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
+    "publishedAt": "2026-11-16T19:57:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "barracuda-cloud-breach-via-artex-ai-framework",
+      "article-b497c069",
+      "b497c069",
+      "barracuda-cloud-breach-via-artex-ai-framework-607e7f"
+    ]
+  },
+  {
+    "slug": "ai-fuels-more-ransomware-attacks-payments-drop-8209d452",
+    "title": "AI Fuels More Ransomware Attacks, Payments Drop",
+    "summary": "Ransomware groups are leveraging large language models to craft highly convincing phishing emails and rapidly locate sensitive data, driving a rise in attack frequency. The trend shows a higher volume of incidents, yet the number of ransom payments has fallen, indicating increased resistance or alternative mitigation. Security teams should monitor AI-generated phishing campaigns and enforce multi-factor authentication to reduce exposure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
+    "publishedAt": "2026-11-16T19:56:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-fuels-more-ransomware-attacks-payments-drop",
+      "article-8209d452",
+      "8209d452",
+      "ai-fuels-more-ransomware-attacks-payments-drop-6d07ef"
+    ]
+  },
+  {
+    "slug": "sleeper-agents-hide-payloads-in-open-weight-ai-mod-5a021833",
+    "title": "Sleeper Agents Hide Payloads in Open-Weight AI Models",
+    "summary": "Malware authors now embed malicious code within a minuscule fraction-0.00001%-of an open-weight neural network, creating a sleeper agent that evades conventional scanning. The hidden payload can activate only when the model is executed, making detection by standard AI integrity checks ineffective. Security teams should implement model integrity verification and monitor anomalous inference patterns to mitigate this threat.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models",
+    "publishedAt": "2026-11-16T19:10:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sleeper-agents-hide-payloads-in-open-weight-ai-mod",
+      "article-5a021833",
+      "5a021833",
+      "sleeper-agents-hide-payloads-in-open-weight-ai-mod-8f249d",
+      "sleeper-agents-hide-payloads-in-open-weight-ai-models"
+    ]
+  },
+  {
+    "slug": "linux-kernel-noisytcp-crash-vulnerability-cve-2026-b3c6f639",
+    "title": "Linux Kernel NoisyTCP Crash Vulnerability CVE-2026-99288",
+    "summary": "CVE-2026-99288, an 11-year-old Linux kernel flaw, permits remote kernel panics via TCP ehash race conditions on affected hosts. The race exploits a flaw in the TCP ehash table, causing a kernel panic without code execution and is publicly documented. Apply the vendor-supplied kernel patch and disable Receive Packet Steering (RPS) to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-99288-noisytcp-linux-kernel-crash",
+    "publishedAt": "2026-11-16T18:57:39.000Z",
+    "cves": [
+      "CVE-2026-99288"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-noisytcp-crash-vulnerability-cve-2026",
+      "article-b3c6f639",
+      "b3c6f639",
+      "linux-kernel-noisytcp-crash-vulnerability-cve-2026-7dc7f0",
+      "linux-kernel-noisytcp-crash-vulnerability-cve-2026-99288"
+    ]
+  },
+  {
     "slug": "cve-2026-129266-arbitrary-local-file-read-via-unva-6e650c0c",
     "title": "CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library",
     "summary": "Bulletin ID: 2026-183-AWS Publication Date: 11/16/2026 10:30 AM PST Description: External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can access.",
@@ -105,6 +256,24 @@ export const news: NewsBrief[] = [
       "article-4ab95a4b",
       "4ab95a4b",
       "meta-fined-886m-by-italian-regulator-979fe6"
+    ]
+  },
+  {
+    "slug": "apple-releases-macos-27-3-beta-2-49f12807",
+    "title": "Apple Releases macOS 27.3 Beta 2",
+    "summary": "Apple released macOS 27.3 beta 2, version 26C5047e, providing users with the latest beta build. The update includes minor bug fixes and performance improvements, as detailed in the release notes. Users should download the beta from the official Apple Developer portal and install it to test new features for development.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026c",
+    "publishedAt": "2026-11-16T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-macos-27-3-beta-2",
+      "article-49f12807",
+      "49f12807",
+      "apple-releases-macos-27-3-beta-2-5f3d88"
     ]
   },
   {
@@ -3568,9 +3737,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "sansar-rootkit-conceals-linux-gpu-mining-by-tamper-1271ef97",
-    "title": "SANSAR Rootkit Conceals Linux GPU Mining by Tampering NVIDIA Library",
-    "summary": "A Linux-based cryptocurrency mining operation deployed the SANSAR toolkit to conceal GPU activity on NVIDIA servers. The rootkit modifies the NVIDIA monitoring library to report zero GPU utilization while mining continues, bypassing workload detection. Security teams should update NVIDIA drivers, monitor GPU usage with trusted tools, and apply vendor patches to detect and remove the SANSAR rootkit.",
+    "slug": "sansar-rootkit-conceals-gpu-mining-by-tampering-nv-90b197b5",
+    "title": "SANSAR Rootkit Conceals GPU Mining by Tampering NVIDIA Library",
+    "summary": "SANSAR, a Linux-based rootkit, infiltrated NVIDIA GPU servers by tampering with libnvidia-ml.so to conceal cryptomining activity. The malware hijacks the NVIDIA monitoring library, reports zero utilization, and uses LD_PRELOAD hooks and SSH lateral movement to evade detection and persist. Security teams should block unauthorized SSH, monitor libnvidia-ml.so changes, apply vendor patches, and deploy kernel integrity checks to remove the rootkit.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -3581,14 +3750,18 @@ export const news: NewsBrief[] = [
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html"
+      },
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/sansar-linux-cryptominer-nvidia-rootkit"
       }
     ],
     "aliases": [
-      "sansar-rootkit-conceals-linux-gpu-mining-by-tamper",
-      "article-1271ef97",
-      "1271ef97",
-      "sansar-rootkit-conceals-linux-gpu-mining-by-tamper-5e995c",
-      "sansar-rootkit-conceals-linux-gpu-mining-by-tampering-nvidia"
+      "sansar-rootkit-conceals-gpu-mining-by-tampering-nv",
+      "article-90b197b5",
+      "90b197b5",
+      "sansar-rootkit-conceals-gpu-mining-by-tampering-nv-5e995c",
+      "sansar-rootkit-conceals-gpu-mining-by-tampering-nvidia-libra"
     ]
   },
   {
@@ -9605,172 +9778,6 @@ export const news: NewsBrief[] = [
       "44a3192a",
       "ptc-patches-critical-windchill-and-flexplm-flaw-th-58ca3b",
       "ptc-patches-critical-windchill-and-flexplm-flaw-that-could-e"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99596-important-gdb-security-update-3fbde677",
-    "title": "RHSA-2026:99596: Important: gdb security update",
-    "summary": "An update for gdb is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99596",
-    "publishedAt": "2026-11-12T11:22:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99596-important-gdb-security-update",
-      "article-3fbde677",
-      "3fbde677",
-      "rhsa-2026-99596-important-gdb-security-update-37d670"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99594-important-gdb-security-update-6cea9c6b",
-    "title": "RHSA-2026:99594: Important: gdb security update",
-    "summary": "An update for gdb is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99594",
-    "publishedAt": "2026-11-12T11:13:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99594-important-gdb-security-update",
-      "article-6cea9c6b",
-      "6cea9c6b",
-      "rhsa-2026-99594-important-gdb-security-update-37d670"
-    ]
-  },
-  {
-    "slug": "ai-scripts-enable-rapid-lateral-movement-in-retail-9f16049b",
-    "title": "AI Scripts Enable Rapid Lateral Movement in Retail Breach",
-    "summary": "An attacker used AI-generated scripts after hand-typed commands failed to breach a US retailer. The AI scripts facilitated lateral movement within minutes, indicating a rapid compromise of internal systems and exposing sensitive data. Security teams should investigate compromised accounts, isolate affected segments, review AI-based attack mitigations, and strengthen monitoring immediately.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
-    "publishedAt": "2026-11-12T11:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-scripts-enable-rapid-lateral-movement-in-retail",
-      "article-9f16049b",
-      "9f16049b",
-      "ai-scripts-enable-rapid-lateral-movement-in-retail-4698c6",
-      "ai-scripts-enable-rapid-lateral-movement-in-retail-breach"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99576-important-rsync-security-update-ecc89d3d",
-    "title": "RHSA-2026:99576: Important: rsync security update",
-    "summary": "An update for rsync is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99576",
-    "publishedAt": "2026-11-12T10:54:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99576-important-rsync-security-update",
-      "article-ecc89d3d",
-      "ecc89d3d",
-      "rhsa-2026-99576-important-rsync-security-update-37d670"
-    ]
-  },
-  {
-    "slug": "scammers-target-browser-push-notifications-for-dec-1e1a942a",
-    "title": "Scammers Target Browser Push Notifications for Deception",
-    "summary": "Scammers exploit browser push notifications to trick users into granting permissions, creating a false sense of adware infection. The technique leverages the push notification API to display deceptive alerts that prompt users to enable notifications. Security teams should disable or restrict push notifications and educate users about legitimate notification requests.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/mobile/2026/11/why-scammers-want-you-to-allow-notifications",
-    "publishedAt": "2026-11-12T10:52:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "scammers-target-browser-push-notifications-for-dec",
-      "article-1e1a942a",
-      "1e1a942a",
-      "scammers-target-browser-push-notifications-for-dec-508181",
-      "scammers-target-browser-push-notifications-for-deception"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99592-important-openssh-security-update-8e522824",
-    "title": "RHSA-2026:99592: Important: openssh security update",
-    "summary": "An update for openssh is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99592",
-    "publishedAt": "2026-11-12T10:48:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99592-important-openssh-security-update",
-      "article-8e522824",
-      "8e522824",
-      "rhsa-2026-99592-important-openssh-security-update-37d670"
-    ]
-  },
-  {
-    "slug": "screenconnect-extension-vulnerability-enables-malw-bf3d797c",
-    "title": "ScreenConnect Extension Vulnerability Enables Malware",
-    "summary": "Hackers exploited a flaw in a legitimate ScreenConnect extension to bypass authentication and deploy malware. The flaw lets attackers bypass ScreenConnect’s login controls, granting unauthorized session access; no CVE is listed and exploitation is confined to the extension. ScreenConnect has released an update patching the extension; administrators should apply the latest version and verify extension integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign/",
-    "publishedAt": "2026-11-12T10:39:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "screenconnect-extension-vulnerability-enables-malw",
-      "article-bf3d797c",
-      "bf3d797c",
-      "screenconnect-extension-vulnerability-enables-malw-6fa0ce",
-      "screenconnect-extension-vulnerability-enables-malware"
-    ]
-  },
-  {
-    "slug": "chrome-updates-83-flaws-five-critical-rce-fixes-7a376471",
-    "title": "Chrome Updates 83 Flaws, Five Critical RCE Fixes",
-    "summary": "Google released a Chrome update fixing 83 vulnerabilities, including five use-after-free flaws that could enable remote code execution on Windows, macOS, and Linux. The flaws affect rendering, graphics, JavaScript, and core features, with CVSS scores up to 9.8, and are exploitable via crafted web content. Users should upgrade to Chrome 157.0.8103.78/79 or later, and admins should enforce updated security policies.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/google-chrome-fixes-83-security-flaws/",
-    "publishedAt": "2026-11-12T10:32:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-updates-83-flaws-five-critical-rce-fixes",
-      "article-7a376471",
-      "7a376471",
-      "chrome-updates-83-flaws-five-critical-rce-fixes-3e4626"
-    ]
-  },
-  {
-    "slug": "microsoft-reports-windows-11-update-installation-f-ad847603",
-    "title": "Microsoft Reports Windows 11 Update Installation Failure",
-    "summary": "Microsoft confirmed that November 2026 security updates fail to install on Windows 11 systems with the October preview update. The failure blocks critical patches, leaving affected devices vulnerable to known exploits. Users are advised to revert to the stable release or await a corrective update from Microsoft in the near future.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
-    "publishedAt": "2026-11-12T10:24:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-reports-windows-11-update-installation-f",
-      "article-ad847603",
-      "ad847603",
-      "microsoft-reports-windows-11-update-installation-f-2c5b46",
-      "microsoft-reports-windows-11-update-installation-failure"
     ]
   }
 ];
