@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 10:45:13 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 11:39:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Rspamd 4.3.0 Patch Stops Worker Crashes and Forged Auth</title>
@@ -404,10 +404,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Uber Confirms Driver Data Breach by Fireworks AI Hackers</title>
-      <link>https://secubuzz.com/news/uber-confirms-driver-data-breach-by-fireworks-ai-h-33a7b6d3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uber-confirms-driver-data-breach-by-fireworks-ai-h-33a7b6d3</guid>
-      <description><![CDATA[Uber confirmed a breach exposing personal data of thousands of U.S. drivers after hackers accessed records held by Fireworks AI. Exposed data includes driver license details; Uber is notifying affected individuals while the total number impacted nationwide remains undisclosed. Security teams should monitor for credential misuse, enforce MFA, and verify Fireworks AI’s data controls to mitigate further exposure.]]></description>
+      <title>Uber Driver Data Breach Exposes 150,000 Records via Fireworks AI</title>
+      <link>https://secubuzz.com/news/uber-driver-data-breach-exposes-150-000-records-vi-b16dbed3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uber-driver-data-breach-exposes-150-000-records-vi-b16dbed3</guid>
+      <description><![CDATA[Uber suffered a data breach after hackers compromised a third-party services provider, exposing personal information belonging to 150,000 drivers, including names, addresses, and driver’s license numbers. The intruders accessed records held by Fireworks AI, creating identity-theft and credential-misuse risks for affected U.S. drivers. Uber is notifying victims, investigating the incident, and strengthening third-party security controls.]]></description>
       <pubDate>Sat, 14 Nov 2026 01:19:57 GMT</pubDate>
       <source url="https://cybersecuritynews.com/uber-confirms-data-breach/">Cyber Security News</source>
       <category>Breach</category>

@@ -866,22 +866,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "uber-confirms-driver-data-breach-by-fireworks-ai-h-33a7b6d3",
-    "title": "Uber Confirms Driver Data Breach by Fireworks AI Hackers",
-    "summary": "Uber confirmed a breach exposing personal data of thousands of U.S. drivers after hackers accessed records held by Fireworks AI. Exposed data includes driver license details; Uber is notifying affected individuals while the total number impacted nationwide remains undisclosed. Security teams should monitor for credential misuse, enforce MFA, and verify Fireworks AI’s data controls to mitigate further exposure.",
+    "slug": "uber-driver-data-breach-exposes-150-000-records-vi-b16dbed3",
+    "title": "Uber Driver Data Breach Exposes 150,000 Records via Fireworks AI",
+    "summary": "Uber suffered a data breach after hackers compromised a third-party services provider, exposing personal information belonging to 150,000 drivers, including names, addresses, and driver’s license numbers. The intruders accessed records held by Fireworks AI, creating identity-theft and credential-misuse risks for affected U.S. drivers. Uber is notifying victims, investigating the incident, and strengthening third-party security controls.",
     "category": "Breach",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "Cyber Security News",
     "sourceUrl": "https://cybersecuritynews.com/uber-confirms-data-breach/",
     "publishedAt": "2026-11-14T01:19:57.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/uber-data-breach-impacts-150000-people/"
+      }
+    ],
     "aliases": [
-      "uber-confirms-driver-data-breach-by-fireworks-ai-h",
-      "article-33a7b6d3",
-      "33a7b6d3",
-      "uber-confirms-driver-data-breach-by-fireworks-ai-h-60cbbc",
-      "uber-confirms-driver-data-breach-by-fireworks-ai-hackers"
+      "uber-driver-data-breach-exposes-150-000-records-vi",
+      "article-b16dbed3",
+      "b16dbed3",
+      "uber-driver-data-breach-exposes-150-000-records-vi-60cbbc",
+      "uber-driver-data-breach-exposes-150-000-records-via-firework"
     ]
   },
   {
@@ -2411,22 +2416,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hackers-obscure-linux-gpu-mining-with-sansar-rootk-61f39cb0",
-    "title": "Hackers Obscure Linux GPU Mining with SANSAR Rootkit",
-    "summary": "Hackers deployed a SANSAR toolkit on Linux GPU servers to conceal cryptocurrency mining by manipulating NVIDIA monitoring outputs. The rootkit modifies the NVIDIA library to report 0% GPU utilization while mining continues, enabling attackers to evade workload detection. Security teams should update modules, monitor GPU usage via trusted tools, and apply vendor patches to detect and remove the SANSAR rootkit.",
+    "slug": "sansar-rootkit-conceals-linux-gpu-mining-by-tamper-1271ef97",
+    "title": "SANSAR Rootkit Conceals Linux GPU Mining by Tampering NVIDIA Library",
+    "summary": "A Linux-based cryptocurrency mining operation deployed the SANSAR toolkit to conceal GPU activity on NVIDIA servers. The rootkit modifies the NVIDIA monitoring library to report zero GPU utilization while mining continues, bypassing workload detection. Security teams should update NVIDIA drivers, monitor GPU usage with trusted tools, and apply vendor patches to detect and remove the SANSAR rootkit.",
     "category": "Vulnerability",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "Cyber Security News",
     "sourceUrl": "https://cybersecuritynews.com/hackers-use-sansar-linux-malware/",
     "publishedAt": "2026-11-13T15:09:45.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html"
+      }
+    ],
     "aliases": [
-      "hackers-obscure-linux-gpu-mining-with-sansar-rootk",
-      "article-61f39cb0",
-      "61f39cb0",
-      "hackers-obscure-linux-gpu-mining-with-sansar-rootk-5e995c",
-      "hackers-obscure-linux-gpu-mining-with-sansar-rootkit"
+      "sansar-rootkit-conceals-linux-gpu-mining-by-tamper",
+      "article-1271ef97",
+      "1271ef97",
+      "sansar-rootkit-conceals-linux-gpu-mining-by-tamper-5e995c",
+      "sansar-rootkit-conceals-linux-gpu-mining-by-tampering-nvidia"
     ]
   },
   {
@@ -2611,9 +2621,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "geovision-cameras-exploited-to-deploy-xmrig-crypto-82b4b717",
-    "title": "GeoVision Cameras Exploited to Deploy XMRig Cryptominers",
-    "summary": "Huntress reported attackers exploiting publicly exposed GeoVision surveillance cameras at 13 organizations to deploy XMRig cryptominers. The attacks abuse a firmware logic flaw enabling unauthorized driver loading via BYOVD and IFEO hijacking, disabling Defender and permitting remote code execution without user interaction. Administrators should patch firmware, disable BYOVD support, restrict management interface access, and monitor for unauthorized driver activity.",
+    "slug": "geovision-cameras-compromised-13-organizations-hit-0d083ca3",
+    "title": "GeoVision Cameras Compromised: 13 Organizations Hit by Cryptomining Exploit",
+    "summary": "GeoVision cameras at 13 organizations were compromised, enabling attackers to deploy XMRig cryptominers across diverse industries. The flaw, a firmware logic bug that permits unauthorized driver loading via BYOVD and IFEO hijacking, allowed remote code execution without user interaction. Administrators should patch firmware, disable BYOVD support, restrict management interface access, and monitor for unauthorized driver activity to mitigate mining.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Huntress",
@@ -2624,14 +2634,18 @@ export const news: NewsBrief[] = [
       {
         "source": "CyberNews AI",
         "sourceUrl": "https://cybernewsai.com/blog/geovision-surveillance-software-xmrig-byovd-attacks"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/geovision-camera-software-vulnerabilities/"
       }
     ],
     "aliases": [
-      "geovision-cameras-exploited-to-deploy-xmrig-crypto",
-      "article-82b4b717",
-      "82b4b717",
-      "geovision-cameras-exploited-to-deploy-xmrig-crypto-4742ec",
-      "geovision-cameras-exploited-to-deploy-xmrig-cryptominers"
+      "geovision-cameras-compromised-13-organizations-hit",
+      "article-0d083ca3",
+      "0d083ca3",
+      "geovision-cameras-compromised-13-organizations-hit-4742ec",
+      "geovision-cameras-compromised-13-organizations-hit-by-crypto"
     ]
   },
   {
