@@ -16,6 +16,23 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+    "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+    "headline": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+    "summary": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today. Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday, according to Report URI, a firm that monitors the scripts websites run.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-17T07:12:13.000Z",
+    "ingestedAt": "2026-11-17T08:43:37.346Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/17/peter-stockli-github-ai-security-audits/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/peter-stockli-github-ai-security-audits/",
     "title": "AI Security Audits Hindered by Excessive Instructions",
@@ -8345,22 +8362,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-834",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/ndiligence-releases-four-year-study-identifying-a-critical-supply-chain-vulnerability-across-50-platform-types/",
-    "sourceUrl": "https://cybersecuritynews.com/ndiligence-releases-four-year-study-identifying-a-critical-supply-chain-vulnerability-across-50-platform-types/",
-    "title": "Study Reveals Critical Supply-Chain Vulnerability in 50 Platforms",
-    "headline": "Study Reveals Critical Supply-Chain Vulnerability in 50 Platforms",
-    "summary": "nDiligence released a four-year study exposing a critical supply-chain vulnerability affecting all 50 examined software and device types. The flaw arises from insecure application integration practices, enabling attackers to inject malicious code during deployment and compromising downstream systems. Organizations should audit supply-chain processes, enforce strict code signing, and apply vendor patches to mitigate the identified risk.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-12T14:25:32.000Z",
-    "ingestedAt": "2026-11-12T21:43:33.838Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/ndiligence-releases-four-year-study-identifying-a-critical-supply-chain-vulnerability-across-50-platform-types/",
     "additionalSources": []
   }
 ]

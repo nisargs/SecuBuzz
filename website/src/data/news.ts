@@ -29,6 +29,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hijacked-optimizely-scripts-served-card-skimmer-an-64fe40f6",
+    "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+    "summary": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today. Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday, according to Report URI, a firm that monitors the scripts websites run.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+    "publishedAt": "2026-11-17T07:12:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hijacked-optimizely-scripts-served-card-skimmer-an",
+      "article-64fe40f6",
+      "64fe40f6",
+      "hijacked-optimizely-scripts-served-card-skimmer-an-501499",
+      "hijacked-optimizely-scripts-served-card-skimmer-and-ios-expl"
+    ]
+  },
+  {
     "slug": "ai-security-audits-hindered-by-excessive-instructi-59fcc490",
     "title": "AI Security Audits Hindered by Excessive Instructions",
     "summary": "GitHub's security research team uses AI agents to audit software for vulnerabilities, focusing initially on authentication and authorization bugs. The interview explains that overly detailed prompts can impede AI performance, so prompts are tested and trimmed for each model to improve threat modeling accuracy. Human reviewers verify each report to filter false positives before delivering findings to maintainers.",
@@ -9777,25 +9796,6 @@ export const news: NewsBrief[] = [
       "ca82082f",
       "cisco-broadworks-vulnerability-cve-2026-20320-expl-537666",
       "cisco-broadworks-vulnerability-cve-2026-20320-exploited"
-    ]
-  },
-  {
-    "slug": "study-reveals-critical-supply-chain-vulnerability-98a854e0",
-    "title": "Study Reveals Critical Supply-Chain Vulnerability in 50 Platforms",
-    "summary": "nDiligence released a four-year study exposing a critical supply-chain vulnerability affecting all 50 examined software and device types. The flaw arises from insecure application integration practices, enabling attackers to inject malicious code during deployment and compromising downstream systems. Organizations should audit supply-chain processes, enforce strict code signing, and apply vendor patches to mitigate the identified risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ndiligence-releases-four-year-study-identifying-a-critical-supply-chain-vulnerability-across-50-platform-types/",
-    "publishedAt": "2026-11-12T14:25:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "study-reveals-critical-supply-chain-vulnerability",
-      "article-98a854e0",
-      "98a854e0",
-      "study-reveals-critical-supply-chain-vulnerability-2e6aa5",
-      "study-reveals-critical-supply-chain-vulnerability-in-50-plat"
     ]
   }
 ];
