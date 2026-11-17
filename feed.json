@@ -1,5 +1,53 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
+    "title": "Kazakh National Extradited for Ransomware Attacks",
+    "headline": "Kazakh National Extradited for Ransomware Attacks",
+    "summary": "A Kazakh national was extradited from Italy to the U.S. to face charges for allegedly targeting U.S. schools, hospitals, and healthcare entities with ransomware. He is accused of orchestrating attacks that leveraged ransomware to extort victims, though no confirmed payments or active exploitation have been reported. U.S. authorities have initiated legal proceedings, underscoring international cooperation to prosecute ransomware affiliates.",
+    "category": "RANSOMWARE",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-17T07:25:44.000Z",
+    "ingestedAt": "2026-11-17T07:43:14.271Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/17/peter-stockli-github-ai-security-audits/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/peter-stockli-github-ai-security-audits/",
+    "title": "AI Security Audits Hindered by Excessive Instructions",
+    "headline": "AI Security Audits Hindered by Excessive Instructions",
+    "summary": "GitHub's security research team uses AI agents to audit software for vulnerabilities, focusing initially on authentication and authorization bugs. The interview explains that overly detailed prompts can impede AI performance, so prompts are tested and trimmed for each model to improve threat modeling accuracy. Human reviewers verify each report to filter false positives before delivering findings to maintainers.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-17T07:00:54.000Z",
+    "ingestedAt": "2026-11-17T07:43:14.271Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/17/peter-stockli-github-ai-security-audits/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/17/anthropic-vulnerability-disclosure-days/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/anthropic-vulnerability-disclosure-days/",
+    "title": "Anthropic Shortens Disclosure Deadlines to 30 Days",
+    "headline": "Anthropic Shortens Disclosure Deadlines to 30 Days",
+    "summary": "Anthropic announced it will publicly disclose high- and critical-severity vulnerabilities after 30 days, reducing the previous 90-day window. All other reported bugs will have a 45-day disclosure period, effective for reports submitted on or after January 1 2027, while existing reports retain their original deadlines. The change aims to prevent prolonged private exposure of serious bugs in Anthropic models.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-17T06:46:16.000Z",
+    "ingestedAt": "2026-11-17T07:43:14.271Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/17/anthropic-vulnerability-disclosure-days/",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
     "sourceUrl": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
     "title": "ScreenConnect Vulnerability Enables Unauthorized Access",
@@ -29,6 +77,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/17/cybersecurity-seed-funding-deals/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/17/microsoft-windows-autopatch-controls/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/microsoft-windows-autopatch-controls/",
+    "title": "Microsoft Unifies Patch Management for Unbootable PCs",
+    "headline": "Microsoft Unifies Patch Management for Unbootable PCs",
+    "summary": "Microsoft expands to let Intune policy control updates, .NET Framework, and recovery for PCs that fail to boot. The controls let administrators set automatic or manual approval per update type, reducing drift and simplifying patch management. Security teams should apply Intune update, enable the policy template, and monitor compliance dashboards for timely patch deployment.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-17T06:00:48.000Z",
+    "ingestedAt": "2026-11-17T07:43:19.768Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/17/microsoft-windows-autopatch-controls/",
     "additionalSources": []
   },
   {
@@ -8298,75 +8362,5 @@
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/ndiligence-releases-four-year-study-identifying-a-critical-supply-chain-vulnerability-across-50-platform-types/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cyber.gc.ca/en/alerts-advisories/barracuda-networks-security-advisory-av26-1112",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/barracuda-networks-security-advisory-av26-1112",
-    "title": "Barracuda Vulnerabilities CVE-2026-116606 Exploited",
-    "headline": "Barracuda Vulnerabilities CVE-2026-116606 Exploited",
-    "summary": "Barracuda Email Security Gateway, Load Balancer ADC, Web Application Firewall, and Web Security Gateway are affected by CVE-2026-116606, a vulnerability exploited in the wild. The flaw allows attackers to execute arbitrary code on the affected devices, potentially compromising network traffic and user data. Barracuda recommends applying the latest firmware updates and reviewing the advisory links to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "publishedAt": "2026-11-12T14:22:59.000Z",
-    "ingestedAt": "2026-11-15T03:43:13.329Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cyber.gc.ca/en/alerts-advisories/barracuda-networks-security-advisory-av26-1112",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/active-exploitation-of-outlook-0-day-vulnerability/",
-    "sourceUrl": "https://cybersecuritynews.com/active-exploitation-of-outlook-0-day-vulnerability/",
-    "title": "CISA Confirms Active Exploitation of Outlook User Interaction 0-Day Vulnerability",
-    "headline": "CISA Confirms Active Exploitation of Outlook User Interaction 0-Day Vulnerability",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency has confirmed active exploitation of a Microsoft Outlook zero-day vulnerability CVE-2026-124194 that can expose user authentication data. According to Microsoft’s security advisory, an attacker can send a specially crafted message file and persuade a victim to open it in Outlook.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-12T14:11:54.000Z",
-    "ingestedAt": "2026-11-12T14:43:11.994Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-124194"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://www.huntress.com/blog/crafty-microsoft-teams-booking-flow-disguises-device-code-phishing",
-    "sourceUrl": "https://www.huntress.com/blog/crafty-microsoft-teams-booking-flow-disguises-device-code-phishing",
-    "title": "Teams Booking Flow Conceals Device Code Phishing",
-    "headline": "Teams Booking Flow Conceals Device Code Phishing",
-    "summary": "Threat actors leveraged a Microsoft Teams meeting-booking flow to deliver device code phishing, tricking users into authorizing attacker access. The attack exploited the Teams booking interface’s lack of device-code validation, allowing attackers to obtain temporary access tokens without user credentials. Security teams should enforce MFA, disable unused device-code flows, and monitor for anomalous token usage to mitigate this threat.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Huntress",
-    "publishedAt": "2026-11-12T14:00:00.000Z",
-    "ingestedAt": "2026-11-13T07:44:09.950Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.huntress.com/blog/crafty-microsoft-teams-booking-flow-disguises-device-code-phishing",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/red-hat-quay-vulnerability/",
-    "sourceUrl": "https://cybersecuritynews.com/red-hat-quay-vulnerability/",
-    "title": "Red Hat Quay Vulnerability Enables Token Hijacking",
-    "headline": "Red Hat Quay Vulnerability Enables Token Hijacking",
-    "summary": "Red Hat Quay contains a critical flaw that allows unauthenticated attackers reaching a registry’s key server to hijack token signing. The vulnerability, identified as CVE-2026-123710, carries a CVSS score of 9.8, indicating a high-impact remote code execution risk. Red Hat released a patch on November 11 2026; administrators should update Quay immediately and verify token signing integrity.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-12T13:57:37.000Z",
-    "ingestedAt": "2026-11-12T15:43:57.200Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/red-hat-quay-vulnerability/",
-    "additionalSources": [],
-    "cves": [
-      "CVE-2026-123710"
-    ]
   }
 ]

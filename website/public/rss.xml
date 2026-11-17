@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 06:44:07 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 07:43:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Kazakh National Extradited for Ransomware Attacks</title>
+      <link>https://secubuzz.com/news/kazakh-national-extradited-for-ransomware-attacks-451255e7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kazakh-national-extradited-for-ransomware-attacks-451255e7</guid>
+      <description><![CDATA[A Kazakh national was extradited from Italy to the U.S. to face charges for allegedly targeting U.S. schools, hospitals, and healthcare entities with ransomware. He is accused of orchestrating attacks that leveraged ransomware to extort victims, though no confirmed payments or active exploitation have been reported. U.S. authorities have initiated legal proceedings, underscoring international cooperation to prosecute ransomware affiliates.]]></description>
+      <pubDate>Tue, 17 Nov 2026 07:25:44 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/">BleepingComputer</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>AI Security Audits Hindered by Excessive Instructions</title>
+      <link>https://secubuzz.com/news/ai-security-audits-hindered-by-excessive-instructi-59fcc490</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-security-audits-hindered-by-excessive-instructi-59fcc490</guid>
+      <description><![CDATA[GitHub's security research team uses AI agents to audit software for vulnerabilities, focusing initially on authentication and authorization bugs. The interview explains that overly detailed prompts can impede AI performance, so prompts are tested and trimmed for each model to improve threat modeling accuracy. Human reviewers verify each report to filter false positives before delivering findings to maintainers.]]></description>
+      <pubDate>Tue, 17 Nov 2026 07:00:54 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/17/peter-stockli-github-ai-security-audits/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Anthropic Shortens Disclosure Deadlines to 30 Days</title>
+      <link>https://secubuzz.com/news/anthropic-shortens-disclosure-deadlines-to-30-days-cf061609</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-shortens-disclosure-deadlines-to-30-days-cf061609</guid>
+      <description><![CDATA[Anthropic announced it will publicly disclose high- and critical-severity vulnerabilities after 30 days, reducing the previous 90-day window. All other reported bugs will have a 45-day disclosure period, effective for reports submitted on or after January 1 2027, while existing reports retain their original deadlines. The change aims to prevent prolonged private exposure of serious bugs in Anthropic models.]]></description>
+      <pubDate>Tue, 17 Nov 2026 06:46:16 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/17/anthropic-vulnerability-disclosure-days/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>ScreenConnect Vulnerability Enables Unauthorized Access</title>
       <link>https://secubuzz.com/news/screenconnect-vulnerability-enables-unauthorized-a-bcc9a6d9</link>
@@ -23,6 +50,15 @@
       <description><![CDATA[In Q3 2026, AI-focused cybersecurity seed deals accounted for over one-third of total cybersecurity funding, despite a slight dip from the previous quarter. DataTribe’s PitchBook analysis shows capital is concentrating in fewer, larger rounds, raising the threshold for post-seed financing. The U.S. venture market remains robust, delivering one of its best quarters since 2021, even as cybersecurity seed activity slows.]]></description>
       <pubDate>Tue, 17 Nov 2026 06:19:27 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/17/cybersecurity-seed-funding-deals/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Unifies Patch Management for Unbootable PCs</title>
+      <link>https://secubuzz.com/news/microsoft-unifies-patch-management-for-unbootable-e74d7bdd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-unifies-patch-management-for-unbootable-e74d7bdd</guid>
+      <description><![CDATA[Microsoft expands to let Intune policy control updates, .NET Framework, and recovery for PCs that fail to boot. The controls let administrators set automatic or manual approval per update type, reducing drift and simplifying patch management. Security teams should apply Intune update, enable the policy template, and monitor compliance dashboards for timely patch deployment.]]></description>
+      <pubDate>Tue, 17 Nov 2026 06:00:48 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/17/microsoft-windows-autopatch-controls/">Help Net Security</source>
       <category>General</category>
     </item>
     <item>
@@ -420,42 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 16:41:44 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-use-ai-powered-marketplace/">Cyber Security News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>China-Nexus Actors Breach Ten Organizations with AI Attacks</title>
-      <link>https://secubuzz.com/news/china-nexus-actors-breach-ten-organizations-with-a-0050d0d2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/china-nexus-actors-breach-ten-organizations-with-a-0050d0d2</guid>
-      <description><![CDATA[China-linked actors used the autonomous tool Cairn to breach ten organizations across advanced manufacturing, defense, and civil-rights sectors. The attacks leveraged AI-driven credential harvesting and lateral movement, enabling attackers to exfiltrate sensitive data without detection. Affected organizations should enforce multi-factor authentication, monitor for anomalous lateral activity, and apply the latest security patches.]]></description>
-      <pubDate>Mon, 16 Nov 2026 16:36:55 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/china-nexus-actors-breach-10-organizations-ai-driven-attacks">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Ubuntu GStreamer Vulnerabilities Disclosed</title>
-      <link>https://secubuzz.com/news/ubuntu-gstreamer-vulnerabilities-disclosed-b047a7e7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-gstreamer-vulnerabilities-disclosed-b047a7e7</guid>
-      <description><![CDATA[Ubuntu GStreamer flaws let remote or local attackers trigger denial-of-service or arbitrary code by mishandling RTSP, video, AV1, and subtitle data. CVE-2026-85150, CVE-2026-86476, and CVE-2026-119729 affect Ubuntu 18.04-26.10 LTS and carry high-severity scores with public PoC evidence. Canonical has issued patches for all affected releases; administrators should update GStreamer packages or upgrade to patched versions immediately.]]></description>
-      <pubDate>Mon, 16 Nov 2026 16:24:06 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9094-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Apple Details Secure Exclaves Protecting Camera and Microphone Data</title>
-      <link>https://secubuzz.com/news/apple-details-secure-exclaves-protecting-camera-an-1a71bf89</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-details-secure-exclaves-protecting-camera-an-1a71bf89</guid>
-      <description><![CDATA[Apple disclosed the Secure Exclaves architecture designed to isolate camera and microphone data from the main operating system. The design employs hardware isolation, strict data-sharing rules, and protected privacy indicators to prevent background sensing from accessing active recordings. Security teams should review the new hardware isolation features and update device firmware to ensure compliance with the latest privacy safeguards.]]></description>
-      <pubDate>Mon, 16 Nov 2026 16:04:06 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/apple-reveals-secure-exclaves/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CVE-2026-124223 Microsoft Office SharePoint Remote Code Execution Vulnerability</title>
-      <link>https://secubuzz.com/news/cve-2026-124223-microsoft-office-sharepoint-remote-5ed714a4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-124223-microsoft-office-sharepoint-remote-5ed714a4</guid>
-      <description><![CDATA[This CVE was addressed by updates that were released in November 2026, but the CVE was inadvertently omitted from the November 2026 Security Updates. Customers who have already installed the November 2026 updates do not need to take any further action.]]></description>
-      <pubDate>Mon, 16 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124223">Microsoft MSRC</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
