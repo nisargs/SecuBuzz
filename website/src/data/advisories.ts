@@ -5129,7 +5129,7 @@ export const advisories: Advisory[] = [
   {
     "cve": "CVE-2026-48558",
     "slug": "cve-2026-48558",
-    "vendor": "SimpleHelp ",
+    "vendor": "SimpleHelp",
     "product": "SimpleHelp",
     "name": "SimpleHelp Authentication Bypass Vulnerability",
     "dateAdded": "2026-06-29",
@@ -6354,7 +6354,7 @@ export const advisories: Advisory[] = [
   {
     "cve": "CVE-2024-57728",
     "slug": "cve-2024-57728",
-    "vendor": "SimpleHelp ",
+    "vendor": "SimpleHelp",
     "product": "SimpleHelp",
     "name": "SimpleHelp Path Traversal Vulnerability",
     "dateAdded": "2026-04-24",
@@ -6379,7 +6379,7 @@ export const advisories: Advisory[] = [
   {
     "cve": "CVE-2024-57726",
     "slug": "cve-2024-57726",
-    "vendor": "SimpleHelp ",
+    "vendor": "SimpleHelp",
     "product": "SimpleHelp",
     "name": "SimpleHelp Missing Authorization Vulnerability",
     "dateAdded": "2026-04-24",
@@ -9155,7 +9155,7 @@ export const advisories: Advisory[] = [
   {
     "cve": "CVE-2025-66644",
     "slug": "cve-2025-66644",
-    "vendor": "Array Networks ",
+    "vendor": "Array Networks",
     "product": "ArrayOS AG",
     "name": "Array Networks ArrayOS AG OS Command Injection Vulnerability",
     "dateAdded": "2025-12-08",
@@ -14105,7 +14105,7 @@ export const advisories: Advisory[] = [
   {
     "cve": "CVE-2024-57727",
     "slug": "cve-2024-57727",
-    "vendor": "SimpleHelp ",
+    "vendor": "SimpleHelp",
     "product": "SimpleHelp",
     "name": "SimpleHelp Path Traversal Vulnerability",
     "dateAdded": "2025-02-13",
@@ -15305,7 +15305,7 @@ export const advisories: Advisory[] = [
   {
     "cve": "CVE-2023-28461",
     "slug": "cve-2023-28461",
-    "vendor": "Array Networks ",
+    "vendor": "Array Networks",
     "product": "AG/vxAG ArrayOS",
     "name": "Array Networks AG and vxAG ArrayOS Missing Authentication for Critical Function Vulnerability",
     "dateAdded": "2024-11-25",

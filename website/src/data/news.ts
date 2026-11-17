@@ -11,6 +11,84 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "hertz-fined-1-5m-for-california-privacy-violation-140d476d",
+    "title": "Hertz Fined $1.5M for California Privacy Violation",
+    "summary": "Hertz was fined $1.5 million by the California Privacy Protection Agency for violating state data privacy regulations, citing improper handling of consumer data. The action highlights gaps in Hertz’s data governance, notably insufficient consent management and audit controls across its fleet-management platform.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/california-fines-hertz-state-data-privacy-law",
+    "publishedAt": "2026-11-17T17:13:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hertz-fined-1-5m-for-california-privacy-violation",
+      "article-140d476d",
+      "140d476d",
+      "hertz-fined-1-5m-for-california-privacy-violation-191aa1"
+    ]
+  },
+  {
+    "slug": "nsa-net-faces-unspecified-disruptions-technicians-b6d9e8a6",
+    "title": "NSA Net Faces Unspecified Disruptions, Technicians Restore Network",
+    "summary": "NSA’s classified internal network, NSA Net, has suffered unspecified disruptions, leading the agency to schedule staggered arrivals at Fort Meade for restoration. The outage temporarily impairs connectivity within the network, potentially affecting classified communications and operational readiness. Technicians are diagnosing the root cause and working to restore full functionality, with no public disclosure of the technical details.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/nsa-net-disruptions",
+    "publishedAt": "2026-11-17T16:21:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nsa-net-faces-unspecified-disruptions-technicians",
+      "article-b6d9e8a6",
+      "b6d9e8a6",
+      "nsa-net-faces-unspecified-disruptions-technicians-1a0ee8",
+      "nsa-net-faces-unspecified-disruptions-technicians-restore-ne"
+    ]
+  },
+  {
+    "slug": "java-17-rce-threat-prompted-oracle-update-9a677bbe",
+    "title": "Java 17 RCE Threat Prompted Oracle Update",
+    "summary": "A remote code execution flaw in Java 17, CVE-2026-114938, exposes OpenJDK 17.0.6 and newer to unauthenticated attackers. The vulnerability permits arbitrary code execution without credentials, potentially compromising server integrity; public reports confirm exploitability, though details remain unverified. Oracle released 11 security updates on the same day; administrators should apply the latest Java SE patches to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/java-17-rce-vulnerability/",
+    "publishedAt": "2026-11-17T16:11:10.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "java-17-rce-threat-prompted-oracle-update",
+      "article-9a677bbe",
+      "9a677bbe",
+      "java-17-rce-threat-prompted-oracle-update-4039b5"
+    ]
+  },
+  {
+    "slug": "windows-powershell-rce-vulnerability-cve-2026-4040-f13c866b",
+    "title": "Windows PowerShell RCE Vulnerability CVE-2026-40400",
+    "summary": "A remote code execution flaw in Windows PowerShell, identified as CVE-2026-40400, was disclosed by Microsoft. The vulnerability allows attackers to execute arbitrary commands on affected systems via crafted PowerShell input, potentially compromising system integrity. Microsoft has issued a patch; administrators should update PowerShell to the latest version and apply the vendor’s security update to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
+    "publishedAt": "2026-11-17T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-40400"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-powershell-rce-vulnerability-cve-2026-4040",
+      "article-f13c866b",
+      "f13c866b",
+      "windows-powershell-rce-vulnerability-cve-2026-4040-747aa9",
+      "windows-powershell-rce-vulnerability-cve-2026-40400"
+    ]
+  },
+  {
     "slug": "flipper-devices-unveils-flipper-one-linux-multi-to-1580310a",
     "title": "Flipper Devices Unveils Flipper One Linux Multi-Tool",
     "summary": "Flipper Devices announced the Flipper One, a $399 Linux-based computer and networking multi-tool, as part of a crowdfunding campaign. The device builds on the Flipper Zero platform, offering expanded hardware interfaces and a full Linux OS for penetration testing and network analysis. Users can support the project through the campaign, and the company will provide firmware updates and documentation post-release.",
@@ -63,6 +141,43 @@ export const news: NewsBrief[] = [
       "article-a3cdc3c2",
       "a3cdc3c2",
       "phishing-kits-capture-microsoft-365-tokens-46423b"
+    ]
+  },
+  {
+    "slug": "device-code-phishing-threatens-ai-coding-agents-9d3ff1a6",
+    "title": "Device Code Phishing Threatens AI Coding Agents",
+    "summary": "Lab research shows device code phishing can target AI coding agents, using GitHub Copilot CLI as a proof-of-concept. The technique exploits weak consent verification during device authorization, allowing attackers to capture user credentials and potentially run arbitrary code. Teams should enforce multi-factor authentication for device flows, audit logs, and restrict AI agent permissions to mitigate credential theft.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
+    "publishedAt": "2026-11-17T15:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "device-code-phishing-threatens-ai-coding-agents",
+      "article-9d3ff1a6",
+      "9d3ff1a6",
+      "device-code-phishing-threatens-ai-coding-agents-7908a5"
+    ]
+  },
+  {
+    "slug": "hackers-abuse-microsoft-sharepoint-and-github-to-h-457e7c8d",
+    "title": "Hackers Abuse Microsoft SharePoint and GitHub to Hide GraphDoor Backdoor Attacks on Government Networks",
+    "summary": "Hackers are hiding a backdoor named GraphDoor inside normal Microsoft and Ably traffic. The goal is to spy on government networks in Asia and Africa. Kaspersky’s GReAT team detailed the findings on November 17, 2026, in the second part of its Operation ShadowCloud research.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/graphdoor-sharepoint-backdoor/",
+    "publishedAt": "2026-11-17T14:40:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-abuse-microsoft-sharepoint-and-github-to-h",
+      "article-457e7c8d",
+      "457e7c8d",
+      "hackers-abuse-microsoft-sharepoint-and-github-to-h-2e0b07",
+      "hackers-abuse-microsoft-sharepoint-and-github-to-hide-graphd"
     ]
   },
   {
@@ -230,6 +345,25 @@ export const news: NewsBrief[] = [
       "article-d487253c",
       "d487253c",
       "amazon-lookalike-job-offer-is-a-reshipping-scam-628eac"
+    ]
+  },
+  {
+    "slug": "fbi-warns-hackers-abuse-google-search-to-spread-go-cdbe87a7",
+    "title": "FBI Warns Hackers Abuse Google Search to Spread Gootloader Malware and Launch Ransomware Attacks",
+    "summary": "The FBI has warned that cybercriminals are using poisoned search results and compromised WordPress websites to spread Gootloader malware, giving ransomware operators an entry point into business networks. The attacks turn searches for legal documents, contracts, and business information into opportunities to trick users into downloading malicious JavaScript files.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/spread-gootloader-malware/",
+    "publishedAt": "2026-11-17T13:29:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-warns-hackers-abuse-google-search-to-spread-go",
+      "article-cdbe87a7",
+      "cdbe87a7",
+      "fbi-warns-hackers-abuse-google-search-to-spread-go-2f8884",
+      "fbi-warns-hackers-abuse-google-search-to-spread-gootloader-m"
     ]
   },
   {
@@ -1331,6 +1465,25 @@ export const news: NewsBrief[] = [
       "article-724f3c40",
       "724f3c40",
       "mechanize-vulnerability-enables-server-induced-dos-7e7ab0"
+    ]
+  },
+  {
+    "slug": "optimizely-snippets-hijacked-delivering-malicious-48fd5575",
+    "title": "Optimizely Snippets Hijacked, Delivering Malicious Code",
+    "summary": "Optimizely Web Experimentation projects were hijacked on November 16, delivering malicious JavaScript to visitors of major websites. The flaw in Optimizely’s snippet injection let attackers embed unauthorized code that runs in users’ browsers, potentially exfiltrating data. Organizations should audit Optimizely projects, remove suspicious snippets, and apply the vendor’s latest patch to block unauthorized code.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Sophos Threat Research",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/hijacked-optimizely-snippets-served-malicious-code",
+    "publishedAt": "2026-11-17T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "optimizely-snippets-hijacked-delivering-malicious",
+      "article-48fd5575",
+      "48fd5575",
+      "optimizely-snippets-hijacked-delivering-malicious-516542",
+      "optimizely-snippets-hijacked-delivering-malicious-code"
     ]
   },
   {
@@ -9638,159 +9791,6 @@ export const news: NewsBrief[] = [
       "551983f7",
       "red-hat-updates-single-sign-on-for-openshift-platf-37d668",
       "red-hat-updates-single-sign-on-for-openshift-platforms"
-    ]
-  },
-  {
-    "slug": "citrix-netscaler-vulnerabilities-affect-multiple-p-16b51358",
-    "title": "Citrix NetScaler Vulnerabilities Affect Multiple Products",
-    "summary": "Citrix NetScaler ADC, Gateway, Console, and Secure Access Client products prior to versions contain CVE-2026-120869 and CVE-2026-118269 vulnerabilities that could allow remote code execution. The advisory does not disclose the exploitation mechanism, but warns that the flaws could compromise system integrity or allow unauthorized access. Citrix recommends reviewing the advisory and applying available patches to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/citrix-security-advisory-av26-1150",
-    "publishedAt": "2026-11-12T18:37:14.000Z",
-    "cves": [
-      "CVE-2026-120869",
-      "CVE-2026-118269"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "citrix-netscaler-vulnerabilities-affect-multiple-p",
-      "article-16b51358",
-      "16b51358",
-      "citrix-netscaler-vulnerabilities-affect-multiple-p-32a708",
-      "citrix-netscaler-vulnerabilities-affect-multiple-products"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99763-critical-red-hat-single-sign-on-7-9a27c18e",
-    "title": "RHSA-2026:99763: Critical: Red Hat Single Sign-On 7.6.14 security update",
-    "summary": "A security update is now available for Red Hat Single Sign-On 7.6 from the Customer Portal. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99763",
-    "publishedAt": "2026-11-12T18:35:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99763-critical-red-hat-single-sign-on-7",
-      "article-9a27c18e",
-      "9a27c18e",
-      "rhsa-2026-99763-critical-red-hat-single-sign-on-7-37d668",
-      "rhsa-2026-99763-critical-red-hat-single-sign-on-7-6-14-secur"
-    ]
-  },
-  {
-    "slug": "apple-os-vulnerabilities-affect-ios-macos-visionos-f2004518",
-    "title": "Apple OS Vulnerabilities Affect iOS, macOS, visionOS, watchOS",
-    "summary": "Apple iOS, iPadOS, macOS, visionOS, and watchOS versions before 18.7.12, 26.7.3, 27.2.1, 15.8.3, and 26.6.1 contain undisclosed vulnerabilities that could enable remote code execution. The advisory does not disclose the flaw’s mechanism, but warns that exploitation could compromise user data or system integrity. Apple advises users to review the advisory and install any released patches promptly to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/apple-security-advisory-av26-1149",
-    "publishedAt": "2026-11-12T18:35:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-os-vulnerabilities-affect-ios-macos-visionos",
-      "article-f2004518",
-      "f2004518",
-      "apple-os-vulnerabilities-affect-ios-macos-visionos-337e98",
-      "apple-os-vulnerabilities-affect-ios-macos-visionos-watchos"
-    ]
-  },
-  {
-    "slug": "wiz-research-publishes-aspm-ai-era-risk-mitigation-af84827b",
-    "title": "Wiz Research Publishes ASPM AI Era Risk Mitigation Guide",
-    "summary": "Wiz Research releases a guide on ASPM in the AI era, focusing on rapid risk remediation for software supply chains. The article recommends simplifying ownership mapping, applying code fixes, and automating workflows to reduce MTTR and eliminate remediation bottlenecks. Security teams should adopt these practices to streamline vulnerability triage and accelerate patch deployment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/aspm-ai-era-pt-3-fixing-risk-code-speed",
-    "publishedAt": "2026-11-12T18:32:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wiz-research-publishes-aspm-ai-era-risk-mitigation",
-      "article-af84827b",
-      "af84827b",
-      "wiz-research-publishes-aspm-ai-era-risk-mitigation-7e5daa",
-      "wiz-research-publishes-aspm-ai-era-risk-mitigation-guide"
-    ]
-  },
-  {
-    "slug": "maersk-reports-legacy-system-cyber-incident-742c5924",
-    "title": "Maersk Reports Legacy System Cyber Incident",
-    "summary": "Maersk disclosed a cyber incident that impacted its legacy system, adding to a series of attacks on shipping ports worldwide. The event follows a ransomware attack on Brazil’s largest port last week, highlighting persistent threats to maritime infrastructure. Maritime operators should review legacy system security, apply available patches, and strengthen monitoring to mitigate future incidents.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/shipping-giant-maersk-says-recent-incident-affected-legacy-system",
-    "publishedAt": "2026-11-12T18:28:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "maersk-reports-legacy-system-cyber-incident",
-      "article-742c5924",
-      "742c5924",
-      "maersk-reports-legacy-system-cyber-incident-7f0c84"
-    ]
-  },
-  {
-    "slug": "anthropic-releases-self-hosted-claude-managed-agen-1c93b5d8",
-    "title": "Anthropic Releases Self-Hosted Claude Managed Agents in Beta",
-    "summary": "Anthropic released a self-hosted version of Claude Managed Agents in private beta to protect automated corporate workflows. The deployment option keeps agent credentials, sandboxes, session histories, and harnesses directly within an organization's on-premise or cloud environment. Customers seeking to secure unattended tasks can request access to the self-hosted feature through their Anthropic account team.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/anthropic-self-hosted-claude-managed-agents/",
-    "publishedAt": "2026-11-12T18:07:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-releases-self-hosted-claude-managed-agen",
-      "article-1c93b5d8",
-      "1c93b5d8",
-      "anthropic-releases-self-hosted-claude-managed-agen-34ed84",
-      "anthropic-releases-self-hosted-claude-managed-agents-in-beta"
-    ]
-  },
-  {
-    "slug": "threatsday-59-linux-kernel-bugs-falcon-spyware-gso-8e5a5539",
-    "title": "ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories",
-    "summary": "A search result isn't always safe. An access request isn't always harmless. Attackers are using fake websites, stolen access, and trusted tools to get into places they shouldn't be.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
-    "publishedAt": "2026-11-12T18:02:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "threatsday-59-linux-kernel-bugs-falcon-spyware-gso",
-      "article-8e5a5539",
-      "8e5a5539",
-      "threatsday-59-linux-kernel-bugs-falcon-spyware-gso-3dad84",
-      "threatsday-59-linux-kernel-bugs-falcon-spyware-gsocket-backd"
-    ]
-  },
-  {
-    "slug": "homeview-releases-version-27-2-with-bug-fixes-2a11ae0d",
-    "title": "HomeView Releases Version 27.2 with Bug Fixes",
-    "summary": "HomeView Software version 27.2 (24V526) was released, offering updated functionality and bug fixes. The update addresses minor stability issues and enhances compatibility with newer operating system versions. Users should download the new build from the vendor portal and apply it to maintain optimal performance and verify integrity before deployment and confirm checksum integrity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11122026a",
-    "publishedAt": "2026-11-12T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "homeview-releases-version-27-2-with-bug-fixes",
-      "article-2a11ae0d",
-      "2a11ae0d",
-      "homeview-releases-version-27-2-with-bug-fixes-6610eb"
     ]
   }
 ];
