@@ -2,6 +2,31 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-115731",
+    "slug": "cve-2026-115731",
+    "vendor": "Perforce",
+    "product": "Puppet Enterprise",
+    "name": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+    "dateAdded": "2026-11-17",
+    "dueDate": "2026-12-01",
+    "severity": "High",
+    "cwe": "CWE-502, CWE-94",
+    "ransomware": false,
+    "description": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request. If the certificate authority automatically signs requests without strong verification, an unauthenticated network attacker can obtain a valid certificate and exploit the vulnerability.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-115731"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
     "cve": "CVE-2026-119351",
     "cveID": "CVE-2026-119351",
     "slug": "cve-2026-119351",

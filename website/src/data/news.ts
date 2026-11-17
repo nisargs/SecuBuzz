@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "compromised-fireworks-key-enables-cursor-data-brea-1302a567",
+    "title": "Compromised Fireworks Key Enables Cursor Data Breach",
+    "summary": "Threat actors leveraged a compromised key issued to AI platform Fireworks to gain unauthorized access to Cursor’s data and credentials. The breach exposed sensitive user information and authentication tokens, potentially enabling further credential theft or lateral movement within Cursor’s ecosystem. Cursor should immediately rotate compromised keys, audit access logs, and enforce multi-factor authentication to mitigate future exploitation.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
+    "publishedAt": "2026-11-17T18:38:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "compromised-fireworks-key-enables-cursor-data-brea",
+      "article-1302a567",
+      "1302a567",
+      "compromised-fireworks-key-enables-cursor-data-brea-54b178",
+      "compromised-fireworks-key-enables-cursor-data-breach"
+    ]
+  },
+  {
+    "slug": "researchers-hijack-hugging-face-account-for-popula-7d2ade0d",
+    "title": "Researchers hijack Hugging Face account for popular Kokoro AI model",
+    "summary": "A Lack of ownership verification on the Hugging Face platform allowed researchers to take control of Kokoro, a text-to-speech model used in projects from Google, NVIDIA, AMD, Intel, and Amazon Web Services.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/",
+    "publishedAt": "2026-11-17T18:21:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researchers-hijack-hugging-face-account-for-popula",
+      "article-7d2ade0d",
+      "7d2ade0d",
+      "researchers-hijack-hugging-face-account-for-popula-60ecd8",
+      "researchers-hijack-hugging-face-account-for-popular-kokoro-a"
+    ]
+  },
+  {
     "slug": "hertz-fined-1-5m-for-california-privacy-violation-140d476d",
     "title": "Hertz Fined $1.5M for California Privacy Violation",
     "summary": "Hertz was fined $1.5 million by the California Privacy Protection Agency for violating state data privacy regulations, citing improper handling of consumer data. The action highlights gaps in Hertz’s data governance, notably insufficient consent management and audit controls across its fleet-management platform.",
@@ -26,6 +64,24 @@ export const news: NewsBrief[] = [
       "article-140d476d",
       "140d476d",
       "hertz-fined-1-5m-for-california-privacy-violation-191aa1"
+    ]
+  },
+  {
+    "slug": "gitlab-vulnerabilities-prompt-patch-release-5a2ec8a9",
+    "title": "GitLab Vulnerabilities Prompt Patch Release",
+    "summary": "GitLab disclosed multiple vulnerabilities affecting versions prior to 19.3.9, 19.4.8, and 19.5.6 that could allow attackers to compromise repository integrity or execute unauthorized code. The advisory does not list specific CVE identifiers but recommends applying the latest patch releases to mitigate potential exploitation. Administrators should update to GitLab 19.5.6, 19.4.8, or 19.3.9 and review release notes for additional security guidance.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/gitlab-security-advisory-av26-1168",
+    "publishedAt": "2026-11-17T16:42:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-vulnerabilities-prompt-patch-release",
+      "article-5a2ec8a9",
+      "5a2ec8a9",
+      "gitlab-vulnerabilities-prompt-patch-release-4ddfa9"
     ]
   },
   {
@@ -162,6 +218,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ipsos-reports-internal-system-breach-2a6b86e0",
+    "title": "Ipsos Reports Internal System Breach",
+    "summary": "Ipsos announced a breach of its internal system, revealing that attackers accessed confidential data and credentials. The incident was disclosed five days after the company filed a complaint with authorities, indicating a potential delay in detection. Ipsos should conduct a comprehensive forensic investigation, notify affected stakeholders, and strengthen access controls to prevent future intrusions.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system/",
+    "publishedAt": "2026-11-17T14:55:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ipsos-reports-internal-system-breach",
+      "article-2a6b86e0",
+      "2a6b86e0",
+      "ipsos-reports-internal-system-breach-4bf77b"
+    ]
+  },
+  {
     "slug": "hackers-abuse-microsoft-sharepoint-and-github-to-h-457e7c8d",
     "title": "Hackers Abuse Microsoft SharePoint and GitHub to Hide GraphDoor Backdoor Attacks on Government Networks",
     "summary": "Hackers are hiding a backdoor named GraphDoor inside normal Microsoft and Ably traffic. The goal is to spy on government networks in Asia and Africa. Kaspersky’s GReAT team detailed the findings on November 17, 2026, in the second part of its Operation ShadowCloud research.",
@@ -197,6 +271,25 @@ export const news: NewsBrief[] = [
       "e5639880",
       "envoy-launches-visitors-critical-visitor-workflow-497b5f",
       "envoy-launches-visitors-critical-visitor-workflow-solution"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-unpatched-microsoft-exchange-serve-dcaa14f1",
+    "title": "Hackers Exploit Unpatched Microsoft Exchange Servers to Deploy Custom RATs Across Southeast Asia",
+    "summary": "Hackers are exploiting unpatched Microsoft Exchange servers and vulnerable web servers to break into government networks across Southeast Asia, deploying custom remote access trojans built for quiet, long-term spying. The campaign combines server exploitation, targeted phishing, credential theft, and mailbox access to pursue sensitive government information.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-exchange-servers/",
+    "publishedAt": "2026-11-17T14:24:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-unpatched-microsoft-exchange-serve",
+      "article-dcaa14f1",
+      "dcaa14f1",
+      "hackers-exploit-unpatched-microsoft-exchange-serve-636a1d",
+      "hackers-exploit-unpatched-microsoft-exchange-servers-to-depl"
     ]
   },
   {
@@ -293,6 +386,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hackers-use-fake-shipment-zip-files-and-dll-side-l-d100b481",
+    "title": "Hackers Use Fake Shipment ZIP Files and DLL Side-Loading to Deploy PureLogs and PureRAT Malware",
+    "summary": "Hackers are using a shipment-themed ZIP archive to launch a Windows malware chain that combines a legitimate signed application, DLL side-loading, and hidden Python code. The attack disguises its components as shipping material, images, documents, and a browser updater before running a payload linked to PureLogs and PureRAT infrastructure.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fake-shipment-zip-files-and-dll-side-loading/",
+    "publishedAt": "2026-11-17T13:58:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-fake-shipment-zip-files-and-dll-side-l",
+      "article-d100b481",
+      "d100b481",
+      "hackers-use-fake-shipment-zip-files-and-dll-side-l-7a52b0",
+      "hackers-use-fake-shipment-zip-files-and-dll-side-loading-to-"
+    ]
+  },
+  {
+    "slug": "eu-accuses-temu-of-weak-moderation-f6497b89",
+    "title": "EU Accuses Temu of Weak Moderation",
+    "summary": "The European Commission found Temu in breach of the Digital Services Act for weak product checks and poor content moderation. Announced on November 17, 2026, the findings question whether the marketplace stops illegal products from reaching European buyers. The case centers on Article 35 of the DSA and could trigger further regulatory action if Temu does not strengthen moderation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/temu-breaching-digital-services-act/",
+    "publishedAt": "2026-11-17T13:56:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eu-accuses-temu-of-weak-moderation",
+      "article-f6497b89",
+      "f6497b89",
+      "eu-accuses-temu-of-weak-moderation-1d274f"
+    ]
+  },
+  {
     "slug": "connectsecure-launches-agentic-ai-pen-testing-02aaed91",
     "title": "ConnectSecure Launches Agentic AI Pen Testing",
     "summary": "ConnectSecure has introduced Agentic AI Penetration Testing, a tool that assists MSPs and enterprise teams in assessing which vulnerabilities are likely exploitable. The solution provides deeper insight into attack paths and prioritizes remediation efforts, reducing the time required for expert analysis. Adoption of this AI-driven approach can accelerate vulnerability triage and improve overall security posture.",
@@ -308,6 +438,24 @@ export const news: NewsBrief[] = [
       "article-02aaed91",
       "02aaed91",
       "connectsecure-launches-agentic-ai-pen-testing-411cd2"
+    ]
+  },
+  {
+    "slug": "windows-11-telemetry-tracks-ai-coding-agents-20ea69ce",
+    "title": "Windows 11 Telemetry Tracks AI Coding Agents",
+    "summary": "Windows 11 records which AI coding agents and developer tools run, sending that data to Microsoft when optional diagnostics are enabled. Researcher Xusheng Li first reported the feature on November 16, 2026, and published a technical write-up. The disclosure raises a privacy issue but no vulnerability is present; disabling optional diagnostics stops telemetry.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/windows-11-ai-agent-tracking/",
+    "publishedAt": "2026-11-17T13:43:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-11-telemetry-tracks-ai-coding-agents",
+      "article-20ea69ce",
+      "20ea69ce",
+      "windows-11-telemetry-tracks-ai-coding-agents-6f4ec6"
     ]
   },
   {
@@ -517,6 +665,68 @@ export const news: NewsBrief[] = [
       "79f09066",
       "deepmind-ai-formally-verifies-signal-protocol-cryp-1dcb34",
       "deepmind-ai-formally-verifies-signal-protocol-cryptography"
+    ]
+  },
+  {
+    "slug": "siemens-simatic-authentication-bypass-vulnerabilit-55c60b80",
+    "title": "Siemens SIMATIC Authentication Bypass Vulnerability Exposed",
+    "summary": "Siemens disclosed an authentication bypass flaw in its SIMATIC product line that lets an on-path attacker hijack a legitimate user session and execute arbitrary code with the victim’s privileges. The vulnerability, CVE-2026-58114, exploits improper session validation, enabling unauthenticated remote code execution and potentially compromising industrial control systems. Siemens released patches and recommends applying them or following mitigations.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
+    "publishedAt": "2026-11-17T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-58114"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-simatic-authentication-bypass-vulnerabilit",
+      "article-55c60b80",
+      "55c60b80",
+      "siemens-simatic-authentication-bypass-vulnerabilit-41aee7",
+      "siemens-simatic-authentication-bypass-vulnerability-exposed"
+    ]
+  },
+  {
+    "slug": "siemens-meta-iot2050-command-injection-vulnerabili-510d7a03",
+    "title": "Siemens meta-iot2050 Command Injection Vulnerability",
+    "summary": "Siemens meta-iot2050 firmware update tool (CVE-2026-109830) has a command injection flaw that lets attackers alter configuration files to run arbitrary root commands. The flaw exploits improper neutralization of special elements in OS command construction, rated CVSS 7.3, enabling unauthenticated remote code execution. Siemens released patches for 01.03.01+ and recommends firmware updates or disabling the tool.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
+    "publishedAt": "2026-11-17T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-109830"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-meta-iot2050-command-injection-vulnerabili",
+      "article-510d7a03",
+      "510d7a03",
+      "siemens-meta-iot2050-command-injection-vulnerabili-41aee7",
+      "siemens-meta-iot2050-command-injection-vulnerability"
+    ]
+  },
+  {
+    "slug": "simatic-wincc-active-content-execution-flaw-b630172a",
+    "title": "SIMATIC WinCC Active Content Execution Flaw",
+    "summary": "Siemens SIMATIC WinCC (CVE-2026-59082) contains an implicit active content execution flaw that allows attackers to run arbitrary code by opening malicious files. The vulnerability, rated CVSS 7.8, exploits insufficient UI warnings for dangerous operations, enabling unauthenticated remote code execution on affected versions. Siemens issued patches for WinCC V7.5, V8.0, and V8.1 and recommends applying updates or disabling active content.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
+    "publishedAt": "2026-11-17T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-59082"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "simatic-wincc-active-content-execution-flaw",
+      "article-b630172a",
+      "b630172a",
+      "simatic-wincc-active-content-execution-flaw-41aee7"
     ]
   },
   {
@@ -9589,208 +9799,6 @@ export const news: NewsBrief[] = [
       "cf8beca4",
       "cve-2026-127119-unverified-ownership-of-the-defaul-1528db",
       "cve-2026-127119-unverified-ownership-of-the-default-emr-clus"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-thunderbird-security-update-08e51de2",
-    "title": "Red Hat Issues thunderbird Security Update",
-    "summary": "Red Hat released an important security update for thunderbird on RHEL 9.2 Update Services for SAP Solutions, fixing bugs. The update is rated Important by Red Hat Product Security, and CVSS base scores for each vulnerability are listed in the references. Administrators should apply the patch promptly to address the identified issues and review the CVE links for severity details.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99749",
-    "publishedAt": "2026-11-12T19:02:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-thunderbird-security-update",
-      "article-08e51de2",
-      "08e51de2",
-      "red-hat-issues-thunderbird-security-update-37d669"
-    ]
-  },
-  {
-    "slug": "amy-reflects-on-anthropology-course-and-questionin-361184f6",
-    "title": "Amy Reflects on Anthropology Course and Questioning",
-    "summary": "Cisco Talos author Amy discusses how a college anthropology course taught her the importance of asking questions to bridge cultural gaps. The reflection emphasizes that curiosity and inquiry can foster mutual understanding and reduce misunderstandings across diverse communities in the context of technology and security. No cybersecurity vulnerabilities or incidents are referenced in this personal narrative.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/never-be-afraid-to-ask-questions/",
-    "publishedAt": "2026-11-12T19:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "amy-reflects-on-anthropology-course-and-questionin",
-      "article-361184f6",
-      "361184f6",
-      "amy-reflects-on-anthropology-course-and-questionin-3458b9",
-      "amy-reflects-on-anthropology-course-and-questioning"
-    ]
-  },
-  {
-    "slug": "docker-issues-advisory-on-engine-and-swarmkit-vuln-f9cf6c63",
-    "title": "Docker Issues Advisory on Engine and SwarmKit Vulnerabilities",
-    "summary": "Docker issued an advisory for vulnerabilities in Engine, Moby, and SwarmKit before 23.0.0, 2.0.0-beta.28, and 1.12.1 that could overwrite forwarded client identity. The flaw stems from a proxy that mishandles identity headers, but no exploitation has been reported. Docker advises reviewing links and applying available updates immediately to secure deployments.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/docker-security-advisory-av26-1153",
-    "publishedAt": "2026-11-12T18:58:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "docker-issues-advisory-on-engine-and-swarmkit-vuln",
-      "article-f9cf6c63",
-      "f9cf6c63",
-      "docker-issues-advisory-on-engine-and-swarmkit-vuln-656362",
-      "docker-issues-advisory-on-engine-and-swarmkit-vulnerabilitie"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-sso-7-6-14-update-for-rhel-7-b589d983",
-    "title": "Red Hat Releases SSO 7.6.14 Update for RHEL 7",
-    "summary": "Red Hat issued a security update for Single Sign-On 7.6.14 on RHEL 7, addressing multiple vulnerabilities. The advisory labels the update as critical, but the vendor rates the security impact as none and provides CVSS scores via CVE links. Administrators should install the new packages immediately to ensure compatibility, though no immediate exploitation risk is reported.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99764",
-    "publishedAt": "2026-11-12T18:58:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-sso-7-6-14-update-for-rhel-7",
-      "article-b589d983",
-      "b589d983",
-      "red-hat-releases-sso-7-6-14-update-for-rhel-7-37d668"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-sso-7-6-14-for-rhel-8-88292ebb",
-    "title": "Red Hat Updates SSO 7.6.14 for RHEL 8",
-    "summary": "Red Hat released a security update for Single Sign-On 7.6.14 on RHEL 8, fixing several vulnerabilities. The advisory marks the update as critical, yet the vendor reports no security impact and references CVSS scores via CVE links. Systems administrators should apply the new packages promptly, though no active exploitation is documented.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99765",
-    "publishedAt": "2026-11-12T18:58:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-sso-7-6-14-for-rhel-8",
-      "article-88292ebb",
-      "88292ebb",
-      "red-hat-updates-sso-7-6-14-for-rhel-8-37d668"
-    ]
-  },
-  {
-    "slug": "red-hat-single-sign-on-7-6-14-updated-on-rhel-9-ba9f65f7",
-    "title": "Red Hat Single Sign-On 7.6.14 Updated on RHEL 9",
-    "summary": "Red Hat released Single Sign-On 7.6.14 packages for RHEL 9 to address identified security issues. The update contains fixes for multiple vulnerabilities, though Red Hat Product Security rated the overall impact as none, indicating no critical flaws were present. Administrators should install the new packages promptly and verify that the SSO service remains operational.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99766",
-    "publishedAt": "2026-11-12T18:57:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-single-sign-on-7-6-14-updated-on-rhel-9",
-      "article-ba9f65f7",
-      "ba9f65f7",
-      "red-hat-single-sign-on-7-6-14-updated-on-rhel-9-37d668"
-    ]
-  },
-  {
-    "slug": "react-server-components-unauthenticated-rce-vulner-53c3d981",
-    "title": "React Server Components Unauthenticated RCE Vulnerability",
-    "summary": "React Server Components in versions prior to 19.0.9, 19.1.10, 19.2.9, and 19.3.1 are vulnerable to an unauthenticated remote code execution flaw. The flaw allows attackers to execute arbitrary code on the server without authentication, potentially compromising application integrity and data. React recommends applying the latest patch releases and updating all affected components to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/react-security-advisory-av26-1152",
-    "publishedAt": "2026-11-12T18:51:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "react-server-components-unauthenticated-rce-vulner",
-      "article-53c3d981",
-      "53c3d981",
-      "react-server-components-unauthenticated-rce-vulner-79bac3",
-      "react-server-components-unauthenticated-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "compat-openssl10-security-update-for-rhel-8-8-51270b4f",
-    "title": "compat-openssl10 Security Update for RHEL 8.8",
-    "summary": "Red Hat released a compat-openssl10 update for RHEL 8.8 and SAP solutions to address critical cryptographic issues. The update fixes multiple vulnerabilities that could allow attackers to bypass SSL/TLS validation, potentially enabling man-in-the-middle attacks, and is rated as Important by Red Hat Product Security. Systems should apply the new packages immediately and verify that OpenSSL functionality remains intact.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99724",
-    "publishedAt": "2026-11-12T18:48:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "compat-openssl10-security-update-for-rhel-8-8",
-      "article-51270b4f",
-      "51270b4f",
-      "compat-openssl10-security-update-for-rhel-8-8-37d669"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99723-important-dnsmasq-security-update-6c9f2bc5",
-    "title": "RHSA-2026:99723: Important: dnsmasq security update",
-    "summary": "An update for dnsmasq is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99723",
-    "publishedAt": "2026-11-12T18:44:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99723-important-dnsmasq-security-update",
-      "article-6c9f2bc5",
-      "6c9f2bc5",
-      "rhsa-2026-99723-important-dnsmasq-security-update-37d669"
-    ]
-  },
-  {
-    "slug": "mongodb-advises-on-server-vulnerabilities-1c9addb3",
-    "title": "MongoDB Advises on Server Vulnerabilities",
-    "summary": "MongoDB released an advisory for vulnerabilities affecting Server versions prior to 4.4.32, 5.0.35, 6.0.30, 7.0.48, 8.0.37, 8.3.16, and 9.0.7 that could allow use of readConcern afterOpTime. Root cause details are not disclosed, and no active exploitation has been reported, though the flaw could enable privilege escalation. MongoDB recommends applying the latest server updates and restricting readConcern usage to system users.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/mongodb-security-advisory-av26-1151",
-    "publishedAt": "2026-11-12T18:43:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mongodb-advises-on-server-vulnerabilities",
-      "article-1c9addb3",
-      "1c9addb3",
-      "mongodb-advises-on-server-vulnerabilities-399fba"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-single-sign-on-for-openshift-platf-551983f7",
-    "title": "Red Hat Updates Single Sign-On for OpenShift Platforms",
-    "summary": "Red Hat released a security update for Red Hat Single Sign-On version 7.6.14 deployed on OpenShift Container Platform installations. The critical update addresses undisclosed security flaws impacting container images across OpenShift Container Platform versions 3.10, 3.11, and 4.3. Administrators should deploy the updated container images immediately to mitigate potential exploitation risks within managed OpenShift environments.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99767",
-    "publishedAt": "2026-11-12T18:40:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-single-sign-on-for-openshift-platf",
-      "article-551983f7",
-      "551983f7",
-      "red-hat-updates-single-sign-on-for-openshift-platf-37d668",
-      "red-hat-updates-single-sign-on-for-openshift-platforms"
     ]
   }
 ];
