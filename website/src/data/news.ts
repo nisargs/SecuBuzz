@@ -11,6 +11,30 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "optimizely-compromise-injects-malicious-javascript-6cc7b684",
+    "title": "Optimizely Compromise Injects Malicious JavaScript into Major Sites",
+    "summary": "Optimizely’s content delivery platform was compromised, injecting malicious JavaScript into the code served to visitors of 178 major sites including Zoom, BBC, CNN, Salesforce, and GitLab. The injected scripts steal cryptocurrency wallets, capture payment data, and exploit iOS vulnerabilities to harvest credentials. Optimizely released a patch; affected sites must update instances and purge cached JavaScript to mitigate the threat.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
+    "publishedAt": "2026-11-17T02:12:17.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/optimizely-websites-hijacked/"
+      }
+    ],
+    "aliases": [
+      "optimizely-compromise-injects-malicious-javascript",
+      "article-6cc7b684",
+      "6cc7b684",
+      "optimizely-compromise-injects-malicious-javascript-55c3ad",
+      "optimizely-compromise-injects-malicious-javascript-into-majo"
+    ]
+  },
+  {
     "slug": "http-3-rats-target-southeast-asian-governments-836534e3",
     "title": "HTTP/3 RATs Target Southeast Asian Governments",
     "summary": "A Southeast Asian cyberespionage campaign deployed HTTP/3-based RATs, including PerfectPioneer and modular KUKURAT, to target government entities. The attackers leveraged QUIC’s encrypted transport to establish covert command-and-control channels, evading traditional network defenses and enabling stealthy lateral movement. Security teams should monitor for anomalous QUIC traffic, deploy HTTP/3 inspection, and apply vendor patches to mitigate potential compromise.",
@@ -9779,24 +9803,6 @@ export const news: NewsBrief[] = [
       "article-f0f88349",
       "f0f88349",
       "red-hat-releases-krb5-security-update-for-rhel-10-37d66d"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-cockpit-for-rhel-9-dfd40861",
-    "title": "Red Hat Updates cockpit for RHEL 9",
-    "summary": "Red Hat released a security update for the cockpit web console on RHEL 9, addressing a vulnerability that could let attackers gain unauthorized administrative access. The advisory assigns an Important impact rating and references CVE links, but no specific CVE identifiers or CVSS scores are provided.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99602",
-    "publishedAt": "2026-11-12T12:53:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-cockpit-for-rhel-9",
-      "article-dfd40861",
-      "dfd40861",
-      "red-hat-updates-cockpit-for-rhel-9-37d66d"
     ]
   }
 ];

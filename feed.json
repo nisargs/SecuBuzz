@@ -1,5 +1,26 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
+    "title": "Optimizely Compromise Injects Malicious JavaScript into Major Sites",
+    "headline": "Optimizely Compromise Injects Malicious JavaScript into Major Sites",
+    "summary": "Optimizely’s content delivery platform was compromised, injecting malicious JavaScript into the code served to visitors of 178 major sites including Zoom, BBC, CNN, Salesforce, and GitLab. The injected scripts steal cryptocurrency wallets, capture payment data, and exploit iOS vulnerabilities to harvest credentials. Optimizely released a patch; affected sites must update instances and purge cached JavaScript to mitigate the threat.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-17T02:12:17.000Z",
+    "ingestedAt": "2026-11-17T02:43:15.757Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/optimizely-websites-hijacked/"
+      }
+    ]
+  },
+  {
     "id": "https://unit42.paloaltonetworks.com/custom-rats-target-southeast-asia-governments/",
     "sourceUrl": "https://unit42.paloaltonetworks.com/custom-rats-target-southeast-asia-governments/",
     "title": "HTTP/3 RATs Target Southeast Asian Governments",
@@ -8359,22 +8380,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:99624",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99602",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99602",
-    "title": "Red Hat Updates cockpit for RHEL 9",
-    "headline": "Red Hat Updates cockpit for RHEL 9",
-    "summary": "Red Hat released a security update for the cockpit web console on RHEL 9, addressing a vulnerability that could let attackers gain unauthorized administrative access. The advisory assigns an Important impact rating and references CVE links, but no specific CVE identifiers or CVSS scores are provided.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T12:53:05.000Z",
-    "ingestedAt": "2026-11-12T15:43:57.201Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99602",
     "additionalSources": []
   }
 ]

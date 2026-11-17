@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 01:44:05 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 02:44:14 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Optimizely Compromise Injects Malicious JavaScript into Major Sites</title>
+      <link>https://secubuzz.com/news/optimizely-compromise-injects-malicious-javascript-6cc7b684</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/optimizely-compromise-injects-malicious-javascript-6cc7b684</guid>
+      <description><![CDATA[Optimizely’s content delivery platform was compromised, injecting malicious JavaScript into the code served to visitors of 178 major sites including Zoom, BBC, CNN, Salesforce, and GitLab. The injected scripts steal cryptocurrency wallets, capture payment data, and exploit iOS vulnerabilities to harvest credentials. Optimizely released a patch; affected sites must update instances and purge cached JavaScript to mitigate the threat.]]></description>
+      <pubDate>Tue, 17 Nov 2026 02:12:17 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>HTTP/3 RATs Target Southeast Asian Governments</title>
       <link>https://secubuzz.com/news/http-3-rats-target-southeast-asian-governments-836534e3</link>
@@ -447,15 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 14:57:54 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1163">Canadian Centre for Cyber Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Mustang Panda Deploys LOTUSLITE V2 via Zoho WorkDrive</title>
-      <link>https://secubuzz.com/news/mustang-panda-deploys-lotuslite-v2-via-zoho-workdr-81300585</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mustang-panda-deploys-lotuslite-v2-via-zoho-workdr-81300585</guid>
-      <description><![CDATA[Mustang Panda-linked actors are distributing LOTUSLITE V2 malware through malicious Zoho WorkDrive downloads, targeting Thai organizations. The campaign embeds a trusted PDFgear executable, loads malicious DLLs, establishes registry persistence, and uses encrypted C2 to maintain Windows access. Defenders should block Zoho WorkDrive traffic, monitor for PDFgear execution, and enforce application whitelisting to mitigate this threat.]]></description>
-      <pubDate>Mon, 16 Nov 2026 14:48:31 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/mustang-panda-linked-hackers/">Cyber Security News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
