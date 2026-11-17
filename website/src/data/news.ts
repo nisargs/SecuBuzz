@@ -1631,21 +1631,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "microsoft-denies-outage-attack-alerts-to-phishing-02a2bcde",
-    "title": "Microsoft Denies Outage Attack, Alerts to Phishing",
-    "summary": "Microsoft confirmed that the 2026 service outage was not caused by a cyberattack and issued a warning about a phishing campaign exploiting the outage narrative. Phishing emails impersonated 365 service notices and threatened to delete held messages, leveraging the outage to increase credibility. Security teams should verify email authenticity, enforce MFA, and educate users to avoid interacting with suspicious links.",
+    "slug": "microsoft-2026-phishing-campaign-exploits-fake-365-bdd8abec",
+    "title": "Microsoft 2026 Phishing Campaign Exploits Fake 365 Outage Alert",
+    "summary": "In 2026, Microsoft confirmed a phishing campaign that leveraged a fabricated Microsoft 365 outage alert to target organizations worldwide. The emails mimicked legitimate service notices, promising to delete messages if users did not verify authenticity, exploiting trust in Microsoft’s brand. Security teams should verify email authenticity, block malicious domains, enforce MFA, and educate users to avoid interacting with suspicious links.",
     "category": "General",
-    "severity": "LOW",
+    "severity": "MEDIUM",
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
     "publishedAt": "2026-11-16T08:15:12.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Microsoft Security",
+        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/"
+      }
+    ],
     "aliases": [
-      "microsoft-denies-outage-attack-alerts-to-phishing",
-      "article-02a2bcde",
-      "02a2bcde",
-      "microsoft-denies-outage-attack-alerts-to-phishing-5a1839"
+      "microsoft-2026-phishing-campaign-exploits-fake-365",
+      "article-bdd8abec",
+      "bdd8abec",
+      "microsoft-2026-phishing-campaign-exploits-fake-365-5a1839",
+      "microsoft-2026-phishing-campaign-exploits-fake-365-outage-al"
     ]
   },
   {
@@ -2005,6 +2011,25 @@ export const news: NewsBrief[] = [
       "article-d34c2895",
       "d34c2895",
       "isc-stormcast-released-for-monday-november-16-57dd81"
+    ]
+  },
+  {
+    "slug": "gitlab-releases-19-5-6-19-4-8-19-3-9-security-patc-4f778245",
+    "title": "GitLab Releases 19.5.6, 19.4.8, 19.3.9 Security Patches",
+    "summary": "GitLab released patch versions 19.5.6, 19.4.8, 19.3.9 for Community and Enterprise Editions, fixing multiple bugs and security issues. The updates address high-severity vulnerabilities; both scheduled releases and ad-hoc critical patches are included, with CVE references publicly listed. All self-managed GitLab installations should upgrade immediately; GitLab.com and Dedicated customers are already patched, and release notes detail each fix.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "GitLab Security Releases",
+    "sourceUrl": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-6-released/",
+    "publishedAt": "2026-11-16T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-releases-19-5-6-19-4-8-19-3-9-security-patc",
+      "article-4f778245",
+      "4f778245",
+      "gitlab-releases-19-5-6-19-4-8-19-3-9-security-patc-4f099e",
+      "gitlab-releases-19-5-6-19-4-8-19-3-9-security-patches"
     ]
   },
   {
@@ -9772,24 +9797,6 @@ export const news: NewsBrief[] = [
       "article-dfd40861",
       "dfd40861",
       "red-hat-updates-cockpit-for-rhel-9-37d66d"
-    ]
-  },
-  {
-    "slug": "cruciferra-maas-conceals-infostealers-and-rats-1b5dca33",
-    "title": "Cruciferra MaaS Conceals Infostealers and RATs",
-    "summary": "Cybercriminals rent the Cruciferra malware-as-a-service platform to conceal infostealers and remote access trojans from security software. Cruciferra encrypts malicious payloads in multiple layers, evading antivirus and endpoint detection tools and enabling widespread global campaigns. Defenders should employ advanced behavioral analytics and multi-layered detection to identify encrypted RATs and infostealer activity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/cruciferra-malware-as-a-service/",
-    "publishedAt": "2026-11-12T12:48:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cruciferra-maas-conceals-infostealers-and-rats",
-      "article-1b5dca33",
-      "1b5dca33",
-      "cruciferra-maas-conceals-infostealers-and-rats-1df31d"
     ]
   }
 ];
