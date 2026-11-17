@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "airlock-digital-releases-agentic-control-for-endpo-61bdad0d",
+    "title": "Airlock Digital Releases Agentic Control for Endpoint AI",
+    "summary": "Airlock Digital released Agentic Control in v7.1, adding runtime evaluation of AI agent requests to endpoint security. The feature extends Deny-by-Default Application Control by intercepting unauthorized agent behavior before execution, mitigating misuse of AI workloads. Customers can deploy the update immediately, integrating Agentic Control into existing endpoint policies and monitoring AI activity logs for validation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/airlock-digital-agentic-control/",
+    "publishedAt": "2026-11-17T13:39:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "airlock-digital-releases-agentic-control-for-endpo",
+      "article-61bdad0d",
+      "61bdad0d",
+      "airlock-digital-releases-agentic-control-for-endpo-2cb6f1",
+      "airlock-digital-releases-agentic-control-for-endpoint-ai"
+    ]
+  },
+  {
+    "slug": "corma-raises-125m-for-defensive-cybersecurity-mode-b15c34cf",
+    "title": "Corma Raises $125M for Defensive Cybersecurity Models",
+    "summary": "Corma received $125 million in funding to train foundation models for defensive cybersecurity. The round was led by NEA with support from existing investors and brings the company's valuation to $1 billion. The investment targets defensive cybersecurity model development, though the report does not detail specific products, deployment timelines, or technical capabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/corma-receives-125-million-to-train-foundation-models-for-defensive-cybersecurity/",
+    "publishedAt": "2026-11-17T12:51:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "corma-raises-125m-for-defensive-cybersecurity-mode",
+      "article-b15c34cf",
+      "b15c34cf",
+      "corma-raises-125m-for-defensive-cybersecurity-mode-24122e",
+      "corma-raises-125m-for-defensive-cybersecurity-models"
+    ]
+  },
+  {
     "slug": "n-able-patches-17-n-central-zero-days-b71a59fc",
     "title": "N-Able Patches 17 N-Central Zero-Days",
     "summary": "N-Able released patches for 17 N-Central zero-day vulnerabilities, including those already exploited in the wild. The flaws enabled unauthenticated remote code execution via the legacy API, exposing customers to system compromise in the wild. All affected installations should apply the latest update today; legacy APIs are disabled to mitigate risk.",
@@ -248,6 +286,25 @@ export const news: NewsBrief[] = [
       "1ccf8929",
       "atlassian-confluence-rce-exploited-1-2m-instances-516c3c",
       "atlassian-confluence-rce-exploited-1-2m-instances-exposed"
+    ]
+  },
+  {
+    "slug": "russian-hackers-deploy-ai-malware-and-clickfix-on-346d379a",
+    "title": "Russian Hackers Deploy AI Malware and ClickFix on Windows",
+    "summary": "A Russian-speaking threat actor launched a phishing campaign in August 2026 targeting Windows users with AI-generated malware and ClickFix tricks. The operation sent document-sharing pages across Latin America, Asia, and Europe, using XaocMail and Phantom53 to deliver payloads. Defenders should block malicious domains, enforce MFA, and filter AI-crafted phishing emails.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ai-assisted-malware/",
+    "publishedAt": "2026-11-17T09:05:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russian-hackers-deploy-ai-malware-and-clickfix-on",
+      "article-346d379a",
+      "346d379a",
+      "russian-hackers-deploy-ai-malware-and-clickfix-on-3342d9",
+      "russian-hackers-deploy-ai-malware-and-clickfix-on-windows"
     ]
   },
   {
@@ -732,21 +789,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "california-suits-openai-over-alleged-deception-d5a5388b",
-    "title": "California Suits OpenAI Over Alleged Deception",
-    "summary": "California sued OpenAI, alleging deception and reckless handling of Hugging Face and other AI platform incidents. The suit claims OpenAI obstructed the Attorney General’s probe by refusing to disclose the full scope of incidents known to the company. The case highlights regulatory scrutiny of AI firms’ transparency and accountability in incident reporting and data handling.",
+    "slug": "california-sues-openai-over-hugging-face-hack-alle-a0cee00f",
+    "title": "California Sues OpenAI Over Hugging Face Hack, Alleges Deception",
+    "summary": "California's attorney general sued OpenAI, alleging the company knowingly deployed advanced AI models without adequate safeguards following a Hugging Face hack that endangered users. The complaint claims OpenAI misled regulators and obstructed the investigation by withholding the full scope of incidents. Neither report specifies technical controls or root cause.",
     "category": "General",
-    "severity": "LOW",
+    "severity": "HIGH",
     "source": "The Record",
     "sourceUrl": "https://therecord.media/california-sues-openai-hugging-face",
     "publishedAt": "2026-11-16T21:40:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/california-sues-openai-seeking-court-ordered-changes-after-the-hugging-face-hack/"
+      }
+    ],
     "aliases": [
-      "california-suits-openai-over-alleged-deception",
-      "article-d5a5388b",
-      "d5a5388b",
-      "california-suits-openai-over-alleged-deception-4a0c7e"
+      "california-sues-openai-over-hugging-face-hack-alle",
+      "article-a0cee00f",
+      "a0cee00f",
+      "california-sues-openai-over-hugging-face-hack-alle-4a0c7e",
+      "california-sues-openai-over-hugging-face-hack-alleges-decept"
     ]
   },
   {
@@ -2393,11 +2456,11 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "microsoft-2026-phishing-campaign-exploits-fake-365-bdd8abec",
-    "title": "Microsoft 2026 Phishing Campaign Exploits Fake 365 Outage Alert",
-    "summary": "In 2026, Microsoft confirmed a phishing campaign that leveraged a fabricated Microsoft 365 outage alert to target organizations worldwide. The emails mimicked legitimate service notices, promising to delete messages if users did not verify authenticity, exploiting trust in Microsoft’s brand. Security teams should verify email authenticity, block malicious domains, enforce MFA, and educate users to avoid interacting with suspicious links.",
+    "slug": "microsoft-warns-of-phishing-campaign-using-fake-mi-5ea40011",
+    "title": "Microsoft Warns of Phishing Campaign Using Fake Microsoft 365 Outage Alerts",
+    "summary": "Microsoft Threat Intelligence reported a high-volume November 2026 phishing campaign targeting multiple sectors with fake Microsoft 365 service-disruption notices. The emails mimicked legitimate outage alerts and urged immediate message recovery, exploiting Microsoft branding to harvest credentials or direct users to malicious links. Security teams should verify service notices via official Microsoft channels, block malicious domains, enforce MFA, and reinforce phishing-resistant authentication.",
     "category": "General",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
     "publishedAt": "2026-11-16T08:15:12.000Z",
@@ -2406,14 +2469,18 @@ export const news: NewsBrief[] = [
       {
         "source": "Microsoft Security",
         "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/microsoft-365-phishing-attack/"
       }
     ],
     "aliases": [
-      "microsoft-2026-phishing-campaign-exploits-fake-365",
-      "article-bdd8abec",
-      "bdd8abec",
-      "microsoft-2026-phishing-campaign-exploits-fake-365-5a1839",
-      "microsoft-2026-phishing-campaign-exploits-fake-365-outage-al"
+      "microsoft-warns-of-phishing-campaign-using-fake-mi",
+      "article-5ea40011",
+      "5ea40011",
+      "microsoft-warns-of-phishing-campaign-using-fake-mi-5a1839",
+      "microsoft-warns-of-phishing-campaign-using-fake-microsoft-36"
     ]
   },
   {
@@ -9708,73 +9775,6 @@ export const news: NewsBrief[] = [
       "486941dd",
       "rhsa-2026-99696-important-glib-networking-security-37d66c",
       "rhsa-2026-99696-important-glib-networking-security-update"
-    ]
-  },
-  {
-    "slug": "windows-signdrop-zero-day-exploit-enables-system-p-f64df1ef",
-    "title": "Windows SignDrop Zero-Day Exploit Enables SYSTEM Privileges via CLFS Abuse",
-    "summary": "Microsoft Windows systems are affected by the SignDrop zero-day vulnerability, which allows attackers to gain SYSTEM privileges. The flaw abuses CLFS and Windows Defender to write privileged files under the antimalware process, enabling persistence and payload deployment. Microsoft has issued an out-of-band patch disabling CLFS operations for Defender; security teams must apply it immediately.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
-    "publishedAt": "2026-11-12T16:04:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/"
-      }
-    ],
-    "aliases": [
-      "windows-signdrop-zero-day-exploit-enables-system-p",
-      "article-f64df1ef",
-      "f64df1ef",
-      "windows-signdrop-zero-day-exploit-enables-system-p-15fe10",
-      "windows-signdrop-zero-day-exploit-enables-system-privileges-"
-    ]
-  },
-  {
-    "slug": "ubuntu-discloses-pillow-denial-of-service-vulnerab-eeb6a195",
-    "title": "Ubuntu Discloses Pillow Denial-of-Service Vulnerabilities",
-    "summary": "Ubuntu released security notice USN-9064-1, exposing multiple Pillow library flaws that allow attackers to trigger denial-of-service conditions via infinite loops and uncontrolled recursion. The CVE-identified issues (CVE-2026-112390, CVE-2026-112391, CVE-2026-112392) affect Ubuntu 18.04 through 26.10, causing potential service crashes or hangs without authentication. The vulnerabilities are tracked as CVE-2026-112390, CVE-2026-112391, CVE-2026-112392.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9064-1",
-    "publishedAt": "2026-11-12T15:55:24.000Z",
-    "cves": [
-      "CVE-2026-112390",
-      "CVE-2026-112391",
-      "CVE-2026-112392"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-discloses-pillow-denial-of-service-vulnerab",
-      "article-eeb6a195",
-      "eeb6a195",
-      "ubuntu-discloses-pillow-denial-of-service-vulnerab-7e86f2",
-      "ubuntu-discloses-pillow-denial-of-service-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "craft-cms-vulnerability-cve-2026-123488-exploited-bd17b004",
-    "title": "Craft CMS Vulnerability CVE-2026-123488 Exploited",
-    "summary": "Craft CMS versions prior to 4.18.9, 5.11.2, and Commerce-mollie prior to 4.4.3 contain CVE-2026-123488, a vulnerability that has been exploited in the wild. The flaw permits attackers to execute arbitrary code on the server, enabling full compromise of affected installations. Administrators should apply the latest Craft CMS and Commerce-mollie updates and monitor for unauthorized activity.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/craft-cms-security-advisory-av26-1086",
-    "publishedAt": "2026-11-12T15:54:21.000Z",
-    "cves": [
-      "CVE-2026-123488"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "craft-cms-vulnerability-cve-2026-123488-exploited",
-      "article-bd17b004",
-      "bd17b004",
-      "craft-cms-vulnerability-cve-2026-123488-exploited-30b06c"
     ]
   }
 ];

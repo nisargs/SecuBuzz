@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 12:47:02 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 13:45:36 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Airlock Digital Releases Agentic Control for Endpoint AI</title>
+      <link>https://secubuzz.com/news/airlock-digital-releases-agentic-control-for-endpo-61bdad0d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/airlock-digital-releases-agentic-control-for-endpo-61bdad0d</guid>
+      <description><![CDATA[Airlock Digital released Agentic Control in v7.1, adding runtime evaluation of AI agent requests to endpoint security. The feature extends Deny-by-Default Application Control by intercepting unauthorized agent behavior before execution, mitigating misuse of AI workloads. Customers can deploy the update immediately, integrating Agentic Control into existing endpoint policies and monitoring AI activity logs for validation.]]></description>
+      <pubDate>Tue, 17 Nov 2026 13:39:57 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/17/airlock-digital-agentic-control/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Corma Raises $125M for Defensive Cybersecurity Models</title>
+      <link>https://secubuzz.com/news/corma-raises-125m-for-defensive-cybersecurity-mode-b15c34cf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/corma-raises-125m-for-defensive-cybersecurity-mode-b15c34cf</guid>
+      <description><![CDATA[Corma received $125 million in funding to train foundation models for defensive cybersecurity. The round was led by NEA with support from existing investors and brings the company's valuation to $1 billion. The investment targets defensive cybersecurity model development, though the report does not detail specific products, deployment timelines, or technical capabilities.]]></description>
+      <pubDate>Tue, 17 Nov 2026 12:51:54 GMT</pubDate>
+      <source url="https://www.securityweek.com/corma-receives-125-million-to-train-foundation-models-for-defensive-cybersecurity/">SecurityWeek</source>
+      <category>General</category>
+    </item>
     <item>
       <title>N-Able Patches 17 N-Central Zero-Days</title>
       <link>https://secubuzz.com/news/n-able-patches-17-n-central-zero-days-b71a59fc</link>
@@ -123,6 +141,15 @@
       <pubDate>Tue, 17 Nov 2026 09:18:11 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-exploiting-atlassian-confluence-vulnerability/">Cyber Security News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Russian Hackers Deploy AI Malware and ClickFix on Windows</title>
+      <link>https://secubuzz.com/news/russian-hackers-deploy-ai-malware-and-clickfix-on-346d379a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-hackers-deploy-ai-malware-and-clickfix-on-346d379a</guid>
+      <description><![CDATA[A Russian-speaking threat actor launched a phishing campaign in August 2026 targeting Windows users with AI-generated malware and ClickFix tricks. The operation sent document-sharing pages across Latin America, Asia, and Europe, using XaocMail and Phantom53 to deliver payloads. Defenders should block malicious domains, enforce MFA, and filter AI-crafted phishing emails.]]></description>
+      <pubDate>Tue, 17 Nov 2026 09:05:46 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-ai-assisted-malware/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Mozilla Releases Firefox 160, Fixing 99 Vulnerabilities</title>
@@ -350,10 +377,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>California Suits OpenAI Over Alleged Deception</title>
-      <link>https://secubuzz.com/news/california-suits-openai-over-alleged-deception-d5a5388b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/california-suits-openai-over-alleged-deception-d5a5388b</guid>
-      <description><![CDATA[California sued OpenAI, alleging deception and reckless handling of Hugging Face and other AI platform incidents. The suit claims OpenAI obstructed the Attorney General’s probe by refusing to disclose the full scope of incidents known to the company. The case highlights regulatory scrutiny of AI firms’ transparency and accountability in incident reporting and data handling.]]></description>
+      <title>California Sues OpenAI Over Hugging Face Hack, Alleges Deception</title>
+      <link>https://secubuzz.com/news/california-sues-openai-over-hugging-face-hack-alle-a0cee00f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/california-sues-openai-over-hugging-face-hack-alle-a0cee00f</guid>
+      <description><![CDATA[California's attorney general sued OpenAI, alleging the company knowingly deployed advanced AI models without adequate safeguards following a Hugging Face hack that endangered users. The complaint claims OpenAI misled regulators and obstructed the investigation by withholding the full scope of incidents. Neither report specifies technical controls or root cause.]]></description>
       <pubDate>Mon, 16 Nov 2026 21:40:00 GMT</pubDate>
       <source url="https://therecord.media/california-sues-openai-hugging-face">The Record</source>
       <category>General</category>
@@ -429,33 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 19:57:13 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/">BleepingComputer</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>AI Fuels More Ransomware Attacks, Payments Drop</title>
-      <link>https://secubuzz.com/news/ai-fuels-more-ransomware-attacks-payments-drop-8209d452</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-fuels-more-ransomware-attacks-payments-drop-8209d452</guid>
-      <description><![CDATA[Ransomware groups are leveraging large language models to craft highly convincing phishing emails and rapidly locate sensitive data, driving a rise in attack frequency. The trend shows a higher volume of incidents, yet the number of ransom payments has fallen, indicating increased resistance or alternative mitigation. Security teams should monitor AI-generated phishing campaigns and enforce multi-factor authentication to reduce exposure.]]></description>
-      <pubDate>Mon, 16 Nov 2026 19:56:05 GMT</pubDate>
-      <source url="https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Fence-Agents Update for RHEL 9.4 and 9.6</title>
-      <link>https://secubuzz.com/news/red-hat-issues-fence-agents-update-for-rhel-9-4-an-511a4de5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-fence-agents-update-for-rhel-9-4-an-511a4de5</guid>
-      <description><![CDATA[Red Hat released a critical security update for the fence-agents component on its RHEL 9.4 and 9.6 operating systems, addressing multiple high-severity vulnerabilities. The vulnerabilities could allow attackers to gain privilege escalation or execute arbitrary code, potentially compromising system integrity. Red Hat recommends applying the patch immediately and verifying system integrity to mitigate potential exploitation.]]></description>
-      <pubDate>Mon, 16 Nov 2026 19:43:40 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100528">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Sleeper Agents Hide Payloads in Open-Weight AI Models</title>
-      <link>https://secubuzz.com/news/sleeper-agents-hide-payloads-in-open-weight-ai-mod-5a021833</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sleeper-agents-hide-payloads-in-open-weight-ai-mod-5a021833</guid>
-      <description><![CDATA[Malware authors now embed malicious code within a minuscule fraction-0.00001%-of an open-weight neural network, creating a sleeper agent that evades conventional scanning. The hidden payload can activate only when the model is executed, making detection by standard AI integrity checks ineffective. Security teams should implement model integrity verification and monitor anomalous inference patterns to mitigate this threat.]]></description>
-      <pubDate>Mon, 16 Nov 2026 19:10:03 GMT</pubDate>
-      <source url="https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models">Dark Reading</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
