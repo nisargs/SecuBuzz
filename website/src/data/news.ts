@@ -11,6 +11,61 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "court-acquits-brothers-in-25m-ethereum-heist-cf7caab8",
+    "title": "Court Acquits Brothers in $25M Ethereum Heist",
+    "summary": "A U.S. judge acquitted two brothers charged with a $25 million Ethereum theft that occurred in about 12 seconds via a blockchain bug. The scheme exploited a consensus flaw that allowed a single transaction to drain funds before state validation. No remediation is required, and the case does not expose an active Ethereum vulnerability; developers should monitor advisories.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
+    "publishedAt": "2026-11-17T09:44:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "court-acquits-brothers-in-25m-ethereum-heist",
+      "article-cf7caab8",
+      "cf7caab8",
+      "court-acquits-brothers-in-25m-ethereum-heist-49a1bd"
+    ]
+  },
+  {
+    "slug": "apple-tightens-mac-app-permissions-amid-ai-agent-r-26b8ce6d",
+    "title": "Apple Tightens Mac App Permissions Amid AI Agent Risks",
+    "summary": "Apple added granular permissions for Device Control, Data Access, and Full Disk Access in macOS 27.3 beta 2 to limit developer misuse. The change follows warnings that Full Disk Access could expose users’ files, emails, messages, and browsing history, a risk magnified by AI agents. Security teams should review the new controls and adjust deployments to comply with macOS 27.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/apple-macos-app-permission-changes/",
+    "publishedAt": "2026-11-17T09:41:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-tightens-mac-app-permissions-amid-ai-agent-r",
+      "article-26b8ce6d",
+      "26b8ce6d",
+      "apple-tightens-mac-app-permissions-amid-ai-agent-r-4b8403",
+      "apple-tightens-mac-app-permissions-amid-ai-agent-risks"
+    ]
+  },
+  {
+    "slug": "nato-grants-openai-models-to-core-institutions-a6dfae56",
+    "title": "NATO Grants OpenAI Models to Core Institutions",
+    "summary": "NATO’s NCIA has granted core institutions access to OpenAI’s cybersecurity models via the Daybreak program, enabling code reviews, threat hunting, and fix testing. The program processes up to 300 billion raw input and output tokens monthly, exposing the software stack used daily by European institutions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/openai-nato-ai-cyber-defense/",
+    "publishedAt": "2026-11-17T08:33:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nato-grants-openai-models-to-core-institutions",
+      "article-a6dfae56",
+      "a6dfae56",
+      "nato-grants-openai-models-to-core-institutions-7c060d"
+    ]
+  },
+  {
     "slug": "kazakh-national-extradited-for-ransomware-attacks-451255e7",
     "title": "Kazakh National Extradited for Ransomware Attacks",
     "summary": "A Kazakh national was extradited from Italy to the U.S. to face charges for allegedly targeting U.S. schools, hospitals, and healthcare entities with ransomware. He is accused of orchestrating attacks that leveraged ransomware to extort victims, though no confirmed payments or active exploitation have been reported. U.S. authorities have initiated legal proceedings, underscoring international cooperation to prosecute ransomware affiliates.",
@@ -45,6 +100,25 @@ export const news: NewsBrief[] = [
       "64fe40f6",
       "hijacked-optimizely-scripts-served-card-skimmer-an-501499",
       "hijacked-optimizely-scripts-served-card-skimmer-and-ios-expl"
+    ]
+  },
+  {
+    "slug": "pnpm-launches-experimental-lockfile-to-cut-merge-c-281666b9",
+    "title": "pnpm Launches Experimental Lockfile to Cut Merge Conflicts",
+    "summary": "pnpm has released an experimental lockfile format that reorganizes dependency metadata to lower Git merge conflict rates. The new format changes how dependencies are recorded, enabling more deterministic resolution and reducing overlapping changes during merges. Users should test the format in staging environments before adopting it in production to ensure compatibility with existing tooling.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/pnpm-introduces-new-lockfile-format",
+    "publishedAt": "2026-11-17T07:02:53.649Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pnpm-launches-experimental-lockfile-to-cut-merge-c",
+      "article-281666b9",
+      "281666b9",
+      "pnpm-launches-experimental-lockfile-to-cut-merge-c-73f0db",
+      "pnpm-launches-experimental-lockfile-to-cut-merge-conflicts"
     ]
   },
   {
@@ -9713,86 +9787,6 @@ export const news: NewsBrief[] = [
       "article-4803ff68",
       "4803ff68",
       "rhsa-2026-99593-moderate-rpm-security-update-37d670"
-    ]
-  },
-  {
-    "slug": "apify-rotates-api-tokens-after-internal-breach-b06dcafd",
-    "title": "Apify Rotates API Tokens After Internal Breach",
-    "summary": "Apify suffered an internal breach that exposed API tokens, compromising platform access. The breach exposed a failure in access-control monitoring, letting compromised tokens be reused before detection. Apify immediately rotated credentials, revoked OAuth connections, reset 2FA for affected users, and urged teams to enforce MFA, monitor anomalous usage, and apply latest patches.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
-    "publishedAt": "2026-11-12T14:36:47.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/apify-rotates-api-tokens-prompts-2fa-resets-after-breac"
-      }
-    ],
-    "aliases": [
-      "apify-rotates-api-tokens-after-internal-breach",
-      "article-b06dcafd",
-      "b06dcafd",
-      "apify-rotates-api-tokens-after-internal-breach-143e2b"
-    ]
-  },
-  {
-    "slug": "chrome-vulnerability-cve-2026-125350-exploited-in-4badf29e",
-    "title": "Chrome Vulnerability CVE-2026-125350 Exploited in Wild",
-    "summary": "Chrome stable channel desktop versions before 157.0.8103.50/.51 contain CVE-2026-125350, which is actively exploited in the wild. The vulnerability permits attackers to execute arbitrary code with elevated privileges, potentially compromising user data and system integrity. Google released patches; users should update to 157.0.8103.50/.51 or later and follow advisories for comprehensive effective mitigations.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1140",
-    "publishedAt": "2026-11-12T14:29:08.000Z",
-    "cves": [
-      "CVE-2026-125350"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-vulnerability-cve-2026-125350-exploited-in",
-      "article-4badf29e",
-      "4badf29e",
-      "chrome-vulnerability-cve-2026-125350-exploited-in-170ca3",
-      "chrome-vulnerability-cve-2026-125350-exploited-in-wild"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-gd-update-for-rhel7-e8daf164",
-    "title": "Red Hat Issues gd Update for RHEL7",
-    "summary": "Red Hat released a security update for the gd component on RHEL 7 Extended Lifecycle Support, fixing a flaw that could enable code execution. The update is rated Important, with CVSS scores linked via CVE references, indicating a moderate-to-high severity vulnerability. Red Hat recommends applying the patch immediately; no workarounds are needed.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98418",
-    "publishedAt": "2026-11-12T14:27:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-gd-update-for-rhel7",
-      "article-e8daf164",
-      "e8daf164",
-      "red-hat-issues-gd-update-for-rhel7-37d6e9"
-    ]
-  },
-  {
-    "slug": "bricklink-offline-after-detecting-unusual-activity-bdfef76b",
-    "title": "BrickLink Offline After Detecting Unusual Activity",
-    "summary": "BrickLink, the LEGO marketplace, went offline after detecting unusual activity on its servers. The incident involved suspicious traffic patterns that prompted a temporary shutdown to prevent potential data compromise, though no breach was confirmed. The platform has not yet disclosed whether customer data was affected and advises users to monitor for any unauthorized account activity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/legos-bricklink-taken-offline-after-unusual-activity-what-users-should-know",
-    "publishedAt": "2026-11-12T14:25:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bricklink-offline-after-detecting-unusual-activity",
-      "article-bdfef76b",
-      "bdfef76b",
-      "bricklink-offline-after-detecting-unusual-activity-238d20"
     ]
   }
 ];
