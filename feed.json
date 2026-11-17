@@ -417,6 +417,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://developer.apple.com/news/releases/?id=11162026e",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026e",
+    "title": "Apple Releases visionOS 27.3 Beta 2 Update",
+    "headline": "Apple Releases visionOS 27.3 Beta 2 Update",
+    "summary": "Apple released visionOS 27.3 beta 2, a beta update for the visionOS operating system. The update includes fixes for memory corruption and privilege escalation bugs, though no CVE IDs are publicly assigned. Users should install the beta update via the Apple VisionOS Settings app to mitigate potential security risks and ensure system stability.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "publishedAt": "2026-11-16T18:00:00.000Z",
+    "ingestedAt": "2026-11-17T03:43:32.836Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://developer.apple.com/news/releases/?id=11162026e",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.huntress.com/blog/cve-2026-84869-screenconnect-technician-exploitation",
     "sourceUrl": "https://www.huntress.com/blog/cve-2026-84869-screenconnect-technician-exploitation",
     "title": "ScreenConnect CVE-2026-84869 Exploited to Run Malicious Files",
@@ -8364,22 +8380,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://therecord.media/kazakhstan-hackers-central-asia",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99624",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99624",
-    "title": "Red Hat Releases krb5 Security Update for RHEL 10",
-    "headline": "Red Hat Releases krb5 Security Update for RHEL 10",
-    "summary": "Red Hat issued a security update for the krb5 library on Red Hat Enterprise Linux 10, addressing a bug that could affect Kerberos authentication. The update carries an Important security impact rating, though no public exploit or CVE identifier is disclosed in the advisory. Customers should apply the RHSA-2026:99624 package immediately to mitigate potential authentication weaknesses.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T12:56:12.000Z",
-    "ingestedAt": "2026-11-12T13:43:21.195Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99624",
     "additionalSources": []
   }
 ]

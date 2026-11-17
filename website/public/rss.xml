@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 02:44:14 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 03:44:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Optimizely Compromise Injects Malicious JavaScript into Major Sites</title>
@@ -212,6 +212,15 @@
       <description><![CDATA[The Italian data protection authority fined Meta $886 million for violating privacy law via Facebook’s camera roll suggestions feature. The feature accessed Android users’ photo galleries to recommend posts that could be enhanced with personal media, breaching consent. Meta must adjust its recommendation algorithms to prevent unauthorized gallery access and comply with Italian privacy regulations.]]></description>
       <pubDate>Mon, 16 Nov 2026 18:05:00 GMT</pubDate>
       <source url="https://therecord.media/italian-regulator-fines-meta-886-million-privacy">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Apple Releases visionOS 27.3 Beta 2 Update</title>
+      <link>https://secubuzz.com/news/apple-releases-visionos-27-3-beta-2-update-ed2c34d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-visionos-27-3-beta-2-update-ed2c34d4</guid>
+      <description><![CDATA[Apple released visionOS 27.3 beta 2, a beta update for the visionOS operating system. The update includes fixes for memory corruption and privilege escalation bugs, though no CVE IDs are publicly assigned. Users should install the beta update via the Apple VisionOS Settings app to mitigate potential security risks and ensure system stability.]]></description>
+      <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
+      <source url="https://developer.apple.com/news/releases/?id=11162026e">Apple Security Updates</source>
       <category>General</category>
     </item>
     <item>
@@ -447,15 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 15:01:11 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/">BleepingComputer</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Advisory for Multiple Product Vulnerabilities</title>
-      <link>https://secubuzz.com/news/red-hat-issues-advisory-for-multiple-product-vulne-060a1a9e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-advisory-for-multiple-product-vulne-060a1a9e</guid>
-      <description><![CDATA[Red Hat issued advisory AV26-1163 on November 16, 2026, covering vulnerabilities in RHEL 6/7/10, Hardened Images, OpenShift Dev Spaces, Satellite, and Quay. The weaknesses could enable unauthorized access or privilege escalation across affected versions, yet no active exploitation has been confirmed. Administrators should review the advisory and apply the recommended patches or updates to secure their environments.]]></description>
-      <pubDate>Mon, 16 Nov 2026 14:57:54 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1163">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

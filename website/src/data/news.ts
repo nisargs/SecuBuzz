@@ -491,6 +491,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-releases-visionos-27-3-beta-2-update-ed2c34d4",
+    "title": "Apple Releases visionOS 27.3 Beta 2 Update",
+    "summary": "Apple released visionOS 27.3 beta 2, a beta update for the visionOS operating system. The update includes fixes for memory corruption and privilege escalation bugs, though no CVE IDs are publicly assigned. Users should install the beta update via the Apple VisionOS Settings app to mitigate potential security risks and ensure system stability.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026e",
+    "publishedAt": "2026-11-16T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-visionos-27-3-beta-2-update",
+      "article-ed2c34d4",
+      "ed2c34d4",
+      "apple-releases-visionos-27-3-beta-2-update-5f3d88"
+    ]
+  },
+  {
     "slug": "screenconnect-cve-2026-84869-exploited-to-run-mali-329f18f7",
     "title": "ScreenConnect CVE-2026-84869 Exploited to Run Malicious Files",
     "summary": "Attackers exploited CVE-2026-84869 in ScreenConnect to run malicious files on MSP technician accounts. The flaw enables unauthenticated remote code execution via the remote support session, allowing arbitrary binaries to execute without user interaction and potentially compromising client systems. ScreenConnect released patch 4.4.1; administrators should apply it immediately and disable remote file execution until the fix is deployed.",
@@ -9785,24 +9803,6 @@ export const news: NewsBrief[] = [
       "3d350d73",
       "kazakhstan-hackers-deploy-ai-agent-for-central-asi-520e00",
       "kazakhstan-hackers-deploy-ai-agent-for-central-asian-espiona"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-krb5-security-update-for-rhel-10-f0f88349",
-    "title": "Red Hat Releases krb5 Security Update for RHEL 10",
-    "summary": "Red Hat issued a security update for the krb5 library on Red Hat Enterprise Linux 10, addressing a bug that could affect Kerberos authentication. The update carries an Important security impact rating, though no public exploit or CVE identifier is disclosed in the advisory. Customers should apply the RHSA-2026:99624 package immediately to mitigate potential authentication weaknesses.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99624",
-    "publishedAt": "2026-11-12T12:56:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-krb5-security-update-for-rhel-10",
-      "article-f0f88349",
-      "f0f88349",
-      "red-hat-releases-krb5-security-update-for-rhel-10-37d66d"
     ]
   }
 ];
