@@ -214,6 +214,22 @@
     ]
   },
   {
+    "id": "https://isc.sans.edu/diary/rss/33524",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33524",
+    "title": "ISC Stormcast: November 17th Podcast Release",
+    "headline": "ISC Stormcast: November 17th Podcast Release",
+    "summary": "The ISC Stormcast podcast for Tuesday, November 17th, 2026 is announced with a link to the episode details. The post provides the episode URL and a Creative Commons attribution notice. Listeners can access the broadcast via the provided link and review the content under the non-commercial license daily for security.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-11-17T02:05:15.000Z",
+    "ingestedAt": "2026-11-17T09:44:02.358Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://isc.sans.edu/diary/rss/33524",
+    "additionalSources": []
+  },
+  {
     "id": "https://ubuntu.com/security/notices/USN-9131-1",
     "sourceUrl": "https://ubuntu.com/security/notices/USN-9131-1",
     "title": "CRaC JDK 25 Auth Flaws Expose Sensitive Data",
@@ -1609,6 +1625,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.welivesecurity.com/en/privacy/is-it-safe-upload-passport-id-online/",
+    "sourceUrl": "https://www.welivesecurity.com/en/privacy/is-it-safe-upload-passport-id-online/",
+    "title": "Uploading ID Documents: Risk Mitigation Guide",
+    "headline": "Uploading ID Documents: Risk Mitigation Guide",
+    "summary": "The article addresses the security risks of uploading passports or ID documents to third-party services. It outlines potential threats such as data theft, identity fraud, and biometric misuse, emphasizing the need for secure transmission and storage. The guide recommends best practices like using encrypted channels, verifying service privacy policies, and monitoring for unauthorized access to mitigate these risks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "publishedAt": "2026-11-16T09:55:00.000Z",
+    "ingestedAt": "2026-11-17T09:44:02.357Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.welivesecurity.com/en/privacy/is-it-safe-upload-passport-id-online/",
     "additionalSources": []
   },
   {
@@ -8330,38 +8362,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/news/2026/11/legos-bricklink-taken-offline-after-unusual-activity-what-users-should-know",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99117",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99117",
-    "title": "Red Hat Updates crun for RHEL 9.8 EUS",
-    "headline": "Red Hat Updates crun for RHEL 9.8 EUS",
-    "summary": "Red Hat released a security update for the crun container runtime on RHEL 9.8 EUS, addressing a vulnerability that could let attackers compromise container execution. The advisory notes an Important impact rating and references CVE links, but no specific CVE identifiers or CVSS scores are disclosed.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T14:25:45.000Z",
-    "ingestedAt": "2026-11-12T15:43:57.200Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99117",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-834",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-834",
-    "title": "Cisco BroadWorks Vulnerability CVE-2026-20320 Exploited",
-    "headline": "Cisco BroadWorks Vulnerability CVE-2026-20320 Exploited",
-    "summary": "Cisco BroadWorks and related Crosswork products before RI.2026.07 or 7.2.1-SP contain CVE-2026-20320, which is actively exploited in the wild. The flaw allows attackers to gain unauthorized access to management interfaces, potentially enabling remote code execution and lateral movement across the network. Cisco has issued patches; administrators should upgrade to RI.2026.07 or 7.2.1-SP and apply vendor advisories for mitigations.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "publishedAt": "2026-11-12T14:25:44.000Z",
-    "ingestedAt": "2026-11-15T04:43:12.254Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-834",
     "additionalSources": []
   }
 ]

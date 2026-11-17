@@ -260,6 +260,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "isc-stormcast-november-17th-podcast-release-e8b8b668",
+    "title": "ISC Stormcast: November 17th Podcast Release",
+    "summary": "The ISC Stormcast podcast for Tuesday, November 17th, 2026 is announced with a link to the episode details. The post provides the episode URL and a Creative Commons attribution notice. Listeners can access the broadcast via the provided link and review the content under the non-commercial license daily for security.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33524",
+    "publishedAt": "2026-11-17T02:05:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-november-17th-podcast-release",
+      "article-e8b8b668",
+      "e8b8b668",
+      "isc-stormcast-november-17th-podcast-release-57dd81"
+    ]
+  },
+  {
     "slug": "crac-jdk-25-auth-flaws-expose-sensitive-data-ed96a5e6",
     "title": "CRaC JDK 25 Auth Flaws Expose Sensitive Data",
     "summary": "CRaC JDK 25 and OpenJDK 25 contain authentication and authorization flaws that let unauthenticated remote attackers read or modify sensitive data. The flaws, identified as CVE-2026-114820, CVE-2026-83374, CVE-2026-83376, CVE-2026-91461, and CVE-2026-83378, arise from missing user authentication in security, JSSE, JAAS, and compiler components.",
@@ -1887,6 +1905,24 @@ export const news: NewsBrief[] = [
       "article-40b6d9d4",
       "40b6d9d4",
       "anthropic-releases-claude-mythos-5-2-fable-5-2-232a57"
+    ]
+  },
+  {
+    "slug": "uploading-id-documents-risk-mitigation-guide-2f763799",
+    "title": "Uploading ID Documents: Risk Mitigation Guide",
+    "summary": "The article addresses the security risks of uploading passports or ID documents to third-party services. It outlines potential threats such as data theft, identity fraud, and biometric misuse, emphasizing the need for secure transmission and storage. The guide recommends best practices like using encrypted channels, verifying service privacy policies, and monitoring for unauthorized access to mitigate these risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/privacy/is-it-safe-upload-passport-id-online/",
+    "publishedAt": "2026-11-16T09:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uploading-id-documents-risk-mitigation-guide",
+      "article-2f763799",
+      "2f763799",
+      "uploading-id-documents-risk-mitigation-guide-167d61"
     ]
   },
   {
@@ -9757,45 +9793,6 @@ export const news: NewsBrief[] = [
       "article-bdfef76b",
       "bdfef76b",
       "bricklink-offline-after-detecting-unusual-activity-238d20"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-crun-for-rhel-9-8-eus-796cd2ac",
-    "title": "Red Hat Updates crun for RHEL 9.8 EUS",
-    "summary": "Red Hat released a security update for the crun container runtime on RHEL 9.8 EUS, addressing a vulnerability that could let attackers compromise container execution. The advisory notes an Important impact rating and references CVE links, but no specific CVE identifiers or CVSS scores are disclosed.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99117",
-    "publishedAt": "2026-11-12T14:25:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-crun-for-rhel-9-8-eus",
-      "article-796cd2ac",
-      "796cd2ac",
-      "red-hat-updates-crun-for-rhel-9-8-eus-37d680"
-    ]
-  },
-  {
-    "slug": "cisco-broadworks-vulnerability-cve-2026-20320-expl-ca82082f",
-    "title": "Cisco BroadWorks Vulnerability CVE-2026-20320 Exploited",
-    "summary": "Cisco BroadWorks and related Crosswork products before RI.2026.07 or 7.2.1-SP contain CVE-2026-20320, which is actively exploited in the wild. The flaw allows attackers to gain unauthorized access to management interfaces, potentially enabling remote code execution and lateral movement across the network. Cisco has issued patches; administrators should upgrade to RI.2026.07 or 7.2.1-SP and apply vendor advisories for mitigations.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-834",
-    "publishedAt": "2026-11-12T14:25:44.000Z",
-    "cves": [
-      "CVE-2026-20320"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-broadworks-vulnerability-cve-2026-20320-expl",
-      "article-ca82082f",
-      "ca82082f",
-      "cisco-broadworks-vulnerability-cve-2026-20320-expl-537666",
-      "cisco-broadworks-vulnerability-cve-2026-20320-exploited"
     ]
   }
 ];

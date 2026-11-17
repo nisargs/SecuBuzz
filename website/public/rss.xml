@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 08:44:24 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 09:44:55 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Kazakh National Extradited for Ransomware Attacks</title>
@@ -123,6 +123,15 @@
       <pubDate>Tue, 17 Nov 2026 02:12:17 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ISC Stormcast: November 17th Podcast Release</title>
+      <link>https://secubuzz.com/news/isc-stormcast-november-17th-podcast-release-e8b8b668</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-november-17th-podcast-release-e8b8b668</guid>
+      <description><![CDATA[The ISC Stormcast podcast for Tuesday, November 17th, 2026 is announced with a link to the episode details. The post provides the episode URL and a Creative Commons attribution notice. Listeners can access the broadcast via the provided link and review the content under the non-commercial license daily for security.]]></description>
+      <pubDate>Tue, 17 Nov 2026 02:05:15 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33524">SANS Internet Storm Center</source>
+      <category>General</category>
     </item>
     <item>
       <title>CRaC JDK 25 Auth Flaws Expose Sensitive Data</title>
@@ -447,15 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 16:51:53 GMT</pubDate>
       <source url="https://cybersecuritynews.com/claude-code-vs-code-extension/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft says months-old bug caused global Microsoft 365 outage</title>
-      <link>https://secubuzz.com/news/microsoft-says-months-old-bug-caused-global-micros-b35814fa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-says-months-old-bug-caused-global-micros-b35814fa</guid>
-      <description><![CDATA[Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive.]]></description>
-      <pubDate>Mon, 16 Nov 2026 16:43:24 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/">BleepingComputer</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
