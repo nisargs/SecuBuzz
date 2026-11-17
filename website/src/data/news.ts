@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "optimizely-supply-chain-attack-injects-malware-int-c9c8a653",
+    "title": "Optimizely Supply Chain Attack Injects Malware into Major Sites",
+    "summary": "Optimizely supply chain attack injected malicious JavaScript into CNN, Fox News, BBC, Zoom, Salesforce, and GitLab, harvesting cryptocurrency and payment data. The code also exploits known iOS vulnerabilities, potentially compromising mobile devices that load the compromised pages. Security teams should verify Optimizely’s integrity, remove malicious scripts, and apply vendor-issued patches or revert to a trusted version.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
+    "publishedAt": "2026-11-17T02:12:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "optimizely-supply-chain-attack-injects-malware-int",
+      "article-c9c8a653",
+      "c9c8a653",
+      "optimizely-supply-chain-attack-injects-malware-int-45d665",
+      "optimizely-supply-chain-attack-injects-malware-into-major-si"
+    ]
+  },
+  {
     "slug": "optimizely-compromise-injects-malicious-javascript-6cc7b684",
     "title": "Optimizely Compromise Injects Malicious JavaScript into Major Sites",
     "summary": "Optimizely’s content delivery platform was compromised, injecting malicious JavaScript into the code served to visitors of 178 major sites including Zoom, BBC, CNN, Salesforce, and GitLab. The injected scripts steal cryptocurrency wallets, capture payment data, and exploit iOS vulnerabilities to harvest credentials. Optimizely released a patch; affected sites must update instances and purge cached JavaScript to mitigate the threat.",
@@ -9784,25 +9803,6 @@ export const news: NewsBrief[] = [
       "3164abd1",
       "sckit-exploits-screenconnect-remote-access-vulnera-7c1985",
       "sckit-exploits-screenconnect-remote-access-vulnerability"
-    ]
-  },
-  {
-    "slug": "kazakhstan-hackers-deploy-ai-agent-for-central-asi-3d350d73",
-    "title": "Kazakhstan Hackers Deploy AI Agent for Central Asian Espionage",
-    "summary": "Suspected Kazakhstan-linked hackers deployed an AI agent to spy on Central Asian governments, steal documents, and infiltrate critical infrastructure. The agent automates reconnaissance and credential harvesting, bypassing traditional controls to gain unauthorized access to mission-critical systems. Teams should enforce strict access controls, monitor for anomalous AI-driven activity, and deploy advanced threat detection to mitigate infiltration.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/kazakhstan-hackers-central-asia",
-    "publishedAt": "2026-11-12T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kazakhstan-hackers-deploy-ai-agent-for-central-asi",
-      "article-3d350d73",
-      "3d350d73",
-      "kazakhstan-hackers-deploy-ai-agent-for-central-asi-520e00",
-      "kazakhstan-hackers-deploy-ai-agent-for-central-asian-espiona"
     ]
   }
 ];

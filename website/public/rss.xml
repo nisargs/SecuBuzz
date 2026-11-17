@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 03:44:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 04:10:28 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Optimizely Supply Chain Attack Injects Malware into Major Sites</title>
+      <link>https://secubuzz.com/news/optimizely-supply-chain-attack-injects-malware-int-c9c8a653</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/optimizely-supply-chain-attack-injects-malware-int-c9c8a653</guid>
+      <description><![CDATA[Optimizely supply chain attack injected malicious JavaScript into CNN, Fox News, BBC, Zoom, Salesforce, and GitLab, harvesting cryptocurrency and payment data. The code also exploits known iOS vulnerabilities, potentially compromising mobile devices that load the compromised pages. Security teams should verify Optimizely’s integrity, remove malicious scripts, and apply vendor-issued patches or revert to a trusted version.]]></description>
+      <pubDate>Tue, 17 Nov 2026 02:12:17 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Optimizely Compromise Injects Malicious JavaScript into Major Sites</title>
       <link>https://secubuzz.com/news/optimizely-compromise-injects-malicious-javascript-6cc7b684</link>
@@ -447,15 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 15:07:32 GMT</pubDate>
       <source url="https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/">SecurityWeek</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>CJIS Password and MFA Compliance Steps</title>
-      <link>https://secubuzz.com/news/cjis-password-and-mfa-compliance-steps-3bc60c58</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cjis-password-and-mfa-compliance-steps-3bc60c58</guid>
-      <description><![CDATA[The FBI’s CJIS Security Policy now mandates stronger passwords and MFA enforcement for all law-enforcement accounts. Specops Software provides seven practical steps to block compromised passwords, enforce MFA, and satisfy the updated policy. Organizations should implement these controls, audit password hygiene, and verify MFA deployment to remain compliant with CJIS regulations.]]></description>
-      <pubDate>Mon, 16 Nov 2026 15:01:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/">BleepingComputer</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
+    "title": "Optimizely Supply Chain Attack Injects Malware into Major Sites",
+    "headline": "Optimizely Supply Chain Attack Injects Malware into Major Sites",
+    "summary": "Optimizely supply chain attack injected malicious JavaScript into CNN, Fox News, BBC, Zoom, Salesforce, and GitLab, harvesting cryptocurrency and payment data. The code also exploits known iOS vulnerabilities, potentially compromising mobile devices that load the compromised pages. Security teams should verify Optimizely’s integrity, remove malicious scripts, and apply vendor-issued patches or revert to a trusted version.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-17T02:12:17.000Z",
+    "ingestedAt": "2026-11-17T04:09:32.367Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
     "title": "Optimizely Compromise Injects Malicious JavaScript into Major Sites",
@@ -8365,21 +8381,5 @@
     "cves": [
       "CVE-2026-84869"
     ]
-  },
-  {
-    "id": "https://therecord.media/kazakhstan-hackers-central-asia",
-    "sourceUrl": "https://therecord.media/kazakhstan-hackers-central-asia",
-    "title": "Kazakhstan Hackers Deploy AI Agent for Central Asian Espionage",
-    "headline": "Kazakhstan Hackers Deploy AI Agent for Central Asian Espionage",
-    "summary": "Suspected Kazakhstan-linked hackers deployed an AI agent to spy on Central Asian governments, steal documents, and infiltrate critical infrastructure. The agent automates reconnaissance and credential harvesting, bypassing traditional controls to gain unauthorized access to mission-critical systems. Teams should enforce strict access controls, monitor for anomalous AI-driven activity, and deploy advanced threat detection to mitigate infiltration.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-11-12T13:00:00.000Z",
-    "ingestedAt": "2026-11-12T13:43:21.195Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://therecord.media/kazakhstan-hackers-central-asia",
-    "additionalSources": []
   }
 ]
