@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 19:45:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 20:46:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-130622 and CVE-2026-130623 - Incorrect authorization in credential loading and handling for namespace-scoped issuers in AWS Private CA Connector for Kubernetes (aws-privateca-issuer)</title>
+      <link>https://secubuzz.com/news/cve-2026-130622-and-cve-2026-130623-incorrect-auth-2c8ce2c4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-130622-and-cve-2026-130623-incorrect-auth-2c8ce2c4</guid>
+      <description><![CDATA[Impacted versions: - aws-privateca-issuer before v1.12.0 - AWS Private CA Connector for Kubernetes EKS add-on before v1.12.0-eksbuild.1 Refer to the article for the most up-to-date and complete information.]]></description>
+      <pubDate>Tue, 17 Nov 2026 20:11:26 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-187-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>[Control systems] CODESYS security advisory (AV26-1169)</title>
       <link>https://secubuzz.com/news/control-systems-codesys-security-advisory-av26-11-e340cd7b</link>
@@ -59,6 +68,15 @@
       <description><![CDATA[Tor Network issued an emergency update while an ongoing distributed denial-of-service attack targeted its relays and obstructed traffic. The update patches a relay configuration flaw that allowed attackers to flood nodes with malformed packets, temporarily degrading network performance. Operators should install the latest Tor release, enable rate-limiting on relays, and monitor node logs for abnormal traffic patterns.]]></description>
       <pubDate>Tue, 17 Nov 2026 18:04:15 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Malicious iOS Scripts Now Behind 1 in 5 Advertiser Suspensions as Coruna Exploit Kit Hides Inside Ad Landing Pages</title>
+      <link>https://secubuzz.com/news/malicious-ios-scripts-now-behind-1-in-5-advertiser-8046f973</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-ios-scripts-now-behind-1-in-5-advertiser-8046f973</guid>
+      <description><![CDATA[Malicious iOS scripts accounted for roughly 20% of advertiser account suspensions in 2026 across advertising platforms protected by ADEX, according to the company’s newly released State of Ad Fraud 2026: ADEX Trust & Safety Report.]]></description>
+      <pubDate>Tue, 17 Nov 2026 17:25:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/malicious-ios-scripts-now-behind-1-in-5-advertiser-suspensions-as-coruna-exploit-kit-hides-inside-ad-landing-pages/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -413,6 +431,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>CISA Adds One Known Exploited Vulnerability to Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-one-known-exploited-vulnerability-to-cat-b8c812d0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-one-known-exploited-vulnerability-to-cat-b8c812d0</guid>
+      <description><![CDATA[CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .]]></description>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog">CISA</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Siemens .NET Client Library Path Traversal Vulnerability</title>
+      <link>https://secubuzz.com/news/siemens-net-client-library-path-traversal-vulnerab-8645c3e4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-net-client-library-path-traversal-vulnerab-8645c3e4</guid>
+      <description><![CDATA[Siemens' .NET Client Library for SIMATIC S7 Webserver API contains a path traversal flaw enabling file read/write outside the download directory. Rated CVSS 7.5, the flaw exploits pathname validation and leaks sensitive error messages, exploitable with public proof-of-concept code. Siemens released an updated library; teams should upgrade immediately or apply the vendor-issued workaround to block unauthorized file access.]]></description>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Dorsett Controls InfoScan</title>
       <link>https://secubuzz.com/news/dorsett-controls-infoscan-88f5512e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/dorsett-controls-infoscan-88f5512e</guid>
@@ -420,42 +456,6 @@
       <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01">CISA</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Siemens SIMATIC Authentication Bypass Vulnerability Exposed</title>
-      <link>https://secubuzz.com/news/siemens-simatic-authentication-bypass-vulnerabilit-55c60b80</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-simatic-authentication-bypass-vulnerabilit-55c60b80</guid>
-      <description><![CDATA[Siemens disclosed an authentication bypass flaw in its SIMATIC product line that lets an on-path attacker hijack a legitimate user session and execute arbitrary code with the victim’s privileges. The vulnerability, CVE-2026-58114, exploits improper session validation, enabling unauthenticated remote code execution and potentially compromising industrial control systems. Siemens released patches and recommends applying them or following mitigations.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08">CISA</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Siemens meta-iot2050 Command Injection Vulnerability</title>
-      <link>https://secubuzz.com/news/siemens-meta-iot2050-command-injection-vulnerabili-510d7a03</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-meta-iot2050-command-injection-vulnerabili-510d7a03</guid>
-      <description><![CDATA[Siemens meta-iot2050 firmware update tool (CVE-2026-109830) has a command injection flaw that lets attackers alter configuration files to run arbitrary root commands. The flaw exploits improper neutralization of special elements in OS command construction, rated CVSS 7.3, enabling unauthenticated remote code execution. Siemens released patches for 01.03.01+ and recommends firmware updates or disabling the tool.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11">CISA</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>SIMATIC WinCC Active Content Execution Flaw</title>
-      <link>https://secubuzz.com/news/simatic-wincc-active-content-execution-flaw-b630172a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/simatic-wincc-active-content-execution-flaw-b630172a</guid>
-      <description><![CDATA[Siemens SIMATIC WinCC (CVE-2026-59082) contains an implicit active content execution flaw that allows attackers to run arbitrary code by opening malicious files. The vulnerability, rated CVSS 7.8, exploits insufficient UI warnings for dangerous operations, enabling unauthenticated remote code execution on affected versions. Siemens issued patches for WinCC V7.5, V8.0, and V8.1 and recommends applying updates or disabling active content.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09">CISA</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Siemens Mendix Studio Pro Vulnerabilities Enable Remote Interaction</title>
-      <link>https://secubuzz.com/news/siemens-mendix-studio-pro-vulnerabilities-enable-r-542fd911</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-mendix-studio-pro-vulnerabilities-enable-r-542fd911</guid>
-      <description><![CDATA[Multiple vulnerabilities in Siemens Mendix Studio Pro’s MCP Server could allow an attacker with network access to remotely interact with the server or trick a user’s browser into unauthorized requests. Rated CVSS 8.8, these flaws could enable unauthorized data access, tool execution, or system compromise. Siemens released updated versions; administrators should upgrade immediately to mitigate the vulnerabilities.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05">CISA</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

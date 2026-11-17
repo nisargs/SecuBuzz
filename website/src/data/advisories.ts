@@ -27,6 +27,87 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-14265",
+    "cveID": "CVE-2026-14265",
+    "slug": "cve-2026-14265",
+    "vendor": "Java (Maven)",
+    "product": "software.amazon.jdbc:aws-advanced-jdbc-wrapper",
+    "name": "AWS-advanced-jdbc-wrapper: Java Deserialization RCE via Cache Poisoning",
+    "dateAdded": "2026-11-17",
+    "dueDate": "",
+    "cvss": 7.7,
+    "severity": "High",
+    "cwe": "CWE-502",
+    "ransomware": false,
+    "description": "The AWS Advanced JDBC Wrapper is an open-source JDBC driver wrapper that extends a JDBC driver to enable Amazon Aurora and AWS Cloud features such as failover handling and caching. We identified CVE-2026-14265, an issue in the RemoteQueryCachePlugin of the AWS Advanced JDBC Wrapper.",
+    "requiredAction": "Upgrade software.amazon.jdbc:aws-advanced-jdbc-wrapper to version 4.0.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-c5q4-97jw-jggh"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14265"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63634",
+    "cveID": "CVE-2026-63634",
+    "slug": "cve-2026-63634",
+    "vendor": "Pip",
+    "product": "pympp",
+    "name": "pympp allows excessive sponsored transaction fees through padded calldata",
+    "dateAdded": "2026-11-17",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "When the server acts as the fee_payer, pympp 0.8.0 validates calldata using eth_abi decoding, which is lenient about trailing bytes. The FeePayerPolicy caps gas_limit (≤ 2 M) and max_fee_per_gas (≤ 100 Gwei) but does not check calldata length. Tempo uses legacy calldata gas pricing: 16 gas per non-zero byte.",
+    "requiredAction": "Upgrade pympp to version 0.9.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-v858-xh7w-8jr5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63634"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-53998",
+    "cveID": "CVE-2026-53998",
+    "slug": "cve-2026-53998",
+    "vendor": "Pip",
+    "product": "arize-phoenix",
+    "name": "Phoenix: Format String Injection in applyChatTemplate",
+    "dateAdded": "2026-11-17",
+    "dueDate": "",
+    "cvss": 10,
+    "severity": "Critical",
+    "cwe": "CWE-134",
+    "ransomware": false,
+    "description": "- Summary A format string injection vulnerability in the applyChatTemplate GraphQL endpoint allows an attacker to read server-side environment variables, cryptographic secrets, and internal module attributes directly from the API response. On default Phoenix installations where authentication is disabled the endpoint is reachable with no credentials.",
+    "requiredAction": "Upgrade arize-phoenix to version 15.7.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gfv3-m769-5xm3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53998"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-119351",
     "cveID": "CVE-2026-119351",
     "slug": "cve-2026-119351",
@@ -1341,87 +1422,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62297"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-62683",
-    "cveID": "CVE-2026-62683",
-    "slug": "cve-2026-62683",
-    "vendor": "Go",
-    "product": "filebrowser (v2) · filebrowser",
-    "name": "File Browser: Trailing-slash directory deletion leaves public shares active for recreated paths",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 3.1,
-    "severity": "Low",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "File Browser v2.63.15 can leave a public directory share behind when the shared directory is deleted through a path with a trailing slash. The share cleanup path calls DeleteWithPathPrefix(file.Path, userID), but the Bolt backend performs the database prefix query with the unnormalized argument before trimming the slash for boundary checks.",
-    "requiredAction": "Upgrade filebrowser (v2) · filebrowser to version 2.63.17 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pp88-jhwj-5qh5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62683"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126301",
-    "cveID": "CVE-2026-126301",
-    "slug": "cve-2026-126301",
-    "vendor": "Pip",
-    "product": "nltk",
-    "name": "NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "LegalitySyllableTokenizer.tokenize in the NLTK tokenizer package contains an unguarded O(n^2) processing loop. When the method is called on a single token that consists of a long run of vowels (for example \"a\" * n), it consumes CPU time proportional to the square of the token length.",
-    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gpwc-27cw-rh9r"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126301"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126300",
-    "cveID": "CVE-2026-126300",
-    "slug": "cve-2026-126300",
-    "vendor": "Pip",
-    "product": "nltk",
-    "name": "NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "TreebankWordTokenizer.span_tokenize in the NLTK tokenizer package contains an unguarded O(n^2) processing loop in its quote-restoration step.",
-    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-ffr9-mgrr-wcvr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126300"
       }
     ],
     "source": "GITHUB"

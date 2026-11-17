@@ -1,5 +1,25 @@
 [
   {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-187-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-187-aws/",
+    "title": "CVE-2026-130622 and CVE-2026-130623 - Incorrect authorization in credential loading and handling for namespace-scoped issuers in AWS Private CA Connector for Kubernetes (aws-privateca-issuer)",
+    "headline": "CVE-2026-130622 and CVE-2026-130623 - Incorrect authorization in credential loading and handling for namespace-scoped issuers in AWS Private CA Connector for Kubernetes (aws-privateca-issuer)",
+    "summary": "Impacted versions: - aws-privateca-issuer before v1.12.0 - AWS Private CA Connector for Kubernetes EKS add-on before v1.12.0-eksbuild.1 Refer to the article for the most up-to-date and complete information.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-17T20:11:26.000Z",
+    "ingestedAt": "2026-11-17T20:43:45.890Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-130622",
+      "CVE-2026-130623"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://cyber.gc.ca/en/alerts-advisories/control-systems-codesys-security-advisory-av26-1169",
     "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/control-systems-codesys-security-advisory-av26-1169",
     "title": "[Control systems] CODESYS security advisory (AV26-1169)",
@@ -97,6 +117,23 @@
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
     "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/malicious-ios-scripts-now-behind-1-in-5-advertiser-suspensions-as-coruna-exploit-kit-hides-inside-ad-landing-pages/",
+    "sourceUrl": "https://cybersecuritynews.com/malicious-ios-scripts-now-behind-1-in-5-advertiser-suspensions-as-coruna-exploit-kit-hides-inside-ad-landing-pages/",
+    "title": "Malicious iOS Scripts Now Behind 1 in 5 Advertiser Suspensions as Coruna Exploit Kit Hides Inside Ad Landing Pages",
+    "headline": "Malicious iOS Scripts Now Behind 1 in 5 Advertiser Suspensions as Coruna Exploit Kit Hides Inside Ad Landing Pages",
+    "summary": "Malicious iOS scripts accounted for roughly 20% of advertiser account suspensions in 2026 across advertising platforms protected by ADEX, according to the company’s newly released State of Ad Fraud 2026: ADEX Trust & Safety Report.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-17T17:25:31.000Z",
+    "ingestedAt": "2026-11-17T20:44:23.943Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://therecord.media/california-fines-hertz-state-data-privacy-law",
@@ -725,6 +762,41 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "headline": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-11-17T12:00:00.000Z",
+    "ingestedAt": "2026-11-17T20:45:02.077Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-115731"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
+    "title": "Siemens .NET Client Library Path Traversal Vulnerability",
+    "headline": "Siemens .NET Client Library Path Traversal Vulnerability",
+    "summary": "Siemens' .NET Client Library for SIMATIC S7 Webserver API contains a path traversal flaw enabling file read/write outside the download directory. Rated CVSS 7.5, the flaw exploits pathname validation and leaks sensitive error messages, exploitable with public proof-of-concept code. Siemens released an updated library; teams should upgrade immediately or apply the vendor-issued workaround to block unauthorized file access.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-11-17T12:00:00.000Z",
+    "ingestedAt": "2026-11-17T20:45:50.216Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
     "additionalSources": []
   },
   {
@@ -8273,71 +8345,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:99827",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99824",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99824",
-    "title": "RHSA-2026:99824: Important: rhc security update",
-    "headline": "RHSA-2026:99824: Important: rhc security update",
-    "summary": "An update for rhc is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T20:28:38.000Z",
-    "ingestedAt": "2026-11-13T06:43:35.590Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://cyber.gc.ca/en/alerts-advisories/amd-security-advisory-av26-1155",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/amd-security-advisory-av26-1155",
-    "title": "AMD Advises on Processor Vulnerability Fixes",
-    "headline": "AMD Advises on Processor Vulnerability Fixes",
-    "summary": "AMD disclosed vulnerabilities in multiple Athlon and EPYC processor families, excluding certain firmware revisions, that could enable unauthorized code execution via microcode. Root cause details are not specified, and no active exploitation has been reported, but the flaw could allow remote code execution. AMD advises applying the latest firmware updates from its support portal to mitigate the risk.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "publishedAt": "2026-11-12T20:24:57.000Z",
-    "ingestedAt": "2026-11-15T08:43:15.147Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cyber.gc.ca/en/alerts-advisories/amd-security-advisory-av26-1155",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99754",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99754",
-    "title": "Red Hat Issues libX11 Security Update",
-    "headline": "Red Hat Issues libX11 Security Update",
-    "summary": "Red Hat released a security update for libX11 affecting Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and mitigates potential privilege escalation. Customers should install the patch immediately to mitigate potential denial-of-service or privilege escalation risks.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T20:17:26.000Z",
-    "ingestedAt": "2026-11-12T20:24:12.864Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99754",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/",
-    "title": "Microsoft 365 Outage Hits Outlook, Teams, Copilot",
-    "headline": "Microsoft 365 Outage Hits Outlook, Teams, Copilot",
-    "summary": "Microsoft is investigating a widespread outage that has disrupted Outlook, Microsoft Teams, and Copilot services for users worldwide. Preliminary diagnostics indicate a network routing issue within Microsoft’s global infrastructure, causing connectivity failures across multiple regions. Microsoft has deployed a temporary fix and is working to restore full functionality while monitoring for residual impact.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-12T20:15:16.000Z",
-    "ingestedAt": "2026-11-12T23:44:01.727Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/",
     "additionalSources": []
   }
 ]
