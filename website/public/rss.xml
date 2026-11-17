@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 05:45:53 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 06:44:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ScreenConnect Vulnerability Enables Unauthorized Access</title>
+      <link>https://secubuzz.com/news/screenconnect-vulnerability-enables-unauthorized-a-bcc9a6d9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-vulnerability-enables-unauthorized-a-bcc9a6d9</guid>
+      <description><![CDATA[ConnectWise identified that a flaw in ScreenConnect, CVE-2026-84869, permits unauthorized remote access to partner environments via unpatched technician clients. The vulnerability arises from insufficient authentication checks in the technician client, allowing attackers to bypass credentials and execute commands on on-premises systems. ConnectWise recommends upgrading to version 26.6.5 or later and disabling third-party extensions to mitigate the risk of unauthorized access.]]></description>
+      <pubDate>Tue, 17 Nov 2026 06:29:27 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>AI Security Dominates Cyberseed Funding</title>
+      <link>https://secubuzz.com/news/ai-security-dominates-cyberseed-funding-837d8459</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-security-dominates-cyberseed-funding-837d8459</guid>
+      <description><![CDATA[In Q3 2026, AI-focused cybersecurity seed deals accounted for over one-third of total cybersecurity funding, despite a slight dip from the previous quarter. DataTribe’s PitchBook analysis shows capital is concentrating in fewer, larger rounds, raising the threshold for post-seed financing. The U.S. venture market remains robust, delivering one of its best quarters since 2021, even as cybersecurity seed activity slows.]]></description>
+      <pubDate>Tue, 17 Nov 2026 06:19:27 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/17/cybersecurity-seed-funding-deals/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>40% Struggle to Trace AI Agent Actions</title>
       <link>https://secubuzz.com/news/40-struggle-to-trace-ai-agent-actions-6e6cfe47</link>
@@ -60,6 +78,15 @@
       <pubDate>Tue, 17 Nov 2026 02:12:17 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CRaC JDK 25 Auth Flaws Expose Sensitive Data</title>
+      <link>https://secubuzz.com/news/crac-jdk-25-auth-flaws-expose-sensitive-data-ed96a5e6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crac-jdk-25-auth-flaws-expose-sensitive-data-ed96a5e6</guid>
+      <description><![CDATA[CRaC JDK 25 and OpenJDK 25 contain authentication and authorization flaws that let unauthenticated remote attackers read or modify sensitive data. The flaws, identified as CVE-2026-114820, CVE-2026-83374, CVE-2026-83376, CVE-2026-91461, and CVE-2026-83378, arise from missing user authentication in security, JSSE, JAAS, and compiler components.]]></description>
+      <pubDate>Tue, 17 Nov 2026 01:05:37 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9131-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>HTTP/3 RATs Target Southeast Asian Governments</title>
@@ -429,33 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124223">Microsoft MSRC</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Office SharePoint Elevation Vulnerability CVE-2026-124222</title>
-      <link>https://secubuzz.com/news/microsoft-office-sharepoint-elevation-vulnerabilit-e5b15521</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-office-sharepoint-elevation-vulnerabilit-e5b15521</guid>
-      <description><![CDATA[Microsoft Office SharePoint contains an elevation of privilege flaw identified as CVE-2026-124222, affecting privileged users. The flaw was patched in November 2026 updates, but the CVE was inadvertently omitted from the release notes. Customers who have installed the November 2026 updates need not take further action, but should verify patch status.]]></description>
-      <pubDate>Mon, 16 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124222">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>UK Excludes Client-Side Scanning from Child-Safety Rules</title>
-      <link>https://secubuzz.com/news/uk-excludes-client-side-scanning-from-child-safety-6ac8bc86</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uk-excludes-client-side-scanning-from-child-safety-6ac8bc86</guid>
-      <description><![CDATA[Ofcom said UK child-safety rules will not mandate client-side scanning of personal devices for child-abuse images, leaving tech firms without a regulatory requirement. The decision reflects Ofcom’s limited authority over device-level enforcement, creating a gap that could let child-abuse content remain undetected. Tech firms should adopt internal scanning, user-reporting, and privacy-preserving detection tools to mitigate the regulatory shortfall.]]></description>
-      <pubDate>Mon, 16 Nov 2026 15:56:00 GMT</pubDate>
-      <source url="https://therecord.media/uk-ofcom-child-safety-rules-client-side-scanning-left-out">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Tools ARTEX, PentAGI, HexStrike Automate Attacks</title>
-      <link>https://secubuzz.com/news/ai-tools-artex-pentagi-hexstrike-automate-attacks-e278896a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-tools-artex-pentagi-hexstrike-automate-attacks-e278896a</guid>
-      <description><![CDATA[Cisco Talos reports that ARTEX, PentAGI, and HexStrike AI platforms automate reconnaissance, vulnerability testing, and follow-on exploits. These tools combine security utilities with AI agents, enabling operators to run tasks concurrently and accelerate target selection; no public exploit yet. Security teams should monitor AI-driven activity, enforce strict access controls on testing tools, and update detection rules to flag automated scanning.]]></description>
-      <pubDate>Mon, 16 Nov 2026 15:48:20 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-artex/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

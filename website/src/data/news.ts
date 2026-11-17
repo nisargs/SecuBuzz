@@ -11,6 +11,45 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "screenconnect-vulnerability-enables-unauthorized-a-bcc9a6d9",
+    "title": "ScreenConnect Vulnerability Enables Unauthorized Access",
+    "summary": "ConnectWise identified that a flaw in ScreenConnect, CVE-2026-84869, permits unauthorized remote access to partner environments via unpatched technician clients. The vulnerability arises from insufficient authentication checks in the technician client, allowing attackers to bypass credentials and execute commands on on-premises systems. ConnectWise recommends upgrading to version 26.6.5 or later and disabling third-party extensions to mitigate the risk of unauthorized access.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
+    "publishedAt": "2026-11-17T06:29:27.000Z",
+    "cves": [
+      "CVE-2026-84869"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "screenconnect-vulnerability-enables-unauthorized-a",
+      "article-bcc9a6d9",
+      "bcc9a6d9",
+      "screenconnect-vulnerability-enables-unauthorized-a-50e8fc",
+      "screenconnect-vulnerability-enables-unauthorized-access"
+    ]
+  },
+  {
+    "slug": "ai-security-dominates-cyberseed-funding-837d8459",
+    "title": "AI Security Dominates Cyberseed Funding",
+    "summary": "In Q3 2026, AI-focused cybersecurity seed deals accounted for over one-third of total cybersecurity funding, despite a slight dip from the previous quarter. DataTribe’s PitchBook analysis shows capital is concentrating in fewer, larger rounds, raising the threshold for post-seed financing. The U.S. venture market remains robust, delivering one of its best quarters since 2021, even as cybersecurity seed activity slows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/cybersecurity-seed-funding-deals/",
+    "publishedAt": "2026-11-17T06:19:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-security-dominates-cyberseed-funding",
+      "article-837d8459",
+      "837d8459",
+      "ai-security-dominates-cyberseed-funding-631d83"
+    ]
+  },
+  {
     "slug": "40-struggle-to-trace-ai-agent-actions-6e6cfe47",
     "title": "40% Struggle to Trace AI Agent Actions",
     "summary": "A recent report shows 40% of organizations cannot fully retrace AI agents’ actions in development pipelines, even though 99% deploy them for autonomous code changes. AI-driven development raised cloud updates by 82%, increasing release pressure that often leaves security issues unresolved. Security teams should enforce audit trails, least-privilege policies, and AI-aware monitoring to mitigate undetected changes.",
@@ -125,6 +164,30 @@ export const news: NewsBrief[] = [
       "6cc7b684",
       "optimizely-compromise-injects-malicious-javascript-55c3ad",
       "optimizely-compromise-injects-malicious-javascript-into-majo"
+    ]
+  },
+  {
+    "slug": "crac-jdk-25-auth-flaws-expose-sensitive-data-ed96a5e6",
+    "title": "CRaC JDK 25 Auth Flaws Expose Sensitive Data",
+    "summary": "CRaC JDK 25 and OpenJDK 25 contain authentication and authorization flaws that let unauthenticated remote attackers read or modify sensitive data. The flaws, identified as CVE-2026-114820, CVE-2026-83374, CVE-2026-83376, CVE-2026-91461, and CVE-2026-83378, arise from missing user authentication in security, JSSE, JAAS, and compiler components.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9131-1",
+    "publishedAt": "2026-11-17T01:05:37.000Z",
+    "cves": [
+      "CVE-2026-114820",
+      "CVE-2026-83374",
+      "CVE-2026-83376",
+      "CVE-2026-91461",
+      "CVE-2026-83378"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "crac-jdk-25-auth-flaws-expose-sensitive-data",
+      "article-ed96a5e6",
+      "ed96a5e6",
+      "crac-jdk-25-auth-flaws-expose-sensitive-data-7e7a43"
     ]
   },
   {
@@ -9739,65 +9802,6 @@ export const news: NewsBrief[] = [
       "article-58ffebef",
       "58ffebef",
       "red-hat-quay-vulnerability-enables-token-hijacking-15a972"
-    ]
-  },
-  {
-    "slug": "check-point-gateways-hit-by-php2shell-exploitation-91c904a4",
-    "title": "Check Point Gateways Hit by PHP2Shell Exploitation",
-    "summary": "Attackers exploited CVE-2026-109618 on Check Point Security Gateways’ Mobile Access portals, targeting Israeli organizations via IP 130.94.19.204 in late October 2026. The vulnerability allows remote code execution through PHP2Shell, enabling attackers to compromise gateway systems and potentially exfiltrate data. Check Point released a patch for CVE-2026-109618; administrators should apply it immediately and monitor for anomalous activity.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Check Point Research",
-    "sourceUrl": "https://research.checkpoint.com/2026/php2shell-exploitation-on-check-point-gateway/",
-    "publishedAt": "2026-11-12T13:56:37.000Z",
-    "cves": [
-      "CVE-2026-109618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "check-point-gateways-hit-by-php2shell-exploitation",
-      "article-91c904a4",
-      "91c904a4",
-      "check-point-gateways-hit-by-php2shell-exploitation-350a39"
-    ]
-  },
-  {
-    "slug": "aws-fixes-mcp-gateway-ssrf-vulnerability-b2c99e9d",
-    "title": "AWS Fixes MCP Gateway SSRF Vulnerability",
-    "summary": "AWS disclosed CVE-2026-125926, a server-side request forgery flaw in mcp-gateway-registry that permits authenticated users to access internal services and cloud credentials. The vulnerability affects versions 1.0.3 through 1.34.0; version 1.35.0 contains the fix and mitigates the internal network exposure. AWS urges users to upgrade to 1.35.0 or apply the patch immediately to prevent unauthorized internal access. The flaw is tracked as CVE-2026-125926.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/aws-mcp-gateway-security-flaw/",
-    "publishedAt": "2026-11-12T13:51:59.000Z",
-    "cves": [
-      "CVE-2026-125926"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aws-fixes-mcp-gateway-ssrf-vulnerability",
-      "article-b2c99e9d",
-      "b2c99e9d",
-      "aws-fixes-mcp-gateway-ssrf-vulnerability-35a87a"
-    ]
-  },
-  {
-    "slug": "qilin-ransomware-admin-identified-as-36-year-old-r-e5b20db7",
-    "title": "Qilin Ransomware Admin Identified as 36-Year-Old Russian Hacker After Cybercrime Probe",
-    "summary": "A cybercrime investigation has linked the administrator of Qilin ransomware to Aleksey Mikhailovich Yakovtsev, a 36-year-old man living in St. Published by KrebsOnSecurity on November 11, 2026, the findings connect the online identity “Haise” to older forum accounts, Telegram records, and leaked databases.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/qilin-ransomware-admin-identified/",
-    "publishedAt": "2026-11-12T13:42:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "qilin-ransomware-admin-identified-as-36-year-old-r",
-      "article-e5b20db7",
-      "e5b20db7",
-      "qilin-ransomware-admin-identified-as-36-year-old-r-445761",
-      "qilin-ransomware-admin-identified-as-36-year-old-russian-hac"
     ]
   }
 ];
