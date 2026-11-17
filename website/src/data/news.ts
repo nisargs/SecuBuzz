@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "n-able-patches-17-n-central-zero-days-b71a59fc",
+    "title": "N-Able Patches 17 N-Central Zero-Days",
+    "summary": "N-Able released patches for 17 N-Central zero-day vulnerabilities, including those already exploited in the wild. The flaws enabled unauthenticated remote code execution via the legacy API, exposing customers to system compromise in the wild. All affected installations should apply the latest update today; legacy APIs are disabled to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/",
+    "publishedAt": "2026-11-17T12:28:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-patches-17-n-central-zero-days",
+      "article-b71a59fc",
+      "b71a59fc",
+      "n-able-patches-17-n-central-zero-days-207ac6"
+    ]
+  },
+  {
+    "slug": "iphone-audio-service-bypasses-microphone-permissio-609dd0d1",
+    "title": "iPhone Audio Service Bypasses Microphone Permission",
+    "summary": "Apple's audio service contained a flaw that allowed apps to record audio even after users denied microphone access. The bug bypassed the operating system's permission model, enabling unauthorized audio capture without user consent. Apple released a patch on August 17; users should install the update to prevent unauthorized recording today.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
+    "publishedAt": "2026-11-17T12:14:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "iphone-audio-service-bypasses-microphone-permissio",
+      "article-609dd0d1",
+      "609dd0d1",
+      "iphone-audio-service-bypasses-microphone-permissio-53e38d",
+      "iphone-audio-service-bypasses-microphone-permission"
+    ]
+  },
+  {
     "slug": "meta-fined-805m-for-facebook-photo-access-894bb5cd",
     "title": "Meta Fined €805M for Facebook Photo Access",
     "summary": "Italy imposed an €805 million fine on Meta for unauthorized access to users' Facebook photo galleries, citing persistent privacy violations. The enforcement action follows investigations that uncovered Meta's collection of photo metadata without explicit user consent. Meta has acknowledged the findings and is reportedly reviewing its data-handling practices to comply with EU privacy regulations.",
@@ -120,6 +157,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "mcdonald-s-ios-app-receives-mass-push-notification-b30fdd6f",
+    "title": "McDonald’s iOS App Receives Mass Push Notifications",
+    "summary": "McDonald’s iOS application received a sudden influx of push notifications on November 17, prompting concerns about potential misuse of its notification system. No confirmed vulnerability or evidence of malicious payloads was identified, and the source of the alerts remains unclear. Security teams should monitor app behavior and verify notification authenticity, but no immediate patch is required.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/mcdonald-ios-app-push-notification/",
+    "publishedAt": "2026-11-17T10:53:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mcdonald-s-ios-app-receives-mass-push-notification",
+      "article-b30fdd6f",
+      "b30fdd6f",
+      "mcdonald-s-ios-app-receives-mass-push-notification-56b437",
+      "mcdonald-s-ios-app-receives-mass-push-notifications"
+    ]
+  },
+  {
     "slug": "optimizely-flaw-used-to-deliver-malware-on-major-s-a333ef7e",
     "title": "Optimizely Flaw Used to Deliver Malware on Major Sites",
     "summary": "An Optimizely vulnerability is being exploited to serve malware on sites including BBC, CNN, Zoom, GitLab, Salesforce, Equifax, HSBC, and IKEA. The attack chain leverages a server-side request forgery flaw that allows attackers to inject malicious scripts into content served to visitors. Organizations should update Optimizely to the latest patch, validate script integrity, and monitor web traffic for anomalous payloads.",
@@ -211,6 +267,24 @@ export const news: NewsBrief[] = [
       "fd69f367",
       "mozilla-releases-firefox-160-fixing-99-vulnerabili-4107e5",
       "mozilla-releases-firefox-160-fixing-99-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "apple-adds-privacy-controls-for-ai-apps-c93afb04",
+    "title": "Apple Adds Privacy Controls for AI Apps",
+    "summary": "Apple released macOS 27.3 beta 2, adding privacy controls that restrict AI apps from broad data access. The update tightens permissions, adds stronger warnings, and provides activity visibility to prevent unauthorized data exposure by AI assistants. Install the beta to enforce these controls; no further patches are required in the next release.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/macos-27-3-new-security-controls/",
+    "publishedAt": "2026-11-17T08:55:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-adds-privacy-controls-for-ai-apps",
+      "article-c93afb04",
+      "c93afb04",
+      "apple-adds-privacy-controls-for-ai-apps-162f21"
     ]
   },
   {
@@ -552,10 +626,10 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "optimizely-compromise-injects-malicious-javascript-6cc7b684",
-    "title": "Optimizely Compromise Injects Malicious JavaScript into Major Sites",
-    "summary": "Optimizely’s content delivery platform was compromised, injecting malicious JavaScript into the code served to visitors of 178 major sites including Zoom, BBC, CNN, Salesforce, and GitLab. The injected scripts steal cryptocurrency wallets, capture payment data, and exploit iOS vulnerabilities to harvest credentials. Optimizely released a patch; affected sites must update instances and purge cached JavaScript to mitigate the threat.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
+    "title": "Optimizely Compromise Injects Malicious JavaScript into 178 Sites",
+    "summary": "Optimizely’s web experimentation platform was exploited to inject malicious JavaScript into customer sites, affecting 178 organizations including Zoom, BBC, CNN, Salesforce, and GitLab. The injected code stole cryptocurrency wallets, captured payment data, and exploited iOS flaws to harvest credentials. Optimizely patched the flaw and removed injected code; affected customers must update instances and purge cached JavaScript.",
+    "category": "Breach",
+    "severity": "CRITICAL",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
     "publishedAt": "2026-11-17T02:12:17.000Z",
@@ -564,6 +638,10 @@ export const news: NewsBrief[] = [
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/optimizely-websites-hijacked/"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/optimizely-vulnerability-malicious-javascript/"
       }
     ],
     "aliases": [
@@ -571,7 +649,7 @@ export const news: NewsBrief[] = [
       "article-6cc7b684",
       "6cc7b684",
       "optimizely-compromise-injects-malicious-javascript-55c3ad",
-      "optimizely-compromise-injects-malicious-javascript-into-majo"
+      "optimizely-compromise-injects-malicious-javascript-into-178-"
     ]
   },
   {
@@ -9697,85 +9775,6 @@ export const news: NewsBrief[] = [
       "article-bd17b004",
       "bd17b004",
       "craft-cms-vulnerability-cve-2026-123488-exploited-30b06c"
-    ]
-  },
-  {
-    "slug": "watchguard-endpoint-security-local-privilege-escal-7cd0f18b",
-    "title": "WatchGuard Endpoint Security Local Privilege Escalation Exploited",
-    "summary": "A local privilege escalation flaw in WatchGuard Endpoint Security before 8.00.26.0011 lets attackers execute SYSTEM code via console-service communication. Identified as CVE-2026-57907, the flaw permits authenticated users to gain SYSTEM-level execution, potentially compromising the endpoint and enabling lateral movement. WatchGuard released patches; administrators should update to 8.00.26.0011 or later and review advisories for comprehensive mitigations.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/watchguard-security-advisory-av26-1147",
-    "publishedAt": "2026-11-12T15:52:53.000Z",
-    "cves": [
-      "CVE-2026-57907"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "watchguard-endpoint-security-local-privilege-escal",
-      "article-7cd0f18b",
-      "7cd0f18b",
-      "watchguard-endpoint-security-local-privilege-escal-33503e",
-      "watchguard-endpoint-security-local-privilege-escalation-expl"
-    ]
-  },
-  {
-    "slug": "adobe-multiple-product-vulnerabilities-2026-b46a0bdb",
-    "title": "Adobe Multiple Product Vulnerabilities 2026",
-    "summary": "Adobe disclosed vulnerabilities in Experience Manager Cloud Service, AEM 6.5, Premiere, Photoshop, and Media Encoder in its November 2026 advisory. Root causes are not disclosed, but the flaws could allow unauthorized code execution or privilege escalation within the affected applications. Adobe recommends applying the latest patches or upgrading to the specified service pack levels to mitigate the risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/adobe-security-advisory-av26-1146",
-    "publishedAt": "2026-11-12T15:45:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "adobe-multiple-product-vulnerabilities-2026",
-      "article-b46a0bdb",
-      "b46a0bdb",
-      "adobe-multiple-product-vulnerabilities-2026-4e96ec"
-    ]
-  },
-  {
-    "slug": "citrix-releases-patches-for-12-netscaler-flaws-4e7d75dc",
-    "title": "Citrix Releases Patches for 12 NetScaler Flaws",
-    "summary": "Citrix has issued patches for twelve critical NetScaler ADC, Gateway, and Console flaws that could enable denial-of-service or authentication bypass. The most severe flaw, CVE-2026-120868, is a memory overflow with CVSS 9.3 that permits unauthenticated remote code execution, potentially compromising entire NetScaler deployments. Citrix recommends applying the latest cumulative update immediately and verifying configuration changes to mitigate the vulnerabilities.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
-    "publishedAt": "2026-11-12T15:38:49.000Z",
-    "cves": [
-      "CVE-2026-120868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "citrix-releases-patches-for-12-netscaler-flaws",
-      "article-4e7d75dc",
-      "4e7d75dc",
-      "citrix-releases-patches-for-12-netscaler-flaws-2a885d"
-    ]
-  },
-  {
-    "slug": "apache-fixes-critical-http-2-rce-vulnerability-8fa80d31",
-    "title": "Apache Fixes Critical HTTP/2 RCE Vulnerability",
-    "summary": "Apache patched a critical mod_http2 race condition that could let unauthenticated attackers execute code on HTTP/2-enabled servers. The flaw, CVE-2026-119618, exploits a race condition in HTTP/2, enabling unauthenticated remote code execution that could compromise all affected servers. Administrators should apply the latest Apache release and disable HTTP/2 if immediate patching is not possible to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
-    "publishedAt": "2026-11-12T15:38:31.000Z",
-    "cves": [
-      "CVE-2026-119618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apache-fixes-critical-http-2-rce-vulnerability",
-      "article-8fa80d31",
-      "8fa80d31",
-      "apache-fixes-critical-http-2-rce-vulnerability-79fafe"
     ]
   }
 ];

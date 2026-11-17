@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 11:48:39 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 12:47:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>N-Able Patches 17 N-Central Zero-Days</title>
+      <link>https://secubuzz.com/news/n-able-patches-17-n-central-zero-days-b71a59fc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-patches-17-n-central-zero-days-b71a59fc</guid>
+      <description><![CDATA[N-Able released patches for 17 N-Central zero-day vulnerabilities, including those already exploited in the wild. The flaws enabled unauthenticated remote code execution via the legacy API, exposing customers to system compromise in the wild. All affected installations should apply the latest update today; legacy APIs are disabled to mitigate risk.]]></description>
+      <pubDate>Tue, 17 Nov 2026 12:28:45 GMT</pubDate>
+      <source url="https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>iPhone Audio Service Bypasses Microphone Permission</title>
+      <link>https://secubuzz.com/news/iphone-audio-service-bypasses-microphone-permissio-609dd0d1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/iphone-audio-service-bypasses-microphone-permissio-609dd0d1</guid>
+      <description><![CDATA[Apple's audio service contained a flaw that allowed apps to record audio even after users denied microphone access. The bug bypassed the operating system's permission model, enabling unauthorized audio capture without user consent. Apple released a patch on August 17; users should install the update to prevent unauthorized recording today.]]></description>
+      <pubDate>Tue, 17 Nov 2026 12:14:36 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Meta Fined €805M for Facebook Photo Access</title>
       <link>https://secubuzz.com/news/meta-fined-805m-for-facebook-photo-access-894bb5cd</link>
@@ -62,6 +80,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>McDonald’s iOS App Receives Mass Push Notifications</title>
+      <link>https://secubuzz.com/news/mcdonald-s-ios-app-receives-mass-push-notification-b30fdd6f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mcdonald-s-ios-app-receives-mass-push-notification-b30fdd6f</guid>
+      <description><![CDATA[McDonald’s iOS application received a sudden influx of push notifications on November 17, prompting concerns about potential misuse of its notification system. No confirmed vulnerability or evidence of malicious payloads was identified, and the source of the alerts remains unclear. Security teams should monitor app behavior and verify notification authenticity, but no immediate patch is required.]]></description>
+      <pubDate>Tue, 17 Nov 2026 10:53:39 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/mcdonald-ios-app-push-notification/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Optimizely Flaw Used to Deliver Malware on Major Sites</title>
       <link>https://secubuzz.com/news/optimizely-flaw-used-to-deliver-malware-on-major-s-a333ef7e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/optimizely-flaw-used-to-deliver-malware-on-major-s-a333ef7e</guid>
@@ -105,6 +132,15 @@
       <pubDate>Tue, 17 Nov 2026 09:03:50 GMT</pubDate>
       <source url="https://cybersecuritynews.com/mozilla-patches-160-firefox-vulnerabilities/">Cyber Security News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Apple Adds Privacy Controls for AI Apps</title>
+      <link>https://secubuzz.com/news/apple-adds-privacy-controls-for-ai-apps-c93afb04</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-adds-privacy-controls-for-ai-apps-c93afb04</guid>
+      <description><![CDATA[Apple released macOS 27.3 beta 2, adding privacy controls that restrict AI apps from broad data access. The update tightens permissions, adds stronger warnings, and provides activity visibility to prevent unauthorized data exposure by AI assistants. Install the beta to enforce these controls; no further patches are required in the next release.]]></description>
+      <pubDate>Tue, 17 Nov 2026 08:55:20 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/macos-27-3-new-security-controls/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Google Detects AI Agents Crafting Exploits Independently</title>
@@ -269,13 +305,13 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Optimizely Compromise Injects Malicious JavaScript into Major Sites</title>
+      <title>Optimizely Compromise Injects Malicious JavaScript into 178 Sites</title>
       <link>https://secubuzz.com/news/optimizely-compromise-injects-malicious-javascript-6cc7b684</link>
       <guid isPermaLink="true">https://secubuzz.com/news/optimizely-compromise-injects-malicious-javascript-6cc7b684</guid>
-      <description><![CDATA[Optimizely’s content delivery platform was compromised, injecting malicious JavaScript into the code served to visitors of 178 major sites including Zoom, BBC, CNN, Salesforce, and GitLab. The injected scripts steal cryptocurrency wallets, capture payment data, and exploit iOS vulnerabilities to harvest credentials. Optimizely released a patch; affected sites must update instances and purge cached JavaScript to mitigate the threat.]]></description>
+      <description><![CDATA[Optimizely’s web experimentation platform was exploited to inject malicious JavaScript into customer sites, affecting 178 organizations including Zoom, BBC, CNN, Salesforce, and GitLab. The injected code stole cryptocurrency wallets, captured payment data, and exploited iOS flaws to harvest credentials. Optimizely patched the flaw and removed injected code; affected customers must update instances and purge cached JavaScript.]]></description>
       <pubDate>Tue, 17 Nov 2026 02:12:17 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/">BleepingComputer</source>
-      <category>Vulnerability</category>
+      <category>Breach</category>
     </item>
     <item>
       <title>ISC Stormcast: November 17th Podcast Release</title>
@@ -419,42 +455,6 @@
       <description><![CDATA[Malware authors now embed malicious code within a minuscule fraction-0.00001%-of an open-weight neural network, creating a sleeper agent that evades conventional scanning. The hidden payload can activate only when the model is executed, making detection by standard AI integrity checks ineffective. Security teams should implement model integrity verification and monitor anomalous inference patterns to mitigate this threat.]]></description>
       <pubDate>Mon, 16 Nov 2026 19:10:03 GMT</pubDate>
       <source url="https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>FBI Warns of ARTEX AI Agents Compromising Domains Rapidly</title>
-      <link>https://secubuzz.com/news/fbi-warns-of-artex-ai-agents-compromising-domains-2cd2716d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-warns-of-artex-ai-agents-compromising-domains-2cd2716d</guid>
-      <description><![CDATA[FBI issues a FLASH advisory warning that cybercriminals abuse ARTEX AI agents to compromise domains in under three hours. The agents execute rapid automated lateral moves, enabling attackers to pivot quickly across network segments and exfiltrate data before detection. Security teams should monitor for anomalous AI-driven activity, enforce strict access controls, and apply vendor patches to mitigate lateral movement.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:59:34 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/artex-ai-agents-fbi-warning-autonomous-attacks">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Rspamd 4.3.0 Fixes DoS and DMARC Flaws</title>
-      <link>https://secubuzz.com/news/rspamd-4-3-0-fixes-dos-and-dmarc-flaws-6a8e45e6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rspamd-4-3-0-fixes-dos-and-dmarc-flaws-6a8e45e6</guid>
-      <description><![CDATA[Rspamd 4.3.0 fixes worker crashes, use-after-free bugs, and DMARC bypasses caused by malformed HTTP headers and milter proxy data. Remote attackers could trigger denial-of-service or bypass email authentication by exploiting improper memory handling and header parsing, with public PoC evidence. Administrators should upgrade to Rspamd 4.3.0 or apply the vendor patch immediately to mitigate the risks.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:58:50 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/rspamd-4-3-0-worker-crash-dmarc-bypass-fix">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Infostealer Market Targets VPNs, Tokens</title>
-      <link>https://secubuzz.com/news/ai-infostealer-market-targets-vpns-tokens-403ae2e0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-infostealer-market-targets-vpns-tokens-403ae2e0</guid>
-      <description><![CDATA[Dark web vendors use AI to parse infostealer logs into searchable corporate dossiers, focusing on enterprise VPNs and AI token credentials. The threat model includes replay attacks that reuse captured tokens to gain unauthorized access to protected resources. Defenders should implement token rotation, monitor for anomalous token usage, and deploy replay detection mechanisms.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:58:21 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/ai-infostealer-marketplace-victim-profiles">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Telegram Widgets Vulnerable to Zero-Click RCE WebRAT</title>
-      <link>https://secubuzz.com/news/telegram-widgets-vulnerable-to-zero-click-rce-webr-e7e86ad9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/telegram-widgets-vulnerable-to-zero-click-rce-webr-e7e86ad9</guid>
-      <description><![CDATA[Telegram's newly launched widgets contain flaws that allow zero-click remote code execution, delivering a WebRAT infostealer via PowerShell. The flaw allows unauthenticated actors to run arbitrary PowerShell commands without user interaction, exposing credential theft; PoC exists. Telegram has not yet released a patch; security teams should monitor child processes with KQL and block suspicious PowerShell activity.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:57:53 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/telegram-widgets-rce-webrat-malware">CyberNews AI</source>
       <category>Vulnerability</category>
     </item>
   </channel>
