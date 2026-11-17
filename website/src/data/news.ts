@@ -510,6 +510,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-releases-watchos-27-3-beta-2-update-257adcde",
+    "title": "Apple Releases watchOS 27.3 Beta 2 Update",
+    "summary": "Apple released watchOS 27.3 beta 2 (24S5296d), a pre-release update for Apple Watch devices. The beta includes minor bug fixes, performance enhancements, and updated system components, but no new security vulnerabilities are disclosed. Developers can download the beta and review the release notes via the Apple Developer portal, and users should test before official rollout.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026f",
+    "publishedAt": "2026-11-16T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-watchos-27-3-beta-2-update",
+      "article-257adcde",
+      "257adcde",
+      "apple-releases-watchos-27-3-beta-2-update-5f3d88"
+    ]
+  },
+  {
     "slug": "apple-releases-visionos-27-3-beta-2-update-ed2c34d4",
     "title": "Apple Releases visionOS 27.3 Beta 2 Update",
     "summary": "Apple released visionOS 27.3 beta 2, a beta update for the visionOS operating system. The update includes fixes for memory corruption and privilege escalation bugs, though no CVE IDs are publicly assigned. Users should install the beta update via the Apple VisionOS Settings app to mitigate potential security risks and ensure system stability.",
@@ -9782,27 +9800,6 @@ export const news: NewsBrief[] = [
       "5c81f579",
       "romania-thwarts-russian-cyber-espionage-targeting-29f0e5",
       "romania-thwarts-russian-cyber-espionage-targeting-government"
-    ]
-  },
-  {
-    "slug": "sckit-exploits-screenconnect-remote-access-vulnera-3164abd1",
-    "title": "SCKit Exploits ScreenConnect Remote Access Vulnerability",
-    "summary": "SCKit malware exploits the patched CVE-2026-84869 flaw in ConnectWise ScreenConnect, hijacking support sessions to compromise managed service provider environments. The CVSS 9.9 flaw permits unauthenticated remote code execution via crafted requests, exposing internal networks to lateral movement. ScreenConnect released an update; administrators should patch immediately and disable unused remote-access features to mitigate risk. The flaw is tracked as CVE-2026-84869.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
-    "publishedAt": "2026-11-12T13:08:28.000Z",
-    "cves": [
-      "CVE-2026-84869"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "sckit-exploits-screenconnect-remote-access-vulnera",
-      "article-3164abd1",
-      "3164abd1",
-      "sckit-exploits-screenconnect-remote-access-vulnera-7c1985",
-      "sckit-exploits-screenconnect-remote-access-vulnerability"
     ]
   }
 ];

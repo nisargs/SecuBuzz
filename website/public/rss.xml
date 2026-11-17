@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 04:10:28 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 04:38:37 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Optimizely Supply Chain Attack Injects Malware into Major Sites</title>
@@ -221,6 +221,15 @@
       <description><![CDATA[The Italian data protection authority fined Meta $886 million for violating privacy law via Facebook’s camera roll suggestions feature. The feature accessed Android users’ photo galleries to recommend posts that could be enhanced with personal media, breaching consent. Meta must adjust its recommendation algorithms to prevent unauthorized gallery access and comply with Italian privacy regulations.]]></description>
       <pubDate>Mon, 16 Nov 2026 18:05:00 GMT</pubDate>
       <source url="https://therecord.media/italian-regulator-fines-meta-886-million-privacy">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Apple Releases watchOS 27.3 Beta 2 Update</title>
+      <link>https://secubuzz.com/news/apple-releases-watchos-27-3-beta-2-update-257adcde</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-watchos-27-3-beta-2-update-257adcde</guid>
+      <description><![CDATA[Apple released watchOS 27.3 beta 2 (24S5296d), a pre-release update for Apple Watch devices. The beta includes minor bug fixes, performance enhancements, and updated system components, but no new security vulnerabilities are disclosed. Developers can download the beta and review the release notes via the Apple Developer portal, and users should test before official rollout.]]></description>
+      <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
+      <source url="https://developer.apple.com/news/releases/?id=11162026f">Apple Security Updates</source>
       <category>General</category>
     </item>
     <item>
@@ -447,15 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 15:28:07 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-8997-2">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Barracuda Breached Using AI-Powered Artex Framework</title>
-      <link>https://secubuzz.com/news/barracuda-breached-using-ai-powered-artex-framewor-f608e6b2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/barracuda-breached-using-ai-powered-artex-framewor-f608e6b2</guid>
-      <description><![CDATA[Barracuda Networks suffered a breach as attackers leveraged the Artex agentic AI penetration testing framework. The attack exploited automated vulnerability discovery and exploitation capabilities, enabling rapid compromise of Barracuda’s security appliances without prior credential theft. Security teams should review Barracuda appliance logs, apply the latest vendor patches, and implement network segmentation to contain potential lateral movement.]]></description>
-      <pubDate>Mon, 16 Nov 2026 15:07:32 GMT</pubDate>
-      <source url="https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
