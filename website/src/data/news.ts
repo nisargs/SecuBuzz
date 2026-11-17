@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "control-systems-codesys-security-advisory-av26-11-e340cd7b",
+    "title": "[Control systems] CODESYS security advisory (AV26-1169)",
+    "summary": "Serial number: AV26-1169 Date: November 17, 2026 As of November 17, 2026, CODESYS is affected by vulnerabilities in the following products: CODESYS Automation Server Connector Prior to 1.40.0.0 CODESYS Service Tool Prior to 1.40.0.0 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/control-systems-codesys-security-advisory-av26-1169",
+    "publishedAt": "2026-11-17T19:17:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "control-systems-codesys-security-advisory-av26-11",
+      "article-e340cd7b",
+      "e340cd7b",
+      "control-systems-codesys-security-advisory-av26-11-3684a8",
+      "control-systems-codesys-security-advisory-av26-1169"
+    ]
+  },
+  {
+    "slug": "chinese-state-group-developing-automated-attack-to-936b6624",
+    "title": "Chinese state group developing automated attack tool for cyber espionage, Google says",
+    "summary": "Google released its latest AI Threat Tracker report on Monday, writing that threat actors are rapidly evolving their use of artificial intelligence in attacks - now leaning more heavily on autonomous multi-agent offensive frameworks like Artex, CAIRN, CyberStrikeAI and PentAGI to execute multi-stage intrusions at greater operational velocity.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/chinese-state-group-developing-automated-attack-tool-espionage",
+    "publishedAt": "2026-11-17T18:50:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chinese-state-group-developing-automated-attack-to",
+      "article-936b6624",
+      "936b6624",
+      "chinese-state-group-developing-automated-attack-to-7e5be3",
+      "chinese-state-group-developing-automated-attack-tool-for-cyb"
+    ]
+  },
+  {
     "slug": "compromised-fireworks-key-enables-cursor-data-brea-1302a567",
     "title": "Compromised Fireworks Key Enables Cursor Data Breach",
     "summary": "Threat actors leveraged a compromised key issued to AI platform Fireworks to gain unauthorized access to Cursor’s data and credentials. The breach exposed sensitive user information and authentication tokens, potentially enabling further credential theft or lateral movement within Cursor’s ecosystem. Cursor should immediately rotate compromised keys, audit access logs, and enforce multi-factor authentication to mitigate future exploitation.",
@@ -49,6 +87,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-updates-perception-expands-security-stac-2ca31f19",
+    "title": "Microsoft Updates Perception, Expands Security Stack",
+    "summary": "Microsoft updated its Perception AI platform and added a new Microsoft Security cyber stack to protect agents and digital estates. The changes expand threat detection, integrate agent security controls, and deliver unified visibility across cloud and on-premises environments. Security teams should apply the latest updates, review configuration options, and monitor Perception dashboards for anomalous activity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
+    "publishedAt": "2026-11-17T18:14:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-perception-expands-security-stac",
+      "article-2ca31f19",
+      "2ca31f19",
+      "microsoft-updates-perception-expands-security-stac-2dc1cd",
+      "microsoft-updates-perception-expands-security-stack"
+    ]
+  },
+  {
+    "slug": "tor-issues-emergency-update-during-ddos-attack-f59e793a",
+    "title": "Tor Issues Emergency Update During DDoS Attack",
+    "summary": "Tor Network issued an emergency update while an ongoing distributed denial-of-service attack targeted its relays and obstructed traffic. The update patches a relay configuration flaw that allowed attackers to flood nodes with malformed packets, temporarily degrading network performance. Operators should install the latest Tor release, enable rate-limiting on relays, and monitor node logs for abnormal traffic patterns.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
+    "publishedAt": "2026-11-17T18:04:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tor-issues-emergency-update-during-ddos-attack",
+      "article-f59e793a",
+      "f59e793a",
+      "tor-issues-emergency-update-during-ddos-attack-3071d6"
+    ]
+  },
+  {
     "slug": "hertz-fined-1-5m-for-california-privacy-violation-140d476d",
     "title": "Hertz Fined $1.5M for California Privacy Violation",
     "summary": "Hertz was fined $1.5 million by the California Privacy Protection Agency for violating state data privacy regulations, citing improper handling of consumer data. The action highlights gaps in Hertz’s data governance, notably insufficient consent management and audit controls across its fleet-management platform.",
@@ -64,6 +139,24 @@ export const news: NewsBrief[] = [
       "article-140d476d",
       "140d476d",
       "hertz-fined-1-5m-for-california-privacy-violation-191aa1"
+    ]
+  },
+  {
+    "slug": "themailer-enables-ai-powered-phishing-campaigns-db224c53",
+    "title": "TheMailer Enables AI-Powered Phishing Campaigns",
+    "summary": "Varonis Threat Labs uncovered TheMailer, a phishing platform that uses Claude and ChatGPT APIs to automate lure creation, template tweaking, delivery testing, and reply handling. Operators supply their own API keys, enabling rapid, AI-driven social engineering attacks against targeted email users. Security teams should monitor outbound email for anomalous patterns, enforce strict API key policies, and deploy AI-based email filtering.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/themailer-ai-phishing-platform/",
+    "publishedAt": "2026-11-17T16:54:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "themailer-enables-ai-powered-phishing-campaigns",
+      "article-db224c53",
+      "db224c53",
+      "themailer-enables-ai-powered-phishing-campaigns-36ee6e"
     ]
   },
   {
@@ -124,6 +217,69 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-iis-remote-code-execution-vulnerability-71c899f5",
+    "title": "Microsoft IIS Remote Code Execution Vulnerability CVE-2026-119961",
+    "summary": "CVE-2026-119961 is a remote code execution flaw in Microsoft Windows IIS that allows attackers to run code via crafted HTTP requests. The flaw stems from improper input validation in the request parser, enabling unauthenticated exploitation with a CVSS score of 9.0, though no wild attacks have been seen. Microsoft issued an update; admins should apply the latest IIS patch.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961",
+    "publishedAt": "2026-11-17T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119961"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-iis-remote-code-execution-vulnerability",
+      "article-71c899f5",
+      "71c899f5",
+      "microsoft-iis-remote-code-execution-vulnerability-1fe890",
+      "microsoft-iis-remote-code-execution-vulnerability-cve-2026-1"
+    ]
+  },
+  {
+    "slug": "microsoft-office-word-remote-code-execution-cve-20-d4bda852",
+    "title": "Microsoft Office Word Remote Code Execution CVE-2026-108440",
+    "summary": "CVE-2026-108440 is a remote code execution flaw in Office Word that lets attackers run code via malicious documents. The flaw stems from unsafe handling of embedded content, allowing unauthenticated exploitation with a CVSS score of 9.2, no attacks reported. Microsoft released an informational update; users should install the latest Office patch to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108440",
+    "publishedAt": "2026-11-17T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-108440"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-office-word-remote-code-execution-cve-20",
+      "article-d4bda852",
+      "d4bda852",
+      "microsoft-office-word-remote-code-execution-cve-20-1ff72f",
+      "microsoft-office-word-remote-code-execution-cve-2026-108440"
+    ]
+  },
+  {
+    "slug": "microsoft-office-remote-code-execution-cve-2026-78-29961e6e",
+    "title": "Microsoft Office Remote Code Execution CVE-2026-78524",
+    "summary": "CVE-2026-78524 is a remote code execution vulnerability in Microsoft Office that allows attackers to run arbitrary code through crafted files. The defect stems from improper validation of document metadata, enabling exploitation with a CVSS score of 8.9, no incidents reported. Microsoft issued an informational update; administrators should apply the latest Office patch to close the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524",
+    "publishedAt": "2026-11-17T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-78524"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-office-remote-code-execution-cve-2026-78",
+      "article-29961e6e",
+      "29961e6e",
+      "microsoft-office-remote-code-execution-cve-2026-78-744cbc",
+      "microsoft-office-remote-code-execution-cve-2026-78524"
+    ]
+  },
+  {
     "slug": "windows-powershell-rce-vulnerability-cve-2026-4040-f13c866b",
     "title": "Windows PowerShell RCE Vulnerability CVE-2026-40400",
     "summary": "A remote code execution flaw in Windows PowerShell, identified as CVE-2026-40400, was disclosed by Microsoft. The vulnerability allows attackers to execute arbitrary commands on affected systems via crafted PowerShell input, potentially compromising system integrity. Microsoft has issued a patch; administrators should update PowerShell to the latest version and apply the vendor’s security update to mitigate the risk.",
@@ -179,6 +335,45 @@ export const news: NewsBrief[] = [
       "article-07e2f46c",
       "07e2f46c",
       "atlassian-security-advisory-av26-1166-6e4873"
+    ]
+  },
+  {
+    "slug": "oracle-java-se-patches-11-vulnerabilities-cve-2026-8ca1c7dc",
+    "title": "Oracle Java SE Patches 11 Vulnerabilities, CVE-2026-114938 RCE",
+    "summary": "Oracle announced patches for 11 Java SE vulnerabilities, including CVE-2026-114938, a remote code execution flaw that could be exploited without authentication. The vulnerabilities carry a maximum CVSS 3.1 score of 8.1, indicating high severity, and separate reports warn of a potentially critical OpenJDK RCE. Oracle released the patches on Tuesday; administrators should apply the updates immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+    "publishedAt": "2026-11-17T15:17:36.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-java-se-patches-11-vulnerabilities-cve-2026",
+      "article-8ca1c7dc",
+      "8ca1c7dc",
+      "oracle-java-se-patches-11-vulnerabilities-cve-2026-703e02",
+      "oracle-java-se-patches-11-vulnerabilities-cve-2026-114938-rc"
+    ]
+  },
+  {
+    "slug": "trigram-impersonates-50-ai-and-blockchain-brands-7d932043",
+    "title": "Trigram Impersonates 50 AI and Blockchain Brands",
+    "summary": "Stormshield’s report reveals Trigram, a campaign that impersonates roughly 50 AI and blockchain brands to lure developers into executing infostealer payloads. Attackers embed malicious code in legitimate SDKs, tricking developers into installing compromised libraries that harvest credentials and system information. Defenders should verify SDK sources, enforce code-review policies, and monitor for unusual credential-exfiltration patterns in development environments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+    "publishedAt": "2026-11-17T15:17:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "trigram-impersonates-50-ai-and-blockchain-brands",
+      "article-7d932043",
+      "7d932043",
+      "trigram-impersonates-50-ai-and-blockchain-brands-44cebb"
     ]
   },
   {
@@ -665,6 +860,31 @@ export const news: NewsBrief[] = [
       "79f09066",
       "deepmind-ai-formally-verifies-signal-protocol-cryp-1dcb34",
       "deepmind-ai-formally-verifies-signal-protocol-cryptography"
+    ]
+  },
+  {
+    "slug": "dorsett-controls-infoscan-88f5512e",
+    "title": "Dorsett Controls InfoScan",
+    "summary": "The following versions of Dorsett Controls InfoScan are affected: InfoScan CVSS Vendor Equipment v3 8.1 Dorsett Controls InfoScan 5 . Expand All + CVE-2026-117659 The InfoScan Electron desktop client improperly handles TLS certificate errors by accepting certificates without validating their trustworthiness.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
+    "publishedAt": "2026-11-17T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-117659",
+      "CVE-2026-120157",
+      "CVE-2026-120255",
+      "CVE-2026-120260",
+      "CVE-2026-120271",
+      "CVE-2026-120298"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "dorsett-controls-infoscan",
+      "article-88f5512e",
+      "88f5512e",
+      "dorsett-controls-infoscan-41aee7"
     ]
   },
   {
@@ -9590,215 +9810,6 @@ export const news: NewsBrief[] = [
       "article-b8aa62f3",
       "b8aa62f3",
       "microsoft-365-outage-hits-outlook-teams-copilot-db0964"
-    ]
-  },
-  {
-    "slug": "chrome-159-promoted-to-beta-channel-c2196938",
-    "title": "Chrome 159 Promoted to Beta Channel",
-    "summary": "Google Chrome promoted version 159 to the Beta channel for Windows, macOS, and Linux, expanding early access for developers and testers. The update includes under-the-hood performance and stability improvements alongside several new features, but no security vulnerabilities are reported. Users may switch channels via the Chrome settings or consult the Chromium blog for detailed change logs and bug-reporting procedures.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_0414360355.html",
-    "publishedAt": "2026-11-12T20:13:33.460Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-159-promoted-to-beta-channel",
-      "article-c2196938",
-      "c2196938",
-      "chrome-159-promoted-to-beta-channel-50ce61"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-libxtst-security-update-0390e8d5",
-    "title": "Red Hat Issues libXtst Security Update",
-    "summary": "Red Hat released a security update for libXtst affecting Enterprise Linux 7 Extended Lifecycle Support. The update fixes multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and reduces privilege escalation risk. Customers should apply the patch promptly to prevent potential denial-of-service or privilege escalation and mitigate related risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99745",
-    "publishedAt": "2026-11-12T20:10:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-libxtst-security-update",
-      "article-0390e8d5",
-      "0390e8d5",
-      "red-hat-issues-libxtst-security-update-37d669"
-    ]
-  },
-  {
-    "slug": "luna-moth-targets-law-firms-with-token-theft-cbb89b75",
-    "title": "Luna Moth Targets Law Firms with Token Theft",
-    "summary": "Extortion group Luna Moth re-targets law firms that declined its first ransom, launching a social-engineering campaign to harvest Microsoft access tokens. The attack leverages phishing emails that embed malicious attachments or links, exploiting user credential theft to gain privileged cloud access. Security teams should enforce multi-factor authentication, monitor token usage, and conduct employee awareness training to mitigate token-based credential compromise.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/data-privacy/extortion-luna-moth-law-firms-second-time",
-    "publishedAt": "2026-11-12T20:09:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "luna-moth-targets-law-firms-with-token-theft",
-      "article-cbb89b75",
-      "cbb89b75",
-      "luna-moth-targets-law-firms-with-token-theft-1a55e6"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-qt5-qtbase-security-update-26b8c52b",
-    "title": "Red Hat Releases qt5-qtbase Security Update",
-    "summary": "Red Hat issued an important security update for qt5-qtbase on RHEL 7 Extended Lifecycle Support, addressing multiple vulnerabilities. The update is rated Important by Red Hat Product Security, and CVSS base scores for each vulnerability are provided in the references. Users should apply the patch immediately to mitigate the identified weaknesses and consult the CVE links for detailed severity information.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99746",
-    "publishedAt": "2026-11-12T20:08:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-qt5-qtbase-security-update",
-      "article-26b8c52b",
-      "26b8c52b",
-      "red-hat-releases-qt5-qtbase-security-update-37d669"
-    ]
-  },
-  {
-    "slug": "sudo-time-restriction-bypass-vulnerability-9995d4e0",
-    "title": "Sudo Time Restriction Bypass Vulnerability",
-    "summary": "Sudo on Ubuntu 18.04 LTS and 20.04 LTS contains a flaw that fails to enforce NOTBEFORE and NOTAFTER time restrictions when timestamps lack a timezone indicator. A local attacker could manipulate the TZ environment variable to execute commands outside the intended time window, escalating privileges. Ubuntu has released updates for both releases; administrators should apply them to prevent the bypass.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8895-2",
-    "publishedAt": "2026-11-12T20:06:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sudo-time-restriction-bypass-vulnerability",
-      "article-9995d4e0",
-      "9995d4e0",
-      "sudo-time-restriction-bypass-vulnerability-7fc9ae"
-    ]
-  },
-  {
-    "slug": "n-able-zero-day-exploited-for-miner-deployment-89b33db4",
-    "title": "N-Able Zero-Day Exploited for Miner Deployment",
-    "summary": "Hackers are exploiting a newly disclosed N-Able N-Central zero-day, dubbed '4EverAble2Shell', to compromise servers and deploy cryptocurrency miners. The flaw permits unauthenticated remote code execution, enabling attackers to gain root access even on systems that have applied the latest emergency hotfix. N-Able has released a patch; administrators should immediately apply the update and monitor for unauthorized miner processes.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
-    "publishedAt": "2026-11-12T19:51:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-zero-day-exploited-for-miner-deployment",
-      "article-89b33db4",
-      "89b33db4",
-      "n-able-zero-day-exploited-for-miner-deployment-548c4c"
-    ]
-  },
-  {
-    "slug": "united-airlines-bans-ai-assistants-for-credential-d991520a",
-    "title": "United Airlines Bans AI Assistants for Credential Safety",
-    "summary": "United Airlines has prohibited customers from using AI assistants to access its services, citing risks of credential exposure and transactions. The decision follows concerns that shared login tokens could be harvested by malicious actors, enabling unauthorized account activity and data leakage. Customers are advised to use official mobile apps and two-factor authentication, and airlines will monitor for suspicious account behavior.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/united-airlines-to-block-customers-using-ai-agents",
-    "publishedAt": "2026-11-12T19:20:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "united-airlines-bans-ai-assistants-for-credential",
-      "article-d991520a",
-      "d991520a",
-      "united-airlines-bans-ai-assistants-for-credential-3f5cae",
-      "united-airlines-bans-ai-assistants-for-credential-safety"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-fence-agents-update-36ba2f36",
-    "title": "Red Hat Issues Critical Fence-Agents Update",
-    "summary": "Red Hat released a critical security update for fence-agents on RHEL 9.8 EUS, addressing multiple high-impact vulnerabilities. The update mitigates remote code execution risks by patching underlying flaws identified in the fence-agents component, with CVSS base scores indicating severe impact. Administrators should apply the RHSA-2026:99693 update immediately and verify that fence-agents is running the latest patched version.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99693",
-    "publishedAt": "2026-11-12T19:19:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-fence-agents-update",
-      "article-36ba2f36",
-      "36ba2f36",
-      "red-hat-issues-critical-fence-agents-update-37d66c"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99758-important-osbuild-composer-securit-8508d258",
-    "title": "RHSA-2026:99758: Important: osbuild-composer security update",
-    "summary": "An update for osbuild-composer is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99758",
-    "publishedAt": "2026-11-12T19:13:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99758-important-osbuild-composer-securit",
-      "article-8508d258",
-      "8508d258",
-      "rhsa-2026-99758-important-osbuild-composer-securit-37d669",
-      "rhsa-2026-99758-important-osbuild-composer-security-update"
-    ]
-  },
-  {
-    "slug": "apache-http-server-2-4-71-vulnerability-enables-re-e2a511af",
-    "title": "Apache HTTP Server 2.4.71 Vulnerability Enables Remote Code Execution via HTTP/2",
-    "summary": "Apache HTTP Server 2.4.71 flaw exposes remote code execution via HTTP/2 requests, affecting all versions prior to 2.4.71. The vulnerability allows attackers to run arbitrary code without authentication, potentially compromising entire web servers and exposing sensitive data. Administrators must upgrade to 2.4.71 or later and verify HTTP/2 traffic is secured to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
-    "publishedAt": "2026-11-12T19:12:55.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Canadian Centre for Cyber Security",
-        "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1159"
-      }
-    ],
-    "aliases": [
-      "apache-http-server-2-4-71-vulnerability-enables-re",
-      "article-e2a511af",
-      "e2a511af",
-      "apache-http-server-2-4-71-vulnerability-enables-re-221b21",
-      "apache-http-server-2-4-71-vulnerability-enables-remote-code-"
-    ]
-  },
-  {
-    "slug": "cve-2026-127119-unverified-ownership-of-the-defaul-cf8beca4",
-    "title": "CVE-2026-127119 - Unverified ownership of the default EMR cluster log location in AWS SDK for pandas",
-    "summary": "An unverified ownership vulnerability in the EMR module of AWS SDK for pandas (awswrangler) from version 1.1.0 before 3.18.0 allows attackers to exploit default cluster log locations. AWS advises upgrading to awswrangler 3.18.0 or later to resolve the issue. The flaw is tracked as CVE-2026-127119.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/",
-    "publishedAt": "2026-11-12T19:07:08.000Z",
-    "cves": [
-      "CVE-2026-127119"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-127119-unverified-ownership-of-the-defaul",
-      "article-cf8beca4",
-      "cf8beca4",
-      "cve-2026-127119-unverified-ownership-of-the-defaul-1528db",
-      "cve-2026-127119-unverified-ownership-of-the-default-emr-clus"
     ]
   }
 ];
