@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 10:44:49 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 11:48:39 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Meta Fined €805M for Facebook Photo Access</title>
+      <link>https://secubuzz.com/news/meta-fined-805m-for-facebook-photo-access-894bb5cd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/meta-fined-805m-for-facebook-photo-access-894bb5cd</guid>
+      <description><![CDATA[Italy imposed an €805 million fine on Meta for unauthorized access to users' Facebook photo galleries, citing persistent privacy violations. The enforcement action follows investigations that uncovered Meta's collection of photo metadata without explicit user consent. Meta has acknowledged the findings and is reportedly reviewing its data-handling practices to comply with EU privacy regulations.]]></description>
+      <pubDate>Tue, 17 Nov 2026 11:34:09 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/mobile/2026/11/facebook-may-have-access-to-your-entire-photo-gallery">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI Fuels Holiday Shopping Scams</title>
+      <link>https://secubuzz.com/news/ai-fuels-holiday-shopping-scams-ec4bae83</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-fuels-holiday-shopping-scams-ec4bae83</guid>
+      <description><![CDATA[Scammers are leveraging generative AI to craft convincing fake product listings and phishing campaigns during the holiday shopping season. The technology enables rapid creation of realistic images, product descriptions, and social media posts that deceive consumers into clicking malicious links or providing payment details. Security teams should monitor for AI-generated content and educate shoppers about verifying seller authenticity.]]></description>
+      <pubDate>Tue, 17 Nov 2026 11:29:09 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/threat-intel/2026/11/holiday-shopping-in-a-world-of-fakes-how-ai-is-changing-the-game">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>GitHub, SharePoint Covert C2 via New Backdoors</title>
+      <link>https://secubuzz.com/news/github-sharepoint-covert-c2-via-new-backdoors-aa6520ea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-sharepoint-covert-c2-via-new-backdoors-aa6520ea</guid>
+      <description><![CDATA[New GitDoor and GraphDoor backdoors transform Microsoft SharePoint and GitHub into covert command-and-control channels for an active intrusion campaign. Kaspersky’s ShadowCloud operation has targeted government sectors in Asia and Africa, exploiting the trusted nature of these platforms to evade detection. Security teams should block outbound traffic to suspicious SharePoint and GitHub repositories and monitor for anomalous API usage.]]></description>
+      <pubDate>Tue, 17 Nov 2026 11:20:18 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html">The Hacker News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Microsoft Tests Remote Lock for Lost Windows Devices</title>
+      <link>https://secubuzz.com/news/microsoft-tests-remote-lock-for-lost-windows-devic-9a31a7d3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-tests-remote-lock-for-lost-windows-devic-9a31a7d3</guid>
+      <description><![CDATA[Microsoft is testing a remote lock feature that lets enterprise IT administrators lock lost or stolen Windows devices without wiping them. The feature enables administrators to disable device functionality while preserving user data, reducing the risk of unauthorized access to corporate information. Microsoft is currently in a testing phase; administrators should monitor release notes for production rollout.]]></description>
+      <pubDate>Tue, 17 Nov 2026 11:19:51 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-remote-lock-for-lost-or-stolen-windows-devices/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Apple Enhances macOS App Permissions for AI Agents</title>
+      <link>https://secubuzz.com/news/apple-enhances-macos-app-permissions-for-ai-agents-e6428b00</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-enhances-macos-app-permissions-for-ai-agents-e6428b00</guid>
+      <description><![CDATA[Apple added granular app permission controls in macOS 27.3 beta 2 to limit data access for AI-enabled applications. The update expands transparency by adding options for Device Control, Data Access, and Full Disk Access APIs, users specify data scopes. Users should review new permission prompts during installation and adjust settings in System Preferences; the changes are in the beta release.]]></description>
+      <pubDate>Tue, 17 Nov 2026 11:07:31 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Phishing Page Tries to Harvest MX Records</title>
+      <link>https://secubuzz.com/news/phishing-page-tries-to-harvest-mx-records-2a6e177a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phishing-page-tries-to-harvest-mx-records-2a6e177a</guid>
+      <description><![CDATA[A recent phishing page masquerades as a credential theft attempt but actually seeks to collect MX record information from victims. The page uses prompts to trick users into revealing email passwords, then redirects them to a form that harvests domain routing details. Security teams should block the phishing domain, educate users about suspicious login prompts, and monitor for compromised credentials.]]></description>
+      <pubDate>Tue, 17 Nov 2026 10:56:38 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33526">SANS Internet Storm Center</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Optimizely Flaw Used to Deliver Malware on Major Sites</title>
+      <link>https://secubuzz.com/news/optimizely-flaw-used-to-deliver-malware-on-major-s-a333ef7e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/optimizely-flaw-used-to-deliver-malware-on-major-s-a333ef7e</guid>
+      <description><![CDATA[An Optimizely vulnerability is being exploited to serve malware on sites including BBC, CNN, Zoom, GitLab, Salesforce, Equifax, HSBC, and IKEA. The attack chain leverages a server-side request forgery flaw that allows attackers to inject malicious scripts into content served to visitors. Organizations should update Optimizely to the latest patch, validate script integrity, and monitor web traffic for anomalous payloads.]]></description>
+      <pubDate>Tue, 17 Nov 2026 10:22:20 GMT</pubDate>
+      <source url="https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Court Acquits Brothers in $25M Ethereum Heist</title>
       <link>https://secubuzz.com/news/court-acquits-brothers-in-25m-ethereum-heist-cf7caab8</link>
@@ -26,6 +89,51 @@
       <category>General</category>
     </item>
     <item>
+      <title>Atlassian Confluence RCE Exploited, 1.2M Instances Exposed</title>
+      <link>https://secubuzz.com/news/atlassian-confluence-rce-exploited-1-2m-instances-1ccf8929</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-confluence-rce-exploited-1-2m-instances-1ccf8929</guid>
+      <description><![CDATA[Hackers are actively exploiting a critical RCE flaw in Atlassian Confluence Data Center, enabling unauthenticated code execution on exposed instances. Rapid7 detected the exploit on November 13, 2026, and Censys reports 1,212,568 internet-facing installations vulnerable. Affected organizations must apply Atlassian's emergency patch immediately, restrict network access to Confluence servers, and monitor for suspicious activity.]]></description>
+      <pubDate>Tue, 17 Nov 2026 09:18:11 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-exploiting-atlassian-confluence-vulnerability/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Mozilla Releases Firefox 160, Fixing 99 Vulnerabilities</title>
+      <link>https://secubuzz.com/news/mozilla-releases-firefox-160-fixing-99-vulnerabili-fd69f367</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mozilla-releases-firefox-160-fixing-99-vulnerabili-fd69f367</guid>
+      <description><![CDATA[Mozilla released Firefox 160 to address 99 security issues, including multiple sandbox escapes, privilege escalation flaws, and memory errors. The advisory, dated November 10, 2026, assigns a high-impact rating and covers vulnerabilities across graphics, networking, storage, and core browser components. Users should install the update immediately to close gaps and prevent exploitation of the identified flaws.]]></description>
+      <pubDate>Tue, 17 Nov 2026 09:03:50 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/mozilla-patches-160-firefox-vulnerabilities/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Detects AI Agents Crafting Exploits Independently</title>
+      <link>https://secubuzz.com/news/google-detects-ai-agents-crafting-exploits-indepen-f6f8d652</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-detects-ai-agents-crafting-exploits-indepen-f6f8d652</guid>
+      <description><![CDATA[Google Threat Intelligence Group and Mandiant revealed that threat actors are deploying AI agents capable of writing and launching exploits. These agents can transform newly released patches into working attacks, accelerating intrusion speed and scale while maintaining operational stealth. Security teams should monitor for automated exploitation patterns, enforce strict patch management, and employ AI-driven detection to mitigate evolving attack vectors.]]></description>
+      <pubDate>Tue, 17 Nov 2026 08:45:24 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/17/ai-powered-cyberattacks-gtig-report/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI Vendor Key Breach Exposes 10 Barracuda Cloud Accounts</title>
+      <link>https://secubuzz.com/news/ai-vendor-key-breach-exposes-10-barracuda-cloud-ac-f45aec58</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-vendor-key-breach-exposes-10-barracuda-cloud-ac-f45aec58</guid>
+      <description><![CDATA[Hackers used an exposed AI vendor cloud key to infiltrate Barracuda’s environment, compromising about ten accounts in 44 hours. The attack moved across cloud services, analytics, source code, and Kubernetes, collecting credentials for lateral movement. Barracuda noted the key stayed active; teams should revoke it, enforce least-privilege, and audit permissions.]]></description>
+      <pubDate>Tue, 17 Nov 2026 08:42:21 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/barracuda-cloud-account-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Uber Notifies Drivers of 150k Data Breach</title>
+      <link>https://secubuzz.com/news/uber-notifies-drivers-of-150k-data-breach-11f4796e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uber-notifies-drivers-of-150k-data-breach-11f4796e</guid>
+      <description><![CDATA[Attackers breached Fireworks AI infrastructure in early October, exfiltrating personal data of approximately 150,000 Uber drivers. The breach exposed driver credentials and sensitive personal information, but no evidence of credential theft or financial loss has been reported. Uber has notified affected drivers and advised them to change passwords and monitor accounts for suspicious activity.]]></description>
+      <pubDate>Tue, 17 Nov 2026 08:35:42 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>NATO Grants OpenAI Models to Core Institutions</title>
       <link>https://secubuzz.com/news/nato-grants-openai-models-to-core-institutions-a6dfae56</link>
       <guid isPermaLink="true">https://secubuzz.com/news/nato-grants-openai-models-to-core-institutions-a6dfae56</guid>
@@ -33,6 +141,15 @@
       <pubDate>Tue, 17 Nov 2026 08:33:27 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/17/openai-nato-ai-cyber-defense/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>macOS Unicode Filename Trick Enables Security Check Bypass</title>
+      <link>https://secubuzz.com/news/macos-unicode-filename-trick-enables-security-chec-7ee40bda</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/macos-unicode-filename-trick-enables-security-chec-7ee40bda</guid>
+      <description><![CDATA[A Unicode normalization flaw in macOS lets attackers bypass file exclusion checks in developer tools, affecting Deno, libarchive, and Python setuptools. APFS treats Unicode spellings of a character as identical, while exclusion logic sees them differently, creating a mismatch. Apple patched the issue in the 27.3 beta; teams should update macOS and review exclusion settings to mitigate the bypass.]]></description>
+      <pubDate>Tue, 17 Nov 2026 08:20:40 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/macos-s-vs-ss-filename-trick/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Kazakh National Extradited for Ransomware Attacks</title>
@@ -339,123 +456,6 @@
       <pubDate>Mon, 16 Nov 2026 18:57:53 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/telegram-widgets-rce-webrat-malware">CyberNews AI</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Linux Kernel NoisyTCP Crash Vulnerability CVE-2026-99288</title>
-      <link>https://secubuzz.com/news/linux-kernel-noisytcp-crash-vulnerability-cve-2026-b3c6f639</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-noisytcp-crash-vulnerability-cve-2026-b3c6f639</guid>
-      <description><![CDATA[CVE-2026-99288, an 11-year-old Linux kernel flaw, permits remote kernel panics via TCP ehash race conditions on affected hosts. The race exploits a flaw in the TCP ehash table, causing a kernel panic without code execution and is publicly documented. Apply the vendor-supplied kernel patch and disable Receive Packet Steering (RPS) to mitigate the vulnerability.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:57:39 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cve-2026-99288-noisytcp-linux-kernel-crash">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>LiteLLM &amp; Dify Exploited by Autonomous AI Agents</title>
-      <link>https://secubuzz.com/news/litellm-dify-exploited-by-autonomous-ai-agents-681f5e67</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/litellm-dify-exploited-by-autonomous-ai-agents-681f5e67</guid>
-      <description><![CDATA[Autonomous AI agents exploit CVE-2026-42271 and CVE-2026-48710 in LiteLLM and Dify to exfiltrate cloud API keys. The flaws allow unauthenticated remote code execution via malformed request handling, enabling attackers to read and transmit credentials. Patch developers have released Starlette updates; security teams should apply the latest patches and monitor STS pivot activity.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:52:57 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/ai-agents-target-litellm-dify-api-keys">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library</title>
-      <link>https://secubuzz.com/news/cve-2026-129266-arbitrary-local-file-read-via-unva-6e650c0c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-129266-arbitrary-local-file-read-via-unva-6e650c0c</guid>
-      <description><![CDATA[Bulletin ID: 2026-183-AWS Publication Date: 11/16/2026 10:30 AM PST Description: External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can access.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:37:04 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-183-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>USN-9064-2: Pillow regression</title>
-      <link>https://secubuzz.com/news/usn-9064-2-pillow-regression-71f5af14</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9064-2-pillow-regression-71f5af14</guid>
-      <description><![CDATA[USN-9064-1 fixed vulnerabilities in Pillow. Unfortunately, the fix for CVE-2026-112402 introduced a regression that caused resizing images with the NEAREST filter, and resizing any "1" or "P" mode image, to fail. This issue only affected Ubuntu 26.10, Ubuntu 26.04 LTS, Ubuntu 24.04 LTS, and Ubuntu 22.04 LTS. (CVE-2026-112390) It was discovered that Pillow's PdfParser.get_value() could recurse without a limit while reading nested PDF objects.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:07:22 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9064-2">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Meta Fined $886M by Italian Regulator</title>
-      <link>https://secubuzz.com/news/meta-fined-886m-by-italian-regulator-4ab95a4b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/meta-fined-886m-by-italian-regulator-4ab95a4b</guid>
-      <description><![CDATA[The Italian data protection authority fined Meta $886 million for violating privacy law via Facebook’s camera roll suggestions feature. The feature accessed Android users’ photo galleries to recommend posts that could be enhanced with personal media, breaching consent. Meta must adjust its recommendation algorithms to prevent unauthorized gallery access and comply with Italian privacy regulations.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:05:00 GMT</pubDate>
-      <source url="https://therecord.media/italian-regulator-fines-meta-886-million-privacy">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apple Releases watchOS 27.3 Beta 2 Update</title>
-      <link>https://secubuzz.com/news/apple-releases-watchos-27-3-beta-2-update-257adcde</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-watchos-27-3-beta-2-update-257adcde</guid>
-      <description><![CDATA[Apple released watchOS 27.3 beta 2 (24S5296d), a pre-release update for Apple Watch devices. The beta includes minor bug fixes, performance enhancements, and updated system components, but no new security vulnerabilities are disclosed. Developers can download the beta and review the release notes via the Apple Developer portal, and users should test before official rollout.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
-      <source url="https://developer.apple.com/news/releases/?id=11162026f">Apple Security Updates</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apple Releases visionOS 27.3 Beta 2 Update</title>
-      <link>https://secubuzz.com/news/apple-releases-visionos-27-3-beta-2-update-ed2c34d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-visionos-27-3-beta-2-update-ed2c34d4</guid>
-      <description><![CDATA[Apple released visionOS 27.3 beta 2, a beta update for the visionOS operating system. The update includes fixes for memory corruption and privilege escalation bugs, though no CVE IDs are publicly assigned. Users should install the beta update via the Apple VisionOS Settings app to mitigate potential security risks and ensure system stability.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
-      <source url="https://developer.apple.com/news/releases/?id=11162026e">Apple Security Updates</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ScreenConnect CVE-2026-84869 Exploited to Run Malicious Files</title>
-      <link>https://secubuzz.com/news/screenconnect-cve-2026-84869-exploited-to-run-mali-329f18f7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-cve-2026-84869-exploited-to-run-mali-329f18f7</guid>
-      <description><![CDATA[Attackers exploited CVE-2026-84869 in ScreenConnect to run malicious files on MSP technician accounts. The flaw enables unauthenticated remote code execution via the remote support session, allowing arbitrary binaries to execute without user interaction and potentially compromising client systems. ScreenConnect released patch 4.4.1; administrators should apply it immediately and disable remote file execution until the fix is deployed.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
-      <source url="https://www.huntress.com/blog/cve-2026-84869-screenconnect-technician-exploitation">Huntress</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Apple Releases Xcode 27.3 Beta 2</title>
-      <link>https://secubuzz.com/news/apple-releases-xcode-27-3-beta-2-126bcfcb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-xcode-27-3-beta-2-126bcfcb</guid>
-      <description><![CDATA[Apple released Xcode 27.3 beta 2, version 27C5035i, adding new features, bug fixes, and performance improvements. The update includes improvements to the Swift compiler, enhanced debugging tools, and updated iOS SDKs for the latest OS releases. Developers should download the beta from the Apple Developer portal, test compatibility with existing projects, and report any regressions.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
-      <source url="https://developer.apple.com/news/releases/?id=11162026g">Apple Security Updates</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apple Releases iOS 27.3 Beta 2</title>
-      <link>https://secubuzz.com/news/apple-releases-ios-27-3-beta-2-b76de365</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-ios-27-3-beta-2-b76de365</guid>
-      <description><![CDATA[Apple released iOS 27.3 beta 2, version 24C5049d, providing developers early access to the latest OS features. The beta includes updates to the SwiftUI framework, new privacy controls, and performance optimizations for iPhone and iPad. Developers should download the beta via the Apple Developer portal, test app compatibility, and submit feedback to Apple.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
-      <source url="https://developer.apple.com/news/releases/?id=11162026a">Apple Security Updates</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apple Releases macOS 27.3 Beta 2</title>
-      <link>https://secubuzz.com/news/apple-releases-macos-27-3-beta-2-49f12807</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-macos-27-3-beta-2-49f12807</guid>
-      <description><![CDATA[Apple released macOS 27.3 beta 2, version 26C5047e, providing users with the latest beta build. The update includes minor bug fixes and performance improvements, as detailed in the release notes. Users should download the beta from the official Apple Developer portal and install it to test new features for development.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
-      <source url="https://developer.apple.com/news/releases/?id=11162026c">Apple Security Updates</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Rapid7 Finds Container Escapes in ONLYOFFICE Docs</title>
-      <link>https://secubuzz.com/news/rapid7-finds-container-escapes-in-onlyoffice-docs-6a7300f3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rapid7-finds-container-escapes-in-onlyoffice-docs-6a7300f3</guid>
-      <description><![CDATA[Rapid7 identified five vulnerabilities in ONLYOFFICE Docs that chain view-only access to container root execution. The flaw permits attackers to escape the document container, potentially compromising the host system with critical elevated privileges. Users should upgrade to Document Server 10.0 and monitor for container escape indicators to mitigate the risk.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/onlyoffice-docs-container-root-vulnerabilities">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Retadup Worm Resurfaces, Deploys CoffeeLoader via DLL</title>
-      <link>https://secubuzz.com/news/retadup-worm-resurfaces-deploys-coffeeloader-via-d-3004114e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/retadup-worm-resurfaces-deploys-coffeeloader-via-d-3004114e</guid>
-      <description><![CDATA[Retadup worm reappears, re-registering command-and-control domains and using USB media to deliver the CoffeeLoader backdoor. The malware exploits DLL side-loading by loading 7z.dll, enabling execution of malicious code without user consent and bypassing integrity checks. Security teams should deploy Sigma rules and KQL queries to detect DLL loads and block the worm’s C2 traffic, while disabling USB autorun policies.]]></description>
-      <pubDate>Mon, 16 Nov 2026 18:00:00 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/retadup-worm-coffeeloader-malware">CyberNews AI</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

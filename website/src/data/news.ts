@@ -11,6 +11,134 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "meta-fined-805m-for-facebook-photo-access-894bb5cd",
+    "title": "Meta Fined €805M for Facebook Photo Access",
+    "summary": "Italy imposed an €805 million fine on Meta for unauthorized access to users' Facebook photo galleries, citing persistent privacy violations. The enforcement action follows investigations that uncovered Meta's collection of photo metadata without explicit user consent. Meta has acknowledged the findings and is reportedly reviewing its data-handling practices to comply with EU privacy regulations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/mobile/2026/11/facebook-may-have-access-to-your-entire-photo-gallery",
+    "publishedAt": "2026-11-17T11:34:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fined-805m-for-facebook-photo-access",
+      "article-894bb5cd",
+      "894bb5cd",
+      "meta-fined-805m-for-facebook-photo-access-4cc08a"
+    ]
+  },
+  {
+    "slug": "ai-fuels-holiday-shopping-scams-ec4bae83",
+    "title": "AI Fuels Holiday Shopping Scams",
+    "summary": "Scammers are leveraging generative AI to craft convincing fake product listings and phishing campaigns during the holiday shopping season. The technology enables rapid creation of realistic images, product descriptions, and social media posts that deceive consumers into clicking malicious links or providing payment details. Security teams should monitor for AI-generated content and educate shoppers about verifying seller authenticity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/holiday-shopping-in-a-world-of-fakes-how-ai-is-changing-the-game",
+    "publishedAt": "2026-11-17T11:29:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-fuels-holiday-shopping-scams",
+      "article-ec4bae83",
+      "ec4bae83",
+      "ai-fuels-holiday-shopping-scams-50d1c5"
+    ]
+  },
+  {
+    "slug": "github-sharepoint-covert-c2-via-new-backdoors-aa6520ea",
+    "title": "GitHub, SharePoint Covert C2 via New Backdoors",
+    "summary": "New GitDoor and GraphDoor backdoors transform Microsoft SharePoint and GitHub into covert command-and-control channels for an active intrusion campaign. Kaspersky’s ShadowCloud operation has targeted government sectors in Asia and Africa, exploiting the trusted nature of these platforms to evade detection. Security teams should block outbound traffic to suspicious SharePoint and GitHub repositories and monitor for anomalous API usage.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+    "publishedAt": "2026-11-17T11:20:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-sharepoint-covert-c2-via-new-backdoors",
+      "article-aa6520ea",
+      "aa6520ea",
+      "github-sharepoint-covert-c2-via-new-backdoors-2fee41"
+    ]
+  },
+  {
+    "slug": "microsoft-tests-remote-lock-for-lost-windows-devic-9a31a7d3",
+    "title": "Microsoft Tests Remote Lock for Lost Windows Devices",
+    "summary": "Microsoft is testing a remote lock feature that lets enterprise IT administrators lock lost or stolen Windows devices without wiping them. The feature enables administrators to disable device functionality while preserving user data, reducing the risk of unauthorized access to corporate information. Microsoft is currently in a testing phase; administrators should monitor release notes for production rollout.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-remote-lock-for-lost-or-stolen-windows-devices/",
+    "publishedAt": "2026-11-17T11:19:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-tests-remote-lock-for-lost-windows-devic",
+      "article-9a31a7d3",
+      "9a31a7d3",
+      "microsoft-tests-remote-lock-for-lost-windows-devic-28a1ab",
+      "microsoft-tests-remote-lock-for-lost-windows-devices"
+    ]
+  },
+  {
+    "slug": "apple-enhances-macos-app-permissions-for-ai-agents-e6428b00",
+    "title": "Apple Enhances macOS App Permissions for AI Agents",
+    "summary": "Apple added granular app permission controls in macOS 27.3 beta 2 to limit data access for AI-enabled applications. The update expands transparency by adding options for Device Control, Data Access, and Full Disk Access APIs, users specify data scopes. Users should review new permission prompts during installation and adjust settings in System Preferences; the changes are in the beta release.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
+    "publishedAt": "2026-11-17T11:07:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-enhances-macos-app-permissions-for-ai-agents",
+      "article-e6428b00",
+      "e6428b00",
+      "apple-enhances-macos-app-permissions-for-ai-agents-69d8ac"
+    ]
+  },
+  {
+    "slug": "phishing-page-tries-to-harvest-mx-records-2a6e177a",
+    "title": "Phishing Page Tries to Harvest MX Records",
+    "summary": "A recent phishing page masquerades as a credential theft attempt but actually seeks to collect MX record information from victims. The page uses prompts to trick users into revealing email passwords, then redirects them to a form that harvests domain routing details. Security teams should block the phishing domain, educate users about suspicious login prompts, and monitor for compromised credentials.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33526",
+    "publishedAt": "2026-11-17T10:56:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "phishing-page-tries-to-harvest-mx-records",
+      "article-2a6e177a",
+      "2a6e177a",
+      "phishing-page-tries-to-harvest-mx-records-57dd81"
+    ]
+  },
+  {
+    "slug": "optimizely-flaw-used-to-deliver-malware-on-major-s-a333ef7e",
+    "title": "Optimizely Flaw Used to Deliver Malware on Major Sites",
+    "summary": "An Optimizely vulnerability is being exploited to serve malware on sites including BBC, CNN, Zoom, GitLab, Salesforce, Equifax, HSBC, and IKEA. The attack chain leverages a server-side request forgery flaw that allows attackers to inject malicious scripts into content served to visitors. Organizations should update Optimizely to the latest patch, validate script integrity, and monitor web traffic for anomalous payloads.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/",
+    "publishedAt": "2026-11-17T10:22:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "optimizely-flaw-used-to-deliver-malware-on-major-s",
+      "article-a333ef7e",
+      "a333ef7e",
+      "optimizely-flaw-used-to-deliver-malware-on-major-s-2fb116",
+      "optimizely-flaw-used-to-deliver-malware-on-major-sites"
+    ]
+  },
+  {
     "slug": "court-acquits-brothers-in-25m-ethereum-heist-cf7caab8",
     "title": "Court Acquits Brothers in $25M Ethereum Heist",
     "summary": "A U.S. judge acquitted two brothers charged with a $25 million Ethereum theft that occurred in about 12 seconds via a blockchain bug. The scheme exploited a consensus flaw that allowed a single transaction to drain funds before state validation. No remediation is required, and the case does not expose an active Ethereum vulnerability; developers should monitor advisories.",
@@ -48,6 +176,100 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "atlassian-confluence-rce-exploited-1-2m-instances-1ccf8929",
+    "title": "Atlassian Confluence RCE Exploited, 1.2M Instances Exposed",
+    "summary": "Hackers are actively exploiting a critical RCE flaw in Atlassian Confluence Data Center, enabling unauthenticated code execution on exposed instances. Rapid7 detected the exploit on November 13, 2026, and Censys reports 1,212,568 internet-facing installations vulnerable. Affected organizations must apply Atlassian's emergency patch immediately, restrict network access to Confluence servers, and monitor for suspicious activity.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-exploiting-atlassian-confluence-vulnerability/",
+    "publishedAt": "2026-11-17T09:18:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "atlassian-confluence-rce-exploited-1-2m-instances",
+      "article-1ccf8929",
+      "1ccf8929",
+      "atlassian-confluence-rce-exploited-1-2m-instances-516c3c",
+      "atlassian-confluence-rce-exploited-1-2m-instances-exposed"
+    ]
+  },
+  {
+    "slug": "mozilla-releases-firefox-160-fixing-99-vulnerabili-fd69f367",
+    "title": "Mozilla Releases Firefox 160, Fixing 99 Vulnerabilities",
+    "summary": "Mozilla released Firefox 160 to address 99 security issues, including multiple sandbox escapes, privilege escalation flaws, and memory errors. The advisory, dated November 10, 2026, assigns a high-impact rating and covers vulnerabilities across graphics, networking, storage, and core browser components. Users should install the update immediately to close gaps and prevent exploitation of the identified flaws.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/mozilla-patches-160-firefox-vulnerabilities/",
+    "publishedAt": "2026-11-17T09:03:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mozilla-releases-firefox-160-fixing-99-vulnerabili",
+      "article-fd69f367",
+      "fd69f367",
+      "mozilla-releases-firefox-160-fixing-99-vulnerabili-4107e5",
+      "mozilla-releases-firefox-160-fixing-99-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "google-detects-ai-agents-crafting-exploits-indepen-f6f8d652",
+    "title": "Google Detects AI Agents Crafting Exploits Independently",
+    "summary": "Google Threat Intelligence Group and Mandiant revealed that threat actors are deploying AI agents capable of writing and launching exploits. These agents can transform newly released patches into working attacks, accelerating intrusion speed and scale while maintaining operational stealth. Security teams should monitor for automated exploitation patterns, enforce strict patch management, and employ AI-driven detection to mitigate evolving attack vectors.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/ai-powered-cyberattacks-gtig-report/",
+    "publishedAt": "2026-11-17T08:45:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-detects-ai-agents-crafting-exploits-indepen",
+      "article-f6f8d652",
+      "f6f8d652",
+      "google-detects-ai-agents-crafting-exploits-indepen-599cc4",
+      "google-detects-ai-agents-crafting-exploits-independently"
+    ]
+  },
+  {
+    "slug": "ai-vendor-key-breach-exposes-10-barracuda-cloud-ac-f45aec58",
+    "title": "AI Vendor Key Breach Exposes 10 Barracuda Cloud Accounts",
+    "summary": "Hackers used an exposed AI vendor cloud key to infiltrate Barracuda’s environment, compromising about ten accounts in 44 hours. The attack moved across cloud services, analytics, source code, and Kubernetes, collecting credentials for lateral movement. Barracuda noted the key stayed active; teams should revoke it, enforce least-privilege, and audit permissions.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/barracuda-cloud-account-breach/",
+    "publishedAt": "2026-11-17T08:42:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-vendor-key-breach-exposes-10-barracuda-cloud-ac",
+      "article-f45aec58",
+      "f45aec58",
+      "ai-vendor-key-breach-exposes-10-barracuda-cloud-ac-689bdb",
+      "ai-vendor-key-breach-exposes-10-barracuda-cloud-accounts"
+    ]
+  },
+  {
+    "slug": "uber-notifies-drivers-of-150k-data-breach-11f4796e",
+    "title": "Uber Notifies Drivers of 150k Data Breach",
+    "summary": "Attackers breached Fireworks AI infrastructure in early October, exfiltrating personal data of approximately 150,000 Uber drivers. The breach exposed driver credentials and sensitive personal information, but no evidence of credential theft or financial loss has been reported. Uber has notified affected drivers and advised them to change passwords and monitor accounts for suspicious activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/",
+    "publishedAt": "2026-11-17T08:35:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uber-notifies-drivers-of-150k-data-breach",
+      "article-11f4796e",
+      "11f4796e",
+      "uber-notifies-drivers-of-150k-data-breach-196dbd"
+    ]
+  },
+  {
     "slug": "nato-grants-openai-models-to-core-institutions-a6dfae56",
     "title": "NATO Grants OpenAI Models to Core Institutions",
     "summary": "NATO’s NCIA has granted core institutions access to OpenAI’s cybersecurity models via the Daybreak program, enabling code reviews, threat hunting, and fix testing. The program processes up to 300 billion raw input and output tokens monthly, exposing the software stack used daily by European institutions.",
@@ -63,6 +285,25 @@ export const news: NewsBrief[] = [
       "article-a6dfae56",
       "a6dfae56",
       "nato-grants-openai-models-to-core-institutions-7c060d"
+    ]
+  },
+  {
+    "slug": "macos-unicode-filename-trick-enables-security-chec-7ee40bda",
+    "title": "macOS Unicode Filename Trick Enables Security Check Bypass",
+    "summary": "A Unicode normalization flaw in macOS lets attackers bypass file exclusion checks in developer tools, affecting Deno, libarchive, and Python setuptools. APFS treats Unicode spellings of a character as identical, while exclusion logic sees them differently, creating a mismatch. Apple patched the issue in the 27.3 beta; teams should update macOS and review exclusion settings to mitigate the bypass.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/macos-s-vs-ss-filename-trick/",
+    "publishedAt": "2026-11-17T08:20:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "macos-unicode-filename-trick-enables-security-chec",
+      "article-7ee40bda",
+      "7ee40bda",
+      "macos-unicode-filename-trick-enables-security-chec-4a4727",
+      "macos-unicode-filename-trick-enables-security-check-bypass"
     ]
   },
   {
@@ -9535,258 +9776,6 @@ export const news: NewsBrief[] = [
       "article-8fa80d31",
       "8fa80d31",
       "apache-fixes-critical-http-2-rce-vulnerability-79fafe"
-    ]
-  },
-  {
-    "slug": "fortinet-products-vulnerable-to-multiple-flaws-706e9a9a",
-    "title": "Fortinet Products Vulnerable to Multiple Flaws",
-    "summary": "Fortinet products such as FortiAnalyzer, FortiAuthenticator, FortiClient, FortiMail, FortiManager, FortiOS, and FortiPAM contain multiple vulnerabilities. The flaws exist in versions prior to 8.0.3, 8.0.4, 7.6.8, 7.4.8, 7.2.12, and earlier, enabling unauthenticated remote code execution and privilege escalation. Fortinet recommends upgrading to the latest firmware releases or applying the published patches, as detailed in the advisory, to mitigate the exploitation risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/fortinet-security-advisory-av26-1145",
-    "publishedAt": "2026-11-12T15:26:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-products-vulnerable-to-multiple-flaws",
-      "article-706e9a9a",
-      "706e9a9a",
-      "fortinet-products-vulnerable-to-multiple-flaws-737609"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99632-moderate-gcc-toolset-15-gcc-securi-b2f69179",
-    "title": "RHSA-2026:99632: Moderate: gcc-toolset-15-gcc security update",
-    "summary": "An update for gcc-toolset-15-gcc is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99632",
-    "publishedAt": "2026-11-12T15:23:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99632-moderate-gcc-toolset-15-gcc-securi",
-      "article-b2f69179",
-      "b2f69179",
-      "rhsa-2026-99632-moderate-gcc-toolset-15-gcc-securi-37d66d",
-      "rhsa-2026-99632-moderate-gcc-toolset-15-gcc-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99611-moderate-xorg-x11-server-security-00e02230",
-    "title": "RHSA-2026:99611: Moderate: xorg-x11-server security update",
-    "summary": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99611",
-    "publishedAt": "2026-11-12T15:21:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99611-moderate-xorg-x11-server-security",
-      "article-00e02230",
-      "00e02230",
-      "rhsa-2026-99611-moderate-xorg-x11-server-security-37d66d",
-      "rhsa-2026-99611-moderate-xorg-x11-server-security-update"
-    ]
-  },
-  {
-    "slug": "fake-ai-domains-redirect-to-clickfix-and-browser-m-cb9cc025",
-    "title": "Fake AI Domains Redirect to ClickFix and Browser Malware",
-    "summary": "Researchers discovered 186 fake AI domains redirecting users to ClickFix-style lures, browser-hijacking malware, and search-hijacking extensions. The attack leverages typographical prompt deception, codenamed TypoPrompting, to trick users into verifying fake AI tools, enabling credential theft and malicious payload delivery. Security teams should block these domains, enforce strict DNS filtering, and educate users about authentic AI services to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
-    "publishedAt": "2026-11-12T15:15:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-ai-domains-redirect-to-clickfix-and-browser-m",
-      "article-cb9cc025",
-      "cb9cc025",
-      "fake-ai-domains-redirect-to-clickfix-and-browser-m-759ea8",
-      "fake-ai-domains-redirect-to-clickfix-and-browser-malware"
-    ]
-  },
-  {
-    "slug": "police-seize-servers-behind-gootloader-castlerat-s-f1e4e109",
-    "title": "Police Seize Servers Behind Gootloader, CastleRAT, StealC",
-    "summary": "Europol and nine partner agencies seized hundreds of servers and domains that supported the Gootloader, CastleRAT, and StealC malware ecosystems. The takedown disrupted command-and-control channels, halted credential-stealing operations, and limited the malware’s ability to deliver ransomware payloads to corporate networks. Security teams should monitor residual infrastructure, apply network segmentation, and maintain threat intelligence feeds to detect command-and-control domains.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
-    "publishedAt": "2026-11-12T15:07:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "police-seize-servers-behind-gootloader-castlerat-s",
-      "article-f1e4e109",
-      "f1e4e109",
-      "police-seize-servers-behind-gootloader-castlerat-s-70cdd8",
-      "police-seize-servers-behind-gootloader-castlerat-stealc"
-    ]
-  },
-  {
-    "slug": "picus-launches-autonomous-ai-penetration-testing-t-0099f552",
-    "title": "Picus Launches Autonomous AI Penetration Testing Tool",
-    "summary": "Picus Security introduced Picus Autonomous Penetration Testing, an AI-driven tool that chains real exploits toward an organization’s critical assets. The system operates under strict governance, preventing agents from overriding controls while delivering realistic breach scenarios. Teams can validate defenses, prioritize remediation, and train staff, with no public vulnerability or exploit disclosed.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/picus-autonomous-penetration-testing/",
-    "publishedAt": "2026-11-12T15:05:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "picus-launches-autonomous-ai-penetration-testing-t",
-      "article-0099f552",
-      "0099f552",
-      "picus-launches-autonomous-ai-penetration-testing-t-56da8b",
-      "picus-launches-autonomous-ai-penetration-testing-tool"
-    ]
-  },
-  {
-    "slug": "hpe-private-5g-core-multiple-vulnerabilities-ident-cb492e4e",
-    "title": "HPE Private 5G Core Multiple Vulnerabilities Identified",
-    "summary": "Multiple vulnerabilities in HPE Networking Private 5G Core versions 1.26.1.4 and earlier allow attackers to compromise core network functions. The flaws enable unauthenticated remote code execution and privilege escalation, potentially disrupting 5G services and exposing sensitive traffic. HPE recommends applying the latest firmware update or patch, as detailed in the security bulletin, to eliminate the core network vulnerabilities.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/hpe-security-advisory-av26-1144",
-    "publishedAt": "2026-11-12T15:04:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hpe-private-5g-core-multiple-vulnerabilities-ident",
-      "article-cb492e4e",
-      "cb492e4e",
-      "hpe-private-5g-core-multiple-vulnerabilities-ident-8635f8",
-      "hpe-private-5g-core-multiple-vulnerabilities-identified"
-    ]
-  },
-  {
-    "slug": "ai-agents-breach-semiconductor-defense-civil-targe-918fee5a",
-    "title": "AI Agents Breach Semiconductor, Defense, Civil Targets",
-    "summary": "Attackers leveraged the open-source Cairn AI agent framework to autonomously breach semiconductor, defense, and civil society organizations. The framework chains exploits without human intervention, enabling rapid compromise of critical infrastructure and sensitive data, with evidence of active exploitation. Security teams should monitor for anomalous AI activity, enforce strict access controls, and apply timely patches to mitigate automated attack vectors.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/",
-    "publishedAt": "2026-11-12T15:00:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-breach-semiconductor-defense-civil-targe",
-      "article-918fee5a",
-      "918fee5a",
-      "ai-agents-breach-semiconductor-defense-civil-targe-3e557a",
-      "ai-agents-breach-semiconductor-defense-civil-targets"
-    ]
-  },
-  {
-    "slug": "attackers-breached-10-organizations-with-an-open-s-0ba41d82",
-    "title": "Attackers breached 10 organizations with an open-source AI pentest framework",
-    "summary": "Chinese-speaking attackers used Cairn, an open-source AI penetration testing framework, to run 25 operations against at least 19 organizations in August and September 2026. Palo Alto Networks’ Unit 42 found that the attackers gained unauthorized access or pulled data at 10 of them, often after typing little more than a domain name and a one-line goal.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/cairn-autonomous-ai-cyberattacks/",
-    "publishedAt": "2026-11-12T15:00:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "attackers-breached-10-organizations-with-an-open-s",
-      "article-0ba41d82",
-      "0ba41d82",
-      "attackers-breached-10-organizations-with-an-open-s-7c7e41",
-      "attackers-breached-10-organizations-with-an-open-source-ai-p"
-    ]
-  },
-  {
-    "slug": "endpoint-management-platforms-pose-major-security-ea047999",
-    "title": "Endpoint Management Platforms Pose Major Security Threat",
-    "summary": "Endpoint management platforms can become powerful attack tools when compromised, enabling hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 recommends customer-controlled cryptographic authorization to prevent attackers from abusing sensitive endpoint operations and mitigate this risk. Security teams should enforce strict access controls, monitor for unauthorized changes, and apply timely updates to protect endpoint management infrastructure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/",
-    "publishedAt": "2026-11-12T15:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "endpoint-management-platforms-pose-major-security",
-      "article-ea047999",
-      "ea047999",
-      "endpoint-management-platforms-pose-major-security-487a4c",
-      "endpoint-management-platforms-pose-major-security-threat"
-    ]
-  },
-  {
-    "slug": "n-central-vulnerability-cve-2026-125883-exploited-0ccb4f56",
-    "title": "N-Central Vulnerability CVE-2026-125883 Exploited in Wild",
-    "summary": "A vulnerability in N-Central versions before 2026.4.1.26, identified as CVE-2026-125883, is actively exploited in the wild. The flaw allows attackers to gain unauthorized access to the management console, potentially enabling credential theft and lateral movement across managed endpoints. N-Able has issued a patch; administrators should upgrade to 2026.4.1.26 or later and apply any vendor-recommended mitigations.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1143",
-    "publishedAt": "2026-11-12T14:56:51.000Z",
-    "cves": [
-      "CVE-2026-125883"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "n-central-vulnerability-cve-2026-125883-exploited",
-      "article-0ccb4f56",
-      "0ccb4f56",
-      "n-central-vulnerability-cve-2026-125883-exploited-761d20",
-      "n-central-vulnerability-cve-2026-125883-exploited-in-wild"
-    ]
-  },
-  {
-    "slug": "japan-records-233-cyber-incidents-185-million-pers-b7b4ecf2",
-    "title": "Japan Records 233 Cyber Incidents, 185 Million Personal Records at Risk",
-    "summary": "Japan reported 233 publicly disclosed cyber incidents in October 2026, a record 2.4 times the previous monthly high, exposing 185 million personal records. The attacks, many driven by AI-assisted intrusion techniques, exploited unpatched vulnerabilities across businesses, service providers, and public institutions. Organizations must accelerate patch management, enforce timely updates, and adopt AI-driven threat detection to mitigate the escalating threat landscape.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/japan-cyberattack-surge",
-    "publishedAt": "2026-11-12T14:51:52.947Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/233-cyber-incidents/"
-      }
-    ],
-    "aliases": [
-      "japan-records-233-cyber-incidents-185-million-pers",
-      "article-b7b4ecf2",
-      "b7b4ecf2",
-      "japan-records-233-cyber-incidents-185-million-pers-683cad",
-      "japan-records-233-cyber-incidents-185-million-personal-recor"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99593-moderate-rpm-security-update-4803ff68",
-    "title": "RHSA-2026:99593: Moderate: rpm security update",
-    "summary": "An update for rpm is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99593",
-    "publishedAt": "2026-11-12T14:37:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99593-moderate-rpm-security-update",
-      "article-4803ff68",
-      "4803ff68",
-      "rhsa-2026-99593-moderate-rpm-security-update-37d670"
     ]
   }
 ];
