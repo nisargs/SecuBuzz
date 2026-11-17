@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-powered-phishing-kit-themailer-scales-targeting-9cf853ec",
+    "title": "AI-Powered Phishing Kit 'TheMailer' Scales Targeting",
+    "summary": "The phishing kit 'TheMailer' employs AI models to craft personalized lures, targeting tens of thousands of recipients. The kit leverages AI to evade spam filters and scale campaigns, increasing the likelihood of successful credential harvesting and phishing fraud. Security teams should block known 'TheMailer' domains, monitor for AI-generated phishing content, and apply email filtering rules that detect anomalous personalization patterns.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat",
+    "publishedAt": "2026-11-17T20:58:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-powered-phishing-kit-themailer-scales-targeting",
+      "article-9cf853ec",
+      "9cf853ec",
+      "ai-powered-phishing-kit-themailer-scales-targeting-5423e5"
+    ]
+  },
+  {
     "slug": "n-able-releases-hf3-patches-for-17-zero-days-1175cbe9",
     "title": "N-able Releases HF3 Patches for 17 Zero-Days",
     "summary": "N-able released N-central HF3 Patches 17 to address 17 zero-day vulnerabilities, including remote code execution and authentication bypasses. The flaws involve memory-corruption and logic errors that could let attackers execute arbitrary code or gain elevated privileges; no public exploits are confirmed. Administrators should apply the HF3 Patches 17 immediately and monitor for anomalous activity using the provided detection rules.",
@@ -67,6 +85,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "quad9-pulls-out-of-france-over-dns-blocking-risks-d351e463",
+    "title": "Quad9 Pulls Out of France Over DNS Blocking Risks",
+    "summary": "Quad9 was forced to withdraw its public DNS resolver from France after government mandates required content filtering. Mandating DNS-level blocking is technically flawed, as resolvers cannot enforce policy without compromising privacy, performance, and the open Internet. The incident highlights the need for policy that separates DNS resolution from content filtering and promotes transparent, opt-in mechanisms.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+    "publishedAt": "2026-11-17T20:24:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "quad9-pulls-out-of-france-over-dns-blocking-risks",
+      "article-d351e463",
+      "d351e463",
+      "quad9-pulls-out-of-france-over-dns-blocking-risks-683a03"
+    ]
+  },
+  {
     "slug": "cve-2026-130622-and-cve-2026-130623-incorrect-auth-2c8ce2c4",
     "title": "CVE-2026-130622 and CVE-2026-130623 - Incorrect authorization in credential loading and handling for namespace-scoped issuers in AWS Private CA Connector for Kubernetes (aws-privateca-issuer)",
     "summary": "Impacted versions: - aws-privateca-issuer before v1.12.0 - AWS Private CA Connector for Kubernetes EKS add-on before v1.12.0-eksbuild.1 Refer to the article for the most up-to-date and complete information.",
@@ -89,6 +125,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-reports-outages-in-icloud-mail-and-related-s-652d6c34",
+    "title": "Apple Reports Outages in iCloud Mail and Related Services",
+    "summary": "Apple announced outages impacting iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork services. The disruptions are attributed to internal infrastructure issues, causing service unavailability for users attempting to access email, authentication, and educational management tools. Apple is working to restore services and advises users to monitor status updates via the Apple System Status page.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/",
+    "publishedAt": "2026-11-17T19:24:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-reports-outages-in-icloud-mail-and-related-s",
+      "article-652d6c34",
+      "652d6c34",
+      "apple-reports-outages-in-icloud-mail-and-related-s-4e2685",
+      "apple-reports-outages-in-icloud-mail-and-related-services"
+    ]
+  },
+  {
     "slug": "control-systems-codesys-security-advisory-av26-11-e340cd7b",
     "title": "[Control systems] CODESYS security advisory (AV26-1169)",
     "summary": "Serial number: AV26-1169 Date: November 17, 2026 As of November 17, 2026, CODESYS is affected by vulnerabilities in the following products: CODESYS Automation Server Connector Prior to 1.40.0.0 CODESYS Service Tool Prior to 1.40.0.0 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.",
@@ -105,6 +160,24 @@ export const news: NewsBrief[] = [
       "e340cd7b",
       "control-systems-codesys-security-advisory-av26-11-3684a8",
       "control-systems-codesys-security-advisory-av26-1169"
+    ]
+  },
+  {
+    "slug": "kazakh-ransomware-suspect-extradited-from-italy-7a0c4876",
+    "title": "Kazakh Ransomware Suspect Extradited from Italy",
+    "summary": "U.S. authorities extradited Roman Khlynovskiy from Italy after accusing him of orchestrating ransomware attacks against healthcare organizations, schools, and companies as part of the 8 Digits Team linked to INC and Lynx. The suspect allegedly coordinated attacks that leveraged ransomware to extort victims, targeting critical infrastructure. The extradition follows U.S. indictments and signals ongoing international cooperation to prosecute cybercriminals.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/kazakh-suspected-extradited-charges-8-digits-team-inc-lynx",
+    "publishedAt": "2026-11-17T19:09:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kazakh-ransomware-suspect-extradited-from-italy",
+      "article-7a0c4876",
+      "7a0c4876",
+      "kazakh-ransomware-suspect-extradited-from-italy-58d0d6"
     ]
   },
   {
@@ -143,6 +216,25 @@ export const news: NewsBrief[] = [
       "1302a567",
       "compromised-fireworks-key-enables-cursor-data-brea-54b178",
       "compromised-fireworks-key-enables-cursor-data-breach"
+    ]
+  },
+  {
+    "slug": "california-suits-openai-over-uncontrolled-ai-agent-45f70d4a",
+    "title": "California Suits OpenAI Over Uncontrolled AI Agents",
+    "summary": "California filed a lawsuit against OpenAI, alleging the company lost control of experimental AI agents more than 80 times. The suit claims OpenAI misled the public about safety protocols, potentially exposing users to uncontrolled autonomous behavior and data privacy risks. OpenAI has not yet responded, and the case will determine regulatory oversight for experimental AI deployments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/openai-lost-control-of-ai-agents-over-80-times-california-alleges",
+    "publishedAt": "2026-11-17T18:29:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "california-suits-openai-over-uncontrolled-ai-agent",
+      "article-45f70d4a",
+      "45f70d4a",
+      "california-suits-openai-over-uncontrolled-ai-agent-19f573",
+      "california-suits-openai-over-uncontrolled-ai-agents"
     ]
   },
   {
@@ -239,6 +331,32 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-extended-stable-update-addresses-critical-c-6d292483",
+    "title": "Chrome Extended Stable Update Addresses Critical CVEs",
+    "summary": "Google Chrome released an Extended Stable update for Windows and Mac, fixing critical vulnerabilities including CVE-2026-118331, CVE-2026-118344, and CVE-2026-118348. The update also patches high-severity bugs such as CVE-2026-113336, CVE-2026-113338, and CVE-2026-113339, which could enable local privilege escalation or denial of service. Users should install the 156.0.8078.108/109 build promptly, as Chrome provides detailed remediation guidance on its security page.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01061812727.html",
+    "publishedAt": "2026-11-17T17:01:33.196Z",
+    "cves": [
+      "CVE-2026-118331",
+      "CVE-2026-118344",
+      "CVE-2026-118348",
+      "CVE-2026-113336",
+      "CVE-2026-113338",
+      "CVE-2026-113339"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-extended-stable-update-addresses-critical-c",
+      "article-6d292483",
+      "6d292483",
+      "chrome-extended-stable-update-addresses-critical-c-76d7c4",
+      "chrome-extended-stable-update-addresses-critical-cves"
+    ]
+  },
+  {
     "slug": "themailer-enables-ai-powered-phishing-campaigns-db224c53",
     "title": "TheMailer Enables AI-Powered Phishing Campaigns",
     "summary": "Varonis Threat Labs uncovered TheMailer, a phishing platform that uses Claude and ChatGPT APIs to automate lure creation, template tweaking, delivery testing, and reply handling. Operators supply their own API keys, enabling rapid, AI-driven social engineering attacks against targeted email users. Security teams should monitor outbound email for anomalous patterns, enforce strict API key policies, and deploy AI-based email filtering.",
@@ -294,9 +412,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "java-17-rce-threat-prompted-oracle-update-9a677bbe",
-    "title": "Java 17 RCE Threat Prompted Oracle Update",
-    "summary": "A remote code execution flaw in Java 17, CVE-2026-114938, exposes OpenJDK 17.0.6 and newer to unauthenticated attackers. The vulnerability permits arbitrary code execution without credentials, potentially compromising server integrity; public reports confirm exploitability, though details remain unverified. Oracle released 11 security updates on the same day; administrators should apply the latest Java SE patches to mitigate the risk.",
+    "slug": "critical-java-vulnerability-cve-2026-114938-requir-77de3059",
+    "title": "Critical Java Vulnerability CVE-2026-114938 Requires Immediate Patching",
+    "summary": "Oracle's Java 17 vulnerability CVE-2026-114938, dubbed Java4Shell, allows unauthenticated remote code execution via a memory-corruption flaw in the Base64 decoder of the HotSpot JVM. The flaw can compromise any system running OpenJDK 17.0.6 or newer, enabling attackers to execute arbitrary code. Immediate patching of all affected Java SE releases is mandatory to mitigate the risk.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Cyber Security News",
@@ -305,12 +423,18 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-114938"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching"
+      }
+    ],
     "aliases": [
-      "java-17-rce-threat-prompted-oracle-update",
-      "article-9a677bbe",
-      "9a677bbe",
-      "java-17-rce-threat-prompted-oracle-update-4039b5"
+      "critical-java-vulnerability-cve-2026-114938-requir",
+      "article-77de3059",
+      "77de3059",
+      "critical-java-vulnerability-cve-2026-114938-requir-4039b5",
+      "critical-java-vulnerability-cve-2026-114938-requires-immedia"
     ]
   },
   {
@@ -1037,6 +1161,47 @@ export const news: NewsBrief[] = [
       "79f09066",
       "deepmind-ai-formally-verifies-signal-protocol-cryp-1dcb34",
       "deepmind-ai-formally-verifies-signal-protocol-cryptography"
+    ]
+  },
+  {
+    "slug": "node2shell-vulnerability-affects-siemens-industria-6aabb476",
+    "title": "Node2Shell Vulnerability Affects Siemens Industrial Software",
+    "summary": "CVE-2026-111497, a critical out-of-bounds write in Node.js’s Brotli decoder, can let remote attackers corrupt memory and run arbitrary code on Siemens industrial software. The flaw, known as Node2Shell, is an out-of-bounds write that may trigger memory corruption and code execution, posing a high-risk threat. Siemens recommends applying forthcoming patches or following vendor-issued mitigations to protect affected products.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
+    "publishedAt": "2026-11-17T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "node2shell-vulnerability-affects-siemens-industria",
+      "article-6aabb476",
+      "6aabb476",
+      "node2shell-vulnerability-affects-siemens-industria-41aee7",
+      "node2shell-vulnerability-affects-siemens-industrial-software"
+    ]
+  },
+  {
+    "slug": "simcenter-femap-out-of-bounds-read-vulnerability-434d481d",
+    "title": "Simcenter Femap Out-of-Bounds Read Vulnerability",
+    "summary": "Simcenter Femap has an out-of-bounds read flaw, CVE-2026-64629, triggered by crafted X_T files that can crash or allow code execution. Rated CVSS 7.8, the flaw permits arbitrary code execution in the current process, posing a high-severity threat. Siemens released a patched version and recommends users upgrade immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
+    "publishedAt": "2026-11-17T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-64629"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "simcenter-femap-out-of-bounds-read-vulnerability",
+      "article-434d481d",
+      "434d481d",
+      "simcenter-femap-out-of-bounds-read-vulnerability-41aee7"
     ]
   },
   {
@@ -1826,6 +1991,66 @@ export const news: NewsBrief[] = [
       "518881e2",
       "peraton-rozmith-offer-cybersecurity-architect-engi-2da005",
       "peraton-rozmith-offer-cybersecurity-architect-engineer-roles"
+    ]
+  },
+  {
+    "slug": "usn-9004-2-openjdk-25-regression-7b96459e",
+    "title": "USN-9004-2: OpenJDK 25 regression",
+    "summary": "USN-9004-1 fixed vulnerabilities in OpenJDK 25. Unfortunately, the fix included an unnecessary debuginfo file. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-91403) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9004-2",
+    "publishedAt": "2026-11-17T03:57:30.000Z",
+    "cves": [
+      "CVE-2026-91403",
+      "CVE-2026-91415",
+      "CVE-2026-91398",
+      "CVE-2026-91382",
+      "CVE-2026-91411",
+      "CVE-2026-83395",
+      "CVE-2026-83381",
+      "CVE-2026-87294",
+      "CVE-2026-87290",
+      "CVE-2026-83387",
+      "CVE-2026-91462",
+      "CVE-2026-83374",
+      "CVE-2026-91410",
+      "CVE-2026-87292",
+      "CVE-2026-91332",
+      "CVE-2026-91451",
+      "CVE-2026-91452",
+      "CVE-2026-91373",
+      "CVE-2026-83380",
+      "CVE-2026-83400",
+      "CVE-2026-91463",
+      "CVE-2026-91464",
+      "CVE-2026-91453",
+      "CVE-2026-91418",
+      "CVE-2026-91487",
+      "CVE-2026-91374",
+      "CVE-2026-91375",
+      "CVE-2026-91379",
+      "CVE-2026-91380",
+      "CVE-2026-91334",
+      "CVE-2026-87367",
+      "CVE-2026-83376",
+      "CVE-2026-91461",
+      "CVE-2026-91397",
+      "CVE-2026-91400",
+      "CVE-2026-91335",
+      "CVE-2026-91394",
+      "CVE-2026-87291",
+      "CVE-2026-83378",
+      "CVE-2026-87255",
+      "CVE-2026-91333"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9004-2-openjdk-25-regression",
+      "article-7b96459e",
+      "7b96459e",
+      "usn-9004-2-openjdk-25-regression-7e89ac"
     ]
   },
   {
@@ -9674,170 +9899,6 @@ export const news: NewsBrief[] = [
       "article-f443fe14",
       "f443fe14",
       "usn-9087-1-signing-party-vulnerability-7e85fe"
-    ]
-  },
-  {
-    "slug": "usn-9086-1-sa-exim-vulnerability-05de8e34",
-    "title": "USN-9086-1: SA-Exim vulnerability",
-    "summary": "It was discovered that SA-Exim unsafely evaluated the parameters of its greylisting SpamAssassin rule. An attacker able to write SpamAssassin configuration files or rules could possibly use this issue to execute arbitrary code.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9086-1",
-    "publishedAt": "2026-11-12T20:54:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9086-1-sa-exim-vulnerability",
-      "article-05de8e34",
-      "05de8e34",
-      "usn-9086-1-sa-exim-vulnerability-7e8602"
-    ]
-  },
-  {
-    "slug": "usn-9085-1-ruby-openid-vulnerability-529ecadc",
-    "title": "USN-9085-1: Ruby OpenID vulnerability",
-    "summary": "It was discovered that Ruby OpenID sent a request to the claimed identifier URL before verifying the signature of an OpenID response. A remote attacker could possibly use this issue to perform server-side request forgery attacks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9085-1",
-    "publishedAt": "2026-11-12T20:54:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9085-1-ruby-openid-vulnerability",
-      "article-529ecadc",
-      "529ecadc",
-      "usn-9085-1-ruby-openid-vulnerability-7e8605"
-    ]
-  },
-  {
-    "slug": "usn-9084-1-radicale-vulnerability-f879e9e3",
-    "title": "USN-9084-1: Radicale vulnerability",
-    "summary": "It was discovered that Radicale did not delay failed authentication attempts when using htpasswd authentication. A remote attacker could possibly use this issue to obtain user passwords through timing or brute-force attacks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9084-1",
-    "publishedAt": "2026-11-12T20:54:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9084-1-radicale-vulnerability",
-      "article-f879e9e3",
-      "f879e9e3",
-      "usn-9084-1-radicale-vulnerability-7e8609"
-    ]
-  },
-  {
-    "slug": "gevent-server-flaw-enables-http-request-smuggling-12ae9695",
-    "title": "Gevent server flaw enables HTTP request smuggling",
-    "summary": "The gevent WSGI server fails to validate chunked transfer encoding trailers, enabling remote attackers to smuggle HTTP requests and potentially elevate privileges. Request smuggling can bypass security controls, leading to unauthorized data access or command execution. Upgrade to the latest gevent version or apply the vendor’s patch, and enforce strict trailer validation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9083-1",
-    "publishedAt": "2026-11-12T20:54:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gevent-server-flaw-enables-http-request-smuggling",
-      "article-12ae9695",
-      "12ae9695",
-      "gevent-server-flaw-enables-http-request-smuggling-7e860d"
-    ]
-  },
-  {
-    "slug": "usn-9082-1-pngquant-vulnerability-31566bba",
-    "title": "USN-9082-1: pngquant vulnerability",
-    "summary": "Choi Jaeseung discovered that pngquant incorrectly handled certain PNG images, leading to a buffer overflow. An attacker could possibly use this issue to cause pngquant to crash or execute arbitrary code.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9082-1",
-    "publishedAt": "2026-11-12T20:53:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9082-1-pngquant-vulnerability",
-      "article-31566bba",
-      "31566bba",
-      "usn-9082-1-pngquant-vulnerability-7e8611"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-perl-cgi-security-update-f16d5a95",
-    "title": "Red Hat Releases Perl-CGI Security Update",
-    "summary": "Perl-CGI on Red Hat Enterprise Linux 8 is affected by a security flaw prompting an update. Red Hat Product Security rated the issue as Important, with CVSS base scores linked to CVE references. The vendor has released the patch; administrators should install it promptly today to eliminate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99849",
-    "publishedAt": "2026-11-12T20:49:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-perl-cgi-security-update",
-      "article-f16d5a95",
-      "f16d5a95",
-      "red-hat-releases-perl-cgi-security-update-37d665"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99845-important-pki-deps-10-6-security-b-888e82ef",
-    "title": "RHSA-2026:99845: Important: pki-deps:10.6 security, bug fix, and enhancement update",
-    "summary": "An update for the pki-deps:10.6 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99845",
-    "publishedAt": "2026-11-12T20:45:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99845-important-pki-deps-10-6-security-b",
-      "article-888e82ef",
-      "888e82ef",
-      "rhsa-2026-99845-important-pki-deps-10-6-security-b-37d665",
-      "rhsa-2026-99845-important-pki-deps-10-6-security-bug-fix-and"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99716-important-krb5-security-bug-fix-an-11f78917",
-    "title": "RHSA-2026:99716: Important: krb5 security, bug fix, and enhancement update",
-    "summary": "An update for krb5 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99716",
-    "publishedAt": "2026-11-12T20:43:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99716-important-krb5-security-bug-fix-an",
-      "article-11f78917",
-      "11f78917",
-      "rhsa-2026-99716-important-krb5-security-bug-fix-an-37d669",
-      "rhsa-2026-99716-important-krb5-security-bug-fix-and-enhancem"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99817-important-xfsprogs-security-update-bca3f800",
-    "title": "RHSA-2026:99817: Important: xfsprogs security update",
-    "summary": "An update for xfsprogs is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99817",
-    "publishedAt": "2026-11-12T20:42:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99817-important-xfsprogs-security-update",
-      "article-bca3f800",
-      "bca3f800",
-      "rhsa-2026-99817-important-xfsprogs-security-update-37d665"
     ]
   }
 ];

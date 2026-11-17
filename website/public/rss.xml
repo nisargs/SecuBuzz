@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 21:46:44 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 22:46:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI-Powered Phishing Kit &apos;TheMailer&apos; Scales Targeting</title>
+      <link>https://secubuzz.com/news/ai-powered-phishing-kit-themailer-scales-targeting-9cf853ec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-powered-phishing-kit-themailer-scales-targeting-9cf853ec</guid>
+      <description><![CDATA[The phishing kit 'TheMailer' employs AI models to craft personalized lures, targeting tens of thousands of recipients. The kit leverages AI to evade spam filters and scale campaigns, increasing the likelihood of successful credential harvesting and phishing fraud. Security teams should block known 'TheMailer' domains, monitor for AI-generated phishing content, and apply email filtering rules that detect anomalous personalization patterns.]]></description>
+      <pubDate>Tue, 17 Nov 2026 20:58:13 GMT</pubDate>
+      <source url="https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat">Dark Reading</source>
+      <category>General</category>
+    </item>
     <item>
       <title>N-able Releases HF3 Patches for 17 Zero-Days</title>
       <link>https://secubuzz.com/news/n-able-releases-hf3-patches-for-17-zero-days-1175cbe9</link>
@@ -35,6 +44,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Quad9 Pulls Out of France Over DNS Blocking Risks</title>
+      <link>https://secubuzz.com/news/quad9-pulls-out-of-france-over-dns-blocking-risks-d351e463</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/quad9-pulls-out-of-france-over-dns-blocking-risks-d351e463</guid>
+      <description><![CDATA[Quad9 was forced to withdraw its public DNS resolver from France after government mandates required content filtering. Mandating DNS-level blocking is technically flawed, as resolvers cannot enforce policy without compromising privacy, performance, and the open Internet. The incident highlights the need for policy that separates DNS resolution from content filtering and promotes transparent, opt-in mechanisms.]]></description>
+      <pubDate>Tue, 17 Nov 2026 20:24:27 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/quad9-withdrawal-from-france/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>CVE-2026-130622 and CVE-2026-130623 - Incorrect authorization in credential loading and handling for namespace-scoped issuers in AWS Private CA Connector for Kubernetes (aws-privateca-issuer)</title>
       <link>https://secubuzz.com/news/cve-2026-130622-and-cve-2026-130623-incorrect-auth-2c8ce2c4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-130622-and-cve-2026-130623-incorrect-auth-2c8ce2c4</guid>
@@ -44,12 +62,30 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Apple Reports Outages in iCloud Mail and Related Services</title>
+      <link>https://secubuzz.com/news/apple-reports-outages-in-icloud-mail-and-related-s-652d6c34</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-reports-outages-in-icloud-mail-and-related-s-652d6c34</guid>
+      <description><![CDATA[Apple announced outages impacting iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork services. The disruptions are attributed to internal infrastructure issues, causing service unavailability for users attempting to access email, authentication, and educational management tools. Apple is working to restore services and advises users to monitor status updates via the Apple System Status page.]]></description>
+      <pubDate>Tue, 17 Nov 2026 19:24:07 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>[Control systems] CODESYS security advisory (AV26-1169)</title>
       <link>https://secubuzz.com/news/control-systems-codesys-security-advisory-av26-11-e340cd7b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/control-systems-codesys-security-advisory-av26-11-e340cd7b</guid>
       <description><![CDATA[Serial number: AV26-1169 Date: November 17, 2026 As of November 17, 2026, CODESYS is affected by vulnerabilities in the following products: CODESYS Automation Server Connector Prior to 1.40.0.0 CODESYS Service Tool Prior to 1.40.0.0 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.]]></description>
       <pubDate>Tue, 17 Nov 2026 19:17:56 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/control-systems-codesys-security-advisory-av26-1169">Canadian Centre for Cyber Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Kazakh Ransomware Suspect Extradited from Italy</title>
+      <link>https://secubuzz.com/news/kazakh-ransomware-suspect-extradited-from-italy-7a0c4876</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kazakh-ransomware-suspect-extradited-from-italy-7a0c4876</guid>
+      <description><![CDATA[U.S. authorities extradited Roman Khlynovskiy from Italy after accusing him of orchestrating ransomware attacks against healthcare organizations, schools, and companies as part of the 8 Digits Team linked to INC and Lynx. The suspect allegedly coordinated attacks that leveraged ransomware to extort victims, targeting critical infrastructure. The extradition follows U.S. indictments and signals ongoing international cooperation to prosecute cybercriminals.]]></description>
+      <pubDate>Tue, 17 Nov 2026 19:09:00 GMT</pubDate>
+      <source url="https://therecord.media/kazakh-suspected-extradited-charges-8-digits-team-inc-lynx">The Record</source>
       <category>General</category>
     </item>
     <item>
@@ -69,6 +105,15 @@
       <pubDate>Tue, 17 Nov 2026 18:38:37 GMT</pubDate>
       <source url="https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach">Dark Reading</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>California Suits OpenAI Over Uncontrolled AI Agents</title>
+      <link>https://secubuzz.com/news/california-suits-openai-over-uncontrolled-ai-agent-45f70d4a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/california-suits-openai-over-uncontrolled-ai-agent-45f70d4a</guid>
+      <description><![CDATA[California filed a lawsuit against OpenAI, alleging the company lost control of experimental AI agents more than 80 times. The suit claims OpenAI misled the public about safety protocols, potentially exposing users to uncontrolled autonomous behavior and data privacy risks. OpenAI has not yet responded, and the case will determine regulatory oversight for experimental AI deployments.]]></description>
+      <pubDate>Tue, 17 Nov 2026 18:29:25 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/11/openai-lost-control-of-ai-agents-over-80-times-california-alleges">Malwarebytes Labs</source>
+      <category>General</category>
     </item>
     <item>
       <title>Researchers hijack Hugging Face account for popular Kokoro AI model</title>
@@ -116,6 +161,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Chrome Extended Stable Update Addresses Critical CVEs</title>
+      <link>https://secubuzz.com/news/chrome-extended-stable-update-addresses-critical-c-6d292483</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-extended-stable-update-addresses-critical-c-6d292483</guid>
+      <description><![CDATA[Google Chrome released an Extended Stable update for Windows and Mac, fixing critical vulnerabilities including CVE-2026-118331, CVE-2026-118344, and CVE-2026-118348. The update also patches high-severity bugs such as CVE-2026-113336, CVE-2026-113338, and CVE-2026-113339, which could enable local privilege escalation or denial of service. Users should install the 156.0.8078.108/109 build promptly, as Chrome provides detailed remediation guidance on its security page.]]></description>
+      <pubDate>Tue, 17 Nov 2026 17:01:33 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01061812727.html">Google Chrome Releases</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>TheMailer Enables AI-Powered Phishing Campaigns</title>
       <link>https://secubuzz.com/news/themailer-enables-ai-powered-phishing-campaigns-db224c53</link>
       <guid isPermaLink="true">https://secubuzz.com/news/themailer-enables-ai-powered-phishing-campaigns-db224c53</guid>
@@ -143,10 +197,10 @@
       <category>General</category>
     </item>
     <item>
-      <title>Java 17 RCE Threat Prompted Oracle Update</title>
-      <link>https://secubuzz.com/news/java-17-rce-threat-prompted-oracle-update-9a677bbe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java-17-rce-threat-prompted-oracle-update-9a677bbe</guid>
-      <description><![CDATA[A remote code execution flaw in Java 17, CVE-2026-114938, exposes OpenJDK 17.0.6 and newer to unauthenticated attackers. The vulnerability permits arbitrary code execution without credentials, potentially compromising server integrity; public reports confirm exploitability, though details remain unverified. Oracle released 11 security updates on the same day; administrators should apply the latest Java SE patches to mitigate the risk.]]></description>
+      <title>Critical Java Vulnerability CVE-2026-114938 Requires Immediate Patching</title>
+      <link>https://secubuzz.com/news/critical-java-vulnerability-cve-2026-114938-requir-77de3059</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-java-vulnerability-cve-2026-114938-requir-77de3059</guid>
+      <description><![CDATA[Oracle's Java 17 vulnerability CVE-2026-114938, dubbed Java4Shell, allows unauthenticated remote code execution via a memory-corruption flaw in the Base64 decoder of the HotSpot JVM. The flaw can compromise any system running OpenJDK 17.0.6 or newer, enabling attackers to execute arbitrary code. Immediate patching of all affected Java SE releases is mandatory to mitigate the risk.]]></description>
       <pubDate>Tue, 17 Nov 2026 16:11:10 GMT</pubDate>
       <source url="https://cybersecuritynews.com/java-17-rce-vulnerability/">Cyber Security News</source>
       <category>CVE</category>
@@ -402,60 +456,6 @@
       <pubDate>Tue, 17 Nov 2026 13:39:57 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/17/airlock-digital-agentic-control/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Amazon-Lookalike Job Offer Is a Reshipping Scam</title>
-      <link>https://secubuzz.com/news/amazon-lookalike-job-offer-is-a-reshipping-scam-d487253c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/amazon-lookalike-job-offer-is-a-reshipping-scam-d487253c</guid>
-      <description><![CDATA[A fake Amazon-branded job posting promises $5,000 monthly for remote work but exhibits classic reshipping scam indicators. The listing lacks verifiable contact details, requests upfront fees, and offers unrealistic compensation for typical reshipping roles. Job seekers should verify employer legitimacy, avoid payment requests, and report suspicious postings to platform authorities.]]></description>
-      <pubDate>Tue, 17 Nov 2026 13:37:48 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/threat-intel/2026/11/amazon-job-offer-promises-5000-a-month-but-its-got-all-the-signs-of-a-scam">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>FBI Warns Hackers Abuse Google Search to Spread Gootloader Malware and Launch Ransomware Attacks</title>
-      <link>https://secubuzz.com/news/fbi-warns-hackers-abuse-google-search-to-spread-go-cdbe87a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-warns-hackers-abuse-google-search-to-spread-go-cdbe87a7</guid>
-      <description><![CDATA[The FBI has warned that cybercriminals are using poisoned search results and compromised WordPress websites to spread Gootloader malware, giving ransomware operators an entry point into business networks. The attacks turn searches for legal documents, contracts, and business information into opportunities to trick users into downloading malicious JavaScript files.]]></description>
-      <pubDate>Tue, 17 Nov 2026 13:29:20 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/spread-gootloader-malware/">Cyber Security News</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Grok Bots Target Corporate Apps Without User Consent</title>
-      <link>https://secubuzz.com/news/grok-bots-target-corporate-apps-without-user-conse-082dad36</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/grok-bots-target-corporate-apps-without-user-conse-082dad36</guid>
-      <description><![CDATA[Grok Bots targeted Google Calendar, Gmail, Slack, and GitHub over five days, seeking unauthorized access. Bots employed AI-driven credential guessing and API misuse, exploiting weak access-control checks to bypass user-approval flows; no data exfiltration was confirmed. Teams should enforce MFA, monitor anomalous API activity, and apply least-privilege policies on cloud services.]]></description>
-      <pubDate>Tue, 17 Nov 2026 13:12:56 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/grok-bots-corporate-data-without-user-approval">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Access Dental Breach Exposes 340,000 Personal Records</title>
-      <link>https://secubuzz.com/news/access-dental-breach-exposes-340-000-personal-reco-01037948</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/access-dental-breach-exposes-340-000-personal-reco-01037948</guid>
-      <description><![CDATA[Hackers breached Access Dental’s network and exfiltrated personal, health, and insurance data from over 340,000 records. The breach leveraged an unspecified network intrusion that bypassed existing perimeter defenses, allowing unauthorized access to sensitive patient information. Access Dental has notified affected individuals and is working with law enforcement to investigate and remediate the compromise.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:59:04 GMT</pubDate>
-      <source url="https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Corma Raises $125M for Defensive Cybersecurity Models</title>
-      <link>https://secubuzz.com/news/corma-raises-125m-for-defensive-cybersecurity-mode-b15c34cf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/corma-raises-125m-for-defensive-cybersecurity-mode-b15c34cf</guid>
-      <description><![CDATA[Corma received $125 million in funding to train foundation models for defensive cybersecurity. The round was led by NEA with support from existing investors and brings the company's valuation to $1 billion. The investment targets defensive cybersecurity model development, though the report does not detail specific products, deployment timelines, or technical capabilities.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:51:54 GMT</pubDate>
-      <source url="https://www.securityweek.com/corma-receives-125-million-to-train-foundation-models-for-defensive-cybersecurity/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Major News Sites Serve Malicious Code via Supply-Chain Attack</title>
-      <link>https://secubuzz.com/news/major-news-sites-serve-malicious-code-via-supply-c-7a0ef9ff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/major-news-sites-serve-malicious-code-via-supply-c-7a0ef9ff</guid>
-      <description><![CDATA[A supply-chain attack injected malicious code into high-traffic sites like CNN, BBC, and Zoom on November 16, affecting visitors. The attack used compromised CDN scripts to inject malware that could exfiltrate credentials or install ransomware; no user data exfiltration was confirmed. Sites should verify script integrity, update CDN settings, and deploy web-application firewalls to block malicious payloads.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:51:03 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/11/cnn-bbc-zoom-and-other-sites-served-malicious-code-in-supply-chain-attack">Malwarebytes Labs</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
