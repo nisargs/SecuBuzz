@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 04:38:37 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 05:45:53 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>40% Struggle to Trace AI Agent Actions</title>
+      <link>https://secubuzz.com/news/40-struggle-to-trace-ai-agent-actions-6e6cfe47</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/40-struggle-to-trace-ai-agent-actions-6e6cfe47</guid>
+      <description><![CDATA[A recent report shows 40% of organizations cannot fully retrace AI agents’ actions in development pipelines, even though 99% deploy them for autonomous code changes. AI-driven development raised cloud updates by 82%, increasing release pressure that often leaves security issues unresolved. Security teams should enforce audit trails, least-privilege policies, and AI-aware monitoring to mitigate undetected changes.]]></description>
+      <pubDate>Tue, 17 Nov 2026 05:30:58 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/17/palo-alto-networks-ai-cloud-security-risks-report/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>N-Able Releases Hotfix for 17 N-Central Flaws</title>
+      <link>https://secubuzz.com/news/n-able-releases-hotfix-for-17-n-central-flaws-82d90aa1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-releases-hotfix-for-17-n-central-flaws-82d90aa1</guid>
+      <description><![CDATA[N-Able released Hotfix 3 for its N-Central RMM and UEM platform, fixing 17 critical flaws that attackers had used to deploy cryptocurrency miners. The bugs involved insufficient input validation and privilege escalation, enabling remote code execution and credential theft, and were exploited in the wild.]]></description>
+      <pubDate>Tue, 17 Nov 2026 05:00:34 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Peraton, Rozmith Offer Cybersecurity Architect, Engineer Roles</title>
+      <link>https://secubuzz.com/news/peraton-rozmith-offer-cybersecurity-architect-engi-518881e2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/peraton-rozmith-offer-cybersecurity-architect-engi-518881e2</guid>
+      <description><![CDATA[Peraton and Rozmith posted cybersecurity architect and engineer positions in the United States, targeting on-site and remote roles. Candidates will integrate security into DevSecOps, manage ATO packages, and develop security plans per DoD and DAF requirements. Applications should highlight experience in systems, networks, incident response, and risk assessment to meet the outlined responsibilities.]]></description>
+      <pubDate>Tue, 17 Nov 2026 05:00:33 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/17/cybersecurity-jobs-available-right-now-november-17-2026/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Chase Software Bug Causes Nationwide Banking Outages</title>
+      <link>https://secubuzz.com/news/chase-software-bug-causes-nationwide-banking-outag-767a9992</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chase-software-bug-causes-nationwide-banking-outag-767a9992</guid>
+      <description><![CDATA[A software bug in JPMorgan Chase’s systems triggered widespread banking outages on November 16, 2026, disrupting account access and payments. The defect prompted complaints at Bank of America, Wells Fargo, U.S. Bank, and Zelle, though separate outages were not confirmed. Chase attributed the disruption to a temporary software issue and is restoring full functionality, but no patch details were released.]]></description>
+      <pubDate>Tue, 17 Nov 2026 03:05:29 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/chase-outage-disrupts-bank/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Optimizely Supply Chain Attack Injects Malware into Major Sites</title>
       <link>https://secubuzz.com/news/optimizely-supply-chain-attack-injects-malware-int-c9c8a653</link>
@@ -132,6 +168,15 @@
       <pubDate>Mon, 16 Nov 2026 19:56:05 GMT</pubDate>
       <source url="https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline">Dark Reading</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Fence-Agents Update for RHEL 9.4 and 9.6</title>
+      <link>https://secubuzz.com/news/red-hat-issues-fence-agents-update-for-rhel-9-4-an-511a4de5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-fence-agents-update-for-rhel-9-4-an-511a4de5</guid>
+      <description><![CDATA[Red Hat released a critical security update for the fence-agents component on its RHEL 9.4 and 9.6 operating systems, addressing multiple high-severity vulnerabilities. The vulnerabilities could allow attackers to gain privilege escalation or execute arbitrary code, potentially compromising system integrity. Red Hat recommends applying the patch immediately and verifying system integrity to mitigate potential exploitation.]]></description>
+      <pubDate>Mon, 16 Nov 2026 19:43:40 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100528">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Sleeper Agents Hide Payloads in Open-Weight AI Models</title>
@@ -410,51 +455,6 @@
       <description><![CDATA[Cisco Talos reports that ARTEX, PentAGI, and HexStrike AI platforms automate reconnaissance, vulnerability testing, and follow-on exploits. These tools combine security utilities with AI agents, enabling operators to run tasks concurrently and accelerate target selection; no public exploit yet. Security teams should monitor AI-driven activity, enforce strict access controls on testing tools, and update detection rules to flag automated scanning.]]></description>
       <pubDate>Mon, 16 Nov 2026 15:48:20 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-use-artex/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Fandango Checkout Skimmers Expose Card Details</title>
-      <link>https://secubuzz.com/news/fandango-checkout-skimmers-expose-card-details-2edf5009</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fandango-checkout-skimmers-expose-card-details-2edf5009</guid>
-      <description><![CDATA[Fandango’s checkout pages were compromised, allowing attackers to capture credit and debit card numbers and CVVs via injected skimmer scripts. The flaw stemmed from missing content-security-policy headers, enabling malicious code to harvest payment data during transaction processing. Fandango has urged customers to monitor accounts, deployed CSP headers, and is conducting a full code audit to prevent future exfiltration.]]></description>
-      <pubDate>Mon, 16 Nov 2026 15:44:21 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Google: Hackers Automate Attacks Using AI Agents</title>
-      <link>https://secubuzz.com/news/google-hackers-automate-attacks-using-ai-agents-5c88e7c2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-hackers-automate-attacks-using-ai-agents-5c88e7c2</guid>
-      <description><![CDATA[Hackers deploy AI agents that autonomously scan, breach, and move through networks, per Google and Mandiant. These agents use AI to reduce human oversight, enabling rapid lateral movement and exploitation of network vulnerabilities, raising threat level to critical. Security teams should monitor for automated reconnaissance, enforce strict access controls, and update detection rules to flag AI-driven activity.]]></description>
-      <pubDate>Mon, 16 Nov 2026 15:36:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fully-automated-ai-attacks/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Qualcomm Releases Advisory for Product Vulnerabilities</title>
-      <link>https://secubuzz.com/news/qualcomm-releases-advisory-for-product-vulnerabili-cbcbddc5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/qualcomm-releases-advisory-for-product-vulnerabili-cbcbddc5</guid>
-      <description><![CDATA[Qualcomm released advisory AV26-1164 on November 2, 2026, detailing multiple vulnerabilities affecting its product line. The flaws could allow attackers to gain unauthorized access or disrupt device operation, though no public exploits have been reported. Users and administrators should review the advisory link and apply available updates to mitigate the risks.]]></description>
-      <pubDate>Mon, 16 Nov 2026 15:31:52 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/qualcomm-security-advisory-av26-1164">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Project Zero Shortens Disclosure Window to 30 Days</title>
-      <link>https://secubuzz.com/news/google-project-zero-shortens-disclosure-window-to-960a01a4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-project-zero-shortens-disclosure-window-to-960a01a4</guid>
-      <description><![CDATA[Google Project Zero announced a policy change that shortens the public bug disclosure deadline to 30 days, replacing the prior 60- or 120-day windows. The shift aims to accelerate vendor patching and reduce the window attackers can exploit disclosed vulnerabilities while balancing transparency. Security researchers and vendors must adjust reporting and remediation schedules to comply with the new 30-day timeline.]]></description>
-      <pubDate>Mon, 16 Nov 2026 15:31:25 GMT</pubDate>
-      <source url="https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Net-SNMP SMUX Module Causes Denial of Service</title>
-      <link>https://secubuzz.com/news/net-snmp-smux-module-causes-denial-of-service-fc20a4af</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/net-snmp-smux-module-causes-denial-of-service-fc20a4af</guid>
-      <description><![CDATA[A flaw in Net-SNMP’s SMUX module allows unauthenticated remote connections to be mishandled, potentially causing the daemon to block indefinitely. The resulting denial of service could disrupt SNMP monitoring on affected Ubuntu LTS releases, though no active exploitation has been reported. Ubuntu has released USN-8997-2 to patch the issue; administrators should apply the update promptly to restore service availability.]]></description>
-      <pubDate>Mon, 16 Nov 2026 15:28:07 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8997-2">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
   </channel>

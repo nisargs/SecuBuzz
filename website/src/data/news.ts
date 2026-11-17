@@ -11,6 +11,80 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "40-struggle-to-trace-ai-agent-actions-6e6cfe47",
+    "title": "40% Struggle to Trace AI Agent Actions",
+    "summary": "A recent report shows 40% of organizations cannot fully retrace AI agents’ actions in development pipelines, even though 99% deploy them for autonomous code changes. AI-driven development raised cloud updates by 82%, increasing release pressure that often leaves security issues unresolved. Security teams should enforce audit trails, least-privilege policies, and AI-aware monitoring to mitigate undetected changes.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/palo-alto-networks-ai-cloud-security-risks-report/",
+    "publishedAt": "2026-11-17T05:30:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "40-struggle-to-trace-ai-agent-actions",
+      "article-6e6cfe47",
+      "6e6cfe47",
+      "40-struggle-to-trace-ai-agent-actions-676ef4"
+    ]
+  },
+  {
+    "slug": "n-able-releases-hotfix-for-17-n-central-flaws-82d90aa1",
+    "title": "N-Able Releases Hotfix for 17 N-Central Flaws",
+    "summary": "N-Able released Hotfix 3 for its N-Central RMM and UEM platform, fixing 17 critical flaws that attackers had used to deploy cryptocurrency miners. The bugs involved insufficient input validation and privilege escalation, enabling remote code execution and credential theft, and were exploited in the wild.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+    "publishedAt": "2026-11-17T05:00:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-releases-hotfix-for-17-n-central-flaws",
+      "article-82d90aa1",
+      "82d90aa1",
+      "n-able-releases-hotfix-for-17-n-central-flaws-737aa9"
+    ]
+  },
+  {
+    "slug": "peraton-rozmith-offer-cybersecurity-architect-engi-518881e2",
+    "title": "Peraton, Rozmith Offer Cybersecurity Architect, Engineer Roles",
+    "summary": "Peraton and Rozmith posted cybersecurity architect and engineer positions in the United States, targeting on-site and remote roles. Candidates will integrate security into DevSecOps, manage ATO packages, and develop security plans per DoD and DAF requirements. Applications should highlight experience in systems, networks, incident response, and risk assessment to meet the outlined responsibilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/cybersecurity-jobs-available-right-now-november-17-2026/",
+    "publishedAt": "2026-11-17T05:00:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "peraton-rozmith-offer-cybersecurity-architect-engi",
+      "article-518881e2",
+      "518881e2",
+      "peraton-rozmith-offer-cybersecurity-architect-engi-2da005",
+      "peraton-rozmith-offer-cybersecurity-architect-engineer-roles"
+    ]
+  },
+  {
+    "slug": "chase-software-bug-causes-nationwide-banking-outag-767a9992",
+    "title": "Chase Software Bug Causes Nationwide Banking Outages",
+    "summary": "A software bug in JPMorgan Chase’s systems triggered widespread banking outages on November 16, 2026, disrupting account access and payments. The defect prompted complaints at Bank of America, Wells Fargo, U.S. Bank, and Zelle, though separate outages were not confirmed. Chase attributed the disruption to a temporary software issue and is restoring full functionality, but no patch details were released.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/chase-outage-disrupts-bank/",
+    "publishedAt": "2026-11-17T03:05:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chase-software-bug-causes-nationwide-banking-outag",
+      "article-767a9992",
+      "767a9992",
+      "chase-software-bug-causes-nationwide-banking-outag-731297",
+      "chase-software-bug-causes-nationwide-banking-outages"
+    ]
+  },
+  {
     "slug": "optimizely-supply-chain-attack-injects-malware-int-c9c8a653",
     "title": "Optimizely Supply Chain Attack Injects Malware into Major Sites",
     "summary": "Optimizely supply chain attack injected malicious JavaScript into CNN, Fox News, BBC, Zoom, Salesforce, and GitLab, harvesting cryptocurrency and payment data. The code also exploits known iOS vulnerabilities, potentially compromising mobile devices that load the compromised pages. Security teams should verify Optimizely’s integrity, remove malicious scripts, and apply vendor-issued patches or revert to a trusted version.",
@@ -275,6 +349,30 @@ export const news: NewsBrief[] = [
       "article-8209d452",
       "8209d452",
       "ai-fuels-more-ransomware-attacks-payments-drop-6d07ef"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-fence-agents-update-for-rhel-9-4-an-511a4de5",
+    "title": "Red Hat Issues Fence-Agents Update for RHEL 9.4 and 9.6",
+    "summary": "Red Hat released a critical security update for the fence-agents component on its RHEL 9.4 and 9.6 operating systems, addressing multiple high-severity vulnerabilities. The vulnerabilities could allow attackers to gain privilege escalation or execute arbitrary code, potentially compromising system integrity. Red Hat recommends applying the patch immediately and verifying system integrity to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100528",
+    "publishedAt": "2026-11-16T19:43:40.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100527"
+      }
+    ],
+    "aliases": [
+      "red-hat-issues-fence-agents-update-for-rhel-9-4-an",
+      "article-511a4de5",
+      "511a4de5",
+      "red-hat-issues-fence-agents-update-for-rhel-9-4-an-2ee080",
+      "red-hat-issues-fence-agents-update-for-rhel-9-4-and-9-6"
     ]
   },
   {
@@ -9700,106 +9798,6 @@ export const news: NewsBrief[] = [
       "e5b20db7",
       "qilin-ransomware-admin-identified-as-36-year-old-r-445761",
       "qilin-ransomware-admin-identified-as-36-year-old-russian-hac"
-    ]
-  },
-  {
-    "slug": "chrome-157-firefox-160-patch-180-vulnerabilities-73c79817",
-    "title": "Chrome 157, Firefox 160 Patch 180+ Vulnerabilities",
-    "summary": "Google released Chrome 157, fixing 83 flaws, and Mozilla updated Firefox 160 to address 99 bugs, patching over 180 vulnerabilities. The patches cover memory corruption, privilege escalation, and input validation flaws, with no active exploitation reported. Users should install the latest browser versions promptly to mitigate potential exploitation in enterprise environments.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/chrome-firefox-updates-patch-180-vulnerabilities/",
-    "publishedAt": "2026-11-12T13:42:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-157-firefox-160-patch-180-vulnerabilities",
-      "article-73c79817",
-      "73c79817",
-      "chrome-157-firefox-160-patch-180-vulnerabilities-568b12"
-    ]
-  },
-  {
-    "slug": "lenovo-warns-of-high-severity-server-flaw-that-res-740b14a3",
-    "title": "Lenovo Warns of High-Severity Server Flaw That Restores Default Root Credentials After Reset",
-    "summary": "Lenovo has disclosed a high-severity security flaw in ThinkSystem V4 server management firmware that restores a default OpenBMC root password after a factory reset. Tracked as CVE-2026-81936, the issue could let attackers access enabled administrative interfaces and reach the controller’s underlying operating system, which is normally restricted.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/lenovo-server-flaw/",
-    "publishedAt": "2026-11-12T13:37:44.000Z",
-    "cves": [
-      "CVE-2026-81936"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "lenovo-warns-of-high-severity-server-flaw-that-res",
-      "article-740b14a3",
-      "740b14a3",
-      "lenovo-warns-of-high-severity-server-flaw-that-res-1fa676",
-      "lenovo-warns-of-high-severity-server-flaw-that-restores-defa"
-    ]
-  },
-  {
-    "slug": "endgame-takedown-recovers-6-million-stolen-credent-3e3943d7",
-    "title": "Endgame Takedown Recovers 6 Million Stolen Credentials",
-    "summary": "Police and Europol dismantled servers behind Gootloader, CastleRAT, and StealC malware, uncovering more than 6 million stolen credentials used by ransomware gangs. The credentials were harvested from infected computers and sold to attackers, enabling unauthorized network access and facilitating ransomware operations. Law enforcement should continue to disrupt credential-selling services and enforce stricter authentication controls to mitigate future ransomware infiltration.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/europol-operation-endgame-malware-takedown/",
-    "publishedAt": "2026-11-12T13:34:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "endgame-takedown-recovers-6-million-stolen-credent",
-      "article-3e3943d7",
-      "3e3943d7",
-      "endgame-takedown-recovers-6-million-stolen-credent-23c44f",
-      "endgame-takedown-recovers-6-million-stolen-credentials"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-important-cockpit-security-update-7d415ad2",
-    "title": "Red Hat Releases Important Cockpit Security Update",
-    "summary": "Red Hat issued a security update for cockpit on Enterprise Linux 9.8 Extended Update Support, addressing an important vulnerability. The update carries a CVSS base score indicating significant risk, and the referenced CVE(s) detail the flaw in cockpit’s authentication handling. Administrators should apply the update immediately to prevent potential privilege escalation or unauthorized access.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99601",
-    "publishedAt": "2026-11-12T13:31:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-important-cockpit-security-update",
-      "article-7d415ad2",
-      "7d415ad2",
-      "red-hat-releases-important-cockpit-security-update-37d66d"
-    ]
-  },
-  {
-    "slug": "romania-thwarts-russian-cyber-espionage-targeting-5c81f579",
-    "title": "Romania Thwarts Russian Cyber-Espionage Targeting Government Emails",
-    "summary": "Romanian intelligence thwarted a Russian state-linked cyber-espionage campaign targeting government email accounts exchanging sensitive communications with NATO and EU institutions. The operation aimed to intercept diplomatic correspondence but was halted before any data exfiltration occurred, preserving national security communications. Authorities maintain continuous monitoring of threat actors and enforce robust email authentication protocols to prevent future compromise.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/romania-russia-cyberattack-emails",
-    "publishedAt": "2026-11-12T13:30:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/romania-russia-cyberattack-espionage"
-      }
-    ],
-    "aliases": [
-      "romania-thwarts-russian-cyber-espionage-targeting",
-      "article-5c81f579",
-      "5c81f579",
-      "romania-thwarts-russian-cyber-espionage-targeting-29f0e5",
-      "romania-thwarts-russian-cyber-espionage-targeting-government"
     ]
   }
 ];

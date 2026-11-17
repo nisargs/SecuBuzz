@@ -1,5 +1,69 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/17/palo-alto-networks-ai-cloud-security-risks-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/palo-alto-networks-ai-cloud-security-risks-report/",
+    "title": "40% Struggle to Trace AI Agent Actions",
+    "headline": "40% Struggle to Trace AI Agent Actions",
+    "summary": "A recent report shows 40% of organizations cannot fully retrace AI agents’ actions in development pipelines, even though 99% deploy them for autonomous code changes. AI-driven development raised cloud updates by 82%, increasing release pressure that often leaves security issues unresolved. Security teams should enforce audit trails, least-privilege policies, and AI-aware monitoring to mitigate undetected changes.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-17T05:30:58.000Z",
+    "ingestedAt": "2026-11-17T05:43:15.927Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/17/palo-alto-networks-ai-cloud-security-risks-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+    "title": "N-Able Releases Hotfix for 17 N-Central Flaws",
+    "headline": "N-Able Releases Hotfix for 17 N-Central Flaws",
+    "summary": "N-Able released Hotfix 3 for its N-Central RMM and UEM platform, fixing 17 critical flaws that attackers had used to deploy cryptocurrency miners. The bugs involved insufficient input validation and privilege escalation, enabling remote code execution and credential theft, and were exploited in the wild.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-17T05:00:34.000Z",
+    "ingestedAt": "2026-11-17T05:43:15.926Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/17/cybersecurity-jobs-available-right-now-november-17-2026/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/cybersecurity-jobs-available-right-now-november-17-2026/",
+    "title": "Peraton, Rozmith Offer Cybersecurity Architect, Engineer Roles",
+    "headline": "Peraton, Rozmith Offer Cybersecurity Architect, Engineer Roles",
+    "summary": "Peraton and Rozmith posted cybersecurity architect and engineer positions in the United States, targeting on-site and remote roles. Candidates will integrate security into DevSecOps, manage ATO packages, and develop security plans per DoD and DAF requirements. Applications should highlight experience in systems, networks, incident response, and risk assessment to meet the outlined responsibilities.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-17T05:00:33.000Z",
+    "ingestedAt": "2026-11-17T05:43:25.289Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/17/cybersecurity-jobs-available-right-now-november-17-2026/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/chase-outage-disrupts-bank/",
+    "sourceUrl": "https://cybersecuritynews.com/chase-outage-disrupts-bank/",
+    "title": "Chase Software Bug Causes Nationwide Banking Outages",
+    "headline": "Chase Software Bug Causes Nationwide Banking Outages",
+    "summary": "A software bug in JPMorgan Chase’s systems triggered widespread banking outages on November 16, 2026, disrupting account access and payments. The defect prompted complaints at Bank of America, Wells Fargo, U.S. Bank, and Zelle, though separate outages were not confirmed. Chase attributed the disruption to a temporary software issue and is restoring full functionality, but no patch details were released.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-17T03:05:29.000Z",
+    "ingestedAt": "2026-11-17T05:43:25.289Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/chase-outage-disrupts-bank/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
     "title": "Optimizely Supply Chain Attack Injects Malware into Major Sites",
@@ -227,6 +291,27 @@
     "isFutureSkew": false,
     "url": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
     "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:100528",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100528",
+    "title": "Red Hat Issues Fence-Agents Update for RHEL 9.4 and 9.6",
+    "headline": "Red Hat Issues Fence-Agents Update for RHEL 9.4 and 9.6",
+    "summary": "Red Hat released a critical security update for the fence-agents component on its RHEL 9.4 and 9.6 operating systems, addressing multiple high-severity vulnerabilities. The vulnerabilities could allow attackers to gain privilege escalation or execute arbitrary code, potentially compromising system integrity. Red Hat recommends applying the patch immediately and verifying system integrity to mitigate potential exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-16T19:43:40.000Z",
+    "ingestedAt": "2026-11-17T05:43:15.926Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:100528",
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100527"
+      }
+    ]
   },
   {
     "id": "https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models",
@@ -8290,93 +8375,5 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "https://www.securityweek.com/chrome-firefox-updates-patch-180-vulnerabilities/",
-    "sourceUrl": "https://www.securityweek.com/chrome-firefox-updates-patch-180-vulnerabilities/",
-    "title": "Chrome 157, Firefox 160 Patch 180+ Vulnerabilities",
-    "headline": "Chrome 157, Firefox 160 Patch 180+ Vulnerabilities",
-    "summary": "Google released Chrome 157, fixing 83 flaws, and Mozilla updated Firefox 160 to address 99 bugs, patching over 180 vulnerabilities. The patches cover memory corruption, privilege escalation, and input validation flaws, with no active exploitation reported. Users should install the latest browser versions promptly to mitigate potential exploitation in enterprise environments.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-12T13:42:09.000Z",
-    "ingestedAt": "2026-11-12T14:43:26.032Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/chrome-firefox-updates-patch-180-vulnerabilities/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/lenovo-server-flaw/",
-    "sourceUrl": "https://cybersecuritynews.com/lenovo-server-flaw/",
-    "title": "Lenovo Warns of High-Severity Server Flaw That Restores Default Root Credentials After Reset",
-    "headline": "Lenovo Warns of High-Severity Server Flaw That Restores Default Root Credentials After Reset",
-    "summary": "Lenovo has disclosed a high-severity security flaw in ThinkSystem V4 server management firmware that restores a default OpenBMC root password after a factory reset. Tracked as CVE-2026-81936, the issue could let attackers access enabled administrative interfaces and reach the controller’s underlying operating system, which is normally restricted.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-12T13:37:44.000Z",
-    "ingestedAt": "2026-11-12T23:43:30.360Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-81936"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/12/europol-operation-endgame-malware-takedown/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/europol-operation-endgame-malware-takedown/",
-    "title": "Endgame Takedown Recovers 6 Million Stolen Credentials",
-    "headline": "Endgame Takedown Recovers 6 Million Stolen Credentials",
-    "summary": "Police and Europol dismantled servers behind Gootloader, CastleRAT, and StealC malware, uncovering more than 6 million stolen credentials used by ransomware gangs. The credentials were harvested from infected computers and sold to attackers, enabling unauthorized network access and facilitating ransomware operations. Law enforcement should continue to disrupt credential-selling services and enforce stricter authentication controls to mitigate future ransomware infiltration.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-12T13:34:14.000Z",
-    "ingestedAt": "2026-11-12T13:43:11.611Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/12/europol-operation-endgame-malware-takedown/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99601",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99601",
-    "title": "Red Hat Releases Important Cockpit Security Update",
-    "headline": "Red Hat Releases Important Cockpit Security Update",
-    "summary": "Red Hat issued a security update for cockpit on Enterprise Linux 9.8 Extended Update Support, addressing an important vulnerability. The update carries a CVSS base score indicating significant risk, and the referenced CVE(s) detail the flaw in cockpit’s authentication handling. Administrators should apply the update immediately to prevent potential privilege escalation or unauthorized access.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-12T13:31:46.000Z",
-    "ingestedAt": "2026-11-12T13:43:11.611Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99601",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/romania-russia-cyberattack-emails",
-    "sourceUrl": "https://therecord.media/romania-russia-cyberattack-emails",
-    "title": "Romania Thwarts Russian Cyber-Espionage Targeting Government Emails",
-    "headline": "Romania Thwarts Russian Cyber-Espionage Targeting Government Emails",
-    "summary": "Romanian intelligence thwarted a Russian state-linked cyber-espionage campaign targeting government email accounts exchanging sensitive communications with NATO and EU institutions. The operation aimed to intercept diplomatic correspondence but was halted before any data exfiltration occurred, preserving national security communications. Authorities maintain continuous monitoring of threat actors and enforce robust email authentication protocols to prevent future compromise.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-11-12T13:30:00.000Z",
-    "ingestedAt": "2026-11-12T13:43:11.611Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://therecord.media/romania-russia-cyberattack-emails",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/romania-russia-cyberattack-espionage"
-      }
-    ]
   }
 ]
