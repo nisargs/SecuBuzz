@@ -11,6 +11,101 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "optimizely-platform-distributes-hydra-like-malware-9772da7c",
+    "title": "Optimizely Platform Distributes Hydra-Like Malware to Visitors",
+    "summary": "A third-party Optimizely platform delivered hydra-like malware to visitors, affecting 178 organizations including major brands. Insecure content injection let attackers embed malicious scripts without authentication, enabling credential theft and lateral movement. Audit daily third-party integrations, enforce strict CSP, and apply the latest Optimizely patches to block unauthorized scripts for visitors.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
+    "publishedAt": "2026-11-17T22:34:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "optimizely-platform-distributes-hydra-like-malware",
+      "article-9772da7c",
+      "9772da7c",
+      "optimizely-platform-distributes-hydra-like-malware-69dcfb",
+      "optimizely-platform-distributes-hydra-like-malware-to-visito"
+    ]
+  },
+  {
+    "slug": "italy-extradites-lynx-ransomware-affiliate-to-us-4e26a369",
+    "title": "Italy Extradites Lynx Ransomware Affiliate to US",
+    "summary": "Italian authorities extradited a Lynx ransomware affiliate to the United States, facing a 27-year sentence. The extradition follows evidence of the affiliate’s role in deploying the Lynx ransomware, which encrypts corporate data and demands payment, impacting multiple sectors. Security teams should monitor for Lynx signatures, apply timely patches, and enforce robust backup strategies to mitigate future attacks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/ransomware-affiliate-suspect-extradited-to-us-faces-27",
+    "publishedAt": "2026-11-17T22:33:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "italy-extradites-lynx-ransomware-affiliate-to-us",
+      "article-4e26a369",
+      "4e26a369",
+      "italy-extradites-lynx-ransomware-affiliate-to-us-424676"
+    ]
+  },
+  {
+    "slug": "java4shell-cve-2026-114938-enables-remote-code-exe-4a42f239",
+    "title": "Java4Shell CVE-2026-114938 Enables Remote Code Execution",
+    "summary": "A critical 9.2 remote code execution flaw, CVE-2026-114938, targets OpenJDK and widely used Java applications. The vulnerability allows attackers to execute arbitrary code via malformed serialization data, with public PoC evidence and no authentication required, threatening enterprise services. Vendor releases patch in the latest OpenJDK update; organizations should upgrade immediately and disable remote debugging features as a temporary mitigation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk",
+    "publishedAt": "2026-11-17T22:29:57.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "java4shell-cve-2026-114938-enables-remote-code-exe",
+      "article-4a42f239",
+      "4a42f239",
+      "java4shell-cve-2026-114938-enables-remote-code-exe-42a402",
+      "java4shell-cve-2026-114938-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "microsoft-agent-framework-compromised-credential-s-d27899fb",
+    "title": "Microsoft agent-framework Compromised: Credential Stealer Targets Azure and CI Pipelines",
+    "summary": "On November 17, 2026 at 20:35 UTC, versions 1.26.1 & 1.26.2 of the Microsoft PyPI package agent-framework were published with an added credential stealer. The package gets almost 200k downloads a month. The malicious versions have since been quarantined.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi",
+    "publishedAt": "2026-11-17T22:03:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-agent-framework-compromised-credential-s",
+      "article-d27899fb",
+      "d27899fb",
+      "microsoft-agent-framework-compromised-credential-s-d609ff",
+      "microsoft-agent-framework-compromised-credential-stealer-tar"
+    ]
+  },
+  {
+    "slug": "docker-hub-images-leak-secrets-stolen-quickly-39a6fc6c",
+    "title": "Docker Hub Images Leak Secrets, Stolen Quickly",
+    "summary": "Credentials and access secrets exposed in public Docker Hub images are extracted and exploited by attackers within eight seconds of publication. The flaw stems from improper handling of sensitive data in container images, letting attackers harvest secrets and compromise services. Publishers should remove secrets from images, enforce secret scanning, and apply least-privilege policies; teams must monitor registries for exposed credentials.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
+    "publishedAt": "2026-11-17T21:27:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "docker-hub-images-leak-secrets-stolen-quickly",
+      "article-39a6fc6c",
+      "39a6fc6c",
+      "docker-hub-images-leak-secrets-stolen-quickly-47e483"
+    ]
+  },
+  {
     "slug": "ai-powered-phishing-kit-themailer-scales-targeting-9cf853ec",
     "title": "AI-Powered Phishing Kit 'TheMailer' Scales Targeting",
     "summary": "The phishing kit 'TheMailer' employs AI models to craft personalized lures, targeting tens of thousands of recipients. The kit leverages AI to evade spam filters and scale campaigns, increasing the likelihood of successful credential harvesting and phishing fraud. Security teams should block known 'TheMailer' domains, monitor for AI-generated phishing content, and apply email filtering rules that detect anomalous personalization patterns.",
@@ -26,6 +121,26 @@ export const news: NewsBrief[] = [
       "article-9cf853ec",
       "9cf853ec",
       "ai-powered-phishing-kit-themailer-scales-targeting-5423e5"
+    ]
+  },
+  {
+    "slug": "atlassian-confluence-cve-2026-90436-exploited-822affbc",
+    "title": "Atlassian Confluence CVE-2026-90436 Exploited",
+    "summary": "CVE-2026-90436, a critical flaw in Atlassian Confluence, has been exploited in enterprise environments. The vulnerability permits unauthenticated remote code execution via crafted HTTP requests, with public PoC evidence and a CVSS score of 9.1, enabling attackers to gain full system control. Apply the latest Confluence patch immediately, restrict network access to Confluence instances, and monitor logs for suspicious activity.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/rapid7-detected-exploitation-of-cve-2026-90436-against",
+    "publishedAt": "2026-11-17T20:57:27.000Z",
+    "cves": [
+      "CVE-2026-90436"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "atlassian-confluence-cve-2026-90436-exploited",
+      "article-822affbc",
+      "822affbc",
+      "atlassian-confluence-cve-2026-90436-exploited-1a3502"
     ]
   },
   {
@@ -122,6 +237,24 @@ export const news: NewsBrief[] = [
       "2c8ce2c4",
       "cve-2026-130622-and-cve-2026-130623-incorrect-auth-aebc79",
       "cve-2026-130622-and-cve-2026-130623-incorrect-authorization-"
+    ]
+  },
+  {
+    "slug": "chrome-158-released-for-android-f361bc03",
+    "title": "Chrome 158 Released for Android",
+    "summary": "Google released Chrome 158 (158.0.8127.42) for Android, adding stability and performance improvements. The update mirrors the security fixes present in the corresponding desktop releases for Windows, Mac, and Linux. Users can obtain the new version via Google Play within the next few days, and bug reports should be filed through the official channels.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0281314271.html",
+    "publishedAt": "2026-11-17T19:57:34.246Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-158-released-for-android",
+      "article-f361bc03",
+      "f361bc03",
+      "chrome-158-released-for-android-6104b3"
     ]
   },
   {
@@ -257,6 +390,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-frameworks-accelerate-multi-stage-attacks-33dcacaf",
+    "title": "AI Frameworks Accelerate Multi-Stage Attacks",
+    "summary": "Google reports that threat actors are deploying multi-agent AI frameworks to accelerate the velocity of multi-stage intrusions. These autonomous systems enable attackers to orchestrate complex attack chains without manual intervention, increasing operational efficiency. Security teams should monitor for anomalous AI-driven activity and employ behavior-based detection to mitigate evolving threat tactics.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/",
+    "publishedAt": "2026-11-17T18:16:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-frameworks-accelerate-multi-stage-attacks",
+      "article-33dcacaf",
+      "33dcacaf",
+      "ai-frameworks-accelerate-multi-stage-attacks-f3ebb0"
+    ]
+  },
+  {
     "slug": "microsoft-updates-perception-expands-security-stac-2ca31f19",
     "title": "Microsoft Updates Perception, Expands Security Stack",
     "summary": "Microsoft updated its Perception AI platform and added a new Microsoft Security cyber stack to protect agents and digital estates. The changes expand threat detection, integrate agent security controls, and deliver unified visibility across cloud and on-premises environments. Security teams should apply the latest updates, review configuration options, and monitor Perception dashboards for anomalous activity.",
@@ -328,6 +479,25 @@ export const news: NewsBrief[] = [
       "article-140d476d",
       "140d476d",
       "hertz-fined-1-5m-for-california-privacy-violation-191aa1"
+    ]
+  },
+  {
+    "slug": "mssp-boosts-soc-capacity-25-with-threat-intelligen-319e015d",
+    "title": "MSSP Boosts SOC Capacity 25% with Threat Intelligence",
+    "summary": "A US-based MSSP with one SOC manager and five analysts increased its SOC capacity by 25% by leveraging threat intelligence. The approach involved integrating actionable threat data into analyst workflows, reducing alert fatigue and enabling faster incident response. Other MSSPs can adopt similar intelligence-driven processes to scale operations without proportionally increasing headcount.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/mssp-threat-intelligence-soc-capacity/",
+    "publishedAt": "2026-11-17T17:07:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mssp-boosts-soc-capacity-25-with-threat-intelligen",
+      "article-319e015d",
+      "319e015d",
+      "mssp-boosts-soc-capacity-25-with-threat-intelligen-1b88b0",
+      "mssp-boosts-soc-capacity-25-with-threat-intelligence"
     ]
   },
   {
@@ -9731,174 +9901,6 @@ export const news: NewsBrief[] = [
       "5daaddf2",
       "apache-http-server-vulnerabilities-enable-potentia-7e85a4",
       "apache-http-server-vulnerabilities-enable-potential-code-exe"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99695-important-glib-networking-security-a80cb47d",
-    "title": "RHSA-2026:99695: Important: glib-networking security update",
-    "summary": "An update for glib-networking is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99695",
-    "publishedAt": "2026-11-12T21:24:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99695-important-glib-networking-security",
-      "article-a80cb47d",
-      "a80cb47d",
-      "rhsa-2026-99695-important-glib-networking-security-37d66c",
-      "rhsa-2026-99695-important-glib-networking-security-update"
-    ]
-  },
-  {
-    "slug": "defenders-prepare-strategies-against-artex-and-ant-6f314e46",
-    "title": "Defenders Prepare Strategies Against Artex and AntiFox Tools",
-    "summary": "Cybercriminals are increasingly leveraging agentic penetration-testing software, including Artex and AntiFox, to target enterprise environments. These autonomous testing frameworks allow malicious actors to automate compromise paths, significantly increasing the scale and speed of network attacks. Security experts recommend that enterprise defenders immediately establish tailored response plans and defensive mitigations to neutralize automated threat capabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/cyber-experts-fight-artex-antifox",
-    "publishedAt": "2026-11-12T21:18:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "defenders-prepare-strategies-against-artex-and-ant",
-      "article-6f314e46",
-      "6f314e46",
-      "defenders-prepare-strategies-against-artex-and-ant-312a19",
-      "defenders-prepare-strategies-against-artex-and-antifox-tools"
-    ]
-  },
-  {
-    "slug": "cve-2026-126793-privilege-escalation-in-aurora-pos-84682522",
-    "title": "CVE-2026-126793 - Privilege escalation in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper",
-    "summary": "An untrusted search path vulnerability in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper (CVE-2026-126793) allows an authenticated attacker to escalate privileges to other database users, including the rds_superuser role, by executing a crafted function during cluster connection. AWS has released patched versions.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-182-aws/",
-    "publishedAt": "2026-11-12T21:11:28.000Z",
-    "cves": [
-      "CVE-2026-126793"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-126793-privilege-escalation-in-aurora-pos",
-      "article-84682522",
-      "84682522",
-      "cve-2026-126793-privilege-escalation-in-aurora-pos-137402",
-      "cve-2026-126793-privilege-escalation-in-aurora-postgresql-di"
-    ]
-  },
-  {
-    "slug": "debian-lan-acl-flaw-allows-credential-changes-aefd640e",
-    "title": "Debian-LAN ACL flaw allows credential changes",
-    "summary": "A flaw in Debian-LAN’s Kerberos admin server ACLs permits authenticated users to alter other users’ credentials, enabling privilege escalation. The vulnerability stems from overly permissive ACL configuration, lacking proper access checks, and could be exploited by insiders with valid credentials. Red Hat recommends applying the latest Debian-LAN patch or tightening ACLs to restrict admin server access, mitigating potential credential tampering.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9068-1",
-    "publishedAt": "2026-11-12T21:02:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "debian-lan-acl-flaw-allows-credential-changes",
-      "article-aefd640e",
-      "aefd640e",
-      "debian-lan-acl-flaw-allows-credential-changes-7e86e3"
-    ]
-  },
-  {
-    "slug": "x11vnc-shared-memory-permission-flaw-525aa917",
-    "title": "x11vnc Shared Memory Permission Flaw",
-    "summary": "The x11vnc remote desktop server creates shared memory segments with insecure permissions, exposing a local privilege escalation vector. A local attacker could read sensitive data or alter screen contents, potentially compromising user sessions and data integrity. Apply the vendor patch or upgrade to the latest x11vnc release to enforce proper memory permissions.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9089-1",
-    "publishedAt": "2026-11-12T20:55:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "x11vnc-shared-memory-permission-flaw",
-      "article-525aa917",
-      "525aa917",
-      "x11vnc-shared-memory-permission-flaw-7e85f6"
-    ]
-  },
-  {
-    "slug": "microsoft-365-outage-disrupts-outlook-exchange-onl-2d15b165",
-    "title": "Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams",
-    "summary": "Microsoft says failed server health checks disrupted Outlook and other Microsoft 365 services. The company is still investigating the cause and has disclosed no evidence of a cyberattack.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/",
-    "publishedAt": "2026-11-12T20:55:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-365-outage-disrupts-outlook-exchange-onl",
-      "article-2d15b165",
-      "2d15b165",
-      "microsoft-365-outage-disrupts-outlook-exchange-onl-4ceea1",
-      "microsoft-365-outage-disrupts-outlook-exchange-online-and-te"
-    ]
-  },
-  {
-    "slug": "tigervnc-stores-tls-exceptions-as-trusted-cas-b7eedaef",
-    "title": "TigerVNC Stores TLS Exceptions as Trusted CAs",
-    "summary": "TigerVNC viewer treats TLS certificate exceptions as trusted CAs, allowing a remote attacker to impersonate any VNC server after a user accepts an exception. The flaw requires user interaction and does not grant code execution, yet it enables man-in-the-middle attacks on VNC sessions. Ubuntu advises upgrading to TigerVNC 1.2.0 or later and avoiding unverified certificate acceptance.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9088-1",
-    "publishedAt": "2026-11-12T20:55:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tigervnc-stores-tls-exceptions-as-trusted-cas",
-      "article-b7eedaef",
-      "b7eedaef",
-      "tigervnc-stores-tls-exceptions-as-trusted-cas-7e85fa"
-    ]
-  },
-  {
-    "slug": "still-in-the-meeting-bluenoroff-six-months-on-0fe49fbc",
-    "title": "Still in the Meeting: BlueNoroff Six Months On",
-    "summary": "In April, Arctic Wolf Labs documented how BlueNoroff used fake Zoom and Microsoft Teams meetings, ClickFix prompts, and AI-generated participants to compromise leaders in the Web3 and cryptocurrency sector. We expected the threat actor to adapt after we published that report.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/blog/still-in-the-meeting-bluenoroff-six-months-on/",
-    "publishedAt": "2026-11-12T20:55:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "still-in-the-meeting-bluenoroff-six-months-on",
-      "article-0fe49fbc",
-      "0fe49fbc",
-      "still-in-the-meeting-bluenoroff-six-months-on-6ac6bc"
-    ]
-  },
-  {
-    "slug": "usn-9087-1-signing-party-vulnerability-f443fe14",
-    "title": "USN-9087-1: signing-party vulnerability",
-    "summary": "It was discovered that the gpg-key2ps tool in signing-party did not properly sanitize user IDs before passing them to a shell. If a user were tricked into processing a specially crafted OpenPGP key, an attacker could possibly use this issue to execute arbitrary commands.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9087-1",
-    "publishedAt": "2026-11-12T20:55:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9087-1-signing-party-vulnerability",
-      "article-f443fe14",
-      "f443fe14",
-      "usn-9087-1-signing-party-vulnerability-7e85fe"
     ]
   }
 ];

@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 22:46:23 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 22:59:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Optimizely Platform Distributes Hydra-Like Malware to Visitors</title>
+      <link>https://secubuzz.com/news/optimizely-platform-distributes-hydra-like-malware-9772da7c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/optimizely-platform-distributes-hydra-like-malware-9772da7c</guid>
+      <description><![CDATA[A third-party Optimizely platform delivered hydra-like malware to visitors, affecting 178 organizations including major brands. Insecure content injection let attackers embed malicious scripts without authentication, enabling credential theft and lateral movement. Audit daily third-party integrations, enforce strict CSP, and apply the latest Optimizely patches to block unauthorized scripts for visitors.]]></description>
+      <pubDate>Tue, 17 Nov 2026 22:34:22 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Italy Extradites Lynx Ransomware Affiliate to US</title>
+      <link>https://secubuzz.com/news/italy-extradites-lynx-ransomware-affiliate-to-us-4e26a369</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/italy-extradites-lynx-ransomware-affiliate-to-us-4e26a369</guid>
+      <description><![CDATA[Italian authorities extradited a Lynx ransomware affiliate to the United States, facing a 27-year sentence. The extradition follows evidence of the affiliate’s role in deploying the Lynx ransomware, which encrypts corporate data and demands payment, impacting multiple sectors. Security teams should monitor for Lynx signatures, apply timely patches, and enforce robust backup strategies to mitigate future attacks.]]></description>
+      <pubDate>Tue, 17 Nov 2026 22:33:58 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/ransomware-affiliate-suspect-extradited-to-us-faces-27">CyberNews AI</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Java4Shell CVE-2026-114938 Enables Remote Code Execution</title>
+      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-enables-remote-code-exe-4a42f239</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-enables-remote-code-exe-4a42f239</guid>
+      <description><![CDATA[A critical 9.2 remote code execution flaw, CVE-2026-114938, targets OpenJDK and widely used Java applications. The vulnerability allows attackers to execute arbitrary code via malformed serialization data, with public PoC evidence and no authentication required, threatening enterprise services. Vendor releases patch in the latest OpenJDK update; organizations should upgrade immediately and disable remote debugging features as a temporary mitigation.]]></description>
+      <pubDate>Tue, 17 Nov 2026 22:29:57 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk">Wiz Research</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft agent-framework Compromised: Credential Stealer Targets Azure and CI Pipelines</title>
+      <link>https://secubuzz.com/news/microsoft-agent-framework-compromised-credential-s-d27899fb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-agent-framework-compromised-credential-s-d27899fb</guid>
+      <description><![CDATA[On November 17, 2026 at 20:35 UTC, versions 1.26.1 & 1.26.2 of the Microsoft PyPI package agent-framework were published with an added credential stealer. The package gets almost 200k downloads a month. The malicious versions have since been quarantined.]]></description>
+      <pubDate>Tue, 17 Nov 2026 22:03:37 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi">Wiz Research</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Docker Hub Images Leak Secrets, Stolen Quickly</title>
+      <link>https://secubuzz.com/news/docker-hub-images-leak-secrets-stolen-quickly-39a6fc6c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/docker-hub-images-leak-secrets-stolen-quickly-39a6fc6c</guid>
+      <description><![CDATA[Credentials and access secrets exposed in public Docker Hub images are extracted and exploited by attackers within eight seconds of publication. The flaw stems from improper handling of sensitive data in container images, letting attackers harvest secrets and compromise services. Publishers should remove secrets from images, enforce secret scanning, and apply least-privilege policies; teams must monitor registries for exposed credentials.]]></description>
+      <pubDate>Tue, 17 Nov 2026 21:27:17 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>AI-Powered Phishing Kit &apos;TheMailer&apos; Scales Targeting</title>
       <link>https://secubuzz.com/news/ai-powered-phishing-kit-themailer-scales-targeting-9cf853ec</link>
@@ -15,6 +60,15 @@
       <pubDate>Tue, 17 Nov 2026 20:58:13 GMT</pubDate>
       <source url="https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat">Dark Reading</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Atlassian Confluence CVE-2026-90436 Exploited</title>
+      <link>https://secubuzz.com/news/atlassian-confluence-cve-2026-90436-exploited-822affbc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-confluence-cve-2026-90436-exploited-822affbc</guid>
+      <description><![CDATA[CVE-2026-90436, a critical flaw in Atlassian Confluence, has been exploited in enterprise environments. The vulnerability permits unauthenticated remote code execution via crafted HTTP requests, with public PoC evidence and a CVSS score of 9.1, enabling attackers to gain full system control. Apply the latest Confluence patch immediately, restrict network access to Confluence instances, and monitor logs for suspicious activity.]]></description>
+      <pubDate>Tue, 17 Nov 2026 20:57:27 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/rapid7-detected-exploitation-of-cve-2026-90436-against">CyberNews AI</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>N-able Releases HF3 Patches for 17 Zero-Days</title>
@@ -60,6 +114,15 @@
       <pubDate>Tue, 17 Nov 2026 20:11:26 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-187-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Chrome 158 Released for Android</title>
+      <link>https://secubuzz.com/news/chrome-158-released-for-android-f361bc03</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-released-for-android-f361bc03</guid>
+      <description><![CDATA[Google released Chrome 158 (158.0.8127.42) for Android, adding stability and performance improvements. The update mirrors the security fixes present in the corresponding desktop releases for Windows, Mac, and Linux. Users can obtain the new version via Google Play within the next few days, and bug reports should be filed through the official channels.]]></description>
+      <pubDate>Tue, 17 Nov 2026 19:57:34 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0281314271.html">Google Chrome Releases</source>
+      <category>General</category>
     </item>
     <item>
       <title>Apple Reports Outages in iCloud Mail and Related Services</title>
@@ -125,6 +188,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>AI Frameworks Accelerate Multi-Stage Attacks</title>
+      <link>https://secubuzz.com/news/ai-frameworks-accelerate-multi-stage-attacks-33dcacaf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-frameworks-accelerate-multi-stage-attacks-33dcacaf</guid>
+      <description><![CDATA[Google reports that threat actors are deploying multi-agent AI frameworks to accelerate the velocity of multi-stage intrusions. These autonomous systems enable attackers to orchestrate complex attack chains without manual intervention, increasing operational efficiency. Security teams should monitor for anomalous AI-driven activity and employ behavior-based detection to mitigate evolving threat tactics.]]></description>
+      <pubDate>Tue, 17 Nov 2026 18:16:17 GMT</pubDate>
+      <source url="https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Microsoft Updates Perception, Expands Security Stack</title>
       <link>https://secubuzz.com/news/microsoft-updates-perception-expands-security-stac-2ca31f19</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-perception-expands-security-stac-2ca31f19</guid>
@@ -158,6 +230,15 @@
       <description><![CDATA[Hertz was fined $1.5 million by the California Privacy Protection Agency for violating state data privacy regulations, citing improper handling of consumer data. The action highlights gaps in Hertz’s data governance, notably insufficient consent management and audit controls across its fleet-management platform.]]></description>
       <pubDate>Tue, 17 Nov 2026 17:13:00 GMT</pubDate>
       <source url="https://therecord.media/california-fines-hertz-state-data-privacy-law">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>MSSP Boosts SOC Capacity 25% with Threat Intelligence</title>
+      <link>https://secubuzz.com/news/mssp-boosts-soc-capacity-25-with-threat-intelligen-319e015d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mssp-boosts-soc-capacity-25-with-threat-intelligen-319e015d</guid>
+      <description><![CDATA[A US-based MSSP with one SOC manager and five analysts increased its SOC capacity by 25% by leveraging threat intelligence. The approach involved integrating actionable threat data into analyst workflows, reducing alert fatigue and enabling faster incident response. Other MSSPs can adopt similar intelligence-driven processes to scale operations without proportionally increasing headcount.]]></description>
+      <pubDate>Tue, 17 Nov 2026 17:07:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/mssp-threat-intelligence-soc-capacity/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -374,87 +455,6 @@
       <description><![CDATA[Detectify has released Agentic Tooling, enabling organizations to run AI agents in their own environments to probe suspected vulnerabilities in live applications. The tool includes a Security Ledger that records objective evidence, allowing teams to confirm exploitability rather than rely on probabilistic assessments. This development addresses a DevSecOps gap, providing a systematic approach to validate and prioritize vulnerabilities before deployment.]]></description>
       <pubDate>Tue, 17 Nov 2026 14:13:55 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/17/detectify-agentic-tooling/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Teen Hacker Pleads Guilty to GTA VI Footage Leak</title>
-      <link>https://secubuzz.com/news/teen-hacker-pleads-guilty-to-gta-vi-footage-leak-a11e90b1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/teen-hacker-pleads-guilty-to-gta-vi-footage-leak-a11e90b1</guid>
-      <description><![CDATA[Artion Kurtaj, 21, admitted to a 2022 series of leaks that included unpublished Grand Theft Auto VI footage. The unauthorized release exposed proprietary game content before its scheduled launch, potentially impacting Rockstar Games’ intellectual property. Kurtaj pleaded guilty, facing legal consequences, and the incident highlights the need for stricter content protection measures.]]></description>
-      <pubDate>Tue, 17 Nov 2026 14:09:00 GMT</pubDate>
-      <source url="https://therecord.media/autistic-teen-hacker-guilty-plea-britain-gta6-leak">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AppGate Optimizer Automates Least-Privilege Access Reviews</title>
-      <link>https://secubuzz.com/news/appgate-optimizer-automates-least-privilege-access-edd87ee6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/appgate-optimizer-automates-least-privilege-access-edd87ee6</guid>
-      <description><![CDATA[AppGate announced general availability of AppGate Optimizer, a tool that analyzes how users access resources and recommends precise entitlement changes for administrator review. The product aims to reduce exposure from over-provisioned access, cut manual access-review time, and demonstrate least-privilege compliance to auditors. Administrators can apply recommended changes without disrupting user workflows, according to the vendor.]]></description>
-      <pubDate>Tue, 17 Nov 2026 14:03:16 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/17/appgate-optimizer/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>COLD RELIC Exploits US Organization via Impersonation</title>
-      <link>https://secubuzz.com/news/cold-relic-exploits-us-organization-via-impersonat-656dba45</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cold-relic-exploits-us-organization-via-impersonat-656dba45</guid>
-      <description><![CDATA[Mandiant traced a Russian state-sponsored group, COLD RELIC, to a 2026 compromise of a US-based organization through cloud impersonation. The attackers leveraged a prior late-2025 breach to weaponize stolen staff directory data and identities, enabling ongoing third-party espionage and data exfiltration. Security teams should enforce cloud access controls, monitor for credential reuse, and conduct response drills against state-sponsored intrusion tactics.]]></description>
-      <pubDate>Tue, 17 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://cloud.google.com/blog/topics/threat-intelligence/cold-relic-a-case-study-in-impersonation-and-compromise/">Google Threat Intelligence</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Hackers Use Fake Shipment ZIP Files and DLL Side-Loading to Deploy PureLogs and PureRAT Malware</title>
-      <link>https://secubuzz.com/news/hackers-use-fake-shipment-zip-files-and-dll-side-l-d100b481</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-fake-shipment-zip-files-and-dll-side-l-d100b481</guid>
-      <description><![CDATA[Hackers are using a shipment-themed ZIP archive to launch a Windows malware chain that combines a legitimate signed application, DLL side-loading, and hidden Python code. The attack disguises its components as shipping material, images, documents, and a browser updater before running a payload linked to PureLogs and PureRAT infrastructure.]]></description>
-      <pubDate>Tue, 17 Nov 2026 13:58:04 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fake-shipment-zip-files-and-dll-side-loading/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>EU Accuses Temu of Weak Moderation</title>
-      <link>https://secubuzz.com/news/eu-accuses-temu-of-weak-moderation-f6497b89</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eu-accuses-temu-of-weak-moderation-f6497b89</guid>
-      <description><![CDATA[The European Commission found Temu in breach of the Digital Services Act for weak product checks and poor content moderation. Announced on November 17, 2026, the findings question whether the marketplace stops illegal products from reaching European buyers. The case centers on Article 35 of the DSA and could trigger further regulatory action if Temu does not strengthen moderation.]]></description>
-      <pubDate>Tue, 17 Nov 2026 13:56:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/temu-breaching-digital-services-act/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ConnectSecure Launches Agentic AI Pen Testing</title>
-      <link>https://secubuzz.com/news/connectsecure-launches-agentic-ai-pen-testing-02aaed91</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/connectsecure-launches-agentic-ai-pen-testing-02aaed91</guid>
-      <description><![CDATA[ConnectSecure has introduced Agentic AI Penetration Testing, a tool that assists MSPs and enterprise teams in assessing which vulnerabilities are likely exploitable. The solution provides deeper insight into attack paths and prioritizes remediation efforts, reducing the time required for expert analysis. Adoption of this AI-driven approach can accelerate vulnerability triage and improve overall security posture.]]></description>
-      <pubDate>Tue, 17 Nov 2026 13:49:13 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/17/connectsecure-agentic-ai-penetration-testing/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Windows 11 Telemetry Tracks AI Coding Agents</title>
-      <link>https://secubuzz.com/news/windows-11-telemetry-tracks-ai-coding-agents-20ea69ce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-11-telemetry-tracks-ai-coding-agents-20ea69ce</guid>
-      <description><![CDATA[Windows 11 records which AI coding agents and developer tools run, sending that data to Microsoft when optional diagnostics are enabled. Researcher Xusheng Li first reported the feature on November 16, 2026, and published a technical write-up. The disclosure raises a privacy issue but no vulnerability is present; disabling optional diagnostics stops telemetry.]]></description>
-      <pubDate>Tue, 17 Nov 2026 13:43:04 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/windows-11-ai-agent-tracking/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Kazakh Ransomware Affiliate Extradited Over $500M Demands</title>
-      <link>https://secubuzz.com/news/kazakh-ransomware-affiliate-extradited-over-500m-d-5e12c612</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kazakh-ransomware-affiliate-extradited-over-500m-d-5e12c612</guid>
-      <description><![CDATA[A 43-year-old national linked to the 8-Digits Team was extradited from Italy to the US for ransomware extortion against hospitals and schools. The affiliate allegedly stole data and threatened publication, demanding over $500 million in ransom from the INC and Lynx operations.]]></description>
-      <pubDate>Tue, 17 Nov 2026 13:42:04 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/17/8-digits-team-ransomware-suspect-extradited-us-italy/">Help Net Security</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Airlock Digital Releases Agentic Control for Endpoint AI</title>
-      <link>https://secubuzz.com/news/airlock-digital-releases-agentic-control-for-endpo-61bdad0d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/airlock-digital-releases-agentic-control-for-endpo-61bdad0d</guid>
-      <description><![CDATA[Airlock Digital released Agentic Control in v7.1, adding runtime evaluation of AI agent requests to endpoint security. The feature extends Deny-by-Default Application Control by intercepting unauthorized agent behavior before execution, mitigating misuse of AI workloads. Customers can deploy the update immediately, integrating Agentic Control into existing endpoint policies and monitoring AI activity logs for validation.]]></description>
-      <pubDate>Tue, 17 Nov 2026 13:39:57 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/17/airlock-digital-agentic-control/">Help Net Security</source>
       <category>General</category>
     </item>
   </channel>
