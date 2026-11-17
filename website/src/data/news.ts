@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "flipper-devices-unveils-flipper-one-linux-multi-to-1580310a",
+    "title": "Flipper Devices Unveils Flipper One Linux Multi-Tool",
+    "summary": "Flipper Devices announced the Flipper One, a $399 Linux-based computer and networking multi-tool, as part of a crowdfunding campaign. The device builds on the Flipper Zero platform, offering expanded hardware interfaces and a full Linux OS for penetration testing and network analysis. Users can support the project through the campaign, and the company will provide firmware updates and documentation post-release.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
+    "publishedAt": "2026-11-17T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "flipper-devices-unveils-flipper-one-linux-multi-to",
+      "article-1580310a",
+      "1580310a",
+      "flipper-devices-unveils-flipper-one-linux-multi-to-b7937d",
+      "flipper-devices-unveils-flipper-one-linux-multi-tool"
+    ]
+  },
+  {
     "slug": "atlassian-security-advisory-av26-1166-07e2f46c",
     "title": "Atlassian security advisory (AV26-1166)",
     "summary": "Serial number: AV26-1166 Date: November 17, 2026 As of November 17, 2026, Atlassian is affected by a vulnerability in the following products: Jira Service Management Data Center Version 10.3.27 and prior Version 11.3.13 and prior Jira Service Management Server Versions 5.12.16 to 5.12.42 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.",
@@ -81,6 +100,25 @@ export const news: NewsBrief[] = [
       "article-129f5264",
       "129f5264",
       "linx-security-governs-ai-agent-actions-144797"
+    ]
+  },
+  {
+    "slug": "fandango-alerts-buyers-to-possible-card-data-expos-e66f2122",
+    "title": "Fandango Alerts Buyers to Possible Card Data Exposure",
+    "summary": "Fandango disclosed that card numbers, CVVs, expiration dates, and email addresses may have been exposed during checkout over four days in October. The leak likely resulted from insecure handling of payment data, creating a vulnerability that could enable credential theft; no exploitation reported. Fandango warned affected customers to monitor accounts and change passwords while investigating the incident with payment processors.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/fandango-warns-ticket-buyers-of-payment-card-data-exposure/",
+    "publishedAt": "2026-11-17T14:14:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fandango-alerts-buyers-to-possible-card-data-expos",
+      "article-e66f2122",
+      "e66f2122",
+      "fandango-alerts-buyers-to-possible-card-data-expos-787d6e",
+      "fandango-alerts-buyers-to-possible-card-data-exposure"
     ]
   },
   {
@@ -214,6 +252,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "access-dental-breach-exposes-340-000-personal-reco-01037948",
+    "title": "Access Dental Breach Exposes 340,000 Personal Records",
+    "summary": "Hackers breached Access Dental’s network and exfiltrated personal, health, and insurance data from over 340,000 records. The breach leveraged an unspecified network intrusion that bypassed existing perimeter defenses, allowing unauthorized access to sensitive patient information. Access Dental has notified affected individuals and is working with law enforcement to investigate and remediate the compromise.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/",
+    "publishedAt": "2026-11-17T12:59:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "access-dental-breach-exposes-340-000-personal-reco",
+      "article-01037948",
+      "01037948",
+      "access-dental-breach-exposes-340-000-personal-reco-2c2575",
+      "access-dental-breach-exposes-340-000-personal-records"
+    ]
+  },
+  {
     "slug": "corma-raises-125m-for-defensive-cybersecurity-mode-b15c34cf",
     "title": "Corma Raises $125M for Defensive Cybersecurity Models",
     "summary": "Corma received $125 million in funding to train foundation models for defensive cybersecurity. The round was led by NEA with support from existing investors and brings the company's valuation to $1 billion. The investment targets defensive cybersecurity model development, though the report does not detail specific products, deployment timelines, or technical capabilities.",
@@ -329,6 +386,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "siemens-mendix-studio-pro-vulnerabilities-enable-r-542fd911",
+    "title": "Siemens Mendix Studio Pro Vulnerabilities Enable Remote Interaction",
+    "summary": "Multiple vulnerabilities in Siemens Mendix Studio Pro’s MCP Server could allow an attacker with network access to remotely interact with the server or trick a user’s browser into unauthorized requests. Rated CVSS 8.8, these flaws could enable unauthorized data access, tool execution, or system compromise. Siemens released updated versions; administrators should upgrade immediately to mitigate the vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05",
+    "publishedAt": "2026-11-17T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-mendix-studio-pro-vulnerabilities-enable-r",
+      "article-542fd911",
+      "542fd911",
+      "siemens-mendix-studio-pro-vulnerabilities-enable-r-41aee7",
+      "siemens-mendix-studio-pro-vulnerabilities-enable-remote-inte"
+    ]
+  },
+  {
     "slug": "meta-fined-805m-for-facebook-photo-access-894bb5cd",
     "title": "Meta Fined €805M for Facebook Photo Access",
     "summary": "Italy imposed an €805 million fine on Meta for unauthorized access to users' Facebook photo galleries, citing persistent privacy violations. The enforcement action follows investigations that uncovered Meta's collection of photo metadata without explicit user consent. Meta has acknowledged the findings and is reportedly reviewing its data-handling practices to comply with EU privacy regulations.",
@@ -344,6 +420,25 @@ export const news: NewsBrief[] = [
       "article-894bb5cd",
       "894bb5cd",
       "meta-fined-805m-for-facebook-photo-access-4cc08a"
+    ]
+  },
+  {
+    "slug": "optimjack-targets-cnn-zoom-salesforce-with-malicio-edd8a175",
+    "title": "OPTIMJACK Targets CNN, Zoom, Salesforce with Malicious JS",
+    "summary": "The OPTIMJACK JavaScript campaign injected malicious code into third-party scripts on CNN, Zoom, and Salesforce, enabling attackers to replace cryptocurrency wallet addresses and harvest payment details from visitors. The attack exploits browsers’ trust in loaded scripts, bypassing content-security policies and executing payloads during browsing. Defenders should block malicious script domains, enforce strict content-security policies, and monitor for wallet-address replacement activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/cnn-zoom-and-salesforce/",
+    "publishedAt": "2026-11-17T11:29:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "optimjack-targets-cnn-zoom-salesforce-with-malicio",
+      "article-edd8a175",
+      "edd8a175",
+      "optimjack-targets-cnn-zoom-salesforce-with-malicio-182b00",
+      "optimjack-targets-cnn-zoom-salesforce-with-malicious-js"
     ]
   },
   {
@@ -1101,6 +1196,44 @@ export const news: NewsBrief[] = [
       "a1d6cff4",
       "deluge-web-ui-vulnerabilities-fixed-in-ubuntu-16-0-7fbc70",
       "deluge-web-ui-vulnerabilities-fixed-in-ubuntu-16-04-update"
+    ]
+  },
+  {
+    "slug": "zutils-zcat-buffer-overflow-vulnerability-exploita-86d49162",
+    "title": "zutils zcat Buffer Overflow Vulnerability Exploitable via -v Option",
+    "summary": "Ubuntu’s zutils zcat utility mishandles the -v option, causing a buffer overflow when processing specially crafted compressed files. Exploitation could lead to denial of service or arbitrary code execution, depending on the attacker’s objectives. A patched version is available; users should upgrade zutils to the latest release to eliminate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9130-1",
+    "publishedAt": "2026-11-17T00:49:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zutils-zcat-buffer-overflow-vulnerability-exploita",
+      "article-86d49162",
+      "86d49162",
+      "zutils-zcat-buffer-overflow-vulnerability-exploita-7e7a47",
+      "zutils-zcat-buffer-overflow-vulnerability-exploitable-via-v-"
+    ]
+  },
+  {
+    "slug": "zbar-qr-code-buffer-overflow-enables-arbitrary-cod-1c23ec18",
+    "title": "ZBar QR Code Buffer Overflow Enables Arbitrary Code Execution",
+    "summary": "ZBar’s QR code parser fails to validate certain code patterns, triggering a heap-based buffer overflow when processing crafted QR codes. An attacker could exploit this flaw to read sensitive data or execute arbitrary code on the scanning system. Users should update to the latest ZBar release or apply the vendor’s patch to mitigate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9129-1",
+    "publishedAt": "2026-11-17T00:49:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zbar-qr-code-buffer-overflow-enables-arbitrary-cod",
+      "article-1c23ec18",
+      "1c23ec18",
+      "zbar-qr-code-buffer-overflow-enables-arbitrary-cod-7e7a99",
+      "zbar-qr-code-buffer-overflow-enables-arbitrary-code-executio"
     ]
   },
   {
@@ -9658,137 +9791,6 @@ export const news: NewsBrief[] = [
       "article-2a11ae0d",
       "2a11ae0d",
       "homeview-releases-version-27-2-with-bug-fixes-6610eb"
-    ]
-  },
-  {
-    "slug": "google-chrome-releases-ios-stable-158-update-b4ec3c00",
-    "title": "Google Chrome Releases iOS Stable 158 Update",
-    "summary": "Google Chrome releases Stable 158 (158.0.8127.35) for iOS, adding stability and performance improvements. The update will be available on the App Store within hours, with changes documented in the Git log. Users encountering new issues should file bugs through the Chrome Release Team channels to aid future patches and improve stability.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update_02111478502.html",
-    "publishedAt": "2026-11-12T17:58:34.407Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-chrome-releases-ios-stable-158-update",
-      "article-b4ec3c00",
-      "b4ec3c00",
-      "google-chrome-releases-ios-stable-158-update-1aca02"
-    ]
-  },
-  {
-    "slug": "google-releases-chrome-beta-159-for-android-device-cbba6905",
-    "title": "Google Releases Chrome Beta 159 for Android Devices",
-    "summary": "Google released Chrome Beta version 159.0.8154.4 for Android mobile devices, making it available on Google Play. The update incorporates platform updates and developer features with details documented inside the underlying Chromium Git log repository. Google encourages developers and users to test the beta build and report any newly discovered software issues via bug tickets.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-android-update_01250189783.html",
-    "publishedAt": "2026-11-12T17:58:32.687Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-releases-chrome-beta-159-for-android-device",
-      "article-cbba6905",
-      "cbba6905",
-      "google-releases-chrome-beta-159-for-android-device-4ea3ac",
-      "google-releases-chrome-beta-159-for-android-devices"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99697-important-glib-networking-security-8d1d9275",
-    "title": "RHSA-2026:99697: Important: glib-networking security update",
-    "summary": "An update for glib-networking is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99697",
-    "publishedAt": "2026-11-12T17:58:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99697-important-glib-networking-security",
-      "article-8d1d9275",
-      "8d1d9275",
-      "rhsa-2026-99697-important-glib-networking-security-37d66c",
-      "rhsa-2026-99697-important-glib-networking-security-update"
-    ]
-  },
-  {
-    "slug": "new-signdrop-zero-day-exploit-turns-windows-clfs-s-ac2d5382",
-    "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
-    "summary": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
-    "publishedAt": "2026-11-12T17:50:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "new-signdrop-zero-day-exploit-turns-windows-clfs-s",
-      "article-ac2d5382",
-      "ac2d5382",
-      "new-signdrop-zero-day-exploit-turns-windows-clfs-s-64d87b",
-      "new-signdrop-zero-day-exploit-turns-windows-clfs-security-fe"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99725-important-compat-openssl10-securit-83bfad69",
-    "title": "RHSA-2026:99725: Important: compat-openssl10 security update",
-    "summary": "An update for compat-openssl10 is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99725",
-    "publishedAt": "2026-11-12T17:47:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99725-important-compat-openssl10-securit",
-      "article-83bfad69",
-      "83bfad69",
-      "rhsa-2026-99725-important-compat-openssl10-securit-37d669",
-      "rhsa-2026-99725-important-compat-openssl10-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-kpatch-packages-for-enterprise-lin-dc8e60c0",
-    "title": "Red Hat Updates kpatch Packages for Enterprise Linux 10",
-    "summary": "Red Hat released important security updates for kpatch packages affecting Red Hat Enterprise Linux 10. The vendor rated the security impact of the underlying components as Important based on Common Vulnerability Scoring System evaluations. Enterprise system administrators should apply the updated kpatch packages across affected Red Hat Enterprise Linux 10 deployments to mitigate operational risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99722",
-    "publishedAt": "2026-11-12T17:46:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-kpatch-packages-for-enterprise-lin",
-      "article-dc8e60c0",
-      "dc8e60c0",
-      "red-hat-updates-kpatch-packages-for-enterprise-lin-37d669",
-      "red-hat-updates-kpatch-packages-for-enterprise-linux-10"
-    ]
-  },
-  {
-    "slug": "google-releases-chrome-beta-update-for-ios-e86cb456",
-    "title": "Google Releases Chrome Beta Update for iOS",
-    "summary": "Google announced the release of Chrome Beta version 159.0.8154.5 for iOS operating systems across Apple devices. The upcoming update will be made available on the Apple App Store and includes developer changes referenced in the Git log. The Chrome Release Team advises users to submit bug reports if any new software issues are identified in the updated build.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-ios-update_01890458731.html",
-    "publishedAt": "2026-11-12T17:43:50.798Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-releases-chrome-beta-update-for-ios",
-      "article-e86cb456",
-      "e86cb456",
-      "google-releases-chrome-beta-update-for-ios-2a703f"
     ]
   }
 ];

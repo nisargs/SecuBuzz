@@ -2,6 +2,33 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-119351",
+    "cveID": "CVE-2026-119351",
+    "slug": "cve-2026-119351",
+    "vendor": "npm",
+    "product": "next",
+    "name": "Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata",
+    "dateAdded": "2026-11-17",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-362",
+    "ransomware": false,
+    "description": "With Cache Components enabled, an outer 'use cache' function can be keyed incorrectly even when its inner 'use cache' call generates a fresh entry.",
+    "requiredAction": "Upgrade next to version 16.4.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vc7v-qv4w-wrv8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119351"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-129237",
     "cveID": "CVE-2026-129237",
     "slug": "cve-2026-129237",
@@ -1370,33 +1397,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126300"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126303",
-    "cveID": "CVE-2026-126303",
-    "slug": "cve-2026-126303",
-    "vendor": "Pip",
-    "product": "nltk",
-    "name": "NLTK: Unbounded CPU consumption in SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "nltk.parse.recursivedescent.SteppingRecursiveDescentParser.parse() performs an unbounded top-down search over ambiguous or self-embedding context-free grammars with no wall-clock or step limit. An actor who can influence the grammar and supply a short input to a caller that uses this parser can force a single parse() call to pin a CPU core indefinitely, producing a denial of service.",
-    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8fx7-8jr8-84rv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126303"
       }
     ],
     "source": "GITHUB"

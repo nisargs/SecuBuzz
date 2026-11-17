@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 15:47:58 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 16:30:39 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Flipper Devices Unveils Flipper One Linux Multi-Tool</title>
+      <link>https://secubuzz.com/news/flipper-devices-unveils-flipper-one-linux-multi-to-1580310a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/flipper-devices-unveils-flipper-one-linux-multi-to-1580310a</guid>
+      <description><![CDATA[Flipper Devices announced the Flipper One, a $399 Linux-based computer and networking multi-tool, as part of a crowdfunding campaign. The device builds on the Flipper Zero platform, offering expanded hardware interfaces and a full Linux OS for penetration testing and network analysis. Users can support the project through the campaign, and the company will provide firmware updates and documentation post-release.]]></description>
+      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/">BleepingComputer</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Atlassian security advisory (AV26-1166)</title>
       <link>https://secubuzz.com/news/atlassian-security-advisory-av26-1166-07e2f46c</link>
@@ -42,6 +51,15 @@
       <pubDate>Tue, 17 Nov 2026 14:23:26 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/17/linx-security-agent-identity-control/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Fandango Alerts Buyers to Possible Card Data Exposure</title>
+      <link>https://secubuzz.com/news/fandango-alerts-buyers-to-possible-card-data-expos-e66f2122</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fandango-alerts-buyers-to-possible-card-data-expos-e66f2122</guid>
+      <description><![CDATA[Fandango disclosed that card numbers, CVVs, expiration dates, and email addresses may have been exposed during checkout over four days in October. The leak likely resulted from insecure handling of payment data, creating a vulnerability that could enable credential theft; no exploitation reported. Fandango warned affected customers to monitor accounts and change passwords while investigating the incident with payment processors.]]></description>
+      <pubDate>Tue, 17 Nov 2026 14:14:24 GMT</pubDate>
+      <source url="https://www.securityweek.com/fandango-warns-ticket-buyers-of-payment-card-data-exposure/">SecurityWeek</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Detectify Introduces Agentic Tooling for Live Verification</title>
@@ -107,6 +125,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Access Dental Breach Exposes 340,000 Personal Records</title>
+      <link>https://secubuzz.com/news/access-dental-breach-exposes-340-000-personal-reco-01037948</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/access-dental-breach-exposes-340-000-personal-reco-01037948</guid>
+      <description><![CDATA[Hackers breached Access Dental’s network and exfiltrated personal, health, and insurance data from over 340,000 records. The breach leveraged an unspecified network intrusion that bypassed existing perimeter defenses, allowing unauthorized access to sensitive patient information. Access Dental has notified affected individuals and is working with law enforcement to investigate and remediate the compromise.]]></description>
+      <pubDate>Tue, 17 Nov 2026 12:59:04 GMT</pubDate>
+      <source url="https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Corma Raises $125M for Defensive Cybersecurity Models</title>
       <link>https://secubuzz.com/news/corma-raises-125m-for-defensive-cybersecurity-mode-b15c34cf</link>
       <guid isPermaLink="true">https://secubuzz.com/news/corma-raises-125m-for-defensive-cybersecurity-mode-b15c34cf</guid>
@@ -161,6 +188,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Siemens Mendix Studio Pro Vulnerabilities Enable Remote Interaction</title>
+      <link>https://secubuzz.com/news/siemens-mendix-studio-pro-vulnerabilities-enable-r-542fd911</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-mendix-studio-pro-vulnerabilities-enable-r-542fd911</guid>
+      <description><![CDATA[Multiple vulnerabilities in Siemens Mendix Studio Pro’s MCP Server could allow an attacker with network access to remotely interact with the server or trick a user’s browser into unauthorized requests. Rated CVSS 8.8, these flaws could enable unauthorized data access, tool execution, or system compromise. Siemens released updated versions; administrators should upgrade immediately to mitigate the vulnerabilities.]]></description>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Meta Fined €805M for Facebook Photo Access</title>
       <link>https://secubuzz.com/news/meta-fined-805m-for-facebook-photo-access-894bb5cd</link>
       <guid isPermaLink="true">https://secubuzz.com/news/meta-fined-805m-for-facebook-photo-access-894bb5cd</guid>
@@ -168,6 +204,15 @@
       <pubDate>Tue, 17 Nov 2026 11:34:09 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/mobile/2026/11/facebook-may-have-access-to-your-entire-photo-gallery">Malwarebytes Labs</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>OPTIMJACK Targets CNN, Zoom, Salesforce with Malicious JS</title>
+      <link>https://secubuzz.com/news/optimjack-targets-cnn-zoom-salesforce-with-malicio-edd8a175</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/optimjack-targets-cnn-zoom-salesforce-with-malicio-edd8a175</guid>
+      <description><![CDATA[The OPTIMJACK JavaScript campaign injected malicious code into third-party scripts on CNN, Zoom, and Salesforce, enabling attackers to replace cryptocurrency wallet addresses and harvest payment details from visitors. The attack exploits browsers’ trust in loaded scripts, bypassing content-security policies and executing payloads during browsing. Defenders should block malicious script domains, enforce strict content-security policies, and monitor for wallet-address replacement activity.]]></description>
+      <pubDate>Tue, 17 Nov 2026 11:29:42 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/cnn-zoom-and-salesforce/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>AI Fuels Holiday Shopping Scams</title>
@@ -411,51 +456,6 @@
       <pubDate>Tue, 17 Nov 2026 06:29:27 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html">The Hacker News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>AI Security Dominates Cyberseed Funding</title>
-      <link>https://secubuzz.com/news/ai-security-dominates-cyberseed-funding-837d8459</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-security-dominates-cyberseed-funding-837d8459</guid>
-      <description><![CDATA[In Q3 2026, AI-focused cybersecurity seed deals accounted for over one-third of total cybersecurity funding, despite a slight dip from the previous quarter. DataTribe’s PitchBook analysis shows capital is concentrating in fewer, larger rounds, raising the threshold for post-seed financing. The U.S. venture market remains robust, delivering one of its best quarters since 2021, even as cybersecurity seed activity slows.]]></description>
-      <pubDate>Tue, 17 Nov 2026 06:19:27 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/17/cybersecurity-seed-funding-deals/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Unifies Patch Management for Unbootable PCs</title>
-      <link>https://secubuzz.com/news/microsoft-unifies-patch-management-for-unbootable-e74d7bdd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-unifies-patch-management-for-unbootable-e74d7bdd</guid>
-      <description><![CDATA[Microsoft expands to let Intune policy control updates, .NET Framework, and recovery for PCs that fail to boot. The controls let administrators set automatic or manual approval per update type, reducing drift and simplifying patch management. Security teams should apply Intune update, enable the policy template, and monitor compliance dashboards for timely patch deployment.]]></description>
-      <pubDate>Tue, 17 Nov 2026 06:00:48 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/17/microsoft-windows-autopatch-controls/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>40% Struggle to Trace AI Agent Actions</title>
-      <link>https://secubuzz.com/news/40-struggle-to-trace-ai-agent-actions-6e6cfe47</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/40-struggle-to-trace-ai-agent-actions-6e6cfe47</guid>
-      <description><![CDATA[A recent report shows 40% of organizations cannot fully retrace AI agents’ actions in development pipelines, even though 99% deploy them for autonomous code changes. AI-driven development raised cloud updates by 82%, increasing release pressure that often leaves security issues unresolved. Security teams should enforce audit trails, least-privilege policies, and AI-aware monitoring to mitigate undetected changes.]]></description>
-      <pubDate>Tue, 17 Nov 2026 05:30:58 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/17/palo-alto-networks-ai-cloud-security-risks-report/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>N-Able Releases Hotfix for 17 N-Central Flaws</title>
-      <link>https://secubuzz.com/news/n-able-releases-hotfix-for-17-n-central-flaws-82d90aa1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-releases-hotfix-for-17-n-central-flaws-82d90aa1</guid>
-      <description><![CDATA[N-Able released Hotfix 3 for its N-Central RMM and UEM platform, fixing 17 critical flaws that attackers had used to deploy cryptocurrency miners. The bugs involved insufficient input validation and privilege escalation, enabling remote code execution and credential theft, and were exploited in the wild.]]></description>
-      <pubDate>Tue, 17 Nov 2026 05:00:34 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Peraton, Rozmith Offer Cybersecurity Architect, Engineer Roles</title>
-      <link>https://secubuzz.com/news/peraton-rozmith-offer-cybersecurity-architect-engi-518881e2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/peraton-rozmith-offer-cybersecurity-architect-engi-518881e2</guid>
-      <description><![CDATA[Peraton and Rozmith posted cybersecurity architect and engineer positions in the United States, targeting on-site and remote roles. Candidates will integrate security into DevSecOps, manage ATO packages, and develop security plans per DoD and DAF requirements. Applications should highlight experience in systems, networks, incident response, and risk assessment to meet the outlined responsibilities.]]></description>
-      <pubDate>Tue, 17 Nov 2026 05:00:33 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/17/cybersecurity-jobs-available-right-now-november-17-2026/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
