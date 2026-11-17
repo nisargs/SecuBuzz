@@ -11,6 +11,79 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "atlassian-security-advisory-av26-1166-07e2f46c",
+    "title": "Atlassian security advisory (AV26-1166)",
+    "summary": "Serial number: AV26-1166 Date: November 17, 2026 As of November 17, 2026, Atlassian is affected by a vulnerability in the following products: Jira Service Management Data Center Version 10.3.27 and prior Version 11.3.13 and prior Jira Service Management Server Versions 5.12.16 to 5.12.42 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/atlassian-security-advisory-av26-1166",
+    "publishedAt": "2026-11-17T15:22:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "atlassian-security-advisory-av26-1166",
+      "article-07e2f46c",
+      "07e2f46c",
+      "atlassian-security-advisory-av26-1166-6e4873"
+    ]
+  },
+  {
+    "slug": "phishing-kits-capture-microsoft-365-tokens-a3cdc3c2",
+    "title": "Phishing Kits Capture Microsoft 365 Tokens",
+    "summary": "Huntress researchers dissected EvilTokens, Knight Office, and Kali365 phishing kits that harvest Microsoft 365 authentication tokens. The kits employ social engineering to prompt users to submit credentials, then replay captured tokens to access corporate resources. Defenders should monitor token usage, enforce MFA, and deploy detection rules to flag anomalous token activity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
+    "publishedAt": "2026-11-17T15:01:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "phishing-kits-capture-microsoft-365-tokens",
+      "article-a3cdc3c2",
+      "a3cdc3c2",
+      "phishing-kits-capture-microsoft-365-tokens-46423b"
+    ]
+  },
+  {
+    "slug": "envoy-launches-visitors-critical-visitor-workflow-e5639880",
+    "title": "Envoy Launches Visitors Critical Visitor Workflow Solution",
+    "summary": "Envoy introduced Visitors Critical, an infrastructure-grade visitor security platform that consolidates identity verification, screening, and approval workflows into a single architecture. The solution targets high-consequence environments, ensuring audit-ready records and preventing gaps that one-size-fits-all visitor processes can create. Organizations can adopt Visitors Critical to enforce strict control, assurance, and governance across all visitor scenarios.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/envoy-visitors-critical/",
+    "publishedAt": "2026-11-17T14:28:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "envoy-launches-visitors-critical-visitor-workflow",
+      "article-e5639880",
+      "e5639880",
+      "envoy-launches-visitors-critical-visitor-workflow-497b5f",
+      "envoy-launches-visitors-critical-visitor-workflow-solution"
+    ]
+  },
+  {
+    "slug": "linx-security-governs-ai-agent-actions-129f5264",
+    "title": "Linx Security Governs AI Agent Actions",
+    "summary": "Linx Security introduced four capabilities extending identity governance to managed and unmanaged AI agents across existing gateways. Shadow AI Agent Detection identifies unsanctioned agents, while Agent Runtime Control governs each agent action in the gateway organizations already operate. The vendor also added Autopilots for governed agent use cases and Prompt-to-Workflow conversion from plain-English descriptions into tested agentic workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/linx-security-agent-identity-control/",
+    "publishedAt": "2026-11-17T14:23:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linx-security-governs-ai-agent-actions",
+      "article-129f5264",
+      "129f5264",
+      "linx-security-governs-ai-agent-actions-144797"
+    ]
+  },
+  {
     "slug": "detectify-introduces-agentic-tooling-for-live-veri-28032cc2",
     "title": "Detectify Introduces Agentic Tooling for Live Verification",
     "summary": "Detectify has released Agentic Tooling, enabling organizations to run AI agents in their own environments to probe suspected vulnerabilities in live applications. The tool includes a Security Ledger that records objective evidence, allowing teams to confirm exploitability rather than rely on probabilistic assessments. This development addresses a DevSecOps gap, providing a systematic approach to validate and prioritize vulnerabilities before deployment.",
@@ -45,6 +118,25 @@ export const news: NewsBrief[] = [
       "article-a11e90b1",
       "a11e90b1",
       "teen-hacker-pleads-guilty-to-gta-vi-footage-leak-4820b5"
+    ]
+  },
+  {
+    "slug": "appgate-optimizer-automates-least-privilege-access-edd87ee6",
+    "title": "AppGate Optimizer Automates Least-Privilege Access Reviews",
+    "summary": "AppGate announced general availability of AppGate Optimizer, a tool that analyzes how users access resources and recommends precise entitlement changes for administrator review. The product aims to reduce exposure from over-provisioned access, cut manual access-review time, and demonstrate least-privilege compliance to auditors. Administrators can apply recommended changes without disrupting user workflows, according to the vendor.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/appgate-optimizer/",
+    "publishedAt": "2026-11-17T14:03:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "appgate-optimizer-automates-least-privilege-access",
+      "article-edd87ee6",
+      "edd87ee6",
+      "appgate-optimizer-automates-least-privilege-access-42a97c",
+      "appgate-optimizer-automates-least-privilege-access-reviews"
     ]
   },
   {
@@ -85,6 +177,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "amazon-lookalike-job-offer-is-a-reshipping-scam-d487253c",
+    "title": "Amazon-Lookalike Job Offer Is a Reshipping Scam",
+    "summary": "A fake Amazon-branded job posting promises $5,000 monthly for remote work but exhibits classic reshipping scam indicators. The listing lacks verifiable contact details, requests upfront fees, and offers unrealistic compensation for typical reshipping roles. Job seekers should verify employer legitimacy, avoid payment requests, and report suspicious postings to platform authorities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/amazon-job-offer-promises-5000-a-month-but-its-got-all-the-signs-of-a-scam",
+    "publishedAt": "2026-11-17T13:37:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "amazon-lookalike-job-offer-is-a-reshipping-scam",
+      "article-d487253c",
+      "d487253c",
+      "amazon-lookalike-job-offer-is-a-reshipping-scam-628eac"
+    ]
+  },
+  {
+    "slug": "grok-bots-target-corporate-apps-without-user-conse-082dad36",
+    "title": "Grok Bots Target Corporate Apps Without User Consent",
+    "summary": "Grok Bots targeted Google Calendar, Gmail, Slack, and GitHub over five days, seeking unauthorized access. Bots employed AI-driven credential guessing and API misuse, exploiting weak access-control checks to bypass user-approval flows; no data exfiltration was confirmed. Teams should enforce MFA, monitor anomalous API activity, and apply least-privilege policies on cloud services.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/grok-bots-corporate-data-without-user-approval",
+    "publishedAt": "2026-11-17T13:12:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "grok-bots-target-corporate-apps-without-user-conse",
+      "article-082dad36",
+      "082dad36",
+      "grok-bots-target-corporate-apps-without-user-conse-aed98d",
+      "grok-bots-target-corporate-apps-without-user-consent"
+    ]
+  },
+  {
     "slug": "corma-raises-125m-for-defensive-cybersecurity-mode-b15c34cf",
     "title": "Corma Raises $125M for Defensive Cybersecurity Models",
     "summary": "Corma received $125 million in funding to train foundation models for defensive cybersecurity. The round was led by NEA with support from existing investors and brings the company's valuation to $1 billion. The investment targets defensive cybersecurity model development, though the report does not detail specific products, deployment timelines, or technical capabilities.",
@@ -101,6 +230,46 @@ export const news: NewsBrief[] = [
       "b15c34cf",
       "corma-raises-125m-for-defensive-cybersecurity-mode-24122e",
       "corma-raises-125m-for-defensive-cybersecurity-models"
+    ]
+  },
+  {
+    "slug": "major-news-sites-serve-malicious-code-via-supply-c-7a0ef9ff",
+    "title": "Major News Sites Serve Malicious Code via Supply-Chain Attack",
+    "summary": "A supply-chain attack injected malicious code into high-traffic sites like CNN, BBC, and Zoom on November 16, affecting visitors. The attack used compromised CDN scripts to inject malware that could exfiltrate credentials or install ransomware; no user data exfiltration was confirmed. Sites should verify script integrity, update CDN settings, and deploy web-application firewalls to block malicious payloads.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/cnn-bbc-zoom-and-other-sites-served-malicious-code-in-supply-chain-attack",
+    "publishedAt": "2026-11-17T12:51:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "major-news-sites-serve-malicious-code-via-supply-c",
+      "article-7a0ef9ff",
+      "7a0ef9ff",
+      "major-news-sites-serve-malicious-code-via-supply-c-25f117",
+      "major-news-sites-serve-malicious-code-via-supply-chain-attac"
+    ]
+  },
+  {
+    "slug": "screenconnect-flaw-enables-silent-malware-on-msp-t-7b61a398",
+    "title": "ScreenConnect Flaw Enables Silent Malware on MSP Techs",
+    "summary": "A critical ScreenConnect vulnerability (CVE-2026-84869) allows attackers to run malicious files on MSP technicians’ computers without a confirmation prompt. The flaw transforms routine remote support sessions into covert infection vectors, exposing workstations that hold customer systems, management tools, and saved credentials. Security teams should apply vendor patches, disable guest-pushed file execution, and monitor remote support logs for unauthorized activity.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-screenconnect-flaw/",
+    "publishedAt": "2026-11-17T12:33:09.000Z",
+    "cves": [
+      "CVE-2026-84869"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "screenconnect-flaw-enables-silent-malware-on-msp-t",
+      "article-7b61a398",
+      "7b61a398",
+      "screenconnect-flaw-enables-silent-malware-on-msp-t-c3c391",
+      "screenconnect-flaw-enables-silent-malware-on-msp-techs"
     ]
   },
   {
@@ -230,6 +399,24 @@ export const news: NewsBrief[] = [
       "9a31a7d3",
       "microsoft-tests-remote-lock-for-lost-windows-devic-28a1ab",
       "microsoft-tests-remote-lock-for-lost-windows-devices"
+    ]
+  },
+  {
+    "slug": "claude-api-enables-hidden-commands-for-data-theft-184c4876",
+    "title": "Claude API Enables Hidden Commands for Data Theft",
+    "summary": "Researchers discovered that the trusted Claude API can be abused to transmit covert commands to AI coding agents, enabling data exfiltration. The flaw exploits the API’s trust boundary, masking malicious traffic as legitimate AI activity and bypassing most security monitoring. Security teams should audit Claude API usage, enforce strict request validation, and isolate AI agents from sensitive data stores.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/claude-codes-trusted-api/",
+    "publishedAt": "2026-11-17T11:11:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-api-enables-hidden-commands-for-data-theft",
+      "article-184c4876",
+      "184c4876",
+      "claude-api-enables-hidden-commands-for-data-theft-6bd1f9"
     ]
   },
   {
@@ -478,14 +665,19 @@ export const news: NewsBrief[] = [
   {
     "slug": "ai-vendor-key-breach-exposes-10-barracuda-cloud-ac-f45aec58",
     "title": "AI Vendor Key Breach Exposes 10 Barracuda Cloud Accounts",
-    "summary": "Hackers used an exposed AI vendor cloud key to infiltrate Barracuda’s environment, compromising about ten accounts in 44 hours. The attack moved across cloud services, analytics, source code, and Kubernetes, collecting credentials for lateral movement. Barracuda noted the key stayed active; teams should revoke it, enforce least-privilege, and audit permissions.",
+    "summary": "In a 44-hour breach, hackers leveraged an exposed AI vendor cloud key to compromise ten Barracuda cloud accounts. The attackers moved through stored secrets, dev systems, analytics, and Kubernetes clusters, collecting credentials for lateral movement. Barracuda urged teams to revoke the key, enforce least-privilege controls, audit permissions, and rotate compromised credentials.",
     "category": "Breach",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "Cyber Security News",
     "sourceUrl": "https://cybersecuritynews.com/barracuda-cloud-account-breach/",
     "publishedAt": "2026-11-17T08:42:21.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/barracuda-cloud-accounts/"
+      }
+    ],
     "aliases": [
       "ai-vendor-key-breach-exposes-10-barracuda-cloud-ac",
       "article-f45aec58",
@@ -643,24 +835,29 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "screenconnect-vulnerability-enables-unauthorized-a-bcc9a6d9",
-    "title": "ScreenConnect Vulnerability Enables Unauthorized Access",
-    "summary": "ConnectWise identified that a flaw in ScreenConnect, CVE-2026-84869, permits unauthorized remote access to partner environments via unpatched technician clients. The vulnerability arises from insufficient authentication checks in the technician client, allowing attackers to bypass credentials and execute commands on on-premises systems. ConnectWise recommends upgrading to version 26.6.5 or later and disabling third-party extensions to mitigate the risk of unauthorized access.",
+    "slug": "screenconnect-cve-2026-84869-exploited-for-unauthe-9b2fcf9c",
+    "title": "ScreenConnect CVE-2026-84869 Exploited for Unauthenticated Remote Code Execution",
+    "summary": "Attackers targeted more than 40 MSP ScreenConnect servers with 688,000 requests exploiting CVE-2026-84869, an unauthenticated remote code execution flaw involving guest-pushed files. The vulnerability lets attackers bypass authentication and execute commands on on-premises systems without user interaction. ConnectWise recommends upgrading to version 26.6.5 or later and disabling third-party extensions to mitigate exposure.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
     "publishedAt": "2026-11-17T06:29:27.000Z",
     "cves": [
       "CVE-2026-84869"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/"
+      }
+    ],
     "aliases": [
-      "screenconnect-vulnerability-enables-unauthorized-a",
-      "article-bcc9a6d9",
-      "bcc9a6d9",
-      "screenconnect-vulnerability-enables-unauthorized-a-50e8fc",
-      "screenconnect-vulnerability-enables-unauthorized-access"
+      "screenconnect-cve-2026-84869-exploited-for-unauthe",
+      "article-9b2fcf9c",
+      "9b2fcf9c",
+      "screenconnect-cve-2026-84869-exploited-for-unauthe-50e8fc",
+      "screenconnect-cve-2026-84869-exploited-for-unauthenticated-r"
     ]
   },
   {
@@ -861,6 +1058,86 @@ export const news: NewsBrief[] = [
       "article-ed96a5e6",
       "ed96a5e6",
       "crac-jdk-25-auth-flaws-expose-sensitive-data-7e7a43"
+    ]
+  },
+  {
+    "slug": "mini-xml-vulnerabilities-enable-dos-and-possible-c-e14d3272",
+    "title": "Mini-XML Vulnerabilities Enable DoS and Possible Code Execution",
+    "summary": "Mini-XML in Ubuntu 16.04 LTS suffers from unbounded recursion during node deletion and writing, potentially causing denial-of-service crashes. Additionally, CVE-2018-20004 exploits incorrect floating-point handling to trigger a stack-based buffer overflow, which could allow arbitrary code execution. Users of Ubuntu 16.04 should apply the latest security updates, and administrators should monitor for abnormal XML processing activity.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9115-1",
+    "publishedAt": "2026-11-17T00:51:50.000Z",
+    "cves": [
+      "CVE-2018-20004"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "mini-xml-vulnerabilities-enable-dos-and-possible-c",
+      "article-e14d3272",
+      "e14d3272",
+      "mini-xml-vulnerabilities-enable-dos-and-possible-c-7e7b1d",
+      "mini-xml-vulnerabilities-enable-dos-and-possible-code-execut"
+    ]
+  },
+  {
+    "slug": "deluge-web-ui-vulnerabilities-fixed-in-ubuntu-16-0-a1d6cff4",
+    "title": "Deluge Web UI Vulnerabilities Fixed in Ubuntu 16.04 Update",
+    "summary": "Deluge’s web UI on Ubuntu 16.04 LTS had two CVE-2017-7178 and CVE-2017-9031 flaws enabling remote CSRF attacks. CVE-2017-7178 allowed malicious plugin installation for arbitrary code execution, while CVE-2017-9031 let attackers read arbitrary files via crafted requests. Ubuntu issued USN-8979-2 to apply the missing patches; admins should install the update immediately.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8979-2",
+    "publishedAt": "2026-11-17T00:51:34.000Z",
+    "cves": [
+      "CVE-2017-7178",
+      "CVE-2017-9031"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "deluge-web-ui-vulnerabilities-fixed-in-ubuntu-16-0",
+      "article-a1d6cff4",
+      "a1d6cff4",
+      "deluge-web-ui-vulnerabilities-fixed-in-ubuntu-16-0-7fbc70",
+      "deluge-web-ui-vulnerabilities-fixed-in-ubuntu-16-04-update"
+    ]
+  },
+  {
+    "slug": "ubuntu-fixes-yadifa-dns-packet-loop-dos-5e780844",
+    "title": "Ubuntu Fixes YADIFA DNS Packet Loop DoS",
+    "summary": "Ubuntu issued USN-9128-1 to address a YADIFA vulnerability in DNS packet parsing. YADIFA did not check for infinite pointer loops when parsing DNS packets, allowing a remote attacker to consume excessive CPU resources and cause a denial of service. Administrators should apply the security update to prevent remote denial-of-service conditions.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9128-1",
+    "publishedAt": "2026-11-17T00:49:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-fixes-yadifa-dns-packet-loop-dos",
+      "article-5e780844",
+      "5e780844",
+      "ubuntu-fixes-yadifa-dns-packet-loop-dos-7e7a9d"
+    ]
+  },
+  {
+    "slug": "ubuntu-patches-syntastic-config-file-code-executio-28669c08",
+    "title": "Ubuntu Patches Syntastic Config File Code Execution",
+    "summary": "Ubuntu released USN-9127-1 to address a Syntastic vulnerability involving checker configuration file discovery. Syntastic searched the current directory and its parents for checker configuration files, enabling arbitrary code execution if a user checked a file in an attacker-controlled directory. The update restricts Syntastic to reading only checker configuration files named in the *_config_file options, and users should apply it.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9127-1",
+    "publishedAt": "2026-11-17T00:48:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-patches-syntastic-config-file-code-executio",
+      "article-28669c08",
+      "28669c08",
+      "ubuntu-patches-syntastic-config-file-code-executio-7e7aa1",
+      "ubuntu-patches-syntastic-config-file-code-execution"
     ]
   },
   {
@@ -2039,6 +2316,25 @@ export const news: NewsBrief[] = [
       "e25bcde5",
       "gitguardian-expands-good-samaritan-program-for-ent-566c5a",
       "gitguardian-expands-good-samaritan-program-for-enterprises"
+    ]
+  },
+  {
+    "slug": "nist-finalizes-post-quantum-guidance-as-gao-flags-4197c80f",
+    "title": "NIST Finalizes Post-Quantum Guidance as GAO Flags Agency Gaps",
+    "summary": "NIST has finalized post-quantum cryptography guidance, and a GAO report offers a reality check on federal readiness. Emerging quantum technology is expected to break the lock-and-key encryption currently protecting sensitive data, while agencies remain behind on building defenses. Security teams should monitor NIST standards and accelerate cryptographic inventory and migration planning to reduce future exposure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/nist-finalizes-post-quantum-cryptography-guidance-gao-offers-a-reality-check",
+    "publishedAt": "2026-11-16T14:22:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nist-finalizes-post-quantum-guidance-as-gao-flags",
+      "article-4197c80f",
+      "4197c80f",
+      "nist-finalizes-post-quantum-guidance-as-gao-flags-5d3d19",
+      "nist-finalizes-post-quantum-guidance-as-gao-flags-agency-gap"
     ]
   },
   {
@@ -9493,285 +9789,6 @@ export const news: NewsBrief[] = [
       "article-e86cb456",
       "e86cb456",
       "google-releases-chrome-beta-update-for-ios-2a703f"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99726-important-compat-openssl10-securit-d6aab5d1",
-    "title": "RHSA-2026:99726: Important: compat-openssl10 security update",
-    "summary": "An update for compat-openssl10 is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99726",
-    "publishedAt": "2026-11-12T17:41:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99726-important-compat-openssl10-securit",
-      "article-d6aab5d1",
-      "d6aab5d1",
-      "rhsa-2026-99726-important-compat-openssl10-securit-37d669",
-      "rhsa-2026-99726-important-compat-openssl10-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99691-moderate-python3-security-update-3fdb0da6",
-    "title": "RHSA-2026:99691: Moderate: python3 security update",
-    "summary": "An update for python3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99691",
-    "publishedAt": "2026-11-12T17:39:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99691-moderate-python3-security-update",
-      "article-3fdb0da6",
-      "3fdb0da6",
-      "rhsa-2026-99691-moderate-python3-security-update-37d66c"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99630-important-kernel-security-bug-fix-f04a9622",
-    "title": "RHSA-2026:99630: Important: kernel security, bug fix, and enhancement update",
-    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99630",
-    "publishedAt": "2026-11-12T17:29:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99630-important-kernel-security-bug-fix",
-      "article-f04a9622",
-      "f04a9622",
-      "rhsa-2026-99630-important-kernel-security-bug-fix-37d66d",
-      "rhsa-2026-99630-important-kernel-security-bug-fix-and-enhanc"
-    ]
-  },
-  {
-    "slug": "cisco-broadworks-xml-external-entity-vulnerability-d5db2d32",
-    "title": "Cisco BroadWorks XML External Entity Vulnerability",
-    "summary": "Cisco BroadWorks' Open Client Interface XML parser is vulnerable to blind XML external entity injection, letting unauthenticated remote attackers read sensitive configuration files. The flaw stems from default external entity resolution, allowing crafted XML messages to the OCI-P service to expose filesystem data with BroadWorks user privileges. Cisco released patches; no workarounds exist, so administrators must apply updates immediately.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+BroadWorks+Out-of-Band+Blind+XML+External+Entity+Injection+Vulnerability%26vs_k%3D1",
-    "publishedAt": "2026-11-12T17:25:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-broadworks-xml-external-entity-vulnerability",
-      "article-d5db2d32",
-      "d5db2d32",
-      "cisco-broadworks-xml-external-entity-vulnerability-235c18"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99660-important-xfsprogs-security-update-1d7bc380",
-    "title": "RHSA-2026:99660: Important: xfsprogs security update",
-    "summary": "An update for xfsprogs is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99660",
-    "publishedAt": "2026-11-12T17:18:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99660-important-xfsprogs-security-update",
-      "article-1d7bc380",
-      "1d7bc380",
-      "rhsa-2026-99660-important-xfsprogs-security-update-37d66c"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99707-important-libpcap-security-update-92b4230f",
-    "title": "RHSA-2026:99707: Important: libpcap security update",
-    "summary": "An update for libpcap is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99707",
-    "publishedAt": "2026-11-12T17:18:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99707-important-libpcap-security-update",
-      "article-92b4230f",
-      "92b4230f",
-      "rhsa-2026-99707-important-libpcap-security-update-37d669"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99659-important-xfsprogs-security-update-40daf9b0",
-    "title": "RHSA-2026:99659: Important: xfsprogs security update",
-    "summary": "An update for xfsprogs is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99659",
-    "publishedAt": "2026-11-12T17:17:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99659-important-xfsprogs-security-update",
-      "article-40daf9b0",
-      "40daf9b0",
-      "rhsa-2026-99659-important-xfsprogs-security-update-37d66c"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99643-low-curl-security-update-9262d46e",
-    "title": "RHSA-2026:99643: Low: curl security update",
-    "summary": "An update for curl is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99643",
-    "publishedAt": "2026-11-12T17:17:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99643-low-curl-security-update",
-      "article-9262d46e",
-      "9262d46e",
-      "rhsa-2026-99643-low-curl-security-update-37d66c"
-    ]
-  },
-  {
-    "slug": "progress-software-multiple-cve-vulnerabilities-2cf0b54f",
-    "title": "Progress Software Multiple CVE Vulnerabilities",
-    "summary": "Progress Software disclosed CVE-identified vulnerabilities in Telerik components, including CVE-2026-106137, CVE-2026-106140, CVE-2026-106152, and CVE-2026-124699. Root causes involve class factory race conditions, deserialization of untrusted data, external configuration control, and improper code generation, potentially enabling remote code execution. Progress recommends applying the latest security patches or upgrading to the specified versions to mitigate the identified risks.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/progress-software-security-advisory-av26-1148",
-    "publishedAt": "2026-11-12T17:01:14.000Z",
-    "cves": [
-      "CVE-2026-106137",
-      "CVE-2026-106140",
-      "CVE-2026-106152",
-      "CVE-2026-124699"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "progress-software-multiple-cve-vulnerabilities",
-      "article-2cf0b54f",
-      "2cf0b54f",
-      "progress-software-multiple-cve-vulnerabilities-22323c"
-    ]
-  },
-  {
-    "slug": "poisoned-ai-training-enables-remote-code-execution-5f5a52ca",
-    "title": "Poisoned AI Training Enables Remote Code Execution",
-    "summary": "Poisoned training data and model checkpoints can trigger remote code execution in AI coding agents, per Microsoft Defender Research. The flaw exploits the training pipeline, letting attackers embed malicious code that runs when the agent processes user inputs, potentially compromising downstream systems. Defenders should verify training data integrity, enforce supply-chain controls, and monitor agent behavior for anomalous execution.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
-    "publishedAt": "2026-11-12T17:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "poisoned-ai-training-enables-remote-code-execution",
-      "article-5f5a52ca",
-      "5f5a52ca",
-      "poisoned-ai-training-enables-remote-code-execution-30f228"
-    ]
-  },
-  {
-    "slug": "europol-seizes-235-servers-257-domains-of-gootload-58ee2d20",
-    "title": "Europol Seizes 235 Servers, 257 Domains of Gootloader, CastleRAT",
-    "summary": "Europol and partners disrupted 235 servers and 257 domains linked to Gootloader, CastleRAT, and StealC malware services that facilitate ransomware and data theft. The operation seized 6.4 million victim datasets from the criminal infrastructure, exposing the scale of the cyber-crime-as-a-service model. No vendor patches are required; the action demonstrates law enforcement’s capacity to dismantle malware supply chains.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/malware-infrastructure-disrupted/",
-    "publishedAt": "2026-11-12T16:58:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "europol-seizes-235-servers-257-domains-of-gootload",
-      "article-58ee2d20",
-      "58ee2d20",
-      "europol-seizes-235-servers-257-domains-of-gootload-2f82bf",
-      "europol-seizes-235-servers-257-domains-of-gootloader-castler"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99661-important-xfsprogs-security-update-f932da94",
-    "title": "RHSA-2026:99661: Important: xfsprogs security update",
-    "summary": "An update for xfsprogs is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99661",
-    "publishedAt": "2026-11-12T16:57:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99661-important-xfsprogs-security-update",
-      "article-f932da94",
-      "f932da94",
-      "rhsa-2026-99661-important-xfsprogs-security-update-37d66c"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99690-important-libpcap-security-update-55be5499",
-    "title": "RHSA-2026:99690: Important: libpcap security update",
-    "summary": "An update for libpcap is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99690",
-    "publishedAt": "2026-11-12T16:56:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99690-important-libpcap-security-update",
-      "article-55be5499",
-      "55be5499",
-      "rhsa-2026-99690-important-libpcap-security-update-37d66c"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99702-important-webkit2gtk3-security-upd-1574e233",
-    "title": "RHSA-2026:99702: Important: webkit2gtk3 security update",
-    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99702",
-    "publishedAt": "2026-11-12T16:53:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99702-important-webkit2gtk3-security-upd",
-      "article-1574e233",
-      "1574e233",
-      "rhsa-2026-99702-important-webkit2gtk3-security-upd-37d669",
-      "rhsa-2026-99702-important-webkit2gtk3-security-update"
-    ]
-  },
-  {
-    "slug": "n-able-zero-day-targets-even-patched-servers-f923e85e",
-    "title": "N-Able Zero-Day Targets Even Patched Servers",
-    "summary": "New N-Able N-Central zero-day exploits, named 4EverAble2Shell and Agent2Shell, target servers even after the latest emergency hotfix. The vulnerability enables unauthenticated attackers to gain root access, allowing deployment of cryptocurrency miners and other malicious payloads. Administrators should apply the latest patch, monitor for unauthorized processes, and verify that the HTTP/2 module is properly secured.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/n-able-n-central-zero-day-exploits/",
-    "publishedAt": "2026-11-12T16:53:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-zero-day-targets-even-patched-servers",
-      "article-f923e85e",
-      "f923e85e",
-      "n-able-zero-day-targets-even-patched-servers-99074e"
     ]
   }
 ];
