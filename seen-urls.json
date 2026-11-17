@@ -6066,5 +6066,12 @@
   "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
   "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0281314271.html",
   "https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/",
-  "https://cybersecuritynews.com/mssp-threat-intelligence-soc-capacity/"
+  "https://cybersecuritynews.com/mssp-threat-intelligence-soc-capacity/",
+  "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
+  "https://www.sentinelone.com/blog/java4shell-vulnerability-in-openjdk-enables-rce-on-avx-512-cpus/",
+  "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01699533288.html",
+  "https://cyber.gc.ca/en/alerts-advisories/zyxel-security-advisory-av26-1167",
+  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
+  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
+  "https://www.securityweek.com/pretxt-emerges-stealth-with-5m-seed-and-an-ai-supervision-tool/"
 ]

@@ -11,6 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "critical-java4shell-flaw-allows-rce-attacks-on-maj-77623aba",
+    "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
+    "summary": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. The vulnerability is tracked as CVE-2026-114938.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
+    "publishedAt": "2026-11-17T23:04:21.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-java4shell-flaw-allows-rce-attacks-on-maj",
+      "article-77623aba",
+      "77623aba",
+      "critical-java4shell-flaw-allows-rce-attacks-on-maj-15dfdc",
+      "critical-java4shell-flaw-allows-rce-attacks-on-major-java-ap"
+    ]
+  },
+  {
     "slug": "optimizely-platform-distributes-hydra-like-malware-9772da7c",
     "title": "Optimizely Platform Distributes Hydra-Like Malware to Visitors",
     "summary": "A third-party Optimizely platform delivered hydra-like malware to visitors, affecting 178 organizations including major brands. Insecure content injection let attackers embed malicious scripts without authentication, enabling credential theft and lateral movement. Audit daily third-party integrations, enforce strict CSP, and apply the latest Optimizely patches to block unauthorized scripts for visitors.",
@@ -66,6 +87,27 @@ export const news: NewsBrief[] = [
       "4a42f239",
       "java4shell-cve-2026-114938-enables-remote-code-exe-42a402",
       "java4shell-cve-2026-114938-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "defending-against-java4shell-vulnerability-in-open-db46b254",
+    "title": "Defending Against Java4Shell: Vulnerability in OpenJDK Enables RCE on AVX-512 CPUs",
+    "summary": "On November 17, 2026, security researchers at Calif disclosed Java4Shell (CVE-2026-114938, CVSS 4.0: 9.2 Critical), a memory-corruption vulnerability in OpenJDK’s Base64 decoder that allows malformed Base64 input to trigger remote code execution (RCE).",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/java4shell-vulnerability-in-openjdk-enables-rce-on-avx-512-cpus/",
+    "publishedAt": "2026-11-17T22:19:19.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "defending-against-java4shell-vulnerability-in-open",
+      "article-db46b254",
+      "db46b254",
+      "defending-against-java4shell-vulnerability-in-open-2bc403",
+      "defending-against-java4shell-vulnerability-in-openjdk-enable"
     ]
   },
   {
@@ -293,6 +335,26 @@ export const news: NewsBrief[] = [
       "e340cd7b",
       "control-systems-codesys-security-advisory-av26-11-3684a8",
       "control-systems-codesys-security-advisory-av26-1169"
+    ]
+  },
+  {
+    "slug": "chrome-158-released-with-204-security-fixes-d21a3ac3",
+    "title": "Chrome 158 Released with 204 Security Fixes",
+    "summary": "Google Chrome promoted version 158 to the stable channel for Windows, Mac, and Linux, delivering 204 security fixes. The update addresses a critical use-after-free flaw in WebView (CVE-2026-130963) that could allow remote code execution if exploited. Users should install the new release immediately; the Chrome Security Page lists all patches and the update is available through standard OS update mechanisms.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01699533288.html",
+    "publishedAt": "2026-11-17T19:12:07.339Z",
+    "cves": [
+      "CVE-2026-130963"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-158-released-with-204-security-fixes",
+      "article-d21a3ac3",
+      "d21a3ac3",
+      "chrome-158-released-with-204-security-fixes-7f7395"
     ]
   },
   {
@@ -579,6 +641,25 @@ export const news: NewsBrief[] = [
       "b6d9e8a6",
       "nsa-net-faces-unspecified-disruptions-technicians-1a0ee8",
       "nsa-net-faces-unspecified-disruptions-technicians-restore-ne"
+    ]
+  },
+  {
+    "slug": "zyxel-firmware-vulnerabilities-expose-command-inje-60704b0c",
+    "title": "Zyxel Firmware Vulnerabilities Expose Command Injection",
+    "summary": "Zyxel disclosed out-of-bounds write and post-authentication command injection flaws in DX3300-T0, DX3301-T0, and EX3301-T0 firmware versions up to 5.50(ABVY.8.3)C0. The vulnerabilities allow authenticated attackers to execute arbitrary commands on affected DSL/Ethernet CPE, Fiber ONTs, and Wireless Extenders, potentially compromising network control.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/zyxel-security-advisory-av26-1167",
+    "publishedAt": "2026-11-17T16:20:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zyxel-firmware-vulnerabilities-expose-command-inje",
+      "article-60704b0c",
+      "60704b0c",
+      "zyxel-firmware-vulnerabilities-expose-command-inje-5bfe2d",
+      "zyxel-firmware-vulnerabilities-expose-command-injection"
     ]
   },
   {
@@ -1014,6 +1095,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "pretxt-launches-ai-supervision-tool-with-5m-seed-f15809d7",
+    "title": "Pretxt Launches AI Supervision Tool with $5M Seed",
+    "summary": "Pretxt has introduced an AI supervision tool designed to keep autonomous agents within defined guardrails and prevent unintended harm. The solution, backed by a $5 million seed round, aims to address growing concerns over AI safety and misuse. Industry observers note that the tool could become a critical component for enterprises deploying large language models and autonomous systems.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/pretxt-emerges-stealth-with-5m-seed-and-an-ai-supervision-tool/",
+    "publishedAt": "2026-11-17T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pretxt-launches-ai-supervision-tool-with-5m-seed",
+      "article-f15809d7",
+      "f15809d7",
+      "pretxt-launches-ai-supervision-tool-with-5m-seed-678a1d"
+    ]
+  },
+  {
     "slug": "cold-relic-exploits-us-organization-via-impersonat-656dba45",
     "title": "COLD RELIC Exploits US Organization via Impersonation",
     "summary": "Mandiant traced a Russian state-sponsored group, COLD RELIC, to a 2026 compromise of a US-based organization through cloud impersonation. The attackers leveraged a prior late-2025 breach to weaponize stolen staff directory data and identities, enabling ongoing third-party espionage and data exfiltration. Security teams should enforce cloud access controls, monitor for credential reuse, and conduct response drills against state-sponsored intrusion tactics.",
@@ -1331,6 +1430,48 @@ export const news: NewsBrief[] = [
       "79f09066",
       "deepmind-ai-formally-verifies-signal-protocol-cryp-1dcb34",
       "deepmind-ai-formally-verifies-signal-protocol-cryptography"
+    ]
+  },
+  {
+    "slug": "siemens-ros-code-injection-vulnerability-cve-2026-bc942585",
+    "title": "Siemens ROS# Code Injection Vulnerability CVE-2026-109097",
+    "summary": "A code injection flaw in Siemens ROS# allows attackers to inject arbitrary code via crafted message definition files. The vulnerability, identified as CVE-2026-109097, scores CVSS 8.2 and permits remote code execution without authentication, potentially compromising critical manufacturing systems worldwide. Siemens has released ROS# 2.3.1 and newer versions; operators should upgrade immediately to eliminate the injection risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
+    "publishedAt": "2026-11-17T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-109097"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-ros-code-injection-vulnerability-cve-2026",
+      "article-bc942585",
+      "bc942585",
+      "siemens-ros-code-injection-vulnerability-cve-2026-41aee7",
+      "siemens-ros-code-injection-vulnerability-cve-2026-109097"
+    ]
+  },
+  {
+    "slug": "siemens-products-affected-by-node2shell-cve-2026-1-5e86ee33",
+    "title": "Siemens Products Affected by Node2Shell CVE-2026-111497",
+    "summary": "Node.js’s Brotli decoder contains an out-of-bounds write flaw (CVE-2026-111497) that can let remote attackers corrupt memory and run code. The flaw impacts Siemens Industrial Automation Software, including COMOS Walkinside and gDAP, threatening critical manufacturing systems. Siemens released patched versions; users must upgrade immediately to stop exploitation and apply the updates without delay.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
+    "publishedAt": "2026-11-17T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-products-affected-by-node2shell-cve-2026-1",
+      "article-5e86ee33",
+      "5e86ee33",
+      "siemens-products-affected-by-node2shell-cve-2026-1-41aee7",
+      "siemens-products-affected-by-node2shell-cve-2026-111497"
     ]
   },
   {
@@ -9767,140 +9908,6 @@ export const news: NewsBrief[] = [
       "0e7823a4",
       "organizations-struggle-with-post-quantum-cryptogra-668bf4",
       "organizations-struggle-with-post-quantum-cryptography-asset-"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99915-moderate-xz-security-update-346452a7",
-    "title": "RHSA-2026:99915: Moderate: xz security update",
-    "summary": "An update for xz is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99915",
-    "publishedAt": "2026-11-12T22:40:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99915-moderate-xz-security-update",
-      "article-346452a7",
-      "346452a7",
-      "rhsa-2026-99915-moderate-xz-security-update-37d662"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99865-moderate-xorg-x11-server-security-c1a992fe",
-    "title": "RHSA-2026:99865: Moderate: xorg-x11-server security update",
-    "summary": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99865",
-    "publishedAt": "2026-11-12T22:38:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99865-moderate-xorg-x11-server-security",
-      "article-c1a992fe",
-      "c1a992fe",
-      "rhsa-2026-99865-moderate-xorg-x11-server-security-37d665",
-      "rhsa-2026-99865-moderate-xorg-x11-server-security-update"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-4-800-github-accounts-for-cloud-cr-25faffd4",
-    "title": "Hackers Exploit 4,800 GitHub Accounts for Cloud Credentials",
-    "summary": "A wfx-loot campaign compromised 4,837 GitHub accounts, using them to scan 61,764 repositories, open pull requests, and deploy secrets-stealing malware. The attackers leveraged credential reuse and automated scanning to exfiltrate cloud service keys, exposing multiple cloud environments to unauthorized access. GitHub has issued a security advisory, urging users to rotate compromised credentials, enable two-factor authentication, and review repository access logs.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
-    "publishedAt": "2026-11-12T22:25:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-4-800-github-accounts-for-cloud-cr",
-      "article-25faffd4",
-      "25faffd4",
-      "hackers-exploit-4-800-github-accounts-for-cloud-cr-270eee",
-      "hackers-exploit-4-800-github-accounts-for-cloud-credentials"
-    ]
-  },
-  {
-    "slug": "arctic-wolf-discusses-agentic-ai-in-security-ops-bd8ef852",
-    "title": "Arctic Wolf Discusses Agentic AI in Security Ops",
-    "summary": "Arctic Wolf released a report on how agentic AI and human analysts collaborate to accelerate security operations, reduce investigation time, and improve threat response. The document details AI-driven automation integrated with expert analysis to streamline incident detection, triage, and remediation, citing performance metrics.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/on-demand-webinar-uk/inside-2026-agentic-security-operations-report/",
-    "publishedAt": "2026-11-12T22:13:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arctic-wolf-discusses-agentic-ai-in-security-ops",
-      "article-bd8ef852",
-      "bd8ef852",
-      "arctic-wolf-discusses-agentic-ai-in-security-ops-2b8ebe"
-    ]
-  },
-  {
-    "slug": "feds-seize-1-2b-from-binance-theft-takedown-facest-f9460563",
-    "title": "Feds Seize $1.2B from Binance Theft, Takedown FaceStealer Tools",
-    "summary": "The DOJ and FBI seized $1.2 billion tied to a North Korea-linked cryptocurrency theft and dismantled FaceStealer malware tools. Investigations revealed the funds were proceeds from stolen digital assets, while the takedown removed the credential-harvesting infrastructure. Cryptocurrency exchanges are urged to strengthen monitoring and compliance to deter future thefts and cooperate with ongoing investigations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted",
-    "publishedAt": "2026-11-12T21:42:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "feds-seize-1-2b-from-binance-theft-takedown-facest",
-      "article-f9460563",
-      "f9460563",
-      "feds-seize-1-2b-from-binance-theft-takedown-facest-51d148",
-      "feds-seize-1-2b-from-binance-theft-takedown-facestealer-tool"
-    ]
-  },
-  {
-    "slug": "chrome-early-stable-update-158-0-8127-36-37-for-wi-c4f4dddf",
-    "title": "Chrome Early Stable Update 158.0.8127.36/37 for Windows",
-    "summary": "Google Chrome released an early stable update for Windows, version 158.0.8127.36/37, as part of its routine patch cycle. The update includes minor bug fixes and performance improvements, with a full changelog available in the release notes. Users are advised to install the update promptly to maintain compatibility and benefit from the latest stability enhancements.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop_0520415684.html",
-    "publishedAt": "2026-11-12T21:30:51.410Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-early-stable-update-158-0-8127-36-37-for-wi",
-      "article-c4f4dddf",
-      "c4f4dddf",
-      "chrome-early-stable-update-158-0-8127-36-37-for-wi-8f8561",
-      "chrome-early-stable-update-158-0-8127-36-37-for-windows"
-    ]
-  },
-  {
-    "slug": "apache-http-server-vulnerabilities-enable-potentia-5daaddf2",
-    "title": "Apache HTTP Server Vulnerabilities Enable Potential Code Execution",
-    "summary": "Apache HTTP Server’s mod_dav, mod_vhost_alias, and mod_md modules contain memory corruption flaws that allow attackers to crash or potentially execute code via crafted WebDAV locks or specific requests. CVE-2026-109163’s stack buffer overflow can lead to arbitrary code execution, while CVE-2026-42528 and CVE-2026-109163 also enable denial of service. Administrators should apply patches and restrict WebDAV access until the fixes are deployed.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9090-1",
-    "publishedAt": "2026-11-12T21:25:57.000Z",
-    "cves": [
-      "CVE-2026-109163",
-      "CVE-2026-42528"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apache-http-server-vulnerabilities-enable-potentia",
-      "article-5daaddf2",
-      "5daaddf2",
-      "apache-http-server-vulnerabilities-enable-potentia-7e85a4",
-      "apache-http-server-vulnerabilities-enable-potential-code-exe"
     ]
   }
 ];

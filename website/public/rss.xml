@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 22:59:59 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 23:44:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Critical Java4Shell flaw allows RCE attacks on major Java applications</title>
+      <link>https://secubuzz.com/news/critical-java4shell-flaw-allows-rce-attacks-on-maj-77623aba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-java4shell-flaw-allows-rce-attacks-on-maj-77623aba</guid>
+      <description><![CDATA[A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. The vulnerability is tracked as CVE-2026-114938.]]></description>
+      <pubDate>Tue, 17 Nov 2026 23:04:21 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/">BleepingComputer</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Optimizely Platform Distributes Hydra-Like Malware to Visitors</title>
       <link>https://secubuzz.com/news/optimizely-platform-distributes-hydra-like-malware-9772da7c</link>
@@ -32,6 +41,15 @@
       <description><![CDATA[A critical 9.2 remote code execution flaw, CVE-2026-114938, targets OpenJDK and widely used Java applications. The vulnerability allows attackers to execute arbitrary code via malformed serialization data, with public PoC evidence and no authentication required, threatening enterprise services. Vendor releases patch in the latest OpenJDK update; organizations should upgrade immediately and disable remote debugging features as a temporary mitigation.]]></description>
       <pubDate>Tue, 17 Nov 2026 22:29:57 GMT</pubDate>
       <source url="https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk">Wiz Research</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Defending Against Java4Shell: Vulnerability in OpenJDK Enables RCE on AVX-512 CPUs</title>
+      <link>https://secubuzz.com/news/defending-against-java4shell-vulnerability-in-open-db46b254</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/defending-against-java4shell-vulnerability-in-open-db46b254</guid>
+      <description><![CDATA[On November 17, 2026, security researchers at Calif disclosed Java4Shell (CVE-2026-114938, CVSS 4.0: 9.2 Critical), a memory-corruption vulnerability in OpenJDK’s Base64 decoder that allows malformed Base64 input to trigger remote code execution (RCE).]]></description>
+      <pubDate>Tue, 17 Nov 2026 22:19:19 GMT</pubDate>
+      <source url="https://www.sentinelone.com/blog/java4shell-vulnerability-in-openjdk-enables-rce-on-avx-512-cpus/">SentinelOne</source>
       <category>CVE</category>
     </item>
     <item>
@@ -141,6 +159,15 @@
       <pubDate>Tue, 17 Nov 2026 19:17:56 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/control-systems-codesys-security-advisory-av26-1169">Canadian Centre for Cyber Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Chrome 158 Released with 204 Security Fixes</title>
+      <link>https://secubuzz.com/news/chrome-158-released-with-204-security-fixes-d21a3ac3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-released-with-204-security-fixes-d21a3ac3</guid>
+      <description><![CDATA[Google Chrome promoted version 158 to the stable channel for Windows, Mac, and Linux, delivering 204 security fixes. The update addresses a critical use-after-free flaw in WebView (CVE-2026-130963) that could allow remote code execution if exploited. Users should install the new release immediately; the Chrome Security Page lists all patches and the update is available through standard OS update mechanisms.]]></description>
+      <pubDate>Tue, 17 Nov 2026 19:12:07 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01699533288.html">Google Chrome Releases</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Kazakh Ransomware Suspect Extradited from Italy</title>
@@ -276,6 +303,15 @@
       <pubDate>Tue, 17 Nov 2026 16:21:00 GMT</pubDate>
       <source url="https://therecord.media/nsa-net-disruptions">The Record</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Zyxel Firmware Vulnerabilities Expose Command Injection</title>
+      <link>https://secubuzz.com/news/zyxel-firmware-vulnerabilities-expose-command-inje-60704b0c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zyxel-firmware-vulnerabilities-expose-command-inje-60704b0c</guid>
+      <description><![CDATA[Zyxel disclosed out-of-bounds write and post-authentication command injection flaws in DX3300-T0, DX3301-T0, and EX3301-T0 firmware versions up to 5.50(ABVY.8.3)C0. The vulnerabilities allow authenticated attackers to execute arbitrary commands on affected DSL/Ethernet CPE, Fiber ONTs, and Wireless Extenders, potentially compromising network control.]]></description>
+      <pubDate>Tue, 17 Nov 2026 16:20:00 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/zyxel-security-advisory-av26-1167">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Critical Java Vulnerability CVE-2026-114938 Requires Immediate Patching</title>
@@ -419,42 +455,6 @@
       <description><![CDATA[Envoy introduced Visitors Critical, an infrastructure-grade visitor security platform that consolidates identity verification, screening, and approval workflows into a single architecture. The solution targets high-consequence environments, ensuring audit-ready records and preventing gaps that one-size-fits-all visitor processes can create. Organizations can adopt Visitors Critical to enforce strict control, assurance, and governance across all visitor scenarios.]]></description>
       <pubDate>Tue, 17 Nov 2026 14:28:49 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/17/envoy-visitors-critical/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Exploit Unpatched Microsoft Exchange Servers to Deploy Custom RATs Across Southeast Asia</title>
-      <link>https://secubuzz.com/news/hackers-exploit-unpatched-microsoft-exchange-serve-dcaa14f1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-unpatched-microsoft-exchange-serve-dcaa14f1</guid>
-      <description><![CDATA[Hackers are exploiting unpatched Microsoft Exchange servers and vulnerable web servers to break into government networks across Southeast Asia, deploying custom remote access trojans built for quiet, long-term spying. The campaign combines server exploitation, targeted phishing, credential theft, and mailbox access to pursue sensitive government information.]]></description>
-      <pubDate>Tue, 17 Nov 2026 14:24:16 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/microsoft-exchange-servers/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Linx Security Governs AI Agent Actions</title>
-      <link>https://secubuzz.com/news/linx-security-governs-ai-agent-actions-129f5264</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linx-security-governs-ai-agent-actions-129f5264</guid>
-      <description><![CDATA[Linx Security introduced four capabilities extending identity governance to managed and unmanaged AI agents across existing gateways. Shadow AI Agent Detection identifies unsanctioned agents, while Agent Runtime Control governs each agent action in the gateway organizations already operate. The vendor also added Autopilots for governed agent use cases and Prompt-to-Workflow conversion from plain-English descriptions into tested agentic workflows.]]></description>
-      <pubDate>Tue, 17 Nov 2026 14:23:26 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/17/linx-security-agent-identity-control/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Fandango Alerts Buyers to Possible Card Data Exposure</title>
-      <link>https://secubuzz.com/news/fandango-alerts-buyers-to-possible-card-data-expos-e66f2122</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fandango-alerts-buyers-to-possible-card-data-expos-e66f2122</guid>
-      <description><![CDATA[Fandango disclosed that card numbers, CVVs, expiration dates, and email addresses may have been exposed during checkout over four days in October. The leak likely resulted from insecure handling of payment data, creating a vulnerability that could enable credential theft; no exploitation reported. Fandango warned affected customers to monitor accounts and change passwords while investigating the incident with payment processors.]]></description>
-      <pubDate>Tue, 17 Nov 2026 14:14:24 GMT</pubDate>
-      <source url="https://www.securityweek.com/fandango-warns-ticket-buyers-of-payment-card-data-exposure/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Detectify Introduces Agentic Tooling for Live Verification</title>
-      <link>https://secubuzz.com/news/detectify-introduces-agentic-tooling-for-live-veri-28032cc2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/detectify-introduces-agentic-tooling-for-live-veri-28032cc2</guid>
-      <description><![CDATA[Detectify has released Agentic Tooling, enabling organizations to run AI agents in their own environments to probe suspected vulnerabilities in live applications. The tool includes a Security Ledger that records objective evidence, allowing teams to confirm exploitability rather than rely on probabilistic assessments. This development addresses a DevSecOps gap, providing a systematic approach to validate and prioritize vulnerabilities before deployment.]]></description>
-      <pubDate>Tue, 17 Nov 2026 14:13:55 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/17/detectify-agentic-tooling/">Help Net Security</source>
       <category>General</category>
     </item>
   </channel>
