@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 20:46:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 21:46:44 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>N-able Releases HF3 Patches for 17 Zero-Days</title>
+      <link>https://secubuzz.com/news/n-able-releases-hf3-patches-for-17-zero-days-1175cbe9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-releases-hf3-patches-for-17-zero-days-1175cbe9</guid>
+      <description><![CDATA[N-able released N-central HF3 Patches 17 to address 17 zero-day vulnerabilities, including remote code execution and authentication bypasses. The flaws involve memory-corruption and logic errors that could let attackers execute arbitrary code or gain elevated privileges; no public exploits are confirmed. Administrators should apply the HF3 Patches 17 immediately and monitor for anomalous activity using the provided detection rules.]]></description>
+      <pubDate>Tue, 17 Nov 2026 20:55:16 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/n-able-kills-legacy-apis-patches-17-n-central-zero-days">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Fugaku Supercomputer Taken Offline After Cyberattack</title>
+      <link>https://secubuzz.com/news/fugaku-supercomputer-taken-offline-after-cyberatta-a1093be6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fugaku-supercomputer-taken-offline-after-cyberatta-a1093be6</guid>
+      <description><![CDATA[Japan’s RIKEN Center for Computational Science pulled the Fugaku supercomputer offline following a security breach that compromised system integrity. The attack exploited an unspecified vulnerability in the supercomputer’s software stack, allowing attackers to gain unauthorized access to high-performance computing resources. Operators have applied security patches, tightened access controls, and are conducting a full forensic investigation to assess potential data exposure.]]></description>
+      <pubDate>Tue, 17 Nov 2026 20:51:21 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>OPTIMJACK Compromises Vendor Script, Exposes Websites</title>
+      <link>https://secubuzz.com/news/optimjack-compromises-vendor-script-exposes-websit-2452cb37</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/optimjack-compromises-vendor-script-exposes-websit-2452cb37</guid>
+      <description><![CDATA[The OPTIMJACK supply chain attack compromised a vendor script, allowing attackers to expose and manipulate websites. The compromised script introduced malicious code that could exfiltrate data and serve as a foothold for further attacks; the incident underscores the risk of third-party code. Security teams should audit third-party scripts, enforce strict segmentation, and monitor for anomalous activity.]]></description>
+      <pubDate>Tue, 17 Nov 2026 20:43:14 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/">Unit 42</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>CVE-2026-130622 and CVE-2026-130623 - Incorrect authorization in credential loading and handling for namespace-scoped issuers in AWS Private CA Connector for Kubernetes (aws-privateca-issuer)</title>
       <link>https://secubuzz.com/news/cve-2026-130622-and-cve-2026-130623-incorrect-auth-2c8ce2c4</link>
@@ -125,6 +152,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Microsoft Discloses Windows Setup Elevation Vulnerability CVE-2026-119914</title>
+      <link>https://secubuzz.com/news/microsoft-discloses-windows-setup-elevation-vulner-9d04e0b1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-discloses-windows-setup-elevation-vulner-9d04e0b1</guid>
+      <description><![CDATA[Microsoft disclosed CVE-2026-119914, an elevation of privilege flaw in Windows Setup and Deployment. The flaw allows local users to gain higher privileges during installation, but no public exploit or CVSS score is provided. Microsoft issued an informational update; users should apply the latest Windows updates when available to mitigate potential risk.]]></description>
+      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft IIS Remote Code Execution Vulnerability CVE-2026-119961</title>
       <link>https://secubuzz.com/news/microsoft-iis-remote-code-execution-vulnerability-71c899f5</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-iis-remote-code-execution-vulnerability-71c899f5</guid>
@@ -195,6 +231,15 @@
       <pubDate>Tue, 17 Nov 2026 15:17:28 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html">The Hacker News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>N-able Issues CVE Patches for N-central and MMS3</title>
+      <link>https://secubuzz.com/news/n-able-issues-cve-patches-for-n-central-and-mms3-d5fa4d5e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-issues-cve-patches-for-n-central-and-mms3-d5fa4d5e</guid>
+      <description><![CDATA[N-able disclosed two CVE vulnerabilities in N-central HF3 and MMS3 appliance, enabling local privilege escalation and authentication bypass. CVE-2026-129271 exploits a flaw in the Patch Management component to gain elevated privileges, while CVE-2026-129272 uses predictable passcodes to bypass MMS3 authentication; neither exploit is confirmed in the wild. N-able recommends applying patches 2026.4.1 HF3 and 2.14.4.5829.]]></description>
+      <pubDate>Tue, 17 Nov 2026 15:02:31 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1165">Canadian Centre for Cyber Security</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Phishing Kits Capture Microsoft 365 Tokens</title>
@@ -296,6 +341,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>COLD RELIC Exploits US Organization via Impersonation</title>
+      <link>https://secubuzz.com/news/cold-relic-exploits-us-organization-via-impersonat-656dba45</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cold-relic-exploits-us-organization-via-impersonat-656dba45</guid>
+      <description><![CDATA[Mandiant traced a Russian state-sponsored group, COLD RELIC, to a 2026 compromise of a US-based organization through cloud impersonation. The attackers leveraged a prior late-2025 breach to weaponize stolen staff directory data and identities, enabling ongoing third-party espionage and data exfiltration. Security teams should enforce cloud access controls, monitor for credential reuse, and conduct response drills against state-sponsored intrusion tactics.]]></description>
+      <pubDate>Tue, 17 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://cloud.google.com/blog/topics/threat-intelligence/cold-relic-a-case-study-in-impersonation-and-compromise/">Google Threat Intelligence</source>
+      <category>Nation State</category>
+    </item>
+    <item>
       <title>Hackers Use Fake Shipment ZIP Files and DLL Side-Loading to Deploy PureLogs and PureRAT Malware</title>
       <link>https://secubuzz.com/news/hackers-use-fake-shipment-zip-files-and-dll-side-l-d100b481</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-fake-shipment-zip-files-and-dll-side-l-d100b481</guid>
@@ -330,6 +384,15 @@
       <pubDate>Tue, 17 Nov 2026 13:43:04 GMT</pubDate>
       <source url="https://cybersecuritynews.com/windows-11-ai-agent-tracking/">Cyber Security News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Kazakh Ransomware Affiliate Extradited Over $500M Demands</title>
+      <link>https://secubuzz.com/news/kazakh-ransomware-affiliate-extradited-over-500m-d-5e12c612</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kazakh-ransomware-affiliate-extradited-over-500m-d-5e12c612</guid>
+      <description><![CDATA[A 43-year-old national linked to the 8-Digits Team was extradited from Italy to the US for ransomware extortion against hospitals and schools. The affiliate allegedly stole data and threatened publication, demanding over $500 million in ransom from the INC and Lynx operations.]]></description>
+      <pubDate>Tue, 17 Nov 2026 13:42:04 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/17/8-digits-team-ransomware-suspect-extradited-us-italy/">Help Net Security</source>
+      <category>Ransomware</category>
     </item>
     <item>
       <title>Airlock Digital Releases Agentic Control for Endpoint AI</title>
@@ -393,69 +456,6 @@
       <pubDate>Tue, 17 Nov 2026 12:51:03 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/11/cnn-bbc-zoom-and-other-sites-served-malicious-code-in-supply-chain-attack">Malwarebytes Labs</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ScreenConnect Flaw Enables Silent Malware on MSP Techs</title>
-      <link>https://secubuzz.com/news/screenconnect-flaw-enables-silent-malware-on-msp-t-7b61a398</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-flaw-enables-silent-malware-on-msp-t-7b61a398</guid>
-      <description><![CDATA[A critical ScreenConnect vulnerability (CVE-2026-84869) allows attackers to run malicious files on MSP technicians’ computers without a confirmation prompt. The flaw transforms routine remote support sessions into covert infection vectors, exposing workstations that hold customer systems, management tools, and saved credentials. Security teams should apply vendor patches, disable guest-pushed file execution, and monitor remote support logs for unauthorized activity.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:33:09 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-screenconnect-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>N-Able Patches 17 N-Central Zero-Days</title>
-      <link>https://secubuzz.com/news/n-able-patches-17-n-central-zero-days-b71a59fc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-patches-17-n-central-zero-days-b71a59fc</guid>
-      <description><![CDATA[N-Able released patches for 17 N-Central zero-day vulnerabilities, including those already exploited in the wild. The flaws enabled unauthenticated remote code execution via the legacy API, exposing customers to system compromise in the wild. All affected installations should apply the latest update today; legacy APIs are disabled to mitigate risk.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:28:45 GMT</pubDate>
-      <source url="https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>iPhone Audio Service Bypasses Microphone Permission</title>
-      <link>https://secubuzz.com/news/iphone-audio-service-bypasses-microphone-permissio-609dd0d1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/iphone-audio-service-bypasses-microphone-permissio-609dd0d1</guid>
-      <description><![CDATA[Apple's audio service contained a flaw that allowed apps to record audio even after users denied microphone access. The bug bypassed the operating system's permission model, enabling unauthorized audio capture without user consent. Apple released a patch on August 17; users should install the update to prevent unauthorized recording today.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:14:36 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>DeepMind AI Formally Verifies Signal Protocol Cryptography</title>
-      <link>https://secubuzz.com/news/deepmind-ai-formally-verifies-signal-protocol-cryp-79f09066</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/deepmind-ai-formally-verifies-signal-protocol-cryp-79f09066</guid>
-      <description><![CDATA[Google DeepMind researchers applied agentic AI to formally verify cryptographic guarantees within the Signal protocol used by Signal, Google Messages, and WhatsApp. The four-week proof-of-concept used the AlphaProof Code framework to mathematically validate key security properties without identifying vulnerabilities or CVEs. Security teams should view this as independent cryptographic validation rather than an actionable patch or remediation requirement.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:05:43 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html">Schneier on Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CISA Adds One Known Exploited Vulnerability to Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-one-known-exploited-vulnerability-to-cat-b8c812d0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-one-known-exploited-vulnerability-to-cat-b8c812d0</guid>
-      <description><![CDATA[CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog">CISA</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Siemens .NET Client Library Path Traversal Vulnerability</title>
-      <link>https://secubuzz.com/news/siemens-net-client-library-path-traversal-vulnerab-8645c3e4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-net-client-library-path-traversal-vulnerab-8645c3e4</guid>
-      <description><![CDATA[Siemens' .NET Client Library for SIMATIC S7 Webserver API contains a path traversal flaw enabling file read/write outside the download directory. Rated CVSS 7.5, the flaw exploits pathname validation and leaks sensitive error messages, exploitable with public proof-of-concept code. Siemens released an updated library; teams should upgrade immediately or apply the vendor-issued workaround to block unauthorized file access.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Dorsett Controls InfoScan</title>
-      <link>https://secubuzz.com/news/dorsett-controls-infoscan-88f5512e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dorsett-controls-infoscan-88f5512e</guid>
-      <description><![CDATA[The following versions of Dorsett Controls InfoScan are affected: InfoScan CVSS Vendor Equipment v3 8.1 Dorsett Controls InfoScan 5 . Expand All + CVE-2026-117659 The InfoScan Electron desktop client improperly handles TLS certificate errors by accepting certificates without validating their trustworthiness.]]></description>
-      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01">CISA</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

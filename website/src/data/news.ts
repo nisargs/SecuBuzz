@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "n-able-releases-hf3-patches-for-17-zero-days-1175cbe9",
+    "title": "N-able Releases HF3 Patches for 17 Zero-Days",
+    "summary": "N-able released N-central HF3 Patches 17 to address 17 zero-day vulnerabilities, including remote code execution and authentication bypasses. The flaws involve memory-corruption and logic errors that could let attackers execute arbitrary code or gain elevated privileges; no public exploits are confirmed. Administrators should apply the HF3 Patches 17 immediately and monitor for anomalous activity using the provided detection rules.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/n-able-kills-legacy-apis-patches-17-n-central-zero-days",
+    "publishedAt": "2026-11-17T20:55:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-releases-hf3-patches-for-17-zero-days",
+      "article-1175cbe9",
+      "1175cbe9",
+      "n-able-releases-hf3-patches-for-17-zero-days-3110aa"
+    ]
+  },
+  {
+    "slug": "fugaku-supercomputer-taken-offline-after-cyberatta-a1093be6",
+    "title": "Fugaku Supercomputer Taken Offline After Cyberattack",
+    "summary": "Japan’s RIKEN Center for Computational Science pulled the Fugaku supercomputer offline following a security breach that compromised system integrity. The attack exploited an unspecified vulnerability in the supercomputer’s software stack, allowing attackers to gain unauthorized access to high-performance computing resources. Operators have applied security patches, tightened access controls, and are conducting a full forensic investigation to assess potential data exposure.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
+    "publishedAt": "2026-11-17T20:51:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fugaku-supercomputer-taken-offline-after-cyberatta",
+      "article-a1093be6",
+      "a1093be6",
+      "fugaku-supercomputer-taken-offline-after-cyberatta-1d8537",
+      "fugaku-supercomputer-taken-offline-after-cyberattack"
+    ]
+  },
+  {
+    "slug": "optimjack-compromises-vendor-script-exposes-websit-2452cb37",
+    "title": "OPTIMJACK Compromises Vendor Script, Exposes Websites",
+    "summary": "The OPTIMJACK supply chain attack compromised a vendor script, allowing attackers to expose and manipulate websites. The compromised script introduced malicious code that could exfiltrate data and serve as a foothold for further attacks; the incident underscores the risk of third-party code. Security teams should audit third-party scripts, enforce strict segmentation, and monitor for anomalous activity.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/",
+    "publishedAt": "2026-11-17T20:43:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "optimjack-compromises-vendor-script-exposes-websit",
+      "article-2452cb37",
+      "2452cb37",
+      "optimjack-compromises-vendor-script-exposes-websit-1aa78a",
+      "optimjack-compromises-vendor-script-exposes-websites"
+    ]
+  },
+  {
     "slug": "cve-2026-130622-and-cve-2026-130623-incorrect-auth-2c8ce2c4",
     "title": "CVE-2026-130622 and CVE-2026-130623 - Incorrect authorization in credential loading and handling for namespace-scoped issuers in AWS Private CA Connector for Kubernetes (aws-privateca-issuer)",
     "summary": "Impacted versions: - aws-privateca-issuer before v1.12.0 - AWS Private CA Connector for Kubernetes EKS add-on before v1.12.0-eksbuild.1 Refer to the article for the most up-to-date and complete information.",
@@ -258,6 +314,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-discloses-windows-setup-elevation-vulner-9d04e0b1",
+    "title": "Microsoft Discloses Windows Setup Elevation Vulnerability CVE-2026-119914",
+    "summary": "Microsoft disclosed CVE-2026-119914, an elevation of privilege flaw in Windows Setup and Deployment. The flaw allows local users to gain higher privileges during installation, but no public exploit or CVSS score is provided. Microsoft issued an informational update; users should apply the latest Windows updates when available to mitigate potential risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914",
+    "publishedAt": "2026-11-17T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119914"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-discloses-windows-setup-elevation-vulner",
+      "article-9d04e0b1",
+      "9d04e0b1",
+      "microsoft-discloses-windows-setup-elevation-vulner-1fe891",
+      "microsoft-discloses-windows-setup-elevation-vulnerability-cv"
+    ]
+  },
+  {
     "slug": "microsoft-iis-remote-code-execution-vulnerability-71c899f5",
     "title": "Microsoft IIS Remote Code Execution Vulnerability CVE-2026-119961",
     "summary": "CVE-2026-119961 is a remote code execution flaw in Microsoft Windows IIS that allows attackers to run code via crafted HTTP requests. The flaw stems from improper input validation in the request parser, enabling unauthenticated exploitation with a CVSS score of 9.0, though no wild attacks have been seen. Microsoft issued an update; admins should apply the latest IIS patch.",
@@ -415,6 +492,27 @@ export const news: NewsBrief[] = [
       "article-7d932043",
       "7d932043",
       "trigram-impersonates-50-ai-and-blockchain-brands-44cebb"
+    ]
+  },
+  {
+    "slug": "n-able-issues-cve-patches-for-n-central-and-mms3-d5fa4d5e",
+    "title": "N-able Issues CVE Patches for N-central and MMS3",
+    "summary": "N-able disclosed two CVE vulnerabilities in N-central HF3 and MMS3 appliance, enabling local privilege escalation and authentication bypass. CVE-2026-129271 exploits a flaw in the Patch Management component to gain elevated privileges, while CVE-2026-129272 uses predictable passcodes to bypass MMS3 authentication; neither exploit is confirmed in the wild. N-able recommends applying patches 2026.4.1 HF3 and 2.14.4.5829.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1165",
+    "publishedAt": "2026-11-17T15:02:31.000Z",
+    "cves": [
+      "CVE-2026-129271",
+      "CVE-2026-129272"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-issues-cve-patches-for-n-central-and-mms3",
+      "article-d5fa4d5e",
+      "d5fa4d5e",
+      "n-able-issues-cve-patches-for-n-central-and-mms3-761d20"
     ]
   },
   {
@@ -622,6 +720,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cold-relic-exploits-us-organization-via-impersonat-656dba45",
+    "title": "COLD RELIC Exploits US Organization via Impersonation",
+    "summary": "Mandiant traced a Russian state-sponsored group, COLD RELIC, to a 2026 compromise of a US-based organization through cloud impersonation. The attackers leveraged a prior late-2025 breach to weaponize stolen staff directory data and identities, enabling ongoing third-party espionage and data exfiltration. Security teams should enforce cloud access controls, monitor for credential reuse, and conduct response drills against state-sponsored intrusion tactics.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Google Threat Intelligence",
+    "sourceUrl": "https://cloud.google.com/blog/topics/threat-intelligence/cold-relic-a-case-study-in-impersonation-and-compromise/",
+    "publishedAt": "2026-11-17T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cold-relic-exploits-us-organization-via-impersonat",
+      "article-656dba45",
+      "656dba45",
+      "cold-relic-exploits-us-organization-via-impersonat-7c4cde",
+      "cold-relic-exploits-us-organization-via-impersonation"
+    ]
+  },
+  {
     "slug": "hackers-use-fake-shipment-zip-files-and-dll-side-l-d100b481",
     "title": "Hackers Use Fake Shipment ZIP Files and DLL Side-Loading to Deploy PureLogs and PureRAT Malware",
     "summary": "Hackers are using a shipment-themed ZIP archive to launch a Windows malware chain that combines a legitimate signed application, DLL side-loading, and hidden Python code. The attack disguises its components as shipping material, images, documents, and a browser updater before running a payload linked to PureLogs and PureRAT infrastructure.",
@@ -692,6 +809,25 @@ export const news: NewsBrief[] = [
       "article-20ea69ce",
       "20ea69ce",
       "windows-11-telemetry-tracks-ai-coding-agents-6f4ec6"
+    ]
+  },
+  {
+    "slug": "kazakh-ransomware-affiliate-extradited-over-500m-d-5e12c612",
+    "title": "Kazakh Ransomware Affiliate Extradited Over $500M Demands",
+    "summary": "A 43-year-old national linked to the 8-Digits Team was extradited from Italy to the US for ransomware extortion against hospitals and schools. The affiliate allegedly stole data and threatened publication, demanding over $500 million in ransom from the INC and Lynx operations.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/8-digits-team-ransomware-suspect-extradited-us-italy/",
+    "publishedAt": "2026-11-17T13:42:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kazakh-ransomware-affiliate-extradited-over-500m-d",
+      "article-5e12c612",
+      "5e12c612",
+      "kazakh-ransomware-affiliate-extradited-over-500m-d-477591",
+      "kazakh-ransomware-affiliate-extradited-over-500m-demands"
     ]
   },
   {
@@ -1712,22 +1848,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "optimizely-supply-chain-attack-injects-malware-int-c9c8a653",
-    "title": "Optimizely Supply Chain Attack Injects Malware into Major Sites",
-    "summary": "Optimizely supply chain attack injected malicious JavaScript into CNN, Fox News, BBC, Zoom, Salesforce, and GitLab, harvesting cryptocurrency and payment data. The code also exploits known iOS vulnerabilities, potentially compromising mobile devices that load the compromised pages. Security teams should verify Optimizely’s integrity, remove malicious scripts, and apply vendor-issued patches or revert to a trusted version.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
+    "slug": "optimizely-supply-chain-attack-injects-malicious-j-f3269b15",
+    "title": "Optimizely Supply Chain Attack Injects Malicious JavaScript into Major Websites",
+    "summary": "Optimizely’s supply-chain compromise injected malicious JavaScript into hundreds of client sites, including CNN, Fox News, BBC, Zoom, Salesforce, and GitLab. The payload exfiltrated cryptocurrency and payment data, leveraged known iOS vulnerabilities, and enabled further malware delivery to visitors’ browsers. Affected customers were urged to verify Optimizely’s integrity, remove injected scripts, update to the platform version, and monitor for suspicious activity.",
+    "category": "Breach",
+    "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
     "publishedAt": "2026-11-17T02:12:17.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/optimizely-malicious-code-customer-sites"
+      }
+    ],
     "aliases": [
-      "optimizely-supply-chain-attack-injects-malware-int",
-      "article-c9c8a653",
-      "c9c8a653",
-      "optimizely-supply-chain-attack-injects-malware-int-45d665",
-      "optimizely-supply-chain-attack-injects-malware-into-major-si"
+      "optimizely-supply-chain-attack-injects-malicious-j",
+      "article-f3269b15",
+      "f3269b15",
+      "optimizely-supply-chain-attack-injects-malicious-j-45d665",
+      "optimizely-supply-chain-attack-injects-malicious-javascript-"
     ]
   },
   {
@@ -1976,6 +2117,25 @@ export const news: NewsBrief[] = [
       "article-724f3c40",
       "724f3c40",
       "mechanize-vulnerability-enables-server-induced-dos-7e7ab0"
+    ]
+  },
+  {
+    "slug": "greynoise-integrates-edge-intelligence-into-elasti-151c0f37",
+    "title": "GreyNoise Integrates Edge Intelligence into Elastic Security",
+    "summary": "GreyNoise extends its real-time edge intelligence into Elastic Security, adding purpose-built Kibana dashboards for edge observability. The integration delivers detection rules that correlate perimeter and network activity with GreyNoise intelligence, enriching IP classifications in real time. Security teams can now leverage these dashboards and rules to improve threat visibility and response within their Elastic Security stack.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "GreyNoise Labs",
+    "sourceUrl": "https://www.greynoise.io/blog/expands-real-time-edge-intelligence-elastic-security",
+    "publishedAt": "2026-11-17T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "greynoise-integrates-edge-intelligence-into-elasti",
+      "article-151c0f37",
+      "151c0f37",
+      "greynoise-integrates-edge-intelligence-into-elasti-634ed0",
+      "greynoise-integrates-edge-intelligence-into-elastic-security"
     ]
   },
   {
@@ -3437,21 +3597,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "telegram-widgets-vulnerable-to-rce-demonstrated-5838e2f1",
-    "title": "Telegram Widgets Vulnerable to RCE Demonstrated",
-    "summary": "Researchers demonstrated remote code execution against Telegram’s launched widgets, targeting the platform’s web-based interface. The vulnerability allows attackers to inject malicious code via widget configuration, potentially delivering a WebRAT, as Kaspersky reports, though Telegram’s founder disputes the claims. Telegram has not released a patch; users should disable widgets until an official fix is issued and monitor for suspicious widget activity.",
+    "slug": "telegram-widgets-vulnerable-to-remote-code-executi-5d175248",
+    "title": "Telegram Widgets Vulnerable to Remote Code Execution",
+    "summary": "Telegram’s Android and web-based widgets allow attackers to execute arbitrary code on users’ devices through insufficient JavaScript validation. The flaw enables remote code execution, potentially delivering a WebRAT, and has no public exploits yet. Telegram has not released a patch; users should disable widgets and apply future updates promptly to mitigate risk.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch/",
     "publishedAt": "2026-11-16T12:48:03.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html"
+      }
+    ],
     "aliases": [
-      "telegram-widgets-vulnerable-to-rce-demonstrated",
-      "article-5838e2f1",
-      "5838e2f1",
-      "telegram-widgets-vulnerable-to-rce-demonstrated-5ba252"
+      "telegram-widgets-vulnerable-to-remote-code-executi",
+      "article-5d175248",
+      "5d175248",
+      "telegram-widgets-vulnerable-to-remote-code-executi-5ba252",
+      "telegram-widgets-vulnerable-to-remote-code-execution"
     ]
   },
   {
@@ -9672,153 +9838,6 @@ export const news: NewsBrief[] = [
       "article-bca3f800",
       "bca3f800",
       "rhsa-2026-99817-important-xfsprogs-security-update-37d665"
-    ]
-  },
-  {
-    "slug": "microsoft-broad-vulnerability-rollup-2026-7f9c51fd",
-    "title": "Microsoft Broad Vulnerability Rollup 2026",
-    "summary": "Microsoft disclosed a collection of vulnerabilities affecting .NET, Azure services, Microsoft 365, and other products in its November 2026 security advisory. Specific root causes are not detailed, but the flaws could allow attackers to execute code or elevate privileges within affected components. Microsoft recommends applying the latest cumulative updates and following vendor guidance to remediate the identified weaknesses.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-november-2026-monthly-rollup-av26-1142",
-    "publishedAt": "2026-11-12T20:42:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-broad-vulnerability-rollup-2026",
-      "article-7f9c51fd",
-      "7f9c51fd",
-      "microsoft-broad-vulnerability-rollup-2026-2b65b9"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-glib2-security-update-5fe320e5",
-    "title": "Red Hat Releases glib2 Security Update",
-    "summary": "glib2 on Red Hat Enterprise Linux 8.6 is impacted by a security flaw prompting an update. Red Hat Product Security rated the issue as Moderate, with CVSS base scores linked to CVE references. The vendor has released the patch; administrators and promptly apply it today to mitigate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99864",
-    "publishedAt": "2026-11-12T20:40:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-glib2-security-update",
-      "article-5fe320e5",
-      "5fe320e5",
-      "red-hat-releases-glib2-security-update-37d665"
-    ]
-  },
-  {
-    "slug": "google-chrome-vulnerabilities-affect-stable-channe-a897f5ba",
-    "title": "Google Chrome Vulnerabilities Affect Stable Channel Versions",
-    "summary": "Google Chrome stable channel versions before 157.0.8103.78/79 on Windows/Mac and 157.0.8103.78 on Linux contain undisclosed vulnerabilities that could enable remote code execution. The advisory does not disclose the flaw’s mechanism, but it warns of potential exploitation that could compromise user data or system integrity. Google urges users to review the advisory and install released patches to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1157",
-    "publishedAt": "2026-11-12T20:39:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-chrome-vulnerabilities-affect-stable-channe",
-      "article-a897f5ba",
-      "a897f5ba",
-      "google-chrome-vulnerabilities-affect-stable-channe-170ca3",
-      "google-chrome-vulnerabilities-affect-stable-channel-versions"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99846-important-pki-deps-10-6-security-b-9d58449f",
-    "title": "RHSA-2026:99846: Important: pki-deps:10.6 security, bug fix, and enhancement update",
-    "summary": "An update for the pki-deps:10.6 module is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99846",
-    "publishedAt": "2026-11-12T20:39:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99846-important-pki-deps-10-6-security-b",
-      "article-9d58449f",
-      "9d58449f",
-      "rhsa-2026-99846-important-pki-deps-10-6-security-b-37d665",
-      "rhsa-2026-99846-important-pki-deps-10-6-security-bug-fix-and"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99826-important-rhc-security-update-0ac23d2f",
-    "title": "RHSA-2026:99826: Important: rhc security update",
-    "summary": "An update for rhc is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99826",
-    "publishedAt": "2026-11-12T20:38:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99826-important-rhc-security-update",
-      "article-0ac23d2f",
-      "0ac23d2f",
-      "rhsa-2026-99826-important-rhc-security-update-37d665"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-mysql-8-4-security-update-50925d94",
-    "title": "Red Hat Releases MySQL 8.4 Security Update",
-    "summary": "Red Hat has issued a security update for MySQL 8.4 on Enterprise Linux 10. The update addresses multiple critical vulnerabilities with an Important impact rating; CVSS base scores are listed in the referenced CVE links. Administrators should apply the patch promptly and review the CVE references for detailed severity information.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99720",
-    "publishedAt": "2026-11-12T20:37:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-mysql-8-4-security-update",
-      "article-50925d94",
-      "50925d94",
-      "red-hat-releases-mysql-8-4-security-update-37d669"
-    ]
-  },
-  {
-    "slug": "node-js-vulnerabilities-affect-versions-prior-to-2-6b138317",
-    "title": "Node.js Vulnerabilities Affect Versions Prior to 26.13.1",
-    "summary": "Node.js versions prior to v24.22.3, v26.13.1, and v22.23.5 contain undisclosed vulnerabilities that could allow remote code execution or privilege escalation. The advisory does not reveal the specific flaw, but warns that exploitation could compromise application data or system integrity. Node.js recommends reviewing the advisory and applying available patches as soon as they are released to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/nodejs-security-advisory-av26-1156",
-    "publishedAt": "2026-11-12T20:35:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "node-js-vulnerabilities-affect-versions-prior-to-2",
-      "article-6b138317",
-      "6b138317",
-      "node-js-vulnerabilities-affect-versions-prior-to-2-0bd8f1",
-      "node-js-vulnerabilities-affect-versions-prior-to-26-13-1"
-    ]
-  },
-  {
-    "slug": "rhc-security-update-for-rhel-8-6-available-90f40726",
-    "title": "RHC Security Update for RHEL 8.6 Available",
-    "summary": "Red Hat released an important security update for the rhc client on RHEL 8.6 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The update addresses multiple vulnerabilities, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Red Hat recommends applying the rhc update immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99827",
-    "publishedAt": "2026-11-12T20:34:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhc-security-update-for-rhel-8-6-available",
-      "article-90f40726",
-      "90f40726",
-      "rhc-security-update-for-rhel-8-6-available-37d665"
     ]
   }
 ];

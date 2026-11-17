@@ -27,6 +27,195 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-119793",
+    "cveID": "CVE-2026-119793",
+    "slug": "cve-2026-119793",
+    "vendor": "npm",
+    "product": "@libp2p/gossipsub",
+    "name": "libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config",
+    "dateAdded": "2026-11-17",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "A single gossipsub peer can grow a node's topics map without bound by flooding subscription RPCs, because the default configuration has no global, per-peer, or topic-length cap and peer scoring does not penalise subscription volume. The peer is never greylisted, so the growth continues toward OOM.",
+    "requiredAction": "Upgrade @libp2p/gossipsub to version 17.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x2vm-cf3p-m2w8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119793"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-110789",
+    "cveID": "CVE-2026-110789",
+    "slug": "cve-2026-110789",
+    "vendor": "npm",
+    "product": "@libp2p/crypto",
+    "name": "libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
+    "dateAdded": "2026-11-17",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-130",
+    "ransomware": false,
+    "description": "A remote peer can stall a js-libp2p node's entire event loop for ~4–5 seconds per connection (and transiently allocate ~2 GB) by sending a ~15-byte crafted publicKey inside an Identify message. The malformed key reaches the DER decoder before any peer-id/signature check, so the attack is pre-auth and repeatable indefinitely by reconnecting.",
+    "requiredAction": "Upgrade @libp2p/crypto to version 5.1.22 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rvfr-cqwq-rc4j"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110789"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-110782",
+    "cveID": "CVE-2026-110782",
+    "slug": "cve-2026-110782",
+    "vendor": "Composer",
+    "product": "simplesamlphp/saml2",
+    "name": "SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding)",
+    "dateAdded": "2026-11-17",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-287",
+    "ransomware": false,
+    "description": "CVE-2026-49283 / GHSA-6929-8p9f-26jx (\"HTTP-Artifact TLS validator confusion allows cross-IdP authentication bypass\") was fixed so that HTTPArtifact::receive() verifies the embedded SAML Response using the IdP metadata signing keys.",
+    "requiredAction": "Upgrade simplesamlphp/saml2 to version 6.2.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r7hw-jx6r-756g"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110782"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-69241",
+    "cveID": "CVE-2026-69241",
+    "slug": "cve-2026-69241",
+    "vendor": "Composer",
+    "product": "awcodes/filament-curator",
+    "name": "Filament Curator: Stored XSS via unsanitized SVG upload served inline",
+    "dateAdded": "2026-11-17",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "SVG files uploaded through the Curator media panel are stored and served inline without any sanitization. An authenticated user with permission to upload media can upload an SVG containing embedded JavaScript. When another panel user opens that file via the View action (which opens the media as a top-level browser document), the embedded script executes in the origin of the Filament application.",
+    "requiredAction": "Upgrade awcodes/filament-curator to version 5.1.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8vm9-f75m-5h2m"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69241"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63389",
+    "cveID": "CVE-2026-63389",
+    "slug": "cve-2026-63389",
+    "vendor": "Composer",
+    "product": "awcodes/filament-curator",
+    "name": "Filament Curator: Cross-tenant media metadata disclosure via Curator picker search",
+    "dateAdded": "2026-11-17",
+    "dueDate": "",
+    "cvss": 5,
+    "severity": "Medium",
+    "cwe": "CWE-284",
+    "ransomware": false,
+    "description": "Summary In multitenant Filament panels, an authenticated user could retrieve media metadata belonging to other tenants by typing in the Curator media-picker search box. The search query omitted the tenant ownership scope that the normal file listing applies.",
+    "requiredAction": "Upgrade awcodes/filament-curator to version 5.1.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-828w-6qgx-3rcf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63389"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-62336",
+    "cveID": "CVE-2026-62336",
+    "slug": "cve-2026-62336",
+    "vendor": "Go",
+    "product": "go.qbee.io/agent",
+    "name": "qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper",
+    "dateAdded": "2026-11-17",
+    "dueDate": "",
+    "cvss": 8.5,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "This is a Local Privilege Escalation (LPE) vulnerability stemming from improper symlink handling (CWE-59: Link Following) and improper ownership management (CWE-282) inside the qbee-agent file manager logic. Any managed device running qbee-agent up to the affected versions. The impact manifests in three distinct vectors: 1.",
+    "requiredAction": "Upgrade go.qbee.io/agent to version 0.0.0-20260615134032-0fdf8e411de5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xhv5-8fpq-g7hf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62336"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63672",
+    "cveID": "CVE-2026-63672",
+    "slug": "cve-2026-63672",
+    "vendor": "Composer",
+    "product": "egroupware/egroupware",
+    "name": "EGroupware: User-Controlled Identity Provider Selection in SAML Authentication",
+    "dateAdded": "2026-11-17",
+    "dueDate": "",
+    "cvss": 6.1,
+    "severity": "Medium",
+    "cwe": "CWE-601",
+    "ransomware": false,
+    "description": "The login() function at line 130 passes the raw user-supplied value $_REQUEST['idp'] directly to SimpleSAMLphp's requireAuth() with only a regex check that the string starts with ' No validation is performed against a list of configured, trusted IdP entity IDs. An unauthenticated attacker can supply any HTTPS URL pointing to an IdP they control.",
+    "requiredAction": "Upgrade egroupware/egroupware to version 23.1.20260601 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pr4x-6fj4-gm4h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63672"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-14265",
     "cveID": "CVE-2026-14265",
     "slug": "cve-2026-14265",
@@ -1188,141 +1377,6 @@ export const advisories: Advisory[] = [
     "source": "GITHUB"
   },
   {
-    "cve": "CVE-2026-126302",
-    "cveID": "CVE-2026-126302",
-    "slug": "cve-2026-126302",
-    "vendor": "Pip",
-    "product": "nltk",
-    "name": "NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "nltk.sem.chat80.sql_query() opens a SQLite database by handing the result of nltk.data.find(dbname) straight to sqlite3.connect() without the path-containment check that the NLTK data sandbox (nltk.pathsec) is meant to enforce.",
-    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xmfg-f9cm-w86q"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126302"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126296",
-    "cveID": "CVE-2026-126296",
-    "slug": "cve-2026-126296",
-    "vendor": "Pip",
-    "product": "nltk",
-    "name": "NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "Path traversal in NLTK's save_maxent_params() and load_maxent_params() allows arbitrary file write and arbitrary file read outside the directories permitted by NLTK's pathsec security mechanism. This vulnerability was previously reported through Huntr, accepted by the NLTK project, and assigned CVE-2026-15367. A $750 bounty was paid through Huntr (i didnt get the fix bounty).",
-    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-59f9-gqg8-mqpj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126296"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126299",
-    "cveID": "CVE-2026-126299",
-    "slug": "cve-2026-126299",
-    "vendor": "Pip",
-    "product": "nltk",
-    "name": "NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
-    "dateAdded": "2026-11-14",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "The public CCG lexicon parser nltk.ccg.lexicon.fromstring parses caller-influenced lexicon text with two pure-Python loops whose cost is quadratic in the input width. A service that parses an untrusted CCG lexicon string can be driven into tens of seconds of single-threaded CPU by a few-megabyte input, starving the request worker. No authentication or user interaction is required.",
-    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-89p3-fcch-88ph"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126299"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126298",
-    "cveID": "CVE-2026-126298",
-    "slug": "cve-2026-126298",
-    "vendor": "Pip",
-    "product": "nltk",
-    "name": "NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
-    "dateAdded": "2026-11-14",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "Tree.chomsky_normal_form() binarizes a parse tree and defaults to right factoring. For a node with N children the right-factor branch repeatedly removes the first element of a working list with list.pop(0), which shifts all remaining elements each time, so binarizing one wide node costs O(N^2).",
-    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r53h-rw34-8h97"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126298"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126297",
-    "cveID": "CVE-2026-126297",
-    "slug": "cve-2026-126297",
-    "vendor": "Pip",
-    "product": "nltk",
-    "name": "NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
-    "dateAdded": "2026-11-14",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "ConllCorpusReader.srl_instances() builds semantic-role-labeling instances from a CoNLL corpus block. For a sentence block with P predicates and P span columns, the instance builder rescans every span column (and every span within it) once per predicate while searching for each predicate's head, giving O(P^2 * R) work.",
-    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-v8f3-6phw-6mh9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126297"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
     "cve": "CVE-2026-114713",
     "slug": "cve-2026-114713",
     "vendor": "UnrealIRCd",
@@ -1371,60 +1425,6 @@ export const advisories: Advisory[] = [
       }
     ],
     "source": "CISA KEV"
-  },
-  {
-    "cve": "CVE-2026-126295",
-    "cveID": "CVE-2026-126295",
-    "slug": "cve-2026-126295",
-    "vendor": "Pip",
-    "product": "nltk",
-    "name": "NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 6.8,
-    "severity": "Medium",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "BllipParser in nltk/parse/bllip.py hands caller-supplied filesystem paths to the native bllipparser C extension without routing them through NLTK's pathsec validation.",
-    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fg9w-wfp5-j933"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126295"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-62297",
-    "cveID": "CVE-2026-62297",
-    "slug": "cve-2026-62297",
-    "vendor": "npm",
-    "product": "ag-psd",
-    "name": "ag-psd can exhaust memory when parsing crafted PSD dimensions",
-    "dateAdded": "2026-11-13",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-789",
-    "ransomware": false,
-    "description": "readPsd() commits the image/layer buffers from the declared header geometry (width x height x channels x depth, and per-layer rectangles) before validating those values against the actual data. A tiny crafted PSD declaring huge geometry forces a multi-gigabyte allocation.",
-    "requiredAction": "Upgrade ag-psd to version 31.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qfx6-q44v-9qqw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62297"
-      }
-    ],
-    "source": "GITHUB"
   },
   {
     "cve": "CVE-2026-124194",
