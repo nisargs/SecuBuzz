@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 19:48:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 20:47:05 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Critical Java and NGINX Vulnerability CVE-2026-114938</title>
+      <link>https://secubuzz.com/news/critical-java-and-nginx-vulnerability-cve-2026-114-4adcf3cd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-java-and-nginx-vulnerability-cve-2026-114-4adcf3cd</guid>
+      <description><![CDATA[A critical vulnerability disclosed today, identified as CVE-2026-114938, affects Java and NGINX, while a separate Microsoft 365 outage was reported. The flaw allows unauthenticated remote code execution through malformed input, with public proof-of-concept code available, potentially compromising affected servers. Administrators should apply vendor-issued patches for Java and NGINX immediately and monitor Microsoft 365 for service restoration.]]></description>
+      <pubDate>Wed, 18 Nov 2026 19:54:50 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33532">SANS Internet Storm Center</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Wellington IT Breach Exposes 50 Credit Unions</title>
+      <link>https://secubuzz.com/news/wellington-it-breach-exposes-50-credit-unions-3536783e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wellington-it-breach-exposes-50-credit-unions-3536783e</guid>
+      <description><![CDATA[A cyberattack on Wellington IT exposed sensitive member data from 50 credit unions, primarily in Ireland. The breach likely involved credential compromise or unauthorized access to the provider’s systems, though the exact vector remains undisclosed. Affected institutions should conduct forensic investigations, reset credentials, and notify regulators while Wellington IT is advised to strengthen access controls.]]></description>
+      <pubDate>Wed, 18 Nov 2026 19:39:33 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Cisco Endpoint Connector Vulnerabilities Affect Linux, Mac, Windows</title>
+      <link>https://secubuzz.com/news/cisco-endpoint-connector-vulnerabilities-affect-li-c641da17</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-endpoint-connector-vulnerabilities-affect-li-c641da17</guid>
+      <description><![CDATA[Cisco disclosed vulnerabilities in Secure Endpoint Connector for Linux, Mac, and Windows affecting versions before 1.29.3, 1.27.5, and 8.6.4. The flaws allow local privilege escalation via improper input validation, with public proof-of-concept code available, potentially enabling attackers to gain elevated access. Administrators should upgrade to the latest Secure Endpoint Connector releases and apply vendor-issued patches to mitigate the risk.]]></description>
+      <pubDate>Wed, 18 Nov 2026 19:14:56 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1175">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>F5 NGINX Vulnerabilities CVE-2026-123007, CVE-2026-123633</title>
+      <link>https://secubuzz.com/news/f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-e9122083</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-e9122083</guid>
+      <description><![CDATA[F5 disclosed vulnerabilities in NGINX Plus and Open Source, CVE-2026-123007 and CVE-2026-123633, affecting versions before 37.3.0.1, 37.0.8.1, 37.2.0.1, 37.0.7.1, 1.31.9, and 1.30.7. The flaws allow remote code execution via malformed HTTP/2 requests, with public proof-of-concept code available, potentially enabling attackers to compromise servers. Administrators should upgrade to the latest NGINX releases and apply F5-issued patches immediately.]]></description>
+      <pubDate>Wed, 18 Nov 2026 19:02:27 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174">Canadian Centre for Cyber Security</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>CVE-2026-130638 - Path traversal in the object detection dataset preparation tool in AutoGluon MultiModal</title>
       <link>https://secubuzz.com/news/cve-2026-130638-path-traversal-in-the-object-detec-16072b1a</link>
@@ -233,6 +269,15 @@
       <category>Nation State</category>
     </item>
     <item>
+      <title>CISA Adds Four Known Exploited Vulnerabilities to Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-four-known-exploited-vulnerabilities-to-25f0f3dc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-four-known-exploited-vulnerabilities-to-25f0f3dc</guid>
+      <description><![CDATA[BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. Aware of an exploited vulnerability not currently listed in the KEV Catalog?. The vulnerabilities are tracked as CVE-2024-10441, CVE-2026-40217, CVE-2026-90436.]]></description>
+      <pubDate>Wed, 18 Nov 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>CISA Flags Active Exploitation of Puppet Enterprise Vulnerability</title>
       <link>https://secubuzz.com/news/cisa-flags-active-exploitation-of-puppet-enterpris-5f16325d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cisa-flags-active-exploitation-of-puppet-enterpris-5f16325d</guid>
@@ -411,51 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 08:24:31 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html">The Hacker News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>CISA Urges Patch for Java4Shell RCE Flaw</title>
-      <link>https://secubuzz.com/news/cisa-urges-patch-for-java4shell-rce-flaw-08dee8d0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-urges-patch-for-java4shell-rce-flaw-08dee8d0</guid>
-      <description><![CDATA[CISA urged immediate patching of Oracle Java’s CVE-2026-114938, a critical out-of-bounds write flaw that can cause DoS or remote code execution. The flaw exploits a JVM buffer overflow, allowing attackers with crafted input to corrupt memory and potentially run arbitrary code.]]></description>
-      <pubDate>Wed, 18 Nov 2026 08:24:23 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Scattered Spider Leader Sentenced Six Years in U.S. Prison</title>
-      <link>https://secubuzz.com/news/scattered-spider-leader-sentenced-six-years-in-u-s-10d73299</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/scattered-spider-leader-sentenced-six-years-in-u-s-10d73299</guid>
-      <description><![CDATA[A former Scattered Spider leader was sentenced to six years in U.S. federal prison after prosecutors alleged he stole millions in cryptocurrency and conspired to hack a dozen companies. The indictment cited coordinated phishing and credential-stealing campaigns targeting corporate networks, but no active exploitation was reported. The case highlights legal repercussions for orchestrating large-scale cybercrime operations.]]></description>
-      <pubDate>Wed, 18 Nov 2026 08:24:18 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Defense Firms Targeted by GravityRAT Phishing Campaign</title>
-      <link>https://secubuzz.com/news/defense-firms-targeted-by-gravityrat-phishing-camp-a3d38f2a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/defense-firms-targeted-by-gravityrat-phishing-camp-a3d38f2a</guid>
-      <description><![CDATA[Hackers used logos of major defense firms on a fake recruitment site to spread GravityRAT spyware. The site offered an Android résumé builder that harvested text messages, location data, and files, exploiting social engineering. Security teams should block the domain, enforce MFA, and train staff to avoid deceptive recruitment sites.]]></description>
-      <pubDate>Wed, 18 Nov 2026 08:07:47 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/spread-gravityrat-spyware/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Java4Shell Vulnerability - CVE-2026-114938</title>
-      <link>https://secubuzz.com/news/java4shell-vulnerability-cve-2026-114938-4621abdb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-vulnerability-cve-2026-114938-4621abdb</guid>
-      <description><![CDATA[Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in takeover of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.]]></description>
-      <pubDate>Wed, 18 Nov 2026 08:00:00 GMT</pubDate>
-      <source url="https://fortiguard.fortinet.com/psirt/FG-IR-26-278">Fortinet FortiGuard PSIRT</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Japan Shuts Fugaku Supercomputer After Internal Breach</title>
-      <link>https://secubuzz.com/news/japan-shuts-fugaku-supercomputer-after-internal-br-4e9a52dc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/japan-shuts-fugaku-supercomputer-after-internal-br-4e9a52dc</guid>
-      <description><![CDATA[RIKEN shut down its Fugaku supercomputer after attackers breached the internal operations network and installed malware on servers. The breach exposed credentials for up to 4,597 users across Fugaku and RIKYU, potentially compromising research data, though no exfiltration evidence surfaced. RIKEN suspended operations, applied patches, and is conducting a forensic investigation to assess the breach scope and reinforce network segmentation.]]></description>
-      <pubDate>Wed, 18 Nov 2026 07:59:16 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/japan-shuts-down-fugaku-supercomputer/">Cyber Security News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

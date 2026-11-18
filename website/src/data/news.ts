@@ -11,6 +11,86 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "critical-java-and-nginx-vulnerability-cve-2026-114-4adcf3cd",
+    "title": "Critical Java and NGINX Vulnerability CVE-2026-114938",
+    "summary": "A critical vulnerability disclosed today, identified as CVE-2026-114938, affects Java and NGINX, while a separate Microsoft 365 outage was reported. The flaw allows unauthenticated remote code execution through malformed input, with public proof-of-concept code available, potentially compromising affected servers. Administrators should apply vendor-issued patches for Java and NGINX immediately and monitor Microsoft 365 for service restoration.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33532",
+    "publishedAt": "2026-11-18T19:54:50.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-java-and-nginx-vulnerability-cve-2026-114",
+      "article-4adcf3cd",
+      "4adcf3cd",
+      "critical-java-and-nginx-vulnerability-cve-2026-114-57dd81",
+      "critical-java-and-nginx-vulnerability-cve-2026-114938"
+    ]
+  },
+  {
+    "slug": "wellington-it-breach-exposes-50-credit-unions-3536783e",
+    "title": "Wellington IT Breach Exposes 50 Credit Unions",
+    "summary": "A cyberattack on Wellington IT exposed sensitive member data from 50 credit unions, primarily in Ireland. The breach likely involved credential compromise or unauthorized access to the provider’s systems, though the exact vector remains undisclosed. Affected institutions should conduct forensic investigations, reset credentials, and notify regulators while Wellington IT is advised to strengthen access controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
+    "publishedAt": "2026-11-18T19:39:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wellington-it-breach-exposes-50-credit-unions",
+      "article-3536783e",
+      "3536783e",
+      "wellington-it-breach-exposes-50-credit-unions-7397db"
+    ]
+  },
+  {
+    "slug": "cisco-endpoint-connector-vulnerabilities-affect-li-c641da17",
+    "title": "Cisco Endpoint Connector Vulnerabilities Affect Linux, Mac, Windows",
+    "summary": "Cisco disclosed vulnerabilities in Secure Endpoint Connector for Linux, Mac, and Windows affecting versions before 1.29.3, 1.27.5, and 8.6.4. The flaws allow local privilege escalation via improper input validation, with public proof-of-concept code available, potentially enabling attackers to gain elevated access. Administrators should upgrade to the latest Secure Endpoint Connector releases and apply vendor-issued patches to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1175",
+    "publishedAt": "2026-11-18T19:14:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-endpoint-connector-vulnerabilities-affect-li",
+      "article-c641da17",
+      "c641da17",
+      "cisco-endpoint-connector-vulnerabilities-affect-li-1b59a2",
+      "cisco-endpoint-connector-vulnerabilities-affect-linux-mac-wi"
+    ]
+  },
+  {
+    "slug": "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-e9122083",
+    "title": "F5 NGINX Vulnerabilities CVE-2026-123007, CVE-2026-123633",
+    "summary": "F5 disclosed vulnerabilities in NGINX Plus and Open Source, CVE-2026-123007 and CVE-2026-123633, affecting versions before 37.3.0.1, 37.0.8.1, 37.2.0.1, 37.0.7.1, 1.31.9, and 1.30.7. The flaws allow remote code execution via malformed HTTP/2 requests, with public proof-of-concept code available, potentially enabling attackers to compromise servers. Administrators should upgrade to the latest NGINX releases and apply F5-issued patches immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174",
+    "publishedAt": "2026-11-18T19:02:27.000Z",
+    "cves": [
+      "CVE-2026-123007",
+      "CVE-2026-123633"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026",
+      "article-e9122083",
+      "e9122083",
+      "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-3f3de0",
+      "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-123633"
+    ]
+  },
+  {
     "slug": "cve-2026-130638-path-traversal-in-the-object-detec-16072b1a",
     "title": "CVE-2026-130638 - Path traversal in the object detection dataset preparation tool in AutoGluon MultiModal",
     "summary": "Bulletin ID: 2026-188-AWS Publication Date: 11/18/2026 10:00 AM PST Description: Relative path traversal in the object detection dataset preparation tool in AutoGluon Multimodal before 1.6.0 might allow adversary-in-the-middle attackers to write arbitrary files with the privileges of the user running the tool via a crafted dataset archive substituted for a dataset downloaded over plaintext HTTP.",
@@ -483,6 +563,30 @@ export const news: NewsBrief[] = [
       "article-7f34dac8",
       "7f34dac8",
       "france-blames-iran-for-fridge-cyberattacks-386f92"
+    ]
+  },
+  {
+    "slug": "cisa-adds-four-known-exploited-vulnerabilities-to-25f0f3dc",
+    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+    "summary": "BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. Aware of an exploited vulnerability not currently listed in the KEV Catalog?. The vulnerabilities are tracked as CVE-2024-10441, CVE-2026-40217, CVE-2026-90436.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-18T12:00:00.000Z",
+    "cves": [
+      "CVE-2024-10441",
+      "CVE-2026-40217",
+      "CVE-2026-90436",
+      "CVE-2026-90817"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-four-known-exploited-vulnerabilities-to",
+      "article-25f0f3dc",
+      "25f0f3dc",
+      "cisa-adds-four-known-exploited-vulnerabilities-to-460bc8",
+      "cisa-adds-four-known-exploited-vulnerabilities-to-catalog"
     ]
   },
   {
@@ -1117,6 +1221,90 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "zdi-26-1037-0day-pwn2own-united-chargers-grizzl-e-21430223",
+    "title": "ZDI-26-1037: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP Backend Configuration Authentication Bypass Vulnerability",
+    "summary": "This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131809.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1037/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-131809"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1037-0day-pwn2own-united-chargers-grizzl-e",
+      "article-21430223",
+      "21430223",
+      "zdi-26-1037-0day-pwn2own-united-chargers-grizzl-e-77f344",
+      "zdi-26-1037-0day-pwn2own-united-chargers-grizzl-e-smart-40a-"
+    ]
+  },
+  {
+    "slug": "zdi-26-1036-0day-pwn2own-united-chargers-grizzl-e-3b6347a3",
+    "title": "ZDI-26-1036: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A Wi-Fi Configuration Server Missing Authentication Vulnerability",
+    "summary": "This vulnerability allows network-adjacent attackers to modify Wi-Fi configuration on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131808.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1036/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-131808"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1036-0day-pwn2own-united-chargers-grizzl-e",
+      "article-3b6347a3",
+      "3b6347a3",
+      "zdi-26-1036-0day-pwn2own-united-chargers-grizzl-e-77f344",
+      "zdi-26-1036-0day-pwn2own-united-chargers-grizzl-e-smart-40a-"
+    ]
+  },
+  {
+    "slug": "zdi-26-1035-0day-pwn2own-united-chargers-grizzl-e-8692a04b",
+    "title": "ZDI-26-1035: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A Download of Code Without Integrity Check Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131810.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1035/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-131810"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1035-0day-pwn2own-united-chargers-grizzl-e",
+      "article-8692a04b",
+      "8692a04b",
+      "zdi-26-1035-0day-pwn2own-united-chargers-grizzl-e-77f344",
+      "zdi-26-1035-0day-pwn2own-united-chargers-grizzl-e-smart-40a-"
+    ]
+  },
+  {
+    "slug": "zdi-26-1034-0day-pwn2own-united-chargers-grizzl-e-f89dcbc3",
+    "title": "ZDI-26-1034: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A FTP URL Path Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131812.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1034/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-131812"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1034-0day-pwn2own-united-chargers-grizzl-e",
+      "article-f89dcbc3",
+      "f89dcbc3",
+      "zdi-26-1034-0day-pwn2own-united-chargers-grizzl-e-77f343",
+      "zdi-26-1034-0day-pwn2own-united-chargers-grizzl-e-smart-40a-"
     ]
   },
   {
@@ -9713,168 +9901,6 @@ export const news: NewsBrief[] = [
       "5c484090",
       "microsoft-365-outage-persists-as-restored-servers-6c9243",
       "microsoft-365-outage-persists-as-restored-servers-fail"
-    ]
-  },
-  {
-    "slug": "hackers-use-windows-named-pipes-and-smb-to-spread-ee410fed",
-    "title": "Hackers Use Windows Named Pipes and SMB to Spread Malware Across Isolated Government Networks",
-    "summary": "A new espionage group is using Windows named pipes and the SMB file-sharing protocol to move malware through tightly separated networks. Positive Technologies calls the group StingyBasilisk. It has been active since at least April 2022.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/windows-named-pipes-and-smb/",
-    "publishedAt": "2026-11-13T11:30:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-windows-named-pipes-and-smb-to-spread",
-      "article-ee410fed",
-      "ee410fed",
-      "hackers-use-windows-named-pipes-and-smb-to-spread-214603",
-      "hackers-use-windows-named-pipes-and-smb-to-spread-malware-ac"
-    ]
-  },
-  {
-    "slug": "google-releases-second-chrome-patch-for-code-execu-e72d8fdc",
-    "title": "Google Releases Second Chrome Patch for Code Execution Flaws",
-    "summary": "Google released a second Chrome update this week addressing vulnerabilities that could enable malicious code execution. The flaws involved input validation errors in the rendering engine, potentially allowing attackers to execute code; no public exploit was reported, but the risk warranted immediate remediation. Users should install the latest Chrome version, and security teams should verify update deployment across endpoints.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/google-pushes-second-chrome-update-this-week",
-    "publishedAt": "2026-11-13T11:20:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-releases-second-chrome-patch-for-code-execu",
-      "article-e72d8fdc",
-      "e72d8fdc",
-      "google-releases-second-chrome-patch-for-code-execu-ef31ec",
-      "google-releases-second-chrome-patch-for-code-execution-flaws"
-    ]
-  },
-  {
-    "slug": "silentair-hijacks-asian-telecom-networks-to-interc-643dac69",
-    "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
-    "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir this week.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
-    "publishedAt": "2026-11-13T11:10:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "silentair-hijacks-asian-telecom-networks-to-interc",
-      "article-643dac69",
-      "643dac69",
-      "silentair-hijacks-asian-telecom-networks-to-interc-7b27b2",
-      "silentair-hijacks-asian-telecom-networks-to-intercept-sms-2f"
-    ]
-  },
-  {
-    "slug": "europol-seizes-232m-and-arrests-354-vendors-in-ope-665b3e06",
-    "title": "Europol Seizes $232M and Arrests 354 Vendors in Operation TorNado",
-    "summary": "Europol and international police forces executed Operation TorNado, targeting five dark-web marketplaces-Archetyp, Bohemia, Nemesis, Kingdom, and Tor2Door-seizing $232 million in illicit assets. The crackdown arrested 354 vendors and buyers, dismantling supply chains for counterfeit goods, stolen credentials, and ransomware infrastructure. Law enforcement urged security teams to monitor dark-web forums for residual activity and update threat intelligence feeds accordingly.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/europol-dark-web-arrests-cybercrime/",
-    "publishedAt": "2026-11-13T11:06:29.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/operation-tornado-dark-web-marketplaces-global-arrests"
-      }
-    ],
-    "aliases": [
-      "europol-seizes-232m-and-arrests-354-vendors-in-ope",
-      "article-665b3e06",
-      "665b3e06",
-      "europol-seizes-232m-and-arrests-354-vendors-in-ope-5b7edd",
-      "europol-seizes-232m-and-arrests-354-vendors-in-operation-tor"
-    ]
-  },
-  {
-    "slug": "us-seizes-2-7b-stolen-from-binance-by-north-korean-4723292f",
-    "title": "US Seizes $2.7B Stolen from Binance by North Koreans",
-    "summary": "The U.S. government froze more than $2.7 billion of cryptocurrency stolen from Binance by North Korean hackers. The FBI reports the theft totaled $6 billion, indicating a large-scale credential compromise and cross-border money-laundering activity. Court orders now allow U.S. officials to seize or hold an additional $1.2 billion, tightening enforcement against the perpetrators.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/us-freezes-2-7-billion/",
-    "publishedAt": "2026-11-13T10:56:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-seizes-2-7b-stolen-from-binance-by-north-korean",
-      "article-4723292f",
-      "4723292f",
-      "us-seizes-2-7b-stolen-from-binance-by-north-korean-673eb5",
-      "us-seizes-2-7b-stolen-from-binance-by-north-koreans"
-    ]
-  },
-  {
-    "slug": "operation-endgame-seizes-gootloader-castlerat-stea-407a3717",
-    "title": "Operation Endgame Seizes Gootloader, CastleRAT, StealC Servers",
-    "summary": "Police dismantled Operation Endgame, seizing 235 servers, 257 domains, and 6.4 million stolen logins from the Gootloader ransomware, CastleRAT, and StealC credential-stealing networks. The seizure exposed compromised credentials, halted phishing and ransomware campaigns, and disrupted the command-and-control infrastructure. Affected organizations must verify compromised accounts, enforce multi-factor authentication, reset passwords, and update access controls.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
-    "publishedAt": "2026-11-13T10:55:03.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/operation-endgame-gootloader-castlerat-stealc-takedown"
-      }
-    ],
-    "aliases": [
-      "operation-endgame-seizes-gootloader-castlerat-stea",
-      "article-407a3717",
-      "407a3717",
-      "operation-endgame-seizes-gootloader-castlerat-stea-7498ed",
-      "operation-endgame-seizes-gootloader-castlerat-stealc-servers"
-    ]
-  },
-  {
-    "slug": "law-enforcement-seizes-gootloader-castlerat-stealc-1eac34c3",
-    "title": "Law Enforcement Seizes Gootloader, CastleRAT, StealC Infrastructure",
-    "summary": "Operation Endgame saw law enforcement seize 235 servers and 257 domains linked to the Gootloader, CastleRAT, and StealC malware families. The takedown also recovered 6.4 million victim credentials, exposing a large user base to credential theft and potential phishing campaigns. Security teams should invalidate compromised credentials, monitor for related phishing attempts, and review domain registrations for suspicious activity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/",
-    "publishedAt": "2026-11-13T10:48:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "law-enforcement-seizes-gootloader-castlerat-stealc",
-      "article-1eac34c3",
-      "1eac34c3",
-      "law-enforcement-seizes-gootloader-castlerat-stealc-1ce137",
-      "law-enforcement-seizes-gootloader-castlerat-stealc-infrastru"
-    ]
-  },
-  {
-    "slug": "check-point-releases-hotfix-for-exploited-root-pri-286f4805",
-    "title": "Check Point Releases Hotfix for Exploited Root Privilege Flaw",
-    "summary": "Check Point Software disclosed a zero-day vulnerability that attackers have leveraged since late October to gain root privileges on affected devices. The flaw permits unauthenticated remote code execution, enabling persistence and full system control, and has been actively exploited in the wild. Check Point issued emergency hotfixes; security teams should apply the patch immediately and monitor for anomalous activity.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
-    "publishedAt": "2026-11-13T10:44:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "check-point-releases-hotfix-for-exploited-root-pri",
-      "article-286f4805",
-      "286f4805",
-      "check-point-releases-hotfix-for-exploited-root-pri-3b2fe8",
-      "check-point-releases-hotfix-for-exploited-root-privilege-fla"
     ]
   }
 ];

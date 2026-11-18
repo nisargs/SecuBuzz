@@ -2,6 +2,241 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2024-10441",
+    "slug": "cve-2024-10441",
+    "vendor": "Synology",
+    "product": "DiskStation Manager (DSM)",
+    "name": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+    "dateAdded": "2026-11-18",
+    "dueDate": "2026-11-21",
+    "severity": "High",
+    "cwe": "CWE-116",
+    "ransomware": false,
+    "description": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-10441"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-40217",
+    "slug": "cve-2026-40217",
+    "vendor": "BerriAI",
+    "product": "LiteLLM",
+    "name": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+    "dateAdded": "2026-11-18",
+    "dueDate": "2026-12-02",
+    "severity": "High",
+    "cwe": "CWE-420",
+    "ransomware": false,
+    "description": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-40217"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-90817",
+    "slug": "cve-2026-90817",
+    "vendor": "Vanderbilt University",
+    "product": "Research Electronic Data Capture (REDCap)",
+    "name": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+    "dateAdded": "2026-11-18",
+    "dueDate": "2026-11-21",
+    "severity": "High",
+    "cwe": "CWE-73, CWE-94",
+    "ransomware": false,
+    "description": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that access an unintended controller route from a public survey context and supply a crafted file-path or stream parameter during data import processing. Exploitation requires knowledge of a valid public survey hash.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-90817"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-90436",
+    "slug": "cve-2026-90436",
+    "vendor": "Apache",
+    "product": "Axis",
+    "name": "Apache Axis Unsafe Reflection Vulnerability",
+    "dateAdded": "2026-11-18",
+    "dueDate": "2026-11-21",
+    "severity": "High",
+    "cwe": "CWE-470",
+    "ransomware": false,
+    "description": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-90436"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-71425",
+    "cveID": "CVE-2026-71425",
+    "slug": "cve-2026-71425",
+    "vendor": "npm",
+    "product": "outstatic",
+    "name": "Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-918",
+    "ransomware": false,
+    "description": "Outstatic’s authenticated GitHub REST proxy accepted an unvalidated endpoint parameter and constructed an upstream GitHub API URL by string concatenation while attaching the authenticated user’s GitHub OAuth token. A user with access to the Outstatic dashboard could craft a request that caused the server to send their own GitHub OAuth token to a non-GitHub host.",
+    "requiredAction": "Upgrade outstatic to version 2.2.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7jvc-9xq8-frff"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71425"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-69158",
+    "cveID": "CVE-2026-69158",
+    "slug": "cve-2026-69158",
+    "vendor": "Rust (Cargo)",
+    "product": "atomic-server",
+    "name": "Atomic Server: Unauthenticated full-response SSRF in Atomic-Server /bookmark endpoint",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 8.6,
+    "severity": "High",
+    "cwe": "CWE-918",
+    "ransomware": false,
+    "description": "Atomic-Server exposes a GET /bookmark endpoint that fetches an attacker-supplied URL server-side, parses the response, and reflects the fetched content back to the caller. The endpoint requires no authentication and performs no authorization of its own, and the underlying fetch helper applies no allow-list or private-IP deny-list.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-ff87-73jp-f3v4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69158"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-69157",
+    "cveID": "CVE-2026-69157",
+    "slug": "cve-2026-69157",
+    "vendor": "Rust (Cargo)",
+    "product": "atomic-server",
+    "name": "Atomic Server: Unauthenticated `/setup` invite grants write access to the entire Drive",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-306",
+    "ransomware": false,
+    "description": "atomic-server provisions a well-known invite at {server}/setup with write = true, target = the Drive root, and usagesLeft = 1. Invite redemption ignores the redeemer's identity (for_agent: _ in server/src/plugins/invite.rs:22), so possession of the URL is the only requirement.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pfwx-xjp4-qxcj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69157"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-69156",
+    "cveID": "CVE-2026-69156",
+    "slug": "cve-2026-69156",
+    "vendor": "Rust (Cargo)",
+    "product": "atomic-server",
+    "name": "Atomic Server: Arbitrary file read via user-controlled `internalId` in the `/download` handler (leaks root agent private key)",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 8.1,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "The Commit apply path enforces no allowlist of writable properties, so any authenticated Agent can set the internalId string (datatype string, no character validation) on a resource it owns.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8vc4-8hjq-988p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69156"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-69155",
+    "cveID": "CVE-2026-69155",
+    "slug": "cve-2026-69155",
+    "vendor": "Rust (Cargo)",
+    "product": "atomic-server",
+    "name": "Atomic Server: Stored XSS via uploaded files served inline (same-origin) on `/download` → account takeover",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "Files uploaded via POST /upload are served back by GET /download/{path} using actix_files::NamedFile. For text/html and image/svg+xml, actix-files (0.6.6) sets Content-Disposition: inline, so the browser renders the file instead of downloading it.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x277-3wcg-g9r2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69155"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-130001",
     "cveID": "CVE-2026-130001",
     "slug": "cve-2026-130001",
@@ -1237,141 +1472,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128126"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128127",
-    "cveID": "CVE-2026-128127",
-    "slug": "cve-2026-128127",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: Base64 multipart parts bypass client_max_size",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "When reading a multipart part with Content-Transfer-Encoding: base64, BodyPartReader.read_chunk() kept reading until the chunk length was a multiple of 4, with no byte limit. A part with a short Content-Length, or a long run of whitespace, could cause the entire remaining body to be read into memory within a single call before any size check, or spin on the event loop.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-24c4-3p7v-29cm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128127"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128128",
-    "cveID": "CVE-2026-128128",
-    "slug": "cve-2026-128128",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: WebSocket max_msg_size bypass via integer overflow",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "The max_msg_size check in the WebSocket reader added the declared frame length to the size of the partial message already buffered. In the C extension this addition is 64-bit arithmetic, so a declared length close to 2**63 overflowed and the check passed.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3rp8-rxj8-mvjw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128128"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128129",
-    "cveID": "CVE-2026-128129",
-    "slug": "cve-2026-128129",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: Unbounded buffering of data received during an upgrade request",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 8.2,
-    "severity": "High",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "While a request flagged as an upgrade (e.g. a WebSocket handshake) was being handled, all further data received on the connection was buffered with no size limit or flow control until the handler completed.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pw86-h8fm-j323"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128129"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128130",
-    "cveID": "CVE-2026-128130",
-    "slug": "cve-2026-128130",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 8.3,
-    "severity": "High",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "When the pipelined request queue was full, the pure-Python parser stored the unparsed remainder internally and also returned it to the caller. After a handler declined an upgrade request, the buffered data was re-fed, so the buffer grew with each handled request and already-handled requests were dispatched to the application again.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-28qf-cpwq-vmc2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128130"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128131",
-    "cveID": "CVE-2026-128131",
-    "slug": "cve-2026-128131",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: Concatenated compressed streams cause excessive CPU use",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "When decompressing a payload made up of many concatenated compressed members (gzip, deflate or zstd), each member was decoded by passing the entire remaining input to a new decompressor, resulting in quadratic CPU time. Empty members produce no output, so client_max_size and output backpressure did not limit the work.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h4cc-hm5h-fmm9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128131"
       }
     ],
     "source": "GITHUB"
