@@ -102,6 +102,33 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-75506",
+    "cveID": "CVE-2026-75506",
+    "slug": "cve-2026-75506",
+    "vendor": "Go",
+    "product": "OliveTin · OliveTin",
+    "name": "OliveTin: Second-Order OS Command Injection via shellAfterCompleted",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 6.6,
+    "severity": "Medium",
+    "cwe": "CWE-74",
+    "ransomware": false,
+    "description": "OliveTin's shellAfterCompleted post-execution hook injects unsanitized variables — including arbitrary command output (output), the authenticated username (ot_username), and the exit code (exitCode) — directly into a shell command template processed by sh -c. Unlike the main action's argument handling, no checkShellArgumentSafety validation is applied to these variables.",
+    "requiredAction": "Upgrade OliveTin · OliveTin to version 0.0.0-20260728155752-e5d29b68da66 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vc6p-m6vx-6cwq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75506"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-69131",
     "cveID": "CVE-2026-69131",
     "slug": "cve-2026-69131",
@@ -1445,33 +1472,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128074"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128072",
-    "cveID": "CVE-2026-128072",
-    "slug": "cve-2026-128072",
-    "vendor": "npm",
-    "product": "@nuxt/webpack-builder",
-    "name": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 3.1,
-    "severity": "Low",
-    "cwe": "CWE-346",
-    "ransomware": false,
-    "description": "When using the webpack or rspack builder, the dev server serves built client chunks to any request whose Host header matches its Origin/Referer, or that carries Sec-Fetch-Site: same-origin. After a DNS rebinding attack both headers name the attacker's hostname, so a malicious page opened while nuxt dev is running can read /_nuxt/*.js and exfiltrate the app's source.",
-    "requiredAction": "Upgrade @nuxt/webpack-builder to version 4.6.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x2wv-5868-p7v2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128072"
       }
     ],
     "source": "GITHUB"
