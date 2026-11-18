@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 06:45:42 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 07:45:54 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Deutsche Telekom IoT CEO Discusses 20-Year Device Security</title>
+      <link>https://secubuzz.com/news/deutsche-telekom-iot-ceo-discusses-20-year-device-ae815c66</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/deutsche-telekom-iot-ceo-discusses-20-year-device-ae815c66</guid>
+      <description><![CDATA[In an interview, Deutsche Telekom IoT CEO Christian Schwalbe outlined 20-year device security challenges. He noted forgotten devices as the greatest risk, EU Cyber Resilience Act will compel manufacturers to maintain security, and detection via anomalous communication patterns. Schwalbe discussed post-quantum cryptography for constrained devices, research on splitting secrets across terrestrial networks, urging adoption of new schemes and continuous monitoring.]]></description>
+      <pubDate>Wed, 18 Nov 2026 07:30:25 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/18/christian-schwalbe-deutsche-telekom-iot-security/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Scam Victim Blaming Deepens Harm, Says Psychologist</title>
+      <link>https://secubuzz.com/news/scam-victim-blaming-deepens-harm-says-psychologist-3f4ad8cc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/scam-victim-blaming-deepens-harm-says-psychologist-3f4ad8cc</guid>
+      <description><![CDATA[At IRISSCON 2026, cyberpsychologist Dr. Nicola Fox Hamilton discussed how blaming victims of phishing and scams deepens harm and silences them. She explained that the psychological impact of scams can lead to long-term trauma and reluctance to report future incidents. The talk emphasized the need for supportive frameworks that address victim psychology rather than assigning blame.]]></description>
+      <pubDate>Wed, 18 Nov 2026 07:00:33 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/18/nicola-fox-hamilton-victim-blaming-scams-phishing/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Agent Framework PyPI Package Compromised for Credential Theft</title>
+      <link>https://secubuzz.com/news/microsoft-agent-framework-pypi-package-compromised-6856d6e2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-agent-framework-pypi-package-compromised-6856d6e2</guid>
+      <description><![CDATA[Attackers compromised Microsoft’s agent-framework PyPI package, publishing malicious 1.26.1 and 1.26.2 releases that embed a credential stealer. The stealer runs on every Python start, enabling cloud credential theft, and was flagged by multiple security firms. Microsoft should revoke the releases, users must uninstall or upgrade to a clean version, and enforce package integrity checks.]]></description>
+      <pubDate>Wed, 18 Nov 2026 06:45:26 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>TapMap Visualizes Network Connections on World Map</title>
+      <link>https://secubuzz.com/news/tapmap-visualizes-network-connections-on-world-map-a1ca01f4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tapmap-visualizes-network-connections-on-world-map-a1ca01f4</guid>
+      <description><![CDATA[TapMap is a free, open-source desktop app that visualizes a computer’s active network connections on an interactive world map. It scans open sockets, extracts remote IPs, and resolves them via a local GeoIP database, showing each connection’s approximate location. Users can click a connection to launch its application, but the tool does not verify physical locations, so cross-check is advised.]]></description>
+      <pubDate>Wed, 18 Nov 2026 06:30:24 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/18/tapmap-network-map-open-source/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Russian Hackers Use Cloud Breach to Target Second US Org</title>
       <link>https://secubuzz.com/news/russian-hackers-use-cloud-breach-to-target-second-a9087332</link>
@@ -14,6 +50,24 @@
       <description><![CDATA[Russian state-sponsored actors breached a U.S. organization’s Google Workspace in late 2025, exfiltrating staff directory and cloud files. They leveraged the stolen data to impersonate a legitimate employee and launch a second intrusion against another U.S. organization in 2026. Google and Mandiant confirmed the attack chain, recommending affected organizations to review access controls and monitor for credential misuse.]]></description>
       <pubDate>Wed, 18 Nov 2026 06:18:38 GMT</pubDate>
       <source url="https://cybersecuritynews.com/russian-hackers-3/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>BubbleLoader Turns WinRAR, Media Player into Malware Carriers</title>
+      <link>https://secubuzz.com/news/bubbleloader-turns-winrar-media-player-into-malwar-93b4ab82</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bubbleloader-turns-winrar-media-player-into-malwar-93b4ab82</guid>
+      <description><![CDATA[BubbleLoader modifies entry points of popular Windows binaries such as WinRAR and Windows Media Player to embed malicious payloads. The loader rewrites a handful of instructions and injects two PNG images containing hidden code, turning legitimate executables into malware carriers. Security teams should verify binary integrity, monitor for unauthorized modifications, and apply vendor-signed updates to mitigate exploitation.]]></description>
+      <pubDate>Wed, 18 Nov 2026 06:00:03 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/18/winrar-bubbleloader-malware/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cold Relic Uses Stolen Google Workspace Data to Breach</title>
+      <link>https://secubuzz.com/news/cold-relic-uses-stolen-google-workspace-data-to-br-0beae806</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cold-relic-uses-stolen-google-workspace-data-to-br-0beae806</guid>
+      <description><![CDATA[Cold Relic, a Russia-linked espionage group, leveraged stolen Google Workspace data to compromise a second U.S. organization. The attackers used the initial cloud compromise as a launchpad for a series of linked intrusions, achieving third-party compromise. Security teams should conduct thorough credential audits, enforce MFA on Google Workspace, and monitor for lateral movement indicators.]]></description>
+      <pubDate>Wed, 18 Nov 2026 05:58:04 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html">The Hacker News</source>
       <category>Breach</category>
     </item>
     <item>
@@ -402,60 +456,6 @@
       <pubDate>Tue, 17 Nov 2026 18:14:00 GMT</pubDate>
       <source url="https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/">Microsoft Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Tor Issues Emergency Update During DDoS Attack</title>
-      <link>https://secubuzz.com/news/tor-issues-emergency-update-during-ddos-attack-f59e793a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tor-issues-emergency-update-during-ddos-attack-f59e793a</guid>
-      <description><![CDATA[Tor Network issued an emergency update while an ongoing distributed denial-of-service attack targeted its relays and obstructed traffic. The update patches a relay configuration flaw that allowed attackers to flood nodes with malformed packets, temporarily degrading network performance. Operators should install the latest Tor release, enable rate-limiting on relays, and monitor node logs for abnormal traffic patterns.]]></description>
-      <pubDate>Tue, 17 Nov 2026 18:04:15 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>apng2gif Vulnerabilities Allow APNG Overflows</title>
-      <link>https://secubuzz.com/news/apng2gif-vulnerabilities-allow-apng-overflows-7691e728</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apng2gif-vulnerabilities-allow-apng-overflows-7691e728</guid>
-      <description><![CDATA[The apng2gif utility contains multiple CVEs (CVE-2017-6960, CVE-2017-6961) that allow integer overflows and heap-based buffer over-reads when processing crafted APNG files. An attacker could exploit these flaws to cause denial of service or potentially read sensitive memory, though no public exploit is documented. Users should update to the latest apng2gif release or apply the vendor’s patch to mitigate the risk.]]></description>
-      <pubDate>Tue, 17 Nov 2026 17:45:22 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9132-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Malicious iOS Scripts Now Behind 1 in 5 Advertiser Suspensions as Coruna Exploit Kit Hides Inside Ad Landing Pages</title>
-      <link>https://secubuzz.com/news/malicious-ios-scripts-now-behind-1-in-5-advertiser-8046f973</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-ios-scripts-now-behind-1-in-5-advertiser-8046f973</guid>
-      <description><![CDATA[Malicious iOS scripts accounted for roughly 20% of advertiser account suspensions in 2026 across advertising platforms protected by ADEX, according to the company’s newly released State of Ad Fraud 2026: ADEX Trust & Safety Report.]]></description>
-      <pubDate>Tue, 17 Nov 2026 17:25:31 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/malicious-ios-scripts-now-behind-1-in-5-advertiser-suspensions-as-coruna-exploit-kit-hides-inside-ad-landing-pages/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ubuntu Patches MiniMagick Command Injection Flaw</title>
-      <link>https://secubuzz.com/news/ubuntu-patches-minimagick-command-injection-flaw-347df98b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-minimagick-command-injection-flaw-347df98b</guid>
-      <description><![CDATA[Ubuntu published USN-9149-1 for a MiniMagick vulnerability affecting applications that process image file names or URLs. MiniMagick passed untrusted names and URLs directly to Kernel#open, allowing an attacker to execute arbitrary commands when an application opened a malicious image reference. Administrators should apply the updated MiniMagick packages from Ubuntu to remove the unsafe Kernel#open behavior.]]></description>
-      <pubDate>Tue, 17 Nov 2026 17:17:34 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9149-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ubuntu Fixes Mechanize Arbitrary Command Execution</title>
-      <link>https://secubuzz.com/news/ubuntu-fixes-mechanize-arbitrary-command-execution-eb0b0f73</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-fixes-mechanize-arbitrary-command-execution-eb0b0f73</guid>
-      <description><![CDATA[Ubuntu issued USN-9148-1 for a Mechanize vulnerability in methods that open local files. Mechanize used Kernel#open with untrusted input as a local file name, enabling an attacker to execute arbitrary commands when an application passed malicious input to those methods. Security teams should install the updated Mechanize packages from Ubuntu to eliminate the unsafe file-opening path.]]></description>
-      <pubDate>Tue, 17 Nov 2026 17:17:28 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9148-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-9147-1: PyWPS vulnerability</title>
-      <link>https://secubuzz.com/news/usn-9147-1-pywps-vulnerability-c3ae89ef</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9147-1-pywps-vulnerability-c3ae89ef</guid>
-      <description><![CDATA[It was discovered that PyWPS did not disable the resolution of XML external entities when parsing requests. A remote attacker could possibly use this issue to read arbitrary files on the server.]]></description>
-      <pubDate>Tue, 17 Nov 2026 17:17:04 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9147-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

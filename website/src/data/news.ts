@@ -11,6 +11,80 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "deutsche-telekom-iot-ceo-discusses-20-year-device-ae815c66",
+    "title": "Deutsche Telekom IoT CEO Discusses 20-Year Device Security",
+    "summary": "In an interview, Deutsche Telekom IoT CEO Christian Schwalbe outlined 20-year device security challenges. He noted forgotten devices as the greatest risk, EU Cyber Resilience Act will compel manufacturers to maintain security, and detection via anomalous communication patterns. Schwalbe discussed post-quantum cryptography for constrained devices, research on splitting secrets across terrestrial networks, urging adoption of new schemes and continuous monitoring.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/christian-schwalbe-deutsche-telekom-iot-security/",
+    "publishedAt": "2026-11-18T07:30:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "deutsche-telekom-iot-ceo-discusses-20-year-device",
+      "article-ae815c66",
+      "ae815c66",
+      "deutsche-telekom-iot-ceo-discusses-20-year-device-5ed147",
+      "deutsche-telekom-iot-ceo-discusses-20-year-device-security"
+    ]
+  },
+  {
+    "slug": "scam-victim-blaming-deepens-harm-says-psychologist-3f4ad8cc",
+    "title": "Scam Victim Blaming Deepens Harm, Says Psychologist",
+    "summary": "At IRISSCON 2026, cyberpsychologist Dr. Nicola Fox Hamilton discussed how blaming victims of phishing and scams deepens harm and silences them. She explained that the psychological impact of scams can lead to long-term trauma and reluctance to report future incidents. The talk emphasized the need for supportive frameworks that address victim psychology rather than assigning blame.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/nicola-fox-hamilton-victim-blaming-scams-phishing/",
+    "publishedAt": "2026-11-18T07:00:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "scam-victim-blaming-deepens-harm-says-psychologist",
+      "article-3f4ad8cc",
+      "3f4ad8cc",
+      "scam-victim-blaming-deepens-harm-says-psychologist-7a7506"
+    ]
+  },
+  {
+    "slug": "microsoft-agent-framework-pypi-package-compromised-6856d6e2",
+    "title": "Microsoft Agent Framework PyPI Package Compromised for Credential Theft",
+    "summary": "Attackers compromised Microsoft’s agent-framework PyPI package, publishing malicious 1.26.1 and 1.26.2 releases that embed a credential stealer. The stealer runs on every Python start, enabling cloud credential theft, and was flagged by multiple security firms. Microsoft should revoke the releases, users must uninstall or upgrade to a clean version, and enforce package integrity checks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+    "publishedAt": "2026-11-18T06:45:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-agent-framework-pypi-package-compromised",
+      "article-6856d6e2",
+      "6856d6e2",
+      "microsoft-agent-framework-pypi-package-compromised-602a69",
+      "microsoft-agent-framework-pypi-package-compromised-for-crede"
+    ]
+  },
+  {
+    "slug": "tapmap-visualizes-network-connections-on-world-map-a1ca01f4",
+    "title": "TapMap Visualizes Network Connections on World Map",
+    "summary": "TapMap is a free, open-source desktop app that visualizes a computer’s active network connections on an interactive world map. It scans open sockets, extracts remote IPs, and resolves them via a local GeoIP database, showing each connection’s approximate location. Users can click a connection to launch its application, but the tool does not verify physical locations, so cross-check is advised.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/tapmap-network-map-open-source/",
+    "publishedAt": "2026-11-18T06:30:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tapmap-visualizes-network-connections-on-world-map",
+      "article-a1ca01f4",
+      "a1ca01f4",
+      "tapmap-visualizes-network-connections-on-world-map-29a3fe"
+    ]
+  },
+  {
     "slug": "russian-hackers-use-cloud-breach-to-target-second-a9087332",
     "title": "Russian Hackers Use Cloud Breach to Target Second US Org",
     "summary": "Russian state-sponsored actors breached a U.S. organization’s Google Workspace in late 2025, exfiltrating staff directory and cloud files. They leveraged the stolen data to impersonate a legitimate employee and launch a second intrusion against another U.S. organization in 2026. Google and Mandiant confirmed the attack chain, recommending affected organizations to review access controls and monitor for credential misuse.",
@@ -27,6 +101,44 @@ export const news: NewsBrief[] = [
       "a9087332",
       "russian-hackers-use-cloud-breach-to-target-second-1bae87",
       "russian-hackers-use-cloud-breach-to-target-second-us-org"
+    ]
+  },
+  {
+    "slug": "bubbleloader-turns-winrar-media-player-into-malwar-93b4ab82",
+    "title": "BubbleLoader Turns WinRAR, Media Player into Malware Carriers",
+    "summary": "BubbleLoader modifies entry points of popular Windows binaries such as WinRAR and Windows Media Player to embed malicious payloads. The loader rewrites a handful of instructions and injects two PNG images containing hidden code, turning legitimate executables into malware carriers. Security teams should verify binary integrity, monitor for unauthorized modifications, and apply vendor-signed updates to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/winrar-bubbleloader-malware/",
+    "publishedAt": "2026-11-18T06:00:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bubbleloader-turns-winrar-media-player-into-malwar",
+      "article-93b4ab82",
+      "93b4ab82",
+      "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
+      "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "cold-relic-uses-stolen-google-workspace-data-to-br-0beae806",
+    "title": "Cold Relic Uses Stolen Google Workspace Data to Breach",
+    "summary": "Cold Relic, a Russia-linked espionage group, leveraged stolen Google Workspace data to compromise a second U.S. organization. The attackers used the initial cloud compromise as a launchpad for a series of linked intrusions, achieving third-party compromise. Security teams should conduct thorough credential audits, enforce MFA on Google Workspace, and monitor for lateral movement indicators.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
+    "publishedAt": "2026-11-18T05:58:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cold-relic-uses-stolen-google-workspace-data-to-br",
+      "article-0beae806",
+      "0beae806",
+      "cold-relic-uses-stolen-google-workspace-data-to-br-6f258b",
+      "cold-relic-uses-stolen-google-workspace-data-to-breach"
     ]
   },
   {
@@ -933,6 +1045,28 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ubuntu-patch-addresses-swupdate-privilege-escalati-5c65a946",
+    "title": "Ubuntu Patch Addresses SWUpdate Privilege Escalation Flaws",
+    "summary": "SWUpdate suffered two local privilege escalation flaws, CVE-2025-41259 and CVE-2026-109399, affecting Ubuntu 22.04 LTS and 26.04 LTS. CVE-2025-41259 allowed a race condition during directory cleanup, while CVE-2026-109399 enabled attackers with an intermediate signing key to install malicious signed updates. Ubuntu released patches that ignore embedded certificates in CMS signatures; admins should apply the update to prevent escalation and malicious updates.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9150-1",
+    "publishedAt": "2026-11-17T17:18:22.000Z",
+    "cves": [
+      "CVE-2025-41259",
+      "CVE-2026-109399"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-patch-addresses-swupdate-privilege-escalati",
+      "article-5c65a946",
+      "5c65a946",
+      "ubuntu-patch-addresses-swupdate-privilege-escalati-7e795e",
+      "ubuntu-patch-addresses-swupdate-privilege-escalation-flaws"
+    ]
+  },
+  {
     "slug": "ubuntu-patches-minimagick-command-injection-flaw-347df98b",
     "title": "Ubuntu Patches MiniMagick Command Injection Flaw",
     "summary": "Ubuntu published USN-9149-1 for a MiniMagick vulnerability affecting applications that process image file names or URLs. MiniMagick passed untrusted names and URLs directly to Kernel#open, allowing an attacker to execute arbitrary commands when an application opened a malicious image reference. Administrators should apply the updated MiniMagick packages from Ubuntu to remove the unsafe Kernel#open behavior.",
@@ -984,6 +1118,27 @@ export const news: NewsBrief[] = [
       "article-c3ae89ef",
       "c3ae89ef",
       "usn-9147-1-pywps-vulnerability-7e79b8"
+    ]
+  },
+  {
+    "slug": "privoxy-vulnerabilities-enable-dos-and-xss-attacks-9aa1f30f",
+    "title": "Privoxy Vulnerabilities Enable DoS and XSS Attacks",
+    "summary": "Privoxy contains two CVE-2021-44540 and CVE-2021-44543 vulnerabilities affecting Ubuntu 22.04 LTS and 26.04 LTS. CVE-2021-44540 causes a memory leak that can lead to denial of service, while CVE-2021-44543 permits remote attackers to execute cross-site scripting via unencoded template names. Administrators should upgrade to the latest Privoxy version or apply the vendor patch to mitigate DoS and XSS risks.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9146-1",
+    "publishedAt": "2026-11-17T17:16:26.000Z",
+    "cves": [
+      "CVE-2021-44540",
+      "CVE-2021-44543"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "privoxy-vulnerabilities-enable-dos-and-xss-attacks",
+      "article-9aa1f30f",
+      "9aa1f30f",
+      "privoxy-vulnerabilities-enable-dos-and-xss-attacks-7e79bc"
     ]
   },
   {
@@ -9768,168 +9923,6 @@ export const news: NewsBrief[] = [
       "article-6dd08fe5",
       "6dd08fe5",
       "zdi-identifies-llama-cpp-gguf-buffer-overflow-rce-6f3d22"
-    ]
-  },
-  {
-    "slug": "llama-cpp-integer-overflow-enables-remote-code-exe-f71e0555",
-    "title": "llama.cpp Integer Overflow Enables Remote Code Execution",
-    "summary": "An integer overflow in llama.cpp’s GGUF parser lets attackers run arbitrary code when a user opens a malicious file or visits a malicious page. The flaw, CVE-2026-126974, carries a CVSS 7.8 score, requires user interaction, and has a public PoC but no confirmed in-the-wild exploitation. Security teams should apply the latest llama.cpp patch or the vendor-supplied workaround to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-975/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126974"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "llama-cpp-integer-overflow-enables-remote-code-exe",
-      "article-f71e0555",
-      "f71e0555",
-      "llama-cpp-integer-overflow-enables-remote-code-exe-6f3d22",
-      "llama-cpp-integer-overflow-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "embedthis-updater-heap-overflow-enables-remote-cod-cd2abc19",
-    "title": "EmbedThis Updater Heap Overflow Enables Remote Code Execution",
-    "summary": "A heap-based buffer overflow in EmbedThis Updater permits network-adjacent attackers to execute arbitrary code without authentication. The flaw, rated CVSS 7.5, requires proximity to the target network but offers no user interaction, and no active exploitation has been reported. EmbedThis has released a patch; organizations should update the Updater component or apply the vendor-issued workaround to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-973/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "embedthis-updater-heap-overflow-enables-remote-cod",
-      "article-cd2abc19",
-      "cd2abc19",
-      "embedthis-updater-heap-overflow-enables-remote-cod-6f3d22",
-      "embedthis-updater-heap-overflow-enables-remote-code-executio"
-    ]
-  },
-  {
-    "slug": "zdi-26-967-microsoft-windows-remote-desktop-connec-2c76ce13",
-    "title": "ZDI-26-967: Microsoft Windows Remote Desktop Connection Client Link Following Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Microsoft Windows. User interaction is required to exploit this vulnerability in that the target must connect to a malicious server. The following CVEs are assigned: CVE-2026-119824.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-967/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-119824"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-967-microsoft-windows-remote-desktop-connec",
-      "article-2c76ce13",
-      "2c76ce13",
-      "zdi-26-967-microsoft-windows-remote-desktop-connec-6f3d1f",
-      "zdi-26-967-microsoft-windows-remote-desktop-connection-clien"
-    ]
-  },
-  {
-    "slug": "postgresql-pg-stat-statements-buffer-overflow-rce-55e286f3",
-    "title": "PostgreSQL pg_stat_statements Buffer Overflow RCE Vulnerability",
-    "summary": "A heap-based buffer overflow in PostgreSQL's pg_stat_statements extension allows remote code execution on affected installations, requiring authentication in production environments. The flaw, CVE-2026-14676, scores 8.8 CVSS and enables privilege escalation, compromising database integrity. Apply the vendor patch or upgrade PostgreSQL, and enforce least-privilege access controls for database administrators to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-974/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-14676"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "postgresql-pg-stat-statements-buffer-overflow-rce",
-      "article-55e286f3",
-      "55e286f3",
-      "postgresql-pg-stat-statements-buffer-overflow-rce-6f3d22",
-      "postgresql-pg-stat-statements-buffer-overflow-rce-vulnerabil"
-    ]
-  },
-  {
-    "slug": "zdi-26-971-signal-for-windows-insufficient-ui-warn-5ee46e72",
-    "title": "ZDI-26-971: Signal for Windows Insufficient UI Warning Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Signal for Windows. User interaction is required to exploit this vulnerability in that the target must accept a malicious attachment. The ZDI has assigned a CVSS rating of 7.5.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-971/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-971-signal-for-windows-insufficient-ui-warn",
-      "article-5ee46e72",
-      "5ee46e72",
-      "zdi-26-971-signal-for-windows-insufficient-ui-warn-6f3d22",
-      "zdi-26-971-signal-for-windows-insufficient-ui-warning-remote"
-    ]
-  },
-  {
-    "slug": "zdi-26-968-pwn2own-openai-codex-gui-openprojectinc-1bc3effc",
-    "title": "ZDI-26-968: (Pwn2Own) OpenAI Codex GUI OpenProjectInCodex Argument Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of OpenAI Codex. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The following CVEs are assigned: CVE-2026-110930.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-968/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-110930"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-968-pwn2own-openai-codex-gui-openprojectinc",
-      "article-1bc3effc",
-      "1bc3effc",
-      "zdi-26-968-pwn2own-openai-codex-gui-openprojectinc-6f3d1f",
-      "zdi-26-968-pwn2own-openai-codex-gui-openprojectincodex-argum"
-    ]
-  },
-  {
-    "slug": "docker-agent-read-skill-rce-via-missing-authorizat-e28c34e7",
-    "title": "Docker Agent read_skill RCE via Missing Authorization",
-    "summary": "A missing authorization flaw in Docker Agent’s read_skill function permits local attackers to execute arbitrary code on installations. The flaw requires user interaction, visiting a malicious page or opening a malicious file, and has a CVSS score of 7.8. Docker has not yet released a patch; security teams should disable the read_skill feature or apply the forthcoming update when available.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-959/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "docker-agent-read-skill-rce-via-missing-authorizat",
-      "article-e28c34e7",
-      "e28c34e7",
-      "docker-agent-read-skill-rce-via-missing-authorizat-6f3d1b",
-      "docker-agent-read-skill-rce-via-missing-authorization"
-    ]
-  },
-  {
-    "slug": "zdi-26-954-llama-cpp-mtmd-multimodal-gguf-file-par-a72d3c8e",
-    "title": "ZDI-26-954: llama.cpp MTMD Multimodal GGUF File Parsing Integer Overflow Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of llama.cpp. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The following CVEs are assigned: CVE-2026-126976.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-954/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126976"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-954-llama-cpp-mtmd-multimodal-gguf-file-par",
-      "article-a72d3c8e",
-      "a72d3c8e",
-      "zdi-26-954-llama-cpp-mtmd-multimodal-gguf-file-par-6f3d1b",
-      "zdi-26-954-llama-cpp-mtmd-multimodal-gguf-file-parsing-integ"
     ]
   }
 ];
