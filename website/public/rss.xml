@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 18:44:46 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 19:48:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CVE-2026-130638 - Path traversal in the object detection dataset preparation tool in AutoGluon MultiModal</title>
@@ -14,6 +14,15 @@
       <description><![CDATA[Bulletin ID: 2026-188-AWS Publication Date: 11/18/2026 10:00 AM PST Description: Relative path traversal in the object detection dataset preparation tool in AutoGluon Multimodal before 1.6.0 might allow adversary-in-the-middle attackers to write arbitrary files with the privileges of the user running the tool via a crafted dataset archive substituted for a dataset downloaded over plaintext HTTP.]]></description>
       <pubDate>Wed, 18 Nov 2026 18:18:11 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-188-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required</title>
+      <link>https://secubuzz.com/news/critical-apache-roller-rce-flaw-under-active-explo-0ec06f71</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-apache-roller-rce-flaw-under-active-explo-0ec06f71</guid>
+      <description><![CDATA[A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution.]]></description>
+      <pubDate>Wed, 18 Nov 2026 17:10:45 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html">The Hacker News</source>
       <category>CVE</category>
     </item>
     <item>
@@ -86,6 +95,15 @@
       <description><![CDATA[Tyler Robert Buchanan, a 24-year-old from Dundee, received a six-year prison sentence for orchestrating an $11.6 million cryptocurrency theft operation. Microsoft labeled the group as one of the most dangerous financial criminal collectives, targeting victims via phishing and credential theft. Law enforcement agencies should continue monitoring for related phishing campaigns and enforce stricter credential hygiene to mitigate similar attacks.]]></description>
       <pubDate>Wed, 18 Nov 2026 14:48:00 GMT</pubDate>
       <source url="https://therecord.media/british-hacker-gets-six-year-sentence-scattered-spider">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>OX Security Unveils OX Radar and Response Center</title>
+      <link>https://secubuzz.com/news/ox-security-unveils-ox-radar-and-response-center-e1b217b8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ox-security-unveils-ox-radar-and-response-center-e1b217b8</guid>
+      <description><![CDATA[OX Security launched OX Radar and Response Center, a platform that automatically monitors critical vulnerabilities and supply chain threats for customers. The system aggregates threat data, evaluates exposure, and prioritizes remediation, enabling teams to focus on high-priority risks. No vendor patch is required; organizations should integrate the tool into existing workflows for continuous threat visibility.]]></description>
+      <pubDate>Wed, 18 Nov 2026 14:30:20 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ox-security-ox-radar-response-center/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -438,24 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 07:59:16 GMT</pubDate>
       <source url="https://cybersecuritynews.com/japan-shuts-down-fugaku-supercomputer/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Needrestart Vulnerability Enables Local Privilege Escalation</title>
-      <link>https://secubuzz.com/news/needrestart-vulnerability-enables-local-privilege-23518a70</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/needrestart-vulnerability-enables-local-privilege-23518a70</guid>
-      <description><![CDATA[The needrestart utility contains a flaw that fails to validate systemd cgroup paths and process names, enabling local privilege escalation. A local attacker could exploit the improper handling to gain elevated privileges on the host, potentially compromising system integrity. Applying the latest security update or patching needrestart mitigates the risk.]]></description>
-      <pubDate>Wed, 18 Nov 2026 07:33:31 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9151-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Deutsche Telekom IoT CEO Discusses 20-Year Device Security</title>
-      <link>https://secubuzz.com/news/deutsche-telekom-iot-ceo-discusses-20-year-device-ae815c66</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/deutsche-telekom-iot-ceo-discusses-20-year-device-ae815c66</guid>
-      <description><![CDATA[In an interview, Deutsche Telekom IoT CEO Christian Schwalbe outlined 20-year device security challenges. He noted forgotten devices as the greatest risk, EU Cyber Resilience Act will compel manufacturers to maintain security, and detection via anomalous communication patterns. Schwalbe discussed post-quantum cryptography for constrained devices, research on splitting secrets across terrestrial networks, urging adoption of new schemes and continuous monitoring.]]></description>
-      <pubDate>Wed, 18 Nov 2026 07:30:25 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/18/christian-schwalbe-deutsche-telekom-iot-security/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

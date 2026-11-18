@@ -32,6 +32,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "critical-apache-roller-rce-flaw-under-active-explo-0ec06f71",
+    "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+    "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+    "publishedAt": "2026-11-18T17:10:45.000Z",
+    "cves": [
+      "CVE-2026-129448"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-apache-roller-rce-flaw-under-active-explo",
+      "article-0ec06f71",
+      "0ec06f71",
+      "critical-apache-roller-rce-flaw-under-active-explo-4e2bbc",
+      "critical-apache-roller-rce-flaw-under-active-exploitation-no"
+    ]
+  },
+  {
     "slug": "nginx-http-2-flaws-enable-remote-code-execution-b81237d2",
     "title": "NGINX HTTP/2 Flaws Enable Remote Code Execution",
     "summary": "Two critical NGINX HTTP/2 vulnerabilities (CVE-2026-123633, CVE-2026-123007) enable remote code execution on servers accepting HTTP/2 connections. The flaws trigger memory corruption during HTTP/2 stream handling; CVSS scores 9.8 and 9.6, and no public exploit yet but potential for server compromise. NGINX released patches on November 18, 2026; administrators should update to the latest release or disable HTTP/2 until patched.",
@@ -185,6 +206,24 @@ export const news: NewsBrief[] = [
       "38b8c730",
       "british-hacker-sentenced-six-years-for-crypto-thef-37027f",
       "british-hacker-sentenced-six-years-for-crypto-theft"
+    ]
+  },
+  {
+    "slug": "ox-security-unveils-ox-radar-and-response-center-e1b217b8",
+    "title": "OX Security Unveils OX Radar and Response Center",
+    "summary": "OX Security launched OX Radar and Response Center, a platform that automatically monitors critical vulnerabilities and supply chain threats for customers. The system aggregates threat data, evaluates exposure, and prioritizes remediation, enabling teams to focus on high-priority risks. No vendor patch is required; organizations should integrate the tool into existing workflows for continuous threat visibility.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ox-security-ox-radar-response-center/",
+    "publishedAt": "2026-11-18T14:30:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ox-security-unveils-ox-radar-and-response-center",
+      "article-e1b217b8",
+      "e1b217b8",
+      "ox-security-unveils-ox-radar-and-response-center-2ac2aa"
     ]
   },
   {
@@ -1078,6 +1117,63 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "open-robotics-rviz-xyzpctransformer-dos-vulnerabil-83341fab",
+    "title": "Open Robotics RViz XYZPCTransformer DoS Vulnerability",
+    "summary": "A zero-day out-of-bounds read in Open Robotics RViz XYZPCTransformer enables network-adjacent attackers to trigger a denial-of-service condition. The flaw lacks authentication requirements, has a CVSS score of 6.5, and is currently unexploited in the wild. A patch is pending; security teams should monitor vendor advisories and apply the fix once released.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1026/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "open-robotics-rviz-xyzpctransformer-dos-vulnerabil",
+      "article-83341fab",
+      "83341fab",
+      "open-robotics-rviz-xyzpctransformer-dos-vulnerabil-77f340",
+      "open-robotics-rviz-xyzpctransformer-dos-vulnerability"
+    ]
+  },
+  {
+    "slug": "open-robotics-rviz-rgb8pctransformer-dos-vulnerabi-8585b722",
+    "title": "Open Robotics RViz RGB8PCTransformer DoS Vulnerability",
+    "summary": "An out-of-bounds read in Open Robotics RViz RGB8PCTransformer permits network-adjacent attackers to induce a denial-of-service, potentially crashing the application. The flaw requires no authentication, carries a CVSS score of 6.5, and has not been exploited in the wild. Security teams should await the vendor patch and monitor advisories for the release; no immediate mitigation is available.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1023/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "open-robotics-rviz-rgb8pctransformer-dos-vulnerabi",
+      "article-8585b722",
+      "8585b722",
+      "open-robotics-rviz-rgb8pctransformer-dos-vulnerabi-77f340",
+      "open-robotics-rviz-rgb8pctransformer-dos-vulnerability"
+    ]
+  },
+  {
+    "slug": "open-robotics-rviz-intensitypctransformer-dos-vuln-3f652df2",
+    "title": "Open Robotics RViz IntensityPCTransformer DoS Vulnerability",
+    "summary": "An out-of-bounds read in Open Robotics RViz IntensityPCTransformer allows network-adjacent attackers to trigger a denial-of-service, potentially crashing the application. The vulnerability requires no authentication, has a CVSS score of 6.5, and is not yet exploited in the wild. Apply the forthcoming vendor patch; meanwhile, monitor advisories for updates and ensure application restarts are handled to mitigate temporary instability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1022/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "open-robotics-rviz-intensitypctransformer-dos-vuln",
+      "article-3f652df2",
+      "3f652df2",
+      "open-robotics-rviz-intensitypctransformer-dos-vuln-77f33f",
+      "open-robotics-rviz-intensitypctransformer-dos-vulnerability"
     ]
   },
   {
@@ -9779,109 +9875,6 @@ export const news: NewsBrief[] = [
       "286f4805",
       "check-point-releases-hotfix-for-exploited-root-pri-3b2fe8",
       "check-point-releases-hotfix-for-exploited-root-privilege-fla"
-    ]
-  },
-  {
-    "slug": "ubuntu-releases-kernel-patches-for-multiple-fips-v-eb560264",
-    "title": "Ubuntu Releases Kernel Patches for Multiple FIPS Vulnerabilities",
-    "summary": "Ubuntu Security Notices USN-9027-2 addresses five kernel vulnerabilities affecting FIPS-enabled systems. The flaws, identified as CVE-2025-21656, CVE-2026-63940, CVE-2026-74350, CVE-2026-98432, and CVE-2026-99999, could allow attackers to compromise kernel integrity through privilege escalation or denial of service. Ubuntu recommends applying the kernel update immediately; users should also verify that FIPS mode remains enabled after the upgrade.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9027-2",
-    "publishedAt": "2026-11-13T10:30:15.000Z",
-    "cves": [
-      "CVE-2025-21656",
-      "CVE-2026-63940",
-      "CVE-2026-74350",
-      "CVE-2026-98432",
-      "CVE-2026-99999"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-releases-kernel-patches-for-multiple-fips-v",
-      "article-eb560264",
-      "eb560264",
-      "ubuntu-releases-kernel-patches-for-multiple-fips-v-7e88b8",
-      "ubuntu-releases-kernel-patches-for-multiple-fips-vulnerabili"
-    ]
-  },
-  {
-    "slug": "ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-teg-984ce3ef",
-    "title": "Ubuntu Patches Kernel RMP Check Flaw in NVIDIA Tegra",
-    "summary": "Ubuntu Security Notices USN-9091-1 fixes a kernel flaw that allows local hypervisor attackers to bypass IOMMU Reverse Map Table checks on NVIDIA Tegra systems. The vulnerability, identified as CVE-2023-20585, could lead to out-of-bounds memory writes and compromise SEV-SNP guest integrity if exploited. Ubuntu advises applying the kernel update promptly and verifying that hypervisor isolation remains intact after the patch.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9091-1",
-    "publishedAt": "2026-11-13T10:18:40.000Z",
-    "cves": [
-      "CVE-2023-20585"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-teg",
-      "article-984ce3ef",
-      "984ce3ef",
-      "ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-teg-7e85a0",
-      "ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-tegra"
-    ]
-  },
-  {
-    "slug": "gamers-targeted-by-gta-vi-malware-scams-2c41029d",
-    "title": "Gamers Targeted by GTA VI Malware Scams",
-    "summary": "Cybercriminals are exploiting the hype around the unreleased GTA VI by offering fake early-access downloads. These downloads are bundled with malware that can steal credentials and install ransomware, yet no confirmed infections have been reported. Users should avoid unofficial sites, verify download sources, and keep anti-malware solutions up to date to mitigate the threat.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/cybersecurity/gta-vi-isnt-out-yet-scams-full-swing/",
-    "publishedAt": "2026-11-13T10:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gamers-targeted-by-gta-vi-malware-scams",
-      "article-2c41029d",
-      "2c41029d",
-      "gamers-targeted-by-gta-vi-malware-scams-130c30"
-    ]
-  },
-  {
-    "slug": "top-10-network-vulnerability-scanners-ranked-2026-d1bbbd11",
-    "title": "Top 10 Network Vulnerability Scanners Ranked 2026",
-    "summary": "Cyber Security News published a 2026 ranking of ten network vulnerability scanners, assessing engine placement, credential distribution, and scan window coordination. The list includes ten brands, noting Tripwire and Digital Defense ship similar capabilities, while other vendors offer differentiated features. Readers can consult the article for detailed scores, vendor comparisons, and deployment recommendations to inform procurement decisions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-network-vulnerability-scanners/",
-    "publishedAt": "2026-11-13T09:39:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-10-network-vulnerability-scanners-ranked-2026",
-      "article-d1bbbd11",
-      "d1bbbd11",
-      "top-10-network-vulnerability-scanners-ranked-2026-28add5"
-    ]
-  },
-  {
-    "slug": "citrix-issues-patches-for-10-critical-netscaler-cv-c4e83fb0",
-    "title": "Citrix Issues Patches for 10 Critical NetScaler CVEs",
-    "summary": "Citrix released patches for ten critical NetScaler vulnerabilities, including CVE-2026-120868, that could cause unexpected behavior or denial-of-service conditions. The flaws allow attackers to trigger service disruptions by manipulating configuration or traffic, but do not provide remote code execution. Citrix recommends applying the latest firmware updates immediately; interim mitigations include disabling affected services and limiting external access.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
-    "publishedAt": "2026-11-13T09:36:56.000Z",
-    "cves": [
-      "CVE-2026-120868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "citrix-issues-patches-for-10-critical-netscaler-cv",
-      "article-c4e83fb0",
-      "c4e83fb0",
-      "citrix-issues-patches-for-10-critical-netscaler-cv-7a96dd",
-      "citrix-issues-patches-for-10-critical-netscaler-cves"
     ]
   }
 ];
