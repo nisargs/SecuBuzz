@@ -5,8 +5,89 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 14:13:19 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 15:44:45 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Emacs Prior to 31.2 Allows Local Code Execution</title>
+      <link>https://secubuzz.com/news/emacs-prior-to-31-2-allows-local-code-execution-c938cfb4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/emacs-prior-to-31-2-allows-local-code-execution-c938cfb4</guid>
+      <description><![CDATA[GNU Emacs versions before 31.2 contain a local code execution flaw triggered by malicious .dir-locals.el files. The vulnerability bypasses auto-mode-alist checks, allowing an attacker to run arbitrary code when a user opens a file; no public exploit reported. Users should upgrade to Emacs 31.2 or later, or disable .dir-locals.el processing until a patch is released.]]></description>
+      <pubDate>Wed, 18 Nov 2026 15:37:12 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/gnu-security-advisory-av26-1173">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Russian State Hackers Exploit Stolen Cloud Data for Espionage</title>
+      <link>https://secubuzz.com/news/russian-state-hackers-exploit-stolen-cloud-data-fo-31d1ba6a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-state-hackers-exploit-stolen-cloud-data-fo-31d1ba6a</guid>
+      <description><![CDATA[Russian state-backed threat actors leverage stolen cloud credentials to impersonate legitimate contacts and infiltrate target organizations. The method bypasses authentication, granting attackers access to internal networks and enabling data exfiltration from professional contacts; no specific vulnerability exploitation is reported. Security teams should enforce multi-factor authentication, monitor for anomalous login patterns, and review cloud access logs for suspicious activity.]]></description>
+      <pubDate>Wed, 18 Nov 2026 15:15:00 GMT</pubDate>
+      <source url="https://therecord.media/russia-cyber-espionage-google">The Record</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters</title>
+      <link>https://secubuzz.com/news/from-deepfakes-to-helpdesk-impersonation-why-stron-19bda175</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/from-deepfakes-to-helpdesk-impersonation-why-stron-19bda175</guid>
+      <description><![CDATA[Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering threats.]]></description>
+      <pubDate>Wed, 18 Nov 2026 15:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Cloudflare WAF Blocks Java4Shell Exploit</title>
+      <link>https://secubuzz.com/news/cloudflare-waf-blocks-java4shell-exploit-7a6ccdff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-waf-blocks-java4shell-exploit-7a6ccdff</guid>
+      <description><![CDATA[Java4Shell, a critical memory-corruption flaw in OpenJDK’s Base64 decoder, allows remote code execution on affected Java runtimes. Identified as CVE-2026-114938, the vulnerability exploits a decoder buffer overflow triggered by crafted Base64 payloads, enabling unauthenticated code execution. Cloudflare’s WAF now offers six managed rules that log matching requests by default; organizations should also apply the latest OpenJDK patches.]]></description>
+      <pubDate>Wed, 18 Nov 2026 14:52:10 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/java4shell-waf-protection/">Cloudflare Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>British Hacker Sentenced Six Years for Crypto Theft</title>
+      <link>https://secubuzz.com/news/british-hacker-sentenced-six-years-for-crypto-thef-38b8c730</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/british-hacker-sentenced-six-years-for-crypto-thef-38b8c730</guid>
+      <description><![CDATA[Tyler Robert Buchanan, a 24-year-old from Dundee, received a six-year prison sentence for orchestrating an $11.6 million cryptocurrency theft operation. Microsoft labeled the group as one of the most dangerous financial criminal collectives, targeting victims via phishing and credential theft. Law enforcement agencies should continue monitoring for related phishing campaigns and enforce stricter credential hygiene to mitigate similar attacks.]]></description>
+      <pubDate>Wed, 18 Nov 2026 14:48:00 GMT</pubDate>
+      <source url="https://therecord.media/british-hacker-gets-six-year-sentence-scattered-spider">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks</title>
+      <link>https://secubuzz.com/news/new-eggstreme-malware-variant-goes-silent-to-evade-3d8d99c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/new-eggstreme-malware-variant-goes-silent-to-evade-3d8d99c0</guid>
+      <description><![CDATA[The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. "When attackers are exposed, the cheap response is to rotate," Bitdefender said in a technical report shared with The Hacker News.]]></description>
+      <pubDate>Wed, 18 Nov 2026 14:11:28 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft’s AI Uncovers 99 Security Issues in Express, ImageMagick and Other Open-Source Projects</title>
+      <link>https://secubuzz.com/news/microsoft-s-ai-uncovers-99-security-issues-in-expr-dd12e280</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-s-ai-uncovers-99-security-issues-in-expr-dd12e280</guid>
+      <description><![CDATA[Microsoft and GitHub sent 99 verified security reports to six open-source projects, including Express and ImageMagick, after an AI pilot identified thousands of potential vulnerabilities. In its Nov. 17 announcement, GitHub said maintainers had fixed 55 issues as of Nov. 15.]]></description>
+      <pubDate>Wed, 18 Nov 2026 14:06:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsofts-ai-uncovers-99-security-issues/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Brazilian Signature Apps Harbor RCE Vulnerabilities</title>
+      <link>https://secubuzz.com/news/brazilian-signature-apps-harbor-rce-vulnerabilitie-7e1baafb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/brazilian-signature-apps-harbor-rce-vulnerabilitie-7e1baafb</guid>
+      <description><![CDATA[Brazilian government-sanctioned signature apps expose authentication middleware to remote code execution via unvalidated input. The flaw lets attackers inject code during document signing, potentially compromising legal documents and enabling fraud; no public exploit confirmed. Patches are pending; security teams should disable vulnerable middleware, apply vendor updates when released, and monitor for unauthorized signing activity.]]></description>
+      <pubDate>Wed, 18 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>GitHub security advisory (AV26-1172)</title>
+      <link>https://secubuzz.com/news/github-security-advisory-av26-1172-7d0fa86e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-security-advisory-av26-1172-7d0fa86e</guid>
+      <description><![CDATA[Serial number: AV26-1172 Date: November 18, 2026 As of November 18, 2026, GitHub is affected by vulnerabilities in the following product: Enterprise Server 3.19.0 Prior to 3.19.16 3.20.0 Prior to 3.20.12 3.21.0 Prior to 3.21.10 3.22.0 Prior to 3.22.5 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.]]></description>
+      <pubDate>Wed, 18 Nov 2026 13:40:25 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/github-security-advisory-av26-1172">Canadian Centre for Cyber Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Gentlemen Ransomware Gang Claims NVIDIA Breach</title>
       <link>https://secubuzz.com/news/gentlemen-ransomware-gang-claims-nvidia-breach-2d18cebf</link>
@@ -375,87 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 06:18:38 GMT</pubDate>
       <source url="https://cybersecuritynews.com/russian-hackers-3/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>BubbleLoader Turns WinRAR, Media Player into Malware Carriers</title>
-      <link>https://secubuzz.com/news/bubbleloader-turns-winrar-media-player-into-malwar-93b4ab82</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bubbleloader-turns-winrar-media-player-into-malwar-93b4ab82</guid>
-      <description><![CDATA[BubbleLoader modifies entry points of popular Windows binaries such as WinRAR and Windows Media Player to embed malicious payloads. The loader rewrites a handful of instructions and injects two PNG images containing hidden code, turning legitimate executables into malware carriers. Security teams should verify binary integrity, monitor for unauthorized modifications, and apply vendor-signed updates to mitigate exploitation.]]></description>
-      <pubDate>Wed, 18 Nov 2026 06:00:03 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/18/winrar-bubbleloader-malware/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cold Relic Uses Stolen Google Workspace Data to Breach</title>
-      <link>https://secubuzz.com/news/cold-relic-uses-stolen-google-workspace-data-to-br-0beae806</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cold-relic-uses-stolen-google-workspace-data-to-br-0beae806</guid>
-      <description><![CDATA[Cold Relic, a Russia-linked espionage group, leveraged stolen Google Workspace data to compromise a second U.S. organization. The attackers used the initial cloud compromise as a launchpad for a series of linked intrusions, achieving third-party compromise. Security teams should conduct thorough credential audits, enforce MFA on Google Workspace, and monitor for lateral movement indicators.]]></description>
-      <pubDate>Wed, 18 Nov 2026 05:58:04 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>iVerify Basic Empowers Device Security Checks</title>
-      <link>https://secubuzz.com/news/iverify-basic-empowers-device-security-checks-b48b7505</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/iverify-basic-empowers-device-security-checks-b48b7505</guid>
-      <description><![CDATA[iVerify Basic is a mobile security app for individuals seeking device integrity checks and privacy enhancements. Available on iOS and Android, the app consolidates scan controls and status on a single Device tab, allowing users to run scans and view findings. After each scan, the app records the last check time and displays results, helping users maintain ongoing device health.]]></description>
-      <pubDate>Wed, 18 Nov 2026 05:30:11 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/18/product-showcase-iverify-basic/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apache HTTP/2 RCE CVE-2026-119618 Actively Exploited</title>
-      <link>https://secubuzz.com/news/apache-http-2-rce-cve-2026-119618-actively-exploit-7b8b7378</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-http-2-rce-cve-2026-119618-actively-exploit-7b8b7378</guid>
-      <description><![CDATA[A critical flaw in Apache HTTP/2 module mod_http2, CVE-2026-119618, permits unauthenticated remote code execution. The vulnerability, rated CVSS 8.1/10 CSA, has been actively exploited since November 17, allowing attackers to run arbitrary code without credentials. Apache released 2.4.71 on November 11 to patch the flaw; teams should upgrade immediately and monitor exploitation.]]></description>
-      <pubDate>Wed, 18 Nov 2026 05:06:49 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/apache-http-server-rce-exploitation/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Fraudsters Use Virtual Cameras for Identity Checks</title>
-      <link>https://secubuzz.com/news/fraudsters-use-virtual-cameras-for-identity-checks-85780284</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fraudsters-use-virtual-cameras-for-identity-checks-85780284</guid>
-      <description><![CDATA[Fraudsters use virtual cameras to feed facial data into identity checks, a trend noted in Entrust’s 2027 Identity Fraud Report. Document fraud, the largest attack category, fell 19% year over year, yet medium-sophistication attacks-alterations and counterfeits-still make up nearly 39% of cases. Physical counterfeits account for 61.1% of fraudulent submissions, highlighting the need for stricter document authenticity checks during verification.]]></description>
-      <pubDate>Wed, 18 Nov 2026 05:00:34 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/18/entrust-document-verification-fraud-report/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Flipper Devices Unveils Flipper One Linux Multi-Tool</title>
-      <link>https://secubuzz.com/news/flipper-devices-unveils-flipper-one-linux-multi-to-b86cbfb8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/flipper-devices-unveils-flipper-one-linux-multi-to-b86cbfb8</guid>
-      <description><![CDATA[Flipper Devices announced the Flipper One, a portable Linux computer designed for network testing, hardware projects, and security research. The device bundles advanced network security tools and targets hobbyists, researchers, and penetration testers seeking an on-the-go platform. Backers can pledge starting at $399 via Kickstarter, with shipping slated for July 2027; the campaign runs until December 17, 2026.]]></description>
-      <pubDate>Wed, 18 Nov 2026 03:35:31 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/flipper-one-linux-multi-tool/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft’s Agent Framework PyPI Package Hacked to Steal Azure and GitHub Credentials</title>
-      <link>https://secubuzz.com/news/microsoft-s-agent-framework-pypi-package-hacked-to-46a332cd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-s-agent-framework-pypi-package-hacked-to-46a332cd</guid>
-      <description><![CDATA[Hackers published two malicious versions of Microsoft’s agent-framework package on the Python Package Index (PyPI) on November 17, 2026. Versions 1.26.1 and 1.26.2 contained a credential stealer that could run during normal Python startup, even if an application never imported Agent Framework. The malware targeted Azure identities, GitHub credentials, and secrets used in automated builds.]]></description>
-      <pubDate>Wed, 18 Nov 2026 03:30:19 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/microsofts-agent-framework-pypi-package/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>NSANet Classified Network Experiences Operational Outage</title>
-      <link>https://secubuzz.com/news/nsanet-classified-network-experiences-operational-186d0f4f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nsanet-classified-network-experiences-operational-186d0f4f</guid>
-      <description><![CDATA[A classified internal network used by NSA employees, NSANet, suffered an operational outage. The outage disrupted communications across the agency, though no evidence of a security breach or vulnerability was reported. Defense officials confirmed the issue and are working to restore full functionality; no patch or mitigation is required at this time.]]></description>
-      <pubDate>Wed, 18 Nov 2026 02:15:07 GMT</pubDate>
-      <source url="https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ISC Stormcast Podcast Released Nov 18</title>
-      <link>https://secubuzz.com/news/isc-stormcast-podcast-released-nov-18-d63e9f8c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-podcast-released-nov-18-d63e9f8c</guid>
-      <description><![CDATA[The SANS Internet Storm Center released its weekly Stormcast for Wednesday, November 18, 2026, summarizing recent cyber events. The broadcast covers emerging threats, vulnerability trends, and defensive recommendations, providing analysts with actionable intelligence. Listeners can access the podcast via the ISC website or RSS feed, with no security patches or vulnerabilities disclosed.]]></description>
-      <pubDate>Wed, 18 Nov 2026 02:00:03 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33528">SANS Internet Storm Center</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

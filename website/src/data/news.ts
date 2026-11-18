@@ -11,6 +11,176 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "emacs-prior-to-31-2-allows-local-code-execution-c938cfb4",
+    "title": "Emacs Prior to 31.2 Allows Local Code Execution",
+    "summary": "GNU Emacs versions before 31.2 contain a local code execution flaw triggered by malicious .dir-locals.el files. The vulnerability bypasses auto-mode-alist checks, allowing an attacker to run arbitrary code when a user opens a file; no public exploit reported. Users should upgrade to Emacs 31.2 or later, or disable .dir-locals.el processing until a patch is released.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/gnu-security-advisory-av26-1173",
+    "publishedAt": "2026-11-18T15:37:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "emacs-prior-to-31-2-allows-local-code-execution",
+      "article-c938cfb4",
+      "c938cfb4",
+      "emacs-prior-to-31-2-allows-local-code-execution-7658c9"
+    ]
+  },
+  {
+    "slug": "russian-state-hackers-exploit-stolen-cloud-data-fo-31d1ba6a",
+    "title": "Russian State Hackers Exploit Stolen Cloud Data for Espionage",
+    "summary": "Russian state-backed threat actors leverage stolen cloud credentials to impersonate legitimate contacts and infiltrate target organizations. The method bypasses authentication, granting attackers access to internal networks and enabling data exfiltration from professional contacts; no specific vulnerability exploitation is reported. Security teams should enforce multi-factor authentication, monitor for anomalous login patterns, and review cloud access logs for suspicious activity.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/russia-cyber-espionage-google",
+    "publishedAt": "2026-11-18T15:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russian-state-hackers-exploit-stolen-cloud-data-fo",
+      "article-31d1ba6a",
+      "31d1ba6a",
+      "russian-state-hackers-exploit-stolen-cloud-data-fo-1fddff",
+      "russian-state-hackers-exploit-stolen-cloud-data-for-espionag"
+    ]
+  },
+  {
+    "slug": "from-deepfakes-to-helpdesk-impersonation-why-stron-19bda175",
+    "title": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
+    "summary": "Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering threats.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
+    "publishedAt": "2026-11-18T15:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "from-deepfakes-to-helpdesk-impersonation-why-stron",
+      "article-19bda175",
+      "19bda175",
+      "from-deepfakes-to-helpdesk-impersonation-why-stron-783f6f",
+      "from-deepfakes-to-helpdesk-impersonation-why-stronger-verifi"
+    ]
+  },
+  {
+    "slug": "cloudflare-waf-blocks-java4shell-exploit-7a6ccdff",
+    "title": "Cloudflare WAF Blocks Java4Shell Exploit",
+    "summary": "Java4Shell, a critical memory-corruption flaw in OpenJDK’s Base64 decoder, allows remote code execution on affected Java runtimes. Identified as CVE-2026-114938, the vulnerability exploits a decoder buffer overflow triggered by crafted Base64 payloads, enabling unauthenticated code execution. Cloudflare’s WAF now offers six managed rules that log matching requests by default; organizations should also apply the latest OpenJDK patches.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/java4shell-waf-protection/",
+    "publishedAt": "2026-11-18T14:52:10.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-waf-blocks-java4shell-exploit",
+      "article-7a6ccdff",
+      "7a6ccdff",
+      "cloudflare-waf-blocks-java4shell-exploit-7b5d2a"
+    ]
+  },
+  {
+    "slug": "british-hacker-sentenced-six-years-for-crypto-thef-38b8c730",
+    "title": "British Hacker Sentenced Six Years for Crypto Theft",
+    "summary": "Tyler Robert Buchanan, a 24-year-old from Dundee, received a six-year prison sentence for orchestrating an $11.6 million cryptocurrency theft operation. Microsoft labeled the group as one of the most dangerous financial criminal collectives, targeting victims via phishing and credential theft. Law enforcement agencies should continue monitoring for related phishing campaigns and enforce stricter credential hygiene to mitigate similar attacks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/british-hacker-gets-six-year-sentence-scattered-spider",
+    "publishedAt": "2026-11-18T14:48:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "british-hacker-sentenced-six-years-for-crypto-thef",
+      "article-38b8c730",
+      "38b8c730",
+      "british-hacker-sentenced-six-years-for-crypto-thef-37027f",
+      "british-hacker-sentenced-six-years-for-crypto-theft"
+    ]
+  },
+  {
+    "slug": "new-eggstreme-malware-variant-goes-silent-to-evade-3d8d99c0",
+    "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+    "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+    "publishedAt": "2026-11-18T14:11:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "new-eggstreme-malware-variant-goes-silent-to-evade",
+      "article-3d8d99c0",
+      "3d8d99c0",
+      "new-eggstreme-malware-variant-goes-silent-to-evade-63ba9f",
+      "new-eggstreme-malware-variant-goes-silent-to-evade-security-"
+    ]
+  },
+  {
+    "slug": "microsoft-s-ai-uncovers-99-security-issues-in-expr-dd12e280",
+    "title": "Microsoft’s AI Uncovers 99 Security Issues in Express, ImageMagick and Other Open-Source Projects",
+    "summary": "Microsoft and GitHub sent 99 verified security reports to six open-source projects, including Express and ImageMagick, after an AI pilot identified thousands of potential vulnerabilities. In its Nov. 17 announcement, GitHub said maintainers had fixed 55 issues as of Nov. 15.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsofts-ai-uncovers-99-security-issues/",
+    "publishedAt": "2026-11-18T14:06:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-s-ai-uncovers-99-security-issues-in-expr",
+      "article-dd12e280",
+      "dd12e280",
+      "microsoft-s-ai-uncovers-99-security-issues-in-expr-76a8c4",
+      "microsoft-s-ai-uncovers-99-security-issues-in-express-imagem"
+    ]
+  },
+  {
+    "slug": "brazilian-signature-apps-harbor-rce-vulnerabilitie-7e1baafb",
+    "title": "Brazilian Signature Apps Harbor RCE Vulnerabilities",
+    "summary": "Brazilian government-sanctioned signature apps expose authentication middleware to remote code execution via unvalidated input. The flaw lets attackers inject code during document signing, potentially compromising legal documents and enabling fraud; no public exploit confirmed. Patches are pending; security teams should disable vulnerable middleware, apply vendor updates when released, and monitor for unauthorized signing activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
+    "publishedAt": "2026-11-18T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "brazilian-signature-apps-harbor-rce-vulnerabilitie",
+      "article-7e1baafb",
+      "7e1baafb",
+      "brazilian-signature-apps-harbor-rce-vulnerabilitie-38dc37",
+      "brazilian-signature-apps-harbor-rce-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "github-security-advisory-av26-1172-7d0fa86e",
+    "title": "GitHub security advisory (AV26-1172)",
+    "summary": "Serial number: AV26-1172 Date: November 18, 2026 As of November 18, 2026, GitHub is affected by vulnerabilities in the following product: Enterprise Server 3.19.0 Prior to 3.19.16 3.20.0 Prior to 3.20.12 3.21.0 Prior to 3.21.10 3.22.0 Prior to 3.22.5 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/github-security-advisory-av26-1172",
+    "publishedAt": "2026-11-18T13:40:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-security-advisory-av26-1172",
+      "article-7d0fa86e",
+      "7d0fa86e",
+      "github-security-advisory-av26-1172-6bfa9e"
+    ]
+  },
+  {
     "slug": "gentlemen-ransomware-gang-claims-nvidia-breach-2d18cebf",
     "title": "Gentlemen Ransomware Gang Claims NVIDIA Breach",
     "summary": "The Gentlemen ransomware group posted a claim of breaching NVIDIA on its dark-web leak site. The post includes a countdown and ransom talk references but lacks sample files or confirmed compromise evidence. NVIDIA has not publicly confirmed a breach, and no definitive proof of infiltration has been disclosed in the public domain.",
@@ -4631,6 +4801,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cve-2026-99288-causes-remote-linux-kernel-panic-8e540a0c",
+    "title": "CVE-2026-99288 Causes Remote Linux Kernel Panic",
+    "summary": "CVE-2026-99288, an 11-year-old Linux kernel flaw, triggers remote kernel panics via TCP ehash race conditions on affected systems. The race exploits a race condition in the TCP ehash table, allowing unauthenticated attackers to cause a crash without code execution. Apply the latest kernel patches and disable Receive Packet Steering (RPS) to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://www.cybernewsai.com/blog/cve-2026-99288-noisytcp-linux-kernel-crash",
+    "publishedAt": "2026-11-16T18:57:39.000Z",
+    "cves": [
+      "CVE-2026-99288"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-99288-causes-remote-linux-kernel-panic",
+      "article-8e540a0c",
+      "8e540a0c",
+      "cve-2026-99288-causes-remote-linux-kernel-panic-1d3dd8"
+    ]
+  },
+  {
     "slug": "linux-kernel-noisytcp-crash-vulnerability-cve-2026-b3c6f639",
     "title": "Linux Kernel NoisyTCP Crash Vulnerability CVE-2026-99288",
     "summary": "CVE-2026-99288, an 11-year-old Linux kernel flaw, permits remote kernel panics via TCP ehash race conditions on affected hosts. The race exploits a flaw in the TCP ehash table, causing a kernel panic without code execution and is publicly documented. Apply the vendor-supplied kernel patch and disable Receive Packet Steering (RPS) to mitigate the vulnerability.",
@@ -4670,6 +4860,25 @@ export const news: NewsBrief[] = [
       "article-681f5e67",
       "681f5e67",
       "litellm-dify-exploited-by-autonomous-ai-agents-7daf47"
+    ]
+  },
+  {
+    "slug": "detect-sansar-gpu-miner-rootkit-via-libnvidia-ml-s-8b4a08bf",
+    "title": "Detect SANSAR GPU Miner Rootkit via libnvidia-ml.so",
+    "summary": "SANSAR Linux malware modifies libnvidia-ml.so and deploys kernel rootkits to hide GPU cryptomining traffic over TOR. The rootkit leverages LD_PRELOAD hooks and SSH lateral movement to evade detection, enabling persistent cryptomining operations. Security teams should scan for modified libnvidia-ml.so, monitor SSH activity, and apply kernel integrity checks to mitigate the rootkit.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://www.cybernewsai.com/blog/sansar-linux-cryptominer-nvidia-rootkit",
+    "publishedAt": "2026-11-16T18:52:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "detect-sansar-gpu-miner-rootkit-via-libnvidia-ml-s",
+      "article-8b4a08bf",
+      "8b4a08bf",
+      "detect-sansar-gpu-miner-rootkit-via-libnvidia-ml-s-4ea333",
+      "detect-sansar-gpu-miner-rootkit-via-libnvidia-ml-so"
     ]
   },
   {
@@ -6610,6 +6819,24 @@ export const news: NewsBrief[] = [
       "article-75c65644",
       "75c65644",
       "meta-faces-887m-fine-over-android-photo-access-3f3ad7"
+    ]
+  },
+  {
+    "slug": "bundeswehr-removes-quantum-systems-drone-grounding-d5c3ffdc",
+    "title": "Bundeswehr Removes Quantum Systems Drone Grounding",
+    "summary": "Germany’s Bundeswehr lifted the precautionary grounding of Quantum Systems reconnaissance drones after a server cyber incident. The incident involved unauthorized access to a Quantum Systems server, exposing supply-chain telemetry data but no confirmed compromise of drone firmware. Operators should review supply-chain risk telemetry and ensure firmware integrity checks are in place to mitigate future server-side threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://www.cybernewsai.com/blog/quantum-systems-drones-bundeswehr-malware-scare",
+    "publishedAt": "2026-11-14T17:45:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bundeswehr-removes-quantum-systems-drone-grounding",
+      "article-d5c3ffdc",
+      "d5c3ffdc",
+      "bundeswehr-removes-quantum-systems-drone-grounding-5c4859"
     ]
   },
   {
@@ -9644,238 +9871,6 @@ export const news: NewsBrief[] = [
       "article-e9d01b0b",
       "e9d01b0b",
       "arcticrat-hijacks-android-phones-via-hidden-vnc-7fe43b"
-    ]
-  },
-  {
-    "slug": "check-point-gateways-destroyed-via-php2shell-explo-501ed4bb",
-    "title": "Check Point Gateways Destroyed via PHP2Shell Exploit",
-    "summary": "Attackers used PHP2Shell vulnerabilities to compromise Check Point Security Gateways and gain initial access. They then leveraged CVE-2026-123039, a local privilege escalation flaw in Gaia OS, to obtain root privileges and cause destructive damage. Check Point released patches for PHP2Shell and recommends applying the Gaia OS update to eliminate the escalation vector.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
-    "publishedAt": "2026-11-13T07:39:04.000Z",
-    "cves": [
-      "CVE-2026-123039"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "check-point-gateways-destroyed-via-php2shell-explo",
-      "article-501ed4bb",
-      "501ed4bb",
-      "check-point-gateways-destroyed-via-php2shell-explo-2c4b60",
-      "check-point-gateways-destroyed-via-php2shell-exploit"
-    ]
-  },
-  {
-    "slug": "n-central-zero-day-enables-remote-root-execution-ddc58ca6",
-    "title": "N-central Zero-Day Enables Remote Root Execution",
-    "summary": "A newly disclosed N-central zero-day, named 4EverAble2Shell, permits remote, unauthenticated attackers to execute code with root privileges. The vulnerability exploits a flaw in the N-central management console that bypasses authentication checks, enabling full system compromise. Vendor has released a patch; administrators should apply the update immediately and disable remote console access until remediation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/",
-    "publishedAt": "2026-11-13T07:20:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-central-zero-day-enables-remote-root-execution",
-      "article-ddc58ca6",
-      "ddc58ca6",
-      "n-central-zero-day-enables-remote-root-execution-1f0112"
-    ]
-  },
-  {
-    "slug": "openai-unveils-ai-tools-for-pen-testing-and-remedi-a9b87e51",
-    "title": "OpenAI Unveils AI Tools for Pen Testing and Remediation",
-    "summary": "OpenAI introduced Daybreak Red Team and Daybreak Defense Factory, AI-driven tools that automate web application penetration testing and vulnerability remediation. The platform links automated testing with remediation workflows while requiring human approval for code changes, aiming to reduce manual effort. Organizations should integrate the Daybreak suite into CI/CD pipelines and monitor for false positives, as the tools are in release.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openai-two-ai-cybersecurity-tools/",
-    "publishedAt": "2026-11-13T07:16:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-unveils-ai-tools-for-pen-testing-and-remedi",
-      "article-a9b87e51",
-      "a9b87e51",
-      "openai-unveils-ai-tools-for-pen-testing-and-remedi-1a4590",
-      "openai-unveils-ai-tools-for-pen-testing-and-remediation"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-check-point-firewall-flaws-to-gain-4cee6a87",
-    "title": "Hackers Exploit Check Point Firewall Flaws to Gain Root Access and Deploy Wiper Malware on VMware ESXi",
-    "summary": "Hackers have chained Check Point firewall vulnerabilities to gain root access, plant backdoors, and deploy destructive malware on a VMware ESXi host. Check Point confirmed that attackers exploited the privilege escalation flaw against a couple of dozen customers.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-check-point-firewall-flaws/",
-    "publishedAt": "2026-11-13T06:38:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-check-point-firewall-flaws-to-gain",
-      "article-4cee6a87",
-      "4cee6a87",
-      "hackers-exploit-check-point-firewall-flaws-to-gain-193824",
-      "hackers-exploit-check-point-firewall-flaws-to-gain-root-acce"
-    ]
-  },
-  {
-    "slug": "north-korea-uses-stolen-webcam-clips-for-400m-scam-f4f1bd5f",
-    "title": "North Korea Uses Stolen Webcam Clips for $400M Scam",
-    "summary": "North Korean state hackers stole over 900 webcam recordings to fuel a $400 million cryptocurrency fraud scheme called FaceStealer. They embed victim footage into fake Zoom and Teams calls, recording targets before redirecting them to malicious sites that siphon funds. The FBI warned crypto and web3 workers; organizations should verify meeting links and monitor for video content to mitigate exploitation.",
-    "category": "Nation State",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/",
-    "publishedAt": "2026-11-13T06:30:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "north-korea-uses-stolen-webcam-clips-for-400m-scam",
-      "article-f4f1bd5f",
-      "f4f1bd5f",
-      "north-korea-uses-stolen-webcam-clips-for-400m-scam-64946d"
-    ]
-  },
-  {
-    "slug": "teams-meeting-scheduler-phishing-yields-valid-sess-c87b0296",
-    "title": "Teams Meeting Scheduler Phishing Yields Valid Session Token",
-    "summary": "Attackers used a fake Microsoft Teams meeting scheduler to trick a construction employee into approving a device-code sign-in, capturing a valid session token. The phishing exploited the legitimate device-code flow, requiring no credential disclosure but allowing attackers to hijack the session before detection. Teams should enforce stricter booking verification, monitor device-code usage, and apply MFA to mitigate similar social-engineering attacks.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/microsoft-teams-device-code-phishing/",
-    "publishedAt": "2026-11-13T06:15:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "teams-meeting-scheduler-phishing-yields-valid-sess",
-      "article-c87b0296",
-      "c87b0296",
-      "teams-meeting-scheduler-phishing-yields-valid-sess-68fb07",
-      "teams-meeting-scheduler-phishing-yields-valid-session-token"
-    ]
-  },
-  {
-    "slug": "suspected-north-korean-workers-onboarded-exposed-2-b309d849",
-    "title": "Suspected North Korean Workers Onboarded, Exposed 277k SSNs",
-    "summary": "Material Security traced 27 North Korean IT personas that reached onboarding in monitored companies, exposing 277,000 SSN files. The fake applicants used engineering roles to bypass identity checks and distributed sensitive data company-wide or via public links, creating a large credential exposure. Security teams should verify identities, audit onboarding records, and enforce stricter remote access controls to prevent similar infiltration.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/north-korean-it-workers-onboarding/",
-    "publishedAt": "2026-11-13T06:00:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "suspected-north-korean-workers-onboarded-exposed-2",
-      "article-b309d849",
-      "b309d849",
-      "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
-      "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
-    ]
-  },
-  {
-    "slug": "aten-eco-dc-arbitrary-file-deletion-vulnerability-a54dfee2",
-    "title": "ATEN eco DC Arbitrary File Deletion Vulnerability CVE-2026-126964",
-    "summary": "ATEN eco DC firmware contains a directory traversal flaw, identified as CVE-2026-126964, that permits arbitrary file deletion. The vulnerability requires authentication and has a CVSS score of 5.5, indicating moderate risk if exploited by privileged users. ATEN recommends applying the latest firmware update, and administrators should restrict access to the fwDeletes.json endpoint to mitigate the issue.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-992/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126964"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aten-eco-dc-arbitrary-file-deletion-vulnerability",
-      "article-a54dfee2",
-      "a54dfee2",
-      "aten-eco-dc-arbitrary-file-deletion-vulnerability-6f3d29",
-      "aten-eco-dc-arbitrary-file-deletion-vulnerability-cve-2026-1"
-    ]
-  },
-  {
-    "slug": "hku-data-lab-nanobot-exposes-ssrf-information-disc-7abb030b",
-    "title": "HKU Data Lab Nanobot Exposes SSRF Information Disclosure",
-    "summary": "A server-side request forgery flaw in Hong Kong University Data Intelligence Lab’s nanobot WebFetch component lets remote attackers retrieve sensitive data from affected installations. The flaw, requiring product interaction, scores CVSS 9.3 and can be exploited without authentication, exposing internal resources. A vendor patch is pending; administrators should apply it or segment networks to mitigate the SSRF risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-972/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hku-data-lab-nanobot-exposes-ssrf-information-disc",
-      "article-7abb030b",
-      "7abb030b",
-      "hku-data-lab-nanobot-exposes-ssrf-information-disc-6f3d22",
-      "hku-data-lab-nanobot-exposes-ssrf-information-disclosure"
-    ]
-  },
-  {
-    "slug": "philips-hue-bridge-exposes-sensitive-data-via-home-48b50bab",
-    "title": "Philips Hue Bridge Exposes Sensitive Data via HomeKit",
-    "summary": "A network-adjacent information-disclosure flaw in Philips Hue Bridge HomeKit allows attackers to read sensitive data without authentication. The vulnerability, assigned CVE-2026-126980, carries a CVSS score of 6.5 and is exploitable via local network traffic. Philips has released a firmware update; security teams should apply the patch or block the affected ports.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-965/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126980"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "philips-hue-bridge-exposes-sensitive-data-via-home",
-      "article-48b50bab",
-      "48b50bab",
-      "philips-hue-bridge-exposes-sensitive-data-via-home-6f3d1e",
-      "philips-hue-bridge-exposes-sensitive-data-via-homekit"
-    ]
-  },
-  {
-    "slug": "libhevc-hevc-decoder-suffers-out-of-bounds-read-di-565e5c1c",
-    "title": "libhevc HEVC Decoder Suffers Out-of-Bounds Read Disclosure",
-    "summary": "An information-disclosure flaw in Google Android’s libhevc HEVC decoder lets attackers read memory via crafted media. The bug is an out-of-bounds read during HEVC parsing, rated CVSS 4.4, and requires the victim to open a malicious file or page. Google released a patch in the Android security update; users should install it or avoid opening suspicious media until applied.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-970/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "libhevc-hevc-decoder-suffers-out-of-bounds-read-di",
-      "article-565e5c1c",
-      "565e5c1c",
-      "libhevc-hevc-decoder-suffers-out-of-bounds-read-di-6f3d22",
-      "libhevc-hevc-decoder-suffers-out-of-bounds-read-disclosure"
-    ]
-  },
-  {
-    "slug": "libhevc-hevc-decoder-exposes-android-info-via-oob-c6d1534e",
-    "title": "libhevc HEVC Decoder Exposes Android Info via OOB Read",
-    "summary": "A remote information-disclosure flaw in libhevc’s HEVC decoder lets attackers read out-of-bounds data on Google Android devices. The bug activates when a user opens a crafted media file or visits a malicious page, exposing memory; CVSS 4.4 indicates medium risk. Google has not yet issued a patch, so users should avoid untrusted media and apply Android updates that fix libhevc.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-969/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "libhevc-hevc-decoder-exposes-android-info-via-oob",
-      "article-c6d1534e",
-      "c6d1534e",
-      "libhevc-hevc-decoder-exposes-android-info-via-oob-6f3d1f",
-      "libhevc-hevc-decoder-exposes-android-info-via-oob-read"
     ]
   }
 ];
