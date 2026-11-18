@@ -11,6 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-130638-path-traversal-in-the-object-detec-16072b1a",
+    "title": "CVE-2026-130638 - Path traversal in the object detection dataset preparation tool in AutoGluon MultiModal",
+    "summary": "Bulletin ID: 2026-188-AWS Publication Date: 11/18/2026 10:00 AM PST Description: Relative path traversal in the object detection dataset preparation tool in AutoGluon Multimodal before 1.6.0 might allow adversary-in-the-middle attackers to write arbitrary files with the privileges of the user running the tool via a crafted dataset archive substituted for a dataset downloaded over plaintext HTTP.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-188-aws/",
+    "publishedAt": "2026-11-18T18:18:11.000Z",
+    "cves": [
+      "CVE-2026-130638"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-130638-path-traversal-in-the-object-detec",
+      "article-16072b1a",
+      "16072b1a",
+      "cve-2026-130638-path-traversal-in-the-object-detec-936eef",
+      "cve-2026-130638-path-traversal-in-the-object-detection-datas"
+    ]
+  },
+  {
     "slug": "nginx-http-2-flaws-enable-remote-code-execution-b81237d2",
     "title": "NGINX HTTP/2 Flaws Enable Remote Code Execution",
     "summary": "Two critical NGINX HTTP/2 vulnerabilities (CVE-2026-123633, CVE-2026-123007) enable remote code execution on servers accepting HTTP/2 connections. The flaws trigger memory corruption during HTTP/2 stream handling; CVSS scores 9.8 and 9.6, and no public exploit yet but potential for server compromise. NGINX released patches on November 18, 2026; administrators should update to the latest release or disable HTTP/2 until patched.",
@@ -1057,6 +1078,44 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "open-robotics-rviz-axiscolorpctransformer-dos-vuln-5ab0221e",
+    "title": "Open Robotics RViz AxisColorPCTransformer DoS Vulnerability",
+    "summary": "A zero-day out-of-bounds read in Open Robotics RViz’s AxisColorPCTransformer lets network-adjacent attackers trigger a denial-of-service on affected installations. The flaw requires no authentication, delivers a CVSS 6.5 score, and can repeatedly crash the RViz service, disrupting robotic visualization. No patch is yet available; operators should isolate vulnerable nodes or await the forthcoming update.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1025/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "open-robotics-rviz-axiscolorpctransformer-dos-vuln",
+      "article-5ab0221e",
+      "5ab0221e",
+      "open-robotics-rviz-axiscolorpctransformer-dos-vuln-77f340",
+      "open-robotics-rviz-axiscolorpctransformer-dos-vulnerability"
+    ]
+  },
+  {
+    "slug": "open-robotics-rviz-rgbf32pctransformer-dos-vulnera-ab748d8d",
+    "title": "Open Robotics RViz RGBF32PCTransformer DoS Vulnerability",
+    "summary": "A zero-day out-of-bounds read in Open Robotics RViz’s RGBF32PCTransformer lets network-adjacent attackers trigger a denial-of-service on affected installations. The flaw requires no authentication, delivers a CVSS 6.5 score, and can repeatedly crash the RViz service, disrupting robotic visualization. No patch is yet available; operators should isolate vulnerable nodes or await the forthcoming update.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1024/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "open-robotics-rviz-rgbf32pctransformer-dos-vulnera",
+      "article-ab748d8d",
+      "ab748d8d",
+      "open-robotics-rviz-rgbf32pctransformer-dos-vulnera-77f340",
+      "open-robotics-rviz-rgbf32pctransformer-dos-vulnerability"
     ]
   },
   {
@@ -6983,6 +7042,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "n-central-unpatched-rce-and-system-access-2500dfd9",
+    "title": "N-Central Unpatched RCE and SYSTEM Access",
+    "summary": "An unpatched remote code execution flaw in N-Central allows attackers to gain SYSTEM-level access, potentially compromising the entire platform. The flaw requires no authentication, enabling arbitrary code execution and privilege escalation on the host machine. Security teams must apply the vendor patch immediately or implement detection rules to monitor for exploitation attempts.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://www.cybernewsai.com/blog/new-n-central-exploits-work-against-patched-servers-ena",
+    "publishedAt": "2026-11-14T19:25:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-central-unpatched-rce-and-system-access",
+      "article-2500dfd9",
+      "2500dfd9",
+      "n-central-unpatched-rce-and-system-access-f65fd5"
+    ]
+  },
+  {
     "slug": "meta-faces-887m-fine-over-android-photo-access-75c65644",
     "title": "Meta Faces $887M Fine Over Android Photo Access",
     "summary": "Meta was fined $887 million by Italian regulators for accessing Android gallery photos and videos on Facebook without explicit user consent. The directive protects smartphones as part of a private sphere, requiring explicit permission before any media access to address privacy violations.",
@@ -9805,78 +9882,6 @@ export const news: NewsBrief[] = [
       "c4e83fb0",
       "citrix-issues-patches-for-10-critical-netscaler-cv-7a96dd",
       "citrix-issues-patches-for-10-critical-netscaler-cves"
-    ]
-  },
-  {
-    "slug": "windows-activation-failures-after-november-updates-7409bbcd",
-    "title": "Windows Activation Failures After November Updates",
-    "summary": "Microsoft confirmed that November Patch Tuesday updates trigger Windows activation failures, producing 0x80041008 error codes. The problem originates from a misconfigured activation service component, causing legitimate license checks to fail without compromising security. Affected users should apply the latest cumulative update or contact Microsoft support for a temporary workaround until a permanent fix is issued.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
-    "publishedAt": "2026-11-13T09:36:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-activation-failures-after-november-updates",
-      "article-7409bbcd",
-      "7409bbcd",
-      "windows-activation-failures-after-november-updates-68e693"
-    ]
-  },
-  {
-    "slug": "top-10-web-application-scanners-ranked-2026-3acdc274",
-    "title": "Top 10 Web Application Scanners Ranked 2026",
-    "summary": "A 2026 review ranks ten web application vulnerability scanners on coverage, proof quality, and pipeline fit. The study notes that naive crawlers miss single-page apps, authenticated flows, and API backends, with scanners covering only 40% of routes reporting on different applications than shipped. Security teams should evaluate scanners against these criteria and integrate them into CI pipelines for comprehensive coverage.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-web-app-scanners/",
-    "publishedAt": "2026-11-13T09:34:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-10-web-application-scanners-ranked-2026",
-      "article-3acdc274",
-      "3acdc274",
-      "top-10-web-application-scanners-ranked-2026-383ee8"
-    ]
-  },
-  {
-    "slug": "openai-launches-daybreak-ai-for-security-testing-30376842",
-    "title": "OpenAI Launches Daybreak AI for Security Testing",
-    "summary": "OpenAI launched Daybreak, AI agents that conduct web application penetration testing and vulnerability analysis within the software security lifecycle. Red Team examines source code and runtime context to find attack vectors, while Defense Factory automates patch creation and retesting. Teams can join an early-access program to integrate Daybreak findings into CI/CD pipelines, speeding vulnerability remediation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/openai-daybreak-vulnerability-remediation-red-team-defense-factory-agents/",
-    "publishedAt": "2026-11-13T09:31:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-launches-daybreak-ai-for-security-testing",
-      "article-30376842",
-      "30376842",
-      "openai-launches-daybreak-ai-for-security-testing-73c9c4"
-    ]
-  },
-  {
-    "slug": "2026-top-10-vulnerability-scanners-ranked-ebfb7d35",
-    "title": "2026 Top 10 Vulnerability Scanners Ranked",
-    "summary": "The article ranks the vulnerability scanners of 2026, covering commercial engines, community tools, and open-source templates like Nuclei. It evaluates scanners based on authentication coverage, detection speed, and integration with threat intelligence, highlighting the shift toward rapid CVE discovery. Readers can use the rankings to select tools that align with their asset coverage and remediation workflows, ensuring comprehensive vulnerability management.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-vulnerability-scanners/",
-    "publishedAt": "2026-11-13T09:28:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "2026-top-10-vulnerability-scanners-ranked",
-      "article-ebfb7d35",
-      "ebfb7d35",
-      "2026-top-10-vulnerability-scanners-ranked-53b20c"
     ]
   }
 ];

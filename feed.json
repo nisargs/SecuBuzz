@@ -1,5 +1,24 @@
 [
   {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-188-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-188-aws/",
+    "title": "CVE-2026-130638 - Path traversal in the object detection dataset preparation tool in AutoGluon MultiModal",
+    "headline": "CVE-2026-130638 - Path traversal in the object detection dataset preparation tool in AutoGluon MultiModal",
+    "summary": "Bulletin ID: 2026-188-AWS Publication Date: 11/18/2026 10:00 AM PST Description: Relative path traversal in the object detection dataset preparation tool in AutoGluon Multimodal before 1.6.0 might allow adversary-in-the-middle attackers to write arbitrary files with the privileges of the user running the tool via a crafted dataset archive substituted for a dataset downloaded over plaintext HTTP.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-18T18:18:11.000Z",
+    "ingestedAt": "2026-11-18T18:43:39.123Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-130638"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://cybersecuritynews.com/nginx-http-2-vulnerabilities/",
     "sourceUrl": "https://cybersecuritynews.com/nginx-http-2-vulnerabilities/",
     "title": "NGINX HTTP/2 Flaws Enable Remote Code Execution",
@@ -897,6 +916,38 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/18/winrar-bubbleloader-malware/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1025/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1025/",
+    "title": "Open Robotics RViz AxisColorPCTransformer DoS Vulnerability",
+    "headline": "Open Robotics RViz AxisColorPCTransformer DoS Vulnerability",
+    "summary": "A zero-day out-of-bounds read in Open Robotics RViz’s AxisColorPCTransformer lets network-adjacent attackers trigger a denial-of-service on affected installations. The flaw requires no authentication, delivers a CVSS 6.5 score, and can repeatedly crash the RViz service, disrupting robotic visualization. No patch is yet available; operators should isolate vulnerable nodes or await the forthcoming update.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "ingestedAt": "2026-11-18T18:43:33.582Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1025/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1024/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1024/",
+    "title": "Open Robotics RViz RGBF32PCTransformer DoS Vulnerability",
+    "headline": "Open Robotics RViz RGBF32PCTransformer DoS Vulnerability",
+    "summary": "A zero-day out-of-bounds read in Open Robotics RViz’s RGBF32PCTransformer lets network-adjacent attackers trigger a denial-of-service on affected installations. The flaw requires no authentication, delivers a CVSS 6.5 score, and can repeatedly crash the RViz service, disrupting robotic visualization. No patch is yet available; operators should isolate vulnerable nodes or await the forthcoming update.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "ingestedAt": "2026-11-18T18:43:33.582Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1024/",
     "additionalSources": []
   },
   {
@@ -5989,6 +6040,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.cybernewsai.com/blog/new-n-central-exploits-work-against-patched-servers-ena",
+    "sourceUrl": "https://www.cybernewsai.com/blog/new-n-central-exploits-work-against-patched-servers-ena",
+    "title": "N-Central Unpatched RCE and SYSTEM Access",
+    "headline": "N-Central Unpatched RCE and SYSTEM Access",
+    "summary": "An unpatched remote code execution flaw in N-Central allows attackers to gain SYSTEM-level access, potentially compromising the entire platform. The flaw requires no authentication, enabling arbitrary code execution and privilege escalation on the host machine. Security teams must apply the vendor patch immediately or implement detection rules to monitor for exploitation attempts.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-11-14T19:25:04.000Z",
+    "ingestedAt": "2026-11-18T18:43:33.582Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.cybernewsai.com/blog/new-n-central-exploits-work-against-patched-servers-ena",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/",
     "sourceUrl": "https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/",
     "title": "Meta Faces $887M Fine Over Android Photo Access",
@@ -8357,70 +8424,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
-    "title": "Windows Activation Failures After November Updates",
-    "headline": "Windows Activation Failures After November Updates",
-    "summary": "Microsoft confirmed that November Patch Tuesday updates trigger Windows activation failures, producing 0x80041008 error codes. The problem originates from a misconfigured activation service component, causing legitimate license checks to fail without compromising security. Affected users should apply the latest cumulative update or contact Microsoft support for a temporary workaround until a permanent fix is issued.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-13T09:36:18.000Z",
-    "ingestedAt": "2026-11-13T10:43:31.947Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/best-web-app-scanners/",
-    "sourceUrl": "https://cybersecuritynews.com/best-web-app-scanners/",
-    "title": "Top 10 Web Application Scanners Ranked 2026",
-    "headline": "Top 10 Web Application Scanners Ranked 2026",
-    "summary": "A 2026 review ranks ten web application vulnerability scanners on coverage, proof quality, and pipeline fit. The study notes that naive crawlers miss single-page apps, authenticated flows, and API backends, with scanners covering only 40% of routes reporting on different applications than shipped. Security teams should evaluate scanners against these criteria and integrate them into CI pipelines for comprehensive coverage.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-13T09:34:42.000Z",
-    "ingestedAt": "2026-11-13T11:29:41.010Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/best-web-app-scanners/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/13/openai-daybreak-vulnerability-remediation-red-team-defense-factory-agents/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/openai-daybreak-vulnerability-remediation-red-team-defense-factory-agents/",
-    "title": "OpenAI Launches Daybreak AI for Security Testing",
-    "headline": "OpenAI Launches Daybreak AI for Security Testing",
-    "summary": "OpenAI launched Daybreak, AI agents that conduct web application penetration testing and vulnerability analysis within the software security lifecycle. Red Team examines source code and runtime context to find attack vectors, while Defense Factory automates patch creation and retesting. Teams can join an early-access program to integrate Daybreak findings into CI/CD pipelines, speeding vulnerability remediation.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-13T09:31:07.000Z",
-    "ingestedAt": "2026-11-13T09:40:08.146Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/13/openai-daybreak-vulnerability-remediation-red-team-defense-factory-agents/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/best-vulnerability-scanners/",
-    "sourceUrl": "https://cybersecuritynews.com/best-vulnerability-scanners/",
-    "title": "2026 Top 10 Vulnerability Scanners Ranked",
-    "headline": "2026 Top 10 Vulnerability Scanners Ranked",
-    "summary": "The article ranks the vulnerability scanners of 2026, covering commercial engines, community tools, and open-source templates like Nuclei. It evaluates scanners based on authentication coverage, detection speed, and integration with threat intelligence, highlighting the shift toward rapid CVE discovery. Readers can use the rankings to select tools that align with their asset coverage and remediation workflows, ensuring comprehensive vulnerability management.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-13T09:28:31.000Z",
-    "ingestedAt": "2026-11-13T14:43:10.784Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/best-vulnerability-scanners/",
     "additionalSources": []
   }
 ]
