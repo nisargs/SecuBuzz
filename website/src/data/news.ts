@@ -11,6 +11,83 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "chrome-158-addresses-204-vulnerabilities-35777c9e",
+    "title": "Chrome 158 Addresses 204 Vulnerabilities",
+    "summary": "Google released Chrome 158, fixing 204 security issues across the browser. The update includes five externally reported flaws with bounty payouts of $11,000 each, while the remaining 36 bugs' rewards remain undetermined. Users should install the latest Chrome version across all supported platforms to ensure protection against the patched vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/",
+    "publishedAt": "2026-11-18T11:43:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-158-addresses-204-vulnerabilities",
+      "article-35777c9e",
+      "35777c9e",
+      "chrome-158-addresses-204-vulnerabilities-3a449e"
+    ]
+  },
+  {
+    "slug": "java4shell-cve-2026-114938-exploitation-risk-feedad64",
+    "title": "Java4Shell CVE-2026-114938 Exploitation Risk",
+    "summary": "Researchers discovered a critical Java vulnerability, dubbed Java4Shell, identified as CVE-2026-114938. The flaw is a memory corruption bug in OpenJDK’s Base64 decoder, allowing unauthenticated remote code execution on servers running Java applications. Oracle and OpenJDK released patches; administrators should apply the update immediately across all affected systems to mitigate the exploitation risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/java4shell-a-critical-flaw-with-a-narrow-reach",
+    "publishedAt": "2026-11-18T11:41:07.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "java4shell-cve-2026-114938-exploitation-risk",
+      "article-feedad64",
+      "feedad64",
+      "java4shell-cve-2026-114938-exploitation-risk-5eefb1"
+    ]
+  },
+  {
+    "slug": "java4shell-cve-2026-114938-exploitation-requires-s-64ad6e03",
+    "title": "Java4Shell CVE-2026-114938 Exploitation Requires Specific CPUs",
+    "summary": "CVE-2026-114938 is a memory corruption flaw in OpenJDK’s Base64 decoder that can enable unauthenticated remote code execution on Java application servers. The vulnerability is exploitable only on specific CPU architectures, and no successful attacks have been reported, though CISA urges immediate patching. Oracle and the OpenJDK project released patches; administrators should apply the update immediately to eliminate the exploitation risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/java4shell-openjdk-vulnerability-cve-2026-114938/",
+    "publishedAt": "2026-11-18T11:12:12.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "java4shell-cve-2026-114938-exploitation-requires-s",
+      "article-64ad6e03",
+      "64ad6e03",
+      "java4shell-cve-2026-114938-exploitation-requires-s-1e5dfb",
+      "java4shell-cve-2026-114938-exploitation-requires-specific-cp"
+    ]
+  },
+  {
+    "slug": "defending-against-blockchain-based-dead-drops-ac2aaa17",
+    "title": "Defending Against Blockchain-Based Dead Drops",
+    "summary": "Malware command-and-control infrastructure has migrated to decentralized blockchain networks, eliminating single points of failure. This shift creates bulletproof dead drops that resist takedown, requiring advanced detection and mitigation strategies. Security teams should monitor blockchain traffic, employ distributed ledger analysis, and develop countermeasures to disrupt these resilient C2 channels globally.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/",
+    "publishedAt": "2026-11-18T11:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "defending-against-blockchain-based-dead-drops",
+      "article-ac2aaa17",
+      "ac2aaa17",
+      "defending-against-blockchain-based-dead-drops-482ada"
+    ]
+  },
+  {
     "slug": "north-korea-aligned-actor-uses-blockchain-for-info-e5d7f9a3",
     "title": "North Korea-aligned Actor Uses Blockchain for Infostealing",
     "summary": "Cisco Talos linked malicious infrastructure to UAT-12643, a suspected North Korea-aligned threat group targeting financial data via blockchain resilience. The group uses distributed ledger techniques to hide command-and-control traffic, enabling stealthy credential theft, though no confirmed breach has been reported. Security teams should monitor anomalous blockchain traffic, enforce strict access controls, and segment networks to mitigate potential exfiltration.",
@@ -50,6 +127,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apache-roller-rce-exploited-in-attacks-cc14f0ef",
+    "title": "Apache Roller RCE Exploited in Attacks",
+    "summary": "Apache identified a critical Roller flaw that threat actors exploit for code execution on vulnerable servers. The vulnerability permits unauthenticated remote code execution via the Roller CMS, and is actively used in the wild. Apache released security updates; administrators must apply the patch immediately to mitigate the critical RCE risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
+    "publishedAt": "2026-11-18T10:35:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apache-roller-rce-exploited-in-attacks",
+      "article-cc14f0ef",
+      "cc14f0ef",
+      "apache-roller-rce-exploited-in-attacks-453a0a"
+    ]
+  },
+  {
     "slug": "bitly-links-hijacked-in-historic-burger-king-mcdon-22a2db72",
     "title": "Bitly Links Hijacked in Historic Burger King, McDonald’s Posts",
     "summary": "Bitly links embedded in Burger King, McDonald’s, and Trump X posts from 2009-2014 now redirect users to unrelated sites. The hijacking exploits Bitly’s stale link database, allowing attackers to alter destination URLs without authentication, causing users to view offensive content or malware. Bitly has issued a notice to update link management policies and users should verify link destinations before clicking.",
@@ -85,6 +180,46 @@ export const news: NewsBrief[] = [
       "9be6d18c",
       "anthropic-cuts-vulnerability-disclosure-deadline-t-30cb8b",
       "anthropic-cuts-vulnerability-disclosure-deadline-to-30-days"
+    ]
+  },
+  {
+    "slug": "tails-issues-emergency-update-for-ublock-origin-fl-04b1c649",
+    "title": "Tails Issues Emergency Update for uBlock Origin Flaw",
+    "summary": "The Tor Project released Tails 7.17.1 to address a critical flaw in the bundled 'uBlock Origin' ad blocker. The vulnerability lets a malicious site trick a user into a single click, enabling code execution on another domain. The emergency update removes 'uBlock Origin'; users should apply the patch immediately and consider disabling the extension until a permanent fix is released.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/tails-tor-browser-update-to-fix-ublock-origin-flaw/",
+    "publishedAt": "2026-11-18T09:45:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tails-issues-emergency-update-for-ublock-origin-fl",
+      "article-04b1c649",
+      "04b1c649",
+      "tails-issues-emergency-update-for-ublock-origin-fl-26f96a",
+      "tails-issues-emergency-update-for-ublock-origin-flaw"
+    ]
+  },
+  {
+    "slug": "4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack-71b4f81c",
+    "title": "4-Year-Old NVIDIA Linux GPU Flaw Lets Users Hijack Entire Shared Servers",
+    "summary": "A four-year-old NVIDIA Linux GPU driver flaw, tracked as CVE-2026-47501 and dubbed ForgePtr, could let users with access to a vulnerable GPU take control of the entire server. The flaw allowed Stealthium researchers to gain root, the highest level of access on Linux, from inside an unprivileged container.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/4-year-old-nvidia-linux-gpu-flaw/",
+    "publishedAt": "2026-11-18T09:28:15.000Z",
+    "cves": [
+      "CVE-2026-47501"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack",
+      "article-71b4f81c",
+      "71b4f81c",
+      "4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack-3c7792",
+      "4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack-entire-sh"
     ]
   },
   {
@@ -9771,153 +9906,6 @@ export const news: NewsBrief[] = [
       "ca133de0",
       "trendai-agent-heap-overflow-enables-local-privileg-6f3d26",
       "trendai-agent-heap-overflow-enables-local-privilege-escalati"
-    ]
-  },
-  {
-    "slug": "trendai-agent-null-dereference-allows-local-privil-7aefab62",
-    "title": "TrendAI Agent Null Dereference Allows Local Privilege Escalation",
-    "summary": "A null pointer dereference in TrendAI Vision One Security Agent’s TMBMServer permits local attackers to elevate privileges on affected installations. The vulnerability, CVE-2026-111784, requires low-privileged code execution and has a CVSS score of 7.8, marking it as high-severity. TrendAI has released a patch; apply it promptly or use the provided workaround to stop the privilege escalation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-983/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111784"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "trendai-agent-null-dereference-allows-local-privil",
-      "article-7aefab62",
-      "7aefab62",
-      "trendai-agent-null-dereference-allows-local-privil-6f3d26",
-      "trendai-agent-null-dereference-allows-local-privilege-escala"
-    ]
-  },
-  {
-    "slug": "trendai-agent-heap-overflow-grants-local-privilege-5031d674",
-    "title": "TrendAI Agent Heap Overflow Grants Local Privilege Escalation",
-    "summary": "A heap-based buffer overflow in TrendAI Vision One Security Agent’s TMBMServer allows local attackers to gain elevated privileges on affected installations. The flaw, CVE-2026-111783, requires low-privileged code execution and carries a CVSS score of 7.8, indicating high-severity risk. TrendAI has issued a patch; apply it immediately or use the provided workaround to mitigate the privilege escalation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-982/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111783"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "trendai-agent-heap-overflow-grants-local-privilege",
-      "article-5031d674",
-      "5031d674",
-      "trendai-agent-heap-overflow-grants-local-privilege-6f3d26",
-      "trendai-agent-heap-overflow-grants-local-privilege-escalatio"
-    ]
-  },
-  {
-    "slug": "zdi-26-981-trendai-vision-one-security-agent-stack-def4ce05",
-    "title": "ZDI-26-981: TrendAI Vision One Security Agent Stack-based Buffer Overflow Local Privilege Escalation Vulnerability",
-    "summary": "This vulnerability allows local attackers to escalate privileges on affected installations of TrendAI Vision One Security Agent. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability. The following CVEs are assigned: CVE-2026-111782.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-981/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111782"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-981-trendai-vision-one-security-agent-stack",
-      "article-def4ce05",
-      "def4ce05",
-      "zdi-26-981-trendai-vision-one-security-agent-stack-6f3d26",
-      "zdi-26-981-trendai-vision-one-security-agent-stack-based-buf"
-    ]
-  },
-  {
-    "slug": "trendai-vision-one-agent-vulnerability-enables-loc-460e149b",
-    "title": "TrendAI Vision One Agent Vulnerability Enables Local Privilege Escalation",
-    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low-privileged code gain elevated rights on installations. Identified as CVE-2026-111790, the flaw has a CVSS score of 7.8 and requires local code execution, exposing systems to administrative access. TrendAI has issued a patch; apply it promptly and verify agent configuration to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-988/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111790"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "trendai-vision-one-agent-vulnerability-enables-loc",
-      "article-460e149b",
-      "460e149b",
-      "trendai-vision-one-agent-vulnerability-enables-loc-6f3d26",
-      "trendai-vision-one-agent-vulnerability-enables-local-privile"
-    ]
-  },
-  {
-    "slug": "trendai-vision-one-agent-type-confusion-escalates-995aacb7",
-    "title": "TrendAI Vision One Agent Type Confusion Escalates Privileges",
-    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low-privileged code gain elevated rights on installations. Identified as CVE-2026-111788, the flaw carries a CVSS score of 7.8 and requires local code execution, exposing systems to administrative access. TrendAI has released a patch; apply it promptly and verify agent configuration to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-987/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111788"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "trendai-vision-one-agent-type-confusion-escalates",
-      "article-995aacb7",
-      "995aacb7",
-      "trendai-vision-one-agent-type-confusion-escalates-6f3d26",
-      "trendai-vision-one-agent-type-confusion-escalates-privileges"
-    ]
-  },
-  {
-    "slug": "trendai-vision-one-agent-type-confusion-grants-pri-6004f032",
-    "title": "TrendAI Vision One Agent Type Confusion Grants Privilege Escalation",
-    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low-privileged code gain elevated rights on installations. Identified as CVE-2026-111787, the flaw has a CVSS score of 7.8 and requires local code execution, exposing systems to administrative access. TrendAI has released a patch; apply it promptly and verify agent configuration to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-986/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111787"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "trendai-vision-one-agent-type-confusion-grants-pri",
-      "article-6004f032",
-      "6004f032",
-      "trendai-vision-one-agent-type-confusion-grants-pri-6f3d26",
-      "trendai-vision-one-agent-type-confusion-grants-privilege-esc"
-    ]
-  },
-  {
-    "slug": "trendai-vision-one-agent-flaw-enables-privilege-es-875437a6",
-    "title": "TrendAI Vision One Agent Flaw Enables Privilege Escalation",
-    "summary": "A local privilege escalation vulnerability affects TrendAI Vision One Security Agent within the TMBMServer component. Tracked as CVE-2026-111786 with a CVSS rating of 7.8, the security flaw stems from an out-of-bounds read mechanism. To exploit this flaw, local attackers must first possess low-privileged code execution access on the targeted system to elevate rights.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-985/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111786"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "trendai-vision-one-agent-flaw-enables-privilege-es",
-      "article-875437a6",
-      "875437a6",
-      "trendai-vision-one-agent-flaw-enables-privilege-es-6f3d26",
-      "trendai-vision-one-agent-flaw-enables-privilege-escalation"
     ]
   }
 ];

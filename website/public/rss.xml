@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 11:45:37 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 12:15:33 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Chrome 158 Addresses 204 Vulnerabilities</title>
+      <link>https://secubuzz.com/news/chrome-158-addresses-204-vulnerabilities-35777c9e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-addresses-204-vulnerabilities-35777c9e</guid>
+      <description><![CDATA[Google released Chrome 158, fixing 204 security issues across the browser. The update includes five externally reported flaws with bounty payouts of $11,000 each, while the remaining 36 bugs' rewards remain undetermined. Users should install the latest Chrome version across all supported platforms to ensure protection against the patched vulnerabilities.]]></description>
+      <pubDate>Wed, 18 Nov 2026 11:43:22 GMT</pubDate>
+      <source url="https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Java4Shell CVE-2026-114938 Exploitation Risk</title>
+      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-risk-feedad64</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-risk-feedad64</guid>
+      <description><![CDATA[Researchers discovered a critical Java vulnerability, dubbed Java4Shell, identified as CVE-2026-114938. The flaw is a memory corruption bug in OpenJDK’s Base64 decoder, allowing unauthenticated remote code execution on servers running Java applications. Oracle and OpenJDK released patches; administrators should apply the update immediately across all affected systems to mitigate the exploitation risk.]]></description>
+      <pubDate>Wed, 18 Nov 2026 11:41:07 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/bugs/2026/11/java4shell-a-critical-flaw-with-a-narrow-reach">Malwarebytes Labs</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Java4Shell CVE-2026-114938 Exploitation Requires Specific CPUs</title>
+      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-requires-s-64ad6e03</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-requires-s-64ad6e03</guid>
+      <description><![CDATA[CVE-2026-114938 is a memory corruption flaw in OpenJDK’s Base64 decoder that can enable unauthenticated remote code execution on Java application servers. The vulnerability is exploitable only on specific CPU architectures, and no successful attacks have been reported, though CISA urges immediate patching. Oracle and the OpenJDK project released patches; administrators should apply the update immediately to eliminate the exploitation risk.]]></description>
+      <pubDate>Wed, 18 Nov 2026 11:12:12 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/18/java4shell-openjdk-vulnerability-cve-2026-114938/">Help Net Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Defending Against Blockchain-Based Dead Drops</title>
+      <link>https://secubuzz.com/news/defending-against-blockchain-based-dead-drops-ac2aaa17</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/defending-against-blockchain-based-dead-drops-ac2aaa17</guid>
+      <description><![CDATA[Malware command-and-control infrastructure has migrated to decentralized blockchain networks, eliminating single points of failure. This shift creates bulletproof dead drops that resist takedown, requiring advanced detection and mitigation strategies. Security teams should monitor blockchain traffic, employ distributed ledger analysis, and develop countermeasures to disrupt these resilient C2 channels globally.]]></description>
+      <pubDate>Wed, 18 Nov 2026 11:00:00 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/">Cisco Talos</source>
+      <category>General</category>
+    </item>
     <item>
       <title>North Korea-aligned Actor Uses Blockchain for Infostealing</title>
       <link>https://secubuzz.com/news/north-korea-aligned-actor-uses-blockchain-for-info-e5d7f9a3</link>
@@ -26,6 +62,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Apache Roller RCE Exploited in Attacks</title>
+      <link>https://secubuzz.com/news/apache-roller-rce-exploited-in-attacks-cc14f0ef</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-roller-rce-exploited-in-attacks-cc14f0ef</guid>
+      <description><![CDATA[Apache identified a critical Roller flaw that threat actors exploit for code execution on vulnerable servers. The vulnerability permits unauthenticated remote code execution via the Roller CMS, and is actively used in the wild. Apache released security updates; administrators must apply the patch immediately to mitigate the critical RCE risk.]]></description>
+      <pubDate>Wed, 18 Nov 2026 10:35:05 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Bitly Links Hijacked in Historic Burger King, McDonald’s Posts</title>
       <link>https://secubuzz.com/news/bitly-links-hijacked-in-historic-burger-king-mcdon-22a2db72</link>
       <guid isPermaLink="true">https://secubuzz.com/news/bitly-links-hijacked-in-historic-burger-king-mcdon-22a2db72</guid>
@@ -42,6 +87,24 @@
       <pubDate>Wed, 18 Nov 2026 09:48:45 GMT</pubDate>
       <source url="https://cybersecuritynews.com/anthropic-cuts-critical-vulnerability-disclosure-deadline/">Cyber Security News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Tails Issues Emergency Update for uBlock Origin Flaw</title>
+      <link>https://secubuzz.com/news/tails-issues-emergency-update-for-ublock-origin-fl-04b1c649</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tails-issues-emergency-update-for-ublock-origin-fl-04b1c649</guid>
+      <description><![CDATA[The Tor Project released Tails 7.17.1 to address a critical flaw in the bundled 'uBlock Origin' ad blocker. The vulnerability lets a malicious site trick a user into a single click, enabling code execution on another domain. The emergency update removes 'uBlock Origin'; users should apply the patch immediately and consider disabling the extension until a permanent fix is released.]]></description>
+      <pubDate>Wed, 18 Nov 2026 09:45:51 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/tails-tor-browser-update-to-fix-ublock-origin-flaw/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>4-Year-Old NVIDIA Linux GPU Flaw Lets Users Hijack Entire Shared Servers</title>
+      <link>https://secubuzz.com/news/4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack-71b4f81c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack-71b4f81c</guid>
+      <description><![CDATA[A four-year-old NVIDIA Linux GPU driver flaw, tracked as CVE-2026-47501 and dubbed ForgePtr, could let users with access to a vulnerable GPU take control of the entire server. The flaw allowed Stealthium researchers to gain root, the highest level of access on Linux, from inside an unprivileged container.]]></description>
+      <pubDate>Wed, 18 Nov 2026 09:28:15 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/4-year-old-nvidia-linux-gpu-flaw/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Microsoft Unveils Windows Server 2028 with Hardened Security</title>
@@ -393,69 +456,6 @@
       <pubDate>Tue, 17 Nov 2026 22:03:37 GMT</pubDate>
       <source url="https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi">Wiz Research</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Docker Hub Images Leak Secrets, Stolen Quickly</title>
-      <link>https://secubuzz.com/news/docker-hub-images-leak-secrets-stolen-quickly-39a6fc6c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/docker-hub-images-leak-secrets-stolen-quickly-39a6fc6c</guid>
-      <description><![CDATA[Credentials and access secrets exposed in public Docker Hub images are extracted and exploited by attackers within eight seconds of publication. The flaw stems from improper handling of sensitive data in container images, letting attackers harvest secrets and compromise services. Publishers should remove secrets from images, enforce secret scanning, and apply least-privilege policies; teams must monitor registries for exposed credentials.]]></description>
-      <pubDate>Tue, 17 Nov 2026 21:27:17 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100552: Critical: Red Hat JBoss Core Services Apache HTTP Server 2.4.62 SP7 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100552-critical-red-hat-jboss-core-servi-57bf9353</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100552-critical-red-hat-jboss-core-servi-57bf9353</guid>
-      <description><![CDATA[Red Hat JBoss Core Services Apache HTTP Server 2.4.62 Service Pack 7 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 17 Nov 2026 21:12:42 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100552">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI-Powered Phishing Kit &apos;TheMailer&apos; Scales Targeting</title>
-      <link>https://secubuzz.com/news/ai-powered-phishing-kit-themailer-scales-targeting-9cf853ec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-powered-phishing-kit-themailer-scales-targeting-9cf853ec</guid>
-      <description><![CDATA[The phishing kit 'TheMailer' employs AI models to craft personalized lures, targeting tens of thousands of recipients. The kit leverages AI to evade spam filters and scale campaigns, increasing the likelihood of successful credential harvesting and phishing fraud. Security teams should block known 'TheMailer' domains, monitor for AI-generated phishing content, and apply email filtering rules that detect anomalous personalization patterns.]]></description>
-      <pubDate>Tue, 17 Nov 2026 20:58:13 GMT</pubDate>
-      <source url="https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Atlassian Confluence CVE-2026-90436 Exploited</title>
-      <link>https://secubuzz.com/news/atlassian-confluence-cve-2026-90436-exploited-822affbc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-confluence-cve-2026-90436-exploited-822affbc</guid>
-      <description><![CDATA[CVE-2026-90436, a critical flaw in Atlassian Confluence, has been exploited in enterprise environments. The vulnerability permits unauthenticated remote code execution via crafted HTTP requests, with public PoC evidence and a CVSS score of 9.1, enabling attackers to gain full system control. Apply the latest Confluence patch immediately, restrict network access to Confluence instances, and monitor logs for suspicious activity.]]></description>
-      <pubDate>Tue, 17 Nov 2026 20:57:27 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/rapid7-detected-exploitation-of-cve-2026-90436-against">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>N-able Releases HF3 Patches for 17 Zero-Days</title>
-      <link>https://secubuzz.com/news/n-able-releases-hf3-patches-for-17-zero-days-1175cbe9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-releases-hf3-patches-for-17-zero-days-1175cbe9</guid>
-      <description><![CDATA[N-able released N-central HF3 Patches 17 to address 17 zero-day vulnerabilities, including remote code execution and authentication bypasses. The flaws involve memory-corruption and logic errors that could let attackers execute arbitrary code or gain elevated privileges; no public exploits are confirmed. Administrators should apply the HF3 Patches 17 immediately and monitor for anomalous activity using the provided detection rules.]]></description>
-      <pubDate>Tue, 17 Nov 2026 20:55:16 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/n-able-kills-legacy-apis-patches-17-n-central-zero-days">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Fugaku Supercomputer Taken Offline After Cyberattack</title>
-      <link>https://secubuzz.com/news/fugaku-supercomputer-taken-offline-after-cyberatta-a1093be6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fugaku-supercomputer-taken-offline-after-cyberatta-a1093be6</guid>
-      <description><![CDATA[Japan’s RIKEN Center for Computational Science pulled the Fugaku supercomputer offline following a security breach that compromised system integrity. The attack exploited an unspecified vulnerability in the supercomputer’s software stack, allowing attackers to gain unauthorized access to high-performance computing resources. Operators have applied security patches, tightened access controls, and are conducting a full forensic investigation to assess potential data exposure.]]></description>
-      <pubDate>Tue, 17 Nov 2026 20:51:21 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>OPTIMJACK Compromises Vendor Script, Exposes Websites</title>
-      <link>https://secubuzz.com/news/optimjack-compromises-vendor-script-exposes-websit-2452cb37</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/optimjack-compromises-vendor-script-exposes-websit-2452cb37</guid>
-      <description><![CDATA[The OPTIMJACK supply chain attack compromised a vendor script, allowing attackers to expose and manipulate websites. The compromised script introduced malicious code that could exfiltrate data and serve as a foothold for further attacks; the incident underscores the risk of third-party code. Security teams should audit third-party scripts, enforce strict segmentation, and monitor for anomalous activity.]]></description>
-      <pubDate>Tue, 17 Nov 2026 20:43:14 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/">Unit 42</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
