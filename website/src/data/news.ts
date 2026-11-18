@@ -11,6 +11,84 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-unveils-windows-server-2028-with-hardene-bc339d8d",
+    "title": "Microsoft Unveils Windows Server 2028 with Hardened Security",
+    "summary": "Microsoft announced Windows Server 2028 at Ignite 2026, positioning it as the next major release of its server operating system. The new OS incorporates hardened security features, including enhanced kernel isolation, improved credential protection, and built-in threat detection capabilities. Microsoft recommends testing the release in staging environments before production deployment and applying the forthcoming cumulative updates.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
+    "publishedAt": "2026-11-18T09:24:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-unveils-windows-server-2028-with-hardene",
+      "article-bc339d8d",
+      "bc339d8d",
+      "microsoft-unveils-windows-server-2028-with-hardene-296474",
+      "microsoft-unveils-windows-server-2028-with-hardened-security"
+    ]
+  },
+  {
+    "slug": "ubuntu-ai-security-patches-are-here-if-you-re-will-9c30f7d4",
+    "title": "Ubuntu AI security patches are here, if you’re willing to test them yourself",
+    "summary": "Canonical is letting Ubuntu Pro customers install security patches written by AI agents before its engineers finish reviewing and testing them. The patches come from Surge, a system Canonical built to fix known vulnerabilities in Ubuntu’s userspace software, meaning everything outside the operating system’s kernel. The flaw is tracked as CVE-2026-114938.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/ubuntu-ai-security-patches-edge-archive/",
+    "publishedAt": "2026-11-18T08:47:50.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-ai-security-patches-are-here-if-you-re-will",
+      "article-9c30f7d4",
+      "9c30f7d4",
+      "ubuntu-ai-security-patches-are-here-if-you-re-will-787bfb",
+      "ubuntu-ai-security-patches-are-here-if-you-re-willing-to-tes"
+    ]
+  },
+  {
+    "slug": "scattered-spider-leader-sentenced-six-years-in-u-s-10d73299",
+    "title": "Scattered Spider Leader Sentenced Six Years in U.S. Prison",
+    "summary": "A former Scattered Spider leader was sentenced to six years in U.S. federal prison after prosecutors alleged he stole millions in cryptocurrency and conspired to hack a dozen companies. The indictment cited coordinated phishing and credential-stealing campaigns targeting corporate networks, but no active exploitation was reported. The case highlights legal repercussions for orchestrating large-scale cybercrime operations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/",
+    "publishedAt": "2026-11-18T08:24:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "scattered-spider-leader-sentenced-six-years-in-u-s",
+      "article-10d73299",
+      "10d73299",
+      "scattered-spider-leader-sentenced-six-years-in-u-s-79d767",
+      "scattered-spider-leader-sentenced-six-years-in-u-s-prison"
+    ]
+  },
+  {
+    "slug": "defense-firms-targeted-by-gravityrat-phishing-camp-a3d38f2a",
+    "title": "Defense Firms Targeted by GravityRAT Phishing Campaign",
+    "summary": "Hackers used logos of major defense firms on a fake recruitment site to spread GravityRAT spyware. The site offered an Android résumé builder that harvested text messages, location data, and files, exploiting social engineering. Security teams should block the domain, enforce MFA, and train staff to avoid deceptive recruitment sites.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/spread-gravityrat-spyware/",
+    "publishedAt": "2026-11-18T08:07:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "defense-firms-targeted-by-gravityrat-phishing-camp",
+      "article-a3d38f2a",
+      "a3d38f2a",
+      "defense-firms-targeted-by-gravityrat-phishing-camp-304350",
+      "defense-firms-targeted-by-gravityrat-phishing-campaign"
+    ]
+  },
+  {
     "slug": "deutsche-telekom-iot-ceo-discusses-20-year-device-ae815c66",
     "title": "Deutsche Telekom IoT CEO Discusses 20-Year Device Security",
     "summary": "In an interview, Deutsche Telekom IoT CEO Christian Schwalbe outlined 20-year device security challenges. He noted forgotten devices as the greatest risk, EU Cyber Resilience Act will compel manufacturers to maintain security, and detection via anomalous communication patterns. Schwalbe discussed post-quantum cryptography for constrained devices, research on splitting secrets across terrestrial networks, urging adoption of new schemes and continuous monitoring.",
@@ -390,6 +468,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisa-alerts-to-java4shell-cve-2026-114938-vulnerab-a3fdbd8e",
+    "title": "CISA Alerts to Java4Shell CVE-2026-114938 Vulnerability",
+    "summary": "CISA warned that the AI-discovered Java4Shell flaw (CVE-2026-114938) can enable unauthenticated attackers to take over Java servers without a password. The vulnerability exploits a deserialization flaw in the Java Runtime Environment, allowing remote code execution with a CVSS score of 9.8. Administrators must apply the vendor-issued patch immediately, disable remote deserialization, and monitor for anomalous activity.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/cisa-issues-java4shell-alert",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-alerts-to-java4shell-cve-2026-114938-vulnerab",
+      "article-a3fdbd8e",
+      "a3fdbd8e",
+      "cisa-alerts-to-java4shell-cve-2026-114938-vulnerab-382eef",
+      "cisa-alerts-to-java4shell-cve-2026-114938-vulnerability"
+    ]
+  },
+  {
     "slug": "java4shell-cve-2026-114938-exploitation-attempts-d-5eb088cc",
     "title": "Java4Shell CVE-2026-114938 Exploitation Attempts Detected",
     "summary": "GreyNoise monitors scanning and exploitation attempts targeting the CVE-2026-114938 memory-corruption flaw in OpenJDK’s Base64 decoder. The heap-based buffer overflow can be triggered remotely by crafted Base64 input, potentially enabling arbitrary code execution. Oracle and OpenJDK have released patches; administrators should apply the latest updates or disable Base64 decoding until mitigated.",
@@ -760,6 +859,24 @@ export const news: NewsBrief[] = [
       "2c8ce2c4",
       "cve-2026-130622-and-cve-2026-130623-incorrect-auth-aebc79",
       "cve-2026-130622-and-cve-2026-130623-incorrect-authorization-"
+    ]
+  },
+  {
+    "slug": "oracle-issues-november-2026-patch-advisory-123ac931",
+    "title": "Oracle Issues November 2026 Patch Advisory",
+    "summary": "Oracle issued a critical patch update advisory for November 2026, addressing multiple undisclosed security issues. The advisory does not list specific CVE identifiers or detailed exploit mechanisms, but it is part of Oracle's ongoing security maintenance program. Security teams should apply the available patches as soon as they become available to maintain system integrity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Oracle Security Alerts",
+    "sourceUrl": "https://www.oracle.com/security-alerts/cspunov2026.html",
+    "publishedAt": "2026-11-17T20:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-issues-november-2026-patch-advisory",
+      "article-123ac931",
+      "123ac931",
+      "oracle-issues-november-2026-patch-advisory-5662be"
     ]
   },
   {
@@ -3575,6 +3692,24 @@ export const news: NewsBrief[] = [
       "97252158",
       "gemini-ai-agents-bypass-safeguards-to-target-live-650bb0",
       "gemini-ai-agents-bypass-safeguards-to-target-live-website"
+    ]
+  },
+  {
+    "slug": "apple-releases-testflight-update-c786eb65",
+    "title": "Apple Releases TestFlight Update",
+    "summary": "Apple released a TestFlight update, but the release notes do not disclose specific vulnerability fixes or CVE identifiers. The update is part of Apple's regular security maintenance schedule. Users should install the update promptly to ensure compatibility and security, and it also includes minor UI improvements and performance optimizations today.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026h",
+    "publishedAt": "2026-11-16T22:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-testflight-update",
+      "article-c786eb65",
+      "c786eb65",
+      "apple-releases-testflight-update-5f3d88"
     ]
   },
   {
@@ -9789,143 +9924,6 @@ export const news: NewsBrief[] = [
       "article-0871c5a9",
       "0871c5a9",
       "linux-kernel-ksmbd-oob-read-cve-2026-64138-77f338"
-    ]
-  },
-  {
-    "slug": "linux-kernel-qdisc-array-index-exploit-enables-pri-cf320aa2",
-    "title": "Linux Kernel Qdisc Array Index Exploit Enables Privilege Escalation",
-    "summary": "A local privilege escalation vulnerability in the Linux kernel's Qdisc scheduler allows attackers to gain root privileges on affected systems. The flaw stems from improper array index validation during packet scheduling, rated CVSS 8.8, and requires local code execution to exploit. Kernel maintainers have released patch 6.5.0-rc1, and administrators should apply the update immediately to mitigate the escalation risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1002/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-qdisc-array-index-exploit-enables-pri",
-      "article-cf320aa2",
-      "cf320aa2",
-      "linux-kernel-qdisc-array-index-exploit-enables-pri-77f338",
-      "linux-kernel-qdisc-array-index-exploit-enables-privilege-esc"
-    ]
-  },
-  {
-    "slug": "linux-kernel-sctp-race-condition-enables-local-pri-7bb037c8",
-    "title": "Linux Kernel SCTP Race Condition Enables Local Privilege Escalation",
-    "summary": "A race condition in the Linux kernel's SCTP subsystem permits local privilege escalation on affected installations. The vulnerability arises from unsynchronized state updates during SCTP association teardown, rated CVSS 7.8, and needs local code execution. Kernel developers have issued patch 6.5.0-rc2; administrators should update promptly to close the flaw immediately.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1001/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-sctp-race-condition-enables-local-pri",
-      "article-7bb037c8",
-      "7bb037c8",
-      "linux-kernel-sctp-race-condition-enables-local-pri-77f338",
-      "linux-kernel-sctp-race-condition-enables-local-privilege-esc"
-    ]
-  },
-  {
-    "slug": "zdi-26-1000-linux-kernel-gsm-multiplexing-race-con-3e8e07d2",
-    "title": "ZDI-26-1000: Linux Kernel GSM Multiplexing Race Condition Local Privilege Escalation Vulnerability",
-    "summary": "This vulnerability allows local attackers to escalate privileges on affected installations of Linux Kernel. An attacker must first obtain the ability to execute high-privileged code on the target system in order to exploit this vulnerability. The following CVEs are assigned: CVE-2024-50073.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1000/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2024-50073"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1000-linux-kernel-gsm-multiplexing-race-con",
-      "article-3e8e07d2",
-      "3e8e07d2",
-      "zdi-26-1000-linux-kernel-gsm-multiplexing-race-con-77f338",
-      "zdi-26-1000-linux-kernel-gsm-multiplexing-race-condition-loc"
-    ]
-  },
-  {
-    "slug": "linux-kernel-bpf-race-condition-enables-local-priv-25695018",
-    "title": "Linux Kernel BPF Race Condition Enables Local Privilege Escalation",
-    "summary": "A race condition in the Linux Kernel BPF local storage handling could allow local attackers to elevate privileges on affected systems. The flaw requires attackers to first execute high-privileged code, and the ZDI assigned a CVSS score of 7.5, indicating high severity. No public exploit has been disclosed; administrators should apply kernel updates or apply vendor patches when available.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1007/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-bpf-race-condition-enables-local-priv",
-      "article-25695018",
-      "25695018",
-      "linux-kernel-bpf-race-condition-enables-local-priv-77f339",
-      "linux-kernel-bpf-race-condition-enables-local-privilege-esca"
-    ]
-  },
-  {
-    "slug": "linux-kernel-skb-zerocopy-flaw-enables-local-privi-4bfc862f",
-    "title": "Linux Kernel skb_zerocopy Flaw Enables Local Privilege Escalation",
-    "summary": "The Linux Kernel skb_zerocopy improper ownership management flaw could allow local attackers to elevate privileges on affected systems. The vulnerability requires attackers to first execute low-privileged code, and the ZDI assigned a CVSS score of 7.8, with CVE-2026-99284 documented. No public exploit has been disclosed; administrators should apply kernel updates or vendor patches when available.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1006/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-99284"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-skb-zerocopy-flaw-enables-local-privi",
-      "article-4bfc862f",
-      "4bfc862f",
-      "linux-kernel-skb-zerocopy-flaw-enables-local-privi-77f338",
-      "linux-kernel-skb-zerocopy-flaw-enables-local-privilege-escal"
-    ]
-  },
-  {
-    "slug": "linux-kernel-ebpf-race-enables-local-privilege-esc-a84c2135",
-    "title": "Linux Kernel eBPF Race Enables Local Privilege Escalation",
-    "summary": "A race condition in the Linux kernel’s eBPF subsystem allows local attackers to elevate privileges on affected installations. The flaw requires the attacker to first run high-privileged code, and the ZDI assigns a CVSS score of 7.5, indicating high-severity impact. No patch has been released; users should monitor vendor advisories for updates.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1005/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-ebpf-race-enables-local-privilege-esc",
-      "article-a84c2135",
-      "a84c2135",
-      "linux-kernel-ebpf-race-enables-local-privilege-esc-77f338",
-      "linux-kernel-ebpf-race-enables-local-privilege-escalation"
-    ]
-  },
-  {
-    "slug": "linux-kernel-ksmbd-flaw-exposes-sensitive-data-rem-0961fd23",
-    "title": "Linux Kernel KSMBD Flaw Exposes Sensitive Data Remotely",
-    "summary": "A newly disclosed flaw in Linux Kernel KSMBD lets remote attackers disclose sensitive information on affected installations. The root cause is use of an uninitialized resource in request buffer handling; no authentication is required, though only systems with ksmbd enabled are exposed, and ZDI assigned CVSS 6.3. Administrators should disable ksmbd where unused and apply vendor kernel updates per ZDI-26-1004.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1004/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-ksmbd-flaw-exposes-sensitive-data-rem",
-      "article-0961fd23",
-      "0961fd23",
-      "linux-kernel-ksmbd-flaw-exposes-sensitive-data-rem-77f338",
-      "linux-kernel-ksmbd-flaw-exposes-sensitive-data-remotely"
     ]
   }
 ];

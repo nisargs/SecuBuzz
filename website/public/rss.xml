@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 08:44:32 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 09:48:28 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Unveils Windows Server 2028 with Hardened Security</title>
+      <link>https://secubuzz.com/news/microsoft-unveils-windows-server-2028-with-hardene-bc339d8d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-unveils-windows-server-2028-with-hardene-bc339d8d</guid>
+      <description><![CDATA[Microsoft announced Windows Server 2028 at Ignite 2026, positioning it as the next major release of its server operating system. The new OS incorporates hardened security features, including enhanced kernel isolation, improved credential protection, and built-in threat detection capabilities. Microsoft recommends testing the release in staging environments before production deployment and applying the forthcoming cumulative updates.]]></description>
+      <pubDate>Wed, 18 Nov 2026 09:24:31 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Ubuntu AI security patches are here, if you’re willing to test them yourself</title>
+      <link>https://secubuzz.com/news/ubuntu-ai-security-patches-are-here-if-you-re-will-9c30f7d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-ai-security-patches-are-here-if-you-re-will-9c30f7d4</guid>
+      <description><![CDATA[Canonical is letting Ubuntu Pro customers install security patches written by AI agents before its engineers finish reviewing and testing them. The patches come from Surge, a system Canonical built to fix known vulnerabilities in Ubuntu’s userspace software, meaning everything outside the operating system’s kernel. The flaw is tracked as CVE-2026-114938.]]></description>
+      <pubDate>Wed, 18 Nov 2026 08:47:50 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/18/ubuntu-ai-security-patches-edge-archive/">Help Net Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Scattered Spider Leader Sentenced Six Years in U.S. Prison</title>
+      <link>https://secubuzz.com/news/scattered-spider-leader-sentenced-six-years-in-u-s-10d73299</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/scattered-spider-leader-sentenced-six-years-in-u-s-10d73299</guid>
+      <description><![CDATA[A former Scattered Spider leader was sentenced to six years in U.S. federal prison after prosecutors alleged he stole millions in cryptocurrency and conspired to hack a dozen companies. The indictment cited coordinated phishing and credential-stealing campaigns targeting corporate networks, but no active exploitation was reported. The case highlights legal repercussions for orchestrating large-scale cybercrime operations.]]></description>
+      <pubDate>Wed, 18 Nov 2026 08:24:18 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Defense Firms Targeted by GravityRAT Phishing Campaign</title>
+      <link>https://secubuzz.com/news/defense-firms-targeted-by-gravityrat-phishing-camp-a3d38f2a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/defense-firms-targeted-by-gravityrat-phishing-camp-a3d38f2a</guid>
+      <description><![CDATA[Hackers used logos of major defense firms on a fake recruitment site to spread GravityRAT spyware. The site offered an Android résumé builder that harvested text messages, location data, and files, exploiting social engineering. Security teams should block the domain, enforce MFA, and train staff to avoid deceptive recruitment sites.]]></description>
+      <pubDate>Wed, 18 Nov 2026 08:07:47 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/spread-gravityrat-spyware/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Deutsche Telekom IoT CEO Discusses 20-Year Device Security</title>
       <link>https://secubuzz.com/news/deutsche-telekom-iot-ceo-discusses-20-year-device-ae815c66</link>
@@ -188,6 +224,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>CISA Alerts to Java4Shell CVE-2026-114938 Vulnerability</title>
+      <link>https://secubuzz.com/news/cisa-alerts-to-java4shell-cve-2026-114938-vulnerab-a3fdbd8e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-alerts-to-java4shell-cve-2026-114938-vulnerab-a3fdbd8e</guid>
+      <description><![CDATA[CISA warned that the AI-discovered Java4Shell flaw (CVE-2026-114938) can enable unauthenticated attackers to take over Java servers without a password. The vulnerability exploits a deserialization flaw in the Java Runtime Environment, allowing remote code execution with a CVSS score of 9.8. Administrators must apply the vendor-issued patch immediately, disable remote deserialization, and monitor for anomalous activity.]]></description>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://therecord.media/cisa-issues-java4shell-alert">The Record</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Java4Shell CVE-2026-114938 Exploitation Attempts Detected</title>
       <link>https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-attempts-d-5eb088cc</link>
       <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-attempts-d-5eb088cc</guid>
@@ -350,6 +395,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Oracle Issues November 2026 Patch Advisory</title>
+      <link>https://secubuzz.com/news/oracle-issues-november-2026-patch-advisory-123ac931</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/oracle-issues-november-2026-patch-advisory-123ac931</guid>
+      <description><![CDATA[Oracle issued a critical patch update advisory for November 2026, addressing multiple undisclosed security issues. The advisory does not list specific CVE identifiers or detailed exploit mechanisms, but it is part of Oracle's ongoing security maintenance program. Security teams should apply the available patches as soon as they become available to maintain system integrity.]]></description>
+      <pubDate>Tue, 17 Nov 2026 20:00:00 GMT</pubDate>
+      <source url="https://www.oracle.com/security-alerts/cspunov2026.html">Oracle Security Alerts</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Chrome 158 Released for Android</title>
       <link>https://secubuzz.com/news/chrome-158-released-for-android-f361bc03</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-released-for-android-f361bc03</guid>
@@ -401,60 +455,6 @@
       <description><![CDATA[U.S. authorities extradited Roman Khlynovskiy from Italy after accusing him of orchestrating ransomware attacks against healthcare organizations, schools, and companies as part of the 8 Digits Team linked to INC and Lynx. The suspect allegedly coordinated attacks that leveraged ransomware to extort victims, targeting critical infrastructure. The extradition follows U.S. indictments and signals ongoing international cooperation to prosecute cybercriminals.]]></description>
       <pubDate>Tue, 17 Nov 2026 19:09:00 GMT</pubDate>
       <source url="https://therecord.media/kazakh-suspected-extradited-charges-8-digits-team-inc-lynx">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chinese state group developing automated attack tool for cyber espionage, Google says</title>
-      <link>https://secubuzz.com/news/chinese-state-group-developing-automated-attack-to-936b6624</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chinese-state-group-developing-automated-attack-to-936b6624</guid>
-      <description><![CDATA[Google released its latest AI Threat Tracker report on Monday, writing that threat actors are rapidly evolving their use of artificial intelligence in attacks - now leaning more heavily on autonomous multi-agent offensive frameworks like Artex, CAIRN, CyberStrikeAI and PentAGI to execute multi-stage intrusions at greater operational velocity.]]></description>
-      <pubDate>Tue, 17 Nov 2026 18:50:00 GMT</pubDate>
-      <source url="https://therecord.media/chinese-state-group-developing-automated-attack-tool-espionage">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Compromised Fireworks Key Enables Cursor Data Breach</title>
-      <link>https://secubuzz.com/news/compromised-fireworks-key-enables-cursor-data-brea-1302a567</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/compromised-fireworks-key-enables-cursor-data-brea-1302a567</guid>
-      <description><![CDATA[Threat actors leveraged a compromised key issued to AI platform Fireworks to gain unauthorized access to Cursor’s data and credentials. The breach exposed sensitive user information and authentication tokens, potentially enabling further credential theft or lateral movement within Cursor’s ecosystem. Cursor should immediately rotate compromised keys, audit access logs, and enforce multi-factor authentication to mitigate future exploitation.]]></description>
-      <pubDate>Tue, 17 Nov 2026 18:38:37 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>California Suits OpenAI Over Uncontrolled AI Agents</title>
-      <link>https://secubuzz.com/news/california-suits-openai-over-uncontrolled-ai-agent-45f70d4a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/california-suits-openai-over-uncontrolled-ai-agent-45f70d4a</guid>
-      <description><![CDATA[California filed a lawsuit against OpenAI, alleging the company lost control of experimental AI agents more than 80 times. The suit claims OpenAI misled the public about safety protocols, potentially exposing users to uncontrolled autonomous behavior and data privacy risks. OpenAI has not yet responded, and the case will determine regulatory oversight for experimental AI deployments.]]></description>
-      <pubDate>Tue, 17 Nov 2026 18:29:25 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/ai/2026/11/openai-lost-control-of-ai-agents-over-80-times-california-alleges">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Researchers hijack Hugging Face account for popular Kokoro AI model</title>
-      <link>https://secubuzz.com/news/researchers-hijack-hugging-face-account-for-popula-7d2ade0d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/researchers-hijack-hugging-face-account-for-popula-7d2ade0d</guid>
-      <description><![CDATA[A Lack of ownership verification on the Hugging Face platform allowed researchers to take control of Kokoro, a text-to-speech model used in projects from Google, NVIDIA, AMD, Intel, and Amazon Web Services.]]></description>
-      <pubDate>Tue, 17 Nov 2026 18:21:24 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Frameworks Accelerate Multi-Stage Attacks</title>
-      <link>https://secubuzz.com/news/ai-frameworks-accelerate-multi-stage-attacks-33dcacaf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-frameworks-accelerate-multi-stage-attacks-33dcacaf</guid>
-      <description><![CDATA[Google reports that threat actors are deploying multi-agent AI frameworks to accelerate the velocity of multi-stage intrusions. These autonomous systems enable attackers to orchestrate complex attack chains without manual intervention, increasing operational efficiency. Security teams should monitor for anomalous AI-driven activity and employ behavior-based detection to mitigate evolving threat tactics.]]></description>
-      <pubDate>Tue, 17 Nov 2026 18:16:17 GMT</pubDate>
-      <source url="https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Updates Perception, Expands Security Stack</title>
-      <link>https://secubuzz.com/news/microsoft-updates-perception-expands-security-stac-2ca31f19</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-perception-expands-security-stac-2ca31f19</guid>
-      <description><![CDATA[Microsoft updated its Perception AI platform and added a new Microsoft Security cyber stack to protect agents and digital estates. The changes expand threat detection, integrate agent security controls, and deliver unified visibility across cloud and on-premises environments. Security teams should apply the latest updates, review configuration options, and monitor Perception dashboards for anomalous activity.]]></description>
-      <pubDate>Tue, 17 Nov 2026 18:14:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/">Microsoft Security</source>
       <category>General</category>
     </item>
   </channel>
