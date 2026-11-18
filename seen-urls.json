@@ -6136,5 +6136,10 @@
   "https://therecord.media/cisa-issues-java4shell-alert",
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
   "https://www.oracle.com/security-alerts/cspunov2026.html",
-  "https://developer.apple.com/news/releases/?id=11162026h"
+  "https://developer.apple.com/news/releases/?id=11162026h",
+  "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
+  "https://cybersecuritynews.com/anthropic-cuts-critical-vulnerability-disclosure-deadline/",
+  "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+  "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+  "https://cybersecuritynews.com/stolen-fortigate-vpn-credentials/"
 ]

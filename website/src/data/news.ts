@@ -11,6 +11,45 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "perforce-puppet-rce-exploited-in-attacks-68226550",
+    "title": "Perforce Puppet RCE Exploited in Attacks",
+    "summary": "Perforce Puppet’s CVE-2026-115731 flaw lets a client with a CA-signed agent certificate execute arbitrary code on the server. The flaw bypasses authentication via certificate validation, enabling attackers to achieve full server compromise; it is actively exploited with a CVSS score of 9.4. Perforce issued an urgent patch; administrators should update immediately or apply the provided work-around to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
+    "publishedAt": "2026-11-18T10:37:08.000Z",
+    "cves": [
+      "CVE-2026-115731"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "perforce-puppet-rce-exploited-in-attacks",
+      "article-68226550",
+      "68226550",
+      "perforce-puppet-rce-exploited-in-attacks-18185c"
+    ]
+  },
+  {
+    "slug": "anthropic-cuts-vulnerability-disclosure-deadline-t-9be6d18c",
+    "title": "Anthropic Cuts Vulnerability Disclosure Deadline to 30 Days",
+    "summary": "Anthropic has shortened its coordinated vulnerability disclosure window from 90 to 30 days, citing accelerated AI bug detection. The change applies to high-severity flaws, aiming to reduce the time between discovery and public disclosure while encouraging faster vendor remediation. Security teams should monitor Anthropic’s policy updates and adjust their vulnerability management timelines accordingly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/anthropic-cuts-critical-vulnerability-disclosure-deadline/",
+    "publishedAt": "2026-11-18T09:48:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-cuts-vulnerability-disclosure-deadline-t",
+      "article-9be6d18c",
+      "9be6d18c",
+      "anthropic-cuts-vulnerability-disclosure-deadline-t-30cb8b",
+      "anthropic-cuts-vulnerability-disclosure-deadline-to-30-days"
+    ]
+  },
+  {
     "slug": "microsoft-unveils-windows-server-2028-with-hardene-bc339d8d",
     "title": "Microsoft Unveils Windows Server 2028 with Hardened Security",
     "summary": "Microsoft announced Windows Server 2028 at Ignite 2026, positioning it as the next major release of its server operating system. The new OS incorporates hardened security features, including enhanced kernel isolation, improved credential protection, and built-in threat detection capabilities. Microsoft recommends testing the release in staging environments before production deployment and applying the forthcoming cumulative updates.",
@@ -48,6 +87,46 @@ export const news: NewsBrief[] = [
       "9c30f7d4",
       "ubuntu-ai-security-patches-are-here-if-you-re-will-787bfb",
       "ubuntu-ai-security-patches-are-here-if-you-re-willing-to-tes"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-critical-puppet-rce-flaw-b67c8aa0",
+    "title": "Hackers Exploit Critical Puppet RCE Flaw",
+    "summary": "CISA has listed Perforce Puppet’s CVE-2026-115731 as a known exploited vulnerability, noting active attacks against enterprise management servers. The flaw permits any client with a CA-signed agent certificate to bypass authentication and execute arbitrary code, carrying a CVSS score of 9.4. Perforce has released an urgent patch; administrators should apply it immediately or use the documented workaround to stop exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+    "publishedAt": "2026-11-18T08:24:31.000Z",
+    "cves": [
+      "CVE-2026-115731"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-critical-puppet-rce-flaw",
+      "article-b67c8aa0",
+      "b67c8aa0",
+      "hackers-exploit-critical-puppet-rce-flaw-7a7226"
+    ]
+  },
+  {
+    "slug": "cisa-urges-patch-for-java4shell-rce-flaw-08dee8d0",
+    "title": "CISA Urges Patch for Java4Shell RCE Flaw",
+    "summary": "CISA urged immediate patching of Oracle Java’s CVE-2026-114938, a critical out-of-bounds write flaw that can cause DoS or remote code execution. The flaw exploits a JVM buffer overflow, allowing attackers with crafted input to corrupt memory and potentially run arbitrary code.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+    "publishedAt": "2026-11-18T08:24:23.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-urges-patch-for-java4shell-rce-flaw",
+      "article-08dee8d0",
+      "08dee8d0",
+      "cisa-urges-patch-for-java4shell-rce-flaw-2d2b5d"
     ]
   },
   {
@@ -105,6 +184,25 @@ export const news: NewsBrief[] = [
       "ae815c66",
       "deutsche-telekom-iot-ceo-discusses-20-year-device-5ed147",
       "deutsche-telekom-iot-ceo-discusses-20-year-device-security"
+    ]
+  },
+  {
+    "slug": "hackers-use-stolen-fortigate-vpn-credentials-to-ac-59225046",
+    "title": "Hackers Use Stolen FortiGate VPN Credentials to Access Corporate Networks and Deploy Custom Malware",
+    "summary": "A threat actor known as “tcherber” is selling and using stolen FortiGate VPN logins to get into company networks. The same person also builds custom malware, including a stealer, a remote desktop tool, and ransomware.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/stolen-fortigate-vpn-credentials/",
+    "publishedAt": "2026-11-18T07:16:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-stolen-fortigate-vpn-credentials-to-ac",
+      "article-59225046",
+      "59225046",
+      "hackers-use-stolen-fortigate-vpn-credentials-to-ac-972979",
+      "hackers-use-stolen-fortigate-vpn-credentials-to-access-corpo"
     ]
   },
   {
@@ -9825,105 +9923,6 @@ export const news: NewsBrief[] = [
       "article-b53a257a",
       "b53a257a",
       "trendai-apex-one-uncontrolled-search-path-exploit-6f3d26"
-    ]
-  },
-  {
-    "slug": "linux-kernel-pagemap-use-after-free-exploits-local-9aa6ce78",
-    "title": "Linux Kernel Pagemap Use-After-Free Exploits Local Privilege Escalation",
-    "summary": "A Linux Kernel pagemap scan use-after-free flaw (ZDI-26-999) permits local attackers to execute arbitrary code with elevated privileges. The flaw stems from a race condition that frees the pagemap buffer prematurely, enabling kernel memory read/write; CVSS 8.8. Kernel maintainers patched the issue in the 6.5 series; users should update or apply the vendor backport.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-999/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-pagemap-use-after-free-exploits-local",
-      "article-9aa6ce78",
-      "9aa6ce78",
-      "linux-kernel-pagemap-use-after-free-exploits-local-6f3d2a",
-      "linux-kernel-pagemap-use-after-free-exploits-local-privilege"
-    ]
-  },
-  {
-    "slug": "linux-kernel-ksmbd-smb-direct-rce-integer-underflo-53c0777d",
-    "title": "Linux Kernel KSMBD SMB Direct RCE Integer Underflow",
-    "summary": "A remote integer underflow in Linux Kernel KSMBD’s SMB Direct allows code execution on affected systems. The flaw stems from unchecked arithmetic on SMB Direct packet lengths, enabling unauthenticated RCE in affected configurations; CVSS 9.0. Kernel maintainers released a patch; administrators should update to the latest kernel release or disable SMB Direct to mitigate.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-998/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-ksmbd-smb-direct-rce-integer-underflo",
-      "article-53c0777d",
-      "53c0777d",
-      "linux-kernel-ksmbd-smb-direct-rce-integer-underflo-6f3d2a",
-      "linux-kernel-ksmbd-smb-direct-rce-integer-underflow"
-    ]
-  },
-  {
-    "slug": "smartermail-authentication-bypass-via-low-entropy-6663343c",
-    "title": "SmarterMail Authentication Bypass via Low Entropy",
-    "summary": "An authentication bypass flaw in SmarterTools SmarterMail allows remote attackers to access accounts without credentials. The vulnerability arises from insufficient entropy in password hashing, enabling brute-force or dictionary attacks; CVE-2026-126969 carries a CVSS score of 9.1. Administrators should apply the vendor-issued patch or upgrade to the latest SmarterMail release to eliminate the bypass.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-997/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126969"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "smartermail-authentication-bypass-via-low-entropy",
-      "article-6663343c",
-      "6663343c",
-      "smartermail-authentication-bypass-via-low-entropy-6f3d2a"
-    ]
-  },
-  {
-    "slug": "smartertools-smartermail-privilege-escalation-vuln-ea8ce86c",
-    "title": "SmarterTools SmarterMail Privilege Escalation Vulnerability",
-    "summary": "Remote attackers can exploit a privilege escalation flaw in SmarterTools SmarterMail installations, requiring authenticated access. The flaw, tracked as CVE-2026-126966 with CVSS 8.8, enables authenticated remote code execution via missing authorization checks, allowing full system compromise. SmarterTools should issue a patch fixing the missing authorization check, and administrators must apply updates promptly to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-995/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126966"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "smartertools-smartermail-privilege-escalation-vuln",
-      "article-ea8ce86c",
-      "ea8ce86c",
-      "smartertools-smartermail-privilege-escalation-vuln-6f3d2a",
-      "smartertools-smartermail-privilege-escalation-vulnerability"
-    ]
-  },
-  {
-    "slug": "linux-kernel-ksmbd-oob-read-cve-2026-64138-0871c5a9",
-    "title": "Linux Kernel ksmbd OOB Read CVE-2026-64138",
-    "summary": "ZDI reported CVE-2026-64138, an out-of-bounds read flaw in Linux Kernel ksmbd that lets authenticated remote attackers read sensitive data on ksmbd-enabled systems. The flaw stems from unchecked bounds on the smb_inherit_dacl parameter, enabling memory reads beyond the intended buffer. Distributors should apply the vendor patch that corrects the bounds check; no workaround is available until the kernel update is installed.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1003/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-64138"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-ksmbd-oob-read-cve-2026-64138",
-      "article-0871c5a9",
-      "0871c5a9",
-      "linux-kernel-ksmbd-oob-read-cve-2026-64138-77f338"
     ]
   }
 ];
