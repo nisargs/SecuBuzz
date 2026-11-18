@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "russian-hackers-use-cloud-breach-to-target-second-a9087332",
+    "title": "Russian Hackers Use Cloud Breach to Target Second US Org",
+    "summary": "Russian state-sponsored actors breached a U.S. organization’s Google Workspace in late 2025, exfiltrating staff directory and cloud files. They leveraged the stolen data to impersonate a legitimate employee and launch a second intrusion against another U.S. organization in 2026. Google and Mandiant confirmed the attack chain, recommending affected organizations to review access controls and monitor for credential misuse.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/russian-hackers-3/",
+    "publishedAt": "2026-11-18T06:18:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russian-hackers-use-cloud-breach-to-target-second",
+      "article-a9087332",
+      "a9087332",
+      "russian-hackers-use-cloud-breach-to-target-second-1bae87",
+      "russian-hackers-use-cloud-breach-to-target-second-us-org"
+    ]
+  },
+  {
     "slug": "iverify-basic-empowers-device-security-checks-b48b7505",
     "title": "iVerify Basic Empowers Device Security Checks",
     "summary": "iVerify Basic is a mobile security app for individuals seeking device integrity checks and privacy enhancements. Available on iOS and Android, the app consolidates scan controls and status on a single Device tab, allowing users to run scans and view findings. After each scan, the app records the last check time and displays results, helping users maintain ongoing device health.",
@@ -26,6 +45,27 @@ export const news: NewsBrief[] = [
       "article-b48b7505",
       "b48b7505",
       "iverify-basic-empowers-device-security-checks-1a3bf7"
+    ]
+  },
+  {
+    "slug": "apache-http-2-rce-cve-2026-119618-actively-exploit-7b8b7378",
+    "title": "Apache HTTP/2 RCE CVE-2026-119618 Actively Exploited",
+    "summary": "A critical flaw in Apache HTTP/2 module mod_http2, CVE-2026-119618, permits unauthenticated remote code execution. The vulnerability, rated CVSS 8.1/10 CSA, has been actively exploited since November 17, allowing attackers to run arbitrary code without credentials. Apache released 2.4.71 on November 11 to patch the flaw; teams should upgrade immediately and monitor exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/apache-http-server-rce-exploitation/",
+    "publishedAt": "2026-11-18T05:06:49.000Z",
+    "cves": [
+      "CVE-2026-119618"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apache-http-2-rce-cve-2026-119618-actively-exploit",
+      "article-7b8b7378",
+      "7b8b7378",
+      "apache-http-2-rce-cve-2026-119618-actively-exploit-4fc78a",
+      "apache-http-2-rce-cve-2026-119618-actively-exploited"
     ]
   },
   {
@@ -3806,6 +3846,24 @@ export const news: NewsBrief[] = [
       "article-4ab95a4b",
       "4ab95a4b",
       "meta-fined-886m-by-italian-regulator-979fe6"
+    ]
+  },
+  {
+    "slug": "apple-releases-ipados-27-3-beta-2-update-18bf82a9",
+    "title": "Apple Releases iPadOS 27.3 Beta 2 Update",
+    "summary": "Apple released iPadOS 27.3 beta 2 (build 24C5049d) for iPad devices. The beta includes incremental feature enhancements and stability fixes, but as a pre-release it may introduce regressions that could affect app compatibility or system performance. Users can download the beta via the Apple Developer portal or TestFlight and should test it in a controlled environment before production deployment.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026b",
+    "publishedAt": "2026-11-16T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-ipados-27-3-beta-2-update",
+      "article-18bf82a9",
+      "18bf82a9",
+      "apple-releases-ipados-27-3-beta-2-update-5f3d88"
     ]
   },
   {
@@ -9872,68 +9930,6 @@ export const news: NewsBrief[] = [
       "a72d3c8e",
       "zdi-26-954-llama-cpp-mtmd-multimodal-gguf-file-par-6f3d1b",
       "zdi-26-954-llama-cpp-mtmd-multimodal-gguf-file-parsing-integ"
-    ]
-  },
-  {
-    "slug": "zdi-26-958-kicad-plugin-directory-traversal-remote-b16050b8",
-    "title": "ZDI-26-958: KiCad Plugin Directory Traversal Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of KiCad. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-126972.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-958/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126972"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-958-kicad-plugin-directory-traversal-remote",
-      "article-b16050b8",
-      "b16050b8",
-      "zdi-26-958-kicad-plugin-directory-traversal-remote-6f3d1b",
-      "zdi-26-958-kicad-plugin-directory-traversal-remote-code-exec"
-    ]
-  },
-  {
-    "slug": "kicad-directory-traversal-rce-via-project-archive-8a4bb3b5",
-    "title": "KiCad Directory Traversal RCE via Project Archive Exploit",
-    "summary": "A directory traversal flaw in KiCad’s project archive handling lets remote attackers run arbitrary code on affected installations. CVE-2026-126971 carries a CVSS score of 7.8 and needs user interaction, such as opening a malicious file. KiCad has issued a patch; apply the latest release or follow the vendor’s advisory to close the flaw.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-957/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126971"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "kicad-directory-traversal-rce-via-project-archive",
-      "article-8a4bb3b5",
-      "8a4bb3b5",
-      "kicad-directory-traversal-rce-via-project-archive-6f3d1b",
-      "kicad-directory-traversal-rce-via-project-archive-exploit"
-    ]
-  },
-  {
-    "slug": "kicad-schlib-parsing-oob-write-rce-vulnerability-926a510e",
-    "title": "KiCad SCHLIB Parsing OOB Write RCE Vulnerability",
-    "summary": "An out-of-bounds write in KiCad’s Altium SCHLIB file parser allows remote attackers to execute arbitrary code on affected installations. CVE-2026-126970 has a CVSS score of 7.8 and requires user interaction, such as opening a malicious file. KiCad released a patch; apply the latest version or consult the vendor’s advisory to remediate the flaw.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-956/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126970"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "kicad-schlib-parsing-oob-write-rce-vulnerability",
-      "article-926a510e",
-      "926a510e",
-      "kicad-schlib-parsing-oob-write-rce-vulnerability-6f3d1b"
     ]
   }
 ];

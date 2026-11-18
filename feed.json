@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/russian-hackers-3/",
+    "sourceUrl": "https://cybersecuritynews.com/russian-hackers-3/",
+    "title": "Russian Hackers Use Cloud Breach to Target Second US Org",
+    "headline": "Russian Hackers Use Cloud Breach to Target Second US Org",
+    "summary": "Russian state-sponsored actors breached a U.S. organization’s Google Workspace in late 2025, exfiltrating staff directory and cloud files. They leveraged the stolen data to impersonate a legitimate employee and launch a second intrusion against another U.S. organization in 2026. Google and Mandiant confirmed the attack chain, recommending affected organizations to review access controls and monitor for credential misuse.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-18T06:18:38.000Z",
+    "ingestedAt": "2026-11-18T06:43:12.194Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/russian-hackers-3/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/18/product-showcase-iverify-basic/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/product-showcase-iverify-basic/",
     "title": "iVerify Basic Empowers Device Security Checks",
@@ -13,6 +29,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/18/product-showcase-iverify-basic/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/apache-http-server-rce-exploitation/",
+    "sourceUrl": "https://cybersecuritynews.com/apache-http-server-rce-exploitation/",
+    "title": "Apache HTTP/2 RCE CVE-2026-119618 Actively Exploited",
+    "headline": "Apache HTTP/2 RCE CVE-2026-119618 Actively Exploited",
+    "summary": "A critical flaw in Apache HTTP/2 module mod_http2, CVE-2026-119618, permits unauthenticated remote code execution. The vulnerability, rated CVSS 8.1/10 CSA, has been actively exploited since November 17, allowing attackers to run arbitrary code without credentials. Apache released 2.4.71 on November 11 to patch the flaw; teams should upgrade immediately and monitor exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-18T05:06:49.000Z",
+    "ingestedAt": "2026-11-18T06:43:12.194Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/apache-http-server-rce-exploitation/",
     "additionalSources": []
   },
   {
@@ -3264,6 +3296,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://therecord.media/italian-regulator-fines-meta-886-million-privacy",
+    "additionalSources": []
+  },
+  {
+    "id": "https://developer.apple.com/news/releases/?id=11162026b",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026b",
+    "title": "Apple Releases iPadOS 27.3 Beta 2 Update",
+    "headline": "Apple Releases iPadOS 27.3 Beta 2 Update",
+    "summary": "Apple released iPadOS 27.3 beta 2 (build 24C5049d) for iPad devices. The beta includes incremental feature enhancements and stability fixes, but as a pre-release it may introduce regressions that could affect app compatibility or system performance. Users can download the beta via the Apple Developer portal or TestFlight and should test it in a controlled environment before production deployment.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "publishedAt": "2026-11-16T18:00:00.000Z",
+    "ingestedAt": "2026-11-18T06:43:57.064Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://developer.apple.com/news/releases/?id=11162026b",
     "additionalSources": []
   },
   {
@@ -8375,56 +8423,5 @@
     ],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-958/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-958/",
-    "title": "ZDI-26-958: KiCad Plugin Directory Traversal Remote Code Execution Vulnerability",
-    "headline": "ZDI-26-958: KiCad Plugin Directory Traversal Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of KiCad. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-126972.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "ingestedAt": "2026-11-13T19:43:36.859Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-126972"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-957/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-957/",
-    "title": "KiCad Directory Traversal RCE via Project Archive Exploit",
-    "headline": "KiCad Directory Traversal RCE via Project Archive Exploit",
-    "summary": "A directory traversal flaw in KiCad’s project archive handling lets remote attackers run arbitrary code on affected installations. CVE-2026-126971 carries a CVSS score of 7.8 and needs user interaction, such as opening a malicious file. KiCad has issued a patch; apply the latest release or follow the vendor’s advisory to close the flaw.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "ingestedAt": "2026-11-13T19:43:49.320Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-957/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-956/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-956/",
-    "title": "KiCad SCHLIB Parsing OOB Write RCE Vulnerability",
-    "headline": "KiCad SCHLIB Parsing OOB Write RCE Vulnerability",
-    "summary": "An out-of-bounds write in KiCad’s Altium SCHLIB file parser allows remote attackers to execute arbitrary code on affected installations. CVE-2026-126970 has a CVSS score of 7.8 and requires user interaction, such as opening a malicious file. KiCad released a patch; apply the latest version or consult the vendor’s advisory to remediate the flaw.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "ingestedAt": "2026-11-13T19:43:49.320Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-956/",
-    "additionalSources": []
   }
 ]
