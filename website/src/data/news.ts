@@ -85,6 +85,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "equinor-cyberattack-disrupts-internal-services-7ced0b19",
+    "title": "Equinor Cyberattack Disrupts Internal Services",
+    "summary": "A cyberattack targeted Equinor’s IT infrastructure, disrupting internal services while reportedly sparing oil and gas production. The intrusion likely involved unauthorized access to internal networks, though no data exfiltration has been confirmed. Security teams should isolate affected systems, conduct forensic analysis, and apply any available vendor patches to prevent further compromise.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/norway-equinor-cyberattack-energy",
+    "publishedAt": "2026-11-18T13:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "equinor-cyberattack-disrupts-internal-services",
+      "article-7ced0b19",
+      "7ced0b19",
+      "equinor-cyberattack-disrupts-internal-services-503070"
+    ]
+  },
+  {
     "slug": "oracle-vulnerabilities-span-multiple-products-69bc02a2",
     "title": "Oracle Vulnerabilities Span Multiple Products",
     "summary": "Oracle disclosed vulnerabilities in several products, including Helidon, JD Edwards EnterpriseOne Localizations, MySQL Cluster, MySQL Server, MySQL Workbench, Oracle APEX, Access Manager, Agile PLM, and Oracle Communications components. No CVE IDs or exploit details are given, but the flaws could allow unauthorized access or code execution. Oracle advises applying the available patches or following vendor guidance to mitigate the risks.",
@@ -100,6 +118,25 @@ export const news: NewsBrief[] = [
       "article-69bc02a2",
       "69bc02a2",
       "oracle-vulnerabilities-span-multiple-products-490b08"
+    ]
+  },
+  {
+    "slug": "hackers-impersonate-microsoft-exchange-online-aler-64aff37c",
+    "title": "Hackers Impersonate Microsoft Exchange Online Alerts to Trick Users During Microsoft 365 Outage",
+    "summary": "Hackers used a real Microsoft 365 outage to send fake Exchange Online alerts claiming that four emails were being held and would be deleted unless recipients restored them. The messages borrowed a genuine Microsoft incident number and sent users through several redirects to a page that looked like Microsoft’s sign-in screen.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-impersonate-microsoft-exchange/",
+    "publishedAt": "2026-11-18T12:23:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-impersonate-microsoft-exchange-online-aler",
+      "article-64aff37c",
+      "64aff37c",
+      "hackers-impersonate-microsoft-exchange-online-aler-34ea2d",
+      "hackers-impersonate-microsoft-exchange-online-alerts-to-tric"
     ]
   },
   {
@@ -238,6 +275,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-pentesting-raises-data-privacy-and-production-s-109a730c",
+    "title": "AI Pentesting Raises Data Privacy and Production Safety Concerns",
+    "summary": "AI-driven pentesting accelerates code changes, increasing vulnerability exposure in production systems. The rapid development cycle shortens time-to-exploit to a single day, amplifying risk for data privacy and operational safety, though no specific flaw is cited. Security teams must adopt continuous testing and integrate AI tools to detect and remediate issues before deployment.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
+    "publishedAt": "2026-11-18T11:03:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-pentesting-raises-data-privacy-and-production-s",
+      "article-109a730c",
+      "109a730c",
+      "ai-pentesting-raises-data-privacy-and-production-s-79098b",
+      "ai-pentesting-raises-data-privacy-and-production-safety-conc"
+    ]
+  },
+  {
     "slug": "defending-against-blockchain-based-dead-drops-ac2aaa17",
     "title": "Defending Against Blockchain-Based Dead Drops",
     "summary": "Malware command-and-control infrastructure has migrated to decentralized blockchain networks, eliminating single points of failure. This shift creates bulletproof dead drops that resist takedown, requiring advanced detection and mitigation strategies. Security teams should monitor blockchain traffic, employ distributed ledger analysis, and develop countermeasures to disrupt these resilient C2 channels globally.",
@@ -272,6 +328,25 @@ export const news: NewsBrief[] = [
       "e5d7f9a3",
       "north-korea-aligned-actor-uses-blockchain-for-info-d324fe",
       "north-korea-aligned-actor-uses-blockchain-for-infostealing"
+    ]
+  },
+  {
+    "slug": "chrome-158-fixes-204-vulnerabilities-including-cri-771fd328",
+    "title": "Chrome 158 Fixes 204 Vulnerabilities, Including Critical Code Execution Flaws",
+    "summary": "Google began rolling out Chrome 158 to Windows, macOS, and Linux on November 17, 2026, with 204 security fixes. The desktop release notes list six critical memory bugs that could lead to code execution. However, Google did not spell out the impact of each flaw.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/chrome-158-fixes-204-vulnerabilities/",
+    "publishedAt": "2026-11-18T10:41:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-158-fixes-204-vulnerabilities-including-cri",
+      "article-771fd328",
+      "771fd328",
+      "chrome-158-fixes-204-vulnerabilities-including-cri-6a06e3",
+      "chrome-158-fixes-204-vulnerabilities-including-critical-code"
     ]
   },
   {
@@ -469,6 +544,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "oracle-releases-cspu-patching-950-vulnerabilities-0ca5fdf2",
+    "title": "Oracle Releases CSPU Patching 950 Vulnerabilities",
+    "summary": "Oracle released a November 2026 CSPU that patches 950 vulnerabilities across its product portfolio. The update includes over 300 unauthenticated, remotely exploitable flaws and 62 critical-severity issues, mitigating potential RCE and privilege escalation risks. Administrators should apply the CSPU immediately to secure affected systems and mitigate exploitation risk across all affected platforms.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/oracle-patches-640-vulnerabilities-with-november-2026-cspu/",
+    "publishedAt": "2026-11-18T08:47:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-releases-cspu-patching-950-vulnerabilities",
+      "article-0ca5fdf2",
+      "0ca5fdf2",
+      "oracle-releases-cspu-patching-950-vulnerabilities-8adea3"
+    ]
+  },
+  {
     "slug": "hackers-exploit-critical-puppet-rce-flaw-b67c8aa0",
     "title": "Hackers Exploit Critical Puppet RCE Flaw",
     "summary": "CISA has listed Perforce Puppet’s CVE-2026-115731 as a known exploited vulnerability, noting active attacks against enterprise management servers. The flaw permits any client with a CA-signed agent certificate to bypass authentication and execute arbitrary code, carrying a CVSS score of 9.4. Perforce has released an urgent patch; administrators should apply it immediately or use the documented workaround to stop exploitation.",
@@ -563,6 +656,25 @@ export const news: NewsBrief[] = [
       "4e9a52dc",
       "japan-shuts-fugaku-supercomputer-after-internal-br-6d9519",
       "japan-shuts-fugaku-supercomputer-after-internal-breach"
+    ]
+  },
+  {
+    "slug": "needrestart-vulnerability-enables-local-privilege-23518a70",
+    "title": "Needrestart Vulnerability Enables Local Privilege Escalation",
+    "summary": "The needrestart utility contains a flaw that fails to validate systemd cgroup paths and process names, enabling local privilege escalation. A local attacker could exploit the improper handling to gain elevated privileges on the host, potentially compromising system integrity. Applying the latest security update or patching needrestart mitigates the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9151-1",
+    "publishedAt": "2026-11-18T07:33:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "needrestart-vulnerability-enables-local-privilege",
+      "article-23518a70",
+      "23518a70",
+      "needrestart-vulnerability-enables-local-privilege-7e795a",
+      "needrestart-vulnerability-enables-local-privilege-escalation"
     ]
   },
   {
@@ -9764,130 +9876,6 @@ export const news: NewsBrief[] = [
       "c6d1534e",
       "libhevc-hevc-decoder-exposes-android-info-via-oob-6f3d1f",
       "libhevc-hevc-decoder-exposes-android-info-via-oob-read"
-    ]
-  },
-  {
-    "slug": "zdi-26-1009-pwn2own-synology-diskstation-ds925-c2-df4a7d94",
-    "title": "ZDI-26-1009: (Pwn2Own) Synology DiskStation DS925+ C2 Identity Plugin Exposed Dangerous Method Information Disclosure Vulnerability",
-    "summary": "This vulnerability allows network-adjacent attackers to disclose sensitive information on affected installations of Synology DiskStation DS925+ devices. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2025-14713.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1009/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2025-14713"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1009-pwn2own-synology-diskstation-ds925-c2",
-      "article-df4a7d94",
-      "df4a7d94",
-      "zdi-26-1009-pwn2own-synology-diskstation-ds925-c2-77f339",
-      "zdi-26-1009-pwn2own-synology-diskstation-ds925-c2-identity-p"
-    ]
-  },
-  {
-    "slug": "qualcomm-qca7005-heap-overflow-enables-code-execut-6670f08e",
-    "title": "Qualcomm QCA7005 Heap Overflow Enables Code Execution",
-    "summary": "A heap-based buffer overflow in Qualcomm Technologies QCA7005 GreenPhy powerline chips permits physically present attackers to execute arbitrary code without authentication. The flaw, identified as CVE-2026-25293, carries a CVSS score of 6.8, indicating a code execution risk that requires presence. Qualcomm has released a patch; security teams should apply the update or disable the vulnerable feature to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1008/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-25293"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "qualcomm-qca7005-heap-overflow-enables-code-execut",
-      "article-6670f08e",
-      "6670f08e",
-      "qualcomm-qca7005-heap-overflow-enables-code-execut-77f339",
-      "qualcomm-qca7005-heap-overflow-enables-code-execution"
-    ]
-  },
-  {
-    "slug": "smartermail-missing-authorization-disclosure-3bfad260",
-    "title": "SmarterMail Missing Authorization Disclosure",
-    "summary": "A missing authorization check in SmarterTools SmarterMail allows authenticated attackers to disclose sensitive configuration data. The flaw, identified as CVE-2026-126968, carries a CVSS score of 6.5 and requires valid credentials to exploit, exposing internal settings and potentially user credentials. SmarterMail vendors have released a patch; administrators should apply the update immediately and verify that access controls are correctly enforced.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-996/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126968"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "smartermail-missing-authorization-disclosure",
-      "article-3bfad260",
-      "3bfad260",
-      "smartermail-missing-authorization-disclosure-6f3d2a"
-    ]
-  },
-  {
-    "slug": "aten-eco-dc-sql-injection-disclosure-fac985c2",
-    "title": "ATEN eco DC SQL Injection Disclosure",
-    "summary": "ATEN eco DC’s chartDefine component contains a SQL injection flaw that permits authenticated attackers to retrieve sensitive data. The vulnerability, labeled CVE-2026-126965, has a CVSS score of 2.7 and requires valid credentials, limiting its impact to users with access rights. ATEN has issued a patch; users should update the firmware and review database access controls to mitigate the risk.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-993/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126965"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aten-eco-dc-sql-injection-disclosure",
-      "article-fac985c2",
-      "fac985c2",
-      "aten-eco-dc-sql-injection-disclosure-6f3d2a"
-    ]
-  },
-  {
-    "slug": "philips-hue-bridge-heap-overflow-enables-remote-co-50e27703",
-    "title": "Philips Hue Bridge Heap Overflow Enables Remote Code Execution",
-    "summary": "A heap-based buffer overflow in Philips Hue Bridge’s hap_pair_setup_handler permits network-adjacent attackers to execute arbitrary code without authentication. The flaw, assigned CVE-2026-126978, carries a CVSS score of 8.8, indicating high-severity remote code execution potential. Philips has released an update that patches the vulnerable handler; security teams should apply the firmware upgrade immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-963/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126978"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "philips-hue-bridge-heap-overflow-enables-remote-co",
-      "article-50e27703",
-      "50e27703",
-      "philips-hue-bridge-heap-overflow-enables-remote-co-6f3d1e",
-      "philips-hue-bridge-heap-overflow-enables-remote-code-executi"
-    ]
-  },
-  {
-    "slug": "philips-hue-bridge-default-password-bypass-exposes-11ca4076",
-    "title": "Philips Hue Bridge Default Password Bypass Exposes Authentication",
-    "summary": "A default password authentication bypass in Philips Hue Bridge’s HomeKit pair-setup allows network-adjacent attackers to gain access without credentials. The vulnerability, identified as CVE-2026-126977, has a CVSS score of 8.1, indicating high-severity authentication bypass. Philips has issued a firmware patch that removes the default password; users should update their bridges promptly.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-962/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126977"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "philips-hue-bridge-default-password-bypass-exposes",
-      "article-11ca4076",
-      "11ca4076",
-      "philips-hue-bridge-default-password-bypass-exposes-6f3d1e",
-      "philips-hue-bridge-default-password-bypass-exposes-authentic"
     ]
   }
 ];

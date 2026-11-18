@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 13:46:22 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 14:13:19 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Gentlemen Ransomware Gang Claims NVIDIA Breach</title>
@@ -44,6 +44,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Equinor Cyberattack Disrupts Internal Services</title>
+      <link>https://secubuzz.com/news/equinor-cyberattack-disrupts-internal-services-7ced0b19</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/equinor-cyberattack-disrupts-internal-services-7ced0b19</guid>
+      <description><![CDATA[A cyberattack targeted Equinor’s IT infrastructure, disrupting internal services while reportedly sparing oil and gas production. The intrusion likely involved unauthorized access to internal networks, though no data exfiltration has been confirmed. Security teams should isolate affected systems, conduct forensic analysis, and apply any available vendor patches to prevent further compromise.]]></description>
+      <pubDate>Wed, 18 Nov 2026 13:30:00 GMT</pubDate>
+      <source url="https://therecord.media/norway-equinor-cyberattack-energy">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Oracle Vulnerabilities Span Multiple Products</title>
       <link>https://secubuzz.com/news/oracle-vulnerabilities-span-multiple-products-69bc02a2</link>
       <guid isPermaLink="true">https://secubuzz.com/news/oracle-vulnerabilities-span-multiple-products-69bc02a2</guid>
@@ -51,6 +60,15 @@
       <pubDate>Wed, 18 Nov 2026 12:51:56 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/oracle-corporation-security-advisory-av26-1170">Canadian Centre for Cyber Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Impersonate Microsoft Exchange Online Alerts to Trick Users During Microsoft 365 Outage</title>
+      <link>https://secubuzz.com/news/hackers-impersonate-microsoft-exchange-online-aler-64aff37c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-impersonate-microsoft-exchange-online-aler-64aff37c</guid>
+      <description><![CDATA[Hackers used a real Microsoft 365 outage to send fake Exchange Online alerts claiming that four emails were being held and would be deleted unless recipients restored them. The messages borrowed a genuine Microsoft incident number and sent users through several redirects to a page that looked like Microsoft’s sign-in screen.]]></description>
+      <pubDate>Wed, 18 Nov 2026 12:23:15 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-impersonate-microsoft-exchange/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>AI Pentesting Gaps Exposed by Early Exploitation</title>
@@ -116,6 +134,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>AI Pentesting Raises Data Privacy and Production Safety Concerns</title>
+      <link>https://secubuzz.com/news/ai-pentesting-raises-data-privacy-and-production-s-109a730c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-pentesting-raises-data-privacy-and-production-s-109a730c</guid>
+      <description><![CDATA[AI-driven pentesting accelerates code changes, increasing vulnerability exposure in production systems. The rapid development cycle shortens time-to-exploit to a single day, amplifying risk for data privacy and operational safety, though no specific flaw is cited. Security teams must adopt continuous testing and integrate AI tools to detect and remediate issues before deployment.]]></description>
+      <pubDate>Wed, 18 Nov 2026 11:03:57 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Defending Against Blockchain-Based Dead Drops</title>
       <link>https://secubuzz.com/news/defending-against-blockchain-based-dead-drops-ac2aaa17</link>
       <guid isPermaLink="true">https://secubuzz.com/news/defending-against-blockchain-based-dead-drops-ac2aaa17</guid>
@@ -132,6 +159,15 @@
       <pubDate>Wed, 18 Nov 2026 11:00:00 GMT</pubDate>
       <source url="https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/">Cisco Talos</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>Chrome 158 Fixes 204 Vulnerabilities, Including Critical Code Execution Flaws</title>
+      <link>https://secubuzz.com/news/chrome-158-fixes-204-vulnerabilities-including-cri-771fd328</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-fixes-204-vulnerabilities-including-cri-771fd328</guid>
+      <description><![CDATA[Google began rolling out Chrome 158 to Windows, macOS, and Linux on November 17, 2026, with 204 security fixes. The desktop release notes list six critical memory bugs that could lead to code execution. However, Google did not spell out the impact of each flaw.]]></description>
+      <pubDate>Wed, 18 Nov 2026 10:41:12 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/chrome-158-fixes-204-vulnerabilities/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Perforce Puppet RCE Exploited in Attacks</title>
@@ -224,6 +260,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Oracle Releases CSPU Patching 950 Vulnerabilities</title>
+      <link>https://secubuzz.com/news/oracle-releases-cspu-patching-950-vulnerabilities-0ca5fdf2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/oracle-releases-cspu-patching-950-vulnerabilities-0ca5fdf2</guid>
+      <description><![CDATA[Oracle released a November 2026 CSPU that patches 950 vulnerabilities across its product portfolio. The update includes over 300 unauthenticated, remotely exploitable flaws and 62 critical-severity issues, mitigating potential RCE and privilege escalation risks. Administrators should apply the CSPU immediately to secure affected systems and mitigate exploitation risk across all affected platforms.]]></description>
+      <pubDate>Wed, 18 Nov 2026 08:47:18 GMT</pubDate>
+      <source url="https://www.securityweek.com/oracle-patches-640-vulnerabilities-with-november-2026-cspu/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Hackers Exploit Critical Puppet RCE Flaw</title>
       <link>https://secubuzz.com/news/hackers-exploit-critical-puppet-rce-flaw-b67c8aa0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-critical-puppet-rce-flaw-b67c8aa0</guid>
@@ -267,6 +312,15 @@
       <pubDate>Wed, 18 Nov 2026 07:59:16 GMT</pubDate>
       <source url="https://cybersecuritynews.com/japan-shuts-down-fugaku-supercomputer/">Cyber Security News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Needrestart Vulnerability Enables Local Privilege Escalation</title>
+      <link>https://secubuzz.com/news/needrestart-vulnerability-enables-local-privilege-23518a70</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/needrestart-vulnerability-enables-local-privilege-23518a70</guid>
+      <description><![CDATA[The needrestart utility contains a flaw that fails to validate systemd cgroup paths and process names, enabling local privilege escalation. A local attacker could exploit the improper handling to gain elevated privileges on the host, potentially compromising system integrity. Applying the latest security update or patching needrestart mitigates the risk.]]></description>
+      <pubDate>Wed, 18 Nov 2026 07:33:31 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9151-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Deutsche Telekom IoT CEO Discusses 20-Year Device Security</title>
@@ -402,60 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 02:00:03 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33528">SANS Internet Storm Center</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>HTTP/3 RATs Target Governments via TGR-STA-0049</title>
-      <link>https://secubuzz.com/news/http-3-rats-target-governments-via-tgr-sta-0049-1330fc0e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/http-3-rats-target-governments-via-tgr-sta-0049-1330fc0e</guid>
-      <description><![CDATA[TGR-STA-0049 describes a remote access trojan campaign that uses HTTP/3 to target government networks. The trojan exploits the HTTP/3 protocol to establish covert channels, enabling attackers to exfiltrate data and maintain persistence without detection. Security teams should deploy detection rules for HTTP/3 traffic anomalies, review telemetry, and apply vendor patches or mitigations as soon as available.]]></description>
-      <pubDate>Wed, 18 Nov 2026 01:14:13 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/quic-and-covert-novel-http-3-powered-rats-target-southe">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>NIST Releases Post-Quantum Crypto Guidance</title>
-      <link>https://secubuzz.com/news/nist-releases-post-quantum-crypto-guidance-daab2569</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nist-releases-post-quantum-crypto-guidance-daab2569</guid>
-      <description><![CDATA[NIST issued new guidance on post-quantum cryptography, outlining recommended algorithms and deployment considerations for enterprise systems. The advisory highlights potential compatibility issues with legacy protocols and stresses the need for updated key management practices, but does not disclose a specific vulnerability. Security teams should review the guidance, adjust telemetry, and apply any recommended configuration changes to future-proof cryptographic infrastructure.]]></description>
-      <pubDate>Wed, 18 Nov 2026 01:13:34 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/nist-finalizes-post-quantum-cryptography-guidance-gao-o">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Barracuda Cloud Breach via ARTEX AI</title>
-      <link>https://secubuzz.com/news/barracuda-cloud-breach-via-artex-ai-a48b9890</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/barracuda-cloud-breach-via-artex-ai-a48b9890</guid>
-      <description><![CDATA[Barracuda experienced a cloud breach facilitated by the ARTEX AI platform, exposing sensitive customer data. The attack leveraged unauthorized API access and credential reuse, allowing attackers to exfiltrate data without detection. Barracuda has issued a patch and recommends revoking compromised credentials, tightening API permissions, and monitoring logs to prevent further compromise.]]></description>
-      <pubDate>Wed, 18 Nov 2026 01:11:40 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/barracuda-links-cloud-breach-to-artex-ai-powered-cybera">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Charges Dropped Against Peraire-Bueno Brothers in Ethereum Heist</title>
-      <link>https://secubuzz.com/news/charges-dropped-against-peraire-bueno-brothers-in-bca700e2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/charges-dropped-against-peraire-bueno-brothers-in-bca700e2</guid>
-      <description><![CDATA[Charges against the Peraire-Bueno brothers in an Ethereum heist case have been dropped, according to a law enforcement intelligence update. The advisory points to court findings, threat actor profiles, and defensive controls but provides no technical exploit details or confirmed victim impact. Security teams should track the legal outcome and use the case materials to refine Ethereum-related monitoring and controls.]]></description>
-      <pubDate>Wed, 18 Nov 2026 01:10:47 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/court-clears-brothers-of-25-million-ethereum-crypto-hei">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Optimizely Signup Flaw Hits Salesforce, Zoom via Malicious JS</title>
-      <link>https://secubuzz.com/news/optimizely-signup-flaw-hits-salesforce-zoom-via-ma-49ec9b40</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/optimizely-signup-flaw-hits-salesforce-zoom-via-ma-49ec9b40</guid>
-      <description><![CDATA[A flaw in Optimizely's signup flow is linked to malicious JavaScript affecting Salesforce and Zoom, according to a CyberNews AI alert. The advisory provides no CVE identifier or root-cause specifics, but frames the issue as critical and calls for telemetry review and detection-rule hunting. Security teams should review root-cause telemetry, deploy relevant detection rules, and apply the vendor patch promptly.]]></description>
-      <pubDate>Wed, 18 Nov 2026 01:09:11 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/optimizely-hack-infected-cnn-fox-news-bbc-salesforce-si">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Optimizely Flaw Used to Inject Malware Into 178 Top Websites</title>
-      <link>https://secubuzz.com/news/optimizely-flaw-used-to-inject-malware-into-178-to-ed0badd2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/optimizely-flaw-used-to-inject-malware-into-178-to-ed0badd2</guid>
-      <description><![CDATA[Attackers exploited an Optimizely vulnerability to inject data-stealing malware into at least 178 top websites, including BBC, CNN, Equifax, Ledger, and Zoom. Weak third-party content-source enforcement let malicious scripts reach visitors over 24 hours, delivering cryptocurrency clippers, card skimmers, and iOS malware. Operators should audit third-party scripts, enforce strict content-source controls, revoke compromised Optimizely tokens, and monitor for injected payloads.]]></description>
-      <pubDate>Wed, 18 Nov 2026 00:17:00 GMT</pubDate>
-      <source url="https://socket.dev/blog/optimizely-supply-chain-attack">Socket.dev</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
