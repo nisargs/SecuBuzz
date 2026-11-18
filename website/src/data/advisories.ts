@@ -2,6 +2,87 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-130001",
+    "cveID": "CVE-2026-130001",
+    "slug": "cve-2026-130001",
+    "vendor": "RubyGems",
+    "product": "mustache",
+    "name": "Mustache for Ruby: RCE using built-in method access",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-913",
+    "ransomware": false,
+    "description": "Mustache template engine for Ruby in versions 1.1.2 and earlier allows remote attackers to achieve arbitrary code execution through accessing specific built-in methods in an attacker-supplied template.",
+    "requiredAction": "Upgrade mustache to version 1.1.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5hrj-7fc3-cmx9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130001"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63496",
+    "cveID": "CVE-2026-63496",
+    "slug": "cve-2026-63496",
+    "vendor": "npm",
+    "product": "@augment-vir/node",
+    "name": "augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 7.8,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "The grep() function exported by @augment-vir/node inserts caller-controlled search patterns directly into a double-quoted shell command string without sanitization (grep.ts:310).",
+    "requiredAction": "Upgrade @augment-vir/node to version 31.73.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xvcc-vqjv-phqh"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63496"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-61618",
+    "cveID": "CVE-2026-61618",
+    "slug": "cve-2026-61618",
+    "vendor": "Rust (Cargo)",
+    "product": "snark-verifier",
+    "name": "snark-verifier accepts non-canonical KZG accumulator limb encodings",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "KZG accumulator public-instance limbs were decoded without consistently enforcing canonical limb bounds before reconstructing elliptic-curve coordinates. In the generated EVM verifier, accumulator coordinates were reconstructed from public-instance limbs using shifted additions before point validation.",
+    "requiredAction": "Upgrade snark-verifier to version 0.2.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-265x-v3qf-ff6p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61618"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-115731",
     "slug": "cve-2026-115731",
     "vendor": "Perforce",
@@ -1291,87 +1372,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128131"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128132",
-    "cveID": "CVE-2026-128132",
-    "slug": "cve-2026-128132",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "The WebSocket reader continued parsing frames already received after the receive queue had paused the transport, and empty messages were not counted towards the queue size. With permessage-deflate, a single read of compressed frames could add many megabytes of decompressed messages to the queue.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5rmc-48h2-hvcm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128132"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128119",
-    "cveID": "CVE-2026-128119",
-    "slug": "cve-2026-128119",
-    "vendor": "npm",
-    "product": "@sveltejs/kit",
-    "name": "SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "Under certain circumstances, private (non-exported) query.batch functions could end up sharing a batch, resulting in the arguments from one function being passed to another. This only affects apps using the experimental remote functions flag and non-exported query.batch functions.",
-    "requiredAction": "Upgrade @sveltejs/kit to version 3.1.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6cf5-gc4q-fm3x"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128119"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128116",
-    "cveID": "CVE-2026-128116",
-    "slug": "cve-2026-128116",
-    "vendor": "npm",
-    "product": "@sveltejs/kit",
-    "name": "SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "If an attacker could, using some form of social engineering or other exploit, get a user to use client-side navigation to navigate to a specially-crafted link, the attacker could cause code from another domain to be imported and run on the user's machine. This only affected apps with router.resolution: 'server'.",
-    "requiredAction": "Upgrade @sveltejs/kit to version 3.1.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rqp5-r3wg-vg35"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128116"
       }
     ],
     "source": "GITHUB"

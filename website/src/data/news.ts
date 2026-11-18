@@ -11,6 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "nginx-http-2-flaws-enable-remote-code-execution-b81237d2",
+    "title": "NGINX HTTP/2 Flaws Enable Remote Code Execution",
+    "summary": "Two critical NGINX HTTP/2 vulnerabilities (CVE-2026-123633, CVE-2026-123007) enable remote code execution on servers accepting HTTP/2 connections. The flaws trigger memory corruption during HTTP/2 stream handling; CVSS scores 9.8 and 9.6, and no public exploit yet but potential for server compromise. NGINX released patches on November 18, 2026; administrators should update to the latest release or disable HTTP/2 until patched.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/nginx-http-2-vulnerabilities/",
+    "publishedAt": "2026-11-18T16:05:50.000Z",
+    "cves": [
+      "CVE-2026-123633",
+      "CVE-2026-123007"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "nginx-http-2-flaws-enable-remote-code-execution",
+      "article-b81237d2",
+      "b81237d2",
+      "nginx-http-2-flaws-enable-remote-code-execution-5ea75f"
+    ]
+  },
+  {
     "slug": "emacs-prior-to-31-2-allows-local-code-execution-c938cfb4",
     "title": "Emacs Prior to 31.2 Allows Local Code Execution",
     "summary": "GNU Emacs versions before 31.2 contain a local code execution flaw triggered by malicious .dir-locals.el files. The vulnerability bypasses auto-mode-alist checks, allowing an attacker to run arbitrary code when a user opens a file; no public exploit reported. Users should upgrade to Emacs 31.2 or later, or disable .dir-locals.el processing until a patch is released.",
@@ -26,6 +47,25 @@ export const news: NewsBrief[] = [
       "article-c938cfb4",
       "c938cfb4",
       "emacs-prior-to-31-2-allows-local-code-execution-7658c9"
+    ]
+  },
+  {
+    "slug": "armornet-launches-ai-driven-supply-chain-risk-plat-68fb3902",
+    "title": "Armornet Launches AI-Driven Supply-Chain Risk Platform",
+    "summary": "Armornet introduces an AI-driven platform that maps teams’ vendor dependencies and assigns continuous risk scores to each supplier. The solution monitors the software supply chain from code to deployment, providing real-time visibility into potential security gaps. Security teams can use the platform’s insights to prioritize remediation and enforce stricter vendor controls.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/armornet-ai-software-supply-chain-vendor-security/",
+    "publishedAt": "2026-11-18T15:20:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "armornet-launches-ai-driven-supply-chain-risk-plat",
+      "article-68fb3902",
+      "68fb3902",
+      "armornet-launches-ai-driven-supply-chain-risk-plat-27171a",
+      "armornet-launches-ai-driven-supply-chain-risk-platform"
     ]
   },
   {
@@ -976,6 +1016,67 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "g-data-total-security-lpe-via-tsnxgservice-link-60b87ef4",
+    "title": "G DATA Total Security LPE via TSNxGService Link",
+    "summary": "A local privilege escalation flaw in G DATA Total Security’s TSNxGService lets attackers gain elevated rights after executing low-privileged code. CVE-2026-19776 carries a CVSS score of 7.8 and exploits a link-following logic flaw triggered by local users. G DATA released a patch; apply the update or follow the vendor’s advisory to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1030/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-19776"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "g-data-total-security-lpe-via-tsnxgservice-link",
+      "article-60b87ef4",
+      "60b87ef4",
+      "g-data-total-security-lpe-via-tsnxgservice-link-77f343"
+    ]
+  },
+  {
+    "slug": "g-data-total-security-avkproxy-dos-via-link-follow-7f3d59f6",
+    "title": "G DATA Total Security AVKProxy DoS via Link Following",
+    "summary": "A local denial-of-service flaw in G DATA Total Security’s AVKProxy allows attackers to crash the service after executing low-privileged code. CVE-2026-19777 has a CVSS score of 6.1 and exploits a link-following bug that can be triggered by local users. G DATA issued a patch; update AVKProxy or follow the vendor’s advisory to prevent disruption.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1029/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-19777"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "g-data-total-security-avkproxy-dos-via-link-follow",
+      "article-7f3d59f6",
+      "7f3d59f6",
+      "g-data-total-security-avkproxy-dos-via-link-follow-77f340",
+      "g-data-total-security-avkproxy-dos-via-link-following"
+    ]
+  },
+  {
+    "slug": "g-data-total-security-backup-lpe-via-search-path-7f33cb28",
+    "title": "G DATA Total Security Backup LPE via Search Path",
+    "summary": "A local privilege escalation flaw in G DATA Total Security’s Backup Service lets attackers gain elevated rights after executing low-privileged code. CVE-2026-19779 carries a CVSS score of 7.3 and exploits an uncontrolled search-path element that can be triggered by local users. G DATA released a patch; apply the update or follow the vendor’s advisory to mitigate the privilege escalation risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1028/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-19779"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "g-data-total-security-backup-lpe-via-search-path",
+      "article-7f33cb28",
+      "7f33cb28",
+      "g-data-total-security-backup-lpe-via-search-path-77f340"
     ]
   },
   {
@@ -9771,106 +9872,6 @@ export const news: NewsBrief[] = [
       "article-b9dd6a76",
       "b9dd6a76",
       "microsoft-365-global-outage-affects-outlook-teams-343d8a"
-    ]
-  },
-  {
-    "slug": "police-arrest-354-dark-web-cybercrime-suspects-07e6a2d5",
-    "title": "Police Arrest 354 Dark Web Cybercrime Suspects",
-    "summary": "Police forces worldwide arrested 354 suspects in a joint operation targeting vendors and buyers on dark-web marketplaces such as Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom. The crackdown, coordinated by international law-enforcement agencies, aimed to dismantle illicit cybercrime networks facilitating malware distribution and financial fraud. Authorities are proceeding with prosecutions and asset seizures to disrupt future operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
-    "publishedAt": "2026-11-13T08:34:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "police-arrest-354-dark-web-cybercrime-suspects",
-      "article-07e6a2d5",
-      "07e6a2d5",
-      "police-arrest-354-dark-web-cybercrime-suspects-725e7d"
-    ]
-  },
-  {
-    "slug": "top-ai-governance-platforms-ranked-for-2026-compli-cb40422c",
-    "title": "Top AI Governance Platforms Ranked for 2026 Compliance",
-    "summary": "Emerging regulatory enforcement under the EU AI Act has driven enterprise adoption of specialized artificial intelligence governance platforms. Current solutions diverge into policy registries, machine-learning model monitors, and extended privacy suites, with Credo AI and IBM taking top platform rankings. Security teams should deploy AI governance tools to maintain complete model inventories and enforce organizational compliance frameworks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-ai-governance-platforms/",
-    "publishedAt": "2026-11-13T08:34:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-ai-governance-platforms-ranked-for-2026-compli",
-      "article-cb40422c",
-      "cb40422c",
-      "top-ai-governance-platforms-ranked-for-2026-compli-4e365d",
-      "top-ai-governance-platforms-ranked-for-2026-compliance"
-    ]
-  },
-  {
-    "slug": "check-point-gateways-targeted-via-php2shell-and-pr-f6aa0340",
-    "title": "Check Point Gateways Targeted via PHP2Shell and Privilege Escalation",
-    "summary": "Hackers exploited PHP2Shell vulnerabilities in unpatched Check Point Security Gateways to gain initial access to Israeli organizations. The attackers then leveraged the previously reported local privilege escalation flaw CVE-2026-123039 in Gaia OS to deploy the TSGA backdoor and delete ESXi files. Check Point has issued a patch for PHP2Shell and recommends updating Gaia OS firmware to mitigate the escalation vector.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
-    "publishedAt": "2026-11-13T08:05:49.000Z",
-    "cves": [
-      "CVE-2026-123039"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "check-point-gateways-targeted-via-php2shell-and-pr",
-      "article-f6aa0340",
-      "f6aa0340",
-      "check-point-gateways-targeted-via-php2shell-and-pr-4b0b0c",
-      "check-point-gateways-targeted-via-php2shell-and-privilege-es"
-    ]
-  },
-  {
-    "slug": "project-zero-shortens-disclosure-windows-to-30-day-eacb1618",
-    "title": "Project Zero Shortens Disclosure Windows to 30 Days to Counter AI-Driven Exploitation",
-    "summary": "Google Project Zero announced a policy shift, replacing its 90+30 day disclosure model with fixed 30-day deadlines to accelerate vulnerability reporting. The change aims to mitigate AI-driven rapid discovery and exploitation cycles, ensuring vendors receive timely patches before widespread attacks. Security teams should monitor Project Zero advisories, adjust patch schedules, and assess the impact of shortened disclosure on risk posture.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Project Zero",
-    "sourceUrl": "https://projectzero.google/2026/11/disclosure-policy.html",
-    "publishedAt": "2026-11-13T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/"
-      }
-    ],
-    "aliases": [
-      "project-zero-shortens-disclosure-windows-to-30-day",
-      "article-eacb1618",
-      "eacb1618",
-      "project-zero-shortens-disclosure-windows-to-30-day-53d2e5",
-      "project-zero-shortens-disclosure-windows-to-30-days-to-count"
-    ]
-  },
-  {
-    "slug": "arcticrat-hijacks-android-phones-via-hidden-vnc-e9d01b0b",
-    "title": "ArcticRAT Hijacks Android Phones via Hidden VNC",
-    "summary": "ArcticRAT, a new Android remote access trojan, captures full device control while displaying a black screen to the user. The malware employs a hidden VNC channel to open banking apps, approve permissions, and exfiltrate data without user awareness. Security teams should update Android OS, install reputable security apps, and monitor for unusual background processes to mitigate the threat.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/arcticrat-android-malware/",
-    "publishedAt": "2026-11-13T07:51:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arcticrat-hijacks-android-phones-via-hidden-vnc",
-      "article-e9d01b0b",
-      "e9d01b0b",
-      "arcticrat-hijacks-android-phones-via-hidden-vnc-7fe43b"
     ]
   }
 ];
