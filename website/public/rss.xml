@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 20:54:55 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 21:46:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Admin Plans Early Patch Info Sharing with Industry</title>
+      <link>https://secubuzz.com/news/admin-plans-early-patch-info-sharing-with-industry-a870dd28</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/admin-plans-early-patch-info-sharing-with-industry-a870dd28</guid>
+      <description><![CDATA[Homeland Security Secretary Markwayne Mullin announced a policy to engage industry for early patch information before releases. The initiative aims to collect detailed patch data from vendors to assess security impact and mitigate potential vulnerabilities. No vendor patch or technical fix is involved; the program is a strategic outreach effort to improve patch management.]]></description>
+      <pubDate>Wed, 18 Nov 2026 20:00:00 GMT</pubDate>
+      <source url="https://therecord.media/tech-disruptions-house-homeland-committee-testimony">The Record</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Critical Java and NGINX Vulnerability CVE-2026-114938</title>
       <link>https://secubuzz.com/news/critical-java-and-nginx-vulnerability-cve-2026-114-4adcf3cd</link>
@@ -35,6 +44,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>USN-9153-1: cloud-init vulnerability</title>
+      <link>https://secubuzz.com/news/usn-9153-1-cloud-init-vulnerability-8ef719c2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9153-1-cloud-init-vulnerability-8ef719c2</guid>
+      <description><![CDATA[It was discovered that cloud-init incorrectly handled certain errors when configuring user passwords on systems with SSSD installed but not configured. An attacker could possibly use this issue to access affected user accounts without a password, resulting in unauthorized access.]]></description>
+      <pubDate>Wed, 18 Nov 2026 19:07:16 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9153-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>F5 NGINX Vulnerabilities CVE-2026-123007, CVE-2026-123633</title>
       <link>https://secubuzz.com/news/f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-e9122083</link>
       <guid isPermaLink="true">https://secubuzz.com/news/f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-e9122083</guid>
@@ -42,6 +60,24 @@
       <pubDate>Wed, 18 Nov 2026 19:02:27 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174">Canadian Centre for Cyber Security</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Chrome Early Stable Desktop Update Released</title>
+      <link>https://secubuzz.com/news/chrome-early-stable-desktop-update-released-c4ac022c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-early-stable-desktop-update-released-c4ac022c</guid>
+      <description><![CDATA[Google Chrome released an early stable update for desktop platforms, version 159.0.8154.13/.14, targeting Windows and Mac users. The update includes minor bug fixes and performance improvements, with a full change log available in the release notes. Users are encouraged to install the update via the browser's update mechanism; no security patches are addressed in this release.]]></description>
+      <pubDate>Wed, 18 Nov 2026 18:58:35 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop_01707050408.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Chrome Beta Desktop Update Released</title>
+      <link>https://secubuzz.com/news/chrome-beta-desktop-update-released-e6aa2faa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-beta-desktop-update-released-e6aa2faa</guid>
+      <description><![CDATA[Google Chrome updated its Beta channel to version 159.0.8154.13 for Windows, Mac, and Linux desktop users. The release contains incremental bug fixes and stability improvements, with a partial change log posted in the Git log. Users should update via the browser's update settings; no critical security patches are included currently.]]></description>
+      <pubDate>Wed, 18 Nov 2026 18:28:33 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_01411055938.html">Google Chrome Releases</source>
+      <category>General</category>
     </item>
     <item>
       <title>CVE-2026-130638 - Path traversal in the object detection dataset preparation tool in AutoGluon MultiModal</title>
@@ -53,6 +89,24 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Arctic Wolf Releases Quarterly Innovation Update</title>
+      <link>https://secubuzz.com/news/arctic-wolf-releases-quarterly-innovation-update-a1e410dd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arctic-wolf-releases-quarterly-innovation-update-a1e410dd</guid>
+      <description><![CDATA[Arctic Wolf published its November 2026 quarterly update, outlining new product features, strategic initiatives, and upcoming roadmap milestones. The release highlights enhancements in threat detection, managed detection and response services, and expanded partner integrations. Customers are encouraged to review the full briefing for detailed feature specifications and to schedule a roadmap discussion with Arctic Wolf.]]></description>
+      <pubDate>Wed, 18 Nov 2026 18:10:18 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/on-demand-webinar-uk/whats-new-and-whats-next-arctic-wolf-november-2026-update/">Arctic Wolf</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Hackers Use Hidden Cron Jobs to Reinstall Malware on Firewalls and Routers Every 5 Minutes</title>
+      <link>https://secubuzz.com/news/hackers-use-hidden-cron-jobs-to-reinstall-malware-8db0ac7a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-hidden-cron-jobs-to-reinstall-malware-8db0ac7a</guid>
+      <description><![CDATA[A Linux botnet is hiding in a place most network teams never look: the scheduled jobs on their firewalls, routers and switches. If a responder kills the malware and deletes the file, a hidden cron job downloads it again within five minutes.]]></description>
+      <pubDate>Wed, 18 Nov 2026 18:01:24 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-hidden-cron-jobs/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required</title>
       <link>https://secubuzz.com/news/critical-apache-roller-rce-flaw-under-active-explo-0ec06f71</link>
       <guid isPermaLink="true">https://secubuzz.com/news/critical-apache-roller-rce-flaw-under-active-explo-0ec06f71</guid>
@@ -60,6 +114,15 @@
       <pubDate>Wed, 18 Nov 2026 17:10:45 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html">The Hacker News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100573: Critical: OpenJDK 25.0.5.1 Security Update for Portable Linux Builds</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100573-critical-openjdk-25-0-5-1-securit-6e0aa222</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100573-critical-openjdk-25-0-5-1-securit-6e0aa222</guid>
+      <description><![CDATA[An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 18 Nov 2026 16:14:39 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100573">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>NGINX HTTP/2 Flaws Enable Remote Code Execution</title>
@@ -393,69 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 09:45:51 GMT</pubDate>
       <source url="https://cybersecuritynews.com/tails-tor-browser-update-to-fix-ublock-origin-flaw/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Atlassian Patches 318 Security . Across Jira, Confluence, Bitbucket and Other Products</title>
-      <link>https://secubuzz.com/news/atlassian-patches-318-security-across-jira-conflue-39f4da5a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-patches-318-security-across-jira-conflue-39f4da5a</guid>
-      <description><![CDATA[Atlassian’s November 2026 security bulletin lists fixes for 318 vulnerability entries across Jira Software, Jira Service Management, Confluence, Bitbucket, Bamboo, Crowd, Fisheye and Crucible. Published on November 17, the bulletin covers fixes shipped in product releases over the previous month. Atlassian counted 266 high-severity entries and 52 critical entries involving third-party components.]]></description>
-      <pubDate>Wed, 18 Nov 2026 09:43:21 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/atlassian-patches-318-security-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>4-Year-Old NVIDIA Linux GPU Flaw Lets Users Hijack Entire Shared Servers</title>
-      <link>https://secubuzz.com/news/4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack-71b4f81c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack-71b4f81c</guid>
-      <description><![CDATA[A four-year-old NVIDIA Linux GPU driver flaw, tracked as CVE-2026-47501 and dubbed ForgePtr, could let users with access to a vulnerable GPU take control of the entire server. The flaw allowed Stealthium researchers to gain root, the highest level of access on Linux, from inside an unprivileged container.]]></description>
-      <pubDate>Wed, 18 Nov 2026 09:28:15 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/4-year-old-nvidia-linux-gpu-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Unveils Windows Server 2028 with Hardened Security</title>
-      <link>https://secubuzz.com/news/microsoft-unveils-windows-server-2028-with-hardene-bc339d8d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-unveils-windows-server-2028-with-hardene-bc339d8d</guid>
-      <description><![CDATA[Microsoft announced Windows Server 2028 at Ignite 2026, positioning it as the next major release of its server operating system. The new OS incorporates hardened security features, including enhanced kernel isolation, improved credential protection, and built-in threat detection capabilities. Microsoft recommends testing the release in staging environments before production deployment and applying the forthcoming cumulative updates.]]></description>
-      <pubDate>Wed, 18 Nov 2026 09:24:31 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Fake Freight Portals Steal Trucking Credentials and Deploy Malware</title>
-      <link>https://secubuzz.com/news/fake-freight-portals-steal-trucking-credentials-an-d0102afe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-freight-portals-steal-trucking-credentials-an-d0102afe</guid>
-      <description><![CDATA[Hackers target US trucking firms with counterfeit freight portals and bogus broker paperwork to harvest credentials. The sites capture fleet fuel card passwords and one-time codes, while malware disguised as routine downloads grants remote access. Security teams should verify portal authenticity, enforce MFA, and monitor download activity to prevent credential theft and malware.]]></description>
-      <pubDate>Wed, 18 Nov 2026 09:05:41 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fake-freight-portals/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Ubuntu AI security patches are here, if you’re willing to test them yourself</title>
-      <link>https://secubuzz.com/news/ubuntu-ai-security-patches-are-here-if-you-re-will-9c30f7d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-ai-security-patches-are-here-if-you-re-will-9c30f7d4</guid>
-      <description><![CDATA[Canonical is letting Ubuntu Pro customers install security patches written by AI agents before its engineers finish reviewing and testing them. The patches come from Surge, a system Canonical built to fix known vulnerabilities in Ubuntu’s userspace software, meaning everything outside the operating system’s kernel. The flaw is tracked as CVE-2026-114938.]]></description>
-      <pubDate>Wed, 18 Nov 2026 08:47:50 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/18/ubuntu-ai-security-patches-edge-archive/">Help Net Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Oracle Releases CSPU Patching 950 Vulnerabilities</title>
-      <link>https://secubuzz.com/news/oracle-releases-cspu-patching-950-vulnerabilities-0ca5fdf2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/oracle-releases-cspu-patching-950-vulnerabilities-0ca5fdf2</guid>
-      <description><![CDATA[Oracle released a November 2026 CSPU that patches 950 vulnerabilities across its product portfolio. The update includes over 300 unauthenticated, remotely exploitable flaws and 62 critical-severity issues, mitigating potential RCE and privilege escalation risks. Administrators should apply the CSPU immediately to secure affected systems and mitigate exploitation risk across all affected platforms.]]></description>
-      <pubDate>Wed, 18 Nov 2026 08:47:18 GMT</pubDate>
-      <source url="https://www.securityweek.com/oracle-patches-640-vulnerabilities-with-november-2026-cspu/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Exploit Critical Puppet RCE Flaw</title>
-      <link>https://secubuzz.com/news/hackers-exploit-critical-puppet-rce-flaw-b67c8aa0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-critical-puppet-rce-flaw-b67c8aa0</guid>
-      <description><![CDATA[CISA has listed Perforce Puppet’s CVE-2026-115731 as a known exploited vulnerability, noting active attacks against enterprise management servers. The flaw permits any client with a CA-signed agent certificate to bypass authentication and execute arbitrary code, carrying a CVSS score of 9.4. Perforce has released an urgent patch; administrators should apply it immediately or use the documented workaround to stop exploitation.]]></description>
-      <pubDate>Wed, 18 Nov 2026 08:24:31 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html">The Hacker News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

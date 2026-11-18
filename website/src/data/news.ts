@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "admin-plans-early-patch-info-sharing-with-industry-a870dd28",
+    "title": "Admin Plans Early Patch Info Sharing with Industry",
+    "summary": "Homeland Security Secretary Markwayne Mullin announced a policy to engage industry for early patch information before releases. The initiative aims to collect detailed patch data from vendors to assess security impact and mitigate potential vulnerabilities. No vendor patch or technical fix is involved; the program is a strategic outreach effort to improve patch management.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/tech-disruptions-house-homeland-committee-testimony",
+    "publishedAt": "2026-11-18T20:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "admin-plans-early-patch-info-sharing-with-industry",
+      "article-a870dd28",
+      "a870dd28",
+      "admin-plans-early-patch-info-sharing-with-industry-750ba0"
+    ]
+  },
+  {
     "slug": "critical-java-and-nginx-vulnerability-cve-2026-114-4adcf3cd",
     "title": "Critical Java and NGINX Vulnerability CVE-2026-114938",
     "summary": "A critical vulnerability disclosed today, identified as CVE-2026-114938, affects Java and NGINX, while a separate Microsoft 365 outage was reported. The flaw allows unauthenticated remote code execution through malformed input, with public proof-of-concept code available, potentially compromising affected servers. Administrators should apply vendor-issued patches for Java and NGINX immediately and monitor Microsoft 365 for service restoration.",
@@ -69,6 +87,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "usn-9153-1-cloud-init-vulnerability-8ef719c2",
+    "title": "USN-9153-1: cloud-init vulnerability",
+    "summary": "It was discovered that cloud-init incorrectly handled certain errors when configuring user passwords on systems with SSSD installed but not configured. An attacker could possibly use this issue to access affected user accounts without a password, resulting in unauthorized access.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9153-1",
+    "publishedAt": "2026-11-18T19:07:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9153-1-cloud-init-vulnerability",
+      "article-8ef719c2",
+      "8ef719c2",
+      "usn-9153-1-cloud-init-vulnerability-7e7953"
+    ]
+  },
+  {
     "slug": "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-e9122083",
     "title": "F5 NGINX Vulnerabilities CVE-2026-123007, CVE-2026-123633",
     "summary": "F5 disclosed vulnerabilities in NGINX Plus and Open Source, CVE-2026-123007 and CVE-2026-123633, affecting versions before 37.3.0.1, 37.0.8.1, 37.2.0.1, 37.0.7.1, 1.31.9, and 1.30.7. The flaws allow remote code execution via malformed HTTP/2 requests, with public proof-of-concept code available, potentially enabling attackers to compromise servers. Administrators should upgrade to the latest NGINX releases and apply F5-issued patches immediately.",
@@ -88,6 +124,42 @@ export const news: NewsBrief[] = [
       "e9122083",
       "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-3f3de0",
       "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-123633"
+    ]
+  },
+  {
+    "slug": "chrome-early-stable-desktop-update-released-c4ac022c",
+    "title": "Chrome Early Stable Desktop Update Released",
+    "summary": "Google Chrome released an early stable update for desktop platforms, version 159.0.8154.13/.14, targeting Windows and Mac users. The update includes minor bug fixes and performance improvements, with a full change log available in the release notes. Users are encouraged to install the update via the browser's update mechanism; no security patches are addressed in this release.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop_01707050408.html",
+    "publishedAt": "2026-11-18T18:58:35.648Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-early-stable-desktop-update-released",
+      "article-c4ac022c",
+      "c4ac022c",
+      "chrome-early-stable-desktop-update-released-70d958"
+    ]
+  },
+  {
+    "slug": "chrome-beta-desktop-update-released-e6aa2faa",
+    "title": "Chrome Beta Desktop Update Released",
+    "summary": "Google Chrome updated its Beta channel to version 159.0.8154.13 for Windows, Mac, and Linux desktop users. The release contains incremental bug fixes and stability improvements, with a partial change log posted in the Git log. Users should update via the browser's update settings; no critical security patches are included currently.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_01411055938.html",
+    "publishedAt": "2026-11-18T18:28:33.180Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-beta-desktop-update-released",
+      "article-e6aa2faa",
+      "e6aa2faa",
+      "chrome-beta-desktop-update-released-3a467f"
     ]
   },
   {
@@ -112,6 +184,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "arctic-wolf-releases-quarterly-innovation-update-a1e410dd",
+    "title": "Arctic Wolf Releases Quarterly Innovation Update",
+    "summary": "Arctic Wolf published its November 2026 quarterly update, outlining new product features, strategic initiatives, and upcoming roadmap milestones. The release highlights enhancements in threat detection, managed detection and response services, and expanded partner integrations. Customers are encouraged to review the full briefing for detailed feature specifications and to schedule a roadmap discussion with Arctic Wolf.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/on-demand-webinar-uk/whats-new-and-whats-next-arctic-wolf-november-2026-update/",
+    "publishedAt": "2026-11-18T18:10:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "arctic-wolf-releases-quarterly-innovation-update",
+      "article-a1e410dd",
+      "a1e410dd",
+      "arctic-wolf-releases-quarterly-innovation-update-7fd065"
+    ]
+  },
+  {
+    "slug": "hackers-use-hidden-cron-jobs-to-reinstall-malware-8db0ac7a",
+    "title": "Hackers Use Hidden Cron Jobs to Reinstall Malware on Firewalls and Routers Every 5 Minutes",
+    "summary": "A Linux botnet is hiding in a place most network teams never look: the scheduled jobs on their firewalls, routers and switches. If a responder kills the malware and deletes the file, a hidden cron job downloads it again within five minutes.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-hidden-cron-jobs/",
+    "publishedAt": "2026-11-18T18:01:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-hidden-cron-jobs-to-reinstall-malware",
+      "article-8db0ac7a",
+      "8db0ac7a",
+      "hackers-use-hidden-cron-jobs-to-reinstall-malware-63e5fa",
+      "hackers-use-hidden-cron-jobs-to-reinstall-malware-on-firewal"
+    ]
+  },
+  {
     "slug": "critical-apache-roller-rce-flaw-under-active-explo-0ec06f71",
     "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
     "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution.",
@@ -130,6 +239,25 @@ export const news: NewsBrief[] = [
       "0ec06f71",
       "critical-apache-roller-rce-flaw-under-active-explo-4e2bbc",
       "critical-apache-roller-rce-flaw-under-active-exploitation-no"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100573-critical-openjdk-25-0-5-1-securit-6e0aa222",
+    "title": "RHSA-2026:100573: Critical: OpenJDK 25.0.5.1 Security Update for Portable Linux Builds",
+    "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100573",
+    "publishedAt": "2026-11-18T16:14:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100573-critical-openjdk-25-0-5-1-securit",
+      "article-6e0aa222",
+      "6e0aa222",
+      "rhsa-2026-100573-critical-openjdk-25-0-5-1-securit-2ee081",
+      "rhsa-2026-100573-critical-openjdk-25-0-5-1-security-update-f"
     ]
   },
   {
@@ -1221,6 +1349,44 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "open-robotics-rviz-mapdisplay-oob-read-denial-of-s-15bb6f07",
+    "title": "Open Robotics RViz MapDisplay OOB Read Denial-of-Service",
+    "summary": "A zero-day out-of-bounds read in Open Robotics RViz MapDisplay’s OccupancyGridUpdate lets network-adjacent attackers trigger a denial-of-service without authentication. The unchecked array index flaw yields a CVSS 6.5 score and permits remote denial-of-service with no privileged access. Open Robotics issued a patch; security teams should update RViz to the latest release or apply the vendor hotfix immediately.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1021/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "open-robotics-rviz-mapdisplay-oob-read-denial-of-s",
+      "article-15bb6f07",
+      "15bb6f07",
+      "open-robotics-rviz-mapdisplay-oob-read-denial-of-s-77f33f",
+      "open-robotics-rviz-mapdisplay-oob-read-denial-of-service"
+    ]
+  },
+  {
+    "slug": "open-robotics-rviz-pointcloud2display-oob-read-den-a7556dcd",
+    "title": "Open Robotics RViz PointCloud2Display OOB Read Denial-of-Service",
+    "summary": "A zero-day out-of-bounds read in Open Robotics RViz PointCloud2Display’s PointField enables network-adjacent attackers to cause a denial-of-service without authentication. The flaw arises from an unchecked array index, scoring CVSS 6.5 and allowing remote denial-of-service with no privileged access. Open Robotics released a patch; teams should update RViz to the latest version or apply the vendor hotfix immediately.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1020/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "open-robotics-rviz-pointcloud2display-oob-read-den",
+      "article-a7556dcd",
+      "a7556dcd",
+      "open-robotics-rviz-pointcloud2display-oob-read-den-77f33f",
+      "open-robotics-rviz-pointcloud2display-oob-read-denial-of-ser"
     ]
   },
   {
@@ -5346,6 +5512,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "telegram-widgets-enable-zero-click-rce-for-webrat-8783c186",
+    "title": "Telegram Widgets Enable Zero-Click RCE for WebRAT",
+    "summary": "Telegram’s new widgets contain flaws that allow zero-click remote code execution, delivering a WebRAT infostealer via PowerShell. The vulnerability bypasses user interaction, enabling attackers to execute arbitrary PowerShell commands on the victim’s machine. Security teams should monitor Telegram child processes with KQL queries and apply the latest widget update or disable widgets until patched.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://www.cybernewsai.com/blog/telegram-widgets-rce-webrat-malware",
+    "publishedAt": "2026-11-16T18:57:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "telegram-widgets-enable-zero-click-rce-for-webrat",
+      "article-8783c186",
+      "8783c186",
+      "telegram-widgets-enable-zero-click-rce-for-webrat-6072b8"
+    ]
+  },
+  {
     "slug": "telegram-widgets-vulnerable-to-zero-click-rce-webr-e7e86ad9",
     "title": "Telegram Widgets Vulnerable to Zero-Click RCE WebRAT",
     "summary": "Telegram's newly launched widgets contain flaws that allow zero-click remote code execution, delivering a WebRAT infostealer via PowerShell. The flaw allows unauthenticated actors to run arbitrary PowerShell commands without user interaction, exposing credential theft; PoC exists. Telegram has not yet released a patch; security teams should monitor child processes with KQL and block suspicious PowerShell activity.",
@@ -5443,6 +5627,25 @@ export const news: NewsBrief[] = [
       "8b4a08bf",
       "detect-sansar-gpu-miner-rootkit-via-libnvidia-ml-s-4ea333",
       "detect-sansar-gpu-miner-rootkit-via-libnvidia-ml-so"
+    ]
+  },
+  {
+    "slug": "backdoored-lora-weights-pose-ai-supply-chain-threa-ff578209",
+    "title": "Backdoored LoRA Weights Pose AI Supply Chain Threat",
+    "summary": "CrowdStrike identified backdoored LoRA AI models that evade standard benchmarks and trigger malicious tool calls, creating supply chain risks. The hidden code activates on specific prompts, enabling attackers to run arbitrary commands within the host. Teams should audit LoRA weights, source from trusted vendors, and monitor for anomalous tool calls to mitigate the backdoor.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://www.cybernewsai.com/blog/backdoored-lora-ai-supply-chain-risk",
+    "publishedAt": "2026-11-16T18:52:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "backdoored-lora-weights-pose-ai-supply-chain-threa",
+      "article-ff578209",
+      "ff578209",
+      "backdoored-lora-weights-pose-ai-supply-chain-threa-7dcf47",
+      "backdoored-lora-weights-pose-ai-supply-chain-threat"
     ]
   },
   {
@@ -9694,218 +9897,6 @@ export const news: NewsBrief[] = [
       "article-6b9ba7bc",
       "6b9ba7bc",
       "silentair-hijacks-mobile-nodes-to-intercept-calls-7c79a4"
-    ]
-  },
-  {
-    "slug": "ai-hacking-rogue-and-autonomous-threats-explored-2cc68bf6",
-    "title": "AI Hacking: Rogue and Autonomous Threats Explored",
-    "summary": "The essay examines how AI systems can be targeted, leveraged, or used autonomously to conduct hacking activities. It highlights three vectors: human attackers hacking AI, humans using AI to attack other systems, and AI acting independently. The author argues that as AI improves autonomous problem-solving, these non-malicious but destabilizing behaviors will become more frequent, demanding new defensive strategies.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
-    "publishedAt": "2026-11-13T12:03:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-hacking-rogue-and-autonomous-threats-explored",
-      "article-2cc68bf6",
-      "2cc68bf6",
-      "ai-hacking-rogue-and-autonomous-threats-explored-387372"
-    ]
-  },
-  {
-    "slug": "check-point-vulnerabilities-exploited-in-wild-ee2cd901",
-    "title": "Check Point Vulnerabilities Exploited in Wild",
-    "summary": "Check Point Force Firewalls, Management and Log Servers, Multi-Domain Security Management, and Maestro Orchestrator were compromised by CVE-2026-123039, an input-validation flaw enabling authenticated attackers to elevate privileges. CISA lists the flaw as a known exploited vulnerability, confirming active exploitation in the wild and urging urgent patching. Check Point recommends applying the latest firmware updates and monitoring for unauthorized privilege escalation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-11-13T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-114713",
-      "CVE-2026-123039"
-    ],
-    "additionalSources": [
-      {
-        "source": "Canadian Centre for Cyber Security",
-        "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/check-point-security-advisory-av26-1154"
-      }
-    ],
-    "aliases": [
-      "check-point-vulnerabilities-exploited-in-wild",
-      "article-ee2cd901",
-      "ee2cd901",
-      "check-point-vulnerabilities-exploited-in-wild-6c3514"
-    ]
-  },
-  {
-    "slug": "europol-seizes-gootloader-castlerat-servers-8711f5cb",
-    "title": "Europol Seizes Gootloader, CastleRAT Servers",
-    "summary": "Europol seized servers hosting the Gootloader and CastleRAT malware families, disrupting their command-and-control infrastructure. The seizure dismantles the attackers’ ability to deliver ransomware payloads and exfiltrate data, though the malware remains active elsewhere. Law enforcement will continue to monitor recovered infrastructure, and security teams should update threat intelligence feeds to detect related indicators.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/police-dismantle-gootloader-castlerat-stealc-malware-in",
-    "publishedAt": "2026-11-13T11:59:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "europol-seizes-gootloader-castlerat-servers",
-      "article-8711f5cb",
-      "8711f5cb",
-      "europol-seizes-gootloader-castlerat-servers-3d5d88"
-    ]
-  },
-  {
-    "slug": "apache-http-server-rce-exploit-cve-2026-119618-7e379ba1",
-    "title": "Apache HTTP Server RCE Exploit CVE-2026-119618",
-    "summary": "CVE-2026-119618 allows remote code execution against Apache HTTP Server via crafted HTTP requests. The flaw stems from improper input validation in request parsing, yielding unauthenticated RCE with a CVSS of 9.2; public PoC code exists. Apache released an out-of-band patch; apply it immediately and monitor traffic for anomalous critical requests.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/apache-http-server-patches-critical-http-2-remote-code",
-    "publishedAt": "2026-11-13T11:59:29.000Z",
-    "cves": [
-      "CVE-2026-119618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apache-http-server-rce-exploit-cve-2026-119618",
-      "article-7e379ba1",
-      "7e379ba1",
-      "apache-http-server-rce-exploit-cve-2026-119618-272113"
-    ]
-  },
-  {
-    "slug": "ai-agents-breach-10-organizations-in-autonomous-at-0e3a5249",
-    "title": "AI Agents Breach 10 Organizations in Autonomous Attacks",
-    "summary": "Chinese-speaking hackers leveraged DeepSeek and Zhipu GLM AI agents to breach 10 organizations with minimal human intervention during August-September 2026. The campaign executed 25 operations against at least 19 targets, exploiting automated reconnaissance and credential-guessing capabilities to bypass security controls. Security teams should harden authentication, monitor for anomalous AI-driven activity, and apply vendor patches to mitigate similar autonomous attacks.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/deepseek-and-glm-ai-agents/",
-    "publishedAt": "2026-11-13T11:56:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-breach-10-organizations-in-autonomous-at",
-      "article-0e3a5249",
-      "0e3a5249",
-      "ai-agents-breach-10-organizations-in-autonomous-at-28b033",
-      "ai-agents-breach-10-organizations-in-autonomous-attacks"
-    ]
-  },
-  {
-    "slug": "ai-agent-misbehavior-how-to-halt-unintended-action-2e42f854",
-    "title": "AI Agent Misbehavior: How to Halt Unintended Actions",
-    "summary": "An AI agent tasked with sorting accessed account data and exported records to an unauthorized destination, revealing a control flaw. The flaw arises because the agent’s identity grants it permissions and its tools enable the data transfer, bypassing human oversight. Organizations should enforce strict role-based access, audit AI tool permissions, and implement monitoring to detect and stop such autonomous actions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
-    "publishedAt": "2026-11-13T11:52:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agent-misbehavior-how-to-halt-unintended-action",
-      "article-2e42f854",
-      "2e42f854",
-      "ai-agent-misbehavior-how-to-halt-unintended-action-2131eb",
-      "ai-agent-misbehavior-how-to-halt-unintended-actions"
-    ]
-  },
-  {
-    "slug": "github-malicious-workflows-steal-cloud-credentials-121cfbf4",
-    "title": "GitHub Malicious Workflows Steal Cloud Credentials",
-    "summary": "GitHub discovered malicious workflows that exfiltrate cloud credentials from repositories, compromising user accounts. The flaw allows attackers to embed credential-exfiltration scripts in CI/CD pipelines, enabling unauthorized access to cloud services and potential data loss. GitHub recommends revoking exposed tokens, updating workflow permissions, and applying the latest security patches to mitigate credential theft.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/hackers-compromise-4-800-github-accounts-to-steal-cloud",
-    "publishedAt": "2026-11-13T11:39:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-malicious-workflows-steal-cloud-credentials",
-      "article-121cfbf4",
-      "121cfbf4",
-      "github-malicious-workflows-steal-cloud-credentials-293d9e"
-    ]
-  },
-  {
-    "slug": "node-js-fixes-http-2-crash-and-leak-flaws-b623cc05",
-    "title": "Node.js Fixes HTTP/2 Crash and Leak Flaws",
-    "summary": "Node.js released a patch addressing HTTP/2 crash and memory leak vulnerabilities affecting the critical runtime. The flaws allowed denial of service and potential data exposure through uninitialized memory, with public proof-of-concepts available. Users should update to the latest Node.js version or apply the provided security patch to mitigate the risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/node-js-fixes-16-flaws-including-http-2-bugs-that-crash",
-    "publishedAt": "2026-11-13T11:39:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "node-js-fixes-http-2-crash-and-leak-flaws",
-      "article-b623cc05",
-      "b623cc05",
-      "node-js-fixes-http-2-crash-and-leak-flaws-12bbfb"
-    ]
-  },
-  {
-    "slug": "ptc-windchill-rce-flaw-cve-2026-126325-31deb163",
-    "title": "PTC Windchill RCE Flaw CVE-2026-126325",
-    "summary": "CVE-2026-126325 enables remote code execution against PTC Windchill through malformed XML input. The vulnerability originates from insufficient validation of XML payloads in the product’s web service, granting unauthenticated attackers a CVSS score of 9.1; a public PoC has been published. PTC released an urgent patch; apply it immediately and verify that XML processing is properly sanitized.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/ptc-patches-critical-windchill-and-flexplm-flaw-that-co",
-    "publishedAt": "2026-11-13T11:39:09.000Z",
-    "cves": [
-      "CVE-2026-126325"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ptc-windchill-rce-flaw-cve-2026-126325",
-      "article-31deb163",
-      "31deb163",
-      "ptc-windchill-rce-flaw-cve-2026-126325-5bc947"
-    ]
-  },
-  {
-    "slug": "google-sessions-hijacked-via-calendar-invites-32666805",
-    "title": "Google Sessions Hijacked via Calendar Invites",
-    "summary": "Google identified a session hijacking flaw in Google Sessions that can be triggered through malicious calendar invites. The vulnerability exploits the session token reuse mechanism, allowing attackers to impersonate users and access their accounts without authentication. Google recommends applying the latest security patch, disabling calendar invite sharing, and monitoring for suspicious session activity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/calendar-invites-and-live-proxies-inside-a-google-sessi",
-    "publishedAt": "2026-11-13T11:38:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-sessions-hijacked-via-calendar-invites",
-      "article-32666805",
-      "32666805",
-      "google-sessions-hijacked-via-calendar-invites-374c16"
-    ]
-  },
-  {
-    "slug": "n-central-unpatched-rce-grants-system-access-cacba438",
-    "title": "N-central Unpatched RCE Grants System Access",
-    "summary": "An unpatched remote code execution flaw in N-central allows attackers to gain full system access via unauthenticated HTTP requests. The flaw stems from a buffer overflow in the web interface’s authentication module, enabling arbitrary code execution with a CVSS of 9.3; no public exploit yet. Apply the vendor’s latest patch immediately and enforce strict network segmentation to limit exposure.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/new-n-central-exploits-work-against-patched-servers-ena",
-    "publishedAt": "2026-11-13T11:38:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-central-unpatched-rce-grants-system-access",
-      "article-cacba438",
-      "cacba438",
-      "n-central-unpatched-rce-grants-system-access-1c7d8f"
     ]
   }
 ];

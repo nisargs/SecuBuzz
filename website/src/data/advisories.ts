@@ -102,6 +102,141 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-69131",
+    "cveID": "CVE-2026-69131",
+    "slug": "cve-2026-69131",
+    "vendor": "Pip",
+    "product": "django-filer",
+    "name": "django-filer: Missing per-object authorization on `discard` and `edit_redirect` version transitions",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-285",
+    "ransomware": false,
+    "description": "When django-filer's optional per-folder permission system is enabled (FILER_ENABLE_PERMISSIONS=True), the \"Delete files and/or folders\" admin action does not enforce per-folder edit permissions the way every other mutating action does.",
+    "requiredAction": "Upgrade django-filer to version 3.5.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vf85-8ff2-3r9w"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69131"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-69138",
+    "cveID": "CVE-2026-69138",
+    "slug": "cve-2026-69138",
+    "vendor": "Pip",
+    "product": "djangocms-versioning",
+    "name": "djangocms-versioning: Authorization Bypass Through User-Controlled Key and Missing Authorization",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-639",
+    "ransomware": false,
+    "description": "The discard and edit_redirect version transitions did not enforce a per-object change-permission check, while the sibling transitions (archive, publish, unpublish, revert) all did.",
+    "requiredAction": "Upgrade djangocms-versioning to version 2.6.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5g9x-qwh5-33x4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69138"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-68903",
+    "cveID": "CVE-2026-68903",
+    "slug": "cve-2026-68903",
+    "vendor": "Go",
+    "product": "llmkube · defilantech",
+    "name": "LLMKube: Arbitrary Host File Read via Model.spec.source hostPath Injection",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 7.7,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "LLMKube's ModelReconciler accepts arbitrary absolute paths and file:// URIs in the Model.spec.source field and propagates them to two distinct sinks without path allowlisting: (1) os.Open() inside the controller pod itself (copyLocalModel), and (2) a Kubernetes HostPathVolumeSource that mounts the attacker-supplied path into the inference pod's init container.",
+    "requiredAction": "Upgrade llmkube · defilantech to version 0.9.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jw3m-8q7m-f35r"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68903"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-73864",
+    "cveID": "CVE-2026-73864",
+    "slug": "cve-2026-73864",
+    "vendor": "npm",
+    "product": "install-artifact-from-github",
+    "name": "install-artifact-from-github loads downloaded native artifacts without integrity verification",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-494",
+    "ransomware": false,
+    "description": "bin/install-from-cache.js downloads a prebuilt native addon (.node) over the network and writes it directly to the artifact path with no cryptographic integrity verification of any kind — no checksum manifest, no signature, no SRI. A scan of the whole package for createHash|sha256|checksum|integrity|digest|signature finds nothing.",
+    "requiredAction": "Upgrade install-artifact-from-github to version 1.7.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-88q3-gch3-5396"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73864"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-71861",
+    "cveID": "CVE-2026-71861",
+    "slug": "cve-2026-71861",
+    "vendor": "Go",
+    "product": "chainguard.dev/sdk",
+    "name": "Chainguard SDK: AWS SigV4 token replay in auth/aws.VerifyToken — Chainguard-Audience/Chainguard-Identity binding headers not required in SignedHeaders",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 7.4,
+    "severity": "High",
+    "cwe": "CWE-290",
+    "ransomware": false,
+    "description": "The auth/aws package of the chainguard.dev/sdk Go library provides Chainguard's AWS-backed identity federation (an AWS workload proves its identity to Chainguard by signing an AWS STS GetCallerIdentity request). Its verifier, VerifyToken, reads the Chainguard-Audience and Chainguard-Identity binding headers from a presented token but does not require them to be covered by the SigV4 signature.",
+    "requiredAction": "Upgrade chainguard.dev/sdk to version 0.1.107 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-wq26-3j2m-4hvv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71861"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-71481",
     "cveID": "CVE-2026-71481",
     "slug": "cve-2026-71481",
@@ -1337,141 +1472,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128072"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128071",
-    "cveID": "CVE-2026-128071",
-    "slug": "cve-2026-128071",
-    "vendor": "npm",
-    "product": "nuxt",
-    "name": "Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-436",
-    "ransomware": false,
-    "description": "Nuxt matches route rules against the request path with encoded slashes (%2F) left encoded, while the page router decodes them into route params. A request that spells a slash as %2F can therefore render a page through a catch-all route without the route rules configured for the path it resolves to.",
-    "requiredAction": "Upgrade nuxt to version 4.6.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-f3x9-2chm-73c8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128071"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128118",
-    "cveID": "CVE-2026-128118",
-    "slug": "cve-2026-128118",
-    "vendor": "npm",
-    "product": "@sveltejs/kit",
-    "name": "SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "Under certain circumstances, server-only imports, which typically cannot be included in the client bundle, could make their way into it, potentially exposing secrets. This could only occur when those server-only imports were made through src/params.js.",
-    "requiredAction": "Upgrade @sveltejs/kit to version 3.1.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-m9j8-jcmv-hp69"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128118"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128120",
-    "cveID": "CVE-2026-128120",
-    "slug": "cve-2026-128120",
-    "vendor": "npm",
-    "product": "@sveltejs/kit",
-    "name": "SvelteKit: DoS while parsing form data from a remote functions `form`",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-407",
-    "ransomware": false,
-    "description": "This only affects applications using the experimental remote functions flag and utilizing the form, query, or command remote functions. A specially-crafted request could block the event loop for extended periods of time during parsing.",
-    "requiredAction": "Upgrade @sveltejs/kit to version 3.1.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3r8g-jcqq-3p5j"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128120"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128124",
-    "cveID": "CVE-2026-128124",
-    "slug": "cve-2026-128124",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: Event loop stall in add_domain() wildcard matching",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 8.2,
-    "severity": "High",
-    "cwe": "CWE-1333",
-    "ransomware": false,
-    "description": "Application.add_domain() compiled each in a host mask to [^:]. With two or more wildcards in a mask, matching a long Host header that does not match the mask took polynomial time on the event loop.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jm3w-gw2p-xjfj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128124"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128125",
-    "cveID": "CVE-2026-128125",
-    "slug": "cve-2026-128125",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: Unbounded cookie storage in client CookieJar",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-1325",
-    "ransomware": false,
-    "description": "Set-Cookie parsing created additional cookies from unrecognised name=value attributes, and CookieJar had no limit on the number of cookies stored or sent. A server could make the client store a very large number of cookies and generate very large Cookie headers.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5pv8-vvhc-h7jv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128125"
       }
     ],
     "source": "GITHUB"
