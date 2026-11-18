@@ -11,6 +11,80 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "iverify-basic-empowers-device-security-checks-b48b7505",
+    "title": "iVerify Basic Empowers Device Security Checks",
+    "summary": "iVerify Basic is a mobile security app for individuals seeking device integrity checks and privacy enhancements. Available on iOS and Android, the app consolidates scan controls and status on a single Device tab, allowing users to run scans and view findings. After each scan, the app records the last check time and displays results, helping users maintain ongoing device health.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/product-showcase-iverify-basic/",
+    "publishedAt": "2026-11-18T05:30:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "iverify-basic-empowers-device-security-checks",
+      "article-b48b7505",
+      "b48b7505",
+      "iverify-basic-empowers-device-security-checks-1a3bf7"
+    ]
+  },
+  {
+    "slug": "fraudsters-use-virtual-cameras-for-identity-checks-85780284",
+    "title": "Fraudsters Use Virtual Cameras for Identity Checks",
+    "summary": "Fraudsters use virtual cameras to feed facial data into identity checks, a trend noted in Entrust’s 2027 Identity Fraud Report. Document fraud, the largest attack category, fell 19% year over year, yet medium-sophistication attacks-alterations and counterfeits-still make up nearly 39% of cases. Physical counterfeits account for 61.1% of fraudulent submissions, highlighting the need for stricter document authenticity checks during verification.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/entrust-document-verification-fraud-report/",
+    "publishedAt": "2026-11-18T05:00:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fraudsters-use-virtual-cameras-for-identity-checks",
+      "article-85780284",
+      "85780284",
+      "fraudsters-use-virtual-cameras-for-identity-checks-3d6d10"
+    ]
+  },
+  {
+    "slug": "flipper-devices-unveils-flipper-one-linux-multi-to-b86cbfb8",
+    "title": "Flipper Devices Unveils Flipper One Linux Multi-Tool",
+    "summary": "Flipper Devices announced the Flipper One, a portable Linux computer designed for network testing, hardware projects, and security research. The device bundles advanced network security tools and targets hobbyists, researchers, and penetration testers seeking an on-the-go platform. Backers can pledge starting at $399 via Kickstarter, with shipping slated for July 2027; the campaign runs until December 17, 2026.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/flipper-one-linux-multi-tool/",
+    "publishedAt": "2026-11-18T03:35:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "flipper-devices-unveils-flipper-one-linux-multi-to",
+      "article-b86cbfb8",
+      "b86cbfb8",
+      "flipper-devices-unveils-flipper-one-linux-multi-to-23768c",
+      "flipper-devices-unveils-flipper-one-linux-multi-tool"
+    ]
+  },
+  {
+    "slug": "microsoft-s-agent-framework-pypi-package-hacked-to-46a332cd",
+    "title": "Microsoft’s Agent Framework PyPI Package Hacked to Steal Azure and GitHub Credentials",
+    "summary": "Hackers published two malicious versions of Microsoft’s agent-framework package on the Python Package Index (PyPI) on November 17, 2026. Versions 1.26.1 and 1.26.2 contained a credential stealer that could run during normal Python startup, even if an application never imported Agent Framework. The malware targeted Azure identities, GitHub credentials, and secrets used in automated builds.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsofts-agent-framework-pypi-package/",
+    "publishedAt": "2026-11-18T03:30:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-s-agent-framework-pypi-package-hacked-to",
+      "article-46a332cd",
+      "46a332cd",
+      "microsoft-s-agent-framework-pypi-package-hacked-to-262c9d",
+      "microsoft-s-agent-framework-pypi-package-hacked-to-steal-azu"
+    ]
+  },
+  {
     "slug": "nsanet-classified-network-experiences-operational-186d0f4f",
     "title": "NSANet Classified Network Experiences Operational Outage",
     "summary": "A classified internal network used by NSA employees, NSANet, suffered an operational outage. The outage disrupted communications across the agency, though no evidence of a security breach or vulnerability was reported. Defense officials confirmed the issue and are working to restore full functionality; no patch or mitigation is required at this time.",
@@ -185,10 +259,10 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "oracle-patches-critical-java4shell-openjdk-rce-vul-d07f1c07",
-    "title": "Oracle Patches Critical Java4Shell OpenJDK RCE Vulnerability",
-    "summary": "Oracle patched a critical OpenJDK flaw dubbed Java4Shell, tracked as CVE-2026-114938, affecting Java runtimes through the Base64 decoder. The heap-based buffer overflow permits unauthenticated remote code execution, can crash the Java Virtual Machine, and may expose sensitive memory contents. Administrators should apply Oracle and OpenJDK updates or vendor mitigations immediately to remediate affected servers.",
-    "category": "CVE",
+    "slug": "java4shell-cve-2026-114938-enables-pre-auth-rce-or-99e7f41c",
+    "title": "Java4Shell CVE-2026-114938 Enables Pre-Auth RCE; Oracle Issues Critical Patch",
+    "summary": "Java4Shell (CVE-2026-114938) is a critical flaw in Java 17+ that allows unauthenticated remote code execution on applications such as Jira, Jenkins, and Keycloak. The vulnerability exploits a heap-based buffer overflow in the Base64 decoder, enabling attackers to run arbitrary code on AVX-512 VBMI servers. Oracle and OpenJDK have released critical patches; administrators should update immediately to mitigate the risk.",
+    "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "Canadian Centre for Cyber Security",
     "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938",
@@ -200,14 +274,18 @@ export const news: NewsBrief[] = [
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/java4shell/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
       }
     ],
     "aliases": [
-      "oracle-patches-critical-java4shell-openjdk-rce-vul",
-      "article-d07f1c07",
-      "d07f1c07",
-      "oracle-patches-critical-java4shell-openjdk-rce-vul-2ee514",
-      "oracle-patches-critical-java4shell-openjdk-rce-vulnerability"
+      "java4shell-cve-2026-114938-enables-pre-auth-rce-or",
+      "article-99e7f41c",
+      "99e7f41c",
+      "java4shell-cve-2026-114938-enables-pre-auth-rce-or-2ee514",
+      "java4shell-cve-2026-114938-enables-pre-auth-rce-oracle-issue"
     ]
   },
   {
@@ -1163,6 +1241,46 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-discloses-ntlm-spoofing-cve-1c87cfb8",
+    "title": "Microsoft Discloses NTLM Spoofing CVE",
+    "summary": "Microsoft disclosed CVE-2026-121680, a Windows NTLM spoofing vulnerability that could allow attackers to impersonate legitimate users during authentication. The flaw arises from improper validation of NTLM challenge responses, potentially enabling credential replay without requiring user interaction. Microsoft has issued an informational update; no patch is required, but users should monitor for future security advisories.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121680",
+    "publishedAt": "2026-11-17T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-121680"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-discloses-ntlm-spoofing-cve",
+      "article-1c87cfb8",
+      "1c87cfb8",
+      "microsoft-discloses-ntlm-spoofing-cve-1fde27"
+    ]
+  },
+  {
+    "slug": "microsoft-announces-sharepoint-spoofing-cve-4a8ba4f7",
+    "title": "Microsoft Announces SharePoint Spoofing CVE",
+    "summary": "Microsoft announced CVE-2026-88208, a SharePoint spoofing vulnerability that could allow attackers to masquerade as legitimate users within Office applications. The issue stems from inadequate validation of SharePoint authentication tokens, potentially enabling unauthorized access without user credentials. Microsoft released an informational acknowledgement; no patch is available yet, and users should stay alert for forthcoming updates.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88208",
+    "publishedAt": "2026-11-17T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-88208"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-announces-sharepoint-spoofing-cve",
+      "article-4a8ba4f7",
+      "4a8ba4f7",
+      "microsoft-announces-sharepoint-spoofing-cve-743eb0"
+    ]
+  },
+  {
     "slug": "microsoft-patch-addresses-windows-media-foundation-ae72c982",
     "title": "Microsoft Patch Addresses Windows Media Foundation Privilege Escalation",
     "summary": "Microsoft disclosed CVE-2026-70278, an elevation of privilege flaw in Windows Media Foundation affecting Windows 10/11 via media playback. The flaw lets local users gain higher privileges by manipulating media stream parsing, with a CVSS score of 7.5, and no public exploit reported. Microsoft released a patch in the 27.",
@@ -1286,25 +1404,6 @@ export const news: NewsBrief[] = [
       "f13c866b",
       "windows-powershell-rce-vulnerability-cve-2026-4040-747aa9",
       "windows-powershell-rce-vulnerability-cve-2026-40400"
-    ]
-  },
-  {
-    "slug": "flipper-devices-unveils-flipper-one-linux-multi-to-1580310a",
-    "title": "Flipper Devices Unveils Flipper One Linux Multi-Tool",
-    "summary": "Flipper Devices announced the Flipper One, a $399 Linux-based computer and networking multi-tool, as part of a crowdfunding campaign. The device builds on the Flipper Zero platform, offering expanded hardware interfaces and a full Linux OS for penetration testing and network analysis. Users can support the project through the campaign, and the company will provide firmware updates and documentation post-release.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
-    "publishedAt": "2026-11-17T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "flipper-devices-unveils-flipper-one-linux-multi-to",
-      "article-1580310a",
-      "1580310a",
-      "flipper-devices-unveils-flipper-one-linux-multi-to-b7937d",
-      "flipper-devices-unveils-flipper-one-linux-multi-tool"
     ]
   },
   {
@@ -9835,123 +9934,6 @@ export const news: NewsBrief[] = [
       "article-926a510e",
       "926a510e",
       "kicad-schlib-parsing-oob-write-rce-vulnerability-6f3d1b"
-    ]
-  },
-  {
-    "slug": "zdi-26-955-kde-gwenview-png-file-parsing-integer-o-360dc6d6",
-    "title": "ZDI-26-955: KDE Gwenview PNG File Parsing Integer Overflow Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of KDE Gwenview. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-126973.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-955/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126973"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-955-kde-gwenview-png-file-parsing-integer-o",
-      "article-360dc6d6",
-      "360dc6d6",
-      "zdi-26-955-kde-gwenview-png-file-parsing-integer-o-6f3d1b",
-      "zdi-26-955-kde-gwenview-png-file-parsing-integer-overflow-re"
-    ]
-  },
-  {
-    "slug": "n-central-flaws-compromise-21-servers-06a541af",
-    "title": "N-central Flaws Compromise 21 Servers",
-    "summary": "Hackers exploited N-able N-central flaws, 4EverAble2Shell and Agent2Shell, to compromise 21 servers, 19 of which ran Hotfix 2. The flaws allow remote code execution via malformed API requests, enabling attackers to execute arbitrary commands without authentication. N-able has disabled affected features and integrations, issued a patch, and recommends applying the latest Hotfix 2 update to mitigate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
-    "publishedAt": "2026-11-13T05:43:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-central-flaws-compromise-21-servers",
-      "article-06a541af",
-      "06a541af",
-      "n-central-flaws-compromise-21-servers-18c6e7"
-    ]
-  },
-  {
-    "slug": "mcp-server-drift-exposes-unchecked-dependencies-838a554e",
-    "title": "MCP Server Drift Exposes Unchecked Dependencies",
-    "summary": "An MCP server on an administrator’s workstation, meant to run a single release, used 15 dependency sets over five weeks, despite unchanged configuration. The drift updated 23 of 69 packages, including cryptography, JSON Web Token, and the MCP SDK, exposing the server to untested components. Teams should audit dependencies, enforce pinning, and apply consistent configuration management to prevent drift.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/corelight-mcp-server-supply-chain/",
-    "publishedAt": "2026-11-13T05:30:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mcp-server-drift-exposes-unchecked-dependencies",
-      "article-838a554e",
-      "838a554e",
-      "mcp-server-drift-exposes-unchecked-dependencies-297211"
-    ]
-  },
-  {
-    "slug": "tsmc-employee-data-exposed-via-third-party-cloud-6ce49751",
-    "title": "TSMC Employee Data Exposed via Third-Party Cloud",
-    "summary": "TSMC disclosed that personal data of current and former employees was exposed online through a third-party cloud provider. The breach involved data stored externally, with no indication that TSMC’s internal systems were compromised or accessed by attackers. TSMC recommends employees verify account activity, change passwords, and monitor for suspicious access while the cloud provider implements additional safeguards.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/tsmc-data-breach/",
-    "publishedAt": "2026-11-13T05:25:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tsmc-employee-data-exposed-via-third-party-cloud",
-      "article-6ce49751",
-      "6ce49751",
-      "tsmc-employee-data-exposed-via-third-party-cloud-285bea"
-    ]
-  },
-  {
-    "slug": "ibm-survey-finds-digital-sovereignty-audit-gaps-836c1277",
-    "title": "IBM Survey Finds Digital Sovereignty Audit Gaps",
-    "summary": "IBM's Digital Sovereignty Index found 94% of surveyed enterprises faced at least one digital sovereignty challenge in three years. Of those affected, 91% had to demonstrate retained control during their hardest event, and 81% gave formal evidence to regulators, auditors, customers, or stakeholders. The report defines digital sovereignty as retaining control and providing credible evidence across critical AI systems.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/ibm-digital-sovereignty-challenges-report/",
-    "publishedAt": "2026-11-13T05:00:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ibm-survey-finds-digital-sovereignty-audit-gaps",
-      "article-836c1277",
-      "836c1277",
-      "ibm-survey-finds-digital-sovereignty-audit-gaps-5f8478"
-    ]
-  },
-  {
-    "slug": "downthedrain-infostealer-targets-macos-via-clickfi-abb807a4",
-    "title": "DownTheDRAIN Infostealer Targets macOS via ClickFix Campaign",
-    "summary": "DownTheDRAIN, a macOS infostealer, was distributed through a ClickFix phishing campaign that lured users with fake CAPTCHAs. The malware harvests credentials via keylogging, clipboard monitoring, and deceptive CAPTCHA interactions, exfiltrating login data without ransomware payload. Security teams should block ClickFix domains, enable MFA, deploy macOS endpoint protection, and monitor for credential exfiltration to mitigate the threat.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33518",
-    "publishedAt": "2026-11-13T03:41:41.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/downthedrain-macos-clickfix-infostealer"
-      }
-    ],
-    "aliases": [
-      "downthedrain-infostealer-targets-macos-via-clickfi",
-      "article-abb807a4",
-      "abb807a4",
-      "downthedrain-infostealer-targets-macos-via-clickfi-57dd81",
-      "downthedrain-infostealer-targets-macos-via-clickfix-campaign"
     ]
   }
 ];

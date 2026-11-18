@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 04:33:20 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 05:45:33 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>iVerify Basic Empowers Device Security Checks</title>
+      <link>https://secubuzz.com/news/iverify-basic-empowers-device-security-checks-b48b7505</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/iverify-basic-empowers-device-security-checks-b48b7505</guid>
+      <description><![CDATA[iVerify Basic is a mobile security app for individuals seeking device integrity checks and privacy enhancements. Available on iOS and Android, the app consolidates scan controls and status on a single Device tab, allowing users to run scans and view findings. After each scan, the app records the last check time and displays results, helping users maintain ongoing device health.]]></description>
+      <pubDate>Wed, 18 Nov 2026 05:30:11 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/18/product-showcase-iverify-basic/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Fraudsters Use Virtual Cameras for Identity Checks</title>
+      <link>https://secubuzz.com/news/fraudsters-use-virtual-cameras-for-identity-checks-85780284</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fraudsters-use-virtual-cameras-for-identity-checks-85780284</guid>
+      <description><![CDATA[Fraudsters use virtual cameras to feed facial data into identity checks, a trend noted in Entrust’s 2027 Identity Fraud Report. Document fraud, the largest attack category, fell 19% year over year, yet medium-sophistication attacks-alterations and counterfeits-still make up nearly 39% of cases. Physical counterfeits account for 61.1% of fraudulent submissions, highlighting the need for stricter document authenticity checks during verification.]]></description>
+      <pubDate>Wed, 18 Nov 2026 05:00:34 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/18/entrust-document-verification-fraud-report/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Flipper Devices Unveils Flipper One Linux Multi-Tool</title>
+      <link>https://secubuzz.com/news/flipper-devices-unveils-flipper-one-linux-multi-to-b86cbfb8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/flipper-devices-unveils-flipper-one-linux-multi-to-b86cbfb8</guid>
+      <description><![CDATA[Flipper Devices announced the Flipper One, a portable Linux computer designed for network testing, hardware projects, and security research. The device bundles advanced network security tools and targets hobbyists, researchers, and penetration testers seeking an on-the-go platform. Backers can pledge starting at $399 via Kickstarter, with shipping slated for July 2027; the campaign runs until December 17, 2026.]]></description>
+      <pubDate>Wed, 18 Nov 2026 03:35:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/flipper-one-linux-multi-tool/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft’s Agent Framework PyPI Package Hacked to Steal Azure and GitHub Credentials</title>
+      <link>https://secubuzz.com/news/microsoft-s-agent-framework-pypi-package-hacked-to-46a332cd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-s-agent-framework-pypi-package-hacked-to-46a332cd</guid>
+      <description><![CDATA[Hackers published two malicious versions of Microsoft’s agent-framework package on the Python Package Index (PyPI) on November 17, 2026. Versions 1.26.1 and 1.26.2 contained a credential stealer that could run during normal Python startup, even if an application never imported Agent Framework. The malware targeted Azure identities, GitHub credentials, and secrets used in automated builds.]]></description>
+      <pubDate>Wed, 18 Nov 2026 03:30:19 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsofts-agent-framework-pypi-package/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>NSANet Classified Network Experiences Operational Outage</title>
       <link>https://secubuzz.com/news/nsanet-classified-network-experiences-operational-186d0f4f</link>
@@ -89,13 +125,13 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>Oracle Patches Critical Java4Shell OpenJDK RCE Vulnerability</title>
-      <link>https://secubuzz.com/news/oracle-patches-critical-java4shell-openjdk-rce-vul-d07f1c07</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/oracle-patches-critical-java4shell-openjdk-rce-vul-d07f1c07</guid>
-      <description><![CDATA[Oracle patched a critical OpenJDK flaw dubbed Java4Shell, tracked as CVE-2026-114938, affecting Java runtimes through the Base64 decoder. The heap-based buffer overflow permits unauthenticated remote code execution, can crash the Java Virtual Machine, and may expose sensitive memory contents. Administrators should apply Oracle and OpenJDK updates or vendor mitigations immediately to remediate affected servers.]]></description>
+      <title>Java4Shell CVE-2026-114938 Enables Pre-Auth RCE; Oracle Issues Critical Patch</title>
+      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-enables-pre-auth-rce-or-99e7f41c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-enables-pre-auth-rce-or-99e7f41c</guid>
+      <description><![CDATA[Java4Shell (CVE-2026-114938) is a critical flaw in Java 17+ that allows unauthenticated remote code execution on applications such as Jira, Jenkins, and Keycloak. The vulnerability exploits a heap-based buffer overflow in the Base64 decoder, enabling attackers to run arbitrary code on AVX-512 VBMI servers. Oracle and OpenJDK have released critical patches; administrators should update immediately to mitigate the risk.]]></description>
       <pubDate>Tue, 17 Nov 2026 23:30:00 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938">Canadian Centre for Cyber Security</source>
-      <category>CVE</category>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Microsoft Agent-Framework PyPI Package Compromised</title>
@@ -420,42 +456,6 @@
       <pubDate>Tue, 17 Nov 2026 17:13:18 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9144-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hertz Fined $1.5M for California Privacy Violation</title>
-      <link>https://secubuzz.com/news/hertz-fined-1-5m-for-california-privacy-violation-140d476d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hertz-fined-1-5m-for-california-privacy-violation-140d476d</guid>
-      <description><![CDATA[Hertz was fined $1.5 million by the California Privacy Protection Agency for violating state data privacy regulations, citing improper handling of consumer data. The action highlights gaps in Hertz’s data governance, notably insufficient consent management and audit controls across its fleet-management platform.]]></description>
-      <pubDate>Tue, 17 Nov 2026 17:13:00 GMT</pubDate>
-      <source url="https://therecord.media/california-fines-hertz-state-data-privacy-law">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Mumble Murmur server adds rate limiting to prevent DoS</title>
-      <link>https://secubuzz.com/news/mumble-murmur-server-adds-rate-limiting-to-prevent-68252d22</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mumble-murmur-server-adds-rate-limiting-to-prevent-68252d22</guid>
-      <description><![CDATA[Murmur server in Mumble lacked rate limiting for certain client messages, enabling remote attackers to cause denial-of-service hangs or crashes. The flaw is unauthenticated and can lead to service disruption and resource exhaustion on vulnerable hosts. The update adds configurable messageburst and messagelimit settings to enforce rate limiting and mitigate the DoS risk.]]></description>
-      <pubDate>Tue, 17 Nov 2026 17:11:46 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9143-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Apache XML Security for Java Vulnerability Discovered</title>
-      <link>https://secubuzz.com/news/apache-xml-security-for-java-vulnerability-discove-4e67a7d2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-xml-security-for-java-vulnerability-discove-4e67a7d2</guid>
-      <description><![CDATA[Apache XML Security for Java incorrectly passed a configuration property during key element creation, exposing a flaw. The defect lets an attacker abuse an XPath Transform to extract sensitive data, but exploitation requires crafted XML input and is not confirmed in the wild. The update restricts file: and http: URI dereferencing unless the org.apache.xml.security.allowUnsafeResourceResolving property is set; patch promptly.]]></description>
-      <pubDate>Tue, 17 Nov 2026 17:10:33 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9142-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>MSSP Boosts SOC Capacity 25% with Threat Intelligence</title>
-      <link>https://secubuzz.com/news/mssp-boosts-soc-capacity-25-with-threat-intelligen-319e015d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mssp-boosts-soc-capacity-25-with-threat-intelligen-319e015d</guid>
-      <description><![CDATA[A US-based MSSP with one SOC manager and five analysts increased its SOC capacity by 25% by leveraging threat intelligence. The approach involved integrating actionable threat data into analyst workflows, reducing alert fatigue and enabling faster incident response. Other MSSPs can adopt similar intelligence-driven processes to scale operations without proportionally increasing headcount.]]></description>
-      <pubDate>Tue, 17 Nov 2026 17:07:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/mssp-threat-intelligence-soc-capacity/">Cyber Security News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
