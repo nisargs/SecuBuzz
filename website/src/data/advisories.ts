@@ -102,6 +102,33 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-71481",
+    "cveID": "CVE-2026-71481",
+    "slug": "cve-2026-71481",
+    "vendor": "Composer",
+    "product": "altcha-org/altcha",
+    "name": "ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent",
+    "dateAdded": "2026-11-18",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-347",
+    "ransomware": false,
+    "description": "In altcha-org/altcha v2, the verifySolution method skips HMAC signature verification when the signature field is absent from the challenge payload, even when hmacSignatureSecret is configured. An attacker who strips the signature key from the challenge JSON passes the condition as false, bypassing tamper-detection entirely.",
+    "requiredAction": "Upgrade altcha-org/altcha to version 2.0.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-82w8-65qw-gch6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71481"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-71425",
     "cveID": "CVE-2026-71425",
     "slug": "cve-2026-71425",
@@ -1445,33 +1472,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128125"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128126",
-    "cveID": "CVE-2026-128126",
-    "slug": "cve-2026-128126",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: Too many URL-encoded form fields block the event loop",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-407",
-    "ransomware": false,
-    "description": "Request.post() had no limit on the number of fields in a URL-encoded form body. Inserting a large number of repeated keys into a MultiDict took quadratic time on the event loop.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xgw8-8ccx-rmqh"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128126"
       }
     ],
     "source": "GITHUB"

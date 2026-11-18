@@ -1040,6 +1040,44 @@
     "additionalSources": []
   },
   {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1033/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1033/",
+    "title": "ZDI-26-1033: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP GetConfiguration Stack-based Buffer Overflow Remote Code Execution Vulnerability",
+    "headline": "ZDI-26-1033: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP GetConfiguration Stack-based Buffer Overflow Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131807.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "ingestedAt": "2026-11-18T20:52:36.099Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-131807"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1032/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1032/",
+    "title": "ZDI-26-1032: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP Backend Configuration Hard-Coded Credentials Authentication Bypass Vulnerability",
+    "headline": "ZDI-26-1032: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP Backend Configuration Hard-Coded Credentials Authentication Bypass Vulnerability",
+    "summary": "This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131811.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "ingestedAt": "2026-11-18T20:52:43.101Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-131811"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1037/",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1037/",
     "title": "ZDI-26-1037: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP Backend Configuration Authentication Bypass Vulnerability",
@@ -8401,38 +8439,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/new-n-central-exploits-work-against-patched-servers-ena",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/sckit-malware-turns-screenconnect-support-sessions-into",
-    "sourceUrl": "https://cybernewsai.com/blog/sckit-malware-turns-screenconnect-support-sessions-into",
-    "title": "SCKit Malware: Detect and Block AI-Driven Attacks",
-    "headline": "SCKit Malware: Detect and Block AI-Driven Attacks",
-    "summary": "SCKit malware, an AI-driven threat, has prompted a security alert urging rapid detection and containment. Analysts recommend reviewing root-cause telemetry, deploying detection rules, and applying patches to neutralize the evolving attack vector. Security teams should immediately update signatures, monitor for anomalous AI-generated activity across all endpoints, and isolate affected systems to prevent compromise.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-11-13T11:38:00.000Z",
-    "ingestedAt": "2026-11-13T13:43:21.777Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybernewsai.com/blog/sckit-malware-turns-screenconnect-support-sessions-into",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/microsoft-365-massive-outage-fixes-fail-as-restored-servers-keep-going-unresponsive/",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-365-massive-outage-fixes-fail-as-restored-servers-keep-going-unresponsive/",
-    "title": "Microsoft 365 Outage Persists as Restored Servers Fail",
-    "headline": "Microsoft 365 Outage Persists as Restored Servers Fail",
-    "summary": "A global Microsoft 365 outage lasted over 10 hours from November 12 to November 13, 2026, with restored servers becoming unresponsive under user traffic. Microsoft engineers have not found a fix that holds, and servers brought back online fail again when traffic reaches them. No root cause or durable remediation was disclosed, leaving customers dependent on ongoing restoration efforts.",
-    "category": "GENERAL",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-13T11:31:40.000Z",
-    "ingestedAt": "2026-11-14T03:43:57.709Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/microsoft-365-massive-outage-fixes-fail-as-restored-servers-keep-going-unresponsive/",
     "additionalSources": []
   }
 ]
