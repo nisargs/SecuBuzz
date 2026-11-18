@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 23:44:50 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 00:46:35 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Critical Java4Shell flaw allows RCE attacks on major Java applications</title>
@@ -323,6 +323,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Microsoft Patch Addresses Windows Media Foundation Privilege Escalation</title>
+      <link>https://secubuzz.com/news/microsoft-patch-addresses-windows-media-foundation-ae72c982</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-addresses-windows-media-foundation-ae72c982</guid>
+      <description><![CDATA[Microsoft disclosed CVE-2026-70278, an elevation of privilege flaw in Windows Media Foundation affecting Windows 10/11 via media playback. The flaw lets local users gain higher privileges by manipulating media stream parsing, with a CVSS score of 7.5, and no public exploit reported. Microsoft released a patch in the 27.]]></description>
+      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Discloses Windows Setup Elevation Vulnerability CVE-2026-119914</title>
       <link>https://secubuzz.com/news/microsoft-discloses-windows-setup-elevation-vulner-9d04e0b1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-discloses-windows-setup-elevation-vulner-9d04e0b1</guid>
@@ -446,15 +455,6 @@
       <description><![CDATA[Hackers are hiding a backdoor named GraphDoor inside normal Microsoft and Ably traffic. The goal is to spy on government networks in Asia and Africa. Kaspersky’s GReAT team detailed the findings on November 17, 2026, in the second part of its Operation ShadowCloud research.]]></description>
       <pubDate>Tue, 17 Nov 2026 14:40:07 GMT</pubDate>
       <source url="https://cybersecuritynews.com/graphdoor-sharepoint-backdoor/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Envoy Launches Visitors Critical Visitor Workflow Solution</title>
-      <link>https://secubuzz.com/news/envoy-launches-visitors-critical-visitor-workflow-e5639880</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/envoy-launches-visitors-critical-visitor-workflow-e5639880</guid>
-      <description><![CDATA[Envoy introduced Visitors Critical, an infrastructure-grade visitor security platform that consolidates identity verification, screening, and approval workflows into a single architecture. The solution targets high-consequence environments, ensuring audit-ready records and preventing gaps that one-size-fits-all visitor processes can create. Organizations can adopt Visitors Critical to enforce strict control, assurance, and governance across all visitor scenarios.]]></description>
-      <pubDate>Tue, 17 Nov 2026 14:28:49 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/17/envoy-visitors-critical/">Help Net Security</source>
       <category>General</category>
     </item>
   </channel>

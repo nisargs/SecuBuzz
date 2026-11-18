@@ -583,6 +583,22 @@
     ]
   },
   {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278",
+    "title": "Microsoft Patch Addresses Windows Media Foundation Privilege Escalation",
+    "headline": "Microsoft Patch Addresses Windows Media Foundation Privilege Escalation",
+    "summary": "Microsoft disclosed CVE-2026-70278, an elevation of privilege flaw in Windows Media Foundation affecting Windows 10/11 via media playback. The flaw lets local users gain higher privileges by manipulating media stream parsing, with a CVSS score of 7.5, and no public exploit reported. Microsoft released a patch in the 27.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-11-17T16:00:00.000Z",
+    "ingestedAt": "2026-11-18T00:44:52.421Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278",
+    "additionalSources": []
+  },
+  {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914",
     "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914",
     "title": "Microsoft Discloses Windows Setup Elevation Vulnerability CVE-2026-119914",
@@ -8375,22 +8391,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery",
-    "title": "Organizations Struggle With Post-Quantum Cryptography Asset Discovery",
-    "headline": "Organizations Struggle With Post-Quantum Cryptography Asset Discovery",
-    "summary": "Enterprise organizations face significant operational hurdles when preparing for the mandatory transition to post-quantum cryptography standards. According to Dark Reading, most entities have not adequately audited their internal cryptographic estate to establish a baseline for post-quantum implementation. Security leadership must prioritize discovering and mapping legacy cryptographic assets across systems before beginning post-quantum security deployments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-11-12T22:46:05.000Z",
-    "ingestedAt": "2026-11-13T05:44:17.499Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery",
     "additionalSources": []
   }
 ]

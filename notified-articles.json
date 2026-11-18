@@ -5348,5 +5348,6 @@
   "https://cyber.gc.ca/en/alerts-advisories/zyxel-security-advisory-av26-1167",
   "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
   "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
-  "https://www.securityweek.com/pretxt-emerges-stealth-with-5m-seed-and-an-ai-supervision-tool/"
+  "https://www.securityweek.com/pretxt-emerges-stealth-with-5m-seed-and-an-ai-supervision-tool/",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278"
 ]
