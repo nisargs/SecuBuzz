@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 03:47:32 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 04:33:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>NSANet Classified Network Experiences Operational Outage</title>
@@ -23,6 +23,15 @@
       <description><![CDATA[The SANS Internet Storm Center released its weekly Stormcast for Wednesday, November 18, 2026, summarizing recent cyber events. The broadcast covers emerging threats, vulnerability trends, and defensive recommendations, providing analysts with actionable intelligence. Listeners can access the podcast via the ISC website or RSS feed, with no security patches or vulnerabilities disclosed.]]></description>
       <pubDate>Wed, 18 Nov 2026 02:00:03 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33528">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>HTTP/3 RATs Target Governments via TGR-STA-0049</title>
+      <link>https://secubuzz.com/news/http-3-rats-target-governments-via-tgr-sta-0049-1330fc0e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/http-3-rats-target-governments-via-tgr-sta-0049-1330fc0e</guid>
+      <description><![CDATA[TGR-STA-0049 describes a remote access trojan campaign that uses HTTP/3 to target government networks. The trojan exploits the HTTP/3 protocol to establish covert channels, enabling attackers to exfiltrate data and maintain persistence without detection. Security teams should deploy detection rules for HTTP/3 traffic anomalies, review telemetry, and apply vendor patches or mitigations as soon as available.]]></description>
+      <pubDate>Wed, 18 Nov 2026 01:14:13 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/quic-and-covert-novel-http-3-powered-rats-target-southe">CyberNews AI</source>
       <category>General</category>
     </item>
     <item>
@@ -386,6 +395,33 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>USN-9147-1: PyWPS vulnerability</title>
+      <link>https://secubuzz.com/news/usn-9147-1-pywps-vulnerability-c3ae89ef</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9147-1-pywps-vulnerability-c3ae89ef</guid>
+      <description><![CDATA[It was discovered that PyWPS did not disable the resolution of XML external entities when parsing requests. A remote attacker could possibly use this issue to read arbitrary files on the server.]]></description>
+      <pubDate>Tue, 17 Nov 2026 17:17:04 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9147-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OAR Script Fails to Sanitize OpenSSH Options</title>
+      <link>https://secubuzz.com/news/oar-script-fails-to-sanitize-openssh-options-3ba20a68</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/oar-script-fails-to-sanitize-openssh-options-3ba20a68</guid>
+      <description><![CDATA[A flaw in OAR’s oarsh script lets authenticated users exploit improperly filtered OpenSSH options. The vulnerability permits privilege escalation or sensitive data exposure by injecting malicious SSH options, though no public exploit has been reported. Ubuntu recommends applying the latest security update that patches oarsh, and administrators should review SSH configuration for unauthorized options.]]></description>
+      <pubDate>Tue, 17 Nov 2026 17:14:01 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9145-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ngIRCd Vulnerability Causes Denial of Service</title>
+      <link>https://secubuzz.com/news/ngircd-vulnerability-causes-denial-of-service-36824ef8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ngircd-vulnerability-causes-denial-of-service-36824ef8</guid>
+      <description><![CDATA[USN-9144-1 reports an ngIRCd flaw where the server mishandles SERVER commands without a prefix, causing an out-of-bounds read. The vulnerability lets remote attackers crash ngIRCd, resulting in a denial of service that can disrupt IRC operations. A patch is included in the latest ngIRCd release; administrators should upgrade or apply the vendor’s workaround to avoid service outages.]]></description>
+      <pubDate>Tue, 17 Nov 2026 17:13:18 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9144-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Hertz Fined $1.5M for California Privacy Violation</title>
       <link>https://secubuzz.com/news/hertz-fined-1-5m-for-california-privacy-violation-140d476d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hertz-fined-1-5m-for-california-privacy-violation-140d476d</guid>
@@ -420,42 +456,6 @@
       <pubDate>Tue, 17 Nov 2026 17:07:01 GMT</pubDate>
       <source url="https://cybersecuritynews.com/mssp-threat-intelligence-soc-capacity/">Cyber Security News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>FlightGear Sandbox Bypass Allows Arbitrary File Writes</title>
-      <link>https://secubuzz.com/news/flightgear-sandbox-bypass-allows-arbitrary-file-wr-1f314e52</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/flightgear-sandbox-bypass-allows-arbitrary-file-wr-1f314e52</guid>
-      <description><![CDATA[FlightGear's Nasal script sandbox fails to restrict file paths, allowing attackers to bypass containment and write arbitrary files with user privileges. The flaw stems from improper sandbox enforcement on filesystem operations, enabling local privilege escalation within the user context. Ubuntu has issued USN-9137-1 patches; administrators should immediately upgrade affected FlightGear packages.]]></description>
-      <pubDate>Tue, 17 Nov 2026 17:05:07 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9137-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome Extended Stable Update Addresses Critical CVEs</title>
-      <link>https://secubuzz.com/news/chrome-extended-stable-update-addresses-critical-c-6d292483</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-extended-stable-update-addresses-critical-c-6d292483</guid>
-      <description><![CDATA[Google Chrome released an Extended Stable update for Windows and Mac, fixing critical vulnerabilities including CVE-2026-118331, CVE-2026-118344, and CVE-2026-118348. The update also patches high-severity bugs such as CVE-2026-113336, CVE-2026-113338, and CVE-2026-113339, which could enable local privilege escalation or denial of service. Users should install the 156.0.8078.108/109 build promptly, as Chrome provides detailed remediation guidance on its security page.]]></description>
-      <pubDate>Tue, 17 Nov 2026 17:01:33 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01061812727.html">Google Chrome Releases</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Binwalk Path Traversal Enables Arbitrary File Write</title>
-      <link>https://secubuzz.com/news/binwalk-path-traversal-enables-arbitrary-file-writ-adc7226b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/binwalk-path-traversal-enables-arbitrary-file-writ-adc7226b</guid>
-      <description><![CDATA[Ubuntu reports a flaw in Binwalk's PFS extractor where file paths are unsanitized, enabling a crafted PFS image to write arbitrary files and execute code. An attacker could trick a user or automated system into extracting a malicious PFS file, potentially compromising the host. Updating Binwalk to the patched version or applying the security update mitigates the risk.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:58:20 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9134-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Astropy Vulnerability Enables Potential Arbitrary Code Execution</title>
-      <link>https://secubuzz.com/news/astropy-vulnerability-enables-potential-arbitrary-68cee531</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/astropy-vulnerability-enables-potential-arbitrary-68cee531</guid>
-      <description><![CDATA[Ubuntu reports a flaw in Astropy where the savelayout argument is not validated, allowing untrusted input to trigger arbitrary code execution during graph saving. The vulnerability could enable attackers to run malicious code on systems that import Astropy data, potentially compromising the host. Ubuntu advises updating to the patched Astropy package or applying the security update to mitigate the risk.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:58:09 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9133-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

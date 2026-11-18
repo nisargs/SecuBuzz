@@ -48,6 +48,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "http-3-rats-target-governments-via-tgr-sta-0049-1330fc0e",
+    "title": "HTTP/3 RATs Target Governments via TGR-STA-0049",
+    "summary": "TGR-STA-0049 describes a remote access trojan campaign that uses HTTP/3 to target government networks. The trojan exploits the HTTP/3 protocol to establish covert channels, enabling attackers to exfiltrate data and maintain persistence without detection. Security teams should deploy detection rules for HTTP/3 traffic anomalies, review telemetry, and apply vendor patches or mitigations as soon as available.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/quic-and-covert-novel-http-3-powered-rats-target-southe",
+    "publishedAt": "2026-11-18T01:14:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "http-3-rats-target-governments-via-tgr-sta-0049",
+      "article-1330fc0e",
+      "1330fc0e",
+      "http-3-rats-target-governments-via-tgr-sta-0049-b19110"
+    ]
+  },
+  {
     "slug": "nist-releases-post-quantum-crypto-guidance-daab2569",
     "title": "NIST Releases Post-Quantum Crypto Guidance",
     "summary": "NIST issued new guidance on post-quantum cryptography, outlining recommended algorithms and deployment considerations for enterprise systems. The advisory highlights potential compatibility issues with legacy protocols and stresses the need for updated key management practices, but does not disclose a specific vulnerability. Security teams should review the guidance, adjust telemetry, and apply any recommended configuration changes to future-proof cryptographic infrastructure.",
@@ -830,6 +848,60 @@ export const news: NewsBrief[] = [
       "article-eb0b0f73",
       "eb0b0f73",
       "ubuntu-fixes-mechanize-arbitrary-command-execution-7e79b4"
+    ]
+  },
+  {
+    "slug": "usn-9147-1-pywps-vulnerability-c3ae89ef",
+    "title": "USN-9147-1: PyWPS vulnerability",
+    "summary": "It was discovered that PyWPS did not disable the resolution of XML external entities when parsing requests. A remote attacker could possibly use this issue to read arbitrary files on the server.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9147-1",
+    "publishedAt": "2026-11-17T17:17:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9147-1-pywps-vulnerability",
+      "article-c3ae89ef",
+      "c3ae89ef",
+      "usn-9147-1-pywps-vulnerability-7e79b8"
+    ]
+  },
+  {
+    "slug": "oar-script-fails-to-sanitize-openssh-options-3ba20a68",
+    "title": "OAR Script Fails to Sanitize OpenSSH Options",
+    "summary": "A flaw in OAR’s oarsh script lets authenticated users exploit improperly filtered OpenSSH options. The vulnerability permits privilege escalation or sensitive data exposure by injecting malicious SSH options, though no public exploit has been reported. Ubuntu recommends applying the latest security update that patches oarsh, and administrators should review SSH configuration for unauthorized options.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9145-1",
+    "publishedAt": "2026-11-17T17:14:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "oar-script-fails-to-sanitize-openssh-options",
+      "article-3ba20a68",
+      "3ba20a68",
+      "oar-script-fails-to-sanitize-openssh-options-7e79bf"
+    ]
+  },
+  {
+    "slug": "ngircd-vulnerability-causes-denial-of-service-36824ef8",
+    "title": "ngIRCd Vulnerability Causes Denial of Service",
+    "summary": "USN-9144-1 reports an ngIRCd flaw where the server mishandles SERVER commands without a prefix, causing an out-of-bounds read. The vulnerability lets remote attackers crash ngIRCd, resulting in a denial of service that can disrupt IRC operations. A patch is included in the latest ngIRCd release; administrators should upgrade or apply the vendor’s workaround to avoid service outages.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9144-1",
+    "publishedAt": "2026-11-17T17:13:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ngircd-vulnerability-causes-denial-of-service",
+      "article-36824ef8",
+      "36824ef8",
+      "ngircd-vulnerability-causes-denial-of-service-7e79c3"
     ]
   },
   {
@@ -9880,82 +9952,6 @@ export const news: NewsBrief[] = [
       "abb807a4",
       "downthedrain-infostealer-targets-macos-via-clickfi-57dd81",
       "downthedrain-infostealer-targets-macos-via-clickfix-campaign"
-    ]
-  },
-  {
-    "slug": "fbi-seizes-1-2b-crypto-stolen-from-binance-7ab8f53b",
-    "title": "FBI Seizes $1.2B Crypto Stolen from Binance",
-    "summary": "The FBI seized $1.2 billion in cryptocurrency stolen from Binance, linked to a North Korean social engineering scheme that also yielded $400 million. The operation uncovered a phishing and credential-stealing campaign that compromised Binance accounts, enabling large fund transfers to illicit wallets.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/",
-    "publishedAt": "2026-11-13T02:28:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-seizes-1-2b-crypto-stolen-from-binance",
-      "article-7ab8f53b",
-      "7ab8f53b",
-      "fbi-seizes-1-2b-crypto-stolen-from-binance-101d11"
-    ]
-  },
-  {
-    "slug": "microsoft-365-outage-hits-exchange-teams-sharepoin-253f54b2",
-    "title": "Microsoft 365 Outage Hits Exchange, Teams, SharePoint",
-    "summary": "Microsoft suffered a 2026-11-12 outage that disrupted Microsoft 365 services, including Exchange Online, Teams, SharePoint, Copilot, and Defender XDR, worldwide. The outage originated from infrastructure failures that caused regional connectivity issues, first affecting Exchange mailbox access in the Americas before spreading globally. Microsoft is restoring services, investigating root causes, and will issue updates as the situation stabilizes.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/massive-microsoft-365-outage/",
-    "publishedAt": "2026-11-13T02:14:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-365-outage-hits-exchange-teams-sharepoin",
-      "article-253f54b2",
-      "253f54b2",
-      "microsoft-365-outage-hits-exchange-teams-sharepoin-7e4663",
-      "microsoft-365-outage-hits-exchange-teams-sharepoint"
-    ]
-  },
-  {
-    "slug": "red-hat-quay-unauth-image-access-cve-2026-123710-6b3a025e",
-    "title": "Red Hat Quay Unauth Image Access CVE-2026-123710",
-    "summary": "A flaw in Red Hat Quay lets unauthenticated users read container images, exposing enterprise registries. CVE-2026-123710 permits remote attackers to retrieve image metadata and content; no public exploit yet, but risk is high for exposed registries. Apply the latest patch immediately and enable image access controls as a temporary mitigation for now.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/critical-red-hat-quay-flaw-lets-attackers-read-and-over",
-    "publishedAt": "2026-11-13T02:08:31.000Z",
-    "cves": [
-      "CVE-2026-123710"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-quay-unauth-image-access-cve-2026-123710",
-      "article-6b3a025e",
-      "6b3a025e",
-      "red-hat-quay-unauth-image-access-cve-2026-123710-441b0f"
-    ]
-  },
-  {
-    "slug": "us-seizes-north-korean-hacking-tools-and-1-2b-cryp-0fbc0a01",
-    "title": "US Seizes North Korean Hacking Tools and $1.2B Crypto",
-    "summary": "US law enforcement seized North Korean hacking tools and $1.2B cryptocurrency. The seized assets include malware toolkits used for credential theft and lateral movement, indicating ongoing threat actor activity. The seizure disrupts the actors' operational capabilities; security teams should monitor for related tool signatures and update threat intelligence feeds to stay ahead.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/us-seizes-north-korean-hacking-infrastructure-1-2-billi",
-    "publishedAt": "2026-11-13T02:07:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-seizes-north-korean-hacking-tools-and-1-2b-cryp",
-      "article-0fbc0a01",
-      "0fbc0a01",
-      "us-seizes-north-korean-hacking-tools-and-1-2b-cryp-495370",
-      "us-seizes-north-korean-hacking-tools-and-1-2b-crypto"
     ]
   }
 ];
