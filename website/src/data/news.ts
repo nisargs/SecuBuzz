@@ -48,6 +48,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "nist-releases-post-quantum-crypto-guidance-daab2569",
+    "title": "NIST Releases Post-Quantum Crypto Guidance",
+    "summary": "NIST issued new guidance on post-quantum cryptography, outlining recommended algorithms and deployment considerations for enterprise systems. The advisory highlights potential compatibility issues with legacy protocols and stresses the need for updated key management practices, but does not disclose a specific vulnerability. Security teams should review the guidance, adjust telemetry, and apply any recommended configuration changes to future-proof cryptographic infrastructure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/nist-finalizes-post-quantum-cryptography-guidance-gao-o",
+    "publishedAt": "2026-11-18T01:13:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nist-releases-post-quantum-crypto-guidance",
+      "article-daab2569",
+      "daab2569",
+      "nist-releases-post-quantum-crypto-guidance-6881a2"
+    ]
+  },
+  {
     "slug": "barracuda-cloud-breach-via-artex-ai-a48b9890",
     "title": "Barracuda Cloud Breach via ARTEX AI",
     "summary": "Barracuda experienced a cloud breach facilitated by the ARTEX AI platform, exposing sensitive customer data. The attack leveraged unauthorized API access and credential reuse, allowing attackers to exfiltrate data without detection. Barracuda has issued a patch and recommends revoking compromised credentials, tightening API permissions, and monitoring logs to prevent further compromise.",
@@ -104,22 +122,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "optimizely-attack-distributes-malware-across-brand-ed797b0f",
-    "title": "Optimizely Attack Distributes Malware Across Brands",
-    "summary": "Attackers exploited Optimizely to inject malicious JavaScript into major websites, delivering cryptocurrency clippers, card skimmers, and iOS malware. The flaw allows remote code execution via compromised CDN scripts, enabling credential theft and data exfiltration; no CVE listed. Vendors should revoke compromised Optimizely tokens, update scripts, and monitor for injected payloads.",
+    "slug": "optimizely-flaw-used-to-inject-malware-into-178-to-ed0badd2",
+    "title": "Optimizely Flaw Used to Inject Malware Into 178 Top Websites",
+    "summary": "Attackers exploited an Optimizely vulnerability to inject data-stealing malware into at least 178 top websites, including BBC, CNN, Equifax, Ledger, and Zoom. Weak third-party content-source enforcement let malicious scripts reach visitors over 24 hours, delivering cryptocurrency clippers, card skimmers, and iOS malware. Operators should audit third-party scripts, enforce strict content-source controls, revoke compromised Optimizely tokens, and monitor for injected payloads.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Socket.dev",
     "sourceUrl": "https://socket.dev/blog/optimizely-supply-chain-attack",
     "publishedAt": "2026-11-18T00:17:00.921Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Krebs on Security",
+        "sourceUrl": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/"
+      }
+    ],
     "aliases": [
-      "optimizely-attack-distributes-malware-across-brand",
-      "article-ed797b0f",
-      "ed797b0f",
-      "optimizely-attack-distributes-malware-across-brand-1e1609",
-      "optimizely-attack-distributes-malware-across-brands"
+      "optimizely-flaw-used-to-inject-malware-into-178-to",
+      "article-ed0badd2",
+      "ed0badd2",
+      "optimizely-flaw-used-to-inject-malware-into-178-to-1e1609",
+      "optimizely-flaw-used-to-inject-malware-into-178-top-websites"
     ]
   },
   {
@@ -144,24 +167,29 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "java4shell-cve-2026-114938-critical-oracle-java-vu-cffb6ee3",
-    "title": "Java4Shell CVE-2026-114938 Critical Oracle Java Vulnerability",
-    "summary": "The Centre Cyber Security alerts that CVE-2026-114938, a heap-based buffer overflow in OpenJDK’s Base64 library, allows unauthenticated remote exploitation of Java runtimes. The flaw can be triggered by specially crafted Base64 input, potentially leading to arbitrary code execution on affected systems. Oracle and OpenJDK have issued patches; administrators should update Java to the latest version or apply vendor-provided mitigations immediately.",
+    "slug": "oracle-patches-critical-java4shell-openjdk-rce-vul-d07f1c07",
+    "title": "Oracle Patches Critical Java4Shell OpenJDK RCE Vulnerability",
+    "summary": "Oracle patched a critical OpenJDK flaw dubbed Java4Shell, tracked as CVE-2026-114938, affecting Java runtimes through the Base64 decoder. The heap-based buffer overflow permits unauthenticated remote code execution, can crash the Java Virtual Machine, and may expose sensitive memory contents. Administrators should apply Oracle and OpenJDK updates or vendor mitigations immediately to remediate affected servers.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "Canadian Centre for Cyber Security",
     "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938",
     "publishedAt": "2026-11-17T23:30:00.000Z",
     "cves": [
       "CVE-2026-114938"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/java4shell/"
+      }
+    ],
     "aliases": [
-      "java4shell-cve-2026-114938-critical-oracle-java-vu",
-      "article-cffb6ee3",
-      "cffb6ee3",
-      "java4shell-cve-2026-114938-critical-oracle-java-vu-2ee514",
-      "java4shell-cve-2026-114938-critical-oracle-java-vulnerabilit"
+      "oracle-patches-critical-java4shell-openjdk-rce-vul",
+      "article-d07f1c07",
+      "d07f1c07",
+      "oracle-patches-critical-java4shell-openjdk-rce-vul-2ee514",
+      "oracle-patches-critical-java4shell-openjdk-rce-vulnerability"
     ]
   },
   {
@@ -327,6 +355,25 @@ export const news: NewsBrief[] = [
       "article-39a6fc6c",
       "39a6fc6c",
       "docker-hub-images-leak-secrets-stolen-quickly-47e483"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100552-critical-red-hat-jboss-core-servi-57bf9353",
+    "title": "RHSA-2026:100552: Critical: Red Hat JBoss Core Services Apache HTTP Server 2.4.62 SP7 security update",
+    "summary": "Red Hat JBoss Core Services Apache HTTP Server 2.4.62 Service Pack 7 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100552",
+    "publishedAt": "2026-11-17T21:12:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100552-critical-red-hat-jboss-core-servi",
+      "article-57bf9353",
+      "57bf9353",
+      "rhsa-2026-100552-critical-red-hat-jboss-core-servi-2ee081",
+      "rhsa-2026-100552-critical-red-hat-jboss-core-services-apache"
     ]
   },
   {
@@ -750,6 +797,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ubuntu-patches-minimagick-command-injection-flaw-347df98b",
+    "title": "Ubuntu Patches MiniMagick Command Injection Flaw",
+    "summary": "Ubuntu published USN-9149-1 for a MiniMagick vulnerability affecting applications that process image file names or URLs. MiniMagick passed untrusted names and URLs directly to Kernel#open, allowing an attacker to execute arbitrary commands when an application opened a malicious image reference. Administrators should apply the updated MiniMagick packages from Ubuntu to remove the unsafe Kernel#open behavior.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9149-1",
+    "publishedAt": "2026-11-17T17:17:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-patches-minimagick-command-injection-flaw",
+      "article-347df98b",
+      "347df98b",
+      "ubuntu-patches-minimagick-command-injection-flaw-7e79b0"
+    ]
+  },
+  {
+    "slug": "ubuntu-fixes-mechanize-arbitrary-command-execution-eb0b0f73",
+    "title": "Ubuntu Fixes Mechanize Arbitrary Command Execution",
+    "summary": "Ubuntu issued USN-9148-1 for a Mechanize vulnerability in methods that open local files. Mechanize used Kernel#open with untrusted input as a local file name, enabling an attacker to execute arbitrary commands when an application passed malicious input to those methods. Security teams should install the updated Mechanize packages from Ubuntu to eliminate the unsafe file-opening path.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9148-1",
+    "publishedAt": "2026-11-17T17:17:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-fixes-mechanize-arbitrary-command-execution",
+      "article-eb0b0f73",
+      "eb0b0f73",
+      "ubuntu-fixes-mechanize-arbitrary-command-execution-7e79b4"
+    ]
+  },
+  {
     "slug": "hertz-fined-1-5m-for-california-privacy-violation-140d476d",
     "title": "Hertz Fined $1.5M for California Privacy Violation",
     "summary": "Hertz was fined $1.5 million by the California Privacy Protection Agency for violating state data privacy regulations, citing improper handling of consumer data. The action highlights gaps in Hertz’s data governance, notably insufficient consent management and audit controls across its fleet-management platform.",
@@ -765,6 +848,44 @@ export const news: NewsBrief[] = [
       "article-140d476d",
       "140d476d",
       "hertz-fined-1-5m-for-california-privacy-violation-191aa1"
+    ]
+  },
+  {
+    "slug": "mumble-murmur-server-adds-rate-limiting-to-prevent-68252d22",
+    "title": "Mumble Murmur server adds rate limiting to prevent DoS",
+    "summary": "Murmur server in Mumble lacked rate limiting for certain client messages, enabling remote attackers to cause denial-of-service hangs or crashes. The flaw is unauthenticated and can lead to service disruption and resource exhaustion on vulnerable hosts. The update adds configurable messageburst and messagelimit settings to enforce rate limiting and mitigate the DoS risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9143-1",
+    "publishedAt": "2026-11-17T17:11:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mumble-murmur-server-adds-rate-limiting-to-prevent",
+      "article-68252d22",
+      "68252d22",
+      "mumble-murmur-server-adds-rate-limiting-to-prevent-7e79c7",
+      "mumble-murmur-server-adds-rate-limiting-to-prevent-dos"
+    ]
+  },
+  {
+    "slug": "apache-xml-security-for-java-vulnerability-discove-4e67a7d2",
+    "title": "Apache XML Security for Java Vulnerability Discovered",
+    "summary": "Apache XML Security for Java incorrectly passed a configuration property during key element creation, exposing a flaw. The defect lets an attacker abuse an XPath Transform to extract sensitive data, but exploitation requires crafted XML input and is not confirmed in the wild. The update restricts file: and http: URI dereferencing unless the org.apache.xml.security.allowUnsafeResourceResolving property is set; patch promptly.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9142-1",
+    "publishedAt": "2026-11-17T17:10:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apache-xml-security-for-java-vulnerability-discove",
+      "article-4e67a7d2",
+      "4e67a7d2",
+      "apache-xml-security-for-java-vulnerability-discove-7e79cb",
+      "apache-xml-security-for-java-vulnerability-discovered"
     ]
   },
   {
@@ -9835,115 +9956,6 @@ export const news: NewsBrief[] = [
       "0fbc0a01",
       "us-seizes-north-korean-hacking-tools-and-1-2b-cryp-495370",
       "us-seizes-north-korean-hacking-tools-and-1-2b-crypto"
-    ]
-  },
-  {
-    "slug": "operation-endgame-seizes-235-servers-and-6m-logins-6ba94c3c",
-    "title": "Operation Endgame Seizes 235 Servers and 6M Logins",
-    "summary": "Operation Endgame seized 235 servers and 6 million stolen login credentials from a cybercriminal network. The seized servers hosted credential dumping tools and distributed phishing kits, indicating large-scale credential theft operations. Security teams should update credential monitoring, enforce multi-factor authentication, and to block known malicious IPs associated with the seized infrastructure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/operation-endgame-malware-takedown-turns-up-over-6-mill",
-    "publishedAt": "2026-11-13T02:07:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "operation-endgame-seizes-235-servers-and-6m-logins",
-      "article-6ba94c3c",
-      "6ba94c3c",
-      "operation-endgame-seizes-235-servers-and-6m-logins-7d2fab"
-    ]
-  },
-  {
-    "slug": "maersk-data-theft-via-acquired-system-flaw-9b123dc2",
-    "title": "Maersk Data Theft via Acquired System Flaw",
-    "summary": "Maersk suffered a data theft incident caused by a flaw in an acquired system component, allowing unauthorized extraction of sensitive information. The vulnerability permits attackers to bypass authentication controls and read confidential data, though no public exploit has been disclosed. Maersk should apply the vendor patch immediately and review access controls to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/maersk-confirms-data-theft-amid-5-million-extortion-att",
-    "publishedAt": "2026-11-13T02:00:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "maersk-data-theft-via-acquired-system-flaw",
-      "article-9b123dc2",
-      "9b123dc2",
-      "maersk-data-theft-via-acquired-system-flaw-7238cf"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-podcast-november-13-2026-0b03fa56",
-    "title": "ISC Stormcast Podcast - November 13, 2026",
-    "summary": "ISC Stormcast for November 13, 2026 delivers a concise weekly cybersecurity briefing. The episode reviews recent ransomware activity, supply-chain threats, cloud misconfigurations, and emerging attack vectors, offering actionable defensive recommendations. Listeners can access the full transcript, resource links, and download the podcast via the ISC website, ensuring up-to-date threat awareness.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33516",
-    "publishedAt": "2026-11-13T02:00:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-podcast-november-13-2026",
-      "article-0b03fa56",
-      "0b03fa56",
-      "isc-stormcast-podcast-november-13-2026-57dd81"
-    ]
-  },
-  {
-    "slug": "screenconnect-rce-enables-lateral-movement-66c43421",
-    "title": "ScreenConnect RCE Enables Lateral Movement",
-    "summary": "An RCE flaw in ScreenConnect allows attackers to execute arbitrary code on the host. The flaw arises from insufficient input validation in the remote command interface, enabling code execution that can be used for lateral movement; no public PoC exists. ScreenConnect has released a patch; administrators should update immediately and enforce network segmentation to limit lateral spread.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/hackers-deploy-malware-in-fresh-screenconnect-campaign",
-    "publishedAt": "2026-11-13T01:58:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "screenconnect-rce-enables-lateral-movement",
-      "article-66c43421",
-      "66c43421",
-      "screenconnect-rce-enables-lateral-movement-5bbf8a"
-    ]
-  },
-  {
-    "slug": "credential-stealer-campaign-targets-60-000-github-b7995a5f",
-    "title": "Credential Stealer Campaign Targets 60,000 GitHub Repositories",
-    "summary": "A malicious campaign is actively targeting approximately 60,000 GitHub repositories using a credential stealer payload. The attack mechanism relies on telemetry flaws to extract sensitive developer authentication credentials and exposed project tokens. Security teams must hunt for active indicators using custom detection rules, review telemetry logs, and patch impacted systems immediately.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/attacker-targets-60-000-github-repositories-in-credenti",
-    "publishedAt": "2026-11-13T01:58:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "credential-stealer-campaign-targets-60-000-github",
-      "article-b7995a5f",
-      "b7995a5f",
-      "credential-stealer-campaign-targets-60-000-github-1e4cb3",
-      "credential-stealer-campaign-targets-60-000-github-repositori"
-    ]
-  },
-  {
-    "slug": "citrix-netscaler-12-flaws-auth-bypass-and-dos-560013e3",
-    "title": "Citrix NetScaler 12 Flaws: Auth Bypass and DoS",
-    "summary": "Citrix NetScaler suffers 12 critical flaws, including authentication bypass and denial-of-service. The vulnerabilities stem from improper input validation and flawed session handling, allowing attackers to gain unauthorized access and disrupt service; no public PoC is reported yet. Citrix has issued a patch; administrators should apply it promptly and verify authentication controls.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/citrix-patches-12-netscaler-and-secure-access-client-fl",
-    "publishedAt": "2026-11-13T01:56:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "citrix-netscaler-12-flaws-auth-bypass-and-dos",
-      "article-560013e3",
-      "560013e3",
-      "citrix-netscaler-12-flaws-auth-bypass-and-dos-5cdbf9"
     ]
   }
 ];

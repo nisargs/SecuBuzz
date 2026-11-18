@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 02:49:40 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 03:47:32 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>NSANet Classified Network Experiences Operational Outage</title>
@@ -23,6 +23,15 @@
       <description><![CDATA[The SANS Internet Storm Center released its weekly Stormcast for Wednesday, November 18, 2026, summarizing recent cyber events. The broadcast covers emerging threats, vulnerability trends, and defensive recommendations, providing analysts with actionable intelligence. Listeners can access the podcast via the ISC website or RSS feed, with no security patches or vulnerabilities disclosed.]]></description>
       <pubDate>Wed, 18 Nov 2026 02:00:03 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33528">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>NIST Releases Post-Quantum Crypto Guidance</title>
+      <link>https://secubuzz.com/news/nist-releases-post-quantum-crypto-guidance-daab2569</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nist-releases-post-quantum-crypto-guidance-daab2569</guid>
+      <description><![CDATA[NIST issued new guidance on post-quantum cryptography, outlining recommended algorithms and deployment considerations for enterprise systems. The advisory highlights potential compatibility issues with legacy protocols and stresses the need for updated key management practices, but does not disclose a specific vulnerability. Security teams should review the guidance, adjust telemetry, and apply any recommended configuration changes to future-proof cryptographic infrastructure.]]></description>
+      <pubDate>Wed, 18 Nov 2026 01:13:34 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/nist-finalizes-post-quantum-cryptography-guidance-gao-o">CyberNews AI</source>
       <category>General</category>
     </item>
     <item>
@@ -53,10 +62,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Optimizely Attack Distributes Malware Across Brands</title>
-      <link>https://secubuzz.com/news/optimizely-attack-distributes-malware-across-brand-ed797b0f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/optimizely-attack-distributes-malware-across-brand-ed797b0f</guid>
-      <description><![CDATA[Attackers exploited Optimizely to inject malicious JavaScript into major websites, delivering cryptocurrency clippers, card skimmers, and iOS malware. The flaw allows remote code execution via compromised CDN scripts, enabling credential theft and data exfiltration; no CVE listed. Vendors should revoke compromised Optimizely tokens, update scripts, and monitor for injected payloads.]]></description>
+      <title>Optimizely Flaw Used to Inject Malware Into 178 Top Websites</title>
+      <link>https://secubuzz.com/news/optimizely-flaw-used-to-inject-malware-into-178-to-ed0badd2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/optimizely-flaw-used-to-inject-malware-into-178-to-ed0badd2</guid>
+      <description><![CDATA[Attackers exploited an Optimizely vulnerability to inject data-stealing malware into at least 178 top websites, including BBC, CNN, Equifax, Ledger, and Zoom. Weak third-party content-source enforcement let malicious scripts reach visitors over 24 hours, delivering cryptocurrency clippers, card skimmers, and iOS malware. Operators should audit third-party scripts, enforce strict content-source controls, revoke compromised Optimizely tokens, and monitor for injected payloads.]]></description>
       <pubDate>Wed, 18 Nov 2026 00:17:00 GMT</pubDate>
       <source url="https://socket.dev/blog/optimizely-supply-chain-attack">Socket.dev</source>
       <category>Vulnerability</category>
@@ -71,10 +80,10 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>Java4Shell CVE-2026-114938 Critical Oracle Java Vulnerability</title>
-      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-critical-oracle-java-vu-cffb6ee3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-critical-oracle-java-vu-cffb6ee3</guid>
-      <description><![CDATA[The Centre Cyber Security alerts that CVE-2026-114938, a heap-based buffer overflow in OpenJDK’s Base64 library, allows unauthenticated remote exploitation of Java runtimes. The flaw can be triggered by specially crafted Base64 input, potentially leading to arbitrary code execution on affected systems. Oracle and OpenJDK have issued patches; administrators should update Java to the latest version or apply vendor-provided mitigations immediately.]]></description>
+      <title>Oracle Patches Critical Java4Shell OpenJDK RCE Vulnerability</title>
+      <link>https://secubuzz.com/news/oracle-patches-critical-java4shell-openjdk-rce-vul-d07f1c07</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/oracle-patches-critical-java4shell-openjdk-rce-vul-d07f1c07</guid>
+      <description><![CDATA[Oracle patched a critical OpenJDK flaw dubbed Java4Shell, tracked as CVE-2026-114938, affecting Java runtimes through the Base64 decoder. The heap-based buffer overflow permits unauthenticated remote code execution, can crash the Java Virtual Machine, and may expose sensitive memory contents. Administrators should apply Oracle and OpenJDK updates or vendor mitigations immediately to remediate affected servers.]]></description>
       <pubDate>Tue, 17 Nov 2026 23:30:00 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938">Canadian Centre for Cyber Security</source>
       <category>CVE</category>
@@ -149,6 +158,15 @@
       <description><![CDATA[Credentials and access secrets exposed in public Docker Hub images are extracted and exploited by attackers within eight seconds of publication. The flaw stems from improper handling of sensitive data in container images, letting attackers harvest secrets and compromise services. Publishers should remove secrets from images, enforce secret scanning, and apply least-privilege policies; teams must monitor registries for exposed credentials.]]></description>
       <pubDate>Tue, 17 Nov 2026 21:27:17 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100552: Critical: Red Hat JBoss Core Services Apache HTTP Server 2.4.62 SP7 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100552-critical-red-hat-jboss-core-servi-57bf9353</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100552-critical-red-hat-jboss-core-servi-57bf9353</guid>
+      <description><![CDATA[Red Hat JBoss Core Services Apache HTTP Server 2.4.62 Service Pack 7 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 17 Nov 2026 21:12:42 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100552">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -350,6 +368,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>Ubuntu Patches MiniMagick Command Injection Flaw</title>
+      <link>https://secubuzz.com/news/ubuntu-patches-minimagick-command-injection-flaw-347df98b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-minimagick-command-injection-flaw-347df98b</guid>
+      <description><![CDATA[Ubuntu published USN-9149-1 for a MiniMagick vulnerability affecting applications that process image file names or URLs. MiniMagick passed untrusted names and URLs directly to Kernel#open, allowing an attacker to execute arbitrary commands when an application opened a malicious image reference. Administrators should apply the updated MiniMagick packages from Ubuntu to remove the unsafe Kernel#open behavior.]]></description>
+      <pubDate>Tue, 17 Nov 2026 17:17:34 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9149-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ubuntu Fixes Mechanize Arbitrary Command Execution</title>
+      <link>https://secubuzz.com/news/ubuntu-fixes-mechanize-arbitrary-command-execution-eb0b0f73</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-fixes-mechanize-arbitrary-command-execution-eb0b0f73</guid>
+      <description><![CDATA[Ubuntu issued USN-9148-1 for a Mechanize vulnerability in methods that open local files. Mechanize used Kernel#open with untrusted input as a local file name, enabling an attacker to execute arbitrary commands when an application passed malicious input to those methods. Security teams should install the updated Mechanize packages from Ubuntu to eliminate the unsafe file-opening path.]]></description>
+      <pubDate>Tue, 17 Nov 2026 17:17:28 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9148-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Hertz Fined $1.5M for California Privacy Violation</title>
       <link>https://secubuzz.com/news/hertz-fined-1-5m-for-california-privacy-violation-140d476d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hertz-fined-1-5m-for-california-privacy-violation-140d476d</guid>
@@ -357,6 +393,24 @@
       <pubDate>Tue, 17 Nov 2026 17:13:00 GMT</pubDate>
       <source url="https://therecord.media/california-fines-hertz-state-data-privacy-law">The Record</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Mumble Murmur server adds rate limiting to prevent DoS</title>
+      <link>https://secubuzz.com/news/mumble-murmur-server-adds-rate-limiting-to-prevent-68252d22</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mumble-murmur-server-adds-rate-limiting-to-prevent-68252d22</guid>
+      <description><![CDATA[Murmur server in Mumble lacked rate limiting for certain client messages, enabling remote attackers to cause denial-of-service hangs or crashes. The flaw is unauthenticated and can lead to service disruption and resource exhaustion on vulnerable hosts. The update adds configurable messageburst and messagelimit settings to enforce rate limiting and mitigate the DoS risk.]]></description>
+      <pubDate>Tue, 17 Nov 2026 17:11:46 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9143-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Apache XML Security for Java Vulnerability Discovered</title>
+      <link>https://secubuzz.com/news/apache-xml-security-for-java-vulnerability-discove-4e67a7d2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-xml-security-for-java-vulnerability-discove-4e67a7d2</guid>
+      <description><![CDATA[Apache XML Security for Java incorrectly passed a configuration property during key element creation, exposing a flaw. The defect lets an attacker abuse an XPath Transform to extract sensitive data, but exploitation requires crafted XML input and is not confirmed in the wild. The update restricts file: and http: URI dereferencing unless the org.apache.xml.security.allowUnsafeResourceResolving property is set; patch promptly.]]></description>
+      <pubDate>Tue, 17 Nov 2026 17:10:33 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9142-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>MSSP Boosts SOC Capacity 25% with Threat Intelligence</title>
@@ -402,60 +456,6 @@
       <pubDate>Tue, 17 Nov 2026 16:58:09 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9133-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>TheMailer Enables AI-Powered Phishing Campaigns</title>
-      <link>https://secubuzz.com/news/themailer-enables-ai-powered-phishing-campaigns-db224c53</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/themailer-enables-ai-powered-phishing-campaigns-db224c53</guid>
-      <description><![CDATA[Varonis Threat Labs uncovered TheMailer, a phishing platform that uses Claude and ChatGPT APIs to automate lure creation, template tweaking, delivery testing, and reply handling. Operators supply their own API keys, enabling rapid, AI-driven social engineering attacks against targeted email users. Security teams should monitor outbound email for anomalous patterns, enforce strict API key policies, and deploy AI-based email filtering.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:54:45 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/themailer-ai-phishing-platform/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>GitLab Vulnerabilities Prompt Patch Release</title>
-      <link>https://secubuzz.com/news/gitlab-vulnerabilities-prompt-patch-release-5a2ec8a9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-vulnerabilities-prompt-patch-release-5a2ec8a9</guid>
-      <description><![CDATA[GitLab disclosed multiple vulnerabilities affecting versions prior to 19.3.9, 19.4.8, and 19.5.6 that could allow attackers to compromise repository integrity or execute unauthorized code. The advisory does not list specific CVE identifiers but recommends applying the latest patch releases to mitigate potential exploitation. Administrators should update to GitLab 19.5.6, 19.4.8, or 19.3.9 and review release notes for additional security guidance.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:42:08 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/gitlab-security-advisory-av26-1168">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>NSA Net Faces Unspecified Disruptions, Technicians Restore Network</title>
-      <link>https://secubuzz.com/news/nsa-net-faces-unspecified-disruptions-technicians-b6d9e8a6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nsa-net-faces-unspecified-disruptions-technicians-b6d9e8a6</guid>
-      <description><![CDATA[NSA’s classified internal network, NSA Net, has suffered unspecified disruptions, leading the agency to schedule staggered arrivals at Fort Meade for restoration. The outage temporarily impairs connectivity within the network, potentially affecting classified communications and operational readiness. Technicians are diagnosing the root cause and working to restore full functionality, with no public disclosure of the technical details.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:21:00 GMT</pubDate>
-      <source url="https://therecord.media/nsa-net-disruptions">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Zyxel Firmware Vulnerabilities Expose Command Injection</title>
-      <link>https://secubuzz.com/news/zyxel-firmware-vulnerabilities-expose-command-inje-60704b0c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zyxel-firmware-vulnerabilities-expose-command-inje-60704b0c</guid>
-      <description><![CDATA[Zyxel disclosed out-of-bounds write and post-authentication command injection flaws in DX3300-T0, DX3301-T0, and EX3301-T0 firmware versions up to 5.50(ABVY.8.3)C0. The vulnerabilities allow authenticated attackers to execute arbitrary commands on affected DSL/Ethernet CPE, Fiber ONTs, and Wireless Extenders, potentially compromising network control.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:20:00 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/zyxel-security-advisory-av26-1167">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical Java Vulnerability CVE-2026-114938 Requires Immediate Patching</title>
-      <link>https://secubuzz.com/news/critical-java-vulnerability-cve-2026-114938-requir-77de3059</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-java-vulnerability-cve-2026-114938-requir-77de3059</guid>
-      <description><![CDATA[Oracle's Java 17 vulnerability CVE-2026-114938, dubbed Java4Shell, allows unauthenticated remote code execution via a memory-corruption flaw in the Base64 decoder of the HotSpot JVM. The flaw can compromise any system running OpenJDK 17.0.6 or newer, enabling attackers to execute arbitrary code. Immediate patching of all affected Java SE releases is mandatory to mitigate the risk.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:11:10 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/java-17-rce-vulnerability/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Patch Addresses Windows Media Foundation Privilege Escalation</title>
-      <link>https://secubuzz.com/news/microsoft-patch-addresses-windows-media-foundation-ae72c982</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-addresses-windows-media-foundation-ae72c982</guid>
-      <description><![CDATA[Microsoft disclosed CVE-2026-70278, an elevation of privilege flaw in Windows Media Foundation affecting Windows 10/11 via media playback. The flaw lets local users gain higher privileges by manipulating media stream parsing, with a CVSS score of 7.5, and no public exploit reported. Microsoft released a patch in the 27.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278">Microsoft MSRC</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
