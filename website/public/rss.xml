@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 07:45:54 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 08:44:32 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Deutsche Telekom IoT CEO Discusses 20-Year Device Security</title>
@@ -197,13 +197,13 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>Java4Shell CVE-2026-114938 Enables Pre-Auth RCE; Oracle Issues Critical Patch</title>
-      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-enables-pre-auth-rce-or-99e7f41c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-enables-pre-auth-rce-or-99e7f41c</guid>
-      <description><![CDATA[Java4Shell (CVE-2026-114938) is a critical flaw in Java 17+ that allows unauthenticated remote code execution on applications such as Jira, Jenkins, and Keycloak. The vulnerability exploits a heap-based buffer overflow in the Base64 decoder, enabling attackers to run arbitrary code on AVX-512 VBMI servers. Oracle and OpenJDK have released critical patches; administrators should update immediately to mitigate the risk.]]></description>
+      <title>Java4Shell CVE-2026-114938 Enables Remote Code Execution in Jira, Jenkins, Keycloak</title>
+      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-enables-remote-code-exe-69aba8fc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-enables-remote-code-exe-69aba8fc</guid>
+      <description><![CDATA[Java4Shell (CVE-2026-114938) is a critical flaw in Java 17+ that permits unauthenticated remote code execution on Jira, Jenkins, and Keycloak. It exploits a heap-based buffer overflow in the Base64 decoder, letting attackers run arbitrary code on affected servers. Oracle and OpenJDK have issued critical patches; admins should update immediately and limit exposed management interfaces.]]></description>
       <pubDate>Tue, 17 Nov 2026 23:30:00 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>Microsoft Agent-Framework PyPI Package Compromised</title>

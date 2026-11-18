@@ -411,10 +411,10 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "java4shell-cve-2026-114938-enables-pre-auth-rce-or-99e7f41c",
-    "title": "Java4Shell CVE-2026-114938 Enables Pre-Auth RCE; Oracle Issues Critical Patch",
-    "summary": "Java4Shell (CVE-2026-114938) is a critical flaw in Java 17+ that allows unauthenticated remote code execution on applications such as Jira, Jenkins, and Keycloak. The vulnerability exploits a heap-based buffer overflow in the Base64 decoder, enabling attackers to run arbitrary code on AVX-512 VBMI servers. Oracle and OpenJDK have released critical patches; administrators should update immediately to mitigate the risk.",
-    "category": "Vulnerability",
+    "slug": "java4shell-cve-2026-114938-enables-remote-code-exe-69aba8fc",
+    "title": "Java4Shell CVE-2026-114938 Enables Remote Code Execution in Jira, Jenkins, Keycloak",
+    "summary": "Java4Shell (CVE-2026-114938) is a critical flaw in Java 17+ that permits unauthenticated remote code execution on Jira, Jenkins, and Keycloak. It exploits a heap-based buffer overflow in the Base64 decoder, letting attackers run arbitrary code on affected servers. Oracle and OpenJDK have issued critical patches; admins should update immediately and limit exposed management interfaces.",
+    "category": "CVE",
     "severity": "CRITICAL",
     "source": "Canadian Centre for Cyber Security",
     "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938",
@@ -430,14 +430,18 @@ export const news: NewsBrief[] = [
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/"
       }
     ],
     "aliases": [
-      "java4shell-cve-2026-114938-enables-pre-auth-rce-or",
-      "article-99e7f41c",
-      "99e7f41c",
-      "java4shell-cve-2026-114938-enables-pre-auth-rce-or-2ee514",
-      "java4shell-cve-2026-114938-enables-pre-auth-rce-oracle-issue"
+      "java4shell-cve-2026-114938-enables-remote-code-exe",
+      "article-69aba8fc",
+      "69aba8fc",
+      "java4shell-cve-2026-114938-enables-remote-code-exe-2ee514",
+      "java4shell-cve-2026-114938-enables-remote-code-execution-in-"
     ]
   },
   {
@@ -1886,6 +1890,25 @@ export const news: NewsBrief[] = [
       "edd87ee6",
       "appgate-optimizer-automates-least-privilege-access-42a97c",
       "appgate-optimizer-automates-least-privilege-access-reviews"
+    ]
+  },
+  {
+    "slug": "huntress-uncovers-token-replay-campaign-via-defend-04656f53",
+    "title": "Huntress Uncovers Token-Replay Campaign via Defender Data",
+    "summary": "Huntress’s Agentic Security Platform detected a token-replay campaign that compromised 97 accounts across 79 organizations via Microsoft Defender data. Attackers replayed stolen tokens to gain unauthorized access, enabling lateral movement and data exfiltration within tenant environments. Teams should enforce MFA, rotate compromised tokens, and apply latest Defender updates to block replay attacks.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/huntress-response-for-microsoft-defender-incidents-across-endpoints-and-microsoft-365",
+    "publishedAt": "2026-11-17T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "huntress-uncovers-token-replay-campaign-via-defend",
+      "article-04656f53",
+      "04656f53",
+      "huntress-uncovers-token-replay-campaign-via-defend-4c1e08",
+      "huntress-uncovers-token-replay-campaign-via-defender-data"
     ]
   },
   {
@@ -9903,26 +9926,6 @@ export const news: NewsBrief[] = [
       "0961fd23",
       "linux-kernel-ksmbd-flaw-exposes-sensitive-data-rem-77f338",
       "linux-kernel-ksmbd-flaw-exposes-sensitive-data-remotely"
-    ]
-  },
-  {
-    "slug": "zdi-identifies-llama-cpp-gguf-buffer-overflow-rce-6dd08fe5",
-    "title": "ZDI Identifies llama.cpp GGUF Buffer Overflow RCE",
-    "summary": "ZDI reports a heap-based buffer overflow in llama.cpp’s GGUF file parser, allowing remote code execution. The flaw requires user interaction, such as visiting a malicious page or opening a malicious file, and carries a CVSS score of 7.8. The vulnerability is assigned CVE-2026-126975; administrators should apply the vendor patch or mitigate by restricting file access.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-976/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126975"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-identifies-llama-cpp-gguf-buffer-overflow-rce",
-      "article-6dd08fe5",
-      "6dd08fe5",
-      "zdi-identifies-llama-cpp-gguf-buffer-overflow-rce-6f3d22"
     ]
   }
 ];
