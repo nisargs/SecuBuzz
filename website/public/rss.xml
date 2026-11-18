@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 01:20:36 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 02:49:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>NSANet Classified Network Experiences Operational Outage</title>
+      <link>https://secubuzz.com/news/nsanet-classified-network-experiences-operational-186d0f4f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nsanet-classified-network-experiences-operational-186d0f4f</guid>
+      <description><![CDATA[A classified internal network used by NSA employees, NSANet, suffered an operational outage. The outage disrupted communications across the agency, though no evidence of a security breach or vulnerability was reported. Defense officials confirmed the issue and are working to restore full functionality; no patch or mitigation is required at this time.]]></description>
+      <pubDate>Wed, 18 Nov 2026 02:15:07 GMT</pubDate>
+      <source url="https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ISC Stormcast Podcast Released Nov 18</title>
+      <link>https://secubuzz.com/news/isc-stormcast-podcast-released-nov-18-d63e9f8c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-podcast-released-nov-18-d63e9f8c</guid>
+      <description><![CDATA[The SANS Internet Storm Center released its weekly Stormcast for Wednesday, November 18, 2026, summarizing recent cyber events. The broadcast covers emerging threats, vulnerability trends, and defensive recommendations, providing analysts with actionable intelligence. Listeners can access the podcast via the ISC website or RSS feed, with no security patches or vulnerabilities disclosed.]]></description>
+      <pubDate>Wed, 18 Nov 2026 02:00:03 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33528">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Barracuda Cloud Breach via ARTEX AI</title>
       <link>https://secubuzz.com/news/barracuda-cloud-breach-via-artex-ai-a48b9890</link>
@@ -15,6 +33,24 @@
       <pubDate>Wed, 18 Nov 2026 01:11:40 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/barracuda-links-cloud-breach-to-artex-ai-powered-cybera">CyberNews AI</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Charges Dropped Against Peraire-Bueno Brothers in Ethereum Heist</title>
+      <link>https://secubuzz.com/news/charges-dropped-against-peraire-bueno-brothers-in-bca700e2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/charges-dropped-against-peraire-bueno-brothers-in-bca700e2</guid>
+      <description><![CDATA[Charges against the Peraire-Bueno brothers in an Ethereum heist case have been dropped, according to a law enforcement intelligence update. The advisory points to court findings, threat actor profiles, and defensive controls but provides no technical exploit details or confirmed victim impact. Security teams should track the legal outcome and use the case materials to refine Ethereum-related monitoring and controls.]]></description>
+      <pubDate>Wed, 18 Nov 2026 01:10:47 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/court-clears-brothers-of-25-million-ethereum-crypto-hei">CyberNews AI</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Optimizely Signup Flaw Hits Salesforce, Zoom via Malicious JS</title>
+      <link>https://secubuzz.com/news/optimizely-signup-flaw-hits-salesforce-zoom-via-ma-49ec9b40</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/optimizely-signup-flaw-hits-salesforce-zoom-via-ma-49ec9b40</guid>
+      <description><![CDATA[A flaw in Optimizely's signup flow is linked to malicious JavaScript affecting Salesforce and Zoom, according to a CyberNews AI alert. The advisory provides no CVE identifier or root-cause specifics, but frames the issue as critical and calls for telemetry review and detection-rule hunting. Security teams should review root-cause telemetry, deploy relevant detection rules, and apply the vendor patch promptly.]]></description>
+      <pubDate>Wed, 18 Nov 2026 01:09:11 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/optimizely-hack-infected-cnn-fox-news-bbc-salesforce-si">CyberNews AI</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Optimizely Attack Distributes Malware Across Brands</title>
@@ -42,6 +78,15 @@
       <pubDate>Tue, 17 Nov 2026 23:30:00 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938">Canadian Centre for Cyber Security</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Agent-Framework PyPI Package Compromised</title>
+      <link>https://secubuzz.com/news/microsoft-agent-framework-pypi-package-compromised-03a53c23</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-agent-framework-pypi-package-compromised-03a53c23</guid>
+      <description><![CDATA[Microsoft’s agent-framework PyPI package, versions 1.26.1 and 1.26.2, was compromised. The malicious package leveraged .pth startup hooks to exfiltrate Azure, GitHub Actions, and CI/CD credentials, enabling attackers to harvest authentication tokens. Users should uninstall the affected versions, install the latest secure release, and audit their CI/CD pipelines for unauthorized credential usage.]]></description>
+      <pubDate>Tue, 17 Nov 2026 23:05:25 GMT</pubDate>
+      <source url="https://socket.dev/blog/agent-framework-pypi-package-compromised-with-credential-stealer">Socket.dev</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Critical Java4Shell flaw allows RCE attacks on major Java applications</title>
@@ -80,10 +125,10 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>Defending Against Java4Shell: Vulnerability in OpenJDK Enables RCE on AVX-512 CPUs</title>
-      <link>https://secubuzz.com/news/defending-against-java4shell-vulnerability-in-open-db46b254</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/defending-against-java4shell-vulnerability-in-open-db46b254</guid>
-      <description><![CDATA[On November 17, 2026, security researchers at Calif disclosed Java4Shell (CVE-2026-114938, CVSS 4.0: 9.2 Critical), a memory-corruption vulnerability in OpenJDK’s Base64 decoder that allows malformed Base64 input to trigger remote code execution (RCE).]]></description>
+      <title>Java4Shell Critical Flaw in OpenJDK Enables Unauthenticated Remote Code Execution</title>
+      <link>https://secubuzz.com/news/java4shell-critical-flaw-in-openjdk-enables-unauth-eb1823b5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-critical-flaw-in-openjdk-enables-unauth-eb1823b5</guid>
+      <description><![CDATA[Security researchers disclosed Java4Shell (CVE-2026-114938), a critical vulnerability in OpenJDK Java, on November 17, 2026. The flaw triggers memory corruption through malformed input, enabling unauthenticated remote code execution with a CVSS 9.2 score. Organizations should apply the vendor's patch immediately and update to the latest OpenJDK release to mitigate exploitation risk.]]></description>
       <pubDate>Tue, 17 Nov 2026 22:19:19 GMT</pubDate>
       <source url="https://www.sentinelone.com/blog/java4shell-vulnerability-in-openjdk-enables-rce-on-avx-512-cpus/">SentinelOne</source>
       <category>CVE</category>
@@ -287,6 +332,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>apng2gif Vulnerabilities Allow APNG Overflows</title>
+      <link>https://secubuzz.com/news/apng2gif-vulnerabilities-allow-apng-overflows-7691e728</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apng2gif-vulnerabilities-allow-apng-overflows-7691e728</guid>
+      <description><![CDATA[The apng2gif utility contains multiple CVEs (CVE-2017-6960, CVE-2017-6961) that allow integer overflows and heap-based buffer over-reads when processing crafted APNG files. An attacker could exploit these flaws to cause denial of service or potentially read sensitive memory, though no public exploit is documented. Users should update to the latest apng2gif release or apply the vendor’s patch to mitigate the risk.]]></description>
+      <pubDate>Tue, 17 Nov 2026 17:45:22 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9132-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Malicious iOS Scripts Now Behind 1 in 5 Advertiser Suspensions as Coruna Exploit Kit Hides Inside Ad Landing Pages</title>
       <link>https://secubuzz.com/news/malicious-ios-scripts-now-behind-1-in-5-advertiser-8046f973</link>
       <guid isPermaLink="true">https://secubuzz.com/news/malicious-ios-scripts-now-behind-1-in-5-advertiser-8046f973</guid>
@@ -314,6 +368,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>FlightGear Sandbox Bypass Allows Arbitrary File Writes</title>
+      <link>https://secubuzz.com/news/flightgear-sandbox-bypass-allows-arbitrary-file-wr-1f314e52</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/flightgear-sandbox-bypass-allows-arbitrary-file-wr-1f314e52</guid>
+      <description><![CDATA[FlightGear's Nasal script sandbox fails to restrict file paths, allowing attackers to bypass containment and write arbitrary files with user privileges. The flaw stems from improper sandbox enforcement on filesystem operations, enabling local privilege escalation within the user context. Ubuntu has issued USN-9137-1 patches; administrators should immediately upgrade affected FlightGear packages.]]></description>
+      <pubDate>Tue, 17 Nov 2026 17:05:07 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9137-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Chrome Extended Stable Update Addresses Critical CVEs</title>
       <link>https://secubuzz.com/news/chrome-extended-stable-update-addresses-critical-c-6d292483</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chrome-extended-stable-update-addresses-critical-c-6d292483</guid>
@@ -321,6 +384,24 @@
       <pubDate>Tue, 17 Nov 2026 17:01:33 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01061812727.html">Google Chrome Releases</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Binwalk Path Traversal Enables Arbitrary File Write</title>
+      <link>https://secubuzz.com/news/binwalk-path-traversal-enables-arbitrary-file-writ-adc7226b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/binwalk-path-traversal-enables-arbitrary-file-writ-adc7226b</guid>
+      <description><![CDATA[Ubuntu reports a flaw in Binwalk's PFS extractor where file paths are unsanitized, enabling a crafted PFS image to write arbitrary files and execute code. An attacker could trick a user or automated system into extracting a malicious PFS file, potentially compromising the host. Updating Binwalk to the patched version or applying the security update mitigates the risk.]]></description>
+      <pubDate>Tue, 17 Nov 2026 16:58:20 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9134-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Astropy Vulnerability Enables Potential Arbitrary Code Execution</title>
+      <link>https://secubuzz.com/news/astropy-vulnerability-enables-potential-arbitrary-68cee531</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/astropy-vulnerability-enables-potential-arbitrary-68cee531</guid>
+      <description><![CDATA[Ubuntu reports a flaw in Astropy where the savelayout argument is not validated, allowing untrusted input to trigger arbitrary code execution during graph saving. The vulnerability could enable attackers to run malicious code on systems that import Astropy data, potentially compromising the host. Ubuntu advises updating to the patched Astropy package or applying the security update to mitigate the risk.]]></description>
+      <pubDate>Tue, 17 Nov 2026 16:58:09 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9133-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>TheMailer Enables AI-Powered Phishing Campaigns</title>
@@ -375,87 +456,6 @@
       <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278">Microsoft MSRC</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Discloses Windows Setup Elevation Vulnerability CVE-2026-119914</title>
-      <link>https://secubuzz.com/news/microsoft-discloses-windows-setup-elevation-vulner-9d04e0b1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-discloses-windows-setup-elevation-vulner-9d04e0b1</guid>
-      <description><![CDATA[Microsoft disclosed CVE-2026-119914, an elevation of privilege flaw in Windows Setup and Deployment. The flaw allows local users to gain higher privileges during installation, but no public exploit or CVSS score is provided. Microsoft issued an informational update; users should apply the latest Windows updates when available to mitigate potential risk.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft IIS Remote Code Execution Vulnerability CVE-2026-119961</title>
-      <link>https://secubuzz.com/news/microsoft-iis-remote-code-execution-vulnerability-71c899f5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-iis-remote-code-execution-vulnerability-71c899f5</guid>
-      <description><![CDATA[CVE-2026-119961 is a remote code execution flaw in Microsoft Windows IIS that allows attackers to run code via crafted HTTP requests. The flaw stems from improper input validation in the request parser, enabling unauthenticated exploitation with a CVSS score of 9.0, though no wild attacks have been seen. Microsoft issued an update; admins should apply the latest IIS patch.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Office Word Remote Code Execution CVE-2026-108440</title>
-      <link>https://secubuzz.com/news/microsoft-office-word-remote-code-execution-cve-20-d4bda852</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-office-word-remote-code-execution-cve-20-d4bda852</guid>
-      <description><![CDATA[CVE-2026-108440 is a remote code execution flaw in Office Word that lets attackers run code via malicious documents. The flaw stems from unsafe handling of embedded content, allowing unauthenticated exploitation with a CVSS score of 9.2, no attacks reported. Microsoft released an informational update; users should install the latest Office patch to mitigate the risk.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108440">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Office Remote Code Execution CVE-2026-78524</title>
-      <link>https://secubuzz.com/news/microsoft-office-remote-code-execution-cve-2026-78-29961e6e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-office-remote-code-execution-cve-2026-78-29961e6e</guid>
-      <description><![CDATA[CVE-2026-78524 is a remote code execution vulnerability in Microsoft Office that allows attackers to run arbitrary code through crafted files. The defect stems from improper validation of document metadata, enabling exploitation with a CVSS score of 8.9, no incidents reported. Microsoft issued an informational update; administrators should apply the latest Office patch to close the vulnerability.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Windows PowerShell RCE Vulnerability CVE-2026-40400</title>
-      <link>https://secubuzz.com/news/windows-powershell-rce-vulnerability-cve-2026-4040-f13c866b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-powershell-rce-vulnerability-cve-2026-4040-f13c866b</guid>
-      <description><![CDATA[A remote code execution flaw in Windows PowerShell, identified as CVE-2026-40400, was disclosed by Microsoft. The vulnerability allows attackers to execute arbitrary commands on affected systems via crafted PowerShell input, potentially compromising system integrity. Microsoft has issued a patch; administrators should update PowerShell to the latest version and apply the vendor’s security update to mitigate the risk.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Flipper Devices Unveils Flipper One Linux Multi-Tool</title>
-      <link>https://secubuzz.com/news/flipper-devices-unveils-flipper-one-linux-multi-to-1580310a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/flipper-devices-unveils-flipper-one-linux-multi-to-1580310a</guid>
-      <description><![CDATA[Flipper Devices announced the Flipper One, a $399 Linux-based computer and networking multi-tool, as part of a crowdfunding campaign. The device builds on the Flipper Zero platform, offering expanded hardware interfaces and a full Linux OS for penetration testing and network analysis. Users can support the project through the campaign, and the company will provide firmware updates and documentation post-release.]]></description>
-      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Atlassian security advisory (AV26-1166)</title>
-      <link>https://secubuzz.com/news/atlassian-security-advisory-av26-1166-07e2f46c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-security-advisory-av26-1166-07e2f46c</guid>
-      <description><![CDATA[Serial number: AV26-1166 Date: November 17, 2026 As of November 17, 2026, Atlassian is affected by a vulnerability in the following products: Jira Service Management Data Center Version 10.3.27 and prior Version 11.3.13 and prior Jira Service Management Server Versions 5.12.16 to 5.12.42 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.]]></description>
-      <pubDate>Tue, 17 Nov 2026 15:22:04 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/atlassian-security-advisory-av26-1166">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Oracle Java SE Patches 11 Vulnerabilities, CVE-2026-114938 RCE</title>
-      <link>https://secubuzz.com/news/oracle-java-se-patches-11-vulnerabilities-cve-2026-8ca1c7dc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/oracle-java-se-patches-11-vulnerabilities-cve-2026-8ca1c7dc</guid>
-      <description><![CDATA[Oracle announced patches for 11 Java SE vulnerabilities, including CVE-2026-114938, a remote code execution flaw that could be exploited without authentication. The vulnerabilities carry a maximum CVSS 3.1 score of 8.1, indicating high severity, and separate reports warn of a potentially critical OpenJDK RCE. Oracle released the patches on Tuesday; administrators should apply the updates immediately to mitigate the risk.]]></description>
-      <pubDate>Tue, 17 Nov 2026 15:17:36 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Trigram Impersonates 50 AI and Blockchain Brands</title>
-      <link>https://secubuzz.com/news/trigram-impersonates-50-ai-and-blockchain-brands-7d932043</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trigram-impersonates-50-ai-and-blockchain-brands-7d932043</guid>
-      <description><![CDATA[Stormshield’s report reveals Trigram, a campaign that impersonates roughly 50 AI and blockchain brands to lure developers into executing infostealer payloads. Attackers embed malicious code in legitimate SDKs, tricking developers into installing compromised libraries that harvest credentials and system information. Defenders should verify SDK sources, enforce code-review policies, and monitor for unusual credential-exfiltration patterns in development environments.]]></description>
-      <pubDate>Tue, 17 Nov 2026 15:17:28 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html">The Hacker News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

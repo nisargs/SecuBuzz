@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "nsanet-classified-network-experiences-operational-186d0f4f",
+    "title": "NSANet Classified Network Experiences Operational Outage",
+    "summary": "A classified internal network used by NSA employees, NSANet, suffered an operational outage. The outage disrupted communications across the agency, though no evidence of a security breach or vulnerability was reported. Defense officials confirmed the issue and are working to restore full functionality; no patch or mitigation is required at this time.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/",
+    "publishedAt": "2026-11-18T02:15:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nsanet-classified-network-experiences-operational",
+      "article-186d0f4f",
+      "186d0f4f",
+      "nsanet-classified-network-experiences-operational-69b9d8",
+      "nsanet-classified-network-experiences-operational-outage"
+    ]
+  },
+  {
+    "slug": "isc-stormcast-podcast-released-nov-18-d63e9f8c",
+    "title": "ISC Stormcast Podcast Released Nov 18",
+    "summary": "The SANS Internet Storm Center released its weekly Stormcast for Wednesday, November 18, 2026, summarizing recent cyber events. The broadcast covers emerging threats, vulnerability trends, and defensive recommendations, providing analysts with actionable intelligence. Listeners can access the podcast via the ISC website or RSS feed, with no security patches or vulnerabilities disclosed.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33528",
+    "publishedAt": "2026-11-18T02:00:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-podcast-released-nov-18",
+      "article-d63e9f8c",
+      "d63e9f8c",
+      "isc-stormcast-podcast-released-nov-18-57dd81"
+    ]
+  },
+  {
     "slug": "barracuda-cloud-breach-via-artex-ai-a48b9890",
     "title": "Barracuda Cloud Breach via ARTEX AI",
     "summary": "Barracuda experienced a cloud breach facilitated by the ARTEX AI platform, exposing sensitive customer data. The attack leveraged unauthorized API access and credential reuse, allowing attackers to exfiltrate data without detection. Barracuda has issued a patch and recommends revoking compromised credentials, tightening API permissions, and monitoring logs to prevent further compromise.",
@@ -26,6 +63,44 @@ export const news: NewsBrief[] = [
       "article-a48b9890",
       "a48b9890",
       "barracuda-cloud-breach-via-artex-ai-53c52a"
+    ]
+  },
+  {
+    "slug": "charges-dropped-against-peraire-bueno-brothers-in-bca700e2",
+    "title": "Charges Dropped Against Peraire-Bueno Brothers in Ethereum Heist",
+    "summary": "Charges against the Peraire-Bueno brothers in an Ethereum heist case have been dropped, according to a law enforcement intelligence update. The advisory points to court findings, threat actor profiles, and defensive controls but provides no technical exploit details or confirmed victim impact. Security teams should track the legal outcome and use the case materials to refine Ethereum-related monitoring and controls.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/court-clears-brothers-of-25-million-ethereum-crypto-hei",
+    "publishedAt": "2026-11-18T01:10:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "charges-dropped-against-peraire-bueno-brothers-in",
+      "article-bca700e2",
+      "bca700e2",
+      "charges-dropped-against-peraire-bueno-brothers-in-1938b7",
+      "charges-dropped-against-peraire-bueno-brothers-in-ethereum-h"
+    ]
+  },
+  {
+    "slug": "optimizely-signup-flaw-hits-salesforce-zoom-via-ma-49ec9b40",
+    "title": "Optimizely Signup Flaw Hits Salesforce, Zoom via Malicious JS",
+    "summary": "A flaw in Optimizely's signup flow is linked to malicious JavaScript affecting Salesforce and Zoom, according to a CyberNews AI alert. The advisory provides no CVE identifier or root-cause specifics, but frames the issue as critical and calls for telemetry review and detection-rule hunting. Security teams should review root-cause telemetry, deploy relevant detection rules, and apply the vendor patch promptly.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/optimizely-hack-infected-cnn-fox-news-bbc-salesforce-si",
+    "publishedAt": "2026-11-18T01:09:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "optimizely-signup-flaw-hits-salesforce-zoom-via-ma",
+      "article-49ec9b40",
+      "49ec9b40",
+      "optimizely-signup-flaw-hits-salesforce-zoom-via-ma-135d09",
+      "optimizely-signup-flaw-hits-salesforce-zoom-via-malicious-js"
     ]
   },
   {
@@ -87,6 +162,24 @@ export const news: NewsBrief[] = [
       "cffb6ee3",
       "java4shell-cve-2026-114938-critical-oracle-java-vu-2ee514",
       "java4shell-cve-2026-114938-critical-oracle-java-vulnerabilit"
+    ]
+  },
+  {
+    "slug": "microsoft-agent-framework-pypi-package-compromised-03a53c23",
+    "title": "Microsoft Agent-Framework PyPI Package Compromised",
+    "summary": "Microsoft’s agent-framework PyPI package, versions 1.26.1 and 1.26.2, was compromised. The malicious package leveraged .pth startup hooks to exfiltrate Azure, GitHub Actions, and CI/CD credentials, enabling attackers to harvest authentication tokens. Users should uninstall the affected versions, install the latest secure release, and audit their CI/CD pipelines for unauthorized credential usage.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/agent-framework-pypi-package-compromised-with-credential-stealer",
+    "publishedAt": "2026-11-17T23:05:25.054Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-agent-framework-pypi-package-compromised",
+      "article-03a53c23",
+      "03a53c23",
+      "microsoft-agent-framework-pypi-package-compromised-526e6d"
     ]
   },
   {
@@ -174,24 +267,29 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "defending-against-java4shell-vulnerability-in-open-db46b254",
-    "title": "Defending Against Java4Shell: Vulnerability in OpenJDK Enables RCE on AVX-512 CPUs",
-    "summary": "On November 17, 2026, security researchers at Calif disclosed Java4Shell (CVE-2026-114938, CVSS 4.0: 9.2 Critical), a memory-corruption vulnerability in OpenJDK’s Base64 decoder that allows malformed Base64 input to trigger remote code execution (RCE).",
+    "slug": "java4shell-critical-flaw-in-openjdk-enables-unauth-eb1823b5",
+    "title": "Java4Shell Critical Flaw in OpenJDK Enables Unauthenticated Remote Code Execution",
+    "summary": "Security researchers disclosed Java4Shell (CVE-2026-114938), a critical vulnerability in OpenJDK Java, on November 17, 2026. The flaw triggers memory corruption through malformed input, enabling unauthenticated remote code execution with a CVSS 9.2 score. Organizations should apply the vendor's patch immediately and update to the latest OpenJDK release to mitigate exploitation risk.",
     "category": "CVE",
-    "severity": "MEDIUM",
+    "severity": "CRITICAL",
     "source": "SentinelOne",
     "sourceUrl": "https://www.sentinelone.com/blog/java4shell-vulnerability-in-openjdk-enables-rce-on-avx-512-cpus/",
     "publishedAt": "2026-11-17T22:19:19.000Z",
     "cves": [
       "CVE-2026-114938"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cisco Talos",
+        "sourceUrl": "https://blog.talosintelligence.com/java4shell/"
+      }
+    ],
     "aliases": [
-      "defending-against-java4shell-vulnerability-in-open",
-      "article-db46b254",
-      "db46b254",
-      "defending-against-java4shell-vulnerability-in-open-2bc403",
-      "defending-against-java4shell-vulnerability-in-openjdk-enable"
+      "java4shell-critical-flaw-in-openjdk-enables-unauth",
+      "article-eb1823b5",
+      "eb1823b5",
+      "java4shell-critical-flaw-in-openjdk-enables-unauth-2bc403",
+      "java4shell-critical-flaw-in-openjdk-enables-unauthenticated-"
     ]
   },
   {
@@ -612,6 +710,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apng2gif-vulnerabilities-allow-apng-overflows-7691e728",
+    "title": "apng2gif Vulnerabilities Allow APNG Overflows",
+    "summary": "The apng2gif utility contains multiple CVEs (CVE-2017-6960, CVE-2017-6961) that allow integer overflows and heap-based buffer over-reads when processing crafted APNG files. An attacker could exploit these flaws to cause denial of service or potentially read sensitive memory, though no public exploit is documented. Users should update to the latest apng2gif release or apply the vendor’s patch to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9132-1",
+    "publishedAt": "2026-11-17T17:45:22.000Z",
+    "cves": [
+      "CVE-2017-6960",
+      "CVE-2017-6961"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apng2gif-vulnerabilities-allow-apng-overflows",
+      "article-7691e728",
+      "7691e728",
+      "apng2gif-vulnerabilities-allow-apng-overflows-7e7a3f"
+    ]
+  },
+  {
     "slug": "malicious-ios-scripts-now-behind-1-in-5-advertiser-8046f973",
     "title": "Malicious iOS Scripts Now Behind 1 in 5 Advertiser Suspensions as Coruna Exploit Kit Hides Inside Ad Landing Pages",
     "summary": "Malicious iOS scripts accounted for roughly 20% of advertiser account suspensions in 2026 across advertising platforms protected by ADEX, according to the company’s newly released State of Ad Fraud 2026: ADEX Trust & Safety Report.",
@@ -668,6 +787,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "flightgear-sandbox-bypass-allows-arbitrary-file-wr-1f314e52",
+    "title": "FlightGear Sandbox Bypass Allows Arbitrary File Writes",
+    "summary": "FlightGear's Nasal script sandbox fails to restrict file paths, allowing attackers to bypass containment and write arbitrary files with user privileges. The flaw stems from improper sandbox enforcement on filesystem operations, enabling local privilege escalation within the user context. Ubuntu has issued USN-9137-1 patches; administrators should immediately upgrade affected FlightGear packages.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9137-1",
+    "publishedAt": "2026-11-17T17:05:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "flightgear-sandbox-bypass-allows-arbitrary-file-wr",
+      "article-1f314e52",
+      "1f314e52",
+      "flightgear-sandbox-bypass-allows-arbitrary-file-wr-7e7a2c",
+      "flightgear-sandbox-bypass-allows-arbitrary-file-writes"
+    ]
+  },
+  {
     "slug": "chrome-extended-stable-update-addresses-critical-c-6d292483",
     "title": "Chrome Extended Stable Update Addresses Critical CVEs",
     "summary": "Google Chrome released an Extended Stable update for Windows and Mac, fixing critical vulnerabilities including CVE-2026-118331, CVE-2026-118344, and CVE-2026-118348. The update also patches high-severity bugs such as CVE-2026-113336, CVE-2026-113338, and CVE-2026-113339, which could enable local privilege escalation or denial of service. Users should install the 156.0.8078.108/109 build promptly, as Chrome provides detailed remediation guidance on its security page.",
@@ -691,6 +829,44 @@ export const news: NewsBrief[] = [
       "6d292483",
       "chrome-extended-stable-update-addresses-critical-c-76d7c4",
       "chrome-extended-stable-update-addresses-critical-cves"
+    ]
+  },
+  {
+    "slug": "binwalk-path-traversal-enables-arbitrary-file-writ-adc7226b",
+    "title": "Binwalk Path Traversal Enables Arbitrary File Write",
+    "summary": "Ubuntu reports a flaw in Binwalk's PFS extractor where file paths are unsanitized, enabling a crafted PFS image to write arbitrary files and execute code. An attacker could trick a user or automated system into extracting a malicious PFS file, potentially compromising the host. Updating Binwalk to the patched version or applying the security update mitigates the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9134-1",
+    "publishedAt": "2026-11-17T16:58:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binwalk-path-traversal-enables-arbitrary-file-writ",
+      "article-adc7226b",
+      "adc7226b",
+      "binwalk-path-traversal-enables-arbitrary-file-writ-7e7a38",
+      "binwalk-path-traversal-enables-arbitrary-file-write"
+    ]
+  },
+  {
+    "slug": "astropy-vulnerability-enables-potential-arbitrary-68cee531",
+    "title": "Astropy Vulnerability Enables Potential Arbitrary Code Execution",
+    "summary": "Ubuntu reports a flaw in Astropy where the savelayout argument is not validated, allowing untrusted input to trigger arbitrary code execution during graph saving. The vulnerability could enable attackers to run malicious code on systems that import Astropy data, potentially compromising the host. Ubuntu advises updating to the patched Astropy package or applying the security update to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9133-1",
+    "publishedAt": "2026-11-17T16:58:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "astropy-vulnerability-enables-potential-arbitrary",
+      "article-68cee531",
+      "68cee531",
+      "astropy-vulnerability-enables-potential-arbitrary-7e7a3b",
+      "astropy-vulnerability-enables-potential-arbitrary-code-execu"
     ]
   },
   {
@@ -1071,22 +1247,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hackers-abuse-microsoft-sharepoint-and-github-to-h-457e7c8d",
-    "title": "Hackers Abuse Microsoft SharePoint and GitHub to Hide GraphDoor Backdoor Attacks on Government Networks",
-    "summary": "Hackers are hiding a backdoor named GraphDoor inside normal Microsoft and Ably traffic. The goal is to spy on government networks in Asia and Africa. Kaspersky’s GReAT team detailed the findings on November 17, 2026, in the second part of its Operation ShadowCloud research.",
-    "category": "General",
-    "severity": "MEDIUM",
+    "slug": "graphdoor-backdoor-compromises-government-cloud-cr-13da3715",
+    "title": "GraphDoor Backdoor Compromises Government Cloud Credentials, Enabling Data Exfiltration",
+    "summary": "GraphDoor, a covert cloud backdoor, has been observed compromising government cloud credentials to establish persistence and exfiltrate sensitive data. The attack leverages stolen authentication tokens rather than a public exploit, enabling lateral movement and stealthy espionage across multiple regions. Security teams must audit telemetry, enforce credential hygiene, deploy detection rules, and apply vendor patches to block the backdoor.",
+    "category": "Breach",
+    "severity": "CRITICAL",
     "source": "Cyber Security News",
     "sourceUrl": "https://cybersecuritynews.com/graphdoor-sharepoint-backdoor/",
     "publishedAt": "2026-11-17T14:40:07.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/operation-shadowcloud-cloud-service-based-backdoors-tar"
+      }
+    ],
     "aliases": [
-      "hackers-abuse-microsoft-sharepoint-and-github-to-h",
-      "article-457e7c8d",
-      "457e7c8d",
-      "hackers-abuse-microsoft-sharepoint-and-github-to-h-2e0b07",
-      "hackers-abuse-microsoft-sharepoint-and-github-to-hide-graphd"
+      "graphdoor-backdoor-compromises-government-cloud-cr",
+      "article-13da3715",
+      "13da3715",
+      "graphdoor-backdoor-compromises-government-cloud-cr-2e0b07",
+      "graphdoor-backdoor-compromises-government-cloud-credentials-"
     ]
   },
   {
@@ -1425,22 +1606,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "access-dental-breach-exposes-340-000-personal-reco-01037948",
-    "title": "Access Dental Breach Exposes 340,000 Personal Records",
-    "summary": "Hackers breached Access Dental’s network and exfiltrated personal, health, and insurance data from over 340,000 records. The breach leveraged an unspecified network intrusion that bypassed existing perimeter defenses, allowing unauthorized access to sensitive patient information. Access Dental has notified affected individuals and is working with law enforcement to investigate and remediate the compromise.",
+    "slug": "access-dental-breach-exposes-340-000-patient-recor-95666df5",
+    "title": "Access Dental Breach Exposes 340,000 Patient Records",
+    "summary": "Access Dental suffered a data breach exposing 340,000 patient records containing personal, health, and insurance information. Attackers bypassed perimeter defenses through an unspecified network intrusion to exfiltrate sensitive data from the dental provider's systems. The company has notified affected individuals and engaged law enforcement while implementing enhanced security controls to prevent recurrence.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/",
     "publishedAt": "2026-11-17T12:59:04.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/access-dental-management-data-breach-impacts-over-340-0"
+      }
+    ],
     "aliases": [
-      "access-dental-breach-exposes-340-000-personal-reco",
-      "article-01037948",
-      "01037948",
-      "access-dental-breach-exposes-340-000-personal-reco-2c2575",
-      "access-dental-breach-exposes-340-000-personal-records"
+      "access-dental-breach-exposes-340-000-patient-recor",
+      "article-95666df5",
+      "95666df5",
+      "access-dental-breach-exposes-340-000-patient-recor-2c2575",
+      "access-dental-breach-exposes-340-000-patient-records"
     ]
   },
   {
@@ -1556,6 +1742,27 @@ export const news: NewsBrief[] = [
       "79f09066",
       "deepmind-ai-formally-verifies-signal-protocol-cryp-1dcb34",
       "deepmind-ai-formally-verifies-signal-protocol-cryptography"
+    ]
+  },
+  {
+    "slug": "fortios-double-free-impacts-siemens-ruggedcom-ape1-20cba8a4",
+    "title": "FortiOS Double Free Impacts Siemens RUGGEDCOM APE1808",
+    "summary": "A Double Free vulnerability in FortiOS (CVE-2026-106175) affects Siemens RUGGEDCOM APE1808 industrial devices. The flaw allows local authenticated attackers to crash the newcli daemon via crafted CLI commands, rated CVSS 2.3. Siemens advises updating FortiGate NGFW to version 7.6.9 or later following secure update procedures; administrators should apply the firmware upgrade promptly to mitigate denial-of-service risk.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+    "publishedAt": "2026-11-17T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-106175"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "fortios-double-free-impacts-siemens-ruggedcom-ape1",
+      "article-20cba8a4",
+      "20cba8a4",
+      "fortios-double-free-impacts-siemens-ruggedcom-ape1-41aee7",
+      "fortios-double-free-impacts-siemens-ruggedcom-ape1808"
     ]
   },
   {
@@ -3307,6 +3514,24 @@ export const news: NewsBrief[] = [
       "article-4ab95a4b",
       "4ab95a4b",
       "meta-fined-886m-by-italian-regulator-979fe6"
+    ]
+  },
+  {
+    "slug": "apple-releases-tvos-27-3-beta-2-80436051",
+    "title": "Apple Releases tvOS 27.3 Beta 2",
+    "summary": "Apple released the tvOS 27.3 beta 2 build 24K5298d, offering developers early access to new features and bug fixes. The beta includes updates to the media framework, UI enhancements, and performance improvements, but no security patches are announced. Developers should test apps against this build and report issues via Apple's beta program, as the final release will contain security updates.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026d",
+    "publishedAt": "2026-11-16T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-tvos-27-3-beta-2",
+      "article-80436051",
+      "80436051",
+      "apple-releases-tvos-27-3-beta-2-5f3d88"
     ]
   },
   {
@@ -9719,213 +9944,6 @@ export const news: NewsBrief[] = [
       "article-560013e3",
       "560013e3",
       "citrix-netscaler-12-flaws-auth-bypass-and-dos-5cdbf9"
-    ]
-  },
-  {
-    "slug": "critical-zero-day-4everable2shell-flaw-impacts-n-a-29591531",
-    "title": "Critical Zero-Day 4EverAble2Shell Flaw Impacts N-able N-central",
-    "summary": "A critical security intelligence alert details the 4EverAble2Shell zero-day vulnerability affecting N-able N-central remote monitoring software. Threat analysis indicates a critical zero-day vulnerability requiring defenders to review root-cause telemetry and deploy targeted threat-hunting detection rules. Administrators are urged to apply available security patches today to mitigate potential system compromise and prevent unauthorized access.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/new-n-able-4everable2shell-zero-day-exploited-hours-aft",
-    "publishedAt": "2026-11-13T01:56:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "critical-zero-day-4everable2shell-flaw-impacts-n-a",
-      "article-29591531",
-      "29591531",
-      "critical-zero-day-4everable2shell-flaw-impacts-n-a-6d157a",
-      "critical-zero-day-4everable2shell-flaw-impacts-n-able-n-cent"
-    ]
-  },
-  {
-    "slug": "signdrop-clfs-driver-zero-day-grants-system-privil-d6593a77",
-    "title": "SignDrop CLFS Driver Zero-Day Grants SYSTEM Privileges",
-    "summary": "A zero-day flaw in SignDrop’s CLFS driver lets attackers gain SYSTEM privileges on affected machines. The vulnerability abuses improper privilege checks, enabling local or remote code execution with full system rights; no public PoC exists yet. SignDrop has issued a patch; security teams should apply it immediately and monitor for privilege-escalation indicators.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/new-signdrop-zero-day-exploit-turns-windows-clfs-securi",
-    "publishedAt": "2026-11-13T01:43:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "signdrop-clfs-driver-zero-day-grants-system-privil",
-      "article-d6593a77",
-      "d6593a77",
-      "signdrop-clfs-driver-zero-day-grants-system-privil-6044ca",
-      "signdrop-clfs-driver-zero-day-grants-system-privileges"
-    ]
-  },
-  {
-    "slug": "uk-organizations-report-record-cyber-incidents-to-3f1320f3",
-    "title": "UK Organizations Report Record Cyber Incidents to Data Regulator",
-    "summary": "British organizations reported a record number of cyber incidents to the national data protection regulator this year. Cybersecurity firms attribute the surge in reported security events to data extortion tactics and artificial intelligence utilization by threat actors. Security teams should review data protection posture and enhance monitoring against extortion-based attack vectors.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/record-number-of-cyber-incidents-reported-to-uk-regulator",
-    "publishedAt": "2026-11-13T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uk-organizations-report-record-cyber-incidents-to",
-      "article-3f1320f3",
-      "3f1320f3",
-      "uk-organizations-report-record-cyber-incidents-to-3f62df",
-      "uk-organizations-report-record-cyber-incidents-to-data-regul"
-    ]
-  },
-  {
-    "slug": "nato-retracts-travel-guidance-recommending-russian-df710397",
-    "title": "NATO Retracts Travel Guidance Recommending Russian Taxi App",
-    "summary": "NATO issued and subsequently withdrew travel guidance for its flagship defense industry conference after recommending attendees use Russian-owned Yandex Go. Security concerns stem from potential Kremlin access to telemetry and location data generated by conference participants using the ride-hailing application. Defense personnel and attendees are advised to avoid foreign-controlled applications that risk exposure of operational travel itineraries.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/nato-issues-and-withdraws-guidance-over-russian-taxi-app",
-    "publishedAt": "2026-11-13T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nato-retracts-travel-guidance-recommending-russian",
-      "article-df710397",
-      "df710397",
-      "nato-retracts-travel-guidance-recommending-russian-11d89f",
-      "nato-retracts-travel-guidance-recommending-russian-taxi-app"
-    ]
-  },
-  {
-    "slug": "red-hat-satellite-6-17-13-receives-critical-async-40212a83",
-    "title": "Red Hat Satellite 6.17.13 receives critical async update",
-    "summary": "Red Hat Satellite 6.17.13 for RHEL 9 contains critical flaws that could let attackers compromise satellite management. The flaws are rated CVSS 9.0+, exposing remote code execution paths that bypass authentication and grant full control over satellite services. Red Hat recommends installing the provided patch immediately; administrators should also verify satellite configuration and apply any additional hardening guidelines.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99950",
-    "publishedAt": "2026-11-12T23:52:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-satellite-6-17-13-receives-critical-async",
-      "article-40212a83",
-      "40212a83",
-      "red-hat-satellite-6-17-13-receives-critical-async-37d661",
-      "red-hat-satellite-6-17-13-receives-critical-async-update"
-    ]
-  },
-  {
-    "slug": "red-hat-satellite-6-18-11-receives-critical-async-50d0fdfe",
-    "title": "Red Hat Satellite 6.18.11 receives critical async update",
-    "summary": "Red Hat Satellite 6.18.11 for RHEL 9 includes critical vulnerabilities that may allow attackers to take control of satellite services. These flaws are rated CVSS 9.0+, providing remote code execution paths that bypass authentication and enable full administrative access. Apply the vendor’s patch immediately and review satellite configuration to enforce least-privilege access controls.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99952",
-    "publishedAt": "2026-11-12T23:52:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-satellite-6-18-11-receives-critical-async",
-      "article-50d0fdfe",
-      "50d0fdfe",
-      "red-hat-satellite-6-18-11-receives-critical-async-37d661",
-      "red-hat-satellite-6-18-11-receives-critical-async-update"
-    ]
-  },
-  {
-    "slug": "red-hat-satellite-6-16-15-async-update-released-b153599d",
-    "title": "Red Hat Satellite 6.16.15 Async Update Released",
-    "summary": "Red Hat Satellite 6.16.15 for RHEL 8 and RHEL 9 receives an async update addressing multiple vulnerabilities. The update mitigates unspecified security issues with a CVSS base score listed in the CVE references, potentially preventing unauthorized access or privilege escalation. Administrators should apply the new Satellite package immediately to maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99949",
-    "publishedAt": "2026-11-12T23:51:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-satellite-6-16-15-async-update-released",
-      "article-b153599d",
-      "b153599d",
-      "red-hat-satellite-6-16-15-async-update-released-37d661"
-    ]
-  },
-  {
-    "slug": "google-incorporates-privacy-controls-into-gemini-s-53c60d5b",
-    "title": "Google Incorporates Privacy Controls into Gemini Smart Glasses",
-    "summary": "Google revealed privacy safeguards for its Gemini-powered intelligent eyewear to mitigate unconsented video and image capture of bystanders. The smart glasses automatically halt photo and video recording if the outward-facing recording indicator light is covered or physically tampered with. Additional protections integrated by Google include automated face redaction, restricted data handling processes, and application security limitations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/google-smart-glasses-privacy-protections/",
-    "publishedAt": "2026-11-12T23:45:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-incorporates-privacy-controls-into-gemini-s",
-      "article-53c60d5b",
-      "53c60d5b",
-      "google-incorporates-privacy-controls-into-gemini-s-7cd611",
-      "google-incorporates-privacy-controls-into-gemini-smart-glass"
-    ]
-  },
-  {
-    "slug": "openstack-platform-17-1-manila-update-released-e8dcdcb1",
-    "title": "OpenStack Platform 17.1 Manila Update Released",
-    "summary": "Red Hat OpenStack Platform 17.1 (Wallaby) receives a critical security update for the openstack-manila component. The patch addresses multiple vulnerabilities with CVSS scores listed in the CVE references, potentially allowing unauthorized data access or service disruption. Deploy the updated openstack-manila package promptly to secure storage services.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99947",
-    "publishedAt": "2026-11-12T23:31:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openstack-platform-17-1-manila-update-released",
-      "article-e8dcdcb1",
-      "e8dcdcb1",
-      "openstack-platform-17-1-manila-update-released-37d661"
-    ]
-  },
-  {
-    "slug": "fake-zillow-pages-deliver-netsupport-rat-via-click-32571686",
-    "title": "Fake Zillow Pages Deliver NetSupport RAT via ClickFix Attack",
-    "summary": "Threat actors deploy fake Zillow pages in a ClickFix campaign to compromise Windows users with NetSupport RAT. Deceptive verification prompts copy a malicious PowerShell script onto victim clipboards, social engineering users into executing persistent remote-control malware. According to EfficientIP Research Labs, security administrators should restrict user PowerShell execution rights and block untrusted web execution prompts.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/fake-zillow-clickfix-netsupport-rat/",
-    "publishedAt": "2026-11-12T23:15:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-zillow-pages-deliver-netsupport-rat-via-click",
-      "article-32571686",
-      "32571686",
-      "fake-zillow-pages-deliver-netsupport-rat-via-click-5d8862",
-      "fake-zillow-pages-deliver-netsupport-rat-via-clickfix-attack"
-    ]
-  },
-  {
-    "slug": "postgresql-security-update-fixes-52-vulnerabilitie-360a9c71",
-    "title": "PostgreSQL security update fixes 52 vulnerabilities, ends support for PostgreSQL 14",
-    "summary": "The PostgreSQL Global Development Group released PostgreSQL 18.7, 17.12, 16.16, 15.20 and 14.25 on November 12, fixing 52 security vulnerabilities and more than 140 other bugs. Most of those code execution bugs are memory errors or type confusion, where PostgreSQL handles a value as the wrong data type.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/postgresql-security-update-november-2026/",
-    "publishedAt": "2026-11-12T23:05:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "postgresql-security-update-fixes-52-vulnerabilitie",
-      "article-360a9c71",
-      "360a9c71",
-      "postgresql-security-update-fixes-52-vulnerabilitie-3d48ad",
-      "postgresql-security-update-fixes-52-vulnerabilities-ends-sup"
     ]
   }
 ];
