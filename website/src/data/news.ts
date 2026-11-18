@@ -32,6 +32,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "vulnerability-in-oracle-openjdk-java4shell-affecti-e1a485fe",
+    "title": "Vulnerability in Oracle OpenJDK (Java4Shell) Affecting Cisco Products: November 2026",
+    "summary": "On November 17, 2026, Oracle announced the availability of fixes for a vulnerability in OpenJDK that could lead to remote code execution identified by CVE-2026-114938. For additional information, see the Talos blog post: Talos Threat Advisory CVE-2026-114938: Critical vulnerability in OpenJDK JAVA This advisory will be updated as additional information becomes available.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerability+in+Oracle+OpenJDK+%28Java4Shell%29+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1",
+    "publishedAt": "2026-11-18T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "vulnerability-in-oracle-openjdk-java4shell-affecti",
+      "article-e1a485fe",
+      "e1a485fe",
+      "vulnerability-in-oracle-openjdk-java4shell-affecti-3acc1e",
+      "vulnerability-in-oracle-openjdk-java4shell-affecting-cisco-p"
+    ]
+  },
+  {
     "slug": "emacs-prior-to-31-2-allows-local-code-execution-c938cfb4",
     "title": "Emacs Prior to 31.2 Allows Local Code Execution",
     "summary": "GNU Emacs versions before 31.2 contain a local code execution flaw triggered by malicious .dir-locals.el files. The vulnerability bypasses auto-mode-alist checks, allowing an attacker to run arbitrary code when a user opens a file; no public exploit reported. Users should upgrade to Emacs 31.2 or later, or disable .dir-locals.el processing until a patch is released.",
@@ -850,6 +871,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "java4shell-vulnerability-cve-2026-114938-4621abdb",
+    "title": "Java4Shell Vulnerability - CVE-2026-114938",
+    "summary": "Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in takeover of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-278",
+    "publishedAt": "2026-11-18T08:00:00.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "java4shell-vulnerability-cve-2026-114938",
+      "article-4621abdb",
+      "4621abdb",
+      "java4shell-vulnerability-cve-2026-114938-3bcda5"
+    ]
+  },
+  {
     "slug": "japan-shuts-fugaku-supercomputer-after-internal-br-4e9a52dc",
     "title": "Japan Shuts Fugaku Supercomputer After Internal Breach",
     "summary": "RIKEN shut down its Fugaku supercomputer after attackers breached the internal operations network and installed malware on servers. The breach exposed credentials for up to 4,597 users across Fugaku and RIKYU, potentially compromising research data, though no exfiltration evidence surfaced. RIKEN suspended operations, applied patches, and is conducting a forensic investigation to assess the breach scope and reinforce network segmentation.",
@@ -1016,6 +1057,25 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "open-robotics-rviz-heap-overflow-enables-remote-co-0822fccb",
+    "title": "Open Robotics RViz Heap Overflow Enables Remote Code Execution",
+    "summary": "A heap-based buffer overflow in Open Robotics RViz allows attackers to execute arbitrary code without authentication. The flaw, rated CVSS 8.8, exploits a missing bounds check in the fillIndexBuffer routine, enabling remote code execution with process privileges. Vendor released an update; security teams should apply the patch immediately or disable network exposure to mitigate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1027/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "open-robotics-rviz-heap-overflow-enables-remote-co",
+      "article-0822fccb",
+      "0822fccb",
+      "open-robotics-rviz-heap-overflow-enables-remote-co-77f340",
+      "open-robotics-rviz-heap-overflow-enables-remote-code-executi"
     ]
   },
   {
@@ -1642,6 +1702,24 @@ export const news: NewsBrief[] = [
       "article-822affbc",
       "822affbc",
       "atlassian-confluence-cve-2026-90436-exploited-1a3502"
+    ]
+  },
+  {
+    "slug": "n-able-releases-17-zero-day-rce-patches-215aeed6",
+    "title": "N-able Releases 17 Zero-Day RCE Patches",
+    "summary": "N-able N-central HF3 suffers 17 zero-day RCE vulnerabilities exploitable via remote configuration interfaces. The flaws allow unauthenticated attackers to execute arbitrary code, potentially compromising system integrity; no public PoC yet, but the zero-day status warrants immediate attention. N-able has issued patches for all 17 issues; security teams should apply the update and monitor for anomalous activity.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://www.cybernewsai.com/blog/n-able-kills-legacy-apis-patches-17-n-central-zero-days",
+    "publishedAt": "2026-11-17T20:55:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-releases-17-zero-day-rce-patches",
+      "article-215aeed6",
+      "215aeed6",
+      "n-able-releases-17-zero-day-rce-patches-5cf437"
     ]
   },
   {
@@ -9799,79 +9877,6 @@ export const news: NewsBrief[] = [
       "article-ebfb7d35",
       "ebfb7d35",
       "2026-top-10-vulnerability-scanners-ranked-53b20c"
-    ]
-  },
-  {
-    "slug": "openai-launches-daybreak-red-team-and-defense-fact-3afcdcba",
-    "title": "OpenAI Launches Daybreak Red Team and Defense Factory",
-    "summary": "OpenAI introduced the Daybreak Red Team, a set of AI-driven pentesting tools that target web applications for security assessment. Simultaneously, the Defense Factory component analyzes discovered vulnerabilities and coordinates patch development to mitigate identified risks. Security teams can access these tools through OpenAI’s platform to enhance their web application testing and remediation workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
-    "publishedAt": "2026-11-13T09:21:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-launches-daybreak-red-team-and-defense-fact",
-      "article-3afcdcba",
-      "3afcdcba",
-      "openai-launches-daybreak-red-team-and-defense-fact-53cd61",
-      "openai-launches-daybreak-red-team-and-defense-factory"
-    ]
-  },
-  {
-    "slug": "2026-top-10-vulnerability-management-tools-ranked-cda7365d",
-    "title": "2026 Top 10 Vulnerability Management Tools Ranked",
-    "summary": "The piece ranks the top vulnerability management solutions of 2026, evaluating asset-coverage honesty, prioritization against threat reality, and remediation workflow effectiveness. It highlights the mix of dedicated VM anchors, endpoint-agent natives, cloud-born challengers, and aggregation layers that shape modern vulnerability remediation. Stakeholders can leverage the rankings to align tool capabilities with asset coverage and ticket-based remediation processes, ensuring timely patching.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-vulnerability-management-tools/",
-    "publishedAt": "2026-11-13T08:38:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "2026-top-10-vulnerability-management-tools-ranked",
-      "article-cda7365d",
-      "cda7365d",
-      "2026-top-10-vulnerability-management-tools-ranked-3031db"
-    ]
-  },
-  {
-    "slug": "beast-ransomware-adds-hidden-control-panel-ea0936f6",
-    "title": "Beast Ransomware Adds Hidden Control Panel",
-    "summary": "Beast ransomware introduced a hidden control panel that allows operators to select encryption targets on infected Windows systems. The panel is accessed via ALT+CTRL+666, giving affiliates granular control beyond command-line defaults, potentially increasing encryption coverage and ransom demands. Security teams should disable the panel by removing the Beast binary, apply vendor patches, and monitor for ALT+CTRL+666 activity.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/beast-ransomware/",
-    "publishedAt": "2026-11-13T08:38:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "beast-ransomware-adds-hidden-control-panel",
-      "article-ea0936f6",
-      "ea0936f6",
-      "beast-ransomware-adds-hidden-control-panel-6a98bc"
-    ]
-  },
-  {
-    "slug": "microsoft-365-global-outage-affects-outlook-teams-b9dd6a76",
-    "title": "Microsoft 365 Global Outage Affects Outlook, Teams",
-    "summary": "A worldwide outage of Microsoft 365 services, including Outlook, SharePoint, and Teams, has disrupted operations for numerous organizations. The incident, caused by an internal infrastructure failure, led to prolonged service unavailability across multiple regions, impacting email, collaboration, and cloud storage. Microsoft is working to restore services and has advised users to monitor status updates for resolution timelines.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/worldwide-microsoft-365-outage-disrupts-outlook-sharepoint-teams-and-more",
-    "publishedAt": "2026-11-13T08:35:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-365-global-outage-affects-outlook-teams",
-      "article-b9dd6a76",
-      "b9dd6a76",
-      "microsoft-365-global-outage-affects-outlook-teams-343d8a"
     ]
   }
 ];

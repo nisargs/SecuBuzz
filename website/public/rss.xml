@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 16:47:32 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 17:45:33 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>NGINX HTTP/2 Flaws Enable Remote Code Execution</title>
@@ -14,6 +14,15 @@
       <description><![CDATA[Two critical NGINX HTTP/2 vulnerabilities (CVE-2026-123633, CVE-2026-123007) enable remote code execution on servers accepting HTTP/2 connections. The flaws trigger memory corruption during HTTP/2 stream handling; CVSS scores 9.8 and 9.6, and no public exploit yet but potential for server compromise. NGINX released patches on November 18, 2026; administrators should update to the latest release or disable HTTP/2 until patched.]]></description>
       <pubDate>Wed, 18 Nov 2026 16:05:50 GMT</pubDate>
       <source url="https://cybersecuritynews.com/nginx-http-2-vulnerabilities/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Vulnerability in Oracle OpenJDK (Java4Shell) Affecting Cisco Products: November 2026</title>
+      <link>https://secubuzz.com/news/vulnerability-in-oracle-openjdk-java4shell-affecti-e1a485fe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vulnerability-in-oracle-openjdk-java4shell-affecti-e1a485fe</guid>
+      <description><![CDATA[On November 17, 2026, Oracle announced the availability of fixes for a vulnerability in OpenJDK that could lead to remote code execution identified by CVE-2026-114938. For additional information, see the Talos blog post: Talos Threat Advisory CVE-2026-114938: Critical vulnerability in OpenJDK JAVA This advisory will be updated as additional information becomes available.]]></description>
+      <pubDate>Wed, 18 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerability+in+Oracle+OpenJDK+%28Java4Shell%29+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1">Cisco PSIRT</source>
       <category>CVE</category>
     </item>
     <item>
@@ -404,6 +413,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Java4Shell Vulnerability - CVE-2026-114938</title>
+      <link>https://secubuzz.com/news/java4shell-vulnerability-cve-2026-114938-4621abdb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-vulnerability-cve-2026-114938-4621abdb</guid>
+      <description><![CDATA[Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in takeover of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.]]></description>
+      <pubDate>Wed, 18 Nov 2026 08:00:00 GMT</pubDate>
+      <source url="https://fortiguard.fortinet.com/psirt/FG-IR-26-278">Fortinet FortiGuard PSIRT</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Japan Shuts Fugaku Supercomputer After Internal Breach</title>
       <link>https://secubuzz.com/news/japan-shuts-fugaku-supercomputer-after-internal-br-4e9a52dc</link>
       <guid isPermaLink="true">https://secubuzz.com/news/japan-shuts-fugaku-supercomputer-after-internal-br-4e9a52dc</guid>
@@ -438,24 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 07:16:17 GMT</pubDate>
       <source url="https://cybersecuritynews.com/stolen-fortigate-vpn-credentials/">Cyber Security News</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Scam Victim Blaming Deepens Harm, Says Psychologist</title>
-      <link>https://secubuzz.com/news/scam-victim-blaming-deepens-harm-says-psychologist-3f4ad8cc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/scam-victim-blaming-deepens-harm-says-psychologist-3f4ad8cc</guid>
-      <description><![CDATA[At IRISSCON 2026, cyberpsychologist Dr. Nicola Fox Hamilton discussed how blaming victims of phishing and scams deepens harm and silences them. She explained that the psychological impact of scams can lead to long-term trauma and reluctance to report future incidents. The talk emphasized the need for supportive frameworks that address victim psychology rather than assigning blame.]]></description>
-      <pubDate>Wed, 18 Nov 2026 07:00:33 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/18/nicola-fox-hamilton-victim-blaming-scams-phishing/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Agent Framework PyPI Package Compromised for Credential Theft</title>
-      <link>https://secubuzz.com/news/microsoft-agent-framework-pypi-package-compromised-6856d6e2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-agent-framework-pypi-package-compromised-6856d6e2</guid>
-      <description><![CDATA[Attackers compromised Microsoft’s agent-framework PyPI package, publishing malicious 1.26.1 and 1.26.2 releases that embed a credential stealer. The stealer runs on every Python start, enabling cloud credential theft, and was flagged by multiple security firms. Microsoft should revoke the releases, users must uninstall or upgrade to a clean version, and enforce package integrity checks.]]></description>
-      <pubDate>Wed, 18 Nov 2026 06:45:26 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
