@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 00:46:35 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 01:20:36 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Barracuda Cloud Breach via ARTEX AI</title>
+      <link>https://secubuzz.com/news/barracuda-cloud-breach-via-artex-ai-a48b9890</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/barracuda-cloud-breach-via-artex-ai-a48b9890</guid>
+      <description><![CDATA[Barracuda experienced a cloud breach facilitated by the ARTEX AI platform, exposing sensitive customer data. The attack leveraged unauthorized API access and credential reuse, allowing attackers to exfiltrate data without detection. Barracuda has issued a patch and recommends revoking compromised credentials, tightening API permissions, and monitoring logs to prevent further compromise.]]></description>
+      <pubDate>Wed, 18 Nov 2026 01:11:40 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/barracuda-links-cloud-breach-to-artex-ai-powered-cybera">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Optimizely Attack Distributes Malware Across Brands</title>
+      <link>https://secubuzz.com/news/optimizely-attack-distributes-malware-across-brand-ed797b0f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/optimizely-attack-distributes-malware-across-brand-ed797b0f</guid>
+      <description><![CDATA[Attackers exploited Optimizely to inject malicious JavaScript into major websites, delivering cryptocurrency clippers, card skimmers, and iOS malware. The flaw allows remote code execution via compromised CDN scripts, enabling credential theft and data exfiltration; no CVE listed. Vendors should revoke compromised Optimizely tokens, update scripts, and monitor for injected payloads.]]></description>
+      <pubDate>Wed, 18 Nov 2026 00:17:00 GMT</pubDate>
+      <source url="https://socket.dev/blog/optimizely-supply-chain-attack">Socket.dev</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Java4Shell CVE-2026-114938 Exploitation Attempts Detected</title>
+      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-attempts-d-5eb088cc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-attempts-d-5eb088cc</guid>
+      <description><![CDATA[GreyNoise monitors scanning and exploitation attempts targeting the CVE-2026-114938 memory-corruption flaw in OpenJDK’s Base64 decoder. The heap-based buffer overflow can be triggered remotely by crafted Base64 input, potentially enabling arbitrary code execution. Oracle and OpenJDK have released patches; administrators should apply the latest updates or disable Base64 decoding until mitigated.]]></description>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://www.greynoise.io/blog/global-event-java4shell-cve-2026-114938-live-activity-report">GreyNoise Labs</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Java4Shell CVE-2026-114938 Critical Oracle Java Vulnerability</title>
+      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-critical-oracle-java-vu-cffb6ee3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-critical-oracle-java-vu-cffb6ee3</guid>
+      <description><![CDATA[The Centre Cyber Security alerts that CVE-2026-114938, a heap-based buffer overflow in OpenJDK’s Base64 library, allows unauthenticated remote exploitation of Java runtimes. The flaw can be triggered by specially crafted Base64 input, potentially leading to arbitrary code execution on affected systems. Oracle and OpenJDK have issued patches; administrators should update Java to the latest version or apply vendor-provided mitigations immediately.]]></description>
+      <pubDate>Tue, 17 Nov 2026 23:30:00 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938">Canadian Centre for Cyber Security</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Critical Java4Shell flaw allows RCE attacks on major Java applications</title>
       <link>https://secubuzz.com/news/critical-java4shell-flaw-allows-rce-attacks-on-maj-77623aba</link>
@@ -35,10 +71,10 @@
       <category>General</category>
     </item>
     <item>
-      <title>Java4Shell CVE-2026-114938 Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-enables-remote-code-exe-4a42f239</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-enables-remote-code-exe-4a42f239</guid>
-      <description><![CDATA[A critical 9.2 remote code execution flaw, CVE-2026-114938, targets OpenJDK and widely used Java applications. The vulnerability allows attackers to execute arbitrary code via malformed serialization data, with public PoC evidence and no authentication required, threatening enterprise services. Vendor releases patch in the latest OpenJDK update; organizations should upgrade immediately and disable remote debugging features as a temporary mitigation.]]></description>
+      <title>Java4Shell CVE-2026-114938 Delivers Unauthenticated Remote Code Execution in Oracle Java and OpenJDK</title>
+      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-delivers-unauthenticate-c4f64c44</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-delivers-unauthenticate-c4f64c44</guid>
+      <description><![CDATA[CVE-2026-114938, dubbed Java4Shell, is a critical 9.2 remote code execution vulnerability affecting Oracle Java and OpenJDK installations across enterprise services. Improper input validation and malformed serialization data let unauthenticated attackers execute arbitrary code, with a public proof-of-concept already circulating. Oracle and OpenJDK vendors released patches; administrators should upgrade immediately and disable remote debugging features to mitigate risk.]]></description>
       <pubDate>Tue, 17 Nov 2026 22:29:57 GMT</pubDate>
       <source url="https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk">Wiz Research</source>
       <category>CVE</category>
@@ -150,6 +186,15 @@
       <pubDate>Tue, 17 Nov 2026 19:24:07 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>AWS efs-utils TOCTOU Race Condition CVE-2026-130621</title>
+      <link>https://secubuzz.com/news/aws-efs-utils-toctou-race-condition-cve-2026-13062-105392fa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aws-efs-utils-toctou-race-condition-cve-2026-13062-105392fa</guid>
+      <description><![CDATA[CVE-2026-130621 is a TOCTOU race condition in AWS efs-utils port selection that can let a local user mount EFS volumes on a host. Concurrent mounts enable the attacker to read and write data on other EFS or S3 file systems on the same host, bypassing IAM restrictions. Patches for amazon-efs-utils 3.3.5 and aws-efs-csi-driver are available; upgrade or restrict mount privileges.]]></description>
+      <pubDate>Tue, 17 Nov 2026 19:18:32 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-186-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>[Control systems] CODESYS security advisory (AV26-1169)</title>
@@ -410,51 +455,6 @@
       <description><![CDATA[Stormshield’s report reveals Trigram, a campaign that impersonates roughly 50 AI and blockchain brands to lure developers into executing infostealer payloads. Attackers embed malicious code in legitimate SDKs, tricking developers into installing compromised libraries that harvest credentials and system information. Defenders should verify SDK sources, enforce code-review policies, and monitor for unusual credential-exfiltration patterns in development environments.]]></description>
       <pubDate>Tue, 17 Nov 2026 15:17:28 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>N-able Issues CVE Patches for N-central and MMS3</title>
-      <link>https://secubuzz.com/news/n-able-issues-cve-patches-for-n-central-and-mms3-d5fa4d5e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-issues-cve-patches-for-n-central-and-mms3-d5fa4d5e</guid>
-      <description><![CDATA[N-able disclosed two CVE vulnerabilities in N-central HF3 and MMS3 appliance, enabling local privilege escalation and authentication bypass. CVE-2026-129271 exploits a flaw in the Patch Management component to gain elevated privileges, while CVE-2026-129272 uses predictable passcodes to bypass MMS3 authentication; neither exploit is confirmed in the wild. N-able recommends applying patches 2026.4.1 HF3 and 2.14.4.5829.]]></description>
-      <pubDate>Tue, 17 Nov 2026 15:02:31 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1165">Canadian Centre for Cyber Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Phishing Kits Capture Microsoft 365 Tokens</title>
-      <link>https://secubuzz.com/news/phishing-kits-capture-microsoft-365-tokens-a3cdc3c2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/phishing-kits-capture-microsoft-365-tokens-a3cdc3c2</guid>
-      <description><![CDATA[Huntress researchers dissected EvilTokens, Knight Office, and Kali365 phishing kits that harvest Microsoft 365 authentication tokens. The kits employ social engineering to prompt users to submit credentials, then replay captured tokens to access corporate resources. Defenders should monitor token usage, enforce MFA, and deploy detection rules to flag anomalous token activity.]]></description>
-      <pubDate>Tue, 17 Nov 2026 15:01:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Device Code Phishing Threatens AI Coding Agents</title>
-      <link>https://secubuzz.com/news/device-code-phishing-threatens-ai-coding-agents-9d3ff1a6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/device-code-phishing-threatens-ai-coding-agents-9d3ff1a6</guid>
-      <description><![CDATA[Lab research shows device code phishing can target AI coding agents, using GitHub Copilot CLI as a proof-of-concept. The technique exploits weak consent verification during device authorization, allowing attackers to capture user credentials and potentially run arbitrary code. Teams should enforce multi-factor authentication for device flows, audit logs, and restrict AI agent permissions to mitigate credential theft.]]></description>
-      <pubDate>Tue, 17 Nov 2026 15:00:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/">Microsoft Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ipsos Reports Internal System Breach</title>
-      <link>https://secubuzz.com/news/ipsos-reports-internal-system-breach-2a6b86e0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ipsos-reports-internal-system-breach-2a6b86e0</guid>
-      <description><![CDATA[Ipsos announced a breach of its internal system, revealing that attackers accessed confidential data and credentials. The incident was disclosed five days after the company filed a complaint with authorities, indicating a potential delay in detection. Ipsos should conduct a comprehensive forensic investigation, notify affected stakeholders, and strengthen access controls to prevent future intrusions.]]></description>
-      <pubDate>Tue, 17 Nov 2026 14:55:30 GMT</pubDate>
-      <source url="https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Hackers Abuse Microsoft SharePoint and GitHub to Hide GraphDoor Backdoor Attacks on Government Networks</title>
-      <link>https://secubuzz.com/news/hackers-abuse-microsoft-sharepoint-and-github-to-h-457e7c8d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-abuse-microsoft-sharepoint-and-github-to-h-457e7c8d</guid>
-      <description><![CDATA[Hackers are hiding a backdoor named GraphDoor inside normal Microsoft and Ably traffic. The goal is to spy on government networks in Asia and Africa. Kaspersky’s GReAT team detailed the findings on November 17, 2026, in the second part of its Operation ShadowCloud research.]]></description>
-      <pubDate>Tue, 17 Nov 2026 14:40:07 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/graphdoor-sharepoint-backdoor/">Cyber Security News</source>
       <category>General</category>
     </item>
   </channel>

@@ -5349,5 +5349,12 @@
   "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
   "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
   "https://www.securityweek.com/pretxt-emerges-stealth-with-5m-seed-and-an-ai-supervision-tool/",
-  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278"
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278",
+  "https://socket.dev/blog/optimizely-supply-chain-attack",
+  "https://www.sophos.com/en-us/blog/java4shell-could-allow-remote-code-execution",
+  "https://cybernewsai.com/blog/msp-screenconnect-servers-targeted-in-month-long-campai",
+  "https://cybernewsai.com/blog/barracuda-links-cloud-breach-to-artex-ai-powered-cybera",
+  "https://www.greynoise.io/blog/global-event-java4shell-cve-2026-114938-live-activity-report",
+  "https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-186-aws/"
 ]

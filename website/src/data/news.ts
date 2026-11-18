@@ -11,6 +11,85 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "barracuda-cloud-breach-via-artex-ai-a48b9890",
+    "title": "Barracuda Cloud Breach via ARTEX AI",
+    "summary": "Barracuda experienced a cloud breach facilitated by the ARTEX AI platform, exposing sensitive customer data. The attack leveraged unauthorized API access and credential reuse, allowing attackers to exfiltrate data without detection. Barracuda has issued a patch and recommends revoking compromised credentials, tightening API permissions, and monitoring logs to prevent further compromise.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/barracuda-links-cloud-breach-to-artex-ai-powered-cybera",
+    "publishedAt": "2026-11-18T01:11:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "barracuda-cloud-breach-via-artex-ai",
+      "article-a48b9890",
+      "a48b9890",
+      "barracuda-cloud-breach-via-artex-ai-53c52a"
+    ]
+  },
+  {
+    "slug": "optimizely-attack-distributes-malware-across-brand-ed797b0f",
+    "title": "Optimizely Attack Distributes Malware Across Brands",
+    "summary": "Attackers exploited Optimizely to inject malicious JavaScript into major websites, delivering cryptocurrency clippers, card skimmers, and iOS malware. The flaw allows remote code execution via compromised CDN scripts, enabling credential theft and data exfiltration; no CVE listed. Vendors should revoke compromised Optimizely tokens, update scripts, and monitor for injected payloads.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/optimizely-supply-chain-attack",
+    "publishedAt": "2026-11-18T00:17:00.921Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "optimizely-attack-distributes-malware-across-brand",
+      "article-ed797b0f",
+      "ed797b0f",
+      "optimizely-attack-distributes-malware-across-brand-1e1609",
+      "optimizely-attack-distributes-malware-across-brands"
+    ]
+  },
+  {
+    "slug": "java4shell-cve-2026-114938-exploitation-attempts-d-5eb088cc",
+    "title": "Java4Shell CVE-2026-114938 Exploitation Attempts Detected",
+    "summary": "GreyNoise monitors scanning and exploitation attempts targeting the CVE-2026-114938 memory-corruption flaw in OpenJDK’s Base64 decoder. The heap-based buffer overflow can be triggered remotely by crafted Base64 input, potentially enabling arbitrary code execution. Oracle and OpenJDK have released patches; administrators should apply the latest updates or disable Base64 decoding until mitigated.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "GreyNoise Labs",
+    "sourceUrl": "https://www.greynoise.io/blog/global-event-java4shell-cve-2026-114938-live-activity-report",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "java4shell-cve-2026-114938-exploitation-attempts-d",
+      "article-5eb088cc",
+      "5eb088cc",
+      "java4shell-cve-2026-114938-exploitation-attempts-d-7e7068",
+      "java4shell-cve-2026-114938-exploitation-attempts-detected"
+    ]
+  },
+  {
+    "slug": "java4shell-cve-2026-114938-critical-oracle-java-vu-cffb6ee3",
+    "title": "Java4Shell CVE-2026-114938 Critical Oracle Java Vulnerability",
+    "summary": "The Centre Cyber Security alerts that CVE-2026-114938, a heap-based buffer overflow in OpenJDK’s Base64 library, allows unauthenticated remote exploitation of Java runtimes. The flaw can be triggered by specially crafted Base64 input, potentially leading to arbitrary code execution on affected systems. Oracle and OpenJDK have issued patches; administrators should update Java to the latest version or apply vendor-provided mitigations immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938",
+    "publishedAt": "2026-11-17T23:30:00.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "java4shell-cve-2026-114938-critical-oracle-java-vu",
+      "article-cffb6ee3",
+      "cffb6ee3",
+      "java4shell-cve-2026-114938-critical-oracle-java-vu-2ee514",
+      "java4shell-cve-2026-114938-critical-oracle-java-vulnerabilit"
+    ]
+  },
+  {
     "slug": "critical-java4shell-flaw-allows-rce-attacks-on-maj-77623aba",
     "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
     "summary": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. The vulnerability is tracked as CVE-2026-114938.",
@@ -69,9 +148,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "java4shell-cve-2026-114938-enables-remote-code-exe-4a42f239",
-    "title": "Java4Shell CVE-2026-114938 Enables Remote Code Execution",
-    "summary": "A critical 9.2 remote code execution flaw, CVE-2026-114938, targets OpenJDK and widely used Java applications. The vulnerability allows attackers to execute arbitrary code via malformed serialization data, with public PoC evidence and no authentication required, threatening enterprise services. Vendor releases patch in the latest OpenJDK update; organizations should upgrade immediately and disable remote debugging features as a temporary mitigation.",
+    "slug": "java4shell-cve-2026-114938-delivers-unauthenticate-c4f64c44",
+    "title": "Java4Shell CVE-2026-114938 Delivers Unauthenticated Remote Code Execution in Oracle Java and OpenJDK",
+    "summary": "CVE-2026-114938, dubbed Java4Shell, is a critical 9.2 remote code execution vulnerability affecting Oracle Java and OpenJDK installations across enterprise services. Improper input validation and malformed serialization data let unauthenticated attackers execute arbitrary code, with a public proof-of-concept already circulating. Oracle and OpenJDK vendors released patches; administrators should upgrade immediately and disable remote debugging features to mitigate risk.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Wiz Research",
@@ -80,13 +159,18 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-114938"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Sophos Threat Research",
+        "sourceUrl": "https://www.sophos.com/en-us/blog/java4shell-could-allow-remote-code-execution"
+      }
+    ],
     "aliases": [
-      "java4shell-cve-2026-114938-enables-remote-code-exe",
-      "article-4a42f239",
-      "4a42f239",
-      "java4shell-cve-2026-114938-enables-remote-code-exe-42a402",
-      "java4shell-cve-2026-114938-enables-remote-code-execution"
+      "java4shell-cve-2026-114938-delivers-unauthenticate",
+      "article-c4f64c44",
+      "c4f64c44",
+      "java4shell-cve-2026-114938-delivers-unauthenticate-42a402",
+      "java4shell-cve-2026-114938-delivers-unauthenticated-remote-c"
     ]
   },
   {
@@ -316,6 +400,27 @@ export const news: NewsBrief[] = [
       "652d6c34",
       "apple-reports-outages-in-icloud-mail-and-related-s-4e2685",
       "apple-reports-outages-in-icloud-mail-and-related-services"
+    ]
+  },
+  {
+    "slug": "aws-efs-utils-toctou-race-condition-cve-2026-13062-105392fa",
+    "title": "AWS efs-utils TOCTOU Race Condition CVE-2026-130621",
+    "summary": "CVE-2026-130621 is a TOCTOU race condition in AWS efs-utils port selection that can let a local user mount EFS volumes on a host. Concurrent mounts enable the attacker to read and write data on other EFS or S3 file systems on the same host, bypassing IAM restrictions. Patches for amazon-efs-utils 3.3.5 and aws-efs-csi-driver are available; upgrade or restrict mount privileges.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-186-aws/",
+    "publishedAt": "2026-11-17T19:18:32.000Z",
+    "cves": [
+      "CVE-2026-130621"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aws-efs-utils-toctou-race-condition-cve-2026-13062",
+      "article-105392fa",
+      "105392fa",
+      "aws-efs-utils-toctou-race-condition-cve-2026-13062-ca0a03",
+      "aws-efs-utils-toctou-race-condition-cve-2026-130621"
     ]
   },
   {
@@ -2208,9 +2313,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "screenconnect-cve-2026-84869-exploited-for-unauthe-9b2fcf9c",
-    "title": "ScreenConnect CVE-2026-84869 Exploited for Unauthenticated Remote Code Execution",
-    "summary": "Attackers targeted more than 40 MSP ScreenConnect servers with 688,000 requests exploiting CVE-2026-84869, an unauthenticated remote code execution flaw involving guest-pushed files. The vulnerability lets attackers bypass authentication and execute commands on on-premises systems without user interaction. ConnectWise recommends upgrading to version 26.6.5 or later and disabling third-party extensions to mitigate exposure.",
+    "slug": "connectwise-screenconnect-cve-2026-84869-exploited-bee2da22",
+    "title": "ConnectWise ScreenConnect CVE-2026-84869 Exploited for Unauthenticated RCE Against MSP Servers",
+    "summary": "Attackers exploited CVE-2026-84869 in ConnectWise ScreenConnect, targeting more than 40 MSP servers with 688,000 requests. The unauthenticated remote code execution flaw, tied to insufficient input validation and guest-pushed files, lets attackers bypass authentication and run commands without user interaction. ConnectWise urges upgrading to version 26.6.5 or later and disabling third-party extensions to reduce exposure.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "The Hacker News",
@@ -2223,14 +2328,18 @@ export const news: NewsBrief[] = [
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/"
+      },
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/msp-screenconnect-servers-targeted-in-month-long-campai"
       }
     ],
     "aliases": [
-      "screenconnect-cve-2026-84869-exploited-for-unauthe",
-      "article-9b2fcf9c",
-      "9b2fcf9c",
-      "screenconnect-cve-2026-84869-exploited-for-unauthe-50e8fc",
-      "screenconnect-cve-2026-84869-exploited-for-unauthenticated-r"
+      "connectwise-screenconnect-cve-2026-84869-exploited",
+      "article-bee2da22",
+      "bee2da22",
+      "connectwise-screenconnect-cve-2026-84869-exploited-50e8fc",
+      "connectwise-screenconnect-cve-2026-84869-exploited-for-unaut"
     ]
   },
   {
@@ -9817,99 +9926,6 @@ export const news: NewsBrief[] = [
       "360a9c71",
       "postgresql-security-update-fixes-52-vulnerabilitie-3d48ad",
       "postgresql-security-update-fixes-52-vulnerabilities-ends-sup"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99741-important-mysql-8-4-security-updat-feec161f",
-    "title": "RHSA-2026:99741: Important: mysql:8.4 security update",
-    "summary": "An update for the mysql:8.4 module is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99741",
-    "publishedAt": "2026-11-12T23:05:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99741-important-mysql-8-4-security-updat",
-      "article-feec161f",
-      "feec161f",
-      "rhsa-2026-99741-important-mysql-8-4-security-updat-37d669",
-      "rhsa-2026-99741-important-mysql-8-4-security-update"
-    ]
-  },
-  {
-    "slug": "chrome-for-android-update-53843f68",
-    "title": "Chrome for Android Update",
-    "summary": "We've just released Chrome 158 (158.0.8127.36) for Android to a small percentage of users. It'll become available on Google Play over the next few days. If you find a new issue, please let us know by filing a bug .",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_012297226.html",
-    "publishedAt": "2026-11-12T23:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-for-android-update",
-      "article-53843f68",
-      "53843f68",
-      "chrome-for-android-update-1c46b4"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99715-important-krb5-security-bug-fix-an-502ec757",
-    "title": "RHSA-2026:99715: Important: krb5 security, bug fix, and enhancement update",
-    "summary": "An update for krb5 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99715",
-    "publishedAt": "2026-11-12T22:53:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99715-important-krb5-security-bug-fix-an",
-      "article-502ec757",
-      "502ec757",
-      "rhsa-2026-99715-important-krb5-security-bug-fix-an-37d669",
-      "rhsa-2026-99715-important-krb5-security-bug-fix-and-enhancem"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99825-important-pki-deps-10-6-security-b-d68d107f",
-    "title": "RHSA-2026:99825: Important: pki-deps:10.6 security, bug fix, and enhancement update",
-    "summary": "An update for the pki-deps:10.6 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99825",
-    "publishedAt": "2026-11-12T22:53:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99825-important-pki-deps-10-6-security-b",
-      "article-d68d107f",
-      "d68d107f",
-      "rhsa-2026-99825-important-pki-deps-10-6-security-b-37d665",
-      "rhsa-2026-99825-important-pki-deps-10-6-security-bug-fix-and"
-    ]
-  },
-  {
-    "slug": "sckit-worm-targets-msps-via-screenconnect-39490bde",
-    "title": "SCKit Worm Targets MSPs via ScreenConnect",
-    "summary": "A worm-like malware toolkit named SCKit has been deployed in recent ScreenConnect attacks against managed service providers. The malware spreads from infected customer devices to MSP technicians' computers, enabling attackers to compromise additional managed networks and exfiltrate data. Security teams should isolate affected systems, update ScreenConnect to the latest version, and monitor for lateral movement.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
-    "publishedAt": "2026-11-12T22:53:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sckit-worm-targets-msps-via-screenconnect",
-      "article-39490bde",
-      "39490bde",
-      "sckit-worm-targets-msps-via-screenconnect-2041b9"
     ]
   }
 ];
