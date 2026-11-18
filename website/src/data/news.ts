@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "north-korea-aligned-actor-uses-blockchain-for-info-e5d7f9a3",
+    "title": "North Korea-aligned Actor Uses Blockchain for Infostealing",
+    "summary": "Cisco Talos linked malicious infrastructure to UAT-12643, a suspected North Korea-aligned threat group targeting financial data via blockchain resilience. The group uses distributed ledger techniques to hide command-and-control traffic, enabling stealthy credential theft, though no confirmed breach has been reported. Security teams should monitor anomalous blockchain traffic, enforce strict access controls, and segment networks to mitigate potential exfiltration.",
+    "category": "Nation State",
+    "severity": "MEDIUM",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/",
+    "publishedAt": "2026-11-18T11:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-korea-aligned-actor-uses-blockchain-for-info",
+      "article-e5d7f9a3",
+      "e5d7f9a3",
+      "north-korea-aligned-actor-uses-blockchain-for-info-d324fe",
+      "north-korea-aligned-actor-uses-blockchain-for-infostealing"
+    ]
+  },
+  {
     "slug": "perforce-puppet-rce-exploited-in-attacks-68226550",
     "title": "Perforce Puppet RCE Exploited in Attacks",
     "summary": "Perforce Puppet’s CVE-2026-115731 flaw lets a client with a CA-signed agent certificate execute arbitrary code on the server. The flaw bypasses authentication via certificate validation, enabling attackers to achieve full server compromise; it is actively exploited with a CVSS score of 9.4. Perforce issued an urgent patch; administrators should update immediately or apply the provided work-around to mitigate the risk.",
@@ -28,6 +47,25 @@ export const news: NewsBrief[] = [
       "article-68226550",
       "68226550",
       "perforce-puppet-rce-exploited-in-attacks-18185c"
+    ]
+  },
+  {
+    "slug": "bitly-links-hijacked-in-historic-burger-king-mcdon-22a2db72",
+    "title": "Bitly Links Hijacked in Historic Burger King, McDonald’s Posts",
+    "summary": "Bitly links embedded in Burger King, McDonald’s, and Trump X posts from 2009-2014 now redirect users to unrelated sites. The hijacking exploits Bitly’s stale link database, allowing attackers to alter destination URLs without authentication, causing users to view offensive content or malware. Bitly has issued a notice to update link management policies and users should verify link destinations before clicking.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-old-bitly-links/",
+    "publishedAt": "2026-11-18T10:27:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bitly-links-hijacked-in-historic-burger-king-mcdon",
+      "article-22a2db72",
+      "22a2db72",
+      "bitly-links-hijacked-in-historic-burger-king-mcdon-5cc75d",
+      "bitly-links-hijacked-in-historic-burger-king-mcdonald-s-post"
     ]
   },
   {
@@ -66,6 +104,25 @@ export const news: NewsBrief[] = [
       "bc339d8d",
       "microsoft-unveils-windows-server-2028-with-hardene-296474",
       "microsoft-unveils-windows-server-2028-with-hardened-security"
+    ]
+  },
+  {
+    "slug": "fake-freight-portals-steal-trucking-credentials-an-d0102afe",
+    "title": "Fake Freight Portals Steal Trucking Credentials and Deploy Malware",
+    "summary": "Hackers target US trucking firms with counterfeit freight portals and bogus broker paperwork to harvest credentials. The sites capture fleet fuel card passwords and one-time codes, while malware disguised as routine downloads grants remote access. Security teams should verify portal authenticity, enforce MFA, and monitor download activity to prevent credential theft and malware.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fake-freight-portals/",
+    "publishedAt": "2026-11-18T09:05:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-freight-portals-steal-trucking-credentials-an",
+      "article-d0102afe",
+      "d0102afe",
+      "fake-freight-portals-steal-trucking-credentials-an-2f37b4",
+      "fake-freight-portals-steal-trucking-credentials-and-deploy-m"
     ]
   },
   {
@@ -165,6 +222,25 @@ export const news: NewsBrief[] = [
       "a3d38f2a",
       "defense-firms-targeted-by-gravityrat-phishing-camp-304350",
       "defense-firms-targeted-by-gravityrat-phishing-campaign"
+    ]
+  },
+  {
+    "slug": "japan-shuts-fugaku-supercomputer-after-internal-br-4e9a52dc",
+    "title": "Japan Shuts Fugaku Supercomputer After Internal Breach",
+    "summary": "RIKEN shut down its Fugaku supercomputer after attackers breached the internal operations network and installed malware on servers. The breach exposed credentials for up to 4,597 users across Fugaku and RIKYU, potentially compromising research data, though no exfiltration evidence surfaced. RIKEN suspended operations, applied patches, and is conducting a forensic investigation to assess the breach scope and reinforce network segmentation.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/japan-shuts-down-fugaku-supercomputer/",
+    "publishedAt": "2026-11-18T07:59:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "japan-shuts-fugaku-supercomputer-after-internal-br",
+      "article-4e9a52dc",
+      "4e9a52dc",
+      "japan-shuts-fugaku-supercomputer-after-internal-br-6d9519",
+      "japan-shuts-fugaku-supercomputer-after-internal-breach"
     ]
   },
   {
@@ -9842,87 +9918,6 @@ export const news: NewsBrief[] = [
       "875437a6",
       "trendai-vision-one-agent-flaw-enables-privilege-es-6f3d26",
       "trendai-vision-one-agent-flaw-enables-privilege-escalation"
-    ]
-  },
-  {
-    "slug": "smartermail-file-edit-api-directory-traversal-rce-d905c3d4",
-    "title": "SmarterMail File Edit API Directory Traversal RCE",
-    "summary": "SmarterMail's File Edit API permits directory traversal, allowing authenticated attackers to execute code on the server. The flaw, assigned 'CVE-2026-126967', carries a CVSS score of 8.8 and has a public PoC. Administrators should apply the vendor patch released with the latest SmarterMail update and restrict API access promptly and monitor.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-994/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126967"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "smartermail-file-edit-api-directory-traversal-rce",
-      "article-d905c3d4",
-      "d905c3d4",
-      "smartermail-file-edit-api-directory-traversal-rce-6f3d2a"
-    ]
-  },
-  {
-    "slug": "hinemos-agent-improper-certificate-validation-rce-42a0f1b4",
-    "title": "Hinemos Agent Improper Certificate Validation RCE",
-    "summary": "Hinemos Agent suffers an improper certificate validation flaw that lets network-adjacent attackers execute code without authentication. The vulnerability, identified as 'CVE-2026-126963', has a CVSS score of 7.5 and is exploitable via crafted certificates. Users must install the agent update that addresses the issue and enforce strict certificate validation policies immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-991/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126963"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "hinemos-agent-improper-certificate-validation-rce",
-      "article-42a0f1b4",
-      "42a0f1b4",
-      "hinemos-agent-improper-certificate-validation-rce-6f3d29"
-    ]
-  },
-  {
-    "slug": "open62541-subscription-use-after-free-rce-vulnerab-25e94e75",
-    "title": "open62541 Subscription Use-After-Free RCE Vulnerability",
-    "summary": "A use-after-free flaw in open62541’s subscription handling permits authenticated remote attackers to execute arbitrary code. Identified as CVE-2026-126962, the flaw has a CVSS score of 8.8, enabling high-severity remote code execution with valid credentials. No patch has been released; teams should monitor the vendor for updates and apply mitigations when available.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-990/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126962"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "open62541-subscription-use-after-free-rce-vulnerab",
-      "article-25e94e75",
-      "25e94e75",
-      "open62541-subscription-use-after-free-rce-vulnerab-6f3d29",
-      "open62541-subscription-use-after-free-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "trendai-apex-one-uncontrolled-search-path-exploit-b53a257a",
-    "title": "TrendAI Apex One Uncontrolled Search Path Exploit",
-    "summary": "TrendAI Apex One server contains a search path element flaw that lets local attackers elevate privileges with low-privileged code execution. The flaw, CVE-2026-111777, scores 7.8 on CVSS and permits local privilege escalation without remote code execution. TrendAI released a patch; apply it or restrict local code execution to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-989/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111777"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "trendai-apex-one-uncontrolled-search-path-exploit",
-      "article-b53a257a",
-      "b53a257a",
-      "trendai-apex-one-uncontrolled-search-path-exploit-6f3d26"
     ]
   }
 ];

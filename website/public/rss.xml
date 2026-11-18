@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 10:46:08 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 11:45:37 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>North Korea-aligned Actor Uses Blockchain for Infostealing</title>
+      <link>https://secubuzz.com/news/north-korea-aligned-actor-uses-blockchain-for-info-e5d7f9a3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/north-korea-aligned-actor-uses-blockchain-for-info-e5d7f9a3</guid>
+      <description><![CDATA[Cisco Talos linked malicious infrastructure to UAT-12643, a suspected North Korea-aligned threat group targeting financial data via blockchain resilience. The group uses distributed ledger techniques to hide command-and-control traffic, enabling stealthy credential theft, though no confirmed breach has been reported. Security teams should monitor anomalous blockchain traffic, enforce strict access controls, and segment networks to mitigate potential exfiltration.]]></description>
+      <pubDate>Wed, 18 Nov 2026 11:00:00 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/">Cisco Talos</source>
+      <category>Nation State</category>
+    </item>
     <item>
       <title>Perforce Puppet RCE Exploited in Attacks</title>
       <link>https://secubuzz.com/news/perforce-puppet-rce-exploited-in-attacks-68226550</link>
@@ -15,6 +24,15 @@
       <pubDate>Wed, 18 Nov 2026 10:37:08 GMT</pubDate>
       <source url="https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/">SecurityWeek</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Bitly Links Hijacked in Historic Burger King, McDonald’s Posts</title>
+      <link>https://secubuzz.com/news/bitly-links-hijacked-in-historic-burger-king-mcdon-22a2db72</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bitly-links-hijacked-in-historic-burger-king-mcdon-22a2db72</guid>
+      <description><![CDATA[Bitly links embedded in Burger King, McDonald’s, and Trump X posts from 2009-2014 now redirect users to unrelated sites. The hijacking exploits Bitly’s stale link database, allowing attackers to alter destination URLs without authentication, causing users to view offensive content or malware. Bitly has issued a notice to update link management policies and users should verify link destinations before clicking.]]></description>
+      <pubDate>Wed, 18 Nov 2026 10:27:25 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-hijack-old-bitly-links/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Anthropic Cuts Vulnerability Disclosure Deadline to 30 Days</title>
@@ -33,6 +51,15 @@
       <pubDate>Wed, 18 Nov 2026 09:24:31 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Fake Freight Portals Steal Trucking Credentials and Deploy Malware</title>
+      <link>https://secubuzz.com/news/fake-freight-portals-steal-trucking-credentials-an-d0102afe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-freight-portals-steal-trucking-credentials-an-d0102afe</guid>
+      <description><![CDATA[Hackers target US trucking firms with counterfeit freight portals and bogus broker paperwork to harvest credentials. The sites capture fleet fuel card passwords and one-time codes, while malware disguised as routine downloads grants remote access. Security teams should verify portal authenticity, enforce MFA, and monitor download activity to prevent credential theft and malware.]]></description>
+      <pubDate>Wed, 18 Nov 2026 09:05:41 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fake-freight-portals/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Ubuntu AI security patches are here, if you’re willing to test them yourself</title>
@@ -78,6 +105,15 @@
       <pubDate>Wed, 18 Nov 2026 08:07:47 GMT</pubDate>
       <source url="https://cybersecuritynews.com/spread-gravityrat-spyware/">Cyber Security News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Japan Shuts Fugaku Supercomputer After Internal Breach</title>
+      <link>https://secubuzz.com/news/japan-shuts-fugaku-supercomputer-after-internal-br-4e9a52dc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/japan-shuts-fugaku-supercomputer-after-internal-br-4e9a52dc</guid>
+      <description><![CDATA[RIKEN shut down its Fugaku supercomputer after attackers breached the internal operations network and installed malware on servers. The breach exposed credentials for up to 4,597 users across Fugaku and RIKYU, potentially compromising research data, though no exfiltration evidence surfaced. RIKEN suspended operations, applied patches, and is conducting a forensic investigation to assess the breach scope and reinforce network segmentation.]]></description>
+      <pubDate>Wed, 18 Nov 2026 07:59:16 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/japan-shuts-down-fugaku-supercomputer/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Deutsche Telekom IoT CEO Discusses 20-Year Device Security</title>
@@ -420,42 +456,6 @@
       <pubDate>Tue, 17 Nov 2026 20:43:14 GMT</pubDate>
       <source url="https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/">Unit 42</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Quad9 Pulls Out of France Over DNS Blocking Risks</title>
-      <link>https://secubuzz.com/news/quad9-pulls-out-of-france-over-dns-blocking-risks-d351e463</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/quad9-pulls-out-of-france-over-dns-blocking-risks-d351e463</guid>
-      <description><![CDATA[Quad9 was forced to withdraw its public DNS resolver from France after government mandates required content filtering. Mandating DNS-level blocking is technically flawed, as resolvers cannot enforce policy without compromising privacy, performance, and the open Internet. The incident highlights the need for policy that separates DNS resolution from content filtering and promotes transparent, opt-in mechanisms.]]></description>
-      <pubDate>Tue, 17 Nov 2026 20:24:27 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/quad9-withdrawal-from-france/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CVE-2026-130622 and CVE-2026-130623 - Incorrect authorization in credential loading and handling for namespace-scoped issuers in AWS Private CA Connector for Kubernetes (aws-privateca-issuer)</title>
-      <link>https://secubuzz.com/news/cve-2026-130622-and-cve-2026-130623-incorrect-auth-2c8ce2c4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-130622-and-cve-2026-130623-incorrect-auth-2c8ce2c4</guid>
-      <description><![CDATA[Impacted versions: - aws-privateca-issuer before v1.12.0 - AWS Private CA Connector for Kubernetes EKS add-on before v1.12.0-eksbuild.1 Refer to the article for the most up-to-date and complete information.]]></description>
-      <pubDate>Tue, 17 Nov 2026 20:11:26 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-187-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Oracle Issues November 2026 Patch Advisory</title>
-      <link>https://secubuzz.com/news/oracle-issues-november-2026-patch-advisory-123ac931</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/oracle-issues-november-2026-patch-advisory-123ac931</guid>
-      <description><![CDATA[Oracle issued a critical patch update advisory for November 2026, addressing multiple undisclosed security issues. The advisory does not list specific CVE identifiers or detailed exploit mechanisms, but it is part of Oracle's ongoing security maintenance program. Security teams should apply the available patches as soon as they become available to maintain system integrity.]]></description>
-      <pubDate>Tue, 17 Nov 2026 20:00:00 GMT</pubDate>
-      <source url="https://www.oracle.com/security-alerts/cspunov2026.html">Oracle Security Alerts</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chrome 158 Released for Android</title>
-      <link>https://secubuzz.com/news/chrome-158-released-for-android-f361bc03</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-released-for-android-f361bc03</guid>
-      <description><![CDATA[Google released Chrome 158 (158.0.8127.42) for Android, adding stability and performance improvements. The update mirrors the security fixes present in the corresponding desktop releases for Windows, Mac, and Linux. Users can obtain the new version via Google Play within the next few days, and bug reports should be filed through the official channels.]]></description>
-      <pubDate>Tue, 17 Nov 2026 19:57:34 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0281314271.html">Google Chrome Releases</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

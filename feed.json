@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/",
+    "sourceUrl": "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/",
+    "title": "North Korea-aligned Actor Uses Blockchain for Infostealing",
+    "headline": "North Korea-aligned Actor Uses Blockchain for Infostealing",
+    "summary": "Cisco Talos linked malicious infrastructure to UAT-12643, a suspected North Korea-aligned threat group targeting financial data via blockchain resilience. The group uses distributed ledger techniques to hide command-and-control traffic, enabling stealthy credential theft, though no confirmed breach has been reported. Security teams should monitor anomalous blockchain traffic, enforce strict access controls, and segment networks to mitigate potential exfiltration.",
+    "category": "NATION_STATE",
+    "severity": "MEDIUM",
+    "source": "Cisco Talos",
+    "publishedAt": "2026-11-18T11:00:00.000Z",
+    "ingestedAt": "2026-11-18T11:44:06.475Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
     "sourceUrl": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
     "title": "Perforce Puppet RCE Exploited in Attacks",
@@ -13,6 +29,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/hackers-hijack-old-bitly-links/",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-old-bitly-links/",
+    "title": "Bitly Links Hijacked in Historic Burger King, McDonald’s Posts",
+    "headline": "Bitly Links Hijacked in Historic Burger King, McDonald’s Posts",
+    "summary": "Bitly links embedded in Burger King, McDonald’s, and Trump X posts from 2009-2014 now redirect users to unrelated sites. The hijacking exploits Bitly’s stale link database, allowing attackers to alter destination URLs without authentication, causing users to view offensive content or malware. Bitly has issued a notice to update link management policies and users should verify link destinations before clicking.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-18T10:27:25.000Z",
+    "ingestedAt": "2026-11-18T11:43:56.826Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/hackers-hijack-old-bitly-links/",
     "additionalSources": []
   },
   {
@@ -45,6 +77,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/fake-freight-portals/",
+    "sourceUrl": "https://cybersecuritynews.com/fake-freight-portals/",
+    "title": "Fake Freight Portals Steal Trucking Credentials and Deploy Malware",
+    "headline": "Fake Freight Portals Steal Trucking Credentials and Deploy Malware",
+    "summary": "Hackers target US trucking firms with counterfeit freight portals and bogus broker paperwork to harvest credentials. The sites capture fleet fuel card passwords and one-time codes, while malware disguised as routine downloads grants remote access. Security teams should verify portal authenticity, enforce MFA, and monitor download activity to prevent credential theft and malware.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-18T09:05:41.000Z",
+    "ingestedAt": "2026-11-18T11:44:06.475Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/fake-freight-portals/",
     "additionalSources": []
   },
   {
@@ -128,6 +176,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/spread-gravityrat-spyware/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/japan-shuts-down-fugaku-supercomputer/",
+    "sourceUrl": "https://cybersecuritynews.com/japan-shuts-down-fugaku-supercomputer/",
+    "title": "Japan Shuts Fugaku Supercomputer After Internal Breach",
+    "headline": "Japan Shuts Fugaku Supercomputer After Internal Breach",
+    "summary": "RIKEN shut down its Fugaku supercomputer after attackers breached the internal operations network and installed malware on servers. The breach exposed credentials for up to 4,597 users across Fugaku and RIKYU, potentially compromising research data, though no exfiltration evidence surfaced. RIKEN suspended operations, applied patches, and is conducting a forensic investigation to assess the breach scope and reinforce network segmentation.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-18T07:59:16.000Z",
+    "ingestedAt": "2026-11-18T11:44:06.475Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/japan-shuts-down-fugaku-supercomputer/",
     "additionalSources": []
   },
   {
@@ -8353,70 +8417,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-985/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-994/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-994/",
-    "title": "SmarterMail File Edit API Directory Traversal RCE",
-    "headline": "SmarterMail File Edit API Directory Traversal RCE",
-    "summary": "SmarterMail's File Edit API permits directory traversal, allowing authenticated attackers to execute code on the server. The flaw, assigned 'CVE-2026-126967', carries a CVSS score of 8.8 and has a public PoC. Administrators should apply the vendor patch released with the latest SmarterMail update and restrict API access promptly and monitor.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "ingestedAt": "2026-11-14T01:43:02.056Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-994/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-991/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-991/",
-    "title": "Hinemos Agent Improper Certificate Validation RCE",
-    "headline": "Hinemos Agent Improper Certificate Validation RCE",
-    "summary": "Hinemos Agent suffers an improper certificate validation flaw that lets network-adjacent attackers execute code without authentication. The vulnerability, identified as 'CVE-2026-126963', has a CVSS score of 7.5 and is exploitable via crafted certificates. Users must install the agent update that addresses the issue and enforce strict certificate validation policies immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "ingestedAt": "2026-11-14T01:43:02.056Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-991/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-990/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-990/",
-    "title": "open62541 Subscription Use-After-Free RCE Vulnerability",
-    "headline": "open62541 Subscription Use-After-Free RCE Vulnerability",
-    "summary": "A use-after-free flaw in open62541’s subscription handling permits authenticated remote attackers to execute arbitrary code. Identified as CVE-2026-126962, the flaw has a CVSS score of 8.8, enabling high-severity remote code execution with valid credentials. No patch has been released; teams should monitor the vendor for updates and apply mitigations when available.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "ingestedAt": "2026-11-14T01:43:10.692Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-990/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-989/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-989/",
-    "title": "TrendAI Apex One Uncontrolled Search Path Exploit",
-    "headline": "TrendAI Apex One Uncontrolled Search Path Exploit",
-    "summary": "TrendAI Apex One server contains a search path element flaw that lets local attackers elevate privileges with low-privileged code execution. The flaw, CVE-2026-111777, scores 7.8 on CVSS and permits local privilege escalation without remote code execution. TrendAI released a patch; apply it or restrict local code execution to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "ingestedAt": "2026-11-14T01:44:59.038Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-989/",
     "additionalSources": []
   }
 ]
