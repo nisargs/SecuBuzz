@@ -11,6 +11,174 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "gentlemen-ransomware-gang-claims-nvidia-breach-2d18cebf",
+    "title": "Gentlemen Ransomware Gang Claims NVIDIA Breach",
+    "summary": "The Gentlemen ransomware group posted a claim of breaching NVIDIA on its dark-web leak site. The post includes a countdown and ransom talk references but lacks sample files or confirmed compromise evidence. NVIDIA has not publicly confirmed a breach, and no definitive proof of infiltration has been disclosed in the public domain.",
+    "category": "Ransomware",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/nvidia-data-breach-claim/",
+    "publishedAt": "2026-11-18T13:37:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gentlemen-ransomware-gang-claims-nvidia-breach",
+      "article-2d18cebf",
+      "2d18cebf",
+      "gentlemen-ransomware-gang-claims-nvidia-breach-60b88c"
+    ]
+  },
+  {
+    "slug": "russian-apt-impersonates-hacked-firm-employee-to-t-2d9b132f",
+    "title": "Russian APT Impersonates Hacked Firm Employee to Target US Org",
+    "summary": "A Russian APT used stolen Star Blizzard credentials to pose as an employee of a compromised firm and phish a U.S. organization. The attack leveraged data and social engineering to gain initial access by exploiting the target's trust in the impersonated identity. Security teams should verify employee identities, enforce MFA, and monitor for anomalous credential usage to mitigate impersonation attacks.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/",
+    "publishedAt": "2026-11-18T13:33:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russian-apt-impersonates-hacked-firm-employee-to-t",
+      "article-2d9b132f",
+      "2d9b132f",
+      "russian-apt-impersonates-hacked-firm-employee-to-t-252ccd",
+      "russian-apt-impersonates-hacked-firm-employee-to-target-us-o"
+    ]
+  },
+  {
+    "slug": "malwarebytes-engineers-secure-their-own-antivirus-b2853287",
+    "title": "Malwarebytes Engineers Secure Their Own Antivirus",
+    "summary": "Malwarebytes engineers discuss protecting their antivirus platform from malware that could disable or bypass its defenses. The article outlines defensive strategies, including code integrity checks, runtime monitoring, and secure update mechanisms to thwart disabling attacks. Security teams should adopt similar integrity verification and update safeguards to maintain antivirus resilience against disabling malware.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/inside-malwarebytes/2026/11/who-protects-the-antivirus-how-we-secure-malwarebytes-itself",
+    "publishedAt": "2026-11-18T13:32:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malwarebytes-engineers-secure-their-own-antivirus",
+      "article-b2853287",
+      "b2853287",
+      "malwarebytes-engineers-secure-their-own-antivirus-564ccb"
+    ]
+  },
+  {
+    "slug": "google-chrome-vulnerability-affects-versions-befor-a7e6781c",
+    "title": "Google Chrome Vulnerability Affects Versions Before 158.0.8127.36",
+    "summary": "A vulnerability affects Google Chrome stable channel desktop versions before 158.0.8127.36 on Windows, Mac, and Linux. The flaw, lacking a CVE ID, is not publicly exploited but could enable code execution or session compromise. Google advises users to review the advisory and install the latest Chrome update promptly to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1171",
+    "publishedAt": "2026-11-18T13:31:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-chrome-vulnerability-affects-versions-befor",
+      "article-a7e6781c",
+      "a7e6781c",
+      "google-chrome-vulnerability-affects-versions-befor-170ca3",
+      "google-chrome-vulnerability-affects-versions-before-158-0-81"
+    ]
+  },
+  {
+    "slug": "oracle-vulnerabilities-span-multiple-products-69bc02a2",
+    "title": "Oracle Vulnerabilities Span Multiple Products",
+    "summary": "Oracle disclosed vulnerabilities in several products, including Helidon, JD Edwards EnterpriseOne Localizations, MySQL Cluster, MySQL Server, MySQL Workbench, Oracle APEX, Access Manager, Agile PLM, and Oracle Communications components. No CVE IDs or exploit details are given, but the flaws could allow unauthorized access or code execution. Oracle advises applying the available patches or following vendor guidance to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/oracle-corporation-security-advisory-av26-1170",
+    "publishedAt": "2026-11-18T12:51:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-vulnerabilities-span-multiple-products",
+      "article-69bc02a2",
+      "69bc02a2",
+      "oracle-vulnerabilities-span-multiple-products-490b08"
+    ]
+  },
+  {
+    "slug": "ai-pentesting-gaps-exposed-by-early-exploitation-0d3b07a7",
+    "title": "AI Pentesting Gaps Exposed by Early Exploitation",
+    "summary": "Attackers now exploit vulnerabilities before patches are released, with 23% of newly added exploits being active on or before disclosure. The report highlights that AI pentesting vendors are not interchangeable, as gaps often appear in logged-in flows, coverage, and production safety. Security teams should evaluate vendors against these criteria before engagement to ensure comprehensive coverage and reduce early exploitation risk.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
+    "publishedAt": "2026-11-18T12:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-pentesting-gaps-exposed-by-early-exploitation",
+      "article-0d3b07a7",
+      "0d3b07a7",
+      "ai-pentesting-gaps-exposed-by-early-exploitation-4de91c"
+    ]
+  },
+  {
+    "slug": "microsoft-launches-perception-agentic-security-pla-9b866ec5",
+    "title": "Microsoft Launches Perception Agentic Security Platform",
+    "summary": "Microsoft has moved its Perception Agentic Security Platform from preview to general availability, releasing four blue-team agents and a Recon Agent. Integrations and vulnerability shielding features remain in preview, indicating ongoing development for broader threat detection and response capabilities. Security teams should monitor Microsoft’s release notes for updates and plan to incorporate the new agents into their defensive workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
+    "publishedAt": "2026-11-18T12:14:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-launches-perception-agentic-security-pla",
+      "article-9b866ec5",
+      "9b866ec5",
+      "microsoft-launches-perception-agentic-security-pla-7ec6da",
+      "microsoft-launches-perception-agentic-security-platform"
+    ]
+  },
+  {
+    "slug": "france-blames-iran-for-fridge-cyberattacks-7f34dac8",
+    "title": "France Blames Iran for Fridge Cyberattacks",
+    "summary": "U.S. intelligence agencies assessed Iran responsible for a series of fridge cyberattacks targeting French facilities. The low-confidence assessment links attacks to Iran, not a specific group, and hints at similar incidents across Europe. No public patch is required, but teams should monitor critical IoT device vulnerabilities for potential supply-chain risks.",
+    "category": "Nation State",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
+    "publishedAt": "2026-11-18T12:05:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "france-blames-iran-for-fridge-cyberattacks",
+      "article-7f34dac8",
+      "7f34dac8",
+      "france-blames-iran-for-fridge-cyberattacks-386f92"
+    ]
+  },
+  {
+    "slug": "cisa-flags-active-exploitation-of-puppet-enterpris-5f16325d",
+    "title": "CISA Flags Active Exploitation of Puppet Enterprise Vulnerability",
+    "summary": "CISA identified an actively exploited vulnerability in Perforce Puppet Enterprise that allows remote code execution on Puppet Servers. Cataloged as CVE-2026-115731, the flaw permits unauthenticated attackers to run arbitrary code via a malformed request, with evidence of in-the-wild exploitation. Perforce released an urgent patch; administrators should apply it immediately and disable exposed endpoints until the fix is deployed.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/puppet-enterprise-flaw-actively-exploited/",
+    "publishedAt": "2026-11-18T11:59:36.000Z",
+    "cves": [
+      "CVE-2026-115731"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-flags-active-exploitation-of-puppet-enterpris",
+      "article-5f16325d",
+      "5f16325d",
+      "cisa-flags-active-exploitation-of-puppet-enterpris-16eb38",
+      "cisa-flags-active-exploitation-of-puppet-enterprise-vulnerab"
+    ]
+  },
+  {
     "slug": "chrome-158-addresses-204-vulnerabilities-35777c9e",
     "title": "Chrome 158 Addresses 204 Vulnerabilities",
     "summary": "Google released Chrome 158, fixing 204 security issues across the browser. The update includes five externally reported flaws with bounty payouts of $11,000 each, while the remaining 36 bugs' rewards remain undetermined. Users should install the latest Chrome version across all supported platforms to ensure protection against the patched vulnerabilities.",
@@ -199,6 +367,25 @@ export const news: NewsBrief[] = [
       "04b1c649",
       "tails-issues-emergency-update-for-ublock-origin-fl-26f96a",
       "tails-issues-emergency-update-for-ublock-origin-flaw"
+    ]
+  },
+  {
+    "slug": "atlassian-patches-318-security-across-jira-conflue-39f4da5a",
+    "title": "Atlassian Patches 318 Security . Across Jira, Confluence, Bitbucket and Other Products",
+    "summary": "Atlassian’s November 2026 security bulletin lists fixes for 318 vulnerability entries across Jira Software, Jira Service Management, Confluence, Bitbucket, Bamboo, Crowd, Fisheye and Crucible. Published on November 17, the bulletin covers fixes shipped in product releases over the previous month. Atlassian counted 266 high-severity entries and 52 critical entries involving third-party components.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/atlassian-patches-318-security-vulnerabilities/",
+    "publishedAt": "2026-11-18T09:43:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "atlassian-patches-318-security-across-jira-conflue",
+      "article-39f4da5a",
+      "39f4da5a",
+      "atlassian-patches-318-security-across-jira-conflue-5226a0",
+      "atlassian-patches-318-security-across-jira-confluence-bitbuc"
     ]
   },
   {
@@ -9701,211 +9888,6 @@ export const news: NewsBrief[] = [
       "11ca4076",
       "philips-hue-bridge-default-password-bypass-exposes-6f3d1e",
       "philips-hue-bridge-default-password-bypass-exposes-authentic"
-    ]
-  },
-  {
-    "slug": "winmate-hottab-dangerous-function-enables-local-pr-e3a7c508",
-    "title": "Winmate HotTab Dangerous Function Enables Local Privilege Escalation",
-    "summary": "A local privilege escalation flaw in Winmate HotTab’s dangerous function allows attackers who already execute low-privileged code to gain elevated rights. The issue, labeled CVE-2026-118630, carries a CVSS score of 8.8, reflecting a high-severity local privilege escalation risk. Winmate has released a firmware update that mitigates the dangerous function; administrators should apply the patch to prevent privilege escalation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-961/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-118630"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "winmate-hottab-dangerous-function-enables-local-pr",
-      "article-e3a7c508",
-      "e3a7c508",
-      "winmate-hottab-dangerous-function-enables-local-pr-6f3d1e",
-      "winmate-hottab-dangerous-function-enables-local-privilege-es"
-    ]
-  },
-  {
-    "slug": "falcon-ai-gateway-centralizes-ai-traffic-control-a7e4ec20",
-    "title": "Falcon AI Gateway Centralizes AI Traffic Control",
-    "summary": "CrowdStrike introduced the Falcon AI Gateway, a control point for managing AI traffic across enterprise environments. The gateway aggregates inbound and outbound AI requests, enabling policy enforcement, monitoring, and threat detection without exposing internal networks to external AI services. Administrators can deploy the gateway via Falcon platform, configure traffic rules, and integrate with existing security controls to secure AI workloads.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/falcon-ai-gateway-one-control-point-for-ai-traffic/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "falcon-ai-gateway-centralizes-ai-traffic-control",
-      "article-a7e4ec20",
-      "a7e4ec20",
-      "falcon-ai-gateway-centralizes-ai-traffic-control-269a92"
-    ]
-  },
-  {
-    "slug": "netgate-pfsense-flaw-enables-authenticated-remote-740fdbf5",
-    "title": "Netgate pfSense Flaw Enables Authenticated Remote Code Execution",
-    "summary": "Netgate pfSense CE contains a remote code execution vulnerability involving the XMLRPC interface. Tracked as CVE-2026-92182 with a CVSS rating of 8.8, the flaw stems from incorrect authorization mechanisms allowing authenticated attackers to execute arbitrary code. Security teams managing affected Netgate pfSense installations should apply the appropriate vendor patches or restrictive authorization controls to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-960/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92182"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "netgate-pfsense-flaw-enables-authenticated-remote",
-      "article-740fdbf5",
-      "740fdbf5",
-      "netgate-pfsense-flaw-enables-authenticated-remote-6f3d1e",
-      "netgate-pfsense-flaw-enables-authenticated-remote-code-execu"
-    ]
-  },
-  {
-    "slug": "trendai-agent-local-privilege-escalation-exploit-f8dfaae0",
-    "title": "TrendAI Agent Local Privilege Escalation Exploit",
-    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low-privileged code gain elevated rights. The flaw arises from an origin validation error, rated CVSS 7.8, and is identified as CVE-2026-111780. TrendAI has issued a patch; administrators should apply the update or disable the feature to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-979/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111780"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "trendai-agent-local-privilege-escalation-exploit",
-      "article-f8dfaae0",
-      "f8dfaae0",
-      "trendai-agent-local-privilege-escalation-exploit-6f3d23"
-    ]
-  },
-  {
-    "slug": "trendai-agent-local-privilege-escalation-vulnerabi-9ad4d28c",
-    "title": "TrendAI Agent Local Privilege Escalation Vulnerability",
-    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low-privileged code gain elevated rights. The flaw arises from an origin validation error, rated CVSS 7.8, and is identified as CVE-2026-111779. TrendAI has issued a patch; administrators should apply the update or disable the feature to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-978/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111779"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "trendai-agent-local-privilege-escalation-vulnerabi",
-      "article-9ad4d28c",
-      "9ad4d28c",
-      "trendai-agent-local-privilege-escalation-vulnerabi-6f3d23",
-      "trendai-agent-local-privilege-escalation-vulnerability"
-    ]
-  },
-  {
-    "slug": "philips-hue-bridge-homekit-auth-bypass-b867fb57",
-    "title": "Philips Hue Bridge HomeKit Auth Bypass",
-    "summary": "A network-adjacent authentication bypass flaw in Philips Hue Bridge allows attackers to access HomeKit services without credentials. The vulnerability, identified as CVE-2026-126981, is rated CVSS 8.1 and permits unauthenticated access to the bridge’s management interface. Philips has released a firmware update; users should upgrade to the latest version or disable HomeKit integration to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-966/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126981"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "philips-hue-bridge-homekit-auth-bypass",
-      "article-b867fb57",
-      "b867fb57",
-      "philips-hue-bridge-homekit-auth-bypass-6f3d1f"
-    ]
-  },
-  {
-    "slug": "philips-hue-bridge-rce-via-chacha20-decrypt-underf-c4a59c97",
-    "title": "Philips Hue Bridge RCE via chacha20_decrypt Underflow",
-    "summary": "An integer underflow in Philips Hue Bridge’s HomeKit accessory protocol permits remote code execution for network-adjacent attackers. The flaw, CVE-2026-126979, scores CVSS 8.8, is exploitable without authentication, has a public PoC, and lets attackers run arbitrary code. Users should apply the vendor-issued firmware patch immediately to prevent exploitation and secure their smart-home networks.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-964/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-126979"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "philips-hue-bridge-rce-via-chacha20-decrypt-underf",
-      "article-c4a59c97",
-      "c4a59c97",
-      "philips-hue-bridge-rce-via-chacha20-decrypt-underf-6f3d1e",
-      "philips-hue-bridge-rce-via-chacha20-decrypt-underflow"
-    ]
-  },
-  {
-    "slug": "trendai-vision-one-agent-local-privilege-escalatio-7e1d2862",
-    "title": "TrendAI Vision One Agent Local Privilege Escalation Exploit",
-    "summary": "TrendAI Vision One Security Agent has a local privilege escalation flaw enabling low-privileged code execution to elevate privileges. Assigned CVE-2026-111781 and rated CVSS 7.8, the flaw requires local code execution and is not remotely exploitable, but can compromise system integrity. TrendAI released a patch; users should update the agent promptly and restrict local code execution privileges to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-980/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111781"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "trendai-vision-one-agent-local-privilege-escalatio",
-      "article-7e1d2862",
-      "7e1d2862",
-      "trendai-vision-one-agent-local-privilege-escalatio-6f3d25",
-      "trendai-vision-one-agent-local-privilege-escalation-exploit"
-    ]
-  },
-  {
-    "slug": "trendai-vision-one-agent-privilege-escalation-via-da92b515",
-    "title": "TrendAI Vision One Agent Privilege Escalation via Origin Error",
-    "summary": "TrendAI Vision One Security Agent contains a local privilege escalation flaw that lets attackers raise privileges on affected installations. The flaw arises from an origin validation error; CVE-2026-111778 scores 7.8, indicating high-severity exploitation potential. Apply TrendAI’s patch or upgrade to the latest agent; meanwhile, limit local privileges and monitor for escalation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-977/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111778"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "trendai-vision-one-agent-privilege-escalation-via",
-      "article-da92b515",
-      "da92b515",
-      "trendai-vision-one-agent-privilege-escalation-via-6f3d22",
-      "trendai-vision-one-agent-privilege-escalation-via-origin-err"
-    ]
-  },
-  {
-    "slug": "trendai-agent-heap-overflow-enables-local-privileg-ca133de0",
-    "title": "TrendAI Agent Heap Overflow Enables Local Privilege Escalation",
-    "summary": "A heap-based buffer overflow in TrendAI Vision One Security Agent’s TMBMServer lets local attackers elevate privileges on affected installations. The flaw, CVE-2026-111785, requires low-privileged code execution and carries a CVSS score of 7.8, indicating high-severity impact. TrendAI has issued a patch; apply it immediately or use the provided workaround to mitigate the privilege escalation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-984/",
-    "publishedAt": "2026-11-13T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111785"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "trendai-agent-heap-overflow-enables-local-privileg",
-      "article-ca133de0",
-      "ca133de0",
-      "trendai-agent-heap-overflow-enables-local-privileg-6f3d26",
-      "trendai-agent-heap-overflow-enables-local-privilege-escalati"
     ]
   }
 ];

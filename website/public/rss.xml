@@ -5,8 +5,89 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 12:15:33 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 13:46:22 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Gentlemen Ransomware Gang Claims NVIDIA Breach</title>
+      <link>https://secubuzz.com/news/gentlemen-ransomware-gang-claims-nvidia-breach-2d18cebf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gentlemen-ransomware-gang-claims-nvidia-breach-2d18cebf</guid>
+      <description><![CDATA[The Gentlemen ransomware group posted a claim of breaching NVIDIA on its dark-web leak site. The post includes a countdown and ransom talk references but lacks sample files or confirmed compromise evidence. NVIDIA has not publicly confirmed a breach, and no definitive proof of infiltration has been disclosed in the public domain.]]></description>
+      <pubDate>Wed, 18 Nov 2026 13:37:43 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/nvidia-data-breach-claim/">Cyber Security News</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Russian APT Impersonates Hacked Firm Employee to Target US Org</title>
+      <link>https://secubuzz.com/news/russian-apt-impersonates-hacked-firm-employee-to-t-2d9b132f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-apt-impersonates-hacked-firm-employee-to-t-2d9b132f</guid>
+      <description><![CDATA[A Russian APT used stolen Star Blizzard credentials to pose as an employee of a compromised firm and phish a U.S. organization. The attack leveraged data and social engineering to gain initial access by exploiting the target's trust in the impersonated identity. Security teams should verify employee identities, enforce MFA, and monitor for anomalous credential usage to mitigate impersonation attacks.]]></description>
+      <pubDate>Wed, 18 Nov 2026 13:33:47 GMT</pubDate>
+      <source url="https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/">SecurityWeek</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Malwarebytes Engineers Secure Their Own Antivirus</title>
+      <link>https://secubuzz.com/news/malwarebytes-engineers-secure-their-own-antivirus-b2853287</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malwarebytes-engineers-secure-their-own-antivirus-b2853287</guid>
+      <description><![CDATA[Malwarebytes engineers discuss protecting their antivirus platform from malware that could disable or bypass its defenses. The article outlines defensive strategies, including code integrity checks, runtime monitoring, and secure update mechanisms to thwart disabling attacks. Security teams should adopt similar integrity verification and update safeguards to maintain antivirus resilience against disabling malware.]]></description>
+      <pubDate>Wed, 18 Nov 2026 13:32:54 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/inside-malwarebytes/2026/11/who-protects-the-antivirus-how-we-secure-malwarebytes-itself">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Google Chrome Vulnerability Affects Versions Before 158.0.8127.36</title>
+      <link>https://secubuzz.com/news/google-chrome-vulnerability-affects-versions-befor-a7e6781c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-chrome-vulnerability-affects-versions-befor-a7e6781c</guid>
+      <description><![CDATA[A vulnerability affects Google Chrome stable channel desktop versions before 158.0.8127.36 on Windows, Mac, and Linux. The flaw, lacking a CVE ID, is not publicly exploited but could enable code execution or session compromise. Google advises users to review the advisory and install the latest Chrome update promptly to mitigate the risk.]]></description>
+      <pubDate>Wed, 18 Nov 2026 13:31:24 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1171">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Oracle Vulnerabilities Span Multiple Products</title>
+      <link>https://secubuzz.com/news/oracle-vulnerabilities-span-multiple-products-69bc02a2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/oracle-vulnerabilities-span-multiple-products-69bc02a2</guid>
+      <description><![CDATA[Oracle disclosed vulnerabilities in several products, including Helidon, JD Edwards EnterpriseOne Localizations, MySQL Cluster, MySQL Server, MySQL Workbench, Oracle APEX, Access Manager, Agile PLM, and Oracle Communications components. No CVE IDs or exploit details are given, but the flaws could allow unauthorized access or code execution. Oracle advises applying the available patches or following vendor guidance to mitigate the risks.]]></description>
+      <pubDate>Wed, 18 Nov 2026 12:51:56 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/oracle-corporation-security-advisory-av26-1170">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Pentesting Gaps Exposed by Early Exploitation</title>
+      <link>https://secubuzz.com/news/ai-pentesting-gaps-exposed-by-early-exploitation-0d3b07a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-pentesting-gaps-exposed-by-early-exploitation-0d3b07a7</guid>
+      <description><![CDATA[Attackers now exploit vulnerabilities before patches are released, with 23% of newly added exploits being active on or before disclosure. The report highlights that AI pentesting vendors are not interchangeable, as gaps often appear in logged-in flows, coverage, and production safety. Security teams should evaluate vendors against these criteria before engagement to ensure comprehensive coverage and reduce early exploitation risk.]]></description>
+      <pubDate>Wed, 18 Nov 2026 12:15:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Launches Perception Agentic Security Platform</title>
+      <link>https://secubuzz.com/news/microsoft-launches-perception-agentic-security-pla-9b866ec5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-launches-perception-agentic-security-pla-9b866ec5</guid>
+      <description><![CDATA[Microsoft has moved its Perception Agentic Security Platform from preview to general availability, releasing four blue-team agents and a Recon Agent. Integrations and vulnerability shielding features remain in preview, indicating ongoing development for broader threat detection and response capabilities. Security teams should monitor Microsoft’s release notes for updates and plan to incorporate the new agents into their defensive workflows.]]></description>
+      <pubDate>Wed, 18 Nov 2026 12:14:23 GMT</pubDate>
+      <source url="https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>France Blames Iran for Fridge Cyberattacks</title>
+      <link>https://secubuzz.com/news/france-blames-iran-for-fridge-cyberattacks-7f34dac8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/france-blames-iran-for-fridge-cyberattacks-7f34dac8</guid>
+      <description><![CDATA[U.S. intelligence agencies assessed Iran responsible for a series of fridge cyberattacks targeting French facilities. The low-confidence assessment links attacks to Iran, not a specific group, and hints at similar incidents across Europe. No public patch is required, but teams should monitor critical IoT device vulnerabilities for potential supply-chain risks.]]></description>
+      <pubDate>Wed, 18 Nov 2026 12:05:35 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html">Schneier on Security</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>CISA Flags Active Exploitation of Puppet Enterprise Vulnerability</title>
+      <link>https://secubuzz.com/news/cisa-flags-active-exploitation-of-puppet-enterpris-5f16325d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-flags-active-exploitation-of-puppet-enterpris-5f16325d</guid>
+      <description><![CDATA[CISA identified an actively exploited vulnerability in Perforce Puppet Enterprise that allows remote code execution on Puppet Servers. Cataloged as CVE-2026-115731, the flaw permits unauthenticated attackers to run arbitrary code via a malformed request, with evidence of in-the-wild exploitation. Perforce released an urgent patch; administrators should apply it immediately and disable exposed endpoints until the fix is deployed.]]></description>
+      <pubDate>Wed, 18 Nov 2026 11:59:36 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/puppet-enterprise-flaw-actively-exploited/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Chrome 158 Addresses 204 Vulnerabilities</title>
       <link>https://secubuzz.com/news/chrome-158-addresses-204-vulnerabilities-35777c9e</link>
@@ -95,6 +176,15 @@
       <description><![CDATA[The Tor Project released Tails 7.17.1 to address a critical flaw in the bundled 'uBlock Origin' ad blocker. The vulnerability lets a malicious site trick a user into a single click, enabling code execution on another domain. The emergency update removes 'uBlock Origin'; users should apply the patch immediately and consider disabling the extension until a permanent fix is released.]]></description>
       <pubDate>Wed, 18 Nov 2026 09:45:51 GMT</pubDate>
       <source url="https://cybersecuritynews.com/tails-tor-browser-update-to-fix-ublock-origin-flaw/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Atlassian Patches 318 Security . Across Jira, Confluence, Bitbucket and Other Products</title>
+      <link>https://secubuzz.com/news/atlassian-patches-318-security-across-jira-conflue-39f4da5a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-patches-318-security-across-jira-conflue-39f4da5a</guid>
+      <description><![CDATA[Atlassian’s November 2026 security bulletin lists fixes for 318 vulnerability entries across Jira Software, Jira Service Management, Confluence, Bitbucket, Bamboo, Crowd, Fisheye and Crucible. Published on November 17, the bulletin covers fixes shipped in product releases over the previous month. Atlassian counted 266 high-severity entries and 52 critical entries involving third-party components.]]></description>
+      <pubDate>Wed, 18 Nov 2026 09:43:21 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/atlassian-patches-318-security-vulnerabilities/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -366,96 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 00:17:00 GMT</pubDate>
       <source url="https://socket.dev/blog/optimizely-supply-chain-attack">Socket.dev</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISA Alerts to Java4Shell CVE-2026-114938 Vulnerability</title>
-      <link>https://secubuzz.com/news/cisa-alerts-to-java4shell-cve-2026-114938-vulnerab-a3fdbd8e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-alerts-to-java4shell-cve-2026-114938-vulnerab-a3fdbd8e</guid>
-      <description><![CDATA[CISA warned that the AI-discovered Java4Shell flaw (CVE-2026-114938) can enable unauthenticated attackers to take over Java servers without a password. The vulnerability exploits a deserialization flaw in the Java Runtime Environment, allowing remote code execution with a CVSS score of 9.8. Administrators must apply the vendor-issued patch immediately, disable remote deserialization, and monitor for anomalous activity.]]></description>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://therecord.media/cisa-issues-java4shell-alert">The Record</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Java4Shell CVE-2026-114938 Exploitation Attempts Detected</title>
-      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-attempts-d-5eb088cc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-attempts-d-5eb088cc</guid>
-      <description><![CDATA[GreyNoise monitors scanning and exploitation attempts targeting the CVE-2026-114938 memory-corruption flaw in OpenJDK’s Base64 decoder. The heap-based buffer overflow can be triggered remotely by crafted Base64 input, potentially enabling arbitrary code execution. Oracle and OpenJDK have released patches; administrators should apply the latest updates or disable Base64 decoding until mitigated.]]></description>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://www.greynoise.io/blog/global-event-java4shell-cve-2026-114938-live-activity-report">GreyNoise Labs</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Java4Shell CVE-2026-114938 Enables Remote Code Execution in Jira, Jenkins, Keycloak</title>
-      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-enables-remote-code-exe-69aba8fc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-enables-remote-code-exe-69aba8fc</guid>
-      <description><![CDATA[Java4Shell (CVE-2026-114938) is a critical flaw in Java 17+ that permits unauthenticated remote code execution on Jira, Jenkins, and Keycloak. It exploits a heap-based buffer overflow in the Base64 decoder, letting attackers run arbitrary code on affected servers. Oracle and OpenJDK have issued critical patches; admins should update immediately and limit exposed management interfaces.]]></description>
-      <pubDate>Tue, 17 Nov 2026 23:30:00 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938">Canadian Centre for Cyber Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Agent-Framework PyPI Package Compromised</title>
-      <link>https://secubuzz.com/news/microsoft-agent-framework-pypi-package-compromised-03a53c23</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-agent-framework-pypi-package-compromised-03a53c23</guid>
-      <description><![CDATA[Microsoft’s agent-framework PyPI package, versions 1.26.1 and 1.26.2, was compromised. The malicious package leveraged .pth startup hooks to exfiltrate Azure, GitHub Actions, and CI/CD credentials, enabling attackers to harvest authentication tokens. Users should uninstall the affected versions, install the latest secure release, and audit their CI/CD pipelines for unauthorized credential usage.]]></description>
-      <pubDate>Tue, 17 Nov 2026 23:05:25 GMT</pubDate>
-      <source url="https://socket.dev/blog/agent-framework-pypi-package-compromised-with-credential-stealer">Socket.dev</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical Java4Shell flaw allows RCE attacks on major Java applications</title>
-      <link>https://secubuzz.com/news/critical-java4shell-flaw-allows-rce-attacks-on-maj-77623aba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-java4shell-flaw-allows-rce-attacks-on-maj-77623aba</guid>
-      <description><![CDATA[A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. The vulnerability is tracked as CVE-2026-114938.]]></description>
-      <pubDate>Tue, 17 Nov 2026 23:04:21 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/">BleepingComputer</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Optimizely Platform Distributes Hydra-Like Malware to Visitors</title>
-      <link>https://secubuzz.com/news/optimizely-platform-distributes-hydra-like-malware-9772da7c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/optimizely-platform-distributes-hydra-like-malware-9772da7c</guid>
-      <description><![CDATA[A third-party Optimizely platform delivered hydra-like malware to visitors, affecting 178 organizations including major brands. Insecure content injection let attackers embed malicious scripts without authentication, enabling credential theft and lateral movement. Audit daily third-party integrations, enforce strict CSP, and apply the latest Optimizely patches to block unauthorized scripts for visitors.]]></description>
-      <pubDate>Tue, 17 Nov 2026 22:34:22 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Italy Extradites Lynx Ransomware Affiliate to US</title>
-      <link>https://secubuzz.com/news/italy-extradites-lynx-ransomware-affiliate-to-us-4e26a369</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/italy-extradites-lynx-ransomware-affiliate-to-us-4e26a369</guid>
-      <description><![CDATA[Italian authorities extradited a Lynx ransomware affiliate to the United States, facing a 27-year sentence. The extradition follows evidence of the affiliate’s role in deploying the Lynx ransomware, which encrypts corporate data and demands payment, impacting multiple sectors. Security teams should monitor for Lynx signatures, apply timely patches, and enforce robust backup strategies to mitigate future attacks.]]></description>
-      <pubDate>Tue, 17 Nov 2026 22:33:58 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/ransomware-affiliate-suspect-extradited-to-us-faces-27">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Java4Shell CVE-2026-114938 Delivers Unauthenticated Remote Code Execution in Oracle Java and OpenJDK</title>
-      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-delivers-unauthenticate-c4f64c44</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-delivers-unauthenticate-c4f64c44</guid>
-      <description><![CDATA[CVE-2026-114938, dubbed Java4Shell, is a critical 9.2 remote code execution vulnerability affecting Oracle Java and OpenJDK installations across enterprise services. Improper input validation and malformed serialization data let unauthenticated attackers execute arbitrary code, with a public proof-of-concept already circulating. Oracle and OpenJDK vendors released patches; administrators should upgrade immediately and disable remote debugging features to mitigate risk.]]></description>
-      <pubDate>Tue, 17 Nov 2026 22:29:57 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk">Wiz Research</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Java4Shell Critical Flaw in OpenJDK Enables Unauthenticated Remote Code Execution</title>
-      <link>https://secubuzz.com/news/java4shell-critical-flaw-in-openjdk-enables-unauth-eb1823b5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-critical-flaw-in-openjdk-enables-unauth-eb1823b5</guid>
-      <description><![CDATA[Security researchers disclosed Java4Shell (CVE-2026-114938), a critical vulnerability in OpenJDK Java, on November 17, 2026. The flaw triggers memory corruption through malformed input, enabling unauthenticated remote code execution with a CVSS 9.2 score. Organizations should apply the vendor's patch immediately and update to the latest OpenJDK release to mitigate exploitation risk.]]></description>
-      <pubDate>Tue, 17 Nov 2026 22:19:19 GMT</pubDate>
-      <source url="https://www.sentinelone.com/blog/java4shell-vulnerability-in-openjdk-enables-rce-on-avx-512-cpus/">SentinelOne</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft agent-framework Compromised: Credential Stealer Targets Azure and CI Pipelines</title>
-      <link>https://secubuzz.com/news/microsoft-agent-framework-compromised-credential-s-d27899fb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-agent-framework-compromised-credential-s-d27899fb</guid>
-      <description><![CDATA[On November 17, 2026 at 20:35 UTC, versions 1.26.1 & 1.26.2 of the Microsoft PyPI package agent-framework were published with an added credential stealer. The package gets almost 200k downloads a month. The malicious versions have since been quarantined.]]></description>
-      <pubDate>Tue, 17 Nov 2026 22:03:37 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi">Wiz Research</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
