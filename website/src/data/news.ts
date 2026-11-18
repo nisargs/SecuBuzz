@@ -11,6 +11,140 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ransomware-brokers-shift-listings-to-private-chann-d5f645d4",
+    "title": "Ransomware Brokers Shift Listings to Private Channels",
+    "summary": "Ransomware gangs are moving access-broker listings from public dark-web forums to private channels, cutting early warning signals. ZeroFox data shows monthly victim counts rose from 573 in 2025 to 718 in 2026, while public listings dropped from 620 to 370 per quarter. Security teams should monitor private broker communications and employ network segmentation to limit lateral movement once compromised.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/ransomware-access-brokers-cybercrime/",
+    "publishedAt": "2026-11-18T23:28:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ransomware-brokers-shift-listings-to-private-chann",
+      "article-d5f645d4",
+      "d5f645d4",
+      "ransomware-brokers-shift-listings-to-private-chann-3c8e2d",
+      "ransomware-brokers-shift-listings-to-private-channels"
+    ]
+  },
+  {
+    "slug": "ukraine-fbi-arrest-ransomware-group-members-bb9e5203",
+    "title": "Ukraine, FBI Arrest Ransomware Group Members",
+    "summary": "Ukrainian authorities and the FBI arrested four suspects from an international ransomware group tied to more than $40.5 million in ransom payments from at least 28 companies. The raid followed a joint investigation that traced the gang’s stolen-credential phishing attacks. Officials advise organizations to strengthen access controls and monitor for anomalous credential activity to mitigate similar threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+    "publishedAt": "2026-11-18T23:08:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ukraine-fbi-arrest-ransomware-group-members",
+      "article-bb9e5203",
+      "bb9e5203",
+      "ukraine-fbi-arrest-ransomware-group-members-6f6078"
+    ]
+  },
+  {
+    "slug": "ubuntu-patches-multiple-openjdk-27-flaws-24a3f261",
+    "title": "Ubuntu Patches Multiple OpenJDK 27 Flaws",
+    "summary": "Ubuntu released a security update addressing multiple remote vulnerabilities affecting the OpenJDK 27 environment. Flaws including CVE-2026-114938 and CVE-2026-114939 involve improper input handling and authentication in Compiler, JGSS, and JSSE components, allowing unauthorized data access, denial of service, or arbitrary code execution. Security teams should apply the USN-9158-1 package updates to mitigate potential exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9158-1",
+    "publishedAt": "2026-11-18T22:13:47.000Z",
+    "cves": [
+      "CVE-2026-114938",
+      "CVE-2026-114939"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-patches-multiple-openjdk-27-flaws",
+      "article-24a3f261",
+      "24a3f261",
+      "ubuntu-patches-multiple-openjdk-27-flaws-7e7940"
+    ]
+  },
+  {
+    "slug": "openjdk-17-0-21-1-critical-update-for-portable-lin-a7b37d41",
+    "title": "OpenJDK 17.0.21.1 Critical Update for Portable Linux",
+    "summary": "The update addresses multiple vulnerabilities in OpenJDK 17.0.21.1 for portable Linux builds. Red Hat Product Security rates the flaws as critical, with CVSS base scores listed in the CVE references. The vendor has released a patch; administrators should apply the update immediately to mitigate potential exploitation and verify installation promptly.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100565",
+    "publishedAt": "2026-11-18T21:29:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openjdk-17-0-21-1-critical-update-for-portable-lin",
+      "article-a7b37d41",
+      "a7b37d41",
+      "openjdk-17-0-21-1-critical-update-for-portable-lin-2ee081",
+      "openjdk-17-0-21-1-critical-update-for-portable-linux"
+    ]
+  },
+  {
+    "slug": "smartermail-vulnerabilities-affect-builds-before-9-34e8ac4f",
+    "title": "SmarterMail Vulnerabilities Affect Builds Before 9817",
+    "summary": "SmarterMail versions prior to Build 9817 contain undisclosed vulnerabilities that could allow attackers to compromise the application. The Canadian Centre for Cyber Security issued advisory AV26-1177, urging administrators to review links and apply updates as soon as possible. Applying the latest SmarterMail release or patch mitigates the risk; security teams should verify installation and monitor for anomalous activity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/smartertools-security-advisory-av26-1177",
+    "publishedAt": "2026-11-18T21:06:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "smartermail-vulnerabilities-affect-builds-before-9",
+      "article-34e8ac4f",
+      "34e8ac4f",
+      "smartermail-vulnerabilities-affect-builds-before-9-670f7b",
+      "smartermail-vulnerabilities-affect-builds-before-9817"
+    ]
+  },
+  {
+    "slug": "teamcity-vulnerabilities-in-versions-before-2026-1-26df0737",
+    "title": "TeamCity Vulnerabilities in Versions Before 2026.1.3",
+    "summary": "TeamCity releases before 2025.11.7 and 2026.1.3 contain vulnerabilities that may enable unauthorized code execution. The Canadian Centre for Cyber Security advisory AV26-1176 recommends reviewing links and installing the latest patches immediately. Applying the updated TeamCity version eliminates the flaw; administrators should verify deployment and monitor for suspicious activity and ensure proper configuration.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1176",
+    "publishedAt": "2026-11-18T21:00:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "teamcity-vulnerabilities-in-versions-before-2026-1",
+      "article-26df0737",
+      "26df0737",
+      "teamcity-vulnerabilities-in-versions-before-2026-1-53189b",
+      "teamcity-vulnerabilities-in-versions-before-2026-1-3"
+    ]
+  },
+  {
+    "slug": "iranian-groups-hand-off-access-for-destructive-att-6eb700e4",
+    "title": "Iranian Groups Hand Off Access for Destructive Attacks",
+    "summary": "AttackIQ research examined 20 Iranian state-sponsored threat groups, revealing a coordinated hand-off of network access to enable destructive operations. The analysis shows espionage, ransomware, and hacktivism tactics intertwining within state-backed campaigns, complicating attribution and mitigation. Security teams should monitor for lateral movement indicators and implement strict network segmentation to reduce the impact of such hand-offs.",
+    "category": "Nation State",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
+    "publishedAt": "2026-11-18T20:38:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "iranian-groups-hand-off-access-for-destructive-att",
+      "article-6eb700e4",
+      "6eb700e4",
+      "iranian-groups-hand-off-access-for-destructive-att-7ef219",
+      "iranian-groups-hand-off-access-for-destructive-attacks"
+    ]
+  },
+  {
     "slug": "admin-plans-early-patch-info-sharing-with-industry-a870dd28",
     "title": "Admin Plans Early Patch Info Sharing with Industry",
     "summary": "Homeland Security Secretary Markwayne Mullin announced a policy to engage industry for early patch information before releases. The initiative aims to collect detailed patch data from vendors to assess security impact and mitigate potential vulnerabilities. No vendor patch or technical fix is involved; the program is a strategic outreach effort to improve patch management.",
@@ -1349,6 +1483,42 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "ros-2-xml-external-entity-disclosure-vulnerability-36989201",
+    "title": "ROS 2 XML External Entity Disclosure Vulnerability",
+    "summary": "A zero-day XML External Entity flaw in Open Robotics ROS 2’s sros2 load_policy lets attackers read sensitive data when a target opens a malicious file or page. The flaw requires user interaction, scores 5.5 on CVSS, and offers only information disclosure. No patch is available; operators should avoid loading untrusted XML into ROS 2 until an update is released.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1019/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ros-2-xml-external-entity-disclosure-vulnerability",
+      "article-36989201",
+      "36989201",
+      "ros-2-xml-external-entity-disclosure-vulnerability-77f33d"
+    ]
+  },
+  {
+    "slug": "krita-tif-buffer-overflow-enables-remote-code-60d110f7",
+    "title": "Krita TIF Buffer Overflow Enables Remote Code",
+    "summary": "A heap-based buffer overflow in Krita’s TIF file parser allows remote attackers to execute arbitrary code when a user opens a crafted TIF file. The vulnerability requires user interaction, has a CVSS score of 7.8, and can lead to full system compromise. Krita has released a patch in version 5.1.2; users should update immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1018/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "krita-tif-buffer-overflow-enables-remote-code",
+      "article-60d110f7",
+      "60d110f7",
+      "krita-tif-buffer-overflow-enables-remote-code-77f33c"
     ]
   },
   {
@@ -9729,174 +9899,6 @@ export const news: NewsBrief[] = [
       "0d083ca3",
       "geovision-cameras-compromised-13-organizations-hit-4742ec",
       "geovision-cameras-compromised-13-organizations-hit-by-crypto"
-    ]
-  },
-  {
-    "slug": "cloudflare-launches-spend-management-for-workers-21979760",
-    "title": "Cloudflare Launches Spend Management for Workers",
-    "summary": "Cloudflare introduces Spend Management, adding spending caps and alerts for Workers and Durable Objects, with plans to extend to services. The feature uses a metering pipeline that translates usage metrics into runtime decisions, enabling real-time cost control and budget enforcement. Users can configure thresholds, receive notifications, and enforce limits through the Cloudflare dashboard, reducing accidental over-spending and improving cost visibility.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/spend-management/",
-    "publishedAt": "2026-11-13T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-launches-spend-management-for-workers",
-      "article-21979760",
-      "21979760",
-      "cloudflare-launches-spend-management-for-workers-5280cf"
-    ]
-  },
-  {
-    "slug": "chrome-dev-160-released-for-android-12652645",
-    "title": "Chrome Dev 160 Released for Android",
-    "summary": "Google released Chrome Dev 160 for Android, updating the browser on Google Play with new features and bug fixes. The update includes platform enhancements and a partial list of changes documented in the Git log, with further details on the Chromium blog. Users should install the new version via Google Play and file any issues through the bug-filing system.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-android-update_0625376735.html",
-    "publishedAt": "2026-11-13T13:58:32.850Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-dev-160-released-for-android",
-      "article-12652645",
-      "12652645",
-      "chrome-dev-160-released-for-android-2c3ede"
-    ]
-  },
-  {
-    "slug": "johnson-controls-easyio-firmware-vulnerability-9f87e76a",
-    "title": "Johnson Controls EasyIO Firmware Vulnerability",
-    "summary": "A vulnerability exists in Johnson Controls EasyIO firmware versions up to V3.0b25, potentially affecting industrial control systems. Root cause details are not disclosed, but the flaw could enable unauthorized manipulation of device configuration or operation. Johnson Controls advises users to review the advisory and apply any available firmware updates to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/control-systems-johnson-controls-security-advisory-av26-1158",
-    "publishedAt": "2026-11-13T13:56:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "johnson-controls-easyio-firmware-vulnerability",
-      "article-9f87e76a",
-      "9f87e76a",
-      "johnson-controls-easyio-firmware-vulnerability-166a20"
-    ]
-  },
-  {
-    "slug": "trezor-detects-recovery-phrase-stealing-implants-c1952591",
-    "title": "Trezor Detects Recovery Phrase-Stealing Implants",
-    "summary": "Trezor identified hardware implants in three Safe 5 wallets purchased from CryptoBilis that can steal recovery phrases. The implant reads the phrase from the wallet's screen and transmits it over the mobile network to an attacker-controlled server, exposing users' seed phrases to theft. Trezor recommends inspecting devices for the circuit board, replacing compromised wallets, and monitoring for network traffic.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
-    "publishedAt": "2026-11-13T13:54:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trezor-detects-recovery-phrase-stealing-implants",
-      "article-c1952591",
-      "c1952591",
-      "trezor-detects-recovery-phrase-stealing-implants-15e337"
-    ]
-  },
-  {
-    "slug": "microsoft-365-outage-caused-by-hidden-windows-bug-b2a47d0c",
-    "title": "Microsoft 365 Outage Caused by Hidden Windows Bug",
-    "summary": "Microsoft 365 services worldwide were disrupted on November 12-13, 2026, affecting email, collaboration, and cloud connectivity. The outage was traced to a hidden Windows defect that overloaded servers handling cloud connections, causing widespread failures. Microsoft released a preliminary incident report, isolated affected infrastructure, and applied patches to restore services, advising users to monitor updates.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/",
-    "publishedAt": "2026-11-13T13:47:42.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/microsoft-outage-incident-report/"
-      }
-    ],
-    "aliases": [
-      "microsoft-365-outage-caused-by-hidden-windows-bug",
-      "article-b2a47d0c",
-      "b2a47d0c",
-      "microsoft-365-outage-caused-by-hidden-windows-bug-d66625"
-    ]
-  },
-  {
-    "slug": "binance-breach-exploits-known-weakness-lacks-contr-f0a16de5",
-    "title": "Binance Breach Exploits Known Weakness, Lacks Controls",
-    "summary": "Attackers breached Binance by exploiting a known weakness and missing security controls in the exchange’s blockchain infrastructure. The flaw allowed attacker-deployed sweepers to bypass safeguards, potentially enabling rapid asset transfer and undermining transaction integrity. Binance has issued a security advisory and is tightening monitoring, but no public patch is available for the underlying weakness.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
-    "publishedAt": "2026-11-13T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-breach-exploits-known-weakness-lacks-contr",
-      "article-f0a16de5",
-      "f0a16de5",
-      "binance-breach-exploits-known-weakness-lacks-contr-5a9279",
-      "binance-breach-exploits-known-weakness-lacks-controls"
-    ]
-  },
-  {
-    "slug": "apify-breach-customer-accounts-compromised-efc65745",
-    "title": "Apify Breach: Customer Accounts Compromised",
-    "summary": "Apify, a web scraping platform, confirmed that an intruder accessed customer accounts and retrieved personal information. The breach exposed stored data, potentially including credentials and sensitive user details, but no exploitation of the platform’s core services was reported. Apify advised affected customers to reset credentials and monitor accounts, and it is implementing additional monitoring and security controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/",
-    "publishedAt": "2026-11-13T12:41:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apify-breach-customer-accounts-compromised",
-      "article-efc65745",
-      "efc65745",
-      "apify-breach-customer-accounts-compromised-3458ee"
-    ]
-  },
-  {
-    "slug": "microsoft-printing-issues-from-november-updates-3651ef0f",
-    "title": "Microsoft Printing Issues from November Updates",
-    "summary": "Microsoft warned that the November 2026 security updates could disrupt printing for documents with complex formatting. The issue arises from changes to the printing subsystem that affect rendering of advanced layout features, but no security impact is reported. Microsoft recommends users apply the latest cumulative update and, if problems persist, roll back the printing components or use alternative drivers.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
-    "publishedAt": "2026-11-13T12:27:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-printing-issues-from-november-updates",
-      "article-3651ef0f",
-      "3651ef0f",
-      "microsoft-printing-issues-from-november-updates-647462"
-    ]
-  },
-  {
-    "slug": "silentair-hijacks-mobile-nodes-to-intercept-calls-6b9ba7bc",
-    "title": "SilentAir Hijacks Mobile Nodes to Intercept Calls",
-    "summary": "SilentAir attackers compromised Taiwanese mobile network nodes, enabling interception of voice calls and SMS traffic. The intrusion leveraged an unpatched firmware flaw in the node’s authentication module, allowing remote code execution with a CVSS of 9.0; no public exploit yet. Network operators should apply the vendor’s firmware update immediately, enforce strict access controls, and monitor for anomalous traffic patterns.",
-    "category": "Breach",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/",
-    "publishedAt": "2026-11-13T12:20:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "silentair-hijacks-mobile-nodes-to-intercept-calls",
-      "article-6b9ba7bc",
-      "6b9ba7bc",
-      "silentair-hijacks-mobile-nodes-to-intercept-calls-7c79a4"
     ]
   }
 ];
