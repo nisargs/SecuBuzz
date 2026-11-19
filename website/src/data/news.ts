@@ -11,6 +11,81 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cisa-nominee-losapio-vows-to-bolster-cyber-defense-dc560534",
+    "title": "CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack",
+    "summary": "President Donald Trump’s pick to lead the Cybersecurity and Infrastructure Security Agency pledged to lawmakers to uncover any “gaps” within the organization while also denying the Capitol came under attack on January 6, 2021.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/cisa-losapio-nomination-trump",
+    "publishedAt": "2026-11-19T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-nominee-losapio-vows-to-bolster-cyber-defense",
+      "article-dc560534",
+      "dc560534",
+      "cisa-nominee-losapio-vows-to-bolster-cyber-defense-630e89",
+      "cisa-nominee-losapio-vows-to-bolster-cyber-defenses-while-de"
+    ]
+  },
+  {
+    "slug": "php-releases-18-security-patches-for-critical-rce-8cd3859d",
+    "title": "PHP Releases 18 Security Patches for Critical RCE Flaws",
+    "summary": "PHP released updates for 18 vulnerabilities, including critical flaws that let unauthenticated attackers remotely execute code. The bugs stem from improper input validation in PHP core, enabling code injection without authentication and granting server control. All affected PHP versions ship patches; administrators should update to the latest release or apply vendor-supplied hotfixes to eliminate the risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
+    "publishedAt": "2026-11-19T16:28:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-releases-18-security-patches-for-critical-rce",
+      "article-8cd3859d",
+      "8cd3859d",
+      "php-releases-18-security-patches-for-critical-rce-1d7cf4",
+      "php-releases-18-security-patches-for-critical-rce-flaws"
+    ]
+  },
+  {
+    "slug": "php-patches-seven-critical-rce-vulnerabilities-4dc7c84c",
+    "title": "PHP Patches Seven Critical RCE Vulnerabilities",
+    "summary": "PHP patched seven critical RCE flaws that could let attackers crash the worker process and execute code with its privileges. The bugs stem from unchecked input handling in the PHP worker, enabling arbitrary code execution without authentication and compromising the application. All affected PHP releases now include the fixes; administrators should apply the updates immediately to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/",
+    "publishedAt": "2026-11-19T15:54:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-patches-seven-critical-rce-vulnerabilities",
+      "article-4dc7c84c",
+      "4dc7c84c",
+      "php-patches-seven-critical-rce-vulnerabilities-151857"
+    ]
+  },
+  {
+    "slug": "linux-kernel-vulnerabilities-corrected-in-usn-9175-c30d5d3c",
+    "title": "Linux Kernel Vulnerabilities Corrected in USN-9175-1",
+    "summary": "The USN-9175-1 notice details multiple Linux kernel vulnerabilities that could allow attackers to compromise affected systems. The flaws affect device drivers, architecture modules, and cryptographic APIs, stemming from improper handling of privileged operations and enabling privilege escalation or denial of service. Kernel maintainers released patches; administrators should update to the latest kernel to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9175-1",
+    "publishedAt": "2026-11-19T15:43:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-vulnerabilities-corrected-in-usn-9175",
+      "article-c30d5d3c",
+      "c30d5d3c",
+      "linux-kernel-vulnerabilities-corrected-in-usn-9175-7e7862",
+      "linux-kernel-vulnerabilities-corrected-in-usn-9175-1"
+    ]
+  },
+  {
     "slug": "f5-issues-advisory-for-multiple-big-ip-vulnerabili-e90fc272",
     "title": "F5 Issues Advisory for Multiple BIG-IP Vulnerabilities",
     "summary": "F5 released advisory AV26-1178 exposing multiple vulnerabilities in BIG-IP, APM, SSL Orchestrator, PEM, CNF, and Next for Kubernetes versions up to 21.1.0. The flaws allow remote attackers to execute arbitrary code via malformed configuration data, with CVSS scores up to 9.8, and are documented.",
@@ -66,6 +141,25 @@ export const news: NewsBrief[] = [
       "d8c629c0",
       "european-commission-confirms-cyberattack-says-hack-6cd590",
       "european-commission-confirms-cyberattack-says-hackers-used-a"
+    ]
+  },
+  {
+    "slug": "linux-kernel-vulnerabilities-addressed-in-usn-9173-c92b0942",
+    "title": "Linux Kernel Vulnerabilities Addressed in USN-9173-1",
+    "summary": "The USN-9173-1 notice reports several Linux kernel vulnerabilities that could let attackers compromise affected systems. These defects involve device drivers, architecture modules, and cryptographic APIs, arising from improper handling of privileged operations and potentially enabling privilege escalation or denial of service. Kernel maintainers have issued patches; administrators should update to the latest kernel to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9173-1",
+    "publishedAt": "2026-11-19T15:13:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-vulnerabilities-addressed-in-usn-9173",
+      "article-c92b0942",
+      "c92b0942",
+      "linux-kernel-vulnerabilities-addressed-in-usn-9173-7e786a",
+      "linux-kernel-vulnerabilities-addressed-in-usn-9173-1"
     ]
   },
   {
@@ -195,6 +289,60 @@ export const news: NewsBrief[] = [
       "106873f0",
       "badbox-3-0-malware-infects-android-tv-boxes-to-gen-d73be1",
       "badbox-3-0-malware-infects-android-tv-boxes-to-generate-40-b"
+    ]
+  },
+  {
+    "slug": "holiday-bot-fraud-strains-small-business-security-62227aa7",
+    "title": "Holiday Bot Fraud Strains Small Business Security",
+    "summary": "Bot-driven fraud and holiday social engineering attacks target small businesses during the holiday season. These campaigns exploit automated phishing, credential harvesting, and social engineering tactics, extending over weeks and overwhelming security teams. Security teams should deploy comprehensive multi-factor authentication, daily email filtering, and employee training to mitigate the prolonged threat.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday",
+    "publishedAt": "2026-11-19T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "holiday-bot-fraud-strains-small-business-security",
+      "article-62227aa7",
+      "62227aa7",
+      "holiday-bot-fraud-strains-small-business-security-2fe4c2"
+    ]
+  },
+  {
+    "slug": "election-day-cyberattacks-surge-across-1-400-sites-8c085251",
+    "title": "Election Day Cyberattacks Surge Across 1,400 Sites",
+    "summary": "During the 2026 U.S. midterm elections, election-related sites experienced increased traffic and cyberattacks. Cloudflare data from over 1,400 protected sites shows spikes in phishing, credential stuffing, and distributed denial-of-service attempts targeting voter information portals. Operators should enforce stricter rate limiting, deploy WAF rules, and monitor for anomalous traffic patterns to defend against election-day threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/internet-traffic-2026-us-election/",
+    "publishedAt": "2026-11-19T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "election-day-cyberattacks-surge-across-1-400-sites",
+      "article-8c085251",
+      "8c085251",
+      "election-day-cyberattacks-surge-across-1-400-sites-5d027c"
+    ]
+  },
+  {
+    "slug": "timeroasting-detection-via-packet-size-analysis-ef3720c9",
+    "title": "Timeroasting Detection via Packet Size Analysis",
+    "summary": "Timeroasting, a stealthy side-channel exfiltration method, leaves no authentication logs and targets systems using MS-SNTP. The technique manipulates the two MS-SNTP authenticator forms to create timing variations that bypass standard logging, enabling covert data transfer. By reversing the authenticator logic, the author builds detection that monitors packet size patterns, providing a defensive measure against timeroasting attacks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/detecting-timeroasting",
+    "publishedAt": "2026-11-19T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "timeroasting-detection-via-packet-size-analysis",
+      "article-ef3720c9",
+      "ef3720c9",
+      "timeroasting-detection-via-packet-size-analysis-7f61dd"
     ]
   },
   {
@@ -9601,166 +9749,6 @@ export const news: NewsBrief[] = [
       "article-1e125d39",
       "1e125d39",
       "2026-risk-based-vulnerability-tool-rankings-25242a"
-    ]
-  },
-  {
-    "slug": "top-cloud-vulnerability-management-tools-2026-8e822cdf",
-    "title": "Top Cloud Vulnerability Management Tools 2026",
-    "summary": "The article ranks leading cloud vulnerability management tools for 2026, spotlighting agentless snapshot scanning that maps entire estates in hours. It highlights how vendors integrate vulnerability data with exposure, identity, and data sensitivity contexts to prioritize actionable risks. The list names Wiz as top performer, followed by Palo Alto and others, providing a comparative scoring framework for security teams.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-cloud-vulnerability-management/",
-    "publishedAt": "2026-11-16T06:55:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-cloud-vulnerability-management-tools-2026",
-      "article-8e822cdf",
-      "8e822cdf",
-      "top-cloud-vulnerability-management-tools-2026-583723"
-    ]
-  },
-  {
-    "slug": "bo-team-exploits-log4shell-in-vmware-vcenter-a4b47175",
-    "title": "BO Team Exploits Log4Shell in VMware vCenter",
-    "summary": "BO Team exploited Log4Shell in VMware vCenter to gain unauthenticated remote code execution in a Russian developer’s network. The attackers maintained a months-long presence, compromising the code-signing server and development infrastructure, allowing them to sign malicious binaries for downstream customers. Kaspersky’s ICs CERT documented the activity and recommends patching vCenter, revoking compromised signing certificates, and auditing signed binaries.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
-    "publishedAt": "2026-11-16T06:53:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bo-team-exploits-log4shell-in-vmware-vcenter",
-      "article-a4b47175",
-      "a4b47175",
-      "bo-team-exploits-log4shell-in-vmware-vcenter-3a53c0"
-    ]
-  },
-  {
-    "slug": "project-zero-to-publish-bugs-after-90-days-854e3824",
-    "title": "Project Zero to Publish Bugs After 90 Days",
-    "summary": "Google Project Zero announced a policy to publish vulnerabilities 90 days after vendor notification, regardless of patch status. The 'Full X' policy will cut the disclosure window to 60 days on Feb 2, 2027, and 30 days on Jan 3, 2028, replacing the 90+30 rule. Teams should track Project Zero releases and adjust patch timelines to match the new schedule.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/google-project-zero-disclosure-policy/",
-    "publishedAt": "2026-11-16T06:30:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "project-zero-to-publish-bugs-after-90-days",
-      "article-854e3824",
-      "854e3824",
-      "project-zero-to-publish-bugs-after-90-days-632f73"
-    ]
-  },
-  {
-    "slug": "ory-hydra-open-source-oauth-2-0-server-e82d7d08",
-    "title": "Ory Hydra: Open-Source OAuth 2.0 Server",
-    "summary": "Ory Hydra is an open-source OAuth 2.0 server and OpenID Connect provider that issues and validates tokens, registers client apps, and manages signing keys. Hydra stores no usernames or passwords, delegating authentication to an external identity system and reducing credential exposure. Developers should follow the full OAuth spec and implement robust key management for secure token issuance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/ory-hydra-oauth-server-open-source/",
-    "publishedAt": "2026-11-16T06:00:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ory-hydra-open-source-oauth-2-0-server",
-      "article-e82d7d08",
-      "e82d7d08",
-      "ory-hydra-open-source-oauth-2-0-server-705454"
-    ]
-  },
-  {
-    "slug": "backdoored-lora-models-enable-credential-theft-and-26b35c88",
-    "title": "Backdoored LoRA Models Enable Credential Theft and Lateral Movement",
-    "summary": "Backdoored LoRA AI weights were discovered that bypass standard benchmarks and trigger malicious tool calls in downstream models, enabling attackers to execute system utilities. The hidden payloads allow credential theft and lateral movement across networks, demonstrating a severe supply-chain risk for AI deployments. Security teams should audit LoRA weight provenance, enforce integrity checks, and isolate inference environments to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/",
-    "publishedAt": "2026-11-16T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/backdoored-lora-ai-supply-chain-risk"
-      }
-    ],
-    "aliases": [
-      "backdoored-lora-models-enable-credential-theft-and",
-      "article-26b35c88",
-      "26b35c88",
-      "backdoored-lora-models-enable-credential-theft-and-559524",
-      "backdoored-lora-models-enable-credential-theft-and-lateral-m"
-    ]
-  },
-  {
-    "slug": "eset-mobile-security-adds-phishing-protection-to-i-c388edf8",
-    "title": "ESET Mobile Security Adds Phishing Protection to iOS",
-    "summary": "ESET released Mobile Security for iOS 18.0+, offering link verification and device scans for iPhone users. The app performs real-time link analysis, reviews permissions, and evaluates Wi-Fi connections, providing recommendations to mitigate phishing and configuration risks. Users can install the free app without an account; security teams should enable it on corporate devices to enforce link checks and monitor settings.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/product-showcase-eset-mobile-security-ios/",
-    "publishedAt": "2026-11-16T05:30:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eset-mobile-security-adds-phishing-protection-to-i",
-      "article-c388edf8",
-      "c388edf8",
-      "eset-mobile-security-adds-phishing-protection-to-i-170ec0",
-      "eset-mobile-security-adds-phishing-protection-to-ios"
-    ]
-  },
-  {
-    "slug": "linux-kernel-noisytcp-crash-vulnerability-exposed-bffb7b54",
-    "title": "Linux Kernel NoisyTCP Crash Vulnerability Exposed (CVE-2026-99288)",
-    "summary": "A kernel flaw named NoisyTCP (CVE-2026-99288) allows unauthenticated attackers to crash Linux servers running Nginx, Apache, or SSH with default settings. The race condition in TCP packet handling triggers a kernel panic, causing a denial-of-service without remote code execution. Linux distributions have issued patches; administrators should update kernels or apply the advisory’s suggested work-around to mitigate the crash risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/noisytcp-linux-kernel-vulnerability/",
-    "publishedAt": "2026-11-16T05:26:51.000Z",
-    "cves": [
-      "CVE-2026-99288"
-    ],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/"
-      }
-    ],
-    "aliases": [
-      "linux-kernel-noisytcp-crash-vulnerability-exposed",
-      "article-bffb7b54",
-      "bffb7b54",
-      "linux-kernel-noisytcp-crash-vulnerability-exposed-4c5c52",
-      "linux-kernel-noisytcp-crash-vulnerability-exposed-cve-2026-9"
-    ]
-  },
-  {
-    "slug": "ai-tool-finds-99-vulnerabilities-in-discontinued-t-ffa2ce34",
-    "title": "AI Tool Finds 99 Vulnerabilities in Discontinued TCP/IP Stacks",
-    "summary": "Forescout researchers used an AI-driven tool to scan 10 legacy TCP/IP stacks lacking vendor support, uncovering 99 security flaws. Of those, 66 were unknown and 52% rated high, indicating potential remote exploitation via buffer overflows or improper input handling. No vendor patches exist; teams should perform manual code reviews, apply custom mitigations, and monitor devices for exploitation attempts.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/forescout-ai-models-vulnerability-research/",
-    "publishedAt": "2026-11-16T05:00:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-tool-finds-99-vulnerabilities-in-discontinued-t",
-      "article-ffa2ce34",
-      "ffa2ce34",
-      "ai-tool-finds-99-vulnerabilities-in-discontinued-t-7eb186",
-      "ai-tool-finds-99-vulnerabilities-in-discontinued-tcp-ip-stac"
     ]
   }
 ];

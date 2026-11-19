@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 16:45:44 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 17:46:43 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack</title>
+      <link>https://secubuzz.com/news/cisa-nominee-losapio-vows-to-bolster-cyber-defense-dc560534</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-nominee-losapio-vows-to-bolster-cyber-defense-dc560534</guid>
+      <description><![CDATA[President Donald Trump’s pick to lead the Cybersecurity and Infrastructure Security Agency pledged to lawmakers to uncover any “gaps” within the organization while also denying the Capitol came under attack on January 6, 2021.]]></description>
+      <pubDate>Thu, 19 Nov 2026 17:00:00 GMT</pubDate>
+      <source url="https://therecord.media/cisa-losapio-nomination-trump">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>PHP Releases 18 Security Patches for Critical RCE Flaws</title>
+      <link>https://secubuzz.com/news/php-releases-18-security-patches-for-critical-rce-8cd3859d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-releases-18-security-patches-for-critical-rce-8cd3859d</guid>
+      <description><![CDATA[PHP released updates for 18 vulnerabilities, including critical flaws that let unauthenticated attackers remotely execute code. The bugs stem from improper input validation in PHP core, enabling code injection without authentication and granting server control. All affected PHP versions ship patches; administrators should update to the latest release or apply vendor-supplied hotfixes to eliminate the risk.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:28:23 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PHP Patches Seven Critical RCE Vulnerabilities</title>
+      <link>https://secubuzz.com/news/php-patches-seven-critical-rce-vulnerabilities-4dc7c84c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-patches-seven-critical-rce-vulnerabilities-4dc7c84c</guid>
+      <description><![CDATA[PHP patched seven critical RCE flaws that could let attackers crash the worker process and execute code with its privileges. The bugs stem from unchecked input handling in the PHP worker, enabling arbitrary code execution without authentication and compromising the application. All affected PHP releases now include the fixes; administrators should apply the updates immediately to prevent exploitation.]]></description>
+      <pubDate>Thu, 19 Nov 2026 15:54:20 GMT</pubDate>
+      <source url="https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Linux Kernel Vulnerabilities Corrected in USN-9175-1</title>
+      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-corrected-in-usn-9175-c30d5d3c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-corrected-in-usn-9175-c30d5d3c</guid>
+      <description><![CDATA[The USN-9175-1 notice details multiple Linux kernel vulnerabilities that could allow attackers to compromise affected systems. The flaws affect device drivers, architecture modules, and cryptographic APIs, stemming from improper handling of privileged operations and enabling privilege escalation or denial of service. Kernel maintainers released patches; administrators should update to the latest kernel to mitigate the risk.]]></description>
+      <pubDate>Thu, 19 Nov 2026 15:43:10 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9175-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>F5 Issues Advisory for Multiple BIG-IP Vulnerabilities</title>
       <link>https://secubuzz.com/news/f5-issues-advisory-for-multiple-big-ip-vulnerabili-e90fc272</link>
@@ -33,6 +69,15 @@
       <pubDate>Thu, 19 Nov 2026 15:15:00 GMT</pubDate>
       <source url="https://therecord.media/european-commission-confirms-cyberattack-using-ai">The Record</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Linux Kernel Vulnerabilities Addressed in USN-9173-1</title>
+      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-addressed-in-usn-9173-c92b0942</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-addressed-in-usn-9173-c92b0942</guid>
+      <description><![CDATA[The USN-9173-1 notice reports several Linux kernel vulnerabilities that could let attackers compromise affected systems. These defects involve device drivers, architecture modules, and cryptographic APIs, arising from improper handling of privileged operations and potentially enabling privilege escalation or denial of service. Kernel maintainers have issued patches; administrators should update to the latest kernel to mitigate the risk.]]></description>
+      <pubDate>Thu, 19 Nov 2026 15:13:04 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9173-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>VMware vCenter Auth Bypass Vulnerability Fixed</title>
@@ -96,6 +141,33 @@
       <pubDate>Thu, 19 Nov 2026 14:05:35 GMT</pubDate>
       <source url="https://cybersecuritynews.com/badbox-3-0-malware/">Cyber Security News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Holiday Bot Fraud Strains Small Business Security</title>
+      <link>https://secubuzz.com/news/holiday-bot-fraud-strains-small-business-security-62227aa7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/holiday-bot-fraud-strains-small-business-security-62227aa7</guid>
+      <description><![CDATA[Bot-driven fraud and holiday social engineering attacks target small businesses during the holiday season. These campaigns exploit automated phishing, credential harvesting, and social engineering tactics, extending over weeks and overwhelming security teams. Security teams should deploy comprehensive multi-factor authentication, daily email filtering, and employee training to mitigate the prolonged threat.]]></description>
+      <pubDate>Thu, 19 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Election Day Cyberattacks Surge Across 1,400 Sites</title>
+      <link>https://secubuzz.com/news/election-day-cyberattacks-surge-across-1-400-sites-8c085251</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/election-day-cyberattacks-surge-across-1-400-sites-8c085251</guid>
+      <description><![CDATA[During the 2026 U.S. midterm elections, election-related sites experienced increased traffic and cyberattacks. Cloudflare data from over 1,400 protected sites shows spikes in phishing, credential stuffing, and distributed denial-of-service attempts targeting voter information portals. Operators should enforce stricter rate limiting, deploy WAF rules, and monitor for anomalous traffic patterns to defend against election-day threats.]]></description>
+      <pubDate>Thu, 19 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/internet-traffic-2026-us-election/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Timeroasting Detection via Packet Size Analysis</title>
+      <link>https://secubuzz.com/news/timeroasting-detection-via-packet-size-analysis-ef3720c9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/timeroasting-detection-via-packet-size-analysis-ef3720c9</guid>
+      <description><![CDATA[Timeroasting, a stealthy side-channel exfiltration method, leaves no authentication logs and targets systems using MS-SNTP. The technique manipulates the two MS-SNTP authenticator forms to create timing variations that bypass standard logging, enabling covert data transfer. By reversing the authenticator logic, the author builds detection that monitors packet size patterns, providing a defensive measure against timeroasting attacks.]]></description>
+      <pubDate>Thu, 19 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.huntress.com/blog/detecting-timeroasting">Huntress</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>ARMORY CASTLE Exploits vSphere</title>
@@ -383,78 +455,6 @@
       <description><![CDATA[Ruby 4.0.10, 3.4.13, and 3.3.14 were updated to fix seven vulnerabilities in the language’s regex engine and string case-conversion code. The flaws enable remote code execution by allowing attackers to run arbitrary code within vulnerable Ruby processes, with proof-of-concept demonstrations already available. Users should upgrade to the patched releases immediately to prevent exploitation of the critical RCE vectors.]]></description>
       <pubDate>Thu, 19 Nov 2026 08:32:04 GMT</pubDate>
       <source url="https://cybersecuritynews.com/ruby-patches-7-security-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>US enlists private firms to cut scammers off from victims’ cash</title>
-      <link>https://secubuzz.com/news/us-enlists-private-firms-to-cut-scammers-off-from-3d27f789</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-enlists-private-firms-to-cut-scammers-off-from-3d27f789</guid>
-      <description><![CDATA[Stopping victims’ money before it reaches foreign scam, cybercrime and sextortion networks is the goal of a new US unit launched by the Homeland Security Task Force (HSTF). The Threat Disruption Center is part of the HSTF’s National Coordination Center (NCC) in Fairfax, Virginia.]]></description>
-      <pubDate>Thu, 19 Nov 2026 08:21:15 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/19/us-threat-disruption-center-scam-sextortion-funds/">Help Net Security</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Researcher Demonstrates RCE in PostgreSQL, MySQL, Oracle</title>
-      <link>https://secubuzz.com/news/researcher-demonstrates-rce-in-postgresql-mysql-or-1d1c9f59</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/researcher-demonstrates-rce-in-postgresql-mysql-or-1d1c9f59</guid>
-      <description><![CDATA[A researcher demonstrated remote code execution exploits against PostgreSQL, MySQL, and Oracle databases using low-privilege accounts. The attacks leveraged memory-corruption bugs in the database engines, allowing code execution on the server without table read permissions. No vendor patches are currently available; administrators should restrict low-privilege access and monitor for anomalous activity until mitigations are released.]]></description>
-      <pubDate>Thu, 19 Nov 2026 08:14:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISA Adds Four Exploited Vulnerabilities</title>
-      <link>https://secubuzz.com/news/cisa-adds-four-exploited-vulnerabilities-2e7a06cd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-four-exploited-vulnerabilities-2e7a06cd</guid>
-      <description><![CDATA[CISA added four actively exploited vulnerabilities to its Known Exploited Vulnerabilities catalog, affecting Synology DSM, BerriAI LiteLLM, Apache Axis, and Vanderbilt REDCap systems. The flaws enable ransomware, cryptomining, and LLMjacking attacks, with evidence of active exploitation in the wild. CISA urges affected organizations to apply vendor patches, monitor for suspicious activity, and maintain up-to-date security configurations.]]></description>
-      <pubDate>Thu, 19 Nov 2026 08:00:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Africa Leads Global Cyber Attack Rankings</title>
-      <link>https://secubuzz.com/news/africa-leads-global-cyber-attack-rankings-ede8c92a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/africa-leads-global-cyber-attack-rankings-ede8c92a</guid>
-      <description><![CDATA[Threat intelligence indicates Africa now tops global attack rankings, with Nigeria’s incidents more than doubling from the previous year. The spike encompasses phishing, ransomware, and credential-stealing campaigns, placing Angola and Kenya among the top five most attacked nations. Defenders should enhance regional threat monitoring, strengthen endpoint defenses, and share indicators of compromise across national agencies.]]></description>
-      <pubDate>Thu, 19 Nov 2026 08:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>PHP Issues Critical Update for CVE-2026-115560 RCE</title>
-      <link>https://secubuzz.com/news/php-issues-critical-update-for-cve-2026-115560-rce-c36942a6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-issues-critical-update-for-cve-2026-115560-rce-c36942a6</guid>
-      <description><![CDATA[PHP released a critical security update to address CVE-2026-115560, an RCE flaw affecting session upload progress. The vulnerability was publicly disclosed two days after the PHP2Shell patches, and proof-of-concept exploits are available. Administrators should apply the latest PHP patch immediately to eliminate the high-risk code execution vector in affected systems.]]></description>
-      <pubDate>Thu, 19 Nov 2026 07:45:17 GMT</pubDate>
-      <source url="https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/">SecurityWeek</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chinese Hackers Upgrade EggStreme Malware With Silent Backdoor to Evade Security Detection</title>
-      <link>https://secubuzz.com/news/chinese-hackers-upgrade-eggstreme-malware-with-sil-936101d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chinese-hackers-upgrade-eggstreme-malware-with-sil-936101d4</guid>
-      <description><![CDATA[A suspected Chinese cyberespionage group has rebuilt its EggStreme malware framework, adding a Windows backdoor that waits for an incoming connection instead of calling out to an attacker-controlled server. Bitdefender’s November 18, 2026, report tracks the changes as the group continues to target government organizations in the Philippines.]]></description>
-      <pubDate>Thu, 19 Nov 2026 07:19:21 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/eggstreme-malware/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ZDI-26-1038: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP UpdateFirmware Out-Of-Bounds Write Remote Code Execution Vulnerability</title>
-      <link>https://secubuzz.com/news/zdi-26-1038-0day-pwn2own-united-chargers-grizzl-e-4148bfab</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zdi-26-1038-0day-pwn2own-united-chargers-grizzl-e-4148bfab</guid>
-      <description><![CDATA[This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131813.]]></description>
-      <pubDate>Thu, 19 Nov 2026 06:00:00 GMT</pubDate>
-      <source url="http://www.zerodayinitiative.com/advisories/ZDI-26-1038/">ZDI Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Consumer Devices Breach OT Segmentation in Hospitals</title>
-      <link>https://secubuzz.com/news/consumer-devices-breach-ot-segmentation-in-hospita-1073f17e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/consumer-devices-breach-ot-segmentation-in-hospita-1073f17e</guid>
-      <description><![CDATA[Claroty found game consoles, Roku sticks, Teslas, and other consumer gadgets bypassing OT network segmentation in hospitals, factories, and commercial sites. Many devices are placed on production or guest segments, enabling attackers to move laterally to critical OT equipment without isolation. Teams should audit device placement, enforce strict segmentation, and monitor OT traffic to block lateral movement.]]></description>
-      <pubDate>Thu, 19 Nov 2026 05:30:09 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/19/slipping-past-ot-network-segmentation/">Help Net Security</source>
       <category>Vulnerability</category>
     </item>
   </channel>
