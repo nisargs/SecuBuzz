@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 23:47:30 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 00:55:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Ransomware Brokers Shift Listings to Private Channels</title>
@@ -26,6 +26,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Azure Linux 4 Released for VMs Without Extra Fee</title>
+      <link>https://secubuzz.com/news/azure-linux-4-released-for-vms-without-extra-fee-b6924440</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/azure-linux-4-released-for-vms-without-extra-fee-b6924440</guid>
+      <description><![CDATA[Microsoft announced general availability of Azure Linux 4, its in-house Linux distribution for customer virtual machines and scale sets. It is offered at no extra license fee, with customers paying only for Azure compute. The release enables organizations to deploy a consistent Linux environment across Azure workloads without additional licensing costs.]]></description>
+      <pubDate>Wed, 18 Nov 2026 23:01:14 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/19/microsoft-azure-linux-4/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Ubuntu Patches Multiple OpenJDK 27 Flaws</title>
       <link>https://secubuzz.com/news/ubuntu-patches-multiple-openjdk-27-flaws-24a3f261</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-multiple-openjdk-27-flaws-24a3f261</guid>
@@ -33,6 +42,42 @@
       <pubDate>Wed, 18 Nov 2026 22:13:47 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9158-1">Ubuntu Security Notices</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>USN-9157-1: OpenJDK 25 vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9157-1-openjdk-25-vulnerabilities-d6b9f99d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9157-1-openjdk-25-vulnerabilities-d6b9f99d</guid>
+      <description><![CDATA[A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 25 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 25 did not correctly authorize users.]]></description>
+      <pubDate>Wed, 18 Nov 2026 22:13:33 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9157-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>USN-9156-1: OpenJDK 21 vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9156-1-openjdk-21-vulnerabilities-d767f87d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9156-1-openjdk-21-vulnerabilities-d767f87d</guid>
+      <description><![CDATA[A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 21 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 21 did not correctly authorize users.]]></description>
+      <pubDate>Wed, 18 Nov 2026 22:12:23 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9156-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Social Media Amplifies Outage Panic</title>
+      <link>https://secubuzz.com/news/social-media-amplifies-outage-panic-2ab3bacf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/social-media-amplifies-outage-panic-2ab3bacf</guid>
+      <description><![CDATA[The article warns that recent outages and attacks can cause unnecessary worry, especially when amplified by social media. It advises against allowing social media narratives to transform a technical bug into a perceived disaster, which can mislead stakeholders. Readers are encouraged to verify incidents through official sources before reacting, thereby reducing panic and misinformation.]]></description>
+      <pubDate>Wed, 18 Nov 2026 22:07:01 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/11/outage-or-attack-dont-let-social-media-fill-in-the-gaps">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Chrome for Android Update</title>
+      <link>https://secubuzz.com/news/chrome-for-android-update-ce57406e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-for-android-update-ce57406e</guid>
+      <description><![CDATA[We've just released Chrome 159 (159.0.8154.18) for Android to a small percentage of users. It'll become available on Google Play over the next few days. If you find a new issue, please let us know by filing a bug .]]></description>
+      <pubDate>Wed, 18 Nov 2026 22:00:00 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0145322301.html">Google Chrome Releases</source>
+      <category>General</category>
     </item>
     <item>
       <title>OpenJDK 17.0.21.1 Critical Update for Portable Linux</title>
@@ -134,6 +179,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>NGINX HTTP/2 Flaw Enables Unauthenticated Remote Code Execution</title>
+      <link>https://secubuzz.com/news/nginx-http-2-flaw-enables-unauthenticated-remote-c-96906100</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nginx-http-2-flaw-enables-unauthenticated-remote-c-96906100</guid>
+      <description><![CDATA[A decade-old vulnerability in NGINX's HTTP/2 implementation (CVE-2026-123007) allows unauthenticated attackers to execute arbitrary code on servers with HTTP/2 enabled. The flaw, present since version 1.9.5, stems from improper handling of HTTP/2 frames leading to memory corruption and unauthenticated remote code execution. F5 released patched versions 1.31.9 and 1.30.7; administrators must upgrade immediately to mitigate exploitation risk.]]></description>
+      <pubDate>Wed, 18 Nov 2026 18:31:17 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Chrome Beta Desktop Update Released</title>
       <link>https://secubuzz.com/news/chrome-beta-desktop-update-released-e6aa2faa</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chrome-beta-desktop-update-released-e6aa2faa</guid>
@@ -150,6 +204,15 @@
       <pubDate>Wed, 18 Nov 2026 18:18:11 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-188-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>GhostMap eBPF Rootkit Conceals IronWorm Malware on Linux</title>
+      <link>https://secubuzz.com/news/ghostmap-ebpf-rootkit-conceals-ironworm-malware-on-3496fb98</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ghostmap-ebpf-rootkit-conceals-ironworm-malware-on-3496fb98</guid>
+      <description><![CDATA[Attackers are deploying the GhostMap eBPF rootkit to hide IronWorm malware processes, files, and network sockets from standard Linux inspection tools like /proc/net/tcp. The rootkit leverages extended Berkeley Packet Filter hooks to manipulate kernel-level visibility, allowing malicious listeners to evade detection while remaining operational.]]></description>
+      <pubDate>Wed, 18 Nov 2026 18:11:43 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-ghostmap-ebpf-rootkit/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Arctic Wolf Releases Quarterly Innovation Update</title>
@@ -179,6 +242,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>OffSec Converts Recent Vulnerabilities Into Hands-On Labs</title>
+      <link>https://secubuzz.com/news/offsec-converts-recent-vulnerabilities-into-hands-97d5622b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/offsec-converts-recent-vulnerabilities-into-hands-97d5622b</guid>
+      <description><![CDATA[OffSec released over 80 hands-on labs built around recent real-world vulnerabilities including PHPH2Shell, expanding its training catalog within two weeks. The labs map to actual CVEs and support a Level 20 Learn One promotion offering $550 off for enrolled learners. Security teams can use the curriculum to practice detection and remediation techniques against these threats.]]></description>
+      <pubDate>Wed, 18 Nov 2026 16:16:51 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/offsec-php2shell-black-october-hands-on-labs/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>RHSA-2026:100573: Critical: OpenJDK 25.0.5.1 Security Update for Portable Linux Builds</title>
       <link>https://secubuzz.com/news/rhsa-2026-100573-critical-openjdk-25-0-5-1-securit-6e0aa222</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100573-critical-openjdk-25-0-5-1-securit-6e0aa222</guid>
@@ -195,6 +267,15 @@
       <pubDate>Wed, 18 Nov 2026 16:05:50 GMT</pubDate>
       <source url="https://cybersecuritynews.com/nginx-http-2-vulnerabilities/">Cyber Security News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Cisco Patches ClamAV Flaws Causing Denial of Service</title>
+      <link>https://secubuzz.com/news/cisco-patches-clamav-flaws-causing-denial-of-servi-68fc4068</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-patches-clamav-flaws-causing-denial-of-servi-68fc4068</guid>
+      <description><![CDATA[Cisco addressed multiple ClamAV vulnerabilities affecting its products that let a remote attacker bypass configured file and scan time limits, causing denial of service that interrupts scanning operations. The Security Impact Rating is High on Windows platforms like Cisco Secure Endpoint Connector, Medium elsewhere, with no available workarounds. Cisco released software updates; administrators should apply them promptly.]]></description>
+      <pubDate>Wed, 18 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DClamAV+Vulnerabilities+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1">Cisco PSIRT</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Vulnerability in Oracle OpenJDK (Java4Shell) Affecting Cisco Products: November 2026</title>
@@ -374,87 +455,6 @@
       <description><![CDATA[Attackers now exploit vulnerabilities before patches are released, with 23% of newly added exploits being active on or before disclosure. The report highlights that AI pentesting vendors are not interchangeable, as gaps often appear in logged-in flows, coverage, and production safety. Security teams should evaluate vendors against these criteria before engagement to ensure comprehensive coverage and reduce early exploitation risk.]]></description>
       <pubDate>Wed, 18 Nov 2026 12:15:00 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Launches Perception Agentic Security Platform</title>
-      <link>https://secubuzz.com/news/microsoft-launches-perception-agentic-security-pla-9b866ec5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-launches-perception-agentic-security-pla-9b866ec5</guid>
-      <description><![CDATA[Microsoft has moved its Perception Agentic Security Platform from preview to general availability, releasing four blue-team agents and a Recon Agent. Integrations and vulnerability shielding features remain in preview, indicating ongoing development for broader threat detection and response capabilities. Security teams should monitor Microsoft’s release notes for updates and plan to incorporate the new agents into their defensive workflows.]]></description>
-      <pubDate>Wed, 18 Nov 2026 12:14:23 GMT</pubDate>
-      <source url="https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>France Blames Iran for Fridge Cyberattacks</title>
-      <link>https://secubuzz.com/news/france-blames-iran-for-fridge-cyberattacks-7f34dac8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/france-blames-iran-for-fridge-cyberattacks-7f34dac8</guid>
-      <description><![CDATA[U.S. intelligence agencies assessed Iran responsible for a series of fridge cyberattacks targeting French facilities. The low-confidence assessment links attacks to Iran, not a specific group, and hints at similar incidents across Europe. No public patch is required, but teams should monitor critical IoT device vulnerabilities for potential supply-chain risks.]]></description>
-      <pubDate>Wed, 18 Nov 2026 12:05:35 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html">Schneier on Security</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>CISA Adds Four Known Exploited Vulnerabilities to Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-four-known-exploited-vulnerabilities-to-25f0f3dc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-four-known-exploited-vulnerabilities-to-25f0f3dc</guid>
-      <description><![CDATA[BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. Aware of an exploited vulnerability not currently listed in the KEV Catalog?. The vulnerabilities are tracked as CVE-2024-10441, CVE-2026-40217, CVE-2026-90436.]]></description>
-      <pubDate>Wed, 18 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISA Flags Active Exploitation of Puppet Enterprise Vulnerability</title>
-      <link>https://secubuzz.com/news/cisa-flags-active-exploitation-of-puppet-enterpris-5f16325d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-flags-active-exploitation-of-puppet-enterpris-5f16325d</guid>
-      <description><![CDATA[CISA identified an actively exploited vulnerability in Perforce Puppet Enterprise that allows remote code execution on Puppet Servers. Cataloged as CVE-2026-115731, the flaw permits unauthenticated attackers to run arbitrary code via a malformed request, with evidence of in-the-wild exploitation. Perforce released an urgent patch; administrators should apply it immediately and disable exposed endpoints until the fix is deployed.]]></description>
-      <pubDate>Wed, 18 Nov 2026 11:59:36 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/puppet-enterprise-flaw-actively-exploited/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chrome 158 Addresses 204 Vulnerabilities</title>
-      <link>https://secubuzz.com/news/chrome-158-addresses-204-vulnerabilities-35777c9e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-addresses-204-vulnerabilities-35777c9e</guid>
-      <description><![CDATA[Google released Chrome 158, fixing 204 security issues across the browser. The update includes five externally reported flaws with bounty payouts of $11,000 each, while the remaining 36 bugs' rewards remain undetermined. Users should install the latest Chrome version across all supported platforms to ensure protection against the patched vulnerabilities.]]></description>
-      <pubDate>Wed, 18 Nov 2026 11:43:22 GMT</pubDate>
-      <source url="https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Java4Shell CVE-2026-114938 Exploitation Risk</title>
-      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-risk-feedad64</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-risk-feedad64</guid>
-      <description><![CDATA[Researchers discovered a critical Java vulnerability, dubbed Java4Shell, identified as CVE-2026-114938. The flaw is a memory corruption bug in OpenJDK’s Base64 decoder, allowing unauthenticated remote code execution on servers running Java applications. Oracle and OpenJDK released patches; administrators should apply the update immediately across all affected systems to mitigate the exploitation risk.]]></description>
-      <pubDate>Wed, 18 Nov 2026 11:41:07 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/bugs/2026/11/java4shell-a-critical-flaw-with-a-narrow-reach">Malwarebytes Labs</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Java4Shell CVE-2026-114938 Exploitation Requires Specific CPUs</title>
-      <link>https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-requires-s-64ad6e03</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-cve-2026-114938-exploitation-requires-s-64ad6e03</guid>
-      <description><![CDATA[CVE-2026-114938 is a memory corruption flaw in OpenJDK’s Base64 decoder that can enable unauthenticated remote code execution on Java application servers. The vulnerability is exploitable only on specific CPU architectures, and no successful attacks have been reported, though CISA urges immediate patching. Oracle and the OpenJDK project released patches; administrators should apply the update immediately to eliminate the exploitation risk.]]></description>
-      <pubDate>Wed, 18 Nov 2026 11:12:12 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/18/java4shell-openjdk-vulnerability-cve-2026-114938/">Help Net Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AI Pentesting Raises Data Privacy and Production Safety Concerns</title>
-      <link>https://secubuzz.com/news/ai-pentesting-raises-data-privacy-and-production-s-109a730c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-pentesting-raises-data-privacy-and-production-s-109a730c</guid>
-      <description><![CDATA[AI-driven pentesting accelerates code changes, increasing vulnerability exposure in production systems. The rapid development cycle shortens time-to-exploit to a single day, amplifying risk for data privacy and operational safety, though no specific flaw is cited. Security teams must adopt continuous testing and integrate AI tools to detect and remediate issues before deployment.]]></description>
-      <pubDate>Wed, 18 Nov 2026 11:03:57 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Defending Against Blockchain-Based Dead Drops</title>
-      <link>https://secubuzz.com/news/defending-against-blockchain-based-dead-drops-ac2aaa17</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/defending-against-blockchain-based-dead-drops-ac2aaa17</guid>
-      <description><![CDATA[Malware command-and-control infrastructure has migrated to decentralized blockchain networks, eliminating single points of failure. This shift creates bulletproof dead drops that resist takedown, requiring advanced detection and mitigation strategies. Security teams should monitor blockchain traffic, employ distributed ledger analysis, and develop countermeasures to disrupt these resilient C2 channels globally.]]></description>
-      <pubDate>Wed, 18 Nov 2026 11:00:00 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/">Cisco Talos</source>
       <category>General</category>
     </item>
   </channel>

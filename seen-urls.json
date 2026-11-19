@@ -6252,5 +6252,17 @@
   "https://access.redhat.com/errata/RHSA-2026:100565",
   "https://cyber.gc.ca/en/alerts-advisories/smartertools-security-advisory-av26-1177",
   "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1176",
-  "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups"
+  "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1017/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1016/",
+  "https://ubuntu.com/security/notices/USN-9157-1",
+  "https://ubuntu.com/security/notices/USN-9156-1",
+  "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+  "https://cybersecuritynews.com/hackers-use-ghostmap-ebpf-rootkit/",
+  "https://cybersecuritynews.com/offsec-php2shell-black-october-hands-on-labs/",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DClamAV+Vulnerabilities+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1",
+  "https://research.checkpoint.com/2026/the-state-of-ransomware-q3-2026/",
+  "https://www.helpnetsecurity.com/2026/11/19/microsoft-azure-linux-4/",
+  "https://www.malwarebytes.com/blog/ai/2026/11/outage-or-attack-dont-let-social-media-fill-in-the-gaps",
+  "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0145322301.html"
 ]

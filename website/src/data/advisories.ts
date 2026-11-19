@@ -2,6 +2,114 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-76088",
+    "cveID": "CVE-2026-76088",
+    "slug": "cve-2026-76088",
+    "vendor": "Java (Maven)",
+    "product": "org.pgpainless:pgpainless-core",
+    "name": "PGPainless: Unbounded Compressed Packet Descent in inline-detach and MessageInspector leads to Denial of Service (DoS)",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "An architectural security boundary bypass in inline-detach and MessageInspector allows remote, unauthenticated attackers to force unbounded recursive decompression routines.",
+    "requiredAction": "Upgrade org.pgpainless:pgpainless-core to version 1.7.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cvx8-9ff6-54xq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76088"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-73504",
+    "cveID": "CVE-2026-73504",
+    "slug": "cve-2026-73504",
+    "vendor": "Java (Maven)",
+    "product": "com.ing.data:cassandra-jdbc-wrapper",
+    "name": "cassandra-jdbc-wrapper: Authentication Token Exposed in Logs",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.5,
+    "severity": "Medium",
+    "cwe": "CWE-532",
+    "ransomware": false,
+    "description": "The fix for AIKIDO-2024-10565 (plaintext password logging) introduced two redaction helpers — DriverUtil.toStringWithoutSensitiveValues() and DriverUtil.redactSensitiveValuesInJdbcUrl() — but both helpers only redact the \"password\" property/parameter (JdbcUrlUtil.TAG_PASSWORD).",
+    "requiredAction": "Upgrade com.ing.data:cassandra-jdbc-wrapper to version 5.0.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jc42-994r-vvwp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73504"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63129",
+    "cveID": "CVE-2026-63129",
+    "slug": "cve-2026-63129",
+    "vendor": "npm",
+    "product": "@connorbritain/mssql-mcp-core",
+    "name": "mssql-mcp-core: SQL injection in mssql-mcp write tools via unparameterized table names and WHERE clauses",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-89",
+    "ransomware": false,
+    "description": "Several tools in mssql-mcp-core built T-SQL by string-interpolating caller-supplied identifiers and predicates directly into the statement passed to the node-mssql Request.query() batch API. Only data values were parameterized. Affected tools and inputs: - update_data, delete_data: tableName and the free-form whereClause were interpolated raw.",
+    "requiredAction": "Upgrade @connorbritain/mssql-mcp-core to version 0.6.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2m9m-6cr5-9x25"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63129"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-75521",
+    "cveID": "CVE-2026-75521",
+    "slug": "cve-2026-75521",
+    "vendor": "Go",
+    "product": "miren.dev/runtime",
+    "name": "Miren Runtime: Authentication bypass in RPC layer: unverified TLS client certificates grant cluster superuser access",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 10,
+    "severity": "Critical",
+    "cwe": "CWE-295",
+    "ransomware": false,
+    "description": "The Miren Runtime RPC server (QUIC/HTTP3, default port :8443) requested TLS client certificates but never verified that a presented certificate chained to the cluster Certificate Authority.",
+    "requiredAction": "Upgrade miren.dev/runtime to version 0.11.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8fh7-7q4q-cq52"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75521"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2024-10441",
     "slug": "cve-2024-10441",
     "vendor": "Synology",
@@ -1364,114 +1472,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119790"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128134",
-    "cveID": "CVE-2026-128134",
-    "slug": "cve-2026-128134",
-    "vendor": "Pip",
-    "product": "nltk",
-    "name": "NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 7.8,
-    "severity": "High",
-    "cwe": "CWE-426",
-    "ransomware": false,
-    "description": "nltk.parse.dependencygraph.dot2img invokes the Graphviz dot executable without the trusted-execution guarantees that NLTK applies to its other native-tool wrappers. The function resolves dot by bare name and then runs the resolved absolute path with a raw subprocess.run, omitting the ownership/writability check and the loader-environment scrub that nltk.pathsec.spawn_trusted provides.",
-    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-7mxv-7h3q-9324"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128134"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128076",
-    "cveID": "CVE-2026-128076",
-    "slug": "cve-2026-128076",
-    "vendor": "npm",
-    "product": "nuxt",
-    "name": "Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 3.1,
-    "severity": "Low",
-    "cwe": "CWE-116",
-    "ransomware": false,
-    "description": "The fix for CVE-2026-46342 (GHSA-g8wj-3cr3-6w7v) binds each /__nuxt_island/<Name>_<hash>.json path to its props by hashing the (name, props, context, source) tuple. That hash was computed over ohash's serialization, which does not escape quotes inside strings or delimiters inside keys, so two different prop objects can produce the same hash.",
-    "requiredAction": "Upgrade nuxt to version 4.6.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hf59-9xwc-2g4p"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128076"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128075",
-    "cveID": "CVE-2026-128075",
-    "slug": "cve-2026-128075",
-    "vendor": "npm",
-    "product": "nuxt",
-    "name": "Nuxt exposes the message and data of unhandled errors thrown during server rendering",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-209",
-    "ransomware": false,
-    "description": "When a page, plugin or route middleware throws an error that is not an HTTP error, Nuxt wraps it with createError before rendering the error page. The wrapped error was treated as one the app raised deliberately, so in production its message and data were sent to the client in the error page payload (__NUXT_DATA__) and in JSON error responses.",
-    "requiredAction": "Upgrade nuxt to version 4.6.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-96x6-fvhx-49hg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128075"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128074",
-    "cveID": "CVE-2026-128074",
-    "slug": "cve-2026-128074",
-    "vendor": "npm",
-    "product": "nuxt",
-    "name": "Nuxt payload URL generation has quadratic cost for repeated slashes in the request path",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-1333",
-    "ransomware": false,
-    "description": "Nuxt strips trailing slashes from the request path with a regular expression whose cost grows quadratically with the length of a run of consecutive slashes. A single unauthenticated request with a long run of slashes can occupy the server's event loop for a noticeable time, delaying every other request handled by the same process.",
-    "requiredAction": "Upgrade nuxt to version 4.6.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r9jc-w898-3fv6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128074"
       }
     ],
     "source": "GITHUB"

@@ -48,6 +48,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "azure-linux-4-released-for-vms-without-extra-fee-b6924440",
+    "title": "Azure Linux 4 Released for VMs Without Extra Fee",
+    "summary": "Microsoft announced general availability of Azure Linux 4, its in-house Linux distribution for customer virtual machines and scale sets. It is offered at no extra license fee, with customers paying only for Azure compute. The release enables organizations to deploy a consistent Linux environment across Azure workloads without additional licensing costs.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/microsoft-azure-linux-4/",
+    "publishedAt": "2026-11-18T23:01:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "azure-linux-4-released-for-vms-without-extra-fee",
+      "article-b6924440",
+      "b6924440",
+      "azure-linux-4-released-for-vms-without-extra-fee-4f3d13"
+    ]
+  },
+  {
     "slug": "ubuntu-patches-multiple-openjdk-27-flaws-24a3f261",
     "title": "Ubuntu Patches Multiple OpenJDK 27 Flaws",
     "summary": "Ubuntu released a security update addressing multiple remote vulnerabilities affecting the OpenJDK 27 environment. Flaws including CVE-2026-114938 and CVE-2026-114939 involve improper input handling and authentication in Compiler, JGSS, and JSSE components, allowing unauthorized data access, denial of service, or arbitrary code execution. Security teams should apply the USN-9158-1 package updates to mitigate potential exploitation.",
@@ -66,6 +84,99 @@ export const news: NewsBrief[] = [
       "article-24a3f261",
       "24a3f261",
       "ubuntu-patches-multiple-openjdk-27-flaws-7e7940"
+    ]
+  },
+  {
+    "slug": "usn-9157-1-openjdk-25-vulnerabilities-d6b9f99d",
+    "title": "USN-9157-1: OpenJDK 25 vulnerabilities",
+    "summary": "A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 25 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 25 did not correctly authorize users.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9157-1",
+    "publishedAt": "2026-11-18T22:13:33.000Z",
+    "cves": [
+      "CVE-2026-114938",
+      "CVE-2026-114939",
+      "CVE-2026-114940",
+      "CVE-2026-114941",
+      "CVE-2026-114942",
+      "CVE-2026-114943",
+      "CVE-2026-114944",
+      "CVE-2026-114945",
+      "CVE-2026-114946",
+      "CVE-2026-114947"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9157-1-openjdk-25-vulnerabilities",
+      "article-d6b9f99d",
+      "d6b9f99d",
+      "usn-9157-1-openjdk-25-vulnerabilities-7e7944"
+    ]
+  },
+  {
+    "slug": "usn-9156-1-openjdk-21-vulnerabilities-d767f87d",
+    "title": "USN-9156-1: OpenJDK 21 vulnerabilities",
+    "summary": "A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 21 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 21 did not correctly authorize users.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9156-1",
+    "publishedAt": "2026-11-18T22:12:23.000Z",
+    "cves": [
+      "CVE-2026-114938",
+      "CVE-2026-114939",
+      "CVE-2026-114940",
+      "CVE-2026-114941",
+      "CVE-2026-114942",
+      "CVE-2026-114943",
+      "CVE-2026-114944",
+      "CVE-2026-114945",
+      "CVE-2026-114946"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9156-1-openjdk-21-vulnerabilities",
+      "article-d767f87d",
+      "d767f87d",
+      "usn-9156-1-openjdk-21-vulnerabilities-7e7947"
+    ]
+  },
+  {
+    "slug": "social-media-amplifies-outage-panic-2ab3bacf",
+    "title": "Social Media Amplifies Outage Panic",
+    "summary": "The article warns that recent outages and attacks can cause unnecessary worry, especially when amplified by social media. It advises against allowing social media narratives to transform a technical bug into a perceived disaster, which can mislead stakeholders. Readers are encouraged to verify incidents through official sources before reacting, thereby reducing panic and misinformation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/outage-or-attack-dont-let-social-media-fill-in-the-gaps",
+    "publishedAt": "2026-11-18T22:07:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "social-media-amplifies-outage-panic",
+      "article-2ab3bacf",
+      "2ab3bacf",
+      "social-media-amplifies-outage-panic-20edd5"
+    ]
+  },
+  {
+    "slug": "chrome-for-android-update-ce57406e",
+    "title": "Chrome for Android Update",
+    "summary": "We've just released Chrome 159 (159.0.8154.18) for Android to a small percentage of users. It'll become available on Google Play over the next few days. If you find a new issue, please let us know by filing a bug .",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0145322301.html",
+    "publishedAt": "2026-11-18T22:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-for-android-update",
+      "article-ce57406e",
+      "ce57406e",
+      "chrome-for-android-update-4a431e"
     ]
   },
   {
@@ -279,6 +390,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "nginx-http-2-flaw-enables-unauthenticated-remote-c-96906100",
+    "title": "NGINX HTTP/2 Flaw Enables Unauthenticated Remote Code Execution",
+    "summary": "A decade-old vulnerability in NGINX's HTTP/2 implementation (CVE-2026-123007) allows unauthenticated attackers to execute arbitrary code on servers with HTTP/2 enabled. The flaw, present since version 1.9.5, stems from improper handling of HTTP/2 frames leading to memory corruption and unauthenticated remote code execution. F5 released patched versions 1.31.9 and 1.30.7; administrators must upgrade immediately to mitigate exploitation risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+    "publishedAt": "2026-11-18T18:31:17.000Z",
+    "cves": [
+      "CVE-2026-123007"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "nginx-http-2-flaw-enables-unauthenticated-remote-c",
+      "article-96906100",
+      "96906100",
+      "nginx-http-2-flaw-enables-unauthenticated-remote-c-2def97",
+      "nginx-http-2-flaw-enables-unauthenticated-remote-code-execut"
+    ]
+  },
+  {
     "slug": "chrome-beta-desktop-update-released-e6aa2faa",
     "title": "Chrome Beta Desktop Update Released",
     "summary": "Google Chrome updated its Beta channel to version 159.0.8154.13 for Windows, Mac, and Linux desktop users. The release contains incremental bug fixes and stability improvements, with a partial change log posted in the Git log. Users should update via the browser's update settings; no critical security patches are included currently.",
@@ -315,6 +447,25 @@ export const news: NewsBrief[] = [
       "16072b1a",
       "cve-2026-130638-path-traversal-in-the-object-detec-936eef",
       "cve-2026-130638-path-traversal-in-the-object-detection-datas"
+    ]
+  },
+  {
+    "slug": "ghostmap-ebpf-rootkit-conceals-ironworm-malware-on-3496fb98",
+    "title": "GhostMap eBPF Rootkit Conceals IronWorm Malware on Linux",
+    "summary": "Attackers are deploying the GhostMap eBPF rootkit to hide IronWorm malware processes, files, and network sockets from standard Linux inspection tools like /proc/net/tcp. The rootkit leverages extended Berkeley Packet Filter hooks to manipulate kernel-level visibility, allowing malicious listeners to evade detection while remaining operational.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ghostmap-ebpf-rootkit/",
+    "publishedAt": "2026-11-18T18:11:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostmap-ebpf-rootkit-conceals-ironworm-malware-on",
+      "article-3496fb98",
+      "3496fb98",
+      "ghostmap-ebpf-rootkit-conceals-ironworm-malware-on-719949",
+      "ghostmap-ebpf-rootkit-conceals-ironworm-malware-on-linux"
     ]
   },
   {
@@ -376,6 +527,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "offsec-converts-recent-vulnerabilities-into-hands-97d5622b",
+    "title": "OffSec Converts Recent Vulnerabilities Into Hands-On Labs",
+    "summary": "OffSec released over 80 hands-on labs built around recent real-world vulnerabilities including PHPH2Shell, expanding its training catalog within two weeks. The labs map to actual CVEs and support a Level 20 Learn One promotion offering $550 off for enrolled learners. Security teams can use the curriculum to practice detection and remediation techniques against these threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/offsec-php2shell-black-october-hands-on-labs/",
+    "publishedAt": "2026-11-18T16:16:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "offsec-converts-recent-vulnerabilities-into-hands",
+      "article-97d5622b",
+      "97d5622b",
+      "offsec-converts-recent-vulnerabilities-into-hands-7f223b",
+      "offsec-converts-recent-vulnerabilities-into-hands-on-labs"
+    ]
+  },
+  {
     "slug": "rhsa-2026-100573-critical-openjdk-25-0-5-1-securit-6e0aa222",
     "title": "RHSA-2026:100573: Critical: OpenJDK 25.0.5.1 Security Update for Portable Linux Builds",
     "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -413,6 +583,25 @@ export const news: NewsBrief[] = [
       "article-b81237d2",
       "b81237d2",
       "nginx-http-2-flaws-enable-remote-code-execution-5ea75f"
+    ]
+  },
+  {
+    "slug": "cisco-patches-clamav-flaws-causing-denial-of-servi-68fc4068",
+    "title": "Cisco Patches ClamAV Flaws Causing Denial of Service",
+    "summary": "Cisco addressed multiple ClamAV vulnerabilities affecting its products that let a remote attacker bypass configured file and scan time limits, causing denial of service that interrupts scanning operations. The Security Impact Rating is High on Windows platforms like Cisco Secure Endpoint Connector, Medium elsewhere, with no available workarounds. Cisco released software updates; administrators should apply them promptly.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DClamAV+Vulnerabilities+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1",
+    "publishedAt": "2026-11-18T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-patches-clamav-flaws-causing-denial-of-servi",
+      "article-68fc4068",
+      "68fc4068",
+      "cisco-patches-clamav-flaws-causing-denial-of-servi-59933d",
+      "cisco-patches-clamav-flaws-causing-denial-of-service"
     ]
   },
   {
@@ -1486,6 +1675,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "krita-heic-parser-zero-day-enables-remote-code-exe-263f6d01",
+    "title": "Krita HEIC Parser Zero-Day Enables Remote Code Execution",
+    "summary": "A zero-day out-of-bounds write in Krita’s HEIC parser lets attackers run code when a user opens a malicious file or visits a malicious page. The flaw, rated CVSS 7.8, exploits a buffer overflow in HEIC parsing and requires user interaction for remote code execution. No patch is available yet; users should avoid HEIC files and apply Krita updates when released.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1017/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "krita-heic-parser-zero-day-enables-remote-code-exe",
+      "article-263f6d01",
+      "263f6d01",
+      "krita-heic-parser-zero-day-enables-remote-code-exe-77f33c",
+      "krita-heic-parser-zero-day-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "krita-exr-parser-integer-overflow-allows-remote-co-ec57dd90",
+    "title": "Krita EXR Parser Integer Overflow Allows Remote Code Execution",
+    "summary": "A zero-day integer overflow in Krita’s EXR parser allows attackers to run code when a user opens an EXR file or visits a malicious page. The flaw, rated CVSS 7.8, exploits a buffer overflow in EXR parsing and requires user interaction for remote code execution. No patch is available yet; should avoid EXR files and apply Krita updates when released.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1016/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "krita-exr-parser-integer-overflow-allows-remote-co",
+      "article-ec57dd90",
+      "ec57dd90",
+      "krita-exr-parser-integer-overflow-allows-remote-co-77f33c",
+      "krita-exr-parser-integer-overflow-allows-remote-code-executi"
+    ]
+  },
+  {
     "slug": "ros-2-xml-external-entity-disclosure-vulnerability-36989201",
     "title": "ROS 2 XML External Entity Disclosure Vulnerability",
     "summary": "A zero-day XML External Entity flaw in Open Robotics ROS 2’s sros2 load_policy lets attackers read sensitive data when a target opens a malicious file or page. The flaw requires user interaction, scores 5.5 on CVSS, and offers only information disclosure. No patch is available; operators should avoid loading untrusted XML into ROS 2 until an update is released.",
@@ -2348,6 +2575,24 @@ export const news: NewsBrief[] = [
       "d27899fb",
       "microsoft-agent-framework-compromised-credential-s-d609ff",
       "microsoft-agent-framework-compromised-credential-stealer-tar"
+    ]
+  },
+  {
+    "slug": "ransomware-fragmentation-in-q3-2026-a507799d",
+    "title": "Ransomware Fragmentation in Q3 2026",
+    "summary": "Check Point Research released a Q3 2026 ransomware activity report showing record attack volumes. The analysis notes a fragmentation trend, with more ransomware brands targeting victims, top groups holding a smaller share, and major organizations resisting high ransom demands. The report provides industry insights but no specific vulnerability or patch is referenced.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/the-state-of-ransomware-q3-2026/",
+    "publishedAt": "2026-11-17T22:01:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ransomware-fragmentation-in-q3-2026",
+      "article-a507799d",
+      "a507799d",
+      "ransomware-fragmentation-in-q3-2026-26d3b7"
     ]
   },
   {
@@ -9643,262 +9888,6 @@ export const news: NewsBrief[] = [
       "922df6c5",
       "typoprompting-turns-ai-site-typos-into-malware-tra-17f84f",
       "typoprompting-turns-ai-site-typos-into-malware-traps"
-    ]
-  },
-  {
-    "slug": "cisa-nominee-connected-car-hacking-baker-tilly-bre-e670ef5a",
-    "title": "CISA Nominee, Connected Car Hacking, Baker Tilly Breach",
-    "summary": "The SecurityWeek roundup covers a new CISA director nominee, emerging connected-car hacking threats, and a Baker Tilly data breach. Additional items include Siemens' security advisory policy, OpenAI Codex backdoor risks, and Microsoft warnings about model weight backdoors. These stories highlight evolving attack vectors and the importance of proactive security posture across industries.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
-    "publishedAt": "2026-11-13T15:20:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-nominee-connected-car-hacking-baker-tilly-bre",
-      "article-e670ef5a",
-      "e670ef5a",
-      "cisa-nominee-connected-car-hacking-baker-tilly-bre-640261",
-      "cisa-nominee-connected-car-hacking-baker-tilly-breach"
-    ]
-  },
-  {
-    "slug": "sansar-rootkit-conceals-gpu-mining-by-tampering-nv-90b197b5",
-    "title": "SANSAR Rootkit Conceals GPU Mining by Tampering NVIDIA Library",
-    "summary": "SANSAR, a Linux-based rootkit, infiltrated NVIDIA GPU servers by tampering with libnvidia-ml.so to conceal cryptomining activity. The malware hijacks the NVIDIA monitoring library, reports zero utilization, and uses LD_PRELOAD hooks and SSH lateral movement to evade detection and persist. Security teams should block unauthorized SSH, monitor libnvidia-ml.so changes, apply vendor patches, and deploy kernel integrity checks to remove the rootkit.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-sansar-linux-malware/",
-    "publishedAt": "2026-11-13T15:09:45.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/sansar-linux-cryptominer-nvidia-rootkit"
-      }
-    ],
-    "aliases": [
-      "sansar-rootkit-conceals-gpu-mining-by-tampering-nv",
-      "article-90b197b5",
-      "90b197b5",
-      "sansar-rootkit-conceals-gpu-mining-by-tampering-nv-5e995c",
-      "sansar-rootkit-conceals-gpu-mining-by-tampering-nvidia-libra"
-    ]
-  },
-  {
-    "slug": "ai-agent-exposes-five-enterprise-security-gaps-96bc037f",
-    "title": "AI Agent Exposes Five Enterprise Security Gaps",
-    "summary": "An AI invoice-processing agent was tricked by a malicious email to change vendor bank details, exposing five critical security gaps. The gaps arise from weak input validation, absent transaction confirmation, limited authentication, insufficient monitoring, and lack of anomaly detection, allowing credential misuse. Mitigation requires stricter email filtering, mandatory transaction approvals, stronger authentication, continuous monitoring, and regular AI agent security audits.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
-    "publishedAt": "2026-11-13T15:01:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agent-exposes-five-enterprise-security-gaps",
-      "article-96bc037f",
-      "96bc037f",
-      "ai-agent-exposes-five-enterprise-security-gaps-5de07f"
-    ]
-  },
-  {
-    "slug": "fake-gta-6-download-distributes-warden-crypto-stea-40ac5cf5",
-    "title": "Fake GTA 6 Download Distributes WARDEN Crypto Stealer via Google Colab",
-    "summary": "A fake Grand Theft Auto VI download promoted through a Google Colab notebook distributed the WARDEN crypto stealer, targeting users seeking the game. The malware harvests cryptocurrency wallets, steals credentials, and encrypts local files, compromising financial data and system integrity. Security teams should block Google Colab access, monitor for stealer execution, and apply Cynet detection rules to mitigate the threat.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/fake-gta-6-download-scam/",
-    "publishedAt": "2026-11-13T15:00:59.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/fake-gta-6-download-warden-stealer-campaign"
-      }
-    ],
-    "aliases": [
-      "fake-gta-6-download-distributes-warden-crypto-stea",
-      "article-40ac5cf5",
-      "40ac5cf5",
-      "fake-gta-6-download-distributes-warden-crypto-stea-1dd0e9",
-      "fake-gta-6-download-distributes-warden-crypto-stealer-via-go"
-    ]
-  },
-  {
-    "slug": "hackers-use-2-700-passwords-to-break-into-microsof-a976b775",
-    "title": "Hackers Use 2,700 Passwords to Break Into Microsoft SQL Servers and Deploy Remote Access Malware",
-    "summary": "A new campaign is guessing its way into internet-facing Microsoft SQL Server systems. The attackers use a list of more than 2,700 passwords and then install a cryptocurrency miner and a remote access trojan (RAT) on the hacked machines.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/break-into-microsoft-sql-servers/",
-    "publishedAt": "2026-11-13T14:54:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-2-700-passwords-to-break-into-microsof",
-      "article-a976b775",
-      "a976b775",
-      "hackers-use-2-700-passwords-to-break-into-microsof-6d0a32",
-      "hackers-use-2-700-passwords-to-break-into-microsoft-sql-serv"
-    ]
-  },
-  {
-    "slug": "red-hat-satellite-6-19-6-receives-critical-async-u-6d655171",
-    "title": "Red Hat Satellite 6.19.6 Receives Critical Async Update",
-    "summary": "Red Hat released a critical async update for Satellite 6.19.6, addressing a security issue affecting RHEL 9 deployments. The patch resolves a vulnerability that could allow unauthorized access to satellite management functions, potentially compromising configuration data and control plane integrity. Administrators should download and install the RHSA-2026:100120 update immediately, following Red Hat’s installation guidelines to ensure secure operation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100120",
-    "publishedAt": "2026-11-13T14:45:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-satellite-6-19-6-receives-critical-async-u",
-      "article-6d655171",
-      "6d655171",
-      "red-hat-satellite-6-19-6-receives-critical-async-u-2ee071",
-      "red-hat-satellite-6-19-6-receives-critical-async-update"
-    ]
-  },
-  {
-    "slug": "north-korean-hackers-steal-400m-via-deepfake-video-8f86abff",
-    "title": "North Korean Hackers Steal $400M via Deepfake Video Calls",
-    "summary": "North Korean threat actors launched the FaceStealer campaign, targeting corporate executives via deepfake video calls to impersonate trusted contacts and gain access to financial systems. The attack exploited human trust, bypassing authentication and enabling the theft of over $400 million in cryptocurrency. Defenders should verify call authenticity, enforce MFA, and monitor wallet activity for anomalous transfers to mitigate future incidents.",
-    "category": "Nation State",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
-    "publishedAt": "2026-11-13T14:28:58.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/facestealer-dprk-bluenoroff-deepfake-crypto-theft"
-      }
-    ],
-    "aliases": [
-      "north-korean-hackers-steal-400m-via-deepfake-video",
-      "article-8f86abff",
-      "8f86abff",
-      "north-korean-hackers-steal-400m-via-deepfake-video-51e259",
-      "north-korean-hackers-steal-400m-via-deepfake-video-calls"
-    ]
-  },
-  {
-    "slug": "n8n-oauth-account-hijack-vulnerability-exposed-41b5dfbd",
-    "title": "n8n OAuth Account Hijack Vulnerability Exposed",
-    "summary": "An OAuth Account Hijack flaw in n8n’s Credential Connect Flow allows attackers to hijack accounts via an unauthenticated callback. The flaw exists in n8n versions prior to 2.45.5, 2.46.1, and 3.0.1, enabling unauthorized access without credentials and granting user control. Administrators should apply the latest n8n release or patch, following the Cyber Centre’s guidance, to eliminate the unauthenticated callback risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1160",
-    "publishedAt": "2026-11-13T14:28:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n8n-oauth-account-hijack-vulnerability-exposed",
-      "article-41b5dfbd",
-      "41b5dfbd",
-      "n8n-oauth-account-hijack-vulnerability-exposed-3ce530"
-    ]
-  },
-  {
-    "slug": "belarusian-cloud-firm-suffers-ransomware-encryptio-0ea179d8",
-    "title": "Belarusian Cloud Firm Suffers Ransomware Encryption",
-    "summary": "Ransomware attackers breached ActiveCloud’s cloud infrastructure, encrypting critical services. No CVE disclosed; attackers leveraged credential theft or misconfigured access to encrypt data, causing multi-day service outages across the firm’s key services. ActiveCloud has applied emergency patches and recommends customers enforce strict access controls, enable backups, and monitor for anomalous activity.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack",
-    "publishedAt": "2026-11-13T14:28:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "belarusian-cloud-firm-suffers-ransomware-encryptio",
-      "article-0ea179d8",
-      "0ea179d8",
-      "belarusian-cloud-firm-suffers-ransomware-encryptio-56df06",
-      "belarusian-cloud-firm-suffers-ransomware-encryption"
-    ]
-  },
-  {
-    "slug": "citrix-releases-critical-patch-for-netscaler-cve-2-b2949ed4",
-    "title": "Citrix Releases Critical Patch for NetScaler CVE-2026-120868",
-    "summary": "Citrix disclosed 28 security flaws in NetScaler ADC and Gateway, including CVE-2026-120868, a memory overflow affecting default installations. The CVE-2026-120868 vulnerability, rated CVSS 9.3, allows remote attackers to execute arbitrary code via malformed packet processing, posing a high-risk RCE threat. Citrix released patch CTX697305; administrators should apply the update immediately and verify default configurations to eliminate the overflow risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/citrix-patches-netscaler-security-vulnerabilities/",
-    "publishedAt": "2026-11-13T14:18:29.000Z",
-    "cves": [
-      "CVE-2026-120868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "citrix-releases-critical-patch-for-netscaler-cve-2",
-      "article-b2949ed4",
-      "b2949ed4",
-      "citrix-releases-critical-patch-for-netscaler-cve-2-58d08a",
-      "citrix-releases-critical-patch-for-netscaler-cve-2026-120868"
-    ]
-  },
-  {
-    "slug": "hackers-use-fake-purchase-order-emails-to-deliver-210f891d",
-    "title": "Hackers Use Fake Purchase Order Emails to Deliver XLoader Malware Through Malicious Word Documents",
-    "summary": "Hackers are sending fake purchase order emails to trick recipients into opening Word documents that deliver XLoader, an information-stealing malware. The attack uses an embedded document, an old Microsoft Equation Editor vulnerability, and several script stages to reach its final payload.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fake-purchase-order-emails/",
-    "publishedAt": "2026-11-13T14:09:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-fake-purchase-order-emails-to-deliver",
-      "article-210f891d",
-      "210f891d",
-      "hackers-use-fake-purchase-order-emails-to-deliver-55ae55",
-      "hackers-use-fake-purchase-order-emails-to-deliver-xloader-ma"
-    ]
-  },
-  {
-    "slug": "geovision-cameras-compromised-13-organizations-hit-0d083ca3",
-    "title": "GeoVision Cameras Compromised: 13 Organizations Hit by Cryptomining Exploit",
-    "summary": "GeoVision cameras at 13 organizations were compromised, enabling attackers to deploy XMRig cryptominers across diverse industries. The flaw, a firmware logic bug that permits unauthorized driver loading via BYOVD and IFEO hijacking, allowed remote code execution without user interaction. Administrators should patch firmware, disable BYOVD support, restrict management interface access, and monitor for unauthorized driver activity to mitigate mining.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/geovision-camera-software-xmrig-cryptominer",
-    "publishedAt": "2026-11-13T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/geovision-surveillance-software-xmrig-byovd-attacks"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/geovision-camera-software-vulnerabilities/"
-      }
-    ],
-    "aliases": [
-      "geovision-cameras-compromised-13-organizations-hit",
-      "article-0d083ca3",
-      "0d083ca3",
-      "geovision-cameras-compromised-13-organizations-hit-4742ec",
-      "geovision-cameras-compromised-13-organizations-hit-by-crypto"
     ]
   }
 ];
