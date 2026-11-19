@@ -11,6 +11,82 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "gta-6-scams-are-after-your-google-password-money-a-a23f6b54",
+    "title": "GTA 6 scams are after your Google password, money, and crypto wallet",
+    "summary": "Scammers are using the GTA 6 launch to steal Google passwords, sell game keys that may never arrive, and get players to connect crypto wallets. Stefan Dasic, a senior malware research engineer at Malwarebytes, tracked the lures.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/gta-6-scams-threats/",
+    "publishedAt": "2026-11-19T10:09:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gta-6-scams-are-after-your-google-password-money-a",
+      "article-a23f6b54",
+      "a23f6b54",
+      "gta-6-scams-are-after-your-google-password-money-a-4b0712",
+      "gta-6-scams-are-after-your-google-password-money-and-crypto-"
+    ]
+  },
+  {
+    "slug": "ukraine-arrests-key-members-of-ransomware-gang-tha-3cec419f",
+    "title": "Ukraine arrests key members of ransomware gang that extorted $40.5 million posing as IT support",
+    "summary": "Four key members of a ransomware group that took more than $40.5 million from at least 28 companies have been detained in Ukraine. The arrests followed an investigation that Ukrainian police ran with the FBI for more than two years.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/ukraine-ransomware-gang-arrests-fake-it-support-calls/",
+    "publishedAt": "2026-11-19T10:07:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ukraine-arrests-key-members-of-ransomware-gang-tha",
+      "article-3cec419f",
+      "3cec419f",
+      "ukraine-arrests-key-members-of-ransomware-gang-tha-72c3d3",
+      "ukraine-arrests-key-members-of-ransomware-gang-that-extorted"
+    ]
+  },
+  {
+    "slug": "ubuntu-releases-kernel-patch-for-multiple-azure-vu-1b8d9d27",
+    "title": "Ubuntu Releases Kernel Patch for Multiple Azure Vulnerabilities",
+    "summary": "Ubuntu issued a kernel update addressing several vulnerabilities that could allow attackers to compromise Azure-hosted systems. The flaws span USB gadget drivers, memory management, various architectures, and file system components, with no confirmed exploitation in the wild. All affected subsystems are fixed in the latest kernel release; administrators should apply the update promptly to mitigate potential compromise.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9160-1",
+    "publishedAt": "2026-11-19T09:58:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-releases-kernel-patch-for-multiple-azure-vu",
+      "article-1b8d9d27",
+      "1b8d9d27",
+      "ubuntu-releases-kernel-patch-for-multiple-azure-vu-7e78e9",
+      "ubuntu-releases-kernel-patch-for-multiple-azure-vulnerabilit"
+    ]
+  },
+  {
+    "slug": "hackers-breach-n-able-cloud-server-disrupting-emai-ac60aa8a",
+    "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+    "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs. \"We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence,\" N-able said.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+    "publishedAt": "2026-11-19T09:31:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-breach-n-able-cloud-server-disrupting-emai",
+      "article-ac60aa8a",
+      "ac60aa8a",
+      "hackers-breach-n-able-cloud-server-disrupting-emai-9f2069",
+      "hackers-breach-n-able-cloud-server-disrupting-email-security"
+    ]
+  },
+  {
     "slug": "ruby2-hell-critical-one-byte-heap-overflow-in-ruby-ff7850cf",
     "title": "ruby2ßhell: Critical One-Byte Heap Overflow in Ruby Could Allow RCE Attacks",
     "summary": "Ruby has patched a critical memory corruption flaw that can allow remote code execution (RCE) on vulnerable servers. Tracked as GHSA-34m4-m9fh-gqp5 and named ruby2ßhell by Veria Labs, the flaw affects Ruby’s string case conversion code.",
@@ -27,6 +103,45 @@ export const news: NewsBrief[] = [
       "ff7850cf",
       "ruby2-hell-critical-one-byte-heap-overflow-in-ruby-31b71e",
       "ruby2-hell-critical-one-byte-heap-overflow-in-ruby-could-all"
+    ]
+  },
+  {
+    "slug": "splunk-fixes-critical-rce-and-auth-bypass-in-soar-7a8bfe7e",
+    "title": "Splunk Fixes Critical RCE and Auth Bypass in SOAR",
+    "summary": "Splunk released patches for its SOAR and Enterprise platforms to address a critical remote code execution flaw and a separate authentication bypass. The SOAR vulnerability, CVE-2026-131253, scored 9.9/10 and requires privileged accounts, while the Enterprise flaw, CVE-2026-76535, allows unauthenticated users to execute searches. Administrators should apply the latest updates immediately to eliminate the high-risk code execution and privilege escalation vectors.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/splunk-patches-vulnerabilities/",
+    "publishedAt": "2026-11-19T08:36:42.000Z",
+    "cves": [
+      "CVE-2026-131253",
+      "CVE-2026-76535"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "splunk-fixes-critical-rce-and-auth-bypass-in-soar",
+      "article-7a8bfe7e",
+      "7a8bfe7e",
+      "splunk-fixes-critical-rce-and-auth-bypass-in-soar-4776f0"
+    ]
+  },
+  {
+    "slug": "ruby-releases-patch-for-seven-rce-vulnerabilities-6c94ef26",
+    "title": "Ruby Releases Patch for Seven RCE Vulnerabilities",
+    "summary": "Ruby 4.0.10, 3.4.13, and 3.3.14 were updated to fix seven vulnerabilities in the language’s regex engine and string case-conversion code. The flaws enable remote code execution by allowing attackers to run arbitrary code within vulnerable Ruby processes, with proof-of-concept demonstrations already available. Users should upgrade to the patched releases immediately to prevent exploitation of the critical RCE vectors.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ruby-patches-7-security-vulnerabilities/",
+    "publishedAt": "2026-11-19T08:32:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ruby-releases-patch-for-seven-rce-vulnerabilities",
+      "article-6c94ef26",
+      "6c94ef26",
+      "ruby-releases-patch-for-seven-rce-vulnerabilities-74ca1a"
     ]
   },
   {
@@ -49,6 +164,45 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "php-issues-critical-update-for-cve-2026-115560-rce-c36942a6",
+    "title": "PHP Issues Critical Update for CVE-2026-115560 RCE",
+    "summary": "PHP released a critical security update to address CVE-2026-115560, an RCE flaw affecting session upload progress. The vulnerability was publicly disclosed two days after the PHP2Shell patches, and proof-of-concept exploits are available. Administrators should apply the latest PHP patch immediately to eliminate the high-risk code execution vector in affected systems.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/",
+    "publishedAt": "2026-11-19T07:45:17.000Z",
+    "cves": [
+      "CVE-2026-115560"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "php-issues-critical-update-for-cve-2026-115560-rce",
+      "article-c36942a6",
+      "c36942a6",
+      "php-issues-critical-update-for-cve-2026-115560-rce-5d0802"
+    ]
+  },
+  {
+    "slug": "chinese-hackers-upgrade-eggstreme-malware-with-sil-936101d4",
+    "title": "Chinese Hackers Upgrade EggStreme Malware With Silent Backdoor to Evade Security Detection",
+    "summary": "A suspected Chinese cyberespionage group has rebuilt its EggStreme malware framework, adding a Windows backdoor that waits for an incoming connection instead of calling out to an attacker-controlled server. Bitdefender’s November 18, 2026, report tracks the changes as the group continues to target government organizations in the Philippines.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/eggstreme-malware/",
+    "publishedAt": "2026-11-19T07:19:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chinese-hackers-upgrade-eggstreme-malware-with-sil",
+      "article-936101d4",
+      "936101d4",
+      "chinese-hackers-upgrade-eggstreme-malware-with-sil-4d75b9",
+      "chinese-hackers-upgrade-eggstreme-malware-with-silent-backdo"
+    ]
+  },
+  {
     "slug": "consumer-devices-breach-ot-segmentation-in-hospita-1073f17e",
     "title": "Consumer Devices Breach OT Segmentation in Hospitals",
     "summary": "Claroty found game consoles, Roku sticks, Teslas, and other consumer gadgets bypassing OT network segmentation in hospitals, factories, and commercial sites. Many devices are placed on production or guest segments, enabling attackers to move laterally to critical OT equipment without isolation. Teams should audit device placement, enforce strict segmentation, and monitor OT traffic to block lateral movement.",
@@ -65,6 +219,28 @@ export const news: NewsBrief[] = [
       "1073f17e",
       "consumer-devices-breach-ot-segmentation-in-hospita-6e29c9",
       "consumer-devices-breach-ot-segmentation-in-hospitals"
+    ]
+  },
+  {
+    "slug": "chromeos-stable-channel-updated-with-vm-escape-fix-7a79563a",
+    "title": "ChromeOS Stable Channel Updated with VM Escape Fixes",
+    "summary": "Google released a stable channel update for ChromeOS, upgrading OS to version 16868.24.0 and browser to 158.0.8127.65. The update bundles fixes for two VM escape vulnerabilities, CVE-2026-99999 and CVE-2026-74580, which could allow attackers to escape environments and gain local privilege escalation. The patch is included in the stable channel release; users should install the update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-chromeos_01891834105.html",
+    "publishedAt": "2026-11-19T05:16:06.168Z",
+    "cves": [
+      "CVE-2026-99999",
+      "CVE-2026-74580"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromeos-stable-channel-updated-with-vm-escape-fix",
+      "article-7a79563a",
+      "7a79563a",
+      "chromeos-stable-channel-updated-with-vm-escape-fix-3ef936",
+      "chromeos-stable-channel-updated-with-vm-escape-fixes"
     ]
   },
   {
@@ -1226,6 +1402,25 @@ export const news: NewsBrief[] = [
       "16072b1a",
       "cve-2026-130638-path-traversal-in-the-object-detec-936eef",
       "cve-2026-130638-path-traversal-in-the-object-detection-datas"
+    ]
+  },
+  {
+    "slug": "f5-big-ip-flaws-threaten-traffic-management-microk-980da029",
+    "title": "F5 BIG-IP Flaws Threaten Traffic Management Microkernel",
+    "summary": "F5 disclosed six critical BIG-IP flaws that can crash the Traffic Management Microkernel (TMM) without authentication, disrupting traffic until restart. Each flaw requires a specific virtual-server setup, such as an iRule with a particular command or an APM policy with two agent types, and may enable remote code execution. F5 urges immediate patching and configuration review to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+    "publishedAt": "2026-11-18T18:15:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "f5-big-ip-flaws-threaten-traffic-management-microk",
+      "article-980da029",
+      "980da029",
+      "f5-big-ip-flaws-threaten-traffic-management-microk-437859",
+      "f5-big-ip-flaws-threaten-traffic-management-microkernel"
     ]
   },
   {
@@ -9623,194 +9818,6 @@ export const news: NewsBrief[] = [
       "article-ed7d3290",
       "ed7d3290",
       "cloudflare-warns-of-ai-powered-pen-testing-threats-44a566"
-    ]
-  },
-  {
-    "slug": "nyc-imposes-1-000-fine-for-surveillance-pricing-c5a51994",
-    "title": "NYC Imposes $1,000 Fine for Surveillance Pricing",
-    "summary": "NYC will levy a $1,000 penalty on companies that charge customers for surveillance services, curbing hidden pricing practices. The fine applies after a verified instance, requiring firms to document pricing structures and submit evidence to the city’s enforcement office. Businesses should review pricing policies, keep transparent records, and seek legal counsel to ensure compliance before enforcement.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/nyc-council-passes-bill-ban-surveillance-pricing",
-    "publishedAt": "2026-11-13T18:35:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nyc-imposes-1-000-fine-for-surveillance-pricing",
-      "article-c5a51994",
-      "c5a51994",
-      "nyc-imposes-1-000-fine-for-surveillance-pricing-3543a5"
-    ]
-  },
-  {
-    "slug": "apple-releases-tvos-27-2-1-security-update-4049a8e7",
-    "title": "Apple Releases tvOS 27.2.1 Security Update",
-    "summary": "Apple released tvOS 27.2.1 (24K157), a new operating system update for Apple TV devices. The update contains unspecified security, stability, and performance enhancements, typical of Apple’s routine releases, and may address known vulnerabilities. Users should install the update via the Settings app to ensure device security and functionality in the field.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11132026a",
-    "publishedAt": "2026-11-13T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-tvos-27-2-1-security-update",
-      "article-4049a8e7",
-      "4049a8e7",
-      "apple-releases-tvos-27-2-1-security-update-645c12"
-    ]
-  },
-  {
-    "slug": "weekly-cybersecurity-roundup-crypto-scams-turla-ra-2be048f4",
-    "title": "Weekly Cybersecurity Roundup: Crypto Scams, Turla, Railway Breach",
-    "summary": "This week, law enforcement dismantled several crypto-scam operations and seized associated malware infrastructure. Meanwhile, the Turla APT group deployed the Cereal spyware to target government entities, while attackers breached Railway’s systems to exfiltrate AI research. Security teams should monitor for Cereal indicators, review Railway security controls, and stay alert to emerging crypto-scam tactics.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SentinelOne",
-    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-46-8",
-    "publishedAt": "2026-11-13T17:46:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "weekly-cybersecurity-roundup-crypto-scams-turla-ra",
-      "article-2be048f4",
-      "2be048f4",
-      "weekly-cybersecurity-roundup-crypto-scams-turla-ra-5e83ec",
-      "weekly-cybersecurity-roundup-crypto-scams-turla-railway-brea"
-    ]
-  },
-  {
-    "slug": "chrome-dev-channel-updated-to-160-0-8157-0-604ea908",
-    "title": "Chrome Dev Channel Updated to 160.0.8157.0",
-    "summary": "Google Chrome Dev channel updated to version 160.0.8157.0 across Windows, macOS, and Linux. The update includes various bug fixes and performance improvements, with a partial list of changes available in the Git log, and addresses several security patches. Users are encouraged to update to the latest Dev build to benefit from these enhancements.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update_01047619778.html",
-    "publishedAt": "2026-11-13T17:43:38.271Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-dev-channel-updated-to-160-0-8157-0",
-      "article-604ea908",
-      "604ea908",
-      "chrome-dev-channel-updated-to-160-0-8157-0-56cc33"
-    ]
-  },
-  {
-    "slug": "quantum-systems-reports-drone-operation-disruption-4c32ae5e",
-    "title": "Quantum Systems Reports Drone Operation Disruption by Cyberattack",
-    "summary": "Quantum Systems, a German defense tech firm, reported hostile actors disrupted its drone operations in late October. The attack targeted operational control systems, causing temporary loss of flight control and mission data integrity, with no physical damage reported. Quantum Systems is conducting forensic analysis, applied emergency firmware patches, and advises operators to enforce stricter access controls and continuous monitoring.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
-    "publishedAt": "2026-11-13T17:31:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "quantum-systems-reports-drone-operation-disruption",
-      "article-4c32ae5e",
-      "4c32ae5e",
-      "quantum-systems-reports-drone-operation-disruption-285183",
-      "quantum-systems-reports-drone-operation-disruption-by-cybera"
-    ]
-  },
-  {
-    "slug": "university-of-texas-at-arlington-warns-personal-in-b90429e7",
-    "title": "University of Texas at Arlington warns personal information stolen during cyberattack",
-    "summary": "In a statement to Recorded Future News, a spokesperson said an investigation into the attack confirmed the stolen data but declined to say what information was obtained by the threat actors.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/university-of-texas-arlington-warns-data-breach",
-    "publishedAt": "2026-11-13T17:26:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "university-of-texas-at-arlington-warns-personal-in",
-      "article-b90429e7",
-      "b90429e7",
-      "university-of-texas-at-arlington-warns-personal-in-57eede",
-      "university-of-texas-at-arlington-warns-personal-information-"
-    ]
-  },
-  {
-    "slug": "green-agent-remediation-plan-for-internet-facing-c-0f7616b0",
-    "title": "Green Agent: Remediation Plan for Internet-Facing Container",
-    "summary": "Wiz Research’s Green Agent case study examines an internet-facing container that exposed sensitive data. The team identified misconfigurations and privilege escalations, then crafted a remediation plan that balanced security urgency with business continuity, producing ready-to-merge pull requests. Security teams can adopt the outlined mitigations to harden similar container deployments in production.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/inside-green-agent-investigation",
-    "publishedAt": "2026-11-13T17:05:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "green-agent-remediation-plan-for-internet-facing-c",
-      "article-0f7616b0",
-      "0f7616b0",
-      "green-agent-remediation-plan-for-internet-facing-c-151148",
-      "green-agent-remediation-plan-for-internet-facing-container"
-    ]
-  },
-  {
-    "slug": "postgresql-patches-52-flaws-including-22-year-old-2aec0a44",
-    "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-    "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-    "publishedAt": "2026-11-13T16:53:08.000Z",
-    "cves": [
-      "CVE-2026-6460"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "postgresql-patches-52-flaws-including-22-year-old",
-      "article-2aec0a44",
-      "2aec0a44",
-      "postgresql-patches-52-flaws-including-22-year-old-6f38cf",
-      "postgresql-patches-52-flaws-including-22-year-old-bug-enabli"
-    ]
-  },
-  {
-    "slug": "nyc-bans-surveillance-based-pricing-29f7a2e5",
-    "title": "NYC Bans Surveillance-Based Pricing",
-    "summary": "New York City passed legislation prohibiting the use of personal data for individualized pricing, targeting surveillance-based pricing models. The law aims to protect consumers from opaque price discrimination by preventing companies from leveraging behavioral data to set higher rates. Businesses must adjust pricing strategies and ensure compliance with the new regulation, or face potential penalties.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/new-york-city-council-votes-to-ban-surveillance-pricing",
-    "publishedAt": "2026-11-13T16:52:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nyc-bans-surveillance-based-pricing",
-      "article-29f7a2e5",
-      "29f7a2e5",
-      "nyc-bans-surveillance-based-pricing-843e2f"
-    ]
-  },
-  {
-    "slug": "germany-passes-legislation-authorizing-intelligenc-0544a143",
-    "title": "Germany Passes Legislation Authorizing Intelligence Agency Hacking Powers",
-    "summary": "The German Bundestag passed legislation granting national spy agencies expanded authority for cyber hacking and sabotage activities. Approved by a vote of 308 to 190 with 71 abstentions, the bill marks the biggest postwar overhaul of the country's intelligence laws. This parliamentary enactment follows initial approval of the draft legislation by Chancellor Friedrich Merz's cabinet several months prior.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/german-parliament-passes-law-giving-spy-agencies-hacking-power",
-    "publishedAt": "2026-11-13T16:32:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "germany-passes-legislation-authorizing-intelligenc",
-      "article-0544a143",
-      "0544a143",
-      "germany-passes-legislation-authorizing-intelligenc-61e8b4",
-      "germany-passes-legislation-authorizing-intelligence-agency-h"
     ]
   }
 ];
