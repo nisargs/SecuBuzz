@@ -2216,25 +2216,30 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-e9122083",
-    "title": "F5 NGINX Vulnerabilities CVE-2026-123007, CVE-2026-123633",
-    "summary": "F5 disclosed vulnerabilities in NGINX Plus and Open Source, CVE-2026-123007 and CVE-2026-123633, affecting versions before 37.3.0.1, 37.0.8.1, 37.2.0.1, 37.0.7.1, 1.31.9, and 1.30.7. The flaws allow remote code execution via malformed HTTP/2 requests, with public proof-of-concept code available, potentially enabling attackers to compromise servers. Administrators should upgrade to the latest NGINX releases and apply F5-issued patches immediately.",
+    "slug": "f5-releases-patches-for-five-critical-nginx-vulner-a058b826",
+    "title": "F5 Releases Patches for Five Critical NGINX Vulnerabilities (CVE-2026-123007, CVE-2026-123633)",
+    "summary": "F5 Networks issued security patches for five critical NGINX vulnerabilities affecting both NGINX Plus and open-source editions. The flaws, identified as CVE-2026-123007 and CVE-2026-123633, allow remote code execution via malformed HTTP/2 requests, posing unauthenticated RCE risk without proof-of-concept exploitation yet. Administrators should immediately apply the F5 patches and upgrade to the latest NGINX releases to mitigate potential exploitation.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "Canadian Centre for Cyber Security",
     "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174",
     "publishedAt": "2026-11-18T19:02:27.000Z",
     "cves": [
-      "CVE-2026-123007",
-      "CVE-2026-123633"
+      "CVE-2026-123633",
+      "CVE-2026-123007"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/nginx2root-nginx-vulnerabilities/"
+      }
+    ],
     "aliases": [
-      "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026",
-      "article-e9122083",
-      "e9122083",
-      "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-3f3de0",
-      "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-123633"
+      "f5-releases-patches-for-five-critical-nginx-vulner",
+      "article-a058b826",
+      "a058b826",
+      "f5-releases-patches-for-five-critical-nginx-vulner-3f3de0",
+      "f5-releases-patches-for-five-critical-nginx-vulnerabilities-"
     ]
   },
   {

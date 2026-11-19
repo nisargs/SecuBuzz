@@ -1943,18 +1943,27 @@
   {
     "id": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174",
     "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174",
-    "title": "F5 NGINX Vulnerabilities CVE-2026-123007, CVE-2026-123633",
-    "headline": "F5 NGINX Vulnerabilities CVE-2026-123007, CVE-2026-123633",
-    "summary": "F5 disclosed vulnerabilities in NGINX Plus and Open Source, CVE-2026-123007 and CVE-2026-123633, affecting versions before 37.3.0.1, 37.0.8.1, 37.2.0.1, 37.0.7.1, 1.31.9, and 1.30.7. The flaws allow remote code execution via malformed HTTP/2 requests, with public proof-of-concept code available, potentially enabling attackers to compromise servers. Administrators should upgrade to the latest NGINX releases and apply F5-issued patches immediately.",
+    "title": "F5 Releases Patches for Five Critical NGINX Vulnerabilities (CVE-2026-123007, CVE-2026-123633)",
+    "headline": "F5 Releases Patches for Five Critical NGINX Vulnerabilities (CVE-2026-123007, CVE-2026-123633)",
+    "summary": "F5 Networks issued security patches for five critical NGINX vulnerabilities affecting both NGINX Plus and open-source editions. The flaws, identified as CVE-2026-123007 and CVE-2026-123633, allow remote code execution via malformed HTTP/2 requests, posing unauthenticated RCE risk without proof-of-concept exploitation yet. Administrators should immediately apply the F5 patches and upgrade to the latest NGINX releases to mitigate potential exploitation.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "Canadian Centre for Cyber Security",
     "publishedAt": "2026-11-18T19:02:27.000Z",
     "ingestedAt": "2026-11-18T20:44:03.724Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/nginx2root-nginx-vulnerabilities/"
+      }
+    ],
+    "cves": [
+      "CVE-2026-123633",
+      "CVE-2026-123007"
+    ]
   },
   {
     "id": "https://therecord.media/ai-cyber-white-house",
