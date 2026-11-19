@@ -11,6 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-132607-gcm-authentication-tag-length-down-7e9731bf",
+    "title": "CVE-2026-132607 - GCM authentication tag length downgrade in Amazon S3 Encryption Client for PHP",
+    "summary": "Bulletin ID: 2026-191-AWS Publication Date: 11/19/2026 13:00 PM PST Description: We identified CVE-2026-132607, an issue in the decryption component of Amazon S3 Encryption Client for PHP in the AWS SDK for PHP. The client did not verify the length of the AES-GCM authentication tag recorded in an object's metadata.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-191-aws/",
+    "publishedAt": "2026-11-19T21:46:07.000Z",
+    "cves": [
+      "CVE-2026-132607"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-132607-gcm-authentication-tag-length-down",
+      "article-7e9731bf",
+      "7e9731bf",
+      "cve-2026-132607-gcm-authentication-tag-length-down-1fbd5f",
+      "cve-2026-132607-gcm-authentication-tag-length-downgrade-in-a"
+    ]
+  },
+  {
     "slug": "usn-9176-1-ruby-vulnerabilities-4cae983c",
     "title": "USN-9176-1: Ruby vulnerabilities",
     "summary": "An attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (GHSA-34m4-m9fh-gqp5) Owais Lone discovered that Ruby incorrectly handled compiling certain large regular expressions. An attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (GHSA-3p8q-wmhx-vm2w) Stephan Lipp discovered that Ruby incorrectly handled converting certain regular expressions to strings.",
@@ -1314,6 +1335,27 @@ export const news: NewsBrief[] = [
       "936101d4",
       "chinese-hackers-upgrade-eggstreme-malware-with-sil-4d75b9",
       "chinese-hackers-upgrade-eggstreme-malware-with-silent-backdo"
+    ]
+  },
+  {
+    "slug": "zdi-26-1039-oracle-peoplesoft-register-incorrect-a-08d871b0",
+    "title": "ZDI-26-1039: Oracle PeopleSoft register Incorrect Authorization Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Oracle PeopleSoft. Authentication is required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-35273.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1039/",
+    "publishedAt": "2026-11-19T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-35273"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1039-oracle-peoplesoft-register-incorrect-a",
+      "article-08d871b0",
+      "08d871b0",
+      "zdi-26-1039-oracle-peoplesoft-register-incorrect-a-77f344",
+      "zdi-26-1039-oracle-peoplesoft-register-incorrect-authorizati"
     ]
   },
   {
@@ -9730,43 +9772,6 @@ export const news: NewsBrief[] = [
       "21745f13",
       "unrealircd-vulnerability-enables-command-execution-682a36",
       "unrealircd-vulnerability-enables-command-execution-with-irco"
-    ]
-  },
-  {
-    "slug": "copeland-controllers-face-rapid-exploit-attempts-o-5f4d80e0",
-    "title": "Copeland Controllers Face Rapid Exploit Attempts on 14 Vulnerabilities",
-    "summary": "Vulncheck identified fourteen security flaws in Copeland XWEB EVO refrigeration controllers, two of which threat actors have already targeted. The weaknesses involve improper input validation and insecure default credentials, enabling remote code execution or denial of service on the controllers' operating system. Copeland has issued firmware updates; operators should apply the latest patch and disable default accounts to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/",
-    "publishedAt": "2026-11-16T11:05:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "copeland-controllers-face-rapid-exploit-attempts-o",
-      "article-5f4d80e0",
-      "5f4d80e0",
-      "copeland-controllers-face-rapid-exploit-attempts-o-1c142a",
-      "copeland-controllers-face-rapid-exploit-attempts-on-14-vulne"
-    ]
-  },
-  {
-    "slug": "anthropic-releases-claude-mythos-5-2-fable-5-2-40b6d9d4",
-    "title": "Anthropic Releases Claude Mythos 5.2, Fable 5.2",
-    "summary": "Anthropic released Claude Mythos 5.2 and Fable 5.2 for developers. Updates enhance coding and reasoning but reduce coverage of some security tasks, while Mythos improves bug detection. No security patches or mitigations are required; users should adopt the new models for improved code quality to reduce bugs in production environments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
-    "publishedAt": "2026-11-16T11:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-releases-claude-mythos-5-2-fable-5-2",
-      "article-40b6d9d4",
-      "40b6d9d4",
-      "anthropic-releases-claude-mythos-5-2-fable-5-2-232a57"
     ]
   }
 ];

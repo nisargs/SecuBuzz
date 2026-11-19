@@ -1,5 +1,24 @@
 [
   {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-191-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-191-aws/",
+    "title": "CVE-2026-132607 - GCM authentication tag length downgrade in Amazon S3 Encryption Client for PHP",
+    "headline": "CVE-2026-132607 - GCM authentication tag length downgrade in Amazon S3 Encryption Client for PHP",
+    "summary": "Bulletin ID: 2026-191-AWS Publication Date: 11/19/2026 13:00 PM PST Description: We identified CVE-2026-132607, an issue in the decryption component of Amazon S3 Encryption Client for PHP in the AWS SDK for PHP. The client did not verify the length of the AES-GCM authentication tag recorded in an object's metadata.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-19T21:46:07.000Z",
+    "ingestedAt": "2026-11-19T22:15:26.713Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-132607"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://ubuntu.com/security/notices/USN-9176-1",
     "sourceUrl": "https://ubuntu.com/security/notices/USN-9176-1",
     "title": "USN-9176-1: Ruby vulnerabilities",
@@ -1114,6 +1133,25 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1039/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1039/",
+    "title": "ZDI-26-1039: Oracle PeopleSoft register Incorrect Authorization Remote Code Execution Vulnerability",
+    "headline": "ZDI-26-1039: Oracle PeopleSoft register Incorrect Authorization Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Oracle PeopleSoft. Authentication is required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-35273.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-19T06:00:00.000Z",
+    "ingestedAt": "2026-11-19T22:14:53.126Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-35273"
+    ],
     "additionalSources": [],
     "isFallback": true
   },
@@ -8369,38 +8407,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/",
-    "sourceUrl": "https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/",
-    "title": "Copeland Controllers Face Rapid Exploit Attempts on 14 Vulnerabilities",
-    "headline": "Copeland Controllers Face Rapid Exploit Attempts on 14 Vulnerabilities",
-    "summary": "Vulncheck identified fourteen security flaws in Copeland XWEB EVO refrigeration controllers, two of which threat actors have already targeted. The weaknesses involve improper input validation and insecure default credentials, enabling remote code execution or denial of service on the controllers' operating system. Copeland has issued firmware updates; operators should apply the latest patch and disable default accounts to mitigate exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-16T11:05:42.000Z",
-    "ingestedAt": "2026-11-16T12:43:14.058Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
-    "title": "Anthropic Releases Claude Mythos 5.2, Fable 5.2",
-    "headline": "Anthropic Releases Claude Mythos 5.2, Fable 5.2",
-    "summary": "Anthropic released Claude Mythos 5.2 and Fable 5.2 for developers. Updates enhance coding and reasoning but reduce coverage of some security tasks, while Mythos improves bug detection. No security patches or mitigations are required; users should adopt the new models for improved code quality to reduce bugs in production environments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-16T11:00:00.000Z",
-    "ingestedAt": "2026-11-16T12:43:24.380Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
     "additionalSources": []
   }
 ]

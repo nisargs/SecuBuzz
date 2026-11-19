@@ -6392,5 +6392,7 @@
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84015",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70174",
   "https://ubuntu.com/security/notices/USN-9170-2",
-  "https://ubuntu.com/security/notices/USN-9176-1"
+  "https://ubuntu.com/security/notices/USN-9176-1",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1039/",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-191-aws/"
 ]

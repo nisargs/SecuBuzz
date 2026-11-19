@@ -2,6 +2,29 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "GHSA-4rj4-rcrq-gr92",
+    "cveID": "GHSA-4rj4-rcrq-gr92",
+    "slug": "ghsa-4rj4-rcrq-gr92",
+    "vendor": "npm",
+    "product": "safari-mcp",
+    "name": "Safari MCP: JavaScript injection through single-quoted tool arguments (backslash not escaped)",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6.2,
+    "severity": "Medium",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "Sixteen places in safari.js placed a tool argument inside a single-quoted JavaScript string literal and escaped the single quote without first escaping backslashes. An argument containing a backslash followed by a quote therefore closed the literal, and the rest of the argument ran as JavaScript in the page.",
+    "requiredAction": "Upgrade safari-mcp to version 2.22.15 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4rj4-rcrq-gr92"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-121707",
     "cveID": "CVE-2026-121707",
     "slug": "cve-2026-121707",
@@ -1445,33 +1468,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119793"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-110789",
-    "cveID": "CVE-2026-110789",
-    "slug": "cve-2026-110789",
-    "vendor": "npm",
-    "product": "@libp2p/crypto",
-    "name": "libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
-    "dateAdded": "2026-11-17",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-130",
-    "ransomware": false,
-    "description": "A remote peer can stall a js-libp2p node's entire event loop for ~4–5 seconds per connection (and transiently allocate ~2 GB) by sending a ~15-byte crafted publicKey inside an Identify message. The malformed key reaches the DER decoder before any peer-id/signature check, so the attack is pre-auth and repeatable indefinitely by reconnecting.",
-    "requiredAction": "Upgrade @libp2p/crypto to version 5.1.22 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rvfr-cqwq-rc4j"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110789"
       }
     ],
     "source": "GITHUB"
