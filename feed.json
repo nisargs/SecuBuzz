@@ -65,6 +65,22 @@
     "isFallback": true
   },
   {
+    "id": "https://cybersecuritynews.com/phpaftershell-rce/",
+    "sourceUrl": "https://cybersecuritynews.com/phpaftershell-rce/",
+    "title": "phpAfterShell Exploits PHP2Shell Patch to Enable RCE",
+    "headline": "phpAfterShell Exploits PHP2Shell Patch to Enable RCE",
+    "summary": "A new PHP attack, phpAfterShell, enables unauthenticated remote code execution on servers even after the October PHP2Shell patches. The flaw, CVE-2026-126714, exploits a separate PHP bug that lets attackers combine payloads and run arbitrary code without authentication. Administrators should apply the latest PHP patch and verify that the phpAfterShell vulnerability is mitigated.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-19T16:50:33.000Z",
+    "ingestedAt": "2026-11-19T20:43:24.869Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/phpaftershell-rce/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
     "title": "PHP Releases 18 Security Patches for Critical RCE Flaws",
@@ -191,6 +207,38 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-9174-1",
+    "additionalSources": []
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-9168-2",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9168-2",
+    "title": "Linux Kernel FIPS Subsystem Vulnerabilities Fixed in USN-9168-2",
+    "headline": "Linux Kernel FIPS Subsystem Vulnerabilities Fixed in USN-9168-2",
+    "summary": "USN-9168-2 fixes multiple Linux kernel flaws that could let attackers compromise systems via subsystems such as stream parsing, ARM64, S390, x86, and various drivers. No public exploits are known, but the vulnerabilities could enable privilege escalation or kernel-level code execution, representing a medium-severity risk. Kernel maintainers released patches; administrators should update to the latest kernel to mitigate the issues.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-19T15:12:17.000Z",
+    "ingestedAt": "2026-11-19T20:43:24.869Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-9168-2",
+    "additionalSources": []
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-9171-2",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9171-2",
+    "title": "Linux Kernel Oracle Vulnerabilities CVE-2026-98432, CVE-2026-99999 Fixed",
+    "headline": "Linux Kernel Oracle Vulnerabilities CVE-2026-98432, CVE-2026-99999 Fixed",
+    "summary": "USN-9171-2 addresses Linux kernel flaws in IPv4 networking, Ethernet bridge, Netfilter, and XFRM that could allow attackers to compromise systems. The advisory lists CVE-2026-98432 and CVE-2026-99999; no public exploits are reported, but the issues could enable privilege escalation or kernel code execution. Kernel maintainers have released patches; administrators should update to the latest kernel version to mitigate the vulnerabilities.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-19T15:12:06.000Z",
+    "ingestedAt": "2026-11-19T20:43:24.869Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-9171-2",
     "additionalSources": []
   },
   {
@@ -8352,63 +8400,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
-    "sourceUrl": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
-    "title": "Microsoft Warns of Phishing Campaign Using Fake Microsoft 365 Outage Alerts",
-    "headline": "Microsoft Warns of Phishing Campaign Using Fake Microsoft 365 Outage Alerts",
-    "summary": "Microsoft Threat Intelligence reported a high-volume November 2026 phishing campaign targeting multiple sectors with fake Microsoft 365 service-disruption notices. The emails mimicked legitimate outage alerts and urged immediate message recovery, exploiting Microsoft branding to harvest credentials or direct users to malicious links. Security teams should verify service notices via official Microsoft channels, block malicious domains, enforce MFA, and reinforce phishing-resistant authentication.",
-    "category": "GENERAL",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-16T08:15:12.000Z",
-    "ingestedAt": "2026-11-16T08:43:11.650Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
-    "additionalSources": [
-      {
-        "source": "Microsoft Security",
-        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/microsoft-365-phishing-attack/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/uncategorized/2026/11/a-week-in-security-november-9-november-15-2",
-    "sourceUrl": "https://www.malwarebytes.com/blog/uncategorized/2026/11/a-week-in-security-november-9-november-15-2",
-    "title": "Malwarebytes Labs Weekly Security Roundup November 9-15",
-    "headline": "Malwarebytes Labs Weekly Security Roundup November 9-15",
-    "summary": "Malwarebytes Labs released a weekly security roundup covering November 9-15, 2026, summarizing emerging threats and vulnerability disclosures. The article details zero-day exploits, phishing campaigns, and new defensive tools observed during that period, offering context for security teams. No specific patches or mitigations are announced, making this a general industry update rather than an actionable advisory.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-11-16T08:01:00.000Z",
-    "ingestedAt": "2026-11-16T12:43:24.380Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.malwarebytes.com/blog/uncategorized/2026/11/a-week-in-security-november-9-november-15-2",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-    "title": "AI Agents Target LiteLLM, Dify for API Keys",
-    "headline": "AI Agents Target LiteLLM, Dify for API Keys",
-    "summary": "Attackers used autonomous AI agents to scan internet-exposed AI platforms like LiteLLM, One API, and Dify for embedded API keys. Stolen keys authenticated to providers, allowing agents to run AI models that searched for more keys, creating a loop. Amazon’s threat team captured the activity with decoy servers and recommends revoking exposed keys, tightening storage, and enforcing stricter controls.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-16T07:34:21.000Z",
-    "ingestedAt": "2026-11-16T08:43:21.482Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
     "additionalSources": []
   }
 ]

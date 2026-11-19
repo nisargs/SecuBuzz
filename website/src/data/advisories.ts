@@ -2,6 +2,276 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-61713",
+    "cveID": "CVE-2026-61713",
+    "slug": "cve-2026-61713",
+    "vendor": "Rust (Cargo)",
+    "product": "servo",
+    "name": "Servo Sandbox bypass: declarative refresh can auto-navigate a sandboxed iframe",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 8.3,
+    "severity": "High",
+    "cwe": "CWE-693",
+    "ransomware": false,
+    "description": "Servo allows a sandboxed iframe to auto-navigate itself via declarative refresh in configurations that should block automatic features. The issue reproduces in the must-block rows of the matrix: - sandbox=\"\" - sandbox=\"allow-same-origin\" - sandbox=\"allow-forms\" - sandbox=\"allow-same-origin allow-forms\" This is a client-side sandbox-policy bypass.",
+    "requiredAction": "Upgrade servo to version 0.3.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pxh3-4qqv-58mg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61713"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-61689",
+    "cveID": "CVE-2026-61689",
+    "slug": "cve-2026-61689",
+    "vendor": "Java (Maven)",
+    "product": "org.xwiki.platform:xwiki-platform-rest-server",
+    "name": "XWiki Platform: HQL injection in search allows unauthenticated database extraction including password hashes",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-943",
+    "ransomware": false,
+    "description": "The query REST API allows executing HQL queries to filter the listed pages. While this properly checks access rights for the current user, the query can be used to combine when clauses and blind queries, to recover values, through FROM clause injection to join BaseObject and StringProperty tables, bypassing the HQL validator's SELECT column whitelist.",
+    "requiredAction": "Upgrade org.xwiki.platform:xwiki-platform-rest-server to version 16.10.18 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jmmc-wjpc-pg34"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61689"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-59975",
+    "cveID": "CVE-2026-59975",
+    "slug": "cve-2026-59975",
+    "vendor": ".NET (NuGet)",
+    "product": "SharpIppNext",
+    "name": "SharpIppNext: Unbounded IPP Document Stream Buffering Leads to Denial of Service",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "SharpIppNext's IppProtocol.ReadIppRequestAsync() unconditionally copies the entire attacker-supplied IPP document payload into an unbounded MemoryStream with no size limit.",
+    "requiredAction": "Upgrade SharpIppNext to version 4.1.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3h63-w8jq-rrf2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59975"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77283",
+    "cveID": "CVE-2026-77283",
+    "slug": "cve-2026-77283",
+    "vendor": "npm",
+    "product": "obsidian-sync-mcp",
+    "name": "obsidian-sync-mcp: Missing Host/Origin validation lets a public website drive a victim's Obsidian vault via DNS rebinding (no-auth mode)",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-350",
+    "ransomware": false,
+    "description": "When obsidian-sync-mcp runs without MCP_AUTH_TOKEN (the documented no-auth mode for local use), the HTTP MCP endpoint does not validate the Host or Origin header before dispatching MCP methods (CWE-350).",
+    "requiredAction": "Upgrade obsidian-sync-mcp to version 0.5.7 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mx6p-3fg7-v6pj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77283"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-76090",
+    "cveID": "CVE-2026-76090",
+    "slug": "cve-2026-76090",
+    "vendor": "Java (Maven)",
+    "product": "com.softwaremill.sttp.tapir:tapir-openapi-codegen-core",
+    "name": "Tapir: Construction/decode RCE via property name -> raw case-class field (tapir-openapi-codegen)",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 8.4,
+    "severity": "High",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "The OpenAPI code generator (tapir-openapi-codegen-core) builds Scala source by string templating and emitted several names/values from the (untrusted) OpenAPI document without escaping or validation, allowing injection of arbitrary Scala that runs at generated-code compile time and/or endpoint-assembly time (build/codegen-time RCE from an attacker-controlled spec).",
+    "requiredAction": "Upgrade com.softwaremill.sttp.tapir:tapir-openapi-codegen-core to version 1.13.27 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gpcc-36pq-8qxr"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76090"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-76807",
+    "cveID": "CVE-2026-76807",
+    "slug": "cve-2026-76807",
+    "vendor": "npm",
+    "product": "@doist/todoist-mcp",
+    "name": "Todoist MCP Server: Browser DNS rebinding lets websites write and delete Todoist data through local MCP server",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-346",
+    "ransomware": false,
+    "description": "The self-hosted todoist-mcp-http server accepts browser-origin MCP requests with attacker-controlled Host and Origin headers. A malicious website can use DNS rebinding to route its own origin to a victim's local 127.0.0.1 MCP server, then invoke Todoist MCP tools without a caller credential.",
+    "requiredAction": "Upgrade @doist/todoist-mcp to version 10.3.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-833v-v58w-294h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76807"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-62964",
+    "cveID": "CVE-2026-62964",
+    "slug": "cve-2026-62964",
+    "vendor": "Go",
+    "product": "gortex · zzet",
+    "name": "Gortex: Arbitrary file write / repo-confinement escape in `write_file` / `edit_file` / `move_inline` MCP tools → code execution",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.8,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "Gortex is an MCP server exposing write_file, edit_file, and move_inline tools. resolveFilePath exempts absolute paths from confinement, and the write handlers — unlike read_file / get_symbol_source — never call guardSymlinkWithinRepo.",
+    "requiredAction": "Upgrade gortex · zzet to version 0.55.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w42c-h7hr-f67p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62964"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-75522",
+    "cveID": "CVE-2026-75522",
+    "slug": "cve-2026-75522",
+    "vendor": "npm",
+    "product": "@openeudi/openid4vp",
+    "name": "OpenID4VP: X.509 chain validation accepts a forged certificate that reuses a trusted anchor's Subject DN without verifying its signature",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-295",
+    "ransomware": false,
+    "description": "ChainBuilder (the private RFC 5280 validator behind TrustEvaluator and the public credential-parsing API) terminated chain building on Subject Distinguished Name string equality rather than on cryptographic closure to a trust anchor.",
+    "requiredAction": "Upgrade @openeudi/openid4vp to version 0.8.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4c2f-96cf-f5fc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75522"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-76101",
+    "cveID": "CVE-2026-76101",
+    "slug": "cve-2026-76101",
+    "vendor": "Go",
+    "product": "keystore-go · pavel-v-chernykh",
+    "name": "keystore-go: Keystore integrity and password verification bypass via stripped trailing digest in Decode()",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-252",
+    "ransomware": false,
+    "description": "keystore.Decode() fails to check the error returned when reading the trailing SHA-1 integrity digest of a JKS keystore. If an attacker removes the final 20 bytes from a .jks file, the digest read returns an empty slice and the byte-comparison loop never executes, so Decode() returns the parsed keystore with err == nil.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-j282-pjg5-j643"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76101"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-76818",
+    "cveID": "CVE-2026-76818",
+    "slug": "cve-2026-76818",
+    "vendor": "Pip",
+    "product": "axon-mcp",
+    "name": "Axon: Download of Code Without Integrity Check in axon-mcp",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-494",
+    "ransomware": false,
+    "description": "axon rtk-install downloads a pre-built rtkx binary from GitHub releases and executes it via subprocess.run() on every text-compression call, without verifying its integrity — no checksum, signature, or attestation check anywhere in the download/install path.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r7wg-f7r2-8wf7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76818"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-63412",
     "cveID": "CVE-2026-63412",
     "slug": "cve-2026-63412",
@@ -1202,276 +1472,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63634"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-53998",
-    "cveID": "CVE-2026-53998",
-    "slug": "cve-2026-53998",
-    "vendor": "Pip",
-    "product": "arize-phoenix",
-    "name": "Phoenix: Format String Injection in applyChatTemplate",
-    "dateAdded": "2026-11-17",
-    "dueDate": "",
-    "cvss": 10,
-    "severity": "Critical",
-    "cwe": "CWE-134",
-    "ransomware": false,
-    "description": "- Summary A format string injection vulnerability in the applyChatTemplate GraphQL endpoint allows an attacker to read server-side environment variables, cryptographic secrets, and internal module attributes directly from the API response. On default Phoenix installations where authentication is disabled the endpoint is reachable with no credentials.",
-    "requiredAction": "Upgrade arize-phoenix to version 15.7.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gfv3-m769-5xm3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53998"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119351",
-    "cveID": "CVE-2026-119351",
-    "slug": "cve-2026-119351",
-    "vendor": "npm",
-    "product": "next",
-    "name": "Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata",
-    "dateAdded": "2026-11-17",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-362",
-    "ransomware": false,
-    "description": "With Cache Components enabled, an outer 'use cache' function can be keyed incorrectly even when its inner 'use cache' call generates a fresh entry.",
-    "requiredAction": "Upgrade next to version 16.4.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vc7v-qv4w-wrv8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119351"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-129237",
-    "cveID": "CVE-2026-129237",
-    "slug": "cve-2026-129237",
-    "vendor": "Go",
-    "product": "go.qbee.io/agent",
-    "name": "qbee-agent: Docker Compose build context Zip Slip writes outside context directory",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 5.4,
-    "severity": "Medium",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "qbee-agent contains a Zip Slip vulnerability in app/utils/tar.go. The tar extractor checks whether an entry remains inside the destination directory with: This does not enforce a path separator boundary. If the destination directory is /tmp/.../context, a tar entry such as ../context-outside/payload.txt cleans to /tmp/.../context-outside/payload.txt and still passes the prefix check.",
-    "requiredAction": "Upgrade go.qbee.io/agent to version 0.0.0-20260908095235-eb7875f0a849 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vx32-xf7g-9ghr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129237"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-91115",
-    "cveID": "CVE-2026-91115",
-    "slug": "cve-2026-91115",
-    "vendor": "Composer",
-    "product": "silverstripe/framework",
-    "name": "Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-470",
-    "ransomware": false,
-    "description": "The writer option of the i18nTextCollectorTask dev task was passed to the injector without validation. A crafted dev task URL could create arbitrary objects with attacker-controlled constructor arguments and run code on the server. Because the dev task did not ask for confirmation, an administrator could be tricked into running it by following a link. On a site in dev mode, no login was needed.",
-    "requiredAction": "Upgrade silverstripe/framework to version 6.2.13 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-c94f-87xg-65wf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91115"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-91113",
-    "cveID": "CVE-2026-91113",
-    "slug": "cve-2026-91113",
-    "vendor": "Composer",
-    "product": "silverstripe/framework",
-    "name": "Silverstripe Framework: User-controlled ClassName allows unauthorized record type change",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 4.3,
-    "severity": "Medium",
-    "cwe": "CWE-862",
-    "ransomware": false,
-    "description": "A user who can edit a record through a GridField detail form could change the record to an unrelated class, without the permission checks for that class. Lachlan Davidson, Carapace",
-    "requiredAction": "Upgrade silverstripe/framework to version 6.2.13 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4qv2-g5vp-wjjw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91113"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-91112",
-    "cveID": "CVE-2026-91112",
-    "slug": "cve-2026-91112",
-    "vendor": "Composer",
-    "product": "silverstripe/framework",
-    "name": "Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 6.8,
-    "severity": "Medium",
-    "cwe": "CWE-269",
-    "ransomware": false,
-    "description": "A user with access to the Security section (CMS_ACCESS_SecurityAdmin) but without the ADMIN permission could edit a group that grants ADMIN through a role or a parent group, and use it to escalate their own privileges. Lachlan Davidson, Carapace",
-    "requiredAction": "Upgrade silverstripe/framework to version 6.2.13 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rg72-5958-c65m"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91112"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-88989",
-    "cveID": "CVE-2026-88989",
-    "slug": "cve-2026-88989",
-    "vendor": "Composer",
-    "product": "silverstripe/framework",
-    "name": "Silverstripe Framework: Auth bypass GridFieldDetailForm",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 4.3,
-    "severity": "Medium",
-    "cwe": "CWE-862",
-    "ransomware": false,
-    "description": "A CMS user who can edit records through a GridField detail form could create new records without the permission to create them, by sending a save request directly. HDWSec -",
-    "requiredAction": "Upgrade silverstripe/framework to version 6.2.13 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3qh3-54qg-gpq3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88989"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-88988",
-    "cveID": "CVE-2026-88988",
-    "slug": "cve-2026-88988",
-    "vendor": "Composer",
-    "product": "silverstripe/framework",
-    "name": "Silverstripe Framework: XSS via SVG data URI",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 5.4,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "The HTML sanitiser did not remove SVG data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it. HDWSec -",
-    "requiredAction": "Upgrade silverstripe/framework to version 6.2.13 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xwg4-8hqh-79jq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88988"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-88987",
-    "cveID": "CVE-2026-88987",
-    "slug": "cve-2026-88987",
-    "vendor": "Composer",
-    "product": "silverstripe/framework",
-    "name": "Silverstripe Framework: XSS via XHTML data URI",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 5.4,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "The HTML sanitiser did not remove XHTML and XML data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it. Jack Wallace from Bastion Security",
-    "requiredAction": "Upgrade silverstripe/framework to version 6.2.13 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qqrg-8jpm-8mph"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88987"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-129239",
-    "cveID": "CVE-2026-129239",
-    "slug": "cve-2026-129239",
-    "vendor": "npm",
-    "product": "directus",
-    "name": "Directus: Share update allows reassigning user_created and role",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-269",
-    "ransomware": false,
-    "description": "A non-admin user who can update their own shares can reassign a share's creator (user_created), role, item, and collection fields after the share is created. The update is authorized against the row as it existed before the change, and the resulting row is never revalidated, so these fields can be set to values the user would not be permitted to assign when creating a share.",
-    "requiredAction": "Upgrade directus to version 12.3.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-7h45-q5jx-7r87"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129239"
       }
     ],
     "source": "GITHUB"

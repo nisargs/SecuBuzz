@@ -5636,5 +5636,8 @@
   "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1186",
   "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
   "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1185",
-  "https://ubuntu.com/security/notices/USN-9174-1"
+  "https://ubuntu.com/security/notices/USN-9174-1",
+  "https://cybersecuritynews.com/phpaftershell-rce/",
+  "https://ubuntu.com/security/notices/USN-9168-2",
+  "https://ubuntu.com/security/notices/USN-9171-2"
 ]

@@ -91,6 +91,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "phpaftershell-exploits-php2shell-patch-to-enable-r-81a2d034",
+    "title": "phpAfterShell Exploits PHP2Shell Patch to Enable RCE",
+    "summary": "A new PHP attack, phpAfterShell, enables unauthenticated remote code execution on servers even after the October PHP2Shell patches. The flaw, CVE-2026-126714, exploits a separate PHP bug that lets attackers combine payloads and run arbitrary code without authentication. Administrators should apply the latest PHP patch and verify that the phpAfterShell vulnerability is mitigated.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/phpaftershell-rce/",
+    "publishedAt": "2026-11-19T16:50:33.000Z",
+    "cves": [
+      "CVE-2026-126714"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "phpaftershell-exploits-php2shell-patch-to-enable-r",
+      "article-81a2d034",
+      "81a2d034",
+      "phpaftershell-exploits-php2shell-patch-to-enable-r-822549",
+      "phpaftershell-exploits-php2shell-patch-to-enable-rce"
+    ]
+  },
+  {
     "slug": "php-releases-18-security-patches-for-critical-rce-8cd3859d",
     "title": "PHP Releases 18 Security Patches for Critical RCE Flaws",
     "summary": "PHP released updates for 18 vulnerabilities, including critical flaws that let unauthenticated attackers remotely execute code. The bugs stem from improper input validation in PHP core, enabling code injection without authentication and granting server control. All affected PHP versions ship patches; administrators should update to the latest release or apply vendor-supplied hotfixes to eliminate the risk.",
@@ -240,6 +261,47 @@ export const news: NewsBrief[] = [
       "0d52dedf",
       "linux-kernel-vulnerabilities-affect-multiple-subsy-7e7866",
       "linux-kernel-vulnerabilities-affect-multiple-subsystems"
+    ]
+  },
+  {
+    "slug": "linux-kernel-fips-subsystem-vulnerabilities-fixed-5ff570dd",
+    "title": "Linux Kernel FIPS Subsystem Vulnerabilities Fixed in USN-9168-2",
+    "summary": "USN-9168-2 fixes multiple Linux kernel flaws that could let attackers compromise systems via subsystems such as stream parsing, ARM64, S390, x86, and various drivers. No public exploits are known, but the vulnerabilities could enable privilege escalation or kernel-level code execution, representing a medium-severity risk. Kernel maintainers released patches; administrators should update to the latest kernel to mitigate the issues.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9168-2",
+    "publishedAt": "2026-11-19T15:12:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-fips-subsystem-vulnerabilities-fixed",
+      "article-5ff570dd",
+      "5ff570dd",
+      "linux-kernel-fips-subsystem-vulnerabilities-fixed-7e78cb",
+      "linux-kernel-fips-subsystem-vulnerabilities-fixed-in-usn-916"
+    ]
+  },
+  {
+    "slug": "linux-kernel-oracle-vulnerabilities-cve-2026-98432-4a8ec64b",
+    "title": "Linux Kernel Oracle Vulnerabilities CVE-2026-98432, CVE-2026-99999 Fixed",
+    "summary": "USN-9171-2 addresses Linux kernel flaws in IPv4 networking, Ethernet bridge, Netfilter, and XFRM that could allow attackers to compromise systems. The advisory lists CVE-2026-98432 and CVE-2026-99999; no public exploits are reported, but the issues could enable privilege escalation or kernel code execution. Kernel maintainers have released patches; administrators should update to the latest kernel version to mitigate the vulnerabilities.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9171-2",
+    "publishedAt": "2026-11-19T15:12:06.000Z",
+    "cves": [
+      "CVE-2026-98432",
+      "CVE-2026-99999"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-oracle-vulnerabilities-cve-2026-98432",
+      "article-4a8ec64b",
+      "4a8ec64b",
+      "linux-kernel-oracle-vulnerabilities-cve-2026-98432-7e7871",
+      "linux-kernel-oracle-vulnerabilities-cve-2026-98432-cve-2026-"
     ]
   },
   {
@@ -9697,71 +9759,6 @@ export const news: NewsBrief[] = [
       "87f9e41a",
       "microsoft-releases-emergency-windows-activation-pa-612157",
       "microsoft-releases-emergency-windows-activation-patches"
-    ]
-  },
-  {
-    "slug": "microsoft-warns-of-phishing-campaign-using-fake-mi-5ea40011",
-    "title": "Microsoft Warns of Phishing Campaign Using Fake Microsoft 365 Outage Alerts",
-    "summary": "Microsoft Threat Intelligence reported a high-volume November 2026 phishing campaign targeting multiple sectors with fake Microsoft 365 service-disruption notices. The emails mimicked legitimate outage alerts and urged immediate message recovery, exploiting Microsoft branding to harvest credentials or direct users to malicious links. Security teams should verify service notices via official Microsoft channels, block malicious domains, enforce MFA, and reinforce phishing-resistant authentication.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
-    "publishedAt": "2026-11-16T08:15:12.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Microsoft Security",
-        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/microsoft-365-phishing-attack/"
-      }
-    ],
-    "aliases": [
-      "microsoft-warns-of-phishing-campaign-using-fake-mi",
-      "article-5ea40011",
-      "5ea40011",
-      "microsoft-warns-of-phishing-campaign-using-fake-mi-5a1839",
-      "microsoft-warns-of-phishing-campaign-using-fake-microsoft-36"
-    ]
-  },
-  {
-    "slug": "malwarebytes-labs-weekly-security-roundup-november-7b526ec1",
-    "title": "Malwarebytes Labs Weekly Security Roundup November 9-15",
-    "summary": "Malwarebytes Labs released a weekly security roundup covering November 9-15, 2026, summarizing emerging threats and vulnerability disclosures. The article details zero-day exploits, phishing campaigns, and new defensive tools observed during that period, offering context for security teams. No specific patches or mitigations are announced, making this a general industry update rather than an actionable advisory.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/uncategorized/2026/11/a-week-in-security-november-9-november-15-2",
-    "publishedAt": "2026-11-16T08:01:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malwarebytes-labs-weekly-security-roundup-november",
-      "article-7b526ec1",
-      "7b526ec1",
-      "malwarebytes-labs-weekly-security-roundup-november-33432a",
-      "malwarebytes-labs-weekly-security-roundup-november-9-15"
-    ]
-  },
-  {
-    "slug": "ai-agents-target-litellm-dify-for-api-keys-93f2f541",
-    "title": "AI Agents Target LiteLLM, Dify for API Keys",
-    "summary": "Attackers used autonomous AI agents to scan internet-exposed AI platforms like LiteLLM, One API, and Dify for embedded API keys. Stolen keys authenticated to providers, allowing agents to run AI models that searched for more keys, creating a loop. Amazon’s threat team captured the activity with decoy servers and recommends revoking exposed keys, tightening storage, and enforcing stricter controls.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-    "publishedAt": "2026-11-16T07:34:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-target-litellm-dify-for-api-keys",
-      "article-93f2f541",
-      "93f2f541",
-      "ai-agents-target-litellm-dify-for-api-keys-782911"
     ]
   }
 ];
