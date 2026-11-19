@@ -2,6 +2,330 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-63412",
+    "cveID": "CVE-2026-63412",
+    "slug": "cve-2026-63412",
+    "vendor": "Composer",
+    "product": "jane-php/open-api-3",
+    "name": "Jane: Instantiation RCE via query parameter name -> raw PHPDoc */ breakout (jane-php/open-api-3)",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "jane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the query parameter name verbatim in a @param array{ \"<name>\"?: ... } block. A / in the query name closes the / ...",
+    "requiredAction": "Upgrade jane-php/open-api-3 to version 7.12.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-q8v2-3j4h-xg2p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63412"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63413",
+    "cveID": "CVE-2026-63413",
+    "slug": "cve-2026-63413",
+    "vendor": "Composer",
+    "product": "jane-php/open-api-3",
+    "name": "Jane: Instantiation RCE via header parameter name -> raw PHPDoc */ breakout (jane-php/open-api-3)",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "jane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the header parameter name verbatim in a @param array{ \"<name>\"?: ... } block. A / in the header name closes the / ...",
+    "requiredAction": "Upgrade jane-php/open-api-3 to version 7.12.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x9xr-53qx-9qcf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63413"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63411",
+    "cveID": "CVE-2026-63411",
+    "slug": "cve-2026-63411",
+    "vendor": "Composer",
+    "product": "jane-php/open-api-3",
+    "name": "Jane: Instantiation RCE via parameter description -> raw PHPDoc */ breakout (jane-php/open-api-3)",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "jane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the parameter description verbatim in a @param array{ \"<name>\"?: ... } block. A / in the parameter description closes the / ...",
+    "requiredAction": "Upgrade jane-php/open-api-3 to version 7.12.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xwcw-j52r-34x4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63411"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-75518",
+    "cveID": "CVE-2026-75518",
+    "slug": "cve-2026-75518",
+    "vendor": "npm",
+    "product": "@apireno/domshell",
+    "name": "DOMShell: domshell_eval classified as read-tier can execute side-effecting JavaScript without --allow-write",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 4.8,
+    "severity": "Medium",
+    "cwe": "CWE-266",
+    "ransomware": false,
+    "description": "The domshell_eval MCP tool (and the eval command inside domshell_execute) was classified as read-tier, allowing it to run without the --allow-write server flag. However, eval and the write-tier js command dispatch to the same handler in the extension and call CDP Runtime.evaluate with the raw expression string and no side-effect gate.",
+    "requiredAction": "Upgrade @apireno/domshell to version 2.0.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vg83-hcp4-5qcc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75518"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-69139",
+    "cveID": "CVE-2026-69139",
+    "slug": "cve-2026-69139",
+    "vendor": "Pip",
+    "product": "djangocms-moderation",
+    "name": "djangocms-moderation: Moderation comments disclosed to non-participant staff via the admin changelist",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "The Django admin views for moderation comments (CollectionCommentAdmin and RequestCommentAdmin) render the full comment body but scope access only by an attacker-controlled id in the URL and Django's model-level view_comment permission. They perform no per-object participant check.",
+    "requiredAction": "Upgrade djangocms-moderation to version 2.4.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pj7p-238h-76pv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69139"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-71535",
+    "cveID": "CVE-2026-71535",
+    "slug": "cve-2026-71535",
+    "vendor": "Pip",
+    "product": "mareforma",
+    "name": "Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-347",
+    "ransomware": false,
+    "description": "mareforma 0.3.3 contains a critical integrity flaw in the REPLICATED convergence logic (_maybe_update_replicated_unlocked() in mareforma/db/core.py:1300-1319). The peer-selection SQL query that determines whether two independent claims \"agree\" on the same anchor does not verify that either claim carries a valid cryptographic signature from an enrolled validator key.",
+    "requiredAction": "Upgrade mareforma to version 0.3.7 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8776-qf3h-26r3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71535"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-71534",
+    "cveID": "CVE-2026-71534",
+    "slug": "cve-2026-71534",
+    "vendor": "Pip",
+    "product": "mareforma",
+    "name": "Mareforma: transparency_logged trusts the unsigned rekor block",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-345",
+    "ransomware": false,
+    "description": "During restore, transparency_logged is recomputed as 1 if (toml_logged is not False and bundle_has_rekor) else 0, where bundle_has_rekor comes only from a rekor.uuid field inside signature_bundle. That derivation is wrong in both directions.",
+    "requiredAction": "Upgrade mareforma to version 0.3.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xfq4-8hf9-5h43"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71534"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-71500",
+    "cveID": "CVE-2026-71500",
+    "slug": "cve-2026-71500",
+    "vendor": "Pip",
+    "product": "mareforma",
+    "name": "Mareforma: invalidated claims still promote to REPLICATED",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "CWE-754",
+    "ransomware": false,
+    "description": "_maybe_update_replicated_unlocked never checks t_invalid, so a claim that a signed contradiction verdict has marked invalid can still climb to REPLICATED through convergence detection, and it pulls an honest peer up with it. Three gaps line up: - The new-claim short-circuit reads only status and asserter_keyid (core.py:1339-1352); an invalidated but still-open new claim passes.",
+    "requiredAction": "Upgrade mareforma to version 0.3.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rgg9-956j-3378"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71500"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-71536",
+    "cveID": "CVE-2026-71536",
+    "slug": "cve-2026-71536",
+    "vendor": "Pip",
+    "product": "mareforma",
+    "name": "Mareforma: verify_bundle never checks a per-claim signature",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7,
+    "severity": "High",
+    "cwe": "CWE-347",
+    "ransomware": false,
+    "description": "verify_bundle documents that it verifies \"a bundle's DSSE envelope AND each per-claim signature\", lists \"per-claim signature failure\" among its raised errors, and promises that partial verification never surfaces \"an authenticated bundle that contains some invalid claims\" as success. The code does not do this.",
+    "requiredAction": "Upgrade mareforma to version 0.3.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-hxh5-gp44-rc6p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71536"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-71533",
+    "cveID": "CVE-2026-71533",
+    "slug": "cve-2026-71533",
+    "vendor": "Pip",
+    "product": "mareforma",
+    "name": "Mareforma: search_claims skips verify-on-read, serving forged rows",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "CWE-347",
+    "ransomware": false,
+    "description": "search_claims never calls _row_verified_on_read. Its row loop applies only the PRELIMINARY-unenrolled filter, then appends the row.",
+    "requiredAction": "Upgrade mareforma to version 0.3.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-m29v-3g7g-9c63"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71533"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-58214",
+    "cveID": "CVE-2026-58214",
+    "slug": "cve-2026-58214",
+    "vendor": "Go",
+    "product": "nats-server (v2) · nats-io",
+    "name": "NATS Server MQTT subscribe permission bypass exposes internal QoS 2 metadata",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing. The NATS Server MQTT support uses internal $MQTT. subjects to implement MQTT protocol features such as QoS handling. An authenticated MQTT client could subscribe to an internal MQTT delivery subject that was not intended to be available to clients.",
+    "requiredAction": "Upgrade nats-server (v2) · nats-io to version 2.12.12 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4g68-3pwx-5vfj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58214"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-58213",
+    "cveID": "CVE-2026-58213",
+    "slug": "cve-2026-58213",
+    "vendor": "Go",
+    "product": "nats-server (v2) · nats-io",
+    "name": "NATS Server: MQTT SUBSCRIBE Protocol Injection via Leaf Node/Route Forwarding allows arbitrary NATS command injection",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-74",
+    "ransomware": false,
+    "description": "NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing. The NATS Server supports MQTT clients and can bridge MQTT activity into NATS subjects across routes and leafnode connections.",
+    "requiredAction": "Upgrade nats-server (v2) · nats-io to version 2.12.9 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qrcv-3558-gj4f"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58213"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-76088",
     "cveID": "CVE-2026-76088",
     "slug": "cve-2026-76088",
@@ -1148,330 +1472,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129239"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-129301",
-    "cveID": "CVE-2026-129301",
-    "slug": "cve-2026-129301",
-    "vendor": "Pip",
-    "product": "mail-parser",
-    "name": "mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "write_attachments() called _safe_attachment_filename() and write_sample() inside its loop with no guard, so a single crafted attachment raised out of the whole save. Every attachment after the malicious one was silently never written, with no error surfaced to a caller that catches only MailParserError.",
-    "requiredAction": "Upgrade mail-parser to version 4.6.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8cgq-x343-p74c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129301"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-129300",
-    "cveID": "CVE-2026-129300",
-    "slug": "cve-2026-129300",
-    "vendor": "Pip",
-    "product": "mail-parser",
-    "name": "mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "A Received header whose trailing date carries an out-of-range year, or a timezone offset large enough to push the timestamp past the int64 epoch range, raises an exception that is *outside the MailParser hierarchy.",
-    "requiredAction": "Upgrade mail-parser to version 4.6.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xhrq-2mqv-q8wx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129300"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-129235",
-    "cveID": "CVE-2026-129235",
-    "slug": "cve-2026-129235",
-    "vendor": "Go",
-    "product": "kubeshark · kubeshark",
-    "name": "Kubeshark: MCP `download_file` writes fetched bytes to an unvalidated destination path",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "The download_file MCP tool fetches a caller-supplied path from the Kubeshark Hub API and writes the response body to a caller-supplied dest on the local filesystem with no validation of dest. An attacker who can influence the MCP tool arguments — e.g.",
-    "requiredAction": "Upgrade kubeshark · kubeshark to version 0.0.2-0.20260812200004-a76a1920dc75 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gj7r-p794-hhq5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129235"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-129236",
-    "cveID": "CVE-2026-129236",
-    "slug": "cve-2026-129236",
-    "vendor": "Go",
-    "product": "kubeshark · kubeshark",
-    "name": "Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 7.2,
-    "severity": "High",
-    "cwe": "CWE-88",
-    "ransomware": false,
-    "description": "The start_kubeshark MCP tool builds a kubeshark tap command by appending the caller-supplied pod_regex as a bare positional argument, with no -- end-of-options separator. Because tap is a cobra command, a pod_regex that begins with -/--set= is parsed as a flag, not as the pod regex. An attacker who can influence the tool arguments (e.g.",
-    "requiredAction": "Upgrade kubeshark · kubeshark to version 0.0.2-0.20260812200004-a76a1920dc75 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8vf2-hxg5-crqh"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129236"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-129299",
-    "cveID": "CVE-2026-129299",
-    "slug": "cve-2026-129299",
-    "vendor": "Pip",
-    "product": "mail-parser",
-    "name": "mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "Two effects, sharing the root cause of Advisory 1 — header names chosen by the sender were resolved through Python attribute lookup and rewritten before lookup. Uncaught exceptions. A crafted message raises an exception that is outside the MailParser hierarchy, so a caller catching only mail-parser exceptions does not catch it and the worker dies.",
-    "requiredAction": "Upgrade mail-parser to version 4.6.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-24mq-4vc6-2prf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129299"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-129297",
-    "cveID": "CVE-2026-129297",
-    "slug": "cve-2026-129297",
-    "vendor": "Pip",
-    "product": "mail-parser",
-    "name": "mail-parser: Sender IP address spoofing in get_server_ipaddress()",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "Fixed in 4.6.2. Upgrade with pip install --upgrade mail-parser. Candidate addresses are now selected by position, not by appearance — a bracketed address the sender wrote is byte-identical to one the MTA wrote, so no amount of pattern matching can tell them apart: - the first token of the from clause is the HELO name, whatever its shape, and is never a candidate; - an explicit HELO marker inside...",
-    "requiredAction": "Upgrade mail-parser to version 4.6.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-72px-j8gh-p79x"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129297"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-129295",
-    "cveID": "CVE-2026-129295",
-    "slug": "cve-2026-129295",
-    "vendor": "Pip",
-    "product": "mail-parser",
-    "name": "mail-parser is vulnerable to polynomial ReDoS in email header parsing",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-1333",
-    "ransomware": false,
-    "description": "Two regular expressions used while parsing email headers backtrack polynomially on attacker-controlled input. Parsing a single small, well-formed email can consume minutes to hours of CPU, denying service to any process that parses untrusted mail.",
-    "requiredAction": "Upgrade mail-parser to version 4.6.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r7w7-vpq8-c5vv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129295"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-129296",
-    "cveID": "CVE-2026-129296",
-    "slug": "cve-2026-129296",
-    "vendor": "Pip",
-    "product": "mail-parser",
-    "name": "mail-parser: Path Traversal vulnerability in attachment extraction",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "A path traversal vulnerability was identified in mail-parser when extracting email attachments using the write_attachments() and write_sample() APIs. A specially crafted email containing malicious attachment filenames (for example, using directory traversal sequences such as \"../\" or absolute filesystem paths) could cause files to be written outside the intended output directory.",
-    "requiredAction": "Upgrade mail-parser to version 4.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fr3h-cpq2-9496"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129296"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-86046",
-    "cveID": "CVE-2026-86046",
-    "slug": "cve-2026-86046",
-    "vendor": "Pip",
-    "product": "termux-sync",
-    "name": "termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "termux-sync restore trusts fields inside an untrusted backup manifest and uses them as the extraction destination without validation.",
-    "requiredAction": "Upgrade termux-sync to version 1.2.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-259w-wmqg-fp76"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86046"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-68934",
-    "cveID": "CVE-2026-68934",
-    "slug": "cve-2026-68934",
-    "vendor": "npm",
-    "product": "code-review-mcp-server",
-    "name": "code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-78",
-    "ransomware": false,
-    "description": "code-review-mcp-server exposes MCP tools (getLocalGitDiff, codeReview, createPR, getPRTemplate) that accept folderPath and baseBranch string parameters. These caller-controlled values were interpolated directly into shell command strings executed via child_process.execSync(), which runs commands through /bin/sh.",
-    "requiredAction": "Upgrade code-review-mcp-server to version 1.5.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jq3q-62jc-fqq9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68934"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63182",
-    "cveID": "CVE-2026-63182",
-    "slug": "cve-2026-63182",
-    "vendor": "Composer",
-    "product": "litesaml/lightsaml",
-    "name": "lightsaml allows Signature wrapping bypass",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 8.1,
-    "severity": "High",
-    "cwe": "CWE-347",
-    "ransomware": false,
-    "description": "LightSaml 5.0.0 (latest release; also confirmed on 4.6.1) validates an inbound samlp:Response by collecting its direct-child saml:Assertion elements and validating each one's ds:Signature via robrichards/xmlseclibs.",
-    "requiredAction": "Upgrade litesaml/lightsaml to version 5.0.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-w553-pwx6-3mg9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63182"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119790",
-    "cveID": "CVE-2026-119790",
-    "slug": "cve-2026-119790",
-    "vendor": "npm",
-    "product": "next",
-    "name": "Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache()",
-    "dateAdded": "2026-11-16",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-362",
-    "ransomware": false,
-    "description": "Next.js applications with 'use cache' can disclose cached data across root params when the same 'use cache' function is called both directly during rendering and through unstable_cache(), and that function reads a root param. Root params are route parameters of the root layout, and applications commonly use them to scope data, for example per locale.",
-    "requiredAction": "Upgrade next to version 16.4.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mfr8-8qww-v76h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119790"
       }
     ],
     "source": "GITHUB"

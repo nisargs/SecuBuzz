@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 15:47:17 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 16:45:44 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>F5 Issues Advisory for Multiple BIG-IP Vulnerabilities</title>
+      <link>https://secubuzz.com/news/f5-issues-advisory-for-multiple-big-ip-vulnerabili-e90fc272</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/f5-issues-advisory-for-multiple-big-ip-vulnerabili-e90fc272</guid>
+      <description><![CDATA[F5 released advisory AV26-1178 exposing multiple vulnerabilities in BIG-IP, APM, SSL Orchestrator, PEM, CNF, and Next for Kubernetes versions up to 21.1.0. The flaws allow remote attackers to execute arbitrary code via malformed configuration data, with CVSS scores up to 9.8, and are documented.]]></description>
+      <pubDate>Thu, 19 Nov 2026 15:33:03 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1178">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>PHP Releases Patch for 7 Critical RCE Flaws</title>
       <link>https://secubuzz.com/news/php-releases-patch-for-7-critical-rce-flaws-92b2b9de</link>
@@ -33,6 +42,15 @@
       <pubDate>Thu, 19 Nov 2026 15:11:06 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html">The Hacker News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ransomware Warning Signs Before Encryption</title>
+      <link>https://secubuzz.com/news/ransomware-warning-signs-before-encryption-78600f48</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-warning-signs-before-encryption-78600f48</guid>
+      <description><![CDATA[Acronis identifies five early warning signs of ransomware activity that occur before encryption or data theft. These indicators include credential theft, lateral movement, and attempts to disable security controls, allowing attackers to establish persistence. Security teams should monitor for these behaviors, enforce least-privilege access, and implement continuous monitoring to detect and contain intrusions early.]]></description>
+      <pubDate>Thu, 19 Nov 2026 15:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/">BleepingComputer</source>
+      <category>Ransomware</category>
     </item>
     <item>
       <title>NGINX2Root Vulnerabilities Enable Remote Code Execution</title>
@@ -87,6 +105,15 @@
       <pubDate>Thu, 19 Nov 2026 14:00:00 GMT</pubDate>
       <source url="https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/">Google Threat Intelligence</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Russian Operation Steals Bank, IRS Credentials from PCs</title>
+      <link>https://secubuzz.com/news/russian-operation-steals-bank-irs-credentials-from-44828728</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-operation-steals-bank-irs-credentials-from-44828728</guid>
+      <description><![CDATA[A Russian-speaking cybercrime group has stolen login credentials for US banks, the IRS, and Social Security from infected Windows PCs. Victims were ordinary users; many employed password managers and MFA, yet attackers still captured credentials through malware, without breaching any institution. Defenders should harden endpoint security, enforce multi-factor authentication, and monitor for credential-stealing malware to prevent similar thefts.]]></description>
+      <pubDate>Thu, 19 Nov 2026 13:43:37 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-steal-us-bank/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Ubuntu 24.04 Kernel Update Addresses Critical IPv4, Bridge, Netfilter Vulnerabilities</title>
@@ -177,6 +204,15 @@
       <pubDate>Thu, 19 Nov 2026 12:23:34 GMT</pubDate>
       <source url="https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/">SecurityWeek</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Apache Roller, Axis Flaws Exploited in Confluence Attacks</title>
+      <link>https://secubuzz.com/news/apache-roller-axis-flaws-exploited-in-confluence-a-2278081c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-roller-axis-flaws-exploited-in-confluence-a-2278081c</guid>
+      <description><![CDATA[Attackers have exploited critical vulnerabilities in Apache Roller and Axis, targeting Confluence Data Center deployments. The Axis flaw permits remote code execution through malformed XML, while the Roller issue allows unauthorized file uploads, both with CVSS scores above 8.0. Administrators should apply vendor patches, disable XML processing if possible, and enforce strict file-type validation to mitigate exploitation.]]></description>
+      <pubDate>Thu, 19 Nov 2026 12:13:24 GMT</pubDate>
+      <source url="https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/">SecurityWeek</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Palo Alto PAN-OS Exposed to PHP RCE Vulnerabilities</title>
@@ -404,6 +440,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>ZDI-26-1038: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP UpdateFirmware Out-Of-Bounds Write Remote Code Execution Vulnerability</title>
+      <link>https://secubuzz.com/news/zdi-26-1038-0day-pwn2own-united-chargers-grizzl-e-4148bfab</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zdi-26-1038-0day-pwn2own-united-chargers-grizzl-e-4148bfab</guid>
+      <description><![CDATA[This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131813.]]></description>
+      <pubDate>Thu, 19 Nov 2026 06:00:00 GMT</pubDate>
+      <source url="http://www.zerodayinitiative.com/advisories/ZDI-26-1038/">ZDI Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Consumer Devices Breach OT Segmentation in Hospitals</title>
       <link>https://secubuzz.com/news/consumer-devices-breach-ot-segmentation-in-hospita-1073f17e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/consumer-devices-breach-ot-segmentation-in-hospita-1073f17e</guid>
@@ -411,51 +456,6 @@
       <pubDate>Thu, 19 Nov 2026 05:30:09 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/19/slipping-past-ot-network-segmentation/">Help Net Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ChromeOS Stable Channel Updated with VM Escape Fixes</title>
-      <link>https://secubuzz.com/news/chromeos-stable-channel-updated-with-vm-escape-fix-7a79563a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-stable-channel-updated-with-vm-escape-fix-7a79563a</guid>
-      <description><![CDATA[Google released a stable channel update for ChromeOS, upgrading OS to version 16868.24.0 and browser to 158.0.8127.65. The update bundles fixes for two VM escape vulnerabilities, CVE-2026-99999 and CVE-2026-74580, which could allow attackers to escape environments and gain local privilege escalation. The patch is included in the stable channel release; users should install the update immediately to mitigate the risk.]]></description>
-      <pubDate>Thu, 19 Nov 2026 05:16:06 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-chromeos_01891834105.html">Google Chrome Releases</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Apache Roller RCE Exploited Without Authentication</title>
-      <link>https://secubuzz.com/news/apache-roller-rce-exploited-without-authentication-557e2079</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-roller-rce-exploited-without-authentication-557e2079</guid>
-      <description><![CDATA[Hackers are actively exploiting a critical Apache Roller RCE flaw that allows unauthenticated code execution on affected servers. CVE-2026-129448 affects Roller 4.0.0-6.1.4 and scores CVSS 3.1 9.8, classifying it as a high-risk zero-day. Administrators should immediately upgrade to the latest Roller release or apply the vendor-issued patch to mitigate the exploitation risk.]]></description>
-      <pubDate>Thu, 19 Nov 2026 05:15:41 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/apache-roller-rce-exploitation/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AI Agents Run with Employee Credentials Unchecked</title>
-      <link>https://secubuzz.com/news/ai-agents-run-with-employee-credentials-unchecked-cd7e3f81</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-run-with-employee-credentials-unchecked-cd7e3f81</guid>
-      <description><![CDATA[Nudge Security found that AI agents in project trackers, CRMs, and automation tools run with the credentials of their creators, inheriting full employee access. This credential inheritance creates a blind spot, enabling malicious or accidental actions without security oversight. Teams should enforce least-privilege for AI agents, monitor activity, and audit credential usage to block unauthorized access.]]></description>
-      <pubDate>Thu, 19 Nov 2026 05:00:37 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/19/ai-agents-employee-credentials-nudge-security-report/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CyberPower UPS Software Enables SYSTEM Access and AD Dump</title>
-      <link>https://secubuzz.com/news/cyberpower-ups-software-enables-system-access-and-61239936</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyberpower-ups-software-enables-system-access-and-61239936</guid>
-      <description><![CDATA[Attackers used a scripting feature in CyberPower PowerPanel Business UPS software to gain SYSTEM-level access on a Windows domain controller. The flaw enabled copying the Active Directory database and launching persistent malware, though no data exfiltration was observed. CyberPower has not yet issued a patch; administrators should disable scripting or apply the latest firmware and monitor domain controller activity.]]></description>
-      <pubDate>Thu, 19 Nov 2026 04:10:46 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-abuse-cyberpower-ups-software/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Java4Shell Exploited, Disguised as Chrome Traffic</title>
-      <link>https://secubuzz.com/news/java4shell-exploited-disguised-as-chrome-traffic-99f8ae2d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-exploited-disguised-as-chrome-traffic-99f8ae2d</guid>
-      <description><![CDATA[Cloudflare’s Cloudforce One detected a Java4Shell RCE attempt that masqueraded as normal Google Chrome traffic in web logs. The exploit used CVE-2026-114938, with the source IP first scanning via a User-Agent header before sending the payload after 17 hours. Defenders should monitor anomalous User-Agent strings, apply the Java4Shell patch, and enforce strict input validation on Java services.]]></description>
-      <pubDate>Thu, 19 Nov 2026 03:18:37 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/java4shell-rce-flaw-exploited/">Cyber Security News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

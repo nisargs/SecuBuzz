@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1178",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1178",
+    "title": "F5 Issues Advisory for Multiple BIG-IP Vulnerabilities",
+    "headline": "F5 Issues Advisory for Multiple BIG-IP Vulnerabilities",
+    "summary": "F5 released advisory AV26-1178 exposing multiple vulnerabilities in BIG-IP, APM, SSL Orchestrator, PEM, CNF, and Next for Kubernetes versions up to 21.1.0. The flaws allow remote attackers to execute arbitrary code via malformed configuration data, with CVSS scores up to 9.8, and are documented.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "publishedAt": "2026-11-19T15:33:03.000Z",
+    "ingestedAt": "2026-11-19T16:44:05.407Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1178",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
     "sourceUrl": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
     "title": "PHP Releases Patch for 7 Critical RCE Flaws",
@@ -46,6 +62,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
+    "title": "Ransomware Warning Signs Before Encryption",
+    "headline": "Ransomware Warning Signs Before Encryption",
+    "summary": "Acronis identifies five early warning signs of ransomware activity that occur before encryption or data theft. These indicators include credential theft, lateral movement, and attempts to disable security controls, allowing attackers to establish persistence. Security teams should monitor for these behaviors, enforce least-privilege access, and implement continuous monitoring to detect and contain intrusions early.",
+    "category": "RANSOMWARE",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-19T15:00:10.000Z",
+    "ingestedAt": "2026-11-19T16:44:05.407Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
     "additionalSources": []
   },
   {
@@ -151,6 +183,22 @@
     ],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://cybersecuritynews.com/hackers-steal-us-bank/",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-steal-us-bank/",
+    "title": "Russian Operation Steals Bank, IRS Credentials from PCs",
+    "headline": "Russian Operation Steals Bank, IRS Credentials from PCs",
+    "summary": "A Russian-speaking cybercrime group has stolen login credentials for US banks, the IRS, and Social Security from infected Windows PCs. Victims were ordinary users; many employed password managers and MFA, yet attackers still captured credentials through malware, without breaching any institution. Defenders should harden endpoint security, enforce multi-factor authentication, and monitor for credential-stealing malware to prevent similar thefts.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-19T13:43:37.000Z",
+    "ingestedAt": "2026-11-19T16:44:05.407Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/hackers-steal-us-bank/",
+    "additionalSources": []
   },
   {
     "id": "https://ubuntu.com/security/notices/USN-9172-1",
@@ -320,6 +368,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/",
+    "sourceUrl": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/",
+    "title": "Apache Roller, Axis Flaws Exploited in Confluence Attacks",
+    "headline": "Apache Roller, Axis Flaws Exploited in Confluence Attacks",
+    "summary": "Attackers have exploited critical vulnerabilities in Apache Roller and Axis, targeting Confluence Data Center deployments. The Axis flaw permits remote code execution through malformed XML, while the Roller issue allows unauthorized file uploads, both with CVSS scores above 8.0. Administrators should apply vendor patches, disable XML processing if possible, and enforce strict file-type validation to mitigate exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-11-19T12:13:24.000Z",
+    "ingestedAt": "2026-11-19T16:44:05.407Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/",
     "additionalSources": []
   },
   {
@@ -728,6 +792,25 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1038/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1038/",
+    "title": "ZDI-26-1038: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP UpdateFirmware Out-Of-Bounds Write Remote Code Execution Vulnerability",
+    "headline": "ZDI-26-1038: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP UpdateFirmware Out-Of-Bounds Write Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131813.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-19T06:00:00.000Z",
+    "ingestedAt": "2026-11-19T16:43:38.809Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-131813"
+    ],
     "additionalSources": [],
     "isFallback": true
   },
@@ -8329,86 +8412,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/16/forescout-ai-models-vulnerability-research/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/aws-services-outage/",
-    "sourceUrl": "https://cybersecuritynews.com/aws-services-outage/",
-    "title": "AWS Restores US-EAST-1 After Three-Hour Outage",
-    "headline": "AWS Restores US-EAST-1 After Three-Hour Outage",
-    "summary": "AWS suffered a multi-hour outage in US-EAST-1 that disrupted account sign-ups, authentication, and network connectivity. The failure began at 3:05 a.m. PST and lasted until 6:21 a.m. PST, impacting IAM services for over three hours. AWS restored services by 6:21 a.m. PST and advised customers to verify account status and monitor for residual issues.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-16T03:43:23.000Z",
-    "ingestedAt": "2026-11-16T05:43:15.731Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/aws-services-outage/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/fbi-warns-artex-ai-hacking-tool-is-powering-global-cybe",
-    "sourceUrl": "https://cybernewsai.com/blog/fbi-warns-artex-ai-hacking-tool-is-powering-global-cybe",
-    "title": "ARTEX AI Group Automates Global Cyberattacks",
-    "headline": "ARTEX AI Group Automates Global Cyberattacks",
-    "summary": "Law enforcement released intelligence on ARTEX AI, a group automating global cyberattacks. The report details court findings, threat actor profiles, and defensive controls, outlining the group's tactics, techniques, and procedures. Security teams should review the provided defensive controls, update monitoring, and deploy detection rules across enterprise networks to detect ARTEX AI activity.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-11-16T03:25:10.000Z",
-    "ingestedAt": "2026-11-16T04:43:15.502Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybernewsai.com/blog/fbi-warns-artex-ai-hacking-tool-is-powering-global-cybe",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/tor-ddos-attack/",
-    "sourceUrl": "https://cybersecuritynews.com/tor-ddos-attack/",
-    "title": "Tor Issues Emergency Update Amid Relay DDoS Attack",
-    "headline": "Tor Issues Emergency Update Amid Relay DDoS Attack",
-    "summary": "The Tor Project released version 0.4.9.17 to mitigate an ongoing DDoS attack that overwhelmed network relays. The update includes fixes for IPv6 handling in relay denial-of-service defenses, addressing a flaw that allowed attackers to exhaust relay resources and disrupt anonymity services. Relay operators should upgrade to 0.4.9.17 immediately and monitor relay traffic for abnormal patterns to maintain network stability.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-16T03:23:56.000Z",
-    "ingestedAt": "2026-11-16T05:43:15.731Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/tor-ddos-attack/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/claude-cracks-32-year-old-jeep-ecu/",
-    "sourceUrl": "https://cybersecuritynews.com/claude-cracks-32-year-old-jeep-ecu/",
-    "title": "AI Agent Decodes 1994 Jeep ECU with Arduino Nano",
-    "headline": "AI Agent Decodes 1994 Jeep ECU with Arduino Nano",
-    "summary": "Claude, an AI agent, enabled a Jeep owner to read, copy, and run code inside a 1994 Jeep Cherokee’s ECU. Using a $3 Arduino Nano, the attacker interfaced the ECU’s serial bus to inject firmware that passed California’s smog test, exposing attack vectors. No vendor patch exists; update ECU firmware, secure the diagnostic port, and monitor unauthorized code.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-16T02:09:56.000Z",
-    "ingestedAt": "2026-11-16T02:43:19.821Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/claude-cracks-32-year-old-jeep-ecu/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://isc.sans.edu/diary/rss/33520",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33520",
-    "title": "ISC Stormcast Released for Monday, November 16",
-    "headline": "ISC Stormcast Released for Monday, November 16",
-    "summary": "ISC Stormcast for Monday, November 16, 2026 was released by SANS Internet Storm Center. The broadcast covers current threat landscape, emerging attack trends, and defensive recommendations, with a focus on real-time analysis. Listeners can access the episode via the ISC website, download the podcast file, and review the accompanying transcript for detailed insights.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "publishedAt": "2026-11-16T02:00:05.000Z",
-    "ingestedAt": "2026-11-16T04:43:15.502Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://isc.sans.edu/diary/rss/33520",
     "additionalSources": []
   }
 ]
