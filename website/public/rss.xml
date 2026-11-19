@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 14:47:44 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 15:47:17 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>PHP Releases Patch for 7 Critical RCE Flaws</title>
+      <link>https://secubuzz.com/news/php-releases-patch-for-7-critical-rce-flaws-92b2b9de</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-releases-patch-for-7-critical-rce-flaws-92b2b9de</guid>
+      <description><![CDATA[PHP Foundation released a patch for seven critical flaws that could allow remote code execution on affected deployments. The most severe flaw, CVE-2026-115560, scores CVSS 9.2 and stems from improper input validation that permits arbitrary code execution and file modification. All supported PHP versions have the update available; administrators should apply the patch immediately to mitigate exploitation.]]></description>
+      <pubDate>Thu, 19 Nov 2026 15:18:07 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>European Commission confirms cyberattack, says hackers used AI tool</title>
+      <link>https://secubuzz.com/news/european-commission-confirms-cyberattack-says-hack-d8c629c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/european-commission-confirms-cyberattack-says-hack-d8c629c0</guid>
+      <description><![CDATA[POLITICO had reported CERT-EU had identified the attackers’ use of ARTEX, an open-source AI hacking platform that the FBI last week warned was being used both by criminals and state-sponsored groups.]]></description>
+      <pubDate>Thu, 19 Nov 2026 15:15:00 GMT</pubDate>
+      <source url="https://therecord.media/european-commission-confirms-cyberattack-using-ai">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>VMware vCenter Auth Bypass Vulnerability Fixed</title>
+      <link>https://secubuzz.com/news/vmware-vcenter-auth-bypass-vulnerability-fixed-4578142e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vmware-vcenter-auth-bypass-vulnerability-fixed-4578142e</guid>
+      <description><![CDATA[A critical flaw in VMware vCenter, scoring CVSS 9.8, allows network attackers to bypass authentication and gain unauthorized access to the management console. The vulnerability exploits a flaw in the authentication mechanism, enabling attackers to control ESX hosts and virtual machines without credentials. All supported vCenter branches have patched releases; administrators should update immediately and verify authentication logs for anomalies.]]></description>
+      <pubDate>Thu, 19 Nov 2026 15:11:06 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>NGINX2Root Vulnerabilities Enable Remote Code Execution</title>
+      <link>https://secubuzz.com/news/nginx2root-vulnerabilities-enable-remote-code-exec-6b546d38</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nginx2root-vulnerabilities-enable-remote-code-exec-6b546d38</guid>
+      <description><![CDATA[Two critical NGINX vulnerabilities, collectively known as nginx2root, allow unauthenticated attackers to execute code remotely on vulnerable web servers. Researchers chained the flaws with a Linux kernel bug to elevate privileges to root, demonstrating a full system compromise. All supported NGINX releases have patches; administrators should apply the update and monitor for kernel exploitation attempts.]]></description>
+      <pubDate>Thu, 19 Nov 2026 14:57:24 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PHP Warns of Critical Security Flaws Affecting All Supported Versions, Urges Users to Update</title>
+      <link>https://secubuzz.com/news/php-warns-of-critical-security-flaws-affecting-all-0ac633db</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-warns-of-critical-security-flaws-affecting-all-0ac633db</guid>
+      <description><![CDATA[The PHP security team has warned of vulnerabilities across all branches covered by its November 19, 2026 security update, with the most severe issues rated critical. The team urged website operators and hosting providers to update promptly. The critical flaws require non-default settings or uncommon setups, so not every installation faces the same risk.]]></description>
+      <pubDate>Thu, 19 Nov 2026 14:42:41 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/php-8-released/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Drupal Fixes Installer Flaw Enabling Site Takeover</title>
+      <link>https://secubuzz.com/news/drupal-fixes-installer-flaw-enabling-site-takeover-cd342b87</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/drupal-fixes-installer-flaw-enabling-site-takeover-cd342b87</guid>
+      <description><![CDATA[Drupal core contains a critical installer flaw that permits unauthenticated attackers to trigger a site reinstallation and take over the site. The vulnerability requires specific configuration conditions and can lead to remote code execution if the installer is invoked without proper safeguards. All supported Drupal branches have patched releases; site administrators should apply the update and verify installer access controls.]]></description>
+      <pubDate>Thu, 19 Nov 2026 14:33:06 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Nvidia Denies Gentlemen Ransomware Claim</title>
       <link>https://secubuzz.com/news/nvidia-denies-gentlemen-ransomware-claim-a06839da</link>
@@ -17,12 +71,39 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>BADBOX 3.0 Malware Infects Android TV Boxes to Generate 40 Billion Fraudulent Ad Requests Daily</title>
+      <link>https://secubuzz.com/news/badbox-3-0-malware-infects-android-tv-boxes-to-gen-106873f0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/badbox-3-0-malware-infects-android-tv-boxes-to-gen-106873f0</guid>
+      <description><![CDATA[Low-cost Android streaming boxes helped power an advertising fraud operation that generated roughly 40 billion bid requests a day at its peak. Known as BADBOX 3.0, the campaign used infected devices to play video ads outside the visible screen while making the traffic look as though it came from legitimate streaming apps.]]></description>
+      <pubDate>Thu, 19 Nov 2026 14:05:35 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/badbox-3-0-malware/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>ARMORY CASTLE Exploits vSphere</title>
       <link>https://secubuzz.com/news/armory-castle-exploits-vsphere-f240c9be</link>
       <guid isPermaLink="true">https://secubuzz.com/news/armory-castle-exploits-vsphere-f240c9be</guid>
       <description><![CDATA[Written by: Jayson Frost, Bryce Greathouse, Dhanesh Kizhakkinan, John Palmisano, Steve Rasch, Daniel Sislo, John Wolfram Introduction On Oct. 15, 2026, Mandiant and Google Threat Intelligence Group (GTIG) published a blog post detailing recent activity in which the suspected PRC-nexus threat actor ARMORY CASTLE (formerly tracked as UNC5221) exploited CVE-2026-102764, a zero-day vulnerability in BeyondTrust Remote Support, which was patched in BT26-05 .]]></description>
       <pubDate>Thu, 19 Nov 2026 14:00:00 GMT</pubDate>
       <source url="https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/">Google Threat Intelligence</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Ubuntu 24.04 Kernel Update Addresses Critical IPv4, Bridge, Netfilter Vulnerabilities</title>
+      <link>https://secubuzz.com/news/ubuntu-24-04-kernel-update-addresses-critical-ipv4-c0845476</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-24-04-kernel-update-addresses-critical-ipv4-c0845476</guid>
+      <description><![CDATA[Ubuntu 24.04 users must install the latest kernel update to patch critical vulnerabilities affecting IPv4 networking, Ethernet bridge, Netfilter, and XFRM subsystems. The flaws, CVE-2026-98432 and CVE-2026-99999, could enable privilege escalation or denial of service if exploited by attackers. Immediate kernel upgrade is recommended to mitigate potential compromise and maintain system security.]]></description>
+      <pubDate>Thu, 19 Nov 2026 13:43:11 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9172-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Ubuntu Patches Kernel Vulnerabilities in IPv4, Bridge, Netfilter, SCTP</title>
+      <link>https://secubuzz.com/news/ubuntu-patches-kernel-vulnerabilities-in-ipv4-brid-2e68255b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-kernel-vulnerabilities-in-ipv4-brid-2e68255b</guid>
+      <description><![CDATA[Ubuntu 24.04 USN-9170-1 fixes Linux kernel flaws affecting IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems. The vulnerabilities, CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, could enable privilege escalation or denial of service if exploited by an attacker. Apply the kernel update immediately to patch the affected subsystems and prevent potential compromise.]]></description>
+      <pubDate>Thu, 19 Nov 2026 13:42:53 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9170-1">Ubuntu Security Notices</source>
       <category>CVE</category>
     </item>
     <item>
@@ -50,6 +131,15 @@
       <description><![CDATA[Attackers compromised clustered Cisco Expressway devices at a Russian organization shortly after a public proof-of-concept was released. The flaw allowed authenticated remote code execution via malformed SIP messages, enabling attackers to gain privileged access and prepare lateral movement tools. Cisco issued a patch in the following security advisory, and security teams should update firmware and disable unused SIP services.]]></description>
       <pubDate>Thu, 19 Nov 2026 13:12:20 GMT</pubDate>
       <source url="https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Drupal Fixes Critical Remote Code Execution Flaw</title>
+      <link>https://secubuzz.com/news/drupal-fixes-critical-remote-code-execution-flaw-8a5e1fa6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/drupal-fixes-critical-remote-code-execution-flaw-8a5e1fa6</guid>
+      <description><![CDATA[Drupal Security Team patched a critical remote code execution flaw that could let attackers seize control of vulnerable sites. The vulnerability, a buffer overflow in a core module, carries a CVSS score of 9.8 and has a publicly available proof-of-concept exploit. Administrators must apply the latest Drupal update immediately and confirm the core module is patched to prevent remote takeover.]]></description>
+      <pubDate>Thu, 19 Nov 2026 13:08:08 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -350,15 +440,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19</title>
-      <link>https://secubuzz.com/news/php-warns-of-critical-security-flaws-affecting-all-17c05871</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-warns-of-critical-security-flaws-affecting-all-17c05871</guid>
-      <description><![CDATA[The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. "These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting all supported PHP versions," the maintainers said.]]></description>
-      <pubDate>Thu, 19 Nov 2026 04:33:46 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>CyberPower UPS Software Enables SYSTEM Access and AD Dump</title>
       <link>https://secubuzz.com/news/cyberpower-ups-software-enables-system-access-and-61239936</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cyberpower-ups-software-enables-system-access-and-61239936</guid>
@@ -375,87 +456,6 @@
       <pubDate>Thu, 19 Nov 2026 03:18:37 GMT</pubDate>
       <source url="https://cybersecuritynews.com/java4shell-rce-flaw-exploited/">Cyber Security News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>CVE-2026-114938 - OpenJDK Base64 Decoder Intrinsic Out-of-Bounds Write Issue</title>
-      <link>https://secubuzz.com/news/cve-2026-114938-openjdk-base64-decoder-intrinsic-o-ed5c5460</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-114938-openjdk-base64-decoder-intrinsic-o-ed5c5460</guid>
-      <description><![CDATA[Bulletin ID: 2026-189-AWS Publication Date: 11/18/2026 17:00 PM PST Description: AWS is aware of CVE-2026-114938, a memory issue in the Base64 decoder intrinsic of OpenJDK 17.0.6 and later on x86-64 processors that support AVX-512 VBMI. AWS is working to deploy the fix to affected AWS services Refer to the article for the most up-to-date and complete information.]]></description>
-      <pubDate>Thu, 19 Nov 2026 03:02:28 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-189-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Honeypot Analysis Should Follow Code Practices</title>
-      <link>https://secubuzz.com/news/honeypot-analysis-should-follow-code-practices-4d1622d8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/honeypot-analysis-should-follow-code-practices-4d1622d8</guid>
-      <description><![CDATA[Kevin Truong’s guest diary advocates treating honeypot data analysis as software development, recommending version control and code review practices. The post highlights risks of unstructured analysis, such as misinterpretation of threat indicators, and stresses the need for reproducibility and auditability. Security teams should adopt Git workflows, pull-request reviews, and human gatekeeping for AI-driven insights to improve accuracy and maintainability.]]></description>
-      <pubDate>Thu, 19 Nov 2026 01:53:48 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33534">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100567: Critical: java-21-openjdk security update for RHEL 8 and 9</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100567-critical-java-21-openjdk-security-b44c198b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100567-critical-java-21-openjdk-security-b44c198b</guid>
-      <description><![CDATA[An update for java-21-openjdk is now available for Red Hat Enterprise Linux 8, Red Hat Enterprise Linux 9, Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions, Red Hat Enterprise Linux 9.6 Extended Update Support, and Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical.]]></description>
-      <pubDate>Thu, 19 Nov 2026 01:44:37 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100567">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical java-17-openjdk Update for RHEL 9</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-java-17-openjdk-update-f-495d3bfa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-java-17-openjdk-update-f-495d3bfa</guid>
-      <description><![CDATA[Red Hat issued a critical security update for java-17-openjdk on RHEL 9 and related SAP and Extended Update Support streams. The update addresses multiple high-severity vulnerabilities, each with CVSS scores indicating critical impact, but no specific CVE IDs are listed in the advisory. Administrators should apply the update immediately; no workarounds are provided, and the patch mitigates all identified risks.]]></description>
-      <pubDate>Thu, 19 Nov 2026 01:39:31 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100564">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100491: Critical: fence-agents security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100491-critical-fence-agents-security-up-8cf77df9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100491-critical-fence-agents-security-up-8cf77df9</guid>
-      <description><![CDATA[An update for fence-agents is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 19 Nov 2026 01:37:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100491">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Enterprise Linux 8 Receives Critical kpatch Updates</title>
-      <link>https://secubuzz.com/news/red-enterprise-linux-8-receives-critical-kpatch-up-377e3654</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-enterprise-linux-8-receives-critical-kpatch-up-377e3654</guid>
-      <description><![CDATA[Red Enterprise Linux 8 receives critical kpatch updates (kpatch-patch-4_18_0-553_109_1, 125_1, 158_1, 72_1, 85_1) that address multiple kernel vulnerabilities. Red Hat Product Security rates the update as Critical, with CVSS base scores linked to each CVE, indicating high-severity remote code execution risks. Administrators should apply the kpatch packages immediately to mitigate the vulnerabilities and prevent potential exploitation.]]></description>
-      <pubDate>Thu, 19 Nov 2026 01:34:33 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100525">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Enterprise Linux 10.0 Updates fence-agents with Critical Fix</title>
-      <link>https://secubuzz.com/news/red-enterprise-linux-10-0-updates-fence-agents-wit-215b1f62</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-enterprise-linux-10-0-updates-fence-agents-wit-215b1f62</guid>
-      <description><![CDATA[Red Enterprise Linux 10.0 Extended Update Support receives a critical fence-agents security update addressing multiple CVE-linked vulnerabilities. The update is rated Critical by Red Hat Product Security, with CVSS base scores provided for each referenced CVE. Systems should install the fence-agents package immediately to close the security gaps and avoid exploitation.]]></description>
-      <pubDate>Thu, 19 Nov 2026 01:31:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100633">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100523: Critical: kpatch-patch-5_14_0-427_100_1, kpatch-patch-5_14_0-427_113_1, kpatch-patch-5_14_0-427_126_1, kpatch-patch-5_14_0-427_146_1, and kpatch-patch-5_14_0-427_84_1 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100523-critical-kpatch-patch-5-14-0-427-7bffa221</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100523-critical-kpatch-patch-5-14-0-427-7bffa221</guid>
-      <description><![CDATA[An update for kpatch-patch-5_14_0-427_100_1, kpatch-patch-5_14_0-427_113_1, kpatch-patch-5_14_0-427_126_1, kpatch-patch-5_14_0-427_146_1, and kpatch-patch-5_14_0-427_84_1 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 19 Nov 2026 01:29:52 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100523">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100522: Critical: kpatch-patch-5_14_0-687_10_1 and kpatch-patch-5_14_0-687_42_1 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100522-critical-kpatch-patch-5-14-0-687-5864e497</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100522-critical-kpatch-patch-5-14-0-687-5864e497</guid>
-      <description><![CDATA[An update for kpatch-patch-5_14_0-687_10_1 and kpatch-patch-5_14_0-687_42_1 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 19 Nov 2026 01:28:57 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100522">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

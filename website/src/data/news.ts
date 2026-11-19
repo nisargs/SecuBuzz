@@ -11,6 +11,119 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "php-releases-patch-for-7-critical-rce-flaws-92b2b9de",
+    "title": "PHP Releases Patch for 7 Critical RCE Flaws",
+    "summary": "PHP Foundation released a patch for seven critical flaws that could allow remote code execution on affected deployments. The most severe flaw, CVE-2026-115560, scores CVSS 9.2 and stems from improper input validation that permits arbitrary code execution and file modification. All supported PHP versions have the update available; administrators should apply the patch immediately to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+    "publishedAt": "2026-11-19T15:18:07.000Z",
+    "cves": [
+      "CVE-2026-115560"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "php-releases-patch-for-7-critical-rce-flaws",
+      "article-92b2b9de",
+      "92b2b9de",
+      "php-releases-patch-for-7-critical-rce-flaws-56cd6d"
+    ]
+  },
+  {
+    "slug": "european-commission-confirms-cyberattack-says-hack-d8c629c0",
+    "title": "European Commission confirms cyberattack, says hackers used AI tool",
+    "summary": "POLITICO had reported CERT-EU had identified the attackers’ use of ARTEX, an open-source AI hacking platform that the FBI last week warned was being used both by criminals and state-sponsored groups.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
+    "publishedAt": "2026-11-19T15:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "european-commission-confirms-cyberattack-says-hack",
+      "article-d8c629c0",
+      "d8c629c0",
+      "european-commission-confirms-cyberattack-says-hack-6cd590",
+      "european-commission-confirms-cyberattack-says-hackers-used-a"
+    ]
+  },
+  {
+    "slug": "vmware-vcenter-auth-bypass-vulnerability-fixed-4578142e",
+    "title": "VMware vCenter Auth Bypass Vulnerability Fixed",
+    "summary": "A critical flaw in VMware vCenter, scoring CVSS 9.8, allows network attackers to bypass authentication and gain unauthorized access to the management console. The vulnerability exploits a flaw in the authentication mechanism, enabling attackers to control ESX hosts and virtual machines without credentials. All supported vCenter branches have patched releases; administrators should update immediately and verify authentication logs for anomalies.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+    "publishedAt": "2026-11-19T15:11:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vmware-vcenter-auth-bypass-vulnerability-fixed",
+      "article-4578142e",
+      "4578142e",
+      "vmware-vcenter-auth-bypass-vulnerability-fixed-70121b"
+    ]
+  },
+  {
+    "slug": "nginx2root-vulnerabilities-enable-remote-code-exec-6b546d38",
+    "title": "NGINX2Root Vulnerabilities Enable Remote Code Execution",
+    "summary": "Two critical NGINX vulnerabilities, collectively known as nginx2root, allow unauthenticated attackers to execute code remotely on vulnerable web servers. Researchers chained the flaws with a Linux kernel bug to elevate privileges to root, demonstrating a full system compromise. All supported NGINX releases have patches; administrators should apply the update and monitor for kernel exploitation attempts.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/",
+    "publishedAt": "2026-11-19T14:57:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nginx2root-vulnerabilities-enable-remote-code-exec",
+      "article-6b546d38",
+      "6b546d38",
+      "nginx2root-vulnerabilities-enable-remote-code-exec-a431b9",
+      "nginx2root-vulnerabilities-enable-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "php-warns-of-critical-security-flaws-affecting-all-0ac633db",
+    "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Urges Users to Update",
+    "summary": "The PHP security team has warned of vulnerabilities across all branches covered by its November 19, 2026 security update, with the most severe issues rated critical. The team urged website operators and hosting providers to update promptly. The critical flaws require non-default settings or uncommon setups, so not every installation faces the same risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/php-8-released/",
+    "publishedAt": "2026-11-19T14:42:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-warns-of-critical-security-flaws-affecting-all",
+      "article-0ac633db",
+      "0ac633db",
+      "php-warns-of-critical-security-flaws-affecting-all-2864ff",
+      "php-warns-of-critical-security-flaws-affecting-all-supported"
+    ]
+  },
+  {
+    "slug": "drupal-fixes-installer-flaw-enabling-site-takeover-cd342b87",
+    "title": "Drupal Fixes Installer Flaw Enabling Site Takeover",
+    "summary": "Drupal core contains a critical installer flaw that permits unauthenticated attackers to trigger a site reinstallation and take over the site. The vulnerability requires specific configuration conditions and can lead to remote code execution if the installer is invoked without proper safeguards. All supported Drupal branches have patched releases; site administrators should apply the update and verify installer access controls.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+    "publishedAt": "2026-11-19T14:33:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-fixes-installer-flaw-enabling-site-takeover",
+      "article-cd342b87",
+      "cd342b87",
+      "drupal-fixes-installer-flaw-enabling-site-takeover-4696ac"
+    ]
+  },
+  {
     "slug": "nvidia-denies-gentlemen-ransomware-claim-a06839da",
     "title": "Nvidia Denies Gentlemen Ransomware Claim",
     "summary": "Gentlemen ransomware group listed Nvidia as a victim, alleging a compromise of its systems. No evidence of exploitation or data exfiltration was found, and the claim lacks supporting proof of a vulnerability or breach. Nvidia confirmed no compromise and urged stakeholders to monitor for potential phishing or credential theft attempts.",
@@ -26,6 +139,25 @@ export const news: NewsBrief[] = [
       "article-a06839da",
       "a06839da",
       "nvidia-denies-gentlemen-ransomware-claim-15a41b"
+    ]
+  },
+  {
+    "slug": "badbox-3-0-malware-infects-android-tv-boxes-to-gen-106873f0",
+    "title": "BADBOX 3.0 Malware Infects Android TV Boxes to Generate 40 Billion Fraudulent Ad Requests Daily",
+    "summary": "Low-cost Android streaming boxes helped power an advertising fraud operation that generated roughly 40 billion bid requests a day at its peak. Known as BADBOX 3.0, the campaign used infected devices to play video ads outside the visible screen while making the traffic look as though it came from legitimate streaming apps.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/badbox-3-0-malware/",
+    "publishedAt": "2026-11-19T14:05:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "badbox-3-0-malware-infects-android-tv-boxes-to-gen",
+      "article-106873f0",
+      "106873f0",
+      "badbox-3-0-malware-infects-android-tv-boxes-to-gen-d73be1",
+      "badbox-3-0-malware-infects-android-tv-boxes-to-generate-40-b"
     ]
   },
   {
@@ -49,6 +181,56 @@ export const news: NewsBrief[] = [
       "article-f240c9be",
       "f240c9be",
       "armory-castle-exploits-vsphere-32bd79"
+    ]
+  },
+  {
+    "slug": "ubuntu-24-04-kernel-update-addresses-critical-ipv4-c0845476",
+    "title": "Ubuntu 24.04 Kernel Update Addresses Critical IPv4, Bridge, Netfilter Vulnerabilities",
+    "summary": "Ubuntu 24.04 users must install the latest kernel update to patch critical vulnerabilities affecting IPv4 networking, Ethernet bridge, Netfilter, and XFRM subsystems. The flaws, CVE-2026-98432 and CVE-2026-99999, could enable privilege escalation or denial of service if exploited by attackers. Immediate kernel upgrade is recommended to mitigate potential compromise and maintain system security.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9172-1",
+    "publishedAt": "2026-11-19T13:43:11.000Z",
+    "cves": [
+      "CVE-2026-98432",
+      "CVE-2026-99999"
+    ],
+    "additionalSources": [
+      {
+        "source": "Ubuntu Security Notices",
+        "sourceUrl": "https://ubuntu.com/security/notices/USN-9171-1"
+      }
+    ],
+    "aliases": [
+      "ubuntu-24-04-kernel-update-addresses-critical-ipv4",
+      "article-c0845476",
+      "c0845476",
+      "ubuntu-24-04-kernel-update-addresses-critical-ipv4-7e786e",
+      "ubuntu-24-04-kernel-update-addresses-critical-ipv4-bridge-ne"
+    ]
+  },
+  {
+    "slug": "ubuntu-patches-kernel-vulnerabilities-in-ipv4-brid-2e68255b",
+    "title": "Ubuntu Patches Kernel Vulnerabilities in IPv4, Bridge, Netfilter, SCTP",
+    "summary": "Ubuntu 24.04 USN-9170-1 fixes Linux kernel flaws affecting IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems. The vulnerabilities, CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, could enable privilege escalation or denial of service if exploited by an attacker. Apply the kernel update immediately to patch the affected subsystems and prevent potential compromise.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9170-1",
+    "publishedAt": "2026-11-19T13:42:53.000Z",
+    "cves": [
+      "CVE-2026-64564",
+      "CVE-2026-98432",
+      "CVE-2026-99999"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-patches-kernel-vulnerabilities-in-ipv4-brid",
+      "article-2e68255b",
+      "2e68255b",
+      "ubuntu-patches-kernel-vulnerabilities-in-ipv4-brid-7e7875",
+      "ubuntu-patches-kernel-vulnerabilities-in-ipv4-bridge-netfilt"
     ]
   },
   {
@@ -103,6 +285,24 @@ export const news: NewsBrief[] = [
       "article-3751e940",
       "3751e940",
       "cisco-expressway-devices-hacked-after-poc-release-512afc"
+    ]
+  },
+  {
+    "slug": "drupal-fixes-critical-remote-code-execution-flaw-8a5e1fa6",
+    "title": "Drupal Fixes Critical Remote Code Execution Flaw",
+    "summary": "Drupal Security Team patched a critical remote code execution flaw that could let attackers seize control of vulnerable sites. The vulnerability, a buffer overflow in a core module, carries a CVSS score of 9.8 and has a publicly available proof-of-concept exploit. Administrators must apply the latest Drupal update immediately and confirm the core module is patched to prevent remote takeover.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
+    "publishedAt": "2026-11-19T13:08:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-fixes-critical-remote-code-execution-flaw",
+      "article-8a5e1fa6",
+      "8a5e1fa6",
+      "drupal-fixes-critical-remote-code-execution-flaw-4acb1d"
     ]
   },
   {
@@ -728,25 +928,6 @@ export const news: NewsBrief[] = [
       "article-cd7e3f81",
       "cd7e3f81",
       "ai-agents-run-with-employee-credentials-unchecked-4ca14d"
-    ]
-  },
-  {
-    "slug": "php-warns-of-critical-security-flaws-affecting-all-17c05871",
-    "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
-    "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. \"These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting all supported PHP versions,\" the maintainers said.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
-    "publishedAt": "2026-11-19T04:33:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php-warns-of-critical-security-flaws-affecting-all",
-      "article-17c05871",
-      "17c05871",
-      "php-warns-of-critical-security-flaws-affecting-all-2f1589",
-      "php-warns-of-critical-security-flaws-affecting-all-supported"
     ]
   },
   {
@@ -9574,201 +9755,6 @@ export const news: NewsBrief[] = [
       "article-d34c2895",
       "d34c2895",
       "isc-stormcast-released-for-monday-november-16-57dd81"
-    ]
-  },
-  {
-    "slug": "gitlab-releases-19-5-6-19-4-8-19-3-9-security-patc-4f778245",
-    "title": "GitLab Releases 19.5.6, 19.4.8, 19.3.9 Security Patches",
-    "summary": "GitLab released patch versions 19.5.6, 19.4.8, 19.3.9 for Community and Enterprise Editions, fixing multiple bugs and security issues. The updates address high-severity vulnerabilities; both scheduled releases and ad-hoc critical patches are included, with CVE references publicly listed. All self-managed GitLab installations should upgrade immediately; GitLab.com and Dedicated customers are already patched, and release notes detail each fix.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "GitLab Security Releases",
-    "sourceUrl": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-6-released/",
-    "publishedAt": "2026-11-16T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gitlab-releases-19-5-6-19-4-8-19-3-9-security-patc",
-      "article-4f778245",
-      "4f778245",
-      "gitlab-releases-19-5-6-19-4-8-19-3-9-security-patc-4f099e",
-      "gitlab-releases-19-5-6-19-4-8-19-3-9-security-patches"
-    ]
-  },
-  {
-    "slug": "fbi-alerts-artex-ai-tool-fuels-global-attacks-eee6630a",
-    "title": "FBI Alerts: ARTEX AI Tool Fuels Global Attacks",
-    "summary": "FBI warns that ARTEX AI-powered framework automates attacks worldwide, including a ConnectWise supply-chain breach exposing Microsoft 365 customer environments. The tool automates exploitation of known vulnerabilities and credential theft, letting attackers bypass controls and access tenant data, risking exfiltration. Teams should monitor ARTEX activity, enforce MFA, apply ConnectWise patches, and review Microsoft 365 tenant settings to mitigate exploitation.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
-    "publishedAt": "2026-11-15T18:29:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-alerts-artex-ai-tool-fuels-global-attacks",
-      "article-eee6630a",
-      "eee6630a",
-      "fbi-alerts-artex-ai-tool-fuels-global-attacks-3fc41a"
-    ]
-  },
-  {
-    "slug": "yara-x-1-23-0-release-adds-improvements-and-fixes-a08baaeb",
-    "title": "YARA-X 1.23.0 Release Adds Improvements and Fixes",
-    "summary": "YARA-X released version 1.23.0, adding four improvements and fixing sixteen bugs. The update enhances rule parsing performance, stabilizes memory handling, and resolves known false-positive triggers reported by users. Users should download the latest release from the official repository, replace the existing binary, and test comprehensive rule sets to ensure compatibility.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33496",
-    "publishedAt": "2026-11-15T18:17:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "yara-x-1-23-0-release-adds-improvements-and-fixes",
-      "article-a08baaeb",
-      "a08baaeb",
-      "yara-x-1-23-0-release-adds-improvements-and-fixes-57dd7e"
-    ]
-  },
-  {
-    "slug": "tsmc-employee-data-breach-exposes-46-000-records-v-f97fceb8",
-    "title": "TSMC Employee Data Breach Exposes 46,000 Records via Cloud Provider Compromise",
-    "summary": "A breach of TSMC’s external cloud provider exposed 6.9 GB of employee data, including 46,000 records with national IDs and banking details. The leak, publicly listed for auction, threatens credential theft and potential financial fraud across the workforce. TSMC urges immediate credential rotation, MFA enforcement, and a comprehensive incident response review for affected employees.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
-    "publishedAt": "2026-11-15T15:23:48.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/tsmc-employee-data-breach-cloud-provider-leak"
-      }
-    ],
-    "aliases": [
-      "tsmc-employee-data-breach-exposes-46-000-records-v",
-      "article-f97fceb8",
-      "f97fceb8",
-      "tsmc-employee-data-breach-exposes-46-000-records-v-4ca20e",
-      "tsmc-employee-data-breach-exposes-46-000-records-via-cloud-p"
-    ]
-  },
-  {
-    "slug": "six-zero-day-flaws-enable-remote-takeover-of-danfo-374a5179",
-    "title": "Six Zero-Day Flaws Enable Remote Takeover of Danfoss Fridges",
-    "summary": "Six pre-authentication remote code execution flaws were found in Danfoss AK-SM800A fridge controllers, letting attackers seize control of refrigeration units. Stack-based buffer overflows affect firmware up to 5.3.2, lack CVE IDs, and allow takeover within about an hour if exploited. Danfoss has not yet issued a patch; users should upgrade to firmware 5.3.3 or later when available and monitor advisories.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/supermarket-refrigeration-systems-0-day/",
-    "publishedAt": "2026-11-15T15:23:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "six-zero-day-flaws-enable-remote-takeover-of-danfo",
-      "article-374a5179",
-      "374a5179",
-      "six-zero-day-flaws-enable-remote-takeover-of-danfo-105066",
-      "six-zero-day-flaws-enable-remote-takeover-of-danfoss-fridges"
-    ]
-  },
-  {
-    "slug": "pentagon-renames-cdao-to-super-intelligence-office-c032a376",
-    "title": "Pentagon Renames CDAO to Super Intelligence Office",
-    "summary": "Pentagon renamed its Chief Data and Analytics Office to the 'Super Intelligence Office' per a directive to replace 'artificial intelligence' with 'super intelligence' in executive communications. The rename signals a rebranding effort across agencies but does not alter analytics capabilities or security controls. No patches are needed; agencies should update internal and public documents to reflect the new office name.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/",
-    "publishedAt": "2026-11-15T12:51:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pentagon-renames-cdao-to-super-intelligence-office",
-      "article-c032a376",
-      "c032a376",
-      "pentagon-renames-cdao-to-super-intelligence-office-56a44f"
-    ]
-  },
-  {
-    "slug": "meta-fined-805m-by-italy-for-facebook-android-gall-fb57ca77",
-    "title": "Meta Fined €805M by Italy for Facebook Android Gallery Access",
-    "summary": "Italy’s data authority fined Meta €805 million for Facebook’s Android app’s default access to users’ photo galleries without explicit consent. The unauthorized access to photos, videos, and metadata violated GDPR and Italian privacy law, exposing user data to misuse. Meta has 60 days to modify the default setting or add opt-in controls, implementing stricter permission handling to comply with regulations.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
-    "publishedAt": "2026-11-15T11:27:31.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/meta-fined-805m-italy-facebook-android-gallery-privacy"
-      }
-    ],
-    "aliases": [
-      "meta-fined-805m-by-italy-for-facebook-android-gall",
-      "article-fb57ca77",
-      "fb57ca77",
-      "meta-fined-805m-by-italy-for-facebook-android-gall-41170b",
-      "meta-fined-805m-by-italy-for-facebook-android-gallery-access"
-    ]
-  },
-  {
-    "slug": "secret-stealer-hits-github-claude-code-becomes-imp-03fc331b",
-    "title": "Secret Stealer Hits GitHub, Claude Code Becomes Implant",
-    "summary": "A credential stealer infected multiple GitHub repositories, exposing stored secrets. The same actor compromised Anthropic’s Claude Code extension, turning it into a remote-controlled implant capable of exfiltrating data. Security teams should audit repository access, rotate exposed keys, and update the extension to the latest patched version and monitor for anomalous activity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/15/week-in-review-secret-stealer-hits-github-repos-claude-code-turned-into-remote-controlled-implant/",
-    "publishedAt": "2026-11-15T09:00:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "secret-stealer-hits-github-claude-code-becomes-imp",
-      "article-03fc331b",
-      "03fc331b",
-      "secret-stealer-hits-github-claude-code-becomes-imp-57dbad",
-      "secret-stealer-hits-github-claude-code-becomes-implant"
-    ]
-  },
-  {
-    "slug": "n-central-unpatched-rce-and-system-access-2500dfd9",
-    "title": "N-Central Unpatched RCE and SYSTEM Access",
-    "summary": "An unpatched remote code execution flaw in N-Central allows attackers to gain SYSTEM-level access, potentially compromising the entire platform. The flaw requires no authentication, enabling arbitrary code execution and privilege escalation on the host machine. Security teams must apply the vendor patch immediately or implement detection rules to monitor for exploitation attempts.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://www.cybernewsai.com/blog/new-n-central-exploits-work-against-patched-servers-ena",
-    "publishedAt": "2026-11-14T19:25:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-central-unpatched-rce-and-system-access",
-      "article-2500dfd9",
-      "2500dfd9",
-      "n-central-unpatched-rce-and-system-access-f65fd5"
-    ]
-  },
-  {
-    "slug": "meta-faces-887m-fine-over-android-photo-access-75c65644",
-    "title": "Meta Faces $887M Fine Over Android Photo Access",
-    "summary": "Meta was fined $887 million by Italian regulators for accessing Android gallery photos and videos on Facebook without explicit user consent. The directive protects smartphones as part of a private sphere, requiring explicit permission before any media access to address privacy violations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/",
-    "publishedAt": "2026-11-14T19:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-faces-887m-fine-over-android-photo-access",
-      "article-75c65644",
-      "75c65644",
-      "meta-faces-887m-fine-over-android-photo-access-3f3ad7"
     ]
   }
 ];
