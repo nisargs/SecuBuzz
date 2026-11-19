@@ -232,6 +232,23 @@
     "isFallback": true
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:100560",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100560",
+    "title": "RHSA-2026:100560: Important: Java 11 OpenJDK ELS Security Update",
+    "headline": "RHSA-2026:100560: Important: Java 11 OpenJDK ELS Security Update",
+    "summary": "An update for java-11-openjdk with Extended Lifecycle Support is now available for Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8, and Red Hat Enterprise Linux 9.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-19T01:27:27.000Z",
+    "ingestedAt": "2026-11-19T07:46:08.109Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:100524",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100524",
     "title": "Red Hat Issues Critical kpatch Patches for RHEL 8.8 SAP",
@@ -262,6 +279,23 @@
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:100521",
     "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:100496",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100496",
+    "title": "RHSA-2026:100496: Critical: Red Hat OpenStack Platform 16.2 (openstack-manila) security update",
+    "headline": "RHSA-2026:100496: Critical: Red Hat OpenStack Platform 16.2 (openstack-manila) security update",
+    "summary": "An update for openstack-manila is now available for Red Hat OpenStack Platform 16.2 (Train). Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-19T01:12:35.000Z",
+    "ingestedAt": "2026-11-19T07:44:16.322Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:100568",
@@ -310,6 +344,23 @@
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:100571",
     "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:100572",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100572",
+    "title": "RHSA-2026:100572: Critical: java-25-openjdk security update for RHEL 10",
+    "headline": "RHSA-2026:100572: Critical: java-25-openjdk security update for RHEL 10",
+    "summary": "An update for java-25-openjdk is now available for Red Hat Enterprise Linux 10.2 Extended Update Support and Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-19T00:15:03.000Z",
+    "ingestedAt": "2026-11-19T07:44:16.323Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/11/19/nist-quantum-position-verification/",
@@ -8400,54 +8451,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126879",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126880",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126880",
-    "title": "Microsoft Edge Updates Address Chromium Type Confusion Flaw",
-    "headline": "Microsoft Edge Updates Address Chromium Type Confusion Flaw",
-    "summary": "Microsoft Edge incorporates security fixes to mitigate a browser engine weakness discovered within upstream Chromium software. Tracked as CVE-2026-126880, the flaw results from a type confusion error, enabling potential memory corruption or execution manipulation upon rendering malicious web content. Microsoft published Edge updates containing the resolved Chromium code, recommending security teams deploy updated browser versions to all end-user workstations.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "ingestedAt": "2026-11-14T11:43:38.493Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126880",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126874",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126874",
-    "title": "Microsoft Edge Addresses Chromium Type Confusion CVE-2026-126874",
-    "headline": "Microsoft Edge Addresses Chromium Type Confusion CVE-2026-126874",
-    "summary": "Microsoft Edge (Chromium-based) addresses a type confusion vulnerability identified as CVE-2026-126874 in Chromium. The flaw arises from improper type handling during memory operations, potentially allowing an attacker to corrupt data or cause a crash; no active exploitation reported. Microsoft recommends applying the latest Edge update, which incorporates the Chromium patch; users should also keep Chrome updated for comprehensive protection.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "ingestedAt": "2026-11-14T10:52:35.581Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126874",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126875",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126875",
-    "title": "Microsoft Edge Fixes Chromium Missing Authorization CVE-2026-126875",
-    "headline": "Microsoft Edge Fixes Chromium Missing Authorization CVE-2026-126875",
-    "summary": "Microsoft Edge (Chromium-based) addresses a missing authorization flaw identified as CVE-2026-126875 in Chromium. The vulnerability permits unauthorized access to privileged operations due to insufficient permission checks, potentially enabling privilege escalation; no exploitation evidence reported. Microsoft advises installing the latest Edge update, which includes the Chromium patch, and ensuring Chrome remains current for full mitigation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "ingestedAt": "2026-11-14T10:52:35.582Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126875",
     "additionalSources": []
   }
 ]

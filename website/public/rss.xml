@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 06:45:10 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 07:46:43 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Consumer Devices Breach OT Segmentation in Hospitals</title>
@@ -134,6 +134,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:100560: Important: Java 11 OpenJDK ELS Security Update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100560-important-java-11-openjdk-els-sec-128b95f5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100560-important-java-11-openjdk-els-sec-128b95f5</guid>
+      <description><![CDATA[An update for java-11-openjdk with Extended Lifecycle Support is now available for Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8, and Red Hat Enterprise Linux 9.]]></description>
+      <pubDate>Thu, 19 Nov 2026 01:27:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100560">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Red Hat Issues Critical kpatch Patches for RHEL 8.8 SAP</title>
       <link>https://secubuzz.com/news/red-hat-issues-critical-kpatch-patches-for-rhel-8-57cd9eef</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-kpatch-patches-for-rhel-8-57cd9eef</guid>
@@ -149,6 +158,15 @@
       <description><![CDATA[Red Hat issued a critical security update for kpatch patches 5_14_0-284_134_1 through 5_14_0-284_188_1 on RHEL 9.2 Update Services for SAP Solutions. The patches fix kernel vulnerabilities rated Critical by Red Hat Product Security, with CVSS base scores provided in the CVE references. System administrators should apply the updates immediately to prevent potential remote code execution on affected systems.]]></description>
       <pubDate>Thu, 19 Nov 2026 01:23:45 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100521">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100496: Critical: Red Hat OpenStack Platform 16.2 (openstack-manila) security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100496-critical-red-hat-openstack-platfo-80c0de29</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100496-critical-red-hat-openstack-platfo-80c0de29</guid>
+      <description><![CDATA[An update for openstack-manila is now available for Red Hat OpenStack Platform 16.2 (Train). Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 19 Nov 2026 01:12:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100496">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -176,6 +194,15 @@
       <description><![CDATA[Red Hat issued a critical security update for java-25-openjdk on RHEL 9 and the 9.8 Extended Update Support stream. The patch fixes multiple high-severity vulnerabilities with CVSS scores indicating critical impact, though specific CVE IDs are not enumerated. Administrators should apply the update immediately; no workarounds are available, and the patch mitigates all identified risks.]]></description>
       <pubDate>Thu, 19 Nov 2026 00:19:44 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100571">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100572: Critical: java-25-openjdk security update for RHEL 10</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100572-critical-java-25-openjdk-security-9d45f95f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100572-critical-java-25-openjdk-security-9d45f95f</guid>
+      <description><![CDATA[An update for java-25-openjdk is now available for Red Hat Enterprise Linux 10.2 Extended Update Support and Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 19 Nov 2026 00:15:03 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100572">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -429,33 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 19:39:33 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/">BleepingComputer</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Cisco Endpoint Connector Vulnerabilities Affect Linux, Mac, Windows</title>
-      <link>https://secubuzz.com/news/cisco-endpoint-connector-vulnerabilities-affect-li-c641da17</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-endpoint-connector-vulnerabilities-affect-li-c641da17</guid>
-      <description><![CDATA[Cisco disclosed vulnerabilities in Secure Endpoint Connector for Linux, Mac, and Windows affecting versions before 1.29.3, 1.27.5, and 8.6.4. The flaws allow local privilege escalation via improper input validation, with public proof-of-concept code available, potentially enabling attackers to gain elevated access. Administrators should upgrade to the latest Secure Endpoint Connector releases and apply vendor-issued patches to mitigate the risk.]]></description>
-      <pubDate>Wed, 18 Nov 2026 19:14:56 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1175">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-9153-1: cloud-init vulnerability</title>
-      <link>https://secubuzz.com/news/usn-9153-1-cloud-init-vulnerability-8ef719c2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9153-1-cloud-init-vulnerability-8ef719c2</guid>
-      <description><![CDATA[It was discovered that cloud-init incorrectly handled certain errors when configuring user passwords on systems with SSSD installed but not configured. An attacker could possibly use this issue to access affected user accounts without a password, resulting in unauthorized access.]]></description>
-      <pubDate>Wed, 18 Nov 2026 19:07:16 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9153-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>F5 NGINX Vulnerabilities CVE-2026-123007, CVE-2026-123633</title>
-      <link>https://secubuzz.com/news/f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-e9122083</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-e9122083</guid>
-      <description><![CDATA[F5 disclosed vulnerabilities in NGINX Plus and Open Source, CVE-2026-123007 and CVE-2026-123633, affecting versions before 37.3.0.1, 37.0.8.1, 37.2.0.1, 37.0.7.1, 1.31.9, and 1.30.7. The flaws allow remote code execution via malformed HTTP/2 requests, with public proof-of-concept code available, potentially enabling attackers to compromise servers. Administrators should upgrade to the latest NGINX releases and apply F5-issued patches immediately.]]></description>
-      <pubDate>Wed, 18 Nov 2026 19:02:27 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174">Canadian Centre for Cyber Security</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
