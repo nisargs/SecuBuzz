@@ -5522,5 +5522,10 @@
   "https://access.redhat.com/errata/RHSA-2026:100568",
   "https://access.redhat.com/errata/RHSA-2026:100563",
   "https://ubuntu.com/security/notices/USN-9155-1",
-  "https://ubuntu.com/security/notices/USN-9154-1"
+  "https://ubuntu.com/security/notices/USN-9154-1",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1013/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1012/",
+  "https://access.redhat.com/errata/RHSA-2026:100564",
+  "https://access.redhat.com/errata/RHSA-2026:100571",
+  "https://ubuntu.com/security/notices/USN-9037-2"
 ]

@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 01:52:01 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 02:52:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases Critical java-17-openjdk Update for RHEL 9</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-java-17-openjdk-update-f-495d3bfa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-java-17-openjdk-update-f-495d3bfa</guid>
+      <description><![CDATA[Red Hat issued a critical security update for java-17-openjdk on RHEL 9 and related SAP and Extended Update Support streams. The update addresses multiple high-severity vulnerabilities, each with CVSS scores indicating critical impact, but no specific CVE IDs are listed in the advisory. Administrators should apply the update immediately; no workarounds are provided, and the patch mitigates all identified risks.]]></description>
+      <pubDate>Thu, 19 Nov 2026 01:39:31 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100564">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Critical java-21-openjdk Update for RHEL 10</title>
       <link>https://secubuzz.com/news/critical-java-21-openjdk-update-for-rhel-10-8cb4ded1</link>
@@ -23,6 +32,15 @@
       <description><![CDATA[Red Hat issued a critical security update for java-17-openjdk on RHEL 8, fixing several high-severity flaws. The patches address CVEs that could enable remote code execution with CVSS scores exceeding 8.0, posing significant risk. Systems administrators should apply the update promptly or upgrade to the latest RHEL 8 release to mitigate the vulnerabilities.]]></description>
       <pubDate>Thu, 19 Nov 2026 00:45:05 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100563">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical java-25-openjdk Update for RHEL 9</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-java-25-openjdk-update-f-83dfab4f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-java-25-openjdk-update-f-83dfab4f</guid>
+      <description><![CDATA[Red Hat issued a critical security update for java-25-openjdk on RHEL 9 and the 9.8 Extended Update Support stream. The patch fixes multiple high-severity vulnerabilities with CVSS scores indicating critical impact, though specific CVE IDs are not enumerated. Administrators should apply the update immediately; no workarounds are available, and the patch mitigates all identified risks.]]></description>
+      <pubDate>Thu, 19 Nov 2026 00:19:44 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100571">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -141,6 +159,15 @@
       <pubDate>Wed, 18 Nov 2026 21:00:34 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1176">Canadian Centre for Cyber Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>USN-9037-2: HPLIP regression</title>
+      <link>https://secubuzz.com/news/usn-9037-2-hplip-regression-f71ac02e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9037-2-hplip-regression-f71ac02e</guid>
+      <description><![CDATA[USN-9037-1 fixed vulnerabilities in HPLIP. Unfortunately, the upstream fix introduced a regression that caused scanning to fail on certain HP devices. An attacker could possibly use this issue to cause a denial of service, expose sensitive information or execute arbitrary code. (CVE-2026-91097) It was discovered that HPLIP did not properly handle certain input, which could result in a heap-based buffer overflow.]]></description>
+      <pubDate>Wed, 18 Nov 2026 20:58:04 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9037-2">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Iranian Groups Hand Off Access for Destructive Attacks</title>
@@ -429,33 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 13:37:43 GMT</pubDate>
       <source url="https://cybersecuritynews.com/nvidia-data-breach-claim/">Cyber Security News</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Russian APT Impersonates Hacked Firm Employee to Target US Org</title>
-      <link>https://secubuzz.com/news/russian-apt-impersonates-hacked-firm-employee-to-t-2d9b132f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-apt-impersonates-hacked-firm-employee-to-t-2d9b132f</guid>
-      <description><![CDATA[A Russian APT used stolen Star Blizzard credentials to pose as an employee of a compromised firm and phish a U.S. organization. The attack leveraged data and social engineering to gain initial access by exploiting the target's trust in the impersonated identity. Security teams should verify employee identities, enforce MFA, and monitor for anomalous credential usage to mitigate impersonation attacks.]]></description>
-      <pubDate>Wed, 18 Nov 2026 13:33:47 GMT</pubDate>
-      <source url="https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/">SecurityWeek</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Malwarebytes Engineers Secure Their Own Antivirus</title>
-      <link>https://secubuzz.com/news/malwarebytes-engineers-secure-their-own-antivirus-b2853287</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malwarebytes-engineers-secure-their-own-antivirus-b2853287</guid>
-      <description><![CDATA[Malwarebytes engineers discuss protecting their antivirus platform from malware that could disable or bypass its defenses. The article outlines defensive strategies, including code integrity checks, runtime monitoring, and secure update mechanisms to thwart disabling attacks. Security teams should adopt similar integrity verification and update safeguards to maintain antivirus resilience against disabling malware.]]></description>
-      <pubDate>Wed, 18 Nov 2026 13:32:54 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/inside-malwarebytes/2026/11/who-protects-the-antivirus-how-we-secure-malwarebytes-itself">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Google Chrome Vulnerability Affects Versions Before 158.0.8127.36</title>
-      <link>https://secubuzz.com/news/google-chrome-vulnerability-affects-versions-befor-a7e6781c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-chrome-vulnerability-affects-versions-befor-a7e6781c</guid>
-      <description><![CDATA[A vulnerability affects Google Chrome stable channel desktop versions before 158.0.8127.36 on Windows, Mac, and Linux. The flaw, lacking a CVE ID, is not publicly exploited but could enable code execution or session compromise. Google advises users to review the advisory and install the latest Chrome update promptly to mitigate the risk.]]></description>
-      <pubDate>Wed, 18 Nov 2026 13:31:24 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1171">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-critical-java-17-openjdk-update-f-495d3bfa",
+    "title": "Red Hat Releases Critical java-17-openjdk Update for RHEL 9",
+    "summary": "Red Hat issued a critical security update for java-17-openjdk on RHEL 9 and related SAP and Extended Update Support streams. The update addresses multiple high-severity vulnerabilities, each with CVSS scores indicating critical impact, but no specific CVE IDs are listed in the advisory. Administrators should apply the update immediately; no workarounds are provided, and the patch mitigates all identified risks.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100564",
+    "publishedAt": "2026-11-19T01:39:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-java-17-openjdk-update-f",
+      "article-495d3bfa",
+      "495d3bfa",
+      "red-hat-releases-critical-java-17-openjdk-update-f-2ee081",
+      "red-hat-releases-critical-java-17-openjdk-update-for-rhel-9"
+    ]
+  },
+  {
     "slug": "critical-java-21-openjdk-update-for-rhel-10-8cb4ded1",
     "title": "Critical java-21-openjdk Update for RHEL 10",
     "summary": "Red Hat released a critical security update for java-21-openjdk on RHEL 10, addressing multiple high-severity vulnerabilities. The update, rated as Critical by Red Hat Product Security, contains patches for CVEs that could allow remote code execution with a CVSS score above 8.0. Administrators should apply the update immediately or upgrade to the latest RHEL 10 release to ensure protection.",
@@ -44,6 +63,25 @@ export const news: NewsBrief[] = [
       "article-56eabea4",
       "56eabea4",
       "critical-java-17-openjdk-update-for-rhel-8-2ee081"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-java-25-openjdk-update-f-83dfab4f",
+    "title": "Red Hat Releases Critical java-25-openjdk Update for RHEL 9",
+    "summary": "Red Hat issued a critical security update for java-25-openjdk on RHEL 9 and the 9.8 Extended Update Support stream. The patch fixes multiple high-severity vulnerabilities with CVSS scores indicating critical impact, though specific CVE IDs are not enumerated. Administrators should apply the update immediately; no workarounds are available, and the patch mitigates all identified risks.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100571",
+    "publishedAt": "2026-11-19T00:19:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-java-25-openjdk-update-f",
+      "article-83dfab4f",
+      "83dfab4f",
+      "red-hat-releases-critical-java-25-openjdk-update-f-2ee081",
+      "red-hat-releases-critical-java-25-openjdk-update-for-rhel-9"
     ]
   },
   {
@@ -321,6 +359,35 @@ export const news: NewsBrief[] = [
       "26df0737",
       "teamcity-vulnerabilities-in-versions-before-2026-1-53189b",
       "teamcity-vulnerabilities-in-versions-before-2026-1-3"
+    ]
+  },
+  {
+    "slug": "usn-9037-2-hplip-regression-f71ac02e",
+    "title": "USN-9037-2: HPLIP regression",
+    "summary": "USN-9037-1 fixed vulnerabilities in HPLIP. Unfortunately, the upstream fix introduced a regression that caused scanning to fail on certain HP devices. An attacker could possibly use this issue to cause a denial of service, expose sensitive information or execute arbitrary code. (CVE-2026-91097) It was discovered that HPLIP did not properly handle certain input, which could result in a heap-based buffer overflow.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9037-2",
+    "publishedAt": "2026-11-18T20:58:04.000Z",
+    "cves": [
+      "CVE-2026-91097",
+      "CVE-2026-91098",
+      "CVE-2026-91099",
+      "CVE-2026-91100",
+      "CVE-2026-91101",
+      "CVE-2026-91102",
+      "CVE-2026-91103",
+      "CVE-2026-91104",
+      "CVE-2026-91105",
+      "CVE-2026-91106"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9037-2-hplip-regression",
+      "article-f71ac02e",
+      "f71ac02e",
+      "usn-9037-2-hplip-regression-7e8844"
     ]
   },
   {
@@ -1759,6 +1826,44 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "krita-psb-integer-overflow-enables-remote-code-exe-96bd03cf",
+    "title": "Krita PSB Integer Overflow Enables Remote Code Execution",
+    "summary": "A Krita PSB file parsing integer overflow flaw permits remote code execution when a user opens a malicious file or visits a malicious page. Rated CVSS 7.8, the flaw requires user interaction and lets attackers run arbitrary code, but no active exploitation has been reported. Krita should issue a patch; users should avoid opening files until an update is available.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1013/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "krita-psb-integer-overflow-enables-remote-code-exe",
+      "article-96bd03cf",
+      "96bd03cf",
+      "krita-psb-integer-overflow-enables-remote-code-exe-77f33c",
+      "krita-psb-integer-overflow-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "krita-asl-integer-overflow-allows-remote-code-exec-e53234c6",
+    "title": "Krita ASL Integer Overflow Allows Remote Code Execution",
+    "summary": "A Krita ASL file parsing integer overflow flaw permits remote code execution when a user opens a malicious file or visits a malicious page. Rated CVSS 7.8, the flaw requires user interaction and lets attackers run arbitrary code, but no active exploitation has been reported. Krita should issue a patch; users should avoid opening files until an update is available.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1012/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "krita-asl-integer-overflow-allows-remote-code-exec",
+      "article-e53234c6",
+      "e53234c6",
+      "krita-asl-integer-overflow-allows-remote-code-exec-77f33c",
+      "krita-asl-integer-overflow-allows-remote-code-execution"
     ]
   },
   {
@@ -9781,111 +9886,6 @@ export const news: NewsBrief[] = [
       "85632a60",
       "windows-graphics-kernel-exposes-information-via-cv-743184",
       "windows-graphics-kernel-exposes-information-via-cve-2026-961"
-    ]
-  },
-  {
-    "slug": "windows-graphics-kernel-exposes-data-via-cve-2026-fdcccb30",
-    "title": "Windows Graphics Kernel Exposes Data via CVE-2026-88217",
-    "summary": "A Windows Graphics Kernel information-disclosure flaw (CVE-2026-88217) permits local users to read protected memory through the kernel’s rendering subsystem. The vulnerability stems from unchecked pointer dereference during rendering, allowing local users to extract kernel data and potentially expose sensitive information. Microsoft advises installing the latest Office update that contains the kernel patch; no workaround exists.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88217",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-88217"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-graphics-kernel-exposes-data-via-cve-2026",
-      "article-fdcccb30",
-      "fdcccb30",
-      "windows-graphics-kernel-exposes-data-via-cve-2026-743eaf",
-      "windows-graphics-kernel-exposes-data-via-cve-2026-88217"
-    ]
-  },
-  {
-    "slug": "windows-graphics-kernel-privilege-escalation-via-c-87afd1a9",
-    "title": "Windows Graphics Kernel Privilege Escalation via CVE-2026-95932",
-    "summary": "A Windows Graphics Kernel privilege-escalation flaw (CVE-2026-95932) enables local users to gain elevated kernel privileges through the rendering subsystem. The root cause is an unchecked pointer dereference during graphics command processing, allowing attackers to execute arbitrary kernel code and elevate privileges without authentication. Microsoft recommends applying the latest Office update that includes the kernel patch; no workaround is available.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95932",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-95932"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-graphics-kernel-privilege-escalation-via-c",
-      "article-87afd1a9",
-      "87afd1a9",
-      "windows-graphics-kernel-privilege-escalation-via-c-7431db",
-      "windows-graphics-kernel-privilege-escalation-via-cve-2026-95"
-    ]
-  },
-  {
-    "slug": "windows-graphics-kernel-privilege-escalation-cve-2-b39df0a5",
-    "title": "Windows Graphics Kernel Privilege Escalation CVE-2026-95922",
-    "summary": "Microsoft disclosed CVE-2026-95922, a Windows Graphics Kernel elevation of privilege flaw that lets local attackers gain SYSTEM rights on affected systems. The flaw stems from improper validation of graphics data, allowing code execution with elevated privileges once triggered. Microsoft urges users to apply the latest Office update that contains the kernel patch; no workaround exists until the update is installed.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95922",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-95922"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-graphics-kernel-privilege-escalation-cve-2",
-      "article-b39df0a5",
-      "b39df0a5",
-      "windows-graphics-kernel-privilege-escalation-cve-2-7431db",
-      "windows-graphics-kernel-privilege-escalation-cve-2026-95922"
-    ]
-  },
-  {
-    "slug": "windows-graphics-kernel-privilege-escalation-cve-2-ab8ed983",
-    "title": "Windows Graphics Kernel Privilege Escalation CVE-2026-95942",
-    "summary": "Microsoft disclosed CVE-2026-95942, a Windows Graphics Kernel elevation of privilege flaw that permits local attackers to obtain SYSTEM rights on affected machines. The vulnerability arises from unchecked handling of user-supplied graphics commands, enabling arbitrary code execution with elevated privileges. Microsoft recommends installing the latest Office update that incorporates the kernel patch; no workaround is available until the update is applied.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95942",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-95942"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-graphics-kernel-privilege-escalation-cve-2",
-      "article-ab8ed983",
-      "ab8ed983",
-      "windows-graphics-kernel-privilege-escalation-cve-2-7431da",
-      "windows-graphics-kernel-privilege-escalation-cve-2026-95942"
-    ]
-  },
-  {
-    "slug": "windows-graphics-kernel-privilege-escalation-cve-2-aa8c9959",
-    "title": "Windows Graphics Kernel Privilege Escalation CVE-2026-95953",
-    "summary": "Microsoft disclosed CVE-2026-95953, a Windows Graphics Kernel elevation of privilege flaw that allows local attackers to gain SYSTEM privileges on affected systems. The flaw results from improper validation of graphics input, enabling code execution with elevated rights when triggered. Microsoft advises applying the latest Office update that contains the kernel patch; no workaround exists until the update is installed.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95953",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-95953"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-graphics-kernel-privilege-escalation-cve-2",
-      "article-aa8c9959",
-      "aa8c9959",
-      "windows-graphics-kernel-privilege-escalation-cve-2-7431da",
-      "windows-graphics-kernel-privilege-escalation-cve-2026-95953"
     ]
   }
 ];
