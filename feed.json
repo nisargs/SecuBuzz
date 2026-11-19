@@ -17,6 +17,38 @@
     "isFallback": true
   },
   {
+    "id": "https://cybersecuritynews.com/n-able-confirms-server-breach/",
+    "sourceUrl": "https://cybersecuritynews.com/n-able-confirms-server-breach/",
+    "title": "N-Able Breach: Management Access Disabled",
+    "headline": "N-Able Breach: Management Access Disabled",
+    "summary": "N-Able confirmed unauthorized access to a single server in its Mail Assure and SpamExperts hosted cloud, targeting interfaces across the Americas, Europe, and Asia-Pacific. Email filtering remained operational, allowing customers to send and receive mail, while administrators lost access and N-Able disabled portals pending investigation.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-19T10:44:04.000Z",
+    "ingestedAt": "2026-11-19T12:05:42.476Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/n-able-confirms-server-breach/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
+    "sourceUrl": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
+    "title": "F5 Patches Five NGINX2Root Flaws",
+    "headline": "F5 Patches Five NGINX2Root Flaws",
+    "summary": "F5 Networks released emergency patches for five NGINX2Root vulnerabilities that enable remote, unauthenticated attackers to execute arbitrary code on affected systems. Public proof-of-concept exploits have surfaced, confirming the flaws’ exploitability and prompting immediate remediation by affected customers. F5 recommends applying the latest firmware updates and verifying patch deployment to mitigate the risk of code execution.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-11-19T10:26:51.000Z",
+    "ingestedAt": "2026-11-19T12:05:42.476Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/19/gta-6-scams-threats/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/gta-6-scams-threats/",
     "title": "GTA 6 scams are after your Google password, money, and crypto wallet",
@@ -67,6 +99,39 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/european-commission-cyberattack/",
+    "sourceUrl": "https://cybersecuritynews.com/european-commission-cyberattack/",
+    "title": "Hackers Target European Commission with ARTEX AI Tool in Major Cyberattack",
+    "headline": "Hackers Target European Commission with ARTEX AI Tool in Major Cyberattack",
+    "summary": "A cyberattack on the European Commission disrupted staff services for more than 10 days, leaving some employees unable to submit timesheets, request leave, or enter salary information. The EU’s cybersecurity service, CERT-EU, found that hackers used an AI tool called ARTEX, POLITICO reported on November 19, 2026.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-19T09:53:35.000Z",
+    "ingestedAt": "2026-11-19T12:07:22.286Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/news/2026/11/scattered-spiders-phishing-and-sim-swap-tactics-led-to-six-year-sentence",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/scattered-spiders-phishing-and-sim-swap-tactics-led-to-six-year-sentence",
+    "title": "Scattered Spider Uses Phishing, SIM-Swap Tactics",
+    "headline": "Scattered Spider Uses Phishing, SIM-Swap Tactics",
+    "summary": "Scattered Spider employed fake text messages and SIM-swap operations to compromise user accounts and intercept authentication codes. The actor leveraged social engineering to bypass two-factor authentication, enabling unauthorized access to corporate systems; no public exploit or CVE was disclosed. Security teams should verify phone number ownership, enable device-based authentication, and monitor for SIM-swap activity to mitigate similar attacks.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-11-19T09:41:18.000Z",
+    "ingestedAt": "2026-11-19T12:06:01.420Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.malwarebytes.com/blog/news/2026/11/scattered-spiders-phishing-and-sim-swap-tactics-led-to-six-year-sentence",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
     "sourceUrl": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
     "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
@@ -82,6 +147,22 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
+    "title": "NVIDIA Investigates Gentlemen Leak Claims",
+    "headline": "NVIDIA Investigates Gentlemen Leak Claims",
+    "summary": "NVIDIA is investigating claims that the Gentlemen ransomware group listed the company on its dark-web data-leak site, implying a possible breach. The leak site reportedly contains sensitive data, but NVIDIA has not confirmed any compromise or the breach’s scope. NVIDIA advises customers to monitor for suspicious activity and apply forthcoming security updates while the investigation continues.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-19T09:23:21.000Z",
+    "ingestedAt": "2026-11-19T12:05:42.476Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
+    "additionalSources": []
   },
   {
     "id": "https://cybersecuritynews.com/hackers-deploy-overlord-rat/",
@@ -165,6 +246,38 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+    "title": "CISA Adds Four Exploited Vulnerabilities",
+    "headline": "CISA Adds Four Exploited Vulnerabilities",
+    "summary": "CISA added four actively exploited vulnerabilities to its Known Exploited Vulnerabilities catalog, affecting Synology DSM, BerriAI LiteLLM, Apache Axis, and Vanderbilt REDCap systems. The flaws enable ransomware, cryptomining, and LLMjacking attacks, with evidence of active exploitation in the wild. CISA urges affected organizations to apply vendor patches, monitor for suspicious activity, and maintain up-to-date security configurations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-19T08:00:00.000Z",
+    "ingestedAt": "2026-11-19T12:05:42.476Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge",
+    "title": "Africa Leads Global Cyber Attack Rankings",
+    "headline": "Africa Leads Global Cyber Attack Rankings",
+    "summary": "Threat intelligence indicates Africa now tops global attack rankings, with Nigeria’s incidents more than doubling from the previous year. The spike encompasses phishing, ransomware, and credential-stealing campaigns, placing Angola and Kenya among the top five most attacked nations. Defenders should enhance regional threat monitoring, strengthen endpoint defenses, and share indicators of compromise across national agencies.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-11-19T08:00:00.000Z",
+    "ingestedAt": "2026-11-19T12:06:01.420Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge",
+    "additionalSources": []
   },
   {
     "id": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/",
@@ -330,6 +443,22 @@
     ],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33534",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33534",
+    "title": "Honeypot Analysis Should Follow Code Practices",
+    "headline": "Honeypot Analysis Should Follow Code Practices",
+    "summary": "Kevin Truong’s guest diary advocates treating honeypot data analysis as software development, recommending version control and code review practices. The post highlights risks of unstructured analysis, such as misinterpretation of threat indicators, and stresses the need for reproducibility and auditability. Security teams should adopt Git workflows, pull-request reviews, and human gatekeeping for AI-driven insights to improve accuracy and maintainability.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-11-19T01:53:48.000Z",
+    "ingestedAt": "2026-11-19T12:06:01.420Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://isc.sans.edu/diary/rss/33534",
+    "additionalSources": []
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:100567",
@@ -592,6 +721,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/19/nist-quantum-position-verification/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/russian-charged-with-spying-on-palantir-for-moscow",
+    "sourceUrl": "https://therecord.media/russian-charged-with-spying-on-palantir-for-moscow",
+    "title": "Russian Charged with Palantir Employee Surveillance",
+    "headline": "Russian Charged with Palantir Employee Surveillance",
+    "summary": "U.S. prosecutors charged Russian national Igor Andreevich D’iu for acting as a Moscow agent targeting Palantir Technologies employees. The case uncovered Telegram-based recruitment and covert monitoring designed to harvest intelligence on a defense-technology firm’s workforce. Defenders should audit employee access, monitor for insider threats, and enforce strict communication controls to mitigate similar espionage.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "ingestedAt": "2026-11-19T12:06:01.420Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/russian-charged-with-spying-on-palantir-for-moscow",
     "additionalSources": []
   },
   {
@@ -8283,170 +8428,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/signdrop-zero-day-windows-clfs-privilege-escalation",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/uber-confirms-data-breach/",
-    "sourceUrl": "https://cybersecuritynews.com/uber-confirms-data-breach/",
-    "title": "Uber Exposes 150,000 Driver Records via Fireworks AI Breach",
-    "headline": "Uber Exposes 150,000 Driver Records via Fireworks AI Breach",
-    "summary": "Uber exposed 150,000 driver records after attackers compromised Fireworks AI, a third-party AI provider. The breach stemmed from unauthorized IAM access, allowing retrieval of driver license data stored in Uber’s systems. Uber is notifying victims, tightening vendor IAM controls, and enhancing monitoring to prevent future credential misuse and strengthen overall security posture.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-14T01:19:57.000Z",
-    "ingestedAt": "2026-11-14T02:43:13.707Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/uber-confirms-data-breach/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/uber-data-breach-impacts-150000-people/"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/uber-driver-breach-fireworks-ai"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
-    "sourceUrl": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
-    "title": "FAA Ground Stop Triggered by Unexplained Communications Disruption",
-    "headline": "FAA Ground Stop Triggered by Unexplained Communications Disruption",
-    "summary": "A Federal Aviation Administration ground stop was imposed after an unexplained communications disruption, raising concerns of a potential cyberattack. The incident disrupted flight operations nationwide, but officials have not confirmed the cause or identified any exploited vulnerability. Air traffic control systems should monitor for anomalous traffic, apply the latest firmware patches, and enforce strict authentication to mitigate similar disruptions.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-13T21:33:27.000Z",
-    "ingestedAt": "2026-11-13T22:43:39.590Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
-    "sourceUrl": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
-    "title": "FBI Warns of Rapid Credential Escalation via ARTEX AI Tool Abuse",
-    "headline": "FBI Warns of Rapid Credential Escalation via ARTEX AI Tool Abuse",
-    "summary": "FBI alerts that attackers use ARTEX AI security-testing platform to automate vulnerability discovery and exploitation, reaching privileged access within hours. The tool bypasses multi-factor authentication and accelerates credential escalation, enabling rapid intrusions across networks. Security teams must restrict ARTEX usage, monitor API activity, enforce least-privilege controls, and vendors should update detection rules.",
-    "category": "GENERAL",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-11-13T21:32:00.000Z",
-    "ingestedAt": "2026-11-13T21:43:45.410Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Malwarebytes Labs",
-        "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/criminals-are-using-artex-ai-agents-to-speed-up-cyberattacks-fbi-warns"
-      }
-    ],
-    "isFallback": true
-  },
-  {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
-    "title": "SCKit Exploits ScreenConnect for Remote Technician Access",
-    "headline": "SCKit Exploits ScreenConnect for Remote Technician Access",
-    "summary": "SCKit leveraged the legitimate ScreenConnect platform to infiltrate target systems and capture technician sessions. This abuse bypasses standard authentication, enabling attackers to execute commands, exfiltrate data, and maintain persistence. Defenders should enforce least-privilege access, monitor for anomalous ScreenConnect activity, and deploy Defender XDR hunting rules to detect and block actively.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-11-13T21:31:44.000Z",
-    "ingestedAt": "2026-11-13T22:43:39.590Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.sentinelone.com/blog/artex-unmasked-the-rise-of-ai-powered-artex-in-cybercrime-espionage/",
-    "sourceUrl": "https://www.sentinelone.com/blog/artex-unmasked-the-rise-of-ai-powered-artex-in-cybercrime-espionage/",
-    "title": "SentinelOne AI Detects Autonomous ARTEX Attacks",
-    "headline": "SentinelOne AI Detects Autonomous ARTEX Attacks",
-    "summary": "SentinelOne demonstrates its Behavioral AI, Singularity AI SIEM, and Purple AI modules detecting autonomous ARTEX attacks across cloud, identity, and endpoint platforms. The framework uses machine-learning models trained on ARTEX command-and-control traffic, enabling real-time threat isolation without manual signatures. Teams should integrate these AI modules into SIEM pipelines to improve visibility and accelerate response to AI-driven threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SentinelOne",
-    "publishedAt": "2026-11-13T21:23:19.000Z",
-    "ingestedAt": "2026-11-14T00:43:27.378Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.sentinelone.com/blog/artex-unmasked-the-rise-of-ai-powered-artex-in-cybercrime-espionage/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.talosintelligence.com/artex-and-beyond/",
-    "sourceUrl": "https://blog.talosintelligence.com/artex-and-beyond/",
-    "title": "AI-Enabled Pentest Platforms Lower Attack Skill Threshold",
-    "headline": "AI-Enabled Pentest Platforms Lower Attack Skill Threshold",
-    "summary": "AI-enabled pentest and red-team frameworks automate reconnaissance, vulnerability testing, and follow-on actions, reducing the skill required for attackers. These tools chain operations seamlessly, enabling rapid exploitation cycles and accelerating intrusion timelines when misused by threat actors. Security teams should assess the risk of adopting such platforms, enforce strict access controls, and monitor for anomalous usage patterns.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "publishedAt": "2026-11-13T20:57:13.000Z",
-    "ingestedAt": "2026-11-13T21:43:11.313Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://blog.talosintelligence.com/artex-and-beyond/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
-    "sourceUrl": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
-    "title": "ArcticRAT Expands to Full Device Control Using AI",
-    "headline": "ArcticRAT Expands to Full Device Control Using AI",
-    "summary": "The Android malware ArcticRAT has broadened its scope from crypto-currency theft to full device control, enabling attackers to harvest and analyze victim finances. The gang now incorporates AI techniques to profile stolen data, increasing the precision of targeted financial exploitation. Security teams should update Android defenses, monitor for ArcticRAT indicators, and employ AI-based anomaly detection to mitigate the threat.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-11-13T20:20:27.000Z",
-    "ingestedAt": "2026-11-13T22:43:30.105Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/kitesurf-open-source/",
-    "sourceUrl": "https://blog.cloudflare.com/kitesurf-open-source/",
-    "title": "Cloudflare Open-Sources Kitesurf Browser Engine for AI Agents",
-    "headline": "Cloudflare Open-Sources Kitesurf Browser Engine for AI Agents",
-    "summary": "Cloudflare announced the open-source release of Kitesurf, a lightweight browser engine for AI agents to render pages and run JavaScript on Workers. It eliminates the Chromium container, letting developers test, inspect, and customize Kitesurf locally before deploying it to edge environments. Security teams should review the GitHub repo for vulnerabilities and consider integrating Kitesurf into AI-agent testing pipelines.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-11-13T20:20:21.000Z",
-    "ingestedAt": "2026-11-14T00:43:27.378Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://blog.cloudflare.com/kitesurf-open-source/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/cloudflare-kitesurf-open-source/"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/city-of-osaka-japan-email-data-breach",
-    "sourceUrl": "https://therecord.media/city-of-osaka-japan-email-data-breach",
-    "title": "Osaka City Alerts Residents to Phishing After Data Breach",
-    "headline": "Osaka City Alerts Residents to Phishing After Data Breach",
-    "summary": "Osaka City reported a data breach affecting approximately one million residents, prompting a city-wide warning. The breach exposed personal information, and officials cautioned residents against phishing emails that appear to originate from municipal services. Security teams should verify email authenticity, update credentials, and monitor for unauthorized account activity to mitigate potential exploitation.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-11-13T19:43:00.000Z",
-    "ingestedAt": "2026-11-13T21:43:11.313Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://therecord.media/city-of-osaka-japan-email-data-breach",
     "additionalSources": []
   }
 ]

@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 11:48:16 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 12:07:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>BackBox Linux 10 brings new hacking tools and Ubuntu 26.04 support</title>
@@ -15,6 +15,24 @@
       <pubDate>Thu, 19 Nov 2026 11:01:12 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/19/backbox-linux-10-penetration-testing/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>N-Able Breach: Management Access Disabled</title>
+      <link>https://secubuzz.com/news/n-able-breach-management-access-disabled-194f7fa9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-breach-management-access-disabled-194f7fa9</guid>
+      <description><![CDATA[N-Able confirmed unauthorized access to a single server in its Mail Assure and SpamExperts hosted cloud, targeting interfaces across the Americas, Europe, and Asia-Pacific. Email filtering remained operational, allowing customers to send and receive mail, while administrators lost access and N-Able disabled portals pending investigation.]]></description>
+      <pubDate>Thu, 19 Nov 2026 10:44:04 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/n-able-confirms-server-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>F5 Patches Five NGINX2Root Flaws</title>
+      <link>https://secubuzz.com/news/f5-patches-five-nginx2root-flaws-5bcbdd43</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/f5-patches-five-nginx2root-flaws-5bcbdd43</guid>
+      <description><![CDATA[F5 Networks released emergency patches for five NGINX2Root vulnerabilities that enable remote, unauthenticated attackers to execute arbitrary code on affected systems. Public proof-of-concept exploits have surfaced, confirming the flaws’ exploitability and prompting immediate remediation by affected customers. F5 recommends applying the latest firmware updates and verifying patch deployment to mitigate the risk of code execution.]]></description>
+      <pubDate>Thu, 19 Nov 2026 10:26:51 GMT</pubDate>
+      <source url="https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/">SecurityWeek</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>GTA 6 scams are after your Google password, money, and crypto wallet</title>
@@ -44,12 +62,39 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Hackers Target European Commission with ARTEX AI Tool in Major Cyberattack</title>
+      <link>https://secubuzz.com/news/hackers-target-european-commission-with-artex-ai-t-b79e0695</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-target-european-commission-with-artex-ai-t-b79e0695</guid>
+      <description><![CDATA[A cyberattack on the European Commission disrupted staff services for more than 10 days, leaving some employees unable to submit timesheets, request leave, or enter salary information. The EU’s cybersecurity service, CERT-EU, found that hackers used an AI tool called ARTEX, POLITICO reported on November 19, 2026.]]></description>
+      <pubDate>Thu, 19 Nov 2026 09:53:35 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/european-commission-cyberattack/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Scattered Spider Uses Phishing, SIM-Swap Tactics</title>
+      <link>https://secubuzz.com/news/scattered-spider-uses-phishing-sim-swap-tactics-ee2fede3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/scattered-spider-uses-phishing-sim-swap-tactics-ee2fede3</guid>
+      <description><![CDATA[Scattered Spider employed fake text messages and SIM-swap operations to compromise user accounts and intercept authentication codes. The actor leveraged social engineering to bypass two-factor authentication, enabling unauthorized access to corporate systems; no public exploit or CVE was disclosed. Security teams should verify phone number ownership, enable device-based authentication, and monitor for SIM-swap activity to mitigate similar attacks.]]></description>
+      <pubDate>Thu, 19 Nov 2026 09:41:18 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/scattered-spiders-phishing-and-sim-swap-tactics-led-to-six-year-sentence">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions</title>
       <link>https://secubuzz.com/news/hackers-breach-n-able-cloud-server-disrupting-emai-ac60aa8a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hackers-breach-n-able-cloud-server-disrupting-emai-ac60aa8a</guid>
       <description><![CDATA[N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs. "We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence," N-able said.]]></description>
       <pubDate>Thu, 19 Nov 2026 09:31:26 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>NVIDIA Investigates Gentlemen Leak Claims</title>
+      <link>https://secubuzz.com/news/nvidia-investigates-gentlemen-leak-claims-e153f400</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-investigates-gentlemen-leak-claims-e153f400</guid>
+      <description><![CDATA[NVIDIA is investigating claims that the Gentlemen ransomware group listed the company on its dark-web data-leak site, implying a possible breach. The leak site reportedly contains sensitive data, but NVIDIA has not confirmed any compromise or the breach’s scope. NVIDIA advises customers to monitor for suspicious activity and apply forthcoming security updates while the investigation continues.]]></description>
+      <pubDate>Thu, 19 Nov 2026 09:23:21 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/">BleepingComputer</source>
       <category>Breach</category>
     </item>
     <item>
@@ -96,6 +141,24 @@
       <pubDate>Thu, 19 Nov 2026 08:21:15 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/19/us-threat-disruption-center-scam-sextortion-funds/">Help Net Security</source>
       <category>Ransomware</category>
+    </item>
+    <item>
+      <title>CISA Adds Four Exploited Vulnerabilities</title>
+      <link>https://secubuzz.com/news/cisa-adds-four-exploited-vulnerabilities-2e7a06cd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-four-exploited-vulnerabilities-2e7a06cd</guid>
+      <description><![CDATA[CISA added four actively exploited vulnerabilities to its Known Exploited Vulnerabilities catalog, affecting Synology DSM, BerriAI LiteLLM, Apache Axis, and Vanderbilt REDCap systems. The flaws enable ransomware, cryptomining, and LLMjacking attacks, with evidence of active exploitation in the wild. CISA urges affected organizations to apply vendor patches, monitor for suspicious activity, and maintain up-to-date security configurations.]]></description>
+      <pubDate>Thu, 19 Nov 2026 08:00:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Africa Leads Global Cyber Attack Rankings</title>
+      <link>https://secubuzz.com/news/africa-leads-global-cyber-attack-rankings-ede8c92a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/africa-leads-global-cyber-attack-rankings-ede8c92a</guid>
+      <description><![CDATA[Threat intelligence indicates Africa now tops global attack rankings, with Nigeria’s incidents more than doubling from the previous year. The spike encompasses phishing, ransomware, and credential-stealing campaigns, placing Angola and Kenya among the top five most attacked nations. Defenders should enhance regional threat monitoring, strengthen endpoint defenses, and share indicators of compromise across national agencies.]]></description>
+      <pubDate>Thu, 19 Nov 2026 08:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge">Dark Reading</source>
+      <category>General</category>
     </item>
     <item>
       <title>PHP Issues Critical Update for CVE-2026-115560 RCE</title>
@@ -186,6 +249,15 @@
       <pubDate>Thu, 19 Nov 2026 03:02:28 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-189-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Honeypot Analysis Should Follow Code Practices</title>
+      <link>https://secubuzz.com/news/honeypot-analysis-should-follow-code-practices-4d1622d8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/honeypot-analysis-should-follow-code-practices-4d1622d8</guid>
+      <description><![CDATA[Kevin Truong’s guest diary advocates treating honeypot data analysis as software development, recommending version control and code review practices. The post highlights risks of unstructured analysis, such as misinterpretation of threat indicators, and stresses the need for reproducibility and auditability. Security teams should adopt Git workflows, pull-request reviews, and human gatekeeping for AI-driven insights to improve accuracy and maintainability.]]></description>
+      <pubDate>Thu, 19 Nov 2026 01:53:48 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33534">SANS Internet Storm Center</source>
+      <category>General</category>
     </item>
     <item>
       <title>RHSA-2026:100567: Critical: java-21-openjdk security update for RHEL 8 and 9</title>
@@ -332,6 +404,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Russian Charged with Palantir Employee Surveillance</title>
+      <link>https://secubuzz.com/news/russian-charged-with-palantir-employee-surveillanc-0334815b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-charged-with-palantir-employee-surveillanc-0334815b</guid>
+      <description><![CDATA[U.S. prosecutors charged Russian national Igor Andreevich D’iu for acting as a Moscow agent targeting Palantir Technologies employees. The case uncovered Telegram-based recruitment and covert monitoring designed to harvest intelligence on a defense-technology firm’s workforce. Defenders should audit employee access, monitor for insider threats, and enforce strict communication controls to mitigate similar espionage.]]></description>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://therecord.media/russian-charged-with-spying-on-palantir-for-moscow">The Record</source>
+      <category>Nation State</category>
+    </item>
+    <item>
       <title>Apple Releases App Store Connect API 4.6.1 Update</title>
       <link>https://secubuzz.com/news/apple-releases-app-store-connect-api-4-6-1-update-2f7f1e5a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-app-store-connect-api-4-6-1-update-2f7f1e5a</guid>
@@ -374,87 +455,6 @@
       <description><![CDATA[Microsoft announced general availability of Azure Linux 4, its in-house Linux distribution for customer virtual machines and scale sets. It is offered at no extra license fee, with customers paying only for Azure compute. The release enables organizations to deploy a consistent Linux environment across Azure workloads without additional licensing costs.]]></description>
       <pubDate>Wed, 18 Nov 2026 23:01:14 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/19/microsoft-azure-linux-4/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ubuntu Patches Multiple OpenJDK 27 Flaws</title>
-      <link>https://secubuzz.com/news/ubuntu-patches-multiple-openjdk-27-flaws-24a3f261</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-multiple-openjdk-27-flaws-24a3f261</guid>
-      <description><![CDATA[Ubuntu released a security update addressing multiple remote vulnerabilities affecting the OpenJDK 27 environment. Flaws including CVE-2026-114938 and CVE-2026-114939 involve improper input handling and authentication in Compiler, JGSS, and JSSE components, allowing unauthorized data access, denial of service, or arbitrary code execution. Security teams should apply the USN-9158-1 package updates to mitigate potential exploitation.]]></description>
-      <pubDate>Wed, 18 Nov 2026 22:13:47 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9158-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>USN-9157-1: OpenJDK 25 vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9157-1-openjdk-25-vulnerabilities-d6b9f99d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9157-1-openjdk-25-vulnerabilities-d6b9f99d</guid>
-      <description><![CDATA[A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 25 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 25 did not correctly authorize users.]]></description>
-      <pubDate>Wed, 18 Nov 2026 22:13:33 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9157-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>USN-9156-1: OpenJDK 21 vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9156-1-openjdk-21-vulnerabilities-d767f87d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9156-1-openjdk-21-vulnerabilities-d767f87d</guid>
-      <description><![CDATA[A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 21 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 21 did not correctly authorize users.]]></description>
-      <pubDate>Wed, 18 Nov 2026 22:12:23 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9156-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>USN-9155-1: OpenJDK 17 vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9155-1-openjdk-17-vulnerabilities-77fd7322</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9155-1-openjdk-17-vulnerabilities-77fd7322</guid>
-      <description><![CDATA[A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 17 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 17 did not correctly authorize users.]]></description>
-      <pubDate>Wed, 18 Nov 2026 22:10:58 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9155-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>USN-9154-1: OpenJDK 11 vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9154-1-openjdk-11-vulnerabilities-d20be6b4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9154-1-openjdk-11-vulnerabilities-d20be6b4</guid>
-      <description><![CDATA[A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 11 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114940) It was discovered that the Hotspot component of OpenJDK 11 did not correctly authorize users.]]></description>
-      <pubDate>Wed, 18 Nov 2026 22:09:36 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9154-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Social Media Amplifies Outage Panic</title>
-      <link>https://secubuzz.com/news/social-media-amplifies-outage-panic-2ab3bacf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/social-media-amplifies-outage-panic-2ab3bacf</guid>
-      <description><![CDATA[The article warns that recent outages and attacks can cause unnecessary worry, especially when amplified by social media. It advises against allowing social media narratives to transform a technical bug into a perceived disaster, which can mislead stakeholders. Readers are encouraged to verify incidents through official sources before reacting, thereby reducing panic and misinformation.]]></description>
-      <pubDate>Wed, 18 Nov 2026 22:07:01 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/ai/2026/11/outage-or-attack-dont-let-social-media-fill-in-the-gaps">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>GTA 6 Scams Threaten Accounts, Money, Crypto</title>
-      <link>https://secubuzz.com/news/gta-6-scams-threaten-accounts-money-crypto-a0dea539</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gta-6-scams-threaten-accounts-money-crypto-a0dea539</guid>
-      <description><![CDATA[Scammers target GTA 6 players with fake code offers that can compromise Google accounts, financial data, or crypto wallets. The scheme uses social engineering to trick users into providing credentials or downloading malware, exploiting the hype around the game's launch. Users should avoid unsolicited code offers, verify authenticity through official channels, and enable two-factor authentication to mitigate credential theft.]]></description>
-      <pubDate>Wed, 18 Nov 2026 22:06:05 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/scams/2026/11/gta-6-scams-could-cost-you-your-account-money-or-crypto">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Cloudflare Releases Updated Clairic Models</title>
-      <link>https://secubuzz.com/news/cloudflare-releases-updated-clairic-models-16be56c3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-releases-updated-clairic-models-16be56c3</guid>
-      <description><![CDATA[Cloudflare’s Workers AI team released updated Clairic and Clairic-flash models with open-weight architecture. The new models support more efficient extraction tasks and expand the repertoire of AI-powered services, but no security issues are reported. Developers can integrate the open-weight models via the Workers AI API to enhance text extraction capabilities.]]></description>
-      <pubDate>Wed, 18 Nov 2026 22:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/open-clairic/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chrome for Android Update</title>
-      <link>https://secubuzz.com/news/chrome-for-android-update-ce57406e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-for-android-update-ce57406e</guid>
-      <description><![CDATA[We've just released Chrome 159 (159.0.8154.18) for Android to a small percentage of users. It'll become available on Google Play over the next few days. If you find a new issue, please let us know by filing a bug .]]></description>
-      <pubDate>Wed, 18 Nov 2026 22:00:00 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0145322301.html">Google Chrome Releases</source>
       <category>General</category>
     </item>
   </channel>
