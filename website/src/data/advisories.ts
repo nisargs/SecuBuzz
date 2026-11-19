@@ -2,6 +2,195 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-121707",
+    "cveID": "CVE-2026-121707",
+    "slug": "cve-2026-121707",
+    "vendor": "npm",
+    "product": "effect",
+    "name": "Effect: ReDoS in Schema.TemplateLiteral compiled regex",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "Schema.TemplateLiteral compiles each Schema.String span to the lazy wildcard [\\s\\S]*? and decodes input by running the resulting regular expression against it. When a template has two or more Schema.String spans, for example: the regex contains several ambiguous wildcards.",
+    "requiredAction": "Upgrade effect to version 3.22.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7589-6fvf-x4pw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121707"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77597",
+    "cveID": "CVE-2026-77597",
+    "slug": "cve-2026-77597",
+    "vendor": "Pip",
+    "product": "iSponsorBlockTV",
+    "name": "iSponsorBlockTV: SSRF via Malicious SSDP Response Spoofing in Local Device Discovery",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 3.5,
+    "severity": "Low",
+    "cwe": "CWE-918",
+    "ransomware": false,
+    "description": "iSponsorBlockTV discovers local smart TV devices via SSDP (Simple Service Discovery Protocol). The LOCATION URL from SSDP responses is used to fetch device capabilities without URL validation. A local network attacker can craft a malicious SSDP response with a LOCATION pointing to any internal HTTP service, causing SSRF when the application fetches device information.",
+    "requiredAction": "Upgrade iSponsorBlockTV to version 2.11.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-56v3-jrq2-4q9m"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77597"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128073",
+    "cveID": "CVE-2026-128073",
+    "slug": "cve-2026-128073",
+    "vendor": "Go",
+    "product": "gosaml2 · russellhaering",
+    "name": "gosaml2: Unauthenticated panic decrypting an EncryptedAssertion with a short or empty CipherValue",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "An attacker who can supply a crafted SAML Response for parsing can crash a gosaml2 service provider by sending an EncryptedAssertion with AES-GCM encryption metadata and a CipherValue shorter than the GCM nonce size (12 bytes). The library panics with slice bounds out of range before any validation completes.",
+    "requiredAction": "Upgrade gosaml2 · russellhaering to version 0.12.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5hj8-q7fv-qrj6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128073"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-102529",
+    "cveID": "CVE-2026-102529",
+    "slug": "cve-2026-102529",
+    "vendor": ".NET (NuGet)",
+    "product": "HtmlSanitizer",
+    "name": "HtmlSanitizer: CSS Removal DoS",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "An unauthenticated request can occupy one synchronous application worker for seconds. Concurrent requests add CPU cost and can keep all workers busy, sustaining denial of service without user interaction. The issue has been patched in versions 9.0.967 and 9.1.968-beta. Disallow the style attribute.",
+    "requiredAction": "Upgrade HtmlSanitizer to version 9.0.967 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-464h-4j8h-q5mf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102529"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115472",
+    "cveID": "CVE-2026-115472",
+    "slug": "cve-2026-115472",
+    "vendor": "RubyGems",
+    "product": "doorkeeper",
+    "name": "Doorkeeper: When using public clients, any client can revoke any access token",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-285",
+    "ransomware": false,
+    "description": "An improper authorization issue affects Doorkeeper's OAuth token revocation flow when public (non-confidential) clients are in use. This vulnerability can lead to tokens being revoked without correct authorization. The issue is fixed in Doorkeeper 5.9.1.",
+    "requiredAction": "Upgrade doorkeeper to version 5.9.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h5m9-42h9-vcq6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115472"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-109549",
+    "cveID": "CVE-2026-109549",
+    "slug": "cve-2026-109549",
+    "vendor": "Java (Maven)",
+    "product": "org.omnifaces:omnifaces",
+    "name": "OmniFaces: SSE push channels are not bound to their owning HTTP session ",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-862",
+    "ransomware": false,
+    "description": "GHSA-fp43-vj7g-pg92 (fixed 5.4.2) bound session- and view-scoped WebSocket (o:socket) push channels to the HTTP session that registered them, so a leaked channel ID can no longer be connected to from a foreign or absent HTTP session. The fix (d5cae243c4) touched only the Socket* classes. The parallel SSE (o:sse, added in 5.2) push transport was left unchanged.",
+    "requiredAction": "Upgrade org.omnifaces:omnifaces to version 5.4.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w3w6-9m25-g88p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109549"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63193",
+    "cveID": "CVE-2026-63193",
+    "slug": "cve-2026-63193",
+    "vendor": "Composer",
+    "product": "october/october",
+    "name": "October: Media Library Crop Handler Bypasses Upload Extension Allowlist",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.5,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The Media Library upload handler validates the destination filename against an extension allowlist (default_extensions), rejecting types such as php, phtml, html, and htm. The image crop handler (MediaManager::onCropImage / cropImage) did not perform this check.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mqwx-84vv-mp26"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63193"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-61713",
     "cveID": "CVE-2026-61713",
     "slug": "cve-2026-61713",
@@ -1283,195 +1472,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110789"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-110782",
-    "cveID": "CVE-2026-110782",
-    "slug": "cve-2026-110782",
-    "vendor": "Composer",
-    "product": "simplesamlphp/saml2",
-    "name": "SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding)",
-    "dateAdded": "2026-11-17",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-287",
-    "ransomware": false,
-    "description": "CVE-2026-49283 / GHSA-6929-8p9f-26jx (\"HTTP-Artifact TLS validator confusion allows cross-IdP authentication bypass\") was fixed so that HTTPArtifact::receive() verifies the embedded SAML Response using the IdP metadata signing keys.",
-    "requiredAction": "Upgrade simplesamlphp/saml2 to version 6.2.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r7hw-jx6r-756g"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110782"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-69241",
-    "cveID": "CVE-2026-69241",
-    "slug": "cve-2026-69241",
-    "vendor": "Composer",
-    "product": "awcodes/filament-curator",
-    "name": "Filament Curator: Stored XSS via unsanitized SVG upload served inline",
-    "dateAdded": "2026-11-17",
-    "dueDate": "",
-    "cvss": 5.4,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "SVG files uploaded through the Curator media panel are stored and served inline without any sanitization. An authenticated user with permission to upload media can upload an SVG containing embedded JavaScript. When another panel user opens that file via the View action (which opens the media as a top-level browser document), the embedded script executes in the origin of the Filament application.",
-    "requiredAction": "Upgrade awcodes/filament-curator to version 5.1.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8vm9-f75m-5h2m"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69241"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63389",
-    "cveID": "CVE-2026-63389",
-    "slug": "cve-2026-63389",
-    "vendor": "Composer",
-    "product": "awcodes/filament-curator",
-    "name": "Filament Curator: Cross-tenant media metadata disclosure via Curator picker search",
-    "dateAdded": "2026-11-17",
-    "dueDate": "",
-    "cvss": 5,
-    "severity": "Medium",
-    "cwe": "CWE-284",
-    "ransomware": false,
-    "description": "Summary In multitenant Filament panels, an authenticated user could retrieve media metadata belonging to other tenants by typing in the Curator media-picker search box. The search query omitted the tenant ownership scope that the normal file listing applies.",
-    "requiredAction": "Upgrade awcodes/filament-curator to version 5.1.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-828w-6qgx-3rcf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63389"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-62336",
-    "cveID": "CVE-2026-62336",
-    "slug": "cve-2026-62336",
-    "vendor": "Go",
-    "product": "go.qbee.io/agent",
-    "name": "qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper",
-    "dateAdded": "2026-11-17",
-    "dueDate": "",
-    "cvss": 8.5,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "This is a Local Privilege Escalation (LPE) vulnerability stemming from improper symlink handling (CWE-59: Link Following) and improper ownership management (CWE-282) inside the qbee-agent file manager logic. Any managed device running qbee-agent up to the affected versions. The impact manifests in three distinct vectors: 1.",
-    "requiredAction": "Upgrade go.qbee.io/agent to version 0.0.0-20260615134032-0fdf8e411de5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xhv5-8fpq-g7hf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62336"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63672",
-    "cveID": "CVE-2026-63672",
-    "slug": "cve-2026-63672",
-    "vendor": "Composer",
-    "product": "egroupware/egroupware",
-    "name": "EGroupware: User-Controlled Identity Provider Selection in SAML Authentication",
-    "dateAdded": "2026-11-17",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-601",
-    "ransomware": false,
-    "description": "The login() function at line 130 passes the raw user-supplied value $_REQUEST['idp'] directly to SimpleSAMLphp's requireAuth() with only a regex check that the string starts with ' No validation is performed against a list of configured, trusted IdP entity IDs. An unauthenticated attacker can supply any HTTPS URL pointing to an IdP they control.",
-    "requiredAction": "Upgrade egroupware/egroupware to version 23.1.20260601 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pr4x-6fj4-gm4h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63672"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-14265",
-    "cveID": "CVE-2026-14265",
-    "slug": "cve-2026-14265",
-    "vendor": "Java (Maven)",
-    "product": "software.amazon.jdbc:aws-advanced-jdbc-wrapper",
-    "name": "AWS-advanced-jdbc-wrapper: Java Deserialization RCE via Cache Poisoning",
-    "dateAdded": "2026-11-17",
-    "dueDate": "",
-    "cvss": 7.7,
-    "severity": "High",
-    "cwe": "CWE-502",
-    "ransomware": false,
-    "description": "The AWS Advanced JDBC Wrapper is an open-source JDBC driver wrapper that extends a JDBC driver to enable Amazon Aurora and AWS Cloud features such as failover handling and caching. We identified CVE-2026-14265, an issue in the RemoteQueryCachePlugin of the AWS Advanced JDBC Wrapper.",
-    "requiredAction": "Upgrade software.amazon.jdbc:aws-advanced-jdbc-wrapper to version 4.0.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-c5q4-97jw-jggh"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14265"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63634",
-    "cveID": "CVE-2026-63634",
-    "slug": "cve-2026-63634",
-    "vendor": "Pip",
-    "product": "pympp",
-    "name": "pympp allows excessive sponsored transaction fees through padded calldata",
-    "dateAdded": "2026-11-17",
-    "dueDate": "",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "When the server acts as the fee_payer, pympp 0.8.0 validates calldata using eth_abi decoding, which is lenient about trailing bytes. The FeePayerPolicy caps gas_limit (≤ 2 M) and max_fee_per_gas (≤ 100 Gwei) but does not check calldata length. Tempo uses legacy calldata gas pricing: 16 gas per non-zero byte.",
-    "requiredAction": "Upgrade pympp to version 0.9.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-v858-xh7w-8jr5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63634"
       }
     ],
     "source": "GITHUB"
