@@ -1,5 +1,22 @@
 [
   {
+    "id": "https://cybersecuritynews.com/ruby2shell-rce/",
+    "sourceUrl": "https://cybersecuritynews.com/ruby2shell-rce/",
+    "title": "ruby2ßhell: Critical One-Byte Heap Overflow in Ruby Could Allow RCE Attacks",
+    "headline": "ruby2ßhell: Critical One-Byte Heap Overflow in Ruby Could Allow RCE Attacks",
+    "summary": "Ruby has patched a critical memory corruption flaw that can allow remote code execution (RCE) on vulnerable servers. Tracked as GHSA-34m4-m9fh-gqp5 and named ruby2ßhell by Veria Labs, the flaw affects Ruby’s string case conversion code.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-19T08:41:39.000Z",
+    "ingestedAt": "2026-11-19T09:43:21.410Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/19/us-threat-disruption-center-scam-sextortion-funds/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/us-threat-disruption-center-scam-sextortion-funds/",
     "title": "US enlists private firms to cut scammers off from victims’ cash",
@@ -8429,29 +8446,5 @@
     "isFutureSkew": false,
     "url": "https://therecord.media/german-parliament-passes-law-giving-spy-agencies-hacking-power",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
-    "title": "Check Point Patches Actively Exploited CVE-2026-123039 Gateway Flaw Enabling RCE and ESXi Wiping",
-    "headline": "Check Point Patches Actively Exploited CVE-2026-123039 Gateway Flaw Enabling RCE and ESXi Wiping",
-    "summary": "Check Point Security Gateway appliances are actively exploited via CVE-2026-123039, also called PHP2Shell, allowing unauthenticated remote code execution and root access. Attackers compromise virtual infrastructure and deploy data-wiping malware against connected VMware ESXi hosts. Check Point issued an emergency hotfix; administrators must patch immediately, monitor DynamicCLI root socket telemetry, and audit logs for compromise.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-13T16:21:43.000Z",
-    "ingestedAt": "2026-11-13T22:43:30.105Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/check-point-0-day-vulnerability/"
-      }
-    ],
-    "cves": [
-      "CVE-2026-123039"
-    ]
   }
 ]

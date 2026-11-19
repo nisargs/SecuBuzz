@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 08:45:35 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 09:46:43 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ruby2ßhell: Critical One-Byte Heap Overflow in Ruby Could Allow RCE Attacks</title>
+      <link>https://secubuzz.com/news/ruby2-hell-critical-one-byte-heap-overflow-in-ruby-ff7850cf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ruby2-hell-critical-one-byte-heap-overflow-in-ruby-ff7850cf</guid>
+      <description><![CDATA[Ruby has patched a critical memory corruption flaw that can allow remote code execution (RCE) on vulnerable servers. Tracked as GHSA-34m4-m9fh-gqp5 and named ruby2ßhell by Veria Labs, the flaw affects Ruby’s string case conversion code.]]></description>
+      <pubDate>Thu, 19 Nov 2026 08:41:39 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ruby2shell-rce/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>US enlists private firms to cut scammers off from victims’ cash</title>
       <link>https://secubuzz.com/news/us-enlists-private-firms-to-cut-scammers-off-from-3d27f789</link>
@@ -447,15 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 20:38:42 GMT</pubDate>
       <source url="https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups">Dark Reading</source>
       <category>Nation State</category>
-    </item>
-    <item>
-      <title>Admin Plans Early Patch Info Sharing with Industry</title>
-      <link>https://secubuzz.com/news/admin-plans-early-patch-info-sharing-with-industry-a870dd28</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/admin-plans-early-patch-info-sharing-with-industry-a870dd28</guid>
-      <description><![CDATA[Homeland Security Secretary Markwayne Mullin announced a policy to engage industry for early patch information before releases. The initiative aims to collect detailed patch data from vendors to assess security impact and mitigate potential vulnerabilities. No vendor patch or technical fix is involved; the program is a strategic outreach effort to improve patch management.]]></description>
-      <pubDate>Wed, 18 Nov 2026 20:00:00 GMT</pubDate>
-      <source url="https://therecord.media/tech-disruptions-house-homeland-committee-testimony">The Record</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

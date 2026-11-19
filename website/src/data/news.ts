@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ruby2-hell-critical-one-byte-heap-overflow-in-ruby-ff7850cf",
+    "title": "ruby2ßhell: Critical One-Byte Heap Overflow in Ruby Could Allow RCE Attacks",
+    "summary": "Ruby has patched a critical memory corruption flaw that can allow remote code execution (RCE) on vulnerable servers. Tracked as GHSA-34m4-m9fh-gqp5 and named ruby2ßhell by Veria Labs, the flaw affects Ruby’s string case conversion code.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ruby2shell-rce/",
+    "publishedAt": "2026-11-19T08:41:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ruby2-hell-critical-one-byte-heap-overflow-in-ruby",
+      "article-ff7850cf",
+      "ff7850cf",
+      "ruby2-hell-critical-one-byte-heap-overflow-in-ruby-31b71e",
+      "ruby2-hell-critical-one-byte-heap-overflow-in-ruby-could-all"
+    ]
+  },
+  {
     "slug": "us-enlists-private-firms-to-cut-scammers-off-from-3d27f789",
     "title": "US enlists private firms to cut scammers off from victims’ cash",
     "summary": "Stopping victims’ money before it reaches foreign scam, cybercrime and sextortion networks is the goal of a new US unit launched by the Homeland Security Task Force (HSTF). The Threat Disruption Center is part of the HSTF’s National Coordination Center (NCC) in Fairfax, Virginia.",
@@ -9792,32 +9811,6 @@ export const news: NewsBrief[] = [
       "0544a143",
       "germany-passes-legislation-authorizing-intelligenc-61e8b4",
       "germany-passes-legislation-authorizing-intelligence-agency-h"
-    ]
-  },
-  {
-    "slug": "check-point-patches-actively-exploited-cve-2026-12-f2d0dffc",
-    "title": "Check Point Patches Actively Exploited CVE-2026-123039 Gateway Flaw Enabling RCE and ESXi Wiping",
-    "summary": "Check Point Security Gateway appliances are actively exploited via CVE-2026-123039, also called PHP2Shell, allowing unauthenticated remote code execution and root access. Attackers compromise virtual infrastructure and deploy data-wiping malware against connected VMware ESXi hosts. Check Point issued an emergency hotfix; administrators must patch immediately, monitor DynamicCLI root socket telemetry, and audit logs for compromise.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
-    "publishedAt": "2026-11-13T16:21:43.000Z",
-    "cves": [
-      "CVE-2026-123039"
-    ],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/check-point-0-day-vulnerability/"
-      }
-    ],
-    "aliases": [
-      "check-point-patches-actively-exploited-cve-2026-12",
-      "article-f2d0dffc",
-      "f2d0dffc",
-      "check-point-patches-actively-exploited-cve-2026-12-276e8a",
-      "check-point-patches-actively-exploited-cve-2026-123039-gatew"
     ]
   }
 ];
