@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "us-enlists-private-firms-to-cut-scammers-off-from-3d27f789",
+    "title": "US enlists private firms to cut scammers off from victims’ cash",
+    "summary": "Stopping victims’ money before it reaches foreign scam, cybercrime and sextortion networks is the goal of a new US unit launched by the Homeland Security Task Force (HSTF). The Threat Disruption Center is part of the HSTF’s National Coordination Center (NCC) in Fairfax, Virginia.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/us-threat-disruption-center-scam-sextortion-funds/",
+    "publishedAt": "2026-11-19T08:21:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-enlists-private-firms-to-cut-scammers-off-from",
+      "article-3d27f789",
+      "3d27f789",
+      "us-enlists-private-firms-to-cut-scammers-off-from-ed762c",
+      "us-enlists-private-firms-to-cut-scammers-off-from-victims-ca"
+    ]
+  },
+  {
     "slug": "consumer-devices-breach-ot-segmentation-in-hospita-1073f17e",
     "title": "Consumer Devices Breach OT Segmentation in Hospitals",
     "summary": "Claroty found game consoles, Roku sticks, Teslas, and other consumer gadgets bypassing OT network segmentation in hospitals, factories, and commercial sites. Many devices are placed on production or guest segments, enabling attackers to move laterally to critical OT equipment without isolation. Teams should audit device placement, enforce strict segmentation, and monitor OT traffic to block lateral movement.",
@@ -922,6 +941,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "judge-approves-spirit-data-sale-to-google-b2faef81",
+    "title": "Judge Approves Spirit Data Sale to Google",
+    "summary": "A federal bankruptcy judge approved the sale of Spirit Airlines' defunct data to Google. The transaction transfers millions of passenger records, which Google plans to use in AI training while agreeing to strict privacy safeguards. Affected stakeholders should monitor compliance with the court-issued protective orders and ensure that any AI deployment incorporates the agreed data-handling constraints.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/judge-signs-off-google-purchase-spirit-airlines-data",
+    "publishedAt": "2026-11-18T20:39:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "judge-approves-spirit-data-sale-to-google",
+      "article-b2faef81",
+      "b2faef81",
+      "judge-approves-spirit-data-sale-to-google-22b216"
+    ]
+  },
+  {
     "slug": "iranian-groups-hand-off-access-for-destructive-att-6eb700e4",
     "title": "Iranian Groups Hand Off Access for Destructive Attacks",
     "summary": "AttackIQ research examined 20 Iranian state-sponsored threat groups, revealing a coordinated hand-off of network access to enable destructive operations. The analysis shows espionage, ransomware, and hacktivism tactics intertwining within state-backed campaigns, complicating attribution and mitigation. Security teams should monitor for lateral movement indicators and implement strict network segmentation to reduce the impact of such hand-offs.",
@@ -998,6 +1035,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "mitre-flags-inaccurate-cve-timestamps-plans-retire-2cd1a5df",
+    "title": "MITRE Flags Inaccurate CVE Timestamps, Plans Retirement",
+    "summary": "MITRE disclosed that 87% of its recent CVE records contain inaccurate publication timestamps. The error stems from legacy system inconsistencies, and MITRE plans to retire the system in 2027. Users should cross-check CVE release dates and await the updated database to maintain accurate vulnerability timelines in security operations for incident response.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/mitre-cve-timestamp-issues",
+    "publishedAt": "2026-11-18T19:38:28.084Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mitre-flags-inaccurate-cve-timestamps-plans-retire",
+      "article-2cd1a5df",
+      "2cd1a5df",
+      "mitre-flags-inaccurate-cve-timestamps-plans-retire-11514c",
+      "mitre-flags-inaccurate-cve-timestamps-plans-retirement"
+    ]
+  },
+  {
     "slug": "cisco-endpoint-connector-vulnerabilities-affect-li-c641da17",
     "title": "Cisco Endpoint Connector Vulnerabilities Affect Linux, Mac, Windows",
     "summary": "Cisco disclosed vulnerabilities in Secure Endpoint Connector for Linux, Mac, and Windows affecting versions before 1.29.3, 1.27.5, and 8.6.4. The flaws allow local privilege escalation via improper input validation, with public proof-of-concept code available, potentially enabling attackers to gain elevated access. Administrators should upgrade to the latest Secure Endpoint Connector releases and apply vendor-issued patches to mitigate the risk.",
@@ -1054,6 +1110,25 @@ export const news: NewsBrief[] = [
       "e9122083",
       "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-3f3de0",
       "f5-nginx-vulnerabilities-cve-2026-123007-cve-2026-123633"
+    ]
+  },
+  {
+    "slug": "senators-push-white-house-ai-cyber-defense-initiat-e388310a",
+    "title": "Senators Push White House AI Cyber Defense Initiative",
+    "summary": "Bipartisan senators urged the White House to launch a national initiative to strengthen defenses against AI-enabled cyber threats. The call follows recent incidents where adversaries leveraged generative AI to craft sophisticated phishing and malware campaigns. Stakeholders should monitor emerging AI threat frameworks and collaborate with federal agencies to develop mitigation guidelines.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ai-cyber-white-house",
+    "publishedAt": "2026-11-18T19:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "senators-push-white-house-ai-cyber-defense-initiat",
+      "article-e388310a",
+      "e388310a",
+      "senators-push-white-house-ai-cyber-defense-initiat-3c0ebb",
+      "senators-push-white-house-ai-cyber-defense-initiative"
     ]
   },
   {
@@ -1169,6 +1244,24 @@ export const news: NewsBrief[] = [
       "article-a1e410dd",
       "a1e410dd",
       "arctic-wolf-releases-quarterly-innovation-update-7fd065"
+    ]
+  },
+  {
+    "slug": "arctic-wolf-announces-november-2026-product-update-1aedb6a5",
+    "title": "Arctic Wolf Announces November 2026 Product Update",
+    "summary": "Arctic Wolf released its November 2026 quarterly update, outlining new security services and roadmap milestones. The update highlights enhancements to threat detection, incident response automation, and expanded partner integrations. Customers are encouraged to review the release notes and schedule integration testing to align with the new capabilities in the next quarter.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/on-demand-webinar/whats-new-whats-next-with-arctic-wolf-november-2026-update/",
+    "publishedAt": "2026-11-18T18:02:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "arctic-wolf-announces-november-2026-product-update",
+      "article-1aedb6a5",
+      "1aedb6a5",
+      "arctic-wolf-announces-november-2026-product-update-7a1038"
     ]
   },
   {
@@ -9725,106 +9818,6 @@ export const news: NewsBrief[] = [
       "f2d0dffc",
       "check-point-patches-actively-exploited-cve-2026-12-276e8a",
       "check-point-patches-actively-exploited-cve-2026-123039-gatew"
-    ]
-  },
-  {
-    "slug": "openai-launches-chatgpt-wallet-for-agent-payments-4e48330f",
-    "title": "OpenAI Launches ChatGPT Wallet for Agent Payments",
-    "summary": "OpenAI launched ChatGPT Wallet, letting agents pay with stand-in card numbers while hiding user card details. The wallet integrates with American Express, Mastercard, and Visa, operating within OpenAI's dot environment, the user’s dot completes purchases, and merchants may need to adjust for agent transactions. Users should review merchant compatibility and monitor for unintended blocks; OpenAI advises merchants to handle adjustments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/openai-chatgpt-wallet/",
-    "publishedAt": "2026-11-13T16:15:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-launches-chatgpt-wallet-for-agent-payments",
-      "article-4e48330f",
-      "4e48330f",
-      "openai-launches-chatgpt-wallet-for-agent-payments-25f506"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-126881-improper-initialization-e-58bafcc4",
-    "title": "Chromium CVE-2026-126881 Improper Initialization Exploit",
-    "summary": "Chromium CVE-2026-126881 describes an improper initialization flaw in the Chromium engine. The vulnerability could allow attackers to exploit uninitialized memory, potentially leading to denial of service or memory corruption, though no active exploitation has been reported. Microsoft Edge users should update to the latest Chromium-based release, and Chrome users should apply the patch released by Google.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126881",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126881"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-126881-improper-initialization-e",
-      "article-58bafcc4",
-      "58bafcc4",
-      "chromium-cve-2026-126881-improper-initialization-e-1fdbd9",
-      "chromium-cve-2026-126881-improper-initialization-exploit"
-    ]
-  },
-  {
-    "slug": "chromium-integer-overflow-affects-microsoft-edge-9ac0c451",
-    "title": "Chromium Integer Overflow Affects Microsoft Edge",
-    "summary": "A Chromium integer overflow (CVE-2026-126876) impacts Microsoft Edge (Chromium-based) via its Chromium code ingestion. The flaw lets an attacker overflow a 32-bit counter during URL parsing, potentially corrupting memory and enabling arbitrary code execution; no public PoC yet. Microsoft has fixed the issue in Edge releases; users should update to the version or apply the patch from Chrome release notes.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126876",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126876"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-integer-overflow-affects-microsoft-edge",
-      "article-9ac0c451",
-      "9ac0c451",
-      "chromium-integer-overflow-affects-microsoft-edge-1fdbda"
-    ]
-  },
-  {
-    "slug": "chromium-information-leak-affects-microsoft-edge-c0c1ee10",
-    "title": "Chromium Information Leak Affects Microsoft Edge",
-    "summary": "A Chromium information-leak flaw (CVE-2026-126878) targets Microsoft Edge (Chromium-based) through its Chromium code ingestion. The flaw lets an attacker read sensitive data from the browser’s memory during URL processing, potentially exposing credentials or session tokens; no public exploit reported. Microsoft has fixed the issue in Edge releases; users should update to build or apply the patch from Chrome release notes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126878",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126878"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-information-leak-affects-microsoft-edge",
-      "article-c0c1ee10",
-      "c0c1ee10",
-      "chromium-information-leak-affects-microsoft-edge-1fdbda"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-addresses-chromium-use-after-free-v-2b2818f7",
-    "title": "Microsoft Edge Addresses Chromium Use-After-Free Vulnerability",
-    "summary": "Microsoft Edge is affected by an upstream browser engine vulnerability identified in the Chromium code base. Cataloged as CVE-2026-126879, the issue involves a use-after-free memory flaw that can lead to remote memory corruption during browser execution. Microsoft released an Edge update incorporating the Chromium patch, and organizations should apply browser updates immediately.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126879",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126879"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-addresses-chromium-use-after-free-v",
-      "article-2b2818f7",
-      "2b2818f7",
-      "microsoft-edge-addresses-chromium-use-after-free-v-1fdbd9",
-      "microsoft-edge-addresses-chromium-use-after-free-vulnerabili"
     ]
   }
 ];

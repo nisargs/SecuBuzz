@@ -1,5 +1,22 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/19/us-threat-disruption-center-scam-sextortion-funds/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/us-threat-disruption-center-scam-sextortion-funds/",
+    "title": "US enlists private firms to cut scammers off from victims’ cash",
+    "headline": "US enlists private firms to cut scammers off from victims’ cash",
+    "summary": "Stopping victims’ money before it reaches foreign scam, cybercrime and sextortion networks is the goal of a new US unit launched by the Homeland Security Task Force (HSTF). The Threat Disruption Center is part of the HSTF’s National Coordination Center (NCC) in Fairfax, Virginia.",
+    "category": "RANSOMWARE",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-19T08:21:15.000Z",
+    "ingestedAt": "2026-11-19T08:43:33.990Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/19/slipping-past-ot-network-segmentation/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/slipping-past-ot-network-segmentation/",
     "title": "Consumer Devices Breach OT Segmentation in Hospitals",
@@ -804,6 +821,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://therecord.media/judge-signs-off-google-purchase-spirit-airlines-data",
+    "sourceUrl": "https://therecord.media/judge-signs-off-google-purchase-spirit-airlines-data",
+    "title": "Judge Approves Spirit Data Sale to Google",
+    "headline": "Judge Approves Spirit Data Sale to Google",
+    "summary": "A federal bankruptcy judge approved the sale of Spirit Airlines' defunct data to Google. The transaction transfers millions of passenger records, which Google plans to use in AI training while agreeing to strict privacy safeguards. Affected stakeholders should monitor compliance with the court-issued protective orders and ensure that any AI deployment incorporates the agreed data-handling constraints.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-11-18T20:39:00.000Z",
+    "ingestedAt": "2026-11-19T08:44:04.324Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/judge-signs-off-google-purchase-spirit-airlines-data",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
     "sourceUrl": "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
     "title": "Iranian Groups Hand Off Access for Destructive Attacks",
@@ -868,6 +901,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://socket.dev/blog/mitre-cve-timestamp-issues",
+    "sourceUrl": "https://socket.dev/blog/mitre-cve-timestamp-issues",
+    "title": "MITRE Flags Inaccurate CVE Timestamps, Plans Retirement",
+    "headline": "MITRE Flags Inaccurate CVE Timestamps, Plans Retirement",
+    "summary": "MITRE disclosed that 87% of its recent CVE records contain inaccurate publication timestamps. The error stems from legacy system inconsistencies, and MITRE plans to retire the system in 2027. Users should cross-check CVE release dates and await the updated database to maintain accurate vulnerability timelines in security operations for incident response.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Socket.dev",
+    "publishedAt": "2026-11-18T19:38:28.084Z",
+    "ingestedAt": "2026-11-19T08:44:04.324Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://socket.dev/blog/mitre-cve-timestamp-issues",
+    "additionalSources": []
+  },
+  {
     "id": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1175",
     "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1175",
     "title": "Cisco Endpoint Connector Vulnerabilities Affect Linux, Mac, Windows",
@@ -914,6 +963,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/ai-cyber-white-house",
+    "sourceUrl": "https://therecord.media/ai-cyber-white-house",
+    "title": "Senators Push White House AI Cyber Defense Initiative",
+    "headline": "Senators Push White House AI Cyber Defense Initiative",
+    "summary": "Bipartisan senators urged the White House to launch a national initiative to strengthen defenses against AI-enabled cyber threats. The call follows recent incidents where adversaries leveraged generative AI to craft sophisticated phishing and malware campaigns. Stakeholders should monitor emerging AI threat frameworks and collaborate with federal agencies to develop mitigation guidelines.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-11-18T19:00:00.000Z",
+    "ingestedAt": "2026-11-19T08:44:04.324Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/ai-cyber-white-house",
     "additionalSources": []
   },
   {
@@ -1013,6 +1078,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://arcticwolf.com/resources/on-demand-webinar-uk/whats-new-and-whats-next-arctic-wolf-november-2026-update/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://arcticwolf.com/resources/on-demand-webinar/whats-new-whats-next-with-arctic-wolf-november-2026-update/",
+    "sourceUrl": "https://arcticwolf.com/resources/on-demand-webinar/whats-new-whats-next-with-arctic-wolf-november-2026-update/",
+    "title": "Arctic Wolf Announces November 2026 Product Update",
+    "headline": "Arctic Wolf Announces November 2026 Product Update",
+    "summary": "Arctic Wolf released its November 2026 quarterly update, outlining new security services and roadmap milestones. The update highlights enhancements to threat detection, incident response automation, and expanded partner integrations. Customers are encouraged to review the release notes and schedule integration testing to align with the new capabilities in the next quarter.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "publishedAt": "2026-11-18T18:02:43.000Z",
+    "ingestedAt": "2026-11-19T08:44:04.324Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://arcticwolf.com/resources/on-demand-webinar/whats-new-whats-next-with-arctic-wolf-november-2026-update/",
     "additionalSources": []
   },
   {
@@ -8372,85 +8453,5 @@
     "cves": [
       "CVE-2026-123039"
     ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/13/openai-chatgpt-wallet/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/openai-chatgpt-wallet/",
-    "title": "OpenAI Launches ChatGPT Wallet for Agent Payments",
-    "headline": "OpenAI Launches ChatGPT Wallet for Agent Payments",
-    "summary": "OpenAI launched ChatGPT Wallet, letting agents pay with stand-in card numbers while hiding user card details. The wallet integrates with American Express, Mastercard, and Visa, operating within OpenAI's dot environment, the user’s dot completes purchases, and merchants may need to adjust for agent transactions. Users should review merchant compatibility and monitor for unintended blocks; OpenAI advises merchants to handle adjustments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-13T16:15:25.000Z",
-    "ingestedAt": "2026-11-14T02:43:27.588Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/13/openai-chatgpt-wallet/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126881",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126881",
-    "title": "Chromium CVE-2026-126881 Improper Initialization Exploit",
-    "headline": "Chromium CVE-2026-126881 Improper Initialization Exploit",
-    "summary": "Chromium CVE-2026-126881 describes an improper initialization flaw in the Chromium engine. The vulnerability could allow attackers to exploit uninitialized memory, potentially leading to denial of service or memory corruption, though no active exploitation has been reported. Microsoft Edge users should update to the latest Chromium-based release, and Chrome users should apply the patch released by Google.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "ingestedAt": "2026-11-14T12:43:16.577Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126881",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126876",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126876",
-    "title": "Chromium Integer Overflow Affects Microsoft Edge",
-    "headline": "Chromium Integer Overflow Affects Microsoft Edge",
-    "summary": "A Chromium integer overflow (CVE-2026-126876) impacts Microsoft Edge (Chromium-based) via its Chromium code ingestion. The flaw lets an attacker overflow a 32-bit counter during URL parsing, potentially corrupting memory and enabling arbitrary code execution; no public PoC yet. Microsoft has fixed the issue in Edge releases; users should update to the version or apply the patch from Chrome release notes.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "ingestedAt": "2026-11-14T11:43:13.055Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126876",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126878",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126878",
-    "title": "Chromium Information Leak Affects Microsoft Edge",
-    "headline": "Chromium Information Leak Affects Microsoft Edge",
-    "summary": "A Chromium information-leak flaw (CVE-2026-126878) targets Microsoft Edge (Chromium-based) through its Chromium code ingestion. The flaw lets an attacker read sensitive data from the browser’s memory during URL processing, potentially exposing credentials or session tokens; no public exploit reported. Microsoft has fixed the issue in Edge releases; users should update to build or apply the patch from Chrome release notes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "ingestedAt": "2026-11-14T11:43:13.055Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126878",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126879",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126879",
-    "title": "Microsoft Edge Addresses Chromium Use-After-Free Vulnerability",
-    "headline": "Microsoft Edge Addresses Chromium Use-After-Free Vulnerability",
-    "summary": "Microsoft Edge is affected by an upstream browser engine vulnerability identified in the Chromium code base. Cataloged as CVE-2026-126879, the issue involves a use-after-free memory flaw that can lead to remote memory corruption during browser execution. Microsoft released an Edge update incorporating the Chromium patch, and organizations should apply browser updates immediately.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "ingestedAt": "2026-11-14T11:43:38.493Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126879",
-    "additionalSources": []
   }
 ]
