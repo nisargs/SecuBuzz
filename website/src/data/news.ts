@@ -11,6 +11,65 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "nvidia-denies-gentlemen-ransomware-claim-a06839da",
+    "title": "Nvidia Denies Gentlemen Ransomware Claim",
+    "summary": "Gentlemen ransomware group listed Nvidia as a victim, alleging a compromise of its systems. No evidence of exploitation or data exfiltration was found, and the claim lacks supporting proof of a vulnerability or breach. Nvidia confirmed no compromise and urged stakeholders to monitor for potential phishing or credential theft attempts.",
+    "category": "Breach",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/",
+    "publishedAt": "2026-11-19T14:17:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nvidia-denies-gentlemen-ransomware-claim",
+      "article-a06839da",
+      "a06839da",
+      "nvidia-denies-gentlemen-ransomware-claim-15a41b"
+    ]
+  },
+  {
+    "slug": "armory-castle-exploits-vsphere-f240c9be",
+    "title": "ARMORY CASTLE Exploits vSphere",
+    "summary": "Written by: Jayson Frost, Bryce Greathouse, Dhanesh Kizhakkinan, John Palmisano, Steve Rasch, Daniel Sislo, John Wolfram Introduction On Oct. 15, 2026, Mandiant and Google Threat Intelligence Group (GTIG) published a blog post detailing recent activity in which the suspected PRC-nexus threat actor ARMORY CASTLE (formerly tracked as UNC5221) exploited CVE-2026-102764, a zero-day vulnerability in BeyondTrust Remote Support, which was patched in BT26-05 .",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Google Threat Intelligence",
+    "sourceUrl": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/",
+    "publishedAt": "2026-11-19T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-102764",
+      "CVE-2026-123890",
+      "CVE-2026-59309",
+      "CVE-2025-22457"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "armory-castle-exploits-vsphere",
+      "article-f240c9be",
+      "f240c9be",
+      "armory-castle-exploits-vsphere-32bd79"
+    ]
+  },
+  {
+    "slug": "ukraine-arrests-ransomware-network-extorting-40m-a5f80651",
+    "title": "Ukraine Arrests Ransomware Network Extorting $40M",
+    "summary": "Ukrainian authorities arrested four suspects linked to an international ransomware network that extorted over $40 million from U.S. oil and healthcare firms. The group used credential theft and encrypted data to demand ransom, targeting critical infrastructure and causing significant financial loss. Law enforcement seized ransom payments and seized infrastructure, and the operators face prosecution under Ukrainian cybercrime statutes.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ukraine-ransomware-arrests-cyber",
+    "publishedAt": "2026-11-19T13:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ukraine-arrests-ransomware-network-extorting-40m",
+      "article-a5f80651",
+      "a5f80651",
+      "ukraine-arrests-ransomware-network-extorting-40m-6ebab0"
+    ]
+  },
+  {
     "slug": "gatekeeper-asymmetry-makes-llms-more-vulnerable-7a2b859f",
     "title": "Gatekeeper Asymmetry Makes LLMs More Vulnerable",
     "summary": "The paper introduces gatekeeper asymmetry doom, asserting that when input vetting is weaker than processing, vulnerability is inevitable. Authors illustrate the principle with examples across security domains, showing limited input validation can cause catastrophic failures in powerful LLMs. The study urges stronger gatekeeping and hard-problem reliance to mitigate asymmetry in advanced AI systems.",
@@ -26,6 +85,24 @@ export const news: NewsBrief[] = [
       "article-7a2b859f",
       "7a2b859f",
       "gatekeeper-asymmetry-makes-llms-more-vulnerable-4ced8c"
+    ]
+  },
+  {
+    "slug": "cisco-expressway-devices-hacked-after-poc-release-3751e940",
+    "title": "Cisco Expressway Devices Hacked After PoC Release",
+    "summary": "Attackers compromised clustered Cisco Expressway devices at a Russian organization shortly after a public proof-of-concept was released. The flaw allowed authenticated remote code execution via malformed SIP messages, enabling attackers to gain privileged access and prepare lateral movement tools. Cisco issued a patch in the following security advisory, and security teams should update firmware and disable unused SIP services.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/",
+    "publishedAt": "2026-11-19T13:12:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-expressway-devices-hacked-after-poc-release",
+      "article-3751e940",
+      "3751e940",
+      "cisco-expressway-devices-hacked-after-poc-release-512afc"
     ]
   },
   {
@@ -125,6 +202,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-tests-edge-lockdown-mode-disabling-gpu-a-a4704323",
+    "title": "Microsoft Tests Edge Lockdown Mode Disabling GPU APIs",
+    "summary": "Microsoft is testing an Edge Lockdown Mode that disables WebGL, WebGL2, and WebGPU APIs to shrink the browser attack surface. The feature removes GPU-accelerated rendering paths that could be leveraged for memory corruption or side-channel attacks, preserving core functionality. Microsoft plans to roll out the mode in a future update; security teams should monitor release notes for configuration options.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
+    "publishedAt": "2026-11-19T11:46:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-tests-edge-lockdown-mode-disabling-gpu-a",
+      "article-a4704323",
+      "a4704323",
+      "microsoft-tests-edge-lockdown-mode-disabling-gpu-a-5f79b7",
+      "microsoft-tests-edge-lockdown-mode-disabling-gpu-apis"
+    ]
+  },
+  {
     "slug": "backbox-linux-10-brings-new-hacking-tools-and-ubun-6d23a266",
     "title": "BackBox Linux 10 brings new hacking tools and Ubuntu 26.04 support",
     "summary": "BackBox Linux is a free, open source penetration testing distribution made by BackBox, a non-profit community project that keeps its own repositories of ethical hacking tools. On November 19 the project released version 10, codenamed Resolute Raccoon. It’s built for compatibility with Ubuntu 26.04 LTS and ships with the Linux 7.0 kernel and the Xfce 4.20 desktop.",
@@ -177,6 +273,25 @@ export const news: NewsBrief[] = [
       "article-1a0c32e8",
       "1a0c32e8",
       "splunk-releases-patches-for-140-vulnerabilities-317d2f"
+    ]
+  },
+  {
+    "slug": "microsoft-issues-workaround-for-office-launch-issu-86b6f61b",
+    "title": "Microsoft Issues Workaround for Office Launch Issues Post-Hotpatch",
+    "summary": "Microsoft confirmed a Windows 11 hotpatch caused installation and launch failures in Office and other third-party apps. The problem originates from a corrupted registry update that interferes with startup, but does not expose data or allow code execution.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
+    "publishedAt": "2026-11-19T10:35:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-issues-workaround-for-office-launch-issu",
+      "article-86b6f61b",
+      "86b6f61b",
+      "microsoft-issues-workaround-for-office-launch-issu-7d3ddb",
+      "microsoft-issues-workaround-for-office-launch-issues-post-ho"
     ]
   },
   {
@@ -1504,6 +1619,25 @@ export const news: NewsBrief[] = [
       "article-6e665e31",
       "6e665e31",
       "coinbase-blocks-4-7m-transfers-to-deepfake-scam-28cf16"
+    ]
+  },
+  {
+    "slug": "strike-graph-unveils-ai-for-continuous-compliance-04bc5d59",
+    "title": "Strike Graph Unveils AI for Continuous Compliance Evidence",
+    "summary": "Strike Graph introduced an agentic AI platform that automatically gathers compliance evidence from existing systems via APIs, eliminating manual collection. The solution maps data to over 30 regulatory frameworks, providing a single source of truth without duplicating effort across tools. Users integrate the AI into their toolchain, and the platform offers dashboards and export options for audit readiness.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool",
+    "publishedAt": "2026-11-18T20:45:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "strike-graph-unveils-ai-for-continuous-compliance",
+      "article-04bc5d59",
+      "04bc5d59",
+      "strike-graph-unveils-ai-for-continuous-compliance-11523c",
+      "strike-graph-unveils-ai-for-continuous-compliance-evidence"
     ]
   },
   {
@@ -9635,141 +9769,6 @@ export const news: NewsBrief[] = [
       "article-75c65644",
       "75c65644",
       "meta-faces-887m-fine-over-android-photo-access-3f3ad7"
-    ]
-  },
-  {
-    "slug": "bundeswehr-removes-quantum-systems-drone-grounding-d5c3ffdc",
-    "title": "Bundeswehr Removes Quantum Systems Drone Grounding",
-    "summary": "Germany’s Bundeswehr lifted the precautionary grounding of Quantum Systems reconnaissance drones after a server cyber incident. The incident involved unauthorized access to a Quantum Systems server, exposing supply-chain telemetry data but no confirmed compromise of drone firmware. Operators should review supply-chain risk telemetry and ensure firmware integrity checks are in place to mitigate future server-side threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://www.cybernewsai.com/blog/quantum-systems-drones-bundeswehr-malware-scare",
-    "publishedAt": "2026-11-14T17:45:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bundeswehr-removes-quantum-systems-drone-grounding",
-      "article-d5c3ffdc",
-      "d5c3ffdc",
-      "bundeswehr-removes-quantum-systems-drone-grounding-5c4859"
-    ]
-  },
-  {
-    "slug": "bundeswehr-removes-grounding-on-quantum-systems-dr-1fa9f641",
-    "title": "Bundeswehr Removes Grounding on Quantum Systems Drones",
-    "summary": "A server cyber incident prompted the German Bundeswehr to temporarily ground Quantum Systems reconnaissance drones. The incident exposed supply-chain risk telemetry gaps, though no direct compromise of drone firmware was reported, and no CVE was cited. The Bundeswehr lifted the grounding after remediation and now recommends continuous supply-chain monitoring for future deployments.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/quantum-systems-drones-bundeswehr-malware-scare",
-    "publishedAt": "2026-11-14T17:45:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bundeswehr-removes-grounding-on-quantum-systems-dr",
-      "article-1fa9f641",
-      "1fa9f641",
-      "bundeswehr-removes-grounding-on-quantum-systems-dr-240f34",
-      "bundeswehr-removes-grounding-on-quantum-systems-drones"
-    ]
-  },
-  {
-    "slug": "eslint-terminates-paid-contributor-program-amid-ai-fa9895eb",
-    "title": "ESLint Terminates Paid Contributor Program Amid AI Impact",
-    "summary": "ESLint has discontinued its paid contributor program as AI-generated code increases maintenance overhead for open-source projects. The decision follows broader industry shifts, with projects from Rust to Godot and curl tightening contribution rules to manage quality and security risks. Maintainers are encouraged to adopt stricter code review processes and automated AI-code detection tools to preserve project integrity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/eslint-ends-paid-contributor-program",
-    "publishedAt": "2026-11-14T17:27:29.411Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eslint-terminates-paid-contributor-program-amid-ai",
-      "article-fa9895eb",
-      "fa9895eb",
-      "eslint-terminates-paid-contributor-program-amid-ai-31073e",
-      "eslint-terminates-paid-contributor-program-amid-ai-impact"
-    ]
-  },
-  {
-    "slug": "cursor-breach-exposes-5-000-developers-via-malicio-df4c261a",
-    "title": "Cursor Breach Exposes 5,000 Developers via Malicious Claude Code Extension",
-    "summary": "Attackers compromised Fireworks AI credentials to distribute a malicious Claude Code extension through Cursor's marketplace, targeting developers using the platform. Insufficient third-party extension validation let credential-stealing code run with elevated privileges, exposing roughly 5,000 developers to hidden SSH backdoors. Cursor patched marketplace authentication and urged users to uninstall the rogue extension, revoke compromised keys, and reset Fireworks AI credentials.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
-    "publishedAt": "2026-11-14T17:27:25.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/cursor-breach-fireworks-ai-malicious-claude-code"
-      }
-    ],
-    "aliases": [
-      "cursor-breach-exposes-5-000-developers-via-malicio",
-      "article-df4c261a",
-      "df4c261a",
-      "cursor-breach-exposes-5-000-developers-via-malicio-1baa8d",
-      "cursor-breach-exposes-5-000-developers-via-malicious-claude-"
-    ]
-  },
-  {
-    "slug": "schneier-announces-upcoming-speaking-engagements-527b2d00",
-    "title": "Schneier Announces Upcoming Speaking Engagements",
-    "summary": "Schneier announces upcoming speaking engagements at Catalyst Summit in Brampton, Ontario, Canada, on November 18, 2026, and at QT Qonference 2026 in Toronto, Ontario, Canada, on November 19, 2026, as part of his public outreach. The schedule is maintained and updated on his website, which also hosts additional event details. No technical vulnerabilities or incidents are reported in this announcement.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html",
-    "publishedAt": "2026-11-14T17:02:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "schneier-announces-upcoming-speaking-engagements",
-      "article-527b2d00",
-      "527b2d00",
-      "schneier-announces-upcoming-speaking-engagements-2070f2"
-    ]
-  },
-  {
-    "slug": "us-disrupts-north-korean-facestealer-crypto-theft-d875fe40",
-    "title": "US Disrupts North Korean FaceStealer Crypto Theft",
-    "summary": "U.S. authorities disrupted a North Korean social-engineering campaign named FaceStealer that stole over $400 million in cryptocurrency. The operation exploited phishing emails and credential harvesting to gain wallet access, enabling large-scale transfers to untraceable addresses. Affected actors should immediately revoke compromised credentials, monitor wallet activity, and apply multi-factor authentication to mitigate future theft.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
-    "publishedAt": "2026-11-14T15:15:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-disrupts-north-korean-facestealer-crypto-theft",
-      "article-d875fe40",
-      "d875fe40",
-      "us-disrupts-north-korean-facestealer-crypto-theft-4e6507"
-    ]
-  },
-  {
-    "slug": "ai-overreliance-threatens-cybersecurity-effectiven-c2b1397a",
-    "title": "AI Overreliance Threatens Cybersecurity Effectiveness",
-    "summary": "Overreliance on AI in security operations risks eroding creativity, clear communication, and critical thinking when playbooks are absent. The article argues that automated decision-making can blind analysts to nuanced threat indicators, reducing adaptive response capabilities. Security teams should balance AI tools with human oversight, maintain playbooks, and regularly validate model outputs to preserve analytical rigor.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
-    "publishedAt": "2026-11-14T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-overreliance-threatens-cybersecurity-effectiven",
-      "article-c2b1397a",
-      "c2b1397a",
-      "ai-overreliance-threatens-cybersecurity-effectiven-565c02",
-      "ai-overreliance-threatens-cybersecurity-effectiveness"
     ]
   }
 ];

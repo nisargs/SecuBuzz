@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 13:29:16 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 14:47:44 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Nvidia Denies Gentlemen Ransomware Claim</title>
+      <link>https://secubuzz.com/news/nvidia-denies-gentlemen-ransomware-claim-a06839da</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-denies-gentlemen-ransomware-claim-a06839da</guid>
+      <description><![CDATA[Gentlemen ransomware group listed Nvidia as a victim, alleging a compromise of its systems. No evidence of exploitation or data exfiltration was found, and the claim lacks supporting proof of a vulnerability or breach. Nvidia confirmed no compromise and urged stakeholders to monitor for potential phishing or credential theft attempts.]]></description>
+      <pubDate>Thu, 19 Nov 2026 14:17:32 GMT</pubDate>
+      <source url="https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>ARMORY CASTLE Exploits vSphere</title>
+      <link>https://secubuzz.com/news/armory-castle-exploits-vsphere-f240c9be</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/armory-castle-exploits-vsphere-f240c9be</guid>
+      <description><![CDATA[Written by: Jayson Frost, Bryce Greathouse, Dhanesh Kizhakkinan, John Palmisano, Steve Rasch, Daniel Sislo, John Wolfram Introduction On Oct. 15, 2026, Mandiant and Google Threat Intelligence Group (GTIG) published a blog post detailing recent activity in which the suspected PRC-nexus threat actor ARMORY CASTLE (formerly tracked as UNC5221) exploited CVE-2026-102764, a zero-day vulnerability in BeyondTrust Remote Support, which was patched in BT26-05 .]]></description>
+      <pubDate>Thu, 19 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/">Google Threat Intelligence</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Ukraine Arrests Ransomware Network Extorting $40M</title>
+      <link>https://secubuzz.com/news/ukraine-arrests-ransomware-network-extorting-40m-a5f80651</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-arrests-ransomware-network-extorting-40m-a5f80651</guid>
+      <description><![CDATA[Ukrainian authorities arrested four suspects linked to an international ransomware network that extorted over $40 million from U.S. oil and healthcare firms. The group used credential theft and encrypted data to demand ransom, targeting critical infrastructure and causing significant financial loss. Law enforcement seized ransom payments and seized infrastructure, and the operators face prosecution under Ukrainian cybercrime statutes.]]></description>
+      <pubDate>Thu, 19 Nov 2026 13:30:00 GMT</pubDate>
+      <source url="https://therecord.media/ukraine-ransomware-arrests-cyber">The Record</source>
+      <category>Ransomware</category>
+    </item>
     <item>
       <title>Gatekeeper Asymmetry Makes LLMs More Vulnerable</title>
       <link>https://secubuzz.com/news/gatekeeper-asymmetry-makes-llms-more-vulnerable-7a2b859f</link>
@@ -15,6 +42,15 @@
       <pubDate>Thu, 19 Nov 2026 13:19:10 GMT</pubDate>
       <source url="https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/">Check Point Research</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Cisco Expressway Devices Hacked After PoC Release</title>
+      <link>https://secubuzz.com/news/cisco-expressway-devices-hacked-after-poc-release-3751e940</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-expressway-devices-hacked-after-poc-release-3751e940</guid>
+      <description><![CDATA[Attackers compromised clustered Cisco Expressway devices at a Russian organization shortly after a public proof-of-concept was released. The flaw allowed authenticated remote code execution via malformed SIP messages, enabling attackers to gain privileged access and prepare lateral movement tools. Cisco issued a patch in the following security advisory, and security teams should update firmware and disable unused SIP services.]]></description>
+      <pubDate>Thu, 19 Nov 2026 13:12:20 GMT</pubDate>
+      <source url="https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/">SecurityWeek</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>CISA Warns Hackers Are Actively Exploiting Four Flaws in Synology, LiteLLM, Apache Axis and REDCap</title>
@@ -62,6 +98,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Microsoft Tests Edge Lockdown Mode Disabling GPU APIs</title>
+      <link>https://secubuzz.com/news/microsoft-tests-edge-lockdown-mode-disabling-gpu-a-a4704323</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-tests-edge-lockdown-mode-disabling-gpu-a-a4704323</guid>
+      <description><![CDATA[Microsoft is testing an Edge Lockdown Mode that disables WebGL, WebGL2, and WebGPU APIs to shrink the browser attack surface. The feature removes GPU-accelerated rendering paths that could be leveraged for memory corruption or side-channel attacks, preserving core functionality. Microsoft plans to roll out the mode in a future update; security teams should monitor release notes for configuration options.]]></description>
+      <pubDate>Thu, 19 Nov 2026 11:46:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>BackBox Linux 10 brings new hacking tools and Ubuntu 26.04 support</title>
       <link>https://secubuzz.com/news/backbox-linux-10-brings-new-hacking-tools-and-ubun-6d23a266</link>
       <guid isPermaLink="true">https://secubuzz.com/news/backbox-linux-10-brings-new-hacking-tools-and-ubun-6d23a266</guid>
@@ -86,6 +131,15 @@
       <description><![CDATA[Splunk released security updates addressing nearly 140 critical and high-severity flaws across its three core products. The vulnerabilities enabled authentication bypass, remote code execution, and privilege escalation, with CVSS scores ranging from 7.0 to 9.8, and public proof-of-concept exploits were available for several. All affected products now ship patched versions; administrators should apply the updates immediately to mitigate the risks.]]></description>
       <pubDate>Thu, 19 Nov 2026 10:41:05 GMT</pubDate>
       <source url="https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Issues Workaround for Office Launch Issues Post-Hotpatch</title>
+      <link>https://secubuzz.com/news/microsoft-issues-workaround-for-office-launch-issu-86b6f61b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-issues-workaround-for-office-launch-issu-86b6f61b</guid>
+      <description><![CDATA[Microsoft confirmed a Windows 11 hotpatch caused installation and launch failures in Office and other third-party apps. The problem originates from a corrupted registry update that interferes with startup, but does not expose data or allow code execution.]]></description>
+      <pubDate>Thu, 19 Nov 2026 10:35:05 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -401,60 +455,6 @@
       <description><![CDATA[An update for kpatch-patch-5_14_0-687_10_1 and kpatch-patch-5_14_0-687_42_1 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Thu, 19 Nov 2026 01:28:57 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100522">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100560: Important: Java 11 OpenJDK ELS Security Update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100560-important-java-11-openjdk-els-sec-128b95f5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100560-important-java-11-openjdk-els-sec-128b95f5</guid>
-      <description><![CDATA[An update for java-11-openjdk with Extended Lifecycle Support is now available for Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8, and Red Hat Enterprise Linux 9.]]></description>
-      <pubDate>Thu, 19 Nov 2026 01:27:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100560">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical kpatch Patches for RHEL 8.8 SAP</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-kpatch-patches-for-rhel-8-57cd9eef</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-kpatch-patches-for-rhel-8-57cd9eef</guid>
-      <description><![CDATA[Red Hat released a critical security update for kpatch patches 4_18_0-477_107_1 through 4_18_0-477_161_1 on RHEL 8.8 Update Services for SAP Solutions. The update addresses multiple kernel patch vulnerabilities rated Critical by Red Hat Product Security, with CVSS base scores listed in the CVE references. Administrators should apply the patches immediately to mitigate potential remote code execution risks on affected systems.]]></description>
-      <pubDate>Thu, 19 Nov 2026 01:25:07 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100524">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical kpatch Patches for RHEL 9.2 SAP</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-kpatch-patches-for-rhel-1f98b6fb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-kpatch-patches-for-rhel-1f98b6fb</guid>
-      <description><![CDATA[Red Hat issued a critical security update for kpatch patches 5_14_0-284_134_1 through 5_14_0-284_188_1 on RHEL 9.2 Update Services for SAP Solutions. The patches fix kernel vulnerabilities rated Critical by Red Hat Product Security, with CVSS base scores provided in the CVE references. System administrators should apply the updates immediately to prevent potential remote code execution on affected systems.]]></description>
-      <pubDate>Thu, 19 Nov 2026 01:23:45 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100521">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100496: Critical: Red Hat OpenStack Platform 16.2 (openstack-manila) security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100496-critical-red-hat-openstack-platfo-80c0de29</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100496-critical-red-hat-openstack-platfo-80c0de29</guid>
-      <description><![CDATA[An update for openstack-manila is now available for Red Hat OpenStack Platform 16.2 (Train). Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 19 Nov 2026 01:12:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100496">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical java-21-openjdk Update for RHEL 10</title>
-      <link>https://secubuzz.com/news/critical-java-21-openjdk-update-for-rhel-10-8cb4ded1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-java-21-openjdk-update-for-rhel-10-8cb4ded1</guid>
-      <description><![CDATA[Red Hat released a critical security update for java-21-openjdk on RHEL 10, addressing multiple high-severity vulnerabilities. The update, rated as Critical by Red Hat Product Security, contains patches for CVEs that could allow remote code execution with a CVSS score above 8.0. Administrators should apply the update immediately or upgrade to the latest RHEL 10 release to ensure protection.]]></description>
-      <pubDate>Thu, 19 Nov 2026 00:46:34 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100568">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical java-17-openjdk Update for RHEL 8</title>
-      <link>https://secubuzz.com/news/critical-java-17-openjdk-update-for-rhel-8-56eabea4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-java-17-openjdk-update-for-rhel-8-56eabea4</guid>
-      <description><![CDATA[Red Hat issued a critical security update for java-17-openjdk on RHEL 8, fixing several high-severity flaws. The patches address CVEs that could enable remote code execution with CVSS scores exceeding 8.0, posing significant risk. Systems administrators should apply the update promptly or upgrade to the latest RHEL 8 release to mitigate the vulnerabilities.]]></description>
-      <pubDate>Thu, 19 Nov 2026 00:45:05 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100563">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
