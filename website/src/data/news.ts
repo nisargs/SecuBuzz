@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "critical-java-21-openjdk-update-for-rhel-10-8cb4ded1",
+    "title": "Critical java-21-openjdk Update for RHEL 10",
+    "summary": "Red Hat released a critical security update for java-21-openjdk on RHEL 10, addressing multiple high-severity vulnerabilities. The update, rated as Critical by Red Hat Product Security, contains patches for CVEs that could allow remote code execution with a CVSS score above 8.0. Administrators should apply the update immediately or upgrade to the latest RHEL 10 release to ensure protection.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100568",
+    "publishedAt": "2026-11-19T00:46:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-java-21-openjdk-update-for-rhel-10",
+      "article-8cb4ded1",
+      "8cb4ded1",
+      "critical-java-21-openjdk-update-for-rhel-10-2ee081"
+    ]
+  },
+  {
+    "slug": "critical-java-17-openjdk-update-for-rhel-8-56eabea4",
+    "title": "Critical java-17-openjdk Update for RHEL 8",
+    "summary": "Red Hat issued a critical security update for java-17-openjdk on RHEL 8, fixing several high-severity flaws. The patches address CVEs that could enable remote code execution with CVSS scores exceeding 8.0, posing significant risk. Systems administrators should apply the update promptly or upgrade to the latest RHEL 8 release to mitigate the vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100563",
+    "publishedAt": "2026-11-19T00:45:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-java-17-openjdk-update-for-rhel-8",
+      "article-56eabea4",
+      "56eabea4",
+      "critical-java-17-openjdk-update-for-rhel-8-2ee081"
+    ]
+  },
+  {
     "slug": "ransomware-brokers-shift-listings-to-private-chann-d5f645d4",
     "title": "Ransomware Brokers Shift Listings to Private Channels",
     "summary": "Ransomware gangs are moving access-broker listings from public dark-web forums to private channels, cutting early warning signals. ZeroFox data shows monthly victim counts rose from 573 in 2025 to 718 in 2026, while public listings dropped from 620 to 370 per quarter. Security teams should monitor private broker communications and employ network segmentation to limit lateral movement once compromised.",
@@ -141,6 +177,57 @@ export const news: NewsBrief[] = [
       "article-d767f87d",
       "d767f87d",
       "usn-9156-1-openjdk-21-vulnerabilities-7e7947"
+    ]
+  },
+  {
+    "slug": "usn-9155-1-openjdk-17-vulnerabilities-77fd7322",
+    "title": "USN-9155-1: OpenJDK 17 vulnerabilities",
+    "summary": "A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 17 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 17 did not correctly authorize users.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9155-1",
+    "publishedAt": "2026-11-18T22:10:58.000Z",
+    "cves": [
+      "CVE-2026-114938",
+      "CVE-2026-114939",
+      "CVE-2026-114940",
+      "CVE-2026-114942",
+      "CVE-2026-114943",
+      "CVE-2026-114944",
+      "CVE-2026-114945",
+      "CVE-2026-114946"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9155-1-openjdk-17-vulnerabilities",
+      "article-77fd7322",
+      "77fd7322",
+      "usn-9155-1-openjdk-17-vulnerabilities-7e794b"
+    ]
+  },
+  {
+    "slug": "usn-9154-1-openjdk-11-vulnerabilities-d20be6b4",
+    "title": "USN-9154-1: OpenJDK 11 vulnerabilities",
+    "summary": "A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 11 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114940) It was discovered that the Hotspot component of OpenJDK 11 did not correctly authorize users.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9154-1",
+    "publishedAt": "2026-11-18T22:09:36.000Z",
+    "cves": [
+      "CVE-2026-114939",
+      "CVE-2026-114940",
+      "CVE-2026-114943",
+      "CVE-2026-114944",
+      "CVE-2026-114946"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9154-1-openjdk-11-vulnerabilities",
+      "article-d20be6b4",
+      "d20be6b4",
+      "usn-9154-1-openjdk-11-vulnerabilities-7e794f"
     ]
   },
   {
@@ -1672,6 +1759,44 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "krita-heic-parsing-heap-overflow-enables-remote-co-0a4e83ea",
+    "title": "Krita HEIC Parsing Heap Overflow Enables Remote Code Execution",
+    "summary": "A heap-based buffer overflow in Krita’s HEIC file parser allows remote attackers to execute code when a user opens a malicious HEIC file. The flaw, requiring user interaction, has a CVSS score of 7.8 and permits arbitrary code execution on affected installations. Krita has released patches; users should update to the latest version to mitigate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1015/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "krita-heic-parsing-heap-overflow-enables-remote-co",
+      "article-0a4e83ea",
+      "0a4e83ea",
+      "krita-heic-parsing-heap-overflow-enables-remote-co-77f33c",
+      "krita-heic-parsing-heap-overflow-enables-remote-code-executi"
+    ]
+  },
+  {
+    "slug": "krita-tiff-parsing-out-of-bounds-write-enables-rem-99d7b1f5",
+    "title": "Krita TIFF Parsing Out-Of-Bounds Write Enables Remote Code Execution",
+    "summary": "An out-of-bounds write in Krita’s TIFF file parser permits remote attackers to execute code when a user opens a malicious TIFF file. The vulnerability requires user interaction, carries a CVSS score of 7.8, and enables arbitrary code execution on affected installations. Krita has issued patches; users should update to the latest version to mitigate the flaw.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1014/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "krita-tiff-parsing-out-of-bounds-write-enables-rem",
+      "article-99d7b1f5",
+      "99d7b1f5",
+      "krita-tiff-parsing-out-of-bounds-write-enables-rem-77f33c",
+      "krita-tiff-parsing-out-of-bounds-write-enables-remote-code-e"
     ]
   },
   {
@@ -9761,133 +9886,6 @@ export const news: NewsBrief[] = [
       "aa8c9959",
       "windows-graphics-kernel-privilege-escalation-cve-2-7431da",
       "windows-graphics-kernel-privilege-escalation-cve-2026-95953"
-    ]
-  },
-  {
-    "slug": "cve-2026-96126-windows-graphics-kernel-elevation-o-98b05095",
-    "title": "CVE-2026-96126 Windows Graphics Kernel Elevation of Privilege Vulnerability",
-    "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96126",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-96126"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-96126-windows-graphics-kernel-elevation-o",
-      "article-98b05095",
-      "98b05095",
-      "cve-2026-96126-windows-graphics-kernel-elevation-o-743184",
-      "cve-2026-96126-windows-graphics-kernel-elevation-of-privileg"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-windows-smb-rce-cve-2026-11-8ce88e42",
-    "title": "Microsoft Acknowledges Windows SMB RCE CVE-2026-119988",
-    "summary": "Microsoft has identified CVE-2026-119988 as a Windows SMB remote code execution flaw that could allow attackers to run code malicious SMB traffic. The vulnerability arises from improper handling of SMB protocol messages, and no public exploit or CVSS score has been disclosed. Microsoft issued an informational acknowledgement and urges users to monitor the MSRC for forthcoming patch or mitigation guidance.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108401",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-119988",
-      "CVE-2026-108401"
-    ],
-    "additionalSources": [
-      {
-        "source": "Microsoft MSRC",
-        "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119988"
-      }
-    ],
-    "aliases": [
-      "microsoft-acknowledges-windows-smb-rce-cve-2026-11",
-      "article-8ce88e42",
-      "8ce88e42",
-      "microsoft-acknowledges-windows-smb-rce-cve-2026-11-1ff730",
-      "microsoft-acknowledges-windows-smb-rce-cve-2026-119988"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-windows-kernel-transaction-6483cbda",
-    "title": "Microsoft Acknowledges Windows Kernel Transaction Manager Privilege Escalation",
-    "summary": "Microsoft acknowledges CVE-2026-94522, an elevation of privilege flaw in the Windows Kernel Transaction Manager. The vulnerability could allow privileged escalation if exploited, but no active exploitation has been reported. Microsoft has issued an informational update; administrators should monitor for official patch releases and apply them when available.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-94522",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-94522"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-windows-kernel-transaction",
-      "article-6483cbda",
-      "6483cbda",
-      "microsoft-acknowledges-windows-kernel-transaction-74325e",
-      "microsoft-acknowledges-windows-kernel-transaction-manager-pr"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-windows-kernel-privilege-es-8547433e",
-    "title": "Microsoft Acknowledges Windows Kernel Privilege Escalation Flaw",
-    "summary": "Microsoft acknowledges CVE-2026-109473, an elevation of privilege flaw in the Windows Kernel. The flaw could allow privileged escalation if exploited, but no active exploitation has been reported. Microsoft has issued an informational update; administrators should monitor for official patch releases and apply them when available.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109473",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-109473"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-windows-kernel-privilege-es",
-      "article-8547433e",
-      "8547433e",
-      "microsoft-acknowledges-windows-kernel-privilege-es-1ff6ba",
-      "microsoft-acknowledges-windows-kernel-privilege-escalation-f"
-    ]
-  },
-  {
-    "slug": "mior-skyfall-expose-amd-sev-snp-vm-data-theft-4c0accf3",
-    "title": "Mior, Skyfall Expose AMD SEV-SNP VM Data Theft",
-    "summary": "Mior and Skyfall attacks let malicious hosts read data inside AMD SEV-SNP-protected VMs, bypassing isolation from the server operator. Mior needs hypervisor and BIOS control to modify VM memory and forge signed reports; Skyfall exploits a kernel-level flaw; both are publicly disclosed and pose active RCE risk. Admins should apply firmware updates, restrict hypervisor access, and monitor anomalous memory activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-    "publishedAt": "2026-11-13T15:27:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mior-skyfall-expose-amd-sev-snp-vm-data-theft",
-      "article-4c0accf3",
-      "4c0accf3",
-      "mior-skyfall-expose-amd-sev-snp-vm-data-theft-3ce129"
-    ]
-  },
-  {
-    "slug": "typoprompting-turns-ai-site-typos-into-malware-tra-922df6c5",
-    "title": "TypoPrompting Turns AI Site Typos Into Malware Traps",
-    "summary": "Researchers discovered TypoPrompting attacks that redirect users typing mistyped AI tool URLs to fake verification pages hosting malware installers. The study mapped 186 lookalike domains across 27 AI brands, including Claude, ChatGPT, and Midjourney, exposing a widespread phishing surface. Defenders should enforce strict URL filtering, educate users on correct domain spelling, and deploy anti-phishing solutions to mitigate the risk.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/new-typoprompting-attacks/",
-    "publishedAt": "2026-11-13T15:24:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "typoprompting-turns-ai-site-typos-into-malware-tra",
-      "article-922df6c5",
-      "922df6c5",
-      "typoprompting-turns-ai-site-typos-into-malware-tra-17f84f",
-      "typoprompting-turns-ai-site-typos-into-malware-traps"
     ]
   }
 ];

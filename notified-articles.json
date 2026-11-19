@@ -5516,5 +5516,11 @@
   "https://research.checkpoint.com/2026/the-state-of-ransomware-q3-2026/",
   "https://www.helpnetsecurity.com/2026/11/19/microsoft-azure-linux-4/",
   "https://www.malwarebytes.com/blog/ai/2026/11/outage-or-attack-dont-let-social-media-fill-in-the-gaps",
-  "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0145322301.html"
+  "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0145322301.html",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1015/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1014/",
+  "https://access.redhat.com/errata/RHSA-2026:100568",
+  "https://access.redhat.com/errata/RHSA-2026:100563",
+  "https://ubuntu.com/security/notices/USN-9155-1",
+  "https://ubuntu.com/security/notices/USN-9154-1"
 ]

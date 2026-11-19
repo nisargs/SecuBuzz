@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 00:55:23 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 01:52:01 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Critical java-21-openjdk Update for RHEL 10</title>
+      <link>https://secubuzz.com/news/critical-java-21-openjdk-update-for-rhel-10-8cb4ded1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-java-21-openjdk-update-for-rhel-10-8cb4ded1</guid>
+      <description><![CDATA[Red Hat released a critical security update for java-21-openjdk on RHEL 10, addressing multiple high-severity vulnerabilities. The update, rated as Critical by Red Hat Product Security, contains patches for CVEs that could allow remote code execution with a CVSS score above 8.0. Administrators should apply the update immediately or upgrade to the latest RHEL 10 release to ensure protection.]]></description>
+      <pubDate>Thu, 19 Nov 2026 00:46:34 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100568">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Critical java-17-openjdk Update for RHEL 8</title>
+      <link>https://secubuzz.com/news/critical-java-17-openjdk-update-for-rhel-8-56eabea4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-java-17-openjdk-update-for-rhel-8-56eabea4</guid>
+      <description><![CDATA[Red Hat issued a critical security update for java-17-openjdk on RHEL 8, fixing several high-severity flaws. The patches address CVEs that could enable remote code execution with CVSS scores exceeding 8.0, posing significant risk. Systems administrators should apply the update promptly or upgrade to the latest RHEL 8 release to mitigate the vulnerabilities.]]></description>
+      <pubDate>Thu, 19 Nov 2026 00:45:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100563">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Ransomware Brokers Shift Listings to Private Channels</title>
       <link>https://secubuzz.com/news/ransomware-brokers-shift-listings-to-private-chann-d5f645d4</link>
@@ -59,6 +77,24 @@
       <description><![CDATA[A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 21 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 21 did not correctly authorize users.]]></description>
       <pubDate>Wed, 18 Nov 2026 22:12:23 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9156-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>USN-9155-1: OpenJDK 17 vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9155-1-openjdk-17-vulnerabilities-77fd7322</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9155-1-openjdk-17-vulnerabilities-77fd7322</guid>
+      <description><![CDATA[A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 17 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 17 did not correctly authorize users.]]></description>
+      <pubDate>Wed, 18 Nov 2026 22:10:58 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9155-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>USN-9154-1: OpenJDK 11 vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9154-1-openjdk-11-vulnerabilities-d20be6b4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9154-1-openjdk-11-vulnerabilities-d20be6b4</guid>
+      <description><![CDATA[A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 11 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114940) It was discovered that the Hotspot component of OpenJDK 11 did not correctly authorize users.]]></description>
+      <pubDate>Wed, 18 Nov 2026 22:09:36 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9154-1">Ubuntu Security Notices</source>
       <category>CVE</category>
     </item>
     <item>
@@ -420,42 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 13:31:24 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1171">Canadian Centre for Cyber Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Equinor Cyberattack Disrupts Internal Services</title>
-      <link>https://secubuzz.com/news/equinor-cyberattack-disrupts-internal-services-7ced0b19</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/equinor-cyberattack-disrupts-internal-services-7ced0b19</guid>
-      <description><![CDATA[A cyberattack targeted Equinor’s IT infrastructure, disrupting internal services while reportedly sparing oil and gas production. The intrusion likely involved unauthorized access to internal networks, though no data exfiltration has been confirmed. Security teams should isolate affected systems, conduct forensic analysis, and apply any available vendor patches to prevent further compromise.]]></description>
-      <pubDate>Wed, 18 Nov 2026 13:30:00 GMT</pubDate>
-      <source url="https://therecord.media/norway-equinor-cyberattack-energy">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Oracle Vulnerabilities Span Multiple Products</title>
-      <link>https://secubuzz.com/news/oracle-vulnerabilities-span-multiple-products-69bc02a2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/oracle-vulnerabilities-span-multiple-products-69bc02a2</guid>
-      <description><![CDATA[Oracle disclosed vulnerabilities in several products, including Helidon, JD Edwards EnterpriseOne Localizations, MySQL Cluster, MySQL Server, MySQL Workbench, Oracle APEX, Access Manager, Agile PLM, and Oracle Communications components. No CVE IDs or exploit details are given, but the flaws could allow unauthorized access or code execution. Oracle advises applying the available patches or following vendor guidance to mitigate the risks.]]></description>
-      <pubDate>Wed, 18 Nov 2026 12:51:56 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/oracle-corporation-security-advisory-av26-1170">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Impersonate Microsoft Exchange Online Alerts to Trick Users During Microsoft 365 Outage</title>
-      <link>https://secubuzz.com/news/hackers-impersonate-microsoft-exchange-online-aler-64aff37c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-impersonate-microsoft-exchange-online-aler-64aff37c</guid>
-      <description><![CDATA[Hackers used a real Microsoft 365 outage to send fake Exchange Online alerts claiming that four emails were being held and would be deleted unless recipients restored them. The messages borrowed a genuine Microsoft incident number and sent users through several redirects to a page that looked like Microsoft’s sign-in screen.]]></description>
-      <pubDate>Wed, 18 Nov 2026 12:23:15 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-impersonate-microsoft-exchange/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Pentesting Gaps Exposed by Early Exploitation</title>
-      <link>https://secubuzz.com/news/ai-pentesting-gaps-exposed-by-early-exploitation-0d3b07a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-pentesting-gaps-exposed-by-early-exploitation-0d3b07a7</guid>
-      <description><![CDATA[Attackers now exploit vulnerabilities before patches are released, with 23% of newly added exploits being active on or before disclosure. The report highlights that AI pentesting vendors are not interchangeable, as gaps often appear in logged-in flows, coverage, and production safety. Security teams should evaluate vendors against these criteria before engagement to ensure comprehensive coverage and reduce early exploitation risk.]]></description>
-      <pubDate>Wed, 18 Nov 2026 12:15:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html">The Hacker News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
