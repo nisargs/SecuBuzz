@@ -81,3 +81,8 @@ This document catalogs the 15 threat intelligence and vulnerability resources id
    - Rate-limit background polling to prevent battery drainage on physical Android/iOS devices.
 3. **OTA Deployability**:
    - Implement all API fetching in pure JavaScript/TypeScript (`fetch`) to ensure all new feature rollouts can be delivered instantly via `eas update --branch production` without requiring Google Play `.aab` reviews.
+
+---
+
+## 5. Related Directories & Tool Catalogs
+- For an expanded directory of 31 external search engines (including Exploit-DB, Shodan, Censys, Pulsedive, LeakIX, Grep.app, and VirusTotal) categorized by research domain and free-tier access, see [SECURITY_SEARCH_ENGINES_DIRECTORY.md](file:///c:/SecuBuzz/docs/SECURITY_SEARCH_ENGINES_DIRECTORY.md).
