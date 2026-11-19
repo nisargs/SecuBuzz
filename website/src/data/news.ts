@@ -11,6 +11,65 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "apache-roller-rce-exploited-without-authentication-557e2079",
+    "title": "Apache Roller RCE Exploited Without Authentication",
+    "summary": "Hackers are actively exploiting a critical Apache Roller RCE flaw that allows unauthenticated code execution on affected servers. CVE-2026-129448 affects Roller 4.0.0-6.1.4 and scores CVSS 3.1 9.8, classifying it as a high-risk zero-day. Administrators should immediately upgrade to the latest Roller release or apply the vendor-issued patch to mitigate the exploitation risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/apache-roller-rce-exploitation/",
+    "publishedAt": "2026-11-19T05:15:41.000Z",
+    "cves": [
+      "CVE-2026-129448"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apache-roller-rce-exploited-without-authentication",
+      "article-557e2079",
+      "557e2079",
+      "apache-roller-rce-exploited-without-authentication-686495"
+    ]
+  },
+  {
+    "slug": "php-warns-of-critical-security-flaws-affecting-all-17c05871",
+    "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
+    "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. \"These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting all supported PHP versions,\" the maintainers said.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
+    "publishedAt": "2026-11-19T04:33:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-warns-of-critical-security-flaws-affecting-all",
+      "article-17c05871",
+      "17c05871",
+      "php-warns-of-critical-security-flaws-affecting-all-2f1589",
+      "php-warns-of-critical-security-flaws-affecting-all-supported"
+    ]
+  },
+  {
+    "slug": "java4shell-exploited-disguised-as-chrome-traffic-99f8ae2d",
+    "title": "Java4Shell Exploited, Disguised as Chrome Traffic",
+    "summary": "Cloudflare’s Cloudforce One detected a Java4Shell RCE attempt that masqueraded as normal Google Chrome traffic in web logs. The exploit used CVE-2026-114938, with the source IP first scanning via a User-Agent header before sending the payload after 17 hours. Defenders should monitor anomalous User-Agent strings, apply the Java4Shell patch, and enforce strict input validation on Java services.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/java4shell-rce-flaw-exploited/",
+    "publishedAt": "2026-11-19T03:18:37.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "java4shell-exploited-disguised-as-chrome-traffic",
+      "article-99f8ae2d",
+      "99f8ae2d",
+      "java4shell-exploited-disguised-as-chrome-traffic-51b917"
+    ]
+  },
+  {
     "slug": "cve-2026-114938-openjdk-base64-decoder-intrinsic-o-ed5c5460",
     "title": "CVE-2026-114938 - OpenJDK Base64 Decoder Intrinsic Out-of-Bounds Write Issue",
     "summary": "Bulletin ID: 2026-189-AWS Publication Date: 11/18/2026 17:00 PM PST Description: AWS is aware of CVE-2026-114938, a memory issue in the Base64 decoder intrinsic of OpenJDK 17.0.6 and later on x86-64 processors that support AVX-512 VBMI. AWS is working to deploy the fix to affected AWS services Refer to the article for the most up-to-date and complete information.",
@@ -124,6 +183,44 @@ export const news: NewsBrief[] = [
       "215b1f62",
       "red-enterprise-linux-10-0-updates-fence-agents-wit-2ee084",
       "red-enterprise-linux-10-0-updates-fence-agents-with-critical"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100523-critical-kpatch-patch-5-14-0-427-7bffa221",
+    "title": "RHSA-2026:100523: Critical: kpatch-patch-5_14_0-427_100_1, kpatch-patch-5_14_0-427_113_1, kpatch-patch-5_14_0-427_126_1, kpatch-patch-5_14_0-427_146_1, and kpatch-patch-5_14_0-427_84_1 security update",
+    "summary": "An update for kpatch-patch-5_14_0-427_100_1, kpatch-patch-5_14_0-427_113_1, kpatch-patch-5_14_0-427_126_1, kpatch-patch-5_14_0-427_146_1, and kpatch-patch-5_14_0-427_84_1 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100523",
+    "publishedAt": "2026-11-19T01:29:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100523-critical-kpatch-patch-5-14-0-427",
+      "article-7bffa221",
+      "7bffa221",
+      "rhsa-2026-100523-critical-kpatch-patch-5-14-0-427-2ee080",
+      "rhsa-2026-100523-critical-kpatch-patch-5-14-0-427-100-1-kpat"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100522-critical-kpatch-patch-5-14-0-687-5864e497",
+    "title": "RHSA-2026:100522: Critical: kpatch-patch-5_14_0-687_10_1 and kpatch-patch-5_14_0-687_42_1 security update",
+    "summary": "An update for kpatch-patch-5_14_0-687_10_1 and kpatch-patch-5_14_0-687_42_1 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100522",
+    "publishedAt": "2026-11-19T01:28:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100522-critical-kpatch-patch-5-14-0-687",
+      "article-5864e497",
+      "5864e497",
+      "rhsa-2026-100522-critical-kpatch-patch-5-14-0-687-2ee080",
+      "rhsa-2026-100522-critical-kpatch-patch-5-14-0-687-10-1-and-k"
     ]
   },
   {
@@ -513,6 +610,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100570-critical-openjdk-21-0-13-1-securi-9dbb1b99",
+    "title": "RHSA-2026:100570: Critical: OpenJDK 21.0.13.1 Security Update for Windows Builds",
+    "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100570",
+    "publishedAt": "2026-11-18T21:20:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100570-critical-openjdk-21-0-13-1-securi",
+      "article-9dbb1b99",
+      "9dbb1b99",
+      "rhsa-2026-100570-critical-openjdk-21-0-13-1-securi-2ee081",
+      "rhsa-2026-100570-critical-openjdk-21-0-13-1-security-update-"
+    ]
+  },
+  {
     "slug": "smartermail-vulnerabilities-affect-builds-before-9-34e8ac4f",
     "title": "SmarterMail Vulnerabilities Affect Builds Before 9817",
     "summary": "SmarterMail versions prior to Build 9817 contain undisclosed vulnerabilities that could allow attackers to compromise the application. The Canadian Centre for Cyber Security issued advisory AV26-1177, urging administrators to review links and apply updates as soon as possible. Applying the latest SmarterMail release or patch mitigates the risk; security teams should verify installation and monitor for anomalous activity.",
@@ -529,6 +645,25 @@ export const news: NewsBrief[] = [
       "34e8ac4f",
       "smartermail-vulnerabilities-affect-builds-before-9-670f7b",
       "smartermail-vulnerabilities-affect-builds-before-9817"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100569-critical-openjdk-21-0-13-1-securi-07d3e719",
+    "title": "RHSA-2026:100569: Critical: OpenJDK 21.0.13.1 Security Update for Portable Linux Builds",
+    "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100569",
+    "publishedAt": "2026-11-18T21:04:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100569-critical-openjdk-21-0-13-1-securi",
+      "article-07d3e719",
+      "07d3e719",
+      "rhsa-2026-100569-critical-openjdk-21-0-13-1-securi-2ee081",
+      "rhsa-2026-100569-critical-openjdk-21-0-13-1-security-update-"
     ]
   },
   {
@@ -9712,150 +9847,6 @@ export const news: NewsBrief[] = [
       "article-2a2b5e9a",
       "2a2b5e9a",
       "chromium-cve-2026-126857-out-of-bounds-read-1fdbda"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-126863-use-after-free-exploit-ab882f7c",
-    "title": "Chromium CVE-2026-126863: Use-After-Free Exploit",
-    "summary": "Chromium’s CVE-2026-126863 is a use-after-free flaw that can be triggered in Microsoft Edge’s Chromium engine. The vulnerability arises from improper memory handling during object deallocation, potentially allowing attackers to execute arbitrary code; no public exploit has been reported. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126863",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126863"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-126863-use-after-free-exploit",
-      "article-ab882f7c",
-      "ab882f7c",
-      "chromium-cve-2026-126863-use-after-free-exploit-1fdbda"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-126864-use-after-free-vulnerabil-e9de9743",
-    "title": "Chromium CVE-2026-126864: Use-After-Free Vulnerability",
-    "summary": "Chromium’s CVE-2026-126864 is a use-after-free flaw that can be triggered in Microsoft Edge’s Chromium engine. The flaw results from improper memory handling during object deallocation, potentially enabling arbitrary code execution; no public exploit has been disclosed. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126864",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126864"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-126864-use-after-free-vulnerabil",
-      "article-e9de9743",
-      "e9de9743",
-      "chromium-cve-2026-126864-use-after-free-vulnerabil-1fdbda",
-      "chromium-cve-2026-126864-use-after-free-vulnerability"
-    ]
-  },
-  {
-    "slug": "chromium-uninitialized-resource-cve-2026-126858-6bbfba07",
-    "title": "Chromium Uninitialized Resource CVE-2026-126858",
-    "summary": "Chromium vulnerability CVE-2026-126858 involves an uninitialized resource that could lead to undefined behavior during rendering. The flaw is present in the Chromium engine and is mitigated by Microsoft Edge (Chromium-based) updates that incorporate the patched engine. Users should update to the latest Microsoft Edge release or apply the Chrome patch to ensure the uninitialized resource is properly handled.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126858",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126858"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-uninitialized-resource-cve-2026-126858",
-      "article-6bbfba07",
-      "6bbfba07",
-      "chromium-uninitialized-resource-cve-2026-126858-1fdbda"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-addresses-chromium-link-following-v-b165923e",
-    "title": "Microsoft Edge Addresses Chromium Link Following Vulnerability",
-    "summary": "Microsoft published a security advisory for Chromium-based Edge to address an upstream link following vulnerability. Originally assigned by Chrome as CVE-2026-126859, the vulnerability affects the underlying Chromium codebase ingested by Microsoft Edge. Security teams must update Microsoft Edge to the latest release incorporating the Google Chrome fixes for full mitigation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126859",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126859"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-addresses-chromium-link-following-v",
-      "article-b165923e",
-      "b165923e",
-      "microsoft-edge-addresses-chromium-link-following-v-1fdbda",
-      "microsoft-edge-addresses-chromium-link-following-vulnerabili"
-    ]
-  },
-  {
-    "slug": "chromium-use-after-free-cve-2026-126851-fixed-in-e-75f3303d",
-    "title": "Chromium Use-After-Free CVE-2026-126851 Fixed in Edge",
-    "summary": "Chromium’s use-after-free flaw, identified as CVE-2026-126851, could allow memory corruption in memory if exploited by an attacker. Microsoft Edge, built on Chromium, incorporates the same fix, eliminating the vulnerability in the browser’s rendering engine. Users should update to the latest Edge release to ensure the use-after-free issue is fully patched.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126851",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126851"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-use-after-free-cve-2026-126851-fixed-in-e",
-      "article-75f3303d",
-      "75f3303d",
-      "chromium-use-after-free-cve-2026-126851-fixed-in-e-1fdbda",
-      "chromium-use-after-free-cve-2026-126851-fixed-in-edge"
-    ]
-  },
-  {
-    "slug": "chromium-use-after-free-cve-2026-126852-fixed-397c08a3",
-    "title": "Chromium Use-After-Free CVE-2026-126852 Fixed",
-    "summary": "A use-after-free flaw, CVE-2026-126852, was discovered in Chromium, affecting Microsoft Edge (Chromium-based) browsers. The vulnerability allows memory corruption that could lead to arbitrary code execution if exploited, but no active exploitation has been reported. Microsoft Edge incorporates the Chromium patch, and users should update to the latest release; Google Chrome releases provide additional details.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126852",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126852"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-use-after-free-cve-2026-126852-fixed",
-      "article-397c08a3",
-      "397c08a3",
-      "chromium-use-after-free-cve-2026-126852-fixed-1fdbda"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-addresses-chromium-uninitialized-re-cb500912",
-    "title": "Microsoft Edge Addresses Chromium Uninitialized Resource CVE",
-    "summary": "Chromium vulnerability CVE-2026-126853 permits uninitialized resource usage that could cause memory corruption in browsers. The flaw stems from improper initialization of a shared memory buffer; no public exploit exists, but it could enable remote code execution if triggered. Microsoft Edge incorporates the Chromium patch automatically; users should update via Windows Update or the Edge browser to eliminate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126853",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126853"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-addresses-chromium-uninitialized-re",
-      "article-cb500912",
-      "cb500912",
-      "microsoft-edge-addresses-chromium-uninitialized-re-1fdbda",
-      "microsoft-edge-addresses-chromium-uninitialized-resource-cve"
     ]
   }
 ];
