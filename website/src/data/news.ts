@@ -11,6 +11,67 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "drupal-core-vulnerability-enables-remote-code-exec-7d44e06d",
+    "title": "Drupal Core Vulnerability Enables Remote Code Execution",
+    "summary": "A remote code execution flaw exists in Drupal core versions before 10.6.22, 11.3.22, and 11.4.13, allowing attackers to execute arbitrary code. The vulnerability, identified as SA-CORE-2026-017, permits unauthenticated exploitation and could compromise site integrity and data. Drupal administrators should apply the latest patch or upgrade to a supported version as soon as the update is released.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1186",
+    "publishedAt": "2026-11-19T19:29:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-core-vulnerability-enables-remote-code-exec",
+      "article-7d44e06d",
+      "7d44e06d",
+      "drupal-core-vulnerability-enables-remote-code-exec-1fb70b",
+      "drupal-core-vulnerability-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "vmware-vcenter-authentication-bypass-zero-day-expl-14ded22f",
+    "title": "VMware vCenter Authentication Bypass Zero-Day Exploited by Chinese APT",
+    "summary": "A China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom issued a patch. The flaw permits unauthenticated access to vCenter management interfaces, enabling attackers to execute privileged commands and potentially compromise virtual infrastructure. Administrators should apply Broadcom's patch immediately and enforce strict access controls to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
+    "publishedAt": "2026-11-19T19:21:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vmware-vcenter-authentication-bypass-zero-day-expl",
+      "article-14ded22f",
+      "14ded22f",
+      "vmware-vcenter-authentication-bypass-zero-day-expl-4b6fa8",
+      "vmware-vcenter-authentication-bypass-zero-day-exploited-by-c"
+    ]
+  },
+  {
+    "slug": "vmware-vcenter-vulnerabilities-exploited-in-wild-c-d742542e",
+    "title": "VMware vCenter Vulnerabilities Exploited in Wild (CVE-2026-123890)",
+    "summary": "Multiple VMware vCenter versions, including 9.1.x, 9.0.x, 8.0, and 7.0, contain vulnerabilities that have been exploited in the wild, such as CVE-2026-123890. The flaw allows attackers to gain unauthorized access to vCenter management functions, potentially enabling remote code execution and full control over virtual environments. VMware's VMSA-2026-0009 patch addresses CVE-2026-123890, CVE-2026-123891, and CVE-2026-123892; administrators should apply the update immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1185",
+    "publishedAt": "2026-11-19T19:02:48.000Z",
+    "cves": [
+      "CVE-2026-123890",
+      "CVE-2026-123891",
+      "CVE-2026-123892"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "vmware-vcenter-vulnerabilities-exploited-in-wild-c",
+      "article-d742542e",
+      "d742542e",
+      "vmware-vcenter-vulnerabilities-exploited-in-wild-c-7852fc",
+      "vmware-vcenter-vulnerabilities-exploited-in-wild-cve-2026-12"
+    ]
+  },
+  {
     "slug": "cisa-nominee-losapio-vows-to-bolster-cyber-defense-dc560534",
     "title": "CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack",
     "summary": "President Donald Trump’s pick to lead the Cybersecurity and Infrastructure Security Agency pledged to lawmakers to uncover any “gaps” within the organization while also denying the Capitol came under attack on January 6, 2021.",
@@ -160,6 +221,25 @@ export const news: NewsBrief[] = [
       "c92b0942",
       "linux-kernel-vulnerabilities-addressed-in-usn-9173-7e786a",
       "linux-kernel-vulnerabilities-addressed-in-usn-9173-1"
+    ]
+  },
+  {
+    "slug": "linux-kernel-vulnerabilities-affect-multiple-subsy-0d52dedf",
+    "title": "Linux Kernel Vulnerabilities Affect Multiple Subsystems",
+    "summary": "A set of kernel flaws discovered in the Linux kernel could allow attackers to compromise affected systems. The vulnerabilities span numerous subsystems, including device drivers, architecture modules, and cryptographic components, potentially enabling privilege escalation or denial of service. Kernel maintainers have released an update correcting these issues; administrators should apply the patch promptly to secure their environments.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9174-1",
+    "publishedAt": "2026-11-19T15:12:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-vulnerabilities-affect-multiple-subsy",
+      "article-0d52dedf",
+      "0d52dedf",
+      "linux-kernel-vulnerabilities-affect-multiple-subsy-7e7866",
+      "linux-kernel-vulnerabilities-affect-multiple-subsystems"
     ]
   },
   {
@@ -9682,78 +9762,6 @@ export const news: NewsBrief[] = [
       "article-93f2f541",
       "93f2f541",
       "ai-agents-target-litellm-dify-for-api-keys-782911"
-    ]
-  },
-  {
-    "slug": "top-ten-caasm-tools-ranked-for-2026-5a2d540f",
-    "title": "Top Ten CAASM Tools Ranked for 2026",
-    "summary": "The article ranks the top ten CAASM tools for 2026, comparing each platform’s capabilities and market position. It explains how CAASM solutions aggregate asset data from tools, merge duplicates, and enable queries, resolving inconsistencies across EDRs and scanners. The piece recommends evaluating tools on integration depth, data accuracy, and user experience, and suggests pilot testing before full deployment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-caasm-tools/",
-    "publishedAt": "2026-11-16T07:19:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-ten-caasm-tools-ranked-for-2026",
-      "article-5a2d540f",
-      "5a2d540f",
-      "top-ten-caasm-tools-ranked-for-2026-3ce00b"
-    ]
-  },
-  {
-    "slug": "top-10-asm-easm-tools-ranked-for-2026-28f402fb",
-    "title": "Top 10 ASM/EASM Tools Ranked for 2026",
-    "summary": "The 2026 ASM/EASM market is divided into continuous-discovery engines, suite-integrated modules, and internet-scan authorities, each assessed for reachability and attribution accuracy. Palo Alto Cortex and other vendors lead the ranking for continuous-discovery capabilities, while the list stresses accurate asset ownership mapping. Defenders should use the rankings to prioritize continuous monitoring, validate inventories, and integrate surface modules into operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-attack-surface-management/",
-    "publishedAt": "2026-11-16T07:13:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-10-asm-easm-tools-ranked-for-2026",
-      "article-28f402fb",
-      "28f402fb",
-      "top-10-asm-easm-tools-ranked-for-2026-3b9d2d"
-    ]
-  },
-  {
-    "slug": "2026-ctem-platform-rankings-revealed-4506872f",
-    "title": "2026 CTEM Platform Rankings Revealed",
-    "summary": "The article presents a 2026 ranking of Continuous Threat Exposure Management platforms, evaluating their coverage across the five-stage CTEM operating rhythm. It emphasizes that no single product fully implements all stages, with validation often omitted, distinguishing exposure management from vulnerability management. Readers are guided to assess each platform’s stage coverage and validation capabilities before procurement decisions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-ctem-platforms/",
-    "publishedAt": "2026-11-16T07:08:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "2026-ctem-platform-rankings-revealed",
-      "article-4506872f",
-      "4506872f",
-      "2026-ctem-platform-rankings-revealed-30b100"
-    ]
-  },
-  {
-    "slug": "2026-risk-based-vulnerability-tool-rankings-1e125d39",
-    "title": "2026 Risk-Based Vulnerability Tool Rankings",
-    "summary": "The article lists the top 2026 risk-based vulnerability management tools, highlighting how they re-rank vulnerabilities by exploitation evidence, asset criticality, and reachability. The review notes that native scoring is now embedded in scanners, with aggregation layers and exposure-math engines augmenting the core platforms. Decision makers should evaluate how each tool integrates aggregation and exposure modeling to align with asset prioritization.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-rbvm-tools/",
-    "publishedAt": "2026-11-16T07:03:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "2026-risk-based-vulnerability-tool-rankings",
-      "article-1e125d39",
-      "1e125d39",
-      "2026-risk-based-vulnerability-tool-rankings-25242a"
     ]
   }
 ];

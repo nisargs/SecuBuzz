@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 18:45:23 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 19:45:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Drupal Core Vulnerability Enables Remote Code Execution</title>
+      <link>https://secubuzz.com/news/drupal-core-vulnerability-enables-remote-code-exec-7d44e06d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-vulnerability-enables-remote-code-exec-7d44e06d</guid>
+      <description><![CDATA[A remote code execution flaw exists in Drupal core versions before 10.6.22, 11.3.22, and 11.4.13, allowing attackers to execute arbitrary code. The vulnerability, identified as SA-CORE-2026-017, permits unauthenticated exploitation and could compromise site integrity and data. Drupal administrators should apply the latest patch or upgrade to a supported version as soon as the update is released.]]></description>
+      <pubDate>Thu, 19 Nov 2026 19:29:19 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1186">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>VMware vCenter Authentication Bypass Zero-Day Exploited by Chinese APT</title>
+      <link>https://secubuzz.com/news/vmware-vcenter-authentication-bypass-zero-day-expl-14ded22f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vmware-vcenter-authentication-bypass-zero-day-expl-14ded22f</guid>
+      <description><![CDATA[A China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom issued a patch. The flaw permits unauthenticated access to vCenter management interfaces, enabling attackers to execute privileged commands and potentially compromise virtual infrastructure. Administrators should apply Broadcom's patch immediately and enforce strict access controls to mitigate exploitation.]]></description>
+      <pubDate>Thu, 19 Nov 2026 19:21:06 GMT</pubDate>
+      <source url="https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>VMware vCenter Vulnerabilities Exploited in Wild (CVE-2026-123890)</title>
+      <link>https://secubuzz.com/news/vmware-vcenter-vulnerabilities-exploited-in-wild-c-d742542e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vmware-vcenter-vulnerabilities-exploited-in-wild-c-d742542e</guid>
+      <description><![CDATA[Multiple VMware vCenter versions, including 9.1.x, 9.0.x, 8.0, and 7.0, contain vulnerabilities that have been exploited in the wild, such as CVE-2026-123890. The flaw allows attackers to gain unauthorized access to vCenter management functions, potentially enabling remote code execution and full control over virtual environments. VMware's VMSA-2026-0009 patch addresses CVE-2026-123890, CVE-2026-123891, and CVE-2026-123892; administrators should apply the update immediately.]]></description>
+      <pubDate>Thu, 19 Nov 2026 19:02:48 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1185">Canadian Centre for Cyber Security</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack</title>
       <link>https://secubuzz.com/news/cisa-nominee-losapio-vows-to-bolster-cyber-defense-dc560534</link>
@@ -77,6 +104,15 @@
       <description><![CDATA[The USN-9173-1 notice reports several Linux kernel vulnerabilities that could let attackers compromise affected systems. These defects involve device drivers, architecture modules, and cryptographic APIs, arising from improper handling of privileged operations and potentially enabling privilege escalation or denial of service. Kernel maintainers have issued patches; administrators should update to the latest kernel to mitigate the risk.]]></description>
       <pubDate>Thu, 19 Nov 2026 15:13:04 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9173-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Linux Kernel Vulnerabilities Affect Multiple Subsystems</title>
+      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-affect-multiple-subsy-0d52dedf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-affect-multiple-subsy-0d52dedf</guid>
+      <description><![CDATA[A set of kernel flaws discovered in the Linux kernel could allow attackers to compromise affected systems. The vulnerabilities span numerous subsystems, including device drivers, architecture modules, and cryptographic components, potentially enabling privilege escalation or denial of service. Kernel maintainers have released an update correcting these issues; administrators should apply the patch promptly to secure their environments.]]></description>
+      <pubDate>Thu, 19 Nov 2026 15:12:43 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9174-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -420,42 +456,6 @@
       <pubDate>Thu, 19 Nov 2026 08:51:32 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-deploy-overlord-rat/">Cyber Security News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Ruby Fixes 7 Regex/String Flaws, Warns 5 RCE PoCs</title>
-      <link>https://secubuzz.com/news/ruby-fixes-7-regex-string-flaws-warns-5-rce-pocs-c6ac8bc7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ruby-fixes-7-regex-string-flaws-warns-5-rce-pocs-c6ac8bc7</guid>
-      <description><![CDATA[Ruby released patches for seven memory-safety flaws in its regular expression engine and string case-conversion code. Five of those defects have proof-of-concept exploits that allow crafted input to trigger remote code execution on affected systems. The maintainers advise users to upgrade to the fixed Ruby versions immediately to eliminate the RCE risk.]]></description>
-      <pubDate>Thu, 19 Nov 2026 08:42:11 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ruby2ßhell: Critical One-Byte Heap Overflow in Ruby Could Allow RCE Attacks</title>
-      <link>https://secubuzz.com/news/ruby2-hell-critical-one-byte-heap-overflow-in-ruby-ff7850cf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ruby2-hell-critical-one-byte-heap-overflow-in-ruby-ff7850cf</guid>
-      <description><![CDATA[Ruby has patched a critical memory corruption flaw that can allow remote code execution (RCE) on vulnerable servers. Tracked as GHSA-34m4-m9fh-gqp5 and named ruby2ßhell by Veria Labs, the flaw affects Ruby’s string case conversion code.]]></description>
-      <pubDate>Thu, 19 Nov 2026 08:41:39 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ruby2shell-rce/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Splunk Fixes Critical RCE and Auth Bypass in SOAR</title>
-      <link>https://secubuzz.com/news/splunk-fixes-critical-rce-and-auth-bypass-in-soar-7a8bfe7e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/splunk-fixes-critical-rce-and-auth-bypass-in-soar-7a8bfe7e</guid>
-      <description><![CDATA[Splunk released patches for its SOAR and Enterprise platforms to address a critical remote code execution flaw and a separate authentication bypass. The SOAR vulnerability, CVE-2026-131253, scored 9.9/10 and requires privileged accounts, while the Enterprise flaw, CVE-2026-76535, allows unauthenticated users to execute searches. Administrators should apply the latest updates immediately to eliminate the high-risk code execution and privilege escalation vectors.]]></description>
-      <pubDate>Thu, 19 Nov 2026 08:36:42 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/splunk-patches-vulnerabilities/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ruby Releases Patch for Seven RCE Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ruby-releases-patch-for-seven-rce-vulnerabilities-6c94ef26</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ruby-releases-patch-for-seven-rce-vulnerabilities-6c94ef26</guid>
-      <description><![CDATA[Ruby 4.0.10, 3.4.13, and 3.3.14 were updated to fix seven vulnerabilities in the language’s regex engine and string case-conversion code. The flaws enable remote code execution by allowing attackers to run arbitrary code within vulnerable Ruby processes, with proof-of-concept demonstrations already available. Users should upgrade to the patched releases immediately to prevent exploitation of the critical RCE vectors.]]></description>
-      <pubDate>Thu, 19 Nov 2026 08:32:04 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ruby-patches-7-security-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
