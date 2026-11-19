@@ -11,6 +11,48 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ruby-regex-and-case-conversion-vulnerabilities-exp-3c5ea493",
+    "title": "Ruby Regex and Case Conversion Vulnerabilities Expose RCE Risk",
+    "summary": "Ruby maintainers released patches for seven memory-safety flaws in CRuby’s regex engine and string case conversion, including CVE-2026-132825, affecting Ruby versions before 4.0.10, 3.4.13, and 3.3.14. The bugs let unauthenticated actors crash, read memory, or execute code when processing third-party input, potentially exposing Rack-based apps like Rails and Sinatra. All affected releases should upgrade immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-193-aws/",
+    "publishedAt": "2026-11-19T23:06:34.000Z",
+    "cves": [
+      "CVE-2026-132825"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ruby-regex-and-case-conversion-vulnerabilities-exp",
+      "article-3c5ea493",
+      "3c5ea493",
+      "ruby-regex-and-case-conversion-vulnerabilities-exp-232711",
+      "ruby-regex-and-case-conversion-vulnerabilities-expose-rce-ri"
+    ]
+  },
+  {
+    "slug": "phpaftershell-exploits-enable-php-remote-code-exec-19e0a459",
+    "title": "phpAfterShell Exploits Enable PHP Remote Code Execution",
+    "summary": "phpAfterShell and other critical PHP vulnerabilities disclosed in the November release allow remote code execution when processing malicious input. The associated CVE-2026-126714 exploits a memory-safety flaw in PHP’s string handling, enabling unauthenticated actors to crash or execute arbitrary code. All PHP installations should apply the latest security patch or upgrade to a supported version immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/phpaftershell-critical-php-rce-vulnerabilities-cve-2026-126714",
+    "publishedAt": "2026-11-19T21:46:23.000Z",
+    "cves": [
+      "CVE-2026-126714"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "phpaftershell-exploits-enable-php-remote-code-exec",
+      "article-19e0a459",
+      "19e0a459",
+      "phpaftershell-exploits-enable-php-remote-code-exec-5eb105",
+      "phpaftershell-exploits-enable-php-remote-code-execution"
+    ]
+  },
+  {
     "slug": "cve-2026-132607-gcm-authentication-tag-length-down-7e9731bf",
     "title": "CVE-2026-132607 - GCM authentication tag length downgrade in Amazon S3 Encryption Client for PHP",
     "summary": "Bulletin ID: 2026-191-AWS Publication Date: 11/19/2026 13:00 PM PST Description: We identified CVE-2026-132607, an issue in the decryption component of Amazon S3 Encryption Client for PHP in the AWS SDK for PHP. The client did not verify the length of the AES-GCM authentication tag recorded in an object's metadata.",
@@ -47,6 +89,25 @@ export const news: NewsBrief[] = [
       "article-4cae983c",
       "4cae983c",
       "usn-9176-1-ruby-vulnerabilities-7e785f"
+    ]
+  },
+  {
+    "slug": "ai-fuels-vulnerability-hysteria-and-operational-di-dbe94d43",
+    "title": "AI Fuels Vulnerability Hysteria and Operational Disruption",
+    "summary": "The Reporters' Notebook video series analyzes fallout from recent high-severity flaw disclosures, highlighting how AI-assisted exploit fears amplify vulnerability hysteria. The discussion notes widespread panic, operational disruptions, and growing warning fatigue among security teams, though no specific vulnerability is cited. The series encourages balanced risk assessment and disciplined alert management to mitigate unnecessary operational impact.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era",
+    "publishedAt": "2026-11-19T19:46:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-fuels-vulnerability-hysteria-and-operational-di",
+      "article-dbe94d43",
+      "dbe94d43",
+      "ai-fuels-vulnerability-hysteria-and-operational-di-8544c4",
+      "ai-fuels-vulnerability-hysteria-and-operational-disruption"
     ]
   },
   {
@@ -789,6 +850,25 @@ export const news: NewsBrief[] = [
       "3f05fb63",
       "cisa-warns-hackers-are-actively-exploiting-four-fl-67f111",
       "cisa-warns-hackers-are-actively-exploiting-four-flaws-in-syn"
+    ]
+  },
+  {
+    "slug": "microsoft-agent-framework-compromised-by-credentia-10c4e003",
+    "title": "Microsoft Agent Framework Compromised by Credential Stealer",
+    "summary": "Microsoft’s agent-framework package on PyPI was compromised by malicious releases 1.26.1 and 1.26.2 that steal cloud and CI/CD credentials. The supply-chain intrusion exploited the toolkit’s execution, enabling credential exfiltration without user interaction; detected by StepSecurity, OX Security, and Socket. Microsoft should remove the compromised packages from PyPI, release a clean version, and advise developers to audit installed packages and update.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/microsoft-agent-framework-package-pypi-compromised/",
+    "publishedAt": "2026-11-19T12:53:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-agent-framework-compromised-by-credentia",
+      "article-10c4e003",
+      "10c4e003",
+      "microsoft-agent-framework-compromised-by-credentia-2b0fc5",
+      "microsoft-agent-framework-compromised-by-credential-stealer"
     ]
   },
   {
@@ -9696,82 +9776,6 @@ export const news: NewsBrief[] = [
       "article-034f28fd",
       "034f28fd",
       "lock-and-code-podcast-preparing-data-for-death-550a30"
-    ]
-  },
-  {
-    "slug": "hotel-staff-compromised-by-fake-booking-email-scam-55bce6fb",
-    "title": "Hotel Staff Compromised by Fake Booking Email Scam",
-    "summary": "Luxury hotel employees were deceived by a forged booking request, granting attackers access to the reservations inbox. The attackers copied legitimate refund requests and submitted fraudulent ones, exploiting the hotel’s guest-first culture and fragmented accountability across owner, operator, and brand. Security teams should enforce email authentication, implement role-based access controls, and conduct staff training to prevent similar social-engineering breaches.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html",
-    "publishedAt": "2026-11-16T12:04:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hotel-staff-compromised-by-fake-booking-email-scam",
-      "article-55bce6fb",
-      "55bce6fb",
-      "hotel-staff-compromised-by-fake-booking-email-scam-7f3882"
-    ]
-  },
-  {
-    "slug": "microsoft-previewing-remote-lock-for-lost-windows-015ae66c",
-    "title": "Microsoft Previewing Remote Lock for Lost Windows Devices",
-    "summary": "Microsoft previewed a remote lock that lets Intune admins lock lost or stolen Windows devices without wiping them. The lock signs out sessions, hides sign-in options, shows a lock screen, and persists across restarts on Windows 10, 11, and Server editions. Admins should enable the preview in Intune, test on pilot devices, and plan a full rollout once stable.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/microsoft-remote-lock-feature-preview/",
-    "publishedAt": "2026-11-16T11:57:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-previewing-remote-lock-for-lost-windows",
-      "article-015ae66c",
-      "015ae66c",
-      "microsoft-previewing-remote-lock-for-lost-windows-68e979",
-      "microsoft-previewing-remote-lock-for-lost-windows-devices"
-    ]
-  },
-  {
-    "slug": "coles-investigates-reported-cybersecurity-incident-46318045",
-    "title": "Coles Investigates Reported Cybersecurity Incident",
-    "summary": "Coles Group Limited is investigating a reported cybersecurity incident that reportedly did not affect its retail stores. The company has not disclosed specific details, but authorities are monitoring for potential data exposure or system compromise. Security teams should review access logs, verify system integrity, and ensure incident response plans are activated.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/",
-    "publishedAt": "2026-11-16T11:18:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "coles-investigates-reported-cybersecurity-incident",
-      "article-46318045",
-      "46318045",
-      "coles-investigates-reported-cybersecurity-incident-352f67"
-    ]
-  },
-  {
-    "slug": "unrealircd-vulnerability-enables-command-execution-21745f13",
-    "title": "UnrealIRCd Vulnerability Enables Command Execution with IRCOp Privileges",
-    "summary": "A high-severity flaw in UnrealIRCd, tracked as CVE-2026-114713, permits attackers to execute arbitrary commands with server or IRCOp privileges. The vulnerability stems from improper validation of privileged IRC commands, enabling remote code execution without authentication and potentially compromising entire IRC networks. UnrealIRCd developers released an update on 2026-11-15; administrators should upgrade immediately and disable unused IRCOp accounts.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/",
-    "publishedAt": "2026-11-16T11:15:48.000Z",
-    "cves": [
-      "CVE-2026-114713"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "unrealircd-vulnerability-enables-command-execution",
-      "article-21745f13",
-      "21745f13",
-      "unrealircd-vulnerability-enables-command-execution-682a36",
-      "unrealircd-vulnerability-enables-command-execution-with-irco"
     ]
   }
 ];

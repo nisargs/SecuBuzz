@@ -5646,5 +5646,9 @@
   "https://ubuntu.com/security/notices/USN-9170-2",
   "https://ubuntu.com/security/notices/USN-9176-1",
   "http://www.zerodayinitiative.com/advisories/ZDI-26-1039/",
-  "https://aws.amazon.com/security/security-bulletins/rss/2026-191-aws/"
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-191-aws/",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-193-aws/",
+  "https://www.wiz.io/blog/phpaftershell-critical-php-rce-vulnerabilities-cve-2026-126714",
+  "https://www.helpnetsecurity.com/2026/11/19/microsoft-agent-framework-package-pypi-compromised/",
+  "https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era"
 ]

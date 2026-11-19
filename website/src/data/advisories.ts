@@ -2,6 +2,573 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-129234",
+    "cveID": "CVE-2026-129234",
+    "slug": "cve-2026-129234",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Untrusted search path in prover9/mace4 config allows local code execution via relative binary_location",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.3,
+    "severity": "High",
+    "cwe": "CWE-426",
+    "ransomware": false,
+    "description": "Prover9Parent.config_prover9(binary_location=...) (and Mace, which inherits it) accepts a relative binary_location and passes it as path_to_bin to find_binary, which disables the CWD-relative rejection guard. Unlike the boxer/senna/malt/repp siblings, prover9/mace apply no os.path.isabs() filter, so the resolved relative program path (e.g.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cc5r-64rf-75hg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129234"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129304",
+    "cveID": "CVE-2026-129304",
+    "slug": "cve-2026-129304",
+    "vendor": "Pip",
+    "product": "guard-core",
+    "name": "Guard Core: Unvalidated X-Forwarded-For-derived string used as a Redis key component and interpolated into a KEYS glob pattern",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "_extract_from_forwarded_header() (guard_core/utils.py:172-181 in 3.12.0; :179 on master 08780f1) returns the selected X-Forwarded-For entry without any ipaddress validation.",
+    "requiredAction": "Upgrade guard-core to version 3.13.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gm9r-hvc9-96gv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129304"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129303",
+    "cveID": "CVE-2026-129303",
+    "slug": "cve-2026-129303",
+    "vendor": "Pip",
+    "product": "guard-core",
+    "name": "Guard Core: Whitespace-collapse preprocessing permanently disables the CRLF-anchored http-splitting and command-injection detectors in the default detection mode",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 3.7,
+    "severity": "Low",
+    "cwe": "CWE-693",
+    "ransomware": false,
+    "description": "In the default \"enhanced\" detection mode, ContentPreprocessor.preprocess() collapses all whitespace (re.sub(r\"\\s+\", \" \", content), guard_core/detection_engine/preprocessor.py:137 on master 08780f1; :384 in the 3.12.0 sdist) before pattern matching.",
+    "requiredAction": "Upgrade guard-core to version 3.13.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w7wg-6q7v-44f2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129303"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129302",
+    "cveID": "CVE-2026-129302",
+    "slug": "cve-2026-129302",
+    "vendor": "Pip",
+    "product": "guard-core",
+    "name": "Guard Core: Quadratic ReDoS in built-in detection pattern freezes the event loop with a single request",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "A polynomial (quadratic) regular-expression denial of service in guard-core's built-in penetration-detection patterns allows any unauthenticated remote client to freeze every endpoint of an application for seconds per request, using only the default configuration.",
+    "requiredAction": "Upgrade guard-core to version 3.13.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r7hm-rjvg-xx7j"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129302"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-130007",
+    "cveID": "CVE-2026-130007",
+    "slug": "cve-2026-130007",
+    "vendor": "Go",
+    "product": "k8s-mcp-server · reza-gholizade",
+    "name": "k8s-mcp-server: Missing authentication on default SSE/HTTP transport allows unauthenticated Kubernetes tool execution",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.9,
+    "severity": "High",
+    "cwe": "CWE-306",
+    "ransomware": false,
+    "description": "When k8s-mcp-server runs in its default SSE transport mode, the MCP tools/call endpoint is dispatched with no authentication, session token, or Origin check. Any client that can reach the listening port can enumerate and invoke the server's Kubernetes tools (including destructive/write tools) without credentials, executing with the server's configured cluster privileges.",
+    "requiredAction": "Upgrade k8s-mcp-server · reza-gholizade to version 1.1.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-m932-63jc-4jqq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130007"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-83816",
+    "cveID": "CVE-2026-83816",
+    "slug": "cve-2026-83816",
+    "vendor": "Rust (Cargo)",
+    "product": "codewhale-tui",
+    "name": "CodeWhale: exec_shell parallel-readonly classifier auto-approves fd/rg/git grep exec flags enabling silent RCE",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 8.1,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "The interactive Agent profile of DeepSeek-TUI (CodeWhale) is explicitly documented to gate every shell command behind an approval prompt (config.rs:3725-3736). However, ExecShellTool::approval_requirement_for(&tool_input) downgrades the requirement from Required to Auto for any command the classifier deems \"parallel read-only\" (shell.rs:2314-2320).",
+    "requiredAction": "Upgrade codewhale-tui to version 0.9.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3mgh-93r5-r7jf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83816"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-83817",
+    "cveID": "CVE-2026-83817",
+    "slug": "cve-2026-83817",
+    "vendor": "Rust (Cargo)",
+    "product": "codewhale-tui",
+    "name": "CodeWhale: Automation auto_approve defaults to true, bypassing the task-path hardening fix for silent recurring agent execution",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-862",
+    "ransomware": false,
+    "description": "CVE-2026-45374 (GHSA-72w5-pf8h-xfp4) hardened the task path so auto-approval must be opted into explicitly: add_task uses req.auto_approve.unwrap_or(false) (task_manager.rs:868). The automation subsystem was not hardened in kind.",
+    "requiredAction": "Upgrade codewhale-tui to version 0.9.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8hp3-xxrg-v9c8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83817"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129307",
+    "cveID": "CVE-2026-129307",
+    "slug": "cve-2026-129307",
+    "vendor": "Pip",
+    "product": "eml-parser",
+    "name": "eml_parser: Algorithmic-complexity DoS (O(n^4) regex backtracking) in Received-header parsing",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "eml_parser.routing.parserouting() dynamically builds a regex from up to four greedy . groups (from (?P<from>.)by (?P<by>.)with (?P<with>.)for (?P<for>.*)) terminated by an escaped literal of the date extracted from a normalized copy of the Received header.",
+    "requiredAction": "Upgrade eml-parser to version 3.0.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-m4g8-47f9-h588"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129307"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-95839",
+    "cveID": "CVE-2026-95839",
+    "slug": "cve-2026-95839",
+    "vendor": "Go",
+    "product": "containerd (v2) · containerd",
+    "name": "containerd image-triggered daemon crash via malformed digest in subject-annotated descriptor",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "A bug in containerd's image manifest processing causes an unrecovered panic when a child descriptor contains the io.containerd.manifest.subject annotation and a malformed digest. Pulling or importing such an image through the transfer service (including default CRI PullImage requests) crashes the containerd daemon.",
+    "requiredAction": "Upgrade containerd (v2) · containerd to version 2.2.10 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vwhp-8p66-mq4f"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95839"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115563",
+    "cveID": "CVE-2026-115563",
+    "slug": "cve-2026-115563",
+    "vendor": "Pip",
+    "product": "mcp",
+    "name": "Model Context Protocol Python SDK: OAuth client could send credentials to an authorization server chosen by the MCP server",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-345",
+    "ransomware": false,
+    "description": "In affected versions, the SDK's OAuth client support (mcp.client.auth) let the MCP server a client connected to decide where the client's OAuth credentials were sent: - the authorization server metadata issuer was not validated on every discovery path, and - stored or pre-provisioned client credentials were not bound to the authorization server they belong to.",
+    "requiredAction": "Upgrade mcp to version 2.2.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qx49-fqc8-xw99"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115563"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-97698",
+    "cveID": "CVE-2026-97698",
+    "slug": "cve-2026-97698",
+    "vendor": "Pip",
+    "product": "mistune",
+    "name": "Mistune: Quadratic-time DoS in parse_link_href via unbounded parenthesis scan on empty-label links",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "parse_link_href in mistune performs an unbounded parenthesis-balancing scan that runs to end-of-document on each unmatched (. Because the empty label [] bypasses the no_close_bracket_before high-water-mark guard, a single small document of the form \"[](\" * N causes O(N) openers to each drive an O(N) scan, producing O(N²) CPU on the default mistune.html() renderer with no plugins.",
+    "requiredAction": "Upgrade mistune to version 3.3.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-phmp-hrw4-r36r"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97698"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-97699",
+    "cveID": "CVE-2026-97699",
+    "slug": "cve-2026-97699",
+    "vendor": "Pip",
+    "product": "mistune",
+    "name": "Mistune: Quadratic-time DoS in inline image parsing (precedence_scan) bypasses not-is-image guards",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "mistune's inline image parsing reaches precedence_scan for ![ openers because the two guards that keep the link path linear are both gated behind not is_image. A small default-renderer document of the form \"![\" N + \"x\" + \"]\" N produces O(N²) CPU with no plugins.",
+    "requiredAction": "Upgrade mistune to version 3.3.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-ww7q-mxrj-5ffg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97699"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-107853",
+    "cveID": "CVE-2026-107853",
+    "slug": "cve-2026-107853",
+    "vendor": "npm",
+    "product": "tiny-secp256k1",
+    "name": "tiny-secp256k1: Stale buffer after ignored wasm failure accepts invalid infinity tweak",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-252",
+    "ransomware": false,
+    "description": "The three-argument xOnlyPointAddTweakCheck path ignores the wasm failure return and compares an unchanged input buffer. When the tweak result is the point at infinity, this stale-buffer comparison can return true for an invalid derivation.",
+    "requiredAction": "Upgrade tiny-secp256k1 to version 2.2.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-hj9c-qx2w-g7mh"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107853"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-121717",
+    "cveID": "CVE-2026-121717",
+    "slug": "cve-2026-121717",
+    "vendor": "Go",
+    "product": "fzf · junegunn",
+    "name": "fzf: Predictable FIFO path in zsh completion allows local symlink attack / arbitrary file overwrite as the victim user (_fzf_feed_fifo)",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5,
+    "severity": "Medium",
+    "cwe": "CWE-59",
+    "ransomware": false,
+    "description": "shell/completion.zsh feeds every trigger-driven zsh completion through a FIFO at a predictable, PID-based path in shared /tmp (fzf-complete-fifo-$$), without checking the failure of rm -f/mkfifo. On a multi-user host, another local user can pre-create that path as a symlink to a victim-writable file (e.g.",
+    "requiredAction": "Upgrade fzf · junegunn to version 0.74.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7rj6-7pqx-v7rm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121717"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-121716",
+    "cveID": "CVE-2026-121716",
+    "slug": "cve-2026-121716",
+    "vendor": "Go",
+    "product": "fzf · junegunn",
+    "name": "fzf: Arbitrary command execution via bash arithmetic expansion on unvalidated layout size in fzf-tmux (-l/-u attached value)",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "bin/fzf-tmux fails to validate layout size values given in the attached form (e.g. -l50). For -l/-u these values reach bash arithmetic expansion ($(( max - size ))), where an operand like a[$(cmd)] executes cmd as the invoking user during option parsing — before any tmux interaction and even outside tmux.",
+    "requiredAction": "Upgrade fzf · junegunn to version 0.74.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w6x2-f5m4-xw82"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121716"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-130008",
+    "cveID": "CVE-2026-130008",
+    "slug": "cve-2026-130008",
+    "vendor": "Go",
+    "product": "sqlite-mcp · StacklokLabs",
+    "name": "sqlite-mcp: Read-only mode bypass via statement chaining and SQL injection in describe_table",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-89",
+    "ransomware": false,
+    "description": "In read-only mode (the default), a client that can call the MCP tools can write to the database the server is meant to expose read-only, read other SQLite files, and create new SQLite files anywhere the server process can write. There are two ways in: statement chaining through execute_query, and SQL injection through describe_table.",
+    "requiredAction": "Upgrade sqlite-mcp · StacklokLabs to version 0.1.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-q433-mp6c-8v4f"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130008"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119346",
+    "cveID": "CVE-2026-119346",
+    "slug": "cve-2026-119346",
+    "vendor": "npm",
+    "product": "next",
+    "name": "Next.js: HttpOnly cookie exposure through internal response header on Next.js Edge runtime routes",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "Next.js applications that set cookies through NextResponse on Edge runtime routes — App Router route handlers and Pages Router Edge API routes — send an internal x-middleware-set-cookie header in the public response, duplicating the cookie value and its attributes.",
+    "requiredAction": "Upgrade next to version 15.5.29 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f3mh-rxg3-f5g2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119346"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119347",
+    "cveID": "CVE-2026-119347",
+    "slug": "cve-2026-119347",
+    "vendor": "npm",
+    "product": "next",
+    "name": "Next.js: SVG rejection bypass in the image optimization",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-1287",
+    "ransomware": false,
+    "description": "On self-hosted deployments, the Next.js image optimizer (/_next/image) can be made to process an attacker-supplied SVG even when SVG support is disabled with dangerouslyAllowSVG: false (the default). This reaches an SVG parser the application intended to keep disabled, increasing exposure to denial of service and SVG decoder vulnerabilities.",
+    "requiredAction": "Upgrade next to version 15.5.29 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7qx7-33qx-rqx2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119347"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119348",
+    "cveID": "CVE-2026-119348",
+    "slug": "cve-2026-119348",
+    "vendor": "npm",
+    "product": "next",
+    "name": "Next.js: Cross-client response injection and disclosure in self-hosted Next.js applications forwarding fetched responses",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-444",
+    "ransomware": false,
+    "description": "Self-hosted Next.js applications (App Router route handlers and the fetch cache) that return a fetched upstream response unchanged can emit a response whose declared framing does not match the body actually sent.",
+    "requiredAction": "Upgrade next to version 16.4.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pc58-hwjq-p385"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119348"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119349",
+    "cveID": "CVE-2026-119349",
+    "slug": "cve-2026-119349",
+    "vendor": "npm",
+    "product": "next",
+    "name": "Next.js: Cross-user cache disclosure and poisoning in Next.js use cache with binary arguments",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-694",
+    "ransomware": false,
+    "description": "Next.js App Router applications that pass binary arguments (such as Uint8Array or Blob values) to functions using the use cache directive can produce identical cache keys for distinct arguments, allowing cached results to be shared across users — cross-user disclosure of cached data or cache poisoning. This affects applications using use cache with binary arguments.",
+    "requiredAction": "Upgrade next to version 16.4.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rhh4-g77r-r9qj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119349"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119350",
+    "cveID": "CVE-2026-119350",
+    "slug": "cve-2026-119350",
+    "vendor": "npm",
+    "product": "next",
+    "name": "Next.js: Cache poisoning of shared fallback shells in Cache Components via request-supplied placeholder route params",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-349",
+    "ransomware": false,
+    "description": "Self-hosted Next.js applications served with next start and built with cacheComponents: true but without Partial Prefetching accept a request-supplied route param value as a prerender placeholder. One unauthenticated GET request can poison the fallback shell cache entry that a family of routes shares.",
+    "requiredAction": "Upgrade next to version 16.4.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vvgp-ww4w-46vf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119350"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-4rj4-rcrq-gr92",
     "cveID": "GHSA-4rj4-rcrq-gr92",
     "slug": "ghsa-4rj4-rcrq-gr92",
@@ -781,141 +1348,6 @@ export const advisories: Advisory[] = [
     "source": "GITHUB"
   },
   {
-    "cve": "CVE-2026-58213",
-    "cveID": "CVE-2026-58213",
-    "slug": "cve-2026-58213",
-    "vendor": "Go",
-    "product": "nats-server (v2) · nats-io",
-    "name": "NATS Server: MQTT SUBSCRIBE Protocol Injection via Leaf Node/Route Forwarding allows arbitrary NATS command injection",
-    "dateAdded": "2026-11-19",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-74",
-    "ransomware": false,
-    "description": "NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing. The NATS Server supports MQTT clients and can bridge MQTT activity into NATS subjects across routes and leafnode connections.",
-    "requiredAction": "Upgrade nats-server (v2) · nats-io to version 2.12.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qrcv-3558-gj4f"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58213"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-76088",
-    "cveID": "CVE-2026-76088",
-    "slug": "cve-2026-76088",
-    "vendor": "Java (Maven)",
-    "product": "org.pgpainless:pgpainless-core",
-    "name": "PGPainless: Unbounded Compressed Packet Descent in inline-detach and MessageInspector leads to Denial of Service (DoS)",
-    "dateAdded": "2026-11-19",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "An architectural security boundary bypass in inline-detach and MessageInspector allows remote, unauthenticated attackers to force unbounded recursive decompression routines.",
-    "requiredAction": "Upgrade org.pgpainless:pgpainless-core to version 1.7.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-cvx8-9ff6-54xq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76088"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-73504",
-    "cveID": "CVE-2026-73504",
-    "slug": "cve-2026-73504",
-    "vendor": "Java (Maven)",
-    "product": "com.ing.data:cassandra-jdbc-wrapper",
-    "name": "cassandra-jdbc-wrapper: Authentication Token Exposed in Logs",
-    "dateAdded": "2026-11-19",
-    "dueDate": "",
-    "cvss": 5.5,
-    "severity": "Medium",
-    "cwe": "CWE-532",
-    "ransomware": false,
-    "description": "The fix for AIKIDO-2024-10565 (plaintext password logging) introduced two redaction helpers — DriverUtil.toStringWithoutSensitiveValues() and DriverUtil.redactSensitiveValuesInJdbcUrl() — but both helpers only redact the \"password\" property/parameter (JdbcUrlUtil.TAG_PASSWORD).",
-    "requiredAction": "Upgrade com.ing.data:cassandra-jdbc-wrapper to version 5.0.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jc42-994r-vvwp"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73504"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63129",
-    "cveID": "CVE-2026-63129",
-    "slug": "cve-2026-63129",
-    "vendor": "npm",
-    "product": "@connorbritain/mssql-mcp-core",
-    "name": "mssql-mcp-core: SQL injection in mssql-mcp write tools via unparameterized table names and WHERE clauses",
-    "dateAdded": "2026-11-19",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-89",
-    "ransomware": false,
-    "description": "Several tools in mssql-mcp-core built T-SQL by string-interpolating caller-supplied identifiers and predicates directly into the statement passed to the node-mssql Request.query() batch API. Only data values were parameterized. Affected tools and inputs: - update_data, delete_data: tableName and the free-form whereClause were interpolated raw.",
-    "requiredAction": "Upgrade @connorbritain/mssql-mcp-core to version 0.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2m9m-6cr5-9x25"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63129"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-75521",
-    "cveID": "CVE-2026-75521",
-    "slug": "cve-2026-75521",
-    "vendor": "Go",
-    "product": "miren.dev/runtime",
-    "name": "Miren Runtime: Authentication bypass in RPC layer: unverified TLS client certificates grant cluster superuser access",
-    "dateAdded": "2026-11-19",
-    "dueDate": "",
-    "cvss": 10,
-    "severity": "Critical",
-    "cwe": "CWE-295",
-    "ransomware": false,
-    "description": "The Miren Runtime RPC server (QUIC/HTTP3, default port :8443) requested TLS client certificates but never verified that a presented certificate chained to the cluster Certificate Authority.",
-    "requiredAction": "Upgrade miren.dev/runtime to version 0.11.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8fh7-7q4q-cq52"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75521"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
     "cve": "CVE-2024-10441",
     "slug": "cve-2024-10441",
     "vendor": "Synology",
@@ -1016,411 +1448,6 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
-    "cve": "CVE-2026-75506",
-    "cveID": "CVE-2026-75506",
-    "slug": "cve-2026-75506",
-    "vendor": "Go",
-    "product": "OliveTin · OliveTin",
-    "name": "OliveTin: Second-Order OS Command Injection via shellAfterCompleted",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 6.6,
-    "severity": "Medium",
-    "cwe": "CWE-74",
-    "ransomware": false,
-    "description": "OliveTin's shellAfterCompleted post-execution hook injects unsanitized variables — including arbitrary command output (output), the authenticated username (ot_username), and the exit code (exitCode) — directly into a shell command template processed by sh -c. Unlike the main action's argument handling, no checkShellArgumentSafety validation is applied to these variables.",
-    "requiredAction": "Upgrade OliveTin · OliveTin to version 0.0.0-20260728155752-e5d29b68da66 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vc6p-m6vx-6cwq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75506"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-69131",
-    "cveID": "CVE-2026-69131",
-    "slug": "cve-2026-69131",
-    "vendor": "Pip",
-    "product": "django-filer",
-    "name": "django-filer: Missing per-object authorization on `discard` and `edit_redirect` version transitions",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 4.3,
-    "severity": "Medium",
-    "cwe": "CWE-285",
-    "ransomware": false,
-    "description": "When django-filer's optional per-folder permission system is enabled (FILER_ENABLE_PERMISSIONS=True), the \"Delete files and/or folders\" admin action does not enforce per-folder edit permissions the way every other mutating action does.",
-    "requiredAction": "Upgrade django-filer to version 3.5.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vf85-8ff2-3r9w"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69131"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-69138",
-    "cveID": "CVE-2026-69138",
-    "slug": "cve-2026-69138",
-    "vendor": "Pip",
-    "product": "djangocms-versioning",
-    "name": "djangocms-versioning: Authorization Bypass Through User-Controlled Key and Missing Authorization",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "The discard and edit_redirect version transitions did not enforce a per-object change-permission check, while the sibling transitions (archive, publish, unpublish, revert) all did.",
-    "requiredAction": "Upgrade djangocms-versioning to version 2.6.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5g9x-qwh5-33x4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69138"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-68903",
-    "cveID": "CVE-2026-68903",
-    "slug": "cve-2026-68903",
-    "vendor": "Go",
-    "product": "llmkube · defilantech",
-    "name": "LLMKube: Arbitrary Host File Read via Model.spec.source hostPath Injection",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 7.7,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "LLMKube's ModelReconciler accepts arbitrary absolute paths and file:// URIs in the Model.spec.source field and propagates them to two distinct sinks without path allowlisting: (1) os.Open() inside the controller pod itself (copyLocalModel), and (2) a Kubernetes HostPathVolumeSource that mounts the attacker-supplied path into the inference pod's init container.",
-    "requiredAction": "Upgrade llmkube · defilantech to version 0.9.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jw3m-8q7m-f35r"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68903"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-73864",
-    "cveID": "CVE-2026-73864",
-    "slug": "cve-2026-73864",
-    "vendor": "npm",
-    "product": "install-artifact-from-github",
-    "name": "install-artifact-from-github loads downloaded native artifacts without integrity verification",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-494",
-    "ransomware": false,
-    "description": "bin/install-from-cache.js downloads a prebuilt native addon (.node) over the network and writes it directly to the artifact path with no cryptographic integrity verification of any kind — no checksum manifest, no signature, no SRI. A scan of the whole package for createHash|sha256|checksum|integrity|digest|signature finds nothing.",
-    "requiredAction": "Upgrade install-artifact-from-github to version 1.7.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-88q3-gch3-5396"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73864"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-71861",
-    "cveID": "CVE-2026-71861",
-    "slug": "cve-2026-71861",
-    "vendor": "Go",
-    "product": "chainguard.dev/sdk",
-    "name": "Chainguard SDK: AWS SigV4 token replay in auth/aws.VerifyToken — Chainguard-Audience/Chainguard-Identity binding headers not required in SignedHeaders",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 7.4,
-    "severity": "High",
-    "cwe": "CWE-290",
-    "ransomware": false,
-    "description": "The auth/aws package of the chainguard.dev/sdk Go library provides Chainguard's AWS-backed identity federation (an AWS workload proves its identity to Chainguard by signing an AWS STS GetCallerIdentity request). Its verifier, VerifyToken, reads the Chainguard-Audience and Chainguard-Identity binding headers from a presented token but does not require them to be covered by the SigV4 signature.",
-    "requiredAction": "Upgrade chainguard.dev/sdk to version 0.1.107 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wq26-3j2m-4hvv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71861"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-71481",
-    "cveID": "CVE-2026-71481",
-    "slug": "cve-2026-71481",
-    "vendor": "Composer",
-    "product": "altcha-org/altcha",
-    "name": "ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-347",
-    "ransomware": false,
-    "description": "In altcha-org/altcha v2, the verifySolution method skips HMAC signature verification when the signature field is absent from the challenge payload, even when hmacSignatureSecret is configured. An attacker who strips the signature key from the challenge JSON passes the condition as false, bypassing tamper-detection entirely.",
-    "requiredAction": "Upgrade altcha-org/altcha to version 2.0.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-82w8-65qw-gch6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71481"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-71425",
-    "cveID": "CVE-2026-71425",
-    "slug": "cve-2026-71425",
-    "vendor": "npm",
-    "product": "outstatic",
-    "name": "Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "Outstatic’s authenticated GitHub REST proxy accepted an unvalidated endpoint parameter and constructed an upstream GitHub API URL by string concatenation while attaching the authenticated user’s GitHub OAuth token. A user with access to the Outstatic dashboard could craft a request that caused the server to send their own GitHub OAuth token to a non-GitHub host.",
-    "requiredAction": "Upgrade outstatic to version 2.2.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-7jvc-9xq8-frff"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71425"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-69158",
-    "cveID": "CVE-2026-69158",
-    "slug": "cve-2026-69158",
-    "vendor": "Rust (Cargo)",
-    "product": "atomic-server",
-    "name": "Atomic Server: Unauthenticated full-response SSRF in Atomic-Server /bookmark endpoint",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 8.6,
-    "severity": "High",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "Atomic-Server exposes a GET /bookmark endpoint that fetches an attacker-supplied URL server-side, parses the response, and reflects the fetched content back to the caller. The endpoint requires no authentication and performs no authorization of its own, and the underlying fetch helper applies no allow-list or private-IP deny-list.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-ff87-73jp-f3v4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69158"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-69157",
-    "cveID": "CVE-2026-69157",
-    "slug": "cve-2026-69157",
-    "vendor": "Rust (Cargo)",
-    "product": "atomic-server",
-    "name": "Atomic Server: Unauthenticated `/setup` invite grants write access to the entire Drive",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 9.8,
-    "severity": "Critical",
-    "cwe": "CWE-306",
-    "ransomware": false,
-    "description": "atomic-server provisions a well-known invite at {server}/setup with write = true, target = the Drive root, and usagesLeft = 1. Invite redemption ignores the redeemer's identity (for_agent: _ in server/src/plugins/invite.rs:22), so possession of the URL is the only requirement.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pfwx-xjp4-qxcj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69157"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-69156",
-    "cveID": "CVE-2026-69156",
-    "slug": "cve-2026-69156",
-    "vendor": "Rust (Cargo)",
-    "product": "atomic-server",
-    "name": "Atomic Server: Arbitrary file read via user-controlled `internalId` in the `/download` handler (leaks root agent private key)",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 8.1,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "The Commit apply path enforces no allowlist of writable properties, so any authenticated Agent can set the internalId string (datatype string, no character validation) on a resource it owns.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8vc4-8hjq-988p"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69156"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-69155",
-    "cveID": "CVE-2026-69155",
-    "slug": "cve-2026-69155",
-    "vendor": "Rust (Cargo)",
-    "product": "atomic-server",
-    "name": "Atomic Server: Stored XSS via uploaded files served inline (same-origin) on `/download` → account takeover",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "Files uploaded via POST /upload are served back by GET /download/{path} using actix_files::NamedFile. For text/html and image/svg+xml, actix-files (0.6.6) sets Content-Disposition: inline, so the browser renders the file instead of downloading it.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x277-3wcg-g9r2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69155"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-130001",
-    "cveID": "CVE-2026-130001",
-    "slug": "cve-2026-130001",
-    "vendor": "RubyGems",
-    "product": "mustache",
-    "name": "Mustache for Ruby: RCE using built-in method access",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 9.8,
-    "severity": "Critical",
-    "cwe": "CWE-913",
-    "ransomware": false,
-    "description": "Mustache template engine for Ruby in versions 1.1.2 and earlier allows remote attackers to achieve arbitrary code execution through accessing specific built-in methods in an attacker-supplied template.",
-    "requiredAction": "Upgrade mustache to version 1.1.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5hrj-7fc3-cmx9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130001"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63496",
-    "cveID": "CVE-2026-63496",
-    "slug": "cve-2026-63496",
-    "vendor": "npm",
-    "product": "@augment-vir/node",
-    "name": "augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 7.8,
-    "severity": "High",
-    "cwe": "CWE-78",
-    "ransomware": false,
-    "description": "The grep() function exported by @augment-vir/node inserts caller-controlled search patterns directly into a double-quoted shell command string without sanitization (grep.ts:310).",
-    "requiredAction": "Upgrade @augment-vir/node to version 31.73.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xvcc-vqjv-phqh"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63496"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-61618",
-    "cveID": "CVE-2026-61618",
-    "slug": "cve-2026-61618",
-    "vendor": "Rust (Cargo)",
-    "product": "snark-verifier",
-    "name": "snark-verifier accepts non-canonical KZG accumulator limb encodings",
-    "dateAdded": "2026-11-18",
-    "dueDate": "",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "KZG accumulator public-instance limbs were decoded without consistently enforcing canonical limb bounds before reconstructing elliptic-curve coordinates. In the generated EVM verifier, accumulator coordinates were reconstructed from public-instance limbs using shifted additions before point validation.",
-    "requiredAction": "Upgrade snark-verifier to version 0.2.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-265x-v3qf-ff6p"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61618"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
     "cve": "CVE-2026-115731",
     "slug": "cve-2026-115731",
     "vendor": "Perforce",
@@ -1444,33 +1471,6 @@ export const advisories: Advisory[] = [
       }
     ],
     "source": "CISA KEV"
-  },
-  {
-    "cve": "CVE-2026-119793",
-    "cveID": "CVE-2026-119793",
-    "slug": "cve-2026-119793",
-    "vendor": "npm",
-    "product": "@libp2p/gossipsub",
-    "name": "libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config",
-    "dateAdded": "2026-11-17",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "A single gossipsub peer can grow a node's topics map without bound by flooding subscription RPCs, because the default configuration has no global, per-peer, or topic-length cap and peer scoring does not penalise subscription volume. The peer is never greylisted, so the growth continues toward OOM.",
-    "requiredAction": "Upgrade @libp2p/gossipsub to version 17.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x2vm-cf3p-m2w8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119793"
-      }
-    ],
-    "source": "GITHUB"
   },
   {
     "cve": "CVE-2026-114713",
