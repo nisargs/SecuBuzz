@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "consumer-devices-breach-ot-segmentation-in-hospita-1073f17e",
+    "title": "Consumer Devices Breach OT Segmentation in Hospitals",
+    "summary": "Claroty found game consoles, Roku sticks, Teslas, and other consumer gadgets bypassing OT network segmentation in hospitals, factories, and commercial sites. Many devices are placed on production or guest segments, enabling attackers to move laterally to critical OT equipment without isolation. Teams should audit device placement, enforce strict segmentation, and monitor OT traffic to block lateral movement.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/slipping-past-ot-network-segmentation/",
+    "publishedAt": "2026-11-19T05:30:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "consumer-devices-breach-ot-segmentation-in-hospita",
+      "article-1073f17e",
+      "1073f17e",
+      "consumer-devices-breach-ot-segmentation-in-hospita-6e29c9",
+      "consumer-devices-breach-ot-segmentation-in-hospitals"
+    ]
+  },
+  {
     "slug": "apache-roller-rce-exploited-without-authentication-557e2079",
     "title": "Apache Roller RCE Exploited Without Authentication",
     "summary": "Hackers are actively exploiting a critical Apache Roller RCE flaw that allows unauthenticated code execution on affected servers. CVE-2026-129448 affects Roller 4.0.0-6.1.4 and scores CVSS 3.1 9.8, classifying it as a high-risk zero-day. Administrators should immediately upgrade to the latest Roller release or apply the vendor-issued patch to mitigate the exploitation risk.",
@@ -31,6 +50,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-agents-run-with-employee-credentials-unchecked-cd7e3f81",
+    "title": "AI Agents Run with Employee Credentials Unchecked",
+    "summary": "Nudge Security found that AI agents in project trackers, CRMs, and automation tools run with the credentials of their creators, inheriting full employee access. This credential inheritance creates a blind spot, enabling malicious or accidental actions without security oversight. Teams should enforce least-privilege for AI agents, monitor activity, and audit credential usage to block unauthorized access.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/ai-agents-employee-credentials-nudge-security-report/",
+    "publishedAt": "2026-11-19T05:00:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agents-run-with-employee-credentials-unchecked",
+      "article-cd7e3f81",
+      "cd7e3f81",
+      "ai-agents-run-with-employee-credentials-unchecked-4ca14d"
+    ]
+  },
+  {
     "slug": "php-warns-of-critical-security-flaws-affecting-all-17c05871",
     "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
     "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. \"These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting all supported PHP versions,\" the maintainers said.",
@@ -47,6 +84,25 @@ export const news: NewsBrief[] = [
       "17c05871",
       "php-warns-of-critical-security-flaws-affecting-all-2f1589",
       "php-warns-of-critical-security-flaws-affecting-all-supported"
+    ]
+  },
+  {
+    "slug": "cyberpower-ups-software-enables-system-access-and-61239936",
+    "title": "CyberPower UPS Software Enables SYSTEM Access and AD Dump",
+    "summary": "Attackers used a scripting feature in CyberPower PowerPanel Business UPS software to gain SYSTEM-level access on a Windows domain controller. The flaw enabled copying the Active Directory database and launching persistent malware, though no data exfiltration was observed. CyberPower has not yet issued a patch; administrators should disable scripting or apply the latest firmware and monitor domain controller activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-abuse-cyberpower-ups-software/",
+    "publishedAt": "2026-11-19T04:10:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyberpower-ups-software-enables-system-access-and",
+      "article-61239936",
+      "61239936",
+      "cyberpower-ups-software-enables-system-access-and-1cc4ec",
+      "cyberpower-ups-software-enables-system-access-and-ad-dump"
     ]
   },
   {
@@ -224,6 +280,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-critical-kpatch-patches-for-rhel-8-57cd9eef",
+    "title": "Red Hat Issues Critical kpatch Patches for RHEL 8.8 SAP",
+    "summary": "Red Hat released a critical security update for kpatch patches 4_18_0-477_107_1 through 4_18_0-477_161_1 on RHEL 8.8 Update Services for SAP Solutions. The update addresses multiple kernel patch vulnerabilities rated Critical by Red Hat Product Security, with CVSS base scores listed in the CVE references. Administrators should apply the patches immediately to mitigate potential remote code execution risks on affected systems.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100524",
+    "publishedAt": "2026-11-19T01:25:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-kpatch-patches-for-rhel-8",
+      "article-57cd9eef",
+      "57cd9eef",
+      "red-hat-issues-critical-kpatch-patches-for-rhel-8-2ee080",
+      "red-hat-issues-critical-kpatch-patches-for-rhel-8-8-sap"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-kpatch-patches-for-rhel-1f98b6fb",
+    "title": "Red Hat Releases Critical kpatch Patches for RHEL 9.2 SAP",
+    "summary": "Red Hat issued a critical security update for kpatch patches 5_14_0-284_134_1 through 5_14_0-284_188_1 on RHEL 9.2 Update Services for SAP Solutions. The patches fix kernel vulnerabilities rated Critical by Red Hat Product Security, with CVSS base scores provided in the CVE references. System administrators should apply the updates immediately to prevent potential remote code execution on affected systems.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100521",
+    "publishedAt": "2026-11-19T01:23:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-kpatch-patches-for-rhel",
+      "article-1f98b6fb",
+      "1f98b6fb",
+      "red-hat-releases-critical-kpatch-patches-for-rhel-2ee080",
+      "red-hat-releases-critical-kpatch-patches-for-rhel-9-2-sap"
+    ]
+  },
+  {
     "slug": "critical-java-21-openjdk-update-for-rhel-10-8cb4ded1",
     "title": "Critical java-21-openjdk Update for RHEL 10",
     "summary": "Red Hat released a critical security update for java-21-openjdk on RHEL 10, addressing multiple high-severity vulnerabilities. The update, rated as Critical by Red Hat Product Security, contains patches for CVEs that could allow remote code execution with a CVSS score above 8.0. Administrators should apply the update immediately or upgrade to the latest RHEL 10 release to ensure protection.",
@@ -332,6 +426,25 @@ export const news: NewsBrief[] = [
       "d5f645d4",
       "ransomware-brokers-shift-listings-to-private-chann-3c8e2d",
       "ransomware-brokers-shift-listings-to-private-channels"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100550-critical-red-hat-jboss-core-servi-47d19b1b",
+    "title": "RHSA-2026:100550: Critical: Red Hat JBoss Core Services Apache HTTP Server 2.4.62 SP7 security update",
+    "summary": "Red Hat JBoss Core Services Apache HTTP Server 2.4.62 Service Pack 7 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100550",
+    "publishedAt": "2026-11-18T23:27:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100550-critical-red-hat-jboss-core-servi",
+      "article-47d19b1b",
+      "47d19b1b",
+      "rhsa-2026-100550-critical-red-hat-jboss-core-servi-2ee081",
+      "rhsa-2026-100550-critical-red-hat-jboss-core-services-apache"
     ]
   },
   {
@@ -588,6 +701,25 @@ export const news: NewsBrief[] = [
       "5d65504b",
       "russian-cold-relic-apt-leverages-cloud-breaches-fo-2eca1e",
       "russian-cold-relic-apt-leverages-cloud-breaches-for-imperson"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100566-critical-openjdk-17-0-21-1-securi-28f3adbf",
+    "title": "RHSA-2026:100566: Critical: OpenJDK 17.0.21.1 Security Update for Windows Builds",
+    "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100566",
+    "publishedAt": "2026-11-18T21:29:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100566-critical-openjdk-17-0-21-1-securi",
+      "article-28f3adbf",
+      "28f3adbf",
+      "rhsa-2026-100566-critical-openjdk-17-0-21-1-securi-2ee081",
+      "rhsa-2026-100566-critical-openjdk-17-0-21-1-security-update-"
     ]
   },
   {
@@ -1063,6 +1195,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "gstreamer-vulnerability-enables-denial-of-service-2421dbfe",
+    "title": "GStreamer Vulnerability Enables Denial of Service or Code Execution",
+    "summary": "Ubuntu discovered that GStreamer mishandles malformed data, which could let an attacker trigger a denial of service or execute arbitrary code. The flaw stems from inadequate input validation during media pipeline parsing, exposing systems to remote code execution when crafted data is processed. Apply the latest GStreamer update or Ubuntu security patch to eliminate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9152-1",
+    "publishedAt": "2026-11-18T16:24:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gstreamer-vulnerability-enables-denial-of-service",
+      "article-2421dbfe",
+      "2421dbfe",
+      "gstreamer-vulnerability-enables-denial-of-service-7e7956",
+      "gstreamer-vulnerability-enables-denial-of-service-or-code-ex"
+    ]
+  },
+  {
     "slug": "offsec-converts-recent-vulnerabilities-into-hands-97d5622b",
     "title": "OffSec Converts Recent Vulnerabilities Into Hands-On Labs",
     "summary": "OffSec released over 80 hands-on labs built around recent real-world vulnerabilities including PHPH2Shell, expanding its training catalog within two weeks. The labs map to actual CVEs and support a Level 20 Learn One promotion offering $550 off for enrolled learners. Security teams can use the curriculum to practice detection and remediation techniques against these threats.",
@@ -1119,6 +1270,27 @@ export const news: NewsBrief[] = [
       "article-b81237d2",
       "b81237d2",
       "nginx-http-2-flaws-enable-remote-code-execution-5ea75f"
+    ]
+  },
+  {
+    "slug": "microsoft-updates-cvss-for-ad-domain-services-cve-ede8431a",
+    "title": "Microsoft Updates CVSS for AD Domain Services CVE-2026-118148",
+    "summary": "Microsoft updated the CVSS score for the Active Directory Domain Services elevation of privilege vulnerability, CVE-2026-118148. The revision does not change the flaw’s root cause or exploitability; it remains a local privilege escalation requiring authenticated domain controller access. Administrators should review the updated FAQ for guidance on monitoring and applying standard domain services hardening, as no new patch is required.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118148",
+    "publishedAt": "2026-11-18T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-118148"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-cvss-for-ad-domain-services-cve",
+      "article-ede8431a",
+      "ede8431a",
+      "microsoft-updates-cvss-for-ad-domain-services-cve-1fe923",
+      "microsoft-updates-cvss-for-ad-domain-services-cve-2026-11814"
     ]
   },
   {
@@ -3043,6 +3215,24 @@ export const news: NewsBrief[] = [
       "ed0badd2",
       "optimizely-flaw-used-to-inject-malware-into-178-to-1e1609",
       "optimizely-flaw-used-to-inject-malware-into-178-top-websites"
+    ]
+  },
+  {
+    "slug": "nginx2root-vulnerabilities-patched-by-vendor-caa26e2b",
+    "title": "NGINX2Root Vulnerabilities Patched by Vendor",
+    "summary": "Nginx released patches for the critical NGINX2Root vulnerabilities that could allow attackers to gain root privileges on affected servers. The flaws stem from improper handling of user-supplied configuration data, enabling local privilege escalation without authentication. Administrators should apply the vendor’s patch immediately and verify that configuration files are sanitized to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Sophos Threat Research",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/patches-released-for-critical-nginx2root-vulnerabilities",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nginx2root-vulnerabilities-patched-by-vendor",
+      "article-caa26e2b",
+      "caa26e2b",
+      "nginx2root-vulnerabilities-patched-by-vendor-3cd96e"
     ]
   },
   {
@@ -9641,212 +9831,6 @@ export const news: NewsBrief[] = [
       "2cb89c00",
       "microsoft-edge-fixes-chromium-missing-authorizatio-1fdbda",
       "microsoft-edge-fixes-chromium-missing-authorization-cve-2026"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-126870-uninitialized-resource-7df81a21",
-    "title": "Chromium CVE-2026-126870: Uninitialized Resource",
-    "summary": "Microsoft Edge, built on Chromium, is affected by CVE-2026-126870, an uninitialized resource flaw discovered in the Chromium engine. The vulnerability could lead to memory corruption or denial of service if exploited, but no active exploitation has been reported. Microsoft recommends installing the latest Edge update, which incorporates the Chromium patch, and reviewing Chrome release notes for detailed fix information.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126870",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126870"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-126870-uninitialized-resource",
-      "article-7df81a21",
-      "7df81a21",
-      "chromium-cve-2026-126870-uninitialized-resource-1fdbda"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-126871-out-of-bounds-read-8af9f0f6",
-    "title": "Chromium CVE-2026-126871: Out-of-Bounds Read",
-    "summary": "Microsoft Edge, based on Chromium, is impacted by CVE-2026-126871, an out-of-bounds read flaw in the Chromium codebase. The defect may allow attackers to read memory beyond intended bounds, potentially leading to information disclosure or crash, though no exploitation evidence exists. Edge users should apply the latest update that includes the Chromium patch, and consult Chrome release notes for fix details.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126871",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-126871-out-of-bounds-read",
-      "article-8af9f0f6",
-      "8af9f0f6",
-      "chromium-cve-2026-126871-out-of-bounds-read-1fdbda"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-126872-incorrect-authorization-e-1d019f58",
-    "title": "Chromium CVE-2026-126872: Incorrect Authorization Exploit",
-    "summary": "A Chrome-assigned CVE-2026-126872 exposes incorrect authorization in Chromium's rendering engine, potentially allowing attackers to elevate privileges within Edge. The flaw arises from insufficient access checks during resource loading, enabling unauthorized access to privileged data. Microsoft Edge has released a patch in the latest update; users should install the new version immediately.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126872",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126872"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-126872-incorrect-authorization-e",
-      "article-1d019f58",
-      "1d019f58",
-      "chromium-cve-2026-126872-incorrect-authorization-e-1fdbda",
-      "chromium-cve-2026-126872-incorrect-authorization-exploit"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-126873-use-after-free-vulnerabil-4d096bab",
-    "title": "Chromium CVE-2026-126873: Use-After-Free Vulnerability",
-    "summary": "A Chrome-assigned CVE-2026-126873 triggers a use-after-free in Chromium's memory allocator, potentially enabling remote code execution in Microsoft Edge. The flaw occurs when freed memory is accessed during script execution, allowing attackers to inject malicious code. Microsoft Edge has issued a patch in the latest release; users must update immediately today.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126873",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126873"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-126873-use-after-free-vulnerabil",
-      "article-4d096bab",
-      "4d096bab",
-      "chromium-cve-2026-126873-use-after-free-vulnerabil-1fdbda",
-      "chromium-cve-2026-126873-use-after-free-vulnerability"
-    ]
-  },
-  {
-    "slug": "chromium-use-after-free-cve-2026-126865-fixed-in-e-50842b6b",
-    "title": "Chromium Use-After-Free CVE-2026-126865 Fixed in Edge",
-    "summary": "A use-after-free flaw, identified as CVE-2026-126865, exists in Chromium's rendering engine. The vulnerability could allow attackers to execute arbitrary code if a malicious page is rendered, though no public exploit has been reported. Microsoft Edge incorporates the Chromium fix, and users should update to the latest Edge release to mitigate the issue.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126865",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126865"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-use-after-free-cve-2026-126865-fixed-in-e",
-      "article-50842b6b",
-      "50842b6b",
-      "chromium-use-after-free-cve-2026-126865-fixed-in-e-1fdbda",
-      "chromium-use-after-free-cve-2026-126865-fixed-in-edge"
-    ]
-  },
-  {
-    "slug": "chromium-incorrect-authorization-cve-2026-126866-r-39edd995",
-    "title": "Chromium Incorrect Authorization CVE-2026-126866 Resolved in Edge",
-    "summary": "An incorrect authorization flaw, labeled CVE-2026-126866, affects Chromium's permission handling in the browser engine. The defect could enable a malicious site to gain elevated privileges, yet no active exploitation has been documented. Microsoft Edge incorporates the Chromium patch, and users should install the newest Edge version to close the vulnerability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126866",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126866"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-incorrect-authorization-cve-2026-126866-r",
-      "article-39edd995",
-      "39edd995",
-      "chromium-incorrect-authorization-cve-2026-126866-r-1fdbda",
-      "chromium-incorrect-authorization-cve-2026-126866-resolved-in"
-    ]
-  },
-  {
-    "slug": "chromium-type-confusion-cve-2026-126868-fixed-in-e-6adc6211",
-    "title": "Chromium Type Confusion CVE-2026-126868 Fixed in Edge",
-    "summary": "A type-confusion vulnerability in Chromium, catalogued as CVE-2026-126868, could allow attackers to manipulate memory during rendering operations. Microsoft Edge, built on Chromium, incorporates the upstream patch that eliminates the type-confusion flaw. Users should update to the latest Edge release or apply the vendor-supplied patch to mitigate the risk in affected systems.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126868",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-type-confusion-cve-2026-126868-fixed-in-e",
-      "article-6adc6211",
-      "6adc6211",
-      "chromium-type-confusion-cve-2026-126868-fixed-in-e-1fdbda",
-      "chromium-type-confusion-cve-2026-126868-fixed-in-edge"
-    ]
-  },
-  {
-    "slug": "chromium-use-after-free-cve-2026-126869-patched-in-acaed216",
-    "title": "Chromium Use-After-Free CVE-2026-126869 Patched in Edge",
-    "summary": "A use-after-free flaw in Chromium, identified as CVE-2026-126869, permits attackers to trigger memory corruption during page rendering. Microsoft Edge incorporates the upstream fix that removes the vulnerable memory access. Security teams should upgrade to the latest Edge version or apply the vendor patch to prevent exploitation in affected browsers for all users.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126869",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126869"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-use-after-free-cve-2026-126869-patched-in",
-      "article-acaed216",
-      "acaed216",
-      "chromium-use-after-free-cve-2026-126869-patched-in-1fdbda",
-      "chromium-use-after-free-cve-2026-126869-patched-in-edge"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-126856-incomplete-cleanup-fix-c7e2e630",
-    "title": "Chromium CVE-2026-126856 Incomplete Cleanup Fix",
-    "summary": "CVE-2026-126856 causes incomplete cleanup in Chromium rendering, potentially leaving residual data on disk. The flaw stems from improper deallocation of temporary buffers, allowing local users to read or alter sensitive files. Microsoft Edge incorporates the Chromium fix; users should update to the latest Edge release or apply the referenced Chrome patch.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126856",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126856"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-126856-incomplete-cleanup-fix",
-      "article-c7e2e630",
-      "c7e2e630",
-      "chromium-cve-2026-126856-incomplete-cleanup-fix-1fdbda"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-126857-out-of-bounds-read-2a2b5e9a",
-    "title": "Chromium CVE-2026-126857 Out-of-Bounds Read",
-    "summary": "CVE-2026-126857 permits an out-of-bounds read in Chromium's rendering engine, potentially exposing memory contents. The vulnerability originates from unchecked array indexing during image decoding, which could be leveraged by local users to read arbitrary memory. Microsoft Edge includes the Chromium patch; users should upgrade to the latest Edge release or apply the Chrome update referenced in the Google Chrome Releases blog.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126857",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126857"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-126857-out-of-bounds-read",
-      "article-2a2b5e9a",
-      "2a2b5e9a",
-      "chromium-cve-2026-126857-out-of-bounds-read-1fdbda"
     ]
   }
 ];

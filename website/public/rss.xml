@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 05:48:17 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 06:45:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Consumer Devices Breach OT Segmentation in Hospitals</title>
+      <link>https://secubuzz.com/news/consumer-devices-breach-ot-segmentation-in-hospita-1073f17e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/consumer-devices-breach-ot-segmentation-in-hospita-1073f17e</guid>
+      <description><![CDATA[Claroty found game consoles, Roku sticks, Teslas, and other consumer gadgets bypassing OT network segmentation in hospitals, factories, and commercial sites. Many devices are placed on production or guest segments, enabling attackers to move laterally to critical OT equipment without isolation. Teams should audit device placement, enforce strict segmentation, and monitor OT traffic to block lateral movement.]]></description>
+      <pubDate>Thu, 19 Nov 2026 05:30:09 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/19/slipping-past-ot-network-segmentation/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Apache Roller RCE Exploited Without Authentication</title>
       <link>https://secubuzz.com/news/apache-roller-rce-exploited-without-authentication-557e2079</link>
@@ -17,12 +26,30 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>AI Agents Run with Employee Credentials Unchecked</title>
+      <link>https://secubuzz.com/news/ai-agents-run-with-employee-credentials-unchecked-cd7e3f81</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-run-with-employee-credentials-unchecked-cd7e3f81</guid>
+      <description><![CDATA[Nudge Security found that AI agents in project trackers, CRMs, and automation tools run with the credentials of their creators, inheriting full employee access. This credential inheritance creates a blind spot, enabling malicious or accidental actions without security oversight. Teams should enforce least-privilege for AI agents, monitor activity, and audit credential usage to block unauthorized access.]]></description>
+      <pubDate>Thu, 19 Nov 2026 05:00:37 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/19/ai-agents-employee-credentials-nudge-security-report/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19</title>
       <link>https://secubuzz.com/news/php-warns-of-critical-security-flaws-affecting-all-17c05871</link>
       <guid isPermaLink="true">https://secubuzz.com/news/php-warns-of-critical-security-flaws-affecting-all-17c05871</guid>
       <description><![CDATA[The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. "These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting all supported PHP versions," the maintainers said.]]></description>
       <pubDate>Thu, 19 Nov 2026 04:33:46 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CyberPower UPS Software Enables SYSTEM Access and AD Dump</title>
+      <link>https://secubuzz.com/news/cyberpower-ups-software-enables-system-access-and-61239936</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyberpower-ups-software-enables-system-access-and-61239936</guid>
+      <description><![CDATA[Attackers used a scripting feature in CyberPower PowerPanel Business UPS software to gain SYSTEM-level access on a Windows domain controller. The flaw enabled copying the Active Directory database and launching persistent malware, though no data exfiltration was observed. CyberPower has not yet issued a patch; administrators should disable scripting or apply the latest firmware and monitor domain controller activity.]]></description>
+      <pubDate>Thu, 19 Nov 2026 04:10:46 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-abuse-cyberpower-ups-software/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -107,6 +134,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Issues Critical kpatch Patches for RHEL 8.8 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-kpatch-patches-for-rhel-8-57cd9eef</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-kpatch-patches-for-rhel-8-57cd9eef</guid>
+      <description><![CDATA[Red Hat released a critical security update for kpatch patches 4_18_0-477_107_1 through 4_18_0-477_161_1 on RHEL 8.8 Update Services for SAP Solutions. The update addresses multiple kernel patch vulnerabilities rated Critical by Red Hat Product Security, with CVSS base scores listed in the CVE references. Administrators should apply the patches immediately to mitigate potential remote code execution risks on affected systems.]]></description>
+      <pubDate>Thu, 19 Nov 2026 01:25:07 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100524">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical kpatch Patches for RHEL 9.2 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-kpatch-patches-for-rhel-1f98b6fb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-kpatch-patches-for-rhel-1f98b6fb</guid>
+      <description><![CDATA[Red Hat issued a critical security update for kpatch patches 5_14_0-284_134_1 through 5_14_0-284_188_1 on RHEL 9.2 Update Services for SAP Solutions. The patches fix kernel vulnerabilities rated Critical by Red Hat Product Security, with CVSS base scores provided in the CVE references. System administrators should apply the updates immediately to prevent potential remote code execution on affected systems.]]></description>
+      <pubDate>Thu, 19 Nov 2026 01:23:45 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100521">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Critical java-21-openjdk Update for RHEL 10</title>
       <link>https://secubuzz.com/news/critical-java-21-openjdk-update-for-rhel-10-8cb4ded1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/critical-java-21-openjdk-update-for-rhel-10-8cb4ded1</guid>
@@ -159,6 +204,15 @@
       <pubDate>Wed, 18 Nov 2026 23:28:20 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/19/ransomware-access-brokers-cybercrime/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100550: Critical: Red Hat JBoss Core Services Apache HTTP Server 2.4.62 SP7 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100550-critical-red-hat-jboss-core-servi-47d19b1b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100550-critical-red-hat-jboss-core-servi-47d19b1b</guid>
+      <description><![CDATA[Red Hat JBoss Core Services Apache HTTP Server 2.4.62 Service Pack 7 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 18 Nov 2026 23:27:17 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100550">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Ukraine, FBI Arrest Ransomware Group Members</title>
@@ -267,6 +321,15 @@
       <pubDate>Wed, 18 Nov 2026 21:59:46 GMT</pubDate>
       <source url="https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another">Dark Reading</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100566: Critical: OpenJDK 17.0.21.1 Security Update for Windows Builds</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100566-critical-openjdk-17-0-21-1-securi-28f3adbf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100566-critical-openjdk-17-0-21-1-securi-28f3adbf</guid>
+      <description><![CDATA[An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 18 Nov 2026 21:29:21 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100566">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>OpenJDK 17.0.21.1 Critical Update for Portable Linux</title>
@@ -393,69 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 19:02:27 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174">Canadian Centre for Cyber Security</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Chrome Early Stable Desktop Update Released</title>
-      <link>https://secubuzz.com/news/chrome-early-stable-desktop-update-released-c4ac022c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-early-stable-desktop-update-released-c4ac022c</guid>
-      <description><![CDATA[Google Chrome released an early stable update for desktop platforms, version 159.0.8154.13/.14, targeting Windows and Mac users. The update includes minor bug fixes and performance improvements, with a full change log available in the release notes. Users are encouraged to install the update via the browser's update mechanism; no security patches are addressed in this release.]]></description>
-      <pubDate>Wed, 18 Nov 2026 18:58:35 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop_01707050408.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>NGINX HTTP/2 Flaw Enables Unauthenticated Remote Code Execution</title>
-      <link>https://secubuzz.com/news/nginx-http-2-flaw-enables-unauthenticated-remote-c-96906100</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nginx-http-2-flaw-enables-unauthenticated-remote-c-96906100</guid>
-      <description><![CDATA[A decade-old vulnerability in NGINX's HTTP/2 implementation (CVE-2026-123007) allows unauthenticated attackers to execute arbitrary code on servers with HTTP/2 enabled. The flaw, present since version 1.9.5, stems from improper handling of HTTP/2 frames leading to memory corruption and unauthenticated remote code execution. F5 released patched versions 1.31.9 and 1.30.7; administrators must upgrade immediately to mitigate exploitation risk.]]></description>
-      <pubDate>Wed, 18 Nov 2026 18:31:17 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chrome Beta Desktop Update Released</title>
-      <link>https://secubuzz.com/news/chrome-beta-desktop-update-released-e6aa2faa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-beta-desktop-update-released-e6aa2faa</guid>
-      <description><![CDATA[Google Chrome updated its Beta channel to version 159.0.8154.13 for Windows, Mac, and Linux desktop users. The release contains incremental bug fixes and stability improvements, with a partial change log posted in the Git log. Users should update via the browser's update settings; no critical security patches are included currently.]]></description>
-      <pubDate>Wed, 18 Nov 2026 18:28:33 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_01411055938.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CVE-2026-130638 - Path traversal in the object detection dataset preparation tool in AutoGluon MultiModal</title>
-      <link>https://secubuzz.com/news/cve-2026-130638-path-traversal-in-the-object-detec-16072b1a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-130638-path-traversal-in-the-object-detec-16072b1a</guid>
-      <description><![CDATA[Bulletin ID: 2026-188-AWS Publication Date: 11/18/2026 10:00 AM PST Description: Relative path traversal in the object detection dataset preparation tool in AutoGluon Multimodal before 1.6.0 might allow adversary-in-the-middle attackers to write arbitrary files with the privileges of the user running the tool via a crafted dataset archive substituted for a dataset downloaded over plaintext HTTP.]]></description>
-      <pubDate>Wed, 18 Nov 2026 18:18:11 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-188-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>GhostMap eBPF Rootkit Conceals IronWorm Malware on Linux</title>
-      <link>https://secubuzz.com/news/ghostmap-ebpf-rootkit-conceals-ironworm-malware-on-3496fb98</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostmap-ebpf-rootkit-conceals-ironworm-malware-on-3496fb98</guid>
-      <description><![CDATA[Attackers are deploying the GhostMap eBPF rootkit to hide IronWorm malware processes, files, and network sockets from standard Linux inspection tools like /proc/net/tcp. The rootkit leverages extended Berkeley Packet Filter hooks to manipulate kernel-level visibility, allowing malicious listeners to evade detection while remaining operational.]]></description>
-      <pubDate>Wed, 18 Nov 2026 18:11:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-ghostmap-ebpf-rootkit/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Arctic Wolf Releases Quarterly Innovation Update</title>
-      <link>https://secubuzz.com/news/arctic-wolf-releases-quarterly-innovation-update-a1e410dd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arctic-wolf-releases-quarterly-innovation-update-a1e410dd</guid>
-      <description><![CDATA[Arctic Wolf published its November 2026 quarterly update, outlining new product features, strategic initiatives, and upcoming roadmap milestones. The release highlights enhancements in threat detection, managed detection and response services, and expanded partner integrations. Customers are encouraged to review the full briefing for detailed feature specifications and to schedule a roadmap discussion with Arctic Wolf.]]></description>
-      <pubDate>Wed, 18 Nov 2026 18:10:18 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/on-demand-webinar-uk/whats-new-and-whats-next-arctic-wolf-november-2026-update/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Use Hidden Cron Jobs to Reinstall Malware on Firewalls and Routers Every 5 Minutes</title>
-      <link>https://secubuzz.com/news/hackers-use-hidden-cron-jobs-to-reinstall-malware-8db0ac7a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-hidden-cron-jobs-to-reinstall-malware-8db0ac7a</guid>
-      <description><![CDATA[A Linux botnet is hiding in a place most network teams never look: the scheduled jobs on their firewalls, routers and switches. If a responder kills the malware and deletes the file, a hidden cron job downloads it again within five minutes.]]></description>
-      <pubDate>Wed, 18 Nov 2026 18:01:24 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-hidden-cron-jobs/">Cyber Security News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
