@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 10:45:40 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 11:48:16 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>BackBox Linux 10 brings new hacking tools and Ubuntu 26.04 support</title>
+      <link>https://secubuzz.com/news/backbox-linux-10-brings-new-hacking-tools-and-ubun-6d23a266</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/backbox-linux-10-brings-new-hacking-tools-and-ubun-6d23a266</guid>
+      <description><![CDATA[BackBox Linux is a free, open source penetration testing distribution made by BackBox, a non-profit community project that keeps its own repositories of ethical hacking tools. On November 19 the project released version 10, codenamed Resolute Raccoon. It’s built for compatibility with Ubuntu 26.04 LTS and ships with the Linux 7.0 kernel and the Xfce 4.20 desktop.]]></description>
+      <pubDate>Thu, 19 Nov 2026 11:01:12 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/19/backbox-linux-10-penetration-testing/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>GTA 6 scams are after your Google password, money, and crypto wallet</title>
       <link>https://secubuzz.com/news/gta-6-scams-are-after-your-google-password-money-a-a23f6b54</link>
@@ -42,6 +51,15 @@
       <pubDate>Thu, 19 Nov 2026 09:31:26 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html">The Hacker News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Hackers Deploy Overlord RAT That Survives Windows Resets and Crashes Systems When Terminated</title>
+      <link>https://secubuzz.com/news/hackers-deploy-overlord-rat-that-survives-windows-3c6527c9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-deploy-overlord-rat-that-survives-windows-3c6527c9</guid>
+      <description><![CDATA[A financially motivated hacking group is deploying Overlord RAT, a Windows remote access trojan that can return after a victim uses “Reset this PC.” The malware can also trigger a blue screen if a user or security tool forcibly ends its process.]]></description>
+      <pubDate>Thu, 19 Nov 2026 08:51:32 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-deploy-overlord-rat/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>ruby2ßhell: Critical One-Byte Heap Overflow in Ruby Could Allow RCE Attacks</title>
@@ -438,24 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 22:00:00 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0145322301.html">Google Chrome Releases</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Russian Cold Relic APT Leverages Cloud Breaches for Impersonation</title>
-      <link>https://secubuzz.com/news/russian-cold-relic-apt-leverages-cloud-breaches-fo-5d65504b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-cold-relic-apt-leverages-cloud-breaches-fo-5d65504b</guid>
-      <description><![CDATA[The Russia-linked threat group Cold Relic is conducting targeted attacks leveraging initial access gained from compromised cloud environments. Attackers exfiltrate victim data from initial cloud breaches to orchestrate highly convincing impersonation and social engineering campaigns against secondary enterprise targets. Security teams must enforce strict identity controls and closely monitor cross-tenant cloud trust relationships to mitigate lateral expansion.]]></description>
-      <pubDate>Wed, 18 Nov 2026 21:59:46 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another">Dark Reading</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100566: Critical: OpenJDK 17.0.21.1 Security Update for Windows Builds</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100566-critical-openjdk-17-0-21-1-securi-28f3adbf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100566-critical-openjdk-17-0-21-1-securi-28f3adbf</guid>
-      <description><![CDATA[An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 18 Nov 2026 21:29:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100566">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "backbox-linux-10-brings-new-hacking-tools-and-ubun-6d23a266",
+    "title": "BackBox Linux 10 brings new hacking tools and Ubuntu 26.04 support",
+    "summary": "BackBox Linux is a free, open source penetration testing distribution made by BackBox, a non-profit community project that keeps its own repositories of ethical hacking tools. On November 19 the project released version 10, codenamed Resolute Raccoon. It’s built for compatibility with Ubuntu 26.04 LTS and ships with the Linux 7.0 kernel and the Xfce 4.20 desktop.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/backbox-linux-10-penetration-testing/",
+    "publishedAt": "2026-11-19T11:01:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "backbox-linux-10-brings-new-hacking-tools-and-ubun",
+      "article-6d23a266",
+      "6d23a266",
+      "backbox-linux-10-brings-new-hacking-tools-and-ubun-162595",
+      "backbox-linux-10-brings-new-hacking-tools-and-ubuntu-26-04-s"
+    ]
+  },
+  {
     "slug": "gta-6-scams-are-after-your-google-password-money-a-a23f6b54",
     "title": "GTA 6 scams are after your Google password, money, and crypto wallet",
     "summary": "Scammers are using the GTA 6 launch to steal Google passwords, sell game keys that may never arrive, and get players to connect crypto wallets. Stefan Dasic, a senior malware research engineer at Malwarebytes, tracked the lures.",
@@ -84,6 +103,25 @@ export const news: NewsBrief[] = [
       "ac60aa8a",
       "hackers-breach-n-able-cloud-server-disrupting-emai-9f2069",
       "hackers-breach-n-able-cloud-server-disrupting-email-security"
+    ]
+  },
+  {
+    "slug": "hackers-deploy-overlord-rat-that-survives-windows-3c6527c9",
+    "title": "Hackers Deploy Overlord RAT That Survives Windows Resets and Crashes Systems When Terminated",
+    "summary": "A financially motivated hacking group is deploying Overlord RAT, a Windows remote access trojan that can return after a victim uses “Reset this PC.” The malware can also trigger a blue screen if a user or security tool forcibly ends its process.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-deploy-overlord-rat/",
+    "publishedAt": "2026-11-19T08:51:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-deploy-overlord-rat-that-survives-windows",
+      "article-3c6527c9",
+      "3c6527c9",
+      "hackers-deploy-overlord-rat-that-survives-windows-c592a7",
+      "hackers-deploy-overlord-rat-that-survives-windows-resets-and"
     ]
   },
   {
@@ -9781,43 +9819,6 @@ export const news: NewsBrief[] = [
       "a2e7db11",
       "osaka-city-alerts-residents-to-phishing-after-data-7fa16d",
       "osaka-city-alerts-residents-to-phishing-after-data-breach"
-    ]
-  },
-  {
-    "slug": "trezor-confirms-hardware-implants-in-safe-5-wallet-7d6ffefc",
-    "title": "Trezor Confirms Hardware Implants in Safe 5 Wallets",
-    "summary": "Trezor confirmed that three Safe 5 wallets sold by CryptoBilis contained malicious implants that exfiltrate recovery phrases over cellular networks. The implants capture seed phrases during device setup and transmit them to attackers, enabling full wallet takeover. Trezor issued a firmware patch that disables the vulnerable hardware path; users must upgrade and verify device authenticity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
-    "publishedAt": "2026-11-13T19:38:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trezor-confirms-hardware-implants-in-safe-5-wallet",
-      "article-7d6ffefc",
-      "7d6ffefc",
-      "trezor-confirms-hardware-implants-in-safe-5-wallet-4e2012",
-      "trezor-confirms-hardware-implants-in-safe-5-wallets"
-    ]
-  },
-  {
-    "slug": "cloudflare-warns-of-ai-powered-pen-testing-threats-ed7d3290",
-    "title": "Cloudflare Warns of AI-Powered Pen Testing Threats",
-    "summary": "Cloudflare reports AI-orchestrated penetration testing platforms like ARTEX can launch attacks against exposed enterprise infrastructure. These platforms automate reconnaissance, exploit publicly disclosed vulnerabilities, and harvest credentials, creating a scalable threat vector that bypasses manual testing. Cloudflare advises continuous monitoring, hardened segmentation, and AI-driven anomaly detection to mitigate critical orchestrated attacks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/",
-    "publishedAt": "2026-11-13T19:26:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-warns-of-ai-powered-pen-testing-threats",
-      "article-ed7d3290",
-      "ed7d3290",
-      "cloudflare-warns-of-ai-powered-pen-testing-threats-44a566"
     ]
   }
 ];
