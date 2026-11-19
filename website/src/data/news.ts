@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "usn-9176-1-ruby-vulnerabilities-4cae983c",
+    "title": "USN-9176-1: Ruby vulnerabilities",
+    "summary": "An attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (GHSA-34m4-m9fh-gqp5) Owais Lone discovered that Ruby incorrectly handled compiling certain large regular expressions. An attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (GHSA-3p8q-wmhx-vm2w) Stephan Lipp discovered that Ruby incorrectly handled converting certain regular expressions to strings.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9176-1",
+    "publishedAt": "2026-11-19T20:07:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9176-1-ruby-vulnerabilities",
+      "article-4cae983c",
+      "4cae983c",
+      "usn-9176-1-ruby-vulnerabilities-7e785f"
+    ]
+  },
+  {
     "slug": "drupal-core-vulnerability-enables-remote-code-exec-7d44e06d",
     "title": "Drupal Core Vulnerability Enables Remote Code Execution",
     "summary": "A remote code execution flaw exists in Drupal core versions before 10.6.22, 11.3.22, and 11.4.13, allowing attackers to execute arbitrary code. The vulnerability, identified as SA-CORE-2026-017, permits unauthenticated exploitation and could compromise site integrity and data. Drupal administrators should apply the latest patch or upgrade to a supported version as soon as the update is released.",
@@ -128,6 +146,66 @@ export const news: NewsBrief[] = [
       "8cd3859d",
       "php-releases-18-security-patches-for-critical-rce-1d7cf4",
       "php-releases-18-security-patches-for-critical-rce-flaws"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-vs-code-rce-vulnerability-08b4926a",
+    "title": "Microsoft Acknowledges VS Code RCE Vulnerability",
+    "summary": "Microsoft acknowledges CVE-2026-69370, a remote code execution flaw in Visual Studio Code product. The vulnerability permits arbitrary code execution via crafted input, but no active exploitation has been reported in the product. Microsoft has issued an informational update; users should await official patch guidance in the product for all users.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69370",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-69370"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-vs-code-rce-vulnerability",
+      "article-08b4926a",
+      "08b4926a",
+      "microsoft-acknowledges-vs-code-rce-vulnerability-745a66"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-ppp-eap-tls-rce-flaw-64a8a31b",
+    "title": "Microsoft Acknowledges PPP EAP-TLS RCE Flaw",
+    "summary": "Microsoft acknowledges CVE-2026-84015, a remote code execution flaw in the PPP EAP-TLS protocol. The vulnerability allows attackers to execute arbitrary code via crafted EAP-TLS messages, but no active exploitation has been reported. Microsoft has issued an informational update; users should await official patch guidance for all affected systems in the product.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84015",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-84015"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-ppp-eap-tls-rce-flaw",
+      "article-64a8a31b",
+      "64a8a31b",
+      "microsoft-acknowledges-ppp-eap-tls-rce-flaw-744088"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-net-rce-vulnerability-a85d6c3e",
+    "title": "Microsoft Acknowledges .NET RCE Vulnerability",
+    "summary": "Microsoft acknowledges CVE-2026-70174, a remote code execution flaw in the .NET framework. The vulnerability permits arbitrary code execution via crafted .NET payloads, but no active exploitation has been reported. Microsoft has issued an informational update; users should await official patch guidance for all affected systems in the product for all users.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70174",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-70174"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-net-rce-vulnerability",
+      "article-a85d6c3e",
+      "a85d6c3e",
+      "microsoft-acknowledges-net-rce-vulnerability-74506d"
     ]
   },
   {
@@ -280,6 +358,28 @@ export const news: NewsBrief[] = [
       "5ff570dd",
       "linux-kernel-fips-subsystem-vulnerabilities-fixed-7e78cb",
       "linux-kernel-fips-subsystem-vulnerabilities-fixed-in-usn-916"
+    ]
+  },
+  {
+    "slug": "ubuntu-fixes-kernel-vulnerabilities-in-aws-fips-cc733f24",
+    "title": "Ubuntu Fixes Kernel Vulnerabilities in AWS FIPS",
+    "summary": "Ubuntu Security Notices reports CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, kernel vulnerabilities affecting AWS FIPS-enabled Linux systems. The flaws reside in IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems, potentially enabling remote code execution or privilege escalation. Ubuntu has released an update correcting these defects; administrators should apply the latest kernel patch to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9170-2",
+    "publishedAt": "2026-11-19T15:12:06.000Z",
+    "cves": [
+      "CVE-2026-64564",
+      "CVE-2026-98432",
+      "CVE-2026-99999"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-fixes-kernel-vulnerabilities-in-aws-fips",
+      "article-cc733f24",
+      "cc733f24",
+      "ubuntu-fixes-kernel-vulnerabilities-in-aws-fips-7e7875"
     ]
   },
   {
@@ -9667,98 +9767,6 @@ export const news: NewsBrief[] = [
       "article-40b6d9d4",
       "40b6d9d4",
       "anthropic-releases-claude-mythos-5-2-fable-5-2-232a57"
-    ]
-  },
-  {
-    "slug": "uploading-id-documents-risk-mitigation-guide-2f763799",
-    "title": "Uploading ID Documents: Risk Mitigation Guide",
-    "summary": "The article addresses the security risks of uploading passports or ID documents to third-party services. It outlines potential threats such as data theft, identity fraud, and biometric misuse, emphasizing the need for secure transmission and storage. The guide recommends best practices like using encrypted channels, verifying service privacy policies, and monitoring for unauthorized access to mitigate these risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/privacy/is-it-safe-upload-passport-id-online/",
-    "publishedAt": "2026-11-16T09:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uploading-id-documents-risk-mitigation-guide",
-      "article-2f763799",
-      "2f763799",
-      "uploading-id-documents-risk-mitigation-guide-167d61"
-    ]
-  },
-  {
-    "slug": "sos-clean-utility-enables-arbitrary-file-overwrite-56ac22fb",
-    "title": "SoS Clean Utility Enables Arbitrary File Overwrite",
-    "summary": "Ubuntu’s SoS clean utility flaw permits improper symlink/hardlink validation during archive extraction, enabling arbitrary file creation or overwrite. Root cause is missing target checks, allowing local file overwrite without authentication; no public exploit yet, but abuse possible during extraction. Ubuntu patched in USN-9093-1; users should update SoS or apply the workaround to enforce strict target checks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9093-1",
-    "publishedAt": "2026-11-16T09:50:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sos-clean-utility-enables-arbitrary-file-overwrite",
-      "article-56ac22fb",
-      "56ac22fb",
-      "sos-clean-utility-enables-arbitrary-file-overwrite-7e8599"
-    ]
-  },
-  {
-    "slug": "rspamd-4-3-0-patch-stops-worker-crashes-and-forged-0b1aaa62",
-    "title": "Rspamd 4.3.0 Patch Stops Worker Crashes and Forged Auth",
-    "summary": "Rspamd 4.3.0 fixes bugs that let unauthenticated attackers crash workers or forge authentication to bypass DMARC. A single HTTP request with a header lacking a colon or an empty Deliver-To header could terminate workers, causing a denial-of-service without code execution. Administrators should upgrade to Rspamd 4.3.0 or apply the patch to remove the crash and authentication bypass.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/rspamd-4-3-0-released/",
-    "publishedAt": "2026-11-16T09:27:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rspamd-4-3-0-patch-stops-worker-crashes-and-forged",
-      "article-0b1aaa62",
-      "0b1aaa62",
-      "rspamd-4-3-0-patch-stops-worker-crashes-and-forged-2d58ca",
-      "rspamd-4-3-0-patch-stops-worker-crashes-and-forged-auth"
-    ]
-  },
-  {
-    "slug": "tor-0-4-9-17-enhances-ipv6-dos-protections-bd50295f",
-    "title": "Tor 0.4.9.17 Enhances IPv6 DoS Protections",
-    "summary": "Tor 0.4.9.17 patches multiple security issues, including a flaw in the built-in DoS defenses that mishandled IPv6 traffic. The flaw could allow attackers to trigger denial-of-service on relay nodes by sending IPv6 packets, but it does not provide remote code execution. Tor developers released the update; users should upgrade to 0.4.9.17 or apply the patch to mitigate the DoS risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/",
-    "publishedAt": "2026-11-16T08:55:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tor-0-4-9-17-enhances-ipv6-dos-protections",
-      "article-bd50295f",
-      "bd50295f",
-      "tor-0-4-9-17-enhances-ipv6-dos-protections-620d69"
-    ]
-  },
-  {
-    "slug": "microsoft-releases-emergency-windows-activation-pa-87f9e41a",
-    "title": "Microsoft Releases Emergency Windows Activation Patches",
-    "summary": "Microsoft released emergency out-of-band updates to correct Windows activation and licensing failures triggered by this month’s security patches. The flaw stemmed from a mis-handled activation state that caused legitimate users to lose license validation, creating a denial-of-service effect on activation services. Users should apply the OOB patches immediately or install the latest cumulative update to restore proper activation functionality.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
-    "publishedAt": "2026-11-16T08:26:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-releases-emergency-windows-activation-pa",
-      "article-87f9e41a",
-      "87f9e41a",
-      "microsoft-releases-emergency-windows-activation-pa-612157",
-      "microsoft-releases-emergency-windows-activation-patches"
     ]
   }
 ];

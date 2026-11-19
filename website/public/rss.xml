@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 21:01:01 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 21:49:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>USN-9176-1: Ruby vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9176-1-ruby-vulnerabilities-4cae983c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9176-1-ruby-vulnerabilities-4cae983c</guid>
+      <description><![CDATA[An attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (GHSA-34m4-m9fh-gqp5) Owais Lone discovered that Ruby incorrectly handled compiling certain large regular expressions. An attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (GHSA-3p8q-wmhx-vm2w) Stephan Lipp discovered that Ruby incorrectly handled converting certain regular expressions to strings.]]></description>
+      <pubDate>Thu, 19 Nov 2026 20:07:34 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9176-1">Ubuntu Security Notices</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Drupal Core Vulnerability Enables Remote Code Execution</title>
       <link>https://secubuzz.com/news/drupal-core-vulnerability-enables-remote-code-exec-7d44e06d</link>
@@ -60,6 +69,33 @@
       <pubDate>Thu, 19 Nov 2026 16:28:23 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Acknowledges VS Code RCE Vulnerability</title>
+      <link>https://secubuzz.com/news/microsoft-acknowledges-vs-code-rce-vulnerability-08b4926a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-vs-code-rce-vulnerability-08b4926a</guid>
+      <description><![CDATA[Microsoft acknowledges CVE-2026-69370, a remote code execution flaw in Visual Studio Code product. The vulnerability permits arbitrary code execution via crafted input, but no active exploitation has been reported in the product. Microsoft has issued an informational update; users should await official patch guidance in the product for all users.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69370">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Acknowledges PPP EAP-TLS RCE Flaw</title>
+      <link>https://secubuzz.com/news/microsoft-acknowledges-ppp-eap-tls-rce-flaw-64a8a31b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-ppp-eap-tls-rce-flaw-64a8a31b</guid>
+      <description><![CDATA[Microsoft acknowledges CVE-2026-84015, a remote code execution flaw in the PPP EAP-TLS protocol. The vulnerability allows attackers to execute arbitrary code via crafted EAP-TLS messages, but no active exploitation has been reported. Microsoft has issued an informational update; users should await official patch guidance for all affected systems in the product.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84015">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Acknowledges .NET RCE Vulnerability</title>
+      <link>https://secubuzz.com/news/microsoft-acknowledges-net-rce-vulnerability-a85d6c3e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-net-rce-vulnerability-a85d6c3e</guid>
+      <description><![CDATA[Microsoft acknowledges CVE-2026-70174, a remote code execution flaw in the .NET framework. The vulnerability permits arbitrary code execution via crafted .NET payloads, but no active exploitation has been reported. Microsoft has issued an informational update; users should await official patch guidance for all affected systems in the product for all users.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70174">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>PHP Patches Seven Critical RCE Vulnerabilities</title>
@@ -132,6 +168,15 @@
       <pubDate>Thu, 19 Nov 2026 15:12:17 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9168-2">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ubuntu Fixes Kernel Vulnerabilities in AWS FIPS</title>
+      <link>https://secubuzz.com/news/ubuntu-fixes-kernel-vulnerabilities-in-aws-fips-cc733f24</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-fixes-kernel-vulnerabilities-in-aws-fips-cc733f24</guid>
+      <description><![CDATA[Ubuntu Security Notices reports CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, kernel vulnerabilities affecting AWS FIPS-enabled Linux systems. The flaws reside in IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems, potentially enabling remote code execution or privilege escalation. Ubuntu has released an update correcting these defects; administrators should apply the latest kernel patch to mitigate the risk.]]></description>
+      <pubDate>Thu, 19 Nov 2026 15:12:06 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9170-2">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Linux Kernel Oracle Vulnerabilities CVE-2026-98432, CVE-2026-99999 Fixed</title>
@@ -411,51 +456,6 @@
       <pubDate>Thu, 19 Nov 2026 10:26:51 GMT</pubDate>
       <source url="https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GTA 6 scams are after your Google password, money, and crypto wallet</title>
-      <link>https://secubuzz.com/news/gta-6-scams-are-after-your-google-password-money-a-a23f6b54</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gta-6-scams-are-after-your-google-password-money-a-a23f6b54</guid>
-      <description><![CDATA[Scammers are using the GTA 6 launch to steal Google passwords, sell game keys that may never arrive, and get players to connect crypto wallets. Stefan Dasic, a senior malware research engineer at Malwarebytes, tracked the lures.]]></description>
-      <pubDate>Thu, 19 Nov 2026 10:09:31 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/19/gta-6-scams-threats/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ukraine arrests key members of ransomware gang that extorted $40.5 million posing as IT support</title>
-      <link>https://secubuzz.com/news/ukraine-arrests-key-members-of-ransomware-gang-tha-3cec419f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-arrests-key-members-of-ransomware-gang-tha-3cec419f</guid>
-      <description><![CDATA[Four key members of a ransomware group that took more than $40.5 million from at least 28 companies have been detained in Ukraine. The arrests followed an investigation that Ukrainian police ran with the FBI for more than two years.]]></description>
-      <pubDate>Thu, 19 Nov 2026 10:07:30 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/19/ukraine-ransomware-gang-arrests-fake-it-support-calls/">Help Net Security</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Ubuntu Releases Kernel Patch for Multiple Azure Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ubuntu-releases-kernel-patch-for-multiple-azure-vu-1b8d9d27</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-releases-kernel-patch-for-multiple-azure-vu-1b8d9d27</guid>
-      <description><![CDATA[Ubuntu issued a kernel update addressing several vulnerabilities that could allow attackers to compromise Azure-hosted systems. The flaws span USB gadget drivers, memory management, various architectures, and file system components, with no confirmed exploitation in the wild. All affected subsystems are fixed in the latest kernel release; administrators should apply the update promptly to mitigate potential compromise.]]></description>
-      <pubDate>Thu, 19 Nov 2026 09:58:38 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9160-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Target European Commission with ARTEX AI Tool in Major Cyberattack</title>
-      <link>https://secubuzz.com/news/hackers-target-european-commission-with-artex-ai-t-b79e0695</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-target-european-commission-with-artex-ai-t-b79e0695</guid>
-      <description><![CDATA[A cyberattack on the European Commission disrupted staff services for more than 10 days, leaving some employees unable to submit timesheets, request leave, or enter salary information. The EU’s cybersecurity service, CERT-EU, found that hackers used an AI tool called ARTEX, POLITICO reported on November 19, 2026.]]></description>
-      <pubDate>Thu, 19 Nov 2026 09:53:35 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/european-commission-cyberattack/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Scattered Spider Uses Phishing, SIM-Swap Tactics</title>
-      <link>https://secubuzz.com/news/scattered-spider-uses-phishing-sim-swap-tactics-ee2fede3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/scattered-spider-uses-phishing-sim-swap-tactics-ee2fede3</guid>
-      <description><![CDATA[Scattered Spider employed fake text messages and SIM-swap operations to compromise user accounts and intercept authentication codes. The actor leveraged social engineering to bypass two-factor authentication, enabling unauthorized access to corporate systems; no public exploit or CVE was disclosed. Security teams should verify phone number ownership, enable device-based authentication, and monitor for SIM-swap activity to mitigate similar attacks.]]></description>
-      <pubDate>Thu, 19 Nov 2026 09:41:18 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/11/scattered-spiders-phishing-and-sim-swap-tactics-led-to-six-year-sentence">Malwarebytes Labs</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

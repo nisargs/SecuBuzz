@@ -6387,5 +6387,10 @@
   "https://ubuntu.com/security/notices/USN-9174-1",
   "https://cybersecuritynews.com/phpaftershell-rce/",
   "https://ubuntu.com/security/notices/USN-9168-2",
-  "https://ubuntu.com/security/notices/USN-9171-2"
+  "https://ubuntu.com/security/notices/USN-9171-2",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69370",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84015",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70174",
+  "https://ubuntu.com/security/notices/USN-9170-2",
+  "https://ubuntu.com/security/notices/USN-9176-1"
 ]
