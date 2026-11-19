@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 03:40:01 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 04:47:19 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CVE-2026-114938 - OpenJDK Base64 Decoder Intrinsic Out-of-Bounds Write Issue</title>
@@ -44,6 +44,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Enterprise Linux 8 Receives Critical kpatch Updates</title>
+      <link>https://secubuzz.com/news/red-enterprise-linux-8-receives-critical-kpatch-up-377e3654</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-enterprise-linux-8-receives-critical-kpatch-up-377e3654</guid>
+      <description><![CDATA[Red Enterprise Linux 8 receives critical kpatch updates (kpatch-patch-4_18_0-553_109_1, 125_1, 158_1, 72_1, 85_1) that address multiple kernel vulnerabilities. Red Hat Product Security rates the update as Critical, with CVSS base scores linked to each CVE, indicating high-severity remote code execution risks. Administrators should apply the kpatch packages immediately to mitigate the vulnerabilities and prevent potential exploitation.]]></description>
+      <pubDate>Thu, 19 Nov 2026 01:34:33 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100525">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Enterprise Linux 10.0 Updates fence-agents with Critical Fix</title>
+      <link>https://secubuzz.com/news/red-enterprise-linux-10-0-updates-fence-agents-wit-215b1f62</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-enterprise-linux-10-0-updates-fence-agents-wit-215b1f62</guid>
+      <description><![CDATA[Red Enterprise Linux 10.0 Extended Update Support receives a critical fence-agents security update addressing multiple CVE-linked vulnerabilities. The update is rated Critical by Red Hat Product Security, with CVSS base scores provided for each referenced CVE. Systems should install the fence-agents package immediately to close the security gaps and avoid exploitation.]]></description>
+      <pubDate>Thu, 19 Nov 2026 01:31:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100633">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Critical java-21-openjdk Update for RHEL 10</title>
       <link>https://secubuzz.com/news/critical-java-21-openjdk-update-for-rhel-10-8cb4ded1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/critical-java-21-openjdk-update-for-rhel-10-8cb4ded1</guid>
@@ -69,6 +87,24 @@
       <pubDate>Thu, 19 Nov 2026 00:19:44 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100571">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>NIST Demonstrates Quantum Position Verification to Block Remote Hackers</title>
+      <link>https://secubuzz.com/news/nist-demonstrates-quantum-position-verification-to-80a33f8f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nist-demonstrates-quantum-position-verification-to-80a33f8f</guid>
+      <description><![CDATA[Physicists at the National Institute of Standards and Technology demonstrated a quantum position verification protocol using entangled photons to confirm a user's exact physical location. The research team successfully closed security loopholes in earlier quantum schemes during testing inside a facility in Boulder, Colorado.]]></description>
+      <pubDate>Thu, 19 Nov 2026 00:07:39 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/19/nist-quantum-position-verification/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Apple Releases App Store Connect API 4.6.1 Update</title>
+      <link>https://secubuzz.com/news/apple-releases-app-store-connect-api-4-6-1-update-2f7f1e5a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-app-store-connect-api-4-6-1-update-2f7f1e5a</guid>
+      <description><![CDATA[Apple released App Store Connect API 4.6.1 to improve developer integration and streamline app management. The update addresses multiple bugs, introduces new features, and enhances stability, but no security vulnerabilities were disclosed. Developers should download the new release, update their integration, and test compatibility with existing workflows to ensure compliance.]]></description>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://developer.apple.com/news/releases/?id=11182026b">Apple Security Updates</source>
+      <category>General</category>
     </item>
     <item>
       <title>Ransomware Brokers Shift Listings to Private Channels</title>
@@ -152,6 +188,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>GTA 6 Scams Threaten Accounts, Money, Crypto</title>
+      <link>https://secubuzz.com/news/gta-6-scams-threaten-accounts-money-crypto-a0dea539</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gta-6-scams-threaten-accounts-money-crypto-a0dea539</guid>
+      <description><![CDATA[Scammers target GTA 6 players with fake code offers that can compromise Google accounts, financial data, or crypto wallets. The scheme uses social engineering to trick users into providing credentials or downloading malware, exploiting the hype around the game's launch. Users should avoid unsolicited code offers, verify authenticity through official channels, and enable two-factor authentication to mitigate credential theft.]]></description>
+      <pubDate>Wed, 18 Nov 2026 22:06:05 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/scams/2026/11/gta-6-scams-could-cost-you-your-account-money-or-crypto">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Cloudflare Releases Updated Clairic Models</title>
+      <link>https://secubuzz.com/news/cloudflare-releases-updated-clairic-models-16be56c3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-releases-updated-clairic-models-16be56c3</guid>
+      <description><![CDATA[Cloudflare’s Workers AI team released updated Clairic and Clairic-flash models with open-weight architecture. The new models support more efficient extraction tasks and expand the repertoire of AI-powered services, but no security issues are reported. Developers can integrate the open-weight models via the Workers AI API to enhance text extraction capabilities.]]></description>
+      <pubDate>Wed, 18 Nov 2026 22:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/open-clairic/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Chrome for Android Update</title>
       <link>https://secubuzz.com/news/chrome-for-android-update-ce57406e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chrome-for-android-update-ce57406e</guid>
@@ -159,6 +213,15 @@
       <pubDate>Wed, 18 Nov 2026 22:00:00 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0145322301.html">Google Chrome Releases</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Russian Cold Relic APT Leverages Cloud Breaches for Impersonation</title>
+      <link>https://secubuzz.com/news/russian-cold-relic-apt-leverages-cloud-breaches-fo-5d65504b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-cold-relic-apt-leverages-cloud-breaches-fo-5d65504b</guid>
+      <description><![CDATA[The Russia-linked threat group Cold Relic is conducting targeted attacks leveraging initial access gained from compromised cloud environments. Attackers exfiltrate victim data from initial cloud breaches to orchestrate highly convincing impersonation and social engineering campaigns against secondary enterprise targets. Security teams must enforce strict identity controls and closely monitor cross-tenant cloud trust relationships to mitigate lateral expansion.]]></description>
+      <pubDate>Wed, 18 Nov 2026 21:59:46 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another">Dark Reading</source>
+      <category>Nation State</category>
     </item>
     <item>
       <title>OpenJDK 17.0.21.1 Critical Update for Portable Linux</title>
@@ -195,6 +258,15 @@
       <pubDate>Wed, 18 Nov 2026 20:58:04 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9037-2">Ubuntu Security Notices</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Coinbase Blocks $4.7M Transfers to Deepfake Scam</title>
+      <link>https://secubuzz.com/news/coinbase-blocks-4-7m-transfers-to-deepfake-scam-6e665e31</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/coinbase-blocks-4-7m-transfers-to-deepfake-scam-6e665e31</guid>
+      <description><![CDATA[Coinbase blocked $4.7 million in crypto transfers to scammers using an AI-generated deepfake of Elon Musk during a Tesla livestream that drew over 500,000 viewers. The fraud leveraged social engineering and insufficient transfer-verification controls, enabling attackers to siphon funds before detection. Coinbase’s monitoring flagged the anomaly, prompting an update to its outbound-transfer workflow that now requires authentication for large movements.]]></description>
+      <pubDate>Wed, 18 Nov 2026 20:49:32 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/">BleepingComputer</source>
+      <category>General</category>
     </item>
     <item>
       <title>Iranian Groups Hand Off Access for Destructive Attacks</title>
@@ -332,6 +404,24 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Malicious PyPI Package Impersonates Microsoft Agent Framework</title>
+      <link>https://secubuzz.com/news/malicious-pypi-package-impersonates-microsoft-agen-2cc616e2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-pypi-package-impersonates-microsoft-agen-2cc616e2</guid>
+      <description><![CDATA[Threat actors compromised Microsoft's official Agent Framework Python package hosted on the PyPI repository to execute supply chain attacks. Attackers published two malicious package versions engineered to steal cloud credentials and sensitive system information from developer environments. Security teams and developers should immediately audit Python dependencies, remove affected package versions, and rotate potentially exposed credentials.]]></description>
+      <pubDate>Wed, 18 Nov 2026 16:58:42 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>OpenJDK Runtime Vulnerability Exposes Java Applications to RCE</title>
+      <link>https://secubuzz.com/news/openjdk-runtime-vulnerability-exposes-java-applica-1c76e78e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openjdk-runtime-vulnerability-exposes-java-applica-1c76e78e</guid>
+      <description><![CDATA[An unauthenticated memory corruption flaw in the OpenJDK runtime, designated as CVE-2026-114938 and dubbed Java4Shell, impacts global enterprise applications. Discovered using artificial intelligence analysis, the vulnerability allows remote attackers to achieve arbitrary code execution and complete system takeover. Enterprise security teams must audit their Java software ecosystem and prioritize applying runtime vendor patches across all deployments.]]></description>
+      <pubDate>Wed, 18 Nov 2026 16:54:52 GMT</pubDate>
+      <source url="https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem">Dark Reading</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>OffSec Converts Recent Vulnerabilities Into Hands-On Labs</title>
       <link>https://secubuzz.com/news/offsec-converts-recent-vulnerabilities-into-hands-97d5622b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/offsec-converts-recent-vulnerabilities-into-hands-97d5622b</guid>
@@ -366,96 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DClamAV+Vulnerabilities+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1">Cisco PSIRT</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Vulnerability in Oracle OpenJDK (Java4Shell) Affecting Cisco Products: November 2026</title>
-      <link>https://secubuzz.com/news/vulnerability-in-oracle-openjdk-java4shell-affecti-e1a485fe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vulnerability-in-oracle-openjdk-java4shell-affecti-e1a485fe</guid>
-      <description><![CDATA[On November 17, 2026, Oracle announced the availability of fixes for a vulnerability in OpenJDK that could lead to remote code execution identified by CVE-2026-114938. For additional information, see the Talos blog post: Talos Threat Advisory CVE-2026-114938: Critical vulnerability in OpenJDK JAVA This advisory will be updated as additional information becomes available.]]></description>
-      <pubDate>Wed, 18 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerability+in+Oracle+OpenJDK+%28Java4Shell%29+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1">Cisco PSIRT</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Emacs Prior to 31.2 Allows Local Code Execution</title>
-      <link>https://secubuzz.com/news/emacs-prior-to-31-2-allows-local-code-execution-c938cfb4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/emacs-prior-to-31-2-allows-local-code-execution-c938cfb4</guid>
-      <description><![CDATA[GNU Emacs versions before 31.2 contain a local code execution flaw triggered by malicious .dir-locals.el files. The vulnerability bypasses auto-mode-alist checks, allowing an attacker to run arbitrary code when a user opens a file; no public exploit reported. Users should upgrade to Emacs 31.2 or later, or disable .dir-locals.el processing until a patch is released.]]></description>
-      <pubDate>Wed, 18 Nov 2026 15:37:12 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/gnu-security-advisory-av26-1173">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Armornet Launches AI-Driven Supply-Chain Risk Platform</title>
-      <link>https://secubuzz.com/news/armornet-launches-ai-driven-supply-chain-risk-plat-68fb3902</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/armornet-launches-ai-driven-supply-chain-risk-plat-68fb3902</guid>
-      <description><![CDATA[Armornet introduces an AI-driven platform that maps teams’ vendor dependencies and assigns continuous risk scores to each supplier. The solution monitors the software supply chain from code to deployment, providing real-time visibility into potential security gaps. Security teams can use the platform’s insights to prioritize remediation and enforce stricter vendor controls.]]></description>
-      <pubDate>Wed, 18 Nov 2026 15:20:34 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/armornet-ai-software-supply-chain-vendor-security/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Russian State Hackers Exploit Stolen Cloud Data for Espionage</title>
-      <link>https://secubuzz.com/news/russian-state-hackers-exploit-stolen-cloud-data-fo-31d1ba6a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-state-hackers-exploit-stolen-cloud-data-fo-31d1ba6a</guid>
-      <description><![CDATA[Russian state-backed threat actors leverage stolen cloud credentials to impersonate legitimate contacts and infiltrate target organizations. The method bypasses authentication, granting attackers access to internal networks and enabling data exfiltration from professional contacts; no specific vulnerability exploitation is reported. Security teams should enforce multi-factor authentication, monitor for anomalous login patterns, and review cloud access logs for suspicious activity.]]></description>
-      <pubDate>Wed, 18 Nov 2026 15:15:00 GMT</pubDate>
-      <source url="https://therecord.media/russia-cyber-espionage-google">The Record</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>NGINX Unauthenticated RCE via HTTP/2 CVE-2026-123633, CVE-2026-123007</title>
-      <link>https://secubuzz.com/news/nginx-unauthenticated-rce-via-http-2-cve-2026-1236-d89a704c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nginx-unauthenticated-rce-via-http-2-cve-2026-1236-d89a704c</guid>
-      <description><![CDATA[NGINX suffers unauthenticated RCE via CVE-2026-123633 and CVE-2026-123007, exploiting HTTP/2 parsing to compromise web servers, APIs, and sensitive data. The flaw allows arbitrary code execution without authentication, a high-severity RCE with a CVSS score above 9.0. NGINX released an out-of-band patch updating the HTTP/2 parser; apply it immediately and disable HTTP/2 on legacy systems as a temporary fix.]]></description>
-      <pubDate>Wed, 18 Nov 2026 15:13:20 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">Wiz Research</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters</title>
-      <link>https://secubuzz.com/news/from-deepfakes-to-helpdesk-impersonation-why-stron-19bda175</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/from-deepfakes-to-helpdesk-impersonation-why-stron-19bda175</guid>
-      <description><![CDATA[Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering threats.]]></description>
-      <pubDate>Wed, 18 Nov 2026 15:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cloudflare WAF Blocks Java4Shell Exploit</title>
-      <link>https://secubuzz.com/news/cloudflare-waf-blocks-java4shell-exploit-7a6ccdff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-waf-blocks-java4shell-exploit-7a6ccdff</guid>
-      <description><![CDATA[Java4Shell, a critical memory-corruption flaw in OpenJDK’s Base64 decoder, allows remote code execution on affected Java runtimes. Identified as CVE-2026-114938, the vulnerability exploits a decoder buffer overflow triggered by crafted Base64 payloads, enabling unauthenticated code execution. Cloudflare’s WAF now offers six managed rules that log matching requests by default; organizations should also apply the latest OpenJDK patches.]]></description>
-      <pubDate>Wed, 18 Nov 2026 14:52:10 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/java4shell-waf-protection/">Cloudflare Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>British Hacker Sentenced Six Years for Crypto Theft</title>
-      <link>https://secubuzz.com/news/british-hacker-sentenced-six-years-for-crypto-thef-38b8c730</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/british-hacker-sentenced-six-years-for-crypto-thef-38b8c730</guid>
-      <description><![CDATA[Tyler Robert Buchanan, a 24-year-old from Dundee, received a six-year prison sentence for orchestrating an $11.6 million cryptocurrency theft operation. Microsoft labeled the group as one of the most dangerous financial criminal collectives, targeting victims via phishing and credential theft. Law enforcement agencies should continue monitoring for related phishing campaigns and enforce stricter credential hygiene to mitigate similar attacks.]]></description>
-      <pubDate>Wed, 18 Nov 2026 14:48:00 GMT</pubDate>
-      <source url="https://therecord.media/british-hacker-gets-six-year-sentence-scattered-spider">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OX Security Unveils OX Radar and Response Center</title>
-      <link>https://secubuzz.com/news/ox-security-unveils-ox-radar-and-response-center-e1b217b8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ox-security-unveils-ox-radar-and-response-center-e1b217b8</guid>
-      <description><![CDATA[OX Security launched OX Radar and Response Center, a platform that automatically monitors critical vulnerabilities and supply chain threats for customers. The system aggregates threat data, evaluates exposure, and prioritizes remediation, enabling teams to focus on high-priority risks. No vendor patch is required; organizations should integrate the tool into existing workflows for continuous threat visibility.]]></description>
-      <pubDate>Wed, 18 Nov 2026 14:30:20 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ox-security-ox-radar-response-center/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks</title>
-      <link>https://secubuzz.com/news/new-eggstreme-malware-variant-goes-silent-to-evade-3d8d99c0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/new-eggstreme-malware-variant-goes-silent-to-evade-3d8d99c0</guid>
-      <description><![CDATA[The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. "When attackers are exposed, the cheap response is to rotate," Bitdefender said in a technical report shared with The Hacker News.]]></description>
-      <pubDate>Wed, 18 Nov 2026 14:11:28 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html">The Hacker News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

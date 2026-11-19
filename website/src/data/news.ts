@@ -89,6 +89,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-enterprise-linux-8-receives-critical-kpatch-up-377e3654",
+    "title": "Red Enterprise Linux 8 Receives Critical kpatch Updates",
+    "summary": "Red Enterprise Linux 8 receives critical kpatch updates (kpatch-patch-4_18_0-553_109_1, 125_1, 158_1, 72_1, 85_1) that address multiple kernel vulnerabilities. Red Hat Product Security rates the update as Critical, with CVSS base scores linked to each CVE, indicating high-severity remote code execution risks. Administrators should apply the kpatch packages immediately to mitigate the vulnerabilities and prevent potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100525",
+    "publishedAt": "2026-11-19T01:34:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-enterprise-linux-8-receives-critical-kpatch-up",
+      "article-377e3654",
+      "377e3654",
+      "red-enterprise-linux-8-receives-critical-kpatch-up-2ee080",
+      "red-enterprise-linux-8-receives-critical-kpatch-updates"
+    ]
+  },
+  {
+    "slug": "red-enterprise-linux-10-0-updates-fence-agents-wit-215b1f62",
+    "title": "Red Enterprise Linux 10.0 Updates fence-agents with Critical Fix",
+    "summary": "Red Enterprise Linux 10.0 Extended Update Support receives a critical fence-agents security update addressing multiple CVE-linked vulnerabilities. The update is rated Critical by Red Hat Product Security, with CVSS base scores provided for each referenced CVE. Systems should install the fence-agents package immediately to close the security gaps and avoid exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100633",
+    "publishedAt": "2026-11-19T01:31:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-enterprise-linux-10-0-updates-fence-agents-wit",
+      "article-215b1f62",
+      "215b1f62",
+      "red-enterprise-linux-10-0-updates-fence-agents-wit-2ee084",
+      "red-enterprise-linux-10-0-updates-fence-agents-with-critical"
+    ]
+  },
+  {
     "slug": "critical-java-21-openjdk-update-for-rhel-10-8cb4ded1",
     "title": "Critical java-21-openjdk Update for RHEL 10",
     "summary": "Red Hat released a critical security update for java-21-openjdk on RHEL 10, addressing multiple high-severity vulnerabilities. The update, rated as Critical by Red Hat Product Security, contains patches for CVEs that could allow remote code execution with a CVSS score above 8.0. Administrators should apply the update immediately or upgrade to the latest RHEL 10 release to ensure protection.",
@@ -141,6 +179,43 @@ export const news: NewsBrief[] = [
       "83dfab4f",
       "red-hat-releases-critical-java-25-openjdk-update-f-2ee081",
       "red-hat-releases-critical-java-25-openjdk-update-for-rhel-9"
+    ]
+  },
+  {
+    "slug": "nist-demonstrates-quantum-position-verification-to-80a33f8f",
+    "title": "NIST Demonstrates Quantum Position Verification to Block Remote Hackers",
+    "summary": "Physicists at the National Institute of Standards and Technology demonstrated a quantum position verification protocol using entangled photons to confirm a user's exact physical location. The research team successfully closed security loopholes in earlier quantum schemes during testing inside a facility in Boulder, Colorado.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/nist-quantum-position-verification/",
+    "publishedAt": "2026-11-19T00:07:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nist-demonstrates-quantum-position-verification-to",
+      "article-80a33f8f",
+      "80a33f8f",
+      "nist-demonstrates-quantum-position-verification-to-5575a2",
+      "nist-demonstrates-quantum-position-verification-to-block-rem"
+    ]
+  },
+  {
+    "slug": "apple-releases-app-store-connect-api-4-6-1-update-2f7f1e5a",
+    "title": "Apple Releases App Store Connect API 4.6.1 Update",
+    "summary": "Apple released App Store Connect API 4.6.1 to improve developer integration and streamline app management. The update addresses multiple bugs, introduces new features, and enhances stability, but no security vulnerabilities were disclosed. Developers should download the new release, update their integration, and test compatibility with existing workflows to ensure compliance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11182026b",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-app-store-connect-api-4-6-1-update",
+      "article-2f7f1e5a",
+      "2f7f1e5a",
+      "apple-releases-app-store-connect-api-4-6-1-update-5bd3d7"
     ]
   },
   {
@@ -346,6 +421,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "gta-6-scams-threaten-accounts-money-crypto-a0dea539",
+    "title": "GTA 6 Scams Threaten Accounts, Money, Crypto",
+    "summary": "Scammers target GTA 6 players with fake code offers that can compromise Google accounts, financial data, or crypto wallets. The scheme uses social engineering to trick users into providing credentials or downloading malware, exploiting the hype around the game's launch. Users should avoid unsolicited code offers, verify authenticity through official channels, and enable two-factor authentication to mitigate credential theft.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/11/gta-6-scams-could-cost-you-your-account-money-or-crypto",
+    "publishedAt": "2026-11-18T22:06:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gta-6-scams-threaten-accounts-money-crypto",
+      "article-a0dea539",
+      "a0dea539",
+      "gta-6-scams-threaten-accounts-money-crypto-5a292d"
+    ]
+  },
+  {
+    "slug": "cloudflare-releases-updated-clairic-models-16be56c3",
+    "title": "Cloudflare Releases Updated Clairic Models",
+    "summary": "Cloudflare’s Workers AI team released updated Clairic and Clairic-flash models with open-weight architecture. The new models support more efficient extraction tasks and expand the repertoire of AI-powered services, but no security issues are reported. Developers can integrate the open-weight models via the Workers AI API to enhance text extraction capabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/open-clairic/",
+    "publishedAt": "2026-11-18T22:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-releases-updated-clairic-models",
+      "article-16be56c3",
+      "16be56c3",
+      "cloudflare-releases-updated-clairic-models-6fe107"
+    ]
+  },
+  {
     "slug": "chrome-for-android-update-ce57406e",
     "title": "Chrome for Android Update",
     "summary": "We've just released Chrome 159 (159.0.8154.18) for Android to a small percentage of users. It'll become available on Google Play over the next few days. If you find a new issue, please let us know by filing a bug .",
@@ -361,6 +472,25 @@ export const news: NewsBrief[] = [
       "article-ce57406e",
       "ce57406e",
       "chrome-for-android-update-4a431e"
+    ]
+  },
+  {
+    "slug": "russian-cold-relic-apt-leverages-cloud-breaches-fo-5d65504b",
+    "title": "Russian Cold Relic APT Leverages Cloud Breaches for Impersonation",
+    "summary": "The Russia-linked threat group Cold Relic is conducting targeted attacks leveraging initial access gained from compromised cloud environments. Attackers exfiltrate victim data from initial cloud breaches to orchestrate highly convincing impersonation and social engineering campaigns against secondary enterprise targets. Security teams must enforce strict identity controls and closely monitor cross-tenant cloud trust relationships to mitigate lateral expansion.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
+    "publishedAt": "2026-11-18T21:59:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russian-cold-relic-apt-leverages-cloud-breaches-fo",
+      "article-5d65504b",
+      "5d65504b",
+      "russian-cold-relic-apt-leverages-cloud-breaches-fo-2eca1e",
+      "russian-cold-relic-apt-leverages-cloud-breaches-for-imperson"
     ]
   },
   {
@@ -447,6 +577,24 @@ export const news: NewsBrief[] = [
       "article-f71ac02e",
       "f71ac02e",
       "usn-9037-2-hplip-regression-7e8844"
+    ]
+  },
+  {
+    "slug": "coinbase-blocks-4-7m-transfers-to-deepfake-scam-6e665e31",
+    "title": "Coinbase Blocks $4.7M Transfers to Deepfake Scam",
+    "summary": "Coinbase blocked $4.7 million in crypto transfers to scammers using an AI-generated deepfake of Elon Musk during a Tesla livestream that drew over 500,000 viewers. The fraud leveraged social engineering and insufficient transfer-verification controls, enabling attackers to siphon funds before detection. Coinbase’s monitoring flagged the anomaly, prompting an update to its outbound-transfer workflow that now requires authentication for large movements.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
+    "publishedAt": "2026-11-18T20:49:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "coinbase-blocks-4-7m-transfers-to-deepfake-scam",
+      "article-6e665e31",
+      "6e665e31",
+      "coinbase-blocks-4-7m-transfers-to-deepfake-scam-28cf16"
     ]
   },
   {
@@ -737,6 +885,46 @@ export const news: NewsBrief[] = [
       "0ec06f71",
       "critical-apache-roller-rce-flaw-under-active-explo-4e2bbc",
       "critical-apache-roller-rce-flaw-under-active-exploitation-no"
+    ]
+  },
+  {
+    "slug": "malicious-pypi-package-impersonates-microsoft-agen-2cc616e2",
+    "title": "Malicious PyPI Package Impersonates Microsoft Agent Framework",
+    "summary": "Threat actors compromised Microsoft's official Agent Framework Python package hosted on the PyPI repository to execute supply chain attacks. Attackers published two malicious package versions engineered to steal cloud credentials and sensitive system information from developer environments. Security teams and developers should immediately audit Python dependencies, remove affected package versions, and rotate potentially exposed credentials.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+    "publishedAt": "2026-11-18T16:58:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-pypi-package-impersonates-microsoft-agen",
+      "article-2cc616e2",
+      "2cc616e2",
+      "malicious-pypi-package-impersonates-microsoft-agen-4d12ee",
+      "malicious-pypi-package-impersonates-microsoft-agent-framewor"
+    ]
+  },
+  {
+    "slug": "openjdk-runtime-vulnerability-exposes-java-applica-1c76e78e",
+    "title": "OpenJDK Runtime Vulnerability Exposes Java Applications to RCE",
+    "summary": "An unauthenticated memory corruption flaw in the OpenJDK runtime, designated as CVE-2026-114938 and dubbed Java4Shell, impacts global enterprise applications. Discovered using artificial intelligence analysis, the vulnerability allows remote attackers to achieve arbitrary code execution and complete system takeover. Enterprise security teams must audit their Java software ecosystem and prioritize applying runtime vendor patches across all deployments.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem",
+    "publishedAt": "2026-11-18T16:54:52.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openjdk-runtime-vulnerability-exposes-java-applica",
+      "article-1c76e78e",
+      "1c76e78e",
+      "openjdk-runtime-vulnerability-exposes-java-applica-6dc22d",
+      "openjdk-runtime-vulnerability-exposes-java-applications-to-r"
     ]
   },
   {
@@ -1907,6 +2095,44 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "krita-abr-parser-heap-overflow-enables-remote-code-30e9f21e",
+    "title": "Krita ABR Parser Heap Overflow Enables Remote Code Execution",
+    "summary": "Krita’s ABR file parser contains a heap-based buffer overflow that permits remote code execution when a user opens a malicious file. Rated CVSS 7.8, the flaw needs user interaction and could let attackers run arbitrary code on affected installations. Krita has not yet released a patch; users should avoid opening unknown ABR files and apply updates promptly when available.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1011/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "krita-abr-parser-heap-overflow-enables-remote-code",
+      "article-30e9f21e",
+      "30e9f21e",
+      "krita-abr-parser-heap-overflow-enables-remote-code-77f33c",
+      "krita-abr-parser-heap-overflow-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "krita-jc2-parser-heap-overflow-enables-remote-code-5bfc19fb",
+    "title": "Krita JC2 Parser Heap Overflow Enables Remote Code Execution",
+    "summary": "Krita’s JC2 file parser contains a heap-based buffer overflow that permits remote code execution when a user opens a malicious file. Rated CVSS 7.8, the flaw requires user interaction and could allow attackers to run arbitrary code on affected installations. Krita has not yet issued a patch; users should avoid opening unknown JC2 files and apply updates promptly when released.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1010/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "krita-jc2-parser-heap-overflow-enables-remote-code",
+      "article-5bfc19fb",
+      "5bfc19fb",
+      "krita-jc2-parser-heap-overflow-enables-remote-code-77f33b",
+      "krita-jc2-parser-heap-overflow-enables-remote-code-execution"
     ]
   },
   {
@@ -9630,257 +9856,6 @@ export const news: NewsBrief[] = [
       "cb500912",
       "microsoft-edge-addresses-chromium-uninitialized-re-1fdbda",
       "microsoft-edge-addresses-chromium-uninitialized-resource-cve"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-addresses-chromium-incorrect-author-02158395",
-    "title": "Microsoft Edge Addresses Chromium Incorrect Authorization CVE",
-    "summary": "Chromium vulnerability CVE-2026-126854 permits incorrect authorization that could grant unauthorized access to privileged browser resources. The flaw originates from a missing access control check during resource loading; no public exploit is known, but it could enable privilege escalation. Microsoft Edge incorporates the Chromium patch automatically; users should update via Windows Update or the Edge browser to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126854",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126854"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-addresses-chromium-incorrect-author",
-      "article-02158395",
-      "02158395",
-      "microsoft-edge-addresses-chromium-incorrect-author-1fdbda",
-      "microsoft-edge-addresses-chromium-incorrect-authorization-cv"
-    ]
-  },
-  {
-    "slug": "chromium-uninitialized-resource-cve-2026-126845-d860a4e3",
-    "title": "Chromium Uninitialized Resource CVE-2026-126845",
-    "summary": "CVE-2026-126845 is an uninitialized resource flaw discovered in Chromium that could allow memory corruption. Microsoft Edge incorporates Chromium, which includes the patch that mitigates this vulnerability, and users should verify their browser version. No active exploitation has been reported; however, updating to the latest Edge release is recommended to ensure protection.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126845",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126845"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-uninitialized-resource-cve-2026-126845",
-      "article-d860a4e3",
-      "d860a4e3",
-      "chromium-uninitialized-resource-cve-2026-126845-1fdbda"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-addresses-chromium-type-confusion-c-147f89f1",
-    "title": "Microsoft Edge Addresses Chromium Type Confusion CVE-2026-126847",
-    "summary": "A type-confusion flaw, CVE-2026-126847, was found in Chromium, impacting Microsoft Edge’s rendering engine. The bug allows memory corruption from malformed input, enabling remote code execution; a public PoC exists and CVSS is 8.5. Microsoft released an update that incorporates Chromium’s fix; users should install the latest Edge version or apply the patch from Google Chrome releases.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126847",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126847"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-addresses-chromium-type-confusion-c",
-      "article-147f89f1",
-      "147f89f1",
-      "microsoft-edge-addresses-chromium-type-confusion-c-1fdbda",
-      "microsoft-edge-addresses-chromium-type-confusion-cve-2026-12"
-    ]
-  },
-  {
-    "slug": "chromium-uninitialized-resource-vulnerability-cve-7a3c43a9",
-    "title": "Chromium Uninitialized Resource Vulnerability CVE-2026-126848",
-    "summary": "Chromium’s CVE-2026-126848 flaw involves an uninitialized resource during rendering that could trigger crashes or memory corruption. The issue is assigned by Google, and Microsoft Edge (Chromium-based) incorporates the fix automatically in its updates. Users should install the latest Microsoft Edge release to ensure the patch is applied and prevent potential instability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126848",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126848"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-uninitialized-resource-vulnerability-cve",
-      "article-7a3c43a9",
-      "7a3c43a9",
-      "chromium-uninitialized-resource-vulnerability-cve-1fdbda",
-      "chromium-uninitialized-resource-vulnerability-cve-2026-12684"
-    ]
-  },
-  {
-    "slug": "chromium-type-confusion-vulnerability-cve-2026-126-91e8e290",
-    "title": "Chromium Type Confusion Vulnerability CVE-2026-126849",
-    "summary": "Chromium’s CVE-2026-126849 flaw is a type confusion bug that may lead to memory corruption. The vulnerability is assigned by Google, and Microsoft Edge (Chromium-based) incorporates the fix automatically in its updates. Users should update to the latest Microsoft Edge release to ensure the patch is applied and mitigate potential exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126849",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126849"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-type-confusion-vulnerability-cve-2026-126",
-      "article-91e8e290",
-      "91e8e290",
-      "chromium-type-confusion-vulnerability-cve-2026-126-1fdbda",
-      "chromium-type-confusion-vulnerability-cve-2026-126849"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-addresses-chromium-cve-2026-126840-8109ecb0",
-    "title": "Microsoft Edge Addresses Chromium CVE-2026-126840 Write",
-    "summary": "Microsoft Edge incorporates Chromium updates that fix CVE-2026-126840, an out-of-bounds write vulnerability discovered in Chrome. The flaw could allow attackers to corrupt memory and potentially execute arbitrary code if exploited. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126840",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126840"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-addresses-chromium-cve-2026-126840",
-      "article-8109ecb0",
-      "8109ecb0",
-      "microsoft-edge-addresses-chromium-cve-2026-126840-1fdbda",
-      "microsoft-edge-addresses-chromium-cve-2026-126840-write"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-addresses-chromium-cve-2026-126841-0158137c",
-    "title": "Microsoft Edge Addresses Chromium CVE-2026-126841 Read",
-    "summary": "Microsoft Edge incorporates Chromium updates that fix CVE-2026-126841, an out-of-bounds read vulnerability discovered in Chrome. The flaw could allow attackers to read sensitive memory contents, potentially exposing confidential data. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today now.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126841",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126841"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-addresses-chromium-cve-2026-126841",
-      "article-0158137c",
-      "0158137c",
-      "microsoft-edge-addresses-chromium-cve-2026-126841-1fdbda",
-      "microsoft-edge-addresses-chromium-cve-2026-126841-read"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-patches-upstream-chromium-type-conf-5f32eed9",
-    "title": "Microsoft Edge Patches Upstream Chromium Type Confusion Flaw",
-    "summary": "Microsoft Edge received an update to address a security flaw ingested from the upstream Chromium browser engine. Tracked as CVE-2026-126843, the vulnerability stems from a type confusion memory condition inside the core browser component. Users and administrators should apply the latest Microsoft Edge security update and consult Google Chrome release documentation for advisories.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126843",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126843"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-patches-upstream-chromium-type-conf",
-      "article-5f32eed9",
-      "5f32eed9",
-      "microsoft-edge-patches-upstream-chromium-type-conf-1fdbda",
-      "microsoft-edge-patches-upstream-chromium-type-confusion-flaw"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-resolves-upstream-chromium-uninitia-f12df09f",
-    "title": "Microsoft Edge Resolves Upstream Chromium Uninitialized Resource Vulnerability",
-    "summary": "Microsoft updated its Edge browser to integrate upstream security fixes from the underlying Chromium platform. Registered as CVE-2026-126844, the root cause involves an uninitialized resource vulnerability within the core browser architecture. System administrators are advised to update Microsoft Edge to the newest version and review corresponding official Google Chrome release notes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126844",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-126844"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-resolves-upstream-chromium-uninitia",
-      "article-f12df09f",
-      "f12df09f",
-      "microsoft-edge-resolves-upstream-chromium-uninitia-1fdbda",
-      "microsoft-edge-resolves-upstream-chromium-uninitialized-reso"
-    ]
-  },
-  {
-    "slug": "microsoft-patches-print-spooler-privilege-escalati-a48cea58",
-    "title": "Microsoft Patches Print Spooler Privilege Escalation",
-    "summary": "A Windows Print Spooler Components Elevation of Privilege vulnerability (CVE-2026-112765) was disclosed. The flaw allows local privilege escalation by manipulating spooler service components, potentially enabling an attacker to gain SYSTEM rights; no active exploitation reported. Microsoft has released a patch in the latest cumulative update; administrators should apply the update promptly.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112765",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-112765"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patches-print-spooler-privilege-escalati",
-      "article-a48cea58",
-      "a48cea58",
-      "microsoft-patches-print-spooler-privilege-escalati-1febc6",
-      "microsoft-patches-print-spooler-privilege-escalation"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-125342-uninitialized-resource-fi-989bb965",
-    "title": "Chromium CVE-2026-125342 Uninitialized Resource Fixed",
-    "summary": "Chromium CVE-2026-125342, an uninitialized resource flaw, was assigned by Google. The vulnerability could lead to undefined behavior in Chromium-based browsers, potentially exposing memory contents; currently no exploitation evidence reported in the wild. Microsoft Edge incorporates the Chromium fix; users should update to the latest Edge release to mitigate the issue.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125342",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-125342"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-125342-uninitialized-resource-fi",
-      "article-989bb965",
-      "989bb965",
-      "chromium-cve-2026-125342-uninitialized-resource-fi-1fdc61",
-      "chromium-cve-2026-125342-uninitialized-resource-fixed"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-patches-chromium-type-confusion-cve-7a337439",
-    "title": "Microsoft Edge Patches Chromium Type Confusion CVE-2026-125344",
-    "summary": "Microsoft Edge is affected by Chromium vulnerability CVE-2026-125344, a type confusion issue inherited through its Chromium-based browser engine. The flaw stems from incorrect type handling in Chromium, which Microsoft Edge ingests and addresses through Chromium updates. Security teams should apply available Microsoft Edge updates containing the Chromium fix to remediate the vulnerability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125344",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-125344"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-patches-chromium-type-confusion-cve",
-      "article-7a337439",
-      "7a337439",
-      "microsoft-edge-patches-chromium-type-confusion-cve-1fdc61",
-      "microsoft-edge-patches-chromium-type-confusion-cve-2026-1253"
     ]
   }
 ];
