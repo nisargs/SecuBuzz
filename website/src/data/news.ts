@@ -11,6 +11,120 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "gatekeeper-asymmetry-makes-llms-more-vulnerable-7a2b859f",
+    "title": "Gatekeeper Asymmetry Makes LLMs More Vulnerable",
+    "summary": "The paper introduces gatekeeper asymmetry doom, asserting that when input vetting is weaker than processing, vulnerability is inevitable. Authors illustrate the principle with examples across security domains, showing limited input validation can cause catastrophic failures in powerful LLMs. The study urges stronger gatekeeping and hard-problem reliance to mitigate asymmetry in advanced AI systems.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/",
+    "publishedAt": "2026-11-19T13:19:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gatekeeper-asymmetry-makes-llms-more-vulnerable",
+      "article-7a2b859f",
+      "7a2b859f",
+      "gatekeeper-asymmetry-makes-llms-more-vulnerable-4ced8c"
+    ]
+  },
+  {
+    "slug": "cisa-warns-hackers-are-actively-exploiting-four-fl-3f05fb63",
+    "title": "CISA Warns Hackers Are Actively Exploiting Four Flaws in Synology, LiteLLM, Apache Axis and REDCap",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added four flaws to its Known Exploited Vulnerabilities (KEV) catalog on November 18, 2026, after finding evidence that attackers were already exploiting them. The entries cover Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis and Vanderbilt University’s Research Electronic Data Capture platform, better known as REDCap.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/flaws-in-synology-litellm-apache-axis-and-redcap/",
+    "publishedAt": "2026-11-19T13:06:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-warns-hackers-are-actively-exploiting-four-fl",
+      "article-3f05fb63",
+      "3f05fb63",
+      "cisa-warns-hackers-are-actively-exploiting-four-fl-67f111",
+      "cisa-warns-hackers-are-actively-exploiting-four-flaws-in-syn"
+    ]
+  },
+  {
+    "slug": "chrome-158-fixes-six-critical-flaws-139afb67",
+    "title": "Chrome 158 Fixes Six Critical Flaws",
+    "summary": "Google released Chrome 158, addressing 204 security issues, including six critical vulnerabilities. Two of the critical flaws were identified using AI-assisted analysis, highlighting the role of machine learning in vulnerability discovery. Users should update to Chrome 158 immediately to mitigate the disclosed vulnerabilities and maintain secure browsing and protect against exploitation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/chrome-patches-six-critical-flaws-two-found-with-ais-help",
+    "publishedAt": "2026-11-19T12:38:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-158-fixes-six-critical-flaws",
+      "article-139afb67",
+      "139afb67",
+      "chrome-158-fixes-six-critical-flaws-745b88"
+    ]
+  },
+  {
+    "slug": "microsoft-365-mfa-bypassed-via-device-code-phishin-6ca870f6",
+    "title": "Microsoft 365 MFA Bypassed via Device Code Phishing",
+    "summary": "Hackers hijacked Microsoft 365 accounts by sending fake payment notices that redirect users to a legitimate Microsoft sign-in page. The attack exploits the device code flow’s lack of MFA enforcement, letting attackers obtain tokens without credential verification. Microsoft recommends disabling device code authentication for sensitive workloads and enforcing MFA; users should verify invoice authenticity before signing in.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/device-code-authentication/",
+    "publishedAt": "2026-11-19T12:26:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-365-mfa-bypassed-via-device-code-phishin",
+      "article-6ca870f6",
+      "6ca870f6",
+      "microsoft-365-mfa-bypassed-via-device-code-phishin-1a5b88",
+      "microsoft-365-mfa-bypassed-via-device-code-phishing"
+    ]
+  },
+  {
+    "slug": "stepsecurity-raises-20m-for-supply-chain-defense-0bdac8bf",
+    "title": "StepSecurity Raises $20M for Supply Chain Defense",
+    "summary": "StepSecurity announced a $20M funding round to expand its supply chain protection platform. The capital will accelerate development and distribution of its security solutions, targeting supply chain risk mitigation for enterprises and supporting rapid scaling. No immediate patch or vulnerability; the announcement signals investment in future defensive capabilities within the cybersecurity market.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/",
+    "publishedAt": "2026-11-19T12:23:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "stepsecurity-raises-20m-for-supply-chain-defense",
+      "article-0bdac8bf",
+      "0bdac8bf",
+      "stepsecurity-raises-20m-for-supply-chain-defense-3066df"
+    ]
+  },
+  {
+    "slug": "palo-alto-pan-os-exposed-to-php-rce-vulnerabilitie-bee3de34",
+    "title": "Palo Alto PAN-OS Exposed to PHP RCE Vulnerabilities",
+    "summary": "Palo Alto Networks confirmed attackers exploited two PHP flaws, CVE-2026-109618 and CVE-2026-109619, on PAN-OS interfaces exposed to the internet. Both flaws allow unauthenticated remote code execution on the web server, enabling attackers to run arbitrary code without credentials. Palo Alto released patches; administrators should apply updates immediately and restrict internet exposure of management interfaces.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+    "publishedAt": "2026-11-19T11:52:23.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-pan-os-exposed-to-php-rce-vulnerabilitie",
+      "article-bee3de34",
+      "bee3de34",
+      "palo-alto-pan-os-exposed-to-php-rce-vulnerabilitie-7cae08",
+      "palo-alto-pan-os-exposed-to-php-rce-vulnerabilities"
+    ]
+  },
+  {
     "slug": "backbox-linux-10-brings-new-hacking-tools-and-ubun-6d23a266",
     "title": "BackBox Linux 10 brings new hacking tools and Ubuntu 26.04 support",
     "summary": "BackBox Linux is a free, open source penetration testing distribution made by BackBox, a non-profit community project that keeps its own repositories of ethical hacking tools. On November 19 the project released version 10, codenamed Resolute Raccoon. It’s built for compatibility with Ubuntu 26.04 LTS and ships with the Linux 7.0 kernel and the Xfce 4.20 desktop.",
@@ -45,6 +159,24 @@ export const news: NewsBrief[] = [
       "article-194f7fa9",
       "194f7fa9",
       "n-able-breach-management-access-disabled-7c0bb7"
+    ]
+  },
+  {
+    "slug": "splunk-releases-patches-for-140-vulnerabilities-1a0c32e8",
+    "title": "Splunk Releases Patches for 140 Vulnerabilities",
+    "summary": "Splunk released security updates addressing nearly 140 critical and high-severity flaws across its three core products. The vulnerabilities enabled authentication bypass, remote code execution, and privilege escalation, with CVSS scores ranging from 7.0 to 9.8, and public proof-of-concept exploits were available for several. All affected products now ship patched versions; administrators should apply the updates immediately to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/",
+    "publishedAt": "2026-11-19T10:41:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "splunk-releases-patches-for-140-vulnerabilities",
+      "article-1a0c32e8",
+      "1a0c32e8",
+      "splunk-releases-patches-for-140-vulnerabilities-317d2f"
     ]
   },
   {
@@ -216,6 +348,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ruby-fixes-7-regex-string-flaws-warns-5-rce-pocs-c6ac8bc7",
+    "title": "Ruby Fixes 7 Regex/String Flaws, Warns 5 RCE PoCs",
+    "summary": "Ruby released patches for seven memory-safety flaws in its regular expression engine and string case-conversion code. Five of those defects have proof-of-concept exploits that allow crafted input to trigger remote code execution on affected systems. The maintainers advise users to upgrade to the fixed Ruby versions immediately to eliminate the RCE risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+    "publishedAt": "2026-11-19T08:42:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ruby-fixes-7-regex-string-flaws-warns-5-rce-pocs",
+      "article-c6ac8bc7",
+      "c6ac8bc7",
+      "ruby-fixes-7-regex-string-flaws-warns-5-rce-pocs-6d49f3"
+    ]
+  },
+  {
     "slug": "ruby2-hell-critical-one-byte-heap-overflow-in-ruby-ff7850cf",
     "title": "ruby2ßhell: Critical One-Byte Heap Overflow in Ruby Could Allow RCE Attacks",
     "summary": "Ruby has patched a critical memory corruption flaw that can allow remote code execution (RCE) on vulnerable servers. Tracked as GHSA-34m4-m9fh-gqp5 and named ruby2ßhell by Veria Labs, the flaw affects Ruby’s string case conversion code.",
@@ -290,6 +440,25 @@ export const news: NewsBrief[] = [
       "3d27f789",
       "us-enlists-private-firms-to-cut-scammers-off-from-ed762c",
       "us-enlists-private-firms-to-cut-scammers-off-from-victims-ca"
+    ]
+  },
+  {
+    "slug": "researcher-demonstrates-rce-in-postgresql-mysql-or-1d1c9f59",
+    "title": "Researcher Demonstrates RCE in PostgreSQL, MySQL, Oracle",
+    "summary": "A researcher demonstrated remote code execution exploits against PostgreSQL, MySQL, and Oracle databases using low-privilege accounts. The attacks leveraged memory-corruption bugs in the database engines, allowing code execution on the server without table read permissions. No vendor patches are currently available; administrators should restrict low-privilege access and monitor for anomalous activity until mitigations are released.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+    "publishedAt": "2026-11-19T08:14:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researcher-demonstrates-rce-in-postgresql-mysql-or",
+      "article-1d1c9f59",
+      "1d1c9f59",
+      "researcher-demonstrates-rce-in-postgresql-mysql-or-2444d1",
+      "researcher-demonstrates-rce-in-postgresql-mysql-oracle"
     ]
   },
   {
@@ -9601,200 +9770,6 @@ export const news: NewsBrief[] = [
       "c2b1397a",
       "ai-overreliance-threatens-cybersecurity-effectiven-565c02",
       "ai-overreliance-threatens-cybersecurity-effectiveness"
-    ]
-  },
-  {
-    "slug": "cisa-adds-unrealircd-cve-2026-114713-to-kev-catalo-bf09696b",
-    "title": "CISA Adds UnrealIRCd CVE-2026-114713 to KEV Catalog",
-    "summary": "CISA has added the UnrealIRCd CVE-2026-114713 vulnerability to its Known Exploited Vulnerabilities (KEV) catalog, alerting federal agencies to the risk. The flaw permits unauthenticated remote code execution via malformed IRC commands, and active exploits have been observed in the wild. Administrators should apply the vendor-issued patch immediately and verify configuration changes to disable legacy protocols.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-    "publishedAt": "2026-11-14T12:38:35.000Z",
-    "cves": [
-      "CVE-2026-114713",
-      "CVE-2026-123039"
-    ],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/cisa-kev-catalog-unrealircd-check-point-active-exploits"
-      }
-    ],
-    "aliases": [
-      "cisa-adds-unrealircd-cve-2026-114713-to-kev-catalo",
-      "article-bf09696b",
-      "bf09696b",
-      "cisa-adds-unrealircd-cve-2026-114713-to-kev-catalo-57c625",
-      "cisa-adds-unrealircd-cve-2026-114713-to-kev-catalog"
-    ]
-  },
-  {
-    "slug": "hackers-use-artex-ai-agents-for-rapid-privileged-a-bb287d22",
-    "title": "Hackers Use ARTEX AI Agents for Rapid Privileged Access",
-    "summary": "Hackers use ARTEX AI agents to automate network attacks, reaching privileged access in under three hours. The agents combine stolen credentials, exposed applications, and cloud permissions, reducing the time from discovery to compromise. Security teams should monitor for ARTEX activity, enforce least-privilege cloud permissions, patch exposed applications promptly, and implement multi-factor authentication.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage/",
-    "publishedAt": "2026-11-14T11:21:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-artex-ai-agents-for-rapid-privileged-a",
-      "article-bb287d22",
-      "bb287d22",
-      "hackers-use-artex-ai-agents-for-rapid-privileged-a-5c2bec",
-      "hackers-use-artex-ai-agents-for-rapid-privileged-access"
-    ]
-  },
-  {
-    "slug": "apple-unveils-secure-exclaves-for-camera-and-micro-5fd804ca",
-    "title": "Apple Unveils Secure Exclaves for Camera and Microphone Data",
-    "summary": "Apple revealed Secure Exclaves that isolate camera and microphone data from the main OS on HomeView and new iPhones. The enclave processes ambient sensor streams, preventing core OS access to raw data and narrowing the privacy-exploit surface. Developers should use the Secure Enclave API for sensitive data and users should keep devices updated for privacy protection.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
-    "publishedAt": "2026-11-14T11:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-unveils-secure-exclaves-for-camera-and-micro",
-      "article-5fd804ca",
-      "5fd804ca",
-      "apple-unveils-secure-exclaves-for-camera-and-micro-7e7834",
-      "apple-unveils-secure-exclaves-for-camera-and-microphone-data"
-    ]
-  },
-  {
-    "slug": "microsoft-phishing-campaign-exploits-365-service-d-6776ed71",
-    "title": "Microsoft Phishing Campaign Exploits 365 Service Disruption",
-    "summary": "Microsoft warns of an active phishing campaign that uses the November 12 Microsoft 365 service disruption to trick users into clicking fake recovery links. The emails mimic Microsoft service health notices and reference the real Exchange Online incident EX1550543, luring users for credential theft. Users should verify email authenticity, avoid suspicious links, and report incidents to Microsoft Security Response Center.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/active-password-stealing-attack-microsoft-365/",
-    "publishedAt": "2026-11-14T10:57:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-phishing-campaign-exploits-365-service-d",
-      "article-6776ed71",
-      "6776ed71",
-      "microsoft-phishing-campaign-exploits-365-service-d-2361f9",
-      "microsoft-phishing-campaign-exploits-365-service-disruption"
-    ]
-  },
-  {
-    "slug": "fireworks-ai-key-leak-enables-malicious-claude-cod-a45996bf",
-    "title": "Fireworks AI Key Leak Enables Malicious Claude Code Extensions",
-    "summary": "Fireworks AI’s stolen API key was used to deploy malicious Claude Code extensions, compromising users’ AI environments. The extensions exfiltrated credentials, enabled remote implants, and trojanized code, exposing sensitive data to attackers. Fireworks AI revoked the key, enforced MFA, and urged users to update extensions and monitor logs for anomalies.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/cursor-data-breach/",
-    "publishedAt": "2026-11-14T09:09:31.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html"
-      },
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/"
-      }
-    ],
-    "aliases": [
-      "fireworks-ai-key-leak-enables-malicious-claude-cod",
-      "article-a45996bf",
-      "a45996bf",
-      "fireworks-ai-key-leak-enables-malicious-claude-cod-4e02b7",
-      "fireworks-ai-key-leak-enables-malicious-claude-code-extensio"
-    ]
-  },
-  {
-    "slug": "faa-ground-stop-caused-by-l3harris-software-update-2daad0e8",
-    "title": "FAA Ground Stop Caused by L3Harris Software Update Misconfiguration",
-    "summary": "A nationwide FAA ground stop halted flights after a software update from L3Harris triggered a critical outage. The outage stemmed from a misconfigured update rollout, with no evidence of a cyberattack or malicious intrusion. The FBI is probing the update for software flaws, while the FAA urges operators to verify integrity and monitor for anomalies.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/",
-    "publishedAt": "2026-11-14T08:40:22.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/faa-ground-stop-l3harris-software-glitch-cyberattack-ruled-out"
-      }
-    ],
-    "aliases": [
-      "faa-ground-stop-caused-by-l3harris-software-update",
-      "article-2daad0e8",
-      "2daad0e8",
-      "faa-ground-stop-caused-by-l3harris-software-update-366dd4",
-      "faa-ground-stop-caused-by-l3harris-software-update-misconfig"
-    ]
-  },
-  {
-    "slug": "chromeos-stable-channel-update-m-156-released-5ec1fd09",
-    "title": "ChromeOS Stable Channel Update M-156 Released",
-    "summary": "Google released ChromeOS version 16836.33.0 (browser 156.0.8078.102) as update M-156 to the Stable channel. The update includes minor bug fixes and performance improvements, with no security vulnerabilities disclosed. ChromeOS users should install the update via the system settings; for any feedback can be reported through the ChromeOS community channels promptly.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-chromeos_01089491269.html",
-    "publishedAt": "2026-11-14T05:00:54.817Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromeos-stable-channel-update-m-156-released",
-      "article-5ec1fd09",
-      "5ec1fd09",
-      "chromeos-stable-channel-update-m-156-released-569522"
-    ]
-  },
-  {
-    "slug": "n-central-zero-day-rce-exploited-by-4everable2shel-f8fdae3d",
-    "title": "N-Central Zero-Day RCE Exploited by 4EverAble2Shell",
-    "summary": "Threat actors exploit CVE-2026-90436, a zero-day RCE in N-able N-Central servers, using the 4EverAble2Shell tool in the wild. The flaw permits unauthenticated code execution, creating a high-severity risk for N-Central users worldwide. Apply the vendor’s patch, deploy the Sigma rules, and monitor Apache Axis telemetry to detect and block the exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-90436-n-central-4everable2shell-zero-day-rce",
-    "publishedAt": "2026-11-14T03:05:27.000Z",
-    "cves": [
-      "CVE-2026-90436"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "n-central-zero-day-rce-exploited-by-4everable2shel",
-      "article-f8fdae3d",
-      "f8fdae3d",
-      "n-central-zero-day-rce-exploited-by-4everable2shel-5fc75f",
-      "n-central-zero-day-rce-exploited-by-4everable2shell"
-    ]
-  },
-  {
-    "slug": "signdrop-zero-day-enables-system-privileges-via-de-2f66fc9f",
-    "title": "SignDrop Zero-Day Enables System Privileges via Defender RPC",
-    "summary": "SignDrop zero-day exploits Windows CLFS via Defender RPC to elevate privileges to System level. The flaw allows remote code execution without authentication, enabling attackers to bypass security controls. Microsoft has released a patch; security teams should apply it immediately, monitor Defender telemetry, and review Sigma hunting rules for early detection.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/signdrop-zero-day-windows-clfs-privilege-escalation",
-    "publishedAt": "2026-11-14T02:41:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "signdrop-zero-day-enables-system-privileges-via-de",
-      "article-2f66fc9f",
-      "2f66fc9f",
-      "signdrop-zero-day-enables-system-privileges-via-de-a9bc9a",
-      "signdrop-zero-day-enables-system-privileges-via-defender-rpc"
     ]
   }
 ];

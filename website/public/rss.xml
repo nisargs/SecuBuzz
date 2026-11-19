@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 12:07:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 13:29:16 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Gatekeeper Asymmetry Makes LLMs More Vulnerable</title>
+      <link>https://secubuzz.com/news/gatekeeper-asymmetry-makes-llms-more-vulnerable-7a2b859f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gatekeeper-asymmetry-makes-llms-more-vulnerable-7a2b859f</guid>
+      <description><![CDATA[The paper introduces gatekeeper asymmetry doom, asserting that when input vetting is weaker than processing, vulnerability is inevitable. Authors illustrate the principle with examples across security domains, showing limited input validation can cause catastrophic failures in powerful LLMs. The study urges stronger gatekeeping and hard-problem reliance to mitigate asymmetry in advanced AI systems.]]></description>
+      <pubDate>Thu, 19 Nov 2026 13:19:10 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/">Check Point Research</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CISA Warns Hackers Are Actively Exploiting Four Flaws in Synology, LiteLLM, Apache Axis and REDCap</title>
+      <link>https://secubuzz.com/news/cisa-warns-hackers-are-actively-exploiting-four-fl-3f05fb63</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-warns-hackers-are-actively-exploiting-four-fl-3f05fb63</guid>
+      <description><![CDATA[The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added four flaws to its Known Exploited Vulnerabilities (KEV) catalog on November 18, 2026, after finding evidence that attackers were already exploiting them. The entries cover Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis and Vanderbilt University’s Research Electronic Data Capture platform, better known as REDCap.]]></description>
+      <pubDate>Thu, 19 Nov 2026 13:06:39 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/flaws-in-synology-litellm-apache-axis-and-redcap/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Chrome 158 Fixes Six Critical Flaws</title>
+      <link>https://secubuzz.com/news/chrome-158-fixes-six-critical-flaws-139afb67</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-fixes-six-critical-flaws-139afb67</guid>
+      <description><![CDATA[Google released Chrome 158, addressing 204 security issues, including six critical vulnerabilities. Two of the critical flaws were identified using AI-assisted analysis, highlighting the role of machine learning in vulnerability discovery. Users should update to Chrome 158 immediately to mitigate the disclosed vulnerabilities and maintain secure browsing and protect against exploitation.]]></description>
+      <pubDate>Thu, 19 Nov 2026 12:38:38 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/bugs/2026/11/chrome-patches-six-critical-flaws-two-found-with-ais-help">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft 365 MFA Bypassed via Device Code Phishing</title>
+      <link>https://secubuzz.com/news/microsoft-365-mfa-bypassed-via-device-code-phishin-6ca870f6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-mfa-bypassed-via-device-code-phishin-6ca870f6</guid>
+      <description><![CDATA[Hackers hijacked Microsoft 365 accounts by sending fake payment notices that redirect users to a legitimate Microsoft sign-in page. The attack exploits the device code flow’s lack of MFA enforcement, letting attackers obtain tokens without credential verification. Microsoft recommends disabling device code authentication for sensitive workloads and enforcing MFA; users should verify invoice authenticity before signing in.]]></description>
+      <pubDate>Thu, 19 Nov 2026 12:26:09 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/device-code-authentication/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>StepSecurity Raises $20M for Supply Chain Defense</title>
+      <link>https://secubuzz.com/news/stepsecurity-raises-20m-for-supply-chain-defense-0bdac8bf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/stepsecurity-raises-20m-for-supply-chain-defense-0bdac8bf</guid>
+      <description><![CDATA[StepSecurity announced a $20M funding round to expand its supply chain protection platform. The capital will accelerate development and distribution of its security solutions, targeting supply chain risk mitigation for enterprises and supporting rapid scaling. No immediate patch or vulnerability; the announcement signals investment in future defensive capabilities within the cybersecurity market.]]></description>
+      <pubDate>Thu, 19 Nov 2026 12:23:34 GMT</pubDate>
+      <source url="https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Palo Alto PAN-OS Exposed to PHP RCE Vulnerabilities</title>
+      <link>https://secubuzz.com/news/palo-alto-pan-os-exposed-to-php-rce-vulnerabilitie-bee3de34</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-pan-os-exposed-to-php-rce-vulnerabilitie-bee3de34</guid>
+      <description><![CDATA[Palo Alto Networks confirmed attackers exploited two PHP flaws, CVE-2026-109618 and CVE-2026-109619, on PAN-OS interfaces exposed to the internet. Both flaws allow unauthenticated remote code execution on the web server, enabling attackers to run arbitrary code without credentials. Palo Alto released patches; administrators should apply updates immediately and restrict internet exposure of management interfaces.]]></description>
+      <pubDate>Thu, 19 Nov 2026 11:52:23 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/everything-is-web-application-including.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>BackBox Linux 10 brings new hacking tools and Ubuntu 26.04 support</title>
       <link>https://secubuzz.com/news/backbox-linux-10-brings-new-hacking-tools-and-ubun-6d23a266</link>
@@ -24,6 +78,15 @@
       <pubDate>Thu, 19 Nov 2026 10:44:04 GMT</pubDate>
       <source url="https://cybersecuritynews.com/n-able-confirms-server-breach/">Cyber Security News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Splunk Releases Patches for 140 Vulnerabilities</title>
+      <link>https://secubuzz.com/news/splunk-releases-patches-for-140-vulnerabilities-1a0c32e8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/splunk-releases-patches-for-140-vulnerabilities-1a0c32e8</guid>
+      <description><![CDATA[Splunk released security updates addressing nearly 140 critical and high-severity flaws across its three core products. The vulnerabilities enabled authentication bypass, remote code execution, and privilege escalation, with CVSS scores ranging from 7.0 to 9.8, and public proof-of-concept exploits were available for several. All affected products now ship patched versions; administrators should apply the updates immediately to mitigate the risks.]]></description>
+      <pubDate>Thu, 19 Nov 2026 10:41:05 GMT</pubDate>
+      <source url="https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/">SecurityWeek</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>F5 Patches Five NGINX2Root Flaws</title>
@@ -107,6 +170,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Ruby Fixes 7 Regex/String Flaws, Warns 5 RCE PoCs</title>
+      <link>https://secubuzz.com/news/ruby-fixes-7-regex-string-flaws-warns-5-rce-pocs-c6ac8bc7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ruby-fixes-7-regex-string-flaws-warns-5-rce-pocs-c6ac8bc7</guid>
+      <description><![CDATA[Ruby released patches for seven memory-safety flaws in its regular expression engine and string case-conversion code. Five of those defects have proof-of-concept exploits that allow crafted input to trigger remote code execution on affected systems. The maintainers advise users to upgrade to the fixed Ruby versions immediately to eliminate the RCE risk.]]></description>
+      <pubDate>Thu, 19 Nov 2026 08:42:11 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>ruby2ßhell: Critical One-Byte Heap Overflow in Ruby Could Allow RCE Attacks</title>
       <link>https://secubuzz.com/news/ruby2-hell-critical-one-byte-heap-overflow-in-ruby-ff7850cf</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ruby2-hell-critical-one-byte-heap-overflow-in-ruby-ff7850cf</guid>
@@ -141,6 +213,15 @@
       <pubDate>Thu, 19 Nov 2026 08:21:15 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/19/us-threat-disruption-center-scam-sextortion-funds/">Help Net Security</source>
       <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Researcher Demonstrates RCE in PostgreSQL, MySQL, Oracle</title>
+      <link>https://secubuzz.com/news/researcher-demonstrates-rce-in-postgresql-mysql-or-1d1c9f59</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/researcher-demonstrates-rce-in-postgresql-mysql-or-1d1c9f59</guid>
+      <description><![CDATA[A researcher demonstrated remote code execution exploits against PostgreSQL, MySQL, and Oracle databases using low-privilege accounts. The attacks leveraged memory-corruption bugs in the database engines, allowing code execution on the server without table read permissions. No vendor patches are currently available; administrators should restrict low-privilege access and monitor for anomalous activity until mitigations are released.]]></description>
+      <pubDate>Thu, 19 Nov 2026 08:14:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html">The Hacker News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>CISA Adds Four Exploited Vulnerabilities</title>
@@ -375,87 +456,6 @@
       <pubDate>Thu, 19 Nov 2026 00:45:05 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100563">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical java-25-openjdk Update for RHEL 9</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-java-25-openjdk-update-f-83dfab4f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-java-25-openjdk-update-f-83dfab4f</guid>
-      <description><![CDATA[Red Hat issued a critical security update for java-25-openjdk on RHEL 9 and the 9.8 Extended Update Support stream. The patch fixes multiple high-severity vulnerabilities with CVSS scores indicating critical impact, though specific CVE IDs are not enumerated. Administrators should apply the update immediately; no workarounds are available, and the patch mitigates all identified risks.]]></description>
-      <pubDate>Thu, 19 Nov 2026 00:19:44 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100571">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100572: Critical: java-25-openjdk security update for RHEL 10</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100572-critical-java-25-openjdk-security-9d45f95f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100572-critical-java-25-openjdk-security-9d45f95f</guid>
-      <description><![CDATA[An update for java-25-openjdk is now available for Red Hat Enterprise Linux 10.2 Extended Update Support and Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 19 Nov 2026 00:15:03 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100572">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>NIST Demonstrates Quantum Position Verification to Block Remote Hackers</title>
-      <link>https://secubuzz.com/news/nist-demonstrates-quantum-position-verification-to-80a33f8f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nist-demonstrates-quantum-position-verification-to-80a33f8f</guid>
-      <description><![CDATA[Physicists at the National Institute of Standards and Technology demonstrated a quantum position verification protocol using entangled photons to confirm a user's exact physical location. The research team successfully closed security loopholes in earlier quantum schemes during testing inside a facility in Boulder, Colorado.]]></description>
-      <pubDate>Thu, 19 Nov 2026 00:07:39 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/19/nist-quantum-position-verification/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Russian Charged with Palantir Employee Surveillance</title>
-      <link>https://secubuzz.com/news/russian-charged-with-palantir-employee-surveillanc-0334815b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-charged-with-palantir-employee-surveillanc-0334815b</guid>
-      <description><![CDATA[U.S. prosecutors charged Russian national Igor Andreevich D’iu for acting as a Moscow agent targeting Palantir Technologies employees. The case uncovered Telegram-based recruitment and covert monitoring designed to harvest intelligence on a defense-technology firm’s workforce. Defenders should audit employee access, monitor for insider threats, and enforce strict communication controls to mitigate similar espionage.]]></description>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://therecord.media/russian-charged-with-spying-on-palantir-for-moscow">The Record</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Apple Releases App Store Connect API 4.6.1 Update</title>
-      <link>https://secubuzz.com/news/apple-releases-app-store-connect-api-4-6-1-update-2f7f1e5a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-app-store-connect-api-4-6-1-update-2f7f1e5a</guid>
-      <description><![CDATA[Apple released App Store Connect API 4.6.1 to improve developer integration and streamline app management. The update addresses multiple bugs, introduces new features, and enhances stability, but no security vulnerabilities were disclosed. Developers should download the new release, update their integration, and test compatibility with existing workflows to ensure compliance.]]></description>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://developer.apple.com/news/releases/?id=11182026b">Apple Security Updates</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ransomware Brokers Shift Listings to Private Channels</title>
-      <link>https://secubuzz.com/news/ransomware-brokers-shift-listings-to-private-chann-d5f645d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-brokers-shift-listings-to-private-chann-d5f645d4</guid>
-      <description><![CDATA[Ransomware gangs are moving access-broker listings from public dark-web forums to private channels, cutting early warning signals. ZeroFox data shows monthly victim counts rose from 573 in 2025 to 718 in 2026, while public listings dropped from 620 to 370 per quarter. Security teams should monitor private broker communications and employ network segmentation to limit lateral movement once compromised.]]></description>
-      <pubDate>Wed, 18 Nov 2026 23:28:20 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/19/ransomware-access-brokers-cybercrime/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100550: Critical: Red Hat JBoss Core Services Apache HTTP Server 2.4.62 SP7 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100550-critical-red-hat-jboss-core-servi-47d19b1b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100550-critical-red-hat-jboss-core-servi-47d19b1b</guid>
-      <description><![CDATA[Red Hat JBoss Core Services Apache HTTP Server 2.4.62 Service Pack 7 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 18 Nov 2026 23:27:17 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100550">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ukraine, FBI Arrest Ransomware Group Members</title>
-      <link>https://secubuzz.com/news/ukraine-fbi-arrest-ransomware-group-members-bb9e5203</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-fbi-arrest-ransomware-group-members-bb9e5203</guid>
-      <description><![CDATA[Ukrainian authorities and the FBI arrested four suspects from an international ransomware group tied to more than $40.5 million in ransom payments from at least 28 companies. The raid followed a joint investigation that traced the gang’s stolen-credential phishing attacks. Officials advise organizations to strengthen access controls and monitor for anomalous credential activity to mitigate similar threats.]]></description>
-      <pubDate>Wed, 18 Nov 2026 23:08:33 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Azure Linux 4 Released for VMs Without Extra Fee</title>
-      <link>https://secubuzz.com/news/azure-linux-4-released-for-vms-without-extra-fee-b6924440</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/azure-linux-4-released-for-vms-without-extra-fee-b6924440</guid>
-      <description><![CDATA[Microsoft announced general availability of Azure Linux 4, its in-house Linux distribution for customer virtual machines and scale sets. It is offered at no extra license fee, with customers paying only for Azure compute. The release enables organizations to deploy a consistent Linux environment across Azure workloads without additional licensing costs.]]></description>
-      <pubDate>Wed, 18 Nov 2026 23:01:14 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/19/microsoft-azure-linux-4/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
