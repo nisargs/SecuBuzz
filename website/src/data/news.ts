@@ -11,6 +11,46 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-114938-openjdk-base64-decoder-intrinsic-o-ed5c5460",
+    "title": "CVE-2026-114938 - OpenJDK Base64 Decoder Intrinsic Out-of-Bounds Write Issue",
+    "summary": "Bulletin ID: 2026-189-AWS Publication Date: 11/18/2026 17:00 PM PST Description: AWS is aware of CVE-2026-114938, a memory issue in the Base64 decoder intrinsic of OpenJDK 17.0.6 and later on x86-64 processors that support AVX-512 VBMI. AWS is working to deploy the fix to affected AWS services Refer to the article for the most up-to-date and complete information.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-189-aws/",
+    "publishedAt": "2026-11-19T03:02:28.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-114938-openjdk-base64-decoder-intrinsic-o",
+      "article-ed5c5460",
+      "ed5c5460",
+      "cve-2026-114938-openjdk-base64-decoder-intrinsic-o-782165",
+      "cve-2026-114938-openjdk-base64-decoder-intrinsic-out-of-boun"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100567-critical-java-21-openjdk-security-b44c198b",
+    "title": "RHSA-2026:100567: Critical: java-21-openjdk security update for RHEL 8 and 9",
+    "summary": "An update for java-21-openjdk is now available for Red Hat Enterprise Linux 8, Red Hat Enterprise Linux 9, Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions, Red Hat Enterprise Linux 9.6 Extended Update Support, and Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100567",
+    "publishedAt": "2026-11-19T01:44:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100567-critical-java-21-openjdk-security",
+      "article-b44c198b",
+      "b44c198b",
+      "rhsa-2026-100567-critical-java-21-openjdk-security-2ee081",
+      "rhsa-2026-100567-critical-java-21-openjdk-security-update-fo"
+    ]
+  },
+  {
     "slug": "red-hat-releases-critical-java-17-openjdk-update-f-495d3bfa",
     "title": "Red Hat Releases Critical java-17-openjdk Update for RHEL 9",
     "summary": "Red Hat issued a critical security update for java-17-openjdk on RHEL 9 and related SAP and Extended Update Support streams. The update addresses multiple high-severity vulnerabilities, each with CVSS scores indicating critical impact, but no specific CVE IDs are listed in the advisory. Administrators should apply the update immediately; no workarounds are provided, and the patch mitigates all identified risks.",
@@ -27,6 +67,25 @@ export const news: NewsBrief[] = [
       "495d3bfa",
       "red-hat-releases-critical-java-17-openjdk-update-f-2ee081",
       "red-hat-releases-critical-java-17-openjdk-update-for-rhel-9"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100491-critical-fence-agents-security-up-8cf77df9",
+    "title": "RHSA-2026:100491: Critical: fence-agents security update",
+    "summary": "An update for fence-agents is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100491",
+    "publishedAt": "2026-11-19T01:37:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100491-critical-fence-agents-security-up",
+      "article-8cf77df9",
+      "8cf77df9",
+      "rhsa-2026-100491-critical-fence-agents-security-up-2ee07d",
+      "rhsa-2026-100491-critical-fence-agents-security-update"
     ]
   },
   {
@@ -833,6 +892,28 @@ export const news: NewsBrief[] = [
       "31d1ba6a",
       "russian-state-hackers-exploit-stolen-cloud-data-fo-1fddff",
       "russian-state-hackers-exploit-stolen-cloud-data-for-espionag"
+    ]
+  },
+  {
+    "slug": "nginx-unauthenticated-rce-via-http-2-cve-2026-1236-d89a704c",
+    "title": "NGINX Unauthenticated RCE via HTTP/2 CVE-2026-123633, CVE-2026-123007",
+    "summary": "NGINX suffers unauthenticated RCE via CVE-2026-123633 and CVE-2026-123007, exploiting HTTP/2 parsing to compromise web servers, APIs, and sensitive data. The flaw allows arbitrary code execution without authentication, a high-severity RCE with a CVSS score above 9.0. NGINX released an out-of-band patch updating the HTTP/2 parser; apply it immediately and disable HTTP/2 on legacy systems as a temporary fix.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+    "publishedAt": "2026-11-18T15:13:20.000Z",
+    "cves": [
+      "CVE-2026-123633",
+      "CVE-2026-123007"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "nginx-unauthenticated-rce-via-http-2-cve-2026-1236",
+      "article-d89a704c",
+      "d89a704c",
+      "nginx-unauthenticated-rce-via-http-2-cve-2026-1236-757983",
+      "nginx-unauthenticated-rce-via-http-2-cve-2026-123633-cve-202"
     ]
   },
   {
@@ -1826,6 +1907,25 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "litellm-command-injection-rce-requires-authenticat-82dc3adb",
+    "title": "LiteLLM Command Injection RCE Requires Authentication",
+    "summary": "A command injection flaw in LiteLLM’s MCP module permits authenticated remote attackers to execute arbitrary code on affected installations. The vulnerability, rated CVSS 7.2, requires valid credentials and allows attackers to run system commands, potentially compromising the host. LiteLLM has issued a patch; administrators should update to the latest release and enforce least-privilege access controls.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1031/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "litellm-command-injection-rce-requires-authenticat",
+      "article-82dc3adb",
+      "82dc3adb",
+      "litellm-command-injection-rce-requires-authenticat-77f343",
+      "litellm-command-injection-rce-requires-authentication"
     ]
   },
   {
@@ -9781,111 +9881,6 @@ export const news: NewsBrief[] = [
       "7a337439",
       "microsoft-edge-patches-chromium-type-confusion-cve-1fdc61",
       "microsoft-edge-patches-chromium-type-confusion-cve-2026-1253"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-fixes-chromium-out-of-bounds-write-5f75bb80",
-    "title": "Microsoft Edge Fixes Chromium Out-of-Bounds Write CVE-2026-125348",
-    "summary": "Microsoft Edge is affected by Chromium vulnerability CVE-2026-125348, an out-of-bounds write issue inherited through its Chromium-based browser engine. The flaw involves improper memory bounds handling in Chromium, which Microsoft Edge ingests and addresses through Chromium updates. Security teams should apply available Microsoft Edge updates containing the Chromium fix to remediate the vulnerability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125348",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-125348"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-fixes-chromium-out-of-bounds-write",
-      "article-5f75bb80",
-      "5f75bb80",
-      "microsoft-edge-fixes-chromium-out-of-bounds-write-1fdc61",
-      "microsoft-edge-fixes-chromium-out-of-bounds-write-cve-2026-1"
-    ]
-  },
-  {
-    "slug": "microsoft-windows-graphics-kernel-elevation-vulner-d0e764fd",
-    "title": "Microsoft Windows Graphics Kernel Elevation Vulnerability",
-    "summary": "A kernel privilege-escalation flaw in Windows Graphics allows local users to gain elevated rights. The vulnerability, identified as 'CVE-2026-95948', lacks a public exploit but could enable privilege abuse if exploited by malicious code. Microsoft recommends applying the latest Office update that includes the patch, and administrators should enforce least-privilege policies.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95948",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-95948"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-windows-graphics-kernel-elevation-vulner",
-      "article-d0e764fd",
-      "d0e764fd",
-      "microsoft-windows-graphics-kernel-elevation-vulner-7431da",
-      "microsoft-windows-graphics-kernel-elevation-vulnerability"
-    ]
-  },
-  {
-    "slug": "microsoft-windows-codecs-library-remote-code-execu-063796a4",
-    "title": "Microsoft Windows Codecs Library Remote Code Execution",
-    "summary": "An unauthenticated remote code execution flaw exists in the Windows Codecs Library, enabling attackers to run arbitrary code. The issue, labeled 'CVE-2026-113749', is not yet publicly exploited but could be leveraged by scripts targeting vulnerable systems. Microsoft advises installing the Office update that contains the fix and validating codec configurations to mitigate risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113749",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-113749"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-windows-codecs-library-remote-code-execu",
-      "article-063796a4",
-      "063796a4",
-      "microsoft-windows-codecs-library-remote-code-execu-1feb52",
-      "microsoft-windows-codecs-library-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "cve-2026-96150-microsoft-windows-codecs-library-in-e13c1260",
-    "title": "CVE-2026-96150 Microsoft Windows Codecs Library Information Disclosure Vulnerability",
-    "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96150",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-96150"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-96150-microsoft-windows-codecs-library-in",
-      "article-e13c1260",
-      "e13c1260",
-      "cve-2026-96150-microsoft-windows-codecs-library-in-743184",
-      "cve-2026-96150-microsoft-windows-codecs-library-information-"
-    ]
-  },
-  {
-    "slug": "windows-graphics-kernel-exposes-information-via-cv-85632a60",
-    "title": "Windows Graphics Kernel Exposes Information via CVE-2026-96144",
-    "summary": "A Windows Graphics Kernel information-disclosure flaw (CVE-2026-96144) allows local users to read protected memory through the kernel’s rendering subsystem. The flaw results from unchecked pointer dereference during rendering, permitting local users to read kernel memory and potentially expose sensitive data. Microsoft recommends installing the latest Office update that includes the kernel patch; no work-around is available.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96144",
-    "publishedAt": "2026-11-13T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-96144"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-graphics-kernel-exposes-information-via-cv",
-      "article-85632a60",
-      "85632a60",
-      "windows-graphics-kernel-exposes-information-via-cv-743184",
-      "windows-graphics-kernel-exposes-information-via-cve-2026-961"
     ]
   }
 ];

@@ -6275,5 +6275,10 @@
   "http://www.zerodayinitiative.com/advisories/ZDI-26-1012/",
   "https://access.redhat.com/errata/RHSA-2026:100564",
   "https://access.redhat.com/errata/RHSA-2026:100571",
-  "https://ubuntu.com/security/notices/USN-9037-2"
+  "https://ubuntu.com/security/notices/USN-9037-2",
+  "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1031/",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-189-aws/",
+  "https://access.redhat.com/errata/RHSA-2026:100567",
+  "https://access.redhat.com/errata/RHSA-2026:100491"
 ]

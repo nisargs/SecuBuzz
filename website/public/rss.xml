@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 02:52:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 03:40:01 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-114938 - OpenJDK Base64 Decoder Intrinsic Out-of-Bounds Write Issue</title>
+      <link>https://secubuzz.com/news/cve-2026-114938-openjdk-base64-decoder-intrinsic-o-ed5c5460</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-114938-openjdk-base64-decoder-intrinsic-o-ed5c5460</guid>
+      <description><![CDATA[Bulletin ID: 2026-189-AWS Publication Date: 11/18/2026 17:00 PM PST Description: AWS is aware of CVE-2026-114938, a memory issue in the Base64 decoder intrinsic of OpenJDK 17.0.6 and later on x86-64 processors that support AVX-512 VBMI. AWS is working to deploy the fix to affected AWS services Refer to the article for the most up-to-date and complete information.]]></description>
+      <pubDate>Thu, 19 Nov 2026 03:02:28 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-189-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100567: Critical: java-21-openjdk security update for RHEL 8 and 9</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100567-critical-java-21-openjdk-security-b44c198b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100567-critical-java-21-openjdk-security-b44c198b</guid>
+      <description><![CDATA[An update for java-21-openjdk is now available for Red Hat Enterprise Linux 8, Red Hat Enterprise Linux 9, Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions, Red Hat Enterprise Linux 9.6 Extended Update Support, and Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical.]]></description>
+      <pubDate>Thu, 19 Nov 2026 01:44:37 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100567">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Releases Critical java-17-openjdk Update for RHEL 9</title>
       <link>https://secubuzz.com/news/red-hat-releases-critical-java-17-openjdk-update-f-495d3bfa</link>
@@ -14,6 +32,15 @@
       <description><![CDATA[Red Hat issued a critical security update for java-17-openjdk on RHEL 9 and related SAP and Extended Update Support streams. The update addresses multiple high-severity vulnerabilities, each with CVSS scores indicating critical impact, but no specific CVE IDs are listed in the advisory. Administrators should apply the update immediately; no workarounds are provided, and the patch mitigates all identified risks.]]></description>
       <pubDate>Thu, 19 Nov 2026 01:39:31 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100564">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100491: Critical: fence-agents security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100491-critical-fence-agents-security-up-8cf77df9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100491-critical-fence-agents-security-up-8cf77df9</guid>
+      <description><![CDATA[An update for fence-agents is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 19 Nov 2026 01:37:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100491">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -377,6 +404,15 @@
       <category>Nation State</category>
     </item>
     <item>
+      <title>NGINX Unauthenticated RCE via HTTP/2 CVE-2026-123633, CVE-2026-123007</title>
+      <link>https://secubuzz.com/news/nginx-unauthenticated-rce-via-http-2-cve-2026-1236-d89a704c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nginx-unauthenticated-rce-via-http-2-cve-2026-1236-d89a704c</guid>
+      <description><![CDATA[NGINX suffers unauthenticated RCE via CVE-2026-123633 and CVE-2026-123007, exploiting HTTP/2 parsing to compromise web servers, APIs, and sensitive data. The flaw allows arbitrary code execution without authentication, a high-severity RCE with a CVSS score above 9.0. NGINX released an out-of-band patch updating the HTTP/2 parser; apply it immediately and disable HTTP/2 on legacy systems as a temporary fix.]]></description>
+      <pubDate>Wed, 18 Nov 2026 15:13:20 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">Wiz Research</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters</title>
       <link>https://secubuzz.com/news/from-deepfakes-to-helpdesk-impersonation-why-stron-19bda175</link>
       <guid isPermaLink="true">https://secubuzz.com/news/from-deepfakes-to-helpdesk-impersonation-why-stron-19bda175</guid>
@@ -420,42 +456,6 @@
       <pubDate>Wed, 18 Nov 2026 14:11:28 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html">The Hacker News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft’s AI Uncovers 99 Security Issues in Express, ImageMagick and Other Open-Source Projects</title>
-      <link>https://secubuzz.com/news/microsoft-s-ai-uncovers-99-security-issues-in-expr-dd12e280</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-s-ai-uncovers-99-security-issues-in-expr-dd12e280</guid>
-      <description><![CDATA[Microsoft and GitHub sent 99 verified security reports to six open-source projects, including Express and ImageMagick, after an AI pilot identified thousands of potential vulnerabilities. In its Nov. 17 announcement, GitHub said maintainers had fixed 55 issues as of Nov. 15.]]></description>
-      <pubDate>Wed, 18 Nov 2026 14:06:31 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/microsofts-ai-uncovers-99-security-issues/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Brazilian Signature Apps Harbor RCE Vulnerabilities</title>
-      <link>https://secubuzz.com/news/brazilian-signature-apps-harbor-rce-vulnerabilitie-7e1baafb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/brazilian-signature-apps-harbor-rce-vulnerabilitie-7e1baafb</guid>
-      <description><![CDATA[Brazilian government-sanctioned signature apps expose authentication middleware to remote code execution via unvalidated input. The flaw lets attackers inject code during document signing, potentially compromising legal documents and enabling fraud; no public exploit confirmed. Patches are pending; security teams should disable vulnerable middleware, apply vendor updates when released, and monitor for unauthorized signing activity.]]></description>
-      <pubDate>Wed, 18 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GitHub security advisory (AV26-1172)</title>
-      <link>https://secubuzz.com/news/github-security-advisory-av26-1172-7d0fa86e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/github-security-advisory-av26-1172-7d0fa86e</guid>
-      <description><![CDATA[Serial number: AV26-1172 Date: November 18, 2026 As of November 18, 2026, GitHub is affected by vulnerabilities in the following product: Enterprise Server 3.19.0 Prior to 3.19.16 3.20.0 Prior to 3.20.12 3.21.0 Prior to 3.21.10 3.22.0 Prior to 3.22.5 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.]]></description>
-      <pubDate>Wed, 18 Nov 2026 13:40:25 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/github-security-advisory-av26-1172">Canadian Centre for Cyber Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Gentlemen Ransomware Gang Claims NVIDIA Breach</title>
-      <link>https://secubuzz.com/news/gentlemen-ransomware-gang-claims-nvidia-breach-2d18cebf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gentlemen-ransomware-gang-claims-nvidia-breach-2d18cebf</guid>
-      <description><![CDATA[The Gentlemen ransomware group posted a claim of breaching NVIDIA on its dark-web leak site. The post includes a countdown and ransom talk references but lacks sample files or confirmed compromise evidence. NVIDIA has not publicly confirmed a breach, and no definitive proof of infiltration has been disclosed in the public domain.]]></description>
-      <pubDate>Wed, 18 Nov 2026 13:37:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/nvidia-data-breach-claim/">Cyber Security News</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>
