@@ -57,6 +57,28 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "crac-jdk-21-vulnerabilities-expose-rce-and-dos-ris-df412a2b",
+    "title": "CRaC JDK 21 Vulnerabilities Expose RCE and DoS Risks",
+    "summary": "CVE-2026-114938 through CVE-2026-114941 affect CRaC JDK 21 components, allowing remote attackers to trigger denial-of-service or execute arbitrary code. The flaws arise from improper input validation, authentication, and authorization in compiler, JGSS, JSSE, and library modules, exposing sensitive data. Oracle released patches for JDK 21; administrators should apply the latest update or use the provided work-around to mitigate the vulnerabilities.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9179-1",
+    "publishedAt": "2026-11-20T02:36:27.000Z",
+    "cves": [
+      "CVE-2026-114938",
+      "CVE-2026-114941"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "crac-jdk-21-vulnerabilities-expose-rce-and-dos-ris",
+      "article-df412a2b",
+      "df412a2b",
+      "crac-jdk-21-vulnerabilities-expose-rce-and-dos-ris-7e7853",
+      "crac-jdk-21-vulnerabilities-expose-rce-and-dos-risks"
+    ]
+  },
+  {
     "slug": "ubuntu-patches-multiple-flaws-in-crac-jdk-25-42713894",
     "title": "Ubuntu Patches Multiple Flaws in CRaC JDK 25",
     "summary": "Ubuntu released security updates addressing multiple vulnerabilities across the Compiler, JGSS, and JSSE components of CRaC JDK 25. The defects, including CVE-2026-114938, stem from improper input handling, authentication failures, and authorization bypasses that allow remote arbitrary code execution and data access. Administrators should apply updated JDK packages provided under Ubuntu Security Notice USN-9180-1 to eliminate exploitation risks.",
@@ -408,6 +430,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "seven-critical-php-flaws-expose-rce-risks-7dbeb1d4",
+    "title": "Seven Critical PHP Flaws Expose RCE Risks",
+    "summary": "Seven critical PHP flaws that enable remote code execution have been identified, prompting a patch release from the PHP development team. Exploitability depends on server configuration, with some flaws requiring authenticated access or specific input handling, and no widespread exploitation has been reported. Administrators should apply the latest PHP patch immediately and review configuration settings to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell",
+    "publishedAt": "2026-11-19T19:57:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "seven-critical-php-flaws-expose-rce-risks",
+      "article-7dbeb1d4",
+      "7dbeb1d4",
+      "seven-critical-php-flaws-expose-rce-risks-7d395d"
+    ]
+  },
+  {
     "slug": "ai-fuels-vulnerability-hysteria-and-operational-di-dbe94d43",
     "title": "AI Fuels Vulnerability Hysteria and Operational Disruption",
     "summary": "The Reporters' Notebook video series analyzes fallout from recent high-severity flaw disclosures, highlighting how AI-assisted exploit fears amplify vulnerability hysteria. The discussion notes widespread panic, operational disruptions, and growing warning fatigue among security teams, though no specific vulnerability is cited. The series encourages balanced risk assessment and disciplined alert management to mitigate unnecessary operational impact.",
@@ -465,6 +505,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "securing-github-actions-against-insider-threats-63cbba6e",
+    "title": "Securing GitHub Actions Against Insider Threats",
+    "summary": "A practical guide outlines steps to harden GitHub Actions against insider threats, focusing on credential protection and pipeline integrity. The approach covers trusted publishing, release approvals, and revocation mechanisms to prevent malicious code injection from compromised accounts. Security teams should implement these controls, enforce least-privilege access, and monitor workflow logs for anomalous activity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/hardening-github-actions-against-insider-threats",
+    "publishedAt": "2026-11-19T19:17:08.445Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "securing-github-actions-against-insider-threats",
+      "article-63cbba6e",
+      "63cbba6e",
+      "securing-github-actions-against-insider-threats-5e5d6a"
+    ]
+  },
+  {
     "slug": "vmware-vcenter-vulnerabilities-exploited-in-wild-c-d742542e",
     "title": "VMware vCenter Vulnerabilities Exploited in Wild (CVE-2026-123890)",
     "summary": "Multiple VMware vCenter versions, including 9.1.x, 9.0.x, 8.0, and 7.0, contain vulnerabilities that have been exploited in the wild, such as CVE-2026-123890. The flaw allows attackers to gain unauthorized access to vCenter management functions, potentially enabling remote code execution and full control over virtual environments. VMware's VMSA-2026-0009 patch addresses CVE-2026-123890, CVE-2026-123891, and CVE-2026-123892; administrators should apply the update immediately.",
@@ -485,6 +543,24 @@ export const news: NewsBrief[] = [
       "d742542e",
       "vmware-vcenter-vulnerabilities-exploited-in-wild-c-7852fc",
       "vmware-vcenter-vulnerabilities-exploited-in-wild-cve-2026-12"
+    ]
+  },
+  {
+    "slug": "pause-reactive-patching-for-team-stability-5cdb9296",
+    "title": "Pause Reactive Patching for Team Stability",
+    "summary": "Bill urges the cybersecurity community to pause from relentless reactive patching and instead focus on environmental awareness and team stability. He argues that sustainable practices and well-balanced workloads reduce burnout and improve long-term security posture. The message calls for a cultural shift toward proactive planning and holistic well-being rather than constant firefighting.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/the-internet-needs-a-nap-and-you-do-too/",
+    "publishedAt": "2026-11-19T19:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pause-reactive-patching-for-team-stability",
+      "article-5cdb9296",
+      "5cdb9296",
+      "pause-reactive-patching-for-team-stability-634e67"
     ]
   },
   {
@@ -541,6 +617,24 @@ export const news: NewsBrief[] = [
       "article-8763cb55",
       "8763cb55",
       "php-vulnerabilities-affect-versions-8-6-0-1a35b7"
+    ]
+  },
+  {
+    "slug": "php-foundation-releases-security-fixes-for-8-2-8-5-63932e70",
+    "title": "PHP Foundation Releases Security Fixes for 8.2-8.5",
+    "summary": "PHP Foundation released security updates for PHP 8.2-8.5 addressing 17 issues across engine, extensions, and stream wrappers. The flaws involve the PHP engine, PHP-FPM, CGI binary, SOAP, Phar, session, DOM, date extensions, HTTP/FTP wrappers, and RFC 3986 URI implementation, but no public exploit is reported. AWS recommends applying the patched versions 8.2.36, 8.3.37, 8.4.28, and 8.5.13 as the sole remediation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-190-aws/",
+    "publishedAt": "2026-11-19T18:30:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-foundation-releases-security-fixes-for-8-2-8-5",
+      "article-63932e70",
+      "63932e70",
+      "php-foundation-releases-security-fixes-for-8-2-8-5-1e0887"
     ]
   },
   {
@@ -1992,6 +2086,26 @@ export const news: NewsBrief[] = [
       "article-e153f400",
       "e153f400",
       "nvidia-investigates-gentlemen-leak-claims-504dc8"
+    ]
+  },
+  {
+    "slug": "java4shell-exploitation-attempts-reported-ea4bc007",
+    "title": "Java4Shell Exploitation Attempts Reported",
+    "summary": "Attackers have begun probing and exploiting Java4Shell (CVE-2026-114938) across platforms, with GreyNoise and Cloudflare reporting attempts. The flaw permits remote code execution via malformed Java serialization, and vendors like Cisco, Elastic, Red Hat, and Siemens have issued advisories. Oracle and affected vendors have released patches; apply them immediately and monitor traffic for anomalies.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/java4shell-exploitation-attempts-begin-as-vendors-rush-out-advisories/",
+    "publishedAt": "2026-11-19T09:10:58.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "java4shell-exploitation-attempts-reported",
+      "article-ea4bc007",
+      "ea4bc007",
+      "java4shell-exploitation-attempts-reported-779057"
     ]
   },
   {
@@ -9696,117 +9810,6 @@ export const news: NewsBrief[] = [
       "article-18bf82a9",
       "18bf82a9",
       "apple-releases-ipados-27-3-beta-2-update-5f3d88"
-    ]
-  },
-  {
-    "slug": "apple-releases-tvos-27-3-beta-2-80436051",
-    "title": "Apple Releases tvOS 27.3 Beta 2",
-    "summary": "Apple released the tvOS 27.3 beta 2 build 24K5298d, offering developers early access to new features and bug fixes. The beta includes updates to the media framework, UI enhancements, and performance improvements, but no security patches are announced. Developers should test apps against this build and report issues via Apple's beta program, as the final release will contain security updates.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026d",
-    "publishedAt": "2026-11-16T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-tvos-27-3-beta-2",
-      "article-80436051",
-      "80436051",
-      "apple-releases-tvos-27-3-beta-2-5f3d88"
-    ]
-  },
-  {
-    "slug": "apple-releases-watchos-27-3-beta-2-update-257adcde",
-    "title": "Apple Releases watchOS 27.3 Beta 2 Update",
-    "summary": "Apple released watchOS 27.3 beta 2 (24S5296d), a pre-release update for Apple Watch devices. The beta includes minor bug fixes, performance enhancements, and updated system components, but no new security vulnerabilities are disclosed. Developers can download the beta and review the release notes via the Apple Developer portal, and users should test before official rollout.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026f",
-    "publishedAt": "2026-11-16T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-watchos-27-3-beta-2-update",
-      "article-257adcde",
-      "257adcde",
-      "apple-releases-watchos-27-3-beta-2-update-5f3d88"
-    ]
-  },
-  {
-    "slug": "apple-releases-visionos-27-3-beta-2-update-ed2c34d4",
-    "title": "Apple Releases visionOS 27.3 Beta 2 Update",
-    "summary": "Apple released visionOS 27.3 beta 2, a beta update for the visionOS operating system. The update includes fixes for memory corruption and privilege escalation bugs, though no CVE IDs are publicly assigned. Users should install the beta update via the Apple VisionOS Settings app to mitigate potential security risks and ensure system stability.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026e",
-    "publishedAt": "2026-11-16T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-visionos-27-3-beta-2-update",
-      "article-ed2c34d4",
-      "ed2c34d4",
-      "apple-releases-visionos-27-3-beta-2-update-5f3d88"
-    ]
-  },
-  {
-    "slug": "screenconnect-cve-2026-84869-exploited-to-run-mali-329f18f7",
-    "title": "ScreenConnect CVE-2026-84869 Exploited to Run Malicious Files",
-    "summary": "Attackers exploited CVE-2026-84869 in ScreenConnect to run malicious files on MSP technician accounts. The flaw enables unauthenticated remote code execution via the remote support session, allowing arbitrary binaries to execute without user interaction and potentially compromising client systems. ScreenConnect released patch 4.4.1; administrators should apply it immediately and disable remote file execution until the fix is deployed.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/cve-2026-84869-screenconnect-technician-exploitation",
-    "publishedAt": "2026-11-16T18:00:00.000Z",
-    "cves": [
-      "CVE-2026-84869"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "screenconnect-cve-2026-84869-exploited-to-run-mali",
-      "article-329f18f7",
-      "329f18f7",
-      "screenconnect-cve-2026-84869-exploited-to-run-mali-11e371",
-      "screenconnect-cve-2026-84869-exploited-to-run-malicious-file"
-    ]
-  },
-  {
-    "slug": "apple-releases-xcode-27-3-beta-2-126bcfcb",
-    "title": "Apple Releases Xcode 27.3 Beta 2",
-    "summary": "Apple released Xcode 27.3 beta 2, version 27C5035i, adding new features, bug fixes, and performance improvements. The update includes improvements to the Swift compiler, enhanced debugging tools, and updated iOS SDKs for the latest OS releases. Developers should download the beta from the Apple Developer portal, test compatibility with existing projects, and report any regressions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026g",
-    "publishedAt": "2026-11-16T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-xcode-27-3-beta-2",
-      "article-126bcfcb",
-      "126bcfcb",
-      "apple-releases-xcode-27-3-beta-2-5f3d88"
-    ]
-  },
-  {
-    "slug": "apple-releases-ios-27-3-beta-2-b76de365",
-    "title": "Apple Releases iOS 27.3 Beta 2",
-    "summary": "Apple released iOS 27.3 beta 2, version 24C5049d, providing developers early access to the latest OS features. The beta includes updates to the SwiftUI framework, new privacy controls, and performance optimizations for iPhone and iPad. Developers should download the beta via the Apple Developer portal, test app compatibility, and submit feedback to Apple.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026a",
-    "publishedAt": "2026-11-16T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-ios-27-3-beta-2",
-      "article-b76de365",
-      "b76de365",
-      "apple-releases-ios-27-3-beta-2-5f3d88"
     ]
   }
 ];

@@ -6451,5 +6451,11 @@
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97756",
   "https://cyber.gc.ca/en/alerts-advisories/openvpn-security-advisory-av26-1179",
   "https://ubuntu.com/security/notices/USN-9177-1",
-  "https://ubuntu.com/security/notices/USN-9180-1"
+  "https://ubuntu.com/security/notices/USN-9180-1",
+  "https://ubuntu.com/security/notices/USN-9179-1",
+  "https://www.securityweek.com/java4shell-exploitation-attempts-begin-as-vendors-rush-out-advisories/",
+  "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell",
+  "https://socket.dev/blog/hardening-github-actions-against-insider-threats",
+  "https://blog.talosintelligence.com/the-internet-needs-a-nap-and-you-do-too/",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-190-aws/"
 ]
