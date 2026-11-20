@@ -1,5 +1,24 @@
 [
   {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-195-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-195-aws/",
+    "title": "CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server",
+    "headline": "CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server",
+    "summary": "Bulletin ID: 2026-195-AWS Publication Date: 11/20/2026 10:30 AM PST Description: Improper limitation of a pathname to a restricted directory in the file access checks in Amazon awslabs.document-loader-mcp-server 1.0.10 through 1.0.20 might allow a context-dependent actor, via crafted document content processed by an MCP client, to read files outside the intended base directory and, in 1.0.12 through 1.0.20, to write PNG slide images outside it.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-20T18:45:40.000Z",
+    "ingestedAt": "2026-11-20T19:43:57.971Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-130901"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update_0667948876.html",
     "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update_0667948876.html",
     "title": "Chrome Dev Channel Updated to 160.0.8171.0",
@@ -52,7 +71,7 @@
     "sourceUrl": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
     "title": "WhatsApp Patches CVE-2026-23871 Scam Vulnerability",
     "headline": "WhatsApp Patches CVE-2026-23871 Scam Vulnerability",
-    "summary": "WhatsApp identified CVE-2026-23871, a flaw that could have enabled attackers to craft more convincing scam messages. The vulnerability, discovered during a campaign disruption effort, potentially allowed malicious actors to embed deceptive content within legitimate chats. WhatsApp released a patch in its latest update; users should install the new version to eliminate the risk.",
+    "summary": "WhatsApp patched CVE-2026-23871, a flaw in Android and Business apps that allowed attackers to embed deceptive URLs in chat replies, potentially enabling scam messages. The vulnerability stemmed from incomplete validation of external ad-reply URLs before version 2.26.17.4. Users must update to the latest release to eliminate the risk for all users.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "SecurityWeek",
@@ -61,7 +80,15 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html"
+      }
+    ],
+    "cves": [
+      "CVE-2026-23871"
+    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
@@ -434,6 +461,28 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+    "headline": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+    "summary": "BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. Aware of an exploited vulnerability not currently listed in the KEV Catalog?",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-11-20T12:00:00.000Z",
+    "ingestedAt": "2026-11-20T19:43:31.659Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2025-42884",
+      "CVE-2026-76466",
+      "CVE-2026-123890",
+      "CVE-2026-129448"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:100748",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100748",
     "title": "Red Hat Releases Critical Update for nginx",
@@ -778,6 +827,40 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:100686",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100686",
+    "title": "RHSA-2026:100686: Important: curl security update",
+    "headline": "RHSA-2026:100686: Important: curl security update",
+    "summary": "An update for curl is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-20T08:57:03.000Z",
+    "ingestedAt": "2026-11-20T19:44:50.186Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:100638",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100638",
+    "title": "RHSA-2026:100638: Moderate: rpm security update",
+    "headline": "RHSA-2026:100638: Moderate: rpm security update",
+    "summary": "An update for rpm is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-20T08:55:28.000Z",
+    "ingestedAt": "2026-11-20T19:44:50.186Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/20/european-commission-ai-generated-cyberattack-publicly-available-tool/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/european-commission-ai-generated-cyberattack-publicly-available-tool/",
     "title": "European Commission Confirms AI-Generated Cyberattack",
@@ -824,6 +907,40 @@
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:100647",
     "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:100654",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100654",
+    "title": "RHSA-2026:100654: Important: .NET 9.0 security, bug fix, and enhancement update",
+    "headline": "RHSA-2026:100654: Important: .NET 9.0 security, bug fix, and enhancement update",
+    "summary": "An update for .NET 9.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-20T08:30:46.000Z",
+    "ingestedAt": "2026-11-20T19:45:50.305Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:100651",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100651",
+    "title": "RHSA-2026:100651: Important: xorg-x11-server security update",
+    "headline": "RHSA-2026:100651: Important: xorg-x11-server security update",
+    "summary": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-20T08:30:06.000Z",
+    "ingestedAt": "2026-11-20T19:45:50.305Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:100662",
@@ -8247,103 +8364,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
-    "title": "Windows PowerShell RCE Vulnerability CVE-2026-40400",
-    "headline": "Windows PowerShell RCE Vulnerability CVE-2026-40400",
-    "summary": "A remote code execution flaw in Windows PowerShell, identified as CVE-2026-40400, was disclosed by Microsoft. The vulnerability allows attackers to execute arbitrary commands on affected systems via crafted PowerShell input, potentially compromising system integrity. Microsoft has issued a patch; administrators should update PowerShell to the latest version and apply the vendor’s security update to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-17T16:00:00.000Z",
-    "ingestedAt": "2026-11-17T17:45:35.863Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
-    "title": "Flipper Devices Unveils Flipper One Linux Multi-Tool",
-    "headline": "Flipper Devices Unveils Flipper One Linux Multi-Tool",
-    "summary": "Flipper Devices announced the Flipper One, a $399 Linux-based computer and networking multi-tool, as part of a crowdfunding campaign. The device builds on the Flipper Zero platform, offering expanded hardware interfaces and a full Linux OS for penetration testing and network analysis. Users can support the project through the campaign, and the company will provide firmware updates and documentation post-release.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-17T16:00:00.000Z",
-    "ingestedAt": "2026-11-17T16:28:08.538Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cyber.gc.ca/en/alerts-advisories/atlassian-security-advisory-av26-1166",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/atlassian-security-advisory-av26-1166",
-    "title": "Atlassian security advisory (AV26-1166)",
-    "headline": "Atlassian security advisory (AV26-1166)",
-    "summary": "Serial number: AV26-1166 Date: November 17, 2026 As of November 17, 2026, Atlassian is affected by a vulnerability in the following products: Jira Service Management Data Center Version 10.3.27 and prior Version 11.3.13 and prior Jira Service Management Server Versions 5.12.16 to 5.12.42 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "publishedAt": "2026-11-17T15:22:04.000Z",
-    "ingestedAt": "2026-11-17T15:43:21.650Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-    "title": "Oracle Java SE Patches 11 Vulnerabilities, CVE-2026-114938 RCE",
-    "headline": "Oracle Java SE Patches 11 Vulnerabilities, CVE-2026-114938 RCE",
-    "summary": "Oracle announced patches for 11 Java SE vulnerabilities, including CVE-2026-114938, a remote code execution flaw that could be exploited without authentication. The vulnerabilities carry a maximum CVSS 3.1 score of 8.1, indicating high severity, and separate reports warn of a potentially critical OpenJDK RCE. Oracle released the patches on Tuesday; administrators should apply the updates immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-17T15:17:36.000Z",
-    "ingestedAt": "2026-11-17T19:43:13.502Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
-    "title": "Trigram Impersonates 50 AI and Blockchain Brands",
-    "headline": "Trigram Impersonates 50 AI and Blockchain Brands",
-    "summary": "Stormshield’s report reveals Trigram, a campaign that impersonates roughly 50 AI and blockchain brands to lure developers into executing infostealer payloads. Attackers embed malicious code in legitimate SDKs, tricking developers into installing compromised libraries that harvest credentials and system information. Defenders should verify SDK sources, enforce code-review policies, and monitor for unusual credential-exfiltration patterns in development environments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-17T15:17:28.000Z",
-    "ingestedAt": "2026-11-17T19:44:04.023Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1165",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1165",
-    "title": "N-able Issues CVE Patches for N-central and MMS3",
-    "headline": "N-able Issues CVE Patches for N-central and MMS3",
-    "summary": "N-able disclosed two CVE vulnerabilities in N-central HF3 and MMS3 appliance, enabling local privilege escalation and authentication bypass. CVE-2026-129271 exploits a flaw in the Patch Management component to gain elevated privileges, while CVE-2026-129272 uses predictable passcodes to bypass MMS3 authentication; neither exploit is confirmed in the wild. N-able recommends applying patches 2026.4.1 HF3 and 2.14.4.5829.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "publishedAt": "2026-11-17T15:02:31.000Z",
-    "ingestedAt": "2026-11-17T21:43:17.203Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1165",
     "additionalSources": []
   }
 ]
