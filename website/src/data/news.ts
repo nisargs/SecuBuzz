@@ -67,6 +67,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100752-critical-openjdk-25-0-5-1-securit-81864ea2",
+    "title": "RHSA-2026:100752: Critical: OpenJDK 25.0.5.1 Security Update for Windows Builds",
+    "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100752",
+    "publishedAt": "2026-11-20T15:50:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100752-critical-openjdk-25-0-5-1-securit",
+      "article-81864ea2",
+      "81864ea2",
+      "rhsa-2026-100752-critical-openjdk-25-0-5-1-securit-2ee088",
+      "rhsa-2026-100752-critical-openjdk-25-0-5-1-security-update-f"
+    ]
+  },
+  {
     "slug": "kernel-vulnerabilities-in-oracle-linux-expose-syst-2ac58231",
     "title": "Kernel Vulnerabilities in Oracle Linux Expose Systems",
     "summary": "Oracle Linux kernel updates USN-9170-3 address multiple flaws that could allow attackers to compromise affected systems. The vulnerabilities, identified as CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, affect IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems, potentially enabling privilege escalation or denial of service. Administrators should apply kernel patches, verify subsystem configurations, and monitor for anomalous network activity to mitigate exploitation risks.",
@@ -237,6 +256,25 @@ export const news: NewsBrief[] = [
       "article-cdfa009b",
       "cdfa009b",
       "us-threat-center-targets-scam-networks-6126de"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100751-critical-nginx-1-26-security-upda-f82e3205",
+    "title": "RHSA-2026:100751: Critical: nginx:1.26 security update",
+    "summary": "An update for the nginx:1.26 module is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100751",
+    "publishedAt": "2026-11-20T13:49:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100751-critical-nginx-1-26-security-upda",
+      "article-f82e3205",
+      "f82e3205",
+      "rhsa-2026-100751-critical-nginx-1-26-security-upda-2ee088",
+      "rhsa-2026-100751-critical-nginx-1-26-security-update"
     ]
   },
   {
@@ -933,6 +971,43 @@ export const news: NewsBrief[] = [
       "article-a04d461c",
       "a04d461c",
       "hackers-scan-litellm-ai-servers-for-rce-flaws-57828f"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100687-critical-edk2-security-update-8ee21d8f",
+    "title": "RHSA-2026:100687: Critical: edk2 security update",
+    "summary": "An update for edk2 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100687",
+    "publishedAt": "2026-11-20T08:24:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100687-critical-edk2-security-update",
+      "article-8ee21d8f",
+      "8ee21d8f",
+      "rhsa-2026-100687-critical-edk2-security-update-2ee085"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100694-critical-kpatch-patch-6-12-0-211-c146fa55",
+    "title": "RHSA-2026:100694: Critical: kpatch-patch-6_12_0-211_16_1 and kpatch-patch-6_12_0-211_49_1 security update",
+    "summary": "An update for kpatch-patch-6_12_0-211_16_1 and kpatch-patch-6_12_0-211_49_1 is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100694",
+    "publishedAt": "2026-11-20T08:24:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100694-critical-kpatch-patch-6-12-0-211",
+      "article-c146fa55",
+      "c146fa55",
+      "rhsa-2026-100694-critical-kpatch-patch-6-12-0-211-2ee085",
+      "rhsa-2026-100694-critical-kpatch-patch-6-12-0-211-16-1-and-k"
     ]
   },
   {
@@ -9635,81 +9710,6 @@ export const news: NewsBrief[] = [
       "article-129f5264",
       "129f5264",
       "linx-security-governs-ai-agent-actions-144797"
-    ]
-  },
-  {
-    "slug": "fandango-alerts-buyers-to-possible-card-data-expos-e66f2122",
-    "title": "Fandango Alerts Buyers to Possible Card Data Exposure",
-    "summary": "Fandango disclosed that card numbers, CVVs, expiration dates, and email addresses may have been exposed during checkout over four days in October. The leak likely resulted from insecure handling of payment data, creating a vulnerability that could enable credential theft; no exploitation reported. Fandango warned affected customers to monitor accounts and change passwords while investigating the incident with payment processors.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/fandango-warns-ticket-buyers-of-payment-card-data-exposure/",
-    "publishedAt": "2026-11-17T14:14:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fandango-alerts-buyers-to-possible-card-data-expos",
-      "article-e66f2122",
-      "e66f2122",
-      "fandango-alerts-buyers-to-possible-card-data-expos-787d6e",
-      "fandango-alerts-buyers-to-possible-card-data-exposure"
-    ]
-  },
-  {
-    "slug": "detectify-introduces-agentic-tooling-for-live-veri-28032cc2",
-    "title": "Detectify Introduces Agentic Tooling for Live Verification",
-    "summary": "Detectify has released Agentic Tooling, enabling organizations to run AI agents in their own environments to probe suspected vulnerabilities in live applications. The tool includes a Security Ledger that records objective evidence, allowing teams to confirm exploitability rather than rely on probabilistic assessments. This development addresses a DevSecOps gap, providing a systematic approach to validate and prioritize vulnerabilities before deployment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/detectify-agentic-tooling/",
-    "publishedAt": "2026-11-17T14:13:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "detectify-introduces-agentic-tooling-for-live-veri",
-      "article-28032cc2",
-      "28032cc2",
-      "detectify-introduces-agentic-tooling-for-live-veri-4cf396",
-      "detectify-introduces-agentic-tooling-for-live-verification"
-    ]
-  },
-  {
-    "slug": "teen-hacker-pleads-guilty-to-gta-vi-footage-leak-a11e90b1",
-    "title": "Teen Hacker Pleads Guilty to GTA VI Footage Leak",
-    "summary": "Artion Kurtaj, 21, admitted to a 2022 series of leaks that included unpublished Grand Theft Auto VI footage. The unauthorized release exposed proprietary game content before its scheduled launch, potentially impacting Rockstar Games’ intellectual property. Kurtaj pleaded guilty, facing legal consequences, and the incident highlights the need for stricter content protection measures.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/autistic-teen-hacker-guilty-plea-britain-gta6-leak",
-    "publishedAt": "2026-11-17T14:09:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "teen-hacker-pleads-guilty-to-gta-vi-footage-leak",
-      "article-a11e90b1",
-      "a11e90b1",
-      "teen-hacker-pleads-guilty-to-gta-vi-footage-leak-4820b5"
-    ]
-  },
-  {
-    "slug": "appgate-optimizer-automates-least-privilege-access-edd87ee6",
-    "title": "AppGate Optimizer Automates Least-Privilege Access Reviews",
-    "summary": "AppGate announced general availability of AppGate Optimizer, a tool that analyzes how users access resources and recommends precise entitlement changes for administrator review. The product aims to reduce exposure from over-provisioned access, cut manual access-review time, and demonstrate least-privilege compliance to auditors. Administrators can apply recommended changes without disrupting user workflows, according to the vendor.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/appgate-optimizer/",
-    "publishedAt": "2026-11-17T14:03:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "appgate-optimizer-automates-least-privilege-access",
-      "article-edd87ee6",
-      "edd87ee6",
-      "appgate-optimizer-automates-least-privilege-access-42a97c",
-      "appgate-optimizer-automates-least-privilege-access-reviews"
     ]
   }
 ];

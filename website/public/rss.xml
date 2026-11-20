@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 16:47:03 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 17:47:57 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>AI-Driven Attacks Arrive; CISOs Need Five Steps</title>
@@ -33,6 +33,15 @@
       <pubDate>Fri, 20 Nov 2026 15:58:06 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100752: Critical: OpenJDK 25.0.5.1 Security Update for Windows Builds</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100752-critical-openjdk-25-0-5-1-securit-81864ea2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100752-critical-openjdk-25-0-5-1-securit-81864ea2</guid>
+      <description><![CDATA[An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Fri, 20 Nov 2026 15:50:41 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100752">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Kernel Vulnerabilities in Oracle Linux Expose Systems</title>
@@ -114,6 +123,15 @@
       <pubDate>Fri, 20 Nov 2026 13:49:11 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/11/us-launches-center-to-disrupt-scams-and-warn-victims-sooner">Malwarebytes Labs</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100751: Critical: nginx:1.26 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100751-critical-nginx-1-26-security-upda-f82e3205</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100751-critical-nginx-1-26-security-upda-f82e3205</guid>
+      <description><![CDATA[An update for the nginx:1.26 module is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Fri, 20 Nov 2026 13:49:08 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100751">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>N-able Breach Causes Global Mail Assure Outage</title>
@@ -437,24 +455,6 @@
       <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Fri, 20 Nov 2026 08:27:06 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100661">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Scan LiteLLM AI Servers for RCE Flaws</title>
-      <link>https://secubuzz.com/news/hackers-scan-litellm-ai-servers-for-rce-flaws-a04d461c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-scan-litellm-ai-servers-for-rce-flaws-a04d461c</guid>
-      <description><![CDATA[Hackers scan the internet for exposed LiteLLM AI servers, actively targeting a test endpoint in the LiteLLM gateway. They plan to chain two flaws-one in LiteLLM and a Starlette framework weakness-to gain unauthenticated remote code execution. No patch exists yet; administrators should restrict public LiteLLM access and apply future fixes.]]></description>
-      <pubDate>Fri, 20 Nov 2026 08:25:28 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/litellm-ai-servers/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100659: Important: .NET 8.0 security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100659-important-net-8-0-security-bug-fi-ccb92b86</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100659-important-net-8-0-security-bug-fi-ccb92b86</guid>
-      <description><![CDATA[An update for .NET 8.0 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Fri, 20 Nov 2026 08:23:06 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100659">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
