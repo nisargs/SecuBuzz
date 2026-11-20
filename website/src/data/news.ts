@@ -11,6 +11,85 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-driven-attacks-arrive-cisos-need-five-steps-764d2948",
+    "title": "AI-Driven Attacks Arrive; CISOs Need Five Steps",
+    "summary": "Claude Mythos Preview, an advanced AI model, identified and linked software vulnerabilities faster than traditional tools. ARTEX recently removed its corporate barrier, granting attackers broader access to the model and increasing threat exposure. CISOs should adopt five proactive steps, tightening AI controls, enhancing vulnerability triage, and updating incident response plans.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/blog/ai-driven-attacks-are-here-five-steps-cisos-should-take-now/",
+    "publishedAt": "2026-11-20T16:41:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-driven-attacks-arrive-cisos-need-five-steps",
+      "article-764d2948",
+      "764d2948",
+      "ai-driven-attacks-arrive-cisos-need-five-steps-6f2ce9"
+    ]
+  },
+  {
+    "slug": "whatsapp-patches-cve-2026-23871-scam-vulnerability-c7f51406",
+    "title": "WhatsApp Patches CVE-2026-23871 Scam Vulnerability",
+    "summary": "WhatsApp identified CVE-2026-23871, a flaw that could have enabled attackers to craft more convincing scam messages. The vulnerability, discovered during a campaign disruption effort, potentially allowed malicious actors to embed deceptive content within legitimate chats. WhatsApp released a patch in its latest update; users should install the new version to eliminate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
+    "publishedAt": "2026-11-20T16:01:02.000Z",
+    "cves": [
+      "CVE-2026-23871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "whatsapp-patches-cve-2026-23871-scam-vulnerability",
+      "article-c7f51406",
+      "c7f51406",
+      "whatsapp-patches-cve-2026-23871-scam-vulnerability-2655f8"
+    ]
+  },
+  {
+    "slug": "chase-breach-exposes-customer-data-via-third-party-c58378e7",
+    "title": "Chase Breach Exposes Customer Data via Third-Party",
+    "summary": "J.P. Morgan Chase disclosed a data breach originating from a cyberattack on a third-party service provider, exposing customer personal and marketing data. The incident potentially compromised sensitive information for Chase, Visa, and Mastercard customers, raising concerns over third-party security controls. Chase recommends affected customers monitor accounts, change credentials, and report suspicious activity while the firm investigates the breach.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
+    "publishedAt": "2026-11-20T15:58:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chase-breach-exposes-customer-data-via-third-party",
+      "article-c58378e7",
+      "c58378e7",
+      "chase-breach-exposes-customer-data-via-third-party-3052a2"
+    ]
+  },
+  {
+    "slug": "kernel-vulnerabilities-in-oracle-linux-expose-syst-2ac58231",
+    "title": "Kernel Vulnerabilities in Oracle Linux Expose Systems",
+    "summary": "Oracle Linux kernel updates USN-9170-3 address multiple flaws that could allow attackers to compromise affected systems. The vulnerabilities, identified as CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, affect IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems, potentially enabling privilege escalation or denial of service. Administrators should apply kernel patches, verify subsystem configurations, and monitor for anomalous network activity to mitigate exploitation risks.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9170-3",
+    "publishedAt": "2026-11-20T15:33:20.000Z",
+    "cves": [
+      "CVE-2026-64564",
+      "CVE-2026-98432",
+      "CVE-2026-99999"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "kernel-vulnerabilities-in-oracle-linux-expose-syst",
+      "article-2ac58231",
+      "2ac58231",
+      "kernel-vulnerabilities-in-oracle-linux-expose-syst-7e7875",
+      "kernel-vulnerabilities-in-oracle-linux-expose-systems"
+    ]
+  },
+  {
     "slug": "spreadsheets-hide-password-risks-central-managemen-993785c5",
     "title": "Spreadsheets Hide Password Risks, Central Management Needed",
     "summary": "Storing corporate passwords in spreadsheets exposes IT administrators to weak, reused, or compromised credentials, as spreadsheets lack audit controls. This reliance on unapproved storage bypasses centralized credential management, increasing credential reuse and data exposure risk. Adopting a centralized password vault, such as NordPass, provides visibility, risk assessment, and secure sharing to mitigate spreadsheet-based credential risks.",
@@ -462,6 +541,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100745-critical-nginx-1-26-security-upda-78a6aabd",
+    "title": "RHSA-2026:100745: Critical: nginx:1.26 security update",
+    "summary": "An update for the nginx:1.26 module is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100745",
+    "publishedAt": "2026-11-20T11:05:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100745-critical-nginx-1-26-security-upda",
+      "article-78a6aabd",
+      "78a6aabd",
+      "rhsa-2026-100745-critical-nginx-1-26-security-upda-2ee088",
+      "rhsa-2026-100745-critical-nginx-1-26-security-update"
+    ]
+  },
+  {
     "slug": "f5-issues-emergency-patches-for-critical-big-ip-rc-37f0d20d",
     "title": "F5 Issues Emergency Patches for Critical BIG-IP RCE Flaws",
     "summary": "F5 released emergency patches for five critical BIG-IP vulnerabilities that enable remote code execution or denial-of-service attacks. The flaws grant unauthenticated attackers kernel-level code execution, threatening network traffic integrity and service availability, and the vendor classifies them as critical. F5 advises applying the latest BIG-IP firmware immediately and, if delayed, disabling affected modules and limiting management access as interim mitigations.",
@@ -655,6 +753,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100658-important-net-9-0-security-bug-fi-4564b0e1",
+    "title": "RHSA-2026:100658: Important: .NET 9.0 security, bug fix, and enhancement update",
+    "summary": "An update for .NET 9.0 is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100658",
+    "publishedAt": "2026-11-20T09:09:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100658-important-net-9-0-security-bug-fi",
+      "article-4564b0e1",
+      "4564b0e1",
+      "rhsa-2026-100658-important-net-9-0-security-bug-fi-2ee085",
+      "rhsa-2026-100658-important-net-9-0-security-bug-fix-and-enha"
+    ]
+  },
+  {
     "slug": "n-able-blames-service-disruption-on-cyberattack-ad60ab08",
     "title": "N-Able Blames Service Disruption on Cyberattack",
     "summary": "N-Able attributes a recent service disruption to a cyberattack that impacted its Mail Assure and SpamExperts Hosted Cloud offerings. The incident may have exposed user credentials, though no confirmed data exfiltration has been reported, raising concerns about account security. Affected customers should verify account integrity, enforce multi-factor authentication, and monitor for suspicious activity while awaiting vendor guidance.",
@@ -816,6 +933,43 @@ export const news: NewsBrief[] = [
       "article-a04d461c",
       "a04d461c",
       "hackers-scan-litellm-ai-servers-for-rce-flaws-57828f"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100659-important-net-8-0-security-bug-fi-ccb92b86",
+    "title": "RHSA-2026:100659: Important: .NET 8.0 security, bug fix, and enhancement update",
+    "summary": "An update for .NET 8.0 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100659",
+    "publishedAt": "2026-11-20T08:23:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100659-important-net-8-0-security-bug-fi",
+      "article-ccb92b86",
+      "ccb92b86",
+      "rhsa-2026-100659-important-net-8-0-security-bug-fi-2ee085",
+      "rhsa-2026-100659-important-net-8-0-security-bug-fix-and-enha"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100667-important-flatpak-security-update-a1a845d1",
+    "title": "RHSA-2026:100667: Important: flatpak security update",
+    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100667",
+    "publishedAt": "2026-11-20T08:20:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100667-important-flatpak-security-update",
+      "article-a1a845d1",
+      "a1a845d1",
+      "rhsa-2026-100667-important-flatpak-security-update-2ee085"
     ]
   },
   {
@@ -2385,6 +2539,27 @@ export const news: NewsBrief[] = [
       "article-8e3f6470",
       "8e3f6470",
       "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-cve-2026-69360-in-office-wo-f5ab3f82",
+    "title": "Microsoft Acknowledges CVE-2026-69360 in Office Word",
+    "summary": "Microsoft acknowledged CVE-2026-69360, a remote code execution vulnerability in Office Word. The vendor has issued an informational update, but no exploit details or patch status are disclosed. Security teams should monitor for future advisories and verify that their Office installations are up to date currently and immediately.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69360",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-69360"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-cve-2026-69360-in-office-wo",
+      "article-f5ab3f82",
+      "f5ab3f82",
+      "microsoft-acknowledges-cve-2026-69360-in-office-wo-745a66",
+      "microsoft-acknowledges-cve-2026-69360-in-office-word"
     ]
   },
   {
@@ -4142,6 +4317,24 @@ export const news: NewsBrief[] = [
       "1d1c9f59",
       "researcher-demonstrates-rce-in-postgresql-mysql-or-2444d1",
       "researcher-demonstrates-rce-in-postgresql-mysql-oracle"
+    ]
+  },
+  {
+    "slug": "eol-iot-devices-pose-security-risks-if-unmanaged-9af0d1c3",
+    "title": "EOL IoT Devices Pose Security Risks if Unmanaged",
+    "summary": "End-of-life IoT devices become security liabilities when vendors stop supporting them, leaving smart homes exposed to unpatched flaws. Without firmware updates, known vulnerabilities remain exploitable, allowing attackers to use exposed interfaces or default credentials for unauthorized entry. Teams should decommission or replace unsupported devices, enforce network segmentation, and apply vendor-approved workarounds or firmware upgrades where possible.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/internet-of-things/iot-devices-no-longer-supported-smart-home-safe/",
+    "publishedAt": "2026-11-19T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eol-iot-devices-pose-security-risks-if-unmanaged",
+      "article-9af0d1c3",
+      "9af0d1c3",
+      "eol-iot-devices-pose-security-risks-if-unmanaged-5e2c0d"
     ]
   },
   {
@@ -9517,191 +9710,6 @@ export const news: NewsBrief[] = [
       "edd87ee6",
       "appgate-optimizer-automates-least-privilege-access-42a97c",
       "appgate-optimizer-automates-least-privilege-access-reviews"
-    ]
-  },
-  {
-    "slug": "huntress-uncovers-token-replay-campaign-via-defend-04656f53",
-    "title": "Huntress Uncovers Token-Replay Campaign via Defender Data",
-    "summary": "Huntress’s Agentic Security Platform detected a token-replay campaign that compromised 97 accounts across 79 organizations via Microsoft Defender data. Attackers replayed stolen tokens to gain unauthorized access, enabling lateral movement and data exfiltration within tenant environments. Teams should enforce MFA, rotate compromised tokens, and apply latest Defender updates to block replay attacks.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/huntress-response-for-microsoft-defender-incidents-across-endpoints-and-microsoft-365",
-    "publishedAt": "2026-11-17T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "huntress-uncovers-token-replay-campaign-via-defend",
-      "article-04656f53",
-      "04656f53",
-      "huntress-uncovers-token-replay-campaign-via-defend-4c1e08",
-      "huntress-uncovers-token-replay-campaign-via-defender-data"
-    ]
-  },
-  {
-    "slug": "pretxt-launches-ai-supervision-tool-with-5m-seed-f15809d7",
-    "title": "Pretxt Launches AI Supervision Tool with $5M Seed",
-    "summary": "Pretxt has introduced an AI supervision tool designed to keep autonomous agents within defined guardrails and prevent unintended harm. The solution, backed by a $5 million seed round, aims to address growing concerns over AI safety and misuse. Industry observers note that the tool could become a critical component for enterprises deploying large language models and autonomous systems.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/pretxt-emerges-stealth-with-5m-seed-and-an-ai-supervision-tool/",
-    "publishedAt": "2026-11-17T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pretxt-launches-ai-supervision-tool-with-5m-seed",
-      "article-f15809d7",
-      "f15809d7",
-      "pretxt-launches-ai-supervision-tool-with-5m-seed-678a1d"
-    ]
-  },
-  {
-    "slug": "cold-relic-exploits-us-organization-via-impersonat-656dba45",
-    "title": "COLD RELIC Exploits US Organization via Impersonation",
-    "summary": "Mandiant traced a Russian state-sponsored group, COLD RELIC, to a 2026 compromise of a US-based organization through cloud impersonation. The attackers leveraged a prior late-2025 breach to weaponize stolen staff directory data and identities, enabling ongoing third-party espionage and data exfiltration. Security teams should enforce cloud access controls, monitor for credential reuse, and conduct response drills against state-sponsored intrusion tactics.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Google Threat Intelligence",
-    "sourceUrl": "https://cloud.google.com/blog/topics/threat-intelligence/cold-relic-a-case-study-in-impersonation-and-compromise/",
-    "publishedAt": "2026-11-17T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cold-relic-exploits-us-organization-via-impersonat",
-      "article-656dba45",
-      "656dba45",
-      "cold-relic-exploits-us-organization-via-impersonat-7c4cde",
-      "cold-relic-exploits-us-organization-via-impersonation"
-    ]
-  },
-  {
-    "slug": "hackers-use-fake-shipment-zip-files-and-dll-side-l-d100b481",
-    "title": "Hackers Use Fake Shipment ZIP Files and DLL Side-Loading to Deploy PureLogs and PureRAT Malware",
-    "summary": "Hackers are using a shipment-themed ZIP archive to launch a Windows malware chain that combines a legitimate signed application, DLL side-loading, and hidden Python code. The attack disguises its components as shipping material, images, documents, and a browser updater before running a payload linked to PureLogs and PureRAT infrastructure.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fake-shipment-zip-files-and-dll-side-loading/",
-    "publishedAt": "2026-11-17T13:58:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-fake-shipment-zip-files-and-dll-side-l",
-      "article-d100b481",
-      "d100b481",
-      "hackers-use-fake-shipment-zip-files-and-dll-side-l-7a52b0",
-      "hackers-use-fake-shipment-zip-files-and-dll-side-loading-to-"
-    ]
-  },
-  {
-    "slug": "eu-accuses-temu-of-weak-moderation-f6497b89",
-    "title": "EU Accuses Temu of Weak Moderation",
-    "summary": "The European Commission found Temu in breach of the Digital Services Act for weak product checks and poor content moderation. Announced on November 17, 2026, the findings question whether the marketplace stops illegal products from reaching European buyers. The case centers on Article 35 of the DSA and could trigger further regulatory action if Temu does not strengthen moderation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/temu-breaching-digital-services-act/",
-    "publishedAt": "2026-11-17T13:56:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eu-accuses-temu-of-weak-moderation",
-      "article-f6497b89",
-      "f6497b89",
-      "eu-accuses-temu-of-weak-moderation-1d274f"
-    ]
-  },
-  {
-    "slug": "connectsecure-launches-agentic-ai-pen-testing-02aaed91",
-    "title": "ConnectSecure Launches Agentic AI Pen Testing",
-    "summary": "ConnectSecure has introduced Agentic AI Penetration Testing, a tool that assists MSPs and enterprise teams in assessing which vulnerabilities are likely exploitable. The solution provides deeper insight into attack paths and prioritizes remediation efforts, reducing the time required for expert analysis. Adoption of this AI-driven approach can accelerate vulnerability triage and improve overall security posture.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/connectsecure-agentic-ai-penetration-testing/",
-    "publishedAt": "2026-11-17T13:49:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "connectsecure-launches-agentic-ai-pen-testing",
-      "article-02aaed91",
-      "02aaed91",
-      "connectsecure-launches-agentic-ai-pen-testing-411cd2"
-    ]
-  },
-  {
-    "slug": "windows-11-telemetry-tracks-ai-coding-agents-20ea69ce",
-    "title": "Windows 11 Telemetry Tracks AI Coding Agents",
-    "summary": "Windows 11 records which AI coding agents and developer tools run, sending that data to Microsoft when optional diagnostics are enabled. Researcher Xusheng Li first reported the feature on November 16, 2026, and published a technical write-up. The disclosure raises a privacy issue but no vulnerability is present; disabling optional diagnostics stops telemetry.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/windows-11-ai-agent-tracking/",
-    "publishedAt": "2026-11-17T13:43:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-11-telemetry-tracks-ai-coding-agents",
-      "article-20ea69ce",
-      "20ea69ce",
-      "windows-11-telemetry-tracks-ai-coding-agents-6f4ec6"
-    ]
-  },
-  {
-    "slug": "kazakh-ransomware-affiliate-extradited-over-500m-d-5e12c612",
-    "title": "Kazakh Ransomware Affiliate Extradited Over $500M Demands",
-    "summary": "A 43-year-old national linked to the 8-Digits Team was extradited from Italy to the US for ransomware extortion against hospitals and schools. The affiliate allegedly stole data and threatened publication, demanding over $500 million in ransom from the INC and Lynx operations.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/8-digits-team-ransomware-suspect-extradited-us-italy/",
-    "publishedAt": "2026-11-17T13:42:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kazakh-ransomware-affiliate-extradited-over-500m-d",
-      "article-5e12c612",
-      "5e12c612",
-      "kazakh-ransomware-affiliate-extradited-over-500m-d-477591",
-      "kazakh-ransomware-affiliate-extradited-over-500m-demands"
-    ]
-  },
-  {
-    "slug": "airlock-digital-releases-agentic-control-for-endpo-61bdad0d",
-    "title": "Airlock Digital Releases Agentic Control for Endpoint AI",
-    "summary": "Airlock Digital released Agentic Control in v7.1, adding runtime evaluation of AI agent requests to endpoint security. The feature extends Deny-by-Default Application Control by intercepting unauthorized agent behavior before execution, mitigating misuse of AI workloads. Customers can deploy the update immediately, integrating Agentic Control into existing endpoint policies and monitoring AI activity logs for validation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/airlock-digital-agentic-control/",
-    "publishedAt": "2026-11-17T13:39:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "airlock-digital-releases-agentic-control-for-endpo",
-      "article-61bdad0d",
-      "61bdad0d",
-      "airlock-digital-releases-agentic-control-for-endpo-2cb6f1",
-      "airlock-digital-releases-agentic-control-for-endpoint-ai"
-    ]
-  },
-  {
-    "slug": "amazon-lookalike-job-offer-is-a-reshipping-scam-d487253c",
-    "title": "Amazon-Lookalike Job Offer Is a Reshipping Scam",
-    "summary": "A fake Amazon-branded job posting promises $5,000 monthly for remote work but exhibits classic reshipping scam indicators. The listing lacks verifiable contact details, requests upfront fees, and offers unrealistic compensation for typical reshipping roles. Job seekers should verify employer legitimacy, avoid payment requests, and report suspicious postings to platform authorities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/amazon-job-offer-promises-5000-a-month-but-its-got-all-the-signs-of-a-scam",
-    "publishedAt": "2026-11-17T13:37:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "amazon-lookalike-job-offer-is-a-reshipping-scam",
-      "article-d487253c",
-      "d487253c",
-      "amazon-lookalike-job-offer-is-a-reshipping-scam-628eac"
     ]
   }
 ];
