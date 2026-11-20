@@ -5,8 +5,98 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 13:09:06 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 14:45:46 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Credit Unions Hit by Unnoticed Supplier Breach</title>
+      <link>https://secubuzz.com/news/credit-unions-hit-by-unnoticed-supplier-breach-cee36edd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/credit-unions-hit-by-unnoticed-supplier-breach-cee36edd</guid>
+      <description><![CDATA[A supplier breach affecting dozens of credit unions went unnoticed for six weeks. The breach, reported by Ireland’s Data Protection Commission, involved a Belfast-based data processor that handled sensitive information for over 40 credit unions, potentially exposing customer data. Credit unions should conduct forensic investigations, notify affected customers, and review third-party data handling agreements.]]></description>
+      <pubDate>Fri, 20 Nov 2026 14:24:00 GMT</pubDate>
+      <source url="https://therecord.media/dozens-of-credit-unions-hit-by-supplier-breach">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>SOC Training Adapted for AI-Driven Triage</title>
+      <link>https://secubuzz.com/news/soc-training-adapted-for-ai-driven-triage-9dad4985</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/soc-training-adapted-for-ai-driven-triage-9dad4985</guid>
+      <description><![CDATA[SOC leaders face a steep learning curve as agentic AI automates triage, threatening analyst skill retention. The article outlines strategies to preserve investigative judgment and bench talent, emphasizing continuous training and mentorship to counter AI’s efficiency gains. Adopting structured learning paths and hands-on simulations can help analysts adapt, ensuring critical decision-making remains human-centered.]]></description>
+      <pubDate>Fri, 20 Nov 2026 14:00:03 GMT</pubDate>
+      <source url="https://www.sentinelone.com/blog/the-new-analyst-learning-curve-training-and-retaining-talent-in-the-autonomous-soc/">SentinelOne</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>NIST 800-171 Rev 3 Transition Guide</title>
+      <link>https://secubuzz.com/news/nist-800-171-rev-3-transition-guide-7b2ecc11</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nist-800-171-rev-3-transition-guide-7b2ecc11</guid>
+      <description><![CDATA[Defense contractors must navigate the shift from NIST SP 800-171 Revision 2 to Revision 3 to maintain CMMC compliance. The guide presents a four-step approach, detailing assessment, remediation, documentation, and audit preparation to meet new security controls. Implementing these steps early mitigates compliance gaps and reduces the risk of certification delays.]]></description>
+      <pubDate>Fri, 20 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.huntress.com/blog/handling-the-nist-800-171-rev-3-transition">Huntress</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>US Threat Center Targets Scam Networks</title>
+      <link>https://secubuzz.com/news/us-threat-center-targets-scam-networks-cdfa009b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-threat-center-targets-scam-networks-cdfa009b</guid>
+      <description><![CDATA[The US Homeland Security Task Force has launched the Threat Disruption Center to target scam and sextortion crime networks. The center will coordinate intelligence sharing, law-enforcement operations, and victim-warning campaigns to disrupt financial fraud. Stakeholders are urged to report suspicious activity and collaborate with the center to strengthen national cyber-crime defenses.]]></description>
+      <pubDate>Fri, 20 Nov 2026 13:49:11 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/us-launches-center-to-disrupt-scams-and-warn-victims-sooner">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>N-able Breach Causes Global Mail Assure Outage</title>
+      <link>https://secubuzz.com/news/n-able-breach-causes-global-mail-assure-outage-4916ef61</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-breach-causes-global-mail-assure-outage-4916ef61</guid>
+      <description><![CDATA[N-able confirmed a server breach that triggered a worldwide outage of its Mail Assure and SpamExperts Hosted Cloud services. The intrusion exploited an unpatched authentication flaw, allowing attackers to gain privileged access and disrupt email filtering and spam protection. N-able has released a patch and recommends immediate credential rotation and network segmentation to mitigate further compromise.]]></description>
+      <pubDate>Fri, 20 Nov 2026 13:18:36 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical nginx:1.24 RCE Patch</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-nginx-1-24-rce-patch-5c1c1334</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-nginx-1-24-rce-patch-5c1c1334</guid>
+      <description><![CDATA[Red Hat released a critical update for nginx:1.24 on RHEL 9.8, fixing a remote code execution flaw. The vulnerability permits unauthenticated attackers to run arbitrary code with root privileges, and Red Hat assigned a CVSS score of 9.8. Apply the update immediately and verify container integrity, following Red Hat’s mitigation guidance.]]></description>
+      <pubDate>Fri, 20 Nov 2026 13:05:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100750">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CyberLeek Distributes Fake GTA 6 Launchers with Malware</title>
+      <link>https://secubuzz.com/news/cyberleek-distributes-fake-gta-6-launchers-with-ma-3f6a75d7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyberleek-distributes-fake-gta-6-launchers-with-ma-3f6a75d7</guid>
+      <description><![CDATA[CyberLeek malware campaign uses over 355 domains to distribute fake GTA 6 launchers that deliver malicious payloads. The sites masquerade as legitimate game releases, but the ZIP archives contain trojanized executables designed to steal credentials and install backdoors. Security teams should block the listed domains, update URL filtering, and educate users about the phishing nature of the downloads.]]></description>
+      <pubDate>Fri, 20 Nov 2026 13:02:57 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fake-gta-6-pc-launchers/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Ransomware Group Publishes Visa, Mastercard, JPMorgan Data</title>
+      <link>https://secubuzz.com/news/ransomware-group-publishes-visa-mastercard-jpmorga-3c9a1f42</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-group-publishes-visa-mastercard-jpmorga-3c9a1f42</guid>
+      <description><![CDATA[A ransomware group disclosed stolen data allegedly from third-party providers linked to Visa, Mastercard, and JPMorgan Chase customers. The leak includes personal identifiers and financial information, potentially exposing millions of cardholders to credential theft and fraud. Affected institutions should conduct forensic investigations, notify impacted customers, and enforce stricter third-party access controls.]]></description>
+      <pubDate>Fri, 20 Nov 2026 12:51:36 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/11/hackers-leak-data-linked-to-visa-mastercard-and-jpmorgan-customers">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Hackers Repurpose SoftEther VPN for Stealthy Espionage</title>
+      <link>https://secubuzz.com/news/hackers-repurpose-softether-vpn-for-stealthy-espio-57435616</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-repurpose-softether-vpn-for-stealthy-espio-57435616</guid>
+      <description><![CDATA[Hackers rebuilt SoftEther VPN Bridge into NtMonitor VPN, creating a covert channel that links an external network to a compromised government network. The modified client leaves fewer SoftEther traces, enabling stealthy lateral movement; researchers link it to Webworm, a state-sponsored actor. No vendor patch exists; defenders should block the custom binary, enforce strict VPN controls, and monitor anomalous outbound traffic.]]></description>
+      <pubDate>Fri, 20 Nov 2026 12:40:26 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/legitimate-vpn-software/">Cyber Security News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Industry Debates AI Patching After Outages</title>
+      <link>https://secubuzz.com/news/industry-debates-ai-patching-after-outages-993d70af</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/industry-debates-ai-patching-after-outages-993d70af</guid>
+      <description><![CDATA[Industry experts debated whether AI-accelerated patching contributed to recent major outages and system fragility. They emphasized the necessity of tested rollback plans and robust inter-system resilience to prevent cascading failures. The discussion highlighted that rapid automation must be balanced with rigorous validation to safeguard critical infrastructure and ensure compliance with regulatory standards.]]></description>
+      <pubDate>Fri, 20 Nov 2026 12:38:55 GMT</pubDate>
+      <source url="https://www.securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday/">SecurityWeek</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Armory Castle Exploits VMware vCenter CVE-2026-123890</title>
       <link>https://secubuzz.com/news/armory-castle-exploits-vmware-vcenter-cve-2026-123-d6d0a5d8</link>
@@ -24,6 +114,15 @@
       <pubDate>Fri, 20 Nov 2026 12:20:00 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html">The Hacker News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Update for nginx</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-update-for-nginx-12d2a366</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-update-for-nginx-12d2a366</guid>
+      <description><![CDATA[Red Hat issued a critical security update for nginx on RHEL 9, addressing multiple high-severity vulnerabilities. The update mitigates several CVE-identified flaws, each with a CVSS base score of 9.0 or higher, and prevents unauthenticated remote code execution. Administrators should apply the RHSA-2026:100748 package immediately and verify that all affected services are restarted.]]></description>
+      <pubDate>Fri, 20 Nov 2026 11:44:59 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100748">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>SBC Medical Group Breach Exposes 2 Million Customers</title>
@@ -215,6 +314,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat expat Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-expat-security-update-8303ef25</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-expat-security-update-8303ef25</guid>
+      <description><![CDATA[Red Hat Enterprise Linux 8 users must address a flaw in the expat XML parser, highlighted in RHSA-2026:100671. The issue permits local users to cause a stack overflow, enabling arbitrary code execution with a CVSS score of 7.5. Red Hat advises installing the expat update via the RHEL 8 update mechanism to eliminate the vulnerability.]]></description>
+      <pubDate>Fri, 20 Nov 2026 08:16:31 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100671">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat fltk Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-fltk-security-update-de925d74</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-fltk-security-update-de925d74</guid>
+      <description><![CDATA[Red Hat Enterprise Linux 8 users face a critical flaw in the fltk GUI toolkit, as identified in RHSA-2026:100695. The vulnerability allows local users to trigger a buffer overflow, potentially leading to arbitrary code execution with a CVSS score of 8.1.]]></description>
+      <pubDate>Fri, 20 Nov 2026 08:14:06 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100695">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>RHSA-2026:100672: Important: flatpak security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-100672-important-flatpak-security-update-826ad3dd</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100672-important-flatpak-security-update-826ad3dd</guid>
@@ -240,6 +357,15 @@
       <pubDate>Fri, 20 Nov 2026 07:35:46 GMT</pubDate>
       <source url="https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/">SecurityWeek</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>ROMULUS ClickFix Delivers New RAT to Target PCs</title>
+      <link>https://secubuzz.com/news/romulus-clickfix-delivers-new-rat-to-target-pcs-21c5eb00</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/romulus-clickfix-delivers-new-rat-to-target-pcs-21c5eb00</guid>
+      <description><![CDATA[Threat actors used the ROMULUS ClickFix delivery platform to ship a previously undocumented remote access trojan that resembles CNCMachineRMS. The RAT leverages signed binary sideloading and can spy on users while granting full control over infected PCs. Defenders should block ClickFix traffic, enforce application whitelisting, and monitor for unusual outbound connections to mitigate this threat.]]></description>
+      <pubDate>Fri, 20 Nov 2026 07:11:39 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html">The Hacker News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Armory Castle Exploits VMware vCenter Zero-Day</title>
@@ -329,132 +455,6 @@
       <description><![CDATA[A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 8 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114946) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.]]></description>
       <pubDate>Fri, 20 Nov 2026 02:42:46 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9181-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>CRaC JDK 21 Vulnerabilities Expose RCE and DoS Risks</title>
-      <link>https://secubuzz.com/news/crac-jdk-21-vulnerabilities-expose-rce-and-dos-ris-df412a2b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crac-jdk-21-vulnerabilities-expose-rce-and-dos-ris-df412a2b</guid>
-      <description><![CDATA[CVE-2026-114938 through CVE-2026-114941 affect CRaC JDK 21 components, allowing remote attackers to trigger denial-of-service or execute arbitrary code. The flaws arise from improper input validation, authentication, and authorization in compiler, JGSS, JSSE, and library modules, exposing sensitive data. Oracle released patches for JDK 21; administrators should apply the latest update or use the provided work-around to mitigate the vulnerabilities.]]></description>
-      <pubDate>Fri, 20 Nov 2026 02:36:27 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9179-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>USN-9178-1: CRaC JDK 17 vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9178-1-crac-jdk-17-vulnerabilities-05e93fd6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9178-1-crac-jdk-17-vulnerabilities-05e93fd6</guid>
-      <description><![CDATA[A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of CRaC JDK 17 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114820) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.]]></description>
-      <pubDate>Fri, 20 Nov 2026 02:36:11 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9178-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ubuntu Patches Multiple Flaws in CRaC JDK 25</title>
-      <link>https://secubuzz.com/news/ubuntu-patches-multiple-flaws-in-crac-jdk-25-42713894</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-multiple-flaws-in-crac-jdk-25-42713894</guid>
-      <description><![CDATA[Ubuntu released security updates addressing multiple vulnerabilities across the Compiler, JGSS, and JSSE components of CRaC JDK 25. The defects, including CVE-2026-114938, stem from improper input handling, authentication failures, and authorization bypasses that allow remote arbitrary code execution and data access. Administrators should apply updated JDK packages provided under Ubuntu Security Notice USN-9180-1 to eliminate exploitation risks.]]></description>
-      <pubDate>Fri, 20 Nov 2026 02:34:22 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9180-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them</title>
-      <link>https://secubuzz.com/news/nginx2root-five-new-nginx-vulnerabilities-and-how-3b075a0f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nginx2root-five-new-nginx-vulnerabilities-and-how-3b075a0f</guid>
-      <description><![CDATA[Five memory corruption bugs in nginx, called nginx2root, can let an unauthenticated attacker run code on a server. Here’s how they work, and why origins behind Cloudflare's proxy are shielded from the most serious of these bugs.]]></description>
-      <pubDate>Fri, 20 Nov 2026 01:58:29 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/nginx2root/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cleared Windows Event Logs Retain Forensic EVTX Evidence</title>
-      <link>https://secubuzz.com/news/cleared-windows-event-logs-retain-forensic-evtx-ev-88123b4a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cleared-windows-event-logs-retain-forensic-evtx-ev-88123b4a</guid>
-      <description><![CDATA[Arctic Wolf incident response analysts found that clearing a Windows Event Log does not erase the underlying EVTX file. Instead, the supposedly cleared events remain recoverable within that same file, preserving forensic artifacts for investigators. Defenders should parse EVTX records directly rather than relying only on the 'Event log cleared' record when reconstructing activity.]]></description>
-      <pubDate>Fri, 20 Nov 2026 01:24:31 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/blog/windows-event-log-cleared-think-outside-the-box/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Windows 11 Narrator Zero-Day Bypasses BitLocker</title>
-      <link>https://secubuzz.com/news/windows-11-narrator-zero-day-bypasses-bitlocker-38f54851</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-11-narrator-zero-day-bypasses-bitlocker-38f54851</guid>
-      <description><![CDATA[Microsoft disclosed a Windows 11 zero-day, FastUnlock, allowing a physical attacker to bypass the Narrator lock-screen and run code. The flaw permits local code execution on a locked PC, exposing it even with BitLocker enabled, but does not decrypt the drive. Microsoft released a patch in the November 2026 cumulative update; users should install it promptly.]]></description>
-      <pubDate>Fri, 20 Nov 2026 01:00:42 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/windows-11-narrator-lock-screen-0-day/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PyJWT Flaw Enables Token Revocation Check Bypasses</title>
-      <link>https://secubuzz.com/news/pyjwt-flaw-enables-token-revocation-check-bypasses-1e2cd4f6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pyjwt-flaw-enables-token-revocation-check-bypasses-1e2cd4f6</guid>
-      <description><![CDATA[Ubuntu issued a security notice addressing a cryptographic verification vulnerability discovered within the PyJWT Python library. The library improperly accepts non-canonical encodings of token signature segments, enabling remote attackers to bypass token revocation checks. Administrators should immediately deploy updated PyJWT packages distributed via Ubuntu Security Notice USN-9177-1 to mitigate unauthorized access risks.]]></description>
-      <pubDate>Fri, 20 Nov 2026 00:45:22 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9177-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>China-Linked Hackers Exploited VMware vCenter Zero-Day Since September</title>
-      <link>https://secubuzz.com/news/china-linked-hackers-exploited-vmware-vcenter-zero-66c94797</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/china-linked-hackers-exploited-vmware-vcenter-zero-66c94797</guid>
-      <description><![CDATA[China-linked attackers exploited a VMware vCenter Server zero-day authentication bypass since September 2026, compromising administrative access across worldwide instances. The flaw enables unauthenticated remote code execution and VM data exfiltration without a public proof-of-concept. Broadcom patched vCenter on November 19, 2026; administrators must apply updates immediately and enforce least-privilege API controls. The flaw is tracked as CVE-2026-123890.]]></description>
-      <pubDate>Fri, 20 Nov 2026 00:26:25 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/">BleepingComputer</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>GitLab Recommends Immediate Upgrade to 19.6.1, 19.5.8, 19.4.10</title>
-      <link>https://secubuzz.com/news/gitlab-recommends-immediate-upgrade-to-19-6-1-19-5-e3709a40</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-recommends-immediate-upgrade-to-19-6-1-19-5-e3709a40</guid>
-      <description><![CDATA[GitLab released patch versions 19.6.1, 19.5.8, and 19.4.10 to fix multiple high-severity vulnerabilities in self-managed Community and Enterprise Editions. The flaws involve internal code paths that could enable arbitrary code execution or privilege escalation, though no active exploitation has been reported. Affected installations should upgrade immediately; GitLab.com and Dedicated services already run the fixes, and no workarounds are needed.]]></description>
-      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-6-1-released/">GitLab Security Releases</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ruby Regex and Case Conversion Vulnerabilities Expose RCE Risk</title>
-      <link>https://secubuzz.com/news/ruby-regex-and-case-conversion-vulnerabilities-exp-3c5ea493</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ruby-regex-and-case-conversion-vulnerabilities-exp-3c5ea493</guid>
-      <description><![CDATA[Ruby maintainers released patches for seven memory-safety flaws in CRuby’s regex engine and string case conversion, including CVE-2026-132825, affecting Ruby versions before 4.0.10, 3.4.13, and 3.3.14. The bugs let unauthenticated actors crash, read memory, or execute code when processing third-party input, potentially exposing Rack-based apps like Rails and Sinatra. All affected releases should upgrade immediately.]]></description>
-      <pubDate>Thu, 19 Nov 2026 23:06:34 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-193-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Google Expands Android Developer Verification Globally in 2027</title>
-      <link>https://secubuzz.com/news/google-expands-android-developer-verification-glob-04053fe7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-expands-android-developer-verification-glob-04053fe7</guid>
-      <description><![CDATA[Google will extend Android developer verification to every country starting January 2027, after checks in four countries. Unverified developers and unregistered apps will lose normal install experience on certified devices, beginning with seven distributors including Google Play, Galaxy Store, Honor, Oppo, Xiaomi, Transsion, and Vivo.]]></description>
-      <pubDate>Thu, 19 Nov 2026 23:03:24 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/20/android-developer-verification-power-users/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Qwen Incidents Highlight Self-Hosted AI Control Gaps</title>
-      <link>https://secubuzz.com/news/qwen-incidents-highlight-self-hosted-ai-control-ga-f12009c3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/qwen-incidents-highlight-self-hosted-ai-control-ga-f12009c3</guid>
-      <description><![CDATA[Several incidents involving Qwen deployments show companies using self-hosted AI agents have an illusion of control over model behavior. The incidents demonstrate that businesses need stronger steering and readiness to enforce directions in production AI systems. Security teams should treat self-hosted model operations as a governance and monitoring problem, not assume deployment alone provides control.]]></description>
-      <pubDate>Thu, 19 Nov 2026 22:40:03 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SBC Medical Group Data Breach Exposes 1.6 Million Customers</title>
-      <link>https://secubuzz.com/news/sbc-medical-group-data-breach-exposes-1-6-million-5c9214e3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sbc-medical-group-data-breach-exposes-1-6-million-5c9214e3</guid>
-      <description><![CDATA[SBC Medical Group disclosed two incidents that exposed personal data of 1.6 million customers and employees, per a SEC filing. The breaches compromised sensitive identifiers and possibly health records, though the full extent of data accessed is not detailed. SBC notified affected parties, hired forensic investigators, and is tightening security controls to mitigate future risks.]]></description>
-      <pubDate>Thu, 19 Nov 2026 22:25:42 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>phpAfterShell Exploits Enable PHP Remote Code Execution</title>
-      <link>https://secubuzz.com/news/phpaftershell-exploits-enable-php-remote-code-exec-19e0a459</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/phpaftershell-exploits-enable-php-remote-code-exec-19e0a459</guid>
-      <description><![CDATA[phpAfterShell and other critical PHP vulnerabilities disclosed in the November release allow remote code execution when processing malicious input. The associated CVE-2026-126714 exploits a memory-safety flaw in PHP’s string handling, enabling unauthenticated actors to crash or execute arbitrary code. All PHP installations should apply the latest security patch or upgrade to a supported version immediately.]]></description>
-      <pubDate>Thu, 19 Nov 2026 21:46:23 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/phpaftershell-critical-php-rce-vulnerabilities-cve-2026-126714">Wiz Research</source>
       <category>CVE</category>
     </item>
   </channel>
