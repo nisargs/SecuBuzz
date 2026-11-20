@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 14:45:46 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 15:47:19 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Spreadsheets Hide Password Risks, Central Management Needed</title>
+      <link>https://secubuzz.com/news/spreadsheets-hide-password-risks-central-managemen-993785c5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/spreadsheets-hide-password-risks-central-managemen-993785c5</guid>
+      <description><![CDATA[Storing corporate passwords in spreadsheets exposes IT administrators to weak, reused, or compromised credentials, as spreadsheets lack audit controls. This reliance on unapproved storage bypasses centralized credential management, increasing credential reuse and data exposure risk. Adopting a centralized password vault, such as NordPass, provides visibility, risk assessment, and secure sharing to mitigate spreadsheet-based credential risks.]]></description>
+      <pubDate>Fri, 20 Nov 2026 15:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Norwegian Energy Firm Attacks, Supercomputer Hack, Eclipse Exploit</title>
+      <link>https://secubuzz.com/news/norwegian-energy-firm-attacks-supercomputer-hack-e-341882db</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/norwegian-energy-firm-attacks-supercomputer-hack-e-341882db</guid>
+      <description><![CDATA[Norwegian energy firm suffered cyberattacks, a supercomputer was compromised, and a new Nightmare Eclipse exploit emerged. The EU added NoName057(16) to its sanctions list, malware targeted CACs on personal PCs, and Gemini agents focused on Epoch AI. Security teams should monitor indicators, apply patches, and review access controls to mitigate related threats.]]></description>
+      <pubDate>Fri, 20 Nov 2026 14:56:23 GMT</pubDate>
+      <source url="https://www.securityweek.com/in-other-news-norwegian-energy-firm-cyberattacks-supercomputer-hack-new-nightmare-eclipse-exploit/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>White House Replaces Cyber Director with Acting Czar</title>
+      <link>https://secubuzz.com/news/white-house-replaces-cyber-director-with-acting-cz-5cc759b5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/white-house-replaces-cyber-director-with-acting-cz-5cc759b5</guid>
+      <description><![CDATA[Sean Cairncross has left the White House cyber director role, with Kirsten Davies, Pentagon CIO, stepping in as acting cyber czar. The change signals a realignment of U.S. cyber policy oversight, potentially affecting coordination among the White House, Pentagon, and intelligence agencies. Security teams should track the transition for shifts in cyber strategy, reporting protocols, and continuity gaps.]]></description>
+      <pubDate>Fri, 20 Nov 2026 14:30:00 GMT</pubDate>
+      <source url="https://therecord.media/sean-cairncross-out-as-national-cyber-director">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Apache Tomcat Vulnerability Enables Unauthorized Cluster Joining</title>
+      <link>https://secubuzz.com/news/apache-tomcat-vulnerability-enables-unauthorized-c-db2ea093</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-tomcat-vulnerability-enables-unauthorized-c-db2ea093</guid>
+      <description><![CDATA[A critical flaw in Apache Tomcat lets remote attackers join trusted server clusters without authentication, targeting TLS 1.3 pre-shared key setups. Identified as CVE-2026-133325, the flaw abuses improper validation of cluster join requests, enabling unauthenticated RCE and lateral movement. Apache released a patch; administrators should upgrade Tomcat or apply configuration changes to block cluster joining until the fix is applied.]]></description>
+      <pubDate>Fri, 20 Nov 2026 14:29:21 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/critical-apache-tomcat-flaw/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Credit Unions Hit by Unnoticed Supplier Breach</title>
       <link>https://secubuzz.com/news/credit-unions-hit-by-unnoticed-supplier-breach-cee36edd</link>
@@ -98,6 +134,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>OpenSSL Base64 Overflow Corrupts Memory</title>
+      <link>https://secubuzz.com/news/openssl-base64-overflow-corrupts-memory-10f22820</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openssl-base64-overflow-corrupts-memory-10f22820</guid>
+      <description><![CDATA[A critical heap buffer overflow in OpenSSL’s Base64 encoding function lets attackers corrupt memory when handling large inputs. CVE-2026-121481 scores 9.8 on CVSS 3.1, marking it a high-severity flaw that can cause denial of service or remote code execution. OpenSSL released a patch; users should upgrade to the latest version or apply the fix to prevent exploitation.]]></description>
+      <pubDate>Fri, 20 Nov 2026 12:34:30 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/openssl-heap-buffer-overflow/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Armory Castle Exploits VMware vCenter CVE-2026-123890</title>
       <link>https://secubuzz.com/news/armory-castle-exploits-vmware-vcenter-cve-2026-123-d6d0a5d8</link>
       <guid isPermaLink="true">https://secubuzz.com/news/armory-castle-exploits-vmware-vcenter-cve-2026-123-d6d0a5d8</guid>
@@ -116,12 +161,39 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Microsoft Auto-Installs Windows 11 26H2 on Unmanaged Devices</title>
+      <link>https://secubuzz.com/news/microsoft-auto-installs-windows-11-26h2-on-unmanag-24a9fbd2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-auto-installs-windows-11-26h2-on-unmanag-24a9fbd2</guid>
+      <description><![CDATA[Microsoft has begun automatically upgrading eligible unmanaged devices to Windows 11 26H2, bypassing traditional IT management controls. The move risks exposing devices to unverified updates, potentially introducing compatibility issues or security gaps on systems lacking centralized patch oversight. Administrators should monitor device upgrade status, enforce manual update policies, or configure group policies to prevent automatic installation on unmanaged hardware.]]></description>
+      <pubDate>Fri, 20 Nov 2026 12:14:28 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CT Scan Unlocks 400-Year-Old Cryptex Padlock</title>
+      <link>https://secubuzz.com/news/ct-scan-unlocks-400-year-old-cryptex-padlock-50e4e0d2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ct-scan-unlocks-400-year-old-cryptex-padlock-50e4e0d2</guid>
+      <description><![CDATA[Researchers employed computed tomography scanning to reconstruct the internal code mechanism of a 400-year-old cryptex padlock, enabling its successful opening. The technique demonstrates that advanced imaging can bypass mechanical security, revealing that physical locks may be vulnerable to non-invasive analysis. Security designers should consider imaging resistance when creating high-security mechanical devices and evaluate potential forensic exploitation.]]></description>
+      <pubDate>Fri, 20 Nov 2026 12:04:46 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html">Schneier on Security</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Red Hat Releases Critical Update for nginx</title>
       <link>https://secubuzz.com/news/red-hat-releases-critical-update-for-nginx-12d2a366</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-update-for-nginx-12d2a366</guid>
       <description><![CDATA[Red Hat issued a critical security update for nginx on RHEL 9, addressing multiple high-severity vulnerabilities. The update mitigates several CVE-identified flaws, each with a CVSS base score of 9.0 or higher, and prevents unauthenticated remote code execution. Administrators should apply the RHSA-2026:100748 package immediately and verify that all affected services are restarted.]]></description>
       <pubDate>Fri, 20 Nov 2026 11:44:59 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100748">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Updates nginx:1.24 on RHEL 9</title>
+      <link>https://secubuzz.com/news/red-hat-updates-nginx-1-24-on-rhel-9-4c76a417</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-nginx-1-24-on-rhel-9-4c76a417</guid>
+      <description><![CDATA[Red Hat issued a critical update for nginx:1.24 on RHEL 9, fixing vulnerabilities that could enable remote code execution. The advisory cites multiple CVE IDs with high CVSS scores, though no public exploits have been disclosed. Administrators should apply the update or install the patches immediately to prevent potential exploitation.]]></description>
+      <pubDate>Fri, 20 Nov 2026 11:44:29 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100746">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -141,6 +213,15 @@
       <pubDate>Fri, 20 Nov 2026 11:27:05 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-use-ai-powered-artex-framework/">Cyber Security News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Updates nginx:1.24 on RHEL 8</title>
+      <link>https://secubuzz.com/news/red-hat-updates-nginx-1-24-on-rhel-8-59c0a30f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-nginx-1-24-on-rhel-8-59c0a30f</guid>
+      <description><![CDATA[Red Hat released a critical update for nginx:1.24 on RHEL 8, addressing vulnerabilities that could allow remote code execution. The advisory lists several CVE IDs with high CVSS scores, but no public exploits have been reported. Administrators should apply the update or install the patches immediately to prevent potential exploitation.]]></description>
+      <pubDate>Fri, 20 Nov 2026 11:08:59 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100747">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>F5 Issues Emergency Patches for Critical BIG-IP RCE Flaws</title>
@@ -314,6 +395,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:100666: Important: flatpak security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100666-important-flatpak-security-update-232fa221</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100666-important-flatpak-security-update-232fa221</guid>
+      <description><![CDATA[An update for flatpak is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Fri, 20 Nov 2026 08:18:25 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100666">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100668: Important: flatpak security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100668-important-flatpak-security-update-1e4e0a25</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100668-important-flatpak-security-update-1e4e0a25</guid>
+      <description><![CDATA[An update for flatpak is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Fri, 20 Nov 2026 08:18:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100668">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Red Hat expat Security Update</title>
       <link>https://secubuzz.com/news/red-hat-expat-security-update-8303ef25</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-expat-security-update-8303ef25</guid>
@@ -357,105 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 07:35:46 GMT</pubDate>
       <source url="https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/">SecurityWeek</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>ROMULUS ClickFix Delivers New RAT to Target PCs</title>
-      <link>https://secubuzz.com/news/romulus-clickfix-delivers-new-rat-to-target-pcs-21c5eb00</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/romulus-clickfix-delivers-new-rat-to-target-pcs-21c5eb00</guid>
-      <description><![CDATA[Threat actors used the ROMULUS ClickFix delivery platform to ship a previously undocumented remote access trojan that resembles CNCMachineRMS. The RAT leverages signed binary sideloading and can spy on users while granting full control over infected PCs. Defenders should block ClickFix traffic, enforce application whitelisting, and monitor for unusual outbound connections to mitigate this threat.]]></description>
-      <pubDate>Fri, 20 Nov 2026 07:11:39 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Armory Castle Exploits VMware vCenter Zero-Day</title>
-      <link>https://secubuzz.com/news/armory-castle-exploits-vmware-vcenter-zero-day-d09439e5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/armory-castle-exploits-vmware-vcenter-zero-day-d09439e5</guid>
-      <description><![CDATA[Armory Castle exploited a critical authentication bypass in VMware vCenter Server's Directory Service, allowing attackers to gain administrative access and exfiltrate data. The flaw, identified as CVE-2026-123890 with a CVSS score of 9.8, permits unauthenticated exploitation and can lead to full system compromise.]]></description>
-      <pubDate>Fri, 20 Nov 2026 06:33:31 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AI Red Teams Uncover Repeated Prompt Injection Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ai-red-teams-uncover-repeated-prompt-injection-vul-56ee9906</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-red-teams-uncover-repeated-prompt-injection-vul-56ee9906</guid>
-      <description><![CDATA[Researchers found AI agents retrained on a larger prompt injection dataset were more susceptible to hijacking during red-team tests. The automated purple-teaming workflow revealed that repeated prompt injection attempts could bypass weaker defenses, exposing a logic flaw in the agents' instruction parsing. Security teams should review prompt handling logic and implement stricter input validation to mitigate injection risks.]]></description>
-      <pubDate>Fri, 20 Nov 2026 06:30:20 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/20/ai-prompt-injection-red-team/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Retire Vanity Security Dashboards to Reduce Ticket Noise</title>
-      <link>https://secubuzz.com/news/retire-vanity-security-dashboards-to-reduce-ticket-de96e946</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/retire-vanity-security-dashboards-to-reduce-ticket-de96e946</guid>
-      <description><![CDATA[Estée Lauder’s OT architect argues that vanity dashboards generate noise, causing analysts to close tickets without addressing root causes. The video shows a manufacturing example where approved maintenance work repeatedly triggers identical alerts, producing thousands of tickets and persistent issues. The speaker recommends SOC and control teams collaborate to tune alert logic and eliminate redundant notifications.]]></description>
-      <pubDate>Fri, 20 Nov 2026 06:00:21 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/20/security-dashboards-tips-video/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Drupal Issues Patch for Critical Unauthenticated RCE</title>
-      <link>https://secubuzz.com/news/drupal-issues-patch-for-critical-unauthenticated-r-941cb5d1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/drupal-issues-patch-for-critical-unauthenticated-r-941cb5d1</guid>
-      <description><![CDATA[Drupal released a security update on 18 Nov to address a critical unauthenticated RCE in its core installer, enabling attackers to reinstall and take over sites. The vulnerability, identified as CVE-2026-132165, allows remote code execution without authentication and can lead to full site takeover.]]></description>
-      <pubDate>Fri, 20 Nov 2026 05:52:19 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/drupal-fixes-critical-rce-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AI Agent API Security Lagging Behind Production Deployment</title>
-      <link>https://secubuzz.com/news/ai-agent-api-security-lagging-behind-production-de-ddc48e86</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-api-security-lagging-behind-production-de-ddc48e86</guid>
-      <description><![CDATA[Postman surveyed nearly 9,000 developers, finding that 25% already deploy AI agents that call APIs in production. About forty percent of respondents have not defined how to secure the credentials and identities used by these agents, creating access risks. Teams should implement key management and identity controls for AI agents before expanding production use.]]></description>
-      <pubDate>Fri, 20 Nov 2026 05:30:11 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/20/ai-agent-api-security-production/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>FastUnlock Zero-Day Enables Program Execution on Locked PCs</title>
-      <link>https://secubuzz.com/news/fastunlock-zero-day-enables-program-execution-on-l-a9c8b601</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fastunlock-zero-day-enables-program-execution-on-l-a9c8b601</guid>
-      <description><![CDATA[FastUnlock lets an attacker with physical access to a locked Windows PC launch programs without signing in. The flaw grants a limited user account, not administrator rights, and is demonstrated by researchers MSNightmare and Nightmare Eclipse. Microsoft has not yet patched FastUnlock; teams should enforce physical security and monitor for unauthorized program launches on locked systems.]]></description>
-      <pubDate>Fri, 20 Nov 2026 05:30:01 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CIOs Report Limited Immediate Access to Critical Gear</title>
-      <link>https://secubuzz.com/news/cios-report-limited-immediate-access-to-critical-g-db30f6be</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cios-report-limited-immediate-access-to-critical-g-db30f6be</guid>
-      <description><![CDATA[An Opengear survey of 514 CIOs and CISOs found most organizations cannot quickly access secure management of network gear when the primary network fails. This gap hinders rapid containment during ransomware or disruptive updates, prolonging outages and increasing exposure to compromised systems. Organizations should implement out-of-band consoles or redundant paths and prioritize remote management solutions to ensure timely incident response.]]></description>
-      <pubDate>Fri, 20 Nov 2026 05:00:27 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/20/network-outage-recovery-resilience/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>KPMG Canada Breach Exposes Client Tax Documents</title>
-      <link>https://secubuzz.com/news/kpmg-canada-breach-exposes-client-tax-documents-6326d3e0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kpmg-canada-breach-exposes-client-tax-documents-6326d3e0</guid>
-      <description><![CDATA[KPMG Canada confirmed that an unauthorized third party accessed confidential tax documents of some clients during a cyberattack. The breach involved sensitive client data, prompting immediate containment actions and system hardening by the firm. KPMG is contacting affected clients directly and has not disclosed the breach timing or number of impacted records.]]></description>
-      <pubDate>Fri, 20 Nov 2026 03:58:09 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/kpmg-canada-confirms-cyberattack/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>USN-9182-1: nginx vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9182-1-nginx-vulnerabilities-a8c3fe4e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9182-1-nginx-vulnerabilities-a8c3fe4e</guid>
-      <description><![CDATA[A remote attacker could possibly use this issue to cause nginx to crash, resulting in a denial of service. (CVE-2026-125283) Vivek Parikh discovered that nginx did not correctly handle parsing certain ClientHello messages. This issue was only addressed in Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu 24.04 LTS. (CVE-2026-123640) It was discovered that nginx did not correctly handle certain TLS connections.]]></description>
-      <pubDate>Fri, 20 Nov 2026 03:15:31 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9182-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>USN-9181-1: OpenJDK 8 vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9181-1-openjdk-8-vulnerabilities-bc5bc842</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9181-1-openjdk-8-vulnerabilities-bc5bc842</guid>
-      <description><![CDATA[A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 8 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114946) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.]]></description>
-      <pubDate>Fri, 20 Nov 2026 02:42:46 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9181-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

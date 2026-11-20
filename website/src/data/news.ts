@@ -11,6 +11,84 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "spreadsheets-hide-password-risks-central-managemen-993785c5",
+    "title": "Spreadsheets Hide Password Risks, Central Management Needed",
+    "summary": "Storing corporate passwords in spreadsheets exposes IT administrators to weak, reused, or compromised credentials, as spreadsheets lack audit controls. This reliance on unapproved storage bypasses centralized credential management, increasing credential reuse and data exposure risk. Adopting a centralized password vault, such as NordPass, provides visibility, risk assessment, and secure sharing to mitigate spreadsheet-based credential risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
+    "publishedAt": "2026-11-20T15:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "spreadsheets-hide-password-risks-central-managemen",
+      "article-993785c5",
+      "993785c5",
+      "spreadsheets-hide-password-risks-central-managemen-4bcc24",
+      "spreadsheets-hide-password-risks-central-management-needed"
+    ]
+  },
+  {
+    "slug": "norwegian-energy-firm-attacks-supercomputer-hack-e-341882db",
+    "title": "Norwegian Energy Firm Attacks, Supercomputer Hack, Eclipse Exploit",
+    "summary": "Norwegian energy firm suffered cyberattacks, a supercomputer was compromised, and a new Nightmare Eclipse exploit emerged. The EU added NoName057(16) to its sanctions list, malware targeted CACs on personal PCs, and Gemini agents focused on Epoch AI. Security teams should monitor indicators, apply patches, and review access controls to mitigate related threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/in-other-news-norwegian-energy-firm-cyberattacks-supercomputer-hack-new-nightmare-eclipse-exploit/",
+    "publishedAt": "2026-11-20T14:56:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "norwegian-energy-firm-attacks-supercomputer-hack-e",
+      "article-341882db",
+      "341882db",
+      "norwegian-energy-firm-attacks-supercomputer-hack-e-6d15cc",
+      "norwegian-energy-firm-attacks-supercomputer-hack-eclipse-exp"
+    ]
+  },
+  {
+    "slug": "white-house-replaces-cyber-director-with-acting-cz-5cc759b5",
+    "title": "White House Replaces Cyber Director with Acting Czar",
+    "summary": "Sean Cairncross has left the White House cyber director role, with Kirsten Davies, Pentagon CIO, stepping in as acting cyber czar. The change signals a realignment of U.S. cyber policy oversight, potentially affecting coordination among the White House, Pentagon, and intelligence agencies. Security teams should track the transition for shifts in cyber strategy, reporting protocols, and continuity gaps.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/sean-cairncross-out-as-national-cyber-director",
+    "publishedAt": "2026-11-20T14:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "white-house-replaces-cyber-director-with-acting-cz",
+      "article-5cc759b5",
+      "5cc759b5",
+      "white-house-replaces-cyber-director-with-acting-cz-535edc",
+      "white-house-replaces-cyber-director-with-acting-czar"
+    ]
+  },
+  {
+    "slug": "apache-tomcat-vulnerability-enables-unauthorized-c-db2ea093",
+    "title": "Apache Tomcat Vulnerability Enables Unauthorized Cluster Joining",
+    "summary": "A critical flaw in Apache Tomcat lets remote attackers join trusted server clusters without authentication, targeting TLS 1.3 pre-shared key setups. Identified as CVE-2026-133325, the flaw abuses improper validation of cluster join requests, enabling unauthenticated RCE and lateral movement. Apache released a patch; administrators should upgrade Tomcat or apply configuration changes to block cluster joining until the fix is applied.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-apache-tomcat-flaw/",
+    "publishedAt": "2026-11-20T14:29:21.000Z",
+    "cves": [
+      "CVE-2026-133325"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apache-tomcat-vulnerability-enables-unauthorized-c",
+      "article-db2ea093",
+      "db2ea093",
+      "apache-tomcat-vulnerability-enables-unauthorized-c-f2968f",
+      "apache-tomcat-vulnerability-enables-unauthorized-cluster-joi"
+    ]
+  },
+  {
     "slug": "credit-unions-hit-by-unnoticed-supplier-breach-cee36edd",
     "title": "Credit Unions Hit by Unnoticed Supplier Breach",
     "summary": "A supplier breach affecting dozens of credit unions went unnoticed for six weeks. The breach, reported by Ireland’s Data Protection Commission, involved a Belfast-based data processor that handled sensitive information for over 40 credit unions, potentially exposing customer data. Credit unions should conduct forensic investigations, notify affected customers, and review third-party data handling agreements.",
@@ -194,6 +272,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "openssl-base64-overflow-corrupts-memory-10f22820",
+    "title": "OpenSSL Base64 Overflow Corrupts Memory",
+    "summary": "A critical heap buffer overflow in OpenSSL’s Base64 encoding function lets attackers corrupt memory when handling large inputs. CVE-2026-121481 scores 9.8 on CVSS 3.1, marking it a high-severity flaw that can cause denial of service or remote code execution. OpenSSL released a patch; users should upgrade to the latest version or apply the fix to prevent exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/openssl-heap-buffer-overflow/",
+    "publishedAt": "2026-11-20T12:34:30.000Z",
+    "cves": [
+      "CVE-2026-121481"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openssl-base64-overflow-corrupts-memory",
+      "article-10f22820",
+      "10f22820",
+      "openssl-base64-overflow-corrupts-memory-26106d"
+    ]
+  },
+  {
     "slug": "armory-castle-exploits-vmware-vcenter-cve-2026-123-d6d0a5d8",
     "title": "Armory Castle Exploits VMware vCenter CVE-2026-123890",
     "summary": "Armory Castle, a China-linked espionage group, exploited VMware vCenter (CVE-2026-123890) since early September, before Broadcom released a fix. The CVSS 9.8 flaw permits unauthenticated remote attackers to obtain full administrator sessions on vCenter Server, controlling virtual infrastructure. Broadcom issued a patch in November; organizations must apply it immediately and verify vCenter Server is no longer exposed.",
@@ -235,6 +333,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-auto-installs-windows-11-26h2-on-unmanag-24a9fbd2",
+    "title": "Microsoft Auto-Installs Windows 11 26H2 on Unmanaged Devices",
+    "summary": "Microsoft has begun automatically upgrading eligible unmanaged devices to Windows 11 26H2, bypassing traditional IT management controls. The move risks exposing devices to unverified updates, potentially introducing compatibility issues or security gaps on systems lacking centralized patch oversight. Administrators should monitor device upgrade status, enforce manual update policies, or configure group policies to prevent automatic installation on unmanaged hardware.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/",
+    "publishedAt": "2026-11-20T12:14:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-auto-installs-windows-11-26h2-on-unmanag",
+      "article-24a9fbd2",
+      "24a9fbd2",
+      "microsoft-auto-installs-windows-11-26h2-on-unmanag-7add96",
+      "microsoft-auto-installs-windows-11-26h2-on-unmanaged-devices"
+    ]
+  },
+  {
+    "slug": "ct-scan-unlocks-400-year-old-cryptex-padlock-50e4e0d2",
+    "title": "CT Scan Unlocks 400-Year-Old Cryptex Padlock",
+    "summary": "Researchers employed computed tomography scanning to reconstruct the internal code mechanism of a 400-year-old cryptex padlock, enabling its successful opening. The technique demonstrates that advanced imaging can bypass mechanical security, revealing that physical locks may be vulnerable to non-invasive analysis. Security designers should consider imaging resistance when creating high-security mechanical devices and evaluate potential forensic exploitation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html",
+    "publishedAt": "2026-11-20T12:04:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ct-scan-unlocks-400-year-old-cryptex-padlock",
+      "article-50e4e0d2",
+      "50e4e0d2",
+      "ct-scan-unlocks-400-year-old-cryptex-padlock-9d9f5b"
+    ]
+  },
+  {
     "slug": "red-hat-releases-critical-update-for-nginx-12d2a366",
     "title": "Red Hat Releases Critical Update for nginx",
     "summary": "Red Hat issued a critical security update for nginx on RHEL 9, addressing multiple high-severity vulnerabilities. The update mitigates several CVE-identified flaws, each with a CVSS base score of 9.0 or higher, and prevents unauthenticated remote code execution. Administrators should apply the RHSA-2026:100748 package immediately and verify that all affected services are restarted.",
@@ -250,6 +385,24 @@ export const news: NewsBrief[] = [
       "article-12d2a366",
       "12d2a366",
       "red-hat-releases-critical-update-for-nginx-2ee088"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-nginx-1-24-on-rhel-9-4c76a417",
+    "title": "Red Hat Updates nginx:1.24 on RHEL 9",
+    "summary": "Red Hat issued a critical update for nginx:1.24 on RHEL 9, fixing vulnerabilities that could enable remote code execution. The advisory cites multiple CVE IDs with high CVSS scores, though no public exploits have been disclosed. Administrators should apply the update or install the patches immediately to prevent potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100746",
+    "publishedAt": "2026-11-20T11:44:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-nginx-1-24-on-rhel-9",
+      "article-4c76a417",
+      "4c76a417",
+      "red-hat-updates-nginx-1-24-on-rhel-9-2ee088"
     ]
   },
   {
@@ -288,6 +441,24 @@ export const news: NewsBrief[] = [
       "3093e949",
       "ai-driven-artex-automates-attacks-without-zero-day-5826f1",
       "ai-driven-artex-automates-attacks-without-zero-days"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-nginx-1-24-on-rhel-8-59c0a30f",
+    "title": "Red Hat Updates nginx:1.24 on RHEL 8",
+    "summary": "Red Hat released a critical update for nginx:1.24 on RHEL 8, addressing vulnerabilities that could allow remote code execution. The advisory lists several CVE IDs with high CVSS scores, but no public exploits have been reported. Administrators should apply the update or install the patches immediately to prevent potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100747",
+    "publishedAt": "2026-11-20T11:08:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-nginx-1-24-on-rhel-8",
+      "article-59c0a30f",
+      "59c0a30f",
+      "red-hat-updates-nginx-1-24-on-rhel-8-2ee088"
     ]
   },
   {
@@ -645,6 +816,42 @@ export const news: NewsBrief[] = [
       "article-a04d461c",
       "a04d461c",
       "hackers-scan-litellm-ai-servers-for-rce-flaws-57828f"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100666-important-flatpak-security-update-232fa221",
+    "title": "RHSA-2026:100666: Important: flatpak security update",
+    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100666",
+    "publishedAt": "2026-11-20T08:18:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100666-important-flatpak-security-update",
+      "article-232fa221",
+      "232fa221",
+      "rhsa-2026-100666-important-flatpak-security-update-2ee085"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100668-important-flatpak-security-update-1e4e0a25",
+    "title": "RHSA-2026:100668: Important: flatpak security update",
+    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100668",
+    "publishedAt": "2026-11-20T08:18:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100668-important-flatpak-security-update",
+      "article-1e4e0a25",
+      "1e4e0a25",
+      "rhsa-2026-100668-important-flatpak-security-update-2ee085"
     ]
   },
   {
@@ -2178,6 +2385,66 @@ export const news: NewsBrief[] = [
       "article-8e3f6470",
       "8e3f6470",
       "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-excel-rce-cve-2026-100209-d9e842df",
+    "title": "Microsoft Acknowledges Excel RCE CVE-2026-100209",
+    "summary": "Microsoft acknowledges CVE-2026-100209, a remote code execution flaw in Office Excel that could be triggered by malicious content. The flaw permits arbitrary code execution via a crafted spreadsheet; no public exploit has been disclosed and CVSS is not yet published. Microsoft has released a patch in the latest Office update; administrators should apply it immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100209",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-100209"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-excel-rce-cve-2026-100209",
+      "article-d9e842df",
+      "d9e842df",
+      "microsoft-acknowledges-excel-rce-cve-2026-100209-1ffada"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-exchange-rce-cve-2026-55007-b2279bfb",
+    "title": "Microsoft Acknowledges Exchange RCE CVE-2026-55007",
+    "summary": "Microsoft acknowledges CVE-2026-55007, a remote code execution flaw in Exchange Server that could be triggered by malicious content. The flaw permits arbitrary code execution via a crafted email attachment; no public exploit has been disclosed and CVSS is not yet published. Microsoft has released a patch in the latest Exchange update; administrators should apply it immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55007",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-55007"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-exchange-rce-cve-2026-55007",
+      "article-b2279bfb",
+      "b2279bfb",
+      "microsoft-acknowledges-exchange-rce-cve-2026-55007-746a5b"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-office-rce-cve-2026-78505-a59da9f6",
+    "title": "Microsoft Acknowledges Office RCE CVE-2026-78505",
+    "summary": "Microsoft acknowledges CVE-2026-78505, a remote code execution flaw in Office that could be triggered by malicious content. The flaw permits arbitrary code execution via a crafted document; no public exploit has been disclosed and CVSS is not yet published. Microsoft has released a patch in the latest Office update; administrators should apply it immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78505",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-78505"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-office-rce-cve-2026-78505",
+      "article-a59da9f6",
+      "a59da9f6",
+      "microsoft-acknowledges-office-rce-cve-2026-78505-744cbc"
     ]
   },
   {
@@ -9435,287 +9702,6 @@ export const news: NewsBrief[] = [
       "article-d487253c",
       "d487253c",
       "amazon-lookalike-job-offer-is-a-reshipping-scam-628eac"
-    ]
-  },
-  {
-    "slug": "fbi-warns-hackers-abuse-google-search-to-spread-go-cdbe87a7",
-    "title": "FBI Warns Hackers Abuse Google Search to Spread Gootloader Malware and Launch Ransomware Attacks",
-    "summary": "The FBI has warned that cybercriminals are using poisoned search results and compromised WordPress websites to spread Gootloader malware, giving ransomware operators an entry point into business networks. The attacks turn searches for legal documents, contracts, and business information into opportunities to trick users into downloading malicious JavaScript files.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/spread-gootloader-malware/",
-    "publishedAt": "2026-11-17T13:29:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-warns-hackers-abuse-google-search-to-spread-go",
-      "article-cdbe87a7",
-      "cdbe87a7",
-      "fbi-warns-hackers-abuse-google-search-to-spread-go-2f8884",
-      "fbi-warns-hackers-abuse-google-search-to-spread-gootloader-m"
-    ]
-  },
-  {
-    "slug": "grok-bots-target-corporate-apps-without-user-conse-082dad36",
-    "title": "Grok Bots Target Corporate Apps Without User Consent",
-    "summary": "Grok Bots targeted Google Calendar, Gmail, Slack, and GitHub over five days, seeking unauthorized access. Bots employed AI-driven credential guessing and API misuse, exploiting weak access-control checks to bypass user-approval flows; no data exfiltration was confirmed. Teams should enforce MFA, monitor anomalous API activity, and apply least-privilege policies on cloud services.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/grok-bots-corporate-data-without-user-approval",
-    "publishedAt": "2026-11-17T13:12:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "grok-bots-target-corporate-apps-without-user-conse",
-      "article-082dad36",
-      "082dad36",
-      "grok-bots-target-corporate-apps-without-user-conse-aed98d",
-      "grok-bots-target-corporate-apps-without-user-consent"
-    ]
-  },
-  {
-    "slug": "access-dental-breach-exposes-340-000-patient-recor-95666df5",
-    "title": "Access Dental Breach Exposes 340,000 Patient Records",
-    "summary": "Access Dental suffered a data breach exposing 340,000 patient records containing personal, health, and insurance information. Attackers bypassed perimeter defenses through an unspecified network intrusion to exfiltrate sensitive data from the dental provider's systems. The company has notified affected individuals and engaged law enforcement while implementing enhanced security controls to prevent recurrence.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/",
-    "publishedAt": "2026-11-17T12:59:04.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/access-dental-management-data-breach-impacts-over-340-0"
-      }
-    ],
-    "aliases": [
-      "access-dental-breach-exposes-340-000-patient-recor",
-      "article-95666df5",
-      "95666df5",
-      "access-dental-breach-exposes-340-000-patient-recor-2c2575",
-      "access-dental-breach-exposes-340-000-patient-records"
-    ]
-  },
-  {
-    "slug": "corma-raises-125m-for-defensive-cybersecurity-mode-b15c34cf",
-    "title": "Corma Raises $125M for Defensive Cybersecurity Models",
-    "summary": "Corma received $125 million in funding to train foundation models for defensive cybersecurity. The round was led by NEA with support from existing investors and brings the company's valuation to $1 billion. The investment targets defensive cybersecurity model development, though the report does not detail specific products, deployment timelines, or technical capabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/corma-receives-125-million-to-train-foundation-models-for-defensive-cybersecurity/",
-    "publishedAt": "2026-11-17T12:51:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "corma-raises-125m-for-defensive-cybersecurity-mode",
-      "article-b15c34cf",
-      "b15c34cf",
-      "corma-raises-125m-for-defensive-cybersecurity-mode-24122e",
-      "corma-raises-125m-for-defensive-cybersecurity-models"
-    ]
-  },
-  {
-    "slug": "major-news-sites-serve-malicious-code-via-supply-c-7a0ef9ff",
-    "title": "Major News Sites Serve Malicious Code via Supply-Chain Attack",
-    "summary": "A supply-chain attack injected malicious code into high-traffic sites like CNN, BBC, and Zoom on November 16, affecting visitors. The attack used compromised CDN scripts to inject malware that could exfiltrate credentials or install ransomware; no user data exfiltration was confirmed. Sites should verify script integrity, update CDN settings, and deploy web-application firewalls to block malicious payloads.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/cnn-bbc-zoom-and-other-sites-served-malicious-code-in-supply-chain-attack",
-    "publishedAt": "2026-11-17T12:51:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "major-news-sites-serve-malicious-code-via-supply-c",
-      "article-7a0ef9ff",
-      "7a0ef9ff",
-      "major-news-sites-serve-malicious-code-via-supply-c-25f117",
-      "major-news-sites-serve-malicious-code-via-supply-chain-attac"
-    ]
-  },
-  {
-    "slug": "screenconnect-flaw-enables-silent-malware-on-msp-t-7b61a398",
-    "title": "ScreenConnect Flaw Enables Silent Malware on MSP Techs",
-    "summary": "A critical ScreenConnect vulnerability (CVE-2026-84869) allows attackers to run malicious files on MSP technicians’ computers without a confirmation prompt. The flaw transforms routine remote support sessions into covert infection vectors, exposing workstations that hold customer systems, management tools, and saved credentials. Security teams should apply vendor patches, disable guest-pushed file execution, and monitor remote support logs for unauthorized activity.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-screenconnect-flaw/",
-    "publishedAt": "2026-11-17T12:33:09.000Z",
-    "cves": [
-      "CVE-2026-84869"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "screenconnect-flaw-enables-silent-malware-on-msp-t",
-      "article-7b61a398",
-      "7b61a398",
-      "screenconnect-flaw-enables-silent-malware-on-msp-t-c3c391",
-      "screenconnect-flaw-enables-silent-malware-on-msp-techs"
-    ]
-  },
-  {
-    "slug": "n-able-patches-17-n-central-zero-days-b71a59fc",
-    "title": "N-Able Patches 17 N-Central Zero-Days",
-    "summary": "N-Able released patches for 17 N-Central zero-day vulnerabilities, including those already exploited in the wild. The flaws enabled unauthenticated remote code execution via the legacy API, exposing customers to system compromise in the wild. All affected installations should apply the latest update today; legacy APIs are disabled to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/",
-    "publishedAt": "2026-11-17T12:28:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-patches-17-n-central-zero-days",
-      "article-b71a59fc",
-      "b71a59fc",
-      "n-able-patches-17-n-central-zero-days-207ac6"
-    ]
-  },
-  {
-    "slug": "iphone-audio-service-bypasses-microphone-permissio-609dd0d1",
-    "title": "iPhone Audio Service Bypasses Microphone Permission",
-    "summary": "Apple's audio service contained a flaw that allowed apps to record audio even after users denied microphone access. The bug bypassed the operating system's permission model, enabling unauthorized audio capture without user consent. Apple released a patch on August 17; users should install the update to prevent unauthorized recording today.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
-    "publishedAt": "2026-11-17T12:14:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "iphone-audio-service-bypasses-microphone-permissio",
-      "article-609dd0d1",
-      "609dd0d1",
-      "iphone-audio-service-bypasses-microphone-permissio-53e38d",
-      "iphone-audio-service-bypasses-microphone-permission"
-    ]
-  },
-  {
-    "slug": "deepmind-ai-formally-verifies-signal-protocol-cryp-79f09066",
-    "title": "DeepMind AI Formally Verifies Signal Protocol Cryptography",
-    "summary": "Google DeepMind researchers applied agentic AI to formally verify cryptographic guarantees within the Signal protocol used by Signal, Google Messages, and WhatsApp. The four-week proof-of-concept used the AlphaProof Code framework to mathematically validate key security properties without identifying vulnerabilities or CVEs. Security teams should view this as independent cryptographic validation rather than an actionable patch or remediation requirement.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html",
-    "publishedAt": "2026-11-17T12:05:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "deepmind-ai-formally-verifies-signal-protocol-cryp",
-      "article-79f09066",
-      "79f09066",
-      "deepmind-ai-formally-verifies-signal-protocol-cryp-1dcb34",
-      "deepmind-ai-formally-verifies-signal-protocol-cryptography"
-    ]
-  },
-  {
-    "slug": "fortios-double-free-impacts-siemens-ruggedcom-ape1-20cba8a4",
-    "title": "FortiOS Double Free Impacts Siemens RUGGEDCOM APE1808",
-    "summary": "A Double Free vulnerability in FortiOS (CVE-2026-106175) affects Siemens RUGGEDCOM APE1808 industrial devices. The flaw allows local authenticated attackers to crash the newcli daemon via crafted CLI commands, rated CVSS 2.3. Siemens advises updating FortiGate NGFW to version 7.6.9 or later following secure update procedures; administrators should apply the firmware upgrade promptly to mitigate denial-of-service risk.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
-    "publishedAt": "2026-11-17T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-106175"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "fortios-double-free-impacts-siemens-ruggedcom-ape1",
-      "article-20cba8a4",
-      "20cba8a4",
-      "fortios-double-free-impacts-siemens-ruggedcom-ape1-41aee7",
-      "fortios-double-free-impacts-siemens-ruggedcom-ape1808"
-    ]
-  },
-  {
-    "slug": "siemens-ros-code-injection-vulnerability-cve-2026-bc942585",
-    "title": "Siemens ROS# Code Injection Vulnerability CVE-2026-109097",
-    "summary": "A code injection flaw in Siemens ROS# allows attackers to inject arbitrary code via crafted message definition files. The vulnerability, identified as CVE-2026-109097, scores CVSS 8.2 and permits remote code execution without authentication, potentially compromising critical manufacturing systems worldwide. Siemens has released ROS# 2.3.1 and newer versions; operators should upgrade immediately to eliminate the injection risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
-    "publishedAt": "2026-11-17T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-109097"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-ros-code-injection-vulnerability-cve-2026",
-      "article-bc942585",
-      "bc942585",
-      "siemens-ros-code-injection-vulnerability-cve-2026-41aee7",
-      "siemens-ros-code-injection-vulnerability-cve-2026-109097"
-    ]
-  },
-  {
-    "slug": "siemens-products-affected-by-node2shell-cve-2026-1-5e86ee33",
-    "title": "Siemens Products Affected by Node2Shell CVE-2026-111497",
-    "summary": "Node.js’s Brotli decoder contains an out-of-bounds write flaw (CVE-2026-111497) that can let remote attackers corrupt memory and run code. The flaw impacts Siemens Industrial Automation Software, including COMOS Walkinside and gDAP, threatening critical manufacturing systems. Siemens released patched versions; users must upgrade immediately to stop exploitation and apply the updates without delay.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
-    "publishedAt": "2026-11-17T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-products-affected-by-node2shell-cve-2026-1",
-      "article-5e86ee33",
-      "5e86ee33",
-      "siemens-products-affected-by-node2shell-cve-2026-1-41aee7",
-      "siemens-products-affected-by-node2shell-cve-2026-111497"
-    ]
-  },
-  {
-    "slug": "node2shell-vulnerability-affects-siemens-industria-6aabb476",
-    "title": "Node2Shell Vulnerability Affects Siemens Industrial Software",
-    "summary": "CVE-2026-111497, a critical out-of-bounds write in Node.js’s Brotli decoder, can let remote attackers corrupt memory and run arbitrary code on Siemens industrial software. The flaw, known as Node2Shell, is an out-of-bounds write that may trigger memory corruption and code execution, posing a high-risk threat. Siemens recommends applying forthcoming patches or following vendor-issued mitigations to protect affected products.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
-    "publishedAt": "2026-11-17T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "node2shell-vulnerability-affects-siemens-industria",
-      "article-6aabb476",
-      "6aabb476",
-      "node2shell-vulnerability-affects-siemens-industria-41aee7",
-      "node2shell-vulnerability-affects-siemens-industrial-software"
-    ]
-  },
-  {
-    "slug": "simcenter-femap-out-of-bounds-read-vulnerability-434d481d",
-    "title": "Simcenter Femap Out-of-Bounds Read Vulnerability",
-    "summary": "Simcenter Femap has an out-of-bounds read flaw, CVE-2026-64629, triggered by crafted X_T files that can crash or allow code execution. Rated CVSS 7.8, the flaw permits arbitrary code execution in the current process, posing a high-severity threat. Siemens released a patched version and recommends users upgrade immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
-    "publishedAt": "2026-11-17T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-64629"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "simcenter-femap-out-of-bounds-read-vulnerability",
-      "article-434d481d",
-      "434d481d",
-      "simcenter-femap-out-of-bounds-read-vulnerability-41aee7"
     ]
   }
 ];
