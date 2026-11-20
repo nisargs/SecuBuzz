@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "chrome-dev-channel-updated-to-160-0-8171-0-3230d0ff",
+    "title": "Chrome Dev Channel Updated to 160.0.8171.0",
+    "summary": "Google Chrome's Dev channel updated to version 160.0.8171.0, delivering bug fixes and performance improvements across Windows, macOS, and Linux. Release notes detail changes in rendering, security, and developer tools, with a partial list in the Git log. Users on the Dev channel should install the new build to access the latest features.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update_0667948876.html",
+    "publishedAt": "2026-11-20T17:58:33.217Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-dev-channel-updated-to-160-0-8171-0",
+      "article-3230d0ff",
+      "3230d0ff",
+      "chrome-dev-channel-updated-to-160-0-8171-0-798051"
+    ]
+  },
+  {
+    "slug": "microsoft-investigates-new-outlook-attachment-uplo-643ec312",
+    "title": "Microsoft Investigates New Outlook Attachment Upload Failures",
+    "summary": "Microsoft is investigating reports that Microsoft 365 users cannot upload attachments in the New Outlook client, a problem tracked under ticket EX1561765 in the admin center. The issue is being addressed in the November 20 service update. Users experiencing the failure should verify their client version and contact support if it persists.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-attachment-upload-failures/",
+    "publishedAt": "2026-11-20T17:01:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-investigates-new-outlook-attachment-uplo",
+      "article-643ec312",
+      "643ec312",
+      "microsoft-investigates-new-outlook-attachment-uplo-2b6fb5",
+      "microsoft-investigates-new-outlook-attachment-upload-failure"
+    ]
+  },
+  {
     "slug": "ai-driven-attacks-arrive-cisos-need-five-steps-764d2948",
     "title": "AI-Driven Attacks Arrive; CISOs Need Five Steps",
     "summary": "Claude Mythos Preview, an advanced AI model, identified and linked software vulnerabilities faster than traditional tools. ARTEX recently removed its corporate barrier, granting attackers broader access to the model and increasing threat exposure. CISOs should adopt five proactive steps, tightening AI controls, enhancing vulnerability triage, and updating incident response plans.",
@@ -828,6 +865,63 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100657-important-net-8-0-security-bug-fi-36aacfb6",
+    "title": "RHSA-2026:100657: Important: .NET 8.0 security, bug fix, and enhancement update",
+    "summary": "An update for .NET 8.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100657",
+    "publishedAt": "2026-11-20T09:08:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100657-important-net-8-0-security-bug-fi",
+      "article-36aacfb6",
+      "36aacfb6",
+      "rhsa-2026-100657-important-net-8-0-security-bug-fi-2ee085",
+      "rhsa-2026-100657-important-net-8-0-security-bug-fix-and-enha"
+    ]
+  },
+  {
+    "slug": "chromium-angle-use-after-free-cve-2023-1531-e4eccb3a",
+    "title": "Chromium ANGLE Use-After-Free CVE-2023-1531",
+    "summary": "Chromium's ANGLE component contains a use-after-free flaw identified as CVE-2023-1531. The flaw allows an attacker to corrupt memory after a freed pointer is accessed, potentially enabling arbitrary code execution if exploited. Microsoft and Chromium developers have released a patch in the latest Chromium update; users should upgrade to the newest stable release to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-1531",
+    "publishedAt": "2026-11-20T09:05:37.000Z",
+    "cves": [
+      "CVE-2023-1531"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-angle-use-after-free-cve-2023-1531",
+      "article-e4eccb3a",
+      "e4eccb3a",
+      "chromium-angle-use-after-free-cve-2023-1531-4170db"
+    ]
+  },
+  {
+    "slug": "red-hat-rpm-security-update-rhsa-2026-100637-54dded9a",
+    "title": "Red Hat RPM Security Update (RHSA-2026-100637)",
+    "summary": "Red Hat released a moderate-impact security update for the rpm package on RHEL 8, addressing multiple vulnerabilities identified in the RPM package manager. The update mitigates potential privilege escalation or package tampering risks by correcting internal validation logic. Users should apply the RHSA-2026-100637 update via yum or dnf to ensure system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100637",
+    "publishedAt": "2026-11-20T08:58:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-rpm-security-update-rhsa-2026-100637",
+      "article-54dded9a",
+      "54dded9a",
+      "red-hat-rpm-security-update-rhsa-2026-100637-2ee084"
+    ]
+  },
+  {
     "slug": "european-commission-confirms-ai-generated-cyberatt-4d57d748",
     "title": "European Commission Confirms AI-Generated Cyberattack",
     "summary": "The European Commission confirmed a cyberattack that leveraged an available AI tool to disrupt several of its applications. The attack forced multiple systems offline, though no evidence of data exfiltration or credential compromise was reported, according to spokesperson Thomas Regnier. Security teams should review access controls, monitor for anomalous activity, and apply any vendor-issued mitigations to prevent similar AI-driven disruptions.",
@@ -901,6 +995,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100655-important-net-10-0-security-bug-f-1748adca",
+    "title": "RHSA-2026:100655: Important: .NET 10.0 security, bug fix, and enhancement update",
+    "summary": "An update for .NET 10.0 is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100655",
+    "publishedAt": "2026-11-20T08:28:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100655-important-net-10-0-security-bug-f",
+      "article-1748adca",
+      "1748adca",
+      "rhsa-2026-100655-important-net-10-0-security-bug-f-2ee085",
+      "rhsa-2026-100655-important-net-10-0-security-bug-fix-and-enh"
+    ]
+  },
+  {
     "slug": "red-hat-kernel-update-for-rhel-9-4-sap-816c4b99",
     "title": "Red Hat Kernel Update for RHEL 9.4 SAP",
     "summary": "Red Hat issued a kernel security update for Enterprise Linux 9.4 SAP Solutions, fixing bugs that could allow privilege escalation or denial of service. CVSS base scores for each vulnerability are listed in the CVE references, indicating high impact severity. Apply the kernel patch via RHEL 9.4 Update Services for SAP Solutions to mitigate exploitation.",
@@ -953,6 +1066,25 @@ export const news: NewsBrief[] = [
       "c963dc72",
       "rhsa-2026-100661-important-kernel-security-bug-fix-2ee085",
       "rhsa-2026-100661-important-kernel-security-bug-fix-and-enhan"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100693-critical-kpatch-patch-5-14-0-570-025486b2",
+    "title": "RHSA-2026:100693: Critical: kpatch-patch-5_14_0-570_116_1, kpatch-patch-5_14_0-570_135_1, kpatch-patch-5_14_0-570_39_1, kpatch-patch-5_14_0-570_66_1, and kpatch-patch-5_14_0-570_94_1 security update",
+    "summary": "An update for kpatch-patch-5_14_0-570_116_1, kpatch-patch-5_14_0-570_135_1, kpatch-patch-5_14_0-570_39_1, kpatch-patch-5_14_0-570_66_1, and kpatch-patch-5_14_0-570_94_1 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100693",
+    "publishedAt": "2026-11-20T08:26:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100693-critical-kpatch-patch-5-14-0-570",
+      "article-025486b2",
+      "025486b2",
+      "rhsa-2026-100693-critical-kpatch-patch-5-14-0-570-2ee085",
+      "rhsa-2026-100693-critical-kpatch-patch-5-14-0-570-116-1-kpat"
     ]
   },
   {
@@ -9576,140 +9708,6 @@ export const news: NewsBrief[] = [
       "article-d5fa4d5e",
       "d5fa4d5e",
       "n-able-issues-cve-patches-for-n-central-and-mms3-761d20"
-    ]
-  },
-  {
-    "slug": "phishing-kits-capture-microsoft-365-tokens-a3cdc3c2",
-    "title": "Phishing Kits Capture Microsoft 365 Tokens",
-    "summary": "Huntress researchers dissected EvilTokens, Knight Office, and Kali365 phishing kits that harvest Microsoft 365 authentication tokens. The kits employ social engineering to prompt users to submit credentials, then replay captured tokens to access corporate resources. Defenders should monitor token usage, enforce MFA, and deploy detection rules to flag anomalous token activity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
-    "publishedAt": "2026-11-17T15:01:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "phishing-kits-capture-microsoft-365-tokens",
-      "article-a3cdc3c2",
-      "a3cdc3c2",
-      "phishing-kits-capture-microsoft-365-tokens-46423b"
-    ]
-  },
-  {
-    "slug": "device-code-phishing-threatens-ai-coding-agents-9d3ff1a6",
-    "title": "Device Code Phishing Threatens AI Coding Agents",
-    "summary": "Lab research shows device code phishing can target AI coding agents, using GitHub Copilot CLI as a proof-of-concept. The technique exploits weak consent verification during device authorization, allowing attackers to capture user credentials and potentially run arbitrary code. Teams should enforce multi-factor authentication for device flows, audit logs, and restrict AI agent permissions to mitigate credential theft.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
-    "publishedAt": "2026-11-17T15:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "device-code-phishing-threatens-ai-coding-agents",
-      "article-9d3ff1a6",
-      "9d3ff1a6",
-      "device-code-phishing-threatens-ai-coding-agents-7908a5"
-    ]
-  },
-  {
-    "slug": "ipsos-reports-internal-system-breach-2a6b86e0",
-    "title": "Ipsos Reports Internal System Breach",
-    "summary": "Ipsos announced a breach of its internal system, revealing that attackers accessed confidential data and credentials. The incident was disclosed five days after the company filed a complaint with authorities, indicating a potential delay in detection. Ipsos should conduct a comprehensive forensic investigation, notify affected stakeholders, and strengthen access controls to prevent future intrusions.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system/",
-    "publishedAt": "2026-11-17T14:55:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ipsos-reports-internal-system-breach",
-      "article-2a6b86e0",
-      "2a6b86e0",
-      "ipsos-reports-internal-system-breach-4bf77b"
-    ]
-  },
-  {
-    "slug": "graphdoor-backdoor-compromises-government-cloud-cr-13da3715",
-    "title": "GraphDoor Backdoor Compromises Government Cloud Credentials, Enabling Data Exfiltration",
-    "summary": "GraphDoor, a covert cloud backdoor, has been observed compromising government cloud credentials to establish persistence and exfiltrate sensitive data. The attack leverages stolen authentication tokens rather than a public exploit, enabling lateral movement and stealthy espionage across multiple regions. Security teams must audit telemetry, enforce credential hygiene, deploy detection rules, and apply vendor patches to block the backdoor.",
-    "category": "Breach",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/graphdoor-sharepoint-backdoor/",
-    "publishedAt": "2026-11-17T14:40:07.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/operation-shadowcloud-cloud-service-based-backdoors-tar"
-      }
-    ],
-    "aliases": [
-      "graphdoor-backdoor-compromises-government-cloud-cr",
-      "article-13da3715",
-      "13da3715",
-      "graphdoor-backdoor-compromises-government-cloud-cr-2e0b07",
-      "graphdoor-backdoor-compromises-government-cloud-credentials-"
-    ]
-  },
-  {
-    "slug": "envoy-launches-visitors-critical-visitor-workflow-e5639880",
-    "title": "Envoy Launches Visitors Critical Visitor Workflow Solution",
-    "summary": "Envoy introduced Visitors Critical, an infrastructure-grade visitor security platform that consolidates identity verification, screening, and approval workflows into a single architecture. The solution targets high-consequence environments, ensuring audit-ready records and preventing gaps that one-size-fits-all visitor processes can create. Organizations can adopt Visitors Critical to enforce strict control, assurance, and governance across all visitor scenarios.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/envoy-visitors-critical/",
-    "publishedAt": "2026-11-17T14:28:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "envoy-launches-visitors-critical-visitor-workflow",
-      "article-e5639880",
-      "e5639880",
-      "envoy-launches-visitors-critical-visitor-workflow-497b5f",
-      "envoy-launches-visitors-critical-visitor-workflow-solution"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-unpatched-microsoft-exchange-serve-dcaa14f1",
-    "title": "Hackers Exploit Unpatched Microsoft Exchange Servers to Deploy Custom RATs Across Southeast Asia",
-    "summary": "Hackers are exploiting unpatched Microsoft Exchange servers and vulnerable web servers to break into government networks across Southeast Asia, deploying custom remote access trojans built for quiet, long-term spying. The campaign combines server exploitation, targeted phishing, credential theft, and mailbox access to pursue sensitive government information.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-exchange-servers/",
-    "publishedAt": "2026-11-17T14:24:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-unpatched-microsoft-exchange-serve",
-      "article-dcaa14f1",
-      "dcaa14f1",
-      "hackers-exploit-unpatched-microsoft-exchange-serve-636a1d",
-      "hackers-exploit-unpatched-microsoft-exchange-servers-to-depl"
-    ]
-  },
-  {
-    "slug": "linx-security-governs-ai-agent-actions-129f5264",
-    "title": "Linx Security Governs AI Agent Actions",
-    "summary": "Linx Security introduced four capabilities extending identity governance to managed and unmanaged AI agents across existing gateways. Shadow AI Agent Detection identifies unsanctioned agents, while Agent Runtime Control governs each agent action in the gateway organizations already operate. The vendor also added Autopilots for governed agent use cases and Prompt-to-Workflow conversion from plain-English descriptions into tested agentic workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/linx-security-agent-identity-control/",
-    "publishedAt": "2026-11-17T14:23:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linx-security-governs-ai-agent-actions",
-      "article-129f5264",
-      "129f5264",
-      "linx-security-governs-ai-agent-actions-144797"
     ]
   }
 ];

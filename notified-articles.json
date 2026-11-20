@@ -5824,5 +5824,12 @@
   "https://access.redhat.com/errata/RHSA-2026:100752",
   "https://access.redhat.com/errata/RHSA-2026:100751",
   "https://access.redhat.com/errata/RHSA-2026:100694",
-  "https://access.redhat.com/errata/RHSA-2026:100687"
+  "https://access.redhat.com/errata/RHSA-2026:100687",
+  "https://access.redhat.com/errata/RHSA-2026:100657",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-1531",
+  "https://access.redhat.com/errata/RHSA-2026:100637",
+  "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update_0667948876.html",
+  "https://cybersecuritynews.com/microsoft-attachment-upload-failures/",
+  "https://access.redhat.com/errata/RHSA-2026:100693",
+  "https://access.redhat.com/errata/RHSA-2026:100655"
 ]
