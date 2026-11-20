@@ -11,6 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "china-s-armory-castle-lays-siege-to-vmware-vcenter-a33ee633",
+    "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
+    "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve. The vulnerability is tracked as CVE-2026-123890.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
+    "publishedAt": "2026-11-20T21:03:27.000Z",
+    "cves": [
+      "CVE-2026-123890"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "china-s-armory-castle-lays-siege-to-vmware-vcenter",
+      "article-a33ee633",
+      "a33ee633",
+      "china-s-armory-castle-lays-siege-to-vmware-vcenter-5bc9ce",
+      "china-s-armory-castle-lays-siege-to-vmware-vcenter-zero-day"
+    ]
+  },
+  {
     "slug": "how-cloudflare-waf-protects-against-ruby2shell-cve-45be843d",
     "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
     "summary": "ruby2shell lets attackers corrupt memory in default Rails and Sinatra apps without logging in. Cloudflare WAF blocks it for every customer, including Free plans. Upgrade Ruby now, and use the WAF to cover the gap.",
@@ -233,6 +254,29 @@ export const news: NewsBrief[] = [
       "81864ea2",
       "rhsa-2026-100752-critical-openjdk-25-0-5-1-securit-2ee088",
       "rhsa-2026-100752-critical-openjdk-25-0-5-1-security-update-f"
+    ]
+  },
+  {
+    "slug": "moxa-firmware-buffer-overflow-vulnerabilities-16be413b",
+    "title": "Moxa Firmware Buffer Overflow Vulnerabilities",
+    "summary": "Moxa disclosed buffer overflow flaws in ioLogik E1200, EDS-E, IKS, and other firmware series, exploitable via Ethernet Remote I/Os and switches. CVE-2026-129971 and CVE-2026-129972 target remote I/Os, while CVE-2026-130493 and CVE-2026-130494 affect switch firmware, enabling potential code execution. Users should review the advisory and apply firmware updates promptly to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/control-systems-moxa-security-advisory-av26-1187",
+    "publishedAt": "2026-11-20T15:39:31.000Z",
+    "cves": [
+      "CVE-2026-129971",
+      "CVE-2026-129972",
+      "CVE-2026-130493",
+      "CVE-2026-130494"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "moxa-firmware-buffer-overflow-vulnerabilities",
+      "article-16be413b",
+      "16be413b",
+      "moxa-firmware-buffer-overflow-vulnerabilities-474308"
     ]
   },
   {
@@ -657,6 +701,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hospitals-universities-hit-by-byod-ransomware-audi-3e2fb1ee",
+    "title": "Hospitals, Universities Hit by BYOD Ransomware Audio Messages",
+    "summary": "Ransomware attackers targeted hospitals and universities, playing audio ransom messages on infected computers to replace text demands. The campaign used a BYOD vector, embedding voice recordings that announced compromise and demanded payment, increasing user distraction. Security teams should isolate affected endpoints, verify ransomware signatures, and apply vendor patches to stop spread and monitor for audio payloads.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/byod-ransomware/",
+    "publishedAt": "2026-11-20T12:06:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hospitals-universities-hit-by-byod-ransomware-audi",
+      "article-3e2fb1ee",
+      "3e2fb1ee",
+      "hospitals-universities-hit-by-byod-ransomware-audi-1ef97a",
+      "hospitals-universities-hit-by-byod-ransomware-audio-messages"
+    ]
+  },
+  {
     "slug": "ct-scan-unlocks-400-year-old-cryptex-padlock-50e4e0d2",
     "title": "CT Scan Unlocks 400-Year-Old Cryptex Padlock",
     "summary": "Researchers employed computed tomography scanning to reconstruct the internal code mechanism of a 400-year-old cryptex padlock, enabling its successful opening. The technique demonstrates that advanced imaging can bypass mechanical security, revealing that physical locks may be vulnerable to non-invasive analysis. Security designers should consider imaging resistance when creating high-security mechanical devices and evaluate potential forensic exploitation.",
@@ -1059,6 +1122,28 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromium-use-after-free-vulnerability-cve-2024-753-faad13a5",
+    "title": "Chromium Use-After-Free Vulnerability CVE-2024-7533",
+    "summary": "Chromium's sharing feature contains a use-after-free flaw, identified as CVE-2024-7533, that can be triggered by maliciously crafted shared content. The flaw allows an attacker to execute arbitrary code or crash the browser, potentially compromising user data and session integrity. Google has released a patch in the latest Chromium update; users should upgrade immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7532",
+    "publishedAt": "2026-11-20T09:06:50.000Z",
+    "cves": [
+      "CVE-2024-7533",
+      "CVE-2024-7532"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-use-after-free-vulnerability-cve-2024-753",
+      "article-faad13a5",
+      "faad13a5",
+      "chromium-use-after-free-vulnerability-cve-2024-753-43286e",
+      "chromium-use-after-free-vulnerability-cve-2024-7533"
+    ]
+  },
+  {
     "slug": "chromium-angle-use-after-free-cve-2023-1531-e4eccb3a",
     "title": "Chromium ANGLE Use-After-Free CVE-2023-1531",
     "summary": "Chromium's ANGLE component contains a use-after-free flaw identified as CVE-2023-1531. The flaw allows an attacker to corrupt memory after a freed pointer is accessed, potentially enabling arbitrary code execution if exploited. Microsoft and Chromium developers have released a patch in the latest Chromium update; users should upgrade to the newest stable release to mitigate the risk.",
@@ -1225,6 +1310,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-builds-security-update-for-buildah-4fa46f82",
+    "title": "Red Hat Builds Security Update for Buildah",
+    "summary": "Red Hat released an important buildah update for Enterprise Linux 9, addressing multiple security bugs that could allow privilege escalation or denial of service. The update includes fixes for CVEs referenced in the advisory, improving container image building reliability and preventing potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100688",
+    "publishedAt": "2026-11-20T08:47:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-builds-security-update-for-buildah",
+      "article-4fa46f82",
+      "4fa46f82",
+      "red-hat-builds-security-update-for-buildah-2ee085"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100639-important-skopeo-security-bug-fix-5e1bf7ca",
+    "title": "RHSA-2026:100639: Important: skopeo security, bug fix, and enhancement update",
+    "summary": "An update for skopeo is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100639",
+    "publishedAt": "2026-11-20T08:46:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100639-important-skopeo-security-bug-fix",
+      "article-5e1bf7ca",
+      "5e1bf7ca",
+      "rhsa-2026-100639-important-skopeo-security-bug-fix-2ee084",
+      "rhsa-2026-100639-important-skopeo-security-bug-fix-and-enhan"
+    ]
+  },
+  {
     "slug": "red-hat-releases-kernel-update-for-rhel-9-6-eus-dc0864d2",
     "title": "Red Hat Releases Kernel Update for RHEL 9.6 EUS",
     "summary": "Red Hat released a kernel update for RHEL 9.6 Extended Update Support that addresses multiple security bugs. The update includes fixes for vulnerabilities with CVSS scores ranging from moderate to high, as detailed in the linked CVE references. Red Hat recommends applying the update immediately to mitigate potential exploitation and maintain kernel integrity.",
@@ -1243,6 +1365,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100734-important-edk2-security-update-45216704",
+    "title": "RHSA-2026:100734: Important: edk2 security update",
+    "summary": "An update for edk2 is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100734",
+    "publishedAt": "2026-11-20T08:35:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100734-important-edk2-security-update",
+      "article-45216704",
+      "45216704",
+      "rhsa-2026-100734-important-edk2-security-update-2ee088"
+    ]
+  },
+  {
     "slug": "red-hat-kernel-update-for-rhel-8-8-sap-02614055",
     "title": "Red Hat Kernel Update for RHEL 8.8 SAP",
     "summary": "Red Hat released a kernel update for Enterprise Linux 8.8 SAP and Telecommunications, fixing bugs that could allow privilege escalation or denial of service. CVSS base scores for each vulnerability are listed in the CVE references, indicating high impact. Apply the kernel patch via RHEL 8.8 Update Services for SAP Solutions or Telecommunications Update Service to mitigate exploitation.",
@@ -1258,6 +1398,25 @@ export const news: NewsBrief[] = [
       "article-02614055",
       "02614055",
       "red-hat-kernel-update-for-rhel-8-8-sap-2ee084"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100498-important-gnome-remote-desktop-se-60da1476",
+    "title": "RHSA-2026:100498: Important: gnome-remote-desktop security update",
+    "summary": "An update for gnome-remote-desktop is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100498",
+    "publishedAt": "2026-11-20T08:33:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100498-important-gnome-remote-desktop-se",
+      "article-60da1476",
+      "60da1476",
+      "rhsa-2026-100498-important-gnome-remote-desktop-se-2ee07e",
+      "rhsa-2026-100498-important-gnome-remote-desktop-security-upd"
     ]
   },
   {
@@ -9542,162 +9701,6 @@ export const news: NewsBrief[] = [
       "article-9aa1f30f",
       "9aa1f30f",
       "privoxy-vulnerabilities-enable-dos-and-xss-attacks-7e79bc"
-    ]
-  },
-  {
-    "slug": "oar-script-fails-to-sanitize-openssh-options-3ba20a68",
-    "title": "OAR Script Fails to Sanitize OpenSSH Options",
-    "summary": "A flaw in OAR’s oarsh script lets authenticated users exploit improperly filtered OpenSSH options. The vulnerability permits privilege escalation or sensitive data exposure by injecting malicious SSH options, though no public exploit has been reported. Ubuntu recommends applying the latest security update that patches oarsh, and administrators should review SSH configuration for unauthorized options.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9145-1",
-    "publishedAt": "2026-11-17T17:14:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "oar-script-fails-to-sanitize-openssh-options",
-      "article-3ba20a68",
-      "3ba20a68",
-      "oar-script-fails-to-sanitize-openssh-options-7e79bf"
-    ]
-  },
-  {
-    "slug": "ngircd-vulnerability-causes-denial-of-service-36824ef8",
-    "title": "ngIRCd Vulnerability Causes Denial of Service",
-    "summary": "USN-9144-1 reports an ngIRCd flaw where the server mishandles SERVER commands without a prefix, causing an out-of-bounds read. The vulnerability lets remote attackers crash ngIRCd, resulting in a denial of service that can disrupt IRC operations. A patch is included in the latest ngIRCd release; administrators should upgrade or apply the vendor’s workaround to avoid service outages.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9144-1",
-    "publishedAt": "2026-11-17T17:13:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ngircd-vulnerability-causes-denial-of-service",
-      "article-36824ef8",
-      "36824ef8",
-      "ngircd-vulnerability-causes-denial-of-service-7e79c3"
-    ]
-  },
-  {
-    "slug": "hertz-fined-1-5m-for-california-privacy-violation-140d476d",
-    "title": "Hertz Fined $1.5M for California Privacy Violation",
-    "summary": "Hertz was fined $1.5 million by the California Privacy Protection Agency for violating state data privacy regulations, citing improper handling of consumer data. The action highlights gaps in Hertz’s data governance, notably insufficient consent management and audit controls across its fleet-management platform.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/california-fines-hertz-state-data-privacy-law",
-    "publishedAt": "2026-11-17T17:13:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hertz-fined-1-5m-for-california-privacy-violation",
-      "article-140d476d",
-      "140d476d",
-      "hertz-fined-1-5m-for-california-privacy-violation-191aa1"
-    ]
-  },
-  {
-    "slug": "mumble-murmur-server-adds-rate-limiting-to-prevent-68252d22",
-    "title": "Mumble Murmur server adds rate limiting to prevent DoS",
-    "summary": "Murmur server in Mumble lacked rate limiting for certain client messages, enabling remote attackers to cause denial-of-service hangs or crashes. The flaw is unauthenticated and can lead to service disruption and resource exhaustion on vulnerable hosts. The update adds configurable messageburst and messagelimit settings to enforce rate limiting and mitigate the DoS risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9143-1",
-    "publishedAt": "2026-11-17T17:11:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mumble-murmur-server-adds-rate-limiting-to-prevent",
-      "article-68252d22",
-      "68252d22",
-      "mumble-murmur-server-adds-rate-limiting-to-prevent-7e79c7",
-      "mumble-murmur-server-adds-rate-limiting-to-prevent-dos"
-    ]
-  },
-  {
-    "slug": "apache-xml-security-for-java-vulnerability-discove-4e67a7d2",
-    "title": "Apache XML Security for Java Vulnerability Discovered",
-    "summary": "Apache XML Security for Java incorrectly passed a configuration property during key element creation, exposing a flaw. The defect lets an attacker abuse an XPath Transform to extract sensitive data, but exploitation requires crafted XML input and is not confirmed in the wild. The update restricts file: and http: URI dereferencing unless the org.apache.xml.security.allowUnsafeResourceResolving property is set; patch promptly.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9142-1",
-    "publishedAt": "2026-11-17T17:10:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apache-xml-security-for-java-vulnerability-discove",
-      "article-4e67a7d2",
-      "4e67a7d2",
-      "apache-xml-security-for-java-vulnerability-discove-7e79cb",
-      "apache-xml-security-for-java-vulnerability-discovered"
-    ]
-  },
-  {
-    "slug": "mssp-boosts-soc-capacity-25-with-threat-intelligen-319e015d",
-    "title": "MSSP Boosts SOC Capacity 25% with Threat Intelligence",
-    "summary": "A US-based MSSP with one SOC manager and five analysts increased its SOC capacity by 25% by leveraging threat intelligence. The approach involved integrating actionable threat data into analyst workflows, reducing alert fatigue and enabling faster incident response. Other MSSPs can adopt similar intelligence-driven processes to scale operations without proportionally increasing headcount.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/mssp-threat-intelligence-soc-capacity/",
-    "publishedAt": "2026-11-17T17:07:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mssp-boosts-soc-capacity-25-with-threat-intelligen",
-      "article-319e015d",
-      "319e015d",
-      "mssp-boosts-soc-capacity-25-with-threat-intelligen-1b88b0",
-      "mssp-boosts-soc-capacity-25-with-threat-intelligence"
-    ]
-  },
-  {
-    "slug": "flightgear-sandbox-bypass-allows-arbitrary-file-wr-1f314e52",
-    "title": "FlightGear Sandbox Bypass Allows Arbitrary File Writes",
-    "summary": "FlightGear's Nasal script sandbox fails to restrict file paths, allowing attackers to bypass containment and write arbitrary files with user privileges. The flaw stems from improper sandbox enforcement on filesystem operations, enabling local privilege escalation within the user context. Ubuntu has issued USN-9137-1 patches; administrators should immediately upgrade affected FlightGear packages.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9137-1",
-    "publishedAt": "2026-11-17T17:05:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "flightgear-sandbox-bypass-allows-arbitrary-file-wr",
-      "article-1f314e52",
-      "1f314e52",
-      "flightgear-sandbox-bypass-allows-arbitrary-file-wr-7e7a2c",
-      "flightgear-sandbox-bypass-allows-arbitrary-file-writes"
-    ]
-  },
-  {
-    "slug": "chrome-extended-stable-update-addresses-critical-c-6d292483",
-    "title": "Chrome Extended Stable Update Addresses Critical CVEs",
-    "summary": "Google Chrome released an Extended Stable update for Windows and Mac, fixing critical vulnerabilities including CVE-2026-118331, CVE-2026-118344, and CVE-2026-118348. The update also patches high-severity bugs such as CVE-2026-113336, CVE-2026-113338, and CVE-2026-113339, which could enable local privilege escalation or denial of service. Users should install the 156.0.8078.108/109 build promptly, as Chrome provides detailed remediation guidance on its security page.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01061812727.html",
-    "publishedAt": "2026-11-17T17:01:33.196Z",
-    "cves": [
-      "CVE-2026-118331",
-      "CVE-2026-118344",
-      "CVE-2026-118348",
-      "CVE-2026-113336",
-      "CVE-2026-113338",
-      "CVE-2026-113339"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-extended-stable-update-addresses-critical-c",
-      "article-6d292483",
-      "6d292483",
-      "chrome-extended-stable-update-addresses-critical-c-76d7c4",
-      "chrome-extended-stable-update-addresses-critical-cves"
     ]
   }
 ];

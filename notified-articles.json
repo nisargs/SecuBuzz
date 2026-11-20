@@ -5852,5 +5852,13 @@
   "https://access.redhat.com/errata/RHSA-2026:100554",
   "https://access.redhat.com/errata/RHSA-2026:100641",
   "https://access.redhat.com/errata/RHSA-2026:100649",
-  "https://access.redhat.com/errata/RHSA-2026:100648"
+  "https://access.redhat.com/errata/RHSA-2026:100648",
+  "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
+  "https://cyber.gc.ca/en/alerts-advisories/control-systems-moxa-security-advisory-av26-1187",
+  "https://cybersecuritynews.com/byod-ransomware/",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7532",
+  "https://access.redhat.com/errata/RHSA-2026:100688",
+  "https://access.redhat.com/errata/RHSA-2026:100639",
+  "https://access.redhat.com/errata/RHSA-2026:100498",
+  "https://access.redhat.com/errata/RHSA-2026:100734"
 ]

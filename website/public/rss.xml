@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 21:18:38 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 22:47:05 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>China&apos;s &apos;Armory Castle&apos; Lays Siege to VMware vCenter Zero-Day</title>
+      <link>https://secubuzz.com/news/china-s-armory-castle-lays-siege-to-vmware-vcenter-a33ee633</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/china-s-armory-castle-lays-siege-to-vmware-vcenter-a33ee633</guid>
+      <description><![CDATA[During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve. The vulnerability is tracked as CVE-2026-123890.]]></description>
+      <pubDate>Fri, 20 Nov 2026 21:03:27 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day">Dark Reading</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)</title>
       <link>https://secubuzz.com/news/how-cloudflare-waf-protects-against-ruby2shell-cve-45be843d</link>
@@ -105,6 +114,15 @@
       <pubDate>Fri, 20 Nov 2026 15:50:41 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100752">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Moxa Firmware Buffer Overflow Vulnerabilities</title>
+      <link>https://secubuzz.com/news/moxa-firmware-buffer-overflow-vulnerabilities-16be413b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/moxa-firmware-buffer-overflow-vulnerabilities-16be413b</guid>
+      <description><![CDATA[Moxa disclosed buffer overflow flaws in ioLogik E1200, EDS-E, IKS, and other firmware series, exploitable via Ethernet Remote I/Os and switches. CVE-2026-129971 and CVE-2026-129972 target remote I/Os, while CVE-2026-130493 and CVE-2026-130494 affect switch firmware, enabling potential code execution. Users should review the advisory and apply firmware updates promptly to mitigate the risk.]]></description>
+      <pubDate>Fri, 20 Nov 2026 15:39:31 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/control-systems-moxa-security-advisory-av26-1187">Canadian Centre for Cyber Security</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Ubuntu Kernel FIPS Vulnerabilities Span Multiple Subsystems</title>
@@ -305,6 +323,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Hospitals, Universities Hit by BYOD Ransomware Audio Messages</title>
+      <link>https://secubuzz.com/news/hospitals-universities-hit-by-byod-ransomware-audi-3e2fb1ee</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hospitals-universities-hit-by-byod-ransomware-audi-3e2fb1ee</guid>
+      <description><![CDATA[Ransomware attackers targeted hospitals and universities, playing audio ransom messages on infected computers to replace text demands. The campaign used a BYOD vector, embedding voice recordings that announced compromise and demanded payment, increasing user distraction. Security teams should isolate affected endpoints, verify ransomware signatures, and apply vendor patches to stop spread and monitor for audio payloads.]]></description>
+      <pubDate>Fri, 20 Nov 2026 12:06:00 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/byod-ransomware/">Cyber Security News</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
       <title>CT Scan Unlocks 400-Year-Old Cryptex Padlock</title>
       <link>https://secubuzz.com/news/ct-scan-unlocks-400-year-old-cryptex-padlock-50e4e0d2</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ct-scan-unlocks-400-year-old-cryptex-padlock-50e4e0d2</guid>
@@ -428,33 +455,6 @@
       <description><![CDATA[An update for nginx is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Fri, 20 Nov 2026 10:22:24 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100744">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>TfL Oyster Photocard Data Breach Exposes 265,000 Users</title>
-      <link>https://secubuzz.com/news/tfl-oyster-photocard-data-breach-exposes-265-000-u-afd049c0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tfl-oyster-photocard-data-breach-exposes-265-000-u-afd049c0</guid>
-      <description><![CDATA[Transport for London confirmed that the Oyster photocard website was breached, exposing account details of approximately 265,000 users. The breach involved unauthorized access to the photocard system, potentially compromising personal data such as names, addresses, and card balances. TfL took the system offline, issued a security advisory, and is working with investigators to remediate the vulnerability and prevent further exposure.]]></description>
-      <pubDate>Fri, 20 Nov 2026 10:21:41 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/20/transport-for-london-oyster-photocard-data-breach/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Palo Alto Confirms Java Vulnerability Impacts Privilege Threat Analytics and Remote Access Connector</title>
-      <link>https://secubuzz.com/news/palo-alto-confirms-java-vulnerability-impacts-priv-10f5624d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-confirms-java-vulnerability-impacts-priv-10f5624d</guid>
-      <description><![CDATA[Palo Alto Networks has confirmed that a critical Java vulnerability affects Idira Privilege Threat Analytics, Remote Access Connector, and on-premises HTML5 Gateway products. Tracked as CVE-2026-114938, the flaw could let a remote attacker run code without signing in when specific hardware and software conditions are met.]]></description>
-      <pubDate>Fri, 20 Nov 2026 10:00:36 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/palo-alto-confirms-java-vulnerability-impacts/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100735: Important: sos security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100735-important-sos-security-bug-fix-an-55df0332</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100735-important-sos-security-bug-fix-an-55df0332</guid>
-      <description><![CDATA[Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Fri, 20 Nov 2026 09:30:22 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100735">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
