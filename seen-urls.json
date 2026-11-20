@@ -6593,5 +6593,13 @@
   "https://access.redhat.com/errata/RHSA-2026:100685",
   "https://access.redhat.com/errata/RHSA-2026:100643",
   "https://access.redhat.com/errata/RHSA-2026:100650",
-  "https://access.redhat.com/errata/RHSA-2026:100653"
+  "https://access.redhat.com/errata/RHSA-2026:100653",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+nginx+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1",
+  "https://ubuntu.com/security/notices/USN-9183-1",
+  "https://ubuntu.com/security/notices/USN-9173-2",
+  "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1073",
+  "https://access.redhat.com/errata/RHSA-2026:100554",
+  "https://access.redhat.com/errata/RHSA-2026:100641",
+  "https://access.redhat.com/errata/RHSA-2026:100649",
+  "https://access.redhat.com/errata/RHSA-2026:100648"
 ]

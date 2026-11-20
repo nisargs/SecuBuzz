@@ -53,6 +53,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisco-products-hit-by-vulnerabilities-cve-added-to-db738bd1",
+    "title": "Cisco Products Hit by Vulnerabilities, CVE Added to KEV",
+    "summary": "Cisco products including IOS XR, Expressway, Snort 3, Cyber Vision, Secure FTD, Secure Client, and several collaboration services are affected by multiple vulnerabilities. CISA added CVE-2026-76466 to its Known Exploited Vulnerabilities database, indicating active exploitation potential for the affected components. Cisco recommends applying the latest firmware and software updates for the listed products immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1073",
+    "publishedAt": "2026-11-20T19:33:11.000Z",
+    "cves": [
+      "CVE-2026-76466"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-products-hit-by-vulnerabilities-cve-added-to",
+      "article-db738bd1",
+      "db738bd1",
+      "cisco-products-hit-by-vulnerabilities-cve-added-to-1b59a6",
+      "cisco-products-hit-by-vulnerabilities-cve-added-to-kev"
+    ]
+  },
+  {
     "slug": "cve-2026-130901-improper-limitation-of-a-pathname-825b573f",
     "title": "CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server",
     "summary": "Bulletin ID: 2026-195-AWS Publication Date: 11/20/2026 10:30 AM PST Description: Improper limitation of a pathname to a restricted directory in the file access checks in Amazon awslabs.document-loader-mcp-server 1.0.10 through 1.0.20 might allow a context-dependent actor, via crafted document content processed by an MCP client, to read files outside the intended base directory and, in 1.0.12 through 1.0.20, to write PNG slide images outside it.",
@@ -154,6 +175,30 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisco-products-exposed-by-critical-nginx-rce-flaws-b0d351eb",
+    "title": "Cisco Products Exposed by Critical nginx RCE Flaws",
+    "summary": "Cisco products using nginx 1.9.5-1.31.8 are vulnerable to remote code execution through critical flaws. The flaws, identified as CVE-2026-113425, CVE-2026-121810, CVE-2026-123007, CVE-2026-123633, and CVE-2026-123634, exploit parsing errors in nginx modules and are publicly documented with PoC code. Apply nginx 1.31.9 or 1.30.7 patches immediately and update affected Cisco software to the latest releases.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+nginx+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1",
+    "publishedAt": "2026-11-20T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-113425",
+      "CVE-2026-121810",
+      "CVE-2026-123007",
+      "CVE-2026-123633",
+      "CVE-2026-123634"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-products-exposed-by-critical-nginx-rce-flaws",
+      "article-b0d351eb",
+      "b0d351eb",
+      "cisco-products-exposed-by-critical-nginx-rce-flaws-b84874"
+    ]
+  },
+  {
     "slug": "chase-breach-exposes-customer-data-via-third-party-c58378e7",
     "title": "Chase Breach Exposes Customer Data via Third-Party",
     "summary": "J.P. Morgan Chase disclosed a data breach originating from a cyberattack on a third-party service provider, exposing customer personal and marketing data. The incident potentially compromised sensitive information for Chase, Visa, and Mastercard customers, raising concerns over third-party security controls. Chase recommends affected customers monitor accounts, change credentials, and report suspicious activity while the firm investigates the breach.",
@@ -188,6 +233,44 @@ export const news: NewsBrief[] = [
       "81864ea2",
       "rhsa-2026-100752-critical-openjdk-25-0-5-1-securit-2ee088",
       "rhsa-2026-100752-critical-openjdk-25-0-5-1-security-update-f"
+    ]
+  },
+  {
+    "slug": "ubuntu-kernel-fips-vulnerabilities-span-multiple-s-dffaa0a3",
+    "title": "Ubuntu Kernel FIPS Vulnerabilities Span Multiple Subsystems",
+    "summary": "Ubuntu Linux kernel FIPS vulnerabilities affect numerous subsystems, including USB Gadget drivers, memory management, and various architecture drivers. The flaws could allow an attacker to compromise the system, but no active exploitation or public PoC has been reported. Ubuntu recommends applying the latest kernel updates that include the fixes for these subsystems to maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9183-1",
+    "publishedAt": "2026-11-20T15:34:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-kernel-fips-vulnerabilities-span-multiple-s",
+      "article-dffaa0a3",
+      "dffaa0a3",
+      "ubuntu-kernel-fips-vulnerabilities-span-multiple-s-7e77f5",
+      "ubuntu-kernel-fips-vulnerabilities-span-multiple-subsystems"
+    ]
+  },
+  {
+    "slug": "ubuntu-kernel-vulnerabilities-cover-extensive-subs-14226752",
+    "title": "Ubuntu Kernel Vulnerabilities Cover Extensive Subsystems",
+    "summary": "Ubuntu Linux kernel vulnerabilities affect a broad range of subsystems, including device drivers, cryptographic APIs, and hardware interfaces. These flaws could enable an attacker to compromise the system, though no active exploitation or public PoC has been disclosed. Applying the latest kernel updates that incorporate the fixes for these subsystems is recommended to preserve system security.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9173-2",
+    "publishedAt": "2026-11-20T15:33:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-kernel-vulnerabilities-cover-extensive-subs",
+      "article-14226752",
+      "14226752",
+      "ubuntu-kernel-vulnerabilities-cover-extensive-subs-7e786a",
+      "ubuntu-kernel-vulnerabilities-cover-extensive-subsystems"
     ]
   },
   {
@@ -1105,6 +1188,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100554-important-buildah-security-bug-fi-f8789eb8",
+    "title": "RHSA-2026:100554: Important: buildah security, bug fix, and enhancement update",
+    "summary": "An update for buildah is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100554",
+    "publishedAt": "2026-11-20T08:47:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100554-important-buildah-security-bug-fi",
+      "article-f8789eb8",
+      "f8789eb8",
+      "rhsa-2026-100554-important-buildah-security-bug-fi-2ee081",
+      "rhsa-2026-100554-important-buildah-security-bug-fix-and-enha"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100641-important-c-ares-security-update-6ab76ab1",
+    "title": "RHSA-2026:100641: Important: c-ares security update",
+    "summary": "An update for c-ares is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100641",
+    "publishedAt": "2026-11-20T08:47:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100641-important-c-ares-security-update",
+      "article-6ab76ab1",
+      "6ab76ab1",
+      "rhsa-2026-100641-important-c-ares-security-update-2ee084"
+    ]
+  },
+  {
     "slug": "red-hat-releases-kernel-update-for-rhel-9-6-eus-dc0864d2",
     "title": "Red Hat Releases Kernel Update for RHEL 9.6 EUS",
     "summary": "Red Hat released a kernel update for RHEL 9.6 Extended Update Support that addresses multiple security bugs. The update includes fixes for vulnerabilities with CVSS scores ranging from moderate to high, as detailed in the linked CVE references. Red Hat recommends applying the update immediately to mitigate potential exploitation and maintain kernel integrity.",
@@ -1138,6 +1258,43 @@ export const news: NewsBrief[] = [
       "article-02614055",
       "02614055",
       "red-hat-kernel-update-for-rhel-8-8-sap-2ee084"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100648-important-xorg-x11-server-securit-cd2b4d30",
+    "title": "RHSA-2026:100648: Important: xorg-x11-server security update",
+    "summary": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100648",
+    "publishedAt": "2026-11-20T08:32:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100648-important-xorg-x11-server-securit",
+      "article-cd2b4d30",
+      "cd2b4d30",
+      "rhsa-2026-100648-important-xorg-x11-server-securit-2ee084",
+      "rhsa-2026-100648-important-xorg-x11-server-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100649-important-aspell-security-update-dbe1de9d",
+    "title": "RHSA-2026:100649: Important: aspell security update",
+    "summary": "An update for aspell is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100649",
+    "publishedAt": "2026-11-20T08:32:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100649-important-aspell-security-update",
+      "article-dbe1de9d",
+      "dbe1de9d",
+      "rhsa-2026-100649-important-aspell-security-update-2ee084"
     ]
   },
   {
@@ -9541,164 +9698,6 @@ export const news: NewsBrief[] = [
       "6d292483",
       "chrome-extended-stable-update-addresses-critical-c-76d7c4",
       "chrome-extended-stable-update-addresses-critical-cves"
-    ]
-  },
-  {
-    "slug": "binwalk-path-traversal-enables-arbitrary-file-writ-adc7226b",
-    "title": "Binwalk Path Traversal Enables Arbitrary File Write",
-    "summary": "Ubuntu reports a flaw in Binwalk's PFS extractor where file paths are unsanitized, enabling a crafted PFS image to write arbitrary files and execute code. An attacker could trick a user or automated system into extracting a malicious PFS file, potentially compromising the host. Updating Binwalk to the patched version or applying the security update mitigates the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9134-1",
-    "publishedAt": "2026-11-17T16:58:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binwalk-path-traversal-enables-arbitrary-file-writ",
-      "article-adc7226b",
-      "adc7226b",
-      "binwalk-path-traversal-enables-arbitrary-file-writ-7e7a38",
-      "binwalk-path-traversal-enables-arbitrary-file-write"
-    ]
-  },
-  {
-    "slug": "astropy-vulnerability-enables-potential-arbitrary-68cee531",
-    "title": "Astropy Vulnerability Enables Potential Arbitrary Code Execution",
-    "summary": "Ubuntu reports a flaw in Astropy where the savelayout argument is not validated, allowing untrusted input to trigger arbitrary code execution during graph saving. The vulnerability could enable attackers to run malicious code on systems that import Astropy data, potentially compromising the host. Ubuntu advises updating to the patched Astropy package or applying the security update to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9133-1",
-    "publishedAt": "2026-11-17T16:58:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "astropy-vulnerability-enables-potential-arbitrary",
-      "article-68cee531",
-      "68cee531",
-      "astropy-vulnerability-enables-potential-arbitrary-7e7a3b",
-      "astropy-vulnerability-enables-potential-arbitrary-code-execu"
-    ]
-  },
-  {
-    "slug": "themailer-enables-ai-powered-phishing-campaigns-db224c53",
-    "title": "TheMailer Enables AI-Powered Phishing Campaigns",
-    "summary": "Varonis Threat Labs uncovered TheMailer, a phishing platform that uses Claude and ChatGPT APIs to automate lure creation, template tweaking, delivery testing, and reply handling. Operators supply their own API keys, enabling rapid, AI-driven social engineering attacks against targeted email users. Security teams should monitor outbound email for anomalous patterns, enforce strict API key policies, and deploy AI-based email filtering.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/themailer-ai-phishing-platform/",
-    "publishedAt": "2026-11-17T16:54:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "themailer-enables-ai-powered-phishing-campaigns",
-      "article-db224c53",
-      "db224c53",
-      "themailer-enables-ai-powered-phishing-campaigns-36ee6e"
-    ]
-  },
-  {
-    "slug": "gitlab-vulnerabilities-prompt-patch-release-5a2ec8a9",
-    "title": "GitLab Vulnerabilities Prompt Patch Release",
-    "summary": "GitLab disclosed multiple vulnerabilities affecting versions prior to 19.3.9, 19.4.8, and 19.5.6 that could allow attackers to compromise repository integrity or execute unauthorized code. The advisory does not list specific CVE identifiers but recommends applying the latest patch releases to mitigate potential exploitation. Administrators should update to GitLab 19.5.6, 19.4.8, or 19.3.9 and review release notes for additional security guidance.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/gitlab-security-advisory-av26-1168",
-    "publishedAt": "2026-11-17T16:42:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gitlab-vulnerabilities-prompt-patch-release",
-      "article-5a2ec8a9",
-      "5a2ec8a9",
-      "gitlab-vulnerabilities-prompt-patch-release-4ddfa9"
-    ]
-  },
-  {
-    "slug": "nsa-net-faces-unspecified-disruptions-technicians-b6d9e8a6",
-    "title": "NSA Net Faces Unspecified Disruptions, Technicians Restore Network",
-    "summary": "NSA’s classified internal network, NSA Net, has suffered unspecified disruptions, leading the agency to schedule staggered arrivals at Fort Meade for restoration. The outage temporarily impairs connectivity within the network, potentially affecting classified communications and operational readiness. Technicians are diagnosing the root cause and working to restore full functionality, with no public disclosure of the technical details.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/nsa-net-disruptions",
-    "publishedAt": "2026-11-17T16:21:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nsa-net-faces-unspecified-disruptions-technicians",
-      "article-b6d9e8a6",
-      "b6d9e8a6",
-      "nsa-net-faces-unspecified-disruptions-technicians-1a0ee8",
-      "nsa-net-faces-unspecified-disruptions-technicians-restore-ne"
-    ]
-  },
-  {
-    "slug": "zyxel-firmware-vulnerabilities-expose-command-inje-60704b0c",
-    "title": "Zyxel Firmware Vulnerabilities Expose Command Injection",
-    "summary": "Zyxel disclosed out-of-bounds write and post-authentication command injection flaws in DX3300-T0, DX3301-T0, and EX3301-T0 firmware versions up to 5.50(ABVY.8.3)C0. The vulnerabilities allow authenticated attackers to execute arbitrary commands on affected DSL/Ethernet CPE, Fiber ONTs, and Wireless Extenders, potentially compromising network control.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/zyxel-security-advisory-av26-1167",
-    "publishedAt": "2026-11-17T16:20:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zyxel-firmware-vulnerabilities-expose-command-inje",
-      "article-60704b0c",
-      "60704b0c",
-      "zyxel-firmware-vulnerabilities-expose-command-inje-5bfe2d",
-      "zyxel-firmware-vulnerabilities-expose-command-injection"
-    ]
-  },
-  {
-    "slug": "critical-java-vulnerability-cve-2026-114938-requir-77de3059",
-    "title": "Critical Java Vulnerability CVE-2026-114938 Requires Immediate Patching",
-    "summary": "Oracle's Java 17 vulnerability CVE-2026-114938, dubbed Java4Shell, allows unauthenticated remote code execution via a memory-corruption flaw in the Base64 decoder of the HotSpot JVM. The flaw can compromise any system running OpenJDK 17.0.6 or newer, enabling attackers to execute arbitrary code. Immediate patching of all affected Java SE releases is mandatory to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/java-17-rce-vulnerability/",
-    "publishedAt": "2026-11-17T16:11:10.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching"
-      }
-    ],
-    "aliases": [
-      "critical-java-vulnerability-cve-2026-114938-requir",
-      "article-77de3059",
-      "77de3059",
-      "critical-java-vulnerability-cve-2026-114938-requir-4039b5",
-      "critical-java-vulnerability-cve-2026-114938-requires-immedia"
-    ]
-  },
-  {
-    "slug": "microsoft-discloses-ntlm-spoofing-cve-1c87cfb8",
-    "title": "Microsoft Discloses NTLM Spoofing CVE",
-    "summary": "Microsoft disclosed CVE-2026-121680, a Windows NTLM spoofing vulnerability that could allow attackers to impersonate legitimate users during authentication. The flaw arises from improper validation of NTLM challenge responses, potentially enabling credential replay without requiring user interaction. Microsoft has issued an informational update; no patch is required, but users should monitor for future security advisories.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121680",
-    "publishedAt": "2026-11-17T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-121680"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-discloses-ntlm-spoofing-cve",
-      "article-1c87cfb8",
-      "1c87cfb8",
-      "microsoft-discloses-ntlm-spoofing-cve-1fde27"
     ]
   }
 ];
