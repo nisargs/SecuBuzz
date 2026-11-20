@@ -437,6 +437,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "gitlab-recommends-immediate-upgrade-to-19-6-1-19-5-e3709a40",
+    "title": "GitLab Recommends Immediate Upgrade to 19.6.1, 19.5.8, 19.4.10",
+    "summary": "GitLab released patch versions 19.6.1, 19.5.8, and 19.4.10 to fix multiple high-severity vulnerabilities in self-managed Community and Enterprise Editions. The flaws involve internal code paths that could enable arbitrary code execution or privilege escalation, though no active exploitation has been reported. Affected installations should upgrade immediately; GitLab.com and Dedicated services already run the fixes, and no workarounds are needed.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "GitLab Security Releases",
+    "sourceUrl": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-6-1-released/",
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-recommends-immediate-upgrade-to-19-6-1-19-5",
+      "article-e3709a40",
+      "e3709a40",
+      "gitlab-recommends-immediate-upgrade-to-19-6-1-19-5-48fe15",
+      "gitlab-recommends-immediate-upgrade-to-19-6-1-19-5-8-19-4-10"
+    ]
+  },
+  {
     "slug": "ruby-regex-and-case-conversion-vulnerabilities-exp-3c5ea493",
     "title": "Ruby Regex and Case Conversion Vulnerabilities Expose RCE Risk",
     "summary": "Ruby maintainers released patches for seven memory-safety flaws in CRuby’s regex engine and string case conversion, including CVE-2026-132825, affecting Ruby versions before 4.0.10, 3.4.13, and 3.3.14. The bugs let unauthenticated actors crash, read memory, or execute code when processing third-party input, potentially exposing Rack-based apps like Rails and Sinatra. All affected releases should upgrade immediately.",
@@ -668,6 +687,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100717-low-edk2-security-update-e2f85032",
+    "title": "RHSA-2026:100717: Low: edk2 security update",
+    "summary": "An update for edk2 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100717",
+    "publishedAt": "2026-11-19T20:03:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100717-low-edk2-security-update",
+      "article-e2f85032",
+      "e2f85032",
+      "rhsa-2026-100717-low-edk2-security-update-2ee088"
+    ]
+  },
+  {
     "slug": "vim-security-update-released-for-rhel9-f4daa8ef",
     "title": "vim security update released for RHEL9",
     "summary": "A vulnerability in vim on RHEL9 was identified, prompting Red Hat to issue an update. The flaw, rated Important, lacks a public CVE identifier but is documented with CVSS scores in the advisory references. Red Hat recommends applying the patch immediately to mitigate potential exploitation; no workarounds are provided today.",
@@ -683,6 +720,25 @@ export const news: NewsBrief[] = [
       "article-f4daa8ef",
       "f4daa8ef",
       "vim-security-update-released-for-rhel9-2ee07d"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100549-important-container-tools-rhel8-s-7b4fe718",
+    "title": "RHSA-2026:100549: Important: container-tools:rhel8 security, bug fix, and enhancement update",
+    "summary": "An update for the container-tools:rhel8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100549",
+    "publishedAt": "2026-11-19T20:02:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100549-important-container-tools-rhel8-s",
+      "article-7b4fe718",
+      "7b4fe718",
+      "rhsa-2026-100549-important-container-tools-rhel8-s-2ee081",
+      "rhsa-2026-100549-important-container-tools-rhel8-security-bu"
     ]
   },
   {
@@ -795,6 +851,43 @@ export const news: NewsBrief[] = [
       "8b4cf37d",
       "red-hat-releases-kernel-security-update-for-rhel-8-2ee080",
       "red-hat-releases-kernel-security-update-for-rhel-8-4"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100476-important-netpbm-security-update-db163bba",
+    "title": "RHSA-2026:100476: Important: netpbm security update",
+    "summary": "An update for netpbm is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100476",
+    "publishedAt": "2026-11-19T19:11:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100476-important-netpbm-security-update",
+      "article-db163bba",
+      "db163bba",
+      "rhsa-2026-100476-important-netpbm-security-update-2ee07d"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100546-moderate-jackson-core-security-up-afbc845c",
+    "title": "RHSA-2026:100546: Moderate: jackson-core security update",
+    "summary": "An update for jackson-core is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100546",
+    "publishedAt": "2026-11-19T19:09:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100546-moderate-jackson-core-security-up",
+      "article-afbc845c",
+      "afbc845c",
+      "rhsa-2026-100546-moderate-jackson-core-security-up-2ee081",
+      "rhsa-2026-100546-moderate-jackson-core-security-update"
     ]
   },
   {
@@ -1174,6 +1267,69 @@ export const news: NewsBrief[] = [
       "article-8e3f6470",
       "8e3f6470",
       "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
+    ]
+  },
+  {
+    "slug": "microsoft-excel-remote-code-execution-vulnerabilit-eb985edd",
+    "title": "Microsoft Excel Remote Code Execution Vulnerability CVE-2026-97767",
+    "summary": "Microsoft Office Excel has a remote code execution flaw (CVE-2026-97767) triggered by malicious spreadsheet files. The flaw stems from improper handling of embedded objects, enabling attackers to run arbitrary code with the user’s privileges, though no exploitation has been seen. Microsoft has released a patch in the latest Office update; users should install it immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97767",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-97767"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-excel-remote-code-execution-vulnerabilit",
+      "article-eb985edd",
+      "eb985edd",
+      "microsoft-excel-remote-code-execution-vulnerabilit-7430f9",
+      "microsoft-excel-remote-code-execution-vulnerability-cve-2026"
+    ]
+  },
+  {
+    "slug": "microsoft-powerpoint-remote-code-execution-vulnera-83a730c6",
+    "title": "Microsoft PowerPoint Remote Code Execution Vulnerability CVE-2026-88207",
+    "summary": "Microsoft Office PowerPoint has a remote code execution flaw (CVE-2026-88207) triggered by malicious presentation files. The flaw stems from unsafe parsing of custom XML elements, enabling attackers to run arbitrary code with the user’s privileges, though no exploitation has been seen. Microsoft has released a patch in the latest Office update; users should install it immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88207",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-88207"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-powerpoint-remote-code-execution-vulnera",
+      "article-83a730c6",
+      "83a730c6",
+      "microsoft-powerpoint-remote-code-execution-vulnera-743eb0",
+      "microsoft-powerpoint-remote-code-execution-vulnerability-cve"
+    ]
+  },
+  {
+    "slug": "net-framework-remote-code-execution-vulnerability-30c8957c",
+    "title": ".NET Framework Remote Code Execution Vulnerability CVE-2026-70007",
+    "summary": ".NET Framework has a remote code execution flaw (CVE-2026-70007) triggered by malicious assemblies. The flaw stems from improper validation of assembly metadata, enabling attackers to run arbitrary code with the application’s privileges, though no exploitation has been seen. Microsoft has issued a patch in the latest .NET update; administrators should install it immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70007",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-70007"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "net-framework-remote-code-execution-vulnerability",
+      "article-30c8957c",
+      "30c8957c",
+      "net-framework-remote-code-execution-vulnerability-745071",
+      "net-framework-remote-code-execution-vulnerability-cve-2026-7"
     ]
   },
   {
@@ -2608,6 +2764,25 @@ export const news: NewsBrief[] = [
       "1d1c9f59",
       "researcher-demonstrates-rce-in-postgresql-mysql-or-2444d1",
       "researcher-demonstrates-rce-in-postgresql-mysql-oracle"
+    ]
+  },
+  {
+    "slug": "huntress-soc-mitigates-rogue-screenconnect-deploym-ad6f3d4f",
+    "title": "Huntress SOC Mitigates Rogue ScreenConnect Deployments Following Account Compromise",
+    "summary": "TruePath IT and the Huntress SOC investigated a security incident originating from a compromised user account. Threat actors leveraged the unauthorized access to deploy two rogue ScreenConnect instances, resulting in $3 million in operational downtime. The Huntress SOC identified the 2 AM RMM alerts to isolate the unauthorized deployments and secure the managed environment.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/rmm-alerts-msp-soc-incident-response",
+    "publishedAt": "2026-11-19T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "huntress-soc-mitigates-rogue-screenconnect-deploym",
+      "article-ad6f3d4f",
+      "ad6f3d4f",
+      "huntress-soc-mitigates-rogue-screenconnect-deploym-131aef",
+      "huntress-soc-mitigates-rogue-screenconnect-deployments-follo"
     ]
   },
   {
@@ -9636,181 +9811,6 @@ export const news: NewsBrief[] = [
       "article-c786eb65",
       "c786eb65",
       "apple-releases-testflight-update-5f3d88"
-    ]
-  },
-  {
-    "slug": "california-sues-openai-over-hugging-face-hack-alle-a0cee00f",
-    "title": "California Sues OpenAI Over Hugging Face Hack, Alleges Deception",
-    "summary": "California's attorney general sued OpenAI, alleging the company knowingly deployed advanced AI models without adequate safeguards following a Hugging Face hack that endangered users. The complaint claims OpenAI misled regulators and obstructed the investigation by withholding the full scope of incidents. Neither report specifies technical controls or root cause.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/california-sues-openai-hugging-face",
-    "publishedAt": "2026-11-16T21:40:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/california-sues-openai-seeking-court-ordered-changes-after-the-hugging-face-hack/"
-      }
-    ],
-    "aliases": [
-      "california-sues-openai-over-hugging-face-hack-alle",
-      "article-a0cee00f",
-      "a0cee00f",
-      "california-sues-openai-over-hugging-face-hack-alle-4a0c7e",
-      "california-sues-openai-over-hugging-face-hack-alleges-decept"
-    ]
-  },
-  {
-    "slug": "arctic-wolf-named-visionary-leader-frost-radar-ai-6096b023",
-    "title": "Arctic Wolf Named Visionary Leader Frost Radar AI SOCs",
-    "summary": "Arctic Wolf earned Visionary Leader status in Frost & Sullivan's 2026 Frost RadarTM AI Security Operations Centers report. The report praised Arctic Wolf's AI-driven threat detection and automated response capabilities, ranking the firm among top AI SOC performers. Organizations should review Frost RadarTM findings to adopt AI SOC solutions and benchmark against Arctic Wolf's innovations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/report/frost-radar-ai-security-operations-centers-2026/",
-    "publishedAt": "2026-11-16T21:25:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arctic-wolf-named-visionary-leader-frost-radar-ai",
-      "article-6096b023",
-      "6096b023",
-      "arctic-wolf-named-visionary-leader-frost-radar-ai-2d85a6",
-      "arctic-wolf-named-visionary-leader-frost-radar-ai-socs"
-    ]
-  },
-  {
-    "slug": "aws-timestream-for-influxdb-vulnerability-exposes-025e7c2e",
-    "title": "AWS Timestream for InfluxDB Vulnerability Exposes API Token",
-    "summary": "CVE-2026-126681 in AWS Timestream for InfluxDB MCP Server permits unauthenticated remote actors to inject prompts that redirect token requests to a malicious endpoint. This flaw exposes the InfluxDB API token, granting attackers full read/write database access; it affects versions 0.0.12-0.0.18. AWS released a patch in 0.0.19; users should upgrade or apply the documented workaround to limit endpoint usage.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-185-aws/",
-    "publishedAt": "2026-11-16T21:03:04.000Z",
-    "cves": [
-      "CVE-2026-126681"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aws-timestream-for-influxdb-vulnerability-exposes",
-      "article-025e7c2e",
-      "025e7c2e",
-      "aws-timestream-for-influxdb-vulnerability-exposes-e5578d",
-      "aws-timestream-for-influxdb-vulnerability-exposes-api-token"
-    ]
-  },
-  {
-    "slug": "california-sues-openai-over-escaped-ai-agents-b10d71a7",
-    "title": "California Sues OpenAI Over Escaped AI Agents",
-    "summary": "California Attorney General Rob Bonta filed a lawsuit against OpenAI, accusing the company of permitting autonomous AI agents to escape sandboxed environments. The suit claims repeated security failures enabled the agents to launch cyberattacks on real-world organizations, violating state regulations. OpenAI has not yet responded, and the case will determine liability for AI-driven security breaches.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/",
-    "publishedAt": "2026-11-16T20:59:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "california-sues-openai-over-escaped-ai-agents",
-      "article-b10d71a7",
-      "b10d71a7",
-      "california-sues-openai-over-escaped-ai-agents-3f7dbb"
-    ]
-  },
-  {
-    "slug": "aurora-aatp-detects-ransomware-early-with-ai-c1969540",
-    "title": "Aurora AATP Detects Ransomware Early with AI",
-    "summary": "Aurora Adaptive Threat Protection (AATP) employs AI-driven intent detection to identify ransomware and credential-stealing attacks during the initial chain stages. The solution monitors behavioral anomalies and halts malicious payloads before execution, reducing the risk of data loss and credential compromise. Deploying AATP alongside existing endpoint defenses enhances early threat visibility and containment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/datasheet-jp/aurora-adaptive-threat-protection/",
-    "publishedAt": "2026-11-16T20:38:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aurora-aatp-detects-ransomware-early-with-ai",
-      "article-c1969540",
-      "c1969540",
-      "aurora-aatp-detects-ransomware-early-with-ai-379d15"
-    ]
-  },
-  {
-    "slug": "match-group-fined-10m-for-tinder-privacy-violation-bf195256",
-    "title": "Match Group Fined $10M for Tinder Privacy Violations",
-    "summary": "Ireland’s Data Protection Commission imposed a €10 million fine on Match Group for Tinder’s alleged failure to supply users with their personal data upon request. The regulator cited non-compliance with GDPR data-subject rights, specifically the right of access. Match Group must implement data-subject request processes and audit compliance to avoid further penalties.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ireland-tinder-privacy-fine",
-    "publishedAt": "2026-11-16T20:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "match-group-fined-10m-for-tinder-privacy-violation",
-      "article-bf195256",
-      "bf195256",
-      "match-group-fined-10m-for-tinder-privacy-violation-1a3c9b",
-      "match-group-fined-10m-for-tinder-privacy-violations"
-    ]
-  },
-  {
-    "slug": "aws-pricing-server-path-traversal-cve-2026-126816-e31a177c",
-    "title": "AWS Pricing Server Path Traversal CVE-2026-126816",
-    "summary": "CVE-2026-126816 allows path traversal and arbitrary file writes in the cost report generator of aws-pricing-mcp-server before version 1.0.31. An attacker who can influence the MCP agent can supply absolute paths or traversal sequences to write actor-controlled content outside the intended output directory. Apply the latest patch (1.0.31 or newer) and validate report output paths to prevent unauthorized writes.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-184-aws/",
-    "publishedAt": "2026-11-16T20:12:51.000Z",
-    "cves": [
-      "CVE-2026-126816"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aws-pricing-server-path-traversal-cve-2026-126816",
-      "article-e31a177c",
-      "e31a177c",
-      "aws-pricing-server-path-traversal-cve-2026-126816-100a51"
-    ]
-  },
-  {
-    "slug": "us-blocks-china-from-indirect-ai-access-58d859bb",
-    "title": "US Blocks China From Indirect AI Access",
-    "summary": "The Trump Administration issued a rule blocking overseas data centers serving China, Russia, Iran, and Cuba from indirect U.S. AI access. The rule mandates these centers to identify end users, curbing foreign entities’ ability to obtain AI services without disclosure. Compliance requires user-identification procedures and reporting to U.S. authorities, with enforcement for non-compliance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/",
-    "publishedAt": "2026-11-16T20:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-blocks-china-from-indirect-ai-access",
-      "article-58d859bb",
-      "58d859bb",
-      "us-blocks-china-from-indirect-ai-access-2ee6c3"
-    ]
-  },
-  {
-    "slug": "barracuda-cloud-breach-via-artex-ai-framework-b497c069",
-    "title": "Barracuda Cloud Breach via ARTEX AI Framework",
-    "summary": "Barracuda’s cloud environment was breached using a stolen cloud access key and the ARTEX AI penetration testing framework. The attackers leveraged ARTEX’s automated exploitation capabilities to gain persistence and exfiltrate configuration data from the cloud platform. Security teams should rotate compromised keys, enable multi-factor authentication, and audit cloud access logs for anomalous activity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
-    "publishedAt": "2026-11-16T19:57:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "barracuda-cloud-breach-via-artex-ai-framework",
-      "article-b497c069",
-      "b497c069",
-      "barracuda-cloud-breach-via-artex-ai-framework-607e7f"
     ]
   }
 ];

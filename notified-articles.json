@@ -5726,5 +5726,14 @@
   "https://www.helpnetsecurity.com/2026/11/20/ai-prompt-injection-red-team/",
   "https://www.helpnetsecurity.com/2026/11/20/security-dashboards-tips-video/",
   "https://access.redhat.com/errata/RHSA-2026:100482",
-  "https://access.redhat.com/errata/RHSA-2026:100485"
+  "https://access.redhat.com/errata/RHSA-2026:100485",
+  "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-6-1-released/",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97767",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88207",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70007",
+  "https://access.redhat.com/errata/RHSA-2026:100717",
+  "https://access.redhat.com/errata/RHSA-2026:100549",
+  "https://www.huntress.com/blog/rmm-alerts-msp-soc-incident-response",
+  "https://access.redhat.com/errata/RHSA-2026:100546",
+  "https://access.redhat.com/errata/RHSA-2026:100476"
 ]

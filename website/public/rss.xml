@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 07:47:11 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 08:47:03 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>JPMorgan Visa Mastercard Cite Third-Party Data Leak</title>
@@ -179,6 +179,15 @@
       <category>Nation State</category>
     </item>
     <item>
+      <title>GitLab Recommends Immediate Upgrade to 19.6.1, 19.5.8, 19.4.10</title>
+      <link>https://secubuzz.com/news/gitlab-recommends-immediate-upgrade-to-19-6-1-19-5-e3709a40</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-recommends-immediate-upgrade-to-19-6-1-19-5-e3709a40</guid>
+      <description><![CDATA[GitLab released patch versions 19.6.1, 19.5.8, and 19.4.10 to fix multiple high-severity vulnerabilities in self-managed Community and Enterprise Editions. The flaws involve internal code paths that could enable arbitrary code execution or privilege escalation, though no active exploitation has been reported. Affected installations should upgrade immediately; GitLab.com and Dedicated services already run the fixes, and no workarounds are needed.]]></description>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-6-1-released/">GitLab Security Releases</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Ruby Regex and Case Conversion Vulnerabilities Expose RCE Risk</title>
       <link>https://secubuzz.com/news/ruby-regex-and-case-conversion-vulnerabilities-exp-3c5ea493</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ruby-regex-and-case-conversion-vulnerabilities-exp-3c5ea493</guid>
@@ -287,12 +296,30 @@
       <category>General</category>
     </item>
     <item>
+      <title>RHSA-2026:100717: Low: edk2 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100717-low-edk2-security-update-e2f85032</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100717-low-edk2-security-update-e2f85032</guid>
+      <description><![CDATA[An update for edk2 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 19 Nov 2026 20:03:41 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100717">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>vim security update released for RHEL9</title>
       <link>https://secubuzz.com/news/vim-security-update-released-for-rhel9-f4daa8ef</link>
       <guid isPermaLink="true">https://secubuzz.com/news/vim-security-update-released-for-rhel9-f4daa8ef</guid>
       <description><![CDATA[A vulnerability in vim on RHEL9 was identified, prompting Red Hat to issue an update. The flaw, rated Important, lacks a public CVE identifier but is documented with CVSS scores in the advisory references. Red Hat recommends applying the patch immediately to mitigate potential exploitation; no workarounds are provided today.]]></description>
       <pubDate>Thu, 19 Nov 2026 20:03:41 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100487">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100549: Important: container-tools:rhel8 security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100549-important-container-tools-rhel8-s-7b4fe718</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100549-important-container-tools-rhel8-s-7b4fe718</guid>
+      <description><![CDATA[An update for the container-tools:rhel8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 19 Nov 2026 20:02:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100549">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -347,6 +374,24 @@
       <description><![CDATA[Red Hat issued a kernel security update for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support, addressing multiple critical vulnerabilities. The advisory references several CVE identifiers, each with a CVSS base score, but no active exploitation reports were disclosed. Administrators should apply the update promptly, verify kernel integrity, and monitor for any anomalous kernel behavior.]]></description>
       <pubDate>Thu, 19 Nov 2026 19:16:25 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100517">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100476: Important: netpbm security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100476-important-netpbm-security-update-db163bba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100476-important-netpbm-security-update-db163bba</guid>
+      <description><![CDATA[An update for netpbm is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 19 Nov 2026 19:11:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100476">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100546: Moderate: jackson-core security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100546-moderate-jackson-core-security-up-afbc845c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100546-moderate-jackson-core-security-up-afbc845c</guid>
+      <description><![CDATA[An update for jackson-core is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 19 Nov 2026 19:09:03 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100546">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -410,51 +455,6 @@
       <description><![CDATA[PHP Group identified security flaws in PHP versions prior to 8.6.0, including 8.5.13, 8.4.28, 8.3.37, and 8.2.36. The advisory does not list a CVE identifier, but the vulnerabilities could enable unauthorized code execution or data leakage. Administrators should apply the latest PHP 8.x patch or update as recommended in the Cyber Centre link to mitigate risk.]]></description>
       <pubDate>Thu, 19 Nov 2026 18:33:33 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/php-group-security-advisory-av26-1183">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PHP Foundation Releases Security Fixes for 8.2-8.5</title>
-      <link>https://secubuzz.com/news/php-foundation-releases-security-fixes-for-8-2-8-5-63932e70</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-foundation-releases-security-fixes-for-8-2-8-5-63932e70</guid>
-      <description><![CDATA[PHP Foundation released security updates for PHP 8.2-8.5 addressing 17 issues across engine, extensions, and stream wrappers. The flaws involve the PHP engine, PHP-FPM, CGI binary, SOAP, Phar, session, DOM, date extensions, HTTP/FTP wrappers, and RFC 3986 URI implementation, but no public exploit is reported. AWS recommends applying the patched versions 8.2.36, 8.3.37, 8.4.28, and 8.5.13 as the sole remediation.]]></description>
-      <pubDate>Thu, 19 Nov 2026 18:30:09 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-190-aws/">AWS Security Bulletins</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ubiquiti UniFi Access Vulnerabilities Pre-4.3.24</title>
-      <link>https://secubuzz.com/news/ubiquiti-unifi-access-vulnerabilities-pre-4-3-24-f6faa93c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubiquiti-unifi-access-vulnerabilities-pre-4-3-24-f6faa93c</guid>
-      <description><![CDATA[Ubiquiti disclosed security weaknesses in its UniFi Access Application versions before 4.3.24, exposing the software to potential exploitation via unspecified input vectors. Without a CVE ID, the flaws could let attackers manipulate configuration or session data, enabling unauthorized access. Administrators should review the advisory and apply any available firmware or software updates promptly to mitigate the risk.]]></description>
-      <pubDate>Thu, 19 Nov 2026 18:28:56 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/ubiquiti-security-advisory-av26-1182">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>JetBrains TeamCity Vulnerabilities Pre-2026.2.1</title>
-      <link>https://secubuzz.com/news/jetbrains-teamcity-vulnerabilities-pre-2026-2-1-a278e213</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/jetbrains-teamcity-vulnerabilities-pre-2026-2-1-a278e213</guid>
-      <description><![CDATA[JetBrains identified security weaknesses in its TeamCity product versions before 2026.2.1 and 2026.1.5, potentially exposing the CI/CD platform to exploitation. Without CVE IDs, the flaws could let attackers gain unauthorized access or disrupt builds via input validation errors. JetBrains urges users to review the advisory links and apply any available updates to secure the environment.]]></description>
-      <pubDate>Thu, 19 Nov 2026 18:24:30 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1181">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>TfL Data Breach Exposes 265,000 Oyster Card Users</title>
-      <link>https://secubuzz.com/news/tfl-data-breach-exposes-265-000-oyster-card-users-62eda7bc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tfl-data-breach-exposes-265-000-oyster-card-users-62eda7bc</guid>
-      <description><![CDATA[Transport for London reported that approximately 265,000 Oyster photocard customers may have had their account details exposed in a data breach. The breach potentially compromised usernames, passwords, and personal information, though the extent of credential theft or misuse remains unconfirmed. TfL urges affected users to monitor accounts, change passwords, and review security settings while the investigation continues.]]></description>
-      <pubDate>Thu, 19 Nov 2026 18:20:01 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>CraftCMS Vulnerability in Versions Pre-5.11.5 Disclosed</title>
-      <link>https://secubuzz.com/news/craftcms-vulnerability-in-versions-pre-5-11-5-disc-b7076f94</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/craftcms-vulnerability-in-versions-pre-5-11-5-disc-b7076f94</guid>
-      <description><![CDATA[The Canadian Centre for Cyber Security disclosed a vulnerability in CraftCMS versions before 5.11.5 on November 18, 2026. The flaw, detailed on the CraftCMS GitHub repository, may allow attackers to exploit weaknesses in the CMS code, potentially enabling unauthorized access or data exposure. Administrators should review the advisory and apply any available updates to secure affected installations.]]></description>
-      <pubDate>Thu, 19 Nov 2026 18:19:24 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/craftcms-security-advisory-av26-1180">Canadian Centre for Cyber Security</source>
       <category>Vulnerability</category>
     </item>
   </channel>
