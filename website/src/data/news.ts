@@ -11,6 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ruby-patches-ruby2shell-heap-overflow-vulnerabilit-3bb20701",
+    "title": "Ruby Patches Ruby2Shell Heap Overflow Vulnerability",
+    "summary": "Ruby patched the Ruby2Shell heap-based buffer overflow that could enable remote code execution in Ruby applications. The flaw, tracked as CVE-2026-132825, allows attackers to corrupt heap memory and execute arbitrary code, potentially compromising any process running Ruby without authentication. Ruby released patch 3.2.2.1, and users should update immediately or apply the provided workaround to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/",
+    "publishedAt": "2026-11-20T10:34:10.000Z",
+    "cves": [
+      "CVE-2026-132825"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ruby-patches-ruby2shell-heap-overflow-vulnerabilit",
+      "article-3bb20701",
+      "3bb20701",
+      "ruby-patches-ruby2shell-heap-overflow-vulnerabilit-7a0697",
+      "ruby-patches-ruby2shell-heap-overflow-vulnerability"
+    ]
+  },
+  {
     "slug": "microsoft-releases-windows-11-kb5132057-update-b07486ca",
     "title": "Microsoft Releases Windows 11 KB5132057 Update",
     "summary": "Microsoft released the KB5132057 November Windows 11 preview update, addressing 28 changes across the operating system. The update includes enhancements to Windows Search, Windows Hello, and the Run dialog, along with other minor bug fixes. Security teams should install the patch via Windows Update or manual download to maintain system stability and security.",
@@ -851,6 +872,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-python-urllib3-security-update-e85bf29e",
+    "title": "Red Hat Issues Python-urllib3 Security Update",
+    "summary": "Python-urllib3 library in RHEL 8.6 receives a security update for both Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The update addresses multiple vulnerabilities identified by Red Hat Product Security, each with a CVSS base score listed in the CVE references. Red Hat recommends applying the update immediately via the standard package manager; no workarounds are provided.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100503",
+    "publishedAt": "2026-11-19T19:59:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-python-urllib3-security-update",
+      "article-e85bf29e",
+      "e85bf29e",
+      "red-hat-issues-python-urllib3-security-update-2ee080"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-xorg-x11-server-update-5e57708a",
+    "title": "Red Hat Issues Xorg-X11 Server Update",
+    "summary": "Xorg-X11 server in RHEL 8.8 receives a security update for both SAP Solutions Update Services and Telecommunications Update Service. The update patches multiple vulnerabilities identified by Red Hat Product Security, each with a CVSS base score provided in the CVE references. Red Hat advises applying the update promptly through the standard package manager; no additional workarounds are required.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100499",
+    "publishedAt": "2026-11-19T19:59:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-xorg-x11-server-update",
+      "article-5e57708a",
+      "5e57708a",
+      "red-hat-issues-xorg-x11-server-update-2ee07e"
+    ]
+  },
+  {
     "slug": "seven-critical-php-flaws-expose-rce-risks-7dbeb1d4",
     "title": "Seven Critical PHP Flaws Expose RCE Risks",
     "summary": "Seven critical PHP flaws that enable remote code execution have been identified, prompting a patch release from the PHP development team. Exploitability depends on server configuration, with some flaws requiring authenticated access or specific input handling, and no widespread exploitation has been reported. Administrators should apply the latest PHP patch immediately and review configuration settings to mitigate potential exploitation.",
@@ -960,6 +1017,44 @@ export const news: NewsBrief[] = [
       "8b4cf37d",
       "red-hat-releases-kernel-security-update-for-rhel-8-2ee080",
       "red-hat-releases-kernel-security-update-for-rhel-8-4"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100500-important-python-urllib3-security-64f6a192",
+    "title": "RHSA-2026:100500: Important: python-urllib3 security update",
+    "summary": "An update for python-urllib3 is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100500",
+    "publishedAt": "2026-11-19T19:14:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100500-important-python-urllib3-security",
+      "article-64f6a192",
+      "64f6a192",
+      "rhsa-2026-100500-important-python-urllib3-security-2ee080",
+      "rhsa-2026-100500-important-python-urllib3-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100544-moderate-jackson-core-security-up-bb9f299c",
+    "title": "RHSA-2026:100544: Moderate: jackson-core security update",
+    "summary": "An update for jackson-core is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100544",
+    "publishedAt": "2026-11-19T19:12:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100544-moderate-jackson-core-security-up",
+      "article-bb9f299c",
+      "bb9f299c",
+      "rhsa-2026-100544-moderate-jackson-core-security-up-2ee081",
+      "rhsa-2026-100544-moderate-jackson-core-security-update"
     ]
   },
   {
@@ -2493,6 +2588,24 @@ export const news: NewsBrief[] = [
       "2278081c",
       "apache-roller-axis-flaws-exploited-in-confluence-a-ebd020",
       "apache-roller-axis-flaws-exploited-in-confluence-attacks"
+    ]
+  },
+  {
+    "slug": "open-weight-ai-governance-gap-and-mitigation-b349f721",
+    "title": "Open-Weight AI Governance Gap and Mitigation",
+    "summary": "Open-weight AI adoption grows due to lower costs, enhanced data privacy, and increased control. However, many organizations fail to address the associated risks, creating a governance gap that exposes them to data misuse, model bias, and compliance violations. Industry experts recommend establishing risk frameworks, implementing oversight mechanisms, and adopting best-practice guidelines to mitigate potential threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/the-governance-gap-in-open-weight-ai-and-what-to-do-about-it/",
+    "publishedAt": "2026-11-19T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "open-weight-ai-governance-gap-and-mitigation",
+      "article-b349f721",
+      "b349f721",
+      "open-weight-ai-governance-gap-and-mitigation-24678a"
     ]
   },
   {
@@ -9674,140 +9787,6 @@ export const news: NewsBrief[] = [
       "article-7b96459e",
       "7b96459e",
       "usn-9004-2-openjdk-25-regression-7e89ac"
-    ]
-  },
-  {
-    "slug": "chase-software-bug-causes-nationwide-banking-outag-767a9992",
-    "title": "Chase Software Bug Causes Nationwide Banking Outages",
-    "summary": "A software bug in JPMorgan Chase’s systems triggered widespread banking outages on November 16, 2026, disrupting account access and payments. The defect prompted complaints at Bank of America, Wells Fargo, U.S. Bank, and Zelle, though separate outages were not confirmed. Chase attributed the disruption to a temporary software issue and is restoring full functionality, but no patch details were released.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/chase-outage-disrupts-bank/",
-    "publishedAt": "2026-11-17T03:05:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chase-software-bug-causes-nationwide-banking-outag",
-      "article-767a9992",
-      "767a9992",
-      "chase-software-bug-causes-nationwide-banking-outag-731297",
-      "chase-software-bug-causes-nationwide-banking-outages"
-    ]
-  },
-  {
-    "slug": "optimizely-supply-chain-attack-injects-malicious-j-f3269b15",
-    "title": "Optimizely Supply Chain Attack Injects Malicious JavaScript into Major Websites",
-    "summary": "Optimizely’s supply-chain compromise injected malicious JavaScript into hundreds of client sites, including CNN, Fox News, BBC, Zoom, Salesforce, and GitLab. The payload exfiltrated cryptocurrency and payment data, leveraged known iOS vulnerabilities, and enabled further malware delivery to visitors’ browsers. Affected customers were urged to verify Optimizely’s integrity, remove injected scripts, update to the platform version, and monitor for suspicious activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
-    "publishedAt": "2026-11-17T02:12:17.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/optimizely-malicious-code-customer-sites"
-      }
-    ],
-    "aliases": [
-      "optimizely-supply-chain-attack-injects-malicious-j",
-      "article-f3269b15",
-      "f3269b15",
-      "optimizely-supply-chain-attack-injects-malicious-j-45d665",
-      "optimizely-supply-chain-attack-injects-malicious-javascript-"
-    ]
-  },
-  {
-    "slug": "optimizely-compromise-injects-malicious-javascript-6cc7b684",
-    "title": "Optimizely Compromise Injects Malicious JavaScript into 178 Sites",
-    "summary": "Optimizely’s web experimentation platform was exploited to inject malicious JavaScript into customer sites, affecting 178 organizations including Zoom, BBC, CNN, Salesforce, and GitLab. The injected code stole cryptocurrency wallets, captured payment data, and exploited iOS flaws to harvest credentials. Optimizely patched the flaw and removed injected code; affected customers must update instances and purge cached JavaScript.",
-    "category": "Breach",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
-    "publishedAt": "2026-11-17T02:12:17.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/optimizely-websites-hijacked/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/optimizely-vulnerability-malicious-javascript/"
-      }
-    ],
-    "aliases": [
-      "optimizely-compromise-injects-malicious-javascript",
-      "article-6cc7b684",
-      "6cc7b684",
-      "optimizely-compromise-injects-malicious-javascript-55c3ad",
-      "optimizely-compromise-injects-malicious-javascript-into-178-"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-november-17th-podcast-release-e8b8b668",
-    "title": "ISC Stormcast: November 17th Podcast Release",
-    "summary": "The ISC Stormcast podcast for Tuesday, November 17th, 2026 is announced with a link to the episode details. The post provides the episode URL and a Creative Commons attribution notice. Listeners can access the broadcast via the provided link and review the content under the non-commercial license daily for security.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33524",
-    "publishedAt": "2026-11-17T02:05:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-november-17th-podcast-release",
-      "article-e8b8b668",
-      "e8b8b668",
-      "isc-stormcast-november-17th-podcast-release-57dd81"
-    ]
-  },
-  {
-    "slug": "crac-jdk-25-auth-flaws-expose-sensitive-data-ed96a5e6",
-    "title": "CRaC JDK 25 Auth Flaws Expose Sensitive Data",
-    "summary": "CRaC JDK 25 and OpenJDK 25 contain authentication and authorization flaws that let unauthenticated remote attackers read or modify sensitive data. The flaws, identified as CVE-2026-114820, CVE-2026-83374, CVE-2026-83376, CVE-2026-91461, and CVE-2026-83378, arise from missing user authentication in security, JSSE, JAAS, and compiler components.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9131-1",
-    "publishedAt": "2026-11-17T01:05:37.000Z",
-    "cves": [
-      "CVE-2026-114820",
-      "CVE-2026-83374",
-      "CVE-2026-83376",
-      "CVE-2026-91461",
-      "CVE-2026-83378"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "crac-jdk-25-auth-flaws-expose-sensitive-data",
-      "article-ed96a5e6",
-      "ed96a5e6",
-      "crac-jdk-25-auth-flaws-expose-sensitive-data-7e7a43"
-    ]
-  },
-  {
-    "slug": "mini-xml-vulnerabilities-enable-dos-and-possible-c-e14d3272",
-    "title": "Mini-XML Vulnerabilities Enable DoS and Possible Code Execution",
-    "summary": "Mini-XML in Ubuntu 16.04 LTS suffers from unbounded recursion during node deletion and writing, potentially causing denial-of-service crashes. Additionally, CVE-2018-20004 exploits incorrect floating-point handling to trigger a stack-based buffer overflow, which could allow arbitrary code execution. Users of Ubuntu 16.04 should apply the latest security updates, and administrators should monitor for abnormal XML processing activity.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9115-1",
-    "publishedAt": "2026-11-17T00:51:50.000Z",
-    "cves": [
-      "CVE-2018-20004"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "mini-xml-vulnerabilities-enable-dos-and-possible-c",
-      "article-e14d3272",
-      "e14d3272",
-      "mini-xml-vulnerabilities-enable-dos-and-possible-c-7e7b1d",
-      "mini-xml-vulnerabilities-enable-dos-and-possible-code-execut"
     ]
   }
 ];

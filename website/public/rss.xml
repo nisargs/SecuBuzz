@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 09:49:56 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 10:46:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ruby Patches Ruby2Shell Heap Overflow Vulnerability</title>
+      <link>https://secubuzz.com/news/ruby-patches-ruby2shell-heap-overflow-vulnerabilit-3bb20701</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ruby-patches-ruby2shell-heap-overflow-vulnerabilit-3bb20701</guid>
+      <description><![CDATA[Ruby patched the Ruby2Shell heap-based buffer overflow that could enable remote code execution in Ruby applications. The flaw, tracked as CVE-2026-132825, allows attackers to corrupt heap memory and execute arbitrary code, potentially compromising any process running Ruby without authentication. Ruby released patch 3.2.2.1, and users should update immediately or apply the provided workaround to mitigate the vulnerability.]]></description>
+      <pubDate>Fri, 20 Nov 2026 10:34:10 GMT</pubDate>
+      <source url="https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Microsoft Releases Windows 11 KB5132057 Update</title>
       <link>https://secubuzz.com/news/microsoft-releases-windows-11-kb5132057-update-b07486ca</link>
@@ -377,6 +386,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Issues Python-urllib3 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-python-urllib3-security-update-e85bf29e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-python-urllib3-security-update-e85bf29e</guid>
+      <description><![CDATA[Python-urllib3 library in RHEL 8.6 receives a security update for both Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The update addresses multiple vulnerabilities identified by Red Hat Product Security, each with a CVSS base score listed in the CVE references. Red Hat recommends applying the update immediately via the standard package manager; no workarounds are provided.]]></description>
+      <pubDate>Thu, 19 Nov 2026 19:59:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100503">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Xorg-X11 Server Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-xorg-x11-server-update-5e57708a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-xorg-x11-server-update-5e57708a</guid>
+      <description><![CDATA[Xorg-X11 server in RHEL 8.8 receives a security update for both SAP Solutions Update Services and Telecommunications Update Service. The update patches multiple vulnerabilities identified by Red Hat Product Security, each with a CVSS base score provided in the CVE references. Red Hat advises applying the update promptly through the standard package manager; no additional workarounds are required.]]></description>
+      <pubDate>Thu, 19 Nov 2026 19:59:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100499">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Seven Critical PHP Flaws Expose RCE Risks</title>
       <link>https://secubuzz.com/news/seven-critical-php-flaws-expose-rce-risks-7dbeb1d4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/seven-critical-php-flaws-expose-rce-risks-7dbeb1d4</guid>
@@ -428,33 +455,6 @@
       <description><![CDATA[Red Hat issued a kernel security update for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support, addressing multiple critical vulnerabilities. The advisory references several CVE identifiers, each with a CVSS base score, but no active exploitation reports were disclosed. Administrators should apply the update promptly, verify kernel integrity, and monitor for any anomalous kernel behavior.]]></description>
       <pubDate>Thu, 19 Nov 2026 19:16:25 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100517">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100497: Important: freerdp security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100497-important-freerdp-security-update-15fea938</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100497-important-freerdp-security-update-15fea938</guid>
-      <description><![CDATA[An update for freerdp is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 19 Nov 2026 19:11:57 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100497">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100529: Important: libXrender security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100529-important-libxrender-security-upd-9a197c31</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100529-important-libxrender-security-upd-9a197c31</guid>
-      <description><![CDATA[An update for libXrender is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 19 Nov 2026 19:11:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100529">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100476: Important: netpbm security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100476-important-netpbm-security-update-db163bba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100476-important-netpbm-security-update-db163bba</guid>
-      <description><![CDATA[An update for netpbm is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 19 Nov 2026 19:11:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100476">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
