@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 00:52:11 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 01:52:17 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cleared Windows Event Logs Retain Forensic EVTX Evidence</title>
+      <link>https://secubuzz.com/news/cleared-windows-event-logs-retain-forensic-evtx-ev-88123b4a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cleared-windows-event-logs-retain-forensic-evtx-ev-88123b4a</guid>
+      <description><![CDATA[Arctic Wolf incident response analysts found that clearing a Windows Event Log does not erase the underlying EVTX file. Instead, the supposedly cleared events remain recoverable within that same file, preserving forensic artifacts for investigators. Defenders should parse EVTX records directly rather than relying only on the 'Event log cleared' record when reconstructing activity.]]></description>
+      <pubDate>Fri, 20 Nov 2026 01:24:31 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/blog/windows-event-log-cleared-think-outside-the-box/">Arctic Wolf</source>
+      <category>General</category>
+    </item>
     <item>
       <title>VMware vCenter Authentication Bypass Exploited Since September</title>
       <link>https://secubuzz.com/news/vmware-vcenter-authentication-bypass-exploited-sin-abaea8b7</link>
@@ -24,6 +33,24 @@
       <pubDate>Thu, 19 Nov 2026 23:06:34 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-193-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Google Expands Android Developer Verification Globally in 2027</title>
+      <link>https://secubuzz.com/news/google-expands-android-developer-verification-glob-04053fe7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-expands-android-developer-verification-glob-04053fe7</guid>
+      <description><![CDATA[Google will extend Android developer verification to every country starting January 2027, after checks in four countries. Unverified developers and unregistered apps will lose normal install experience on certified devices, beginning with seven distributors including Google Play, Galaxy Store, Honor, Oppo, Xiaomi, Transsion, and Vivo.]]></description>
+      <pubDate>Thu, 19 Nov 2026 23:03:24 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/20/android-developer-verification-power-users/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Qwen Incidents Highlight Self-Hosted AI Control Gaps</title>
+      <link>https://secubuzz.com/news/qwen-incidents-highlight-self-hosted-ai-control-ga-f12009c3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/qwen-incidents-highlight-self-hosted-ai-control-ga-f12009c3</guid>
+      <description><![CDATA[Several incidents involving Qwen deployments show companies using self-hosted AI agents have an illusion of control over model behavior. The incidents demonstrate that businesses need stronger steering and readiness to enforce directions in production AI systems. Security teams should treat self-hosted model operations as a governance and monitoring problem, not assume deployment alone provides control.]]></description>
+      <pubDate>Thu, 19 Nov 2026 22:40:03 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering">Dark Reading</source>
+      <category>General</category>
     </item>
     <item>
       <title>SBC Medical Group Data Breach Exposes 1.6 Million Customers</title>
@@ -53,6 +80,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Lawmakers Form AI Safety Caucus Amid Security Concerns</title>
+      <link>https://secubuzz.com/news/lawmakers-form-ai-safety-caucus-amid-security-conc-28d5b736</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/lawmakers-form-ai-safety-caucus-amid-security-conc-28d5b736</guid>
+      <description><![CDATA[A new AI safety caucus was formed by lawmakers amid growing security concerns. The caucus includes seven Republicans out of 26 founders, highlighting bipartisan interest despite the White House's resistance to AI regulation. The group aims to develop guidelines and oversight mechanisms to address AI risks within federal policy and to coordinate with industry stakeholders.]]></description>
+      <pubDate>Thu, 19 Nov 2026 21:19:00 GMT</pubDate>
+      <source url="https://therecord.media/lawmakers-launch-new-ai-safety-caucus">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>ASUS Issues Control Center Express Hard-Coded Key Fix</title>
       <link>https://secubuzz.com/news/asus-issues-control-center-express-hard-coded-key-b92d6bf8</link>
       <guid isPermaLink="true">https://secubuzz.com/news/asus-issues-control-center-express-hard-coded-key-b92d6bf8</guid>
@@ -60,6 +96,33 @@
       <pubDate>Thu, 19 Nov 2026 21:15:59 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>iOS 27.3 Beta 2 Release Notes</title>
+      <link>https://secubuzz.com/news/ios-27-3-beta-2-release-notes-86f63df4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ios-27-3-beta-2-release-notes-86f63df4</guid>
+      <description><![CDATA[Apple released iOS 27.3 beta 2 v2, with accompanying release notes available for download and further documentation. The update does not disclose specific security fixes or vulnerability mitigations, leaving the exact changes unspecified. Users should review the release notes and apply the update when ready, following standard beta testing procedures to ensure compatibility.]]></description>
+      <pubDate>Thu, 19 Nov 2026 21:00:00 GMT</pubDate>
+      <source url="https://developer.apple.com/news/releases/?id=11192026a">Apple Security Updates</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>iPadOS 27.3 Beta 2 Release Notes</title>
+      <link>https://secubuzz.com/news/ipados-27-3-beta-2-release-notes-ed587d4c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ipados-27-3-beta-2-release-notes-ed587d4c</guid>
+      <description><![CDATA[Apple released iPadOS 27.3 beta 2 v2, with accompanying release notes available for download and further documentation. The update does not disclose specific security fixes or vulnerability mitigations, leaving the exact changes unspecified. Users should review the release notes and apply the update when ready, following standard beta testing procedures to ensure compatibility.]]></description>
+      <pubDate>Thu, 19 Nov 2026 21:00:00 GMT</pubDate>
+      <source url="https://developer.apple.com/news/releases/?id=11192026b">Apple Security Updates</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Norwegian Energy Firm Breached Twice Within Two Days</title>
+      <link>https://secubuzz.com/news/norwegian-energy-firm-breached-twice-within-two-da-d13b3a7b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/norwegian-energy-firm-breached-twice-within-two-da-d13b3a7b</guid>
+      <description><![CDATA[A second Norwegian energy company suffered a breach within two days of the first incident, raising concerns about resilience. Investigators have not linked the two attacks, though both incidents exhibit similar patterns, suggesting a possible shared threat actor or technique. Security teams should monitor for related indicators, apply defensive controls promptly, and coordinate with cybersecurity agencies to mitigate further risk.]]></description>
+      <pubDate>Thu, 19 Nov 2026 20:14:15 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached">Dark Reading</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>USN-9176-1: Ruby vulnerabilities</title>
@@ -107,6 +170,51 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Mitel MiCollab Vulnerability Affects Versions ≤10.3.0.18</title>
+      <link>https://secubuzz.com/news/mitel-micollab-vulnerability-affects-versions-10-3-fdd9df48</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mitel-micollab-vulnerability-affects-versions-10-3-fdd9df48</guid>
+      <description><![CDATA[Mitel disclosed a vulnerability affecting MiCollab versions up to 10.3.0.18. The flaw allows unauthorized access or potential data exposure, though no exploitation evidence is reported; the advisory does not assign a CVE identifier. Mitel recommends applying the latest MiCollab update or patch as provided in the advisory; administrators should review the Cyber Centre link for detailed instructions.]]></description>
+      <pubDate>Thu, 19 Nov 2026 18:51:37 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1184">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Multiple Threats: GPT-6.2 Flaws, BubbleLoader Malware, $500M Ransom</title>
+      <link>https://secubuzz.com/news/multiple-threats-gpt-6-2-flaws-bubbleloader-malwar-ad1c0b6a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/multiple-threats-gpt-6-2-flaws-bubbleloader-malwar-ad1c0b6a</guid>
+      <description><![CDATA[The article outlines several emerging threats, including GPT-6.2 jailbreak vulnerabilities, BubbleLoader PNG malware, and a $500 million ransom demand. It highlights how attackers exploit familiar interfaces and AI to deceive users into revealing credentials or executing malicious payloads. Security teams should monitor for these tactics, apply relevant patches, and employ AI-aware detection to mitigate potential compromise.]]></description>
+      <pubDate>Thu, 19 Nov 2026 18:47:58 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>PHP Vulnerabilities Affect Versions &lt;8.6.0</title>
+      <link>https://secubuzz.com/news/php-vulnerabilities-affect-versions-8-6-0-8763cb55</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-vulnerabilities-affect-versions-8-6-0-8763cb55</guid>
+      <description><![CDATA[PHP Group identified security flaws in PHP versions prior to 8.6.0, including 8.5.13, 8.4.28, 8.3.37, and 8.2.36. The advisory does not list a CVE identifier, but the vulnerabilities could enable unauthorized code execution or data leakage. Administrators should apply the latest PHP 8.x patch or update as recommended in the Cyber Centre link to mitigate risk.]]></description>
+      <pubDate>Thu, 19 Nov 2026 18:33:33 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/php-group-security-advisory-av26-1183">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>TfL Data Breach Exposes 265,000 Oyster Card Users</title>
+      <link>https://secubuzz.com/news/tfl-data-breach-exposes-265-000-oyster-card-users-62eda7bc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tfl-data-breach-exposes-265-000-oyster-card-users-62eda7bc</guid>
+      <description><![CDATA[Transport for London reported that approximately 265,000 Oyster photocard customers may have had their account details exposed in a data breach. The breach potentially compromised usernames, passwords, and personal information, though the extent of credential theft or misuse remains unconfirmed. TfL urges affected users to monitor accounts, change passwords, and review security settings while the investigation continues.]]></description>
+      <pubDate>Thu, 19 Nov 2026 18:20:01 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>DOJ, DHS Launch Threat Disruption Center for Cybercrime</title>
+      <link>https://secubuzz.com/news/doj-dhs-launch-threat-disruption-center-for-cyberc-8fa7171e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/doj-dhs-launch-threat-disruption-center-for-cyberc-8fa7171e</guid>
+      <description><![CDATA[The U.S. Department of Justice and Department of Homeland Security are partnering on a Threat Disruption Center to triage victim complaints, map cybercriminal networks, and provide a direct channel to private-sector organizations that work with victims. The unit is intended to improve coordination against scams and cybercrime. No operational timeline, funding details, or enforcement authorities were disclosed in the announcement.]]></description>
+      <pubDate>Thu, 19 Nov 2026 17:25:00 GMT</pubDate>
+      <source url="https://therecord.media/doj-dhs-partner-on-new-unit-tackling-scams-cybercrime">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack</title>
       <link>https://secubuzz.com/news/cisa-nominee-losapio-vows-to-bolster-cyber-defense-dc560534</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cisa-nominee-losapio-vows-to-bolster-cyber-defense-dc560534</guid>
@@ -132,6 +240,51 @@
       <pubDate>Thu, 19 Nov 2026 16:28:23 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>JPMorgan Chase Confirms Third-Party Data Exposure</title>
+      <link>https://secubuzz.com/news/jpmorgan-chase-confirms-third-party-data-exposure-8e3f6470</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/jpmorgan-chase-confirms-third-party-data-exposure-8e3f6470</guid>
+      <description><![CDATA[JPMorgan Chase confirmed a third-party cyberattack targeting outside companies that provide services to the bank. Attackers accessed marketing data held by those vendors, which may include some customer names and email addresses, though the bank did not disclose how many customers are affected. Security teams should treat exposed names and emails as phishing risk and verify third-party access controls.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:14:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/jpmorgan-third-party-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft Excel RCE Vulnerability CVE-2026-118302</title>
+      <link>https://secubuzz.com/news/microsoft-excel-rce-vulnerability-cve-2026-118302-cd3b1070</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-excel-rce-vulnerability-cve-2026-118302-cd3b1070</guid>
+      <description><![CDATA[CVE-2026-118302 enables remote code execution in Microsoft Office Excel through a flaw in the application. The vulnerability permits unauthenticated attackers to run arbitrary code on affected machines, posing a high risk to enterprise environments. Microsoft released an informational acknowledgement; no patch is currently available, and users should monitor for future updates.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118302">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Outlook RCE Vulnerability CVE-2026-97749</title>
+      <link>https://secubuzz.com/news/microsoft-outlook-rce-vulnerability-cve-2026-97749-4811b074</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-outlook-rce-vulnerability-cve-2026-97749-4811b074</guid>
+      <description><![CDATA[CVE-2026-97749 enables remote code execution in Microsoft Office Outlook through a flaw in the application. The vulnerability permits unauthenticated attackers to run arbitrary code on affected machines, posing a high risk to enterprise environments. Microsoft released an informational acknowledgement; no patch is currently available, and users should monitor for future updates.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97749">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Excel RCE Vulnerability CVE-2026-97761</title>
+      <link>https://secubuzz.com/news/microsoft-excel-rce-vulnerability-cve-2026-97761-24efe064</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-excel-rce-vulnerability-cve-2026-97761-24efe064</guid>
+      <description><![CDATA[CVE-2026-97761 enables remote code execution in Microsoft Office Excel through a flaw in the application. The vulnerability permits unauthenticated attackers to run arbitrary code on affected machines, posing a high risk to enterprise environments. Microsoft released an informational acknowledgement; no patch is currently available, and users should monitor for future updates.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97761">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Updates Excel RCE Vulnerability Acknowledgement</title>
+      <link>https://secubuzz.com/news/microsoft-updates-excel-rce-vulnerability-acknowle-16c2e96e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-excel-rce-vulnerability-acknowle-16c2e96e</guid>
+      <description><![CDATA[Microsoft updated an acknowledgement for CVE-2026-97780, a remote code execution vulnerability in Office Excel. The MSRC entry describes the change as informational only and provides no new technical details, exploitability status, or severity score. Security teams should track the advisory for future updates and apply Excel patches when Microsoft publishes remediation guidance.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97780">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Microsoft Acknowledges VS Code RCE Vulnerability</title>
@@ -302,159 +455,6 @@
       <description><![CDATA[Drupal core contains a critical installer flaw that permits unauthenticated attackers to trigger a site reinstallation and take over the site. The vulnerability requires specific configuration conditions and can lead to remote code execution if the installer is invoked without proper safeguards. All supported Drupal branches have patched releases; site administrators should apply the update and verify installer access controls.]]></description>
       <pubDate>Thu, 19 Nov 2026 14:33:06 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Nvidia Denies Gentlemen Ransomware Claim</title>
-      <link>https://secubuzz.com/news/nvidia-denies-gentlemen-ransomware-claim-a06839da</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-denies-gentlemen-ransomware-claim-a06839da</guid>
-      <description><![CDATA[Gentlemen ransomware group listed Nvidia as a victim, alleging a compromise of its systems. No evidence of exploitation or data exfiltration was found, and the claim lacks supporting proof of a vulnerability or breach. Nvidia confirmed no compromise and urged stakeholders to monitor for potential phishing or credential theft attempts.]]></description>
-      <pubDate>Thu, 19 Nov 2026 14:17:32 GMT</pubDate>
-      <source url="https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>BADBOX 3.0 Malware Infects Android TV Boxes to Generate 40 Billion Fraudulent Ad Requests Daily</title>
-      <link>https://secubuzz.com/news/badbox-3-0-malware-infects-android-tv-boxes-to-gen-106873f0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/badbox-3-0-malware-infects-android-tv-boxes-to-gen-106873f0</guid>
-      <description><![CDATA[Low-cost Android streaming boxes helped power an advertising fraud operation that generated roughly 40 billion bid requests a day at its peak. Known as BADBOX 3.0, the campaign used infected devices to play video ads outside the visible screen while making the traffic look as though it came from legitimate streaming apps.]]></description>
-      <pubDate>Thu, 19 Nov 2026 14:05:35 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/badbox-3-0-malware/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Holiday Bot Fraud Strains Small Business Security</title>
-      <link>https://secubuzz.com/news/holiday-bot-fraud-strains-small-business-security-62227aa7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/holiday-bot-fraud-strains-small-business-security-62227aa7</guid>
-      <description><![CDATA[Bot-driven fraud and holiday social engineering attacks target small businesses during the holiday season. These campaigns exploit automated phishing, credential harvesting, and social engineering tactics, extending over weeks and overwhelming security teams. Security teams should deploy comprehensive multi-factor authentication, daily email filtering, and employee training to mitigate the prolonged threat.]]></description>
-      <pubDate>Thu, 19 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Election Day Cyberattacks Surge Across 1,400 Sites</title>
-      <link>https://secubuzz.com/news/election-day-cyberattacks-surge-across-1-400-sites-8c085251</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/election-day-cyberattacks-surge-across-1-400-sites-8c085251</guid>
-      <description><![CDATA[During the 2026 U.S. midterm elections, election-related sites experienced increased traffic and cyberattacks. Cloudflare data from over 1,400 protected sites shows spikes in phishing, credential stuffing, and distributed denial-of-service attempts targeting voter information portals. Operators should enforce stricter rate limiting, deploy WAF rules, and monitor for anomalous traffic patterns to defend against election-day threats.]]></description>
-      <pubDate>Thu, 19 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/internet-traffic-2026-us-election/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Timeroasting Detection via Packet Size Analysis</title>
-      <link>https://secubuzz.com/news/timeroasting-detection-via-packet-size-analysis-ef3720c9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/timeroasting-detection-via-packet-size-analysis-ef3720c9</guid>
-      <description><![CDATA[Timeroasting, a stealthy side-channel exfiltration method, leaves no authentication logs and targets systems using MS-SNTP. The technique manipulates the two MS-SNTP authenticator forms to create timing variations that bypass standard logging, enabling covert data transfer. By reversing the authenticator logic, the author builds detection that monitors packet size patterns, providing a defensive measure against timeroasting attacks.]]></description>
-      <pubDate>Thu, 19 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://www.huntress.com/blog/detecting-timeroasting">Huntress</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ARMORY CASTLE Exploits vSphere</title>
-      <link>https://secubuzz.com/news/armory-castle-exploits-vsphere-f240c9be</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/armory-castle-exploits-vsphere-f240c9be</guid>
-      <description><![CDATA[Written by: Jayson Frost, Bryce Greathouse, Dhanesh Kizhakkinan, John Palmisano, Steve Rasch, Daniel Sislo, John Wolfram Introduction On Oct. 15, 2026, Mandiant and Google Threat Intelligence Group (GTIG) published a blog post detailing recent activity in which the suspected PRC-nexus threat actor ARMORY CASTLE (formerly tracked as UNC5221) exploited CVE-2026-102764, a zero-day vulnerability in BeyondTrust Remote Support, which was patched in BT26-05 .]]></description>
-      <pubDate>Thu, 19 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/">Google Threat Intelligence</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Russian Operation Steals Bank, IRS Credentials from PCs</title>
-      <link>https://secubuzz.com/news/russian-operation-steals-bank-irs-credentials-from-44828728</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-operation-steals-bank-irs-credentials-from-44828728</guid>
-      <description><![CDATA[A Russian-speaking cybercrime group has stolen login credentials for US banks, the IRS, and Social Security from infected Windows PCs. Victims were ordinary users; many employed password managers and MFA, yet attackers still captured credentials through malware, without breaching any institution. Defenders should harden endpoint security, enforce multi-factor authentication, and monitor for credential-stealing malware to prevent similar thefts.]]></description>
-      <pubDate>Thu, 19 Nov 2026 13:43:37 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-steal-us-bank/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Ubuntu 24.04 Kernel Update Addresses Critical IPv4, Bridge, Netfilter Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ubuntu-24-04-kernel-update-addresses-critical-ipv4-c0845476</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-24-04-kernel-update-addresses-critical-ipv4-c0845476</guid>
-      <description><![CDATA[Ubuntu 24.04 users must install the latest kernel update to patch critical vulnerabilities affecting IPv4 networking, Ethernet bridge, Netfilter, and XFRM subsystems. The flaws, CVE-2026-98432 and CVE-2026-99999, could enable privilege escalation or denial of service if exploited by attackers. Immediate kernel upgrade is recommended to mitigate potential compromise and maintain system security.]]></description>
-      <pubDate>Thu, 19 Nov 2026 13:43:11 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9172-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ubuntu Patches Kernel Vulnerabilities in IPv4, Bridge, Netfilter, SCTP</title>
-      <link>https://secubuzz.com/news/ubuntu-patches-kernel-vulnerabilities-in-ipv4-brid-2e68255b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-kernel-vulnerabilities-in-ipv4-brid-2e68255b</guid>
-      <description><![CDATA[Ubuntu 24.04 USN-9170-1 fixes Linux kernel flaws affecting IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems. The vulnerabilities, CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, could enable privilege escalation or denial of service if exploited by an attacker. Apply the kernel update immediately to patch the affected subsystems and prevent potential compromise.]]></description>
-      <pubDate>Thu, 19 Nov 2026 13:42:53 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9170-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ukraine Arrests Ransomware Network Extorting $40M</title>
-      <link>https://secubuzz.com/news/ukraine-arrests-ransomware-network-extorting-40m-a5f80651</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-arrests-ransomware-network-extorting-40m-a5f80651</guid>
-      <description><![CDATA[Ukrainian authorities arrested four suspects linked to an international ransomware network that extorted over $40 million from U.S. oil and healthcare firms. The group used credential theft and encrypted data to demand ransom, targeting critical infrastructure and causing significant financial loss. Law enforcement seized ransom payments and seized infrastructure, and the operators face prosecution under Ukrainian cybercrime statutes.]]></description>
-      <pubDate>Thu, 19 Nov 2026 13:30:00 GMT</pubDate>
-      <source url="https://therecord.media/ukraine-ransomware-arrests-cyber">The Record</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Gatekeeper Asymmetry Makes LLMs More Vulnerable</title>
-      <link>https://secubuzz.com/news/gatekeeper-asymmetry-makes-llms-more-vulnerable-7a2b859f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gatekeeper-asymmetry-makes-llms-more-vulnerable-7a2b859f</guid>
-      <description><![CDATA[The paper introduces gatekeeper asymmetry doom, asserting that when input vetting is weaker than processing, vulnerability is inevitable. Authors illustrate the principle with examples across security domains, showing limited input validation can cause catastrophic failures in powerful LLMs. The study urges stronger gatekeeping and hard-problem reliance to mitigate asymmetry in advanced AI systems.]]></description>
-      <pubDate>Thu, 19 Nov 2026 13:19:10 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/">Check Point Research</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cisco Expressway Devices Hacked After PoC Release</title>
-      <link>https://secubuzz.com/news/cisco-expressway-devices-hacked-after-poc-release-3751e940</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-expressway-devices-hacked-after-poc-release-3751e940</guid>
-      <description><![CDATA[Attackers compromised clustered Cisco Expressway devices at a Russian organization shortly after a public proof-of-concept was released. The flaw allowed authenticated remote code execution via malformed SIP messages, enabling attackers to gain privileged access and prepare lateral movement tools. Cisco issued a patch in the following security advisory, and security teams should update firmware and disable unused SIP services.]]></description>
-      <pubDate>Thu, 19 Nov 2026 13:12:20 GMT</pubDate>
-      <source url="https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Drupal Fixes Critical Remote Code Execution Flaw</title>
-      <link>https://secubuzz.com/news/drupal-fixes-critical-remote-code-execution-flaw-8a5e1fa6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/drupal-fixes-critical-remote-code-execution-flaw-8a5e1fa6</guid>
-      <description><![CDATA[Drupal Security Team patched a critical remote code execution flaw that could let attackers seize control of vulnerable sites. The vulnerability, a buffer overflow in a core module, carries a CVSS score of 9.8 and has a publicly available proof-of-concept exploit. Administrators must apply the latest Drupal update immediately and confirm the core module is patched to prevent remote takeover.]]></description>
-      <pubDate>Thu, 19 Nov 2026 13:08:08 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISA Warns Hackers Are Actively Exploiting Four Flaws in Synology, LiteLLM, Apache Axis and REDCap</title>
-      <link>https://secubuzz.com/news/cisa-warns-hackers-are-actively-exploiting-four-fl-3f05fb63</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-warns-hackers-are-actively-exploiting-four-fl-3f05fb63</guid>
-      <description><![CDATA[The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added four flaws to its Known Exploited Vulnerabilities (KEV) catalog on November 18, 2026, after finding evidence that attackers were already exploiting them. The entries cover Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis and Vanderbilt University’s Research Electronic Data Capture platform, better known as REDCap.]]></description>
-      <pubDate>Thu, 19 Nov 2026 13:06:39 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/flaws-in-synology-litellm-apache-axis-and-redcap/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Agent Framework Compromised by Credential Stealer</title>
-      <link>https://secubuzz.com/news/microsoft-agent-framework-compromised-by-credentia-10c4e003</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-agent-framework-compromised-by-credentia-10c4e003</guid>
-      <description><![CDATA[Microsoft’s agent-framework package on PyPI was compromised by malicious releases 1.26.1 and 1.26.2 that steal cloud and CI/CD credentials. The supply-chain intrusion exploited the toolkit’s execution, enabling credential exfiltration without user interaction; detected by StepSecurity, OX Security, and Socket. Microsoft should remove the compromised packages from PyPI, release a clean version, and advise developers to audit installed packages and update.]]></description>
-      <pubDate>Thu, 19 Nov 2026 12:53:44 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/19/microsoft-agent-framework-package-pypi-compromised/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Chrome 158 Fixes Six Critical Flaws</title>
-      <link>https://secubuzz.com/news/chrome-158-fixes-six-critical-flaws-139afb67</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-fixes-six-critical-flaws-139afb67</guid>
-      <description><![CDATA[Google released Chrome 158, addressing 204 security issues, including six critical vulnerabilities. Two of the critical flaws were identified using AI-assisted analysis, highlighting the role of machine learning in vulnerability discovery. Users should update to Chrome 158 immediately to mitigate the disclosed vulnerabilities and maintain secure browsing and protect against exploitation.]]></description>
-      <pubDate>Thu, 19 Nov 2026 12:38:38 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/bugs/2026/11/chrome-patches-six-critical-flaws-two-found-with-ais-help">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft 365 MFA Bypassed via Device Code Phishing</title>
-      <link>https://secubuzz.com/news/microsoft-365-mfa-bypassed-via-device-code-phishin-6ca870f6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-mfa-bypassed-via-device-code-phishin-6ca870f6</guid>
-      <description><![CDATA[Hackers hijacked Microsoft 365 accounts by sending fake payment notices that redirect users to a legitimate Microsoft sign-in page. The attack exploits the device code flow’s lack of MFA enforcement, letting attackers obtain tokens without credential verification. Microsoft recommends disabling device code authentication for sensitive workloads and enforcing MFA; users should verify invoice authenticity before signing in.]]></description>
-      <pubDate>Thu, 19 Nov 2026 12:26:09 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/device-code-authentication/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
   </channel>

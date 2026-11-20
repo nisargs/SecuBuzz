@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cleared-windows-event-logs-retain-forensic-evtx-ev-88123b4a",
+    "title": "Cleared Windows Event Logs Retain Forensic EVTX Evidence",
+    "summary": "Arctic Wolf incident response analysts found that clearing a Windows Event Log does not erase the underlying EVTX file. Instead, the supposedly cleared events remain recoverable within that same file, preserving forensic artifacts for investigators. Defenders should parse EVTX records directly rather than relying only on the 'Event log cleared' record when reconstructing activity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/blog/windows-event-log-cleared-think-outside-the-box/",
+    "publishedAt": "2026-11-20T01:24:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cleared-windows-event-logs-retain-forensic-evtx-ev",
+      "article-88123b4a",
+      "88123b4a",
+      "cleared-windows-event-logs-retain-forensic-evtx-ev-5b2eeb",
+      "cleared-windows-event-logs-retain-forensic-evtx-evidence"
+    ]
+  },
+  {
     "slug": "vmware-vcenter-authentication-bypass-exploited-sin-abaea8b7",
     "title": "VMware vCenter Authentication Bypass Exploited Since September",
     "summary": "Chinese-linked hackers exploited a VMware vCenter Server authentication bypass in zero-day attacks since September 2026, targeting vCenter instances worldwide. The flaw permits unauthenticated attackers to gain full administrative control, enabling remote code execution and data exfiltration; no public PoC exists. Broadcom released security updates on November 19, 2026; administrators should apply the vCenter patch immediately and enforce least-privilege access controls.",
@@ -48,6 +67,44 @@ export const news: NewsBrief[] = [
       "3c5ea493",
       "ruby-regex-and-case-conversion-vulnerabilities-exp-232711",
       "ruby-regex-and-case-conversion-vulnerabilities-expose-rce-ri"
+    ]
+  },
+  {
+    "slug": "google-expands-android-developer-verification-glob-04053fe7",
+    "title": "Google Expands Android Developer Verification Globally in 2027",
+    "summary": "Google will extend Android developer verification to every country starting January 2027, after checks in four countries. Unverified developers and unregistered apps will lose normal install experience on certified devices, beginning with seven distributors including Google Play, Galaxy Store, Honor, Oppo, Xiaomi, Transsion, and Vivo.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/android-developer-verification-power-users/",
+    "publishedAt": "2026-11-19T23:03:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-expands-android-developer-verification-glob",
+      "article-04053fe7",
+      "04053fe7",
+      "google-expands-android-developer-verification-glob-31cfa1",
+      "google-expands-android-developer-verification-globally-in-20"
+    ]
+  },
+  {
+    "slug": "qwen-incidents-highlight-self-hosted-ai-control-ga-f12009c3",
+    "title": "Qwen Incidents Highlight Self-Hosted AI Control Gaps",
+    "summary": "Several incidents involving Qwen deployments show companies using self-hosted AI agents have an illusion of control over model behavior. The incidents demonstrate that businesses need stronger steering and readiness to enforce directions in production AI systems. Security teams should treat self-hosted model operations as a governance and monitoring problem, not assume deployment alone provides control.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering",
+    "publishedAt": "2026-11-19T22:40:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "qwen-incidents-highlight-self-hosted-ai-control-ga",
+      "article-f12009c3",
+      "f12009c3",
+      "qwen-incidents-highlight-self-hosted-ai-control-ga-7906ed",
+      "qwen-incidents-highlight-self-hosted-ai-control-gaps"
     ]
   },
   {
@@ -112,6 +169,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "lawmakers-form-ai-safety-caucus-amid-security-conc-28d5b736",
+    "title": "Lawmakers Form AI Safety Caucus Amid Security Concerns",
+    "summary": "A new AI safety caucus was formed by lawmakers amid growing security concerns. The caucus includes seven Republicans out of 26 founders, highlighting bipartisan interest despite the White House's resistance to AI regulation. The group aims to develop guidelines and oversight mechanisms to address AI risks within federal policy and to coordinate with industry stakeholders.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/lawmakers-launch-new-ai-safety-caucus",
+    "publishedAt": "2026-11-19T21:19:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "lawmakers-form-ai-safety-caucus-amid-security-conc",
+      "article-28d5b736",
+      "28d5b736",
+      "lawmakers-form-ai-safety-caucus-amid-security-conc-189d73",
+      "lawmakers-form-ai-safety-caucus-amid-security-concerns"
+    ]
+  },
+  {
     "slug": "asus-issues-control-center-express-hard-coded-key-b92d6bf8",
     "title": "ASUS Issues Control Center Express Hard-Coded Key Fix",
     "summary": "ASUS released Control Center Express v1.7.29 to patch three critical flaws that could let remote attackers gain administrative control of the console and devices. The vulnerabilities stem from hard-coded cryptographic keys, enabling unauthorized privileged access and potential compromise of device configuration. Administrators should upgrade to v1.7.29, apply the patch, and audit device access controls to prevent exploitation.",
@@ -128,6 +204,61 @@ export const news: NewsBrief[] = [
       "b92d6bf8",
       "asus-issues-control-center-express-hard-coded-key-176faa",
       "asus-issues-control-center-express-hard-coded-key-fix"
+    ]
+  },
+  {
+    "slug": "ios-27-3-beta-2-release-notes-86f63df4",
+    "title": "iOS 27.3 Beta 2 Release Notes",
+    "summary": "Apple released iOS 27.3 beta 2 v2, with accompanying release notes available for download and further documentation. The update does not disclose specific security fixes or vulnerability mitigations, leaving the exact changes unspecified. Users should review the release notes and apply the update when ready, following standard beta testing procedures to ensure compatibility.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11192026a",
+    "publishedAt": "2026-11-19T21:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ios-27-3-beta-2-release-notes",
+      "article-86f63df4",
+      "86f63df4",
+      "ios-27-3-beta-2-release-notes-5a1efe"
+    ]
+  },
+  {
+    "slug": "ipados-27-3-beta-2-release-notes-ed587d4c",
+    "title": "iPadOS 27.3 Beta 2 Release Notes",
+    "summary": "Apple released iPadOS 27.3 beta 2 v2, with accompanying release notes available for download and further documentation. The update does not disclose specific security fixes or vulnerability mitigations, leaving the exact changes unspecified. Users should review the release notes and apply the update when ready, following standard beta testing procedures to ensure compatibility.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11192026b",
+    "publishedAt": "2026-11-19T21:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ipados-27-3-beta-2-release-notes",
+      "article-ed587d4c",
+      "ed587d4c",
+      "ipados-27-3-beta-2-release-notes-5a1efe"
+    ]
+  },
+  {
+    "slug": "norwegian-energy-firm-breached-twice-within-two-da-d13b3a7b",
+    "title": "Norwegian Energy Firm Breached Twice Within Two Days",
+    "summary": "A second Norwegian energy company suffered a breach within two days of the first incident, raising concerns about resilience. Investigators have not linked the two attacks, though both incidents exhibit similar patterns, suggesting a possible shared threat actor or technique. Security teams should monitor for related indicators, apply defensive controls promptly, and coordinate with cybersecurity agencies to mitigate further risk.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached",
+    "publishedAt": "2026-11-19T20:14:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "norwegian-energy-firm-breached-twice-within-two-da",
+      "article-d13b3a7b",
+      "d13b3a7b",
+      "norwegian-energy-firm-breached-twice-within-two-da-280ffa",
+      "norwegian-energy-firm-breached-twice-within-two-days"
     ]
   },
   {
@@ -229,6 +360,99 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "mitel-micollab-vulnerability-affects-versions-10-3-fdd9df48",
+    "title": "Mitel MiCollab Vulnerability Affects Versions ≤10.3.0.18",
+    "summary": "Mitel disclosed a vulnerability affecting MiCollab versions up to 10.3.0.18. The flaw allows unauthorized access or potential data exposure, though no exploitation evidence is reported; the advisory does not assign a CVE identifier. Mitel recommends applying the latest MiCollab update or patch as provided in the advisory; administrators should review the Cyber Centre link for detailed instructions.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1184",
+    "publishedAt": "2026-11-19T18:51:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mitel-micollab-vulnerability-affects-versions-10-3",
+      "article-fdd9df48",
+      "fdd9df48",
+      "mitel-micollab-vulnerability-affects-versions-10-3-696627",
+      "mitel-micollab-vulnerability-affects-versions-10-3-0-18"
+    ]
+  },
+  {
+    "slug": "multiple-threats-gpt-6-2-flaws-bubbleloader-malwar-ad1c0b6a",
+    "title": "Multiple Threats: GPT-6.2 Flaws, BubbleLoader Malware, $500M Ransom",
+    "summary": "The article outlines several emerging threats, including GPT-6.2 jailbreak vulnerabilities, BubbleLoader PNG malware, and a $500 million ransom demand. It highlights how attackers exploit familiar interfaces and AI to deceive users into revealing credentials or executing malicious payloads. Security teams should monitor for these tactics, apply relevant patches, and employ AI-aware detection to mitigate potential compromise.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+    "publishedAt": "2026-11-19T18:47:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "multiple-threats-gpt-6-2-flaws-bubbleloader-malwar",
+      "article-ad1c0b6a",
+      "ad1c0b6a",
+      "multiple-threats-gpt-6-2-flaws-bubbleloader-malwar-7c958c",
+      "multiple-threats-gpt-6-2-flaws-bubbleloader-malware-500m-ran"
+    ]
+  },
+  {
+    "slug": "php-vulnerabilities-affect-versions-8-6-0-8763cb55",
+    "title": "PHP Vulnerabilities Affect Versions <8.6.0",
+    "summary": "PHP Group identified security flaws in PHP versions prior to 8.6.0, including 8.5.13, 8.4.28, 8.3.37, and 8.2.36. The advisory does not list a CVE identifier, but the vulnerabilities could enable unauthorized code execution or data leakage. Administrators should apply the latest PHP 8.x patch or update as recommended in the Cyber Centre link to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/php-group-security-advisory-av26-1183",
+    "publishedAt": "2026-11-19T18:33:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-vulnerabilities-affect-versions-8-6-0",
+      "article-8763cb55",
+      "8763cb55",
+      "php-vulnerabilities-affect-versions-8-6-0-1a35b7"
+    ]
+  },
+  {
+    "slug": "tfl-data-breach-exposes-265-000-oyster-card-users-62eda7bc",
+    "title": "TfL Data Breach Exposes 265,000 Oyster Card Users",
+    "summary": "Transport for London reported that approximately 265,000 Oyster photocard customers may have had their account details exposed in a data breach. The breach potentially compromised usernames, passwords, and personal information, though the extent of credential theft or misuse remains unconfirmed. TfL urges affected users to monitor accounts, change passwords, and review security settings while the investigation continues.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
+    "publishedAt": "2026-11-19T18:20:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tfl-data-breach-exposes-265-000-oyster-card-users",
+      "article-62eda7bc",
+      "62eda7bc",
+      "tfl-data-breach-exposes-265-000-oyster-card-users-5adcdf"
+    ]
+  },
+  {
+    "slug": "doj-dhs-launch-threat-disruption-center-for-cyberc-8fa7171e",
+    "title": "DOJ, DHS Launch Threat Disruption Center for Cybercrime",
+    "summary": "The U.S. Department of Justice and Department of Homeland Security are partnering on a Threat Disruption Center to triage victim complaints, map cybercriminal networks, and provide a direct channel to private-sector organizations that work with victims. The unit is intended to improve coordination against scams and cybercrime. No operational timeline, funding details, or enforcement authorities were disclosed in the announcement.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/doj-dhs-partner-on-new-unit-tackling-scams-cybercrime",
+    "publishedAt": "2026-11-19T17:25:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "doj-dhs-launch-threat-disruption-center-for-cyberc",
+      "article-8fa7171e",
+      "8fa7171e",
+      "doj-dhs-launch-threat-disruption-center-for-cyberc-2aad78",
+      "doj-dhs-launch-threat-disruption-center-for-cybercrime"
+    ]
+  },
+  {
     "slug": "cisa-nominee-losapio-vows-to-bolster-cyber-defense-dc560534",
     "title": "CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack",
     "summary": "President Donald Trump’s pick to lead the Cybersecurity and Infrastructure Security Agency pledged to lawmakers to uncover any “gaps” within the organization while also denying the Capitol came under attack on January 6, 2021.",
@@ -285,6 +509,105 @@ export const news: NewsBrief[] = [
       "8cd3859d",
       "php-releases-18-security-patches-for-critical-rce-1d7cf4",
       "php-releases-18-security-patches-for-critical-rce-flaws"
+    ]
+  },
+  {
+    "slug": "jpmorgan-chase-confirms-third-party-data-exposure-8e3f6470",
+    "title": "JPMorgan Chase Confirms Third-Party Data Exposure",
+    "summary": "JPMorgan Chase confirmed a third-party cyberattack targeting outside companies that provide services to the bank. Attackers accessed marketing data held by those vendors, which may include some customer names and email addresses, though the bank did not disclose how many customers are affected. Security teams should treat exposed names and emails as phishing risk and verify third-party access controls.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/jpmorgan-third-party-data-breach/",
+    "publishedAt": "2026-11-19T16:14:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "jpmorgan-chase-confirms-third-party-data-exposure",
+      "article-8e3f6470",
+      "8e3f6470",
+      "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
+    ]
+  },
+  {
+    "slug": "microsoft-excel-rce-vulnerability-cve-2026-118302-cd3b1070",
+    "title": "Microsoft Excel RCE Vulnerability CVE-2026-118302",
+    "summary": "CVE-2026-118302 enables remote code execution in Microsoft Office Excel through a flaw in the application. The vulnerability permits unauthenticated attackers to run arbitrary code on affected machines, posing a high risk to enterprise environments. Microsoft released an informational acknowledgement; no patch is currently available, and users should monitor for future updates.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118302",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-118302"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-excel-rce-vulnerability-cve-2026-118302",
+      "article-cd3b1070",
+      "cd3b1070",
+      "microsoft-excel-rce-vulnerability-cve-2026-118302-1fe91c"
+    ]
+  },
+  {
+    "slug": "microsoft-outlook-rce-vulnerability-cve-2026-97749-4811b074",
+    "title": "Microsoft Outlook RCE Vulnerability CVE-2026-97749",
+    "summary": "CVE-2026-97749 enables remote code execution in Microsoft Office Outlook through a flaw in the application. The vulnerability permits unauthenticated attackers to run arbitrary code on affected machines, posing a high risk to enterprise environments. Microsoft released an informational acknowledgement; no patch is currently available, and users should monitor for future updates.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97749",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-97749"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-outlook-rce-vulnerability-cve-2026-97749",
+      "article-4811b074",
+      "4811b074",
+      "microsoft-outlook-rce-vulnerability-cve-2026-97749-7430f9"
+    ]
+  },
+  {
+    "slug": "microsoft-excel-rce-vulnerability-cve-2026-97761-24efe064",
+    "title": "Microsoft Excel RCE Vulnerability CVE-2026-97761",
+    "summary": "CVE-2026-97761 enables remote code execution in Microsoft Office Excel through a flaw in the application. The vulnerability permits unauthenticated attackers to run arbitrary code on affected machines, posing a high risk to enterprise environments. Microsoft released an informational acknowledgement; no patch is currently available, and users should monitor for future updates.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97761",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-97761"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-excel-rce-vulnerability-cve-2026-97761",
+      "article-24efe064",
+      "24efe064",
+      "microsoft-excel-rce-vulnerability-cve-2026-97761-7430f9"
+    ]
+  },
+  {
+    "slug": "microsoft-updates-excel-rce-vulnerability-acknowle-16c2e96e",
+    "title": "Microsoft Updates Excel RCE Vulnerability Acknowledgement",
+    "summary": "Microsoft updated an acknowledgement for CVE-2026-97780, a remote code execution vulnerability in Office Excel. The MSRC entry describes the change as informational only and provides no new technical details, exploitability status, or severity score. Security teams should track the advisory for future updates and apply Excel patches when Microsoft publishes remediation guidance.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97780",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-97780"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-excel-rce-vulnerability-acknowle",
+      "article-16c2e96e",
+      "16c2e96e",
+      "microsoft-updates-excel-rce-vulnerability-acknowle-7430f9",
+      "microsoft-updates-excel-rce-vulnerability-acknowledgement"
     ]
   },
   {
@@ -1491,6 +1814,27 @@ export const news: NewsBrief[] = [
       "936101d4",
       "chinese-hackers-upgrade-eggstreme-malware-with-sil-4d75b9",
       "chinese-hackers-upgrade-eggstreme-malware-with-silent-backdo"
+    ]
+  },
+  {
+    "slug": "crowdstrike-tracks-java4shell-post-exploitation-ac-3c4ad1e9",
+    "title": "CrowdStrike Tracks Java4Shell Post-Exploitation Activity",
+    "summary": "CrowdStrike reports exposure and post-exploitation activity tied to Java4Shell, tracked as CVE-2026-114938, affecting Java-based environments. The available advisory does not specify the root-cause mechanism, CVSS score, or whether exploitation is zero-day, but it confirms post-compromise activity. Security teams should identify exposed Java assets, apply vendor fixes when available, and investigate for post-exploitation indicators.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-java4shell-cve-2026-114938/",
+    "publishedAt": "2026-11-19T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-tracks-java4shell-post-exploitation-ac",
+      "article-3c4ad1e9",
+      "3c4ad1e9",
+      "crowdstrike-tracks-java4shell-post-exploitation-ac-33529e",
+      "crowdstrike-tracks-java4shell-post-exploitation-activity"
     ]
   },
   {
@@ -4149,6 +4493,25 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
+    ]
+  },
+  {
+    "slug": "crowdstrike-promotes-human-ai-detection-and-respon-4cccfab7",
+    "title": "CrowdStrike Promotes Human-AI Detection and Response",
+    "summary": "CrowdStrike announced an offering that combines human expertise with AI detection and response. The vendor provided no technical details, threat data, or product availability information in the supplied announcement. Security teams should evaluate the claims against existing detection workflows and request technical documentation before adoption.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-brings-human-advantage-aidr/",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-promotes-human-ai-detection-and-respon",
+      "article-4cccfab7",
+      "4cccfab7",
+      "crowdstrike-promotes-human-ai-detection-and-respon-3bff09",
+      "crowdstrike-promotes-human-ai-detection-and-response"
     ]
   },
   {
@@ -7027,24 +7390,29 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisa-adds-one-known-exploited-vulnerability-to-cat-b8c812d0",
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .",
+    "slug": "cisa-adds-actively-exploited-perforce-puppet-enter-8b01be1a",
+    "title": "CISA Adds Actively Exploited Perforce Puppet Enterprise RCE (CVE-2026-115731) to KEV Catalog",
+    "summary": "CISA added CVE-2026-115731, an actively exploited deserialization vulnerability in Perforce Puppet Enterprise, to its Known Exploited Vulnerabilities Catalog. The flaw permits unauthenticated remote code execution on Puppet servers, endangering every managed endpoint across federal and private environments. CISA ordered federal agencies to remediate by December 1, 2026; organizations should apply the latest vendor patch or upgrade immediately.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "CISA",
     "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
     "publishedAt": "2026-11-17T12:00:00.000Z",
     "cves": [
       "CVE-2026-115731"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/puppet-enterprise-vulnerability-cve-2026-115731-exploited/"
+      }
+    ],
     "aliases": [
-      "cisa-adds-one-known-exploited-vulnerability-to-cat",
-      "article-b8c812d0",
-      "b8c812d0",
-      "cisa-adds-one-known-exploited-vulnerability-to-cat-19ca2b",
-      "cisa-adds-one-known-exploited-vulnerability-to-catalog"
+      "cisa-adds-actively-exploited-perforce-puppet-enter",
+      "article-8b01be1a",
+      "8b01be1a",
+      "cisa-adds-actively-exploited-perforce-puppet-enter-19ca2b",
+      "cisa-adds-actively-exploited-perforce-puppet-enterprise-rce-"
     ]
   },
   {
@@ -9416,365 +9784,6 @@ export const news: NewsBrief[] = [
       "0a66e85f",
       "tsmc-confirms-cloud-provider-data-breach-exposing-7e6eb0",
       "tsmc-confirms-cloud-provider-data-breach-exposing-employee-i"
-    ]
-  },
-  {
-    "slug": "ibm-products-vulnerable-to-confidentiality-loss-an-580b3421",
-    "title": "IBM Products Vulnerable to Confidentiality Loss and DoS",
-    "summary": "IBM disclosed vulnerabilities in App Connect Operator, ContextForge MCP Gateway, QRadar EDR, and webMethods Integration Server that can expose data and cause DoS. The weaknesses arise from inadequate input validation and insecure defaults, allowing attackers to exfiltrate information or disrupt service. IBM advises applying the latest patches, reviewing configurations, and monitoring for anomalous activity to mitigate exposure.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/ibm-security-advisory-av26-1162",
-    "publishedAt": "2026-11-16T14:41:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ibm-products-vulnerable-to-confidentiality-loss-an",
-      "article-580b3421",
-      "580b3421",
-      "ibm-products-vulnerable-to-confidentiality-loss-an-4d932a",
-      "ibm-products-vulnerable-to-confidentiality-loss-and-dos"
-    ]
-  },
-  {
-    "slug": "gitguardian-expands-good-samaritan-program-for-ent-e25bcde5",
-    "title": "GitGuardian Expands Good Samaritan Program for Enterprises",
-    "summary": "GitGuardian reports over 3,913 high-impact credential leaks affecting 1,532 companies since spring, highlighting enterprise exposure. Leaks arise from accidental exposure of secrets in code repositories and cloud configs, enabling credential theft and lateral movement. GitGuardian expanded its Good Samaritan Program, granting security teams free access to secret-detection tools and remediation guidance to curb future leaks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/leaked-credentials-are-an-enterprise-problem-gitguardian-extends-its-good-samaritan-program-to-security-teams/",
-    "publishedAt": "2026-11-16T14:38:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gitguardian-expands-good-samaritan-program-for-ent",
-      "article-e25bcde5",
-      "e25bcde5",
-      "gitguardian-expands-good-samaritan-program-for-ent-566c5a",
-      "gitguardian-expands-good-samaritan-program-for-enterprises"
-    ]
-  },
-  {
-    "slug": "nist-finalizes-post-quantum-guidance-as-gao-flags-4197c80f",
-    "title": "NIST Finalizes Post-Quantum Guidance as GAO Flags Agency Gaps",
-    "summary": "NIST has finalized post-quantum cryptography guidance, and a GAO report offers a reality check on federal readiness. Emerging quantum technology is expected to break the lock-and-key encryption currently protecting sensitive data, while agencies remain behind on building defenses. Security teams should monitor NIST standards and accelerate cryptographic inventory and migration planning to reduce future exposure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/nist-finalizes-post-quantum-cryptography-guidance-gao-offers-a-reality-check",
-    "publishedAt": "2026-11-16T14:22:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nist-finalizes-post-quantum-guidance-as-gao-flags",
-      "article-4197c80f",
-      "4197c80f",
-      "nist-finalizes-post-quantum-guidance-as-gao-flags-5d3d19",
-      "nist-finalizes-post-quantum-guidance-as-gao-flags-agency-gap"
-    ]
-  },
-  {
-    "slug": "uk-criticized-for-cyber-security-bill-shortcomings-cccc7f37",
-    "title": "UK Criticized for Cyber Security Bill Shortcomings",
-    "summary": "A National Resilience Committee report warns that Britain’s upcoming Cyber Security and Resilience Bill falls short of required security standards. The report, released eight days before the bill’s vote, highlights gaps in protecting critical infrastructure from hostile state actors. Stakeholders should demand stronger safeguards, enforce compliance, and accelerate implementation of robust cyber resilience measures.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/british-government-complacent-foreign-cyber-threats",
-    "publishedAt": "2026-11-16T14:21:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uk-criticized-for-cyber-security-bill-shortcomings",
-      "article-cccc7f37",
-      "cccc7f37",
-      "uk-criticized-for-cyber-security-bill-shortcomings-182453"
-    ]
-  },
-  {
-    "slug": "eu-sanctions-pro-russian-hacktivists-and-disinform-a24641d8",
-    "title": "EU Sanctions Pro-Russian Hacktivists and Disinformation Firm",
-    "summary": "The European Union imposed sanctions on a pro-Russian hacktivist group and two dozen employees of the Moscow firm behind the Doppelgänger disinformation campaign. The sanctions aim to curb state-backed cyber operations and disrupt the firm’s influence-operations infrastructure. Affected actors must now face travel restrictions, asset freezes, and limited access to EU financial systems.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/russia-europe-sanctions-doppelganger",
-    "publishedAt": "2026-11-16T14:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eu-sanctions-pro-russian-hacktivists-and-disinform",
-      "article-a24641d8",
-      "a24641d8",
-      "eu-sanctions-pro-russian-hacktivists-and-disinform-1690be",
-      "eu-sanctions-pro-russian-hacktivists-and-disinformation-firm"
-    ]
-  },
-  {
-    "slug": "dell-advises-patches-for-multiple-storage-vulnerab-48c5c219",
-    "title": "Dell Advises Patches for Multiple Storage Vulnerabilities",
-    "summary": "Dell issued advisory AV26-1161, noting multiple vulnerabilities in Ansible Storage, OpenManage Ansible Modules, PowerScale InsightIQ, PowerStore, and Terraform Providers for Dell Storage. Affected versions include Ansible Storage for PowerFlex <3.2.0, PowerStore <3.9.0, Unity <1.2.13, and PowerScale InsightIQ <6.4.1. Administrators should review Dell’s links and apply the available patches or firmware upgrades to mitigate the vulnerabilities.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/dell-security-advisory-av26-1161",
-    "publishedAt": "2026-11-16T14:12:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "dell-advises-patches-for-multiple-storage-vulnerab",
-      "article-48c5c219",
-      "48c5c219",
-      "dell-advises-patches-for-multiple-storage-vulnerab-699b84",
-      "dell-advises-patches-for-multiple-storage-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "lithuanian-customs-restores-portal-after-cyberatta-d61d6b19",
-    "title": "Lithuanian Customs Restores Portal After Cyberattack",
-    "summary": "Lithuanian Customs experienced a cyberattack that forced the temporary shutdown of its main user-management portal on November 10. The incident may have led to a data breach, prompting the agency to investigate and remediate the vulnerability. Services were restored over the weekend after the agency applied fixes and reinforced security controls.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/lithuania-customs-agency-cyberattack",
-    "publishedAt": "2026-11-16T14:06:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "lithuanian-customs-restores-portal-after-cyberatta",
-      "article-d61d6b19",
-      "d61d6b19",
-      "lithuanian-customs-restores-portal-after-cyberatta-55119b",
-      "lithuanian-customs-restores-portal-after-cyberattack"
-    ]
-  },
-  {
-    "slug": "google-finds-hackers-using-ai-agents-to-build-and-42d8d822",
-    "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
-    "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
-    "publishedAt": "2026-11-16T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-finds-hackers-using-ai-agents-to-build-and",
-      "article-42d8d822",
-      "42d8d822",
-      "google-finds-hackers-using-ai-agents-to-build-and-73b8b6",
-      "google-finds-hackers-using-ai-agents-to-build-and-run-exploi"
-    ]
-  },
-  {
-    "slug": "threat-actors-deploy-autonomous-ai-frameworks-for-8c2c702c",
-    "title": "Threat Actors Deploy Autonomous AI Frameworks for Rapid Exploitation",
-    "summary": "Threat actors are increasingly deploying autonomous multi-agent frameworks and LLMJacking to accelerate vulnerability exploitation, per a Google Threat Intelligence update. The report highlights generative AI compressing attack timelines, scaling operations, and enabling machine-speed multi-stage intrusions, marking a critical inflection point. Security teams should monitor AI-driven threat activity, update detection rules, and prepare for rapid exploitation pipelines.",
-    "category": "General",
-    "severity": "CRITICAL",
-    "source": "Google Threat Intelligence",
-    "sourceUrl": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/",
-    "publishedAt": "2026-11-16T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "threat-actors-deploy-autonomous-ai-frameworks-for",
-      "article-8c2c702c",
-      "8c2c702c",
-      "threat-actors-deploy-autonomous-ai-frameworks-for-645570",
-      "threat-actors-deploy-autonomous-ai-frameworks-for-rapid-expl"
-    ]
-  },
-  {
-    "slug": "google-warns-of-imminent-fully-automated-ai-attack-b65b40f0",
-    "title": "Google Warns of Imminent Fully-Automated AI Attacks",
-    "summary": "Google warns that threat actors are deploying AI-powered workflows to automate vulnerability discovery and exploitation, accelerating attacks to machine speed. These AI frameworks autonomously identify software weaknesses, potentially increasing attack frequency, though no specific CVE is cited. Security teams should monitor AI-driven threat intelligence, update detection rules, and apply rapid patches to mitigate automated exploitation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
-    "publishedAt": "2026-11-16T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-warns-of-imminent-fully-automated-ai-attack",
-      "article-b65b40f0",
-      "b65b40f0",
-      "google-warns-of-imminent-fully-automated-ai-attack-35a171",
-      "google-warns-of-imminent-fully-automated-ai-attacks"
-    ]
-  },
-  {
-    "slug": "huntress-ctf-2026-retro-explores-ai-assistance-aa9c40c0",
-    "title": "Huntress CTF 2026 Retro Explores AI Assistance",
-    "summary": "Huntress hosted a retrospective of its 2026 Capture The Flag event, showcasing challenges that blended real-world scenarios with AI-driven support. Participants leveraged machine learning models to analyze logs, identify indicators, and accelerate solution development, highlighting AI’s potential in collaborative defense. The event’s findings are documented in a public report, offering guidance for integrating AI tools into security operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/ai-arena-huntress-ctf-2026-retro",
-    "publishedAt": "2026-11-16T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "huntress-ctf-2026-retro-explores-ai-assistance",
-      "article-aa9c40c0",
-      "aa9c40c0",
-      "huntress-ctf-2026-retro-explores-ai-assistance-47c7e4"
-    ]
-  },
-  {
-    "slug": "bitly-links-hijacked-redirecting-brand-posts-to-wi-acf59f17",
-    "title": "Bitly Links Hijacked, Redirecting Brand Posts to Wikipedia",
-    "summary": "Hijacked Bitly links redirect old brand social posts from McDonald's, Burger King, and others to unrelated Wikipedia pages. The flaw allows attackers to alter short URLs, causing visitors to view unrelated content and potentially exposing brand reputation. Security teams should verify link integrity, revoke compromised Bitly links, and monitor for similar hijacks to protect brand communications.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/hijacked-bitly-links-turn-old-brand-posts-into-offensive-redirects",
-    "publishedAt": "2026-11-16T13:50:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bitly-links-hijacked-redirecting-brand-posts-to-wi",
-      "article-acf59f17",
-      "acf59f17",
-      "bitly-links-hijacked-redirecting-brand-posts-to-wi-1a6362",
-      "bitly-links-hijacked-redirecting-brand-posts-to-wikipedia"
-    ]
-  },
-  {
-    "slug": "fake-prime-gaming-site-steals-ea-credentials-391fe224",
-    "title": "Fake Prime Gaming Site Steals EA Credentials",
-    "summary": "A counterfeit Prime Gaming offer lures FIFA 27 players into submitting EA passwords and 2FA codes. The phishing page mimics official branding, captures credentials via a hidden form, and forwards them to an attacker-controlled server, enabling account takeover. Users should verify URLs, enable MFA, reset passwords, and report the spoofed site to EA and Prime Gaming to stop credential theft.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/fake-prime-gaming-x-fc-27-reward-site-harvests-ea-passwords-and-2fa-codes",
-    "publishedAt": "2026-11-16T13:38:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-prime-gaming-site-steals-ea-credentials",
-      "article-391fe224",
-      "391fe224",
-      "fake-prime-gaming-site-steals-ea-credentials-3cd584"
-    ]
-  },
-  {
-    "slug": "microsoft-releases-out-of-band-update-to-address-w-80fed11e",
-    "title": "Microsoft Releases Out-of-band Update to Address Windows Licensing and Activation Errors",
-    "summary": "Microsoft released an out-of-band Windows update on November 13, 2026, to fix licensing and activation errors affecting a limited number of enterprise devices. The issue appeared after the November 2026 Windows security update and mainly affects organizations that use scripts or automated tools to manage Windows licenses.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-windows-licensing-error/",
-    "publishedAt": "2026-11-16T13:36:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-releases-out-of-band-update-to-address-w",
-      "article-80fed11e",
-      "80fed11e",
-      "microsoft-releases-out-of-band-update-to-address-w-19dc42",
-      "microsoft-releases-out-of-band-update-to-address-windows-lic"
-    ]
-  },
-  {
-    "slug": "multiple-zero-days-exploited-in-n-able-windows-chr-242212c8",
-    "title": "Multiple Zero-Days Exploited in N-able, Windows, Chrome, Fridge",
-    "summary": "Multiple zero-day vulnerabilities in N-able, Windows, Chrome, and smart-fridge software were exploited across enterprise networks. Attackers leveraged default passwords, malicious updates, and compromised security features to gain unauthorized access and exfiltrate data. Vendors have released patches; organizations should apply updates, enforce strong passwords, implement MFA, and monitor for anomalous activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
-    "publishedAt": "2026-11-16T13:27:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "multiple-zero-days-exploited-in-n-able-windows-chr",
-      "article-242212c8",
-      "242212c8",
-      "multiple-zero-days-exploited-in-n-able-windows-chr-7e0991",
-      "multiple-zero-days-exploited-in-n-able-windows-chrome-fridge"
-    ]
-  },
-  {
-    "slug": "litellm-starlette-cve-exploitation-attempts-detect-00547fd8",
-    "title": "LiteLLM/Starlette CVE Exploitation Attempts Detected",
-    "summary": "Attackers are probing LiteLLM/Starlette for CVE-2026-42271 and CVE-2026-48710 via /mcp-rest/test/tools/list requests. Both CVEs allow unauthenticated remote code execution when chained, as detailed by Horizon3.ai, exposing servers to arbitrary code execution. Patches for both CVEs are available; administrators should apply vendor updates immediately in production environments and monitor for similar request patterns.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33522",
-    "publishedAt": "2026-11-16T13:11:04.000Z",
-    "cves": [
-      "CVE-2026-42271",
-      "CVE-2026-48710"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "litellm-starlette-cve-exploitation-attempts-detect",
-      "article-00547fd8",
-      "00547fd8",
-      "litellm-starlette-cve-exploitation-attempts-detect-57dd81",
-      "litellm-starlette-cve-exploitation-attempts-detected"
-    ]
-  },
-  {
-    "slug": "marketplace-sells-infostealer-logs-with-ai-profile-afcc64fa",
-    "title": "Marketplace Sells Infostealer Logs with AI Profiles",
-    "summary": "A cybercrime forum advertises a service selling infostealer malware logs accompanied by AI-generated owner profiles. The marketplace offers searchable plain-language queries to identify victims, including employment details and valuable accounts, facilitating targeted credential theft. Security teams should block access to the forum, monitor for credential reuse, and enforce multi-factor authentication to mitigate potential account compromise.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/16/ai-powered-infostealer-marketplace-victim-profiles/",
-    "publishedAt": "2026-11-16T13:03:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "marketplace-sells-infostealer-logs-with-ai-profile",
-      "article-afcc64fa",
-      "afcc64fa",
-      "marketplace-sells-infostealer-logs-with-ai-profile-7939c8",
-      "marketplace-sells-infostealer-logs-with-ai-profiles"
-    ]
-  },
-  {
-    "slug": "windows-server-2016-support-ends-in-60-days-d681de56",
-    "title": "Windows Server 2016 Support Ends in 60 Days",
-    "summary": "Microsoft announced that Windows Server 2016 will reach end-of-support in two months, ceasing security updates and bug fixes. The announcement follows the 2024 release cycle, meaning affected servers will no longer receive patches for vulnerabilities or performance improvements. Customers are urged to migrate to newer Windows Server versions or apply extended support agreements to maintain security compliance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/",
-    "publishedAt": "2026-11-16T12:53:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-server-2016-support-ends-in-60-days",
-      "article-d681de56",
-      "d681de56",
-      "windows-server-2016-support-ends-in-60-days-36db59"
-    ]
-  },
-  {
-    "slug": "plan-digital-accounts-for-after-death-access-0b96360b",
-    "title": "Plan Digital Accounts for After-Death Access",
-    "summary": "The article explains preparing accounts for death access, targeting people who want loved ones to manage services after death. It notes major platforms lack native account-inheritance, so without planning access may be permanently lost. The guide recommends designating trusted managers, using secure vaults, and configuring recovery options like alternate email.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/how-to/2026/11/how-to-prepare-your-digital-accounts-for-after-your-death",
-    "publishedAt": "2026-11-16T12:52:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "plan-digital-accounts-for-after-death-access",
-      "article-0b96360b",
-      "0b96360b",
-      "plan-digital-accounts-for-after-death-access-71f5b7"
     ]
   }
 ];
