@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 01:52:17 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 02:46:26 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Cleared Windows Event Logs Retain Forensic EVTX Evidence</title>
@@ -17,13 +17,22 @@
       <category>General</category>
     </item>
     <item>
-      <title>VMware vCenter Authentication Bypass Exploited Since September</title>
-      <link>https://secubuzz.com/news/vmware-vcenter-authentication-bypass-exploited-sin-abaea8b7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vmware-vcenter-authentication-bypass-exploited-sin-abaea8b7</guid>
-      <description><![CDATA[Chinese-linked hackers exploited a VMware vCenter Server authentication bypass in zero-day attacks since September 2026, targeting vCenter instances worldwide. The flaw permits unauthenticated attackers to gain full administrative control, enabling remote code execution and data exfiltration; no public PoC exists. Broadcom released security updates on November 19, 2026; administrators should apply the vCenter patch immediately and enforce least-privilege access controls.]]></description>
+      <title>Windows 11 Narrator Zero-Day Bypasses BitLocker</title>
+      <link>https://secubuzz.com/news/windows-11-narrator-zero-day-bypasses-bitlocker-38f54851</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-11-narrator-zero-day-bypasses-bitlocker-38f54851</guid>
+      <description><![CDATA[Microsoft disclosed a Windows 11 zero-day, FastUnlock, allowing a physical attacker to bypass the Narrator lock-screen and run code. The flaw permits local code execution on a locked PC, exposing it even with BitLocker enabled, but does not decrypt the drive. Microsoft released a patch in the November 2026 cumulative update; users should install it promptly.]]></description>
+      <pubDate>Fri, 20 Nov 2026 01:00:42 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/windows-11-narrator-lock-screen-0-day/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>China-Linked Hackers Exploited VMware vCenter Zero-Day Since September</title>
+      <link>https://secubuzz.com/news/china-linked-hackers-exploited-vmware-vcenter-zero-66c94797</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/china-linked-hackers-exploited-vmware-vcenter-zero-66c94797</guid>
+      <description><![CDATA[China-linked attackers exploited a VMware vCenter Server zero-day authentication bypass since September 2026, compromising administrative access across worldwide instances. The flaw enables unauthenticated remote code execution and VM data exfiltration without a public proof-of-concept. Broadcom patched vCenter on November 19, 2026; administrators must apply updates immediately and enforce least-privilege API controls. The flaw is tracked as CVE-2026-123890.]]></description>
       <pubDate>Fri, 20 Nov 2026 00:26:25 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/">BleepingComputer</source>
-      <category>Vulnerability</category>
+      <category>Nation State</category>
     </item>
     <item>
       <title>Ruby Regex and Case Conversion Vulnerabilities Expose RCE Risk</title>
@@ -251,6 +260,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Microsoft Updates CVE-2026-70035 Acknowledgement Only</title>
+      <link>https://secubuzz.com/news/microsoft-updates-cve-2026-70035-acknowledgement-o-7a5d6c2c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-cve-2026-70035-acknowledgement-o-7a5d6c2c</guid>
+      <description><![CDATA[Microsoft updated the acknowledgement for CVE-2026-70035, a .NET Framework remote code execution vulnerability, with no code changes. The informational change does not alter the vulnerability's severity, exploitability, or affected versions. Administrators should verify existing mitigations remain applied, as no new patch or workaround accompanies this acknowledgement update.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70035">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Excel RCE Vulnerability CVE-2026-118302</title>
       <link>https://secubuzz.com/news/microsoft-excel-rce-vulnerability-cve-2026-118302-cd3b1070</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-excel-rce-vulnerability-cve-2026-118302-cd3b1070</guid>
@@ -413,6 +431,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Criminal IP Launches AITEM Exposure Management Platform</title>
+      <link>https://secubuzz.com/news/criminal-ip-launches-aitem-exposure-management-pla-343bfdd5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/criminal-ip-launches-aitem-exposure-management-pla-343bfdd5</guid>
+      <description><![CDATA[Criminal IP, developed by AI SPERA, launched Criminal IP AITEM on November 18, 2026, combining internet-facing asset discovery with AI-assisted investigation. The platform adds public-source exposure analysis and dark web monitoring as an evolution of Criminal IP ASM. Security teams can use AITEM to connect asset discovery with AI-powered threat exposure management.]]></description>
+      <pubDate>Thu, 19 Nov 2026 15:03:15 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/criminal-ip-launches-aitem-to-connect-asset-discovery-with-ai-powered-exposure-management/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Ransomware Warning Signs Before Encryption</title>
       <link>https://secubuzz.com/news/ransomware-warning-signs-before-encryption-78600f48</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ransomware-warning-signs-before-encryption-78600f48</guid>
@@ -428,33 +455,6 @@
       <description><![CDATA[Two critical NGINX vulnerabilities, collectively known as nginx2root, allow unauthenticated attackers to execute code remotely on vulnerable web servers. Researchers chained the flaws with a Linux kernel bug to elevate privileges to root, demonstrating a full system compromise. All supported NGINX releases have patches; administrators should apply the update and monitor for kernel exploitation attempts.]]></description>
       <pubDate>Thu, 19 Nov 2026 14:57:24 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PHP Warns of Critical Security Flaws Affecting All Supported Versions, Urges Users to Update</title>
-      <link>https://secubuzz.com/news/php-warns-of-critical-security-flaws-affecting-all-0ac633db</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-warns-of-critical-security-flaws-affecting-all-0ac633db</guid>
-      <description><![CDATA[The PHP security team has warned of vulnerabilities across all branches covered by its November 19, 2026 security update, with the most severe issues rated critical. The team urged website operators and hosting providers to update promptly. The critical flaws require non-default settings or uncommon setups, so not every installation faces the same risk.]]></description>
-      <pubDate>Thu, 19 Nov 2026 14:42:41 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/php-8-released/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Russian spies turn one cloud breach into a stepping stone for the next</title>
-      <link>https://secubuzz.com/news/russian-spies-turn-one-cloud-breach-into-a-steppin-f900f7fe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-spies-turn-one-cloud-breach-into-a-steppin-f900f7fe</guid>
-      <description><![CDATA[A Russian cyberespionage group is posing as employees of organizations it has already breached to phish new targets, Google Threat Intelligence Group (GTIG) found. Google tracks the group as COLD RELIC (also known as Star Blizzard, Callisto and Gossamer Bear), and the US Department of Justice has assessed that it operates within Russia’s Federal Security Service (FSB).]]></description>
-      <pubDate>Thu, 19 Nov 2026 14:42:20 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/19/russian-spies-impersonation-cloud-breach/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Drupal Fixes Installer Flaw Enabling Site Takeover</title>
-      <link>https://secubuzz.com/news/drupal-fixes-installer-flaw-enabling-site-takeover-cd342b87</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/drupal-fixes-installer-flaw-enabling-site-takeover-cd342b87</guid>
-      <description><![CDATA[Drupal core contains a critical installer flaw that permits unauthenticated attackers to trigger a site reinstallation and take over the site. The vulnerability requires specific configuration conditions and can lead to remote code execution if the installer is invoked without proper safeguards. All supported Drupal branches have patched releases; site administrators should apply the update and verify installer access controls.]]></description>
-      <pubDate>Thu, 19 Nov 2026 14:33:06 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
   </channel>

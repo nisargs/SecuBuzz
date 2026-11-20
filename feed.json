@@ -16,12 +16,28 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/windows-11-narrator-lock-screen-0-day/",
+    "sourceUrl": "https://cybersecuritynews.com/windows-11-narrator-lock-screen-0-day/",
+    "title": "Windows 11 Narrator Zero-Day Bypasses BitLocker",
+    "headline": "Windows 11 Narrator Zero-Day Bypasses BitLocker",
+    "summary": "Microsoft disclosed a Windows 11 zero-day, FastUnlock, allowing a physical attacker to bypass the Narrator lock-screen and run code. The flaw permits local code execution on a locked PC, exposing it even with BitLocker enabled, but does not decrypt the drive. Microsoft released a patch in the November 2026 cumulative update; users should install it promptly.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-20T01:00:42.000Z",
+    "ingestedAt": "2026-11-20T02:33:57.939Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/windows-11-narrator-lock-screen-0-day/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
-    "title": "VMware vCenter Authentication Bypass Exploited Since September",
-    "headline": "VMware vCenter Authentication Bypass Exploited Since September",
-    "summary": "Chinese-linked hackers exploited a VMware vCenter Server authentication bypass in zero-day attacks since September 2026, targeting vCenter instances worldwide. The flaw permits unauthenticated attackers to gain full administrative control, enabling remote code execution and data exfiltration; no public PoC exists. Broadcom released security updates on November 19, 2026; administrators should apply the vCenter patch immediately and enforce least-privilege access controls.",
-    "category": "VULNERABILITY",
+    "title": "China-Linked Hackers Exploited VMware vCenter Zero-Day Since September",
+    "headline": "China-Linked Hackers Exploited VMware vCenter Zero-Day Since September",
+    "summary": "China-linked attackers exploited a VMware vCenter Server zero-day authentication bypass since September 2026, compromising administrative access across worldwide instances. The flaw enables unauthenticated remote code execution and VM data exfiltration without a public proof-of-concept. Broadcom patched vCenter on November 19, 2026; administrators must apply updates immediately and enforce least-privilege API controls.",
+    "category": "NATION_STATE",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
     "publishedAt": "2026-11-20T00:26:25.000Z",
@@ -29,7 +45,15 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-vmware-vcenter-0-day/"
+      }
+    ],
+    "cves": [
+      "CVE-2026-123890"
+    ]
   },
   {
     "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-193-aws/",
@@ -437,6 +461,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70035",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70035",
+    "title": "Microsoft Updates CVE-2026-70035 Acknowledgement Only",
+    "headline": "Microsoft Updates CVE-2026-70035 Acknowledgement Only",
+    "summary": "Microsoft updated the acknowledgement for CVE-2026-70035, a .NET Framework remote code execution vulnerability, with no code changes. The informational change does not alter the vulnerability's severity, exploitability, or affected versions. Administrators should verify existing mitigations remain applied, as no new patch or workaround accompanies this acknowledgement update.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "ingestedAt": "2026-11-20T02:38:46.373Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70035",
+    "additionalSources": []
+  },
+  {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118302",
     "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118302",
     "title": "Microsoft Excel RCE Vulnerability CVE-2026-118302",
@@ -726,6 +766,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/criminal-ip-launches-aitem-to-connect-asset-discovery-with-ai-powered-exposure-management/",
+    "sourceUrl": "https://cybersecuritynews.com/criminal-ip-launches-aitem-to-connect-asset-discovery-with-ai-powered-exposure-management/",
+    "title": "Criminal IP Launches AITEM Exposure Management Platform",
+    "headline": "Criminal IP Launches AITEM Exposure Management Platform",
+    "summary": "Criminal IP, developed by AI SPERA, launched Criminal IP AITEM on November 18, 2026, combining internet-facing asset discovery with AI-assisted investigation. The platform adds public-source exposure analysis and dark web monitoring as an evolution of Criminal IP ASM. Security teams can use AITEM to connect asset discovery with AI-powered threat exposure management.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-19T15:03:15.000Z",
+    "ingestedAt": "2026-11-20T02:39:55.921Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/criminal-ip-launches-aitem-to-connect-asset-discovery-with-ai-powered-exposure-management/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
     "title": "Ransomware Warning Signs Before Encryption",
@@ -821,6 +877,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/muse-reads-encrypted-messages/",
+    "sourceUrl": "https://cybersecuritynews.com/muse-reads-encrypted-messages/",
+    "title": "Meta AI Agent Muse Reads Displayed Encrypted Message Text",
+    "headline": "Meta AI Agent Muse Reads Displayed Encrypted Message Text",
+    "summary": "Meta AI agent Muse read Signal message text on Android phones and Macs without directly connecting to the encrypted messaging app, Reuters reported. The investigation found Muse could use Android notifications and macOS permissions to view text already displayed on a device, and tests did not show Signal encryption was broken.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-19T14:11:32.000Z",
+    "ingestedAt": "2026-11-20T02:39:55.921Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/muse-reads-encrypted-messages/",
     "additionalSources": []
   },
   {
@@ -1129,6 +1201,38 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
+    "title": "Elecbrakes Brake Control Vulnerabilities Exposed",
+    "headline": "Elecbrakes Brake Control Vulnerabilities Exposed",
+    "summary": "CVE-2026-124281, CVE-2026-125273, and CVE-2026-96805 allow unauthenticated attackers to control Elecbrakes EB2, VM1, and ELBC2000 firmware, enabling brake manipulation and safety feature disabling. The vulnerabilities stem from missing authentication for critical functions, dangerous method exposure, and an unprotected firmware-update channel, with VM1 scoring CVSS 9.6. Manufacturers issued emergency patches; teams should update firmware immediately and verify integrity to prevent unauthorized updates.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-11-19T12:00:00.000Z",
+    "ingestedAt": "2026-11-20T02:34:07.559Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+    "title": "OpenPLC Runtime Race Condition Allows Unauthenticated Admin Creation",
+    "headline": "OpenPLC Runtime Race Condition Allows Unauthenticated Admin Creation",
+    "summary": "A race condition in Autonomy Logic OpenPLC Runtime versions 4.2.4 and prior can create multiple unauthenticated admin accounts. Tracked as CVE-2026-126088 and rated CVSS 8.1, the flaw lets concurrent requests pass the existence check before any user is committed. Security teams should upgrade affected OpenPLC Runtime deployments and restrict network access to the runtime interface.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-11-19T12:00:00.000Z",
+    "ingestedAt": "2026-11-20T02:39:55.921Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
     "sourceUrl": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
     "title": "Palo Alto PAN-OS Exposed to PHP RCE Vulnerabilities",
@@ -1178,6 +1282,22 @@
     "isFallback": true
   },
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/19/sonicwall-gen-6-firewalls-reach-end-of-support/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/sonicwall-gen-6-firewalls-reach-end-of-support/",
+    "title": "SonicWall Urges Immediate Replacement of Gen 6 Firewalls",
+    "headline": "SonicWall Urges Immediate Replacement of Gen 6 Firewalls",
+    "summary": "SonicWall is urging customers to replace Gen 6 and Gen 6.5 firewalls running SonicOS 6.x because the appliances have reached end of support. The company says no further firmware updates or security patches will be issued regardless of severity, leaving internet-facing units exposed. Security teams should remove these devices from the internet edge and migrate to supported hardware immediately.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-19T10:44:29.000Z",
+    "ingestedAt": "2026-11-20T02:39:55.921Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/19/sonicwall-gen-6-firewalls-reach-end-of-support/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/n-able-confirms-server-breach/",
     "sourceUrl": "https://cybersecuritynews.com/n-able-confirms-server-breach/",
     "title": "N-Able Breach: Management Access Disabled",
@@ -1207,6 +1327,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/19/bitwarden-windows-macos-passkeys-integration/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/bitwarden-windows-macos-passkeys-integration/",
+    "title": "Bitwarden Integrates Native Passkey Support on Desktop Systems",
+    "headline": "Bitwarden Integrates Native Passkey Support on Desktop Systems",
+    "summary": "Bitwarden integrated native passkey support across Windows 11 and macOS operating systems to simplify passwordless access. The integration leverages Windows Hello and Apple Touch ID mechanisms to authenticate users and unlock encrypted credentials stored in vault repositories. Security administrators can deploy the updated Bitwarden client across desktop environments to enable operating system level passkey creation and management.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-19T10:39:33.000Z",
+    "ingestedAt": "2026-11-20T02:39:17.979Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/19/bitwarden-windows-macos-passkeys-integration/",
     "additionalSources": []
   },
   {
@@ -2173,11 +2309,11 @@
   {
     "id": "https://ubuntu.com/security/notices/USN-9155-1",
     "sourceUrl": "https://ubuntu.com/security/notices/USN-9155-1",
-    "title": "USN-9155-1: OpenJDK 17 vulnerabilities",
-    "headline": "USN-9155-1: OpenJDK 17 vulnerabilities",
-    "summary": "A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 17 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 17 did not correctly authorize users.",
+    "title": "Palo Alto Networks and Ubuntu Address CVE-2026-114938 Java Vulnerability",
+    "headline": "Palo Alto Networks and Ubuntu Address CVE-2026-114938 Java Vulnerability",
+    "summary": "Palo Alto Networks and Ubuntu both address CVE-2026-114938, a critical Java/OpenJDK flaw affecting enterprise and OpenJDK 17 deployments. The vulnerability enables remote attackers to cause denial of service or execute arbitrary code, risking compromise of vulnerable systems. Administrators should apply vendor updates and follow Palo Alto and Ubuntu advisories for mitigation.",
     "category": "CVE",
-    "severity": "MEDIUM",
+    "severity": "CRITICAL",
     "source": "Ubuntu Security Notices",
     "publishedAt": "2026-11-18T22:10:58.000Z",
     "ingestedAt": "2026-11-19T01:44:26.769Z",
@@ -2193,7 +2329,12 @@
       "CVE-2026-114945",
       "CVE-2026-114946"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Palo Alto Networks PSIRT",
+        "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-114938"
+      }
+    ],
     "isFallback": true
   },
   {
@@ -2985,6 +3126,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://arcticwolf.com/resources/press-releases/arctic-wolf-named-a-visionary-leader-in-frost-radar-for-ai-security-operations-centers/",
+    "sourceUrl": "https://arcticwolf.com/resources/press-releases/arctic-wolf-named-a-visionary-leader-in-frost-radar-for-ai-security-operations-centers/",
+    "title": "Arctic Wolf Named Visionary in AI SOC Industry Report",
+    "headline": "Arctic Wolf Named Visionary in AI SOC Industry Report",
+    "summary": "Frost & Sullivan named cybersecurity provider Arctic Wolf a Visionary Leader in its Frost Radar AI Security Operations Centers 2026 report. According to the report, the evaluation recognizes the Aurora Agentic SOC platform for combining agentic artificial intelligence with human expertise. Security teams can review the research metrics to assess operational AI analytics capabilities.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "publishedAt": "2026-11-18T15:16:47.000Z",
+    "ingestedAt": "2026-11-20T02:37:46.954Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://arcticwolf.com/resources/press-releases/arctic-wolf-named-a-visionary-leader-in-frost-radar-for-ai-security-operations-centers/",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/russia-cyber-espionage-google",
     "sourceUrl": "https://therecord.media/russia-cyber-espionage-google",
     "title": "Russian State Hackers Exploit Stolen Cloud Data for Espionage",
@@ -3242,6 +3399,38 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cyber.gc.ca/en/alerts-advisories/oracle-corporation-security-advisory-av26-1170",
+    "additionalSources": []
+  },
+  {
+    "id": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-android-update_01196380134.html",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-android-update_01196380134.html",
+    "title": "Chrome Beta 159 Released for Android",
+    "headline": "Chrome Beta 159 Released for Android",
+    "summary": "Google released Chrome Beta 159 (159.0.8154.18) for Android via Google Play. The update includes partial changes from the Git log, with new features detailed on the Chromium blog and web platform updates. Users can report issues via bug filing; no security fixes are mentioned in this beta release.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-11-18T12:28:32.268Z",
+    "ingestedAt": "2026-11-20T02:38:46.373Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-android-update_01196380134.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
+    "title": "TPM Lockout Bypass Cracks Windows Hello BitLocker PINs",
+    "headline": "TPM Lockout Bypass Cracks Windows Hello BitLocker PINs",
+    "summary": "Researchers found TPM lockout for Windows Hello and BitLocker PINs resettable by opening PC cases on AMD and some Intel systems. This physical flaw enables offline brute-forcing of short PINs, with lab tests cracking a four-digit Hello PIN and six-digit BitLocker PIN within days. Mitigation requires longer PINs or passwords, as no firmware patch addresses the hardware lockout reset mechanism.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-18T12:28:30.000Z",
+    "ingestedAt": "2026-11-20T02:38:46.373Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
     "additionalSources": []
   },
   {
@@ -3509,6 +3698,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.welivesecurity.com/en/scams/who-was-trying-phone-how-one-ring-phone-scams-work/",
+    "sourceUrl": "https://www.welivesecurity.com/en/scams/who-was-trying-phone-how-one-ring-phone-scams-work/",
+    "title": "Understanding and Preventing Wangiri One-Ring Phone Scams",
+    "headline": "Understanding and Preventing Wangiri One-Ring Phone Scams",
+    "summary": "ESET analyzed wangiri phone scams where attackers trigger single-ring calls to entice targets into calling premium-rate numbers. The scam relies on automated robocalling systems to generate financial fraud via exorbitant per-minute phone charges when victims return missed calls. Users must avoid calling back unknown international numbers and block persistent fraudulent callers through mobile operating system settings.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "publishedAt": "2026-11-18T10:00:00.000Z",
+    "ingestedAt": "2026-11-20T02:39:17.979Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.welivesecurity.com/en/scams/who-was-trying-phone-how-one-ring-phone-scams-work/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/anthropic-cuts-critical-vulnerability-disclosure-deadline/",
     "sourceUrl": "https://cybersecuritynews.com/anthropic-cuts-critical-vulnerability-disclosure-deadline/",
     "title": "Anthropic Cuts Vulnerability Disclosure Deadline to 30 Days",
@@ -3708,6 +3913,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.huntress.com/blog/what-bec-looks-like",
+    "sourceUrl": "https://www.huntress.com/blog/what-bec-looks-like",
+    "title": "Detecting Business Email Compromise in Trusted Threads",
+    "headline": "Detecting Business Email Compromise in Trusted Threads",
+    "summary": "Huntress detailed how attackers exploit trusted vendor and billing email threads to conduct Business Email Compromise operations. Attackers obscure illicit activity within established communications to bypass conventional email filters and trick targets into unauthorized financial transfers. Defensive teams should monitor suspicious inbox forwarding rules and implement multi-factor authentication to intercept compromised accounts.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Huntress",
+    "publishedAt": "2026-11-18T08:00:00.000Z",
+    "ingestedAt": "2026-11-20T02:39:17.979Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.huntress.com/blog/what-bec-looks-like",
+    "additionalSources": []
+  },
+  {
     "id": "https://fortiguard.fortinet.com/psirt/FG-IR-26-278",
     "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-278",
     "title": "Java4Shell Vulnerability - CVE-2026-114938",
@@ -3869,6 +4090,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/18/winrar-bubbleloader-malware/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-siem/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-siem/",
+    "title": "CrowdStrike Launches Falcon Next-Gen SIEM Platform",
+    "headline": "CrowdStrike Launches Falcon Next-Gen SIEM Platform",
+    "summary": "CrowdStrike announced Falcon Next-Gen SIEM as the engine for an agentic security operations center. The platform integrates AI-driven analytics, automated response, and unified data ingestion to accelerate threat detection. Customers can adopt the SIEM module within the Falcon platform, though no specific deployment timeline or pricing was disclosed.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-11-18T06:00:00.000Z",
+    "ingestedAt": "2026-11-20T02:38:46.373Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-siem/",
     "additionalSources": []
   },
   {
@@ -8172,243 +8409,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/apple-reveals-secure-exclaves/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124223",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124223",
-    "title": "CVE-2026-124223 Microsoft Office SharePoint Remote Code Execution Vulnerability",
-    "headline": "CVE-2026-124223 Microsoft Office SharePoint Remote Code Execution Vulnerability",
-    "summary": "This CVE was addressed by updates that were released in November 2026, but the CVE was inadvertently omitted from the November 2026 Security Updates. Customers who have already installed the November 2026 updates do not need to take any further action.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-16T16:00:00.000Z",
-    "ingestedAt": "2026-11-16T19:44:12.052Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-124223"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124222",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124222",
-    "title": "Microsoft Office SharePoint Elevation Vulnerability CVE-2026-124222",
-    "headline": "Microsoft Office SharePoint Elevation Vulnerability CVE-2026-124222",
-    "summary": "Microsoft Office SharePoint contains an elevation of privilege flaw identified as CVE-2026-124222, affecting privileged users. The flaw was patched in November 2026 updates, but the CVE was inadvertently omitted from the release notes. Customers who have installed the November 2026 updates need not take further action, but should verify patch status.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-16T16:00:00.000Z",
-    "ingestedAt": "2026-11-16T19:44:18.953Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124222",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/uk-ofcom-child-safety-rules-client-side-scanning-left-out",
-    "sourceUrl": "https://therecord.media/uk-ofcom-child-safety-rules-client-side-scanning-left-out",
-    "title": "UK Excludes Client-Side Scanning from Child-Safety Rules",
-    "headline": "UK Excludes Client-Side Scanning from Child-Safety Rules",
-    "summary": "Ofcom said UK child-safety rules will not mandate client-side scanning of personal devices for child-abuse images, leaving tech firms without a regulatory requirement. The decision reflects Ofcom’s limited authority over device-level enforcement, creating a gap that could let child-abuse content remain undetected. Tech firms should adopt internal scanning, user-reporting, and privacy-preserving detection tools to mitigate the regulatory shortfall.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-11-16T15:56:00.000Z",
-    "ingestedAt": "2026-11-16T17:45:09.579Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://therecord.media/uk-ofcom-child-safety-rules-client-side-scanning-left-out",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/hackers-use-artex/",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-artex/",
-    "title": "AI Tools ARTEX, PentAGI, HexStrike Automate Attacks",
-    "headline": "AI Tools ARTEX, PentAGI, HexStrike Automate Attacks",
-    "summary": "Cisco Talos reports that ARTEX, PentAGI, and HexStrike AI platforms automate reconnaissance, vulnerability testing, and follow-on exploits. These tools combine security utilities with AI agents, enabling operators to run tasks concurrently and accelerate target selection; no public exploit yet. Security teams should monitor AI-driven activity, enforce strict access controls on testing tools, and update detection rules to flag automated scanning.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-16T15:48:20.000Z",
-    "ingestedAt": "2026-11-16T16:43:17.092Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/hackers-use-artex/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
-    "title": "Fandango Checkout Skimmers Expose Card Details",
-    "headline": "Fandango Checkout Skimmers Expose Card Details",
-    "summary": "Fandango’s checkout pages were compromised, allowing attackers to capture credit and debit card numbers and CVVs via injected skimmer scripts. The flaw stemmed from missing content-security-policy headers, enabling malicious code to harvest payment data during transaction processing. Fandango has urged customers to monitor accounts, deployed CSP headers, and is conducting a full code audit to prevent future exfiltration.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-16T15:44:21.000Z",
-    "ingestedAt": "2026-11-16T16:43:17.092Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/fandango-payment-card-skimmer-breach"
-      }
-    ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/fully-automated-ai-attacks/",
-    "sourceUrl": "https://cybersecuritynews.com/fully-automated-ai-attacks/",
-    "title": "Google: Hackers Automate Attacks Using AI Agents",
-    "headline": "Google: Hackers Automate Attacks Using AI Agents",
-    "summary": "Hackers deploy AI agents that autonomously scan, breach, and move through networks, per Google and Mandiant. These agents use AI to reduce human oversight, enabling rapid lateral movement and exploitation of network vulnerabilities, raising threat level to critical. Security teams should monitor for automated reconnaissance, enforce strict access controls, and update detection rules to flag AI-driven activity.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-16T15:36:55.000Z",
-    "ingestedAt": "2026-11-16T18:44:09.486Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/fully-automated-ai-attacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cyber.gc.ca/en/alerts-advisories/qualcomm-security-advisory-av26-1164",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/qualcomm-security-advisory-av26-1164",
-    "title": "Qualcomm Releases Advisory for Product Vulnerabilities",
-    "headline": "Qualcomm Releases Advisory for Product Vulnerabilities",
-    "summary": "Qualcomm released advisory AV26-1164 on November 2, 2026, detailing multiple vulnerabilities affecting its product line. The flaws could allow attackers to gain unauthorized access or disrupt device operation, though no public exploits have been reported. Users and administrators should review the advisory link and apply available updates to mitigate the risks.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "publishedAt": "2026-11-16T15:31:52.000Z",
-    "ingestedAt": "2026-11-16T15:43:14.984Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cyber.gc.ca/en/alerts-advisories/qualcomm-security-advisory-av26-1164",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/",
-    "sourceUrl": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/",
-    "title": "Google Project Zero Shortens Disclosure Window to 30 Days",
-    "headline": "Google Project Zero Shortens Disclosure Window to 30 Days",
-    "summary": "Google Project Zero announced a policy change that shortens the public bug disclosure deadline to 30 days, replacing the prior 60- or 120-day windows. The shift aims to accelerate vendor patching and reduce the window attackers can exploit disclosed vulnerabilities while balancing transparency. Security researchers and vendors must adjust reporting and remediation schedules to comply with the new 30-day timeline.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-16T15:31:25.000Z",
-    "ingestedAt": "2026-11-16T15:43:14.983Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/google-project-zero-bug-disclosure-deadlines"
-      }
-    ]
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-8997-2",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8997-2",
-    "title": "Net-SNMP SMUX Module Causes Denial of Service",
-    "headline": "Net-SNMP SMUX Module Causes Denial of Service",
-    "summary": "A flaw in Net-SNMP’s SMUX module allows unauthenticated remote connections to be mishandled, potentially causing the daemon to block indefinitely. The resulting denial of service could disrupt SNMP monitoring on affected Ubuntu LTS releases, though no active exploitation has been reported. Ubuntu has released USN-8997-2 to patch the issue; administrators should apply the update promptly to restore service availability.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-11-16T15:28:07.000Z",
-    "ingestedAt": "2026-11-16T18:44:09.486Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://ubuntu.com/security/notices/USN-8997-2",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/",
-    "sourceUrl": "https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/",
-    "title": "Barracuda Breached Using AI-Powered Artex Framework",
-    "headline": "Barracuda Breached Using AI-Powered Artex Framework",
-    "summary": "Barracuda Networks suffered a breach as attackers leveraged the Artex agentic AI penetration testing framework. The attack exploited automated vulnerability discovery and exploitation capabilities, enabling rapid compromise of Barracuda’s security appliances without prior credential theft. Security teams should review Barracuda appliance logs, apply the latest vendor patches, and implement network segmentation to contain potential lateral movement.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-16T15:07:32.000Z",
-    "ingestedAt": "2026-11-16T15:43:18.489Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
-    "title": "CJIS Password and MFA Compliance Steps",
-    "headline": "CJIS Password and MFA Compliance Steps",
-    "summary": "The FBI’s CJIS Security Policy now mandates stronger passwords and MFA enforcement for all law-enforcement accounts. Specops Software provides seven practical steps to block compromised passwords, enforce MFA, and satisfy the updated policy. Organizations should implement these controls, audit password hygiene, and verify MFA deployment to remain compliant with CJIS regulations.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-16T15:01:11.000Z",
-    "ingestedAt": "2026-11-16T15:43:18.489Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1163",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1163",
-    "title": "Red Hat Issues Advisory for Multiple Product Vulnerabilities",
-    "headline": "Red Hat Issues Advisory for Multiple Product Vulnerabilities",
-    "summary": "Red Hat issued advisory AV26-1163 on November 16, 2026, covering vulnerabilities in RHEL 6/7/10, Hardened Images, OpenShift Dev Spaces, Satellite, and Quay. The weaknesses could enable unauthorized access or privilege escalation across affected versions, yet no active exploitation has been confirmed. Administrators should review the advisory and apply the recommended patches or updates to secure their environments.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "publishedAt": "2026-11-16T14:57:54.000Z",
-    "ingestedAt": "2026-11-16T15:43:14.984Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1163",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/mustang-panda-linked-hackers/",
-    "sourceUrl": "https://cybersecuritynews.com/mustang-panda-linked-hackers/",
-    "title": "Mustang Panda Deploys LOTUSLITE V2 via Zoho WorkDrive",
-    "headline": "Mustang Panda Deploys LOTUSLITE V2 via Zoho WorkDrive",
-    "summary": "Mustang Panda-linked actors are distributing LOTUSLITE V2 malware through malicious Zoho WorkDrive downloads, targeting Thai organizations. The campaign embeds a trusted PDFgear executable, loads malicious DLLs, establishes registry persistence, and uses encrypted C2 to maintain Windows access. Defenders should block Zoho WorkDrive traffic, monitor for PDFgear execution, and enforce application whitelisting to mitigate this threat.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-16T14:48:31.000Z",
-    "ingestedAt": "2026-11-16T19:44:18.953Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/mustang-panda-linked-hackers/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/",
-    "sourceUrl": "https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/",
-    "title": "TSMC Confirms Cloud Provider Data Breach Exposing Employee Info",
-    "headline": "TSMC Confirms Cloud Provider Data Breach Exposing Employee Info",
-    "summary": "TSMC confirmed a data breach at an unnamed cloud provider that exposed personal information of current and former employees. The exfiltration involved roughly 6.9 GB of data, including names, addresses, and employment details, with no credential compromise reported. Affected parties should verify data integrity, monitor for suspicious activity, and coordinate with the provider to assess controls and remediate.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Check Point Research",
-    "publishedAt": "2026-11-16T14:44:36.000Z",
-    "ingestedAt": "2026-11-16T15:43:18.489Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/",
     "additionalSources": []
   }
 ]
