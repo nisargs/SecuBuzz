@@ -1,9 +1,14 @@
 # SecuBuzz Architectural Rules & Persistent Memory
 
-## 0. REPOSITORY VISIBILITY: RESTORED TO PRIVATE (COMPLETED NOV 1, 2026)
-- **Status**: The repository visibility was temporarily made **Public** on October 25, 2026, to bridge the remaining 6 days of October after reaching the 2,000 GitHub Actions free runner minutes quota.
-- **Completed**: Confirmed on November 1, 2026, that the repository visibility was switched back to **Private**. Do NOT prompt the user again.
-- **Runner Quota Invariant**: The ingestion pipeline runs hourly (`cron: "17 * * * *"` = 24 runs/day = ~720-1,080 minutes/month, consuming ~36-54% of the 2,000 free monthly allowance). The watchdog workflow is dialed to 6-hour intervals (`cron: "37 */6 * * *"` = 120 minutes/month), keeping total automated consumption safely below 1,200 minutes (leaving an 800+ minute buffer).
+## 0. REPOSITORY VISIBILITY: TEMPORARILY BRIDGED TO PUBLIC (NOV 19, 2026 – DEC 1, 2026)
+- **Status**: The repository visibility was switched to **Public** on November 19, 2026, to bridge the remaining 11 days of November after reaching 90% (1,800 / 2,000) of the private GitHub Actions runner minutes allowance.
+- **Active State (Public)**: While public, all GitHub Actions workflows (`ingest.yml`, `watchdog.yml`) consume **0 minutes** from the account quota (unlimited free runner minutes on public repos). The 200 remaining private minutes are frozen and will not be exhausted.
+- **Quota Accounting Root Cause**: GitHub Actions calculates billable minutes using integer ceiling rounding (e.g., a 65s run is billed as 2 whole minutes; a 125s run is billed as 3 minutes). Across 24 hourly ingest runs and 8 watchdog runs per day, actual billable consumption averaged ~95 minutes/day, consuming 1,800 minutes in 19 days.
+- **December 1 Restoration Protocol**:
+  - On **December 1, 2026**, when GitHub's billing cycle resets the 2,000-minute quota, the user will switch repository visibility back to **Private**.
+  - Before restoring to Private, the workflow footprint must be streamlined:
+    1. Dial down `watchdog.yml` from 3-hour intervals (`*/3`) to 12-hour intervals (`*/12`) or rely strictly on the Cloudflare edge monitor (`/health`) to save ~360 billed minutes/month.
+    2. Optimize `ingest.yml` checkout to `fetch-depth: 10` instead of full history (`fetch-depth: 0`) to trim runner execution time.
 
 ## 1. Expo SDK 58 Standards (Release v1.1.0, Nov 15, 2026)
 - Read exact versioned docs at https://docs.expo.dev/versions/v58.0.0/ before writing code.
