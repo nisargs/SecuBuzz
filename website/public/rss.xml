@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 23:47:31 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 00:52:11 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>VMware vCenter Authentication Bypass Exploited Since September</title>
+      <link>https://secubuzz.com/news/vmware-vcenter-authentication-bypass-exploited-sin-abaea8b7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vmware-vcenter-authentication-bypass-exploited-sin-abaea8b7</guid>
+      <description><![CDATA[Chinese-linked hackers exploited a VMware vCenter Server authentication bypass in zero-day attacks since September 2026, targeting vCenter instances worldwide. The flaw permits unauthenticated attackers to gain full administrative control, enabling remote code execution and data exfiltration; no public PoC exists. Broadcom released security updates on November 19, 2026; administrators should apply the vCenter patch immediately and enforce least-privilege access controls.]]></description>
+      <pubDate>Fri, 20 Nov 2026 00:26:25 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Ruby Regex and Case Conversion Vulnerabilities Expose RCE Risk</title>
       <link>https://secubuzz.com/news/ruby-regex-and-case-conversion-vulnerabilities-exp-3c5ea493</link>
@@ -15,6 +24,15 @@
       <pubDate>Thu, 19 Nov 2026 23:06:34 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-193-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>SBC Medical Group Data Breach Exposes 1.6 Million Customers</title>
+      <link>https://secubuzz.com/news/sbc-medical-group-data-breach-exposes-1-6-million-5c9214e3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sbc-medical-group-data-breach-exposes-1-6-million-5c9214e3</guid>
+      <description><![CDATA[SBC Medical Group disclosed two incidents that exposed personal data of 1.6 million customers and employees, per a SEC filing. The breaches compromised sensitive identifiers and possibly health records, though the full extent of data accessed is not detailed. SBC notified affected parties, hired forensic investigators, and is tightening security controls to mitigate future risks.]]></description>
+      <pubDate>Thu, 19 Nov 2026 22:25:42 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/">BleepingComputer</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>phpAfterShell Exploits Enable PHP Remote Code Execution</title>
@@ -33,6 +51,15 @@
       <pubDate>Thu, 19 Nov 2026 21:46:07 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-191-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>ASUS Issues Control Center Express Hard-Coded Key Fix</title>
+      <link>https://secubuzz.com/news/asus-issues-control-center-express-hard-coded-key-b92d6bf8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/asus-issues-control-center-express-hard-coded-key-b92d6bf8</guid>
+      <description><![CDATA[ASUS released Control Center Express v1.7.29 to patch three critical flaws that could let remote attackers gain administrative control of the console and devices. The vulnerabilities stem from hard-coded cryptographic keys, enabling unauthorized privileged access and potential compromise of device configuration. Administrators should upgrade to v1.7.29, apply the patch, and audit device access controls to prevent exploitation.]]></description>
+      <pubDate>Thu, 19 Nov 2026 21:15:59 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/">BleepingComputer</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>USN-9176-1: Ruby vulnerabilities</title>
@@ -260,6 +287,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Russian spies turn one cloud breach into a stepping stone for the next</title>
+      <link>https://secubuzz.com/news/russian-spies-turn-one-cloud-breach-into-a-steppin-f900f7fe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-spies-turn-one-cloud-breach-into-a-steppin-f900f7fe</guid>
+      <description><![CDATA[A Russian cyberespionage group is posing as employees of organizations it has already breached to phish new targets, Google Threat Intelligence Group (GTIG) found. Google tracks the group as COLD RELIC (also known as Star Blizzard, Callisto and Gossamer Bear), and the US Department of Justice has assessed that it operates within Russia’s Federal Security Service (FSB).]]></description>
+      <pubDate>Thu, 19 Nov 2026 14:42:20 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/19/russian-spies-impersonation-cloud-breach/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Drupal Fixes Installer Flaw Enabling Site Takeover</title>
       <link>https://secubuzz.com/news/drupal-fixes-installer-flaw-enabling-site-takeover-cd342b87</link>
       <guid isPermaLink="true">https://secubuzz.com/news/drupal-fixes-installer-flaw-enabling-site-takeover-cd342b87</guid>
@@ -420,42 +456,6 @@
       <pubDate>Thu, 19 Nov 2026 12:26:09 GMT</pubDate>
       <source url="https://cybersecuritynews.com/device-code-authentication/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>StepSecurity Raises $20M for Supply Chain Defense</title>
-      <link>https://secubuzz.com/news/stepsecurity-raises-20m-for-supply-chain-defense-0bdac8bf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/stepsecurity-raises-20m-for-supply-chain-defense-0bdac8bf</guid>
-      <description><![CDATA[StepSecurity announced a $20M funding round to expand its supply chain protection platform. The capital will accelerate development and distribution of its security solutions, targeting supply chain risk mitigation for enterprises and supporting rapid scaling. No immediate patch or vulnerability; the announcement signals investment in future defensive capabilities within the cybersecurity market.]]></description>
-      <pubDate>Thu, 19 Nov 2026 12:23:34 GMT</pubDate>
-      <source url="https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apache Roller, Axis Flaws Exploited in Confluence Attacks</title>
-      <link>https://secubuzz.com/news/apache-roller-axis-flaws-exploited-in-confluence-a-2278081c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-roller-axis-flaws-exploited-in-confluence-a-2278081c</guid>
-      <description><![CDATA[Attackers have exploited critical vulnerabilities in Apache Roller and Axis, targeting Confluence Data Center deployments. The Axis flaw permits remote code execution through malformed XML, while the Roller issue allows unauthorized file uploads, both with CVSS scores above 8.0. Administrators should apply vendor patches, disable XML processing if possible, and enforce strict file-type validation to mitigate exploitation.]]></description>
-      <pubDate>Thu, 19 Nov 2026 12:13:24 GMT</pubDate>
-      <source url="https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Palo Alto PAN-OS Exposed to PHP RCE Vulnerabilities</title>
-      <link>https://secubuzz.com/news/palo-alto-pan-os-exposed-to-php-rce-vulnerabilitie-bee3de34</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-pan-os-exposed-to-php-rce-vulnerabilitie-bee3de34</guid>
-      <description><![CDATA[Palo Alto Networks confirmed attackers exploited two PHP flaws, CVE-2026-109618 and CVE-2026-109619, on PAN-OS interfaces exposed to the internet. Both flaws allow unauthenticated remote code execution on the web server, enabling attackers to run arbitrary code without credentials. Palo Alto released patches; administrators should apply updates immediately and restrict internet exposure of management interfaces.]]></description>
-      <pubDate>Thu, 19 Nov 2026 11:52:23 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/everything-is-web-application-including.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Tests Edge Lockdown Mode Disabling GPU APIs</title>
-      <link>https://secubuzz.com/news/microsoft-tests-edge-lockdown-mode-disabling-gpu-a-a4704323</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-tests-edge-lockdown-mode-disabling-gpu-a-a4704323</guid>
-      <description><![CDATA[Microsoft is testing an Edge Lockdown Mode that disables WebGL, WebGL2, and WebGPU APIs to shrink the browser attack surface. The feature removes GPU-accelerated rendering paths that could be leveraged for memory corruption or side-channel attacks, preserving core functionality. Microsoft plans to roll out the mode in a future update; security teams should monitor release notes for configuration options.]]></description>
-      <pubDate>Thu, 19 Nov 2026 11:46:00 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/">BleepingComputer</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

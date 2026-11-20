@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+    "title": "VMware vCenter Authentication Bypass Exploited Since September",
+    "headline": "VMware vCenter Authentication Bypass Exploited Since September",
+    "summary": "Chinese-linked hackers exploited a VMware vCenter Server authentication bypass in zero-day attacks since September 2026, targeting vCenter instances worldwide. The flaw permits unauthenticated attackers to gain full administrative control, enabling remote code execution and data exfiltration; no public PoC exists. Broadcom released security updates on November 19, 2026; administrators should apply the vCenter patch immediately and enforce least-privilege access controls.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-20T00:26:25.000Z",
+    "ingestedAt": "2026-11-20T00:43:10.190Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+    "additionalSources": []
+  },
+  {
     "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-193-aws/",
     "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-193-aws/",
     "title": "Ruby Regex and Case Conversion Vulnerabilities Expose RCE Risk",
@@ -13,6 +29,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-193-aws/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+    "title": "SBC Medical Group Data Breach Exposes 1.6 Million Customers",
+    "headline": "SBC Medical Group Data Breach Exposes 1.6 Million Customers",
+    "summary": "SBC Medical Group disclosed two incidents that exposed personal data of 1.6 million customers and employees, per a SEC filing. The breaches compromised sensitive identifiers and possibly health records, though the full extent of data accessed is not detailed. SBC notified affected parties, hired forensic investigators, and is tightening security controls to mitigate future risks.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-19T22:25:42.000Z",
+    "ingestedAt": "2026-11-20T00:43:57.526Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
     "additionalSources": []
   },
   {
@@ -49,6 +81,22 @@
     ],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
+    "title": "ASUS Issues Control Center Express Hard-Coded Key Fix",
+    "headline": "ASUS Issues Control Center Express Hard-Coded Key Fix",
+    "summary": "ASUS released Control Center Express v1.7.29 to patch three critical flaws that could let remote attackers gain administrative control of the console and devices. The vulnerabilities stem from hard-coded cryptographic keys, enabling unauthorized privileged access and potential compromise of device configuration. Administrators should upgrade to v1.7.29, apply the patch, and audit device access controls to prevent exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-19T21:15:59.000Z",
+    "ingestedAt": "2026-11-20T00:43:57.526Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
+    "additionalSources": []
   },
   {
     "id": "https://ubuntu.com/security/notices/USN-9176-1",
@@ -448,6 +496,23 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-11-19T14:42:41.000Z",
     "ingestedAt": "2026-11-19T15:44:03.587Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/19/russian-spies-impersonation-cloud-breach/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/russian-spies-impersonation-cloud-breach/",
+    "title": "Russian spies turn one cloud breach into a stepping stone for the next",
+    "headline": "Russian spies turn one cloud breach into a stepping stone for the next",
+    "summary": "A Russian cyberespionage group is posing as employees of organizations it has already breached to phish new targets, Google Threat Intelligence Group (GTIG) found. Google tracks the group as COLD RELIC (also known as Star Blizzard, Callisto and Gossamer Bear), and the US Department of Justice has assessed that it operates within Russia’s Federal Security Service (FSB).",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-19T14:42:20.000Z",
+    "ingestedAt": "2026-11-20T00:45:50.783Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "cves": [],
@@ -2238,9 +2303,9 @@
   {
     "id": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174",
     "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174",
-    "title": "F5 Releases Patches for Five Critical NGINX Vulnerabilities (CVE-2026-123007, CVE-2026-123633)",
-    "headline": "F5 Releases Patches for Five Critical NGINX Vulnerabilities (CVE-2026-123007, CVE-2026-123633)",
-    "summary": "F5 Networks issued security patches for five critical NGINX vulnerabilities affecting both NGINX Plus and open-source editions. The flaws, identified as CVE-2026-123007 and CVE-2026-123633, allow remote code execution via malformed HTTP/2 requests, posing unauthenticated RCE risk without proof-of-concept exploitation yet. Administrators should immediately apply the F5 patches and upgrade to the latest NGINX releases to mitigate potential exploitation.",
+    "title": "F5 and Cloud Providers Patch Critical NGINX HTTP/2 Flaws",
+    "headline": "F5 and Cloud Providers Patch Critical NGINX HTTP/2 Flaws",
+    "summary": "F5 Networks and cloud providers issued critical security advisories addressing multiple vulnerabilities in open-source NGINX and NGINX Plus. Tracked under CVE-2026-123007 and CVE-2026-123633, the HTTP/2 flaws allow unauthenticated remote attackers to trigger code execution and denial-of-service conditions via malformed requests. Administrators must immediately apply the latest upstream NGINX updates and deploy vendor mitigations to prevent exploitation.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Canadian Centre for Cyber Security",
@@ -2253,11 +2318,19 @@
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/nginx2root-nginx-vulnerabilities/"
+      },
+      {
+        "source": "AWS Security Bulletins",
+        "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-192-aws/"
       }
     ],
     "cves": [
       "CVE-2026-123633",
-      "CVE-2026-123007"
+      "CVE-2026-123007",
+      "CVE-2026-123634",
+      "CVE-2026-113425",
+      "CVE-2026-121810",
+      "CVE-2026-118899"
     ]
   },
   {
@@ -8333,80 +8406,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/how-to/2026/11/how-to-prepare-your-digital-accounts-for-after-your-death",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch/",
-    "sourceUrl": "https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch/",
-    "title": "Telegram Widgets Vulnerable to Remote Code Execution",
-    "headline": "Telegram Widgets Vulnerable to Remote Code Execution",
-    "summary": "Telegram’s Android and web-based widgets allow attackers to execute arbitrary code on users’ devices through insufficient JavaScript validation. The flaw enables remote code execution, potentially delivering a WebRAT, and has no public exploits yet. Telegram has not released a patch; users should disable widgets and apply future updates promptly to mitigate risk.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-16T12:48:03.000Z",
-    "ingestedAt": "2026-11-16T13:43:16.119Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
-    "title": "Six Danfoss Controller Flaws Enable Remote Takeover",
-    "headline": "Six Danfoss Controller Flaws Enable Remote Takeover",
-    "summary": "Six unpatched vulnerabilities in Danfoss AK-SM800A refrigeration controllers allow remote attackers to take full control without authentication. The flaws reside in the device’s firmware and network interface, enabling arbitrary command execution and disabling built-in authentication checks. No patch exists; operators should isolate affected units, apply firmware 5.4.0 only if it lacks the flaws, and monitor for anomalous traffic.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-16T12:34:21.000Z",
-    "ingestedAt": "2026-11-16T13:43:20.476Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
-    "title": "Retadup USB Worm Resurfaces After 7 Years, Delivering CoffeeLoader Variant to Windows Systems",
-    "headline": "Retadup USB Worm Resurfaces After 7 Years, Delivering CoffeeLoader Variant to Windows Systems",
-    "summary": "The Retadup USB worm resurfaced after seven years, targeting Windows computers via infected USB drives. It delivers a CoffeeLoader variant that exploits graphics hardware during decryption and drops a patched 7z.dll, enabling payload execution through rundll32.exe. Security teams should block rundll32 usage from unknown sources, update antivirus signatures, and monitor for the worm’s execution patterns to mitigate infection.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-16T12:33:18.000Z",
-    "ingestedAt": "2026-11-16T14:43:23.609Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/retadup-usb-worm-returns/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/podcast/2026/11/how-to-prepare-your-data-for-your-death-lock-and-code-s07e23",
-    "sourceUrl": "https://www.malwarebytes.com/blog/podcast/2026/11/how-to-prepare-your-data-for-your-death-lock-and-code-s07e23",
-    "title": "Lock and Code Podcast: Preparing Data for Death",
-    "headline": "Lock and Code Podcast: Preparing Data for Death",
-    "summary": "The Lock and Code podcast episode S07E23 discusses data organization and preparation for posthumous access. Interviewee Jed Brubaker explains strategies for securing personal data, setting up digital wills, and ensuring family members can retrieve information after death. Listeners are advised to use secure storage solutions and clear documentation, but no immediate patches or vulnerabilities are addressed.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-11-16T12:20:44.000Z",
-    "ingestedAt": "2026-11-16T12:43:24.380Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.malwarebytes.com/blog/podcast/2026/11/how-to-prepare-your-data-for-your-death-lock-and-code-s07e23",
     "additionalSources": []
   }
 ]
