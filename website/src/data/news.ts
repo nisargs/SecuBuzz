@@ -11,6 +11,81 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "sbc-medical-group-breach-exposes-2-million-custome-ca25a581",
+    "title": "SBC Medical Group Breach Exposes 2 Million Customers",
+    "summary": "Threat actors accessed databases containing customer information linked to SBC Medical Group clinics in Japan. The breach exposed personal data of over 2 million individuals, potentially including names, addresses, and medical records, though specific data types were not disclosed. SBC Medical Group has notified affected customers and is investigating the incident, urging users to monitor for suspicious activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/",
+    "publishedAt": "2026-11-20T11:36:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sbc-medical-group-breach-exposes-2-million-custome",
+      "article-ca25a581",
+      "ca25a581",
+      "sbc-medical-group-breach-exposes-2-million-custome-399bff",
+      "sbc-medical-group-breach-exposes-2-million-customers"
+    ]
+  },
+  {
+    "slug": "f5-issues-emergency-patches-for-critical-big-ip-rc-37f0d20d",
+    "title": "F5 Issues Emergency Patches for Critical BIG-IP RCE Flaws",
+    "summary": "F5 released emergency patches for five critical BIG-IP vulnerabilities that enable remote code execution or denial-of-service attacks. The flaws grant unauthenticated attackers kernel-level code execution, threatening network traffic integrity and service availability, and the vendor classifies them as critical. F5 advises applying the latest BIG-IP firmware immediately and, if delayed, disabling affected modules and limiting management access as interim mitigations.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
+    "publishedAt": "2026-11-20T10:57:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "f5-issues-emergency-patches-for-critical-big-ip-rc",
+      "article-37f0d20d",
+      "37f0d20d",
+      "f5-issues-emergency-patches-for-critical-big-ip-rc-29dc34",
+      "f5-issues-emergency-patches-for-critical-big-ip-rce-flaws"
+    ]
+  },
+  {
+    "slug": "european-commission-ai-attack-disrupts-services-879406ee",
+    "title": "European Commission AI Attack Disrupts Services",
+    "summary": "An AI-assisted cyberattack targeted European Commission services, causing temporary outages across multiple online portals. The incident involved automated reconnaissance and exploitation of exposed web interfaces, but no evidence of data exfiltration was found. Commission operators isolated affected services, applied temporary mitigations, and are monitoring for further activity while no patch is required.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
+    "publishedAt": "2026-11-20T10:51:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "european-commission-ai-attack-disrupts-services",
+      "article-879406ee",
+      "879406ee",
+      "european-commission-ai-attack-disrupts-services-5e6be5"
+    ]
+  },
+  {
+    "slug": "sonicwall-gen-6-firewalls-unpatched-advises-immedi-cb8aa657",
+    "title": "SonicWall Gen 6 Firewalls Unpatched, Advises Immediate Retirement",
+    "summary": "SonicWall announced that Generation 6 firewalls will no longer receive security updates, citing increased AI-driven attack pressure. The advisory warns that unsupported edge devices are now prime targets for automated exploitation, potentially enabling remote code execution. Customers are urged to retire Gen 6 units immediately, replace them with supported models, and block internet exposure until a replacement is deployed.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
+    "publishedAt": "2026-11-20T10:38:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sonicwall-gen-6-firewalls-unpatched-advises-immedi",
+      "article-cb8aa657",
+      "cb8aa657",
+      "sonicwall-gen-6-firewalls-unpatched-advises-immedi-1c7a0c",
+      "sonicwall-gen-6-firewalls-unpatched-advises-immediate-retire"
+    ]
+  },
+  {
     "slug": "ruby-patches-ruby2shell-heap-overflow-vulnerabilit-3bb20701",
     "title": "Ruby Patches Ruby2Shell Heap Overflow Vulnerability",
     "summary": "Ruby patched the Ruby2Shell heap-based buffer overflow that could enable remote code execution in Ruby applications. The flaw, tracked as CVE-2026-132825, allows attackers to corrupt heap memory and execute arbitrary code, potentially compromising any process running Ruby without authentication. Ruby released patch 3.2.2.1, and users should update immediately or apply the provided workaround to mitigate the vulnerability.",
@@ -29,6 +104,67 @@ export const news: NewsBrief[] = [
       "3bb20701",
       "ruby-patches-ruby2shell-heap-overflow-vulnerabilit-7a0697",
       "ruby-patches-ruby2shell-heap-overflow-vulnerability"
+    ]
+  },
+  {
+    "slug": "cisco-expressway-cve-2026-76466-breach-enables-int-d2749c00",
+    "title": "Cisco Expressway CVE-2026-76466 Breach Enables Internal Network Access",
+    "summary": "Hackers exploited Cisco Expressway CVE-2026-76466, a CVSS 9.8 unauthenticated remote code execution flaw, to breach four devices in a Russian organization. The public PoC released before the attack showed attackers could gain full control over Expressway via crafted HTTP requests.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+    "publishedAt": "2026-11-20T10:32:50.000Z",
+    "cves": [
+      "CVE-2026-76466"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-expressway-cve-2026-76466-breach-enables-int",
+      "article-d2749c00",
+      "d2749c00",
+      "cisco-expressway-cve-2026-76466-breach-enables-int-3f47a4",
+      "cisco-expressway-cve-2026-76466-breach-enables-internal-netw"
+    ]
+  },
+  {
+    "slug": "tfl-oyster-photocard-data-breach-exposes-265-000-u-afd049c0",
+    "title": "TfL Oyster Photocard Data Breach Exposes 265,000 Users",
+    "summary": "Transport for London confirmed that the Oyster photocard website was breached, exposing account details of approximately 265,000 users. The breach involved unauthorized access to the photocard system, potentially compromising personal data such as names, addresses, and card balances. TfL took the system offline, issued a security advisory, and is working with investigators to remediate the vulnerability and prevent further exposure.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/transport-for-london-oyster-photocard-data-breach/",
+    "publishedAt": "2026-11-20T10:21:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tfl-oyster-photocard-data-breach-exposes-265-000-u",
+      "article-afd049c0",
+      "afd049c0",
+      "tfl-oyster-photocard-data-breach-exposes-265-000-u-57b060",
+      "tfl-oyster-photocard-data-breach-exposes-265-000-users"
+    ]
+  },
+  {
+    "slug": "palo-alto-confirms-java-vulnerability-impacts-priv-10f5624d",
+    "title": "Palo Alto Confirms Java Vulnerability Impacts Privilege Threat Analytics and Remote Access Connector",
+    "summary": "Palo Alto Networks has confirmed that a critical Java vulnerability affects Idira Privilege Threat Analytics, Remote Access Connector, and on-premises HTML5 Gateway products. Tracked as CVE-2026-114938, the flaw could let a remote attacker run code without signing in when specific hardware and software conditions are met.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/palo-alto-confirms-java-vulnerability-impacts/",
+    "publishedAt": "2026-11-20T10:00:36.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-confirms-java-vulnerability-impacts-priv",
+      "article-10f5624d",
+      "10f5624d",
+      "palo-alto-confirms-java-vulnerability-impacts-priv-5a7914",
+      "palo-alto-confirms-java-vulnerability-impacts-privilege-thre"
     ]
   },
   {
@@ -84,6 +220,43 @@ export const news: NewsBrief[] = [
       "4d57d748",
       "european-commission-confirms-ai-generated-cyberatt-42376c",
       "european-commission-confirms-ai-generated-cyberattack"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-update-for-rhel-9-6-eus-dc0864d2",
+    "title": "Red Hat Releases Kernel Update for RHEL 9.6 EUS",
+    "summary": "Red Hat released a kernel update for RHEL 9.6 Extended Update Support that addresses multiple security bugs. The update includes fixes for vulnerabilities with CVSS scores ranging from moderate to high, as detailed in the linked CVE references. Red Hat recommends applying the update immediately to mitigate potential exploitation and maintain kernel integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100652",
+    "publishedAt": "2026-11-20T08:46:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-update-for-rhel-9-6-eus",
+      "article-dc0864d2",
+      "dc0864d2",
+      "red-hat-releases-kernel-update-for-rhel-9-6-eus-2ee085"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100661-important-kernel-security-bug-fix-c963dc72",
+    "title": "RHSA-2026:100661: Important: kernel security, bug fix, and enhancement update",
+    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100661",
+    "publishedAt": "2026-11-20T08:27:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100661-important-kernel-security-bug-fix",
+      "article-c963dc72",
+      "c963dc72",
+      "rhsa-2026-100661-important-kernel-security-bug-fix-2ee085",
+      "rhsa-2026-100661-important-kernel-security-bug-fix-and-enhan"
     ]
   },
   {
@@ -9568,225 +9741,6 @@ export const news: NewsBrief[] = [
       "281666b9",
       "pnpm-launches-experimental-lockfile-to-cut-merge-c-73f0db",
       "pnpm-launches-experimental-lockfile-to-cut-merge-conflicts"
-    ]
-  },
-  {
-    "slug": "ai-security-audits-hindered-by-excessive-instructi-59fcc490",
-    "title": "AI Security Audits Hindered by Excessive Instructions",
-    "summary": "GitHub's security research team uses AI agents to audit software for vulnerabilities, focusing initially on authentication and authorization bugs. The interview explains that overly detailed prompts can impede AI performance, so prompts are tested and trimmed for each model to improve threat modeling accuracy. Human reviewers verify each report to filter false positives before delivering findings to maintainers.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/peter-stockli-github-ai-security-audits/",
-    "publishedAt": "2026-11-17T07:00:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-security-audits-hindered-by-excessive-instructi",
-      "article-59fcc490",
-      "59fcc490",
-      "ai-security-audits-hindered-by-excessive-instructi-3a6807",
-      "ai-security-audits-hindered-by-excessive-instructions"
-    ]
-  },
-  {
-    "slug": "anthropic-shortens-disclosure-deadlines-to-30-days-cf061609",
-    "title": "Anthropic Shortens Disclosure Deadlines to 30 Days",
-    "summary": "Anthropic announced it will publicly disclose high- and critical-severity vulnerabilities after 30 days, reducing the previous 90-day window. All other reported bugs will have a 45-day disclosure period, effective for reports submitted on or after January 1 2027, while existing reports retain their original deadlines. The change aims to prevent prolonged private exposure of serious bugs in Anthropic models.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/anthropic-vulnerability-disclosure-days/",
-    "publishedAt": "2026-11-17T06:46:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-shortens-disclosure-deadlines-to-30-days",
-      "article-cf061609",
-      "cf061609",
-      "anthropic-shortens-disclosure-deadlines-to-30-days-731e97"
-    ]
-  },
-  {
-    "slug": "connectwise-screenconnect-cve-2026-84869-exploited-bee2da22",
-    "title": "ConnectWise ScreenConnect CVE-2026-84869 Exploited for Unauthenticated RCE Against MSP Servers",
-    "summary": "Attackers exploited CVE-2026-84869 in ConnectWise ScreenConnect, targeting more than 40 MSP servers with 688,000 requests. The unauthenticated remote code execution flaw, tied to insufficient input validation and guest-pushed files, lets attackers bypass authentication and run commands without user interaction. ConnectWise urges upgrading to version 26.6.5 or later and disabling third-party extensions to reduce exposure.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
-    "publishedAt": "2026-11-17T06:29:27.000Z",
-    "cves": [
-      "CVE-2026-84869"
-    ],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/msp-screenconnect-servers-targeted-in-month-long-campai"
-      }
-    ],
-    "aliases": [
-      "connectwise-screenconnect-cve-2026-84869-exploited",
-      "article-bee2da22",
-      "bee2da22",
-      "connectwise-screenconnect-cve-2026-84869-exploited-50e8fc",
-      "connectwise-screenconnect-cve-2026-84869-exploited-for-unaut"
-    ]
-  },
-  {
-    "slug": "ai-security-dominates-cyberseed-funding-837d8459",
-    "title": "AI Security Dominates Cyberseed Funding",
-    "summary": "In Q3 2026, AI-focused cybersecurity seed deals accounted for over one-third of total cybersecurity funding, despite a slight dip from the previous quarter. DataTribe’s PitchBook analysis shows capital is concentrating in fewer, larger rounds, raising the threshold for post-seed financing. The U.S. venture market remains robust, delivering one of its best quarters since 2021, even as cybersecurity seed activity slows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/cybersecurity-seed-funding-deals/",
-    "publishedAt": "2026-11-17T06:19:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-security-dominates-cyberseed-funding",
-      "article-837d8459",
-      "837d8459",
-      "ai-security-dominates-cyberseed-funding-631d83"
-    ]
-  },
-  {
-    "slug": "microsoft-unifies-patch-management-for-unbootable-e74d7bdd",
-    "title": "Microsoft Unifies Patch Management for Unbootable PCs",
-    "summary": "Microsoft expands to let Intune policy control updates, .NET Framework, and recovery for PCs that fail to boot. The controls let administrators set automatic or manual approval per update type, reducing drift and simplifying patch management. Security teams should apply Intune update, enable the policy template, and monitor compliance dashboards for timely patch deployment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/microsoft-windows-autopatch-controls/",
-    "publishedAt": "2026-11-17T06:00:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-unifies-patch-management-for-unbootable",
-      "article-e74d7bdd",
-      "e74d7bdd",
-      "microsoft-unifies-patch-management-for-unbootable-11be46",
-      "microsoft-unifies-patch-management-for-unbootable-pcs"
-    ]
-  },
-  {
-    "slug": "40-struggle-to-trace-ai-agent-actions-6e6cfe47",
-    "title": "40% Struggle to Trace AI Agent Actions",
-    "summary": "A recent report shows 40% of organizations cannot fully retrace AI agents’ actions in development pipelines, even though 99% deploy them for autonomous code changes. AI-driven development raised cloud updates by 82%, increasing release pressure that often leaves security issues unresolved. Security teams should enforce audit trails, least-privilege policies, and AI-aware monitoring to mitigate undetected changes.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/palo-alto-networks-ai-cloud-security-risks-report/",
-    "publishedAt": "2026-11-17T05:30:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "40-struggle-to-trace-ai-agent-actions",
-      "article-6e6cfe47",
-      "6e6cfe47",
-      "40-struggle-to-trace-ai-agent-actions-676ef4"
-    ]
-  },
-  {
-    "slug": "n-able-releases-hotfix-for-17-n-central-flaws-82d90aa1",
-    "title": "N-Able Releases Hotfix for 17 N-Central Flaws",
-    "summary": "N-Able released Hotfix 3 for its N-Central RMM and UEM platform, fixing 17 critical flaws that attackers had used to deploy cryptocurrency miners. The bugs involved insufficient input validation and privilege escalation, enabling remote code execution and credential theft, and were exploited in the wild.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
-    "publishedAt": "2026-11-17T05:00:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-releases-hotfix-for-17-n-central-flaws",
-      "article-82d90aa1",
-      "82d90aa1",
-      "n-able-releases-hotfix-for-17-n-central-flaws-737aa9"
-    ]
-  },
-  {
-    "slug": "peraton-rozmith-offer-cybersecurity-architect-engi-518881e2",
-    "title": "Peraton, Rozmith Offer Cybersecurity Architect, Engineer Roles",
-    "summary": "Peraton and Rozmith posted cybersecurity architect and engineer positions in the United States, targeting on-site and remote roles. Candidates will integrate security into DevSecOps, manage ATO packages, and develop security plans per DoD and DAF requirements. Applications should highlight experience in systems, networks, incident response, and risk assessment to meet the outlined responsibilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/cybersecurity-jobs-available-right-now-november-17-2026/",
-    "publishedAt": "2026-11-17T05:00:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "peraton-rozmith-offer-cybersecurity-architect-engi",
-      "article-518881e2",
-      "518881e2",
-      "peraton-rozmith-offer-cybersecurity-architect-engi-2da005",
-      "peraton-rozmith-offer-cybersecurity-architect-engineer-roles"
-    ]
-  },
-  {
-    "slug": "usn-9004-2-openjdk-25-regression-7b96459e",
-    "title": "USN-9004-2: OpenJDK 25 regression",
-    "summary": "USN-9004-1 fixed vulnerabilities in OpenJDK 25. Unfortunately, the fix included an unnecessary debuginfo file. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-91403) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9004-2",
-    "publishedAt": "2026-11-17T03:57:30.000Z",
-    "cves": [
-      "CVE-2026-91403",
-      "CVE-2026-91415",
-      "CVE-2026-91398",
-      "CVE-2026-91382",
-      "CVE-2026-91411",
-      "CVE-2026-83395",
-      "CVE-2026-83381",
-      "CVE-2026-87294",
-      "CVE-2026-87290",
-      "CVE-2026-83387",
-      "CVE-2026-91462",
-      "CVE-2026-83374",
-      "CVE-2026-91410",
-      "CVE-2026-87292",
-      "CVE-2026-91332",
-      "CVE-2026-91451",
-      "CVE-2026-91452",
-      "CVE-2026-91373",
-      "CVE-2026-83380",
-      "CVE-2026-83400",
-      "CVE-2026-91463",
-      "CVE-2026-91464",
-      "CVE-2026-91453",
-      "CVE-2026-91418",
-      "CVE-2026-91487",
-      "CVE-2026-91374",
-      "CVE-2026-91375",
-      "CVE-2026-91379",
-      "CVE-2026-91380",
-      "CVE-2026-91334",
-      "CVE-2026-87367",
-      "CVE-2026-83376",
-      "CVE-2026-91461",
-      "CVE-2026-91397",
-      "CVE-2026-91400",
-      "CVE-2026-91335",
-      "CVE-2026-91394",
-      "CVE-2026-87291",
-      "CVE-2026-83378",
-      "CVE-2026-87255",
-      "CVE-2026-91333"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9004-2-openjdk-25-regression",
-      "article-7b96459e",
-      "7b96459e",
-      "usn-9004-2-openjdk-25-regression-7e89ac"
     ]
   }
 ];

@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 10:46:34 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 11:48:45 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SBC Medical Group Breach Exposes 2 Million Customers</title>
+      <link>https://secubuzz.com/news/sbc-medical-group-breach-exposes-2-million-custome-ca25a581</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sbc-medical-group-breach-exposes-2-million-custome-ca25a581</guid>
+      <description><![CDATA[Threat actors accessed databases containing customer information linked to SBC Medical Group clinics in Japan. The breach exposed personal data of over 2 million individuals, potentially including names, addresses, and medical records, though specific data types were not disclosed. SBC Medical Group has notified affected customers and is investigating the incident, urging users to monitor for suspicious activity.]]></description>
+      <pubDate>Fri, 20 Nov 2026 11:36:51 GMT</pubDate>
+      <source url="https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>F5 Issues Emergency Patches for Critical BIG-IP RCE Flaws</title>
+      <link>https://secubuzz.com/news/f5-issues-emergency-patches-for-critical-big-ip-rc-37f0d20d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/f5-issues-emergency-patches-for-critical-big-ip-rc-37f0d20d</guid>
+      <description><![CDATA[F5 released emergency patches for five critical BIG-IP vulnerabilities that enable remote code execution or denial-of-service attacks. The flaws grant unauthenticated attackers kernel-level code execution, threatening network traffic integrity and service availability, and the vendor classifies them as critical. F5 advises applying the latest BIG-IP firmware immediately and, if delayed, disabling affected modules and limiting management access as interim mitigations.]]></description>
+      <pubDate>Fri, 20 Nov 2026 10:57:43 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>European Commission AI Attack Disrupts Services</title>
+      <link>https://secubuzz.com/news/european-commission-ai-attack-disrupts-services-879406ee</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/european-commission-ai-attack-disrupts-services-879406ee</guid>
+      <description><![CDATA[An AI-assisted cyberattack targeted European Commission services, causing temporary outages across multiple online portals. The incident involved automated reconnaissance and exploitation of exposed web interfaces, but no evidence of data exfiltration was found. Commission operators isolated affected services, applied temporary mitigations, and are monitoring for further activity while no patch is required.]]></description>
+      <pubDate>Fri, 20 Nov 2026 10:51:42 GMT</pubDate>
+      <source url="https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>SonicWall Gen 6 Firewalls Unpatched, Advises Immediate Retirement</title>
+      <link>https://secubuzz.com/news/sonicwall-gen-6-firewalls-unpatched-advises-immedi-cb8aa657</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-gen-6-firewalls-unpatched-advises-immedi-cb8aa657</guid>
+      <description><![CDATA[SonicWall announced that Generation 6 firewalls will no longer receive security updates, citing increased AI-driven attack pressure. The advisory warns that unsupported edge devices are now prime targets for automated exploitation, potentially enabling remote code execution. Customers are urged to retire Gen 6 units immediately, replace them with supported models, and block internet exposure until a replacement is deployed.]]></description>
+      <pubDate>Fri, 20 Nov 2026 10:38:22 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Ruby Patches Ruby2Shell Heap Overflow Vulnerability</title>
       <link>https://secubuzz.com/news/ruby-patches-ruby2shell-heap-overflow-vulnerabilit-3bb20701</link>
@@ -14,6 +50,33 @@
       <description><![CDATA[Ruby patched the Ruby2Shell heap-based buffer overflow that could enable remote code execution in Ruby applications. The flaw, tracked as CVE-2026-132825, allows attackers to corrupt heap memory and execute arbitrary code, potentially compromising any process running Ruby without authentication. Ruby released patch 3.2.2.1, and users should update immediately or apply the provided workaround to mitigate the vulnerability.]]></description>
       <pubDate>Fri, 20 Nov 2026 10:34:10 GMT</pubDate>
       <source url="https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Cisco Expressway CVE-2026-76466 Breach Enables Internal Network Access</title>
+      <link>https://secubuzz.com/news/cisco-expressway-cve-2026-76466-breach-enables-int-d2749c00</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-expressway-cve-2026-76466-breach-enables-int-d2749c00</guid>
+      <description><![CDATA[Hackers exploited Cisco Expressway CVE-2026-76466, a CVSS 9.8 unauthenticated remote code execution flaw, to breach four devices in a Russian organization. The public PoC released before the attack showed attackers could gain full control over Expressway via crafted HTTP requests.]]></description>
+      <pubDate>Fri, 20 Nov 2026 10:32:50 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>TfL Oyster Photocard Data Breach Exposes 265,000 Users</title>
+      <link>https://secubuzz.com/news/tfl-oyster-photocard-data-breach-exposes-265-000-u-afd049c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tfl-oyster-photocard-data-breach-exposes-265-000-u-afd049c0</guid>
+      <description><![CDATA[Transport for London confirmed that the Oyster photocard website was breached, exposing account details of approximately 265,000 users. The breach involved unauthorized access to the photocard system, potentially compromising personal data such as names, addresses, and card balances. TfL took the system offline, issued a security advisory, and is working with investigators to remediate the vulnerability and prevent further exposure.]]></description>
+      <pubDate>Fri, 20 Nov 2026 10:21:41 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/20/transport-for-london-oyster-photocard-data-breach/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Palo Alto Confirms Java Vulnerability Impacts Privilege Threat Analytics and Remote Access Connector</title>
+      <link>https://secubuzz.com/news/palo-alto-confirms-java-vulnerability-impacts-priv-10f5624d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-confirms-java-vulnerability-impacts-priv-10f5624d</guid>
+      <description><![CDATA[Palo Alto Networks has confirmed that a critical Java vulnerability affects Idira Privilege Threat Analytics, Remote Access Connector, and on-premises HTML5 Gateway products. Tracked as CVE-2026-114938, the flaw could let a remote attacker run code without signing in when specific hardware and software conditions are met.]]></description>
+      <pubDate>Fri, 20 Nov 2026 10:00:36 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/palo-alto-confirms-java-vulnerability-impacts/">Cyber Security News</source>
       <category>CVE</category>
     </item>
     <item>
@@ -42,6 +105,24 @@
       <pubDate>Fri, 20 Nov 2026 08:52:29 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/20/european-commission-ai-generated-cyberattack-publicly-available-tool/">Help Net Security</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel Update for RHEL 9.6 EUS</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-6-eus-dc0864d2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-6-eus-dc0864d2</guid>
+      <description><![CDATA[Red Hat released a kernel update for RHEL 9.6 Extended Update Support that addresses multiple security bugs. The update includes fixes for vulnerabilities with CVSS scores ranging from moderate to high, as detailed in the linked CVE references. Red Hat recommends applying the update immediately to mitigate potential exploitation and maintain kernel integrity.]]></description>
+      <pubDate>Fri, 20 Nov 2026 08:46:01 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100652">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100661: Important: kernel security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100661-important-kernel-security-bug-fix-c963dc72</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100661-important-kernel-security-bug-fix-c963dc72</guid>
+      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Fri, 20 Nov 2026 08:27:06 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100661">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Hackers Scan LiteLLM AI Servers for RCE Flaws</title>
@@ -374,87 +455,6 @@
       <description><![CDATA[An update for vim is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Thu, 19 Nov 2026 20:01:31 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100486">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100484: Important: acl security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100484-important-acl-security-update-14497d80</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100484-important-acl-security-update-14497d80</guid>
-      <description><![CDATA[An update for acl is now available for Red Hat Enterprise Linux 6 Extended Lifecycle Support - EXTENSION. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 19 Nov 2026 20:00:11 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100484">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Python-urllib3 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-python-urllib3-security-update-e85bf29e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-python-urllib3-security-update-e85bf29e</guid>
-      <description><![CDATA[Python-urllib3 library in RHEL 8.6 receives a security update for both Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The update addresses multiple vulnerabilities identified by Red Hat Product Security, each with a CVSS base score listed in the CVE references. Red Hat recommends applying the update immediately via the standard package manager; no workarounds are provided.]]></description>
-      <pubDate>Thu, 19 Nov 2026 19:59:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100503">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Xorg-X11 Server Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-xorg-x11-server-update-5e57708a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-xorg-x11-server-update-5e57708a</guid>
-      <description><![CDATA[Xorg-X11 server in RHEL 8.8 receives a security update for both SAP Solutions Update Services and Telecommunications Update Service. The update patches multiple vulnerabilities identified by Red Hat Product Security, each with a CVSS base score provided in the CVE references. Red Hat advises applying the update promptly through the standard package manager; no additional workarounds are required.]]></description>
-      <pubDate>Thu, 19 Nov 2026 19:59:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100499">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Seven Critical PHP Flaws Expose RCE Risks</title>
-      <link>https://secubuzz.com/news/seven-critical-php-flaws-expose-rce-risks-7dbeb1d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/seven-critical-php-flaws-expose-rce-risks-7dbeb1d4</guid>
-      <description><![CDATA[Seven critical PHP flaws that enable remote code execution have been identified, prompting a patch release from the PHP development team. Exploitability depends on server configuration, with some flaws requiring authenticated access or specific input handling, and no widespread exploitation has been reported. Administrators should apply the latest PHP patch immediately and review configuration settings to mitigate potential exploitation.]]></description>
-      <pubDate>Thu, 19 Nov 2026 19:57:31 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Fuels Vulnerability Hysteria and Operational Disruption</title>
-      <link>https://secubuzz.com/news/ai-fuels-vulnerability-hysteria-and-operational-di-dbe94d43</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-fuels-vulnerability-hysteria-and-operational-di-dbe94d43</guid>
-      <description><![CDATA[The Reporters' Notebook video series analyzes fallout from recent high-severity flaw disclosures, highlighting how AI-assisted exploit fears amplify vulnerability hysteria. The discussion notes widespread panic, operational disruptions, and growing warning fatigue among security teams, though no specific vulnerability is cited. The series encourages balanced risk assessment and disciplined alert management to mitigate unnecessary operational impact.]]></description>
-      <pubDate>Thu, 19 Nov 2026 19:46:44 GMT</pubDate>
-      <source url="https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Drupal Core Vulnerability Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/drupal-core-vulnerability-enables-remote-code-exec-7d44e06d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-vulnerability-enables-remote-code-exec-7d44e06d</guid>
-      <description><![CDATA[A remote code execution flaw exists in Drupal core versions before 10.6.22, 11.3.22, and 11.4.13, allowing attackers to execute arbitrary code. The vulnerability, identified as SA-CORE-2026-017, permits unauthenticated exploitation and could compromise site integrity and data. Drupal administrators should apply the latest patch or upgrade to a supported version as soon as the update is released.]]></description>
-      <pubDate>Thu, 19 Nov 2026 19:29:19 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1186">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>VMware vCenter Authentication Bypass Zero-Day Exploited by Chinese APT</title>
-      <link>https://secubuzz.com/news/vmware-vcenter-authentication-bypass-zero-day-expl-14ded22f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vmware-vcenter-authentication-bypass-zero-day-expl-14ded22f</guid>
-      <description><![CDATA[A China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom issued a patch. The flaw permits unauthenticated access to vCenter management interfaces, enabling attackers to execute privileged commands and potentially compromise virtual infrastructure. Administrators should apply Broadcom's patch immediately and enforce strict access controls to mitigate exploitation.]]></description>
-      <pubDate>Thu, 19 Nov 2026 19:21:06 GMT</pubDate>
-      <source url="https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Securing GitHub Actions Against Insider Threats</title>
-      <link>https://secubuzz.com/news/securing-github-actions-against-insider-threats-63cbba6e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/securing-github-actions-against-insider-threats-63cbba6e</guid>
-      <description><![CDATA[A practical guide outlines steps to harden GitHub Actions against insider threats, focusing on credential protection and pipeline integrity. The approach covers trusted publishing, release approvals, and revocation mechanisms to prevent malicious code injection from compromised accounts. Security teams should implement these controls, enforce least-privilege access, and monitor workflow logs for anomalous activity.]]></description>
-      <pubDate>Thu, 19 Nov 2026 19:17:08 GMT</pubDate>
-      <source url="https://socket.dev/blog/hardening-github-actions-against-insider-threats">Socket.dev</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel Security Update for RHEL 8.4</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-8-8b4cf37d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-8-8b4cf37d</guid>
-      <description><![CDATA[Red Hat issued a kernel security update for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support, addressing multiple critical vulnerabilities. The advisory references several CVE identifiers, each with a CVSS base score, but no active exploitation reports were disclosed. Administrators should apply the update promptly, verify kernel integrity, and monitor for any anomalous kernel behavior.]]></description>
-      <pubDate>Thu, 19 Nov 2026 19:16:25 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100517">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
