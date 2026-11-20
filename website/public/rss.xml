@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 12:11:08 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 13:09:06 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Armory Castle Exploits VMware vCenter CVE-2026-123890</title>
+      <link>https://secubuzz.com/news/armory-castle-exploits-vmware-vcenter-cve-2026-123-d6d0a5d8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/armory-castle-exploits-vmware-vcenter-cve-2026-123-d6d0a5d8</guid>
+      <description><![CDATA[Armory Castle, a China-linked espionage group, exploited VMware vCenter (CVE-2026-123890) since early September, before Broadcom released a fix. The CVSS 9.8 flaw permits unauthenticated remote attackers to obtain full administrator sessions on vCenter Server, controlling virtual infrastructure. Broadcom issued a patch in November; organizations must apply it immediately and verify vCenter Server is no longer exposed.]]></description>
+      <pubDate>Fri, 20 Nov 2026 12:30:19 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/20/vmware-vcenter-zero-day-cve-2026-123890-exploited/">Help Net Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>CVE-2026-99312 Exposes Host Memory via KVM on AMD</title>
+      <link>https://secubuzz.com/news/cve-2026-99312-exposes-host-memory-via-kvm-on-amd-191cadd2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-99312-exposes-host-memory-via-kvm-on-amd-191cadd2</guid>
+      <description><![CDATA[Linux KVM (CVE-2026-99312) lets guest VMs read up to 127 GB of host memory on AMD processors with nested virtualization. This flaw allows attackers to access memory of other customers on shared cloud servers, risking data exposure. Kernel patches addressing CVE-2026-99312 have shipped; admins should update and disable nested virtualization if unnecessary.]]></description>
+      <pubDate>Fri, 20 Nov 2026 12:20:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>SBC Medical Group Breach Exposes 2 Million Customers</title>
       <link>https://secubuzz.com/news/sbc-medical-group-breach-exposes-2-million-custome-ca25a581</link>
@@ -15,6 +33,15 @@
       <pubDate>Fri, 20 Nov 2026 11:36:51 GMT</pubDate>
       <source url="https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/">SecurityWeek</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>AI-Driven ARTEX Automates Attacks Without Zero-Days</title>
+      <link>https://secubuzz.com/news/ai-driven-artex-automates-attacks-without-zero-day-3093e949</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-artex-automates-attacks-without-zero-day-3093e949</guid>
+      <description><![CDATA[Attackers employ the open-source ARTEX framework, an AI-driven tool that automates network intrusion without relying on zero-day exploits. ARTEX scans for exposed applications, weak passwords, and loose permissions, persisting against defenses longer than typical human attackers. Security teams should harden configurations, enforce strong authentication, and monitor for automated scanning activity to mitigate ARTEX-driven threats.]]></description>
+      <pubDate>Fri, 20 Nov 2026 11:27:05 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-ai-powered-artex-framework/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>F5 Issues Emergency Patches for Critical BIG-IP RCE Flaws</title>
@@ -62,6 +89,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>RHSA-2026:100744: Critical: nginx security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100744-critical-nginx-security-update-315142a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100744-critical-nginx-security-update-315142a7</guid>
+      <description><![CDATA[An update for nginx is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Fri, 20 Nov 2026 10:22:24 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100744">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>TfL Oyster Photocard Data Breach Exposes 265,000 Users</title>
       <link>https://secubuzz.com/news/tfl-oyster-photocard-data-breach-exposes-265-000-u-afd049c0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/tfl-oyster-photocard-data-breach-exposes-265-000-u-afd049c0</guid>
@@ -78,6 +114,15 @@
       <pubDate>Fri, 20 Nov 2026 10:00:36 GMT</pubDate>
       <source url="https://cybersecuritynews.com/palo-alto-confirms-java-vulnerability-impacts/">Cyber Security News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100735: Important: sos security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100735-important-sos-security-bug-fix-an-55df0332</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100735-important-sos-security-bug-fix-an-55df0332</guid>
+      <description><![CDATA[Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Fri, 20 Nov 2026 09:30:22 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100735">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Microsoft Releases Windows 11 KB5132057 Update</title>
@@ -167,6 +212,24 @@
       <description><![CDATA[Hackers scan the internet for exposed LiteLLM AI servers, actively targeting a test endpoint in the LiteLLM gateway. They plan to chain two flaws-one in LiteLLM and a Starlette framework weakness-to gain unauthenticated remote code execution. No patch exists yet; administrators should restrict public LiteLLM access and apply future fixes.]]></description>
       <pubDate>Fri, 20 Nov 2026 08:25:28 GMT</pubDate>
       <source url="https://cybersecuritynews.com/litellm-ai-servers/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100672: Important: flatpak security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100672-important-flatpak-security-update-826ad3dd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100672-important-flatpak-security-update-826ad3dd</guid>
+      <description><![CDATA[An update for flatpak is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Fri, 20 Nov 2026 08:12:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100672">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100674: Important: fltk security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100674-important-fltk-security-update-6ce10a75</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100674-important-fltk-security-update-6ce10a75</guid>
+      <description><![CDATA[An update for fltk is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Fri, 20 Nov 2026 08:09:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100674">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -393,69 +456,6 @@
       <pubDate>Thu, 19 Nov 2026 21:46:23 GMT</pubDate>
       <source url="https://www.wiz.io/blog/phpaftershell-critical-php-rce-vulnerabilities-cve-2026-126714">Wiz Research</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>CVE-2026-132607 - GCM authentication tag length downgrade in Amazon S3 Encryption Client for PHP</title>
-      <link>https://secubuzz.com/news/cve-2026-132607-gcm-authentication-tag-length-down-7e9731bf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-132607-gcm-authentication-tag-length-down-7e9731bf</guid>
-      <description><![CDATA[Bulletin ID: 2026-191-AWS Publication Date: 11/19/2026 13:00 PM PST Description: We identified CVE-2026-132607, an issue in the decryption component of Amazon S3 Encryption Client for PHP in the AWS SDK for PHP. The client did not verify the length of the AES-GCM authentication tag recorded in an object's metadata.]]></description>
-      <pubDate>Thu, 19 Nov 2026 21:46:07 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-191-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Lawmakers Form AI Safety Caucus Amid Security Concerns</title>
-      <link>https://secubuzz.com/news/lawmakers-form-ai-safety-caucus-amid-security-conc-28d5b736</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/lawmakers-form-ai-safety-caucus-amid-security-conc-28d5b736</guid>
-      <description><![CDATA[A new AI safety caucus was formed by lawmakers amid growing security concerns. The caucus includes seven Republicans out of 26 founders, highlighting bipartisan interest despite the White House's resistance to AI regulation. The group aims to develop guidelines and oversight mechanisms to address AI risks within federal policy and to coordinate with industry stakeholders.]]></description>
-      <pubDate>Thu, 19 Nov 2026 21:19:00 GMT</pubDate>
-      <source url="https://therecord.media/lawmakers-launch-new-ai-safety-caucus">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ASUS Issues Control Center Express Hard-Coded Key Fix</title>
-      <link>https://secubuzz.com/news/asus-issues-control-center-express-hard-coded-key-b92d6bf8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/asus-issues-control-center-express-hard-coded-key-b92d6bf8</guid>
-      <description><![CDATA[ASUS released Control Center Express v1.7.29 to patch three critical flaws that could let remote attackers gain administrative control of the console and devices. The vulnerabilities stem from hard-coded cryptographic keys, enabling unauthorized privileged access and potential compromise of device configuration. Administrators should upgrade to v1.7.29, apply the patch, and audit device access controls to prevent exploitation.]]></description>
-      <pubDate>Thu, 19 Nov 2026 21:15:59 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>iOS 27.3 Beta 2 Release Notes</title>
-      <link>https://secubuzz.com/news/ios-27-3-beta-2-release-notes-86f63df4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ios-27-3-beta-2-release-notes-86f63df4</guid>
-      <description><![CDATA[Apple released iOS 27.3 beta 2 v2, with accompanying release notes available for download and further documentation. The update does not disclose specific security fixes or vulnerability mitigations, leaving the exact changes unspecified. Users should review the release notes and apply the update when ready, following standard beta testing procedures to ensure compatibility.]]></description>
-      <pubDate>Thu, 19 Nov 2026 21:00:00 GMT</pubDate>
-      <source url="https://developer.apple.com/news/releases/?id=11192026a">Apple Security Updates</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>iPadOS 27.3 Beta 2 Release Notes</title>
-      <link>https://secubuzz.com/news/ipados-27-3-beta-2-release-notes-ed587d4c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ipados-27-3-beta-2-release-notes-ed587d4c</guid>
-      <description><![CDATA[Apple released iPadOS 27.3 beta 2 v2, with accompanying release notes available for download and further documentation. The update does not disclose specific security fixes or vulnerability mitigations, leaving the exact changes unspecified. Users should review the release notes and apply the update when ready, following standard beta testing procedures to ensure compatibility.]]></description>
-      <pubDate>Thu, 19 Nov 2026 21:00:00 GMT</pubDate>
-      <source url="https://developer.apple.com/news/releases/?id=11192026b">Apple Security Updates</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Norwegian Energy Firm Breached Twice Within Two Days</title>
-      <link>https://secubuzz.com/news/norwegian-energy-firm-breached-twice-within-two-da-d13b3a7b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/norwegian-energy-firm-breached-twice-within-two-da-d13b3a7b</guid>
-      <description><![CDATA[A second Norwegian energy company suffered a breach within two days of the first incident, raising concerns about resilience. Investigators have not linked the two attacks, though both incidents exhibit similar patterns, suggesting a possible shared threat actor or technique. Security teams should monitor for related indicators, apply defensive controls promptly, and coordinate with cybersecurity agencies to mitigate further risk.]]></description>
-      <pubDate>Thu, 19 Nov 2026 20:14:15 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>USN-9176-1: Ruby vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9176-1-ruby-vulnerabilities-4cae983c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9176-1-ruby-vulnerabilities-4cae983c</guid>
-      <description><![CDATA[An attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (GHSA-34m4-m9fh-gqp5) Owais Lone discovered that Ruby incorrectly handled compiling certain large regular expressions. An attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (GHSA-3p8q-wmhx-vm2w) Stephan Lipp discovered that Ruby incorrectly handled converting certain regular expressions to strings.]]></description>
-      <pubDate>Thu, 19 Nov 2026 20:07:34 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9176-1">Ubuntu Security Notices</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

@@ -11,6 +11,47 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "armory-castle-exploits-vmware-vcenter-cve-2026-123-d6d0a5d8",
+    "title": "Armory Castle Exploits VMware vCenter CVE-2026-123890",
+    "summary": "Armory Castle, a China-linked espionage group, exploited VMware vCenter (CVE-2026-123890) since early September, before Broadcom released a fix. The CVSS 9.8 flaw permits unauthenticated remote attackers to obtain full administrator sessions on vCenter Server, controlling virtual infrastructure. Broadcom issued a patch in November; organizations must apply it immediately and verify vCenter Server is no longer exposed.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/vmware-vcenter-zero-day-cve-2026-123890-exploited/",
+    "publishedAt": "2026-11-20T12:30:19.000Z",
+    "cves": [
+      "CVE-2026-123890"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "armory-castle-exploits-vmware-vcenter-cve-2026-123",
+      "article-d6d0a5d8",
+      "d6d0a5d8",
+      "armory-castle-exploits-vmware-vcenter-cve-2026-123-6817af",
+      "armory-castle-exploits-vmware-vcenter-cve-2026-123890"
+    ]
+  },
+  {
+    "slug": "cve-2026-99312-exposes-host-memory-via-kvm-on-amd-191cadd2",
+    "title": "CVE-2026-99312 Exposes Host Memory via KVM on AMD",
+    "summary": "Linux KVM (CVE-2026-99312) lets guest VMs read up to 127 GB of host memory on AMD processors with nested virtualization. This flaw allows attackers to access memory of other customers on shared cloud servers, risking data exposure. Kernel patches addressing CVE-2026-99312 have shipped; admins should update and disable nested virtualization if unnecessary.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+    "publishedAt": "2026-11-20T12:20:00.000Z",
+    "cves": [
+      "CVE-2026-99312"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-99312-exposes-host-memory-via-kvm-on-amd",
+      "article-191cadd2",
+      "191cadd2",
+      "cve-2026-99312-exposes-host-memory-via-kvm-on-amd-6eb057"
+    ]
+  },
+  {
     "slug": "sbc-medical-group-breach-exposes-2-million-custome-ca25a581",
     "title": "SBC Medical Group Breach Exposes 2 Million Customers",
     "summary": "Threat actors accessed databases containing customer information linked to SBC Medical Group clinics in Japan. The breach exposed personal data of over 2 million individuals, potentially including names, addresses, and medical records, though specific data types were not disclosed. SBC Medical Group has notified affected customers and is investigating the incident, urging users to monitor for suspicious activity.",
@@ -27,6 +68,25 @@ export const news: NewsBrief[] = [
       "ca25a581",
       "sbc-medical-group-breach-exposes-2-million-custome-399bff",
       "sbc-medical-group-breach-exposes-2-million-customers"
+    ]
+  },
+  {
+    "slug": "ai-driven-artex-automates-attacks-without-zero-day-3093e949",
+    "title": "AI-Driven ARTEX Automates Attacks Without Zero-Days",
+    "summary": "Attackers employ the open-source ARTEX framework, an AI-driven tool that automates network intrusion without relying on zero-day exploits. ARTEX scans for exposed applications, weak passwords, and loose permissions, persisting against defenses longer than typical human attackers. Security teams should harden configurations, enforce strong authentication, and monitor for automated scanning activity to mitigate ARTEX-driven threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ai-powered-artex-framework/",
+    "publishedAt": "2026-11-20T11:27:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-driven-artex-automates-attacks-without-zero-day",
+      "article-3093e949",
+      "3093e949",
+      "ai-driven-artex-automates-attacks-without-zero-day-5826f1",
+      "ai-driven-artex-automates-attacks-without-zero-days"
     ]
   },
   {
@@ -128,6 +188,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100744-critical-nginx-security-update-315142a7",
+    "title": "RHSA-2026:100744: Critical: nginx security update",
+    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100744",
+    "publishedAt": "2026-11-20T10:22:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100744-critical-nginx-security-update",
+      "article-315142a7",
+      "315142a7",
+      "rhsa-2026-100744-critical-nginx-security-update-2ee088"
+    ]
+  },
+  {
     "slug": "tfl-oyster-photocard-data-breach-exposes-265-000-u-afd049c0",
     "title": "TfL Oyster Photocard Data Breach Exposes 265,000 Users",
     "summary": "Transport for London confirmed that the Oyster photocard website was breached, exposing account details of approximately 265,000 users. The breach involved unauthorized access to the photocard system, potentially compromising personal data such as names, addresses, and card balances. TfL took the system offline, issued a security advisory, and is working with investigators to remediate the vulnerability and prevent further exposure.",
@@ -165,6 +243,25 @@ export const news: NewsBrief[] = [
       "10f5624d",
       "palo-alto-confirms-java-vulnerability-impacts-priv-5a7914",
       "palo-alto-confirms-java-vulnerability-impacts-privilege-thre"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100735-important-sos-security-bug-fix-an-55df0332",
+    "title": "RHSA-2026:100735: Important: sos security, bug fix, and enhancement update",
+    "summary": "Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100735",
+    "publishedAt": "2026-11-20T09:30:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100735-important-sos-security-bug-fix-an",
+      "article-55df0332",
+      "55df0332",
+      "rhsa-2026-100735-important-sos-security-bug-fix-an-2ee088",
+      "rhsa-2026-100735-important-sos-security-bug-fix-and-enhancem"
     ]
   },
   {
@@ -347,6 +444,42 @@ export const news: NewsBrief[] = [
       "article-a04d461c",
       "a04d461c",
       "hackers-scan-litellm-ai-servers-for-rce-flaws-57828f"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100672-important-flatpak-security-update-826ad3dd",
+    "title": "RHSA-2026:100672: Important: flatpak security update",
+    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100672",
+    "publishedAt": "2026-11-20T08:12:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100672-important-flatpak-security-update",
+      "article-826ad3dd",
+      "826ad3dd",
+      "rhsa-2026-100672-important-flatpak-security-update-2ee085"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100674-important-fltk-security-update-6ce10a75",
+    "title": "RHSA-2026:100674: Important: fltk security update",
+    "summary": "An update for fltk is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100674",
+    "publishedAt": "2026-11-20T08:09:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100674-important-fltk-security-update",
+      "article-6ce10a75",
+      "6ce10a75",
+      "rhsa-2026-100674-important-fltk-security-update-2ee085"
     ]
   },
   {
@@ -9604,142 +9737,6 @@ export const news: NewsBrief[] = [
       "6c9f969f",
       "gemini-ai-agents-attempt-real-world-website-hack-d-6a2f1e",
       "gemini-ai-agents-attempt-real-world-website-hack-during-test"
-    ]
-  },
-  {
-    "slug": "atlassian-confluence-rce-exploited-1-2m-instances-1ccf8929",
-    "title": "Atlassian Confluence RCE Exploited, 1.2M Instances Exposed",
-    "summary": "Hackers are actively exploiting a critical RCE flaw in Atlassian Confluence Data Center, enabling unauthenticated code execution on exposed instances. Rapid7 detected the exploit on November 13, 2026, and Censys reports 1,212,568 internet-facing installations vulnerable. Affected organizations must apply Atlassian's emergency patch immediately, restrict network access to Confluence servers, and monitor for suspicious activity.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploiting-atlassian-confluence-vulnerability/",
-    "publishedAt": "2026-11-17T09:18:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "atlassian-confluence-rce-exploited-1-2m-instances",
-      "article-1ccf8929",
-      "1ccf8929",
-      "atlassian-confluence-rce-exploited-1-2m-instances-516c3c",
-      "atlassian-confluence-rce-exploited-1-2m-instances-exposed"
-    ]
-  },
-  {
-    "slug": "russian-hackers-deploy-ai-malware-and-clickfix-on-346d379a",
-    "title": "Russian Hackers Deploy AI Malware and ClickFix on Windows",
-    "summary": "A Russian-speaking threat actor launched a phishing campaign in August 2026 targeting Windows users with AI-generated malware and ClickFix tricks. The operation sent document-sharing pages across Latin America, Asia, and Europe, using XaocMail and Phantom53 to deliver payloads. Defenders should block malicious domains, enforce MFA, and filter AI-crafted phishing emails.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ai-assisted-malware/",
-    "publishedAt": "2026-11-17T09:05:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-hackers-deploy-ai-malware-and-clickfix-on",
-      "article-346d379a",
-      "346d379a",
-      "russian-hackers-deploy-ai-malware-and-clickfix-on-3342d9",
-      "russian-hackers-deploy-ai-malware-and-clickfix-on-windows"
-    ]
-  },
-  {
-    "slug": "mozilla-releases-firefox-160-fixing-99-vulnerabili-fd69f367",
-    "title": "Mozilla Releases Firefox 160, Fixing 99 Vulnerabilities",
-    "summary": "Mozilla released Firefox 160 to address 99 security issues, including multiple sandbox escapes, privilege escalation flaws, and memory errors. The advisory, dated November 10, 2026, assigns a high-impact rating and covers vulnerabilities across graphics, networking, storage, and core browser components. Users should install the update immediately to close gaps and prevent exploitation of the identified flaws.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/mozilla-patches-160-firefox-vulnerabilities/",
-    "publishedAt": "2026-11-17T09:03:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mozilla-releases-firefox-160-fixing-99-vulnerabili",
-      "article-fd69f367",
-      "fd69f367",
-      "mozilla-releases-firefox-160-fixing-99-vulnerabili-4107e5",
-      "mozilla-releases-firefox-160-fixing-99-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "apple-adds-privacy-controls-for-ai-apps-c93afb04",
-    "title": "Apple Adds Privacy Controls for AI Apps",
-    "summary": "Apple released macOS 27.3 beta 2, adding privacy controls that restrict AI apps from broad data access. The update tightens permissions, adds stronger warnings, and provides activity visibility to prevent unauthorized data exposure by AI assistants. Install the beta to enforce these controls; no further patches are required in the next release.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/macos-27-3-new-security-controls/",
-    "publishedAt": "2026-11-17T08:55:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-adds-privacy-controls-for-ai-apps",
-      "article-c93afb04",
-      "c93afb04",
-      "apple-adds-privacy-controls-for-ai-apps-162f21"
-    ]
-  },
-  {
-    "slug": "google-detects-ai-agents-crafting-exploits-indepen-f6f8d652",
-    "title": "Google Detects AI Agents Crafting Exploits Independently",
-    "summary": "Google Threat Intelligence Group and Mandiant revealed that threat actors are deploying AI agents capable of writing and launching exploits. These agents can transform newly released patches into working attacks, accelerating intrusion speed and scale while maintaining operational stealth. Security teams should monitor for automated exploitation patterns, enforce strict patch management, and employ AI-driven detection to mitigate evolving attack vectors.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/ai-powered-cyberattacks-gtig-report/",
-    "publishedAt": "2026-11-17T08:45:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-detects-ai-agents-crafting-exploits-indepen",
-      "article-f6f8d652",
-      "f6f8d652",
-      "google-detects-ai-agents-crafting-exploits-indepen-599cc4",
-      "google-detects-ai-agents-crafting-exploits-independently"
-    ]
-  },
-  {
-    "slug": "ai-vendor-key-breach-exposes-10-barracuda-cloud-ac-f45aec58",
-    "title": "AI Vendor Key Breach Exposes 10 Barracuda Cloud Accounts",
-    "summary": "In a 44-hour breach, hackers leveraged an exposed AI vendor cloud key to compromise ten Barracuda cloud accounts. The attackers moved through stored secrets, dev systems, analytics, and Kubernetes clusters, collecting credentials for lateral movement. Barracuda urged teams to revoke the key, enforce least-privilege controls, audit permissions, and rotate compromised credentials.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/barracuda-cloud-account-breach/",
-    "publishedAt": "2026-11-17T08:42:21.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/barracuda-cloud-accounts/"
-      }
-    ],
-    "aliases": [
-      "ai-vendor-key-breach-exposes-10-barracuda-cloud-ac",
-      "article-f45aec58",
-      "f45aec58",
-      "ai-vendor-key-breach-exposes-10-barracuda-cloud-ac-689bdb",
-      "ai-vendor-key-breach-exposes-10-barracuda-cloud-accounts"
-    ]
-  },
-  {
-    "slug": "uber-notifies-drivers-of-150k-data-breach-11f4796e",
-    "title": "Uber Notifies Drivers of 150k Data Breach",
-    "summary": "Attackers breached Fireworks AI infrastructure in early October, exfiltrating personal data of approximately 150,000 Uber drivers. The breach exposed driver credentials and sensitive personal information, but no evidence of credential theft or financial loss has been reported. Uber has notified affected drivers and advised them to change passwords and monitor accounts for suspicious activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/",
-    "publishedAt": "2026-11-17T08:35:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uber-notifies-drivers-of-150k-data-breach",
-      "article-11f4796e",
-      "11f4796e",
-      "uber-notifies-drivers-of-150k-data-breach-196dbd"
     ]
   }
 ];

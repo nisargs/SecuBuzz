@@ -5768,5 +5768,12 @@
   "https://access.redhat.com/errata/RHSA-2026:100662",
   "https://access.redhat.com/errata/RHSA-2026:100660",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97763",
-  "https://access.redhat.com/errata/RHSA-2026:100656"
+  "https://access.redhat.com/errata/RHSA-2026:100656",
+  "https://www.helpnetsecurity.com/2026/11/20/vmware-vcenter-zero-day-cve-2026-123890-exploited/",
+  "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+  "https://cybersecuritynews.com/hackers-use-ai-powered-artex-framework/",
+  "https://access.redhat.com/errata/RHSA-2026:100744",
+  "https://access.redhat.com/errata/RHSA-2026:100735",
+  "https://access.redhat.com/errata/RHSA-2026:100674",
+  "https://access.redhat.com/errata/RHSA-2026:100672"
 ]
