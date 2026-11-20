@@ -11,6 +11,81 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-agent-api-security-lagging-behind-production-de-ddc48e86",
+    "title": "AI Agent API Security Lagging Behind Production Deployment",
+    "summary": "Postman surveyed nearly 9,000 developers, finding that 25% already deploy AI agents that call APIs in production. About forty percent of respondents have not defined how to secure the credentials and identities used by these agents, creating access risks. Teams should implement key management and identity controls for AI agents before expanding production use.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/ai-agent-api-security-production/",
+    "publishedAt": "2026-11-20T05:30:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agent-api-security-lagging-behind-production-de",
+      "article-ddc48e86",
+      "ddc48e86",
+      "ai-agent-api-security-lagging-behind-production-de-188663",
+      "ai-agent-api-security-lagging-behind-production-deployment"
+    ]
+  },
+  {
+    "slug": "fastunlock-zero-day-enables-program-execution-on-l-a9c8b601",
+    "title": "FastUnlock Zero-Day Enables Program Execution on Locked PCs",
+    "summary": "FastUnlock lets an attacker with physical access to a locked Windows PC launch programs without signing in. The flaw grants a limited user account, not administrator rights, and is demonstrated by researchers MSNightmare and Nightmare Eclipse. Microsoft has not yet patched FastUnlock; teams should enforce physical security and monitor for unauthorized program launches on locked systems.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+    "publishedAt": "2026-11-20T05:30:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fastunlock-zero-day-enables-program-execution-on-l",
+      "article-a9c8b601",
+      "a9c8b601",
+      "fastunlock-zero-day-enables-program-execution-on-l-7c0033",
+      "fastunlock-zero-day-enables-program-execution-on-locked-pcs"
+    ]
+  },
+  {
+    "slug": "cios-report-limited-immediate-access-to-critical-g-db30f6be",
+    "title": "CIOs Report Limited Immediate Access to Critical Gear",
+    "summary": "An Opengear survey of 514 CIOs and CISOs found most organizations cannot quickly access secure management of network gear when the primary network fails. This gap hinders rapid containment during ransomware or disruptive updates, prolonging outages and increasing exposure to compromised systems. Organizations should implement out-of-band consoles or redundant paths and prioritize remote management solutions to ensure timely incident response.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/network-outage-recovery-resilience/",
+    "publishedAt": "2026-11-20T05:00:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cios-report-limited-immediate-access-to-critical-g",
+      "article-db30f6be",
+      "db30f6be",
+      "cios-report-limited-immediate-access-to-critical-g-5fed78",
+      "cios-report-limited-immediate-access-to-critical-gear"
+    ]
+  },
+  {
+    "slug": "kpmg-canada-breach-exposes-client-tax-documents-6326d3e0",
+    "title": "KPMG Canada Breach Exposes Client Tax Documents",
+    "summary": "KPMG Canada confirmed that an unauthorized third party accessed confidential tax documents of some clients during a cyberattack. The breach involved sensitive client data, prompting immediate containment actions and system hardening by the firm. KPMG is contacting affected clients directly and has not disclosed the breach timing or number of impacted records.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/kpmg-canada-confirms-cyberattack/",
+    "publishedAt": "2026-11-20T03:58:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kpmg-canada-breach-exposes-client-tax-documents",
+      "article-6326d3e0",
+      "6326d3e0",
+      "kpmg-canada-breach-exposes-client-tax-documents-64d9c2"
+    ]
+  },
+  {
     "slug": "usn-9182-1-nginx-vulnerabilities-a8c3fe4e",
     "title": "USN-9182-1: nginx vulnerabilities",
     "summary": "A remote attacker could possibly use this issue to cause nginx to crash, resulting in a denial of service. (CVE-2026-125283) Vivek Parikh discovered that nginx did not correctly handle parsing certain ClientHello messages. This issue was only addressed in Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu 24.04 LTS. (CVE-2026-123640) It was discovered that nginx did not correctly handle certain TLS connections.",
@@ -689,6 +764,43 @@ export const news: NewsBrief[] = [
       "article-62eda7bc",
       "62eda7bc",
       "tfl-data-breach-exposes-265-000-oyster-card-users-5adcdf"
+    ]
+  },
+  {
+    "slug": "craftcms-vulnerability-in-versions-pre-5-11-5-disc-b7076f94",
+    "title": "CraftCMS Vulnerability in Versions Pre-5.11.5 Disclosed",
+    "summary": "The Canadian Centre for Cyber Security disclosed a vulnerability in CraftCMS versions before 5.11.5 on November 18, 2026. The flaw, detailed on the CraftCMS GitHub repository, may allow attackers to exploit weaknesses in the CMS code, potentially enabling unauthorized access or data exposure. Administrators should review the advisory and apply any available updates to secure affected installations.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/craftcms-security-advisory-av26-1180",
+    "publishedAt": "2026-11-19T18:19:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "craftcms-vulnerability-in-versions-pre-5-11-5-disc",
+      "article-b7076f94",
+      "b7076f94",
+      "craftcms-vulnerability-in-versions-pre-5-11-5-disc-4395db",
+      "craftcms-vulnerability-in-versions-pre-5-11-5-disclosed"
+    ]
+  },
+  {
+    "slug": "deepfake-musk-scam-sees-4-7m-crypto-blocked-aefff8aa",
+    "title": "Deepfake Musk Scam Sees $4.7M Crypto Blocked",
+    "summary": "Coinbase reported that it blocked $4.7 million in attempted payments to a deepfake Elon Musk scam targeting cryptocurrency users. The fraudulent scheme leveraged a fabricated Musk persona to persuade victims into sending funds, but the platform's fraud detection prevented the transfers. Users should verify sender authenticity and remain cautious of unsolicited crypto requests to mitigate similar scams.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/deepfake-elon-musk-nearly-costs-viewers-4-7-million-in-crypto",
+    "publishedAt": "2026-11-19T17:26:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "deepfake-musk-scam-sees-4-7m-crypto-blocked",
+      "article-aefff8aa",
+      "aefff8aa",
+      "deepfake-musk-scam-sees-4-7m-crypto-blocked-5c02b3"
     ]
   },
   {
@@ -1741,6 +1853,26 @@ export const news: NewsBrief[] = [
       "2278081c",
       "apache-roller-axis-flaws-exploited-in-confluence-a-ebd020",
       "apache-roller-axis-flaws-exploited-in-confluence-attacks"
+    ]
+  },
+  {
+    "slug": "cve-2026-125132-libumqtt-integer-underflow-exploit-3693d087",
+    "title": "CVE-2026-125132: libumqtt Integer Underflow Exploit",
+    "summary": "CVE-2026-125132 reveals an integer underflow in libumqtt that can be triggered remotely, per CISA's November 19, 2026 advisory. With a CVSS score of 8.6, the flaw may cause denial of service, memory corruption, or information disclosure in critical infrastructure sectors. No patch exists yet; operators should monitor for updates and apply defensive controls until remediation is available.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+    "publishedAt": "2026-11-19T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-125132"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-125132-libumqtt-integer-underflow-exploit",
+      "article-3693d087",
+      "3693d087",
+      "cve-2026-125132-libumqtt-integer-underflow-exploit-41adfe"
     ]
   },
   {
@@ -9636,180 +9768,6 @@ export const news: NewsBrief[] = [
       "b3c6f639",
       "linux-kernel-noisytcp-crash-vulnerability-cve-2026-7dc7f0",
       "linux-kernel-noisytcp-crash-vulnerability-cve-2026-99288"
-    ]
-  },
-  {
-    "slug": "litellm-dify-exploited-by-autonomous-ai-agents-681f5e67",
-    "title": "LiteLLM & Dify Exploited by Autonomous AI Agents",
-    "summary": "Autonomous AI agents exploit CVE-2026-42271 and CVE-2026-48710 in LiteLLM and Dify to exfiltrate cloud API keys. The flaws allow unauthenticated remote code execution via malformed request handling, enabling attackers to read and transmit credentials. Patch developers have released Starlette updates; security teams should apply the latest patches and monitor STS pivot activity.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/ai-agents-target-litellm-dify-api-keys",
-    "publishedAt": "2026-11-16T18:52:57.000Z",
-    "cves": [
-      "CVE-2026-42271",
-      "CVE-2026-48710"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "litellm-dify-exploited-by-autonomous-ai-agents",
-      "article-681f5e67",
-      "681f5e67",
-      "litellm-dify-exploited-by-autonomous-ai-agents-7daf47"
-    ]
-  },
-  {
-    "slug": "detect-sansar-gpu-miner-rootkit-via-libnvidia-ml-s-8b4a08bf",
-    "title": "Detect SANSAR GPU Miner Rootkit via libnvidia-ml.so",
-    "summary": "SANSAR Linux malware modifies libnvidia-ml.so and deploys kernel rootkits to hide GPU cryptomining traffic over TOR. The rootkit leverages LD_PRELOAD hooks and SSH lateral movement to evade detection, enabling persistent cryptomining operations. Security teams should scan for modified libnvidia-ml.so, monitor SSH activity, and apply kernel integrity checks to mitigate the rootkit.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://www.cybernewsai.com/blog/sansar-linux-cryptominer-nvidia-rootkit",
-    "publishedAt": "2026-11-16T18:52:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "detect-sansar-gpu-miner-rootkit-via-libnvidia-ml-s",
-      "article-8b4a08bf",
-      "8b4a08bf",
-      "detect-sansar-gpu-miner-rootkit-via-libnvidia-ml-s-4ea333",
-      "detect-sansar-gpu-miner-rootkit-via-libnvidia-ml-so"
-    ]
-  },
-  {
-    "slug": "backdoored-lora-weights-pose-ai-supply-chain-threa-ff578209",
-    "title": "Backdoored LoRA Weights Pose AI Supply Chain Threat",
-    "summary": "CrowdStrike identified backdoored LoRA AI models that evade standard benchmarks and trigger malicious tool calls, creating supply chain risks. The hidden code activates on specific prompts, enabling attackers to run arbitrary commands within the host. Teams should audit LoRA weights, source from trusted vendors, and monitor for anomalous tool calls to mitigate the backdoor.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://www.cybernewsai.com/blog/backdoored-lora-ai-supply-chain-risk",
-    "publishedAt": "2026-11-16T18:52:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "backdoored-lora-weights-pose-ai-supply-chain-threa",
-      "article-ff578209",
-      "ff578209",
-      "backdoored-lora-weights-pose-ai-supply-chain-threa-7dcf47",
-      "backdoored-lora-weights-pose-ai-supply-chain-threat"
-    ]
-  },
-  {
-    "slug": "cve-2026-129266-arbitrary-local-file-read-via-unva-6e650c0c",
-    "title": "CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library",
-    "summary": "Bulletin ID: 2026-183-AWS Publication Date: 11/16/2026 10:30 AM PST Description: External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can access.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-183-aws/",
-    "publishedAt": "2026-11-16T18:37:04.000Z",
-    "cves": [
-      "CVE-2026-129266"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-129266-arbitrary-local-file-read-via-unva",
-      "article-6e650c0c",
-      "6e650c0c",
-      "cve-2026-129266-arbitrary-local-file-read-via-unva-11bf2a",
-      "cve-2026-129266-arbitrary-local-file-read-via-unvalidated-re"
-    ]
-  },
-  {
-    "slug": "usn-9064-2-pillow-regression-71f5af14",
-    "title": "USN-9064-2: Pillow regression",
-    "summary": "USN-9064-1 fixed vulnerabilities in Pillow. Unfortunately, the fix for CVE-2026-112402 introduced a regression that caused resizing images with the NEAREST filter, and resizing any \"1\" or \"P\" mode image, to fail. This issue only affected Ubuntu 26.10, Ubuntu 26.04 LTS, Ubuntu 24.04 LTS, and Ubuntu 22.04 LTS. (CVE-2026-112390) It was discovered that Pillow's PdfParser.get_value() could recurse without a limit while reading nested PDF objects.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9064-2",
-    "publishedAt": "2026-11-16T18:07:22.000Z",
-    "cves": [
-      "CVE-2026-112402",
-      "CVE-2026-112390",
-      "CVE-2026-112391",
-      "CVE-2026-112392",
-      "CVE-2026-112393",
-      "CVE-2026-112394",
-      "CVE-2026-112395",
-      "CVE-2026-112396",
-      "CVE-2026-112397",
-      "CVE-2026-112398",
-      "CVE-2026-112399",
-      "CVE-2026-112400",
-      "CVE-2026-112401",
-      "CVE-2026-112403",
-      "CVE-2026-112404",
-      "CVE-2026-112405",
-      "CVE-2026-112406",
-      "CVE-2026-112891",
-      "CVE-2026-112892",
-      "CVE-2026-112893",
-      "CVE-2026-112894",
-      "CVE-2026-112895",
-      "CVE-2026-112896",
-      "CVE-2026-112897",
-      "CVE-2026-112898",
-      "CVE-2026-112900",
-      "CVE-2026-112901",
-      "CVE-2026-114501",
-      "CVE-2026-42308",
-      "CVE-2026-42310",
-      "CVE-2026-96636",
-      "CVE-2026-96637",
-      "CVE-2026-96638",
-      "CVE-2026-96639",
-      "CVE-2026-96640",
-      "CVE-2026-96641",
-      "CVE-2026-96642",
-      "CVE-2026-96643",
-      "CVE-2026-96778"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9064-2-pillow-regression",
-      "article-71f5af14",
-      "71f5af14",
-      "usn-9064-2-pillow-regression-7e86f2"
-    ]
-  },
-  {
-    "slug": "meta-fined-886m-by-italian-regulator-4ab95a4b",
-    "title": "Meta Fined $886M by Italian Regulator",
-    "summary": "The Italian data protection authority fined Meta $886 million for violating privacy law via Facebook’s camera roll suggestions feature. The feature accessed Android users’ photo galleries to recommend posts that could be enhanced with personal media, breaching consent. Meta must adjust its recommendation algorithms to prevent unauthorized gallery access and comply with Italian privacy regulations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/italian-regulator-fines-meta-886-million-privacy",
-    "publishedAt": "2026-11-16T18:05:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fined-886m-by-italian-regulator",
-      "article-4ab95a4b",
-      "4ab95a4b",
-      "meta-fined-886m-by-italian-regulator-979fe6"
-    ]
-  },
-  {
-    "slug": "apple-releases-ipados-27-3-beta-2-update-18bf82a9",
-    "title": "Apple Releases iPadOS 27.3 Beta 2 Update",
-    "summary": "Apple released iPadOS 27.3 beta 2 (build 24C5049d) for iPad devices. The beta includes incremental feature enhancements and stability fixes, but as a pre-release it may introduce regressions that could affect app compatibility or system performance. Users can download the beta via the Apple Developer portal or TestFlight and should test it in a controlled environment before production deployment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026b",
-    "publishedAt": "2026-11-16T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-ipados-27-3-beta-2-update",
-      "article-18bf82a9",
-      "18bf82a9",
-      "apple-releases-ipados-27-3-beta-2-update-5f3d88"
     ]
   }
 ];

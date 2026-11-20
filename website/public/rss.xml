@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 04:47:43 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 05:45:09 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Agent API Security Lagging Behind Production Deployment</title>
+      <link>https://secubuzz.com/news/ai-agent-api-security-lagging-behind-production-de-ddc48e86</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-api-security-lagging-behind-production-de-ddc48e86</guid>
+      <description><![CDATA[Postman surveyed nearly 9,000 developers, finding that 25% already deploy AI agents that call APIs in production. About forty percent of respondents have not defined how to secure the credentials and identities used by these agents, creating access risks. Teams should implement key management and identity controls for AI agents before expanding production use.]]></description>
+      <pubDate>Fri, 20 Nov 2026 05:30:11 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/20/ai-agent-api-security-production/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>FastUnlock Zero-Day Enables Program Execution on Locked PCs</title>
+      <link>https://secubuzz.com/news/fastunlock-zero-day-enables-program-execution-on-l-a9c8b601</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fastunlock-zero-day-enables-program-execution-on-l-a9c8b601</guid>
+      <description><![CDATA[FastUnlock lets an attacker with physical access to a locked Windows PC launch programs without signing in. The flaw grants a limited user account, not administrator rights, and is demonstrated by researchers MSNightmare and Nightmare Eclipse. Microsoft has not yet patched FastUnlock; teams should enforce physical security and monitor for unauthorized program launches on locked systems.]]></description>
+      <pubDate>Fri, 20 Nov 2026 05:30:01 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CIOs Report Limited Immediate Access to Critical Gear</title>
+      <link>https://secubuzz.com/news/cios-report-limited-immediate-access-to-critical-g-db30f6be</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cios-report-limited-immediate-access-to-critical-g-db30f6be</guid>
+      <description><![CDATA[An Opengear survey of 514 CIOs and CISOs found most organizations cannot quickly access secure management of network gear when the primary network fails. This gap hinders rapid containment during ransomware or disruptive updates, prolonging outages and increasing exposure to compromised systems. Organizations should implement out-of-band consoles or redundant paths and prioritize remote management solutions to ensure timely incident response.]]></description>
+      <pubDate>Fri, 20 Nov 2026 05:00:27 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/20/network-outage-recovery-resilience/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>KPMG Canada Breach Exposes Client Tax Documents</title>
+      <link>https://secubuzz.com/news/kpmg-canada-breach-exposes-client-tax-documents-6326d3e0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kpmg-canada-breach-exposes-client-tax-documents-6326d3e0</guid>
+      <description><![CDATA[KPMG Canada confirmed that an unauthorized third party accessed confidential tax documents of some clients during a cyberattack. The breach involved sensitive client data, prompting immediate containment actions and system hardening by the firm. KPMG is contacting affected clients directly and has not disclosed the breach timing or number of impacted records.]]></description>
+      <pubDate>Fri, 20 Nov 2026 03:58:09 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/kpmg-canada-confirms-cyberattack/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>USN-9182-1: nginx vulnerabilities</title>
       <link>https://secubuzz.com/news/usn-9182-1-nginx-vulnerabilities-a8c3fe4e</link>
@@ -323,6 +359,24 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>CraftCMS Vulnerability in Versions Pre-5.11.5 Disclosed</title>
+      <link>https://secubuzz.com/news/craftcms-vulnerability-in-versions-pre-5-11-5-disc-b7076f94</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/craftcms-vulnerability-in-versions-pre-5-11-5-disc-b7076f94</guid>
+      <description><![CDATA[The Canadian Centre for Cyber Security disclosed a vulnerability in CraftCMS versions before 5.11.5 on November 18, 2026. The flaw, detailed on the CraftCMS GitHub repository, may allow attackers to exploit weaknesses in the CMS code, potentially enabling unauthorized access or data exposure. Administrators should review the advisory and apply any available updates to secure affected installations.]]></description>
+      <pubDate>Thu, 19 Nov 2026 18:19:24 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/craftcms-security-advisory-av26-1180">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Deepfake Musk Scam Sees $4.7M Crypto Blocked</title>
+      <link>https://secubuzz.com/news/deepfake-musk-scam-sees-4-7m-crypto-blocked-aefff8aa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/deepfake-musk-scam-sees-4-7m-crypto-blocked-aefff8aa</guid>
+      <description><![CDATA[Coinbase reported that it blocked $4.7 million in attempted payments to a deepfake Elon Musk scam targeting cryptocurrency users. The fraudulent scheme leveraged a fabricated Musk persona to persuade victims into sending funds, but the platform's fraud detection prevented the transfers. Users should verify sender authenticity and remain cautious of unsolicited crypto requests to mitigate similar scams.]]></description>
+      <pubDate>Thu, 19 Nov 2026 17:26:39 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/11/deepfake-elon-musk-nearly-costs-viewers-4-7-million-in-crypto">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>DOJ, DHS Launch Threat Disruption Center for Cybercrime</title>
       <link>https://secubuzz.com/news/doj-dhs-launch-threat-disruption-center-for-cyberc-8fa7171e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/doj-dhs-launch-threat-disruption-center-for-cyberc-8fa7171e</guid>
@@ -401,60 +455,6 @@
       <description><![CDATA[Microsoft updated the acknowledgement for CVE-2026-70035, a .NET Framework remote code execution vulnerability, with no code changes. The informational change does not alter the vulnerability's severity, exploitability, or affected versions. Administrators should verify existing mitigations remain applied, as no new patch or workaround accompanies this acknowledgement update.]]></description>
       <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70035">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Excel RCE Vulnerability CVE-2026-118302</title>
-      <link>https://secubuzz.com/news/microsoft-excel-rce-vulnerability-cve-2026-118302-cd3b1070</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-excel-rce-vulnerability-cve-2026-118302-cd3b1070</guid>
-      <description><![CDATA[CVE-2026-118302 enables remote code execution in Microsoft Office Excel through a flaw in the application. The vulnerability permits unauthenticated attackers to run arbitrary code on affected machines, posing a high risk to enterprise environments. Microsoft released an informational acknowledgement; no patch is currently available, and users should monitor for future updates.]]></description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118302">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Outlook RCE Vulnerability CVE-2026-97749</title>
-      <link>https://secubuzz.com/news/microsoft-outlook-rce-vulnerability-cve-2026-97749-4811b074</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-outlook-rce-vulnerability-cve-2026-97749-4811b074</guid>
-      <description><![CDATA[CVE-2026-97749 enables remote code execution in Microsoft Office Outlook through a flaw in the application. The vulnerability permits unauthenticated attackers to run arbitrary code on affected machines, posing a high risk to enterprise environments. Microsoft released an informational acknowledgement; no patch is currently available, and users should monitor for future updates.]]></description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97749">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Excel RCE Vulnerability CVE-2026-97761</title>
-      <link>https://secubuzz.com/news/microsoft-excel-rce-vulnerability-cve-2026-97761-24efe064</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-excel-rce-vulnerability-cve-2026-97761-24efe064</guid>
-      <description><![CDATA[CVE-2026-97761 enables remote code execution in Microsoft Office Excel through a flaw in the application. The vulnerability permits unauthenticated attackers to run arbitrary code on affected machines, posing a high risk to enterprise environments. Microsoft released an informational acknowledgement; no patch is currently available, and users should monitor for future updates.]]></description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97761">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Updates Excel RCE Vulnerability Acknowledgement</title>
-      <link>https://secubuzz.com/news/microsoft-updates-excel-rce-vulnerability-acknowle-16c2e96e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-excel-rce-vulnerability-acknowle-16c2e96e</guid>
-      <description><![CDATA[Microsoft updated an acknowledgement for CVE-2026-97780, a remote code execution vulnerability in Office Excel. The MSRC entry describes the change as informational only and provides no new technical details, exploitability status, or severity score. Security teams should track the advisory for future updates and apply Excel patches when Microsoft publishes remediation guidance.]]></description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97780">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Acknowledges VS Code RCE Vulnerability</title>
-      <link>https://secubuzz.com/news/microsoft-acknowledges-vs-code-rce-vulnerability-08b4926a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-vs-code-rce-vulnerability-08b4926a</guid>
-      <description><![CDATA[Microsoft acknowledges CVE-2026-69370, a remote code execution flaw in Visual Studio Code product. The vulnerability permits arbitrary code execution via crafted input, but no active exploitation has been reported in the product. Microsoft has issued an informational update; users should await official patch guidance in the product for all users.]]></description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69370">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Acknowledges PPP EAP-TLS RCE Flaw</title>
-      <link>https://secubuzz.com/news/microsoft-acknowledges-ppp-eap-tls-rce-flaw-64a8a31b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-ppp-eap-tls-rce-flaw-64a8a31b</guid>
-      <description><![CDATA[Microsoft acknowledges CVE-2026-84015, a remote code execution flaw in the PPP EAP-TLS protocol. The vulnerability allows attackers to execute arbitrary code via crafted EAP-TLS messages, but no active exploitation has been reported. Microsoft has issued an informational update; users should await official patch guidance for all affected systems in the product.]]></description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84015">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>

@@ -5709,5 +5709,12 @@
   "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell",
   "https://socket.dev/blog/hardening-github-actions-against-insider-threats",
   "https://blog.talosintelligence.com/the-internet-needs-a-nap-and-you-do-too/",
-  "https://aws.amazon.com/security/security-bulletins/rss/2026-190-aws/"
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-190-aws/",
+  "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+  "https://www.helpnetsecurity.com/2026/11/20/network-outage-recovery-resilience/",
+  "https://cybersecuritynews.com/kpmg-canada-confirms-cyberattack/",
+  "https://cyber.gc.ca/en/alerts-advisories/craftcms-security-advisory-av26-1180",
+  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+  "https://www.helpnetsecurity.com/2026/11/20/ai-agent-api-security-production/",
+  "https://www.malwarebytes.com/blog/ai/2026/11/deepfake-elon-musk-nearly-costs-viewers-4-7-million-in-crypto"
 ]
