@@ -6587,5 +6587,11 @@
   "https://access.redhat.com/errata/RHSA-2026:100686",
   "https://access.redhat.com/errata/RHSA-2026:100638",
   "https://access.redhat.com/errata/RHSA-2026:100651",
-  "https://access.redhat.com/errata/RHSA-2026:100654"
+  "https://access.redhat.com/errata/RHSA-2026:100654",
+  "https://blog.cloudflare.com/ruby2shell-waf-protection/",
+  "https://blog.cloudflare.com/phpaftershell-waf-protection/",
+  "https://access.redhat.com/errata/RHSA-2026:100685",
+  "https://access.redhat.com/errata/RHSA-2026:100643",
+  "https://access.redhat.com/errata/RHSA-2026:100650",
+  "https://access.redhat.com/errata/RHSA-2026:100653"
 ]

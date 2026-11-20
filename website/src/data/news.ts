@@ -11,6 +11,48 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "how-cloudflare-waf-protects-against-ruby2shell-cve-45be843d",
+    "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
+    "summary": "ruby2shell lets attackers corrupt memory in default Rails and Sinatra apps without logging in. Cloudflare WAF blocks it for every customer, including Free plans. Upgrade Ruby now, and use the WAF to cover the gap.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
+    "publishedAt": "2026-11-20T20:24:38.000Z",
+    "cves": [
+      "CVE-2026-132825"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "how-cloudflare-waf-protects-against-ruby2shell-cve",
+      "article-45be843d",
+      "45be843d",
+      "how-cloudflare-waf-protects-against-ruby2shell-cve-156987",
+      "how-cloudflare-waf-protects-against-ruby2shell-cve-2026-1328"
+    ]
+  },
+  {
+    "slug": "how-cloudflare-waf-helps-protect-against-phpafters-4653f8cd",
+    "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
+    "summary": "phpAfterShell is a critical flaw in PHP's default session handler that can lead to code execution. Cloudflare WAF blocks it for all customers, including Free plans, and adds new rules for other PHP flaws fixed in the same release. The vulnerability is tracked as CVE-2026-126714.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
+    "publishedAt": "2026-11-20T20:00:45.000Z",
+    "cves": [
+      "CVE-2026-126714"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "how-cloudflare-waf-helps-protect-against-phpafters",
+      "article-4653f8cd",
+      "4653f8cd",
+      "how-cloudflare-waf-helps-protect-against-phpafters-2df84a",
+      "how-cloudflare-waf-helps-protect-against-phpaftershell-and-o"
+    ]
+  },
+  {
     "slug": "cve-2026-130901-improper-limitation-of-a-pathname-825b573f",
     "title": "CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server",
     "summary": "Bulletin ID: 2026-195-AWS Publication Date: 11/20/2026 10:30 AM PST Description: Improper limitation of a pathname to a restricted directory in the file access checks in Amazon awslabs.document-loader-mcp-server 1.0.10 through 1.0.20 might allow a context-dependent actor, via crafted document content processed by an MCP client, to read files outside the intended base directory and, in 1.0.12 through 1.0.20, to write PNG slide images outside it.",
@@ -1008,6 +1050,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100685-important-curl-security-update-be5483cc",
+    "title": "RHSA-2026:100685: Important: curl security update",
+    "summary": "An update for curl is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100685",
+    "publishedAt": "2026-11-20T08:54:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100685-important-curl-security-update",
+      "article-be5483cc",
+      "be5483cc",
+      "rhsa-2026-100685-important-curl-security-update-2ee085"
+    ]
+  },
+  {
     "slug": "european-commission-confirms-ai-generated-cyberatt-4d57d748",
     "title": "European Commission Confirms AI-Generated Cyberattack",
     "summary": "The European Commission confirmed a cyberattack that leveraged an available AI tool to disrupt several of its applications. The attack forced multiple systems offline, though no evidence of data exfiltration or credential compromise was reported, according to spokesperson Thomas Regnier. Security teams should review access controls, monitor for anomalous activity, and apply any vendor-issued mitigations to prevent similar AI-driven disruptions.",
@@ -1024,6 +1084,24 @@ export const news: NewsBrief[] = [
       "4d57d748",
       "european-commission-confirms-ai-generated-cyberatt-42376c",
       "european-commission-confirms-ai-generated-cyberattack"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100643-moderate-rpm-security-update-baca4ae2",
+    "title": "RHSA-2026:100643: Moderate: rpm security update",
+    "summary": "An update for rpm is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100643",
+    "publishedAt": "2026-11-20T08:48:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100643-moderate-rpm-security-update",
+      "article-baca4ae2",
+      "baca4ae2",
+      "rhsa-2026-100643-moderate-rpm-security-update-2ee084"
     ]
   },
   {
@@ -1060,6 +1138,43 @@ export const news: NewsBrief[] = [
       "article-02614055",
       "02614055",
       "red-hat-kernel-update-for-rhel-8-8-sap-2ee084"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100653-important-net-8-0-security-bug-fi-dcf5f07e",
+    "title": "RHSA-2026:100653: Important: .NET 8.0 security, bug fix, and enhancement update",
+    "summary": "An update for .NET 8.0 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100653",
+    "publishedAt": "2026-11-20T08:31:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100653-important-net-8-0-security-bug-fi",
+      "article-dcf5f07e",
+      "dcf5f07e",
+      "rhsa-2026-100653-important-net-8-0-security-bug-fi-2ee085",
+      "rhsa-2026-100653-important-net-8-0-security-bug-fix-and-enha"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100650-important-httpd-security-update-800165b0",
+    "title": "RHSA-2026:100650: Important: httpd security update",
+    "summary": "An update for httpd is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100650",
+    "publishedAt": "2026-11-20T08:30:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100650-important-httpd-security-update",
+      "article-800165b0",
+      "800165b0",
+      "rhsa-2026-100650-important-httpd-security-update-2ee084"
     ]
   },
   {
@@ -9584,131 +9699,6 @@ export const news: NewsBrief[] = [
       "article-1c87cfb8",
       "1c87cfb8",
       "microsoft-discloses-ntlm-spoofing-cve-1fde27"
-    ]
-  },
-  {
-    "slug": "microsoft-announces-sharepoint-spoofing-cve-4a8ba4f7",
-    "title": "Microsoft Announces SharePoint Spoofing CVE",
-    "summary": "Microsoft announced CVE-2026-88208, a SharePoint spoofing vulnerability that could allow attackers to masquerade as legitimate users within Office applications. The issue stems from inadequate validation of SharePoint authentication tokens, potentially enabling unauthorized access without user credentials. Microsoft released an informational acknowledgement; no patch is available yet, and users should stay alert for forthcoming updates.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88208",
-    "publishedAt": "2026-11-17T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-88208"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-announces-sharepoint-spoofing-cve",
-      "article-4a8ba4f7",
-      "4a8ba4f7",
-      "microsoft-announces-sharepoint-spoofing-cve-743eb0"
-    ]
-  },
-  {
-    "slug": "microsoft-patch-addresses-windows-media-foundation-ae72c982",
-    "title": "Microsoft Patch Addresses Windows Media Foundation Privilege Escalation",
-    "summary": "Microsoft disclosed CVE-2026-70278, an elevation of privilege flaw in Windows Media Foundation affecting Windows 10/11 via media playback. The flaw lets local users gain higher privileges by manipulating media stream parsing, with a CVSS score of 7.5, and no public exploit reported. Microsoft released a patch in the 27.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278",
-    "publishedAt": "2026-11-17T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-70278"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patch-addresses-windows-media-foundation",
-      "article-ae72c982",
-      "ae72c982",
-      "microsoft-patch-addresses-windows-media-foundation-745069",
-      "microsoft-patch-addresses-windows-media-foundation-privilege"
-    ]
-  },
-  {
-    "slug": "microsoft-discloses-windows-setup-elevation-vulner-9d04e0b1",
-    "title": "Microsoft Discloses Windows Setup Elevation Vulnerability CVE-2026-119914",
-    "summary": "Microsoft disclosed CVE-2026-119914, an elevation of privilege flaw in Windows Setup and Deployment. The flaw allows local users to gain higher privileges during installation, but no public exploit or CVSS score is provided. Microsoft issued an informational update; users should apply the latest Windows updates when available to mitigate potential risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914",
-    "publishedAt": "2026-11-17T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-119914"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-discloses-windows-setup-elevation-vulner",
-      "article-9d04e0b1",
-      "9d04e0b1",
-      "microsoft-discloses-windows-setup-elevation-vulner-1fe891",
-      "microsoft-discloses-windows-setup-elevation-vulnerability-cv"
-    ]
-  },
-  {
-    "slug": "microsoft-iis-remote-code-execution-vulnerability-71c899f5",
-    "title": "Microsoft IIS Remote Code Execution Vulnerability CVE-2026-119961",
-    "summary": "CVE-2026-119961 is a remote code execution flaw in Microsoft Windows IIS that allows attackers to run code via crafted HTTP requests. The flaw stems from improper input validation in the request parser, enabling unauthenticated exploitation with a CVSS score of 9.0, though no wild attacks have been seen. Microsoft issued an update; admins should apply the latest IIS patch.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961",
-    "publishedAt": "2026-11-17T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-119961"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-iis-remote-code-execution-vulnerability",
-      "article-71c899f5",
-      "71c899f5",
-      "microsoft-iis-remote-code-execution-vulnerability-1fe890",
-      "microsoft-iis-remote-code-execution-vulnerability-cve-2026-1"
-    ]
-  },
-  {
-    "slug": "microsoft-office-word-remote-code-execution-cve-20-d4bda852",
-    "title": "Microsoft Office Word Remote Code Execution CVE-2026-108440",
-    "summary": "CVE-2026-108440 is a remote code execution flaw in Office Word that lets attackers run code via malicious documents. The flaw stems from unsafe handling of embedded content, allowing unauthenticated exploitation with a CVSS score of 9.2, no attacks reported. Microsoft released an informational update; users should install the latest Office patch to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108440",
-    "publishedAt": "2026-11-17T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-108440"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-office-word-remote-code-execution-cve-20",
-      "article-d4bda852",
-      "d4bda852",
-      "microsoft-office-word-remote-code-execution-cve-20-1ff72f",
-      "microsoft-office-word-remote-code-execution-cve-2026-108440"
-    ]
-  },
-  {
-    "slug": "microsoft-office-remote-code-execution-cve-2026-78-29961e6e",
-    "title": "Microsoft Office Remote Code Execution CVE-2026-78524",
-    "summary": "CVE-2026-78524 is a remote code execution vulnerability in Microsoft Office that allows attackers to run arbitrary code through crafted files. The defect stems from improper validation of document metadata, enabling exploitation with a CVSS score of 8.9, no incidents reported. Microsoft issued an informational update; administrators should apply the latest Office patch to close the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524",
-    "publishedAt": "2026-11-17T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-78524"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-office-remote-code-execution-cve-2026-78",
-      "article-29961e6e",
-      "29961e6e",
-      "microsoft-office-remote-code-execution-cve-2026-78-744cbc",
-      "microsoft-office-remote-code-execution-cve-2026-78524"
     ]
   }
 ];
