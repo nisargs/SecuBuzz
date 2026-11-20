@@ -11,6 +11,104 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "jpmorgan-visa-mastercard-cite-third-party-data-lea-68db05d9",
+    "title": "JPMorgan Visa Mastercard Cite Third-Party Data Leak",
+    "summary": "The N0n extortion group leaked data tied to JPMorgan, Visa, and Mastercard customers, prompting the firms to blame third-party providers. The leak exposed sensitive customer information, though the extent of credential compromise remains unclear; no exploit or vulnerability was disclosed. Affected users are advised to monitor accounts and change credentials, while vendors review security controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
+    "publishedAt": "2026-11-20T07:35:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "jpmorgan-visa-mastercard-cite-third-party-data-lea",
+      "article-68db05d9",
+      "68db05d9",
+      "jpmorgan-visa-mastercard-cite-third-party-data-lea-332878",
+      "jpmorgan-visa-mastercard-cite-third-party-data-leak"
+    ]
+  },
+  {
+    "slug": "armory-castle-exploits-vmware-vcenter-zero-day-d09439e5",
+    "title": "Armory Castle Exploits VMware vCenter Zero-Day",
+    "summary": "Armory Castle exploited a critical authentication bypass in VMware vCenter Server's Directory Service, allowing attackers to gain administrative access and exfiltrate data. The flaw, identified as CVE-2026-123890 with a CVSS score of 9.8, permits unauthenticated exploitation and can lead to full system compromise.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+    "publishedAt": "2026-11-20T06:33:31.000Z",
+    "cves": [
+      "CVE-2026-123890"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "armory-castle-exploits-vmware-vcenter-zero-day",
+      "article-d09439e5",
+      "d09439e5",
+      "armory-castle-exploits-vmware-vcenter-zero-day-162ba3"
+    ]
+  },
+  {
+    "slug": "ai-red-teams-uncover-repeated-prompt-injection-vul-56ee9906",
+    "title": "AI Red Teams Uncover Repeated Prompt Injection Vulnerabilities",
+    "summary": "Researchers found AI agents retrained on a larger prompt injection dataset were more susceptible to hijacking during red-team tests. The automated purple-teaming workflow revealed that repeated prompt injection attempts could bypass weaker defenses, exposing a logic flaw in the agents' instruction parsing. Security teams should review prompt handling logic and implement stricter input validation to mitigate injection risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/ai-prompt-injection-red-team/",
+    "publishedAt": "2026-11-20T06:30:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-red-teams-uncover-repeated-prompt-injection-vul",
+      "article-56ee9906",
+      "56ee9906",
+      "ai-red-teams-uncover-repeated-prompt-injection-vul-11add1",
+      "ai-red-teams-uncover-repeated-prompt-injection-vulnerabiliti"
+    ]
+  },
+  {
+    "slug": "retire-vanity-security-dashboards-to-reduce-ticket-de96e946",
+    "title": "Retire Vanity Security Dashboards to Reduce Ticket Noise",
+    "summary": "Estée Lauder’s OT architect argues that vanity dashboards generate noise, causing analysts to close tickets without addressing root causes. The video shows a manufacturing example where approved maintenance work repeatedly triggers identical alerts, producing thousands of tickets and persistent issues. The speaker recommends SOC and control teams collaborate to tune alert logic and eliminate redundant notifications.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/security-dashboards-tips-video/",
+    "publishedAt": "2026-11-20T06:00:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "retire-vanity-security-dashboards-to-reduce-ticket",
+      "article-de96e946",
+      "de96e946",
+      "retire-vanity-security-dashboards-to-reduce-ticket-25df9c",
+      "retire-vanity-security-dashboards-to-reduce-ticket-noise"
+    ]
+  },
+  {
+    "slug": "drupal-issues-patch-for-critical-unauthenticated-r-941cb5d1",
+    "title": "Drupal Issues Patch for Critical Unauthenticated RCE",
+    "summary": "Drupal released a security update on 18 Nov to address a critical unauthenticated RCE in its core installer, enabling attackers to reinstall and take over sites. The vulnerability, identified as CVE-2026-132165, allows remote code execution without authentication and can lead to full site takeover.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/drupal-fixes-critical-rce-flaw/",
+    "publishedAt": "2026-11-20T05:52:19.000Z",
+    "cves": [
+      "CVE-2026-132165"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-issues-patch-for-critical-unauthenticated-r",
+      "article-941cb5d1",
+      "941cb5d1",
+      "drupal-issues-patch-for-critical-unauthenticated-r-cc2ed7",
+      "drupal-issues-patch-for-critical-unauthenticated-rce"
+    ]
+  },
+  {
     "slug": "ai-agent-api-security-lagging-behind-production-de-ddc48e86",
     "title": "AI Agent API Security Lagging Behind Production Deployment",
     "summary": "Postman surveyed nearly 9,000 developers, finding that 25% already deploy AI agents that call APIs in production. About forty percent of respondents have not defined how to secure the credentials and identities used by these agents, creating access risks. Teams should implement key management and identity controls for AI agents before expanding production use.",
@@ -570,6 +668,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "vim-security-update-released-for-rhel9-f4daa8ef",
+    "title": "vim security update released for RHEL9",
+    "summary": "A vulnerability in vim on RHEL9 was identified, prompting Red Hat to issue an update. The flaw, rated Important, lacks a public CVE identifier but is documented with CVSS scores in the advisory references. Red Hat recommends applying the patch immediately to mitigate potential exploitation; no workarounds are provided today.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100487",
+    "publishedAt": "2026-11-19T20:03:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vim-security-update-released-for-rhel9",
+      "article-f4daa8ef",
+      "f4daa8ef",
+      "vim-security-update-released-for-rhel9-2ee07d"
+    ]
+  },
+  {
     "slug": "seven-critical-php-flaws-expose-rce-risks-7dbeb1d4",
     "title": "Seven Critical PHP Flaws Expose RCE Risks",
     "summary": "Seven critical PHP flaws that enable remote code execution have been identified, prompting a patch release from the PHP development team. Exploitability depends on server configuration, with some flaws requiring authenticated access or specific input handling, and no widespread exploitation has been reported. Administrators should apply the latest PHP patch immediately and review configuration settings to mitigate potential exploitation.",
@@ -660,6 +776,62 @@ export const news: NewsBrief[] = [
       "article-63cbba6e",
       "63cbba6e",
       "securing-github-actions-against-insider-threats-5e5d6a"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-security-update-for-rhel-8-8b4cf37d",
+    "title": "Red Hat Releases Kernel Security Update for RHEL 8.4",
+    "summary": "Red Hat issued a kernel security update for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support, addressing multiple critical vulnerabilities. The advisory references several CVE identifiers, each with a CVSS base score, but no active exploitation reports were disclosed. Administrators should apply the update promptly, verify kernel integrity, and monitor for any anomalous kernel behavior.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100517",
+    "publishedAt": "2026-11-19T19:16:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-security-update-for-rhel-8",
+      "article-8b4cf37d",
+      "8b4cf37d",
+      "red-hat-releases-kernel-security-update-for-rhel-8-2ee080",
+      "red-hat-releases-kernel-security-update-for-rhel-8-4"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100485-important-grafana-security-update-27037fe8",
+    "title": "RHSA-2026:100485: Important: grafana security update",
+    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100485",
+    "publishedAt": "2026-11-19T19:09:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100485-important-grafana-security-update",
+      "article-27037fe8",
+      "27037fe8",
+      "rhsa-2026-100485-important-grafana-security-update-2ee07d"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100482-moderate-gstreamer1-plugins-bad-f-dc679ec3",
+    "title": "RHSA-2026:100482: Moderate: gstreamer1-plugins-bad-free security update",
+    "summary": "An update for gstreamer1-plugins-bad-free is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100482",
+    "publishedAt": "2026-11-19T19:08:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100482-moderate-gstreamer1-plugins-bad-f",
+      "article-dc679ec3",
+      "dc679ec3",
+      "rhsa-2026-100482-moderate-gstreamer1-plugins-bad-f-2ee07d",
+      "rhsa-2026-100482-moderate-gstreamer1-plugins-bad-free-securi"
     ]
   },
   {
@@ -9639,179 +9811,6 @@ export const news: NewsBrief[] = [
       "article-b497c069",
       "b497c069",
       "barracuda-cloud-breach-via-artex-ai-framework-607e7f"
-    ]
-  },
-  {
-    "slug": "ai-fuels-more-ransomware-attacks-payments-drop-8209d452",
-    "title": "AI Fuels More Ransomware Attacks, Payments Drop",
-    "summary": "Ransomware groups are leveraging large language models to craft highly convincing phishing emails and rapidly locate sensitive data, driving a rise in attack frequency. The trend shows a higher volume of incidents, yet the number of ransom payments has fallen, indicating increased resistance or alternative mitigation. Security teams should monitor AI-generated phishing campaigns and enforce multi-factor authentication to reduce exposure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
-    "publishedAt": "2026-11-16T19:56:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-fuels-more-ransomware-attacks-payments-drop",
-      "article-8209d452",
-      "8209d452",
-      "ai-fuels-more-ransomware-attacks-payments-drop-6d07ef"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-fence-agents-update-for-rhel-9-4-an-511a4de5",
-    "title": "Red Hat Issues Fence-Agents Update for RHEL 9.4 and 9.6",
-    "summary": "Red Hat released a critical security update for the fence-agents component on its RHEL 9.4 and 9.6 operating systems, addressing multiple high-severity vulnerabilities. The vulnerabilities could allow attackers to gain privilege escalation or execute arbitrary code, potentially compromising system integrity. Red Hat recommends applying the patch immediately and verifying system integrity to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100528",
-    "publishedAt": "2026-11-16T19:43:40.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100527"
-      }
-    ],
-    "aliases": [
-      "red-hat-issues-fence-agents-update-for-rhel-9-4-an",
-      "article-511a4de5",
-      "511a4de5",
-      "red-hat-issues-fence-agents-update-for-rhel-9-4-an-2ee080",
-      "red-hat-issues-fence-agents-update-for-rhel-9-4-and-9-6"
-    ]
-  },
-  {
-    "slug": "sleeper-agents-hide-payloads-in-open-weight-ai-mod-5a021833",
-    "title": "Sleeper Agents Hide Payloads in Open-Weight AI Models",
-    "summary": "Malware authors now embed malicious code within a minuscule fraction-0.00001%-of an open-weight neural network, creating a sleeper agent that evades conventional scanning. The hidden payload can activate only when the model is executed, making detection by standard AI integrity checks ineffective. Security teams should implement model integrity verification and monitor anomalous inference patterns to mitigate this threat.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models",
-    "publishedAt": "2026-11-16T19:10:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sleeper-agents-hide-payloads-in-open-weight-ai-mod",
-      "article-5a021833",
-      "5a021833",
-      "sleeper-agents-hide-payloads-in-open-weight-ai-mod-8f249d",
-      "sleeper-agents-hide-payloads-in-open-weight-ai-models"
-    ]
-  },
-  {
-    "slug": "fbi-warns-of-artex-ai-agents-compromising-domains-2cd2716d",
-    "title": "FBI Warns of ARTEX AI Agents Compromising Domains Rapidly",
-    "summary": "FBI issues a FLASH advisory warning that cybercriminals abuse ARTEX AI agents to compromise domains in under three hours. The agents execute rapid automated lateral moves, enabling attackers to pivot quickly across network segments and exfiltrate data before detection. Security teams should monitor for anomalous AI-driven activity, enforce strict access controls, and apply vendor patches to mitigate lateral movement.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/artex-ai-agents-fbi-warning-autonomous-attacks",
-    "publishedAt": "2026-11-16T18:59:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-warns-of-artex-ai-agents-compromising-domains",
-      "article-2cd2716d",
-      "2cd2716d",
-      "fbi-warns-of-artex-ai-agents-compromising-domains-e9bbb3",
-      "fbi-warns-of-artex-ai-agents-compromising-domains-rapidly"
-    ]
-  },
-  {
-    "slug": "rspamd-4-3-0-fixes-dos-and-dmarc-flaws-6a8e45e6",
-    "title": "Rspamd 4.3.0 Fixes DoS and DMARC Flaws",
-    "summary": "Rspamd 4.3.0 fixes worker crashes, use-after-free bugs, and DMARC bypasses caused by malformed HTTP headers and milter proxy data. Remote attackers could trigger denial-of-service or bypass email authentication by exploiting improper memory handling and header parsing, with public PoC evidence. Administrators should upgrade to Rspamd 4.3.0 or apply the vendor patch immediately to mitigate the risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/rspamd-4-3-0-worker-crash-dmarc-bypass-fix",
-    "publishedAt": "2026-11-16T18:58:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rspamd-4-3-0-fixes-dos-and-dmarc-flaws",
-      "article-6a8e45e6",
-      "6a8e45e6",
-      "rspamd-4-3-0-fixes-dos-and-dmarc-flaws-776874"
-    ]
-  },
-  {
-    "slug": "ai-infostealer-market-targets-vpns-tokens-403ae2e0",
-    "title": "AI Infostealer Market Targets VPNs, Tokens",
-    "summary": "Dark web vendors use AI to parse infostealer logs into searchable corporate dossiers, focusing on enterprise VPNs and AI token credentials. The threat model includes replay attacks that reuse captured tokens to gain unauthorized access to protected resources. Defenders should implement token rotation, monitor for anomalous token usage, and deploy replay detection mechanisms.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/ai-infostealer-marketplace-victim-profiles",
-    "publishedAt": "2026-11-16T18:58:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-infostealer-market-targets-vpns-tokens",
-      "article-403ae2e0",
-      "403ae2e0",
-      "ai-infostealer-market-targets-vpns-tokens-56959c"
-    ]
-  },
-  {
-    "slug": "telegram-widgets-enable-zero-click-rce-for-webrat-8783c186",
-    "title": "Telegram Widgets Enable Zero-Click RCE for WebRAT",
-    "summary": "Telegram’s new widgets contain flaws that allow zero-click remote code execution, delivering a WebRAT infostealer via PowerShell. The vulnerability bypasses user interaction, enabling attackers to execute arbitrary PowerShell commands on the victim’s machine. Security teams should monitor Telegram child processes with KQL queries and apply the latest widget update or disable widgets until patched.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://www.cybernewsai.com/blog/telegram-widgets-rce-webrat-malware",
-    "publishedAt": "2026-11-16T18:57:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "telegram-widgets-enable-zero-click-rce-for-webrat",
-      "article-8783c186",
-      "8783c186",
-      "telegram-widgets-enable-zero-click-rce-for-webrat-6072b8"
-    ]
-  },
-  {
-    "slug": "telegram-widgets-vulnerable-to-zero-click-rce-webr-e7e86ad9",
-    "title": "Telegram Widgets Vulnerable to Zero-Click RCE WebRAT",
-    "summary": "Telegram's newly launched widgets contain flaws that allow zero-click remote code execution, delivering a WebRAT infostealer via PowerShell. The flaw allows unauthenticated actors to run arbitrary PowerShell commands without user interaction, exposing credential theft; PoC exists. Telegram has not yet released a patch; security teams should monitor child processes with KQL and block suspicious PowerShell activity.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/telegram-widgets-rce-webrat-malware",
-    "publishedAt": "2026-11-16T18:57:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "telegram-widgets-vulnerable-to-zero-click-rce-webr",
-      "article-e7e86ad9",
-      "e7e86ad9",
-      "telegram-widgets-vulnerable-to-zero-click-rce-webr-64a6dc",
-      "telegram-widgets-vulnerable-to-zero-click-rce-webrat"
-    ]
-  },
-  {
-    "slug": "cve-2026-99288-causes-remote-linux-kernel-panic-8e540a0c",
-    "title": "CVE-2026-99288 Causes Remote Linux Kernel Panic",
-    "summary": "CVE-2026-99288, an 11-year-old Linux kernel flaw, triggers remote kernel panics via TCP ehash race conditions on affected systems. The race exploits a race condition in the TCP ehash table, allowing unauthenticated attackers to cause a crash without code execution. Apply the latest kernel patches and disable Receive Packet Steering (RPS) to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://www.cybernewsai.com/blog/cve-2026-99288-noisytcp-linux-kernel-crash",
-    "publishedAt": "2026-11-16T18:57:39.000Z",
-    "cves": [
-      "CVE-2026-99288"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-99288-causes-remote-linux-kernel-panic",
-      "article-8e540a0c",
-      "8e540a0c",
-      "cve-2026-99288-causes-remote-linux-kernel-panic-1d3dd8"
     ]
   }
 ];
