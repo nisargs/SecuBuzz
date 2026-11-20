@@ -2,6 +2,1356 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-114516",
+    "cveID": "CVE-2026-114516",
+    "slug": "cve-2026-114516",
+    "vendor": "npm",
+    "product": "ep_etherpad-lite",
+    "name": "Etherpad: Pre-auth arbitrary file read",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "An unauthenticated path‑traversal / arbitrary file read vulnerability in Etherpad's /static/* handler allows any remote, unauthenticated user to read any file on the server's filesystem (e.g. GET /static/plugins/ep_etherpad-lite/static/..%5C..%5C..%5C..%5C..%5C..%5C..%5Cetc/passwd returns /etc/passwd) available to the user running the etherpad software.",
+    "requiredAction": "Upgrade ep_etherpad-lite to version 3.3.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mc8w-wjhw-45x5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114516"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-103033",
+    "cveID": "CVE-2026-103033",
+    "slug": "cve-2026-103033",
+    "vendor": "Go",
+    "product": "altcha-lib-go (v2) · altcha-org",
+    "name": "ALTCHA: Nil-map panic (pre-verification DoS) in v1 parseServerSignature on malformed VerificationData",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "parseServerSignature in the v1 module only initializes ServerSignatureVerificationData.Extra inside the if err == nil branch after url.ParseQuery(parsedPayload.VerificationData). Go's url.ParseQuery returns the successfully-parsed pairs together with a non-nil error when the query string contains a malformed percent-escape.",
+    "requiredAction": "Upgrade altcha-lib-go (v2) · altcha-org to version 2.1.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gfwj-45pc-w6r5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103033"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-103025",
+    "cveID": "CVE-2026-103025",
+    "slug": "cve-2026-103025",
+    "vendor": "Go",
+    "product": "imagemeta · bep",
+    "name": "bep/imagemeta: Unbounded memory allocation decoding PNG `zTXt` \"Raw profile type iptc\" chunks",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-409",
+    "ransomware": false,
+    "description": "A crafted PNG can make imagemeta.Decode allocate memory far in excess of the input file's size, leading to memory exhaustion. Two separate paths in the zTXt \"Raw profile type iptc\" branch are affected: the declared chunk length drives an allocation directly, and the embedded zlib stream is decompressed without an output bound. A 42-byte file allocated 256 MB, and a 127 KB file allocated 460 MB.",
+    "requiredAction": "Upgrade imagemeta · bep to version 0.17.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7hvw-3c2q-45qg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103025"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-102945",
+    "cveID": "CVE-2026-102945",
+    "slug": "cve-2026-102945",
+    "vendor": "Go",
+    "product": "amf · omec-project",
+    "name": "Aether Project amf: panic on an unrecovered NGAP goroutine",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 4.9,
+    "severity": "Medium",
+    "cwe": "CWE-125",
+    "ransomware": false,
+    "description": "HandlePathSwitchRequest guards the UESecurityCapabilities IE for presence but never for length, and the extensible APER type silently yields an empty bit string, so six unguarded index-zero reads panic on an unrecovered goroutine and terminate the AMF. The AMF is the control-plane entry point for a 5G core, so terminating it drops mobility management for every subscriber.",
+    "requiredAction": "Upgrade amf · omec-project to version 1.7.1-0.20260725031321-d28042aaaea0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-v6w5-38cf-pcv8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102945"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63012",
+    "cveID": "CVE-2026-63012",
+    "slug": "cve-2026-63012",
+    "vendor": "Composer",
+    "product": "baserproject/baser-core",
+    "name": "baserCMS administrative API authorization bypass through session fallback",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-290",
+    "ransomware": false,
+    "description": "An authorization bypass occurs against the API endpoint /baser/api/admin/ by abusing the session authentication fallback.",
+    "requiredAction": "Upgrade baserproject/baser-core to version 5.3.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-wgvx-x5g3-9v29"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63012"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-62955",
+    "cveID": "CVE-2026-62955",
+    "slug": "cve-2026-62955",
+    "vendor": "Composer",
+    "product": "baserproject/baser-core",
+    "name": "baserCMS: Path Traversal Bypass via realpath() in BcThemeFileService (CVE-2026-30940 Patch Bypass)",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 7.2,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "The security patch introduced in baserCMS 5.2.3 to address CVE-2026-30940 / GHSA-c5c6-37vq-pjcq is incomplete. The patch added a realpath()-based directory traversal check in BcThemeFileService::getFullpath(), but the check is entirely skipped when realpath($baseDir) returns false — which occurs whenever the target subdirectory does not physically exist on disk.",
+    "requiredAction": "Upgrade baserproject/baser-core to version 5.3.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2pj4-v76f-wjvx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62955"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77382",
+    "cveID": "CVE-2026-77382",
+    "slug": "cve-2026-77382",
+    "vendor": "Rust (Cargo)",
+    "product": "falcon-rust",
+    "name": "falcon-rust: Discrete-Gaussian sampler runs at 2^-33 precision, far below Falcon's requirement (reference KAT vectors no longer pass)",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-1240",
+    "ransomware": false,
+    "description": "falcon-rust's discrete-Gaussian rejection sampler evaluates its exp() acceptance step at only 32 bits of fractional precision. Measured directly against the crate's own compiled code, approx_exp has a maximum relative error of 2^-33. For comparison, the Falcon reference implementation achieves about 2^-63, and the f64 code this crate replaced achieved about 2^-52.",
+    "requiredAction": "Upgrade falcon-rust to version 0.2.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-25rm-9wvm-m38v"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77382"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77378",
+    "cveID": "CVE-2026-77378",
+    "slug": "cve-2026-77378",
+    "vendor": "Composer",
+    "product": "bolt/core",
+    "name": "Bolt ListFormatHelper SQL injection",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-89",
+    "ransomware": false,
+    "description": "SQL Injection in ListFormatHelper allows authenticated users with the upload permission to execute arbitrary SQL queries and exfiltrate sensitive database contents through the /async/select-options endpoint when general/caching/list_format is enabled. This has been patched in Bolt 6.1.4.",
+    "requiredAction": "Upgrade bolt/core to version 6.1.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r7h9-qx4h-77j5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77378"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77380",
+    "cveID": "CVE-2026-77380",
+    "slug": "cve-2026-77380",
+    "vendor": "Composer",
+    "product": "bolt/core",
+    "name": "Bolt: Prevent SSRF due to unchecked followed redirects",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 5.2,
+    "severity": "Medium",
+    "cwe": "CWE-918",
+    "ransomware": false,
+    "description": "The /bolt/async/upload-url and /bolt/async/embed endpoints validated only the submitted URL before fetching it server-side, but the fetch then followed redirects to destinations that were never re-validated. This allowed an authenticated user to bypass the SSRF guard (UrlSafetyChecker) and make the server issue requests to internal/cloud-metadata addresses.",
+    "requiredAction": "Upgrade bolt/core to version 6.1.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3xjf-9q55-vxw4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77380"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77379",
+    "cveID": "CVE-2026-77379",
+    "slug": "cve-2026-77379",
+    "vendor": "Composer",
+    "product": "bolt/core",
+    "name": "Bolt: Information disclosure through unfiltered public relation API endpoint",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-402",
+    "ransomware": false,
+    "description": "A missing access-control filter in the public Relation API allowed unauthenticated users to discover metadata about unpublished, draft, and viewless content through REST and GraphQL endpoints. This has been patched in Bolt 6.1.4.",
+    "requiredAction": "Upgrade bolt/core to version 6.1.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6358-jg5p-hmjj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77379"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77377",
+    "cveID": "CVE-2026-77377",
+    "slug": "cve-2026-77377",
+    "vendor": "Composer",
+    "product": "bolt/core",
+    "name": "Bolt: Server-Side Request Forgery (SSRF) in URL-upload and embed endpoints",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 5.2,
+    "severity": "Medium",
+    "cwe": "CWE-918",
+    "ransomware": false,
+    "description": "Two authenticated backend endpoints fetched a user-supplied URL server-side with no protection against internal targets. This has been patched in Bolt 6.1.4.",
+    "requiredAction": "Upgrade bolt/core to version 6.1.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2535-j2pq-qq4r"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77377"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77376",
+    "cveID": "CVE-2026-77376",
+    "slug": "cve-2026-77376",
+    "vendor": "Composer",
+    "product": "bolt/core",
+    "name": "Bolt: Open redirect enables post-authentication redirection to arbitrary domains",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 6.1,
+    "severity": "Medium",
+    "cwe": "CWE-601",
+    "ransomware": false,
+    "description": "Open redirect vulnerabilities in LoginFormAuthenticator allow attackers to redirect users to attacker-controlled domains after login success or login failure, enabling phishing attacks and potential token theft. This has been patched in Bolt 6.1.4.",
+    "requiredAction": "Upgrade bolt/core to version 6.1.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xr6g-7g83-j865"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77376"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77369",
+    "cveID": "CVE-2026-77369",
+    "slug": "cve-2026-77369",
+    "vendor": "Go",
+    "product": "daptin · daptin",
+    "name": "Daptin: Broken Access Control (IDOR) in the generic YJS collaboration endpoint",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 9.6,
+    "severity": "Critical",
+    "cwe": "CWE-639",
+    "ransomware": false,
+    "description": "Daptin registers a generic WebSocket endpoint, GET /yjs/:documentName, for real-time collaborative document editing (YJS/CRDT). Unlike its purpose-built sibling route, this generic endpoint performs no per-resource authorization check - it only verifies that some user session exists.",
+    "requiredAction": "Upgrade daptin · daptin to version 0.12.30 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-wj7x-58c2-5793"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77369"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77367",
+    "cveID": "CVE-2026-77367",
+    "slug": "cve-2026-77367",
+    "vendor": "Go",
+    "product": "daptin · daptin",
+    "name": "Daptin: Unauthenticated SQL Injection via the `sort` query parameter on every entity list endpoint",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 9.4,
+    "severity": "Critical",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "An unauthenticated attacker can inject arbitrary SQL through the sort query parameter accepted by Daptin's generic entity list endpoint (GET /api/<entity>), which every table in a Daptin instance exposes.",
+    "requiredAction": "Upgrade daptin · daptin to version 0.12.30 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-hq2p-f2vj-v3cm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77367"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77359",
+    "cveID": "CVE-2026-77359",
+    "slug": "cve-2026-77359",
+    "vendor": "Pip",
+    "product": "jupyter-mcp-server",
+    "name": "Jupyter MCP Server: Browser DNS rebinding can hijack the Jupyter backend through management routes",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-350",
+    "ransomware": false,
+    "description": "Standalone streamable-http mode in datalayer/jupyter-mcp-server rejects forged Host and Origin headers on /mcp, but custom management routes mounted on the same application do not get the same browser-origin protection.",
+    "requiredAction": "Upgrade jupyter-mcp-server to version 1.0.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9x8x-crjq-g64h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77359"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77318",
+    "cveID": "CVE-2026-77318",
+    "slug": "cve-2026-77318",
+    "vendor": "Pip",
+    "product": "jupyter-mcp-server",
+    "name": "Jupyter MCP Server: Unauthenticated management routes can hijack the Jupyter backend in standalone HTTP mode",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 7.3,
+    "severity": "High",
+    "cwe": "CWE-306",
+    "ransomware": false,
+    "description": "Standalone streamable-http mode in datalayer/jupyter-mcp-server requires MCP_TOKEN for /mcp, but the custom management routes mounted on the same application do not enforce that token.",
+    "requiredAction": "Upgrade jupyter-mcp-server to version 1.0.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-24pw-rf5p-mgp7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77318"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77316",
+    "cveID": "CVE-2026-77316",
+    "slug": "cve-2026-77316",
+    "vendor": "Pip",
+    "product": "flyto-core",
+    "name": "Flyto2 Core: SSRF guard bypass via DNS rebinding (validate_url_ssrf resolves-then-connects without pinning)",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-918",
+    "ransomware": false,
+    "description": "- CWE: CWE-918 (SSRF) / CWE-367 (TOCTOU). - CVSS v3.1: AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:N = 6.8 Medium (AC:H — needs attacker-controlled DNS with a low/zero TTL and to flip the answer between the guard's lookup and the connection's lookup; S:C — reaches internal/metadata services the guard is meant to block; C:H — e.g. cloud metadata credentials at 169.254.169.254).",
+    "requiredAction": "Upgrade flyto-core to version 2.26.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6pm8-6f34-9v3g"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77316"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77315",
+    "cveID": "CVE-2026-77315",
+    "slug": "cve-2026-77315",
+    "vendor": "Pip",
+    "product": "flyto-core",
+    "name": "Flyto2 Core: http.paginate follows server-supplied next-page URLs (Link header / cursor) without SSRF revalidation",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 8.5,
+    "severity": "High",
+    "cwe": "CWE-918",
+    "ransomware": false,
+    "description": "http.paginate validates only the initial base_url, then follows server-supplied pagination targets (RFC 5988 Link: rel=\"next\" headers, cursor/offset URLs) in a loop without revalidating each follow-up URL. An attacker's first-page response can point next at an internal address, causing a second-order SSRF whose internal body is aggregated into the returned items.",
+    "requiredAction": "Upgrade flyto-core to version 2.26.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2mr3-rxrq-238c"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77315"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77313",
+    "cveID": "CVE-2026-77313",
+    "slug": "cve-2026-77313",
+    "vendor": "Pip",
+    "product": "flyto-core",
+    "name": "Flyto2 Core: SSRF guard validates the resolved IP but connects by hostname, allowing DNS-rebinding TOCTOU",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-367",
+    "ransomware": false,
+    "description": "validate_url_ssrf resolves the hostname, checks the IP against private ranges, then discards the IP and returns the hostname URL string. aiohttp performs a fresh, independent DNS resolution at connect time.",
+    "requiredAction": "Upgrade flyto-core to version 2.26.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pfg2-w999-497v"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77313"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77312",
+    "cveID": "CVE-2026-77312",
+    "slug": "cve-2026-77312",
+    "vendor": "Pip",
+    "product": "flyto-core",
+    "name": "Flyto2 Core: Arbitrary file write via unguarded data.*/file.* modules (incomplete fix of CVE-2026-67429)",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 10,
+    "severity": "Critical",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "- CWE: CWE-22 (Path Traversal) / CWE-73 (External Control of File Name or Path); impact reaches CWE-94 (code execution via file overwrite). - CVSS v3.1: AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H = 9.3 Critical (S:C because a write escapes the intended sandbox confinement into the host filesystem / other components). - AV:N — reachable via the MCP server / recipe engine (execute_module).",
+    "requiredAction": "Upgrade flyto-core to version 2.26.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p34x-fmph-9fjx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77312"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-59988",
+    "cveID": "CVE-2026-59988",
+    "slug": "cve-2026-59988",
+    "vendor": "Pip",
+    "product": "django-docutils",
+    "name": "django-docutils unsafe Docutils defaults allow local file disclosure, SSRF, and stored XSS",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "django-docutils before 0.30.0 rendered reStructuredText through Docutils without protected web-safe defaults. Public rendering paths, including publish_doctree, publish_html_from_source, publish_html_from_doctree, publish_parts_from_doctree, the {% rst %} template tag, the rst template filter, DocutilsTemplates, and DocutilsView, could process attacker-controlled RST with Docutils directives that...",
+    "requiredAction": "Upgrade django-docutils to version 0.30.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-86mf-q4h5-69gp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59988"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63415",
+    "cveID": "CVE-2026-63415",
+    "slug": "cve-2026-63415",
+    "vendor": "Composer",
+    "product": "jane-php/open-api-3",
+    "name": "Jane: $ref resolution performs SSRF + LFI (path traversal) at code-generation time (jane-php)",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 7,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "jane-php resolves external $ref targets at code-generation time via file_get_contents($ref) (jane-php/json-schema-runtime/Reference.php::doResolve) with no scheme/path restriction.",
+    "requiredAction": "Upgrade jane-php/open-api-3 to version 7.12.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-c3cj-3p6p-j822"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63415"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63344",
+    "cveID": "CVE-2026-63344",
+    "slug": "cve-2026-63344",
+    "vendor": ".NET (NuGet)",
+    "product": "Refitter",
+    "name": "Refitter allows arbitrary code execution through unescaped OpenAPI content-type values",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "Refitter emits the spec's content-type key (content map key in requestBody/responses) verbatim into a Refit [Headers(\"Accept: <ct>\", \"Content-Type: <ct>\")] attribute string without escaping \".",
+    "requiredAction": "Upgrade Refitter to version 2.1.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p32v-8v8j-j534"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63344"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63346",
+    "cveID": "CVE-2026-63346",
+    "slug": "cve-2026-63346",
+    "vendor": ".NET (NuGet)",
+    "product": "Refitter",
+    "name": "Refitter allows code execution through unescaped OpenAPI header parameter names",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "Refitter emits the spec's header parameter name (parameters[].name with in: header) verbatim into a Refit [Header(\"<name>\")] attribute string without escaping \". A crafted value survives Refitter's default OpenAPI validation, breaks out of the attribute and the enclosing interface + namespace, injects a top-level file class with a [ModuleInitializer] method, and reopens so the file stays valid.",
+    "requiredAction": "Upgrade Refitter to version 2.1.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-58x9-vjvp-6mx8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63346"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63345",
+    "cveID": "CVE-2026-63345",
+    "slug": "cve-2026-63345",
+    "vendor": ".NET (NuGet)",
+    "product": "Refitter",
+    "name": "Refitter allows arbitrary code execution through unescaped OpenAPI paths",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "Refitter emits each OpenAPI path (the paths-object key) verbatim into a Refit [Get(\"<path>\")] attribute string, without escaping \" or restricting characters.",
+    "requiredAction": "Upgrade Refitter to version 2.1.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3fhm-p725-h3g3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63345"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-58208",
+    "cveID": "CVE-2026-58208",
+    "slug": "cve-2026-58208",
+    "vendor": "Go",
+    "product": "nats-server (v2) · nats-io",
+    "name": "NATS Server: MQTT-over-WebSocket Path Can Crash WebSocket-Only JetStream Servers Before MQTT Is Enabled",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing. The NATS Server can accept client connections over WebSocket and can also support MQTT over WebSocket when MQTT is configured.",
+    "requiredAction": "Upgrade nats-server (v2) · nats-io to version 2.12.12 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p957-7v2w-g93g"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58208"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-58210",
+    "cveID": "CVE-2026-58210",
+    "slug": "cve-2026-58210",
+    "vendor": "Go",
+    "product": "nats-server (v2) · nats-io",
+    "name": "NATS Server allows unauthenticated memory exhaustion through incomplete MQTT CONNECT packets",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing. The NATS Server supports MQTT clients, including authentication and parsing of MQTT CONNECT packets. An unauthenticated MQTT client could cause the server to retain large incomplete MQTT CONNECT packets before authentication completed.",
+    "requiredAction": "Upgrade nats-server (v2) · nats-io to version 2.12.12 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r72h-j7qq-v6qg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58210"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-58209",
+    "cveID": "CVE-2026-58209",
+    "slug": "cve-2026-58209",
+    "vendor": "Go",
+    "product": "nats-server (v2) · nats-io",
+    "name": "NATS Server MQTT retained messages and QoS replay bypass subscription deny rules",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing. The NATS Server MQTT support includes retained messages and QoS1+ durable delivery. NATS subscription permissions can allow broad wildcard subscriptions while denying more sensitive subjects.",
+    "requiredAction": "Upgrade nats-server (v2) · nats-io to version 2.12.12 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7qmq-8cc4-hxwg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58209"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-62337",
+    "cveID": "CVE-2026-62337",
+    "slug": "cve-2026-62337",
+    "vendor": "Rust (Cargo)",
+    "product": "snark-verifier",
+    "name": "snark-verifier: Halo 2 aggregation circuit mishandles point-at-infinity proof elements",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "The Halo 2 aggregation circuit could mishandle proof elements encoded as the point at infinity. When an assigned proof point appeared in an MSM term with constant scalar one, the Halo 2 loader used a scalar-one shortcut that passed the assigned point directly into the EC sum helper.",
+    "requiredAction": "Upgrade snark-verifier to version 0.2.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x26x-7f4v-cqx7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62337"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128135",
+    "cveID": "CVE-2026-128135",
+    "slug": "cve-2026-128135",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: ZIP package extraction follows in-root hardlinks and overwrites files outside the NLTK data root",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-59",
+    "ransomware": false,
+    "description": "NLTK ships a security wrapper, nltk.pathsec.ZipFile, that is meant to confine archive extraction to trusted data roots and to block link-based escapes. When nltk.download() installs a package, the extraction write opens each member's target path without checking whether that path is a hardlink to a file located outside the data root.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-wr3g-j6qj-xpgh"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128135"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128136",
+    "cveID": "CVE-2026-128136",
+    "slug": "cve-2026-128136",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: AllowlistUnpickler does not deny numpy submodule-local file-I/O sinks",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6.1,
+    "severity": "Medium",
+    "cwe": "CWE-502",
+    "ransomware": false,
+    "description": "nltk.picklesec.allowlisted_pickle_load keyed its denylist of dangerous globals by export name, so numpy's file-I/O callables that live in submodules and are not re-exported under module == \"numpy\" were never matched.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-c59x-vh6j-3w8v"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128136"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128137",
+    "cveID": "CVE-2026-128137",
+    "slug": "cve-2026-128137",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK corpus-reader view methods bypass the scoped root sandbox via intermediate-directory symlinks",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.5,
+    "severity": "Medium",
+    "cwe": "CWE-59",
+    "ransomware": false,
+    "description": "CorpusReader.open() (nltk/corpus/reader/api.py:235-257) is NLTK's hardened file-access entry point: after a lexical guard it calls validate_path(..., required_root=self._root) (api.py:246-249), and the scoped branch of pathsec.validate_path (nltk/pathsec.py:168-179) resolves symlinks and raises ValueError when the resolved target is not inside the corpus root.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-g58v-j9g9-5gfg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128137"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128138",
+    "cveID": "CVE-2026-128138",
+    "slug": "cve-2026-128138",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK incomplete fix: additional JVM/JAR sandbox bypass through unvalidated launcher tokens in java() command arguments",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-77",
+    "ransomware": false,
+    "description": "NLTK 3.10.3 contains security hardening intended to close JVM argument-injection and untrusted JAR/classpath execution paths in nltk.internals.java(), including the issue published as GHSA-m4rf-3fr8-xwx3. The patched options channel correctly rejects Java argument-file references such as @/path/to/args and launcher modes such as -jar.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x8q7-6c7m-52gw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128138"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128139",
+    "cveID": "CVE-2026-128139",
+    "slug": "cve-2026-128139",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: XMLCorpusView comment and CDATA parsing permits quadratic CPU denial of service",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "An attacker who can make a victim read a well-formed XML corpus file whose body contains one large comment or CDATA section can pin a CPU core for a time quadratic in the file size, because XMLCorpusView._read_xml_fragment (nltk/corpus/reader/xmldocs.py) re-runs a linear whole-buffer validation after every 1 KiB block while the comment/CDATA terminator is still ahead.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-j8g8-j4j7-8j54"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128139"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128140",
+    "cveID": "CVE-2026-128140",
+    "slug": "cve-2026-128140",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Downloader cyclic collection indices cause an infinite closure walk",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-835",
+    "ransomware": false,
+    "description": "Downloader._update_index (nltk/downloader.py:1253-1313) is the mandatory first step of every downloader operation (download(), info(), packages(), collections(), list(), status()).",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pcm8-fqjx-rvx8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128140"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129221",
+    "cveID": "CVE-2026-129221",
+    "slug": "cve-2026-129221",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: ARFF_Formatter Injects Weka ARFF Schema Directives via Attacker-Controlled Class Labels",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-74",
+    "ransomware": false,
+    "description": "nltk.classify.weka.ARFF_Formatter writes class labels directly into the Weka ARFF @ATTRIBUTE '-label-' {...} declaration without any ARFF quoting or escaping.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9ffx-rrgx-mhgx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129221"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129222",
+    "cveID": "CVE-2026-129222",
+    "slug": "cve-2026-129222",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "Natural Language Toolkit (NLTK): Uncontrolled recursion (crash DoS) in DependencyGraph.tree()/triples()",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "DependencyGraph.tree()/triples() walk the parsed dependency structure using plain, unbounded Python recursion — one stack frame per edge in the graph — and never use the class's own cycle detector.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rh8m-wqhc-qmrf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129222"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129223",
+    "cveID": "CVE-2026-129223",
+    "slug": "cve-2026-129223",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "Natural Language Toolkit (NLTK): Uncontrolled recursion (crash DoS) in Synset.tree()/acyclic_tree() via WordNet relation traversal",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "The recursive traversal engines behind WordNetCorpusReader's Synset.tree() and Synset.acyclic_tree() have no maximum call-depth safeguard and default to unlimited depth. They guard against literal cycles, but not against a long, genuinely acyclic relation chain — which exhausts the Python call stack the same way as the sibling DependencyGraph finding I reported separately.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8846-p9w9-5frf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129223"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129224",
+    "cveID": "CVE-2026-129224",
+    "slug": "cve-2026-129224",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Uncontrolled recursion in CCG lexicon parser causes denial of service via deeply nested category input",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "The CCG lexicon parser recurses on nested parenthesised categories without any depth bound. matchBrackets (nltk/ccg/lexicon.py:154) calls itself once per nested (, and augParseCategory (nltk/ccg/lexicon.py:228,242) recurses once per bracketed sub-category.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3h95-x772-4765"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129224"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129225",
+    "cveID": "CVE-2026-129225",
+    "slug": "cve-2026-129225",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Uncontrolled recursion in DependencyGraph traversal causes denial of service via deep dependency chains",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "The dependency-graph traversal helpers recurse over dependency links without any depth bound or visited set. DependencyGraph._tree (nltk/parse/dependencygraph.py:404) recurses once per dependency link, triples (nltk/parse/dependencygraph.py:432) is a recursive generator, and get_cycle_path (nltk/parse/dependencygraph.py:520) recurses over dependencies.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xfcv-m889-fmqg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129225"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129226",
+    "cveID": "CVE-2026-129226",
+    "slug": "cve-2026-129226",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Uncontrolled recursion in semantic-logic type parser causes denial of service via nested type strings",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "The semantic-logic type parser read_type (nltk/sem/logic.py:866) recurses on both halves of every complex type (nltk/sem/logic.py:882-884) with no depth or length bound — only an isinstance assertion and a parenthesis-balance assertion.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w3pv-xfw4-ghr7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129226"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129227",
+    "cveID": "CVE-2026-129227",
+    "slug": "cve-2026-129227",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Uncontrolled recursion in Tree.fromlist causes denial of service via deeply nested list input",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "Tree.fromlist (nltk/tree/tree.py:767) converts a nested list into a Tree by recursing once per nesting level (nltk/tree/tree.py:780) with no depth bound — its only validation is type(l) == list and len(l) > 0.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-63wh-5r5m-wxr7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129227"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129228",
+    "cveID": "CVE-2026-129228",
+    "slug": "cve-2026-129228",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Uncontrolled recursion in Toolbox settings helpers causes denial of service via deeply nested input",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "The Toolbox settings-tree helpers recurse over the parsed element tree without any depth bound. _to_settings_string (nltk/toolbox.py:418), remove_blanks (nltk/toolbox.py:432), add_default_fields (nltk/toolbox.py:451), _sort_fields (nltk/toolbox.py:484), and add_blank_lines (nltk/toolbox.py:502,516) each recurse once per element level with no depth counter or explicit stack.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f2h2-f4fc-p978"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129228"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129229",
+    "cveID": "CVE-2026-129229",
+    "slug": "cve-2026-129229",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Compile-time regex DoS in NLTK search/tokenizer sinks: quadratic regex-engine compile bypasses the match-only timeout",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "NLTK exposes a compile-time regular-expression denial of service in its regex-search helpers. When an application passes untrusted text as the search pattern to TokenSearcher.findall() / Text.findall(), or as the tokenizer pattern to RegexpTokenizer, the pattern is handed to the third-party regex engine, whose compilation cost is roughly quadratic in the number of capturing groups.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-32p6-cwhc-8r78"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129229"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129230",
+    "cveID": "CVE-2026-129230",
+    "slug": "cve-2026-129230",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Uncontrolled recursion in WordNet Synset hypernym walkers (max_depth/min_depth/hypernym_paths/hypernym_distances) causes DoS",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.5,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "Four hypernym-walking methods on the WordNet Synset class in nltk/corpus/reader/wordnet.py (max_depth, min_depth, hypernym_paths, and hypernym_distances) traverse the hypernym pointer graph by direct recursion with no visited-node set and no depth cap.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-53pg-5qp8-mhvr"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129230"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129231",
+    "cveID": "CVE-2026-129231",
+    "slug": "cve-2026-129231",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Quadratic-time DoS in SeekableUnicodeStreamReader.readline on an unterminated corpus line via per-iteration full-buffer rescan",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "SeekableUnicodeStreamReader.readline in nltk/data.py assembles a line by repeatedly reading a block, appending it to a growing chars buffer, and recomputing chars.splitlines(True) over the entire buffer on every loop iteration.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-q4c8-9gwf-255x"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129231"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129232",
+    "cveID": "CVE-2026-129232",
+    "slug": "cve-2026-129232",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Quadratic CPU exhaustion in NLTK XMLCorpusView.read_block via deeply nested XML corpus tags",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "NLTK's XMLCorpusView.read_block rebuilds the full root-to-node context path with \"/\".join(context) on every start tag while it is still searching for a matching element. Because the context stack grows with XML nesting depth and the join is repeated once per start tag, a single corpus file containing deeply nested tags forces O(n^2) pure-Python work, where n is the number of nested elements.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cj8f-5fp3-6m88"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129232"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129233",
+    "cveID": "CVE-2026-129233",
+    "slug": "cve-2026-129233",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: StreamBackedCorpusView constructor os.stat leaks out-of-root file existence, size, and mtime bypassing pathsec ENFORCE",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "StreamBackedCorpusView, a public API in nltk/corpus/reader/util.py, applies the pathsec sandbox to the file content it reads but not to the file metadata it probes in its constructor.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w674-vqhw-g3pg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129233"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129234",
+    "cveID": "CVE-2026-129234",
+    "slug": "cve-2026-129234",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: Untrusted search path in prover9/mace4 config allows local code execution via relative binary_location",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 7.3,
+    "severity": "High",
+    "cwe": "CWE-426",
+    "ransomware": false,
+    "description": "Prover9Parent.config_prover9(binary_location=...) (and Mace, which inherits it) accepts a relative binary_location and passes it as path_to_bin to find_binary, which disables the CWD-relative rejection guard. Unlike the boxer/senna/malt/repp siblings, prover9/mace apply no os.path.isabs() filter, so the resolved relative program path (e.g.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cc5r-64rf-75hg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129234"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-129304",
+    "cveID": "CVE-2026-129304",
+    "slug": "cve-2026-129304",
+    "vendor": "Pip",
+    "product": "guard-core",
+    "name": "Guard Core: Unvalidated X-Forwarded-For-derived string used as a Redis key component and interpolated into a KEYS glob pattern",
+    "dateAdded": "2026-11-19",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "_extract_from_forwarded_header() (guard_core/utils.py:172-181 in 3.12.0; :179 on master 08780f1) returns the selected X-Forwarded-For entry without any ipaddress validation.",
+    "requiredAction": "Upgrade guard-core to version 3.13.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gm9r-hvc9-96gv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129304"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2024-10441",
     "slug": "cve-2024-10441",
     "vendor": "Synology",
