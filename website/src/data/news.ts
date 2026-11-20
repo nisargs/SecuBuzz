@@ -154,6 +154,71 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "usn-9178-1-crac-jdk-17-vulnerabilities-05e93fd6",
+    "title": "USN-9178-1: CRaC JDK 17 vulnerabilities",
+    "summary": "A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of CRaC JDK 17 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114820) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9178-1",
+    "publishedAt": "2026-11-20T02:36:11.000Z",
+    "cves": [
+      "CVE-2026-114939",
+      "CVE-2026-114820",
+      "CVE-2026-114938",
+      "CVE-2026-114940",
+      "CVE-2026-114942",
+      "CVE-2026-114943",
+      "CVE-2026-114944",
+      "CVE-2026-114945",
+      "CVE-2026-114946",
+      "CVE-2026-83374",
+      "CVE-2026-83376",
+      "CVE-2026-83380",
+      "CVE-2026-83381",
+      "CVE-2026-83387",
+      "CVE-2026-83395",
+      "CVE-2026-83400",
+      "CVE-2026-87290",
+      "CVE-2026-87292",
+      "CVE-2026-87294",
+      "CVE-2026-87367",
+      "CVE-2026-91332",
+      "CVE-2026-91334",
+      "CVE-2026-91335",
+      "CVE-2026-91373",
+      "CVE-2026-91374",
+      "CVE-2026-91375",
+      "CVE-2026-91379",
+      "CVE-2026-91380",
+      "CVE-2026-91382",
+      "CVE-2026-91394",
+      "CVE-2026-91397",
+      "CVE-2026-91398",
+      "CVE-2026-91400",
+      "CVE-2026-91403",
+      "CVE-2026-91410",
+      "CVE-2026-91415",
+      "CVE-2026-91418",
+      "CVE-2026-91451",
+      "CVE-2026-91452",
+      "CVE-2026-91453",
+      "CVE-2026-91461",
+      "CVE-2026-91462",
+      "CVE-2026-91463",
+      "CVE-2026-91464",
+      "CVE-2026-91487",
+      "CVE-2026-101516"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9178-1-crac-jdk-17-vulnerabilities",
+      "article-05e93fd6",
+      "05e93fd6",
+      "usn-9178-1-crac-jdk-17-vulnerabilities-7e7857"
+    ]
+  },
+  {
     "slug": "ubuntu-patches-multiple-flaws-in-crac-jdk-25-42713894",
     "title": "Ubuntu Patches Multiple Flaws in CRaC JDK 25",
     "summary": "Ubuntu released security updates addressing multiple vulnerabilities across the Compiler, JGSS, and JSSE components of CRaC JDK 25. The defects, including CVE-2026-114938, stem from improper input handling, authentication failures, and authorization bypasses that allow remote arbitrary code execution and data access. Administrators should apply updated JDK packages provided under Ubuntu Security Notice USN-9180-1 to eliminate exploitation risks.",
@@ -9747,27 +9812,6 @@ export const news: NewsBrief[] = [
       "article-8e540a0c",
       "8e540a0c",
       "cve-2026-99288-causes-remote-linux-kernel-panic-1d3dd8"
-    ]
-  },
-  {
-    "slug": "linux-kernel-noisytcp-crash-vulnerability-cve-2026-b3c6f639",
-    "title": "Linux Kernel NoisyTCP Crash Vulnerability CVE-2026-99288",
-    "summary": "CVE-2026-99288, an 11-year-old Linux kernel flaw, permits remote kernel panics via TCP ehash race conditions on affected hosts. The race exploits a flaw in the TCP ehash table, causing a kernel panic without code execution and is publicly documented. Apply the vendor-supplied kernel patch and disable Receive Packet Steering (RPS) to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-99288-noisytcp-linux-kernel-crash",
-    "publishedAt": "2026-11-16T18:57:39.000Z",
-    "cves": [
-      "CVE-2026-99288"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-noisytcp-crash-vulnerability-cve-2026",
-      "article-b3c6f639",
-      "b3c6f639",
-      "linux-kernel-noisytcp-crash-vulnerability-cve-2026-7dc7f0",
-      "linux-kernel-noisytcp-crash-vulnerability-cve-2026-99288"
     ]
   }
 ];

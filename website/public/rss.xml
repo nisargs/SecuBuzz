@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 05:45:09 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 06:45:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>AI Agent API Security Lagging Behind Production Deployment</title>
@@ -68,6 +68,15 @@
       <description><![CDATA[CVE-2026-114938 through CVE-2026-114941 affect CRaC JDK 21 components, allowing remote attackers to trigger denial-of-service or execute arbitrary code. The flaws arise from improper input validation, authentication, and authorization in compiler, JGSS, JSSE, and library modules, exposing sensitive data. Oracle released patches for JDK 21; administrators should apply the latest update or use the provided work-around to mitigate the vulnerabilities.]]></description>
       <pubDate>Fri, 20 Nov 2026 02:36:27 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9179-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>USN-9178-1: CRaC JDK 17 vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9178-1-crac-jdk-17-vulnerabilities-05e93fd6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9178-1-crac-jdk-17-vulnerabilities-05e93fd6</guid>
+      <description><![CDATA[A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of CRaC JDK 17 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114820) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.]]></description>
+      <pubDate>Fri, 20 Nov 2026 02:36:11 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9178-1">Ubuntu Security Notices</source>
       <category>CVE</category>
     </item>
     <item>
@@ -446,15 +455,6 @@
       <description><![CDATA[Microsoft released an informational update regarding a remote code execution vulnerability impacting Microsoft Office Excel. Tracked as CVE-2026-97756, the security flaw allows potential attackers to execute arbitrary code on targeted systems through crafted spreadsheet files. Microsoft updated the advisory acknowledgements while maintaining existing patch guidance and recommended defensive updates for enterprise environments.]]></description>
       <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97756">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Updates CVE-2026-70035 Acknowledgement Only</title>
-      <link>https://secubuzz.com/news/microsoft-updates-cve-2026-70035-acknowledgement-o-7a5d6c2c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-cve-2026-70035-acknowledgement-o-7a5d6c2c</guid>
-      <description><![CDATA[Microsoft updated the acknowledgement for CVE-2026-70035, a .NET Framework remote code execution vulnerability, with no code changes. The informational change does not alter the vulnerability's severity, exploitability, or affected versions. Administrators should verify existing mitigations remain applied, as no new patch or workaround accompanies this acknowledgement update.]]></description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70035">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>
