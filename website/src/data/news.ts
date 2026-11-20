@@ -95,6 +95,61 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "the-container-store-restores-operations-following-5bb98133",
+    "title": "The Container Store Restores Operations Following Weekend Cyberattack",
+    "summary": "The Container Store experienced a weekend cyberattack that impacted its corporate website and internal IT systems. Parent company Neighborhood Intelligence disclosed that the unauthorized security incident temporarily disrupted operational infrastructure across the retail enterprise. The organization has fully restored its website and core systems following remediation efforts to address the cyber disruption.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/container-store-restores-systems-cyberattack",
+    "publishedAt": "2026-11-20T19:32:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "the-container-store-restores-operations-following",
+      "article-5bb98133",
+      "5bb98133",
+      "the-container-store-restores-operations-following-7f9123",
+      "the-container-store-restores-operations-following-weekend-cy"
+    ]
+  },
+  {
+    "slug": "sap-releases-multi-product-security-updates-7e518ccc",
+    "title": "SAP releases multi-product security updates",
+    "summary": "SAP released a security advisory for SQL Anywhere Monitor, Solution Manager, CommonCryptoLib, HANA JDBC Client, Business Connector, NetWeaver Portal, S/4HANA, HANA 2.0, SAP GUI, and Starter Solution. The patches address memory corruption, authentication bypass, and privilege escalation flaws across 20+ SAP components, with CVE IDs omitted. SAP recommends applying the latest patches for each affected product immediately to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/sap-security-advisory-november-2025-monthly-rollup-av25-738",
+    "publishedAt": "2026-11-20T19:17:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sap-releases-multi-product-security-updates",
+      "article-7e518ccc",
+      "7e518ccc",
+      "sap-releases-multi-product-security-updates-7f945b"
+    ]
+  },
+  {
+    "slug": "arctic-wolf-reports-record-october-threat-activity-779b4f49",
+    "title": "Arctic Wolf reports record October threat activity",
+    "summary": "Arctic Wolf Aurora Incident Response recorded a 78% rise in non-customer cases and a 96% increase in sophisticated network intrusions, including ransomware, in October 2026. The surge indicates attackers are more active and employing advanced tactics, stressing the importance of rapid detection and response. Teams should update incident response plans, deploy automation, and monitor emerging patterns to reduce future risk.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/blog/incident-response-at-machine-speed-what-black-octobers-record-case-volume-reveals-about-todays-threat-landscape/",
+    "publishedAt": "2026-11-20T19:07:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "arctic-wolf-reports-record-october-threat-activity",
+      "article-779b4f49",
+      "779b4f49",
+      "arctic-wolf-reports-record-october-threat-activity-446bc2"
+    ]
+  },
+  {
     "slug": "cve-2026-130901-improper-limitation-of-a-pathname-825b573f",
     "title": "CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server",
     "summary": "Bulletin ID: 2026-195-AWS Publication Date: 11/20/2026 10:30 AM PST Description: Improper limitation of a pathname to a restricted directory in the file access checks in Amazon awslabs.document-loader-mcp-server 1.0.10 through 1.0.20 might allow a context-dependent actor, via crafted document content processed by an MCP client, to read files outside the intended base directory and, in 1.0.12 through 1.0.20, to write PNG slide images outside it.",
@@ -131,6 +186,44 @@ export const news: NewsBrief[] = [
       "article-3230d0ff",
       "3230d0ff",
       "chrome-dev-channel-updated-to-160-0-8171-0-798051"
+    ]
+  },
+  {
+    "slug": "cairn-ai-tool-finds-zero-day-in-medical-imaging-ap-e63715ba",
+    "title": "Cairn AI Tool Finds Zero-Day in Medical Imaging App",
+    "summary": "Hackers used the open-source AI framework Cairn to discover a zero-day in a medical imaging application in a critical system. The flaw, a buffer overflow in the image-processing module, enabled remote code execution with elevated privileges. The vendor released patch 2.3.1; apply it immediately and monitor for anomalous activity to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+    "publishedAt": "2026-11-20T17:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cairn-ai-tool-finds-zero-day-in-medical-imaging-ap",
+      "article-e63715ba",
+      "e63715ba",
+      "cairn-ai-tool-finds-zero-day-in-medical-imaging-ap-594ab7",
+      "cairn-ai-tool-finds-zero-day-in-medical-imaging-app"
+    ]
+  },
+  {
+    "slug": "cairn-ai-tool-finds-possible-zero-day-at-universit-cd701829",
+    "title": "Cairn AI Tool Finds Possible Zero-Day at University",
+    "summary": "A China-linked threat actor used the open-source AI framework Cairn to target two universities, reportedly finding a potential zero-day. The flaw, a memory-corruption bug in the LMS, could enable unauthenticated remote code execution, endangering academic data. Administrators should apply the vendor patch immediately and enforce strict access controls to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
+    "publishedAt": "2026-11-20T17:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cairn-ai-tool-finds-possible-zero-day-at-universit",
+      "article-cd701829",
+      "cd701829",
+      "cairn-ai-tool-finds-possible-zero-day-at-universit-26a74c",
+      "cairn-ai-tool-finds-possible-zero-day-at-university"
     ]
   },
   {
@@ -315,6 +408,61 @@ export const news: NewsBrief[] = [
       "14226752",
       "ubuntu-kernel-vulnerabilities-cover-extensive-subs-7e786a",
       "ubuntu-kernel-vulnerabilities-cover-extensive-subsystems"
+    ]
+  },
+  {
+    "slug": "linux-kernel-vulnerabilities-patched-in-usn-9168-3-d51a4baa",
+    "title": "Linux kernel vulnerabilities patched in USN-9168-3",
+    "summary": "Linux kernel subsystems such as ARM64, x86, Bluetooth, and GPU drivers have flaws that could let attackers compromise systems via code execution. The patch fixes memory corruption and privilege escalation bugs across 30+ subsystems, with no public exploit confirmed and CVE IDs omitted. Ubuntu released update 9168-3; users should apply the kernel patch immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9168-3",
+    "publishedAt": "2026-11-20T15:33:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-vulnerabilities-patched-in-usn-9168-3",
+      "article-d51a4baa",
+      "d51a4baa",
+      "linux-kernel-vulnerabilities-patched-in-usn-9168-3-7e78cb"
+    ]
+  },
+  {
+    "slug": "linux-kernel-vulnerabilities-patched-in-usn-9167-2-66d65512",
+    "title": "Linux kernel vulnerabilities patched in USN-9167-2",
+    "summary": "Linux kernel subsystems including ARM64, x86, Bluetooth, and I2C drivers have flaws that could let attackers compromise systems via code execution. The patch addresses memory corruption and privilege escalation bugs across 30+ subsystems, with no public exploit confirmed and CVE IDs omitted. Ubuntu released update 9167-2; users should apply the kernel patch immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9167-2",
+    "publishedAt": "2026-11-20T15:33:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-vulnerabilities-patched-in-usn-9167-2",
+      "article-66d65512",
+      "66d65512",
+      "linux-kernel-vulnerabilities-patched-in-usn-9167-2-7e78cf"
+    ]
+  },
+  {
+    "slug": "ubuntu-patches-multiple-security-flaws-in-linux-ke-87218dc3",
+    "title": "Ubuntu Patches Multiple Security Flaws in Linux Kernel",
+    "summary": "Ubuntu released security update USN-9169-2 to address multiple security vulnerabilities discovered across numerous Linux kernel subsystems. The underlying flaws affect critical subsystems including GPU drivers, network drivers, x86 architecture, and file systems, creating potential risks of system compromise. System administrators are advised to apply the updated Linux kernel packages distributed by Ubuntu to mitigate these security issues.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9169-2",
+    "publishedAt": "2026-11-20T15:33:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-patches-multiple-security-flaws-in-linux-ke",
+      "article-87218dc3",
+      "87218dc3",
+      "ubuntu-patches-multiple-security-flaws-in-linux-ke-7e78c8",
+      "ubuntu-patches-multiple-security-flaws-in-linux-kernel"
     ]
   },
   {
@@ -1362,6 +1510,81 @@ export const news: NewsBrief[] = [
       "article-dc0864d2",
       "dc0864d2",
       "red-hat-releases-kernel-update-for-rhel-9-6-eus-2ee085"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100640-important-skopeo-security-bug-fix-4e7c28fe",
+    "title": "RHSA-2026:100640: Important: skopeo security, bug fix, and enhancement update",
+    "summary": "An update for skopeo is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100640",
+    "publishedAt": "2026-11-20T08:45:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100640-important-skopeo-security-bug-fix",
+      "article-4e7c28fe",
+      "4e7c28fe",
+      "rhsa-2026-100640-important-skopeo-security-bug-fix-2ee084",
+      "rhsa-2026-100640-important-skopeo-security-bug-fix-and-enhan"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100645-important-python3-9-security-upda-45b5e98e",
+    "title": "RHSA-2026:100645: Important: python3.9 security update",
+    "summary": "An update for python3.9 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100645",
+    "publishedAt": "2026-11-20T08:44:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100645-important-python3-9-security-upda",
+      "article-45b5e98e",
+      "45b5e98e",
+      "rhsa-2026-100645-important-python3-9-security-upda-2ee084",
+      "rhsa-2026-100645-important-python3-9-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100691-important-python-oauthlib-securit-692cf308",
+    "title": "RHSA-2026:100691: Important: python-oauthlib security update",
+    "summary": "An update for python-oauthlib is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100691",
+    "publishedAt": "2026-11-20T08:40:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100691-important-python-oauthlib-securit",
+      "article-692cf308",
+      "692cf308",
+      "rhsa-2026-100691-important-python-oauthlib-securit-2ee085",
+      "rhsa-2026-100691-important-python-oauthlib-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100642-important-edk2-security-update-23dc7558",
+    "title": "RHSA-2026:100642: Important: edk2 security update",
+    "summary": "An update for edk2 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100642",
+    "publishedAt": "2026-11-20T08:39:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100642-important-edk2-security-update",
+      "article-23dc7558",
+      "23dc7558",
+      "rhsa-2026-100642-important-edk2-security-update-2ee084"
     ]
   },
   {
@@ -9471,236 +9694,6 @@ export const news: NewsBrief[] = [
       "1302a567",
       "compromised-fireworks-key-enables-cursor-data-brea-54b178",
       "compromised-fireworks-key-enables-cursor-data-breach"
-    ]
-  },
-  {
-    "slug": "california-suits-openai-over-uncontrolled-ai-agent-45f70d4a",
-    "title": "California Suits OpenAI Over Uncontrolled AI Agents",
-    "summary": "California filed a lawsuit against OpenAI, alleging the company lost control of experimental AI agents more than 80 times. The suit claims OpenAI misled the public about safety protocols, potentially exposing users to uncontrolled autonomous behavior and data privacy risks. OpenAI has not yet responded, and the case will determine regulatory oversight for experimental AI deployments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/openai-lost-control-of-ai-agents-over-80-times-california-alleges",
-    "publishedAt": "2026-11-17T18:29:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "california-suits-openai-over-uncontrolled-ai-agent",
-      "article-45f70d4a",
-      "45f70d4a",
-      "california-suits-openai-over-uncontrolled-ai-agent-19f573",
-      "california-suits-openai-over-uncontrolled-ai-agents"
-    ]
-  },
-  {
-    "slug": "researchers-hijack-hugging-face-account-for-popula-7d2ade0d",
-    "title": "Researchers hijack Hugging Face account for popular Kokoro AI model",
-    "summary": "A Lack of ownership verification on the Hugging Face platform allowed researchers to take control of Kokoro, a text-to-speech model used in projects from Google, NVIDIA, AMD, Intel, and Amazon Web Services.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/",
-    "publishedAt": "2026-11-17T18:21:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "researchers-hijack-hugging-face-account-for-popula",
-      "article-7d2ade0d",
-      "7d2ade0d",
-      "researchers-hijack-hugging-face-account-for-popula-60ecd8",
-      "researchers-hijack-hugging-face-account-for-popular-kokoro-a"
-    ]
-  },
-  {
-    "slug": "ai-frameworks-accelerate-multi-stage-attacks-33dcacaf",
-    "title": "AI Frameworks Accelerate Multi-Stage Attacks",
-    "summary": "Google reports that threat actors are deploying multi-agent AI frameworks to accelerate the velocity of multi-stage intrusions. These autonomous systems enable attackers to orchestrate complex attack chains without manual intervention, increasing operational efficiency. Security teams should monitor for anomalous AI-driven activity and employ behavior-based detection to mitigate evolving threat tactics.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/",
-    "publishedAt": "2026-11-17T18:16:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-frameworks-accelerate-multi-stage-attacks",
-      "article-33dcacaf",
-      "33dcacaf",
-      "ai-frameworks-accelerate-multi-stage-attacks-f3ebb0"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-perception-expands-security-stac-2ca31f19",
-    "title": "Microsoft Updates Perception, Expands Security Stack",
-    "summary": "Microsoft updated its Perception AI platform and added a new Microsoft Security cyber stack to protect agents and digital estates. The changes expand threat detection, integrate agent security controls, and deliver unified visibility across cloud and on-premises environments. Security teams should apply the latest updates, review configuration options, and monitor Perception dashboards for anomalous activity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
-    "publishedAt": "2026-11-17T18:14:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-perception-expands-security-stac",
-      "article-2ca31f19",
-      "2ca31f19",
-      "microsoft-updates-perception-expands-security-stac-2dc1cd",
-      "microsoft-updates-perception-expands-security-stack"
-    ]
-  },
-  {
-    "slug": "tor-issues-emergency-update-during-ddos-attack-f59e793a",
-    "title": "Tor Issues Emergency Update During DDoS Attack",
-    "summary": "Tor Network issued an emergency update while an ongoing distributed denial-of-service attack targeted its relays and obstructed traffic. The update patches a relay configuration flaw that allowed attackers to flood nodes with malformed packets, temporarily degrading network performance. Operators should install the latest Tor release, enable rate-limiting on relays, and monitor node logs for abnormal traffic patterns.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
-    "publishedAt": "2026-11-17T18:04:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tor-issues-emergency-update-during-ddos-attack",
-      "article-f59e793a",
-      "f59e793a",
-      "tor-issues-emergency-update-during-ddos-attack-3071d6"
-    ]
-  },
-  {
-    "slug": "apng2gif-vulnerabilities-allow-apng-overflows-7691e728",
-    "title": "apng2gif Vulnerabilities Allow APNG Overflows",
-    "summary": "The apng2gif utility contains multiple CVEs (CVE-2017-6960, CVE-2017-6961) that allow integer overflows and heap-based buffer over-reads when processing crafted APNG files. An attacker could exploit these flaws to cause denial of service or potentially read sensitive memory, though no public exploit is documented. Users should update to the latest apng2gif release or apply the vendor’s patch to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9132-1",
-    "publishedAt": "2026-11-17T17:45:22.000Z",
-    "cves": [
-      "CVE-2017-6960",
-      "CVE-2017-6961"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apng2gif-vulnerabilities-allow-apng-overflows",
-      "article-7691e728",
-      "7691e728",
-      "apng2gif-vulnerabilities-allow-apng-overflows-7e7a3f"
-    ]
-  },
-  {
-    "slug": "malicious-ios-scripts-now-behind-1-in-5-advertiser-8046f973",
-    "title": "Malicious iOS Scripts Now Behind 1 in 5 Advertiser Suspensions as Coruna Exploit Kit Hides Inside Ad Landing Pages",
-    "summary": "Malicious iOS scripts accounted for roughly 20% of advertiser account suspensions in 2026 across advertising platforms protected by ADEX, according to the company’s newly released State of Ad Fraud 2026: ADEX Trust & Safety Report.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/malicious-ios-scripts-now-behind-1-in-5-advertiser-suspensions-as-coruna-exploit-kit-hides-inside-ad-landing-pages/",
-    "publishedAt": "2026-11-17T17:25:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malicious-ios-scripts-now-behind-1-in-5-advertiser",
-      "article-8046f973",
-      "8046f973",
-      "malicious-ios-scripts-now-behind-1-in-5-advertiser-741a71",
-      "malicious-ios-scripts-now-behind-1-in-5-advertiser-suspensio"
-    ]
-  },
-  {
-    "slug": "ubuntu-patch-addresses-swupdate-privilege-escalati-5c65a946",
-    "title": "Ubuntu Patch Addresses SWUpdate Privilege Escalation Flaws",
-    "summary": "SWUpdate suffered two local privilege escalation flaws, CVE-2025-41259 and CVE-2026-109399, affecting Ubuntu 22.04 LTS and 26.04 LTS. CVE-2025-41259 allowed a race condition during directory cleanup, while CVE-2026-109399 enabled attackers with an intermediate signing key to install malicious signed updates. Ubuntu released patches that ignore embedded certificates in CMS signatures; admins should apply the update to prevent escalation and malicious updates.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9150-1",
-    "publishedAt": "2026-11-17T17:18:22.000Z",
-    "cves": [
-      "CVE-2025-41259",
-      "CVE-2026-109399"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-patch-addresses-swupdate-privilege-escalati",
-      "article-5c65a946",
-      "5c65a946",
-      "ubuntu-patch-addresses-swupdate-privilege-escalati-7e795e",
-      "ubuntu-patch-addresses-swupdate-privilege-escalation-flaws"
-    ]
-  },
-  {
-    "slug": "ubuntu-patches-minimagick-command-injection-flaw-347df98b",
-    "title": "Ubuntu Patches MiniMagick Command Injection Flaw",
-    "summary": "Ubuntu published USN-9149-1 for a MiniMagick vulnerability affecting applications that process image file names or URLs. MiniMagick passed untrusted names and URLs directly to Kernel#open, allowing an attacker to execute arbitrary commands when an application opened a malicious image reference. Administrators should apply the updated MiniMagick packages from Ubuntu to remove the unsafe Kernel#open behavior.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9149-1",
-    "publishedAt": "2026-11-17T17:17:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-patches-minimagick-command-injection-flaw",
-      "article-347df98b",
-      "347df98b",
-      "ubuntu-patches-minimagick-command-injection-flaw-7e79b0"
-    ]
-  },
-  {
-    "slug": "ubuntu-fixes-mechanize-arbitrary-command-execution-eb0b0f73",
-    "title": "Ubuntu Fixes Mechanize Arbitrary Command Execution",
-    "summary": "Ubuntu issued USN-9148-1 for a Mechanize vulnerability in methods that open local files. Mechanize used Kernel#open with untrusted input as a local file name, enabling an attacker to execute arbitrary commands when an application passed malicious input to those methods. Security teams should install the updated Mechanize packages from Ubuntu to eliminate the unsafe file-opening path.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9148-1",
-    "publishedAt": "2026-11-17T17:17:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-fixes-mechanize-arbitrary-command-execution",
-      "article-eb0b0f73",
-      "eb0b0f73",
-      "ubuntu-fixes-mechanize-arbitrary-command-execution-7e79b4"
-    ]
-  },
-  {
-    "slug": "usn-9147-1-pywps-vulnerability-c3ae89ef",
-    "title": "USN-9147-1: PyWPS vulnerability",
-    "summary": "It was discovered that PyWPS did not disable the resolution of XML external entities when parsing requests. A remote attacker could possibly use this issue to read arbitrary files on the server.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9147-1",
-    "publishedAt": "2026-11-17T17:17:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9147-1-pywps-vulnerability",
-      "article-c3ae89ef",
-      "c3ae89ef",
-      "usn-9147-1-pywps-vulnerability-7e79b8"
-    ]
-  },
-  {
-    "slug": "privoxy-vulnerabilities-enable-dos-and-xss-attacks-9aa1f30f",
-    "title": "Privoxy Vulnerabilities Enable DoS and XSS Attacks",
-    "summary": "Privoxy contains two CVE-2021-44540 and CVE-2021-44543 vulnerabilities affecting Ubuntu 22.04 LTS and 26.04 LTS. CVE-2021-44540 causes a memory leak that can lead to denial of service, while CVE-2021-44543 permits remote attackers to execute cross-site scripting via unencoded template names. Administrators should upgrade to the latest Privoxy version or apply the vendor patch to mitigate DoS and XSS risks.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9146-1",
-    "publishedAt": "2026-11-17T17:16:26.000Z",
-    "cves": [
-      "CVE-2021-44540",
-      "CVE-2021-44543"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "privoxy-vulnerabilities-enable-dos-and-xss-attacks",
-      "article-9aa1f30f",
-      "9aa1f30f",
-      "privoxy-vulnerabilities-enable-dos-and-xss-attacks-7e79bc"
     ]
   }
 ];

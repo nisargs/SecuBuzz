@@ -102,6 +102,303 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-132275",
+    "cveID": "CVE-2026-132275",
+    "slug": "cve-2026-132275",
+    "vendor": "Pip",
+    "product": "svglib",
+    "name": "svglib: Exponential resource consumption via nested <use> references in svg2rlg",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "svg2rlg() expands <use> references without any limit on the total number of expansions. Only direct cycles are rejected (CircularRefError). A group containing N <use> elements that point to another such group multiplies the work by N per nesting level, so an SVG of about 1.4 KB makes svglib clone and render over 100,000 nodes, taking tens of seconds of CPU time and hundreds of MiB of memory.",
+    "requiredAction": "Upgrade svglib to version 2.3.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-555j-qj3j-c8jv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132275"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-104884",
+    "cveID": "CVE-2026-104884",
+    "slug": "cve-2026-104884",
+    "vendor": "Composer",
+    "product": "contao/core-bundle",
+    "name": "contao/core-bundle: Cross-site scripting in the frontend search results",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "Commit 23e8cca3136a hardened the search-result title against insert-tag/XSS by setting $objTemplate->title = StringUtil::specialchars(StringUtil::stripInsertTags($arrResult[$i]['title'])). But the legacy HTML5 template does not use that title variable - it prints the raw link variable, which is assigned without escaping.",
+    "requiredAction": "Upgrade contao/core-bundle to version 5.3.50 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h57j-5f5m-789v"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104884"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-104883",
+    "cveID": "CVE-2026-104883",
+    "slug": "cve-2026-104883",
+    "vendor": "Composer",
+    "product": "contao/core-bundle",
+    "name": "contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 7.2,
+    "severity": "High",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "Commit 2b83a60f7763 (5.7.3) hardened the template editor: it added TemplateEditorModuleVoter + CheckTemplateEditorSaveListener so a non-admin cannot self-grant the tpl_editor backend module (editable PHP-capable templates permit server-side code execution). That voter supports only the modules field and the literal value tpl_editor.",
+    "requiredAction": "Upgrade contao/core-bundle to version 5.3.50 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r9qp-pqx5-8369"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104883"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-104882",
+    "cveID": "CVE-2026-104882",
+    "slug": "cve-2026-104882",
+    "vendor": "Composer",
+    "product": "contao/core-bundle",
+    "name": "contao/core-bundle: Improper access control in the CSV import wizard",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-639",
+    "ransomware": false,
+    "description": "Custom backend module \"key\" actions are dispatched in Backend::getBackendModule() (Backend.php:322-327) after only the module-level USER_CAN_ACCESS_MODULE check - no per-record voter runs. A non-admin editor scoped to certain pages/forms can overwrite the tableitems/listitems/options of arbitrary tl_content / tl_form_field records outside their scope, defeating the per-record access control.",
+    "requiredAction": "Upgrade contao/core-bundle to version 5.3.50 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-23w9-4pg3-xwm3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104882"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-104881",
+    "cveID": "CVE-2026-104881",
+    "slug": "cve-2026-104881",
+    "vendor": "Composer",
+    "product": "contao/newsletter-bundle",
+    "name": "contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-639",
+    "ransomware": false,
+    "description": "Channel access is enforced only by the DataContainer voters (NewsletterChannelAccessVoter / NewsletterRecipientsAccessVoter, requiring USER_CAN_EDIT_CHANNEL), whose supportsType() fires exclusively for Create/Read/Update/DeleteAction subjects dispatched inside DC_Table's create/edit/delete methods.",
+    "requiredAction": "Upgrade contao/newsletter-bundle to version 5.3.50 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3r9g-pfhv-3228"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104881"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77331",
+    "cveID": "CVE-2026-77331",
+    "slug": "cve-2026-77331",
+    "vendor": "Pip",
+    "product": "memtomem-stm",
+    "name": "memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 2,
+    "severity": "Low",
+    "cwe": "CWE-362",
+    "ransomware": false,
+    "description": "Concurrent surfacing RPC failures can trigger more than one reconnect for the same dirty session, and cancellation during a post-reconnect retry can leave the replacement session reusable despite an interrupted protocol exchange.",
+    "requiredAction": "Upgrade memtomem-stm to version 0.1.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-72jh-722p-rqr3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77331"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77332",
+    "cveID": "CVE-2026-77332",
+    "slug": "cve-2026-77332",
+    "vendor": "Pip",
+    "product": "memtomem-stm",
+    "name": "memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 2.3,
+    "severity": "Low",
+    "cwe": "CWE-116",
+    "ransomware": false,
+    "description": "Untrusted long-term and working-memory fields can introduce Markdown or HTML-compatible structure into the surfaced-memory envelope. A crafted memory may create misleading structural boundaries or visually conceal content. The private fix serializes every untrusted field as inert single-line data, validates copyable memory identifiers, and pins an explicit untrusted-data preamble.",
+    "requiredAction": "Upgrade memtomem-stm to version 0.1.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-43hx-xm7w-3mhj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77332"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77309",
+    "cveID": "CVE-2026-77309",
+    "slug": "cve-2026-77309",
+    "vendor": "Pip",
+    "product": "ait-gui",
+    "name": "AIT-GUI route chain allows unauthenticated Python execution in server process",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "A security issue exists where unauthenticated callers can instruct the AIT-GUI server to execute arbitrary Python scripts. The attack vector involves obtaining a session cookie through GET /, followed by a malicious POST /script/run request containing an absolute file path that bypasses the configured script directory restrictions.",
+    "requiredAction": "Upgrade ait-gui to version 2.5.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jrjx-9jjw-747m"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77309"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-61725",
+    "cveID": "CVE-2026-61725",
+    "slug": "cve-2026-61725",
+    "vendor": "Rust (Cargo)",
+    "product": "sevenz-rust2",
+    "name": "sevenz-rust2: decompress builds each output path as dest.join(entry.name()) with no traversal guard, allowing a crafted .7z to write files outside the destination (Zip-Slip)",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 6.1,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "Extracting an attacker-supplied 7z archive can write files outside the destination directory. The 7z header stores each entry's path as a UTF-16 name with nothing constraining it to a relative, in-tree path.",
+    "requiredAction": "Upgrade sevenz-rust2 to version 0.21.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qh76-45cr-8xrc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61725"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63341",
+    "cveID": "CVE-2026-63341",
+    "slug": "cve-2026-63341",
+    "vendor": "npm",
+    "product": "aedes",
+    "name": "Aedes has Uncaught Exception and Uncontrolled Resource Consumption",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "A remote Denial of Service (DoS) vulnerability, allows any remote client to cause a complete crash of the Aedes MQTT broker process. This is achieved by sending a specially crafted MQTT message (via PUBLISH or SUBSCRIBE), or by setting a Will message with such a topic, containing a highly recursive topic string (e.g., with thousands of '/' delimiters).",
+    "requiredAction": "Upgrade aedes to version 1.1.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xxqp-5qx8-gj5q"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63341"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-58254",
+    "cveID": "CVE-2026-58254",
+    "slug": "cve-2026-58254",
+    "vendor": "Go",
+    "product": "nats-server (v2) · nats-io",
+    "name": "nats-server Leaf node connections bypass Nats-Trace-Dest permission check",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing. The NATS Server supports leafnode connections between servers and message tracing through NATS headers. Message trace destination checks were applied to ordinary client connections but not consistently to messages arriving through leafnode connections.",
+    "requiredAction": "Upgrade nats-server (v2) · nats-io to version 2.12.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p3j5-5hrq-p75h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58254"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-35376",
     "cveID": "CVE-2026-35376",
     "slug": "cve-2026-35376",
@@ -1150,303 +1447,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77316"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77315",
-    "cveID": "CVE-2026-77315",
-    "slug": "cve-2026-77315",
-    "vendor": "Pip",
-    "product": "flyto-core",
-    "name": "Flyto2 Core: http.paginate follows server-supplied next-page URLs (Link header / cursor) without SSRF revalidation",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 8.5,
-    "severity": "High",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "http.paginate validates only the initial base_url, then follows server-supplied pagination targets (RFC 5988 Link: rel=\"next\" headers, cursor/offset URLs) in a loop without revalidating each follow-up URL. An attacker's first-page response can point next at an internal address, causing a second-order SSRF whose internal body is aggregated into the returned items.",
-    "requiredAction": "Upgrade flyto-core to version 2.26.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2mr3-rxrq-238c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77315"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77313",
-    "cveID": "CVE-2026-77313",
-    "slug": "cve-2026-77313",
-    "vendor": "Pip",
-    "product": "flyto-core",
-    "name": "Flyto2 Core: SSRF guard validates the resolved IP but connects by hostname, allowing DNS-rebinding TOCTOU",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-367",
-    "ransomware": false,
-    "description": "validate_url_ssrf resolves the hostname, checks the IP against private ranges, then discards the IP and returns the hostname URL string. aiohttp performs a fresh, independent DNS resolution at connect time.",
-    "requiredAction": "Upgrade flyto-core to version 2.26.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pfg2-w999-497v"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77313"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77312",
-    "cveID": "CVE-2026-77312",
-    "slug": "cve-2026-77312",
-    "vendor": "Pip",
-    "product": "flyto-core",
-    "name": "Flyto2 Core: Arbitrary file write via unguarded data.*/file.* modules (incomplete fix of CVE-2026-67429)",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 10,
-    "severity": "Critical",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "- CWE: CWE-22 (Path Traversal) / CWE-73 (External Control of File Name or Path); impact reaches CWE-94 (code execution via file overwrite). - CVSS v3.1: AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H = 9.3 Critical (S:C because a write escapes the intended sandbox confinement into the host filesystem / other components). - AV:N — reachable via the MCP server / recipe engine (execute_module).",
-    "requiredAction": "Upgrade flyto-core to version 2.26.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-p34x-fmph-9fjx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77312"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-59988",
-    "cveID": "CVE-2026-59988",
-    "slug": "cve-2026-59988",
-    "vendor": "Pip",
-    "product": "django-docutils",
-    "name": "django-docutils unsafe Docutils defaults allow local file disclosure, SSRF, and stored XSS",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 8.2,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "django-docutils before 0.30.0 rendered reStructuredText through Docutils without protected web-safe defaults. Public rendering paths, including publish_doctree, publish_html_from_source, publish_html_from_doctree, publish_parts_from_doctree, the {% rst %} template tag, the rst template filter, DocutilsTemplates, and DocutilsView, could process attacker-controlled RST with Docutils directives that...",
-    "requiredAction": "Upgrade django-docutils to version 0.30.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-86mf-q4h5-69gp"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59988"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63415",
-    "cveID": "CVE-2026-63415",
-    "slug": "cve-2026-63415",
-    "vendor": "Composer",
-    "product": "jane-php/open-api-3",
-    "name": "Jane: $ref resolution performs SSRF + LFI (path traversal) at code-generation time (jane-php)",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 7,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "jane-php resolves external $ref targets at code-generation time via file_get_contents($ref) (jane-php/json-schema-runtime/Reference.php::doResolve) with no scheme/path restriction.",
-    "requiredAction": "Upgrade jane-php/open-api-3 to version 7.12.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-c3cj-3p6p-j822"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63415"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63344",
-    "cveID": "CVE-2026-63344",
-    "slug": "cve-2026-63344",
-    "vendor": ".NET (NuGet)",
-    "product": "Refitter",
-    "name": "Refitter allows arbitrary code execution through unescaped OpenAPI content-type values",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 9.3,
-    "severity": "Critical",
-    "cwe": "CWE-94",
-    "ransomware": false,
-    "description": "Refitter emits the spec's content-type key (content map key in requestBody/responses) verbatim into a Refit [Headers(\"Accept: <ct>\", \"Content-Type: <ct>\")] attribute string without escaping \".",
-    "requiredAction": "Upgrade Refitter to version 2.1.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-p32v-8v8j-j534"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63344"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63346",
-    "cveID": "CVE-2026-63346",
-    "slug": "cve-2026-63346",
-    "vendor": ".NET (NuGet)",
-    "product": "Refitter",
-    "name": "Refitter allows code execution through unescaped OpenAPI header parameter names",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 9.3,
-    "severity": "Critical",
-    "cwe": "CWE-94",
-    "ransomware": false,
-    "description": "Refitter emits the spec's header parameter name (parameters[].name with in: header) verbatim into a Refit [Header(\"<name>\")] attribute string without escaping \". A crafted value survives Refitter's default OpenAPI validation, breaks out of the attribute and the enclosing interface + namespace, injects a top-level file class with a [ModuleInitializer] method, and reopens so the file stays valid.",
-    "requiredAction": "Upgrade Refitter to version 2.1.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-58x9-vjvp-6mx8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63346"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63345",
-    "cveID": "CVE-2026-63345",
-    "slug": "cve-2026-63345",
-    "vendor": ".NET (NuGet)",
-    "product": "Refitter",
-    "name": "Refitter allows arbitrary code execution through unescaped OpenAPI paths",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 9.3,
-    "severity": "Critical",
-    "cwe": "CWE-94",
-    "ransomware": false,
-    "description": "Refitter emits each OpenAPI path (the paths-object key) verbatim into a Refit [Get(\"<path>\")] attribute string, without escaping \" or restricting characters.",
-    "requiredAction": "Upgrade Refitter to version 2.1.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3fhm-p725-h3g3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63345"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-58208",
-    "cveID": "CVE-2026-58208",
-    "slug": "cve-2026-58208",
-    "vendor": "Go",
-    "product": "nats-server (v2) · nats-io",
-    "name": "NATS Server: MQTT-over-WebSocket Path Can Crash WebSocket-Only JetStream Servers Before MQTT Is Enabled",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 6.8,
-    "severity": "Medium",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing. The NATS Server can accept client connections over WebSocket and can also support MQTT over WebSocket when MQTT is configured.",
-    "requiredAction": "Upgrade nats-server (v2) · nats-io to version 2.12.12 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-p957-7v2w-g93g"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58208"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-58210",
-    "cveID": "CVE-2026-58210",
-    "slug": "cve-2026-58210",
-    "vendor": "Go",
-    "product": "nats-server (v2) · nats-io",
-    "name": "NATS Server allows unauthenticated memory exhaustion through incomplete MQTT CONNECT packets",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing. The NATS Server supports MQTT clients, including authentication and parsing of MQTT CONNECT packets. An unauthenticated MQTT client could cause the server to retain large incomplete MQTT CONNECT packets before authentication completed.",
-    "requiredAction": "Upgrade nats-server (v2) · nats-io to version 2.12.12 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r72h-j7qq-v6qg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58210"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-58209",
-    "cveID": "CVE-2026-58209",
-    "slug": "cve-2026-58209",
-    "vendor": "Go",
-    "product": "nats-server (v2) · nats-io",
-    "name": "NATS Server MQTT retained messages and QoS replay bypass subscription deny rules",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 4.3,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing. The NATS Server MQTT support includes retained messages and QoS1+ durable delivery. NATS subscription permissions can allow broad wildcard subscriptions while denying more sensitive subjects.",
-    "requiredAction": "Upgrade nats-server (v2) · nats-io to version 2.12.12 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-7qmq-8cc4-hxwg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58209"
       }
     ],
     "source": "GITHUB"
