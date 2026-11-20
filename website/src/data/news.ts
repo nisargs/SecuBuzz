@@ -11,6 +11,91 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "usn-9182-1-nginx-vulnerabilities-a8c3fe4e",
+    "title": "USN-9182-1: nginx vulnerabilities",
+    "summary": "A remote attacker could possibly use this issue to cause nginx to crash, resulting in a denial of service. (CVE-2026-125283) Vivek Parikh discovered that nginx did not correctly handle parsing certain ClientHello messages. This issue was only addressed in Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu 24.04 LTS. (CVE-2026-123640) It was discovered that nginx did not correctly handle certain TLS connections.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9182-1",
+    "publishedAt": "2026-11-20T03:15:31.000Z",
+    "cves": [
+      "CVE-2026-125283",
+      "CVE-2026-123640",
+      "CVE-2026-118899"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9182-1-nginx-vulnerabilities",
+      "article-a8c3fe4e",
+      "a8c3fe4e",
+      "usn-9182-1-nginx-vulnerabilities-7e77f9"
+    ]
+  },
+  {
+    "slug": "usn-9181-1-openjdk-8-vulnerabilities-bc5bc842",
+    "title": "USN-9181-1: OpenJDK 8 vulnerabilities",
+    "summary": "A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 8 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114946) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9181-1",
+    "publishedAt": "2026-11-20T02:42:46.000Z",
+    "cves": [
+      "CVE-2026-114939",
+      "CVE-2026-114946",
+      "CVE-2026-114940",
+      "CVE-2026-114943",
+      "CVE-2026-114944"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9181-1-openjdk-8-vulnerabilities",
+      "article-bc5bc842",
+      "bc5bc842",
+      "usn-9181-1-openjdk-8-vulnerabilities-7e77fd"
+    ]
+  },
+  {
+    "slug": "ubuntu-patches-multiple-flaws-in-crac-jdk-25-42713894",
+    "title": "Ubuntu Patches Multiple Flaws in CRaC JDK 25",
+    "summary": "Ubuntu released security updates addressing multiple vulnerabilities across the Compiler, JGSS, and JSSE components of CRaC JDK 25. The defects, including CVE-2026-114938, stem from improper input handling, authentication failures, and authorization bypasses that allow remote arbitrary code execution and data access. Administrators should apply updated JDK packages provided under Ubuntu Security Notice USN-9180-1 to eliminate exploitation risks.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9180-1",
+    "publishedAt": "2026-11-20T02:34:22.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-patches-multiple-flaws-in-crac-jdk-25",
+      "article-42713894",
+      "42713894",
+      "ubuntu-patches-multiple-flaws-in-crac-jdk-25-7e7801"
+    ]
+  },
+  {
+    "slug": "nginx2root-five-new-nginx-vulnerabilities-and-how-3b075a0f",
+    "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
+    "summary": "Five memory corruption bugs in nginx, called nginx2root, can let an unauthenticated attacker run code on a server. Here’s how they work, and why origins behind Cloudflare's proxy are shielded from the most serious of these bugs.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/nginx2root/",
+    "publishedAt": "2026-11-20T01:58:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nginx2root-five-new-nginx-vulnerabilities-and-how",
+      "article-3b075a0f",
+      "3b075a0f",
+      "nginx2root-five-new-nginx-vulnerabilities-and-how-5a9547",
+      "nginx2root-five-new-nginx-vulnerabilities-and-how-cloudflare"
+    ]
+  },
+  {
     "slug": "cleared-windows-event-logs-retain-forensic-evtx-ev-88123b4a",
     "title": "Cleared Windows Event Logs Retain Forensic EVTX Evidence",
     "summary": "Arctic Wolf incident response analysts found that clearing a Windows Event Log does not erase the underlying EVTX file. Instead, the supposedly cleared events remain recoverable within that same file, preserving forensic artifacts for investigators. Defenders should parse EVTX records directly rather than relying only on the 'Event log cleared' record when reconstructing activity.",
@@ -45,6 +130,24 @@ export const news: NewsBrief[] = [
       "article-38f54851",
       "38f54851",
       "windows-11-narrator-zero-day-bypasses-bitlocker-181cc8"
+    ]
+  },
+  {
+    "slug": "pyjwt-flaw-enables-token-revocation-check-bypasses-1e2cd4f6",
+    "title": "PyJWT Flaw Enables Token Revocation Check Bypasses",
+    "summary": "Ubuntu issued a security notice addressing a cryptographic verification vulnerability discovered within the PyJWT Python library. The library improperly accepts non-canonical encodings of token signature segments, enabling remote attackers to bypass token revocation checks. Administrators should immediately deploy updated PyJWT packages distributed via Ubuntu Security Notice USN-9177-1 to mitigate unauthorized access risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9177-1",
+    "publishedAt": "2026-11-20T00:45:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pyjwt-flaw-enables-token-revocation-check-bypasses",
+      "article-1e2cd4f6",
+      "1e2cd4f6",
+      "pyjwt-flaw-enables-token-revocation-check-bypasses-7e785b"
     ]
   },
   {
@@ -441,6 +544,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ubiquiti-unifi-access-vulnerabilities-pre-4-3-24-f6faa93c",
+    "title": "Ubiquiti UniFi Access Vulnerabilities Pre-4.3.24",
+    "summary": "Ubiquiti disclosed security weaknesses in its UniFi Access Application versions before 4.3.24, exposing the software to potential exploitation via unspecified input vectors. Without a CVE ID, the flaws could let attackers manipulate configuration or session data, enabling unauthorized access. Administrators should review the advisory and apply any available firmware or software updates promptly to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/ubiquiti-security-advisory-av26-1182",
+    "publishedAt": "2026-11-19T18:28:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubiquiti-unifi-access-vulnerabilities-pre-4-3-24",
+      "article-f6faa93c",
+      "f6faa93c",
+      "ubiquiti-unifi-access-vulnerabilities-pre-4-3-24-3f023f"
+    ]
+  },
+  {
+    "slug": "jetbrains-teamcity-vulnerabilities-pre-2026-2-1-a278e213",
+    "title": "JetBrains TeamCity Vulnerabilities Pre-2026.2.1",
+    "summary": "JetBrains identified security weaknesses in its TeamCity product versions before 2026.2.1 and 2026.1.5, potentially exposing the CI/CD platform to exploitation. Without CVE IDs, the flaws could let attackers gain unauthorized access or disrupt builds via input validation errors. JetBrains urges users to review the advisory links and apply any available updates to secure the environment.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1181",
+    "publishedAt": "2026-11-19T18:24:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "jetbrains-teamcity-vulnerabilities-pre-2026-2-1",
+      "article-a278e213",
+      "a278e213",
+      "jetbrains-teamcity-vulnerabilities-pre-2026-2-1-53189b"
+    ]
+  },
+  {
     "slug": "tfl-data-breach-exposes-265-000-oyster-card-users-62eda7bc",
     "title": "TfL Data Breach Exposes 265,000 Oyster Card Users",
     "summary": "Transport for London reported that approximately 265,000 Oyster photocard customers may have had their account details exposed in a data breach. The breach potentially compromised usernames, passwords, and personal information, though the extent of credential theft or misuse remains unconfirmed. TfL urges affected users to monitor accounts, change passwords, and review security settings while the investigation continues.",
@@ -497,6 +636,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "phpaftershell-enables-php-session-exploit-e648c712",
+    "title": "phpAfterShell Enables PHP Session Exploit",
+    "summary": "CVE-2026-126714 exposes PHP's file-based session storage, letting attackers inject chosen objects. If a second flaw supplies a gadget chain, the injected objects can trigger arbitrary server code execution. PHP releases have fixed the issue; administrators should apply the latest patches or upgrade to a supported version to eliminate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+    "publishedAt": "2026-11-19T16:59:56.000Z",
+    "cves": [
+      "CVE-2026-126714"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "phpaftershell-enables-php-session-exploit",
+      "article-e648c712",
+      "e648c712",
+      "phpaftershell-enables-php-session-exploit-213b90"
+    ]
+  },
+  {
     "slug": "phpaftershell-exploits-php2shell-patch-to-enable-r-81a2d034",
     "title": "phpAfterShell Exploits PHP2Shell Patch to Enable RCE",
     "summary": "A new PHP attack, phpAfterShell, enables unauthenticated remote code execution on servers even after the October PHP2Shell patches. The flaw, CVE-2026-126714, exploits a separate PHP bug that lets attackers combine payloads and run arbitrary code without authentication. Administrators should apply the latest PHP patch and verify that the phpAfterShell vulnerability is mitigated.",
@@ -515,6 +674,26 @@ export const news: NewsBrief[] = [
       "81a2d034",
       "phpaftershell-exploits-php2shell-patch-to-enable-r-822549",
       "phpaftershell-exploits-php2shell-patch-to-enable-rce"
+    ]
+  },
+  {
+    "slug": "vmware-vcenter-authentication-bypass-flaws-exposed-1973945a",
+    "title": "VMware vCenter Authentication Bypass Flaws Exposed",
+    "summary": "Broadcom issued VMSA-2026-0009, detailing five VMware flaws that let attackers with network access to vCenter bypass authentication and reach servers, including vCenter, SDDC Manager, and VMware Tools. The most severe flaw, CVE-2026-123890, scores 9.8 on CVSS, enabling unauthenticated remote code execution via credential-less access. No workarounds are available; administrators must apply the Broadcom patches immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/vmware-vcenter-authentication-bypass/",
+    "publishedAt": "2026-11-19T16:30:55.000Z",
+    "cves": [
+      "CVE-2026-123890"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "vmware-vcenter-authentication-bypass-flaws-exposed",
+      "article-1973945a",
+      "1973945a",
+      "vmware-vcenter-authentication-bypass-flaws-exposed-157a43"
     ]
   },
   {
@@ -552,6 +731,27 @@ export const news: NewsBrief[] = [
       "article-8e3f6470",
       "8e3f6470",
       "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
+    ]
+  },
+  {
+    "slug": "microsoft-updates-acknowledgement-for-excel-rce-vu-43d73606",
+    "title": "Microsoft Updates Acknowledgement for Excel RCE Vulnerability CVE-2026-97756",
+    "summary": "Microsoft released an informational update regarding a remote code execution vulnerability impacting Microsoft Office Excel. Tracked as CVE-2026-97756, the security flaw allows potential attackers to execute arbitrary code on targeted systems through crafted spreadsheet files. Microsoft updated the advisory acknowledgements while maintaining existing patch guidance and recommended defensive updates for enterprise environments.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97756",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-97756"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-acknowledgement-for-excel-rce-vu",
+      "article-43d73606",
+      "43d73606",
+      "microsoft-updates-acknowledgement-for-excel-rce-vu-7430f9",
+      "microsoft-updates-acknowledgement-for-excel-rce-vulnerabilit"
     ]
   },
   {
@@ -751,6 +951,27 @@ export const news: NewsBrief[] = [
       "c30d5d3c",
       "linux-kernel-vulnerabilities-corrected-in-usn-9175-7e7862",
       "linux-kernel-vulnerabilities-corrected-in-usn-9175-1"
+    ]
+  },
+  {
+    "slug": "openvpn-flaw-cve-2026-121720-impacts-versions-thro-bd9d93e3",
+    "title": "OpenVPN Flaw CVE-2026-121720 Impacts Versions Through 2.7.8",
+    "summary": "The Canadian Centre for Cyber Security issued a security advisory regarding a vulnerability affecting OpenVPN installations up to version 2.7.8. Identified as CVE-2026-121720, the flaw poses operational risks to virtual private network infrastructure supporting enterprise access. System administrators are encouraged to review official advisory documentation and deploy vendor-provided security patches immediately to mitigate exposure.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/openvpn-security-advisory-av26-1179",
+    "publishedAt": "2026-11-19T15:39:51.000Z",
+    "cves": [
+      "CVE-2026-121720"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openvpn-flaw-cve-2026-121720-impacts-versions-thro",
+      "article-bd9d93e3",
+      "bd9d93e3",
+      "openvpn-flaw-cve-2026-121720-impacts-versions-thro-57de18",
+      "openvpn-flaw-cve-2026-121720-impacts-versions-through-2-7-8"
     ]
   },
   {
@@ -3393,6 +3614,26 @@ export const news: NewsBrief[] = [
       "8db0ac7a",
       "hackers-use-hidden-cron-jobs-to-reinstall-malware-63e5fa",
       "hackers-use-hidden-cron-jobs-to-reinstall-malware-on-firewal"
+    ]
+  },
+  {
+    "slug": "docker-model-runner-flaw-enables-container-escapes-5c86d152",
+    "title": "Docker Model Runner Flaw Enables Container Escapes",
+    "summary": "Security researchers disclosed an unauthenticated argument-injection vulnerability affecting Docker Model Runner in Docker Desktop. Cataloged as CVE-2026-28400, the primitive enables default-privilege containers to corrupt VM data disks and achieve host code execution across macOS and Windows environments. Security teams must update Docker Desktop installations to mitigate host file read and write primitives exploited through model runner workflows.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Zero Day Initiative",
+    "sourceUrl": "https://www.thezdi.com/blog/2026/11/17/hostile-inference-exploiting-docker-model-runner-for-container-escapes",
+    "publishedAt": "2026-11-18T17:23:52.000Z",
+    "cves": [
+      "CVE-2026-28400"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "docker-model-runner-flaw-enables-container-escapes",
+      "article-5c86d152",
+      "5c86d152",
+      "docker-model-runner-flaw-enables-container-escapes-61cd3e"
     ]
   },
   {
@@ -9566,232 +9807,6 @@ export const news: NewsBrief[] = [
       "article-b76de365",
       "b76de365",
       "apple-releases-ios-27-3-beta-2-5f3d88"
-    ]
-  },
-  {
-    "slug": "apple-releases-macos-27-3-beta-2-49f12807",
-    "title": "Apple Releases macOS 27.3 Beta 2",
-    "summary": "Apple released macOS 27.3 beta 2, version 26C5047e, providing users with the latest beta build. The update includes minor bug fixes and performance improvements, as detailed in the release notes. Users should download the beta from the official Apple Developer portal and install it to test new features for development.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11162026c",
-    "publishedAt": "2026-11-16T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-macos-27-3-beta-2",
-      "article-49f12807",
-      "49f12807",
-      "apple-releases-macos-27-3-beta-2-5f3d88"
-    ]
-  },
-  {
-    "slug": "rapid7-finds-container-escapes-in-onlyoffice-docs-6a7300f3",
-    "title": "Rapid7 Finds Container Escapes in ONLYOFFICE Docs",
-    "summary": "Rapid7 identified five vulnerabilities in ONLYOFFICE Docs that chain view-only access to container root execution. The flaw permits attackers to escape the document container, potentially compromising the host system with critical elevated privileges. Users should upgrade to Document Server 10.0 and monitor for container escape indicators to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/onlyoffice-docs-container-root-vulnerabilities",
-    "publishedAt": "2026-11-16T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rapid7-finds-container-escapes-in-onlyoffice-docs",
-      "article-6a7300f3",
-      "6a7300f3",
-      "rapid7-finds-container-escapes-in-onlyoffice-docs-6a048f"
-    ]
-  },
-  {
-    "slug": "retadup-worm-resurfaces-deploys-coffeeloader-via-d-3004114e",
-    "title": "Retadup Worm Resurfaces, Deploys CoffeeLoader via DLL",
-    "summary": "Retadup worm reappears, re-registering command-and-control domains and using USB media to deliver the CoffeeLoader backdoor. The malware exploits DLL side-loading by loading 7z.dll, enabling execution of malicious code without user consent and bypassing integrity checks. Security teams should deploy Sigma rules and KQL queries to detect DLL loads and block the worm’s C2 traffic, while disabling USB autorun policies.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/retadup-worm-coffeeloader-malware",
-    "publishedAt": "2026-11-16T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "retadup-worm-resurfaces-deploys-coffeeloader-via-d",
-      "article-3004114e",
-      "3004114e",
-      "retadup-worm-resurfaces-deploys-coffeeloader-via-d-545838",
-      "retadup-worm-resurfaces-deploys-coffeeloader-via-dll"
-    ]
-  },
-  {
-    "slug": "top-15-patch-management-tools-for-2027-3b1e7dac",
-    "title": "Top 15 Patch Management Tools for 2027",
-    "summary": "Cyber Security News listed the 15 best patch management tools for 2027, featuring NinjaOne, Automox, Kaseya VSA, ManageEngine Patch Manager Plus, SolarWinds Patch Manager, and Ivanti Patch Management. These solutions automate discovery, testing, and deployment of updates for Windows, macOS, Linux, and third-party apps. Security teams should evaluate them to boost patching efficiency and lower exposure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/patch-management-tools/",
-    "publishedAt": "2026-11-16T17:40:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-15-patch-management-tools-for-2027",
-      "article-3b1e7dac",
-      "3b1e7dac",
-      "top-15-patch-management-tools-for-2027-4e8955"
-    ]
-  },
-  {
-    "slug": "uk-opens-hq-for-national-cyber-force-d204fa0f",
-    "title": "UK Opens HQ for National Cyber Force",
-    "summary": "The United Kingdom opened a new headquarters for its National Cyber Force, the covert unit that conducts offensive cyber operations. The building, near Samlesbury in Lancashire, consolidates teams that plan, develop, and deploy state-level cyber attacks, expanding the UK’s offensive posture. The move signals a strategic expansion, highlighting the importance of defensive readiness against potential state-level campaigns.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/uk-national-cyber-force-headquarters-opens",
-    "publishedAt": "2026-11-16T17:22:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uk-opens-hq-for-national-cyber-force",
-      "article-d204fa0f",
-      "d204fa0f",
-      "uk-opens-hq-for-national-cyber-force-64c455"
-    ]
-  },
-  {
-    "slug": "wiz-launches-ai-security-agent-75657370",
-    "title": "Wiz Launches AI Security Agent",
-    "summary": "Wiz released its AI Security Agent, a tool designed to detect and analyze AI agents operating within an organization. The agent maps AI agent intent, monitors interactions, and surfaces hidden risks such as data exfiltration or policy violations, providing actionable insights. Wiz recommends integrating the agent into existing security stacks and enabling continuous monitoring to mitigate emerging AI-driven threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/introducing-wiz-ai-security-agent",
-    "publishedAt": "2026-11-16T17:02:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wiz-launches-ai-security-agent",
-      "article-75657370",
-      "75657370",
-      "wiz-launches-ai-security-agent-26d3a7"
-    ]
-  },
-  {
-    "slug": "claude-code-extension-exposes-files-outside-truste-fa9b27ad",
-    "title": "Claude Code Extension Exposes Files Outside Trusted Workspaces",
-    "summary": "Researchers discovered the Claude Code extension for VS Code can prompt users for file access while hiding the file location. The flaw lets users approve seemingly safe paths, granting the extension access to files outside the trusted workspace and exposing sensitive data. Teams should audit extension permissions, enforce workspace boundaries, and monitor for unauthorized file access to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/claude-code-vs-code-extension/",
-    "publishedAt": "2026-11-16T16:51:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-code-extension-exposes-files-outside-truste",
-      "article-fa9b27ad",
-      "fa9b27ad",
-      "claude-code-extension-exposes-files-outside-truste-f09d73",
-      "claude-code-extension-exposes-files-outside-trusted-workspac"
-    ]
-  },
-  {
-    "slug": "microsoft-says-months-old-bug-caused-global-micros-b35814fa",
-    "title": "Microsoft says months-old bug caused global Microsoft 365 outage",
-    "summary": "Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
-    "publishedAt": "2026-11-16T16:43:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-says-months-old-bug-caused-global-micros",
-      "article-b35814fa",
-      "b35814fa",
-      "microsoft-says-months-old-bug-caused-global-micros-241a63",
-      "microsoft-says-months-old-bug-caused-global-microsoft-365-ou"
-    ]
-  },
-  {
-    "slug": "ai-marketplace-enables-targeted-search-of-compromi-11a0d3fa",
-    "title": "AI Marketplace Enables Targeted Search of Compromised VPN Systems",
-    "summary": "An underground AI-powered marketplace now lets attackers search for infected computers with corporate VPN access. The service indexes compromised machines, enabling buyers to filter by VPN usage or cloud provider, cutting discovery time. Security teams should monitor VPN logs for anomalous queries, enforce least-privilege access, and actively deploy endpoint detection.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ai-powered-marketplace/",
-    "publishedAt": "2026-11-16T16:41:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-marketplace-enables-targeted-search-of-compromi",
-      "article-11a0d3fa",
-      "11a0d3fa",
-      "ai-marketplace-enables-targeted-search-of-compromi-379c27",
-      "ai-marketplace-enables-targeted-search-of-compromised-vpn-sy"
-    ]
-  },
-  {
-    "slug": "china-nexus-actors-breach-ten-organizations-with-a-0050d0d2",
-    "title": "China-Nexus Actors Breach Ten Organizations with AI Attacks",
-    "summary": "China-linked actors used the autonomous tool Cairn to breach ten organizations across advanced manufacturing, defense, and civil-rights sectors. The attacks leveraged AI-driven credential harvesting and lateral movement, enabling attackers to exfiltrate sensitive data without detection. Affected organizations should enforce multi-factor authentication, monitor for anomalous lateral activity, and apply the latest security patches.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/china-nexus-actors-breach-10-organizations-ai-driven-attacks",
-    "publishedAt": "2026-11-16T16:36:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "china-nexus-actors-breach-ten-organizations-with-a",
-      "article-0050d0d2",
-      "0050d0d2",
-      "china-nexus-actors-breach-ten-organizations-with-a-2de34b",
-      "china-nexus-actors-breach-ten-organizations-with-ai-attacks"
-    ]
-  },
-  {
-    "slug": "ubuntu-gstreamer-vulnerabilities-disclosed-b047a7e7",
-    "title": "Ubuntu GStreamer Vulnerabilities Disclosed",
-    "summary": "Ubuntu GStreamer flaws let remote or local attackers trigger denial-of-service or arbitrary code by mishandling RTSP, video, AV1, and subtitle data. CVE-2026-85150, CVE-2026-86476, and CVE-2026-119729 affect Ubuntu 18.04-26.10 LTS and carry high-severity scores with public PoC evidence. Canonical has issued patches for all affected releases; administrators should update GStreamer packages or upgrade to patched versions immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9094-1",
-    "publishedAt": "2026-11-16T16:24:06.000Z",
-    "cves": [
-      "CVE-2026-85150",
-      "CVE-2026-86476",
-      "CVE-2026-119729"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-gstreamer-vulnerabilities-disclosed",
-      "article-b047a7e7",
-      "b047a7e7",
-      "ubuntu-gstreamer-vulnerabilities-disclosed-7e8595"
-    ]
-  },
-  {
-    "slug": "apple-details-secure-exclaves-protecting-camera-an-1a71bf89",
-    "title": "Apple Details Secure Exclaves Protecting Camera and Microphone Data",
-    "summary": "Apple disclosed the Secure Exclaves architecture designed to isolate camera and microphone data from the main operating system. The design employs hardware isolation, strict data-sharing rules, and protected privacy indicators to prevent background sensing from accessing active recordings. Security teams should review the new hardware isolation features and update device firmware to ensure compliance with the latest privacy safeguards.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/apple-reveals-secure-exclaves/",
-    "publishedAt": "2026-11-16T16:04:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-details-secure-exclaves-protecting-camera-an",
-      "article-1a71bf89",
-      "1a71bf89",
-      "apple-details-secure-exclaves-protecting-camera-an-18122a",
-      "apple-details-secure-exclaves-protecting-camera-and-micropho"
     ]
   }
 ];

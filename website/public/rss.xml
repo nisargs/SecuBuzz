@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 02:46:26 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 03:39:25 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>USN-9182-1: nginx vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9182-1-nginx-vulnerabilities-a8c3fe4e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9182-1-nginx-vulnerabilities-a8c3fe4e</guid>
+      <description><![CDATA[A remote attacker could possibly use this issue to cause nginx to crash, resulting in a denial of service. (CVE-2026-125283) Vivek Parikh discovered that nginx did not correctly handle parsing certain ClientHello messages. This issue was only addressed in Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu 24.04 LTS. (CVE-2026-123640) It was discovered that nginx did not correctly handle certain TLS connections.]]></description>
+      <pubDate>Fri, 20 Nov 2026 03:15:31 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9182-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>USN-9181-1: OpenJDK 8 vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9181-1-openjdk-8-vulnerabilities-bc5bc842</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9181-1-openjdk-8-vulnerabilities-bc5bc842</guid>
+      <description><![CDATA[A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 8 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114946) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.]]></description>
+      <pubDate>Fri, 20 Nov 2026 02:42:46 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9181-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Ubuntu Patches Multiple Flaws in CRaC JDK 25</title>
+      <link>https://secubuzz.com/news/ubuntu-patches-multiple-flaws-in-crac-jdk-25-42713894</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-multiple-flaws-in-crac-jdk-25-42713894</guid>
+      <description><![CDATA[Ubuntu released security updates addressing multiple vulnerabilities across the Compiler, JGSS, and JSSE components of CRaC JDK 25. The defects, including CVE-2026-114938, stem from improper input handling, authentication failures, and authorization bypasses that allow remote arbitrary code execution and data access. Administrators should apply updated JDK packages provided under Ubuntu Security Notice USN-9180-1 to eliminate exploitation risks.]]></description>
+      <pubDate>Fri, 20 Nov 2026 02:34:22 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9180-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them</title>
+      <link>https://secubuzz.com/news/nginx2root-five-new-nginx-vulnerabilities-and-how-3b075a0f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nginx2root-five-new-nginx-vulnerabilities-and-how-3b075a0f</guid>
+      <description><![CDATA[Five memory corruption bugs in nginx, called nginx2root, can let an unauthenticated attacker run code on a server. Here’s how they work, and why origins behind Cloudflare's proxy are shielded from the most serious of these bugs.]]></description>
+      <pubDate>Fri, 20 Nov 2026 01:58:29 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/nginx2root/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Cleared Windows Event Logs Retain Forensic EVTX Evidence</title>
       <link>https://secubuzz.com/news/cleared-windows-event-logs-retain-forensic-evtx-ev-88123b4a</link>
@@ -23,6 +59,15 @@
       <description><![CDATA[Microsoft disclosed a Windows 11 zero-day, FastUnlock, allowing a physical attacker to bypass the Narrator lock-screen and run code. The flaw permits local code execution on a locked PC, exposing it even with BitLocker enabled, but does not decrypt the drive. Microsoft released a patch in the November 2026 cumulative update; users should install it promptly.]]></description>
       <pubDate>Fri, 20 Nov 2026 01:00:42 GMT</pubDate>
       <source url="https://cybersecuritynews.com/windows-11-narrator-lock-screen-0-day/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PyJWT Flaw Enables Token Revocation Check Bypasses</title>
+      <link>https://secubuzz.com/news/pyjwt-flaw-enables-token-revocation-check-bypasses-1e2cd4f6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pyjwt-flaw-enables-token-revocation-check-bypasses-1e2cd4f6</guid>
+      <description><![CDATA[Ubuntu issued a security notice addressing a cryptographic verification vulnerability discovered within the PyJWT Python library. The library improperly accepts non-canonical encodings of token signature segments, enabling remote attackers to bypass token revocation checks. Administrators should immediately deploy updated PyJWT packages distributed via Ubuntu Security Notice USN-9177-1 to mitigate unauthorized access risks.]]></description>
+      <pubDate>Fri, 20 Nov 2026 00:45:22 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9177-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -206,6 +251,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Ubiquiti UniFi Access Vulnerabilities Pre-4.3.24</title>
+      <link>https://secubuzz.com/news/ubiquiti-unifi-access-vulnerabilities-pre-4-3-24-f6faa93c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubiquiti-unifi-access-vulnerabilities-pre-4-3-24-f6faa93c</guid>
+      <description><![CDATA[Ubiquiti disclosed security weaknesses in its UniFi Access Application versions before 4.3.24, exposing the software to potential exploitation via unspecified input vectors. Without a CVE ID, the flaws could let attackers manipulate configuration or session data, enabling unauthorized access. Administrators should review the advisory and apply any available firmware or software updates promptly to mitigate the risk.]]></description>
+      <pubDate>Thu, 19 Nov 2026 18:28:56 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/ubiquiti-security-advisory-av26-1182">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>JetBrains TeamCity Vulnerabilities Pre-2026.2.1</title>
+      <link>https://secubuzz.com/news/jetbrains-teamcity-vulnerabilities-pre-2026-2-1-a278e213</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/jetbrains-teamcity-vulnerabilities-pre-2026-2-1-a278e213</guid>
+      <description><![CDATA[JetBrains identified security weaknesses in its TeamCity product versions before 2026.2.1 and 2026.1.5, potentially exposing the CI/CD platform to exploitation. Without CVE IDs, the flaws could let attackers gain unauthorized access or disrupt builds via input validation errors. JetBrains urges users to review the advisory links and apply any available updates to secure the environment.]]></description>
+      <pubDate>Thu, 19 Nov 2026 18:24:30 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1181">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>TfL Data Breach Exposes 265,000 Oyster Card Users</title>
       <link>https://secubuzz.com/news/tfl-data-breach-exposes-265-000-oyster-card-users-62eda7bc</link>
       <guid isPermaLink="true">https://secubuzz.com/news/tfl-data-breach-exposes-265-000-oyster-card-users-62eda7bc</guid>
@@ -233,12 +296,30 @@
       <category>General</category>
     </item>
     <item>
+      <title>phpAfterShell Enables PHP Session Exploit</title>
+      <link>https://secubuzz.com/news/phpaftershell-enables-php-session-exploit-e648c712</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phpaftershell-enables-php-session-exploit-e648c712</guid>
+      <description><![CDATA[CVE-2026-126714 exposes PHP's file-based session storage, letting attackers inject chosen objects. If a second flaw supplies a gadget chain, the injected objects can trigger arbitrary server code execution. PHP releases have fixed the issue; administrators should apply the latest patches or upgrade to a supported version to eliminate the risk.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:59:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>phpAfterShell Exploits PHP2Shell Patch to Enable RCE</title>
       <link>https://secubuzz.com/news/phpaftershell-exploits-php2shell-patch-to-enable-r-81a2d034</link>
       <guid isPermaLink="true">https://secubuzz.com/news/phpaftershell-exploits-php2shell-patch-to-enable-r-81a2d034</guid>
       <description><![CDATA[A new PHP attack, phpAfterShell, enables unauthenticated remote code execution on servers even after the October PHP2Shell patches. The flaw, CVE-2026-126714, exploits a separate PHP bug that lets attackers combine payloads and run arbitrary code without authentication. Administrators should apply the latest PHP patch and verify that the phpAfterShell vulnerability is mitigated.]]></description>
       <pubDate>Thu, 19 Nov 2026 16:50:33 GMT</pubDate>
       <source url="https://cybersecuritynews.com/phpaftershell-rce/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>VMware vCenter Authentication Bypass Flaws Exposed</title>
+      <link>https://secubuzz.com/news/vmware-vcenter-authentication-bypass-flaws-exposed-1973945a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vmware-vcenter-authentication-bypass-flaws-exposed-1973945a</guid>
+      <description><![CDATA[Broadcom issued VMSA-2026-0009, detailing five VMware flaws that let attackers with network access to vCenter bypass authentication and reach servers, including vCenter, SDDC Manager, and VMware Tools. The most severe flaw, CVE-2026-123890, scores 9.8 on CVSS, enabling unauthenticated remote code execution via credential-less access. No workarounds are available; administrators must apply the Broadcom patches immediately to prevent exploitation.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:30:55 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/vmware-vcenter-authentication-bypass/">Cyber Security News</source>
       <category>CVE</category>
     </item>
     <item>
@@ -258,6 +339,15 @@
       <pubDate>Thu, 19 Nov 2026 16:14:31 GMT</pubDate>
       <source url="https://cybersecuritynews.com/jpmorgan-third-party-data-breach/">Cyber Security News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft Updates Acknowledgement for Excel RCE Vulnerability CVE-2026-97756</title>
+      <link>https://secubuzz.com/news/microsoft-updates-acknowledgement-for-excel-rce-vu-43d73606</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-acknowledgement-for-excel-rce-vu-43d73606</guid>
+      <description><![CDATA[Microsoft released an informational update regarding a remote code execution vulnerability impacting Microsoft Office Excel. Tracked as CVE-2026-97756, the security flaw allows potential attackers to execute arbitrary code on targeted systems through crafted spreadsheet files. Microsoft updated the advisory acknowledgements while maintaining existing patch guidance and recommended defensive updates for enterprise environments.]]></description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97756">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Microsoft Updates CVE-2026-70035 Acknowledgement Only</title>
@@ -350,111 +440,21 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>OpenVPN Flaw CVE-2026-121720 Impacts Versions Through 2.7.8</title>
+      <link>https://secubuzz.com/news/openvpn-flaw-cve-2026-121720-impacts-versions-thro-bd9d93e3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openvpn-flaw-cve-2026-121720-impacts-versions-thro-bd9d93e3</guid>
+      <description><![CDATA[The Canadian Centre for Cyber Security issued a security advisory regarding a vulnerability affecting OpenVPN installations up to version 2.7.8. Identified as CVE-2026-121720, the flaw poses operational risks to virtual private network infrastructure supporting enterprise access. System administrators are encouraged to review official advisory documentation and deploy vendor-provided security patches immediately to mitigate exposure.]]></description>
+      <pubDate>Thu, 19 Nov 2026 15:39:51 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/openvpn-security-advisory-av26-1179">Canadian Centre for Cyber Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>F5 Issues Advisory for Multiple BIG-IP Vulnerabilities</title>
       <link>https://secubuzz.com/news/f5-issues-advisory-for-multiple-big-ip-vulnerabili-e90fc272</link>
       <guid isPermaLink="true">https://secubuzz.com/news/f5-issues-advisory-for-multiple-big-ip-vulnerabili-e90fc272</guid>
       <description><![CDATA[F5 released advisory AV26-1178 exposing multiple vulnerabilities in BIG-IP, APM, SSL Orchestrator, PEM, CNF, and Next for Kubernetes versions up to 21.1.0. The flaws allow remote attackers to execute arbitrary code via malformed configuration data, with CVSS scores up to 9.8, and are documented.]]></description>
       <pubDate>Thu, 19 Nov 2026 15:33:03 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1178">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PHP Releases Patch for 7 Critical RCE Flaws</title>
-      <link>https://secubuzz.com/news/php-releases-patch-for-7-critical-rce-flaws-92b2b9de</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-releases-patch-for-7-critical-rce-flaws-92b2b9de</guid>
-      <description><![CDATA[PHP Foundation released a patch for seven critical flaws that could allow remote code execution on affected deployments. The most severe flaw, CVE-2026-115560, scores CVSS 9.2 and stems from improper input validation that permits arbitrary code execution and file modification. All supported PHP versions have the update available; administrators should apply the patch immediately to mitigate exploitation.]]></description>
-      <pubDate>Thu, 19 Nov 2026 15:18:07 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>European Commission confirms cyberattack, says hackers used AI tool</title>
-      <link>https://secubuzz.com/news/european-commission-confirms-cyberattack-says-hack-d8c629c0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/european-commission-confirms-cyberattack-says-hack-d8c629c0</guid>
-      <description><![CDATA[POLITICO had reported CERT-EU had identified the attackers’ use of ARTEX, an open-source AI hacking platform that the FBI last week warned was being used both by criminals and state-sponsored groups.]]></description>
-      <pubDate>Thu, 19 Nov 2026 15:15:00 GMT</pubDate>
-      <source url="https://therecord.media/european-commission-confirms-cyberattack-using-ai">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Linux Kernel Vulnerabilities Addressed in USN-9173-1</title>
-      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-addressed-in-usn-9173-c92b0942</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-addressed-in-usn-9173-c92b0942</guid>
-      <description><![CDATA[The USN-9173-1 notice reports several Linux kernel vulnerabilities that could let attackers compromise affected systems. These defects involve device drivers, architecture modules, and cryptographic APIs, arising from improper handling of privileged operations and potentially enabling privilege escalation or denial of service. Kernel maintainers have issued patches; administrators should update to the latest kernel to mitigate the risk.]]></description>
-      <pubDate>Thu, 19 Nov 2026 15:13:04 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9173-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Linux Kernel Vulnerabilities Affect Multiple Subsystems</title>
-      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-affect-multiple-subsy-0d52dedf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-affect-multiple-subsy-0d52dedf</guid>
-      <description><![CDATA[A set of kernel flaws discovered in the Linux kernel could allow attackers to compromise affected systems. The vulnerabilities span numerous subsystems, including device drivers, architecture modules, and cryptographic components, potentially enabling privilege escalation or denial of service. Kernel maintainers have released an update correcting these issues; administrators should apply the patch promptly to secure their environments.]]></description>
-      <pubDate>Thu, 19 Nov 2026 15:12:43 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9174-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Linux Kernel FIPS Subsystem Vulnerabilities Fixed in USN-9168-2</title>
-      <link>https://secubuzz.com/news/linux-kernel-fips-subsystem-vulnerabilities-fixed-5ff570dd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-fips-subsystem-vulnerabilities-fixed-5ff570dd</guid>
-      <description><![CDATA[USN-9168-2 fixes multiple Linux kernel flaws that could let attackers compromise systems via subsystems such as stream parsing, ARM64, S390, x86, and various drivers. No public exploits are known, but the vulnerabilities could enable privilege escalation or kernel-level code execution, representing a medium-severity risk. Kernel maintainers released patches; administrators should update to the latest kernel to mitigate the issues.]]></description>
-      <pubDate>Thu, 19 Nov 2026 15:12:17 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9168-2">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ubuntu Fixes Kernel Vulnerabilities in AWS FIPS</title>
-      <link>https://secubuzz.com/news/ubuntu-fixes-kernel-vulnerabilities-in-aws-fips-cc733f24</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-fixes-kernel-vulnerabilities-in-aws-fips-cc733f24</guid>
-      <description><![CDATA[Ubuntu Security Notices reports CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, kernel vulnerabilities affecting AWS FIPS-enabled Linux systems. The flaws reside in IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems, potentially enabling remote code execution or privilege escalation. Ubuntu has released an update correcting these defects; administrators should apply the latest kernel patch to mitigate the risk.]]></description>
-      <pubDate>Thu, 19 Nov 2026 15:12:06 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9170-2">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Linux Kernel Oracle Vulnerabilities CVE-2026-98432, CVE-2026-99999 Fixed</title>
-      <link>https://secubuzz.com/news/linux-kernel-oracle-vulnerabilities-cve-2026-98432-4a8ec64b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-oracle-vulnerabilities-cve-2026-98432-4a8ec64b</guid>
-      <description><![CDATA[USN-9171-2 addresses Linux kernel flaws in IPv4 networking, Ethernet bridge, Netfilter, and XFRM that could allow attackers to compromise systems. The advisory lists CVE-2026-98432 and CVE-2026-99999; no public exploits are reported, but the issues could enable privilege escalation or kernel code execution. Kernel maintainers have released patches; administrators should update to the latest kernel version to mitigate the vulnerabilities.]]></description>
-      <pubDate>Thu, 19 Nov 2026 15:12:06 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9171-2">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>VMware vCenter Auth Bypass Vulnerability Fixed</title>
-      <link>https://secubuzz.com/news/vmware-vcenter-auth-bypass-vulnerability-fixed-4578142e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vmware-vcenter-auth-bypass-vulnerability-fixed-4578142e</guid>
-      <description><![CDATA[A critical flaw in VMware vCenter, scoring CVSS 9.8, allows network attackers to bypass authentication and gain unauthorized access to the management console. The vulnerability exploits a flaw in the authentication mechanism, enabling attackers to control ESX hosts and virtual machines without credentials. All supported vCenter branches have patched releases; administrators should update immediately and verify authentication logs for anomalies.]]></description>
-      <pubDate>Thu, 19 Nov 2026 15:11:06 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Criminal IP Launches AITEM Exposure Management Platform</title>
-      <link>https://secubuzz.com/news/criminal-ip-launches-aitem-exposure-management-pla-343bfdd5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/criminal-ip-launches-aitem-exposure-management-pla-343bfdd5</guid>
-      <description><![CDATA[Criminal IP, developed by AI SPERA, launched Criminal IP AITEM on November 18, 2026, combining internet-facing asset discovery with AI-assisted investigation. The platform adds public-source exposure analysis and dark web monitoring as an evolution of Criminal IP ASM. Security teams can use AITEM to connect asset discovery with AI-powered threat exposure management.]]></description>
-      <pubDate>Thu, 19 Nov 2026 15:03:15 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/criminal-ip-launches-aitem-to-connect-asset-discovery-with-ai-powered-exposure-management/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ransomware Warning Signs Before Encryption</title>
-      <link>https://secubuzz.com/news/ransomware-warning-signs-before-encryption-78600f48</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-warning-signs-before-encryption-78600f48</guid>
-      <description><![CDATA[Acronis identifies five early warning signs of ransomware activity that occur before encryption or data theft. These indicators include credential theft, lateral movement, and attempts to disable security controls, allowing attackers to establish persistence. Security teams should monitor for these behaviors, enforce least-privilege access, and implement continuous monitoring to detect and contain intrusions early.]]></description>
-      <pubDate>Thu, 19 Nov 2026 15:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>NGINX2Root Vulnerabilities Enable Remote Code Execution</title>
-      <link>https://secubuzz.com/news/nginx2root-vulnerabilities-enable-remote-code-exec-6b546d38</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nginx2root-vulnerabilities-enable-remote-code-exec-6b546d38</guid>
-      <description><![CDATA[Two critical NGINX vulnerabilities, collectively known as nginx2root, allow unauthenticated attackers to execute code remotely on vulnerable web servers. Researchers chained the flaws with a Linux kernel bug to elevate privileges to root, demonstrating a full system compromise. All supported NGINX releases have patches; administrators should apply the update and monitor for kernel exploitation attempts.]]></description>
-      <pubDate>Thu, 19 Nov 2026 14:57:24 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
   </channel>
