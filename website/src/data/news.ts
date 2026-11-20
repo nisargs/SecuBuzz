@@ -241,6 +241,78 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-kernel-update-for-rhel-8-8-sap-02614055",
+    "title": "Red Hat Kernel Update for RHEL 8.8 SAP",
+    "summary": "Red Hat released a kernel update for Enterprise Linux 8.8 SAP and Telecommunications, fixing bugs that could allow privilege escalation or denial of service. CVSS base scores for each vulnerability are listed in the CVE references, indicating high impact. Apply the kernel patch via RHEL 8.8 Update Services for SAP Solutions or Telecommunications Update Service to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100647",
+    "publishedAt": "2026-11-20T08:34:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-update-for-rhel-8-8-sap",
+      "article-02614055",
+      "02614055",
+      "red-hat-kernel-update-for-rhel-8-8-sap-2ee084"
+    ]
+  },
+  {
+    "slug": "red-hat-kernel-update-for-rhel-9-56850d67",
+    "title": "Red Hat Kernel Update for RHEL 9",
+    "summary": "Red Hat released a kernel security update for Enterprise Linux 9, addressing multiple vulnerabilities that could enable privilege escalation or denial of service. CVSS base scores for each vulnerability are provided in the CVE references, indicating high impact severity. Security teams should apply the kernel patch through RHEL 9 Update Services to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100662",
+    "publishedAt": "2026-11-20T08:29:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-update-for-rhel-9",
+      "article-56850d67",
+      "56850d67",
+      "red-hat-kernel-update-for-rhel-9-2ee085"
+    ]
+  },
+  {
+    "slug": "red-hat-kernel-update-for-rhel-9-4-sap-816c4b99",
+    "title": "Red Hat Kernel Update for RHEL 9.4 SAP",
+    "summary": "Red Hat issued a kernel security update for Enterprise Linux 9.4 SAP Solutions, fixing bugs that could allow privilege escalation or denial of service. CVSS base scores for each vulnerability are listed in the CVE references, indicating high impact severity. Apply the kernel patch via RHEL 9.4 Update Services for SAP Solutions to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100660",
+    "publishedAt": "2026-11-20T08:27:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-update-for-rhel-9-4-sap",
+      "article-816c4b99",
+      "816c4b99",
+      "red-hat-kernel-update-for-rhel-9-4-sap-2ee085"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100656-important-kernel-security-update-596c386b",
+    "title": "RHSA-2026:100656: Important: kernel security update",
+    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100656",
+    "publishedAt": "2026-11-20T08:27:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100656-important-kernel-security-update",
+      "article-596c386b",
+      "596c386b",
+      "rhsa-2026-100656-important-kernel-security-update-2ee085"
+    ]
+  },
+  {
     "slug": "rhsa-2026-100661-important-kernel-security-bug-fix-c963dc72",
     "title": "RHSA-2026:100661: Important: kernel security, bug fix, and enhancement update",
     "summary": "An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -1700,6 +1772,26 @@ export const news: NewsBrief[] = [
       "article-8e3f6470",
       "8e3f6470",
       "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-cve-2026-97763-excel-rce-fb7aab1d",
+    "title": "Microsoft Acknowledges CVE-2026-97763 Excel RCE",
+    "summary": "Microsoft acknowledged CVE-2026-97763, a remote code execution flaw in Office Excel that could allow attackers to run arbitrary code via crafted spreadsheets. The advisory notes only an informational update, with no patch or exploitation evidence yet. Teams should watch Microsoft’s CVE tracker for a patch and apply it promptly to mitigate risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97763",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-97763"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-cve-2026-97763-excel-rce",
+      "article-fb7aab1d",
+      "fb7aab1d",
+      "microsoft-acknowledges-cve-2026-97763-excel-rce-7430f9"
     ]
   },
   {
@@ -9648,99 +9740,6 @@ export const news: NewsBrief[] = [
       "article-11f4796e",
       "11f4796e",
       "uber-notifies-drivers-of-150k-data-breach-196dbd"
-    ]
-  },
-  {
-    "slug": "nato-grants-openai-models-to-core-institutions-a6dfae56",
-    "title": "NATO Grants OpenAI Models to Core Institutions",
-    "summary": "NATO’s NCIA has granted core institutions access to OpenAI’s cybersecurity models via the Daybreak program, enabling code reviews, threat hunting, and fix testing. The program processes up to 300 billion raw input and output tokens monthly, exposing the software stack used daily by European institutions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/17/openai-nato-ai-cyber-defense/",
-    "publishedAt": "2026-11-17T08:33:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nato-grants-openai-models-to-core-institutions",
-      "article-a6dfae56",
-      "a6dfae56",
-      "nato-grants-openai-models-to-core-institutions-7c060d"
-    ]
-  },
-  {
-    "slug": "macos-unicode-filename-trick-enables-security-chec-7ee40bda",
-    "title": "macOS Unicode Filename Trick Enables Security Check Bypass",
-    "summary": "A Unicode normalization flaw in macOS lets attackers bypass file exclusion checks in developer tools, affecting Deno, libarchive, and Python setuptools. APFS treats Unicode spellings of a character as identical, while exclusion logic sees them differently, creating a mismatch. Apple patched the issue in the 27.3 beta; teams should update macOS and review exclusion settings to mitigate the bypass.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/macos-s-vs-ss-filename-trick/",
-    "publishedAt": "2026-11-17T08:20:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "macos-unicode-filename-trick-enables-security-chec",
-      "article-7ee40bda",
-      "7ee40bda",
-      "macos-unicode-filename-trick-enables-security-chec-4a4727",
-      "macos-unicode-filename-trick-enables-security-check-bypass"
-    ]
-  },
-  {
-    "slug": "kazakh-national-extradited-for-ransomware-attacks-451255e7",
-    "title": "Kazakh National Extradited for Ransomware Attacks",
-    "summary": "A Kazakh national was extradited from Italy to the U.S. to face charges for allegedly targeting U.S. schools, hospitals, and healthcare entities with ransomware. He is accused of orchestrating attacks that leveraged ransomware to extort victims, though no confirmed payments or active exploitation have been reported. U.S. authorities have initiated legal proceedings, underscoring international cooperation to prosecute ransomware affiliates.",
-    "category": "Ransomware",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
-    "publishedAt": "2026-11-17T07:25:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kazakh-national-extradited-for-ransomware-attacks",
-      "article-451255e7",
-      "451255e7",
-      "kazakh-national-extradited-for-ransomware-attacks-389424"
-    ]
-  },
-  {
-    "slug": "hijacked-optimizely-scripts-served-card-skimmer-an-64fe40f6",
-    "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
-    "summary": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today. Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday, according to Report URI, a firm that monitors the scripts websites run.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
-    "publishedAt": "2026-11-17T07:12:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hijacked-optimizely-scripts-served-card-skimmer-an",
-      "article-64fe40f6",
-      "64fe40f6",
-      "hijacked-optimizely-scripts-served-card-skimmer-an-501499",
-      "hijacked-optimizely-scripts-served-card-skimmer-and-ios-expl"
-    ]
-  },
-  {
-    "slug": "pnpm-launches-experimental-lockfile-to-cut-merge-c-281666b9",
-    "title": "pnpm Launches Experimental Lockfile to Cut Merge Conflicts",
-    "summary": "pnpm has released an experimental lockfile format that reorganizes dependency metadata to lower Git merge conflict rates. The new format changes how dependencies are recorded, enabling more deterministic resolution and reducing overlapping changes during merges. Users should test the format in staging environments before adopting it in production to ensure compatibility with existing tooling.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/pnpm-introduces-new-lockfile-format",
-    "publishedAt": "2026-11-17T07:02:53.649Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pnpm-launches-experimental-lockfile-to-cut-merge-c",
-      "article-281666b9",
-      "281666b9",
-      "pnpm-launches-experimental-lockfile-to-cut-merge-c-73f0db",
-      "pnpm-launches-experimental-lockfile-to-cut-merge-conflicts"
     ]
   }
 ];

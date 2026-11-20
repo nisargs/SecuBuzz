@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 11:48:45 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 12:11:08 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>SBC Medical Group Breach Exposes 2 Million Customers</title>
@@ -114,6 +114,42 @@
       <pubDate>Fri, 20 Nov 2026 08:46:01 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100652">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Kernel Update for RHEL 8.8 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-kernel-update-for-rhel-8-8-sap-02614055</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-rhel-8-8-sap-02614055</guid>
+      <description><![CDATA[Red Hat released a kernel update for Enterprise Linux 8.8 SAP and Telecommunications, fixing bugs that could allow privilege escalation or denial of service. CVSS base scores for each vulnerability are listed in the CVE references, indicating high impact. Apply the kernel patch via RHEL 8.8 Update Services for SAP Solutions or Telecommunications Update Service to mitigate exploitation.]]></description>
+      <pubDate>Fri, 20 Nov 2026 08:34:06 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100647">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Kernel Update for RHEL 9</title>
+      <link>https://secubuzz.com/news/red-hat-kernel-update-for-rhel-9-56850d67</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-rhel-9-56850d67</guid>
+      <description><![CDATA[Red Hat released a kernel security update for Enterprise Linux 9, addressing multiple vulnerabilities that could enable privilege escalation or denial of service. CVSS base scores for each vulnerability are provided in the CVE references, indicating high impact severity. Security teams should apply the kernel patch through RHEL 9 Update Services to mitigate potential exploitation.]]></description>
+      <pubDate>Fri, 20 Nov 2026 08:29:26 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100662">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Kernel Update for RHEL 9.4 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-kernel-update-for-rhel-9-4-sap-816c4b99</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-rhel-9-4-sap-816c4b99</guid>
+      <description><![CDATA[Red Hat issued a kernel security update for Enterprise Linux 9.4 SAP Solutions, fixing bugs that could allow privilege escalation or denial of service. CVSS base scores for each vulnerability are listed in the CVE references, indicating high impact severity. Apply the kernel patch via RHEL 9.4 Update Services for SAP Solutions to mitigate exploitation.]]></description>
+      <pubDate>Fri, 20 Nov 2026 08:27:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100660">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100656: Important: kernel security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100656-important-kernel-security-update-596c386b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100656-important-kernel-security-update-596c386b</guid>
+      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Fri, 20 Nov 2026 08:27:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100656">Red Hat Security Advisories</source>
+      <category>General</category>
     </item>
     <item>
       <title>RHSA-2026:100661: Important: kernel security, bug fix, and enhancement update</title>
@@ -420,42 +456,6 @@
       <pubDate>Thu, 19 Nov 2026 20:07:34 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9176-1">Ubuntu Security Notices</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100717: Low: edk2 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100717-low-edk2-security-update-e2f85032</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100717-low-edk2-security-update-e2f85032</guid>
-      <description><![CDATA[An update for edk2 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 19 Nov 2026 20:03:41 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100717">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>vim security update released for RHEL9</title>
-      <link>https://secubuzz.com/news/vim-security-update-released-for-rhel9-f4daa8ef</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vim-security-update-released-for-rhel9-f4daa8ef</guid>
-      <description><![CDATA[A vulnerability in vim on RHEL9 was identified, prompting Red Hat to issue an update. The flaw, rated Important, lacks a public CVE identifier but is documented with CVSS scores in the advisory references. Red Hat recommends applying the patch immediately to mitigate potential exploitation; no workarounds are provided today.]]></description>
-      <pubDate>Thu, 19 Nov 2026 20:03:41 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100487">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100549: Important: container-tools:rhel8 security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100549-important-container-tools-rhel8-s-7b4fe718</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100549-important-container-tools-rhel8-s-7b4fe718</guid>
-      <description><![CDATA[An update for the container-tools:rhel8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 19 Nov 2026 20:02:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100549">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100486: Important: vim security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100486-important-vim-security-update-6d8680ec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100486-important-vim-security-update-6d8680ec</guid>
-      <description><![CDATA[An update for vim is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 19 Nov 2026 20:01:31 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100486">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

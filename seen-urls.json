@@ -6511,5 +6511,10 @@
   "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
   "https://www.helpnetsecurity.com/2026/11/20/transport-for-london-oyster-photocard-data-breach/",
   "https://cybersecuritynews.com/palo-alto-confirms-java-vulnerability-impacts/",
-  "https://access.redhat.com/errata/RHSA-2026:100661"
+  "https://access.redhat.com/errata/RHSA-2026:100661",
+  "https://access.redhat.com/errata/RHSA-2026:100647",
+  "https://access.redhat.com/errata/RHSA-2026:100662",
+  "https://access.redhat.com/errata/RHSA-2026:100660",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97763",
+  "https://access.redhat.com/errata/RHSA-2026:100656"
 ]
