@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 01:48:58 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 02:32:42 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CTO of ‘RansomwareHelp’ Indicted for Wire Fraud</title>
@@ -125,6 +125,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Communication Becomes Frontline Cyber Defense</title>
+      <link>https://secubuzz.com/news/communication-becomes-frontline-cyber-defense-c9bd5808</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/communication-becomes-frontline-cyber-defense-c9bd5808</guid>
+      <description><![CDATA[Cybersecurity leaders now assert that clear, disciplined communication is becoming a frontline defense as critical as technical tools. This shift covers conversations about cloud security and AI adoption, underscoring messaging’s strategic role in threat mitigation. Security teams should embed communication best practices into programs, enhancing resilience against evolving cyber threats.]]></description>
+      <pubDate>Fri, 20 Nov 2026 18:35:40 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/security-words-matter">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Chrome Dev Channel Updated to 160.0.8171.0</title>
       <link>https://secubuzz.com/news/chrome-dev-channel-updated-to-160-0-8171-0-3230d0ff</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-channel-updated-to-160-0-8171-0-3230d0ff</guid>
@@ -150,6 +159,15 @@
       <pubDate>Fri, 20 Nov 2026 17:30:00 GMT</pubDate>
       <source url="https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day">The Record</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Nvidia CEO Resignation and Microsoft Outage Highlight AI Volatility</title>
+      <link>https://secubuzz.com/news/nvidia-ceo-resignation-and-microsoft-outage-highli-ad8d3de0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-ceo-resignation-and-microsoft-outage-highli-ad8d3de0</guid>
+      <description><![CDATA[Dark Reading highlights recent industry news, including Nvidia CEO Jensen Huang’s resignation and a Microsoft cloud outage. The video summarizes key developments that were omitted from earlier coverage, underscoring the volatility of the AI sector. Viewers are encouraged to review the full discussion for context on leadership changes and infrastructure disruptions.]]></description>
+      <pubDate>Fri, 20 Nov 2026 17:04:04 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/what-we-missed-nvidia-ceo-scandal-rocks-ai-industry">Dark Reading</source>
+      <category>General</category>
     </item>
     <item>
       <title>Microsoft Investigates New Outlook Attachment Upload Failures</title>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 12:30:19 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/20/vmware-vcenter-zero-day-cve-2026-123890-exploited/">Help Net Security</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>CVE-2026-99312 Exposes Host Memory via KVM on AMD</title>
-      <link>https://secubuzz.com/news/cve-2026-99312-exposes-host-memory-via-kvm-on-amd-191cadd2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-99312-exposes-host-memory-via-kvm-on-amd-191cadd2</guid>
-      <description><![CDATA[Linux KVM (CVE-2026-99312) lets guest VMs read up to 127 GB of host memory on AMD processors with nested virtualization. This flaw allows attackers to access memory of other customers on shared cloud servers, risking data exposure. Kernel patches addressing CVE-2026-99312 have shipped; admins should update and disable nested virtualization if unnecessary.]]></description>
-      <pubDate>Fri, 20 Nov 2026 12:20:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Auto-Installs Windows 11 26H2 on Unmanaged Devices</title>
-      <link>https://secubuzz.com/news/microsoft-auto-installs-windows-11-26h2-on-unmanag-24a9fbd2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-auto-installs-windows-11-26h2-on-unmanag-24a9fbd2</guid>
-      <description><![CDATA[Microsoft has begun automatically upgrading eligible unmanaged devices to Windows 11 26H2, bypassing traditional IT management controls. The move risks exposing devices to unverified updates, potentially introducing compatibility issues or security gaps on systems lacking centralized patch oversight. Administrators should monitor device upgrade status, enforce manual update policies, or configure group policies to prevent automatic installation on unmanaged hardware.]]></description>
-      <pubDate>Fri, 20 Nov 2026 12:14:28 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/">BleepingComputer</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

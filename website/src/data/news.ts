@@ -261,6 +261,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "communication-becomes-frontline-cyber-defense-c9bd5808",
+    "title": "Communication Becomes Frontline Cyber Defense",
+    "summary": "Cybersecurity leaders now assert that clear, disciplined communication is becoming a frontline defense as critical as technical tools. This shift covers conversations about cloud security and AI adoption, underscoring messaging’s strategic role in threat mitigation. Security teams should embed communication best practices into programs, enhancing resilience against evolving cyber threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
+    "publishedAt": "2026-11-20T18:35:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "communication-becomes-frontline-cyber-defense",
+      "article-c9bd5808",
+      "c9bd5808",
+      "communication-becomes-frontline-cyber-defense-497ba2"
+    ]
+  },
+  {
     "slug": "chrome-dev-channel-updated-to-160-0-8171-0-3230d0ff",
     "title": "Chrome Dev Channel Updated to 160.0.8171.0",
     "summary": "Google Chrome's Dev channel updated to version 160.0.8171.0, delivering bug fixes and performance improvements across Windows, macOS, and Linux. Release notes detail changes in rendering, security, and developer tools, with a partial list in the Git log. Users on the Dev channel should install the new build to access the latest features.",
@@ -314,6 +332,25 @@ export const news: NewsBrief[] = [
       "cd701829",
       "cairn-ai-tool-finds-possible-zero-day-at-universit-26a74c",
       "cairn-ai-tool-finds-possible-zero-day-at-university"
+    ]
+  },
+  {
+    "slug": "nvidia-ceo-resignation-and-microsoft-outage-highli-ad8d3de0",
+    "title": "Nvidia CEO Resignation and Microsoft Outage Highlight AI Volatility",
+    "summary": "Dark Reading highlights recent industry news, including Nvidia CEO Jensen Huang’s resignation and a Microsoft cloud outage. The video summarizes key developments that were omitted from earlier coverage, underscoring the volatility of the AI sector. Viewers are encouraged to review the full discussion for context on leadership changes and infrastructure disruptions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/what-we-missed-nvidia-ceo-scandal-rocks-ai-industry",
+    "publishedAt": "2026-11-20T17:04:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nvidia-ceo-resignation-and-microsoft-outage-highli",
+      "article-ad8d3de0",
+      "ad8d3de0",
+      "nvidia-ceo-resignation-and-microsoft-outage-highli-3e1331",
+      "nvidia-ceo-resignation-and-microsoft-outage-highlight-ai-vol"
     ]
   },
   {
@@ -3751,6 +3788,46 @@ export const news: NewsBrief[] = [
       "article-8e3f6470",
       "8e3f6470",
       "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
+    ]
+  },
+  {
+    "slug": "microsoft-discloses-vhdmp-sys-privilege-escalation-4971f29f",
+    "title": "Microsoft Discloses vhdmp.sys Privilege Escalation",
+    "summary": "Microsoft disclosed CVE-2026-95989, an elevation-of-privilege flaw in vhdmp.sys that could let local users gain higher privileges. The flaw arises from improper validation of virtual-disk metadata, enabling a crafted file to trigger kernel-mode escalation; no public exploit exists. Microsoft urges installation of the 19 November 2026 cumulative update, which patches the driver and mitigates the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95989",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-95989"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-discloses-vhdmp-sys-privilege-escalation",
+      "article-4971f29f",
+      "4971f29f",
+      "microsoft-discloses-vhdmp-sys-privilege-escalation-7431da"
+    ]
+  },
+  {
+    "slug": "microsoft-announces-kerberos-denial-of-service-cve-a8a68774",
+    "title": "Microsoft Announces Kerberos Denial-of-Service CVE",
+    "summary": "Microsoft disclosed CVE-2026-96082, a denial-of-service flaw in Windows Kerberos that could halt authentication for users. The issue stems from improper processing of malformed Kerberos tickets, enabling a crash; no active exploitation is known. Microsoft urges installation of the 19 November 2026 cumulative update, which patches the Kerberos component and restores service stability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96082",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-96082"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-announces-kerberos-denial-of-service-cve",
+      "article-a8a68774",
+      "a8a68774",
+      "microsoft-announces-kerberos-denial-of-service-cve-743187"
     ]
   },
   {
@@ -9619,80 +9696,6 @@ export const news: NewsBrief[] = [
       "57bf9353",
       "rhsa-2026-100552-critical-red-hat-jboss-core-servi-2ee081",
       "rhsa-2026-100552-critical-red-hat-jboss-core-services-apache"
-    ]
-  },
-  {
-    "slug": "ai-powered-phishing-kit-themailer-scales-targeting-9cf853ec",
-    "title": "AI-Powered Phishing Kit 'TheMailer' Scales Targeting",
-    "summary": "The phishing kit 'TheMailer' employs AI models to craft personalized lures, targeting tens of thousands of recipients. The kit leverages AI to evade spam filters and scale campaigns, increasing the likelihood of successful credential harvesting and phishing fraud. Security teams should block known 'TheMailer' domains, monitor for AI-generated phishing content, and apply email filtering rules that detect anomalous personalization patterns.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat",
-    "publishedAt": "2026-11-17T20:58:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-powered-phishing-kit-themailer-scales-targeting",
-      "article-9cf853ec",
-      "9cf853ec",
-      "ai-powered-phishing-kit-themailer-scales-targeting-5423e5"
-    ]
-  },
-  {
-    "slug": "atlassian-confluence-cve-2026-90436-exploited-822affbc",
-    "title": "Atlassian Confluence CVE-2026-90436 Exploited",
-    "summary": "CVE-2026-90436, a critical flaw in Atlassian Confluence, has been exploited in enterprise environments. The vulnerability permits unauthenticated remote code execution via crafted HTTP requests, with public PoC evidence and a CVSS score of 9.1, enabling attackers to gain full system control. Apply the latest Confluence patch immediately, restrict network access to Confluence instances, and monitor logs for suspicious activity.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/rapid7-detected-exploitation-of-cve-2026-90436-against",
-    "publishedAt": "2026-11-17T20:57:27.000Z",
-    "cves": [
-      "CVE-2026-90436"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "atlassian-confluence-cve-2026-90436-exploited",
-      "article-822affbc",
-      "822affbc",
-      "atlassian-confluence-cve-2026-90436-exploited-1a3502"
-    ]
-  },
-  {
-    "slug": "n-able-releases-17-zero-day-rce-patches-215aeed6",
-    "title": "N-able Releases 17 Zero-Day RCE Patches",
-    "summary": "N-able N-central HF3 suffers 17 zero-day RCE vulnerabilities exploitable via remote configuration interfaces. The flaws allow unauthenticated attackers to execute arbitrary code, potentially compromising system integrity; no public PoC yet, but the zero-day status warrants immediate attention. N-able has issued patches for all 17 issues; security teams should apply the update and monitor for anomalous activity.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://www.cybernewsai.com/blog/n-able-kills-legacy-apis-patches-17-n-central-zero-days",
-    "publishedAt": "2026-11-17T20:55:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-releases-17-zero-day-rce-patches",
-      "article-215aeed6",
-      "215aeed6",
-      "n-able-releases-17-zero-day-rce-patches-5cf437"
-    ]
-  },
-  {
-    "slug": "n-able-releases-hf3-patches-for-17-zero-days-1175cbe9",
-    "title": "N-able Releases HF3 Patches for 17 Zero-Days",
-    "summary": "N-able released N-central HF3 Patches 17 to address 17 zero-day vulnerabilities, including remote code execution and authentication bypasses. The flaws involve memory-corruption and logic errors that could let attackers execute arbitrary code or gain elevated privileges; no public exploits are confirmed. Administrators should apply the HF3 Patches 17 immediately and monitor for anomalous activity using the provided detection rules.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/n-able-kills-legacy-apis-patches-17-n-central-zero-days",
-    "publishedAt": "2026-11-17T20:55:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-releases-hf3-patches-for-17-zero-days",
-      "article-1175cbe9",
-      "1175cbe9",
-      "n-able-releases-hf3-patches-for-17-zero-days-3110aa"
     ]
   }
 ];
