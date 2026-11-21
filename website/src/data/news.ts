@@ -5647,22 +5647,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "badbox-3-0-malware-infects-android-tv-boxes-to-gen-106873f0",
-    "title": "BADBOX 3.0 Malware Infects Android TV Boxes to Generate 40 Billion Fraudulent Ad Requests Daily",
-    "summary": "Low-cost Android streaming boxes helped power an advertising fraud operation that generated roughly 40 billion bid requests a day at its peak. Known as BADBOX 3.0, the campaign used infected devices to play video ads outside the visible screen while making the traffic look as though it came from legitimate streaming apps.",
-    "category": "General",
-    "severity": "MEDIUM",
+    "slug": "badbox-3-0-botnet-infects-android-tv-boxes-generat-d2c39753",
+    "title": "BADBOX 3.0 Botnet Infects Android TV Boxes, Generating 40 Billion Fraudulent Ad Requests Daily",
+    "summary": "BADBOX 3.0, a botnet targeting Android TV boxes, has resurfaced and is generating 40 billion fraudulent ad requests daily. The malware exploits default credentials and unpatched firmware to inject bogus traffic, while infected devices play ads off-screen to mimic legitimate streaming. Security teams should update firmware, block BADBOX domains, and monitor traffic for anomalous spikes to mitigate the campaign.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
     "source": "Cyber Security News",
     "sourceUrl": "https://cybersecuritynews.com/badbox-3-0-malware/",
     "publishedAt": "2026-11-19T14:05:35.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/"
+      }
+    ],
     "aliases": [
-      "badbox-3-0-malware-infects-android-tv-boxes-to-gen",
-      "article-106873f0",
-      "106873f0",
-      "badbox-3-0-malware-infects-android-tv-boxes-to-gen-d73be1",
-      "badbox-3-0-malware-infects-android-tv-boxes-to-generate-40-b"
+      "badbox-3-0-botnet-infects-android-tv-boxes-generat",
+      "article-d2c39753",
+      "d2c39753",
+      "badbox-3-0-botnet-infects-android-tv-boxes-generat-d73be1",
+      "badbox-3-0-botnet-infects-android-tv-boxes-generating-40-bil"
     ]
   },
   {

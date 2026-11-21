@@ -4819,18 +4819,23 @@
   {
     "id": "https://cybersecuritynews.com/badbox-3-0-malware/",
     "sourceUrl": "https://cybersecuritynews.com/badbox-3-0-malware/",
-    "title": "BADBOX 3.0 Malware Infects Android TV Boxes to Generate 40 Billion Fraudulent Ad Requests Daily",
-    "headline": "BADBOX 3.0 Malware Infects Android TV Boxes to Generate 40 Billion Fraudulent Ad Requests Daily",
-    "summary": "Low-cost Android streaming boxes helped power an advertising fraud operation that generated roughly 40 billion bid requests a day at its peak. Known as BADBOX 3.0, the campaign used infected devices to play video ads outside the visible screen while making the traffic look as though it came from legitimate streaming apps.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
+    "title": "BADBOX 3.0 Botnet Infects Android TV Boxes, Generating 40 Billion Fraudulent Ad Requests Daily",
+    "headline": "BADBOX 3.0 Botnet Infects Android TV Boxes, Generating 40 Billion Fraudulent Ad Requests Daily",
+    "summary": "BADBOX 3.0, a botnet targeting Android TV boxes, has resurfaced and is generating 40 billion fraudulent ad requests daily. The malware exploits default credentials and unpatched firmware to inject bogus traffic, while infected devices play ads off-screen to mimic legitimate streaming. Security teams should update firmware, block BADBOX domains, and monitor traffic for anomalous spikes to mitigate the campaign.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
     "source": "Cyber Security News",
     "publishedAt": "2026-11-19T14:05:35.000Z",
     "ingestedAt": "2026-11-19T15:44:03.588Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/"
+      }
+    ],
     "isFallback": true
   },
   {
