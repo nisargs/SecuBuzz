@@ -36,8 +36,8 @@ async function main() {
   const bodyIdx = args.indexOf('--body');
   const urlIdx = args.indexOf('--url');
 
-  const title = titleIdx !== -1 && args[titleIdx + 1] ? args[titleIdx + 1] : 'SecuBuzz Community Update';
-  const body = bodyIdx !== -1 && args[bodyIdx + 1] ? args[bodyIdx + 1] : 'Finding SecuBuzz helpful? Share a quick rating & review on Google Play to help independent threat intelligence grow!';
+  const title = titleIdx !== -1 && args[titleIdx + 1] ? args[titleIdx + 1] : 'Note from Developer';
+  const body = bodyIdx !== -1 && args[bodyIdx + 1] ? args[bodyIdx + 1] : 'If you are finding SecuBuzz helpful, please drop a quick review and rating on Google Play to help us grow';
   const linkUrl = urlIdx !== -1 && args[urlIdx + 1] ? args[urlIdx + 1] : null;
 
   console.log('\n========================================================');
