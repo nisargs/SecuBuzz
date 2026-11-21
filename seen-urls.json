@@ -6666,5 +6666,9 @@
   "https://access.redhat.com/errata/RHSA-2026:100821",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69544",
   "https://access.redhat.com/errata/RHSA-2026:100769",
-  "https://access.redhat.com/errata/RHSA-2026:100757"
+  "https://access.redhat.com/errata/RHSA-2026:100757",
+  "https://access.redhat.com/errata/RHSA-2026:100814",
+  "https://access.redhat.com/errata/RHSA-2026:100804",
+  "https://access.redhat.com/errata/RHSA-2026:100753",
+  "https://access.redhat.com/errata/RHSA-2026:100768"
 ]

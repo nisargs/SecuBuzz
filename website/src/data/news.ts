@@ -178,6 +178,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100814-critical-nginx-security-update-ea5dadf7",
+    "title": "RHSA-2026:100814: Critical: nginx security update",
+    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100814",
+    "publishedAt": "2026-11-20T20:46:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100814-critical-nginx-security-update",
+      "article-ea5dadf7",
+      "ea5dadf7",
+      "rhsa-2026-100814-critical-nginx-security-update-2ee08c"
+    ]
+  },
+  {
     "slug": "house-committee-rebukes-chinese-ai-adoption-a1717d24",
     "title": "House Committee Rebukes Chinese AI Adoption",
     "summary": "The House Homeland Security Committee launched an investigation into U.S. corporate adoption of Chinese open-weight AI models. Lawmakers cite supply chain risks, potential data exfiltration, and intellectual property theft as primary concerns for national security. The committee recommends stricter vetting of AI model provenance and enhanced export controls to mitigate strategic vulnerabilities.",
@@ -235,6 +253,24 @@ export const news: NewsBrief[] = [
       "4653f8cd",
       "how-cloudflare-waf-helps-protect-against-phpafters-2df84a",
       "how-cloudflare-waf-helps-protect-against-phpaftershell-and-o"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100804-critical-nginx-security-update-5b8c4e7d",
+    "title": "RHSA-2026:100804: Critical: nginx security update",
+    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100804",
+    "publishedAt": "2026-11-20T19:37:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100804-critical-nginx-security-update",
+      "article-5b8c4e7d",
+      "5b8c4e7d",
+      "rhsa-2026-100804-critical-nginx-security-update-2ee08b"
     ]
   },
   {
@@ -348,6 +384,42 @@ export const news: NewsBrief[] = [
       "b3499ea5",
       "bell-canada-breach-exposes-enterprise-customer-dat-716195",
       "bell-canada-breach-exposes-enterprise-customer-data"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100768-critical-nginx-security-update-14feece7",
+    "title": "RHSA-2026:100768: Critical: nginx security update",
+    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100768",
+    "publishedAt": "2026-11-20T18:47:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100768-critical-nginx-security-update",
+      "article-14feece7",
+      "14feece7",
+      "rhsa-2026-100768-critical-nginx-security-update-2ee088"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100753-critical-nginx-security-update-11db7d6f",
+    "title": "RHSA-2026:100753: Critical: nginx security update",
+    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100753",
+    "publishedAt": "2026-11-20T18:47:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100753-critical-nginx-security-update",
+      "article-11db7d6f",
+      "11db7d6f",
+      "rhsa-2026-100753-critical-nginx-security-update-2ee088"
     ]
   },
   {
@@ -9600,86 +9672,6 @@ export const news: NewsBrief[] = [
       "0822fccb",
       "open-robotics-rviz-heap-overflow-enables-remote-co-77f340",
       "open-robotics-rviz-heap-overflow-enables-remote-code-executi"
-    ]
-  },
-  {
-    "slug": "g-data-total-security-lpe-via-tsnxgservice-link-60b87ef4",
-    "title": "G DATA Total Security LPE via TSNxGService Link",
-    "summary": "A local privilege escalation flaw in G DATA Total Security’s TSNxGService lets attackers gain elevated rights after executing low-privileged code. CVE-2026-19776 carries a CVSS score of 7.8 and exploits a link-following logic flaw triggered by local users. G DATA released a patch; apply the update or follow the vendor’s advisory to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1030/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-19776"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "g-data-total-security-lpe-via-tsnxgservice-link",
-      "article-60b87ef4",
-      "60b87ef4",
-      "g-data-total-security-lpe-via-tsnxgservice-link-77f343"
-    ]
-  },
-  {
-    "slug": "g-data-total-security-avkproxy-dos-via-link-follow-7f3d59f6",
-    "title": "G DATA Total Security AVKProxy DoS via Link Following",
-    "summary": "A local denial-of-service flaw in G DATA Total Security’s AVKProxy allows attackers to crash the service after executing low-privileged code. CVE-2026-19777 has a CVSS score of 6.1 and exploits a link-following bug that can be triggered by local users. G DATA issued a patch; update AVKProxy or follow the vendor’s advisory to prevent disruption.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1029/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-19777"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "g-data-total-security-avkproxy-dos-via-link-follow",
-      "article-7f3d59f6",
-      "7f3d59f6",
-      "g-data-total-security-avkproxy-dos-via-link-follow-77f340",
-      "g-data-total-security-avkproxy-dos-via-link-following"
-    ]
-  },
-  {
-    "slug": "g-data-total-security-backup-lpe-via-search-path-7f33cb28",
-    "title": "G DATA Total Security Backup LPE via Search Path",
-    "summary": "A local privilege escalation flaw in G DATA Total Security’s Backup Service lets attackers gain elevated rights after executing low-privileged code. CVE-2026-19779 carries a CVSS score of 7.3 and exploits an uncontrolled search-path element that can be triggered by local users. G DATA released a patch; apply the update or follow the vendor’s advisory to mitigate the privilege escalation risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1028/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-19779"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "g-data-total-security-backup-lpe-via-search-path",
-      "article-7f33cb28",
-      "7f33cb28",
-      "g-data-total-security-backup-lpe-via-search-path-77f340"
-    ]
-  },
-  {
-    "slug": "cold-relic-uses-stolen-google-workspace-data-to-br-0beae806",
-    "title": "Cold Relic Uses Stolen Google Workspace Data to Breach",
-    "summary": "Cold Relic, a Russia-linked espionage group, leveraged stolen Google Workspace data to compromise a second U.S. organization. The attackers used the initial cloud compromise as a launchpad for a series of linked intrusions, achieving third-party compromise. Security teams should conduct thorough credential audits, enforce MFA on Google Workspace, and monitor for lateral movement indicators.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
-    "publishedAt": "2026-11-18T05:58:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cold-relic-uses-stolen-google-workspace-data-to-br",
-      "article-0beae806",
-      "0beae806",
-      "cold-relic-uses-stolen-google-workspace-data-to-br-6f258b",
-      "cold-relic-uses-stolen-google-workspace-data-to-breach"
     ]
   }
 ];
