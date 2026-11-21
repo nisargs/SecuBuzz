@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 11:42:17 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 12:44:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>China-Linked Hackers Exploit MONAI Label Zero-Day</title>
+      <link>https://secubuzz.com/news/china-linked-hackers-exploit-monai-label-zero-day-bc54a5be</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/china-linked-hackers-exploit-monai-label-zero-day-bc54a5be</guid>
+      <description><![CDATA[China-linked threat actors used autonomous Cairn AI agents to locate and exploit a critical vulnerability in MONAI Label medical software. The flaw permits unauthenticated critical remote code execution via malformed input, enabling data exfiltration from imaging systems. Amazon issued an out-of-band patch; all MONAI Label users should apply it immediately.]]></description>
+      <pubDate>Sat, 21 Nov 2026 12:08:50 GMT</pubDate>
+      <source url="https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Malicious Webpage Extracts Meta Muse Private Chats</title>
+      <link>https://secubuzz.com/news/malicious-webpage-extracts-meta-muse-private-chats-24931218</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-webpage-extracts-meta-muse-private-chats-24931218</guid>
+      <description><![CDATA[Researchers showed a single malicious webpage can extract private conversations and stored memories from Meta Muse without approval prompts. The method could also harvest credentials for connected accounts, but the demo was confined to one user and did not impact real users. Meta has not issued a fix; users should avoid untrusted webpages and consider disabling Muse until further guidance.]]></description>
+      <pubDate>Sat, 21 Nov 2026 11:53:07 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>GPGME Memory Bug Exposes App Data via Malicious Keys</title>
       <link>https://secubuzz.com/news/gpgme-memory-bug-exposes-app-data-via-malicious-ke-95ec495f</link>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 15:58:06 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/">BleepingComputer</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100752: Critical: OpenJDK 25.0.5.1 Security Update for Windows Builds</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100752-critical-openjdk-25-0-5-1-securit-81864ea2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100752-critical-openjdk-25-0-5-1-securit-81864ea2</guid>
-      <description><![CDATA[An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Fri, 20 Nov 2026 15:50:41 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100752">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Moxa Firmware Buffer Overflow Vulnerabilities</title>
-      <link>https://secubuzz.com/news/moxa-firmware-buffer-overflow-vulnerabilities-16be413b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/moxa-firmware-buffer-overflow-vulnerabilities-16be413b</guid>
-      <description><![CDATA[Moxa disclosed buffer overflow flaws in ioLogik E1200, EDS-E, IKS, and other firmware series, exploitable via Ethernet Remote I/Os and switches. CVE-2026-129971 and CVE-2026-129972 target remote I/Os, while CVE-2026-130493 and CVE-2026-130494 affect switch firmware, enabling potential code execution. Users should review the advisory and apply firmware updates promptly to mitigate the risk.]]></description>
-      <pubDate>Fri, 20 Nov 2026 15:39:31 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/control-systems-moxa-security-advisory-av26-1187">Canadian Centre for Cyber Security</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

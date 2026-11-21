@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "china-linked-hackers-exploit-monai-label-zero-day-bc54a5be",
+    "title": "China-Linked Hackers Exploit MONAI Label Zero-Day",
+    "summary": "China-linked threat actors used autonomous Cairn AI agents to locate and exploit a critical vulnerability in MONAI Label medical software. The flaw permits unauthenticated critical remote code execution via malformed input, enabling data exfiltration from imaging systems. Amazon issued an out-of-band patch; all MONAI Label users should apply it immediately.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+    "publishedAt": "2026-11-21T12:08:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "china-linked-hackers-exploit-monai-label-zero-day",
+      "article-bc54a5be",
+      "bc54a5be",
+      "china-linked-hackers-exploit-monai-label-zero-day-750f66"
+    ]
+  },
+  {
+    "slug": "malicious-webpage-extracts-meta-muse-private-chats-24931218",
+    "title": "Malicious Webpage Extracts Meta Muse Private Chats",
+    "summary": "Researchers showed a single malicious webpage can extract private conversations and stored memories from Meta Muse without approval prompts. The method could also harvest credentials for connected accounts, but the demo was confined to one user and did not impact real users. Meta has not issued a fix; users should avoid untrusted webpages and consider disabling Muse until further guidance.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+    "publishedAt": "2026-11-21T11:53:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-webpage-extracts-meta-muse-private-chats",
+      "article-24931218",
+      "24931218",
+      "malicious-webpage-extracts-meta-muse-private-chats-2e042a"
+    ]
+  },
+  {
     "slug": "gpgme-memory-bug-exposes-app-data-via-malicious-ke-95ec495f",
     "title": "GPGME Memory Bug Exposes App Data via Malicious Keys",
     "summary": "A malicious OpenPGP key with an unusually long user ID triggers a critical memory bug in GPGME, the core library of GnuPG, exposing application data. The flaw, CVE-2026-129975, affects all software using GPGME before 2.3.0 and lets attackers read memory without authentication. GnuPG released patched versions; users should upgrade to GPGME 2.3.0+ and enforce key-length checks to mitigate the issue.",
@@ -9638,43 +9674,6 @@ export const news: NewsBrief[] = [
       "article-36989201",
       "36989201",
       "ros-2-xml-external-entity-disclosure-vulnerability-77f33d"
-    ]
-  },
-  {
-    "slug": "krita-tif-buffer-overflow-enables-remote-code-60d110f7",
-    "title": "Krita TIF Buffer Overflow Enables Remote Code",
-    "summary": "A heap-based buffer overflow in Krita’s TIF file parser allows remote attackers to execute arbitrary code when a user opens a crafted TIF file. The vulnerability requires user interaction, has a CVSS score of 7.8, and can lead to full system compromise. Krita has released a patch in version 5.1.2; users should update immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1018/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "krita-tif-buffer-overflow-enables-remote-code",
-      "article-60d110f7",
-      "60d110f7",
-      "krita-tif-buffer-overflow-enables-remote-code-77f33c"
-    ]
-  },
-  {
-    "slug": "open-robotics-rviz-mapdisplay-oob-read-denial-of-s-15bb6f07",
-    "title": "Open Robotics RViz MapDisplay OOB Read Denial-of-Service",
-    "summary": "A zero-day out-of-bounds read in Open Robotics RViz MapDisplay’s OccupancyGridUpdate lets network-adjacent attackers trigger a denial-of-service without authentication. The unchecked array index flaw yields a CVSS 6.5 score and permits remote denial-of-service with no privileged access. Open Robotics issued a patch; security teams should update RViz to the latest release or apply the vendor hotfix immediately.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1021/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "open-robotics-rviz-mapdisplay-oob-read-denial-of-s",
-      "article-15bb6f07",
-      "15bb6f07",
-      "open-robotics-rviz-mapdisplay-oob-read-denial-of-s-77f33f",
-      "open-robotics-rviz-mapdisplay-oob-read-denial-of-service"
     ]
   }
 ];
