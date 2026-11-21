@@ -35,10 +35,12 @@ async function main() {
   const titleIdx = args.indexOf('--title');
   const bodyIdx = args.indexOf('--body');
   const urlIdx = args.indexOf('--url');
+  const tokenIdx = args.indexOf('--token');
 
   const title = titleIdx !== -1 && args[titleIdx + 1] ? args[titleIdx + 1] : 'Note from Developer';
   const body = bodyIdx !== -1 && args[bodyIdx + 1] ? args[bodyIdx + 1] : 'If you are finding SecuBuzz helpful, please drop a quick review and rating on Google Play to help us grow';
-  const linkUrl = urlIdx !== -1 && args[urlIdx + 1] ? args[urlIdx + 1] : null;
+  const linkUrl = urlIdx !== -1 && args[urlIdx + 1] ? args[urlIdx + 1] : 'https://play.google.com/store/apps/details?id=com.secubuzz.app';
+  const targetToken = tokenIdx !== -1 && args[tokenIdx + 1] ? args[tokenIdx + 1] : null;
 
   console.log('\n========================================================');
   console.log('📣 SECUBUZZ CUSTOM PUSH BROADCAST CONTROLLER');
@@ -48,10 +50,13 @@ async function main() {
   console.log(`  Title:   "${title}"`);
   console.log(`  Body:    "${body}"`);
   console.log(`  Link:    ${linkUrl || '(Opens directly to News briefs tab)'}`);
-  console.log(`  Mode:    ${isSend ? '🚨 LIVE BROADCAST (Will buzz devices)' : '🛡️ DRY-RUN PREVIEW (No devices messaged)'}\n`);
+  console.log(`  Target:  ${targetToken ? 'Single Test Device: ' + targetToken : 'All Active Subscriber Devices'}`);
+  console.log(`  Mode:    ${isSend ? '🚨 LIVE SEND (Will buzz device)' : '🛡️ DRY-RUN PREVIEW (No devices messaged)'}\n`);
 
-  const activeTokens = getActiveTokens();
-  console.log(`Active Device Fleet: ${activeTokens.length} devices ready to receive.`);
+  const activeTokens = targetToken
+    ? [{ token: targetToken, app_version: '1.1.0', platform: 'android' }]
+    : getActiveTokens();
+  console.log(`Target Fleet: ${activeTokens.length} device(s) selected.`);
 
   if (!isSend) {
     console.log('\n💡 To broadcast this notification to all active devices, run:');
@@ -70,7 +75,8 @@ async function main() {
     type: 'announcement',
     headline: title,
     summary: body,
-    category: 'CVE',
+    category: 'COMMUNITY',
+    source: 'Google Play Store',
     severity: 'HIGH',
   };
 
