@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 03:45:04 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 04:45:55 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>6 Critical F5 BIG-IP . Could Let Hackers Disrupt Websites and Execute Malicious Code</title>
+      <link>https://secubuzz.com/news/6-critical-f5-big-ip-could-let-hackers-disrupt-web-e1a11be8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/6-critical-f5-big-ip-could-let-hackers-disrupt-web-e1a11be8</guid>
+      <description><![CDATA[F5 released emergency fixes for six critical BIG-IP vulnerabilities that could let remote attackers take websites and other services offline without logging in. The flaws affect specific traffic-handling configurations. An attacker who can reach a vulnerable service could crash the BIG-IP process that handles client traffic.]]></description>
+      <pubDate>Sat, 21 Nov 2026 03:13:03 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/critical-f5-big-ip-vulnerabilities/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>WhatsApp Android Flaws Could Let Hackers Delete Users’ Files and Expose IP Addresses</title>
       <link>https://secubuzz.com/news/whatsapp-android-flaws-could-let-hackers-delete-us-5e5d25e8</link>
@@ -132,6 +141,15 @@
       <pubDate>Fri, 20 Nov 2026 19:07:27 GMT</pubDate>
       <source url="https://arcticwolf.com/resources/blog/incident-response-at-machine-speed-what-black-octobers-record-case-volume-reveals-about-todays-threat-landscape/">Arctic Wolf</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Bell Canada Breach Exposes Enterprise Customer Data</title>
+      <link>https://secubuzz.com/news/bell-canada-breach-exposes-enterprise-customer-dat-b3499ea5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bell-canada-breach-exposes-enterprise-customer-dat-b3499ea5</guid>
+      <description><![CDATA[Bell Canada confirmed that an 'agentic' threat actor breached its systems on November 17 2026, accessing enterprise customer data. The intrusion exploited vulnerabilities in the order-and-provisioning platform, allowing attackers to exfiltrate sensitive customer records. Bell Canada has issued a public advisory and is coordinating with security teams to apply patches and strengthen authentication controls.]]></description>
+      <pubDate>Fri, 20 Nov 2026 18:51:43 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/">BleepingComputer</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server</title>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 13:05:27 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100750">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CyberLeek Distributes Fake GTA 6 Launchers with Malware</title>
-      <link>https://secubuzz.com/news/cyberleek-distributes-fake-gta-6-launchers-with-ma-3f6a75d7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyberleek-distributes-fake-gta-6-launchers-with-ma-3f6a75d7</guid>
-      <description><![CDATA[CyberLeek malware campaign uses over 355 domains to distribute fake GTA 6 launchers that deliver malicious payloads. The sites masquerade as legitimate game releases, but the ZIP archives contain trojanized executables designed to steal credentials and install backdoors. Security teams should block the listed domains, update URL filtering, and educate users about the phishing nature of the downloads.]]></description>
-      <pubDate>Fri, 20 Nov 2026 13:02:57 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fake-gta-6-pc-launchers/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ransomware Group Publishes Visa, Mastercard, JPMorgan Data</title>
-      <link>https://secubuzz.com/news/ransomware-group-publishes-visa-mastercard-jpmorga-3c9a1f42</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-group-publishes-visa-mastercard-jpmorga-3c9a1f42</guid>
-      <description><![CDATA[A ransomware group disclosed stolen data allegedly from third-party providers linked to Visa, Mastercard, and JPMorgan Chase customers. The leak includes personal identifiers and financial information, potentially exposing millions of cardholders to credential theft and fraud. Affected institutions should conduct forensic investigations, notify impacted customers, and enforce stricter third-party access controls.]]></description>
-      <pubDate>Fri, 20 Nov 2026 12:51:36 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/11/hackers-leak-data-linked-to-visa-mastercard-and-jpmorgan-customers">Malwarebytes Labs</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

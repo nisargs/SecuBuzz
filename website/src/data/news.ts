@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "6-critical-f5-big-ip-could-let-hackers-disrupt-web-e1a11be8",
+    "title": "6 Critical F5 BIG-IP . Could Let Hackers Disrupt Websites and Execute Malicious Code",
+    "summary": "F5 released emergency fixes for six critical BIG-IP vulnerabilities that could let remote attackers take websites and other services offline without logging in. The flaws affect specific traffic-handling configurations. An attacker who can reach a vulnerable service could crash the BIG-IP process that handles client traffic.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-f5-big-ip-vulnerabilities/",
+    "publishedAt": "2026-11-21T03:13:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "6-critical-f5-big-ip-could-let-hackers-disrupt-web",
+      "article-e1a11be8",
+      "e1a11be8",
+      "6-critical-f5-big-ip-could-let-hackers-disrupt-web-34cd03",
+      "6-critical-f5-big-ip-could-let-hackers-disrupt-websites-and-"
+    ]
+  },
+  {
     "slug": "whatsapp-android-flaws-could-let-hackers-delete-us-5e5d25e8",
     "title": "WhatsApp Android Flaws Could Let Hackers Delete Users’ Files and Expose IP Addresses",
     "summary": "WhatsApp’s November 2026 security update describes three flaws that could let attackers delete files stored by WhatsApp on Android, expose a user’s IP address, or bypass a security check for Meta AI’s Private Processing service. Of the three, only the IP exposure flaw was flagged for possible abuse.",
@@ -274,6 +293,25 @@ export const news: NewsBrief[] = [
       "article-779b4f49",
       "779b4f49",
       "arctic-wolf-reports-record-october-threat-activity-446bc2"
+    ]
+  },
+  {
+    "slug": "bell-canada-breach-exposes-enterprise-customer-dat-b3499ea5",
+    "title": "Bell Canada Breach Exposes Enterprise Customer Data",
+    "summary": "Bell Canada confirmed that an 'agentic' threat actor breached its systems on November 17 2026, accessing enterprise customer data. The intrusion exploited vulnerabilities in the order-and-provisioning platform, allowing attackers to exfiltrate sensitive customer records. Bell Canada has issued a public advisory and is coordinating with security teams to apply patches and strengthen authentication controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+    "publishedAt": "2026-11-20T18:51:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bell-canada-breach-exposes-enterprise-customer-dat",
+      "article-b3499ea5",
+      "b3499ea5",
+      "bell-canada-breach-exposes-enterprise-customer-dat-716195",
+      "bell-canada-breach-exposes-enterprise-customer-data"
     ]
   },
   {
@@ -1125,6 +1163,24 @@ export const news: NewsBrief[] = [
       "article-50e4e0d2",
       "50e4e0d2",
       "ct-scan-unlocks-400-year-old-cryptex-padlock-9d9f5b"
+    ]
+  },
+  {
+    "slug": "cisos-increasing-trust-in-autonomous-ai-soc-agents-870a7dcb",
+    "title": "CISOs Increasing Trust in Autonomous AI SOC Agents",
+    "summary": "A recent a16z survey of CISOs at enterprises over 1,000 employees shows growing confidence in autonomous AI agents for low-risk SOC tasks. Currently 36% are comfortable with AI autonomy, projected to rise to 60% in twelve months, making AI SOC the top initiative for 2027. Organizations should adopt governance frameworks to manage risk while delegating routine security operations to AI.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
+    "publishedAt": "2026-11-20T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisos-increasing-trust-in-autonomous-ai-soc-agents",
+      "article-870a7dcb",
+      "870a7dcb",
+      "cisos-increasing-trust-in-autonomous-ai-soc-agents-4e8b45"
     ]
   },
   {
@@ -3866,6 +3922,87 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-addresses-bluetooth-driver-information-d-2a6a45dc",
+    "title": "Microsoft Addresses Bluetooth Driver Information Disclosure CVE",
+    "summary": "Microsoft has acknowledged CVE-2026-83760, an information-disclosure flaw in its Bluetooth driver. The vulnerability permits local users to read privileged data from the driver, but no active exploitation has been reported. Microsoft has released an update that mitigates the disclosure by correcting the driver’s improper handling of user-supplied data; users should apply the patch promptly.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83760",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-83760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-addresses-bluetooth-driver-information-d",
+      "article-2a6a45dc",
+      "2a6a45dc",
+      "microsoft-addresses-bluetooth-driver-information-d-7440e2",
+      "microsoft-addresses-bluetooth-driver-information-disclosure-"
+    ]
+  },
+  {
+    "slug": "microsoft-patches-eaphost-privilege-escalation-cve-1fee5bc5",
+    "title": "Microsoft Patches EAPHost Privilege Escalation CVE",
+    "summary": "Microsoft has acknowledged CVE-2026-84016, an elevation-of-privilege flaw in the Windows EAPHost service. The vulnerability allows local users to gain administrative privileges by manipulating the EAPHost service’s configuration, but no active exploitation has been observed. Microsoft has issued a patch that corrects the configuration handling; users should install the update to prevent privilege escalation.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84016",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-84016"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patches-eaphost-privilege-escalation-cve",
+      "article-1fee5bc5",
+      "1fee5bc5",
+      "microsoft-patches-eaphost-privilege-escalation-cve-744088"
+    ]
+  },
+  {
+    "slug": "cve-2026-84020-rras-elevation-of-privilege-exploit-c545df88",
+    "title": "CVE-2026-84020: RRAS Elevation of Privilege Exploit",
+    "summary": "CVE-2026-84020 is an elevation-of-privilege flaw in Windows Routing and Remote Access Service (RRAS) that allows local attackers to gain administrative rights. The vulnerability stems from improper input validation in the RRAS configuration API, enabling unauthorized privilege escalation without authentication. Microsoft has released a patch in the latest cumulative update; administrators should apply it immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84020",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-84020"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-84020-rras-elevation-of-privilege-exploit",
+      "article-c545df88",
+      "c545df88",
+      "cve-2026-84020-rras-elevation-of-privilege-exploit-744088"
+    ]
+  },
+  {
+    "slug": "cve-2026-85794-rras-information-disclosure-5c3872a3",
+    "title": "CVE-2026-85794: RRAS Information Disclosure",
+    "summary": "CVE-2026-85794 is an information-disclosure flaw in Windows Routing and Remote Access Service (RRAS) that can expose sensitive configuration data to local users. The defect arises from inadequate sanitization of RRAS logs, allowing attackers to read privileged information without authentication. Microsoft issued a patch in the latest cumulative update; users should install it promptly to mitigate data leakage.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85794",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-85794"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-85794-rras-information-disclosure",
+      "article-5c3872a3",
+      "5c3872a3",
+      "cve-2026-85794-rras-information-disclosure-743ff9"
+    ]
+  },
+  {
     "slug": "windows-devices-elevation-of-privilege-vulnerabili-de1bb0af",
     "title": "Windows Devices Elevation of Privilege Vulnerability",
     "summary": "A Windows Devices Human Interface Elevation of Privilege vulnerability (CVE-2026-113817) was acknowledged by Microsoft. The flaw allows privilege escalation via human interface device interactions, potentially enabling local attackers to gain elevated rights. Microsoft has issued an informational update; no patch is currently available, and users should monitor for future releases.",
@@ -5941,6 +6078,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "crowdstrike-detects-nginx2root-exploit-f262e131",
+    "title": "CrowdStrike Detects NGINX2Root Exploit",
+    "summary": "NGINX2Root is a privilege-escalation exploit targeting NGINX web servers, enabling attackers to gain root access. The vulnerability exploits a buffer overflow in the NGINX configuration parser, allowing unauthenticated code execution and data exfiltration. CrowdStrike recommends applying the latest NGINX security patches and enabling Falcon’s real-time monitoring to block exploitation attempts. The flaw is tracked as CVE-2026-123007.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-nginx2root-cve-2026-123007/",
+    "publishedAt": "2026-11-19T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-123007"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-detects-nginx2root-exploit",
+      "article-f262e131",
+      "f262e131",
+      "crowdstrike-detects-nginx2root-exploit-1ffbb5"
+    ]
+  },
+  {
     "slug": "crowdstrike-tracks-java4shell-post-exploitation-ac-3c4ad1e9",
     "title": "CrowdStrike Tracks Java4Shell Post-Exploitation Activity",
     "summary": "CrowdStrike reports exposure and post-exploitation activity tied to Java4Shell, tracked as CVE-2026-114938, affecting Java-based environments. The available advisory does not specify the root-cause mechanism, CVSS score, or whether exploitation is zero-day, but it confirms post-compromise activity. Security teams should identify exposed Java assets, apply vendor fixes when available, and investigate for post-exploitation indicators.",
@@ -7370,6 +7527,24 @@ export const news: NewsBrief[] = [
       "8db0ac7a",
       "hackers-use-hidden-cron-jobs-to-reinstall-malware-63e5fa",
       "hackers-use-hidden-cron-jobs-to-reinstall-malware-on-firewal"
+    ]
+  },
+  {
+    "slug": "apple-releases-homeview-27-2-1-security-update-49d9a416",
+    "title": "Apple Releases HomeView 27.2.1 Security Update",
+    "summary": "Apple released HomeView 27.2.1, a security update for its home automation software, addressing several critical flaws. The patch fixes multiple undisclosed vulnerabilities that could enable remote code execution, privilege escalation, or unauthorized data access. Users are advised to download and install the update through the HomeView app or system settings to ensure device integrity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11182026a",
+    "publishedAt": "2026-11-18T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-homeview-27-2-1-security-update",
+      "article-49d9a416",
+      "49d9a416",
+      "apple-releases-homeview-27-2-1-security-update-5bd3d7"
     ]
   },
   {
@@ -9501,198 +9676,6 @@ export const news: NewsBrief[] = [
       "article-1330fc0e",
       "1330fc0e",
       "http-3-rats-target-governments-via-tgr-sta-0049-b19110"
-    ]
-  },
-  {
-    "slug": "nist-releases-post-quantum-crypto-guidance-daab2569",
-    "title": "NIST Releases Post-Quantum Crypto Guidance",
-    "summary": "NIST issued new guidance on post-quantum cryptography, outlining recommended algorithms and deployment considerations for enterprise systems. The advisory highlights potential compatibility issues with legacy protocols and stresses the need for updated key management practices, but does not disclose a specific vulnerability. Security teams should review the guidance, adjust telemetry, and apply any recommended configuration changes to future-proof cryptographic infrastructure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/nist-finalizes-post-quantum-cryptography-guidance-gao-o",
-    "publishedAt": "2026-11-18T01:13:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nist-releases-post-quantum-crypto-guidance",
-      "article-daab2569",
-      "daab2569",
-      "nist-releases-post-quantum-crypto-guidance-6881a2"
-    ]
-  },
-  {
-    "slug": "barracuda-cloud-breach-via-artex-ai-a48b9890",
-    "title": "Barracuda Cloud Breach via ARTEX AI",
-    "summary": "Barracuda experienced a cloud breach facilitated by the ARTEX AI platform, exposing sensitive customer data. The attack leveraged unauthorized API access and credential reuse, allowing attackers to exfiltrate data without detection. Barracuda has issued a patch and recommends revoking compromised credentials, tightening API permissions, and monitoring logs to prevent further compromise.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/barracuda-links-cloud-breach-to-artex-ai-powered-cybera",
-    "publishedAt": "2026-11-18T01:11:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "barracuda-cloud-breach-via-artex-ai",
-      "article-a48b9890",
-      "a48b9890",
-      "barracuda-cloud-breach-via-artex-ai-53c52a"
-    ]
-  },
-  {
-    "slug": "charges-dropped-against-peraire-bueno-brothers-in-bca700e2",
-    "title": "Charges Dropped Against Peraire-Bueno Brothers in Ethereum Heist",
-    "summary": "Charges against the Peraire-Bueno brothers in an Ethereum heist case have been dropped, according to a law enforcement intelligence update. The advisory points to court findings, threat actor profiles, and defensive controls but provides no technical exploit details or confirmed victim impact. Security teams should track the legal outcome and use the case materials to refine Ethereum-related monitoring and controls.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/court-clears-brothers-of-25-million-ethereum-crypto-hei",
-    "publishedAt": "2026-11-18T01:10:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "charges-dropped-against-peraire-bueno-brothers-in",
-      "article-bca700e2",
-      "bca700e2",
-      "charges-dropped-against-peraire-bueno-brothers-in-1938b7",
-      "charges-dropped-against-peraire-bueno-brothers-in-ethereum-h"
-    ]
-  },
-  {
-    "slug": "optimizely-signup-flaw-hits-salesforce-zoom-via-ma-49ec9b40",
-    "title": "Optimizely Signup Flaw Hits Salesforce, Zoom via Malicious JS",
-    "summary": "A flaw in Optimizely's signup flow is linked to malicious JavaScript affecting Salesforce and Zoom, according to a CyberNews AI alert. The advisory provides no CVE identifier or root-cause specifics, but frames the issue as critical and calls for telemetry review and detection-rule hunting. Security teams should review root-cause telemetry, deploy relevant detection rules, and apply the vendor patch promptly.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/optimizely-hack-infected-cnn-fox-news-bbc-salesforce-si",
-    "publishedAt": "2026-11-18T01:09:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "optimizely-signup-flaw-hits-salesforce-zoom-via-ma",
-      "article-49ec9b40",
-      "49ec9b40",
-      "optimizely-signup-flaw-hits-salesforce-zoom-via-ma-135d09",
-      "optimizely-signup-flaw-hits-salesforce-zoom-via-malicious-js"
-    ]
-  },
-  {
-    "slug": "optimizely-flaw-used-to-inject-malware-into-178-to-ed0badd2",
-    "title": "Optimizely Flaw Used to Inject Malware Into 178 Top Websites",
-    "summary": "Attackers exploited an Optimizely vulnerability to inject data-stealing malware into at least 178 top websites, including BBC, CNN, Equifax, Ledger, and Zoom. Weak third-party content-source enforcement let malicious scripts reach visitors over 24 hours, delivering cryptocurrency clippers, card skimmers, and iOS malware. Operators should audit third-party scripts, enforce strict content-source controls, revoke compromised Optimizely tokens, and monitor for injected payloads.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/optimizely-supply-chain-attack",
-    "publishedAt": "2026-11-18T00:17:00.921Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Krebs on Security",
-        "sourceUrl": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/"
-      }
-    ],
-    "aliases": [
-      "optimizely-flaw-used-to-inject-malware-into-178-to",
-      "article-ed0badd2",
-      "ed0badd2",
-      "optimizely-flaw-used-to-inject-malware-into-178-to-1e1609",
-      "optimizely-flaw-used-to-inject-malware-into-178-top-websites"
-    ]
-  },
-  {
-    "slug": "nginx2root-vulnerabilities-patched-by-vendor-caa26e2b",
-    "title": "NGINX2Root Vulnerabilities Patched by Vendor",
-    "summary": "Nginx released patches for the critical NGINX2Root vulnerabilities that could allow attackers to gain root privileges on affected servers. The flaws stem from improper handling of user-supplied configuration data, enabling local privilege escalation without authentication. Administrators should apply the vendor’s patch immediately and verify that configuration files are sanitized to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Sophos Threat Research",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/patches-released-for-critical-nginx2root-vulnerabilities",
-    "publishedAt": "2026-11-18T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nginx2root-vulnerabilities-patched-by-vendor",
-      "article-caa26e2b",
-      "caa26e2b",
-      "nginx2root-vulnerabilities-patched-by-vendor-3cd96e"
-    ]
-  },
-  {
-    "slug": "cisa-alerts-to-java4shell-cve-2026-114938-vulnerab-a3fdbd8e",
-    "title": "CISA Alerts to Java4Shell CVE-2026-114938 Vulnerability",
-    "summary": "CISA warned that the AI-discovered Java4Shell flaw (CVE-2026-114938) can enable unauthenticated attackers to take over Java servers without a password. The vulnerability exploits a deserialization flaw in the Java Runtime Environment, allowing remote code execution with a CVSS score of 9.8. Administrators must apply the vendor-issued patch immediately, disable remote deserialization, and monitor for anomalous activity.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/cisa-issues-java4shell-alert",
-    "publishedAt": "2026-11-18T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-alerts-to-java4shell-cve-2026-114938-vulnerab",
-      "article-a3fdbd8e",
-      "a3fdbd8e",
-      "cisa-alerts-to-java4shell-cve-2026-114938-vulnerab-382eef",
-      "cisa-alerts-to-java4shell-cve-2026-114938-vulnerability"
-    ]
-  },
-  {
-    "slug": "java4shell-cve-2026-114938-exploitation-attempts-d-5eb088cc",
-    "title": "Java4Shell CVE-2026-114938 Exploitation Attempts Detected",
-    "summary": "GreyNoise monitors scanning and exploitation attempts targeting the CVE-2026-114938 memory-corruption flaw in OpenJDK’s Base64 decoder. The heap-based buffer overflow can be triggered remotely by crafted Base64 input, potentially enabling arbitrary code execution. Oracle and OpenJDK have released patches; administrators should apply the latest updates or disable Base64 decoding until mitigated.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "GreyNoise Labs",
-    "sourceUrl": "https://www.greynoise.io/blog/global-event-java4shell-cve-2026-114938-live-activity-report",
-    "publishedAt": "2026-11-18T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "java4shell-cve-2026-114938-exploitation-attempts-d",
-      "article-5eb088cc",
-      "5eb088cc",
-      "java4shell-cve-2026-114938-exploitation-attempts-d-7e7068",
-      "java4shell-cve-2026-114938-exploitation-attempts-detected"
-    ]
-  },
-  {
-    "slug": "java4shell-cve-2026-114938-enables-remote-code-exe-69aba8fc",
-    "title": "Java4Shell CVE-2026-114938 Enables Remote Code Execution in Jira, Jenkins, Keycloak",
-    "summary": "Java4Shell (CVE-2026-114938) is a critical flaw in Java 17+ that permits unauthenticated remote code execution on Jira, Jenkins, and Keycloak. It exploits a heap-based buffer overflow in the Base64 decoder, letting attackers run arbitrary code on affected servers. Oracle and OpenJDK have issued critical patches; admins should update immediately and limit exposed management interfaces.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938",
-    "publishedAt": "2026-11-17T23:30:00.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/java4shell/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
-      },
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/"
-      }
-    ],
-    "aliases": [
-      "java4shell-cve-2026-114938-enables-remote-code-exe",
-      "article-69aba8fc",
-      "69aba8fc",
-      "java4shell-cve-2026-114938-enables-remote-code-exe-2ee514",
-      "java4shell-cve-2026-114938-enables-remote-code-execution-in-"
     ]
   }
 ];
