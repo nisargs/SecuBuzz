@@ -609,6 +609,21 @@
     - Tap Routing Invariant: When `--url` is omitted, `articleId` / `articleUrl` is set to null, allowing the notification tap to directly foreground the root News Briefs tab rather than triggering an invalid article modal route.
     - Fleet Delivery: Successfully broadcast to all 36 active subscribed Android devices with 36/36 `ok` tickets returned from Expo Push API.
     - Ticket Hygiene: Integrated automatic Cloudflare D1 deactivation (`is_active = 0`) for dead tokens returning `DeviceNotRegistered`.
+  - **Google Play Rating & Review Fleet Broadcast (Nov 21, 2026 - Commit 8246f31)**:
+    - **Script**: `scripts/send_custom_push.mjs`.
+    - **Payload Architecture**:
+      - Title: `"Note from Developer"`
+      - Body: `"If you are finding SecuBuzz helpful, please drop a quick review and rating on Google Play to help us grow"`
+      - Action Link: `"https://play.google.com/store/apps/details?id=com.secubuzz.app"`
+      - Payload Metadata: `category: 'COMMUNITY'`, `source: 'Google Play Store'`, `severity: 'HIGH'`, `articleId: linkUrl`.
+    - **Tap Routing & Store Launch Mechanics**:
+      - Setting `articleId: linkUrl` enables Expo Router to navigate cleanly to the dedicated Developer Note screen upon tap.
+      - Tapping the action button (`READ ORIGINAL` / `Google Play Store`) directly launches the official SecuBuzz listing on the Google Play Store on device.
+    - **D1 Direct REST Query Upgrade**:
+      - Upgraded `getActiveTokens()` in `scripts/send_custom_push.mjs` to query the Cloudflare D1 REST API directly using local OAuth credentials (`default.toml`), completely eliminating Windows CLI sandbox log permissions (`EPERM`) and child-process execution errors.
+    - **Fleet Delivery & Telemetry**:
+      - **Target Active Fleet**: **63 devices** (all-time fleet high across 177+ countries: 25 on v1.1.0, 13 on v1.0.4, 16 on v1.0.3, 9 on v1.0.2).
+      - **Expo Push Service Delivery**: **63 / 63 successfully sent (0 failed, 100% ok tickets)**.
   - **User & Fleet Telemetry Snapshot (Oct 27 vs Oct 28)**:
     - Oct 27 (Full Day): 944 unique visitors, 2,072 page views, 8,605 requests, 6 Play Store clicks, 3 active mobile devices seen, 15 notification opens.
     - Oct 28 (Mid-day): 924 unique visitors, 843 page views, 3,077 requests, 17 Play Store clicks, 9 active mobile devices seen (3x increase post-broadcast), 8 notification opens.
