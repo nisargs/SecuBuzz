@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rackspace-spot-breach-exposes-customer-kubernetes-49607481",
+    "title": "Rackspace Spot Breach Exposes Customer Kubernetes Secrets",
+    "summary": "Hackers breached Rackspace Spot cloud platform using compromised credentials, deploying unauthorized workloads and accessing Kubernetes secrets in customer clusters. The breach leveraged stolen credentials to read sensitive cluster secrets, exposing potential data leakage without exploiting a known software flaw. Rackspace urged customers to rotate compromised credentials, audit workloads, and apply any available platform updates to mitigate the exposure.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+    "publishedAt": "2026-11-21T22:59:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rackspace-spot-breach-exposes-customer-kubernetes",
+      "article-49607481",
+      "49607481",
+      "rackspace-spot-breach-exposes-customer-kubernetes-43072e",
+      "rackspace-spot-breach-exposes-customer-kubernetes-secrets"
+    ]
+  },
+  {
     "slug": "red-hat-issues-critical-update-for-php-8-2-ba37de30",
     "title": "Red Hat Issues Critical Update for PHP 8.2",
     "summary": "Red Hat released a critical security update for the php:8.2 module on RHEL 9.8 Extended Update Support, addressing high-impact vulnerabilities. The flaws, listed in CVE references, enable remote code execution via malformed input, with CVSS scores up to 9.8. Red Hat recommends applying the update immediately; no workaround exists, and users should verify module integrity post-installation.",
@@ -9668,25 +9687,6 @@ export const news: NewsBrief[] = [
       "82dc3adb",
       "litellm-command-injection-rce-requires-authenticat-77f343",
       "litellm-command-injection-rce-requires-authentication"
-    ]
-  },
-  {
-    "slug": "krita-psb-integer-overflow-enables-remote-code-exe-96bd03cf",
-    "title": "Krita PSB Integer Overflow Enables Remote Code Execution",
-    "summary": "A Krita PSB file parsing integer overflow flaw permits remote code execution when a user opens a malicious file or visits a malicious page. Rated CVSS 7.8, the flaw requires user interaction and lets attackers run arbitrary code, but no active exploitation has been reported. Krita should issue a patch; users should avoid opening files until an update is available.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1013/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "krita-psb-integer-overflow-enables-remote-code-exe",
-      "article-96bd03cf",
-      "96bd03cf",
-      "krita-psb-integer-overflow-enables-remote-code-exe-77f33c",
-      "krita-psb-integer-overflow-enables-remote-code-execution"
     ]
   }
 ];

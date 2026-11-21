@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 22:43:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 23:43:17 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Rackspace Spot Breach Exposes Customer Kubernetes Secrets</title>
+      <link>https://secubuzz.com/news/rackspace-spot-breach-exposes-customer-kubernetes-49607481</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rackspace-spot-breach-exposes-customer-kubernetes-49607481</guid>
+      <description><![CDATA[Hackers breached Rackspace Spot cloud platform using compromised credentials, deploying unauthorized workloads and accessing Kubernetes secrets in customer clusters. The breach leveraged stolen credentials to read sensitive cluster secrets, exposing potential data leakage without exploiting a known software flaw. Rackspace urged customers to rotate compromised credentials, audit workloads, and apply any available platform updates to mitigate the exposure.]]></description>
+      <pubDate>Sat, 21 Nov 2026 22:59:58 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Red Hat Issues Critical Update for PHP 8.2</title>
       <link>https://secubuzz.com/news/red-hat-issues-critical-update-for-php-8-2-ba37de30</link>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 16:41:20 GMT</pubDate>
       <source url="https://arcticwolf.com/resources/blog/ai-driven-attacks-are-here-five-steps-cisos-should-take-now/">Arctic Wolf</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Debian Packages Retain Distrusted CA Certificates After Updates</title>
-      <link>https://secubuzz.com/news/debian-packages-retain-distrusted-ca-certificates-ae93cb75</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/debian-packages-retain-distrusted-ca-certificates-ae93cb75</guid>
-      <description><![CDATA[A Debian package mirror scan found over 100 packages still containing distrusted CA certificates after their removal from the system trust store. Debian developer Steve McIntyre posted the results on November 19, showing package-level certificate copies persist despite trust-store updates.]]></description>
-      <pubDate>Fri, 20 Nov 2026 16:39:48 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/debian-packages-ca-certificates/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

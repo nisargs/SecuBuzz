@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+    "title": "Rackspace Spot Breach Exposes Customer Kubernetes Secrets",
+    "headline": "Rackspace Spot Breach Exposes Customer Kubernetes Secrets",
+    "summary": "Hackers breached Rackspace Spot cloud platform using compromised credentials, deploying unauthorized workloads and accessing Kubernetes secrets in customer clusters. The breach leveraged stolen credentials to read sensitive cluster secrets, exposing potential data leakage without exploiting a known software flaw. Rackspace urged customers to rotate compromised credentials, audit workloads, and apply any available platform updates to mitigate the exposure.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-21T22:59:58.000Z",
+    "ingestedAt": "2026-11-21T23:43:12.612Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:101253",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101253",
     "title": "Red Hat Issues Critical Update for PHP 8.2",
@@ -8325,22 +8341,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1031/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1013/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1013/",
-    "title": "Krita PSB Integer Overflow Enables Remote Code Execution",
-    "headline": "Krita PSB Integer Overflow Enables Remote Code Execution",
-    "summary": "A Krita PSB file parsing integer overflow flaw permits remote code execution when a user opens a malicious file or visits a malicious page. Rated CVSS 7.8, the flaw requires user interaction and lets attackers run arbitrary code, but no active exploitation has been reported. Krita should issue a patch; users should avoid opening files until an update is available.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "ingestedAt": "2026-11-19T02:44:11.736Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1013/",
     "additionalSources": []
   }
 ]

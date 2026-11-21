@@ -5944,5 +5944,6 @@
   "https://access.redhat.com/errata/RHSA-2026:101251",
   "https://access.redhat.com/errata/RHSA-2026:101253",
   "https://access.redhat.com/errata/RHSA-2026:101252",
-  "https://access.redhat.com/errata/RHSA-2026:100991"
+  "https://access.redhat.com/errata/RHSA-2026:100991",
+  "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/"
 ]
