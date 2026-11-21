@@ -6658,5 +6658,8 @@
   "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-nginx2root-cve-2026-123007/",
   "https://developer.apple.com/news/releases/?id=11182026a",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84020",
-  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85794"
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85794",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88151",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85910",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87698"
 ]

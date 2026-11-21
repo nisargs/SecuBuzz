@@ -3922,6 +3922,67 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "excel-information-disclosure-cve-2026-88151-5274eaf4",
+    "title": "Excel Information Disclosure CVE-2026-88151",
+    "summary": "Microsoft Office Excel contains an information disclosure flaw (CVE-2026-88151) that could allow attackers to read sensitive data from documents via the API. The vulnerability arises from improper handling of metadata fields, but no exploitation evidence or public PoC exists. Microsoft has not released a patch; the issue remains an informational acknowledgement.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88151",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-88151"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "excel-information-disclosure-cve-2026-88151",
+      "article-5274eaf4",
+      "5274eaf4",
+      "excel-information-disclosure-cve-2026-88151-743eb3"
+    ]
+  },
+  {
+    "slug": "staterepository-api-info-disclosure-cve-2026-85910-6482ac57",
+    "title": "StateRepository API Info Disclosure CVE-2026-85910",
+    "summary": "Microsoft Windows StateRepository API contains an information disclosure flaw (CVE-2026-85910) that could expose configuration data to unauthenticated users. The flaw stems from inadequate input validation in the API, but no active exploitation or PoC has been reported. Microsoft has not issued a patch; the issue is currently an informational acknowledgement.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85910",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-85910"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "staterepository-api-info-disclosure-cve-2026-85910",
+      "article-6482ac57",
+      "6482ac57",
+      "staterepository-api-info-disclosure-cve-2026-85910-743ff2"
+    ]
+  },
+  {
+    "slug": "remote-access-service-info-disclosure-cve-2026-876-1970e5db",
+    "title": "Remote Access Service Info Disclosure CVE-2026-87698",
+    "summary": "Microsoft Windows Remote Access Service Infrastructure has an information disclosure vulnerability (CVE-2026-87698) that could allow attackers to read sensitive configuration data. The flaw results from improper sanitization of service metadata, but no exploitation evidence or public PoC is available. Microsoft has not released a patch; the issue remains an informational acknowledgement.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87698",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-87698"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "remote-access-service-info-disclosure-cve-2026-876",
+      "article-1970e5db",
+      "1970e5db",
+      "remote-access-service-info-disclosure-cve-2026-876-743f14",
+      "remote-access-service-info-disclosure-cve-2026-87698"
+    ]
+  },
+  {
     "slug": "microsoft-addresses-bluetooth-driver-information-d-2a6a45dc",
     "title": "Microsoft Addresses Bluetooth Driver Information Disclosure CVE",
     "summary": "Microsoft has acknowledged CVE-2026-83760, an information-disclosure flaw in its Bluetooth driver. The vulnerability permits local users to read privileged data from the driver, but no active exploitation has been reported. Microsoft has released an update that mitigates the disclosure by correcting the driver’s improper handling of user-supplied data; users should apply the patch promptly.",
@@ -9621,61 +9682,6 @@ export const news: NewsBrief[] = [
       "46a332cd",
       "microsoft-s-agent-framework-pypi-package-hacked-to-262c9d",
       "microsoft-s-agent-framework-pypi-package-hacked-to-steal-azu"
-    ]
-  },
-  {
-    "slug": "nsanet-classified-network-experiences-operational-186d0f4f",
-    "title": "NSANet Classified Network Experiences Operational Outage",
-    "summary": "A classified internal network used by NSA employees, NSANet, suffered an operational outage. The outage disrupted communications across the agency, though no evidence of a security breach or vulnerability was reported. Defense officials confirmed the issue and are working to restore full functionality; no patch or mitigation is required at this time.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/",
-    "publishedAt": "2026-11-18T02:15:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nsanet-classified-network-experiences-operational",
-      "article-186d0f4f",
-      "186d0f4f",
-      "nsanet-classified-network-experiences-operational-69b9d8",
-      "nsanet-classified-network-experiences-operational-outage"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-podcast-released-nov-18-d63e9f8c",
-    "title": "ISC Stormcast Podcast Released Nov 18",
-    "summary": "The SANS Internet Storm Center released its weekly Stormcast for Wednesday, November 18, 2026, summarizing recent cyber events. The broadcast covers emerging threats, vulnerability trends, and defensive recommendations, providing analysts with actionable intelligence. Listeners can access the podcast via the ISC website or RSS feed, with no security patches or vulnerabilities disclosed.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33528",
-    "publishedAt": "2026-11-18T02:00:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-podcast-released-nov-18",
-      "article-d63e9f8c",
-      "d63e9f8c",
-      "isc-stormcast-podcast-released-nov-18-57dd81"
-    ]
-  },
-  {
-    "slug": "http-3-rats-target-governments-via-tgr-sta-0049-1330fc0e",
-    "title": "HTTP/3 RATs Target Governments via TGR-STA-0049",
-    "summary": "TGR-STA-0049 describes a remote access trojan campaign that uses HTTP/3 to target government networks. The trojan exploits the HTTP/3 protocol to establish covert channels, enabling attackers to exfiltrate data and maintain persistence without detection. Security teams should deploy detection rules for HTTP/3 traffic anomalies, review telemetry, and apply vendor patches or mitigations as soon as available.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/quic-and-covert-novel-http-3-powered-rats-target-southe",
-    "publishedAt": "2026-11-18T01:14:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "http-3-rats-target-governments-via-tgr-sta-0049",
-      "article-1330fc0e",
-      "1330fc0e",
-      "http-3-rats-target-governments-via-tgr-sta-0049-b19110"
     ]
   }
 ];
