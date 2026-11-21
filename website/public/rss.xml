@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 02:32:42 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 02:50:29 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>WhatsApp Android Flaws Could Let Hackers Delete Users’ Files and Expose IP Addresses</title>
+      <link>https://secubuzz.com/news/whatsapp-android-flaws-could-let-hackers-delete-us-5e5d25e8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/whatsapp-android-flaws-could-let-hackers-delete-us-5e5d25e8</guid>
+      <description><![CDATA[WhatsApp’s November 2026 security update describes three flaws that could let attackers delete files stored by WhatsApp on Android, expose a user’s IP address, or bypass a security check for Meta AI’s Private Processing service. Of the three, only the IP exposure flaw was flagged for possible abuse.]]></description>
+      <pubDate>Sat, 21 Nov 2026 02:36:55 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/whatsapp-android-flaws/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>CTO of ‘RansomwareHelp’ Indicted for Wire Fraud</title>
       <link>https://secubuzz.com/news/cto-of-ransomwarehelp-indicted-for-wire-fraud-9b21c3c1</link>
@@ -204,6 +213,15 @@
       <pubDate>Fri, 20 Nov 2026 16:41:20 GMT</pubDate>
       <source url="https://arcticwolf.com/resources/blog/ai-driven-attacks-are-here-five-steps-cisos-should-take-now/">Arctic Wolf</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Debian Packages Retain Distrusted CA Certificates After Updates</title>
+      <link>https://secubuzz.com/news/debian-packages-retain-distrusted-ca-certificates-ae93cb75</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/debian-packages-retain-distrusted-ca-certificates-ae93cb75</guid>
+      <description><![CDATA[A Debian package mirror scan found over 100 packages still containing distrusted CA certificates after their removal from the system trust store. Debian developer Steve McIntyre posted the results on November 19, showing package-level certificate copies persist despite trust-store updates.]]></description>
+      <pubDate>Fri, 20 Nov 2026 16:39:48 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/debian-packages-ca-certificates/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>WhatsApp Patches CVE-2026-23871 Scam Vulnerability</title>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 12:38:55 GMT</pubDate>
       <source url="https://www.securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday/">SecurityWeek</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>OpenSSL Base64 Overflow Corrupts Memory</title>
-      <link>https://secubuzz.com/news/openssl-base64-overflow-corrupts-memory-10f22820</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openssl-base64-overflow-corrupts-memory-10f22820</guid>
-      <description><![CDATA[A critical heap buffer overflow in OpenSSL’s Base64 encoding function lets attackers corrupt memory when handling large inputs. CVE-2026-121481 scores 9.8 on CVSS 3.1, marking it a high-severity flaw that can cause denial of service or remote code execution. OpenSSL released a patch; users should upgrade to the latest version or apply the fix to prevent exploitation.]]></description>
-      <pubDate>Fri, 20 Nov 2026 12:34:30 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/openssl-heap-buffer-overflow/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Armory Castle Exploits VMware vCenter CVE-2026-123890</title>
-      <link>https://secubuzz.com/news/armory-castle-exploits-vmware-vcenter-cve-2026-123-d6d0a5d8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/armory-castle-exploits-vmware-vcenter-cve-2026-123-d6d0a5d8</guid>
-      <description><![CDATA[Armory Castle, a China-linked espionage group, exploited VMware vCenter (CVE-2026-123890) since early September, before Broadcom released a fix. The CVSS 9.8 flaw permits unauthenticated remote attackers to obtain full administrator sessions on vCenter Server, controlling virtual infrastructure. Broadcom issued a patch in November; organizations must apply it immediately and verify vCenter Server is no longer exposed.]]></description>
-      <pubDate>Fri, 20 Nov 2026 12:30:19 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/20/vmware-vcenter-zero-day-cve-2026-123890-exploited/">Help Net Security</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

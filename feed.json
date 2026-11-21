@@ -1,5 +1,22 @@
 [
   {
+    "id": "https://cybersecuritynews.com/whatsapp-android-flaws/",
+    "sourceUrl": "https://cybersecuritynews.com/whatsapp-android-flaws/",
+    "title": "WhatsApp Android Flaws Could Let Hackers Delete Users’ Files and Expose IP Addresses",
+    "headline": "WhatsApp Android Flaws Could Let Hackers Delete Users’ Files and Expose IP Addresses",
+    "summary": "WhatsApp’s November 2026 security update describes three flaws that could let attackers delete files stored by WhatsApp on Android, expose a user’s IP address, or bypass a security check for Meta AI’s Private Processing service. Of the three, only the IP exposure flaw was flagged for possible abuse.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-21T02:36:55.000Z",
+    "ingestedAt": "2026-11-21T02:48:17.917Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
     "sourceUrl": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
     "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
@@ -362,6 +379,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://arcticwolf.com/resources/blog/ai-driven-attacks-are-here-five-steps-cisos-should-take-now/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/debian-packages-ca-certificates/",
+    "sourceUrl": "https://cybersecuritynews.com/debian-packages-ca-certificates/",
+    "title": "Debian Packages Retain Distrusted CA Certificates After Updates",
+    "headline": "Debian Packages Retain Distrusted CA Certificates After Updates",
+    "summary": "A Debian package mirror scan found over 100 packages still containing distrusted CA certificates after their removal from the system trust store. Debian developer Steve McIntyre posted the results on November 19, showing package-level certificate copies persist despite trust-store updates.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-20T16:39:48.000Z",
+    "ingestedAt": "2026-11-21T02:50:04.661Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/debian-packages-ca-certificates/",
     "additionalSources": []
   },
   {
@@ -3290,6 +3323,38 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/jpmorgan-third-party-data-breach/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69918",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69918",
+    "title": "Microsoft Updates CVE-2026-69918 Core Messaging Acknowledgment",
+    "headline": "Microsoft Updates CVE-2026-69918 Core Messaging Acknowledgment",
+    "summary": "Microsoft updated an acknowledgement for CVE-2026-69918, a Windows Core Messaging elevation-of-privilege vulnerability. The advisory description states only an informational acknowledgement change, with no root cause, exploitability status, or impact details disclosed. Security teams should monitor Microsoft's advisory for further revised severity, affected versions, and the patch guidance before prioritizing remediation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "ingestedAt": "2026-11-21T02:50:04.661Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69918",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70223",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70223",
+    "title": "Microsoft Updates CVE-2026-70223 Console Driver Acknowledgment",
+    "headline": "Microsoft Updates CVE-2026-70223 Console Driver Acknowledgment",
+    "summary": "Microsoft updated an acknowledgement for CVE-2026-70223, a Windows Console Driver elevation-of-privilege vulnerability. The advisory description states only an informational acknowledgement change, with no root cause, exploitability status, or impact details disclosed. Security teams should monitor Microsoft's advisory for further revised severity, affected versions, and the patch guidance before prioritizing remediation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "ingestedAt": "2026-11-21T02:50:04.661Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70223",
     "additionalSources": []
   },
   {
@@ -8309,72 +8374,6 @@
         "sourceUrl": "https://blog.talosintelligence.com/java4shell/"
       }
     ],
-    "isFallback": true
-  },
-  {
-    "id": "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi",
-    "sourceUrl": "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi",
-    "title": "Microsoft agent-framework Compromised: Credential Stealer Targets Azure and CI Pipelines",
-    "headline": "Microsoft agent-framework Compromised: Credential Stealer Targets Azure and CI Pipelines",
-    "summary": "On November 17, 2026 at 20:35 UTC, versions 1.26.1 & 1.26.2 of the Microsoft PyPI package agent-framework were published with an added credential stealer. The package gets almost 200k downloads a month. The malicious versions have since been quarantined.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Wiz Research",
-    "publishedAt": "2026-11-17T22:03:37.000Z",
-    "ingestedAt": "2026-11-17T22:58:51.849Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://research.checkpoint.com/2026/the-state-of-ransomware-q3-2026/",
-    "sourceUrl": "https://research.checkpoint.com/2026/the-state-of-ransomware-q3-2026/",
-    "title": "Ransomware Fragmentation in Q3 2026",
-    "headline": "Ransomware Fragmentation in Q3 2026",
-    "summary": "Check Point Research released a Q3 2026 ransomware activity report showing record attack volumes. The analysis notes a fragmentation trend, with more ransomware brands targeting victims, top groups holding a smaller share, and major organizations resisting high ransom demands. The report provides industry insights but no specific vulnerability or patch is referenced.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Check Point Research",
-    "publishedAt": "2026-11-17T22:01:28.000Z",
-    "ingestedAt": "2026-11-19T00:47:45.058Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://research.checkpoint.com/2026/the-state-of-ransomware-q3-2026/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
-    "title": "Docker Hub Images Leak Secrets, Stolen Quickly",
-    "headline": "Docker Hub Images Leak Secrets, Stolen Quickly",
-    "summary": "Credentials and access secrets exposed in public Docker Hub images are extracted and exploited by attackers within eight seconds of publication. The flaw stems from improper handling of sensitive data in container images, letting attackers harvest secrets and compromise services. Publishers should remove secrets from images, enforce secret scanning, and apply least-privilege policies; teams must monitor registries for exposed credentials.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-17T21:27:17.000Z",
-    "ingestedAt": "2026-11-17T22:58:58.311Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:100552",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100552",
-    "title": "RHSA-2026:100552: Critical: Red Hat JBoss Core Services Apache HTTP Server 2.4.62 SP7 security update",
-    "headline": "RHSA-2026:100552: Critical: Red Hat JBoss Core Services Apache HTTP Server 2.4.62 SP7 security update",
-    "summary": "Red Hat JBoss Core Services Apache HTTP Server 2.4.62 Service Pack 7 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-17T21:12:42.000Z",
-    "ingestedAt": "2026-11-18T03:44:03.892Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
     "isFallback": true
   }
 ]
