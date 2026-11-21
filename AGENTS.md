@@ -624,6 +624,10 @@
     - **Fleet Delivery & Telemetry**:
       - **Target Active Fleet**: **63 devices** (all-time fleet high across 177+ countries: 25 on v1.1.0, 13 on v1.0.4, 16 on v1.0.3, 9 on v1.0.2).
       - **Expo Push Service Delivery**: **63 / 63 successfully sent (0 failed, 100% ok tickets)**.
+  - **Stripe Support Link Migration (Nov 21, 2026)**:
+    - **Single Source of Truth**: Updated `SUPPORT_TARGET_URL` in `worker/src/index.ts` to `https://buy.stripe.com/dRm4gB7cc5kY6JXbTicIE00`.
+    - **Cloudflare Worker Deploy**: Deployed Version ID `165b6d71-6789-4b16-8ea2-0991ebd38a03`.
+    - **Telemetry & Routing Invariant**: Preserved D1 `support_clicks` logging on `secubuzz.com/support` while cleanly passing attribution tags (`?src=footer_card`, `?src=footer_nav`) to Stripe. Live tested HTTP 302 end-to-end.
   - **User & Fleet Telemetry Snapshot (Oct 27 vs Oct 28)**:
     - Oct 27 (Full Day): 944 unique visitors, 2,072 page views, 8,605 requests, 6 Play Store clicks, 3 active mobile devices seen, 15 notification opens.
     - Oct 28 (Mid-day): 924 unique visitors, 843 page views, 3,077 requests, 17 Play Store clicks, 9 active mobile devices seen (3x increase post-broadcast), 8 notification opens.

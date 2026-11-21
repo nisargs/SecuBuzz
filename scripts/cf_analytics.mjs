@@ -433,7 +433,7 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
     }
 
     if (supportClicks) {
-      console.log('\n--- Ko-fi Support Link Clicks (/support Telemetry) ---');
+      console.log('\n--- Stripe Support Link Clicks (/support Telemetry) ---');
       console.log(`  Total Clicks: ${supportClicks.totalClicks || 0} | Unique Clickers: ${supportClicks.uniqueClickers || 0} | Repeat Clicks: ${supportClicks.repeatClicks || 0}`);
       
       if (supportClicks.breakdown && supportClicks.breakdown.length > 0) {

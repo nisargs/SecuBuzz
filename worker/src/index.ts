@@ -27,7 +27,7 @@ const CORS_HEADERS = {
 };
 
 // Single source of truth for the /support redirect destination (kept in one config spot)
-export const SUPPORT_TARGET_URL = 'https://ko-fi.com/secubuzz';
+export const SUPPORT_TARGET_URL = 'https://buy.stripe.com/dRm4gB7cc5kY6JXbTicIE00';
 
 // Single source of truth for founder / LinkedIn profile redirect destination with UTM attribution
 export const LINKEDIN_TARGET_URL =
@@ -1131,7 +1131,7 @@ export default {
         });
       }
 
-      // Public Support Redirect (/support) -> Records click telemetry in D1 and redirects to Ko-fi
+      // Public Support Redirect (/support) -> Records click telemetry in D1 and redirects to Stripe
       if (url.pathname === '/support' || url.pathname === '/support/') {
         const source = (url.searchParams.get('src') || url.searchParams.get('source') || 'direct').slice(0, 64);
         const country = request.headers.get('cf-ipcountry') || 'XX';
