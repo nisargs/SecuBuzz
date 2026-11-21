@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "signal-blocks-ai-screenshot-access-3d4009ac",
+    "title": "Signal Blocks AI Screenshot Access",
+    "summary": "Signal introduced a screenshot block on Android and iOS to stop AI agents from reading private chats. The feature targets agentic systems in iOS 27 and Android builds that detect AI assistants attempting to capture Signal messages, though the protection is incomplete.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+    "publishedAt": "2026-11-21T08:49:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "signal-blocks-ai-screenshot-access",
+      "article-3d4009ac",
+      "3d4009ac",
+      "signal-blocks-ai-screenshot-access-7ae7f9"
+    ]
+  },
+  {
+    "slug": "cisa-adds-vmware-cisco-apache-flaws-to-kev-5718e2a1",
+    "title": "CISA Adds VMware, Cisco, Apache Flaws to KEV",
+    "summary": "CISA added four actively exploited flaws to its KEV list, including a CVE-2026-129448 vulnerability in Broadcom VMware vCenter. The CVE-2026-129448 flaw, a deserialization of untrusted data with CVSS 9.8, enables remote code execution across VMware, Cisco Expressway, Apache Roller, and SAP NetWeaver systems. Patches are available for all affected products; administrators must apply updates immediately to mitigate the high-risk exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+    "publishedAt": "2026-11-21T08:49:13.000Z",
+    "cves": [
+      "CVE-2026-129448"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-vmware-cisco-apache-flaws-to-kev",
+      "article-5718e2a1",
+      "5718e2a1",
+      "cisa-adds-vmware-cisco-apache-flaws-to-kev-1580ca"
+    ]
+  },
+  {
     "slug": "6-critical-f5-big-ip-could-let-hackers-disrupt-web-e1a11be8",
     "title": "6 Critical F5 BIG-IP . Could Let Hackers Disrupt Websites and Execute Malicious Code",
     "summary": "F5 released emergency fixes for six critical BIG-IP vulnerabilities that could let remote attackers take websites and other services offline without logging in. The flaws affect specific traffic-handling configurations. An attacker who can reach a vulnerable service could crash the BIG-IP process that handles client traffic.",
@@ -82,6 +120,27 @@ export const news: NewsBrief[] = [
       "article-9b21c3c1",
       "9b21c3c1",
       "cto-of-ransomwarehelp-indicted-for-wire-fraud-308466"
+    ]
+  },
+  {
+    "slug": "nginx-cves-impact-palo-alto-products-84c14653",
+    "title": "NGINX CVEs Impact Palo Alto Products",
+    "summary": "Palo Alto Networks reported that CVE-2026-123633 and CVE-2026-123007, NGINX vulnerabilities, impact its firewall and threat prevention products. These critical flaws enable remote code execution in NGINX, potentially compromising Palo Alto devices and exposing network traffic. Patches addressing both CVEs are available; administrators should update affected systems immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-123633",
+    "publishedAt": "2026-11-20T23:00:00.000Z",
+    "cves": [
+      "CVE-2026-123633",
+      "CVE-2026-123007"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "nginx-cves-impact-palo-alto-products",
+      "article-84c14653",
+      "84c14653",
+      "nginx-cves-impact-palo-alto-products-4fdfb7"
     ]
   },
   {
@@ -704,6 +763,30 @@ export const news: NewsBrief[] = [
       "ae93cb75",
       "debian-packages-retain-distrusted-ca-certificates-4fdf79",
       "debian-packages-retain-distrusted-ca-certificates-after-upda"
+    ]
+  },
+  {
+    "slug": "nvidia-tegra-igx-kernel-vulnerabilities-discovered-e3bb6f4f",
+    "title": "NVIDIA Tegra IGX Kernel Vulnerabilities Discovered",
+    "summary": "NVIDIA Tegra IGX Linux kernel subsystems contain vulnerabilities that could let attackers compromise devices. Flaws identified as CVE-2025-21656, CVE-2026-63940, CVE-2026-74350, CVE-2026-98432, and CVE-2026-99999 affect x86 architecture, hardware monitoring drivers, OCFS2, IPv4 networking, Ethernet bridge, Netfilter, and XFRM, enabling potential system compromise. Kernel updates correcting these flaws are available; administrators should apply the patch to mitigate risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9184-1",
+    "publishedAt": "2026-11-20T16:08:41.000Z",
+    "cves": [
+      "CVE-2025-21656",
+      "CVE-2026-63940",
+      "CVE-2026-74350",
+      "CVE-2026-98432",
+      "CVE-2026-99999"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "nvidia-tegra-igx-kernel-vulnerabilities-discovered",
+      "article-e3bb6f4f",
+      "e3bb6f4f",
+      "nvidia-tegra-igx-kernel-vulnerabilities-discovered-7e77f2"
     ]
   },
   {
@@ -4101,6 +4184,68 @@ export const news: NewsBrief[] = [
       "article-8e3f6470",
       "8e3f6470",
       "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-cve-2026-85846-elevation-fl-e842d853",
+    "title": "Microsoft Acknowledges CVE-2026-85846 Elevation Flaw",
+    "summary": "Microsoft acknowledges CVE-2026-85846, an elevation of privilege flaw in Web Account Manager. The vulnerability allows attackers to gain higher privileges within the web account context, potentially enabling unauthorized access to protected resources. Microsoft has issued an informational update; no active exploitation reported, and users should apply the forthcoming patch when available.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85846",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-85846"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-cve-2026-85846-elevation-fl",
+      "article-e842d853",
+      "e842d853",
+      "microsoft-acknowledges-cve-2026-85846-elevation-fl-743ff6",
+      "microsoft-acknowledges-cve-2026-85846-elevation-flaw"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-cve-2026-88130-dns-dos-a02c7571",
+    "title": "Microsoft Acknowledges CVE-2026-88130 DNS DoS",
+    "summary": "Microsoft acknowledges CVE-2026-88130, a denial-of-service flaw in its DNS server component. The vulnerability can cause the DNS service to become unresponsive, potentially disrupting domain resolution for affected clients. Microsoft has released an informational update; no active exploitation reported, and administrators should monitor for the forthcoming patch and apply it promptly.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88130",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-88130"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-cve-2026-88130-dns-dos",
+      "article-a02c7571",
+      "a02c7571",
+      "microsoft-acknowledges-cve-2026-88130-dns-dos-743eb3"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-cve-2026-97743-excel-disclo-6eac2975",
+    "title": "Microsoft Acknowledges CVE-2026-97743 Excel Disclosure",
+    "summary": "Microsoft acknowledges CVE-2026-97743, an information disclosure flaw in Microsoft Office Excel. The vulnerability allows attackers to read sensitive data from Excel workbooks without authentication, potentially exposing confidential information. Microsoft has issued an informational update; no active exploitation reported, and users should apply the forthcoming patch when available to mitigate the disclosure.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97743",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-97743"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-cve-2026-97743-excel-disclo",
+      "article-6eac2975",
+      "6eac2975",
+      "microsoft-acknowledges-cve-2026-97743-excel-disclo-7430f9",
+      "microsoft-acknowledges-cve-2026-97743-excel-disclosure"
     ]
   },
   {
@@ -9533,147 +9678,6 @@ export const news: NewsBrief[] = [
       "b85b098b",
       "zdi-26-1032-0day-pwn2own-united-chargers-grizzl-e-77f343",
       "zdi-26-1032-0day-pwn2own-united-chargers-grizzl-e-smart-40a-"
-    ]
-  },
-  {
-    "slug": "zdi-26-1037-0day-pwn2own-united-chargers-grizzl-e-21430223",
-    "title": "ZDI-26-1037: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP Backend Configuration Authentication Bypass Vulnerability",
-    "summary": "This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131809.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1037/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-131809"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1037-0day-pwn2own-united-chargers-grizzl-e",
-      "article-21430223",
-      "21430223",
-      "zdi-26-1037-0day-pwn2own-united-chargers-grizzl-e-77f344",
-      "zdi-26-1037-0day-pwn2own-united-chargers-grizzl-e-smart-40a-"
-    ]
-  },
-  {
-    "slug": "zdi-26-1036-0day-pwn2own-united-chargers-grizzl-e-3b6347a3",
-    "title": "ZDI-26-1036: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A Wi-Fi Configuration Server Missing Authentication Vulnerability",
-    "summary": "This vulnerability allows network-adjacent attackers to modify Wi-Fi configuration on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131808.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1036/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-131808"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1036-0day-pwn2own-united-chargers-grizzl-e",
-      "article-3b6347a3",
-      "3b6347a3",
-      "zdi-26-1036-0day-pwn2own-united-chargers-grizzl-e-77f344",
-      "zdi-26-1036-0day-pwn2own-united-chargers-grizzl-e-smart-40a-"
-    ]
-  },
-  {
-    "slug": "zdi-26-1035-0day-pwn2own-united-chargers-grizzl-e-8692a04b",
-    "title": "ZDI-26-1035: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A Download of Code Without Integrity Check Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131810.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1035/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-131810"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1035-0day-pwn2own-united-chargers-grizzl-e",
-      "article-8692a04b",
-      "8692a04b",
-      "zdi-26-1035-0day-pwn2own-united-chargers-grizzl-e-77f344",
-      "zdi-26-1035-0day-pwn2own-united-chargers-grizzl-e-smart-40a-"
-    ]
-  },
-  {
-    "slug": "zdi-26-1034-0day-pwn2own-united-chargers-grizzl-e-f89dcbc3",
-    "title": "ZDI-26-1034: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A FTP URL Path Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131812.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1034/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-131812"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1034-0day-pwn2own-united-chargers-grizzl-e",
-      "article-f89dcbc3",
-      "f89dcbc3",
-      "zdi-26-1034-0day-pwn2own-united-chargers-grizzl-e-77f343",
-      "zdi-26-1034-0day-pwn2own-united-chargers-grizzl-e-smart-40a-"
-    ]
-  },
-  {
-    "slug": "open-robotics-rviz-xyzpctransformer-dos-vulnerabil-83341fab",
-    "title": "Open Robotics RViz XYZPCTransformer DoS Vulnerability",
-    "summary": "A zero-day out-of-bounds read in Open Robotics RViz XYZPCTransformer enables network-adjacent attackers to trigger a denial-of-service condition. The flaw lacks authentication requirements, has a CVSS score of 6.5, and is currently unexploited in the wild. A patch is pending; security teams should monitor vendor advisories and apply the fix once released.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1026/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "open-robotics-rviz-xyzpctransformer-dos-vulnerabil",
-      "article-83341fab",
-      "83341fab",
-      "open-robotics-rviz-xyzpctransformer-dos-vulnerabil-77f340",
-      "open-robotics-rviz-xyzpctransformer-dos-vulnerability"
-    ]
-  },
-  {
-    "slug": "open-robotics-rviz-rgb8pctransformer-dos-vulnerabi-8585b722",
-    "title": "Open Robotics RViz RGB8PCTransformer DoS Vulnerability",
-    "summary": "An out-of-bounds read in Open Robotics RViz RGB8PCTransformer permits network-adjacent attackers to induce a denial-of-service, potentially crashing the application. The flaw requires no authentication, carries a CVSS score of 6.5, and has not been exploited in the wild. Security teams should await the vendor patch and monitor advisories for the release; no immediate mitigation is available.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1023/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "open-robotics-rviz-rgb8pctransformer-dos-vulnerabi",
-      "article-8585b722",
-      "8585b722",
-      "open-robotics-rviz-rgb8pctransformer-dos-vulnerabi-77f340",
-      "open-robotics-rviz-rgb8pctransformer-dos-vulnerability"
-    ]
-  },
-  {
-    "slug": "open-robotics-rviz-intensitypctransformer-dos-vuln-3f652df2",
-    "title": "Open Robotics RViz IntensityPCTransformer DoS Vulnerability",
-    "summary": "An out-of-bounds read in Open Robotics RViz IntensityPCTransformer allows network-adjacent attackers to trigger a denial-of-service, potentially crashing the application. The vulnerability requires no authentication, has a CVSS score of 6.5, and is not yet exploited in the wild. Apply the forthcoming vendor patch; meanwhile, monitor advisories for updates and ensure application restarts are handled to mitigate temporary instability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1022/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "open-robotics-rviz-intensitypctransformer-dos-vuln",
-      "article-3f652df2",
-      "3f652df2",
-      "open-robotics-rviz-intensitypctransformer-dos-vuln-77f33f",
-      "open-robotics-rviz-intensitypctransformer-dos-vulnerability"
     ]
   }
 ];

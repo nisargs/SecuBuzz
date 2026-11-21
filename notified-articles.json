@@ -5923,5 +5923,12 @@
   "https://access.redhat.com/errata/RHSA-2026:100768",
   "https://access.redhat.com/errata/RHSA-2026:100756",
   "https://access.redhat.com/errata/RHSA-2026:100755",
-  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58649"
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58649",
+  "https://ubuntu.com/security/notices/USN-9184-1",
+  "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+  "https://security.paloaltonetworks.com/CVE-2026-123633",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85846",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88130",
+  "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97743"
 ]
