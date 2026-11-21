@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-critical-update-for-php-8-2-ba37de30",
+    "title": "Red Hat Issues Critical Update for PHP 8.2",
+    "summary": "Red Hat released a critical security update for the php:8.2 module on RHEL 9.8 Extended Update Support, addressing high-impact vulnerabilities. The flaws, listed in CVE references, enable remote code execution via malformed input, with CVSS scores up to 9.8. Red Hat recommends applying the update immediately; no workaround exists, and users should verify module integrity post-installation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101253",
+    "publishedAt": "2026-11-21T18:51:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-update-for-php-8-2",
+      "article-ba37de30",
+      "ba37de30",
+      "red-hat-issues-critical-update-for-php-8-2-2ee0ea"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-update-for-php-8-3-647cf248",
+    "title": "Red Hat Issues Critical Update for PHP 8.3",
+    "summary": "Red Hat released a critical security update for the php:8.3 module on RHEL 9.8 Extended Update Support, addressing high-impact vulnerabilities. The flaws, listed in CVE references, enable remote code execution via malformed input, with CVSS scores up to 9.8. Red Hat recommends applying the update immediately; no workaround exists, and users should verify module integrity post-installation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101252",
+    "publishedAt": "2026-11-21T18:28:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-update-for-php-8-3",
+      "article-647cf248",
+      "647cf248",
+      "red-hat-issues-critical-update-for-php-8-3-2ee0ea"
+    ]
+  },
+  {
     "slug": "microsoft-entra-connect-health-breach-exposes-admi-92d37834",
     "title": "Microsoft Entra Connect Health Breach Exposes Admin Emails",
     "summary": "Attackers exploited a flaw in Microsoft Entra Connect Health, gaining unauthorized access to administrator email addresses and tenant configuration data. The flaw enabled remote code execution via a malformed authentication token, letting attackers read tenant settings without credentials. Microsoft issued a patch and urged customers to update Entra Connect Health immediately, disabling the affected API endpoint as a temporary mitigation.",
@@ -27,6 +63,24 @@ export const news: NewsBrief[] = [
       "92d37834",
       "microsoft-entra-connect-health-breach-exposes-admi-33d14e",
       "microsoft-entra-connect-health-breach-exposes-admin-emails"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-update-for-php-7-4-09495a8d",
+    "title": "Red Hat Issues Critical Update for PHP 7.4",
+    "summary": "Red Hat released a critical security update for the php:7.4 module on RHEL 8, addressing high-impact vulnerabilities. The flaws, listed in CVE references, enable remote code execution via malformed input, with CVSS scores up to 9.8. Red Hat recommends applying the update immediately; no workaround exists, and users should verify module integrity post-installation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100991",
+    "publishedAt": "2026-11-21T15:34:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-update-for-php-7-4",
+      "article-09495a8d",
+      "09495a8d",
+      "red-hat-issues-critical-update-for-php-7-4-2ee090"
     ]
   },
   {
@@ -9633,63 +9687,6 @@ export const news: NewsBrief[] = [
       "96bd03cf",
       "krita-psb-integer-overflow-enables-remote-code-exe-77f33c",
       "krita-psb-integer-overflow-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "krita-asl-integer-overflow-allows-remote-code-exec-e53234c6",
-    "title": "Krita ASL Integer Overflow Allows Remote Code Execution",
-    "summary": "A Krita ASL file parsing integer overflow flaw permits remote code execution when a user opens a malicious file or visits a malicious page. Rated CVSS 7.8, the flaw requires user interaction and lets attackers run arbitrary code, but no active exploitation has been reported. Krita should issue a patch; users should avoid opening files until an update is available.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1012/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "krita-asl-integer-overflow-allows-remote-code-exec",
-      "article-e53234c6",
-      "e53234c6",
-      "krita-asl-integer-overflow-allows-remote-code-exec-77f33c",
-      "krita-asl-integer-overflow-allows-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "krita-heic-parsing-heap-overflow-enables-remote-co-0a4e83ea",
-    "title": "Krita HEIC Parsing Heap Overflow Enables Remote Code Execution",
-    "summary": "A heap-based buffer overflow in Krita’s HEIC file parser allows remote attackers to execute code when a user opens a malicious HEIC file. The flaw, requiring user interaction, has a CVSS score of 7.8 and permits arbitrary code execution on affected installations. Krita has released patches; users should update to the latest version to mitigate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1015/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "krita-heic-parsing-heap-overflow-enables-remote-co",
-      "article-0a4e83ea",
-      "0a4e83ea",
-      "krita-heic-parsing-heap-overflow-enables-remote-co-77f33c",
-      "krita-heic-parsing-heap-overflow-enables-remote-code-executi"
-    ]
-  },
-  {
-    "slug": "krita-tiff-parsing-out-of-bounds-write-enables-rem-99d7b1f5",
-    "title": "Krita TIFF Parsing Out-Of-Bounds Write Enables Remote Code Execution",
-    "summary": "An out-of-bounds write in Krita’s TIFF file parser permits remote attackers to execute code when a user opens a malicious TIFF file. The vulnerability requires user interaction, carries a CVSS score of 7.8, and enables arbitrary code execution on affected installations. Krita has issued patches; users should update to the latest version to mitigate the flaw.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1014/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "krita-tiff-parsing-out-of-bounds-write-enables-rem",
-      "article-99d7b1f5",
-      "99d7b1f5",
-      "krita-tiff-parsing-out-of-bounds-write-enables-rem-77f33c",
-      "krita-tiff-parsing-out-of-bounds-write-enables-remote-code-e"
     ]
   }
 ];

@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 18:43:13 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 19:26:12 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues Critical Update for PHP 8.2</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-update-for-php-8-2-ba37de30</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-update-for-php-8-2-ba37de30</guid>
+      <description><![CDATA[Red Hat released a critical security update for the php:8.2 module on RHEL 9.8 Extended Update Support, addressing high-impact vulnerabilities. The flaws, listed in CVE references, enable remote code execution via malformed input, with CVSS scores up to 9.8. Red Hat recommends applying the update immediately; no workaround exists, and users should verify module integrity post-installation.]]></description>
+      <pubDate>Sat, 21 Nov 2026 18:51:48 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:101253">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical Update for PHP 8.3</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-update-for-php-8-3-647cf248</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-update-for-php-8-3-647cf248</guid>
+      <description><![CDATA[Red Hat released a critical security update for the php:8.3 module on RHEL 9.8 Extended Update Support, addressing high-impact vulnerabilities. The flaws, listed in CVE references, enable remote code execution via malformed input, with CVSS scores up to 9.8. Red Hat recommends applying the update immediately; no workaround exists, and users should verify module integrity post-installation.]]></description>
+      <pubDate>Sat, 21 Nov 2026 18:28:29 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:101252">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Microsoft Entra Connect Health Breach Exposes Admin Emails</title>
       <link>https://secubuzz.com/news/microsoft-entra-connect-health-breach-exposes-admi-92d37834</link>
@@ -15,6 +33,15 @@
       <pubDate>Sat, 21 Nov 2026 18:01:58 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical Update for PHP 7.4</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-update-for-php-7-4-09495a8d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-update-for-php-7-4-09495a8d</guid>
+      <description><![CDATA[Red Hat released a critical security update for the php:7.4 module on RHEL 8, addressing high-impact vulnerabilities. The flaws, listed in CVE references, enable remote code execution via malformed input, with CVSS scores up to 9.8. Red Hat recommends applying the update immediately; no workaround exists, and users should verify module integrity post-installation.]]></description>
+      <pubDate>Sat, 21 Nov 2026 15:34:30 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100991">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>FBI Breach Targets National Crime Information Center</title>
@@ -429,33 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 16:39:48 GMT</pubDate>
       <source url="https://cybersecuritynews.com/debian-packages-ca-certificates/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Java4Shell Exposes Java Apps to Code Execution</title>
-      <link>https://secubuzz.com/news/java4shell-exposes-java-apps-to-code-execution-dfa30b1e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-exposes-java-apps-to-code-execution-dfa30b1e</guid>
-      <description><![CDATA[Java4Shell flaw exposes Java apps to code execution; FBI warns of ARTEX intrusions, and 8-Digits Team faces a 27-year sentence. The flaw originates from deserialization of Java objects, allowing attackers to send that bypass authentication and run code. Oracle released patch 2026-04-01 for Java Runtime Environments; admins should upgrade or apply the workaround.]]></description>
-      <pubDate>Fri, 20 Nov 2026 16:14:03 GMT</pubDate>
-      <source url="https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-47-8">SentinelOne</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>NVIDIA Tegra IGX Kernel Vulnerabilities Discovered</title>
-      <link>https://secubuzz.com/news/nvidia-tegra-igx-kernel-vulnerabilities-discovered-e3bb6f4f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-tegra-igx-kernel-vulnerabilities-discovered-e3bb6f4f</guid>
-      <description><![CDATA[NVIDIA Tegra IGX Linux kernel subsystems contain vulnerabilities that could let attackers compromise devices. Flaws identified as CVE-2025-21656, CVE-2026-63940, CVE-2026-74350, CVE-2026-98432, and CVE-2026-99999 affect x86 architecture, hardware monitoring drivers, OCFS2, IPv4 networking, Ethernet bridge, Netfilter, and XFRM, enabling potential system compromise. Kernel updates correcting these flaws are available; administrators should apply the patch to mitigate risk.]]></description>
-      <pubDate>Fri, 20 Nov 2026 16:08:41 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9184-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>NSA Resumes Operations After Internal Network Disruptions</title>
-      <link>https://secubuzz.com/news/nsa-resumes-operations-after-internal-network-disr-926a15d3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nsa-resumes-operations-after-internal-network-disr-926a15d3</guid>
-      <description><![CDATA[The National Security Agency experienced internal network disruptions that forced a temporary Code Orange status for several facilities, delaying openings and requiring employee check-ins with supervisors. The disruptions impacted non-essential operations, but core mission functions continued under reduced capacity. Normal operations have resumed, though affected sites remain under Code Orange until full network stability is confirmed.]]></description>
-      <pubDate>Fri, 20 Nov 2026 16:06:00 GMT</pubDate>
-      <source url="https://therecord.media/nsa-resumes-normal-operations-following-internal-disruptions">The Record</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
