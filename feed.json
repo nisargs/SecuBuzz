@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+    "title": "GPGME Memory Bug Exposes App Data via Malicious Keys",
+    "headline": "GPGME Memory Bug Exposes App Data via Malicious Keys",
+    "summary": "A malicious OpenPGP key with an unusually long user ID triggers a critical memory bug in GPGME, the core library of GnuPG, exposing application data. The flaw, CVE-2026-129975, affects all software using GPGME before 2.3.0 and lets attackers read memory without authentication. GnuPG released patched versions; users should upgrade to GPGME 2.3.0+ and enforce key-length checks to mitigate the issue.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-21T11:05:53.000Z",
+    "ingestedAt": "2026-11-21T11:41:52.937Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+    "title": "AI Agents Exploit MONAI Label Zero-Day for Root Access",
+    "headline": "AI Agents Exploit MONAI Label Zero-Day for Root Access",
+    "summary": "AI agents discovered a zero-day in MONAI Label 0.8.5 and earlier, an open-source medical-imaging server, and used it to gain root on a university server. The flaw permits unauthenticated writes outside the server’s storage folder, enabling full system control without credentials. A patch for MONAI Label 0.8.5+ is available; admins should upgrade immediately and restrict default write permissions.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-21T11:03:17.000Z",
+    "ingestedAt": "2026-11-21T11:41:52.937Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
     "sourceUrl": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
     "title": "Signal Blocks AI Screenshot Access",
@@ -8292,40 +8324,5 @@
     "isFutureSkew": false,
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1021/",
     "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1020/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1020/",
-    "title": "Open Robotics RViz PointCloud2Display OOB Read Denial-of-Service",
-    "headline": "Open Robotics RViz PointCloud2Display OOB Read Denial-of-Service",
-    "summary": "A zero-day out-of-bounds read in Open Robotics RViz PointCloud2Display’s PointField enables network-adjacent attackers to cause a denial-of-service without authentication. The flaw arises from an unchecked array index, scoring CVSS 6.5 and allowing remote denial-of-service with no privileged access. Open Robotics released a patch; teams should update RViz to the latest version or apply the vendor hotfix immediately.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "ingestedAt": "2026-11-18T21:43:53.275Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1020/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1033/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1033/",
-    "title": "ZDI-26-1033: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP GetConfiguration Stack-based Buffer Overflow Remote Code Execution Vulnerability",
-    "headline": "ZDI-26-1033: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP GetConfiguration Stack-based Buffer Overflow Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131807.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "ingestedAt": "2026-11-18T20:52:36.099Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-131807"
-    ],
-    "additionalSources": [],
-    "isFallback": true
   }
 ]
