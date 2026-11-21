@@ -81,7 +81,7 @@ async function main() {
   };
 
   if (linkUrl) {
-    dataPayload.articleId = linkUrl;
+    dataPayload.articleId = 'developer-update';
     dataPayload.articleUrl = linkUrl;
   }
 
