@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 02:50:29 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 03:45:04 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>WhatsApp Android Flaws Could Let Hackers Delete Users’ Files and Expose IP Addresses</title>
@@ -15,6 +15,15 @@
       <pubDate>Sat, 21 Nov 2026 02:36:55 GMT</pubDate>
       <source url="https://cybersecuritynews.com/whatsapp-android-flaws/">Cyber Security News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Top Enterprise Risk Management Tools 2027</title>
+      <link>https://secubuzz.com/news/top-enterprise-risk-management-tools-2027-b701097f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-enterprise-risk-management-tools-2027-b701097f</guid>
+      <description><![CDATA[The 2027 ERM landscape features platforms that enable organizations to identify, assess, and mitigate risks across operational, financial, compliance, and cybersecurity domains. These solutions leverage AI, machine learning, and automation to deliver real-time insights and streamline processes, while prioritizing seamless integration for centralized data views. Vendors emphasize AI-driven analytics and unified dashboards to support holistic risk management.]]></description>
+      <pubDate>Sat, 21 Nov 2026 01:26:39 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/enterprise-risk-management-tools/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>CTO of ‘RansomwareHelp’ Indicted for Wire Fraud</title>
@@ -222,6 +231,15 @@
       <pubDate>Fri, 20 Nov 2026 16:39:48 GMT</pubDate>
       <source url="https://cybersecuritynews.com/debian-packages-ca-certificates/">Cyber Security News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>NSA Resumes Operations After Internal Network Disruptions</title>
+      <link>https://secubuzz.com/news/nsa-resumes-operations-after-internal-network-disr-926a15d3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nsa-resumes-operations-after-internal-network-disr-926a15d3</guid>
+      <description><![CDATA[The National Security Agency experienced internal network disruptions that forced a temporary Code Orange status for several facilities, delaying openings and requiring employee check-ins with supervisors. The disruptions impacted non-essential operations, but core mission functions continued under reduced capacity. Normal operations have resumed, though affected sites remain under Code Orange until full network stability is confirmed.]]></description>
+      <pubDate>Fri, 20 Nov 2026 16:06:00 GMT</pubDate>
+      <source url="https://therecord.media/nsa-resumes-normal-operations-following-internal-disruptions">The Record</source>
+      <category>General</category>
     </item>
     <item>
       <title>WhatsApp Patches CVE-2026-23871 Scam Vulnerability</title>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 12:51:36 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/data-breaches/2026/11/hackers-leak-data-linked-to-visa-mastercard-and-jpmorgan-customers">Malwarebytes Labs</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Hackers Repurpose SoftEther VPN for Stealthy Espionage</title>
-      <link>https://secubuzz.com/news/hackers-repurpose-softether-vpn-for-stealthy-espio-57435616</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-repurpose-softether-vpn-for-stealthy-espio-57435616</guid>
-      <description><![CDATA[Hackers rebuilt SoftEther VPN Bridge into NtMonitor VPN, creating a covert channel that links an external network to a compromised government network. The modified client leaves fewer SoftEther traces, enabling stealthy lateral movement; researchers link it to Webworm, a state-sponsored actor. No vendor patch exists; defenders should block the custom binary, enforce strict VPN controls, and monitor anomalous outbound traffic.]]></description>
-      <pubDate>Fri, 20 Nov 2026 12:40:26 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/legitimate-vpn-software/">Cyber Security News</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Industry Debates AI Patching After Outages</title>
-      <link>https://secubuzz.com/news/industry-debates-ai-patching-after-outages-993d70af</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/industry-debates-ai-patching-after-outages-993d70af</guid>
-      <description><![CDATA[Industry experts debated whether AI-accelerated patching contributed to recent major outages and system fragility. They emphasized the necessity of tested rollback plans and robust inter-system resilience to prevent cascading failures. The discussion highlighted that rapid automation must be balanced with rigorous validation to safeguard critical infrastructure and ensure compliance with regulatory standards.]]></description>
-      <pubDate>Fri, 20 Nov 2026 12:38:55 GMT</pubDate>
-      <source url="https://www.securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday/">SecurityWeek</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

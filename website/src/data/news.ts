@@ -30,6 +30,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "top-enterprise-risk-management-tools-2027-b701097f",
+    "title": "Top Enterprise Risk Management Tools 2027",
+    "summary": "The 2027 ERM landscape features platforms that enable organizations to identify, assess, and mitigate risks across operational, financial, compliance, and cybersecurity domains. These solutions leverage AI, machine learning, and automation to deliver real-time insights and streamline processes, while prioritizing seamless integration for centralized data views. Vendors emphasize AI-driven analytics and unified dashboards to support holistic risk management.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/enterprise-risk-management-tools/",
+    "publishedAt": "2026-11-21T01:26:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-enterprise-risk-management-tools-2027",
+      "article-b701097f",
+      "b701097f",
+      "top-enterprise-risk-management-tools-2027-7e6161"
+    ]
+  },
+  {
     "slug": "cto-of-ransomwarehelp-indicted-for-wire-fraud-9b21c3c1",
     "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
     "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption key and charging victims a markup for work that was never performed.",
@@ -466,6 +484,25 @@ export const news: NewsBrief[] = [
       "ae93cb75",
       "debian-packages-retain-distrusted-ca-certificates-4fdf79",
       "debian-packages-retain-distrusted-ca-certificates-after-upda"
+    ]
+  },
+  {
+    "slug": "nsa-resumes-operations-after-internal-network-disr-926a15d3",
+    "title": "NSA Resumes Operations After Internal Network Disruptions",
+    "summary": "The National Security Agency experienced internal network disruptions that forced a temporary Code Orange status for several facilities, delaying openings and requiring employee check-ins with supervisors. The disruptions impacted non-essential operations, but core mission functions continued under reduced capacity. Normal operations have resumed, though affected sites remain under Code Orange until full network stability is confirmed.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/nsa-resumes-normal-operations-following-internal-disruptions",
+    "publishedAt": "2026-11-20T16:06:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nsa-resumes-operations-after-internal-network-disr",
+      "article-926a15d3",
+      "926a15d3",
+      "nsa-resumes-operations-after-internal-network-disr-59abbd",
+      "nsa-resumes-operations-after-internal-network-disruptions"
     ]
   },
   {
@@ -3826,6 +3863,88 @@ export const news: NewsBrief[] = [
       "article-8e3f6470",
       "8e3f6470",
       "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
+    ]
+  },
+  {
+    "slug": "windows-devices-elevation-of-privilege-vulnerabili-de1bb0af",
+    "title": "Windows Devices Elevation of Privilege Vulnerability",
+    "summary": "A Windows Devices Human Interface Elevation of Privilege vulnerability (CVE-2026-113817) was acknowledged by Microsoft. The flaw allows privilege escalation via human interface device interactions, potentially enabling local attackers to gain elevated rights. Microsoft has issued an informational update; no patch is currently available, and users should monitor for future releases.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113817",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-113817"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-devices-elevation-of-privilege-vulnerabili",
+      "article-de1bb0af",
+      "de1bb0af",
+      "windows-devices-elevation-of-privilege-vulnerabili-1feb4f",
+      "windows-devices-elevation-of-privilege-vulnerability"
+    ]
+  },
+  {
+    "slug": "powershell-information-disclosure-vulnerability-aaa17da1",
+    "title": "PowerShell Information Disclosure Vulnerability",
+    "summary": "Microsoft acknowledged a PowerShell Information Disclosure vulnerability (CVE-2026-121669). The flaw permits local attackers to read sensitive data from PowerShell execution contexts, potentially exposing credentials or configuration details on Windows 10 and 11 systems. An informational update has been released; no patch is available yet, and users should await official remediation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121669",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-121669"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "powershell-information-disclosure-vulnerability",
+      "article-aaa17da1",
+      "aaa17da1",
+      "powershell-information-disclosure-vulnerability-1fde27"
+    ]
+  },
+  {
+    "slug": "microsoft-lsa-elevation-vulnerability-identified-3c828857",
+    "title": "Microsoft LSA Elevation Vulnerability Identified",
+    "summary": "Microsoft identified an elevation of privilege flaw in its Local Security Authority (LSA) Server, CVE-2026-83722. The flaw lets local users manipulate authentication data to gain system-level privileges; no active exploitation reported and CVSS score is undisclosed. Microsoft issued an informational update; users should apply the latest patch when available and monitor for future releases.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83722",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-83722"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-lsa-elevation-vulnerability-identified",
+      "article-3c828857",
+      "3c828857",
+      "microsoft-lsa-elevation-vulnerability-identified-7440e2"
+    ]
+  },
+  {
+    "slug": "microsoft-publishes-cve-2026-83753-elevation-of-pr-77d5f76b",
+    "title": "Microsoft Publishes CVE-2026-83753 Elevation of Privilege Fix",
+    "summary": "Microsoft released a patch for CVE-2026-83753, an elevation of privilege flaw in the Windows Camera Frame Server Monitor. The vulnerability allows local users to gain higher privileges by manipulating the camera frame server, potentially enabling privilege escalation on the host. Microsoft issued the update as an informational change; users should install the latest Windows update to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83753",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-83753"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-publishes-cve-2026-83753-elevation-of-pr",
+      "article-77d5f76b",
+      "77d5f76b",
+      "microsoft-publishes-cve-2026-83753-elevation-of-pr-7440e2",
+      "microsoft-publishes-cve-2026-83753-elevation-of-privilege-fi"
     ]
   },
   {
@@ -9574,134 +9693,6 @@ export const news: NewsBrief[] = [
       "69aba8fc",
       "java4shell-cve-2026-114938-enables-remote-code-exe-2ee514",
       "java4shell-cve-2026-114938-enables-remote-code-execution-in-"
-    ]
-  },
-  {
-    "slug": "microsoft-agent-framework-pypi-package-compromised-03a53c23",
-    "title": "Microsoft Agent-Framework PyPI Package Compromised",
-    "summary": "Microsoft’s agent-framework PyPI package, versions 1.26.1 and 1.26.2, was compromised. The malicious package leveraged .pth startup hooks to exfiltrate Azure, GitHub Actions, and CI/CD credentials, enabling attackers to harvest authentication tokens. Users should uninstall the affected versions, install the latest secure release, and audit their CI/CD pipelines for unauthorized credential usage.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/agent-framework-pypi-package-compromised-with-credential-stealer",
-    "publishedAt": "2026-11-17T23:05:25.054Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-agent-framework-pypi-package-compromised",
-      "article-03a53c23",
-      "03a53c23",
-      "microsoft-agent-framework-pypi-package-compromised-526e6d"
-    ]
-  },
-  {
-    "slug": "critical-java4shell-flaw-allows-rce-attacks-on-maj-77623aba",
-    "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
-    "summary": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. The vulnerability is tracked as CVE-2026-114938.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
-    "publishedAt": "2026-11-17T23:04:21.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-java4shell-flaw-allows-rce-attacks-on-maj",
-      "article-77623aba",
-      "77623aba",
-      "critical-java4shell-flaw-allows-rce-attacks-on-maj-15dfdc",
-      "critical-java4shell-flaw-allows-rce-attacks-on-major-java-ap"
-    ]
-  },
-  {
-    "slug": "optimizely-platform-distributes-hydra-like-malware-9772da7c",
-    "title": "Optimizely Platform Distributes Hydra-Like Malware to Visitors",
-    "summary": "A third-party Optimizely platform delivered hydra-like malware to visitors, affecting 178 organizations including major brands. Insecure content injection let attackers embed malicious scripts without authentication, enabling credential theft and lateral movement. Audit daily third-party integrations, enforce strict CSP, and apply the latest Optimizely patches to block unauthorized scripts for visitors.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
-    "publishedAt": "2026-11-17T22:34:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "optimizely-platform-distributes-hydra-like-malware",
-      "article-9772da7c",
-      "9772da7c",
-      "optimizely-platform-distributes-hydra-like-malware-69dcfb",
-      "optimizely-platform-distributes-hydra-like-malware-to-visito"
-    ]
-  },
-  {
-    "slug": "italy-extradites-lynx-ransomware-affiliate-to-us-4e26a369",
-    "title": "Italy Extradites Lynx Ransomware Affiliate to US",
-    "summary": "Italian authorities extradited a Lynx ransomware affiliate to the United States, facing a 27-year sentence. The extradition follows evidence of the affiliate’s role in deploying the Lynx ransomware, which encrypts corporate data and demands payment, impacting multiple sectors. Security teams should monitor for Lynx signatures, apply timely patches, and enforce robust backup strategies to mitigate future attacks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/ransomware-affiliate-suspect-extradited-to-us-faces-27",
-    "publishedAt": "2026-11-17T22:33:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "italy-extradites-lynx-ransomware-affiliate-to-us",
-      "article-4e26a369",
-      "4e26a369",
-      "italy-extradites-lynx-ransomware-affiliate-to-us-424676"
-    ]
-  },
-  {
-    "slug": "java4shell-cve-2026-114938-delivers-unauthenticate-c4f64c44",
-    "title": "Java4Shell CVE-2026-114938 Delivers Unauthenticated Remote Code Execution in Oracle Java and OpenJDK",
-    "summary": "CVE-2026-114938, dubbed Java4Shell, is a critical 9.2 remote code execution vulnerability affecting Oracle Java and OpenJDK installations across enterprise services. Improper input validation and malformed serialization data let unauthenticated attackers execute arbitrary code, with a public proof-of-concept already circulating. Oracle and OpenJDK vendors released patches; administrators should upgrade immediately and disable remote debugging features to mitigate risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk",
-    "publishedAt": "2026-11-17T22:29:57.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [
-      {
-        "source": "Sophos Threat Research",
-        "sourceUrl": "https://www.sophos.com/en-us/blog/java4shell-could-allow-remote-code-execution"
-      }
-    ],
-    "aliases": [
-      "java4shell-cve-2026-114938-delivers-unauthenticate",
-      "article-c4f64c44",
-      "c4f64c44",
-      "java4shell-cve-2026-114938-delivers-unauthenticate-42a402",
-      "java4shell-cve-2026-114938-delivers-unauthenticated-remote-c"
-    ]
-  },
-  {
-    "slug": "java4shell-critical-flaw-in-openjdk-enables-unauth-eb1823b5",
-    "title": "Java4Shell Critical Flaw in OpenJDK Enables Unauthenticated Remote Code Execution",
-    "summary": "Security researchers disclosed Java4Shell (CVE-2026-114938), a critical vulnerability in OpenJDK Java, on November 17, 2026. The flaw triggers memory corruption through malformed input, enabling unauthenticated remote code execution with a CVSS 9.2 score. Organizations should apply the vendor's patch immediately and update to the latest OpenJDK release to mitigate exploitation risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SentinelOne",
-    "sourceUrl": "https://www.sentinelone.com/blog/java4shell-vulnerability-in-openjdk-enables-rce-on-avx-512-cpus/",
-    "publishedAt": "2026-11-17T22:19:19.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [
-      {
-        "source": "Cisco Talos",
-        "sourceUrl": "https://blog.talosintelligence.com/java4shell/"
-      }
-    ],
-    "aliases": [
-      "java4shell-critical-flaw-in-openjdk-enables-unauth",
-      "article-eb1823b5",
-      "eb1823b5",
-      "java4shell-critical-flaw-in-openjdk-enables-unauth-2bc403",
-      "java4shell-critical-flaw-in-openjdk-enables-unauthenticated-"
     ]
   }
 ];
