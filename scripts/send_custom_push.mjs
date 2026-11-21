@@ -14,7 +14,36 @@ const ROOT_DIR = path.resolve(__dirname, '..');
  *   node scripts/send_custom_push.mjs --title "Title" --body "Message" --send
  */
 
-function getActiveTokens() {
+async function getActiveTokens() {
+  try {
+    const configPath = path.join(process.env.APPDATA || '', 'xdg.config', '.wrangler', 'config', 'default.toml');
+    if (fs.existsSync(configPath)) {
+      const content = fs.readFileSync(configPath, 'utf8');
+      const match = content.match(/oauth_token\s*=\s*["']([^"']+)["']/);
+      if (match && match[1]) {
+        const token = match[1];
+        const accountTag = '36eb47dcba495d7d872a2647755f6bde';
+        const databaseId = '13e7169f-7237-46a3-97fd-d0e4762b94e2';
+        const res = await fetch(`https://api.cloudflare.com/client/v4/accounts/${accountTag}/d1/database/${databaseId}/query`, {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ sql: 'SELECT token, app_version, platform FROM push_tokens WHERE is_active = 1;' })
+        });
+        if (res.ok) {
+          const data = await res.json();
+          if (data?.result?.[0]?.results) {
+            return data.result[0].results;
+          }
+        }
+      }
+    }
+  } catch (apiErr) {
+    // Fallback to wrangler CLI
+  }
+
   try {
     const raw = execSync(
       `npx --prefix worker wrangler d1 execute secubuzz-push-db --remote --command "SELECT token, app_version, platform FROM push_tokens WHERE is_active = 1;" --json`,
@@ -55,7 +84,7 @@ async function main() {
 
   const activeTokens = targetToken
     ? [{ token: targetToken, app_version: '1.1.0', platform: 'android' }]
-    : getActiveTokens();
+    : await getActiveTokens();
   console.log(`Target Fleet: ${activeTokens.length} device(s) selected.`);
 
   if (!isSend) {
@@ -81,7 +110,7 @@ async function main() {
   };
 
   if (linkUrl) {
-    dataPayload.articleId = 'developer-update';
+    dataPayload.articleId = linkUrl;
     dataPayload.articleUrl = linkUrl;
   }
 
