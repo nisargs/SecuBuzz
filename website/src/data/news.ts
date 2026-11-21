@@ -1185,9 +1185,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "apache-tomcat-vulnerability-enables-unauthorized-c-db2ea093",
-    "title": "Apache Tomcat Vulnerability Enables Unauthorized Cluster Joining",
-    "summary": "A critical flaw in Apache Tomcat lets remote attackers join trusted server clusters without authentication, targeting TLS 1.3 pre-shared key setups. Identified as CVE-2026-133325, the flaw abuses improper validation of cluster join requests, enabling unauthenticated RCE and lateral movement. Apache released a patch; administrators should upgrade Tomcat or apply configuration changes to block cluster joining until the fix is applied.",
+    "slug": "apache-tomcat-cve-2026-133325-tls-1-3-psk-peer-val-3755925e",
+    "title": "Apache Tomcat CVE-2026-133325: TLS 1.3 PSK Peer Validation Flaw Enables Man-in-the-Middle and Unauthorized Cluster Joining",
+    "summary": "Apache Tomcat CVE-2026-133325 allows attackers to bypass TLS-PSK peer validation in TLS 1.3, enabling man-in-the-middle attacks and unauthorized cluster joining. The flaw stems from missing certificate checks during the TLS handshake, granting remote code execution and lateral movement across cluster nodes. Administrators must apply the latest patches or disable TLS-PSK to mitigate the risk.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Cyber Security News",
@@ -1196,13 +1196,18 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-133325"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Canadian Centre for Cyber Security",
+        "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1188"
+      }
+    ],
     "aliases": [
-      "apache-tomcat-vulnerability-enables-unauthorized-c",
-      "article-db2ea093",
-      "db2ea093",
-      "apache-tomcat-vulnerability-enables-unauthorized-c-f2968f",
-      "apache-tomcat-vulnerability-enables-unauthorized-cluster-joi"
+      "apache-tomcat-cve-2026-133325-tls-1-3-psk-peer-val",
+      "article-3755925e",
+      "3755925e",
+      "apache-tomcat-cve-2026-133325-tls-1-3-psk-peer-val-f2968f",
+      "apache-tomcat-cve-2026-133325-tls-1-3-psk-peer-validation-fl"
     ]
   },
   {
