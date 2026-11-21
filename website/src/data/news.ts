@@ -766,6 +766,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "java4shell-exposes-java-apps-to-code-execution-dfa30b1e",
+    "title": "Java4Shell Exposes Java Apps to Code Execution",
+    "summary": "Java4Shell flaw exposes Java apps to code execution; FBI warns of ARTEX intrusions, and 8-Digits Team faces a 27-year sentence. The flaw originates from deserialization of Java objects, allowing attackers to send that bypass authentication and run code. Oracle released patch 2026-04-01 for Java Runtime Environments; admins should upgrade or apply the workaround.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-47-8",
+    "publishedAt": "2026-11-20T16:14:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "java4shell-exposes-java-apps-to-code-execution",
+      "article-dfa30b1e",
+      "dfa30b1e",
+      "java4shell-exposes-java-apps-to-code-execution-5e83f0"
+    ]
+  },
+  {
     "slug": "nvidia-tegra-igx-kernel-vulnerabilities-discovered-e3bb6f4f",
     "title": "NVIDIA Tegra IGX Kernel Vulnerabilities Discovered",
     "summary": "NVIDIA Tegra IGX Linux kernel subsystems contain vulnerabilities that could let attackers compromise devices. Flaws identified as CVE-2025-21656, CVE-2026-63940, CVE-2026-74350, CVE-2026-98432, and CVE-2026-99999 affect x86 architecture, hardware monitoring drivers, OCFS2, IPv4 networking, Ethernet bridge, Netfilter, and XFRM, enabling potential system compromise. Kernel updates correcting these flaws are available; administrators should apply the patch to mitigate risk.",
@@ -9657,27 +9675,6 @@ export const news: NewsBrief[] = [
       "f27d3c5b",
       "zdi-26-1033-0day-pwn2own-united-chargers-grizzl-e-77f343",
       "zdi-26-1033-0day-pwn2own-united-chargers-grizzl-e-smart-40a-"
-    ]
-  },
-  {
-    "slug": "zdi-26-1032-0day-pwn2own-united-chargers-grizzl-e-b85b098b",
-    "title": "ZDI-26-1032: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP Backend Configuration Hard-Coded Credentials Authentication Bypass Vulnerability",
-    "summary": "This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131811.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1032/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-131811"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1032-0day-pwn2own-united-chargers-grizzl-e",
-      "article-b85b098b",
-      "b85b098b",
-      "zdi-26-1032-0day-pwn2own-united-chargers-grizzl-e-77f343",
-      "zdi-26-1032-0day-pwn2own-united-chargers-grizzl-e-smart-40a-"
     ]
   }
 ];

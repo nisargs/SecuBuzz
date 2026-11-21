@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 09:46:40 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 10:45:43 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Signal Blocks AI Screenshot Access</title>
@@ -368,6 +368,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Java4Shell Exposes Java Apps to Code Execution</title>
+      <link>https://secubuzz.com/news/java4shell-exposes-java-apps-to-code-execution-dfa30b1e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/java4shell-exposes-java-apps-to-code-execution-dfa30b1e</guid>
+      <description><![CDATA[Java4Shell flaw exposes Java apps to code execution; FBI warns of ARTEX intrusions, and 8-Digits Team faces a 27-year sentence. The flaw originates from deserialization of Java objects, allowing attackers to send that bypass authentication and run code. Oracle released patch 2026-04-01 for Java Runtime Environments; admins should upgrade or apply the workaround.]]></description>
+      <pubDate>Fri, 20 Nov 2026 16:14:03 GMT</pubDate>
+      <source url="https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-47-8">SentinelOne</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>NVIDIA Tegra IGX Kernel Vulnerabilities Discovered</title>
       <link>https://secubuzz.com/news/nvidia-tegra-igx-kernel-vulnerabilities-discovered-e3bb6f4f</link>
       <guid isPermaLink="true">https://secubuzz.com/news/nvidia-tegra-igx-kernel-vulnerabilities-discovered-e3bb6f4f</guid>
@@ -446,15 +455,6 @@
       <description><![CDATA[Ubuntu Linux kernel vulnerabilities affect a broad range of subsystems, including device drivers, cryptographic APIs, and hardware interfaces. These flaws could enable an attacker to compromise the system, though no active exploitation or public PoC has been disclosed. Applying the latest kernel updates that incorporate the fixes for these subsystems is recommended to preserve system security.]]></description>
       <pubDate>Fri, 20 Nov 2026 15:33:51 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9173-2">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Linux kernel vulnerabilities patched in USN-9168-3</title>
-      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-patched-in-usn-9168-3-d51a4baa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-patched-in-usn-9168-3-d51a4baa</guid>
-      <description><![CDATA[Linux kernel subsystems such as ARM64, x86, Bluetooth, and GPU drivers have flaws that could let attackers compromise systems via code execution. The patch fixes memory corruption and privilege escalation bugs across 30+ subsystems, with no public exploit confirmed and CVE IDs omitted. Ubuntu released update 9168-3; users should apply the kernel patch immediately to mitigate potential exploitation.]]></description>
-      <pubDate>Fri, 20 Nov 2026 15:33:37 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9168-3">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
   </channel>
