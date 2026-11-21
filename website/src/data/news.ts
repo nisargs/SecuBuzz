@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fbi-breach-targets-national-crime-information-cent-e4f17beb",
+    "title": "FBI Breach Targets National Crime Information Center",
+    "summary": "FBI systems were breached again, compromising the National Crime Information Center (NCIC), the database shared by law-enforcement agencies. Attackers exploited an undisclosed flaw to gain unauthorized access to NCIC records, potentially exposing investigative data. Investigators are isolating the breach, patching the flaw, and advising agencies to review NCIC access controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+    "publishedAt": "2026-11-21T14:26:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-breach-targets-national-crime-information-cent",
+      "article-e4f17beb",
+      "e4f17beb",
+      "fbi-breach-targets-national-crime-information-cent-3a94f2",
+      "fbi-breach-targets-national-crime-information-center"
+    ]
+  },
+  {
+    "slug": "crowdstrike-negotiates-zscaler-acquisition-822c7184",
+    "title": "CrowdStrike Negotiates Zscaler Acquisition",
+    "summary": "CrowdStrike is negotiating a potential acquisition of Zscaler, the cloud-security platform provider that offers zero-trust networking and secure web gateways. The deal could consolidate market share, expand CrowdStrike's cloud security portfolio, and reshape vendor competition by integrating Zscaler's zero-trust solutions. Both firms are conducting due diligence, and the transaction remains unconfirmed pending regulatory review and shareholder approval.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/crowdstrike-to-acquire-zscaler/",
+    "publishedAt": "2026-11-21T13:12:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-negotiates-zscaler-acquisition",
+      "article-822c7184",
+      "822c7184",
+      "crowdstrike-negotiates-zscaler-acquisition-457030"
+    ]
+  },
+  {
     "slug": "china-linked-hackers-exploit-monai-label-zero-day-bc54a5be",
     "title": "China-Linked Hackers Exploit MONAI Label Zero-Day",
     "summary": "China-linked threat actors used autonomous Cairn AI agents to locate and exploit a critical vulnerability in MONAI Label medical software. The flaw permits unauthenticated critical remote code execution via malformed input, enabling data exfiltration from imaging systems. Amazon issued an out-of-band patch; all MONAI Label users should apply it immediately.",
@@ -9642,43 +9679,6 @@ export const news: NewsBrief[] = [
       "263f6d01",
       "krita-heic-parser-zero-day-enables-remote-code-exe-77f33c",
       "krita-heic-parser-zero-day-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "krita-exr-parser-integer-overflow-allows-remote-co-ec57dd90",
-    "title": "Krita EXR Parser Integer Overflow Allows Remote Code Execution",
-    "summary": "A zero-day integer overflow in Krita’s EXR parser allows attackers to run code when a user opens an EXR file or visits a malicious page. The flaw, rated CVSS 7.8, exploits a buffer overflow in EXR parsing and requires user interaction for remote code execution. No patch is available yet; should avoid EXR files and apply Krita updates when released.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1016/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "krita-exr-parser-integer-overflow-allows-remote-co",
-      "article-ec57dd90",
-      "ec57dd90",
-      "krita-exr-parser-integer-overflow-allows-remote-co-77f33c",
-      "krita-exr-parser-integer-overflow-allows-remote-code-executi"
-    ]
-  },
-  {
-    "slug": "ros-2-xml-external-entity-disclosure-vulnerability-36989201",
-    "title": "ROS 2 XML External Entity Disclosure Vulnerability",
-    "summary": "A zero-day XML External Entity flaw in Open Robotics ROS 2’s sros2 load_policy lets attackers read sensitive data when a target opens a malicious file or page. The flaw requires user interaction, scores 5.5 on CVSS, and offers only information disclosure. No patch is available; operators should avoid loading untrusted XML into ROS 2 until an update is released.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1019/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ros-2-xml-external-entity-disclosure-vulnerability",
-      "article-36989201",
-      "36989201",
-      "ros-2-xml-external-entity-disclosure-vulnerability-77f33d"
     ]
   }
 ];
