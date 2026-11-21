@@ -5920,5 +5920,8 @@
   "https://access.redhat.com/errata/RHSA-2026:100814",
   "https://access.redhat.com/errata/RHSA-2026:100804",
   "https://access.redhat.com/errata/RHSA-2026:100753",
-  "https://access.redhat.com/errata/RHSA-2026:100768"
+  "https://access.redhat.com/errata/RHSA-2026:100768",
+  "https://access.redhat.com/errata/RHSA-2026:100756",
+  "https://access.redhat.com/errata/RHSA-2026:100755",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58649"
 ]

@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 07:47:25 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 08:48:27 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>6 Critical F5 BIG-IP . Could Let Hackers Disrupt Websites and Execute Malicious Code</title>
@@ -186,6 +186,24 @@
       <pubDate>Fri, 20 Nov 2026 18:51:43 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100756: Critical: nginx:1.24 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100756-critical-nginx-1-24-security-upda-91d2834b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100756-critical-nginx-1-24-security-upda-91d2834b</guid>
+      <description><![CDATA[An update for the nginx:1.24 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Fri, 20 Nov 2026 18:51:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100756">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100755: Critical: nginx:1.24 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100755-critical-nginx-1-24-security-upda-da98cc4b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100755-critical-nginx-1-24-security-upda-da98cc4b</guid>
+      <description><![CDATA[An update for the nginx:1.24 module is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Fri, 20 Nov 2026 18:48:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100755">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>RHSA-2026:100768: Critical: nginx security update</title>
@@ -437,24 +455,6 @@
       <description><![CDATA[Storing corporate passwords in spreadsheets exposes IT administrators to weak, reused, or compromised credentials, as spreadsheets lack audit controls. This reliance on unapproved storage bypasses centralized credential management, increasing credential reuse and data exposure risk. Adopting a centralized password vault, such as NordPass, provides visibility, risk assessment, and secure sharing to mitigate spreadsheet-based credential risks.]]></description>
       <pubDate>Fri, 20 Nov 2026 15:00:10 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Norwegian Energy Firm Attacks, Supercomputer Hack, Eclipse Exploit</title>
-      <link>https://secubuzz.com/news/norwegian-energy-firm-attacks-supercomputer-hack-e-341882db</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/norwegian-energy-firm-attacks-supercomputer-hack-e-341882db</guid>
-      <description><![CDATA[Norwegian energy firm suffered cyberattacks, a supercomputer was compromised, and a new Nightmare Eclipse exploit emerged. The EU added NoName057(16) to its sanctions list, malware targeted CACs on personal PCs, and Gemini agents focused on Epoch AI. Security teams should monitor indicators, apply patches, and review access controls to mitigate related threats.]]></description>
-      <pubDate>Fri, 20 Nov 2026 14:56:23 GMT</pubDate>
-      <source url="https://www.securityweek.com/in-other-news-norwegian-energy-firm-cyberattacks-supercomputer-hack-new-nightmare-eclipse-exploit/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>White House Replaces Cyber Director with Acting Czar</title>
-      <link>https://secubuzz.com/news/white-house-replaces-cyber-director-with-acting-cz-5cc759b5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/white-house-replaces-cyber-director-with-acting-cz-5cc759b5</guid>
-      <description><![CDATA[Sean Cairncross has left the White House cyber director role, with Kirsten Davies, Pentagon CIO, stepping in as acting cyber czar. The change signals a realignment of U.S. cyber policy oversight, potentially affecting coordination among the White House, Pentagon, and intelligence agencies. Security teams should track the transition for shifts in cyber strategy, reporting protocols, and continuity gaps.]]></description>
-      <pubDate>Fri, 20 Nov 2026 14:30:00 GMT</pubDate>
-      <source url="https://therecord.media/sean-cairncross-out-as-national-cyber-director">The Record</source>
       <category>General</category>
     </item>
   </channel>

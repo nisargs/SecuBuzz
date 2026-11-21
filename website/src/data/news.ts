@@ -387,6 +387,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100756-critical-nginx-1-24-security-upda-91d2834b",
+    "title": "RHSA-2026:100756: Critical: nginx:1.24 security update",
+    "summary": "An update for the nginx:1.24 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100756",
+    "publishedAt": "2026-11-20T18:51:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100756-critical-nginx-1-24-security-upda",
+      "article-91d2834b",
+      "91d2834b",
+      "rhsa-2026-100756-critical-nginx-1-24-security-upda-2ee088",
+      "rhsa-2026-100756-critical-nginx-1-24-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100755-critical-nginx-1-24-security-upda-da98cc4b",
+    "title": "RHSA-2026:100755: Critical: nginx:1.24 security update",
+    "summary": "An update for the nginx:1.24 module is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100755",
+    "publishedAt": "2026-11-20T18:48:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100755-critical-nginx-1-24-security-upda",
+      "article-da98cc4b",
+      "da98cc4b",
+      "rhsa-2026-100755-critical-nginx-1-24-security-upda-2ee088",
+      "rhsa-2026-100755-critical-nginx-1-24-security-update"
+    ]
+  },
+  {
     "slug": "rhsa-2026-100768-critical-nginx-security-update-14feece7",
     "title": "RHSA-2026:100768: Critical: nginx security update",
     "summary": "An update for nginx is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -4063,6 +4101,27 @@ export const news: NewsBrief[] = [
       "article-8e3f6470",
       "8e3f6470",
       "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
+    ]
+  },
+  {
+    "slug": "microsoft-net-exposes-information-via-cve-2026-586-afcfa1bb",
+    "title": "Microsoft .NET Exposes Information via CVE-2026-58649",
+    "summary": "Microsoft .NET Framework suffers an information disclosure flaw (CVE-2026-58649) that can leak sensitive data when processing untrusted input. The flaw stems from improper validation of configuration files, allowing attackers to read arbitrary files; no active exploitation reported, CVSS 5.0. Microsoft has issued an informational patch; administrators should apply the latest .NET update and review file permissions to mitigate exposure.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58649",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-58649"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-net-exposes-information-via-cve-2026-586",
+      "article-afcfa1bb",
+      "afcfa1bb",
+      "microsoft-net-exposes-information-via-cve-2026-586-7468e7",
+      "microsoft-net-exposes-information-via-cve-2026-58649"
     ]
   },
   {
@@ -9615,63 +9674,6 @@ export const news: NewsBrief[] = [
       "3f652df2",
       "open-robotics-rviz-intensitypctransformer-dos-vuln-77f33f",
       "open-robotics-rviz-intensitypctransformer-dos-vulnerability"
-    ]
-  },
-  {
-    "slug": "open-robotics-rviz-axiscolorpctransformer-dos-vuln-5ab0221e",
-    "title": "Open Robotics RViz AxisColorPCTransformer DoS Vulnerability",
-    "summary": "A zero-day out-of-bounds read in Open Robotics RViz’s AxisColorPCTransformer lets network-adjacent attackers trigger a denial-of-service on affected installations. The flaw requires no authentication, delivers a CVSS 6.5 score, and can repeatedly crash the RViz service, disrupting robotic visualization. No patch is yet available; operators should isolate vulnerable nodes or await the forthcoming update.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1025/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "open-robotics-rviz-axiscolorpctransformer-dos-vuln",
-      "article-5ab0221e",
-      "5ab0221e",
-      "open-robotics-rviz-axiscolorpctransformer-dos-vuln-77f340",
-      "open-robotics-rviz-axiscolorpctransformer-dos-vulnerability"
-    ]
-  },
-  {
-    "slug": "open-robotics-rviz-rgbf32pctransformer-dos-vulnera-ab748d8d",
-    "title": "Open Robotics RViz RGBF32PCTransformer DoS Vulnerability",
-    "summary": "A zero-day out-of-bounds read in Open Robotics RViz’s RGBF32PCTransformer lets network-adjacent attackers trigger a denial-of-service on affected installations. The flaw requires no authentication, delivers a CVSS 6.5 score, and can repeatedly crash the RViz service, disrupting robotic visualization. No patch is yet available; operators should isolate vulnerable nodes or await the forthcoming update.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1024/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "open-robotics-rviz-rgbf32pctransformer-dos-vulnera",
-      "article-ab748d8d",
-      "ab748d8d",
-      "open-robotics-rviz-rgbf32pctransformer-dos-vulnera-77f340",
-      "open-robotics-rviz-rgbf32pctransformer-dos-vulnerability"
-    ]
-  },
-  {
-    "slug": "open-robotics-rviz-heap-overflow-enables-remote-co-0822fccb",
-    "title": "Open Robotics RViz Heap Overflow Enables Remote Code Execution",
-    "summary": "A heap-based buffer overflow in Open Robotics RViz allows attackers to execute arbitrary code without authentication. The flaw, rated CVSS 8.8, exploits a missing bounds check in the fillIndexBuffer routine, enabling remote code execution with process privileges. Vendor released an update; security teams should apply the patch immediately or disable network exposure to mitigate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1027/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "open-robotics-rviz-heap-overflow-enables-remote-co",
-      "article-0822fccb",
-      "0822fccb",
-      "open-robotics-rviz-heap-overflow-enables-remote-co-77f340",
-      "open-robotics-rviz-heap-overflow-enables-remote-code-executi"
     ]
   }
 ];
