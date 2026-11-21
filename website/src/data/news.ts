@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-entra-connect-health-breach-exposes-admi-92d37834",
+    "title": "Microsoft Entra Connect Health Breach Exposes Admin Emails",
+    "summary": "Attackers exploited a flaw in Microsoft Entra Connect Health, gaining unauthorized access to administrator email addresses and tenant configuration data. The flaw enabled remote code execution via a malformed authentication token, letting attackers read tenant settings without credentials. Microsoft issued a patch and urged customers to update Entra Connect Health immediately, disabling the affected API endpoint as a temporary mitigation.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+    "publishedAt": "2026-11-21T18:01:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-entra-connect-health-breach-exposes-admi",
+      "article-92d37834",
+      "92d37834",
+      "microsoft-entra-connect-health-breach-exposes-admi-33d14e",
+      "microsoft-entra-connect-health-breach-exposes-admin-emails"
+    ]
+  },
+  {
     "slug": "fbi-breach-targets-national-crime-information-cent-e4f17beb",
     "title": "FBI Breach Targets National Crime Information Center",
     "summary": "FBI systems were breached again, compromising the National Crime Information Center (NCIC), the database shared by law-enforcement agencies. Attackers exploited an undisclosed flaw to gain unauthorized access to NCIC records, potentially exposing investigative data. Investigators are isolating the breach, patching the flaw, and advising agencies to review NCIC access controls.",
@@ -311,21 +330,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "red-hat-issues-critical-php8-4-security-update-20e3c76e",
-    "title": "Red Hat Issues Critical php8.4 Security Update",
-    "summary": "Red Hat released a critical security update for php8.4 on RHEL 10, addressing multiple vulnerabilities that could allow remote code execution. The update fixes several CVEs with CVSS scores up to 9.8, exploitable via crafted PHP input without authentication. Red Hat recommends applying RHSA-2026-100821 immediately; no workarounds exist, and the patch is available through standard RHEL repositories.",
+    "slug": "red-hat-issues-critical-php-8-4-security-update-to-b7e30b9f",
+    "title": "Red Hat Issues Critical PHP 8.4 Security Update to Fix Remote Code Execution Vulnerabilities",
+    "summary": "Red Hat released a critical PHP 8.4 update on RHEL 10, fixing remote code execution flaws triggered by crafted input streams. The patch addresses CVEs with CVSS scores up to 9.8, removing the risk of unauthenticated exploitation. Red Hat urges immediate application of RHSA-2026-100821, with no workarounds, and users to verify PHP 8.4 version to confirm the fix.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "Red Hat Security Advisories",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100821",
     "publishedAt": "2026-11-20T21:26:25.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101251"
+      }
+    ],
     "aliases": [
-      "red-hat-issues-critical-php8-4-security-update",
-      "article-20e3c76e",
-      "20e3c76e",
-      "red-hat-issues-critical-php8-4-security-update-2ee08c"
+      "red-hat-issues-critical-php-8-4-security-update-to",
+      "article-b7e30b9f",
+      "b7e30b9f",
+      "red-hat-issues-critical-php-8-4-security-update-to-2ee08c",
+      "red-hat-issues-critical-php-8-4-security-update-to-fix-remot"
     ]
   },
   {
@@ -9665,25 +9690,6 @@ export const news: NewsBrief[] = [
       "99d7b1f5",
       "krita-tiff-parsing-out-of-bounds-write-enables-rem-77f33c",
       "krita-tiff-parsing-out-of-bounds-write-enables-remote-code-e"
-    ]
-  },
-  {
-    "slug": "krita-heic-parser-zero-day-enables-remote-code-exe-263f6d01",
-    "title": "Krita HEIC Parser Zero-Day Enables Remote Code Execution",
-    "summary": "A zero-day out-of-bounds write in Krita’s HEIC parser lets attackers run code when a user opens a malicious file or visits a malicious page. The flaw, rated CVSS 7.8, exploits a buffer overflow in HEIC parsing and requires user interaction for remote code execution. No patch is available yet; users should avoid HEIC files and apply Krita updates when released.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1017/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "krita-heic-parser-zero-day-enables-remote-code-exe",
-      "article-263f6d01",
-      "263f6d01",
-      "krita-heic-parser-zero-day-enables-remote-code-exe-77f33c",
-      "krita-heic-parser-zero-day-enables-remote-code-execution"
     ]
   }
 ];

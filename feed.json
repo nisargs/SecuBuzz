@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+    "title": "Microsoft Entra Connect Health Breach Exposes Admin Emails",
+    "headline": "Microsoft Entra Connect Health Breach Exposes Admin Emails",
+    "summary": "Attackers exploited a flaw in Microsoft Entra Connect Health, gaining unauthorized access to administrator email addresses and tenant configuration data. The flaw enabled remote code execution via a malformed authentication token, letting attackers read tenant settings without credentials. Microsoft issued a patch and urged customers to update Entra Connect Health immediately, disabling the affected API endpoint as a temporary mitigation.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-21T18:01:58.000Z",
+    "ingestedAt": "2026-11-21T18:43:05.088Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
     "title": "FBI Breach Targets National Crime Information Center",
@@ -262,10 +278,10 @@
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:100821",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100821",
-    "title": "Red Hat Issues Critical php8.4 Security Update",
-    "headline": "Red Hat Issues Critical php8.4 Security Update",
-    "summary": "Red Hat released a critical security update for php8.4 on RHEL 10, addressing multiple vulnerabilities that could allow remote code execution. The update fixes several CVEs with CVSS scores up to 9.8, exploitable via crafted PHP input without authentication. Red Hat recommends applying RHSA-2026-100821 immediately; no workarounds exist, and the patch is available through standard RHEL repositories.",
-    "category": "VULNERABILITY",
+    "title": "Red Hat Issues Critical PHP 8.4 Security Update to Fix Remote Code Execution Vulnerabilities",
+    "headline": "Red Hat Issues Critical PHP 8.4 Security Update to Fix Remote Code Execution Vulnerabilities",
+    "summary": "Red Hat released a critical PHP 8.4 update on RHEL 10, fixing remote code execution flaws triggered by crafted input streams. The patch addresses CVEs with CVSS scores up to 9.8, removing the risk of unauthenticated exploitation. Red Hat urges immediate application of RHSA-2026-100821, with no workarounds, and users to verify PHP 8.4 version to confirm the fix.",
+    "category": "CVE",
     "severity": "CRITICAL",
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-11-20T21:26:25.000Z",
@@ -273,7 +289,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:100821",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101251"
+      }
+    ]
   },
   {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
@@ -8320,22 +8341,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1014/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1017/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1017/",
-    "title": "Krita HEIC Parser Zero-Day Enables Remote Code Execution",
-    "headline": "Krita HEIC Parser Zero-Day Enables Remote Code Execution",
-    "summary": "A zero-day out-of-bounds write in Krita’s HEIC parser lets attackers run code when a user opens a malicious file or visits a malicious page. The flaw, rated CVSS 7.8, exploits a buffer overflow in HEIC parsing and requires user interaction for remote code execution. No patch is available yet; users should avoid HEIC files and apply Krita updates when released.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "ingestedAt": "2026-11-19T00:44:23.667Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1017/",
     "additionalSources": []
   }
 ]

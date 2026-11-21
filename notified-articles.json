@@ -5939,5 +5939,7 @@
   "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1188",
   "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
   "https://cybersecuritynews.com/crowdstrike-to-acquire-zscaler/",
-  "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/"
+  "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+  "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+  "https://access.redhat.com/errata/RHSA-2026:101251"
 ]
