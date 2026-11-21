@@ -285,6 +285,38 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+    "title": "Bazuka Android Malware Hides Credential Theft with Fake Overlays",
+    "headline": "Bazuka Android Malware Hides Credential Theft with Fake Overlays",
+    "summary": "Bazuka is a disclosed Android malware framework that uses fake screen overlays to conceal credential theft and remote device control. It integrates large-language models for scalable victim management, enabling attackers to orchestrate credential harvesting and device-level commands across infected devices. Researchers released technical details but no patch exists; teams should monitor for updates and enforce app-store vetting to mitigate exposure.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-20T16:58:16.000Z",
+    "ingestedAt": "2026-11-21T01:44:21.645Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-194-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-194-aws/",
+    "title": "AWS ssosync Privilege Escalation via Reused Email Addresses",
+    "headline": "AWS ssosync Privilege Escalation via Reused Email Addresses",
+    "summary": "CVE-2026-133199 exposes a privilege-escalation flaw in AWS ssosync before 2.9.5, letting an authenticated user inherit IAM Identity Center group memberships from a reused Google Workspace e-mail address or group name. The flaw results from incorrect privilege assignment during reconciliation, granting elevated permissions without further authentication. AWS released a patch in version 2.9.5; administrators should upgrade immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-20T16:41:29.000Z",
+    "ingestedAt": "2026-11-21T01:44:21.645Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-194-aws/",
+    "additionalSources": []
+  },
+  {
     "id": "https://arcticwolf.com/resources/blog/ai-driven-attacks-are-here-five-steps-cisos-should-take-now/",
     "sourceUrl": "https://arcticwolf.com/resources/blog/ai-driven-attacks-are-here-five-steps-cisos-should-take-now/",
     "title": "AI-Driven Attacks Arrive; CISOs Need Five Steps",
@@ -1421,6 +1453,22 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:100553",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100553",
+    "title": "Red Hat Recommends Python3.9 Update for Security",
+    "headline": "Red Hat Recommends Python3.9 Update for Security",
+    "summary": "Red Hat issued an Important security update for python3.9 on RHEL 9.4, addressing multiple interpreter vulnerabilities. The advisory lists CVE identifiers and CVSS scores, indicating high-severity impact. Red Hat recommends applying the update immediately; no workaround is available, and administrators should verify package versions after installation for critical affected systems.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-20T08:42:59.000Z",
+    "ingestedAt": "2026-11-21T01:44:21.645Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:100553",
+    "additionalSources": []
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:100690",
@@ -3210,6 +3258,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/jpmorgan-third-party-data-breach/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874",
+    "title": "Xbox Gaming Services Elevation of Privilege Vulnerability",
+    "headline": "Xbox Gaming Services Elevation of Privilege Vulnerability",
+    "summary": "CVE-2026-95874 identifies an elevation of privilege vulnerability in Xbox Gaming Services that could allow attackers to gain higher access levels within the service. The flaw stems from insufficient access controls during user session handling, potentially enabling unauthorized privilege escalation without additional authentication. Microsoft has issued an informational acknowledgement; no patch is currently available, and users should monitor for future updates.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "ingestedAt": "2026-11-21T01:44:21.645Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874",
     "additionalSources": []
   },
   {
@@ -8312,73 +8376,5 @@
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/n-able-kills-legacy-apis-patches-17-n-central-zero-days",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
-    "title": "Fugaku Supercomputer Taken Offline After Cyberattack",
-    "headline": "Fugaku Supercomputer Taken Offline After Cyberattack",
-    "summary": "Japan’s RIKEN Center for Computational Science pulled the Fugaku supercomputer offline following a security breach that compromised system integrity. The attack exploited an unspecified vulnerability in the supercomputer’s software stack, allowing attackers to gain unauthorized access to high-performance computing resources. Operators have applied security patches, tightened access controls, and are conducting a full forensic investigation to assess potential data exposure.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-17T20:51:21.000Z",
-    "ingestedAt": "2026-11-17T21:43:27.367Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/",
-    "title": "OPTIMJACK Compromises Vendor Script, Exposes Websites",
-    "headline": "OPTIMJACK Compromises Vendor Script, Exposes Websites",
-    "summary": "The OPTIMJACK supply chain attack compromised a vendor script, allowing attackers to expose and manipulate websites. The compromised script introduced malicious code that could exfiltrate data and serve as a foothold for further attacks; the incident underscores the risk of third-party code. Security teams should audit third-party scripts, enforce strict segmentation, and monitor for anomalous activity.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Unit 42",
-    "publishedAt": "2026-11-17T20:43:14.000Z",
-    "ingestedAt": "2026-11-17T21:43:17.203Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
-    "sourceUrl": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
-    "title": "Quad9 Pulls Out of France Over DNS Blocking Risks",
-    "headline": "Quad9 Pulls Out of France Over DNS Blocking Risks",
-    "summary": "Quad9 was forced to withdraw its public DNS resolver from France after government mandates required content filtering. Mandating DNS-level blocking is technically flawed, as resolvers cannot enforce policy without compromising privacy, performance, and the open Internet. The incident highlights the need for policy that separates DNS resolution from content filtering and promotes transparent, opt-in mechanisms.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-11-17T20:24:27.000Z",
-    "ingestedAt": "2026-11-17T22:44:35.551Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-187-aws/",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-187-aws/",
-    "title": "CVE-2026-130622 and CVE-2026-130623 - Incorrect authorization in credential loading and handling for namespace-scoped issuers in AWS Private CA Connector for Kubernetes (aws-privateca-issuer)",
-    "headline": "CVE-2026-130622 and CVE-2026-130623 - Incorrect authorization in credential loading and handling for namespace-scoped issuers in AWS Private CA Connector for Kubernetes (aws-privateca-issuer)",
-    "summary": "Impacted versions: - aws-privateca-issuer before v1.12.0 - AWS Private CA Connector for Kubernetes EKS add-on before v1.12.0-eksbuild.1 Refer to the article for the most up-to-date and complete information.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "publishedAt": "2026-11-17T20:11:26.000Z",
-    "ingestedAt": "2026-11-17T20:43:45.890Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-130622",
-      "CVE-2026-130623"
-    ],
-    "additionalSources": [],
-    "isFallback": true
   }
 ]

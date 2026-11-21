@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 00:52:39 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 01:48:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CTO of ‘RansomwareHelp’ Indicted for Wire Fraud</title>
@@ -159,6 +159,24 @@
       <pubDate>Fri, 20 Nov 2026 17:01:31 GMT</pubDate>
       <source url="https://cybersecuritynews.com/microsoft-attachment-upload-failures/">Cyber Security News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Bazuka Android Malware Hides Credential Theft with Fake Overlays</title>
+      <link>https://secubuzz.com/news/bazuka-android-malware-hides-credential-theft-with-efc28292</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bazuka-android-malware-hides-credential-theft-with-efc28292</guid>
+      <description><![CDATA[Bazuka is a disclosed Android malware framework that uses fake screen overlays to conceal credential theft and remote device control. It integrates large-language models for scalable victim management, enabling attackers to orchestrate credential harvesting and device-level commands across infected devices. Researchers released technical details but no patch exists; teams should monitor for updates and enforce app-store vetting to mitigate exposure.]]></description>
+      <pubDate>Fri, 20 Nov 2026 16:58:16 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>AWS ssosync Privilege Escalation via Reused Email Addresses</title>
+      <link>https://secubuzz.com/news/aws-ssosync-privilege-escalation-via-reused-email-b0cfb5a6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aws-ssosync-privilege-escalation-via-reused-email-b0cfb5a6</guid>
+      <description><![CDATA[CVE-2026-133199 exposes a privilege-escalation flaw in AWS ssosync before 2.9.5, letting an authenticated user inherit IAM Identity Center group memberships from a reused Google Workspace e-mail address or group name. The flaw results from incorrect privilege assignment during reconciliation, granting elevated permissions without further authentication. AWS released a patch in version 2.9.5; administrators should upgrade immediately to prevent exploitation.]]></description>
+      <pubDate>Fri, 20 Nov 2026 16:41:29 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-194-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>AI-Driven Attacks Arrive; CISOs Need Five Steps</title>
@@ -437,24 +455,6 @@
       <description><![CDATA[Microsoft has begun automatically upgrading eligible unmanaged devices to Windows 11 26H2, bypassing traditional IT management controls. The move risks exposing devices to unverified updates, potentially introducing compatibility issues or security gaps on systems lacking centralized patch oversight. Administrators should monitor device upgrade status, enforce manual update policies, or configure group policies to prevent automatic installation on unmanaged hardware.]]></description>
       <pubDate>Fri, 20 Nov 2026 12:14:28 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hospitals, Universities Hit by BYOD Ransomware Audio Messages</title>
-      <link>https://secubuzz.com/news/hospitals-universities-hit-by-byod-ransomware-audi-3e2fb1ee</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hospitals-universities-hit-by-byod-ransomware-audi-3e2fb1ee</guid>
-      <description><![CDATA[Ransomware attackers targeted hospitals and universities, playing audio ransom messages on infected computers to replace text demands. The campaign used a BYOD vector, embedding voice recordings that announced compromise and demanded payment, increasing user distraction. Security teams should isolate affected endpoints, verify ransomware signatures, and apply vendor patches to stop spread and monitor for audio payloads.]]></description>
-      <pubDate>Fri, 20 Nov 2026 12:06:00 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/byod-ransomware/">Cyber Security News</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>CT Scan Unlocks 400-Year-Old Cryptex Padlock</title>
-      <link>https://secubuzz.com/news/ct-scan-unlocks-400-year-old-cryptex-padlock-50e4e0d2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ct-scan-unlocks-400-year-old-cryptex-padlock-50e4e0d2</guid>
-      <description><![CDATA[Researchers employed computed tomography scanning to reconstruct the internal code mechanism of a 400-year-old cryptex padlock, enabling its successful opening. The technique demonstrates that advanced imaging can bypass mechanical security, revealing that physical locks may be vulnerable to non-invasive analysis. Security designers should consider imaging resistance when creating high-security mechanical devices and evaluate potential forensic exploitation.]]></description>
-      <pubDate>Fri, 20 Nov 2026 12:04:46 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html">Schneier on Security</source>
       <category>General</category>
     </item>
   </channel>

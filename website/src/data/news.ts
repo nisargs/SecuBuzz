@@ -336,6 +336,46 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "bazuka-android-malware-hides-credential-theft-with-efc28292",
+    "title": "Bazuka Android Malware Hides Credential Theft with Fake Overlays",
+    "summary": "Bazuka is a disclosed Android malware framework that uses fake screen overlays to conceal credential theft and remote device control. It integrates large-language models for scalable victim management, enabling attackers to orchestrate credential harvesting and device-level commands across infected devices. Researchers released technical details but no patch exists; teams should monitor for updates and enforce app-store vetting to mitigate exposure.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+    "publishedAt": "2026-11-20T16:58:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bazuka-android-malware-hides-credential-theft-with",
+      "article-efc28292",
+      "efc28292",
+      "bazuka-android-malware-hides-credential-theft-with-114e33",
+      "bazuka-android-malware-hides-credential-theft-with-fake-over"
+    ]
+  },
+  {
+    "slug": "aws-ssosync-privilege-escalation-via-reused-email-b0cfb5a6",
+    "title": "AWS ssosync Privilege Escalation via Reused Email Addresses",
+    "summary": "CVE-2026-133199 exposes a privilege-escalation flaw in AWS ssosync before 2.9.5, letting an authenticated user inherit IAM Identity Center group memberships from a reused Google Workspace e-mail address or group name. The flaw results from incorrect privilege assignment during reconciliation, granting elevated permissions without further authentication. AWS released a patch in version 2.9.5; administrators should upgrade immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-194-aws/",
+    "publishedAt": "2026-11-20T16:41:29.000Z",
+    "cves": [
+      "CVE-2026-133199"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aws-ssosync-privilege-escalation-via-reused-email",
+      "article-b0cfb5a6",
+      "b0cfb5a6",
+      "aws-ssosync-privilege-escalation-via-reused-email-24dbe9",
+      "aws-ssosync-privilege-escalation-via-reused-email-addresses"
+    ]
+  },
+  {
     "slug": "ai-driven-attacks-arrive-cisos-need-five-steps-764d2948",
     "title": "AI-Driven Attacks Arrive; CISOs Need Five Steps",
     "summary": "Claude Mythos Preview, an advanced AI model, identified and linked software vulnerabilities faster than traditional tools. ARTEX recently removed its corporate barrier, granting attackers broader access to the model and increasing threat exposure. CISOs should adopt five proactive steps, tightening AI controls, enhancing vulnerability triage, and updating incident response plans.",
@@ -1657,6 +1697,24 @@ export const news: NewsBrief[] = [
       "f3f00c2c",
       "rhsa-2026-100689-important-python-oauthlib-securit-2ee085",
       "rhsa-2026-100689-important-python-oauthlib-security-update"
+    ]
+  },
+  {
+    "slug": "red-hat-recommends-python3-9-update-for-security-b1698d4f",
+    "title": "Red Hat Recommends Python3.9 Update for Security",
+    "summary": "Red Hat issued an Important security update for python3.9 on RHEL 9.4, addressing multiple interpreter vulnerabilities. The advisory lists CVE identifiers and CVSS scores, indicating high-severity impact. Red Hat recommends applying the update immediately; no workaround is available, and administrators should verify package versions after installation for critical affected systems.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100553",
+    "publishedAt": "2026-11-20T08:42:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-recommends-python3-9-update-for-security",
+      "article-b1698d4f",
+      "b1698d4f",
+      "red-hat-recommends-python3-9-update-for-security-2ee081"
     ]
   },
   {
@@ -3693,6 +3751,27 @@ export const news: NewsBrief[] = [
       "article-8e3f6470",
       "8e3f6470",
       "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
+    ]
+  },
+  {
+    "slug": "xbox-gaming-services-elevation-of-privilege-vulner-1f5ae36d",
+    "title": "Xbox Gaming Services Elevation of Privilege Vulnerability",
+    "summary": "CVE-2026-95874 identifies an elevation of privilege vulnerability in Xbox Gaming Services that could allow attackers to gain higher access levels within the service. The flaw stems from insufficient access controls during user session handling, potentially enabling unauthorized privilege escalation without additional authentication. Microsoft has issued an informational acknowledgement; no patch is currently available, and users should monitor for future updates.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-95874"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "xbox-gaming-services-elevation-of-privilege-vulner",
+      "article-1f5ae36d",
+      "1f5ae36d",
+      "xbox-gaming-services-elevation-of-privilege-vulner-7431de",
+      "xbox-gaming-services-elevation-of-privilege-vulnerability"
     ]
   },
   {
@@ -9614,84 +9693,6 @@ export const news: NewsBrief[] = [
       "article-1175cbe9",
       "1175cbe9",
       "n-able-releases-hf3-patches-for-17-zero-days-3110aa"
-    ]
-  },
-  {
-    "slug": "fugaku-supercomputer-taken-offline-after-cyberatta-a1093be6",
-    "title": "Fugaku Supercomputer Taken Offline After Cyberattack",
-    "summary": "Japan’s RIKEN Center for Computational Science pulled the Fugaku supercomputer offline following a security breach that compromised system integrity. The attack exploited an unspecified vulnerability in the supercomputer’s software stack, allowing attackers to gain unauthorized access to high-performance computing resources. Operators have applied security patches, tightened access controls, and are conducting a full forensic investigation to assess potential data exposure.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
-    "publishedAt": "2026-11-17T20:51:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fugaku-supercomputer-taken-offline-after-cyberatta",
-      "article-a1093be6",
-      "a1093be6",
-      "fugaku-supercomputer-taken-offline-after-cyberatta-1d8537",
-      "fugaku-supercomputer-taken-offline-after-cyberattack"
-    ]
-  },
-  {
-    "slug": "optimjack-compromises-vendor-script-exposes-websit-2452cb37",
-    "title": "OPTIMJACK Compromises Vendor Script, Exposes Websites",
-    "summary": "The OPTIMJACK supply chain attack compromised a vendor script, allowing attackers to expose and manipulate websites. The compromised script introduced malicious code that could exfiltrate data and serve as a foothold for further attacks; the incident underscores the risk of third-party code. Security teams should audit third-party scripts, enforce strict segmentation, and monitor for anomalous activity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/",
-    "publishedAt": "2026-11-17T20:43:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "optimjack-compromises-vendor-script-exposes-websit",
-      "article-2452cb37",
-      "2452cb37",
-      "optimjack-compromises-vendor-script-exposes-websit-1aa78a",
-      "optimjack-compromises-vendor-script-exposes-websites"
-    ]
-  },
-  {
-    "slug": "quad9-pulls-out-of-france-over-dns-blocking-risks-d351e463",
-    "title": "Quad9 Pulls Out of France Over DNS Blocking Risks",
-    "summary": "Quad9 was forced to withdraw its public DNS resolver from France after government mandates required content filtering. Mandating DNS-level blocking is technically flawed, as resolvers cannot enforce policy without compromising privacy, performance, and the open Internet. The incident highlights the need for policy that separates DNS resolution from content filtering and promotes transparent, opt-in mechanisms.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
-    "publishedAt": "2026-11-17T20:24:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "quad9-pulls-out-of-france-over-dns-blocking-risks",
-      "article-d351e463",
-      "d351e463",
-      "quad9-pulls-out-of-france-over-dns-blocking-risks-683a03"
-    ]
-  },
-  {
-    "slug": "cve-2026-130622-and-cve-2026-130623-incorrect-auth-2c8ce2c4",
-    "title": "CVE-2026-130622 and CVE-2026-130623 - Incorrect authorization in credential loading and handling for namespace-scoped issuers in AWS Private CA Connector for Kubernetes (aws-privateca-issuer)",
-    "summary": "Impacted versions: - aws-privateca-issuer before v1.12.0 - AWS Private CA Connector for Kubernetes EKS add-on before v1.12.0-eksbuild.1 Refer to the article for the most up-to-date and complete information.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-187-aws/",
-    "publishedAt": "2026-11-17T20:11:26.000Z",
-    "cves": [
-      "CVE-2026-130622",
-      "CVE-2026-130623"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-130622-and-cve-2026-130623-incorrect-auth",
-      "article-2c8ce2c4",
-      "2c8ce2c4",
-      "cve-2026-130622-and-cve-2026-130623-incorrect-auth-aebc79",
-      "cve-2026-130622-and-cve-2026-130623-incorrect-authorization-"
     ]
   }
 ];
