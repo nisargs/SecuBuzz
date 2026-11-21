@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 05:44:02 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 06:46:49 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>6 Critical F5 BIG-IP . Could Let Hackers Disrupt Websites and Execute Malicious Code</title>
@@ -60,6 +60,24 @@
       <pubDate>Fri, 20 Nov 2026 21:34:36 GMT</pubDate>
       <source url="https://therecord.media/west-virginia-legislature-cyberattack">The Record</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100822: Critical: nginx security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100822-critical-nginx-security-update-1afe8be9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100822-critical-nginx-security-update-1afe8be9</guid>
+      <description><![CDATA[An update for nginx is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Fri, 20 Nov 2026 21:31:25 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100822">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical php8.4 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-php8-4-security-update-20e3c76e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-php8-4-security-update-20e3c76e</guid>
+      <description><![CDATA[Red Hat released a critical security update for php8.4 on RHEL 10, addressing multiple vulnerabilities that could allow remote code execution. The update fixes several CVEs with CVSS scores up to 9.8, exploitable via crafted PHP input without authentication. Red Hat recommends applying RHSA-2026-100821 immediately; no workarounds exist, and the patch is available through standard RHEL repositories.]]></description>
+      <pubDate>Fri, 20 Nov 2026 21:26:25 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100821">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>China&apos;s &apos;Armory Castle&apos; Lays Siege to VMware vCenter Zero-Day</title>
@@ -150,6 +168,24 @@
       <pubDate>Fri, 20 Nov 2026 18:51:43 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Critical Nginx 1.26 Update for RHEL 9.6 EUS</title>
+      <link>https://secubuzz.com/news/critical-nginx-1-26-update-for-rhel-9-6-eus-b1b3f11d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-nginx-1-26-update-for-rhel-9-6-eus-b1b3f11d</guid>
+      <description><![CDATA[Red Hat released a critical security update for nginx:1.26 on RHEL 9.6 Extended Update Support, addressing multiple high-severity vulnerabilities. The CVE references detail remote code execution via crafted HTTP requests, with CVSS scores up to 9.0. Apply the patch immediately or install the errata to mitigate the critical risk today.]]></description>
+      <pubDate>Fri, 20 Nov 2026 18:47:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100757">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Critical Nginx Update for RHEL 9.2 SAP Solutions</title>
+      <link>https://secubuzz.com/news/critical-nginx-update-for-rhel-9-2-sap-solutions-8c37d851</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-nginx-update-for-rhel-9-2-sap-solutions-8c37d851</guid>
+      <description><![CDATA[Red Hat issued a critical security update for nginx on RHEL 9.2 SAP Solutions, fixing several high-severity flaws. The linked CVE entries describe remote code execution via malformed HTTP requests, with CVSS scores up to 9.0. Apply the patch immediately or install the errata to mitigate the critical risk today.]]></description>
+      <pubDate>Fri, 20 Nov 2026 18:45:49 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100769">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server</title>
@@ -420,42 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 14:00:00 GMT</pubDate>
       <source url="https://www.huntress.com/blog/handling-the-nist-800-171-rev-3-transition">Huntress</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>US Threat Center Targets Scam Networks</title>
-      <link>https://secubuzz.com/news/us-threat-center-targets-scam-networks-cdfa009b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-threat-center-targets-scam-networks-cdfa009b</guid>
-      <description><![CDATA[The US Homeland Security Task Force has launched the Threat Disruption Center to target scam and sextortion crime networks. The center will coordinate intelligence sharing, law-enforcement operations, and victim-warning campaigns to disrupt financial fraud. Stakeholders are urged to report suspicious activity and collaborate with the center to strengthen national cyber-crime defenses.]]></description>
-      <pubDate>Fri, 20 Nov 2026 13:49:11 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/11/us-launches-center-to-disrupt-scams-and-warn-victims-sooner">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100751: Critical: nginx:1.26 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100751-critical-nginx-1-26-security-upda-f82e3205</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100751-critical-nginx-1-26-security-upda-f82e3205</guid>
-      <description><![CDATA[An update for the nginx:1.26 module is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Fri, 20 Nov 2026 13:49:08 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100751">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>N-able Breach Causes Global Mail Assure Outage</title>
-      <link>https://secubuzz.com/news/n-able-breach-causes-global-mail-assure-outage-4916ef61</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-breach-causes-global-mail-assure-outage-4916ef61</guid>
-      <description><![CDATA[N-able confirmed a server breach that triggered a worldwide outage of its Mail Assure and SpamExperts Hosted Cloud services. The intrusion exploited an unpatched authentication flaw, allowing attackers to gain privileged access and disrupt email filtering and spam protection. N-able has released a patch and recommends immediate credential rotation and network segmentation to mitigate further compromise.]]></description>
-      <pubDate>Fri, 20 Nov 2026 13:18:36 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical nginx:1.24 RCE Patch</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-nginx-1-24-rce-patch-5c1c1334</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-nginx-1-24-rce-patch-5c1c1334</guid>
-      <description><![CDATA[Red Hat released a critical update for nginx:1.24 on RHEL 9.8, fixing a remote code execution flaw. The vulnerability permits unauthenticated attackers to run arbitrary code with root privileges, and Red Hat assigned a CVSS score of 9.8. Apply the update immediately and verify container integrity, following Red Hat’s mitigation guidance.]]></description>
-      <pubDate>Fri, 20 Nov 2026 13:05:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100750">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

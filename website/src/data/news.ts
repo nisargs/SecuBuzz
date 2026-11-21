@@ -121,6 +121,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100822-critical-nginx-security-update-1afe8be9",
+    "title": "RHSA-2026:100822: Critical: nginx security update",
+    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100822",
+    "publishedAt": "2026-11-20T21:31:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100822-critical-nginx-security-update",
+      "article-1afe8be9",
+      "1afe8be9",
+      "rhsa-2026-100822-critical-nginx-security-update-2ee08c"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-php8-4-security-update-20e3c76e",
+    "title": "Red Hat Issues Critical php8.4 Security Update",
+    "summary": "Red Hat released a critical security update for php8.4 on RHEL 10, addressing multiple vulnerabilities that could allow remote code execution. The update fixes several CVEs with CVSS scores up to 9.8, exploitable via crafted PHP input without authentication. Red Hat recommends applying RHSA-2026-100821 immediately; no workarounds exist, and the patch is available through standard RHEL repositories.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100821",
+    "publishedAt": "2026-11-20T21:26:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-php8-4-security-update",
+      "article-20e3c76e",
+      "20e3c76e",
+      "red-hat-issues-critical-php8-4-security-update-2ee08c"
+    ]
+  },
+  {
     "slug": "china-s-armory-castle-lays-siege-to-vmware-vcenter-a33ee633",
     "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
     "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve. The vulnerability is tracked as CVE-2026-123890.",
@@ -312,6 +348,42 @@ export const news: NewsBrief[] = [
       "b3499ea5",
       "bell-canada-breach-exposes-enterprise-customer-dat-716195",
       "bell-canada-breach-exposes-enterprise-customer-data"
+    ]
+  },
+  {
+    "slug": "critical-nginx-1-26-update-for-rhel-9-6-eus-b1b3f11d",
+    "title": "Critical Nginx 1.26 Update for RHEL 9.6 EUS",
+    "summary": "Red Hat released a critical security update for nginx:1.26 on RHEL 9.6 Extended Update Support, addressing multiple high-severity vulnerabilities. The CVE references detail remote code execution via crafted HTTP requests, with CVSS scores up to 9.0. Apply the patch immediately or install the errata to mitigate the critical risk today.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100757",
+    "publishedAt": "2026-11-20T18:47:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-nginx-1-26-update-for-rhel-9-6-eus",
+      "article-b1b3f11d",
+      "b1b3f11d",
+      "critical-nginx-1-26-update-for-rhel-9-6-eus-2ee088"
+    ]
+  },
+  {
+    "slug": "critical-nginx-update-for-rhel-9-2-sap-solutions-8c37d851",
+    "title": "Critical Nginx Update for RHEL 9.2 SAP Solutions",
+    "summary": "Red Hat issued a critical security update for nginx on RHEL 9.2 SAP Solutions, fixing several high-severity flaws. The linked CVE entries describe remote code execution via malformed HTTP requests, with CVSS scores up to 9.0. Apply the patch immediately or install the errata to mitigate the critical risk today.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100769",
+    "publishedAt": "2026-11-20T18:45:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-nginx-update-for-rhel-9-2-sap-solutions",
+      "article-8c37d851",
+      "8c37d851",
+      "critical-nginx-update-for-rhel-9-2-sap-solutions-2ee088"
     ]
   },
   {
@@ -3919,6 +3991,27 @@ export const news: NewsBrief[] = [
       "article-8e3f6470",
       "8e3f6470",
       "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
+    ]
+  },
+  {
+    "slug": "windows-smb-client-elevation-vulnerability-cve-202-c09d7066",
+    "title": "Windows SMB Client Elevation Vulnerability CVE-2026-69544",
+    "summary": "Microsoft disclosed a Windows SMB Client elevation of privilege flaw, CVE-2026-69544, exploitable via crafted SMB traffic. The flaw stems from improper validation of SMB session parameters, enabling local users to gain higher privileges; no active exploitation has been reported. Microsoft issued an informational update; applying the latest patch mitigates the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69544",
+    "publishedAt": "2026-11-19T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-69544"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-smb-client-elevation-vulnerability-cve-202",
+      "article-c09d7066",
+      "c09d7066",
+      "windows-smb-client-elevation-vulnerability-cve-202-745a5e",
+      "windows-smb-client-elevation-vulnerability-cve-2026-69544"
     ]
   },
   {
@@ -9587,101 +9680,6 @@ export const news: NewsBrief[] = [
       "0beae806",
       "cold-relic-uses-stolen-google-workspace-data-to-br-6f258b",
       "cold-relic-uses-stolen-google-workspace-data-to-breach"
-    ]
-  },
-  {
-    "slug": "iverify-basic-empowers-device-security-checks-b48b7505",
-    "title": "iVerify Basic Empowers Device Security Checks",
-    "summary": "iVerify Basic is a mobile security app for individuals seeking device integrity checks and privacy enhancements. Available on iOS and Android, the app consolidates scan controls and status on a single Device tab, allowing users to run scans and view findings. After each scan, the app records the last check time and displays results, helping users maintain ongoing device health.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/product-showcase-iverify-basic/",
-    "publishedAt": "2026-11-18T05:30:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "iverify-basic-empowers-device-security-checks",
-      "article-b48b7505",
-      "b48b7505",
-      "iverify-basic-empowers-device-security-checks-1a3bf7"
-    ]
-  },
-  {
-    "slug": "apache-http-2-rce-cve-2026-119618-actively-exploit-7b8b7378",
-    "title": "Apache HTTP/2 RCE CVE-2026-119618 Actively Exploited",
-    "summary": "A critical flaw in Apache HTTP/2 module mod_http2, CVE-2026-119618, permits unauthenticated remote code execution. The vulnerability, rated CVSS 8.1/10 CSA, has been actively exploited since November 17, allowing attackers to run arbitrary code without credentials. Apache released 2.4.71 on November 11 to patch the flaw; teams should upgrade immediately and monitor exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/apache-http-server-rce-exploitation/",
-    "publishedAt": "2026-11-18T05:06:49.000Z",
-    "cves": [
-      "CVE-2026-119618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apache-http-2-rce-cve-2026-119618-actively-exploit",
-      "article-7b8b7378",
-      "7b8b7378",
-      "apache-http-2-rce-cve-2026-119618-actively-exploit-4fc78a",
-      "apache-http-2-rce-cve-2026-119618-actively-exploited"
-    ]
-  },
-  {
-    "slug": "fraudsters-use-virtual-cameras-for-identity-checks-85780284",
-    "title": "Fraudsters Use Virtual Cameras for Identity Checks",
-    "summary": "Fraudsters use virtual cameras to feed facial data into identity checks, a trend noted in Entrust’s 2027 Identity Fraud Report. Document fraud, the largest attack category, fell 19% year over year, yet medium-sophistication attacks-alterations and counterfeits-still make up nearly 39% of cases. Physical counterfeits account for 61.1% of fraudulent submissions, highlighting the need for stricter document authenticity checks during verification.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/entrust-document-verification-fraud-report/",
-    "publishedAt": "2026-11-18T05:00:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fraudsters-use-virtual-cameras-for-identity-checks",
-      "article-85780284",
-      "85780284",
-      "fraudsters-use-virtual-cameras-for-identity-checks-3d6d10"
-    ]
-  },
-  {
-    "slug": "flipper-devices-unveils-flipper-one-linux-multi-to-b86cbfb8",
-    "title": "Flipper Devices Unveils Flipper One Linux Multi-Tool",
-    "summary": "Flipper Devices announced the Flipper One, a portable Linux computer designed for network testing, hardware projects, and security research. The device bundles advanced network security tools and targets hobbyists, researchers, and penetration testers seeking an on-the-go platform. Backers can pledge starting at $399 via Kickstarter, with shipping slated for July 2027; the campaign runs until December 17, 2026.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/flipper-one-linux-multi-tool/",
-    "publishedAt": "2026-11-18T03:35:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "flipper-devices-unveils-flipper-one-linux-multi-to",
-      "article-b86cbfb8",
-      "b86cbfb8",
-      "flipper-devices-unveils-flipper-one-linux-multi-to-23768c",
-      "flipper-devices-unveils-flipper-one-linux-multi-tool"
-    ]
-  },
-  {
-    "slug": "microsoft-s-agent-framework-pypi-package-hacked-to-46a332cd",
-    "title": "Microsoft’s Agent Framework PyPI Package Hacked to Steal Azure and GitHub Credentials",
-    "summary": "Hackers published two malicious versions of Microsoft’s agent-framework package on the Python Package Index (PyPI) on November 17, 2026. Versions 1.26.1 and 1.26.2 contained a credential stealer that could run during normal Python startup, even if an application never imported Agent Framework. The malware targeted Azure identities, GitHub credentials, and secrets used in automated builds.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/microsofts-agent-framework-pypi-package/",
-    "publishedAt": "2026-11-18T03:30:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-s-agent-framework-pypi-package-hacked-to",
-      "article-46a332cd",
-      "46a332cd",
-      "microsoft-s-agent-framework-pypi-package-hacked-to-262c9d",
-      "microsoft-s-agent-framework-pypi-package-hacked-to-steal-azu"
     ]
   }
 ];

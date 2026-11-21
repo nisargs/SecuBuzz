@@ -6661,5 +6661,10 @@
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85794",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88151",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85910",
-  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87698"
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87698",
+  "https://access.redhat.com/errata/RHSA-2026:100822",
+  "https://access.redhat.com/errata/RHSA-2026:100821",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69544",
+  "https://access.redhat.com/errata/RHSA-2026:100769",
+  "https://access.redhat.com/errata/RHSA-2026:100757"
 ]
