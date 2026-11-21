@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 23:48:40 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 00:52:39 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CTO of ‘RansomwareHelp’ Indicted for Wire Fraud</title>
+      <link>https://secubuzz.com/news/cto-of-ransomwarehelp-indicted-for-wire-fraud-9b21c3c1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cto-of-ransomwarehelp-indicted-for-wire-fraud-9b21c3c1</guid>
+      <description><![CDATA[The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use "advanced cryptographic tools" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption key and charging victims a markup for work that was never performed.]]></description>
+      <pubDate>Sat, 21 Nov 2026 00:36:39 GMT</pubDate>
+      <source url="https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/">Krebs on Security</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Com Group Conducts Vishing Data Theft Extortion</title>
+      <link>https://secubuzz.com/news/com-group-conducts-vishing-data-theft-extortion-64ff6884</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/com-group-conducts-vishing-data-theft-extortion-64ff6884</guid>
+      <description><![CDATA[Com affiliates execute vishing attacks, cloud data theft, and extortion campaigns targeting healthcare and finance organizations. Attackers leverage voice phishing to harvest credentials, exfiltrate cloud-stored data, and demand ransom payments, resulting in operational disruption and sensitive data exposure. Unit 42 recommends phishing-resistant multi-factor authentication, continuous cloud monitoring, and robust incident response planning to mitigate risks.]]></description>
+      <pubDate>Fri, 20 Nov 2026 22:00:25 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/com-affiliate-vishing-attacks/">Unit 42</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>West Virginia Legislature Suffers Cyber Incident</title>
+      <link>https://secubuzz.com/news/west-virginia-legislature-suffers-cyber-incident-11988aa7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/west-virginia-legislature-suffers-cyber-incident-11988aa7</guid>
+      <description><![CDATA[A cybersecurity incident disrupted West Virginia Legislature IT systems starting Thursday and continued through Friday. The attack vector remains undisclosed, but containment prevented lateral movement to other state government networks. Legislative IT teams are actively restoring systems while investigators assess potential data compromise and implement additional safeguards.]]></description>
+      <pubDate>Fri, 20 Nov 2026 21:34:36 GMT</pubDate>
+      <source url="https://therecord.media/west-virginia-legislature-cyberattack">The Record</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>China&apos;s &apos;Armory Castle&apos; Lays Siege to VMware vCenter Zero-Day</title>
       <link>https://secubuzz.com/news/china-s-armory-castle-lays-siege-to-vmware-vcenter-a33ee633</link>
@@ -15,6 +42,15 @@
       <pubDate>Fri, 20 Nov 2026 21:03:27 GMT</pubDate>
       <source url="https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day">Dark Reading</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>House Committee Rebukes Chinese AI Adoption</title>
+      <link>https://secubuzz.com/news/house-committee-rebukes-chinese-ai-adoption-a1717d24</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/house-committee-rebukes-chinese-ai-adoption-a1717d24</guid>
+      <description><![CDATA[The House Homeland Security Committee launched an investigation into U.S. corporate adoption of Chinese open-weight AI models. Lawmakers cite supply chain risks, potential data exfiltration, and intellectual property theft as primary concerns for national security. The committee recommends stricter vetting of AI model provenance and enhanced export controls to mitigate strategic vulnerabilities.]]></description>
+      <pubDate>Fri, 20 Nov 2026 20:25:00 GMT</pubDate>
+      <source url="https://therecord.media/chinese-open-weight-AI-use-by-US-companies-house-investigation">The Record</source>
+      <category>General</category>
     </item>
     <item>
       <title>How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)</title>
@@ -60,6 +96,15 @@
       <pubDate>Fri, 20 Nov 2026 19:17:04 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/sap-security-advisory-november-2025-monthly-rollup-av25-738">Canadian Centre for Cyber Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Releases Chrome Dev 160 for Android</title>
+      <link>https://secubuzz.com/news/google-releases-chrome-dev-160-for-android-aa5356a4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-releases-chrome-dev-160-for-android-aa5356a4</guid>
+      <description><![CDATA[Google released Chrome Dev version 160.0.8171.0 for Android via the Google Play store, marking the latest development channel milestone. The update incorporates unspecified security patches and feature enhancements documented in the Chromium git log and official blog posts. Android users should install this release promptly to obtain the latest stability improvements and vulnerability mitigations.]]></description>
+      <pubDate>Fri, 20 Nov 2026 19:13:32 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-dev-for-android-update_0498913154.html">Google Chrome Releases</source>
+      <category>General</category>
     </item>
     <item>
       <title>Arctic Wolf reports record October threat activity</title>
@@ -410,51 +455,6 @@
       <description><![CDATA[Researchers employed computed tomography scanning to reconstruct the internal code mechanism of a 400-year-old cryptex padlock, enabling its successful opening. The technique demonstrates that advanced imaging can bypass mechanical security, revealing that physical locks may be vulnerable to non-invasive analysis. Security designers should consider imaging resistance when creating high-security mechanical devices and evaluate potential forensic exploitation.]]></description>
       <pubDate>Fri, 20 Nov 2026 12:04:46 GMT</pubDate>
       <source url="https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html">Schneier on Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CISA Adds Four Known Exploited Vulnerabilities to Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-four-known-exploited-vulnerabilities-to-b38e652d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-four-known-exploited-vulnerabilities-to-b38e652d</guid>
-      <description><![CDATA[BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. Aware of an exploited vulnerability not currently listed in the KEV Catalog?. The vulnerabilities are tracked as CVE-2025-42884, CVE-2026-76466, CVE-2026-123890.]]></description>
-      <pubDate>Fri, 20 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical Update for nginx</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-update-for-nginx-12d2a366</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-update-for-nginx-12d2a366</guid>
-      <description><![CDATA[Red Hat issued a critical security update for nginx on RHEL 9, addressing multiple high-severity vulnerabilities. The update mitigates several CVE-identified flaws, each with a CVSS base score of 9.0 or higher, and prevents unauthenticated remote code execution. Administrators should apply the RHSA-2026:100748 package immediately and verify that all affected services are restarted.]]></description>
-      <pubDate>Fri, 20 Nov 2026 11:44:59 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100748">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates nginx:1.24 on RHEL 9</title>
-      <link>https://secubuzz.com/news/red-hat-updates-nginx-1-24-on-rhel-9-4c76a417</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-nginx-1-24-on-rhel-9-4c76a417</guid>
-      <description><![CDATA[Red Hat issued a critical update for nginx:1.24 on RHEL 9, fixing vulnerabilities that could enable remote code execution. The advisory cites multiple CVE IDs with high CVSS scores, though no public exploits have been disclosed. Administrators should apply the update or install the patches immediately to prevent potential exploitation.]]></description>
-      <pubDate>Fri, 20 Nov 2026 11:44:29 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100746">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SBC Medical Group Breach Exposes 2 Million Customers</title>
-      <link>https://secubuzz.com/news/sbc-medical-group-breach-exposes-2-million-custome-ca25a581</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sbc-medical-group-breach-exposes-2-million-custome-ca25a581</guid>
-      <description><![CDATA[Threat actors accessed databases containing customer information linked to SBC Medical Group clinics in Japan. The breach exposed personal data of over 2 million individuals, potentially including names, addresses, and medical records, though specific data types were not disclosed. SBC Medical Group has notified affected customers and is investigating the incident, urging users to monitor for suspicious activity.]]></description>
-      <pubDate>Fri, 20 Nov 2026 11:36:51 GMT</pubDate>
-      <source url="https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AI-Driven ARTEX Automates Attacks Without Zero-Days</title>
-      <link>https://secubuzz.com/news/ai-driven-artex-automates-attacks-without-zero-day-3093e949</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-artex-automates-attacks-without-zero-day-3093e949</guid>
-      <description><![CDATA[Attackers employ the open-source ARTEX framework, an AI-driven tool that automates network intrusion without relying on zero-day exploits. ARTEX scans for exposed applications, weak passwords, and loose permissions, persisting against defenses longer than typical human attackers. Security teams should harden configurations, enforce strong authentication, and monitor for automated scanning activity to mitigate ARTEX-driven threats.]]></description>
-      <pubDate>Fri, 20 Nov 2026 11:27:05 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-ai-powered-artex-framework/">Cyber Security News</source>
       <category>General</category>
     </item>
   </channel>

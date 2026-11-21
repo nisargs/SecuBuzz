@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cto-of-ransomwarehelp-indicted-for-wire-fraud-9b21c3c1",
+    "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+    "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption key and charging victims a markup for work that was never performed.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "Krebs on Security",
+    "sourceUrl": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+    "publishedAt": "2026-11-21T00:36:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cto-of-ransomwarehelp-indicted-for-wire-fraud",
+      "article-9b21c3c1",
+      "9b21c3c1",
+      "cto-of-ransomwarehelp-indicted-for-wire-fraud-308466"
+    ]
+  },
+  {
+    "slug": "com-group-conducts-vishing-data-theft-extortion-64ff6884",
+    "title": "Com Group Conducts Vishing Data Theft Extortion",
+    "summary": "Com affiliates execute vishing attacks, cloud data theft, and extortion campaigns targeting healthcare and finance organizations. Attackers leverage voice phishing to harvest credentials, exfiltrate cloud-stored data, and demand ransom payments, resulting in operational disruption and sensitive data exposure. Unit 42 recommends phishing-resistant multi-factor authentication, continuous cloud monitoring, and robust incident response planning to mitigate risks.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/com-affiliate-vishing-attacks/",
+    "publishedAt": "2026-11-20T22:00:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "com-group-conducts-vishing-data-theft-extortion",
+      "article-64ff6884",
+      "64ff6884",
+      "com-group-conducts-vishing-data-theft-extortion-184882"
+    ]
+  },
+  {
+    "slug": "west-virginia-legislature-suffers-cyber-incident-11988aa7",
+    "title": "West Virginia Legislature Suffers Cyber Incident",
+    "summary": "A cybersecurity incident disrupted West Virginia Legislature IT systems starting Thursday and continued through Friday. The attack vector remains undisclosed, but containment prevented lateral movement to other state government networks. Legislative IT teams are actively restoring systems while investigators assess potential data compromise and implement additional safeguards.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/west-virginia-legislature-cyberattack",
+    "publishedAt": "2026-11-20T21:34:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "west-virginia-legislature-suffers-cyber-incident",
+      "article-11988aa7",
+      "11988aa7",
+      "west-virginia-legislature-suffers-cyber-incident-b1be85"
+    ]
+  },
+  {
     "slug": "china-s-armory-castle-lays-siege-to-vmware-vcenter-a33ee633",
     "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
     "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve. The vulnerability is tracked as CVE-2026-123890.",
@@ -29,6 +83,24 @@ export const news: NewsBrief[] = [
       "a33ee633",
       "china-s-armory-castle-lays-siege-to-vmware-vcenter-5bc9ce",
       "china-s-armory-castle-lays-siege-to-vmware-vcenter-zero-day"
+    ]
+  },
+  {
+    "slug": "house-committee-rebukes-chinese-ai-adoption-a1717d24",
+    "title": "House Committee Rebukes Chinese AI Adoption",
+    "summary": "The House Homeland Security Committee launched an investigation into U.S. corporate adoption of Chinese open-weight AI models. Lawmakers cite supply chain risks, potential data exfiltration, and intellectual property theft as primary concerns for national security. The committee recommends stricter vetting of AI model provenance and enhanced export controls to mitigate strategic vulnerabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/chinese-open-weight-AI-use-by-US-companies-house-investigation",
+    "publishedAt": "2026-11-20T20:25:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "house-committee-rebukes-chinese-ai-adoption",
+      "article-a1717d24",
+      "a1717d24",
+      "house-committee-rebukes-chinese-ai-adoption-5734e3"
     ]
   },
   {
@@ -129,6 +201,24 @@ export const news: NewsBrief[] = [
       "article-7e518ccc",
       "7e518ccc",
       "sap-releases-multi-product-security-updates-7f945b"
+    ]
+  },
+  {
+    "slug": "google-releases-chrome-dev-160-for-android-aa5356a4",
+    "title": "Google Releases Chrome Dev 160 for Android",
+    "summary": "Google released Chrome Dev version 160.0.8171.0 for Android via the Google Play store, marking the latest development channel milestone. The update incorporates unspecified security patches and feature enhancements documented in the Chromium git log and official blog posts. Android users should install this release promptly to obtain the latest stability improvements and vulnerability mitigations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-android-update_0498913154.html",
+    "publishedAt": "2026-11-20T19:13:32.556Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-releases-chrome-dev-160-for-android",
+      "article-aa5356a4",
+      "aa5356a4",
+      "google-releases-chrome-dev-160-for-android-4d436c"
     ]
   },
   {
@@ -1551,6 +1641,63 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-100689-important-python-oauthlib-securit-f3f00c2c",
+    "title": "RHSA-2026:100689: Important: python-oauthlib security update",
+    "summary": "An update for python-oauthlib is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100689",
+    "publishedAt": "2026-11-20T08:44:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100689-important-python-oauthlib-securit",
+      "article-f3f00c2c",
+      "f3f00c2c",
+      "rhsa-2026-100689-important-python-oauthlib-securit-2ee085",
+      "rhsa-2026-100689-important-python-oauthlib-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100690-important-python-oauthlib-securit-cddbb364",
+    "title": "RHSA-2026:100690: Important: python-oauthlib security update",
+    "summary": "An update for python-oauthlib is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100690",
+    "publishedAt": "2026-11-20T08:42:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100690-important-python-oauthlib-securit",
+      "article-cddbb364",
+      "cddbb364",
+      "rhsa-2026-100690-important-python-oauthlib-securit-2ee085",
+      "rhsa-2026-100690-important-python-oauthlib-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100644-important-python3-9-security-upda-784509aa",
+    "title": "RHSA-2026:100644: Important: python3.9 security update",
+    "summary": "An update for python3.9 is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100644",
+    "publishedAt": "2026-11-20T08:41:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100644-important-python3-9-security-upda",
+      "article-784509aa",
+      "784509aa",
+      "rhsa-2026-100644-important-python3-9-security-upda-2ee084",
+      "rhsa-2026-100644-important-python3-9-security-update"
+    ]
+  },
+  {
     "slug": "rhsa-2026-100691-important-python-oauthlib-securit-692cf308",
     "title": "RHSA-2026:100691: Important: python-oauthlib security update",
     "summary": "An update for python-oauthlib is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -2063,6 +2210,28 @@ export const news: NewsBrief[] = [
       "article-6ce10a75",
       "6ce10a75",
       "rhsa-2026-100674-important-fltk-security-update-2ee085"
+    ]
+  },
+  {
+    "slug": "nginx-exposes-multiple-high-severity-vulnerabiliti-531b7dc5",
+    "title": "NGINX Exposes Multiple High-Severity Vulnerabilities",
+    "summary": "Fortinet FortiGuard PSIRT disclosed high-severity CVEs that compromise NGINX OSS and Plus versions 1.31.0-1.30.6, enabling memory corruption via crafted HTTP requests. The CVEs, including CVE-2026-123007 and CVE-2026-123633, score 8.1 on CVSSv3 and allow unauthenticated remote code execution. NGINX has released patches; administrators should upgrade to the latest stable version or apply the vendor-issued security updates immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-279",
+    "publishedAt": "2026-11-20T08:00:00.000Z",
+    "cves": [
+      "CVE-2026-123007",
+      "CVE-2026-123633"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "nginx-exposes-multiple-high-severity-vulnerabiliti",
+      "article-531b7dc5",
+      "531b7dc5",
+      "nginx-exposes-multiple-high-severity-vulnerabiliti-3bcda5",
+      "nginx-exposes-multiple-high-severity-vulnerabilities"
     ]
   },
   {
@@ -9523,177 +9692,6 @@ export const news: NewsBrief[] = [
       "2c8ce2c4",
       "cve-2026-130622-and-cve-2026-130623-incorrect-auth-aebc79",
       "cve-2026-130622-and-cve-2026-130623-incorrect-authorization-"
-    ]
-  },
-  {
-    "slug": "oracle-issues-november-2026-patch-advisory-123ac931",
-    "title": "Oracle Issues November 2026 Patch Advisory",
-    "summary": "Oracle issued a critical patch update advisory for November 2026, addressing multiple undisclosed security issues. The advisory does not list specific CVE identifiers or detailed exploit mechanisms, but it is part of Oracle's ongoing security maintenance program. Security teams should apply the available patches as soon as they become available to maintain system integrity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Oracle Security Alerts",
-    "sourceUrl": "https://www.oracle.com/security-alerts/cspunov2026.html",
-    "publishedAt": "2026-11-17T20:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-issues-november-2026-patch-advisory",
-      "article-123ac931",
-      "123ac931",
-      "oracle-issues-november-2026-patch-advisory-5662be"
-    ]
-  },
-  {
-    "slug": "chrome-158-released-for-android-f361bc03",
-    "title": "Chrome 158 Released for Android",
-    "summary": "Google released Chrome 158 (158.0.8127.42) for Android, adding stability and performance improvements. The update mirrors the security fixes present in the corresponding desktop releases for Windows, Mac, and Linux. Users can obtain the new version via Google Play within the next few days, and bug reports should be filed through the official channels.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0281314271.html",
-    "publishedAt": "2026-11-17T19:57:34.246Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-158-released-for-android",
-      "article-f361bc03",
-      "f361bc03",
-      "chrome-158-released-for-android-6104b3"
-    ]
-  },
-  {
-    "slug": "apple-reports-outages-in-icloud-mail-and-related-s-652d6c34",
-    "title": "Apple Reports Outages in iCloud Mail and Related Services",
-    "summary": "Apple announced outages impacting iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork services. The disruptions are attributed to internal infrastructure issues, causing service unavailability for users attempting to access email, authentication, and educational management tools. Apple is working to restore services and advises users to monitor status updates via the Apple System Status page.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/",
-    "publishedAt": "2026-11-17T19:24:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-reports-outages-in-icloud-mail-and-related-s",
-      "article-652d6c34",
-      "652d6c34",
-      "apple-reports-outages-in-icloud-mail-and-related-s-4e2685",
-      "apple-reports-outages-in-icloud-mail-and-related-services"
-    ]
-  },
-  {
-    "slug": "aws-efs-utils-toctou-race-condition-cve-2026-13062-105392fa",
-    "title": "AWS efs-utils TOCTOU Race Condition CVE-2026-130621",
-    "summary": "CVE-2026-130621 is a TOCTOU race condition in AWS efs-utils port selection that can let a local user mount EFS volumes on a host. Concurrent mounts enable the attacker to read and write data on other EFS or S3 file systems on the same host, bypassing IAM restrictions. Patches for amazon-efs-utils 3.3.5 and aws-efs-csi-driver are available; upgrade or restrict mount privileges.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-186-aws/",
-    "publishedAt": "2026-11-17T19:18:32.000Z",
-    "cves": [
-      "CVE-2026-130621"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aws-efs-utils-toctou-race-condition-cve-2026-13062",
-      "article-105392fa",
-      "105392fa",
-      "aws-efs-utils-toctou-race-condition-cve-2026-13062-ca0a03",
-      "aws-efs-utils-toctou-race-condition-cve-2026-130621"
-    ]
-  },
-  {
-    "slug": "control-systems-codesys-security-advisory-av26-11-e340cd7b",
-    "title": "[Control systems] CODESYS security advisory (AV26-1169)",
-    "summary": "Serial number: AV26-1169 Date: November 17, 2026 As of November 17, 2026, CODESYS is affected by vulnerabilities in the following products: CODESYS Automation Server Connector Prior to 1.40.0.0 CODESYS Service Tool Prior to 1.40.0.0 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/control-systems-codesys-security-advisory-av26-1169",
-    "publishedAt": "2026-11-17T19:17:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "control-systems-codesys-security-advisory-av26-11",
-      "article-e340cd7b",
-      "e340cd7b",
-      "control-systems-codesys-security-advisory-av26-11-3684a8",
-      "control-systems-codesys-security-advisory-av26-1169"
-    ]
-  },
-  {
-    "slug": "chrome-158-released-with-204-security-fixes-d21a3ac3",
-    "title": "Chrome 158 Released with 204 Security Fixes",
-    "summary": "Google Chrome promoted version 158 to the stable channel for Windows, Mac, and Linux, delivering 204 security fixes. The update addresses a critical use-after-free flaw in WebView (CVE-2026-130963) that could allow remote code execution if exploited. Users should install the new release immediately; the Chrome Security Page lists all patches and the update is available through standard OS update mechanisms.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01699533288.html",
-    "publishedAt": "2026-11-17T19:12:07.339Z",
-    "cves": [
-      "CVE-2026-130963"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-158-released-with-204-security-fixes",
-      "article-d21a3ac3",
-      "d21a3ac3",
-      "chrome-158-released-with-204-security-fixes-7f7395"
-    ]
-  },
-  {
-    "slug": "kazakh-ransomware-suspect-extradited-from-italy-7a0c4876",
-    "title": "Kazakh Ransomware Suspect Extradited from Italy",
-    "summary": "U.S. authorities extradited Roman Khlynovskiy from Italy after accusing him of orchestrating ransomware attacks against healthcare organizations, schools, and companies as part of the 8 Digits Team linked to INC and Lynx. The suspect allegedly coordinated attacks that leveraged ransomware to extort victims, targeting critical infrastructure. The extradition follows U.S. indictments and signals ongoing international cooperation to prosecute cybercriminals.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/kazakh-suspected-extradited-charges-8-digits-team-inc-lynx",
-    "publishedAt": "2026-11-17T19:09:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kazakh-ransomware-suspect-extradited-from-italy",
-      "article-7a0c4876",
-      "7a0c4876",
-      "kazakh-ransomware-suspect-extradited-from-italy-58d0d6"
-    ]
-  },
-  {
-    "slug": "chinese-state-group-developing-automated-attack-to-936b6624",
-    "title": "Chinese state group developing automated attack tool for cyber espionage, Google says",
-    "summary": "Google released its latest AI Threat Tracker report on Monday, writing that threat actors are rapidly evolving their use of artificial intelligence in attacks - now leaning more heavily on autonomous multi-agent offensive frameworks like Artex, CAIRN, CyberStrikeAI and PentAGI to execute multi-stage intrusions at greater operational velocity.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/chinese-state-group-developing-automated-attack-tool-espionage",
-    "publishedAt": "2026-11-17T18:50:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chinese-state-group-developing-automated-attack-to",
-      "article-936b6624",
-      "936b6624",
-      "chinese-state-group-developing-automated-attack-to-7e5be3",
-      "chinese-state-group-developing-automated-attack-tool-for-cyb"
-    ]
-  },
-  {
-    "slug": "compromised-fireworks-key-enables-cursor-data-brea-1302a567",
-    "title": "Compromised Fireworks Key Enables Cursor Data Breach",
-    "summary": "Threat actors leveraged a compromised key issued to AI platform Fireworks to gain unauthorized access to Cursor’s data and credentials. The breach exposed sensitive user information and authentication tokens, potentially enabling further credential theft or lateral movement within Cursor’s ecosystem. Cursor should immediately rotate compromised keys, audit access logs, and enforce multi-factor authentication to mitigate future exploitation.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
-    "publishedAt": "2026-11-17T18:38:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "compromised-fireworks-key-enables-cursor-data-brea",
-      "article-1302a567",
-      "1302a567",
-      "compromised-fireworks-key-enables-cursor-data-brea-54b178",
-      "compromised-fireworks-key-enables-cursor-data-breach"
     ]
   }
 ];

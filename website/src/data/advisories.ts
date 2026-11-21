@@ -102,6 +102,114 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-122247",
+    "cveID": "CVE-2026-122247",
+    "slug": "cve-2026-122247",
+    "vendor": "npm",
+    "product": "@budibase/server",
+    "name": "Budibase: Unauthenticated global-admin & database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`)",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-284",
+    "ransomware": false,
+    "description": "On a self-hosted, single-tenant Budibase instance (multiTenancy:false), the public bootstrap endpoint POST /api/global/users/init remains fully exploitable after the instance has been provisioned. Its \"already initialised\" guard (checkAnyUserExists()) is evaluated inside a tenant-scoped database context derived from an attacker-controlled tenantId in the request body.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-25qc-m4pw-2w8r"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122247"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-122244",
+    "cveID": "CVE-2026-122244",
+    "slug": "cve-2026-122244",
+    "vendor": "npm",
+    "product": "@budibase/server",
+    "name": "Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 7.7,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "A low-privileged application end-user (role BASIC - not a builder or admin, and on a public data-collection form, an unauthenticated visitor) can store an HTML/JavaScript payload in ordinary row data.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r2q3-7m4h-63qg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122244"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-132276",
+    "cveID": "CVE-2026-132276",
+    "slug": "cve-2026-132276",
+    "vendor": "Pip",
+    "product": "wcmatch",
+    "name": "wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags)",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "With default flags, a pattern that contains several wildcards takes polynomial time, O(n^k) for k stars, to reject a crafted file name. The pattern is an ordinary developer constant such as ____.csv; only the string being matched comes from the attacker. A 255-byte file name (the maximum on common filesystems) takes 73 s with fnmatch.fnmatch() and 86 s with glob.globmatch().",
+    "requiredAction": "Upgrade wcmatch to version 11.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-53pm-wgxf-c6qf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132276"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-132277",
+    "cveID": "CVE-2026-132277",
+    "slug": "cve-2026-132277",
+    "vendor": "Pip",
+    "product": "inscriptis",
+    "name": "Inscriptis: Quadratic memory growth from sibling <table> elements in get_text()",
+    "dateAdded": "2026-11-20",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "Every sibling adds another level of the parent's indentation, so the size of get_text() output grows quadratically with the number of tables. In the measurements below, a 240 KB HTML document produces about 1 billion characters and uses about 1 GB of memory.",
+    "requiredAction": "Upgrade inscriptis to version 2.7.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-q87h-c5m7-659j"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132277"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-132275",
     "cveID": "CVE-2026-132275",
     "slug": "cve-2026-132275",
@@ -1339,114 +1447,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77369"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77367",
-    "cveID": "CVE-2026-77367",
-    "slug": "cve-2026-77367",
-    "vendor": "Go",
-    "product": "daptin · daptin",
-    "name": "Daptin: Unauthenticated SQL Injection via the `sort` query parameter on every entity list endpoint",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 9.4,
-    "severity": "Critical",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "An unauthenticated attacker can inject arbitrary SQL through the sort query parameter accepted by Daptin's generic entity list endpoint (GET /api/<entity>), which every table in a Daptin instance exposes.",
-    "requiredAction": "Upgrade daptin · daptin to version 0.12.30 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hq2p-f2vj-v3cm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77367"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77359",
-    "cveID": "CVE-2026-77359",
-    "slug": "cve-2026-77359",
-    "vendor": "Pip",
-    "product": "jupyter-mcp-server",
-    "name": "Jupyter MCP Server: Browser DNS rebinding can hijack the Jupyter backend through management routes",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 9.3,
-    "severity": "Critical",
-    "cwe": "CWE-350",
-    "ransomware": false,
-    "description": "Standalone streamable-http mode in datalayer/jupyter-mcp-server rejects forged Host and Origin headers on /mcp, but custom management routes mounted on the same application do not get the same browser-origin protection.",
-    "requiredAction": "Upgrade jupyter-mcp-server to version 1.0.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9x8x-crjq-g64h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77359"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77318",
-    "cveID": "CVE-2026-77318",
-    "slug": "cve-2026-77318",
-    "vendor": "Pip",
-    "product": "jupyter-mcp-server",
-    "name": "Jupyter MCP Server: Unauthenticated management routes can hijack the Jupyter backend in standalone HTTP mode",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 7.3,
-    "severity": "High",
-    "cwe": "CWE-306",
-    "ransomware": false,
-    "description": "Standalone streamable-http mode in datalayer/jupyter-mcp-server requires MCP_TOKEN for /mcp, but the custom management routes mounted on the same application do not enforce that token.",
-    "requiredAction": "Upgrade jupyter-mcp-server to version 1.0.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-24pw-rf5p-mgp7"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77318"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77316",
-    "cveID": "CVE-2026-77316",
-    "slug": "cve-2026-77316",
-    "vendor": "Pip",
-    "product": "flyto-core",
-    "name": "Flyto2 Core: SSRF guard bypass via DNS rebinding (validate_url_ssrf resolves-then-connects without pinning)",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "- CWE: CWE-918 (SSRF) / CWE-367 (TOCTOU). - CVSS v3.1: AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:N = 6.8 Medium (AC:H — needs attacker-controlled DNS with a low/zero TTL and to flip the answer between the guard's lookup and the connection's lookup; S:C — reaches internal/metadata services the guard is meant to block; C:H — e.g. cloud metadata credentials at 169.254.169.254).",
-    "requiredAction": "Upgrade flyto-core to version 2.26.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6pm8-6f34-9v3g"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77316"
       }
     ],
     "source": "GITHUB"
