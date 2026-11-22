@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/22/week-in-review-java4shell-proves-tricky-to-exploit-malware-planted-via-optimizely-hits-178-orgs/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/22/week-in-review-java4shell-proves-tricky-to-exploit-malware-planted-via-optimizely-hits-178-orgs/",
+    "title": "Optimizely Malware Hits 178 Organizations",
+    "headline": "Optimizely Malware Hits 178 Organizations",
+    "summary": "An attacker exploited a flaw in Optimizely’s web experimentation platform to plant malicious JavaScript on 178 organizations’ websites, such as BBC, CNN, and Zoom. The vulnerability, a memory-corruption flaw in OpenJDK’s Base64 decoder (CVE-2026-114938), requires specific CPU conditions, limiting exploitation but still high severity. Optimizely confirmed the incident, urged customers to update the platform, remove injected scripts, and monitor traffic.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-22T09:00:25.000Z",
+    "ingestedAt": "2026-11-22T09:43:07.514Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/22/week-in-review-java4shell-proves-tricky-to-exploit-malware-planted-via-optimizely-hits-178-orgs/",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
     "sourceUrl": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
     "title": "OpenRouter Removes Providers After Prompt Theft Discovery",
@@ -8331,21 +8347,5 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/18/nicola-fox-hamilton-victim-blaming-scams-phishing/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/nicola-fox-hamilton-victim-blaming-scams-phishing/",
-    "title": "Scam Victim Blaming Deepens Harm, Says Psychologist",
-    "headline": "Scam Victim Blaming Deepens Harm, Says Psychologist",
-    "summary": "At IRISSCON 2026, cyberpsychologist Dr. Nicola Fox Hamilton discussed how blaming victims of phishing and scams deepens harm and silences them. She explained that the psychological impact of scams can lead to long-term trauma and reluctance to report future incidents. The talk emphasized the need for supportive frameworks that address victim psychology rather than assigning blame.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-18T07:00:33.000Z",
-    "ingestedAt": "2026-11-18T07:43:28.955Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/18/nicola-fox-hamilton-victim-blaming-scams-phishing/",
-    "additionalSources": []
   }
 ]

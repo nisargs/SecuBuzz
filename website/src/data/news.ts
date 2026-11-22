@@ -11,6 +11,26 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "optimizely-malware-hits-178-organizations-fb37b3e2",
+    "title": "Optimizely Malware Hits 178 Organizations",
+    "summary": "An attacker exploited a flaw in Optimizely’s web experimentation platform to plant malicious JavaScript on 178 organizations’ websites, such as BBC, CNN, and Zoom. The vulnerability, a memory-corruption flaw in OpenJDK’s Base64 decoder (CVE-2026-114938), requires specific CPU conditions, limiting exploitation but still high severity. Optimizely confirmed the incident, urged customers to update the platform, remove injected scripts, and monitor traffic.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/22/week-in-review-java4shell-proves-tricky-to-exploit-malware-planted-via-optimizely-hits-178-orgs/",
+    "publishedAt": "2026-11-22T09:00:25.000Z",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "optimizely-malware-hits-178-organizations",
+      "article-fb37b3e2",
+      "fb37b3e2",
+      "optimizely-malware-hits-178-organizations-654f99"
+    ]
+  },
+  {
     "slug": "openrouter-removes-providers-after-prompt-theft-di-9940c3f7",
     "title": "OpenRouter Removes Providers After Prompt Theft Discovery",
     "summary": "OpenRouter removed three AI inference providers after researchers uncovered months of prompt theft from their internal systems. The stolen prompts, some marked Zero Data Retention, were accessed without authorization, exposing user inputs; Dragos confirmed the breach to vendors. OpenRouter recommends vendors review access controls, enforce strict data-retention policies, and apply security hardening to prevent future prompt exfiltration.",
@@ -9673,24 +9693,6 @@ export const news: NewsBrief[] = [
       "59225046",
       "hackers-use-stolen-fortigate-vpn-credentials-to-ac-972979",
       "hackers-use-stolen-fortigate-vpn-credentials-to-access-corpo"
-    ]
-  },
-  {
-    "slug": "scam-victim-blaming-deepens-harm-says-psychologist-3f4ad8cc",
-    "title": "Scam Victim Blaming Deepens Harm, Says Psychologist",
-    "summary": "At IRISSCON 2026, cyberpsychologist Dr. Nicola Fox Hamilton discussed how blaming victims of phishing and scams deepens harm and silences them. She explained that the psychological impact of scams can lead to long-term trauma and reluctance to report future incidents. The talk emphasized the need for supportive frameworks that address victim psychology rather than assigning blame.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/nicola-fox-hamilton-victim-blaming-scams-phishing/",
-    "publishedAt": "2026-11-18T07:00:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "scam-victim-blaming-deepens-harm-says-psychologist",
-      "article-3f4ad8cc",
-      "3f4ad8cc",
-      "scam-victim-blaming-deepens-harm-says-psychologist-7a7506"
     ]
   }
 ];
