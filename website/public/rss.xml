@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2026 14:43:17 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 15:43:12 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Optimizely Malware Hits 178 Organizations</title>
@@ -197,13 +197,13 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Signal Blocks AI Screenshot Access</title>
-      <link>https://secubuzz.com/news/signal-blocks-ai-screenshot-access-3d4009ac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/signal-blocks-ai-screenshot-access-3d4009ac</guid>
-      <description><![CDATA[Signal introduced a screenshot block on Android and iOS to stop AI agents from reading private chats. The feature targets agentic systems in iOS 27 and Android builds that detect AI assistants attempting to capture Signal messages, though the protection is incomplete.]]></description>
+      <title>Signal Blocks AI Screenshot Access on iOS 27 and Android</title>
+      <link>https://secubuzz.com/news/signal-blocks-ai-screenshot-access-on-ios-27-and-a-28ccf6f8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/signal-blocks-ai-screenshot-access-on-ios-27-and-a-28ccf6f8</guid>
+      <description><![CDATA[Signal announced a new screenshot-blocking feature to prevent AI assistants from capturing private chats on iOS 27 and Android. The update addresses a privacy flaw that allowed screen-data interception, enabling AI agents to harvest message content without user interaction. Users can now install the patch to safeguard conversations, though the protection remains incomplete against advanced AI detection.]]></description>
       <pubDate>Sat, 21 Nov 2026 08:49:20 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html">The Hacker News</source>
-      <category>General</category>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>CISA Adds VMware, Cisco, Apache Flaws to KEV</title>

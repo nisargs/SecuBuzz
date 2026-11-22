@@ -343,18 +343,23 @@
   {
     "id": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
     "sourceUrl": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
-    "title": "Signal Blocks AI Screenshot Access",
-    "headline": "Signal Blocks AI Screenshot Access",
-    "summary": "Signal introduced a screenshot block on Android and iOS to stop AI agents from reading private chats. The feature targets agentic systems in iOS 27 and Android builds that detect AI assistants attempting to capture Signal messages, though the protection is incomplete.",
-    "category": "GENERAL",
-    "severity": "LOW",
+    "title": "Signal Blocks AI Screenshot Access on iOS 27 and Android",
+    "headline": "Signal Blocks AI Screenshot Access on iOS 27 and Android",
+    "summary": "Signal announced a new screenshot-blocking feature to prevent AI assistants from capturing private chats on iOS 27 and Android. The update addresses a privacy flaw that allowed screen-data interception, enabling AI agents to harvest message content without user interaction. Users can now install the patch to safeguard conversations, though the protection remains incomplete against advanced AI detection.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
     "source": "The Hacker News",
     "publishedAt": "2026-11-21T08:49:20.000Z",
     "ingestedAt": "2026-11-21T09:43:20.357Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/"
+      }
+    ]
   },
   {
     "id": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
