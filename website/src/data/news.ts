@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cleverbridge-reports-credit-card-data-theft-3410b57c",
+    "title": "Cleverbridge Reports Credit Card Data Theft",
+    "summary": "Cleverbridge, an e-commerce platform, disclosed a breach that exposed customers’ payment card numbers and CVV codes via unauthorized system access. The intrusion involved credential theft and data exfiltration, potentially enabling fraud, but no public exploit or CVE was identified. Cleverbridge urged affected users to monitor accounts, change passwords, and contact issuers while investigating the vector and will issue remediation guidance.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+    "publishedAt": "2026-11-22T15:43:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cleverbridge-reports-credit-card-data-theft",
+      "article-3410b57c",
+      "3410b57c",
+      "cleverbridge-reports-credit-card-data-theft-421fec"
+    ]
+  },
+  {
     "slug": "optimizely-malware-hits-178-organizations-fb37b3e2",
     "title": "Optimizely Malware Hits 178 Organizations",
     "summary": "An attacker exploited a flaw in Optimizely’s web experimentation platform to plant malicious JavaScript on 178 organizations’ websites, such as BBC, CNN, and Zoom. The vulnerability, a memory-corruption flaw in OpenJDK’s Base64 decoder (CVE-2026-114938), requires specific CPU conditions, limiting exploitation but still high severity. Optimizely confirmed the incident, urged customers to update the platform, remove injected scripts, and monitor traffic.",
@@ -9680,25 +9698,6 @@ export const news: NewsBrief[] = [
       "ae815c66",
       "deutsche-telekom-iot-ceo-discusses-20-year-device-5ed147",
       "deutsche-telekom-iot-ceo-discusses-20-year-device-security"
-    ]
-  },
-  {
-    "slug": "hackers-use-stolen-fortigate-vpn-credentials-to-ac-59225046",
-    "title": "Hackers Use Stolen FortiGate VPN Credentials to Access Corporate Networks and Deploy Custom Malware",
-    "summary": "A threat actor known as “tcherber” is selling and using stolen FortiGate VPN logins to get into company networks. The same person also builds custom malware, including a stealer, a remote desktop tool, and ransomware.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/stolen-fortigate-vpn-credentials/",
-    "publishedAt": "2026-11-18T07:16:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-stolen-fortigate-vpn-credentials-to-ac",
-      "article-59225046",
-      "59225046",
-      "hackers-use-stolen-fortigate-vpn-credentials-to-ac-972979",
-      "hackers-use-stolen-fortigate-vpn-credentials-to-access-corpo"
     ]
   }
 ];

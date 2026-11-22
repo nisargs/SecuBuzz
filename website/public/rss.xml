@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2026 15:43:12 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 16:21:41 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cleverbridge Reports Credit Card Data Theft</title>
+      <link>https://secubuzz.com/news/cleverbridge-reports-credit-card-data-theft-3410b57c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cleverbridge-reports-credit-card-data-theft-3410b57c</guid>
+      <description><![CDATA[Cleverbridge, an e-commerce platform, disclosed a breach that exposed customers’ payment card numbers and CVV codes via unauthorized system access. The intrusion involved credential theft and data exfiltration, potentially enabling fraud, but no public exploit or CVE was identified. Cleverbridge urged affected users to monitor accounts, change passwords, and contact issuers while investigating the vector and will issue remediation guidance.]]></description>
+      <pubDate>Sun, 22 Nov 2026 15:43:04 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Optimizely Malware Hits 178 Organizations</title>
       <link>https://secubuzz.com/news/optimizely-malware-hits-178-organizations-fb37b3e2</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[Red Hat released a critical security update for nginx:1.26 on RHEL 9.6 Extended Update Support, addressing multiple high-severity vulnerabilities. The CVE references detail remote code execution via crafted HTTP requests, with CVSS scores up to 9.0. Apply the patch immediately or install the errata to mitigate the critical risk today.]]></description>
       <pubDate>Fri, 20 Nov 2026 18:47:20 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100757">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical Nginx Update for RHEL 9.2 SAP Solutions</title>
-      <link>https://secubuzz.com/news/critical-nginx-update-for-rhel-9-2-sap-solutions-8c37d851</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-nginx-update-for-rhel-9-2-sap-solutions-8c37d851</guid>
-      <description><![CDATA[Red Hat issued a critical security update for nginx on RHEL 9.2 SAP Solutions, fixing several high-severity flaws. The linked CVE entries describe remote code execution via malformed HTTP requests, with CVSS scores up to 9.0. Apply the patch immediately or install the errata to mitigate the critical risk today.]]></description>
-      <pubDate>Fri, 20 Nov 2026 18:45:49 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100769">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
