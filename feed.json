@@ -82,9 +82,9 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
-    "title": "FBI Breach Targets National Crime Information Center",
-    "headline": "FBI Breach Targets National Crime Information Center",
-    "summary": "FBI systems were breached again, compromising the National Crime Information Center (NCIC), the database shared by law-enforcement agencies. Attackers exploited an undisclosed flaw to gain unauthorized access to NCIC records, potentially exposing investigative data. Investigators are isolating the breach, patching the flaw, and advising agencies to review NCIC access controls.",
+    "title": "FBI NCIC Database Breach Exposes Sensitive Law Enforcement Records",
+    "headline": "FBI NCIC Database Breach Exposes Sensitive Law Enforcement Records",
+    "summary": "FBI National Crime Information Center (NCIC) database was breached, exposing case files and personnel records. Attackers exploited an undisclosed flaw to gain unauthorized access, potentially compromising investigative workflows. Investigators are isolating the breach, patching the flaw, urging agencies to review NCIC access controls, and coordinating with federal cybersecurity teams to mitigate further exposure.",
     "category": "BREACH",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -93,7 +93,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/"
+      }
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/crowdstrike-to-acquire-zscaler/",
@@ -109,6 +114,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/crowdstrike-to-acquire-zscaler/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
+    "sourceUrl": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
+    "title": "Trump Names Kirsten Davies National Cyber Director",
+    "headline": "Trump Names Kirsten Davies National Cyber Director",
+    "summary": "White House appoints Kirsten Davies as National Cyber Director to steer America First cyber strategy and oversee federal cyber operations. Davies brings experience from previous cyber leadership roles, expected to shape national cyber defense priorities and cybersecurity policy coordination. The appointment signals a shift toward a more aggressive cyber posture; stakeholders should monitor policy developments and regulatory initiatives.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-11-21T13:00:00.000Z",
+    "ingestedAt": "2026-11-22T01:32:36.719Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
     "additionalSources": []
   },
   {
@@ -8325,22 +8346,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1010/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1031/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1031/",
-    "title": "LiteLLM Command Injection RCE Requires Authentication",
-    "headline": "LiteLLM Command Injection RCE Requires Authentication",
-    "summary": "A command injection flaw in LiteLLM’s MCP module permits authenticated remote attackers to execute arbitrary code on affected installations. The vulnerability, rated CVSS 7.2, requires valid credentials and allows attackers to run system commands, potentially compromising the host. LiteLLM has issued a patch; administrators should update to the latest release and enforce least-privilege access controls.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "ingestedAt": "2026-11-19T03:38:24.457Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1031/",
     "additionalSources": []
   }
 ]

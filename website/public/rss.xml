@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 23:43:17 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 01:32:45 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Rackspace Spot Breach Exposes Customer Kubernetes Secrets</title>
@@ -53,10 +53,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>FBI Breach Targets National Crime Information Center</title>
-      <link>https://secubuzz.com/news/fbi-breach-targets-national-crime-information-cent-e4f17beb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-breach-targets-national-crime-information-cent-e4f17beb</guid>
-      <description><![CDATA[FBI systems were breached again, compromising the National Crime Information Center (NCIC), the database shared by law-enforcement agencies. Attackers exploited an undisclosed flaw to gain unauthorized access to NCIC records, potentially exposing investigative data. Investigators are isolating the breach, patching the flaw, and advising agencies to review NCIC access controls.]]></description>
+      <title>FBI NCIC Database Breach Exposes Sensitive Law Enforcement Records</title>
+      <link>https://secubuzz.com/news/fbi-ncic-database-breach-exposes-sensitive-law-enf-1fef14b8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-ncic-database-breach-exposes-sensitive-law-enf-1fef14b8</guid>
+      <description><![CDATA[FBI National Crime Information Center (NCIC) database was breached, exposing case files and personnel records. Attackers exploited an undisclosed flaw to gain unauthorized access, potentially compromising investigative workflows. Investigators are isolating the breach, patching the flaw, urging agencies to review NCIC access controls, and coordinating with federal cybersecurity teams to mitigate further exposure.]]></description>
       <pubDate>Sat, 21 Nov 2026 14:26:04 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/">BleepingComputer</source>
       <category>Breach</category>
@@ -68,6 +68,15 @@
       <description><![CDATA[CrowdStrike is negotiating a potential acquisition of Zscaler, the cloud-security platform provider that offers zero-trust networking and secure web gateways. The deal could consolidate market share, expand CrowdStrike's cloud security portfolio, and reshape vendor competition by integrating Zscaler's zero-trust solutions. Both firms are conducting due diligence, and the transaction remains unconfirmed pending regulatory review and shareholder approval.]]></description>
       <pubDate>Sat, 21 Nov 2026 13:12:03 GMT</pubDate>
       <source url="https://cybersecuritynews.com/crowdstrike-to-acquire-zscaler/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Trump Names Kirsten Davies National Cyber Director</title>
+      <link>https://secubuzz.com/news/trump-names-kirsten-davies-national-cyber-director-d6ec788a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/trump-names-kirsten-davies-national-cyber-director-d6ec788a</guid>
+      <description><![CDATA[White House appoints Kirsten Davies as National Cyber Director to steer America First cyber strategy and oversee federal cyber operations. Davies brings experience from previous cyber leadership roles, expected to shape national cyber defense priorities and cybersecurity policy coordination. The appointment signals a shift toward a more aggressive cyber posture; stakeholders should monitor policy developments and regulatory initiatives.]]></description>
+      <pubDate>Sat, 21 Nov 2026 13:00:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/">SecurityWeek</source>
       <category>General</category>
     </item>
     <item>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 16:41:29 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-194-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>AI-Driven Attacks Arrive; CISOs Need Five Steps</title>
-      <link>https://secubuzz.com/news/ai-driven-attacks-arrive-cisos-need-five-steps-764d2948</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-attacks-arrive-cisos-need-five-steps-764d2948</guid>
-      <description><![CDATA[Claude Mythos Preview, an advanced AI model, identified and linked software vulnerabilities faster than traditional tools. ARTEX recently removed its corporate barrier, granting attackers broader access to the model and increasing threat exposure. CISOs should adopt five proactive steps, tightening AI controls, enhancing vulnerability triage, and updating incident response plans.]]></description>
-      <pubDate>Fri, 20 Nov 2026 16:41:20 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/blog/ai-driven-attacks-are-here-five-steps-cisos-should-take-now/">Arctic Wolf</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
