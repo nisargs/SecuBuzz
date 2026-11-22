@@ -217,6 +217,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "mcp-servers-pose-new-ai-attack-surface-7fc7f366",
+    "title": "MCP Servers Pose New AI Attack Surface",
+    "summary": "MCP lets AI apps connect to external tools, APIs, and business data, making each server a new attack surface. Misconfigurations or weak authentication allow attackers to gain unauthorized access, potentially compromising corporate systems and data. Apply strict access controls, enable MFA, audit settings, and install vendor patches regularly to mitigate risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/mcp-server-security/",
+    "publishedAt": "2026-11-21T17:24:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mcp-servers-pose-new-ai-attack-surface",
+      "article-7fc7f366",
+      "7fc7f366",
+      "mcp-servers-pose-new-ai-attack-surface-2864c5"
+    ]
+  },
+  {
     "slug": "red-hat-issues-critical-update-for-php-7-4-09495a8d",
     "title": "Red Hat Issues Critical Update for PHP 7.4",
     "summary": "Red Hat released a critical security update for the php:7.4 module on RHEL 8, addressing high-impact vulnerabilities. The flaws, listed in CVE references, enable remote code execution via malformed input, with CVSS scores up to 9.8. Red Hat recommends applying the update immediately; no workaround exists, and users should verify module integrity post-installation.",
@@ -9673,25 +9691,6 @@ export const news: NewsBrief[] = [
       "article-3f4ad8cc",
       "3f4ad8cc",
       "scam-victim-blaming-deepens-harm-says-psychologist-7a7506"
-    ]
-  },
-  {
-    "slug": "microsoft-agent-framework-pypi-package-compromised-6856d6e2",
-    "title": "Microsoft Agent Framework PyPI Package Compromised for Credential Theft",
-    "summary": "Attackers compromised Microsoft’s agent-framework PyPI package, publishing malicious 1.26.1 and 1.26.2 releases that embed a credential stealer. The stealer runs on every Python start, enabling cloud credential theft, and was flagged by multiple security firms. Microsoft should revoke the releases, users must uninstall or upgrade to a clean version, and enforce package integrity checks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
-    "publishedAt": "2026-11-18T06:45:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-agent-framework-pypi-package-compromised",
-      "article-6856d6e2",
-      "6856d6e2",
-      "microsoft-agent-framework-pypi-package-compromised-602a69",
-      "microsoft-agent-framework-pypi-package-compromised-for-crede"
     ]
   }
 ];

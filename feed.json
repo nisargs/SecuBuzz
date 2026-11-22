@@ -176,6 +176,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/mcp-server-security/",
+    "sourceUrl": "https://cybersecuritynews.com/mcp-server-security/",
+    "title": "MCP Servers Pose New AI Attack Surface",
+    "headline": "MCP Servers Pose New AI Attack Surface",
+    "summary": "MCP lets AI apps connect to external tools, APIs, and business data, making each server a new attack surface. Misconfigurations or weak authentication allow attackers to gain unauthorized access, potentially compromising corporate systems and data. Apply strict access controls, enable MFA, audit settings, and install vendor patches regularly to mitigate risks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-21T17:24:13.000Z",
+    "ingestedAt": "2026-11-22T07:43:06.815Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/mcp-server-security/",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:100991",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100991",
     "title": "Red Hat Issues Critical Update for PHP 7.4",
@@ -8330,22 +8346,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/18/nicola-fox-hamilton-victim-blaming-scams-phishing/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
-    "title": "Microsoft Agent Framework PyPI Package Compromised for Credential Theft",
-    "headline": "Microsoft Agent Framework PyPI Package Compromised for Credential Theft",
-    "summary": "Attackers compromised Microsoft’s agent-framework PyPI package, publishing malicious 1.26.1 and 1.26.2 releases that embed a credential stealer. The stealer runs on every Python start, enabling cloud credential theft, and was flagged by multiple security firms. Microsoft should revoke the releases, users must uninstall or upgrade to a clean version, and enforce package integrity checks.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-18T06:45:26.000Z",
-    "ingestedAt": "2026-11-18T07:43:26.181Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
     "additionalSources": []
   }
 ]
