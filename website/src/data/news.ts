@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "openrouter-removes-compromised-ai-hosts-revokes-ze-e5254118",
+    "title": "OpenRouter Removes Compromised AI Hosts, Revokes Zero Data Retention",
+    "summary": "OpenRouter removed three AI hosting providers and revoked Zero Data Retention for 125 endpoints after detecting provider compromise. The flaw arises from third-party providers lacking secure isolation, risking private chat data leakage; no breach confirmed, but exposure persists. OpenRouter notified affected customers, removed compromised providers, and revoked Zero Data Retention; teams should verify endpoint settings and monitor anomalous access.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/openrouter-ai-chat-leaks/",
+    "publishedAt": "2026-11-22T03:58:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openrouter-removes-compromised-ai-hosts-revokes-ze",
+      "article-e5254118",
+      "e5254118",
+      "openrouter-removes-compromised-ai-hosts-revokes-ze-2e8006",
+      "openrouter-removes-compromised-ai-hosts-revokes-zero-data-re"
+    ]
+  },
+  {
     "slug": "red-hat-issues-critical-php-patch-for-rhel7-944c034d",
     "title": "Red Hat Issues Critical PHP Patch for RHEL7",
     "summary": "Red Hat released a critical PHP update for RHEL7 Extended Lifecycle Support, fixing high-severity vulnerabilities that could allow remote code execution. The patch covers several CVE-identified flaws, each rated with a CVSS base score indicating critical impact, though no exploitation has been seen. Apply the update immediately via RHSA-2026:101337 to keep PHP secure.",
@@ -9672,25 +9691,6 @@ export const news: NewsBrief[] = [
       "a9087332",
       "russian-hackers-use-cloud-breach-to-target-second-1bae87",
       "russian-hackers-use-cloud-breach-to-target-second-us-org"
-    ]
-  },
-  {
-    "slug": "bubbleloader-turns-winrar-media-player-into-malwar-93b4ab82",
-    "title": "BubbleLoader Turns WinRAR, Media Player into Malware Carriers",
-    "summary": "BubbleLoader modifies entry points of popular Windows binaries such as WinRAR and Windows Media Player to embed malicious payloads. The loader rewrites a handful of instructions and injects two PNG images containing hidden code, turning legitimate executables into malware carriers. Security teams should verify binary integrity, monitor for unauthorized modifications, and apply vendor-signed updates to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/winrar-bubbleloader-malware/",
-    "publishedAt": "2026-11-18T06:00:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bubbleloader-turns-winrar-media-player-into-malwar",
-      "article-93b4ab82",
-      "93b4ab82",
-      "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
-      "bubbleloader-turns-winrar-media-player-into-malware-carriers"
     ]
   }
 ];

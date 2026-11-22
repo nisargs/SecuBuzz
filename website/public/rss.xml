@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2026 04:45:11 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 05:43:26 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OpenRouter Removes Compromised AI Hosts, Revokes Zero Data Retention</title>
+      <link>https://secubuzz.com/news/openrouter-removes-compromised-ai-hosts-revokes-ze-e5254118</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openrouter-removes-compromised-ai-hosts-revokes-ze-e5254118</guid>
+      <description><![CDATA[OpenRouter removed three AI hosting providers and revoked Zero Data Retention for 125 endpoints after detecting provider compromise. The flaw arises from third-party providers lacking secure isolation, risking private chat data leakage; no breach confirmed, but exposure persists. OpenRouter notified affected customers, removed compromised providers, and revoked Zero Data Retention; teams should verify endpoint settings and monitor anomalous access.]]></description>
+      <pubDate>Sun, 22 Nov 2026 03:58:45 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/openrouter-ai-chat-leaks/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Issues Critical PHP Patch for RHEL7</title>
       <link>https://secubuzz.com/news/red-hat-issues-critical-php-patch-for-rhel7-944c034d</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[Hackers used the open-source AI framework Cairn to discover a zero-day in a medical imaging application in a critical system. The flaw, a buffer overflow in the image-processing module, enabled remote code execution with elevated privileges. The vendor released patch 2.3.1; apply it immediately and monitor for anomalous activity to mitigate risk.]]></description>
       <pubDate>Fri, 20 Nov 2026 17:30:00 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cairn AI Tool Finds Possible Zero-Day at University</title>
-      <link>https://secubuzz.com/news/cairn-ai-tool-finds-possible-zero-day-at-universit-cd701829</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cairn-ai-tool-finds-possible-zero-day-at-universit-cd701829</guid>
-      <description><![CDATA[A China-linked threat actor used the open-source AI framework Cairn to target two universities, reportedly finding a potential zero-day. The flaw, a memory-corruption bug in the LMS, could enable unauthenticated remote code execution, endangering academic data. Administrators should apply the vendor patch immediately and enforce strict access controls to mitigate risk.]]></description>
-      <pubDate>Fri, 20 Nov 2026 17:30:00 GMT</pubDate>
-      <source url="https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day">The Record</source>
       <category>Vulnerability</category>
     </item>
   </channel>

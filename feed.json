@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/openrouter-ai-chat-leaks/",
+    "sourceUrl": "https://cybersecuritynews.com/openrouter-ai-chat-leaks/",
+    "title": "OpenRouter Removes Compromised AI Hosts, Revokes Zero Data Retention",
+    "headline": "OpenRouter Removes Compromised AI Hosts, Revokes Zero Data Retention",
+    "summary": "OpenRouter removed three AI hosting providers and revoked Zero Data Retention for 125 endpoints after detecting provider compromise. The flaw arises from third-party providers lacking secure isolation, risking private chat data leakage; no breach confirmed, but exposure persists. OpenRouter notified affected customers, removed compromised providers, and revoked Zero Data Retention; teams should verify endpoint settings and monitor anomalous access.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-22T03:58:45.000Z",
+    "ingestedAt": "2026-11-22T05:43:22.242Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/openrouter-ai-chat-leaks/",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:101337",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101337",
     "title": "Red Hat Issues Critical PHP Patch for RHEL7",
@@ -8330,22 +8346,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/russian-hackers-3/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/18/winrar-bubbleloader-malware/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/winrar-bubbleloader-malware/",
-    "title": "BubbleLoader Turns WinRAR, Media Player into Malware Carriers",
-    "headline": "BubbleLoader Turns WinRAR, Media Player into Malware Carriers",
-    "summary": "BubbleLoader modifies entry points of popular Windows binaries such as WinRAR and Windows Media Player to embed malicious payloads. The loader rewrites a handful of instructions and injects two PNG images containing hidden code, turning legitimate executables into malware carriers. Security teams should verify binary integrity, monitor for unauthorized modifications, and apply vendor-signed updates to mitigate exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-18T06:00:03.000Z",
-    "ingestedAt": "2026-11-18T07:43:16.255Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/18/winrar-bubbleloader-malware/",
     "additionalSources": []
   }
 ]
