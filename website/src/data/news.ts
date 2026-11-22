@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "virustotal-detects-ransomware-missed-by-75-av-engi-c4a5db07",
+    "title": "VirusTotal Detects Ransomware Missed by 75 AV Engines",
+    "summary": "VirusTotal introduced a runtime encryption check that identified a Python ransomware sample previously undetected by 75 antivirus engines. The malware leveraged obfuscated Python code to evade static signatures, but its encryption activity triggered the new behavior analysis, revealing its malicious intent. Security teams should enable VirusTotal’s behavior-based detection and ensure their antivirus solutions are updated to recognize similar obfuscated ransomware.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/virustotal-ransomware-detection/",
+    "publishedAt": "2026-11-22T17:11:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "virustotal-detects-ransomware-missed-by-75-av-engi",
+      "article-c4a5db07",
+      "c4a5db07",
+      "virustotal-detects-ransomware-missed-by-75-av-engi-614dd5",
+      "virustotal-detects-ransomware-missed-by-75-av-engines"
+    ]
+  },
+  {
     "slug": "cleverbridge-reports-credit-card-data-theft-3410b57c",
     "title": "Cleverbridge Reports Credit Card Data Theft",
     "summary": "Cleverbridge, an e-commerce platform, disclosed a breach that exposed customers’ payment card numbers and CVV codes via unauthorized system access. The intrusion involved credential theft and data exfiltration, potentially enabling fraud, but no public exploit or CVE was identified. Cleverbridge urged affected users to monitor accounts, change passwords, and contact issuers while investigating the vector and will issue remediation guidance.",
@@ -9679,25 +9698,6 @@ export const news: NewsBrief[] = [
       "23518a70",
       "needrestart-vulnerability-enables-local-privilege-7e795a",
       "needrestart-vulnerability-enables-local-privilege-escalation"
-    ]
-  },
-  {
-    "slug": "deutsche-telekom-iot-ceo-discusses-20-year-device-ae815c66",
-    "title": "Deutsche Telekom IoT CEO Discusses 20-Year Device Security",
-    "summary": "In an interview, Deutsche Telekom IoT CEO Christian Schwalbe outlined 20-year device security challenges. He noted forgotten devices as the greatest risk, EU Cyber Resilience Act will compel manufacturers to maintain security, and detection via anomalous communication patterns. Schwalbe discussed post-quantum cryptography for constrained devices, research on splitting secrets across terrestrial networks, urging adoption of new schemes and continuous monitoring.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/christian-schwalbe-deutsche-telekom-iot-security/",
-    "publishedAt": "2026-11-18T07:30:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "deutsche-telekom-iot-ceo-discusses-20-year-device",
-      "article-ae815c66",
-      "ae815c66",
-      "deutsche-telekom-iot-ceo-discusses-20-year-device-5ed147",
-      "deutsche-telekom-iot-ceo-discusses-20-year-device-security"
     ]
   }
 ];

@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/virustotal-ransomware-detection/",
+    "sourceUrl": "https://cybersecuritynews.com/virustotal-ransomware-detection/",
+    "title": "VirusTotal Detects Ransomware Missed by 75 AV Engines",
+    "headline": "VirusTotal Detects Ransomware Missed by 75 AV Engines",
+    "summary": "VirusTotal introduced a runtime encryption check that identified a Python ransomware sample previously undetected by 75 antivirus engines. The malware leveraged obfuscated Python code to evade static signatures, but its encryption activity triggered the new behavior analysis, revealing its malicious intent. Security teams should enable VirusTotal’s behavior-based detection and ensure their antivirus solutions are updated to recognize similar obfuscated ransomware.",
+    "category": "VULNERABILITY",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-22T17:11:43.000Z",
+    "ingestedAt": "2026-11-22T17:43:10.082Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/virustotal-ransomware-detection/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
     "title": "Cleverbridge Reports Credit Card Data Theft",
@@ -8334,22 +8350,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-9151-1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/18/christian-schwalbe-deutsche-telekom-iot-security/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/christian-schwalbe-deutsche-telekom-iot-security/",
-    "title": "Deutsche Telekom IoT CEO Discusses 20-Year Device Security",
-    "headline": "Deutsche Telekom IoT CEO Discusses 20-Year Device Security",
-    "summary": "In an interview, Deutsche Telekom IoT CEO Christian Schwalbe outlined 20-year device security challenges. He noted forgotten devices as the greatest risk, EU Cyber Resilience Act will compel manufacturers to maintain security, and detection via anomalous communication patterns. Schwalbe discussed post-quantum cryptography for constrained devices, research on splitting secrets across terrestrial networks, urging adoption of new schemes and continuous monitoring.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-18T07:30:25.000Z",
-    "ingestedAt": "2026-11-18T07:43:26.181Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/18/christian-schwalbe-deutsche-telekom-iot-security/",
     "additionalSources": []
   }
 ]
