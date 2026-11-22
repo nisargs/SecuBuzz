@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "openrouter-removes-providers-after-prompt-theft-di-9940c3f7",
+    "title": "OpenRouter Removes Providers After Prompt Theft Discovery",
+    "summary": "OpenRouter removed three AI inference providers after researchers uncovered months of prompt theft from their internal systems. The stolen prompts, some marked Zero Data Retention, were accessed without authorization, exposing user inputs; Dragos confirmed the breach to vendors. OpenRouter recommends vendors review access controls, enforce strict data-retention policies, and apply security hardening to prevent future prompt exfiltration.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+    "publishedAt": "2026-11-22T05:06:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openrouter-removes-providers-after-prompt-theft-di",
+      "article-9940c3f7",
+      "9940c3f7",
+      "openrouter-removes-providers-after-prompt-theft-di-799f6a",
+      "openrouter-removes-providers-after-prompt-theft-discovery"
+    ]
+  },
+  {
+    "slug": "ghostscript-sandbox-escape-rce-demonstrated-via-fi-c975302d",
+    "title": "Ghostscript Sandbox Escape RCE Demonstrated via File Uploads",
+    "summary": "Researchers demonstrated a sandbox-escape RCE flaw in Ghostscript, a common PDF/PostScript interpreter on Linux servers, via crafted file uploads. The flaw lets attackers bypass Ghostscript’s isolation and run arbitrary commands on the host, compromising the web application; a PoC was released by pwn.ai. Ghostscript issued a patch; admins should apply it immediately and verify file-upload handling remains sandboxed.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+    "publishedAt": "2026-11-22T05:03:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostscript-sandbox-escape-rce-demonstrated-via-fi",
+      "article-c975302d",
+      "c975302d",
+      "ghostscript-sandbox-escape-rce-demonstrated-via-fi-4d8551",
+      "ghostscript-sandbox-escape-rce-demonstrated-via-file-uploads"
+    ]
+  },
+  {
     "slug": "openrouter-removes-compromised-ai-hosts-revokes-ze-e5254118",
     "title": "OpenRouter Removes Compromised AI Hosts, Revokes Zero Data Retention",
     "summary": "OpenRouter removed three AI hosting providers and revoked Zero Data Retention for 125 endpoints after detecting provider compromise. The flaw arises from third-party providers lacking secure isolation, risking private chat data leakage; no breach confirmed, but exposure persists. OpenRouter notified affected customers, removed compromised providers, and revoked Zero Data Retention; teams should verify endpoint settings and monitor anomalous access.",
@@ -9654,43 +9692,6 @@ export const news: NewsBrief[] = [
       "6856d6e2",
       "microsoft-agent-framework-pypi-package-compromised-602a69",
       "microsoft-agent-framework-pypi-package-compromised-for-crede"
-    ]
-  },
-  {
-    "slug": "tapmap-visualizes-network-connections-on-world-map-a1ca01f4",
-    "title": "TapMap Visualizes Network Connections on World Map",
-    "summary": "TapMap is a free, open-source desktop app that visualizes a computer’s active network connections on an interactive world map. It scans open sockets, extracts remote IPs, and resolves them via a local GeoIP database, showing each connection’s approximate location. Users can click a connection to launch its application, but the tool does not verify physical locations, so cross-check is advised.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/tapmap-network-map-open-source/",
-    "publishedAt": "2026-11-18T06:30:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tapmap-visualizes-network-connections-on-world-map",
-      "article-a1ca01f4",
-      "a1ca01f4",
-      "tapmap-visualizes-network-connections-on-world-map-29a3fe"
-    ]
-  },
-  {
-    "slug": "russian-hackers-use-cloud-breach-to-target-second-a9087332",
-    "title": "Russian Hackers Use Cloud Breach to Target Second US Org",
-    "summary": "Russian state-sponsored actors breached a U.S. organization’s Google Workspace in late 2025, exfiltrating staff directory and cloud files. They leveraged the stolen data to impersonate a legitimate employee and launch a second intrusion against another U.S. organization in 2026. Google and Mandiant confirmed the attack chain, recommending affected organizations to review access controls and monitor for credential misuse.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/russian-hackers-3/",
-    "publishedAt": "2026-11-18T06:18:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-hackers-use-cloud-breach-to-target-second",
-      "article-a9087332",
-      "a9087332",
-      "russian-hackers-use-cloud-breach-to-target-second-1bae87",
-      "russian-hackers-use-cloud-breach-to-target-second-us-org"
     ]
   }
 ];

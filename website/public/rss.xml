@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2026 05:43:26 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 06:43:37 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OpenRouter Removes Providers After Prompt Theft Discovery</title>
+      <link>https://secubuzz.com/news/openrouter-removes-providers-after-prompt-theft-di-9940c3f7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openrouter-removes-providers-after-prompt-theft-di-9940c3f7</guid>
+      <description><![CDATA[OpenRouter removed three AI inference providers after researchers uncovered months of prompt theft from their internal systems. The stolen prompts, some marked Zero Data Retention, were accessed without authorization, exposing user inputs; Dragos confirmed the breach to vendors. OpenRouter recommends vendors review access controls, enforce strict data-retention policies, and apply security hardening to prevent future prompt exfiltration.]]></description>
+      <pubDate>Sun, 22 Nov 2026 05:06:55 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Ghostscript Sandbox Escape RCE Demonstrated via File Uploads</title>
+      <link>https://secubuzz.com/news/ghostscript-sandbox-escape-rce-demonstrated-via-fi-c975302d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ghostscript-sandbox-escape-rce-demonstrated-via-fi-c975302d</guid>
+      <description><![CDATA[Researchers demonstrated a sandbox-escape RCE flaw in Ghostscript, a common PDF/PostScript interpreter on Linux servers, via crafted file uploads. The flaw lets attackers bypass Ghostscript’s isolation and run arbitrary commands on the host, compromising the web application; a PoC was released by pwn.ai. Ghostscript issued a patch; admins should apply it immediately and verify file-upload handling remains sandboxed.]]></description>
+      <pubDate>Sun, 22 Nov 2026 05:03:41 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>OpenRouter Removes Compromised AI Hosts, Revokes Zero Data Retention</title>
       <link>https://secubuzz.com/news/openrouter-removes-compromised-ai-hosts-revokes-ze-e5254118</link>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 18:35:40 GMT</pubDate>
       <source url="https://www.darkreading.com/cybersecurity-operations/security-words-matter">Dark Reading</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Chrome Dev Channel Updated to 160.0.8171.0</title>
-      <link>https://secubuzz.com/news/chrome-dev-channel-updated-to-160-0-8171-0-3230d0ff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-channel-updated-to-160-0-8171-0-3230d0ff</guid>
-      <description><![CDATA[Google Chrome's Dev channel updated to version 160.0.8171.0, delivering bug fixes and performance improvements across Windows, macOS, and Linux. Release notes detail changes in rendering, security, and developer tools, with a partial list in the Git log. Users on the Dev channel should install the new build to access the latest features.]]></description>
-      <pubDate>Fri, 20 Nov 2026 17:58:33 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update_0667948876.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cairn AI Tool Finds Zero-Day in Medical Imaging App</title>
-      <link>https://secubuzz.com/news/cairn-ai-tool-finds-zero-day-in-medical-imaging-ap-e63715ba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cairn-ai-tool-finds-zero-day-in-medical-imaging-ap-e63715ba</guid>
-      <description><![CDATA[Hackers used the open-source AI framework Cairn to discover a zero-day in a medical imaging application in a critical system. The flaw, a buffer overflow in the image-processing module, enabled remote code execution with elevated privileges. The vendor released patch 2.3.1; apply it immediately and monitor for anomalous activity to mitigate risk.]]></description>
-      <pubDate>Fri, 20 Nov 2026 17:30:00 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
