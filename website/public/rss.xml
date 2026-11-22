@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2026 03:44:49 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 04:45:11 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues Critical PHP Patch for RHEL7</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-php-patch-for-rhel7-944c034d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-php-patch-for-rhel7-944c034d</guid>
+      <description><![CDATA[Red Hat released a critical PHP update for RHEL7 Extended Lifecycle Support, fixing high-severity vulnerabilities that could allow remote code execution. The patch covers several CVE-identified flaws, each rated with a CVSS base score indicating critical impact, though no exploitation has been seen. Apply the update immediately via RHSA-2026:101337 to keep PHP secure.]]></description>
+      <pubDate>Sun, 22 Nov 2026 03:56:40 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:101337">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Ghostscript Upload2Shell Enables Remote Command Execution</title>
       <link>https://secubuzz.com/news/ghostscript-upload2shell-enables-remote-command-ex-85e5b759</link>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 17:30:00 GMT</pubDate>
       <source url="https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day">The Record</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Nvidia CEO Resignation and Microsoft Outage Highlight AI Volatility</title>
-      <link>https://secubuzz.com/news/nvidia-ceo-resignation-and-microsoft-outage-highli-ad8d3de0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-ceo-resignation-and-microsoft-outage-highli-ad8d3de0</guid>
-      <description><![CDATA[Dark Reading highlights recent industry news, including Nvidia CEO Jensen Huang’s resignation and a Microsoft cloud outage. The video summarizes key developments that were omitted from earlier coverage, underscoring the volatility of the AI sector. Viewers are encouraged to review the full discussion for context on leadership changes and infrastructure disruptions.]]></description>
-      <pubDate>Fri, 20 Nov 2026 17:04:04 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/what-we-missed-nvidia-ceo-scandal-rocks-ai-industry">Dark Reading</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

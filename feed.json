@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:101337",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101337",
+    "title": "Red Hat Issues Critical PHP Patch for RHEL7",
+    "headline": "Red Hat Issues Critical PHP Patch for RHEL7",
+    "summary": "Red Hat released a critical PHP update for RHEL7 Extended Lifecycle Support, fixing high-severity vulnerabilities that could allow remote code execution. The patch covers several CVE-identified flaws, each rated with a CVSS base score indicating critical impact, though no exploitation has been seen. Apply the update immediately via RHSA-2026:101337 to keep PHP secure.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-22T03:56:40.000Z",
+    "ingestedAt": "2026-11-22T04:43:33.590Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:101337",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/upload2shell-flaw/",
     "sourceUrl": "https://cybersecuritynews.com/upload2shell-flaw/",
     "title": "Ghostscript Upload2Shell Enables Remote Command Execution",
@@ -8330,22 +8346,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/18/winrar-bubbleloader-malware/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-siem/",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-siem/",
-    "title": "CrowdStrike Launches Falcon Next-Gen SIEM Platform",
-    "headline": "CrowdStrike Launches Falcon Next-Gen SIEM Platform",
-    "summary": "CrowdStrike announced Falcon Next-Gen SIEM as the engine for an agentic security operations center. The platform integrates AI-driven analytics, automated response, and unified data ingestion to accelerate threat detection. Customers can adopt the SIEM module within the Falcon platform, though no specific deployment timeline or pricing was disclosed.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "ingestedAt": "2026-11-20T02:38:46.373Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-siem/",
     "additionalSources": []
   }
 ]

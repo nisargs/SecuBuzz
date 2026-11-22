@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-critical-php-patch-for-rhel7-944c034d",
+    "title": "Red Hat Issues Critical PHP Patch for RHEL7",
+    "summary": "Red Hat released a critical PHP update for RHEL7 Extended Lifecycle Support, fixing high-severity vulnerabilities that could allow remote code execution. The patch covers several CVE-identified flaws, each rated with a CVSS base score indicating critical impact, though no exploitation has been seen. Apply the update immediately via RHSA-2026:101337 to keep PHP secure.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101337",
+    "publishedAt": "2026-11-22T03:56:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-php-patch-for-rhel7",
+      "article-944c034d",
+      "944c034d",
+      "red-hat-issues-critical-php-patch-for-rhel7-2ee0ed"
+    ]
+  },
+  {
     "slug": "ghostscript-upload2shell-enables-remote-command-ex-85e5b759",
     "title": "Ghostscript Upload2Shell Enables Remote Command Execution",
     "summary": "Ghostscript’s Type 1 font loader flaw, CVE-2026-125396, allows attackers to run arbitrary commands on WordPress, Roundcube, and print servers via file processing. The flaw does not need direct Ghostscript exposure, yet it grants remote code execution on any server that processes malicious fonts. Patches for Ghostscript 10.08.0+ are released; administrators should upgrade immediately to eliminate the risk.",
@@ -9673,24 +9691,6 @@ export const news: NewsBrief[] = [
       "93b4ab82",
       "bubbleloader-turns-winrar-media-player-into-malwar-2d0c32",
       "bubbleloader-turns-winrar-media-player-into-malware-carriers"
-    ]
-  },
-  {
-    "slug": "crowdstrike-launches-falcon-next-gen-siem-platform-205d7d3a",
-    "title": "CrowdStrike Launches Falcon Next-Gen SIEM Platform",
-    "summary": "CrowdStrike announced Falcon Next-Gen SIEM as the engine for an agentic security operations center. The platform integrates AI-driven analytics, automated response, and unified data ingestion to accelerate threat detection. Customers can adopt the SIEM module within the Falcon platform, though no specific deployment timeline or pricing was disclosed.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-siem/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-launches-falcon-next-gen-siem-platform",
-      "article-205d7d3a",
-      "205d7d3a",
-      "crowdstrike-launches-falcon-next-gen-siem-platform-3cb122"
     ]
   }
 ];
