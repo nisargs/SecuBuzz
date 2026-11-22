@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "gl-inet-cloud-flaw-enables-router-and-kvm-malware-f26108c9",
+    "title": "GL.iNet Cloud Flaw Enables Router and KVM Malware",
+    "summary": "Hackers leveraged a flaw in GL.iNet’s cloud-based remote-management service to compromise customer routers and KVM devices. The vulnerability permits unauthenticated code execution, enabling attackers to drop custom malware, establish backdoors, and spawn reverse shells for persistent remote control. GL.iNet has released a patch for the cloud service; administrators should apply the update immediately and verify device firmware integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+    "publishedAt": "2026-11-22T18:45:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gl-inet-cloud-flaw-enables-router-and-kvm-malware",
+      "article-f26108c9",
+      "f26108c9",
+      "gl-inet-cloud-flaw-enables-router-and-kvm-malware-630c8c"
+    ]
+  },
+  {
     "slug": "debian-ubuntu-remove-rsyslogd-timestamp-config-dir-fc4a37ea",
     "title": "Debian, Ubuntu Remove rsyslogd Timestamp Config Directive",
     "summary": "Debian and Ubuntu removed a configuration directive from rsyslogd in early 2023, changing syslog timestamp handling. The change removes a legacy option that allowed custom timestamp formatting, potentially causing logs to default to system time zones and reducing forensic precision. Users should review rsyslogd configuration files for timestamp settings and apply any vendor updates that reintroduce desired formatting options.",
@@ -9679,25 +9697,6 @@ export const news: NewsBrief[] = [
       "article-4621abdb",
       "4621abdb",
       "java4shell-vulnerability-cve-2026-114938-3bcda5"
-    ]
-  },
-  {
-    "slug": "japan-shuts-fugaku-supercomputer-after-internal-br-4e9a52dc",
-    "title": "Japan Shuts Fugaku Supercomputer After Internal Breach",
-    "summary": "RIKEN shut down its Fugaku supercomputer after attackers breached the internal operations network and installed malware on servers. The breach exposed credentials for up to 4,597 users across Fugaku and RIKYU, potentially compromising research data, though no exfiltration evidence surfaced. RIKEN suspended operations, applied patches, and is conducting a forensic investigation to assess the breach scope and reinforce network segmentation.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/japan-shuts-down-fugaku-supercomputer/",
-    "publishedAt": "2026-11-18T07:59:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "japan-shuts-fugaku-supercomputer-after-internal-br",
-      "article-4e9a52dc",
-      "4e9a52dc",
-      "japan-shuts-fugaku-supercomputer-after-internal-br-6d9519",
-      "japan-shuts-fugaku-supercomputer-after-internal-breach"
     ]
   }
 ];

@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+    "title": "GL.iNet Cloud Flaw Enables Router and KVM Malware",
+    "headline": "GL.iNet Cloud Flaw Enables Router and KVM Malware",
+    "summary": "Hackers leveraged a flaw in GL.iNet’s cloud-based remote-management service to compromise customer routers and KVM devices. The vulnerability permits unauthenticated code execution, enabling attackers to drop custom malware, establish backdoors, and spawn reverse shells for persistent remote control. GL.iNet has released a patch for the cloud service; administrators should apply the update immediately and verify device firmware integrity.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-22T18:45:37.000Z",
+    "ingestedAt": "2026-11-22T19:43:05.484Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+    "additionalSources": []
+  },
+  {
     "id": "https://isc.sans.edu/diary/rss/33530",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33530",
     "title": "Debian, Ubuntu Remove rsyslogd Timestamp Config Directive",
@@ -8335,21 +8351,5 @@
     ],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "https://cybersecuritynews.com/japan-shuts-down-fugaku-supercomputer/",
-    "sourceUrl": "https://cybersecuritynews.com/japan-shuts-down-fugaku-supercomputer/",
-    "title": "Japan Shuts Fugaku Supercomputer After Internal Breach",
-    "headline": "Japan Shuts Fugaku Supercomputer After Internal Breach",
-    "summary": "RIKEN shut down its Fugaku supercomputer after attackers breached the internal operations network and installed malware on servers. The breach exposed credentials for up to 4,597 users across Fugaku and RIKYU, potentially compromising research data, though no exfiltration evidence surfaced. RIKEN suspended operations, applied patches, and is conducting a forensic investigation to assess the breach scope and reinforce network segmentation.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-18T07:59:16.000Z",
-    "ingestedAt": "2026-11-18T11:44:06.475Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/japan-shuts-down-fugaku-supercomputer/",
-    "additionalSources": []
   }
 ]
