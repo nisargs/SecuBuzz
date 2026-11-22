@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2026 17:43:15 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 18:43:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Debian, Ubuntu Remove rsyslogd Timestamp Config Directive</title>
+      <link>https://secubuzz.com/news/debian-ubuntu-remove-rsyslogd-timestamp-config-dir-fc4a37ea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/debian-ubuntu-remove-rsyslogd-timestamp-config-dir-fc4a37ea</guid>
+      <description><![CDATA[Debian and Ubuntu removed a configuration directive from rsyslogd in early 2023, changing syslog timestamp handling. The change removes a legacy option that allowed custom timestamp formatting, potentially causing logs to default to system time zones and reducing forensic precision. Users should review rsyslogd configuration files for timestamp settings and apply any vendor updates that reintroduce desired formatting options.]]></description>
+      <pubDate>Sun, 22 Nov 2026 18:38:34 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33530">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
     <item>
       <title>VirusTotal Detects Ransomware Missed by 75 AV Engines</title>
       <link>https://secubuzz.com/news/virustotal-detects-ransomware-missed-by-75-av-engi-c4a5db07</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[An update for nginx is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Fri, 20 Nov 2026 18:47:53 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:100768">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100753: Critical: nginx security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100753-critical-nginx-security-update-11db7d6f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100753-critical-nginx-security-update-11db7d6f</guid>
-      <description><![CDATA[An update for nginx is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Fri, 20 Nov 2026 18:47:34 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100753">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "debian-ubuntu-remove-rsyslogd-timestamp-config-dir-fc4a37ea",
+    "title": "Debian, Ubuntu Remove rsyslogd Timestamp Config Directive",
+    "summary": "Debian and Ubuntu removed a configuration directive from rsyslogd in early 2023, changing syslog timestamp handling. The change removes a legacy option that allowed custom timestamp formatting, potentially causing logs to default to system time zones and reducing forensic precision. Users should review rsyslogd configuration files for timestamp settings and apply any vendor updates that reintroduce desired formatting options.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33530",
+    "publishedAt": "2026-11-22T18:38:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "debian-ubuntu-remove-rsyslogd-timestamp-config-dir",
+      "article-fc4a37ea",
+      "fc4a37ea",
+      "debian-ubuntu-remove-rsyslogd-timestamp-config-dir-57dd81",
+      "debian-ubuntu-remove-rsyslogd-timestamp-config-directive"
+    ]
+  },
+  {
     "slug": "virustotal-detects-ransomware-missed-by-75-av-engi-c4a5db07",
     "title": "VirusTotal Detects Ransomware Missed by 75 AV Engines",
     "summary": "VirusTotal introduced a runtime encryption check that identified a Python ransomware sample previously undetected by 75 antivirus engines. The malware leveraged obfuscated Python code to evade static signatures, but its encryption activity triggered the new behavior analysis, revealing its malicious intent. Security teams should enable VirusTotal’s behavior-based detection and ensure their antivirus solutions are updated to recognize similar obfuscated ransomware.",
@@ -9679,25 +9698,6 @@ export const news: NewsBrief[] = [
       "4e9a52dc",
       "japan-shuts-fugaku-supercomputer-after-internal-br-6d9519",
       "japan-shuts-fugaku-supercomputer-after-internal-breach"
-    ]
-  },
-  {
-    "slug": "needrestart-vulnerability-enables-local-privilege-23518a70",
-    "title": "Needrestart Vulnerability Enables Local Privilege Escalation",
-    "summary": "The needrestart utility contains a flaw that fails to validate systemd cgroup paths and process names, enabling local privilege escalation. A local attacker could exploit the improper handling to gain elevated privileges on the host, potentially compromising system integrity. Applying the latest security update or patching needrestart mitigates the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9151-1",
-    "publishedAt": "2026-11-18T07:33:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "needrestart-vulnerability-enables-local-privilege",
-      "article-23518a70",
-      "23518a70",
-      "needrestart-vulnerability-enables-local-privilege-7e795a",
-      "needrestart-vulnerability-enables-local-privilege-escalation"
     ]
   }
 ];
