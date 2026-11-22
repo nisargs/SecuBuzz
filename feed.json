@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/upload2shell-flaw/",
+    "sourceUrl": "https://cybersecuritynews.com/upload2shell-flaw/",
+    "title": "Ghostscript Upload2Shell Enables Remote Command Execution",
+    "headline": "Ghostscript Upload2Shell Enables Remote Command Execution",
+    "summary": "Ghostscript’s Type 1 font loader flaw, CVE-2026-125396, allows attackers to run arbitrary commands on WordPress, Roundcube, and print servers via file processing. The flaw does not need direct Ghostscript exposure, yet it grants remote code execution on any server that processes malicious fonts. Patches for Ghostscript 10.08.0+ are released; administrators should upgrade immediately to eliminate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-22T02:43:08.000Z",
+    "ingestedAt": "2026-11-22T03:43:18.385Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/upload2shell-flaw/",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:101276",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101276",
     "title": "Red Hat Issues Critical PHP 8.2 Update",
@@ -13,6 +29,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:101276",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/microsoft-entra-connect-health-flaw/",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-entra-connect-health-flaw/",
+    "title": "Entra Connect Health Flaw Exposes Admin Emails",
+    "headline": "Entra Connect Health Flaw Exposes Admin Emails",
+    "summary": "A flaw in Microsoft Entra Connect Health lets attackers read admin and technical contact email addresses and config data. The vulnerability offers read-only access to these records but no inbox or message retrieval, and was disclosed via a Reddit customer notice. Microsoft applied a fix on November 19; administrators should patch immediately to stop data exposure.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-22T02:03:18.000Z",
+    "ingestedAt": "2026-11-22T03:43:18.385Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/microsoft-entra-connect-health-flaw/",
     "additionalSources": []
   },
   {
@@ -8314,38 +8346,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-siem/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-brings-human-advantage-aidr/",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-brings-human-advantage-aidr/",
-    "title": "CrowdStrike Promotes Human-AI Detection and Response",
-    "headline": "CrowdStrike Promotes Human-AI Detection and Response",
-    "summary": "CrowdStrike announced an offering that combines human expertise with AI detection and response. The vendor provided no technical details, threat data, or product availability information in the supplied announcement. Security teams should evaluate the claims against existing detection workflows and request technical documentation before adoption.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "ingestedAt": "2026-11-20T01:46:27.715Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-brings-human-advantage-aidr/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1011/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1011/",
-    "title": "Krita ABR Parser Heap Overflow Enables Remote Code Execution",
-    "headline": "Krita ABR Parser Heap Overflow Enables Remote Code Execution",
-    "summary": "Krita’s ABR file parser contains a heap-based buffer overflow that permits remote code execution when a user opens a malicious file. Rated CVSS 7.8, the flaw needs user interaction and could let attackers run arbitrary code on affected installations. Krita has not yet released a patch; users should avoid opening unknown ABR files and apply updates promptly when available.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "ingestedAt": "2026-11-19T04:43:40.229Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1011/",
     "additionalSources": []
   }
 ]
