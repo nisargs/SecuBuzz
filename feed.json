@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:101276",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101276",
+    "title": "Red Hat Issues Critical PHP 8.2 Update",
+    "headline": "Red Hat Issues Critical PHP 8.2 Update",
+    "summary": "Red Hat issued a critical update for php:8.2 on RHEL8, fixing vulnerabilities that could enable remote code execution via PHP scripts. The CVE entries show CVSS scores up to 9.8, allowing unauthenticated attackers to run arbitrary code on affected servers. Administrators should apply the php:8.2 patch immediately and confirm the new module version is deployed to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-22T02:24:34.000Z",
+    "ingestedAt": "2026-11-22T02:43:08.149Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:101276",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
     "title": "Rackspace Spot Breach Exposes Customer Kubernetes Secrets",
@@ -8330,22 +8346,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1011/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1010/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1010/",
-    "title": "Krita JC2 Parser Heap Overflow Enables Remote Code Execution",
-    "headline": "Krita JC2 Parser Heap Overflow Enables Remote Code Execution",
-    "summary": "Krita’s JC2 file parser contains a heap-based buffer overflow that permits remote code execution when a user opens a malicious file. Rated CVSS 7.8, the flaw requires user interaction and could allow attackers to run arbitrary code on affected installations. Krita has not yet issued a patch; users should avoid opening unknown JC2 files and apply updates promptly when released.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "ingestedAt": "2026-11-19T04:43:40.229Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1010/",
     "additionalSources": []
   }
 ]

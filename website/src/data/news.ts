@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-critical-php-8-2-update-efc53ac1",
+    "title": "Red Hat Issues Critical PHP 8.2 Update",
+    "summary": "Red Hat issued a critical update for php:8.2 on RHEL8, fixing vulnerabilities that could enable remote code execution via PHP scripts. The CVE entries show CVSS scores up to 9.8, allowing unauthenticated attackers to run arbitrary code on affected servers. Administrators should apply the php:8.2 patch immediately and confirm the new module version is deployed to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101276",
+    "publishedAt": "2026-11-22T02:24:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-php-8-2-update",
+      "article-efc53ac1",
+      "efc53ac1",
+      "red-hat-issues-critical-php-8-2-update-2ee0ea"
+    ]
+  },
+  {
     "slug": "rackspace-spot-breach-exposes-customer-kubernetes-49607481",
     "title": "Rackspace Spot Breach Exposes Customer Kubernetes Secrets",
     "summary": "Hackers breached Rackspace Spot cloud platform using compromised credentials, deploying unauthorized workloads and accessing Kubernetes secrets in customer clusters. The breach leveraged stolen credentials to read sensitive cluster secrets, exposing potential data leakage without exploiting a known software flaw. Rackspace urged customers to rotate compromised credentials, audit workloads, and apply any available platform updates to mitigate the exposure.",
@@ -9672,25 +9690,6 @@ export const news: NewsBrief[] = [
       "30e9f21e",
       "krita-abr-parser-heap-overflow-enables-remote-code-77f33c",
       "krita-abr-parser-heap-overflow-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "krita-jc2-parser-heap-overflow-enables-remote-code-5bfc19fb",
-    "title": "Krita JC2 Parser Heap Overflow Enables Remote Code Execution",
-    "summary": "Krita’s JC2 file parser contains a heap-based buffer overflow that permits remote code execution when a user opens a malicious file. Rated CVSS 7.8, the flaw requires user interaction and could allow attackers to run arbitrary code on affected installations. Krita has not yet issued a patch; users should avoid opening unknown JC2 files and apply updates promptly when released.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1010/",
-    "publishedAt": "2026-11-18T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "krita-jc2-parser-heap-overflow-enables-remote-code",
-      "article-5bfc19fb",
-      "5bfc19fb",
-      "krita-jc2-parser-heap-overflow-enables-remote-code-77f33b",
-      "krita-jc2-parser-heap-overflow-enables-remote-code-execution"
     ]
   }
 ];
