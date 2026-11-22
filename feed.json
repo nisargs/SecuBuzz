@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/23/debian-13-8-released/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/debian-13-8-released/",
+    "title": "Debian 13.8 Bundles Kernel and Chromium Fixes",
+    "headline": "Debian 13.8 Bundles Kernel and Chromium Fixes",
+    "summary": "Debian 13.8 bundles security fixes for the kernel, Chromium, Firefox ESR, OpenJDK 25, nginx, BIND 9, Dovecot, rsync, PostgreSQL 17, and 112 other packages. The update covers 122 advisories, DSA-6408 to DSA-6629, fixing critical bugs that could enable privilege escalation. Users should run 'apt update && apt upgrade' on trixie, verify packages, and monitor Debian Security Advisories for further patches.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-22T23:05:09.000Z",
+    "ingestedAt": "2026-11-22T23:43:15.344Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/23/debian-13-8-released/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
     "title": "GL.iNet Cloud Flaw Enables Router and KVM Malware",
@@ -7874,9 +7890,9 @@
   {
     "id": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
     "sourceUrl": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
-    "title": "Microsoft Launches Perception Agentic Security Platform",
-    "headline": "Microsoft Launches Perception Agentic Security Platform",
-    "summary": "Microsoft has moved its Perception Agentic Security Platform from preview to general availability, releasing four blue-team agents and a Recon Agent. Integrations and vulnerability shielding features remain in preview, indicating ongoing development for broader threat detection and response capabilities. Security teams should monitor Microsoft’s release notes for updates and plan to incorporate the new agents into their defensive workflows.",
+    "title": "Microsoft Launches AI-Driven Security Platform",
+    "headline": "Microsoft Launches AI-Driven Security Platform",
+    "summary": "Microsoft unveiled its AI-driven security platform at Ignite, offering new agents for threat hunting and defensive operations. The platform includes four blue-team agents and a Recon Agent, with some features still in preview. Security teams should monitor release notes, integrate the agents into workflows, and follow Microsoft guidance for deployment.",
     "category": "GENERAL",
     "severity": "LOW",
     "source": "SecurityWeek",
@@ -7885,7 +7901,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/endpoint-security/microsoft-offense-defense-ai-security-tools"
+      }
+    ]
   },
   {
     "id": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
@@ -8332,24 +8353,5 @@
     "isFutureSkew": false,
     "url": "https://www.huntress.com/blog/what-bec-looks-like",
     "additionalSources": []
-  },
-  {
-    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-26-278",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-278",
-    "title": "Java4Shell Vulnerability - CVE-2026-114938",
-    "headline": "Java4Shell Vulnerability - CVE-2026-114938",
-    "summary": "Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in takeover of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Fortinet FortiGuard PSIRT",
-    "publishedAt": "2026-11-18T08:00:00.000Z",
-    "ingestedAt": "2026-11-18T17:44:12.974Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "isFallback": true
   }
 ]

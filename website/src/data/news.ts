@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "debian-13-8-bundles-kernel-and-chromium-fixes-8096e679",
+    "title": "Debian 13.8 Bundles Kernel and Chromium Fixes",
+    "summary": "Debian 13.8 bundles security fixes for the kernel, Chromium, Firefox ESR, OpenJDK 25, nginx, BIND 9, Dovecot, rsync, PostgreSQL 17, and 112 other packages. The update covers 122 advisories, DSA-6408 to DSA-6629, fixing critical bugs that could enable privilege escalation. Users should run 'apt update && apt upgrade' on trixie, verify packages, and monitor Debian Security Advisories for further patches.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/debian-13-8-released/",
+    "publishedAt": "2026-11-22T23:05:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "debian-13-8-bundles-kernel-and-chromium-fixes",
+      "article-8096e679",
+      "8096e679",
+      "debian-13-8-bundles-kernel-and-chromium-fixes-426950"
+    ]
+  },
+  {
     "slug": "gl-inet-cloud-flaw-enables-router-and-kvm-malware-f26108c9",
     "title": "GL.iNet Cloud Flaw Enables Router and KVM Malware",
     "summary": "Hackers leveraged a flaw in GL.iNet’s cloud-based remote-management service to compromise customer routers and KVM devices. The vulnerability permits unauthenticated code execution, enabling attackers to drop custom malware, establish backdoors, and spawn reverse shells for persistent remote control. GL.iNet has released a patch for the cloud service; administrators should apply the update immediately and verify device firmware integrity.",
@@ -9160,22 +9178,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "microsoft-launches-perception-agentic-security-pla-9b866ec5",
-    "title": "Microsoft Launches Perception Agentic Security Platform",
-    "summary": "Microsoft has moved its Perception Agentic Security Platform from preview to general availability, releasing four blue-team agents and a Recon Agent. Integrations and vulnerability shielding features remain in preview, indicating ongoing development for broader threat detection and response capabilities. Security teams should monitor Microsoft’s release notes for updates and plan to incorporate the new agents into their defensive workflows.",
+    "slug": "microsoft-launches-ai-driven-security-platform-b3a5de97",
+    "title": "Microsoft Launches AI-Driven Security Platform",
+    "summary": "Microsoft unveiled its AI-driven security platform at Ignite, offering new agents for threat hunting and defensive operations. The platform includes four blue-team agents and a Recon Agent, with some features still in preview. Security teams should monitor release notes, integrate the agents into workflows, and follow Microsoft guidance for deployment.",
     "category": "General",
     "severity": "LOW",
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
     "publishedAt": "2026-11-18T12:14:23.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/endpoint-security/microsoft-offense-defense-ai-security-tools"
+      }
+    ],
     "aliases": [
-      "microsoft-launches-perception-agentic-security-pla",
-      "article-9b866ec5",
-      "9b866ec5",
-      "microsoft-launches-perception-agentic-security-pla-7ec6da",
-      "microsoft-launches-perception-agentic-security-platform"
+      "microsoft-launches-ai-driven-security-platform",
+      "article-b3a5de97",
+      "b3a5de97",
+      "microsoft-launches-ai-driven-security-platform-7ec6da"
     ]
   },
   {
@@ -9677,26 +9699,6 @@ export const news: NewsBrief[] = [
       "14cb4891",
       "detecting-business-email-compromise-in-trusted-thr-20d271",
       "detecting-business-email-compromise-in-trusted-threads"
-    ]
-  },
-  {
-    "slug": "java4shell-vulnerability-cve-2026-114938-4621abdb",
-    "title": "Java4Shell Vulnerability - CVE-2026-114938",
-    "summary": "Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in takeover of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-278",
-    "publishedAt": "2026-11-18T08:00:00.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "java4shell-vulnerability-cve-2026-114938",
-      "article-4621abdb",
-      "4621abdb",
-      "java4shell-vulnerability-cve-2026-114938-3bcda5"
     ]
   }
 ];
