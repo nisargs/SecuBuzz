@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 08:45:16 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 09:44:36 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues Critical PHP 8.3 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-php-8-3-security-update-1131078f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-php-8-3-security-update-1131078f</guid>
+      <description><![CDATA[Red Hat released a critical security update for the php:8.3 module on RHEL 9, addressing multiple vulnerabilities. The update is rated Critical, with CVSS base scores provided for each vulnerability via the referenced CVE links, indicating high-severity flaws. Apply the patch promptly; no workarounds are available, and the update should be deployed across all affected systems.]]></description>
+      <pubDate>Mon, 23 Nov 2026 09:16:02 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102226">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel Security Update for RHEL 8.6</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-8-f6106dd4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-8-f6106dd4</guid>
+      <description><![CDATA[Red Hat issued a kernel security update for RHEL 8.6 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On, addressing multiple vulnerabilities. The update carries an Important impact rating, with CVSS base scores available for each vulnerability via the referenced CVE links. Security teams should apply the patch immediately to mitigate potential exploitation; no workarounds are currently recommended.]]></description>
+      <pubDate>Mon, 23 Nov 2026 09:14:32 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102233">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Confirms Printing Issues on Forcepoint Systems</title>
+      <link>https://secubuzz.com/news/microsoft-confirms-printing-issues-on-forcepoint-s-cbc7d4a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-confirms-printing-issues-on-forcepoint-s-cbc7d4a7</guid>
+      <description><![CDATA[Microsoft confirmed that the KB5132043 Windows 11 hotpatch caused printing failures on systems running Forcepoint DLP software. The issue does not represent a security vulnerability but disrupts print functionality for affected users. Microsoft advises users to postpone the hotpatch until a fix is released or to revert to a previous Windows 11 build.]]></description>
+      <pubDate>Mon, 23 Nov 2026 09:11:15 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Signal Blocks AI Assistants From Accessing Private Messages</title>
+      <link>https://secubuzz.com/news/signal-blocks-ai-assistants-from-accessing-private-29017594</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/signal-blocks-ai-assistants-from-accessing-private-29017594</guid>
+      <description><![CDATA[Signal updated its app to block AI assistants on iOS 27 and Android, preventing them from capturing users’ private message content. The change stops assistants like Siri and Google Gemini from reading the screen to answer queries, protecting data stores. No vulnerability is reported; the update is a privacy safeguard that requires installing the latest Signal version.]]></description>
+      <pubDate>Mon, 23 Nov 2026 08:53:49 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/23/signal-blocks-ai-assistants-screenshots/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI-Assisted Attacks Trigger Unauthorized Bank Transfers</title>
+      <link>https://secubuzz.com/news/ai-assisted-attacks-trigger-unauthorized-bank-tran-2b6acc3a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-assisted-attacks-trigger-unauthorized-bank-tran-2b6acc3a</guid>
+      <description><![CDATA[AI-assisted threat actors targeted Indian ICT assets, forcing unauthorized financial transfers at banks and fintech firms. The attacks leveraged machine-learning-driven phishing and credential-stealing techniques, exploiting known login-bypass flaws to move laterally within banking networks. Red CERT-In urges immediate patching of vulnerable systems and enhanced monitoring of transaction logs to detect further unauthorized activity.]]></description>
+      <pubDate>Mon, 23 Nov 2026 08:24:15 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>BADBOX 3.0 TV Boxes Generate 40 Billion Ad Requests</title>
       <link>https://secubuzz.com/news/badbox-3-0-tv-boxes-generate-40-billion-ad-request-5e60fd71</link>
@@ -24,6 +69,15 @@
       <pubDate>Mon, 23 Nov 2026 08:01:36 GMT</pubDate>
       <source url="https://cybersecuritynews.com/bulgarian-government/">Cyber Security News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Weekly Security Roundup: Nov 16-22</title>
+      <link>https://secubuzz.com/news/weekly-security-roundup-nov-16-22-a07bae89</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/weekly-security-roundup-nov-16-22-a07bae89</guid>
+      <description><![CDATA[Malwarebytes Labs released a weekly security roundup covering topics from Nov 16 to Nov 22, 2026. The report summarizes emerging threats, vulnerability disclosures, and defensive recommendations observed during that period, including zero-day exploits and supply-chain risks. The summary is available for security teams to review trends, update defenses, and threat intelligence.]]></description>
+      <pubDate>Mon, 23 Nov 2026 08:01:00 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-16-november-22">Malwarebytes Labs</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Kernel Update for RHEL 10.0 EUS</title>
@@ -185,6 +239,24 @@
       <description><![CDATA[Red Hat issued a Moderate security update for the curl package on RHEL 8. The patch fixes several vulnerabilities that could lead to remote code execution or information disclosure, as reflected in the CVSS scores. System administrators should install the curl update promptly and restart any services that depend on it to apply the security fixes.]]></description>
       <pubDate>Mon, 23 Nov 2026 04:16:45 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102194">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHEL 9 Thunderbird Update Fixes Code Execution Flaws</title>
+      <link>https://secubuzz.com/news/rhel-9-thunderbird-update-fixes-code-execution-fla-a05946fa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhel-9-thunderbird-update-fixes-code-execution-fla-a05946fa</guid>
+      <description><![CDATA[Red Hat issued an important security update for Thunderbird on RHEL 9, fixing vulnerabilities that could lead to memory corruption or arbitrary code execution. The patch addresses CVE-linked defects with a CVSS score in the moderate range, and no active exploitation has been observed. Users should install RHSA-2026:102170 promptly to secure their mail clients.]]></description>
+      <pubDate>Mon, 23 Nov 2026 04:11:21 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102170">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHEL 8 xdg-desktop-portal Update Addresses Privilege Escalation</title>
+      <link>https://secubuzz.com/news/rhel-8-xdg-desktop-portal-update-addresses-privile-99bd95c4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhel-8-xdg-desktop-portal-update-addresses-privile-99bd95c4</guid>
+      <description><![CDATA[Red Hat released an important security update for xdg-desktop-portal on RHEL 8, addressing multiple vulnerabilities that could allow privilege escalation or code execution. The update includes patches for CVE-linked flaws, with a CVSS base score indicating moderate to high risk, but no active exploitation reported. Security teams should apply the RHSA-2026:102175 update immediately to mitigate potential attacks.]]></description>
+      <pubDate>Mon, 23 Nov 2026 03:45:30 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102175">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -383,78 +455,6 @@
       <description><![CDATA[Red Hat released a libgsf update on RHEL 10, fixing vulnerabilities that could enable local privilege escalation or denial of service. The advisory lists CVSS base scores and references CVE identifiers, though specific CVE numbers are omitted. Red Hat recommends applying the update immediately via the RPM package or system update tools to mitigate exploitation risk.]]></description>
       <pubDate>Mon, 23 Nov 2026 01:47:35 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102159">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Flatpak Update Fixes Security Vulnerabilities</title>
-      <link>https://secubuzz.com/news/red-hat-flatpak-update-fixes-security-vulnerabilit-58f0e68c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-flatpak-update-fixes-security-vulnerabilit-58f0e68c</guid>
-      <description><![CDATA[Red Hat issued a flatpak patch for RHEL 8.4 to fix multiple security flaws. The update addresses privilege-escalation and information-leak vulnerabilities, each with a CVSS score listed via CVE references, but no exploitation reported. Apply the flatpak update immediately; no workaround exists, and users should confirm the new flatpak version post-install.]]></description>
-      <pubDate>Mon, 23 Nov 2026 01:23:34 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102156">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Kernel Patch Addresses Multiple Security Flaws</title>
-      <link>https://secubuzz.com/news/red-hat-kernel-patch-addresses-multiple-security-f-74ef8639</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-patch-addresses-multiple-security-f-74ef8639</guid>
-      <description><![CDATA[Red Hat issued a kernel patch for RHEL 10.2 EUS to fix multiple Linux kernel security flaws. The update addresses privilege-escalation and information-leak flaws, each with a CVSS score listed via CVE references, but no active exploitation has been seen. Red Hat advises applying the kernel update immediately; no workaround exists, and users should confirm the new kernel version post-install.]]></description>
-      <pubDate>Mon, 23 Nov 2026 00:51:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102090">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues fltk Security Patch</title>
-      <link>https://secubuzz.com/news/red-hat-issues-fltk-security-patch-743179e1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-fltk-security-patch-743179e1</guid>
-      <description><![CDATA[Red Enterprise Linux 9 users receive an important security update for the fltk GUI toolkit. The update addresses one or more vulnerabilities that could allow attackers to execute code or compromise system integrity, as indicated by the CVSS base score linked in the advisory. Red Hat recommends applying the patch immediately to mitigate the risk.]]></description>
-      <pubDate>Mon, 23 Nov 2026 00:40:39 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102089">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Blocks AI Tool Calls with Governance</title>
-      <link>https://secubuzz.com/news/google-blocks-ai-tool-calls-with-governance-42e3e322</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-blocks-ai-tool-calls-with-governance-42e3e322</guid>
-      <description><![CDATA[Google introduces semantic governance policies on its Gemini platform, allowing enterprises to pre-screen AI agent tool calls. The policies evaluate each proposed tool invocation against user intent and company rules, blocking non-compliant actions at the Agent Gateway enforcement point. Organizations can configure permissions to define allowed actions, enhancing control over AI agent behavior.]]></description>
-      <pubDate>Mon, 23 Nov 2026 00:27:25 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/23/google-semantic-governance-policies/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Updates python-oauthlib Security</title>
-      <link>https://secubuzz.com/news/red-hat-updates-python-oauthlib-security-b56e0807</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-python-oauthlib-security-b56e0807</guid>
-      <description><![CDATA[Red Enterprise Linux 8.8 users receive an important security update for python-oauthlib, a library used for OAuth authentication. The update fixes one or more vulnerabilities that could enable attackers to bypass authentication or inject malicious tokens, as indicated by the CVSS base score referenced in the advisory. Red Hat advises applying the patch promptly to secure authentication flows.]]></description>
-      <pubDate>Mon, 23 Nov 2026 00:18:24 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102091">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat python-oauthlib Patch Resolves Security Issues</title>
-      <link>https://secubuzz.com/news/red-hat-python-oauthlib-patch-resolves-security-is-fbed9239</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-python-oauthlib-patch-resolves-security-is-fbed9239</guid>
-      <description><![CDATA[Red Hat released a python-oauthlib patch for RHEL 8.4 to address several security vulnerabilities. The update mitigates privilege-escalation and information-leak flaws, each assigned a CVSS score and referenced via CVE links, with no active exploitation observed. Apply the python-oauthlib update immediately; no workaround is available, and users should verify the new package version after installation.]]></description>
-      <pubDate>Mon, 23 Nov 2026 00:16:04 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102092">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Open vSwitch 2.15 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-open-vswitch-2-15-security-update-d4e32cc7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-open-vswitch-2-15-security-update-d4e32cc7</guid>
-      <description><![CDATA[Red Hat released a security update for Open vSwitch 2.15 on RHEL 8 Fast Datapath, addressing a vulnerability that could allow unauthorized traffic manipulation. The advisory rates the issue as Important, with CVSS base scores linked to CVE entries, indicating a high-severity flaw that may enable remote code execution.]]></description>
-      <pubDate>Mon, 23 Nov 2026 00:14:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102088">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases openvswitch 3.6 Patch</title>
-      <link>https://secubuzz.com/news/red-hat-releases-openvswitch-3-6-patch-c6abbe2c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-openvswitch-3-6-patch-c6abbe2c</guid>
-      <description><![CDATA[Red Enterprise Linux 10 users receive an important security update for openvswitch 3.6, a software switch used in virtual networking. The update addresses one or more vulnerabilities that could allow attackers to execute code or disrupt network traffic, as indicated by the CVSS base score linked in the advisory. Red Hat recommends applying the patch immediately to protect virtual networks.]]></description>
-      <pubDate>Mon, 23 Nov 2026 00:12:58 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102087">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
