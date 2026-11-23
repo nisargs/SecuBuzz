@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2026 23:43:24 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 00:44:25 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues fltk Security Patch</title>
+      <link>https://secubuzz.com/news/red-hat-issues-fltk-security-patch-743179e1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-fltk-security-patch-743179e1</guid>
+      <description><![CDATA[Red Enterprise Linux 9 users receive an important security update for the fltk GUI toolkit. The update addresses one or more vulnerabilities that could allow attackers to execute code or compromise system integrity, as indicated by the CVSS base score linked in the advisory. Red Hat recommends applying the patch immediately to mitigate the risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 00:40:39 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102089">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Blocks AI Tool Calls with Governance</title>
+      <link>https://secubuzz.com/news/google-blocks-ai-tool-calls-with-governance-42e3e322</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-blocks-ai-tool-calls-with-governance-42e3e322</guid>
+      <description><![CDATA[Google introduces semantic governance policies on its Gemini platform, allowing enterprises to pre-screen AI agent tool calls. The policies evaluate each proposed tool invocation against user intent and company rules, blocking non-compliant actions at the Agent Gateway enforcement point. Organizations can configure permissions to define allowed actions, enhancing control over AI agent behavior.]]></description>
+      <pubDate>Mon, 23 Nov 2026 00:27:25 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/23/google-semantic-governance-policies/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Updates python-oauthlib Security</title>
+      <link>https://secubuzz.com/news/red-hat-updates-python-oauthlib-security-b56e0807</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-python-oauthlib-security-b56e0807</guid>
+      <description><![CDATA[Red Enterprise Linux 8.8 users receive an important security update for python-oauthlib, a library used for OAuth authentication. The update fixes one or more vulnerabilities that could enable attackers to bypass authentication or inject malicious tokens, as indicated by the CVSS base score referenced in the advisory. Red Hat advises applying the patch promptly to secure authentication flows.]]></description>
+      <pubDate>Mon, 23 Nov 2026 00:18:24 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102091">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Open vSwitch 2.15 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-open-vswitch-2-15-security-update-d4e32cc7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-open-vswitch-2-15-security-update-d4e32cc7</guid>
+      <description><![CDATA[Red Hat released a security update for Open vSwitch 2.15 on RHEL 8 Fast Datapath, addressing a vulnerability that could allow unauthorized traffic manipulation. The advisory rates the issue as Important, with CVSS base scores linked to CVE entries, indicating a high-severity flaw that may enable remote code execution.]]></description>
+      <pubDate>Mon, 23 Nov 2026 00:14:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102088">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases openvswitch 3.6 Patch</title>
+      <link>https://secubuzz.com/news/red-hat-releases-openvswitch-3-6-patch-c6abbe2c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-openvswitch-3-6-patch-c6abbe2c</guid>
+      <description><![CDATA[Red Enterprise Linux 10 users receive an important security update for openvswitch 3.6, a software switch used in virtual networking. The update addresses one or more vulnerabilities that could allow attackers to execute code or disrupt network traffic, as indicated by the CVSS base score linked in the advisory. Red Hat recommends applying the patch immediately to protect virtual networks.]]></description>
+      <pubDate>Mon, 23 Nov 2026 00:12:58 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102087">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Debian 13.8 Bundles Kernel and Chromium Fixes</title>
       <link>https://secubuzz.com/news/debian-13-8-bundles-kernel-and-chromium-fixes-8096e679</link>
@@ -411,51 +456,6 @@
       <pubDate>Fri, 20 Nov 2026 19:32:00 GMT</pubDate>
       <source url="https://therecord.media/container-store-restores-systems-cyberattack">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>SAP releases multi-product security updates</title>
-      <link>https://secubuzz.com/news/sap-releases-multi-product-security-updates-7e518ccc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sap-releases-multi-product-security-updates-7e518ccc</guid>
-      <description><![CDATA[SAP released a security advisory for SQL Anywhere Monitor, Solution Manager, CommonCryptoLib, HANA JDBC Client, Business Connector, NetWeaver Portal, S/4HANA, HANA 2.0, SAP GUI, and Starter Solution. The patches address memory corruption, authentication bypass, and privilege escalation flaws across 20+ SAP components, with CVE IDs omitted. SAP recommends applying the latest patches for each affected product immediately to prevent exploitation.]]></description>
-      <pubDate>Fri, 20 Nov 2026 19:17:04 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/sap-security-advisory-november-2025-monthly-rollup-av25-738">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Releases Chrome Dev 160 for Android</title>
-      <link>https://secubuzz.com/news/google-releases-chrome-dev-160-for-android-aa5356a4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-releases-chrome-dev-160-for-android-aa5356a4</guid>
-      <description><![CDATA[Google released Chrome Dev version 160.0.8171.0 for Android via the Google Play store, marking the latest development channel milestone. The update incorporates unspecified security patches and feature enhancements documented in the Chromium git log and official blog posts. Android users should install this release promptly to obtain the latest stability improvements and vulnerability mitigations.]]></description>
-      <pubDate>Fri, 20 Nov 2026 19:13:32 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-dev-for-android-update_0498913154.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Arctic Wolf reports record October threat activity</title>
-      <link>https://secubuzz.com/news/arctic-wolf-reports-record-october-threat-activity-779b4f49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arctic-wolf-reports-record-october-threat-activity-779b4f49</guid>
-      <description><![CDATA[Arctic Wolf Aurora Incident Response recorded a 78% rise in non-customer cases and a 96% increase in sophisticated network intrusions, including ransomware, in October 2026. The surge indicates attackers are more active and employing advanced tactics, stressing the importance of rapid detection and response. Teams should update incident response plans, deploy automation, and monitor emerging patterns to reduce future risk.]]></description>
-      <pubDate>Fri, 20 Nov 2026 19:07:27 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/blog/incident-response-at-machine-speed-what-black-octobers-record-case-volume-reveals-about-todays-threat-landscape/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Bell Canada Breach Exposes Enterprise Customer Data</title>
-      <link>https://secubuzz.com/news/bell-canada-breach-exposes-enterprise-customer-dat-b3499ea5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bell-canada-breach-exposes-enterprise-customer-dat-b3499ea5</guid>
-      <description><![CDATA[Bell Canada confirmed that an 'agentic' threat actor breached its systems on November 17 2026, accessing enterprise customer data. The intrusion exploited vulnerabilities in the order-and-provisioning platform, allowing attackers to exfiltrate sensitive customer records. Bell Canada has issued a public advisory and is coordinating with security teams to apply patches and strengthen authentication controls.]]></description>
-      <pubDate>Fri, 20 Nov 2026 18:51:43 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100756: Critical: nginx:1.24 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100756-critical-nginx-1-24-security-upda-91d2834b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100756-critical-nginx-1-24-security-upda-91d2834b</guid>
-      <description><![CDATA[An update for the nginx:1.24 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Fri, 20 Nov 2026 18:51:05 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100756">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

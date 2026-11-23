@@ -11,6 +11,96 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-fltk-security-patch-743179e1",
+    "title": "Red Hat Issues fltk Security Patch",
+    "summary": "Red Enterprise Linux 9 users receive an important security update for the fltk GUI toolkit. The update addresses one or more vulnerabilities that could allow attackers to execute code or compromise system integrity, as indicated by the CVSS base score linked in the advisory. Red Hat recommends applying the patch immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102089",
+    "publishedAt": "2026-11-23T00:40:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-fltk-security-patch",
+      "article-743179e1",
+      "743179e1",
+      "red-hat-issues-fltk-security-patch-2ee157"
+    ]
+  },
+  {
+    "slug": "google-blocks-ai-tool-calls-with-governance-42e3e322",
+    "title": "Google Blocks AI Tool Calls with Governance",
+    "summary": "Google introduces semantic governance policies on its Gemini platform, allowing enterprises to pre-screen AI agent tool calls. The policies evaluate each proposed tool invocation against user intent and company rules, blocking non-compliant actions at the Agent Gateway enforcement point. Organizations can configure permissions to define allowed actions, enhancing control over AI agent behavior.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/google-semantic-governance-policies/",
+    "publishedAt": "2026-11-23T00:27:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-blocks-ai-tool-calls-with-governance",
+      "article-42e3e322",
+      "42e3e322",
+      "google-blocks-ai-tool-calls-with-governance-1a2d8c"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-python-oauthlib-security-b56e0807",
+    "title": "Red Hat Updates python-oauthlib Security",
+    "summary": "Red Enterprise Linux 8.8 users receive an important security update for python-oauthlib, a library used for OAuth authentication. The update fixes one or more vulnerabilities that could enable attackers to bypass authentication or inject malicious tokens, as indicated by the CVSS base score referenced in the advisory. Red Hat advises applying the patch promptly to secure authentication flows.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102091",
+    "publishedAt": "2026-11-23T00:18:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-python-oauthlib-security",
+      "article-b56e0807",
+      "b56e0807",
+      "red-hat-updates-python-oauthlib-security-2ee157"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-open-vswitch-2-15-security-update-d4e32cc7",
+    "title": "Red Hat Releases Open vSwitch 2.15 Security Update",
+    "summary": "Red Hat released a security update for Open vSwitch 2.15 on RHEL 8 Fast Datapath, addressing a vulnerability that could allow unauthorized traffic manipulation. The advisory rates the issue as Important, with CVSS base scores linked to CVE entries, indicating a high-severity flaw that may enable remote code execution.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102088",
+    "publishedAt": "2026-11-23T00:14:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-open-vswitch-2-15-security-update",
+      "article-d4e32cc7",
+      "d4e32cc7",
+      "red-hat-releases-open-vswitch-2-15-security-update-2ee157"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-openvswitch-3-6-patch-c6abbe2c",
+    "title": "Red Hat Releases openvswitch 3.6 Patch",
+    "summary": "Red Enterprise Linux 10 users receive an important security update for openvswitch 3.6, a software switch used in virtual networking. The update addresses one or more vulnerabilities that could allow attackers to execute code or disrupt network traffic, as indicated by the CVSS base score linked in the advisory. Red Hat recommends applying the patch immediately to protect virtual networks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102087",
+    "publishedAt": "2026-11-23T00:12:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-openvswitch-3-6-patch",
+      "article-c6abbe2c",
+      "c6abbe2c",
+      "red-hat-releases-openvswitch-3-6-patch-2ee157"
+    ]
+  },
+  {
     "slug": "debian-13-8-bundles-kernel-and-chromium-fixes-8096e679",
     "title": "Debian 13.8 Bundles Kernel and Chromium Fixes",
     "summary": "Debian 13.8 bundles security fixes for the kernel, Chromium, Firefox ESR, OpenJDK 25, nginx, BIND 9, Dovecot, rsync, PostgreSQL 17, and 112 other packages. The update covers 122 advisories, DSA-6408 to DSA-6629, fixing critical bugs that could enable privilege escalation. Users should run 'apt update && apt upgrade' on trixie, verify packages, and monitor Debian Security Advisories for further patches.",
@@ -9602,103 +9692,6 @@ export const news: NewsBrief[] = [
       "article-0ca5fdf2",
       "0ca5fdf2",
       "oracle-releases-cspu-patching-950-vulnerabilities-8adea3"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-critical-puppet-rce-flaw-b67c8aa0",
-    "title": "Hackers Exploit Critical Puppet RCE Flaw",
-    "summary": "CISA has listed Perforce Puppet’s CVE-2026-115731 as a known exploited vulnerability, noting active attacks against enterprise management servers. The flaw permits any client with a CA-signed agent certificate to bypass authentication and execute arbitrary code, carrying a CVSS score of 9.4. Perforce has released an urgent patch; administrators should apply it immediately or use the documented workaround to stop exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
-    "publishedAt": "2026-11-18T08:24:31.000Z",
-    "cves": [
-      "CVE-2026-115731"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-critical-puppet-rce-flaw",
-      "article-b67c8aa0",
-      "b67c8aa0",
-      "hackers-exploit-critical-puppet-rce-flaw-7a7226"
-    ]
-  },
-  {
-    "slug": "cisa-urges-patch-for-java4shell-rce-flaw-08dee8d0",
-    "title": "CISA Urges Patch for Java4Shell RCE Flaw",
-    "summary": "CISA urged immediate patching of Oracle Java’s CVE-2026-114938, a critical out-of-bounds write flaw that can cause DoS or remote code execution. The flaw exploits a JVM buffer overflow, allowing attackers with crafted input to corrupt memory and potentially run arbitrary code.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
-    "publishedAt": "2026-11-18T08:24:23.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-urges-patch-for-java4shell-rce-flaw",
-      "article-08dee8d0",
-      "08dee8d0",
-      "cisa-urges-patch-for-java4shell-rce-flaw-2d2b5d"
-    ]
-  },
-  {
-    "slug": "scattered-spider-leader-sentenced-six-years-in-u-s-10d73299",
-    "title": "Scattered Spider Leader Sentenced Six Years in U.S. Prison",
-    "summary": "A former Scattered Spider leader was sentenced to six years in U.S. federal prison after prosecutors alleged he stole millions in cryptocurrency and conspired to hack a dozen companies. The indictment cited coordinated phishing and credential-stealing campaigns targeting corporate networks, but no active exploitation was reported. The case highlights legal repercussions for orchestrating large-scale cybercrime operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/",
-    "publishedAt": "2026-11-18T08:24:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "scattered-spider-leader-sentenced-six-years-in-u-s",
-      "article-10d73299",
-      "10d73299",
-      "scattered-spider-leader-sentenced-six-years-in-u-s-79d767",
-      "scattered-spider-leader-sentenced-six-years-in-u-s-prison"
-    ]
-  },
-  {
-    "slug": "defense-firms-targeted-by-gravityrat-phishing-camp-a3d38f2a",
-    "title": "Defense Firms Targeted by GravityRAT Phishing Campaign",
-    "summary": "Hackers used logos of major defense firms on a fake recruitment site to spread GravityRAT spyware. The site offered an Android résumé builder that harvested text messages, location data, and files, exploiting social engineering. Security teams should block the domain, enforce MFA, and train staff to avoid deceptive recruitment sites.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/spread-gravityrat-spyware/",
-    "publishedAt": "2026-11-18T08:07:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "defense-firms-targeted-by-gravityrat-phishing-camp",
-      "article-a3d38f2a",
-      "a3d38f2a",
-      "defense-firms-targeted-by-gravityrat-phishing-camp-304350",
-      "defense-firms-targeted-by-gravityrat-phishing-campaign"
-    ]
-  },
-  {
-    "slug": "detecting-business-email-compromise-in-trusted-thr-14cb4891",
-    "title": "Detecting Business Email Compromise in Trusted Threads",
-    "summary": "Huntress detailed how attackers exploit trusted vendor and billing email threads to conduct Business Email Compromise operations. Attackers obscure illicit activity within established communications to bypass conventional email filters and trick targets into unauthorized financial transfers. Defensive teams should monitor suspicious inbox forwarding rules and implement multi-factor authentication to intercept compromised accounts.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/what-bec-looks-like",
-    "publishedAt": "2026-11-18T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "detecting-business-email-compromise-in-trusted-thr",
-      "article-14cb4891",
-      "14cb4891",
-      "detecting-business-email-compromise-in-trusted-thr-20d271",
-      "detecting-business-email-compromise-in-trusted-threads"
     ]
   }
 ];
