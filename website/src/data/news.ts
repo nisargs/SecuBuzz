@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "globetopper-suffers-cyberattack-causing-financial-3f431e41",
+    "title": "GlobeTopper Suffers Cyberattack Causing Financial and Operational Losses",
+    "summary": "B2B top-up solutions provider GlobeTopper suffered a cyberattack that disrupted its business operations and compromised digital assets. Attackers redeemed digital gift cards valued at $70,000, resulting in an estimated total operational revenue loss of $2.5 million for the company. Organizations should review digital asset transaction controls and implement strict access monitoring on top-up management systems.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
+    "publishedAt": "2026-11-23T16:50:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "globetopper-suffers-cyberattack-causing-financial",
+      "article-3f431e41",
+      "3f431e41",
+      "globetopper-suffers-cyberattack-causing-financial-374c76",
+      "globetopper-suffers-cyberattack-causing-financial-and-operat"
+    ]
+  },
+  {
+    "slug": "china-nexus-actor-exploits-medical-imaging-zero-da-91214183",
+    "title": "China-Nexus Actor Exploits Medical Imaging Zero-Day via Cairn",
+    "summary": "A China-nexus threat actor targeted East Asian universities by deploying the Cairn penetration testing tool to execute attacks. The adversary exploited an unpatched zero-day vulnerability in a medical imaging application, escalating privileges from flaw discovery to root access within 11 minutes. Security teams must monitor for unauthorized Cairn execution and audit medical imaging software for unauthenticated access vectors.",
+    "category": "Nation State",
+    "severity": "CRITICAL",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes",
+    "publishedAt": "2026-11-23T16:17:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "china-nexus-actor-exploits-medical-imaging-zero-da",
+      "article-91214183",
+      "91214183",
+      "china-nexus-actor-exploits-medical-imaging-zero-da-268456",
+      "china-nexus-actor-exploits-medical-imaging-zero-day-via-cair"
+    ]
+  },
+  {
     "slug": "red-hat-issues-freerdp-patch-for-rhel-9-8be1dfa3",
     "title": "Red Hat Issues freerdp Patch for RHEL 9",
     "summary": "Red Hat released an important freerdp update for RHEL 9, addressing several security vulnerabilities. The flaws could allow attackers to execute arbitrary code or exfiltrate session data, yet no active exploitation has been reported. Security teams should apply the freerdp patch immediately, verify remote desktop configurations, and monitor for suspicious activity.",
@@ -26,6 +64,42 @@ export const news: NewsBrief[] = [
       "article-8be1dfa3",
       "8be1dfa3",
       "red-hat-issues-freerdp-patch-for-rhel-9-2ee162"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-netpbm-patch-for-rhel-10-55631f55",
+    "title": "Red Hat Issues Important Netpbm Patch for RHEL 10",
+    "summary": "Red Hat released a security update for the netpbm package affecting Red Hat Enterprise Linux 10 installations. The underlying security flaws received an Important severity rating from Red Hat Product Security, with detailed base scores published in accompanying advisories. System administrators should apply the updated netpbm packages via standard Red Hat Enterprise Linux package management systems.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102569",
+    "publishedAt": "2026-11-23T16:05:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-netpbm-patch-for-rhel-10",
+      "article-55631f55",
+      "55631f55",
+      "red-hat-issues-important-netpbm-patch-for-rhel-10-2ee16a"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-netpbm-update-for-rhel-9-8-eus-c9c0afbb",
+    "title": "Red Hat Releases Netpbm Update for RHEL 9.8 EUS",
+    "summary": "Red Hat issued a security update addressing vulnerabilities in the netpbm package for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security categorized the security impact as Important, providing Common Vulnerability Scoring System base scores across referenced advisories. Administrators managing Extended Update Support environments must deploy the updated netpbm packages to mitigate potential security risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102542",
+    "publishedAt": "2026-11-23T16:03:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-netpbm-update-for-rhel-9-8-eus",
+      "article-c9c0afbb",
+      "c9c0afbb",
+      "red-hat-releases-netpbm-update-for-rhel-9-8-eus-2ee169"
     ]
   },
   {
@@ -1378,6 +1452,43 @@ export const news: NewsBrief[] = [
       "8e25bd81",
       "samsung-securities-breach-exposes-8-241-customers-28fcc5",
       "samsung-securities-breach-exposes-8-241-customers-data"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102229-important-389-ds-base-and-redhat-6fc27522",
+    "title": "RHSA-2026:102229: Important: 389-ds-base and redhat-ds security, bug fix, and enhancement update",
+    "summary": "An update for multiple packages is now available for Red Hat Directory Server 13.3 for RHEL 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102229",
+    "publishedAt": "2026-11-23T08:31:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102229-important-389-ds-base-and-redhat",
+      "article-6fc27522",
+      "6fc27522",
+      "rhsa-2026-102229-important-389-ds-base-and-redhat-2ee15e",
+      "rhsa-2026-102229-important-389-ds-base-and-redhat-ds-securit"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102224-important-grafana-security-update-caa3d2a4",
+    "title": "RHSA-2026:102224: Important: grafana security update",
+    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102224",
+    "publishedAt": "2026-11-23T08:25:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102224-important-grafana-security-update",
+      "article-caa3d2a4",
+      "caa3d2a4",
+      "rhsa-2026-102224-important-grafana-security-update-2ee15e"
     ]
   },
   {
@@ -4240,6 +4351,24 @@ export const news: NewsBrief[] = [
       "2ac58231",
       "kernel-vulnerabilities-in-oracle-linux-expose-syst-7e7875",
       "kernel-vulnerabilities-in-oracle-linux-expose-systems"
+    ]
+  },
+  {
+    "slug": "usn-9176-2-ruby-vulnerabilities-b2c0aa44",
+    "title": "USN-9176-2: Ruby vulnerabilities",
+    "summary": "USN-9176-1 fixed vulnerabilities in Ruby. This update provides the corresponding updates for Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. An attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (GHSA-34m4-m9fh-gqp5) Owais Lone discovered that Ruby incorrectly handled compiling certain large regular expressions.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9176-2",
+    "publishedAt": "2026-11-20T15:22:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9176-2-ruby-vulnerabilities",
+      "article-b2c0aa44",
+      "b2c0aa44",
+      "usn-9176-2-ruby-vulnerabilities-7e785f"
     ]
   },
   {
@@ -9366,138 +9495,6 @@ export const news: NewsBrief[] = [
       "3cec419f",
       "ukraine-arrests-key-members-of-ransomware-gang-tha-72c3d3",
       "ukraine-arrests-key-members-of-ransomware-gang-that-extorted"
-    ]
-  },
-  {
-    "slug": "ubuntu-releases-kernel-patch-for-multiple-azure-vu-1b8d9d27",
-    "title": "Ubuntu Releases Kernel Patch for Multiple Azure Vulnerabilities",
-    "summary": "Ubuntu issued a kernel update addressing several vulnerabilities that could allow attackers to compromise Azure-hosted systems. The flaws span USB gadget drivers, memory management, various architectures, and file system components, with no confirmed exploitation in the wild. All affected subsystems are fixed in the latest kernel release; administrators should apply the update promptly to mitigate potential compromise.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9160-1",
-    "publishedAt": "2026-11-19T09:58:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-releases-kernel-patch-for-multiple-azure-vu",
-      "article-1b8d9d27",
-      "1b8d9d27",
-      "ubuntu-releases-kernel-patch-for-multiple-azure-vu-7e78e9",
-      "ubuntu-releases-kernel-patch-for-multiple-azure-vulnerabilit"
-    ]
-  },
-  {
-    "slug": "hackers-target-european-commission-with-artex-ai-t-b79e0695",
-    "title": "Hackers Target European Commission with ARTEX AI Tool in Major Cyberattack",
-    "summary": "A cyberattack on the European Commission disrupted staff services for more than 10 days, leaving some employees unable to submit timesheets, request leave, or enter salary information. The EU’s cybersecurity service, CERT-EU, found that hackers used an AI tool called ARTEX, POLITICO reported on November 19, 2026.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/european-commission-cyberattack/",
-    "publishedAt": "2026-11-19T09:53:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-target-european-commission-with-artex-ai-t",
-      "article-b79e0695",
-      "b79e0695",
-      "hackers-target-european-commission-with-artex-ai-t-44a59b",
-      "hackers-target-european-commission-with-artex-ai-tool-in-maj"
-    ]
-  },
-  {
-    "slug": "scattered-spider-uses-phishing-sim-swap-tactics-ee2fede3",
-    "title": "Scattered Spider Uses Phishing, SIM-Swap Tactics",
-    "summary": "Scattered Spider employed fake text messages and SIM-swap operations to compromise user accounts and intercept authentication codes. The actor leveraged social engineering to bypass two-factor authentication, enabling unauthorized access to corporate systems; no public exploit or CVE was disclosed. Security teams should verify phone number ownership, enable device-based authentication, and monitor for SIM-swap activity to mitigate similar attacks.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/scattered-spiders-phishing-and-sim-swap-tactics-led-to-six-year-sentence",
-    "publishedAt": "2026-11-19T09:41:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "scattered-spider-uses-phishing-sim-swap-tactics",
-      "article-ee2fede3",
-      "ee2fede3",
-      "scattered-spider-uses-phishing-sim-swap-tactics-434191"
-    ]
-  },
-  {
-    "slug": "hackers-breach-n-able-cloud-server-disrupting-emai-ac60aa8a",
-    "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
-    "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs. \"We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence,\" N-able said.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
-    "publishedAt": "2026-11-19T09:31:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-breach-n-able-cloud-server-disrupting-emai",
-      "article-ac60aa8a",
-      "ac60aa8a",
-      "hackers-breach-n-able-cloud-server-disrupting-emai-9f2069",
-      "hackers-breach-n-able-cloud-server-disrupting-email-security"
-    ]
-  },
-  {
-    "slug": "nvidia-investigates-gentlemen-leak-claims-e153f400",
-    "title": "NVIDIA Investigates Gentlemen Leak Claims",
-    "summary": "NVIDIA is investigating claims that the Gentlemen ransomware group listed the company on its dark-web data-leak site, implying a possible breach. The leak site reportedly contains sensitive data, but NVIDIA has not confirmed any compromise or the breach’s scope. NVIDIA advises customers to monitor for suspicious activity and apply forthcoming security updates while the investigation continues.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
-    "publishedAt": "2026-11-19T09:23:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nvidia-investigates-gentlemen-leak-claims",
-      "article-e153f400",
-      "e153f400",
-      "nvidia-investigates-gentlemen-leak-claims-504dc8"
-    ]
-  },
-  {
-    "slug": "java4shell-exploitation-attempts-reported-ea4bc007",
-    "title": "Java4Shell Exploitation Attempts Reported",
-    "summary": "Attackers have begun probing and exploiting Java4Shell (CVE-2026-114938) across platforms, with GreyNoise and Cloudflare reporting attempts. The flaw permits remote code execution via malformed Java serialization, and vendors like Cisco, Elastic, Red Hat, and Siemens have issued advisories. Oracle and affected vendors have released patches; apply them immediately and monitor traffic for anomalies.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/java4shell-exploitation-attempts-begin-as-vendors-rush-out-advisories/",
-    "publishedAt": "2026-11-19T09:10:58.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "java4shell-exploitation-attempts-reported",
-      "article-ea4bc007",
-      "ea4bc007",
-      "java4shell-exploitation-attempts-reported-779057"
-    ]
-  },
-  {
-    "slug": "hackers-deploy-overlord-rat-that-survives-windows-3c6527c9",
-    "title": "Hackers Deploy Overlord RAT That Survives Windows Resets and Crashes Systems When Terminated",
-    "summary": "A financially motivated hacking group is deploying Overlord RAT, a Windows remote access trojan that can return after a victim uses “Reset this PC.” The malware can also trigger a blue screen if a user or security tool forcibly ends its process.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-deploy-overlord-rat/",
-    "publishedAt": "2026-11-19T08:51:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-deploy-overlord-rat-that-survives-windows",
-      "article-3c6527c9",
-      "3c6527c9",
-      "hackers-deploy-overlord-rat-that-survives-windows-c592a7",
-      "hackers-deploy-overlord-rat-that-survives-windows-resets-and"
     ]
   }
 ];

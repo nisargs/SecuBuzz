@@ -2,6 +2,33 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-133469",
+    "cveID": "CVE-2026-133469",
+    "slug": "cve-2026-133469",
+    "vendor": "npm",
+    "product": "xo-server",
+    "name": "Xen Orchestra: Empty-object login token",
+    "dateAdded": "2026-11-23",
+    "dueDate": "",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-287",
+    "ransomware": false,
+    "description": "REST cookie parsing turns authenticationToken=j:%7B%7D into {}. REST authentication passes that object to the XO token provider without requiring a string. The token collection treats {} as an unfiltered lookup and returns its first token; the provider authenticates as that token's owner if it is unexpired.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2r3w-c2vx-fv5g"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-22865",
     "cveID": "CVE-2026-22865",
     "slug": "cve-2026-22865",
@@ -1420,33 +1447,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77379"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77377",
-    "cveID": "CVE-2026-77377",
-    "slug": "cve-2026-77377",
-    "vendor": "Composer",
-    "product": "bolt/core",
-    "name": "Bolt: Server-Side Request Forgery (SSRF) in URL-upload and embed endpoints",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 5.2,
-    "severity": "Medium",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "Two authenticated backend endpoints fetched a user-supplied URL server-side with no protection against internal targets. This has been patched in Bolt 6.1.4.",
-    "requiredAction": "Upgrade bolt/core to version 6.1.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2535-j2pq-qq4r"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77377"
       }
     ],
     "source": "GITHUB"
