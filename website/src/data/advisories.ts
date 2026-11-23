@@ -2,6 +2,60 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-22865",
+    "cveID": "CVE-2026-22865",
+    "slug": "cve-2026-22865",
+    "vendor": "Java (Maven)",
+    "product": "org.gradle:gradle-core",
+    "name": "Gradle causes failure to disable repositories exposing builds to malicious artifacts",
+    "dateAdded": "2026-11-23",
+    "dueDate": "",
+    "cvss": 8.6,
+    "severity": "High",
+    "cwe": "CWE-494",
+    "ransomware": false,
+    "description": "When resolving dependencies, Gradle searches repositories in declaration order. If it encounters connection errors, Gradle will disable the repository and fail dependency resolution. This is necessary for both reproducibility and security reasons to prevent dependencies from being resolved from other repositories without warning.",
+    "requiredAction": "Upgrade org.gradle:gradle-core to version 8.14.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mqwm-5m85-gmcv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22865"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-22816",
+    "cveID": "CVE-2026-22816",
+    "slug": "cve-2026-22816",
+    "vendor": "Java (Maven)",
+    "product": "org.gradle:gradle-core",
+    "name": "Gradle causes Failure to disable repositories can expose builds to malicious artifacts",
+    "dateAdded": "2026-11-23",
+    "dueDate": "",
+    "cvss": 8.6,
+    "severity": "High",
+    "cwe": "CWE-494",
+    "ransomware": false,
+    "description": "When resolving dependencies, Gradle searches repositories in declaration order. If it encounters connection errors, Gradle will disable the repository and fail dependency resolution. This is necessary for both reproducibility and security reasons to prevent dependencies from being resolved from other repositories without warning.",
+    "requiredAction": "Upgrade org.gradle:gradle-core to version 8.14.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w78c-w6vf-rw82"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22816"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-129448",
     "slug": "cve-2026-129448",
     "vendor": "Apache",
@@ -1393,60 +1447,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77377"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77376",
-    "cveID": "CVE-2026-77376",
-    "slug": "cve-2026-77376",
-    "vendor": "Composer",
-    "product": "bolt/core",
-    "name": "Bolt: Open redirect enables post-authentication redirection to arbitrary domains",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-601",
-    "ransomware": false,
-    "description": "Open redirect vulnerabilities in LoginFormAuthenticator allow attackers to redirect users to attacker-controlled domains after login success or login failure, enabling phishing attacks and potential token theft. This has been patched in Bolt 6.1.4.",
-    "requiredAction": "Upgrade bolt/core to version 6.1.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xr6g-7g83-j865"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77376"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77369",
-    "cveID": "CVE-2026-77369",
-    "slug": "cve-2026-77369",
-    "vendor": "Go",
-    "product": "daptin · daptin",
-    "name": "Daptin: Broken Access Control (IDOR) in the generic YJS collaboration endpoint",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 9.6,
-    "severity": "Critical",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "Daptin registers a generic WebSocket endpoint, GET /yjs/:documentName, for real-time collaborative document editing (YJS/CRDT). Unlike its purpose-built sibling route, this generic endpoint performs no per-resource authorization check - it only verifies that some user session exists.",
-    "requiredAction": "Upgrade daptin · daptin to version 0.12.30 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wj7x-58c2-5793"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77369"
       }
     ],
     "source": "GITHUB"

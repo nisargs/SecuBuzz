@@ -11,6 +11,174 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "apache-solr-health-check-vulnerability-disclosed-084e3bca",
+    "title": "Apache Solr Health-Check Vulnerability Disclosed",
+    "summary": "Apache Solr versions prior to 10.1.0 and 9.11.0 contain a health-check flaw that can trigger unintended functionality, referenced by CVE-2026-86312. The flaw allows attackers to invoke the ping endpoint, potentially causing unauthorized actions or information disclosure within the Solr instance. Administrators should upgrade to Solr 10.1.0 or later, or apply the vendor-issued patch, and verify that health-check endpoints are secured.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1194",
+    "publishedAt": "2026-11-23T15:34:03.000Z",
+    "cves": [
+      "CVE-2026-86312"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apache-solr-health-check-vulnerability-disclosed",
+      "article-084e3bca",
+      "084e3bca",
+      "apache-solr-health-check-vulnerability-disclosed-5d2c79"
+    ]
+  },
+  {
+    "slug": "synology-dsm-vulnerability-affects-versions-before-f780faa3",
+    "title": "Synology DSM Vulnerability Affects Versions Before 7.4.1",
+    "summary": "DiskStation Manager (DSM) versions prior to 7.4.1 contain a vulnerability that could allow unauthorized access or privilege escalation. The flaw permits attackers to exploit a logic error in DSM’s authentication flow, potentially bypassing user credentials and gaining elevated privileges. Administrators should upgrade to the latest DSM release or apply the vendor-issued patch, and enforce strict access controls to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/synology-security-advisory-av26-1193",
+    "publishedAt": "2026-11-23T15:23:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "synology-dsm-vulnerability-affects-versions-before",
+      "article-f780faa3",
+      "f780faa3",
+      "synology-dsm-vulnerability-affects-versions-before-741c15",
+      "synology-dsm-vulnerability-affects-versions-before-7-4-1"
+    ]
+  },
+  {
+    "slug": "fbi-ncic-database-targeted-in-second-cyber-inciden-c85df571",
+    "title": "FBI NCIC Database Targeted in Second Cyber Incident",
+    "summary": "The FBI’s National Crime Information Center (NCIC) database was targeted in a second cyber incident reported this month. The attack compromised access to records on fugitives, warrants, criminal histories, and missing persons, potentially exposing sensitive law-enforcement data. Investigators are assessing the breach scope, and security teams should monitor for unauthorized access attempts to similar databases.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/23rd-november-threat-intelligence-report/",
+    "publishedAt": "2026-11-23T15:16:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-ncic-database-targeted-in-second-cyber-inciden",
+      "article-c85df571",
+      "c85df571",
+      "fbi-ncic-database-targeted-in-second-cyber-inciden-119758",
+      "fbi-ncic-database-targeted-in-second-cyber-incident"
+    ]
+  },
+  {
+    "slug": "trump-names-davies-national-cyber-czar-8b4bb737",
+    "title": "Trump Names Davies National Cyber Czar",
+    "summary": "President Trump has confirmed appointing Pentagon CIO John Davies as national cyber director after widespread support. Davies, who has served as acting director, will lead DoD cyber strategy and coordinate federal cyber defense efforts. The appointment aims to strengthen overall U.S. cyber posture, contingent on interagency cooperation and resource allocation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/kirsten-davies-trump-intends-nominate-national-cyber-director",
+    "publishedAt": "2026-11-23T15:14:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "trump-names-davies-national-cyber-czar",
+      "article-8b4bb737",
+      "8b4bb737",
+      "trump-names-davies-national-cyber-czar-7c9797"
+    ]
+  },
+  {
+    "slug": "jetbrains-advises-updates-for-multiple-product-vul-f887450b",
+    "title": "JetBrains Advises Updates for Multiple Product Vulnerabilities",
+    "summary": "JetBrains announced vulnerabilities affecting Junie, Junie CLI, and Junie GitHub Action, with affected versions listed in advisory AV26-1192. The flaws stem from insufficient input validation and insecure configuration defaults, enabling unauthorized code execution or privilege escalation, though no active exploitation has been reported. JetBrains recommends applying the latest patches for all affected versions and reviewing configuration settings to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1192",
+    "publishedAt": "2026-11-23T15:11:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "jetbrains-advises-updates-for-multiple-product-vul",
+      "article-f887450b",
+      "f887450b",
+      "jetbrains-advises-updates-for-multiple-product-vul-53189a",
+      "jetbrains-advises-updates-for-multiple-product-vulnerabiliti"
+    ]
+  },
+  {
+    "slug": "ai-agent-identity-gaps-span-multiple-platforms-666cfee6",
+    "title": "AI Agent Identity Gaps Span Multiple Platforms",
+    "summary": "AI agents operating across multiple platforms create security gaps when no single vendor can observe or control their actions, according to Token Security. The shared responsibility problem complicates agent identity, permission, and accountability management for organizations. Organizations should assign clear ownership and accountability for agent identities and permissions across platforms.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
+    "publishedAt": "2026-11-23T15:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agent-identity-gaps-span-multiple-platforms",
+      "article-666cfee6",
+      "666cfee6",
+      "ai-agent-identity-gaps-span-multiple-platforms-4aa78c"
+    ]
+  },
+  {
+    "slug": "huntress-begins-eu-data-hosting-in-frankfurt-12ff4d6c",
+    "title": "Huntress Begins EU Data Hosting in Frankfurt",
+    "summary": "Huntress has started European Union data hosting, with Phase 1 storing certain data in Frankfurt. The company said other data currently remains in the United States while Phase 2 is planned. Customers should review the available regional data residency details to fully understand which information is hosted in each location.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/eu-data-hosting",
+    "publishedAt": "2026-11-23T15:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "huntress-begins-eu-data-hosting-in-frankfurt",
+      "article-12ff4d6c",
+      "12ff4d6c",
+      "huntress-begins-eu-data-hosting-in-frankfurt-76a822"
+    ]
+  },
+  {
+    "slug": "nvidia-reinstates-jensen-huang-as-ceo-04e4f5e8",
+    "title": "NVIDIA Reinstates Jensen Huang as CEO",
+    "summary": "NVIDIA reinstated Jensen Huang as president, chief executive officer, and board director on November 23, 2026, after a unanimous board vote. The decision took effect immediately, but an independent board inquiry into reports that a foreign intelligence effort targeted Huang remains open. NVIDIA said the board met with Huang several times and received additional information.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/nvidia-reinstates-jensen-huang/",
+    "publishedAt": "2026-11-23T14:51:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nvidia-reinstates-jensen-huang-as-ceo",
+      "article-04e4f5e8",
+      "04e4f5e8",
+      "nvidia-reinstates-jensen-huang-as-ceo-42eb2b"
+    ]
+  },
+  {
+    "slug": "wiz-research-reports-agentic-framework-cloud-intru-dbba3a3a",
+    "title": "Wiz Research Reports Agentic Framework Cloud Intrusions",
+    "summary": "Agentic offensive frameworks such as ARTEX are driving a surge in cloud intrusions, as reported by Wiz Research. These frameworks enable automated, high-velocity attacks that exploit misconfigurations and weak IAM controls, causing unauthorized data exfiltration and service disruption across cloud environments. Security teams should monitor for ARTEX-related activity, enforce least-privilege IAM, and deploy detection rules to spot noisy, machine-speed attacks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks",
+    "publishedAt": "2026-11-23T14:46:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wiz-research-reports-agentic-framework-cloud-intru",
+      "article-dbba3a3a",
+      "dbba3a3a",
+      "wiz-research-reports-agentic-framework-cloud-intru-44fa60",
+      "wiz-research-reports-agentic-framework-cloud-intrusions"
+    ]
+  },
+  {
     "slug": "red-hat-advises-updates-for-multiple-rhel-versions-5f2cf303",
     "title": "Red Hat Advises Updates for Multiple RHEL Versions",
     "summary": "Red Hat issued advisory AV26-1190 affecting all RHEL 6-10, Hardened Images, and OpenShift 4-5. The advisory references multiple undisclosed vulnerabilities across these products, with no CVE IDs provided, implying potential remote code execution or privilege escalation risks. Administrators should review Red Hat’s links and apply available patches as soon as they are released.",
@@ -64,6 +232,24 @@ export const news: NewsBrief[] = [
       "47f9c202",
       "cloudflare-builds-dns-testing-tools-for-internal-f-6baf0f",
       "cloudflare-builds-dns-testing-tools-for-internal-framework"
+    ]
+  },
+  {
+    "slug": "usn-9186-1-tomcat-vulnerabilities-eede7db4",
+    "title": "USN-9186-1: Tomcat vulnerabilities",
+    "summary": "Tomcat 10 has been updated to 10.1.61 in Ubuntu 24.04 LTS, Ubuntu 26.04 LTS and Ubuntu 26.10. Tomcat 11 has been updated to 11.0.27 in Ubuntu 26.04 LTS and Ubuntu 26.10. In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9186-1",
+    "publishedAt": "2026-11-23T13:59:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9186-1-tomcat-vulnerabilities",
+      "article-eede7db4",
+      "eede7db4",
+      "usn-9186-1-tomcat-vulnerabilities-7e77ea"
     ]
   },
   {
@@ -803,6 +989,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-102247-important-java-1-8-0-ibm-security-e5fce34f",
+    "title": "RHSA-2026:102247: Important: java-1.8.0-ibm security update",
+    "summary": "An update for java-1.8.0-ibm is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102247",
+    "publishedAt": "2026-11-23T09:41:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102247-important-java-1-8-0-ibm-security",
+      "article-e5fce34f",
+      "e5fce34f",
+      "rhsa-2026-102247-important-java-1-8-0-ibm-security-2ee15e",
+      "rhsa-2026-102247-important-java-1-8-0-ibm-security-update"
+    ]
+  },
+  {
     "slug": "red-hat-issues-critical-php-8-3-security-update-1131078f",
     "title": "Red Hat Issues Critical PHP 8.3 Security Update",
     "summary": "Red Hat released a critical security update for the php:8.3 module on RHEL 9, addressing multiple vulnerabilities. The update is rated Critical, with CVSS base scores provided for each vulnerability via the referenced CVE links, indicating high-severity flaws. Apply the patch promptly; no workarounds are available, and the update should be deployed across all affected systems.",
@@ -837,6 +1042,24 @@ export const news: NewsBrief[] = [
       "f6106dd4",
       "red-hat-releases-kernel-security-update-for-rhel-8-2ee15e",
       "red-hat-releases-kernel-security-update-for-rhel-8-6"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-liblerc-security-update-3df8ccfe",
+    "title": "Red Hat Releases liblerc Security Update",
+    "summary": "A flaw in liblerc, used by Red Hat Enterprise Linux 10.2 EUS, is now fixed by a security update. Red Hat rates the issue as Important, with a CVSS base score available via CVE links in the advisory, indicating high risk. Apply the liblerc patch for RHEL 10.2 EUS immediately to eliminate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102232",
+    "publishedAt": "2026-11-23T09:12:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-liblerc-security-update",
+      "article-3df8ccfe",
+      "3df8ccfe",
+      "red-hat-releases-liblerc-security-update-2ee15e"
     ]
   },
   {
@@ -990,6 +1213,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-102221-important-grafana-security-update-d58f0238",
+    "title": "RHSA-2026:102221: Important: grafana security update",
+    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102221",
+    "publishedAt": "2026-11-23T07:50:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102221-important-grafana-security-update",
+      "article-d58f0238",
+      "d58f0238",
+      "rhsa-2026-102221-important-grafana-security-update-2ee15e"
+    ]
+  },
+  {
     "slug": "red-hat-kernel-update-for-rhel-10-0-eus-c676eec0",
     "title": "Red Hat Kernel Update for RHEL 10.0 EUS",
     "summary": "Red Hat released a kernel update for Enterprise Linux 10.0 Extended Update Support, addressing multiple security issues. The advisory notes an Important security impact, with CVSS base scores linked to each vulnerability, indicating potential high-severity flaws. Security teams should apply the update immediately to mitigate the identified kernel vulnerabilities, as no workarounds are provided.",
@@ -1104,6 +1345,24 @@ export const news: NewsBrief[] = [
       "article-0187d950",
       "0187d950",
       "cancer-institute-tackles-shadow-it-in-research-70aeed"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102211-important-freerdp-security-update-bcc853c0",
+    "title": "RHSA-2026:102211: Important: freerdp security update",
+    "summary": "An update for freerdp is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102211",
+    "publishedAt": "2026-11-23T06:48:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102211-important-freerdp-security-update",
+      "article-bcc853c0",
+      "bcc853c0",
+      "rhsa-2026-102211-important-freerdp-security-update-2ee15e"
     ]
   },
   {
@@ -2113,6 +2372,46 @@ export const news: NewsBrief[] = [
       "article-c6abbe2c",
       "c6abbe2c",
       "red-hat-releases-openvswitch-3-6-patch-2ee157"
+    ]
+  },
+  {
+    "slug": "ghostscript-upload2shell-vulnerability-poc-release-419e4f95",
+    "title": "Ghostscript Upload2Shell Vulnerability PoC Released",
+    "summary": "Ghostscript’s Upload2Shell vulnerability (CVE-2026-125396) allows attackers to execute arbitrary code via crafted PDF uploads. The flaw, rated as a high-severity issue, exploits a buffer overflow in the PDF parsing engine, enabling remote code execution without authentication. Security teams should update Ghostscript to the latest version or apply the vendor-issued patch to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Sophos Threat Research",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/proof-of-concept-available-for-ghostscript-upload2shell",
+    "publishedAt": "2026-11-23T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-125396"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ghostscript-upload2shell-vulnerability-poc-release",
+      "article-419e4f95",
+      "419e4f95",
+      "ghostscript-upload2shell-vulnerability-poc-release-29be2e",
+      "ghostscript-upload2shell-vulnerability-poc-released"
+    ]
+  },
+  {
+    "slug": "check-point-management-servers-hit-by-intrusion-ca-0d35bd8b",
+    "title": "Check Point Management Servers Hit by Intrusion Campaign",
+    "summary": "GreyNoise discovered an intrusion campaign targeting Check Point Security Management Servers, with confirmed attack activity between October 17 and November 2, 2026. The campaign impacted at least 22 distinct organizations globally. Security teams should investigate exposed management servers and review related logs for signs of compromise.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "GreyNoise Labs",
+    "sourceUrl": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+    "publishedAt": "2026-11-23T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "check-point-management-servers-hit-by-intrusion-ca",
+      "article-0d35bd8b",
+      "0d35bd8b",
+      "check-point-management-servers-hit-by-intrusion-ca-3ef513",
+      "check-point-management-servers-hit-by-intrusion-campaign"
     ]
   },
   {
@@ -9208,297 +9507,6 @@ export const news: NewsBrief[] = [
       "08d871b0",
       "zdi-26-1039-oracle-peoplesoft-register-incorrect-a-77f344",
       "zdi-26-1039-oracle-peoplesoft-register-incorrect-authorizati"
-    ]
-  },
-  {
-    "slug": "zdi-26-1038-0day-pwn2own-united-chargers-grizzl-e-4148bfab",
-    "title": "ZDI-26-1038: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP UpdateFirmware Out-Of-Bounds Write Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of United Chargers Grizzl-E Smart 40A EV chargers. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131813.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1038/",
-    "publishedAt": "2026-11-19T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-131813"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1038-0day-pwn2own-united-chargers-grizzl-e",
-      "article-4148bfab",
-      "4148bfab",
-      "zdi-26-1038-0day-pwn2own-united-chargers-grizzl-e-77f344",
-      "zdi-26-1038-0day-pwn2own-united-chargers-grizzl-e-smart-40a-"
-    ]
-  },
-  {
-    "slug": "consumer-devices-breach-ot-segmentation-in-hospita-1073f17e",
-    "title": "Consumer Devices Breach OT Segmentation in Hospitals",
-    "summary": "Claroty found game consoles, Roku sticks, Teslas, and other consumer gadgets bypassing OT network segmentation in hospitals, factories, and commercial sites. Many devices are placed on production or guest segments, enabling attackers to move laterally to critical OT equipment without isolation. Teams should audit device placement, enforce strict segmentation, and monitor OT traffic to block lateral movement.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/slipping-past-ot-network-segmentation/",
-    "publishedAt": "2026-11-19T05:30:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "consumer-devices-breach-ot-segmentation-in-hospita",
-      "article-1073f17e",
-      "1073f17e",
-      "consumer-devices-breach-ot-segmentation-in-hospita-6e29c9",
-      "consumer-devices-breach-ot-segmentation-in-hospitals"
-    ]
-  },
-  {
-    "slug": "chromeos-stable-channel-updated-with-vm-escape-fix-7a79563a",
-    "title": "ChromeOS Stable Channel Updated with VM Escape Fixes",
-    "summary": "Google released a stable channel update for ChromeOS, upgrading OS to version 16868.24.0 and browser to 158.0.8127.65. The update bundles fixes for two VM escape vulnerabilities, CVE-2026-99999 and CVE-2026-74580, which could allow attackers to escape environments and gain local privilege escalation. The patch is included in the stable channel release; users should install the update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-chromeos_01891834105.html",
-    "publishedAt": "2026-11-19T05:16:06.168Z",
-    "cves": [
-      "CVE-2026-99999",
-      "CVE-2026-74580"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromeos-stable-channel-updated-with-vm-escape-fix",
-      "article-7a79563a",
-      "7a79563a",
-      "chromeos-stable-channel-updated-with-vm-escape-fix-3ef936",
-      "chromeos-stable-channel-updated-with-vm-escape-fixes"
-    ]
-  },
-  {
-    "slug": "apache-roller-rce-exploited-without-authentication-557e2079",
-    "title": "Apache Roller RCE Exploited Without Authentication",
-    "summary": "Hackers are actively exploiting a critical Apache Roller RCE flaw that allows unauthenticated code execution on affected servers. CVE-2026-129448 affects Roller 4.0.0-6.1.4 and scores CVSS 3.1 9.8, classifying it as a high-risk zero-day. Administrators should immediately upgrade to the latest Roller release or apply the vendor-issued patch to mitigate the exploitation risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/apache-roller-rce-exploitation/",
-    "publishedAt": "2026-11-19T05:15:41.000Z",
-    "cves": [
-      "CVE-2026-129448"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apache-roller-rce-exploited-without-authentication",
-      "article-557e2079",
-      "557e2079",
-      "apache-roller-rce-exploited-without-authentication-686495"
-    ]
-  },
-  {
-    "slug": "ai-agents-run-with-employee-credentials-unchecked-cd7e3f81",
-    "title": "AI Agents Run with Employee Credentials Unchecked",
-    "summary": "Nudge Security found that AI agents in project trackers, CRMs, and automation tools run with the credentials of their creators, inheriting full employee access. This credential inheritance creates a blind spot, enabling malicious or accidental actions without security oversight. Teams should enforce least-privilege for AI agents, monitor activity, and audit credential usage to block unauthorized access.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/ai-agents-employee-credentials-nudge-security-report/",
-    "publishedAt": "2026-11-19T05:00:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-run-with-employee-credentials-unchecked",
-      "article-cd7e3f81",
-      "cd7e3f81",
-      "ai-agents-run-with-employee-credentials-unchecked-4ca14d"
-    ]
-  },
-  {
-    "slug": "cyberpower-ups-software-enables-system-access-and-61239936",
-    "title": "CyberPower UPS Software Enables SYSTEM Access and AD Dump",
-    "summary": "Attackers used a scripting feature in CyberPower PowerPanel Business UPS software to gain SYSTEM-level access on a Windows domain controller. The flaw enabled copying the Active Directory database and launching persistent malware, though no data exfiltration was observed. CyberPower has not yet issued a patch; administrators should disable scripting or apply the latest firmware and monitor domain controller activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-abuse-cyberpower-ups-software/",
-    "publishedAt": "2026-11-19T04:10:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyberpower-ups-software-enables-system-access-and",
-      "article-61239936",
-      "61239936",
-      "cyberpower-ups-software-enables-system-access-and-1cc4ec",
-      "cyberpower-ups-software-enables-system-access-and-ad-dump"
-    ]
-  },
-  {
-    "slug": "java4shell-exploited-disguised-as-chrome-traffic-99f8ae2d",
-    "title": "Java4Shell Exploited, Disguised as Chrome Traffic",
-    "summary": "Cloudflare’s Cloudforce One detected a Java4Shell RCE attempt that masqueraded as normal Google Chrome traffic in web logs. The exploit used CVE-2026-114938, with the source IP first scanning via a User-Agent header before sending the payload after 17 hours. Defenders should monitor anomalous User-Agent strings, apply the Java4Shell patch, and enforce strict input validation on Java services.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/java4shell-rce-flaw-exploited/",
-    "publishedAt": "2026-11-19T03:18:37.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "java4shell-exploited-disguised-as-chrome-traffic",
-      "article-99f8ae2d",
-      "99f8ae2d",
-      "java4shell-exploited-disguised-as-chrome-traffic-51b917"
-    ]
-  },
-  {
-    "slug": "cve-2026-114938-openjdk-base64-decoder-intrinsic-o-ed5c5460",
-    "title": "CVE-2026-114938 - OpenJDK Base64 Decoder Intrinsic Out-of-Bounds Write Issue",
-    "summary": "Bulletin ID: 2026-189-AWS Publication Date: 11/18/2026 17:00 PM PST Description: AWS is aware of CVE-2026-114938, a memory issue in the Base64 decoder intrinsic of OpenJDK 17.0.6 and later on x86-64 processors that support AVX-512 VBMI. AWS is working to deploy the fix to affected AWS services Refer to the article for the most up-to-date and complete information.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-189-aws/",
-    "publishedAt": "2026-11-19T03:02:28.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-114938-openjdk-base64-decoder-intrinsic-o",
-      "article-ed5c5460",
-      "ed5c5460",
-      "cve-2026-114938-openjdk-base64-decoder-intrinsic-o-782165",
-      "cve-2026-114938-openjdk-base64-decoder-intrinsic-out-of-boun"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-thursday-november-19-2026-2b637354",
-    "title": "ISC Stormcast: Thursday November 19, 2026",
-    "summary": "ISC released its weekly stormcast for Thursday, November 19, 2026, summarizing the latest network anomalies and threat actor activity. The episode does not disclose new vulnerabilities but highlights emerging tactics, techniques, and procedures used by adversaries. Listeners can access the recording via the ISC website and subscribe to receive future stormcast updates.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33536",
-    "publishedAt": "2026-11-19T02:00:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-thursday-november-19-2026",
-      "article-2b637354",
-      "2b637354",
-      "isc-stormcast-thursday-november-19-2026-57dd81"
-    ]
-  },
-  {
-    "slug": "honeypot-analysis-should-follow-code-practices-4d1622d8",
-    "title": "Honeypot Analysis Should Follow Code Practices",
-    "summary": "Kevin Truong’s guest diary advocates treating honeypot data analysis as software development, recommending version control and code review practices. The post highlights risks of unstructured analysis, such as misinterpretation of threat indicators, and stresses the need for reproducibility and auditability. Security teams should adopt Git workflows, pull-request reviews, and human gatekeeping for AI-driven insights to improve accuracy and maintainability.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33534",
-    "publishedAt": "2026-11-19T01:53:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "honeypot-analysis-should-follow-code-practices",
-      "article-4d1622d8",
-      "4d1622d8",
-      "honeypot-analysis-should-follow-code-practices-57dd81"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100567-critical-java-21-openjdk-security-b44c198b",
-    "title": "RHSA-2026:100567: Critical: java-21-openjdk security update for RHEL 8 and 9",
-    "summary": "An update for java-21-openjdk is now available for Red Hat Enterprise Linux 8, Red Hat Enterprise Linux 9, Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions, Red Hat Enterprise Linux 9.6 Extended Update Support, and Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100567",
-    "publishedAt": "2026-11-19T01:44:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100567-critical-java-21-openjdk-security",
-      "article-b44c198b",
-      "b44c198b",
-      "rhsa-2026-100567-critical-java-21-openjdk-security-2ee081",
-      "rhsa-2026-100567-critical-java-21-openjdk-security-update-fo"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-java-17-openjdk-update-f-495d3bfa",
-    "title": "Red Hat Releases Critical java-17-openjdk Update for RHEL 9",
-    "summary": "Red Hat issued a critical security update for java-17-openjdk on RHEL 9 and related SAP and Extended Update Support streams. The update addresses multiple high-severity vulnerabilities, each with CVSS scores indicating critical impact, but no specific CVE IDs are listed in the advisory. Administrators should apply the update immediately; no workarounds are provided, and the patch mitigates all identified risks.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100564",
-    "publishedAt": "2026-11-19T01:39:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-java-17-openjdk-update-f",
-      "article-495d3bfa",
-      "495d3bfa",
-      "red-hat-releases-critical-java-17-openjdk-update-f-2ee081",
-      "red-hat-releases-critical-java-17-openjdk-update-for-rhel-9"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100491-critical-fence-agents-security-up-8cf77df9",
-    "title": "RHSA-2026:100491: Critical: fence-agents security update",
-    "summary": "An update for fence-agents is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100491",
-    "publishedAt": "2026-11-19T01:37:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100491-critical-fence-agents-security-up",
-      "article-8cf77df9",
-      "8cf77df9",
-      "rhsa-2026-100491-critical-fence-agents-security-up-2ee07d",
-      "rhsa-2026-100491-critical-fence-agents-security-update"
-    ]
-  },
-  {
-    "slug": "red-enterprise-linux-8-receives-critical-kpatch-up-377e3654",
-    "title": "Red Enterprise Linux 8 Receives Critical kpatch Updates",
-    "summary": "Red Enterprise Linux 8 receives critical kpatch updates (kpatch-patch-4_18_0-553_109_1, 125_1, 158_1, 72_1, 85_1) that address multiple kernel vulnerabilities. Red Hat Product Security rates the update as Critical, with CVSS base scores linked to each CVE, indicating high-severity remote code execution risks. Administrators should apply the kpatch packages immediately to mitigate the vulnerabilities and prevent potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100525",
-    "publishedAt": "2026-11-19T01:34:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-enterprise-linux-8-receives-critical-kpatch-up",
-      "article-377e3654",
-      "377e3654",
-      "red-enterprise-linux-8-receives-critical-kpatch-up-2ee080",
-      "red-enterprise-linux-8-receives-critical-kpatch-updates"
-    ]
-  },
-  {
-    "slug": "red-enterprise-linux-10-0-updates-fence-agents-wit-215b1f62",
-    "title": "Red Enterprise Linux 10.0 Updates fence-agents with Critical Fix",
-    "summary": "Red Enterprise Linux 10.0 Extended Update Support receives a critical fence-agents security update addressing multiple CVE-linked vulnerabilities. The update is rated Critical by Red Hat Product Security, with CVSS base scores provided for each referenced CVE. Systems should install the fence-agents package immediately to close the security gaps and avoid exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100633",
-    "publishedAt": "2026-11-19T01:31:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-enterprise-linux-10-0-updates-fence-agents-wit",
-      "article-215b1f62",
-      "215b1f62",
-      "red-enterprise-linux-10-0-updates-fence-agents-wit-2ee084",
-      "red-enterprise-linux-10-0-updates-fence-agents-with-critical"
     ]
   }
 ];

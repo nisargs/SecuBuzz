@@ -5,8 +5,89 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 14:52:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 15:46:17 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Apache Solr Health-Check Vulnerability Disclosed</title>
+      <link>https://secubuzz.com/news/apache-solr-health-check-vulnerability-disclosed-084e3bca</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-solr-health-check-vulnerability-disclosed-084e3bca</guid>
+      <description><![CDATA[Apache Solr versions prior to 10.1.0 and 9.11.0 contain a health-check flaw that can trigger unintended functionality, referenced by CVE-2026-86312. The flaw allows attackers to invoke the ping endpoint, potentially causing unauthorized actions or information disclosure within the Solr instance. Administrators should upgrade to Solr 10.1.0 or later, or apply the vendor-issued patch, and verify that health-check endpoints are secured.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:34:03 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1194">Canadian Centre for Cyber Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Synology DSM Vulnerability Affects Versions Before 7.4.1</title>
+      <link>https://secubuzz.com/news/synology-dsm-vulnerability-affects-versions-before-f780faa3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/synology-dsm-vulnerability-affects-versions-before-f780faa3</guid>
+      <description><![CDATA[DiskStation Manager (DSM) versions prior to 7.4.1 contain a vulnerability that could allow unauthorized access or privilege escalation. The flaw permits attackers to exploit a logic error in DSM’s authentication flow, potentially bypassing user credentials and gaining elevated privileges. Administrators should upgrade to the latest DSM release or apply the vendor-issued patch, and enforce strict access controls to mitigate exploitation.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:23:24 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/synology-security-advisory-av26-1193">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>FBI NCIC Database Targeted in Second Cyber Incident</title>
+      <link>https://secubuzz.com/news/fbi-ncic-database-targeted-in-second-cyber-inciden-c85df571</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-ncic-database-targeted-in-second-cyber-inciden-c85df571</guid>
+      <description><![CDATA[The FBI’s National Crime Information Center (NCIC) database was targeted in a second cyber incident reported this month. The attack compromised access to records on fugitives, warrants, criminal histories, and missing persons, potentially exposing sensitive law-enforcement data. Investigators are assessing the breach scope, and security teams should monitor for unauthorized access attempts to similar databases.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:16:27 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/23rd-november-threat-intelligence-report/">Check Point Research</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Trump Names Davies National Cyber Czar</title>
+      <link>https://secubuzz.com/news/trump-names-davies-national-cyber-czar-8b4bb737</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/trump-names-davies-national-cyber-czar-8b4bb737</guid>
+      <description><![CDATA[President Trump has confirmed appointing Pentagon CIO John Davies as national cyber director after widespread support. Davies, who has served as acting director, will lead DoD cyber strategy and coordinate federal cyber defense efforts. The appointment aims to strengthen overall U.S. cyber posture, contingent on interagency cooperation and resource allocation.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:14:00 GMT</pubDate>
+      <source url="https://therecord.media/kirsten-davies-trump-intends-nominate-national-cyber-director">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>JetBrains Advises Updates for Multiple Product Vulnerabilities</title>
+      <link>https://secubuzz.com/news/jetbrains-advises-updates-for-multiple-product-vul-f887450b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/jetbrains-advises-updates-for-multiple-product-vul-f887450b</guid>
+      <description><![CDATA[JetBrains announced vulnerabilities affecting Junie, Junie CLI, and Junie GitHub Action, with affected versions listed in advisory AV26-1192. The flaws stem from insufficient input validation and insecure configuration defaults, enabling unauthorized code execution or privilege escalation, though no active exploitation has been reported. JetBrains recommends applying the latest patches for all affected versions and reviewing configuration settings to mitigate risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:11:22 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1192">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Agent Identity Gaps Span Multiple Platforms</title>
+      <link>https://secubuzz.com/news/ai-agent-identity-gaps-span-multiple-platforms-666cfee6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-identity-gaps-span-multiple-platforms-666cfee6</guid>
+      <description><![CDATA[AI agents operating across multiple platforms create security gaps when no single vendor can observe or control their actions, according to Token Security. The shared responsibility problem complicates agent identity, permission, and accountability management for organizations. Organizations should assign clear ownership and accountability for agent identities and permissions across platforms.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Huntress Begins EU Data Hosting in Frankfurt</title>
+      <link>https://secubuzz.com/news/huntress-begins-eu-data-hosting-in-frankfurt-12ff4d6c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/huntress-begins-eu-data-hosting-in-frankfurt-12ff4d6c</guid>
+      <description><![CDATA[Huntress has started European Union data hosting, with Phase 1 storing certain data in Frankfurt. The company said other data currently remains in the United States while Phase 2 is planned. Customers should review the available regional data residency details to fully understand which information is hosted in each location.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:00:00 GMT</pubDate>
+      <source url="https://www.huntress.com/blog/eu-data-hosting">Huntress</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>NVIDIA Reinstates Jensen Huang as CEO</title>
+      <link>https://secubuzz.com/news/nvidia-reinstates-jensen-huang-as-ceo-04e4f5e8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-reinstates-jensen-huang-as-ceo-04e4f5e8</guid>
+      <description><![CDATA[NVIDIA reinstated Jensen Huang as president, chief executive officer, and board director on November 23, 2026, after a unanimous board vote. The decision took effect immediately, but an independent board inquiry into reports that a foreign intelligence effort targeted Huang remains open. NVIDIA said the board met with Huang several times and received additional information.]]></description>
+      <pubDate>Mon, 23 Nov 2026 14:51:17 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/nvidia-reinstates-jensen-huang/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Wiz Research Reports Agentic Framework Cloud Intrusions</title>
+      <link>https://secubuzz.com/news/wiz-research-reports-agentic-framework-cloud-intru-dbba3a3a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wiz-research-reports-agentic-framework-cloud-intru-dbba3a3a</guid>
+      <description><![CDATA[Agentic offensive frameworks such as ARTEX are driving a surge in cloud intrusions, as reported by Wiz Research. These frameworks enable automated, high-velocity attacks that exploit misconfigurations and weak IAM controls, causing unauthorized data exfiltration and service disruption across cloud environments. Security teams should monitor for ARTEX-related activity, enforce least-privilege IAM, and deploy detection rules to spot noisy, machine-speed attacks.]]></description>
+      <pubDate>Mon, 23 Nov 2026 14:46:19 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks">Wiz Research</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Advises Updates for Multiple RHEL Versions</title>
       <link>https://secubuzz.com/news/red-hat-advises-updates-for-multiple-rhel-versions-5f2cf303</link>
@@ -32,6 +113,15 @@
       <description><![CDATA[Cloudflare developed internal tools to extend its testing framework for networking protocols, focusing on DNS. The new DNS tooling enables teams to probe protocol behavior, identify edge cases, and validate performance under load. These tools are available internally and can be leveraged by security teams to assess DNS resilience and detect anomalies.]]></description>
       <pubDate>Mon, 23 Nov 2026 14:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/probing-dns-at-cloudflare/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>USN-9186-1: Tomcat vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9186-1-tomcat-vulnerabilities-eede7db4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9186-1-tomcat-vulnerabilities-eede7db4</guid>
+      <description><![CDATA[Tomcat 10 has been updated to 10.1.61 in Ubuntu 24.04 LTS, Ubuntu 26.04 LTS and Ubuntu 26.10. Tomcat 11 has been updated to 11.0.27 in Ubuntu 26.04 LTS and Ubuntu 26.10. In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.]]></description>
+      <pubDate>Mon, 23 Nov 2026 13:59:37 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9186-1">Ubuntu Security Notices</source>
       <category>General</category>
     </item>
     <item>
@@ -366,96 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 10:25:17 GMT</pubDate>
       <source url="https://cybersecuritynews.com/asp-net-anticsrf-flaw-under-attack/">Cyber Security News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat releases webkit2gtk3 security update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-webkit2gtk3-security-update-ee9994d5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-webkit2gtk3-security-update-ee9994d5</guid>
-      <description><![CDATA[Red Hat released a critical webkit2gtk3 security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support. The update fixes multiple vulnerabilities, each with a CVSS base score in the CVE references, and is rated Important. Apply the update promptly today to prevent exploitation of the affected webkit2gtk3 components.]]></description>
-      <pubDate>Mon, 23 Nov 2026 10:00:53 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102248">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical Update for java-21-ibm-semeru JDK</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-update-for-java-21-ibm-sem-75e77b1c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-update-for-java-21-ibm-sem-75e77b1c</guid>
-      <description><![CDATA[Red Hat released a critical update for java-21-ibm-semeru-certified-jdk on RHEL 10.0 and 10.2, fixing multiple high-impact vulnerabilities. The flaws, listed in the advisory’s CVE references, enable unauthenticated remote code execution with a CVSS score of 9.8, giving attackers full system control. Apply the vendor-supplied patch immediately; verify installation with rpm -q java-21-ibm-semeru-certified-jdk on affected systems.]]></description>
-      <pubDate>Mon, 23 Nov 2026 09:45:43 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102246">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical PHP 8.3 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-php-8-3-security-update-1131078f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-php-8-3-security-update-1131078f</guid>
-      <description><![CDATA[Red Hat released a critical security update for the php:8.3 module on RHEL 9, addressing multiple vulnerabilities. The update is rated Critical, with CVSS base scores provided for each vulnerability via the referenced CVE links, indicating high-severity flaws. Apply the patch promptly; no workarounds are available, and the update should be deployed across all affected systems.]]></description>
-      <pubDate>Mon, 23 Nov 2026 09:16:02 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102226">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel Security Update for RHEL 8.6</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-8-f6106dd4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-8-f6106dd4</guid>
-      <description><![CDATA[Red Hat issued a kernel security update for RHEL 8.6 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On, addressing multiple vulnerabilities. The update carries an Important impact rating, with CVSS base scores available for each vulnerability via the referenced CVE links. Security teams should apply the patch immediately to mitigate potential exploitation; no workarounds are currently recommended.]]></description>
-      <pubDate>Mon, 23 Nov 2026 09:14:32 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102233">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Confirms Printing Issues on Forcepoint Systems</title>
-      <link>https://secubuzz.com/news/microsoft-confirms-printing-issues-on-forcepoint-s-cbc7d4a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-confirms-printing-issues-on-forcepoint-s-cbc7d4a7</guid>
-      <description><![CDATA[Microsoft confirmed that the KB5132043 Windows 11 hotpatch caused printing failures on systems running Forcepoint DLP software. The issue does not represent a security vulnerability but disrupts print functionality for affected users. Microsoft advises users to postpone the hotpatch until a fix is released or to revert to a previous Windows 11 build.]]></description>
-      <pubDate>Mon, 23 Nov 2026 09:11:15 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>GL.iNet Cloud flaw exploited for malware</title>
-      <link>https://secubuzz.com/news/gl-inet-cloud-flaw-exploited-for-malware-1a3f0284</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gl-inet-cloud-flaw-exploited-for-malware-1a3f0284</guid>
-      <description><![CDATA[Hackers exploited a flaw in GL.iNet's GoodCloud remote-management service to install malware on customer routers and KVM devices. The vulnerability allowed remote code execution via authenticated access, and the attacker leveraged it to deploy malicious binaries before the company patched the flaw. GL.iNet has blocked the attack vector and recommends users apply the firmware update immediately to prevent further infections.]]></description>
-      <pubDate>Mon, 23 Nov 2026 09:04:08 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Signal Blocks AI Assistants From Accessing Private Messages</title>
-      <link>https://secubuzz.com/news/signal-blocks-ai-assistants-from-accessing-private-29017594</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/signal-blocks-ai-assistants-from-accessing-private-29017594</guid>
-      <description><![CDATA[Signal updated its app to block AI assistants on iOS 27 and Android, preventing them from capturing users’ private message content. The change stops assistants like Siri and Google Gemini from reading the screen to answer queries, protecting data stores. No vulnerability is reported; the update is a privacy safeguard that requires installing the latest Signal version.]]></description>
-      <pubDate>Mon, 23 Nov 2026 08:53:49 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/23/signal-blocks-ai-assistants-screenshots/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Samsung Securities Breach Exposes 8,241 Customers&apos; Data</title>
-      <link>https://secubuzz.com/news/samsung-securities-breach-exposes-8-241-customers-8e25bd81</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/samsung-securities-breach-exposes-8-241-customers-8e25bd81</guid>
-      <description><![CDATA[Samsung Securities reported a breach exposing personal data of 8,241 customers after unauthorized access to its Voice of Customer (VOC) website. The breach involved credential theft and internal compromise, but impact was limited to the VOC system. Samsung Securities advised affected customers to monitor accounts, change passwords, and is investigating while notifying regulators.]]></description>
-      <pubDate>Mon, 23 Nov 2026 08:53:13 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/samsung-securities-data-breach/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AI-Assisted Attacks Trigger Unauthorized Bank Transfers</title>
-      <link>https://secubuzz.com/news/ai-assisted-attacks-trigger-unauthorized-bank-tran-2b6acc3a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-assisted-attacks-trigger-unauthorized-bank-tran-2b6acc3a</guid>
-      <description><![CDATA[AI-assisted threat actors targeted Indian ICT assets, forcing unauthorized financial transfers at banks and fintech firms. The attacks leveraged machine-learning-driven phishing and credential-stealing techniques, exploiting known login-bypass flaws to move laterally within banking networks. Red CERT-In urges immediate patching of vulnerable systems and enhanced monitoring of transaction logs to detect further unauthorized activity.]]></description>
-      <pubDate>Mon, 23 Nov 2026 08:24:15 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>BADBOX 3.0 TV Boxes Generate 40 Billion Ad Requests</title>
-      <link>https://secubuzz.com/news/badbox-3-0-tv-boxes-generate-40-billion-ad-request-5e60fd71</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/badbox-3-0-tv-boxes-generate-40-billion-ad-request-5e60fd71</guid>
-      <description><![CDATA[BADBOX 3.0 infected low-cost TV boxes produced roughly 40 billion ad bid requests daily, exceeding 4% of all connected TV traffic. The malware hijacked ad rendering processes, enabling stealthy traffic injection without user awareness and creating a large-scale advertising fraud network.]]></description>
-      <pubDate>Mon, 23 Nov 2026 08:06:18 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/23/badbox-3-0-ad-fraud-operation/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
