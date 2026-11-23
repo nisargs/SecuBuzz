@@ -11,6 +11,78 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "xalgorix-introduces-ai-powered-pen-testing-tool-028c9b4e",
+    "title": "Xalgorix Introduces AI-Powered Pen Testing Tool",
+    "summary": "Xalgorix, an open-source AI penetration testing framework, validates findings through a dual-agent verification process. The primary agent identifies potential bugs, while a secondary agent attempts to exploit them; failures to confirm a bug result in a flagged finding for manual review, reducing false positives. The tool is available for community use and encourages reviewers to assess flagged vulnerabilities before reporting.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/xalgorix-ai-penetration-testing-tool/",
+    "publishedAt": "2026-11-23T06:30:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "xalgorix-introduces-ai-powered-pen-testing-tool",
+      "article-028c9b4e",
+      "028c9b4e",
+      "xalgorix-introduces-ai-powered-pen-testing-tool-51e5e3"
+    ]
+  },
+  {
+    "slug": "early-black-friday-scams-emerge-without-red-flags-f3dc3eff",
+    "title": "Early Black Friday Scams Emerge Without Red Flags",
+    "summary": "Scammers began posting fake Black Friday deals on September 1, earlier than last year, rarely referencing the holiday or using familiar domain names. The campaigns appear as Facebook group posts or Google Sites pages, mimicking retailer sale language promoting software, payment, travel, or crypto offers. Security teams should monitor social media and verify vendor legitimacy before engaging with such promotions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/black-friday-scams-doppel-report/",
+    "publishedAt": "2026-11-23T06:00:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "early-black-friday-scams-emerge-without-red-flags",
+      "article-f3dc3eff",
+      "f3dc3eff",
+      "early-black-friday-scams-emerge-without-red-flags-469d30"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-cockpit-security-patch-cda706c6",
+    "title": "Red Hat Issues Cockpit Security Patch",
+    "summary": "Red Hat released a security update for the Cockpit management interface on Enterprise Linux 10.0 Extended Update Support. The advisory references multiple CVEs with CVSS base scores, but no active exploitation is reported, and the update is classified as Important by Product Security. Administrators should apply the Cockpit patch promptly to address the identified vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102208",
+    "publishedAt": "2026-11-23T05:54:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-cockpit-security-patch",
+      "article-cda706c6",
+      "cda706c6",
+      "red-hat-issues-cockpit-security-patch-2ee15e"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-security-update-e592f563",
+    "title": "Red Hat Releases Kernel Security Update",
+    "summary": "Red Hat issued a kernel update for Enterprise Linux 9 addressing multiple security bugs. The advisory lists several CVEs with CVSS base scores, but no active exploitation is reported, and the update is rated as Important by Product Security. Users should apply the kernel patch immediately to mitigate the identified vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102167",
+    "publishedAt": "2026-11-23T05:42:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-security-update",
+      "article-e592f563",
+      "e592f563",
+      "red-hat-releases-kernel-security-update-2ee15b"
+    ]
+  },
+  {
     "slug": "isaca-updates-cobit-7-with-ai-risk-scenarios-a8c0f551",
     "title": "ISACA Updates COBIT 7 with AI Risk Scenarios",
     "summary": "ISACA released COBIT 7, the latest version of its governance framework, adding AI risk scenarios. The update provides comprehensive guidance, a digital platform, and customizable resources to help organizations manage emerging AI risks. Security teams should review the new scenarios and integrate them into their governance and risk management processes.",
@@ -196,6 +268,44 @@ export const news: NewsBrief[] = [
       "2d84a280",
       "git-lfs-security-update-for-red-hat-enterprise-lin-2ee15b",
       "git-lfs-security-update-for-red-hat-enterprise-linux-10"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-xdg-desktop-portal-update-for-rhe-099203f6",
+    "title": "Red Hat Releases xdg-desktop-portal Update for RHEL 10.2",
+    "summary": "Red Hat issued a security update for xdg-desktop-portal on RHEL 10.2 Extended Update Support, addressing multiple vulnerabilities. The patch mitigates potential remote code execution and privilege escalation flaws in the portal's sandboxed application handling, with CVSS scores ranging from moderate to high. Red Hat recommends applying the update immediately to secure affected systems.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102176",
+    "publishedAt": "2026-11-23T03:30:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-xdg-desktop-portal-update-for-rhe",
+      "article-099203f6",
+      "099203f6",
+      "red-hat-releases-xdg-desktop-portal-update-for-rhe-2ee15b",
+      "red-hat-releases-xdg-desktop-portal-update-for-rhel-10-2"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-xdg-desktop-portal-security-updat-65044650",
+    "title": "Red Hat Releases xdg-desktop-portal Security Update",
+    "summary": "Red Hat issued a security update for xdg-desktop-portal on RHEL 9.4 for SAP Solutions, addressing multiple vulnerabilities. The update mitigates potential remote code execution and privilege escalation flaws identified in the portal's handling of sandboxed applications, with CVSS scores ranging from moderate to high. Red Hat recommends applying the update immediately to secure affected systems.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102165",
+    "publishedAt": "2026-11-23T03:25:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-xdg-desktop-portal-security-updat",
+      "article-65044650",
+      "65044650",
+      "red-hat-releases-xdg-desktop-portal-security-updat-2ee15b",
+      "red-hat-releases-xdg-desktop-portal-security-update"
     ]
   },
   {
@@ -396,25 +506,6 @@ export const news: NewsBrief[] = [
       "article-29b1afa8",
       "29b1afa8",
       "red-hat-libgsf-security-update-released-2ee15b"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-xdg-desktop-portal-security-updat-660447e3",
-    "title": "Red Hat Releases xdg-desktop-portal Security Update",
-    "summary": "Red Hat released a security update for xdg-desktop-portal on RHEL 9.2 Update Services for SAP Solutions, fixing multiple vulnerabilities. The update is rated Important, with CVSS base scores for each flaw listed via CVE links in the references, indicating moderate-to-high risk. Red Hat advises applying the patch immediately; no work-arounds are available, and users should confirm installation through update channels.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102164",
-    "publishedAt": "2026-11-23T02:10:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-xdg-desktop-portal-security-updat",
-      "article-660447e3",
-      "660447e3",
-      "red-hat-releases-xdg-desktop-portal-security-updat-2ee15b",
-      "red-hat-releases-xdg-desktop-portal-security-update"
     ]
   },
   {
@@ -9580,117 +9671,6 @@ export const news: NewsBrief[] = [
       "dd12e280",
       "microsoft-s-ai-uncovers-99-security-issues-in-expr-76a8c4",
       "microsoft-s-ai-uncovers-99-security-issues-in-express-imagem"
-    ]
-  },
-  {
-    "slug": "brazilian-signature-apps-harbor-rce-vulnerabilitie-7e1baafb",
-    "title": "Brazilian Signature Apps Harbor RCE Vulnerabilities",
-    "summary": "Brazilian government-sanctioned signature apps expose authentication middleware to remote code execution via unvalidated input. The flaw lets attackers inject code during document signing, potentially compromising legal documents and enabling fraud; no public exploit confirmed. Patches are pending; security teams should disable vulnerable middleware, apply vendor updates when released, and monitor for unauthorized signing activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
-    "publishedAt": "2026-11-18T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "brazilian-signature-apps-harbor-rce-vulnerabilitie",
-      "article-7e1baafb",
-      "7e1baafb",
-      "brazilian-signature-apps-harbor-rce-vulnerabilitie-38dc37",
-      "brazilian-signature-apps-harbor-rce-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "github-security-advisory-av26-1172-7d0fa86e",
-    "title": "GitHub security advisory (AV26-1172)",
-    "summary": "Serial number: AV26-1172 Date: November 18, 2026 As of November 18, 2026, GitHub is affected by vulnerabilities in the following product: Enterprise Server 3.19.0 Prior to 3.19.16 3.20.0 Prior to 3.20.12 3.21.0 Prior to 3.21.10 3.22.0 Prior to 3.22.5 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/github-security-advisory-av26-1172",
-    "publishedAt": "2026-11-18T13:40:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-security-advisory-av26-1172",
-      "article-7d0fa86e",
-      "7d0fa86e",
-      "github-security-advisory-av26-1172-6bfa9e"
-    ]
-  },
-  {
-    "slug": "gentlemen-ransomware-gang-claims-nvidia-breach-2d18cebf",
-    "title": "Gentlemen Ransomware Gang Claims NVIDIA Breach",
-    "summary": "The Gentlemen ransomware group posted a claim of breaching NVIDIA on its dark-web leak site. The post includes a countdown and ransom talk references but lacks sample files or confirmed compromise evidence. NVIDIA has not publicly confirmed a breach, and no definitive proof of infiltration has been disclosed in the public domain.",
-    "category": "Ransomware",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/nvidia-data-breach-claim/",
-    "publishedAt": "2026-11-18T13:37:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gentlemen-ransomware-gang-claims-nvidia-breach",
-      "article-2d18cebf",
-      "2d18cebf",
-      "gentlemen-ransomware-gang-claims-nvidia-breach-60b88c"
-    ]
-  },
-  {
-    "slug": "russian-apt-impersonates-hacked-firm-employee-to-t-2d9b132f",
-    "title": "Russian APT Impersonates Hacked Firm Employee to Target US Org",
-    "summary": "A Russian APT used stolen Star Blizzard credentials to pose as an employee of a compromised firm and phish a U.S. organization. The attack leveraged data and social engineering to gain initial access by exploiting the target's trust in the impersonated identity. Security teams should verify employee identities, enforce MFA, and monitor for anomalous credential usage to mitigate impersonation attacks.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/",
-    "publishedAt": "2026-11-18T13:33:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-apt-impersonates-hacked-firm-employee-to-t",
-      "article-2d9b132f",
-      "2d9b132f",
-      "russian-apt-impersonates-hacked-firm-employee-to-t-252ccd",
-      "russian-apt-impersonates-hacked-firm-employee-to-target-us-o"
-    ]
-  },
-  {
-    "slug": "malwarebytes-engineers-secure-their-own-antivirus-b2853287",
-    "title": "Malwarebytes Engineers Secure Their Own Antivirus",
-    "summary": "Malwarebytes engineers discuss protecting their antivirus platform from malware that could disable or bypass its defenses. The article outlines defensive strategies, including code integrity checks, runtime monitoring, and secure update mechanisms to thwart disabling attacks. Security teams should adopt similar integrity verification and update safeguards to maintain antivirus resilience against disabling malware.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/inside-malwarebytes/2026/11/who-protects-the-antivirus-how-we-secure-malwarebytes-itself",
-    "publishedAt": "2026-11-18T13:32:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malwarebytes-engineers-secure-their-own-antivirus",
-      "article-b2853287",
-      "b2853287",
-      "malwarebytes-engineers-secure-their-own-antivirus-564ccb"
-    ]
-  },
-  {
-    "slug": "google-chrome-vulnerability-affects-versions-befor-a7e6781c",
-    "title": "Google Chrome Vulnerability Affects Versions Before 158.0.8127.36",
-    "summary": "A vulnerability affects Google Chrome stable channel desktop versions before 158.0.8127.36 on Windows, Mac, and Linux. The flaw, lacking a CVE ID, is not publicly exploited but could enable code execution or session compromise. Google advises users to review the advisory and install the latest Chrome update promptly to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1171",
-    "publishedAt": "2026-11-18T13:31:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-chrome-vulnerability-affects-versions-befor",
-      "article-a7e6781c",
-      "a7e6781c",
-      "google-chrome-vulnerability-affects-versions-befor-170ca3",
-      "google-chrome-vulnerability-affects-versions-before-158-0-81"
     ]
   }
 ];
