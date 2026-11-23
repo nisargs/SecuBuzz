@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-updates-libgsf-for-security-50f93d6e",
+    "title": "Red Hat Updates libgsf for Security",
+    "summary": "Red Hat released a security update for libgsf on RHEL 10.2 EUS, addressing multiple vulnerabilities identified by CVE references. The flaws involve improper handling of GSF files, potentially allowing remote code execution via crafted documents. Red Hat has issued a patch; administrators should apply the update immediately to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102162",
+    "publishedAt": "2026-11-23T03:35:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-libgsf-for-security",
+      "article-50f93d6e",
+      "50f93d6e",
+      "red-hat-updates-libgsf-for-security-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-git-lfs-security-patch-41c2191c",
+    "title": "Red Hat Issues git-lfs Security Patch",
+    "summary": "Red Hat released a security update for git-lfs on RHEL 10.2 EUS, addressing multiple critical vulnerabilities referenced by CVE identifiers. The defects involve improper validation of LFS objects, potentially enabling remote code execution through malicious repositories. Red Hat has issued a patch; administrators should apply it promptly to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102186",
+    "publishedAt": "2026-11-23T03:32:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-git-lfs-security-patch",
+      "article-41c2191c",
+      "41c2191c",
+      "red-hat-issues-git-lfs-security-patch-2ee15b"
+    ]
+  },
+  {
+    "slug": "cleverbridge-reports-card-data-theft-f685ea02",
+    "title": "Cleverbridge Reports Card Data Theft",
+    "summary": "Cleverbridge confirmed that attackers exfiltrated payment card data from its e-commerce platform, including card numbers, expiration dates, and CVV codes. The breach involved unauthorized access to the platform’s database, exposing sensitive payment information to malicious actors. Cleverbridge has begun notifying affected customers and is investigating the incident; affected users should monitor accounts for fraudulent activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/cleverbridge-data-breach/",
+    "publishedAt": "2026-11-23T02:37:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cleverbridge-reports-card-data-theft",
+      "article-f685ea02",
+      "f685ea02",
+      "cleverbridge-reports-card-data-theft-70d8b7"
+    ]
+  },
+  {
     "slug": "red-hat-updates-librabbitmq-on-rhel-8-3f737d08",
     "title": "Red Hat Updates librabbitmq on RHEL 8",
     "summary": "Red Hat issued a security update for librabbitmq on RHEL 8, addressing vulnerabilities rated as Important. The vulnerabilities lack a publicly disclosed CVE identifier in the advisory, but Red Hat provides CVSS base scores for each through referenced CVE links. Security teams should apply the librabbitmq update immediately to mitigate the identified risks.",
@@ -44,6 +98,42 @@ export const news: NewsBrief[] = [
       "article-ff7053b1",
       "ff7053b1",
       "red-hat-updates-libgsf-on-rhel-9-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-gfs2-utils-security-update-released-cf32cd93",
+    "title": "Red Hat gfs2-utils security update released",
+    "summary": "Red Hat released a gfs2-utils update for Enterprise Linux 9, fixing a flaw that could allow arbitrary code via malformed GFS2 metadata. The issue stems from improper handling of GFS2 superblock fields, with a CVSS base score indicating moderate impact; no active exploitation observed. Apply the patch through the standard update channel to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102183",
+    "publishedAt": "2026-11-23T02:14:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-gfs2-utils-security-update-released",
+      "article-cf32cd93",
+      "cf32cd93",
+      "red-hat-gfs2-utils-security-update-released-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-libgsf-security-update-released-29b1afa8",
+    "title": "Red Hat libgsf security update released",
+    "summary": "Red Hat released a libgsf update for Enterprise Linux 9.8 EUS, fixing a flaw that could allow arbitrary code via malformed GSF files. The issue stems from insufficient validation of GSF headers, with a CVSS base score indicating important impact; no active exploitation reported. Apply the patch via the standard update channel to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102161",
+    "publishedAt": "2026-11-23T02:13:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-libgsf-security-update-released",
+      "article-29b1afa8",
+      "29b1afa8",
+      "red-hat-libgsf-security-update-released-2ee15b"
     ]
   },
   {
@@ -9590,101 +9680,6 @@ export const news: NewsBrief[] = [
       "e5d7f9a3",
       "north-korea-aligned-actor-uses-blockchain-for-info-d324fe",
       "north-korea-aligned-actor-uses-blockchain-for-infostealing"
-    ]
-  },
-  {
-    "slug": "chrome-158-fixes-204-vulnerabilities-including-cri-771fd328",
-    "title": "Chrome 158 Fixes 204 Vulnerabilities, Including Critical Code Execution Flaws",
-    "summary": "Google began rolling out Chrome 158 to Windows, macOS, and Linux on November 17, 2026, with 204 security fixes. The desktop release notes list six critical memory bugs that could lead to code execution. However, Google did not spell out the impact of each flaw.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/chrome-158-fixes-204-vulnerabilities/",
-    "publishedAt": "2026-11-18T10:41:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-158-fixes-204-vulnerabilities-including-cri",
-      "article-771fd328",
-      "771fd328",
-      "chrome-158-fixes-204-vulnerabilities-including-cri-6a06e3",
-      "chrome-158-fixes-204-vulnerabilities-including-critical-code"
-    ]
-  },
-  {
-    "slug": "perforce-puppet-rce-exploited-in-attacks-68226550",
-    "title": "Perforce Puppet RCE Exploited in Attacks",
-    "summary": "Perforce Puppet’s CVE-2026-115731 flaw lets a client with a CA-signed agent certificate execute arbitrary code on the server. The flaw bypasses authentication via certificate validation, enabling attackers to achieve full server compromise; it is actively exploited with a CVSS score of 9.4. Perforce issued an urgent patch; administrators should update immediately or apply the provided work-around to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
-    "publishedAt": "2026-11-18T10:37:08.000Z",
-    "cves": [
-      "CVE-2026-115731"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "perforce-puppet-rce-exploited-in-attacks",
-      "article-68226550",
-      "68226550",
-      "perforce-puppet-rce-exploited-in-attacks-18185c"
-    ]
-  },
-  {
-    "slug": "apache-roller-rce-exploited-in-attacks-cc14f0ef",
-    "title": "Apache Roller RCE Exploited in Attacks",
-    "summary": "Apache identified a critical Roller flaw that threat actors exploit for code execution on vulnerable servers. The vulnerability permits unauthenticated remote code execution via the Roller CMS, and is actively used in the wild. Apache released security updates; administrators must apply the patch immediately to mitigate the critical RCE risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
-    "publishedAt": "2026-11-18T10:35:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apache-roller-rce-exploited-in-attacks",
-      "article-cc14f0ef",
-      "cc14f0ef",
-      "apache-roller-rce-exploited-in-attacks-453a0a"
-    ]
-  },
-  {
-    "slug": "bitly-links-hijacked-in-historic-burger-king-mcdon-22a2db72",
-    "title": "Bitly Links Hijacked in Historic Burger King, McDonald’s Posts",
-    "summary": "Bitly links embedded in Burger King, McDonald’s, and Trump X posts from 2009-2014 now redirect users to unrelated sites. The hijacking exploits Bitly’s stale link database, allowing attackers to alter destination URLs without authentication, causing users to view offensive content or malware. Bitly has issued a notice to update link management policies and users should verify link destinations before clicking.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-old-bitly-links/",
-    "publishedAt": "2026-11-18T10:27:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bitly-links-hijacked-in-historic-burger-king-mcdon",
-      "article-22a2db72",
-      "22a2db72",
-      "bitly-links-hijacked-in-historic-burger-king-mcdon-5cc75d",
-      "bitly-links-hijacked-in-historic-burger-king-mcdonald-s-post"
-    ]
-  },
-  {
-    "slug": "understanding-and-preventing-wangiri-one-ring-phon-53591880",
-    "title": "Understanding and Preventing Wangiri One-Ring Phone Scams",
-    "summary": "ESET analyzed wangiri phone scams where attackers trigger single-ring calls to entice targets into calling premium-rate numbers. The scam relies on automated robocalling systems to generate financial fraud via exorbitant per-minute phone charges when victims return missed calls. Users must avoid calling back unknown international numbers and block persistent fraudulent callers through mobile operating system settings.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/scams/who-was-trying-phone-how-one-ring-phone-scams-work/",
-    "publishedAt": "2026-11-18T10:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "understanding-and-preventing-wangiri-one-ring-phon",
-      "article-53591880",
-      "53591880",
-      "understanding-and-preventing-wangiri-one-ring-phon-602f8a",
-      "understanding-and-preventing-wangiri-one-ring-phone-scams"
     ]
   }
 ];
