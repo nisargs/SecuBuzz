@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-important-libgsf-security-update-a34525dd",
+    "title": "Red Hat Issues Important libgsf Security Update",
+    "summary": "Red Hat released a libgsf update on RHEL 10, fixing vulnerabilities that could enable local privilege escalation or denial of service. The advisory lists CVSS base scores and references CVE identifiers, though specific CVE numbers are omitted. Red Hat recommends applying the update immediately via the RPM package or system update tools to mitigate exploitation risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102159",
+    "publishedAt": "2026-11-23T01:47:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-libgsf-security-update",
+      "article-a34525dd",
+      "a34525dd",
+      "red-hat-issues-important-libgsf-security-update-2ee15b"
+    ]
+  },
+  {
     "slug": "red-hat-flatpak-update-fixes-security-vulnerabilit-58f0e68c",
     "title": "Red Hat Flatpak Update Fixes Security Vulnerabilities",
     "summary": "Red Hat issued a flatpak patch for RHEL 8.4 to fix multiple security flaws. The update addresses privilege-escalation and information-leak vulnerabilities, each with a CVSS score listed via CVE references, but no exploitation reported. Apply the flatpak update immediately; no workaround exists, and users should confirm the new flatpak version post-install.",
@@ -9672,25 +9690,6 @@ export const news: NewsBrief[] = [
       "71b4f81c",
       "4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack-3c7792",
       "4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack-entire-sh"
-    ]
-  },
-  {
-    "slug": "microsoft-unveils-windows-server-2028-with-hardene-bc339d8d",
-    "title": "Microsoft Unveils Windows Server 2028 with Hardened Security",
-    "summary": "Microsoft announced Windows Server 2028 at Ignite 2026, positioning it as the next major release of its server operating system. The new OS incorporates hardened security features, including enhanced kernel isolation, improved credential protection, and built-in threat detection capabilities. Microsoft recommends testing the release in staging environments before production deployment and applying the forthcoming cumulative updates.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
-    "publishedAt": "2026-11-18T09:24:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-unveils-windows-server-2028-with-hardene",
-      "article-bc339d8d",
-      "bc339d8d",
-      "microsoft-unveils-windows-server-2028-with-hardene-296474",
-      "microsoft-unveils-windows-server-2028-with-hardened-security"
     ]
   }
 ];

@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 01:44:57 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 01:58:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues Important libgsf Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-libgsf-security-update-a34525dd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-libgsf-security-update-a34525dd</guid>
+      <description><![CDATA[Red Hat released a libgsf update on RHEL 10, fixing vulnerabilities that could enable local privilege escalation or denial of service. The advisory lists CVSS base scores and references CVE identifiers, though specific CVE numbers are omitted. Red Hat recommends applying the update immediately via the RPM package or system update tools to mitigate exploitation risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 01:47:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102159">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Flatpak Update Fixes Security Vulnerabilities</title>
       <link>https://secubuzz.com/news/red-hat-flatpak-update-fixes-security-vulnerabilit-58f0e68c</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[ruby2shell lets attackers corrupt memory in default Rails and Sinatra apps without logging in. Cloudflare WAF blocks it for every customer, including Free plans. Upgrade Ruby now, and use the WAF to cover the gap.]]></description>
       <pubDate>Fri, 20 Nov 2026 20:24:38 GMT</pubDate>
       <source url="https://blog.cloudflare.com/ruby2shell-waf-protection/">Cloudflare Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws</title>
-      <link>https://secubuzz.com/news/how-cloudflare-waf-helps-protect-against-phpafters-4653f8cd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/how-cloudflare-waf-helps-protect-against-phpafters-4653f8cd</guid>
-      <description><![CDATA[phpAfterShell is a critical flaw in PHP's default session handler that can lead to code execution. Cloudflare WAF blocks it for all customers, including Free plans, and adds new rules for other PHP flaws fixed in the same release. The vulnerability is tracked as CVE-2026-126714.]]></description>
-      <pubDate>Fri, 20 Nov 2026 20:00:45 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/phpaftershell-waf-protection/">Cloudflare Security</source>
       <category>CVE</category>
     </item>
   </channel>

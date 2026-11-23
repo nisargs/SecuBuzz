@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102159",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102159",
+    "title": "Red Hat Issues Important libgsf Security Update",
+    "headline": "Red Hat Issues Important libgsf Security Update",
+    "summary": "Red Hat released a libgsf update on RHEL 10, fixing vulnerabilities that could enable local privilege escalation or denial of service. The advisory lists CVSS base scores and references CVE identifiers, though specific CVE numbers are omitted. Red Hat recommends applying the update immediately via the RPM package or system update tools to mitigate exploitation risk.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T01:47:35.000Z",
+    "ingestedAt": "2026-11-23T01:57:23.175Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102159",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:102156",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102156",
     "title": "Red Hat Flatpak Update Fixes Security Vulnerabilities",
@@ -8334,21 +8350,5 @@
     ],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
-    "title": "Microsoft Unveils Windows Server 2028 with Hardened Security",
-    "headline": "Microsoft Unveils Windows Server 2028 with Hardened Security",
-    "summary": "Microsoft announced Windows Server 2028 at Ignite 2026, positioning it as the next major release of its server operating system. The new OS incorporates hardened security features, including enhanced kernel isolation, improved credential protection, and built-in threat detection capabilities. Microsoft recommends testing the release in staging environments before production deployment and applying the forthcoming cumulative updates.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-18T09:24:31.000Z",
-    "ingestedAt": "2026-11-18T09:43:35.750Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
-    "additionalSources": []
   }
 ]
