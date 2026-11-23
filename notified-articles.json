@@ -6041,5 +6041,12 @@
   "https://cybersecuritynews.com/hackers-use-autonomous-ai/",
   "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/",
   "https://access.redhat.com/errata/RHSA-2026:102179",
-  "https://access.redhat.com/errata/RHSA-2026:102185"
+  "https://access.redhat.com/errata/RHSA-2026:102185",
+  "https://www.helpnetsecurity.com/2026/11/23/cisco-expressway-vulnerability-exploited-cve-2026-76466/",
+  "https://www.helpnetsecurity.com/2026/11/23/cairn-ai-agents-autonomous-attacks/",
+  "https://access.redhat.com/errata/RHSA-2026:102282",
+  "https://access.redhat.com/errata/RHSA-2026:102283",
+  "https://access.redhat.com/errata/RHSA-2026:102190",
+  "https://access.redhat.com/errata/RHSA-2026:102178",
+  "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/"
 ]

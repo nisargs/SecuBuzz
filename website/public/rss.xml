@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 11:46:58 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 12:45:48 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues libXrender Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-libxrender-security-update-47c1eed1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libxrender-security-update-47c1eed1</guid>
+      <description><![CDATA[Red Hat released an important security update for libXrender on RHEL 7 Extended Lifecycle Support. The update addresses one or more vulnerabilities with CVSS scores available via linked CVE references, though specific IDs are not listed. Apply the libXrender update immediately, promptly, and follow Red Hat advisories for installation guidance.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:16:42 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102282">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues librabbitmq Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-librabbitmq-security-update-29d2cee6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-librabbitmq-security-update-29d2cee6</guid>
+      <description><![CDATA[Red Hat released an important security update for librabbitmq on RHEL 10. The update mitigates vulnerabilities with CVSS scores available via linked CVE references, though specific IDs are not listed, and it applies to all affected librabbitmq packages. Install the librabbitmq update promptly and consult Red Hat advisories for detailed guidance.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:13:37 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102283">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>BadBox 3.0 Ad Fraud Operation Disrupted</title>
+      <link>https://secubuzz.com/news/badbox-3-0-ad-fraud-operation-disrupted-4267da39</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/badbox-3-0-ad-fraud-operation-disrupted-4267da39</guid>
+      <description><![CDATA[Backdoors on low-cost consumer devices enabled the BadBox 3.0 ad-fraud operation, delivering modules that generated 40 billion bid requests daily. The operation leveraged residential-proxy capabilities to obfuscate traffic, creating an ad-fraud network that inflated auction volumes and siphoned revenue from publishers. Security teams coordinated a takedown that disrupted the backdoor infrastructure, halting bid-request generation and exposing compromised devices for remediation.]]></description>
+      <pubDate>Mon, 23 Nov 2026 11:44:18 GMT</pubDate>
+      <source url="https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>CrowdStrike to Acquire Zscaler for $43.9B</title>
       <link>https://secubuzz.com/news/crowdstrike-to-acquire-zscaler-for-43-9b-c33d0a4d</link>
@@ -32,6 +59,15 @@
       <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Mon, 23 Nov 2026 11:14:46 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102253">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cairn Framework Used to Exploit Medical AI Zero-Day</title>
+      <link>https://secubuzz.com/news/cairn-framework-used-to-exploit-medical-ai-zero-da-402eb59c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cairn-framework-used-to-exploit-medical-ai-zero-da-402eb59c</guid>
+      <description><![CDATA[A Chinese-nexus threat actor used the open-source Cairn framework to exploit a zero-day in a medical imaging AI application. The zero-day enabled remote code execution after initial failed attempts, giving the attacker a foothold without a disclosed CVE. No vendor patch exists; teams should monitor exploitation, harden AI applications, and limit autonomous framework use.]]></description>
+      <pubDate>Mon, 23 Nov 2026 10:49:38 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/23/cairn-ai-agents-autonomous-attacks/">Help Net Security</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -179,13 +215,13 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>CISA Alerts on Cisco Expressway RCE Exploitation</title>
-      <link>https://secubuzz.com/news/cisa-alerts-on-cisco-expressway-rce-exploitation-96269fe0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-alerts-on-cisco-expressway-rce-exploitation-96269fe0</guid>
-      <description><![CDATA[CISA reports that attackers are exploiting a recently patched critical vulnerability in Cisco Expressway, enabling remote code execution. The flaw, classified as critical, allows unauthenticated users to execute arbitrary code, and has been actively leveraged in the wild. Cisco has released a patch; security teams must apply it immediately and monitor for exploitation attempts.]]></description>
+      <title>Cisco Expressway Zero-Day Exploit Enables Remote Code Execution</title>
+      <link>https://secubuzz.com/news/cisco-expressway-zero-day-exploit-enables-remote-c-154f46d5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-expressway-zero-day-exploit-enables-remote-c-154f46d5</guid>
+      <description><![CDATA[A zero-day vulnerability (CVE-2026-76466) in Cisco Expressway gateways has been exploited by attackers to breach internal networks. The unauthenticated remote flaw permits arbitrary code execution, and it has been confirmed as a critical CVSS-rated zero-day used in the wild. Cisco has released a patch; organizations must apply it immediately and verify CISA’s Known Exploited Vulnerabilities catalog for guidance.]]></description>
       <pubDate>Mon, 23 Nov 2026 07:44:19 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/">BleepingComputer</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>Malicious Ad Domains Steal iPhone Crypto Recovery Phrases</title>
@@ -305,6 +341,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:102178: Important: xdg-desktop-portal security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102178-important-xdg-desktop-portal-secu-14a0b22d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102178-important-xdg-desktop-portal-secu-14a0b22d</guid>
+      <description><![CDATA[An update for xdg-desktop-portal is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 23 Nov 2026 04:54:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102178">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102190: Moderate: openssh security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102190-moderate-openssh-security-update-72816923</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102190-moderate-openssh-security-update-72816923</guid>
+      <description><![CDATA[An update for openssh is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 23 Nov 2026 04:45:41 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102190">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Fence-Agents Receives Important Security Update</title>
       <link>https://secubuzz.com/news/fence-agents-receives-important-security-update-561939fb</link>
       <guid isPermaLink="true">https://secubuzz.com/news/fence-agents-receives-important-security-update-561939fb</guid>
@@ -401,60 +455,6 @@
       <description><![CDATA[Red Hat released a security update for libgsf on RHEL 10.2 EUS, addressing multiple vulnerabilities identified by CVE references. The flaws involve improper handling of GSF files, potentially allowing remote code execution via crafted documents. Red Hat has issued a patch; administrators should apply the update immediately to mitigate exploitation.]]></description>
       <pubDate>Mon, 23 Nov 2026 03:35:40 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102162">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>git-lfs Security Update for Red Hat Enterprise Linux 10</title>
-      <link>https://secubuzz.com/news/git-lfs-security-update-for-red-hat-enterprise-lin-2d84a280</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/git-lfs-security-update-for-red-hat-enterprise-lin-2d84a280</guid>
-      <description><![CDATA[Red Hat released a security update for git-lfs on Red Hat Enterprise Linux 10, addressing a vulnerability that could allow code execution. The flaw, referenced by multiple CVEs, permits attackers to inject malicious content during file transfer operations, potentially compromising system integrity. Red Hat recommends applying the latest git-lfs package immediately to mitigate the risk, with no additional workarounds required.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:32:40 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102186">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat issues nodejs22 important security update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-nodejs22-important-security-update-555683a3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-nodejs22-important-security-update-555683a3</guid>
-      <description><![CDATA[An important-impact flaw in Red Hat Enterprise Linux 10.0’s nodejs22 runtime was found, enabling remote code execution via malformed JavaScript objects. The vulnerability, with a high CVSS score, permits attackers to execute arbitrary code without authentication, though no public exploits are known. Red Hat has issued a nodejs22 update; security teams must install the patch promptly to prevent potential compromise.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:32:15 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102180">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat releases glib2 moderate security update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-glib2-moderate-security-update-29f2a9a2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-glib2-moderate-security-update-29f2a9a2</guid>
-      <description><![CDATA[A moderate-impact vulnerability in Red Hat Enterprise Linux 8.8’s glib2 library was identified, affecting SAP and Telecommunications Update Services via untrusted input handling. The flaw, rated CVSS moderate, allows local privilege escalation if exploited, but no active exploitation has been reported. Red Hat has released a patch; administrators should apply the glib2 update immediately to mitigate the risk.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:30:33 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102189">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases xdg-desktop-portal Update for RHEL 10.2</title>
-      <link>https://secubuzz.com/news/red-hat-releases-xdg-desktop-portal-update-for-rhe-099203f6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-xdg-desktop-portal-update-for-rhe-099203f6</guid>
-      <description><![CDATA[Red Hat issued a security update for xdg-desktop-portal on RHEL 10.2 Extended Update Support, addressing multiple vulnerabilities. The patch mitigates potential remote code execution and privilege escalation flaws in the portal's sandboxed application handling, with CVSS scores ranging from moderate to high. Red Hat recommends applying the update immediately to secure affected systems.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:30:25 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102176">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases xdg-desktop-portal Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-xdg-desktop-portal-security-updat-65044650</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-xdg-desktop-portal-security-updat-65044650</guid>
-      <description><![CDATA[Red Hat issued a security update for xdg-desktop-portal on RHEL 9.4 for SAP Solutions, addressing multiple vulnerabilities. The update mitigates potential remote code execution and privilege escalation flaws identified in the portal's handling of sandboxed applications, with CVSS scores ranging from moderate to high. Red Hat recommends applying the update immediately to secure affected systems.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:25:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102165">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>QEMU KVM MA Flaw Allows Local Privilege Escalation</title>
-      <link>https://secubuzz.com/news/qemu-kvm-ma-flaw-allows-local-privilege-escalation-4423a1ec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/qemu-kvm-ma-flaw-allows-local-privilege-escalation-4423a1ec</guid>
-      <description><![CDATA[Red Enterprise Linux 7 Extended Lifecycle Support users face a qemu-kvm-ma flaw that may enable local privilege escalation via the virtual machine monitor. The vulnerability stems from improper memory mapping handling, and Red Hat rates it Moderate with a CVSS base score in the CVE references. Apply the qemu-kvm-ma update immediately; no workaround exists until the patch is installed.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:24:40 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102196">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

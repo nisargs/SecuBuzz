@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-libxrender-security-update-47c1eed1",
+    "title": "Red Hat Issues libXrender Security Update",
+    "summary": "Red Hat released an important security update for libXrender on RHEL 7 Extended Lifecycle Support. The update addresses one or more vulnerabilities with CVSS scores available via linked CVE references, though specific IDs are not listed. Apply the libXrender update immediately, promptly, and follow Red Hat advisories for installation guidance.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102282",
+    "publishedAt": "2026-11-23T12:16:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-libxrender-security-update",
+      "article-47c1eed1",
+      "47c1eed1",
+      "red-hat-issues-libxrender-security-update-2ee15f"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-librabbitmq-security-update-29d2cee6",
+    "title": "Red Hat Issues librabbitmq Security Update",
+    "summary": "Red Hat released an important security update for librabbitmq on RHEL 10. The update mitigates vulnerabilities with CVSS scores available via linked CVE references, though specific IDs are not listed, and it applies to all affected librabbitmq packages. Install the librabbitmq update promptly and consult Red Hat advisories for detailed guidance.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102283",
+    "publishedAt": "2026-11-23T12:13:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-librabbitmq-security-update",
+      "article-29d2cee6",
+      "29d2cee6",
+      "red-hat-issues-librabbitmq-security-update-2ee15f"
+    ]
+  },
+  {
+    "slug": "badbox-3-0-ad-fraud-operation-disrupted-4267da39",
+    "title": "BadBox 3.0 Ad Fraud Operation Disrupted",
+    "summary": "Backdoors on low-cost consumer devices enabled the BadBox 3.0 ad-fraud operation, delivering modules that generated 40 billion bid requests daily. The operation leveraged residential-proxy capabilities to obfuscate traffic, creating an ad-fraud network that inflated auction volumes and siphoned revenue from publishers. Security teams coordinated a takedown that disrupted the backdoor infrastructure, halting bid-request generation and exposing compromised devices for remediation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/",
+    "publishedAt": "2026-11-23T11:44:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "badbox-3-0-ad-fraud-operation-disrupted",
+      "article-4267da39",
+      "4267da39",
+      "badbox-3-0-ad-fraud-operation-disrupted-2a52b5"
+    ]
+  },
+  {
     "slug": "crowdstrike-to-acquire-zscaler-for-43-9b-c33d0a4d",
     "title": "CrowdStrike to Acquire Zscaler for $43.9B",
     "summary": "CrowdStrike announced a $43.9 billion acquisition of Zscaler, aiming to combine their security platforms and generate over $10 billion in annual recurring revenue. The deal positions CrowdStrike as a leading provider of integrated cloud-native security services, expanding its market reach across identity, network, and application layers.",
@@ -63,6 +117,25 @@ export const news: NewsBrief[] = [
       "0d07fd6a",
       "rhsa-2026-102253-important-kernel-security-bug-fix-2ee15e",
       "rhsa-2026-102253-important-kernel-security-bug-fix-and-enhan"
+    ]
+  },
+  {
+    "slug": "cairn-framework-used-to-exploit-medical-ai-zero-da-402eb59c",
+    "title": "Cairn Framework Used to Exploit Medical AI Zero-Day",
+    "summary": "A Chinese-nexus threat actor used the open-source Cairn framework to exploit a zero-day in a medical imaging AI application. The zero-day enabled remote code execution after initial failed attempts, giving the attacker a foothold without a disclosed CVE. No vendor patch exists; teams should monitor exploitation, harden AI applications, and limit autonomous framework use.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/cairn-ai-agents-autonomous-attacks/",
+    "publishedAt": "2026-11-23T10:49:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cairn-framework-used-to-exploit-medical-ai-zero-da",
+      "article-402eb59c",
+      "402eb59c",
+      "cairn-framework-used-to-exploit-medical-ai-zero-da-53c0da",
+      "cairn-framework-used-to-exploit-medical-ai-zero-day"
     ]
   },
   {
@@ -370,21 +443,29 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisa-alerts-on-cisco-expressway-rce-exploitation-96269fe0",
-    "title": "CISA Alerts on Cisco Expressway RCE Exploitation",
-    "summary": "CISA reports that attackers are exploiting a recently patched critical vulnerability in Cisco Expressway, enabling remote code execution. The flaw, classified as critical, allows unauthenticated users to execute arbitrary code, and has been actively leveraged in the wild. Cisco has released a patch; security teams must apply it immediately and monitor for exploitation attempts.",
-    "category": "Vulnerability",
+    "slug": "cisco-expressway-zero-day-exploit-enables-remote-c-154f46d5",
+    "title": "Cisco Expressway Zero-Day Exploit Enables Remote Code Execution",
+    "summary": "A zero-day vulnerability (CVE-2026-76466) in Cisco Expressway gateways has been exploited by attackers to breach internal networks. The unauthenticated remote flaw permits arbitrary code execution, and it has been confirmed as a critical CVSS-rated zero-day used in the wild. Cisco has released a patch; organizations must apply it immediately and verify CISA’s Known Exploited Vulnerabilities catalog for guidance.",
+    "category": "CVE",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
     "publishedAt": "2026-11-23T07:44:19.000Z",
-    "cves": [],
-    "additionalSources": [],
+    "cves": [
+      "CVE-2026-76466"
+    ],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/cisco-expressway-vulnerability-exploited-cve-2026-76466/"
+      }
+    ],
     "aliases": [
-      "cisa-alerts-on-cisco-expressway-rce-exploitation",
-      "article-96269fe0",
-      "96269fe0",
-      "cisa-alerts-on-cisco-expressway-rce-exploitation-6aa7cf"
+      "cisco-expressway-zero-day-exploit-enables-remote-c",
+      "article-154f46d5",
+      "154f46d5",
+      "cisco-expressway-zero-day-exploit-enables-remote-c-6aa7cf",
+      "cisco-expressway-zero-day-exploit-enables-remote-code-execut"
     ]
   },
   {
@@ -620,6 +701,43 @@ export const news: NewsBrief[] = [
       "article-19ccd1c3",
       "19ccd1c3",
       "red-hat-releases-kernel-update-for-rhel-10-2ee15b"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102178-important-xdg-desktop-portal-secu-14a0b22d",
+    "title": "RHSA-2026:102178: Important: xdg-desktop-portal security update",
+    "summary": "An update for xdg-desktop-portal is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102178",
+    "publishedAt": "2026-11-23T04:54:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102178-important-xdg-desktop-portal-secu",
+      "article-14a0b22d",
+      "14a0b22d",
+      "rhsa-2026-102178-important-xdg-desktop-portal-secu-2ee15b",
+      "rhsa-2026-102178-important-xdg-desktop-portal-security-updat"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102190-moderate-openssh-security-update-72816923",
+    "title": "RHSA-2026:102190: Moderate: openssh security update",
+    "summary": "An update for openssh is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102190",
+    "publishedAt": "2026-11-23T04:45:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102190-moderate-openssh-security-update",
+      "article-72816923",
+      "72816923",
+      "rhsa-2026-102190-moderate-openssh-security-update-2ee15b"
     ]
   },
   {
@@ -9487,119 +9605,6 @@ export const news: NewsBrief[] = [
       "6eb700e4",
       "iranian-groups-hand-off-access-for-destructive-att-7ef219",
       "iranian-groups-hand-off-access-for-destructive-attacks"
-    ]
-  },
-  {
-    "slug": "admin-plans-early-patch-info-sharing-with-industry-a870dd28",
-    "title": "Admin Plans Early Patch Info Sharing with Industry",
-    "summary": "Homeland Security Secretary Markwayne Mullin announced a policy to engage industry for early patch information before releases. The initiative aims to collect detailed patch data from vendors to assess security impact and mitigate potential vulnerabilities. No vendor patch or technical fix is involved; the program is a strategic outreach effort to improve patch management.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/tech-disruptions-house-homeland-committee-testimony",
-    "publishedAt": "2026-11-18T20:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "admin-plans-early-patch-info-sharing-with-industry",
-      "article-a870dd28",
-      "a870dd28",
-      "admin-plans-early-patch-info-sharing-with-industry-750ba0"
-    ]
-  },
-  {
-    "slug": "critical-java-and-nginx-vulnerability-cve-2026-114-4adcf3cd",
-    "title": "Critical Java and NGINX Vulnerability CVE-2026-114938",
-    "summary": "A critical vulnerability disclosed today, identified as CVE-2026-114938, affects Java and NGINX, while a separate Microsoft 365 outage was reported. The flaw allows unauthenticated remote code execution through malformed input, with public proof-of-concept code available, potentially compromising affected servers. Administrators should apply vendor-issued patches for Java and NGINX immediately and monitor Microsoft 365 for service restoration.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33532",
-    "publishedAt": "2026-11-18T19:54:50.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-java-and-nginx-vulnerability-cve-2026-114",
-      "article-4adcf3cd",
-      "4adcf3cd",
-      "critical-java-and-nginx-vulnerability-cve-2026-114-57dd81",
-      "critical-java-and-nginx-vulnerability-cve-2026-114938"
-    ]
-  },
-  {
-    "slug": "wellington-it-breach-exposes-50-credit-unions-3536783e",
-    "title": "Wellington IT Breach Exposes 50 Credit Unions",
-    "summary": "A cyberattack on Wellington IT exposed sensitive member data from 50 credit unions, primarily in Ireland. The breach likely involved credential compromise or unauthorized access to the provider’s systems, though the exact vector remains undisclosed. Affected institutions should conduct forensic investigations, reset credentials, and notify regulators while Wellington IT is advised to strengthen access controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
-    "publishedAt": "2026-11-18T19:39:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wellington-it-breach-exposes-50-credit-unions",
-      "article-3536783e",
-      "3536783e",
-      "wellington-it-breach-exposes-50-credit-unions-7397db"
-    ]
-  },
-  {
-    "slug": "mitre-flags-inaccurate-cve-timestamps-plans-retire-2cd1a5df",
-    "title": "MITRE Flags Inaccurate CVE Timestamps, Plans Retirement",
-    "summary": "MITRE disclosed that 87% of its recent CVE records contain inaccurate publication timestamps. The error stems from legacy system inconsistencies, and MITRE plans to retire the system in 2027. Users should cross-check CVE release dates and await the updated database to maintain accurate vulnerability timelines in security operations for incident response.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/mitre-cve-timestamp-issues",
-    "publishedAt": "2026-11-18T19:38:28.084Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mitre-flags-inaccurate-cve-timestamps-plans-retire",
-      "article-2cd1a5df",
-      "2cd1a5df",
-      "mitre-flags-inaccurate-cve-timestamps-plans-retire-11514c",
-      "mitre-flags-inaccurate-cve-timestamps-plans-retirement"
-    ]
-  },
-  {
-    "slug": "cisco-endpoint-connector-vulnerabilities-affect-li-c641da17",
-    "title": "Cisco Endpoint Connector Vulnerabilities Affect Linux, Mac, Windows",
-    "summary": "Cisco disclosed vulnerabilities in Secure Endpoint Connector for Linux, Mac, and Windows affecting versions before 1.29.3, 1.27.5, and 8.6.4. The flaws allow local privilege escalation via improper input validation, with public proof-of-concept code available, potentially enabling attackers to gain elevated access. Administrators should upgrade to the latest Secure Endpoint Connector releases and apply vendor-issued patches to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1175",
-    "publishedAt": "2026-11-18T19:14:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-endpoint-connector-vulnerabilities-affect-li",
-      "article-c641da17",
-      "c641da17",
-      "cisco-endpoint-connector-vulnerabilities-affect-li-1b59a2",
-      "cisco-endpoint-connector-vulnerabilities-affect-linux-mac-wi"
-    ]
-  },
-  {
-    "slug": "usn-9153-1-cloud-init-vulnerability-8ef719c2",
-    "title": "USN-9153-1: cloud-init vulnerability",
-    "summary": "It was discovered that cloud-init incorrectly handled certain errors when configuring user passwords on systems with SSSD installed but not configured. An attacker could possibly use this issue to access affected user accounts without a password, resulting in unauthorized access.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9153-1",
-    "publishedAt": "2026-11-18T19:07:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9153-1-cloud-init-vulnerability",
-      "article-8ef719c2",
-      "8ef719c2",
-      "usn-9153-1-cloud-init-vulnerability-7e7953"
     ]
   }
 ];
