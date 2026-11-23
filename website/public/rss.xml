@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 04:44:58 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 05:44:26 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ISACA Updates COBIT 7 with AI Risk Scenarios</title>
+      <link>https://secubuzz.com/news/isaca-updates-cobit-7-with-ai-risk-scenarios-a8c0f551</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isaca-updates-cobit-7-with-ai-risk-scenarios-a8c0f551</guid>
+      <description><![CDATA[ISACA released COBIT 7, the latest version of its governance framework, adding AI risk scenarios. The update provides comprehensive guidance, a digital platform, and customizable resources to help organizations manage emerging AI risks. Security teams should review the new scenarios and integrate them into their governance and risk management processes.]]></description>
+      <pubDate>Mon, 23 Nov 2026 05:30:49 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/23/isaca-cobit-7-released/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases MySQL 8.4 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-mysql-8-4-security-update-eaea480b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-mysql-8-4-security-update-eaea480b</guid>
+      <description><![CDATA[Red Hat issued a security update for the mysql:8.4 module on Red Enterprise Linux 9.8 Extended Update Support. The update addresses multiple vulnerabilities, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Administrators should apply the RHSA-2026:102188 update promptly to mitigate potential exploitation of the identified flaws.]]></description>
+      <pubDate>Mon, 23 Nov 2026 05:18:41 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102188">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel Update for RHEL 10</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-10-19ccd1c3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-10-19ccd1c3</guid>
+      <description><![CDATA[Red Hat released a kernel update for Red Enterprise Linux 10 to address multiple security bugs. The update contains fixes for several kernel vulnerabilities, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Administrators should apply the RHSA-2026:102168 update promptly to mitigate potential exploitation of the identified flaws.]]></description>
+      <pubDate>Mon, 23 Nov 2026 05:06:16 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102168">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Fence-Agents Receives Important Security Update</title>
       <link>https://secubuzz.com/news/fence-agents-receives-important-security-update-561939fb</link>
@@ -15,6 +42,15 @@
       <pubDate>Mon, 23 Nov 2026 04:41:06 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102154">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Matilda Sells Claimed VMware vCenter Exploit</title>
+      <link>https://secubuzz.com/news/matilda-sells-claimed-vmware-vcenter-exploit-3411243b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/matilda-sells-claimed-vmware-vcenter-exploit-3411243b</guid>
+      <description><![CDATA[A forum seller named Matilda is offering a claimed exploit for VMware vCenter Server, targeting CVE-2026-123890. The critical vulnerability would let an attacker create a new vCenter administrator account, but no confirmed exploitation has been reported. Broadcom issued a patch on November 19, 2026; administrators should apply it immediately to mitigate the risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 04:30:26 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/alleged-vmware-vcenter-0-day-exploit/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Curl Receives Moderate Security Update</title>
@@ -59,6 +95,24 @@
       <description><![CDATA[Red Hat released a security update for git-lfs on Red Hat Enterprise Linux 10, addressing a vulnerability that could allow code execution. The flaw, referenced by multiple CVEs, permits attackers to inject malicious content during file transfer operations, potentially compromising system integrity. Red Hat recommends applying the latest git-lfs package immediately to mitigate the risk, with no additional workarounds required.]]></description>
       <pubDate>Mon, 23 Nov 2026 03:32:40 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102186">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>QEMU KVM MA Flaw Allows Local Privilege Escalation</title>
+      <link>https://secubuzz.com/news/qemu-kvm-ma-flaw-allows-local-privilege-escalation-4423a1ec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/qemu-kvm-ma-flaw-allows-local-privilege-escalation-4423a1ec</guid>
+      <description><![CDATA[Red Enterprise Linux 7 Extended Lifecycle Support users face a qemu-kvm-ma flaw that may enable local privilege escalation via the virtual machine monitor. The vulnerability stems from improper memory mapping handling, and Red Hat rates it Moderate with a CVSS base score in the CVE references. Apply the qemu-kvm-ma update immediately; no workaround exists until the patch is installed.]]></description>
+      <pubDate>Mon, 23 Nov 2026 03:24:40 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102196">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>GNOME Remote Desktop Vulnerability Enables Remote Code Execution</title>
+      <link>https://secubuzz.com/news/gnome-remote-desktop-vulnerability-enables-remote-ae144d19</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gnome-remote-desktop-vulnerability-enables-remote-ae144d19</guid>
+      <description><![CDATA[Red Enterprise Linux 9.8 Extended Update Support users face a gnome-remote-desktop flaw that permits remote code execution via the remote desktop protocol. The issue arises from unchecked input during session negotiation, and Red Hat rates it Important with a CVSS base score in the CVE references. Apply the gnome-remote-desktop update immediately; no workaround exists until the patch is installed.]]></description>
+      <pubDate>Mon, 23 Nov 2026 03:22:25 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102169">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -402,60 +456,6 @@
       <pubDate>Sat, 21 Nov 2026 18:01:58 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/">BleepingComputer</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>MCP Servers Pose New AI Attack Surface</title>
-      <link>https://secubuzz.com/news/mcp-servers-pose-new-ai-attack-surface-7fc7f366</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mcp-servers-pose-new-ai-attack-surface-7fc7f366</guid>
-      <description><![CDATA[MCP lets AI apps connect to external tools, APIs, and business data, making each server a new attack surface. Misconfigurations or weak authentication allow attackers to gain unauthorized access, potentially compromising corporate systems and data. Apply strict access controls, enable MFA, audit settings, and install vendor patches regularly to mitigate risks.]]></description>
-      <pubDate>Sat, 21 Nov 2026 17:24:13 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/mcp-server-security/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical Update for PHP 7.4</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-update-for-php-7-4-09495a8d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-update-for-php-7-4-09495a8d</guid>
-      <description><![CDATA[Red Hat released a critical security update for the php:7.4 module on RHEL 8, addressing high-impact vulnerabilities. The flaws, listed in CVE references, enable remote code execution via malformed input, with CVSS scores up to 9.8. Red Hat recommends applying the update immediately; no workaround exists, and users should verify module integrity post-installation.]]></description>
-      <pubDate>Sat, 21 Nov 2026 15:34:30 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100991">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>FBI NCIC Database Breach Exposes Sensitive Law Enforcement Records</title>
-      <link>https://secubuzz.com/news/fbi-ncic-database-breach-exposes-sensitive-law-enf-1fef14b8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-ncic-database-breach-exposes-sensitive-law-enf-1fef14b8</guid>
-      <description><![CDATA[FBI National Crime Information Center (NCIC) database was breached, exposing case files and personnel records. Attackers exploited an undisclosed flaw to gain unauthorized access, potentially compromising investigative workflows. Investigators are isolating the breach, patching the flaw, urging agencies to review NCIC access controls, and coordinating with federal cybersecurity teams to mitigate further exposure.]]></description>
-      <pubDate>Sat, 21 Nov 2026 14:26:04 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>CrowdStrike Negotiates Zscaler Acquisition</title>
-      <link>https://secubuzz.com/news/crowdstrike-negotiates-zscaler-acquisition-822c7184</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-negotiates-zscaler-acquisition-822c7184</guid>
-      <description><![CDATA[CrowdStrike is negotiating a potential acquisition of Zscaler, the cloud-security platform provider that offers zero-trust networking and secure web gateways. The deal could consolidate market share, expand CrowdStrike's cloud security portfolio, and reshape vendor competition by integrating Zscaler's zero-trust solutions. Both firms are conducting due diligence, and the transaction remains unconfirmed pending regulatory review and shareholder approval.]]></description>
-      <pubDate>Sat, 21 Nov 2026 13:12:03 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/crowdstrike-to-acquire-zscaler/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Trump Names Kirsten Davies National Cyber Director</title>
-      <link>https://secubuzz.com/news/trump-names-kirsten-davies-national-cyber-director-d6ec788a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trump-names-kirsten-davies-national-cyber-director-d6ec788a</guid>
-      <description><![CDATA[White House appoints Kirsten Davies as National Cyber Director to steer America First cyber strategy and oversee federal cyber operations. Davies brings experience from previous cyber leadership roles, expected to shape national cyber defense priorities and cybersecurity policy coordination. The appointment signals a shift toward a more aggressive cyber posture; stakeholders should monitor policy developments and regulatory initiatives.]]></description>
-      <pubDate>Sat, 21 Nov 2026 13:00:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>China-Linked Hackers Exploit MONAI Label Zero-Day</title>
-      <link>https://secubuzz.com/news/china-linked-hackers-exploit-monai-label-zero-day-bc54a5be</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/china-linked-hackers-exploit-monai-label-zero-day-bc54a5be</guid>
-      <description><![CDATA[China-linked threat actors used autonomous Cairn AI agents to locate and exploit a critical vulnerability in MONAI Label medical software. The flaw permits unauthenticated critical remote code execution via malformed input, enabling data exfiltration from imaging systems. Amazon issued an out-of-band patch; all MONAI Label users should apply it immediately.]]></description>
-      <pubDate>Sat, 21 Nov 2026 12:08:50 GMT</pubDate>
-      <source url="https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/">SecurityWeek</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

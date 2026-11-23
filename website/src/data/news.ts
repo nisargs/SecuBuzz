@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "isaca-updates-cobit-7-with-ai-risk-scenarios-a8c0f551",
+    "title": "ISACA Updates COBIT 7 with AI Risk Scenarios",
+    "summary": "ISACA released COBIT 7, the latest version of its governance framework, adding AI risk scenarios. The update provides comprehensive guidance, a digital platform, and customizable resources to help organizations manage emerging AI risks. Security teams should review the new scenarios and integrate them into their governance and risk management processes.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/isaca-cobit-7-released/",
+    "publishedAt": "2026-11-23T05:30:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isaca-updates-cobit-7-with-ai-risk-scenarios",
+      "article-a8c0f551",
+      "a8c0f551",
+      "isaca-updates-cobit-7-with-ai-risk-scenarios-b65bee"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-mysql-8-4-security-update-eaea480b",
+    "title": "Red Hat Releases MySQL 8.4 Security Update",
+    "summary": "Red Hat issued a security update for the mysql:8.4 module on Red Enterprise Linux 9.8 Extended Update Support. The update addresses multiple vulnerabilities, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Administrators should apply the RHSA-2026:102188 update promptly to mitigate potential exploitation of the identified flaws.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102188",
+    "publishedAt": "2026-11-23T05:18:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-mysql-8-4-security-update",
+      "article-eaea480b",
+      "eaea480b",
+      "red-hat-releases-mysql-8-4-security-update-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-update-for-rhel-10-19ccd1c3",
+    "title": "Red Hat Releases Kernel Update for RHEL 10",
+    "summary": "Red Hat released a kernel update for Red Enterprise Linux 10 to address multiple security bugs. The update contains fixes for several kernel vulnerabilities, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Administrators should apply the RHSA-2026:102168 update promptly to mitigate potential exploitation of the identified flaws.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102168",
+    "publishedAt": "2026-11-23T05:06:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-update-for-rhel-10",
+      "article-19ccd1c3",
+      "19ccd1c3",
+      "red-hat-releases-kernel-update-for-rhel-10-2ee15b"
+    ]
+  },
+  {
     "slug": "fence-agents-receives-important-security-update-561939fb",
     "title": "Fence-Agents Receives Important Security Update",
     "summary": "Red Hat released an Important security update for the fence-agents package on RHEL 8. The update addresses multiple vulnerabilities that could allow privilege escalation or denial of service, as indicated by the CVSS scores linked in the advisory. Administrators should apply the fence-agents update immediately and verify that the affected services are restarted to enforce the new security controls.",
@@ -26,6 +80,26 @@ export const news: NewsBrief[] = [
       "article-561939fb",
       "561939fb",
       "fence-agents-receives-important-security-update-2ee15a"
+    ]
+  },
+  {
+    "slug": "matilda-sells-claimed-vmware-vcenter-exploit-3411243b",
+    "title": "Matilda Sells Claimed VMware vCenter Exploit",
+    "summary": "A forum seller named Matilda is offering a claimed exploit for VMware vCenter Server, targeting CVE-2026-123890. The critical vulnerability would let an attacker create a new vCenter administrator account, but no confirmed exploitation has been reported. Broadcom issued a patch on November 19, 2026; administrators should apply it immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/alleged-vmware-vcenter-0-day-exploit/",
+    "publishedAt": "2026-11-23T04:30:26.000Z",
+    "cves": [
+      "CVE-2026-123890"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "matilda-sells-claimed-vmware-vcenter-exploit",
+      "article-3411243b",
+      "3411243b",
+      "matilda-sells-claimed-vmware-vcenter-exploit-726bd0"
     ]
   },
   {
@@ -122,6 +196,43 @@ export const news: NewsBrief[] = [
       "2d84a280",
       "git-lfs-security-update-for-red-hat-enterprise-lin-2ee15b",
       "git-lfs-security-update-for-red-hat-enterprise-linux-10"
+    ]
+  },
+  {
+    "slug": "qemu-kvm-ma-flaw-allows-local-privilege-escalation-4423a1ec",
+    "title": "QEMU KVM MA Flaw Allows Local Privilege Escalation",
+    "summary": "Red Enterprise Linux 7 Extended Lifecycle Support users face a qemu-kvm-ma flaw that may enable local privilege escalation via the virtual machine monitor. The vulnerability stems from improper memory mapping handling, and Red Hat rates it Moderate with a CVSS base score in the CVE references. Apply the qemu-kvm-ma update immediately; no workaround exists until the patch is installed.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102196",
+    "publishedAt": "2026-11-23T03:24:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "qemu-kvm-ma-flaw-allows-local-privilege-escalation",
+      "article-4423a1ec",
+      "4423a1ec",
+      "qemu-kvm-ma-flaw-allows-local-privilege-escalation-2ee15b"
+    ]
+  },
+  {
+    "slug": "gnome-remote-desktop-vulnerability-enables-remote-ae144d19",
+    "title": "GNOME Remote Desktop Vulnerability Enables Remote Code Execution",
+    "summary": "Red Enterprise Linux 9.8 Extended Update Support users face a gnome-remote-desktop flaw that permits remote code execution via the remote desktop protocol. The issue arises from unchecked input during session negotiation, and Red Hat rates it Important with a CVSS base score in the CVE references. Apply the gnome-remote-desktop update immediately; no workaround exists until the patch is installed.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102169",
+    "publishedAt": "2026-11-23T03:22:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gnome-remote-desktop-vulnerability-enables-remote",
+      "article-ae144d19",
+      "ae144d19",
+      "gnome-remote-desktop-vulnerability-enables-remote-2ee15b",
+      "gnome-remote-desktop-vulnerability-enables-remote-code-execu"
     ]
   },
   {
@@ -9580,116 +9691,6 @@ export const news: NewsBrief[] = [
       "a7e6781c",
       "google-chrome-vulnerability-affects-versions-befor-170ca3",
       "google-chrome-vulnerability-affects-versions-before-158-0-81"
-    ]
-  },
-  {
-    "slug": "equinor-cyberattack-disrupts-internal-services-7ced0b19",
-    "title": "Equinor Cyberattack Disrupts Internal Services",
-    "summary": "A cyberattack targeted Equinor’s IT infrastructure, disrupting internal services while reportedly sparing oil and gas production. The intrusion likely involved unauthorized access to internal networks, though no data exfiltration has been confirmed. Security teams should isolate affected systems, conduct forensic analysis, and apply any available vendor patches to prevent further compromise.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/norway-equinor-cyberattack-energy",
-    "publishedAt": "2026-11-18T13:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "equinor-cyberattack-disrupts-internal-services",
-      "article-7ced0b19",
-      "7ced0b19",
-      "equinor-cyberattack-disrupts-internal-services-503070"
-    ]
-  },
-  {
-    "slug": "oracle-vulnerabilities-span-multiple-products-69bc02a2",
-    "title": "Oracle Vulnerabilities Span Multiple Products",
-    "summary": "Oracle disclosed vulnerabilities in several products, including Helidon, JD Edwards EnterpriseOne Localizations, MySQL Cluster, MySQL Server, MySQL Workbench, Oracle APEX, Access Manager, Agile PLM, and Oracle Communications components. No CVE IDs or exploit details are given, but the flaws could allow unauthorized access or code execution. Oracle advises applying the available patches or following vendor guidance to mitigate the risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/oracle-corporation-security-advisory-av26-1170",
-    "publishedAt": "2026-11-18T12:51:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-vulnerabilities-span-multiple-products",
-      "article-69bc02a2",
-      "69bc02a2",
-      "oracle-vulnerabilities-span-multiple-products-490b08"
-    ]
-  },
-  {
-    "slug": "chrome-beta-159-released-for-android-aba108b7",
-    "title": "Chrome Beta 159 Released for Android",
-    "summary": "Google released Chrome Beta 159 (159.0.8154.18) for Android via Google Play. The update includes partial changes from the Git log, with new features detailed on the Chromium blog and web platform updates. Users can report issues via bug filing; no security fixes are mentioned in this beta release.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-android-update_01196380134.html",
-    "publishedAt": "2026-11-18T12:28:32.268Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-beta-159-released-for-android",
-      "article-aba108b7",
-      "aba108b7",
-      "chrome-beta-159-released-for-android-3504a5"
-    ]
-  },
-  {
-    "slug": "tpm-lockout-bypass-cracks-windows-hello-bitlocker-316b7959",
-    "title": "TPM Lockout Bypass Cracks Windows Hello BitLocker PINs",
-    "summary": "Researchers found TPM lockout for Windows Hello and BitLocker PINs resettable by opening PC cases on AMD and some Intel systems. This physical flaw enables offline brute-forcing of short PINs, with lab tests cracking a four-digit Hello PIN and six-digit BitLocker PIN within days. Mitigation requires longer PINs or passwords, as no firmware patch addresses the hardware lockout reset mechanism.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
-    "publishedAt": "2026-11-18T12:28:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tpm-lockout-bypass-cracks-windows-hello-bitlocker",
-      "article-316b7959",
-      "316b7959",
-      "tpm-lockout-bypass-cracks-windows-hello-bitlocker-421678",
-      "tpm-lockout-bypass-cracks-windows-hello-bitlocker-pins"
-    ]
-  },
-  {
-    "slug": "hackers-impersonate-microsoft-exchange-online-aler-64aff37c",
-    "title": "Hackers Impersonate Microsoft Exchange Online Alerts to Trick Users During Microsoft 365 Outage",
-    "summary": "Hackers used a real Microsoft 365 outage to send fake Exchange Online alerts claiming that four emails were being held and would be deleted unless recipients restored them. The messages borrowed a genuine Microsoft incident number and sent users through several redirects to a page that looked like Microsoft’s sign-in screen.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-impersonate-microsoft-exchange/",
-    "publishedAt": "2026-11-18T12:23:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-impersonate-microsoft-exchange-online-aler",
-      "article-64aff37c",
-      "64aff37c",
-      "hackers-impersonate-microsoft-exchange-online-aler-34ea2d",
-      "hackers-impersonate-microsoft-exchange-online-alerts-to-tric"
-    ]
-  },
-  {
-    "slug": "ai-pentesting-gaps-exposed-by-early-exploitation-0d3b07a7",
-    "title": "AI Pentesting Gaps Exposed by Early Exploitation",
-    "summary": "Attackers now exploit vulnerabilities before patches are released, with 23% of newly added exploits being active on or before disclosure. The report highlights that AI pentesting vendors are not interchangeable, as gaps often appear in logged-in flows, coverage, and production safety. Security teams should evaluate vendors against these criteria before engagement to ensure comprehensive coverage and reduce early exploitation risk.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
-    "publishedAt": "2026-11-18T12:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-pentesting-gaps-exposed-by-early-exploitation",
-      "article-0d3b07a7",
-      "0d3b07a7",
-      "ai-pentesting-gaps-exposed-by-early-exploitation-4de91c"
     ]
   }
 ];
