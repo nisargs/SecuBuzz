@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 14:46:11 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 14:52:32 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Advises Updates for Multiple RHEL Versions</title>
+      <link>https://secubuzz.com/news/red-hat-advises-updates-for-multiple-rhel-versions-5f2cf303</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-advises-updates-for-multiple-rhel-versions-5f2cf303</guid>
+      <description><![CDATA[Red Hat issued advisory AV26-1190 affecting all RHEL 6-10, Hardened Images, and OpenShift 4-5. The advisory references multiple undisclosed vulnerabilities across these products, with no CVE IDs provided, implying potential remote code execution or privilege escalation risks. Administrators should review Red Hat’s links and apply available patches as soon as they are released.]]></description>
+      <pubDate>Mon, 23 Nov 2026 14:40:09 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1190">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Vmcloudoor Backdoor Targets Alibaba, Tencent, Huawei Clouds</title>
       <link>https://secubuzz.com/news/vmcloudoor-backdoor-targets-alibaba-tencent-huawei-e4513407</link>
@@ -23,6 +32,15 @@
       <description><![CDATA[Cloudflare developed internal tools to extend its testing framework for networking protocols, focusing on DNS. The new DNS tooling enables teams to probe protocol behavior, identify edge cases, and validate performance under load. These tools are available internally and can be leveraged by security teams to assess DNS resilience and detect anomalies.]]></description>
       <pubDate>Mon, 23 Nov 2026 14:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/probing-dns-at-cloudflare/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>WordPress Site Hosts 13 ClickFix Malware Traps</title>
+      <link>https://secubuzz.com/news/wordpress-site-hosts-13-clickfix-malware-traps-30fce793</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wordpress-site-hosts-13-clickfix-malware-traps-30fce793</guid>
+      <description><![CDATA[A compromised WordPress site hosted 13 ClickFix traps from three malware kits, each presenting a fake security check. The traps use social engineering to convince users to paste malicious commands, a phishing kit requiring user interaction. Security teams should remove infected plugins, update WordPress core, and monitor for similar deceptive traps.]]></description>
+      <pubDate>Mon, 23 Nov 2026 13:58:49 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-plant-13-clickfix-traps/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -98,12 +116,21 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>AI Agent Enables Theft of Insurer and EU Data</title>
+      <link>https://secubuzz.com/news/ai-agent-enables-theft-of-insurer-and-eu-data-68acdc27</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-enables-theft-of-insurer-and-eu-data-68acdc27</guid>
+      <description><![CDATA[A low-skilled hacker used a jailbroken AI agent to exfiltrate an insurer’s customer database and 8.6 GB of EU municipal files over nine days. The attacker issued misspelled French commands, exploiting the agent’s model to bypass authentication. Security teams should isolate the AI environment, revoke credentials, and conduct comprehensive analysis of breached systems.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:44:59 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/jailbroken-ai-agent/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>CrowdStrike Agrees to Acquire Zscaler for $43.9B</title>
-      <link>https://secubuzz.com/news/crowdstrike-agrees-to-acquire-zscaler-for-43-9b-c119f8ab</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-agrees-to-acquire-zscaler-for-43-9b-c119f8ab</guid>
-      <description><![CDATA[CrowdStrike announced an all-stock acquisition of Zscaler valued at approximately $43.9 billion, creating a combined cloud-security entity. The deal grants each Zscaler share 1.135 CrowdStrike shares, implying a premium of roughly 34 % over Zscaler’s closing price. Post-closing, CrowdStrike shareholders will own about 84.1 % of the merged publicly company, pending regulatory approvals.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:41:18 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/23/crowdstrike-zscaler-43-9-billion-acquisition/">Help Net Security</source>
+      <link>https://secubuzz.com/news/crowdstrike-agrees-to-acquire-zscaler-for-43-9b-7b45dcf3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-agrees-to-acquire-zscaler-for-43-9b-7b45dcf3</guid>
+      <description><![CDATA[CrowdStrike announced a $43.9 billion all-stock acquisition of Zscaler, aiming to integrate Zscaler’s cloud network security into its Falcon platform. The deal expands CrowdStrike’s control over device endpoints and corporate app connections, potentially consolidating cloud security services under a single vendor. Regulatory approvals remain pending; stakeholders should monitor integration timelines and potential antitrust reviews.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:44:26 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/crowdstrike-acquire-zscaler/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -123,6 +150,15 @@
       <pubDate>Mon, 23 Nov 2026 12:28:09 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html">The Hacker News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>I4C Warns Against Sharing Confidential Data on WhatsApp Web</title>
+      <link>https://secubuzz.com/news/i4c-warns-against-sharing-confidential-data-on-wha-7d7235d8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/i4c-warns-against-sharing-confidential-data-on-wha-7d7235d8</guid>
+      <description><![CDATA[The Indian Cyber Crime Coordination Center cautioned users against sharing confidential data on WhatsApp Web, citing risks of session hijacking. The advisory notes that an attacker with access to a signed-in browser session can read messages and view contacts, compromising privacy. Users should log out manually after each session and avoid sharing sensitive information on the platform to mitigate exposure.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:19:18 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/whatsapp-web-confidential-data/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Issues libXrender Security Update</title>
@@ -287,6 +323,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHEL 10.2 EUS Receives Moderate Security Patch</title>
+      <link>https://secubuzz.com/news/rhel-10-2-eus-receives-moderate-security-patch-15dd34fc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhel-10-2-eus-receives-moderate-security-patch-15dd34fc</guid>
+      <description><![CDATA[Red Hat released a moderate-impact patch for Red Hat Enterprise Linux 10.2 Extended Update Support, addressing multiple security issues. The update carries a CVSS base score indicating moderate severity, with detailed scores linked via CVE references in the advisory. Administrators should apply the patch promptly to mitigate the identified vulnerabilities and maintain system integrity.]]></description>
+      <pubDate>Mon, 23 Nov 2026 10:45:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102252">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>GL.iNet Cloud Flaw Enables Malware on Routers</title>
       <link>https://secubuzz.com/news/gl-inet-cloud-flaw-enables-malware-on-routers-e0f4f497</link>
       <guid isPermaLink="true">https://secubuzz.com/news/gl-inet-cloud-flaw-enables-malware-on-routers-e0f4f497</guid>
@@ -329,6 +374,15 @@
       <description><![CDATA[Red Hat released a critical webkit2gtk3 security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support. The update fixes multiple vulnerabilities, each with a CVSS base score in the CVE references, and is rated Important. Apply the update promptly today to prevent exploitation of the affected webkit2gtk3 components.]]></description>
       <pubDate>Mon, 23 Nov 2026 10:00:53 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102248">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical Update for java-21-ibm-semeru JDK</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-update-for-java-21-ibm-sem-75e77b1c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-update-for-java-21-ibm-sem-75e77b1c</guid>
+      <description><![CDATA[Red Hat released a critical update for java-21-ibm-semeru-certified-jdk on RHEL 10.0 and 10.2, fixing multiple high-impact vulnerabilities. The flaws, listed in the advisory’s CVE references, enable unauthenticated remote code execution with a CVSS score of 9.8, giving attackers full system control. Apply the vendor-supplied patch immediately; verify installation with rpm -q java-21-ibm-semeru-certified-jdk on affected systems.]]></description>
+      <pubDate>Mon, 23 Nov 2026 09:45:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102246">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -402,60 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 08:06:18 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/23/badbox-3-0-ad-fraud-operation/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Bulgarian Government Breach Exposes 62 Million Pages</title>
-      <link>https://secubuzz.com/news/bulgarian-government-breach-exposes-62-million-pag-ab52e416</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bulgarian-government-breach-exposes-62-million-pag-ab52e416</guid>
-      <description><![CDATA[Hackers accessed Bulgarian state administration networks for five years, exfiltrating 130 GB of documents. The intrusion leveraged covert persistence mechanisms to download over 62 million pages, representing a significant compromise of sensitive government data. Bulgarian authorities disrupted the operation and are investigating the breach; no vendor patch is applicable, but organizations should review network segmentation and intrusion detection controls.]]></description>
-      <pubDate>Mon, 23 Nov 2026 08:01:36 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/bulgarian-government/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Weekly Security Roundup: Nov 16-22</title>
-      <link>https://secubuzz.com/news/weekly-security-roundup-nov-16-22-a07bae89</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/weekly-security-roundup-nov-16-22-a07bae89</guid>
-      <description><![CDATA[Malwarebytes Labs released a weekly security roundup covering topics from Nov 16 to Nov 22, 2026. The report summarizes emerging threats, vulnerability disclosures, and defensive recommendations observed during that period, including zero-day exploits and supply-chain risks. The summary is available for security teams to review trends, update defenses, and threat intelligence.]]></description>
-      <pubDate>Mon, 23 Nov 2026 08:01:00 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-16-november-22">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Kernel Update for RHEL 10.0 EUS</title>
-      <link>https://secubuzz.com/news/red-hat-kernel-update-for-rhel-10-0-eus-c676eec0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-rhel-10-0-eus-c676eec0</guid>
-      <description><![CDATA[Red Hat released a kernel update for Enterprise Linux 10.0 Extended Update Support, addressing multiple security issues. The advisory notes an Important security impact, with CVSS base scores linked to each vulnerability, indicating potential high-severity flaws. Security teams should apply the update immediately to mitigate the identified kernel vulnerabilities, as no workarounds are provided.]]></description>
-      <pubDate>Mon, 23 Nov 2026 07:49:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102220">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cisco Expressway Zero-Day Exploit Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/cisco-expressway-zero-day-exploit-enables-remote-c-154f46d5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-expressway-zero-day-exploit-enables-remote-c-154f46d5</guid>
-      <description><![CDATA[A zero-day vulnerability (CVE-2026-76466) in Cisco Expressway gateways has been exploited by attackers to breach internal networks. The unauthenticated remote flaw permits arbitrary code execution, and it has been confirmed as a critical CVSS-rated zero-day used in the wild. Cisco has released a patch; organizations must apply it immediately and verify CISA’s Known Exploited Vulnerabilities catalog for guidance.]]></description>
-      <pubDate>Mon, 23 Nov 2026 07:44:19 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/">BleepingComputer</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Malicious Ad Domains Steal iPhone Crypto Recovery Phrases</title>
-      <link>https://secubuzz.com/news/malicious-ad-domains-steal-iphone-crypto-recovery-a94fe9be</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-ad-domains-steal-iphone-crypto-recovery-a94fe9be</guid>
-      <description><![CDATA[Hackers leveraged over 480 malicious ad domains to compromise iPhones and exfiltrate crypto wallet recovery phrases, passwords, and personal data. The MoldyRoost operation exploited ad rendering engine flaws, enabling credential theft without user interaction across 47+ countries. Apple issued a security advisory urging iOS updates and users to avoid suspicious ads; security teams should monitor ad traffic and enforce sandboxing.]]></description>
-      <pubDate>Mon, 23 Nov 2026 07:32:52 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/malicious-ad-domains-target-iphones/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Kernel Update for RHEL 8</title>
-      <link>https://secubuzz.com/news/red-hat-kernel-update-for-rhel-8-7151ae6f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-rhel-8-7151ae6f</guid>
-      <description><![CDATA[Red Hat issued a kernel update for Enterprise Linux 8, addressing several security issues. The advisory labels the update as Important, with CVSS base scores linked to each vulnerability, implying high-severity flaws. Apply the update promptly to remediate the kernel vulnerabilities; no workarounds are provided, and ensure system integrity today.]]></description>
-      <pubDate>Mon, 23 Nov 2026 07:27:18 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102218">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

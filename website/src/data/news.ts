@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-advises-updates-for-multiple-rhel-versions-5f2cf303",
+    "title": "Red Hat Advises Updates for Multiple RHEL Versions",
+    "summary": "Red Hat issued advisory AV26-1190 affecting all RHEL 6-10, Hardened Images, and OpenShift 4-5. The advisory references multiple undisclosed vulnerabilities across these products, with no CVE IDs provided, implying potential remote code execution or privilege escalation risks. Administrators should review Red Hat’s links and apply available patches as soon as they are released.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1190",
+    "publishedAt": "2026-11-23T14:40:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-advises-updates-for-multiple-rhel-versions",
+      "article-5f2cf303",
+      "5f2cf303",
+      "red-hat-advises-updates-for-multiple-rhel-versions-cc2e06"
+    ]
+  },
+  {
     "slug": "vmcloudoor-backdoor-targets-alibaba-tencent-huawei-e4513407",
     "title": "Vmcloudoor Backdoor Targets Alibaba, Tencent, Huawei Clouds",
     "summary": "The newly discovered Linux backdoor, Vmcloudoor, covertly commandeers cloud servers, enabling attackers to exfiltrate sensitive files. Designed to infect virtual machines on Chinese cloud platforms, it masquerades as a legitimate cloud-management agent, reducing detection by administrators. Security teams should isolate affected instances, update to the latest vendor patches, and monitor for unauthorized agent activity.",
@@ -46,6 +64,24 @@ export const news: NewsBrief[] = [
       "47f9c202",
       "cloudflare-builds-dns-testing-tools-for-internal-f-6baf0f",
       "cloudflare-builds-dns-testing-tools-for-internal-framework"
+    ]
+  },
+  {
+    "slug": "wordpress-site-hosts-13-clickfix-malware-traps-30fce793",
+    "title": "WordPress Site Hosts 13 ClickFix Malware Traps",
+    "summary": "A compromised WordPress site hosted 13 ClickFix traps from three malware kits, each presenting a fake security check. The traps use social engineering to convince users to paste malicious commands, a phishing kit requiring user interaction. Security teams should remove infected plugins, update WordPress core, and monitor for similar deceptive traps.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-plant-13-clickfix-traps/",
+    "publishedAt": "2026-11-23T13:58:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wordpress-site-hosts-13-clickfix-malware-traps",
+      "article-30fce793",
+      "30fce793",
+      "wordpress-site-hosts-13-clickfix-malware-traps-bb8ae7"
     ]
   },
   {
@@ -201,21 +237,39 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "crowdstrike-agrees-to-acquire-zscaler-for-43-9b-c119f8ab",
+    "slug": "ai-agent-enables-theft-of-insurer-and-eu-data-68acdc27",
+    "title": "AI Agent Enables Theft of Insurer and EU Data",
+    "summary": "A low-skilled hacker used a jailbroken AI agent to exfiltrate an insurer’s customer database and 8.6 GB of EU municipal files over nine days. The attacker issued misspelled French commands, exploiting the agent’s model to bypass authentication. Security teams should isolate the AI environment, revoke credentials, and conduct comprehensive analysis of breached systems.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/jailbroken-ai-agent/",
+    "publishedAt": "2026-11-23T12:44:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agent-enables-theft-of-insurer-and-eu-data",
+      "article-68acdc27",
+      "68acdc27",
+      "ai-agent-enables-theft-of-insurer-and-eu-data-6bf745"
+    ]
+  },
+  {
+    "slug": "crowdstrike-agrees-to-acquire-zscaler-for-43-9b-7b45dcf3",
     "title": "CrowdStrike Agrees to Acquire Zscaler for $43.9B",
-    "summary": "CrowdStrike announced an all-stock acquisition of Zscaler valued at approximately $43.9 billion, creating a combined cloud-security entity. The deal grants each Zscaler share 1.135 CrowdStrike shares, implying a premium of roughly 34 % over Zscaler’s closing price. Post-closing, CrowdStrike shareholders will own about 84.1 % of the merged publicly company, pending regulatory approvals.",
+    "summary": "CrowdStrike announced a $43.9 billion all-stock acquisition of Zscaler, aiming to integrate Zscaler’s cloud network security into its Falcon platform. The deal expands CrowdStrike’s control over device endpoints and corporate app connections, potentially consolidating cloud security services under a single vendor. Regulatory approvals remain pending; stakeholders should monitor integration timelines and potential antitrust reviews.",
     "category": "General",
     "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/crowdstrike-zscaler-43-9-billion-acquisition/",
-    "publishedAt": "2026-11-23T12:41:18.000Z",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/crowdstrike-acquire-zscaler/",
+    "publishedAt": "2026-11-23T12:44:26.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
       "crowdstrike-agrees-to-acquire-zscaler-for-43-9b",
-      "article-c119f8ab",
-      "c119f8ab",
-      "crowdstrike-agrees-to-acquire-zscaler-for-43-9b-75cdc5"
+      "article-7b45dcf3",
+      "7b45dcf3",
+      "crowdstrike-agrees-to-acquire-zscaler-for-43-9b-1750db"
     ]
   },
   {
@@ -257,6 +311,25 @@ export const news: NewsBrief[] = [
       "article-2650ac11",
       "2650ac11",
       "n-able-exposes-cve-2026-134624-ssrf-in-mail-assure-530267"
+    ]
+  },
+  {
+    "slug": "i4c-warns-against-sharing-confidential-data-on-wha-7d7235d8",
+    "title": "I4C Warns Against Sharing Confidential Data on WhatsApp Web",
+    "summary": "The Indian Cyber Crime Coordination Center cautioned users against sharing confidential data on WhatsApp Web, citing risks of session hijacking. The advisory notes that an attacker with access to a signed-in browser session can read messages and view contacts, compromising privacy. Users should log out manually after each session and avoid sharing sensitive information on the platform to mitigate exposure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/whatsapp-web-confidential-data/",
+    "publishedAt": "2026-11-23T12:19:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "i4c-warns-against-sharing-confidential-data-on-wha",
+      "article-7d7235d8",
+      "7d7235d8",
+      "i4c-warns-against-sharing-confidential-data-on-wha-23ca8e",
+      "i4c-warns-against-sharing-confidential-data-on-whatsapp-web"
     ]
   },
   {
@@ -594,6 +667,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhel-10-2-eus-receives-moderate-security-patch-15dd34fc",
+    "title": "RHEL 10.2 EUS Receives Moderate Security Patch",
+    "summary": "Red Hat released a moderate-impact patch for Red Hat Enterprise Linux 10.2 Extended Update Support, addressing multiple security issues. The update carries a CVSS base score indicating moderate severity, with detailed scores linked via CVE references in the advisory. Administrators should apply the patch promptly to mitigate the identified vulnerabilities and maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102252",
+    "publishedAt": "2026-11-23T10:45:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhel-10-2-eus-receives-moderate-security-patch",
+      "article-15dd34fc",
+      "15dd34fc",
+      "rhel-10-2-eus-receives-moderate-security-patch-2ee15e"
+    ]
+  },
+  {
     "slug": "gl-inet-cloud-flaw-enables-malware-on-routers-e0f4f497",
     "title": "GL.iNet Cloud Flaw Enables Malware on Routers",
     "summary": "A flaw in GL.iNet’s cloud remote-management service granted attackers unauthorized access to routers and KVM devices, allowing malware and backdoor installation. The vulnerability, discovered on November 20 2026, was patched by GL.iNet, but affected devices still need a firmware update to eliminate the risk. Security teams should verify firmware versions and apply the latest update; no additional workarounds are documented.",
@@ -690,6 +781,25 @@ export const news: NewsBrief[] = [
       "article-ee9994d5",
       "ee9994d5",
       "red-hat-releases-webkit2gtk3-security-update-2ee15e"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-update-for-java-21-ibm-sem-75e77b1c",
+    "title": "Red Hat Issues Critical Update for java-21-ibm-semeru JDK",
+    "summary": "Red Hat released a critical update for java-21-ibm-semeru-certified-jdk on RHEL 10.0 and 10.2, fixing multiple high-impact vulnerabilities. The flaws, listed in the advisory’s CVE references, enable unauthenticated remote code execution with a CVSS score of 9.8, giving attackers full system control. Apply the vendor-supplied patch immediately; verify installation with rpm -q java-21-ibm-semeru-certified-jdk on affected systems.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102246",
+    "publishedAt": "2026-11-23T09:45:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-update-for-java-21-ibm-sem",
+      "article-75e77b1c",
+      "75e77b1c",
+      "red-hat-issues-critical-update-for-java-21-ibm-sem-2ee15e",
+      "red-hat-issues-critical-update-for-java-21-ibm-semeru-jdk"
     ]
   },
   {
@@ -994,6 +1104,42 @@ export const news: NewsBrief[] = [
       "article-0187d950",
       "0187d950",
       "cancer-institute-tackles-shadow-it-in-research-70aeed"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-update-for-webkit2gtk3-979f8058",
+    "title": "Red Hat Issues Important Update for webkit2gtk3",
+    "summary": "Red Hat released an important update for webkit2gtk3 on RHEL 8.6, correcting multiple high-severity bugs. The vulnerabilities, cited by CVE references, enable authenticated remote code execution with a CVSS score of 8.7, allowing attackers to execute arbitrary code. Apply the vendor patch immediately; verify installation with rpm -q webkit2gtk3 on affected RHEL 8.6 systems.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102214",
+    "publishedAt": "2026-11-23T06:44:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-update-for-webkit2gtk3",
+      "article-979f8058",
+      "979f8058",
+      "red-hat-issues-important-update-for-webkit2gtk3-2ee15e"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-important-update-for-freerdp-fcbf7de6",
+    "title": "Red Hat Releases Important Update for freerdp",
+    "summary": "Red Hat issued an important update for freerdp on RHEL 9.4 SAP solutions, addressing several critical vulnerabilities. The disclosed flaws, referenced by CVE identifiers, allow authenticated remote code execution with a CVSS score of 8.3, potentially compromising user sessions. Red Hat recommends applying the patch immediately; users should verify the update via rpm -q freerdp on affected RHEL 9.4 systems.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102213",
+    "publishedAt": "2026-11-23T06:44:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-important-update-for-freerdp",
+      "article-fcbf7de6",
+      "fcbf7de6",
+      "red-hat-releases-important-update-for-freerdp-2ee15e"
     ]
   },
   {
@@ -9353,175 +9499,6 @@ export const news: NewsBrief[] = [
       "215b1f62",
       "red-enterprise-linux-10-0-updates-fence-agents-wit-2ee084",
       "red-enterprise-linux-10-0-updates-fence-agents-with-critical"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100523-critical-kpatch-patch-5-14-0-427-7bffa221",
-    "title": "RHSA-2026:100523: Critical: kpatch-patch-5_14_0-427_100_1, kpatch-patch-5_14_0-427_113_1, kpatch-patch-5_14_0-427_126_1, kpatch-patch-5_14_0-427_146_1, and kpatch-patch-5_14_0-427_84_1 security update",
-    "summary": "An update for kpatch-patch-5_14_0-427_100_1, kpatch-patch-5_14_0-427_113_1, kpatch-patch-5_14_0-427_126_1, kpatch-patch-5_14_0-427_146_1, and kpatch-patch-5_14_0-427_84_1 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100523",
-    "publishedAt": "2026-11-19T01:29:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100523-critical-kpatch-patch-5-14-0-427",
-      "article-7bffa221",
-      "7bffa221",
-      "rhsa-2026-100523-critical-kpatch-patch-5-14-0-427-2ee080",
-      "rhsa-2026-100523-critical-kpatch-patch-5-14-0-427-100-1-kpat"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100522-critical-kpatch-patch-5-14-0-687-5864e497",
-    "title": "RHSA-2026:100522: Critical: kpatch-patch-5_14_0-687_10_1 and kpatch-patch-5_14_0-687_42_1 security update",
-    "summary": "An update for kpatch-patch-5_14_0-687_10_1 and kpatch-patch-5_14_0-687_42_1 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100522",
-    "publishedAt": "2026-11-19T01:28:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100522-critical-kpatch-patch-5-14-0-687",
-      "article-5864e497",
-      "5864e497",
-      "rhsa-2026-100522-critical-kpatch-patch-5-14-0-687-2ee080",
-      "rhsa-2026-100522-critical-kpatch-patch-5-14-0-687-10-1-and-k"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100560-important-java-11-openjdk-els-sec-128b95f5",
-    "title": "RHSA-2026:100560: Important: Java 11 OpenJDK ELS Security Update",
-    "summary": "An update for java-11-openjdk with Extended Lifecycle Support is now available for Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8, and Red Hat Enterprise Linux 9.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100560",
-    "publishedAt": "2026-11-19T01:27:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100560-important-java-11-openjdk-els-sec",
-      "article-128b95f5",
-      "128b95f5",
-      "rhsa-2026-100560-important-java-11-openjdk-els-sec-2ee081",
-      "rhsa-2026-100560-important-java-11-openjdk-els-security-upda"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-kpatch-patches-for-rhel-8-57cd9eef",
-    "title": "Red Hat Issues Critical kpatch Patches for RHEL 8.8 SAP",
-    "summary": "Red Hat released a critical security update for kpatch patches 4_18_0-477_107_1 through 4_18_0-477_161_1 on RHEL 8.8 Update Services for SAP Solutions. The update addresses multiple kernel patch vulnerabilities rated Critical by Red Hat Product Security, with CVSS base scores listed in the CVE references. Administrators should apply the patches immediately to mitigate potential remote code execution risks on affected systems.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100524",
-    "publishedAt": "2026-11-19T01:25:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-kpatch-patches-for-rhel-8",
-      "article-57cd9eef",
-      "57cd9eef",
-      "red-hat-issues-critical-kpatch-patches-for-rhel-8-2ee080",
-      "red-hat-issues-critical-kpatch-patches-for-rhel-8-8-sap"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-kpatch-patches-for-rhel-1f98b6fb",
-    "title": "Red Hat Releases Critical kpatch Patches for RHEL 9.2 SAP",
-    "summary": "Red Hat issued a critical security update for kpatch patches 5_14_0-284_134_1 through 5_14_0-284_188_1 on RHEL 9.2 Update Services for SAP Solutions. The patches fix kernel vulnerabilities rated Critical by Red Hat Product Security, with CVSS base scores provided in the CVE references. System administrators should apply the updates immediately to prevent potential remote code execution on affected systems.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100521",
-    "publishedAt": "2026-11-19T01:23:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-kpatch-patches-for-rhel",
-      "article-1f98b6fb",
-      "1f98b6fb",
-      "red-hat-releases-critical-kpatch-patches-for-rhel-2ee080",
-      "red-hat-releases-critical-kpatch-patches-for-rhel-9-2-sap"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100496-critical-red-hat-openstack-platfo-80c0de29",
-    "title": "RHSA-2026:100496: Critical: Red Hat OpenStack Platform 16.2 (openstack-manila) security update",
-    "summary": "An update for openstack-manila is now available for Red Hat OpenStack Platform 16.2 (Train). Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100496",
-    "publishedAt": "2026-11-19T01:12:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100496-critical-red-hat-openstack-platfo",
-      "article-80c0de29",
-      "80c0de29",
-      "rhsa-2026-100496-critical-red-hat-openstack-platfo-2ee07d",
-      "rhsa-2026-100496-critical-red-hat-openstack-platform-16-2-op"
-    ]
-  },
-  {
-    "slug": "critical-java-21-openjdk-update-for-rhel-10-8cb4ded1",
-    "title": "Critical java-21-openjdk Update for RHEL 10",
-    "summary": "Red Hat released a critical security update for java-21-openjdk on RHEL 10, addressing multiple high-severity vulnerabilities. The update, rated as Critical by Red Hat Product Security, contains patches for CVEs that could allow remote code execution with a CVSS score above 8.0. Administrators should apply the update immediately or upgrade to the latest RHEL 10 release to ensure protection.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100568",
-    "publishedAt": "2026-11-19T00:46:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "critical-java-21-openjdk-update-for-rhel-10",
-      "article-8cb4ded1",
-      "8cb4ded1",
-      "critical-java-21-openjdk-update-for-rhel-10-2ee081"
-    ]
-  },
-  {
-    "slug": "critical-java-17-openjdk-update-for-rhel-8-56eabea4",
-    "title": "Critical java-17-openjdk Update for RHEL 8",
-    "summary": "Red Hat issued a critical security update for java-17-openjdk on RHEL 8, fixing several high-severity flaws. The patches address CVEs that could enable remote code execution with CVSS scores exceeding 8.0, posing significant risk. Systems administrators should apply the update promptly or upgrade to the latest RHEL 8 release to mitigate the vulnerabilities.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100563",
-    "publishedAt": "2026-11-19T00:45:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "critical-java-17-openjdk-update-for-rhel-8",
-      "article-56eabea4",
-      "56eabea4",
-      "critical-java-17-openjdk-update-for-rhel-8-2ee081"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-java-25-openjdk-update-f-83dfab4f",
-    "title": "Red Hat Releases Critical java-25-openjdk Update for RHEL 9",
-    "summary": "Red Hat issued a critical security update for java-25-openjdk on RHEL 9 and the 9.8 Extended Update Support stream. The patch fixes multiple high-severity vulnerabilities with CVSS scores indicating critical impact, though specific CVE IDs are not enumerated. Administrators should apply the update immediately; no workarounds are available, and the patch mitigates all identified risks.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100571",
-    "publishedAt": "2026-11-19T00:19:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-java-25-openjdk-update-f",
-      "article-83dfab4f",
-      "83dfab4f",
-      "red-hat-releases-critical-java-25-openjdk-update-f-2ee081",
-      "red-hat-releases-critical-java-25-openjdk-update-for-rhel-9"
     ]
   }
 ];
