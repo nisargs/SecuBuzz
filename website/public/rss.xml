@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 07:44:33 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 08:45:16 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>BADBOX 3.0 TV Boxes Generate 40 Billion Ad Requests</title>
+      <link>https://secubuzz.com/news/badbox-3-0-tv-boxes-generate-40-billion-ad-request-5e60fd71</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/badbox-3-0-tv-boxes-generate-40-billion-ad-request-5e60fd71</guid>
+      <description><![CDATA[BADBOX 3.0 infected low-cost TV boxes produced roughly 40 billion ad bid requests daily, exceeding 4% of all connected TV traffic. The malware hijacked ad rendering processes, enabling stealthy traffic injection without user awareness and creating a large-scale advertising fraud network.]]></description>
+      <pubDate>Mon, 23 Nov 2026 08:06:18 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/23/badbox-3-0-ad-fraud-operation/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Bulgarian Government Breach Exposes 62 Million Pages</title>
+      <link>https://secubuzz.com/news/bulgarian-government-breach-exposes-62-million-pag-ab52e416</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bulgarian-government-breach-exposes-62-million-pag-ab52e416</guid>
+      <description><![CDATA[Hackers accessed Bulgarian state administration networks for five years, exfiltrating 130 GB of documents. The intrusion leveraged covert persistence mechanisms to download over 62 million pages, representing a significant compromise of sensitive government data. Bulgarian authorities disrupted the operation and are investigating the breach; no vendor patch is applicable, but organizations should review network segmentation and intrusion detection controls.]]></description>
+      <pubDate>Mon, 23 Nov 2026 08:01:36 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/bulgarian-government/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Kernel Update for RHEL 10.0 EUS</title>
+      <link>https://secubuzz.com/news/red-hat-kernel-update-for-rhel-10-0-eus-c676eec0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-rhel-10-0-eus-c676eec0</guid>
+      <description><![CDATA[Red Hat released a kernel update for Enterprise Linux 10.0 Extended Update Support, addressing multiple security issues. The advisory notes an Important security impact, with CVSS base scores linked to each vulnerability, indicating potential high-severity flaws. Security teams should apply the update immediately to mitigate the identified kernel vulnerabilities, as no workarounds are provided.]]></description>
+      <pubDate>Mon, 23 Nov 2026 07:49:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102220">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CISA Alerts on Cisco Expressway RCE Exploitation</title>
+      <link>https://secubuzz.com/news/cisa-alerts-on-cisco-expressway-rce-exploitation-96269fe0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-alerts-on-cisco-expressway-rce-exploitation-96269fe0</guid>
+      <description><![CDATA[CISA reports that attackers are exploiting a recently patched critical vulnerability in Cisco Expressway, enabling remote code execution. The flaw, classified as critical, allows unauthenticated users to execute arbitrary code, and has been actively leveraged in the wild. Cisco has released a patch; security teams must apply it immediately and monitor for exploitation attempts.]]></description>
+      <pubDate>Mon, 23 Nov 2026 07:44:19 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Malicious Ad Domains Steal iPhone Crypto Recovery Phrases</title>
+      <link>https://secubuzz.com/news/malicious-ad-domains-steal-iphone-crypto-recovery-a94fe9be</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-ad-domains-steal-iphone-crypto-recovery-a94fe9be</guid>
+      <description><![CDATA[Hackers leveraged over 480 malicious ad domains to compromise iPhones and exfiltrate crypto wallet recovery phrases, passwords, and personal data. The MoldyRoost operation exploited ad rendering engine flaws, enabling credential theft without user interaction across 47+ countries. Apple issued a security advisory urging iOS updates and users to avoid suspicious ads; security teams should monitor ad traffic and enforce sandboxing.]]></description>
+      <pubDate>Mon, 23 Nov 2026 07:32:52 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/malicious-ad-domains-target-iphones/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Kernel Update for RHEL 8</title>
+      <link>https://secubuzz.com/news/red-hat-kernel-update-for-rhel-8-7151ae6f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-rhel-8-7151ae6f</guid>
+      <description><![CDATA[Red Hat issued a kernel update for Enterprise Linux 8, addressing several security issues. The advisory labels the update as Important, with CVSS base scores linked to each vulnerability, implying high-severity flaws. Apply the update promptly to remediate the kernel vulnerabilities; no workarounds are provided, and ensure system integrity today.]]></description>
+      <pubDate>Mon, 23 Nov 2026 07:27:18 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102218">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Kernel-rt Update for RHEL 8</title>
+      <link>https://secubuzz.com/news/red-hat-kernel-rt-update-for-rhel-8-226ecb49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-rt-update-for-rhel-8-226ecb49</guid>
+      <description><![CDATA[Red Hat released a kernel-rt update for Enterprise Linux 8, fixing multiple security defects. The advisory rates the update as Important, with CVSS base scores linked to each vulnerability, indicating high-severity flaws. Security teams should apply the kernel-rt patch immediately; no workarounds exist, and system stability must be verified today.]]></description>
+      <pubDate>Mon, 23 Nov 2026 07:15:38 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102219">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Cancer Institute Tackles Shadow IT in Research</title>
       <link>https://secubuzz.com/news/cancer-institute-tackles-shadow-it-in-research-0187d950</link>
@@ -393,69 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 00:12:58 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102087">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Debian 13.8 Bundles Kernel and Chromium Fixes</title>
-      <link>https://secubuzz.com/news/debian-13-8-bundles-kernel-and-chromium-fixes-8096e679</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/debian-13-8-bundles-kernel-and-chromium-fixes-8096e679</guid>
-      <description><![CDATA[Debian 13.8 bundles security fixes for the kernel, Chromium, Firefox ESR, OpenJDK 25, nginx, BIND 9, Dovecot, rsync, PostgreSQL 17, and 112 other packages. The update covers 122 advisories, DSA-6408 to DSA-6629, fixing critical bugs that could enable privilege escalation. Users should run 'apt update && apt upgrade' on trixie, verify packages, and monitor Debian Security Advisories for further patches.]]></description>
-      <pubDate>Sun, 22 Nov 2026 23:05:09 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/23/debian-13-8-released/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>GL.iNet Cloud Flaw Enables Router and KVM Malware</title>
-      <link>https://secubuzz.com/news/gl-inet-cloud-flaw-enables-router-and-kvm-malware-f26108c9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gl-inet-cloud-flaw-enables-router-and-kvm-malware-f26108c9</guid>
-      <description><![CDATA[Hackers leveraged a flaw in GL.iNet’s cloud-based remote-management service to compromise customer routers and KVM devices. The vulnerability permits unauthenticated code execution, enabling attackers to drop custom malware, establish backdoors, and spawn reverse shells for persistent remote control. GL.iNet has released a patch for the cloud service; administrators should apply the update immediately and verify device firmware integrity.]]></description>
-      <pubDate>Sun, 22 Nov 2026 18:45:37 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Debian, Ubuntu Remove rsyslogd Timestamp Config Directive</title>
-      <link>https://secubuzz.com/news/debian-ubuntu-remove-rsyslogd-timestamp-config-dir-fc4a37ea</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/debian-ubuntu-remove-rsyslogd-timestamp-config-dir-fc4a37ea</guid>
-      <description><![CDATA[Debian and Ubuntu removed a configuration directive from rsyslogd in early 2023, changing syslog timestamp handling. The change removes a legacy option that allowed custom timestamp formatting, potentially causing logs to default to system time zones and reducing forensic precision. Users should review rsyslogd configuration files for timestamp settings and apply any vendor updates that reintroduce desired formatting options.]]></description>
-      <pubDate>Sun, 22 Nov 2026 18:38:34 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33530">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>VirusTotal Detects Ransomware Missed by 75 AV Engines</title>
-      <link>https://secubuzz.com/news/virustotal-detects-ransomware-missed-by-75-av-engi-c4a5db07</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/virustotal-detects-ransomware-missed-by-75-av-engi-c4a5db07</guid>
-      <description><![CDATA[VirusTotal introduced a runtime encryption check that identified a Python ransomware sample previously undetected by 75 antivirus engines. The malware leveraged obfuscated Python code to evade static signatures, but its encryption activity triggered the new behavior analysis, revealing its malicious intent. Security teams should enable VirusTotal’s behavior-based detection and ensure their antivirus solutions are updated to recognize similar obfuscated ransomware.]]></description>
-      <pubDate>Sun, 22 Nov 2026 17:11:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/virustotal-ransomware-detection/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cleverbridge Reports Credit Card Data Theft</title>
-      <link>https://secubuzz.com/news/cleverbridge-reports-credit-card-data-theft-3410b57c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cleverbridge-reports-credit-card-data-theft-3410b57c</guid>
-      <description><![CDATA[Cleverbridge, an e-commerce platform, disclosed a breach that exposed customers’ payment card numbers and CVV codes via unauthorized system access. The intrusion involved credential theft and data exfiltration, potentially enabling fraud, but no public exploit or CVE was identified. Cleverbridge urged affected users to monitor accounts, change passwords, and contact issuers while investigating the vector and will issue remediation guidance.]]></description>
-      <pubDate>Sun, 22 Nov 2026 15:43:04 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Optimizely Malware Hits 178 Organizations</title>
-      <link>https://secubuzz.com/news/optimizely-malware-hits-178-organizations-fb37b3e2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/optimizely-malware-hits-178-organizations-fb37b3e2</guid>
-      <description><![CDATA[An attacker exploited a flaw in Optimizely’s web experimentation platform to plant malicious JavaScript on 178 organizations’ websites, such as BBC, CNN, and Zoom. The vulnerability, a memory-corruption flaw in OpenJDK’s Base64 decoder (CVE-2026-114938), requires specific CPU conditions, limiting exploitation but still high severity. Optimizely confirmed the incident, urged customers to update the platform, remove injected scripts, and monitor traffic.]]></description>
-      <pubDate>Sun, 22 Nov 2026 09:00:25 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/22/week-in-review-java4shell-proves-tricky-to-exploit-malware-planted-via-optimizely-hits-178-orgs/">Help Net Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>OpenRouter Removes Providers After Prompt Theft Discovery</title>
-      <link>https://secubuzz.com/news/openrouter-removes-providers-after-prompt-theft-di-9940c3f7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openrouter-removes-providers-after-prompt-theft-di-9940c3f7</guid>
-      <description><![CDATA[OpenRouter removed three AI inference providers after researchers uncovered months of prompt theft from their internal systems. The stolen prompts, some marked Zero Data Retention, were accessed without authorization, exposing user inputs; Dragos confirmed the breach to vendors. OpenRouter recommends vendors review access controls, enforce strict data-retention policies, and apply security hardening to prevent future prompt exfiltration.]]></description>
-      <pubDate>Sun, 22 Nov 2026 05:06:55 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html">The Hacker News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

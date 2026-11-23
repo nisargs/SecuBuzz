@@ -11,6 +11,135 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "badbox-3-0-tv-boxes-generate-40-billion-ad-request-5e60fd71",
+    "title": "BADBOX 3.0 TV Boxes Generate 40 Billion Ad Requests",
+    "summary": "BADBOX 3.0 infected low-cost TV boxes produced roughly 40 billion ad bid requests daily, exceeding 4% of all connected TV traffic. The malware hijacked ad rendering processes, enabling stealthy traffic injection without user awareness and creating a large-scale advertising fraud network.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/badbox-3-0-ad-fraud-operation/",
+    "publishedAt": "2026-11-23T08:06:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "badbox-3-0-tv-boxes-generate-40-billion-ad-request",
+      "article-5e60fd71",
+      "5e60fd71",
+      "badbox-3-0-tv-boxes-generate-40-billion-ad-request-126196",
+      "badbox-3-0-tv-boxes-generate-40-billion-ad-requests"
+    ]
+  },
+  {
+    "slug": "bulgarian-government-breach-exposes-62-million-pag-ab52e416",
+    "title": "Bulgarian Government Breach Exposes 62 Million Pages",
+    "summary": "Hackers accessed Bulgarian state administration networks for five years, exfiltrating 130 GB of documents. The intrusion leveraged covert persistence mechanisms to download over 62 million pages, representing a significant compromise of sensitive government data. Bulgarian authorities disrupted the operation and are investigating the breach; no vendor patch is applicable, but organizations should review network segmentation and intrusion detection controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/bulgarian-government/",
+    "publishedAt": "2026-11-23T08:01:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bulgarian-government-breach-exposes-62-million-pag",
+      "article-ab52e416",
+      "ab52e416",
+      "bulgarian-government-breach-exposes-62-million-pag-4b51f5",
+      "bulgarian-government-breach-exposes-62-million-pages"
+    ]
+  },
+  {
+    "slug": "red-hat-kernel-update-for-rhel-10-0-eus-c676eec0",
+    "title": "Red Hat Kernel Update for RHEL 10.0 EUS",
+    "summary": "Red Hat released a kernel update for Enterprise Linux 10.0 Extended Update Support, addressing multiple security issues. The advisory notes an Important security impact, with CVSS base scores linked to each vulnerability, indicating potential high-severity flaws. Security teams should apply the update immediately to mitigate the identified kernel vulnerabilities, as no workarounds are provided.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102220",
+    "publishedAt": "2026-11-23T07:49:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-update-for-rhel-10-0-eus",
+      "article-c676eec0",
+      "c676eec0",
+      "red-hat-kernel-update-for-rhel-10-0-eus-2ee15e"
+    ]
+  },
+  {
+    "slug": "cisa-alerts-on-cisco-expressway-rce-exploitation-96269fe0",
+    "title": "CISA Alerts on Cisco Expressway RCE Exploitation",
+    "summary": "CISA reports that attackers are exploiting a recently patched critical vulnerability in Cisco Expressway, enabling remote code execution. The flaw, classified as critical, allows unauthenticated users to execute arbitrary code, and has been actively leveraged in the wild. Cisco has released a patch; security teams must apply it immediately and monitor for exploitation attempts.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+    "publishedAt": "2026-11-23T07:44:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-alerts-on-cisco-expressway-rce-exploitation",
+      "article-96269fe0",
+      "96269fe0",
+      "cisa-alerts-on-cisco-expressway-rce-exploitation-6aa7cf"
+    ]
+  },
+  {
+    "slug": "malicious-ad-domains-steal-iphone-crypto-recovery-a94fe9be",
+    "title": "Malicious Ad Domains Steal iPhone Crypto Recovery Phrases",
+    "summary": "Hackers leveraged over 480 malicious ad domains to compromise iPhones and exfiltrate crypto wallet recovery phrases, passwords, and personal data. The MoldyRoost operation exploited ad rendering engine flaws, enabling credential theft without user interaction across 47+ countries. Apple issued a security advisory urging iOS updates and users to avoid suspicious ads; security teams should monitor ad traffic and enforce sandboxing.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/malicious-ad-domains-target-iphones/",
+    "publishedAt": "2026-11-23T07:32:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-ad-domains-steal-iphone-crypto-recovery",
+      "article-a94fe9be",
+      "a94fe9be",
+      "malicious-ad-domains-steal-iphone-crypto-recovery-5df5ed",
+      "malicious-ad-domains-steal-iphone-crypto-recovery-phrases"
+    ]
+  },
+  {
+    "slug": "red-hat-kernel-update-for-rhel-8-7151ae6f",
+    "title": "Red Hat Kernel Update for RHEL 8",
+    "summary": "Red Hat issued a kernel update for Enterprise Linux 8, addressing several security issues. The advisory labels the update as Important, with CVSS base scores linked to each vulnerability, implying high-severity flaws. Apply the update promptly to remediate the kernel vulnerabilities; no workarounds are provided, and ensure system integrity today.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102218",
+    "publishedAt": "2026-11-23T07:27:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-update-for-rhel-8",
+      "article-7151ae6f",
+      "7151ae6f",
+      "red-hat-kernel-update-for-rhel-8-2ee15e"
+    ]
+  },
+  {
+    "slug": "red-hat-kernel-rt-update-for-rhel-8-226ecb49",
+    "title": "Red Hat Kernel-rt Update for RHEL 8",
+    "summary": "Red Hat released a kernel-rt update for Enterprise Linux 8, fixing multiple security defects. The advisory rates the update as Important, with CVSS base scores linked to each vulnerability, indicating high-severity flaws. Security teams should apply the kernel-rt patch immediately; no workarounds exist, and system stability must be verified today.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102219",
+    "publishedAt": "2026-11-23T07:15:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-rt-update-for-rhel-8",
+      "article-226ecb49",
+      "226ecb49",
+      "red-hat-kernel-rt-update-for-rhel-8-2ee15e"
+    ]
+  },
+  {
     "slug": "cancer-institute-tackles-shadow-it-in-research-0187d950",
     "title": "Cancer Institute Tackles Shadow IT in Research",
     "summary": "Istituto Nazionale Tumori (INT) discusses how to keep a cancer research hospital operational while protecting against cyberattacks. The director explains collaboration with partner hospitals in the Rare Cancer Network, challenges when staff cannot access chemotherapy plans, and why banning shadow IT rarely fixes gaps. INT also highlights the most burdensome EU regulation and outlines its approach to secure research workflows.",
@@ -9516,162 +9645,6 @@ export const news: NewsBrief[] = [
       "ede8431a",
       "microsoft-updates-cvss-for-ad-domain-services-cve-1fe923",
       "microsoft-updates-cvss-for-ad-domain-services-cve-2026-11814"
-    ]
-  },
-  {
-    "slug": "cisco-patches-clamav-flaws-causing-denial-of-servi-68fc4068",
-    "title": "Cisco Patches ClamAV Flaws Causing Denial of Service",
-    "summary": "Cisco addressed multiple ClamAV vulnerabilities affecting its products that let a remote attacker bypass configured file and scan time limits, causing denial of service that interrupts scanning operations. The Security Impact Rating is High on Windows platforms like Cisco Secure Endpoint Connector, Medium elsewhere, with no available workarounds. Cisco released software updates; administrators should apply them promptly.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DClamAV+Vulnerabilities+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1",
-    "publishedAt": "2026-11-18T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-patches-clamav-flaws-causing-denial-of-servi",
-      "article-68fc4068",
-      "68fc4068",
-      "cisco-patches-clamav-flaws-causing-denial-of-servi-59933d",
-      "cisco-patches-clamav-flaws-causing-denial-of-service"
-    ]
-  },
-  {
-    "slug": "vulnerability-in-oracle-openjdk-java4shell-affecti-e1a485fe",
-    "title": "Vulnerability in Oracle OpenJDK (Java4Shell) Affecting Cisco Products: November 2026",
-    "summary": "On November 17, 2026, Oracle announced the availability of fixes for a vulnerability in OpenJDK that could lead to remote code execution identified by CVE-2026-114938. For additional information, see the Talos blog post: Talos Threat Advisory CVE-2026-114938: Critical vulnerability in OpenJDK JAVA This advisory will be updated as additional information becomes available.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerability+in+Oracle+OpenJDK+%28Java4Shell%29+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1",
-    "publishedAt": "2026-11-18T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "vulnerability-in-oracle-openjdk-java4shell-affecti",
-      "article-e1a485fe",
-      "e1a485fe",
-      "vulnerability-in-oracle-openjdk-java4shell-affecti-3acc1e",
-      "vulnerability-in-oracle-openjdk-java4shell-affecting-cisco-p"
-    ]
-  },
-  {
-    "slug": "emacs-prior-to-31-2-allows-local-code-execution-c938cfb4",
-    "title": "Emacs Prior to 31.2 Allows Local Code Execution",
-    "summary": "GNU Emacs versions before 31.2 contain a local code execution flaw triggered by malicious .dir-locals.el files. The vulnerability bypasses auto-mode-alist checks, allowing an attacker to run arbitrary code when a user opens a file; no public exploit reported. Users should upgrade to Emacs 31.2 or later, or disable .dir-locals.el processing until a patch is released.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/gnu-security-advisory-av26-1173",
-    "publishedAt": "2026-11-18T15:37:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "emacs-prior-to-31-2-allows-local-code-execution",
-      "article-c938cfb4",
-      "c938cfb4",
-      "emacs-prior-to-31-2-allows-local-code-execution-7658c9"
-    ]
-  },
-  {
-    "slug": "armornet-launches-ai-driven-supply-chain-risk-plat-68fb3902",
-    "title": "Armornet Launches AI-Driven Supply-Chain Risk Platform",
-    "summary": "Armornet introduces an AI-driven platform that maps teams’ vendor dependencies and assigns continuous risk scores to each supplier. The solution monitors the software supply chain from code to deployment, providing real-time visibility into potential security gaps. Security teams can use the platform’s insights to prioritize remediation and enforce stricter vendor controls.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/armornet-ai-software-supply-chain-vendor-security/",
-    "publishedAt": "2026-11-18T15:20:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "armornet-launches-ai-driven-supply-chain-risk-plat",
-      "article-68fb3902",
-      "68fb3902",
-      "armornet-launches-ai-driven-supply-chain-risk-plat-27171a",
-      "armornet-launches-ai-driven-supply-chain-risk-platform"
-    ]
-  },
-  {
-    "slug": "arctic-wolf-named-visionary-in-ai-soc-industry-rep-97c46dd2",
-    "title": "Arctic Wolf Named Visionary in AI SOC Industry Report",
-    "summary": "Frost & Sullivan named cybersecurity provider Arctic Wolf a Visionary Leader in its Frost Radar AI Security Operations Centers 2026 report. According to the report, the evaluation recognizes the Aurora Agentic SOC platform for combining agentic artificial intelligence with human expertise. Security teams can review the research metrics to assess operational AI analytics capabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/press-releases/arctic-wolf-named-a-visionary-leader-in-frost-radar-for-ai-security-operations-centers/",
-    "publishedAt": "2026-11-18T15:16:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arctic-wolf-named-visionary-in-ai-soc-industry-rep",
-      "article-97c46dd2",
-      "97c46dd2",
-      "arctic-wolf-named-visionary-in-ai-soc-industry-rep-5abc7a",
-      "arctic-wolf-named-visionary-in-ai-soc-industry-report"
-    ]
-  },
-  {
-    "slug": "russian-state-hackers-exploit-stolen-cloud-data-fo-31d1ba6a",
-    "title": "Russian State Hackers Exploit Stolen Cloud Data for Espionage",
-    "summary": "Russian state-backed threat actors leverage stolen cloud credentials to impersonate legitimate contacts and infiltrate target organizations. The method bypasses authentication, granting attackers access to internal networks and enabling data exfiltration from professional contacts; no specific vulnerability exploitation is reported. Security teams should enforce multi-factor authentication, monitor for anomalous login patterns, and review cloud access logs for suspicious activity.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/russia-cyber-espionage-google",
-    "publishedAt": "2026-11-18T15:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-state-hackers-exploit-stolen-cloud-data-fo",
-      "article-31d1ba6a",
-      "31d1ba6a",
-      "russian-state-hackers-exploit-stolen-cloud-data-fo-1fddff",
-      "russian-state-hackers-exploit-stolen-cloud-data-for-espionag"
-    ]
-  },
-  {
-    "slug": "nginx-unauthenticated-rce-via-http-2-cve-2026-1236-d89a704c",
-    "title": "NGINX Unauthenticated RCE via HTTP/2 CVE-2026-123633, CVE-2026-123007",
-    "summary": "NGINX suffers unauthenticated RCE via CVE-2026-123633 and CVE-2026-123007, exploiting HTTP/2 parsing to compromise web servers, APIs, and sensitive data. The flaw allows arbitrary code execution without authentication, a high-severity RCE with a CVSS score above 9.0. NGINX released an out-of-band patch updating the HTTP/2 parser; apply it immediately and disable HTTP/2 on legacy systems as a temporary fix.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
-    "publishedAt": "2026-11-18T15:13:20.000Z",
-    "cves": [
-      "CVE-2026-123633",
-      "CVE-2026-123007"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "nginx-unauthenticated-rce-via-http-2-cve-2026-1236",
-      "article-d89a704c",
-      "d89a704c",
-      "nginx-unauthenticated-rce-via-http-2-cve-2026-1236-757983",
-      "nginx-unauthenticated-rce-via-http-2-cve-2026-123633-cve-202"
-    ]
-  },
-  {
-    "slug": "from-deepfakes-to-helpdesk-impersonation-why-stron-19bda175",
-    "title": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
-    "summary": "Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering threats.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
-    "publishedAt": "2026-11-18T15:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "from-deepfakes-to-helpdesk-impersonation-why-stron",
-      "article-19bda175",
-      "19bda175",
-      "from-deepfakes-to-helpdesk-impersonation-why-stron-783f6f",
-      "from-deepfakes-to-helpdesk-impersonation-why-stronger-verifi"
     ]
   }
 ];
