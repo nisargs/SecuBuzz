@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 03:44:51 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 03:46:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases Kernel Security Update for RHEL6</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel6-34a6796a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel6-34a6796a</guid>
+      <description><![CDATA[A kernel vulnerability affecting Red Hat Enterprise Linux 6 Extended Lifecycle Support prompted an Important security update. The flaw, detailed in multiple CVE references, carries a CVSS base score indicating significant risk, but no active exploitation has been reported. Red Hat has released the patch; administrators should apply the update immediately to mitigate potential exploitation.]]></description>
+      <pubDate>Mon, 23 Nov 2026 03:44:25 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102182">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Thunderbird Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-thunderbird-security-update-028c3c47</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-thunderbird-security-update-028c3c47</guid>
+      <description><![CDATA[An Important security update for Thunderbird on Red Hat Enterprise Linux 8 addresses a kernel-level vulnerability. The vulnerability, referenced by multiple CVE entries, has a CVSS base score reflecting high risk, though no active exploitation has been observed. Red Hat has issued the patch; users are advised to install it promptly to prevent potential compromise.]]></description>
+      <pubDate>Mon, 23 Nov 2026 03:41:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102172">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Updates libgsf for Security</title>
       <link>https://secubuzz.com/news/red-hat-updates-libgsf-for-security-50f93d6e</link>
@@ -23,6 +41,24 @@
       <description><![CDATA[Red Hat released a security update for git-lfs on RHEL 10.2 EUS, addressing multiple critical vulnerabilities referenced by CVE identifiers. The defects involve improper validation of LFS objects, potentially enabling remote code execution through malicious repositories. Red Hat has issued a patch; administrators should apply it promptly to prevent exploitation.]]></description>
       <pubDate>Mon, 23 Nov 2026 03:32:40 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102186">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Security Update for xdg-desktop-portal</title>
+      <link>https://secubuzz.com/news/red-hat-issues-security-update-for-xdg-desktop-por-4ae5111b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-security-update-for-xdg-desktop-por-4ae5111b</guid>
+      <description><![CDATA[Red Hat released a security update for the xdg-desktop-portal component in Red Enterprise Linux 10, addressing multiple vulnerabilities. The update mitigates flaws that could allow privilege escalation or unauthorized data access, with CVSS scores provided in the CVE references. Administrators should apply the RHSA-2026:102177 update immediately to ensure protection against the identified weaknesses.]]></description>
+      <pubDate>Mon, 23 Nov 2026 03:15:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102177">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Updates mingw-expat for RHEL8</title>
+      <link>https://secubuzz.com/news/red-hat-updates-mingw-expat-for-rhel8-88477b25</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-mingw-expat-for-rhel8-88477b25</guid>
+      <description><![CDATA[Red Hat released an Important security update for mingw-expat on Red Hat Enterprise Linux 8 to fix a kernel-related flaw. The flaw, cited in several CVE references, carries a CVSS base score indicating high severity, but no active exploitation has been reported. The vendor has made the patch available; administrators should apply it immediately to mitigate potential exploitation.]]></description>
+      <pubDate>Mon, 23 Nov 2026 03:06:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102193">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -420,42 +456,6 @@
       <pubDate>Sat, 21 Nov 2026 08:49:13 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html">The Hacker News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>6 Critical F5 BIG-IP . Could Let Hackers Disrupt Websites and Execute Malicious Code</title>
-      <link>https://secubuzz.com/news/6-critical-f5-big-ip-could-let-hackers-disrupt-web-e1a11be8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/6-critical-f5-big-ip-could-let-hackers-disrupt-web-e1a11be8</guid>
-      <description><![CDATA[F5 released emergency fixes for six critical BIG-IP vulnerabilities that could let remote attackers take websites and other services offline without logging in. The flaws affect specific traffic-handling configurations. An attacker who can reach a vulnerable service could crash the BIG-IP process that handles client traffic.]]></description>
-      <pubDate>Sat, 21 Nov 2026 03:13:03 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-f5-big-ip-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>WhatsApp Android Flaws Could Let Hackers Delete Users’ Files and Expose IP Addresses</title>
-      <link>https://secubuzz.com/news/whatsapp-android-flaws-could-let-hackers-delete-us-5e5d25e8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/whatsapp-android-flaws-could-let-hackers-delete-us-5e5d25e8</guid>
-      <description><![CDATA[WhatsApp’s November 2026 security update describes three flaws that could let attackers delete files stored by WhatsApp on Android, expose a user’s IP address, or bypass a security check for Meta AI’s Private Processing service. Of the three, only the IP exposure flaw was flagged for possible abuse.]]></description>
-      <pubDate>Sat, 21 Nov 2026 02:36:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/whatsapp-android-flaws/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Top Enterprise Risk Management Tools 2027</title>
-      <link>https://secubuzz.com/news/top-enterprise-risk-management-tools-2027-b701097f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-enterprise-risk-management-tools-2027-b701097f</guid>
-      <description><![CDATA[The 2027 ERM landscape features platforms that enable organizations to identify, assess, and mitigate risks across operational, financial, compliance, and cybersecurity domains. These solutions leverage AI, machine learning, and automation to deliver real-time insights and streamline processes, while prioritizing seamless integration for centralized data views. Vendors emphasize AI-driven analytics and unified dashboards to support holistic risk management.]]></description>
-      <pubDate>Sat, 21 Nov 2026 01:26:39 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/enterprise-risk-management-tools/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CTO of ‘RansomwareHelp’ Indicted for Wire Fraud</title>
-      <link>https://secubuzz.com/news/cto-of-ransomwarehelp-indicted-for-wire-fraud-9b21c3c1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cto-of-ransomwarehelp-indicted-for-wire-fraud-9b21c3c1</guid>
-      <description><![CDATA[The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use "advanced cryptographic tools" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption key and charging victims a markup for work that was never performed.]]></description>
-      <pubDate>Sat, 21 Nov 2026 00:36:39 GMT</pubDate>
-      <source url="https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/">Krebs on Security</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>

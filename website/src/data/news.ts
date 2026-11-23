@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-kernel-security-update-for-rhel6-34a6796a",
+    "title": "Red Hat Releases Kernel Security Update for RHEL6",
+    "summary": "A kernel vulnerability affecting Red Hat Enterprise Linux 6 Extended Lifecycle Support prompted an Important security update. The flaw, detailed in multiple CVE references, carries a CVSS base score indicating significant risk, but no active exploitation has been reported. Red Hat has released the patch; administrators should apply the update immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102182",
+    "publishedAt": "2026-11-23T03:44:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-security-update-for-rhel6",
+      "article-34a6796a",
+      "34a6796a",
+      "red-hat-releases-kernel-security-update-for-rhel6-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-thunderbird-security-update-028c3c47",
+    "title": "Red Hat Issues Thunderbird Security Update",
+    "summary": "An Important security update for Thunderbird on Red Hat Enterprise Linux 8 addresses a kernel-level vulnerability. The vulnerability, referenced by multiple CVE entries, has a CVSS base score reflecting high risk, though no active exploitation has been observed. Red Hat has issued the patch; users are advised to install it promptly to prevent potential compromise.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102172",
+    "publishedAt": "2026-11-23T03:41:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-thunderbird-security-update",
+      "article-028c3c47",
+      "028c3c47",
+      "red-hat-issues-thunderbird-security-update-2ee15b"
+    ]
+  },
+  {
     "slug": "red-hat-updates-libgsf-for-security-50f93d6e",
     "title": "Red Hat Updates libgsf for Security",
     "summary": "Red Hat released a security update for libgsf on RHEL 10.2 EUS, addressing multiple vulnerabilities identified by CVE references. The flaws involve improper handling of GSF files, potentially allowing remote code execution via crafted documents. Red Hat has issued a patch; administrators should apply the update immediately to mitigate exploitation.",
@@ -44,6 +80,43 @@ export const news: NewsBrief[] = [
       "article-41c2191c",
       "41c2191c",
       "red-hat-issues-git-lfs-security-patch-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-security-update-for-xdg-desktop-por-4ae5111b",
+    "title": "Red Hat Issues Security Update for xdg-desktop-portal",
+    "summary": "Red Hat released a security update for the xdg-desktop-portal component in Red Enterprise Linux 10, addressing multiple vulnerabilities. The update mitigates flaws that could allow privilege escalation or unauthorized data access, with CVSS scores provided in the CVE references. Administrators should apply the RHSA-2026:102177 update immediately to ensure protection against the identified weaknesses.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102177",
+    "publishedAt": "2026-11-23T03:15:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-security-update-for-xdg-desktop-por",
+      "article-4ae5111b",
+      "4ae5111b",
+      "red-hat-issues-security-update-for-xdg-desktop-por-2ee15b",
+      "red-hat-issues-security-update-for-xdg-desktop-portal"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-mingw-expat-for-rhel8-88477b25",
+    "title": "Red Hat Updates mingw-expat for RHEL8",
+    "summary": "Red Hat released an Important security update for mingw-expat on Red Hat Enterprise Linux 8 to fix a kernel-related flaw. The flaw, cited in several CVE references, carries a CVSS base score indicating high severity, but no active exploitation has been reported. The vendor has made the patch available; administrators should apply it immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102193",
+    "publishedAt": "2026-11-23T03:06:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-mingw-expat-for-rhel8",
+      "article-88477b25",
+      "88477b25",
+      "red-hat-updates-mingw-expat-for-rhel8-2ee15b"
     ]
   },
   {
@@ -9603,83 +9676,6 @@ export const news: NewsBrief[] = [
       "article-feedad64",
       "feedad64",
       "java4shell-cve-2026-114938-exploitation-risk-5eefb1"
-    ]
-  },
-  {
-    "slug": "java4shell-cve-2026-114938-exploitation-requires-s-64ad6e03",
-    "title": "Java4Shell CVE-2026-114938 Exploitation Requires Specific CPUs",
-    "summary": "CVE-2026-114938 is a memory corruption flaw in OpenJDK’s Base64 decoder that can enable unauthenticated remote code execution on Java application servers. The vulnerability is exploitable only on specific CPU architectures, and no successful attacks have been reported, though CISA urges immediate patching. Oracle and the OpenJDK project released patches; administrators should apply the update immediately to eliminate the exploitation risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/java4shell-openjdk-vulnerability-cve-2026-114938/",
-    "publishedAt": "2026-11-18T11:12:12.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "java4shell-cve-2026-114938-exploitation-requires-s",
-      "article-64ad6e03",
-      "64ad6e03",
-      "java4shell-cve-2026-114938-exploitation-requires-s-1e5dfb",
-      "java4shell-cve-2026-114938-exploitation-requires-specific-cp"
-    ]
-  },
-  {
-    "slug": "ai-pentesting-raises-data-privacy-and-production-s-109a730c",
-    "title": "AI Pentesting Raises Data Privacy and Production Safety Concerns",
-    "summary": "AI-driven pentesting accelerates code changes, increasing vulnerability exposure in production systems. The rapid development cycle shortens time-to-exploit to a single day, amplifying risk for data privacy and operational safety, though no specific flaw is cited. Security teams must adopt continuous testing and integrate AI tools to detect and remediate issues before deployment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
-    "publishedAt": "2026-11-18T11:03:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-pentesting-raises-data-privacy-and-production-s",
-      "article-109a730c",
-      "109a730c",
-      "ai-pentesting-raises-data-privacy-and-production-s-79098b",
-      "ai-pentesting-raises-data-privacy-and-production-safety-conc"
-    ]
-  },
-  {
-    "slug": "defending-against-blockchain-based-dead-drops-ac2aaa17",
-    "title": "Defending Against Blockchain-Based Dead Drops",
-    "summary": "Malware command-and-control infrastructure has migrated to decentralized blockchain networks, eliminating single points of failure. This shift creates bulletproof dead drops that resist takedown, requiring advanced detection and mitigation strategies. Security teams should monitor blockchain traffic, employ distributed ledger analysis, and develop countermeasures to disrupt these resilient C2 channels globally.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/",
-    "publishedAt": "2026-11-18T11:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "defending-against-blockchain-based-dead-drops",
-      "article-ac2aaa17",
-      "ac2aaa17",
-      "defending-against-blockchain-based-dead-drops-482ada"
-    ]
-  },
-  {
-    "slug": "north-korea-aligned-actor-uses-blockchain-for-info-e5d7f9a3",
-    "title": "North Korea-aligned Actor Uses Blockchain for Infostealing",
-    "summary": "Cisco Talos linked malicious infrastructure to UAT-12643, a suspected North Korea-aligned threat group targeting financial data via blockchain resilience. The group uses distributed ledger techniques to hide command-and-control traffic, enabling stealthy credential theft, though no confirmed breach has been reported. Security teams should monitor anomalous blockchain traffic, enforce strict access controls, and segment networks to mitigate potential exfiltration.",
-    "category": "Nation State",
-    "severity": "MEDIUM",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/",
-    "publishedAt": "2026-11-18T11:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "north-korea-aligned-actor-uses-blockchain-for-info",
-      "article-e5d7f9a3",
-      "e5d7f9a3",
-      "north-korea-aligned-actor-uses-blockchain-for-info-d324fe",
-      "north-korea-aligned-actor-uses-blockchain-for-infostealing"
     ]
   }
 ];
