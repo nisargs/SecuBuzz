@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-flatpak-update-fixes-security-vulnerabilit-58f0e68c",
+    "title": "Red Hat Flatpak Update Fixes Security Vulnerabilities",
+    "summary": "Red Hat issued a flatpak patch for RHEL 8.4 to fix multiple security flaws. The update addresses privilege-escalation and information-leak vulnerabilities, each with a CVSS score listed via CVE references, but no exploitation reported. Apply the flatpak update immediately; no workaround exists, and users should confirm the new flatpak version post-install.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102156",
+    "publishedAt": "2026-11-23T01:23:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-flatpak-update-fixes-security-vulnerabilit",
+      "article-58f0e68c",
+      "58f0e68c",
+      "red-hat-flatpak-update-fixes-security-vulnerabilit-2ee15a",
+      "red-hat-flatpak-update-fixes-security-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "red-hat-kernel-patch-addresses-multiple-security-f-74ef8639",
+    "title": "Red Hat Kernel Patch Addresses Multiple Security Flaws",
+    "summary": "Red Hat issued a kernel patch for RHEL 10.2 EUS to fix multiple Linux kernel security flaws. The update addresses privilege-escalation and information-leak flaws, each with a CVSS score listed via CVE references, but no active exploitation has been seen. Red Hat advises applying the kernel update immediately; no workaround exists, and users should confirm the new kernel version post-install.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102090",
+    "publishedAt": "2026-11-23T00:51:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-patch-addresses-multiple-security-f",
+      "article-74ef8639",
+      "74ef8639",
+      "red-hat-kernel-patch-addresses-multiple-security-f-2ee157",
+      "red-hat-kernel-patch-addresses-multiple-security-flaws"
+    ]
+  },
+  {
     "slug": "red-hat-issues-fltk-security-patch-743179e1",
     "title": "Red Hat Issues fltk Security Patch",
     "summary": "Red Enterprise Linux 9 users receive an important security update for the fltk GUI toolkit. The update addresses one or more vulnerabilities that could allow attackers to execute code or compromise system integrity, as indicated by the CVSS base score linked in the advisory. Red Hat recommends applying the patch immediately to mitigate the risk.",
@@ -62,6 +100,25 @@ export const news: NewsBrief[] = [
       "article-b56e0807",
       "b56e0807",
       "red-hat-updates-python-oauthlib-security-2ee157"
+    ]
+  },
+  {
+    "slug": "red-hat-python-oauthlib-patch-resolves-security-is-fbed9239",
+    "title": "Red Hat python-oauthlib Patch Resolves Security Issues",
+    "summary": "Red Hat released a python-oauthlib patch for RHEL 8.4 to address several security vulnerabilities. The update mitigates privilege-escalation and information-leak flaws, each assigned a CVSS score and referenced via CVE links, with no active exploitation observed. Apply the python-oauthlib update immediately; no workaround is available, and users should verify the new package version after installation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102092",
+    "publishedAt": "2026-11-23T00:16:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-python-oauthlib-patch-resolves-security-is",
+      "article-fbed9239",
+      "fbed9239",
+      "red-hat-python-oauthlib-patch-resolves-security-is-2ee157",
+      "red-hat-python-oauthlib-patch-resolves-security-issues"
     ]
   },
   {
@@ -9634,64 +9691,6 @@ export const news: NewsBrief[] = [
       "bc339d8d",
       "microsoft-unveils-windows-server-2028-with-hardene-296474",
       "microsoft-unveils-windows-server-2028-with-hardened-security"
-    ]
-  },
-  {
-    "slug": "fake-freight-portals-steal-trucking-credentials-an-d0102afe",
-    "title": "Fake Freight Portals Steal Trucking Credentials and Deploy Malware",
-    "summary": "Hackers target US trucking firms with counterfeit freight portals and bogus broker paperwork to harvest credentials. The sites capture fleet fuel card passwords and one-time codes, while malware disguised as routine downloads grants remote access. Security teams should verify portal authenticity, enforce MFA, and monitor download activity to prevent credential theft and malware.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fake-freight-portals/",
-    "publishedAt": "2026-11-18T09:05:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-freight-portals-steal-trucking-credentials-an",
-      "article-d0102afe",
-      "d0102afe",
-      "fake-freight-portals-steal-trucking-credentials-an-2f37b4",
-      "fake-freight-portals-steal-trucking-credentials-and-deploy-m"
-    ]
-  },
-  {
-    "slug": "ubuntu-ai-security-patches-are-here-if-you-re-will-9c30f7d4",
-    "title": "Ubuntu AI security patches are here, if you’re willing to test them yourself",
-    "summary": "Canonical is letting Ubuntu Pro customers install security patches written by AI agents before its engineers finish reviewing and testing them. The patches come from Surge, a system Canonical built to fix known vulnerabilities in Ubuntu’s userspace software, meaning everything outside the operating system’s kernel. The flaw is tracked as CVE-2026-114938.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/ubuntu-ai-security-patches-edge-archive/",
-    "publishedAt": "2026-11-18T08:47:50.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-ai-security-patches-are-here-if-you-re-will",
-      "article-9c30f7d4",
-      "9c30f7d4",
-      "ubuntu-ai-security-patches-are-here-if-you-re-will-787bfb",
-      "ubuntu-ai-security-patches-are-here-if-you-re-willing-to-tes"
-    ]
-  },
-  {
-    "slug": "oracle-releases-cspu-patching-950-vulnerabilities-0ca5fdf2",
-    "title": "Oracle Releases CSPU Patching 950 Vulnerabilities",
-    "summary": "Oracle released a November 2026 CSPU that patches 950 vulnerabilities across its product portfolio. The update includes over 300 unauthenticated, remotely exploitable flaws and 62 critical-severity issues, mitigating potential RCE and privilege escalation risks. Administrators should apply the CSPU immediately to secure affected systems and mitigate exploitation risk across all affected platforms.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/oracle-patches-640-vulnerabilities-with-november-2026-cspu/",
-    "publishedAt": "2026-11-18T08:47:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-releases-cspu-patching-950-vulnerabilities",
-      "article-0ca5fdf2",
-      "0ca5fdf2",
-      "oracle-releases-cspu-patching-950-vulnerabilities-8adea3"
     ]
   }
 ];

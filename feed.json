@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102156",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102156",
+    "title": "Red Hat Flatpak Update Fixes Security Vulnerabilities",
+    "headline": "Red Hat Flatpak Update Fixes Security Vulnerabilities",
+    "summary": "Red Hat issued a flatpak patch for RHEL 8.4 to fix multiple security flaws. The update addresses privilege-escalation and information-leak vulnerabilities, each with a CVSS score listed via CVE references, but no exploitation reported. Apply the flatpak update immediately; no workaround exists, and users should confirm the new flatpak version post-install.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T01:23:34.000Z",
+    "ingestedAt": "2026-11-23T01:43:16.342Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102156",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102090",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102090",
+    "title": "Red Hat Kernel Patch Addresses Multiple Security Flaws",
+    "headline": "Red Hat Kernel Patch Addresses Multiple Security Flaws",
+    "summary": "Red Hat issued a kernel patch for RHEL 10.2 EUS to fix multiple Linux kernel security flaws. The update addresses privilege-escalation and information-leak flaws, each with a CVSS score listed via CVE references, but no active exploitation has been seen. Red Hat advises applying the kernel update immediately; no workaround exists, and users should confirm the new kernel version post-install.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T00:51:46.000Z",
+    "ingestedAt": "2026-11-23T01:43:16.342Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102090",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:102089",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102089",
     "title": "Red Hat Issues fltk Security Patch",
@@ -45,6 +77,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:102091",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102092",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102092",
+    "title": "Red Hat python-oauthlib Patch Resolves Security Issues",
+    "headline": "Red Hat python-oauthlib Patch Resolves Security Issues",
+    "summary": "Red Hat released a python-oauthlib patch for RHEL 8.4 to address several security vulnerabilities. The update mitigates privilege-escalation and information-leak flaws, each assigned a CVSS score and referenced via CVE links, with no active exploitation observed. Apply the python-oauthlib update immediately; no workaround is available, and users should verify the new package version after installation.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T00:16:04.000Z",
+    "ingestedAt": "2026-11-23T01:43:16.342Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102092",
     "additionalSources": []
   },
   {
@@ -8301,57 +8349,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/fake-freight-portals/",
-    "sourceUrl": "https://cybersecuritynews.com/fake-freight-portals/",
-    "title": "Fake Freight Portals Steal Trucking Credentials and Deploy Malware",
-    "headline": "Fake Freight Portals Steal Trucking Credentials and Deploy Malware",
-    "summary": "Hackers target US trucking firms with counterfeit freight portals and bogus broker paperwork to harvest credentials. The sites capture fleet fuel card passwords and one-time codes, while malware disguised as routine downloads grants remote access. Security teams should verify portal authenticity, enforce MFA, and monitor download activity to prevent credential theft and malware.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-18T09:05:41.000Z",
-    "ingestedAt": "2026-11-18T11:44:06.475Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/fake-freight-portals/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/18/ubuntu-ai-security-patches-edge-archive/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/18/ubuntu-ai-security-patches-edge-archive/",
-    "title": "Ubuntu AI security patches are here, if you’re willing to test them yourself",
-    "headline": "Ubuntu AI security patches are here, if you’re willing to test them yourself",
-    "summary": "Canonical is letting Ubuntu Pro customers install security patches written by AI agents before its engineers finish reviewing and testing them. The patches come from Surge, a system Canonical built to fix known vulnerabilities in Ubuntu’s userspace software, meaning everything outside the operating system’s kernel. The flaw is tracked as CVE-2026-114938.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-18T08:47:50.000Z",
-    "ingestedAt": "2026-11-18T09:43:23.388Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://www.securityweek.com/oracle-patches-640-vulnerabilities-with-november-2026-cspu/",
-    "sourceUrl": "https://www.securityweek.com/oracle-patches-640-vulnerabilities-with-november-2026-cspu/",
-    "title": "Oracle Releases CSPU Patching 950 Vulnerabilities",
-    "headline": "Oracle Releases CSPU Patching 950 Vulnerabilities",
-    "summary": "Oracle released a November 2026 CSPU that patches 950 vulnerabilities across its product portfolio. The update includes over 300 unauthenticated, remotely exploitable flaws and 62 critical-severity issues, mitigating potential RCE and privilege escalation risks. Administrators should apply the CSPU immediately to secure affected systems and mitigate exploitation risk across all affected platforms.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-18T08:47:18.000Z",
-    "ingestedAt": "2026-11-18T14:11:35.814Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/oracle-patches-640-vulnerabilities-with-november-2026-cspu/",
     "additionalSources": []
   }
 ]
