@@ -11,6 +11,61 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "crowdstrike-to-acquire-zscaler-for-43-9b-c33d0a4d",
+    "title": "CrowdStrike to Acquire Zscaler for $43.9B",
+    "summary": "CrowdStrike announced a $43.9 billion acquisition of Zscaler, aiming to combine their security platforms and generate over $10 billion in annual recurring revenue. The deal positions CrowdStrike as a leading provider of integrated cloud-native security services, expanding its market reach across identity, network, and application layers.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/",
+    "publishedAt": "2026-11-23T11:31:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-to-acquire-zscaler-for-43-9b",
+      "article-c33d0a4d",
+      "c33d0a4d",
+      "crowdstrike-to-acquire-zscaler-for-43-9b-583182"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-low-impact-edk2-update-60cab848",
+    "title": "Red Hat Issues Low-Impact edk2 Update",
+    "summary": "Red Hat released a low-impact update for the edk2 firmware component on RHEL 8.4 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The update addresses multiple security issues, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Red Hat recommends applying the update immediately to maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102278",
+    "publishedAt": "2026-11-23T11:30:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-low-impact-edk2-update",
+      "article-60cab848",
+      "60cab848",
+      "red-hat-issues-low-impact-edk2-update-2ee15e"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102253-important-kernel-security-bug-fix-0d07fd6a",
+    "title": "RHSA-2026:102253: Important: kernel security, bug fix, and enhancement update",
+    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102253",
+    "publishedAt": "2026-11-23T11:14:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102253-important-kernel-security-bug-fix",
+      "article-0d07fd6a",
+      "0d07fd6a",
+      "rhsa-2026-102253-important-kernel-security-bug-fix-2ee15e",
+      "rhsa-2026-102253-important-kernel-security-bug-fix-and-enhan"
+    ]
+  },
+  {
     "slug": "attackers-exploited-microsoft-entra-connect-health-4760c6b1",
     "title": "Attackers exploited Microsoft Entra Connect Health flaw to access tenant data",
     "summary": "Attackers exploited a vulnerability in the Microsoft Entra Connect Health API to read the technical contact email addresses and configuration details of Entra tenants, the company warned affected organizations. Microsoft Entra Connect Health is a cloud-based monitoring service that gives administrators a single view of the health, performance and alerts for their on-premises identity infrastructure in the Microsoft Entra admin center.",
@@ -27,6 +82,24 @@ export const news: NewsBrief[] = [
       "4760c6b1",
       "attackers-exploited-microsoft-entra-connect-health-7d5536",
       "attackers-exploited-microsoft-entra-connect-health-flaw-to-a"
+    ]
+  },
+  {
+    "slug": "ai-driven-breach-exposes-over-1-million-records-16a5e138",
+    "title": "AI-Driven Breach Exposes Over 1 Million Records",
+    "summary": "Chinese-speaking hackers leveraged an AI testing tool to autonomously breach ten organizations between August and September 2026, exposing over one million personal records from a single victim. The tool performed most attack steps, with operators only specifying targets, indicating a low-effort exploitation chain. Affected entities should conduct forensic investigations, strengthen access controls, and notify impacted individuals per regulatory requirements.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-autonomous-ai/",
+    "publishedAt": "2026-11-23T10:27:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-driven-breach-exposes-over-1-million-records",
+      "article-16a5e138",
+      "16a5e138",
+      "ai-driven-breach-exposes-over-1-million-records-7b8b24"
     ]
   },
   {
@@ -603,6 +676,25 @@ export const news: NewsBrief[] = [
       "article-eaf8d87e",
       "eaf8d87e",
       "curl-receives-moderate-security-update-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-publishes-important-xdg-desktop-portal-pat-470d747d",
+    "title": "Red Hat Publishes Important xdg-desktop-portal Patch",
+    "summary": "Red Hat released an important security update for the xdg-desktop-portal component on RHEL 9, addressing multiple vulnerabilities each with a CVSS base score listed in the CVE references. The update mitigates potential privilege escalation and information disclosure risks that could be exploited via desktop portal interfaces. Red Hat recommends applying the patch promptly to ensure desktop security compliance.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102179",
+    "publishedAt": "2026-11-23T04:13:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-publishes-important-xdg-desktop-portal-pat",
+      "article-470d747d",
+      "470d747d",
+      "red-hat-publishes-important-xdg-desktop-portal-pat-2ee15b",
+      "red-hat-publishes-important-xdg-desktop-portal-patch"
     ]
   },
   {
@@ -9508,138 +9600,6 @@ export const news: NewsBrief[] = [
       "article-8ef719c2",
       "8ef719c2",
       "usn-9153-1-cloud-init-vulnerability-7e7953"
-    ]
-  },
-  {
-    "slug": "f5-and-cloud-providers-patch-critical-nginx-http-2-907bc7c6",
-    "title": "F5 and Cloud Providers Patch Critical NGINX HTTP/2 Flaws",
-    "summary": "F5 Networks and cloud providers issued critical security advisories addressing multiple vulnerabilities in open-source NGINX and NGINX Plus. Tracked under CVE-2026-123007 and CVE-2026-123633, the HTTP/2 flaws allow unauthenticated remote attackers to trigger code execution and denial-of-service conditions via malformed requests. Administrators must immediately apply the latest upstream NGINX updates and deploy vendor mitigations to prevent exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174",
-    "publishedAt": "2026-11-18T19:02:27.000Z",
-    "cves": [
-      "CVE-2026-123633",
-      "CVE-2026-123007",
-      "CVE-2026-123634",
-      "CVE-2026-113425",
-      "CVE-2026-121810",
-      "CVE-2026-118899"
-    ],
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/nginx2root-nginx-vulnerabilities/"
-      },
-      {
-        "source": "AWS Security Bulletins",
-        "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-192-aws/"
-      }
-    ],
-    "aliases": [
-      "f5-and-cloud-providers-patch-critical-nginx-http-2",
-      "article-907bc7c6",
-      "907bc7c6",
-      "f5-and-cloud-providers-patch-critical-nginx-http-2-3f3de0",
-      "f5-and-cloud-providers-patch-critical-nginx-http-2-flaws"
-    ]
-  },
-  {
-    "slug": "senators-push-white-house-ai-cyber-defense-initiat-e388310a",
-    "title": "Senators Push White House AI Cyber Defense Initiative",
-    "summary": "Bipartisan senators urged the White House to launch a national initiative to strengthen defenses against AI-enabled cyber threats. The call follows recent incidents where adversaries leveraged generative AI to craft sophisticated phishing and malware campaigns. Stakeholders should monitor emerging AI threat frameworks and collaborate with federal agencies to develop mitigation guidelines.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ai-cyber-white-house",
-    "publishedAt": "2026-11-18T19:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "senators-push-white-house-ai-cyber-defense-initiat",
-      "article-e388310a",
-      "e388310a",
-      "senators-push-white-house-ai-cyber-defense-initiat-3c0ebb",
-      "senators-push-white-house-ai-cyber-defense-initiative"
-    ]
-  },
-  {
-    "slug": "chrome-early-stable-desktop-update-released-c4ac022c",
-    "title": "Chrome Early Stable Desktop Update Released",
-    "summary": "Google Chrome released an early stable update for desktop platforms, version 159.0.8154.13/.14, targeting Windows and Mac users. The update includes minor bug fixes and performance improvements, with a full change log available in the release notes. Users are encouraged to install the update via the browser's update mechanism; no security patches are addressed in this release.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop_01707050408.html",
-    "publishedAt": "2026-11-18T18:58:35.648Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-early-stable-desktop-update-released",
-      "article-c4ac022c",
-      "c4ac022c",
-      "chrome-early-stable-desktop-update-released-70d958"
-    ]
-  },
-  {
-    "slug": "nginx-http-2-flaw-enables-unauthenticated-remote-c-96906100",
-    "title": "NGINX HTTP/2 Flaw Enables Unauthenticated Remote Code Execution",
-    "summary": "A decade-old vulnerability in NGINX's HTTP/2 implementation (CVE-2026-123007) allows unauthenticated attackers to execute arbitrary code on servers with HTTP/2 enabled. The flaw, present since version 1.9.5, stems from improper handling of HTTP/2 frames leading to memory corruption and unauthenticated remote code execution. F5 released patched versions 1.31.9 and 1.30.7; administrators must upgrade immediately to mitigate exploitation risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
-    "publishedAt": "2026-11-18T18:31:17.000Z",
-    "cves": [
-      "CVE-2026-123007"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "nginx-http-2-flaw-enables-unauthenticated-remote-c",
-      "article-96906100",
-      "96906100",
-      "nginx-http-2-flaw-enables-unauthenticated-remote-c-2def97",
-      "nginx-http-2-flaw-enables-unauthenticated-remote-code-execut"
-    ]
-  },
-  {
-    "slug": "chrome-beta-desktop-update-released-e6aa2faa",
-    "title": "Chrome Beta Desktop Update Released",
-    "summary": "Google Chrome updated its Beta channel to version 159.0.8154.13 for Windows, Mac, and Linux desktop users. The release contains incremental bug fixes and stability improvements, with a partial change log posted in the Git log. Users should update via the browser's update settings; no critical security patches are included currently.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_01411055938.html",
-    "publishedAt": "2026-11-18T18:28:33.180Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-beta-desktop-update-released",
-      "article-e6aa2faa",
-      "e6aa2faa",
-      "chrome-beta-desktop-update-released-3a467f"
-    ]
-  },
-  {
-    "slug": "cve-2026-130638-path-traversal-in-the-object-detec-16072b1a",
-    "title": "CVE-2026-130638 - Path traversal in the object detection dataset preparation tool in AutoGluon MultiModal",
-    "summary": "Bulletin ID: 2026-188-AWS Publication Date: 11/18/2026 10:00 AM PST Description: Relative path traversal in the object detection dataset preparation tool in AutoGluon Multimodal before 1.6.0 might allow adversary-in-the-middle attackers to write arbitrary files with the privileges of the user running the tool via a crafted dataset archive substituted for a dataset downloaded over plaintext HTTP.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-188-aws/",
-    "publishedAt": "2026-11-18T18:18:11.000Z",
-    "cves": [
-      "CVE-2026-130638"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-130638-path-traversal-in-the-object-detec",
-      "article-16072b1a",
-      "16072b1a",
-      "cve-2026-130638-path-traversal-in-the-object-detec-936eef",
-      "cve-2026-130638-path-traversal-in-the-object-detection-datas"
     ]
   }
 ];

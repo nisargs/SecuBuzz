@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 10:45:20 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 11:46:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CrowdStrike to Acquire Zscaler for $43.9B</title>
+      <link>https://secubuzz.com/news/crowdstrike-to-acquire-zscaler-for-43-9b-c33d0a4d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-to-acquire-zscaler-for-43-9b-c33d0a4d</guid>
+      <description><![CDATA[CrowdStrike announced a $43.9 billion acquisition of Zscaler, aiming to combine their security platforms and generate over $10 billion in annual recurring revenue. The deal positions CrowdStrike as a leading provider of integrated cloud-native security services, expanding its market reach across identity, network, and application layers.]]></description>
+      <pubDate>Mon, 23 Nov 2026 11:31:44 GMT</pubDate>
+      <source url="https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Low-Impact edk2 Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-low-impact-edk2-update-60cab848</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-low-impact-edk2-update-60cab848</guid>
+      <description><![CDATA[Red Hat released a low-impact update for the edk2 firmware component on RHEL 8.4 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The update addresses multiple security issues, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Red Hat recommends applying the update immediately to maintain system integrity.]]></description>
+      <pubDate>Mon, 23 Nov 2026 11:30:42 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102278">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102253: Important: kernel security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102253-important-kernel-security-bug-fix-0d07fd6a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102253-important-kernel-security-bug-fix-0d07fd6a</guid>
+      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 23 Nov 2026 11:14:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102253">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Attackers exploited Microsoft Entra Connect Health flaw to access tenant data</title>
       <link>https://secubuzz.com/news/attackers-exploited-microsoft-entra-connect-health-4760c6b1</link>
@@ -15,6 +42,15 @@
       <pubDate>Mon, 23 Nov 2026 10:34:01 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/23/microsoft-entra-connect-health-vulnerability-tenant-data/">Help Net Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI-Driven Breach Exposes Over 1 Million Records</title>
+      <link>https://secubuzz.com/news/ai-driven-breach-exposes-over-1-million-records-16a5e138</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-breach-exposes-over-1-million-records-16a5e138</guid>
+      <description><![CDATA[Chinese-speaking hackers leveraged an AI testing tool to autonomously breach ten organizations between August and September 2026, exposing over one million personal records from a single victim. The tool performed most attack steps, with operators only specifying targets, indicating a low-effort exploitation chain. Affected entities should conduct forensic investigations, strengthen access controls, and notify impacted individuals per regulatory requirements.]]></description>
+      <pubDate>Mon, 23 Nov 2026 10:27:37 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-autonomous-ai/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Critical ASP.NET AntiCsrf Flaw Enables Remote Code Execution Without Authentication</title>
@@ -296,6 +332,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Publishes Important xdg-desktop-portal Patch</title>
+      <link>https://secubuzz.com/news/red-hat-publishes-important-xdg-desktop-portal-pat-470d747d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-publishes-important-xdg-desktop-portal-pat-470d747d</guid>
+      <description><![CDATA[Red Hat released an important security update for the xdg-desktop-portal component on RHEL 9, addressing multiple vulnerabilities each with a CVSS base score listed in the CVE references. The update mitigates potential privilege escalation and information disclosure risks that could be exploited via desktop portal interfaces. Red Hat recommends applying the patch promptly to ensure desktop security compliance.]]></description>
+      <pubDate>Mon, 23 Nov 2026 04:13:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102179">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Issues .NET 8.0 Security Update</title>
       <link>https://secubuzz.com/news/red-hat-issues-net-8-0-security-update-480ca2aa</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-net-8-0-security-update-480ca2aa</guid>
@@ -410,51 +455,6 @@
       <description><![CDATA[Red Enterprise Linux 7 Extended Lifecycle Support users face a qemu-kvm-ma flaw that may enable local privilege escalation via the virtual machine monitor. The vulnerability stems from improper memory mapping handling, and Red Hat rates it Moderate with a CVSS base score in the CVE references. Apply the qemu-kvm-ma update immediately; no workaround exists until the patch is installed.]]></description>
       <pubDate>Mon, 23 Nov 2026 03:24:40 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102196">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GNOME Remote Desktop Vulnerability Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/gnome-remote-desktop-vulnerability-enables-remote-ae144d19</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gnome-remote-desktop-vulnerability-enables-remote-ae144d19</guid>
-      <description><![CDATA[Red Enterprise Linux 9.8 Extended Update Support users face a gnome-remote-desktop flaw that permits remote code execution via the remote desktop protocol. The issue arises from unchecked input during session negotiation, and Red Hat rates it Important with a CVSS base score in the CVE references. Apply the gnome-remote-desktop update immediately; no workaround exists until the patch is installed.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:22:25 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102169">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Security Update for xdg-desktop-portal</title>
-      <link>https://secubuzz.com/news/red-hat-issues-security-update-for-xdg-desktop-por-4ae5111b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-security-update-for-xdg-desktop-por-4ae5111b</guid>
-      <description><![CDATA[Red Hat released a security update for the xdg-desktop-portal component in Red Enterprise Linux 10, addressing multiple vulnerabilities. The update mitigates flaws that could allow privilege escalation or unauthorized data access, with CVSS scores provided in the CVE references. Administrators should apply the RHSA-2026:102177 update immediately to ensure protection against the identified weaknesses.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:15:20 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102177">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Volkswagen Cars Exposed via Bluetooth Spy Flaws</title>
-      <link>https://secubuzz.com/news/volkswagen-cars-exposed-via-bluetooth-spy-flaws-1dfe3aed</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/volkswagen-cars-exposed-via-bluetooth-spy-flaws-1dfe3aed</guid>
-      <description><![CDATA[Researchers demonstrated that Bluetooth flaws in Volkswagen vehicles enable eavesdropping on conversations and GPS tracking. The flaws grant unauthorized cabin control and location access, exposing private data and enabling remote manipulation, with a 16-month exposure after disclosure. Volkswagen should expedite the release of a patch and advise owners to disable Bluetooth or apply the fix immediately to mitigate the risk.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:09:11 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hack-volkswagen-cars-via-bluetooth/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OpenAI Finds Zero-Day Mobile OS Bypass and RCE</title>
-      <link>https://secubuzz.com/news/openai-finds-zero-day-mobile-os-bypass-and-rce-808117f3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-finds-zero-day-mobile-os-bypass-and-rce-808117f3</guid>
-      <description><![CDATA[OpenAI’s GPT-6.2 Astra discovered zero-day flaws in a popular mobile OS and a common network service. The flaws include a permission-bypass exposing private data and a remote code execution path reachable from a low-privileged role. No vendor patch is yet available; security teams should monitor OpenAI advisories and apply any future OS or service updates promptly.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:06:27 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/openai-gpt-6-2-astra-0-day-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates mingw-expat for RHEL8</title>
-      <link>https://secubuzz.com/news/red-hat-updates-mingw-expat-for-rhel8-88477b25</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-mingw-expat-for-rhel8-88477b25</guid>
-      <description><![CDATA[Red Hat released an Important security update for mingw-expat on Red Hat Enterprise Linux 8 to fix a kernel-related flaw. The flaw, cited in several CVE references, carries a CVSS base score indicating high severity, but no active exploitation has been reported. The vendor has made the patch available; administrators should apply it immediately to mitigate potential exploitation.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:06:20 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102193">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
