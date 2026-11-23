@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 12:45:48 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 13:39:51 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Tests Fix for Windows 11 Bluetooth Audio Drops</title>
+      <link>https://secubuzz.com/news/microsoft-tests-fix-for-windows-11-bluetooth-audio-654313d2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-tests-fix-for-windows-11-bluetooth-audio-654313d2</guid>
+      <description><![CDATA[Microsoft is testing a fix for a long-standing Windows 11 Bluetooth audio quality drop affecting headphone users. The issue stems from an audio driver mis-handling of Bluetooth codec parameters, causing significant degradation but lacking remote code execution or data exfiltration. Microsoft has released a test build; users should install the forthcoming update once available to restore audio fidelity.]]></description>
+      <pubDate>Mon, 23 Nov 2026 13:28:45 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>iTerm2 Remote Code Execution Flaw Lets Hackers Run Malicious Commands by Displaying Crafted Files</title>
+      <link>https://secubuzz.com/news/iterm2-remote-code-execution-flaw-lets-hackers-run-1a5ec94c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/iterm2-remote-code-execution-flaw-lets-hackers-run-1a5ec94c</guid>
+      <description><![CDATA[A security flaw in iTerm2, a macOS terminal emulator, lets attackers run commands when a user displays a specially crafted file in a vulnerable terminal session. The user does not have to run the file as a script or paste a command supplied by the attacker.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:57:36 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/iterm2-remote-code-execution-flaw/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>FBI Investigates National Crime Information Center Breach</title>
+      <link>https://secubuzz.com/news/fbi-investigates-national-crime-information-center-f4698ddc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-investigates-national-crime-information-center-f4698ddc</guid>
+      <description><![CDATA[A breach of the FBI’s National Crime Information Center has been reported, prompting an investigation by the agency. The incident potentially exposes sensitive criminal records and investigative data, though the extent of compromised information remains unverified. FBI officials advise affected stakeholders to monitor for unauthorized disclosures and to implement enhanced monitoring of internal access controls.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:57:11 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/11/fbi-crime-database-reportedly-hacked">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>CrowdStrike Agrees to Acquire Zscaler for $43.9B</title>
+      <link>https://secubuzz.com/news/crowdstrike-agrees-to-acquire-zscaler-for-43-9b-c119f8ab</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-agrees-to-acquire-zscaler-for-43-9b-c119f8ab</guid>
+      <description><![CDATA[CrowdStrike announced an all-stock acquisition of Zscaler valued at approximately $43.9 billion, creating a combined cloud-security entity. The deal grants each Zscaler share 1.135 CrowdStrike shares, implying a premium of roughly 34 % over Zscaler’s closing price. Post-closing, CrowdStrike shareholders will own about 84.1 % of the merged publicly company, pending regulatory approvals.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:41:18 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/23/crowdstrike-zscaler-43-9-billion-acquisition/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ScreenConnect CVE-2026-84869 Enables MSP Technician Hijack</title>
+      <link>https://secubuzz.com/news/screenconnect-cve-2026-84869-enables-msp-technicia-884b5434</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-cve-2026-84869-enables-msp-technicia-884b5434</guid>
+      <description><![CDATA[Threat actors exploited a patched flaw in ConnectWise ScreenConnect, identified as CVE-2026-84869, to hijack managed service provider technician workstations. The CVSS 9.9 score marks it as a critical unauthenticated RCE that lets a guest transfer and execute malicious payloads. ConnectWise issued an emergency patch; administrators must apply it immediately and limit guest access to prevent exploitation.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:41:04 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>N-Able Exposes CVE-2026-134624 SSRF in Mail Assure</title>
+      <link>https://secubuzz.com/news/n-able-exposes-cve-2026-134624-ssrf-in-mail-assure-2650ac11</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-exposes-cve-2026-134624-ssrf-in-mail-assure-2650ac11</guid>
+      <description><![CDATA[N-Able disclosed a critical SSRF flaw, CVE-2026-134624, discovered during an investigation of its Mail Assure and SpamExperts Hosted Cloud breach. The vulnerability permits a high-privilege API user to open connections to arbitrary internal systems, enabling potential lateral movement. N-Able recommends applying the vendor patch immediately and restricting API access to mitigate exploitation risks.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:28:09 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Red Hat Issues libXrender Security Update</title>
       <link>https://secubuzz.com/news/red-hat-issues-libxrender-security-update-47c1eed1</link>
@@ -24,6 +78,51 @@
       <pubDate>Mon, 23 Nov 2026 12:13:37 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102283">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases libXrender Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-libxrender-security-update-89fe55ea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-libxrender-security-update-89fe55ea</guid>
+      <description><![CDATA[Red Hat released a security update for libXrender on Enterprise Linux 8.8, addressing multiple vulnerabilities rated as Important. The update includes patches for CVEs referenced in the advisory, each with a CVSS base score that informs the severity. Administrators should apply the update promptly and verify that libXrender is at the latest patched version to maintain system integrity.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:12:32 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102281">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102288: Important: Red Hat AMQ Broker 7.14.2 release and security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102288-important-red-hat-amq-broker-7-14-07642452</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102288-important-red-hat-amq-broker-7-14-07642452</guid>
+      <description><![CDATA[Red Hat AMQ Broker 7.14.2 is now available from the Red Hat Customer Portal. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:11:06 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102288">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Peruvian Call Center Operator Sentenced to Eight Years</title>
+      <link>https://secubuzz.com/news/peruvian-call-center-operator-sentenced-to-eight-y-a9926847</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/peruvian-call-center-operator-sentenced-to-eight-y-a9926847</guid>
+      <description><![CDATA[A Peruvian call-center operator received an eight-year sentence for facilitating a government-impersonation fraud that targeted over 30,000 Spanish-speaking U.S. residents. The scheme used deceptive calls to coerce victims into revealing personal data, leading to millions of dollars stolen. The conviction highlights the legal consequences for individuals aiding such fraud operations.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:02:23 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Cisco Expressway CVE-2026-76466 Enables Root Access</title>
+      <link>https://secubuzz.com/news/cisco-expressway-cve-2026-76466-enables-root-acces-14bf608a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-expressway-cve-2026-76466-enables-root-acces-14bf608a</guid>
+      <description><![CDATA[Attackers are exploiting Cisco Expressway’s critical flaw, CVE-2026-76466, to gain root access and infiltrate internal networks. The vulnerability, confirmed by F6 researchers, allows unauthenticated remote code execution with a public PoC, posing a severe enterprise risk. Cisco has issued a patch; administrators must apply it immediately and verify device integrity to prevent exploitation.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:02:15 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-exploit-critical-cisco-expressway-flaw/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Essay Argues AI Lacks Legal Rights</title>
+      <link>https://secubuzz.com/news/essay-argues-ai-lacks-legal-rights-81502dc3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/essay-argues-ai-lacks-legal-rights-81502dc3</guid>
+      <description><![CDATA[Character.AI petitioned a court to dismiss a death suit, claiming chatbot’s speech was protected and the company was a service, not a product. Judge Anne Conway rejected both arguments in May 2025, holding that the chatbot’s content could be subject to product-liability law. The ruling underscores the debate over AI accountability and limits of First Amendment protections for machine-generated speech.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:00:54 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/11/humans-have-rights-machines-do-not.html">Schneier on Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>BadBox 3.0 Ad Fraud Operation Disrupted</title>
@@ -71,6 +170,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>GL.iNet Cloud Flaw Enables Malware on Routers</title>
+      <link>https://secubuzz.com/news/gl-inet-cloud-flaw-enables-malware-on-routers-e0f4f497</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gl-inet-cloud-flaw-enables-malware-on-routers-e0f4f497</guid>
+      <description><![CDATA[A flaw in GL.iNet’s cloud remote-management service granted attackers unauthorized access to routers and KVM devices, allowing malware and backdoor installation. The vulnerability, discovered on November 20 2026, was patched by GL.iNet, but affected devices still need a firmware update to eliminate the risk. Security teams should verify firmware versions and apply the latest update; no additional workarounds are documented.]]></description>
+      <pubDate>Mon, 23 Nov 2026 10:45:32 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-exploit-gl-inet-cloud-flaw/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Attackers exploited Microsoft Entra Connect Health flaw to access tenant data</title>
       <link>https://secubuzz.com/news/attackers-exploited-microsoft-entra-connect-health-4760c6b1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploited-microsoft-entra-connect-health-4760c6b1</guid>
@@ -104,15 +212,6 @@
       <description><![CDATA[Red Hat released a critical webkit2gtk3 security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support. The update fixes multiple vulnerabilities, each with a CVSS base score in the CVE references, and is rated Important. Apply the update promptly today to prevent exploitation of the affected webkit2gtk3 components.]]></description>
       <pubDate>Mon, 23 Nov 2026 10:00:53 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102248">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat releases libXrender security update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-libxrender-security-update-0608137a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-libxrender-security-update-0608137a</guid>
-      <description><![CDATA[Red Hat released a critical libXrender security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support. The update addresses multiple vulnerabilities, each with a CVSS base score in the CVE references, and is rated Important. Apply the update promptly today to mitigate exploitation of the affected libXrender components.]]></description>
-      <pubDate>Mon, 23 Nov 2026 09:50:18 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102245">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -341,120 +440,21 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>RHSA-2026:102178: Important: xdg-desktop-portal security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102178-important-xdg-desktop-portal-secu-14a0b22d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102178-important-xdg-desktop-portal-secu-14a0b22d</guid>
-      <description><![CDATA[An update for xdg-desktop-portal is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 23 Nov 2026 04:54:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102178">Red Hat Security Advisories</source>
+      <title>Flatpak Update Addresses Important Security Flaw</title>
+      <link>https://secubuzz.com/news/flatpak-update-addresses-important-security-flaw-fbdc29fb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/flatpak-update-addresses-important-security-flaw-fbdc29fb</guid>
+      <description><![CDATA[Red Hat released a security update for Flatpak on Red Hat Enterprise Linux 9, addressing an important vulnerability in the container runtime. The advisory notes the flaw’s importance but does not list a CVE identifier; CVSS base scores are provided in the references. Apply the Flatpak update promptly; no further mitigations are required.]]></description>
+      <pubDate>Mon, 23 Nov 2026 05:04:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102181">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>RHSA-2026:102190: Moderate: openssh security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102190-moderate-openssh-security-update-72816923</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102190-moderate-openssh-security-update-72816923</guid>
-      <description><![CDATA[An update for openssh is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 23 Nov 2026 04:45:41 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102190">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Fence-Agents Receives Important Security Update</title>
-      <link>https://secubuzz.com/news/fence-agents-receives-important-security-update-561939fb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fence-agents-receives-important-security-update-561939fb</guid>
-      <description><![CDATA[Red Hat released an Important security update for the fence-agents package on RHEL 8. The update addresses multiple vulnerabilities that could allow privilege escalation or denial of service, as indicated by the CVSS scores linked in the advisory. Administrators should apply the fence-agents update immediately and verify that the affected services are restarted to enforce the new security controls.]]></description>
-      <pubDate>Mon, 23 Nov 2026 04:41:06 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102154">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Matilda Sells Claimed VMware vCenter Exploit</title>
-      <link>https://secubuzz.com/news/matilda-sells-claimed-vmware-vcenter-exploit-3411243b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/matilda-sells-claimed-vmware-vcenter-exploit-3411243b</guid>
-      <description><![CDATA[A forum seller named Matilda is offering a claimed exploit for VMware vCenter Server, targeting CVE-2026-123890. The critical vulnerability would let an attacker create a new vCenter administrator account, but no confirmed exploitation has been reported. Broadcom issued a patch on November 19, 2026; administrators should apply it immediately to mitigate the risk.]]></description>
-      <pubDate>Mon, 23 Nov 2026 04:30:26 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/alleged-vmware-vcenter-0-day-exploit/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Curl Receives Moderate Security Update</title>
-      <link>https://secubuzz.com/news/curl-receives-moderate-security-update-eaf8d87e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/curl-receives-moderate-security-update-eaf8d87e</guid>
-      <description><![CDATA[Red Hat issued a Moderate security update for the curl package on RHEL 8. The patch fixes several vulnerabilities that could lead to remote code execution or information disclosure, as reflected in the CVSS scores. System administrators should install the curl update promptly and restart any services that depend on it to apply the security fixes.]]></description>
-      <pubDate>Mon, 23 Nov 2026 04:16:45 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102194">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Publishes Important xdg-desktop-portal Patch</title>
-      <link>https://secubuzz.com/news/red-hat-publishes-important-xdg-desktop-portal-pat-470d747d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-publishes-important-xdg-desktop-portal-pat-470d747d</guid>
-      <description><![CDATA[Red Hat released an important security update for the xdg-desktop-portal component on RHEL 9, addressing multiple vulnerabilities each with a CVSS base score listed in the CVE references. The update mitigates potential privilege escalation and information disclosure risks that could be exploited via desktop portal interfaces. Red Hat recommends applying the patch promptly to ensure desktop security compliance.]]></description>
-      <pubDate>Mon, 23 Nov 2026 04:13:05 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102179">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues .NET 8.0 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-net-8-0-security-update-480ca2aa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-net-8-0-security-update-480ca2aa</guid>
-      <description><![CDATA[Red Hat issued a security update for .NET 8.0 on RHEL 10.2 Extended Update Support, addressing several platform vulnerabilities. The update is rated Important, with CVSS base scores for each flaw listed via CVE links in the references, indicating high-severity risk if left unpatched. Red Hat urges immediate installation of the update and verification of CVSS scores to prioritize remediation.]]></description>
-      <pubDate>Mon, 23 Nov 2026 04:12:51 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102173">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat releases openssh security update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-openssh-security-update-a1367179</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-openssh-security-update-a1367179</guid>
-      <description><![CDATA[Red Hat released a critical openssh security update for RHEL 10, addressing several bugs and enhancements. The update fixes multiple critical vulnerabilities, each with a CVSS base score in the CVE references, and is rated Moderate. Apply the update promptly today to mitigate potential exploitation of the affected openssh components.]]></description>
-      <pubDate>Mon, 23 Nov 2026 04:12:41 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102195">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHEL 9 Thunderbird Update Fixes Code Execution Flaws</title>
-      <link>https://secubuzz.com/news/rhel-9-thunderbird-update-fixes-code-execution-fla-a05946fa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhel-9-thunderbird-update-fixes-code-execution-fla-a05946fa</guid>
-      <description><![CDATA[Red Hat issued an important security update for Thunderbird on RHEL 9, fixing vulnerabilities that could lead to memory corruption or arbitrary code execution. The patch addresses CVE-linked defects with a CVSS score in the moderate range, and no active exploitation has been observed. Users should install RHSA-2026:102170 promptly to secure their mail clients.]]></description>
-      <pubDate>Mon, 23 Nov 2026 04:11:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102170">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHEL 8 xdg-desktop-portal Update Addresses Privilege Escalation</title>
-      <link>https://secubuzz.com/news/rhel-8-xdg-desktop-portal-update-addresses-privile-99bd95c4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhel-8-xdg-desktop-portal-update-addresses-privile-99bd95c4</guid>
-      <description><![CDATA[Red Hat released an important security update for xdg-desktop-portal on RHEL 8, addressing multiple vulnerabilities that could allow privilege escalation or code execution. The update includes patches for CVE-linked flaws, with a CVSS base score indicating moderate to high risk, but no active exploitation reported. Security teams should apply the RHSA-2026:102175 update immediately to mitigate potential attacks.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:45:30 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102175">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel Security Update for RHEL6</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel6-34a6796a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel6-34a6796a</guid>
-      <description><![CDATA[A kernel vulnerability affecting Red Hat Enterprise Linux 6 Extended Lifecycle Support prompted an Important security update. The flaw, detailed in multiple CVE references, carries a CVSS base score indicating significant risk, but no active exploitation has been reported. Red Hat has released the patch; administrators should apply the update immediately to mitigate potential exploitation.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:44:25 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102182">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Thunderbird Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-thunderbird-security-update-028c3c47</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-thunderbird-security-update-028c3c47</guid>
-      <description><![CDATA[An Important security update for Thunderbird on Red Hat Enterprise Linux 8 addresses a kernel-level vulnerability. The vulnerability, referenced by multiple CVE entries, has a CVSS base score reflecting high risk, though no active exploitation has been observed. Red Hat has issued the patch; users are advised to install it promptly to prevent potential compromise.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:41:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102172">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates libgsf for Security</title>
-      <link>https://secubuzz.com/news/red-hat-updates-libgsf-for-security-50f93d6e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-libgsf-for-security-50f93d6e</guid>
-      <description><![CDATA[Red Hat released a security update for libgsf on RHEL 10.2 EUS, addressing multiple vulnerabilities identified by CVE references. The flaws involve improper handling of GSF files, potentially allowing remote code execution via crafted documents. Red Hat has issued a patch; administrators should apply the update immediately to mitigate exploitation.]]></description>
-      <pubDate>Mon, 23 Nov 2026 03:35:40 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102162">Red Hat Security Advisories</source>
+      <title>Thunderbird Update Fixes Important Security Flaw</title>
+      <link>https://secubuzz.com/news/thunderbird-update-fixes-important-security-flaw-1fd8558b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/thunderbird-update-fixes-important-security-flaw-1fd8558b</guid>
+      <description><![CDATA[A security update for Thunderbird on Red Hat Enterprise Linux 9.8 EUS addresses an important vulnerability affecting the email client. The flaw, rated Important by Red Hat Product Security, lacks a publicly disclosed CVE identifier but is documented with CVSS base scores in the advisory references. Red Hat recommends applying the update immediately; no additional workarounds are specified.]]></description>
+      <pubDate>Mon, 23 Nov 2026 04:55:08 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102171">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

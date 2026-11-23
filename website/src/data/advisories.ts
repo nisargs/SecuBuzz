@@ -1459,9 +1459,9 @@ export const advisories: Advisory[] = [
     "name": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
     "dateAdded": "2026-11-18",
     "dueDate": "2026-11-21",
-    "severity": "High",
+    "severity": "Critical",
     "cwe": "CWE-116",
-    "ransomware": false,
+    "ransomware": true,
     "description": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
     "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
     "references": [

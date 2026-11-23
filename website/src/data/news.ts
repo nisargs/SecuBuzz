@@ -11,6 +11,122 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-tests-fix-for-windows-11-bluetooth-audio-654313d2",
+    "title": "Microsoft Tests Fix for Windows 11 Bluetooth Audio Drops",
+    "summary": "Microsoft is testing a fix for a long-standing Windows 11 Bluetooth audio quality drop affecting headphone users. The issue stems from an audio driver mis-handling of Bluetooth codec parameters, causing significant degradation but lacking remote code execution or data exfiltration. Microsoft has released a test build; users should install the forthcoming update once available to restore audio fidelity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/",
+    "publishedAt": "2026-11-23T13:28:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-tests-fix-for-windows-11-bluetooth-audio",
+      "article-654313d2",
+      "654313d2",
+      "microsoft-tests-fix-for-windows-11-bluetooth-audio-2318cc",
+      "microsoft-tests-fix-for-windows-11-bluetooth-audio-drops"
+    ]
+  },
+  {
+    "slug": "iterm2-remote-code-execution-flaw-lets-hackers-run-1a5ec94c",
+    "title": "iTerm2 Remote Code Execution Flaw Lets Hackers Run Malicious Commands by Displaying Crafted Files",
+    "summary": "A security flaw in iTerm2, a macOS terminal emulator, lets attackers run commands when a user displays a specially crafted file in a vulnerable terminal session. The user does not have to run the file as a script or paste a command supplied by the attacker.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/iterm2-remote-code-execution-flaw/",
+    "publishedAt": "2026-11-23T12:57:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "iterm2-remote-code-execution-flaw-lets-hackers-run",
+      "article-1a5ec94c",
+      "1a5ec94c",
+      "iterm2-remote-code-execution-flaw-lets-hackers-run-78c586",
+      "iterm2-remote-code-execution-flaw-lets-hackers-run-malicious"
+    ]
+  },
+  {
+    "slug": "fbi-investigates-national-crime-information-center-f4698ddc",
+    "title": "FBI Investigates National Crime Information Center Breach",
+    "summary": "A breach of the FBI’s National Crime Information Center has been reported, prompting an investigation by the agency. The incident potentially exposes sensitive criminal records and investigative data, though the extent of compromised information remains unverified. FBI officials advise affected stakeholders to monitor for unauthorized disclosures and to implement enhanced monitoring of internal access controls.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/11/fbi-crime-database-reportedly-hacked",
+    "publishedAt": "2026-11-23T12:57:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-investigates-national-crime-information-center",
+      "article-f4698ddc",
+      "f4698ddc",
+      "fbi-investigates-national-crime-information-center-426861",
+      "fbi-investigates-national-crime-information-center-breach"
+    ]
+  },
+  {
+    "slug": "crowdstrike-agrees-to-acquire-zscaler-for-43-9b-c119f8ab",
+    "title": "CrowdStrike Agrees to Acquire Zscaler for $43.9B",
+    "summary": "CrowdStrike announced an all-stock acquisition of Zscaler valued at approximately $43.9 billion, creating a combined cloud-security entity. The deal grants each Zscaler share 1.135 CrowdStrike shares, implying a premium of roughly 34 % over Zscaler’s closing price. Post-closing, CrowdStrike shareholders will own about 84.1 % of the merged publicly company, pending regulatory approvals.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/crowdstrike-zscaler-43-9-billion-acquisition/",
+    "publishedAt": "2026-11-23T12:41:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-agrees-to-acquire-zscaler-for-43-9b",
+      "article-c119f8ab",
+      "c119f8ab",
+      "crowdstrike-agrees-to-acquire-zscaler-for-43-9b-75cdc5"
+    ]
+  },
+  {
+    "slug": "screenconnect-cve-2026-84869-enables-msp-technicia-884b5434",
+    "title": "ScreenConnect CVE-2026-84869 Enables MSP Technician Hijack",
+    "summary": "Threat actors exploited a patched flaw in ConnectWise ScreenConnect, identified as CVE-2026-84869, to hijack managed service provider technician workstations. The CVSS 9.9 score marks it as a critical unauthenticated RCE that lets a guest transfer and execute malicious payloads. ConnectWise issued an emergency patch; administrators must apply it immediately and limit guest access to prevent exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+    "publishedAt": "2026-11-23T12:41:04.000Z",
+    "cves": [
+      "CVE-2026-84869"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "screenconnect-cve-2026-84869-enables-msp-technicia",
+      "article-884b5434",
+      "884b5434",
+      "screenconnect-cve-2026-84869-enables-msp-technicia-1e79ee",
+      "screenconnect-cve-2026-84869-enables-msp-technician-hijack"
+    ]
+  },
+  {
+    "slug": "n-able-exposes-cve-2026-134624-ssrf-in-mail-assure-2650ac11",
+    "title": "N-Able Exposes CVE-2026-134624 SSRF in Mail Assure",
+    "summary": "N-Able disclosed a critical SSRF flaw, CVE-2026-134624, discovered during an investigation of its Mail Assure and SpamExperts Hosted Cloud breach. The vulnerability permits a high-privilege API user to open connections to arbitrary internal systems, enabling potential lateral movement. N-Able recommends applying the vendor patch immediately and restricting API access to mitigate exploitation risks.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+    "publishedAt": "2026-11-23T12:28:09.000Z",
+    "cves": [
+      "CVE-2026-134624"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-exposes-cve-2026-134624-ssrf-in-mail-assure",
+      "article-2650ac11",
+      "2650ac11",
+      "n-able-exposes-cve-2026-134624-ssrf-in-mail-assure-530267"
+    ]
+  },
+  {
     "slug": "red-hat-issues-libxrender-security-update-47c1eed1",
     "title": "Red Hat Issues libXrender Security Update",
     "summary": "Red Hat released an important security update for libXrender on RHEL 7 Extended Lifecycle Support. The update addresses one or more vulnerabilities with CVSS scores available via linked CVE references, though specific IDs are not listed. Apply the libXrender update immediately, promptly, and follow Red Hat advisories for installation guidance.",
@@ -44,6 +160,101 @@ export const news: NewsBrief[] = [
       "article-29d2cee6",
       "29d2cee6",
       "red-hat-issues-librabbitmq-security-update-2ee15f"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-libxrender-security-update-89fe55ea",
+    "title": "Red Hat Releases libXrender Security Update",
+    "summary": "Red Hat released a security update for libXrender on Enterprise Linux 8.8, addressing multiple vulnerabilities rated as Important. The update includes patches for CVEs referenced in the advisory, each with a CVSS base score that informs the severity. Administrators should apply the update promptly and verify that libXrender is at the latest patched version to maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102281",
+    "publishedAt": "2026-11-23T12:12:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-libxrender-security-update",
+      "article-89fe55ea",
+      "89fe55ea",
+      "red-hat-releases-libxrender-security-update-2ee15f"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102288-important-red-hat-amq-broker-7-14-07642452",
+    "title": "RHSA-2026:102288: Important: Red Hat AMQ Broker 7.14.2 release and security update",
+    "summary": "Red Hat AMQ Broker 7.14.2 is now available from the Red Hat Customer Portal. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102288",
+    "publishedAt": "2026-11-23T12:11:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102288-important-red-hat-amq-broker-7-14",
+      "article-07642452",
+      "07642452",
+      "rhsa-2026-102288-important-red-hat-amq-broker-7-14-2ee15f",
+      "rhsa-2026-102288-important-red-hat-amq-broker-7-14-2-release"
+    ]
+  },
+  {
+    "slug": "peruvian-call-center-operator-sentenced-to-eight-y-a9926847",
+    "title": "Peruvian Call Center Operator Sentenced to Eight Years",
+    "summary": "A Peruvian call-center operator received an eight-year sentence for facilitating a government-impersonation fraud that targeted over 30,000 Spanish-speaking U.S. residents. The scheme used deceptive calls to coerce victims into revealing personal data, leading to millions of dollars stolen. The conviction highlights the legal consequences for individuals aiding such fraud operations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
+    "publishedAt": "2026-11-23T12:02:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "peruvian-call-center-operator-sentenced-to-eight-y",
+      "article-a9926847",
+      "a9926847",
+      "peruvian-call-center-operator-sentenced-to-eight-y-1172be",
+      "peruvian-call-center-operator-sentenced-to-eight-years"
+    ]
+  },
+  {
+    "slug": "cisco-expressway-cve-2026-76466-enables-root-acces-14bf608a",
+    "title": "Cisco Expressway CVE-2026-76466 Enables Root Access",
+    "summary": "Attackers are exploiting Cisco Expressway’s critical flaw, CVE-2026-76466, to gain root access and infiltrate internal networks. The vulnerability, confirmed by F6 researchers, allows unauthenticated remote code execution with a public PoC, posing a severe enterprise risk. Cisco has issued a patch; administrators must apply it immediately and verify device integrity to prevent exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-critical-cisco-expressway-flaw/",
+    "publishedAt": "2026-11-23T12:02:15.000Z",
+    "cves": [
+      "CVE-2026-76466"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-expressway-cve-2026-76466-enables-root-acces",
+      "article-14bf608a",
+      "14bf608a",
+      "cisco-expressway-cve-2026-76466-enables-root-acces-2b8cb0",
+      "cisco-expressway-cve-2026-76466-enables-root-access"
+    ]
+  },
+  {
+    "slug": "essay-argues-ai-lacks-legal-rights-81502dc3",
+    "title": "Essay Argues AI Lacks Legal Rights",
+    "summary": "Character.AI petitioned a court to dismiss a death suit, claiming chatbot’s speech was protected and the company was a service, not a product. Judge Anne Conway rejected both arguments in May 2025, holding that the chatbot’s content could be subject to product-liability law. The ruling underscores the debate over AI accountability and limits of First Amendment protections for machine-generated speech.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/humans-have-rights-machines-do-not.html",
+    "publishedAt": "2026-11-23T12:00:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "essay-argues-ai-lacks-legal-rights",
+      "article-81502dc3",
+      "81502dc3",
+      "essay-argues-ai-lacks-legal-rights-1dc8c0"
     ]
   },
   {
@@ -139,6 +350,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "gl-inet-cloud-flaw-enables-malware-on-routers-e0f4f497",
+    "title": "GL.iNet Cloud Flaw Enables Malware on Routers",
+    "summary": "A flaw in GL.iNet’s cloud remote-management service granted attackers unauthorized access to routers and KVM devices, allowing malware and backdoor installation. The vulnerability, discovered on November 20 2026, was patched by GL.iNet, but affected devices still need a firmware update to eliminate the risk. Security teams should verify firmware versions and apply the latest update; no additional workarounds are documented.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-gl-inet-cloud-flaw/",
+    "publishedAt": "2026-11-23T10:45:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gl-inet-cloud-flaw-enables-malware-on-routers",
+      "article-e0f4f497",
+      "e0f4f497",
+      "gl-inet-cloud-flaw-enables-malware-on-routers-2c9c6b"
+    ]
+  },
+  {
     "slug": "attackers-exploited-microsoft-entra-connect-health-4760c6b1",
     "title": "Attackers exploited Microsoft Entra Connect Health flaw to access tenant data",
     "summary": "Attackers exploited a vulnerability in the Microsoft Entra Connect Health API to read the technical contact email addresses and configuration details of Entra tenants, the company warned affected organizations. Microsoft Entra Connect Health is a cloud-based monitoring service that gives administrators a single view of the health, performance and alerts for their on-premises identity infrastructure in the Microsoft Entra admin center.",
@@ -217,24 +446,6 @@ export const news: NewsBrief[] = [
       "article-ee9994d5",
       "ee9994d5",
       "red-hat-releases-webkit2gtk3-security-update-2ee15e"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-libxrender-security-update-0608137a",
-    "title": "Red Hat releases libXrender security update",
-    "summary": "Red Hat released a critical libXrender security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support. The update addresses multiple vulnerabilities, each with a CVSS base score in the CVE references, and is rated Important. Apply the update promptly today to mitigate exploitation of the affected libXrender components.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102245",
-    "publishedAt": "2026-11-23T09:50:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-libxrender-security-update",
-      "article-0608137a",
-      "0608137a",
-      "red-hat-releases-libxrender-security-update-2ee15e"
     ]
   },
   {
@@ -701,6 +912,42 @@ export const news: NewsBrief[] = [
       "article-19ccd1c3",
       "19ccd1c3",
       "red-hat-releases-kernel-update-for-rhel-10-2ee15b"
+    ]
+  },
+  {
+    "slug": "flatpak-update-addresses-important-security-flaw-fbdc29fb",
+    "title": "Flatpak Update Addresses Important Security Flaw",
+    "summary": "Red Hat released a security update for Flatpak on Red Hat Enterprise Linux 9, addressing an important vulnerability in the container runtime. The advisory notes the flaw’s importance but does not list a CVE identifier; CVSS base scores are provided in the references. Apply the Flatpak update promptly; no further mitigations are required.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102181",
+    "publishedAt": "2026-11-23T05:04:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "flatpak-update-addresses-important-security-flaw",
+      "article-fbdc29fb",
+      "fbdc29fb",
+      "flatpak-update-addresses-important-security-flaw-2ee15b"
+    ]
+  },
+  {
+    "slug": "thunderbird-update-fixes-important-security-flaw-1fd8558b",
+    "title": "Thunderbird Update Fixes Important Security Flaw",
+    "summary": "A security update for Thunderbird on Red Hat Enterprise Linux 9.8 EUS addresses an important vulnerability affecting the email client. The flaw, rated Important by Red Hat Product Security, lacks a publicly disclosed CVE identifier but is documented with CVSS base scores in the advisory references. Red Hat recommends applying the update immediately; no additional workarounds are specified.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102171",
+    "publishedAt": "2026-11-23T04:55:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "thunderbird-update-fixes-important-security-flaw",
+      "article-1fd8558b",
+      "1fd8558b",
+      "thunderbird-update-fixes-important-security-flaw-2ee15b"
     ]
   },
   {
@@ -9333,278 +9580,6 @@ export const news: NewsBrief[] = [
       "article-a0dea539",
       "a0dea539",
       "gta-6-scams-threaten-accounts-money-crypto-5a292d"
-    ]
-  },
-  {
-    "slug": "cloudflare-releases-updated-clairic-models-16be56c3",
-    "title": "Cloudflare Releases Updated Clairic Models",
-    "summary": "Cloudflare’s Workers AI team released updated Clairic and Clairic-flash models with open-weight architecture. The new models support more efficient extraction tasks and expand the repertoire of AI-powered services, but no security issues are reported. Developers can integrate the open-weight models via the Workers AI API to enhance text extraction capabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/open-clairic/",
-    "publishedAt": "2026-11-18T22:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-releases-updated-clairic-models",
-      "article-16be56c3",
-      "16be56c3",
-      "cloudflare-releases-updated-clairic-models-6fe107"
-    ]
-  },
-  {
-    "slug": "chrome-for-android-update-ce57406e",
-    "title": "Chrome for Android Update",
-    "summary": "We've just released Chrome 159 (159.0.8154.18) for Android to a small percentage of users. It'll become available on Google Play over the next few days. If you find a new issue, please let us know by filing a bug .",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0145322301.html",
-    "publishedAt": "2026-11-18T22:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-for-android-update",
-      "article-ce57406e",
-      "ce57406e",
-      "chrome-for-android-update-4a431e"
-    ]
-  },
-  {
-    "slug": "russian-cold-relic-apt-leverages-cloud-breaches-fo-5d65504b",
-    "title": "Russian Cold Relic APT Leverages Cloud Breaches for Impersonation",
-    "summary": "The Russia-linked threat group Cold Relic is conducting targeted attacks leveraging initial access gained from compromised cloud environments. Attackers exfiltrate victim data from initial cloud breaches to orchestrate highly convincing impersonation and social engineering campaigns against secondary enterprise targets. Security teams must enforce strict identity controls and closely monitor cross-tenant cloud trust relationships to mitigate lateral expansion.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
-    "publishedAt": "2026-11-18T21:59:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-cold-relic-apt-leverages-cloud-breaches-fo",
-      "article-5d65504b",
-      "5d65504b",
-      "russian-cold-relic-apt-leverages-cloud-breaches-fo-2eca1e",
-      "russian-cold-relic-apt-leverages-cloud-breaches-for-imperson"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100566-critical-openjdk-17-0-21-1-securi-28f3adbf",
-    "title": "RHSA-2026:100566: Critical: OpenJDK 17.0.21.1 Security Update for Windows Builds",
-    "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100566",
-    "publishedAt": "2026-11-18T21:29:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100566-critical-openjdk-17-0-21-1-securi",
-      "article-28f3adbf",
-      "28f3adbf",
-      "rhsa-2026-100566-critical-openjdk-17-0-21-1-securi-2ee081",
-      "rhsa-2026-100566-critical-openjdk-17-0-21-1-security-update-"
-    ]
-  },
-  {
-    "slug": "openjdk-17-0-21-1-critical-update-for-portable-lin-a7b37d41",
-    "title": "OpenJDK 17.0.21.1 Critical Update for Portable Linux",
-    "summary": "The update addresses multiple vulnerabilities in OpenJDK 17.0.21.1 for portable Linux builds. Red Hat Product Security rates the flaws as critical, with CVSS base scores listed in the CVE references. The vendor has released a patch; administrators should apply the update immediately to mitigate potential exploitation and verify installation promptly.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100565",
-    "publishedAt": "2026-11-18T21:29:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openjdk-17-0-21-1-critical-update-for-portable-lin",
-      "article-a7b37d41",
-      "a7b37d41",
-      "openjdk-17-0-21-1-critical-update-for-portable-lin-2ee081",
-      "openjdk-17-0-21-1-critical-update-for-portable-linux"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100570-critical-openjdk-21-0-13-1-securi-9dbb1b99",
-    "title": "RHSA-2026:100570: Critical: OpenJDK 21.0.13.1 Security Update for Windows Builds",
-    "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100570",
-    "publishedAt": "2026-11-18T21:20:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100570-critical-openjdk-21-0-13-1-securi",
-      "article-9dbb1b99",
-      "9dbb1b99",
-      "rhsa-2026-100570-critical-openjdk-21-0-13-1-securi-2ee081",
-      "rhsa-2026-100570-critical-openjdk-21-0-13-1-security-update-"
-    ]
-  },
-  {
-    "slug": "smartermail-vulnerabilities-affect-builds-before-9-34e8ac4f",
-    "title": "SmarterMail Vulnerabilities Affect Builds Before 9817",
-    "summary": "SmarterMail versions prior to Build 9817 contain undisclosed vulnerabilities that could allow attackers to compromise the application. The Canadian Centre for Cyber Security issued advisory AV26-1177, urging administrators to review links and apply updates as soon as possible. Applying the latest SmarterMail release or patch mitigates the risk; security teams should verify installation and monitor for anomalous activity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/smartertools-security-advisory-av26-1177",
-    "publishedAt": "2026-11-18T21:06:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "smartermail-vulnerabilities-affect-builds-before-9",
-      "article-34e8ac4f",
-      "34e8ac4f",
-      "smartermail-vulnerabilities-affect-builds-before-9-670f7b",
-      "smartermail-vulnerabilities-affect-builds-before-9817"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100569-critical-openjdk-21-0-13-1-securi-07d3e719",
-    "title": "RHSA-2026:100569: Critical: OpenJDK 21.0.13.1 Security Update for Portable Linux Builds",
-    "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100569",
-    "publishedAt": "2026-11-18T21:04:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100569-critical-openjdk-21-0-13-1-securi",
-      "article-07d3e719",
-      "07d3e719",
-      "rhsa-2026-100569-critical-openjdk-21-0-13-1-securi-2ee081",
-      "rhsa-2026-100569-critical-openjdk-21-0-13-1-security-update-"
-    ]
-  },
-  {
-    "slug": "teamcity-vulnerabilities-in-versions-before-2026-1-26df0737",
-    "title": "TeamCity Vulnerabilities in Versions Before 2026.1.3",
-    "summary": "TeamCity releases before 2025.11.7 and 2026.1.3 contain vulnerabilities that may enable unauthorized code execution. The Canadian Centre for Cyber Security advisory AV26-1176 recommends reviewing links and installing the latest patches immediately. Applying the updated TeamCity version eliminates the flaw; administrators should verify deployment and monitor for suspicious activity and ensure proper configuration.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1176",
-    "publishedAt": "2026-11-18T21:00:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "teamcity-vulnerabilities-in-versions-before-2026-1",
-      "article-26df0737",
-      "26df0737",
-      "teamcity-vulnerabilities-in-versions-before-2026-1-53189b",
-      "teamcity-vulnerabilities-in-versions-before-2026-1-3"
-    ]
-  },
-  {
-    "slug": "usn-9037-2-hplip-regression-f71ac02e",
-    "title": "USN-9037-2: HPLIP regression",
-    "summary": "USN-9037-1 fixed vulnerabilities in HPLIP. Unfortunately, the upstream fix introduced a regression that caused scanning to fail on certain HP devices. An attacker could possibly use this issue to cause a denial of service, expose sensitive information or execute arbitrary code. (CVE-2026-91097) It was discovered that HPLIP did not properly handle certain input, which could result in a heap-based buffer overflow.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9037-2",
-    "publishedAt": "2026-11-18T20:58:04.000Z",
-    "cves": [
-      "CVE-2026-91097",
-      "CVE-2026-91098",
-      "CVE-2026-91099",
-      "CVE-2026-91100",
-      "CVE-2026-91101",
-      "CVE-2026-91102",
-      "CVE-2026-91103",
-      "CVE-2026-91104",
-      "CVE-2026-91105",
-      "CVE-2026-91106"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9037-2-hplip-regression",
-      "article-f71ac02e",
-      "f71ac02e",
-      "usn-9037-2-hplip-regression-7e8844"
-    ]
-  },
-  {
-    "slug": "coinbase-blocks-4-7m-transfers-to-deepfake-scam-6e665e31",
-    "title": "Coinbase Blocks $4.7M Transfers to Deepfake Scam",
-    "summary": "Coinbase blocked $4.7 million in crypto transfers to scammers using an AI-generated deepfake of Elon Musk during a Tesla livestream that drew over 500,000 viewers. The fraud leveraged social engineering and insufficient transfer-verification controls, enabling attackers to siphon funds before detection. Coinbase’s monitoring flagged the anomaly, prompting an update to its outbound-transfer workflow that now requires authentication for large movements.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
-    "publishedAt": "2026-11-18T20:49:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "coinbase-blocks-4-7m-transfers-to-deepfake-scam",
-      "article-6e665e31",
-      "6e665e31",
-      "coinbase-blocks-4-7m-transfers-to-deepfake-scam-28cf16"
-    ]
-  },
-  {
-    "slug": "strike-graph-unveils-ai-for-continuous-compliance-04bc5d59",
-    "title": "Strike Graph Unveils AI for Continuous Compliance Evidence",
-    "summary": "Strike Graph introduced an agentic AI platform that automatically gathers compliance evidence from existing systems via APIs, eliminating manual collection. The solution maps data to over 30 regulatory frameworks, providing a single source of truth without duplicating effort across tools. Users integrate the AI into their toolchain, and the platform offers dashboards and export options for audit readiness.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool",
-    "publishedAt": "2026-11-18T20:45:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "strike-graph-unveils-ai-for-continuous-compliance",
-      "article-04bc5d59",
-      "04bc5d59",
-      "strike-graph-unveils-ai-for-continuous-compliance-11523c",
-      "strike-graph-unveils-ai-for-continuous-compliance-evidence"
-    ]
-  },
-  {
-    "slug": "judge-approves-spirit-data-sale-to-google-b2faef81",
-    "title": "Judge Approves Spirit Data Sale to Google",
-    "summary": "A federal bankruptcy judge approved the sale of Spirit Airlines' defunct data to Google. The transaction transfers millions of passenger records, which Google plans to use in AI training while agreeing to strict privacy safeguards. Affected stakeholders should monitor compliance with the court-issued protective orders and ensure that any AI deployment incorporates the agreed data-handling constraints.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/judge-signs-off-google-purchase-spirit-airlines-data",
-    "publishedAt": "2026-11-18T20:39:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "judge-approves-spirit-data-sale-to-google",
-      "article-b2faef81",
-      "b2faef81",
-      "judge-approves-spirit-data-sale-to-google-22b216"
-    ]
-  },
-  {
-    "slug": "iranian-groups-hand-off-access-for-destructive-att-6eb700e4",
-    "title": "Iranian Groups Hand Off Access for Destructive Attacks",
-    "summary": "AttackIQ research examined 20 Iranian state-sponsored threat groups, revealing a coordinated hand-off of network access to enable destructive operations. The analysis shows espionage, ransomware, and hacktivism tactics intertwining within state-backed campaigns, complicating attribution and mitigation. Security teams should monitor for lateral movement indicators and implement strict network segmentation to reduce the impact of such hand-offs.",
-    "category": "Nation State",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
-    "publishedAt": "2026-11-18T20:38:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "iranian-groups-hand-off-access-for-destructive-att",
-      "article-6eb700e4",
-      "6eb700e4",
-      "iranian-groups-hand-off-access-for-destructive-att-7ef219",
-      "iranian-groups-hand-off-access-for-destructive-attacks"
     ]
   }
 ];
