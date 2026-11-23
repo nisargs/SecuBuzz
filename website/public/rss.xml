@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 17:48:01 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 18:46:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>New Framework Traces Decade of Ransomware Actors</title>
+      <link>https://secubuzz.com/news/new-framework-traces-decade-of-ransomware-actors-a995d0f9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/new-framework-traces-decade-of-ransomware-actors-a995d0f9</guid>
+      <description><![CDATA[A new attribution framework enables security teams to trace ransomware actors across a decade of operations. The framework aggregates metadata from ransomware campaigns, correlating signatures and infrastructure to identify individual threat actors, thereby improving threat intelligence and response. Security teams can adopt the framework to enhance attribution accuracy, integrate with existing SIEMs, and prioritize defensive measures against identified actors.]]></description>
+      <pubDate>Mon, 23 Nov 2026 17:45:52 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors">Dark Reading</source>
+      <category>General</category>
+    </item>
     <item>
       <title>GlobeTopper Suffers Cyberattack Causing Financial and Operational Losses</title>
       <link>https://secubuzz.com/news/globetopper-suffers-cyberattack-causing-financial-3f431e41</link>
@@ -105,6 +114,15 @@
       <pubDate>Mon, 23 Nov 2026 15:34:03 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1194">Canadian Centre for Cyber Security</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>RHEL9 Podman Update Fixes Important Security Flaw</title>
+      <link>https://secubuzz.com/news/rhel9-podman-update-fixes-important-security-flaw-88343d44</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhel9-podman-update-fixes-important-security-flaw-88343d44</guid>
+      <description><![CDATA[Red Hat released a security update for the podman container engine on RHEL9 to address a critical flaw. The patch fixes an undisclosed vulnerability rated Important by Red Hat Product Security, with CVSS scores linked through CVE references. Administrators should apply the podman update immediately to prevent exploitation and maintain secure container orchestration environments.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:32:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102296">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Synology DSM Vulnerability Affects Versions Before 7.4.1</title>
@@ -350,10 +368,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>FBI Investigates National Crime Information Center Breach</title>
-      <link>https://secubuzz.com/news/fbi-investigates-national-crime-information-center-f4698ddc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-investigates-national-crime-information-center-f4698ddc</guid>
-      <description><![CDATA[A breach of the FBI’s National Crime Information Center has been reported, prompting an investigation by the agency. The incident potentially exposes sensitive criminal records and investigative data, though the extent of compromised information remains unverified. FBI officials advise affected stakeholders to monitor for unauthorized disclosures and to implement enhanced monitoring of internal access controls.]]></description>
+      <title>FBI Investigates Breach of National Crime Information Center</title>
+      <link>https://secubuzz.com/news/fbi-investigates-breach-of-national-crime-informat-198d95d0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-investigates-breach-of-national-crime-informat-198d95d0</guid>
+      <description><![CDATA[A breach of the FBI’s National Crime Information Center (NCIC) exposed sensitive criminal and investigative data. The intrusion exploited an unpatched authentication flaw, potentially granting attackers access to records of fugitives, missing persons, and criminal histories. FBI officials are investigating, urging stakeholders to monitor for unauthorized disclosures and tighten internal access controls while a patch is developed.]]></description>
       <pubDate>Mon, 23 Nov 2026 12:57:11 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/data-breaches/2026/11/fbi-crime-database-reportedly-hacked">Malwarebytes Labs</source>
       <category>Breach</category>
@@ -437,24 +455,6 @@
       <description><![CDATA[Red Hat released a security update for libXrender on Enterprise Linux 8.8, addressing multiple vulnerabilities rated as Important. The update includes patches for CVEs referenced in the advisory, each with a CVSS base score that informs the severity. Administrators should apply the update promptly and verify that libXrender is at the latest patched version to maintain system integrity.]]></description>
       <pubDate>Mon, 23 Nov 2026 12:12:32 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102281">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102288: Important: Red Hat AMQ Broker 7.14.2 release and security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102288-important-red-hat-amq-broker-7-14-07642452</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102288-important-red-hat-amq-broker-7-14-07642452</guid>
-      <description><![CDATA[Red Hat AMQ Broker 7.14.2 is now available from the Red Hat Customer Portal. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:11:06 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102288">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases libXrender Security Update for RHEL 8.6</title>
-      <link>https://secubuzz.com/news/red-hat-releases-libxrender-security-update-for-rh-eb9e39b2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-libxrender-security-update-for-rh-eb9e39b2</guid>
-      <description><![CDATA[Red Hat released a libXrender security update for RHEL 8.6 Advanced Mission Critical and Extended Update Support, fixing multiple vulnerabilities. The vulnerabilities have CVSS base scores linked via CVE references, indicating significant risk if unpatched. Administrators should apply the update promptly to mitigate the identified security issues across all affected systems.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:08:22 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102280">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

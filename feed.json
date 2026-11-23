@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
+    "title": "New Framework Traces Decade of Ransomware Actors",
+    "headline": "New Framework Traces Decade of Ransomware Actors",
+    "summary": "A new attribution framework enables security teams to trace ransomware actors across a decade of operations. The framework aggregates metadata from ransomware campaigns, correlating signatures and infrastructure to identify individual threat actors, thereby improving threat intelligence and response. Security teams can adopt the framework to enhance attribution accuracy, integrate with existing SIEMs, and prioritize defensive measures against identified actors.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-11-23T17:45:52.000Z",
+    "ingestedAt": "2026-11-23T18:43:55.414Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
     "title": "GlobeTopper Suffers Cyberattack Causing Financial and Operational Losses",
@@ -173,6 +189,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1194",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102296",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102296",
+    "title": "RHEL9 Podman Update Fixes Important Security Flaw",
+    "headline": "RHEL9 Podman Update Fixes Important Security Flaw",
+    "summary": "Red Hat released a security update for the podman container engine on RHEL9 to address a critical flaw. The patch fixes an undisclosed vulnerability rated Important by Red Hat Product Security, with CVSS scores linked through CVE references. Administrators should apply the podman update immediately to prevent exploitation and maintain secure container orchestration environments.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T15:32:20.000Z",
+    "ingestedAt": "2026-11-23T18:43:55.414Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102296",
     "additionalSources": []
   },
   {
@@ -612,18 +644,23 @@
   {
     "id": "https://www.malwarebytes.com/blog/data-breaches/2026/11/fbi-crime-database-reportedly-hacked",
     "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/11/fbi-crime-database-reportedly-hacked",
-    "title": "FBI Investigates National Crime Information Center Breach",
-    "headline": "FBI Investigates National Crime Information Center Breach",
-    "summary": "A breach of the FBI’s National Crime Information Center has been reported, prompting an investigation by the agency. The incident potentially exposes sensitive criminal records and investigative data, though the extent of compromised information remains unverified. FBI officials advise affected stakeholders to monitor for unauthorized disclosures and to implement enhanced monitoring of internal access controls.",
+    "title": "FBI Investigates Breach of National Crime Information Center",
+    "headline": "FBI Investigates Breach of National Crime Information Center",
+    "summary": "A breach of the FBI’s National Crime Information Center (NCIC) exposed sensitive criminal and investigative data. The intrusion exploited an unpatched authentication flaw, potentially granting attackers access to records of fugitives, missing persons, and criminal histories. FBI officials are investigating, urging stakeholders to monitor for unauthorized disclosures and tighten internal access controls while a patch is developed.",
     "category": "BREACH",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "Malwarebytes Labs",
     "publishedAt": "2026-11-23T12:57:11.000Z",
     "ingestedAt": "2026-11-23T13:36:25.437Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/data-breaches/2026/11/fbi-crime-database-reportedly-hacked",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/fbi-cyberattack-data-breach"
+      }
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/jailbroken-ai-agent/",
@@ -1230,6 +1267,23 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102230",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102230",
+    "title": "RHSA-2026:102230: Important: liblerc security update",
+    "headline": "RHSA-2026:102230: Important: liblerc security update",
+    "summary": "An update for liblerc is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T09:04:21.000Z",
+    "ingestedAt": "2026-11-23T18:45:22.245Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
     "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
     "title": "GL.iNet Cloud flaw exploited for malware",
@@ -1276,6 +1330,23 @@
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/samsung-securities-data-breach/",
     "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102228",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102228",
+    "title": "RHSA-2026:102228: Important: redhat-ds:12 security, bug fix, and enhancement update",
+    "headline": "RHSA-2026:102228: Important: redhat-ds:12 security, bug fix, and enhancement update",
+    "summary": "An update for the redhat-ds:12 module is now available for Red Hat Directory Server 12.9 for RHEL 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T08:33:02.000Z",
+    "ingestedAt": "2026-11-23T18:45:22.245Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:102229",
@@ -1406,6 +1477,23 @@
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-16-november-22",
     "additionalSources": []
+  },
+  {
+    "id": "https://projectzero.google/2026/11/virtualbox-process-hardening.html",
+    "sourceUrl": "https://projectzero.google/2026/11/virtualbox-process-hardening.html",
+    "title": "VirtualBox Process Hardening on Windows 2026 Edition: What’s a Single Bit Between Friends?",
+    "headline": "VirtualBox Process Hardening on Windows 2026 Edition: What’s a Single Bit Between Friends?",
+    "summary": "Back in 2017 I did some research into Oracle VirtualBox on Windows. The protection was to gate who could open the kernel driver, which might allow for privilege escalation due to the way it was designed. This time I found 3 new bypasses for protected processes, with an additional bug which was a broken fix for the 2020 bypass breaking due to changes in Windows.",
+    "category": "GENERAL",
+    "severity": "HIGH",
+    "source": "Google Project Zero",
+    "publishedAt": "2026-11-23T08:00:00.000Z",
+    "ingestedAt": "2026-11-23T18:43:43.474Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:102221",
@@ -2936,9 +3024,9 @@
   {
     "id": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
     "sourceUrl": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
-    "title": "Signal Blocks AI Screenshot Access on iOS 27 and Android",
-    "headline": "Signal Blocks AI Screenshot Access on iOS 27 and Android",
-    "summary": "Signal announced a new screenshot-blocking feature to prevent AI assistants from capturing private chats on iOS 27 and Android. The update addresses a privacy flaw that allowed screen-data interception, enabling AI agents to harvest message content without user interaction. Users can now install the patch to safeguard conversations, though the protection remains incomplete against advanced AI detection.",
+    "title": "Signal Blocks Screenshot Functionality on iOS and Android to Prevent AI Assistant Data Capture",
+    "headline": "Signal Blocks Screenshot Functionality on iOS and Android to Prevent AI Assistant Data Capture",
+    "summary": "Signal has blocked screenshot functionality on iOS and Android to prevent AI assistants from capturing private chat content. The change addresses a privacy flaw that allowed screen-data interception, enabling AI agents to harvest message content without user interaction. Users can now install the patch to safeguard conversations, though protection remains incomplete against advanced AI detection.",
     "category": "VULNERABILITY",
     "severity": "MEDIUM",
     "source": "The Hacker News",
@@ -2951,6 +3039,10 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/"
+      },
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/signal-no-screenshots-by-apple-google-operating-systems"
       }
     ]
   },
@@ -6277,18 +6369,23 @@
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:100476",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100476",
-    "title": "RHSA-2026:100476: Important: netpbm security update",
-    "headline": "RHSA-2026:100476: Important: netpbm security update",
-    "summary": "An update for netpbm is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "title": "Red Hat Issues Netpbm Security Update for RHEL 8 and RHEL 10.2 to Mitigate Important Vulnerability",
+    "headline": "Red Hat Issues Netpbm Security Update for RHEL 8 and RHEL 10.2 to Mitigate Important Vulnerability",
+    "summary": "Red Hat released a security update for the netpbm image-processing library on RHEL 8 and RHEL 10.2, addressing an undisclosed vulnerability rated Important. The flaw allows attackers to exploit the library, potentially leading to arbitrary code execution or privilege escalation. Users must apply the netpbm update immediately to eliminate the risk.",
     "category": "VULNERABILITY",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-11-19T19:11:56.000Z",
     "ingestedAt": "2026-11-20T08:45:20.356Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102494"
+      }
+    ],
     "isFallback": true
   },
   {
@@ -8176,87 +8273,5 @@
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/19/bitwarden-windows-macos-passkeys-integration/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/bitwarden-windows-macos-passkeys-integration/",
-    "title": "Bitwarden Integrates Native Passkey Support on Desktop Systems",
-    "headline": "Bitwarden Integrates Native Passkey Support on Desktop Systems",
-    "summary": "Bitwarden integrated native passkey support across Windows 11 and macOS operating systems to simplify passwordless access. The integration leverages Windows Hello and Apple Touch ID mechanisms to authenticate users and unlock encrypted credentials stored in vault repositories. Security administrators can deploy the updated Bitwarden client across desktop environments to enable operating system level passkey creation and management.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-19T10:39:33.000Z",
-    "ingestedAt": "2026-11-20T02:39:17.979Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/19/bitwarden-windows-macos-passkeys-integration/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
-    "title": "Microsoft Issues Workaround for Office Launch Issues Post-Hotpatch",
-    "headline": "Microsoft Issues Workaround for Office Launch Issues Post-Hotpatch",
-    "summary": "Microsoft confirmed a Windows 11 hotpatch caused installation and launch failures in Office and other third-party apps. The problem originates from a corrupted registry update that interferes with startup, but does not expose data or allow code execution.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-19T10:35:05.000Z",
-    "ingestedAt": "2026-11-19T14:44:51.840Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
-    "sourceUrl": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
-    "title": "F5 Patches Five NGINX2Root Flaws",
-    "headline": "F5 Patches Five NGINX2Root Flaws",
-    "summary": "F5 Networks released emergency patches for five NGINX2Root vulnerabilities that enable remote, unauthenticated attackers to execute arbitrary code on affected systems. Public proof-of-concept exploits have surfaced, confirming the flaws’ exploitability and prompting immediate remediation by affected customers. F5 recommends applying the latest firmware updates and verifying patch deployment to mitigate the risk of code execution.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-19T10:26:51.000Z",
-    "ingestedAt": "2026-11-19T12:05:42.476Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/19/gta-6-scams-threats/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/gta-6-scams-threats/",
-    "title": "GTA 6 scams are after your Google password, money, and crypto wallet",
-    "headline": "GTA 6 scams are after your Google password, money, and crypto wallet",
-    "summary": "Scammers are using the GTA 6 launch to steal Google passwords, sell game keys that may never arrive, and get players to connect crypto wallets. Stefan Dasic, a senior malware research engineer at Malwarebytes, tracked the lures.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-19T10:09:31.000Z",
-    "ingestedAt": "2026-11-19T10:43:39.231Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/19/ukraine-ransomware-gang-arrests-fake-it-support-calls/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/ukraine-ransomware-gang-arrests-fake-it-support-calls/",
-    "title": "Ukraine arrests key members of ransomware gang that extorted $40.5 million posing as IT support",
-    "headline": "Ukraine arrests key members of ransomware gang that extorted $40.5 million posing as IT support",
-    "summary": "Four key members of a ransomware group that took more than $40.5 million from at least 28 companies have been detained in Ukraine. The arrests followed an investigation that Ukrainian police ran with the FBI for more than two years.",
-    "category": "RANSOMWARE",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-19T10:07:30.000Z",
-    "ingestedAt": "2026-11-19T10:43:39.232Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
   }
 ]
