@@ -11,6 +11,87 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "attackers-exploited-microsoft-entra-connect-health-4760c6b1",
+    "title": "Attackers exploited Microsoft Entra Connect Health flaw to access tenant data",
+    "summary": "Attackers exploited a vulnerability in the Microsoft Entra Connect Health API to read the technical contact email addresses and configuration details of Entra tenants, the company warned affected organizations. Microsoft Entra Connect Health is a cloud-based monitoring service that gives administrators a single view of the health, performance and alerts for their on-premises identity infrastructure in the Microsoft Entra admin center.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/microsoft-entra-connect-health-vulnerability-tenant-data/",
+    "publishedAt": "2026-11-23T10:34:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "attackers-exploited-microsoft-entra-connect-health",
+      "article-4760c6b1",
+      "4760c6b1",
+      "attackers-exploited-microsoft-entra-connect-health-7d5536",
+      "attackers-exploited-microsoft-entra-connect-health-flaw-to-a"
+    ]
+  },
+  {
+    "slug": "critical-asp-net-anticsrf-flaw-enables-remote-code-eded742f",
+    "title": "Critical ASP.NET AntiCsrf Flaw Enables Remote Code Execution Without Authentication",
+    "summary": "A critical flaw in the Idunno.AntiCsrf library used by legacy ASP.NET WebForms apps has been actively exploited, letting attackers run arbitrary code on servers without authentication. The vulnerability, CVE-2026-131914, scores 9.3 on CVSS and has already caused incidents worldwide. Affected organizations must update or remove the library immediately and apply vendor patches to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/asp-net-anticsrf-flaw-under-attack/",
+    "publishedAt": "2026-11-23T10:25:17.000Z",
+    "cves": [
+      "CVE-2026-131914"
+    ],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
+      }
+    ],
+    "aliases": [
+      "critical-asp-net-anticsrf-flaw-enables-remote-code",
+      "article-eded742f",
+      "eded742f",
+      "critical-asp-net-anticsrf-flaw-enables-remote-code-28c2eb",
+      "critical-asp-net-anticsrf-flaw-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-webkit2gtk3-security-update-ee9994d5",
+    "title": "Red Hat releases webkit2gtk3 security update",
+    "summary": "Red Hat released a critical webkit2gtk3 security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support. The update fixes multiple vulnerabilities, each with a CVSS base score in the CVE references, and is rated Important. Apply the update promptly today to prevent exploitation of the affected webkit2gtk3 components.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102248",
+    "publishedAt": "2026-11-23T10:00:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-webkit2gtk3-security-update",
+      "article-ee9994d5",
+      "ee9994d5",
+      "red-hat-releases-webkit2gtk3-security-update-2ee15e"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-libxrender-security-update-0608137a",
+    "title": "Red Hat releases libXrender security update",
+    "summary": "Red Hat released a critical libXrender security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support. The update addresses multiple vulnerabilities, each with a CVSS base score in the CVE references, and is rated Important. Apply the update promptly today to mitigate exploitation of the affected libXrender components.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102245",
+    "publishedAt": "2026-11-23T09:50:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-libxrender-security-update",
+      "article-0608137a",
+      "0608137a",
+      "red-hat-releases-libxrender-security-update-2ee15e"
+    ]
+  },
+  {
     "slug": "red-hat-issues-critical-php-8-3-security-update-1131078f",
     "title": "Red Hat Issues Critical PHP 8.3 Security Update",
     "summary": "Red Hat released a critical security update for the php:8.3 module on RHEL 9, addressing multiple vulnerabilities. The update is rated Critical, with CVSS base scores provided for each vulnerability via the referenced CVE links, indicating high-severity flaws. Apply the patch promptly; no workarounds are available, and the update should be deployed across all affected systems.",
@@ -67,6 +148,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "gl-inet-cloud-flaw-exploited-for-malware-1a3f0284",
+    "title": "GL.iNet Cloud flaw exploited for malware",
+    "summary": "Hackers exploited a flaw in GL.iNet's GoodCloud remote-management service to install malware on customer routers and KVM devices. The vulnerability allowed remote code execution via authenticated access, and the attacker leveraged it to deploy malicious binaries before the company patched the flaw. GL.iNet has blocked the attack vector and recommends users apply the firmware update immediately to prevent further infections.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+    "publishedAt": "2026-11-23T09:04:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gl-inet-cloud-flaw-exploited-for-malware",
+      "article-1a3f0284",
+      "1a3f0284",
+      "gl-inet-cloud-flaw-exploited-for-malware-2dfd25"
+    ]
+  },
+  {
     "slug": "signal-blocks-ai-assistants-from-accessing-private-29017594",
     "title": "Signal Blocks AI Assistants From Accessing Private Messages",
     "summary": "Signal updated its app to block AI assistants on iOS 27 and Android, preventing them from capturing users’ private message content. The change stops assistants like Siri and Google Gemini from reading the screen to answer queries, protecting data stores. No vulnerability is reported; the update is a privacy safeguard that requires installing the latest Signal version.",
@@ -83,6 +182,25 @@ export const news: NewsBrief[] = [
       "29017594",
       "signal-blocks-ai-assistants-from-accessing-private-287530",
       "signal-blocks-ai-assistants-from-accessing-private-messages"
+    ]
+  },
+  {
+    "slug": "samsung-securities-breach-exposes-8-241-customers-8e25bd81",
+    "title": "Samsung Securities Breach Exposes 8,241 Customers' Data",
+    "summary": "Samsung Securities reported a breach exposing personal data of 8,241 customers after unauthorized access to its Voice of Customer (VOC) website. The breach involved credential theft and internal compromise, but impact was limited to the VOC system. Samsung Securities advised affected customers to monitor accounts, change passwords, and is investigating while notifying regulators.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/samsung-securities-data-breach/",
+    "publishedAt": "2026-11-23T08:53:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "samsung-securities-breach-exposes-8-241-customers",
+      "article-8e25bd81",
+      "8e25bd81",
+      "samsung-securities-breach-exposes-8-241-customers-28fcc5",
+      "samsung-securities-breach-exposes-8-241-customers-data"
     ]
   },
   {
@@ -485,6 +603,42 @@ export const news: NewsBrief[] = [
       "article-eaf8d87e",
       "eaf8d87e",
       "curl-receives-moderate-security-update-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-net-8-0-security-update-480ca2aa",
+    "title": "Red Hat Issues .NET 8.0 Security Update",
+    "summary": "Red Hat issued a security update for .NET 8.0 on RHEL 10.2 Extended Update Support, addressing several platform vulnerabilities. The update is rated Important, with CVSS base scores for each flaw listed via CVE links in the references, indicating high-severity risk if left unpatched. Red Hat urges immediate installation of the update and verification of CVSS scores to prioritize remediation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102173",
+    "publishedAt": "2026-11-23T04:12:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-net-8-0-security-update",
+      "article-480ca2aa",
+      "480ca2aa",
+      "red-hat-issues-net-8-0-security-update-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-openssh-security-update-a1367179",
+    "title": "Red Hat releases openssh security update",
+    "summary": "Red Hat released a critical openssh security update for RHEL 10, addressing several bugs and enhancements. The update fixes multiple critical vulnerabilities, each with a CVSS base score in the CVE references, and is rated Moderate. Apply the update promptly today to mitigate potential exploitation of the affected openssh components.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102195",
+    "publishedAt": "2026-11-23T04:12:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-openssh-security-update",
+      "article-a1367179",
+      "a1367179",
+      "red-hat-releases-openssh-security-update-2ee15b"
     ]
   },
   {
@@ -9486,158 +9640,6 @@ export const news: NewsBrief[] = [
       "16072b1a",
       "cve-2026-130638-path-traversal-in-the-object-detec-936eef",
       "cve-2026-130638-path-traversal-in-the-object-detection-datas"
-    ]
-  },
-  {
-    "slug": "f5-big-ip-flaws-threaten-traffic-management-microk-980da029",
-    "title": "F5 BIG-IP Flaws Threaten Traffic Management Microkernel",
-    "summary": "F5 disclosed six critical BIG-IP flaws that can crash the Traffic Management Microkernel (TMM) without authentication, disrupting traffic until restart. Each flaw requires a specific virtual-server setup, such as an iRule with a particular command or an APM policy with two agent types, and may enable remote code execution. F5 urges immediate patching and configuration review to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
-    "publishedAt": "2026-11-18T18:15:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "f5-big-ip-flaws-threaten-traffic-management-microk",
-      "article-980da029",
-      "980da029",
-      "f5-big-ip-flaws-threaten-traffic-management-microk-437859",
-      "f5-big-ip-flaws-threaten-traffic-management-microkernel"
-    ]
-  },
-  {
-    "slug": "ghostmap-ebpf-rootkit-conceals-ironworm-malware-on-3496fb98",
-    "title": "GhostMap eBPF Rootkit Conceals IronWorm Malware on Linux",
-    "summary": "Attackers are deploying the GhostMap eBPF rootkit to hide IronWorm malware processes, files, and network sockets from standard Linux inspection tools like /proc/net/tcp. The rootkit leverages extended Berkeley Packet Filter hooks to manipulate kernel-level visibility, allowing malicious listeners to evade detection while remaining operational.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ghostmap-ebpf-rootkit/",
-    "publishedAt": "2026-11-18T18:11:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ghostmap-ebpf-rootkit-conceals-ironworm-malware-on",
-      "article-3496fb98",
-      "3496fb98",
-      "ghostmap-ebpf-rootkit-conceals-ironworm-malware-on-719949",
-      "ghostmap-ebpf-rootkit-conceals-ironworm-malware-on-linux"
-    ]
-  },
-  {
-    "slug": "arctic-wolf-releases-quarterly-innovation-update-a1e410dd",
-    "title": "Arctic Wolf Releases Quarterly Innovation Update",
-    "summary": "Arctic Wolf published its November 2026 quarterly update, outlining new product features, strategic initiatives, and upcoming roadmap milestones. The release highlights enhancements in threat detection, managed detection and response services, and expanded partner integrations. Customers are encouraged to review the full briefing for detailed feature specifications and to schedule a roadmap discussion with Arctic Wolf.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/on-demand-webinar-uk/whats-new-and-whats-next-arctic-wolf-november-2026-update/",
-    "publishedAt": "2026-11-18T18:10:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arctic-wolf-releases-quarterly-innovation-update",
-      "article-a1e410dd",
-      "a1e410dd",
-      "arctic-wolf-releases-quarterly-innovation-update-7fd065"
-    ]
-  },
-  {
-    "slug": "arctic-wolf-announces-november-2026-product-update-1aedb6a5",
-    "title": "Arctic Wolf Announces November 2026 Product Update",
-    "summary": "Arctic Wolf released its November 2026 quarterly update, outlining new security services and roadmap milestones. The update highlights enhancements to threat detection, incident response automation, and expanded partner integrations. Customers are encouraged to review the release notes and schedule integration testing to align with the new capabilities in the next quarter.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/on-demand-webinar/whats-new-whats-next-with-arctic-wolf-november-2026-update/",
-    "publishedAt": "2026-11-18T18:02:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arctic-wolf-announces-november-2026-product-update",
-      "article-1aedb6a5",
-      "1aedb6a5",
-      "arctic-wolf-announces-november-2026-product-update-7a1038"
-    ]
-  },
-  {
-    "slug": "hackers-use-hidden-cron-jobs-to-reinstall-malware-8db0ac7a",
-    "title": "Hackers Use Hidden Cron Jobs to Reinstall Malware on Firewalls and Routers Every 5 Minutes",
-    "summary": "A Linux botnet is hiding in a place most network teams never look: the scheduled jobs on their firewalls, routers and switches. If a responder kills the malware and deletes the file, a hidden cron job downloads it again within five minutes.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-hidden-cron-jobs/",
-    "publishedAt": "2026-11-18T18:01:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-hidden-cron-jobs-to-reinstall-malware",
-      "article-8db0ac7a",
-      "8db0ac7a",
-      "hackers-use-hidden-cron-jobs-to-reinstall-malware-63e5fa",
-      "hackers-use-hidden-cron-jobs-to-reinstall-malware-on-firewal"
-    ]
-  },
-  {
-    "slug": "apple-releases-homeview-27-2-1-security-update-49d9a416",
-    "title": "Apple Releases HomeView 27.2.1 Security Update",
-    "summary": "Apple released HomeView 27.2.1, a security update for its home automation software, addressing several critical flaws. The patch fixes multiple undisclosed vulnerabilities that could enable remote code execution, privilege escalation, or unauthorized data access. Users are advised to download and install the update through the HomeView app or system settings to ensure device integrity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11182026a",
-    "publishedAt": "2026-11-18T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-homeview-27-2-1-security-update",
-      "article-49d9a416",
-      "49d9a416",
-      "apple-releases-homeview-27-2-1-security-update-5bd3d7"
-    ]
-  },
-  {
-    "slug": "docker-model-runner-flaw-enables-container-escapes-5c86d152",
-    "title": "Docker Model Runner Flaw Enables Container Escapes",
-    "summary": "Security researchers disclosed an unauthenticated argument-injection vulnerability affecting Docker Model Runner in Docker Desktop. Cataloged as CVE-2026-28400, the primitive enables default-privilege containers to corrupt VM data disks and achieve host code execution across macOS and Windows environments. Security teams must update Docker Desktop installations to mitigate host file read and write primitives exploited through model runner workflows.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Zero Day Initiative",
-    "sourceUrl": "https://www.thezdi.com/blog/2026/11/17/hostile-inference-exploiting-docker-model-runner-for-container-escapes",
-    "publishedAt": "2026-11-18T17:23:52.000Z",
-    "cves": [
-      "CVE-2026-28400"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "docker-model-runner-flaw-enables-container-escapes",
-      "article-5c86d152",
-      "5c86d152",
-      "docker-model-runner-flaw-enables-container-escapes-61cd3e"
-    ]
-  },
-  {
-    "slug": "critical-apache-roller-rce-flaw-under-active-explo-0ec06f71",
-    "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
-    "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
-    "publishedAt": "2026-11-18T17:10:45.000Z",
-    "cves": [
-      "CVE-2026-129448"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-apache-roller-rce-flaw-under-active-explo",
-      "article-0ec06f71",
-      "0ec06f71",
-      "critical-apache-roller-rce-flaw-under-active-explo-4e2bbc",
-      "critical-apache-roller-rce-flaw-under-active-exploitation-no"
     ]
   }
 ];
