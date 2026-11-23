@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+    "title": "KEPCO Breach Exposes 1.5 Million Customer Records",
+    "headline": "KEPCO Breach Exposes 1.5 Million Customer Records",
+    "summary": "A threat actor breached KEPCO’s internal network, accessing two systems that stored customer, employee, and contractor data. The intrusion leveraged an undisclosed vulnerability in the company’s network perimeter, enabling unauthorized data exfiltration and potential credential compromise. KEPCO has issued a security advisory and is conducting a forensic investigation, urging affected users to monitor accounts and change passwords.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-23T20:54:51.000Z",
+    "ingestedAt": "2026-11-23T21:43:12.667Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01590513949.html",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01590513949.html",
+    "title": "Chrome Extended Stable Channel Updated to 156.0.8078.114",
+    "headline": "Chrome Extended Stable Channel Updated to 156.0.8078.114",
+    "summary": "Google Chrome’s Extended Stable channel updated to 156.0.8078.114 for Windows and macOS, extending the stable release schedule. The update lists changes, with security fixes pending a later release, and will roll out over the next days or weeks. Users may review the change log, file bugs, or use the community forum while awaiting the security patch.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-11-23T20:52:47.796Z",
+    "ingestedAt": "2026-11-23T21:43:49.080Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01590513949.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-196-aws/",
     "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-196-aws/",
     "title": "CVE-2026-134056 - Out-of-bounds write in padded block cipher decryption in AWS-LC",
@@ -470,6 +502,23 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102405",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102405",
+    "title": "RHSA-2026:102405: Important: qt5-qtdeclarative security update",
+    "headline": "RHSA-2026:102405: Important: qt5-qtdeclarative security update",
+    "summary": "An update for qt5-qtdeclarative is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T15:15:51.000Z",
+    "ingestedAt": "2026-11-23T21:43:43.071Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://therecord.media/kirsten-davies-trump-intends-nominate-national-cyber-director",
     "sourceUrl": "https://therecord.media/kirsten-davies-trump-intends-nominate-national-cyber-director",
     "title": "Trump Names Davies National Cyber Czar",
@@ -823,6 +872,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102291",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102291",
+    "title": "Linux 8.8 Receives Important webkit2gtk3 Update",
+    "headline": "Linux 8.8 Receives Important webkit2gtk3 Update",
+    "summary": "Red Enterprise Linux 8.8 and SAP/Telecommunications Update Services receive an important security update for the webkit2gtk3 component. The advisory references CVSS base scores for each vulnerability, though specific CVE identifiers are not listed in the release. System administrators should install the update promptly to address the identified weaknesses and maintain platform integrity.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T13:12:53.000Z",
+    "ingestedAt": "2026-11-23T21:43:49.080Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102291",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:102294",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102294",
     "title": "Red Hat Releases Kernel-RT Patch for RHEL 9.2",
@@ -852,6 +917,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:102261",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102255",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102255",
+    "title": "Red Enterprise Linux 9 Receives Critical php:8.4 Update",
+    "headline": "Red Enterprise Linux 9 Receives Critical php:8.4 Update",
+    "summary": "Red Enterprise Linux 9 users receive a critical update for the php:8.4 module, addressing multiple security vulnerabilities. The advisory lists CVSS base scores for each flaw, but no specific CVE identifiers are disclosed in the release notes. Administrators should apply the update immediately to mitigate the risk, as the patch resolves the identified weaknesses.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T13:04:38.000Z",
+    "ingestedAt": "2026-11-23T21:43:49.080Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102255",
     "additionalSources": []
   },
   {
@@ -1180,6 +1261,26 @@
     "isFutureSkew": false,
     "url": "https://www.schneier.com/blog/archives/2026/11/humans-have-rights-machines-do-not.html",
     "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "headline": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability CVE-2026-134624 N-able Mail Assure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-11-23T12:00:00.000Z",
+    "ingestedAt": "2026-11-23T21:43:43.074Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-133968",
+      "CVE-2026-134624"
+    ],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:102274",
@@ -8181,117 +8282,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.huntress.com/blog/detecting-timeroasting",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/",
-    "sourceUrl": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/",
-    "title": "ARMORY CASTLE Exploits vSphere",
-    "headline": "ARMORY CASTLE Exploits vSphere",
-    "summary": "Written by: Jayson Frost, Bryce Greathouse, Dhanesh Kizhakkinan, John Palmisano, Steve Rasch, Daniel Sislo, John Wolfram Introduction On Oct. 15, 2026, Mandiant and Google Threat Intelligence Group (GTIG) published a blog post detailing recent activity in which the suspected PRC-nexus threat actor ARMORY CASTLE (formerly tracked as UNC5221) exploited CVE-2026-102764, a zero-day vulnerability in BeyondTrust Remote Support, which was patched in BT26-05 .",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Google Threat Intelligence",
-    "publishedAt": "2026-11-19T14:00:00.000Z",
-    "ingestedAt": "2026-11-19T14:43:41.844Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-102764",
-      "CVE-2026-123890",
-      "CVE-2026-59309",
-      "CVE-2025-22457"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://cybersecuritynews.com/hackers-steal-us-bank/",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-steal-us-bank/",
-    "title": "Russian Operation Steals Bank, IRS Credentials from PCs",
-    "headline": "Russian Operation Steals Bank, IRS Credentials from PCs",
-    "summary": "A Russian-speaking cybercrime group has stolen login credentials for US banks, the IRS, and Social Security from infected Windows PCs. Victims were ordinary users; many employed password managers and MFA, yet attackers still captured credentials through malware, without breaching any institution. Defenders should harden endpoint security, enforce multi-factor authentication, and monitor for credential-stealing malware to prevent similar thefts.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-19T13:43:37.000Z",
-    "ingestedAt": "2026-11-19T16:44:05.407Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/hackers-steal-us-bank/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-9172-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9172-1",
-    "title": "Ubuntu 24.04 Kernel Update Addresses Critical IPv4, Bridge, Netfilter Vulnerabilities",
-    "headline": "Ubuntu 24.04 Kernel Update Addresses Critical IPv4, Bridge, Netfilter Vulnerabilities",
-    "summary": "Ubuntu 24.04 users must install the latest kernel update to patch critical vulnerabilities affecting IPv4 networking, Ethernet bridge, Netfilter, and XFRM subsystems. The flaws, CVE-2026-98432 and CVE-2026-99999, could enable privilege escalation or denial of service if exploited by attackers. Immediate kernel upgrade is recommended to mitigate potential compromise and maintain system security.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-11-19T13:43:11.000Z",
-    "ingestedAt": "2026-11-19T15:43:25.505Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://ubuntu.com/security/notices/USN-9172-1",
-    "additionalSources": [
-      {
-        "source": "Ubuntu Security Notices",
-        "sourceUrl": "https://ubuntu.com/security/notices/USN-9171-1"
-      }
-    ],
-    "cves": [
-      "CVE-2026-98432",
-      "CVE-2026-99999"
-    ]
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-9170-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9170-1",
-    "title": "Ubuntu Patches Kernel Vulnerabilities in IPv4, Bridge, Netfilter, SCTP",
-    "headline": "Ubuntu Patches Kernel Vulnerabilities in IPv4, Bridge, Netfilter, SCTP",
-    "summary": "Ubuntu 24.04 USN-9170-1 fixes Linux kernel flaws affecting IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems. The vulnerabilities, CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, could enable privilege escalation or denial of service if exploited by an attacker. Apply the kernel update immediately to patch the affected subsystems and prevent potential compromise.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-11-19T13:42:53.000Z",
-    "ingestedAt": "2026-11-19T15:43:25.505Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://ubuntu.com/security/notices/USN-9170-1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/ukraine-ransomware-arrests-cyber",
-    "sourceUrl": "https://therecord.media/ukraine-ransomware-arrests-cyber",
-    "title": "Ukraine Arrests Ransomware Network Extorting $40M",
-    "headline": "Ukraine Arrests Ransomware Network Extorting $40M",
-    "summary": "Ukrainian authorities arrested four suspects linked to an international ransomware network that extorted over $40 million from U.S. oil and healthcare firms. The group used credential theft and encrypted data to demand ransom, targeting critical infrastructure and causing significant financial loss. Law enforcement seized ransom payments and seized infrastructure, and the operators face prosecution under Ukrainian cybercrime statutes.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-11-19T13:30:00.000Z",
-    "ingestedAt": "2026-11-19T14:44:28.282Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://therecord.media/ukraine-ransomware-arrests-cyber",
-    "additionalSources": []
-  },
-  {
-    "id": "https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/",
-    "sourceUrl": "https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/",
-    "title": "Gatekeeper Asymmetry Makes LLMs More Vulnerable",
-    "headline": "Gatekeeper Asymmetry Makes LLMs More Vulnerable",
-    "summary": "The paper introduces gatekeeper asymmetry doom, asserting that when input vetting is weaker than processing, vulnerability is inevitable. Authors illustrate the principle with examples across security domains, showing limited input validation can cause catastrophic failures in powerful LLMs. The study urges stronger gatekeeping and hard-problem reliance to mitigate asymmetry in advanced AI systems.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Check Point Research",
-    "publishedAt": "2026-11-19T13:19:10.000Z",
-    "ingestedAt": "2026-11-19T13:25:45.766Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/",
     "additionalSources": []
   }
 ]

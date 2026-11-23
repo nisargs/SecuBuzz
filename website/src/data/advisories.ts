@@ -52,6 +52,141 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-63476",
+    "cveID": "CVE-2026-63476",
+    "slug": "cve-2026-63476",
+    "vendor": "npm",
+    "product": "isomorphic-git",
+    "name": "isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS)",
+    "dateAdded": "2026-11-23",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "When applying a delta object from a packfile, isomorphic-git reads a server-controlled targetSize and calls Buffer.alloc(targetSize) with no upper bound. A single malicious HTTP response to git.clone()/git.fetch() can force a ~2 GB allocation → memory exhaustion / DoS (process killed on memory-constrained hosts).",
+    "requiredAction": "Upgrade isomorphic-git to version 1.38.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9x82-4j54-863h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63476"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77423",
+    "cveID": "CVE-2026-77423",
+    "slug": "cve-2026-77423",
+    "vendor": "Java (Maven)",
+    "product": "org.jline:jline-builtins",
+    "name": "jline3 leads to ReDoS in Built-in Less Viewer Search",
+    "dateAdded": "2026-11-23",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "The JLine3 built-in less pager compiles user-supplied search patterns directly as Java regular expressions with no sanitization, timeout, or backtracking bound. A malicious pattern such as (a+)+b can trigger catastrophic backtracking and hang the session thread at 100% CPU.",
+    "requiredAction": "Upgrade org.jline:jline-builtins to version 3.30.15 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2v9w-34q6-wpqx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77423"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63410",
+    "cveID": "CVE-2026-63410",
+    "slug": "cve-2026-63410",
+    "vendor": "RubyGems",
+    "product": "secp256k1-native",
+    "name": "secp256k1-native has a compiler-induced timing side channel in scalar multiplication",
+    "dateAdded": "2026-11-23",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-208",
+    "ransomware": false,
+    "description": "Point#mul — the default, constant-time scalar multiplication and the library's headline secret-scalar operation — could leak timing information about the secret scalar (a private key or ECDSA-style nonce in a downstream consumer) not because of a source-level bug, but because the compiler reconstructed a branch from branchless source.",
+    "requiredAction": "Upgrade secp256k1-native to version 0.18.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vp2j-gqfm-r3cf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63410"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-58262",
+    "cveID": "CVE-2026-58262",
+    "slug": "cve-2026-58262",
+    "vendor": "Go",
+    "product": "klever-go · klever-io",
+    "name": "Klever Go counts bitmap padding bits toward BLS quorum, allowing blocks with insufficient signatures",
+    "dateAdded": "2026-11-23",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-345",
+    "ransomware": false,
+    "description": "When validating an incoming block header, HeaderSigVerifier.verifyConsensusSize counts every set bit in PubKeysBitmap — including bits that correspond to no validator (the padding bits of the final byte, which exist whenever the consensus group size is not a multiple of 8).",
+    "requiredAction": "Upgrade klever-go · klever-io to version 1.7.20 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f9h7-4mmq-vgcq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58262"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63402",
+    "cveID": "CVE-2026-63402",
+    "slug": "cve-2026-63402",
+    "vendor": "npm",
+    "product": "i18next",
+    "name": "i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS)",
+    "dateAdded": "2026-11-23",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-471",
+    "ransomware": false,
+    "description": "deepExtend in src/utils.js (reached via the public addResourceBundle(lng, ns, data, deep, overwrite) API) checked key existence with the in operator, which walks the prototype chain. A source key matching an inherited built-in (e.g. hasOwnProperty, toString, valueOf) therefore caused the function to recurse into the shared object on Object.prototype.",
+    "requiredAction": "Upgrade i18next to version 26.3.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6jcc-5g8w-32mx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63402"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-133469",
     "cveID": "CVE-2026-133469",
     "slug": "cve-2026-133469",
@@ -1362,141 +1497,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63012"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-62955",
-    "cveID": "CVE-2026-62955",
-    "slug": "cve-2026-62955",
-    "vendor": "Composer",
-    "product": "baserproject/baser-core",
-    "name": "baserCMS: Path Traversal Bypass via realpath() in BcThemeFileService (CVE-2026-30940 Patch Bypass)",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 7.2,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "The security patch introduced in baserCMS 5.2.3 to address CVE-2026-30940 / GHSA-c5c6-37vq-pjcq is incomplete. The patch added a realpath()-based directory traversal check in BcThemeFileService::getFullpath(), but the check is entirely skipped when realpath($baseDir) returns false — which occurs whenever the target subdirectory does not physically exist on disk.",
-    "requiredAction": "Upgrade baserproject/baser-core to version 5.3.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2pj4-v76f-wjvx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62955"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77382",
-    "cveID": "CVE-2026-77382",
-    "slug": "cve-2026-77382",
-    "vendor": "Rust (Cargo)",
-    "product": "falcon-rust",
-    "name": "falcon-rust: Discrete-Gaussian sampler runs at 2^-33 precision, far below Falcon's requirement (reference KAT vectors no longer pass)",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-1240",
-    "ransomware": false,
-    "description": "falcon-rust's discrete-Gaussian rejection sampler evaluates its exp() acceptance step at only 32 bits of fractional precision. Measured directly against the crate's own compiled code, approx_exp has a maximum relative error of 2^-33. For comparison, the Falcon reference implementation achieves about 2^-63, and the f64 code this crate replaced achieved about 2^-52.",
-    "requiredAction": "Upgrade falcon-rust to version 0.2.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-25rm-9wvm-m38v"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77382"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77378",
-    "cveID": "CVE-2026-77378",
-    "slug": "cve-2026-77378",
-    "vendor": "Composer",
-    "product": "bolt/core",
-    "name": "Bolt ListFormatHelper SQL injection",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-89",
-    "ransomware": false,
-    "description": "SQL Injection in ListFormatHelper allows authenticated users with the upload permission to execute arbitrary SQL queries and exfiltrate sensitive database contents through the /async/select-options endpoint when general/caching/list_format is enabled. This has been patched in Bolt 6.1.4.",
-    "requiredAction": "Upgrade bolt/core to version 6.1.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r7h9-qx4h-77j5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77378"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77380",
-    "cveID": "CVE-2026-77380",
-    "slug": "cve-2026-77380",
-    "vendor": "Composer",
-    "product": "bolt/core",
-    "name": "Bolt: Prevent SSRF due to unchecked followed redirects",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 5.2,
-    "severity": "Medium",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "The /bolt/async/upload-url and /bolt/async/embed endpoints validated only the submitted URL before fetching it server-side, but the fetch then followed redirects to destinations that were never re-validated. This allowed an authenticated user to bypass the SSRF guard (UrlSafetyChecker) and make the server issue requests to internal/cloud-metadata addresses.",
-    "requiredAction": "Upgrade bolt/core to version 6.1.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3xjf-9q55-vxw4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77380"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-77379",
-    "cveID": "CVE-2026-77379",
-    "slug": "cve-2026-77379",
-    "vendor": "Composer",
-    "product": "bolt/core",
-    "name": "Bolt: Information disclosure through unfiltered public relation API endpoint",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-402",
-    "ransomware": false,
-    "description": "A missing access-control filter in the public Relation API allowed unauthenticated users to discover metadata about unpublished, draft, and viewless content through REST and GraphQL endpoints. This has been patched in Bolt 6.1.4.",
-    "requiredAction": "Upgrade bolt/core to version 6.1.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6358-jg5p-hmjj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77379"
       }
     ],
     "source": "GITHUB"
