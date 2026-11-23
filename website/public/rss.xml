@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 19:46:40 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 20:46:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-134056 - Out-of-bounds write in padded block cipher decryption in AWS-LC</title>
+      <link>https://secubuzz.com/news/cve-2026-134056-out-of-bounds-write-in-padded-bloc-994f1241</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-134056-out-of-bounds-write-in-padded-bloc-994f1241</guid>
+      <description><![CDATA[Bulletin ID: 2026-196-AWS Publication Date: 11/23/2026 12:00 PM PST Description: We identified CVE-2026-134056, an out-of-bounds write issue in AWS-LC's padded block cipher decryption. If the output buffer is the minimum documented size, AWS-LC can write one byte past its end. The aws-lc-rs StreamingDecryptingKey API has a similar issue with cbc_pkcs7 and ecb_pkcs7.]]></description>
+      <pubDate>Mon, 23 Nov 2026 20:29:41 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-196-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Trump Names Industry Veteran Davies as Acting Cyber Director</title>
+      <link>https://secubuzz.com/news/trump-names-industry-veteran-davies-as-acting-cybe-bcd7ff11</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/trump-names-industry-veteran-davies-as-acting-cybe-bcd7ff11</guid>
+      <description><![CDATA[Trump appointed Kirsten Davies as National Cyber Director, signaling a shift toward industry expertise amid outages and geopolitical tensions. The move follows criticism of cyber leadership and aims to leverage Davies' private sector experience to strengthen U.S. cyber defenses. The appointment is expected to influence policy direction and coordination with industry partners, though no immediate operational changes have been announced.]]></description>
+      <pubDate>Mon, 23 Nov 2026 20:13:48 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>OpenRouter Removes AI Providers for Data Handling Violations</title>
+      <link>https://secubuzz.com/news/openrouter-removes-ai-providers-for-data-handling-161bd63a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openrouter-removes-ai-providers-for-data-handling-161bd63a</guid>
+      <description><![CDATA[OpenRouter removed three AI providers after discovering they violated data-handling policies and exposed sensitive user prompts and secrets. The policy breach leaked proprietary prompts, potentially compromising client confidentiality and violating OpenRouter's privacy commitments. OpenRouter suspended the providers, issued a public notice, and is reviewing vetting procedures to prevent future violations.]]></description>
+      <pubDate>Mon, 23 Nov 2026 20:00:20 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Chrome iOS Stable 158 Released with Stability Improvements</title>
+      <link>https://secubuzz.com/news/chrome-ios-stable-158-released-with-stability-impr-cc781fff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-ios-stable-158-released-with-stability-impr-cc781fff</guid>
+      <description><![CDATA[Google released Chrome Stable 158 (158.0.8127.86) for iOS, adding stability and performance improvements to the mobile browser. The update addresses minor bugs and optimizes rendering, reducing memory usage and enhancing page load times on iOS devices. The new build will be available on the App Store within hours, and users are encouraged to update to benefit from the fixes.]]></description>
+      <pubDate>Mon, 23 Nov 2026 18:58:34 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update_0595441535.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
     <item>
       <title>LaLiga Data Breach Exposes Fans Personal Information</title>
       <link>https://secubuzz.com/news/laliga-data-breach-exposes-fans-personal-informati-47226265</link>
@@ -51,6 +87,15 @@
       <pubDate>Mon, 23 Nov 2026 17:45:15 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html">The Hacker News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>USN-9187-1: libssh vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9187-1-libssh-vulnerabilities-77c22071</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9187-1-libssh-vulnerabilities-77c22071</guid>
+      <description><![CDATA[This issue only affected Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. (CVE-2026-59843) Mikhail Ilin and Saransh Rana discovered that libssh did not correctly sanitize shell metacharacters when expanding usernames in ProxyCommand strings. An attacker could possibly use this issue to obtain sensitive information. (CVE-2026-59846) Ben Smyth discovered that libssh incorrectly verified AES-GCM authentication tags when built with the OpenSSL backend.]]></description>
+      <pubDate>Mon, 23 Nov 2026 17:32:05 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9187-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>CrowdStrike Acquires Zscaler for $43.9B</title>
@@ -170,6 +215,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:102507: Important: webkit2gtk3 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102507-important-webkit2gtk3-security-up-cac88745</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102507-important-webkit2gtk3-security-up-cac88745</guid>
+      <description><![CDATA[An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:30:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102507">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Grafana Update Addresses Remote Code Execution Vulnerabilities</title>
       <link>https://secubuzz.com/news/grafana-update-addresses-remote-code-execution-vul-55e19624</link>
       <guid isPermaLink="true">https://secubuzz.com/news/grafana-update-addresses-remote-code-execution-vul-55e19624</guid>
@@ -185,6 +239,15 @@
       <description><![CDATA[DiskStation Manager (DSM) versions prior to 7.4.1 contain a vulnerability that could allow unauthorized access or privilege escalation. The flaw permits attackers to exploit a logic error in DSM’s authentication flow, potentially bypassing user credentials and gaining elevated privileges. Administrators should upgrade to the latest DSM release or apply the vendor-issued patch, and enforce strict access controls to mitigate exploitation.]]></description>
       <pubDate>Mon, 23 Nov 2026 15:23:24 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/synology-security-advisory-av26-1193">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:100561: Important: OpenJDK 11.0.33.1 ELS Security Update For Portable Linux Builds</title>
+      <link>https://secubuzz.com/news/rhsa-2026-100561-important-openjdk-11-0-33-1-els-s-966b21de</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100561-important-openjdk-11-0-33-1-els-s-966b21de</guid>
+      <description><![CDATA[An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:22:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:100561">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -393,69 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 13:22:20 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html">The Hacker News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel-RT Patch for RHEL 9.2</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-rt-patch-for-rhel-9-2-f2ae7ef0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-rt-patch-for-rhel-9-2-f2ae7ef0</guid>
-      <description><![CDATA[Red Hat released an important kernel-rt update for RHEL 9.2 SAP services, addressing multiple security bugs. The update mitigates vulnerabilities that could allow privilege escalation or denial of service, though no active exploitation has been reported. Security teams should apply the kernel-rt patch immediately and verify kernel integrity to maintain system stability.]]></description>
-      <pubDate>Mon, 23 Nov 2026 13:07:58 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102294">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cleverbridge Reports Credit Card Data Theft</title>
-      <link>https://secubuzz.com/news/cleverbridge-reports-credit-card-data-theft-c5388145</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cleverbridge-reports-credit-card-data-theft-c5388145</guid>
-      <description><![CDATA[Cleverbridge confirmed a breach on November 4, 2026, during which attackers accessed stored credit card and CVV numbers from its e-commerce platform. The incident involved unauthorized activity detected by the platform, but the extent of affected clients and customer data remains unspecified. Cleverbridge urged affected customers to monitor accounts, change passwords, and contact payment processors for further protection.]]></description>
-      <pubDate>Mon, 23 Nov 2026 13:00:14 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/23/cleverbridge-data-breach-card-numbers-cvv/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important FreeRDP Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-freerdp-update-4d3c810a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-freerdp-update-4d3c810a</guid>
-      <description><![CDATA[Red Hat released an important security update for the freerdp package on RHEL 8, addressing a flaw that could allow remote code execution via RDP packets. The vulnerability, rated CVSS 8.2 by Red Hat, enables attackers with network access to execute code on the target system.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:58:28 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102286">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>iTerm2 Remote Code Execution Flaw Lets Hackers Run Malicious Commands by Displaying Crafted Files</title>
-      <link>https://secubuzz.com/news/iterm2-remote-code-execution-flaw-lets-hackers-run-1a5ec94c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/iterm2-remote-code-execution-flaw-lets-hackers-run-1a5ec94c</guid>
-      <description><![CDATA[A security flaw in iTerm2, a macOS terminal emulator, lets attackers run commands when a user displays a specially crafted file in a vulnerable terminal session. The user does not have to run the file as a script or paste a command supplied by the attacker.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:57:36 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/iterm2-remote-code-execution-flaw/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>FBI Investigates Breach of National Crime Information Center</title>
-      <link>https://secubuzz.com/news/fbi-investigates-breach-of-national-crime-informat-198d95d0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-investigates-breach-of-national-crime-informat-198d95d0</guid>
-      <description><![CDATA[A breach of the FBI’s National Crime Information Center (NCIC) exposed sensitive criminal and investigative data. The intrusion exploited an unpatched authentication flaw, potentially granting attackers access to records of fugitives, missing persons, and criminal histories. FBI officials are investigating, urging stakeholders to monitor for unauthorized disclosures and tighten internal access controls while a patch is developed.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:57:11 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/11/fbi-crime-database-reportedly-hacked">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AI Agent Enables Theft of Insurer and EU Data</title>
-      <link>https://secubuzz.com/news/ai-agent-enables-theft-of-insurer-and-eu-data-68acdc27</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-enables-theft-of-insurer-and-eu-data-68acdc27</guid>
-      <description><![CDATA[A low-skilled hacker used a jailbroken AI agent to exfiltrate an insurer’s customer database and 8.6 GB of EU municipal files over nine days. The attacker issued misspelled French commands, exploiting the agent’s model to bypass authentication. Security teams should isolate the AI environment, revoke credentials, and conduct comprehensive analysis of breached systems.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:44:59 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/jailbroken-ai-agent/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>CrowdStrike Agrees to Acquire Zscaler for $43.9B</title>
-      <link>https://secubuzz.com/news/crowdstrike-agrees-to-acquire-zscaler-for-43-9b-7b45dcf3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-agrees-to-acquire-zscaler-for-43-9b-7b45dcf3</guid>
-      <description><![CDATA[CrowdStrike announced a $43.9 billion all-stock acquisition of Zscaler, aiming to integrate Zscaler’s cloud network security into its Falcon platform. The deal expands CrowdStrike’s control over device endpoints and corporate app connections, potentially consolidating cloud security services under a single vendor. Regulatory approvals remain pending; stakeholders should monitor integration timelines and potential antitrust reviews.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:44:26 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/crowdstrike-acquire-zscaler/">Cyber Security News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

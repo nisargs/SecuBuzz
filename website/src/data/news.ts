@@ -11,6 +11,84 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-134056-out-of-bounds-write-in-padded-bloc-994f1241",
+    "title": "CVE-2026-134056 - Out-of-bounds write in padded block cipher decryption in AWS-LC",
+    "summary": "Bulletin ID: 2026-196-AWS Publication Date: 11/23/2026 12:00 PM PST Description: We identified CVE-2026-134056, an out-of-bounds write issue in AWS-LC's padded block cipher decryption. If the output buffer is the minimum documented size, AWS-LC can write one byte past its end. The aws-lc-rs StreamingDecryptingKey API has a similar issue with cbc_pkcs7 and ecb_pkcs7.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-196-aws/",
+    "publishedAt": "2026-11-23T20:29:41.000Z",
+    "cves": [
+      "CVE-2026-134056"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-134056-out-of-bounds-write-in-padded-bloc",
+      "article-994f1241",
+      "994f1241",
+      "cve-2026-134056-out-of-bounds-write-in-padded-bloc-28459b",
+      "cve-2026-134056-out-of-bounds-write-in-padded-block-cipher-d"
+    ]
+  },
+  {
+    "slug": "trump-names-industry-veteran-davies-as-acting-cybe-bcd7ff11",
+    "title": "Trump Names Industry Veteran Davies as Acting Cyber Director",
+    "summary": "Trump appointed Kirsten Davies as National Cyber Director, signaling a shift toward industry expertise amid outages and geopolitical tensions. The move follows criticism of cyber leadership and aims to leverage Davies' private sector experience to strengthen U.S. cyber defenses. The appointment is expected to influence policy direction and coordination with industry partners, though no immediate operational changes have been announced.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise",
+    "publishedAt": "2026-11-23T20:13:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "trump-names-industry-veteran-davies-as-acting-cybe",
+      "article-bcd7ff11",
+      "bcd7ff11",
+      "trump-names-industry-veteran-davies-as-acting-cybe-5720f2",
+      "trump-names-industry-veteran-davies-as-acting-cyber-director"
+    ]
+  },
+  {
+    "slug": "openrouter-removes-ai-providers-for-data-handling-161bd63a",
+    "title": "OpenRouter Removes AI Providers for Data Handling Violations",
+    "summary": "OpenRouter removed three AI providers after discovering they violated data-handling policies and exposed sensitive user prompts and secrets. The policy breach leaked proprietary prompts, potentially compromising client confidentiality and violating OpenRouter's privacy commitments. OpenRouter suspended the providers, issued a public notice, and is reviewing vetting procedures to prevent future violations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+    "publishedAt": "2026-11-23T20:00:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openrouter-removes-ai-providers-for-data-handling",
+      "article-161bd63a",
+      "161bd63a",
+      "openrouter-removes-ai-providers-for-data-handling-35ecc2",
+      "openrouter-removes-ai-providers-for-data-handling-violations"
+    ]
+  },
+  {
+    "slug": "chrome-ios-stable-158-released-with-stability-impr-cc781fff",
+    "title": "Chrome iOS Stable 158 Released with Stability Improvements",
+    "summary": "Google released Chrome Stable 158 (158.0.8127.86) for iOS, adding stability and performance improvements to the mobile browser. The update addresses minor bugs and optimizes rendering, reducing memory usage and enhancing page load times on iOS devices. The new build will be available on the App Store within hours, and users are encouraged to update to benefit from the fixes.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update_0595441535.html",
+    "publishedAt": "2026-11-23T18:58:34.761Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-ios-stable-158-released-with-stability-impr",
+      "article-cc781fff",
+      "cc781fff",
+      "chrome-ios-stable-158-released-with-stability-impr-5cad3b",
+      "chrome-ios-stable-158-released-with-stability-improvements"
+    ]
+  },
+  {
     "slug": "laliga-data-breach-exposes-fans-personal-informati-47226265",
     "title": "LaLiga Data Breach Exposes Fans Personal Information",
     "summary": "LaLiga disclosed a breach that exposed personal data of its users and some affiliated clubs. The theft included names, email addresses, phone numbers, and other sensitive information, raising significant privacy and regulatory concerns. LaLiga notified affected users, launched incident response, and is cooperating with law enforcement to trace the attack.",
@@ -105,6 +183,30 @@ export const news: NewsBrief[] = [
       "article-75f1fbe0",
       "75f1fbe0",
       "webworm-modifies-softether-vpn-to-evade-detection-514f20"
+    ]
+  },
+  {
+    "slug": "usn-9187-1-libssh-vulnerabilities-77c22071",
+    "title": "USN-9187-1: libssh vulnerabilities",
+    "summary": "This issue only affected Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. (CVE-2026-59843) Mikhail Ilin and Saransh Rana discovered that libssh did not correctly sanitize shell metacharacters when expanding usernames in ProxyCommand strings. An attacker could possibly use this issue to obtain sensitive information. (CVE-2026-59846) Ben Smyth discovered that libssh incorrectly verified AES-GCM authentication tags when built with the OpenSSL backend.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9187-1",
+    "publishedAt": "2026-11-23T17:32:05.000Z",
+    "cves": [
+      "CVE-2026-59843",
+      "CVE-2026-59846",
+      "CVE-2026-59847",
+      "CVE-2026-59848",
+      "CVE-2026-59850"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9187-1-libssh-vulnerabilities",
+      "article-77c22071",
+      "77c22071",
+      "usn-9187-1-libssh-vulnerabilities-7e77e6"
     ]
   },
   {
@@ -354,6 +456,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-102507-important-webkit2gtk3-security-up-cac88745",
+    "title": "RHSA-2026:102507: Important: webkit2gtk3 security update",
+    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102507",
+    "publishedAt": "2026-11-23T15:30:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102507-important-webkit2gtk3-security-up",
+      "article-cac88745",
+      "cac88745",
+      "rhsa-2026-102507-important-webkit2gtk3-security-up-2ee169",
+      "rhsa-2026-102507-important-webkit2gtk3-security-update"
+    ]
+  },
+  {
     "slug": "grafana-update-addresses-remote-code-execution-vul-55e19624",
     "title": "Grafana Update Addresses Remote Code Execution Vulnerabilities",
     "summary": "A Grafana security update for Red Hat Enterprise Linux 10 addresses multiple vulnerabilities that could enable remote code execution through the web interface. The vulnerabilities are rated Important, with CVSS base scores listed in the CVE references, indicating high severity potential for exploitation. Red Hat has released the update; administrators should apply the patch immediately to mitigate the risk.",
@@ -389,6 +510,25 @@ export const news: NewsBrief[] = [
       "f780faa3",
       "synology-dsm-vulnerability-affects-versions-before-741c15",
       "synology-dsm-vulnerability-affects-versions-before-7-4-1"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-100561-important-openjdk-11-0-33-1-els-s-966b21de",
+    "title": "RHSA-2026:100561: Important: OpenJDK 11.0.33.1 ELS Security Update For Portable Linux Builds",
+    "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100561",
+    "publishedAt": "2026-11-23T15:22:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-100561-important-openjdk-11-0-33-1-els-s",
+      "article-966b21de",
+      "966b21de",
+      "rhsa-2026-100561-important-openjdk-11-0-33-1-els-s-2ee081",
+      "rhsa-2026-100561-important-openjdk-11-0-33-1-els-security-up"
     ]
   },
   {
@@ -838,6 +978,42 @@ export const news: NewsBrief[] = [
       "article-f2ae7ef0",
       "f2ae7ef0",
       "red-hat-releases-kernel-rt-patch-for-rhel-9-2-2ee15f"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-php-8-2-security-update-f727fc43",
+    "title": "Red Hat Releases Critical PHP 8.2 Security Update",
+    "summary": "Red Hat released a critical update for php:8.2 on RHEL 9, fixing flaws that could allow remote code execution via malformed PHP input. The patch addresses multiple CVE-identified vulnerabilities with CVSS scores above 9.0, eliminating unauthenticated code injection risk. Apply RHSA-2026:102261 or upgrade to the latest php:8.2 image immediately, then verify application compatibility.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102261",
+    "publishedAt": "2026-11-23T13:05:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-php-8-2-security-update",
+      "article-f727fc43",
+      "f727fc43",
+      "red-hat-releases-critical-php-8-2-security-update-2ee15e"
+    ]
+  },
+  {
+    "slug": "rhel-10-rsync-update-addresses-security-flaws-3f6b1e3f",
+    "title": "RHEL 10 rsync Update Addresses Security Flaws",
+    "summary": "Red Hat released an rsync update for RHEL 10, rated Important by Product Security, addressing multiple undisclosed vulnerabilities. Each vulnerability has an associated CVSS base score, but no specific CVE identifiers are listed in the advisory. Users should apply the update promptly to mitigate potential exploitation and ensure rsync integrity on their systems.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102293",
+    "publishedAt": "2026-11-23T13:00:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhel-10-rsync-update-addresses-security-flaws",
+      "article-3f6b1e3f",
+      "3f6b1e3f",
+      "rhel-10-rsync-update-addresses-security-flaws-2ee15f"
     ]
   },
   {
@@ -9339,172 +9515,6 @@ export const news: NewsBrief[] = [
       "article-7a2b859f",
       "7a2b859f",
       "gatekeeper-asymmetry-makes-llms-more-vulnerable-4ced8c"
-    ]
-  },
-  {
-    "slug": "cisco-expressway-devices-hacked-after-poc-release-3751e940",
-    "title": "Cisco Expressway Devices Hacked After PoC Release",
-    "summary": "Attackers compromised clustered Cisco Expressway devices at a Russian organization shortly after a public proof-of-concept was released. The flaw allowed authenticated remote code execution via malformed SIP messages, enabling attackers to gain privileged access and prepare lateral movement tools. Cisco issued a patch in the following security advisory, and security teams should update firmware and disable unused SIP services.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/",
-    "publishedAt": "2026-11-19T13:12:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-expressway-devices-hacked-after-poc-release",
-      "article-3751e940",
-      "3751e940",
-      "cisco-expressway-devices-hacked-after-poc-release-512afc"
-    ]
-  },
-  {
-    "slug": "drupal-fixes-critical-remote-code-execution-flaw-8a5e1fa6",
-    "title": "Drupal Fixes Critical Remote Code Execution Flaw",
-    "summary": "Drupal Security Team patched a critical remote code execution flaw that could let attackers seize control of vulnerable sites. The vulnerability, a buffer overflow in a core module, carries a CVSS score of 9.8 and has a publicly available proof-of-concept exploit. Administrators must apply the latest Drupal update immediately and confirm the core module is patched to prevent remote takeover.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
-    "publishedAt": "2026-11-19T13:08:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "drupal-fixes-critical-remote-code-execution-flaw",
-      "article-8a5e1fa6",
-      "8a5e1fa6",
-      "drupal-fixes-critical-remote-code-execution-flaw-4acb1d"
-    ]
-  },
-  {
-    "slug": "cisa-warns-hackers-are-actively-exploiting-four-fl-3f05fb63",
-    "title": "CISA Warns Hackers Are Actively Exploiting Four Flaws in Synology, LiteLLM, Apache Axis and REDCap",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added four flaws to its Known Exploited Vulnerabilities (KEV) catalog on November 18, 2026, after finding evidence that attackers were already exploiting them. The entries cover Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis and Vanderbilt University’s Research Electronic Data Capture platform, better known as REDCap.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/flaws-in-synology-litellm-apache-axis-and-redcap/",
-    "publishedAt": "2026-11-19T13:06:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-warns-hackers-are-actively-exploiting-four-fl",
-      "article-3f05fb63",
-      "3f05fb63",
-      "cisa-warns-hackers-are-actively-exploiting-four-fl-67f111",
-      "cisa-warns-hackers-are-actively-exploiting-four-flaws-in-syn"
-    ]
-  },
-  {
-    "slug": "microsoft-agent-framework-compromised-by-credentia-10c4e003",
-    "title": "Microsoft Agent Framework Compromised by Credential Stealer",
-    "summary": "Microsoft’s agent-framework package on PyPI was compromised by malicious releases 1.26.1 and 1.26.2 that steal cloud and CI/CD credentials. The supply-chain intrusion exploited the toolkit’s execution, enabling credential exfiltration without user interaction; detected by StepSecurity, OX Security, and Socket. Microsoft should remove the compromised packages from PyPI, release a clean version, and advise developers to audit installed packages and update.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/microsoft-agent-framework-package-pypi-compromised/",
-    "publishedAt": "2026-11-19T12:53:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-agent-framework-compromised-by-credentia",
-      "article-10c4e003",
-      "10c4e003",
-      "microsoft-agent-framework-compromised-by-credentia-2b0fc5",
-      "microsoft-agent-framework-compromised-by-credential-stealer"
-    ]
-  },
-  {
-    "slug": "chrome-158-fixes-six-critical-flaws-139afb67",
-    "title": "Chrome 158 Fixes Six Critical Flaws",
-    "summary": "Google released Chrome 158, addressing 204 security issues, including six critical vulnerabilities. Two of the critical flaws were identified using AI-assisted analysis, highlighting the role of machine learning in vulnerability discovery. Users should update to Chrome 158 immediately to mitigate the disclosed vulnerabilities and maintain secure browsing and protect against exploitation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/chrome-patches-six-critical-flaws-two-found-with-ais-help",
-    "publishedAt": "2026-11-19T12:38:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-158-fixes-six-critical-flaws",
-      "article-139afb67",
-      "139afb67",
-      "chrome-158-fixes-six-critical-flaws-745b88"
-    ]
-  },
-  {
-    "slug": "microsoft-365-mfa-bypassed-via-device-code-phishin-6ca870f6",
-    "title": "Microsoft 365 MFA Bypassed via Device Code Phishing",
-    "summary": "Hackers hijacked Microsoft 365 accounts by sending fake payment notices that redirect users to a legitimate Microsoft sign-in page. The attack exploits the device code flow’s lack of MFA enforcement, letting attackers obtain tokens without credential verification. Microsoft recommends disabling device code authentication for sensitive workloads and enforcing MFA; users should verify invoice authenticity before signing in.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/device-code-authentication/",
-    "publishedAt": "2026-11-19T12:26:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-365-mfa-bypassed-via-device-code-phishin",
-      "article-6ca870f6",
-      "6ca870f6",
-      "microsoft-365-mfa-bypassed-via-device-code-phishin-1a5b88",
-      "microsoft-365-mfa-bypassed-via-device-code-phishing"
-    ]
-  },
-  {
-    "slug": "stepsecurity-raises-20m-for-supply-chain-defense-0bdac8bf",
-    "title": "StepSecurity Raises $20M for Supply Chain Defense",
-    "summary": "StepSecurity announced a $20M funding round to expand its supply chain protection platform. The capital will accelerate development and distribution of its security solutions, targeting supply chain risk mitigation for enterprises and supporting rapid scaling. No immediate patch or vulnerability; the announcement signals investment in future defensive capabilities within the cybersecurity market.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/",
-    "publishedAt": "2026-11-19T12:23:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "stepsecurity-raises-20m-for-supply-chain-defense",
-      "article-0bdac8bf",
-      "0bdac8bf",
-      "stepsecurity-raises-20m-for-supply-chain-defense-3066df"
-    ]
-  },
-  {
-    "slug": "apache-roller-axis-flaws-exploited-in-confluence-a-2278081c",
-    "title": "Apache Roller, Axis Flaws Exploited in Confluence Attacks",
-    "summary": "Attackers have exploited critical vulnerabilities in Apache Roller and Axis, targeting Confluence Data Center deployments. The Axis flaw permits remote code execution through malformed XML, while the Roller issue allows unauthorized file uploads, both with CVSS scores above 8.0. Administrators should apply vendor patches, disable XML processing if possible, and enforce strict file-type validation to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/",
-    "publishedAt": "2026-11-19T12:13:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apache-roller-axis-flaws-exploited-in-confluence-a",
-      "article-2278081c",
-      "2278081c",
-      "apache-roller-axis-flaws-exploited-in-confluence-a-ebd020",
-      "apache-roller-axis-flaws-exploited-in-confluence-attacks"
-    ]
-  },
-  {
-    "slug": "open-weight-ai-governance-gap-and-mitigation-b349f721",
-    "title": "Open-Weight AI Governance Gap and Mitigation",
-    "summary": "Open-weight AI adoption grows due to lower costs, enhanced data privacy, and increased control. However, many organizations fail to address the associated risks, creating a governance gap that exposes them to data misuse, model bias, and compliance violations. Industry experts recommend establishing risk frameworks, implementing oversight mechanisms, and adopting best-practice guidelines to mitigate potential threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/the-governance-gap-in-open-weight-ai-and-what-to-do-about-it/",
-    "publishedAt": "2026-11-19T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "open-weight-ai-governance-gap-and-mitigation",
-      "article-b349f721",
-      "b349f721",
-      "open-weight-ai-governance-gap-and-mitigation-24678a"
     ]
   }
 ];
