@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 03:46:40 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 04:44:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Fence-Agents Receives Important Security Update</title>
+      <link>https://secubuzz.com/news/fence-agents-receives-important-security-update-561939fb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fence-agents-receives-important-security-update-561939fb</guid>
+      <description><![CDATA[Red Hat released an Important security update for the fence-agents package on RHEL 8. The update addresses multiple vulnerabilities that could allow privilege escalation or denial of service, as indicated by the CVSS scores linked in the advisory. Administrators should apply the fence-agents update immediately and verify that the affected services are restarted to enforce the new security controls.]]></description>
+      <pubDate>Mon, 23 Nov 2026 04:41:06 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102154">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Curl Receives Moderate Security Update</title>
+      <link>https://secubuzz.com/news/curl-receives-moderate-security-update-eaf8d87e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/curl-receives-moderate-security-update-eaf8d87e</guid>
+      <description><![CDATA[Red Hat issued a Moderate security update for the curl package on RHEL 8. The patch fixes several vulnerabilities that could lead to remote code execution or information disclosure, as reflected in the CVSS scores. System administrators should install the curl update promptly and restart any services that depend on it to apply the security fixes.]]></description>
+      <pubDate>Mon, 23 Nov 2026 04:16:45 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102194">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Releases Kernel Security Update for RHEL6</title>
       <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel6-34a6796a</link>
@@ -35,10 +53,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Red Hat Issues git-lfs Security Patch</title>
-      <link>https://secubuzz.com/news/red-hat-issues-git-lfs-security-patch-41c2191c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-git-lfs-security-patch-41c2191c</guid>
-      <description><![CDATA[Red Hat released a security update for git-lfs on RHEL 10.2 EUS, addressing multiple critical vulnerabilities referenced by CVE identifiers. The defects involve improper validation of LFS objects, potentially enabling remote code execution through malicious repositories. Red Hat has issued a patch; administrators should apply it promptly to prevent exploitation.]]></description>
+      <title>git-lfs Security Update for Red Hat Enterprise Linux 10</title>
+      <link>https://secubuzz.com/news/git-lfs-security-update-for-red-hat-enterprise-lin-2d84a280</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/git-lfs-security-update-for-red-hat-enterprise-lin-2d84a280</guid>
+      <description><![CDATA[Red Hat released a security update for git-lfs on Red Hat Enterprise Linux 10, addressing a vulnerability that could allow code execution. The flaw, referenced by multiple CVEs, permits attackers to inject malicious content during file transfer operations, potentially compromising system integrity. Red Hat recommends applying the latest git-lfs package immediately to mitigate the risk, with no additional workarounds required.]]></description>
       <pubDate>Mon, 23 Nov 2026 03:32:40 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102186">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
@@ -50,6 +68,24 @@
       <description><![CDATA[Red Hat released a security update for the xdg-desktop-portal component in Red Enterprise Linux 10, addressing multiple vulnerabilities. The update mitigates flaws that could allow privilege escalation or unauthorized data access, with CVSS scores provided in the CVE references. Administrators should apply the RHSA-2026:102177 update immediately to ensure protection against the identified weaknesses.]]></description>
       <pubDate>Mon, 23 Nov 2026 03:15:20 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102177">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Volkswagen Cars Exposed via Bluetooth Spy Flaws</title>
+      <link>https://secubuzz.com/news/volkswagen-cars-exposed-via-bluetooth-spy-flaws-1dfe3aed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/volkswagen-cars-exposed-via-bluetooth-spy-flaws-1dfe3aed</guid>
+      <description><![CDATA[Researchers demonstrated that Bluetooth flaws in Volkswagen vehicles enable eavesdropping on conversations and GPS tracking. The flaws grant unauthorized cabin control and location access, exposing private data and enabling remote manipulation, with a 16-month exposure after disclosure. Volkswagen should expedite the release of a patch and advise owners to disable Bluetooth or apply the fix immediately to mitigate the risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 03:09:11 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hack-volkswagen-cars-via-bluetooth/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI Finds Zero-Day Mobile OS Bypass and RCE</title>
+      <link>https://secubuzz.com/news/openai-finds-zero-day-mobile-os-bypass-and-rce-808117f3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-finds-zero-day-mobile-os-bypass-and-rce-808117f3</guid>
+      <description><![CDATA[OpenAI’s GPT-6.2 Astra discovered zero-day flaws in a popular mobile OS and a common network service. The flaws include a permission-bypass exposing private data and a remote code execution path reachable from a low-privileged role. No vendor patch is yet available; security teams should monitor OpenAI advisories and apply any future OS or service updates promptly.]]></description>
+      <pubDate>Mon, 23 Nov 2026 03:06:27 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/openai-gpt-6-2-astra-0-day-vulnerabilities/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -114,6 +150,15 @@
       <pubDate>Mon, 23 Nov 2026 02:10:45 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102164">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ISC Stormcast: Monday November 23, 2026</title>
+      <link>https://secubuzz.com/news/isc-stormcast-monday-november-23-2026-3e9121da</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-monday-november-23-2026-3e9121da</guid>
+      <description><![CDATA[The SANS Internet Storm Center releases its weekly Stormcast podcast for Monday, November 23, 2026. The episode covers current threat landscape insights, emerging attack trends, and defensive best practices shared by industry experts. Listeners can access the recording and transcript via the ISC website, providing a resource for security teams to stay informed.]]></description>
+      <pubDate>Mon, 23 Nov 2026 02:00:04 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33548">SANS Internet Storm Center</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Updates flatpak on RHEL 8.8</title>
@@ -411,51 +456,6 @@
       <pubDate>Sat, 21 Nov 2026 12:08:50 GMT</pubDate>
       <source url="https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Malicious Webpage Extracts Meta Muse Private Chats</title>
-      <link>https://secubuzz.com/news/malicious-webpage-extracts-meta-muse-private-chats-24931218</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-webpage-extracts-meta-muse-private-chats-24931218</guid>
-      <description><![CDATA[Researchers showed a single malicious webpage can extract private conversations and stored memories from Meta Muse without approval prompts. The method could also harvest credentials for connected accounts, but the demo was confined to one user and did not impact real users. Meta has not issued a fix; users should avoid untrusted webpages and consider disabling Muse until further guidance.]]></description>
-      <pubDate>Sat, 21 Nov 2026 11:53:07 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GPGME Memory Bug Exposes App Data via Malicious Keys</title>
-      <link>https://secubuzz.com/news/gpgme-memory-bug-exposes-app-data-via-malicious-ke-95ec495f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gpgme-memory-bug-exposes-app-data-via-malicious-ke-95ec495f</guid>
-      <description><![CDATA[A malicious OpenPGP key with an unusually long user ID triggers a critical memory bug in GPGME, the core library of GnuPG, exposing application data. The flaw, CVE-2026-129975, affects all software using GPGME before 2.3.0 and lets attackers read memory without authentication. GnuPG released patched versions; users should upgrade to GPGME 2.3.0+ and enforce key-length checks to mitigate the issue.]]></description>
-      <pubDate>Sat, 21 Nov 2026 11:05:53 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AI Agents Exploit MONAI Label Zero-Day for Root Access</title>
-      <link>https://secubuzz.com/news/ai-agents-exploit-monai-label-zero-day-for-root-ac-7d5446ad</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-exploit-monai-label-zero-day-for-root-ac-7d5446ad</guid>
-      <description><![CDATA[AI agents discovered a zero-day in MONAI Label 0.8.5 and earlier, an open-source medical-imaging server, and used it to gain root on a university server. The flaw permits unauthenticated writes outside the server’s storage folder, enabling full system control without credentials. A patch for MONAI Label 0.8.5+ is available; admins should upgrade immediately and restrict default write permissions.]]></description>
-      <pubDate>Sat, 21 Nov 2026 11:03:17 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Signal Blocks AI Screenshot Access on iOS 27 and Android</title>
-      <link>https://secubuzz.com/news/signal-blocks-ai-screenshot-access-on-ios-27-and-a-28ccf6f8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/signal-blocks-ai-screenshot-access-on-ios-27-and-a-28ccf6f8</guid>
-      <description><![CDATA[Signal announced a new screenshot-blocking feature to prevent AI assistants from capturing private chats on iOS 27 and Android. The update addresses a privacy flaw that allowed screen-data interception, enabling AI agents to harvest message content without user interaction. Users can now install the patch to safeguard conversations, though the protection remains incomplete against advanced AI detection.]]></description>
-      <pubDate>Sat, 21 Nov 2026 08:49:20 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISA Adds VMware, Cisco, Apache Flaws to KEV</title>
-      <link>https://secubuzz.com/news/cisa-adds-vmware-cisco-apache-flaws-to-kev-5718e2a1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-vmware-cisco-apache-flaws-to-kev-5718e2a1</guid>
-      <description><![CDATA[CISA added four actively exploited flaws to its KEV list, including a CVE-2026-129448 vulnerability in Broadcom VMware vCenter. The CVE-2026-129448 flaw, a deserialization of untrusted data with CVSS 9.8, enables remote code execution across VMware, Cisco Expressway, Apache Roller, and SAP NetWeaver systems. Patches are available for all affected products; administrators must apply updates immediately to mitigate the high-risk exploitation.]]></description>
-      <pubDate>Sat, 21 Nov 2026 08:49:13 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html">The Hacker News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

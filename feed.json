@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102154",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102154",
+    "title": "Fence-Agents Receives Important Security Update",
+    "headline": "Fence-Agents Receives Important Security Update",
+    "summary": "Red Hat released an Important security update for the fence-agents package on RHEL 8. The update addresses multiple vulnerabilities that could allow privilege escalation or denial of service, as indicated by the CVSS scores linked in the advisory. Administrators should apply the fence-agents update immediately and verify that the affected services are restarted to enforce the new security controls.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T04:41:06.000Z",
+    "ingestedAt": "2026-11-23T04:43:16.082Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102154",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102194",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102194",
+    "title": "Curl Receives Moderate Security Update",
+    "headline": "Curl Receives Moderate Security Update",
+    "summary": "Red Hat issued a Moderate security update for the curl package on RHEL 8. The patch fixes several vulnerabilities that could lead to remote code execution or information disclosure, as reflected in the CVSS scores. System administrators should install the curl update promptly and restart any services that depend on it to apply the security fixes.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T04:16:45.000Z",
+    "ingestedAt": "2026-11-23T04:43:16.082Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102194",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:102182",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102182",
     "title": "Red Hat Releases Kernel Security Update for RHEL6",
@@ -50,18 +82,23 @@
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:102186",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102186",
-    "title": "Red Hat Issues git-lfs Security Patch",
-    "headline": "Red Hat Issues git-lfs Security Patch",
-    "summary": "Red Hat released a security update for git-lfs on RHEL 10.2 EUS, addressing multiple critical vulnerabilities referenced by CVE identifiers. The defects involve improper validation of LFS objects, potentially enabling remote code execution through malicious repositories. Red Hat has issued a patch; administrators should apply it promptly to prevent exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
+    "title": "git-lfs Security Update for Red Hat Enterprise Linux 10",
+    "headline": "git-lfs Security Update for Red Hat Enterprise Linux 10",
+    "summary": "Red Hat released a security update for git-lfs on Red Hat Enterprise Linux 10, addressing a vulnerability that could allow code execution. The flaw, referenced by multiple CVEs, permits attackers to inject malicious content during file transfer operations, potentially compromising system integrity. Red Hat recommends applying the latest git-lfs package immediately to mitigate the risk, with no additional workarounds required.",
+    "category": "CVE",
+    "severity": "CRITICAL",
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-11-23T03:32:40.000Z",
     "ingestedAt": "2026-11-23T03:43:08.707Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:102186",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102184"
+      }
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:102177",
@@ -77,6 +114,38 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:102177",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/hack-volkswagen-cars-via-bluetooth/",
+    "sourceUrl": "https://cybersecuritynews.com/hack-volkswagen-cars-via-bluetooth/",
+    "title": "Volkswagen Cars Exposed via Bluetooth Spy Flaws",
+    "headline": "Volkswagen Cars Exposed via Bluetooth Spy Flaws",
+    "summary": "Researchers demonstrated that Bluetooth flaws in Volkswagen vehicles enable eavesdropping on conversations and GPS tracking. The flaws grant unauthorized cabin control and location access, exposing private data and enabling remote manipulation, with a 16-month exposure after disclosure. Volkswagen should expedite the release of a patch and advise owners to disable Bluetooth or apply the fix immediately to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-23T03:09:11.000Z",
+    "ingestedAt": "2026-11-23T04:43:16.082Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/hack-volkswagen-cars-via-bluetooth/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/openai-gpt-6-2-astra-0-day-vulnerabilities/",
+    "sourceUrl": "https://cybersecuritynews.com/openai-gpt-6-2-astra-0-day-vulnerabilities/",
+    "title": "OpenAI Finds Zero-Day Mobile OS Bypass and RCE",
+    "headline": "OpenAI Finds Zero-Day Mobile OS Bypass and RCE",
+    "summary": "OpenAI’s GPT-6.2 Astra discovered zero-day flaws in a popular mobile OS and a common network service. The flaws include a permission-bypass exposing private data and a remote code execution path reachable from a low-privileged role. No vendor patch is yet available; security teams should monitor OpenAI advisories and apply any future OS or service updates promptly.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-23T03:06:27.000Z",
+    "ingestedAt": "2026-11-23T04:43:16.082Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/openai-gpt-6-2-astra-0-day-vulnerabilities/",
     "additionalSources": []
   },
   {
@@ -189,6 +258,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:102164",
+    "additionalSources": []
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33548",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33548",
+    "title": "ISC Stormcast: Monday November 23, 2026",
+    "headline": "ISC Stormcast: Monday November 23, 2026",
+    "summary": "The SANS Internet Storm Center releases its weekly Stormcast podcast for Monday, November 23, 2026. The episode covers current threat landscape insights, emerging attack trends, and defensive best practices shared by industry experts. Listeners can access the recording and transcript via the ISC website, providing a resource for security teams to stay informed.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-11-23T02:00:04.000Z",
+    "ingestedAt": "2026-11-23T04:43:20.844Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://isc.sans.edu/diary/rss/33548",
     "additionalSources": []
   },
   {
@@ -842,6 +927,22 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
+    "sourceUrl": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
+    "title": "Vendors Address AI Agent Access-Control Challenges",
+    "headline": "Vendors Address AI Agent Access-Control Challenges",
+    "summary": "Security vendors are developing identity, runtime, and development controls to restrict AI agents to authorized tasks. The convergence of controls aims to mitigate risks of agents overstepping boundaries, a gap that could enable data exfiltration or policy violations. CISOs must evaluate vendor solutions and implement layered controls to enforce task constraints, as no single standard exists yet.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-11-21T01:31:23.000Z",
+    "ingestedAt": "2026-11-23T04:43:20.844Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
+    "additionalSources": []
   },
   {
     "id": "https://cybersecuritynews.com/enterprise-risk-management-tools/",
@@ -8237,113 +8338,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
-    "sourceUrl": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
-    "title": "Microsoft Launches AI-Driven Security Platform",
-    "headline": "Microsoft Launches AI-Driven Security Platform",
-    "summary": "Microsoft unveiled its AI-driven security platform at Ignite, offering new agents for threat hunting and defensive operations. The platform includes four blue-team agents and a Recon Agent, with some features still in preview. Security teams should monitor release notes, integrate the agents into workflows, and follow Microsoft guidance for deployment.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-18T12:14:23.000Z",
-    "ingestedAt": "2026-11-18T13:43:22.313Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/endpoint-security/microsoft-offense-defense-ai-security-tools"
-      }
-    ]
-  },
-  {
-    "id": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
-    "title": "France Blames Iran for Fridge Cyberattacks",
-    "headline": "France Blames Iran for Fridge Cyberattacks",
-    "summary": "U.S. intelligence agencies assessed Iran responsible for a series of fridge cyberattacks targeting French facilities. The low-confidence assessment links attacks to Iran, not a specific group, and hints at similar incidents across Europe. No public patch is required, but teams should monitor critical IoT device vulnerabilities for potential supply-chain risks.",
-    "category": "NATION_STATE",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "publishedAt": "2026-11-18T12:05:35.000Z",
-    "ingestedAt": "2026-11-18T13:43:52.984Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-    "headline": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-    "summary": "BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. Aware of an exploited vulnerability not currently listed in the KEV Catalog?",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-11-18T12:00:00.000Z",
-    "ingestedAt": "2026-11-18T20:44:19.864Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2024-10441",
-      "CVE-2026-40217",
-      "CVE-2026-90436",
-      "CVE-2026-90817"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://cybersecuritynews.com/puppet-enterprise-flaw-actively-exploited/",
-    "sourceUrl": "https://cybersecuritynews.com/puppet-enterprise-flaw-actively-exploited/",
-    "title": "CISA Flags Active Exploitation of Puppet Enterprise Vulnerability",
-    "headline": "CISA Flags Active Exploitation of Puppet Enterprise Vulnerability",
-    "summary": "CISA identified an actively exploited vulnerability in Perforce Puppet Enterprise that allows remote code execution on Puppet Servers. Cataloged as CVE-2026-115731, the flaw permits unauthenticated attackers to run arbitrary code via a malformed request, with evidence of in-the-wild exploitation. Perforce released an urgent patch; administrators should apply it immediately and disable exposed endpoints until the fix is deployed.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-18T11:59:36.000Z",
-    "ingestedAt": "2026-11-18T13:43:17.392Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/puppet-enterprise-flaw-actively-exploited/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/",
-    "sourceUrl": "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/",
-    "title": "Chrome 158 Addresses 204 Vulnerabilities",
-    "headline": "Chrome 158 Addresses 204 Vulnerabilities",
-    "summary": "Google released Chrome 158, fixing 204 security issues across the browser. The update includes five externally reported flaws with bounty payouts of $11,000 each, while the remaining 36 bugs' rewards remain undetermined. Users should install the latest Chrome version across all supported platforms to ensure protection against the patched vulnerabilities.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-18T11:43:22.000Z",
-    "ingestedAt": "2026-11-18T12:11:08.627Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/bugs/2026/11/java4shell-a-critical-flaw-with-a-narrow-reach",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/java4shell-a-critical-flaw-with-a-narrow-reach",
-    "title": "Java4Shell CVE-2026-114938 Exploitation Risk",
-    "headline": "Java4Shell CVE-2026-114938 Exploitation Risk",
-    "summary": "Researchers discovered a critical Java vulnerability, dubbed Java4Shell, identified as CVE-2026-114938. The flaw is a memory corruption bug in OpenJDK’s Base64 decoder, allowing unauthenticated remote code execution on servers running Java applications. Oracle and OpenJDK released patches; administrators should apply the update immediately across all affected systems to mitigate the exploitation risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-11-18T11:41:07.000Z",
-    "ingestedAt": "2026-11-18T12:11:08.627Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.malwarebytes.com/blog/bugs/2026/11/java4shell-a-critical-flaw-with-a-narrow-reach",
     "additionalSources": []
   }
 ]
