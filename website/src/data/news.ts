@@ -11,6 +11,139 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-102684-critical-php-8-3-security-update-f1b40ee0",
+    "title": "RHSA-2026:102684: Critical: php:8.3 security update",
+    "summary": "An update for the php:8.3 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102684",
+    "publishedAt": "2026-11-23T22:29:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102684-critical-php-8-3-security-update",
+      "article-f1b40ee0",
+      "f1b40ee0",
+      "rhsa-2026-102684-critical-php-8-3-security-update-2ee16e"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-python-oauthlib-security-update-d0a8cfdf",
+    "title": "Red Hat issues python-oauthlib security update",
+    "summary": "Red Hat released a security update for python-oauthlib on RHEL 9, addressing multiple critical vulnerabilities. The update mitigates flaws that could enable remote code execution or privilege escalation, with CVSS scores linked via CVE references and rated Important by Product Security. Administrators should apply RHSA-2026:102668 immediately to secure affected systems.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102668",
+    "publishedAt": "2026-11-23T22:06:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-python-oauthlib-security-update",
+      "article-d0a8cfdf",
+      "d0a8cfdf",
+      "red-hat-issues-python-oauthlib-security-update-2ee16d"
+    ]
+  },
+  {
+    "slug": "aurora-stops-clickfix-attacks-with-intent-detectio-c9f21da8",
+    "title": "Aurora stops ClickFix attacks with intent detection",
+    "summary": "ClickFix attacks coerce users into executing malicious commands, creating a gray zone that evades traditional security tools. Aurora Adaptive Threat Protection employs intent-based detection to recognize execution patterns, stopping attacks at the moment they occur and mapping activity for visibility. Security teams can integrate Aurora to gain real-time protection against ClickFix and similar command-execution threats.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-stops-clickfix-attacks/",
+    "publishedAt": "2026-11-23T22:03:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aurora-stops-clickfix-attacks-with-intent-detectio",
+      "article-c9f21da8",
+      "c9f21da8",
+      "aurora-stops-clickfix-attacks-with-intent-detectio-41f70a",
+      "aurora-stops-clickfix-attacks-with-intent-detection"
+    ]
+  },
+  {
+    "slug": "ot-gateways-reveal-authentication-status-many-unpr-65970c74",
+    "title": "OT Gateways Reveal Authentication Status, Many Unprotected",
+    "summary": "Industrial serial gateways reveal whether they are authenticated, exposing a flaw in critical OT access devices. The default configuration broadcasts authentication status, allowing attackers to identify unprotected devices; no exploit is needed, but the disclosure raises credential theft risk. Disable status broadcasts, enforce authentication, and apply vendor firmware updates that conceal authentication state.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
+    "publishedAt": "2026-11-23T22:02:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ot-gateways-reveal-authentication-status-many-unpr",
+      "article-65970c74",
+      "65970c74",
+      "ot-gateways-reveal-authentication-status-many-unpr-209193",
+      "ot-gateways-reveal-authentication-status-many-unprotected"
+    ]
+  },
+  {
+    "slug": "aws-ssm-agent-default-key-flaw-exposes-role-creden-768216c7",
+    "title": "AWS SSM Agent default key flaw exposes role credentials",
+    "summary": "Amazon SSM Agent on AWS Windows Server AMIs contains a flaw where instances share a default cryptographic key during registration. CVE-2026-134069 allows a local non-admin user to retrieve the instance’s Default Host Management Configuration role credentials, enabling potential credential theft. AWS recommends updating to the latest SSM Agent version or applying the provided patch to eliminate the shared key vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-197-aws/",
+    "publishedAt": "2026-11-23T21:54:18.000Z",
+    "cves": [
+      "CVE-2026-134069"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aws-ssm-agent-default-key-flaw-exposes-role-creden",
+      "article-768216c7",
+      "768216c7",
+      "aws-ssm-agent-default-key-flaw-exposes-role-creden-29fa73",
+      "aws-ssm-agent-default-key-flaw-exposes-role-credentials"
+    ]
+  },
+  {
+    "slug": "crowdstrike-acquires-zscaler-for-ai-security-integ-74ee119c",
+    "title": "CrowdStrike Acquires Zscaler for AI Security Integration",
+    "summary": "CrowdStrike announced a $44 billion acquisition of Zscaler, merging endpoint protection with zero-trust network security. The integration aims to centralize AI agent oversight, enabling unified threat detection across device and network layers. Customers will receive combined platform capabilities, but must plan for migration and potential licensing adjustments, ensuring seamless transition.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
+    "publishedAt": "2026-11-23T21:21:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-acquires-zscaler-for-ai-security-integ",
+      "article-74ee119c",
+      "74ee119c",
+      "crowdstrike-acquires-zscaler-for-ai-security-integ-27390e",
+      "crowdstrike-acquires-zscaler-for-ai-security-integration"
+    ]
+  },
+  {
+    "slug": "aurora-adtp-blocks-modern-attacks-by-continuous-be-f261eb17",
+    "title": "Aurora ADTP Blocks Modern Attacks by Continuous Behavior Tracking",
+    "summary": "Aurora Adaptive Threat Protection (ADTP) monitors endpoint activity to counter attacks that bypass conventional defenses. By linking related behaviors into a full attack narrative, ADTP identifies malicious intent before execution, enabling real-time disruption. Security teams should deploy ADTP alongside existing endpoint solutions and configure behavior thresholds for optimal coverage, reducing blind spots.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-stops-and-reverses-modern-attacks/",
+    "publishedAt": "2026-11-23T21:00:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aurora-adtp-blocks-modern-attacks-by-continuous-be",
+      "article-f261eb17",
+      "f261eb17",
+      "aurora-adtp-blocks-modern-attacks-by-continuous-be-47c4d5",
+      "aurora-adtp-blocks-modern-attacks-by-continuous-behavior-tra"
+    ]
+  },
+  {
     "slug": "kepco-breach-exposes-1-5-million-customer-records-33ce023b",
     "title": "KEPCO Breach Exposes 1.5 Million Customer Records",
     "summary": "A threat actor breached KEPCO’s internal network, accessing two systems that stored customer, employee, and contractor data. The intrusion leveraged an undisclosed vulnerability in the company’s network perimeter, enabling unauthorized data exfiltration and potential credential compromise. KEPCO has issued a security advisory and is conducting a forensic investigation, urging affected users to monitor accounts and change passwords.",
@@ -26,6 +159,24 @@ export const news: NewsBrief[] = [
       "article-33ce023b",
       "33ce023b",
       "kepco-breach-exposes-1-5-million-customer-records-2a6e37"
+    ]
+  },
+  {
+    "slug": "chrome-stable-channel-updated-to-158-0-8127-88-d35ce0b3",
+    "title": "Chrome Stable Channel Updated to 158.0.8127.88",
+    "summary": "Google Chrome released a stable channel update to version 158.0.8127.88 for Windows, Mac, and Linux, rolling out over the next weeks. The update includes security fixes, with a detailed change log available; users are encouraged to review the log before upgrading. Administrators should schedule the rollout, verify compatibility, and monitor for any post-upgrade issues via the community help forum.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html",
+    "publishedAt": "2026-11-23T20:52:51.321Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-stable-channel-updated-to-158-0-8127-88",
+      "article-d35ce0b3",
+      "d35ce0b3",
+      "chrome-stable-channel-updated-to-158-0-8127-88-5debed"
     ]
   },
   {
@@ -104,6 +255,29 @@ export const news: NewsBrief[] = [
       "161bd63a",
       "openrouter-removes-ai-providers-for-data-handling-35ecc2",
       "openrouter-removes-ai-providers-for-data-handling-violations"
+    ]
+  },
+  {
+    "slug": "ubuntu-oauthlib-multiple-cve-vulnerabilities-discl-55dbba3a",
+    "title": "Ubuntu OAuthLib multiple CVE vulnerabilities disclosed",
+    "summary": "Ubuntu 20.04 to 26.10 releases contain several OAuthLib flaws affecting token revocation, PKCE verification, and client identity validation. CVE-2026-49264 permits arbitrary code execution via JSONP callbacks, CVE-2026-49265 enables token theft through non-constant-time comparison, and CVE-2026-118669 allows unauthorized token acquisition by bypassing client checks. Users should upgrade to Ubuntu releases or apply the security patches to mitigate these OAuthLib vulnerabilities.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9188-1",
+    "publishedAt": "2026-11-23T19:44:23.000Z",
+    "cves": [
+      "CVE-2026-49264",
+      "CVE-2026-49265",
+      "CVE-2026-118669"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-oauthlib-multiple-cve-vulnerabilities-discl",
+      "article-55dbba3a",
+      "55dbba3a",
+      "ubuntu-oauthlib-multiple-cve-vulnerabilities-discl-7e77e3",
+      "ubuntu-oauthlib-multiple-cve-vulnerabilities-disclosed"
     ]
   },
   {
@@ -942,6 +1116,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-updates-containernetworking-plugins-for-se-83a9fa45",
+    "title": "Red Hat Updates containernetworking-plugins for Security",
+    "summary": "Red Hat released a security update for containernetworking-plugins on RHEL 9, fixing local privilege escalation via container networking. Each flaw has a CVSS base score, with the highest rated as Important, indicating a high exploitation risk though no active attacks have been reported. Apply the update immediately and monitor logs for privilege escalation attempts as the patch closes critical paths.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102292",
+    "publishedAt": "2026-11-23T13:44:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-containernetworking-plugins-for-se",
+      "article-83a9fa45",
+      "83a9fa45",
+      "red-hat-updates-containernetworking-plugins-for-se-2ee15f",
+      "red-hat-updates-containernetworking-plugins-for-security"
+    ]
+  },
+  {
     "slug": "ibm-issues-advisory-for-multiple-vulnerabilities-27fd094c",
     "title": "IBM Issues Advisory for Multiple Vulnerabilities",
     "summary": "IBM disclosed vulnerabilities in Engineering AI Hub up to 1.4.0 and Guardium Data Protection up to 12.2, enabling unauthorized access. Flaws stem from insufficient input validation and privilege checks, with CVSS 7.0-8.5, though no exploitation reported. Apply the latest firmware updates and review advisory links for mitigation guidance to secure deployments.",
@@ -957,6 +1150,24 @@ export const news: NewsBrief[] = [
       "article-27fd094c",
       "27fd094c",
       "ibm-issues-advisory-for-multiple-vulnerabilities-4d932a"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-xdg-desktop-portal-for-security-8968871e",
+    "title": "Red Hat Updates xdg-desktop-portal for Security",
+    "summary": "Red Hat released a security update for xdg-desktop-portal on RHEL 8.8 Update Services, fixing local privilege escalation via desktop portal. Flaws carry CVSS scores, highest rated Important, indicating high exploitation risk but no active attacks reported. Apply the update immediately and monitor logs for privilege escalation attempts as the patch closes critical paths.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102290",
+    "publishedAt": "2026-11-23T13:33:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-xdg-desktop-portal-for-security",
+      "article-8968871e",
+      "8968871e",
+      "red-hat-updates-xdg-desktop-portal-for-security-2ee15f"
     ]
   },
   {
@@ -9294,214 +9505,6 @@ export const news: NewsBrief[] = [
       "343bfdd5",
       "criminal-ip-launches-aitem-exposure-management-pla-5b028b",
       "criminal-ip-launches-aitem-exposure-management-platform"
-    ]
-  },
-  {
-    "slug": "ransomware-warning-signs-before-encryption-78600f48",
-    "title": "Ransomware Warning Signs Before Encryption",
-    "summary": "Acronis identifies five early warning signs of ransomware activity that occur before encryption or data theft. These indicators include credential theft, lateral movement, and attempts to disable security controls, allowing attackers to establish persistence. Security teams should monitor for these behaviors, enforce least-privilege access, and implement continuous monitoring to detect and contain intrusions early.",
-    "category": "Ransomware",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
-    "publishedAt": "2026-11-19T15:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-warning-signs-before-encryption",
-      "article-78600f48",
-      "78600f48",
-      "ransomware-warning-signs-before-encryption-1b637e"
-    ]
-  },
-  {
-    "slug": "nginx2root-vulnerabilities-enable-remote-code-exec-6b546d38",
-    "title": "NGINX2Root Vulnerabilities Enable Remote Code Execution",
-    "summary": "Two critical NGINX vulnerabilities, collectively known as nginx2root, allow unauthenticated attackers to execute code remotely on vulnerable web servers. Researchers chained the flaws with a Linux kernel bug to elevate privileges to root, demonstrating a full system compromise. All supported NGINX releases have patches; administrators should apply the update and monitor for kernel exploitation attempts.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/",
-    "publishedAt": "2026-11-19T14:57:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nginx2root-vulnerabilities-enable-remote-code-exec",
-      "article-6b546d38",
-      "6b546d38",
-      "nginx2root-vulnerabilities-enable-remote-code-exec-a431b9",
-      "nginx2root-vulnerabilities-enable-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "php-warns-of-critical-security-flaws-affecting-all-0ac633db",
-    "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Urges Users to Update",
-    "summary": "The PHP security team has warned of vulnerabilities across all branches covered by its November 19, 2026 security update, with the most severe issues rated critical. The team urged website operators and hosting providers to update promptly. The critical flaws require non-default settings or uncommon setups, so not every installation faces the same risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/php-8-released/",
-    "publishedAt": "2026-11-19T14:42:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php-warns-of-critical-security-flaws-affecting-all",
-      "article-0ac633db",
-      "0ac633db",
-      "php-warns-of-critical-security-flaws-affecting-all-2864ff",
-      "php-warns-of-critical-security-flaws-affecting-all-supported"
-    ]
-  },
-  {
-    "slug": "russian-spies-turn-one-cloud-breach-into-a-steppin-f900f7fe",
-    "title": "Russian spies turn one cloud breach into a stepping stone for the next",
-    "summary": "A Russian cyberespionage group is posing as employees of organizations it has already breached to phish new targets, Google Threat Intelligence Group (GTIG) found. Google tracks the group as COLD RELIC (also known as Star Blizzard, Callisto and Gossamer Bear), and the US Department of Justice has assessed that it operates within Russia’s Federal Security Service (FSB).",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/russian-spies-impersonation-cloud-breach/",
-    "publishedAt": "2026-11-19T14:42:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-spies-turn-one-cloud-breach-into-a-steppin",
-      "article-f900f7fe",
-      "f900f7fe",
-      "russian-spies-turn-one-cloud-breach-into-a-steppin-9bbd69",
-      "russian-spies-turn-one-cloud-breach-into-a-stepping-stone-fo"
-    ]
-  },
-  {
-    "slug": "drupal-fixes-installer-flaw-enabling-site-takeover-cd342b87",
-    "title": "Drupal Fixes Installer Flaw Enabling Site Takeover",
-    "summary": "Drupal core contains a critical installer flaw that permits unauthenticated attackers to trigger a site reinstallation and take over the site. The vulnerability requires specific configuration conditions and can lead to remote code execution if the installer is invoked without proper safeguards. All supported Drupal branches have patched releases; site administrators should apply the update and verify installer access controls.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
-    "publishedAt": "2026-11-19T14:33:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "drupal-fixes-installer-flaw-enabling-site-takeover",
-      "article-cd342b87",
-      "cd342b87",
-      "drupal-fixes-installer-flaw-enabling-site-takeover-4696ac"
-    ]
-  },
-  {
-    "slug": "nvidia-denies-gentlemen-ransomware-claim-a06839da",
-    "title": "Nvidia Denies Gentlemen Ransomware Claim",
-    "summary": "Gentlemen ransomware group listed Nvidia as a victim, alleging a compromise of its systems. No evidence of exploitation or data exfiltration was found, and the claim lacks supporting proof of a vulnerability or breach. Nvidia confirmed no compromise and urged stakeholders to monitor for potential phishing or credential theft attempts.",
-    "category": "Breach",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/",
-    "publishedAt": "2026-11-19T14:17:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nvidia-denies-gentlemen-ransomware-claim",
-      "article-a06839da",
-      "a06839da",
-      "nvidia-denies-gentlemen-ransomware-claim-15a41b"
-    ]
-  },
-  {
-    "slug": "meta-ai-agent-muse-reads-displayed-encrypted-messa-039586a1",
-    "title": "Meta AI Agent Muse Reads Displayed Encrypted Message Text",
-    "summary": "Meta AI agent Muse read Signal message text on Android phones and Macs without directly connecting to the encrypted messaging app, Reuters reported. The investigation found Muse could use Android notifications and macOS permissions to view text already displayed on a device, and tests did not show Signal encryption was broken.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/muse-reads-encrypted-messages/",
-    "publishedAt": "2026-11-19T14:11:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-ai-agent-muse-reads-displayed-encrypted-messa",
-      "article-039586a1",
-      "039586a1",
-      "meta-ai-agent-muse-reads-displayed-encrypted-messa-2b2339",
-      "meta-ai-agent-muse-reads-displayed-encrypted-message-text"
-    ]
-  },
-  {
-    "slug": "badbox-3-0-botnet-infects-android-tv-boxes-generat-d2c39753",
-    "title": "BADBOX 3.0 Botnet Infects Android TV Boxes, Generating 40 Billion Fraudulent Ad Requests Daily",
-    "summary": "BADBOX 3.0, a botnet targeting Android TV boxes, has resurfaced and is generating 40 billion fraudulent ad requests daily. The malware exploits default credentials and unpatched firmware to inject bogus traffic, while infected devices play ads off-screen to mimic legitimate streaming. Security teams should update firmware, block BADBOX domains, and monitor traffic for anomalous spikes to mitigate the campaign.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/badbox-3-0-malware/",
-    "publishedAt": "2026-11-19T14:05:35.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/"
-      }
-    ],
-    "aliases": [
-      "badbox-3-0-botnet-infects-android-tv-boxes-generat",
-      "article-d2c39753",
-      "d2c39753",
-      "badbox-3-0-botnet-infects-android-tv-boxes-generat-d73be1",
-      "badbox-3-0-botnet-infects-android-tv-boxes-generating-40-bil"
-    ]
-  },
-  {
-    "slug": "holiday-bot-fraud-strains-small-business-security-62227aa7",
-    "title": "Holiday Bot Fraud Strains Small Business Security",
-    "summary": "Bot-driven fraud and holiday social engineering attacks target small businesses during the holiday season. These campaigns exploit automated phishing, credential harvesting, and social engineering tactics, extending over weeks and overwhelming security teams. Security teams should deploy comprehensive multi-factor authentication, daily email filtering, and employee training to mitigate the prolonged threat.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday",
-    "publishedAt": "2026-11-19T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "holiday-bot-fraud-strains-small-business-security",
-      "article-62227aa7",
-      "62227aa7",
-      "holiday-bot-fraud-strains-small-business-security-2fe4c2"
-    ]
-  },
-  {
-    "slug": "election-day-cyberattacks-surge-across-1-400-sites-8c085251",
-    "title": "Election Day Cyberattacks Surge Across 1,400 Sites",
-    "summary": "During the 2026 U.S. midterm elections, election-related sites experienced increased traffic and cyberattacks. Cloudflare data from over 1,400 protected sites shows spikes in phishing, credential stuffing, and distributed denial-of-service attempts targeting voter information portals. Operators should enforce stricter rate limiting, deploy WAF rules, and monitor for anomalous traffic patterns to defend against election-day threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/internet-traffic-2026-us-election/",
-    "publishedAt": "2026-11-19T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "election-day-cyberattacks-surge-across-1-400-sites",
-      "article-8c085251",
-      "8c085251",
-      "election-day-cyberattacks-surge-across-1-400-sites-5d027c"
-    ]
-  },
-  {
-    "slug": "timeroasting-detection-via-packet-size-analysis-ef3720c9",
-    "title": "Timeroasting Detection via Packet Size Analysis",
-    "summary": "Timeroasting, a stealthy side-channel exfiltration method, leaves no authentication logs and targets systems using MS-SNTP. The technique manipulates the two MS-SNTP authenticator forms to create timing variations that bypass standard logging, enabling covert data transfer. By reversing the authenticator logic, the author builds detection that monitors packet size patterns, providing a defensive measure against timeroasting attacks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/detecting-timeroasting",
-    "publishedAt": "2026-11-19T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "timeroasting-detection-via-packet-size-analysis",
-      "article-ef3720c9",
-      "ef3720c9",
-      "timeroasting-detection-via-packet-size-analysis-7f61dd"
     ]
   }
 ];

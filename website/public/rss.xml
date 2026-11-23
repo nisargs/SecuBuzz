@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 21:46:39 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 22:45:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:102684: Critical: php:8.3 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102684-critical-php-8-3-security-update-f1b40ee0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102684-critical-php-8-3-security-update-f1b40ee0</guid>
+      <description><![CDATA[An update for the php:8.3 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 23 Nov 2026 22:29:11 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102684">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat issues python-oauthlib security update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-python-oauthlib-security-update-d0a8cfdf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-python-oauthlib-security-update-d0a8cfdf</guid>
+      <description><![CDATA[Red Hat released a security update for python-oauthlib on RHEL 9, addressing multiple critical vulnerabilities. The update mitigates flaws that could enable remote code execution or privilege escalation, with CVSS scores linked via CVE references and rated Important by Product Security. Administrators should apply RHSA-2026:102668 immediately to secure affected systems.]]></description>
+      <pubDate>Mon, 23 Nov 2026 22:06:31 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102668">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Aurora stops ClickFix attacks with intent detection</title>
+      <link>https://secubuzz.com/news/aurora-stops-clickfix-attacks-with-intent-detectio-c9f21da8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aurora-stops-clickfix-attacks-with-intent-detectio-c9f21da8</guid>
+      <description><![CDATA[ClickFix attacks coerce users into executing malicious commands, creating a gray zone that evades traditional security tools. Aurora Adaptive Threat Protection employs intent-based detection to recognize execution patterns, stopping attacks at the moment they occur and mapping activity for visibility. Security teams can integrate Aurora to gain real-time protection against ClickFix and similar command-execution threats.]]></description>
+      <pubDate>Mon, 23 Nov 2026 22:03:44 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-stops-clickfix-attacks/">Arctic Wolf</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>OT Gateways Reveal Authentication Status, Many Unprotected</title>
+      <link>https://secubuzz.com/news/ot-gateways-reveal-authentication-status-many-unpr-65970c74</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ot-gateways-reveal-authentication-status-many-unpr-65970c74</guid>
+      <description><![CDATA[Industrial serial gateways reveal whether they are authenticated, exposing a flaw in critical OT access devices. The default configuration broadcasts authentication status, allowing attackers to identify unprotected devices; no exploit is needed, but the disclosure raises credential theft risk. Disable status broadcasts, enforce authentication, and apply vendor firmware updates that conceal authentication state.]]></description>
+      <pubDate>Mon, 23 Nov 2026 22:02:46 GMT</pubDate>
+      <source url="https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AWS SSM Agent default key flaw exposes role credentials</title>
+      <link>https://secubuzz.com/news/aws-ssm-agent-default-key-flaw-exposes-role-creden-768216c7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aws-ssm-agent-default-key-flaw-exposes-role-creden-768216c7</guid>
+      <description><![CDATA[Amazon SSM Agent on AWS Windows Server AMIs contains a flaw where instances share a default cryptographic key during registration. CVE-2026-134069 allows a local non-admin user to retrieve the instance’s Default Host Management Configuration role credentials, enabling potential credential theft. AWS recommends updating to the latest SSM Agent version or applying the provided patch to eliminate the shared key vulnerability.]]></description>
+      <pubDate>Mon, 23 Nov 2026 21:54:18 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-197-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>CrowdStrike Acquires Zscaler for AI Security Integration</title>
+      <link>https://secubuzz.com/news/crowdstrike-acquires-zscaler-for-ai-security-integ-74ee119c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-acquires-zscaler-for-ai-security-integ-74ee119c</guid>
+      <description><![CDATA[CrowdStrike announced a $44 billion acquisition of Zscaler, merging endpoint protection with zero-trust network security. The integration aims to centralize AI agent oversight, enabling unified threat detection across device and network layers. Customers will receive combined platform capabilities, but must plan for migration and potential licensing adjustments, ensuring seamless transition.]]></description>
+      <pubDate>Mon, 23 Nov 2026 21:21:42 GMT</pubDate>
+      <source url="https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Aurora ADTP Blocks Modern Attacks by Continuous Behavior Tracking</title>
+      <link>https://secubuzz.com/news/aurora-adtp-blocks-modern-attacks-by-continuous-be-f261eb17</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aurora-adtp-blocks-modern-attacks-by-continuous-be-f261eb17</guid>
+      <description><![CDATA[Aurora Adaptive Threat Protection (ADTP) monitors endpoint activity to counter attacks that bypass conventional defenses. By linking related behaviors into a full attack narrative, ADTP identifies malicious intent before execution, enabling real-time disruption. Security teams should deploy ADTP alongside existing endpoint solutions and configure behavior thresholds for optimal coverage, reducing blind spots.]]></description>
+      <pubDate>Mon, 23 Nov 2026 21:00:38 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-stops-and-reverses-modern-attacks/">Arctic Wolf</source>
+      <category>General</category>
+    </item>
     <item>
       <title>KEPCO Breach Exposes 1.5 Million Customer Records</title>
       <link>https://secubuzz.com/news/kepco-breach-exposes-1-5-million-customer-records-33ce023b</link>
@@ -15,6 +78,15 @@
       <pubDate>Mon, 23 Nov 2026 20:54:51 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Chrome Stable Channel Updated to 158.0.8127.88</title>
+      <link>https://secubuzz.com/news/chrome-stable-channel-updated-to-158-0-8127-88-d35ce0b3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-stable-channel-updated-to-158-0-8127-88-d35ce0b3</guid>
+      <description><![CDATA[Google Chrome released a stable channel update to version 158.0.8127.88 for Windows, Mac, and Linux, rolling out over the next weeks. The update includes security fixes, with a detailed change log available; users are encouraged to review the log before upgrading. Administrators should schedule the rollout, verify compatibility, and monitor for any post-upgrade issues via the community help forum.]]></description>
+      <pubDate>Mon, 23 Nov 2026 20:52:51 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html">Google Chrome Releases</source>
+      <category>General</category>
     </item>
     <item>
       <title>Chrome Extended Stable Channel Updated to 156.0.8078.114</title>
@@ -51,6 +123,15 @@
       <pubDate>Mon, 23 Nov 2026 20:00:20 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Ubuntu OAuthLib multiple CVE vulnerabilities disclosed</title>
+      <link>https://secubuzz.com/news/ubuntu-oauthlib-multiple-cve-vulnerabilities-discl-55dbba3a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-oauthlib-multiple-cve-vulnerabilities-discl-55dbba3a</guid>
+      <description><![CDATA[Ubuntu 20.04 to 26.10 releases contain several OAuthLib flaws affecting token revocation, PKCE verification, and client identity validation. CVE-2026-49264 permits arbitrary code execution via JSONP callbacks, CVE-2026-49265 enables token theft through non-constant-time comparison, and CVE-2026-118669 allows unauthorized token acquisition by bypassing client checks. Users should upgrade to Ubuntu releases or apply the security patches to mitigate these OAuthLib vulnerabilities.]]></description>
+      <pubDate>Mon, 23 Nov 2026 19:44:23 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9188-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Chrome iOS Stable 158 Released with Stability Improvements</title>
@@ -375,87 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 14:46:19 GMT</pubDate>
       <source url="https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks">Wiz Research</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Advises Updates for Multiple RHEL Versions</title>
-      <link>https://secubuzz.com/news/red-hat-advises-updates-for-multiple-rhel-versions-5f2cf303</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-advises-updates-for-multiple-rhel-versions-5f2cf303</guid>
-      <description><![CDATA[Red Hat issued advisory AV26-1190 affecting all RHEL 6-10, Hardened Images, and OpenShift 4-5. The advisory references multiple undisclosed vulnerabilities across these products, with no CVE IDs provided, implying potential remote code execution or privilege escalation risks. Administrators should review Red Hat’s links and apply available patches as soon as they are released.]]></description>
-      <pubDate>Mon, 23 Nov 2026 14:40:09 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1190">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>EU Academy Access Disabled After Data Exposure Attack</title>
-      <link>https://secubuzz.com/news/eu-academy-access-disabled-after-data-exposure-att-13ac5f6c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eu-academy-access-disabled-after-data-exposure-att-13ac5f6c</guid>
-      <description><![CDATA[The European Commission disabled public access to the EU Academy platform after a cyberattack exposed users’ personal data. The breach involved unauthorized access to the learning platform’s database, potentially compromising contact information and enrollment records. The Commission has not disclosed the number of affected users; security teams should monitor for credential misuse and enforce stricter access controls.]]></description>
-      <pubDate>Mon, 23 Nov 2026 14:34:27 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/eu-academy-disabled/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Fake Claude AI App Distributes RevStealer Infostealer</title>
-      <link>https://secubuzz.com/news/fake-claude-ai-app-distributes-revstealer-infostea-55053197</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-claude-ai-app-distributes-revstealer-infostea-55053197</guid>
-      <description><![CDATA[Hackers distributed RevStealer, a Windows infostealer, via a counterfeit Claude AI desktop application promising free access. The 101 MB archive launches malware that harvests saved passwords, browser sessions, and cryptocurrency wallet data without opening a chat window. Security teams should verify application authenticity, block the download source, and deploy endpoint protection to detect and remove RevStealer.]]></description>
-      <pubDate>Mon, 23 Nov 2026 14:24:48 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-hide-revstealer-malware/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Vmcloudoor Backdoor Targets Alibaba, Tencent, Huawei Clouds</title>
-      <link>https://secubuzz.com/news/vmcloudoor-backdoor-targets-alibaba-tencent-huawei-e4513407</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vmcloudoor-backdoor-targets-alibaba-tencent-huawei-e4513407</guid>
-      <description><![CDATA[The newly discovered Linux backdoor, Vmcloudoor, covertly commandeers cloud servers, enabling attackers to exfiltrate sensitive files. Designed to infect virtual machines on Chinese cloud platforms, it masquerades as a legitimate cloud-management agent, reducing detection by administrators. Security teams should isolate affected instances, update to the latest vendor patches, and monitor for unauthorized agent activity.]]></description>
-      <pubDate>Mon, 23 Nov 2026 14:14:20 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/vmcloudoor-malware/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare Builds DNS Testing Tools for Internal Framework</title>
-      <link>https://secubuzz.com/news/cloudflare-builds-dns-testing-tools-for-internal-f-47f9c202</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-builds-dns-testing-tools-for-internal-f-47f9c202</guid>
-      <description><![CDATA[Cloudflare developed internal tools to extend its testing framework for networking protocols, focusing on DNS. The new DNS tooling enables teams to probe protocol behavior, identify edge cases, and validate performance under load. These tools are available internally and can be leveraged by security teams to assess DNS resilience and detect anomalies.]]></description>
-      <pubDate>Mon, 23 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/probing-dns-at-cloudflare/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>USN-9186-1: Tomcat vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9186-1-tomcat-vulnerabilities-eede7db4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9186-1-tomcat-vulnerabilities-eede7db4</guid>
-      <description><![CDATA[Tomcat 10 has been updated to 10.1.61 in Ubuntu 24.04 LTS, Ubuntu 26.04 LTS and Ubuntu 26.10. Tomcat 11 has been updated to 11.0.27 in Ubuntu 26.04 LTS and Ubuntu 26.10. In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.]]></description>
-      <pubDate>Mon, 23 Nov 2026 13:59:37 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9186-1">Ubuntu Security Notices</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>WordPress Site Hosts 13 ClickFix Malware Traps</title>
-      <link>https://secubuzz.com/news/wordpress-site-hosts-13-clickfix-malware-traps-30fce793</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wordpress-site-hosts-13-clickfix-malware-traps-30fce793</guid>
-      <description><![CDATA[A compromised WordPress site hosted 13 ClickFix traps from three malware kits, each presenting a fake security check. The traps use social engineering to convince users to paste malicious commands, a phishing kit requiring user interaction. Security teams should remove infected plugins, update WordPress core, and monitor for similar deceptive traps.]]></description>
-      <pubDate>Mon, 23 Nov 2026 13:58:49 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-plant-13-clickfix-traps/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>PHP Session Overwrite Flaw Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/php-session-overwrite-flaw-enables-remote-code-exe-5c0c352c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-session-overwrite-flaw-enables-remote-code-exe-5c0c352c</guid>
-      <description><![CDATA[A PHP session overwrite flaw lets attackers inject malicious data during an interrupted overwrite, triggering deserialization and remote code execution on apps. The flaw, part of the PHP2Shell chain, exploits improper session data handling and can be triggered without authentication, risking server compromise. No patch exists yet; admins should disable session overwrite or apply custom fixes to block deserialization attacks.]]></description>
-      <pubDate>Mon, 23 Nov 2026 13:58:07 GMT</pubDate>
-      <source url="https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>IBM Issues Advisory for Multiple Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ibm-issues-advisory-for-multiple-vulnerabilities-27fd094c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ibm-issues-advisory-for-multiple-vulnerabilities-27fd094c</guid>
-      <description><![CDATA[IBM disclosed vulnerabilities in Engineering AI Hub up to 1.4.0 and Guardium Data Protection up to 12.2, enabling unauthorized access. Flaws stem from insufficient input validation and privilege checks, with CVSS 7.0-8.5, though no exploitation reported. Apply the latest firmware updates and review advisory links for mitigation guidance to secure deployments.]]></description>
-      <pubDate>Mon, 23 Nov 2026 13:38:52 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/ibm-security-advisory-av26-1189">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

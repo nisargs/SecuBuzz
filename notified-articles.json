@@ -6159,5 +6159,16 @@
   "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
   "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01590513949.html",
   "https://access.redhat.com/errata/RHSA-2026:102255",
-  "https://access.redhat.com/errata/RHSA-2026:102291"
+  "https://access.redhat.com/errata/RHSA-2026:102291",
+  "https://access.redhat.com/errata/RHSA-2026:102684",
+  "https://access.redhat.com/errata/RHSA-2026:102668",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-197-aws/",
+  "https://ubuntu.com/security/notices/USN-9188-1",
+  "https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-stops-clickfix-attacks/",
+  "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
+  "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
+  "https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-stops-and-reverses-modern-attacks/",
+  "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html",
+  "https://access.redhat.com/errata/RHSA-2026:102290",
+  "https://access.redhat.com/errata/RHSA-2026:102292"
 ]

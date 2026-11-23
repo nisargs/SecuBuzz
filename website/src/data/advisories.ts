@@ -52,6 +52,33 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-63492",
+    "cveID": "CVE-2026-63492",
+    "slug": "cve-2026-63492",
+    "vendor": "Composer",
+    "product": "wwbn/avideo",
+    "name": "AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword",
+    "dateAdded": "2026-11-23",
+    "dueDate": "",
+    "cvss": 8.1,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "The helper listFFmpegProcesses($keyword) in plugin/API/standAlone/functions.php builds a shell pipeline by interpolating $keyword inside single quotes and running it with exec(): The two callers in plugin/API/standAlone/ffmpeg.json.php (the list mode and the isKeywordRunning mode) pass the RAW decrypted codeToExec field, not the sanitized $keyword variable that the endpoint allowlists elsewhere.",
+    "requiredAction": "Upgrade wwbn/avideo to version 29.1.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-j44m-77cc-p3cc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63492"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-63476",
     "cveID": "CVE-2026-63476",
     "slug": "cve-2026-63476",
@@ -1470,33 +1497,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102945"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63012",
-    "cveID": "CVE-2026-63012",
-    "slug": "cve-2026-63012",
-    "vendor": "Composer",
-    "product": "baserproject/baser-core",
-    "name": "baserCMS administrative API authorization bypass through session fallback",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-290",
-    "ransomware": false,
-    "description": "An authorization bypass occurs against the API endpoint /baser/api/admin/ by abusing the session authentication fallback.",
-    "requiredAction": "Upgrade baserproject/baser-core to version 5.3.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wgvx-x5g3-9v29"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63012"
       }
     ],
     "source": "GITHUB"
