@@ -6812,5 +6812,21 @@
   "https://access.redhat.com/errata/RHSA-2026:102171",
   "https://access.redhat.com/errata/RHSA-2026:102181",
   "https://cybersecuritynews.com/hackers-exploit-gl-inet-cloud-flaw/",
-  "https://cybersecuritynews.com/hackers-exploit-critical-cisco-expressway-flaw/"
+  "https://cybersecuritynews.com/hackers-exploit-critical-cisco-expressway-flaw/",
+  "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
+  "https://cybersecuritynews.com/hackers-use-ai/",
+  "https://therecord.media/austrian-foreign-ministry-says-website-hacked",
+  "https://cybersecuritynews.com/vmcloudoor-malware/",
+  "https://cyber.gc.ca/en/alerts-advisories/ibm-security-advisory-av26-1189",
+  "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/",
+  "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+  "https://www.helpnetsecurity.com/2026/11/23/cleverbridge-data-breach-card-numbers-cvv/",
+  "https://access.redhat.com/errata/RHSA-2026:102280",
+  "https://access.redhat.com/errata/RHSA-2026:102274",
+  "https://www.malwarebytes.com/blog/threat-intel/2026/11/oxloader-abuses-dll-hijacking-to-distribute-different-malware-families",
+  "https://blog.cloudflare.com/probing-dns-at-cloudflare/",
+  "https://access.redhat.com/errata/RHSA-2026:102210",
+  "https://access.redhat.com/errata/RHSA-2026:102212",
+  "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
+  "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/"
 ]

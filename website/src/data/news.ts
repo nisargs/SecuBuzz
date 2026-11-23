@@ -11,6 +11,81 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "vmcloudoor-backdoor-targets-alibaba-tencent-huawei-e4513407",
+    "title": "Vmcloudoor Backdoor Targets Alibaba, Tencent, Huawei Clouds",
+    "summary": "The newly discovered Linux backdoor, Vmcloudoor, covertly commandeers cloud servers, enabling attackers to exfiltrate sensitive files. Designed to infect virtual machines on Chinese cloud platforms, it masquerades as a legitimate cloud-management agent, reducing detection by administrators. Security teams should isolate affected instances, update to the latest vendor patches, and monitor for unauthorized agent activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/vmcloudoor-malware/",
+    "publishedAt": "2026-11-23T14:14:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vmcloudoor-backdoor-targets-alibaba-tencent-huawei",
+      "article-e4513407",
+      "e4513407",
+      "vmcloudoor-backdoor-targets-alibaba-tencent-huawei-67482d",
+      "vmcloudoor-backdoor-targets-alibaba-tencent-huawei-clouds"
+    ]
+  },
+  {
+    "slug": "cloudflare-builds-dns-testing-tools-for-internal-f-47f9c202",
+    "title": "Cloudflare Builds DNS Testing Tools for Internal Framework",
+    "summary": "Cloudflare developed internal tools to extend its testing framework for networking protocols, focusing on DNS. The new DNS tooling enables teams to probe protocol behavior, identify edge cases, and validate performance under load. These tools are available internally and can be leveraged by security teams to assess DNS resilience and detect anomalies.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/probing-dns-at-cloudflare/",
+    "publishedAt": "2026-11-23T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-builds-dns-testing-tools-for-internal-f",
+      "article-47f9c202",
+      "47f9c202",
+      "cloudflare-builds-dns-testing-tools-for-internal-f-6baf0f",
+      "cloudflare-builds-dns-testing-tools-for-internal-framework"
+    ]
+  },
+  {
+    "slug": "php-session-overwrite-flaw-enables-remote-code-exe-5c0c352c",
+    "title": "PHP Session Overwrite Flaw Enables Remote Code Execution",
+    "summary": "A PHP session overwrite flaw lets attackers inject malicious data during an interrupted overwrite, triggering deserialization and remote code execution on apps. The flaw, part of the PHP2Shell chain, exploits improper session data handling and can be triggered without authentication, risking server compromise. No patch exists yet; admins should disable session overwrite or apply custom fixes to block deserialization attacks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
+    "publishedAt": "2026-11-23T13:58:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-session-overwrite-flaw-enables-remote-code-exe",
+      "article-5c0c352c",
+      "5c0c352c",
+      "php-session-overwrite-flaw-enables-remote-code-exe-3953b3",
+      "php-session-overwrite-flaw-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "ibm-issues-advisory-for-multiple-vulnerabilities-27fd094c",
+    "title": "IBM Issues Advisory for Multiple Vulnerabilities",
+    "summary": "IBM disclosed vulnerabilities in Engineering AI Hub up to 1.4.0 and Guardium Data Protection up to 12.2, enabling unauthorized access. Flaws stem from insufficient input validation and privilege checks, with CVSS 7.0-8.5, though no exploitation reported. Apply the latest firmware updates and review advisory links for mitigation guidance to secure deployments.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/ibm-security-advisory-av26-1189",
+    "publishedAt": "2026-11-23T13:38:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ibm-issues-advisory-for-multiple-vulnerabilities",
+      "article-27fd094c",
+      "27fd094c",
+      "ibm-issues-advisory-for-multiple-vulnerabilities-4d932a"
+    ]
+  },
+  {
     "slug": "microsoft-tests-fix-for-windows-11-bluetooth-audio-654313d2",
     "title": "Microsoft Tests Fix for Windows 11 Bluetooth Audio Drops",
     "summary": "Microsoft is testing a fix for a long-standing Windows 11 Bluetooth audio quality drop affecting headphone users. The issue stems from an audio driver mis-handling of Bluetooth codec parameters, causing significant degradation but lacking remote code execution or data exfiltration. Microsoft has released a test build; users should install the forthcoming update once available to restore audio fidelity.",
@@ -27,6 +102,64 @@ export const news: NewsBrief[] = [
       "654313d2",
       "microsoft-tests-fix-for-windows-11-bluetooth-audio-2318cc",
       "microsoft-tests-fix-for-windows-11-bluetooth-audio-drops"
+    ]
+  },
+  {
+    "slug": "gl-inet-devices-compromised-via-remote-management-d318a9d0",
+    "title": "GL.iNet Devices Compromised via Remote Management Flaw",
+    "summary": "Attackers exploited a flaw in GL.iNet’s GoodCloud remote management to push malware onto routers and KVMs, enabling code execution. The flaw stems from insufficient authentication checks, allowing unauthenticated attackers to upload and execute arbitrary firmware. GL.iNet recommends installing the latest firmware and disabling remote management until a patch is applied to mitigate the threat.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/",
+    "publishedAt": "2026-11-23T13:26:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gl-inet-devices-compromised-via-remote-management",
+      "article-d318a9d0",
+      "d318a9d0",
+      "gl-inet-devices-compromised-via-remote-management-4e72f5",
+      "gl-inet-devices-compromised-via-remote-management-flaw"
+    ]
+  },
+  {
+    "slug": "binary-parser-vulnerability-enables-javascript-inj-4dfae943",
+    "title": "binary-parser Vulnerability Enables JavaScript Injection",
+    "summary": "A critical flaw in the binary-parser library (CVE-2026-134814) allows attackers controlling parser definitions to inject and execute arbitrary JavaScript code. The vulnerability, affecting binary-parser versions before 2.3.1, has a CVSS score of 9.2, indicating high exploitation potential and remote code execution. Users should upgrade to binary-parser 2.3.1 or later and apply any vendor-provided patches to mitigate the injection risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+    "publishedAt": "2026-11-23T13:22:20.000Z",
+    "cves": [
+      "CVE-2026-134814"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "binary-parser-vulnerability-enables-javascript-inj",
+      "article-4dfae943",
+      "4dfae943",
+      "binary-parser-vulnerability-enables-javascript-inj-3a1c13",
+      "binary-parser-vulnerability-enables-javascript-injection"
+    ]
+  },
+  {
+    "slug": "cleverbridge-reports-credit-card-data-theft-c5388145",
+    "title": "Cleverbridge Reports Credit Card Data Theft",
+    "summary": "Cleverbridge confirmed a breach on November 4, 2026, during which attackers accessed stored credit card and CVV numbers from its e-commerce platform. The incident involved unauthorized activity detected by the platform, but the extent of affected clients and customer data remains unspecified. Cleverbridge urged affected customers to monitor accounts, change passwords, and contact payment processors for further protection.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/cleverbridge-data-breach-card-numbers-cvv/",
+    "publishedAt": "2026-11-23T13:00:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cleverbridge-reports-credit-card-data-theft",
+      "article-c5388145",
+      "c5388145",
+      "cleverbridge-reports-credit-card-data-theft-606837"
     ]
   },
   {
@@ -145,6 +278,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "dragos-finds-undetected-intrusions-at-ai-providers-6ff8354c",
+    "title": "Dragos Finds Undetected Intrusions at AI Providers",
+    "summary": "Dragos discovered undetected intrusions at three AI inference providers that siphoned nearly two million prompts from AI services. The attackers exploited weaknesses in prompt handling and authentication, enabling data exfiltration without triggering existing monitoring systems. Security teams should review prompt validation, strengthen access controls, and deploy anomaly detection to prevent future theft.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/",
+    "publishedAt": "2026-11-23T12:16:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dragos-finds-undetected-intrusions-at-ai-providers",
+      "article-6ff8354c",
+      "6ff8354c",
+      "dragos-finds-undetected-intrusions-at-ai-providers-4971dd"
+    ]
+  },
+  {
     "slug": "red-hat-issues-librabbitmq-security-update-29d2cee6",
     "title": "Red Hat Issues librabbitmq Security Update",
     "summary": "Red Hat released an important security update for librabbitmq on RHEL 10. The update mitigates vulnerabilities with CVSS scores available via linked CVE references, though specific IDs are not listed, and it applies to all affected librabbitmq packages. Install the librabbitmq update promptly and consult Red Hat advisories for detailed guidance.",
@@ -197,6 +348,25 @@ export const news: NewsBrief[] = [
       "07642452",
       "rhsa-2026-102288-important-red-hat-amq-broker-7-14-2ee15f",
       "rhsa-2026-102288-important-red-hat-amq-broker-7-14-2-release"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-libxrender-security-update-for-rh-eb9e39b2",
+    "title": "Red Hat Releases libXrender Security Update for RHEL 8.6",
+    "summary": "Red Hat released a libXrender security update for RHEL 8.6 Advanced Mission Critical and Extended Update Support, fixing multiple vulnerabilities. The vulnerabilities have CVSS base scores linked via CVE references, indicating significant risk if unpatched. Administrators should apply the update promptly to mitigate the identified security issues across all affected systems.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102280",
+    "publishedAt": "2026-11-23T12:08:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-libxrender-security-update-for-rh",
+      "article-eb9e39b2",
+      "eb9e39b2",
+      "red-hat-releases-libxrender-security-update-for-rh-2ee15f",
+      "red-hat-releases-libxrender-security-update-for-rhel-8-6"
     ]
   },
   {
@@ -258,6 +428,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-patch-update-for-rhel-10-37b0ef8e",
+    "title": "Red Hat Releases Patch Update for RHEL 10",
+    "summary": "Red Hat released a security update for the patch component on RHEL 10, addressing several vulnerabilities. The vulnerabilities carry CVSS base scores linked via CVE references, indicating moderate risk if unpatched. Administrators should apply the update promptly to mitigate the identified security issues across all affected systems in the production environment.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102274",
+    "publishedAt": "2026-11-23T11:46:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-patch-update-for-rhel-10",
+      "article-37b0ef8e",
+      "37b0ef8e",
+      "red-hat-releases-patch-update-for-rhel-10-2ee15e"
+    ]
+  },
+  {
     "slug": "badbox-3-0-ad-fraud-operation-disrupted-4267da39",
     "title": "BadBox 3.0 Ad Fraud Operation Disrupted",
     "summary": "Backdoors on low-cost consumer devices enabled the BadBox 3.0 ad-fraud operation, delivering modules that generated 40 billion bid requests daily. The operation leveraged residential-proxy capabilities to obfuscate traffic, creating an ad-fraud network that inflated auction volumes and siphoned revenue from publishers. Security teams coordinated a takedown that disrupted the backdoor infrastructure, halting bid-request generation and exposing compromised devices for remediation.",
@@ -273,6 +461,43 @@ export const news: NewsBrief[] = [
       "article-4267da39",
       "4267da39",
       "badbox-3-0-ad-fraud-operation-disrupted-2a52b5"
+    ]
+  },
+  {
+    "slug": "oxloader-hijacks-dlls-to-spread-multiple-malware-f-45300881",
+    "title": "OXLoader Hijacks DLLs to Spread Multiple Malware Families",
+    "summary": "OXLoader malware exploits DLL hijacking to deliver multiple malware families via fake complaints and activators. The technique leverages trusted system DLL paths to inject malicious code, enabling stealthy distribution across victim machines. Security teams should monitor for anomalous DLL loads, apply whitelisting, and update endpoint protection to block OXLoader activity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/oxloader-abuses-dll-hijacking-to-distribute-different-malware-families",
+    "publishedAt": "2026-11-23T11:35:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "oxloader-hijacks-dlls-to-spread-multiple-malware-f",
+      "article-45300881",
+      "45300881",
+      "oxloader-hijacks-dlls-to-spread-multiple-malware-f-3109f0",
+      "oxloader-hijacks-dlls-to-spread-multiple-malware-families"
+    ]
+  },
+  {
+    "slug": "sap-netweaver-cisco-expressway-flaws-exploited-c9fd06e6",
+    "title": "SAP NetWeaver, Cisco Expressway Flaws Exploited",
+    "summary": "Threat actors leveraged vulnerabilities in SAP NetWeaver and Cisco Expressway to leak or alter server data and gain root-level command execution. The flaws, likely involving improper input validation and privilege checks, allow attackers to bypass authentication and execute arbitrary code. Administrators should apply vendor patches, enforce least privilege, and monitor for anomalous activity to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
+    "publishedAt": "2026-11-23T11:35:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sap-netweaver-cisco-expressway-flaws-exploited",
+      "article-c9fd06e6",
+      "c9fd06e6",
+      "sap-netweaver-cisco-expressway-flaws-exploited-321e51"
     ]
   },
   {
@@ -328,6 +553,25 @@ export const news: NewsBrief[] = [
       "0d07fd6a",
       "rhsa-2026-102253-important-kernel-security-bug-fix-2ee15e",
       "rhsa-2026-102253-important-kernel-security-bug-fix-and-enhan"
+    ]
+  },
+  {
+    "slug": "ai-agents-find-and-exploit-medical-imaging-zero-da-b001ba5a",
+    "title": "AI Agents Find and Exploit Medical Imaging Zero-Day",
+    "summary": "AI agents uncovered a zero-day flaw in an open-source medical imaging app in 11 minutes, allowing file writes outside the intended directory. The flaw grants full administrator control, enabling arbitrary code execution and server compromise. No patch exists; isolate the app, apply critical updates, and monitor for unauthorized file writes.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ai/",
+    "publishedAt": "2026-11-23T11:07:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agents-find-and-exploit-medical-imaging-zero-da",
+      "article-b001ba5a",
+      "b001ba5a",
+      "ai-agents-find-and-exploit-medical-imaging-zero-da-6f23d6",
+      "ai-agents-find-and-exploit-medical-imaging-zero-day"
     ]
   },
   {
@@ -753,6 +997,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "important-freerdp-update-for-rhel-9-2-sap-c0d1994e",
+    "title": "Important freerdp update for RHEL 9.2 SAP",
+    "summary": "An update fixes security vulnerabilities in freerdp affecting RHEL 9.2 Update Services for SAP Solutions and related components. The flaws, referenced by CVE identifiers, could enable remote code execution via malformed RDP packets in the remote desktop protocol stack. Red Hat advises applying the patch promptly to prevent exploitation and ensure all clients are updated.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102212",
+    "publishedAt": "2026-11-23T06:40:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "important-freerdp-update-for-rhel-9-2-sap",
+      "article-c0d1994e",
+      "c0d1994e",
+      "important-freerdp-update-for-rhel-9-2-sap-2ee15e"
+    ]
+  },
+  {
     "slug": "xalgorix-introduces-ai-powered-pen-testing-tool-028c9b4e",
     "title": "Xalgorix Introduces AI-Powered Pen Testing Tool",
     "summary": "Xalgorix, an open-source AI penetration testing framework, validates findings through a dual-agent verification process. The primary agent identifies potential bugs, while a secondary agent attempts to exploit them; failures to confirm a bug result in a flagged finding for manual review, reducing false positives. The tool is available for community use and encourages reviewers to assess flagged vulnerabilities before reporting.",
@@ -768,6 +1030,24 @@ export const news: NewsBrief[] = [
       "article-028c9b4e",
       "028c9b4e",
       "xalgorix-introduces-ai-powered-pen-testing-tool-51e5e3"
+    ]
+  },
+  {
+    "slug": "important-xdg-desktop-portal-update-for-rhel-8-4-b52fa4c5",
+    "title": "Important xdg-desktop-portal update for RHEL 8.4",
+    "summary": "An update addresses security flaws in xdg-desktop-portal affecting RHEL 8.4 Advanced Mission Critical and Extended Update Support. The vulnerabilities, identified via CVE references, allow potential privilege escalation or code execution through desktop portal interactions. Red Hat recommends applying the update immediately to mitigate the risk to ensure system integrity continuously.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102210",
+    "publishedAt": "2026-11-23T06:30:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "important-xdg-desktop-portal-update-for-rhel-8-4",
+      "article-b52fa4c5",
+      "b52fa4c5",
+      "important-xdg-desktop-portal-update-for-rhel-8-4-2ee15e"
     ]
   },
   {
@@ -1761,24 +2041,6 @@ export const news: NewsBrief[] = [
       "c4a5db07",
       "virustotal-detects-ransomware-missed-by-75-av-engi-614dd5",
       "virustotal-detects-ransomware-missed-by-75-av-engines"
-    ]
-  },
-  {
-    "slug": "cleverbridge-reports-credit-card-data-theft-3410b57c",
-    "title": "Cleverbridge Reports Credit Card Data Theft",
-    "summary": "Cleverbridge, an e-commerce platform, disclosed a breach that exposed customers’ payment card numbers and CVV codes via unauthorized system access. The intrusion involved credential theft and data exfiltration, potentially enabling fraud, but no public exploit or CVE was identified. Cleverbridge urged affected users to monitor accounts, change passwords, and contact issuers while investigating the vector and will issue remediation guidance.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
-    "publishedAt": "2026-11-22T15:43:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cleverbridge-reports-credit-card-data-theft",
-      "article-3410b57c",
-      "3410b57c",
-      "cleverbridge-reports-credit-card-data-theft-421fec"
     ]
   },
   {
@@ -9260,326 +9522,6 @@ export const news: NewsBrief[] = [
       "83dfab4f",
       "red-hat-releases-critical-java-25-openjdk-update-f-2ee081",
       "red-hat-releases-critical-java-25-openjdk-update-for-rhel-9"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100572-critical-java-25-openjdk-security-9d45f95f",
-    "title": "RHSA-2026:100572: Critical: java-25-openjdk security update for RHEL 10",
-    "summary": "An update for java-25-openjdk is now available for Red Hat Enterprise Linux 10.2 Extended Update Support and Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100572",
-    "publishedAt": "2026-11-19T00:15:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100572-critical-java-25-openjdk-security",
-      "article-9d45f95f",
-      "9d45f95f",
-      "rhsa-2026-100572-critical-java-25-openjdk-security-2ee081",
-      "rhsa-2026-100572-critical-java-25-openjdk-security-update-fo"
-    ]
-  },
-  {
-    "slug": "nist-demonstrates-quantum-position-verification-to-80a33f8f",
-    "title": "NIST Demonstrates Quantum Position Verification to Block Remote Hackers",
-    "summary": "Physicists at the National Institute of Standards and Technology demonstrated a quantum position verification protocol using entangled photons to confirm a user's exact physical location. The research team successfully closed security loopholes in earlier quantum schemes during testing inside a facility in Boulder, Colorado.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/nist-quantum-position-verification/",
-    "publishedAt": "2026-11-19T00:07:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nist-demonstrates-quantum-position-verification-to",
-      "article-80a33f8f",
-      "80a33f8f",
-      "nist-demonstrates-quantum-position-verification-to-5575a2",
-      "nist-demonstrates-quantum-position-verification-to-block-rem"
-    ]
-  },
-  {
-    "slug": "russian-charged-with-palantir-employee-surveillanc-0334815b",
-    "title": "Russian Charged with Palantir Employee Surveillance",
-    "summary": "U.S. prosecutors charged Russian national Igor Andreevich D’iu for acting as a Moscow agent targeting Palantir Technologies employees. The case uncovered Telegram-based recruitment and covert monitoring designed to harvest intelligence on a defense-technology firm’s workforce. Defenders should audit employee access, monitor for insider threats, and enforce strict communication controls to mitigate similar espionage.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/russian-charged-with-spying-on-palantir-for-moscow",
-    "publishedAt": "2026-11-19T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-charged-with-palantir-employee-surveillanc",
-      "article-0334815b",
-      "0334815b",
-      "russian-charged-with-palantir-employee-surveillanc-533958",
-      "russian-charged-with-palantir-employee-surveillance"
-    ]
-  },
-  {
-    "slug": "apple-releases-app-store-connect-api-4-6-1-update-2f7f1e5a",
-    "title": "Apple Releases App Store Connect API 4.6.1 Update",
-    "summary": "Apple released App Store Connect API 4.6.1 to improve developer integration and streamline app management. The update addresses multiple bugs, introduces new features, and enhances stability, but no security vulnerabilities were disclosed. Developers should download the new release, update their integration, and test compatibility with existing workflows to ensure compliance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11182026b",
-    "publishedAt": "2026-11-19T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-app-store-connect-api-4-6-1-update",
-      "article-2f7f1e5a",
-      "2f7f1e5a",
-      "apple-releases-app-store-connect-api-4-6-1-update-5bd3d7"
-    ]
-  },
-  {
-    "slug": "ransomware-brokers-shift-listings-to-private-chann-d5f645d4",
-    "title": "Ransomware Brokers Shift Listings to Private Channels",
-    "summary": "Ransomware gangs are moving access-broker listings from public dark-web forums to private channels, cutting early warning signals. ZeroFox data shows monthly victim counts rose from 573 in 2025 to 718 in 2026, while public listings dropped from 620 to 370 per quarter. Security teams should monitor private broker communications and employ network segmentation to limit lateral movement once compromised.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/ransomware-access-brokers-cybercrime/",
-    "publishedAt": "2026-11-18T23:28:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-brokers-shift-listings-to-private-chann",
-      "article-d5f645d4",
-      "d5f645d4",
-      "ransomware-brokers-shift-listings-to-private-chann-3c8e2d",
-      "ransomware-brokers-shift-listings-to-private-channels"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100550-critical-red-hat-jboss-core-servi-47d19b1b",
-    "title": "RHSA-2026:100550: Critical: Red Hat JBoss Core Services Apache HTTP Server 2.4.62 SP7 security update",
-    "summary": "Red Hat JBoss Core Services Apache HTTP Server 2.4.62 Service Pack 7 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100550",
-    "publishedAt": "2026-11-18T23:27:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100550-critical-red-hat-jboss-core-servi",
-      "article-47d19b1b",
-      "47d19b1b",
-      "rhsa-2026-100550-critical-red-hat-jboss-core-servi-2ee081",
-      "rhsa-2026-100550-critical-red-hat-jboss-core-services-apache"
-    ]
-  },
-  {
-    "slug": "ukraine-fbi-arrest-ransomware-group-members-bb9e5203",
-    "title": "Ukraine, FBI Arrest Ransomware Group Members",
-    "summary": "Ukrainian authorities and the FBI arrested four suspects from an international ransomware group tied to more than $40.5 million in ransom payments from at least 28 companies. The raid followed a joint investigation that traced the gang’s stolen-credential phishing attacks. Officials advise organizations to strengthen access controls and monitor for anomalous credential activity to mitigate similar threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
-    "publishedAt": "2026-11-18T23:08:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ukraine-fbi-arrest-ransomware-group-members",
-      "article-bb9e5203",
-      "bb9e5203",
-      "ukraine-fbi-arrest-ransomware-group-members-6f6078"
-    ]
-  },
-  {
-    "slug": "azure-linux-4-released-for-vms-without-extra-fee-b6924440",
-    "title": "Azure Linux 4 Released for VMs Without Extra Fee",
-    "summary": "Microsoft announced general availability of Azure Linux 4, its in-house Linux distribution for customer virtual machines and scale sets. It is offered at no extra license fee, with customers paying only for Azure compute. The release enables organizations to deploy a consistent Linux environment across Azure workloads without additional licensing costs.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/microsoft-azure-linux-4/",
-    "publishedAt": "2026-11-18T23:01:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "azure-linux-4-released-for-vms-without-extra-fee",
-      "article-b6924440",
-      "b6924440",
-      "azure-linux-4-released-for-vms-without-extra-fee-4f3d13"
-    ]
-  },
-  {
-    "slug": "ubuntu-patches-multiple-openjdk-27-flaws-24a3f261",
-    "title": "Ubuntu Patches Multiple OpenJDK 27 Flaws",
-    "summary": "Ubuntu released a security update addressing multiple remote vulnerabilities affecting the OpenJDK 27 environment. Flaws including CVE-2026-114938 and CVE-2026-114939 involve improper input handling and authentication in Compiler, JGSS, and JSSE components, allowing unauthorized data access, denial of service, or arbitrary code execution. Security teams should apply the USN-9158-1 package updates to mitigate potential exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9158-1",
-    "publishedAt": "2026-11-18T22:13:47.000Z",
-    "cves": [
-      "CVE-2026-114938",
-      "CVE-2026-114939"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-patches-multiple-openjdk-27-flaws",
-      "article-24a3f261",
-      "24a3f261",
-      "ubuntu-patches-multiple-openjdk-27-flaws-7e7940"
-    ]
-  },
-  {
-    "slug": "usn-9157-1-openjdk-25-vulnerabilities-d6b9f99d",
-    "title": "USN-9157-1: OpenJDK 25 vulnerabilities",
-    "summary": "A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 25 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 25 did not correctly authorize users.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9157-1",
-    "publishedAt": "2026-11-18T22:13:33.000Z",
-    "cves": [
-      "CVE-2026-114938",
-      "CVE-2026-114939",
-      "CVE-2026-114940",
-      "CVE-2026-114941",
-      "CVE-2026-114942",
-      "CVE-2026-114943",
-      "CVE-2026-114944",
-      "CVE-2026-114945",
-      "CVE-2026-114946",
-      "CVE-2026-114947"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9157-1-openjdk-25-vulnerabilities",
-      "article-d6b9f99d",
-      "d6b9f99d",
-      "usn-9157-1-openjdk-25-vulnerabilities-7e7944"
-    ]
-  },
-  {
-    "slug": "usn-9156-1-openjdk-21-vulnerabilities-d767f87d",
-    "title": "USN-9156-1: OpenJDK 21 vulnerabilities",
-    "summary": "A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (CVE-2026-114938) It was discovered that the JGSS component of OpenJDK 21 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 21 did not correctly authorize users.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9156-1",
-    "publishedAt": "2026-11-18T22:12:23.000Z",
-    "cves": [
-      "CVE-2026-114938",
-      "CVE-2026-114939",
-      "CVE-2026-114940",
-      "CVE-2026-114941",
-      "CVE-2026-114942",
-      "CVE-2026-114943",
-      "CVE-2026-114944",
-      "CVE-2026-114945",
-      "CVE-2026-114946"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9156-1-openjdk-21-vulnerabilities",
-      "article-d767f87d",
-      "d767f87d",
-      "usn-9156-1-openjdk-21-vulnerabilities-7e7947"
-    ]
-  },
-  {
-    "slug": "palo-alto-networks-and-ubuntu-address-cve-2026-114-671a87c2",
-    "title": "Palo Alto Networks and Ubuntu Address CVE-2026-114938 Java Vulnerability",
-    "summary": "Palo Alto Networks and Ubuntu both address CVE-2026-114938, a critical Java/OpenJDK flaw affecting enterprise and OpenJDK 17 deployments. The vulnerability enables remote attackers to cause denial of service or execute arbitrary code, risking compromise of vulnerable systems. Administrators should apply vendor updates and follow Palo Alto and Ubuntu advisories for mitigation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9155-1",
-    "publishedAt": "2026-11-18T22:10:58.000Z",
-    "cves": [
-      "CVE-2026-114938",
-      "CVE-2026-114939",
-      "CVE-2026-114940",
-      "CVE-2026-114942",
-      "CVE-2026-114943",
-      "CVE-2026-114944",
-      "CVE-2026-114945",
-      "CVE-2026-114946"
-    ],
-    "additionalSources": [
-      {
-        "source": "Palo Alto Networks PSIRT",
-        "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-114938"
-      }
-    ],
-    "aliases": [
-      "palo-alto-networks-and-ubuntu-address-cve-2026-114",
-      "article-671a87c2",
-      "671a87c2",
-      "palo-alto-networks-and-ubuntu-address-cve-2026-114-7e794b",
-      "palo-alto-networks-and-ubuntu-address-cve-2026-114938-java-v"
-    ]
-  },
-  {
-    "slug": "usn-9154-1-openjdk-11-vulnerabilities-d20be6b4",
-    "title": "USN-9154-1: OpenJDK 11 vulnerabilities",
-    "summary": "A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 11 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114940) It was discovered that the Hotspot component of OpenJDK 11 did not correctly authorize users.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9154-1",
-    "publishedAt": "2026-11-18T22:09:36.000Z",
-    "cves": [
-      "CVE-2026-114939",
-      "CVE-2026-114940",
-      "CVE-2026-114943",
-      "CVE-2026-114944",
-      "CVE-2026-114946"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9154-1-openjdk-11-vulnerabilities",
-      "article-d20be6b4",
-      "d20be6b4",
-      "usn-9154-1-openjdk-11-vulnerabilities-7e794f"
-    ]
-  },
-  {
-    "slug": "social-media-amplifies-outage-panic-2ab3bacf",
-    "title": "Social Media Amplifies Outage Panic",
-    "summary": "The article warns that recent outages and attacks can cause unnecessary worry, especially when amplified by social media. It advises against allowing social media narratives to transform a technical bug into a perceived disaster, which can mislead stakeholders. Readers are encouraged to verify incidents through official sources before reacting, thereby reducing panic and misinformation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/outage-or-attack-dont-let-social-media-fill-in-the-gaps",
-    "publishedAt": "2026-11-18T22:07:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "social-media-amplifies-outage-panic",
-      "article-2ab3bacf",
-      "2ab3bacf",
-      "social-media-amplifies-outage-panic-20edd5"
-    ]
-  },
-  {
-    "slug": "gta-6-scams-threaten-accounts-money-crypto-a0dea539",
-    "title": "GTA 6 Scams Threaten Accounts, Money, Crypto",
-    "summary": "Scammers target GTA 6 players with fake code offers that can compromise Google accounts, financial data, or crypto wallets. The scheme uses social engineering to trick users into providing credentials or downloading malware, exploiting the hype around the game's launch. Users should avoid unsolicited code offers, verify authenticity through official channels, and enable two-factor authentication to mitigate credential theft.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/11/gta-6-scams-could-cost-you-your-account-money-or-crypto",
-    "publishedAt": "2026-11-18T22:06:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gta-6-scams-threaten-accounts-money-crypto",
-      "article-a0dea539",
-      "a0dea539",
-      "gta-6-scams-threaten-accounts-money-crypto-5a292d"
     ]
   }
 ];
