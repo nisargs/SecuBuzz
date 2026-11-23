@@ -11,6 +11,79 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-updates-librabbitmq-on-rhel-8-3f737d08",
+    "title": "Red Hat Updates librabbitmq on RHEL 8",
+    "summary": "Red Hat issued a security update for librabbitmq on RHEL 8, addressing vulnerabilities rated as Important. The vulnerabilities lack a publicly disclosed CVE identifier in the advisory, but Red Hat provides CVSS base scores for each through referenced CVE links. Security teams should apply the librabbitmq update immediately to mitigate the identified risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102157",
+    "publishedAt": "2026-11-23T02:16:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-librabbitmq-on-rhel-8",
+      "article-3f737d08",
+      "3f737d08",
+      "red-hat-updates-librabbitmq-on-rhel-8-2ee15a"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-libgsf-on-rhel-9-ff7053b1",
+    "title": "Red Hat Updates libgsf on RHEL 9",
+    "summary": "Red Hat released a security update for libgsf on RHEL 9, addressing vulnerabilities rated as Important. No specific CVE identifiers are listed in the advisory, but CVSS base scores are available via referenced CVE links for each vulnerability. Apply the libgsf update promptly to reduce exposure to the identified weaknesses.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102160",
+    "publishedAt": "2026-11-23T02:14:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-libgsf-on-rhel-9",
+      "article-ff7053b1",
+      "ff7053b1",
+      "red-hat-updates-libgsf-on-rhel-9-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-xdg-desktop-portal-security-updat-660447e3",
+    "title": "Red Hat Releases xdg-desktop-portal Security Update",
+    "summary": "Red Hat released a security update for xdg-desktop-portal on RHEL 9.2 Update Services for SAP Solutions, fixing multiple vulnerabilities. The update is rated Important, with CVSS base scores for each flaw listed via CVE links in the references, indicating moderate-to-high risk. Red Hat advises applying the patch immediately; no work-arounds are available, and users should confirm installation through update channels.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102164",
+    "publishedAt": "2026-11-23T02:10:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-xdg-desktop-portal-security-updat",
+      "article-660447e3",
+      "660447e3",
+      "red-hat-releases-xdg-desktop-portal-security-updat-2ee15b",
+      "red-hat-releases-xdg-desktop-portal-security-update"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-flatpak-on-rhel-8-8-0270c368",
+    "title": "Red Hat Updates flatpak on RHEL 8.8",
+    "summary": "Red Hat released a security update for flatpak on RHEL 8.8, addressing vulnerabilities rated as Important. The advisory does not list specific CVE identifiers, but CVSS base scores are provided via referenced CVE links for each vulnerability. Security teams should apply the flatpak update promptly to mitigate the identified risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102158",
+    "publishedAt": "2026-11-23T01:58:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-flatpak-on-rhel-8-8",
+      "article-0270c368",
+      "0270c368",
+      "red-hat-updates-flatpak-on-rhel-8-8-2ee15a"
+    ]
+  },
+  {
     "slug": "red-hat-issues-important-libgsf-security-update-a34525dd",
     "title": "Red Hat Issues Important libgsf Security Update",
     "summary": "Red Hat released a libgsf update on RHEL 10, fixing vulnerabilities that could enable local privilege escalation or denial of service. The advisory lists CVSS base scores and references CVE identifiers, though specific CVE numbers are omitted. Red Hat recommends applying the update immediately via the RPM package or system update tools to mitigate exploitation risk.",
@@ -9612,84 +9685,6 @@ export const news: NewsBrief[] = [
       "53591880",
       "understanding-and-preventing-wangiri-one-ring-phon-602f8a",
       "understanding-and-preventing-wangiri-one-ring-phone-scams"
-    ]
-  },
-  {
-    "slug": "anthropic-cuts-vulnerability-disclosure-deadline-t-9be6d18c",
-    "title": "Anthropic Cuts Vulnerability Disclosure Deadline to 30 Days",
-    "summary": "Anthropic has shortened its coordinated vulnerability disclosure window from 90 to 30 days, citing accelerated AI bug detection. The change applies to high-severity flaws, aiming to reduce the time between discovery and public disclosure while encouraging faster vendor remediation. Security teams should monitor Anthropic’s policy updates and adjust their vulnerability management timelines accordingly.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/anthropic-cuts-critical-vulnerability-disclosure-deadline/",
-    "publishedAt": "2026-11-18T09:48:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-cuts-vulnerability-disclosure-deadline-t",
-      "article-9be6d18c",
-      "9be6d18c",
-      "anthropic-cuts-vulnerability-disclosure-deadline-t-30cb8b",
-      "anthropic-cuts-vulnerability-disclosure-deadline-to-30-days"
-    ]
-  },
-  {
-    "slug": "tails-issues-emergency-update-for-ublock-origin-fl-04b1c649",
-    "title": "Tails Issues Emergency Update for uBlock Origin Flaw",
-    "summary": "The Tor Project released Tails 7.17.1 to address a critical flaw in the bundled 'uBlock Origin' ad blocker. The vulnerability lets a malicious site trick a user into a single click, enabling code execution on another domain. The emergency update removes 'uBlock Origin'; users should apply the patch immediately and consider disabling the extension until a permanent fix is released.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/tails-tor-browser-update-to-fix-ublock-origin-flaw/",
-    "publishedAt": "2026-11-18T09:45:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tails-issues-emergency-update-for-ublock-origin-fl",
-      "article-04b1c649",
-      "04b1c649",
-      "tails-issues-emergency-update-for-ublock-origin-fl-26f96a",
-      "tails-issues-emergency-update-for-ublock-origin-flaw"
-    ]
-  },
-  {
-    "slug": "atlassian-patches-318-security-across-jira-conflue-39f4da5a",
-    "title": "Atlassian Patches 318 Security . Across Jira, Confluence, Bitbucket and Other Products",
-    "summary": "Atlassian’s November 2026 security bulletin lists fixes for 318 vulnerability entries across Jira Software, Jira Service Management, Confluence, Bitbucket, Bamboo, Crowd, Fisheye and Crucible. Published on November 17, the bulletin covers fixes shipped in product releases over the previous month. Atlassian counted 266 high-severity entries and 52 critical entries involving third-party components.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/atlassian-patches-318-security-vulnerabilities/",
-    "publishedAt": "2026-11-18T09:43:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "atlassian-patches-318-security-across-jira-conflue",
-      "article-39f4da5a",
-      "39f4da5a",
-      "atlassian-patches-318-security-across-jira-conflue-5226a0",
-      "atlassian-patches-318-security-across-jira-confluence-bitbuc"
-    ]
-  },
-  {
-    "slug": "4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack-71b4f81c",
-    "title": "4-Year-Old NVIDIA Linux GPU Flaw Lets Users Hijack Entire Shared Servers",
-    "summary": "A four-year-old NVIDIA Linux GPU driver flaw, tracked as CVE-2026-47501 and dubbed ForgePtr, could let users with access to a vulnerable GPU take control of the entire server. The flaw allowed Stealthium researchers to gain root, the highest level of access on Linux, from inside an unprivileged container.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/4-year-old-nvidia-linux-gpu-flaw/",
-    "publishedAt": "2026-11-18T09:28:15.000Z",
-    "cves": [
-      "CVE-2026-47501"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack",
-      "article-71b4f81c",
-      "71b4f81c",
-      "4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack-3c7792",
-      "4-year-old-nvidia-linux-gpu-flaw-lets-users-hijack-entire-sh"
     ]
   }
 ];
