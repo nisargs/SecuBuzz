@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-102696-critical-php-8-2-security-update-d2bfc141",
+    "title": "RHSA-2026:102696: Critical: php:8.2 security update",
+    "summary": "An update for the php:8.2 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102696",
+    "publishedAt": "2026-11-23T23:31:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102696-critical-php-8-2-security-update",
+      "article-d2bfc141",
+      "d2bfc141",
+      "rhsa-2026-102696-critical-php-8-2-security-update-2ee16e"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-update-for-rhel-9-2-sap-0a725d3f",
+    "title": "Red Hat Releases Kernel Update for RHEL 9.2 SAP",
+    "summary": "Red Hat issued a kernel update for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple security bugs. The advisory rates the update as Important, with CVSS base scores linked to individual CVE references, indicating high risk if unpatched. Security teams should apply the update promptly, ensuring kernel version compliance and verifying SAP application compatibility after installation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102689",
+    "publishedAt": "2026-11-23T23:23:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-update-for-rhel-9-2-sap",
+      "article-0a725d3f",
+      "0a725d3f",
+      "red-hat-releases-kernel-update-for-rhel-9-2-sap-2ee16e"
+    ]
+  },
+  {
     "slug": "rhsa-2026-102684-critical-php-8-3-security-update-f1b40ee0",
     "title": "RHSA-2026:102684: Critical: php:8.3 security update",
     "summary": "An update for the php:8.3 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -217,6 +253,27 @@ export const news: NewsBrief[] = [
       "994f1241",
       "cve-2026-134056-out-of-bounds-write-in-padded-bloc-28459b",
       "cve-2026-134056-out-of-bounds-write-in-padded-block-cipher-d"
+    ]
+  },
+  {
+    "slug": "cisco-products-affected-by-php-remote-code-vulnera-a22919db",
+    "title": "Cisco Products Affected by PHP Remote Code Vulnerability",
+    "summary": "Cisco products are vulnerable to a PHP flaw that permits remote code execution, as disclosed by the PHP Foundation on November 19, 2026. The flaw, identified as CVE-2026-126714 and dubbed phpAfterShell, carries a Critical security impact rating and is referenced by GHSA-fm2m-fjf5-v3cp. Cisco recommends applying the available PHP security patches immediately to mitigate the RCE risk and ensure system integrity.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-phpaftershell-nov-2026-kT9pL4Xe?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerability+in+PHP+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1",
+    "publishedAt": "2026-11-23T20:20:00.000Z",
+    "cves": [
+      "CVE-2026-126714"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-products-affected-by-php-remote-code-vulnera",
+      "article-a22919db",
+      "a22919db",
+      "cisco-products-affected-by-php-remote-code-vulnera-6bcf0e",
+      "cisco-products-affected-by-php-remote-code-vulnerability"
     ]
   },
   {
@@ -528,6 +585,46 @@ export const news: NewsBrief[] = [
       "article-c9c0afbb",
       "c9c0afbb",
       "red-hat-releases-netpbm-update-for-rhel-9-8-eus-2ee169"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-cve-2026-78462-in-vs-code-8068fa08",
+    "title": "Microsoft Acknowledges CVE-2026-78462 in VS Code",
+    "summary": "Microsoft acknowledges CVE-2026-78462, a Visual Studio Code security feature bypass vulnerability. The issue could allow attackers to bypass security controls, but no public exploit or PoC has been disclosed. Microsoft has issued an informational update; no patch or mitigation is required at this time, and the vulnerability is tracked in the Microsoft Security Advisory database.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78462",
+    "publishedAt": "2026-11-23T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-78462"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-cve-2026-78462-in-vs-code",
+      "article-8068fa08",
+      "8068fa08",
+      "microsoft-acknowledges-cve-2026-78462-in-vs-code-744cbf"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-cve-2026-72965-in-windows-b3ad5032",
+    "title": "Microsoft Acknowledges CVE-2026-72965 in Windows",
+    "summary": "Microsoft acknowledges CVE-2026-72965, a Windows WebClient Service elevation of privilege vulnerability. The flaw could allow local users to gain higher privileges, but no public exploit or PoC has been disclosed. Microsoft has issued an informational update; no patch or mitigation is required at this time, and the vulnerability is tracked in the Microsoft Security Advisory database.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72965",
+    "publishedAt": "2026-11-23T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-72965"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-cve-2026-72965-in-windows",
+      "article-b3ad5032",
+      "b3ad5032",
+      "microsoft-acknowledges-cve-2026-72965-in-windows-744f66"
     ]
   },
   {
@@ -1023,6 +1120,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-qt6-update-for-rhel-10-0-eus-012d7a37",
+    "title": "Red Hat Issues Qt6 Update for RHEL 10.0 EUS",
+    "summary": "Red Enterprise Linux 10.0 EUS users receive a qt6-qtbase update addressing security issues in the Qt framework. The patch mitigates several vulnerabilities that could enable remote code execution or privilege escalation; CVSS scores are provided, but no public exploit is known. Red Hat recommends installing the update via the package manager; no work-arounds are available.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102350",
+    "publishedAt": "2026-11-23T14:15:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-qt6-update-for-rhel-10-0-eus",
+      "article-012d7a37",
+      "012d7a37",
+      "red-hat-issues-qt6-update-for-rhel-10-0-eus-2ee162"
+    ]
+  },
+  {
     "slug": "vmcloudoor-backdoor-targets-alibaba-tencent-huawei-e4513407",
     "title": "Vmcloudoor Backdoor Targets Alibaba, Tencent, Huawei Clouds",
     "summary": "The newly discovered Linux backdoor, Vmcloudoor, covertly commandeers cloud servers, enabling attackers to exfiltrate sensitive files. Designed to infect virtual machines on Chinese cloud platforms, it masquerades as a legitimate cloud-management agent, reducing detection by administrators. Security teams should isolate affected instances, update to the latest vendor patches, and monitor for unauthorized agent activity.",
@@ -1039,6 +1154,24 @@ export const news: NewsBrief[] = [
       "e4513407",
       "vmcloudoor-backdoor-targets-alibaba-tencent-huawei-67482d",
       "vmcloudoor-backdoor-targets-alibaba-tencent-huawei-clouds"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-php-update-for-rhel-10-c415e070",
+    "title": "Red Hat Releases Critical PHP Update for RHEL 10",
+    "summary": "Red Enterprise Linux 10 users receive a php update addressing multiple security flaws in the PHP engine. The update fixes vulnerabilities that could allow remote code execution or privilege escalation; CVSS scores are listed, but no public exploit exists. Red Hat recommends applying the patch immediately via the standard package manager; no work-arounds are available.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102300",
+    "publishedAt": "2026-11-23T14:02:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-php-update-for-rhel-10",
+      "article-c415e070",
+      "c415e070",
+      "red-hat-releases-critical-php-update-for-rhel-10-2ee161"
     ]
   },
   {
@@ -9367,144 +9500,6 @@ export const news: NewsBrief[] = [
       "d8c629c0",
       "european-commission-confirms-cyberattack-says-hack-6cd590",
       "european-commission-confirms-cyberattack-says-hackers-used-a"
-    ]
-  },
-  {
-    "slug": "linux-kernel-vulnerabilities-addressed-in-usn-9173-c92b0942",
-    "title": "Linux Kernel Vulnerabilities Addressed in USN-9173-1",
-    "summary": "The USN-9173-1 notice reports several Linux kernel vulnerabilities that could let attackers compromise affected systems. These defects involve device drivers, architecture modules, and cryptographic APIs, arising from improper handling of privileged operations and potentially enabling privilege escalation or denial of service. Kernel maintainers have issued patches; administrators should update to the latest kernel to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9173-1",
-    "publishedAt": "2026-11-19T15:13:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-vulnerabilities-addressed-in-usn-9173",
-      "article-c92b0942",
-      "c92b0942",
-      "linux-kernel-vulnerabilities-addressed-in-usn-9173-7e786a",
-      "linux-kernel-vulnerabilities-addressed-in-usn-9173-1"
-    ]
-  },
-  {
-    "slug": "linux-kernel-vulnerabilities-affect-multiple-subsy-0d52dedf",
-    "title": "Linux Kernel Vulnerabilities Affect Multiple Subsystems",
-    "summary": "A set of kernel flaws discovered in the Linux kernel could allow attackers to compromise affected systems. The vulnerabilities span numerous subsystems, including device drivers, architecture modules, and cryptographic components, potentially enabling privilege escalation or denial of service. Kernel maintainers have released an update correcting these issues; administrators should apply the patch promptly to secure their environments.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9174-1",
-    "publishedAt": "2026-11-19T15:12:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-vulnerabilities-affect-multiple-subsy",
-      "article-0d52dedf",
-      "0d52dedf",
-      "linux-kernel-vulnerabilities-affect-multiple-subsy-7e7866",
-      "linux-kernel-vulnerabilities-affect-multiple-subsystems"
-    ]
-  },
-  {
-    "slug": "linux-kernel-fips-subsystem-vulnerabilities-fixed-5ff570dd",
-    "title": "Linux Kernel FIPS Subsystem Vulnerabilities Fixed in USN-9168-2",
-    "summary": "USN-9168-2 fixes multiple Linux kernel flaws that could let attackers compromise systems via subsystems such as stream parsing, ARM64, S390, x86, and various drivers. No public exploits are known, but the vulnerabilities could enable privilege escalation or kernel-level code execution, representing a medium-severity risk. Kernel maintainers released patches; administrators should update to the latest kernel to mitigate the issues.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9168-2",
-    "publishedAt": "2026-11-19T15:12:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-fips-subsystem-vulnerabilities-fixed",
-      "article-5ff570dd",
-      "5ff570dd",
-      "linux-kernel-fips-subsystem-vulnerabilities-fixed-7e78cb",
-      "linux-kernel-fips-subsystem-vulnerabilities-fixed-in-usn-916"
-    ]
-  },
-  {
-    "slug": "ubuntu-fixes-kernel-vulnerabilities-in-aws-fips-cc733f24",
-    "title": "Ubuntu Fixes Kernel Vulnerabilities in AWS FIPS",
-    "summary": "Ubuntu Security Notices reports CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, kernel vulnerabilities affecting AWS FIPS-enabled Linux systems. The flaws reside in IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems, potentially enabling remote code execution or privilege escalation. Ubuntu has released an update correcting these defects; administrators should apply the latest kernel patch to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9170-2",
-    "publishedAt": "2026-11-19T15:12:06.000Z",
-    "cves": [
-      "CVE-2026-64564",
-      "CVE-2026-98432",
-      "CVE-2026-99999"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-fixes-kernel-vulnerabilities-in-aws-fips",
-      "article-cc733f24",
-      "cc733f24",
-      "ubuntu-fixes-kernel-vulnerabilities-in-aws-fips-7e7875"
-    ]
-  },
-  {
-    "slug": "linux-kernel-oracle-vulnerabilities-cve-2026-98432-4a8ec64b",
-    "title": "Linux Kernel Oracle Vulnerabilities CVE-2026-98432, CVE-2026-99999 Fixed",
-    "summary": "USN-9171-2 addresses Linux kernel flaws in IPv4 networking, Ethernet bridge, Netfilter, and XFRM that could allow attackers to compromise systems. The advisory lists CVE-2026-98432 and CVE-2026-99999; no public exploits are reported, but the issues could enable privilege escalation or kernel code execution. Kernel maintainers have released patches; administrators should update to the latest kernel version to mitigate the vulnerabilities.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9171-2",
-    "publishedAt": "2026-11-19T15:12:06.000Z",
-    "cves": [
-      "CVE-2026-98432",
-      "CVE-2026-99999"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-oracle-vulnerabilities-cve-2026-98432",
-      "article-4a8ec64b",
-      "4a8ec64b",
-      "linux-kernel-oracle-vulnerabilities-cve-2026-98432-7e7871",
-      "linux-kernel-oracle-vulnerabilities-cve-2026-98432-cve-2026-"
-    ]
-  },
-  {
-    "slug": "vmware-vcenter-auth-bypass-vulnerability-fixed-4578142e",
-    "title": "VMware vCenter Auth Bypass Vulnerability Fixed",
-    "summary": "A critical flaw in VMware vCenter, scoring CVSS 9.8, allows network attackers to bypass authentication and gain unauthorized access to the management console. The vulnerability exploits a flaw in the authentication mechanism, enabling attackers to control ESX hosts and virtual machines without credentials. All supported vCenter branches have patched releases; administrators should update immediately and verify authentication logs for anomalies.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
-    "publishedAt": "2026-11-19T15:11:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vmware-vcenter-auth-bypass-vulnerability-fixed",
-      "article-4578142e",
-      "4578142e",
-      "vmware-vcenter-auth-bypass-vulnerability-fixed-70121b"
-    ]
-  },
-  {
-    "slug": "criminal-ip-launches-aitem-exposure-management-pla-343bfdd5",
-    "title": "Criminal IP Launches AITEM Exposure Management Platform",
-    "summary": "Criminal IP, developed by AI SPERA, launched Criminal IP AITEM on November 18, 2026, combining internet-facing asset discovery with AI-assisted investigation. The platform adds public-source exposure analysis and dark web monitoring as an evolution of Criminal IP ASM. Security teams can use AITEM to connect asset discovery with AI-powered threat exposure management.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/criminal-ip-launches-aitem-to-connect-asset-discovery-with-ai-powered-exposure-management/",
-    "publishedAt": "2026-11-19T15:03:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "criminal-ip-launches-aitem-exposure-management-pla",
-      "article-343bfdd5",
-      "343bfdd5",
-      "criminal-ip-launches-aitem-exposure-management-pla-5b028b",
-      "criminal-ip-launches-aitem-exposure-management-platform"
     ]
   }
 ];

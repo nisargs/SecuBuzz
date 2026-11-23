@@ -6170,5 +6170,12 @@
   "https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-stops-and-reverses-modern-attacks/",
   "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html",
   "https://access.redhat.com/errata/RHSA-2026:102290",
-  "https://access.redhat.com/errata/RHSA-2026:102292"
+  "https://access.redhat.com/errata/RHSA-2026:102292",
+  "https://access.redhat.com/errata/RHSA-2026:102689",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-phpaftershell-nov-2026-kT9pL4Xe?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerability+in+PHP+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1",
+  "https://access.redhat.com/errata/RHSA-2026:102696",
+  "https://access.redhat.com/errata/RHSA-2026:102300",
+  "https://access.redhat.com/errata/RHSA-2026:102350",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78462",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72965"
 ]

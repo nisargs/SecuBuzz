@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 22:45:50 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 23:45:27 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:102696: Critical: php:8.2 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102696-critical-php-8-2-security-update-d2bfc141</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102696-critical-php-8-2-security-update-d2bfc141</guid>
+      <description><![CDATA[An update for the php:8.2 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 23 Nov 2026 23:31:55 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102696">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel Update for RHEL 9.2 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-2-sap-0a725d3f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-2-sap-0a725d3f</guid>
+      <description><![CDATA[Red Hat issued a kernel update for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple security bugs. The advisory rates the update as Important, with CVSS base scores linked to individual CVE references, indicating high risk if unpatched. Security teams should apply the update promptly, ensuring kernel version compliance and verifying SAP application compatibility after installation.]]></description>
+      <pubDate>Mon, 23 Nov 2026 23:23:25 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102689">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>RHSA-2026:102684: Critical: php:8.3 security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-102684-critical-php-8-3-security-update-f1b40ee0</link>
@@ -104,6 +122,15 @@
       <description><![CDATA[Bulletin ID: 2026-196-AWS Publication Date: 11/23/2026 12:00 PM PST Description: We identified CVE-2026-134056, an out-of-bounds write issue in AWS-LC's padded block cipher decryption. If the output buffer is the minimum documented size, AWS-LC can write one byte past its end. The aws-lc-rs StreamingDecryptingKey API has a similar issue with cbc_pkcs7 and ecb_pkcs7.]]></description>
       <pubDate>Mon, 23 Nov 2026 20:29:41 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-196-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Cisco Products Affected by PHP Remote Code Vulnerability</title>
+      <link>https://secubuzz.com/news/cisco-products-affected-by-php-remote-code-vulnera-a22919db</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-products-affected-by-php-remote-code-vulnera-a22919db</guid>
+      <description><![CDATA[Cisco products are vulnerable to a PHP flaw that permits remote code execution, as disclosed by the PHP Foundation on November 19, 2026. The flaw, identified as CVE-2026-126714 and dubbed phpAfterShell, carries a Critical security impact rating and is referenced by GHSA-fm2m-fjf5-v3cp. Cisco recommends applying the available PHP security patches immediately to mitigate the RCE risk and ensure system integrity.]]></description>
+      <pubDate>Mon, 23 Nov 2026 20:20:00 GMT</pubDate>
+      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-phpaftershell-nov-2026-kT9pL4Xe?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerability+in+PHP+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1">Cisco PSIRT</source>
       <category>CVE</category>
     </item>
     <item>
@@ -249,6 +276,24 @@
       <pubDate>Mon, 23 Nov 2026 16:03:00 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102542">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Acknowledges CVE-2026-78462 in VS Code</title>
+      <link>https://secubuzz.com/news/microsoft-acknowledges-cve-2026-78462-in-vs-code-8068fa08</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-cve-2026-78462-in-vs-code-8068fa08</guid>
+      <description><![CDATA[Microsoft acknowledges CVE-2026-78462, a Visual Studio Code security feature bypass vulnerability. The issue could allow attackers to bypass security controls, but no public exploit or PoC has been disclosed. Microsoft has issued an informational update; no patch or mitigation is required at this time, and the vulnerability is tracked in the Microsoft Security Advisory database.]]></description>
+      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78462">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Acknowledges CVE-2026-72965 in Windows</title>
+      <link>https://secubuzz.com/news/microsoft-acknowledges-cve-2026-72965-in-windows-b3ad5032</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-cve-2026-72965-in-windows-b3ad5032</guid>
+      <description><![CDATA[Microsoft acknowledges CVE-2026-72965, a Windows WebClient Service elevation of privilege vulnerability. The flaw could allow local users to gain higher privileges, but no public exploit or PoC has been disclosed. Microsoft has issued an informational update; no patch or mitigation is required at this time, and the vulnerability is tracked in the Microsoft Security Advisory database.]]></description>
+      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72965">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Splunk Advisory Affects Multiple Products, Requires Upgrade</title>
@@ -411,51 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 15:05:50 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/23/gl-inet-cloud-compromise-malware-backdoors/">Help Net Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Agent Identity Gaps Span Multiple Platforms</title>
-      <link>https://secubuzz.com/news/ai-agent-identity-gaps-span-multiple-platforms-666cfee6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-identity-gaps-span-multiple-platforms-666cfee6</guid>
-      <description><![CDATA[AI agents operating across multiple platforms create security gaps when no single vendor can observe or control their actions, according to Token Security. The shared responsibility problem complicates agent identity, permission, and accountability management for organizations. Organizations should assign clear ownership and accountability for agent identities and permissions across platforms.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Huntress Begins EU Data Hosting in Frankfurt</title>
-      <link>https://secubuzz.com/news/huntress-begins-eu-data-hosting-in-frankfurt-12ff4d6c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/huntress-begins-eu-data-hosting-in-frankfurt-12ff4d6c</guid>
-      <description><![CDATA[Huntress has started European Union data hosting, with Phase 1 storing certain data in Frankfurt. The company said other data currently remains in the United States while Phase 2 is planned. Customers should review the available regional data residency details to fully understand which information is hosted in each location.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:00:00 GMT</pubDate>
-      <source url="https://www.huntress.com/blog/eu-data-hosting">Huntress</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>N-Able MailAssure Vulnerability Advisory</title>
-      <link>https://secubuzz.com/news/n-able-mailassure-vulnerability-advisory-9c081c10</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-mailassure-vulnerability-advisory-9c081c10</guid>
-      <description><![CDATA[N-Able issued advisory AV26-1191 for MailAssure before 20261121.1943, noting a vulnerability. The flaw may allow unauthorized access to email data or compromise the integrity of mail transmissions, though no exploitation reports have been confirmed. Administrators are advised to review the provided links, apply available updates, and monitor for any anomalous activity.]]></description>
-      <pubDate>Mon, 23 Nov 2026 14:51:33 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1191">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>NVIDIA Reinstates Jensen Huang as CEO</title>
-      <link>https://secubuzz.com/news/nvidia-reinstates-jensen-huang-as-ceo-04e4f5e8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-reinstates-jensen-huang-as-ceo-04e4f5e8</guid>
-      <description><![CDATA[NVIDIA reinstated Jensen Huang as president, chief executive officer, and board director on November 23, 2026, after a unanimous board vote. The decision took effect immediately, but an independent board inquiry into reports that a foreign intelligence effort targeted Huang remains open. NVIDIA said the board met with Huang several times and received additional information.]]></description>
-      <pubDate>Mon, 23 Nov 2026 14:51:17 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/nvidia-reinstates-jensen-huang/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Wiz Research Reports Agentic Framework Cloud Intrusions</title>
-      <link>https://secubuzz.com/news/wiz-research-reports-agentic-framework-cloud-intru-dbba3a3a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wiz-research-reports-agentic-framework-cloud-intru-dbba3a3a</guid>
-      <description><![CDATA[Agentic offensive frameworks such as ARTEX are driving a surge in cloud intrusions, as reported by Wiz Research. These frameworks enable automated, high-velocity attacks that exploit misconfigurations and weak IAM controls, causing unauthorized data exfiltration and service disruption across cloud environments. Security teams should monitor for ARTEX-related activity, enforce least-privilege IAM, and deploy detection rules to spot noisy, machine-speed attacks.]]></description>
-      <pubDate>Mon, 23 Nov 2026 14:46:19 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks">Wiz Research</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
