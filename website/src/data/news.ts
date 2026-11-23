@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cancer-institute-tackles-shadow-it-in-research-0187d950",
+    "title": "Cancer Institute Tackles Shadow IT in Research",
+    "summary": "Istituto Nazionale Tumori (INT) discusses how to keep a cancer research hospital operational while protecting against cyberattacks. The director explains collaboration with partner hospitals in the Rare Cancer Network, challenges when staff cannot access chemotherapy plans, and why banning shadow IT rarely fixes gaps. INT also highlights the most burdensome EU regulation and outlines its approach to secure research workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/rocco-saviano-istituto-nazionale-tumori-int-hospital-microsegmentation/",
+    "publishedAt": "2026-11-23T07:00:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cancer-institute-tackles-shadow-it-in-research",
+      "article-0187d950",
+      "0187d950",
+      "cancer-institute-tackles-shadow-it-in-research-70aeed"
+    ]
+  },
+  {
     "slug": "xalgorix-introduces-ai-powered-pen-testing-tool-028c9b4e",
     "title": "Xalgorix Introduces AI-Powered Pen Testing Tool",
     "summary": "Xalgorix, an open-source AI penetration testing framework, validates findings through a dual-agent verification process. The primary agent identifies potential bugs, while a secondary agent attempts to exploit them; failures to confirm a bug result in a flagged finding for manual review, reducing false positives. The tool is available for community use and encourages reviewers to assess flagged vulnerabilities before reporting.",
@@ -116,6 +134,42 @@ export const news: NewsBrief[] = [
       "article-eaea480b",
       "eaea480b",
       "red-hat-releases-mysql-8-4-security-update-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-important-git-lfs-security-update-91a818e5",
+    "title": "Red Hat Releases Important Git-LFS Security Update",
+    "summary": "Red Hat issued an important security update for git-lfs on RHEL 9.8 Extended Update Support. The advisory indicates that the update addresses one or more vulnerabilities, each with a CVSS base score available via the referenced CVE links. Users should apply the git-lfs update immediately to mitigate the identified security risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102187",
+    "publishedAt": "2026-11-23T05:18:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-important-git-lfs-security-update",
+      "article-91a818e5",
+      "91a818e5",
+      "red-hat-releases-important-git-lfs-security-update-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-moderate-openssh-security-update-859b0083",
+    "title": "Red Hat Issues Moderate OpenSSH Security Update",
+    "summary": "Red Hat released a moderate security update for OpenSSH on RHEL 9, addressing weaknesses that could allow remote attackers to gain elevated privileges. The advisory references multiple CVEs, each with a CVSS base score provided, indicating the severity of the flaws. Administrators should apply the OpenSSH update promptly to mitigate the disclosed vulnerabilities and prevent privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102191",
+    "publishedAt": "2026-11-23T05:09:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-moderate-openssh-security-update",
+      "article-859b0083",
+      "859b0083",
+      "red-hat-issues-moderate-openssh-security-update-2ee15b"
     ]
   },
   {
@@ -268,6 +322,42 @@ export const news: NewsBrief[] = [
       "2d84a280",
       "git-lfs-security-update-for-red-hat-enterprise-lin-2ee15b",
       "git-lfs-security-update-for-red-hat-enterprise-linux-10"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-nodejs22-important-security-update-555683a3",
+    "title": "Red Hat issues nodejs22 important security update",
+    "summary": "An important-impact flaw in Red Hat Enterprise Linux 10.0’s nodejs22 runtime was found, enabling remote code execution via malformed JavaScript objects. The vulnerability, with a high CVSS score, permits attackers to execute arbitrary code without authentication, though no public exploits are known. Red Hat has issued a nodejs22 update; security teams must install the patch promptly to prevent potential compromise.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102180",
+    "publishedAt": "2026-11-23T03:32:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-nodejs22-important-security-update",
+      "article-555683a3",
+      "555683a3",
+      "red-hat-issues-nodejs22-important-security-update-2ee15b"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-glib2-moderate-security-update-29f2a9a2",
+    "title": "Red Hat releases glib2 moderate security update",
+    "summary": "A moderate-impact vulnerability in Red Hat Enterprise Linux 8.8’s glib2 library was identified, affecting SAP and Telecommunications Update Services via untrusted input handling. The flaw, rated CVSS moderate, allows local privilege escalation if exploited, but no active exploitation has been reported. Red Hat has released a patch; administrators should apply the glib2 update immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102189",
+    "publishedAt": "2026-11-23T03:30:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-glib2-moderate-security-update",
+      "article-29f2a9a2",
+      "29f2a9a2",
+      "red-hat-releases-glib2-moderate-security-update-2ee15b"
     ]
   },
   {
@@ -1336,9 +1426,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "nginx-cves-impact-palo-alto-products-84c14653",
-    "title": "NGINX CVEs Impact Palo Alto Products",
-    "summary": "Palo Alto Networks reported that CVE-2026-123633 and CVE-2026-123007, NGINX vulnerabilities, impact its firewall and threat prevention products. These critical flaws enable remote code execution in NGINX, potentially compromising Palo Alto devices and exposing network traffic. Patches addressing both CVEs are available; administrators should update affected systems immediately to prevent exploitation.",
+    "slug": "palo-alto-releases-patches-for-two-critical-nginx-c9de6158",
+    "title": "Palo Alto Releases Patches for Two Critical NGINX CVEs",
+    "summary": "Palo Alto Networks issued patches for two critical NGINX vulnerabilities, CVE-2026-123633 and CVE-2026-123007, that affect PAN-OS and Panorama when HTTP/2 is enabled. The flaws allow unauthenticated remote attackers to crash worker processes or execute code, posing a high-severity remote code execution risk. Administrators should apply the updates immediately or enable the temporary workaround to mitigate exploitation.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Palo Alto Networks PSIRT",
@@ -1348,12 +1438,18 @@ export const news: NewsBrief[] = [
       "CVE-2026-123633",
       "CVE-2026-123007"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/palo-alto-confirms-nginx-rce-vulnerabilities/"
+      }
+    ],
     "aliases": [
-      "nginx-cves-impact-palo-alto-products",
-      "article-84c14653",
-      "84c14653",
-      "nginx-cves-impact-palo-alto-products-4fdfb7"
+      "palo-alto-releases-patches-for-two-critical-nginx",
+      "article-c9de6158",
+      "c9de6158",
+      "palo-alto-releases-patches-for-two-critical-nginx-4fdfb7",
+      "palo-alto-releases-patches-for-two-critical-nginx-cves"
     ]
   },
   {
@@ -9576,101 +9672,6 @@ export const news: NewsBrief[] = [
       "19bda175",
       "from-deepfakes-to-helpdesk-impersonation-why-stron-783f6f",
       "from-deepfakes-to-helpdesk-impersonation-why-stronger-verifi"
-    ]
-  },
-  {
-    "slug": "cloudflare-waf-blocks-java4shell-exploit-7a6ccdff",
-    "title": "Cloudflare WAF Blocks Java4Shell Exploit",
-    "summary": "Java4Shell, a critical memory-corruption flaw in OpenJDK’s Base64 decoder, allows remote code execution on affected Java runtimes. Identified as CVE-2026-114938, the vulnerability exploits a decoder buffer overflow triggered by crafted Base64 payloads, enabling unauthenticated code execution. Cloudflare’s WAF now offers six managed rules that log matching requests by default; organizations should also apply the latest OpenJDK patches.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/java4shell-waf-protection/",
-    "publishedAt": "2026-11-18T14:52:10.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-waf-blocks-java4shell-exploit",
-      "article-7a6ccdff",
-      "7a6ccdff",
-      "cloudflare-waf-blocks-java4shell-exploit-7b5d2a"
-    ]
-  },
-  {
-    "slug": "british-hacker-sentenced-six-years-for-crypto-thef-38b8c730",
-    "title": "British Hacker Sentenced Six Years for Crypto Theft",
-    "summary": "Tyler Robert Buchanan, a 24-year-old from Dundee, received a six-year prison sentence for orchestrating an $11.6 million cryptocurrency theft operation. Microsoft labeled the group as one of the most dangerous financial criminal collectives, targeting victims via phishing and credential theft. Law enforcement agencies should continue monitoring for related phishing campaigns and enforce stricter credential hygiene to mitigate similar attacks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/british-hacker-gets-six-year-sentence-scattered-spider",
-    "publishedAt": "2026-11-18T14:48:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "british-hacker-sentenced-six-years-for-crypto-thef",
-      "article-38b8c730",
-      "38b8c730",
-      "british-hacker-sentenced-six-years-for-crypto-thef-37027f",
-      "british-hacker-sentenced-six-years-for-crypto-theft"
-    ]
-  },
-  {
-    "slug": "ox-security-unveils-ox-radar-and-response-center-e1b217b8",
-    "title": "OX Security Unveils OX Radar and Response Center",
-    "summary": "OX Security launched OX Radar and Response Center, a platform that automatically monitors critical vulnerabilities and supply chain threats for customers. The system aggregates threat data, evaluates exposure, and prioritizes remediation, enabling teams to focus on high-priority risks. No vendor patch is required; organizations should integrate the tool into existing workflows for continuous threat visibility.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ox-security-ox-radar-response-center/",
-    "publishedAt": "2026-11-18T14:30:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ox-security-unveils-ox-radar-and-response-center",
-      "article-e1b217b8",
-      "e1b217b8",
-      "ox-security-unveils-ox-radar-and-response-center-2ac2aa"
-    ]
-  },
-  {
-    "slug": "new-eggstreme-malware-variant-goes-silent-to-evade-3d8d99c0",
-    "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
-    "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
-    "publishedAt": "2026-11-18T14:11:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "new-eggstreme-malware-variant-goes-silent-to-evade",
-      "article-3d8d99c0",
-      "3d8d99c0",
-      "new-eggstreme-malware-variant-goes-silent-to-evade-63ba9f",
-      "new-eggstreme-malware-variant-goes-silent-to-evade-security-"
-    ]
-  },
-  {
-    "slug": "microsoft-s-ai-uncovers-99-security-issues-in-expr-dd12e280",
-    "title": "Microsoft’s AI Uncovers 99 Security Issues in Express, ImageMagick and Other Open-Source Projects",
-    "summary": "Microsoft and GitHub sent 99 verified security reports to six open-source projects, including Express and ImageMagick, after an AI pilot identified thousands of potential vulnerabilities. In its Nov. 17 announcement, GitHub said maintainers had fixed 55 issues as of Nov. 15.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/microsofts-ai-uncovers-99-security-issues/",
-    "publishedAt": "2026-11-18T14:06:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-s-ai-uncovers-99-security-issues-in-expr",
-      "article-dd12e280",
-      "dd12e280",
-      "microsoft-s-ai-uncovers-99-security-issues-in-expr-76a8c4",
-      "microsoft-s-ai-uncovers-99-security-issues-in-express-imagem"
     ]
   }
 ];

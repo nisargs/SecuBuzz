@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/23/rocco-saviano-istituto-nazionale-tumori-int-hospital-microsegmentation/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/rocco-saviano-istituto-nazionale-tumori-int-hospital-microsegmentation/",
+    "title": "Cancer Institute Tackles Shadow IT in Research",
+    "headline": "Cancer Institute Tackles Shadow IT in Research",
+    "summary": "Istituto Nazionale Tumori (INT) discusses how to keep a cancer research hospital operational while protecting against cyberattacks. The director explains collaboration with partner hospitals in the Rare Cancer Network, challenges when staff cannot access chemotherapy plans, and why banning shadow IT rarely fixes gaps. INT also highlights the most burdensome EU regulation and outlines its approach to secure research workflows.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-23T07:00:33.000Z",
+    "ingestedAt": "2026-11-23T07:43:12.861Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/23/rocco-saviano-istituto-nazionale-tumori-int-hospital-microsegmentation/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/23/xalgorix-ai-penetration-testing-tool/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/xalgorix-ai-penetration-testing-tool/",
     "title": "Xalgorix Introduces AI-Powered Pen Testing Tool",
@@ -93,6 +109,38 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:102188",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102187",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102187",
+    "title": "Red Hat Releases Important Git-LFS Security Update",
+    "headline": "Red Hat Releases Important Git-LFS Security Update",
+    "summary": "Red Hat issued an important security update for git-lfs on RHEL 9.8 Extended Update Support. The advisory indicates that the update addresses one or more vulnerabilities, each with a CVSS base score available via the referenced CVE links. Users should apply the git-lfs update immediately to mitigate the identified security risks.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T05:18:26.000Z",
+    "ingestedAt": "2026-11-23T07:43:12.861Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102187",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102191",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102191",
+    "title": "Red Hat Issues Moderate OpenSSH Security Update",
+    "headline": "Red Hat Issues Moderate OpenSSH Security Update",
+    "summary": "Red Hat released a moderate security update for OpenSSH on RHEL 9, addressing weaknesses that could allow remote attackers to gain elevated privileges. The advisory references multiple CVEs, each with a CVSS base score provided, indicating the severity of the flaws. Administrators should apply the OpenSSH update promptly to mitigate the disclosed vulnerabilities and prevent privilege escalation.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T05:09:46.000Z",
+    "ingestedAt": "2026-11-23T07:43:12.861Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102191",
     "additionalSources": []
   },
   {
@@ -227,6 +275,38 @@
         "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102184"
       }
     ]
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102180",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102180",
+    "title": "Red Hat issues nodejs22 important security update",
+    "headline": "Red Hat issues nodejs22 important security update",
+    "summary": "An important-impact flaw in Red Hat Enterprise Linux 10.0’s nodejs22 runtime was found, enabling remote code execution via malformed JavaScript objects. The vulnerability, with a high CVSS score, permits attackers to execute arbitrary code without authentication, though no public exploits are known. Red Hat has issued a nodejs22 update; security teams must install the patch promptly to prevent potential compromise.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T03:32:15.000Z",
+    "ingestedAt": "2026-11-23T07:43:15.350Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102180",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:102189",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102189",
+    "title": "Red Hat releases glib2 moderate security update",
+    "headline": "Red Hat releases glib2 moderate security update",
+    "summary": "A moderate-impact vulnerability in Red Hat Enterprise Linux 8.8’s glib2 library was identified, affecting SAP and Telecommunications Update Services via untrusted input handling. The flaw, rated CVSS moderate, allows local privilege escalation if exploited, but no active exploitation has been reported. Red Hat has released a patch; administrators should apply the glib2 update immediately to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-23T03:30:33.000Z",
+    "ingestedAt": "2026-11-23T07:43:15.350Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:102189",
+    "additionalSources": []
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:102176",
@@ -1172,9 +1252,9 @@
   {
     "id": "https://security.paloaltonetworks.com/CVE-2026-123633",
     "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-123633",
-    "title": "NGINX CVEs Impact Palo Alto Products",
-    "headline": "NGINX CVEs Impact Palo Alto Products",
-    "summary": "Palo Alto Networks reported that CVE-2026-123633 and CVE-2026-123007, NGINX vulnerabilities, impact its firewall and threat prevention products. These critical flaws enable remote code execution in NGINX, potentially compromising Palo Alto devices and exposing network traffic. Patches addressing both CVEs are available; administrators should update affected systems immediately to prevent exploitation.",
+    "title": "Palo Alto Releases Patches for Two Critical NGINX CVEs",
+    "headline": "Palo Alto Releases Patches for Two Critical NGINX CVEs",
+    "summary": "Palo Alto Networks issued patches for two critical NGINX vulnerabilities, CVE-2026-123633 and CVE-2026-123007, that affect PAN-OS and Panorama when HTTP/2 is enabled. The flaws allow unauthenticated remote attackers to crash worker processes or execute code, posing a high-severity remote code execution risk. Administrators should apply the updates immediately or enable the temporary workaround to mitigate exploitation.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Palo Alto Networks PSIRT",
@@ -1183,7 +1263,16 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://security.paloaltonetworks.com/CVE-2026-123633",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/palo-alto-confirms-nginx-rce-vulnerabilities/"
+      }
+    ],
+    "cves": [
+      "CVE-2026-123633",
+      "CVE-2026-123007"
+    ]
   },
   {
     "id": "https://unit42.paloaltonetworks.com/com-affiliate-vishing-attacks/",
@@ -8250,88 +8339,6 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-11-18T15:00:10.000Z",
     "ingestedAt": "2026-11-18T15:43:43.668Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://blog.cloudflare.com/java4shell-waf-protection/",
-    "sourceUrl": "https://blog.cloudflare.com/java4shell-waf-protection/",
-    "title": "Cloudflare WAF Blocks Java4Shell Exploit",
-    "headline": "Cloudflare WAF Blocks Java4Shell Exploit",
-    "summary": "Java4Shell, a critical memory-corruption flaw in OpenJDK’s Base64 decoder, allows remote code execution on affected Java runtimes. Identified as CVE-2026-114938, the vulnerability exploits a decoder buffer overflow triggered by crafted Base64 payloads, enabling unauthenticated code execution. Cloudflare’s WAF now offers six managed rules that log matching requests by default; organizations should also apply the latest OpenJDK patches.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-11-18T14:52:10.000Z",
-    "ingestedAt": "2026-11-18T15:43:16.199Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://blog.cloudflare.com/java4shell-waf-protection/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/british-hacker-gets-six-year-sentence-scattered-spider",
-    "sourceUrl": "https://therecord.media/british-hacker-gets-six-year-sentence-scattered-spider",
-    "title": "British Hacker Sentenced Six Years for Crypto Theft",
-    "headline": "British Hacker Sentenced Six Years for Crypto Theft",
-    "summary": "Tyler Robert Buchanan, a 24-year-old from Dundee, received a six-year prison sentence for orchestrating an $11.6 million cryptocurrency theft operation. Microsoft labeled the group as one of the most dangerous financial criminal collectives, targeting victims via phishing and credential theft. Law enforcement agencies should continue monitoring for related phishing campaigns and enforce stricter credential hygiene to mitigate similar attacks.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-11-18T14:48:00.000Z",
-    "ingestedAt": "2026-11-18T15:43:21.188Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://therecord.media/british-hacker-gets-six-year-sentence-scattered-spider",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/ox-security-ox-radar-response-center/",
-    "sourceUrl": "https://cybersecuritynews.com/ox-security-ox-radar-response-center/",
-    "title": "OX Security Unveils OX Radar and Response Center",
-    "headline": "OX Security Unveils OX Radar and Response Center",
-    "summary": "OX Security launched OX Radar and Response Center, a platform that automatically monitors critical vulnerabilities and supply chain threats for customers. The system aggregates threat data, evaluates exposure, and prioritizes remediation, enabling teams to focus on high-priority risks. No vendor patch is required; organizations should integrate the tool into existing workflows for continuous threat visibility.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-18T14:30:20.000Z",
-    "ingestedAt": "2026-11-18T19:43:43.852Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/ox-security-ox-radar-response-center/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
-    "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
-    "headline": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
-    "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-18T14:11:28.000Z",
-    "ingestedAt": "2026-11-18T15:43:29.541Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://cybersecuritynews.com/microsofts-ai-uncovers-99-security-issues/",
-    "sourceUrl": "https://cybersecuritynews.com/microsofts-ai-uncovers-99-security-issues/",
-    "title": "Microsoft’s AI Uncovers 99 Security Issues in Express, ImageMagick and Other Open-Source Projects",
-    "headline": "Microsoft’s AI Uncovers 99 Security Issues in Express, ImageMagick and Other Open-Source Projects",
-    "summary": "Microsoft and GitHub sent 99 verified security reports to six open-source projects, including Express and ImageMagick, after an AI pilot identified thousands of potential vulnerabilities. In its Nov. 17 announcement, GitHub said maintainers had fixed 55 issues as of Nov. 15.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-18T14:06:31.000Z",
-    "ingestedAt": "2026-11-18T15:43:29.543Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "cves": [],

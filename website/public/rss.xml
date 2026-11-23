@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 06:44:58 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 07:44:33 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cancer Institute Tackles Shadow IT in Research</title>
+      <link>https://secubuzz.com/news/cancer-institute-tackles-shadow-it-in-research-0187d950</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cancer-institute-tackles-shadow-it-in-research-0187d950</guid>
+      <description><![CDATA[Istituto Nazionale Tumori (INT) discusses how to keep a cancer research hospital operational while protecting against cyberattacks. The director explains collaboration with partner hospitals in the Rare Cancer Network, challenges when staff cannot access chemotherapy plans, and why banning shadow IT rarely fixes gaps. INT also highlights the most burdensome EU regulation and outlines its approach to secure research workflows.]]></description>
+      <pubDate>Mon, 23 Nov 2026 07:00:33 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/23/rocco-saviano-istituto-nazionale-tumori-int-hospital-microsegmentation/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Xalgorix Introduces AI-Powered Pen Testing Tool</title>
       <link>https://secubuzz.com/news/xalgorix-introduces-ai-powered-pen-testing-tool-028c9b4e</link>
@@ -59,6 +68,24 @@
       <description><![CDATA[Red Hat issued a security update for the mysql:8.4 module on Red Enterprise Linux 9.8 Extended Update Support. The update addresses multiple vulnerabilities, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Administrators should apply the RHSA-2026:102188 update promptly to mitigate potential exploitation of the identified flaws.]]></description>
       <pubDate>Mon, 23 Nov 2026 05:18:41 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102188">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Important Git-LFS Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-important-git-lfs-security-update-91a818e5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-important-git-lfs-security-update-91a818e5</guid>
+      <description><![CDATA[Red Hat issued an important security update for git-lfs on RHEL 9.8 Extended Update Support. The advisory indicates that the update addresses one or more vulnerabilities, each with a CVSS base score available via the referenced CVE links. Users should apply the git-lfs update immediately to mitigate the identified security risks.]]></description>
+      <pubDate>Mon, 23 Nov 2026 05:18:26 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102187">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Moderate OpenSSH Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-moderate-openssh-security-update-859b0083</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-moderate-openssh-security-update-859b0083</guid>
+      <description><![CDATA[Red Hat released a moderate security update for OpenSSH on RHEL 9, addressing weaknesses that could allow remote attackers to gain elevated privileges. The advisory references multiple CVEs, each with a CVSS base score provided, indicating the severity of the flaws. Administrators should apply the OpenSSH update promptly to mitigate the disclosed vulnerabilities and prevent privilege escalation.]]></description>
+      <pubDate>Mon, 23 Nov 2026 05:09:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102191">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -131,6 +158,24 @@
       <description><![CDATA[Red Hat released a security update for git-lfs on Red Hat Enterprise Linux 10, addressing a vulnerability that could allow code execution. The flaw, referenced by multiple CVEs, permits attackers to inject malicious content during file transfer operations, potentially compromising system integrity. Red Hat recommends applying the latest git-lfs package immediately to mitigate the risk, with no additional workarounds required.]]></description>
       <pubDate>Mon, 23 Nov 2026 03:32:40 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102186">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat issues nodejs22 important security update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-nodejs22-important-security-update-555683a3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-nodejs22-important-security-update-555683a3</guid>
+      <description><![CDATA[An important-impact flaw in Red Hat Enterprise Linux 10.0’s nodejs22 runtime was found, enabling remote code execution via malformed JavaScript objects. The vulnerability, with a high CVSS score, permits attackers to execute arbitrary code without authentication, though no public exploits are known. Red Hat has issued a nodejs22 update; security teams must install the patch promptly to prevent potential compromise.]]></description>
+      <pubDate>Mon, 23 Nov 2026 03:32:15 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102180">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat releases glib2 moderate security update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-glib2-moderate-security-update-29f2a9a2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-glib2-moderate-security-update-29f2a9a2</guid>
+      <description><![CDATA[A moderate-impact vulnerability in Red Hat Enterprise Linux 8.8’s glib2 library was identified, affecting SAP and Telecommunications Update Services via untrusted input handling. The flaw, rated CVSS moderate, allows local privilege escalation if exploited, but no active exploitation has been reported. Red Hat has released a patch; administrators should apply the glib2 update immediately to mitigate the risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 03:30:33 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102189">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -411,51 +456,6 @@
       <pubDate>Sun, 22 Nov 2026 05:06:55 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html">The Hacker News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Ghostscript Sandbox Escape RCE Demonstrated via File Uploads</title>
-      <link>https://secubuzz.com/news/ghostscript-sandbox-escape-rce-demonstrated-via-fi-c975302d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostscript-sandbox-escape-rce-demonstrated-via-fi-c975302d</guid>
-      <description><![CDATA[Researchers demonstrated a sandbox-escape RCE flaw in Ghostscript, a common PDF/PostScript interpreter on Linux servers, via crafted file uploads. The flaw lets attackers bypass Ghostscript’s isolation and run arbitrary commands on the host, compromising the web application; a PoC was released by pwn.ai. Ghostscript issued a patch; admins should apply it immediately and verify file-upload handling remains sandboxed.]]></description>
-      <pubDate>Sun, 22 Nov 2026 05:03:41 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OpenRouter Removes Compromised AI Hosts, Revokes Zero Data Retention</title>
-      <link>https://secubuzz.com/news/openrouter-removes-compromised-ai-hosts-revokes-ze-e5254118</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openrouter-removes-compromised-ai-hosts-revokes-ze-e5254118</guid>
-      <description><![CDATA[OpenRouter removed three AI hosting providers and revoked Zero Data Retention for 125 endpoints after detecting provider compromise. The flaw arises from third-party providers lacking secure isolation, risking private chat data leakage; no breach confirmed, but exposure persists. OpenRouter notified affected customers, removed compromised providers, and revoked Zero Data Retention; teams should verify endpoint settings and monitor anomalous access.]]></description>
-      <pubDate>Sun, 22 Nov 2026 03:58:45 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/openrouter-ai-chat-leaks/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical PHP Patch for RHEL7</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-php-patch-for-rhel7-944c034d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-php-patch-for-rhel7-944c034d</guid>
-      <description><![CDATA[Red Hat released a critical PHP update for RHEL7 Extended Lifecycle Support, fixing high-severity vulnerabilities that could allow remote code execution. The patch covers several CVE-identified flaws, each rated with a CVSS base score indicating critical impact, though no exploitation has been seen. Apply the update immediately via RHSA-2026:101337 to keep PHP secure.]]></description>
-      <pubDate>Sun, 22 Nov 2026 03:56:40 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:101337">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ghostscript Upload2Shell Enables Remote Command Execution</title>
-      <link>https://secubuzz.com/news/ghostscript-upload2shell-enables-remote-command-ex-85e5b759</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostscript-upload2shell-enables-remote-command-ex-85e5b759</guid>
-      <description><![CDATA[Ghostscript’s Type 1 font loader flaw, CVE-2026-125396, allows attackers to run arbitrary commands on WordPress, Roundcube, and print servers via file processing. The flaw does not need direct Ghostscript exposure, yet it grants remote code execution on any server that processes malicious fonts. Patches for Ghostscript 10.08.0+ are released; administrators should upgrade immediately to eliminate the risk.]]></description>
-      <pubDate>Sun, 22 Nov 2026 02:43:08 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/upload2shell-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical PHP 8.2 Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-php-8-2-update-efc53ac1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-php-8-2-update-efc53ac1</guid>
-      <description><![CDATA[Red Hat issued a critical update for php:8.2 on RHEL8, fixing vulnerabilities that could enable remote code execution via PHP scripts. The CVE entries show CVSS scores up to 9.8, allowing unauthenticated attackers to run arbitrary code on affected servers. Administrators should apply the php:8.2 patch immediately and confirm the new module version is deployed to mitigate the risk.]]></description>
-      <pubDate>Sun, 22 Nov 2026 02:24:34 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:101276">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
