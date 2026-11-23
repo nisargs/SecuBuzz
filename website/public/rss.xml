@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 18:46:58 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 19:46:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>LaLiga Data Breach Exposes Fans Personal Information</title>
+      <link>https://secubuzz.com/news/laliga-data-breach-exposes-fans-personal-informati-47226265</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/laliga-data-breach-exposes-fans-personal-informati-47226265</guid>
+      <description><![CDATA[LaLiga disclosed a breach that exposed personal data of its users and some affiliated clubs. The theft included names, email addresses, phone numbers, and other sensitive information, raising significant privacy and regulatory concerns. LaLiga notified affected users, launched incident response, and is cooperating with law enforcement to trace the attack.]]></description>
+      <pubDate>Mon, 23 Nov 2026 18:38:40 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>MISP Advises Hotfix for Pre-v2.5.53 Vulnerabilities</title>
+      <link>https://secubuzz.com/news/misp-advises-hotfix-for-pre-v2-5-53-vulnerabilitie-92ccdb3b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/misp-advises-hotfix-for-pre-v2-5-53-vulnerabilitie-92ccdb3b</guid>
+      <description><![CDATA[The Canadian Centre for Cyber Security issued advisory AV26-1197, noting that MISP versions prior to 2.5.53 contain multiple security vulnerabilities. A quick hotfix, version 2.5.53, addresses the identified flaws, and administrators are urged to review the provided links and apply updates as soon as possible. Failure to patch may leave MISP installations vulnerable to exploitation of the disclosed weaknesses.]]></description>
+      <pubDate>Mon, 23 Nov 2026 18:14:44 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/misp-security-advisory-av26-1197">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Detects New Attacks by Learning Normal Behavior</title>
+      <link>https://secubuzz.com/news/ai-detects-new-attacks-by-learning-normal-behavior-7b3d2c9c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-detects-new-attacks-by-learning-normal-behavior-7b3d2c9c</guid>
+      <description><![CDATA[Arctic Wolf's AI threat detection platform identifies new attacks by learning normal user, device, and system behavior. The system flags deviations that may indicate emerging threats, enabling security teams to investigate and respond to previously unseen attacks. This approach expands detection coverage beyond signature-based methods, improving overall security posture for organizations worldwide.]]></description>
+      <pubDate>Mon, 23 Nov 2026 17:52:11 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/glossary-uk/what-is-ai-threat-detection/">Arctic Wolf</source>
+      <category>General</category>
+    </item>
     <item>
       <title>New Framework Traces Decade of Ransomware Actors</title>
       <link>https://secubuzz.com/news/new-framework-traces-decade-of-ransomware-actors-a995d0f9</link>
@@ -14,6 +41,24 @@
       <description><![CDATA[A new attribution framework enables security teams to trace ransomware actors across a decade of operations. The framework aggregates metadata from ransomware campaigns, correlating signatures and infrastructure to identify individual threat actors, thereby improving threat intelligence and response. Security teams can adopt the framework to enhance attribution accuracy, integrate with existing SIEMs, and prioritize defensive measures against identified actors.]]></description>
       <pubDate>Mon, 23 Nov 2026 17:45:52 GMT</pubDate>
       <source url="https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Webworm Modifies SoftEther VPN to Evade Detection</title>
+      <link>https://secubuzz.com/news/webworm-modifies-softether-vpn-to-evade-detection-75f1fbe0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/webworm-modifies-softether-vpn-to-evade-detection-75f1fbe0</guid>
+      <description><![CDATA[The China-aligned threat actor Webworm is suspected of deploying a custom SoftEther VPN Bridge variant designed to conceal itself from security tools. The modified bridge removes recognizable detection fingerprints and masquerades as network-monitoring software, enabling covert remote access to compromised networks. Defenders should monitor anomalous VPN traffic, verify SoftEther installations against known hashes, and apply patches to mitigate potential exploitation.]]></description>
+      <pubDate>Mon, 23 Nov 2026 17:45:15 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CrowdStrike Acquires Zscaler for $43.9B</title>
+      <link>https://secubuzz.com/news/crowdstrike-acquires-zscaler-for-43-9b-7e7a2503</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-acquires-zscaler-for-43-9b-7e7a2503</guid>
+      <description><![CDATA[CrowdStrike announced the acquisition of Zscaler in a $43.9 billion deal, aiming to expand its AI-driven security portfolio. The purchase reflects CEO George Kurtz’s vision of building the largest AI safety and security company worldwide. The transaction is expected to integrate Zscaler’s cloud security platform with CrowdStrike’s endpoint protection, pending regulatory approval.]]></description>
+      <pubDate>Mon, 23 Nov 2026 17:14:00 GMT</pubDate>
+      <source url="https://therecord.media/crowdstrike-zscaler">The Record</source>
       <category>General</category>
     </item>
     <item>
@@ -71,10 +116,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Azure API Management Flaw Targeted Energy Firm Secrets</title>
-      <link>https://secubuzz.com/news/azure-api-management-flaw-targeted-energy-firm-sec-01b087c7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/azure-api-management-flaw-targeted-energy-firm-sec-01b087c7</guid>
-      <description><![CDATA[A flaw in Microsoft Azure API Management was exploited to target secrets at Norwegian energy companies and other sectors. The vulnerability allowed attackers to read protected configuration data, potentially exposing credentials and sensitive information, but no evidence of data exfiltration was reported. Microsoft released a patch and advised affected customers to apply the update immediately to mitigate the risk.]]></description>
+      <title>Microsoft Patches Exploited Azure API Management Flaw Targeting Energy Sector Credentials</title>
+      <link>https://secubuzz.com/news/microsoft-patches-exploited-azure-api-management-f-83470f49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-exploited-azure-api-management-f-83470f49</guid>
+      <description><![CDATA[Microsoft patched an Azure API Management flaw that attackers exploited to target Norwegian energy companies and other sectors. The vulnerability let attackers read protected configuration data and credential vaults, potentially exposing API secrets and sensitive information. Microsoft urged affected customers to apply the update or configuration changes immediately to block unauthorized credential access.]]></description>
       <pubDate>Mon, 23 Nov 2026 15:47:40 GMT</pubDate>
       <source url="https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/">SecurityWeek</source>
       <category>Vulnerability</category>
@@ -122,6 +167,15 @@
       <description><![CDATA[Red Hat released a security update for the podman container engine on RHEL9 to address a critical flaw. The patch fixes an undisclosed vulnerability rated Important by Red Hat Product Security, with CVSS scores linked through CVE references. Administrators should apply the podman update immediately to prevent exploitation and maintain secure container orchestration environments.]]></description>
       <pubDate>Mon, 23 Nov 2026 15:32:20 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102296">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Grafana Update Addresses Remote Code Execution Vulnerabilities</title>
+      <link>https://secubuzz.com/news/grafana-update-addresses-remote-code-execution-vul-55e19624</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/grafana-update-addresses-remote-code-execution-vul-55e19624</guid>
+      <description><![CDATA[A Grafana security update for Red Hat Enterprise Linux 10 addresses multiple vulnerabilities that could enable remote code execution through the web interface. The vulnerabilities are rated Important, with CVSS base scores listed in the CVE references, indicating high severity potential for exploitation. Red Hat has released the update; administrators should apply the patch immediately to mitigate the risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:25:51 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102502">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -359,6 +413,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Red Hat Issues Important FreeRDP Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-freerdp-update-4d3c810a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-freerdp-update-4d3c810a</guid>
+      <description><![CDATA[Red Hat released an important security update for the freerdp package on RHEL 8, addressing a flaw that could allow remote code execution via RDP packets. The vulnerability, rated CVSS 8.2 by Red Hat, enables attackers with network access to execute code on the target system.]]></description>
+      <pubDate>Mon, 23 Nov 2026 12:58:28 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102286">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>iTerm2 Remote Code Execution Flaw Lets Hackers Run Malicious Commands by Displaying Crafted Files</title>
       <link>https://secubuzz.com/news/iterm2-remote-code-execution-flaw-lets-hackers-run-1a5ec94c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/iterm2-remote-code-execution-flaw-lets-hackers-run-1a5ec94c</guid>
@@ -393,69 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 12:44:26 GMT</pubDate>
       <source url="https://cybersecuritynews.com/crowdstrike-acquire-zscaler/">Cyber Security News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>ScreenConnect CVE-2026-84869 Enables MSP Technician Hijack</title>
-      <link>https://secubuzz.com/news/screenconnect-cve-2026-84869-enables-msp-technicia-884b5434</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-cve-2026-84869-enables-msp-technicia-884b5434</guid>
-      <description><![CDATA[Threat actors exploited a patched flaw in ConnectWise ScreenConnect, identified as CVE-2026-84869, to hijack managed service provider technician workstations. The CVSS 9.9 score marks it as a critical unauthenticated RCE that lets a guest transfer and execute malicious payloads. ConnectWise issued an emergency patch; administrators must apply it immediately and limit guest access to prevent exploitation.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:41:04 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>N-Able Exposes CVE-2026-134624 SSRF in Mail Assure</title>
-      <link>https://secubuzz.com/news/n-able-exposes-cve-2026-134624-ssrf-in-mail-assure-2650ac11</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-exposes-cve-2026-134624-ssrf-in-mail-assure-2650ac11</guid>
-      <description><![CDATA[N-Able disclosed a critical SSRF flaw, CVE-2026-134624, discovered during an investigation of its Mail Assure and SpamExperts Hosted Cloud breach. The vulnerability permits a high-privilege API user to open connections to arbitrary internal systems, enabling potential lateral movement. N-Able recommends applying the vendor patch immediately and restricting API access to mitigate exploitation risks.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:28:09 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>I4C Warns Against Sharing Confidential Data on WhatsApp Web</title>
-      <link>https://secubuzz.com/news/i4c-warns-against-sharing-confidential-data-on-wha-7d7235d8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/i4c-warns-against-sharing-confidential-data-on-wha-7d7235d8</guid>
-      <description><![CDATA[The Indian Cyber Crime Coordination Center cautioned users against sharing confidential data on WhatsApp Web, citing risks of session hijacking. The advisory notes that an attacker with access to a signed-in browser session can read messages and view contacts, compromising privacy. Users should log out manually after each session and avoid sharing sensitive information on the platform to mitigate exposure.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:19:18 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/whatsapp-web-confidential-data/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues libXrender Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-libxrender-security-update-47c1eed1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libxrender-security-update-47c1eed1</guid>
-      <description><![CDATA[Red Hat released an important security update for libXrender on RHEL 7 Extended Lifecycle Support. The update addresses one or more vulnerabilities with CVSS scores available via linked CVE references, though specific IDs are not listed. Apply the libXrender update immediately, promptly, and follow Red Hat advisories for installation guidance.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:16:42 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102282">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Dragos Finds Undetected Intrusions at AI Providers</title>
-      <link>https://secubuzz.com/news/dragos-finds-undetected-intrusions-at-ai-providers-6ff8354c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dragos-finds-undetected-intrusions-at-ai-providers-6ff8354c</guid>
-      <description><![CDATA[Dragos discovered undetected intrusions at three AI inference providers that siphoned nearly two million prompts from AI services. The attackers exploited weaknesses in prompt handling and authentication, enabling data exfiltration without triggering existing monitoring systems. Security teams should review prompt validation, strengthen access controls, and deploy anomaly detection to prevent future theft.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:16:20 GMT</pubDate>
-      <source url="https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Issues librabbitmq Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-librabbitmq-security-update-29d2cee6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-librabbitmq-security-update-29d2cee6</guid>
-      <description><![CDATA[Red Hat released an important security update for librabbitmq on RHEL 10. The update mitigates vulnerabilities with CVSS scores available via linked CVE references, though specific IDs are not listed, and it applies to all affected librabbitmq packages. Install the librabbitmq update promptly and consult Red Hat advisories for detailed guidance.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:13:37 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102283">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases libXrender Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-libxrender-security-update-89fe55ea</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-libxrender-security-update-89fe55ea</guid>
-      <description><![CDATA[Red Hat released a security update for libXrender on Enterprise Linux 8.8, addressing multiple vulnerabilities rated as Important. The update includes patches for CVEs referenced in the advisory, each with a CVSS base score that informs the severity. Administrators should apply the update promptly and verify that libXrender is at the latest patched version to maintain system integrity.]]></description>
-      <pubDate>Mon, 23 Nov 2026 12:12:32 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102281">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

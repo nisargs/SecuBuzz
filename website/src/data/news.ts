@@ -11,6 +11,67 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "laliga-data-breach-exposes-fans-personal-informati-47226265",
+    "title": "LaLiga Data Breach Exposes Fans Personal Information",
+    "summary": "LaLiga disclosed a breach that exposed personal data of its users and some affiliated clubs. The theft included names, email addresses, phone numbers, and other sensitive information, raising significant privacy and regulatory concerns. LaLiga notified affected users, launched incident response, and is cooperating with law enforcement to trace the attack.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
+    "publishedAt": "2026-11-23T18:38:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "laliga-data-breach-exposes-fans-personal-informati",
+      "article-47226265",
+      "47226265",
+      "laliga-data-breach-exposes-fans-personal-informati-2c4a18",
+      "laliga-data-breach-exposes-fans-personal-information"
+    ]
+  },
+  {
+    "slug": "misp-advises-hotfix-for-pre-v2-5-53-vulnerabilitie-92ccdb3b",
+    "title": "MISP Advises Hotfix for Pre-v2.5.53 Vulnerabilities",
+    "summary": "The Canadian Centre for Cyber Security issued advisory AV26-1197, noting that MISP versions prior to 2.5.53 contain multiple security vulnerabilities. A quick hotfix, version 2.5.53, addresses the identified flaws, and administrators are urged to review the provided links and apply updates as soon as possible. Failure to patch may leave MISP installations vulnerable to exploitation of the disclosed weaknesses.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/misp-security-advisory-av26-1197",
+    "publishedAt": "2026-11-23T18:14:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "misp-advises-hotfix-for-pre-v2-5-53-vulnerabilitie",
+      "article-92ccdb3b",
+      "92ccdb3b",
+      "misp-advises-hotfix-for-pre-v2-5-53-vulnerabilitie-30e927",
+      "misp-advises-hotfix-for-pre-v2-5-53-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "ai-detects-new-attacks-by-learning-normal-behavior-7b3d2c9c",
+    "title": "AI Detects New Attacks by Learning Normal Behavior",
+    "summary": "Arctic Wolf's AI threat detection platform identifies new attacks by learning normal user, device, and system behavior. The system flags deviations that may indicate emerging threats, enabling security teams to investigate and respond to previously unseen attacks. This approach expands detection coverage beyond signature-based methods, improving overall security posture for organizations worldwide.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/glossary-uk/what-is-ai-threat-detection/",
+    "publishedAt": "2026-11-23T17:52:11.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Arctic Wolf",
+        "sourceUrl": "https://arcticwolf.com/resources/glossary/ai-threat-detection/"
+      }
+    ],
+    "aliases": [
+      "ai-detects-new-attacks-by-learning-normal-behavior",
+      "article-7b3d2c9c",
+      "7b3d2c9c",
+      "ai-detects-new-attacks-by-learning-normal-behavior-4e86f0"
+    ]
+  },
+  {
     "slug": "new-framework-traces-decade-of-ransomware-actors-a995d0f9",
     "title": "New Framework Traces Decade of Ransomware Actors",
     "summary": "A new attribution framework enables security teams to trace ransomware actors across a decade of operations. The framework aggregates metadata from ransomware campaigns, correlating signatures and infrastructure to identify individual threat actors, thereby improving threat intelligence and response. Security teams can adopt the framework to enhance attribution accuracy, integrate with existing SIEMs, and prioritize defensive measures against identified actors.",
@@ -26,6 +87,42 @@ export const news: NewsBrief[] = [
       "article-a995d0f9",
       "a995d0f9",
       "new-framework-traces-decade-of-ransomware-actors-392cc2"
+    ]
+  },
+  {
+    "slug": "webworm-modifies-softether-vpn-to-evade-detection-75f1fbe0",
+    "title": "Webworm Modifies SoftEther VPN to Evade Detection",
+    "summary": "The China-aligned threat actor Webworm is suspected of deploying a custom SoftEther VPN Bridge variant designed to conceal itself from security tools. The modified bridge removes recognizable detection fingerprints and masquerades as network-monitoring software, enabling covert remote access to compromised networks. Defenders should monitor anomalous VPN traffic, verify SoftEther installations against known hashes, and apply patches to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+    "publishedAt": "2026-11-23T17:45:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "webworm-modifies-softether-vpn-to-evade-detection",
+      "article-75f1fbe0",
+      "75f1fbe0",
+      "webworm-modifies-softether-vpn-to-evade-detection-514f20"
+    ]
+  },
+  {
+    "slug": "crowdstrike-acquires-zscaler-for-43-9b-7e7a2503",
+    "title": "CrowdStrike Acquires Zscaler for $43.9B",
+    "summary": "CrowdStrike announced the acquisition of Zscaler in a $43.9 billion deal, aiming to expand its AI-driven security portfolio. The purchase reflects CEO George Kurtz’s vision of building the largest AI safety and security company worldwide. The transaction is expected to integrate Zscaler’s cloud security platform with CrowdStrike’s endpoint protection, pending regulatory approval.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/crowdstrike-zscaler",
+    "publishedAt": "2026-11-23T17:14:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-acquires-zscaler-for-43-9b",
+      "article-7e7a2503",
+      "7e7a2503",
+      "crowdstrike-acquires-zscaler-for-43-9b-36aaca"
     ]
   },
   {
@@ -140,22 +237,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "azure-api-management-flaw-targeted-energy-firm-sec-01b087c7",
-    "title": "Azure API Management Flaw Targeted Energy Firm Secrets",
-    "summary": "A flaw in Microsoft Azure API Management was exploited to target secrets at Norwegian energy companies and other sectors. The vulnerability allowed attackers to read protected configuration data, potentially exposing credentials and sensitive information, but no evidence of data exfiltration was reported. Microsoft released a patch and advised affected customers to apply the update immediately to mitigate the risk.",
+    "slug": "microsoft-patches-exploited-azure-api-management-f-83470f49",
+    "title": "Microsoft Patches Exploited Azure API Management Flaw Targeting Energy Sector Credentials",
+    "summary": "Microsoft patched an Azure API Management flaw that attackers exploited to target Norwegian energy companies and other sectors. The vulnerability let attackers read protected configuration data and credential vaults, potentially exposing API secrets and sensitive information. Microsoft urged affected customers to apply the update or configuration changes immediately to block unauthorized credential access.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/",
     "publishedAt": "2026-11-23T15:47:40.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/"
+      }
+    ],
     "aliases": [
-      "azure-api-management-flaw-targeted-energy-firm-sec",
-      "article-01b087c7",
-      "01b087c7",
-      "azure-api-management-flaw-targeted-energy-firm-sec-5e6aa8",
-      "azure-api-management-flaw-targeted-energy-firm-secrets"
+      "microsoft-patches-exploited-azure-api-management-f",
+      "article-83470f49",
+      "83470f49",
+      "microsoft-patches-exploited-azure-api-management-f-5e6aa8",
+      "microsoft-patches-exploited-azure-api-management-flaw-target"
     ]
   },
   {
@@ -249,6 +351,25 @@ export const news: NewsBrief[] = [
       "article-88343d44",
       "88343d44",
       "rhel9-podman-update-fixes-important-security-flaw-2ee15f"
+    ]
+  },
+  {
+    "slug": "grafana-update-addresses-remote-code-execution-vul-55e19624",
+    "title": "Grafana Update Addresses Remote Code Execution Vulnerabilities",
+    "summary": "A Grafana security update for Red Hat Enterprise Linux 10 addresses multiple vulnerabilities that could enable remote code execution through the web interface. The vulnerabilities are rated Important, with CVSS base scores listed in the CVE references, indicating high severity potential for exploitation. Red Hat has released the update; administrators should apply the patch immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102502",
+    "publishedAt": "2026-11-23T15:25:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "grafana-update-addresses-remote-code-execution-vul",
+      "article-55e19624",
+      "55e19624",
+      "grafana-update-addresses-remote-code-execution-vul-2ee169",
+      "grafana-update-addresses-remote-code-execution-vulnerabiliti"
     ]
   },
   {
@@ -735,6 +856,24 @@ export const news: NewsBrief[] = [
       "article-c5388145",
       "c5388145",
       "cleverbridge-reports-credit-card-data-theft-606837"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-freerdp-update-4d3c810a",
+    "title": "Red Hat Issues Important FreeRDP Update",
+    "summary": "Red Hat released an important security update for the freerdp package on RHEL 8, addressing a flaw that could allow remote code execution via RDP packets. The vulnerability, rated CVSS 8.2 by Red Hat, enables attackers with network access to execute code on the target system.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102286",
+    "publishedAt": "2026-11-23T12:58:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-freerdp-update",
+      "article-4d3c810a",
+      "4d3c810a",
+      "red-hat-issues-important-freerdp-update-2ee15f"
     ]
   },
   {
@@ -1307,6 +1446,24 @@ export const news: NewsBrief[] = [
       "eded742f",
       "critical-asp-net-anticsrf-flaw-enables-remote-code-28c2eb",
       "critical-asp-net-anticsrf-flaw-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-fence-agents-update-a0f333c6",
+    "title": "Red Hat Issues Critical Fence-Agents Update",
+    "summary": "Red Hat released a critical update for the fence-agents package on RHEL 9.2 EUS, fixing a flaw that could allow local privilege escalation. The vulnerability, rated CVSS 9.8 by Red Hat, permits attackers with local access to gain root privileges via fence-agent configuration files. Administrators should apply the RHSA-2026:102250 update immediately or use the provided workaround to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102250",
+    "publishedAt": "2026-11-23T10:06:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-fence-agents-update",
+      "article-a0f333c6",
+      "a0f333c6",
+      "red-hat-issues-critical-fence-agents-update-2ee15e"
     ]
   },
   {
@@ -3655,6 +3812,24 @@ export const news: NewsBrief[] = [
       "article-ea5dadf7",
       "ea5dadf7",
       "rhsa-2026-100814-critical-nginx-security-update-2ee08c"
+    ]
+  },
+  {
+    "slug": "norwegian-energy-firm-suffers-two-day-data-breach-e58fe775",
+    "title": "Norwegian energy firm suffers two-day data breach",
+    "summary": "A Norwegian energy company experienced a data breach that persisted for two days, affecting its operational systems. Investigators have not confirmed a direct link between the two incidents, though they share several similarities, indicating possible repeated exploitation of a shared vulnerability. Security teams should review access controls and monitor for anomalous activity while awaiting further details from the investigation.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached-norwegian",
+    "publishedAt": "2026-11-20T20:43:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "norwegian-energy-firm-suffers-two-day-data-breach",
+      "article-e58fe775",
+      "e58fe775",
+      "norwegian-energy-firm-suffers-two-day-data-breach-73b007"
     ]
   },
   {
@@ -9330,184 +9505,6 @@ export const news: NewsBrief[] = [
       "article-b349f721",
       "b349f721",
       "open-weight-ai-governance-gap-and-mitigation-24678a"
-    ]
-  },
-  {
-    "slug": "cve-2026-125132-libumqtt-integer-underflow-exploit-3693d087",
-    "title": "CVE-2026-125132: libumqtt Integer Underflow Exploit",
-    "summary": "CVE-2026-125132 reveals an integer underflow in libumqtt that can be triggered remotely, per CISA's November 19, 2026 advisory. With a CVSS score of 8.6, the flaw may cause denial of service, memory corruption, or information disclosure in critical infrastructure sectors. No patch exists yet; operators should monitor for updates and apply defensive controls until remediation is available.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
-    "publishedAt": "2026-11-19T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-125132"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-125132-libumqtt-integer-underflow-exploit",
-      "article-3693d087",
-      "3693d087",
-      "cve-2026-125132-libumqtt-integer-underflow-exploit-41adfe"
-    ]
-  },
-  {
-    "slug": "elecbrakes-brake-control-vulnerabilities-exposed-5fee4a58",
-    "title": "Elecbrakes Brake Control Vulnerabilities Exposed",
-    "summary": "CVE-2026-124281, CVE-2026-125273, and CVE-2026-96805 allow unauthenticated attackers to control Elecbrakes EB2, VM1, and ELBC2000 firmware, enabling brake manipulation and safety feature disabling. The vulnerabilities stem from missing authentication for critical functions, dangerous method exposure, and an unprotected firmware-update channel, with VM1 scoring CVSS 9.6. Manufacturers issued emergency patches; teams should update firmware immediately and verify integrity to prevent unauthorized updates.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
-    "publishedAt": "2026-11-19T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-124281",
-      "CVE-2026-125273",
-      "CVE-2026-96805"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "elecbrakes-brake-control-vulnerabilities-exposed",
-      "article-5fee4a58",
-      "5fee4a58",
-      "elecbrakes-brake-control-vulnerabilities-exposed-41adfe"
-    ]
-  },
-  {
-    "slug": "openplc-runtime-race-condition-allows-unauthentica-307fcd5b",
-    "title": "OpenPLC Runtime Race Condition Allows Unauthenticated Admin Creation",
-    "summary": "A race condition in Autonomy Logic OpenPLC Runtime versions 4.2.4 and prior can create multiple unauthenticated admin accounts. Tracked as CVE-2026-126088 and rated CVSS 8.1, the flaw lets concurrent requests pass the existence check before any user is committed. Security teams should upgrade affected OpenPLC Runtime deployments and restrict network access to the runtime interface.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
-    "publishedAt": "2026-11-19T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-126088"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openplc-runtime-race-condition-allows-unauthentica",
-      "article-307fcd5b",
-      "307fcd5b",
-      "openplc-runtime-race-condition-allows-unauthentica-41adfe",
-      "openplc-runtime-race-condition-allows-unauthenticated-admin-"
-    ]
-  },
-  {
-    "slug": "palo-alto-pan-os-exposed-to-php-rce-vulnerabilitie-bee3de34",
-    "title": "Palo Alto PAN-OS Exposed to PHP RCE Vulnerabilities",
-    "summary": "Palo Alto Networks confirmed attackers exploited two PHP flaws, CVE-2026-109618 and CVE-2026-109619, on PAN-OS interfaces exposed to the internet. Both flaws allow unauthenticated remote code execution on the web server, enabling attackers to run arbitrary code without credentials. Palo Alto released patches; administrators should apply updates immediately and restrict internet exposure of management interfaces.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
-    "publishedAt": "2026-11-19T11:52:23.000Z",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "palo-alto-pan-os-exposed-to-php-rce-vulnerabilitie",
-      "article-bee3de34",
-      "bee3de34",
-      "palo-alto-pan-os-exposed-to-php-rce-vulnerabilitie-7cae08",
-      "palo-alto-pan-os-exposed-to-php-rce-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "microsoft-tests-edge-lockdown-mode-disabling-gpu-a-a4704323",
-    "title": "Microsoft Tests Edge Lockdown Mode Disabling GPU APIs",
-    "summary": "Microsoft is testing an Edge Lockdown Mode that disables WebGL, WebGL2, and WebGPU APIs to shrink the browser attack surface. The feature removes GPU-accelerated rendering paths that could be leveraged for memory corruption or side-channel attacks, preserving core functionality. Microsoft plans to roll out the mode in a future update; security teams should monitor release notes for configuration options.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
-    "publishedAt": "2026-11-19T11:46:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-tests-edge-lockdown-mode-disabling-gpu-a",
-      "article-a4704323",
-      "a4704323",
-      "microsoft-tests-edge-lockdown-mode-disabling-gpu-a-5f79b7",
-      "microsoft-tests-edge-lockdown-mode-disabling-gpu-apis"
-    ]
-  },
-  {
-    "slug": "backbox-linux-10-brings-new-hacking-tools-and-ubun-6d23a266",
-    "title": "BackBox Linux 10 brings new hacking tools and Ubuntu 26.04 support",
-    "summary": "BackBox Linux is a free, open source penetration testing distribution made by BackBox, a non-profit community project that keeps its own repositories of ethical hacking tools. On November 19 the project released version 10, codenamed Resolute Raccoon. It’s built for compatibility with Ubuntu 26.04 LTS and ships with the Linux 7.0 kernel and the Xfce 4.20 desktop.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/backbox-linux-10-penetration-testing/",
-    "publishedAt": "2026-11-19T11:01:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "backbox-linux-10-brings-new-hacking-tools-and-ubun",
-      "article-6d23a266",
-      "6d23a266",
-      "backbox-linux-10-brings-new-hacking-tools-and-ubun-162595",
-      "backbox-linux-10-brings-new-hacking-tools-and-ubuntu-26-04-s"
-    ]
-  },
-  {
-    "slug": "sonicwall-urges-immediate-replacement-of-gen-6-fir-01c5d095",
-    "title": "SonicWall Urges Immediate Replacement of Gen 6 Firewalls",
-    "summary": "SonicWall is urging customers to replace Gen 6 and Gen 6.5 firewalls running SonicOS 6.x because the appliances have reached end of support. The company says no further firmware updates or security patches will be issued regardless of severity, leaving internet-facing units exposed. Security teams should remove these devices from the internet edge and migrate to supported hardware immediately.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/sonicwall-gen-6-firewalls-reach-end-of-support/",
-    "publishedAt": "2026-11-19T10:44:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sonicwall-urges-immediate-replacement-of-gen-6-fir",
-      "article-01c5d095",
-      "01c5d095",
-      "sonicwall-urges-immediate-replacement-of-gen-6-fir-492ef3",
-      "sonicwall-urges-immediate-replacement-of-gen-6-firewalls"
-    ]
-  },
-  {
-    "slug": "n-able-breach-management-access-disabled-194f7fa9",
-    "title": "N-Able Breach: Management Access Disabled",
-    "summary": "N-Able confirmed unauthorized access to a single server in its Mail Assure and SpamExperts hosted cloud, targeting interfaces across the Americas, Europe, and Asia-Pacific. Email filtering remained operational, allowing customers to send and receive mail, while administrators lost access and N-Able disabled portals pending investigation.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/n-able-confirms-server-breach/",
-    "publishedAt": "2026-11-19T10:44:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-breach-management-access-disabled",
-      "article-194f7fa9",
-      "194f7fa9",
-      "n-able-breach-management-access-disabled-7c0bb7"
-    ]
-  },
-  {
-    "slug": "splunk-releases-patches-for-140-vulnerabilities-1a0c32e8",
-    "title": "Splunk Releases Patches for 140 Vulnerabilities",
-    "summary": "Splunk released security updates addressing nearly 140 critical and high-severity flaws across its three core products. The vulnerabilities enabled authentication bypass, remote code execution, and privilege escalation, with CVSS scores ranging from 7.0 to 9.8, and public proof-of-concept exploits were available for several. All affected products now ship patched versions; administrators should apply the updates immediately to mitigate the risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/",
-    "publishedAt": "2026-11-19T10:41:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "splunk-releases-patches-for-140-vulnerabilities",
-      "article-1a0c32e8",
-      "1a0c32e8",
-      "splunk-releases-patches-for-140-vulnerabilities-317d2f"
     ]
   }
 ];
