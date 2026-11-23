@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 15:46:17 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 16:45:21 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues freerdp Patch for RHEL 9</title>
+      <link>https://secubuzz.com/news/red-hat-issues-freerdp-patch-for-rhel-9-8be1dfa3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-freerdp-patch-for-rhel-9-8be1dfa3</guid>
+      <description><![CDATA[Red Hat released an important freerdp update for RHEL 9, addressing several security vulnerabilities. The flaws could allow attackers to execute arbitrary code or exfiltrate session data, yet no active exploitation has been reported. Security teams should apply the freerdp patch immediately, verify remote desktop configurations, and monitor for suspicious activity.]]></description>
+      <pubDate>Mon, 23 Nov 2026 16:09:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102399">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Splunk Advisory Affects Multiple Products, Requires Upgrade</title>
+      <link>https://secubuzz.com/news/splunk-advisory-affects-multiple-products-requires-9d6cde7f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/splunk-advisory-affects-multiple-products-requires-9d6cde7f</guid>
+      <description><![CDATA[Splunk issued a security advisory (AV26-1196) affecting multiple products, including Enterprise, Enterprise Security, PCI Compliance, and SOAR, with versions prior to specified releases. The vulnerabilities could enable unauthorized access or privilege escalation within Splunk deployments, but no active exploitation has been confirmed. Administrators should review the provided links, upgrade to newer versions, and enforce access controls to mitigate risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:52:16 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/splunk-security-advisory-av26-1196">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Azure API Management Flaw Targeted Energy Firm Secrets</title>
+      <link>https://secubuzz.com/news/azure-api-management-flaw-targeted-energy-firm-sec-01b087c7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/azure-api-management-flaw-targeted-energy-firm-sec-01b087c7</guid>
+      <description><![CDATA[A flaw in Microsoft Azure API Management was exploited to target secrets at Norwegian energy companies and other sectors. The vulnerability allowed attackers to read protected configuration data, potentially exposing credentials and sensitive information, but no evidence of data exfiltration was reported. Microsoft released a patch and advised affected customers to apply the update immediately to mitigate the risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:47:40 GMT</pubDate>
+      <source url="https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Exploit Microsoft Cloud Flaw Against Norwegian Energy Firms</title>
+      <link>https://secubuzz.com/news/hackers-exploit-microsoft-cloud-flaw-against-norwe-81f7b48b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-microsoft-cloud-flaw-against-norwe-81f7b48b</guid>
+      <description><![CDATA[Hackers exploited a Microsoft cloud security vulnerability to target sensitive credentials at Equinor and Skagerak Energi. The flaw permitted unauthorized access to configuration secrets, potentially exposing login information, though no confirmed data loss was reported. Microsoft issued a patch and urged affected customers to update their Azure services to close the vulnerability.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:45:00 GMT</pubDate>
+      <source url="https://therecord.media/norway-microsoft-cyberattack-equinor">The Record</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Spring AI Vulnerability Affects Multiple Versions</title>
+      <link>https://secubuzz.com/news/spring-ai-vulnerability-affects-multiple-versions-324b9980</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/spring-ai-vulnerability-affects-multiple-versions-324b9980</guid>
+      <description><![CDATA[Spring AI versions prior to 1.0.11, 1.1.10, 2.0.2.1, and 2.0.3 suffer a broken logical grouping expression flaw in TypesenseFilterExpressionConverter. The flaw can cause improper query parsing, potentially exposing data or causing denial of service. Upgrade to the latest Spring AI release or apply the vendor patch to mitigate the risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:41:08 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/spring-security-advisory-av26-1195">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Meta Muse AI Hallucinates, Shares External App Data</title>
+      <link>https://secubuzz.com/news/meta-muse-ai-hallucinates-shares-external-app-data-840c6d88</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/meta-muse-ai-hallucinates-shares-external-app-data-840c6d88</guid>
+      <description><![CDATA[Meta’s Muse AI agent reportedly accessed data from other applications and produced hallucinated responses during user interactions. The incident highlights limitations in the model’s knowledge boundaries and the risk of unintended data leakage. Meta should refine data access controls and improve hallucination mitigation to safeguard user privacy and information integrity.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:37:05 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/11/muse-ai-got-nosy-and-started-making-things-up-meta-insiders-say">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Apache Solr Health-Check Vulnerability Disclosed</title>
       <link>https://secubuzz.com/news/apache-solr-health-check-vulnerability-disclosed-084e3bca</link>
@@ -53,6 +107,33 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Multiple High-Impact Vulnerabilities Exploit Remote Code Paths</title>
+      <link>https://secubuzz.com/news/multiple-high-impact-vulnerabilities-exploit-remot-1431ab6d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/multiple-high-impact-vulnerabilities-exploit-remot-1431ab6d</guid>
+      <description><![CDATA[This week’s recap highlights several high-impact vulnerabilities, including a VMware 0-Day, Java4Shell, NGINX2Root, and Ruby2Shell, that exploit remote code execution paths. The flaws enable attackers to pivot from one compromised system to another, expanding lateral movement. Vendors have released patches; security teams should apply them promptly and monitor for exploitation attempts.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:10:48 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>N-Able Releases Patch for Critical CVE-2026-134624</title>
+      <link>https://secubuzz.com/news/n-able-releases-patch-for-critical-cve-2026-134624-2c7597c5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-releases-patch-for-critical-cve-2026-134624-2c7597c5</guid>
+      <description><![CDATA[N-Able disclosed a critical flaw, CVE-2026-134624, that was exploited during a Mail Assure cyberattack targeting its services. The vulnerability allowed attackers to gain unauthorized access to administrative functions, potentially enabling data exfiltration or service disruption. N-Able released a patch and advised customers to apply the update immediately to mitigate the risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:06:49 GMT</pubDate>
+      <source url="https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>GL.iNet Cloud Compromise Deploys Malware to Routers and KVMs</title>
+      <link>https://secubuzz.com/news/gl-inet-cloud-compromise-deploys-malware-to-router-c6aa16cc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gl-inet-cloud-compromise-deploys-malware-to-router-c6aa16cc</guid>
+      <description><![CDATA[Attackers compromised GL.iNet’s GoodCloud remote-management service and used it to install malware on connected routers and KVM devices. The breach exploited unauthorized cloud access, enabling remote code execution on device firmware and allowing persistent control and data exfiltration. GL.iNet has not yet released a patch; teams should isolate affected devices, update firmware when available, and monitor for anomalous traffic.]]></description>
+      <pubDate>Mon, 23 Nov 2026 15:05:50 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/23/gl-inet-cloud-compromise-malware-backdoors/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>AI Agent Identity Gaps Span Multiple Platforms</title>
       <link>https://secubuzz.com/news/ai-agent-identity-gaps-span-multiple-platforms-666cfee6</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-identity-gaps-span-multiple-platforms-666cfee6</guid>
@@ -69,6 +150,15 @@
       <pubDate>Mon, 23 Nov 2026 15:00:00 GMT</pubDate>
       <source url="https://www.huntress.com/blog/eu-data-hosting">Huntress</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>N-Able MailAssure Vulnerability Advisory</title>
+      <link>https://secubuzz.com/news/n-able-mailassure-vulnerability-advisory-9c081c10</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-mailassure-vulnerability-advisory-9c081c10</guid>
+      <description><![CDATA[N-Able issued advisory AV26-1191 for MailAssure before 20261121.1943, noting a vulnerability. The flaw may allow unauthorized access to email data or compromise the integrity of mail transmissions, though no exploitation reports have been confirmed. Administrators are advised to review the provided links, apply available updates, and monitor for any anomalous activity.]]></description>
+      <pubDate>Mon, 23 Nov 2026 14:51:33 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1191">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>NVIDIA Reinstates Jensen Huang as CEO</title>
@@ -96,6 +186,24 @@
       <pubDate>Mon, 23 Nov 2026 14:40:09 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1190">Canadian Centre for Cyber Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>EU Academy Access Disabled After Data Exposure Attack</title>
+      <link>https://secubuzz.com/news/eu-academy-access-disabled-after-data-exposure-att-13ac5f6c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/eu-academy-access-disabled-after-data-exposure-att-13ac5f6c</guid>
+      <description><![CDATA[The European Commission disabled public access to the EU Academy platform after a cyberattack exposed users’ personal data. The breach involved unauthorized access to the learning platform’s database, potentially compromising contact information and enrollment records. The Commission has not disclosed the number of affected users; security teams should monitor for credential misuse and enforce stricter access controls.]]></description>
+      <pubDate>Mon, 23 Nov 2026 14:34:27 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/eu-academy-disabled/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Fake Claude AI App Distributes RevStealer Infostealer</title>
+      <link>https://secubuzz.com/news/fake-claude-ai-app-distributes-revstealer-infostea-55053197</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-claude-ai-app-distributes-revstealer-infostea-55053197</guid>
+      <description><![CDATA[Hackers distributed RevStealer, a Windows infostealer, via a counterfeit Claude AI desktop application promising free access. The 101 MB archive launches malware that harvests saved passwords, browser sessions, and cryptocurrency wallet data without opening a chat window. Security teams should verify application authenticity, block the download source, and deploy endpoint protection to detect and remove RevStealer.]]></description>
+      <pubDate>Mon, 23 Nov 2026 14:24:48 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-hide-revstealer-malware/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Vmcloudoor Backdoor Targets Alibaba, Tencent, Huawei Clouds</title>
@@ -177,6 +285,15 @@
       <pubDate>Mon, 23 Nov 2026 13:22:20 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html">The Hacker News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel-RT Patch for RHEL 9.2</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-rt-patch-for-rhel-9-2-f2ae7ef0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-rt-patch-for-rhel-9-2-f2ae7ef0</guid>
+      <description><![CDATA[Red Hat released an important kernel-rt update for RHEL 9.2 SAP services, addressing multiple security bugs. The update mitigates vulnerabilities that could allow privilege escalation or denial of service, though no active exploitation has been reported. Security teams should apply the kernel-rt patch immediately and verify kernel integrity to maintain system stability.]]></description>
+      <pubDate>Mon, 23 Nov 2026 13:07:58 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102294">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Cleverbridge Reports Credit Card Data Theft</title>
@@ -339,123 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 11:46:37 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102274">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>BadBox 3.0 Ad Fraud Operation Disrupted</title>
-      <link>https://secubuzz.com/news/badbox-3-0-ad-fraud-operation-disrupted-4267da39</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/badbox-3-0-ad-fraud-operation-disrupted-4267da39</guid>
-      <description><![CDATA[Backdoors on low-cost consumer devices enabled the BadBox 3.0 ad-fraud operation, delivering modules that generated 40 billion bid requests daily. The operation leveraged residential-proxy capabilities to obfuscate traffic, creating an ad-fraud network that inflated auction volumes and siphoned revenue from publishers. Security teams coordinated a takedown that disrupted the backdoor infrastructure, halting bid-request generation and exposing compromised devices for remediation.]]></description>
-      <pubDate>Mon, 23 Nov 2026 11:44:18 GMT</pubDate>
-      <source url="https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OXLoader Hijacks DLLs to Spread Multiple Malware Families</title>
-      <link>https://secubuzz.com/news/oxloader-hijacks-dlls-to-spread-multiple-malware-f-45300881</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/oxloader-hijacks-dlls-to-spread-multiple-malware-f-45300881</guid>
-      <description><![CDATA[OXLoader malware exploits DLL hijacking to deliver multiple malware families via fake complaints and activators. The technique leverages trusted system DLL paths to inject malicious code, enabling stealthy distribution across victim machines. Security teams should monitor for anomalous DLL loads, apply whitelisting, and update endpoint protection to block OXLoader activity.]]></description>
-      <pubDate>Mon, 23 Nov 2026 11:35:39 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/threat-intel/2026/11/oxloader-abuses-dll-hijacking-to-distribute-different-malware-families">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SAP NetWeaver, Cisco Expressway Flaws Exploited</title>
-      <link>https://secubuzz.com/news/sap-netweaver-cisco-expressway-flaws-exploited-c9fd06e6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sap-netweaver-cisco-expressway-flaws-exploited-c9fd06e6</guid>
-      <description><![CDATA[Threat actors leveraged vulnerabilities in SAP NetWeaver and Cisco Expressway to leak or alter server data and gain root-level command execution. The flaws, likely involving improper input validation and privilege checks, allow attackers to bypass authentication and execute arbitrary code. Administrators should apply vendor patches, enforce least privilege, and monitor for anomalous activity to mitigate the risk.]]></description>
-      <pubDate>Mon, 23 Nov 2026 11:35:15 GMT</pubDate>
-      <source url="https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CrowdStrike to Acquire Zscaler for $43.9B</title>
-      <link>https://secubuzz.com/news/crowdstrike-to-acquire-zscaler-for-43-9b-c33d0a4d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-to-acquire-zscaler-for-43-9b-c33d0a4d</guid>
-      <description><![CDATA[CrowdStrike announced a $43.9 billion acquisition of Zscaler, aiming to combine their security platforms and generate over $10 billion in annual recurring revenue. The deal positions CrowdStrike as a leading provider of integrated cloud-native security services, expanding its market reach across identity, network, and application layers.]]></description>
-      <pubDate>Mon, 23 Nov 2026 11:31:44 GMT</pubDate>
-      <source url="https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Low-Impact edk2 Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-low-impact-edk2-update-60cab848</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-low-impact-edk2-update-60cab848</guid>
-      <description><![CDATA[Red Hat released a low-impact update for the edk2 firmware component on RHEL 8.4 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The update addresses multiple security issues, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Red Hat recommends applying the update immediately to maintain system integrity.]]></description>
-      <pubDate>Mon, 23 Nov 2026 11:30:42 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102278">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102253: Important: kernel security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102253-important-kernel-security-bug-fix-0d07fd6a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102253-important-kernel-security-bug-fix-0d07fd6a</guid>
-      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 23 Nov 2026 11:14:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102253">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Agents Find and Exploit Medical Imaging Zero-Day</title>
-      <link>https://secubuzz.com/news/ai-agents-find-and-exploit-medical-imaging-zero-da-b001ba5a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-find-and-exploit-medical-imaging-zero-da-b001ba5a</guid>
-      <description><![CDATA[AI agents uncovered a zero-day flaw in an open-source medical imaging app in 11 minutes, allowing file writes outside the intended directory. The flaw grants full administrator control, enabling arbitrary code execution and server compromise. No patch exists; isolate the app, apply critical updates, and monitor for unauthorized file writes.]]></description>
-      <pubDate>Mon, 23 Nov 2026 11:07:51 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-ai/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cairn Framework Used to Exploit Medical AI Zero-Day</title>
-      <link>https://secubuzz.com/news/cairn-framework-used-to-exploit-medical-ai-zero-da-402eb59c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cairn-framework-used-to-exploit-medical-ai-zero-da-402eb59c</guid>
-      <description><![CDATA[A Chinese-nexus threat actor used the open-source Cairn framework to exploit a zero-day in a medical imaging AI application. The zero-day enabled remote code execution after initial failed attempts, giving the attacker a foothold without a disclosed CVE. No vendor patch exists; teams should monitor exploitation, harden AI applications, and limit autonomous framework use.]]></description>
-      <pubDate>Mon, 23 Nov 2026 10:49:38 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/23/cairn-ai-agents-autonomous-attacks/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHEL 10.2 EUS Receives Moderate Security Patch</title>
-      <link>https://secubuzz.com/news/rhel-10-2-eus-receives-moderate-security-patch-15dd34fc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhel-10-2-eus-receives-moderate-security-patch-15dd34fc</guid>
-      <description><![CDATA[Red Hat released a moderate-impact patch for Red Hat Enterprise Linux 10.2 Extended Update Support, addressing multiple security issues. The update carries a CVSS base score indicating moderate severity, with detailed scores linked via CVE references in the advisory. Administrators should apply the patch promptly to mitigate the identified vulnerabilities and maintain system integrity.]]></description>
-      <pubDate>Mon, 23 Nov 2026 10:45:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102252">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GL.iNet Cloud Flaw Enables Malware on Routers</title>
-      <link>https://secubuzz.com/news/gl-inet-cloud-flaw-enables-malware-on-routers-e0f4f497</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gl-inet-cloud-flaw-enables-malware-on-routers-e0f4f497</guid>
-      <description><![CDATA[A flaw in GL.iNet’s cloud remote-management service granted attackers unauthorized access to routers and KVM devices, allowing malware and backdoor installation. The vulnerability, discovered on November 20 2026, was patched by GL.iNet, but affected devices still need a firmware update to eliminate the risk. Security teams should verify firmware versions and apply the latest update; no additional workarounds are documented.]]></description>
-      <pubDate>Mon, 23 Nov 2026 10:45:32 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-exploit-gl-inet-cloud-flaw/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Attackers exploited Microsoft Entra Connect Health flaw to access tenant data</title>
-      <link>https://secubuzz.com/news/attackers-exploited-microsoft-entra-connect-health-4760c6b1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploited-microsoft-entra-connect-health-4760c6b1</guid>
-      <description><![CDATA[Attackers exploited a vulnerability in the Microsoft Entra Connect Health API to read the technical contact email addresses and configuration details of Entra tenants, the company warned affected organizations. Microsoft Entra Connect Health is a cloud-based monitoring service that gives administrators a single view of the health, performance and alerts for their on-premises identity infrastructure in the Microsoft Entra admin center.]]></description>
-      <pubDate>Mon, 23 Nov 2026 10:34:01 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/23/microsoft-entra-connect-health-vulnerability-tenant-data/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI-Driven Breach Exposes Over 1 Million Records</title>
-      <link>https://secubuzz.com/news/ai-driven-breach-exposes-over-1-million-records-16a5e138</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-breach-exposes-over-1-million-records-16a5e138</guid>
-      <description><![CDATA[Chinese-speaking hackers leveraged an AI testing tool to autonomously breach ten organizations between August and September 2026, exposing over one million personal records from a single victim. The tool performed most attack steps, with operators only specifying targets, indicating a low-effort exploitation chain. Affected entities should conduct forensic investigations, strengthen access controls, and notify impacted individuals per regulatory requirements.]]></description>
-      <pubDate>Mon, 23 Nov 2026 10:27:37 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-autonomous-ai/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Critical ASP.NET AntiCsrf Flaw Enables Remote Code Execution Without Authentication</title>
-      <link>https://secubuzz.com/news/critical-asp-net-anticsrf-flaw-enables-remote-code-eded742f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-asp-net-anticsrf-flaw-enables-remote-code-eded742f</guid>
-      <description><![CDATA[A critical flaw in the Idunno.AntiCsrf library used by legacy ASP.NET WebForms apps has been actively exploited, letting attackers run arbitrary code on servers without authentication. The vulnerability, CVE-2026-131914, scores 9.3 on CVSS and has already caused incidents worldwide. Affected organizations must update or remove the library immediately and apply vendor patches to mitigate the risk.]]></description>
-      <pubDate>Mon, 23 Nov 2026 10:25:17 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/asp-net-anticsrf-flaw-under-attack/">Cyber Security News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

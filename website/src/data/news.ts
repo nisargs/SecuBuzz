@@ -11,6 +11,117 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-freerdp-patch-for-rhel-9-8be1dfa3",
+    "title": "Red Hat Issues freerdp Patch for RHEL 9",
+    "summary": "Red Hat released an important freerdp update for RHEL 9, addressing several security vulnerabilities. The flaws could allow attackers to execute arbitrary code or exfiltrate session data, yet no active exploitation has been reported. Security teams should apply the freerdp patch immediately, verify remote desktop configurations, and monitor for suspicious activity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102399",
+    "publishedAt": "2026-11-23T16:09:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-freerdp-patch-for-rhel-9",
+      "article-8be1dfa3",
+      "8be1dfa3",
+      "red-hat-issues-freerdp-patch-for-rhel-9-2ee162"
+    ]
+  },
+  {
+    "slug": "splunk-advisory-affects-multiple-products-requires-9d6cde7f",
+    "title": "Splunk Advisory Affects Multiple Products, Requires Upgrade",
+    "summary": "Splunk issued a security advisory (AV26-1196) affecting multiple products, including Enterprise, Enterprise Security, PCI Compliance, and SOAR, with versions prior to specified releases. The vulnerabilities could enable unauthorized access or privilege escalation within Splunk deployments, but no active exploitation has been confirmed. Administrators should review the provided links, upgrade to newer versions, and enforce access controls to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/splunk-security-advisory-av26-1196",
+    "publishedAt": "2026-11-23T15:52:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "splunk-advisory-affects-multiple-products-requires",
+      "article-9d6cde7f",
+      "9d6cde7f",
+      "splunk-advisory-affects-multiple-products-requires-83b887",
+      "splunk-advisory-affects-multiple-products-requires-upgrade"
+    ]
+  },
+  {
+    "slug": "azure-api-management-flaw-targeted-energy-firm-sec-01b087c7",
+    "title": "Azure API Management Flaw Targeted Energy Firm Secrets",
+    "summary": "A flaw in Microsoft Azure API Management was exploited to target secrets at Norwegian energy companies and other sectors. The vulnerability allowed attackers to read protected configuration data, potentially exposing credentials and sensitive information, but no evidence of data exfiltration was reported. Microsoft released a patch and advised affected customers to apply the update immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/",
+    "publishedAt": "2026-11-23T15:47:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "azure-api-management-flaw-targeted-energy-firm-sec",
+      "article-01b087c7",
+      "01b087c7",
+      "azure-api-management-flaw-targeted-energy-firm-sec-5e6aa8",
+      "azure-api-management-flaw-targeted-energy-firm-secrets"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-microsoft-cloud-flaw-against-norwe-81f7b48b",
+    "title": "Hackers Exploit Microsoft Cloud Flaw Against Norwegian Energy Firms",
+    "summary": "Hackers exploited a Microsoft cloud security vulnerability to target sensitive credentials at Equinor and Skagerak Energi. The flaw permitted unauthorized access to configuration secrets, potentially exposing login information, though no confirmed data loss was reported. Microsoft issued a patch and urged affected customers to update their Azure services to close the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/norway-microsoft-cyberattack-equinor",
+    "publishedAt": "2026-11-23T15:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-microsoft-cloud-flaw-against-norwe",
+      "article-81f7b48b",
+      "81f7b48b",
+      "hackers-exploit-microsoft-cloud-flaw-against-norwe-199bbb",
+      "hackers-exploit-microsoft-cloud-flaw-against-norwegian-energ"
+    ]
+  },
+  {
+    "slug": "spring-ai-vulnerability-affects-multiple-versions-324b9980",
+    "title": "Spring AI Vulnerability Affects Multiple Versions",
+    "summary": "Spring AI versions prior to 1.0.11, 1.1.10, 2.0.2.1, and 2.0.3 suffer a broken logical grouping expression flaw in TypesenseFilterExpressionConverter. The flaw can cause improper query parsing, potentially exposing data or causing denial of service. Upgrade to the latest Spring AI release or apply the vendor patch to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/spring-security-advisory-av26-1195",
+    "publishedAt": "2026-11-23T15:41:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "spring-ai-vulnerability-affects-multiple-versions",
+      "article-324b9980",
+      "324b9980",
+      "spring-ai-vulnerability-affects-multiple-versions-7742fe"
+    ]
+  },
+  {
+    "slug": "meta-muse-ai-hallucinates-shares-external-app-data-840c6d88",
+    "title": "Meta Muse AI Hallucinates, Shares External App Data",
+    "summary": "Meta’s Muse AI agent reportedly accessed data from other applications and produced hallucinated responses during user interactions. The incident highlights limitations in the model’s knowledge boundaries and the risk of unintended data leakage. Meta should refine data access controls and improve hallucination mitigation to safeguard user privacy and information integrity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/muse-ai-got-nosy-and-started-making-things-up-meta-insiders-say",
+    "publishedAt": "2026-11-23T15:37:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-muse-ai-hallucinates-shares-external-app-data",
+      "article-840c6d88",
+      "840c6d88",
+      "meta-muse-ai-hallucinates-shares-external-app-data-64292a"
+    ]
+  },
+  {
     "slug": "apache-solr-health-check-vulnerability-disclosed-084e3bca",
     "title": "Apache Solr Health-Check Vulnerability Disclosed",
     "summary": "Apache Solr versions prior to 10.1.0 and 9.11.0 contain a health-check flaw that can trigger unintended functionality, referenced by CVE-2026-86312. The flaw allows attackers to invoke the ping endpoint, potentially causing unauthorized actions or information disclosure within the Solr instance. Administrators should upgrade to Solr 10.1.0 or later, or apply the vendor-issued patch, and verify that health-check endpoints are secured.",
@@ -106,6 +217,64 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "multiple-high-impact-vulnerabilities-exploit-remot-1431ab6d",
+    "title": "Multiple High-Impact Vulnerabilities Exploit Remote Code Paths",
+    "summary": "This week’s recap highlights several high-impact vulnerabilities, including a VMware 0-Day, Java4Shell, NGINX2Root, and Ruby2Shell, that exploit remote code execution paths. The flaws enable attackers to pivot from one compromised system to another, expanding lateral movement. Vendors have released patches; security teams should apply them promptly and monitor for exploitation attempts.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
+    "publishedAt": "2026-11-23T15:10:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "multiple-high-impact-vulnerabilities-exploit-remot",
+      "article-1431ab6d",
+      "1431ab6d",
+      "multiple-high-impact-vulnerabilities-exploit-remot-18c20e",
+      "multiple-high-impact-vulnerabilities-exploit-remote-code-pat"
+    ]
+  },
+  {
+    "slug": "n-able-releases-patch-for-critical-cve-2026-134624-2c7597c5",
+    "title": "N-Able Releases Patch for Critical CVE-2026-134624",
+    "summary": "N-Able disclosed a critical flaw, CVE-2026-134624, that was exploited during a Mail Assure cyberattack targeting its services. The vulnerability allowed attackers to gain unauthorized access to administrative functions, potentially enabling data exfiltration or service disruption. N-Able released a patch and advised customers to apply the update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
+    "publishedAt": "2026-11-23T15:06:49.000Z",
+    "cves": [
+      "CVE-2026-134624"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-releases-patch-for-critical-cve-2026-134624",
+      "article-2c7597c5",
+      "2c7597c5",
+      "n-able-releases-patch-for-critical-cve-2026-134624-78d0e6"
+    ]
+  },
+  {
+    "slug": "gl-inet-cloud-compromise-deploys-malware-to-router-c6aa16cc",
+    "title": "GL.iNet Cloud Compromise Deploys Malware to Routers and KVMs",
+    "summary": "Attackers compromised GL.iNet’s GoodCloud remote-management service and used it to install malware on connected routers and KVM devices. The breach exploited unauthorized cloud access, enabling remote code execution on device firmware and allowing persistent control and data exfiltration. GL.iNet has not yet released a patch; teams should isolate affected devices, update firmware when available, and monitor for anomalous traffic.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/gl-inet-cloud-compromise-malware-backdoors/",
+    "publishedAt": "2026-11-23T15:05:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gl-inet-cloud-compromise-deploys-malware-to-router",
+      "article-c6aa16cc",
+      "c6aa16cc",
+      "gl-inet-cloud-compromise-deploys-malware-to-router-281202",
+      "gl-inet-cloud-compromise-deploys-malware-to-routers-and-kvms"
+    ]
+  },
+  {
     "slug": "ai-agent-identity-gaps-span-multiple-platforms-666cfee6",
     "title": "AI Agent Identity Gaps Span Multiple Platforms",
     "summary": "AI agents operating across multiple platforms create security gaps when no single vendor can observe or control their actions, according to Token Security. The shared responsibility problem complicates agent identity, permission, and accountability management for organizations. Organizations should assign clear ownership and accountability for agent identities and permissions across platforms.",
@@ -139,6 +308,24 @@ export const news: NewsBrief[] = [
       "article-12ff4d6c",
       "12ff4d6c",
       "huntress-begins-eu-data-hosting-in-frankfurt-76a822"
+    ]
+  },
+  {
+    "slug": "n-able-mailassure-vulnerability-advisory-9c081c10",
+    "title": "N-Able MailAssure Vulnerability Advisory",
+    "summary": "N-Able issued advisory AV26-1191 for MailAssure before 20261121.1943, noting a vulnerability. The flaw may allow unauthorized access to email data or compromise the integrity of mail transmissions, though no exploitation reports have been confirmed. Administrators are advised to review the provided links, apply available updates, and monitor for any anomalous activity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1191",
+    "publishedAt": "2026-11-23T14:51:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-mailassure-vulnerability-advisory",
+      "article-9c081c10",
+      "9c081c10",
+      "n-able-mailassure-vulnerability-advisory-761d20"
     ]
   },
   {
@@ -194,6 +381,44 @@ export const news: NewsBrief[] = [
       "article-5f2cf303",
       "5f2cf303",
       "red-hat-advises-updates-for-multiple-rhel-versions-cc2e06"
+    ]
+  },
+  {
+    "slug": "eu-academy-access-disabled-after-data-exposure-att-13ac5f6c",
+    "title": "EU Academy Access Disabled After Data Exposure Attack",
+    "summary": "The European Commission disabled public access to the EU Academy platform after a cyberattack exposed users’ personal data. The breach involved unauthorized access to the learning platform’s database, potentially compromising contact information and enrollment records. The Commission has not disclosed the number of affected users; security teams should monitor for credential misuse and enforce stricter access controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/eu-academy-disabled/",
+    "publishedAt": "2026-11-23T14:34:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eu-academy-access-disabled-after-data-exposure-att",
+      "article-13ac5f6c",
+      "13ac5f6c",
+      "eu-academy-access-disabled-after-data-exposure-att-af6925",
+      "eu-academy-access-disabled-after-data-exposure-attack"
+    ]
+  },
+  {
+    "slug": "fake-claude-ai-app-distributes-revstealer-infostea-55053197",
+    "title": "Fake Claude AI App Distributes RevStealer Infostealer",
+    "summary": "Hackers distributed RevStealer, a Windows infostealer, via a counterfeit Claude AI desktop application promising free access. The 101 MB archive launches malware that harvests saved passwords, browser sessions, and cryptocurrency wallet data without opening a chat window. Security teams should verify application authenticity, block the download source, and deploy endpoint protection to detect and remove RevStealer.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-hide-revstealer-malware/",
+    "publishedAt": "2026-11-23T14:24:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-claude-ai-app-distributes-revstealer-infostea",
+      "article-55053197",
+      "55053197",
+      "fake-claude-ai-app-distributes-revstealer-infostea-4d4447",
+      "fake-claude-ai-app-distributes-revstealer-infostealer"
     ]
   },
   {
@@ -364,6 +589,24 @@ export const news: NewsBrief[] = [
       "4dfae943",
       "binary-parser-vulnerability-enables-javascript-inj-3a1c13",
       "binary-parser-vulnerability-enables-javascript-injection"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-rt-patch-for-rhel-9-2-f2ae7ef0",
+    "title": "Red Hat Releases Kernel-RT Patch for RHEL 9.2",
+    "summary": "Red Hat released an important kernel-rt update for RHEL 9.2 SAP services, addressing multiple security bugs. The update mitigates vulnerabilities that could allow privilege escalation or denial of service, though no active exploitation has been reported. Security teams should apply the kernel-rt patch immediately and verify kernel integrity to maintain system stability.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102294",
+    "publishedAt": "2026-11-23T13:07:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-rt-patch-for-rhel-9-2",
+      "article-f2ae7ef0",
+      "f2ae7ef0",
+      "red-hat-releases-kernel-rt-patch-for-rhel-9-2-2ee15f"
     ]
   },
   {
@@ -1154,6 +1397,42 @@ export const news: NewsBrief[] = [
       "2b6acc3a",
       "ai-assisted-attacks-trigger-unauthorized-bank-tran-70818c",
       "ai-assisted-attacks-trigger-unauthorized-bank-transfers"
+    ]
+  },
+  {
+    "slug": "xdg-desktop-portal-update-for-rhel-8-6-released-4ae96a4a",
+    "title": "xdg-desktop-portal Update for RHEL 8.6 Released",
+    "summary": "Red Hat issued an xdg-desktop-portal update for RHEL 8.6 to address security concerns. The update fixes vulnerabilities that could allow attackers to gain unauthorized access to desktop portal services, potentially leading to privilege escalation or data exposure. Users should apply the patch promptly and verify the CVSS scores provided in the advisory for detailed risk assessment.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102225",
+    "publishedAt": "2026-11-23T08:22:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "xdg-desktop-portal-update-for-rhel-8-6-released",
+      "article-4ae96a4a",
+      "4ae96a4a",
+      "xdg-desktop-portal-update-for-rhel-8-6-released-2ee15e"
+    ]
+  },
+  {
+    "slug": "grafana-update-for-rhel-9-8-released-62aba3a1",
+    "title": "Grafana Update for RHEL 9.8 Released",
+    "summary": "Red Hat released a Grafana update for RHEL 9.8 Extended Update Support to fix multiple security issues. The vulnerabilities could allow attackers to exploit Grafana’s web interface, potentially enabling unauthorized data access or critical code execution. Apply the patch immediately and review the CVSS scores linked in the advisory for risk assessment.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102222",
+    "publishedAt": "2026-11-23T08:15:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "grafana-update-for-rhel-9-8-released",
+      "article-62aba3a1",
+      "62aba3a1",
+      "grafana-update-for-rhel-9-8-released-2ee15e"
     ]
   },
   {
@@ -9219,294 +9498,6 @@ export const news: NewsBrief[] = [
       "3c6527c9",
       "hackers-deploy-overlord-rat-that-survives-windows-c592a7",
       "hackers-deploy-overlord-rat-that-survives-windows-resets-and"
-    ]
-  },
-  {
-    "slug": "ruby-fixes-7-regex-string-flaws-warns-5-rce-pocs-c6ac8bc7",
-    "title": "Ruby Fixes 7 Regex/String Flaws, Warns 5 RCE PoCs",
-    "summary": "Ruby released patches for seven memory-safety flaws in its regular expression engine and string case-conversion code. Five of those defects have proof-of-concept exploits that allow crafted input to trigger remote code execution on affected systems. The maintainers advise users to upgrade to the fixed Ruby versions immediately to eliminate the RCE risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
-    "publishedAt": "2026-11-19T08:42:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ruby-fixes-7-regex-string-flaws-warns-5-rce-pocs",
-      "article-c6ac8bc7",
-      "c6ac8bc7",
-      "ruby-fixes-7-regex-string-flaws-warns-5-rce-pocs-6d49f3"
-    ]
-  },
-  {
-    "slug": "ruby2-hell-critical-one-byte-heap-overflow-in-ruby-ff7850cf",
-    "title": "ruby2ßhell: Critical One-Byte Heap Overflow in Ruby Could Allow RCE Attacks",
-    "summary": "Ruby has patched a critical memory corruption flaw that can allow remote code execution (RCE) on vulnerable servers. Tracked as GHSA-34m4-m9fh-gqp5 and named ruby2ßhell by Veria Labs, the flaw affects Ruby’s string case conversion code.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ruby2shell-rce/",
-    "publishedAt": "2026-11-19T08:41:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ruby2-hell-critical-one-byte-heap-overflow-in-ruby",
-      "article-ff7850cf",
-      "ff7850cf",
-      "ruby2-hell-critical-one-byte-heap-overflow-in-ruby-31b71e",
-      "ruby2-hell-critical-one-byte-heap-overflow-in-ruby-could-all"
-    ]
-  },
-  {
-    "slug": "splunk-fixes-critical-rce-and-auth-bypass-in-soar-7a8bfe7e",
-    "title": "Splunk Fixes Critical RCE and Auth Bypass in SOAR",
-    "summary": "Splunk released patches for its SOAR and Enterprise platforms to address a critical remote code execution flaw and a separate authentication bypass. The SOAR vulnerability, CVE-2026-131253, scored 9.9/10 and requires privileged accounts, while the Enterprise flaw, CVE-2026-76535, allows unauthenticated users to execute searches. Administrators should apply the latest updates immediately to eliminate the high-risk code execution and privilege escalation vectors.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/splunk-patches-vulnerabilities/",
-    "publishedAt": "2026-11-19T08:36:42.000Z",
-    "cves": [
-      "CVE-2026-131253",
-      "CVE-2026-76535"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "splunk-fixes-critical-rce-and-auth-bypass-in-soar",
-      "article-7a8bfe7e",
-      "7a8bfe7e",
-      "splunk-fixes-critical-rce-and-auth-bypass-in-soar-4776f0"
-    ]
-  },
-  {
-    "slug": "ruby-releases-patch-for-seven-rce-vulnerabilities-6c94ef26",
-    "title": "Ruby Releases Patch for Seven RCE Vulnerabilities",
-    "summary": "Ruby 4.0.10, 3.4.13, and 3.3.14 were updated to fix seven vulnerabilities in the language’s regex engine and string case-conversion code. The flaws enable remote code execution by allowing attackers to run arbitrary code within vulnerable Ruby processes, with proof-of-concept demonstrations already available. Users should upgrade to the patched releases immediately to prevent exploitation of the critical RCE vectors.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ruby-patches-7-security-vulnerabilities/",
-    "publishedAt": "2026-11-19T08:32:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ruby-releases-patch-for-seven-rce-vulnerabilities",
-      "article-6c94ef26",
-      "6c94ef26",
-      "ruby-releases-patch-for-seven-rce-vulnerabilities-74ca1a"
-    ]
-  },
-  {
-    "slug": "us-enlists-private-firms-to-cut-scammers-off-from-3d27f789",
-    "title": "US enlists private firms to cut scammers off from victims’ cash",
-    "summary": "Stopping victims’ money before it reaches foreign scam, cybercrime and sextortion networks is the goal of a new US unit launched by the Homeland Security Task Force (HSTF). The Threat Disruption Center is part of the HSTF’s National Coordination Center (NCC) in Fairfax, Virginia.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/us-threat-disruption-center-scam-sextortion-funds/",
-    "publishedAt": "2026-11-19T08:21:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-enlists-private-firms-to-cut-scammers-off-from",
-      "article-3d27f789",
-      "3d27f789",
-      "us-enlists-private-firms-to-cut-scammers-off-from-ed762c",
-      "us-enlists-private-firms-to-cut-scammers-off-from-victims-ca"
-    ]
-  },
-  {
-    "slug": "researcher-demonstrates-rce-in-postgresql-mysql-or-1d1c9f59",
-    "title": "Researcher Demonstrates RCE in PostgreSQL, MySQL, Oracle",
-    "summary": "A researcher demonstrated remote code execution exploits against PostgreSQL, MySQL, and Oracle databases using low-privilege accounts. The attacks leveraged memory-corruption bugs in the database engines, allowing code execution on the server without table read permissions. No vendor patches are currently available; administrators should restrict low-privilege access and monitor for anomalous activity until mitigations are released.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
-    "publishedAt": "2026-11-19T08:14:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "researcher-demonstrates-rce-in-postgresql-mysql-or",
-      "article-1d1c9f59",
-      "1d1c9f59",
-      "researcher-demonstrates-rce-in-postgresql-mysql-or-2444d1",
-      "researcher-demonstrates-rce-in-postgresql-mysql-oracle"
-    ]
-  },
-  {
-    "slug": "eol-iot-devices-pose-security-risks-if-unmanaged-9af0d1c3",
-    "title": "EOL IoT Devices Pose Security Risks if Unmanaged",
-    "summary": "End-of-life IoT devices become security liabilities when vendors stop supporting them, leaving smart homes exposed to unpatched flaws. Without firmware updates, known vulnerabilities remain exploitable, allowing attackers to use exposed interfaces or default credentials for unauthorized entry. Teams should decommission or replace unsupported devices, enforce network segmentation, and apply vendor-approved workarounds or firmware upgrades where possible.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/internet-of-things/iot-devices-no-longer-supported-smart-home-safe/",
-    "publishedAt": "2026-11-19T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eol-iot-devices-pose-security-risks-if-unmanaged",
-      "article-9af0d1c3",
-      "9af0d1c3",
-      "eol-iot-devices-pose-security-risks-if-unmanaged-5e2c0d"
-    ]
-  },
-  {
-    "slug": "huntress-soc-mitigates-rogue-screenconnect-deploym-ad6f3d4f",
-    "title": "Huntress SOC Mitigates Rogue ScreenConnect Deployments Following Account Compromise",
-    "summary": "TruePath IT and the Huntress SOC investigated a security incident originating from a compromised user account. Threat actors leveraged the unauthorized access to deploy two rogue ScreenConnect instances, resulting in $3 million in operational downtime. The Huntress SOC identified the 2 AM RMM alerts to isolate the unauthorized deployments and secure the managed environment.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/rmm-alerts-msp-soc-incident-response",
-    "publishedAt": "2026-11-19T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "huntress-soc-mitigates-rogue-screenconnect-deploym",
-      "article-ad6f3d4f",
-      "ad6f3d4f",
-      "huntress-soc-mitigates-rogue-screenconnect-deploym-131aef",
-      "huntress-soc-mitigates-rogue-screenconnect-deployments-follo"
-    ]
-  },
-  {
-    "slug": "cisa-adds-four-exploited-vulnerabilities-2e7a06cd",
-    "title": "CISA Adds Four Exploited Vulnerabilities",
-    "summary": "CISA added four actively exploited vulnerabilities to its Known Exploited Vulnerabilities catalog, affecting Synology DSM, BerriAI LiteLLM, Apache Axis, and Vanderbilt REDCap systems. The flaws enable ransomware, cryptomining, and LLMjacking attacks, with evidence of active exploitation in the wild. CISA urges affected organizations to apply vendor patches, monitor for suspicious activity, and maintain up-to-date security configurations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
-    "publishedAt": "2026-11-19T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-four-exploited-vulnerabilities",
-      "article-2e7a06cd",
-      "2e7a06cd",
-      "cisa-adds-four-exploited-vulnerabilities-7141e2"
-    ]
-  },
-  {
-    "slug": "africa-leads-global-cyber-attack-rankings-ede8c92a",
-    "title": "Africa Leads Global Cyber Attack Rankings",
-    "summary": "Threat intelligence indicates Africa now tops global attack rankings, with Nigeria’s incidents more than doubling from the previous year. The spike encompasses phishing, ransomware, and credential-stealing campaigns, placing Angola and Kenya among the top five most attacked nations. Defenders should enhance regional threat monitoring, strengthen endpoint defenses, and share indicators of compromise across national agencies.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge",
-    "publishedAt": "2026-11-19T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "africa-leads-global-cyber-attack-rankings",
-      "article-ede8c92a",
-      "ede8c92a",
-      "africa-leads-global-cyber-attack-rankings-204adb"
-    ]
-  },
-  {
-    "slug": "php-issues-critical-update-for-cve-2026-115560-rce-c36942a6",
-    "title": "PHP Issues Critical Update for CVE-2026-115560 RCE",
-    "summary": "PHP released a critical security update to address CVE-2026-115560, an RCE flaw affecting session upload progress. The vulnerability was publicly disclosed two days after the PHP2Shell patches, and proof-of-concept exploits are available. Administrators should apply the latest PHP patch immediately to eliminate the high-risk code execution vector in affected systems.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/",
-    "publishedAt": "2026-11-19T07:45:17.000Z",
-    "cves": [
-      "CVE-2026-115560"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "php-issues-critical-update-for-cve-2026-115560-rce",
-      "article-c36942a6",
-      "c36942a6",
-      "php-issues-critical-update-for-cve-2026-115560-rce-5d0802"
-    ]
-  },
-  {
-    "slug": "chinese-hackers-upgrade-eggstreme-malware-with-sil-936101d4",
-    "title": "Chinese Hackers Upgrade EggStreme Malware With Silent Backdoor to Evade Security Detection",
-    "summary": "A suspected Chinese cyberespionage group has rebuilt its EggStreme malware framework, adding a Windows backdoor that waits for an incoming connection instead of calling out to an attacker-controlled server. Bitdefender’s November 18, 2026, report tracks the changes as the group continues to target government organizations in the Philippines.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/eggstreme-malware/",
-    "publishedAt": "2026-11-19T07:19:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chinese-hackers-upgrade-eggstreme-malware-with-sil",
-      "article-936101d4",
-      "936101d4",
-      "chinese-hackers-upgrade-eggstreme-malware-with-sil-4d75b9",
-      "chinese-hackers-upgrade-eggstreme-malware-with-silent-backdo"
-    ]
-  },
-  {
-    "slug": "crowdstrike-detects-nginx2root-exploit-f262e131",
-    "title": "CrowdStrike Detects NGINX2Root Exploit",
-    "summary": "NGINX2Root is a privilege-escalation exploit targeting NGINX web servers, enabling attackers to gain root access. The vulnerability exploits a buffer overflow in the NGINX configuration parser, allowing unauthenticated code execution and data exfiltration. CrowdStrike recommends applying the latest NGINX security patches and enabling Falcon’s real-time monitoring to block exploitation attempts. The flaw is tracked as CVE-2026-123007.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-nginx2root-cve-2026-123007/",
-    "publishedAt": "2026-11-19T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-123007"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-detects-nginx2root-exploit",
-      "article-f262e131",
-      "f262e131",
-      "crowdstrike-detects-nginx2root-exploit-1ffbb5"
-    ]
-  },
-  {
-    "slug": "crowdstrike-tracks-java4shell-post-exploitation-ac-3c4ad1e9",
-    "title": "CrowdStrike Tracks Java4Shell Post-Exploitation Activity",
-    "summary": "CrowdStrike reports exposure and post-exploitation activity tied to Java4Shell, tracked as CVE-2026-114938, affecting Java-based environments. The available advisory does not specify the root-cause mechanism, CVSS score, or whether exploitation is zero-day, but it confirms post-compromise activity. Security teams should identify exposed Java assets, apply vendor fixes when available, and investigate for post-exploitation indicators.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-java4shell-cve-2026-114938/",
-    "publishedAt": "2026-11-19T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-tracks-java4shell-post-exploitation-ac",
-      "article-3c4ad1e9",
-      "3c4ad1e9",
-      "crowdstrike-tracks-java4shell-post-exploitation-ac-33529e",
-      "crowdstrike-tracks-java4shell-post-exploitation-activity"
-    ]
-  },
-  {
-    "slug": "zdi-26-1039-oracle-peoplesoft-register-incorrect-a-08d871b0",
-    "title": "ZDI-26-1039: Oracle PeopleSoft register Incorrect Authorization Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Oracle PeopleSoft. Authentication is required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-35273.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1039/",
-    "publishedAt": "2026-11-19T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-35273"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1039-oracle-peoplesoft-register-incorrect-a",
-      "article-08d871b0",
-      "08d871b0",
-      "zdi-26-1039-oracle-peoplesoft-register-incorrect-a-77f344",
-      "zdi-26-1039-oracle-peoplesoft-register-incorrect-authorizati"
     ]
   }
 ];
