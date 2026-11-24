@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 10:45:47 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 11:47:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>LibreOffice Vulnerabilities Patched in RHEL 9.4 SAP</title>
+      <link>https://secubuzz.com/news/libreoffice-vulnerabilities-patched-in-rhel-9-4-sa-f14f6a42</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/libreoffice-vulnerabilities-patched-in-rhel-9-4-sa-f14f6a42</guid>
+      <description><![CDATA[Red Hat released a security update for LibreOffice on RHEL 9.4 Update Services for SAP Solutions, addressing multiple vulnerabilities. The update carries an Important impact rating, with CVSS base scores available via CVE references, but no active exploitation has been reported. Administrators should apply the latest LibreOffice package to mitigate the identified risks.]]></description>
+      <pubDate>Tue, 24 Nov 2026 11:29:07 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102889">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical Update for ruby:4.0</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-update-for-ruby-4-0-dc67e712</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-update-for-ruby-4-0-dc67e712</guid>
+      <description><![CDATA[A critical flaw in the ruby:4.0 module for Red Hat Enterprise Linux 9 triggered an urgent security update. The vulnerability, rated with a high CVSS score, permits remote code execution via the Ruby interpreter and is linked to several CVEs. Red Hat released the patch in RHSA-2026-102883; users must apply it immediately to mitigate the risk.]]></description>
+      <pubDate>Tue, 24 Nov 2026 11:24:12 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102883">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>MFA Bypassed via Phone Scams Targeting Microsoft 365</title>
+      <link>https://secubuzz.com/news/mfa-bypassed-via-phone-scams-targeting-microsoft-3-53df92e4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mfa-bypassed-via-phone-scams-targeting-microsoft-3-53df92e4</guid>
+      <description><![CDATA[Cybercriminals posing as corporate IT support trick employees into revealing Microsoft 365 credentials, bypassing MFA to access OneDrive and SharePoint. They exfiltrated emails and files from compromised accounts and demanded ransom via Teams or email, exploiting social engineering. Teams should enforce verification protocols, monitor anomalous activity, and restrict external sharing to mitigate similar attacks.]]></description>
+      <pubDate>Tue, 24 Nov 2026 10:48:04 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/bypass-mfa-through-phone-scams/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft Patches Azure API Management Flaw Targeting Secrets</title>
+      <link>https://secubuzz.com/news/microsoft-patches-azure-api-management-flaw-target-108a246b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-azure-api-management-flaw-target-108a246b</guid>
+      <description><![CDATA[Microsoft discovered a flaw in Azure API Management Classic that allowed attackers to search for access tokens and secrets. The vulnerability, enabling credential theft and unauthorized API access, was reported by Norway's National Security Authority and is actively exploited. Microsoft released a patch in the latest update; customers should apply it immediately and audit API permissions to mitigate risk.]]></description>
+      <pubDate>Tue, 24 Nov 2026 10:44:49 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Elecbrakes Bluetooth Flaws Enable Forced Trailer Braking</title>
+      <link>https://secubuzz.com/news/elecbrakes-bluetooth-flaws-enable-forced-trailer-b-fa27c92f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/elecbrakes-bluetooth-flaws-enable-forced-trailer-b-fa27c92f</guid>
+      <description><![CDATA[Critical Bluetooth vulnerabilities in Elecbrakes trailer controllers allow nearby attackers to force braking, potentially causing accidents. The flaw exploits insecure Bluetooth pairing and command authentication, enabling remote manipulation of braking systems without user interaction. Manufacturers should update firmware to patch the vulnerabilities and disable unused Bluetooth interfaces to mitigate the risk.]]></description>
+      <pubDate>Tue, 24 Nov 2026 10:44:44 GMT</pubDate>
+      <source url="https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues container-tools:rhel8 Security Update for RHEL 8.4</title>
+      <link>https://secubuzz.com/news/red-hat-issues-container-tools-rhel8-security-upda-2c96d487</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-container-tools-rhel8-security-upda-2c96d487</guid>
+      <description><![CDATA[Red Hat released a security update for the container-tools:rhel8 module on RHEL 8.4 AMCS and EUS LLA, addressing multiple vulnerabilities. The update contains fixes for issues with CVSS scores listed in the CVE references, but no active exploitation has been reported. Red Hat recommends applying the patch through the standard RHEL update channels to mitigate potential remote code execution.]]></description>
+      <pubDate>Tue, 24 Nov 2026 10:41:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102902">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Peninsula Energy Halts Trading After Mine Cyber Incident</title>
       <link>https://secubuzz.com/news/peninsula-energy-halts-trading-after-mine-cyber-in-058b9715</link>
@@ -42,6 +96,24 @@
       <pubDate>Tue, 24 Nov 2026 09:33:33 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/24/globetopper-breach-gift-cards/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Anthropic Launches Claude Ship for GitHub PR Review</title>
+      <link>https://secubuzz.com/news/anthropic-launches-claude-ship-for-github-pr-revie-2d6b3709</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-launches-claude-ship-for-github-pr-revie-2d6b3709</guid>
+      <description><![CDATA[Anthropic released Claude Ship in beta, letting Claude Code review GitHub pull requests, push fixes, and approve changes when policy allows. The tool does not merge code automatically; repository permissions and branch rules still govern integration. Security teams can use Claude Ship to automate reviews, but must enforce branch protection and review policies to retain control.]]></description>
+      <pubDate>Tue, 24 Nov 2026 09:21:23 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/claude-that-review-pull-requests-work-fixes-and-approves-it/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Windows Remote Access API Vulnerability Enables SYSTEM Privilege Escalation</title>
+      <link>https://secubuzz.com/news/windows-remote-access-api-vulnerability-enables-sy-0927961f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-remote-access-api-vulnerability-enables-sy-0927961f</guid>
+      <description><![CDATA[A flaw in the Windows Remote Access API lets an attacker with limited local access run code with SYSTEM privileges. Microsoft assigned CVE-2026-119853 a CVSS score of 7.8 and rated the issue Important, but no active exploitation has been reported. Microsoft released a patch on Patch Tuesday; teams should apply it immediately via Windows Update or WSUS.]]></description>
+      <pubDate>Tue, 24 Nov 2026 09:12:12 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/windows-remote-access-api-flaw/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>RHSA-2026:102854: Critical: ruby security update</title>
@@ -86,6 +158,24 @@
       <description><![CDATA[A range of kernel subsystems in Linux contain vulnerabilities that could enable attackers to compromise system integrity. The flaws affect architecture layers, device drivers, and file system components, posing a broad local privilege escalation risk. Ubuntu released kernel patches addressing these issues; administrators should update to the latest kernel or backport the fixes.]]></description>
       <pubDate>Tue, 24 Nov 2026 08:41:13 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9190-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ubuntu and Red Hat Patch NVIDIA Kernel Vulnerabilities</title>
+      <link>https://secubuzz.com/news/ubuntu-and-red-hat-patch-nvidia-kernel-vulnerabili-0701c793</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-and-red-hat-patch-nvidia-kernel-vulnerabili-0701c793</guid>
+      <description><![CDATA[Ubuntu and Red Hat have released kernel updates to address multiple NVIDIA subsystem vulnerabilities affecting Linux systems. The flaws span device drivers, data paths, architecture modules, cryptographic APIs, and hardware interfaces, potentially enabling privilege escalation or data exfiltration. Administrators should apply the latest kernel patches immediately to mitigate risk, as no active exploitation has been reported.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:41:02 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9173-3">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Linux Kernel Vulnerabilities Patched</title>
+      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-patched-64aff9b5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-patched-64aff9b5</guid>
+      <description><![CDATA[Multiple kernel vulnerabilities were identified across various subsystems, potentially allowing attackers to compromise affected Linux systems. The flaws affect stream parsing, architecture modules, drivers, Bluetooth, GPU, Hyper-V, network, and other hardware interfaces, yet no active exploitation has been reported. Red Hat and Ubuntu have issued kernel updates that patch these subsystems; administrators should install the latest kernel to mitigate risk.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:40:58 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9167-3">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -149,6 +239,15 @@
       <description><![CDATA[An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Tue, 24 Nov 2026 08:04:33 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102842">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues python3.12 Security Update for RHEL 9.6</title>
+      <link>https://secubuzz.com/news/red-hat-issues-python3-12-security-update-for-rhel-c6da3a0a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-python3-12-security-update-for-rhel-c6da3a0a</guid>
+      <description><![CDATA[Red Hat released a security update for python3.12 on RHEL 9.6 EUS, addressing code-execution vulnerabilities. The patch fixes issues with CVSS scores of 7.8-8.5, as listed in the CVE references, with no active exploitation reported. Red Hat recommends applying the update via standard RHEL channels immediately to mitigate potential remote code execution.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:04:22 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102850">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -357,105 +456,6 @@
       <pubDate>Tue, 24 Nov 2026 05:08:39 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102799">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Tigervnc Update for RHEL 8.6</title>
-      <link>https://secubuzz.com/news/red-hat-releases-tigervnc-update-for-rhel-8-6-f2a1fd5e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-tigervnc-update-for-rhel-8-6-f2a1fd5e</guid>
-      <description><![CDATA[Red Hat issued an important security update for the Tigervnc remote desktop server on RHEL 8.6 Advanced and Extended Update Support. The update addresses multiple vulnerabilities identified in Tigervnc, each assigned a CVSS base score and linked to CVE identifiers in the advisory references. Red Hat recommends applying the patch immediately to mitigate potential exploitation and maintain system integrity.]]></description>
-      <pubDate>Tue, 24 Nov 2026 05:07:34 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102805">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Stalwart 1.2.0 Adds Full Exchange Protocol Support</title>
-      <link>https://secubuzz.com/news/stalwart-1-2-0-adds-full-exchange-protocol-support-23b9d255</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/stalwart-1-2-0-adds-full-exchange-protocol-support-23b9d255</guid>
-      <description><![CDATA[Stalwart 1.2.0 introduces full Exchange-compatible protocols, enabling MAPI over HTTP, EWS, ActiveSync, and Autodiscover for Outlook, Apple Mail, and mobile clients. The open-source mail server ships under the AGPL Community edition, offering mail, calendar, contacts, tasks, and notes. Administrators can deploy Stalwart as a drop-in replacement for Microsoft Exchange, but should evaluate compatibility with existing client configurations before migration.]]></description>
-      <pubDate>Tue, 24 Nov 2026 05:00:26 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/stalwart-microsoft-exchange-replacement/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102802: Important: libXi security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102802-important-libxi-security-update-cfea5ec0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102802-important-libxi-security-update-cfea5ec0</guid>
-      <description><![CDATA[An update for libXi is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Tue, 24 Nov 2026 04:22:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102802">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases libXi Security Update for RHEL 8.6</title>
-      <link>https://secubuzz.com/news/red-hat-releases-libxi-security-update-for-rhel-8-01b8354e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-libxi-security-update-for-rhel-8-01b8354e</guid>
-      <description><![CDATA[Red Hat issued a security update for the libXi library on RHEL 8.6 Advanced Mission Critical and Extended Update Support, addressing identified vulnerabilities. The update carries an Important impact rating; CVSS base scores are available via CVE links, but no active exploitation is reported. Red Hat recommends applying the patch through standard update channels immediately.]]></description>
-      <pubDate>Tue, 24 Nov 2026 04:20:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102803">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues libXi Update for RHEL 9.2 SAP</title>
-      <link>https://secubuzz.com/news/red-hat-issues-libxi-update-for-rhel-9-2-sap-ab037c79</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libxi-update-for-rhel-9-2-sap-ab037c79</guid>
-      <description><![CDATA[Red Hat released a security update for the libXi library on RHEL 9.2 Update Services for SAP Solutions, addressing identified vulnerabilities. The patch is rated Important; CVSS base scores are provided via CVE links, with no reported active exploitation. Apply the update through standard update channels to mitigate the identified flaws.]]></description>
-      <pubDate>Tue, 24 Nov 2026 04:17:01 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102800">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OpenAI and Cisco Release Shirudo to Block Linux Exploits</title>
-      <link>https://secubuzz.com/news/openai-and-cisco-release-shirudo-to-block-linux-ex-1663e286</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-and-cisco-release-shirudo-to-block-linux-ex-1663e286</guid>
-      <description><![CDATA[OpenAI and Cisco introduced Shirudo, an open-source AI-driven tool that blocks specific exploits on live Linux servers while teams test and deploy permanent patches. In a controlled test, a Codex-generated shield prevented a Java4Shell exploit against Elasticsearch without service interruption. Security teams should deploy Shirudo immediately to mitigate known exploits and reduce patch deployment windows.]]></description>
-      <pubDate>Tue, 24 Nov 2026 03:51:31 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/openai-and-cisco-launch-shirudo/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102715: Critical: ruby security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102715-critical-ruby-security-bug-fix-an-93e531fa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102715-critical-ruby-security-bug-fix-an-93e531fa</guid>
-      <description><![CDATA[An update for ruby is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 03:09:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102715">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical ruby4.0 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-ruby4-0-security-update-59a21035</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-ruby4-0-security-update-59a21035</guid>
-      <description><![CDATA[Red Hat issued a critical security update for the ruby4.0 package on RHEL 10, addressing several high-severity bugs. The advisory references CVSS base scores for each vulnerability, though specific CVE identifiers are not disclosed in the notice. Administrators should apply the ruby4.0 update promptly to prevent exploitation of the identified weaknesses.]]></description>
-      <pubDate>Tue, 24 Nov 2026 03:09:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102714">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ChromeOS Stable Channel Updated to OS 16868.29.0</title>
-      <link>https://secubuzz.com/news/chromeos-stable-channel-updated-to-os-16868-29-0-adb54fa3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-stable-channel-updated-to-os-16868-29-0-adb54fa3</guid>
-      <description><![CDATA[Google updated the ChromeOS Stable channel to OS version 16868.29.0 and browser version 158.0.8127.98 for most devices, including ChromeOS Flex. The update includes routine security and stability improvements, with no new vulnerabilities disclosed. Users should apply the update via the standard ChromeOS update mechanism regularly to maintain current security posture.]]></description>
-      <pubDate>Tue, 24 Nov 2026 02:54:25 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-chromeos_01679457768.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical php:7.4 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-php-7-4-security-update-99077dba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-php-7-4-security-update-99077dba</guid>
-      <description><![CDATA[Red Hat released a critical security update for the php:7.4 module on RHEL 8.8 Update Services for SAP Solutions and the Telecommunications Update Service. The update addresses high-severity vulnerabilities, each assigned a CVSS base score, but no specific CVE identifiers are listed. Red Hat recommends applying the php:7.4 update immediately to mitigate potential remote code execution risks.]]></description>
-      <pubDate>Tue, 24 Nov 2026 02:38:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102713">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ongoing Scanning Detected on BANATSYNC Subnet</title>
-      <link>https://secubuzz.com/news/ongoing-scanning-detected-on-banatsync-subnet-baab0068</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ongoing-scanning-detected-on-banatsync-subnet-baab0068</guid>
-      <description><![CDATA[SANS Internet Storm Center reports continuous scanning from subnet 109.160.32.0/24, assigned to BANATSYNC SRL, a Romanian web hosting and VPS provider. DShield sensor data shows persistent probing over 90 days, suggesting ongoing reconnaissance or potential exploitation attempts against the subnet's hosts. Security teams should monitor for suspicious activity, enforce rate limiting, and harden hosts to mitigate potential threats.]]></description>
-      <pubDate>Tue, 24 Nov 2026 02:32:00 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33550">SANS Internet Storm Center</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

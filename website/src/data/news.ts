@@ -11,6 +11,119 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "libreoffice-vulnerabilities-patched-in-rhel-9-4-sa-f14f6a42",
+    "title": "LibreOffice Vulnerabilities Patched in RHEL 9.4 SAP",
+    "summary": "Red Hat released a security update for LibreOffice on RHEL 9.4 Update Services for SAP Solutions, addressing multiple vulnerabilities. The update carries an Important impact rating, with CVSS base scores available via CVE references, but no active exploitation has been reported. Administrators should apply the latest LibreOffice package to mitigate the identified risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102889",
+    "publishedAt": "2026-11-24T11:29:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "libreoffice-vulnerabilities-patched-in-rhel-9-4-sa",
+      "article-f14f6a42",
+      "f14f6a42",
+      "libreoffice-vulnerabilities-patched-in-rhel-9-4-sa-2ee175",
+      "libreoffice-vulnerabilities-patched-in-rhel-9-4-sap"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-update-for-ruby-4-0-dc67e712",
+    "title": "Red Hat Issues Critical Update for ruby:4.0",
+    "summary": "A critical flaw in the ruby:4.0 module for Red Hat Enterprise Linux 9 triggered an urgent security update. The vulnerability, rated with a high CVSS score, permits remote code execution via the Ruby interpreter and is linked to several CVEs. Red Hat released the patch in RHSA-2026-102883; users must apply it immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102883",
+    "publishedAt": "2026-11-24T11:24:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-update-for-ruby-4-0",
+      "article-dc67e712",
+      "dc67e712",
+      "red-hat-issues-critical-update-for-ruby-4-0-2ee175"
+    ]
+  },
+  {
+    "slug": "mfa-bypassed-via-phone-scams-targeting-microsoft-3-53df92e4",
+    "title": "MFA Bypassed via Phone Scams Targeting Microsoft 365",
+    "summary": "Cybercriminals posing as corporate IT support trick employees into revealing Microsoft 365 credentials, bypassing MFA to access OneDrive and SharePoint. They exfiltrated emails and files from compromised accounts and demanded ransom via Teams or email, exploiting social engineering. Teams should enforce verification protocols, monitor anomalous activity, and restrict external sharing to mitigate similar attacks.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/bypass-mfa-through-phone-scams/",
+    "publishedAt": "2026-11-24T10:48:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mfa-bypassed-via-phone-scams-targeting-microsoft-3",
+      "article-53df92e4",
+      "53df92e4",
+      "mfa-bypassed-via-phone-scams-targeting-microsoft-3-6f7ef4",
+      "mfa-bypassed-via-phone-scams-targeting-microsoft-365"
+    ]
+  },
+  {
+    "slug": "microsoft-patches-azure-api-management-flaw-target-108a246b",
+    "title": "Microsoft Patches Azure API Management Flaw Targeting Secrets",
+    "summary": "Microsoft discovered a flaw in Azure API Management Classic that allowed attackers to search for access tokens and secrets. The vulnerability, enabling credential theft and unauthorized API access, was reported by Norway's National Security Authority and is actively exploited. Microsoft released a patch in the latest update; customers should apply it immediately and audit API permissions to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+    "publishedAt": "2026-11-24T10:44:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patches-azure-api-management-flaw-target",
+      "article-108a246b",
+      "108a246b",
+      "microsoft-patches-azure-api-management-flaw-target-50ec5f",
+      "microsoft-patches-azure-api-management-flaw-targeting-secret"
+    ]
+  },
+  {
+    "slug": "elecbrakes-bluetooth-flaws-enable-forced-trailer-b-fa27c92f",
+    "title": "Elecbrakes Bluetooth Flaws Enable Forced Trailer Braking",
+    "summary": "Critical Bluetooth vulnerabilities in Elecbrakes trailer controllers allow nearby attackers to force braking, potentially causing accidents. The flaw exploits insecure Bluetooth pairing and command authentication, enabling remote manipulation of braking systems without user interaction. Manufacturers should update firmware to patch the vulnerabilities and disable unused Bluetooth interfaces to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/",
+    "publishedAt": "2026-11-24T10:44:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "elecbrakes-bluetooth-flaws-enable-forced-trailer-b",
+      "article-fa27c92f",
+      "fa27c92f",
+      "elecbrakes-bluetooth-flaws-enable-forced-trailer-b-95afdd",
+      "elecbrakes-bluetooth-flaws-enable-forced-trailer-braking"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-container-tools-rhel8-security-upda-2c96d487",
+    "title": "Red Hat Issues container-tools:rhel8 Security Update for RHEL 8.4",
+    "summary": "Red Hat released a security update for the container-tools:rhel8 module on RHEL 8.4 AMCS and EUS LLA, addressing multiple vulnerabilities. The update contains fixes for issues with CVSS scores listed in the CVE references, but no active exploitation has been reported. Red Hat recommends applying the patch through the standard RHEL update channels to mitigate potential remote code execution.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102902",
+    "publishedAt": "2026-11-24T10:41:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-container-tools-rhel8-security-upda",
+      "article-2c96d487",
+      "2c96d487",
+      "red-hat-issues-container-tools-rhel8-security-upda-2ee178",
+      "red-hat-issues-container-tools-rhel8-security-update-for-rhe"
+    ]
+  },
+  {
     "slug": "peninsula-energy-halts-trading-after-mine-cyber-in-058b9715",
     "title": "Peninsula Energy Halts Trading After Mine Cyber Incident",
     "summary": "Peninsula Energy reported a cybersecurity incident at its Wyoming uranium project, temporarily disrupting operations and prompting a trading halt. The breach details remain undisclosed, but the company indicated that critical operational systems were impacted, raising concerns over supply chain continuity. Peninsula Energy is coordinating with cybersecurity teams and regulators to assess the incident and resume trading.",
@@ -83,6 +196,46 @@ export const news: NewsBrief[] = [
       "cf27e5da",
       "globetopper-faces-up-to-2-5-million-in-lost-revenu-225ebb",
       "globetopper-faces-up-to-2-5-million-in-lost-revenue-after-ha"
+    ]
+  },
+  {
+    "slug": "anthropic-launches-claude-ship-for-github-pr-revie-2d6b3709",
+    "title": "Anthropic Launches Claude Ship for GitHub PR Review",
+    "summary": "Anthropic released Claude Ship in beta, letting Claude Code review GitHub pull requests, push fixes, and approve changes when policy allows. The tool does not merge code automatically; repository permissions and branch rules still govern integration. Security teams can use Claude Ship to automate reviews, but must enforce branch protection and review policies to retain control.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/claude-that-review-pull-requests-work-fixes-and-approves-it/",
+    "publishedAt": "2026-11-24T09:21:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-launches-claude-ship-for-github-pr-revie",
+      "article-2d6b3709",
+      "2d6b3709",
+      "anthropic-launches-claude-ship-for-github-pr-revie-3189c6",
+      "anthropic-launches-claude-ship-for-github-pr-review"
+    ]
+  },
+  {
+    "slug": "windows-remote-access-api-vulnerability-enables-sy-0927961f",
+    "title": "Windows Remote Access API Vulnerability Enables SYSTEM Privilege Escalation",
+    "summary": "A flaw in the Windows Remote Access API lets an attacker with limited local access run code with SYSTEM privileges. Microsoft assigned CVE-2026-119853 a CVSS score of 7.8 and rated the issue Important, but no active exploitation has been reported. Microsoft released a patch on Patch Tuesday; teams should apply it immediately via Windows Update or WSUS.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/windows-remote-access-api-flaw/",
+    "publishedAt": "2026-11-24T09:12:12.000Z",
+    "cves": [
+      "CVE-2026-119853"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-remote-access-api-vulnerability-enables-sy",
+      "article-0927961f",
+      "0927961f",
+      "windows-remote-access-api-vulnerability-enables-sy-10397a",
+      "windows-remote-access-api-vulnerability-enables-system-privi"
     ]
   },
   {
@@ -177,6 +330,48 @@ export const news: NewsBrief[] = [
       "article-1ef945b8",
       "1ef945b8",
       "kernel-vulnerabilities-threaten-system-integrity-7e778c"
+    ]
+  },
+  {
+    "slug": "ubuntu-and-red-hat-patch-nvidia-kernel-vulnerabili-0701c793",
+    "title": "Ubuntu and Red Hat Patch NVIDIA Kernel Vulnerabilities",
+    "summary": "Ubuntu and Red Hat have released kernel updates to address multiple NVIDIA subsystem vulnerabilities affecting Linux systems. The flaws span device drivers, data paths, architecture modules, cryptographic APIs, and hardware interfaces, potentially enabling privilege escalation or data exfiltration. Administrators should apply the latest kernel patches immediately to mitigate risk, as no active exploitation has been reported.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9173-3",
+    "publishedAt": "2026-11-24T08:41:02.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Ubuntu Security Notices",
+        "sourceUrl": "https://ubuntu.com/security/notices/USN-9174-2"
+      }
+    ],
+    "aliases": [
+      "ubuntu-and-red-hat-patch-nvidia-kernel-vulnerabili",
+      "article-0701c793",
+      "0701c793",
+      "ubuntu-and-red-hat-patch-nvidia-kernel-vulnerabili-7e786a",
+      "ubuntu-and-red-hat-patch-nvidia-kernel-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "linux-kernel-vulnerabilities-patched-64aff9b5",
+    "title": "Linux Kernel Vulnerabilities Patched",
+    "summary": "Multiple kernel vulnerabilities were identified across various subsystems, potentially allowing attackers to compromise affected Linux systems. The flaws affect stream parsing, architecture modules, drivers, Bluetooth, GPU, Hyper-V, network, and other hardware interfaces, yet no active exploitation has been reported. Red Hat and Ubuntu have issued kernel updates that patch these subsystems; administrators should install the latest kernel to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9167-3",
+    "publishedAt": "2026-11-24T08:40:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-vulnerabilities-patched",
+      "article-64aff9b5",
+      "64aff9b5",
+      "linux-kernel-vulnerabilities-patched-7e78cf"
     ]
   },
   {
@@ -317,6 +512,25 @@ export const news: NewsBrief[] = [
       "41e90b35",
       "rhsa-2026-102842-important-webkit2gtk3-security-up-2ee175",
       "rhsa-2026-102842-important-webkit2gtk3-security-update"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-python3-12-security-update-for-rhel-c6da3a0a",
+    "title": "Red Hat Issues python3.12 Security Update for RHEL 9.6",
+    "summary": "Red Hat released a security update for python3.12 on RHEL 9.6 EUS, addressing code-execution vulnerabilities. The patch fixes issues with CVSS scores of 7.8-8.5, as listed in the CVE references, with no active exploitation reported. Red Hat recommends applying the update via standard RHEL channels immediately to mitigate potential remote code execution.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102850",
+    "publishedAt": "2026-11-24T08:04:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-python3-12-security-update-for-rhel",
+      "article-c6da3a0a",
+      "c6da3a0a",
+      "red-hat-issues-python3-12-security-update-for-rhel-2ee175",
+      "red-hat-issues-python3-12-security-update-for-rhel-9-6"
     ]
   },
   {
@@ -9183,206 +9397,6 @@ export const news: NewsBrief[] = [
       "article-86f63df4",
       "86f63df4",
       "ios-27-3-beta-2-release-notes-5a1efe"
-    ]
-  },
-  {
-    "slug": "ipados-27-3-beta-2-release-notes-ed587d4c",
-    "title": "iPadOS 27.3 Beta 2 Release Notes",
-    "summary": "Apple released iPadOS 27.3 beta 2 v2, with accompanying release notes available for download and further documentation. The update does not disclose specific security fixes or vulnerability mitigations, leaving the exact changes unspecified. Users should review the release notes and apply the update when ready, following standard beta testing procedures to ensure compatibility.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11192026b",
-    "publishedAt": "2026-11-19T21:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ipados-27-3-beta-2-release-notes",
-      "article-ed587d4c",
-      "ed587d4c",
-      "ipados-27-3-beta-2-release-notes-5a1efe"
-    ]
-  },
-  {
-    "slug": "norwegian-energy-firm-breached-twice-within-two-da-d13b3a7b",
-    "title": "Norwegian Energy Firm Breached Twice Within Two Days",
-    "summary": "A second Norwegian energy company suffered a breach within two days of the first incident, raising concerns about resilience. Investigators have not linked the two attacks, though both incidents exhibit similar patterns, suggesting a possible shared threat actor or technique. Security teams should monitor for related indicators, apply defensive controls promptly, and coordinate with cybersecurity agencies to mitigate further risk.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached",
-    "publishedAt": "2026-11-19T20:14:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "norwegian-energy-firm-breached-twice-within-two-da",
-      "article-d13b3a7b",
-      "d13b3a7b",
-      "norwegian-energy-firm-breached-twice-within-two-da-280ffa",
-      "norwegian-energy-firm-breached-twice-within-two-days"
-    ]
-  },
-  {
-    "slug": "usn-9176-1-ruby-vulnerabilities-4cae983c",
-    "title": "USN-9176-1: Ruby vulnerabilities",
-    "summary": "An attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (GHSA-34m4-m9fh-gqp5) Owais Lone discovered that Ruby incorrectly handled compiling certain large regular expressions. An attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (GHSA-3p8q-wmhx-vm2w) Stephan Lipp discovered that Ruby incorrectly handled converting certain regular expressions to strings.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9176-1",
-    "publishedAt": "2026-11-19T20:07:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9176-1-ruby-vulnerabilities",
-      "article-4cae983c",
-      "4cae983c",
-      "usn-9176-1-ruby-vulnerabilities-7e785f"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100717-low-edk2-security-update-e2f85032",
-    "title": "RHSA-2026:100717: Low: edk2 security update",
-    "summary": "An update for edk2 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100717",
-    "publishedAt": "2026-11-19T20:03:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100717-low-edk2-security-update",
-      "article-e2f85032",
-      "e2f85032",
-      "rhsa-2026-100717-low-edk2-security-update-2ee088"
-    ]
-  },
-  {
-    "slug": "vim-security-update-released-for-rhel9-f4daa8ef",
-    "title": "vim security update released for RHEL9",
-    "summary": "A vulnerability in vim on RHEL9 was identified, prompting Red Hat to issue an update. The flaw, rated Important, lacks a public CVE identifier but is documented with CVSS scores in the advisory references. Red Hat recommends applying the patch immediately to mitigate potential exploitation; no workarounds are provided today.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100487",
-    "publishedAt": "2026-11-19T20:03:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vim-security-update-released-for-rhel9",
-      "article-f4daa8ef",
-      "f4daa8ef",
-      "vim-security-update-released-for-rhel9-2ee07d"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100549-important-container-tools-rhel8-s-7b4fe718",
-    "title": "RHSA-2026:100549: Important: container-tools:rhel8 security, bug fix, and enhancement update",
-    "summary": "An update for the container-tools:rhel8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100549",
-    "publishedAt": "2026-11-19T20:02:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100549-important-container-tools-rhel8-s",
-      "article-7b4fe718",
-      "7b4fe718",
-      "rhsa-2026-100549-important-container-tools-rhel8-s-2ee081",
-      "rhsa-2026-100549-important-container-tools-rhel8-security-bu"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100486-important-vim-security-update-6d8680ec",
-    "title": "RHSA-2026:100486: Important: vim security update",
-    "summary": "An update for vim is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100486",
-    "publishedAt": "2026-11-19T20:01:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100486-important-vim-security-update",
-      "article-6d8680ec",
-      "6d8680ec",
-      "rhsa-2026-100486-important-vim-security-update-2ee07d"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100484-important-acl-security-update-14497d80",
-    "title": "RHSA-2026:100484: Important: acl security update",
-    "summary": "An update for acl is now available for Red Hat Enterprise Linux 6 Extended Lifecycle Support - EXTENSION. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100484",
-    "publishedAt": "2026-11-19T20:00:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100484-important-acl-security-update",
-      "article-14497d80",
-      "14497d80",
-      "rhsa-2026-100484-important-acl-security-update-2ee07d"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-python-urllib3-security-update-e85bf29e",
-    "title": "Red Hat Issues Python-urllib3 Security Update",
-    "summary": "Python-urllib3 library in RHEL 8.6 receives a security update for both Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The update addresses multiple vulnerabilities identified by Red Hat Product Security, each with a CVSS base score listed in the CVE references. Red Hat recommends applying the update immediately via the standard package manager; no workarounds are provided.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100503",
-    "publishedAt": "2026-11-19T19:59:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-python-urllib3-security-update",
-      "article-e85bf29e",
-      "e85bf29e",
-      "red-hat-issues-python-urllib3-security-update-2ee080"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-xorg-x11-server-update-5e57708a",
-    "title": "Red Hat Issues Xorg-X11 Server Update",
-    "summary": "Xorg-X11 server in RHEL 8.8 receives a security update for both SAP Solutions Update Services and Telecommunications Update Service. The update patches multiple vulnerabilities identified by Red Hat Product Security, each with a CVSS base score provided in the CVE references. Red Hat advises applying the update promptly through the standard package manager; no additional workarounds are required.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100499",
-    "publishedAt": "2026-11-19T19:59:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-xorg-x11-server-update",
-      "article-5e57708a",
-      "5e57708a",
-      "red-hat-issues-xorg-x11-server-update-2ee07e"
-    ]
-  },
-  {
-    "slug": "seven-critical-php-flaws-expose-rce-risks-7dbeb1d4",
-    "title": "Seven Critical PHP Flaws Expose RCE Risks",
-    "summary": "Seven critical PHP flaws that enable remote code execution have been identified, prompting a patch release from the PHP development team. Exploitability depends on server configuration, with some flaws requiring authenticated access or specific input handling, and no widespread exploitation has been reported. Administrators should apply the latest PHP patch immediately and review configuration settings to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell",
-    "publishedAt": "2026-11-19T19:57:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "seven-critical-php-flaws-expose-rce-risks",
-      "article-7dbeb1d4",
-      "7dbeb1d4",
-      "seven-critical-php-flaws-expose-rce-risks-7d395d"
     ]
   }
 ];
