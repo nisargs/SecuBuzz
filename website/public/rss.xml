@@ -5,8 +5,80 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 11:47:40 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 12:43:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Bedrock Data Launches Intent-Aware AI Agent DLP</title>
+      <link>https://secubuzz.com/news/bedrock-data-launches-intent-aware-ai-agent-dlp-b146ea2c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bedrock-data-launches-intent-aware-ai-agent-dlp-b146ea2c</guid>
+      <description><![CDATA[Bedrock Data launched Agent DLP, a runtime data loss prevention tool that infers user intent and evaluates AI agent actions against policy. The tool weighs intent and behavior, enabling continued AI agent use while protecting sensitive data across tool and LLM calls. It also supports off-the-shelf integrations and offers a policy enforcement framework for AI workflows.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:34:02 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/bedrock-data-agent-dlp/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Elastic Deploys AI Agents to Triage SOC Alerts</title>
+      <link>https://secubuzz.com/news/elastic-deploys-ai-agents-to-triage-soc-alerts-4214ea31</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/elastic-deploys-ai-agents-to-triage-soc-alerts-4214ea31</guid>
+      <description><![CDATA[Elastic Security 9.6 introduces AlertZero, AI agents that triage alerts, hunt threats, and tune detection rules. The release adds Linux ransomware protection, expands entity resolution, and adds 143 detection rules for AI agents and LLM platforms. AlertZero groups workers into four watches-triage, threat hunting, detection engineering, and others-to automate SOC backlog.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:27:45 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/elastic-security-9-6-features/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Thunderbird Update for Important Vulnerabilities</title>
+      <link>https://secubuzz.com/news/red-hat-issues-thunderbird-update-for-important-vu-f9fe74d9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-thunderbird-update-for-important-vu-f9fe74d9</guid>
+      <description><![CDATA[Red Hat Enterprise Linux 8.6 receives a security update for Thunderbird, addressing several important vulnerabilities. The advisory references multiple CVEs with CVSS base scores, indicating potential remote code execution or privilege escalation if unpatched. Users should apply the update immediately to mitigate the risk, as the patch resolves all identified flaws.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:23:04 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102921">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHEL 10 cifs-utils Update Released</title>
+      <link>https://secubuzz.com/news/rhel-10-cifs-utils-update-released-ff7b7890</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhel-10-cifs-utils-update-released-ff7b7890</guid>
+      <description><![CDATA[Red Hat released a security update for cifs-utils on RHEL 10, fixing vulnerabilities that could enable remote code execution via SMB. Each flaw carries a CVSS base score, but the advisory lists no specific CVE identifiers. Apply the patch through standard RHEL update channels immediately; no configuration changes are required.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:12:04 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102887">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Infrastructure Vulnerabilities Highlight Systemic Fragility</title>
+      <link>https://secubuzz.com/news/infrastructure-vulnerabilities-highlight-systemic-3b11aa68</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/infrastructure-vulnerabilities-highlight-systemic-3b11aa68</guid>
+      <description><![CDATA[Schneier's essay examines how America’s critical infrastructure remains fragile due to aging systems, piecemeal patching, and hobbyist maintenance. The author argues that centralization and incremental upgrades create a single point of failure, causing widespread outages when components fail. The piece calls for systemic investment and coordinated security practices to reduce the risk of cascading infrastructure breakdowns.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:06:50 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/11/we-get-the-infrastructure-we-pay-for.html">Schneier on Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Azure API Management flaw used to steal credentials</title>
+      <link>https://secubuzz.com/news/azure-api-management-flaw-used-to-steal-credential-770aa984</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/azure-api-management-flaw-used-to-steal-credential-770aa984</guid>
+      <description><![CDATA[Microsoft warned that a vulnerability in Azure API Management (APIM) was exploited to exfiltrate credentials from customers’ instances, affecting Norwegian energy firms and others. The flaw in APIM Classic tiers lets attackers bypass authentication and retrieve stored secrets, potentially compromising downstream services. Microsoft recommends applying the latest APIM patch, disabling Classic tiers, and rotating exposed credentials immediately.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:04:37 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/azure-apim-vulnerability-credential-theft/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>KEPCO Data Breach Exposes 1.5 Million Personal Records</title>
+      <link>https://secubuzz.com/news/kepco-data-breach-exposes-1-5-million-personal-rec-8eae557f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kepco-data-breach-exposes-1-5-million-personal-rec-8eae557f</guid>
+      <description><![CDATA[Hackers accessed KEPCO’s customer portal and supplier relationship management platform, exfiltrating personal data of approximately 1.5 million users. The breach involved names, contact details, and possibly financial identifiers, though the full data scope is unclear. KEPCO has not yet released a detailed incident response plan; affected parties should monitor for identity theft and consider credit monitoring services.]]></description>
+      <pubDate>Tue, 24 Nov 2026 11:50:21 GMT</pubDate>
+      <source url="https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>EvilTokens Phishing Persists After Microsoft Takedown</title>
+      <link>https://secubuzz.com/news/eviltokens-phishing-persists-after-microsoft-taked-12d2a0bf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/eviltokens-phishing-persists-after-microsoft-taked-12d2a0bf</guid>
+      <description><![CDATA[Despite Microsoft shutting down the EvilTokens phishing-as-a-service kit, attackers continue to deploy new phishing hosts targeting Microsoft 365 accounts. The campaign exploits social engineering to trick users into revealing credentials, potentially granting attackers full access to corporate Microsoft 365 environments. Security teams should enforce multi-factor authentication, monitor for anomalous sign-ins, and educate users about phishing indicators.]]></description>
+      <pubDate>Tue, 24 Nov 2026 11:36:09 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/eviltokens-phishing/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>LibreOffice Vulnerabilities Patched in RHEL 9.4 SAP</title>
       <link>https://secubuzz.com/news/libreoffice-vulnerabilities-patched-in-rhel-9-4-sa-f14f6a42</link>
@@ -26,6 +98,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Releases cifs-utils Patch for RHEL 9.8</title>
+      <link>https://secubuzz.com/news/red-hat-releases-cifs-utils-patch-for-rhel-9-8-79714d74</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-cifs-utils-patch-for-rhel-9-8-79714d74</guid>
+      <description><![CDATA[Red Hat issued a cifs-utils update for RHEL 9.8 EUS, fixing vulnerabilities that could enable remote code execution via SMB. Each flaw is linked to a CVE and carries a CVSS base score, with Red Hat rating the issue as Important. Apply the patch or upgrade to the latest RHEL 9.8 release to eliminate the risk.]]></description>
+      <pubDate>Tue, 24 Nov 2026 10:51:53 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102886">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>MFA Bypassed via Phone Scams Targeting Microsoft 365</title>
       <link>https://secubuzz.com/news/mfa-bypassed-via-phone-scams-targeting-microsoft-3-53df92e4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/mfa-bypassed-via-phone-scams-targeting-microsoft-3-53df92e4</guid>
@@ -42,6 +123,15 @@
       <pubDate>Tue, 24 Nov 2026 10:44:49 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html">The Hacker News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102514: Important: buildah, conmon, container-selinux, containers-common, criu, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, skopeo, and slirp4netns security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102514-important-buildah-conmon-containe-c65b1cfb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102514-important-buildah-conmon-containe-c65b1cfb</guid>
+      <description><![CDATA[An update for buildah, conmon, container-selinux, containers-common, criu, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, skopeo, and slirp4netns is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Tue, 24 Nov 2026 10:44:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102514">Red Hat Security Advisories</source>
+      <category>General</category>
     </item>
     <item>
       <title>Elecbrakes Bluetooth Flaws Enable Forced Trailer Braking</title>
@@ -143,10 +233,10 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>Azure Kernel Vulnerabilities Threaten System Integrity</title>
-      <link>https://secubuzz.com/news/azure-kernel-vulnerabilities-threaten-system-integ-668f827b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/azure-kernel-vulnerabilities-threaten-system-integ-668f827b</guid>
-      <description><![CDATA[Multiple kernel subsystems in Azure environments contain vulnerabilities that could allow an attacker to compromise system integrity. The flaws span device drivers, cryptographic APIs, and architecture layers, presenting a broad local privilege escalation risk without a public exploit. Ubuntu has issued kernel updates correcting these issues; administrators should apply the latest kernel or backport the patches to mitigate the threat.]]></description>
+      <title>Ubuntu Releases Kernel Patch for Multiple Azure Vulnerabilities</title>
+      <link>https://secubuzz.com/news/ubuntu-releases-kernel-patch-for-multiple-azure-vu-1657bc5f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-releases-kernel-patch-for-multiple-azure-vu-1657bc5f</guid>
+      <description><![CDATA[Ubuntu released a kernel update that patches multiple Azure vulnerabilities across subsystems such as ARM64, S390, x86, Bluetooth, GPU, and network drivers. The flaws allow remote or local privilege escalation, enabling attackers to compromise system integrity and run arbitrary code on virtual machines. Admins should promptly apply the latest kernel update or backport the patches to mitigate the risk.]]></description>
       <pubDate>Tue, 24 Nov 2026 08:42:14 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9191-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
@@ -365,96 +455,6 @@
       <description><![CDATA[Red Hat issued an Important security update for the cockpit component on Enterprise Linux 9.4 Update Services for SAP Solutions. The advisory cites several CVEs with CVSS scores, but no specific CVE ID is listed. Administrators should apply the cockpit update immediately to mitigate the identified vulnerabilities and consult the CVE links for detailed impact.]]></description>
       <pubDate>Tue, 24 Nov 2026 06:12:17 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102813">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SplitSecure Unveils Secret-Splitting Access Control Platform</title>
-      <link>https://secubuzz.com/news/splitsecure-unveils-secret-splitting-access-contro-2a84a83e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/splitsecure-unveils-secret-splitting-access-contro-2a84a83e</guid>
-      <description><![CDATA[SplitSecure announced a new access control platform built on secret-splitting technology to replace password managers, PAM, and vaults. The architecture supports passwords, passkeys, one-time codes, SAML & OIDC federation, and SSH, enabling secure credential handling for humans and AI agents. Organizations should evaluate the platform for integration with existing identity systems and assess its impact on compliance and operational workflows.]]></description>
-      <pubDate>Tue, 24 Nov 2026 06:07:23 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/splitsecure-launches-new-access-control-architecture-for-humans-and-ai-agents/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical PHP 7.4 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-php-7-4-security-update-216b4966</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-php-7-4-security-update-216b4966</guid>
-      <description><![CDATA[Red Hat released a Critical security update for the php:7.4 module on Enterprise Linux 8.6 Advanced Mission Critical and Extended Update Support. The advisory references multiple CVEs with CVSS scores, but no specific CVE ID is provided in the description. Administrators should apply the php:7.4 update immediately to address the critical vulnerabilities and review the CVE links for detailed impact.]]></description>
-      <pubDate>Tue, 24 Nov 2026 06:05:17 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102823">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OpenAI, Cisco Launch AI-Assisted Linux Shield Tool</title>
-      <link>https://secubuzz.com/news/openai-cisco-launch-ai-assisted-linux-shield-tool-f5687079</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-cisco-launch-ai-assisted-linux-shield-tool-f5687079</guid>
-      <description><![CDATA[OpenAI and Cisco unveiled Shirudo, an AI-assisted Linux runtime that deploys temporary eBPF controls to block exploit behaviors before patches. The system generates programs that intercept vulnerable system calls, preventing exploitation without rebooting and narrowing the exposure window. Deploy Shirudo on exposed hosts, monitor logs, and apply vendor patches promptly to eliminate the root flaw.]]></description>
-      <pubDate>Tue, 24 Nov 2026 06:02:57 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CISA Adds Actively Exploited N-able MailAssure SSRF Flaw to KEV Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-actively-exploited-n-able-mailassure-ssr-20bd190c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-actively-exploited-n-able-mailassure-ssr-20bd190c</guid>
-      <description><![CDATA[CISA added the critical SSRF vulnerability CVE-2026-134624 in N-able MailAssure's LDAP synchronization to its Known Exploited Vulnerabilities catalog, confirming active exploitation. The flaw allows authenticated attackers to force server-side requests to internal resources, enabling data exposure and lateral movement within protected networks. Administrators must immediately apply N-able's patch and enforce strict LDAP restrictions to mitigate the SSRF risk.]]></description>
-      <pubDate>Tue, 24 Nov 2026 06:02:45 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>OpenAI, Cisco Release Shirudo to Shield Linux Until Patches</title>
-      <link>https://secubuzz.com/news/openai-cisco-release-shirudo-to-shield-linux-until-1498088f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-cisco-release-shirudo-to-shield-linux-until-1498088f</guid>
-      <description><![CDATA[OpenAI and Cisco released Shirudo, a Linux runtime that deploys temporary eBPF controls to block exploit behaviors while patches are pending. Shirudo generates small programs that intercept vulnerable system calls, preventing exploitation without rebooting and narrowing the exposure window. Deploy Shirudo on exposed hosts, monitor logs, and apply vendor patches promptly to eliminate the root flaw.]]></description>
-      <pubDate>Tue, 24 Nov 2026 06:00:50 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/cisco-openai-shirudo/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Node.js simple-git RCE Vulnerability CVE-2026-134815</title>
-      <link>https://secubuzz.com/news/node-js-simple-git-rce-vulnerability-cve-2026-1348-d005401f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/node-js-simple-git-rce-vulnerability-cve-2026-1348-d005401f</guid>
-      <description><![CDATA[A critical flaw in the Node.js simple-git library allows attackers to execute arbitrary commands on servers that pass untrusted input into Git arguments. Tracked as CVE-2026-134815, the vulnerability is an argument injection weakness present in simple-git versions before 4.1.0, enabling remote code execution without authentication. Users should upgrade to simple-git 4.1.0 or later to mitigate the flaw.]]></description>
-      <pubDate>Tue, 24 Nov 2026 05:55:37 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/node-js-simple-git-library-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>IT Delegates Password Management While Maintaining Control</title>
-      <link>https://secubuzz.com/news/it-delegates-password-management-while-maintaining-599336a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/it-delegates-password-management-while-maintaining-599336a7</guid>
-      <description><![CDATA[IT departments often delegate password management to business units, creating accounts that may be unknown to central security teams. This practice can leave IT responsible for credentials it cannot monitor, increasing risk when personnel changes or external contractors access shared accounts. Implementing centralized identity governance, enforcing least-privilege access, and requiring IT involvement in account provisioning can mitigate these risks.]]></description>
-      <pubDate>Tue, 24 Nov 2026 05:30:07 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/passwork-enterprise-password-management/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important libXi Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-libxi-security-update-0dc42e1f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-libxi-security-update-0dc42e1f</guid>
-      <description><![CDATA[Red Hat released an important security update for the libXi library on RHEL 9.6 Extended Update Support. The update addresses unspecified vulnerabilities in libXi, with Red Hat Product Security rating the fix as Important and providing CVSS scores via CVE references. Administrators should apply the update promptly to mitigate potential exploitation of the libXi flaws.]]></description>
-      <pubDate>Tue, 24 Nov 2026 05:09:34 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102798">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important skopeo Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-skopeo-security-update-81f307ba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-skopeo-security-update-81f307ba</guid>
-      <description><![CDATA[Red Hat released an important security update for the skopeo tool on RHEL 9.8 Extended Update Support. The update addresses unspecified vulnerabilities in skopeo, with Red Hat Product Security rating the fix as Important and providing CVSS scores via CVE references. Administrators should apply the update promptly to mitigate potential exploitation of the skopeo flaws.]]></description>
-      <pubDate>Tue, 24 Nov 2026 05:09:26 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102806">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important libXi Update for RHEL 9.4</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-libxi-update-for-rhel-9-4-feaf3316</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-libxi-update-for-rhel-9-4-feaf3316</guid>
-      <description><![CDATA[Red Hat issued an Important security update for libXi on RHEL 9.4 Update Services for SAP Solutions. The patch addresses libXi vulnerabilities, with CVSS base scores linked via CVE references, and is rated Important by Product Security. Users should apply the update promptly to mitigate the weaknesses and meet SAP solution compliance.]]></description>
-      <pubDate>Tue, 24 Nov 2026 05:08:39 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102799">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

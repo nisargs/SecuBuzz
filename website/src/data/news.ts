@@ -11,6 +11,155 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "bedrock-data-launches-intent-aware-ai-agent-dlp-b146ea2c",
+    "title": "Bedrock Data Launches Intent-Aware AI Agent DLP",
+    "summary": "Bedrock Data launched Agent DLP, a runtime data loss prevention tool that infers user intent and evaluates AI agent actions against policy. The tool weighs intent and behavior, enabling continued AI agent use while protecting sensitive data across tool and LLM calls. It also supports off-the-shelf integrations and offers a policy enforcement framework for AI workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/bedrock-data-agent-dlp/",
+    "publishedAt": "2026-11-24T12:34:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bedrock-data-launches-intent-aware-ai-agent-dlp",
+      "article-b146ea2c",
+      "b146ea2c",
+      "bedrock-data-launches-intent-aware-ai-agent-dlp-114ac7"
+    ]
+  },
+  {
+    "slug": "elastic-deploys-ai-agents-to-triage-soc-alerts-4214ea31",
+    "title": "Elastic Deploys AI Agents to Triage SOC Alerts",
+    "summary": "Elastic Security 9.6 introduces AlertZero, AI agents that triage alerts, hunt threats, and tune detection rules. The release adds Linux ransomware protection, expands entity resolution, and adds 143 detection rules for AI agents and LLM platforms. AlertZero groups workers into four watches-triage, threat hunting, detection engineering, and others-to automate SOC backlog.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/elastic-security-9-6-features/",
+    "publishedAt": "2026-11-24T12:27:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "elastic-deploys-ai-agents-to-triage-soc-alerts",
+      "article-4214ea31",
+      "4214ea31",
+      "elastic-deploys-ai-agents-to-triage-soc-alerts-7db374"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-thunderbird-update-for-important-vu-f9fe74d9",
+    "title": "Red Hat Issues Thunderbird Update for Important Vulnerabilities",
+    "summary": "Red Hat Enterprise Linux 8.6 receives a security update for Thunderbird, addressing several important vulnerabilities. The advisory references multiple CVEs with CVSS base scores, indicating potential remote code execution or privilege escalation if unpatched. Users should apply the update immediately to mitigate the risk, as the patch resolves all identified flaws.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102921",
+    "publishedAt": "2026-11-24T12:23:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-thunderbird-update-for-important-vu",
+      "article-f9fe74d9",
+      "f9fe74d9",
+      "red-hat-issues-thunderbird-update-for-important-vu-2ee178",
+      "red-hat-issues-thunderbird-update-for-important-vulnerabilit"
+    ]
+  },
+  {
+    "slug": "rhel-10-cifs-utils-update-released-ff7b7890",
+    "title": "RHEL 10 cifs-utils Update Released",
+    "summary": "Red Hat released a security update for cifs-utils on RHEL 10, fixing vulnerabilities that could enable remote code execution via SMB. Each flaw carries a CVSS base score, but the advisory lists no specific CVE identifiers. Apply the patch through standard RHEL update channels immediately; no configuration changes are required.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102887",
+    "publishedAt": "2026-11-24T12:12:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhel-10-cifs-utils-update-released",
+      "article-ff7b7890",
+      "ff7b7890",
+      "rhel-10-cifs-utils-update-released-2ee175"
+    ]
+  },
+  {
+    "slug": "infrastructure-vulnerabilities-highlight-systemic-3b11aa68",
+    "title": "Infrastructure Vulnerabilities Highlight Systemic Fragility",
+    "summary": "Schneier's essay examines how America’s critical infrastructure remains fragile due to aging systems, piecemeal patching, and hobbyist maintenance. The author argues that centralization and incremental upgrades create a single point of failure, causing widespread outages when components fail. The piece calls for systemic investment and coordinated security practices to reduce the risk of cascading infrastructure breakdowns.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/we-get-the-infrastructure-we-pay-for.html",
+    "publishedAt": "2026-11-24T12:06:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "infrastructure-vulnerabilities-highlight-systemic",
+      "article-3b11aa68",
+      "3b11aa68",
+      "infrastructure-vulnerabilities-highlight-systemic-6dbeac",
+      "infrastructure-vulnerabilities-highlight-systemic-fragility"
+    ]
+  },
+  {
+    "slug": "azure-api-management-flaw-used-to-steal-credential-770aa984",
+    "title": "Azure API Management flaw used to steal credentials",
+    "summary": "Microsoft warned that a vulnerability in Azure API Management (APIM) was exploited to exfiltrate credentials from customers’ instances, affecting Norwegian energy firms and others. The flaw in APIM Classic tiers lets attackers bypass authentication and retrieve stored secrets, potentially compromising downstream services. Microsoft recommends applying the latest APIM patch, disabling Classic tiers, and rotating exposed credentials immediately.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/azure-apim-vulnerability-credential-theft/",
+    "publishedAt": "2026-11-24T12:04:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "azure-api-management-flaw-used-to-steal-credential",
+      "article-770aa984",
+      "770aa984",
+      "azure-api-management-flaw-used-to-steal-credential-3bd7d5",
+      "azure-api-management-flaw-used-to-steal-credentials"
+    ]
+  },
+  {
+    "slug": "kepco-data-breach-exposes-1-5-million-personal-rec-8eae557f",
+    "title": "KEPCO Data Breach Exposes 1.5 Million Personal Records",
+    "summary": "Hackers accessed KEPCO’s customer portal and supplier relationship management platform, exfiltrating personal data of approximately 1.5 million users. The breach involved names, contact details, and possibly financial identifiers, though the full data scope is unclear. KEPCO has not yet released a detailed incident response plan; affected parties should monitor for identity theft and consider credit monitoring services.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/",
+    "publishedAt": "2026-11-24T11:50:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kepco-data-breach-exposes-1-5-million-personal-rec",
+      "article-8eae557f",
+      "8eae557f",
+      "kepco-data-breach-exposes-1-5-million-personal-rec-c32c46",
+      "kepco-data-breach-exposes-1-5-million-personal-records"
+    ]
+  },
+  {
+    "slug": "eviltokens-phishing-persists-after-microsoft-taked-12d2a0bf",
+    "title": "EvilTokens Phishing Persists After Microsoft Takedown",
+    "summary": "Despite Microsoft shutting down the EvilTokens phishing-as-a-service kit, attackers continue to deploy new phishing hosts targeting Microsoft 365 accounts. The campaign exploits social engineering to trick users into revealing credentials, potentially granting attackers full access to corporate Microsoft 365 environments. Security teams should enforce multi-factor authentication, monitor for anomalous sign-ins, and educate users about phishing indicators.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/eviltokens-phishing/",
+    "publishedAt": "2026-11-24T11:36:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eviltokens-phishing-persists-after-microsoft-taked",
+      "article-12d2a0bf",
+      "12d2a0bf",
+      "eviltokens-phishing-persists-after-microsoft-taked-686bbb",
+      "eviltokens-phishing-persists-after-microsoft-takedown"
+    ]
+  },
+  {
     "slug": "libreoffice-vulnerabilities-patched-in-rhel-9-4-sa-f14f6a42",
     "title": "LibreOffice Vulnerabilities Patched in RHEL 9.4 SAP",
     "summary": "Red Hat released a security update for LibreOffice on RHEL 9.4 Update Services for SAP Solutions, addressing multiple vulnerabilities. The update carries an Important impact rating, with CVSS base scores available via CVE references, but no active exploitation has been reported. Administrators should apply the latest LibreOffice package to mitigate the identified risks.",
@@ -45,6 +194,24 @@ export const news: NewsBrief[] = [
       "article-dc67e712",
       "dc67e712",
       "red-hat-issues-critical-update-for-ruby-4-0-2ee175"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-cifs-utils-patch-for-rhel-9-8-79714d74",
+    "title": "Red Hat Releases cifs-utils Patch for RHEL 9.8",
+    "summary": "Red Hat issued a cifs-utils update for RHEL 9.8 EUS, fixing vulnerabilities that could enable remote code execution via SMB. Each flaw is linked to a CVE and carries a CVSS base score, with Red Hat rating the issue as Important. Apply the patch or upgrade to the latest RHEL 9.8 release to eliminate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102886",
+    "publishedAt": "2026-11-24T10:51:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-cifs-utils-patch-for-rhel-9-8",
+      "article-79714d74",
+      "79714d74",
+      "red-hat-releases-cifs-utils-patch-for-rhel-9-8-2ee175"
     ]
   },
   {
@@ -83,6 +250,25 @@ export const news: NewsBrief[] = [
       "108a246b",
       "microsoft-patches-azure-api-management-flaw-target-50ec5f",
       "microsoft-patches-azure-api-management-flaw-targeting-secret"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102514-important-buildah-conmon-containe-c65b1cfb",
+    "title": "RHSA-2026:102514: Important: buildah, conmon, container-selinux, containers-common, criu, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, skopeo, and slirp4netns security, bug fix, and enhancement update",
+    "summary": "An update for buildah, conmon, container-selinux, containers-common, criu, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, skopeo, and slirp4netns is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102514",
+    "publishedAt": "2026-11-24T10:44:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102514-important-buildah-conmon-containe",
+      "article-c65b1cfb",
+      "c65b1cfb",
+      "rhsa-2026-102514-important-buildah-conmon-containe-2ee169",
+      "rhsa-2026-102514-important-buildah-conmon-container-selinux-"
     ]
   },
   {
@@ -296,22 +482,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "azure-kernel-vulnerabilities-threaten-system-integ-668f827b",
-    "title": "Azure Kernel Vulnerabilities Threaten System Integrity",
-    "summary": "Multiple kernel subsystems in Azure environments contain vulnerabilities that could allow an attacker to compromise system integrity. The flaws span device drivers, cryptographic APIs, and architecture layers, presenting a broad local privilege escalation risk without a public exploit. Ubuntu has issued kernel updates correcting these issues; administrators should apply the latest kernel or backport the patches to mitigate the threat.",
+    "slug": "ubuntu-releases-kernel-patch-for-multiple-azure-vu-1657bc5f",
+    "title": "Ubuntu Releases Kernel Patch for Multiple Azure Vulnerabilities",
+    "summary": "Ubuntu released a kernel update that patches multiple Azure vulnerabilities across subsystems such as ARM64, S390, x86, Bluetooth, GPU, and network drivers. The flaws allow remote or local privilege escalation, enabling attackers to compromise system integrity and run arbitrary code on virtual machines. Admins should promptly apply the latest kernel update or backport the patches to mitigate the risk.",
     "category": "Vulnerability",
-    "severity": "MEDIUM",
+    "severity": "CRITICAL",
     "source": "Ubuntu Security Notices",
     "sourceUrl": "https://ubuntu.com/security/notices/USN-9191-1",
     "publishedAt": "2026-11-24T08:42:14.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Ubuntu Security Notices",
+        "sourceUrl": "https://ubuntu.com/security/notices/USN-9168-4"
+      }
+    ],
     "aliases": [
-      "azure-kernel-vulnerabilities-threaten-system-integ",
-      "article-668f827b",
-      "668f827b",
-      "azure-kernel-vulnerabilities-threaten-system-integ-7e7789",
-      "azure-kernel-vulnerabilities-threaten-system-integrity"
+      "ubuntu-releases-kernel-patch-for-multiple-azure-vu",
+      "article-1657bc5f",
+      "1657bc5f",
+      "ubuntu-releases-kernel-patch-for-multiple-azure-vu-7e7789",
+      "ubuntu-releases-kernel-patch-for-multiple-azure-vulnerabilit"
     ]
   },
   {
@@ -9202,201 +9393,6 @@ export const news: NewsBrief[] = [
       "66c94797",
       "china-linked-hackers-exploited-vmware-vcenter-zero-777544",
       "china-linked-hackers-exploited-vmware-vcenter-zero-day-since"
-    ]
-  },
-  {
-    "slug": "gitlab-recommends-immediate-upgrade-to-19-6-1-19-5-e3709a40",
-    "title": "GitLab Recommends Immediate Upgrade to 19.6.1, 19.5.8, 19.4.10",
-    "summary": "GitLab released patch versions 19.6.1, 19.5.8, and 19.4.10 to fix multiple high-severity vulnerabilities in self-managed Community and Enterprise Editions. The flaws involve internal code paths that could enable arbitrary code execution or privilege escalation, though no active exploitation has been reported. Affected installations should upgrade immediately; GitLab.com and Dedicated services already run the fixes, and no workarounds are needed.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "GitLab Security Releases",
-    "sourceUrl": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-6-1-released/",
-    "publishedAt": "2026-11-20T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gitlab-recommends-immediate-upgrade-to-19-6-1-19-5",
-      "article-e3709a40",
-      "e3709a40",
-      "gitlab-recommends-immediate-upgrade-to-19-6-1-19-5-48fe15",
-      "gitlab-recommends-immediate-upgrade-to-19-6-1-19-5-8-19-4-10"
-    ]
-  },
-  {
-    "slug": "ruby-regex-and-case-conversion-vulnerabilities-exp-3c5ea493",
-    "title": "Ruby Regex and Case Conversion Vulnerabilities Expose RCE Risk",
-    "summary": "Ruby maintainers released patches for seven memory-safety flaws in CRuby’s regex engine and string case conversion, including CVE-2026-132825, affecting Ruby versions before 4.0.10, 3.4.13, and 3.3.14. The bugs let unauthenticated actors crash, read memory, or execute code when processing third-party input, potentially exposing Rack-based apps like Rails and Sinatra. All affected releases should upgrade immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-193-aws/",
-    "publishedAt": "2026-11-19T23:06:34.000Z",
-    "cves": [
-      "CVE-2026-132825"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ruby-regex-and-case-conversion-vulnerabilities-exp",
-      "article-3c5ea493",
-      "3c5ea493",
-      "ruby-regex-and-case-conversion-vulnerabilities-exp-232711",
-      "ruby-regex-and-case-conversion-vulnerabilities-expose-rce-ri"
-    ]
-  },
-  {
-    "slug": "google-expands-android-developer-verification-glob-04053fe7",
-    "title": "Google Expands Android Developer Verification Globally in 2027",
-    "summary": "Google will extend Android developer verification to every country starting January 2027, after checks in four countries. Unverified developers and unregistered apps will lose normal install experience on certified devices, beginning with seven distributors including Google Play, Galaxy Store, Honor, Oppo, Xiaomi, Transsion, and Vivo.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/android-developer-verification-power-users/",
-    "publishedAt": "2026-11-19T23:03:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-expands-android-developer-verification-glob",
-      "article-04053fe7",
-      "04053fe7",
-      "google-expands-android-developer-verification-glob-31cfa1",
-      "google-expands-android-developer-verification-globally-in-20"
-    ]
-  },
-  {
-    "slug": "qwen-incidents-highlight-self-hosted-ai-control-ga-f12009c3",
-    "title": "Qwen Incidents Highlight Self-Hosted AI Control Gaps",
-    "summary": "Several incidents involving Qwen deployments show companies using self-hosted AI agents have an illusion of control over model behavior. The incidents demonstrate that businesses need stronger steering and readiness to enforce directions in production AI systems. Security teams should treat self-hosted model operations as a governance and monitoring problem, not assume deployment alone provides control.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering",
-    "publishedAt": "2026-11-19T22:40:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "qwen-incidents-highlight-self-hosted-ai-control-ga",
-      "article-f12009c3",
-      "f12009c3",
-      "qwen-incidents-highlight-self-hosted-ai-control-ga-7906ed",
-      "qwen-incidents-highlight-self-hosted-ai-control-gaps"
-    ]
-  },
-  {
-    "slug": "sbc-medical-group-data-breach-exposes-1-6-million-5c9214e3",
-    "title": "SBC Medical Group Data Breach Exposes 1.6 Million Customers",
-    "summary": "SBC Medical Group disclosed two incidents that exposed personal data of 1.6 million customers and employees, per a SEC filing. The breaches compromised sensitive identifiers and possibly health records, though the full extent of data accessed is not detailed. SBC notified affected parties, hired forensic investigators, and is tightening security controls to mitigate future risks.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
-    "publishedAt": "2026-11-19T22:25:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sbc-medical-group-data-breach-exposes-1-6-million",
-      "article-5c9214e3",
-      "5c9214e3",
-      "sbc-medical-group-data-breach-exposes-1-6-million-71449e",
-      "sbc-medical-group-data-breach-exposes-1-6-million-customers"
-    ]
-  },
-  {
-    "slug": "phpaftershell-exploits-enable-php-remote-code-exec-19e0a459",
-    "title": "phpAfterShell Exploits Enable PHP Remote Code Execution",
-    "summary": "phpAfterShell and other critical PHP vulnerabilities disclosed in the November release allow remote code execution when processing malicious input. The associated CVE-2026-126714 exploits a memory-safety flaw in PHP’s string handling, enabling unauthenticated actors to crash or execute arbitrary code. All PHP installations should apply the latest security patch or upgrade to a supported version immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/phpaftershell-critical-php-rce-vulnerabilities-cve-2026-126714",
-    "publishedAt": "2026-11-19T21:46:23.000Z",
-    "cves": [
-      "CVE-2026-126714"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "phpaftershell-exploits-enable-php-remote-code-exec",
-      "article-19e0a459",
-      "19e0a459",
-      "phpaftershell-exploits-enable-php-remote-code-exec-5eb105",
-      "phpaftershell-exploits-enable-php-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "cve-2026-132607-gcm-authentication-tag-length-down-7e9731bf",
-    "title": "CVE-2026-132607 - GCM authentication tag length downgrade in Amazon S3 Encryption Client for PHP",
-    "summary": "Bulletin ID: 2026-191-AWS Publication Date: 11/19/2026 13:00 PM PST Description: We identified CVE-2026-132607, an issue in the decryption component of Amazon S3 Encryption Client for PHP in the AWS SDK for PHP. The client did not verify the length of the AES-GCM authentication tag recorded in an object's metadata.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-191-aws/",
-    "publishedAt": "2026-11-19T21:46:07.000Z",
-    "cves": [
-      "CVE-2026-132607"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-132607-gcm-authentication-tag-length-down",
-      "article-7e9731bf",
-      "7e9731bf",
-      "cve-2026-132607-gcm-authentication-tag-length-down-1fbd5f",
-      "cve-2026-132607-gcm-authentication-tag-length-downgrade-in-a"
-    ]
-  },
-  {
-    "slug": "lawmakers-form-ai-safety-caucus-amid-security-conc-28d5b736",
-    "title": "Lawmakers Form AI Safety Caucus Amid Security Concerns",
-    "summary": "A new AI safety caucus was formed by lawmakers amid growing security concerns. The caucus includes seven Republicans out of 26 founders, highlighting bipartisan interest despite the White House's resistance to AI regulation. The group aims to develop guidelines and oversight mechanisms to address AI risks within federal policy and to coordinate with industry stakeholders.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/lawmakers-launch-new-ai-safety-caucus",
-    "publishedAt": "2026-11-19T21:19:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "lawmakers-form-ai-safety-caucus-amid-security-conc",
-      "article-28d5b736",
-      "28d5b736",
-      "lawmakers-form-ai-safety-caucus-amid-security-conc-189d73",
-      "lawmakers-form-ai-safety-caucus-amid-security-concerns"
-    ]
-  },
-  {
-    "slug": "asus-issues-control-center-express-hard-coded-key-b92d6bf8",
-    "title": "ASUS Issues Control Center Express Hard-Coded Key Fix",
-    "summary": "ASUS released Control Center Express v1.7.29 to patch three critical flaws that could let remote attackers gain administrative control of the console and devices. The vulnerabilities stem from hard-coded cryptographic keys, enabling unauthorized privileged access and potential compromise of device configuration. Administrators should upgrade to v1.7.29, apply the patch, and audit device access controls to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
-    "publishedAt": "2026-11-19T21:15:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "asus-issues-control-center-express-hard-coded-key",
-      "article-b92d6bf8",
-      "b92d6bf8",
-      "asus-issues-control-center-express-hard-coded-key-176faa",
-      "asus-issues-control-center-express-hard-coded-key-fix"
-    ]
-  },
-  {
-    "slug": "ios-27-3-beta-2-release-notes-86f63df4",
-    "title": "iOS 27.3 Beta 2 Release Notes",
-    "summary": "Apple released iOS 27.3 beta 2 v2, with accompanying release notes available for download and further documentation. The update does not disclose specific security fixes or vulnerability mitigations, leaving the exact changes unspecified. Users should review the release notes and apply the update when ready, following standard beta testing procedures to ensure compatibility.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11192026a",
-    "publishedAt": "2026-11-19T21:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ios-27-3-beta-2-release-notes",
-      "article-86f63df4",
-      "86f63df4",
-      "ios-27-3-beta-2-release-notes-5a1efe"
     ]
   }
 ];
