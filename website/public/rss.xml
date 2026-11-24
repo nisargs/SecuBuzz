@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 03:46:16 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 04:44:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases libXi Security Update for RHEL 8.6</title>
+      <link>https://secubuzz.com/news/red-hat-releases-libxi-security-update-for-rhel-8-01b8354e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-libxi-security-update-for-rhel-8-01b8354e</guid>
+      <description><![CDATA[Red Hat issued a security update for the libXi library on RHEL 8.6 Advanced Mission Critical and Extended Update Support, addressing identified vulnerabilities. The update carries an Important impact rating; CVSS base scores are available via CVE links, but no active exploitation is reported. Red Hat recommends applying the patch through standard update channels immediately.]]></description>
+      <pubDate>Tue, 24 Nov 2026 04:20:21 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102803">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues libXi Update for RHEL 9.2 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-issues-libxi-update-for-rhel-9-2-sap-ab037c79</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libxi-update-for-rhel-9-2-sap-ab037c79</guid>
+      <description><![CDATA[Red Hat released a security update for the libXi library on RHEL 9.2 Update Services for SAP Solutions, addressing identified vulnerabilities. The patch is rated Important; CVSS base scores are provided via CVE links, with no reported active exploitation. Apply the update through standard update channels to mitigate the identified flaws.]]></description>
+      <pubDate>Tue, 24 Nov 2026 04:17:01 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102800">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI and Cisco Release Shirudo to Block Linux Exploits</title>
+      <link>https://secubuzz.com/news/openai-and-cisco-release-shirudo-to-block-linux-ex-1663e286</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-and-cisco-release-shirudo-to-block-linux-ex-1663e286</guid>
+      <description><![CDATA[OpenAI and Cisco introduced Shirudo, an open-source AI-driven tool that blocks specific exploits on live Linux servers while teams test and deploy permanent patches. In a controlled test, a Codex-generated shield prevented a Java4Shell exploit against Elasticsearch without service interruption. Security teams should deploy Shirudo immediately to mitigate known exploits and reduce patch deployment windows.]]></description>
+      <pubDate>Tue, 24 Nov 2026 03:51:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/openai-and-cisco-launch-shirudo/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ChromeOS Stable Channel Updated to OS 16868.29.0</title>
+      <link>https://secubuzz.com/news/chromeos-stable-channel-updated-to-os-16868-29-0-adb54fa3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-stable-channel-updated-to-os-16868-29-0-adb54fa3</guid>
+      <description><![CDATA[Google updated the ChromeOS Stable channel to OS version 16868.29.0 and browser version 158.0.8127.98 for most devices, including ChromeOS Flex. The update includes routine security and stability improvements, with no new vulnerabilities disclosed. Users should apply the update via the standard ChromeOS update mechanism regularly to maintain current security posture.]]></description>
+      <pubDate>Tue, 24 Nov 2026 02:54:25 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-chromeos_01679457768.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Ongoing Scanning Detected on BANATSYNC Subnet</title>
       <link>https://secubuzz.com/news/ongoing-scanning-detected-on-banatsync-subnet-baab0068</link>
@@ -35,6 +71,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Updates Multiple Container Tools on RHEL 9.4</title>
+      <link>https://secubuzz.com/news/red-hat-updates-multiple-container-tools-on-rhel-9-ad6179bc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-multiple-container-tools-on-rhel-9-ad6179bc</guid>
+      <description><![CDATA[Red Hat released a security update for buildah, conmon, container-selinux, containernetworking-plugins, containers-common, crun, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, runc, skopeo, and slirp4netns on RHEL 9.4. The update fixes multiple vulnerabilities, each with a CVSS base score, and is rated as Important by Red Hat Product Security. Apply the update via RHEL 9.4 Update Services for SAP Solutions to maintain system integrity.]]></description>
+      <pubDate>Tue, 24 Nov 2026 01:10:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102708">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Updates Kernel for RHEL 8.8 SAP</title>
       <link>https://secubuzz.com/news/red-hat-updates-kernel-for-rhel-8-8-sap-3518b097</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-kernel-for-rhel-8-8-sap-3518b097</guid>
@@ -42,6 +87,15 @@
       <pubDate>Tue, 24 Nov 2026 01:10:16 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102709">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Security Update for Container Tools</title>
+      <link>https://secubuzz.com/news/red-hat-releases-security-update-for-container-too-daf1c6c4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-security-update-for-container-too-daf1c6c4</guid>
+      <description><![CDATA[Red Hat released the 3.3.4 build of Apicurio Registry container images for OpenShift, providing updated components and security patches. The update includes security fixes and enhancements, ensuring compatibility with current OpenShift deployments and aligning with Red Hat's security policy. Security teams should pull the new images from the Red Hat Container Registry and redeploy to maintain compliance.]]></description>
+      <pubDate>Tue, 24 Nov 2026 00:52:49 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102699">Red Hat Security Advisories</source>
+      <category>General</category>
     </item>
     <item>
       <title>RHSA-2026:102696: Critical: php:8.2 security update</title>
@@ -402,60 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 16:03:00 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102542">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Security Response Center acknowledges CVE-2026-69291</title>
-      <link>https://secubuzz.com/news/microsoft-security-response-center-acknowledges-cv-ec77efd5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-security-response-center-acknowledges-cv-ec77efd5</guid>
-      <description><![CDATA[Microsoft Security Response Center acknowledges CVE-2026-69291, a remote code execution flaw in the Windows Volume Manager Extension Driver. The vulnerability allows attackers to execute arbitrary code via crafted volume manager requests that can be triggered by malicious input, potentially compromising affected systems. A patch is available; administrators should apply the update promptly to mitigate the risk.]]></description>
-      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69291">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Security Response Center acknowledges CVE-2026-87697</title>
-      <link>https://secubuzz.com/news/microsoft-security-response-center-acknowledges-cv-4a4a964b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-security-response-center-acknowledges-cv-4a4a964b</guid>
-      <description><![CDATA[Microsoft Security Response Center acknowledges CVE-2026-87697, a remote code execution flaw in the .NET runtime. The vulnerability permits attackers to run arbitrary code through crafted .NET assemblies that can be triggered by malicious input, potentially compromising affected applications. A patch is available; developers should update .NET to the latest version to mitigate the risk.]]></description>
-      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87697">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>ASP.NET Core Denial of Service CVE-2026-96233</title>
-      <link>https://secubuzz.com/news/asp-net-core-denial-of-service-cve-2026-96233-3fd47404</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/asp-net-core-denial-of-service-cve-2026-96233-3fd47404</guid>
-      <description><![CDATA[A denial-of-service flaw in ASP.NET Core, CVE-2026-96233, lets attackers exhaust server resources via crafted HTTP requests. The flaw arises from improper input validation in request parsing, and no public exploit is known, but it can cause service interruption. Microsoft released a patch that corrects the parsing logic; administrators should apply the latest ASP.NET Core update or vendor hotfix.]]></description>
-      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96233">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Windows Message Queuing DoS CVE-2026-119848</title>
-      <link>https://secubuzz.com/news/windows-message-queuing-dos-cve-2026-119848-cf733baf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-message-queuing-dos-cve-2026-119848-cf733baf</guid>
-      <description><![CDATA[CVE-2026-119848 is a denial-of-service flaw in Windows Message Queuing that lets attackers crash the service with malformed queue messages. The vulnerability stems from unchecked bounds during message deserialization, and no active exploitation is known, but it can cause repeated service restarts. Microsoft released a patch that validates message lengths; administrators should apply Windows update or vendor hotfix to mitigate DoS.]]></description>
-      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119848">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Acknowledges CVE-2026-70175 ASP.NET Core Privilege Bug</title>
-      <link>https://secubuzz.com/news/microsoft-acknowledges-cve-2026-70175-asp-net-core-eca1996d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-cve-2026-70175-asp-net-core-eca1996d</guid>
-      <description><![CDATA[Microsoft has acknowledged CVE-2026-70175, an elevation of privilege flaw in ASP.NET Core that could let attackers gain higher privileges on affected systems. The flaw stems from improper validation of user input during authentication, allowing privilege escalation without authentication, though no public exploit exists. Microsoft issued an update; users should watch for future patches and apply any subsequent fixes when available.]]></description>
-      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70175">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Acknowledges CVE-2026-96225 .NET Privilege Bug</title>
-      <link>https://secubuzz.com/news/microsoft-acknowledges-cve-2026-96225-net-privileg-773963d1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-cve-2026-96225-net-privileg-773963d1</guid>
-      <description><![CDATA[Microsoft has acknowledged CVE-2026-96225, an elevation of privilege flaw in .NET that could allow attackers to gain higher privileges on affected systems. The vulnerability arises from validation errors during authentication, enabling privilege escalation without authentication, though no public exploit has been reported. Microsoft issued an update; users should watch for future patches and apply any subsequent fixes when available.]]></description>
-      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96225">Microsoft MSRC</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

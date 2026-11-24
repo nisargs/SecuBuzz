@@ -11,6 +11,80 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-libxi-security-update-for-rhel-8-01b8354e",
+    "title": "Red Hat Releases libXi Security Update for RHEL 8.6",
+    "summary": "Red Hat issued a security update for the libXi library on RHEL 8.6 Advanced Mission Critical and Extended Update Support, addressing identified vulnerabilities. The update carries an Important impact rating; CVSS base scores are available via CVE links, but no active exploitation is reported. Red Hat recommends applying the patch through standard update channels immediately.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102803",
+    "publishedAt": "2026-11-24T04:20:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-libxi-security-update-for-rhel-8",
+      "article-01b8354e",
+      "01b8354e",
+      "red-hat-releases-libxi-security-update-for-rhel-8-2ee174",
+      "red-hat-releases-libxi-security-update-for-rhel-8-6"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-libxi-update-for-rhel-9-2-sap-ab037c79",
+    "title": "Red Hat Issues libXi Update for RHEL 9.2 SAP",
+    "summary": "Red Hat released a security update for the libXi library on RHEL 9.2 Update Services for SAP Solutions, addressing identified vulnerabilities. The patch is rated Important; CVSS base scores are provided via CVE links, with no reported active exploitation. Apply the update through standard update channels to mitigate the identified flaws.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102800",
+    "publishedAt": "2026-11-24T04:17:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-libxi-update-for-rhel-9-2-sap",
+      "article-ab037c79",
+      "ab037c79",
+      "red-hat-issues-libxi-update-for-rhel-9-2-sap-2ee174"
+    ]
+  },
+  {
+    "slug": "openai-and-cisco-release-shirudo-to-block-linux-ex-1663e286",
+    "title": "OpenAI and Cisco Release Shirudo to Block Linux Exploits",
+    "summary": "OpenAI and Cisco introduced Shirudo, an open-source AI-driven tool that blocks specific exploits on live Linux servers while teams test and deploy permanent patches. In a controlled test, a Codex-generated shield prevented a Java4Shell exploit against Elasticsearch without service interruption. Security teams should deploy Shirudo immediately to mitigate known exploits and reduce patch deployment windows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/openai-and-cisco-launch-shirudo/",
+    "publishedAt": "2026-11-24T03:51:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-and-cisco-release-shirudo-to-block-linux-ex",
+      "article-1663e286",
+      "1663e286",
+      "openai-and-cisco-release-shirudo-to-block-linux-ex-d4a78b",
+      "openai-and-cisco-release-shirudo-to-block-linux-exploits"
+    ]
+  },
+  {
+    "slug": "chromeos-stable-channel-updated-to-os-16868-29-0-adb54fa3",
+    "title": "ChromeOS Stable Channel Updated to OS 16868.29.0",
+    "summary": "Google updated the ChromeOS Stable channel to OS version 16868.29.0 and browser version 158.0.8127.98 for most devices, including ChromeOS Flex. The update includes routine security and stability improvements, with no new vulnerabilities disclosed. Users should apply the update via the standard ChromeOS update mechanism regularly to maintain current security posture.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-chromeos_01679457768.html",
+    "publishedAt": "2026-11-24T02:54:25.241Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chromeos-stable-channel-updated-to-os-16868-29-0",
+      "article-adb54fa3",
+      "adb54fa3",
+      "chromeos-stable-channel-updated-to-os-16868-29-0-616ab3"
+    ]
+  },
+  {
     "slug": "ongoing-scanning-detected-on-banatsync-subnet-baab0068",
     "title": "Ongoing Scanning Detected on BANATSYNC Subnet",
     "summary": "SANS Internet Storm Center reports continuous scanning from subnet 109.160.32.0/24, assigned to BANATSYNC SRL, a Romanian web hosting and VPS provider. DShield sensor data shows persistent probing over 90 days, suggesting ongoing reconnaissance or potential exploitation attempts against the subnet's hosts. Security teams should monitor for suspicious activity, enforce rate limiting, and harden hosts to mitigate potential threats.",
@@ -65,6 +139,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-updates-multiple-container-tools-on-rhel-9-ad6179bc",
+    "title": "Red Hat Updates Multiple Container Tools on RHEL 9.4",
+    "summary": "Red Hat released a security update for buildah, conmon, container-selinux, containernetworking-plugins, containers-common, crun, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, runc, skopeo, and slirp4netns on RHEL 9.4. The update fixes multiple vulnerabilities, each with a CVSS base score, and is rated as Important by Red Hat Product Security. Apply the update via RHEL 9.4 Update Services for SAP Solutions to maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102708",
+    "publishedAt": "2026-11-24T01:10:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-multiple-container-tools-on-rhel-9",
+      "article-ad6179bc",
+      "ad6179bc",
+      "red-hat-updates-multiple-container-tools-on-rhel-9-2ee170",
+      "red-hat-updates-multiple-container-tools-on-rhel-9-4"
+    ]
+  },
+  {
     "slug": "red-hat-updates-kernel-for-rhel-8-8-sap-3518b097",
     "title": "Red Hat Updates Kernel for RHEL 8.8 SAP",
     "summary": "Red Hat issued a kernel update for RHEL 8.8 SAP and Telecom to fix vulnerabilities that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, but no CVE IDs or public exploits are cited. Red Hat recommends applying the patch via standard repositories immediately to incorporate all security improvements.",
@@ -80,6 +173,25 @@ export const news: NewsBrief[] = [
       "article-3518b097",
       "3518b097",
       "red-hat-updates-kernel-for-rhel-8-8-sap-2ee170"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-security-update-for-container-too-daf1c6c4",
+    "title": "Red Hat Releases Security Update for Container Tools",
+    "summary": "Red Hat released the 3.3.4 build of Apicurio Registry container images for OpenShift, providing updated components and security patches. The update includes security fixes and enhancements, ensuring compatibility with current OpenShift deployments and aligning with Red Hat's security policy. Security teams should pull the new images from the Red Hat Container Registry and redeploy to maintain compliance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102699",
+    "publishedAt": "2026-11-24T00:52:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-security-update-for-container-too",
+      "article-daf1c6c4",
+      "daf1c6c4",
+      "red-hat-releases-security-update-for-container-too-2ee16e",
+      "red-hat-releases-security-update-for-container-tools"
     ]
   },
   {
@@ -9319,128 +9431,6 @@ export const news: NewsBrief[] = [
       "f9daa949",
       "microsoft-updates-cve-2026-70223-console-driver-ac-74506a",
       "microsoft-updates-cve-2026-70223-console-driver-acknowledgme"
-    ]
-  },
-  {
-    "slug": "microsoft-discloses-vhdmp-sys-privilege-escalation-4971f29f",
-    "title": "Microsoft Discloses vhdmp.sys Privilege Escalation",
-    "summary": "Microsoft disclosed CVE-2026-95989, an elevation-of-privilege flaw in vhdmp.sys that could let local users gain higher privileges. The flaw arises from improper validation of virtual-disk metadata, enabling a crafted file to trigger kernel-mode escalation; no public exploit exists. Microsoft urges installation of the 19 November 2026 cumulative update, which patches the driver and mitigates the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95989",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-95989"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-discloses-vhdmp-sys-privilege-escalation",
-      "article-4971f29f",
-      "4971f29f",
-      "microsoft-discloses-vhdmp-sys-privilege-escalation-7431da"
-    ]
-  },
-  {
-    "slug": "microsoft-announces-kerberos-denial-of-service-cve-a8a68774",
-    "title": "Microsoft Announces Kerberos Denial-of-Service CVE",
-    "summary": "Microsoft disclosed CVE-2026-96082, a denial-of-service flaw in Windows Kerberos that could halt authentication for users. The issue stems from improper processing of malformed Kerberos tickets, enabling a crash; no active exploitation is known. Microsoft urges installation of the 19 November 2026 cumulative update, which patches the Kerberos component and restores service stability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96082",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-96082"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-announces-kerberos-denial-of-service-cve",
-      "article-a8a68774",
-      "a8a68774",
-      "microsoft-announces-kerberos-denial-of-service-cve-743187"
-    ]
-  },
-  {
-    "slug": "xbox-gaming-services-elevation-of-privilege-vulner-1f5ae36d",
-    "title": "Xbox Gaming Services Elevation of Privilege Vulnerability",
-    "summary": "CVE-2026-95874 identifies an elevation of privilege vulnerability in Xbox Gaming Services that could allow attackers to gain higher access levels within the service. The flaw stems from insufficient access controls during user session handling, potentially enabling unauthorized privilege escalation without additional authentication. Microsoft has issued an informational acknowledgement; no patch is currently available, and users should monitor for future updates.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-95874"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "xbox-gaming-services-elevation-of-privilege-vulner",
-      "article-1f5ae36d",
-      "1f5ae36d",
-      "xbox-gaming-services-elevation-of-privilege-vulner-7431de",
-      "xbox-gaming-services-elevation-of-privilege-vulnerability"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-cve-2026-69360-in-office-wo-f5ab3f82",
-    "title": "Microsoft Acknowledges CVE-2026-69360 in Office Word",
-    "summary": "Microsoft acknowledged CVE-2026-69360, a remote code execution vulnerability in Office Word. The vendor has issued an informational update, but no exploit details or patch status are disclosed. Security teams should monitor for future advisories and verify that their Office installations are up to date currently and immediately.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69360",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-69360"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-cve-2026-69360-in-office-wo",
-      "article-f5ab3f82",
-      "f5ab3f82",
-      "microsoft-acknowledges-cve-2026-69360-in-office-wo-745a66",
-      "microsoft-acknowledges-cve-2026-69360-in-office-word"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-excel-rce-cve-2026-100209-d9e842df",
-    "title": "Microsoft Acknowledges Excel RCE CVE-2026-100209",
-    "summary": "Microsoft acknowledges CVE-2026-100209, a remote code execution flaw in Office Excel that could be triggered by malicious content. The flaw permits arbitrary code execution via a crafted spreadsheet; no public exploit has been disclosed and CVSS is not yet published. Microsoft has released a patch in the latest Office update; administrators should apply it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100209",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-100209"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-excel-rce-cve-2026-100209",
-      "article-d9e842df",
-      "d9e842df",
-      "microsoft-acknowledges-excel-rce-cve-2026-100209-1ffada"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-exchange-rce-cve-2026-55007-b2279bfb",
-    "title": "Microsoft Acknowledges Exchange RCE CVE-2026-55007",
-    "summary": "Microsoft acknowledges CVE-2026-55007, a remote code execution flaw in Exchange Server that could be triggered by malicious content. The flaw permits arbitrary code execution via a crafted email attachment; no public exploit has been disclosed and CVSS is not yet published. Microsoft has released a patch in the latest Exchange update; administrators should apply it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55007",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-55007"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-exchange-rce-cve-2026-55007",
-      "article-b2279bfb",
-      "b2279bfb",
-      "microsoft-acknowledges-exchange-rce-cve-2026-55007-746a5b"
     ]
   }
 ];
