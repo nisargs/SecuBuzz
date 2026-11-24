@@ -11,6 +11,99 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-gnome-remote-desktop-security-upd-fed8c6a1",
+    "title": "Red Hat Releases gnome-remote-desktop Security Update",
+    "summary": "A security update for gnome-remote-desktop on Red Hat Enterprise Linux 10 addresses multiple vulnerabilities that could allow remote code execution. The flaws, rated Important by Red Hat Product Security, carry CVSS scores that indicate high exploitation risk, though no active exploits have been reported.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103408",
+    "publishedAt": "2026-11-24T20:29:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-gnome-remote-desktop-security-upd",
+      "article-fed8c6a1",
+      "fed8c6a1",
+      "red-hat-releases-gnome-remote-desktop-security-upd-2ee1da",
+      "red-hat-releases-gnome-remote-desktop-security-update"
+    ]
+  },
+  {
+    "slug": "inception-gang-launches-large-scale-vishing-campai-6668275b",
+    "title": "Inception Gang Launches Large-Scale Vishing Campaign",
+    "summary": "Inception, a new extortion group, launched a large-scale vishing campaign targeting SSO credentials of global brands and firms. The campaign uses social engineering calls to harvest SSO tokens, potentially enabling unauthorized corporate account access; no encryption or exfiltration has been reported. Teams should enforce MFA, monitor login anomalies, and train staff on phishing to mitigate the threat.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
+    "publishedAt": "2026-11-24T20:21:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "inception-gang-launches-large-scale-vishing-campai",
+      "article-6668275b",
+      "6668275b",
+      "inception-gang-launches-large-scale-vishing-campai-45b38e",
+      "inception-gang-launches-large-scale-vishing-campaign"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-openssl-security-patch-a854ee06",
+    "title": "Red Hat Issues openssl Security Patch",
+    "summary": "An OpenSSL security update for Red Hat Enterprise Linux 10.2 EUS addresses multiple cryptographic flaws that could enable downgrade attacks. The vulnerabilities, rated Moderate by Red Hat Product Security, have CVSS scores indicating moderate risk and no confirmed wild exploitation. Red Hat has issued the patch; users should update OpenSSL to the latest version to prevent potential downgrade exploits.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103381",
+    "publishedAt": "2026-11-24T20:14:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-openssl-security-patch",
+      "article-a854ee06",
+      "a854ee06",
+      "red-hat-issues-openssl-security-patch-2ee1d7"
+    ]
+  },
+  {
+    "slug": "erlang-otp-vulnerabilities-prompt-update-029a9067",
+    "title": "Erlang OTP Vulnerabilities Prompt Update",
+    "summary": "Erlang OTP multiple versions are affected by security flaws that could allow unauthorized code execution via the runtime system. The advisory, issued by the Canadian Centre for Cyber Security, does not list specific CVE identifiers but notes a CVSS base score indicating moderate severity. Administrators should review the provided web link and apply any available updates to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/erlang-security-advisory-av26-1204",
+    "publishedAt": "2026-11-24T19:59:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "erlang-otp-vulnerabilities-prompt-update",
+      "article-029a9067",
+      "029a9067",
+      "erlang-otp-vulnerabilities-prompt-update-544801"
+    ]
+  },
+  {
+    "slug": "california-privacy-agency-director-kemp-resigns-af-bdd646fe",
+    "title": "California Privacy Agency Director Kemp Resigns After Two Years",
+    "summary": "California Privacy Protection Agency director Charles Kemp announced his departure after a two-year tenure. His exit follows the launch of the agency’s first-in-the-nation platform that enables consumers to opt out of data sharing. The agency will continue to enforce privacy regulations and support consumer data rights under new effective leadership.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/california-privacy-agency-kemp",
+    "publishedAt": "2026-11-24T19:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "california-privacy-agency-director-kemp-resigns-af",
+      "article-bdd646fe",
+      "bdd646fe",
+      "california-privacy-agency-director-kemp-resigns-af-745ee9",
+      "california-privacy-agency-director-kemp-resigns-after-two-ye"
+    ]
+  },
+  {
     "slug": "cve-2026-135614-sensitive-data-redaction-bypass-in-c7149bd2",
     "title": "CVE-2026-135614 - Sensitive data redaction bypass in the troubleshooting tool in Amazon ECS MCP Server",
     "summary": "Bulletin ID: 2026-200-AWS Publication Date: 11/24/2026 11:00 AM PST Description: Amazon ECS MCP Server is an open-source Model Context Protocol server that lets AI agents and assistants manage and troubleshoot Amazon ECS workloads using the operator's AWS credentials. We identified CVE-2026-135614, an issue in the troubleshooting tool of the Amazon ECS MCP Server (awslabs.ecs-mcp-server) before 0.1.36.",
@@ -53,6 +146,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "turnitin-reports-unauthorized-activity-on-customer-09876e6f",
+    "title": "Turnitin Reports Unauthorized Activity on Customer Systems",
+    "summary": "Turnitin announced that it detected unauthorized activity involving certain customer-facing systems, according to a statement from CEO Chris Caren. The company did not disclose specific details or evidence of data compromise, but the incident indicates potential exploitation of exposed interfaces. Turnitin urged customers to review access controls, monitor logs, and apply any available security updates to mitigate the threat.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
+    "publishedAt": "2026-11-24T18:59:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "turnitin-reports-unauthorized-activity-on-customer",
+      "article-09876e6f",
+      "09876e6f",
+      "turnitin-reports-unauthorized-activity-on-customer-2283e3",
+      "turnitin-reports-unauthorized-activity-on-customer-systems"
+    ]
+  },
+  {
     "slug": "cve-2026-134066-query-injection-via-schema-derived-19cdd93a",
     "title": "CVE-2026-134066 - Query injection via schema-derived identifiers in Graph Explorer",
     "summary": "Bulletin ID: 2026-199-AWS Publication Date: 11/24/2026 10:30 AM PST Description: Graph Explorer is an open-source tool for browsing and searching graph data, which customers self-host against Amazon Neptune or other graph databases. We identified CVE-2026-134066, an issue in the query construction of Graph Explorer before version 3.2.1.",
@@ -71,6 +183,42 @@ export const news: NewsBrief[] = [
       "19cdd93a",
       "cve-2026-134066-query-injection-via-schema-derived-2d6424",
       "cve-2026-134066-query-injection-via-schema-derived-identifie"
+    ]
+  },
+  {
+    "slug": "vmware-vcenter-vulnerabilities-require-patch-ec14cfd4",
+    "title": "VMware vCenter Vulnerabilities Require Patch",
+    "summary": "VMware vCenter and Cloud Foundation versions before 9.1.2 and 9.0.2 contain vulnerabilities that could enable remote code execution. The advisory, issued by the Canadian Centre for Cyber Security, references a CVSS base score but does not provide a CVE identifier, indicating moderate risk. VMware has released patches for affected products; administrators should apply the updates promptly to prevent potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1203",
+    "publishedAt": "2026-11-24T18:43:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vmware-vcenter-vulnerabilities-require-patch",
+      "article-ec14cfd4",
+      "ec14cfd4",
+      "vmware-vcenter-vulnerabilities-require-patch-7852ff"
+    ]
+  },
+  {
+    "slug": "wiz-shares-fedramp-vdr-ver-insights-39a59a07",
+    "title": "Wiz Shares FedRAMP VDR & VER Insights",
+    "summary": "Wiz Research hosted a FedRAMP VDR & VER event on November 12, gathering government officials, industry experts, and its own FedRAMP team to discuss modernizing vulnerability management. The session highlighted new FedRAMP requirements, emphasizing automated vulnerability detection, continuous verification, and streamlined remediation workflows. Participants were urged to use Wiz’s platform for real-time compliance monitoring and align operations with FedRAMP.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/fedramp-vdr-ver-event-key-takeaways",
+    "publishedAt": "2026-11-24T18:36:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wiz-shares-fedramp-vdr-ver-insights",
+      "article-39a59a07",
+      "39a59a07",
+      "wiz-shares-fedramp-vdr-ver-insights-4c453c"
     ]
   },
   {
@@ -357,6 +505,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-office-visio-rce-cve-2026-112732-omitted-d6267404",
+    "title": "Microsoft Office Visio RCE CVE-2026-112732 Omitted",
+    "summary": "Microsoft Office Visio contains a remote code execution flaw identified as CVE-2026-112732, affecting all supported Visio versions. The flaw permits arbitrary code execution via crafted input, but no exploitation has been reported, and it was omitted from the November 2026 Security Updates. Microsoft released the patch in November 2026, and customers who installed those updates need not take further action.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112732",
+    "publishedAt": "2026-11-24T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-112732"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-office-visio-rce-cve-2026-112732-omitted",
+      "article-d6267404",
+      "d6267404",
+      "microsoft-office-visio-rce-cve-2026-112732-omitted-1febc7"
+    ]
+  },
+  {
     "slug": "carnegie-endowment-donor-data-leaked-by-vendor-45cf6cec",
     "title": "Carnegie Endowment Donor Data Leaked by Vendor",
     "summary": "The Carnegie Endowment for International Peace reported that a third-party vendor, Soapbox Engage, suffered a breach that leaked donor information. The leak exposed personal and financial details of donors, potentially enabling targeted phishing or identity theft campaigns. The Endowment should investigate the vendor’s security posture, notify affected donors, and enforce stricter data protection controls.",
@@ -543,6 +711,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "astelia-introduces-autonomous-network-mitigation-a68a5da0",
+    "title": "Astelia Introduces Autonomous Network Mitigation",
+    "summary": "Astelia released autonomous network mitigation that blocks attack paths to reachable vulnerabilities before patches are applied. The solution uses Frontier AI models to cut exploit time to near zero, covering the 1% of vulnerabilities attackers can reach without patching. Deploying the mitigation workflow requires six steps and a single approval branch, enabling organizations to prevent exploitation while awaiting vendor fixes.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/astelia-autonomous-network-mitigation/",
+    "publishedAt": "2026-11-24T14:24:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "astelia-introduces-autonomous-network-mitigation",
+      "article-a68a5da0",
+      "a68a5da0",
+      "astelia-introduces-autonomous-network-mitigation-575764"
+    ]
+  },
+  {
     "slug": "check-point-security-management-servers-targeted-i-e5c91a47",
     "title": "Check Point Security Management Servers Targeted in Global Attacks",
     "summary": "Threat actors compromised Check Point Security Management Servers across multiple international organizations using an AI-assisted campaign. Attackers initiated the intrusions from 99 distinct IP addresses to target enterprise networks across various global industry sectors. Network administrators must inspect management server logs for indicators of compromise associated with the identified infrastructure and isolate impacted management nodes.",
@@ -614,6 +800,43 @@ export const news: NewsBrief[] = [
       "article-747e255b",
       "747e255b",
       "mcdonald-s-japan-exposes-app-user-location-data-6af1bf"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102938-important-fltk-security-update-a7f02297",
+    "title": "RHSA-2026:102938: Important: fltk security update",
+    "summary": "An update for fltk is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102938",
+    "publishedAt": "2026-11-24T13:52:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102938-important-fltk-security-update",
+      "article-a7f02297",
+      "a7f02297",
+      "rhsa-2026-102938-important-fltk-security-update-2ee178"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102859-important-python3-12-security-upd-f3b66ced",
+    "title": "RHSA-2026:102859: Important: python3.12 security update",
+    "summary": "An update for python3.12 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102859",
+    "publishedAt": "2026-11-24T13:48:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102859-important-python3-12-security-upd",
+      "article-f3b66ced",
+      "f3b66ced",
+      "rhsa-2026-102859-important-python3-12-security-upd-2ee175",
+      "rhsa-2026-102859-important-python3-12-security-update"
     ]
   },
   {
@@ -1157,6 +1380,46 @@ export const news: NewsBrief[] = [
       "9d93c4f8",
       "google-researcher-exposes-net-bit-flip-code-integr-54b258",
       "google-researcher-exposes-net-bit-flip-code-integrity-bypass"
+    ]
+  },
+  {
+    "slug": "schneider-electric-ecostruxure-rapsody-vulnerabili-85289464",
+    "title": "Schneider Electric EcoStruxure Rapsody Vulnerability",
+    "summary": "Schneider Electric reported a memory corruption flaw in EcoStruxure Power Build Rapsody that can cause heap or stack buffer overflows. The CVSS 5.3 vulnerability permits local attackers to trigger memory corruption and potentially execute arbitrary code if not patched. Affected releases include generic/CVSS Vendor Equipment v3 5.3; users should apply vendor patches or workarounds promptly.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
+    "publishedAt": "2026-11-24T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "schneider-electric-ecostruxure-rapsody-vulnerabili",
+      "article-85289464",
+      "85289464",
+      "schneider-electric-ecostruxure-rapsody-vulnerabili-41abb8",
+      "schneider-electric-ecostruxure-rapsody-vulnerability"
+    ]
+  },
+  {
+    "slug": "danfoss-ak-sm-8xxa-vulnerability-enables-remote-co-f03778b7",
+    "title": "Danfoss AK-SM 8xxA Vulnerability Enables Remote Code Execution",
+    "summary": "Danfoss AK-SM 8xxA Series suffers a stack-based buffer overflow in an unauthenticated CGI handler that lets attackers send crafted HTTP/S POST requests. CVE-2026-129713 scores CVSS 9.8, causing memory corruption, webserver restart, and potentially arbitrary code execution with webserver privileges. Affected firmware versions are listed by Danfoss; users must apply the vendor patch or upgrade firmware immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+    "publishedAt": "2026-11-24T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-129713"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "danfoss-ak-sm-8xxa-vulnerability-enables-remote-co",
+      "article-f03778b7",
+      "f03778b7",
+      "danfoss-ak-sm-8xxa-vulnerability-enables-remote-co-41abb8",
+      "danfoss-ak-sm-8xxa-vulnerability-enables-remote-code-executi"
     ]
   },
   {
@@ -1876,6 +2139,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "whmcs-sql-injection-exposes-customer-data-without-4b5a9c1c",
+    "title": "WHMCS SQL Injection Exposes Customer Data Without Login",
+    "summary": "A remote SQL injection flaw in WHMCS’s shopping cart lets unauthenticated attackers retrieve customer records and admin password hashes from the database. The flaw bypasses authentication, enabling data exfiltration without credentials; no public exploit is known, yet it could expose sensitive user data.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
+    "publishedAt": "2026-11-24T08:34:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "whmcs-sql-injection-exposes-customer-data-without",
+      "article-4b5a9c1c",
+      "4b5a9c1c",
+      "whmcs-sql-injection-exposes-customer-data-without-5ef80c",
+      "whmcs-sql-injection-exposes-customer-data-without-login"
+    ]
+  },
+  {
     "slug": "microsoft-365-copilot-cve-2026-50691-enables-privi-350e8b5e",
     "title": "Microsoft 365 Copilot CVE-2026-50691 Enables Privilege Escalation",
     "summary": "Microsoft disclosed CVE-2026-50691, a critical flaw in Microsoft 365 Copilot that lets a low-privileged user elevate network permissions without user interaction. Scored 9.9 on CVSS 3.1, the bug exploits a logic error in Copilot’s permission model, enabling unauthorized access to protected resources. Microsoft urges customers to apply the November 19 patch via Microsoft Update or by updating the Copilot add-in.",
@@ -2331,6 +2613,83 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "litellm-pass-through-endpoint-rce-vulnerability-25eb4818",
+    "title": "LiteLLM Pass-Through Endpoint RCE Vulnerability",
+    "summary": "LiteLLM contains a pass-through endpoint flaw that allows remote attackers to execute arbitrary code on affected installations. The vulnerability requires authentication, has a CVSS score of 7.2, and permits code injection via crafted requests. A patch is available from the vendor; administrators should apply the update to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1084/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "litellm-pass-through-endpoint-rce-vulnerability",
+      "article-25eb4818",
+      "25eb4818",
+      "litellm-pass-through-endpoint-rce-vulnerability-77f356"
+    ]
+  },
+  {
+    "slug": "litellm-virtual-key-alias-privilege-escalation-09cfdd26",
+    "title": "LiteLLM Virtual Key Alias Privilege Escalation",
+    "summary": "LiteLLM has a virtual key model alias flaw that permits remote attackers to elevate privileges on the affected installations. The vulnerability requires authentication, carries a CVSS score of 6.5, and allows attackers to bypass authorization checks. The vendor has released a patch; administrators should update LiteLLM to prevent privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1083/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "litellm-virtual-key-alias-privilege-escalation",
+      "article-09cfdd26",
+      "09cfdd26",
+      "litellm-virtual-key-alias-privilege-escalation-77f356"
+    ]
+  },
+  {
+    "slug": "rustdesk-client-lpe-cve-2026-131827-4e437ba9",
+    "title": "RustDesk Client LPE CVE-2026-131827",
+    "summary": "RustDesk Client for Windows contains a reg_recovery flaw that allows local attackers to elevate privileges on affected installations. The vulnerability requires low-privileged code execution, has a CVSS score of 7.8, and is identified as CVE-2026-131827. A patch is available; users should update RustDesk Client to mitigate the local privilege escalation risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1080/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-131827"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "rustdesk-client-lpe-cve-2026-131827",
+      "article-4e437ba9",
+      "4e437ba9",
+      "rustdesk-client-lpe-cve-2026-131827-77f356"
+    ]
+  },
+  {
+    "slug": "zdi-26-1079-llama-cpp-server-context-impl-destroy-506d420f",
+    "title": "ZDI-26-1079: llama.cpp server_context_impl destroy vocab Use-After-Free Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of llama.cpp. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131837.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1079/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-131837"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1079-llama-cpp-server-context-impl-destroy",
+      "article-506d420f",
+      "506d420f",
+      "zdi-26-1079-llama-cpp-server-context-impl-destroy-77f353",
+      "zdi-26-1079-llama-cpp-server-context-impl-destroy-vocab-use-"
     ]
   },
   {
@@ -8990,371 +9349,6 @@ export const news: NewsBrief[] = [
       "57435616",
       "hackers-repurpose-softether-vpn-for-stealthy-espio-419db3",
       "hackers-repurpose-softether-vpn-for-stealthy-espionage"
-    ]
-  },
-  {
-    "slug": "industry-debates-ai-patching-after-outages-993d70af",
-    "title": "Industry Debates AI Patching After Outages",
-    "summary": "Industry experts debated whether AI-accelerated patching contributed to recent major outages and system fragility. They emphasized the necessity of tested rollback plans and robust inter-system resilience to prevent cascading failures. The discussion highlighted that rapid automation must be balanced with rigorous validation to safeguard critical infrastructure and ensure compliance with regulatory standards.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday/",
-    "publishedAt": "2026-11-20T12:38:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "industry-debates-ai-patching-after-outages",
-      "article-993d70af",
-      "993d70af",
-      "industry-debates-ai-patching-after-outages-329409"
-    ]
-  },
-  {
-    "slug": "openssl-base64-overflow-corrupts-memory-10f22820",
-    "title": "OpenSSL Base64 Overflow Corrupts Memory",
-    "summary": "A critical heap buffer overflow in OpenSSL’s Base64 encoding function lets attackers corrupt memory when handling large inputs. CVE-2026-121481 scores 9.8 on CVSS 3.1, marking it a high-severity flaw that can cause denial of service or remote code execution. OpenSSL released a patch; users should upgrade to the latest version or apply the fix to prevent exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openssl-heap-buffer-overflow/",
-    "publishedAt": "2026-11-20T12:34:30.000Z",
-    "cves": [
-      "CVE-2026-121481"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openssl-base64-overflow-corrupts-memory",
-      "article-10f22820",
-      "10f22820",
-      "openssl-base64-overflow-corrupts-memory-26106d"
-    ]
-  },
-  {
-    "slug": "armory-castle-exploits-vmware-vcenter-cve-2026-123-d6d0a5d8",
-    "title": "Armory Castle Exploits VMware vCenter CVE-2026-123890",
-    "summary": "Armory Castle, a China-linked espionage group, exploited VMware vCenter (CVE-2026-123890) since early September, before Broadcom released a fix. The CVSS 9.8 flaw permits unauthenticated remote attackers to obtain full administrator sessions on vCenter Server, controlling virtual infrastructure. Broadcom issued a patch in November; organizations must apply it immediately and verify vCenter Server is no longer exposed.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/vmware-vcenter-zero-day-cve-2026-123890-exploited/",
-    "publishedAt": "2026-11-20T12:30:19.000Z",
-    "cves": [
-      "CVE-2026-123890"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "armory-castle-exploits-vmware-vcenter-cve-2026-123",
-      "article-d6d0a5d8",
-      "d6d0a5d8",
-      "armory-castle-exploits-vmware-vcenter-cve-2026-123-6817af",
-      "armory-castle-exploits-vmware-vcenter-cve-2026-123890"
-    ]
-  },
-  {
-    "slug": "cve-2026-99312-exposes-host-memory-via-kvm-on-amd-191cadd2",
-    "title": "CVE-2026-99312 Exposes Host Memory via KVM on AMD",
-    "summary": "Linux KVM (CVE-2026-99312) lets guest VMs read up to 127 GB of host memory on AMD processors with nested virtualization. This flaw allows attackers to access memory of other customers on shared cloud servers, risking data exposure. Kernel patches addressing CVE-2026-99312 have shipped; admins should update and disable nested virtualization if unnecessary.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
-    "publishedAt": "2026-11-20T12:20:00.000Z",
-    "cves": [
-      "CVE-2026-99312"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-99312-exposes-host-memory-via-kvm-on-amd",
-      "article-191cadd2",
-      "191cadd2",
-      "cve-2026-99312-exposes-host-memory-via-kvm-on-amd-6eb057"
-    ]
-  },
-  {
-    "slug": "microsoft-auto-installs-windows-11-26h2-on-unmanag-24a9fbd2",
-    "title": "Microsoft Auto-Installs Windows 11 26H2 on Unmanaged Devices",
-    "summary": "Microsoft has begun automatically upgrading eligible unmanaged devices to Windows 11 26H2, bypassing traditional IT management controls. The move risks exposing devices to unverified updates, potentially introducing compatibility issues or security gaps on systems lacking centralized patch oversight. Administrators should monitor device upgrade status, enforce manual update policies, or configure group policies to prevent automatic installation on unmanaged hardware.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/",
-    "publishedAt": "2026-11-20T12:14:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-auto-installs-windows-11-26h2-on-unmanag",
-      "article-24a9fbd2",
-      "24a9fbd2",
-      "microsoft-auto-installs-windows-11-26h2-on-unmanag-7add96",
-      "microsoft-auto-installs-windows-11-26h2-on-unmanaged-devices"
-    ]
-  },
-  {
-    "slug": "hospitals-universities-hit-by-byod-ransomware-audi-3e2fb1ee",
-    "title": "Hospitals, Universities Hit by BYOD Ransomware Audio Messages",
-    "summary": "Ransomware attackers targeted hospitals and universities, playing audio ransom messages on infected computers to replace text demands. The campaign used a BYOD vector, embedding voice recordings that announced compromise and demanded payment, increasing user distraction. Security teams should isolate affected endpoints, verify ransomware signatures, and apply vendor patches to stop spread and monitor for audio payloads.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/byod-ransomware/",
-    "publishedAt": "2026-11-20T12:06:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hospitals-universities-hit-by-byod-ransomware-audi",
-      "article-3e2fb1ee",
-      "3e2fb1ee",
-      "hospitals-universities-hit-by-byod-ransomware-audi-1ef97a",
-      "hospitals-universities-hit-by-byod-ransomware-audio-messages"
-    ]
-  },
-  {
-    "slug": "ct-scan-unlocks-400-year-old-cryptex-padlock-50e4e0d2",
-    "title": "CT Scan Unlocks 400-Year-Old Cryptex Padlock",
-    "summary": "Researchers employed computed tomography scanning to reconstruct the internal code mechanism of a 400-year-old cryptex padlock, enabling its successful opening. The technique demonstrates that advanced imaging can bypass mechanical security, revealing that physical locks may be vulnerable to non-invasive analysis. Security designers should consider imaging resistance when creating high-security mechanical devices and evaluate potential forensic exploitation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html",
-    "publishedAt": "2026-11-20T12:04:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ct-scan-unlocks-400-year-old-cryptex-padlock",
-      "article-50e4e0d2",
-      "50e4e0d2",
-      "ct-scan-unlocks-400-year-old-cryptex-padlock-9d9f5b"
-    ]
-  },
-  {
-    "slug": "cisos-increasing-trust-in-autonomous-ai-soc-agents-870a7dcb",
-    "title": "CISOs Increasing Trust in Autonomous AI SOC Agents",
-    "summary": "A recent a16z survey of CISOs at enterprises over 1,000 employees shows growing confidence in autonomous AI agents for low-risk SOC tasks. Currently 36% are comfortable with AI autonomy, projected to rise to 60% in twelve months, making AI SOC the top initiative for 2027. Organizations should adopt governance frameworks to manage risk while delegating routine security operations to AI.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
-    "publishedAt": "2026-11-20T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisos-increasing-trust-in-autonomous-ai-soc-agents",
-      "article-870a7dcb",
-      "870a7dcb",
-      "cisos-increasing-trust-in-autonomous-ai-soc-agents-4e8b45"
-    ]
-  },
-  {
-    "slug": "cisa-adds-four-known-exploited-vulnerabilities-to-b38e652d",
-    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-    "summary": "BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. Aware of an exploited vulnerability not currently listed in the KEV Catalog?. The vulnerabilities are tracked as CVE-2025-42884, CVE-2026-76466, CVE-2026-123890.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-11-20T12:00:00.000Z",
-    "cves": [
-      "CVE-2025-42884",
-      "CVE-2026-76466",
-      "CVE-2026-123890",
-      "CVE-2026-129448"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-four-known-exploited-vulnerabilities-to",
-      "article-b38e652d",
-      "b38e652d",
-      "cisa-adds-four-known-exploited-vulnerabilities-to-61ed3a",
-      "cisa-adds-four-known-exploited-vulnerabilities-to-catalog"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-update-for-nginx-12d2a366",
-    "title": "Red Hat Releases Critical Update for nginx",
-    "summary": "Red Hat issued a critical security update for nginx on RHEL 9, addressing multiple high-severity vulnerabilities. The update mitigates several CVE-identified flaws, each with a CVSS base score of 9.0 or higher, and prevents unauthenticated remote code execution. Administrators should apply the RHSA-2026:100748 package immediately and verify that all affected services are restarted.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100748",
-    "publishedAt": "2026-11-20T11:44:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-update-for-nginx",
-      "article-12d2a366",
-      "12d2a366",
-      "red-hat-releases-critical-update-for-nginx-2ee088"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-nginx-1-24-on-rhel-9-4c76a417",
-    "title": "Red Hat Updates nginx:1.24 on RHEL 9",
-    "summary": "Red Hat issued a critical update for nginx:1.24 on RHEL 9, fixing vulnerabilities that could enable remote code execution. The advisory cites multiple CVE IDs with high CVSS scores, though no public exploits have been disclosed. Administrators should apply the update or install the patches immediately to prevent potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100746",
-    "publishedAt": "2026-11-20T11:44:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-nginx-1-24-on-rhel-9",
-      "article-4c76a417",
-      "4c76a417",
-      "red-hat-updates-nginx-1-24-on-rhel-9-2ee088"
-    ]
-  },
-  {
-    "slug": "sbc-medical-group-breach-exposes-2-million-custome-ca25a581",
-    "title": "SBC Medical Group Breach Exposes 2 Million Customers",
-    "summary": "Threat actors accessed databases containing customer information linked to SBC Medical Group clinics in Japan. The breach exposed personal data of over 2 million individuals, potentially including names, addresses, and medical records, though specific data types were not disclosed. SBC Medical Group has notified affected customers and is investigating the incident, urging users to monitor for suspicious activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/",
-    "publishedAt": "2026-11-20T11:36:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sbc-medical-group-breach-exposes-2-million-custome",
-      "article-ca25a581",
-      "ca25a581",
-      "sbc-medical-group-breach-exposes-2-million-custome-399bff",
-      "sbc-medical-group-breach-exposes-2-million-customers"
-    ]
-  },
-  {
-    "slug": "ai-driven-artex-automates-attacks-without-zero-day-3093e949",
-    "title": "AI-Driven ARTEX Automates Attacks Without Zero-Days",
-    "summary": "Attackers employ the open-source ARTEX framework, an AI-driven tool that automates network intrusion without relying on zero-day exploits. ARTEX scans for exposed applications, weak passwords, and loose permissions, persisting against defenses longer than typical human attackers. Security teams should harden configurations, enforce strong authentication, and monitor for automated scanning activity to mitigate ARTEX-driven threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ai-powered-artex-framework/",
-    "publishedAt": "2026-11-20T11:27:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-driven-artex-automates-attacks-without-zero-day",
-      "article-3093e949",
-      "3093e949",
-      "ai-driven-artex-automates-attacks-without-zero-day-5826f1",
-      "ai-driven-artex-automates-attacks-without-zero-days"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-nginx-1-24-on-rhel-8-59c0a30f",
-    "title": "Red Hat Updates nginx:1.24 on RHEL 8",
-    "summary": "Red Hat released a critical update for nginx:1.24 on RHEL 8, addressing vulnerabilities that could allow remote code execution. The advisory lists several CVE IDs with high CVSS scores, but no public exploits have been reported. Administrators should apply the update or install the patches immediately to prevent potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100747",
-    "publishedAt": "2026-11-20T11:08:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-nginx-1-24-on-rhel-8",
-      "article-59c0a30f",
-      "59c0a30f",
-      "red-hat-updates-nginx-1-24-on-rhel-8-2ee088"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100745-critical-nginx-1-26-security-upda-78a6aabd",
-    "title": "RHSA-2026:100745: Critical: nginx:1.26 security update",
-    "summary": "An update for the nginx:1.26 module is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100745",
-    "publishedAt": "2026-11-20T11:05:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100745-critical-nginx-1-26-security-upda",
-      "article-78a6aabd",
-      "78a6aabd",
-      "rhsa-2026-100745-critical-nginx-1-26-security-upda-2ee088",
-      "rhsa-2026-100745-critical-nginx-1-26-security-update"
-    ]
-  },
-  {
-    "slug": "f5-issues-emergency-patches-for-critical-big-ip-rc-37f0d20d",
-    "title": "F5 Issues Emergency Patches for Critical BIG-IP RCE Flaws",
-    "summary": "F5 released emergency patches for five critical BIG-IP vulnerabilities that enable remote code execution or denial-of-service attacks. The flaws grant unauthenticated attackers kernel-level code execution, threatening network traffic integrity and service availability, and the vendor classifies them as critical. F5 advises applying the latest BIG-IP firmware immediately and, if delayed, disabling affected modules and limiting management access as interim mitigations.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
-    "publishedAt": "2026-11-20T10:57:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "f5-issues-emergency-patches-for-critical-big-ip-rc",
-      "article-37f0d20d",
-      "37f0d20d",
-      "f5-issues-emergency-patches-for-critical-big-ip-rc-29dc34",
-      "f5-issues-emergency-patches-for-critical-big-ip-rce-flaws"
-    ]
-  },
-  {
-    "slug": "european-commission-ai-attack-disrupts-services-879406ee",
-    "title": "European Commission AI Attack Disrupts Services",
-    "summary": "An AI-assisted cyberattack targeted European Commission services, causing temporary outages across multiple online portals. The incident involved automated reconnaissance and exploitation of exposed web interfaces, but no evidence of data exfiltration was found. Commission operators isolated affected services, applied temporary mitigations, and are monitoring for further activity while no patch is required.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
-    "publishedAt": "2026-11-20T10:51:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "european-commission-ai-attack-disrupts-services",
-      "article-879406ee",
-      "879406ee",
-      "european-commission-ai-attack-disrupts-services-5e6be5"
-    ]
-  },
-  {
-    "slug": "sonicwall-gen-6-firewalls-unpatched-advises-immedi-cb8aa657",
-    "title": "SonicWall Gen 6 Firewalls Unpatched, Advises Immediate Retirement",
-    "summary": "SonicWall announced that Generation 6 firewalls will no longer receive security updates, citing increased AI-driven attack pressure. The advisory warns that unsupported edge devices are now prime targets for automated exploitation, potentially enabling remote code execution. Customers are urged to retire Gen 6 units immediately, replace them with supported models, and block internet exposure until a replacement is deployed.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
-    "publishedAt": "2026-11-20T10:38:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sonicwall-gen-6-firewalls-unpatched-advises-immedi",
-      "article-cb8aa657",
-      "cb8aa657",
-      "sonicwall-gen-6-firewalls-unpatched-advises-immedi-1c7a0c",
-      "sonicwall-gen-6-firewalls-unpatched-advises-immediate-retire"
-    ]
-  },
-  {
-    "slug": "ruby-patches-ruby2shell-heap-overflow-vulnerabilit-3bb20701",
-    "title": "Ruby Patches Ruby2Shell Heap Overflow Vulnerability",
-    "summary": "Ruby patched the Ruby2Shell heap-based buffer overflow that could enable remote code execution in Ruby applications. The flaw, tracked as CVE-2026-132825, allows attackers to corrupt heap memory and execute arbitrary code, potentially compromising any process running Ruby without authentication. Ruby released patch 3.2.2.1, and users should update immediately or apply the provided workaround to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/",
-    "publishedAt": "2026-11-20T10:34:10.000Z",
-    "cves": [
-      "CVE-2026-132825"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ruby-patches-ruby2shell-heap-overflow-vulnerabilit",
-      "article-3bb20701",
-      "3bb20701",
-      "ruby-patches-ruby2shell-heap-overflow-vulnerabilit-7a0697",
-      "ruby-patches-ruby2shell-heap-overflow-vulnerability"
     ]
   }
 ];

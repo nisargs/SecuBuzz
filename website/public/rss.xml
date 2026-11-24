@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 19:45:42 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 20:44:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases gnome-remote-desktop Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-gnome-remote-desktop-security-upd-fed8c6a1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-gnome-remote-desktop-security-upd-fed8c6a1</guid>
+      <description><![CDATA[A security update for gnome-remote-desktop on Red Hat Enterprise Linux 10 addresses multiple vulnerabilities that could allow remote code execution. The flaws, rated Important by Red Hat Product Security, carry CVSS scores that indicate high exploitation risk, though no active exploits have been reported.]]></description>
+      <pubDate>Tue, 24 Nov 2026 20:29:19 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103408">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Inception Gang Launches Large-Scale Vishing Campaign</title>
+      <link>https://secubuzz.com/news/inception-gang-launches-large-scale-vishing-campai-6668275b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/inception-gang-launches-large-scale-vishing-campai-6668275b</guid>
+      <description><![CDATA[Inception, a new extortion group, launched a large-scale vishing campaign targeting SSO credentials of global brands and firms. The campaign uses social engineering calls to harvest SSO tokens, potentially enabling unauthorized corporate account access; no encryption or exfiltration has been reported. Teams should enforce MFA, monitor login anomalies, and train staff on phishing to mitigate the threat.]]></description>
+      <pubDate>Tue, 24 Nov 2026 20:21:20 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/">BleepingComputer</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Red Hat Issues openssl Security Patch</title>
+      <link>https://secubuzz.com/news/red-hat-issues-openssl-security-patch-a854ee06</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-openssl-security-patch-a854ee06</guid>
+      <description><![CDATA[An OpenSSL security update for Red Hat Enterprise Linux 10.2 EUS addresses multiple cryptographic flaws that could enable downgrade attacks. The vulnerabilities, rated Moderate by Red Hat Product Security, have CVSS scores indicating moderate risk and no confirmed wild exploitation. Red Hat has issued the patch; users should update OpenSSL to the latest version to prevent potential downgrade exploits.]]></description>
+      <pubDate>Tue, 24 Nov 2026 20:14:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103381">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Erlang OTP Vulnerabilities Prompt Update</title>
+      <link>https://secubuzz.com/news/erlang-otp-vulnerabilities-prompt-update-029a9067</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/erlang-otp-vulnerabilities-prompt-update-029a9067</guid>
+      <description><![CDATA[Erlang OTP multiple versions are affected by security flaws that could allow unauthorized code execution via the runtime system. The advisory, issued by the Canadian Centre for Cyber Security, does not list specific CVE identifiers but notes a CVSS base score indicating moderate severity. Administrators should review the provided web link and apply any available updates to mitigate potential exploitation.]]></description>
+      <pubDate>Tue, 24 Nov 2026 19:59:34 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/erlang-security-advisory-av26-1204">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>California Privacy Agency Director Kemp Resigns After Two Years</title>
+      <link>https://secubuzz.com/news/california-privacy-agency-director-kemp-resigns-af-bdd646fe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/california-privacy-agency-director-kemp-resigns-af-bdd646fe</guid>
+      <description><![CDATA[California Privacy Protection Agency director Charles Kemp announced his departure after a two-year tenure. His exit follows the launch of the agency’s first-in-the-nation platform that enables consumers to opt out of data sharing. The agency will continue to enforce privacy regulations and support consumer data rights under new effective leadership.]]></description>
+      <pubDate>Tue, 24 Nov 2026 19:30:00 GMT</pubDate>
+      <source url="https://therecord.media/california-privacy-agency-kemp">The Record</source>
+      <category>General</category>
+    </item>
     <item>
       <title>CVE-2026-135614 - Sensitive data redaction bypass in the troubleshooting tool in Amazon ECS MCP Server</title>
       <link>https://secubuzz.com/news/cve-2026-135614-sensitive-data-redaction-bypass-in-c7149bd2</link>
@@ -26,6 +71,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Turnitin Reports Unauthorized Activity on Customer Systems</title>
+      <link>https://secubuzz.com/news/turnitin-reports-unauthorized-activity-on-customer-09876e6f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/turnitin-reports-unauthorized-activity-on-customer-09876e6f</guid>
+      <description><![CDATA[Turnitin announced that it detected unauthorized activity involving certain customer-facing systems, according to a statement from CEO Chris Caren. The company did not disclose specific details or evidence of data compromise, but the incident indicates potential exploitation of exposed interfaces. Turnitin urged customers to review access controls, monitor logs, and apply any available security updates to mitigate the threat.]]></description>
+      <pubDate>Tue, 24 Nov 2026 18:59:52 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>CVE-2026-134066 - Query injection via schema-derived identifiers in Graph Explorer</title>
       <link>https://secubuzz.com/news/cve-2026-134066-query-injection-via-schema-derived-19cdd93a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-134066-query-injection-via-schema-derived-19cdd93a</guid>
@@ -33,6 +87,24 @@
       <pubDate>Tue, 24 Nov 2026 18:44:47 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-199-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>VMware vCenter Vulnerabilities Require Patch</title>
+      <link>https://secubuzz.com/news/vmware-vcenter-vulnerabilities-require-patch-ec14cfd4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vmware-vcenter-vulnerabilities-require-patch-ec14cfd4</guid>
+      <description><![CDATA[VMware vCenter and Cloud Foundation versions before 9.1.2 and 9.0.2 contain vulnerabilities that could enable remote code execution. The advisory, issued by the Canadian Centre for Cyber Security, references a CVSS base score but does not provide a CVE identifier, indicating moderate risk. VMware has released patches for affected products; administrators should apply the updates promptly to prevent potential exploitation.]]></description>
+      <pubDate>Tue, 24 Nov 2026 18:43:41 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1203">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Wiz Shares FedRAMP VDR &amp; VER Insights</title>
+      <link>https://secubuzz.com/news/wiz-shares-fedramp-vdr-ver-insights-39a59a07</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wiz-shares-fedramp-vdr-ver-insights-39a59a07</guid>
+      <description><![CDATA[Wiz Research hosted a FedRAMP VDR & VER event on November 12, gathering government officials, industry experts, and its own FedRAMP team to discuss modernizing vulnerability management. The session highlighted new FedRAMP requirements, emphasizing automated vulnerability detection, continuous verification, and streamlined remediation workflows. Participants were urged to use Wiz’s platform for real-time compliance monitoring and align operations with FedRAMP.]]></description>
+      <pubDate>Tue, 24 Nov 2026 18:36:13 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/fedramp-vdr-ver-event-key-takeaways">Wiz Research</source>
+      <category>General</category>
     </item>
     <item>
       <title>Socket Provides Free Patches for All Critical RubyGems CVEs</title>
@@ -170,6 +242,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Microsoft Office Visio RCE CVE-2026-112732 Omitted</title>
+      <link>https://secubuzz.com/news/microsoft-office-visio-rce-cve-2026-112732-omitted-d6267404</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-office-visio-rce-cve-2026-112732-omitted-d6267404</guid>
+      <description><![CDATA[Microsoft Office Visio contains a remote code execution flaw identified as CVE-2026-112732, affecting all supported Visio versions. The flaw permits arbitrary code execution via crafted input, but no exploitation has been reported, and it was omitted from the November 2026 Security Updates. Microsoft released the patch in November 2026, and customers who installed those updates need not take further action.]]></description>
+      <pubDate>Tue, 24 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112732">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Carnegie Endowment Donor Data Leaked by Vendor</title>
       <link>https://secubuzz.com/news/carnegie-endowment-donor-data-leaked-by-vendor-45cf6cec</link>
       <guid isPermaLink="true">https://secubuzz.com/news/carnegie-endowment-donor-data-leaked-by-vendor-45cf6cec</guid>
@@ -260,6 +341,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Astelia Introduces Autonomous Network Mitigation</title>
+      <link>https://secubuzz.com/news/astelia-introduces-autonomous-network-mitigation-a68a5da0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/astelia-introduces-autonomous-network-mitigation-a68a5da0</guid>
+      <description><![CDATA[Astelia released autonomous network mitigation that blocks attack paths to reachable vulnerabilities before patches are applied. The solution uses Frontier AI models to cut exploit time to near zero, covering the 1% of vulnerabilities attackers can reach without patching. Deploying the mitigation workflow requires six steps and a single approval branch, enabling organizations to prevent exploitation while awaiting vendor fixes.]]></description>
+      <pubDate>Tue, 24 Nov 2026 14:24:11 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/astelia-autonomous-network-mitigation/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Check Point Security Management Servers Targeted in Global Attacks</title>
       <link>https://secubuzz.com/news/check-point-security-management-servers-targeted-i-e5c91a47</link>
       <guid isPermaLink="true">https://secubuzz.com/news/check-point-security-management-servers-targeted-i-e5c91a47</guid>
@@ -294,6 +384,24 @@
       <pubDate>Tue, 24 Nov 2026 14:09:37 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102938: Important: fltk security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102938-important-fltk-security-update-a7f02297</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102938-important-fltk-security-update-a7f02297</guid>
+      <description><![CDATA[An update for fltk is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:52:06 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102938">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102859: Important: python3.12 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102859-important-python3-12-security-upd-f3b66ced</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102859-important-python3-12-security-upd-f3b66ced</guid>
+      <description><![CDATA[An update for python3.12 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:48:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102859">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>UK NCSC Reports Rise in AI-Driven Cyber Attacks</title>
@@ -348,114 +456,6 @@
       <pubDate>Tue, 24 Nov 2026 13:31:13 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102590">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Anthropic Enhances Enterprise AI Misuse Detection</title>
-      <link>https://secubuzz.com/news/anthropic-enhances-enterprise-ai-misuse-detection-d206bbec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-enhances-enterprise-ai-misuse-detection-d206bbec</guid>
-      <description><![CDATA[Anthropic introduced an Enterprise File System (EFS) feature to detect Claude AI misuse across multiple requests for zero-retention customers. The mechanism scans request patterns, flags anomalous usage, and preserves conversation data within the customer’s own cloud, preventing data leakage. Security teams should enable EFS, monitor flagged sessions, and maintain local data retention policies to mitigate potential misuse.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:30:23 GMT</pubDate>
-      <source url="https://www.securityweek.com/anthropic-expands-enterprise-safeguards-for-detecting-ai-misuse/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation</title>
-      <link>https://secubuzz.com/news/vmware-vcenter-hit-by-another-critical-9-8-rated-a-1d91cc69</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vmware-vcenter-hit-by-another-critical-9-8-rated-a-1d91cc69</guid>
-      <description><![CDATA[Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service ("vmdir").]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:28:26 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Codesys Visualization Vulnerabilities Pre-4.11.0.0 Advisory</title>
-      <link>https://secubuzz.com/news/codesys-visualization-vulnerabilities-pre-4-11-0-0-a5bd4129</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/codesys-visualization-vulnerabilities-pre-4-11-0-0-a5bd4129</guid>
-      <description><![CDATA[The Canadian Centre for Cyber Security issued advisory AV26-1199, warning that Codesys Visualization versions prior to 4.11.0.0 contain multiple vulnerabilities. These flaws could allow attackers to gain unauthorized access or execute arbitrary code within the visualization component, potentially compromising industrial control systems. Users should review the provided links and apply available updates or workarounds as soon as patches are released.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:23:33 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/control-systems-codesys-security-advisory-av26-1199">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102588: Important: liblerc security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102588-important-liblerc-security-update-0baf4d23</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102588-important-liblerc-security-update-0baf4d23</guid>
-      <description><![CDATA[An update for liblerc is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:18:59 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102588">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102302: Critical: php security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102302-critical-php-security-update-8009f33f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102302-critical-php-security-update-8009f33f</guid>
-      <description><![CDATA[An update for php is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:07:59 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102302">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Wiz Enhances OpenAI Daybreak Defense with Security Intelligence</title>
-      <link>https://secubuzz.com/news/wiz-enhances-openai-daybreak-defense-with-security-a49c15f9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wiz-enhances-openai-daybreak-defense-with-security-a49c15f9</guid>
-      <description><![CDATA[Wiz Research announced integration of its cloud security intelligence into OpenAI's Daybreak Defense Factory, aiming to improve AI-driven vulnerability analysis. The integration leverages Wiz's data feeds to identify code remediation opportunities, but no specific vulnerability is disclosed. OpenAI can now apply Wiz insights to prioritize patching and reduce exposure to emerging threats.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:00:03 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/wiz-openai-codex-integration">Wiz Research</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>McDonald’s Japan Breach Reveals Purchase and Location Data</title>
-      <link>https://secubuzz.com/news/mcdonald-s-japan-breach-reveals-purchase-and-locat-61cd47bb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mcdonald-s-japan-breach-reveals-purchase-and-locat-61cd47bb</guid>
-      <description><![CDATA[McDonald’s Japan announced a cybersecurity breach that exposed customers’ purchase histories and mobile device location data. The incident involved unauthorized access to the company’s customer database, potentially compromising sensitive personal information for a large user base. The company is investigating the breach and has notified affected customers, while security teams should monitor for phishing or credential misuse.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:00:00 GMT</pubDate>
-      <source url="https://therecord.media/japan-mcdonalds-cyberattack-breach">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>SUSE Advises NeuVector Stack Buffer Overflow Vulnerabilities</title>
-      <link>https://secubuzz.com/news/suse-advises-neuvector-stack-buffer-overflow-vulne-93af351c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/suse-advises-neuvector-stack-buffer-overflow-vulne-93af351c</guid>
-      <description><![CDATA[SUSE reports stack buffer overflow vulnerabilities in NeuVector dataplane affecting versions prior to 5.7.0, 5.5.6, and 5.6.5, triggered by DLP/WAF rule limits. The 2048-byte overflow can corrupt memory and cause denial-of-service, but no remote code execution or active exploitation has been confirmed. Users should apply the SUSE update or upgrade NeuVector to a newer release to mitigate the DoS risk.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:59:47 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/suse-linux-security-advisory-av26-1198">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CVE-2026-131914 Enables Unauthenticated ASP.NET RCE</title>
-      <link>https://secubuzz.com/news/cve-2026-131914-enables-unauthenticated-asp-net-rc-3fcb8aae</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-131914-enables-unauthenticated-asp-net-rc-3fcb8aae</guid>
-      <description><![CDATA[Attackers exploited CVE-2026-131914, a critical flaw in Idunno AntiCsrf used by ASP.NET WebForms, to trigger web redirects and confirm exploitation. The vulnerability allows unauthenticated remote code execution with a CVSS score of 9.8, and threat actors have actively leveraged it. Microsoft and vendors have released patches; administrators should update the AntiCsrf library and disable redirects until the fix is applied.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:55:28 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-asp-net-anticsrf-flaw-exploited/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>ShinyHunters Crew Reappears on New Leak Site</title>
-      <link>https://secubuzz.com/news/shinyhunters-crew-reappears-on-new-leak-site-d710e72a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/shinyhunters-crew-reappears-on-new-leak-site-d710e72a</guid>
-      <description><![CDATA[Okta’s threat intelligence team uncovered the ShinyHunters-linked crew resurfacing on a leak site called 'Inception', continuing social engineering and credential-harvesting campaigns. Since March 2026, the O-UNC-053 cluster has targeted technology, healthcare, biotech, finance, insurance, entertainment, gaming, retail, transportation, hospitality, and legal sectors. Security teams should monitor credential-stealing phishing attempts and enforce multi-factor authentication to mitigate the crew’s exploitation.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:47:07 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/shinyhunters-inception-leak-site-okta/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102524: Important: buildah, conmon, container-selinux, containernetworking-plugins, containers-common, criu, crun, fuse-overlayfs, oci-seccomp-bpf-hook, podman, runc, skopeo, and slirp4netns security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102524-important-buildah-conmon-containe-738d6a07</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102524-important-buildah-conmon-containe-738d6a07</guid>
-      <description><![CDATA[An update for buildah, conmon, container-selinux, containernetworking-plugins, containers-common, criu, crun, fuse-overlayfs, oci-seccomp-bpf-hook, podman, runc, skopeo, and slirp4netns is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:41:40 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102524">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102526: Important: container-tools:rhel8 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102526-important-container-tools-rhel8-s-9221ff20</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102526-important-container-tools-rhel8-s-9221ff20</guid>
-      <description><![CDATA[An update for the container-tools:rhel8 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:41:18 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102526">Red Hat Security Advisories</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
