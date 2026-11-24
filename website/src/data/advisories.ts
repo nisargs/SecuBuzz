@@ -77,6 +77,110 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "GHSA-jp3c-6v3g-mpxv",
+    "cveID": "GHSA-jp3c-6v3g-mpxv",
+    "slug": "ghsa-jp3c-6v3g-mpxv",
+    "vendor": "Go",
+    "product": "dhcp · insomniacslk",
+    "name": "github.com/insomniacslk/dhcp permits denial of service through a malformed IPv4 payload length",
+    "dateAdded": "2026-11-24",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-1284",
+    "ransomware": false,
+    "description": "In github.com/insomniacslk/dhcp/dhcpv4/nclient4, BroadcastRawUDPConn.ReadFrom does not validate that the IPv4 payload length is sufficient to hold a UDP header before calculating the DHCP payload length. A frame with an IPv4 total-length field specifying fewer than eight payload bytes results in a negative DHCP length, causing a panic in buf.Consume due to a negative slice bound.",
+    "requiredAction": "Upgrade dhcp · insomniacslk to version 0.0.0-20260719225207-c76316d4aa82 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jp3c-6v3g-mpxv"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-59818",
+    "cveID": "CVE-2026-59818",
+    "slug": "cve-2026-59818",
+    "vendor": "Go",
+    "product": "go.etcd.io/etcd/v3",
+    "name": "etcd: CRL enforcement bypass on gRPC listener when `--listen-client-http-urls` is configured",
+    "dateAdded": "2026-11-24",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-295",
+    "ransomware": false,
+    "description": "_What kind of vulnerability is it? Who is impacted?_ When etcd is configured with --listen-client-http-urls to split the HTTP and gRPC client endpoints onto separate listeners, the --client-crl-file Certificate Revocation List is not enforced on the gRPC listener.",
+    "requiredAction": "Upgrade go.etcd.io/etcd/v3 to version 3.5.32 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3wh4-j44w-pg92"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59818"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-59726",
+    "cveID": "CVE-2026-59726",
+    "slug": "cve-2026-59726",
+    "vendor": "npm",
+    "product": "ruflo",
+    "name": "ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments",
+    "dateAdded": "2026-11-24",
+    "dueDate": "",
+    "cvss": 10,
+    "severity": "Critical",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "The MCP bridge shipping in ruflo/docker-compose.yml exposed POST /mcp with no authentication. The docker-compose defaults bound the bridge and MongoDB to all interfaces.",
+    "requiredAction": "Upgrade ruflo to version 3.16.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-c4hm-4h84-2cf3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59726"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63305",
+    "cveID": "CVE-2026-63305",
+    "slug": "cve-2026-63305",
+    "vendor": "Composer",
+    "product": "wwbn/avideo",
+    "name": "AVideo API FFmpeg process permits OS command injection via notifyCode/callback",
+    "dateAdded": "2026-11-24",
+    "dueDate": "",
+    "cvss": 8.1,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "The standalone FFmpeg execution endpoint plugin/API/standAlone/ffmpeg.json.php builds a shell command string that is passed to execAsync() and run via nohup sh -c \"<command>\".",
+    "requiredAction": "Upgrade wwbn/avideo to version 29.1.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-g9x9-q7qj-6mv5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63305"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-59192",
     "cveID": "CVE-2026-59192",
     "slug": "cve-2026-59192",
@@ -154,9 +258,9 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
-    "cve": "CVE-2026-63492",
-    "cveID": "CVE-2026-63492",
-    "slug": "cve-2026-63492",
+    "cve": "CVE-2026-63304",
+    "cveID": "CVE-2026-63304",
+    "slug": "cve-2026-63304",
     "vendor": "Composer",
     "product": "wwbn/avideo",
     "name": "AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword",
@@ -175,7 +279,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63492"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63304"
       }
     ],
     "source": "GITHUB"
@@ -1464,114 +1568,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63184"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-58192",
-    "cveID": "CVE-2026-58192",
-    "slug": "cve-2026-58192",
-    "vendor": "npm",
-    "product": "@appium/storage-plugin",
-    "name": "appium allows unauthenticated arbitrary file/directory deletion in @appium/storage-plugin",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 8.6,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "The Appium storage plugin exposes an HTTP endpoint POST /storage/delete that takes a user-supplied name and deletes it from the server storage folder. The handler passes name straight into path.join(storageRoot, name) and then fs.rimraf() without any path sanitization.",
-    "requiredAction": "Upgrade @appium/storage-plugin to version 1.1.6 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jwgx-mp9m-jwcr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58192"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114516",
-    "cveID": "CVE-2026-114516",
-    "slug": "cve-2026-114516",
-    "vendor": "npm",
-    "product": "ep_etherpad-lite",
-    "name": "Etherpad: Pre-auth arbitrary file read",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 9.8,
-    "severity": "Critical",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "An unauthenticated path‑traversal / arbitrary file read vulnerability in Etherpad's /static/* handler allows any remote, unauthenticated user to read any file on the server's filesystem (e.g. GET /static/plugins/ep_etherpad-lite/static/..%5C..%5C..%5C..%5C..%5C..%5C..%5Cetc/passwd returns /etc/passwd) available to the user running the etherpad software.",
-    "requiredAction": "Upgrade ep_etherpad-lite to version 3.3.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mc8w-wjhw-45x5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114516"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-103033",
-    "cveID": "CVE-2026-103033",
-    "slug": "cve-2026-103033",
-    "vendor": "Go",
-    "product": "altcha-lib-go (v2) · altcha-org",
-    "name": "ALTCHA: Nil-map panic (pre-verification DoS) in v1 parseServerSignature on malformed VerificationData",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "parseServerSignature in the v1 module only initializes ServerSignatureVerificationData.Extra inside the if err == nil branch after url.ParseQuery(parsedPayload.VerificationData). Go's url.ParseQuery returns the successfully-parsed pairs together with a non-nil error when the query string contains a malformed percent-escape.",
-    "requiredAction": "Upgrade altcha-lib-go (v2) · altcha-org to version 2.1.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gfwj-45pc-w6r5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103033"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-103025",
-    "cveID": "CVE-2026-103025",
-    "slug": "cve-2026-103025",
-    "vendor": "Go",
-    "product": "imagemeta · bep",
-    "name": "bep/imagemeta: Unbounded memory allocation decoding PNG `zTXt` \"Raw profile type iptc\" chunks",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-409",
-    "ransomware": false,
-    "description": "A crafted PNG can make imagemeta.Decode allocate memory far in excess of the input file's size, leading to memory exhaustion. Two separate paths in the zTXt \"Raw profile type iptc\" branch are affected: the declared chunk length drives an allocation directly, and the embedded zlib stream is decompressed without an output bound. A 42-byte file allocated 256 MB, and a 127 KB file allocated 460 MB.",
-    "requiredAction": "Upgrade imagemeta · bep to version 0.17.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-7hvw-3c2q-45qg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103025"
       }
     ],
     "source": "GITHUB"

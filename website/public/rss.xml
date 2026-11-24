@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 20:44:56 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 21:46:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Rackspace Spot Platform Shut Down After Breach</title>
+      <link>https://secubuzz.com/news/rackspace-spot-platform-shut-down-after-breach-a36ba24c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rackspace-spot-platform-shut-down-after-breach-a36ba24c</guid>
+      <description><![CDATA[A security breach in Rackspace Spot cloud platform exposed customer Kubernetes clusters and secrets to attackers. The incident allowed unauthorized access to sensitive configuration data, compromising cluster integrity and potentially exposing customer workloads. Rackspace has shut down the platform and urged customers to migrate services and download data as soon as possible by December 8.]]></description>
+      <pubDate>Tue, 24 Nov 2026 21:37:30 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Vulnerabilities Threaten Visa Systems in Multiple Countries</title>
+      <link>https://secubuzz.com/news/vulnerabilities-threaten-visa-systems-in-multiple-774b5d98</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vulnerabilities-threaten-visa-systems-in-multiple-774b5d98</guid>
+      <description><![CDATA[Vulnerabilities in online visa and immigration systems of Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana could disrupt traveler entry. The flaws allow attackers to manipulate border-control workflows, potentially bypassing authentication and authorization checks, though no confirmed exploitation has been reported. Affected agencies should apply vendor-issued patches, enforce multi-factor authentication, and monitor for anomalous access attempts.]]></description>
+      <pubDate>Tue, 24 Nov 2026 21:36:11 GMT</pubDate>
+      <source url="https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>cifs-utils Update Addresses Security Issues in RHEL9</title>
+      <link>https://secubuzz.com/news/cifs-utils-update-addresses-security-issues-in-rhe-f6105dd0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cifs-utils-update-addresses-security-issues-in-rhe-f6105dd0</guid>
+      <description><![CDATA[Red Hat released a security update for cifs-utils on RHEL 9, fixing vulnerabilities that could enable privilege escalation or data exposure. The advisory cites multiple CVE identifiers with CVSS scores between 7.0 and 8.5, indicating high-severity flaws in SMB client handling. Administrators should apply RHSA-2026:102952 immediately and confirm cifs-utils is at least version 6.0.0-3.el9.]]></description>
+      <pubDate>Tue, 24 Nov 2026 20:55:11 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102952">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>myColorado App Breach Stole Data of 150,000 Users</title>
+      <link>https://secubuzz.com/news/mycolorado-app-breach-stole-data-of-150-000-users-e22aa361</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mycolorado-app-breach-stole-data-of-150-000-users-e22aa361</guid>
+      <description><![CDATA[The state of Colorado confirmed a cyberattack that disabled the myColorado mobile application and compromised personal data of approximately 150,000 residents. The breach exposed identifiers, contact information, and document storage details, potentially enabling identity theft or phishing campaigns against affected users. Colorado authorities urged users to monitor accounts, change passwords, and report suspicious activity while the agency investigates the incident.]]></description>
+      <pubDate>Tue, 24 Nov 2026 20:52:00 GMT</pubDate>
+      <source url="https://therecord.media/mycolorado-app-down-data-breach">The Record</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Red Hat Releases gnome-remote-desktop Security Update</title>
       <link>https://secubuzz.com/news/red-hat-releases-gnome-remote-desktop-security-upd-fed8c6a1</link>
@@ -32,6 +68,15 @@
       <description><![CDATA[An OpenSSL security update for Red Hat Enterprise Linux 10.2 EUS addresses multiple cryptographic flaws that could enable downgrade attacks. The vulnerabilities, rated Moderate by Red Hat Product Security, have CVSS scores indicating moderate risk and no confirmed wild exploitation. Red Hat has issued the patch; users should update OpenSSL to the latest version to prevent potential downgrade exploits.]]></description>
       <pubDate>Tue, 24 Nov 2026 20:14:35 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103381">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>qt5-qtdeclarative Update Fixes Security Flaws in RHEL8.4</title>
+      <link>https://secubuzz.com/news/qt5-qtdeclarative-update-fixes-security-flaws-in-r-02f9bfd5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/qt5-qtdeclarative-update-fixes-security-flaws-in-r-02f9bfd5</guid>
+      <description><![CDATA[Red Hat issued a security update for qt5-qtdeclarative on RHEL 8.4, addressing vulnerabilities that could lead to memory corruption or denial of service. The advisory references several CVE identifiers with CVSS scores ranging from 6.5 to 8.0, indicating moderate to high severity. Systems should install RHSA-2026:103374 promptly and verify qt5-qtdeclarative is updated to the patched version.]]></description>
+      <pubDate>Tue, 24 Nov 2026 20:06:36 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103374">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -359,6 +404,24 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>RHSA-2026:102937: Important: fltk security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102937-important-fltk-security-update-2ee1c1c9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102937-important-fltk-security-update-2ee1c1c9</guid>
+      <description><![CDATA[An update for fltk is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 14:16:57 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102937">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102943: Moderate: cockpit-machines security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102943-moderate-cockpit-machines-securit-746d88f6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102943-moderate-cockpit-machines-securit-746d88f6</guid>
+      <description><![CDATA[An update for cockpit-machines is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 14:14:32 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102943">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Volant Manticore: Flying Under the Radar</title>
       <link>https://secubuzz.com/news/volant-manticore-flying-under-the-radar-1ed67c1d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/volant-manticore-flying-under-the-radar-1ed67c1d</guid>
@@ -392,69 +455,6 @@
       <description><![CDATA[An update for fltk is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Tue, 24 Nov 2026 13:52:06 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102938">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102859: Important: python3.12 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102859-important-python3-12-security-upd-f3b66ced</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102859-important-python3-12-security-upd-f3b66ced</guid>
-      <description><![CDATA[An update for python3.12 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:48:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102859">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>UK NCSC Reports Rise in AI-Driven Cyber Attacks</title>
-      <link>https://secubuzz.com/news/uk-ncsc-reports-rise-in-ai-driven-cyber-attacks-6e944715</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uk-ncsc-reports-rise-in-ai-driven-cyber-attacks-6e944715</guid>
-      <description><![CDATA[Britain's National Cyber Security Centre reported a marked rise in artificial intelligence-assisted cyberattacks since September. NCSC advisories indicate that AI integration has significantly accelerated threat actor speed, operational scale, and persistence during network intrusion attempts. Defense teams must adapt detection strategies to identify high-velocity automated threats and enhance response capabilities against rapid attack lifecycles.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:45:00 GMT</pubDate>
-      <source url="https://therecord.media/cyberattacks-uk-artificial-intelligence">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases kernel Update for RHEL 9.4 SAP</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-4-sap-bb9a6e86</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-4-sap-bb9a6e86</guid>
-      <description><![CDATA[A kernel security update addresses several privilege escalation and denial-of-service vulnerabilities in Red Hat Enterprise Linux 9.4 for SAP Solutions. The flaws have CVSS scores ranging from 7.0 to 8.2, allowing local users to potentially disrupt system operations. Red Hat has released the patch for all affected RHEL 9.4 SAP nodes; administrators should apply it immediately to mitigate the risks.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:41:14 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102712">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GTA 6 Hacker Sentenced, Released Same Day</title>
-      <link>https://secubuzz.com/news/gta-6-hacker-sentenced-released-same-day-3f92ee57</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gta-6-hacker-sentenced-released-same-day-3f92ee57</guid>
-      <description><![CDATA[A former Lapsus$ member, Arion Kurtaj, was sentenced to seven years for leaking Grand Theft Auto VI footage after a guilty plea. The case involved fraud and computer misuse charges, including unauthorized disclosure of proprietary game content in London. Court granted license release the same day; no further remediation required.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:35:37 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/gta-vi-hacker-sentenced-seven-years-released-on-licence/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Deploy ZQAgent Backdoor to Run Malicious Commands and Access Files on Linux Servers</title>
-      <link>https://secubuzz.com/news/hackers-deploy-zqagent-backdoor-to-run-malicious-c-dafeda16</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-deploy-zqagent-backdoor-to-run-malicious-c-dafeda16</guid>
-      <description><![CDATA[A new Linux backdoor called ZQAgent is giving attackers a long-term foothold on compromised servers. It can run commands, move through folders, read files and open network tunnels. The malware was dropped by ARTEX, an AI-driven hacking framework.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:35:26 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-deploy-zqagent-backdoor/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Shirudo AI Tool Protects Unpatched Linux Systems</title>
-      <link>https://secubuzz.com/news/shirudo-ai-tool-protects-unpatched-linux-systems-fa91e5d3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/shirudo-ai-tool-protects-unpatched-linux-systems-fa91e5d3</guid>
-      <description><![CDATA[OpenAI and Cisco released Shirudo, an open-source Linux security tool that deploys temporary runtime protections to block exploitation of unpatched vulnerabilities. Shirudo leverages AI-driven heuristics to detect and mitigate exploitation attempts against known CVEs without requiring service restarts, addressing the gap before patch deployment. Administrators can deploy Shirudo immediately to shield systems, then apply official patches once available.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:34:23 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues kernel Update for RHEL 9 SAP</title>
-      <link>https://secubuzz.com/news/red-hat-issues-kernel-update-for-rhel-9-sap-01dbf79d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kernel-update-for-rhel-9-sap-01dbf79d</guid>
-      <description><![CDATA[A kernel security update fixes multiple privilege escalation and denial-of-service flaws in Red Hat Enterprise Linux 9. The vulnerabilities carry CVSS scores between 7.2 and 8.0, exposing local users to potential system disruption. Red Hat has issued the patch for all affected RHEL 9 nodes; administrators should apply it promptly to close the gaps.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:31:13 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102590">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

@@ -11,6 +11,80 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rackspace-spot-platform-shut-down-after-breach-a36ba24c",
+    "title": "Rackspace Spot Platform Shut Down After Breach",
+    "summary": "A security breach in Rackspace Spot cloud platform exposed customer Kubernetes clusters and secrets to attackers. The incident allowed unauthorized access to sensitive configuration data, compromising cluster integrity and potentially exposing customer workloads. Rackspace has shut down the platform and urged customers to migrate services and download data as soon as possible by December 8.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
+    "publishedAt": "2026-11-24T21:37:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rackspace-spot-platform-shut-down-after-breach",
+      "article-a36ba24c",
+      "a36ba24c",
+      "rackspace-spot-platform-shut-down-after-breach-3f03f1"
+    ]
+  },
+  {
+    "slug": "vulnerabilities-threaten-visa-systems-in-multiple-774b5d98",
+    "title": "Vulnerabilities Threaten Visa Systems in Multiple Countries",
+    "summary": "Vulnerabilities in online visa and immigration systems of Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana could disrupt traveler entry. The flaws allow attackers to manipulate border-control workflows, potentially bypassing authentication and authorization checks, though no confirmed exploitation has been reported. Affected agencies should apply vendor-issued patches, enforce multi-factor authentication, and monitor for anomalous access attempts.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
+    "publishedAt": "2026-11-24T21:36:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vulnerabilities-threaten-visa-systems-in-multiple",
+      "article-774b5d98",
+      "774b5d98",
+      "vulnerabilities-threaten-visa-systems-in-multiple-9fd0ad",
+      "vulnerabilities-threaten-visa-systems-in-multiple-countries"
+    ]
+  },
+  {
+    "slug": "cifs-utils-update-addresses-security-issues-in-rhe-f6105dd0",
+    "title": "cifs-utils Update Addresses Security Issues in RHEL9",
+    "summary": "Red Hat released a security update for cifs-utils on RHEL 9, fixing vulnerabilities that could enable privilege escalation or data exposure. The advisory cites multiple CVE identifiers with CVSS scores between 7.0 and 8.5, indicating high-severity flaws in SMB client handling. Administrators should apply RHSA-2026:102952 immediately and confirm cifs-utils is at least version 6.0.0-3.el9.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102952",
+    "publishedAt": "2026-11-24T20:55:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cifs-utils-update-addresses-security-issues-in-rhe",
+      "article-f6105dd0",
+      "f6105dd0",
+      "cifs-utils-update-addresses-security-issues-in-rhe-2ee179",
+      "cifs-utils-update-addresses-security-issues-in-rhel9"
+    ]
+  },
+  {
+    "slug": "mycolorado-app-breach-stole-data-of-150-000-users-e22aa361",
+    "title": "myColorado App Breach Stole Data of 150,000 Users",
+    "summary": "The state of Colorado confirmed a cyberattack that disabled the myColorado mobile application and compromised personal data of approximately 150,000 residents. The breach exposed identifiers, contact information, and document storage details, potentially enabling identity theft or phishing campaigns against affected users. Colorado authorities urged users to monitor accounts, change passwords, and report suspicious activity while the agency investigates the incident.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/mycolorado-app-down-data-breach",
+    "publishedAt": "2026-11-24T20:52:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mycolorado-app-breach-stole-data-of-150-000-users",
+      "article-e22aa361",
+      "e22aa361",
+      "mycolorado-app-breach-stole-data-of-150-000-users-77b7d8"
+    ]
+  },
+  {
     "slug": "red-hat-releases-gnome-remote-desktop-security-upd-fed8c6a1",
     "title": "Red Hat Releases gnome-remote-desktop Security Update",
     "summary": "A security update for gnome-remote-desktop on Red Hat Enterprise Linux 10 addresses multiple vulnerabilities that could allow remote code execution. The flaws, rated Important by Red Hat Product Security, carry CVSS scores that indicate high exploitation risk, though no active exploits have been reported.",
@@ -64,6 +138,25 @@ export const news: NewsBrief[] = [
       "article-a854ee06",
       "a854ee06",
       "red-hat-issues-openssl-security-patch-2ee1d7"
+    ]
+  },
+  {
+    "slug": "qt5-qtdeclarative-update-fixes-security-flaws-in-r-02f9bfd5",
+    "title": "qt5-qtdeclarative Update Fixes Security Flaws in RHEL8.4",
+    "summary": "Red Hat issued a security update for qt5-qtdeclarative on RHEL 8.4, addressing vulnerabilities that could lead to memory corruption or denial of service. The advisory references several CVE identifiers with CVSS scores ranging from 6.5 to 8.0, indicating moderate to high severity. Systems should install RHSA-2026:103374 promptly and verify qt5-qtdeclarative is updated to the patched version.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103374",
+    "publishedAt": "2026-11-24T20:06:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "qt5-qtdeclarative-update-fixes-security-flaws-in-r",
+      "article-02f9bfd5",
+      "02f9bfd5",
+      "qt5-qtdeclarative-update-fixes-security-flaws-in-r-2ee1d7",
+      "qt5-qtdeclarative-update-fixes-security-flaws-in-rhel8-4"
     ]
   },
   {
@@ -745,6 +838,43 @@ export const news: NewsBrief[] = [
       "e5c91a47",
       "check-point-security-management-servers-targeted-i-2644fe",
       "check-point-security-management-servers-targeted-in-global-a"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102937-important-fltk-security-update-2ee1c1c9",
+    "title": "RHSA-2026:102937: Important: fltk security update",
+    "summary": "An update for fltk is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102937",
+    "publishedAt": "2026-11-24T14:16:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102937-important-fltk-security-update",
+      "article-2ee1c1c9",
+      "2ee1c1c9",
+      "rhsa-2026-102937-important-fltk-security-update-2ee178"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102943-moderate-cockpit-machines-securit-746d88f6",
+    "title": "RHSA-2026:102943: Moderate: cockpit-machines security update",
+    "summary": "An update for cockpit-machines is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102943",
+    "publishedAt": "2026-11-24T14:14:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102943-moderate-cockpit-machines-securit",
+      "article-746d88f6",
+      "746d88f6",
+      "rhsa-2026-102943-moderate-cockpit-machines-securit-2ee178",
+      "rhsa-2026-102943-moderate-cockpit-machines-security-update"
     ]
   },
   {
@@ -2613,6 +2743,90 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "x-org-server-privilege-escalation-via-libfontenc-p-772bc9e7",
+    "title": "X.Org Server Privilege Escalation via libfontenc Parsing",
+    "summary": "A local privilege escalation flaw in X.Org Server’s libfontenc encoding file parser allows attackers with code execution to gain elevated rights. The vulnerability, identified as CVE-2026-109908, scores CVSS 7.8 and requires local code execution to exploit, enabling unauthorized privilege escalation. No vendor patch has been released yet; security teams should monitor for updates and apply mitigations when available.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1158/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-109908"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "x-org-server-privilege-escalation-via-libfontenc-p",
+      "article-772bc9e7",
+      "772bc9e7",
+      "x-org-server-privilege-escalation-via-libfontenc-p-77f3c0",
+      "x-org-server-privilege-escalation-via-libfontenc-parsing"
+    ]
+  },
+  {
+    "slug": "asus-control-center-express-user-creation-privileg-c8048976",
+    "title": "ASUS Control Center Express User Creation Privilege Escalation",
+    "summary": "A remote privilege escalation flaw in ASUS Control Center Express’s user-creation module allows attackers to gain elevated rights when authenticated. The vulnerability, identified as CVE-2026-114205, scores CVSS 9.9 and requires authentication, enabling unauthorized privilege escalation. No vendor patch has been released yet; security teams should monitor for updates and apply mitigations when available.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1157/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114205"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "asus-control-center-express-user-creation-privileg",
+      "article-c8048976",
+      "c8048976",
+      "asus-control-center-express-user-creation-privileg-77f3c0",
+      "asus-control-center-express-user-creation-privilege-escalati"
+    ]
+  },
+  {
+    "slug": "asus-control-center-express-authentication-bypass-6536d5b6",
+    "title": "ASUS Control Center Express Authentication Bypass via Hard-coded Key",
+    "summary": "A remote authentication bypass flaw in ASUS Control Center Express uses a hard-coded cryptographic key, allowing attackers to access the system without credentials. The vulnerability, identified as CVE-2026-114204, scores CVSS 9.0 and permits unauthorized access without authentication. No vendor patch has been released yet; security teams should monitor for updates and apply mitigations when available.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1156/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114204"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "asus-control-center-express-authentication-bypass",
+      "article-6536d5b6",
+      "6536d5b6",
+      "asus-control-center-express-authentication-bypass-77f3c0",
+      "asus-control-center-express-authentication-bypass-via-hard-c"
+    ]
+  },
+  {
+    "slug": "zdi-26-1155-asus-control-center-express-use-of-har-603d0777",
+    "title": "ZDI-26-1155: ASUS Control Center Express Use of Hard-coded Cryptographic Key Authentication Bypass Vulnerability",
+    "summary": "This vulnerability allows remote attackers to bypass authentication on affected installations of ASUS Control Center Express. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-114202.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1155/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114202"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1155-asus-control-center-express-use-of-har",
+      "article-603d0777",
+      "603d0777",
+      "zdi-26-1155-asus-control-center-express-use-of-har-77f3bf",
+      "zdi-26-1155-asus-control-center-express-use-of-hard-coded-cr"
     ]
   },
   {
@@ -9139,216 +9353,6 @@ export const news: NewsBrief[] = [
       "5cc759b5",
       "white-house-replaces-cyber-director-with-acting-cz-535edc",
       "white-house-replaces-cyber-director-with-acting-czar"
-    ]
-  },
-  {
-    "slug": "apache-tomcat-cve-2026-133325-tls-1-3-psk-peer-val-3755925e",
-    "title": "Apache Tomcat CVE-2026-133325: TLS 1.3 PSK Peer Validation Flaw Enables Man-in-the-Middle and Unauthorized Cluster Joining",
-    "summary": "Apache Tomcat CVE-2026-133325 allows attackers to bypass TLS-PSK peer validation in TLS 1.3, enabling man-in-the-middle attacks and unauthorized cluster joining. The flaw stems from missing certificate checks during the TLS handshake, granting remote code execution and lateral movement across cluster nodes. Administrators must apply the latest patches or disable TLS-PSK to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-apache-tomcat-flaw/",
-    "publishedAt": "2026-11-20T14:29:21.000Z",
-    "cves": [
-      "CVE-2026-133325"
-    ],
-    "additionalSources": [
-      {
-        "source": "Canadian Centre for Cyber Security",
-        "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1188"
-      }
-    ],
-    "aliases": [
-      "apache-tomcat-cve-2026-133325-tls-1-3-psk-peer-val",
-      "article-3755925e",
-      "3755925e",
-      "apache-tomcat-cve-2026-133325-tls-1-3-psk-peer-val-f2968f",
-      "apache-tomcat-cve-2026-133325-tls-1-3-psk-peer-validation-fl"
-    ]
-  },
-  {
-    "slug": "credit-unions-hit-by-unnoticed-supplier-breach-cee36edd",
-    "title": "Credit Unions Hit by Unnoticed Supplier Breach",
-    "summary": "A supplier breach affecting dozens of credit unions went unnoticed for six weeks. The breach, reported by Ireland’s Data Protection Commission, involved a Belfast-based data processor that handled sensitive information for over 40 credit unions, potentially exposing customer data. Credit unions should conduct forensic investigations, notify affected customers, and review third-party data handling agreements.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/dozens-of-credit-unions-hit-by-supplier-breach",
-    "publishedAt": "2026-11-20T14:24:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "credit-unions-hit-by-unnoticed-supplier-breach",
-      "article-cee36edd",
-      "cee36edd",
-      "credit-unions-hit-by-unnoticed-supplier-breach-328e33"
-    ]
-  },
-  {
-    "slug": "soc-training-adapted-for-ai-driven-triage-9dad4985",
-    "title": "SOC Training Adapted for AI-Driven Triage",
-    "summary": "SOC leaders face a steep learning curve as agentic AI automates triage, threatening analyst skill retention. The article outlines strategies to preserve investigative judgment and bench talent, emphasizing continuous training and mentorship to counter AI’s efficiency gains. Adopting structured learning paths and hands-on simulations can help analysts adapt, ensuring critical decision-making remains human-centered.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SentinelOne",
-    "sourceUrl": "https://www.sentinelone.com/blog/the-new-analyst-learning-curve-training-and-retaining-talent-in-the-autonomous-soc/",
-    "publishedAt": "2026-11-20T14:00:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "soc-training-adapted-for-ai-driven-triage",
-      "article-9dad4985",
-      "9dad4985",
-      "soc-training-adapted-for-ai-driven-triage-2fb4a8"
-    ]
-  },
-  {
-    "slug": "nist-800-171-rev-3-transition-guide-7b2ecc11",
-    "title": "NIST 800-171 Rev 3 Transition Guide",
-    "summary": "Defense contractors must navigate the shift from NIST SP 800-171 Revision 2 to Revision 3 to maintain CMMC compliance. The guide presents a four-step approach, detailing assessment, remediation, documentation, and audit preparation to meet new security controls. Implementing these steps early mitigates compliance gaps and reduces the risk of certification delays.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/handling-the-nist-800-171-rev-3-transition",
-    "publishedAt": "2026-11-20T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nist-800-171-rev-3-transition-guide",
-      "article-7b2ecc11",
-      "7b2ecc11",
-      "nist-800-171-rev-3-transition-guide-747f6e"
-    ]
-  },
-  {
-    "slug": "us-threat-center-targets-scam-networks-cdfa009b",
-    "title": "US Threat Center Targets Scam Networks",
-    "summary": "The US Homeland Security Task Force has launched the Threat Disruption Center to target scam and sextortion crime networks. The center will coordinate intelligence sharing, law-enforcement operations, and victim-warning campaigns to disrupt financial fraud. Stakeholders are urged to report suspicious activity and collaborate with the center to strengthen national cyber-crime defenses.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/us-launches-center-to-disrupt-scams-and-warn-victims-sooner",
-    "publishedAt": "2026-11-20T13:49:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-threat-center-targets-scam-networks",
-      "article-cdfa009b",
-      "cdfa009b",
-      "us-threat-center-targets-scam-networks-6126de"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100751-critical-nginx-1-26-security-upda-f82e3205",
-    "title": "RHSA-2026:100751: Critical: nginx:1.26 security update",
-    "summary": "An update for the nginx:1.26 module is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100751",
-    "publishedAt": "2026-11-20T13:49:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100751-critical-nginx-1-26-security-upda",
-      "article-f82e3205",
-      "f82e3205",
-      "rhsa-2026-100751-critical-nginx-1-26-security-upda-2ee088",
-      "rhsa-2026-100751-critical-nginx-1-26-security-update"
-    ]
-  },
-  {
-    "slug": "n-able-breach-causes-global-mail-assure-outage-4916ef61",
-    "title": "N-able Breach Causes Global Mail Assure Outage",
-    "summary": "N-able confirmed a server breach that triggered a worldwide outage of its Mail Assure and SpamExperts Hosted Cloud services. The intrusion exploited an unpatched authentication flaw, allowing attackers to gain privileged access and disrupt email filtering and spam protection. N-able has released a patch and recommends immediate credential rotation and network segmentation to mitigate further compromise.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
-    "publishedAt": "2026-11-20T13:18:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-breach-causes-global-mail-assure-outage",
-      "article-4916ef61",
-      "4916ef61",
-      "n-able-breach-causes-global-mail-assure-outage-558a3a"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-nginx-1-24-rce-patch-5c1c1334",
-    "title": "Red Hat Issues Critical nginx:1.24 RCE Patch",
-    "summary": "Red Hat released a critical update for nginx:1.24 on RHEL 9.8, fixing a remote code execution flaw. The vulnerability permits unauthenticated attackers to run arbitrary code with root privileges, and Red Hat assigned a CVSS score of 9.8. Apply the update immediately and verify container integrity, following Red Hat’s mitigation guidance.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100750",
-    "publishedAt": "2026-11-20T13:05:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-nginx-1-24-rce-patch",
-      "article-5c1c1334",
-      "5c1c1334",
-      "red-hat-issues-critical-nginx-1-24-rce-patch-2ee088"
-    ]
-  },
-  {
-    "slug": "cyberleek-distributes-fake-gta-6-launchers-with-ma-3f6a75d7",
-    "title": "CyberLeek Distributes Fake GTA 6 Launchers with Malware",
-    "summary": "CyberLeek malware campaign uses over 355 domains to distribute fake GTA 6 launchers that deliver malicious payloads. The sites masquerade as legitimate game releases, but the ZIP archives contain trojanized executables designed to steal credentials and install backdoors. Security teams should block the listed domains, update URL filtering, and educate users about the phishing nature of the downloads.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fake-gta-6-pc-launchers/",
-    "publishedAt": "2026-11-20T13:02:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyberleek-distributes-fake-gta-6-launchers-with-ma",
-      "article-3f6a75d7",
-      "3f6a75d7",
-      "cyberleek-distributes-fake-gta-6-launchers-with-ma-714906",
-      "cyberleek-distributes-fake-gta-6-launchers-with-malware"
-    ]
-  },
-  {
-    "slug": "ransomware-group-publishes-visa-mastercard-jpmorga-3c9a1f42",
-    "title": "Ransomware Group Publishes Visa, Mastercard, JPMorgan Data",
-    "summary": "A ransomware group disclosed stolen data allegedly from third-party providers linked to Visa, Mastercard, and JPMorgan Chase customers. The leak includes personal identifiers and financial information, potentially exposing millions of cardholders to credential theft and fraud. Affected institutions should conduct forensic investigations, notify impacted customers, and enforce stricter third-party access controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/11/hackers-leak-data-linked-to-visa-mastercard-and-jpmorgan-customers",
-    "publishedAt": "2026-11-20T12:51:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-group-publishes-visa-mastercard-jpmorga",
-      "article-3c9a1f42",
-      "3c9a1f42",
-      "ransomware-group-publishes-visa-mastercard-jpmorga-1ec040",
-      "ransomware-group-publishes-visa-mastercard-jpmorgan-data"
-    ]
-  },
-  {
-    "slug": "hackers-repurpose-softether-vpn-for-stealthy-espio-57435616",
-    "title": "Hackers Repurpose SoftEther VPN for Stealthy Espionage",
-    "summary": "Hackers rebuilt SoftEther VPN Bridge into NtMonitor VPN, creating a covert channel that links an external network to a compromised government network. The modified client leaves fewer SoftEther traces, enabling stealthy lateral movement; researchers link it to Webworm, a state-sponsored actor. No vendor patch exists; defenders should block the custom binary, enforce strict VPN controls, and monitor anomalous outbound traffic.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/legitimate-vpn-software/",
-    "publishedAt": "2026-11-20T12:40:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-repurpose-softether-vpn-for-stealthy-espio",
-      "article-57435616",
-      "57435616",
-      "hackers-repurpose-softether-vpn-for-stealthy-espio-419db3",
-      "hackers-repurpose-softether-vpn-for-stealthy-espionage"
     ]
   }
 ];
