@@ -1145,6 +1145,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-updates-openjdk-11-0-33-1-windows-25229d68",
+    "title": "Red Hat Updates OpenJDK 11.0.33.1 Windows",
+    "summary": "Red Hat released an OpenJDK 11.0.33.1 ELS update for Windows, fixing vulnerabilities that could allow remote code execution via Java. The advisory lists multiple CVEs, each with a CVSS score marked Important, but no specific CVE IDs are named. Red Hat urges immediate application; no work-arounds are provided, and the patch is available through standard ELS channels.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100562",
+    "publishedAt": "2026-11-23T15:20:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-openjdk-11-0-33-1-windows",
+      "article-25229d68",
+      "25229d68",
+      "red-hat-updates-openjdk-11-0-33-1-windows-2ee081"
+    ]
+  },
+  {
     "slug": "fbi-ncic-database-targeted-in-second-cyber-inciden-c85df571",
     "title": "FBI NCIC Database Targeted in Second Cyber Incident",
     "summary": "The FBI’s National Crime Information Center (NCIC) database was targeted in a second cyber incident reported this month. The attack compromised access to records on fugitives, warrants, criminal histories, and missing persons, potentially exposing sensitive law-enforcement data. Investigators are assessing the breach scope, and security teams should monitor for unauthorized access attempts to similar databases.",
@@ -1198,6 +1216,24 @@ export const news: NewsBrief[] = [
       "article-8b4bb737",
       "8b4bb737",
       "trump-names-davies-national-cyber-czar-7c9797"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-tigervnc-for-rhel-9-6-51c027f3",
+    "title": "Red Hat Updates tigervnc for RHEL 9.6",
+    "summary": "Red Hat released a tigervnc update for RHEL 9.6 EUS, fixing vulnerabilities that could enable remote code execution via the VNC server. The advisory lists multiple CVEs, each with a CVSS score marked Important, but no specific CVE IDs are named. Red Hat urges immediate application; no work-arounds are offered, and the patch is available through standard EUS channels.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102407",
+    "publishedAt": "2026-11-23T15:12:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-tigervnc-for-rhel-9-6",
+      "article-51c027f3",
+      "51c027f3",
+      "red-hat-updates-tigervnc-for-rhel-9-6-2ee165"
     ]
   },
   {
@@ -9431,46 +9467,6 @@ export const news: NewsBrief[] = [
       "article-019e2d42",
       "019e2d42",
       "microsoft-office-excel-cve-2026-97745-acknowledged-7430f9"
-    ]
-  },
-  {
-    "slug": "microsoft-office-excel-cve-2026-100211-rce-96e958c2",
-    "title": "Microsoft Office Excel CVE-2026-100211 RCE",
-    "summary": "Microsoft Office Excel is affected by CVE-2026-100211, a remote code execution vulnerability exploitable via crafted spreadsheet files. The flaw arises from improper handling of complex formula parsing, granting attackers unauthenticated RCE with a CVSS score of 9.8. Microsoft has released a patch in the November 2026 update; administrators should apply the Office 365 update immediately to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100211",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-100211"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-office-excel-cve-2026-100211-rce",
-      "article-96e958c2",
-      "96e958c2",
-      "microsoft-office-excel-cve-2026-100211-rce-1ffada"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-cve-2026-97763-excel-rce-fb7aab1d",
-    "title": "Microsoft Acknowledges CVE-2026-97763 Excel RCE",
-    "summary": "Microsoft acknowledged CVE-2026-97763, a remote code execution flaw in Office Excel that could allow attackers to run arbitrary code via crafted spreadsheets. The advisory notes only an informational update, with no patch or exploitation evidence yet. Teams should watch Microsoft’s CVE tracker for a patch and apply it promptly to mitigate risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97763",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97763"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-cve-2026-97763-excel-rce",
-      "article-fb7aab1d",
-      "fb7aab1d",
-      "microsoft-acknowledges-cve-2026-97763-excel-rce-7430f9"
     ]
   }
 ];

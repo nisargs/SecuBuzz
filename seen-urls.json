@@ -6949,5 +6949,7 @@
   "https://access.redhat.com/errata/RHSA-2026:102402",
   "https://access.redhat.com/errata/RHSA-2026:102406",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96233",
-  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119848"
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119848",
+  "https://access.redhat.com/errata/RHSA-2026:100562",
+  "https://access.redhat.com/errata/RHSA-2026:102407"
 ]
