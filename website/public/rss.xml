@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 05:44:42 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 06:45:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ransomware Groups Multiply Despite Fewer Victim Payments</title>
+      <link>https://secubuzz.com/news/ransomware-groups-multiply-despite-fewer-victim-pa-db29ac26</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-groups-multiply-despite-fewer-victim-pa-db29ac26</guid>
+      <description><![CDATA[Check Point Research’s State of Ransomware Q3 2026 report lists 2,830 victims on data-leak sites, the highest quarterly total on record. July, August, and September accounted for 964, 1,042, and 824 victims respectively, indicating a sustained expansion of active ransomware groups. The report shows declining payments but continued brand proliferation, stressing the need for stronger defensive measures.]]></description>
+      <pubDate>Tue, 24 Nov 2026 06:30:26 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/check-point-ransomware-attacks-q3-2026-report/">Help Net Security</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>AWS European Sovereign Cloud: Architecture and Compliance Overview</title>
+      <link>https://secubuzz.com/news/aws-european-sovereign-cloud-architecture-and-comp-1475af38</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aws-european-sovereign-cloud-architecture-and-comp-1475af38</guid>
+      <description><![CDATA[AWS European Sovereign Cloud offers infrastructure designed to meet European data sovereignty requirements, providing isolated regions and compliance with local regulations. The architecture provides physical and logical separation, encryption controls, and audit capabilities, enabling organizations to retain full data control while leveraging AWS services. Customers can evaluate the platform against certifications and compliance frameworks to determine suitability for sensitive workloads.]]></description>
+      <pubDate>Tue, 24 Nov 2026 06:15:37 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/aws-european-sovereign-cloud-details/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Cockpit Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-cockpit-security-update-bbd94913</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-cockpit-security-update-bbd94913</guid>
+      <description><![CDATA[Red Hat issued an Important security update for the cockpit component on Enterprise Linux 9.4 Update Services for SAP Solutions. The advisory cites several CVEs with CVSS scores, but no specific CVE ID is listed. Administrators should apply the cockpit update immediately to mitigate the identified vulnerabilities and consult the CVE links for detailed impact.]]></description>
+      <pubDate>Tue, 24 Nov 2026 06:12:17 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102813">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical PHP 7.4 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-php-7-4-security-update-216b4966</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-php-7-4-security-update-216b4966</guid>
+      <description><![CDATA[Red Hat released a Critical security update for the php:7.4 module on Enterprise Linux 8.6 Advanced Mission Critical and Extended Update Support. The advisory references multiple CVEs with CVSS scores, but no specific CVE ID is provided in the description. Administrators should apply the php:7.4 update immediately to address the critical vulnerabilities and review the CVE links for detailed impact.]]></description>
+      <pubDate>Tue, 24 Nov 2026 06:05:17 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102823">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI, Cisco Launch AI-Assisted Linux Shield Tool</title>
+      <link>https://secubuzz.com/news/openai-cisco-launch-ai-assisted-linux-shield-tool-f5687079</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-cisco-launch-ai-assisted-linux-shield-tool-f5687079</guid>
+      <description><![CDATA[OpenAI and Cisco unveiled Shirudo, an AI-assisted Linux runtime that deploys temporary eBPF controls to block exploit behaviors before patches. The system generates programs that intercept vulnerable system calls, preventing exploitation without rebooting and narrowing the exposure window. Deploy Shirudo on exposed hosts, monitor logs, and apply vendor patches promptly to eliminate the root flaw.]]></description>
+      <pubDate>Tue, 24 Nov 2026 06:02:57 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CISA Adds N-able MailAssure SSRF to KEV Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-n-able-mailassure-ssrf-to-kev-catalog-79b8e120</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-n-able-mailassure-ssrf-to-kev-catalog-79b8e120</guid>
+      <description><![CDATA[CISA added a server-side request forgery flaw in N-able MailAssure’s LDAP to its Known Exploited Vulnerabilities catalog, noting active exploitation. CVE-2026-134624, scored 9.3, lets attackers force the server to request arbitrary internal resources, exposing data or enabling lateral movement. Administrators should apply the latest patch immediately and enforce LDAP restrictions to mitigate SSRF risk.]]></description>
+      <pubDate>Tue, 24 Nov 2026 06:02:45 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>OpenAI, Cisco Release Shirudo to Shield Linux Until Patches</title>
+      <link>https://secubuzz.com/news/openai-cisco-release-shirudo-to-shield-linux-until-1498088f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-cisco-release-shirudo-to-shield-linux-until-1498088f</guid>
+      <description><![CDATA[OpenAI and Cisco released Shirudo, a Linux runtime that deploys temporary eBPF controls to block exploit behaviors while patches are pending. Shirudo generates small programs that intercept vulnerable system calls, preventing exploitation without rebooting and narrowing the exposure window. Deploy Shirudo on exposed hosts, monitor logs, and apply vendor patches promptly to eliminate the root flaw.]]></description>
+      <pubDate>Tue, 24 Nov 2026 06:00:50 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/cisco-openai-shirudo/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>IT Delegates Password Management While Maintaining Control</title>
       <link>https://secubuzz.com/news/it-delegates-password-management-while-maintaining-599336a7</link>
@@ -32,6 +95,15 @@
       <description><![CDATA[Red Hat released an important security update for the skopeo tool on RHEL 9.8 Extended Update Support. The update addresses unspecified vulnerabilities in skopeo, with Red Hat Product Security rating the fix as Important and providing CVSS scores via CVE references. Administrators should apply the update promptly to mitigate potential exploitation of the skopeo flaws.]]></description>
       <pubDate>Tue, 24 Nov 2026 05:09:26 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102806">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Tigervnc Update for RHEL 8.6</title>
+      <link>https://secubuzz.com/news/red-hat-releases-tigervnc-update-for-rhel-8-6-f2a1fd5e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-tigervnc-update-for-rhel-8-6-f2a1fd5e</guid>
+      <description><![CDATA[Red Hat issued an important security update for the Tigervnc remote desktop server on RHEL 8.6 Advanced and Extended Update Support. The update addresses multiple vulnerabilities identified in Tigervnc, each assigned a CVSS base score and linked to CVE identifiers in the advisory references. Red Hat recommends applying the patch immediately to mitigate potential exploitation and maintain system integrity.]]></description>
+      <pubDate>Tue, 24 Nov 2026 05:07:34 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102805">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -384,78 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 20:00:20 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/">BleepingComputer</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Ubuntu OAuthLib multiple CVE vulnerabilities disclosed</title>
-      <link>https://secubuzz.com/news/ubuntu-oauthlib-multiple-cve-vulnerabilities-discl-55dbba3a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-oauthlib-multiple-cve-vulnerabilities-discl-55dbba3a</guid>
-      <description><![CDATA[Ubuntu 20.04 to 26.10 releases contain several OAuthLib flaws affecting token revocation, PKCE verification, and client identity validation. CVE-2026-49264 permits arbitrary code execution via JSONP callbacks, CVE-2026-49265 enables token theft through non-constant-time comparison, and CVE-2026-118669 allows unauthorized token acquisition by bypassing client checks. Users should upgrade to Ubuntu releases or apply the security patches to mitigate these OAuthLib vulnerabilities.]]></description>
-      <pubDate>Mon, 23 Nov 2026 19:44:23 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9188-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chrome iOS Stable 158 Released with Stability Improvements</title>
-      <link>https://secubuzz.com/news/chrome-ios-stable-158-released-with-stability-impr-cc781fff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-ios-stable-158-released-with-stability-impr-cc781fff</guid>
-      <description><![CDATA[Google released Chrome Stable 158 (158.0.8127.86) for iOS, adding stability and performance improvements to the mobile browser. The update addresses minor bugs and optimizes rendering, reducing memory usage and enhancing page load times on iOS devices. The new build will be available on the App Store within hours, and users are encouraged to update to benefit from the fixes.]]></description>
-      <pubDate>Mon, 23 Nov 2026 18:58:34 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update_0595441535.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>LaLiga Data Breach Exposes Fans Personal Information</title>
-      <link>https://secubuzz.com/news/laliga-data-breach-exposes-fans-personal-informati-47226265</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/laliga-data-breach-exposes-fans-personal-informati-47226265</guid>
-      <description><![CDATA[LaLiga disclosed a breach that exposed personal data of its users and some affiliated clubs. The theft included names, email addresses, phone numbers, and other sensitive information, raising significant privacy and regulatory concerns. LaLiga notified affected users, launched incident response, and is cooperating with law enforcement to trace the attack.]]></description>
-      <pubDate>Mon, 23 Nov 2026 18:38:40 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>MISP Advises Hotfix for Pre-v2.5.53 Vulnerabilities</title>
-      <link>https://secubuzz.com/news/misp-advises-hotfix-for-pre-v2-5-53-vulnerabilitie-92ccdb3b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/misp-advises-hotfix-for-pre-v2-5-53-vulnerabilitie-92ccdb3b</guid>
-      <description><![CDATA[The Canadian Centre for Cyber Security issued advisory AV26-1197, noting that MISP versions prior to 2.5.53 contain multiple security vulnerabilities. A quick hotfix, version 2.5.53, addresses the identified flaws, and administrators are urged to review the provided links and apply updates as soon as possible. Failure to patch may leave MISP installations vulnerable to exploitation of the disclosed weaknesses.]]></description>
-      <pubDate>Mon, 23 Nov 2026 18:14:44 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/misp-security-advisory-av26-1197">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Detects New Attacks by Learning Normal Behavior</title>
-      <link>https://secubuzz.com/news/ai-detects-new-attacks-by-learning-normal-behavior-7b3d2c9c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-detects-new-attacks-by-learning-normal-behavior-7b3d2c9c</guid>
-      <description><![CDATA[Arctic Wolf's AI threat detection platform identifies new attacks by learning normal user, device, and system behavior. The system flags deviations that may indicate emerging threats, enabling security teams to investigate and respond to previously unseen attacks. This approach expands detection coverage beyond signature-based methods, improving overall security posture for organizations worldwide.]]></description>
-      <pubDate>Mon, 23 Nov 2026 17:52:11 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/glossary-uk/what-is-ai-threat-detection/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>New Framework Traces Decade of Ransomware Actors</title>
-      <link>https://secubuzz.com/news/new-framework-traces-decade-of-ransomware-actors-a995d0f9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/new-framework-traces-decade-of-ransomware-actors-a995d0f9</guid>
-      <description><![CDATA[A new attribution framework enables security teams to trace ransomware actors across a decade of operations. The framework aggregates metadata from ransomware campaigns, correlating signatures and infrastructure to identify individual threat actors, thereby improving threat intelligence and response. Security teams can adopt the framework to enhance attribution accuracy, integrate with existing SIEMs, and prioritize defensive measures against identified actors.]]></description>
-      <pubDate>Mon, 23 Nov 2026 17:45:52 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Webworm Modifies SoftEther VPN to Evade Detection</title>
-      <link>https://secubuzz.com/news/webworm-modifies-softether-vpn-to-evade-detection-75f1fbe0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/webworm-modifies-softether-vpn-to-evade-detection-75f1fbe0</guid>
-      <description><![CDATA[The China-aligned threat actor Webworm is suspected of deploying a custom SoftEther VPN Bridge variant designed to conceal itself from security tools. The modified bridge removes recognizable detection fingerprints and masquerades as network-monitoring software, enabling covert remote access to compromised networks. Defenders should monitor anomalous VPN traffic, verify SoftEther installations against known hashes, and apply patches to mitigate potential exploitation.]]></description>
-      <pubDate>Mon, 23 Nov 2026 17:45:15 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-9187-1: libssh vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9187-1-libssh-vulnerabilities-77c22071</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9187-1-libssh-vulnerabilities-77c22071</guid>
-      <description><![CDATA[This issue only affected Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. (CVE-2026-59843) Mikhail Ilin and Saransh Rana discovered that libssh did not correctly sanitize shell metacharacters when expanding usernames in ProxyCommand strings. An attacker could possibly use this issue to obtain sensitive information. (CVE-2026-59846) Ben Smyth discovered that libssh incorrectly verified AES-GCM authentication tags when built with the OpenSSL backend.]]></description>
-      <pubDate>Mon, 23 Nov 2026 17:32:05 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9187-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

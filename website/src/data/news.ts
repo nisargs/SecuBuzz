@@ -11,6 +11,137 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ransomware-groups-multiply-despite-fewer-victim-pa-db29ac26",
+    "title": "Ransomware Groups Multiply Despite Fewer Victim Payments",
+    "summary": "Check Point Research’s State of Ransomware Q3 2026 report lists 2,830 victims on data-leak sites, the highest quarterly total on record. July, August, and September accounted for 964, 1,042, and 824 victims respectively, indicating a sustained expansion of active ransomware groups. The report shows declining payments but continued brand proliferation, stressing the need for stronger defensive measures.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/check-point-ransomware-attacks-q3-2026-report/",
+    "publishedAt": "2026-11-24T06:30:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ransomware-groups-multiply-despite-fewer-victim-pa",
+      "article-db29ac26",
+      "db29ac26",
+      "ransomware-groups-multiply-despite-fewer-victim-pa-78ca87",
+      "ransomware-groups-multiply-despite-fewer-victim-payments"
+    ]
+  },
+  {
+    "slug": "aws-european-sovereign-cloud-architecture-and-comp-1475af38",
+    "title": "AWS European Sovereign Cloud: Architecture and Compliance Overview",
+    "summary": "AWS European Sovereign Cloud offers infrastructure designed to meet European data sovereignty requirements, providing isolated regions and compliance with local regulations. The architecture provides physical and logical separation, encryption controls, and audit capabilities, enabling organizations to retain full data control while leveraging AWS services. Customers can evaluate the platform against certifications and compliance frameworks to determine suitability for sensitive workloads.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/aws-european-sovereign-cloud-details/",
+    "publishedAt": "2026-11-24T06:15:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aws-european-sovereign-cloud-architecture-and-comp",
+      "article-1475af38",
+      "1475af38",
+      "aws-european-sovereign-cloud-architecture-and-comp-ae595c",
+      "aws-european-sovereign-cloud-architecture-and-compliance-ove"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-cockpit-security-update-bbd94913",
+    "title": "Red Hat Releases Cockpit Security Update",
+    "summary": "Red Hat issued an Important security update for the cockpit component on Enterprise Linux 9.4 Update Services for SAP Solutions. The advisory cites several CVEs with CVSS scores, but no specific CVE ID is listed. Administrators should apply the cockpit update immediately to mitigate the identified vulnerabilities and consult the CVE links for detailed impact.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102813",
+    "publishedAt": "2026-11-24T06:12:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-cockpit-security-update",
+      "article-bbd94913",
+      "bbd94913",
+      "red-hat-releases-cockpit-security-update-2ee174"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-php-7-4-security-update-216b4966",
+    "title": "Red Hat Issues Critical PHP 7.4 Security Update",
+    "summary": "Red Hat released a Critical security update for the php:7.4 module on Enterprise Linux 8.6 Advanced Mission Critical and Extended Update Support. The advisory references multiple CVEs with CVSS scores, but no specific CVE ID is provided in the description. Administrators should apply the php:7.4 update immediately to address the critical vulnerabilities and review the CVE links for detailed impact.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102823",
+    "publishedAt": "2026-11-24T06:05:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-php-7-4-security-update",
+      "article-216b4966",
+      "216b4966",
+      "red-hat-issues-critical-php-7-4-security-update-2ee174"
+    ]
+  },
+  {
+    "slug": "openai-cisco-launch-ai-assisted-linux-shield-tool-f5687079",
+    "title": "OpenAI, Cisco Launch AI-Assisted Linux Shield Tool",
+    "summary": "OpenAI and Cisco unveiled Shirudo, an AI-assisted Linux runtime that deploys temporary eBPF controls to block exploit behaviors before patches. The system generates programs that intercept vulnerable system calls, preventing exploitation without rebooting and narrowing the exposure window. Deploy Shirudo on exposed hosts, monitor logs, and apply vendor patches promptly to eliminate the root flaw.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+    "publishedAt": "2026-11-24T06:02:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-cisco-launch-ai-assisted-linux-shield-tool",
+      "article-f5687079",
+      "f5687079",
+      "openai-cisco-launch-ai-assisted-linux-shield-tool-7e44e4"
+    ]
+  },
+  {
+    "slug": "cisa-adds-n-able-mailassure-ssrf-to-kev-catalog-79b8e120",
+    "title": "CISA Adds N-able MailAssure SSRF to KEV Catalog",
+    "summary": "CISA added a server-side request forgery flaw in N-able MailAssure’s LDAP to its Known Exploited Vulnerabilities catalog, noting active exploitation. CVE-2026-134624, scored 9.3, lets attackers force the server to request arbitrary internal resources, exposing data or enabling lateral movement. Administrators should apply the latest patch immediately and enforce LDAP restrictions to mitigate SSRF risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
+    "publishedAt": "2026-11-24T06:02:45.000Z",
+    "cves": [
+      "CVE-2026-134624"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-n-able-mailassure-ssrf-to-kev-catalog",
+      "article-79b8e120",
+      "79b8e120",
+      "cisa-adds-n-able-mailassure-ssrf-to-kev-catalog-55f90e"
+    ]
+  },
+  {
+    "slug": "openai-cisco-release-shirudo-to-shield-linux-until-1498088f",
+    "title": "OpenAI, Cisco Release Shirudo to Shield Linux Until Patches",
+    "summary": "OpenAI and Cisco released Shirudo, a Linux runtime that deploys temporary eBPF controls to block exploit behaviors while patches are pending. Shirudo generates small programs that intercept vulnerable system calls, preventing exploitation without rebooting and narrowing the exposure window. Deploy Shirudo on exposed hosts, monitor logs, and apply vendor patches promptly to eliminate the root flaw.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/cisco-openai-shirudo/",
+    "publishedAt": "2026-11-24T06:00:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-cisco-release-shirudo-to-shield-linux-until",
+      "article-1498088f",
+      "1498088f",
+      "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
+      "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
     "slug": "it-delegates-password-management-while-maintaining-599336a7",
     "title": "IT Delegates Password Management While Maintaining Control",
     "summary": "IT departments often delegate password management to business units, creating accounts that may be unknown to central security teams. This practice can leave IT responsible for credentials it cannot monitor, increasing risk when personnel changes or external contractors access shared accounts. Implementing centralized identity governance, enforcing least-privilege access, and requiring IT involvement in account provisioning can mitigate these risks.",
@@ -63,6 +194,24 @@ export const news: NewsBrief[] = [
       "article-81f307ba",
       "81f307ba",
       "red-hat-issues-important-skopeo-security-update-2ee174"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-tigervnc-update-for-rhel-8-6-f2a1fd5e",
+    "title": "Red Hat Releases Tigervnc Update for RHEL 8.6",
+    "summary": "Red Hat issued an important security update for the Tigervnc remote desktop server on RHEL 8.6 Advanced and Extended Update Support. The update addresses multiple vulnerabilities identified in Tigervnc, each assigned a CVSS base score and linked to CVE identifiers in the advisory references. Red Hat recommends applying the patch immediately to mitigate potential exploitation and maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102805",
+    "publishedAt": "2026-11-24T05:07:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-tigervnc-update-for-rhel-8-6",
+      "article-f2a1fd5e",
+      "f2a1fd5e",
+      "red-hat-releases-tigervnc-update-for-rhel-8-6-2ee174"
     ]
   },
   {
@@ -9237,190 +9386,6 @@ export const news: NewsBrief[] = [
       "6eac2975",
       "microsoft-acknowledges-cve-2026-97743-excel-disclo-7430f9",
       "microsoft-acknowledges-cve-2026-97743-excel-disclosure"
-    ]
-  },
-  {
-    "slug": "microsoft-net-exposes-information-via-cve-2026-586-afcfa1bb",
-    "title": "Microsoft .NET Exposes Information via CVE-2026-58649",
-    "summary": "Microsoft .NET Framework suffers an information disclosure flaw (CVE-2026-58649) that can leak sensitive data when processing untrusted input. The flaw stems from improper validation of configuration files, allowing attackers to read arbitrary files; no active exploitation reported, CVSS 5.0. Microsoft has issued an informational patch; administrators should apply the latest .NET update and review file permissions to mitigate exposure.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58649",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-58649"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-net-exposes-information-via-cve-2026-586",
-      "article-afcfa1bb",
-      "afcfa1bb",
-      "microsoft-net-exposes-information-via-cve-2026-586-7468e7",
-      "microsoft-net-exposes-information-via-cve-2026-58649"
-    ]
-  },
-  {
-    "slug": "windows-smb-client-elevation-vulnerability-cve-202-c09d7066",
-    "title": "Windows SMB Client Elevation Vulnerability CVE-2026-69544",
-    "summary": "Microsoft disclosed a Windows SMB Client elevation of privilege flaw, CVE-2026-69544, exploitable via crafted SMB traffic. The flaw stems from improper validation of SMB session parameters, enabling local users to gain higher privileges; no active exploitation has been reported. Microsoft issued an informational update; applying the latest patch mitigates the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69544",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-69544"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-smb-client-elevation-vulnerability-cve-202",
-      "article-c09d7066",
-      "c09d7066",
-      "windows-smb-client-elevation-vulnerability-cve-202-745a5e",
-      "windows-smb-client-elevation-vulnerability-cve-2026-69544"
-    ]
-  },
-  {
-    "slug": "excel-information-disclosure-cve-2026-88151-5274eaf4",
-    "title": "Excel Information Disclosure CVE-2026-88151",
-    "summary": "Microsoft Office Excel contains an information disclosure flaw (CVE-2026-88151) that could allow attackers to read sensitive data from documents via the API. The vulnerability arises from improper handling of metadata fields, but no exploitation evidence or public PoC exists. Microsoft has not released a patch; the issue remains an informational acknowledgement.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88151",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-88151"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "excel-information-disclosure-cve-2026-88151",
-      "article-5274eaf4",
-      "5274eaf4",
-      "excel-information-disclosure-cve-2026-88151-743eb3"
-    ]
-  },
-  {
-    "slug": "staterepository-api-info-disclosure-cve-2026-85910-6482ac57",
-    "title": "StateRepository API Info Disclosure CVE-2026-85910",
-    "summary": "Microsoft Windows StateRepository API contains an information disclosure flaw (CVE-2026-85910) that could expose configuration data to unauthenticated users. The flaw stems from inadequate input validation in the API, but no active exploitation or PoC has been reported. Microsoft has not issued a patch; the issue is currently an informational acknowledgement.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85910",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-85910"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "staterepository-api-info-disclosure-cve-2026-85910",
-      "article-6482ac57",
-      "6482ac57",
-      "staterepository-api-info-disclosure-cve-2026-85910-743ff2"
-    ]
-  },
-  {
-    "slug": "remote-access-service-info-disclosure-cve-2026-876-1970e5db",
-    "title": "Remote Access Service Info Disclosure CVE-2026-87698",
-    "summary": "Microsoft Windows Remote Access Service Infrastructure has an information disclosure vulnerability (CVE-2026-87698) that could allow attackers to read sensitive configuration data. The flaw results from improper sanitization of service metadata, but no exploitation evidence or public PoC is available. Microsoft has not released a patch; the issue remains an informational acknowledgement.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87698",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-87698"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "remote-access-service-info-disclosure-cve-2026-876",
-      "article-1970e5db",
-      "1970e5db",
-      "remote-access-service-info-disclosure-cve-2026-876-743f14",
-      "remote-access-service-info-disclosure-cve-2026-87698"
-    ]
-  },
-  {
-    "slug": "microsoft-addresses-bluetooth-driver-information-d-2a6a45dc",
-    "title": "Microsoft Addresses Bluetooth Driver Information Disclosure CVE",
-    "summary": "Microsoft has acknowledged CVE-2026-83760, an information-disclosure flaw in its Bluetooth driver. The vulnerability permits local users to read privileged data from the driver, but no active exploitation has been reported. Microsoft has released an update that mitigates the disclosure by correcting the driver’s improper handling of user-supplied data; users should apply the patch promptly.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83760",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-83760"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-addresses-bluetooth-driver-information-d",
-      "article-2a6a45dc",
-      "2a6a45dc",
-      "microsoft-addresses-bluetooth-driver-information-d-7440e2",
-      "microsoft-addresses-bluetooth-driver-information-disclosure-"
-    ]
-  },
-  {
-    "slug": "microsoft-patches-eaphost-privilege-escalation-cve-1fee5bc5",
-    "title": "Microsoft Patches EAPHost Privilege Escalation CVE",
-    "summary": "Microsoft has acknowledged CVE-2026-84016, an elevation-of-privilege flaw in the Windows EAPHost service. The vulnerability allows local users to gain administrative privileges by manipulating the EAPHost service’s configuration, but no active exploitation has been observed. Microsoft has issued a patch that corrects the configuration handling; users should install the update to prevent privilege escalation.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84016",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-84016"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patches-eaphost-privilege-escalation-cve",
-      "article-1fee5bc5",
-      "1fee5bc5",
-      "microsoft-patches-eaphost-privilege-escalation-cve-744088"
-    ]
-  },
-  {
-    "slug": "cve-2026-84020-rras-elevation-of-privilege-exploit-c545df88",
-    "title": "CVE-2026-84020: RRAS Elevation of Privilege Exploit",
-    "summary": "CVE-2026-84020 is an elevation-of-privilege flaw in Windows Routing and Remote Access Service (RRAS) that allows local attackers to gain administrative rights. The vulnerability stems from improper input validation in the RRAS configuration API, enabling unauthorized privilege escalation without authentication. Microsoft has released a patch in the latest cumulative update; administrators should apply it immediately to prevent exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84020",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-84020"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-84020-rras-elevation-of-privilege-exploit",
-      "article-c545df88",
-      "c545df88",
-      "cve-2026-84020-rras-elevation-of-privilege-exploit-744088"
-    ]
-  },
-  {
-    "slug": "cve-2026-85794-rras-information-disclosure-5c3872a3",
-    "title": "CVE-2026-85794: RRAS Information Disclosure",
-    "summary": "CVE-2026-85794 is an information-disclosure flaw in Windows Routing and Remote Access Service (RRAS) that can expose sensitive configuration data to local users. The defect arises from inadequate sanitization of RRAS logs, allowing attackers to read privileged information without authentication. Microsoft issued a patch in the latest cumulative update; users should install it promptly to mitigate data leakage.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85794",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-85794"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-85794-rras-information-disclosure",
-      "article-5c3872a3",
-      "5c3872a3",
-      "cve-2026-85794-rras-information-disclosure-743ff9"
     ]
   }
 ];
