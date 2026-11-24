@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 12:43:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 13:46:01 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>GTA 6 Hacker Sentenced, Released Same Day</title>
+      <link>https://secubuzz.com/news/gta-6-hacker-sentenced-released-same-day-3f92ee57</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gta-6-hacker-sentenced-released-same-day-3f92ee57</guid>
+      <description><![CDATA[A former Lapsus$ member, Arion Kurtaj, was sentenced to seven years for leaking Grand Theft Auto VI footage after a guilty plea. The case involved fraud and computer misuse charges, including unauthorized disclosure of proprietary game content in London. Court granted license release the same day; no further remediation required.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:35:37 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/gta-vi-hacker-sentenced-seven-years-released-on-licence/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Shirudo AI Tool Protects Unpatched Linux Systems</title>
+      <link>https://secubuzz.com/news/shirudo-ai-tool-protects-unpatched-linux-systems-fa91e5d3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/shirudo-ai-tool-protects-unpatched-linux-systems-fa91e5d3</guid>
+      <description><![CDATA[OpenAI and Cisco released Shirudo, an open-source Linux security tool that deploys temporary runtime protections to block exploitation of unpatched vulnerabilities. Shirudo leverages AI-driven heuristics to detect and mitigate exploitation attempts against known CVEs without requiring service restarts, addressing the gap before patch deployment. Administrators can deploy Shirudo immediately to shield systems, then apply official patches once available.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:34:23 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Codesys Visualization Vulnerabilities Pre-4.11.0.0 Advisory</title>
+      <link>https://secubuzz.com/news/codesys-visualization-vulnerabilities-pre-4-11-0-0-a5bd4129</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/codesys-visualization-vulnerabilities-pre-4-11-0-0-a5bd4129</guid>
+      <description><![CDATA[The Canadian Centre for Cyber Security issued advisory AV26-1199, warning that Codesys Visualization versions prior to 4.11.0.0 contain multiple vulnerabilities. These flaws could allow attackers to gain unauthorized access or execute arbitrary code within the visualization component, potentially compromising industrial control systems. Users should review the provided links and apply available updates or workarounds as soon as patches are released.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:23:33 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/control-systems-codesys-security-advisory-av26-1199">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>McDonald’s Japan Breach Reveals Purchase and Location Data</title>
+      <link>https://secubuzz.com/news/mcdonald-s-japan-breach-reveals-purchase-and-locat-61cd47bb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mcdonald-s-japan-breach-reveals-purchase-and-locat-61cd47bb</guid>
+      <description><![CDATA[McDonald’s Japan announced a cybersecurity breach that exposed customers’ purchase histories and mobile device location data. The incident involved unauthorized access to the company’s customer database, potentially compromising sensitive personal information for a large user base. The company is investigating the breach and has notified affected customers, while security teams should monitor for phishing or credential misuse.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:00:00 GMT</pubDate>
+      <source url="https://therecord.media/japan-mcdonalds-cyberattack-breach">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>SUSE Advises NeuVector Stack Buffer Overflow Vulnerabilities</title>
+      <link>https://secubuzz.com/news/suse-advises-neuvector-stack-buffer-overflow-vulne-93af351c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/suse-advises-neuvector-stack-buffer-overflow-vulne-93af351c</guid>
+      <description><![CDATA[SUSE reports stack buffer overflow vulnerabilities in NeuVector dataplane affecting versions prior to 5.7.0, 5.5.6, and 5.6.5, triggered by DLP/WAF rule limits. The 2048-byte overflow can corrupt memory and cause denial-of-service, but no remote code execution or active exploitation has been confirmed. Users should apply the SUSE update or upgrade NeuVector to a newer release to mitigate the DoS risk.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:59:47 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/suse-linux-security-advisory-av26-1198">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Bedrock Data Launches Intent-Aware AI Agent DLP</title>
       <link>https://secubuzz.com/news/bedrock-data-launches-intent-aware-ai-agent-dlp-b146ea2c</link>
@@ -44,6 +89,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Issues Critical Ruby 3.3 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-ruby-3-3-security-update-bc4fc911</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-ruby-3-3-security-update-bc4fc911</guid>
+      <description><![CDATA[Red Hat released a critical security update for the ruby:3.3 module on RHEL9, addressing multiple vulnerabilities. The update mitigates high-severity flaws, each with a CVSS base score detailed in the referenced CVE links, though no active exploitation has been reported. Administrators should apply the ruby:3.3 update immediately to prevent potential denial-of-service or privilege escalation attacks.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:10:55 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102869">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Important LibreOffice Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-libreoffice-security-upda-180d6662</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-libreoffice-security-upda-180d6662</guid>
+      <description><![CDATA[Red Hat released an important security update for LibreOffice on RHEL9.6 Extended Update Support, addressing several vulnerabilities. Each flaw carries a CVSS base score listed in the CVE references, though no active exploitation has been documented. Users should install the LibreOffice update promptly to mitigate potential denial-of-service or privilege escalation risks.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:10:44 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102888">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Infrastructure Vulnerabilities Highlight Systemic Fragility</title>
       <link>https://secubuzz.com/news/infrastructure-vulnerabilities-highlight-systemic-3b11aa68</link>
       <guid isPermaLink="true">https://secubuzz.com/news/infrastructure-vulnerabilities-highlight-systemic-3b11aa68</guid>
@@ -60,6 +123,15 @@
       <pubDate>Tue, 24 Nov 2026 12:04:37 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/24/azure-apim-vulnerability-credential-theft/">Help Net Security</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Google Researcher Exposes .NET Bit-Flip Code Integrity Bypass</title>
+      <link>https://secubuzz.com/news/google-researcher-exposes-net-bit-flip-code-integr-9d93c4f8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-researcher-exposes-net-bit-flip-code-integr-9d93c4f8</guid>
+      <description><![CDATA[A Google Project Zero researcher demonstrated that a single bit flip in .NET files bypasses Windows code integrity, allowing local attackers to run untrusted code. The flaw also bypassed VirtualBox process hardening on Windows and is tracked as CVE-2026-87268, exposing local privilege escalation. Administrators should update .NET Framework to the latest patch or apply vendor mitigations to prevent exploitation.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:02:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html">The Hacker News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>KEPCO Data Breach Exposes 1.5 Million Personal Records</title>
@@ -95,6 +167,24 @@
       <description><![CDATA[A critical flaw in the ruby:4.0 module for Red Hat Enterprise Linux 9 triggered an urgent security update. The vulnerability, rated with a high CVSS score, permits remote code execution via the Ruby interpreter and is linked to several CVEs. Red Hat released the patch in RHSA-2026-102883; users must apply it immediately to mitigate the risk.]]></description>
       <pubDate>Tue, 24 Nov 2026 11:24:12 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102883">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Researchers Plant Secrets in AI Prompts; Attackers Discover Them</title>
+      <link>https://secubuzz.com/news/researchers-plant-secrets-in-ai-prompts-attackers-2a9c27cc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/researchers-plant-secrets-in-ai-prompts-attackers-2a9c27cc</guid>
+      <description><![CDATA[Researchers embedded Amazon access keys into AI prompt templates, which attackers later located and tested against AWS accounts. The key leakage exploited prompt injection, enabling attackers to validate credentials in real time; no confirmed account takeover was reported. Affected organizations should rotate exposed keys, audit prompt usage, and enforce strict secrets management to mitigate future leaks.]]></description>
+      <pubDate>Tue, 24 Nov 2026 11:21:42 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/11/researchers-planted-secrets-in-ai-prompts-attackers-found-them">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Important Update for Container Tool Suite</title>
+      <link>https://secubuzz.com/news/red-hat-releases-important-update-for-container-to-8b2b6753</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-important-update-for-container-to-8b2b6753</guid>
+      <description><![CDATA[Red Hat issued a security update for buildah, conmon, containernetworking-plugins, containers-common, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, runc, skopeo, and slirp4netns on Enterprise Linux 9.6 EUS. The update addresses multiple vulnerabilities with CVSS scores in the Important range, mitigating potential container escape or privilege escalation risks. Administrators should apply the RHSA-2026:102529 package updates immediately to secure container runtimes and associated networking components.]]></description>
+      <pubDate>Tue, 24 Nov 2026 11:15:24 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102529">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -185,6 +275,15 @@
       <description><![CDATA[According to a filing with the U.S. Securities and Exchange Commission (SEC), parent company iQSTEL said GlobeTopper detected the intrusion on October 22 and took the platform offline the next morning after spotting further unauthorized activity.]]></description>
       <pubDate>Tue, 24 Nov 2026 09:33:33 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/24/globetopper-breach-gift-cards/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Suzlon Reports Cyber Incident, No Impact on Critical Systems</title>
+      <link>https://secubuzz.com/news/suzlon-reports-cyber-incident-no-impact-on-critica-b97d31b8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/suzlon-reports-cyber-incident-no-impact-on-critica-b97d31b8</guid>
+      <description><![CDATA[Suzlon Energy disclosed a cyber incident on November 23, 2026, claiming no disruption to its wind turbine control or business-critical applications. The company activated incident response procedures, limited potential impact, and notified Indian regulatory authorities, indicating containment of the event. Stakeholders should review Suzlon’s incident response documentation and ensure continued monitoring of operational technology networks.]]></description>
+      <pubDate>Tue, 24 Nov 2026 09:28:06 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/suzlon-energy-cyberattack/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -356,105 +455,6 @@
       <description><![CDATA[A critical PHP update is released for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, fixing runtime vulnerabilities. The patch addresses multiple high-severity flaws that could enable remote code execution or privilege escalation, though CVE IDs are not listed. Red Hat advises applying RHSA-2026:102847 immediately via the Customer Portal or using yum/dnf to install the updated PHP package.]]></description>
       <pubDate>Tue, 24 Nov 2026 07:50:53 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102847">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Hackers Access 3,392 Accounts, Decrypt 50 SSH Keys</title>
-      <link>https://secubuzz.com/news/ai-hackers-access-3-392-accounts-decrypt-50-ssh-ke-f102eb77</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-hackers-access-3-392-accounts-decrypt-50-ssh-ke-f102eb77</guid>
-      <description><![CDATA[An attacker employing the CyberStrikeAI framework accessed 3,392 user accounts and active session tokens during a four-day cloud intrusion at two AWS accounts and seven EKS clusters in October 2026. The operator also decrypted a bastion host database, recovering 50 SSH private keys, exposing critical credentials. Security teams should isolate affected accounts, rotate credentials, and investigate the breach.]]></description>
-      <pubDate>Tue, 24 Nov 2026 07:47:50 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ai-powered-hackers/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Top Attack Path Management Tools Ranked for 2026</title>
-      <link>https://secubuzz.com/news/top-attack-path-management-tools-ranked-for-2026-2ec886b3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-attack-path-management-tools-ranked-for-2026-2ec886b3</guid>
-      <description><![CDATA[Cyber Security News evaluated defensive tools, ranking the top ten attack path management solutions available in 2026. These tools analyze complex attack chains by converting vulnerability lists into graphs mapping misconfigurations, excessive permissions, and credential reuse. Security teams can deploy attack path management software to identify critical choke points and remediate high-risk operational vectors efficiently.]]></description>
-      <pubDate>Tue, 24 Nov 2026 07:46:17 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-attack-path-management/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Plant Backdoors in 6 WordPress Plugins to Steal Passwords and Take Over Websites</title>
-      <link>https://secubuzz.com/news/hackers-plant-backdoors-in-6-wordpress-plugins-to-1ee8819b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-plant-backdoors-in-6-wordpress-plugins-to-1ee8819b</guid>
-      <description><![CDATA[Hackers planted a remote-control backdoor in nine versions of six WordPress plugins from WP connect on November 22, 2026. The malware could let an attacker steal password hashes, run commands, and take over a website. But WordPress.org blocked the tainted versions before distributing them and closed all six plugins that evening.]]></description>
-      <pubDate>Tue, 24 Nov 2026 07:33:08 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/backdoors-in-6-wordpress-plugins/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Elecbrakes Bluetooth Flaw Enables Remote Brake Control</title>
-      <link>https://secubuzz.com/news/elecbrakes-bluetooth-flaw-enables-remote-brake-con-1f770d18</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/elecbrakes-bluetooth-flaw-enables-remote-brake-con-1f770d18</guid>
-      <description><![CDATA[A critical Bluetooth flaw in Elecbrakes trailer brake controllers, CVE-2026-96805, lets attackers within range manipulate brakes without pairing. Rated 9.6 CVSS, the flaw exploits command injection in Bluetooth, enabling unauthenticated remote brake control. Manufacturers should push firmware updates disabling unsecured Bluetooth commands; users must avoid exposing controllers to untrusted devices until patched.]]></description>
-      <pubDate>Tue, 24 Nov 2026 07:21:45 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-bluetooth-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important Security Update for MariaDB</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-security-update-for-maria-9b915824</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-security-update-for-maria-9b915824</guid>
-      <description><![CDATA[Red Hat released a security update addressing security flaws in the mariadb:11.8 module for Red Hat Enterprise Linux 9. Red Hat Product Security rated the operational impact of these vulnerabilities as Important based on Common Vulnerability Scoring System metrics. System administrators should apply the RHSA-2026:102830 advisory updates to mitigate potential exploitation risks across enterprise RHEL environments.]]></description>
-      <pubDate>Tue, 24 Nov 2026 07:08:30 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102830">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important WebKit2GTK3 Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-webkit2gtk3-update-778a739a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-webkit2gtk3-update-778a739a</guid>
-      <description><![CDATA[Red Hat released an important security update for webkit2gtk3 on RHEL 9.2 for SAP Solutions. The patch addresses undisclosed vulnerabilities that could enable code execution or system compromise, with CVSS scores linked in the CVE references and mitigate potential privilege escalation. Administrators should apply the update immediately to eliminate the exploitation vector.]]></description>
-      <pubDate>Tue, 24 Nov 2026 07:07:29 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102838">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Compromise Check Point Management Servers</title>
-      <link>https://secubuzz.com/news/hackers-compromise-check-point-management-servers-360328a1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-compromise-check-point-management-servers-360328a1</guid>
-      <description><![CDATA[Hackers have compromised Check Point Security Management Servers, which store firewall rule sets that govern corporate traffic filtering. The ongoing campaign has affected at least 22 organizations worldwide, and attackers retain active access to many servers, exposing critical network controls. Check Point recommends applying the latest firmware patches, disabling unused management interfaces, and monitoring for anomalous configuration changes.]]></description>
-      <pubDate>Tue, 24 Nov 2026 07:03:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/check-point-security-management-servers/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Cloud CISO Discusses Agentic AI in SOC</title>
-      <link>https://secubuzz.com/news/google-cloud-ciso-discusses-agentic-ai-in-soc-f18561ce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-cloud-ciso-discusses-agentic-ai-in-soc-f18561ce</guid>
-      <description><![CDATA[Google Cloud CISO Chris Betz spoke about agentic AI in security operations during a Help Net Security interview. He noted that automation lets attackers traverse networks in minutes, questioned junior analyst roles, and urged reassessment of controls and board oversight. Betz advised organizations to evolve SOC workflows with AI-driven threat hunting and governance to counter increasingly stealthy espionage groups.]]></description>
-      <pubDate>Tue, 24 Nov 2026 07:00:16 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/chris-betz-google-agentic-ai-security/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ransomware Groups Multiply Despite Fewer Victim Payments</title>
-      <link>https://secubuzz.com/news/ransomware-groups-multiply-despite-fewer-victim-pa-db29ac26</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-groups-multiply-despite-fewer-victim-pa-db29ac26</guid>
-      <description><![CDATA[Check Point Research’s State of Ransomware Q3 2026 report lists 2,830 victims on data-leak sites, the highest quarterly total on record. July, August, and September accounted for 964, 1,042, and 824 victims respectively, indicating a sustained expansion of active ransomware groups. The report shows declining payments but continued brand proliferation, stressing the need for stronger defensive measures.]]></description>
-      <pubDate>Tue, 24 Nov 2026 06:30:26 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/check-point-ransomware-attacks-q3-2026-report/">Help Net Security</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>AWS European Sovereign Cloud: Architecture and Compliance Overview</title>
-      <link>https://secubuzz.com/news/aws-european-sovereign-cloud-architecture-and-comp-1475af38</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aws-european-sovereign-cloud-architecture-and-comp-1475af38</guid>
-      <description><![CDATA[AWS European Sovereign Cloud offers infrastructure designed to meet European data sovereignty requirements, providing isolated regions and compliance with local regulations. The architecture provides physical and logical separation, encryption controls, and audit capabilities, enabling organizations to retain full data control while leveraging AWS services. Customers can evaluate the platform against certifications and compliance frameworks to determine suitability for sensitive workloads.]]></description>
-      <pubDate>Tue, 24 Nov 2026 06:15:37 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/aws-european-sovereign-cloud-details/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Cockpit Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-cockpit-security-update-bbd94913</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-cockpit-security-update-bbd94913</guid>
-      <description><![CDATA[Red Hat issued an Important security update for the cockpit component on Enterprise Linux 9.4 Update Services for SAP Solutions. The advisory cites several CVEs with CVSS scores, but no specific CVE ID is listed. Administrators should apply the cockpit update immediately to mitigate the identified vulnerabilities and consult the CVE links for detailed impact.]]></description>
-      <pubDate>Tue, 24 Nov 2026 06:12:17 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102813">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

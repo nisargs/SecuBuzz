@@ -11,6 +11,99 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "gta-6-hacker-sentenced-released-same-day-3f92ee57",
+    "title": "GTA 6 Hacker Sentenced, Released Same Day",
+    "summary": "A former Lapsus$ member, Arion Kurtaj, was sentenced to seven years for leaking Grand Theft Auto VI footage after a guilty plea. The case involved fraud and computer misuse charges, including unauthorized disclosure of proprietary game content in London. Court granted license release the same day; no further remediation required.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/gta-vi-hacker-sentenced-seven-years-released-on-licence/",
+    "publishedAt": "2026-11-24T13:35:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gta-6-hacker-sentenced-released-same-day",
+      "article-3f92ee57",
+      "3f92ee57",
+      "gta-6-hacker-sentenced-released-same-day-38e906"
+    ]
+  },
+  {
+    "slug": "shirudo-ai-tool-protects-unpatched-linux-systems-fa91e5d3",
+    "title": "Shirudo AI Tool Protects Unpatched Linux Systems",
+    "summary": "OpenAI and Cisco released Shirudo, an open-source Linux security tool that deploys temporary runtime protections to block exploitation of unpatched vulnerabilities. Shirudo leverages AI-driven heuristics to detect and mitigate exploitation attempts against known CVEs without requiring service restarts, addressing the gap before patch deployment. Administrators can deploy Shirudo immediately to shield systems, then apply official patches once available.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/",
+    "publishedAt": "2026-11-24T13:34:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "shirudo-ai-tool-protects-unpatched-linux-systems",
+      "article-fa91e5d3",
+      "fa91e5d3",
+      "shirudo-ai-tool-protects-unpatched-linux-systems-5c4b77"
+    ]
+  },
+  {
+    "slug": "codesys-visualization-vulnerabilities-pre-4-11-0-0-a5bd4129",
+    "title": "Codesys Visualization Vulnerabilities Pre-4.11.0.0 Advisory",
+    "summary": "The Canadian Centre for Cyber Security issued advisory AV26-1199, warning that Codesys Visualization versions prior to 4.11.0.0 contain multiple vulnerabilities. These flaws could allow attackers to gain unauthorized access or execute arbitrary code within the visualization component, potentially compromising industrial control systems. Users should review the provided links and apply available updates or workarounds as soon as patches are released.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/control-systems-codesys-security-advisory-av26-1199",
+    "publishedAt": "2026-11-24T13:23:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "codesys-visualization-vulnerabilities-pre-4-11-0-0",
+      "article-a5bd4129",
+      "a5bd4129",
+      "codesys-visualization-vulnerabilities-pre-4-11-0-0-3684ae",
+      "codesys-visualization-vulnerabilities-pre-4-11-0-0-advisory"
+    ]
+  },
+  {
+    "slug": "mcdonald-s-japan-breach-reveals-purchase-and-locat-61cd47bb",
+    "title": "McDonald’s Japan Breach Reveals Purchase and Location Data",
+    "summary": "McDonald’s Japan announced a cybersecurity breach that exposed customers’ purchase histories and mobile device location data. The incident involved unauthorized access to the company’s customer database, potentially compromising sensitive personal information for a large user base. The company is investigating the breach and has notified affected customers, while security teams should monitor for phishing or credential misuse.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/japan-mcdonalds-cyberattack-breach",
+    "publishedAt": "2026-11-24T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mcdonald-s-japan-breach-reveals-purchase-and-locat",
+      "article-61cd47bb",
+      "61cd47bb",
+      "mcdonald-s-japan-breach-reveals-purchase-and-locat-3b6181",
+      "mcdonald-s-japan-breach-reveals-purchase-and-location-data"
+    ]
+  },
+  {
+    "slug": "suse-advises-neuvector-stack-buffer-overflow-vulne-93af351c",
+    "title": "SUSE Advises NeuVector Stack Buffer Overflow Vulnerabilities",
+    "summary": "SUSE reports stack buffer overflow vulnerabilities in NeuVector dataplane affecting versions prior to 5.7.0, 5.5.6, and 5.6.5, triggered by DLP/WAF rule limits. The 2048-byte overflow can corrupt memory and cause denial-of-service, but no remote code execution or active exploitation has been confirmed. Users should apply the SUSE update or upgrade NeuVector to a newer release to mitigate the DoS risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/suse-linux-security-advisory-av26-1198",
+    "publishedAt": "2026-11-24T12:59:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "suse-advises-neuvector-stack-buffer-overflow-vulne",
+      "article-93af351c",
+      "93af351c",
+      "suse-advises-neuvector-stack-buffer-overflow-vulne-59d0d1",
+      "suse-advises-neuvector-stack-buffer-overflow-vulnerabilities"
+    ]
+  },
+  {
     "slug": "bedrock-data-launches-intent-aware-ai-agent-dlp-b146ea2c",
     "title": "Bedrock Data Launches Intent-Aware AI Agent DLP",
     "summary": "Bedrock Data launched Agent DLP, a runtime data loss prevention tool that infers user intent and evaluates AI agent actions against policy. The tool weighs intent and behavior, enabling continued AI agent use while protecting sensitive data across tool and LLM calls. It also supports off-the-shelf integrations and offers a policy enforcement framework for AI workflows.",
@@ -84,6 +177,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-critical-ruby-3-3-security-update-bc4fc911",
+    "title": "Red Hat Issues Critical Ruby 3.3 Security Update",
+    "summary": "Red Hat released a critical security update for the ruby:3.3 module on RHEL9, addressing multiple vulnerabilities. The update mitigates high-severity flaws, each with a CVSS base score detailed in the referenced CVE links, though no active exploitation has been reported. Administrators should apply the ruby:3.3 update immediately to prevent potential denial-of-service or privilege escalation attacks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102869",
+    "publishedAt": "2026-11-24T12:10:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-ruby-3-3-security-update",
+      "article-bc4fc911",
+      "bc4fc911",
+      "red-hat-issues-critical-ruby-3-3-security-update-2ee175"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-libreoffice-security-upda-180d6662",
+    "title": "Red Hat Issues Important LibreOffice Security Update",
+    "summary": "Red Hat released an important security update for LibreOffice on RHEL9.6 Extended Update Support, addressing several vulnerabilities. Each flaw carries a CVSS base score listed in the CVE references, though no active exploitation has been documented. Users should install the LibreOffice update promptly to mitigate potential denial-of-service or privilege escalation risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102888",
+    "publishedAt": "2026-11-24T12:10:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-libreoffice-security-upda",
+      "article-180d6662",
+      "180d6662",
+      "red-hat-issues-important-libreoffice-security-upda-2ee175",
+      "red-hat-issues-important-libreoffice-security-update"
+    ]
+  },
+  {
     "slug": "infrastructure-vulnerabilities-highlight-systemic-3b11aa68",
     "title": "Infrastructure Vulnerabilities Highlight Systemic Fragility",
     "summary": "Schneier's essay examines how America’s critical infrastructure remains fragile due to aging systems, piecemeal patching, and hobbyist maintenance. The author argues that centralization and incremental upgrades create a single point of failure, causing widespread outages when components fail. The piece calls for systemic investment and coordinated security practices to reduce the risk of cascading infrastructure breakdowns.",
@@ -119,6 +249,27 @@ export const news: NewsBrief[] = [
       "770aa984",
       "azure-api-management-flaw-used-to-steal-credential-3bd7d5",
       "azure-api-management-flaw-used-to-steal-credentials"
+    ]
+  },
+  {
+    "slug": "google-researcher-exposes-net-bit-flip-code-integr-9d93c4f8",
+    "title": "Google Researcher Exposes .NET Bit-Flip Code Integrity Bypass",
+    "summary": "A Google Project Zero researcher demonstrated that a single bit flip in .NET files bypasses Windows code integrity, allowing local attackers to run untrusted code. The flaw also bypassed VirtualBox process hardening on Windows and is tracked as CVE-2026-87268, exposing local privilege escalation. Administrators should update .NET Framework to the latest patch or apply vendor mitigations to prevent exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+    "publishedAt": "2026-11-24T12:02:00.000Z",
+    "cves": [
+      "CVE-2026-87268"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "google-researcher-exposes-net-bit-flip-code-integr",
+      "article-9d93c4f8",
+      "9d93c4f8",
+      "google-researcher-exposes-net-bit-flip-code-integr-54b258",
+      "google-researcher-exposes-net-bit-flip-code-integrity-bypass"
     ]
   },
   {
@@ -194,6 +345,44 @@ export const news: NewsBrief[] = [
       "article-dc67e712",
       "dc67e712",
       "red-hat-issues-critical-update-for-ruby-4-0-2ee175"
+    ]
+  },
+  {
+    "slug": "researchers-plant-secrets-in-ai-prompts-attackers-2a9c27cc",
+    "title": "Researchers Plant Secrets in AI Prompts; Attackers Discover Them",
+    "summary": "Researchers embedded Amazon access keys into AI prompt templates, which attackers later located and tested against AWS accounts. The key leakage exploited prompt injection, enabling attackers to validate credentials in real time; no confirmed account takeover was reported. Affected organizations should rotate exposed keys, audit prompt usage, and enforce strict secrets management to mitigate future leaks.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/researchers-planted-secrets-in-ai-prompts-attackers-found-them",
+    "publishedAt": "2026-11-24T11:21:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researchers-plant-secrets-in-ai-prompts-attackers",
+      "article-2a9c27cc",
+      "2a9c27cc",
+      "researchers-plant-secrets-in-ai-prompts-attackers-452144",
+      "researchers-plant-secrets-in-ai-prompts-attackers-discover-t"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-important-update-for-container-to-8b2b6753",
+    "title": "Red Hat Releases Important Update for Container Tool Suite",
+    "summary": "Red Hat issued a security update for buildah, conmon, containernetworking-plugins, containers-common, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, runc, skopeo, and slirp4netns on Enterprise Linux 9.6 EUS. The update addresses multiple vulnerabilities with CVSS scores in the Important range, mitigating potential container escape or privilege escalation risks. Administrators should apply the RHSA-2026:102529 package updates immediately to secure container runtimes and associated networking components.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102529",
+    "publishedAt": "2026-11-24T11:15:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-important-update-for-container-to",
+      "article-8b2b6753",
+      "8b2b6753",
+      "red-hat-releases-important-update-for-container-to-2ee169",
+      "red-hat-releases-important-update-for-container-tool-suite"
     ]
   },
   {
@@ -382,6 +571,25 @@ export const news: NewsBrief[] = [
       "cf27e5da",
       "globetopper-faces-up-to-2-5-million-in-lost-revenu-225ebb",
       "globetopper-faces-up-to-2-5-million-in-lost-revenue-after-ha"
+    ]
+  },
+  {
+    "slug": "suzlon-reports-cyber-incident-no-impact-on-critica-b97d31b8",
+    "title": "Suzlon Reports Cyber Incident, No Impact on Critical Systems",
+    "summary": "Suzlon Energy disclosed a cyber incident on November 23, 2026, claiming no disruption to its wind turbine control or business-critical applications. The company activated incident response procedures, limited potential impact, and notified Indian regulatory authorities, indicating containment of the event. Stakeholders should review Suzlon’s incident response documentation and ensure continued monitoring of operational technology networks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/suzlon-energy-cyberattack/",
+    "publishedAt": "2026-11-24T09:28:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "suzlon-reports-cyber-incident-no-impact-on-critica",
+      "article-b97d31b8",
+      "b97d31b8",
+      "suzlon-reports-cyber-incident-no-impact-on-critica-54a08c",
+      "suzlon-reports-cyber-incident-no-impact-on-critical-systems"
     ]
   },
   {
@@ -9122,277 +9330,6 @@ export const news: NewsBrief[] = [
       "article-6326d3e0",
       "6326d3e0",
       "kpmg-canada-breach-exposes-client-tax-documents-64d9c2"
-    ]
-  },
-  {
-    "slug": "usn-9182-1-nginx-vulnerabilities-a8c3fe4e",
-    "title": "USN-9182-1: nginx vulnerabilities",
-    "summary": "A remote attacker could possibly use this issue to cause nginx to crash, resulting in a denial of service. (CVE-2026-125283) Vivek Parikh discovered that nginx did not correctly handle parsing certain ClientHello messages. This issue was only addressed in Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu 24.04 LTS. (CVE-2026-123640) It was discovered that nginx did not correctly handle certain TLS connections.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9182-1",
-    "publishedAt": "2026-11-20T03:15:31.000Z",
-    "cves": [
-      "CVE-2026-125283",
-      "CVE-2026-123640",
-      "CVE-2026-118899"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9182-1-nginx-vulnerabilities",
-      "article-a8c3fe4e",
-      "a8c3fe4e",
-      "usn-9182-1-nginx-vulnerabilities-7e77f9"
-    ]
-  },
-  {
-    "slug": "usn-9181-1-openjdk-8-vulnerabilities-bc5bc842",
-    "title": "USN-9181-1: OpenJDK 8 vulnerabilities",
-    "summary": "A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 8 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114946) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9181-1",
-    "publishedAt": "2026-11-20T02:42:46.000Z",
-    "cves": [
-      "CVE-2026-114939",
-      "CVE-2026-114946",
-      "CVE-2026-114940",
-      "CVE-2026-114943",
-      "CVE-2026-114944"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9181-1-openjdk-8-vulnerabilities",
-      "article-bc5bc842",
-      "bc5bc842",
-      "usn-9181-1-openjdk-8-vulnerabilities-7e77fd"
-    ]
-  },
-  {
-    "slug": "crac-jdk-21-vulnerabilities-expose-rce-and-dos-ris-df412a2b",
-    "title": "CRaC JDK 21 Vulnerabilities Expose RCE and DoS Risks",
-    "summary": "CVE-2026-114938 through CVE-2026-114941 affect CRaC JDK 21 components, allowing remote attackers to trigger denial-of-service or execute arbitrary code. The flaws arise from improper input validation, authentication, and authorization in compiler, JGSS, JSSE, and library modules, exposing sensitive data. Oracle released patches for JDK 21; administrators should apply the latest update or use the provided work-around to mitigate the vulnerabilities.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9179-1",
-    "publishedAt": "2026-11-20T02:36:27.000Z",
-    "cves": [
-      "CVE-2026-114938",
-      "CVE-2026-114941"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "crac-jdk-21-vulnerabilities-expose-rce-and-dos-ris",
-      "article-df412a2b",
-      "df412a2b",
-      "crac-jdk-21-vulnerabilities-expose-rce-and-dos-ris-7e7853",
-      "crac-jdk-21-vulnerabilities-expose-rce-and-dos-risks"
-    ]
-  },
-  {
-    "slug": "usn-9178-1-crac-jdk-17-vulnerabilities-05e93fd6",
-    "title": "USN-9178-1: CRaC JDK 17 vulnerabilities",
-    "summary": "A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of CRaC JDK 17 did not correctly authorize users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114820) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9178-1",
-    "publishedAt": "2026-11-20T02:36:11.000Z",
-    "cves": [
-      "CVE-2026-114939",
-      "CVE-2026-114820",
-      "CVE-2026-114938",
-      "CVE-2026-114940",
-      "CVE-2026-114942",
-      "CVE-2026-114943",
-      "CVE-2026-114944",
-      "CVE-2026-114945",
-      "CVE-2026-114946",
-      "CVE-2026-83374",
-      "CVE-2026-83376",
-      "CVE-2026-83380",
-      "CVE-2026-83381",
-      "CVE-2026-83387",
-      "CVE-2026-83395",
-      "CVE-2026-83400",
-      "CVE-2026-87290",
-      "CVE-2026-87292",
-      "CVE-2026-87294",
-      "CVE-2026-87367",
-      "CVE-2026-91332",
-      "CVE-2026-91334",
-      "CVE-2026-91335",
-      "CVE-2026-91373",
-      "CVE-2026-91374",
-      "CVE-2026-91375",
-      "CVE-2026-91379",
-      "CVE-2026-91380",
-      "CVE-2026-91382",
-      "CVE-2026-91394",
-      "CVE-2026-91397",
-      "CVE-2026-91398",
-      "CVE-2026-91400",
-      "CVE-2026-91403",
-      "CVE-2026-91410",
-      "CVE-2026-91415",
-      "CVE-2026-91418",
-      "CVE-2026-91451",
-      "CVE-2026-91452",
-      "CVE-2026-91453",
-      "CVE-2026-91461",
-      "CVE-2026-91462",
-      "CVE-2026-91463",
-      "CVE-2026-91464",
-      "CVE-2026-91487",
-      "CVE-2026-101516"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9178-1-crac-jdk-17-vulnerabilities",
-      "article-05e93fd6",
-      "05e93fd6",
-      "usn-9178-1-crac-jdk-17-vulnerabilities-7e7857"
-    ]
-  },
-  {
-    "slug": "ubuntu-patches-multiple-flaws-in-crac-jdk-25-42713894",
-    "title": "Ubuntu Patches Multiple Flaws in CRaC JDK 25",
-    "summary": "Ubuntu released security updates addressing multiple vulnerabilities across the Compiler, JGSS, and JSSE components of CRaC JDK 25. The defects, including CVE-2026-114938, stem from improper input handling, authentication failures, and authorization bypasses that allow remote arbitrary code execution and data access. Administrators should apply updated JDK packages provided under Ubuntu Security Notice USN-9180-1 to eliminate exploitation risks.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9180-1",
-    "publishedAt": "2026-11-20T02:34:22.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-patches-multiple-flaws-in-crac-jdk-25",
-      "article-42713894",
-      "42713894",
-      "ubuntu-patches-multiple-flaws-in-crac-jdk-25-7e7801"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-podcast-friday-nov-20-f7652e64",
-    "title": "ISC Stormcast Podcast - Friday, Nov 20",
-    "summary": "The SANS Internet Storm Center published its Friday Stormcast podcast on November 20, 2026, featuring a discussion of emerging threat trends and recent cyber incidents. The episode includes analysis of malware campaigns, phishing tactics, and defensive recommendations for security teams. Listeners can access the full recording and transcript via the ISC website under the Creative Commons license.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33538",
-    "publishedAt": "2026-11-20T02:00:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-podcast-friday-nov-20",
-      "article-f7652e64",
-      "f7652e64",
-      "isc-stormcast-podcast-friday-nov-20-57dd81"
-    ]
-  },
-  {
-    "slug": "nginx2root-five-new-nginx-vulnerabilities-and-how-3b075a0f",
-    "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
-    "summary": "Five memory corruption bugs in nginx, called nginx2root, can let an unauthenticated attacker run code on a server. Here’s how they work, and why origins behind Cloudflare's proxy are shielded from the most serious of these bugs.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/nginx2root/",
-    "publishedAt": "2026-11-20T01:58:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nginx2root-five-new-nginx-vulnerabilities-and-how",
-      "article-3b075a0f",
-      "3b075a0f",
-      "nginx2root-five-new-nginx-vulnerabilities-and-how-5a9547",
-      "nginx2root-five-new-nginx-vulnerabilities-and-how-cloudflare"
-    ]
-  },
-  {
-    "slug": "cleared-windows-event-logs-retain-forensic-evtx-ev-88123b4a",
-    "title": "Cleared Windows Event Logs Retain Forensic EVTX Evidence",
-    "summary": "Arctic Wolf incident response analysts found that clearing a Windows Event Log does not erase the underlying EVTX file. Instead, the supposedly cleared events remain recoverable within that same file, preserving forensic artifacts for investigators. Defenders should parse EVTX records directly rather than relying only on the 'Event log cleared' record when reconstructing activity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/blog/windows-event-log-cleared-think-outside-the-box/",
-    "publishedAt": "2026-11-20T01:24:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cleared-windows-event-logs-retain-forensic-evtx-ev",
-      "article-88123b4a",
-      "88123b4a",
-      "cleared-windows-event-logs-retain-forensic-evtx-ev-5b2eeb",
-      "cleared-windows-event-logs-retain-forensic-evtx-evidence"
-    ]
-  },
-  {
-    "slug": "windows-11-narrator-zero-day-bypasses-bitlocker-38f54851",
-    "title": "Windows 11 Narrator Zero-Day Bypasses BitLocker",
-    "summary": "Microsoft disclosed a Windows 11 zero-day, FastUnlock, allowing a physical attacker to bypass the Narrator lock-screen and run code. The flaw permits local code execution on a locked PC, exposing it even with BitLocker enabled, but does not decrypt the drive. Microsoft released a patch in the November 2026 cumulative update; users should install it promptly.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/windows-11-narrator-lock-screen-0-day/",
-    "publishedAt": "2026-11-20T01:00:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-11-narrator-zero-day-bypasses-bitlocker",
-      "article-38f54851",
-      "38f54851",
-      "windows-11-narrator-zero-day-bypasses-bitlocker-181cc8"
-    ]
-  },
-  {
-    "slug": "pyjwt-flaw-enables-token-revocation-check-bypasses-1e2cd4f6",
-    "title": "PyJWT Flaw Enables Token Revocation Check Bypasses",
-    "summary": "Ubuntu issued a security notice addressing a cryptographic verification vulnerability discovered within the PyJWT Python library. The library improperly accepts non-canonical encodings of token signature segments, enabling remote attackers to bypass token revocation checks. Administrators should immediately deploy updated PyJWT packages distributed via Ubuntu Security Notice USN-9177-1 to mitigate unauthorized access risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9177-1",
-    "publishedAt": "2026-11-20T00:45:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pyjwt-flaw-enables-token-revocation-check-bypasses",
-      "article-1e2cd4f6",
-      "1e2cd4f6",
-      "pyjwt-flaw-enables-token-revocation-check-bypasses-7e785b"
-    ]
-  },
-  {
-    "slug": "china-linked-hackers-exploited-vmware-vcenter-zero-66c94797",
-    "title": "China-Linked Hackers Exploited VMware vCenter Zero-Day Since September",
-    "summary": "China-linked attackers exploited a VMware vCenter Server zero-day authentication bypass since September 2026, compromising administrative access across worldwide instances. The flaw enables unauthenticated remote code execution and VM data exfiltration without a public proof-of-concept. Broadcom patched vCenter on November 19, 2026; administrators must apply updates immediately and enforce least-privilege API controls. The flaw is tracked as CVE-2026-123890.",
-    "category": "Nation State",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
-    "publishedAt": "2026-11-20T00:26:25.000Z",
-    "cves": [
-      "CVE-2026-123890"
-    ],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-vmware-vcenter-0-day/"
-      }
-    ],
-    "aliases": [
-      "china-linked-hackers-exploited-vmware-vcenter-zero",
-      "article-66c94797",
-      "66c94797",
-      "china-linked-hackers-exploited-vmware-vcenter-zero-777544",
-      "china-linked-hackers-exploited-vmware-vcenter-zero-day-since"
     ]
   }
 ];
