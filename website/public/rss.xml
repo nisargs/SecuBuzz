@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 18:45:48 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 19:45:42 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-135614 - Sensitive data redaction bypass in the troubleshooting tool in Amazon ECS MCP Server</title>
+      <link>https://secubuzz.com/news/cve-2026-135614-sensitive-data-redaction-bypass-in-c7149bd2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-135614-sensitive-data-redaction-bypass-in-c7149bd2</guid>
+      <description><![CDATA[Bulletin ID: 2026-200-AWS Publication Date: 11/24/2026 11:00 AM PST Description: Amazon ECS MCP Server is an open-source Model Context Protocol server that lets AI agents and assistants manage and troubleshoot Amazon ECS workloads using the operator's AWS credentials. We identified CVE-2026-135614, an issue in the troubleshooting tool of the Amazon ECS MCP Server (awslabs.ecs-mcp-server) before 0.1.36.]]></description>
+      <pubDate>Tue, 24 Nov 2026 19:27:19 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-200-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>CVE-2026-135414 - Server-side request forgery in snapshot repository registration in Amazon OpenSearch Service</title>
+      <link>https://secubuzz.com/news/cve-2026-135414-server-side-request-forgery-in-sna-3f6f69aa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-135414-server-side-request-forgery-in-sna-3f6f69aa</guid>
+      <description><![CDATA[Bulletin ID: 2026-201-AWS Publication Date: 11/24/2026 11:15 AM PST Description: Amazon OpenSearch Service is a managed service for deploying, operating, and scaling OpenSearch clusters in the AWS Cloud. We identified CVE-2026-135414, an issue in snapshot repository registration in Amazon OpenSearch Service.]]></description>
+      <pubDate>Tue, 24 Nov 2026 19:27:19 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-201-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>CVE-2026-134066 - Query injection via schema-derived identifiers in Graph Explorer</title>
+      <link>https://secubuzz.com/news/cve-2026-134066-query-injection-via-schema-derived-19cdd93a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-134066-query-injection-via-schema-derived-19cdd93a</guid>
+      <description><![CDATA[Bulletin ID: 2026-199-AWS Publication Date: 11/24/2026 10:30 AM PST Description: Graph Explorer is an open-source tool for browsing and searching graph data, which customers self-host against Amazon Neptune or other graph databases. We identified CVE-2026-134066, an issue in the query construction of Graph Explorer before version 3.2.1.]]></description>
+      <pubDate>Tue, 24 Nov 2026 18:44:47 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-199-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Socket Provides Free Patches for All Critical RubyGems CVEs</title>
       <link>https://secubuzz.com/news/socket-provides-free-patches-for-all-critical-ruby-d62555b9</link>
@@ -14,6 +41,15 @@
       <description><![CDATA[Socket has released free patches that address every critical RubyGems vulnerability without requiring dependency upgrades. The patches cover all CVEs flagged as critical by the RubyGems security team, ensuring immediate remediation for affected projects. Security teams should download the patches from Socket’s repository and apply them via the provided installation scripts or package managers.]]></description>
       <pubDate>Tue, 24 Nov 2026 18:27:14 GMT</pubDate>
       <source url="https://socket.dev/blog/free-patches-critical-ruby-cves">Socket.dev</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Chrome for Android Update</title>
+      <link>https://secubuzz.com/news/chrome-for-android-update-23c3fa76</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-for-android-update-23c3fa76</guid>
+      <description><![CDATA[We've just released Chrome 159 (159.0.8154.33) for Android to a small percentage of users. It'll become available on Google Play over the next few days. If you find a new issue, please let us know by filing a bug .]]></description>
+      <pubDate>Tue, 24 Nov 2026 18:12:30 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_082592203.html">Google Chrome Releases</source>
       <category>General</category>
     </item>
     <item>
@@ -59,6 +95,15 @@
       <description><![CDATA[Red Hat released a critical security update for fence-agents on RHEL 8, fixing vulnerabilities that could let local attackers gain elevated privileges. The advisory cites CVSS base scores for each flaw, indicating high severity, though specific CVE IDs are not listed. Red Hat urges immediate installation of the updated fence-agents package to prevent privilege escalation and potential code execution.]]></description>
       <pubDate>Tue, 24 Nov 2026 17:16:27 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103211">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102942: Important: mariadb:11.8 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102942-important-mariadb-11-8-security-u-4be34062</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102942-important-mariadb-11-8-security-u-4be34062</guid>
+      <description><![CDATA[An update for the mariadb:11.8 module is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 17:00:52 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102942">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -116,6 +161,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>RHSA-2026:102931: Important: grafana security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102931-important-grafana-security-update-083e714c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102931-important-grafana-security-update-083e714c</guid>
+      <description><![CDATA[An update for grafana is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 16:11:15 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102931">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Carnegie Endowment Donor Data Leaked by Vendor</title>
       <link>https://secubuzz.com/news/carnegie-endowment-donor-data-leaked-by-vendor-45cf6cec</link>
       <guid isPermaLink="true">https://secubuzz.com/news/carnegie-endowment-donor-data-leaked-by-vendor-45cf6cec</guid>
@@ -152,6 +206,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Autonomous AI Agents Automate Multi-Platform Intrusions</title>
+      <link>https://secubuzz.com/news/autonomous-ai-agents-automate-multi-platform-intru-360d7a1c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/autonomous-ai-agents-automate-multi-platform-intru-360d7a1c</guid>
+      <description><![CDATA[Unit 42 tracked cyber campaigns featuring autonomous AI agents deployed to conduct multi-platform intrusions. Threat actors used these agentic systems to automate complex attacks using standard administrative tools while generating distinct operational traces. Security operations teams must monitor environment-specific telemetry to identify automated agent behaviors and mitigate multi-platform intrusion risks.]]></description>
+      <pubDate>Tue, 24 Nov 2026 15:00:19 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/">Unit 42</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>CISA Alerts on Exploited N-Able Email Bug</title>
       <link>https://secubuzz.com/news/cisa-alerts-on-exploited-n-able-email-bug-1663bd94</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cisa-alerts-on-exploited-n-able-email-bug-1663bd94</guid>
@@ -179,6 +242,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Cloudera Announces Sovereign AI Solution for Enterprise Environments</title>
+      <link>https://secubuzz.com/news/cloudera-announces-sovereign-ai-solution-for-enter-3b34ea0e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudera-announces-sovereign-ai-solution-for-enter-3b34ea0e</guid>
+      <description><![CDATA[Cloudera launched Cloudera for Digital Sovereignty to provide enterprise technical and operational control across cloud, data, and AI lifecycles. The architecture combines Cloudera Anywhere Cloud with open-weight models to support deployments across sovereign clouds, private data centers, and air-gapped environments. Security teams can leverage open standards to maintain governed data pipelines while mitigating vendor lock-in risks.]]></description>
+      <pubDate>Tue, 24 Nov 2026 14:33:35 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/cloudera-digital-sovereignty/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>n8n Vulnerabilities Affect Multiple Versions</title>
       <link>https://secubuzz.com/news/n8n-vulnerabilities-affect-multiple-versions-cb89839d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/n8n-vulnerabilities-affect-multiple-versions-cb89839d</guid>
@@ -186,6 +258,15 @@
       <pubDate>Tue, 24 Nov 2026 14:32:25 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1200">Canadian Centre for Cyber Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Check Point Security Management Servers Targeted in Global Attacks</title>
+      <link>https://secubuzz.com/news/check-point-security-management-servers-targeted-i-e5c91a47</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/check-point-security-management-servers-targeted-i-e5c91a47</guid>
+      <description><![CDATA[Threat actors compromised Check Point Security Management Servers across multiple international organizations using an AI-assisted campaign. Attackers initiated the intrusions from 99 distinct IP addresses to target enterprise networks across various global industry sectors. Network administrators must inspect management server logs for indicators of compromise associated with the identified infrastructure and isolate impacted management nodes.]]></description>
+      <pubDate>Tue, 24 Nov 2026 14:21:56 GMT</pubDate>
+      <source url="https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/">SecurityWeek</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Volant Manticore: Flying Under the Radar</title>
@@ -213,6 +294,15 @@
       <pubDate>Tue, 24 Nov 2026 14:09:37 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>UK NCSC Reports Rise in AI-Driven Cyber Attacks</title>
+      <link>https://secubuzz.com/news/uk-ncsc-reports-rise-in-ai-driven-cyber-attacks-6e944715</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uk-ncsc-reports-rise-in-ai-driven-cyber-attacks-6e944715</guid>
+      <description><![CDATA[Britain's National Cyber Security Centre reported a marked rise in artificial intelligence-assisted cyberattacks since September. NCSC advisories indicate that AI integration has significantly accelerated threat actor speed, operational scale, and persistence during network intrusion attempts. Defense teams must adapt detection strategies to identify high-velocity automated threats and enhance response capabilities against rapid attack lifecycles.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:45:00 GMT</pubDate>
+      <source url="https://therecord.media/cyberattacks-uk-artificial-intelligence">The Record</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Releases kernel Update for RHEL 9.4 SAP</title>
@@ -287,6 +377,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:102588: Important: liblerc security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102588-important-liblerc-security-update-0baf4d23</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102588-important-liblerc-security-update-0baf4d23</guid>
+      <description><![CDATA[An update for liblerc is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:18:59 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102588">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102302: Critical: php security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102302-critical-php-security-update-8009f33f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102302-critical-php-security-update-8009f33f</guid>
+      <description><![CDATA[An update for php is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:07:59 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102302">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Wiz Enhances OpenAI Daybreak Defense with Security Intelligence</title>
       <link>https://secubuzz.com/news/wiz-enhances-openai-daybreak-defense-with-security-a49c15f9</link>
       <guid isPermaLink="true">https://secubuzz.com/news/wiz-enhances-openai-daybreak-defense-with-security-a49c15f9</guid>
@@ -348,114 +456,6 @@
       <pubDate>Tue, 24 Nov 2026 12:41:18 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102526">Red Hat Security Advisories</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102534: Moderate: ruby:2.5 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102534-moderate-ruby-2-5-security-update-de3bf5ee</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102534-moderate-ruby-2-5-security-update-de3bf5ee</guid>
-      <description><![CDATA[An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:35:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102534">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Bedrock Data Launches Intent-Aware AI Agent DLP</title>
-      <link>https://secubuzz.com/news/bedrock-data-launches-intent-aware-ai-agent-dlp-b146ea2c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bedrock-data-launches-intent-aware-ai-agent-dlp-b146ea2c</guid>
-      <description><![CDATA[Bedrock Data launched Agent DLP, a runtime data loss prevention tool that infers user intent and evaluates AI agent actions against policy. The tool weighs intent and behavior, enabling continued AI agent use while protecting sensitive data across tool and LLM calls. It also supports off-the-shelf integrations and offers a policy enforcement framework for AI workflows.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:34:02 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/bedrock-data-agent-dlp/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Elastic Deploys AI Agents to Triage SOC Alerts</title>
-      <link>https://secubuzz.com/news/elastic-deploys-ai-agents-to-triage-soc-alerts-4214ea31</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/elastic-deploys-ai-agents-to-triage-soc-alerts-4214ea31</guid>
-      <description><![CDATA[Elastic Security 9.6 introduces AlertZero, AI agents that triage alerts, hunt threats, and tune detection rules. The release adds Linux ransomware protection, expands entity resolution, and adds 143 detection rules for AI agents and LLM platforms. AlertZero groups workers into four watches-triage, threat hunting, detection engineering, and others-to automate SOC backlog.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:27:45 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/elastic-security-9-6-features/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Thunderbird Update for Important Vulnerabilities</title>
-      <link>https://secubuzz.com/news/red-hat-issues-thunderbird-update-for-important-vu-f9fe74d9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-thunderbird-update-for-important-vu-f9fe74d9</guid>
-      <description><![CDATA[Red Hat Enterprise Linux 8.6 receives a security update for Thunderbird, addressing several important vulnerabilities. The advisory references multiple CVEs with CVSS base scores, indicating potential remote code execution or privilege escalation if unpatched. Users should apply the update immediately to mitigate the risk, as the patch resolves all identified flaws.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:23:04 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102921">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHEL 10 cifs-utils Update Released</title>
-      <link>https://secubuzz.com/news/rhel-10-cifs-utils-update-released-ff7b7890</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhel-10-cifs-utils-update-released-ff7b7890</guid>
-      <description><![CDATA[Red Hat released a security update for cifs-utils on RHEL 10, fixing vulnerabilities that could enable remote code execution via SMB. Each flaw carries a CVSS base score, but the advisory lists no specific CVE identifiers. Apply the patch through standard RHEL update channels immediately; no configuration changes are required.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:12:04 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102887">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical Ruby 3.3 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-ruby-3-3-security-update-bc4fc911</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-ruby-3-3-security-update-bc4fc911</guid>
-      <description><![CDATA[Red Hat released a critical security update for the ruby:3.3 module on RHEL9, addressing multiple vulnerabilities. The update mitigates high-severity flaws, each with a CVSS base score detailed in the referenced CVE links, though no active exploitation has been reported. Administrators should apply the ruby:3.3 update immediately to prevent potential denial-of-service or privilege escalation attacks.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:10:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102869">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important LibreOffice Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-libreoffice-security-upda-180d6662</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-libreoffice-security-upda-180d6662</guid>
-      <description><![CDATA[Red Hat released an important security update for LibreOffice on RHEL9.6 Extended Update Support, addressing several vulnerabilities. Each flaw carries a CVSS base score listed in the CVE references, though no active exploitation has been documented. Users should install the LibreOffice update promptly to mitigate potential denial-of-service or privilege escalation risks.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:10:44 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102888">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102905: Important: container-tools:rhel8 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102905-important-container-tools-rhel8-s-60bcb6ec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102905-important-container-tools-rhel8-s-60bcb6ec</guid>
-      <description><![CDATA[An update for the container-tools:rhel8 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:08:43 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102905">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Infrastructure Vulnerabilities Highlight Systemic Fragility</title>
-      <link>https://secubuzz.com/news/infrastructure-vulnerabilities-highlight-systemic-3b11aa68</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/infrastructure-vulnerabilities-highlight-systemic-3b11aa68</guid>
-      <description><![CDATA[Schneier's essay examines how America’s critical infrastructure remains fragile due to aging systems, piecemeal patching, and hobbyist maintenance. The author argues that centralization and incremental upgrades create a single point of failure, causing widespread outages when components fail. The piece calls for systemic investment and coordinated security practices to reduce the risk of cascading infrastructure breakdowns.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:06:50 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/11/we-get-the-infrastructure-we-pay-for.html">Schneier on Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Azure API Management flaw used to steal credentials</title>
-      <link>https://secubuzz.com/news/azure-api-management-flaw-used-to-steal-credential-770aa984</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/azure-api-management-flaw-used-to-steal-credential-770aa984</guid>
-      <description><![CDATA[Microsoft warned that a vulnerability in Azure API Management (APIM) was exploited to exfiltrate credentials from customers’ instances, affecting Norwegian energy firms and others. The flaw in APIM Classic tiers lets attackers bypass authentication and retrieve stored secrets, potentially compromising downstream services. Microsoft recommends applying the latest APIM patch, disabling Classic tiers, and rotating exposed credentials immediately.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:04:37 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/azure-apim-vulnerability-credential-theft/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Google Researcher Exposes .NET Bit-Flip Code Integrity Bypass</title>
-      <link>https://secubuzz.com/news/google-researcher-exposes-net-bit-flip-code-integr-9d93c4f8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-researcher-exposes-net-bit-flip-code-integr-9d93c4f8</guid>
-      <description><![CDATA[A Google Project Zero researcher demonstrated that a single bit flip in .NET files bypasses Windows code integrity, allowing local attackers to run untrusted code. The flaw also bypassed VirtualBox process hardening on Windows and is tracked as CVE-2026-87268, exposing local privilege escalation. Administrators should update .NET Framework to the latest patch or apply vendor mitigations to prevent exploitation.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:02:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AutomationDirect C-More EA9 Programming Software</title>
-      <link>https://secubuzz.com/news/automationdirect-c-more-ea9-programming-software-4e483033</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/automationdirect-c-more-ea9-programming-software-4e483033</guid>
-      <description><![CDATA[The following versions of AutomationDirect C-More EA9 Programming Software are affected: C-More EA9 Programming Software CVSS Vendor Equipment v3 7.8 AutomationDirect C-More EA9 Programming Software 1 Vulnerability Heap-based Buffer Overflow . An attacker can exploit this vulnerability by convincing a user to open a malicious project file delivered through common distribution channels such as email, file sharing, or removable media. The flaw is tracked as CVE-2026-127280.]]></description>
-      <pubDate>Tue, 24 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01">CISA</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

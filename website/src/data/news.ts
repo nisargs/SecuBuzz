@@ -11,6 +11,69 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-135614-sensitive-data-redaction-bypass-in-c7149bd2",
+    "title": "CVE-2026-135614 - Sensitive data redaction bypass in the troubleshooting tool in Amazon ECS MCP Server",
+    "summary": "Bulletin ID: 2026-200-AWS Publication Date: 11/24/2026 11:00 AM PST Description: Amazon ECS MCP Server is an open-source Model Context Protocol server that lets AI agents and assistants manage and troubleshoot Amazon ECS workloads using the operator's AWS credentials. We identified CVE-2026-135614, an issue in the troubleshooting tool of the Amazon ECS MCP Server (awslabs.ecs-mcp-server) before 0.1.36.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-200-aws/",
+    "publishedAt": "2026-11-24T19:27:19.000Z",
+    "cves": [
+      "CVE-2026-135614"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-135614-sensitive-data-redaction-bypass-in",
+      "article-c7149bd2",
+      "c7149bd2",
+      "cve-2026-135614-sensitive-data-redaction-bypass-in-562e61",
+      "cve-2026-135614-sensitive-data-redaction-bypass-in-the-troub"
+    ]
+  },
+  {
+    "slug": "cve-2026-135414-server-side-request-forgery-in-sna-3f6f69aa",
+    "title": "CVE-2026-135414 - Server-side request forgery in snapshot repository registration in Amazon OpenSearch Service",
+    "summary": "Bulletin ID: 2026-201-AWS Publication Date: 11/24/2026 11:15 AM PST Description: Amazon OpenSearch Service is a managed service for deploying, operating, and scaling OpenSearch clusters in the AWS Cloud. We identified CVE-2026-135414, an issue in snapshot repository registration in Amazon OpenSearch Service.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-201-aws/",
+    "publishedAt": "2026-11-24T19:27:19.000Z",
+    "cves": [
+      "CVE-2026-135414"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-135414-server-side-request-forgery-in-sna",
+      "article-3f6f69aa",
+      "3f6f69aa",
+      "cve-2026-135414-server-side-request-forgery-in-sna-547988",
+      "cve-2026-135414-server-side-request-forgery-in-snapshot-repo"
+    ]
+  },
+  {
+    "slug": "cve-2026-134066-query-injection-via-schema-derived-19cdd93a",
+    "title": "CVE-2026-134066 - Query injection via schema-derived identifiers in Graph Explorer",
+    "summary": "Bulletin ID: 2026-199-AWS Publication Date: 11/24/2026 10:30 AM PST Description: Graph Explorer is an open-source tool for browsing and searching graph data, which customers self-host against Amazon Neptune or other graph databases. We identified CVE-2026-134066, an issue in the query construction of Graph Explorer before version 3.2.1.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-199-aws/",
+    "publishedAt": "2026-11-24T18:44:47.000Z",
+    "cves": [
+      "CVE-2026-134066"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-134066-query-injection-via-schema-derived",
+      "article-19cdd93a",
+      "19cdd93a",
+      "cve-2026-134066-query-injection-via-schema-derived-2d6424",
+      "cve-2026-134066-query-injection-via-schema-derived-identifie"
+    ]
+  },
+  {
     "slug": "socket-provides-free-patches-for-all-critical-ruby-d62555b9",
     "title": "Socket Provides Free Patches for All Critical RubyGems CVEs",
     "summary": "Socket has released free patches that address every critical RubyGems vulnerability without requiring dependency upgrades. The patches cover all CVEs flagged as critical by the RubyGems security team, ensuring immediate remediation for affected projects. Security teams should download the patches from Socket’s repository and apply them via the provided installation scripts or package managers.",
@@ -27,6 +90,24 @@ export const news: NewsBrief[] = [
       "d62555b9",
       "socket-provides-free-patches-for-all-critical-ruby-718eab",
       "socket-provides-free-patches-for-all-critical-rubygems-cves"
+    ]
+  },
+  {
+    "slug": "chrome-for-android-update-23c3fa76",
+    "title": "Chrome for Android Update",
+    "summary": "We've just released Chrome 159 (159.0.8154.33) for Android to a small percentage of users. It'll become available on Google Play over the next few days. If you find a new issue, please let us know by filing a bug .",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_082592203.html",
+    "publishedAt": "2026-11-24T18:12:30.107Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-for-android-update",
+      "article-23c3fa76",
+      "23c3fa76",
+      "chrome-for-android-update-c48cf1"
     ]
   },
   {
@@ -122,6 +203,25 @@ export const news: NewsBrief[] = [
       "article-bc33027c",
       "bc33027c",
       "red-hat-issues-critical-fence-agents-update-2ee1d2"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102942-important-mariadb-11-8-security-u-4be34062",
+    "title": "RHSA-2026:102942: Important: mariadb:11.8 security update",
+    "summary": "An update for the mariadb:11.8 module is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102942",
+    "publishedAt": "2026-11-24T17:00:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102942-important-mariadb-11-8-security-u",
+      "article-4be34062",
+      "4be34062",
+      "rhsa-2026-102942-important-mariadb-11-8-security-u-2ee178",
+      "rhsa-2026-102942-important-mariadb-11-8-security-update"
     ]
   },
   {
@@ -239,6 +339,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-102931-important-grafana-security-update-083e714c",
+    "title": "RHSA-2026:102931: Important: grafana security update",
+    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102931",
+    "publishedAt": "2026-11-24T16:11:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102931-important-grafana-security-update",
+      "article-083e714c",
+      "083e714c",
+      "rhsa-2026-102931-important-grafana-security-update-2ee178"
+    ]
+  },
+  {
     "slug": "carnegie-endowment-donor-data-leaked-by-vendor-45cf6cec",
     "title": "Carnegie Endowment Donor Data Leaked by Vendor",
     "summary": "The Carnegie Endowment for International Peace reported that a third-party vendor, Soapbox Engage, suffered a breach that leaked donor information. The leak exposed personal and financial details of donors, potentially enabling targeted phishing or identity theft campaigns. The Endowment should investigate the vendor’s security posture, notify affected donors, and enforce stricter data protection controls.",
@@ -312,6 +430,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "autonomous-ai-agents-automate-multi-platform-intru-360d7a1c",
+    "title": "Autonomous AI Agents Automate Multi-Platform Intrusions",
+    "summary": "Unit 42 tracked cyber campaigns featuring autonomous AI agents deployed to conduct multi-platform intrusions. Threat actors used these agentic systems to automate complex attacks using standard administrative tools while generating distinct operational traces. Security operations teams must monitor environment-specific telemetry to identify automated agent behaviors and mitigate multi-platform intrusion risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/",
+    "publishedAt": "2026-11-24T15:00:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "autonomous-ai-agents-automate-multi-platform-intru",
+      "article-360d7a1c",
+      "360d7a1c",
+      "autonomous-ai-agents-automate-multi-platform-intru-38de7d",
+      "autonomous-ai-agents-automate-multi-platform-intrusions"
+    ]
+  },
+  {
     "slug": "cisa-alerts-on-exploited-n-able-email-bug-1663bd94",
     "title": "CISA Alerts on Exploited N-Able Email Bug",
     "summary": "CISA warns that a vulnerability in N-Able’s email security platform has been exploited, threatening government departments. The flaw, identified as CVE-2026-134624, allows attackers to bypass spam and malware filtering, potentially delivering malicious content to users. N-Able has released a patch; agencies must update before Thanksgiving to mitigate the critical risk.",
@@ -369,6 +506,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cloudera-announces-sovereign-ai-solution-for-enter-3b34ea0e",
+    "title": "Cloudera Announces Sovereign AI Solution for Enterprise Environments",
+    "summary": "Cloudera launched Cloudera for Digital Sovereignty to provide enterprise technical and operational control across cloud, data, and AI lifecycles. The architecture combines Cloudera Anywhere Cloud with open-weight models to support deployments across sovereign clouds, private data centers, and air-gapped environments. Security teams can leverage open standards to maintain governed data pipelines while mitigating vendor lock-in risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/cloudera-digital-sovereignty/",
+    "publishedAt": "2026-11-24T14:33:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudera-announces-sovereign-ai-solution-for-enter",
+      "article-3b34ea0e",
+      "3b34ea0e",
+      "cloudera-announces-sovereign-ai-solution-for-enter-4dfd58",
+      "cloudera-announces-sovereign-ai-solution-for-enterprise-envi"
+    ]
+  },
+  {
     "slug": "n8n-vulnerabilities-affect-multiple-versions-cb89839d",
     "title": "n8n Vulnerabilities Affect Multiple Versions",
     "summary": "n8n disclosed flaws in versions prior to 3.4.0, 2.50.0, 2.49.5, 2.48.8, 1.123.101, 2.49.4, 2.48.7, and 1.123.100. The flaws allow local privilege escalation or arbitrary code execution, with CVSS scores 6.0-8.0, but no active exploitation observed. Apply the latest patches or upgrade to the minimum recommended versions to mitigate the risks.",
@@ -384,6 +540,25 @@ export const news: NewsBrief[] = [
       "article-cb89839d",
       "cb89839d",
       "n8n-vulnerabilities-affect-multiple-versions-3ce52d"
+    ]
+  },
+  {
+    "slug": "check-point-security-management-servers-targeted-i-e5c91a47",
+    "title": "Check Point Security Management Servers Targeted in Global Attacks",
+    "summary": "Threat actors compromised Check Point Security Management Servers across multiple international organizations using an AI-assisted campaign. Attackers initiated the intrusions from 99 distinct IP addresses to target enterprise networks across various global industry sectors. Network administrators must inspect management server logs for indicators of compromise associated with the identified infrastructure and isolate impacted management nodes.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/",
+    "publishedAt": "2026-11-24T14:21:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "check-point-security-management-servers-targeted-i",
+      "article-e5c91a47",
+      "e5c91a47",
+      "check-point-security-management-servers-targeted-i-2644fe",
+      "check-point-security-management-servers-targeted-in-global-a"
     ]
   },
   {
@@ -439,6 +614,24 @@ export const news: NewsBrief[] = [
       "article-747e255b",
       "747e255b",
       "mcdonald-s-japan-exposes-app-user-location-data-6af1bf"
+    ]
+  },
+  {
+    "slug": "uk-ncsc-reports-rise-in-ai-driven-cyber-attacks-6e944715",
+    "title": "UK NCSC Reports Rise in AI-Driven Cyber Attacks",
+    "summary": "Britain's National Cyber Security Centre reported a marked rise in artificial intelligence-assisted cyberattacks since September. NCSC advisories indicate that AI integration has significantly accelerated threat actor speed, operational scale, and persistence during network intrusion attempts. Defense teams must adapt detection strategies to identify high-velocity automated threats and enhance response capabilities against rapid attack lifecycles.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/cyberattacks-uk-artificial-intelligence",
+    "publishedAt": "2026-11-24T13:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uk-ncsc-reports-rise-in-ai-driven-cyber-attacks",
+      "article-6e944715",
+      "6e944715",
+      "uk-ncsc-reports-rise-in-ai-driven-cyber-attacks-184ff5"
     ]
   },
   {
@@ -588,6 +781,42 @@ export const news: NewsBrief[] = [
       "a5bd4129",
       "codesys-visualization-vulnerabilities-pre-4-11-0-0-3684ae",
       "codesys-visualization-vulnerabilities-pre-4-11-0-0-advisory"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102588-important-liblerc-security-update-0baf4d23",
+    "title": "RHSA-2026:102588: Important: liblerc security update",
+    "summary": "An update for liblerc is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102588",
+    "publishedAt": "2026-11-24T13:18:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102588-important-liblerc-security-update",
+      "article-0baf4d23",
+      "0baf4d23",
+      "rhsa-2026-102588-important-liblerc-security-update-2ee16a"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102302-critical-php-security-update-8009f33f",
+    "title": "RHSA-2026:102302: Critical: php security update",
+    "summary": "An update for php is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102302",
+    "publishedAt": "2026-11-24T13:07:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102302-critical-php-security-update",
+      "article-8009f33f",
+      "8009f33f",
+      "rhsa-2026-102302-critical-php-security-update-2ee161"
     ]
   },
   {
@@ -2102,6 +2331,90 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "zdi-26-1065-0day-deepspeed-get-zero-stage-deserial-b4d9d749",
+    "title": "ZDI-26-1065: (0Day) DeepSpeed _get_zero_stage Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of DeepSpeed. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-136439.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1065/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-136439"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1065-0day-deepspeed-get-zero-stage-deserial",
+      "article-b4d9d749",
+      "b4d9d749",
+      "zdi-26-1065-0day-deepspeed-get-zero-stage-deserial-77f34f",
+      "zdi-26-1065-0day-deepspeed-get-zero-stage-deserialization-of"
+    ]
+  },
+  {
+    "slug": "zdi-26-1064-0day-deepspeed-build-engine-from-ds-ch-e73a09ab",
+    "title": "ZDI-26-1064: (0Day) DeepSpeed build_engine_from_ds_checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of DeepSpeed. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-136438.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1064/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-136438"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1064-0day-deepspeed-build-engine-from-ds-ch",
+      "article-e73a09ab",
+      "e73a09ab",
+      "zdi-26-1064-0day-deepspeed-build-engine-from-ds-ch-77f34f",
+      "zdi-26-1064-0day-deepspeed-build-engine-from-ds-checkpoint-d"
+    ]
+  },
+  {
+    "slug": "zdi-26-1063-0day-deepspeed-parse-optim-states-dese-dc15ce19",
+    "title": "ZDI-26-1063: (0Day) DeepSpeed parse_optim_states Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of DeepSpeed. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-136437.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1063/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-136437"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1063-0day-deepspeed-parse-optim-states-dese",
+      "article-dc15ce19",
+      "dc15ce19",
+      "zdi-26-1063-0day-deepspeed-parse-optim-states-dese-77f34f",
+      "zdi-26-1063-0day-deepspeed-parse-optim-states-deserializatio"
+    ]
+  },
+  {
+    "slug": "zdi-26-1062-0day-deepspeed-torch-checkpoint-engine-18d0f8c9",
+    "title": "ZDI-26-1062: (0Day) DeepSpeed torch_checkpoint_engine Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of DeepSpeed. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-136436.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1062/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-136436"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1062-0day-deepspeed-torch-checkpoint-engine",
+      "article-18d0f8c9",
+      "18d0f8c9",
+      "zdi-26-1062-0day-deepspeed-torch-checkpoint-engine-77f34e",
+      "zdi-26-1062-0day-deepspeed-torch-checkpoint-engine-deseriali"
     ]
   },
   {
@@ -9042,311 +9355,6 @@ export const news: NewsBrief[] = [
       "3bb20701",
       "ruby-patches-ruby2shell-heap-overflow-vulnerabilit-7a0697",
       "ruby-patches-ruby2shell-heap-overflow-vulnerability"
-    ]
-  },
-  {
-    "slug": "cisco-expressway-cve-2026-76466-breach-enables-int-d2749c00",
-    "title": "Cisco Expressway CVE-2026-76466 Breach Enables Internal Network Access",
-    "summary": "Hackers exploited Cisco Expressway CVE-2026-76466, a CVSS 9.8 unauthenticated remote code execution flaw, to breach four devices in a Russian organization. The public PoC released before the attack showed attackers could gain full control over Expressway via crafted HTTP requests.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
-    "publishedAt": "2026-11-20T10:32:50.000Z",
-    "cves": [
-      "CVE-2026-76466"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-expressway-cve-2026-76466-breach-enables-int",
-      "article-d2749c00",
-      "d2749c00",
-      "cisco-expressway-cve-2026-76466-breach-enables-int-3f47a4",
-      "cisco-expressway-cve-2026-76466-breach-enables-internal-netw"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100744-critical-nginx-security-update-315142a7",
-    "title": "RHSA-2026:100744: Critical: nginx security update",
-    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100744",
-    "publishedAt": "2026-11-20T10:22:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100744-critical-nginx-security-update",
-      "article-315142a7",
-      "315142a7",
-      "rhsa-2026-100744-critical-nginx-security-update-2ee088"
-    ]
-  },
-  {
-    "slug": "tfl-oyster-photocard-data-breach-exposes-265-000-u-afd049c0",
-    "title": "TfL Oyster Photocard Data Breach Exposes 265,000 Users",
-    "summary": "Transport for London confirmed that the Oyster photocard website was breached, exposing account details of approximately 265,000 users. The breach involved unauthorized access to the photocard system, potentially compromising personal data such as names, addresses, and card balances. TfL took the system offline, issued a security advisory, and is working with investigators to remediate the vulnerability and prevent further exposure.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/transport-for-london-oyster-photocard-data-breach/",
-    "publishedAt": "2026-11-20T10:21:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tfl-oyster-photocard-data-breach-exposes-265-000-u",
-      "article-afd049c0",
-      "afd049c0",
-      "tfl-oyster-photocard-data-breach-exposes-265-000-u-57b060",
-      "tfl-oyster-photocard-data-breach-exposes-265-000-users"
-    ]
-  },
-  {
-    "slug": "palo-alto-confirms-java-vulnerability-impacts-priv-10f5624d",
-    "title": "Palo Alto Confirms Java Vulnerability Impacts Privilege Threat Analytics and Remote Access Connector",
-    "summary": "Palo Alto Networks has confirmed that a critical Java vulnerability affects Idira Privilege Threat Analytics, Remote Access Connector, and on-premises HTML5 Gateway products. Tracked as CVE-2026-114938, the flaw could let a remote attacker run code without signing in when specific hardware and software conditions are met.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/palo-alto-confirms-java-vulnerability-impacts/",
-    "publishedAt": "2026-11-20T10:00:36.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "palo-alto-confirms-java-vulnerability-impacts-priv",
-      "article-10f5624d",
-      "10f5624d",
-      "palo-alto-confirms-java-vulnerability-impacts-priv-5a7914",
-      "palo-alto-confirms-java-vulnerability-impacts-privilege-thre"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100735-important-sos-security-bug-fix-an-55df0332",
-    "title": "RHSA-2026:100735: Important: sos security, bug fix, and enhancement update",
-    "summary": "Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100735",
-    "publishedAt": "2026-11-20T09:30:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100735-important-sos-security-bug-fix-an",
-      "article-55df0332",
-      "55df0332",
-      "rhsa-2026-100735-important-sos-security-bug-fix-an-2ee088",
-      "rhsa-2026-100735-important-sos-security-bug-fix-and-enhancem"
-    ]
-  },
-  {
-    "slug": "microsoft-releases-windows-11-kb5132057-update-b07486ca",
-    "title": "Microsoft Releases Windows 11 KB5132057 Update",
-    "summary": "Microsoft released the KB5132057 November Windows 11 preview update, addressing 28 changes across the operating system. The update includes enhancements to Windows Search, Windows Hello, and the Run dialog, along with other minor bug fixes. Security teams should install the patch via Windows Update or manual download to maintain system stability and security.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
-    "publishedAt": "2026-11-20T09:25:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-releases-windows-11-kb5132057-update",
-      "article-b07486ca",
-      "b07486ca",
-      "microsoft-releases-windows-11-kb5132057-update-8868a1"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100658-important-net-9-0-security-bug-fi-4564b0e1",
-    "title": "RHSA-2026:100658: Important: .NET 9.0 security, bug fix, and enhancement update",
-    "summary": "An update for .NET 9.0 is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100658",
-    "publishedAt": "2026-11-20T09:09:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100658-important-net-9-0-security-bug-fi",
-      "article-4564b0e1",
-      "4564b0e1",
-      "rhsa-2026-100658-important-net-9-0-security-bug-fi-2ee085",
-      "rhsa-2026-100658-important-net-9-0-security-bug-fix-and-enha"
-    ]
-  },
-  {
-    "slug": "n-able-blames-service-disruption-on-cyberattack-ad60ab08",
-    "title": "N-Able Blames Service Disruption on Cyberattack",
-    "summary": "N-Able attributes a recent service disruption to a cyberattack that impacted its Mail Assure and SpamExperts Hosted Cloud offerings. The incident may have exposed user credentials, though no confirmed data exfiltration has been reported, raising concerns about account security. Affected customers should verify account integrity, enforce multi-factor authentication, and monitor for suspicious activity while awaiting vendor guidance.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/",
-    "publishedAt": "2026-11-20T09:08:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-blames-service-disruption-on-cyberattack",
-      "article-ad60ab08",
-      "ad60ab08",
-      "n-able-blames-service-disruption-on-cyberattack-6adea2"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100657-important-net-8-0-security-bug-fi-36aacfb6",
-    "title": "RHSA-2026:100657: Important: .NET 8.0 security, bug fix, and enhancement update",
-    "summary": "An update for .NET 8.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100657",
-    "publishedAt": "2026-11-20T09:08:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100657-important-net-8-0-security-bug-fi",
-      "article-36aacfb6",
-      "36aacfb6",
-      "rhsa-2026-100657-important-net-8-0-security-bug-fi-2ee085",
-      "rhsa-2026-100657-important-net-8-0-security-bug-fix-and-enha"
-    ]
-  },
-  {
-    "slug": "chromium-use-after-free-vulnerability-cve-2024-753-faad13a5",
-    "title": "Chromium Use-After-Free Vulnerability CVE-2024-7533",
-    "summary": "Chromium's sharing feature contains a use-after-free flaw, identified as CVE-2024-7533, that can be triggered by maliciously crafted shared content. The flaw allows an attacker to execute arbitrary code or crash the browser, potentially compromising user data and session integrity. Google has released a patch in the latest Chromium update; users should upgrade immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7532",
-    "publishedAt": "2026-11-20T09:06:50.000Z",
-    "cves": [
-      "CVE-2024-7533",
-      "CVE-2024-7532"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-use-after-free-vulnerability-cve-2024-753",
-      "article-faad13a5",
-      "faad13a5",
-      "chromium-use-after-free-vulnerability-cve-2024-753-43286e",
-      "chromium-use-after-free-vulnerability-cve-2024-7533"
-    ]
-  },
-  {
-    "slug": "chromium-angle-use-after-free-cve-2023-1531-e4eccb3a",
-    "title": "Chromium ANGLE Use-After-Free CVE-2023-1531",
-    "summary": "Chromium's ANGLE component contains a use-after-free flaw identified as CVE-2023-1531. The flaw allows an attacker to corrupt memory after a freed pointer is accessed, potentially enabling arbitrary code execution if exploited. Microsoft and Chromium developers have released a patch in the latest Chromium update; users should upgrade to the newest stable release to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-1531",
-    "publishedAt": "2026-11-20T09:05:37.000Z",
-    "cves": [
-      "CVE-2023-1531"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-angle-use-after-free-cve-2023-1531",
-      "article-e4eccb3a",
-      "e4eccb3a",
-      "chromium-angle-use-after-free-cve-2023-1531-4170db"
-    ]
-  },
-  {
-    "slug": "red-hat-rpm-security-update-rhsa-2026-100637-54dded9a",
-    "title": "Red Hat RPM Security Update (RHSA-2026-100637)",
-    "summary": "Red Hat released a moderate-impact security update for the rpm package on RHEL 8, addressing multiple vulnerabilities identified in the RPM package manager. The update mitigates potential privilege escalation or package tampering risks by correcting internal validation logic. Users should apply the RHSA-2026-100637 update via yum or dnf to ensure system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100637",
-    "publishedAt": "2026-11-20T08:58:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-rpm-security-update-rhsa-2026-100637",
-      "article-54dded9a",
-      "54dded9a",
-      "red-hat-rpm-security-update-rhsa-2026-100637-2ee084"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100686-important-curl-security-update-968536f6",
-    "title": "RHSA-2026:100686: Important: curl security update",
-    "summary": "An update for curl is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100686",
-    "publishedAt": "2026-11-20T08:57:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100686-important-curl-security-update",
-      "article-968536f6",
-      "968536f6",
-      "rhsa-2026-100686-important-curl-security-update-2ee085"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100638-moderate-rpm-security-update-d4314756",
-    "title": "RHSA-2026:100638: Moderate: rpm security update",
-    "summary": "An update for rpm is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100638",
-    "publishedAt": "2026-11-20T08:55:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100638-moderate-rpm-security-update",
-      "article-d4314756",
-      "d4314756",
-      "rhsa-2026-100638-moderate-rpm-security-update-2ee084"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100685-important-curl-security-update-be5483cc",
-    "title": "RHSA-2026:100685: Important: curl security update",
-    "summary": "An update for curl is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100685",
-    "publishedAt": "2026-11-20T08:54:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100685-important-curl-security-update",
-      "article-be5483cc",
-      "be5483cc",
-      "rhsa-2026-100685-important-curl-security-update-2ee085"
-    ]
-  },
-  {
-    "slug": "european-commission-confirms-ai-generated-cyberatt-4d57d748",
-    "title": "European Commission Confirms AI-Generated Cyberattack",
-    "summary": "The European Commission confirmed a cyberattack that leveraged an available AI tool to disrupt several of its applications. The attack forced multiple systems offline, though no evidence of data exfiltration or credential compromise was reported, according to spokesperson Thomas Regnier. Security teams should review access controls, monitor for anomalous activity, and apply any vendor-issued mitigations to prevent similar AI-driven disruptions.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/european-commission-ai-generated-cyberattack-publicly-available-tool/",
-    "publishedAt": "2026-11-20T08:52:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "european-commission-confirms-ai-generated-cyberatt",
-      "article-4d57d748",
-      "4d57d748",
-      "european-commission-confirms-ai-generated-cyberatt-42376c",
-      "european-commission-confirms-ai-generated-cyberattack"
     ]
   }
 ];
