@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 08:50:12 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 09:46:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>GlobeTopper faces up to $2.5 million in lost revenue after hackers steal $70,000 in gift cards</title>
+      <link>https://secubuzz.com/news/globetopper-faces-up-to-2-5-million-in-lost-revenu-cf27e5da</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/globetopper-faces-up-to-2-5-million-in-lost-revenu-cf27e5da</guid>
+      <description><![CDATA[According to a filing with the U.S. Securities and Exchange Commission (SEC), parent company iQSTEL said GlobeTopper detected the intrusion on October 22 and took the platform offline the next morning after spotting further unauthorized activity.]]></description>
+      <pubDate>Tue, 24 Nov 2026 09:33:33 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/globetopper-breach-gift-cards/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102854: Critical: ruby security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102854-critical-ruby-security-update-77e427ff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102854-critical-ruby-security-update-77e427ff</guid>
+      <description><![CDATA[An update for ruby is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 09:09:06 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102854">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Anthropic Launches Claude Ship for AI Code Review</title>
+      <link>https://secubuzz.com/news/anthropic-launches-claude-ship-for-ai-code-review-889e1e66</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-launches-claude-ship-for-ai-code-review-889e1e66</guid>
+      <description><![CDATA[Anthropic released Claude Ship, a beta AI suite that reviews pull requests, fixes issues, and approves changes per team policies. It merges code review, automated fixes, and policy enforcement to speed development while preserving quality. Deploying Claude Ship into CI/CD pipelines lets teams set approval thresholds and monitor false positives for safe integration.]]></description>
+      <pubDate>Tue, 24 Nov 2026 09:02:02 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/anthropic-claude-ship-beta/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Uncovers Linux Kernel Vulnerabilities in Azure</title>
+      <link>https://secubuzz.com/news/microsoft-uncovers-linux-kernel-vulnerabilities-in-7a22f5cf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-uncovers-linux-kernel-vulnerabilities-in-7a22f5cf</guid>
+      <description><![CDATA[Microsoft identified multiple Linux kernel flaws in Azure that could allow attackers to compromise affected systems. The vulnerabilities affect IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems, and are catalogued as CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, potentially enabling remote code execution. Administrators should apply the latest kernel updates or install the provided patches to eliminate the exploitation vector.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:40:41 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9170-4">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>RHSA-2026:102845: Important: cockpit security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-102845-important-cockpit-security-update-99557e81</link>
@@ -26,6 +62,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:102852: Important: python-oauthlib security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102852-important-python-oauthlib-securit-0ea1961c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102852-important-python-oauthlib-securit-0ea1961c</guid>
+      <description><![CDATA[An update for python-oauthlib is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:06:34 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102852">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Top Attack Path Management Tools Ranked for 2026</title>
+      <link>https://secubuzz.com/news/top-attack-path-management-tools-ranked-for-2026-2ec886b3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-attack-path-management-tools-ranked-for-2026-2ec886b3</guid>
+      <description><![CDATA[Cyber Security News evaluated defensive tools, ranking the top ten attack path management solutions available in 2026. These tools analyze complex attack chains by converting vulnerability lists into graphs mapping misconfigurations, excessive permissions, and credential reuse. Security teams can deploy attack path management software to identify critical choke points and remediate high-risk operational vectors efficiently.]]></description>
+      <pubDate>Tue, 24 Nov 2026 07:46:17 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-attack-path-management/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Hackers Plant Backdoors in 6 WordPress Plugins to Steal Passwords and Take Over Websites</title>
       <link>https://secubuzz.com/news/hackers-plant-backdoors-in-6-wordpress-plugins-to-1ee8819b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hackers-plant-backdoors-in-6-wordpress-plugins-to-1ee8819b</guid>
@@ -42,6 +96,24 @@
       <pubDate>Tue, 24 Nov 2026 07:21:45 GMT</pubDate>
       <source url="https://cybersecuritynews.com/critical-bluetooth-flaw/">Cyber Security News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Important Security Update for MariaDB</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-security-update-for-maria-9b915824</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-security-update-for-maria-9b915824</guid>
+      <description><![CDATA[Red Hat released a security update addressing security flaws in the mariadb:11.8 module for Red Hat Enterprise Linux 9. Red Hat Product Security rated the operational impact of these vulnerabilities as Important based on Common Vulnerability Scoring System metrics. System administrators should apply the RHSA-2026:102830 advisory updates to mitigate potential exploitation risks across enterprise RHEL environments.]]></description>
+      <pubDate>Tue, 24 Nov 2026 07:08:30 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102830">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Important WebKit2GTK3 Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-webkit2gtk3-update-778a739a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-webkit2gtk3-update-778a739a</guid>
+      <description><![CDATA[Red Hat released an important security update for webkit2gtk3 on RHEL 9.2 for SAP Solutions. The patch addresses undisclosed vulnerabilities that could enable code execution or system compromise, with CVSS scores linked in the CVE references and mitigate potential privilege escalation. Administrators should apply the update immediately to eliminate the exploitation vector.]]></description>
+      <pubDate>Tue, 24 Nov 2026 07:07:29 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102838">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Hackers Compromise Check Point Management Servers</title>
@@ -332,6 +404,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>GTA VI Hacker Sentenced, Released Same Day</title>
+      <link>https://secubuzz.com/news/gta-vi-hacker-sentenced-released-same-day-fcf6ba53</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gta-vi-hacker-sentenced-released-same-day-fcf6ba53</guid>
+      <description><![CDATA[A British cybercriminal breached Rockstar Games’ systems, leaking unreleased Grand Theft Auto VI footage in the United Kingdom. The attack exploited internal access controls, but no specific vulnerability was publicly disclosed without evidence of ongoing threat to Rockstar’s operations. He received a seven-year prison sentence and was released on license after serving time.]]></description>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://therecord.media/gta-vi-hacker-arion-kurtaj-released-on-license">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>RHSA-2026:102696: Critical: php:8.2 security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-102696-critical-php-8-2-security-update-d2bfc141</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102696-critical-php-8-2-security-update-d2bfc141</guid>
@@ -374,87 +455,6 @@
       <description><![CDATA[It was discovered that Qt5Compat did not correctly handle certain text codec names, which could lead to an out-of-bounds read. An attacker could possibly use this issue to cause a denial of service.]]></description>
       <pubDate>Mon, 23 Nov 2026 23:21:59 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9189-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102684: Critical: php:8.3 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102684-critical-php-8-3-security-update-f1b40ee0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102684-critical-php-8-3-security-update-f1b40ee0</guid>
-      <description><![CDATA[An update for the php:8.3 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 23 Nov 2026 22:29:11 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102684">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome 158 Released for Android</title>
-      <link>https://secubuzz.com/news/chrome-158-released-for-android-b09b0dcc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-released-for-android-b09b0dcc</guid>
-      <description><![CDATA[Google has released Chrome 158 (158.0.8127.92) for Android, which will appear on Google Play within days. The update focuses on stability and performance enhancements, while incorporating the same security fixes present in the corresponding desktop releases for Windows, Mac, and Linux. Users should install the new package via Google Play; no additional work-around is required.]]></description>
-      <pubDate>Mon, 23 Nov 2026 22:09:51 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0411169060.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat issues python-oauthlib security update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-python-oauthlib-security-update-d0a8cfdf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-python-oauthlib-security-update-d0a8cfdf</guid>
-      <description><![CDATA[Red Hat released a security update for python-oauthlib on RHEL 9, addressing multiple critical vulnerabilities. The update mitigates flaws that could enable remote code execution or privilege escalation, with CVSS scores linked via CVE references and rated Important by Product Security. Administrators should apply RHSA-2026:102668 immediately to secure affected systems.]]></description>
-      <pubDate>Mon, 23 Nov 2026 22:06:31 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102668">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Aurora stops ClickFix attacks with intent detection</title>
-      <link>https://secubuzz.com/news/aurora-stops-clickfix-attacks-with-intent-detectio-c9f21da8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aurora-stops-clickfix-attacks-with-intent-detectio-c9f21da8</guid>
-      <description><![CDATA[ClickFix attacks coerce users into executing malicious commands, creating a gray zone that evades traditional security tools. Aurora Adaptive Threat Protection employs intent-based detection to recognize execution patterns, stopping attacks at the moment they occur and mapping activity for visibility. Security teams can integrate Aurora to gain real-time protection against ClickFix and similar command-execution threats.]]></description>
-      <pubDate>Mon, 23 Nov 2026 22:03:44 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-stops-clickfix-attacks/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OT Gateways Reveal Authentication Status, Many Unprotected</title>
-      <link>https://secubuzz.com/news/ot-gateways-reveal-authentication-status-many-unpr-65970c74</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ot-gateways-reveal-authentication-status-many-unpr-65970c74</guid>
-      <description><![CDATA[Industrial serial gateways reveal whether they are authenticated, exposing a flaw in critical OT access devices. The default configuration broadcasts authentication status, allowing attackers to identify unprotected devices; no exploit is needed, but the disclosure raises credential theft risk. Disable status broadcasts, enforce authentication, and apply vendor firmware updates that conceal authentication state.]]></description>
-      <pubDate>Mon, 23 Nov 2026 22:02:46 GMT</pubDate>
-      <source url="https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>13 Malicious NuGet Packages Target .NET Developers</title>
-      <link>https://secubuzz.com/news/13-malicious-nuget-packages-target-net-developers-81b6e5e1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/13-malicious-nuget-packages-target-net-developers-81b6e5e1</guid>
-      <description><![CDATA[Socket researchers identified 13 malicious NuGet packages that lure .NET developers with fake job assessment prompts. The packages perform DLL side-loading, steal credentials, and embed GitHub-based malware, compromising developer environments. Security teams should audit package sources, enforce trusted feeds, and apply the latest .NET security updates to mitigate exposure and monitor for suspicious activity.]]></description>
-      <pubDate>Mon, 23 Nov 2026 21:55:22 GMT</pubDate>
-      <source url="https://socket.dev/blog/malicious-nuget-packages-fake-job-assessments">Socket.dev</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AWS SSM Agent default key flaw exposes role credentials</title>
-      <link>https://secubuzz.com/news/aws-ssm-agent-default-key-flaw-exposes-role-creden-768216c7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aws-ssm-agent-default-key-flaw-exposes-role-creden-768216c7</guid>
-      <description><![CDATA[Amazon SSM Agent on AWS Windows Server AMIs contains a flaw where instances share a default cryptographic key during registration. CVE-2026-134069 allows a local non-admin user to retrieve the instance’s Default Host Management Configuration role credentials, enabling potential credential theft. AWS recommends updating to the latest SSM Agent version or applying the provided patch to eliminate the shared key vulnerability.]]></description>
-      <pubDate>Mon, 23 Nov 2026 21:54:18 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-197-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Golang Update for RHEL 10</title>
-      <link>https://secubuzz.com/news/red-hat-releases-golang-update-for-rhel-10-b421f581</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-golang-update-for-rhel-10-b421f581</guid>
-      <description><![CDATA[Red Hat released a golang update for RHEL 10, fixing multiple security bugs in the Go compiler and runtime. The update addresses several CVE-linked issues, each with a CVSS base score indicating moderate impact; no active exploitation is known. Red Hat advises applying the update via the package manager; no workaround is needed.]]></description>
-      <pubDate>Mon, 23 Nov 2026 21:42:31 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102587">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Golang Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-golang-security-update-f2d54dcf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-golang-security-update-f2d54dcf</guid>
-      <description><![CDATA[Red Hat released a security update for the golang runtime on RHEL 9, addressing multiple vulnerabilities. The update mitigates unspecified bugs that could allow local privilege escalation or code execution, with CVSS scores available via referenced CVE links. Administrators should apply the golang package update immediately to maintain system integrity.]]></description>
-      <pubDate>Mon, 23 Nov 2026 21:41:48 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102586">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

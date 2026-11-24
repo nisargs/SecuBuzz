@@ -11,6 +11,84 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "globetopper-faces-up-to-2-5-million-in-lost-revenu-cf27e5da",
+    "title": "GlobeTopper faces up to $2.5 million in lost revenue after hackers steal $70,000 in gift cards",
+    "summary": "According to a filing with the U.S. Securities and Exchange Commission (SEC), parent company iQSTEL said GlobeTopper detected the intrusion on October 22 and took the platform offline the next morning after spotting further unauthorized activity.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/globetopper-breach-gift-cards/",
+    "publishedAt": "2026-11-24T09:33:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "globetopper-faces-up-to-2-5-million-in-lost-revenu",
+      "article-cf27e5da",
+      "cf27e5da",
+      "globetopper-faces-up-to-2-5-million-in-lost-revenu-225ebb",
+      "globetopper-faces-up-to-2-5-million-in-lost-revenue-after-ha"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102854-critical-ruby-security-update-77e427ff",
+    "title": "RHSA-2026:102854: Critical: ruby security update",
+    "summary": "An update for ruby is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102854",
+    "publishedAt": "2026-11-24T09:09:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102854-critical-ruby-security-update",
+      "article-77e427ff",
+      "77e427ff",
+      "rhsa-2026-102854-critical-ruby-security-update-2ee175"
+    ]
+  },
+  {
+    "slug": "anthropic-launches-claude-ship-for-ai-code-review-889e1e66",
+    "title": "Anthropic Launches Claude Ship for AI Code Review",
+    "summary": "Anthropic released Claude Ship, a beta AI suite that reviews pull requests, fixes issues, and approves changes per team policies. It merges code review, automated fixes, and policy enforcement to speed development while preserving quality. Deploying Claude Ship into CI/CD pipelines lets teams set approval thresholds and monitor false positives for safe integration.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/anthropic-claude-ship-beta/",
+    "publishedAt": "2026-11-24T09:02:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-launches-claude-ship-for-ai-code-review",
+      "article-889e1e66",
+      "889e1e66",
+      "anthropic-launches-claude-ship-for-ai-code-review-2420de"
+    ]
+  },
+  {
+    "slug": "microsoft-uncovers-linux-kernel-vulnerabilities-in-7a22f5cf",
+    "title": "Microsoft Uncovers Linux Kernel Vulnerabilities in Azure",
+    "summary": "Microsoft identified multiple Linux kernel flaws in Azure that could allow attackers to compromise affected systems. The vulnerabilities affect IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems, and are catalogued as CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, potentially enabling remote code execution. Administrators should apply the latest kernel updates or install the provided patches to eliminate the exploitation vector.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9170-4",
+    "publishedAt": "2026-11-24T08:40:41.000Z",
+    "cves": [
+      "CVE-2026-64564",
+      "CVE-2026-98432",
+      "CVE-2026-99999"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-uncovers-linux-kernel-vulnerabilities-in",
+      "article-7a22f5cf",
+      "7a22f5cf",
+      "microsoft-uncovers-linux-kernel-vulnerabilities-in-7e7875",
+      "microsoft-uncovers-linux-kernel-vulnerabilities-in-azure"
+    ]
+  },
+  {
     "slug": "rhsa-2026-102845-important-cockpit-security-update-99557e81",
     "title": "RHSA-2026:102845: Important: cockpit security update",
     "summary": "An update for cockpit is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -45,6 +123,43 @@ export const news: NewsBrief[] = [
       "2ea55ced",
       "rhsa-2026-102841-important-webkit2gtk3-security-up-2ee175",
       "rhsa-2026-102841-important-webkit2gtk3-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102852-important-python-oauthlib-securit-0ea1961c",
+    "title": "RHSA-2026:102852: Important: python-oauthlib security update",
+    "summary": "An update for python-oauthlib is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102852",
+    "publishedAt": "2026-11-24T08:06:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102852-important-python-oauthlib-securit",
+      "article-0ea1961c",
+      "0ea1961c",
+      "rhsa-2026-102852-important-python-oauthlib-securit-2ee175",
+      "rhsa-2026-102852-important-python-oauthlib-security-update"
+    ]
+  },
+  {
+    "slug": "top-attack-path-management-tools-ranked-for-2026-2ec886b3",
+    "title": "Top Attack Path Management Tools Ranked for 2026",
+    "summary": "Cyber Security News evaluated defensive tools, ranking the top ten attack path management solutions available in 2026. These tools analyze complex attack chains by converting vulnerability lists into graphs mapping misconfigurations, excessive permissions, and credential reuse. Security teams can deploy attack path management software to identify critical choke points and remediate high-risk operational vectors efficiently.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-attack-path-management/",
+    "publishedAt": "2026-11-24T07:46:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-attack-path-management-tools-ranked-for-2026",
+      "article-2ec886b3",
+      "2ec886b3",
+      "top-attack-path-management-tools-ranked-for-2026-a31adc"
     ]
   },
   {
@@ -85,6 +200,43 @@ export const news: NewsBrief[] = [
       "1f770d18",
       "elecbrakes-bluetooth-flaw-enables-remote-brake-con-ff7b14",
       "elecbrakes-bluetooth-flaw-enables-remote-brake-control"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-security-update-for-maria-9b915824",
+    "title": "Red Hat Issues Important Security Update for MariaDB",
+    "summary": "Red Hat released a security update addressing security flaws in the mariadb:11.8 module for Red Hat Enterprise Linux 9. Red Hat Product Security rated the operational impact of these vulnerabilities as Important based on Common Vulnerability Scoring System metrics. System administrators should apply the RHSA-2026:102830 advisory updates to mitigate potential exploitation risks across enterprise RHEL environments.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102830",
+    "publishedAt": "2026-11-24T07:08:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-security-update-for-maria",
+      "article-9b915824",
+      "9b915824",
+      "red-hat-issues-important-security-update-for-maria-2ee175",
+      "red-hat-issues-important-security-update-for-mariadb"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-webkit2gtk3-update-778a739a",
+    "title": "Red Hat Issues Important WebKit2GTK3 Update",
+    "summary": "Red Hat released an important security update for webkit2gtk3 on RHEL 9.2 for SAP Solutions. The patch addresses undisclosed vulnerabilities that could enable code execution or system compromise, with CVSS scores linked in the CVE references and mitigate potential privilege escalation. Administrators should apply the update immediately to eliminate the exploitation vector.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102838",
+    "publishedAt": "2026-11-24T07:07:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-webkit2gtk3-update",
+      "article-778a739a",
+      "778a739a",
+      "red-hat-issues-important-webkit2gtk3-update-2ee175"
     ]
   },
   {
@@ -682,6 +834,24 @@ export const news: NewsBrief[] = [
       "daf1c6c4",
       "red-hat-releases-security-update-for-container-too-2ee16e",
       "red-hat-releases-security-update-for-container-tools"
+    ]
+  },
+  {
+    "slug": "gta-vi-hacker-sentenced-released-same-day-fcf6ba53",
+    "title": "GTA VI Hacker Sentenced, Released Same Day",
+    "summary": "A British cybercriminal breached Rockstar Games’ systems, leaking unreleased Grand Theft Auto VI footage in the United Kingdom. The attack exploited internal access controls, but no specific vulnerability was publicly disclosed without evidence of ongoing threat to Rockstar’s operations. He received a seven-year prison sentence and was released on license after serving time.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/gta-vi-hacker-arion-kurtaj-released-on-license",
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gta-vi-hacker-sentenced-released-same-day",
+      "article-fcf6ba53",
+      "fcf6ba53",
+      "gta-vi-hacker-sentenced-released-same-day-47eeb4"
     ]
   },
   {
@@ -9213,175 +9383,6 @@ export const news: NewsBrief[] = [
       "dc679ec3",
       "rhsa-2026-100482-moderate-gstreamer1-plugins-bad-f-2ee07d",
       "rhsa-2026-100482-moderate-gstreamer1-plugins-bad-free-securi"
-    ]
-  },
-  {
-    "slug": "vmware-vcenter-vulnerabilities-exploited-in-wild-c-d742542e",
-    "title": "VMware vCenter Vulnerabilities Exploited in Wild (CVE-2026-123890)",
-    "summary": "Multiple VMware vCenter versions, including 9.1.x, 9.0.x, 8.0, and 7.0, contain vulnerabilities that have been exploited in the wild, such as CVE-2026-123890. The flaw allows attackers to gain unauthorized access to vCenter management functions, potentially enabling remote code execution and full control over virtual environments. VMware's VMSA-2026-0009 patch addresses CVE-2026-123890, CVE-2026-123891, and CVE-2026-123892; administrators should apply the update immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1185",
-    "publishedAt": "2026-11-19T19:02:48.000Z",
-    "cves": [
-      "CVE-2026-123890",
-      "CVE-2026-123891",
-      "CVE-2026-123892"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "vmware-vcenter-vulnerabilities-exploited-in-wild-c",
-      "article-d742542e",
-      "d742542e",
-      "vmware-vcenter-vulnerabilities-exploited-in-wild-c-7852fc",
-      "vmware-vcenter-vulnerabilities-exploited-in-wild-cve-2026-12"
-    ]
-  },
-  {
-    "slug": "pause-reactive-patching-for-team-stability-5cdb9296",
-    "title": "Pause Reactive Patching for Team Stability",
-    "summary": "Bill urges the cybersecurity community to pause from relentless reactive patching and instead focus on environmental awareness and team stability. He argues that sustainable practices and well-balanced workloads reduce burnout and improve long-term security posture. The message calls for a cultural shift toward proactive planning and holistic well-being rather than constant firefighting.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/the-internet-needs-a-nap-and-you-do-too/",
-    "publishedAt": "2026-11-19T19:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pause-reactive-patching-for-team-stability",
-      "article-5cdb9296",
-      "5cdb9296",
-      "pause-reactive-patching-for-team-stability-634e67"
-    ]
-  },
-  {
-    "slug": "mitel-micollab-vulnerability-affects-versions-10-3-fdd9df48",
-    "title": "Mitel MiCollab Vulnerability Affects Versions ≤10.3.0.18",
-    "summary": "Mitel disclosed a vulnerability affecting MiCollab versions up to 10.3.0.18. The flaw allows unauthorized access or potential data exposure, though no exploitation evidence is reported; the advisory does not assign a CVE identifier. Mitel recommends applying the latest MiCollab update or patch as provided in the advisory; administrators should review the Cyber Centre link for detailed instructions.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1184",
-    "publishedAt": "2026-11-19T18:51:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mitel-micollab-vulnerability-affects-versions-10-3",
-      "article-fdd9df48",
-      "fdd9df48",
-      "mitel-micollab-vulnerability-affects-versions-10-3-696627",
-      "mitel-micollab-vulnerability-affects-versions-10-3-0-18"
-    ]
-  },
-  {
-    "slug": "multiple-threats-gpt-6-2-flaws-bubbleloader-malwar-ad1c0b6a",
-    "title": "Multiple Threats: GPT-6.2 Flaws, BubbleLoader Malware, $500M Ransom",
-    "summary": "The article outlines several emerging threats, including GPT-6.2 jailbreak vulnerabilities, BubbleLoader PNG malware, and a $500 million ransom demand. It highlights how attackers exploit familiar interfaces and AI to deceive users into revealing credentials or executing malicious payloads. Security teams should monitor for these tactics, apply relevant patches, and employ AI-aware detection to mitigate potential compromise.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
-    "publishedAt": "2026-11-19T18:47:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "multiple-threats-gpt-6-2-flaws-bubbleloader-malwar",
-      "article-ad1c0b6a",
-      "ad1c0b6a",
-      "multiple-threats-gpt-6-2-flaws-bubbleloader-malwar-7c958c",
-      "multiple-threats-gpt-6-2-flaws-bubbleloader-malware-500m-ran"
-    ]
-  },
-  {
-    "slug": "php-vulnerabilities-affect-versions-8-6-0-8763cb55",
-    "title": "PHP Vulnerabilities Affect Versions <8.6.0",
-    "summary": "PHP Group identified security flaws in PHP versions prior to 8.6.0, including 8.5.13, 8.4.28, 8.3.37, and 8.2.36. The advisory does not list a CVE identifier, but the vulnerabilities could enable unauthorized code execution or data leakage. Administrators should apply the latest PHP 8.x patch or update as recommended in the Cyber Centre link to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/php-group-security-advisory-av26-1183",
-    "publishedAt": "2026-11-19T18:33:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php-vulnerabilities-affect-versions-8-6-0",
-      "article-8763cb55",
-      "8763cb55",
-      "php-vulnerabilities-affect-versions-8-6-0-1a35b7"
-    ]
-  },
-  {
-    "slug": "php-foundation-releases-security-fixes-for-8-2-8-5-63932e70",
-    "title": "PHP Foundation Releases Security Fixes for 8.2-8.5",
-    "summary": "PHP Foundation released security updates for PHP 8.2-8.5 addressing 17 issues across engine, extensions, and stream wrappers. The flaws involve the PHP engine, PHP-FPM, CGI binary, SOAP, Phar, session, DOM, date extensions, HTTP/FTP wrappers, and RFC 3986 URI implementation, but no public exploit is reported. AWS recommends applying the patched versions 8.2.36, 8.3.37, 8.4.28, and 8.5.13 as the sole remediation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-190-aws/",
-    "publishedAt": "2026-11-19T18:30:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php-foundation-releases-security-fixes-for-8-2-8-5",
-      "article-63932e70",
-      "63932e70",
-      "php-foundation-releases-security-fixes-for-8-2-8-5-1e0887"
-    ]
-  },
-  {
-    "slug": "ubiquiti-unifi-access-vulnerabilities-pre-4-3-24-f6faa93c",
-    "title": "Ubiquiti UniFi Access Vulnerabilities Pre-4.3.24",
-    "summary": "Ubiquiti disclosed security weaknesses in its UniFi Access Application versions before 4.3.24, exposing the software to potential exploitation via unspecified input vectors. Without a CVE ID, the flaws could let attackers manipulate configuration or session data, enabling unauthorized access. Administrators should review the advisory and apply any available firmware or software updates promptly to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/ubiquiti-security-advisory-av26-1182",
-    "publishedAt": "2026-11-19T18:28:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubiquiti-unifi-access-vulnerabilities-pre-4-3-24",
-      "article-f6faa93c",
-      "f6faa93c",
-      "ubiquiti-unifi-access-vulnerabilities-pre-4-3-24-3f023f"
-    ]
-  },
-  {
-    "slug": "jetbrains-teamcity-vulnerabilities-pre-2026-2-1-a278e213",
-    "title": "JetBrains TeamCity Vulnerabilities Pre-2026.2.1",
-    "summary": "JetBrains identified security weaknesses in its TeamCity product versions before 2026.2.1 and 2026.1.5, potentially exposing the CI/CD platform to exploitation. Without CVE IDs, the flaws could let attackers gain unauthorized access or disrupt builds via input validation errors. JetBrains urges users to review the advisory links and apply any available updates to secure the environment.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1181",
-    "publishedAt": "2026-11-19T18:24:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "jetbrains-teamcity-vulnerabilities-pre-2026-2-1",
-      "article-a278e213",
-      "a278e213",
-      "jetbrains-teamcity-vulnerabilities-pre-2026-2-1-53189b"
-    ]
-  },
-  {
-    "slug": "tfl-data-breach-exposes-265-000-oyster-card-users-62eda7bc",
-    "title": "TfL Data Breach Exposes 265,000 Oyster Card Users",
-    "summary": "Transport for London reported that approximately 265,000 Oyster photocard customers may have had their account details exposed in a data breach. The breach potentially compromised usernames, passwords, and personal information, though the extent of credential theft or misuse remains unconfirmed. TfL urges affected users to monitor accounts, change passwords, and review security settings while the investigation continues.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
-    "publishedAt": "2026-11-19T18:20:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tfl-data-breach-exposes-265-000-oyster-card-users",
-      "article-62eda7bc",
-      "62eda7bc",
-      "tfl-data-breach-exposes-265-000-oyster-card-users-5adcdf"
     ]
   }
 ];
