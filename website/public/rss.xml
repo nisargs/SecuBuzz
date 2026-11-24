@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 06:45:52 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 07:44:48 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Elecbrakes Bluetooth Flaw Enables Remote Brake Control</title>
+      <link>https://secubuzz.com/news/elecbrakes-bluetooth-flaw-enables-remote-brake-con-1f770d18</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/elecbrakes-bluetooth-flaw-enables-remote-brake-con-1f770d18</guid>
+      <description><![CDATA[A critical Bluetooth flaw in Elecbrakes trailer brake controllers, CVE-2026-96805, lets attackers within range manipulate brakes without pairing. Rated 9.6 CVSS, the flaw exploits command injection in Bluetooth, enabling unauthenticated remote brake control. Manufacturers should push firmware updates disabling unsecured Bluetooth commands; users must avoid exposing controllers to untrusted devices until patched.]]></description>
+      <pubDate>Tue, 24 Nov 2026 07:21:45 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/critical-bluetooth-flaw/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Hackers Compromise Check Point Management Servers</title>
+      <link>https://secubuzz.com/news/hackers-compromise-check-point-management-servers-360328a1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-compromise-check-point-management-servers-360328a1</guid>
+      <description><![CDATA[Hackers have compromised Check Point Security Management Servers, which store firewall rule sets that govern corporate traffic filtering. The ongoing campaign has affected at least 22 organizations worldwide, and attackers retain active access to many servers, exposing critical network controls. Check Point recommends applying the latest firmware patches, disabling unused management interfaces, and monitoring for anomalous configuration changes.]]></description>
+      <pubDate>Tue, 24 Nov 2026 07:03:43 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/check-point-security-management-servers/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Cloud CISO Discusses Agentic AI in SOC</title>
+      <link>https://secubuzz.com/news/google-cloud-ciso-discusses-agentic-ai-in-soc-f18561ce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-cloud-ciso-discusses-agentic-ai-in-soc-f18561ce</guid>
+      <description><![CDATA[Google Cloud CISO Chris Betz spoke about agentic AI in security operations during a Help Net Security interview. He noted that automation lets attackers traverse networks in minutes, questioned junior analyst roles, and urged reassessment of controls and board oversight. Betz advised organizations to evolve SOC workflows with AI-driven threat hunting and governance to counter increasingly stealthy espionage groups.]]></description>
+      <pubDate>Tue, 24 Nov 2026 07:00:16 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/chris-betz-google-agentic-ai-security/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Ransomware Groups Multiply Despite Fewer Victim Payments</title>
       <link>https://secubuzz.com/news/ransomware-groups-multiply-despite-fewer-victim-pa-db29ac26</link>
@@ -33,6 +60,15 @@
       <pubDate>Tue, 24 Nov 2026 06:12:17 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102813">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>SplitSecure Unveils Secret-Splitting Access Control Platform</title>
+      <link>https://secubuzz.com/news/splitsecure-unveils-secret-splitting-access-contro-2a84a83e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/splitsecure-unveils-secret-splitting-access-contro-2a84a83e</guid>
+      <description><![CDATA[SplitSecure announced a new access control platform built on secret-splitting technology to replace password managers, PAM, and vaults. The architecture supports passwords, passkeys, one-time codes, SAML & OIDC federation, and SSH, enabling secure credential handling for humans and AI agents. Organizations should evaluate the platform for integration with existing identity systems and assess its impact on compliance and operational workflows.]]></description>
+      <pubDate>Tue, 24 Nov 2026 06:07:23 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/splitsecure-launches-new-access-control-architecture-for-humans-and-ai-agents/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Issues Critical PHP 7.4 Security Update</title>
@@ -71,6 +107,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Node.js simple-git RCE Vulnerability CVE-2026-134815</title>
+      <link>https://secubuzz.com/news/node-js-simple-git-rce-vulnerability-cve-2026-1348-d005401f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/node-js-simple-git-rce-vulnerability-cve-2026-1348-d005401f</guid>
+      <description><![CDATA[A critical flaw in the Node.js simple-git library allows attackers to execute arbitrary commands on servers that pass untrusted input into Git arguments. Tracked as CVE-2026-134815, the vulnerability is an argument injection weakness present in simple-git versions before 4.1.0, enabling remote code execution without authentication. Users should upgrade to simple-git 4.1.0 or later to mitigate the flaw.]]></description>
+      <pubDate>Tue, 24 Nov 2026 05:55:37 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/node-js-simple-git-library-flaw/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>IT Delegates Password Management While Maintaining Control</title>
       <link>https://secubuzz.com/news/it-delegates-password-management-while-maintaining-599336a7</link>
       <guid isPermaLink="true">https://secubuzz.com/news/it-delegates-password-management-while-maintaining-599336a7</guid>
@@ -95,6 +140,15 @@
       <description><![CDATA[Red Hat released an important security update for the skopeo tool on RHEL 9.8 Extended Update Support. The update addresses unspecified vulnerabilities in skopeo, with Red Hat Product Security rating the fix as Important and providing CVSS scores via CVE references. Administrators should apply the update promptly to mitigate potential exploitation of the skopeo flaws.]]></description>
       <pubDate>Tue, 24 Nov 2026 05:09:26 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102806">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Important libXi Update for RHEL 9.4</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-libxi-update-for-rhel-9-4-feaf3316</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-libxi-update-for-rhel-9-4-feaf3316</guid>
+      <description><![CDATA[Red Hat issued an Important security update for libXi on RHEL 9.4 Update Services for SAP Solutions. The patch addresses libXi vulnerabilities, with CVSS base scores linked via CVE references, and is rated Important by Product Security. Users should apply the update promptly to mitigate the weaknesses and meet SAP solution compliance.]]></description>
+      <pubDate>Tue, 24 Nov 2026 05:08:39 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102799">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -176,6 +230,15 @@
       <description><![CDATA[SANS Internet Storm Center reports continuous scanning from subnet 109.160.32.0/24, assigned to BANATSYNC SRL, a Romanian web hosting and VPS provider. DShield sensor data shows persistent probing over 90 days, suggesting ongoing reconnaissance or potential exploitation attempts against the subnet's hosts. Security teams should monitor for suspicious activity, enforce rate limiting, and harden hosts to mitigate potential threats.]]></description>
       <pubDate>Tue, 24 Nov 2026 02:32:00 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33550">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ISC Stormcast Podcast Released for Nov 24, 2026</title>
+      <link>https://secubuzz.com/news/isc-stormcast-podcast-released-for-nov-24-2026-fe0f5f93</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-podcast-released-for-nov-24-2026-fe0f5f93</guid>
+      <description><![CDATA[The ISC Stormcast podcast released for Tuesday, November 24, 2026, delivers a concise briefing on the latest cyber threat landscape. The episode covers emerging malware trends, nation-state activity, and defensive tactics, providing analysts with actionable insights for the week. Listeners can access the recording via the ISC website or subscribe to the podcast feed for real-time updates.]]></description>
+      <pubDate>Tue, 24 Nov 2026 02:00:04 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33552">SANS Internet Storm Center</source>
       <category>General</category>
     </item>
     <item>
@@ -392,69 +455,6 @@
       <description><![CDATA[Google Chrome released a stable channel update to version 158.0.8127.88 for Windows, Mac, and Linux, rolling out over the next weeks. The update includes security fixes, with a detailed change log available; users are encouraged to review the log before upgrading. Administrators should schedule the rollout, verify compatibility, and monitor for any post-upgrade issues via the community help forum.]]></description>
       <pubDate>Mon, 23 Nov 2026 20:52:51 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chrome Extended Stable Channel Updated to 156.0.8078.114</title>
-      <link>https://secubuzz.com/news/chrome-extended-stable-channel-updated-to-156-0-80-45d8d596</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-extended-stable-channel-updated-to-156-0-80-45d8d596</guid>
-      <description><![CDATA[Google Chrome’s Extended Stable channel updated to 156.0.8078.114 for Windows and macOS, extending the stable release schedule. The update lists changes, with security fixes pending a later release, and will roll out over the next days or weeks. Users may review the change log, file bugs, or use the community forum while awaiting the security patch.]]></description>
-      <pubDate>Mon, 23 Nov 2026 20:52:47 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01590513949.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CVE-2026-134056 - Out-of-bounds write in padded block cipher decryption in AWS-LC</title>
-      <link>https://secubuzz.com/news/cve-2026-134056-out-of-bounds-write-in-padded-bloc-994f1241</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-134056-out-of-bounds-write-in-padded-bloc-994f1241</guid>
-      <description><![CDATA[Bulletin ID: 2026-196-AWS Publication Date: 11/23/2026 12:00 PM PST Description: We identified CVE-2026-134056, an out-of-bounds write issue in AWS-LC's padded block cipher decryption. If the output buffer is the minimum documented size, AWS-LC can write one byte past its end. The aws-lc-rs StreamingDecryptingKey API has a similar issue with cbc_pkcs7 and ecb_pkcs7.]]></description>
-      <pubDate>Mon, 23 Nov 2026 20:29:41 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-196-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important SQLite Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-sqlite-security-update-eb5cc09f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-sqlite-security-update-eb5cc09f</guid>
-      <description><![CDATA[Red Hat released an important security update for SQLite on Red Hat Enterprise Linux 8, addressing multiple vulnerabilities. The update carries an Important impact rating, with CVSS base scores linked to each CVE in the advisory references. Administrators should apply the update immediately and verify that SQLite components are patched to mitigate potential exploitation.]]></description>
-      <pubDate>Mon, 23 Nov 2026 20:28:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102648">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cisco Products Affected by PHP Remote Code Vulnerability</title>
-      <link>https://secubuzz.com/news/cisco-products-affected-by-php-remote-code-vulnera-a22919db</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-products-affected-by-php-remote-code-vulnera-a22919db</guid>
-      <description><![CDATA[Cisco products are vulnerable to a PHP flaw that permits remote code execution, as disclosed by the PHP Foundation on November 19, 2026. The flaw, identified as CVE-2026-126714 and dubbed phpAfterShell, carries a Critical security impact rating and is referenced by GHSA-fm2m-fjf5-v3cp. Cisco recommends applying the available PHP security patches immediately to mitigate the RCE risk and ensure system integrity.]]></description>
-      <pubDate>Mon, 23 Nov 2026 20:20:00 GMT</pubDate>
-      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-phpaftershell-nov-2026-kT9pL4Xe?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerability+in+PHP+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1">Cisco PSIRT</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Moderate Update for go-toolset:rhel8</title>
-      <link>https://secubuzz.com/news/red-hat-issues-moderate-update-for-go-toolset-rhel-9f1b8474</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-moderate-update-for-go-toolset-rhel-9f1b8474</guid>
-      <description><![CDATA[Red Hat released a moderate security update for the go-toolset:rhel8 module on RHEL8, fixing multiple Go compiler bugs. The patch addresses local privilege escalation and denial-of-service flaws with CVSS scores up to 7.5, though no active exploitation is known. Red Hat advises applying the update via the standard RHEL8 update channel; no workarounds are required.]]></description>
-      <pubDate>Mon, 23 Nov 2026 20:16:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102592">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Trump Names Industry Veteran Davies as Acting Cyber Director</title>
-      <link>https://secubuzz.com/news/trump-names-industry-veteran-davies-as-acting-cybe-bcd7ff11</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trump-names-industry-veteran-davies-as-acting-cybe-bcd7ff11</guid>
-      <description><![CDATA[Trump appointed Kirsten Davies as National Cyber Director, signaling a shift toward industry expertise amid outages and geopolitical tensions. The move follows criticism of cyber leadership and aims to leverage Davies' private sector experience to strengthen U.S. cyber defenses. The appointment is expected to influence policy direction and coordination with industry partners, though no immediate operational changes have been announced.]]></description>
-      <pubDate>Mon, 23 Nov 2026 20:13:48 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OpenRouter Removes AI Providers for Data Handling Violations</title>
-      <link>https://secubuzz.com/news/openrouter-removes-ai-providers-for-data-handling-161bd63a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openrouter-removes-ai-providers-for-data-handling-161bd63a</guid>
-      <description><![CDATA[OpenRouter removed three AI providers after discovering they violated data-handling policies and exposed sensitive user prompts and secrets. The policy breach leaked proprietary prompts, potentially compromising client confidentiality and violating OpenRouter's privacy commitments. OpenRouter suspended the providers, issued a public notice, and is reviewing vetting procedures to prevent future violations.]]></description>
-      <pubDate>Mon, 23 Nov 2026 20:00:20 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/">BleepingComputer</source>
       <category>General</category>
     </item>
   </channel>

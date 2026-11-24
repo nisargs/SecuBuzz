@@ -11,6 +11,63 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "elecbrakes-bluetooth-flaw-enables-remote-brake-con-1f770d18",
+    "title": "Elecbrakes Bluetooth Flaw Enables Remote Brake Control",
+    "summary": "A critical Bluetooth flaw in Elecbrakes trailer brake controllers, CVE-2026-96805, lets attackers within range manipulate brakes without pairing. Rated 9.6 CVSS, the flaw exploits command injection in Bluetooth, enabling unauthenticated remote brake control. Manufacturers should push firmware updates disabling unsecured Bluetooth commands; users must avoid exposing controllers to untrusted devices until patched.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-bluetooth-flaw/",
+    "publishedAt": "2026-11-24T07:21:45.000Z",
+    "cves": [
+      "CVE-2026-96805"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "elecbrakes-bluetooth-flaw-enables-remote-brake-con",
+      "article-1f770d18",
+      "1f770d18",
+      "elecbrakes-bluetooth-flaw-enables-remote-brake-con-ff7b14",
+      "elecbrakes-bluetooth-flaw-enables-remote-brake-control"
+    ]
+  },
+  {
+    "slug": "hackers-compromise-check-point-management-servers-360328a1",
+    "title": "Hackers Compromise Check Point Management Servers",
+    "summary": "Hackers have compromised Check Point Security Management Servers, which store firewall rule sets that govern corporate traffic filtering. The ongoing campaign has affected at least 22 organizations worldwide, and attackers retain active access to many servers, exposing critical network controls. Check Point recommends applying the latest firmware patches, disabling unused management interfaces, and monitoring for anomalous configuration changes.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/check-point-security-management-servers/",
+    "publishedAt": "2026-11-24T07:03:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-compromise-check-point-management-servers",
+      "article-360328a1",
+      "360328a1",
+      "hackers-compromise-check-point-management-servers-4c8a3c"
+    ]
+  },
+  {
+    "slug": "google-cloud-ciso-discusses-agentic-ai-in-soc-f18561ce",
+    "title": "Google Cloud CISO Discusses Agentic AI in SOC",
+    "summary": "Google Cloud CISO Chris Betz spoke about agentic AI in security operations during a Help Net Security interview. He noted that automation lets attackers traverse networks in minutes, questioned junior analyst roles, and urged reassessment of controls and board oversight. Betz advised organizations to evolve SOC workflows with AI-driven threat hunting and governance to counter increasingly stealthy espionage groups.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/chris-betz-google-agentic-ai-security/",
+    "publishedAt": "2026-11-24T07:00:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-cloud-ciso-discusses-agentic-ai-in-soc",
+      "article-f18561ce",
+      "f18561ce",
+      "google-cloud-ciso-discusses-agentic-ai-in-soc-72b4c2"
+    ]
+  },
+  {
     "slug": "ransomware-groups-multiply-despite-fewer-victim-pa-db29ac26",
     "title": "Ransomware Groups Multiply Despite Fewer Victim Payments",
     "summary": "Check Point Research’s State of Ransomware Q3 2026 report lists 2,830 victims on data-leak sites, the highest quarterly total on record. July, August, and September accounted for 964, 1,042, and 824 victims respectively, indicating a sustained expansion of active ransomware groups. The report shows declining payments but continued brand proliferation, stressing the need for stronger defensive measures.",
@@ -64,6 +121,25 @@ export const news: NewsBrief[] = [
       "article-bbd94913",
       "bbd94913",
       "red-hat-releases-cockpit-security-update-2ee174"
+    ]
+  },
+  {
+    "slug": "splitsecure-unveils-secret-splitting-access-contro-2a84a83e",
+    "title": "SplitSecure Unveils Secret-Splitting Access Control Platform",
+    "summary": "SplitSecure announced a new access control platform built on secret-splitting technology to replace password managers, PAM, and vaults. The architecture supports passwords, passkeys, one-time codes, SAML & OIDC federation, and SSH, enabling secure credential handling for humans and AI agents. Organizations should evaluate the platform for integration with existing identity systems and assess its impact on compliance and operational workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/splitsecure-launches-new-access-control-architecture-for-humans-and-ai-agents/",
+    "publishedAt": "2026-11-24T06:07:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "splitsecure-unveils-secret-splitting-access-contro",
+      "article-2a84a83e",
+      "2a84a83e",
+      "splitsecure-unveils-secret-splitting-access-contro-5b17cc",
+      "splitsecure-unveils-secret-splitting-access-control-platform"
     ]
   },
   {
@@ -142,6 +218,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "node-js-simple-git-rce-vulnerability-cve-2026-1348-d005401f",
+    "title": "Node.js simple-git RCE Vulnerability CVE-2026-134815",
+    "summary": "A critical flaw in the Node.js simple-git library allows attackers to execute arbitrary commands on servers that pass untrusted input into Git arguments. Tracked as CVE-2026-134815, the vulnerability is an argument injection weakness present in simple-git versions before 4.1.0, enabling remote code execution without authentication. Users should upgrade to simple-git 4.1.0 or later to mitigate the flaw.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/node-js-simple-git-library-flaw/",
+    "publishedAt": "2026-11-24T05:55:37.000Z",
+    "cves": [
+      "CVE-2026-134815"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "node-js-simple-git-rce-vulnerability-cve-2026-1348",
+      "article-d005401f",
+      "d005401f",
+      "node-js-simple-git-rce-vulnerability-cve-2026-1348-26fd16",
+      "node-js-simple-git-rce-vulnerability-cve-2026-134815"
+    ]
+  },
+  {
     "slug": "it-delegates-password-management-while-maintaining-599336a7",
     "title": "IT Delegates Password Management While Maintaining Control",
     "summary": "IT departments often delegate password management to business units, creating accounts that may be unknown to central security teams. This practice can leave IT responsible for credentials it cannot monitor, increasing risk when personnel changes or external contractors access shared accounts. Implementing centralized identity governance, enforcing least-privilege access, and requiring IT involvement in account provisioning can mitigate these risks.",
@@ -194,6 +291,24 @@ export const news: NewsBrief[] = [
       "article-81f307ba",
       "81f307ba",
       "red-hat-issues-important-skopeo-security-update-2ee174"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-libxi-update-for-rhel-9-4-feaf3316",
+    "title": "Red Hat Issues Important libXi Update for RHEL 9.4",
+    "summary": "Red Hat issued an Important security update for libXi on RHEL 9.4 Update Services for SAP Solutions. The patch addresses libXi vulnerabilities, with CVSS base scores linked via CVE references, and is rated Important by Product Security. Users should apply the update promptly to mitigate the weaknesses and meet SAP solution compliance.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102799",
+    "publishedAt": "2026-11-24T05:08:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-libxi-update-for-rhel-9-4",
+      "article-feaf3316",
+      "feaf3316",
+      "red-hat-issues-important-libxi-update-for-rhel-9-4-2ee172"
     ]
   },
   {
@@ -358,6 +473,24 @@ export const news: NewsBrief[] = [
       "article-baab0068",
       "baab0068",
       "ongoing-scanning-detected-on-banatsync-subnet-57dd81"
+    ]
+  },
+  {
+    "slug": "isc-stormcast-podcast-released-for-nov-24-2026-fe0f5f93",
+    "title": "ISC Stormcast Podcast Released for Nov 24, 2026",
+    "summary": "The ISC Stormcast podcast released for Tuesday, November 24, 2026, delivers a concise briefing on the latest cyber threat landscape. The episode covers emerging malware trends, nation-state activity, and defensive tactics, providing analysts with actionable insights for the week. Listeners can access the recording via the ISC website or subscribe to the podcast feed for real-time updates.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33552",
+    "publishedAt": "2026-11-24T02:00:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-podcast-released-for-nov-24-2026",
+      "article-fe0f5f93",
+      "fe0f5f93",
+      "isc-stormcast-podcast-released-for-nov-24-2026-57dd81"
     ]
   },
   {
@@ -3368,6 +3501,24 @@ export const news: NewsBrief[] = [
       "article-a07bae89",
       "a07bae89",
       "weekly-security-roundup-nov-16-22-b93180"
+    ]
+  },
+  {
+    "slug": "outages-reveal-need-for-robust-recovery-planning-42474264",
+    "title": "Outages Reveal Need for Robust Recovery Planning",
+    "summary": "Outages at Microsoft, the FAA, and major banks highlight the need for robust recovery planning, as lack of resilience caused extended downtime. The incidents exposed gaps in business continuity frameworks, revealing that inadequate failover testing can leave essential services vulnerable to prolonged disruption. Organizations should define downtime thresholds, conduct failover drills, and implement automated recovery workflows to maintain continuity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/why-resilience-has-to-come-first",
+    "publishedAt": "2026-11-23T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "outages-reveal-need-for-robust-recovery-planning",
+      "article-42474264",
+      "42474264",
+      "outages-reveal-need-for-robust-recovery-planning-70868f"
     ]
   },
   {
@@ -9227,165 +9378,6 @@ export const news: NewsBrief[] = [
       "article-e648c712",
       "e648c712",
       "phpaftershell-enables-php-session-exploit-213b90"
-    ]
-  },
-  {
-    "slug": "phpaftershell-exploits-php2shell-patch-to-enable-r-81a2d034",
-    "title": "phpAfterShell Exploits PHP2Shell Patch to Enable RCE",
-    "summary": "A new PHP attack, phpAfterShell, enables unauthenticated remote code execution on servers even after the October PHP2Shell patches. The flaw, CVE-2026-126714, exploits a separate PHP bug that lets attackers combine payloads and run arbitrary code without authentication. Administrators should apply the latest PHP patch and verify that the phpAfterShell vulnerability is mitigated.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/phpaftershell-rce/",
-    "publishedAt": "2026-11-19T16:50:33.000Z",
-    "cves": [
-      "CVE-2026-126714"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "phpaftershell-exploits-php2shell-patch-to-enable-r",
-      "article-81a2d034",
-      "81a2d034",
-      "phpaftershell-exploits-php2shell-patch-to-enable-r-822549",
-      "phpaftershell-exploits-php2shell-patch-to-enable-rce"
-    ]
-  },
-  {
-    "slug": "vmware-vcenter-authentication-bypass-flaws-exposed-1973945a",
-    "title": "VMware vCenter Authentication Bypass Flaws Exposed",
-    "summary": "Broadcom issued VMSA-2026-0009, detailing five VMware flaws that let attackers with network access to vCenter bypass authentication and reach servers, including vCenter, SDDC Manager, and VMware Tools. The most severe flaw, CVE-2026-123890, scores 9.8 on CVSS, enabling unauthenticated remote code execution via credential-less access. No workarounds are available; administrators must apply the Broadcom patches immediately to prevent exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/vmware-vcenter-authentication-bypass/",
-    "publishedAt": "2026-11-19T16:30:55.000Z",
-    "cves": [
-      "CVE-2026-123890"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "vmware-vcenter-authentication-bypass-flaws-exposed",
-      "article-1973945a",
-      "1973945a",
-      "vmware-vcenter-authentication-bypass-flaws-exposed-157a43"
-    ]
-  },
-  {
-    "slug": "php-releases-18-security-patches-for-critical-rce-8cd3859d",
-    "title": "PHP Releases 18 Security Patches for Critical RCE Flaws",
-    "summary": "PHP released updates for 18 vulnerabilities, including critical flaws that let unauthenticated attackers remotely execute code. The bugs stem from improper input validation in PHP core, enabling code injection without authentication and granting server control. All affected PHP versions ship patches; administrators should update to the latest release or apply vendor-supplied hotfixes to eliminate the risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
-    "publishedAt": "2026-11-19T16:28:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php-releases-18-security-patches-for-critical-rce",
-      "article-8cd3859d",
-      "8cd3859d",
-      "php-releases-18-security-patches-for-critical-rce-1d7cf4",
-      "php-releases-18-security-patches-for-critical-rce-flaws"
-    ]
-  },
-  {
-    "slug": "uk-court-confirms-secret-encryption-notice-to-appl-9bce48c5",
-    "title": "UK Court Confirms Secret Encryption Notice to Apple",
-    "summary": "A UK tribunal confirmed that the British government served Apple with a notice targeting the company’s iCloud encryption safeguards. The notice, denied for almost two years, seeks to compel Apple to provide access to encrypted data stored on its servers. Apple’s legal team has not yet responded, but security teams should monitor for potential policy changes affecting cloud encryption compliance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/apple-uk-encryption-notice",
-    "publishedAt": "2026-11-19T16:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uk-court-confirms-secret-encryption-notice-to-appl",
-      "article-9bce48c5",
-      "9bce48c5",
-      "uk-court-confirms-secret-encryption-notice-to-appl-634638",
-      "uk-court-confirms-secret-encryption-notice-to-apple"
-    ]
-  },
-  {
-    "slug": "jpmorgan-chase-confirms-third-party-data-exposure-8e3f6470",
-    "title": "JPMorgan Chase Confirms Third-Party Data Exposure",
-    "summary": "JPMorgan Chase confirmed a third-party cyberattack targeting outside companies that provide services to the bank. Attackers accessed marketing data held by those vendors, which may include some customer names and email addresses, though the bank did not disclose how many customers are affected. Security teams should treat exposed names and emails as phishing risk and verify third-party access controls.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/jpmorgan-third-party-data-breach/",
-    "publishedAt": "2026-11-19T16:14:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "jpmorgan-chase-confirms-third-party-data-exposure",
-      "article-8e3f6470",
-      "8e3f6470",
-      "jpmorgan-chase-confirms-third-party-data-exposure-1623d8"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-cve-2026-85846-elevation-fl-e842d853",
-    "title": "Microsoft Acknowledges CVE-2026-85846 Elevation Flaw",
-    "summary": "Microsoft acknowledges CVE-2026-85846, an elevation of privilege flaw in Web Account Manager. The vulnerability allows attackers to gain higher privileges within the web account context, potentially enabling unauthorized access to protected resources. Microsoft has issued an informational update; no active exploitation reported, and users should apply the forthcoming patch when available.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85846",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-85846"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-cve-2026-85846-elevation-fl",
-      "article-e842d853",
-      "e842d853",
-      "microsoft-acknowledges-cve-2026-85846-elevation-fl-743ff6",
-      "microsoft-acknowledges-cve-2026-85846-elevation-flaw"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-cve-2026-88130-dns-dos-a02c7571",
-    "title": "Microsoft Acknowledges CVE-2026-88130 DNS DoS",
-    "summary": "Microsoft acknowledges CVE-2026-88130, a denial-of-service flaw in its DNS server component. The vulnerability can cause the DNS service to become unresponsive, potentially disrupting domain resolution for affected clients. Microsoft has released an informational update; no active exploitation reported, and administrators should monitor for the forthcoming patch and apply it promptly.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88130",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-88130"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-cve-2026-88130-dns-dos",
-      "article-a02c7571",
-      "a02c7571",
-      "microsoft-acknowledges-cve-2026-88130-dns-dos-743eb3"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-cve-2026-97743-excel-disclo-6eac2975",
-    "title": "Microsoft Acknowledges CVE-2026-97743 Excel Disclosure",
-    "summary": "Microsoft acknowledges CVE-2026-97743, an information disclosure flaw in Microsoft Office Excel. The vulnerability allows attackers to read sensitive data from Excel workbooks without authentication, potentially exposing confidential information. Microsoft has issued an informational update; no active exploitation reported, and users should apply the forthcoming patch when available to mitigate the disclosure.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97743",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97743"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-cve-2026-97743-excel-disclo",
-      "article-6eac2975",
-      "6eac2975",
-      "microsoft-acknowledges-cve-2026-97743-excel-disclo-7430f9",
-      "microsoft-acknowledges-cve-2026-97743-excel-disclosure"
     ]
   }
 ];
