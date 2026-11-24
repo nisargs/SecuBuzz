@@ -11,6 +11,100 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "vmware-patches-critical-esx-and-vcenter-vulnerabil-a401c0cd",
+    "title": "VMware Patches Critical ESX and vCenter Vulnerabilities",
+    "summary": "VMware disclosed a critical authentication bypass in vCenter and code execution flaws on ESX hosts, identified by CVE-2026-123903. The flaw permits unauthenticated attackers to gain control of vCenter and run arbitrary code on ESX servers, threatening virtual infrastructure. VMware issued an out-of-band patch; administrators should apply it immediately to secure affected systems.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/",
+    "publishedAt": "2026-11-24T16:32:56.000Z",
+    "cves": [
+      "CVE-2026-123903"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "vmware-patches-critical-esx-and-vcenter-vulnerabil",
+      "article-a401c0cd",
+      "a401c0cd",
+      "vmware-patches-critical-esx-and-vcenter-vulnerabil-3b1d10",
+      "vmware-patches-critical-esx-and-vcenter-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "shinyhunters-claims-to-return-after-fbi-arrests-us-310365e0",
+    "title": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
+    "summary": "The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
+    "publishedAt": "2026-11-24T16:30:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "shinyhunters-claims-to-return-after-fbi-arrests-us",
+      "article-310365e0",
+      "310365e0",
+      "shinyhunters-claims-to-return-after-fbi-arrests-us-329b20",
+      "shinyhunters-claims-to-return-after-fbi-arrests-uses-old-pgp"
+    ]
+  },
+  {
+    "slug": "eu-academy-breach-stole-user-data-57513e30",
+    "title": "EU Academy Breach Stole User Data",
+    "summary": "The European Commission confirmed attackers breached its EU Academy learning hub and stole personal data of an undisclosed number of users. The breach exposed user credentials and demographic details, enabling potential identity theft or phishing attacks against EU staff and students. The Commission must investigate, notify affected users, and reinforce access controls on the EU Academy platform.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/",
+    "publishedAt": "2026-11-24T16:22:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eu-academy-breach-stole-user-data",
+      "article-57513e30",
+      "57513e30",
+      "eu-academy-breach-stole-user-data-21e64d"
+    ]
+  },
+  {
+    "slug": "check-point-servers-compromised-in-22-org-campaign-4e126213",
+    "title": "Check Point Servers Compromised in 22-Org Campaign",
+    "summary": "Threat actors exploited multiple vulnerabilities to compromise Check Point Security management servers in an ongoing campaign that affected 22 organizations. The exploitation enabled attackers to gain administrative control over the servers, potentially exposing configuration data and internal network traffic. Check Point has released patches for the affected vulnerabilities; administrators should apply updates and review server hardening configurations.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
+    "publishedAt": "2026-11-24T16:15:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "check-point-servers-compromised-in-22-org-campaign",
+      "article-4e126213",
+      "4e126213",
+      "check-point-servers-compromised-in-22-org-campaign-32f490"
+    ]
+  },
+  {
+    "slug": "carnegie-endowment-donor-data-leaked-by-vendor-45cf6cec",
+    "title": "Carnegie Endowment Donor Data Leaked by Vendor",
+    "summary": "The Carnegie Endowment for International Peace reported that a third-party vendor, Soapbox Engage, suffered a breach that leaked donor information. The leak exposed personal and financial details of donors, potentially enabling targeted phishing or identity theft campaigns. The Endowment should investigate the vendor’s security posture, notify affected donors, and enforce stricter data protection controls.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/carnegie-endowment-data-breach",
+    "publishedAt": "2026-11-24T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "carnegie-endowment-donor-data-leaked-by-vendor",
+      "article-45cf6cec",
+      "45cf6cec",
+      "carnegie-endowment-donor-data-leaked-by-vendor-4e7787"
+    ]
+  },
+  {
     "slug": "ai-development-adds-vulnerability-noise-calls-for-f1552214",
     "title": "AI Development Adds Vulnerability Noise, Calls for Resilience",
     "summary": "AI-driven development increases software supply-chain complexity, flooding security teams with low-risk vulnerabilities. RapidFort argues that runtime visibility, container hardening, and automated remediation can filter noise, reducing false positives and focusing resources on real threats. Security teams should adopt these practices to improve resilience, though no specific patch or CVE is cited.",
@@ -194,6 +288,24 @@ export const news: NewsBrief[] = [
       "article-fa91e5d3",
       "fa91e5d3",
       "shirudo-ai-tool-protects-unpatched-linux-systems-5c4b77"
+    ]
+  },
+  {
+    "slug": "anthropic-enhances-enterprise-ai-misuse-detection-d206bbec",
+    "title": "Anthropic Enhances Enterprise AI Misuse Detection",
+    "summary": "Anthropic introduced an Enterprise File System (EFS) feature to detect Claude AI misuse across multiple requests for zero-retention customers. The mechanism scans request patterns, flags anomalous usage, and preserves conversation data within the customer’s own cloud, preventing data leakage. Security teams should enable EFS, monitor flagged sessions, and maintain local data retention policies to mitigate potential misuse.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/anthropic-expands-enterprise-safeguards-for-detecting-ai-misuse/",
+    "publishedAt": "2026-11-24T13:30:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-enhances-enterprise-ai-misuse-detection",
+      "article-d206bbec",
+      "d206bbec",
+      "anthropic-enhances-enterprise-ai-misuse-detection-138f1d"
     ]
   },
   {
@@ -503,6 +615,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "automationdirect-c-more-ea9-programming-software-4e483033",
+    "title": "AutomationDirect C-More EA9 Programming Software",
+    "summary": "The following versions of AutomationDirect C-More EA9 Programming Software are affected: C-More EA9 Programming Software CVSS Vendor Equipment v3 7.8 AutomationDirect C-More EA9 Programming Software 1 Vulnerability Heap-based Buffer Overflow . An attacker can exploit this vulnerability by convincing a user to open a malicious project file delivered through common distribution channels such as email, file sharing, or removable media. The flaw is tracked as CVE-2026-127280.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
+    "publishedAt": "2026-11-24T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-127280"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "automationdirect-c-more-ea9-programming-software",
+      "article-4e483033",
+      "4e483033",
+      "automationdirect-c-more-ea9-programming-software-41abb8"
+    ]
+  },
+  {
     "slug": "kepco-data-breach-exposes-1-5-million-personal-rec-8eae557f",
     "title": "KEPCO Data Breach Exposes 1.5 Million Personal Records",
     "summary": "Hackers accessed KEPCO’s customer portal and supplier relationship management platform, exfiltrating personal data of approximately 1.5 million users. The breach involved names, contact details, and possibly financial identifiers, though the full data scope is unclear. KEPCO has not yet released a detailed incident response plan; affected parties should monitor for identity theft and consider credit monitoring services.",
@@ -594,6 +726,27 @@ export const news: NewsBrief[] = [
       "f14f6a42",
       "libreoffice-vulnerabilities-patched-in-rhel-9-4-sa-2ee175",
       "libreoffice-vulnerabilities-patched-in-rhel-9-4-sap"
+    ]
+  },
+  {
+    "slug": "alpine-ssh-authentication-bypass-via-257-byte-pass-47527dbf",
+    "title": "Alpine SSH Authentication Bypass via 257-Byte Password",
+    "summary": "OpenSSH flaw CVE-2026-123158 lets remote attackers authenticate to Alpine Linux accounts using musl, no PAM, and password logins, without a valid password or SSH key. SSHole exploits a parsing error in password authentication, enabling forged sessions and unauthorized access that could lead to lateral movement.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-bypass-alpine-linux-ssh-authentication/",
+    "publishedAt": "2026-11-24T11:25:20.000Z",
+    "cves": [
+      "CVE-2026-123158"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "alpine-ssh-authentication-bypass-via-257-byte-pass",
+      "article-47527dbf",
+      "47527dbf",
+      "alpine-ssh-authentication-bypass-via-257-byte-pass-b3b708",
+      "alpine-ssh-authentication-bypass-via-257-byte-password"
     ]
   },
   {
@@ -784,6 +937,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhoso-18-0-24-critical-security-update-released-0032b6c9",
+    "title": "RHOSO 18.0.24 Critical Security Update Released",
+    "summary": "Red Hat OpenStack Services on OpenShift (RHOSO) 18.0 RPMs have been released with a critical security impact, addressing multiple vulnerabilities affecting the platform. Each vulnerability is linked to a CVE and assigned a CVSS base score, but no specific CVE identifiers are disclosed in the advisory. Administrators should install the updated RPMs immediately to mitigate the identified security risks.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102906",
+    "publishedAt": "2026-11-24T10:43:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhoso-18-0-24-critical-security-update-released",
+      "article-0032b6c9",
+      "0032b6c9",
+      "rhoso-18-0-24-critical-security-update-released-2ee178"
+    ]
+  },
+  {
     "slug": "red-hat-issues-container-tools-rhel8-security-upda-2c96d487",
     "title": "Red Hat Issues container-tools:rhel8 Security Update for RHEL 8.4",
     "summary": "Red Hat released a security update for the container-tools:rhel8 module on RHEL 8.4 AMCS and EUS LLA, addressing multiple vulnerabilities. The update contains fixes for issues with CVSS scores listed in the CVE references, but no active exploitation has been reported. Red Hat recommends applying the patch through the standard RHEL update channels to mitigate potential remote code execution.",
@@ -856,6 +1027,26 @@ export const news: NewsBrief[] = [
       "37f0bc25",
       "rhsa-2026-102880-important-imagemagick-security-up-2ee175",
       "rhsa-2026-102880-important-imagemagick-security-update"
+    ]
+  },
+  {
+    "slug": "chrome-vulnerability-lets-code-run-outside-sandbox-1fca16de",
+    "title": "Chrome Vulnerability Lets Code Run Outside Sandbox",
+    "summary": "Google Chrome's CVE-2026-134401 flaw permits remote attackers to execute code outside the browser sandbox, potentially compromising the host system. The vulnerability arises from a memory corruption bug in the rendering engine, enabling arbitrary code execution without user interaction. Google released a stable update for Windows, macOS, and Linux; users should install the patch within the next few days to mitigate.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-google-chrome-flaw/",
+    "publishedAt": "2026-11-24T09:37:46.000Z",
+    "cves": [
+      "CVE-2026-134401"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-vulnerability-lets-code-run-outside-sandbox",
+      "article-1fca16de",
+      "1fca16de",
+      "chrome-vulnerability-lets-code-run-outside-sandbox-5c3d42"
     ]
   },
   {
@@ -952,6 +1143,24 @@ export const news: NewsBrief[] = [
       "article-77e427ff",
       "77e427ff",
       "rhsa-2026-102854-critical-ruby-security-update-2ee175"
+    ]
+  },
+  {
+    "slug": "php-critical-security-update-for-rhel-9-4-sap-00df2f33",
+    "title": "PHP Critical Security Update for RHEL 9.4 SAP",
+    "summary": "Red Hat released a critical PHP security update for RHEL 9.4 Update Services for SAP Solutions, addressing multiple vulnerabilities that could allow remote code execution. Each vulnerability is linked to a CVE and assigned a CVSS base score, but specific CVE identifiers are not disclosed in the advisory.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102855",
+    "publishedAt": "2026-11-24T09:08:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-critical-security-update-for-rhel-9-4-sap",
+      "article-00df2f33",
+      "00df2f33",
+      "php-critical-security-update-for-rhel-9-4-sap-2ee175"
     ]
   },
   {
@@ -9128,209 +9337,6 @@ export const news: NewsBrief[] = [
       "article-56850d67",
       "56850d67",
       "red-hat-kernel-update-for-rhel-9-2ee085"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100655-important-net-10-0-security-bug-f-1748adca",
-    "title": "RHSA-2026:100655: Important: .NET 10.0 security, bug fix, and enhancement update",
-    "summary": "An update for .NET 10.0 is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100655",
-    "publishedAt": "2026-11-20T08:28:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100655-important-net-10-0-security-bug-f",
-      "article-1748adca",
-      "1748adca",
-      "rhsa-2026-100655-important-net-10-0-security-bug-f-2ee085",
-      "rhsa-2026-100655-important-net-10-0-security-bug-fix-and-enh"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-update-for-rhel-9-4-sap-816c4b99",
-    "title": "Red Hat Kernel Update for RHEL 9.4 SAP",
-    "summary": "Red Hat issued a kernel security update for Enterprise Linux 9.4 SAP Solutions, fixing bugs that could allow privilege escalation or denial of service. CVSS base scores for each vulnerability are listed in the CVE references, indicating high impact severity. Apply the kernel patch via RHEL 9.4 Update Services for SAP Solutions to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100660",
-    "publishedAt": "2026-11-20T08:27:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-kernel-update-for-rhel-9-4-sap",
-      "article-816c4b99",
-      "816c4b99",
-      "red-hat-kernel-update-for-rhel-9-4-sap-2ee085"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100656-important-kernel-security-update-596c386b",
-    "title": "RHSA-2026:100656: Important: kernel security update",
-    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100656",
-    "publishedAt": "2026-11-20T08:27:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100656-important-kernel-security-update",
-      "article-596c386b",
-      "596c386b",
-      "rhsa-2026-100656-important-kernel-security-update-2ee085"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100661-important-kernel-security-bug-fix-c963dc72",
-    "title": "RHSA-2026:100661: Important: kernel security, bug fix, and enhancement update",
-    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100661",
-    "publishedAt": "2026-11-20T08:27:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100661-important-kernel-security-bug-fix",
-      "article-c963dc72",
-      "c963dc72",
-      "rhsa-2026-100661-important-kernel-security-bug-fix-2ee085",
-      "rhsa-2026-100661-important-kernel-security-bug-fix-and-enhan"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100693-critical-kpatch-patch-5-14-0-570-025486b2",
-    "title": "RHSA-2026:100693: Critical: kpatch-patch-5_14_0-570_116_1, kpatch-patch-5_14_0-570_135_1, kpatch-patch-5_14_0-570_39_1, kpatch-patch-5_14_0-570_66_1, and kpatch-patch-5_14_0-570_94_1 security update",
-    "summary": "An update for kpatch-patch-5_14_0-570_116_1, kpatch-patch-5_14_0-570_135_1, kpatch-patch-5_14_0-570_39_1, kpatch-patch-5_14_0-570_66_1, and kpatch-patch-5_14_0-570_94_1 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100693",
-    "publishedAt": "2026-11-20T08:26:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100693-critical-kpatch-patch-5-14-0-570",
-      "article-025486b2",
-      "025486b2",
-      "rhsa-2026-100693-critical-kpatch-patch-5-14-0-570-2ee085",
-      "rhsa-2026-100693-critical-kpatch-patch-5-14-0-570-116-1-kpat"
-    ]
-  },
-  {
-    "slug": "hackers-scan-litellm-ai-servers-for-rce-flaws-a04d461c",
-    "title": "Hackers Scan LiteLLM AI Servers for RCE Flaws",
-    "summary": "Hackers scan the internet for exposed LiteLLM AI servers, actively targeting a test endpoint in the LiteLLM gateway. They plan to chain two flaws-one in LiteLLM and a Starlette framework weakness-to gain unauthenticated remote code execution. No patch exists yet; administrators should restrict public LiteLLM access and apply future fixes.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/litellm-ai-servers/",
-    "publishedAt": "2026-11-20T08:25:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-scan-litellm-ai-servers-for-rce-flaws",
-      "article-a04d461c",
-      "a04d461c",
-      "hackers-scan-litellm-ai-servers-for-rce-flaws-57828f"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100687-critical-edk2-security-update-8ee21d8f",
-    "title": "RHSA-2026:100687: Critical: edk2 security update",
-    "summary": "An update for edk2 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100687",
-    "publishedAt": "2026-11-20T08:24:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100687-critical-edk2-security-update",
-      "article-8ee21d8f",
-      "8ee21d8f",
-      "rhsa-2026-100687-critical-edk2-security-update-2ee085"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100694-critical-kpatch-patch-6-12-0-211-c146fa55",
-    "title": "RHSA-2026:100694: Critical: kpatch-patch-6_12_0-211_16_1 and kpatch-patch-6_12_0-211_49_1 security update",
-    "summary": "An update for kpatch-patch-6_12_0-211_16_1 and kpatch-patch-6_12_0-211_49_1 is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100694",
-    "publishedAt": "2026-11-20T08:24:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100694-critical-kpatch-patch-6-12-0-211",
-      "article-c146fa55",
-      "c146fa55",
-      "rhsa-2026-100694-critical-kpatch-patch-6-12-0-211-2ee085",
-      "rhsa-2026-100694-critical-kpatch-patch-6-12-0-211-16-1-and-k"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100659-important-net-8-0-security-bug-fi-ccb92b86",
-    "title": "RHSA-2026:100659: Important: .NET 8.0 security, bug fix, and enhancement update",
-    "summary": "An update for .NET 8.0 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100659",
-    "publishedAt": "2026-11-20T08:23:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100659-important-net-8-0-security-bug-fi",
-      "article-ccb92b86",
-      "ccb92b86",
-      "rhsa-2026-100659-important-net-8-0-security-bug-fi-2ee085",
-      "rhsa-2026-100659-important-net-8-0-security-bug-fix-and-enha"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100667-important-flatpak-security-update-a1a845d1",
-    "title": "RHSA-2026:100667: Important: flatpak security update",
-    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100667",
-    "publishedAt": "2026-11-20T08:20:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100667-important-flatpak-security-update",
-      "article-a1a845d1",
-      "a1a845d1",
-      "rhsa-2026-100667-important-flatpak-security-update-2ee085"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100666-important-flatpak-security-update-232fa221",
-    "title": "RHSA-2026:100666: Important: flatpak security update",
-    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100666",
-    "publishedAt": "2026-11-20T08:18:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100666-important-flatpak-security-update",
-      "article-232fa221",
-      "232fa221",
-      "rhsa-2026-100666-important-flatpak-security-update-2ee085"
     ]
   }
 ];
