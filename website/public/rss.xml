@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 14:15:37 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 15:46:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Development Adds Vulnerability Noise, Calls for Resilience</title>
+      <link>https://secubuzz.com/news/ai-development-adds-vulnerability-noise-calls-for-f1552214</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-development-adds-vulnerability-noise-calls-for-f1552214</guid>
+      <description><![CDATA[AI-driven development increases software supply-chain complexity, flooding security teams with low-risk vulnerabilities. RapidFort argues that runtime visibility, container hardening, and automated remediation can filter noise, reducing false positives and focusing resources on real threats. Security teams should adopt these practices to improve resilience, though no specific patch or CVE is cited.]]></description>
+      <pubDate>Tue, 24 Nov 2026 15:01:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CISA Alerts on Exploited N-Able Email Bug</title>
+      <link>https://secubuzz.com/news/cisa-alerts-on-exploited-n-able-email-bug-1663bd94</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-alerts-on-exploited-n-able-email-bug-1663bd94</guid>
+      <description><![CDATA[CISA warns that a vulnerability in N-Able’s email security platform has been exploited, threatening government departments. The flaw, identified as CVE-2026-134624, allows attackers to bypass spam and malware filtering, potentially delivering malicious content to users. N-Able has released a patch; agencies must update before Thanksgiving to mitigate the critical risk.]]></description>
+      <pubDate>Tue, 24 Nov 2026 15:00:00 GMT</pubDate>
+      <source url="https://therecord.media/cisa-nable-cybersecurity-bug">The Record</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>EU Academy Data Exposed in AI-Assisted Attack</title>
+      <link>https://secubuzz.com/news/eu-academy-data-exposed-in-ai-assisted-attack-ef68327d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/eu-academy-data-exposed-in-ai-assisted-attack-ef68327d</guid>
+      <description><![CDATA[The European Commission discovered that an AI-assisted cyberattack exposed names and email addresses of EU Academy users. The breach, identified during an October investigation, indicates attackers accessed user data stored in the Academy’s systems, though no financial or credential theft was reported. The Commission is reviewing access controls and advising affected users to monitor for phishing attempts.]]></description>
+      <pubDate>Tue, 24 Nov 2026 14:49:59 GMT</pubDate>
+      <source url="https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Chrome Vulnerability Affects Versions Before 158.0.8127.88</title>
+      <link>https://secubuzz.com/news/chrome-vulnerability-affects-versions-before-158-0-44fc3e83</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-vulnerability-affects-versions-before-158-0-44fc3e83</guid>
+      <description><![CDATA[Google issued a security advisory for a vulnerability affecting Chrome versions prior to 158.0.8127.88 on Windows/Mac and 158.0.8127.88 on Linux. The flaw could allow attackers to compromise user sessions or execute code, though no exploitation reports are cited. Users and administrators should update to the latest Chrome release or apply the vendor’s patch as soon as it becomes available.]]></description>
+      <pubDate>Tue, 24 Nov 2026 14:41:05 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1201">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Volant Manticore: Flying Under the Radar</title>
+      <link>https://secubuzz.com/news/volant-manticore-flying-under-the-radar-1ed67c1d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/volant-manticore-flying-under-the-radar-1ed67c1d</guid>
+      <description><![CDATA[Key Points Introduction Check Point Research is tracking a previously undocumented Iran-nexus threat group who we named Volant Manticore. What started in July 2026 as a single backdoor delivered to a Cyprus-based airline through a fake CV has since expanded into a broader cluster of activity that we traced back to September 2025.]]></description>
+      <pubDate>Tue, 24 Nov 2026 14:13:55 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/volant-manticore-flying-under-the-radar/">Check Point Research</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Critical VMware ESX Flaws Let Remote Attackers Execute Malicious Code on Virtualization Hosts</title>
+      <link>https://secubuzz.com/news/critical-vmware-esx-flaws-let-remote-attackers-exe-d6ab6346</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-vmware-esx-flaws-let-remote-attackers-exe-d6ab6346</guid>
+      <description><![CDATA[Broadcom has disclosed 23 VMware vulnerabilities, including two critical flaws that could let attackers run code directly on ESX hosts and a third that could let them access vCenter without signing in. The Broadcom security advisory, VMSA-2026-0011, was published on November 24. It says the flaws were privately reported and does not report active exploitation.]]></description>
+      <pubDate>Tue, 24 Nov 2026 14:11:04 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/vmware-esx-host-vulnerabilities/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>McDonald&apos;s Japan Exposes App User Location Data</title>
+      <link>https://secubuzz.com/news/mcdonald-s-japan-exposes-app-user-location-data-747e255b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mcdonald-s-japan-exposes-app-user-location-data-747e255b</guid>
+      <description><![CDATA[A data breach at McDonald's Japan exposed a database of official smartphone app users, revealing their location information. Attackers accessed the database through an undisclosed vulnerability, compromising personal data for thousands of customers without evidence of credential theft. McDonald's Japan has notified affected users and is working with security teams to investigate the breach and strengthen database access controls.]]></description>
+      <pubDate>Tue, 24 Nov 2026 14:09:37 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>GTA 6 Hacker Sentenced, Released Same Day</title>
       <link>https://secubuzz.com/news/gta-6-hacker-sentenced-released-same-day-3f92ee57</link>
@@ -53,6 +116,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Wiz Enhances OpenAI Daybreak Defense with Security Intelligence</title>
+      <link>https://secubuzz.com/news/wiz-enhances-openai-daybreak-defense-with-security-a49c15f9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wiz-enhances-openai-daybreak-defense-with-security-a49c15f9</guid>
+      <description><![CDATA[Wiz Research announced integration of its cloud security intelligence into OpenAI's Daybreak Defense Factory, aiming to improve AI-driven vulnerability analysis. The integration leverages Wiz's data feeds to identify code remediation opportunities, but no specific vulnerability is disclosed. OpenAI can now apply Wiz insights to prioritize patching and reduce exposure to emerging threats.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:00:03 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/wiz-openai-codex-integration">Wiz Research</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>McDonald’s Japan Breach Reveals Purchase and Location Data</title>
       <link>https://secubuzz.com/news/mcdonald-s-japan-breach-reveals-purchase-and-locat-61cd47bb</link>
       <guid isPermaLink="true">https://secubuzz.com/news/mcdonald-s-japan-breach-reveals-purchase-and-locat-61cd47bb</guid>
@@ -69,6 +141,15 @@
       <pubDate>Tue, 24 Nov 2026 12:59:47 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/suse-linux-security-advisory-av26-1198">Canadian Centre for Cyber Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CVE-2026-131914 Enables Unauthenticated ASP.NET RCE</title>
+      <link>https://secubuzz.com/news/cve-2026-131914-enables-unauthenticated-asp-net-rc-3fcb8aae</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-131914-enables-unauthenticated-asp-net-rc-3fcb8aae</guid>
+      <description><![CDATA[Attackers exploited CVE-2026-131914, a critical flaw in Idunno AntiCsrf used by ASP.NET WebForms, to trigger web redirects and confirm exploitation. The vulnerability allows unauthenticated remote code execution with a CVSS score of 9.8, and threat actors have actively leveraged it. Microsoft and vendors have released patches; administrators should update the AntiCsrf library and disable redirects until the fix is applied.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:55:28 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/critical-asp-net-anticsrf-flaw-exploited/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Bedrock Data Launches Intent-Aware AI Agent DLP</title>
@@ -177,6 +258,15 @@
       <pubDate>Tue, 24 Nov 2026 11:50:20 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102920">Red Hat Security Advisories</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Ruby 3.3 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-ruby-3-3-security-update-9eacbea6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-ruby-3-3-security-update-9eacbea6</guid>
+      <description><![CDATA[Red Hat released a critical update for the ruby:3.3 module on Enterprise Linux 8, fixing several security bugs. The patch addresses high-severity flaws that could enable remote code execution or privilege escalation, with CVSS scores up to 9.2. Administrators should apply RHSA-2026:102909 immediately and confirm the Ruby runtime is at the patched version.]]></description>
+      <pubDate>Tue, 24 Nov 2026 11:49:26 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102909">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>EvilTokens Phishing Persists After Microsoft Takedown</title>
@@ -365,96 +455,6 @@
       <description><![CDATA[An update for ruby is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Tue, 24 Nov 2026 09:09:06 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102854">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Anthropic Launches Claude Ship for AI Code Review</title>
-      <link>https://secubuzz.com/news/anthropic-launches-claude-ship-for-ai-code-review-889e1e66</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-launches-claude-ship-for-ai-code-review-889e1e66</guid>
-      <description><![CDATA[Anthropic released Claude Ship, a beta AI suite that reviews pull requests, fixes issues, and approves changes per team policies. It merges code review, automated fixes, and policy enforcement to speed development while preserving quality. Deploying Claude Ship into CI/CD pipelines lets teams set approval thresholds and monitor false positives for safe integration.]]></description>
-      <pubDate>Tue, 24 Nov 2026 09:02:02 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/anthropic-claude-ship-beta/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>NVIDIA Kernel Vulnerability Enables Hypervisor Out-of-Bounds</title>
-      <link>https://secubuzz.com/news/nvidia-kernel-vulnerability-enables-hypervisor-out-031ac3d8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-kernel-vulnerability-enables-hypervisor-out-031ac3d8</guid>
-      <description><![CDATA[A local attacker with hypervisor access can exploit a missing Reverse Map Table check during IOMMU buffer access, enabling an out-of-bounds condition that may corrupt SEV-SNP guest memory. The flaw, CVE-2023-20585, is a local privilege escalation that could undermine guest isolation, with no public exploit yet. Ubuntu released kernel patches; administrators should update or backport the fix.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:42:57 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9192-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ubuntu Releases Kernel Patch for Multiple Azure Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ubuntu-releases-kernel-patch-for-multiple-azure-vu-1657bc5f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-releases-kernel-patch-for-multiple-azure-vu-1657bc5f</guid>
-      <description><![CDATA[Ubuntu released a kernel update that patches multiple Azure vulnerabilities across subsystems such as ARM64, S390, x86, Bluetooth, GPU, and network drivers. The flaws allow remote or local privilege escalation, enabling attackers to compromise system integrity and run arbitrary code on virtual machines. Admins should promptly apply the latest kernel update or backport the patches to mitigate the risk.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:42:14 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9191-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Kernel Vulnerabilities Threaten System Integrity</title>
-      <link>https://secubuzz.com/news/kernel-vulnerabilities-threaten-system-integrity-1ef945b8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kernel-vulnerabilities-threaten-system-integrity-1ef945b8</guid>
-      <description><![CDATA[A range of kernel subsystems in Linux contain vulnerabilities that could enable attackers to compromise system integrity. The flaws affect architecture layers, device drivers, and file system components, posing a broad local privilege escalation risk. Ubuntu released kernel patches addressing these issues; administrators should update to the latest kernel or backport the fixes.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:41:13 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9190-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ubuntu and Red Hat Patch NVIDIA Kernel Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ubuntu-and-red-hat-patch-nvidia-kernel-vulnerabili-0701c793</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-and-red-hat-patch-nvidia-kernel-vulnerabili-0701c793</guid>
-      <description><![CDATA[Ubuntu and Red Hat have released kernel updates to address multiple NVIDIA subsystem vulnerabilities affecting Linux systems. The flaws span device drivers, data paths, architecture modules, cryptographic APIs, and hardware interfaces, potentially enabling privilege escalation or data exfiltration. Administrators should apply the latest kernel patches immediately to mitigate risk, as no active exploitation has been reported.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:41:02 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9173-3">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Linux Kernel Vulnerabilities Patched</title>
-      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-patched-64aff9b5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-patched-64aff9b5</guid>
-      <description><![CDATA[Multiple kernel vulnerabilities were identified across various subsystems, potentially allowing attackers to compromise affected Linux systems. The flaws affect stream parsing, architecture modules, drivers, Bluetooth, GPU, Hyper-V, network, and other hardware interfaces, yet no active exploitation has been reported. Red Hat and Ubuntu have issued kernel updates that patch these subsystems; administrators should install the latest kernel to mitigate risk.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:40:58 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9167-3">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Linux Kernel Vulnerabilities Patching Update Released</title>
-      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-patching-update-relea-28a515f1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-patching-update-relea-28a515f1</guid>
-      <description><![CDATA[The Linux kernel contains multiple vulnerabilities, including CVE-2026-99218, that could allow attackers to compromise affected systems. These flaws span cryptographic API, file system infrastructure, key management, io_uring, PID namespace, and tracing subsystems, potentially enabling privilege escalation or arbitrary code execution. Kernel maintainers have released an update patching all listed CVEs; administrators should apply the update promptly.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:40:41 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9165-2">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Uncovers Linux Kernel Vulnerabilities in Azure</title>
-      <link>https://secubuzz.com/news/microsoft-uncovers-linux-kernel-vulnerabilities-in-7a22f5cf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-uncovers-linux-kernel-vulnerabilities-in-7a22f5cf</guid>
-      <description><![CDATA[Microsoft identified multiple Linux kernel flaws in Azure that could allow attackers to compromise affected systems. The vulnerabilities affect IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems, and are catalogued as CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, potentially enabling remote code execution. Administrators should apply the latest kernel updates or install the provided patches to eliminate the exploitation vector.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:40:41 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9170-4">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft 365 Copilot CVE-2026-50691 Enables Privilege Escalation</title>
-      <link>https://secubuzz.com/news/microsoft-365-copilot-cve-2026-50691-enables-privi-350e8b5e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-copilot-cve-2026-50691-enables-privi-350e8b5e</guid>
-      <description><![CDATA[Microsoft disclosed CVE-2026-50691, a critical flaw in Microsoft 365 Copilot that lets a low-privileged user elevate network permissions without user interaction. Scored 9.9 on CVSS 3.1, the bug exploits a logic error in Copilot’s permission model, enabling unauthorized access to protected resources. Microsoft urges customers to apply the November 19 patch via Microsoft Update or by updating the Copilot add-in.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:28:18 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/microsoft-365-copilot-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102845: Important: cockpit security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102845-important-cockpit-security-update-99557e81</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102845-important-cockpit-security-update-99557e81</guid>
-      <description><![CDATA[An update for cockpit is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:14:42 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102845">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

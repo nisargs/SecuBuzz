@@ -11,6 +11,137 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-development-adds-vulnerability-noise-calls-for-f1552214",
+    "title": "AI Development Adds Vulnerability Noise, Calls for Resilience",
+    "summary": "AI-driven development increases software supply-chain complexity, flooding security teams with low-risk vulnerabilities. RapidFort argues that runtime visibility, container hardening, and automated remediation can filter noise, reducing false positives and focusing resources on real threats. Security teams should adopt these practices to improve resilience, though no specific patch or CVE is cited.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/",
+    "publishedAt": "2026-11-24T15:01:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-development-adds-vulnerability-noise-calls-for",
+      "article-f1552214",
+      "f1552214",
+      "ai-development-adds-vulnerability-noise-calls-for-33dc1c",
+      "ai-development-adds-vulnerability-noise-calls-for-resilience"
+    ]
+  },
+  {
+    "slug": "cisa-alerts-on-exploited-n-able-email-bug-1663bd94",
+    "title": "CISA Alerts on Exploited N-Able Email Bug",
+    "summary": "CISA warns that a vulnerability in N-Able’s email security platform has been exploited, threatening government departments. The flaw, identified as CVE-2026-134624, allows attackers to bypass spam and malware filtering, potentially delivering malicious content to users. N-Able has released a patch; agencies must update before Thanksgiving to mitigate the critical risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/cisa-nable-cybersecurity-bug",
+    "publishedAt": "2026-11-24T15:00:00.000Z",
+    "cves": [
+      "CVE-2026-134624"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-alerts-on-exploited-n-able-email-bug",
+      "article-1663bd94",
+      "1663bd94",
+      "cisa-alerts-on-exploited-n-able-email-bug-713807"
+    ]
+  },
+  {
+    "slug": "eu-academy-data-exposed-in-ai-assisted-attack-ef68327d",
+    "title": "EU Academy Data Exposed in AI-Assisted Attack",
+    "summary": "The European Commission discovered that an AI-assisted cyberattack exposed names and email addresses of EU Academy users. The breach, identified during an October investigation, indicates attackers accessed user data stored in the Academy’s systems, though no financial or credential theft was reported. The Commission is reviewing access controls and advising affected users to monitor for phishing attempts.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/",
+    "publishedAt": "2026-11-24T14:49:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eu-academy-data-exposed-in-ai-assisted-attack",
+      "article-ef68327d",
+      "ef68327d",
+      "eu-academy-data-exposed-in-ai-assisted-attack-72f95c"
+    ]
+  },
+  {
+    "slug": "chrome-vulnerability-affects-versions-before-158-0-44fc3e83",
+    "title": "Chrome Vulnerability Affects Versions Before 158.0.8127.88",
+    "summary": "Google issued a security advisory for a vulnerability affecting Chrome versions prior to 158.0.8127.88 on Windows/Mac and 158.0.8127.88 on Linux. The flaw could allow attackers to compromise user sessions or execute code, though no exploitation reports are cited. Users and administrators should update to the latest Chrome release or apply the vendor’s patch as soon as it becomes available.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1201",
+    "publishedAt": "2026-11-24T14:41:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-vulnerability-affects-versions-before-158-0",
+      "article-44fc3e83",
+      "44fc3e83",
+      "chrome-vulnerability-affects-versions-before-158-0-170ca6",
+      "chrome-vulnerability-affects-versions-before-158-0-8127-88"
+    ]
+  },
+  {
+    "slug": "volant-manticore-flying-under-the-radar-1ed67c1d",
+    "title": "Volant Manticore: Flying Under the Radar",
+    "summary": "Key Points Introduction Check Point Research is tracking a previously undocumented Iran-nexus threat group who we named Volant Manticore. What started in July 2026 as a single backdoor delivered to a Cyprus-based airline through a fake CV has since expanded into a broader cluster of activity that we traced back to September 2025.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/volant-manticore-flying-under-the-radar/",
+    "publishedAt": "2026-11-24T14:13:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "volant-manticore-flying-under-the-radar",
+      "article-1ed67c1d",
+      "1ed67c1d",
+      "volant-manticore-flying-under-the-radar-3a8350"
+    ]
+  },
+  {
+    "slug": "critical-vmware-esx-flaws-let-remote-attackers-exe-d6ab6346",
+    "title": "Critical VMware ESX Flaws Let Remote Attackers Execute Malicious Code on Virtualization Hosts",
+    "summary": "Broadcom has disclosed 23 VMware vulnerabilities, including two critical flaws that could let attackers run code directly on ESX hosts and a third that could let them access vCenter without signing in. The Broadcom security advisory, VMSA-2026-0011, was published on November 24. It says the flaws were privately reported and does not report active exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/vmware-esx-host-vulnerabilities/",
+    "publishedAt": "2026-11-24T14:11:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-vmware-esx-flaws-let-remote-attackers-exe",
+      "article-d6ab6346",
+      "d6ab6346",
+      "critical-vmware-esx-flaws-let-remote-attackers-exe-17cb24",
+      "critical-vmware-esx-flaws-let-remote-attackers-execute-malic"
+    ]
+  },
+  {
+    "slug": "mcdonald-s-japan-exposes-app-user-location-data-747e255b",
+    "title": "McDonald's Japan Exposes App User Location Data",
+    "summary": "A data breach at McDonald's Japan exposed a database of official smartphone app users, revealing their location information. Attackers accessed the database through an undisclosed vulnerability, compromising personal data for thousands of customers without evidence of credential theft. McDonald's Japan has notified affected users and is working with security teams to investigate the breach and strengthen database access controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/",
+    "publishedAt": "2026-11-24T14:09:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mcdonald-s-japan-exposes-app-user-location-data",
+      "article-747e255b",
+      "747e255b",
+      "mcdonald-s-japan-exposes-app-user-location-data-6af1bf"
+    ]
+  },
+  {
     "slug": "gta-6-hacker-sentenced-released-same-day-3f92ee57",
     "title": "GTA 6 Hacker Sentenced, Released Same Day",
     "summary": "A former Lapsus$ member, Arion Kurtaj, was sentenced to seven years for leaking Grand Theft Auto VI footage after a guilty plea. The case involved fraud and computer misuse charges, including unauthorized disclosure of proprietary game content in London. Court granted license release the same day; no further remediation required.",
@@ -106,6 +237,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "wiz-enhances-openai-daybreak-defense-with-security-a49c15f9",
+    "title": "Wiz Enhances OpenAI Daybreak Defense with Security Intelligence",
+    "summary": "Wiz Research announced integration of its cloud security intelligence into OpenAI's Daybreak Defense Factory, aiming to improve AI-driven vulnerability analysis. The integration leverages Wiz's data feeds to identify code remediation opportunities, but no specific vulnerability is disclosed. OpenAI can now apply Wiz insights to prioritize patching and reduce exposure to emerging threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/wiz-openai-codex-integration",
+    "publishedAt": "2026-11-24T13:00:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wiz-enhances-openai-daybreak-defense-with-security",
+      "article-a49c15f9",
+      "a49c15f9",
+      "wiz-enhances-openai-daybreak-defense-with-security-6be72e",
+      "wiz-enhances-openai-daybreak-defense-with-security-intellige"
+    ]
+  },
+  {
     "slug": "mcdonald-s-japan-breach-reveals-purchase-and-locat-61cd47bb",
     "title": "McDonald’s Japan Breach Reveals Purchase and Location Data",
     "summary": "McDonald’s Japan announced a cybersecurity breach that exposed customers’ purchase histories and mobile device location data. The incident involved unauthorized access to the company’s customer database, potentially compromising sensitive personal information for a large user base. The company is investigating the breach and has notified affected customers, while security teams should monitor for phishing or credential misuse.",
@@ -141,6 +291,27 @@ export const news: NewsBrief[] = [
       "93af351c",
       "suse-advises-neuvector-stack-buffer-overflow-vulne-59d0d1",
       "suse-advises-neuvector-stack-buffer-overflow-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "cve-2026-131914-enables-unauthenticated-asp-net-rc-3fcb8aae",
+    "title": "CVE-2026-131914 Enables Unauthenticated ASP.NET RCE",
+    "summary": "Attackers exploited CVE-2026-131914, a critical flaw in Idunno AntiCsrf used by ASP.NET WebForms, to trigger web redirects and confirm exploitation. The vulnerability allows unauthenticated remote code execution with a CVSS score of 9.8, and threat actors have actively leveraged it. Microsoft and vendors have released patches; administrators should update the AntiCsrf library and disable redirects until the fix is applied.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-asp-net-anticsrf-flaw-exploited/",
+    "publishedAt": "2026-11-24T12:55:28.000Z",
+    "cves": [
+      "CVE-2026-131914"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-131914-enables-unauthenticated-asp-net-rc",
+      "article-3fcb8aae",
+      "3fcb8aae",
+      "cve-2026-131914-enables-unauthenticated-asp-net-rc-139fe7",
+      "cve-2026-131914-enables-unauthenticated-asp-net-rce"
     ]
   },
   {
@@ -367,6 +538,24 @@ export const news: NewsBrief[] = [
       "5e6b18ed",
       "rhsa-2026-102920-important-thunderbird-security-bu-2ee178",
       "rhsa-2026-102920-important-thunderbird-security-bug-fix-and-"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-ruby-3-3-security-update-9eacbea6",
+    "title": "Red Hat Releases Critical Ruby 3.3 Security Update",
+    "summary": "Red Hat released a critical update for the ruby:3.3 module on Enterprise Linux 8, fixing several security bugs. The patch addresses high-severity flaws that could enable remote code execution or privilege escalation, with CVSS scores up to 9.2. Administrators should apply RHSA-2026:102909 immediately and confirm the Ruby runtime is at the patched version.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102909",
+    "publishedAt": "2026-11-24T11:49:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-ruby-3-3-security-update",
+      "article-9eacbea6",
+      "9eacbea6",
+      "red-hat-releases-critical-ruby-3-3-security-update-2ee178"
     ]
   },
   {
@@ -9142,194 +9331,6 @@ export const news: NewsBrief[] = [
       "article-232fa221",
       "232fa221",
       "rhsa-2026-100666-important-flatpak-security-update-2ee085"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100668-important-flatpak-security-update-1e4e0a25",
-    "title": "RHSA-2026:100668: Important: flatpak security update",
-    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100668",
-    "publishedAt": "2026-11-20T08:18:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100668-important-flatpak-security-update",
-      "article-1e4e0a25",
-      "1e4e0a25",
-      "rhsa-2026-100668-important-flatpak-security-update-2ee085"
-    ]
-  },
-  {
-    "slug": "red-hat-expat-security-update-8303ef25",
-    "title": "Red Hat expat Security Update",
-    "summary": "Red Hat Enterprise Linux 8 users must address a flaw in the expat XML parser, highlighted in RHSA-2026:100671. The issue permits local users to cause a stack overflow, enabling arbitrary code execution with a CVSS score of 7.5. Red Hat advises installing the expat update via the RHEL 8 update mechanism to eliminate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100671",
-    "publishedAt": "2026-11-20T08:16:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-expat-security-update",
-      "article-8303ef25",
-      "8303ef25",
-      "red-hat-expat-security-update-2ee085"
-    ]
-  },
-  {
-    "slug": "red-hat-fltk-security-update-de925d74",
-    "title": "Red Hat fltk Security Update",
-    "summary": "Red Hat Enterprise Linux 8 users face a critical flaw in the fltk GUI toolkit, as identified in RHSA-2026:100695. The vulnerability allows local users to trigger a buffer overflow, potentially leading to arbitrary code execution with a CVSS score of 8.1.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100695",
-    "publishedAt": "2026-11-20T08:14:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-fltk-security-update",
-      "article-de925d74",
-      "de925d74",
-      "red-hat-fltk-security-update-2ee085"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100672-important-flatpak-security-update-826ad3dd",
-    "title": "RHSA-2026:100672: Important: flatpak security update",
-    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100672",
-    "publishedAt": "2026-11-20T08:12:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100672-important-flatpak-security-update",
-      "article-826ad3dd",
-      "826ad3dd",
-      "rhsa-2026-100672-important-flatpak-security-update-2ee085"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100674-important-fltk-security-update-6ce10a75",
-    "title": "RHSA-2026:100674: Important: fltk security update",
-    "summary": "An update for fltk is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100674",
-    "publishedAt": "2026-11-20T08:09:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100674-important-fltk-security-update",
-      "article-6ce10a75",
-      "6ce10a75",
-      "rhsa-2026-100674-important-fltk-security-update-2ee085"
-    ]
-  },
-  {
-    "slug": "nginx-exposes-multiple-high-severity-vulnerabiliti-531b7dc5",
-    "title": "NGINX Exposes Multiple High-Severity Vulnerabilities",
-    "summary": "Fortinet FortiGuard PSIRT disclosed high-severity CVEs that compromise NGINX OSS and Plus versions 1.31.0-1.30.6, enabling memory corruption via crafted HTTP requests. The CVEs, including CVE-2026-123007 and CVE-2026-123633, score 8.1 on CVSSv3 and allow unauthenticated remote code execution. NGINX has released patches; administrators should upgrade to the latest stable version or apply the vendor-issued security updates immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-279",
-    "publishedAt": "2026-11-20T08:00:00.000Z",
-    "cves": [
-      "CVE-2026-123007",
-      "CVE-2026-123633"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "nginx-exposes-multiple-high-severity-vulnerabiliti",
-      "article-531b7dc5",
-      "531b7dc5",
-      "nginx-exposes-multiple-high-severity-vulnerabiliti-3bcda5",
-      "nginx-exposes-multiple-high-severity-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "jpmorgan-visa-mastercard-cite-third-party-data-lea-68db05d9",
-    "title": "JPMorgan Visa Mastercard Cite Third-Party Data Leak",
-    "summary": "The N0n extortion group leaked data tied to JPMorgan, Visa, and Mastercard customers, prompting the firms to blame third-party providers. The leak exposed sensitive customer information, though the extent of credential compromise remains unclear; no exploit or vulnerability was disclosed. Affected users are advised to monitor accounts and change credentials, while vendors review security controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
-    "publishedAt": "2026-11-20T07:35:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "jpmorgan-visa-mastercard-cite-third-party-data-lea",
-      "article-68db05d9",
-      "68db05d9",
-      "jpmorgan-visa-mastercard-cite-third-party-data-lea-332878",
-      "jpmorgan-visa-mastercard-cite-third-party-data-leak"
-    ]
-  },
-  {
-    "slug": "romulus-clickfix-delivers-new-rat-to-target-pcs-21c5eb00",
-    "title": "ROMULUS ClickFix Delivers New RAT to Target PCs",
-    "summary": "Threat actors used the ROMULUS ClickFix delivery platform to ship a previously undocumented remote access trojan that resembles CNCMachineRMS. The RAT leverages signed binary sideloading and can spy on users while granting full control over infected PCs. Defenders should block ClickFix traffic, enforce application whitelisting, and monitor for unusual outbound connections to mitigate this threat.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
-    "publishedAt": "2026-11-20T07:11:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "romulus-clickfix-delivers-new-rat-to-target-pcs",
-      "article-21c5eb00",
-      "21c5eb00",
-      "romulus-clickfix-delivers-new-rat-to-target-pcs-2a08f9"
-    ]
-  },
-  {
-    "slug": "armory-castle-exploits-vmware-vcenter-zero-day-d09439e5",
-    "title": "Armory Castle Exploits VMware vCenter Zero-Day",
-    "summary": "Armory Castle exploited a critical authentication bypass in VMware vCenter Server's Directory Service, allowing attackers to gain administrative access and exfiltrate data. The flaw, identified as CVE-2026-123890 with a CVSS score of 9.8, permits unauthenticated exploitation and can lead to full system compromise.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-    "publishedAt": "2026-11-20T06:33:31.000Z",
-    "cves": [
-      "CVE-2026-123890"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "armory-castle-exploits-vmware-vcenter-zero-day",
-      "article-d09439e5",
-      "d09439e5",
-      "armory-castle-exploits-vmware-vcenter-zero-day-162ba3"
-    ]
-  },
-  {
-    "slug": "ai-red-teams-uncover-repeated-prompt-injection-vul-56ee9906",
-    "title": "AI Red Teams Uncover Repeated Prompt Injection Vulnerabilities",
-    "summary": "Researchers found AI agents retrained on a larger prompt injection dataset were more susceptible to hijacking during red-team tests. The automated purple-teaming workflow revealed that repeated prompt injection attempts could bypass weaker defenses, exposing a logic flaw in the agents' instruction parsing. Security teams should review prompt handling logic and implement stricter input validation to mitigate injection risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/ai-prompt-injection-red-team/",
-    "publishedAt": "2026-11-20T06:30:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-red-teams-uncover-repeated-prompt-injection-vul",
-      "article-56ee9906",
-      "56ee9906",
-      "ai-red-teams-uncover-repeated-prompt-injection-vul-11add1",
-      "ai-red-teams-uncover-repeated-prompt-injection-vulnerabiliti"
     ]
   }
 ];
