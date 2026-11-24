@@ -83,6 +83,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "usn-9189-1-qt5compat-vulnerability-e859a30a",
+    "title": "USN-9189-1: Qt5Compat vulnerability",
+    "summary": "It was discovered that Qt5Compat did not correctly handle certain text codec names, which could lead to an out-of-bounds read. An attacker could possibly use this issue to cause a denial of service.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9189-1",
+    "publishedAt": "2026-11-23T23:21:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9189-1-qt5compat-vulnerability",
+      "article-e859a30a",
+      "e859a30a",
+      "usn-9189-1-qt5compat-vulnerability-7e77df"
+    ]
+  },
+  {
     "slug": "rhsa-2026-102684-critical-php-8-3-security-update-f1b40ee0",
     "title": "RHSA-2026:102684: Critical: php:8.3 security update",
     "summary": "An update for the php:8.3 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -214,6 +232,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-golang-security-update-f2d54dcf",
+    "title": "Red Hat Issues Golang Security Update",
+    "summary": "Red Hat released a security update for the golang runtime on RHEL 9, addressing multiple vulnerabilities. The update mitigates unspecified bugs that could allow local privilege escalation or code execution, with CVSS scores available via referenced CVE links. Administrators should apply the golang package update immediately to maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102586",
+    "publishedAt": "2026-11-23T21:41:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-golang-security-update",
+      "article-f2d54dcf",
+      "f2d54dcf",
+      "red-hat-issues-golang-security-update-2ee16a"
+    ]
+  },
+  {
     "slug": "crowdstrike-acquires-zscaler-for-ai-security-integ-74ee119c",
     "title": "CrowdStrike Acquires Zscaler for AI Security Integration",
     "summary": "CrowdStrike announced a $44 billion acquisition of Zscaler, merging endpoint protection with zero-trust network security. The integration aims to centralize AI agent oversight, enabling unified threat detection across device and network layers. Customers will receive combined platform capabilities, but must plan for migration and potential licensing adjustments, ensuring seamless transition.",
@@ -230,6 +266,24 @@ export const news: NewsBrief[] = [
       "74ee119c",
       "crowdstrike-acquires-zscaler-for-ai-security-integ-27390e",
       "crowdstrike-acquires-zscaler-for-ai-security-integration"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-python-3-6-security-update-7ae3d02b",
+    "title": "Red Hat Issues Python 3.6 Security Update",
+    "summary": "Red Hat released a security update for the python36:3.6 module on RHEL 8, addressing several vulnerabilities. The patch fixes bugs that could enable local privilege escalation or arbitrary code execution, with CVSS scores provided via CVE references. System administrators should install the updated python36 package promptly to secure their environments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102653",
+    "publishedAt": "2026-11-23T21:08:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-python-3-6-security-update",
+      "article-7ae3d02b",
+      "7ae3d02b",
+      "red-hat-issues-python-3-6-security-update-2ee16d"
     ]
   },
   {
@@ -660,6 +714,48 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-acknowledges-cve-2026-70175-asp-net-core-eca1996d",
+    "title": "Microsoft Acknowledges CVE-2026-70175 ASP.NET Core Privilege Bug",
+    "summary": "Microsoft has acknowledged CVE-2026-70175, an elevation of privilege flaw in ASP.NET Core that could let attackers gain higher privileges on affected systems. The flaw stems from improper validation of user input during authentication, allowing privilege escalation without authentication, though no public exploit exists. Microsoft issued an update; users should watch for future patches and apply any subsequent fixes when available.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70175",
+    "publishedAt": "2026-11-23T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-70175"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-cve-2026-70175-asp-net-core",
+      "article-eca1996d",
+      "eca1996d",
+      "microsoft-acknowledges-cve-2026-70175-asp-net-core-74506d",
+      "microsoft-acknowledges-cve-2026-70175-asp-net-core-privilege"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-cve-2026-96225-net-privileg-773963d1",
+    "title": "Microsoft Acknowledges CVE-2026-96225 .NET Privilege Bug",
+    "summary": "Microsoft has acknowledged CVE-2026-96225, an elevation of privilege flaw in .NET that could allow attackers to gain higher privileges on affected systems. The vulnerability arises from validation errors during authentication, enabling privilege escalation without authentication, though no public exploit has been reported. Microsoft issued an update; users should watch for future patches and apply any subsequent fixes when available.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96225",
+    "publishedAt": "2026-11-23T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-96225"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-cve-2026-96225-net-privileg",
+      "article-773963d1",
+      "773963d1",
+      "microsoft-acknowledges-cve-2026-96225-net-privileg-743181",
+      "microsoft-acknowledges-cve-2026-96225-net-privilege-bug"
+    ]
+  },
+  {
     "slug": "microsoft-acknowledges-cve-2026-78462-in-vs-code-8068fa08",
     "title": "Microsoft Acknowledges CVE-2026-78462 in VS Code",
     "summary": "Microsoft acknowledges CVE-2026-78462, a Visual Studio Code security feature bypass vulnerability. The issue could allow attackers to bypass security controls, but no public exploit or PoC has been disclosed. Microsoft has issued an informational update; no patch or mitigation is required at this time, and the vulnerability is tracked in the Microsoft Security Advisory database.",
@@ -1081,6 +1177,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-tigervnc-security-update-822afb48",
+    "title": "Red Hat Issues Tigervnc Security Update",
+    "summary": "Red Hat released a security update for the tigervnc package on RHEL 9.2 for SAP solutions, addressing significant vulnerabilities. The patch fixes flaws that could enable remote code execution or privilege escalation via the VNC protocol, with CVSS scores linked to CVE references. Users should update the tigervnc package promptly to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102400",
+    "publishedAt": "2026-11-23T14:56:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-tigervnc-security-update",
+      "article-822afb48",
+      "822afb48",
+      "red-hat-issues-tigervnc-security-update-2ee165"
+    ]
+  },
+  {
     "slug": "n-able-mailassure-vulnerability-advisory-9c081c10",
     "title": "N-Able MailAssure Vulnerability Advisory",
     "summary": "N-Able issued advisory AV26-1191 for MailAssure before 20261121.1943, noting a vulnerability. The flaw may allow unauthorized access to email data or compromise the integrity of mail transmissions, though no exploitation reports have been confirmed. Administrators are advised to review the provided links, apply available updates, and monitor for any anomalous activity.",
@@ -1133,6 +1247,24 @@ export const news: NewsBrief[] = [
       "dbba3a3a",
       "wiz-research-reports-agentic-framework-cloud-intru-44fa60",
       "wiz-research-reports-agentic-framework-cloud-intrusions"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-cockpit-security-update-18124180",
+    "title": "Red Hat Issues Cockpit Security Update",
+    "summary": "Red Hat released a security update for the cockpit web console on RHEL 9.6 EUS, addressing critical vulnerabilities. The update resolves bugs that could allow authenticated users to execute arbitrary commands or elevate privileges, with CVSS scores available via CVE links. Administrators should apply the cockpit package update immediately to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102348",
+    "publishedAt": "2026-11-23T14:44:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-cockpit-security-update",
+      "article-18124180",
+      "18124180",
+      "red-hat-issues-cockpit-security-update-2ee162"
     ]
   },
   {
@@ -9353,145 +9485,6 @@ export const news: NewsBrief[] = [
       "article-cd3b1070",
       "cd3b1070",
       "microsoft-excel-rce-vulnerability-cve-2026-118302-1fe91c"
-    ]
-  },
-  {
-    "slug": "microsoft-outlook-rce-vulnerability-cve-2026-97749-4811b074",
-    "title": "Microsoft Outlook RCE Vulnerability CVE-2026-97749",
-    "summary": "CVE-2026-97749 enables remote code execution in Microsoft Office Outlook through a flaw in the application. The vulnerability permits unauthenticated attackers to run arbitrary code on affected machines, posing a high risk to enterprise environments. Microsoft released an informational acknowledgement; no patch is currently available, and users should monitor for future updates.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97749",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97749"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-outlook-rce-vulnerability-cve-2026-97749",
-      "article-4811b074",
-      "4811b074",
-      "microsoft-outlook-rce-vulnerability-cve-2026-97749-7430f9"
-    ]
-  },
-  {
-    "slug": "microsoft-excel-rce-vulnerability-cve-2026-97761-24efe064",
-    "title": "Microsoft Excel RCE Vulnerability CVE-2026-97761",
-    "summary": "CVE-2026-97761 enables remote code execution in Microsoft Office Excel through a flaw in the application. The vulnerability permits unauthenticated attackers to run arbitrary code on affected machines, posing a high risk to enterprise environments. Microsoft released an informational acknowledgement; no patch is currently available, and users should monitor for future updates.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97761",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97761"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-excel-rce-vulnerability-cve-2026-97761",
-      "article-24efe064",
-      "24efe064",
-      "microsoft-excel-rce-vulnerability-cve-2026-97761-7430f9"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-excel-rce-vulnerability-acknowle-16c2e96e",
-    "title": "Microsoft Updates Excel RCE Vulnerability Acknowledgement",
-    "summary": "Microsoft updated an acknowledgement for CVE-2026-97780, a remote code execution vulnerability in Office Excel. The MSRC entry describes the change as informational only and provides no new technical details, exploitability status, or severity score. Security teams should track the advisory for future updates and apply Excel patches when Microsoft publishes remediation guidance.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97780",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97780"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-excel-rce-vulnerability-acknowle",
-      "article-16c2e96e",
-      "16c2e96e",
-      "microsoft-updates-excel-rce-vulnerability-acknowle-7430f9",
-      "microsoft-updates-excel-rce-vulnerability-acknowledgement"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-vs-code-rce-vulnerability-08b4926a",
-    "title": "Microsoft Acknowledges VS Code RCE Vulnerability",
-    "summary": "Microsoft acknowledges CVE-2026-69370, a remote code execution flaw in Visual Studio Code product. The vulnerability permits arbitrary code execution via crafted input, but no active exploitation has been reported in the product. Microsoft has issued an informational update; users should await official patch guidance in the product for all users.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69370",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-69370"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-vs-code-rce-vulnerability",
-      "article-08b4926a",
-      "08b4926a",
-      "microsoft-acknowledges-vs-code-rce-vulnerability-745a66"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-ppp-eap-tls-rce-flaw-64a8a31b",
-    "title": "Microsoft Acknowledges PPP EAP-TLS RCE Flaw",
-    "summary": "Microsoft acknowledges CVE-2026-84015, a remote code execution flaw in the PPP EAP-TLS protocol. The vulnerability allows attackers to execute arbitrary code via crafted EAP-TLS messages, but no active exploitation has been reported. Microsoft has issued an informational update; users should await official patch guidance for all affected systems in the product.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84015",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-84015"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-ppp-eap-tls-rce-flaw",
-      "article-64a8a31b",
-      "64a8a31b",
-      "microsoft-acknowledges-ppp-eap-tls-rce-flaw-744088"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-net-rce-vulnerability-a85d6c3e",
-    "title": "Microsoft Acknowledges .NET RCE Vulnerability",
-    "summary": "Microsoft acknowledges CVE-2026-70174, a remote code execution flaw in the .NET framework. The vulnerability permits arbitrary code execution via crafted .NET payloads, but no active exploitation has been reported. Microsoft has issued an informational update; users should await official patch guidance for all affected systems in the product for all users.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70174",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-70174"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-net-rce-vulnerability",
-      "article-a85d6c3e",
-      "a85d6c3e",
-      "microsoft-acknowledges-net-rce-vulnerability-74506d"
-    ]
-  },
-  {
-    "slug": "php-patches-seven-critical-rce-vulnerabilities-4dc7c84c",
-    "title": "PHP Patches Seven Critical RCE Vulnerabilities",
-    "summary": "PHP patched seven critical RCE flaws that could let attackers crash the worker process and execute code with its privileges. The bugs stem from unchecked input handling in the PHP worker, enabling arbitrary code execution without authentication and compromising the application. All affected PHP releases now include the fixes; administrators should apply the updates immediately to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/",
-    "publishedAt": "2026-11-19T15:54:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php-patches-seven-critical-rce-vulnerabilities",
-      "article-4dc7c84c",
-      "4dc7c84c",
-      "php-patches-seven-critical-rce-vulnerabilities-151857"
     ]
   }
 ];

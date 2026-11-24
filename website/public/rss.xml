@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 00:45:36 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 01:46:46 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RHSA-2026:102696: Critical: php:8.2 security update</title>
@@ -41,6 +41,15 @@
       <description><![CDATA[Red Hat issued a kernel update for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple security bugs. The advisory rates the update as Important, with CVSS base scores linked to individual CVE references, indicating high risk if unpatched. Security teams should apply the update promptly, ensuring kernel version compliance and verifying SAP application compatibility after installation.]]></description>
       <pubDate>Mon, 23 Nov 2026 23:23:25 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102689">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>USN-9189-1: Qt5Compat vulnerability</title>
+      <link>https://secubuzz.com/news/usn-9189-1-qt5compat-vulnerability-e859a30a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9189-1-qt5compat-vulnerability-e859a30a</guid>
+      <description><![CDATA[It was discovered that Qt5Compat did not correctly handle certain text codec names, which could lead to an out-of-bounds read. An attacker could possibly use this issue to cause a denial of service.]]></description>
+      <pubDate>Mon, 23 Nov 2026 23:21:59 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9189-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -107,6 +116,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Issues Golang Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-golang-security-update-f2d54dcf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-golang-security-update-f2d54dcf</guid>
+      <description><![CDATA[Red Hat released a security update for the golang runtime on RHEL 9, addressing multiple vulnerabilities. The update mitigates unspecified bugs that could allow local privilege escalation or code execution, with CVSS scores available via referenced CVE links. Administrators should apply the golang package update immediately to maintain system integrity.]]></description>
+      <pubDate>Mon, 23 Nov 2026 21:41:48 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102586">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>CrowdStrike Acquires Zscaler for AI Security Integration</title>
       <link>https://secubuzz.com/news/crowdstrike-acquires-zscaler-for-ai-security-integ-74ee119c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-acquires-zscaler-for-ai-security-integ-74ee119c</guid>
@@ -114,6 +132,15 @@
       <pubDate>Mon, 23 Nov 2026 21:21:42 GMT</pubDate>
       <source url="https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal">Dark Reading</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Python 3.6 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-python-3-6-security-update-7ae3d02b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-python-3-6-security-update-7ae3d02b</guid>
+      <description><![CDATA[Red Hat released a security update for the python36:3.6 module on RHEL 8, addressing several vulnerabilities. The patch fixes bugs that could enable local privilege escalation or arbitrary code execution, with CVSS scores provided via CVE references. System administrators should install the updated python36 package promptly to secure their environments.]]></description>
+      <pubDate>Mon, 23 Nov 2026 21:08:45 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102653">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Aurora ADTP Blocks Modern Attacks by Continuous Behavior Tracking</title>
@@ -314,6 +341,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Microsoft Acknowledges CVE-2026-70175 ASP.NET Core Privilege Bug</title>
+      <link>https://secubuzz.com/news/microsoft-acknowledges-cve-2026-70175-asp-net-core-eca1996d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-cve-2026-70175-asp-net-core-eca1996d</guid>
+      <description><![CDATA[Microsoft has acknowledged CVE-2026-70175, an elevation of privilege flaw in ASP.NET Core that could let attackers gain higher privileges on affected systems. The flaw stems from improper validation of user input during authentication, allowing privilege escalation without authentication, though no public exploit exists. Microsoft issued an update; users should watch for future patches and apply any subsequent fixes when available.]]></description>
+      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70175">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Acknowledges CVE-2026-96225 .NET Privilege Bug</title>
+      <link>https://secubuzz.com/news/microsoft-acknowledges-cve-2026-96225-net-privileg-773963d1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-cve-2026-96225-net-privileg-773963d1</guid>
+      <description><![CDATA[Microsoft has acknowledged CVE-2026-96225, an elevation of privilege flaw in .NET that could allow attackers to gain higher privileges on affected systems. The vulnerability arises from validation errors during authentication, enabling privilege escalation without authentication, though no public exploit has been reported. Microsoft issued an update; users should watch for future patches and apply any subsequent fixes when available.]]></description>
+      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96225">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Acknowledges CVE-2026-78462 in VS Code</title>
       <link>https://secubuzz.com/news/microsoft-acknowledges-cve-2026-78462-in-vs-code-8068fa08</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-cve-2026-78462-in-vs-code-8068fa08</guid>
@@ -411,51 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 15:25:51 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102502">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Synology DSM Vulnerability Affects Versions Before 7.4.1</title>
-      <link>https://secubuzz.com/news/synology-dsm-vulnerability-affects-versions-before-f780faa3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/synology-dsm-vulnerability-affects-versions-before-f780faa3</guid>
-      <description><![CDATA[DiskStation Manager (DSM) versions prior to 7.4.1 contain a vulnerability that could allow unauthorized access or privilege escalation. The flaw permits attackers to exploit a logic error in DSM’s authentication flow, potentially bypassing user credentials and gaining elevated privileges. Administrators should upgrade to the latest DSM release or apply the vendor-issued patch, and enforce strict access controls to mitigate exploitation.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:23:24 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/synology-security-advisory-av26-1193">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:100561: Important: OpenJDK 11.0.33.1 ELS Security Update For Portable Linux Builds</title>
-      <link>https://secubuzz.com/news/rhsa-2026-100561-important-openjdk-11-0-33-1-els-s-966b21de</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-100561-important-openjdk-11-0-33-1-els-s-966b21de</guid>
-      <description><![CDATA[An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:22:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100561">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>FBI NCIC Database Targeted in Second Cyber Incident</title>
-      <link>https://secubuzz.com/news/fbi-ncic-database-targeted-in-second-cyber-inciden-c85df571</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-ncic-database-targeted-in-second-cyber-inciden-c85df571</guid>
-      <description><![CDATA[The FBI’s National Crime Information Center (NCIC) database was targeted in a second cyber incident reported this month. The attack compromised access to records on fugitives, warrants, criminal histories, and missing persons, potentially exposing sensitive law-enforcement data. Investigators are assessing the breach scope, and security teams should monitor for unauthorized access attempts to similar databases.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:16:27 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/23rd-november-threat-intelligence-report/">Check Point Research</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102405: Important: qt5-qtdeclarative security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102405-important-qt5-qtdeclarative-secur-71c56100</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102405-important-qt5-qtdeclarative-secur-71c56100</guid>
-      <description><![CDATA[An update for qt5-qtdeclarative is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:15:51 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102405">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Trump Names Davies National Cyber Czar</title>
-      <link>https://secubuzz.com/news/trump-names-davies-national-cyber-czar-8b4bb737</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trump-names-davies-national-cyber-czar-8b4bb737</guid>
-      <description><![CDATA[President Trump has confirmed appointing Pentagon CIO John Davies as national cyber director after widespread support. Davies, who has served as acting director, will lead DoD cyber strategy and coordinate federal cyber defense efforts. The appointment aims to strengthen overall U.S. cyber posture, contingent on interagency cooperation and resource allocation.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:14:00 GMT</pubDate>
-      <source url="https://therecord.media/kirsten-davies-trump-intends-nominate-national-cyber-director">The Record</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
