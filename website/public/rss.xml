@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 22:45:01 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 23:05:27 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CIA Unclassified System Breached</title>
@@ -15,6 +15,15 @@
       <pubDate>Tue, 24 Nov 2026 22:41:58 GMT</pubDate>
       <source url="https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/">SecurityWeek</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Releases OpenSSL Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-openssl-security-update-2998ddd6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-openssl-security-update-2998ddd6</guid>
+      <description><![CDATA[Red Hat has issued a security update for OpenSSL on Red Enterprise Linux 9.8 Extended Update Support, addressing multiple vulnerabilities. The update carries a moderate impact rating, with CVSS base scores available via the referenced CVE links, but no active exploitation has been reported. Administrators should apply the patch promptly to maintain OpenSSL security posture and prevent potential exploitation.]]></description>
+      <pubDate>Tue, 24 Nov 2026 22:21:32 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103395">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Red Hat Releases librabbitmq Security Update</title>
@@ -51,6 +60,15 @@
       <pubDate>Tue, 24 Nov 2026 21:48:06 GMT</pubDate>
       <source url="https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn">Dark Reading</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>Red Hat updates MariaDB 10.11 for security</title>
+      <link>https://secubuzz.com/news/red-hat-updates-mariadb-10-11-for-security-df8bf358</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-mariadb-10-11-for-security-df8bf358</guid>
+      <description><![CDATA[Red Hat released a security update for the MariaDB 10.11 module on RHEL 9.8 Extended Update Support. The update addresses multiple vulnerabilities with CVSS scores listed in the CVE references, rated as Important by Product Security, though no active exploitation has been reported. Administrators should apply the update immediately via the standard package manager to mitigate potential exploitation.]]></description>
+      <pubDate>Tue, 24 Nov 2026 21:41:45 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103194">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Rackspace Spot Platform Shut Down After Breach</title>
@@ -341,6 +359,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>SwarmView Reveals AI Investigation Transparency</title>
+      <link>https://secubuzz.com/news/swarmview-reveals-ai-investigation-transparency-6647b8f8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/swarmview-reveals-ai-investigation-transparency-6647b8f8</guid>
+      <description><![CDATA[Arctic Wolf demonstrates SwarmView, a feature of its Aurora Agentic SOC, that exposes the internal decision process of AI-driven investigations. The tool displays which AI agents contributed, their weighting, and the points at which a human expert intervened, providing auditability for forensic analysis. Security teams can use SwarmView to validate AI conclusions and adjust agent configurations for improved investigative accuracy.]]></description>
+      <pubDate>Tue, 24 Nov 2026 16:17:03 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/technical-videos/how-swarmview-provides-transparency-around-ai-driven-investigations-and-trustworthy-results/">Arctic Wolf</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Check Point Servers Compromised in 22-Org Campaign</title>
       <link>https://secubuzz.com/news/check-point-servers-compromised-in-22-org-campaign-4e126213</link>
       <guid isPermaLink="true">https://secubuzz.com/news/check-point-servers-compromised-in-22-org-campaign-4e126213</guid>
@@ -377,6 +404,24 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>RHSA-2026:103245: Important: python-botocore security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103245-important-python-botocore-securit-81e3726f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103245-important-python-botocore-securit-81e3726f</guid>
+      <description><![CDATA[An update for python-botocore is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 15:47:55 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103245">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102980: Important: opentelemetry-collector security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102980-important-opentelemetry-collector-7f1fd13c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102980-important-opentelemetry-collector-7f1fd13c</guid>
+      <description><![CDATA[An update for opentelemetry-collector is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 15:47:31 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102980">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Issues kernel-rt Update for RHEL 9.2 SAP</title>
       <link>https://secubuzz.com/news/red-hat-issues-kernel-rt-update-for-rhel-9-2-sap-0ba2bd0e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kernel-rt-update-for-rhel-9-2-sap-0ba2bd0e</guid>
@@ -411,51 +456,6 @@
       <pubDate>Tue, 24 Nov 2026 15:39:05 GMT</pubDate>
       <source url="https://cybersecuritynews.com/mcdonalds-japan-data-breach/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>AI Development Adds Vulnerability Noise, Calls for Resilience</title>
-      <link>https://secubuzz.com/news/ai-development-adds-vulnerability-noise-calls-for-f1552214</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-development-adds-vulnerability-noise-calls-for-f1552214</guid>
-      <description><![CDATA[AI-driven development increases software supply-chain complexity, flooding security teams with low-risk vulnerabilities. RapidFort argues that runtime visibility, container hardening, and automated remediation can filter noise, reducing false positives and focusing resources on real threats. Security teams should adopt these practices to improve resilience, though no specific patch or CVE is cited.]]></description>
-      <pubDate>Tue, 24 Nov 2026 15:01:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Autonomous AI Agents Automate Multi-Platform Intrusions</title>
-      <link>https://secubuzz.com/news/autonomous-ai-agents-automate-multi-platform-intru-360d7a1c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/autonomous-ai-agents-automate-multi-platform-intru-360d7a1c</guid>
-      <description><![CDATA[Unit 42 tracked cyber campaigns featuring autonomous AI agents deployed to conduct multi-platform intrusions. Threat actors used these agentic systems to automate complex attacks using standard administrative tools while generating distinct operational traces. Security operations teams must monitor environment-specific telemetry to identify automated agent behaviors and mitigate multi-platform intrusion risks.]]></description>
-      <pubDate>Tue, 24 Nov 2026 15:00:19 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/">Unit 42</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CISA Alerts on Exploited N-Able Email Bug</title>
-      <link>https://secubuzz.com/news/cisa-alerts-on-exploited-n-able-email-bug-1663bd94</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-alerts-on-exploited-n-able-email-bug-1663bd94</guid>
-      <description><![CDATA[CISA warns that a vulnerability in N-Able’s email security platform has been exploited, threatening government departments. The flaw, identified as CVE-2026-134624, allows attackers to bypass spam and malware filtering, potentially delivering malicious content to users. N-Able has released a patch; agencies must update before Thanksgiving to mitigate the critical risk.]]></description>
-      <pubDate>Tue, 24 Nov 2026 15:00:00 GMT</pubDate>
-      <source url="https://therecord.media/cisa-nable-cybersecurity-bug">The Record</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>EU Academy Data Exposed in AI-Assisted Attack</title>
-      <link>https://secubuzz.com/news/eu-academy-data-exposed-in-ai-assisted-attack-ef68327d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eu-academy-data-exposed-in-ai-assisted-attack-ef68327d</guid>
-      <description><![CDATA[The European Commission discovered that an AI-assisted cyberattack exposed names and email addresses of EU Academy users. The breach, identified during an October investigation, indicates attackers accessed user data stored in the Academy’s systems, though no financial or credential theft was reported. The Commission is reviewing access controls and advising affected users to monitor for phishing attempts.]]></description>
-      <pubDate>Tue, 24 Nov 2026 14:49:59 GMT</pubDate>
-      <source url="https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Chrome Vulnerability Affects Versions Before 158.0.8127.88</title>
-      <link>https://secubuzz.com/news/chrome-vulnerability-affects-versions-before-158-0-44fc3e83</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-vulnerability-affects-versions-before-158-0-44fc3e83</guid>
-      <description><![CDATA[Google issued a security advisory for a vulnerability affecting Chrome versions prior to 158.0.8127.88 on Windows/Mac and 158.0.8127.88 on Linux. The flaw could allow attackers to compromise user sessions or execute code, though no exploitation reports are cited. Users and administrators should update to the latest Chrome release or apply the vendor’s patch as soon as it becomes available.]]></description>
-      <pubDate>Tue, 24 Nov 2026 14:41:05 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1201">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

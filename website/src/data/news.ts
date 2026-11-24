@@ -29,6 +29,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-openssl-security-update-2998ddd6",
+    "title": "Red Hat Releases OpenSSL Security Update",
+    "summary": "Red Hat has issued a security update for OpenSSL on Red Enterprise Linux 9.8 Extended Update Support, addressing multiple vulnerabilities. The update carries a moderate impact rating, with CVSS base scores available via the referenced CVE links, but no active exploitation has been reported. Administrators should apply the patch promptly to maintain OpenSSL security posture and prevent potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103395",
+    "publishedAt": "2026-11-24T22:21:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-openssl-security-update",
+      "article-2998ddd6",
+      "2998ddd6",
+      "red-hat-releases-openssl-security-update-2ee1d7"
+    ]
+  },
+  {
     "slug": "red-hat-releases-librabbitmq-security-update-4d11bcbe",
     "title": "Red Hat Releases librabbitmq Security Update",
     "summary": "Red Hat released a security update for the librabbitmq library on RHEL 9, fixing vulnerabilities that could enable remote code execution. The flaws involve improper input validation in AMQP handling, with CVSS scores of 7.5-8.3, and are documented but not yet exploited. Apply the latest librabbitmq package immediately to ensure the patched version is in use.",
@@ -100,6 +118,24 @@ export const news: NewsBrief[] = [
       "7db99672",
       "apt-webworm-customizes-softether-vpn-to-evade-dete-331ab6",
       "apt-webworm-customizes-softether-vpn-to-evade-detection"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-mariadb-10-11-for-security-df8bf358",
+    "title": "Red Hat updates MariaDB 10.11 for security",
+    "summary": "Red Hat released a security update for the MariaDB 10.11 module on RHEL 9.8 Extended Update Support. The update addresses multiple vulnerabilities with CVSS scores listed in the CVE references, rated as Important by Product Security, though no active exploitation has been reported. Administrators should apply the update immediately via the standard package manager to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103194",
+    "publishedAt": "2026-11-24T21:41:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-mariadb-10-11-for-security",
+      "article-df8bf358",
+      "df8bf358",
+      "red-hat-updates-mariadb-10-11-for-security-2ee1cf"
     ]
   },
   {
@@ -710,6 +746,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "swarmview-reveals-ai-investigation-transparency-6647b8f8",
+    "title": "SwarmView Reveals AI Investigation Transparency",
+    "summary": "Arctic Wolf demonstrates SwarmView, a feature of its Aurora Agentic SOC, that exposes the internal decision process of AI-driven investigations. The tool displays which AI agents contributed, their weighting, and the points at which a human expert intervened, providing auditability for forensic analysis. Security teams can use SwarmView to validate AI conclusions and adjust agent configurations for improved investigative accuracy.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/technical-videos/how-swarmview-provides-transparency-around-ai-driven-investigations-and-trustworthy-results/",
+    "publishedAt": "2026-11-24T16:17:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "swarmview-reveals-ai-investigation-transparency",
+      "article-6647b8f8",
+      "6647b8f8",
+      "swarmview-reveals-ai-investigation-transparency-55c353"
+    ]
+  },
+  {
     "slug": "check-point-servers-compromised-in-22-org-campaign-4e126213",
     "title": "Check Point Servers Compromised in 22-Org Campaign",
     "summary": "Threat actors exploited multiple vulnerabilities to compromise Check Point Security management servers in an ongoing campaign that affected 22 organizations. The exploitation enabled attackers to gain administrative control over the servers, potentially exposing configuration data and internal network traffic. Check Point has released patches for the affected vulnerabilities; administrators should apply updates and review server hardening configurations.",
@@ -784,6 +838,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-103245-important-python-botocore-securit-81e3726f",
+    "title": "RHSA-2026:103245: Important: python-botocore security update",
+    "summary": "An update for python-botocore is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103245",
+    "publishedAt": "2026-11-24T15:47:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103245-important-python-botocore-securit",
+      "article-81e3726f",
+      "81e3726f",
+      "rhsa-2026-103245-important-python-botocore-securit-2ee1d2",
+      "rhsa-2026-103245-important-python-botocore-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102980-important-opentelemetry-collector-7f1fd13c",
+    "title": "RHSA-2026:102980: Important: opentelemetry-collector security update",
+    "summary": "An update for opentelemetry-collector is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102980",
+    "publishedAt": "2026-11-24T15:47:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102980-important-opentelemetry-collector",
+      "article-7f1fd13c",
+      "7f1fd13c",
+      "rhsa-2026-102980-important-opentelemetry-collector-2ee179",
+      "rhsa-2026-102980-important-opentelemetry-collector-security-"
+    ]
+  },
+  {
     "slug": "red-hat-issues-kernel-rt-update-for-rhel-9-2-sap-0ba2bd0e",
     "title": "Red Hat Issues kernel-rt Update for RHEL 9.2 SAP",
     "summary": "A kernel-rt security update fixes multiple privilege escalation and denial-of-service flaws in Red Hat Enterprise Linux 9.2 for SAP Solutions. Each vulnerability carries a CVSS score between 7.5 and 8.3, exposing local users to potential real-time scheduling disruption. Red Hat has issued the patch for all affected RHEL 9.",
@@ -854,6 +946,24 @@ export const news: NewsBrief[] = [
       "article-c2ac64ab",
       "c2ac64ab",
       "mcdonald-s-japan-customer-data-breach-confirmed-59f768"
+    ]
+  },
+  {
+    "slug": "police-shut-down-57-illegal-streaming-sites-f9e8b72a",
+    "title": "Police Shut Down 57 Illegal Streaming Sites",
+    "summary": "Law enforcement agencies from eleven countries coordinated to shut down 57 illegal streaming services that collectively hosted hundreds of websites. The disrupted platforms attracted more than 7.3 million annual visits, facilitating unlicensed content distribution and potential malware exposure to users. Authorities dismantled the infrastructure and seized domains, reducing the threat surface for future illicit streaming operations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/",
+    "publishedAt": "2026-11-24T15:10:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "police-shut-down-57-illegal-streaming-sites",
+      "article-f9e8b72a",
+      "f9e8b72a",
+      "police-shut-down-57-illegal-streaming-sites-30ec6d"
     ]
   },
   {
@@ -986,6 +1096,24 @@ export const news: NewsBrief[] = [
       "article-cb89839d",
       "cb89839d",
       "n8n-vulnerabilities-affect-multiple-versions-3ce52d"
+    ]
+  },
+  {
+    "slug": "chrome-beta-159-released-for-android-fa23abd9",
+    "title": "Chrome Beta 159 Released for Android",
+    "summary": "Google released Chrome Beta 159 (159.0.8154.33) for Android via Google Play. The update adds new features and platform changes noted in the Chromium blog and Git log, with no security issues reported. Android users should install the beta from Play Store and file bugs through the provided channel to stay current.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-android-update_0871957487.html",
+    "publishedAt": "2026-11-24T14:28:32.163Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-beta-159-released-for-android",
+      "article-fa23abd9",
+      "fa23abd9",
+      "chrome-beta-159-released-for-android-127ffc"
     ]
   },
   {
@@ -2950,6 +3078,88 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "oracle-outside-in-vulnerability-enables-remote-cod-8446c119",
+    "title": "Oracle Outside In Vulnerability Enables Remote Code Execution",
+    "summary": "A stack-based buffer overflow in Oracle Outside In Technology’s XLSX file parser permits remote code execution on affected installations. The flaw, identified as CVE-2026-91458, scores CVSS 7.8 and requires interaction with the library, but attack vectors vary by implementation. Oracle has released a patch; administrators should apply the update immediately to mitigate the remote code execution risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1150/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-91458"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-outside-in-vulnerability-enables-remote-cod",
+      "article-8446c119",
+      "8446c119",
+      "oracle-outside-in-vulnerability-enables-remote-cod-77f3bf",
+      "oracle-outside-in-vulnerability-enables-remote-code-executio"
+    ]
+  },
+  {
+    "slug": "oracle-autonomous-ai-database-vulnerability-enable-9bbf1020",
+    "title": "Oracle Autonomous AI Database Vulnerability Enables Remote Code Execution",
+    "summary": "A command injection flaw in Oracle Autonomous AI Database’s ORDS AutoUpgrade servlet allows remote code execution on affected installations. Authentication is required but can be actively bypassed, and the vulnerability scores CVSS 7.5, indicating high severity. Oracle has issued a patch; users should apply the update promptly to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1149/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-autonomous-ai-database-vulnerability-enable",
+      "article-9bbf1020",
+      "9bbf1020",
+      "oracle-autonomous-ai-database-vulnerability-enable-77f3bc",
+      "oracle-autonomous-ai-database-vulnerability-enables-remote-c"
+    ]
+  },
+  {
+    "slug": "autodesk-autocad-vulnerability-enables-remote-code-91b8a265",
+    "title": "Autodesk AutoCAD Vulnerability Enables Remote Code Execution",
+    "summary": "An integer overflow in Autodesk AutoCAD’s DWG file parser permits remote code execution on affected installations. The flaw, CVE-2026-104868, scores CVSS 7.8 and requires user interaction to open a malicious file, making it a high-severity vulnerability. Autodesk has released a patch; administrators should apply the update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1148/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-104868"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "autodesk-autocad-vulnerability-enables-remote-code",
+      "article-91b8a265",
+      "91b8a265",
+      "autodesk-autocad-vulnerability-enables-remote-code-77f3bc",
+      "autodesk-autocad-vulnerability-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "zdi-26-1147-autodesk-autocad-dds-file-parsing-heap-434aaa7d",
+    "title": "ZDI-26-1147: Autodesk AutoCAD DDS File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Autodesk AutoCAD. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-85648.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1147/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-85648"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1147-autodesk-autocad-dds-file-parsing-heap",
+      "article-434aaa7d",
+      "434aaa7d",
+      "zdi-26-1147-autodesk-autocad-dds-file-parsing-heap-77f3bc",
+      "zdi-26-1147-autodesk-autocad-dds-file-parsing-heap-based-buf"
     ]
   },
   {
@@ -9129,220 +9339,6 @@ export const news: NewsBrief[] = [
       "article-3230d0ff",
       "3230d0ff",
       "chrome-dev-channel-updated-to-160-0-8171-0-798051"
-    ]
-  },
-  {
-    "slug": "cairn-ai-tool-finds-zero-day-in-medical-imaging-ap-e63715ba",
-    "title": "Cairn AI Tool Finds Zero-Day in Medical Imaging App",
-    "summary": "Hackers used the open-source AI framework Cairn to discover a zero-day in a medical imaging application in a critical system. The flaw, a buffer overflow in the image-processing module, enabled remote code execution with elevated privileges. The vendor released patch 2.3.1; apply it immediately and monitor for anomalous activity to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
-    "publishedAt": "2026-11-20T17:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cairn-ai-tool-finds-zero-day-in-medical-imaging-ap",
-      "article-e63715ba",
-      "e63715ba",
-      "cairn-ai-tool-finds-zero-day-in-medical-imaging-ap-594ab7",
-      "cairn-ai-tool-finds-zero-day-in-medical-imaging-app"
-    ]
-  },
-  {
-    "slug": "cairn-ai-tool-finds-possible-zero-day-at-universit-cd701829",
-    "title": "Cairn AI Tool Finds Possible Zero-Day at University",
-    "summary": "A China-linked threat actor used the open-source AI framework Cairn to target two universities, reportedly finding a potential zero-day. The flaw, a memory-corruption bug in the LMS, could enable unauthenticated remote code execution, endangering academic data. Administrators should apply the vendor patch immediately and enforce strict access controls to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
-    "publishedAt": "2026-11-20T17:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cairn-ai-tool-finds-possible-zero-day-at-universit",
-      "article-cd701829",
-      "cd701829",
-      "cairn-ai-tool-finds-possible-zero-day-at-universit-26a74c",
-      "cairn-ai-tool-finds-possible-zero-day-at-university"
-    ]
-  },
-  {
-    "slug": "nvidia-ceo-resignation-and-microsoft-outage-highli-ad8d3de0",
-    "title": "Nvidia CEO Resignation and Microsoft Outage Highlight AI Volatility",
-    "summary": "Dark Reading highlights recent industry news, including Nvidia CEO Jensen Huang’s resignation and a Microsoft cloud outage. The video summarizes key developments that were omitted from earlier coverage, underscoring the volatility of the AI sector. Viewers are encouraged to review the full discussion for context on leadership changes and infrastructure disruptions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/what-we-missed-nvidia-ceo-scandal-rocks-ai-industry",
-    "publishedAt": "2026-11-20T17:04:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nvidia-ceo-resignation-and-microsoft-outage-highli",
-      "article-ad8d3de0",
-      "ad8d3de0",
-      "nvidia-ceo-resignation-and-microsoft-outage-highli-3e1331",
-      "nvidia-ceo-resignation-and-microsoft-outage-highlight-ai-vol"
-    ]
-  },
-  {
-    "slug": "microsoft-investigates-new-outlook-attachment-uplo-643ec312",
-    "title": "Microsoft Investigates New Outlook Attachment Upload Failures",
-    "summary": "Microsoft is investigating reports that Microsoft 365 users cannot upload attachments in the New Outlook client, a problem tracked under ticket EX1561765 in the admin center. The issue is being addressed in the November 20 service update. Users experiencing the failure should verify their client version and contact support if it persists.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-attachment-upload-failures/",
-    "publishedAt": "2026-11-20T17:01:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-investigates-new-outlook-attachment-uplo",
-      "article-643ec312",
-      "643ec312",
-      "microsoft-investigates-new-outlook-attachment-uplo-2b6fb5",
-      "microsoft-investigates-new-outlook-attachment-upload-failure"
-    ]
-  },
-  {
-    "slug": "bazuka-android-malware-hides-credential-theft-with-efc28292",
-    "title": "Bazuka Android Malware Hides Credential Theft with Fake Overlays",
-    "summary": "Bazuka is a disclosed Android malware framework that uses fake screen overlays to conceal credential theft and remote device control. It integrates large-language models for scalable victim management, enabling attackers to orchestrate credential harvesting and device-level commands across infected devices. Researchers released technical details but no patch exists; teams should monitor for updates and enforce app-store vetting to mitigate exposure.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
-    "publishedAt": "2026-11-20T16:58:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bazuka-android-malware-hides-credential-theft-with",
-      "article-efc28292",
-      "efc28292",
-      "bazuka-android-malware-hides-credential-theft-with-114e33",
-      "bazuka-android-malware-hides-credential-theft-with-fake-over"
-    ]
-  },
-  {
-    "slug": "aws-ssosync-privilege-escalation-via-reused-email-b0cfb5a6",
-    "title": "AWS ssosync Privilege Escalation via Reused Email Addresses",
-    "summary": "CVE-2026-133199 exposes a privilege-escalation flaw in AWS ssosync before 2.9.5, letting an authenticated user inherit IAM Identity Center group memberships from a reused Google Workspace e-mail address or group name. The flaw results from incorrect privilege assignment during reconciliation, granting elevated permissions without further authentication. AWS released a patch in version 2.9.5; administrators should upgrade immediately to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-194-aws/",
-    "publishedAt": "2026-11-20T16:41:29.000Z",
-    "cves": [
-      "CVE-2026-133199"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aws-ssosync-privilege-escalation-via-reused-email",
-      "article-b0cfb5a6",
-      "b0cfb5a6",
-      "aws-ssosync-privilege-escalation-via-reused-email-24dbe9",
-      "aws-ssosync-privilege-escalation-via-reused-email-addresses"
-    ]
-  },
-  {
-    "slug": "ai-driven-attacks-arrive-cisos-need-five-steps-764d2948",
-    "title": "AI-Driven Attacks Arrive; CISOs Need Five Steps",
-    "summary": "Claude Mythos Preview, an advanced AI model, identified and linked software vulnerabilities faster than traditional tools. ARTEX recently removed its corporate barrier, granting attackers broader access to the model and increasing threat exposure. CISOs should adopt five proactive steps, tightening AI controls, enhancing vulnerability triage, and updating incident response plans.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/blog/ai-driven-attacks-are-here-five-steps-cisos-should-take-now/",
-    "publishedAt": "2026-11-20T16:41:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-driven-attacks-arrive-cisos-need-five-steps",
-      "article-764d2948",
-      "764d2948",
-      "ai-driven-attacks-arrive-cisos-need-five-steps-6f2ce9"
-    ]
-  },
-  {
-    "slug": "debian-packages-retain-distrusted-ca-certificates-ae93cb75",
-    "title": "Debian Packages Retain Distrusted CA Certificates After Updates",
-    "summary": "A Debian package mirror scan found over 100 packages still containing distrusted CA certificates after their removal from the system trust store. Debian developer Steve McIntyre posted the results on November 19, showing package-level certificate copies persist despite trust-store updates.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/debian-packages-ca-certificates/",
-    "publishedAt": "2026-11-20T16:39:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "debian-packages-retain-distrusted-ca-certificates",
-      "article-ae93cb75",
-      "ae93cb75",
-      "debian-packages-retain-distrusted-ca-certificates-4fdf79",
-      "debian-packages-retain-distrusted-ca-certificates-after-upda"
-    ]
-  },
-  {
-    "slug": "java4shell-exposes-java-apps-to-code-execution-dfa30b1e",
-    "title": "Java4Shell Exposes Java Apps to Code Execution",
-    "summary": "Java4Shell flaw exposes Java apps to code execution; FBI warns of ARTEX intrusions, and 8-Digits Team faces a 27-year sentence. The flaw originates from deserialization of Java objects, allowing attackers to send that bypass authentication and run code. Oracle released patch 2026-04-01 for Java Runtime Environments; admins should upgrade or apply the workaround.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SentinelOne",
-    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-47-8",
-    "publishedAt": "2026-11-20T16:14:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "java4shell-exposes-java-apps-to-code-execution",
-      "article-dfa30b1e",
-      "dfa30b1e",
-      "java4shell-exposes-java-apps-to-code-execution-5e83f0"
-    ]
-  },
-  {
-    "slug": "nvidia-tegra-igx-kernel-vulnerabilities-discovered-e3bb6f4f",
-    "title": "NVIDIA Tegra IGX Kernel Vulnerabilities Discovered",
-    "summary": "NVIDIA Tegra IGX Linux kernel subsystems contain vulnerabilities that could let attackers compromise devices. Flaws identified as CVE-2025-21656, CVE-2026-63940, CVE-2026-74350, CVE-2026-98432, and CVE-2026-99999 affect x86 architecture, hardware monitoring drivers, OCFS2, IPv4 networking, Ethernet bridge, Netfilter, and XFRM, enabling potential system compromise. Kernel updates correcting these flaws are available; administrators should apply the patch to mitigate risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9184-1",
-    "publishedAt": "2026-11-20T16:08:41.000Z",
-    "cves": [
-      "CVE-2025-21656",
-      "CVE-2026-63940",
-      "CVE-2026-74350",
-      "CVE-2026-98432",
-      "CVE-2026-99999"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "nvidia-tegra-igx-kernel-vulnerabilities-discovered",
-      "article-e3bb6f4f",
-      "e3bb6f4f",
-      "nvidia-tegra-igx-kernel-vulnerabilities-discovered-7e77f2"
-    ]
-  },
-  {
-    "slug": "nsa-resumes-operations-after-internal-network-disr-926a15d3",
-    "title": "NSA Resumes Operations After Internal Network Disruptions",
-    "summary": "The National Security Agency experienced internal network disruptions that forced a temporary Code Orange status for several facilities, delaying openings and requiring employee check-ins with supervisors. The disruptions impacted non-essential operations, but core mission functions continued under reduced capacity. Normal operations have resumed, though affected sites remain under Code Orange until full network stability is confirmed.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/nsa-resumes-normal-operations-following-internal-disruptions",
-    "publishedAt": "2026-11-20T16:06:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nsa-resumes-operations-after-internal-network-disr",
-      "article-926a15d3",
-      "926a15d3",
-      "nsa-resumes-operations-after-internal-network-disr-59abbd",
-      "nsa-resumes-operations-after-internal-network-disruptions"
     ]
   }
 ];
