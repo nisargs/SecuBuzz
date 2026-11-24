@@ -11,6 +11,139 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "socket-provides-free-patches-for-all-critical-ruby-d62555b9",
+    "title": "Socket Provides Free Patches for All Critical RubyGems CVEs",
+    "summary": "Socket has released free patches that address every critical RubyGems vulnerability without requiring dependency upgrades. The patches cover all CVEs flagged as critical by the RubyGems security team, ensuring immediate remediation for affected projects. Security teams should download the patches from Socket’s repository and apply them via the provided installation scripts or package managers.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/free-patches-critical-ruby-cves",
+    "publishedAt": "2026-11-24T18:27:14.893Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "socket-provides-free-patches-for-all-critical-ruby",
+      "article-d62555b9",
+      "d62555b9",
+      "socket-provides-free-patches-for-all-critical-ruby-718eab",
+      "socket-provides-free-patches-for-all-critical-rubygems-cves"
+    ]
+  },
+  {
+    "slug": "aws-pgactive-buffer-overflow-enables-authenticated-9a41b041",
+    "title": "AWS pgactive Buffer Overflow Enables Authenticated RCE",
+    "summary": "A stack-based buffer overflow in AWS pgactive’s replication origin name parsing lets an authenticated database user with specific privileges run arbitrary OS commands. The flaw, CVE-2026-134068, permits privilege-escalated code execution on the database host, threatening the entire PostgreSQL cluster. AWS has issued a patch for all affected versions (≥ 2.1.0); administrators should apply it immediately to close the RCE vector.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-198-aws/",
+    "publishedAt": "2026-11-24T18:09:02.000Z",
+    "cves": [
+      "CVE-2026-134068"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aws-pgactive-buffer-overflow-enables-authenticated",
+      "article-9a41b041",
+      "9a41b041",
+      "aws-pgactive-buffer-overflow-enables-authenticated-2baf4c",
+      "aws-pgactive-buffer-overflow-enables-authenticated-rce"
+    ]
+  },
+  {
+    "slug": "radware-breach-exposes-customer-cloud-access-keys-6970bc18",
+    "title": "Radware Breach Exposes Customer Cloud Access Keys",
+    "summary": "Radware reported that attackers accessed customer account details and cloud access keys via an unsecured internal Cloud WAF management API left exposed online. The exposed API permitted retrieval of credentials that could be used to compromise customer cloud environments. Radware has disclosed the breach; affected customers should review logs and rotate keys.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+    "publishedAt": "2026-11-24T17:49:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "radware-breach-exposes-customer-cloud-access-keys",
+      "article-6970bc18",
+      "6970bc18",
+      "radware-breach-exposes-customer-cloud-access-keys-6983f3"
+    ]
+  },
+  {
+    "slug": "lawmakers-urge-id-verification-firms-to-strengthen-208dbf8c",
+    "title": "Lawmakers Urge ID Verification Firms to Strengthen Security",
+    "summary": "Lawmakers issued a bipartisan letter urging identity verification firms to strengthen security following the September data breach at IDscan. The letter highlights ongoing vulnerabilities in ID verification services and calls for enhanced safeguards to protect user data. Industry stakeholders should review compliance frameworks and implement robust controls to mitigate future breaches.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/idscan-data-breach-warning-congressional-letter",
+    "publishedAt": "2026-11-24T17:49:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "lawmakers-urge-id-verification-firms-to-strengthen",
+      "article-208dbf8c",
+      "208dbf8c",
+      "lawmakers-urge-id-verification-firms-to-strengthen-7d700a",
+      "lawmakers-urge-id-verification-firms-to-strengthen-security"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-update-for-resource-agent-8d7ff866",
+    "title": "Red Hat Issues Important Update for resource-agents",
+    "summary": "Red Hat released an Important security update for the resource-agents package on Enterprise Linux 8, addressing multiple vulnerabilities that could affect cluster resource management. The advisory references CVSS base scores for each flaw, indicating high-severity risks that could lead to unauthorized access or denial of service within the cluster. Administrators should apply the update immediately to mitigate the identified weaknesses.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103254",
+    "publishedAt": "2026-11-24T17:17:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-update-for-resource-agent",
+      "article-8d7ff866",
+      "8d7ff866",
+      "red-hat-issues-important-update-for-resource-agent-2ee1d3",
+      "red-hat-issues-important-update-for-resource-agents"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-fence-agents-update-bc33027c",
+    "title": "Red Hat Issues Critical Fence-Agents Update",
+    "summary": "Red Hat released a critical security update for fence-agents on RHEL 8, fixing vulnerabilities that could let local attackers gain elevated privileges. The advisory cites CVSS base scores for each flaw, indicating high severity, though specific CVE IDs are not listed. Red Hat urges immediate installation of the updated fence-agents package to prevent privilege escalation and potential code execution.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103211",
+    "publishedAt": "2026-11-24T17:16:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-fence-agents-update",
+      "article-bc33027c",
+      "bc33027c",
+      "red-hat-issues-critical-fence-agents-update-2ee1d2"
+    ]
+  },
+  {
+    "slug": "volant-manticore-deploys-ipfs-based-kuboshell-back-dbe30849",
+    "title": "Volant Manticore Deploys IPFS-Based KuboShell Backdoor",
+    "summary": "Iran-aligned Volant Manticore has targeted telecommunications firms, airlines, and critical infrastructure in Cyprus, using a custom backdoor named KuboShell. KuboShell leverages the InterPlanetary File System for command-and-control and deploys the Homa post-compromise framework, enabling stealthy persistence. Security teams should monitor for IPFS traffic, block known KuboShell signatures, and apply network segmentation to mitigate potential espionage.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+    "publishedAt": "2026-11-24T16:54:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "volant-manticore-deploys-ipfs-based-kuboshell-back",
+      "article-dbe30849",
+      "dbe30849",
+      "volant-manticore-deploys-ipfs-based-kuboshell-back-451f5e",
+      "volant-manticore-deploys-ipfs-based-kuboshell-backdoor"
+    ]
+  },
+  {
     "slug": "tanium-vulnerabilities-span-multiple-product-versi-f7e47898",
     "title": "Tanium Vulnerabilities Span Multiple Product Versions",
     "summary": "Tanium disclosed vulnerabilities in Core Content, Enhanced Tags, Default Content, Endpoint Configuration Toolset, Engage, Zone Server, and Threat Response across multiple versions. Flaws enable local privilege escalation or arbitrary code execution, with CVSS scores 6.5-8.3, but no active exploitation reported. Apply the latest patches or upgrade to the minimum recommended versions to mitigate the risks.",
@@ -551,6 +684,44 @@ export const news: NewsBrief[] = [
       "article-d710e72a",
       "d710e72a",
       "shinyhunters-crew-reappears-on-new-leak-site-72ea5a"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102524-important-buildah-conmon-containe-738d6a07",
+    "title": "RHSA-2026:102524: Important: buildah, conmon, container-selinux, containernetworking-plugins, containers-common, criu, crun, fuse-overlayfs, oci-seccomp-bpf-hook, podman, runc, skopeo, and slirp4netns security, bug fix, and enhancement update",
+    "summary": "An update for buildah, conmon, container-selinux, containernetworking-plugins, containers-common, criu, crun, fuse-overlayfs, oci-seccomp-bpf-hook, podman, runc, skopeo, and slirp4netns is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102524",
+    "publishedAt": "2026-11-24T12:41:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102524-important-buildah-conmon-containe",
+      "article-738d6a07",
+      "738d6a07",
+      "rhsa-2026-102524-important-buildah-conmon-containe-2ee169",
+      "rhsa-2026-102524-important-buildah-conmon-container-selinux-"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102526-important-container-tools-rhel8-s-9221ff20",
+    "title": "RHSA-2026:102526: Important: container-tools:rhel8 security update",
+    "summary": "An update for the container-tools:rhel8 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102526",
+    "publishedAt": "2026-11-24T12:41:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102526-important-container-tools-rhel8-s",
+      "article-9221ff20",
+      "9221ff20",
+      "rhsa-2026-102526-important-container-tools-rhel8-s-2ee169",
+      "rhsa-2026-102526-important-container-tools-rhel8-security-up"
     ]
   },
   {
@@ -1931,6 +2102,82 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "busybox-ftpd-directory-traversal-allows-arbitrary-43994ad2",
+    "title": "BusyBox ftpd Directory Traversal Allows Arbitrary File Access",
+    "summary": "A directory traversal flaw in BusyBox ftpd lets remote attackers create, delete, or read arbitrary files on affected installations without authentication. The flaw stems from improper path validation, yielding a CVSS score of 6.5 and enabling sensitive data disclosure or file manipulation. No vendor patch exists; isolate affected systems and apply custom workarounds or upgrade to newer BusyBox releases.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1069/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "busybox-ftpd-directory-traversal-allows-arbitrary",
+      "article-43994ad2",
+      "43994ad2",
+      "busybox-ftpd-directory-traversal-allows-arbitrary-77f34f",
+      "busybox-ftpd-directory-traversal-allows-arbitrary-file-acces"
+    ]
+  },
+  {
+    "slug": "firebird-sql-srp-auth-bypass-exposes-unauthenticat-9be3795f",
+    "title": "Firebird SQL SRP Auth Bypass Exposes Unauthenticated Access",
+    "summary": "A zero-day authentication bypass in Firebird SQL SRP permits remote attackers to gain full database access without credentials. The flaw exploits a flaw in the SRP protocol handling, rated CVSS 9.1, enabling unrestricted data read, write, and schema modification. Firebird has released patch 6.0.0.10; administrators should apply the update immediately or isolate vulnerable instances.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1068/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "firebird-sql-srp-auth-bypass-exposes-unauthenticat",
+      "article-9be3795f",
+      "9be3795f",
+      "firebird-sql-srp-auth-bypass-exposes-unauthenticat-77f34f",
+      "firebird-sql-srp-auth-bypass-exposes-unauthenticated-access"
+    ]
+  },
+  {
+    "slug": "bytebase-dbhub-auth-bypass-enables-unauthenticated-836e58a5",
+    "title": "Bytebase DBHub Auth Bypass Enables Unauthenticated Access",
+    "summary": "Bytebase DBHub suffers an authentication bypass that allows remote attackers to access the platform without credentials. The flaw arises from improper authorization checks in the MCP module, rated CVSS 9.8, permitting full data read, write, and configuration changes. Bytebase has issued patch 1.2.3; administrators should update immediately or isolate affected instances.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1067/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bytebase-dbhub-auth-bypass-enables-unauthenticated",
+      "article-836e58a5",
+      "836e58a5",
+      "bytebase-dbhub-auth-bypass-enables-unauthenticated-77f34f",
+      "bytebase-dbhub-auth-bypass-enables-unauthenticated-access"
+    ]
+  },
+  {
+    "slug": "zdi-26-1066-0day-python-packaging-authority-pip-co-2be0e546",
+    "title": "ZDI-26-1066: (0Day) Python Packaging Authority pip Configuration File Incorrect Permission Assignment Local Privilege Escalation Vulnerability",
+    "summary": "This vulnerability allows local attackers to escalate privileges on affected installations of Python Packaging Authority pip. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1066/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1066-0day-python-packaging-authority-pip-co",
+      "article-2be0e546",
+      "2be0e546",
+      "zdi-26-1066-0day-python-packaging-authority-pip-co-77f34f",
+      "zdi-26-1066-0day-python-packaging-authority-pip-configuratio"
     ]
   },
   {
@@ -4964,24 +5211,6 @@ export const news: NewsBrief[] = [
       "eded742f",
       "critical-asp-net-anticsrf-flaw-enables-remote-code-28c2eb",
       "critical-asp-net-anticsrf-flaw-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-fence-agents-update-a0f333c6",
-    "title": "Red Hat Issues Critical Fence-Agents Update",
-    "summary": "Red Hat released a critical update for the fence-agents package on RHEL 9.2 EUS, fixing a flaw that could allow local privilege escalation. The vulnerability, rated CVSS 9.8 by Red Hat, permits attackers with local access to gain root privileges via fence-agent configuration files. Administrators should apply the RHSA-2026:102250 update immediately or use the provided workaround to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102250",
-    "publishedAt": "2026-11-23T10:06:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-fence-agents-update",
-      "article-a0f333c6",
-      "a0f333c6",
-      "red-hat-issues-critical-fence-agents-update-2ee15e"
     ]
   },
   {
@@ -9118,230 +9347,6 @@ export const news: NewsBrief[] = [
       "4d57d748",
       "european-commission-confirms-ai-generated-cyberatt-42376c",
       "european-commission-confirms-ai-generated-cyberattack"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100643-moderate-rpm-security-update-baca4ae2",
-    "title": "RHSA-2026:100643: Moderate: rpm security update",
-    "summary": "An update for rpm is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100643",
-    "publishedAt": "2026-11-20T08:48:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100643-moderate-rpm-security-update",
-      "article-baca4ae2",
-      "baca4ae2",
-      "rhsa-2026-100643-moderate-rpm-security-update-2ee084"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100554-important-buildah-security-bug-fi-f8789eb8",
-    "title": "RHSA-2026:100554: Important: buildah security, bug fix, and enhancement update",
-    "summary": "An update for buildah is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100554",
-    "publishedAt": "2026-11-20T08:47:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100554-important-buildah-security-bug-fi",
-      "article-f8789eb8",
-      "f8789eb8",
-      "rhsa-2026-100554-important-buildah-security-bug-fi-2ee081",
-      "rhsa-2026-100554-important-buildah-security-bug-fix-and-enha"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100641-important-c-ares-security-update-6ab76ab1",
-    "title": "RHSA-2026:100641: Important: c-ares security update",
-    "summary": "An update for c-ares is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100641",
-    "publishedAt": "2026-11-20T08:47:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100641-important-c-ares-security-update",
-      "article-6ab76ab1",
-      "6ab76ab1",
-      "rhsa-2026-100641-important-c-ares-security-update-2ee084"
-    ]
-  },
-  {
-    "slug": "red-hat-builds-security-update-for-buildah-4fa46f82",
-    "title": "Red Hat Builds Security Update for Buildah",
-    "summary": "Red Hat released an important buildah update for Enterprise Linux 9, addressing multiple security bugs that could allow privilege escalation or denial of service. The update includes fixes for CVEs referenced in the advisory, improving container image building reliability and preventing potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100688",
-    "publishedAt": "2026-11-20T08:47:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-builds-security-update-for-buildah",
-      "article-4fa46f82",
-      "4fa46f82",
-      "red-hat-builds-security-update-for-buildah-2ee085"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100639-important-skopeo-security-bug-fix-5e1bf7ca",
-    "title": "RHSA-2026:100639: Important: skopeo security, bug fix, and enhancement update",
-    "summary": "An update for skopeo is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100639",
-    "publishedAt": "2026-11-20T08:46:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100639-important-skopeo-security-bug-fix",
-      "article-5e1bf7ca",
-      "5e1bf7ca",
-      "rhsa-2026-100639-important-skopeo-security-bug-fix-2ee084",
-      "rhsa-2026-100639-important-skopeo-security-bug-fix-and-enhan"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100640-important-skopeo-security-bug-fix-4e7c28fe",
-    "title": "RHSA-2026:100640: Important: skopeo security, bug fix, and enhancement update",
-    "summary": "An update for skopeo is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100640",
-    "publishedAt": "2026-11-20T08:45:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100640-important-skopeo-security-bug-fix",
-      "article-4e7c28fe",
-      "4e7c28fe",
-      "rhsa-2026-100640-important-skopeo-security-bug-fix-2ee084",
-      "rhsa-2026-100640-important-skopeo-security-bug-fix-and-enhan"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100645-important-python3-9-security-upda-45b5e98e",
-    "title": "RHSA-2026:100645: Important: python3.9 security update",
-    "summary": "An update for python3.9 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100645",
-    "publishedAt": "2026-11-20T08:44:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100645-important-python3-9-security-upda",
-      "article-45b5e98e",
-      "45b5e98e",
-      "rhsa-2026-100645-important-python3-9-security-upda-2ee084",
-      "rhsa-2026-100645-important-python3-9-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100689-important-python-oauthlib-securit-f3f00c2c",
-    "title": "RHSA-2026:100689: Important: python-oauthlib security update",
-    "summary": "An update for python-oauthlib is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100689",
-    "publishedAt": "2026-11-20T08:44:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100689-important-python-oauthlib-securit",
-      "article-f3f00c2c",
-      "f3f00c2c",
-      "rhsa-2026-100689-important-python-oauthlib-securit-2ee085",
-      "rhsa-2026-100689-important-python-oauthlib-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-recommends-python3-9-update-for-security-b1698d4f",
-    "title": "Red Hat Recommends Python3.9 Update for Security",
-    "summary": "Red Hat issued an Important security update for python3.9 on RHEL 9.4, addressing multiple interpreter vulnerabilities. The advisory lists CVE identifiers and CVSS scores, indicating high-severity impact. Red Hat recommends applying the update immediately; no workaround is available, and administrators should verify package versions after installation for critical affected systems.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100553",
-    "publishedAt": "2026-11-20T08:42:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-recommends-python3-9-update-for-security",
-      "article-b1698d4f",
-      "b1698d4f",
-      "red-hat-recommends-python3-9-update-for-security-2ee081"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100690-important-python-oauthlib-securit-cddbb364",
-    "title": "RHSA-2026:100690: Important: python-oauthlib security update",
-    "summary": "An update for python-oauthlib is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100690",
-    "publishedAt": "2026-11-20T08:42:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100690-important-python-oauthlib-securit",
-      "article-cddbb364",
-      "cddbb364",
-      "rhsa-2026-100690-important-python-oauthlib-securit-2ee085",
-      "rhsa-2026-100690-important-python-oauthlib-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100644-important-python3-9-security-upda-784509aa",
-    "title": "RHSA-2026:100644: Important: python3.9 security update",
-    "summary": "An update for python3.9 is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100644",
-    "publishedAt": "2026-11-20T08:41:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100644-important-python3-9-security-upda",
-      "article-784509aa",
-      "784509aa",
-      "rhsa-2026-100644-important-python3-9-security-upda-2ee084",
-      "rhsa-2026-100644-important-python3-9-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100691-important-python-oauthlib-securit-692cf308",
-    "title": "RHSA-2026:100691: Important: python-oauthlib security update",
-    "summary": "An update for python-oauthlib is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100691",
-    "publishedAt": "2026-11-20T08:40:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100691-important-python-oauthlib-securit",
-      "article-692cf308",
-      "692cf308",
-      "rhsa-2026-100691-important-python-oauthlib-securit-2ee085",
-      "rhsa-2026-100691-important-python-oauthlib-security-update"
     ]
   }
 ];
