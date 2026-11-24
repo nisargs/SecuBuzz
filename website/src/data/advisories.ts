@@ -2,6 +2,33 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-59192",
+    "cveID": "CVE-2026-59192",
+    "slug": "cve-2026-59192",
+    "vendor": "Composer",
+    "product": "cakephp/twig-view",
+    "name": "Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization",
+    "dateAdded": "2026-11-24",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-502",
+    "ransomware": false,
+    "description": "The unserialize filter has no restriction on which classes are allowed. This can be used as a deserialization remote-code-execution gadget. 1.3.3 and 2.1.2 contain a fix for this issue. The fix may impact backwards compatibility if you are relying on deserializing PHP objects in your templates. Don't use the unserialize filter.",
+    "requiredAction": "Upgrade cakephp/twig-view to version 1.3.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-48qj-5wxh-m8hc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59192"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-133968",
     "slug": "cve-2026-133968",
     "vendor": "Project MONAI",
@@ -1470,33 +1497,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103025"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-102945",
-    "cveID": "CVE-2026-102945",
-    "slug": "cve-2026-102945",
-    "vendor": "Go",
-    "product": "amf · omec-project",
-    "name": "Aether Project amf: panic on an unrecovered NGAP goroutine",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 4.9,
-    "severity": "Medium",
-    "cwe": "CWE-125",
-    "ransomware": false,
-    "description": "HandlePathSwitchRequest guards the UESecurityCapabilities IE for presence but never for length, and the extensible APER type silently yields an empty bit string, so six unguarded index-zero reads panic on an unrecovered goroutine and terminate the AMF. The AMF is the control-plane entry point for a 5G core, so terminating it drops mobility management for every subscriber.",
-    "requiredAction": "Upgrade amf · omec-project to version 1.7.1-0.20260725031321-d28042aaaea0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-v6w5-38cf-pcv8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102945"
       }
     ],
     "source": "GITHUB"

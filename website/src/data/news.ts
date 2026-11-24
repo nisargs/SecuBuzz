@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "tanium-vulnerabilities-span-multiple-product-versi-f7e47898",
+    "title": "Tanium Vulnerabilities Span Multiple Product Versions",
+    "summary": "Tanium disclosed vulnerabilities in Core Content, Enhanced Tags, Default Content, Endpoint Configuration Toolset, Engage, Zone Server, and Threat Response across multiple versions. Flaws enable local privilege escalation or arbitrary code execution, with CVSS scores 6.5-8.3, but no active exploitation reported. Apply the latest patches or upgrade to the minimum recommended versions to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/tanium-security-advisory-av26-1202",
+    "publishedAt": "2026-11-24T16:45:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tanium-vulnerabilities-span-multiple-product-versi",
+      "article-f7e47898",
+      "f7e47898",
+      "tanium-vulnerabilities-span-multiple-product-versi-420fd1",
+      "tanium-vulnerabilities-span-multiple-product-versions"
+    ]
+  },
+  {
     "slug": "vmware-patches-critical-esx-and-vcenter-vulnerabil-a401c0cd",
     "title": "VMware Patches Critical ESX and vCenter Vulnerabilities",
     "summary": "VMware disclosed a critical authentication bypass in vCenter and code execution flaws on ESX hosts, identified by CVE-2026-123903. The flaw permits unauthenticated attackers to gain control of vCenter and run arbitrary code on ESX servers, threatening virtual infrastructure. VMware issued an out-of-band patch; administrators should apply it immediately to secure affected systems.",
@@ -105,6 +124,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-kernel-rt-update-for-rhel-9-2-sap-0ba2bd0e",
+    "title": "Red Hat Issues kernel-rt Update for RHEL 9.2 SAP",
+    "summary": "A kernel-rt security update fixes multiple privilege escalation and denial-of-service flaws in Red Hat Enterprise Linux 9.2 for SAP Solutions. Each vulnerability carries a CVSS score between 7.5 and 8.3, exposing local users to potential real-time scheduling disruption. Red Hat has issued the patch for all affected RHEL 9.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103219",
+    "publishedAt": "2026-11-24T15:46:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-kernel-rt-update-for-rhel-9-2-sap",
+      "article-0ba2bd0e",
+      "0ba2bd0e",
+      "red-hat-issues-kernel-rt-update-for-rhel-9-2-sap-2ee1d2"
+    ]
+  },
+  {
+    "slug": "mcdonald-s-japan-customer-data-breach-confirmed-c2ac64ab",
+    "title": "McDonald’s Japan Customer Data Breach Confirmed",
+    "summary": "McDonald’s Japan confirmed a breach where a third party accessed customer data stored behind its official mobile app. The exposed records included purchase histories, internal customer IDs, IP addresses, and mobile device location data, potentially compromising user privacy. McDonald’s Japan urged affected customers to monitor accounts and advised security teams to review access controls and data handling practices.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/mcdonalds-japan-data-breach/",
+    "publishedAt": "2026-11-24T15:39:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mcdonald-s-japan-customer-data-breach-confirmed",
+      "article-c2ac64ab",
+      "c2ac64ab",
+      "mcdonald-s-japan-customer-data-breach-confirmed-59f768"
+    ]
+  },
+  {
     "slug": "ai-development-adds-vulnerability-noise-calls-for-f1552214",
     "title": "AI Development Adds Vulnerability Noise, Calls for Resilience",
     "summary": "AI-driven development increases software supply-chain complexity, flooding security teams with low-risk vulnerabilities. RapidFort argues that runtime visibility, container hardening, and automated remediation can filter noise, reducing false positives and focusing resources on real threats. Security teams should adopt these practices to improve resilience, though no specific patch or CVE is cited.",
@@ -181,6 +236,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "n8n-vulnerabilities-affect-multiple-versions-cb89839d",
+    "title": "n8n Vulnerabilities Affect Multiple Versions",
+    "summary": "n8n disclosed flaws in versions prior to 3.4.0, 2.50.0, 2.49.5, 2.48.8, 1.123.101, 2.49.4, 2.48.7, and 1.123.100. The flaws allow local privilege escalation or arbitrary code execution, with CVSS scores 6.0-8.0, but no active exploitation observed. Apply the latest patches or upgrade to the minimum recommended versions to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1200",
+    "publishedAt": "2026-11-24T14:32:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n8n-vulnerabilities-affect-multiple-versions",
+      "article-cb89839d",
+      "cb89839d",
+      "n8n-vulnerabilities-affect-multiple-versions-3ce52d"
+    ]
+  },
+  {
     "slug": "volant-manticore-flying-under-the-radar-1ed67c1d",
     "title": "Volant Manticore: Flying Under the Radar",
     "summary": "Key Points Introduction Check Point Research is tracking a previously undocumented Iran-nexus threat group who we named Volant Manticore. What started in July 2026 as a single backdoor delivered to a Cyprus-based airline through a fake CV has since expanded into a broader cluster of activity that we traced back to September 2025.",
@@ -236,6 +309,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-kernel-update-for-rhel-9-4-sap-bb9a6e86",
+    "title": "Red Hat Releases kernel Update for RHEL 9.4 SAP",
+    "summary": "A kernel security update addresses several privilege escalation and denial-of-service vulnerabilities in Red Hat Enterprise Linux 9.4 for SAP Solutions. The flaws have CVSS scores ranging from 7.0 to 8.2, allowing local users to potentially disrupt system operations. Red Hat has released the patch for all affected RHEL 9.4 SAP nodes; administrators should apply it immediately to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102712",
+    "publishedAt": "2026-11-24T13:41:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-update-for-rhel-9-4-sap",
+      "article-bb9a6e86",
+      "bb9a6e86",
+      "red-hat-releases-kernel-update-for-rhel-9-4-sap-2ee171"
+    ]
+  },
+  {
     "slug": "gta-6-hacker-sentenced-released-same-day-3f92ee57",
     "title": "GTA 6 Hacker Sentenced, Released Same Day",
     "summary": "A former Lapsus$ member, Arion Kurtaj, was sentenced to seven years for leaking Grand Theft Auto VI footage after a guilty plea. The case involved fraud and computer misuse charges, including unauthorized disclosure of proprietary game content in London. Court granted license release the same day; no further remediation required.",
@@ -288,6 +379,24 @@ export const news: NewsBrief[] = [
       "article-fa91e5d3",
       "fa91e5d3",
       "shirudo-ai-tool-protects-unpatched-linux-systems-5c4b77"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-kernel-update-for-rhel-9-sap-01dbf79d",
+    "title": "Red Hat Issues kernel Update for RHEL 9 SAP",
+    "summary": "A kernel security update fixes multiple privilege escalation and denial-of-service flaws in Red Hat Enterprise Linux 9. The vulnerabilities carry CVSS scores between 7.2 and 8.0, exposing local users to potential system disruption. Red Hat has issued the patch for all affected RHEL 9 nodes; administrators should apply it promptly to close the gaps.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102590",
+    "publishedAt": "2026-11-24T13:31:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-kernel-update-for-rhel-9-sap",
+      "article-01dbf79d",
+      "01dbf79d",
+      "red-hat-issues-kernel-update-for-rhel-9-sap-2ee16a"
     ]
   },
   {
@@ -424,6 +533,42 @@ export const news: NewsBrief[] = [
       "3fcb8aae",
       "cve-2026-131914-enables-unauthenticated-asp-net-rc-139fe7",
       "cve-2026-131914-enables-unauthenticated-asp-net-rce"
+    ]
+  },
+  {
+    "slug": "shinyhunters-crew-reappears-on-new-leak-site-d710e72a",
+    "title": "ShinyHunters Crew Reappears on New Leak Site",
+    "summary": "Okta’s threat intelligence team uncovered the ShinyHunters-linked crew resurfacing on a leak site called 'Inception', continuing social engineering and credential-harvesting campaigns. Since March 2026, the O-UNC-053 cluster has targeted technology, healthcare, biotech, finance, insurance, entertainment, gaming, retail, transportation, hospitality, and legal sectors. Security teams should monitor credential-stealing phishing attempts and enforce multi-factor authentication to mitigate the crew’s exploitation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/shinyhunters-inception-leak-site-okta/",
+    "publishedAt": "2026-11-24T12:47:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "shinyhunters-crew-reappears-on-new-leak-site",
+      "article-d710e72a",
+      "d710e72a",
+      "shinyhunters-crew-reappears-on-new-leak-site-72ea5a"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102534-moderate-ruby-2-5-security-update-de3bf5ee",
+    "title": "RHSA-2026:102534: Moderate: ruby:2.5 security update",
+    "summary": "An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102534",
+    "publishedAt": "2026-11-24T12:35:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102534-moderate-ruby-2-5-security-update",
+      "article-de3bf5ee",
+      "de3bf5ee",
+      "rhsa-2026-102534-moderate-ruby-2-5-security-update-2ee169"
     ]
   },
   {
@@ -1786,6 +1931,69 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "parallels-desktop-cshashellext-local-privilege-esc-5bbad1a9",
+    "title": "Parallels Desktop CSHAShellExt Local Privilege Escalation Vulnerability",
+    "summary": "A local privilege escalation flaw in Parallels Desktop's CSHAShellExt component allows attackers with low-privileged guest code execution to gain elevated rights. The vulnerability, identified as 'CVE-2026-121756', has a CVSS score of 8.8 and requires local code execution to exploit. Parallels has released a patch for all affected installations; users should update immediately and restrict guest code execution privileges.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1042/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-121756"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "parallels-desktop-cshashellext-local-privilege-esc",
+      "article-5bbad1a9",
+      "5bbad1a9",
+      "parallels-desktop-cshashellext-local-privilege-esc-77f347",
+      "parallels-desktop-cshashellext-local-privilege-escalation-vu"
+    ]
+  },
+  {
+    "slug": "parallels-desktop-vulnerability-enables-local-priv-7b3d10f8",
+    "title": "Parallels Desktop Vulnerability Enables Local Privilege Escalation",
+    "summary": "A local privilege escalation flaw in Parallels Desktop’s inittool2 lets attackers who already execute low-privilege code elevate to full system rights. CVE-2026-121754 carries a CVSS 7.8 score and requires initial local code execution, with no remote or unauthenticated vector. Parallels released a patch in the latest update; administrators should apply it immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1040/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-121754"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "parallels-desktop-vulnerability-enables-local-priv",
+      "article-7b3d10f8",
+      "7b3d10f8",
+      "parallels-desktop-vulnerability-enables-local-priv-77f347",
+      "parallels-desktop-vulnerability-enables-local-privilege-esca"
+    ]
+  },
+  {
+    "slug": "zdi-26-1041-parallels-desktop-handle-based-rename-527e807b",
+    "title": "ZDI-26-1041: Parallels Desktop Handle-based Rename Time-Of-Check Time-Of-Use Information Disclosure Vulnerability",
+    "summary": "This vulnerability allows local attackers to disclose sensitive information on affected installations of Parallels Desktop. An attacker must first obtain the ability to execute low-privileged code on the target guest system in order to exploit this vulnerability. The following CVEs are assigned: CVE-2026-121755.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1041/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-121755"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1041-parallels-desktop-handle-based-rename",
+      "article-527e807b",
+      "527e807b",
+      "zdi-26-1041-parallels-desktop-handle-based-rename-77f347",
+      "zdi-26-1041-parallels-desktop-handle-based-rename-time-of-ch"
     ]
   },
   {
@@ -9134,209 +9342,6 @@ export const news: NewsBrief[] = [
       "692cf308",
       "rhsa-2026-100691-important-python-oauthlib-securit-2ee085",
       "rhsa-2026-100691-important-python-oauthlib-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100642-important-edk2-security-update-23dc7558",
-    "title": "RHSA-2026:100642: Important: edk2 security update",
-    "summary": "An update for edk2 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100642",
-    "publishedAt": "2026-11-20T08:39:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100642-important-edk2-security-update",
-      "article-23dc7558",
-      "23dc7558",
-      "rhsa-2026-100642-important-edk2-security-update-2ee084"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100734-important-edk2-security-update-45216704",
-    "title": "RHSA-2026:100734: Important: edk2 security update",
-    "summary": "An update for edk2 is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100734",
-    "publishedAt": "2026-11-20T08:35:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100734-important-edk2-security-update",
-      "article-45216704",
-      "45216704",
-      "rhsa-2026-100734-important-edk2-security-update-2ee088"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-update-for-rhel-8-8-sap-02614055",
-    "title": "Red Hat Kernel Update for RHEL 8.8 SAP",
-    "summary": "Red Hat released a kernel update for Enterprise Linux 8.8 SAP and Telecommunications, fixing bugs that could allow privilege escalation or denial of service. CVSS base scores for each vulnerability are listed in the CVE references, indicating high impact. Apply the kernel patch via RHEL 8.8 Update Services for SAP Solutions or Telecommunications Update Service to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100647",
-    "publishedAt": "2026-11-20T08:34:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-kernel-update-for-rhel-8-8-sap",
-      "article-02614055",
-      "02614055",
-      "red-hat-kernel-update-for-rhel-8-8-sap-2ee084"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100498-important-gnome-remote-desktop-se-60da1476",
-    "title": "RHSA-2026:100498: Important: gnome-remote-desktop security update",
-    "summary": "An update for gnome-remote-desktop is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100498",
-    "publishedAt": "2026-11-20T08:33:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100498-important-gnome-remote-desktop-se",
-      "article-60da1476",
-      "60da1476",
-      "rhsa-2026-100498-important-gnome-remote-desktop-se-2ee07e",
-      "rhsa-2026-100498-important-gnome-remote-desktop-security-upd"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100648-important-xorg-x11-server-securit-cd2b4d30",
-    "title": "RHSA-2026:100648: Important: xorg-x11-server security update",
-    "summary": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100648",
-    "publishedAt": "2026-11-20T08:32:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100648-important-xorg-x11-server-securit",
-      "article-cd2b4d30",
-      "cd2b4d30",
-      "rhsa-2026-100648-important-xorg-x11-server-securit-2ee084",
-      "rhsa-2026-100648-important-xorg-x11-server-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100649-important-aspell-security-update-dbe1de9d",
-    "title": "RHSA-2026:100649: Important: aspell security update",
-    "summary": "An update for aspell is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100649",
-    "publishedAt": "2026-11-20T08:32:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100649-important-aspell-security-update",
-      "article-dbe1de9d",
-      "dbe1de9d",
-      "rhsa-2026-100649-important-aspell-security-update-2ee084"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100653-important-net-8-0-security-bug-fi-dcf5f07e",
-    "title": "RHSA-2026:100653: Important: .NET 8.0 security, bug fix, and enhancement update",
-    "summary": "An update for .NET 8.0 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100653",
-    "publishedAt": "2026-11-20T08:31:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100653-important-net-8-0-security-bug-fi",
-      "article-dcf5f07e",
-      "dcf5f07e",
-      "rhsa-2026-100653-important-net-8-0-security-bug-fi-2ee085",
-      "rhsa-2026-100653-important-net-8-0-security-bug-fix-and-enha"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100650-important-httpd-security-update-800165b0",
-    "title": "RHSA-2026:100650: Important: httpd security update",
-    "summary": "An update for httpd is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100650",
-    "publishedAt": "2026-11-20T08:30:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100650-important-httpd-security-update",
-      "article-800165b0",
-      "800165b0",
-      "rhsa-2026-100650-important-httpd-security-update-2ee084"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100654-important-net-9-0-security-bug-fi-5cb532c9",
-    "title": "RHSA-2026:100654: Important: .NET 9.0 security, bug fix, and enhancement update",
-    "summary": "An update for .NET 9.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100654",
-    "publishedAt": "2026-11-20T08:30:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100654-important-net-9-0-security-bug-fi",
-      "article-5cb532c9",
-      "5cb532c9",
-      "rhsa-2026-100654-important-net-9-0-security-bug-fi-2ee085",
-      "rhsa-2026-100654-important-net-9-0-security-bug-fix-and-enha"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100651-important-xorg-x11-server-securit-793092e8",
-    "title": "RHSA-2026:100651: Important: xorg-x11-server security update",
-    "summary": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100651",
-    "publishedAt": "2026-11-20T08:30:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100651-important-xorg-x11-server-securit",
-      "article-793092e8",
-      "793092e8",
-      "rhsa-2026-100651-important-xorg-x11-server-securit-2ee084",
-      "rhsa-2026-100651-important-xorg-x11-server-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-update-for-rhel-9-56850d67",
-    "title": "Red Hat Kernel Update for RHEL 9",
-    "summary": "Red Hat released a kernel security update for Enterprise Linux 9, addressing multiple vulnerabilities that could enable privilege escalation or denial of service. CVSS base scores for each vulnerability are provided in the CVE references, indicating high impact severity. Security teams should apply the kernel patch through RHEL 9 Update Services to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100662",
-    "publishedAt": "2026-11-20T08:29:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-kernel-update-for-rhel-9",
-      "article-56850d67",
-      "56850d67",
-      "red-hat-kernel-update-for-rhel-9-2ee085"
     ]
   }
 ];

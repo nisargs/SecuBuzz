@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 16:45:58 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 17:47:14 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Tanium Vulnerabilities Span Multiple Product Versions</title>
+      <link>https://secubuzz.com/news/tanium-vulnerabilities-span-multiple-product-versi-f7e47898</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tanium-vulnerabilities-span-multiple-product-versi-f7e47898</guid>
+      <description><![CDATA[Tanium disclosed vulnerabilities in Core Content, Enhanced Tags, Default Content, Endpoint Configuration Toolset, Engage, Zone Server, and Threat Response across multiple versions. Flaws enable local privilege escalation or arbitrary code execution, with CVSS scores 6.5-8.3, but no active exploitation reported. Apply the latest patches or upgrade to the minimum recommended versions to mitigate the risks.]]></description>
+      <pubDate>Tue, 24 Nov 2026 16:45:31 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/tanium-security-advisory-av26-1202">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>VMware Patches Critical ESX and vCenter Vulnerabilities</title>
       <link>https://secubuzz.com/news/vmware-patches-critical-esx-and-vcenter-vulnerabil-a401c0cd</link>
@@ -53,6 +62,24 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Red Hat Issues kernel-rt Update for RHEL 9.2 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-issues-kernel-rt-update-for-rhel-9-2-sap-0ba2bd0e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kernel-rt-update-for-rhel-9-2-sap-0ba2bd0e</guid>
+      <description><![CDATA[A kernel-rt security update fixes multiple privilege escalation and denial-of-service flaws in Red Hat Enterprise Linux 9.2 for SAP Solutions. Each vulnerability carries a CVSS score between 7.5 and 8.3, exposing local users to potential real-time scheduling disruption. Red Hat has issued the patch for all affected RHEL 9.]]></description>
+      <pubDate>Tue, 24 Nov 2026 15:46:26 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103219">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>McDonald’s Japan Customer Data Breach Confirmed</title>
+      <link>https://secubuzz.com/news/mcdonald-s-japan-customer-data-breach-confirmed-c2ac64ab</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mcdonald-s-japan-customer-data-breach-confirmed-c2ac64ab</guid>
+      <description><![CDATA[McDonald’s Japan confirmed a breach where a third party accessed customer data stored behind its official mobile app. The exposed records included purchase histories, internal customer IDs, IP addresses, and mobile device location data, potentially compromising user privacy. McDonald’s Japan urged affected customers to monitor accounts and advised security teams to review access controls and data handling practices.]]></description>
+      <pubDate>Tue, 24 Nov 2026 15:39:05 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/mcdonalds-japan-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>AI Development Adds Vulnerability Noise, Calls for Resilience</title>
       <link>https://secubuzz.com/news/ai-development-adds-vulnerability-noise-calls-for-f1552214</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-development-adds-vulnerability-noise-calls-for-f1552214</guid>
@@ -89,6 +116,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>n8n Vulnerabilities Affect Multiple Versions</title>
+      <link>https://secubuzz.com/news/n8n-vulnerabilities-affect-multiple-versions-cb89839d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n8n-vulnerabilities-affect-multiple-versions-cb89839d</guid>
+      <description><![CDATA[n8n disclosed flaws in versions prior to 3.4.0, 2.50.0, 2.49.5, 2.48.8, 1.123.101, 2.49.4, 2.48.7, and 1.123.100. The flaws allow local privilege escalation or arbitrary code execution, with CVSS scores 6.0-8.0, but no active exploitation observed. Apply the latest patches or upgrade to the minimum recommended versions to mitigate the risks.]]></description>
+      <pubDate>Tue, 24 Nov 2026 14:32:25 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1200">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Volant Manticore: Flying Under the Radar</title>
       <link>https://secubuzz.com/news/volant-manticore-flying-under-the-radar-1ed67c1d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/volant-manticore-flying-under-the-radar-1ed67c1d</guid>
@@ -116,6 +152,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Red Hat Releases kernel Update for RHEL 9.4 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-4-sap-bb9a6e86</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-4-sap-bb9a6e86</guid>
+      <description><![CDATA[A kernel security update addresses several privilege escalation and denial-of-service vulnerabilities in Red Hat Enterprise Linux 9.4 for SAP Solutions. The flaws have CVSS scores ranging from 7.0 to 8.2, allowing local users to potentially disrupt system operations. Red Hat has released the patch for all affected RHEL 9.4 SAP nodes; administrators should apply it immediately to mitigate the risks.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:41:14 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102712">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>GTA 6 Hacker Sentenced, Released Same Day</title>
       <link>https://secubuzz.com/news/gta-6-hacker-sentenced-released-same-day-3f92ee57</link>
       <guid isPermaLink="true">https://secubuzz.com/news/gta-6-hacker-sentenced-released-same-day-3f92ee57</guid>
@@ -141,6 +186,15 @@
       <pubDate>Tue, 24 Nov 2026 13:34:23 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues kernel Update for RHEL 9 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-issues-kernel-update-for-rhel-9-sap-01dbf79d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kernel-update-for-rhel-9-sap-01dbf79d</guid>
+      <description><![CDATA[A kernel security update fixes multiple privilege escalation and denial-of-service flaws in Red Hat Enterprise Linux 9. The vulnerabilities carry CVSS scores between 7.2 and 8.0, exposing local users to potential system disruption. Red Hat has issued the patch for all affected RHEL 9 nodes; administrators should apply it promptly to close the gaps.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:31:13 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102590">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Anthropic Enhances Enterprise AI Misuse Detection</title>
@@ -204,6 +258,24 @@
       <pubDate>Tue, 24 Nov 2026 12:55:28 GMT</pubDate>
       <source url="https://cybersecuritynews.com/critical-asp-net-anticsrf-flaw-exploited/">Cyber Security News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>ShinyHunters Crew Reappears on New Leak Site</title>
+      <link>https://secubuzz.com/news/shinyhunters-crew-reappears-on-new-leak-site-d710e72a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/shinyhunters-crew-reappears-on-new-leak-site-d710e72a</guid>
+      <description><![CDATA[Okta’s threat intelligence team uncovered the ShinyHunters-linked crew resurfacing on a leak site called 'Inception', continuing social engineering and credential-harvesting campaigns. Since March 2026, the O-UNC-053 cluster has targeted technology, healthcare, biotech, finance, insurance, entertainment, gaming, retail, transportation, hospitality, and legal sectors. Security teams should monitor credential-stealing phishing attempts and enforce multi-factor authentication to mitigate the crew’s exploitation.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:47:07 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/24/shinyhunters-inception-leak-site-okta/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102534: Moderate: ruby:2.5 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102534-moderate-ruby-2-5-security-update-de3bf5ee</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102534-moderate-ruby-2-5-security-update-de3bf5ee</guid>
+      <description><![CDATA[An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:35:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102534">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Bedrock Data Launches Intent-Aware AI Agent DLP</title>
@@ -383,78 +455,6 @@
       <description><![CDATA[An update for libXi is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Tue, 24 Nov 2026 11:17:34 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102908">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102516: Moderate: firewalld security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102516-moderate-firewalld-security-updat-333302f8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102516-moderate-firewalld-security-updat-333302f8</guid>
-      <description><![CDATA[An update for firewalld is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 11:16:19 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102516">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Important Update for Container Tool Suite</title>
-      <link>https://secubuzz.com/news/red-hat-releases-important-update-for-container-to-8b2b6753</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-important-update-for-container-to-8b2b6753</guid>
-      <description><![CDATA[Red Hat issued a security update for buildah, conmon, containernetworking-plugins, containers-common, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, runc, skopeo, and slirp4netns on Enterprise Linux 9.6 EUS. The update addresses multiple vulnerabilities with CVSS scores in the Important range, mitigating potential container escape or privilege escalation risks. Administrators should apply the RHSA-2026:102529 package updates immediately to secure container runtimes and associated networking components.]]></description>
-      <pubDate>Tue, 24 Nov 2026 11:15:24 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102529">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases cifs-utils Patch for RHEL 9.8</title>
-      <link>https://secubuzz.com/news/red-hat-releases-cifs-utils-patch-for-rhel-9-8-79714d74</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-cifs-utils-patch-for-rhel-9-8-79714d74</guid>
-      <description><![CDATA[Red Hat issued a cifs-utils update for RHEL 9.8 EUS, fixing vulnerabilities that could enable remote code execution via SMB. Each flaw is linked to a CVE and carries a CVSS base score, with Red Hat rating the issue as Important. Apply the patch or upgrade to the latest RHEL 9.8 release to eliminate the risk.]]></description>
-      <pubDate>Tue, 24 Nov 2026 10:51:53 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102886">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>MFA Bypassed via Phone Scams Targeting Microsoft 365</title>
-      <link>https://secubuzz.com/news/mfa-bypassed-via-phone-scams-targeting-microsoft-3-53df92e4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mfa-bypassed-via-phone-scams-targeting-microsoft-3-53df92e4</guid>
-      <description><![CDATA[Cybercriminals posing as corporate IT support trick employees into revealing Microsoft 365 credentials, bypassing MFA to access OneDrive and SharePoint. They exfiltrated emails and files from compromised accounts and demanded ransom via Teams or email, exploiting social engineering. Teams should enforce verification protocols, monitor anomalous activity, and restrict external sharing to mitigate similar attacks.]]></description>
-      <pubDate>Tue, 24 Nov 2026 10:48:04 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/bypass-mfa-through-phone-scams/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Microsoft Patches Azure API Management Flaw Targeting Secrets</title>
-      <link>https://secubuzz.com/news/microsoft-patches-azure-api-management-flaw-target-108a246b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-azure-api-management-flaw-target-108a246b</guid>
-      <description><![CDATA[Microsoft discovered a flaw in Azure API Management Classic that allowed attackers to search for access tokens and secrets. The vulnerability, enabling credential theft and unauthorized API access, was reported by Norway's National Security Authority and is actively exploited. Microsoft released a patch in the latest update; customers should apply it immediately and audit API permissions to mitigate risk.]]></description>
-      <pubDate>Tue, 24 Nov 2026 10:44:49 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102514: Important: buildah, conmon, container-selinux, containers-common, criu, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, skopeo, and slirp4netns security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102514-important-buildah-conmon-containe-c65b1cfb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102514-important-buildah-conmon-containe-c65b1cfb</guid>
-      <description><![CDATA[An update for buildah, conmon, container-selinux, containers-common, criu, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, skopeo, and slirp4netns is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Tue, 24 Nov 2026 10:44:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102514">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Elecbrakes Bluetooth Flaws Enable Forced Trailer Braking</title>
-      <link>https://secubuzz.com/news/elecbrakes-bluetooth-flaws-enable-forced-trailer-b-fa27c92f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/elecbrakes-bluetooth-flaws-enable-forced-trailer-b-fa27c92f</guid>
-      <description><![CDATA[Critical Bluetooth vulnerabilities in Elecbrakes trailer controllers allow nearby attackers to force braking, potentially causing accidents. The flaw exploits insecure Bluetooth pairing and command authentication, enabling remote manipulation of braking systems without user interaction. Manufacturers should update firmware to patch the vulnerabilities and disable unused Bluetooth interfaces to mitigate the risk.]]></description>
-      <pubDate>Tue, 24 Nov 2026 10:44:44 GMT</pubDate>
-      <source url="https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHOSO 18.0.24 Critical Security Update Released</title>
-      <link>https://secubuzz.com/news/rhoso-18-0-24-critical-security-update-released-0032b6c9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhoso-18-0-24-critical-security-update-released-0032b6c9</guid>
-      <description><![CDATA[Red Hat OpenStack Services on OpenShift (RHOSO) 18.0 RPMs have been released with a critical security impact, addressing multiple vulnerabilities affecting the platform. Each vulnerability is linked to a CVE and assigned a CVSS base score, but no specific CVE identifiers are disclosed in the advisory. Administrators should install the updated RPMs immediately to mitigate the identified security risks.]]></description>
-      <pubDate>Tue, 24 Nov 2026 10:43:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102906">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
