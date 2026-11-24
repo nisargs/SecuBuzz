@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 01:46:46 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 02:21:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RHSA-2026:102696: Critical: php:8.2 security update</title>
@@ -98,6 +98,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>13 Malicious NuGet Packages Target .NET Developers</title>
+      <link>https://secubuzz.com/news/13-malicious-nuget-packages-target-net-developers-81b6e5e1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/13-malicious-nuget-packages-target-net-developers-81b6e5e1</guid>
+      <description><![CDATA[Socket researchers identified 13 malicious NuGet packages that lure .NET developers with fake job assessment prompts. The packages perform DLL side-loading, steal credentials, and embed GitHub-based malware, compromising developer environments. Security teams should audit package sources, enforce trusted feeds, and apply the latest .NET security updates to mitigate exposure and monitor for suspicious activity.]]></description>
+      <pubDate>Mon, 23 Nov 2026 21:55:22 GMT</pubDate>
+      <source url="https://socket.dev/blog/malicious-nuget-packages-fake-job-assessments">Socket.dev</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>AWS SSM Agent default key flaw exposes role credentials</title>
       <link>https://secubuzz.com/news/aws-ssm-agent-default-key-flaw-exposes-role-creden-768216c7</link>
       <guid isPermaLink="true">https://secubuzz.com/news/aws-ssm-agent-default-key-flaw-exposes-role-creden-768216c7</guid>
@@ -188,6 +197,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Red Hat Issues Important SQLite Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-sqlite-security-update-eb5cc09f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-sqlite-security-update-eb5cc09f</guid>
+      <description><![CDATA[Red Hat released an important security update for SQLite on Red Hat Enterprise Linux 8, addressing multiple vulnerabilities. The update carries an Important impact rating, with CVSS base scores linked to each CVE in the advisory references. Administrators should apply the update immediately and verify that SQLite components are patched to mitigate potential exploitation.]]></description>
+      <pubDate>Mon, 23 Nov 2026 20:28:21 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102648">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Cisco Products Affected by PHP Remote Code Vulnerability</title>
       <link>https://secubuzz.com/news/cisco-products-affected-by-php-remote-code-vulnera-a22919db</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cisco-products-affected-by-php-remote-code-vulnera-a22919db</guid>
@@ -195,6 +213,15 @@
       <pubDate>Mon, 23 Nov 2026 20:20:00 GMT</pubDate>
       <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-phpaftershell-nov-2026-kT9pL4Xe?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerability+in+PHP+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1">Cisco PSIRT</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Moderate Update for go-toolset:rhel8</title>
+      <link>https://secubuzz.com/news/red-hat-issues-moderate-update-for-go-toolset-rhel-9f1b8474</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-moderate-update-for-go-toolset-rhel-9f1b8474</guid>
+      <description><![CDATA[Red Hat released a moderate security update for the go-toolset:rhel8 module on RHEL8, fixing multiple Go compiler bugs. The patch addresses local privilege escalation and denial-of-service flaws with CVSS scores up to 7.5, though no active exploitation is known. Red Hat advises applying the update via the standard RHEL8 update channel; no workarounds are required.]]></description>
+      <pubDate>Mon, 23 Nov 2026 20:16:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102592">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Trump Names Industry Veteran Davies as Acting Cyber Director</title>
@@ -341,6 +368,42 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Microsoft Security Response Center acknowledges CVE-2026-69291</title>
+      <link>https://secubuzz.com/news/microsoft-security-response-center-acknowledges-cv-ec77efd5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-security-response-center-acknowledges-cv-ec77efd5</guid>
+      <description><![CDATA[Microsoft Security Response Center acknowledges CVE-2026-69291, a remote code execution flaw in the Windows Volume Manager Extension Driver. The vulnerability allows attackers to execute arbitrary code via crafted volume manager requests that can be triggered by malicious input, potentially compromising affected systems. A patch is available; administrators should apply the update promptly to mitigate the risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69291">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Security Response Center acknowledges CVE-2026-87697</title>
+      <link>https://secubuzz.com/news/microsoft-security-response-center-acknowledges-cv-4a4a964b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-security-response-center-acknowledges-cv-4a4a964b</guid>
+      <description><![CDATA[Microsoft Security Response Center acknowledges CVE-2026-87697, a remote code execution flaw in the .NET runtime. The vulnerability permits attackers to run arbitrary code through crafted .NET assemblies that can be triggered by malicious input, potentially compromising affected applications. A patch is available; developers should update .NET to the latest version to mitigate the risk.]]></description>
+      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87697">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>ASP.NET Core Denial of Service CVE-2026-96233</title>
+      <link>https://secubuzz.com/news/asp-net-core-denial-of-service-cve-2026-96233-3fd47404</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/asp-net-core-denial-of-service-cve-2026-96233-3fd47404</guid>
+      <description><![CDATA[A denial-of-service flaw in ASP.NET Core, CVE-2026-96233, lets attackers exhaust server resources via crafted HTTP requests. The flaw arises from improper input validation in request parsing, and no public exploit is known, but it can cause service interruption. Microsoft released a patch that corrects the parsing logic; administrators should apply the latest ASP.NET Core update or vendor hotfix.]]></description>
+      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96233">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Windows Message Queuing DoS CVE-2026-119848</title>
+      <link>https://secubuzz.com/news/windows-message-queuing-dos-cve-2026-119848-cf733baf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-message-queuing-dos-cve-2026-119848-cf733baf</guid>
+      <description><![CDATA[CVE-2026-119848 is a denial-of-service flaw in Windows Message Queuing that lets attackers crash the service with malformed queue messages. The vulnerability stems from unchecked bounds during message deserialization, and no active exploitation is known, but it can cause repeated service restarts. Microsoft released a patch that validates message lengths; administrators should apply Windows update or vendor hotfix to mitigate DoS.]]></description>
+      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119848">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Acknowledges CVE-2026-70175 ASP.NET Core Privilege Bug</title>
       <link>https://secubuzz.com/news/microsoft-acknowledges-cve-2026-70175-asp-net-core-eca1996d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-cve-2026-70175-asp-net-core-eca1996d</guid>
@@ -392,69 +455,6 @@
       <description><![CDATA[Microsoft patched an Azure API Management flaw that attackers exploited to target Norwegian energy companies and other sectors. The vulnerability let attackers read protected configuration data and credential vaults, potentially exposing API secrets and sensitive information. Microsoft urged affected customers to apply the update or configuration changes immediately to block unauthorized credential access.]]></description>
       <pubDate>Mon, 23 Nov 2026 15:47:40 GMT</pubDate>
       <source url="https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Exploit Microsoft Cloud Flaw Against Norwegian Energy Firms</title>
-      <link>https://secubuzz.com/news/hackers-exploit-microsoft-cloud-flaw-against-norwe-81f7b48b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-microsoft-cloud-flaw-against-norwe-81f7b48b</guid>
-      <description><![CDATA[Hackers exploited a Microsoft cloud security vulnerability to target sensitive credentials at Equinor and Skagerak Energi. The flaw permitted unauthorized access to configuration secrets, potentially exposing login information, though no confirmed data loss was reported. Microsoft issued a patch and urged affected customers to update their Azure services to close the vulnerability.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:45:00 GMT</pubDate>
-      <source url="https://therecord.media/norway-microsoft-cyberattack-equinor">The Record</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Spring AI Vulnerability Affects Multiple Versions</title>
-      <link>https://secubuzz.com/news/spring-ai-vulnerability-affects-multiple-versions-324b9980</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/spring-ai-vulnerability-affects-multiple-versions-324b9980</guid>
-      <description><![CDATA[Spring AI versions prior to 1.0.11, 1.1.10, 2.0.2.1, and 2.0.3 suffer a broken logical grouping expression flaw in TypesenseFilterExpressionConverter. The flaw can cause improper query parsing, potentially exposing data or causing denial of service. Upgrade to the latest Spring AI release or apply the vendor patch to mitigate the risk.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:41:08 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/spring-security-advisory-av26-1195">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Meta Muse AI Hallucinates, Shares External App Data</title>
-      <link>https://secubuzz.com/news/meta-muse-ai-hallucinates-shares-external-app-data-840c6d88</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/meta-muse-ai-hallucinates-shares-external-app-data-840c6d88</guid>
-      <description><![CDATA[Meta’s Muse AI agent reportedly accessed data from other applications and produced hallucinated responses during user interactions. The incident highlights limitations in the model’s knowledge boundaries and the risk of unintended data leakage. Meta should refine data access controls and improve hallucination mitigation to safeguard user privacy and information integrity.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:37:05 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/ai/2026/11/muse-ai-got-nosy-and-started-making-things-up-meta-insiders-say">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apache Solr Health-Check Vulnerability Disclosed</title>
-      <link>https://secubuzz.com/news/apache-solr-health-check-vulnerability-disclosed-084e3bca</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-solr-health-check-vulnerability-disclosed-084e3bca</guid>
-      <description><![CDATA[Apache Solr versions prior to 10.1.0 and 9.11.0 contain a health-check flaw that can trigger unintended functionality, referenced by CVE-2026-86312. The flaw allows attackers to invoke the ping endpoint, potentially causing unauthorized actions or information disclosure within the Solr instance. Administrators should upgrade to Solr 10.1.0 or later, or apply the vendor-issued patch, and verify that health-check endpoints are secured.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:34:03 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1194">Canadian Centre for Cyber Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHEL9 Podman Update Fixes Important Security Flaw</title>
-      <link>https://secubuzz.com/news/rhel9-podman-update-fixes-important-security-flaw-88343d44</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhel9-podman-update-fixes-important-security-flaw-88343d44</guid>
-      <description><![CDATA[Red Hat released a security update for the podman container engine on RHEL9 to address a critical flaw. The patch fixes an undisclosed vulnerability rated Important by Red Hat Product Security, with CVSS scores linked through CVE references. Administrators should apply the podman update immediately to prevent exploitation and maintain secure container orchestration environments.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:32:20 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102296">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102507: Important: webkit2gtk3 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102507-important-webkit2gtk3-security-up-cac88745</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102507-important-webkit2gtk3-security-up-cac88745</guid>
-      <description><![CDATA[An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:30:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102507">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Grafana Update Addresses Remote Code Execution Vulnerabilities</title>
-      <link>https://secubuzz.com/news/grafana-update-addresses-remote-code-execution-vul-55e19624</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/grafana-update-addresses-remote-code-execution-vul-55e19624</guid>
-      <description><![CDATA[A Grafana security update for Red Hat Enterprise Linux 10 addresses multiple vulnerabilities that could enable remote code execution through the web interface. The vulnerabilities are rated Important, with CVSS base scores listed in the CVE references, indicating high severity potential for exploitation. Red Hat has released the update; administrators should apply the patch immediately to mitigate the risk.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:25:51 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102502">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

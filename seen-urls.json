@@ -6940,5 +6940,14 @@
   "https://access.redhat.com/errata/RHSA-2026:102348",
   "https://access.redhat.com/errata/RHSA-2026:102400",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70175",
-  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96225"
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96225",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69291",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87697",
+  "https://socket.dev/blog/malicious-nuget-packages-fake-job-assessments",
+  "https://access.redhat.com/errata/RHSA-2026:102648",
+  "https://access.redhat.com/errata/RHSA-2026:102592",
+  "https://access.redhat.com/errata/RHSA-2026:102402",
+  "https://access.redhat.com/errata/RHSA-2026:102406",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96233",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119848"
 ]

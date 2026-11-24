@@ -193,6 +193,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "13-malicious-nuget-packages-target-net-developers-81b6e5e1",
+    "title": "13 Malicious NuGet Packages Target .NET Developers",
+    "summary": "Socket researchers identified 13 malicious NuGet packages that lure .NET developers with fake job assessment prompts. The packages perform DLL side-loading, steal credentials, and embed GitHub-based malware, compromising developer environments. Security teams should audit package sources, enforce trusted feeds, and apply the latest .NET security updates to mitigate exposure and monitor for suspicious activity.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/malicious-nuget-packages-fake-job-assessments",
+    "publishedAt": "2026-11-23T21:55:22.725Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "13-malicious-nuget-packages-target-net-developers",
+      "article-81b6e5e1",
+      "81b6e5e1",
+      "13-malicious-nuget-packages-target-net-developers-43d711"
+    ]
+  },
+  {
     "slug": "aws-ssm-agent-default-key-flaw-exposes-role-creden-768216c7",
     "title": "AWS SSM Agent default key flaw exposes role credentials",
     "summary": "Amazon SSM Agent on AWS Windows Server AMIs contains a flaw where instances share a default cryptographic key during registration. CVE-2026-134069 allows a local non-admin user to retrieve the instance’s Default Host Management Configuration role credentials, enabling potential credential theft. AWS recommends updating to the latest SSM Agent version or applying the provided patch to eliminate the shared key vulnerability.",
@@ -382,6 +400,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-important-sqlite-security-update-eb5cc09f",
+    "title": "Red Hat Issues Important SQLite Security Update",
+    "summary": "Red Hat released an important security update for SQLite on Red Hat Enterprise Linux 8, addressing multiple vulnerabilities. The update carries an Important impact rating, with CVSS base scores linked to each CVE in the advisory references. Administrators should apply the update immediately and verify that SQLite components are patched to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102648",
+    "publishedAt": "2026-11-23T20:28:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-sqlite-security-update",
+      "article-eb5cc09f",
+      "eb5cc09f",
+      "red-hat-issues-important-sqlite-security-update-2ee16d"
+    ]
+  },
+  {
     "slug": "cisco-products-affected-by-php-remote-code-vulnera-a22919db",
     "title": "Cisco Products Affected by PHP Remote Code Vulnerability",
     "summary": "Cisco products are vulnerable to a PHP flaw that permits remote code execution, as disclosed by the PHP Foundation on November 19, 2026. The flaw, identified as CVE-2026-126714 and dubbed phpAfterShell, carries a Critical security impact rating and is referenced by GHSA-fm2m-fjf5-v3cp. Cisco recommends applying the available PHP security patches immediately to mitigate the RCE risk and ensure system integrity.",
@@ -400,6 +436,25 @@ export const news: NewsBrief[] = [
       "a22919db",
       "cisco-products-affected-by-php-remote-code-vulnera-6bcf0e",
       "cisco-products-affected-by-php-remote-code-vulnerability"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-moderate-update-for-go-toolset-rhel-9f1b8474",
+    "title": "Red Hat Issues Moderate Update for go-toolset:rhel8",
+    "summary": "Red Hat released a moderate security update for the go-toolset:rhel8 module on RHEL8, fixing multiple Go compiler bugs. The patch addresses local privilege escalation and denial-of-service flaws with CVSS scores up to 7.5, though no active exploitation is known. Red Hat advises applying the update via the standard RHEL8 update channel; no workarounds are required.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102592",
+    "publishedAt": "2026-11-23T20:16:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-moderate-update-for-go-toolset-rhel",
+      "article-9f1b8474",
+      "9f1b8474",
+      "red-hat-issues-moderate-update-for-go-toolset-rhel-2ee16a",
+      "red-hat-issues-moderate-update-for-go-toolset-rhel8"
     ]
   },
   {
@@ -711,6 +766,88 @@ export const news: NewsBrief[] = [
       "article-c9c0afbb",
       "c9c0afbb",
       "red-hat-releases-netpbm-update-for-rhel-9-8-eus-2ee169"
+    ]
+  },
+  {
+    "slug": "microsoft-security-response-center-acknowledges-cv-ec77efd5",
+    "title": "Microsoft Security Response Center acknowledges CVE-2026-69291",
+    "summary": "Microsoft Security Response Center acknowledges CVE-2026-69291, a remote code execution flaw in the Windows Volume Manager Extension Driver. The vulnerability allows attackers to execute arbitrary code via crafted volume manager requests that can be triggered by malicious input, potentially compromising affected systems. A patch is available; administrators should apply the update promptly to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69291",
+    "publishedAt": "2026-11-23T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-69291"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-security-response-center-acknowledges-cv",
+      "article-ec77efd5",
+      "ec77efd5",
+      "microsoft-security-response-center-acknowledges-cv-745a69",
+      "microsoft-security-response-center-acknowledges-cve-2026-692"
+    ]
+  },
+  {
+    "slug": "microsoft-security-response-center-acknowledges-cv-4a4a964b",
+    "title": "Microsoft Security Response Center acknowledges CVE-2026-87697",
+    "summary": "Microsoft Security Response Center acknowledges CVE-2026-87697, a remote code execution flaw in the .NET runtime. The vulnerability permits attackers to run arbitrary code through crafted .NET assemblies that can be triggered by malicious input, potentially compromising affected applications. A patch is available; developers should update .NET to the latest version to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87697",
+    "publishedAt": "2026-11-23T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-87697"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-security-response-center-acknowledges-cv",
+      "article-4a4a964b",
+      "4a4a964b",
+      "microsoft-security-response-center-acknowledges-cv-743f14",
+      "microsoft-security-response-center-acknowledges-cve-2026-876"
+    ]
+  },
+  {
+    "slug": "asp-net-core-denial-of-service-cve-2026-96233-3fd47404",
+    "title": "ASP.NET Core Denial of Service CVE-2026-96233",
+    "summary": "A denial-of-service flaw in ASP.NET Core, CVE-2026-96233, lets attackers exhaust server resources via crafted HTTP requests. The flaw arises from improper input validation in request parsing, and no public exploit is known, but it can cause service interruption. Microsoft released a patch that corrects the parsing logic; administrators should apply the latest ASP.NET Core update or vendor hotfix.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96233",
+    "publishedAt": "2026-11-23T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-96233"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "asp-net-core-denial-of-service-cve-2026-96233",
+      "article-3fd47404",
+      "3fd47404",
+      "asp-net-core-denial-of-service-cve-2026-96233-743180"
+    ]
+  },
+  {
+    "slug": "windows-message-queuing-dos-cve-2026-119848-cf733baf",
+    "title": "Windows Message Queuing DoS CVE-2026-119848",
+    "summary": "CVE-2026-119848 is a denial-of-service flaw in Windows Message Queuing that lets attackers crash the service with malformed queue messages. The vulnerability stems from unchecked bounds during message deserialization, and no active exploitation is known, but it can cause repeated service restarts. Microsoft released a patch that validates message lengths; administrators should apply Windows update or vendor hotfix to mitigate DoS.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119848",
+    "publishedAt": "2026-11-23T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119848"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-message-queuing-dos-cve-2026-119848",
+      "article-cf733baf",
+      "cf733baf",
+      "windows-message-queuing-dos-cve-2026-119848-1fe894"
     ]
   },
   {
@@ -1138,6 +1275,43 @@ export const news: NewsBrief[] = [
       "c6aa16cc",
       "gl-inet-cloud-compromise-deploys-malware-to-router-281202",
       "gl-inet-cloud-compromise-deploys-malware-to-routers-and-kvms"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-update-for-qt5-qtdeclarat-a2de0e52",
+    "title": "Red Hat Issues Important Update for qt5-qtdeclarative",
+    "summary": "Red Hat released an important security update for qt5-qtdeclarative on RHEL9.4, correcting several memory corruption bugs in the Qt Declarative module. These flaws could allow local attackers to crash the application or potentially execute arbitrary code, with CVSS scores up to 8.3. Apply the patch through the standard RHEL9.4 update mechanism; no workarounds are provided.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102406",
+    "publishedAt": "2026-11-23T15:02:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-update-for-qt5-qtdeclarat",
+      "article-a2de0e52",
+      "a2de0e52",
+      "red-hat-issues-important-update-for-qt5-qtdeclarat-2ee165",
+      "red-hat-issues-important-update-for-qt5-qtdeclarative"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-update-for-tigervnc-3d563aba",
+    "title": "Red Hat Issues Important Update for tigervnc",
+    "summary": "Red Hat released an important security update for tigervnc on RHEL9.4, fixing multiple remote code execution flaws in the VNC server. The vulnerabilities enable unauthenticated attackers to run arbitrary code with the VNC service’s privileges, with CVSS scores up to 9.2. Apply the patch via the standard RHEL9.4 update channel; no workarounds are available.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102402",
+    "publishedAt": "2026-11-23T15:02:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-update-for-tigervnc",
+      "article-3d563aba",
+      "3d563aba",
+      "red-hat-issues-important-update-for-tigervnc-2ee165"
     ]
   },
   {
@@ -9297,194 +9471,6 @@ export const news: NewsBrief[] = [
       "article-fb7aab1d",
       "fb7aab1d",
       "microsoft-acknowledges-cve-2026-97763-excel-rce-7430f9"
-    ]
-  },
-  {
-    "slug": "microsoft-office-excel-cve-2026-97773-rce-vulnerab-6ec3afdc",
-    "title": "Microsoft Office Excel CVE-2026-97773 RCE Vulnerability",
-    "summary": "Microsoft Office Excel contains a remote code execution vulnerability (CVE-2026-97773) that could allow attackers to run arbitrary code without authentication. The flaw resides in the Excel rendering engine, enabling code execution via a crafted spreadsheet; no public exploit is confirmed. Microsoft has acknowledged the issue and is working on a patch; users should monitor for updates.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97773",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97773"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-office-excel-cve-2026-97773-rce-vulnerab",
-      "article-6ec3afdc",
-      "6ec3afdc",
-      "microsoft-office-excel-cve-2026-97773-rce-vulnerab-7430f9",
-      "microsoft-office-excel-cve-2026-97773-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "microsoft-office-excel-cve-2026-97777-rce-vulnerab-ebd23f1c",
-    "title": "Microsoft Office Excel CVE-2026-97777 RCE Vulnerability",
-    "summary": "Microsoft Office Excel contains a remote code execution vulnerability (CVE-2026-97777) that could allow attackers to run arbitrary code without authentication. The flaw resides in the Excel rendering engine, enabling code execution via a crafted spreadsheet; no public exploit is confirmed. Microsoft has acknowledged the issue and is working on a patch; users should monitor for updates.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97777",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97777"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-office-excel-cve-2026-97777-rce-vulnerab",
-      "article-ebd23f1c",
-      "ebd23f1c",
-      "microsoft-office-excel-cve-2026-97777-rce-vulnerab-7430f9",
-      "microsoft-office-excel-cve-2026-97777-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "microsoft-office-excel-cve-2026-97741-rce-vulnerab-ddffc804",
-    "title": "Microsoft Office Excel CVE-2026-97741 RCE Vulnerability",
-    "summary": "Microsoft Office Excel contains a remote code execution vulnerability (CVE-2026-97741) that could allow attackers to run arbitrary code without authentication. The flaw resides in the Excel rendering engine, enabling code execution via a crafted spreadsheet; no public exploit is confirmed. Microsoft has acknowledged the issue and is working on a patch; users should monitor for updates.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97741",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97741"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-office-excel-cve-2026-97741-rce-vulnerab",
-      "article-ddffc804",
-      "ddffc804",
-      "microsoft-office-excel-cve-2026-97741-rce-vulnerab-7430f9",
-      "microsoft-office-excel-cve-2026-97741-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "microsoft-excel-remote-code-execution-vulnerabilit-eb985edd",
-    "title": "Microsoft Excel Remote Code Execution Vulnerability CVE-2026-97767",
-    "summary": "Microsoft Office Excel has a remote code execution flaw (CVE-2026-97767) triggered by malicious spreadsheet files. The flaw stems from improper handling of embedded objects, enabling attackers to run arbitrary code with the user’s privileges, though no exploitation has been seen. Microsoft has released a patch in the latest Office update; users should install it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97767",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97767"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-excel-remote-code-execution-vulnerabilit",
-      "article-eb985edd",
-      "eb985edd",
-      "microsoft-excel-remote-code-execution-vulnerabilit-7430f9",
-      "microsoft-excel-remote-code-execution-vulnerability-cve-2026"
-    ]
-  },
-  {
-    "slug": "microsoft-powerpoint-remote-code-execution-vulnera-83a730c6",
-    "title": "Microsoft PowerPoint Remote Code Execution Vulnerability CVE-2026-88207",
-    "summary": "Microsoft Office PowerPoint has a remote code execution flaw (CVE-2026-88207) triggered by malicious presentation files. The flaw stems from unsafe parsing of custom XML elements, enabling attackers to run arbitrary code with the user’s privileges, though no exploitation has been seen. Microsoft has released a patch in the latest Office update; users should install it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88207",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-88207"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-powerpoint-remote-code-execution-vulnera",
-      "article-83a730c6",
-      "83a730c6",
-      "microsoft-powerpoint-remote-code-execution-vulnera-743eb0",
-      "microsoft-powerpoint-remote-code-execution-vulnerability-cve"
-    ]
-  },
-  {
-    "slug": "net-framework-remote-code-execution-vulnerability-30c8957c",
-    "title": ".NET Framework Remote Code Execution Vulnerability CVE-2026-70007",
-    "summary": ".NET Framework has a remote code execution flaw (CVE-2026-70007) triggered by malicious assemblies. The flaw stems from improper validation of assembly metadata, enabling attackers to run arbitrary code with the application’s privileges, though no exploitation has been seen. Microsoft has issued a patch in the latest .NET update; administrators should install it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70007",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-70007"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "net-framework-remote-code-execution-vulnerability",
-      "article-30c8957c",
-      "30c8957c",
-      "net-framework-remote-code-execution-vulnerability-745071",
-      "net-framework-remote-code-execution-vulnerability-cve-2026-7"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-acknowledgement-for-excel-rce-vu-43d73606",
-    "title": "Microsoft Updates Acknowledgement for Excel RCE Vulnerability CVE-2026-97756",
-    "summary": "Microsoft released an informational update regarding a remote code execution vulnerability impacting Microsoft Office Excel. Tracked as CVE-2026-97756, the security flaw allows potential attackers to execute arbitrary code on targeted systems through crafted spreadsheet files. Microsoft updated the advisory acknowledgements while maintaining existing patch guidance and recommended defensive updates for enterprise environments.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97756",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97756"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-acknowledgement-for-excel-rce-vu",
-      "article-43d73606",
-      "43d73606",
-      "microsoft-updates-acknowledgement-for-excel-rce-vu-7430f9",
-      "microsoft-updates-acknowledgement-for-excel-rce-vulnerabilit"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-cve-2026-70035-acknowledgement-o-7a5d6c2c",
-    "title": "Microsoft Updates CVE-2026-70035 Acknowledgement Only",
-    "summary": "Microsoft updated the acknowledgement for CVE-2026-70035, a .NET Framework remote code execution vulnerability, with no code changes. The informational change does not alter the vulnerability's severity, exploitability, or affected versions. Administrators should verify existing mitigations remain applied, as no new patch or workaround accompanies this acknowledgement update.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70035",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-70035"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-cve-2026-70035-acknowledgement-o",
-      "article-7a5d6c2c",
-      "7a5d6c2c",
-      "microsoft-updates-cve-2026-70035-acknowledgement-o-745071",
-      "microsoft-updates-cve-2026-70035-acknowledgement-only"
-    ]
-  },
-  {
-    "slug": "microsoft-excel-rce-vulnerability-cve-2026-118302-cd3b1070",
-    "title": "Microsoft Excel RCE Vulnerability CVE-2026-118302",
-    "summary": "CVE-2026-118302 enables remote code execution in Microsoft Office Excel through a flaw in the application. The vulnerability permits unauthenticated attackers to run arbitrary code on affected machines, posing a high risk to enterprise environments. Microsoft released an informational acknowledgement; no patch is currently available, and users should monitor for future updates.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118302",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-118302"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-excel-rce-vulnerability-cve-2026-118302",
-      "article-cd3b1070",
-      "cd3b1070",
-      "microsoft-excel-rce-vulnerability-cve-2026-118302-1fe91c"
     ]
   }
 ];
