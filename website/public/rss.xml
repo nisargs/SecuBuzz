@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 13:46:01 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 14:15:37 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>GTA 6 Hacker Sentenced, Released Same Day</title>
@@ -17,6 +17,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Hackers Deploy ZQAgent Backdoor to Run Malicious Commands and Access Files on Linux Servers</title>
+      <link>https://secubuzz.com/news/hackers-deploy-zqagent-backdoor-to-run-malicious-c-dafeda16</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-deploy-zqagent-backdoor-to-run-malicious-c-dafeda16</guid>
+      <description><![CDATA[A new Linux backdoor called ZQAgent is giving attackers a long-term foothold on compromised servers. It can run commands, move through folders, read files and open network tunnels. The malware was dropped by ARTEX, an AI-driven hacking framework.]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:35:26 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-deploy-zqagent-backdoor/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Shirudo AI Tool Protects Unpatched Linux Systems</title>
       <link>https://secubuzz.com/news/shirudo-ai-tool-protects-unpatched-linux-systems-fa91e5d3</link>
       <guid isPermaLink="true">https://secubuzz.com/news/shirudo-ai-tool-protects-unpatched-linux-systems-fa91e5d3</guid>
@@ -24,6 +33,15 @@
       <pubDate>Tue, 24 Nov 2026 13:34:23 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation</title>
+      <link>https://secubuzz.com/news/vmware-vcenter-hit-by-another-critical-9-8-rated-a-1d91cc69</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vmware-vcenter-hit-by-another-critical-9-8-rated-a-1d91cc69</guid>
+      <description><![CDATA[Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service ("vmdir").]]></description>
+      <pubDate>Tue, 24 Nov 2026 13:28:26 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html">The Hacker News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Codesys Visualization Vulnerabilities Pre-4.11.0.0 Advisory</title>
@@ -107,6 +125,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:102905: Important: container-tools:rhel8 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102905-important-container-tools-rhel8-s-60bcb6ec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102905-important-container-tools-rhel8-s-60bcb6ec</guid>
+      <description><![CDATA[An update for the container-tools:rhel8 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Tue, 24 Nov 2026 12:08:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102905">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Infrastructure Vulnerabilities Highlight Systemic Fragility</title>
       <link>https://secubuzz.com/news/infrastructure-vulnerabilities-highlight-systemic-3b11aa68</link>
       <guid isPermaLink="true">https://secubuzz.com/news/infrastructure-vulnerabilities-highlight-systemic-3b11aa68</guid>
@@ -143,6 +170,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>RHSA-2026:102920: Important: thunderbird security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102920-important-thunderbird-security-bu-5e6b18ed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102920-important-thunderbird-security-bu-5e6b18ed</guid>
+      <description><![CDATA[An update for thunderbird is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Tue, 24 Nov 2026 11:50:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102920">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>EvilTokens Phishing Persists After Microsoft Takedown</title>
       <link>https://secubuzz.com/news/eviltokens-phishing-persists-after-microsoft-taked-12d2a0bf</link>
       <guid isPermaLink="true">https://secubuzz.com/news/eviltokens-phishing-persists-after-microsoft-taked-12d2a0bf</guid>
@@ -177,6 +213,24 @@
       <pubDate>Tue, 24 Nov 2026 11:21:42 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/ai/2026/11/researchers-planted-secrets-in-ai-prompts-attackers-found-them">Malwarebytes Labs</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102908: Important: libXi security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102908-important-libxi-security-update-7dbf3394</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102908-important-libxi-security-update-7dbf3394</guid>
+      <description><![CDATA[An update for libXi is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 11:17:34 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102908">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102516: Moderate: firewalld security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102516-moderate-firewalld-security-updat-333302f8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102516-moderate-firewalld-security-updat-333302f8</guid>
+      <description><![CDATA[An update for firewalld is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 11:16:19 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102516">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Red Hat Releases Important Update for Container Tool Suite</title>
@@ -401,60 +455,6 @@
       <description><![CDATA[An update for cockpit is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Tue, 24 Nov 2026 08:14:42 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102845">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102841: Important: webkit2gtk3 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102841-important-webkit2gtk3-security-up-2ea55ced</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102841-important-webkit2gtk3-security-up-2ea55ced</guid>
-      <description><![CDATA[An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:11:12 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102841">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102852: Important: python-oauthlib security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102852-important-python-oauthlib-securit-0ea1961c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102852-important-python-oauthlib-securit-0ea1961c</guid>
-      <description><![CDATA[An update for python-oauthlib is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:06:34 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102852">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102842: Important: webkit2gtk3 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102842-important-webkit2gtk3-security-up-41e90b35</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102842-important-webkit2gtk3-security-up-41e90b35</guid>
-      <description><![CDATA[An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:04:33 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102842">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues python3.12 Security Update for RHEL 9.6</title>
-      <link>https://secubuzz.com/news/red-hat-issues-python3-12-security-update-for-rhel-c6da3a0a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-python3-12-security-update-for-rhel-c6da3a0a</guid>
-      <description><![CDATA[Red Hat released a security update for python3.12 on RHEL 9.6 EUS, addressing code-execution vulnerabilities. The patch fixes issues with CVSS scores of 7.8-8.5, as listed in the CVE references, with no active exploitation reported. Red Hat recommends applying the update via standard RHEL channels immediately to mitigate potential remote code execution.]]></description>
-      <pubDate>Tue, 24 Nov 2026 08:04:22 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102850">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Recommends Python-OAuthlib Patch for RHEL 10.2</title>
-      <link>https://secubuzz.com/news/red-hat-recommends-python-oauthlib-patch-for-rhel-d6553110</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-recommends-python-oauthlib-patch-for-rhel-d6553110</guid>
-      <description><![CDATA[Red Hat released an important security update for python-oauthlib on RHEL 10.2 Extended Update Support, targeting authentication library flaws. The update fixes multiple high-severity bugs that could allow credential misuse or unauthorized token issuance, though CVE identifiers are not disclosed. Apply RHSA-2026:102851 via the Customer Portal or use yum/dnf to install the latest python-oauthlib package immediately.]]></description>
-      <pubDate>Tue, 24 Nov 2026 07:55:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102851">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Recommends PHP Update for RHEL 9.2</title>
-      <link>https://secubuzz.com/news/red-hat-recommends-php-update-for-rhel-9-2-7558e27e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-recommends-php-update-for-rhel-9-2-7558e27e</guid>
-      <description><![CDATA[A critical PHP update is released for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, fixing runtime vulnerabilities. The patch addresses multiple high-severity flaws that could enable remote code execution or privilege escalation, though CVE IDs are not listed. Red Hat advises applying RHSA-2026:102847 immediately via the Customer Portal or using yum/dnf to install the updated PHP package.]]></description>
-      <pubDate>Tue, 24 Nov 2026 07:50:53 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102847">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

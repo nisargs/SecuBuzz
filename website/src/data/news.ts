@@ -29,6 +29,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hackers-deploy-zqagent-backdoor-to-run-malicious-c-dafeda16",
+    "title": "Hackers Deploy ZQAgent Backdoor to Run Malicious Commands and Access Files on Linux Servers",
+    "summary": "A new Linux backdoor called ZQAgent is giving attackers a long-term foothold on compromised servers. It can run commands, move through folders, read files and open network tunnels. The malware was dropped by ARTEX, an AI-driven hacking framework.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-deploy-zqagent-backdoor/",
+    "publishedAt": "2026-11-24T13:35:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-deploy-zqagent-backdoor-to-run-malicious-c",
+      "article-dafeda16",
+      "dafeda16",
+      "hackers-deploy-zqagent-backdoor-to-run-malicious-c-4fec88",
+      "hackers-deploy-zqagent-backdoor-to-run-malicious-commands-an"
+    ]
+  },
+  {
     "slug": "shirudo-ai-tool-protects-unpatched-linux-systems-fa91e5d3",
     "title": "Shirudo AI Tool Protects Unpatched Linux Systems",
     "summary": "OpenAI and Cisco released Shirudo, an open-source Linux security tool that deploys temporary runtime protections to block exploitation of unpatched vulnerabilities. Shirudo leverages AI-driven heuristics to detect and mitigate exploitation attempts against known CVEs without requiring service restarts, addressing the gap before patch deployment. Administrators can deploy Shirudo immediately to shield systems, then apply official patches once available.",
@@ -44,6 +63,27 @@ export const news: NewsBrief[] = [
       "article-fa91e5d3",
       "fa91e5d3",
       "shirudo-ai-tool-protects-unpatched-linux-systems-5c4b77"
+    ]
+  },
+  {
+    "slug": "vmware-vcenter-hit-by-another-critical-9-8-rated-a-1d91cc69",
+    "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+    "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\").",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+    "publishedAt": "2026-11-24T13:28:26.000Z",
+    "cves": [
+      "CVE-2026-123903"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "vmware-vcenter-hit-by-another-critical-9-8-rated-a",
+      "article-1d91cc69",
+      "1d91cc69",
+      "vmware-vcenter-hit-by-another-critical-9-8-rated-a-222651",
+      "vmware-vcenter-hit-by-another-critical-9-8-rated-auth-bypass"
     ]
   },
   {
@@ -214,6 +254,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-102905-important-container-tools-rhel8-s-60bcb6ec",
+    "title": "RHSA-2026:102905: Important: container-tools:rhel8 security update",
+    "summary": "An update for the container-tools:rhel8 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102905",
+    "publishedAt": "2026-11-24T12:08:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102905-important-container-tools-rhel8-s",
+      "article-60bcb6ec",
+      "60bcb6ec",
+      "rhsa-2026-102905-important-container-tools-rhel8-s-2ee178",
+      "rhsa-2026-102905-important-container-tools-rhel8-security-up"
+    ]
+  },
+  {
     "slug": "infrastructure-vulnerabilities-highlight-systemic-3b11aa68",
     "title": "Infrastructure Vulnerabilities Highlight Systemic Fragility",
     "summary": "Schneier's essay examines how America’s critical infrastructure remains fragile due to aging systems, piecemeal patching, and hobbyist maintenance. The author argues that centralization and incremental upgrades create a single point of failure, causing widespread outages when components fail. The piece calls for systemic investment and coordinated security practices to reduce the risk of cascading infrastructure breakdowns.",
@@ -292,6 +351,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-102920-important-thunderbird-security-bu-5e6b18ed",
+    "title": "RHSA-2026:102920: Important: thunderbird security, bug fix, and enhancement update",
+    "summary": "An update for thunderbird is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102920",
+    "publishedAt": "2026-11-24T11:50:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102920-important-thunderbird-security-bu",
+      "article-5e6b18ed",
+      "5e6b18ed",
+      "rhsa-2026-102920-important-thunderbird-security-bu-2ee178",
+      "rhsa-2026-102920-important-thunderbird-security-bug-fix-and-"
+    ]
+  },
+  {
     "slug": "eviltokens-phishing-persists-after-microsoft-taked-12d2a0bf",
     "title": "EvilTokens Phishing Persists After Microsoft Takedown",
     "summary": "Despite Microsoft shutting down the EvilTokens phishing-as-a-service kit, attackers continue to deploy new phishing hosts targeting Microsoft 365 accounts. The campaign exploits social engineering to trick users into revealing credentials, potentially granting attackers full access to corporate Microsoft 365 environments. Security teams should enforce multi-factor authentication, monitor for anomalous sign-ins, and educate users about phishing indicators.",
@@ -364,6 +442,43 @@ export const news: NewsBrief[] = [
       "2a9c27cc",
       "researchers-plant-secrets-in-ai-prompts-attackers-452144",
       "researchers-plant-secrets-in-ai-prompts-attackers-discover-t"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102908-important-libxi-security-update-7dbf3394",
+    "title": "RHSA-2026:102908: Important: libXi security update",
+    "summary": "An update for libXi is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102908",
+    "publishedAt": "2026-11-24T11:17:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102908-important-libxi-security-update",
+      "article-7dbf3394",
+      "7dbf3394",
+      "rhsa-2026-102908-important-libxi-security-update-2ee178"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102516-moderate-firewalld-security-updat-333302f8",
+    "title": "RHSA-2026:102516: Moderate: firewalld security update",
+    "summary": "An update for firewalld is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102516",
+    "publishedAt": "2026-11-24T11:16:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102516-moderate-firewalld-security-updat",
+      "article-333302f8",
+      "333302f8",
+      "rhsa-2026-102516-moderate-firewalld-security-updat-2ee169",
+      "rhsa-2026-102516-moderate-firewalld-security-update"
     ]
   },
   {
@@ -9215,121 +9330,6 @@ export const news: NewsBrief[] = [
       "56ee9906",
       "ai-red-teams-uncover-repeated-prompt-injection-vul-11add1",
       "ai-red-teams-uncover-repeated-prompt-injection-vulnerabiliti"
-    ]
-  },
-  {
-    "slug": "retire-vanity-security-dashboards-to-reduce-ticket-de96e946",
-    "title": "Retire Vanity Security Dashboards to Reduce Ticket Noise",
-    "summary": "Estée Lauder’s OT architect argues that vanity dashboards generate noise, causing analysts to close tickets without addressing root causes. The video shows a manufacturing example where approved maintenance work repeatedly triggers identical alerts, producing thousands of tickets and persistent issues. The speaker recommends SOC and control teams collaborate to tune alert logic and eliminate redundant notifications.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/security-dashboards-tips-video/",
-    "publishedAt": "2026-11-20T06:00:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "retire-vanity-security-dashboards-to-reduce-ticket",
-      "article-de96e946",
-      "de96e946",
-      "retire-vanity-security-dashboards-to-reduce-ticket-25df9c",
-      "retire-vanity-security-dashboards-to-reduce-ticket-noise"
-    ]
-  },
-  {
-    "slug": "drupal-issues-patch-for-critical-unauthenticated-r-941cb5d1",
-    "title": "Drupal Issues Patch for Critical Unauthenticated RCE",
-    "summary": "Drupal released a security update on 18 Nov to address a critical unauthenticated RCE in its core installer, enabling attackers to reinstall and take over sites. The vulnerability, identified as CVE-2026-132165, allows remote code execution without authentication and can lead to full site takeover.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/drupal-fixes-critical-rce-flaw/",
-    "publishedAt": "2026-11-20T05:52:19.000Z",
-    "cves": [
-      "CVE-2026-132165"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "drupal-issues-patch-for-critical-unauthenticated-r",
-      "article-941cb5d1",
-      "941cb5d1",
-      "drupal-issues-patch-for-critical-unauthenticated-r-cc2ed7",
-      "drupal-issues-patch-for-critical-unauthenticated-rce"
-    ]
-  },
-  {
-    "slug": "ai-agent-api-security-lagging-behind-production-de-ddc48e86",
-    "title": "AI Agent API Security Lagging Behind Production Deployment",
-    "summary": "Postman surveyed nearly 9,000 developers, finding that 25% already deploy AI agents that call APIs in production. About forty percent of respondents have not defined how to secure the credentials and identities used by these agents, creating access risks. Teams should implement key management and identity controls for AI agents before expanding production use.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/ai-agent-api-security-production/",
-    "publishedAt": "2026-11-20T05:30:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agent-api-security-lagging-behind-production-de",
-      "article-ddc48e86",
-      "ddc48e86",
-      "ai-agent-api-security-lagging-behind-production-de-188663",
-      "ai-agent-api-security-lagging-behind-production-deployment"
-    ]
-  },
-  {
-    "slug": "fastunlock-zero-day-enables-program-execution-on-l-a9c8b601",
-    "title": "FastUnlock Zero-Day Enables Program Execution on Locked PCs",
-    "summary": "FastUnlock lets an attacker with physical access to a locked Windows PC launch programs without signing in. The flaw grants a limited user account, not administrator rights, and is demonstrated by researchers MSNightmare and Nightmare Eclipse. Microsoft has not yet patched FastUnlock; teams should enforce physical security and monitor for unauthorized program launches on locked systems.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
-    "publishedAt": "2026-11-20T05:30:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fastunlock-zero-day-enables-program-execution-on-l",
-      "article-a9c8b601",
-      "a9c8b601",
-      "fastunlock-zero-day-enables-program-execution-on-l-7c0033",
-      "fastunlock-zero-day-enables-program-execution-on-locked-pcs"
-    ]
-  },
-  {
-    "slug": "cios-report-limited-immediate-access-to-critical-g-db30f6be",
-    "title": "CIOs Report Limited Immediate Access to Critical Gear",
-    "summary": "An Opengear survey of 514 CIOs and CISOs found most organizations cannot quickly access secure management of network gear when the primary network fails. This gap hinders rapid containment during ransomware or disruptive updates, prolonging outages and increasing exposure to compromised systems. Organizations should implement out-of-band consoles or redundant paths and prioritize remote management solutions to ensure timely incident response.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/20/network-outage-recovery-resilience/",
-    "publishedAt": "2026-11-20T05:00:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cios-report-limited-immediate-access-to-critical-g",
-      "article-db30f6be",
-      "db30f6be",
-      "cios-report-limited-immediate-access-to-critical-g-5fed78",
-      "cios-report-limited-immediate-access-to-critical-gear"
-    ]
-  },
-  {
-    "slug": "kpmg-canada-breach-exposes-client-tax-documents-6326d3e0",
-    "title": "KPMG Canada Breach Exposes Client Tax Documents",
-    "summary": "KPMG Canada confirmed that an unauthorized third party accessed confidential tax documents of some clients during a cyberattack. The breach involved sensitive client data, prompting immediate containment actions and system hardening by the firm. KPMG is contacting affected clients directly and has not disclosed the breach timing or number of impacted records.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/kpmg-canada-confirms-cyberattack/",
-    "publishedAt": "2026-11-20T03:58:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kpmg-canada-breach-exposes-client-tax-documents",
-      "article-6326d3e0",
-      "6326d3e0",
-      "kpmg-canada-breach-exposes-client-tax-documents-64d9c2"
     ]
   }
 ];
