@@ -11,6 +11,79 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "it-delegates-password-management-while-maintaining-599336a7",
+    "title": "IT Delegates Password Management While Maintaining Control",
+    "summary": "IT departments often delegate password management to business units, creating accounts that may be unknown to central security teams. This practice can leave IT responsible for credentials it cannot monitor, increasing risk when personnel changes or external contractors access shared accounts. Implementing centralized identity governance, enforcing least-privilege access, and requiring IT involvement in account provisioning can mitigate these risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/passwork-enterprise-password-management/",
+    "publishedAt": "2026-11-24T05:30:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "it-delegates-password-management-while-maintaining",
+      "article-599336a7",
+      "599336a7",
+      "it-delegates-password-management-while-maintaining-2009d9",
+      "it-delegates-password-management-while-maintaining-control"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-libxi-security-update-0dc42e1f",
+    "title": "Red Hat Issues Important libXi Security Update",
+    "summary": "Red Hat released an important security update for the libXi library on RHEL 9.6 Extended Update Support. The update addresses unspecified vulnerabilities in libXi, with Red Hat Product Security rating the fix as Important and providing CVSS scores via CVE references. Administrators should apply the update promptly to mitigate potential exploitation of the libXi flaws.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102798",
+    "publishedAt": "2026-11-24T05:09:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-libxi-security-update",
+      "article-0dc42e1f",
+      "0dc42e1f",
+      "red-hat-issues-important-libxi-security-update-2ee172"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-skopeo-security-update-81f307ba",
+    "title": "Red Hat Issues Important skopeo Security Update",
+    "summary": "Red Hat released an important security update for the skopeo tool on RHEL 9.8 Extended Update Support. The update addresses unspecified vulnerabilities in skopeo, with Red Hat Product Security rating the fix as Important and providing CVSS scores via CVE references. Administrators should apply the update promptly to mitigate potential exploitation of the skopeo flaws.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102806",
+    "publishedAt": "2026-11-24T05:09:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-skopeo-security-update",
+      "article-81f307ba",
+      "81f307ba",
+      "red-hat-issues-important-skopeo-security-update-2ee174"
+    ]
+  },
+  {
+    "slug": "stalwart-1-2-0-adds-full-exchange-protocol-support-23b9d255",
+    "title": "Stalwart 1.2.0 Adds Full Exchange Protocol Support",
+    "summary": "Stalwart 1.2.0 introduces full Exchange-compatible protocols, enabling MAPI over HTTP, EWS, ActiveSync, and Autodiscover for Outlook, Apple Mail, and mobile clients. The open-source mail server ships under the AGPL Community edition, offering mail, calendar, contacts, tasks, and notes. Administrators can deploy Stalwart as a drop-in replacement for Microsoft Exchange, but should evaluate compatibility with existing client configurations before migration.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/stalwart-microsoft-exchange-replacement/",
+    "publishedAt": "2026-11-24T05:00:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "stalwart-1-2-0-adds-full-exchange-protocol-support",
+      "article-23b9d255",
+      "23b9d255",
+      "stalwart-1-2-0-adds-full-exchange-protocol-support-1a1a56"
+    ]
+  },
+  {
     "slug": "red-hat-releases-libxi-security-update-for-rhel-8-01b8354e",
     "title": "Red Hat Releases libXi Security Update for RHEL 8.6",
     "summary": "Red Hat issued a security update for the libXi library on RHEL 8.6 Advanced Mission Critical and Extended Update Support, addressing identified vulnerabilities. The update carries an Important impact rating; CVSS base scores are available via CVE links, but no active exploitation is reported. Red Hat recommends applying the patch through standard update channels immediately.",
@@ -67,6 +140,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-critical-ruby4-0-security-update-59a21035",
+    "title": "Red Hat Issues Critical ruby4.0 Security Update",
+    "summary": "Red Hat issued a critical security update for the ruby4.0 package on RHEL 10, addressing several high-severity bugs. The advisory references CVSS base scores for each vulnerability, though specific CVE identifiers are not disclosed in the notice. Administrators should apply the ruby4.0 update promptly to prevent exploitation of the identified weaknesses.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102714",
+    "publishedAt": "2026-11-24T03:09:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-ruby4-0-security-update",
+      "article-59a21035",
+      "59a21035",
+      "red-hat-issues-critical-ruby4-0-security-update-2ee171"
+    ]
+  },
+  {
     "slug": "chromeos-stable-channel-updated-to-os-16868-29-0-adb54fa3",
     "title": "ChromeOS Stable Channel Updated to OS 16868.29.0",
     "summary": "Google updated the ChromeOS Stable channel to OS version 16868.29.0 and browser version 158.0.8127.98 for most devices, including ChromeOS Flex. The update includes routine security and stability improvements, with no new vulnerabilities disclosed. Users should apply the update via the standard ChromeOS update mechanism regularly to maintain current security posture.",
@@ -82,6 +173,24 @@ export const news: NewsBrief[] = [
       "article-adb54fa3",
       "adb54fa3",
       "chromeos-stable-channel-updated-to-os-16868-29-0-616ab3"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-php-7-4-security-update-99077dba",
+    "title": "Red Hat Releases Critical php:7.4 Security Update",
+    "summary": "Red Hat released a critical security update for the php:7.4 module on RHEL 8.8 Update Services for SAP Solutions and the Telecommunications Update Service. The update addresses high-severity vulnerabilities, each assigned a CVSS base score, but no specific CVE identifiers are listed. Red Hat recommends applying the php:7.4 update immediately to mitigate potential remote code execution risks.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102713",
+    "publishedAt": "2026-11-24T02:38:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-php-7-4-security-update",
+      "article-99077dba",
+      "99077dba",
+      "red-hat-releases-critical-php-7-4-security-update-2ee171"
     ]
   },
   {
@@ -2393,9 +2502,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisco-expressway-cve-2026-76466-enables-root-acces-14bf608a",
-    "title": "Cisco Expressway CVE-2026-76466 Enables Root Access",
-    "summary": "Attackers are exploiting Cisco Expressway’s critical flaw, CVE-2026-76466, to gain root access and infiltrate internal networks. The vulnerability, confirmed by F6 researchers, allows unauthenticated remote code execution with a public PoC, posing a severe enterprise risk. Cisco has issued a patch; administrators must apply it immediately and verify device integrity to prevent exploitation.",
+    "slug": "cisco-expressway-cve-2026-76466-enables-remote-roo-ec41c6ad",
+    "title": "Cisco Expressway CVE-2026-76466 Enables Remote Root Access Exploitation",
+    "summary": "Cisco Expressway devices are compromised by CVE-2026-76466, allowing attackers to gain root privileges without authentication. The flaw permits unauthenticated remote code execution via the web interface, enabling full system takeover and potential lateral movement. Cisco has released a patch; administrators must apply it immediately and verify device integrity to mitigate exploitation.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Cyber Security News",
@@ -2404,13 +2513,18 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-76466"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/cisco-expressway-vulnerability-exploited/"
+      }
+    ],
     "aliases": [
-      "cisco-expressway-cve-2026-76466-enables-root-acces",
-      "article-14bf608a",
-      "14bf608a",
-      "cisco-expressway-cve-2026-76466-enables-root-acces-2b8cb0",
-      "cisco-expressway-cve-2026-76466-enables-root-access"
+      "cisco-expressway-cve-2026-76466-enables-remote-roo",
+      "article-ec41c6ad",
+      "ec41c6ad",
+      "cisco-expressway-cve-2026-76466-enables-remote-roo-2b8cb0",
+      "cisco-expressway-cve-2026-76466-enables-remote-root-access-e"
     ]
   },
   {
@@ -9307,130 +9421,6 @@ export const news: NewsBrief[] = [
       "article-5c3872a3",
       "5c3872a3",
       "cve-2026-85794-rras-information-disclosure-743ff9"
-    ]
-  },
-  {
-    "slug": "windows-devices-elevation-of-privilege-vulnerabili-de1bb0af",
-    "title": "Windows Devices Elevation of Privilege Vulnerability",
-    "summary": "A Windows Devices Human Interface Elevation of Privilege vulnerability (CVE-2026-113817) was acknowledged by Microsoft. The flaw allows privilege escalation via human interface device interactions, potentially enabling local attackers to gain elevated rights. Microsoft has issued an informational update; no patch is currently available, and users should monitor for future releases.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113817",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-113817"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-devices-elevation-of-privilege-vulnerabili",
-      "article-de1bb0af",
-      "de1bb0af",
-      "windows-devices-elevation-of-privilege-vulnerabili-1feb4f",
-      "windows-devices-elevation-of-privilege-vulnerability"
-    ]
-  },
-  {
-    "slug": "powershell-information-disclosure-vulnerability-aaa17da1",
-    "title": "PowerShell Information Disclosure Vulnerability",
-    "summary": "Microsoft acknowledged a PowerShell Information Disclosure vulnerability (CVE-2026-121669). The flaw permits local attackers to read sensitive data from PowerShell execution contexts, potentially exposing credentials or configuration details on Windows 10 and 11 systems. An informational update has been released; no patch is available yet, and users should await official remediation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121669",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-121669"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "powershell-information-disclosure-vulnerability",
-      "article-aaa17da1",
-      "aaa17da1",
-      "powershell-information-disclosure-vulnerability-1fde27"
-    ]
-  },
-  {
-    "slug": "microsoft-lsa-elevation-vulnerability-identified-3c828857",
-    "title": "Microsoft LSA Elevation Vulnerability Identified",
-    "summary": "Microsoft identified an elevation of privilege flaw in its Local Security Authority (LSA) Server, CVE-2026-83722. The flaw lets local users manipulate authentication data to gain system-level privileges; no active exploitation reported and CVSS score is undisclosed. Microsoft issued an informational update; users should apply the latest patch when available and monitor for future releases.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83722",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-83722"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-lsa-elevation-vulnerability-identified",
-      "article-3c828857",
-      "3c828857",
-      "microsoft-lsa-elevation-vulnerability-identified-7440e2"
-    ]
-  },
-  {
-    "slug": "microsoft-publishes-cve-2026-83753-elevation-of-pr-77d5f76b",
-    "title": "Microsoft Publishes CVE-2026-83753 Elevation of Privilege Fix",
-    "summary": "Microsoft released a patch for CVE-2026-83753, an elevation of privilege flaw in the Windows Camera Frame Server Monitor. The vulnerability allows local users to gain higher privileges by manipulating the camera frame server, potentially enabling privilege escalation on the host. Microsoft issued the update as an informational change; users should install the latest Windows update to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83753",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-83753"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-publishes-cve-2026-83753-elevation-of-pr",
-      "article-77d5f76b",
-      "77d5f76b",
-      "microsoft-publishes-cve-2026-83753-elevation-of-pr-7440e2",
-      "microsoft-publishes-cve-2026-83753-elevation-of-privilege-fi"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-cve-2026-69918-core-messaging-ac-b550c9fb",
-    "title": "Microsoft Updates CVE-2026-69918 Core Messaging Acknowledgment",
-    "summary": "Microsoft updated an acknowledgement for CVE-2026-69918, a Windows Core Messaging elevation-of-privilege vulnerability. The advisory description states only an informational acknowledgement change, with no root cause, exploitability status, or impact details disclosed. Security teams should monitor Microsoft's advisory for further revised severity, affected versions, and the patch guidance before prioritizing remediation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69918",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-69918"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-cve-2026-69918-core-messaging-ac",
-      "article-b550c9fb",
-      "b550c9fb",
-      "microsoft-updates-cve-2026-69918-core-messaging-ac-745a50",
-      "microsoft-updates-cve-2026-69918-core-messaging-acknowledgme"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-cve-2026-70223-console-driver-ac-f9daa949",
-    "title": "Microsoft Updates CVE-2026-70223 Console Driver Acknowledgment",
-    "summary": "Microsoft updated an acknowledgement for CVE-2026-70223, a Windows Console Driver elevation-of-privilege vulnerability. The advisory description states only an informational acknowledgement change, with no root cause, exploitability status, or impact details disclosed. Security teams should monitor Microsoft's advisory for further revised severity, affected versions, and the patch guidance before prioritizing remediation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70223",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-70223"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-cve-2026-70223-console-driver-ac",
-      "article-f9daa949",
-      "f9daa949",
-      "microsoft-updates-cve-2026-70223-console-driver-ac-74506a",
-      "microsoft-updates-cve-2026-70223-console-driver-acknowledgme"
     ]
   }
 ];
