@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:44:48 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 08:50:12 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:102845: Important: cockpit security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102845-important-cockpit-security-update-99557e81</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102845-important-cockpit-security-update-99557e81</guid>
+      <description><![CDATA[An update for cockpit is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:14:42 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102845">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102841: Important: webkit2gtk3 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102841-important-webkit2gtk3-security-up-2ea55ced</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102841-important-webkit2gtk3-security-up-2ea55ced</guid>
+      <description><![CDATA[An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:11:12 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102841">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Plant Backdoors in 6 WordPress Plugins to Steal Passwords and Take Over Websites</title>
+      <link>https://secubuzz.com/news/hackers-plant-backdoors-in-6-wordpress-plugins-to-1ee8819b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-plant-backdoors-in-6-wordpress-plugins-to-1ee8819b</guid>
+      <description><![CDATA[Hackers planted a remote-control backdoor in nine versions of six WordPress plugins from WP connect on November 22, 2026. The malware could let an attacker steal password hashes, run commands, and take over a website. But WordPress.org blocked the tainted versions before distributing them and closed all six plugins that evening.]]></description>
+      <pubDate>Tue, 24 Nov 2026 07:33:08 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/backdoors-in-6-wordpress-plugins/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Elecbrakes Bluetooth Flaw Enables Remote Brake Control</title>
       <link>https://secubuzz.com/news/elecbrakes-bluetooth-flaw-enables-remote-brake-con-1f770d18</link>
@@ -89,10 +116,10 @@
       <category>General</category>
     </item>
     <item>
-      <title>CISA Adds N-able MailAssure SSRF to KEV Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-n-able-mailassure-ssrf-to-kev-catalog-79b8e120</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-n-able-mailassure-ssrf-to-kev-catalog-79b8e120</guid>
-      <description><![CDATA[CISA added a server-side request forgery flaw in N-able MailAssure’s LDAP to its Known Exploited Vulnerabilities catalog, noting active exploitation. CVE-2026-134624, scored 9.3, lets attackers force the server to request arbitrary internal resources, exposing data or enabling lateral movement. Administrators should apply the latest patch immediately and enforce LDAP restrictions to mitigate SSRF risk.]]></description>
+      <title>CISA Adds Actively Exploited N-able MailAssure SSRF Flaw to KEV Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-actively-exploited-n-able-mailassure-ssr-20bd190c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-actively-exploited-n-able-mailassure-ssr-20bd190c</guid>
+      <description><![CDATA[CISA added the critical SSRF vulnerability CVE-2026-134624 in N-able MailAssure's LDAP synchronization to its Known Exploited Vulnerabilities catalog, confirming active exploitation. The flaw allows authenticated attackers to force server-side requests to internal resources, enabling data exposure and lateral movement within protected networks. Administrators must immediately apply N-able's patch and enforce strict LDAP restrictions to mitigate the SSRF risk.]]></description>
       <pubDate>Tue, 24 Nov 2026 06:02:45 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html">The Hacker News</source>
       <category>CVE</category>
@@ -170,6 +197,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>RHSA-2026:102802: Important: libXi security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102802-important-libxi-security-update-cfea5ec0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102802-important-libxi-security-update-cfea5ec0</guid>
+      <description><![CDATA[An update for libXi is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Tue, 24 Nov 2026 04:22:55 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102802">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Red Hat Releases libXi Security Update for RHEL 8.6</title>
       <link>https://secubuzz.com/news/red-hat-releases-libxi-security-update-for-rhel-8-01b8354e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-libxi-security-update-for-rhel-8-01b8354e</guid>
@@ -195,6 +231,15 @@
       <pubDate>Tue, 24 Nov 2026 03:51:31 GMT</pubDate>
       <source url="https://cybersecuritynews.com/openai-and-cisco-launch-shirudo/">Cyber Security News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102715: Critical: ruby security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102715-critical-ruby-security-bug-fix-an-93e531fa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102715-critical-ruby-security-bug-fix-an-93e531fa</guid>
+      <description><![CDATA[An update for ruby is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 03:09:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102715">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Red Hat Issues Critical ruby4.0 Security Update</title>
@@ -411,51 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 21:41:48 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102586">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CrowdStrike Acquires Zscaler for AI Security Integration</title>
-      <link>https://secubuzz.com/news/crowdstrike-acquires-zscaler-for-ai-security-integ-74ee119c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-acquires-zscaler-for-ai-security-integ-74ee119c</guid>
-      <description><![CDATA[CrowdStrike announced a $44 billion acquisition of Zscaler, merging endpoint protection with zero-trust network security. The integration aims to centralize AI agent oversight, enabling unified threat detection across device and network layers. Customers will receive combined platform capabilities, but must plan for migration and potential licensing adjustments, ensuring seamless transition.]]></description>
-      <pubDate>Mon, 23 Nov 2026 21:21:42 GMT</pubDate>
-      <source url="https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Python 3.6 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-python-3-6-security-update-7ae3d02b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-python-3-6-security-update-7ae3d02b</guid>
-      <description><![CDATA[Red Hat released a security update for the python36:3.6 module on RHEL 8, addressing several vulnerabilities. The patch fixes bugs that could enable local privilege escalation or arbitrary code execution, with CVSS scores provided via CVE references. System administrators should install the updated python36 package promptly to secure their environments.]]></description>
-      <pubDate>Mon, 23 Nov 2026 21:08:45 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102653">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Aurora ADTP Blocks Modern Attacks by Continuous Behavior Tracking</title>
-      <link>https://secubuzz.com/news/aurora-adtp-blocks-modern-attacks-by-continuous-be-f261eb17</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aurora-adtp-blocks-modern-attacks-by-continuous-be-f261eb17</guid>
-      <description><![CDATA[Aurora Adaptive Threat Protection (ADTP) monitors endpoint activity to counter attacks that bypass conventional defenses. By linking related behaviors into a full attack narrative, ADTP identifies malicious intent before execution, enabling real-time disruption. Security teams should deploy ADTP alongside existing endpoint solutions and configure behavior thresholds for optimal coverage, reducing blind spots.]]></description>
-      <pubDate>Mon, 23 Nov 2026 21:00:38 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-stops-and-reverses-modern-attacks/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>KEPCO Breach Exposes 1.5 Million Customer Records</title>
-      <link>https://secubuzz.com/news/kepco-breach-exposes-1-5-million-customer-records-33ce023b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kepco-breach-exposes-1-5-million-customer-records-33ce023b</guid>
-      <description><![CDATA[A threat actor breached KEPCO’s internal network, accessing two systems that stored customer, employee, and contractor data. The intrusion leveraged an undisclosed vulnerability in the company’s network perimeter, enabling unauthorized data exfiltration and potential credential compromise. KEPCO has issued a security advisory and is conducting a forensic investigation, urging affected users to monitor accounts and change passwords.]]></description>
-      <pubDate>Mon, 23 Nov 2026 20:54:51 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Chrome Stable Channel Updated to 158.0.8127.88</title>
-      <link>https://secubuzz.com/news/chrome-stable-channel-updated-to-158-0-8127-88-d35ce0b3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-stable-channel-updated-to-158-0-8127-88-d35ce0b3</guid>
-      <description><![CDATA[Google Chrome released a stable channel update to version 158.0.8127.88 for Windows, Mac, and Linux, rolling out over the next weeks. The update includes security fixes, with a detailed change log available; users are encouraged to review the log before upgrading. Administrators should schedule the rollout, verify compatibility, and monitor for any post-upgrade issues via the community help forum.]]></description>
-      <pubDate>Mon, 23 Nov 2026 20:52:51 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html">Google Chrome Releases</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

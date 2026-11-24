@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-102845-important-cockpit-security-update-99557e81",
+    "title": "RHSA-2026:102845: Important: cockpit security update",
+    "summary": "An update for cockpit is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102845",
+    "publishedAt": "2026-11-24T08:14:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102845-important-cockpit-security-update",
+      "article-99557e81",
+      "99557e81",
+      "rhsa-2026-102845-important-cockpit-security-update-2ee175"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102841-important-webkit2gtk3-security-up-2ea55ced",
+    "title": "RHSA-2026:102841: Important: webkit2gtk3 security update",
+    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102841",
+    "publishedAt": "2026-11-24T08:11:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102841-important-webkit2gtk3-security-up",
+      "article-2ea55ced",
+      "2ea55ced",
+      "rhsa-2026-102841-important-webkit2gtk3-security-up-2ee175",
+      "rhsa-2026-102841-important-webkit2gtk3-security-update"
+    ]
+  },
+  {
+    "slug": "hackers-plant-backdoors-in-6-wordpress-plugins-to-1ee8819b",
+    "title": "Hackers Plant Backdoors in 6 WordPress Plugins to Steal Passwords and Take Over Websites",
+    "summary": "Hackers planted a remote-control backdoor in nine versions of six WordPress plugins from WP connect on November 22, 2026. The malware could let an attacker steal password hashes, run commands, and take over a website. But WordPress.org blocked the tainted versions before distributing them and closed all six plugins that evening.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/backdoors-in-6-wordpress-plugins/",
+    "publishedAt": "2026-11-24T07:33:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-plant-backdoors-in-6-wordpress-plugins-to",
+      "article-1ee8819b",
+      "1ee8819b",
+      "hackers-plant-backdoors-in-6-wordpress-plugins-to-25e2cf",
+      "hackers-plant-backdoors-in-6-wordpress-plugins-to-steal-pass"
+    ]
+  },
+  {
     "slug": "elecbrakes-bluetooth-flaw-enables-remote-brake-con-1f770d18",
     "title": "Elecbrakes Bluetooth Flaw Enables Remote Brake Control",
     "summary": "A critical Bluetooth flaw in Elecbrakes trailer brake controllers, CVE-2026-96805, lets attackers within range manipulate brakes without pairing. Rated 9.6 CVSS, the flaw exploits command injection in Bluetooth, enabling unauthenticated remote brake control. Manufacturers should push firmware updates disabling unsecured Bluetooth commands; users must avoid exposing controllers to untrusted devices until patched.",
@@ -179,9 +235,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisa-adds-n-able-mailassure-ssrf-to-kev-catalog-79b8e120",
-    "title": "CISA Adds N-able MailAssure SSRF to KEV Catalog",
-    "summary": "CISA added a server-side request forgery flaw in N-able MailAssure’s LDAP to its Known Exploited Vulnerabilities catalog, noting active exploitation. CVE-2026-134624, scored 9.3, lets attackers force the server to request arbitrary internal resources, exposing data or enabling lateral movement. Administrators should apply the latest patch immediately and enforce LDAP restrictions to mitigate SSRF risk.",
+    "slug": "cisa-adds-actively-exploited-n-able-mailassure-ssr-20bd190c",
+    "title": "CISA Adds Actively Exploited N-able MailAssure SSRF Flaw to KEV Catalog",
+    "summary": "CISA added the critical SSRF vulnerability CVE-2026-134624 in N-able MailAssure's LDAP synchronization to its Known Exploited Vulnerabilities catalog, confirming active exploitation. The flaw allows authenticated attackers to force server-side requests to internal resources, enabling data exposure and lateral movement within protected networks. Administrators must immediately apply N-able's patch and enforce strict LDAP restrictions to mitigate the SSRF risk.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "The Hacker News",
@@ -190,12 +246,18 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-134624"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/critical-n-able-mail-assure-ssrf-vulnerability/"
+      }
+    ],
     "aliases": [
-      "cisa-adds-n-able-mailassure-ssrf-to-kev-catalog",
-      "article-79b8e120",
-      "79b8e120",
-      "cisa-adds-n-able-mailassure-ssrf-to-kev-catalog-55f90e"
+      "cisa-adds-actively-exploited-n-able-mailassure-ssr",
+      "article-20bd190c",
+      "20bd190c",
+      "cisa-adds-actively-exploited-n-able-mailassure-ssr-55f90e",
+      "cisa-adds-actively-exploited-n-able-mailassure-ssrf-flaw-to-"
     ]
   },
   {
@@ -348,6 +410,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-102802-important-libxi-security-update-cfea5ec0",
+    "title": "RHSA-2026:102802: Important: libXi security update",
+    "summary": "An update for libXi is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102802",
+    "publishedAt": "2026-11-24T04:22:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102802-important-libxi-security-update",
+      "article-cfea5ec0",
+      "cfea5ec0",
+      "rhsa-2026-102802-important-libxi-security-update-2ee174"
+    ]
+  },
+  {
     "slug": "red-hat-releases-libxi-security-update-for-rhel-8-01b8354e",
     "title": "Red Hat Releases libXi Security Update for RHEL 8.6",
     "summary": "Red Hat issued a security update for the libXi library on RHEL 8.6 Advanced Mission Critical and Extended Update Support, addressing identified vulnerabilities. The update carries an Important impact rating; CVSS base scores are available via CVE links, but no active exploitation is reported. Red Hat recommends applying the patch through standard update channels immediately.",
@@ -401,6 +481,25 @@ export const news: NewsBrief[] = [
       "1663e286",
       "openai-and-cisco-release-shirudo-to-block-linux-ex-d4a78b",
       "openai-and-cisco-release-shirudo-to-block-linux-exploits"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102715-critical-ruby-security-bug-fix-an-93e531fa",
+    "title": "RHSA-2026:102715: Critical: ruby security, bug fix, and enhancement update",
+    "summary": "An update for ruby is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102715",
+    "publishedAt": "2026-11-24T03:09:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102715-critical-ruby-security-bug-fix-an",
+      "article-93e531fa",
+      "93e531fa",
+      "rhsa-2026-102715-critical-ruby-security-bug-fix-an-2ee171",
+      "rhsa-2026-102715-critical-ruby-security-bug-fix-and-enhancem"
     ]
   },
   {
@@ -9283,101 +9382,6 @@ export const news: NewsBrief[] = [
       "article-62eda7bc",
       "62eda7bc",
       "tfl-data-breach-exposes-265-000-oyster-card-users-5adcdf"
-    ]
-  },
-  {
-    "slug": "craftcms-vulnerability-in-versions-pre-5-11-5-disc-b7076f94",
-    "title": "CraftCMS Vulnerability in Versions Pre-5.11.5 Disclosed",
-    "summary": "The Canadian Centre for Cyber Security disclosed a vulnerability in CraftCMS versions before 5.11.5 on November 18, 2026. The flaw, detailed on the CraftCMS GitHub repository, may allow attackers to exploit weaknesses in the CMS code, potentially enabling unauthorized access or data exposure. Administrators should review the advisory and apply any available updates to secure affected installations.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/craftcms-security-advisory-av26-1180",
-    "publishedAt": "2026-11-19T18:19:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "craftcms-vulnerability-in-versions-pre-5-11-5-disc",
-      "article-b7076f94",
-      "b7076f94",
-      "craftcms-vulnerability-in-versions-pre-5-11-5-disc-4395db",
-      "craftcms-vulnerability-in-versions-pre-5-11-5-disclosed"
-    ]
-  },
-  {
-    "slug": "deepfake-musk-scam-sees-4-7m-crypto-blocked-aefff8aa",
-    "title": "Deepfake Musk Scam Sees $4.7M Crypto Blocked",
-    "summary": "Coinbase reported that it blocked $4.7 million in attempted payments to a deepfake Elon Musk scam targeting cryptocurrency users. The fraudulent scheme leveraged a fabricated Musk persona to persuade victims into sending funds, but the platform's fraud detection prevented the transfers. Users should verify sender authenticity and remain cautious of unsolicited crypto requests to mitigate similar scams.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/deepfake-elon-musk-nearly-costs-viewers-4-7-million-in-crypto",
-    "publishedAt": "2026-11-19T17:26:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "deepfake-musk-scam-sees-4-7m-crypto-blocked",
-      "article-aefff8aa",
-      "aefff8aa",
-      "deepfake-musk-scam-sees-4-7m-crypto-blocked-5c02b3"
-    ]
-  },
-  {
-    "slug": "doj-dhs-launch-threat-disruption-center-for-cyberc-8fa7171e",
-    "title": "DOJ, DHS Launch Threat Disruption Center for Cybercrime",
-    "summary": "The U.S. Department of Justice and Department of Homeland Security are partnering on a Threat Disruption Center to triage victim complaints, map cybercriminal networks, and provide a direct channel to private-sector organizations that work with victims. The unit is intended to improve coordination against scams and cybercrime. No operational timeline, funding details, or enforcement authorities were disclosed in the announcement.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/doj-dhs-partner-on-new-unit-tackling-scams-cybercrime",
-    "publishedAt": "2026-11-19T17:25:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "doj-dhs-launch-threat-disruption-center-for-cyberc",
-      "article-8fa7171e",
-      "8fa7171e",
-      "doj-dhs-launch-threat-disruption-center-for-cyberc-2aad78",
-      "doj-dhs-launch-threat-disruption-center-for-cybercrime"
-    ]
-  },
-  {
-    "slug": "cisa-nominee-losapio-vows-to-bolster-cyber-defense-dc560534",
-    "title": "CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack",
-    "summary": "President Donald Trump’s pick to lead the Cybersecurity and Infrastructure Security Agency pledged to lawmakers to uncover any “gaps” within the organization while also denying the Capitol came under attack on January 6, 2021.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/cisa-losapio-nomination-trump",
-    "publishedAt": "2026-11-19T17:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-nominee-losapio-vows-to-bolster-cyber-defense",
-      "article-dc560534",
-      "dc560534",
-      "cisa-nominee-losapio-vows-to-bolster-cyber-defense-630e89",
-      "cisa-nominee-losapio-vows-to-bolster-cyber-defenses-while-de"
-    ]
-  },
-  {
-    "slug": "phpaftershell-enables-php-session-exploit-e648c712",
-    "title": "phpAfterShell Enables PHP Session Exploit",
-    "summary": "CVE-2026-126714 exposes PHP's file-based session storage, letting attackers inject chosen objects. If a second flaw supplies a gadget chain, the injected objects can trigger arbitrary server code execution. PHP releases have fixed the issue; administrators should apply the latest patches or upgrade to a supported version to eliminate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
-    "publishedAt": "2026-11-19T16:59:56.000Z",
-    "cves": [
-      "CVE-2026-126714"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "phpaftershell-enables-php-session-exploit",
-      "article-e648c712",
-      "e648c712",
-      "phpaftershell-enables-php-session-exploit-213b90"
     ]
   }
 ];
