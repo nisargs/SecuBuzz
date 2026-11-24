@@ -6201,5 +6201,9 @@
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96233",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119848",
   "https://access.redhat.com/errata/RHSA-2026:100562",
-  "https://access.redhat.com/errata/RHSA-2026:102407"
+  "https://access.redhat.com/errata/RHSA-2026:102407",
+  "https://access.redhat.com/errata/RHSA-2026:102711",
+  "https://access.redhat.com/errata/RHSA-2026:102710",
+  "https://access.redhat.com/errata/RHSA-2026:102709",
+  "https://isc.sans.edu/diary/rss/33550"
 ]

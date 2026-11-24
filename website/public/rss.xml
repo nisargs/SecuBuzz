@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 02:34:45 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 03:46:16 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ongoing Scanning Detected on BANATSYNC Subnet</title>
+      <link>https://secubuzz.com/news/ongoing-scanning-detected-on-banatsync-subnet-baab0068</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ongoing-scanning-detected-on-banatsync-subnet-baab0068</guid>
+      <description><![CDATA[SANS Internet Storm Center reports continuous scanning from subnet 109.160.32.0/24, assigned to BANATSYNC SRL, a Romanian web hosting and VPS provider. DShield sensor data shows persistent probing over 90 days, suggesting ongoing reconnaissance or potential exploitation attempts against the subnet's hosts. Security teams should monitor for suspicious activity, enforce rate limiting, and harden hosts to mitigate potential threats.]]></description>
+      <pubDate>Tue, 24 Nov 2026 02:32:00 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33550">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel Update for RHEL 9.6 EUS</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-6-eus-b5a282ce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-6-eus-b5a282ce</guid>
+      <description><![CDATA[Red Hat issued a kernel update for RHEL 9.6 EUS to fix multiple security flaws that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, though no CVE IDs or public exploits are referenced. Red Hat advises immediate application of the patch via standard repositories to ensure all security enhancements are installed.]]></description>
+      <pubDate>Tue, 24 Nov 2026 01:25:13 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102711">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Kernel Update for RHEL 9.8 EUS</title>
+      <link>https://secubuzz.com/news/red-hat-issues-kernel-update-for-rhel-9-8-eus-a6f19b1d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kernel-update-for-rhel-9-8-eus-a6f19b1d</guid>
+      <description><![CDATA[Red Hat issued a kernel update for RHEL 9.8 EUS to fix vulnerabilities that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, but no CVE IDs or public exploits are referenced. Red Hat advises applying the patch via standard repositories immediately to incorporate all security improvements.]]></description>
+      <pubDate>Tue, 24 Nov 2026 01:23:13 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102710">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Updates Kernel for RHEL 8.8 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-updates-kernel-for-rhel-8-8-sap-3518b097</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-kernel-for-rhel-8-8-sap-3518b097</guid>
+      <description><![CDATA[Red Hat issued a kernel update for RHEL 8.8 SAP and Telecom to fix vulnerabilities that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, but no CVE IDs or public exploits are cited. Red Hat recommends applying the patch via standard repositories immediately to incorporate all security improvements.]]></description>
+      <pubDate>Tue, 24 Nov 2026 01:10:16 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102709">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>RHSA-2026:102696: Critical: php:8.2 security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-102696-critical-php-8-2-security-update-d2bfc141</link>
@@ -420,42 +456,6 @@
       <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96225">Microsoft MSRC</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Acknowledges CVE-2026-78462 in VS Code</title>
-      <link>https://secubuzz.com/news/microsoft-acknowledges-cve-2026-78462-in-vs-code-8068fa08</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-cve-2026-78462-in-vs-code-8068fa08</guid>
-      <description><![CDATA[Microsoft acknowledges CVE-2026-78462, a Visual Studio Code security feature bypass vulnerability. The issue could allow attackers to bypass security controls, but no public exploit or PoC has been disclosed. Microsoft has issued an informational update; no patch or mitigation is required at this time, and the vulnerability is tracked in the Microsoft Security Advisory database.]]></description>
-      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78462">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Acknowledges CVE-2026-72965 in Windows</title>
-      <link>https://secubuzz.com/news/microsoft-acknowledges-cve-2026-72965-in-windows-b3ad5032</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-cve-2026-72965-in-windows-b3ad5032</guid>
-      <description><![CDATA[Microsoft acknowledges CVE-2026-72965, a Windows WebClient Service elevation of privilege vulnerability. The flaw could allow local users to gain higher privileges, but no public exploit or PoC has been disclosed. Microsoft has issued an informational update; no patch or mitigation is required at this time, and the vulnerability is tracked in the Microsoft Security Advisory database.]]></description>
-      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72965">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Splunk Advisory Affects Multiple Products, Requires Upgrade</title>
-      <link>https://secubuzz.com/news/splunk-advisory-affects-multiple-products-requires-9d6cde7f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/splunk-advisory-affects-multiple-products-requires-9d6cde7f</guid>
-      <description><![CDATA[Splunk issued a security advisory (AV26-1196) affecting multiple products, including Enterprise, Enterprise Security, PCI Compliance, and SOAR, with versions prior to specified releases. The vulnerabilities could enable unauthorized access or privilege escalation within Splunk deployments, but no active exploitation has been confirmed. Administrators should review the provided links, upgrade to newer versions, and enforce access controls to mitigate risk.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:52:16 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/splunk-security-advisory-av26-1196">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Patches Exploited Azure API Management Flaw Targeting Energy Sector Credentials</title>
-      <link>https://secubuzz.com/news/microsoft-patches-exploited-azure-api-management-f-83470f49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-exploited-azure-api-management-f-83470f49</guid>
-      <description><![CDATA[Microsoft patched an Azure API Management flaw that attackers exploited to target Norwegian energy companies and other sectors. The vulnerability let attackers read protected configuration data and credential vaults, potentially exposing API secrets and sensitive information. Microsoft urged affected customers to apply the update or configuration changes immediately to block unauthorized credential access.]]></description>
-      <pubDate>Mon, 23 Nov 2026 15:47:40 GMT</pubDate>
-      <source url="https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/">SecurityWeek</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

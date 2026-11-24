@@ -11,6 +11,78 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ongoing-scanning-detected-on-banatsync-subnet-baab0068",
+    "title": "Ongoing Scanning Detected on BANATSYNC Subnet",
+    "summary": "SANS Internet Storm Center reports continuous scanning from subnet 109.160.32.0/24, assigned to BANATSYNC SRL, a Romanian web hosting and VPS provider. DShield sensor data shows persistent probing over 90 days, suggesting ongoing reconnaissance or potential exploitation attempts against the subnet's hosts. Security teams should monitor for suspicious activity, enforce rate limiting, and harden hosts to mitigate potential threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33550",
+    "publishedAt": "2026-11-24T02:32:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ongoing-scanning-detected-on-banatsync-subnet",
+      "article-baab0068",
+      "baab0068",
+      "ongoing-scanning-detected-on-banatsync-subnet-57dd81"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-update-for-rhel-9-6-eus-b5a282ce",
+    "title": "Red Hat Releases Kernel Update for RHEL 9.6 EUS",
+    "summary": "Red Hat issued a kernel update for RHEL 9.6 EUS to fix multiple security flaws that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, though no CVE IDs or public exploits are referenced. Red Hat advises immediate application of the patch via standard repositories to ensure all security enhancements are installed.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102711",
+    "publishedAt": "2026-11-24T01:25:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-update-for-rhel-9-6-eus",
+      "article-b5a282ce",
+      "b5a282ce",
+      "red-hat-releases-kernel-update-for-rhel-9-6-eus-2ee171"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-kernel-update-for-rhel-9-8-eus-a6f19b1d",
+    "title": "Red Hat Issues Kernel Update for RHEL 9.8 EUS",
+    "summary": "Red Hat issued a kernel update for RHEL 9.8 EUS to fix vulnerabilities that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, but no CVE IDs or public exploits are referenced. Red Hat advises applying the patch via standard repositories immediately to incorporate all security improvements.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102710",
+    "publishedAt": "2026-11-24T01:23:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-kernel-update-for-rhel-9-8-eus",
+      "article-a6f19b1d",
+      "a6f19b1d",
+      "red-hat-issues-kernel-update-for-rhel-9-8-eus-2ee171"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-kernel-for-rhel-8-8-sap-3518b097",
+    "title": "Red Hat Updates Kernel for RHEL 8.8 SAP",
+    "summary": "Red Hat issued a kernel update for RHEL 8.8 SAP and Telecom to fix vulnerabilities that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, but no CVE IDs or public exploits are cited. Red Hat recommends applying the patch via standard repositories immediately to incorporate all security improvements.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102709",
+    "publishedAt": "2026-11-24T01:10:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-kernel-for-rhel-8-8-sap",
+      "article-3518b097",
+      "3518b097",
+      "red-hat-updates-kernel-for-rhel-8-8-sap-2ee170"
+    ]
+  },
+  {
     "slug": "rhsa-2026-102696-critical-php-8-2-security-update-d2bfc141",
     "title": "RHSA-2026:102696: Critical: php:8.2 security update",
     "summary": "An update for the php:8.2 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -6763,24 +6835,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "red-hat-releases-kernel-update-for-rhel-9-6-eus-dc0864d2",
-    "title": "Red Hat Releases Kernel Update for RHEL 9.6 EUS",
-    "summary": "Red Hat released a kernel update for RHEL 9.6 Extended Update Support that addresses multiple security bugs. The update includes fixes for vulnerabilities with CVSS scores ranging from moderate to high, as detailed in the linked CVE references. Red Hat recommends applying the update immediately to mitigate potential exploitation and maintain kernel integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100652",
-    "publishedAt": "2026-11-20T08:46:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-update-for-rhel-9-6-eus",
-      "article-dc0864d2",
-      "dc0864d2",
-      "red-hat-releases-kernel-update-for-rhel-9-6-eus-2ee085"
-    ]
-  },
-  {
     "slug": "rhsa-2026-100640-important-skopeo-security-bug-fix-4e7c28fe",
     "title": "RHSA-2026:100640: Important: skopeo security, bug fix, and enhancement update",
     "summary": "An update for skopeo is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -9387,86 +9441,6 @@ export const news: NewsBrief[] = [
       "article-b2279bfb",
       "b2279bfb",
       "microsoft-acknowledges-exchange-rce-cve-2026-55007-746a5b"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-office-rce-cve-2026-78505-a59da9f6",
-    "title": "Microsoft Acknowledges Office RCE CVE-2026-78505",
-    "summary": "Microsoft acknowledges CVE-2026-78505, a remote code execution flaw in Office that could be triggered by malicious content. The flaw permits arbitrary code execution via a crafted document; no public exploit has been disclosed and CVSS is not yet published. Microsoft has released a patch in the latest Office update; administrators should apply it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78505",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-78505"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-office-rce-cve-2026-78505",
-      "article-a59da9f6",
-      "a59da9f6",
-      "microsoft-acknowledges-office-rce-cve-2026-78505-744cbc"
-    ]
-  },
-  {
-    "slug": "microsoft-office-excel-cve-2026-97772-acknowledged-a65edabe",
-    "title": "Microsoft Office Excel CVE-2026-97772 Acknowledged",
-    "summary": "Microsoft Office Excel Remote Code Execution Vulnerability CVE-2026-97772 was acknowledged by Microsoft. The flaw, affecting Excel's processing of specially crafted spreadsheets, permits arbitrary code execution, yet no exploitation has been reported. Microsoft has issued an informational update; users should monitor for official patch releases and apply updates promptly today.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97772",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97772"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-office-excel-cve-2026-97772-acknowledged",
-      "article-a65edabe",
-      "a65edabe",
-      "microsoft-office-excel-cve-2026-97772-acknowledged-7430f9"
-    ]
-  },
-  {
-    "slug": "microsoft-office-excel-cve-2026-97768-acknowledged-f6bc40da",
-    "title": "Microsoft Office Excel CVE-2026-97768 Acknowledged",
-    "summary": "Microsoft Office Excel Remote Code Execution Vulnerability CVE-2026-97768 was acknowledged by Microsoft. The flaw, affecting Excel's processing of specially crafted spreadsheets, permits arbitrary code execution, yet no exploitation has been reported. Microsoft has issued an informational update; users should monitor for official patch releases and apply updates promptly today.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97768",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97768"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-office-excel-cve-2026-97768-acknowledged",
-      "article-f6bc40da",
-      "f6bc40da",
-      "microsoft-office-excel-cve-2026-97768-acknowledged-7430f9"
-    ]
-  },
-  {
-    "slug": "microsoft-office-excel-cve-2026-97745-acknowledged-019e2d42",
-    "title": "Microsoft Office Excel CVE-2026-97745 Acknowledged",
-    "summary": "Microsoft Office Excel Remote Code Execution Vulnerability CVE-2026-97745 was acknowledged by Microsoft. The flaw, affecting Excel's processing of specially crafted spreadsheets, permits arbitrary code execution, yet no exploitation has been reported. Microsoft has issued an informational update; users should monitor for official patch releases and apply updates promptly today.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97745",
-    "publishedAt": "2026-11-19T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-97745"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-office-excel-cve-2026-97745-acknowledged",
-      "article-019e2d42",
-      "019e2d42",
-      "microsoft-office-excel-cve-2026-97745-acknowledged-7430f9"
     ]
   }
 ];
