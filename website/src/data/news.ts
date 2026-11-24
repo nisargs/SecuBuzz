@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "peninsula-energy-halts-trading-after-mine-cyber-in-058b9715",
+    "title": "Peninsula Energy Halts Trading After Mine Cyber Incident",
+    "summary": "Peninsula Energy reported a cybersecurity incident at its Wyoming uranium project, temporarily disrupting operations and prompting a trading halt. The breach details remain undisclosed, but the company indicated that critical operational systems were impacted, raising concerns over supply chain continuity. Peninsula Energy is coordinating with cybersecurity teams and regulators to assess the incident and resume trading.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/peninsula-energy-halts-trading-after-cyber-incident-hits-us-uranium-mine/",
+    "publishedAt": "2026-11-24T10:35:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "peninsula-energy-halts-trading-after-mine-cyber-in",
+      "article-058b9715",
+      "058b9715",
+      "peninsula-energy-halts-trading-after-mine-cyber-in-2f1a40",
+      "peninsula-energy-halts-trading-after-mine-cyber-incident"
+    ]
+  },
+  {
+    "slug": "cisa-flags-exploited-vmware-sap-cisco-apache-flaws-bca0d7dc",
+    "title": "CISA Flags Exploited VMware, SAP, Cisco, Apache Flaws",
+    "summary": "CISA added four exploited vulnerabilities affecting VMware vCenter, SAP NetWeaver, Cisco Expressway, and Apache Roller to its KEV catalog. All four flaws were actively exploited in the wild, prompting CISA to urge federal civilian agencies to patch by November 23. Administrators should apply vendor patches or workarounds immediately to mitigate the exploitation risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/cisa-warns-vmware-sap-cisco-apache-roller-flaws-exploited/",
+    "publishedAt": "2026-11-24T10:00:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-flags-exploited-vmware-sap-cisco-apache-flaws",
+      "article-bca0d7dc",
+      "bca0d7dc",
+      "cisa-flags-exploited-vmware-sap-cisco-apache-flaws-61fd44"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102880-important-imagemagick-security-up-37f0bc25",
+    "title": "RHSA-2026:102880: Important: ImageMagick security update",
+    "summary": "An update for ImageMagick is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102880",
+    "publishedAt": "2026-11-24T09:50:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102880-important-imagemagick-security-up",
+      "article-37f0bc25",
+      "37f0bc25",
+      "rhsa-2026-102880-important-imagemagick-security-up-2ee175",
+      "rhsa-2026-102880-important-imagemagick-security-update"
+    ]
+  },
+  {
     "slug": "globetopper-faces-up-to-2-5-million-in-lost-revenu-cf27e5da",
     "title": "GlobeTopper faces up to $2.5 million in lost revenue after hackers steal $70,000 in gift cards",
     "summary": "According to a filing with the U.S. Securities and Exchange Commission (SEC), parent company iQSTEL said GlobeTopper detected the intrusion on October 22 and took the platform offline the next morning after spotting further unauthorized activity.",
@@ -66,6 +122,85 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "nvidia-kernel-vulnerability-enables-hypervisor-out-031ac3d8",
+    "title": "NVIDIA Kernel Vulnerability Enables Hypervisor Out-of-Bounds",
+    "summary": "A local attacker with hypervisor access can exploit a missing Reverse Map Table check during IOMMU buffer access, enabling an out-of-bounds condition that may corrupt SEV-SNP guest memory. The flaw, CVE-2023-20585, is a local privilege escalation that could undermine guest isolation, with no public exploit yet. Ubuntu released kernel patches; administrators should update or backport the fix.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9192-1",
+    "publishedAt": "2026-11-24T08:42:57.000Z",
+    "cves": [
+      "CVE-2023-20585"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "nvidia-kernel-vulnerability-enables-hypervisor-out",
+      "article-031ac3d8",
+      "031ac3d8",
+      "nvidia-kernel-vulnerability-enables-hypervisor-out-7e7785",
+      "nvidia-kernel-vulnerability-enables-hypervisor-out-of-bounds"
+    ]
+  },
+  {
+    "slug": "azure-kernel-vulnerabilities-threaten-system-integ-668f827b",
+    "title": "Azure Kernel Vulnerabilities Threaten System Integrity",
+    "summary": "Multiple kernel subsystems in Azure environments contain vulnerabilities that could allow an attacker to compromise system integrity. The flaws span device drivers, cryptographic APIs, and architecture layers, presenting a broad local privilege escalation risk without a public exploit. Ubuntu has issued kernel updates correcting these issues; administrators should apply the latest kernel or backport the patches to mitigate the threat.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9191-1",
+    "publishedAt": "2026-11-24T08:42:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "azure-kernel-vulnerabilities-threaten-system-integ",
+      "article-668f827b",
+      "668f827b",
+      "azure-kernel-vulnerabilities-threaten-system-integ-7e7789",
+      "azure-kernel-vulnerabilities-threaten-system-integrity"
+    ]
+  },
+  {
+    "slug": "kernel-vulnerabilities-threaten-system-integrity-1ef945b8",
+    "title": "Kernel Vulnerabilities Threaten System Integrity",
+    "summary": "A range of kernel subsystems in Linux contain vulnerabilities that could enable attackers to compromise system integrity. The flaws affect architecture layers, device drivers, and file system components, posing a broad local privilege escalation risk. Ubuntu released kernel patches addressing these issues; administrators should update to the latest kernel or backport the fixes.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9190-1",
+    "publishedAt": "2026-11-24T08:41:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kernel-vulnerabilities-threaten-system-integrity",
+      "article-1ef945b8",
+      "1ef945b8",
+      "kernel-vulnerabilities-threaten-system-integrity-7e778c"
+    ]
+  },
+  {
+    "slug": "linux-kernel-vulnerabilities-patching-update-relea-28a515f1",
+    "title": "Linux Kernel Vulnerabilities Patching Update Released",
+    "summary": "The Linux kernel contains multiple vulnerabilities, including CVE-2026-99218, that could allow attackers to compromise affected systems. These flaws span cryptographic API, file system infrastructure, key management, io_uring, PID namespace, and tracing subsystems, potentially enabling privilege escalation or arbitrary code execution. Kernel maintainers have released an update patching all listed CVEs; administrators should apply the update promptly.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9165-2",
+    "publishedAt": "2026-11-24T08:40:41.000Z",
+    "cves": [
+      "CVE-2026-99218"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-vulnerabilities-patching-update-relea",
+      "article-28a515f1",
+      "28a515f1",
+      "linux-kernel-vulnerabilities-patching-update-relea-7e78d7",
+      "linux-kernel-vulnerabilities-patching-update-released"
+    ]
+  },
+  {
     "slug": "microsoft-uncovers-linux-kernel-vulnerabilities-in-7a22f5cf",
     "title": "Microsoft Uncovers Linux Kernel Vulnerabilities in Azure",
     "summary": "Microsoft identified multiple Linux kernel flaws in Azure that could allow attackers to compromise affected systems. The vulnerabilities affect IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems, and are catalogued as CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, potentially enabling remote code execution. Administrators should apply the latest kernel updates or install the provided patches to eliminate the exploitation vector.",
@@ -86,6 +221,27 @@ export const news: NewsBrief[] = [
       "7a22f5cf",
       "microsoft-uncovers-linux-kernel-vulnerabilities-in-7e7875",
       "microsoft-uncovers-linux-kernel-vulnerabilities-in-azure"
+    ]
+  },
+  {
+    "slug": "microsoft-365-copilot-cve-2026-50691-enables-privi-350e8b5e",
+    "title": "Microsoft 365 Copilot CVE-2026-50691 Enables Privilege Escalation",
+    "summary": "Microsoft disclosed CVE-2026-50691, a critical flaw in Microsoft 365 Copilot that lets a low-privileged user elevate network permissions without user interaction. Scored 9.9 on CVSS 3.1, the bug exploits a logic error in Copilot’s permission model, enabling unauthorized access to protected resources. Microsoft urges customers to apply the November 19 patch via Microsoft Update or by updating the Copilot add-in.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-365-copilot-flaw/",
+    "publishedAt": "2026-11-24T08:28:18.000Z",
+    "cves": [
+      "CVE-2026-50691"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-365-copilot-cve-2026-50691-enables-privi",
+      "article-350e8b5e",
+      "350e8b5e",
+      "microsoft-365-copilot-cve-2026-50691-enables-privi-da2520",
+      "microsoft-365-copilot-cve-2026-50691-enables-privilege-escal"
     ]
   },
   {
@@ -142,6 +298,81 @@ export const news: NewsBrief[] = [
       "0ea1961c",
       "rhsa-2026-102852-important-python-oauthlib-securit-2ee175",
       "rhsa-2026-102852-important-python-oauthlib-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102842-important-webkit2gtk3-security-up-41e90b35",
+    "title": "RHSA-2026:102842: Important: webkit2gtk3 security update",
+    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102842",
+    "publishedAt": "2026-11-24T08:04:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102842-important-webkit2gtk3-security-up",
+      "article-41e90b35",
+      "41e90b35",
+      "rhsa-2026-102842-important-webkit2gtk3-security-up-2ee175",
+      "rhsa-2026-102842-important-webkit2gtk3-security-update"
+    ]
+  },
+  {
+    "slug": "red-hat-recommends-python-oauthlib-patch-for-rhel-d6553110",
+    "title": "Red Hat Recommends Python-OAuthlib Patch for RHEL 10.2",
+    "summary": "Red Hat released an important security update for python-oauthlib on RHEL 10.2 Extended Update Support, targeting authentication library flaws. The update fixes multiple high-severity bugs that could allow credential misuse or unauthorized token issuance, though CVE identifiers are not disclosed. Apply RHSA-2026:102851 via the Customer Portal or use yum/dnf to install the latest python-oauthlib package immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102851",
+    "publishedAt": "2026-11-24T07:55:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-recommends-python-oauthlib-patch-for-rhel",
+      "article-d6553110",
+      "d6553110",
+      "red-hat-recommends-python-oauthlib-patch-for-rhel-2ee175",
+      "red-hat-recommends-python-oauthlib-patch-for-rhel-10-2"
+    ]
+  },
+  {
+    "slug": "red-hat-recommends-php-update-for-rhel-9-2-7558e27e",
+    "title": "Red Hat Recommends PHP Update for RHEL 9.2",
+    "summary": "A critical PHP update is released for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, fixing runtime vulnerabilities. The patch addresses multiple high-severity flaws that could enable remote code execution or privilege escalation, though CVE IDs are not listed. Red Hat advises applying RHSA-2026:102847 immediately via the Customer Portal or using yum/dnf to install the updated PHP package.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102847",
+    "publishedAt": "2026-11-24T07:50:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-recommends-php-update-for-rhel-9-2",
+      "article-7558e27e",
+      "7558e27e",
+      "red-hat-recommends-php-update-for-rhel-9-2-2ee175"
+    ]
+  },
+  {
+    "slug": "ai-hackers-access-3-392-accounts-decrypt-50-ssh-ke-f102eb77",
+    "title": "AI Hackers Access 3,392 Accounts, Decrypt 50 SSH Keys",
+    "summary": "An attacker employing the CyberStrikeAI framework accessed 3,392 user accounts and active session tokens during a four-day cloud intrusion at two AWS accounts and seven EKS clusters in October 2026. The operator also decrypted a bastion host database, recovering 50 SSH private keys, exposing critical credentials. Security teams should isolate affected accounts, rotate credentials, and investigate the breach.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ai-powered-hackers/",
+    "publishedAt": "2026-11-24T07:47:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-hackers-access-3-392-accounts-decrypt-50-ssh-ke",
+      "article-f102eb77",
+      "f102eb77",
+      "ai-hackers-access-3-392-accounts-decrypt-50-ssh-ke-511f7e",
+      "ai-hackers-access-3-392-accounts-decrypt-50-ssh-keys"
     ]
   },
   {
@@ -834,6 +1065,24 @@ export const news: NewsBrief[] = [
       "daf1c6c4",
       "red-hat-releases-security-update-for-container-too-2ee16e",
       "red-hat-releases-security-update-for-container-tools"
+    ]
+  },
+  {
+    "slug": "laliga-data-breach-fans-personal-info-stolen-c566d02d",
+    "title": "LaLiga Data Breach: Fans' Personal Info Stolen",
+    "summary": "Hackers accessed LaLiga digital services and stole personal data of fans, affecting multiple Spanish clubs. The breach exploited unknown vulnerabilities in the league's web infrastructure, enabling unauthorized data exfiltration. LaLiga has notified affected parties and is working with security teams immediately to remediate the vulnerabilities and secure its systems today.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/laliga-hacked-spain-top-professional-league-confirms-cyber-incident",
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "laliga-data-breach-fans-personal-info-stolen",
+      "article-c566d02d",
+      "c566d02d",
+      "laliga-data-breach-fans-personal-info-stolen-6d1aa3"
     ]
   },
   {
@@ -9134,255 +9383,6 @@ export const news: NewsBrief[] = [
       "article-7dbeb1d4",
       "7dbeb1d4",
       "seven-critical-php-flaws-expose-rce-risks-7d395d"
-    ]
-  },
-  {
-    "slug": "ai-fuels-vulnerability-hysteria-and-operational-di-dbe94d43",
-    "title": "AI Fuels Vulnerability Hysteria and Operational Disruption",
-    "summary": "The Reporters' Notebook video series analyzes fallout from recent high-severity flaw disclosures, highlighting how AI-assisted exploit fears amplify vulnerability hysteria. The discussion notes widespread panic, operational disruptions, and growing warning fatigue among security teams, though no specific vulnerability is cited. The series encourages balanced risk assessment and disciplined alert management to mitigate unnecessary operational impact.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era",
-    "publishedAt": "2026-11-19T19:46:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-fuels-vulnerability-hysteria-and-operational-di",
-      "article-dbe94d43",
-      "dbe94d43",
-      "ai-fuels-vulnerability-hysteria-and-operational-di-8544c4",
-      "ai-fuels-vulnerability-hysteria-and-operational-disruption"
-    ]
-  },
-  {
-    "slug": "drupal-core-vulnerability-enables-remote-code-exec-7d44e06d",
-    "title": "Drupal Core Vulnerability Enables Remote Code Execution",
-    "summary": "A remote code execution flaw exists in Drupal core versions before 10.6.22, 11.3.22, and 11.4.13, allowing attackers to execute arbitrary code. The vulnerability, identified as SA-CORE-2026-017, permits unauthenticated exploitation and could compromise site integrity and data. Drupal administrators should apply the latest patch or upgrade to a supported version as soon as the update is released.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1186",
-    "publishedAt": "2026-11-19T19:29:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "drupal-core-vulnerability-enables-remote-code-exec",
-      "article-7d44e06d",
-      "7d44e06d",
-      "drupal-core-vulnerability-enables-remote-code-exec-1fb70b",
-      "drupal-core-vulnerability-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "vmware-vcenter-authentication-bypass-zero-day-expl-14ded22f",
-    "title": "VMware vCenter Authentication Bypass Zero-Day Exploited by Chinese APT",
-    "summary": "A China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom issued a patch. The flaw permits unauthenticated access to vCenter management interfaces, enabling attackers to execute privileged commands and potentially compromise virtual infrastructure. Administrators should apply Broadcom's patch immediately and enforce strict access controls to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
-    "publishedAt": "2026-11-19T19:21:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vmware-vcenter-authentication-bypass-zero-day-expl",
-      "article-14ded22f",
-      "14ded22f",
-      "vmware-vcenter-authentication-bypass-zero-day-expl-4b6fa8",
-      "vmware-vcenter-authentication-bypass-zero-day-exploited-by-c"
-    ]
-  },
-  {
-    "slug": "securing-github-actions-against-insider-threats-63cbba6e",
-    "title": "Securing GitHub Actions Against Insider Threats",
-    "summary": "A practical guide outlines steps to harden GitHub Actions against insider threats, focusing on credential protection and pipeline integrity. The approach covers trusted publishing, release approvals, and revocation mechanisms to prevent malicious code injection from compromised accounts. Security teams should implement these controls, enforce least-privilege access, and monitor workflow logs for anomalous activity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/hardening-github-actions-against-insider-threats",
-    "publishedAt": "2026-11-19T19:17:08.445Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "securing-github-actions-against-insider-threats",
-      "article-63cbba6e",
-      "63cbba6e",
-      "securing-github-actions-against-insider-threats-5e5d6a"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-security-update-for-rhel-8-8b4cf37d",
-    "title": "Red Hat Releases Kernel Security Update for RHEL 8.4",
-    "summary": "Red Hat issued a kernel security update for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support, addressing multiple critical vulnerabilities. The advisory references several CVE identifiers, each with a CVSS base score, but no active exploitation reports were disclosed. Administrators should apply the update promptly, verify kernel integrity, and monitor for any anomalous kernel behavior.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100517",
-    "publishedAt": "2026-11-19T19:16:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-security-update-for-rhel-8",
-      "article-8b4cf37d",
-      "8b4cf37d",
-      "red-hat-releases-kernel-security-update-for-rhel-8-2ee080",
-      "red-hat-releases-kernel-security-update-for-rhel-8-4"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100500-important-python-urllib3-security-64f6a192",
-    "title": "RHSA-2026:100500: Important: python-urllib3 security update",
-    "summary": "An update for python-urllib3 is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100500",
-    "publishedAt": "2026-11-19T19:14:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100500-important-python-urllib3-security",
-      "article-64f6a192",
-      "64f6a192",
-      "rhsa-2026-100500-important-python-urllib3-security-2ee080",
-      "rhsa-2026-100500-important-python-urllib3-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100544-moderate-jackson-core-security-up-bb9f299c",
-    "title": "RHSA-2026:100544: Moderate: jackson-core security update",
-    "summary": "An update for jackson-core is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100544",
-    "publishedAt": "2026-11-19T19:12:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100544-moderate-jackson-core-security-up",
-      "article-bb9f299c",
-      "bb9f299c",
-      "rhsa-2026-100544-moderate-jackson-core-security-up-2ee081",
-      "rhsa-2026-100544-moderate-jackson-core-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100497-important-freerdp-security-update-15fea938",
-    "title": "RHSA-2026:100497: Important: freerdp security update",
-    "summary": "An update for freerdp is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100497",
-    "publishedAt": "2026-11-19T19:11:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100497-important-freerdp-security-update",
-      "article-15fea938",
-      "15fea938",
-      "rhsa-2026-100497-important-freerdp-security-update-2ee07d"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100529-important-libxrender-security-upd-9a197c31",
-    "title": "RHSA-2026:100529: Important: libXrender security update",
-    "summary": "An update for libXrender is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100529",
-    "publishedAt": "2026-11-19T19:11:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100529-important-libxrender-security-upd",
-      "article-9a197c31",
-      "9a197c31",
-      "rhsa-2026-100529-important-libxrender-security-upd-2ee080",
-      "rhsa-2026-100529-important-libxrender-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-netpbm-security-update-for-rhel-8-a-9f9e1030",
-    "title": "Red Hat Issues Netpbm Security Update for RHEL 8 and RHEL 10.2 to Mitigate Important Vulnerability",
-    "summary": "Red Hat released a security update for the netpbm image-processing library on RHEL 8 and RHEL 10.2, addressing an undisclosed vulnerability rated Important. The flaw allows attackers to exploit the library, potentially leading to arbitrary code execution or privilege escalation. Users must apply the netpbm update immediately to eliminate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100476",
-    "publishedAt": "2026-11-19T19:11:56.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102494"
-      }
-    ],
-    "aliases": [
-      "red-hat-issues-netpbm-security-update-for-rhel-8-a",
-      "article-9f9e1030",
-      "9f9e1030",
-      "red-hat-issues-netpbm-security-update-for-rhel-8-a-2ee07d",
-      "red-hat-issues-netpbm-security-update-for-rhel-8-and-rhel-10"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100546-moderate-jackson-core-security-up-afbc845c",
-    "title": "RHSA-2026:100546: Moderate: jackson-core security update",
-    "summary": "An update for jackson-core is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100546",
-    "publishedAt": "2026-11-19T19:09:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100546-moderate-jackson-core-security-up",
-      "article-afbc845c",
-      "afbc845c",
-      "rhsa-2026-100546-moderate-jackson-core-security-up-2ee081",
-      "rhsa-2026-100546-moderate-jackson-core-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100485-important-grafana-security-update-27037fe8",
-    "title": "RHSA-2026:100485: Important: grafana security update",
-    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100485",
-    "publishedAt": "2026-11-19T19:09:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100485-important-grafana-security-update",
-      "article-27037fe8",
-      "27037fe8",
-      "rhsa-2026-100485-important-grafana-security-update-2ee07d"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100482-moderate-gstreamer1-plugins-bad-f-dc679ec3",
-    "title": "RHSA-2026:100482: Moderate: gstreamer1-plugins-bad-free security update",
-    "summary": "An update for gstreamer1-plugins-bad-free is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100482",
-    "publishedAt": "2026-11-19T19:08:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100482-moderate-gstreamer1-plugins-bad-f",
-      "article-dc679ec3",
-      "dc679ec3",
-      "rhsa-2026-100482-moderate-gstreamer1-plugins-bad-f-2ee07d",
-      "rhsa-2026-100482-moderate-gstreamer1-plugins-bad-free-securi"
     ]
   }
 ];

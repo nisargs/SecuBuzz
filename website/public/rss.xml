@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 09:46:50 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 10:45:47 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Peninsula Energy Halts Trading After Mine Cyber Incident</title>
+      <link>https://secubuzz.com/news/peninsula-energy-halts-trading-after-mine-cyber-in-058b9715</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/peninsula-energy-halts-trading-after-mine-cyber-in-058b9715</guid>
+      <description><![CDATA[Peninsula Energy reported a cybersecurity incident at its Wyoming uranium project, temporarily disrupting operations and prompting a trading halt. The breach details remain undisclosed, but the company indicated that critical operational systems were impacted, raising concerns over supply chain continuity. Peninsula Energy is coordinating with cybersecurity teams and regulators to assess the incident and resume trading.]]></description>
+      <pubDate>Tue, 24 Nov 2026 10:35:04 GMT</pubDate>
+      <source url="https://www.securityweek.com/peninsula-energy-halts-trading-after-cyber-incident-hits-us-uranium-mine/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CISA Flags Exploited VMware, SAP, Cisco, Apache Flaws</title>
+      <link>https://secubuzz.com/news/cisa-flags-exploited-vmware-sap-cisco-apache-flaws-bca0d7dc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-flags-exploited-vmware-sap-cisco-apache-flaws-bca0d7dc</guid>
+      <description><![CDATA[CISA added four exploited vulnerabilities affecting VMware vCenter, SAP NetWeaver, Cisco Expressway, and Apache Roller to its KEV catalog. All four flaws were actively exploited in the wild, prompting CISA to urge federal civilian agencies to patch by November 23. Administrators should apply vendor patches or workarounds immediately to mitigate the exploitation risk.]]></description>
+      <pubDate>Tue, 24 Nov 2026 10:00:33 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/cisa-warns-vmware-sap-cisco-apache-roller-flaws-exploited/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102880: Important: ImageMagick security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102880-important-imagemagick-security-up-37f0bc25</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102880-important-imagemagick-security-up-37f0bc25</guid>
+      <description><![CDATA[An update for ImageMagick is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 09:50:51 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102880">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>GlobeTopper faces up to $2.5 million in lost revenue after hackers steal $70,000 in gift cards</title>
       <link>https://secubuzz.com/news/globetopper-faces-up-to-2-5-million-in-lost-revenu-cf27e5da</link>
@@ -35,12 +62,57 @@
       <category>General</category>
     </item>
     <item>
+      <title>NVIDIA Kernel Vulnerability Enables Hypervisor Out-of-Bounds</title>
+      <link>https://secubuzz.com/news/nvidia-kernel-vulnerability-enables-hypervisor-out-031ac3d8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-kernel-vulnerability-enables-hypervisor-out-031ac3d8</guid>
+      <description><![CDATA[A local attacker with hypervisor access can exploit a missing Reverse Map Table check during IOMMU buffer access, enabling an out-of-bounds condition that may corrupt SEV-SNP guest memory. The flaw, CVE-2023-20585, is a local privilege escalation that could undermine guest isolation, with no public exploit yet. Ubuntu released kernel patches; administrators should update or backport the fix.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:42:57 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9192-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Azure Kernel Vulnerabilities Threaten System Integrity</title>
+      <link>https://secubuzz.com/news/azure-kernel-vulnerabilities-threaten-system-integ-668f827b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/azure-kernel-vulnerabilities-threaten-system-integ-668f827b</guid>
+      <description><![CDATA[Multiple kernel subsystems in Azure environments contain vulnerabilities that could allow an attacker to compromise system integrity. The flaws span device drivers, cryptographic APIs, and architecture layers, presenting a broad local privilege escalation risk without a public exploit. Ubuntu has issued kernel updates correcting these issues; administrators should apply the latest kernel or backport the patches to mitigate the threat.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:42:14 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9191-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Kernel Vulnerabilities Threaten System Integrity</title>
+      <link>https://secubuzz.com/news/kernel-vulnerabilities-threaten-system-integrity-1ef945b8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kernel-vulnerabilities-threaten-system-integrity-1ef945b8</guid>
+      <description><![CDATA[A range of kernel subsystems in Linux contain vulnerabilities that could enable attackers to compromise system integrity. The flaws affect architecture layers, device drivers, and file system components, posing a broad local privilege escalation risk. Ubuntu released kernel patches addressing these issues; administrators should update to the latest kernel or backport the fixes.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:41:13 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9190-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Linux Kernel Vulnerabilities Patching Update Released</title>
+      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-patching-update-relea-28a515f1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-patching-update-relea-28a515f1</guid>
+      <description><![CDATA[The Linux kernel contains multiple vulnerabilities, including CVE-2026-99218, that could allow attackers to compromise affected systems. These flaws span cryptographic API, file system infrastructure, key management, io_uring, PID namespace, and tracing subsystems, potentially enabling privilege escalation or arbitrary code execution. Kernel maintainers have released an update patching all listed CVEs; administrators should apply the update promptly.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:40:41 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9165-2">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Uncovers Linux Kernel Vulnerabilities in Azure</title>
       <link>https://secubuzz.com/news/microsoft-uncovers-linux-kernel-vulnerabilities-in-7a22f5cf</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-uncovers-linux-kernel-vulnerabilities-in-7a22f5cf</guid>
       <description><![CDATA[Microsoft identified multiple Linux kernel flaws in Azure that could allow attackers to compromise affected systems. The vulnerabilities affect IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems, and are catalogued as CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, potentially enabling remote code execution. Administrators should apply the latest kernel updates or install the provided patches to eliminate the exploitation vector.]]></description>
       <pubDate>Tue, 24 Nov 2026 08:40:41 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9170-4">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft 365 Copilot CVE-2026-50691 Enables Privilege Escalation</title>
+      <link>https://secubuzz.com/news/microsoft-365-copilot-cve-2026-50691-enables-privi-350e8b5e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-copilot-cve-2026-50691-enables-privi-350e8b5e</guid>
+      <description><![CDATA[Microsoft disclosed CVE-2026-50691, a critical flaw in Microsoft 365 Copilot that lets a low-privileged user elevate network permissions without user interaction. Scored 9.9 on CVSS 3.1, the bug exploits a logic error in Copilot’s permission model, enabling unauthorized access to protected resources. Microsoft urges customers to apply the November 19 patch via Microsoft Update or by updating the Copilot add-in.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:28:18 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsoft-365-copilot-flaw/">Cyber Security News</source>
       <category>CVE</category>
     </item>
     <item>
@@ -69,6 +141,42 @@
       <pubDate>Tue, 24 Nov 2026 08:06:34 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:102852">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102842: Important: webkit2gtk3 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102842-important-webkit2gtk3-security-up-41e90b35</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102842-important-webkit2gtk3-security-up-41e90b35</guid>
+      <description><![CDATA[An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 08:04:33 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102842">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Recommends Python-OAuthlib Patch for RHEL 10.2</title>
+      <link>https://secubuzz.com/news/red-hat-recommends-python-oauthlib-patch-for-rhel-d6553110</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-recommends-python-oauthlib-patch-for-rhel-d6553110</guid>
+      <description><![CDATA[Red Hat released an important security update for python-oauthlib on RHEL 10.2 Extended Update Support, targeting authentication library flaws. The update fixes multiple high-severity bugs that could allow credential misuse or unauthorized token issuance, though CVE identifiers are not disclosed. Apply RHSA-2026:102851 via the Customer Portal or use yum/dnf to install the latest python-oauthlib package immediately.]]></description>
+      <pubDate>Tue, 24 Nov 2026 07:55:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102851">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Recommends PHP Update for RHEL 9.2</title>
+      <link>https://secubuzz.com/news/red-hat-recommends-php-update-for-rhel-9-2-7558e27e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-recommends-php-update-for-rhel-9-2-7558e27e</guid>
+      <description><![CDATA[A critical PHP update is released for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, fixing runtime vulnerabilities. The patch addresses multiple high-severity flaws that could enable remote code execution or privilege escalation, though CVE IDs are not listed. Red Hat advises applying RHSA-2026:102847 immediately via the Customer Portal or using yum/dnf to install the updated PHP package.]]></description>
+      <pubDate>Tue, 24 Nov 2026 07:50:53 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102847">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Hackers Access 3,392 Accounts, Decrypt 50 SSH Keys</title>
+      <link>https://secubuzz.com/news/ai-hackers-access-3-392-accounts-decrypt-50-ssh-ke-f102eb77</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-hackers-access-3-392-accounts-decrypt-50-ssh-ke-f102eb77</guid>
+      <description><![CDATA[An attacker employing the CyberStrikeAI framework accessed 3,392 user accounts and active session tokens during a four-day cloud intrusion at two AWS accounts and seven EKS clusters in October 2026. The operator also decrypted a bastion host database, recovering 50 SSH private keys, exposing critical credentials. Security teams should isolate affected accounts, rotate credentials, and investigate the breach.]]></description>
+      <pubDate>Tue, 24 Nov 2026 07:47:50 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ai-powered-hackers/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Top Attack Path Management Tools Ranked for 2026</title>
@@ -348,114 +456,6 @@
       <pubDate>Tue, 24 Nov 2026 02:32:00 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33550">SANS Internet Storm Center</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>ISC Stormcast Podcast Released for Nov 24, 2026</title>
-      <link>https://secubuzz.com/news/isc-stormcast-podcast-released-for-nov-24-2026-fe0f5f93</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-podcast-released-for-nov-24-2026-fe0f5f93</guid>
-      <description><![CDATA[The ISC Stormcast podcast released for Tuesday, November 24, 2026, delivers a concise briefing on the latest cyber threat landscape. The episode covers emerging malware trends, nation-state activity, and defensive tactics, providing analysts with actionable insights for the week. Listeners can access the recording via the ISC website or subscribe to the podcast feed for real-time updates.]]></description>
-      <pubDate>Tue, 24 Nov 2026 02:00:04 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33552">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel Update for RHEL 9.6 EUS</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-6-eus-b5a282ce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-6-eus-b5a282ce</guid>
-      <description><![CDATA[Red Hat issued a kernel update for RHEL 9.6 EUS to fix multiple security flaws that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, though no CVE IDs or public exploits are referenced. Red Hat advises immediate application of the patch via standard repositories to ensure all security enhancements are installed.]]></description>
-      <pubDate>Tue, 24 Nov 2026 01:25:13 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102711">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Kernel Update for RHEL 9.8 EUS</title>
-      <link>https://secubuzz.com/news/red-hat-issues-kernel-update-for-rhel-9-8-eus-a6f19b1d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kernel-update-for-rhel-9-8-eus-a6f19b1d</guid>
-      <description><![CDATA[Red Hat issued a kernel update for RHEL 9.8 EUS to fix vulnerabilities that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, but no CVE IDs or public exploits are referenced. Red Hat advises applying the patch via standard repositories immediately to incorporate all security improvements.]]></description>
-      <pubDate>Tue, 24 Nov 2026 01:23:13 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102710">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates Multiple Container Tools on RHEL 9.4</title>
-      <link>https://secubuzz.com/news/red-hat-updates-multiple-container-tools-on-rhel-9-ad6179bc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-multiple-container-tools-on-rhel-9-ad6179bc</guid>
-      <description><![CDATA[Red Hat released a security update for buildah, conmon, container-selinux, containernetworking-plugins, containers-common, crun, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, runc, skopeo, and slirp4netns on RHEL 9.4. The update fixes multiple vulnerabilities, each with a CVSS base score, and is rated as Important by Red Hat Product Security. Apply the update via RHEL 9.4 Update Services for SAP Solutions to maintain system integrity.]]></description>
-      <pubDate>Tue, 24 Nov 2026 01:10:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102708">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates Kernel for RHEL 8.8 SAP</title>
-      <link>https://secubuzz.com/news/red-hat-updates-kernel-for-rhel-8-8-sap-3518b097</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-kernel-for-rhel-8-8-sap-3518b097</guid>
-      <description><![CDATA[Red Hat issued a kernel update for RHEL 8.8 SAP and Telecom to fix vulnerabilities that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, but no CVE IDs or public exploits are cited. Red Hat recommends applying the patch via standard repositories immediately to incorporate all security improvements.]]></description>
-      <pubDate>Tue, 24 Nov 2026 01:10:16 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102709">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Security Update for Container Tools</title>
-      <link>https://secubuzz.com/news/red-hat-releases-security-update-for-container-too-daf1c6c4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-security-update-for-container-too-daf1c6c4</guid>
-      <description><![CDATA[Red Hat released the 3.3.4 build of Apicurio Registry container images for OpenShift, providing updated components and security patches. The update includes security fixes and enhancements, ensuring compatibility with current OpenShift deployments and aligning with Red Hat's security policy. Security teams should pull the new images from the Red Hat Container Registry and redeploy to maintain compliance.]]></description>
-      <pubDate>Tue, 24 Nov 2026 00:52:49 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102699">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>GTA VI Hacker Sentenced, Released Same Day</title>
-      <link>https://secubuzz.com/news/gta-vi-hacker-sentenced-released-same-day-fcf6ba53</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gta-vi-hacker-sentenced-released-same-day-fcf6ba53</guid>
-      <description><![CDATA[A British cybercriminal breached Rockstar Games’ systems, leaking unreleased Grand Theft Auto VI footage in the United Kingdom. The attack exploited internal access controls, but no specific vulnerability was publicly disclosed without evidence of ongoing threat to Rockstar’s operations. He received a seven-year prison sentence and was released on license after serving time.]]></description>
-      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://therecord.media/gta-vi-hacker-arion-kurtaj-released-on-license">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102696: Critical: php:8.2 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102696-critical-php-8-2-security-update-d2bfc141</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102696-critical-php-8-2-security-update-d2bfc141</guid>
-      <description><![CDATA[An update for the php:8.2 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 23 Nov 2026 23:31:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102696">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cybersecurity Jobs Open Now, November 24, 2026</title>
-      <link>https://secubuzz.com/news/cybersecurity-jobs-open-now-november-24-2026-f8135851</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cybersecurity-jobs-open-now-november-24-2026-f8135851</guid>
-      <description><![CDATA[A new Applied Cyber, Detections role is listed by Help Net Security, targeting remote positions in the United States. Candidates will support detection operations, develop and refine detection logic, and automate alert triage across web domains, social media, and other digital channels. The posting encourages collaboration with engineering and product teams to enhance detection capabilities and address evolving cyber threats.]]></description>
-      <pubDate>Mon, 23 Nov 2026 23:30:54 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/cybersecurity-jobs-available-right-now-november-24-2026/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102695: Critical: php:8.2 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102695-critical-php-8-2-security-update-fe9d24bb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102695-critical-php-8-2-security-update-fe9d24bb</guid>
-      <description><![CDATA[An update for the php:8.2 module is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 23 Nov 2026 23:28:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102695">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel Update for RHEL 9.2 SAP</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-2-sap-0a725d3f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-2-sap-0a725d3f</guid>
-      <description><![CDATA[Red Hat issued a kernel update for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple security bugs. The advisory rates the update as Important, with CVSS base scores linked to individual CVE references, indicating high risk if unpatched. Security teams should apply the update promptly, ensuring kernel version compliance and verifying SAP application compatibility after installation.]]></description>
-      <pubDate>Mon, 23 Nov 2026 23:23:25 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102689">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-9189-1: Qt5Compat vulnerability</title>
-      <link>https://secubuzz.com/news/usn-9189-1-qt5compat-vulnerability-e859a30a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9189-1-qt5compat-vulnerability-e859a30a</guid>
-      <description><![CDATA[It was discovered that Qt5Compat did not correctly handle certain text codec names, which could lead to an out-of-bounds read. An attacker could possibly use this issue to cause a denial of service.]]></description>
-      <pubDate>Mon, 23 Nov 2026 23:21:59 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9189-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
