@@ -77,6 +77,87 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-64855",
+    "cveID": "CVE-2026-64855",
+    "slug": "cve-2026-64855",
+    "vendor": "Pip",
+    "product": "soapbar",
+    "name": "soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass)",
+    "dateAdded": "2026-11-24",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-295",
+    "ransomware": false,
+    "description": "verify_envelope_bsp() derived its trust anchor from the message it was verifying. It read the X.509 certificate out of the caller-untrusted wsse:BinarySecurityToken, validated only that certificate's not-before / not-after dates, and then verified the signature against that same certificate. There was no CA-chain validation, no issuer/subject allowlist, and no pinning.",
+    "requiredAction": "Upgrade soapbar to version 0.13.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-859w-52fx-hcm6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64855"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-59191",
+    "cveID": "CVE-2026-59191",
+    "slug": "cve-2026-59191",
+    "vendor": "Composer",
+    "product": "cakephp/twig-view",
+    "name": "TwigView FileLoader may allow arbitrary file reads through user-controlled template paths",
+    "dateAdded": "2026-11-24",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "If FileLoader::findTemplate() is supplied un-validated user controlled data, arbitrary files can be read. 1.3.3 and 2.1.2 contain a fix for this issue. Don't supply user controlled data to include and extends tags.",
+    "requiredAction": "Upgrade cakephp/twig-view to version 1.3.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-hq9r-72jq-2pxp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59191"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-59831",
+    "cveID": "CVE-2026-59831",
+    "slug": "cve-2026-59831",
+    "vendor": "Go",
+    "product": "cli (v2) · cli",
+    "name": "GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces",
+    "dateAdded": "2026-11-24",
+    "dueDate": "",
+    "cvss": 4.4,
+    "severity": "Medium",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "A security vulnerability has been identified in GitHub CLI that could allow remote code execution when users connect to a malicious Codespace using the gh codespace jupyter command. The command opens JupyterLab by launching a URL in the user's browser, but that URL is supplied by a process running inside the Codespace and the CLI opens it without validating it.",
+    "requiredAction": "Upgrade cli (v2) · cli to version 2.96.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8cg3-r6g9-fpg2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59831"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-jp3c-6v3g-mpxv",
     "cveID": "GHSA-jp3c-6v3g-mpxv",
     "slug": "ghsa-jp3c-6v3g-mpxv",
@@ -1487,87 +1568,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115578"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-104129",
-    "cveID": "CVE-2026-104129",
-    "slug": "cve-2026-104129",
-    "vendor": "Go",
-    "product": "prest · prest",
-    "name": "pREST _groupby function-expression SQL injection (incomplete fix of CVE-2025-58450)",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 8.1,
-    "severity": "High",
-    "cwe": "CWE-89",
-    "ransomware": false,
-    "description": "What the fix did and the gap ---------------------------- The v2.3.0 fix (commit e88dabb) routed the _select field through a strict new gate, sanitizeSelectField (postgres.go:947/1003/2097). The sibling _groupby path was left on the far weaker isSafeSQLExpression.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-v9v2-98xq-627c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104129"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63386",
-    "cveID": "CVE-2026-63386",
-    "slug": "cve-2026-63386",
-    "vendor": "npm",
-    "product": "js-toml",
-    "name": "js-toml allows uncontrolled recursion in `load()` leading `RangeError` (stack exhaustion) on deeply nested input",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "load() parses untrusted TOML using a recursive-descent parser (Chevrotain) and a recursive tree-walking interpreter. Neither the parser nor the interpreter enforces a maximum nesting / key depth.",
-    "requiredAction": "Upgrade js-toml to version 1.1.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3g82-77xr-68x5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63386"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63184",
-    "cveID": "CVE-2026-63184",
-    "slug": "cve-2026-63184",
-    "vendor": ".NET (NuGet)",
-    "product": "Refitter",
-    "name": "Refitter: Unrestricted OpenAPI references permit build-host SSRF and file inclusion",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-829",
-    "ransomware": false,
-    "description": "Refitter (the refitter dotnet tool, built on NJsonSchema for $ref resolution) fetches remote http(s) URLs and reads local files (including absolute paths and ../ traversal outside the input directory), inlining the referenced schema into the generated Refit interface/contracts.",
-    "requiredAction": "Upgrade Refitter to version 2.1.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x6w4-f264-3vvr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63184"
       }
     ],
     "source": "GITHUB"

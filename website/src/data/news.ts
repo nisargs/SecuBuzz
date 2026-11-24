@@ -11,6 +11,98 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cia-unclassified-system-breached-47717a35",
+    "title": "CIA Unclassified System Breached",
+    "summary": "A cyberattack breached an unclassified CIA system, though the specific data compromised and the attacker remain unidentified. The breach indicates potential exploitation of internal network defenses, but no evidence of credential theft or data exfiltration has been disclosed. Security teams should review CIA network hardening measures and monitor for anomalous activity following the incident.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
+    "publishedAt": "2026-11-24T22:41:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cia-unclassified-system-breached",
+      "article-47717a35",
+      "47717a35",
+      "cia-unclassified-system-breached-1302b2"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-librabbitmq-security-update-4d11bcbe",
+    "title": "Red Hat Releases librabbitmq Security Update",
+    "summary": "Red Hat released a security update for the librabbitmq library on RHEL 9, fixing vulnerabilities that could enable remote code execution. The flaws involve improper input validation in AMQP handling, with CVSS scores of 7.5-8.3, and are documented but not yet exploited. Apply the latest librabbitmq package immediately to ensure the patched version is in use.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103286",
+    "publishedAt": "2026-11-24T22:09:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-librabbitmq-security-update",
+      "article-4d11bcbe",
+      "4d11bcbe",
+      "red-hat-releases-librabbitmq-security-update-2ee1d3"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-cjose-update-7d192425",
+    "title": "Red Hat Issues Critical cjose Update",
+    "summary": "Red Hat issued a critical security update for the cjose library on RHEL 9, addressing flaws that could allow remote code execution. The vulnerabilities arise from improper handling of JOSE tokens, with CVSS scores up to 9.1, and are publicly documented but not yet exploited. Red Hat recommends installing the latest cjose package immediately to secure affected systems.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103380",
+    "publishedAt": "2026-11-24T22:09:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-cjose-update",
+      "article-7d192425",
+      "7d192425",
+      "red-hat-issues-critical-cjose-update-2ee1d7"
+    ]
+  },
+  {
+    "slug": "satellite-ground-infrastructure-faces-cyber-threat-42753a39",
+    "title": "Satellite Ground Infrastructure Faces Cyber Threats",
+    "summary": "Satellite operators face growing cybersecurity risks from weaknesses in ground-based infrastructure that supports space services. These vulnerabilities, including outdated firmware and unsecured communication links, could enable attackers to disrupt satellite operations or intercept data. Operators should update firmware, enforce strict access controls, and conduct regular penetration testing to mitigate emerging threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/satellites-ground-level-cybersecurity-problem",
+    "publishedAt": "2026-11-24T22:05:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "satellite-ground-infrastructure-faces-cyber-threat",
+      "article-42753a39",
+      "42753a39",
+      "satellite-ground-infrastructure-faces-cyber-threat-501c3c",
+      "satellite-ground-infrastructure-faces-cyber-threats"
+    ]
+  },
+  {
+    "slug": "apt-webworm-customizes-softether-vpn-to-evade-dete-7db99672",
+    "title": "APT Webworm Customizes SoftEther VPN to Evade Detection",
+    "summary": "Webworm, a China-aligned espionage group, rebuilt SoftEther VPN from source, removing default artifacts that would normally alert defenders. By stripping telemetry and logging hooks, the modified VPN hides its presence, enabling stealthy lateral movement inside corporate networks without triggering security monitoring. Security teams should monitor anomalous SoftEther traffic, enforce strict VPN policies, and apply hardening updates that re-enable logging.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn",
+    "publishedAt": "2026-11-24T21:48:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apt-webworm-customizes-softether-vpn-to-evade-dete",
+      "article-7db99672",
+      "7db99672",
+      "apt-webworm-customizes-softether-vpn-to-evade-dete-331ab6",
+      "apt-webworm-customizes-softether-vpn-to-evade-detection"
+    ]
+  },
+  {
     "slug": "rackspace-spot-platform-shut-down-after-breach-a36ba24c",
     "title": "Rackspace Spot Platform Shut Down After Breach",
     "summary": "A security breach in Rackspace Spot cloud platform exposed customer Kubernetes clusters and secrets to attackers. The incident allowed unauthorized access to sensitive configuration data, compromising cluster integrity and potentially exposing customer workloads. Rackspace has shut down the platform and urged customers to migrate services and download data as soon as possible by December 8.",
@@ -297,6 +389,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-early-stable-update-released-for-desktop-03c1f428",
+    "title": "Chrome Early Stable Update Released for Desktop",
+    "summary": "Google Chrome released an early stable update (version 159.0.8154.33/34) for Windows and Mac desktop clients. The update includes minor bug fixes and performance improvements, with no publicly disclosed security flaws or CVEs. Users should install the update via the Chrome browser's auto-update mechanism or manually download the installer to maintain up-to-date security posture.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop_027920431.html",
+    "publishedAt": "2026-11-24T18:36:59.123Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-early-stable-update-released-for-desktop",
+      "article-03c1f428",
+      "03c1f428",
+      "chrome-early-stable-update-released-for-desktop-223215"
+    ]
+  },
+  {
     "slug": "wiz-shares-fedramp-vdr-ver-insights-39a59a07",
     "title": "Wiz Shares FedRAMP VDR & VER Insights",
     "summary": "Wiz Research hosted a FedRAMP VDR & VER event on November 12, gathering government officials, industry experts, and its own FedRAMP team to discuss modernizing vulnerability management. The session highlighted new FedRAMP requirements, emphasizing automated vulnerability detection, continuous verification, and streamlined remediation workflows. Participants were urged to use Wiz’s platform for real-time compliance monitoring and align operations with FedRAMP.",
@@ -312,6 +422,25 @@ export const news: NewsBrief[] = [
       "article-39a59a07",
       "39a59a07",
       "wiz-shares-fedramp-vdr-ver-insights-4c453c"
+    ]
+  },
+  {
+    "slug": "chrome-beta-updates-desktop-clients-to-159-0-8154-5a9d70cc",
+    "title": "Chrome Beta Updates Desktop Clients to 159.0.8154.33",
+    "summary": "Google Chrome updated its Beta channel to version 159.0.8154.33 for Windows, Mac, and Linux desktop clients. The release contains minor bug fixes and performance enhancements, with no disclosed security vulnerabilities or CVEs. Beta users should enable auto-update or manually install the new build to stay current with the latest features.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_0422009936.html",
+    "publishedAt": "2026-11-24T18:28:33.237Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-beta-updates-desktop-clients-to-159-0-8154",
+      "article-5a9d70cc",
+      "5a9d70cc",
+      "chrome-beta-updates-desktop-clients-to-159-0-8154-ae14b1",
+      "chrome-beta-updates-desktop-clients-to-159-0-8154-33"
     ]
   },
   {
@@ -444,6 +573,25 @@ export const news: NewsBrief[] = [
       "article-bc33027c",
       "bc33027c",
       "red-hat-issues-critical-fence-agents-update-2ee1d2"
+    ]
+  },
+  {
+    "slug": "bots-detect-aws-keys-within-eight-seconds-of-expos-f38dcebc",
+    "title": "Bots Detect AWS Keys Within Eight Seconds of Exposure",
+    "summary": "A cloud security bot can discover exposed AWS access keys within eight seconds of publication. The rapid detection capability enables attackers to quickly harvest credentials, potentially granting unauthorized access to cloud resources before owners revoke the key. Security teams should enforce strict key rotation, enable automated key monitoring, and immediately revoke any accidentally exposed credentials.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/a-bot-tested-an-aws-key-within-8-seconds-of-exposure",
+    "publishedAt": "2026-11-24T17:08:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bots-detect-aws-keys-within-eight-seconds-of-expos",
+      "article-f38dcebc",
+      "f38dcebc",
+      "bots-detect-aws-keys-within-eight-seconds-of-expos-1bc796",
+      "bots-detect-aws-keys-within-eight-seconds-of-exposure"
     ]
   },
   {
@@ -651,6 +799,43 @@ export const news: NewsBrief[] = [
       "article-0ba2bd0e",
       "0ba2bd0e",
       "red-hat-issues-kernel-rt-update-for-rhel-9-2-sap-2ee1d2"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102948-moderate-cockpit-machines-securit-7c7424ba",
+    "title": "RHSA-2026:102948: Moderate: cockpit-machines security update",
+    "summary": "An update for cockpit-machines is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102948",
+    "publishedAt": "2026-11-24T15:45:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102948-moderate-cockpit-machines-securit",
+      "article-7c7424ba",
+      "7c7424ba",
+      "rhsa-2026-102948-moderate-cockpit-machines-securit-2ee178",
+      "rhsa-2026-102948-moderate-cockpit-machines-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102941-important-fltk-security-update-39efe707",
+    "title": "RHSA-2026:102941: Important: fltk security update",
+    "summary": "An update for fltk is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102941",
+    "publishedAt": "2026-11-24T15:43:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102941-important-fltk-security-update",
+      "article-39efe707",
+      "39efe707",
+      "rhsa-2026-102941-important-fltk-security-update-2ee178"
     ]
   },
   {
@@ -1510,6 +1695,28 @@ export const news: NewsBrief[] = [
       "9d93c4f8",
       "google-researcher-exposes-net-bit-flip-code-integr-54b258",
       "google-researcher-exposes-net-bit-flip-code-integrity-bypass"
+    ]
+  },
+  {
+    "slug": "cisa-adds-three-vulnerabilities-to-kev-catalog-d6d46ce7",
+    "title": "CISA Adds Three Vulnerabilities to KEV Catalog",
+    "summary": "CISA added three vulnerabilities-CVE-2026-131914, CVE-2026-132165, and CVE-2026-132224-to its Known Exploited Vulnerabilities catalog after confirming active exploitation. The update signals that these flaws, including Idunno AntiCsrf deserialization, Drupal Core RCE, and Optimizely state data control, pose significant risks to federal agencies. Federal agencies must prioritize rapid remediation per Binding Operational Directive 26-04, applying vendor patches or workarounds to mitigate high-risk vulnerabilities.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-24T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-131914",
+      "CVE-2026-132165",
+      "CVE-2026-132224"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-three-vulnerabilities-to-kev-catalog",
+      "article-d6d46ce7",
+      "d6d46ce7",
+      "cisa-adds-three-vulnerabilities-to-kev-catalog-2a7c77"
     ]
   },
   {
@@ -2743,6 +2950,89 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "oracle-png-parsing-overflow-enables-remote-code-ex-48b4eab1",
+    "title": "Oracle PNG Parsing Overflow Enables Remote Code Execution",
+    "summary": "A PNG file parsing integer overflow in Oracle Outside In Technology lets remote attackers execute arbitrary code, requiring user interaction to trigger. The flaw, CVE-2026-91483, has a CVSS score of 7.8 and is publicly documented, indicating a high-severity remote code execution risk. Oracle released a patch; security teams should apply it immediately or use the documented workaround to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1154/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-91483"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-png-parsing-overflow-enables-remote-code-ex",
+      "article-48b4eab1",
+      "48b4eab1",
+      "oracle-png-parsing-overflow-enables-remote-code-ex-77f3bf",
+      "oracle-png-parsing-overflow-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "oracle-bmp-parsing-out-of-bounds-write-exploitable-d3097312",
+    "title": "Oracle BMP Parsing Out-of-Bounds Write Exploitable",
+    "summary": "A BMP file parsing out-of-bounds write in Oracle Outside In Technology lets remote attackers execute arbitrary code, requiring library interaction. CVE-2026-91459 carries a CVSS score of 7.8, is publicly documented, and poses a high-severity remote code execution risk. Oracle released a patch; teams should apply it promptly or use the documented workaround to stop exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1153/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-91459"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-bmp-parsing-out-of-bounds-write-exploitable",
+      "article-d3097312",
+      "d3097312",
+      "oracle-bmp-parsing-out-of-bounds-write-exploitable-77f3bf"
+    ]
+  },
+  {
+    "slug": "oracle-tiff-parsing-out-of-bounds-write-vulnerabil-f33f3af4",
+    "title": "Oracle TIFF Parsing Out-of-Bounds Write Vulnerability",
+    "summary": "A TIFF file parsing out-of-bounds write in Oracle Outside In Technology allows remote attackers to execute arbitrary code, requiring interaction with the library. CVE-2026-91460 has a CVSS score of 7.8, is publicly documented, and represents a high-severity remote code execution threat. Oracle issued a patch; teams should apply it immediately or use the documented workaround to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1152/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-91460"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-tiff-parsing-out-of-bounds-write-vulnerabil",
+      "article-f33f3af4",
+      "f33f3af4",
+      "oracle-tiff-parsing-out-of-bounds-write-vulnerabil-77f3bf",
+      "oracle-tiff-parsing-out-of-bounds-write-vulnerability"
+    ]
+  },
+  {
+    "slug": "zdi-26-1151-oracle-outside-in-technology-bmp-file-2c0a53e4",
+    "title": "ZDI-26-1151: Oracle Outside In Technology BMP File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Oracle Outside In Technology. Interaction with this library is required to exploit this vulnerability but attack vectors may vary depending on the implementation. The following CVEs are assigned: CVE-2026-91457.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1151/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-91457"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1151-oracle-outside-in-technology-bmp-file",
+      "article-2c0a53e4",
+      "2c0a53e4",
+      "zdi-26-1151-oracle-outside-in-technology-bmp-file-77f3bf",
+      "zdi-26-1151-oracle-outside-in-technology-bmp-file-parsing-ou"
     ]
   },
   {
@@ -9053,306 +9343,6 @@ export const news: NewsBrief[] = [
       "926a15d3",
       "nsa-resumes-operations-after-internal-network-disr-59abbd",
       "nsa-resumes-operations-after-internal-network-disruptions"
-    ]
-  },
-  {
-    "slug": "whatsapp-patches-cve-2026-23871-scam-vulnerability-c7f51406",
-    "title": "WhatsApp Patches CVE-2026-23871 Scam Vulnerability",
-    "summary": "WhatsApp patched CVE-2026-23871, a flaw in Android and Business apps that allowed attackers to embed deceptive URLs in chat replies, potentially enabling scam messages. The vulnerability stemmed from incomplete validation of external ad-reply URLs before version 2.26.17.4. Users must update to the latest release to eliminate the risk for all users.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
-    "publishedAt": "2026-11-20T16:01:02.000Z",
-    "cves": [
-      "CVE-2026-23871"
-    ],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html"
-      }
-    ],
-    "aliases": [
-      "whatsapp-patches-cve-2026-23871-scam-vulnerability",
-      "article-c7f51406",
-      "c7f51406",
-      "whatsapp-patches-cve-2026-23871-scam-vulnerability-2655f8"
-    ]
-  },
-  {
-    "slug": "cisco-products-exposed-by-critical-nginx-rce-flaws-b0d351eb",
-    "title": "Cisco Products Exposed by Critical nginx RCE Flaws",
-    "summary": "Cisco products using nginx 1.9.5-1.31.8 are vulnerable to remote code execution through critical flaws. The flaws, identified as CVE-2026-113425, CVE-2026-121810, CVE-2026-123007, CVE-2026-123633, and CVE-2026-123634, exploit parsing errors in nginx modules and are publicly documented with PoC code. Apply nginx 1.31.9 or 1.30.7 patches immediately and update affected Cisco software to the latest releases.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+nginx+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1",
-    "publishedAt": "2026-11-20T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-113425",
-      "CVE-2026-121810",
-      "CVE-2026-123007",
-      "CVE-2026-123633",
-      "CVE-2026-123634"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-products-exposed-by-critical-nginx-rce-flaws",
-      "article-b0d351eb",
-      "b0d351eb",
-      "cisco-products-exposed-by-critical-nginx-rce-flaws-b84874"
-    ]
-  },
-  {
-    "slug": "chase-breach-exposes-customer-data-via-third-party-c58378e7",
-    "title": "Chase Breach Exposes Customer Data via Third-Party",
-    "summary": "J.P. Morgan Chase disclosed a data breach originating from a cyberattack on a third-party service provider, exposing customer personal and marketing data. The incident potentially compromised sensitive information for Chase, Visa, and Mastercard customers, raising concerns over third-party security controls. Chase recommends affected customers monitor accounts, change credentials, and report suspicious activity while the firm investigates the breach.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
-    "publishedAt": "2026-11-20T15:58:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chase-breach-exposes-customer-data-via-third-party",
-      "article-c58378e7",
-      "c58378e7",
-      "chase-breach-exposes-customer-data-via-third-party-3052a2"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100752-critical-openjdk-25-0-5-1-securit-81864ea2",
-    "title": "RHSA-2026:100752: Critical: OpenJDK 25.0.5.1 Security Update for Windows Builds",
-    "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100752",
-    "publishedAt": "2026-11-20T15:50:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100752-critical-openjdk-25-0-5-1-securit",
-      "article-81864ea2",
-      "81864ea2",
-      "rhsa-2026-100752-critical-openjdk-25-0-5-1-securit-2ee088",
-      "rhsa-2026-100752-critical-openjdk-25-0-5-1-security-update-f"
-    ]
-  },
-  {
-    "slug": "moxa-firmware-buffer-overflow-vulnerabilities-16be413b",
-    "title": "Moxa Firmware Buffer Overflow Vulnerabilities",
-    "summary": "Moxa disclosed buffer overflow flaws in ioLogik E1200, EDS-E, IKS, and other firmware series, exploitable via Ethernet Remote I/Os and switches. CVE-2026-129971 and CVE-2026-129972 target remote I/Os, while CVE-2026-130493 and CVE-2026-130494 affect switch firmware, enabling potential code execution. Users should review the advisory and apply firmware updates promptly to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/control-systems-moxa-security-advisory-av26-1187",
-    "publishedAt": "2026-11-20T15:39:31.000Z",
-    "cves": [
-      "CVE-2026-129971",
-      "CVE-2026-129972",
-      "CVE-2026-130493",
-      "CVE-2026-130494"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "moxa-firmware-buffer-overflow-vulnerabilities",
-      "article-16be413b",
-      "16be413b",
-      "moxa-firmware-buffer-overflow-vulnerabilities-474308"
-    ]
-  },
-  {
-    "slug": "ubuntu-kernel-fips-vulnerabilities-span-multiple-s-dffaa0a3",
-    "title": "Ubuntu Kernel FIPS Vulnerabilities Span Multiple Subsystems",
-    "summary": "Ubuntu Linux kernel FIPS vulnerabilities affect numerous subsystems, including USB Gadget drivers, memory management, and various architecture drivers. The flaws could allow an attacker to compromise the system, but no active exploitation or public PoC has been reported. Ubuntu recommends applying the latest kernel updates that include the fixes for these subsystems to maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9183-1",
-    "publishedAt": "2026-11-20T15:34:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-kernel-fips-vulnerabilities-span-multiple-s",
-      "article-dffaa0a3",
-      "dffaa0a3",
-      "ubuntu-kernel-fips-vulnerabilities-span-multiple-s-7e77f5",
-      "ubuntu-kernel-fips-vulnerabilities-span-multiple-subsystems"
-    ]
-  },
-  {
-    "slug": "ubuntu-kernel-vulnerabilities-cover-extensive-subs-14226752",
-    "title": "Ubuntu Kernel Vulnerabilities Cover Extensive Subsystems",
-    "summary": "Ubuntu Linux kernel vulnerabilities affect a broad range of subsystems, including device drivers, cryptographic APIs, and hardware interfaces. These flaws could enable an attacker to compromise the system, though no active exploitation or public PoC has been disclosed. Applying the latest kernel updates that incorporate the fixes for these subsystems is recommended to preserve system security.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9173-2",
-    "publishedAt": "2026-11-20T15:33:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-kernel-vulnerabilities-cover-extensive-subs",
-      "article-14226752",
-      "14226752",
-      "ubuntu-kernel-vulnerabilities-cover-extensive-subs-7e786a",
-      "ubuntu-kernel-vulnerabilities-cover-extensive-subsystems"
-    ]
-  },
-  {
-    "slug": "linux-kernel-vulnerabilities-patched-in-usn-9168-3-d51a4baa",
-    "title": "Linux kernel vulnerabilities patched in USN-9168-3",
-    "summary": "Linux kernel subsystems such as ARM64, x86, Bluetooth, and GPU drivers have flaws that could let attackers compromise systems via code execution. The patch fixes memory corruption and privilege escalation bugs across 30+ subsystems, with no public exploit confirmed and CVE IDs omitted. Ubuntu released update 9168-3; users should apply the kernel patch immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9168-3",
-    "publishedAt": "2026-11-20T15:33:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-vulnerabilities-patched-in-usn-9168-3",
-      "article-d51a4baa",
-      "d51a4baa",
-      "linux-kernel-vulnerabilities-patched-in-usn-9168-3-7e78cb"
-    ]
-  },
-  {
-    "slug": "linux-kernel-vulnerabilities-patched-in-usn-9167-2-66d65512",
-    "title": "Linux kernel vulnerabilities patched in USN-9167-2",
-    "summary": "Linux kernel subsystems including ARM64, x86, Bluetooth, and I2C drivers have flaws that could let attackers compromise systems via code execution. The patch addresses memory corruption and privilege escalation bugs across 30+ subsystems, with no public exploit confirmed and CVE IDs omitted. Ubuntu released update 9167-2; users should apply the kernel patch immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9167-2",
-    "publishedAt": "2026-11-20T15:33:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-vulnerabilities-patched-in-usn-9167-2",
-      "article-66d65512",
-      "66d65512",
-      "linux-kernel-vulnerabilities-patched-in-usn-9167-2-7e78cf"
-    ]
-  },
-  {
-    "slug": "ubuntu-patches-multiple-security-flaws-in-linux-ke-87218dc3",
-    "title": "Ubuntu Patches Multiple Security Flaws in Linux Kernel",
-    "summary": "Ubuntu released security update USN-9169-2 to address multiple security vulnerabilities discovered across numerous Linux kernel subsystems. The underlying flaws affect critical subsystems including GPU drivers, network drivers, x86 architecture, and file systems, creating potential risks of system compromise. System administrators are advised to apply the updated Linux kernel packages distributed by Ubuntu to mitigate these security issues.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9169-2",
-    "publishedAt": "2026-11-20T15:33:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-patches-multiple-security-flaws-in-linux-ke",
-      "article-87218dc3",
-      "87218dc3",
-      "ubuntu-patches-multiple-security-flaws-in-linux-ke-7e78c8",
-      "ubuntu-patches-multiple-security-flaws-in-linux-kernel"
-    ]
-  },
-  {
-    "slug": "kernel-vulnerabilities-in-oracle-linux-expose-syst-2ac58231",
-    "title": "Kernel Vulnerabilities in Oracle Linux Expose Systems",
-    "summary": "Oracle Linux kernel updates USN-9170-3 address multiple flaws that could allow attackers to compromise affected systems. The vulnerabilities, identified as CVE-2026-64564, CVE-2026-98432, and CVE-2026-99999, affect IPv4 networking, Ethernet bridge, Netfilter, SCTP, and XFRM subsystems, potentially enabling privilege escalation or denial of service. Administrators should apply kernel patches, verify subsystem configurations, and monitor for anomalous network activity to mitigate exploitation risks.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9170-3",
-    "publishedAt": "2026-11-20T15:33:20.000Z",
-    "cves": [
-      "CVE-2026-64564",
-      "CVE-2026-98432",
-      "CVE-2026-99999"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "kernel-vulnerabilities-in-oracle-linux-expose-syst",
-      "article-2ac58231",
-      "2ac58231",
-      "kernel-vulnerabilities-in-oracle-linux-expose-syst-7e7875",
-      "kernel-vulnerabilities-in-oracle-linux-expose-systems"
-    ]
-  },
-  {
-    "slug": "usn-9176-2-ruby-vulnerabilities-b2c0aa44",
-    "title": "USN-9176-2: Ruby vulnerabilities",
-    "summary": "USN-9176-1 fixed vulnerabilities in Ruby. This update provides the corresponding updates for Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. An attacker could possibly use this issue to cause a denial of service or execute arbitrary code. (GHSA-34m4-m9fh-gqp5) Owais Lone discovered that Ruby incorrectly handled compiling certain large regular expressions.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9176-2",
-    "publishedAt": "2026-11-20T15:22:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9176-2-ruby-vulnerabilities",
-      "article-b2c0aa44",
-      "b2c0aa44",
-      "usn-9176-2-ruby-vulnerabilities-7e785f"
-    ]
-  },
-  {
-    "slug": "spreadsheets-hide-password-risks-central-managemen-993785c5",
-    "title": "Spreadsheets Hide Password Risks, Central Management Needed",
-    "summary": "Storing corporate passwords in spreadsheets exposes IT administrators to weak, reused, or compromised credentials, as spreadsheets lack audit controls. This reliance on unapproved storage bypasses centralized credential management, increasing credential reuse and data exposure risk. Adopting a centralized password vault, such as NordPass, provides visibility, risk assessment, and secure sharing to mitigate spreadsheet-based credential risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
-    "publishedAt": "2026-11-20T15:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "spreadsheets-hide-password-risks-central-managemen",
-      "article-993785c5",
-      "993785c5",
-      "spreadsheets-hide-password-risks-central-managemen-4bcc24",
-      "spreadsheets-hide-password-risks-central-management-needed"
-    ]
-  },
-  {
-    "slug": "norwegian-energy-firm-attacks-supercomputer-hack-e-341882db",
-    "title": "Norwegian Energy Firm Attacks, Supercomputer Hack, Eclipse Exploit",
-    "summary": "Norwegian energy firm suffered cyberattacks, a supercomputer was compromised, and a new Nightmare Eclipse exploit emerged. The EU added NoName057(16) to its sanctions list, malware targeted CACs on personal PCs, and Gemini agents focused on Epoch AI. Security teams should monitor indicators, apply patches, and review access controls to mitigate related threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/in-other-news-norwegian-energy-firm-cyberattacks-supercomputer-hack-new-nightmare-eclipse-exploit/",
-    "publishedAt": "2026-11-20T14:56:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "norwegian-energy-firm-attacks-supercomputer-hack-e",
-      "article-341882db",
-      "341882db",
-      "norwegian-energy-firm-attacks-supercomputer-hack-e-6d15cc",
-      "norwegian-energy-firm-attacks-supercomputer-hack-eclipse-exp"
-    ]
-  },
-  {
-    "slug": "white-house-replaces-cyber-director-with-acting-cz-5cc759b5",
-    "title": "White House Replaces Cyber Director with Acting Czar",
-    "summary": "Sean Cairncross has left the White House cyber director role, with Kirsten Davies, Pentagon CIO, stepping in as acting cyber czar. The change signals a realignment of U.S. cyber policy oversight, potentially affecting coordination among the White House, Pentagon, and intelligence agencies. Security teams should track the transition for shifts in cyber strategy, reporting protocols, and continuity gaps.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/sean-cairncross-out-as-national-cyber-director",
-    "publishedAt": "2026-11-20T14:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "white-house-replaces-cyber-director-with-acting-cz",
-      "article-5cc759b5",
-      "5cc759b5",
-      "white-house-replaces-cyber-director-with-acting-cz-535edc",
-      "white-house-replaces-cyber-director-with-acting-czar"
     ]
   }
 ];

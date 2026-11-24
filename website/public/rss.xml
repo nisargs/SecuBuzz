@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 21:46:07 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 22:45:01 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CIA Unclassified System Breached</title>
+      <link>https://secubuzz.com/news/cia-unclassified-system-breached-47717a35</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cia-unclassified-system-breached-47717a35</guid>
+      <description><![CDATA[A cyberattack breached an unclassified CIA system, though the specific data compromised and the attacker remain unidentified. The breach indicates potential exploitation of internal network defenses, but no evidence of credential theft or data exfiltration has been disclosed. Security teams should review CIA network hardening measures and monitor for anomalous activity following the incident.]]></description>
+      <pubDate>Tue, 24 Nov 2026 22:41:58 GMT</pubDate>
+      <source url="https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Releases librabbitmq Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-librabbitmq-security-update-4d11bcbe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-librabbitmq-security-update-4d11bcbe</guid>
+      <description><![CDATA[Red Hat released a security update for the librabbitmq library on RHEL 9, fixing vulnerabilities that could enable remote code execution. The flaws involve improper input validation in AMQP handling, with CVSS scores of 7.5-8.3, and are documented but not yet exploited. Apply the latest librabbitmq package immediately to ensure the patched version is in use.]]></description>
+      <pubDate>Tue, 24 Nov 2026 22:09:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103286">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical cjose Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-cjose-update-7d192425</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-cjose-update-7d192425</guid>
+      <description><![CDATA[Red Hat issued a critical security update for the cjose library on RHEL 9, addressing flaws that could allow remote code execution. The vulnerabilities arise from improper handling of JOSE tokens, with CVSS scores up to 9.1, and are publicly documented but not yet exploited. Red Hat recommends installing the latest cjose package immediately to secure affected systems.]]></description>
+      <pubDate>Tue, 24 Nov 2026 22:09:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103380">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Satellite Ground Infrastructure Faces Cyber Threats</title>
+      <link>https://secubuzz.com/news/satellite-ground-infrastructure-faces-cyber-threat-42753a39</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/satellite-ground-infrastructure-faces-cyber-threat-42753a39</guid>
+      <description><![CDATA[Satellite operators face growing cybersecurity risks from weaknesses in ground-based infrastructure that supports space services. These vulnerabilities, including outdated firmware and unsecured communication links, could enable attackers to disrupt satellite operations or intercept data. Operators should update firmware, enforce strict access controls, and conduct regular penetration testing to mitigate emerging threats.]]></description>
+      <pubDate>Tue, 24 Nov 2026 22:05:34 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/satellites-ground-level-cybersecurity-problem">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>APT Webworm Customizes SoftEther VPN to Evade Detection</title>
+      <link>https://secubuzz.com/news/apt-webworm-customizes-softether-vpn-to-evade-dete-7db99672</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apt-webworm-customizes-softether-vpn-to-evade-dete-7db99672</guid>
+      <description><![CDATA[Webworm, a China-aligned espionage group, rebuilt SoftEther VPN from source, removing default artifacts that would normally alert defenders. By stripping telemetry and logging hooks, the modified VPN hides its presence, enabling stealthy lateral movement inside corporate networks without triggering security monitoring. Security teams should monitor anomalous SoftEther traffic, enforce strict VPN policies, and apply hardening updates that re-enable logging.]]></description>
+      <pubDate>Tue, 24 Nov 2026 21:48:06 GMT</pubDate>
+      <source url="https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn">Dark Reading</source>
+      <category>Nation State</category>
+    </item>
     <item>
       <title>Rackspace Spot Platform Shut Down After Breach</title>
       <link>https://secubuzz.com/news/rackspace-spot-platform-shut-down-after-breach-a36ba24c</link>
@@ -143,12 +188,30 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Chrome Early Stable Update Released for Desktop</title>
+      <link>https://secubuzz.com/news/chrome-early-stable-update-released-for-desktop-03c1f428</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-early-stable-update-released-for-desktop-03c1f428</guid>
+      <description><![CDATA[Google Chrome released an early stable update (version 159.0.8154.33/34) for Windows and Mac desktop clients. The update includes minor bug fixes and performance improvements, with no publicly disclosed security flaws or CVEs. Users should install the update via the Chrome browser's auto-update mechanism or manually download the installer to maintain up-to-date security posture.]]></description>
+      <pubDate>Tue, 24 Nov 2026 18:36:59 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop_027920431.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Wiz Shares FedRAMP VDR &amp; VER Insights</title>
       <link>https://secubuzz.com/news/wiz-shares-fedramp-vdr-ver-insights-39a59a07</link>
       <guid isPermaLink="true">https://secubuzz.com/news/wiz-shares-fedramp-vdr-ver-insights-39a59a07</guid>
       <description><![CDATA[Wiz Research hosted a FedRAMP VDR & VER event on November 12, gathering government officials, industry experts, and its own FedRAMP team to discuss modernizing vulnerability management. The session highlighted new FedRAMP requirements, emphasizing automated vulnerability detection, continuous verification, and streamlined remediation workflows. Participants were urged to use Wiz’s platform for real-time compliance monitoring and align operations with FedRAMP.]]></description>
       <pubDate>Tue, 24 Nov 2026 18:36:13 GMT</pubDate>
       <source url="https://www.wiz.io/blog/fedramp-vdr-ver-event-key-takeaways">Wiz Research</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Chrome Beta Updates Desktop Clients to 159.0.8154.33</title>
+      <link>https://secubuzz.com/news/chrome-beta-updates-desktop-clients-to-159-0-8154-5a9d70cc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-beta-updates-desktop-clients-to-159-0-8154-5a9d70cc</guid>
+      <description><![CDATA[Google Chrome updated its Beta channel to version 159.0.8154.33 for Windows, Mac, and Linux desktop clients. The release contains minor bug fixes and performance enhancements, with no disclosed security vulnerabilities or CVEs. Beta users should enable auto-update or manually install the new build to stay current with the latest features.]]></description>
+      <pubDate>Tue, 24 Nov 2026 18:28:33 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_0422009936.html">Google Chrome Releases</source>
       <category>General</category>
     </item>
     <item>
@@ -213,6 +276,15 @@
       <pubDate>Tue, 24 Nov 2026 17:16:27 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103211">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Bots Detect AWS Keys Within Eight Seconds of Exposure</title>
+      <link>https://secubuzz.com/news/bots-detect-aws-keys-within-eight-seconds-of-expos-f38dcebc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bots-detect-aws-keys-within-eight-seconds-of-expos-f38dcebc</guid>
+      <description><![CDATA[A cloud security bot can discover exposed AWS access keys within eight seconds of publication. The rapid detection capability enables attackers to quickly harvest credentials, potentially granting unauthorized access to cloud resources before owners revoke the key. Security teams should enforce strict key rotation, enable automated key monitoring, and immediately revoke any accidentally exposed credentials.]]></description>
+      <pubDate>Tue, 24 Nov 2026 17:08:51 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/11/a-bot-tested-an-aws-key-within-8-seconds-of-exposure">Malwarebytes Labs</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>RHSA-2026:102942: Important: mariadb:11.8 security update</title>
@@ -314,6 +386,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:102948: Moderate: cockpit-machines security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102948-moderate-cockpit-machines-securit-7c7424ba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102948-moderate-cockpit-machines-securit-7c7424ba</guid>
+      <description><![CDATA[An update for cockpit-machines is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 24 Nov 2026 15:45:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102948">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102941: Important: fltk security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102941-important-fltk-security-update-39efe707</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102941-important-fltk-security-update-39efe707</guid>
+      <description><![CDATA[An update for fltk is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Tue, 24 Nov 2026 15:43:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102941">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>McDonald’s Japan Customer Data Breach Confirmed</title>
       <link>https://secubuzz.com/news/mcdonald-s-japan-customer-data-breach-confirmed-c2ac64ab</link>
       <guid isPermaLink="true">https://secubuzz.com/news/mcdonald-s-japan-customer-data-breach-confirmed-c2ac64ab</guid>
@@ -365,96 +455,6 @@
       <description><![CDATA[Google issued a security advisory for a vulnerability affecting Chrome versions prior to 158.0.8127.88 on Windows/Mac and 158.0.8127.88 on Linux. The flaw could allow attackers to compromise user sessions or execute code, though no exploitation reports are cited. Users and administrators should update to the latest Chrome release or apply the vendor’s patch as soon as it becomes available.]]></description>
       <pubDate>Tue, 24 Nov 2026 14:41:05 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1201">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudera Announces Sovereign AI Solution for Enterprise Environments</title>
-      <link>https://secubuzz.com/news/cloudera-announces-sovereign-ai-solution-for-enter-3b34ea0e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudera-announces-sovereign-ai-solution-for-enter-3b34ea0e</guid>
-      <description><![CDATA[Cloudera launched Cloudera for Digital Sovereignty to provide enterprise technical and operational control across cloud, data, and AI lifecycles. The architecture combines Cloudera Anywhere Cloud with open-weight models to support deployments across sovereign clouds, private data centers, and air-gapped environments. Security teams can leverage open standards to maintain governed data pipelines while mitigating vendor lock-in risks.]]></description>
-      <pubDate>Tue, 24 Nov 2026 14:33:35 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/cloudera-digital-sovereignty/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>n8n Vulnerabilities Affect Multiple Versions</title>
-      <link>https://secubuzz.com/news/n8n-vulnerabilities-affect-multiple-versions-cb89839d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n8n-vulnerabilities-affect-multiple-versions-cb89839d</guid>
-      <description><![CDATA[n8n disclosed flaws in versions prior to 3.4.0, 2.50.0, 2.49.5, 2.48.8, 1.123.101, 2.49.4, 2.48.7, and 1.123.100. The flaws allow local privilege escalation or arbitrary code execution, with CVSS scores 6.0-8.0, but no active exploitation observed. Apply the latest patches or upgrade to the minimum recommended versions to mitigate the risks.]]></description>
-      <pubDate>Tue, 24 Nov 2026 14:32:25 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1200">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Astelia Introduces Autonomous Network Mitigation</title>
-      <link>https://secubuzz.com/news/astelia-introduces-autonomous-network-mitigation-a68a5da0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/astelia-introduces-autonomous-network-mitigation-a68a5da0</guid>
-      <description><![CDATA[Astelia released autonomous network mitigation that blocks attack paths to reachable vulnerabilities before patches are applied. The solution uses Frontier AI models to cut exploit time to near zero, covering the 1% of vulnerabilities attackers can reach without patching. Deploying the mitigation workflow requires six steps and a single approval branch, enabling organizations to prevent exploitation while awaiting vendor fixes.]]></description>
-      <pubDate>Tue, 24 Nov 2026 14:24:11 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/24/astelia-autonomous-network-mitigation/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Check Point Security Management Servers Targeted in Global Attacks</title>
-      <link>https://secubuzz.com/news/check-point-security-management-servers-targeted-i-e5c91a47</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/check-point-security-management-servers-targeted-i-e5c91a47</guid>
-      <description><![CDATA[Threat actors compromised Check Point Security Management Servers across multiple international organizations using an AI-assisted campaign. Attackers initiated the intrusions from 99 distinct IP addresses to target enterprise networks across various global industry sectors. Network administrators must inspect management server logs for indicators of compromise associated with the identified infrastructure and isolate impacted management nodes.]]></description>
-      <pubDate>Tue, 24 Nov 2026 14:21:56 GMT</pubDate>
-      <source url="https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102937: Important: fltk security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102937-important-fltk-security-update-2ee1c1c9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102937-important-fltk-security-update-2ee1c1c9</guid>
-      <description><![CDATA[An update for fltk is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 14:16:57 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102937">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102943: Moderate: cockpit-machines security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102943-moderate-cockpit-machines-securit-746d88f6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102943-moderate-cockpit-machines-securit-746d88f6</guid>
-      <description><![CDATA[An update for cockpit-machines is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 14:14:32 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102943">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Volant Manticore: Flying Under the Radar</title>
-      <link>https://secubuzz.com/news/volant-manticore-flying-under-the-radar-1ed67c1d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/volant-manticore-flying-under-the-radar-1ed67c1d</guid>
-      <description><![CDATA[Key Points Introduction Check Point Research is tracking a previously undocumented Iran-nexus threat group who we named Volant Manticore. What started in July 2026 as a single backdoor delivered to a Cyprus-based airline through a fake CV has since expanded into a broader cluster of activity that we traced back to September 2025.]]></description>
-      <pubDate>Tue, 24 Nov 2026 14:13:55 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/volant-manticore-flying-under-the-radar/">Check Point Research</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Critical VMware ESX Flaws Let Remote Attackers Execute Malicious Code on Virtualization Hosts</title>
-      <link>https://secubuzz.com/news/critical-vmware-esx-flaws-let-remote-attackers-exe-d6ab6346</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-vmware-esx-flaws-let-remote-attackers-exe-d6ab6346</guid>
-      <description><![CDATA[Broadcom has disclosed 23 VMware vulnerabilities, including two critical flaws that could let attackers run code directly on ESX hosts and a third that could let them access vCenter without signing in. The Broadcom security advisory, VMSA-2026-0011, was published on November 24. It says the flaws were privately reported and does not report active exploitation.]]></description>
-      <pubDate>Tue, 24 Nov 2026 14:11:04 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/vmware-esx-host-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>McDonald&apos;s Japan Exposes App User Location Data</title>
-      <link>https://secubuzz.com/news/mcdonald-s-japan-exposes-app-user-location-data-747e255b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mcdonald-s-japan-exposes-app-user-location-data-747e255b</guid>
-      <description><![CDATA[A data breach at McDonald's Japan exposed a database of official smartphone app users, revealing their location information. Attackers accessed the database through an undisclosed vulnerability, compromising personal data for thousands of customers without evidence of credential theft. McDonald's Japan has notified affected users and is working with security teams to investigate the breach and strengthen database access controls.]]></description>
-      <pubDate>Tue, 24 Nov 2026 14:09:37 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102938: Important: fltk security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102938-important-fltk-security-update-a7f02297</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102938-important-fltk-security-update-a7f02297</guid>
-      <description><![CDATA[An update for fltk is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 13:52:06 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102938">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
