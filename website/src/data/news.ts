@@ -29,6 +29,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cybersecurity-jobs-open-now-november-24-2026-f8135851",
+    "title": "Cybersecurity Jobs Open Now, November 24, 2026",
+    "summary": "A new Applied Cyber, Detections role is listed by Help Net Security, targeting remote positions in the United States. Candidates will support detection operations, develop and refine detection logic, and automate alert triage across web domains, social media, and other digital channels. The posting encourages collaboration with engineering and product teams to enhance detection capabilities and address evolving cyber threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/cybersecurity-jobs-available-right-now-november-24-2026/",
+    "publishedAt": "2026-11-23T23:30:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cybersecurity-jobs-open-now-november-24-2026",
+      "article-f8135851",
+      "f8135851",
+      "cybersecurity-jobs-open-now-november-24-2026-60bd08"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102695-critical-php-8-2-security-update-fe9d24bb",
+    "title": "RHSA-2026:102695: Critical: php:8.2 security update",
+    "summary": "An update for the php:8.2 module is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102695",
+    "publishedAt": "2026-11-23T23:28:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102695-critical-php-8-2-security-update",
+      "article-fe9d24bb",
+      "fe9d24bb",
+      "rhsa-2026-102695-critical-php-8-2-security-update-2ee16e"
+    ]
+  },
+  {
     "slug": "red-hat-releases-kernel-update-for-rhel-9-2-sap-0a725d3f",
     "title": "Red Hat Releases Kernel Update for RHEL 9.2 SAP",
     "summary": "Red Hat issued a kernel update for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple security bugs. The advisory rates the update as Important, with CVSS base scores linked to individual CVE references, indicating high risk if unpatched. Security teams should apply the update promptly, ensuring kernel version compliance and verifying SAP application compatibility after installation.",
@@ -62,6 +98,24 @@ export const news: NewsBrief[] = [
       "article-f1b40ee0",
       "f1b40ee0",
       "rhsa-2026-102684-critical-php-8-3-security-update-2ee16e"
+    ]
+  },
+  {
+    "slug": "chrome-158-released-for-android-b09b0dcc",
+    "title": "Chrome 158 Released for Android",
+    "summary": "Google has released Chrome 158 (158.0.8127.92) for Android, which will appear on Google Play within days. The update focuses on stability and performance enhancements, while incorporating the same security fixes present in the corresponding desktop releases for Windows, Mac, and Linux. Users should install the new package via Google Play; no additional work-around is required.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0411169060.html",
+    "publishedAt": "2026-11-23T22:09:51.297Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-158-released-for-android",
+      "article-b09b0dcc",
+      "b09b0dcc",
+      "chrome-158-released-for-android-412ac1"
     ]
   },
   {
@@ -139,6 +193,24 @@ export const news: NewsBrief[] = [
       "768216c7",
       "aws-ssm-agent-default-key-flaw-exposes-role-creden-29fa73",
       "aws-ssm-agent-default-key-flaw-exposes-role-credentials"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-golang-update-for-rhel-10-b421f581",
+    "title": "Red Hat Releases Golang Update for RHEL 10",
+    "summary": "Red Hat released a golang update for RHEL 10, fixing multiple security bugs in the Go compiler and runtime. The update addresses several CVE-linked issues, each with a CVSS base score indicating moderate impact; no active exploitation is known. Red Hat advises applying the update via the package manager; no workaround is needed.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102587",
+    "publishedAt": "2026-11-23T21:42:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-golang-update-for-rhel-10",
+      "article-b421f581",
+      "b421f581",
+      "red-hat-releases-golang-update-for-rhel-10-2ee16a"
     ]
   },
   {
@@ -1079,6 +1151,43 @@ export const news: NewsBrief[] = [
       "article-5f2cf303",
       "5f2cf303",
       "red-hat-advises-updates-for-multiple-rhel-versions-cc2e06"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-php-update-for-rhel9-ca848282",
+    "title": "Red Hat Releases Critical PHP Update for RHEL9",
+    "summary": "Red Hat released a critical PHP update for RHEL9, addressing multiple vulnerabilities. The update fixes several PHP bugs that could allow remote code execution or privilege escalation; CVSS scores indicate high severity, though specific CVE IDs are not listed. Red Hat has made the update available through standard repositories; administrators should install the latest php package to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102297",
+    "publishedAt": "2026-11-23T14:37:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-php-update-for-rhel9",
+      "article-ca848282",
+      "ca848282",
+      "red-hat-releases-critical-php-update-for-rhel9-2ee15f"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-qt5-qtdeclarative-update-for-rhel-9-c62fa871",
+    "title": "Red Hat Issues qt5-qtdeclarative Update for RHEL 9.2",
+    "summary": "Red Hat released a security update for qt5-qtdeclarative on Red Enterprise Linux 9.2, targeting SAP Solution services. The patch addresses multiple CVE-linked vulnerabilities, each assigned a CVSS base score that denotes an important impact; no active exploitation is reported. Red Hat recommends applying the update through the standard package manager; no workaround is necessary.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102398",
+    "publishedAt": "2026-11-23T14:35:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-qt5-qtdeclarative-update-for-rhel-9",
+      "article-c62fa871",
+      "c62fa871",
+      "red-hat-issues-qt5-qtdeclarative-update-for-rhel-9-2ee162",
+      "red-hat-issues-qt5-qtdeclarative-update-for-rhel-9-2"
     ]
   },
   {
@@ -9383,123 +9492,6 @@ export const news: NewsBrief[] = [
       "article-4dc7c84c",
       "4dc7c84c",
       "php-patches-seven-critical-rce-vulnerabilities-151857"
-    ]
-  },
-  {
-    "slug": "linux-kernel-vulnerabilities-corrected-in-usn-9175-c30d5d3c",
-    "title": "Linux Kernel Vulnerabilities Corrected in USN-9175-1",
-    "summary": "The USN-9175-1 notice details multiple Linux kernel vulnerabilities that could allow attackers to compromise affected systems. The flaws affect device drivers, architecture modules, and cryptographic APIs, stemming from improper handling of privileged operations and enabling privilege escalation or denial of service. Kernel maintainers released patches; administrators should update to the latest kernel to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9175-1",
-    "publishedAt": "2026-11-19T15:43:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-vulnerabilities-corrected-in-usn-9175",
-      "article-c30d5d3c",
-      "c30d5d3c",
-      "linux-kernel-vulnerabilities-corrected-in-usn-9175-7e7862",
-      "linux-kernel-vulnerabilities-corrected-in-usn-9175-1"
-    ]
-  },
-  {
-    "slug": "openvpn-flaw-cve-2026-121720-impacts-versions-thro-bd9d93e3",
-    "title": "OpenVPN Flaw CVE-2026-121720 Impacts Versions Through 2.7.8",
-    "summary": "The Canadian Centre for Cyber Security issued a security advisory regarding a vulnerability affecting OpenVPN installations up to version 2.7.8. Identified as CVE-2026-121720, the flaw poses operational risks to virtual private network infrastructure supporting enterprise access. System administrators are encouraged to review official advisory documentation and deploy vendor-provided security patches immediately to mitigate exposure.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/openvpn-security-advisory-av26-1179",
-    "publishedAt": "2026-11-19T15:39:51.000Z",
-    "cves": [
-      "CVE-2026-121720"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openvpn-flaw-cve-2026-121720-impacts-versions-thro",
-      "article-bd9d93e3",
-      "bd9d93e3",
-      "openvpn-flaw-cve-2026-121720-impacts-versions-thro-57de18",
-      "openvpn-flaw-cve-2026-121720-impacts-versions-through-2-7-8"
-    ]
-  },
-  {
-    "slug": "f5-issues-advisory-for-multiple-big-ip-vulnerabili-e90fc272",
-    "title": "F5 Issues Advisory for Multiple BIG-IP Vulnerabilities",
-    "summary": "F5 released advisory AV26-1178 exposing multiple vulnerabilities in BIG-IP, APM, SSL Orchestrator, PEM, CNF, and Next for Kubernetes versions up to 21.1.0. The flaws allow remote attackers to execute arbitrary code via malformed configuration data, with CVSS scores up to 9.8, and are documented.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1178",
-    "publishedAt": "2026-11-19T15:33:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "f5-issues-advisory-for-multiple-big-ip-vulnerabili",
-      "article-e90fc272",
-      "e90fc272",
-      "f5-issues-advisory-for-multiple-big-ip-vulnerabili-3f3de0",
-      "f5-issues-advisory-for-multiple-big-ip-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "php-8-6-released-with-updated-session-security-def-bbc1c50c",
-    "title": "PHP 8.6 Released With Updated Session Security Defaults",
-    "summary": "PHP 8.6 has been released, introducing developer functionality alongside modified configuration defaults for session management. The release enforces strict session mode and HTTP-only cookies, sets SameSite to Lax, and deprecates incomplete custom session handlers. Organizations relying on legacy settings should test application login flows to preserve compatibility prior to deployment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/19/php-8-6-released/",
-    "publishedAt": "2026-11-19T15:22:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php-8-6-released-with-updated-session-security-def",
-      "article-bbc1c50c",
-      "bbc1c50c",
-      "php-8-6-released-with-updated-session-security-def-4ffd81",
-      "php-8-6-released-with-updated-session-security-defaults"
-    ]
-  },
-  {
-    "slug": "php-releases-patch-for-7-critical-rce-flaws-92b2b9de",
-    "title": "PHP Releases Patch for 7 Critical RCE Flaws",
-    "summary": "PHP Foundation released a patch for seven critical flaws that could allow remote code execution on affected deployments. The most severe flaw, CVE-2026-115560, scores CVSS 9.2 and stems from improper input validation that permits arbitrary code execution and file modification. All supported PHP versions have the update available; administrators should apply the patch immediately to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
-    "publishedAt": "2026-11-19T15:18:07.000Z",
-    "cves": [
-      "CVE-2026-115560"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "php-releases-patch-for-7-critical-rce-flaws",
-      "article-92b2b9de",
-      "92b2b9de",
-      "php-releases-patch-for-7-critical-rce-flaws-56cd6d"
-    ]
-  },
-  {
-    "slug": "european-commission-confirms-cyberattack-says-hack-d8c629c0",
-    "title": "European Commission confirms cyberattack, says hackers used AI tool",
-    "summary": "POLITICO had reported CERT-EU had identified the attackers’ use of ARTEX, an open-source AI hacking platform that the FBI last week warned was being used both by criminals and state-sponsored groups.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
-    "publishedAt": "2026-11-19T15:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "european-commission-confirms-cyberattack-says-hack",
-      "article-d8c629c0",
-      "d8c629c0",
-      "european-commission-confirms-cyberattack-says-hack-6cd590",
-      "european-commission-confirms-cyberattack-says-hackers-used-a"
     ]
   }
 ];
