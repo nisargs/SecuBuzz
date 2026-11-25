@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-satellite-client-critical-update-f951611b",
+    "title": "Red Hat Satellite Client Critical Update",
+    "summary": "Red Hat released a critical security update for Satellite 6 Client to address multiple vulnerabilities affecting the client component. The update is rated Critical by Red Hat Product Security, though specific CVSS scores are not disclosed in the advisory. Users should apply the patch immediately or upgrade to the latest Satellite 6 Client release to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103450",
+    "publishedAt": "2026-11-25T00:22:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-client-critical-update",
+      "article-f951611b",
+      "f951611b",
+      "red-hat-satellite-client-critical-update-2ee1da"
+    ]
+  },
+  {
+    "slug": "pan-alto-fixes-oss-cves-in-pan-os-7c2292e8",
+    "title": "Pan-Alto Fixes OSS CVEs in PAN-OS",
+    "summary": "Palo Alto Networks issued PAN-SA-2026-0015, noting that several open-source software CVEs have been fixed in PAN-OS. The bulletin lists the resolved vulnerabilities but provides no CVE identifiers or exploit details, and it is classified as informational. Users should upgrade to the latest PAN-OS version to apply the patches, with no additional workarounds required.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/PAN-SA-2026-0015",
+    "publishedAt": "2026-11-24T23:10:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pan-alto-fixes-oss-cves-in-pan-os",
+      "article-7c2292e8",
+      "7c2292e8",
+      "pan-alto-fixes-oss-cves-in-pan-os-101918"
+    ]
+  },
+  {
     "slug": "nginx-http-2-use-after-free-cve-2026-123633-0358bc2c",
     "title": "NGINX HTTP/2 Use-After-Free CVE-2026-123633",
     "summary": "NGINX’s HTTP/2 implementation contains a use-after-free flaw (CVE-2026-123633) that can be triggered by malformed HTTP/2 frames. The vulnerability may allow attackers to crash the server or execute arbitrary code, depending on the context, and is not yet confirmed as actively exploited. NGINX has released a patch for affected versions; administrators should update or apply the provided mitigations to prevent exploitation.",
@@ -289,6 +325,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-updates-opentelemetry-collector-0b55a8c3",
+    "title": "Red Hat Updates OpenTelemetry Collector",
+    "summary": "Red Hat released a security update for OpenTelemetry Collector on RHEL 9, addressing vulnerabilities that could allow attackers to compromise the telemetry service. The update covers flaws with CVSS scores detailed in referenced CVE links, though no specific CVE identifiers are named. Red Hat recommends applying the patch immediately to mitigate exploitation, with no additional workarounds required.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102979",
+    "publishedAt": "2026-11-24T20:11:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-opentelemetry-collector",
+      "article-0b55a8c3",
+      "0b55a8c3",
+      "red-hat-updates-opentelemetry-collector-2ee179"
+    ]
+  },
+  {
     "slug": "qt5-qtdeclarative-update-fixes-security-flaws-in-r-02f9bfd5",
     "title": "qt5-qtdeclarative Update Fixes Security Flaws in RHEL8.4",
     "summary": "Red Hat issued a security update for qt5-qtdeclarative on RHEL 8.4, addressing vulnerabilities that could lead to memory corruption or denial of service. The advisory references several CVE identifiers with CVSS scores ranging from 6.5 to 8.0, indicating moderate to high severity. Systems should install RHSA-2026:103374 promptly and verify qt5-qtdeclarative is updated to the patched version.",
@@ -420,6 +474,24 @@ export const news: NewsBrief[] = [
       "3f6f69aa",
       "cve-2026-135414-server-side-request-forgery-in-sna-547988",
       "cve-2026-135414-server-side-request-forgery-in-snapshot-repo"
+    ]
+  },
+  {
+    "slug": "pan-alto-issues-precautionary-fixes-for-oss-cves-460f4aba",
+    "title": "Pan-Alto Issues Precautionary Fixes for OSS CVEs",
+    "summary": "Palo Alto Networks released PAN-SA-2026-0005, announcing precautionary fixes for non-exploitable open-source software CVEs in PAN-OS. The advisory does not provide CVE identifiers or exploit details, and it is classified as informational. Users should apply the latest PAN-OS update to incorporate the fixes, with no additional workarounds needed to maintain security posture.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/PAN-SA-2026-0005",
+    "publishedAt": "2026-11-24T19:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pan-alto-issues-precautionary-fixes-for-oss-cves",
+      "article-460f4aba",
+      "460f4aba",
+      "pan-alto-issues-precautionary-fixes-for-oss-cves-101918"
     ]
   },
   {
@@ -853,6 +925,42 @@ export const news: NewsBrief[] = [
       "article-083e714c",
       "083e714c",
       "rhsa-2026-102931-important-grafana-security-update-2ee178"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-fltk-update-for-rhel-9-6-a8022b8a",
+    "title": "Red Hat releases fltk update for RHEL 9.6",
+    "summary": "Red Hat released an important security update for the FLTK library on Enterprise Linux 9.6 Extended Update Support, addressing several memory-corruption and integer-overflow flaws. Each flaw has a CVSS base score, but no active exploitation has been observed. Apply the RHSA-2026:102939 patch via yum/dnf immediately to protect systems and ensure compliance.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102939",
+    "publishedAt": "2026-11-24T16:10:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-fltk-update-for-rhel-9-6",
+      "article-a8022b8a",
+      "a8022b8a",
+      "red-hat-releases-fltk-update-for-rhel-9-6-2ee178"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-fltk-update-for-rhel-8-6-0e00f955",
+    "title": "Red Hat releases fltk update for RHEL 8.6",
+    "summary": "Red Hat issued an important security update for the FLTK library on Enterprise Linux 8.6 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On, fixing multiple memory-corruption and integer-overflow flaws. Each flaw carries a CVSS base score, but no active exploitation has been reported. Apply the RHSA-2026:102940 patch via yum/dnf immediately to secure affected systems.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102940",
+    "publishedAt": "2026-11-24T16:07:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-fltk-update-for-rhel-8-6",
+      "article-0e00f955",
+      "0e00f955",
+      "red-hat-releases-fltk-update-for-rhel-8-6-2ee178"
     ]
   },
   {
@@ -3262,6 +3370,86 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "autocad-ies-file-rce-vulnerability-12de5d36",
+    "title": "AutoCAD IES File RCE Vulnerability",
+    "summary": "Autodesk AutoCAD’s IES file parser contains a remote code execution flaw that triggers when a user opens a crafted file or visits a malicious page. CVE-2026-77942 carries a CVSS score of 7.8, classifying it as high severity and requiring user interaction for exploitation. Apply the vendor’s patch or upgrade to the latest AutoCAD release to eliminate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1140/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-77942"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "autocad-ies-file-rce-vulnerability",
+      "article-12de5d36",
+      "12de5d36",
+      "autocad-ies-file-rce-vulnerability-77f3bb"
+    ]
+  },
+  {
+    "slug": "oracle-autonomous-ai-db-rce-via-onnx-runtime-b3f0d970",
+    "title": "Oracle Autonomous AI DB RCE via ONNX Runtime",
+    "summary": "Oracle Autonomous AI Database has a remote code execution flaw in its ONNX Runtime GPT GreedySearch component that can be triggered by authenticated users. CVE-2026-114822 scores 7.2 on CVSS, and the authentication bypass enables exploitation without valid credentials. Oracle recommends applying the latest security patch or upgrading to the patched version to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1139/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114822"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-autonomous-ai-db-rce-via-onnx-runtime",
+      "article-b3f0d970",
+      "b3f0d970",
+      "oracle-autonomous-ai-db-rce-via-onnx-runtime-77f3b8"
+    ]
+  },
+  {
+    "slug": "autocad-dwg-data-link-rce-vulnerability-fe702911",
+    "title": "AutoCAD DWG Data Link RCE Vulnerability",
+    "summary": "A remote code execution flaw in Autodesk AutoCAD’s DWG file data link handling allows attackers to run arbitrary code when a user opens a malicious file. CVE-2026-18827 carries a CVSS score of 7.8, indicating high severity, and requires user interaction to exploit. Users should apply the vendor’s patch or upgrade to the latest AutoCAD release to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1134/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-18827"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "autocad-dwg-data-link-rce-vulnerability",
+      "article-fe702911",
+      "fe702911",
+      "autocad-dwg-data-link-rce-vulnerability-77f3b8"
+    ]
+  },
+  {
+    "slug": "autocad-rce-via-dxf-type-confusion-72d174e3",
+    "title": "AutoCAD RCE via DXF Type Confusion",
+    "summary": "A type-confusion flaw in AutoCAD’s DXF parser lets remote attackers run arbitrary code when a user opens a crafted file. The vulnerability, identified as CVE-2026-18826, carries a CVSS score of 7.8 and requires user interaction for exploitation. Autodesk recommends applying the latest patch or updating to the newest AutoCAD release to mitigate the risk, with no additional workarounds.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1132/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-18826"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "autocad-rce-via-dxf-type-confusion",
+      "article-72d174e3",
+      "72d174e3",
+      "autocad-rce-via-dxf-type-confusion-77f3b8"
     ]
   },
   {
@@ -9150,201 +9338,6 @@ export const news: NewsBrief[] = [
       "article-64ff6884",
       "64ff6884",
       "com-group-conducts-vishing-data-theft-extortion-184882"
-    ]
-  },
-  {
-    "slug": "west-virginia-legislature-suffers-cyber-incident-11988aa7",
-    "title": "West Virginia Legislature Suffers Cyber Incident",
-    "summary": "A cybersecurity incident disrupted West Virginia Legislature IT systems starting Thursday and continued through Friday. The attack vector remains undisclosed, but containment prevented lateral movement to other state government networks. Legislative IT teams are actively restoring systems while investigators assess potential data compromise and implement additional safeguards.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/west-virginia-legislature-cyberattack",
-    "publishedAt": "2026-11-20T21:34:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "west-virginia-legislature-suffers-cyber-incident",
-      "article-11988aa7",
-      "11988aa7",
-      "west-virginia-legislature-suffers-cyber-incident-b1be85"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100822-critical-nginx-security-update-1afe8be9",
-    "title": "RHSA-2026:100822: Critical: nginx security update",
-    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100822",
-    "publishedAt": "2026-11-20T21:31:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100822-critical-nginx-security-update",
-      "article-1afe8be9",
-      "1afe8be9",
-      "rhsa-2026-100822-critical-nginx-security-update-2ee08c"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-php-8-4-security-update-to-b7e30b9f",
-    "title": "Red Hat Issues Critical PHP 8.4 Security Update to Fix Remote Code Execution Vulnerabilities",
-    "summary": "Red Hat released a critical PHP 8.4 update on RHEL 10, fixing remote code execution flaws triggered by crafted input streams. The patch addresses CVEs with CVSS scores up to 9.8, removing the risk of unauthenticated exploitation. Red Hat urges immediate application of RHSA-2026-100821, with no workarounds, and users to verify PHP 8.4 version to confirm the fix.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100821",
-    "publishedAt": "2026-11-20T21:26:25.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101251"
-      }
-    ],
-    "aliases": [
-      "red-hat-issues-critical-php-8-4-security-update-to",
-      "article-b7e30b9f",
-      "b7e30b9f",
-      "red-hat-issues-critical-php-8-4-security-update-to-2ee08c",
-      "red-hat-issues-critical-php-8-4-security-update-to-fix-remot"
-    ]
-  },
-  {
-    "slug": "china-s-armory-castle-lays-siege-to-vmware-vcenter-a33ee633",
-    "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
-    "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve. The vulnerability is tracked as CVE-2026-123890.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
-    "publishedAt": "2026-11-20T21:03:27.000Z",
-    "cves": [
-      "CVE-2026-123890"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "china-s-armory-castle-lays-siege-to-vmware-vcenter",
-      "article-a33ee633",
-      "a33ee633",
-      "china-s-armory-castle-lays-siege-to-vmware-vcenter-5bc9ce",
-      "china-s-armory-castle-lays-siege-to-vmware-vcenter-zero-day"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100814-critical-nginx-security-update-ea5dadf7",
-    "title": "RHSA-2026:100814: Critical: nginx security update",
-    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100814",
-    "publishedAt": "2026-11-20T20:46:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100814-critical-nginx-security-update",
-      "article-ea5dadf7",
-      "ea5dadf7",
-      "rhsa-2026-100814-critical-nginx-security-update-2ee08c"
-    ]
-  },
-  {
-    "slug": "norwegian-energy-firm-suffers-two-day-data-breach-e58fe775",
-    "title": "Norwegian energy firm suffers two-day data breach",
-    "summary": "A Norwegian energy company experienced a data breach that persisted for two days, affecting its operational systems. Investigators have not confirmed a direct link between the two incidents, though they share several similarities, indicating possible repeated exploitation of a shared vulnerability. Security teams should review access controls and monitor for anomalous activity while awaiting further details from the investigation.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached-norwegian",
-    "publishedAt": "2026-11-20T20:43:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "norwegian-energy-firm-suffers-two-day-data-breach",
-      "article-e58fe775",
-      "e58fe775",
-      "norwegian-energy-firm-suffers-two-day-data-breach-73b007"
-    ]
-  },
-  {
-    "slug": "house-committee-rebukes-chinese-ai-adoption-a1717d24",
-    "title": "House Committee Rebukes Chinese AI Adoption",
-    "summary": "The House Homeland Security Committee launched an investigation into U.S. corporate adoption of Chinese open-weight AI models. Lawmakers cite supply chain risks, potential data exfiltration, and intellectual property theft as primary concerns for national security. The committee recommends stricter vetting of AI model provenance and enhanced export controls to mitigate strategic vulnerabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/chinese-open-weight-AI-use-by-US-companies-house-investigation",
-    "publishedAt": "2026-11-20T20:25:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "house-committee-rebukes-chinese-ai-adoption",
-      "article-a1717d24",
-      "a1717d24",
-      "house-committee-rebukes-chinese-ai-adoption-5734e3"
-    ]
-  },
-  {
-    "slug": "how-cloudflare-waf-protects-against-ruby2shell-cve-45be843d",
-    "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
-    "summary": "ruby2shell lets attackers corrupt memory in default Rails and Sinatra apps without logging in. Cloudflare WAF blocks it for every customer, including Free plans. Upgrade Ruby now, and use the WAF to cover the gap.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
-    "publishedAt": "2026-11-20T20:24:38.000Z",
-    "cves": [
-      "CVE-2026-132825"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "how-cloudflare-waf-protects-against-ruby2shell-cve",
-      "article-45be843d",
-      "45be843d",
-      "how-cloudflare-waf-protects-against-ruby2shell-cve-156987",
-      "how-cloudflare-waf-protects-against-ruby2shell-cve-2026-1328"
-    ]
-  },
-  {
-    "slug": "how-cloudflare-waf-helps-protect-against-phpafters-4653f8cd",
-    "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
-    "summary": "phpAfterShell is a critical flaw in PHP's default session handler that can lead to code execution. Cloudflare WAF blocks it for all customers, including Free plans, and adds new rules for other PHP flaws fixed in the same release. The vulnerability is tracked as CVE-2026-126714.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
-    "publishedAt": "2026-11-20T20:00:45.000Z",
-    "cves": [
-      "CVE-2026-126714"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "how-cloudflare-waf-helps-protect-against-phpafters",
-      "article-4653f8cd",
-      "4653f8cd",
-      "how-cloudflare-waf-helps-protect-against-phpafters-2df84a",
-      "how-cloudflare-waf-helps-protect-against-phpaftershell-and-o"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100804-critical-nginx-security-update-5b8c4e7d",
-    "title": "RHSA-2026:100804: Critical: nginx security update",
-    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100804",
-    "publishedAt": "2026-11-20T19:37:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100804-critical-nginx-security-update",
-      "article-5b8c4e7d",
-      "5b8c4e7d",
-      "rhsa-2026-100804-critical-nginx-security-update-2ee08b"
     ]
   }
 ];

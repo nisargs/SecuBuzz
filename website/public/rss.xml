@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 00:07:49 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 01:44:55 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Satellite Client Critical Update</title>
+      <link>https://secubuzz.com/news/red-hat-satellite-client-critical-update-f951611b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-satellite-client-critical-update-f951611b</guid>
+      <description><![CDATA[Red Hat released a critical security update for Satellite 6 Client to address multiple vulnerabilities affecting the client component. The update is rated Critical by Red Hat Product Security, though specific CVSS scores are not disclosed in the advisory. Users should apply the patch immediately or upgrade to the latest Satellite 6 Client release to mitigate the risks.]]></description>
+      <pubDate>Wed, 25 Nov 2026 00:22:04 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103450">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Pan-Alto Fixes OSS CVEs in PAN-OS</title>
+      <link>https://secubuzz.com/news/pan-alto-fixes-oss-cves-in-pan-os-7c2292e8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pan-alto-fixes-oss-cves-in-pan-os-7c2292e8</guid>
+      <description><![CDATA[Palo Alto Networks issued PAN-SA-2026-0015, noting that several open-source software CVEs have been fixed in PAN-OS. The bulletin lists the resolved vulnerabilities but provides no CVE identifiers or exploit details, and it is classified as informational. Users should upgrade to the latest PAN-OS version to apply the patches, with no additional workarounds required.]]></description>
+      <pubDate>Tue, 24 Nov 2026 23:10:00 GMT</pubDate>
+      <source url="https://security.paloaltonetworks.com/PAN-SA-2026-0015">Palo Alto Networks PSIRT</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>NGINX HTTP/2 Use-After-Free CVE-2026-123633</title>
       <link>https://secubuzz.com/news/nginx-http-2-use-after-free-cve-2026-123633-0358bc2c</link>
@@ -143,6 +161,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Updates OpenTelemetry Collector</title>
+      <link>https://secubuzz.com/news/red-hat-updates-opentelemetry-collector-0b55a8c3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-opentelemetry-collector-0b55a8c3</guid>
+      <description><![CDATA[Red Hat released a security update for OpenTelemetry Collector on RHEL 9, addressing vulnerabilities that could allow attackers to compromise the telemetry service. The update covers flaws with CVSS scores detailed in referenced CVE links, though no specific CVE identifiers are named. Red Hat recommends applying the patch immediately to mitigate exploitation, with no additional workarounds required.]]></description>
+      <pubDate>Tue, 24 Nov 2026 20:11:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102979">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>qt5-qtdeclarative Update Fixes Security Flaws in RHEL8.4</title>
       <link>https://secubuzz.com/news/qt5-qtdeclarative-update-fixes-security-flaws-in-r-02f9bfd5</link>
       <guid isPermaLink="true">https://secubuzz.com/news/qt5-qtdeclarative-update-fixes-security-flaws-in-r-02f9bfd5</guid>
@@ -204,6 +231,15 @@
       <pubDate>Tue, 24 Nov 2026 19:27:19 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-201-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Pan-Alto Issues Precautionary Fixes for OSS CVEs</title>
+      <link>https://secubuzz.com/news/pan-alto-issues-precautionary-fixes-for-oss-cves-460f4aba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pan-alto-issues-precautionary-fixes-for-oss-cves-460f4aba</guid>
+      <description><![CDATA[Palo Alto Networks released PAN-SA-2026-0005, announcing precautionary fixes for non-exploitable open-source software CVEs in PAN-OS. The advisory does not provide CVE identifiers or exploit details, and it is classified as informational. Users should apply the latest PAN-OS update to incorporate the fixes, with no additional workarounds needed to maintain security posture.]]></description>
+      <pubDate>Tue, 24 Nov 2026 19:00:00 GMT</pubDate>
+      <source url="https://security.paloaltonetworks.com/PAN-SA-2026-0005">Palo Alto Networks PSIRT</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Turnitin Reports Unauthorized Activity on Customer Systems</title>
@@ -413,48 +449,12 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>PHP Critical Security Update Released</title>
-      <link>https://secubuzz.com/news/php-critical-security-update-released-a00c5931</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-critical-security-update-released-a00c5931</guid>
-      <description><![CDATA[Red Hat issued a critical security update for php on Enterprise Linux 10.0 Extended Update Support, fixing several high-severity bugs. The patch addresses multiple CVEs that could allow remote code execution or privilege escalation, but no active exploitation has been observed. System administrators should apply the php update or install the vendor’s security fix to eliminate the vulnerabilities.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:06:05 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102934">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Office Visio RCE CVE-2026-112732 Omitted</title>
-      <link>https://secubuzz.com/news/microsoft-office-visio-rce-cve-2026-112732-omitted-d6267404</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-office-visio-rce-cve-2026-112732-omitted-d6267404</guid>
-      <description><![CDATA[Microsoft Office Visio contains a remote code execution flaw identified as CVE-2026-112732, affecting all supported Visio versions. The flaw permits arbitrary code execution via crafted input, but no exploitation has been reported, and it was omitted from the November 2026 Security Updates. Microsoft released the patch in November 2026, and customers who installed those updates need not take further action.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112732">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Carnegie Endowment Donor Data Leaked by Vendor</title>
-      <link>https://secubuzz.com/news/carnegie-endowment-donor-data-leaked-by-vendor-45cf6cec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/carnegie-endowment-donor-data-leaked-by-vendor-45cf6cec</guid>
-      <description><![CDATA[The Carnegie Endowment for International Peace reported that a third-party vendor, Soapbox Engage, suffered a breach that leaked donor information. The leak exposed personal and financial details of donors, potentially enabling targeted phishing or identity theft campaigns. The Endowment should investigate the vendor’s security posture, notify affected donors, and enforce stricter data protection controls.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://therecord.media/carnegie-endowment-data-breach">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Ruby 2.5 Critical Security Update Released</title>
-      <link>https://secubuzz.com/news/ruby-2-5-critical-security-update-released-082c3eeb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ruby-2-5-critical-security-update-released-082c3eeb</guid>
-      <description><![CDATA[Red Hat released a critical security update for the ruby:2.5 module on Enterprise Linux 8, addressing multiple high-severity vulnerabilities. The update mitigates several CVEs that could enable remote code execution or privilege escalation, though no active exploitation has been reported. Administrators should apply the ruby:2.5 update immediately or install the provided security patch to protect against the identified flaws.]]></description>
-      <pubDate>Tue, 24 Nov 2026 15:49:11 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102928">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103245: Important: python-botocore security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103245-important-python-botocore-securit-81e3726f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103245-important-python-botocore-securit-81e3726f</guid>
-      <description><![CDATA[An update for python-botocore is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 15:47:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103245">Red Hat Security Advisories</source>
+      <title>Red Hat releases fltk update for RHEL 9.6</title>
+      <link>https://secubuzz.com/news/red-hat-releases-fltk-update-for-rhel-9-6-a8022b8a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-fltk-update-for-rhel-9-6-a8022b8a</guid>
+      <description><![CDATA[Red Hat released an important security update for the FLTK library on Enterprise Linux 9.6 Extended Update Support, addressing several memory-corruption and integer-overflow flaws. Each flaw has a CVSS base score, but no active exploitation has been observed. Apply the RHSA-2026:102939 patch via yum/dnf immediately to protect systems and ensure compliance.]]></description>
+      <pubDate>Tue, 24 Nov 2026 16:10:55 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102939">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
