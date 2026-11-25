@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 17:22:30 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 18:44:24 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ghostscript Vulnerability Updated on RHEL 9</title>
+      <link>https://secubuzz.com/news/ghostscript-vulnerability-updated-on-rhel-9-693eac98</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ghostscript-vulnerability-updated-on-rhel-9-693eac98</guid>
+      <description><![CDATA[Ghostscript on Red Hat Enterprise Linux 9 is affected by a security flaw. The vulnerability, rated Important by Red Hat Product Security, has a CVSS base score detailed in the CVE references; it permits potential exploitation of the Ghostscript interpreter. Red Hat has released an update; administrators should apply the Ghostscript patch immediately to mitigate the risk.]]></description>
+      <pubDate>Wed, 25 Nov 2026 18:10:15 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103523">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ghostscript Vulnerability Updated on RHEL 8</title>
+      <link>https://secubuzz.com/news/ghostscript-vulnerability-updated-on-rhel-8-07f53266</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ghostscript-vulnerability-updated-on-rhel-8-07f53266</guid>
+      <description><![CDATA[Ghostscript on Red Hat Enterprise Linux 8 is affected by a security flaw. The vulnerability, rated Important by Red Hat Product Security, has a CVSS base score detailed in the CVE references; it permits potential exploitation of the Ghostscript interpreter. Red Hat has released an update; administrators should apply the Ghostscript patch immediately to mitigate the risk.]]></description>
+      <pubDate>Wed, 25 Nov 2026 18:09:21 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103524">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:103527: Moderate: cockpit security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103527-moderate-cockpit-security-update-498fab66</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103527-moderate-cockpit-security-update-498fab66</guid>
+      <description><![CDATA[An update for cockpit is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Moderate.]]></description>
+      <pubDate>Wed, 25 Nov 2026 18:06:38 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103527">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:103528: Moderate: cockpit security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103528-moderate-cockpit-security-update-cc2c43dc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103528-moderate-cockpit-security-update-cc2c43dc</guid>
+      <description><![CDATA[An update for cockpit is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Moderate.]]></description>
+      <pubDate>Wed, 25 Nov 2026 18:04:29 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103528">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Florida Ransomware Recovery CEO Indicted</title>
+      <link>https://secubuzz.com/news/florida-ransomware-recovery-ceo-indicted-b6e2f558</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/florida-ransomware-recovery-ceo-indicted-b6e2f558</guid>
+      <description><![CDATA[A federal grand jury indicted the CEO of a Florida-based ransomware recovery firm for allegedly lying about services and paying ransoms to cybercriminals. The indictment alleges the executive engaged in deceptive practices and facilitated financial transactions that supported ransomware operators. The case underscores the legal risks for recovery providers and signals increased scrutiny of the industry by law enforcement.]]></description>
+      <pubDate>Wed, 25 Nov 2026 17:30:00 GMT</pubDate>
+      <source url="https://therecord.media/ransomware-doj-indictment-recovery">The Record</source>
+      <category>General</category>
+    </item>
     <item>
       <title>CVE-2026-136267 - Improper neutralization of special elements used in an OS command in Kiro Web</title>
       <link>https://secubuzz.com/news/cve-2026-136267-improper-neutralization-of-special-8d7cb035</link>
@@ -15,6 +60,15 @@
       <pubDate>Wed, 25 Nov 2026 17:08:36 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-202-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Australia Enacts Digital Duty of Care Law</title>
+      <link>https://secubuzz.com/news/australia-enacts-digital-duty-of-care-law-72e9056e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/australia-enacts-digital-duty-of-care-law-72e9056e</guid>
+      <description><![CDATA[Australia's Digital Duty of Care Act mandates online providers to establish protocols that shield users from violence, rape, and other harms. The law obligates tech companies to identify and mitigate foreseeable risks, extending oversight to content moderation and user safety measures. Compliance will require new policy frameworks, risk assessments, and reporting mechanisms, with enforcement provisions pending parliamentary approval.]]></description>
+      <pubDate>Wed, 25 Nov 2026 17:07:00 GMT</pubDate>
+      <source url="https://therecord.media/australia-passes-online-safety-legislation-preempt-harms">The Record</source>
+      <category>General</category>
     </item>
     <item>
       <title>Task Management App Todoist Hacked, Attackers Breach Production Systems</title>
@@ -44,6 +98,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Microsoft 365 Bug Causes Blank Screens in Office Apps</title>
+      <link>https://secubuzz.com/news/microsoft-365-bug-causes-blank-screens-in-office-a-5a5d675b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-bug-causes-blank-screens-in-office-a-5a5d675b</guid>
+      <description><![CDATA[A startup issue in Microsoft 365 prevented users from opening Word, Excel, and Outlook, displaying a blank white screen. The bug, identified in a November 23, 2026 support notice, caused the applications to stall without visible controls, blocking access to document functionality. Microsoft released a patch addressing the issue; users should update to the latest version to restore normal operation.]]></description>
+      <pubDate>Wed, 25 Nov 2026 15:37:54 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsoft-365-white-screen-bug/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Juniper Adds CVE-2026-103406 to KEV Catalog</title>
       <link>https://secubuzz.com/news/juniper-adds-cve-2026-103406-to-kev-catalog-27a80b9e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/juniper-adds-cve-2026-103406-to-kev-catalog-27a80b9e</guid>
@@ -51,6 +114,15 @@
       <pubDate>Wed, 25 Nov 2026 15:32:26 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/juniper-networks-security-advisory-av26-1101">Canadian Centre for Cyber Security</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>SOC Management 2027: Five Steps Against AI Threats</title>
+      <link>https://secubuzz.com/news/soc-management-2027-five-steps-against-ai-threats-066166bb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/soc-management-2027-five-steps-against-ai-threats-066166bb</guid>
+      <description><![CDATA[The article outlines five steps for SOCs and MSSPs to manage AI-driven threats in 2027. It highlights the need to balance evolving attack speeds with limited resources, emphasizing detection, threat intelligence, and automation to counter phishing and expanding attack surfaces. The guidance encourages scaling operations, fostering innovation, and adopting AI tools to improve response times and reduce analyst fatigue.]]></description>
+      <pubDate>Wed, 25 Nov 2026 15:30:46 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/soc-management-in-2027/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>GeoServer CVEs 2026-120705, 2026-129243 Exploited</title>
@@ -96,6 +168,15 @@
       <pubDate>Wed, 25 Nov 2026 15:20:27 GMT</pubDate>
       <source url="https://www.darkreading.com/cyber-risk/bot-world-just-living">Dark Reading</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Adobe AEM Vulnerabilities Fixed in Hotfix</title>
+      <link>https://secubuzz.com/news/adobe-aem-vulnerabilities-fixed-in-hotfix-644111b1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/adobe-aem-vulnerabilities-fixed-in-hotfix-644111b1</guid>
+      <description><![CDATA[Adobe Experience Manager Cloud Service, AEM 6.5, and AEM 6.5 LTS are affected by multiple vulnerabilities, including the issue identified as GRANITE-76751. The flaw permits unauthorized access to administrative interfaces and could allow attackers to execute arbitrary code, though no public exploit is confirmed. Adobe has released cumulative hotfixes; administrators should apply the updates promptly to secure their deployments.]]></description>
+      <pubDate>Wed, 25 Nov 2026 15:15:11 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/adobe-security-advisory-av26-1205">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>AI Reduces Pentester Workload, Boosts Engagements</title>
@@ -161,6 +242,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Intent IDs Leak Into Victim Logs</title>
+      <link>https://secubuzz.com/news/intent-ids-leak-into-victim-logs-47fc12d6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/intent-ids-leak-into-victim-logs-47fc12d6</guid>
+      <description><![CDATA[Intent IDs (iNNNN) from agentic offensive frameworks such as ARTEX and Cairn are inadvertently recorded in victim logs. The leakage exposes attacker identifiers, allowing defenders to track and deconflict malicious activity, though the signal weakens when logs are truncated. Mitigation requires sanitizing logs to remove iNNNN counters or implementing log filtering rules to prevent exposure of offensive framework identifiers.]]></description>
+      <pubDate>Wed, 25 Nov 2026 14:27:03 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/agentic-offensive-frameworks-intent-ids-artex-cairn">Wiz Research</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>AI Agents Exploit Unpatched Vulnerability to Control University Server</title>
       <link>https://secubuzz.com/news/ai-agents-exploit-unpatched-vulnerability-to-contr-c7737e1c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-exploit-unpatched-vulnerability-to-contr-c7737e1c</guid>
@@ -206,6 +296,24 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Latin America Faces Industrial Cyberattacks</title>
+      <link>https://secubuzz.com/news/latin-america-faces-industrial-cyberattacks-11344ec4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/latin-america-faces-industrial-cyberattacks-11344ec4</guid>
+      <description><![CDATA[Cyberattacks targeting ports, pipelines, and manufacturing facilities have increased across Latin America, affecting critical infrastructure. Attackers exploit known vulnerabilities in industrial control systems, leveraging remote code execution and credential theft to disrupt operations. Operators should apply vendor patches, enforce network segmentation, and monitor for anomalous traffic to mitigate future incidents.]]></description>
+      <pubDate>Wed, 25 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/latin-america-cyberattacks-ports-pipelines-manufacturing">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cloudflare Adds AI Agent Search Toggle</title>
+      <link>https://secubuzz.com/news/cloudflare-adds-ai-agent-search-toggle-67f13254</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-adds-ai-agent-search-toggle-67f13254</guid>
+      <description><![CDATA[Cloudflare introduces a toggle that makes sites searchable by AI agents, adding automatic content indexing and a discoverable search API. The feature also supports native HTTP QUERY support, allowing agents to retrieve structured data directly from web pages. Deploying the toggle requires no code changes, but operators should review privacy settings to prevent sensitive content exposure to AI agents.]]></description>
+      <pubDate>Wed, 25 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/search-for-agents/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>RHSA-2026:103496: Important: grafana security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-103496-important-grafana-security-update-ed28371c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103496-important-grafana-security-update-ed28371c</guid>
@@ -249,6 +357,15 @@
       <pubDate>Wed, 25 Nov 2026 13:31:00 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103494">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CISO Matt Martin Discusses Budget-Free Security Program</title>
+      <link>https://secubuzz.com/news/ciso-matt-martin-discusses-budget-free-security-pr-5c5b28d7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ciso-matt-martin-discusses-budget-free-security-pr-5c5b28d7</guid>
+      <description><![CDATA[Matt Martin, CISO at Western Carolina University, outlines strategies for building a security program without a large budget. He emphasizes leveraging open-source tools, prioritizing risk-based controls, and fostering a security-aware culture to compensate for limited resources. The article offers actionable guidance for small institutions seeking to strengthen defenses while maintaining fiscal discipline.]]></description>
+      <pubDate>Wed, 25 Nov 2026 13:30:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/ground-truth-ciso-matt-martin-on-building-a-real-security-program-without-an-enterprise-budget/">SecurityWeek</source>
+      <category>General</category>
     </item>
     <item>
       <title>Ransomware Attack Disrupts Guadeloupe Hospital Operations</title>
@@ -339,123 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 12:14:08 GMT</pubDate>
       <source url="https://cybersecuritynews.com/fake-wordpress-plugin/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Agents Steal Credentials, Breach Corporate Networks</title>
-      <link>https://secubuzz.com/news/ai-agents-steal-credentials-breach-corporate-netwo-40969248</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-steal-credentials-breach-corporate-netwo-40969248</guid>
-      <description><![CDATA[Hackers used autonomous AI agents to harvest credentials and infiltrate corporate networks across government, logistics, hospitality, manufacturing, agriculture, and education sectors. Agents exploited vulnerable web applications for initial footholds, installed web shells, and performed lateral movement, exposing sensitive data. Defenders should patch web app flaws, monitor for web shells, enforce least privilege, and deploy AI-driven threat detection.]]></description>
-      <pubDate>Wed, 25 Nov 2026 12:11:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-autonomous-ai-agents-2/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Tracking AI-Enhanced Hacking Incidents</title>
-      <link>https://secubuzz.com/news/tracking-ai-enhanced-hacking-incidents-858a5cbe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tracking-ai-enhanced-hacking-incidents-858a5cbe</guid>
-      <description><![CDATA[Daniel Meissler tracks incidents of hacking that leverage AI tools, documenting offensive tactics employed by attackers. The analysis highlights how AI accelerates reconnaissance, vulnerability exploitation, and automated attack orchestration, increasing campaign speed and scale. Security teams should adopt AI-aware monitoring, threat intelligence feeds, and defensive automation to detect and mitigate AI-driven attacks.]]></description>
-      <pubDate>Wed, 25 Nov 2026 12:07:21 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/11/tracking-incidents-of-hacking-using-ai-tools.html">Schneier on Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Iran-Linked Group Deploys KuboShell Backdoor on Airlines</title>
-      <link>https://secubuzz.com/news/iran-linked-group-deploys-kuboshell-backdoor-on-ai-fae9e05f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/iran-linked-group-deploys-kuboshell-backdoor-on-ai-fae9e05f</guid>
-      <description><![CDATA[An Iran-linked cyberespionage group, Volant Manticore, targeted a Cyprus-based airline and Saudi Arabian hospitals using a fake résumé phishing campaign. The attack delivered KuboShell, a newly documented Windows backdoor that permits remote command execution and data exfiltration from infected systems. Security teams should block KuboShell binaries, monitor for suspicious outbound traffic, and apply vendor patches to mitigate the threat.]]></description>
-      <pubDate>Wed, 25 Nov 2026 11:54:28 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/iran-linked-volant-manticore-hackers/">Cyber Security News</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Credential Remediation Stalls Without Impact Assessment</title>
-      <link>https://secubuzz.com/news/credential-remediation-stalls-without-impact-asses-6883407f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/credential-remediation-stalls-without-impact-asses-6883407f</guid>
-      <description><![CDATA[GitGuardian’s State of Secrets Sprawl 2026 report shows that 64% of valid secrets from 2022 remained active in January 2026, highlighting slow remediation. Delays stem from teams lacking visibility into downstream breakage, causing validity-only triage to miss 46% of critical secrets and raising credential misuse risk. Impact-based prioritization and automated breakage testing can accelerate revocation and reduce credential theft exposure.]]></description>
-      <pubDate>Wed, 25 Nov 2026 11:51:48 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Minecraft Mod Steals Session Tokens, Deploys Infostealer</title>
-      <link>https://secubuzz.com/news/minecraft-mod-steals-session-tokens-deploys-infost-3b4a07ce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/minecraft-mod-steals-session-tokens-deploys-infost-3b4a07ce</guid>
-      <description><![CDATA[A counterfeit Minecraft mod, Farmutils-Loader.jar, captures session tokens and installs a Python infostealer. The malicious Java archive masquerades as a Fabric library, reading session data from memory and launching a background process that downloads payloads, enabling credential theft. Avoid unverified mods, verify signatures, and monitor anomalous processes; updating to the latest Minecraft client and mod loader mitigates risk.]]></description>
-      <pubDate>Wed, 25 Nov 2026 11:45:42 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fake-minecraft-mod-2/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Malware Exploits Trusted Signing to Steal Browser Passwords</title>
-      <link>https://secubuzz.com/news/malware-exploits-trusted-signing-to-steal-browser-1b1135cd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malware-exploits-trusted-signing-to-steal-browser-1b1135cd</guid>
-      <description><![CDATA[A Windows installer, HardwareInfo.msi, delivers browser-stealing malware that leverages signed Windows components and a signed Firefox add-on to evade detection. The toolkit targets saved passwords, session cookies, and other browser data, and allows remote operator control of a hidden browser. Defenders should block the installer, monitor for unauthorized outbound traffic, and enforce least-privilege policies to mitigate credential theft.]]></description>
-      <pubDate>Wed, 25 Nov 2026 11:35:09 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/microsoft-and-mozilla-trusted-signing/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Drupal Core RCE CVE-2026-132165 Exploited in Wild</title>
-      <link>https://secubuzz.com/news/drupal-core-rce-cve-2026-132165-exploited-in-wild-cb3acb26</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-rce-cve-2026-132165-exploited-in-wild-cb3acb26</guid>
-      <description><![CDATA[Drupal core suffers remote code execution via Fail2Install, identified as CVE-2026-132165, actively exploited in the wild. The flaw, rated CVSS 9.8, allows unauthenticated attackers to execute arbitrary PHP code, jeopardizing site integrity and data confidentiality. CISA mandates federal agencies to apply the vendor patch by November 27, 2026, and recommends disabling the vulnerable module until the update is installed.]]></description>
-      <pubDate>Wed, 25 Nov 2026 11:23:26 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Bots exploited leaked AWS key from Docker image in under 8 seconds</title>
-      <link>https://secubuzz.com/news/bots-exploited-leaked-aws-key-from-docker-image-in-6d0c0177</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bots-exploited-leaked-aws-key-from-docker-image-in-6d0c0177</guid>
-      <description><![CDATA[A cloud access key left inside a newly published Docker image can be found and used by bots in less than eight seconds, Billy Tsouvalas and Nick Nikiforakis of Stony Brook University discovered after planting 300 decoy images on public container registries.]]></description>
-      <pubDate>Wed, 25 Nov 2026 11:22:32 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/25/docker-aws-key-exposure-bots/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Microsoft 365 Bug Blocking Office Apps Fixed</title>
-      <link>https://secubuzz.com/news/microsoft-365-bug-blocking-office-apps-fixed-94c71c99</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-bug-blocking-office-apps-fixed-94c71c99</guid>
-      <description><![CDATA[Microsoft released a patch for a Microsoft 365 bug that prevented certain customers from accessing Office applications. The flaw caused authentication failures in the Office client, leading to denial of service for affected users. Users should install the latest update from Microsoft 365 and verify application access to restore functionality.]]></description>
-      <pubDate>Wed, 25 Nov 2026 11:16:32 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Pierre Cadieux Traces Security Roots in Help Desk Logs</title>
-      <link>https://secubuzz.com/news/pierre-cadieux-traces-security-roots-in-help-desk-c319dab9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pierre-cadieux-traces-security-roots-in-help-desk-c319dab9</guid>
-      <description><![CDATA[Pierre Cadieux reflects on his early help-desk career, where he first learned to correlate Windows and Unix logs. This foundational skill sparked his curiosity and ultimately guided him toward a career in cybersecurity. The article highlights the importance of cross-platform log analysis for early security insight and career development today.]]></description>
-      <pubDate>Wed, 25 Nov 2026 11:00:00 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/securing-grandmas-groceries-with-pierre-cadieux/">Cisco Talos</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OpenAI-Linked Swarm Activity Traceable via Public Records</title>
-      <link>https://secubuzz.com/news/openai-linked-swarm-activity-traceable-via-public-4e4fb2f5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-linked-swarm-activity-traceable-via-public-4e4fb2f5</guid>
-      <description><![CDATA[OpenAI-linked swarm activity observed in 2026 is fully traceable through public records, according to a Cisco Talos blog. The analysis compares the swarm’s tradecraft to early signals from current agentic attack activity, highlighting patterns in data exfiltration, command-and-control, and persistence. Security teams can use the documented tradecraft indicators to refine detection rules and improve attribution of future agentic attacks.]]></description>
-      <pubDate>Wed, 25 Nov 2026 11:00:00 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/the-great-escape-tradecraft-insights-from-an-agentic-swarm/">Cisco Talos</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical PHP Update for RHEL 9.8</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-php-update-for-rhel-9-8-10591740</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-php-update-for-rhel-9-8-10591740</guid>
-      <description><![CDATA[Red Hat released a critical PHP security update for RHEL 9.8 EUS, addressing multiple high-severity flaws. The patch carries a CVSS base score indicating critical impact, and each vulnerability is referenced by a CVE identifier in the advisory’s references. Security teams should apply the patch immediately to mitigate exploitation of the PHP flaws.]]></description>
-      <pubDate>Wed, 25 Nov 2026 10:57:32 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103492">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Former OpenAI Staff Granted $1M Bail After Bugging Allegation</title>
-      <link>https://secubuzz.com/news/former-openai-staff-granted-1m-bail-after-bugging-ee0b0587</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/former-openai-staff-granted-1m-bail-after-bugging-ee0b0587</guid>
-      <description><![CDATA[A former OpenAI employee was arrested for allegedly installing a covert recording device in the company's San Francisco offices. The device could have captured sensitive conversations, potentially exposing proprietary AI research, though no data exfiltration evidence exists. A federal judge approved a $1M bond, allowing release pending trial while OpenAI reportedly increased physical security.]]></description>
-      <pubDate>Wed, 25 Nov 2026 10:43:07 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html">The Hacker News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

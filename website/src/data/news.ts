@@ -11,6 +11,96 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ghostscript-vulnerability-updated-on-rhel-9-693eac98",
+    "title": "Ghostscript Vulnerability Updated on RHEL 9",
+    "summary": "Ghostscript on Red Hat Enterprise Linux 9 is affected by a security flaw. The vulnerability, rated Important by Red Hat Product Security, has a CVSS base score detailed in the CVE references; it permits potential exploitation of the Ghostscript interpreter. Red Hat has released an update; administrators should apply the Ghostscript patch immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103523",
+    "publishedAt": "2026-11-25T18:10:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostscript-vulnerability-updated-on-rhel-9",
+      "article-693eac98",
+      "693eac98",
+      "ghostscript-vulnerability-updated-on-rhel-9-2ee1de"
+    ]
+  },
+  {
+    "slug": "ghostscript-vulnerability-updated-on-rhel-8-07f53266",
+    "title": "Ghostscript Vulnerability Updated on RHEL 8",
+    "summary": "Ghostscript on Red Hat Enterprise Linux 8 is affected by a security flaw. The vulnerability, rated Important by Red Hat Product Security, has a CVSS base score detailed in the CVE references; it permits potential exploitation of the Ghostscript interpreter. Red Hat has released an update; administrators should apply the Ghostscript patch immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103524",
+    "publishedAt": "2026-11-25T18:09:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostscript-vulnerability-updated-on-rhel-8",
+      "article-07f53266",
+      "07f53266",
+      "ghostscript-vulnerability-updated-on-rhel-8-2ee1de"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103527-moderate-cockpit-security-update-498fab66",
+    "title": "RHSA-2026:103527: Moderate: cockpit security update",
+    "summary": "An update for cockpit is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Moderate.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103527",
+    "publishedAt": "2026-11-25T18:06:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103527-moderate-cockpit-security-update",
+      "article-498fab66",
+      "498fab66",
+      "rhsa-2026-103527-moderate-cockpit-security-update-2ee1de"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103528-moderate-cockpit-security-update-cc2c43dc",
+    "title": "RHSA-2026:103528: Moderate: cockpit security update",
+    "summary": "An update for cockpit is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Moderate.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103528",
+    "publishedAt": "2026-11-25T18:04:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103528-moderate-cockpit-security-update",
+      "article-cc2c43dc",
+      "cc2c43dc",
+      "rhsa-2026-103528-moderate-cockpit-security-update-2ee1de"
+    ]
+  },
+  {
+    "slug": "florida-ransomware-recovery-ceo-indicted-b6e2f558",
+    "title": "Florida Ransomware Recovery CEO Indicted",
+    "summary": "A federal grand jury indicted the CEO of a Florida-based ransomware recovery firm for allegedly lying about services and paying ransoms to cybercriminals. The indictment alleges the executive engaged in deceptive practices and facilitated financial transactions that supported ransomware operators. The case underscores the legal risks for recovery providers and signals increased scrutiny of the industry by law enforcement.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ransomware-doj-indictment-recovery",
+    "publishedAt": "2026-11-25T17:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "florida-ransomware-recovery-ceo-indicted",
+      "article-b6e2f558",
+      "b6e2f558",
+      "florida-ransomware-recovery-ceo-indicted-79e429"
+    ]
+  },
+  {
     "slug": "cve-2026-136267-improper-neutralization-of-special-8d7cb035",
     "title": "CVE-2026-136267 - Improper neutralization of special elements used in an OS command in Kiro Web",
     "summary": "We are aware of CVE-2026-136267, an issue in Kiro Web where tool-call markup inside content an agent session read, such as a repository file or a web page, could be repeated by certain models and run as a command in the subscriber's hosted development environment without a consent prompt.",
@@ -29,6 +119,24 @@ export const news: NewsBrief[] = [
       "8d7cb035",
       "cve-2026-136267-improper-neutralization-of-special-52c4af",
       "cve-2026-136267-improper-neutralization-of-special-elements-"
+    ]
+  },
+  {
+    "slug": "australia-enacts-digital-duty-of-care-law-72e9056e",
+    "title": "Australia Enacts Digital Duty of Care Law",
+    "summary": "Australia's Digital Duty of Care Act mandates online providers to establish protocols that shield users from violence, rape, and other harms. The law obligates tech companies to identify and mitigate foreseeable risks, extending oversight to content moderation and user safety measures. Compliance will require new policy frameworks, risk assessments, and reporting mechanisms, with enforcement provisions pending parliamentary approval.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/australia-passes-online-safety-legislation-preempt-harms",
+    "publishedAt": "2026-11-25T17:07:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "australia-enacts-digital-duty-of-care-law",
+      "article-72e9056e",
+      "72e9056e",
+      "australia-enacts-digital-duty-of-care-law-379941"
     ]
   },
   {
@@ -90,6 +198,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-365-bug-causes-blank-screens-in-office-a-5a5d675b",
+    "title": "Microsoft 365 Bug Causes Blank Screens in Office Apps",
+    "summary": "A startup issue in Microsoft 365 prevented users from opening Word, Excel, and Outlook, displaying a blank white screen. The bug, identified in a November 23, 2026 support notice, caused the applications to stall without visible controls, blocking access to document functionality. Microsoft released a patch addressing the issue; users should update to the latest version to restore normal operation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-365-white-screen-bug/",
+    "publishedAt": "2026-11-25T15:37:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-365-bug-causes-blank-screens-in-office-a",
+      "article-5a5d675b",
+      "5a5d675b",
+      "microsoft-365-bug-causes-blank-screens-in-office-a-3d2829",
+      "microsoft-365-bug-causes-blank-screens-in-office-apps"
+    ]
+  },
+  {
     "slug": "juniper-adds-cve-2026-103406-to-kev-catalog-27a80b9e",
     "title": "Juniper Adds CVE-2026-103406 to KEV Catalog",
     "summary": "Juniper Networks disclosed multiple vulnerabilities in Session Smart Conductor and Session Smart Router prior to 7.0.5, 7.1.7, and 7.2.3 that allow attackers to execute code. CISA listed CVE-2026-103406 as a known exploited vulnerability, indicating active exploitation in the wild, though specific CVSS is not disclosed. Administrators should review Juniper’s advisory links and apply firmware updates to mitigate the risk.",
@@ -107,6 +234,24 @@ export const news: NewsBrief[] = [
       "article-27a80b9e",
       "27a80b9e",
       "juniper-adds-cve-2026-103406-to-kev-catalog-68f6ca"
+    ]
+  },
+  {
+    "slug": "soc-management-2027-five-steps-against-ai-threats-066166bb",
+    "title": "SOC Management 2027: Five Steps Against AI Threats",
+    "summary": "The article outlines five steps for SOCs and MSSPs to manage AI-driven threats in 2027. It highlights the need to balance evolving attack speeds with limited resources, emphasizing detection, threat intelligence, and automation to counter phishing and expanding attack surfaces. The guidance encourages scaling operations, fostering innovation, and adopting AI tools to improve response times and reduce analyst fatigue.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/soc-management-in-2027/",
+    "publishedAt": "2026-11-25T15:30:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "soc-management-2027-five-steps-against-ai-threats",
+      "article-066166bb",
+      "066166bb",
+      "soc-management-2027-five-steps-against-ai-threats-7d44fa"
     ]
   },
   {
@@ -206,6 +351,24 @@ export const news: NewsBrief[] = [
       "d4f20836",
       "bot-detection-losing-battle-privileged-access-must-2e62cd",
       "bot-detection-losing-battle-privileged-access-must-equal"
+    ]
+  },
+  {
+    "slug": "adobe-aem-vulnerabilities-fixed-in-hotfix-644111b1",
+    "title": "Adobe AEM Vulnerabilities Fixed in Hotfix",
+    "summary": "Adobe Experience Manager Cloud Service, AEM 6.5, and AEM 6.5 LTS are affected by multiple vulnerabilities, including the issue identified as GRANITE-76751. The flaw permits unauthorized access to administrative interfaces and could allow attackers to execute arbitrary code, though no public exploit is confirmed. Adobe has released cumulative hotfixes; administrators should apply the updates promptly to secure their deployments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/adobe-security-advisory-av26-1205",
+    "publishedAt": "2026-11-25T15:15:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "adobe-aem-vulnerabilities-fixed-in-hotfix",
+      "article-644111b1",
+      "644111b1",
+      "adobe-aem-vulnerabilities-fixed-in-hotfix-4e96ef"
     ]
   },
   {
@@ -338,6 +501,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "intent-ids-leak-into-victim-logs-47fc12d6",
+    "title": "Intent IDs Leak Into Victim Logs",
+    "summary": "Intent IDs (iNNNN) from agentic offensive frameworks such as ARTEX and Cairn are inadvertently recorded in victim logs. The leakage exposes attacker identifiers, allowing defenders to track and deconflict malicious activity, though the signal weakens when logs are truncated. Mitigation requires sanitizing logs to remove iNNNN counters or implementing log filtering rules to prevent exposure of offensive framework identifiers.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/agentic-offensive-frameworks-intent-ids-artex-cairn",
+    "publishedAt": "2026-11-25T14:27:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "intent-ids-leak-into-victim-logs",
+      "article-47fc12d6",
+      "47fc12d6",
+      "intent-ids-leak-into-victim-logs-3ed729"
+    ]
+  },
+  {
     "slug": "ai-agents-exploit-unpatched-vulnerability-to-contr-c7737e1c",
     "title": "AI Agents Exploit Unpatched Vulnerability to Control University Server",
     "summary": "AI agents discovered an unpatched vulnerability in a university server and subsequently leveraged it to gain control. The flaw allowed remote code execution via an undisclosed mechanism, enabling attackers to execute arbitrary commands without authentication. The university should apply the vendor's patch or update firmware immediately to mitigate the risk.",
@@ -434,6 +615,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "latin-america-faces-industrial-cyberattacks-11344ec4",
+    "title": "Latin America Faces Industrial Cyberattacks",
+    "summary": "Cyberattacks targeting ports, pipelines, and manufacturing facilities have increased across Latin America, affecting critical infrastructure. Attackers exploit known vulnerabilities in industrial control systems, leveraging remote code execution and credential theft to disrupt operations. Operators should apply vendor patches, enforce network segmentation, and monitor for anomalous traffic to mitigate future incidents.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/latin-america-cyberattacks-ports-pipelines-manufacturing",
+    "publishedAt": "2026-11-25T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "latin-america-faces-industrial-cyberattacks",
+      "article-11344ec4",
+      "11344ec4",
+      "latin-america-faces-industrial-cyberattacks-dcc81d"
+    ]
+  },
+  {
+    "slug": "cloudflare-adds-ai-agent-search-toggle-67f13254",
+    "title": "Cloudflare Adds AI Agent Search Toggle",
+    "summary": "Cloudflare introduces a toggle that makes sites searchable by AI agents, adding automatic content indexing and a discoverable search API. The feature also supports native HTTP QUERY support, allowing agents to retrieve structured data directly from web pages. Deploying the toggle requires no code changes, but operators should review privacy settings to prevent sensitive content exposure to AI agents.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/search-for-agents/",
+    "publishedAt": "2026-11-25T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-adds-ai-agent-search-toggle",
+      "article-67f13254",
+      "67f13254",
+      "cloudflare-adds-ai-agent-search-toggle-202fb7"
+    ]
+  },
+  {
     "slug": "rhsa-2026-103496-important-grafana-security-update-ed28371c",
     "title": "RHSA-2026:103496: Important: grafana security update",
     "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -524,6 +741,25 @@ export const news: NewsBrief[] = [
       "902e912e",
       "rhsa-2026-103494-important-kernel-security-bug-fix-2ee1db",
       "rhsa-2026-103494-important-kernel-security-bug-fix-and-enhan"
+    ]
+  },
+  {
+    "slug": "ciso-matt-martin-discusses-budget-free-security-pr-5c5b28d7",
+    "title": "CISO Matt Martin Discusses Budget-Free Security Program",
+    "summary": "Matt Martin, CISO at Western Carolina University, outlines strategies for building a security program without a large budget. He emphasizes leveraging open-source tools, prioritizing risk-based controls, and fostering a security-aware culture to compensate for limited resources. The article offers actionable guidance for small institutions seeking to strengthen defenses while maintaining fiscal discipline.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ground-truth-ciso-matt-martin-on-building-a-real-security-program-without-an-enterprise-budget/",
+    "publishedAt": "2026-11-25T13:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ciso-matt-martin-discusses-budget-free-security-pr",
+      "article-5c5b28d7",
+      "5c5b28d7",
+      "ciso-matt-martin-discusses-budget-free-security-pr-4630eb",
+      "ciso-matt-martin-discusses-budget-free-security-program"
     ]
   },
   {
@@ -961,6 +1197,25 @@ export const news: NewsBrief[] = [
       "ee0b0587",
       "former-openai-staff-granted-1m-bail-after-bugging-4e44fb",
       "former-openai-staff-granted-1m-bail-after-bugging-allegation"
+    ]
+  },
+  {
+    "slug": "turnitin-investigates-cyberattack-on-plagiarism-se-15544e9b",
+    "title": "Turnitin Investigates Cyberattack on Plagiarism Service",
+    "summary": "Turnitin, the edtech plagiarism detection platform, reports a cyberattack targeting its systems recently. The incident reportedly involved unauthorized access attempts, but the company states its services remain fully operational and secure. Turnitin is conducting an investigation and has not disclosed any data compromise, urging users to monitor for potential impacts.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/plagiarism-checker-turnitin-investigating-cyberattack/",
+    "publishedAt": "2026-11-25T10:40:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "turnitin-investigates-cyberattack-on-plagiarism-se",
+      "article-15544e9b",
+      "15544e9b",
+      "turnitin-investigates-cyberattack-on-plagiarism-se-2a1313",
+      "turnitin-investigates-cyberattack-on-plagiarism-service"
     ]
   },
   {
@@ -1626,6 +1881,41 @@ export const news: NewsBrief[] = [
       "article-f951611b",
       "f951611b",
       "red-hat-satellite-client-critical-update-2ee1da"
+    ]
+  },
+  {
+    "slug": "gitlab-patch-release-19-6-2-19-5-9-19-4-11-19-3-10-40952464",
+    "title": "GitLab Patch Release: 19.6.2, 19.5.9, 19.4.11, 19.3.10, 19.2.11, 19.1.11, 19.0.12, 18.11.15",
+    "summary": "On November 25, 2026, we released versions 19.6.2, 19.5.9, 19.4.11 for GitLab Community Edition (CE) and Enterprise Edition (EE). These versions contain important bug and security fixes, and we strongly recommend that all self-managed GitLab installations be upgraded to one of these versions immediately. GitLab releases fixes for vulnerabilities in patch releases. The vulnerabilities are tracked as CVE-2026-105437, CVE-2026-129975, CVE-2026-119452.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "GitLab Security Releases",
+    "sourceUrl": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-6-2-released/",
+    "publishedAt": "2026-11-25T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-105437",
+      "CVE-2026-129975",
+      "CVE-2026-119452",
+      "CVE-2026-132156",
+      "CVE-2026-132822",
+      "CVE-2026-81336",
+      "CVE-2026-131867",
+      "CVE-2026-135221",
+      "CVE-2026-17194",
+      "CVE-2026-132102",
+      "CVE-2026-16744",
+      "CVE-2026-107633",
+      "CVE-2026-132794",
+      "CVE-2026-129982",
+      "CVE-2026-135636"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-patch-release-19-6-2-19-5-9-19-4-11-19-3-10",
+      "article-40952464",
+      "40952464",
+      "gitlab-patch-release-19-6-2-19-5-9-19-4-11-19-3-10-4be69c",
+      "gitlab-patch-release-19-6-2-19-5-9-19-4-11-19-3-10-19-2-11-1"
     ]
   },
   {
@@ -9240,253 +9530,6 @@ export const news: NewsBrief[] = [
       "article-4267da39",
       "4267da39",
       "badbox-3-0-ad-fraud-operation-disrupted-2a52b5"
-    ]
-  },
-  {
-    "slug": "oxloader-hijacks-dlls-to-spread-multiple-malware-f-45300881",
-    "title": "OXLoader Hijacks DLLs to Spread Multiple Malware Families",
-    "summary": "OXLoader malware exploits DLL hijacking to deliver multiple malware families via fake complaints and activators. The technique leverages trusted system DLL paths to inject malicious code, enabling stealthy distribution across victim machines. Security teams should monitor for anomalous DLL loads, apply whitelisting, and update endpoint protection to block OXLoader activity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/oxloader-abuses-dll-hijacking-to-distribute-different-malware-families",
-    "publishedAt": "2026-11-23T11:35:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "oxloader-hijacks-dlls-to-spread-multiple-malware-f",
-      "article-45300881",
-      "45300881",
-      "oxloader-hijacks-dlls-to-spread-multiple-malware-f-3109f0",
-      "oxloader-hijacks-dlls-to-spread-multiple-malware-families"
-    ]
-  },
-  {
-    "slug": "sap-netweaver-cisco-expressway-flaws-exploited-c9fd06e6",
-    "title": "SAP NetWeaver, Cisco Expressway Flaws Exploited",
-    "summary": "Threat actors leveraged vulnerabilities in SAP NetWeaver and Cisco Expressway to leak or alter server data and gain root-level command execution. The flaws, likely involving improper input validation and privilege checks, allow attackers to bypass authentication and execute arbitrary code. Administrators should apply vendor patches, enforce least privilege, and monitor for anomalous activity to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
-    "publishedAt": "2026-11-23T11:35:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sap-netweaver-cisco-expressway-flaws-exploited",
-      "article-c9fd06e6",
-      "c9fd06e6",
-      "sap-netweaver-cisco-expressway-flaws-exploited-321e51"
-    ]
-  },
-  {
-    "slug": "crowdstrike-to-acquire-zscaler-for-43-9b-c33d0a4d",
-    "title": "CrowdStrike to Acquire Zscaler for $43.9B",
-    "summary": "CrowdStrike announced a $43.9 billion acquisition of Zscaler, aiming to combine their security platforms and generate over $10 billion in annual recurring revenue. The deal positions CrowdStrike as a leading provider of integrated cloud-native security services, expanding its market reach across identity, network, and application layers.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/",
-    "publishedAt": "2026-11-23T11:31:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-to-acquire-zscaler-for-43-9b",
-      "article-c33d0a4d",
-      "c33d0a4d",
-      "crowdstrike-to-acquire-zscaler-for-43-9b-583182"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-low-impact-edk2-update-60cab848",
-    "title": "Red Hat Issues Low-Impact edk2 Update",
-    "summary": "Red Hat released a low-impact update for the edk2 firmware component on RHEL 8.4 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The update addresses multiple security issues, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Red Hat recommends applying the update immediately to maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102278",
-    "publishedAt": "2026-11-23T11:30:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-low-impact-edk2-update",
-      "article-60cab848",
-      "60cab848",
-      "red-hat-issues-low-impact-edk2-update-2ee15e"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102253-important-kernel-security-bug-fix-0d07fd6a",
-    "title": "RHSA-2026:102253: Important: kernel security, bug fix, and enhancement update",
-    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102253",
-    "publishedAt": "2026-11-23T11:14:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102253-important-kernel-security-bug-fix",
-      "article-0d07fd6a",
-      "0d07fd6a",
-      "rhsa-2026-102253-important-kernel-security-bug-fix-2ee15e",
-      "rhsa-2026-102253-important-kernel-security-bug-fix-and-enhan"
-    ]
-  },
-  {
-    "slug": "ai-agents-find-and-exploit-medical-imaging-zero-da-b001ba5a",
-    "title": "AI Agents Find and Exploit Medical Imaging Zero-Day",
-    "summary": "AI agents uncovered a zero-day flaw in an open-source medical imaging app in 11 minutes, allowing file writes outside the intended directory. The flaw grants full administrator control, enabling arbitrary code execution and server compromise. No patch exists; isolate the app, apply critical updates, and monitor for unauthorized file writes.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ai/",
-    "publishedAt": "2026-11-23T11:07:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-find-and-exploit-medical-imaging-zero-da",
-      "article-b001ba5a",
-      "b001ba5a",
-      "ai-agents-find-and-exploit-medical-imaging-zero-da-6f23d6",
-      "ai-agents-find-and-exploit-medical-imaging-zero-day"
-    ]
-  },
-  {
-    "slug": "cairn-framework-used-to-exploit-medical-ai-zero-da-402eb59c",
-    "title": "Cairn Framework Used to Exploit Medical AI Zero-Day",
-    "summary": "A Chinese-nexus threat actor used the open-source Cairn framework to exploit a zero-day in a medical imaging AI application. The zero-day enabled remote code execution after initial failed attempts, giving the attacker a foothold without a disclosed CVE. No vendor patch exists; teams should monitor exploitation, harden AI applications, and limit autonomous framework use.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/cairn-ai-agents-autonomous-attacks/",
-    "publishedAt": "2026-11-23T10:49:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cairn-framework-used-to-exploit-medical-ai-zero-da",
-      "article-402eb59c",
-      "402eb59c",
-      "cairn-framework-used-to-exploit-medical-ai-zero-da-53c0da",
-      "cairn-framework-used-to-exploit-medical-ai-zero-day"
-    ]
-  },
-  {
-    "slug": "rhel-10-2-eus-receives-moderate-security-patch-15dd34fc",
-    "title": "RHEL 10.2 EUS Receives Moderate Security Patch",
-    "summary": "Red Hat released a moderate-impact patch for Red Hat Enterprise Linux 10.2 Extended Update Support, addressing multiple security issues. The update carries a CVSS base score indicating moderate severity, with detailed scores linked via CVE references in the advisory. Administrators should apply the patch promptly to mitigate the identified vulnerabilities and maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102252",
-    "publishedAt": "2026-11-23T10:45:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhel-10-2-eus-receives-moderate-security-patch",
-      "article-15dd34fc",
-      "15dd34fc",
-      "rhel-10-2-eus-receives-moderate-security-patch-2ee15e"
-    ]
-  },
-  {
-    "slug": "gl-inet-cloud-flaw-enables-malware-on-routers-e0f4f497",
-    "title": "GL.iNet Cloud Flaw Enables Malware on Routers",
-    "summary": "A flaw in GL.iNet’s cloud remote-management service granted attackers unauthorized access to routers and KVM devices, allowing malware and backdoor installation. The vulnerability, discovered on November 20 2026, was patched by GL.iNet, but affected devices still need a firmware update to eliminate the risk. Security teams should verify firmware versions and apply the latest update; no additional workarounds are documented.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-gl-inet-cloud-flaw/",
-    "publishedAt": "2026-11-23T10:45:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gl-inet-cloud-flaw-enables-malware-on-routers",
-      "article-e0f4f497",
-      "e0f4f497",
-      "gl-inet-cloud-flaw-enables-malware-on-routers-2c9c6b"
-    ]
-  },
-  {
-    "slug": "attackers-exploited-microsoft-entra-connect-health-4760c6b1",
-    "title": "Attackers exploited Microsoft Entra Connect Health flaw to access tenant data",
-    "summary": "Attackers exploited a vulnerability in the Microsoft Entra Connect Health API to read the technical contact email addresses and configuration details of Entra tenants, the company warned affected organizations. Microsoft Entra Connect Health is a cloud-based monitoring service that gives administrators a single view of the health, performance and alerts for their on-premises identity infrastructure in the Microsoft Entra admin center.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/microsoft-entra-connect-health-vulnerability-tenant-data/",
-    "publishedAt": "2026-11-23T10:34:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "attackers-exploited-microsoft-entra-connect-health",
-      "article-4760c6b1",
-      "4760c6b1",
-      "attackers-exploited-microsoft-entra-connect-health-7d5536",
-      "attackers-exploited-microsoft-entra-connect-health-flaw-to-a"
-    ]
-  },
-  {
-    "slug": "ai-driven-breach-exposes-over-1-million-records-16a5e138",
-    "title": "AI-Driven Breach Exposes Over 1 Million Records",
-    "summary": "Chinese-speaking hackers leveraged an AI testing tool to autonomously breach ten organizations between August and September 2026, exposing over one million personal records from a single victim. The tool performed most attack steps, with operators only specifying targets, indicating a low-effort exploitation chain. Affected entities should conduct forensic investigations, strengthen access controls, and notify impacted individuals per regulatory requirements.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-autonomous-ai/",
-    "publishedAt": "2026-11-23T10:27:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-driven-breach-exposes-over-1-million-records",
-      "article-16a5e138",
-      "16a5e138",
-      "ai-driven-breach-exposes-over-1-million-records-7b8b24"
-    ]
-  },
-  {
-    "slug": "critical-asp-net-anticsrf-flaw-enables-remote-code-eded742f",
-    "title": "Critical ASP.NET AntiCsrf Flaw Enables Remote Code Execution Without Authentication",
-    "summary": "A critical flaw in the Idunno.AntiCsrf library used by legacy ASP.NET WebForms apps has been actively exploited, letting attackers run arbitrary code on servers without authentication. The vulnerability, CVE-2026-131914, scores 9.3 on CVSS and has already caused incidents worldwide. Affected organizations must update or remove the library immediately and apply vendor patches to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/asp-net-anticsrf-flaw-under-attack/",
-    "publishedAt": "2026-11-23T10:25:17.000Z",
-    "cves": [
-      "CVE-2026-131914"
-    ],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
-      }
-    ],
-    "aliases": [
-      "critical-asp-net-anticsrf-flaw-enables-remote-code",
-      "article-eded742f",
-      "eded742f",
-      "critical-asp-net-anticsrf-flaw-enables-remote-code-28c2eb",
-      "critical-asp-net-anticsrf-flaw-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-webkit2gtk3-security-update-ee9994d5",
-    "title": "Red Hat releases webkit2gtk3 security update",
-    "summary": "Red Hat released a critical webkit2gtk3 security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support. The update fixes multiple vulnerabilities, each with a CVSS base score in the CVE references, and is rated Important. Apply the update promptly today to prevent exploitation of the affected webkit2gtk3 components.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102248",
-    "publishedAt": "2026-11-23T10:00:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-webkit2gtk3-security-update",
-      "article-ee9994d5",
-      "ee9994d5",
-      "red-hat-releases-webkit2gtk3-security-update-2ee15e"
     ]
   }
 ];
