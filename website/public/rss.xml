@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 22:46:30 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 23:44:25 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Retailers Face Heightened Black Friday Threats</title>
+      <link>https://secubuzz.com/news/retailers-face-heightened-black-friday-threats-698e160b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/retailers-face-heightened-black-friday-threats-698e160b</guid>
+      <description><![CDATA[Black Friday drives attackers to target consumers and retailers with fraud, impersonation, credential theft, and malware. Retailers face amplified bot activity, business-logic abuse, operational disruption, and emerging AI-driven commerce risks that can amplify damage. Security teams should enforce stricter authentication, monitor bot traffic, audit business logic, and prepare AI-aware defenses to mitigate these threats.]]></description>
+      <pubDate>Wed, 25 Nov 2026 23:02:23 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-two-retailers/">Arctic Wolf</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Ubuntu libpcap Vulnerabilities Expose Arbitrary Code Execution</title>
+      <link>https://secubuzz.com/news/ubuntu-libpcap-vulnerabilities-expose-arbitrary-co-0ac048e6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-libpcap-vulnerabilities-expose-arbitrary-co-0ac048e6</guid>
+      <description><![CDATA[Ubuntu 22.04 LTS and 24.04 LTS suffer libpcap flaws that fail to validate MAC addresses in pcap_ether_aton(), causing out-of-bounds reads and writes. CVE-2025-11961 may enable arbitrary code execution or denial of service, while CVE-2026-18238 allows malicious rpcap servers to read sensitive data or crash clients.]]></description>
+      <pubDate>Wed, 25 Nov 2026 22:41:37 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9203-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Palo Alto PAN-OS Targeted by Fragnesia Exploit Chain</title>
       <link>https://secubuzz.com/news/palo-alto-pan-os-targeted-by-fragnesia-exploit-cha-f23ba752</link>
@@ -42,6 +60,24 @@
       <pubDate>Wed, 25 Nov 2026 21:14:58 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9198-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>GitLab Issues Patches for Multiple Vulnerabilities</title>
+      <link>https://secubuzz.com/news/gitlab-issues-patches-for-multiple-vulnerabilities-8b2c5762</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-issues-patches-for-multiple-vulnerabilities-8b2c5762</guid>
+      <description><![CDATA[GitLab Community and Enterprise Editions before 19.6.2, 19.5.9, 19.4.11, 19.3.10, 19.2.11, 19.1.11, 19.0.12, and 18.11.15 contain undisclosed vulnerabilities. The advisory lacks CVE IDs, but the flaws could enable privilege escalation or arbitrary code execution within GitLab. GitLab recommends upgrading to the patched releases; administrators should apply updates promptly to mitigate the risk.]]></description>
+      <pubDate>Wed, 25 Nov 2026 21:06:40 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/gitlab-security-advisory-av26-1210">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>FIFA Breach Involves Limited Personal and Business Data</title>
+      <link>https://secubuzz.com/news/fifa-breach-involves-limited-personal-and-business-670d0501</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fifa-breach-involves-limited-personal-and-business-670d0501</guid>
+      <description><![CDATA[The Swiss-based FIFA governing body reports that hackers accessed a limited set of personal and business information. The breach does not appear to involve financial data or large-scale credential theft, but the exact scope remains under investigation. FIFA is collaborating with authorities and law enforcement to determine the extent of the compromise and implement remedial measures.]]></description>
+      <pubDate>Wed, 25 Nov 2026 20:40:00 GMT</pubDate>
+      <source url="https://therecord.media/fifa-data-breach-limited">The Record</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>USN-9202-1: Kerberos vulnerabilities</title>
@@ -185,6 +221,15 @@
       <description><![CDATA[An update for cockpit is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Moderate.]]></description>
       <pubDate>Wed, 25 Nov 2026 18:06:38 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103527">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:103526: Moderate: cockpit security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103526-moderate-cockpit-security-update-8089f5c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103526-moderate-cockpit-security-update-8089f5c8</guid>
+      <description><![CDATA[An update for cockpit is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Moderate.]]></description>
+      <pubDate>Wed, 25 Nov 2026 18:05:54 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103526">Red Hat Security Advisories</source>
       <category>General</category>
     </item>
     <item>
@@ -411,51 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 15:00:00 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/">BleepingComputer</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Drupal Core Exploit CVE-2026-132165 Enables Passwordless Takeover</title>
-      <link>https://secubuzz.com/news/drupal-core-exploit-cve-2026-132165-enables-passwo-34e73f87</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-exploit-cve-2026-132165-enables-passwo-34e73f87</guid>
-      <description><![CDATA[Hackers are exploiting CVE-2026-132165, a critical flaw in Drupal core, to take over live websites without authentication. The flaw permits unauthenticated remote code execution via HTTP requests, granting full site control; attacks were reported on November 19, 2026, with a CVSS score of 10.0.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:51:54 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/drupal-critical-security-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Shufti Fraud Hub Reveals Links Among Legitimate Accounts</title>
-      <link>https://secubuzz.com/news/shufti-fraud-hub-reveals-links-among-legitimate-ac-5b444c73</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/shufti-fraud-hub-reveals-links-among-legitimate-ac-5b444c73</guid>
-      <description><![CDATA[Shufti launched its Fraud Hub, linking identity, device, biometric, and behavioral signals to detect suspicious verification attempts. The platform identifies coordinated fraud networks and monitors emerging risks across the user lifecycle, revealing links between accounts that seem legitimate. Teams should use Fraud Hub’s context-aware analytics to supplement individual checks, enabling proactive decisions before fraud escalates and lowering onboarding risk.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:45:00 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/25/shufti-fraud-hub/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Flatpak Update Released for RHEL7 ELS</title>
-      <link>https://secubuzz.com/news/flatpak-update-released-for-rhel7-els-397aa7dc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/flatpak-update-released-for-rhel7-els-397aa7dc</guid>
-      <description><![CDATA[Red Hat issued a flatpak security update for RHEL 7 Extended Lifecycle Support, addressing several vulnerabilities. The update carries an Important security impact rating, with CVSS base scores listed in the CVE references. Apply the patch immediately and to prevent exploitation of the disclosed critical flaws and maintain system integrity.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:34:45 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103503">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Grafana Update Released for RHEL9.8 EUS</title>
-      <link>https://secubuzz.com/news/grafana-update-released-for-rhel9-8-eus-b6824f8d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/grafana-update-released-for-rhel9-8-eus-b6824f8d</guid>
-      <description><![CDATA[Red Hat issued a grafana security update for RHEL 9.8 Extended Update Support, fixing several vulnerabilities. The update carries an Important security impact rating, with CVSS base scores listed in the CVE references. Apply the patch immediately to prevent exploitation of the disclosed critical flaws, maintain system stability, and ensure compliance.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:33:32 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103497">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103502: Important: raptor2 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103502-important-raptor2-security-update-ec4afeaa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103502-important-raptor2-security-update-ec4afeaa</guid>
-      <description><![CDATA[An update for raptor2 is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:32:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103502">Red Hat Security Advisories</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

@@ -252,6 +252,33 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-69181",
+    "cveID": "CVE-2026-69181",
+    "slug": "cve-2026-69181",
+    "vendor": "Composer",
+    "product": "tastyigniter/tastyigniter",
+    "name": "TastyIgniter permits Path Traversal in Media Upload",
+    "dateAdded": "2026-11-25",
+    "dueDate": "",
+    "cvss": 7.6,
+    "severity": "High",
+    "cwe": "CWE-23",
+    "ransomware": false,
+    "description": "Arbitrary file write outside media/uploads/",
+    "requiredAction": "Upgrade tastyigniter/tastyigniter to version 4.3.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rj59-9f77-mvg5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69181"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-69179",
     "cveID": "CVE-2026-69179",
     "slug": "cve-2026-69179",
@@ -1764,33 +1791,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115565"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-130176",
-    "cveID": "CVE-2026-130176",
-    "slug": "cve-2026-130176",
-    "vendor": "Pip",
-    "product": "amqtt",
-    "name": "aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-401",
-    "ransomware": false,
-    "description": "amqtt is vulnerable to a remote denial of service caused by incomplete MQTT QoS 2 transactions remaining allocated after the associated client disconnects. MQTT QoS 2 uses a four-step handshake to provide exactly-once delivery.",
-    "requiredAction": "Upgrade amqtt to version 0.12.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wcqj-wx85-c75p"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130176"
       }
     ],
     "source": "GITHUB"

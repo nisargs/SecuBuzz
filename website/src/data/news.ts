@@ -11,6 +11,46 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "retailers-face-heightened-black-friday-threats-698e160b",
+    "title": "Retailers Face Heightened Black Friday Threats",
+    "summary": "Black Friday drives attackers to target consumers and retailers with fraud, impersonation, credential theft, and malware. Retailers face amplified bot activity, business-logic abuse, operational disruption, and emerging AI-driven commerce risks that can amplify damage. Security teams should enforce stricter authentication, monitor bot traffic, audit business logic, and prepare AI-aware defenses to mitigate these threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-two-retailers/",
+    "publishedAt": "2026-11-25T23:02:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "retailers-face-heightened-black-friday-threats",
+      "article-698e160b",
+      "698e160b",
+      "retailers-face-heightened-black-friday-threats-601a63"
+    ]
+  },
+  {
+    "slug": "ubuntu-libpcap-vulnerabilities-expose-arbitrary-co-0ac048e6",
+    "title": "Ubuntu libpcap Vulnerabilities Expose Arbitrary Code Execution",
+    "summary": "Ubuntu 22.04 LTS and 24.04 LTS suffer libpcap flaws that fail to validate MAC addresses in pcap_ether_aton(), causing out-of-bounds reads and writes. CVE-2025-11961 may enable arbitrary code execution or denial of service, while CVE-2026-18238 allows malicious rpcap servers to read sensitive data or crash clients.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9203-1",
+    "publishedAt": "2026-11-25T22:41:37.000Z",
+    "cves": [
+      "CVE-2025-11961",
+      "CVE-2026-18238"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-libpcap-vulnerabilities-expose-arbitrary-co",
+      "article-0ac048e6",
+      "0ac048e6",
+      "ubuntu-libpcap-vulnerabilities-expose-arbitrary-co-7e6d81",
+      "ubuntu-libpcap-vulnerabilities-expose-arbitrary-code-executi"
+    ]
+  },
+  {
     "slug": "palo-alto-pan-os-targeted-by-fragnesia-exploit-cha-f23ba752",
     "title": "Palo Alto PAN-OS Targeted by Fragnesia Exploit Chain",
     "summary": "Threat actors are chaining PHP2Shell and Fragnesia vulnerabilities to compromise Palo Alto Networks PAN-OS devices with internet-exposed management interfaces. The Fragnesia flaw enables attackers to execute arbitrary code, while PHP2Shell facilitates lateral movement, resulting in full device takeover. Administrators should update PAN-OS to the latest release, disable exposed management interfaces, and monitor for suspicious activity.",
@@ -83,6 +123,43 @@ export const news: NewsBrief[] = [
       "b5fe167c",
       "http-tiny-header-forwarding-flaw-exposes-credentia-7e776e",
       "http-tiny-header-forwarding-flaw-exposes-credentials"
+    ]
+  },
+  {
+    "slug": "gitlab-issues-patches-for-multiple-vulnerabilities-8b2c5762",
+    "title": "GitLab Issues Patches for Multiple Vulnerabilities",
+    "summary": "GitLab Community and Enterprise Editions before 19.6.2, 19.5.9, 19.4.11, 19.3.10, 19.2.11, 19.1.11, 19.0.12, and 18.11.15 contain undisclosed vulnerabilities. The advisory lacks CVE IDs, but the flaws could enable privilege escalation or arbitrary code execution within GitLab. GitLab recommends upgrading to the patched releases; administrators should apply updates promptly to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/gitlab-security-advisory-av26-1210",
+    "publishedAt": "2026-11-25T21:06:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-issues-patches-for-multiple-vulnerabilities",
+      "article-8b2c5762",
+      "8b2c5762",
+      "gitlab-issues-patches-for-multiple-vulnerabilities-4ddfa6"
+    ]
+  },
+  {
+    "slug": "fifa-breach-involves-limited-personal-and-business-670d0501",
+    "title": "FIFA Breach Involves Limited Personal and Business Data",
+    "summary": "The Swiss-based FIFA governing body reports that hackers accessed a limited set of personal and business information. The breach does not appear to involve financial data or large-scale credential theft, but the exact scope remains under investigation. FIFA is collaborating with authorities and law enforcement to determine the extent of the compromise and implement remedial measures.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/fifa-data-breach-limited",
+    "publishedAt": "2026-11-25T20:40:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fifa-breach-involves-limited-personal-and-business",
+      "article-670d0501",
+      "670d0501",
+      "fifa-breach-involves-limited-personal-and-business-5379de",
+      "fifa-breach-involves-limited-personal-and-business-data"
     ]
   },
   {
@@ -405,6 +482,24 @@ export const news: NewsBrief[] = [
       "article-498fab66",
       "498fab66",
       "rhsa-2026-103527-moderate-cockpit-security-update-2ee1de"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103526-moderate-cockpit-security-update-8089f5c8",
+    "title": "RHSA-2026:103526: Moderate: cockpit security update",
+    "summary": "An update for cockpit is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Moderate.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103526",
+    "publishedAt": "2026-11-25T18:05:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103526-moderate-cockpit-security-update",
+      "article-8089f5c8",
+      "8089f5c8",
+      "rhsa-2026-103526-moderate-cockpit-security-update-2ee1de"
     ]
   },
   {
@@ -924,6 +1019,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-103501-important-raptor2-security-update-166b256a",
+    "title": "RHSA-2026:103501: Important: raptor2 security update",
+    "summary": "An update for raptor2 is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103501",
+    "publishedAt": "2026-11-25T14:37:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103501-important-raptor2-security-update",
+      "article-166b256a",
+      "166b256a",
+      "rhsa-2026-103501-important-raptor2-security-update-2ee1dd"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103498-important-grafana-security-update-cc131a44",
+    "title": "RHSA-2026:103498: Important: grafana security update",
+    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103498",
+    "publishedAt": "2026-11-25T14:37:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103498-important-grafana-security-update",
+      "article-cc131a44",
+      "cc131a44",
+      "rhsa-2026-103498-important-grafana-security-update-2ee1db"
+    ]
+  },
+  {
     "slug": "flatpak-update-released-for-rhel7-els-397aa7dc",
     "title": "Flatpak Update Released for RHEL7 ELS",
     "summary": "Red Hat issued a flatpak security update for RHEL 7 Extended Lifecycle Support, addressing several vulnerabilities. The update carries an Important security impact rating, with CVSS base scores listed in the CVE references. Apply the patch immediately and to prevent exploitation of the disclosed critical flaws and maintain system integrity.",
@@ -1323,6 +1454,24 @@ export const news: NewsBrief[] = [
       "c1c1f48c",
       "rhsa-2026-103505-important-rsync-security-bug-fix-2ee1dd",
       "rhsa-2026-103505-important-rsync-security-bug-fix-and-enhanc"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103499-moderate-grafana-security-update-b5387553",
+    "title": "RHSA-2026:103499: Moderate: grafana security update",
+    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103499",
+    "publishedAt": "2026-11-25T13:23:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103499-moderate-grafana-security-update",
+      "article-b5387553",
+      "b5387553",
+      "rhsa-2026-103499-moderate-grafana-security-update-2ee1db"
     ]
   },
   {
@@ -9439,154 +9588,6 @@ export const news: NewsBrief[] = [
       "article-012d7a37",
       "012d7a37",
       "red-hat-issues-qt6-update-for-rhel-10-0-eus-2ee162"
-    ]
-  },
-  {
-    "slug": "vmcloudoor-backdoor-targets-alibaba-tencent-huawei-e4513407",
-    "title": "Vmcloudoor Backdoor Targets Alibaba, Tencent, Huawei Clouds",
-    "summary": "The newly discovered Linux backdoor, Vmcloudoor, covertly commandeers cloud servers, enabling attackers to exfiltrate sensitive files. Designed to infect virtual machines on Chinese cloud platforms, it masquerades as a legitimate cloud-management agent, reducing detection by administrators. Security teams should isolate affected instances, update to the latest vendor patches, and monitor for unauthorized agent activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/vmcloudoor-malware/",
-    "publishedAt": "2026-11-23T14:14:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vmcloudoor-backdoor-targets-alibaba-tencent-huawei",
-      "article-e4513407",
-      "e4513407",
-      "vmcloudoor-backdoor-targets-alibaba-tencent-huawei-67482d",
-      "vmcloudoor-backdoor-targets-alibaba-tencent-huawei-clouds"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-php-update-for-rhel-10-c415e070",
-    "title": "Red Hat Releases Critical PHP Update for RHEL 10",
-    "summary": "Red Enterprise Linux 10 users receive a php update addressing multiple security flaws in the PHP engine. The update fixes vulnerabilities that could allow remote code execution or privilege escalation; CVSS scores are listed, but no public exploit exists. Red Hat recommends applying the patch immediately via the standard package manager; no work-arounds are available.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102300",
-    "publishedAt": "2026-11-23T14:02:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-php-update-for-rhel-10",
-      "article-c415e070",
-      "c415e070",
-      "red-hat-releases-critical-php-update-for-rhel-10-2ee161"
-    ]
-  },
-  {
-    "slug": "clickfix-lures-infrastructure-and-payloads-exposed-5b86e534",
-    "title": "ClickFix Lures, Infrastructure, and Payloads Exposed",
-    "summary": "The article reviews ClickFix, a phishing operation that deploys convincing fake verification pages to lure victims. It details the infrastructure used to host the lures, the variety of payloads delivered, and the tactics employed to evade detection. Defenders should block known domains, monitor for credential harvesting attempts, and apply web filtering to mitigate the threat.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/tradecraft-tuesday-clickfix-lures-and-infrastructure",
-    "publishedAt": "2026-11-23T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "clickfix-lures-infrastructure-and-payloads-exposed",
-      "article-5b86e534",
-      "5b86e534",
-      "clickfix-lures-infrastructure-and-payloads-exposed-1565b9"
-    ]
-  },
-  {
-    "slug": "cloudflare-builds-dns-testing-tools-for-internal-f-47f9c202",
-    "title": "Cloudflare Builds DNS Testing Tools for Internal Framework",
-    "summary": "Cloudflare developed internal tools to extend its testing framework for networking protocols, focusing on DNS. The new DNS tooling enables teams to probe protocol behavior, identify edge cases, and validate performance under load. These tools are available internally and can be leveraged by security teams to assess DNS resilience and detect anomalies.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/probing-dns-at-cloudflare/",
-    "publishedAt": "2026-11-23T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-builds-dns-testing-tools-for-internal-f",
-      "article-47f9c202",
-      "47f9c202",
-      "cloudflare-builds-dns-testing-tools-for-internal-f-6baf0f",
-      "cloudflare-builds-dns-testing-tools-for-internal-framework"
-    ]
-  },
-  {
-    "slug": "usn-9186-1-tomcat-vulnerabilities-eede7db4",
-    "title": "USN-9186-1: Tomcat vulnerabilities",
-    "summary": "Tomcat 10 has been updated to 10.1.61 in Ubuntu 24.04 LTS, Ubuntu 26.04 LTS and Ubuntu 26.10. Tomcat 11 has been updated to 11.0.27 in Ubuntu 26.04 LTS and Ubuntu 26.10. In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9186-1",
-    "publishedAt": "2026-11-23T13:59:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9186-1-tomcat-vulnerabilities",
-      "article-eede7db4",
-      "eede7db4",
-      "usn-9186-1-tomcat-vulnerabilities-7e77ea"
-    ]
-  },
-  {
-    "slug": "wordpress-site-hosts-13-clickfix-malware-traps-30fce793",
-    "title": "WordPress Site Hosts 13 ClickFix Malware Traps",
-    "summary": "A compromised WordPress site hosted 13 ClickFix traps from three malware kits, each presenting a fake security check. The traps use social engineering to convince users to paste malicious commands, a phishing kit requiring user interaction. Security teams should remove infected plugins, update WordPress core, and monitor for similar deceptive traps.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-plant-13-clickfix-traps/",
-    "publishedAt": "2026-11-23T13:58:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wordpress-site-hosts-13-clickfix-malware-traps",
-      "article-30fce793",
-      "30fce793",
-      "wordpress-site-hosts-13-clickfix-malware-traps-bb8ae7"
-    ]
-  },
-  {
-    "slug": "php-session-overwrite-flaw-enables-remote-code-exe-5c0c352c",
-    "title": "PHP Session Overwrite Flaw Enables Remote Code Execution",
-    "summary": "A PHP session overwrite flaw lets attackers inject malicious data during an interrupted overwrite, triggering deserialization and remote code execution on apps. The flaw, part of the PHP2Shell chain, exploits improper session data handling and can be triggered without authentication, risking server compromise. No patch exists yet; admins should disable session overwrite or apply custom fixes to block deserialization attacks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
-    "publishedAt": "2026-11-23T13:58:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php-session-overwrite-flaw-enables-remote-code-exe",
-      "article-5c0c352c",
-      "5c0c352c",
-      "php-session-overwrite-flaw-enables-remote-code-exe-3953b3",
-      "php-session-overwrite-flaw-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-containernetworking-plugins-for-se-83a9fa45",
-    "title": "Red Hat Updates containernetworking-plugins for Security",
-    "summary": "Red Hat released a security update for containernetworking-plugins on RHEL 9, fixing local privilege escalation via container networking. Each flaw has a CVSS base score, with the highest rated as Important, indicating a high exploitation risk though no active attacks have been reported. Apply the update immediately and monitor logs for privilege escalation attempts as the patch closes critical paths.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102292",
-    "publishedAt": "2026-11-23T13:44:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-containernetworking-plugins-for-se",
-      "article-83a9fa45",
-      "83a9fa45",
-      "red-hat-updates-containernetworking-plugins-for-se-2ee15f",
-      "red-hat-updates-containernetworking-plugins-for-security"
     ]
   }
 ];
