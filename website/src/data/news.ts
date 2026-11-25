@@ -11,6 +11,45 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "geoserver-cves-2026-120705-2026-129243-exploited-a0f1dffb",
+    "title": "GeoServer CVEs 2026-120705, 2026-129243 Exploited",
+    "summary": "GeoServer versions before 2.27.7, 2.28.6, and 3.0.2 are vulnerable to two CVEs, CVE-2026-120705 and CVE-2026-129243, which attackers are exploiting in the wild. Both CVEs allow remote code execution through improper input validation in GeoServer's API, resulting in full system compromise. Administrators should immediately apply the latest GeoServer 2.27.7, 2.28.6, or 3.0.2 releases or install the vendor-issued patch to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/geoserver-security-advisory-av26-1207",
+    "publishedAt": "2026-11-25T15:29:23.000Z",
+    "cves": [
+      "CVE-2026-120705",
+      "CVE-2026-129243"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "geoserver-cves-2026-120705-2026-129243-exploited",
+      "article-a0f1dffb",
+      "a0f1dffb",
+      "geoserver-cves-2026-120705-2026-129243-exploited-680247"
+    ]
+  },
+  {
+    "slug": "geoserver-high-severity-flaws-targeted-for-rce-555042be",
+    "title": "GeoServer High-Severity Flaws Targeted for RCE",
+    "summary": "Attackers are probing GeoServer instances for two vulnerabilities that can be chained with other bugs to achieve remote code execution. The flaws stem from insufficient input sanitization in GeoServer's configuration handling, allowing attackers to inject malicious payloads that bypass authentication. Administrators should update to the latest GeoServer release or apply the vendor-issued patch to close the vulnerabilities and prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/",
+    "publishedAt": "2026-11-25T15:27:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "geoserver-high-severity-flaws-targeted-for-rce",
+      "article-555042be",
+      "555042be",
+      "geoserver-high-severity-flaws-targeted-for-rce-61efa8"
+    ]
+  },
+  {
     "slug": "flatpak-update-released-for-rhel7-els-397aa7dc",
     "title": "Flatpak Update Released for RHEL7 ELS",
     "summary": "Red Hat issued a flatpak security update for RHEL 7 Extended Lifecycle Support, addressing several vulnerabilities. The update carries an Important security impact rating, with CVSS base scores listed in the CVE references. Apply the patch immediately and to prevent exploitation of the disclosed critical flaws and maintain system integrity.",
@@ -47,6 +86,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-103502-important-raptor2-security-update-ec4afeaa",
+    "title": "RHSA-2026:103502: Important: raptor2 security update",
+    "summary": "An update for raptor2 is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103502",
+    "publishedAt": "2026-11-25T14:32:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103502-important-raptor2-security-update",
+      "article-ec4afeaa",
+      "ec4afeaa",
+      "rhsa-2026-103502-important-raptor2-security-update-2ee1dd"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103495-critical-php-security-update-681a61ef",
+    "title": "RHSA-2026:103495: Critical: php security update",
+    "summary": "An update for php is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103495",
+    "publishedAt": "2026-11-25T14:20:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103495-critical-php-security-update",
+      "article-681a61ef",
+      "681a61ef",
+      "rhsa-2026-103495-critical-php-security-update-2ee1db"
+    ]
+  },
+  {
     "slug": "shinyhunters-announces-return-inception-denies-tie-65fd194b",
     "title": "ShinyHunters Announces Return, Inception Denies Ties",
     "summary": "An account linked to the ShinyHunters hacking group announced its return, while Okta identified potential connections between ShinyHunters and the Inception group. The post, titled 'ShinyHunters Claims Comeback, New Inception Group Rejects Alleged Ties,' was first published on SecurityWeek. Security teams should monitor ShinyHunters activity and review Okta’s findings for potential insider or credential compromise indicators.",
@@ -66,6 +141,46 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hackers-use-hugging-face-ai-to-build-fake-microsof-06518be1",
+    "title": "Hackers Use Hugging Face AI to Build Fake Microsoft and Google Login Pages to Steal Passwords",
+    "summary": "Attackers used Hugging Face’s DeepSite AI website builder to create fake sign-in pages and hosted them on the same platform developers use to share AI demos. Aikido Security identified 42 pages on Hugging Face Spaces that impersonated 28 brands, including Microsoft, Google, PayPal, Chase, and Coinbase.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hugging-face-ai-phishing-pages/",
+    "publishedAt": "2026-11-25T14:13:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-hugging-face-ai-to-build-fake-microsof",
+      "article-06518be1",
+      "06518be1",
+      "hackers-use-hugging-face-ai-to-build-fake-microsof-4ba16b",
+      "hackers-use-hugging-face-ai-to-build-fake-microsoft-and-goog"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-critical-hex-pm-vulnerability-to-e-28b80aed",
+    "title": "Hackers Exploit Critical Hex.pm Vulnerability to Execute Commands on Six Servers",
+    "summary": "A critical Hex.pm vulnerability was exploited on November 23, 2026, allowing attackers to execute operating system commands on six web servers. The flaw, tracked as CVE-2026-129514, carries a maximum severity score of 10.0 and required no account.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-critical-hex-pm-vulnerability/",
+    "publishedAt": "2026-11-25T14:05:27.000Z",
+    "cves": [
+      "CVE-2026-129514"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-critical-hex-pm-vulnerability-to-e",
+      "article-28b80aed",
+      "28b80aed",
+      "hackers-exploit-critical-hex-pm-vulnerability-to-e-666ec5",
+      "hackers-exploit-critical-hex-pm-vulnerability-to-execute-com"
+    ]
+  },
+  {
     "slug": "rhsa-2026-103496-important-grafana-security-update-ed28371c",
     "title": "RHSA-2026:103496: Important: grafana security update",
     "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -81,6 +196,24 @@ export const news: NewsBrief[] = [
       "article-ed28371c",
       "ed28371c",
       "rhsa-2026-103496-important-grafana-security-update-2ee1db"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103500-important-raptor2-security-update-643fa3da",
+    "title": "RHSA-2026:103500: Important: raptor2 security update",
+    "summary": "An update for raptor2 is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103500",
+    "publishedAt": "2026-11-25T13:41:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103500-important-raptor2-security-update",
+      "article-643fa3da",
+      "643fa3da",
+      "rhsa-2026-103500-important-raptor2-security-update-2ee1dd"
     ]
   },
   {
@@ -157,6 +290,25 @@ export const news: NewsBrief[] = [
       "026b05b4",
       "ransomware-attack-disrupts-guadeloupe-hospital-ope-77a600",
       "ransomware-attack-disrupts-guadeloupe-hospital-operations"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103505-important-rsync-security-bug-fix-c1c1f48c",
+    "title": "RHSA-2026:103505: Important: rsync security, bug fix, and enhancement update",
+    "summary": "An update for rsync is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103505",
+    "publishedAt": "2026-11-25T13:28:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103505-important-rsync-security-bug-fix",
+      "article-c1c1f48c",
+      "c1c1f48c",
+      "rhsa-2026-103505-important-rsync-security-bug-fix-2ee1dd",
+      "rhsa-2026-103505-important-rsync-security-bug-fix-and-enhanc"
     ]
   },
   {
@@ -9324,154 +9476,6 @@ export const news: NewsBrief[] = [
       "article-caa3d2a4",
       "caa3d2a4",
       "rhsa-2026-102224-important-grafana-security-update-2ee15e"
-    ]
-  },
-  {
-    "slug": "ai-assisted-attacks-trigger-unauthorized-bank-tran-2b6acc3a",
-    "title": "AI-Assisted Attacks Trigger Unauthorized Bank Transfers",
-    "summary": "AI-assisted threat actors targeted Indian ICT assets, forcing unauthorized financial transfers at banks and fintech firms. The attacks leveraged machine-learning-driven phishing and credential-stealing techniques, exploiting known login-bypass flaws to move laterally within banking networks. Red CERT-In urges immediate patching of vulnerable systems and enhanced monitoring of transaction logs to detect further unauthorized activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
-    "publishedAt": "2026-11-23T08:24:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-assisted-attacks-trigger-unauthorized-bank-tran",
-      "article-2b6acc3a",
-      "2b6acc3a",
-      "ai-assisted-attacks-trigger-unauthorized-bank-tran-70818c",
-      "ai-assisted-attacks-trigger-unauthorized-bank-transfers"
-    ]
-  },
-  {
-    "slug": "xdg-desktop-portal-update-for-rhel-8-6-released-4ae96a4a",
-    "title": "xdg-desktop-portal Update for RHEL 8.6 Released",
-    "summary": "Red Hat issued an xdg-desktop-portal update for RHEL 8.6 to address security concerns. The update fixes vulnerabilities that could allow attackers to gain unauthorized access to desktop portal services, potentially leading to privilege escalation or data exposure. Users should apply the patch promptly and verify the CVSS scores provided in the advisory for detailed risk assessment.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102225",
-    "publishedAt": "2026-11-23T08:22:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "xdg-desktop-portal-update-for-rhel-8-6-released",
-      "article-4ae96a4a",
-      "4ae96a4a",
-      "xdg-desktop-portal-update-for-rhel-8-6-released-2ee15e"
-    ]
-  },
-  {
-    "slug": "grafana-update-for-rhel-9-8-released-62aba3a1",
-    "title": "Grafana Update for RHEL 9.8 Released",
-    "summary": "Red Hat released a Grafana update for RHEL 9.8 Extended Update Support to fix multiple security issues. The vulnerabilities could allow attackers to exploit Grafana’s web interface, potentially enabling unauthorized data access or critical code execution. Apply the patch immediately and review the CVSS scores linked in the advisory for risk assessment.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102222",
-    "publishedAt": "2026-11-23T08:15:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "grafana-update-for-rhel-9-8-released",
-      "article-62aba3a1",
-      "62aba3a1",
-      "grafana-update-for-rhel-9-8-released-2ee15e"
-    ]
-  },
-  {
-    "slug": "badbox-3-0-tv-boxes-generate-40-billion-ad-request-5e60fd71",
-    "title": "BADBOX 3.0 TV Boxes Generate 40 Billion Ad Requests",
-    "summary": "BADBOX 3.0 infected low-cost TV boxes produced roughly 40 billion ad bid requests daily, exceeding 4% of all connected TV traffic. The malware hijacked ad rendering processes, enabling stealthy traffic injection without user awareness and creating a large-scale advertising fraud network.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/badbox-3-0-ad-fraud-operation/",
-    "publishedAt": "2026-11-23T08:06:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "badbox-3-0-tv-boxes-generate-40-billion-ad-request",
-      "article-5e60fd71",
-      "5e60fd71",
-      "badbox-3-0-tv-boxes-generate-40-billion-ad-request-126196",
-      "badbox-3-0-tv-boxes-generate-40-billion-ad-requests"
-    ]
-  },
-  {
-    "slug": "bulgarian-government-breach-exposes-62-million-pag-ab52e416",
-    "title": "Bulgarian Government Breach Exposes 62 Million Pages",
-    "summary": "Hackers accessed Bulgarian state administration networks for five years, exfiltrating 130 GB of documents. The intrusion leveraged covert persistence mechanisms to download over 62 million pages, representing a significant compromise of sensitive government data. Bulgarian authorities disrupted the operation and are investigating the breach; no vendor patch is applicable, but organizations should review network segmentation and intrusion detection controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/bulgarian-government/",
-    "publishedAt": "2026-11-23T08:01:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bulgarian-government-breach-exposes-62-million-pag",
-      "article-ab52e416",
-      "ab52e416",
-      "bulgarian-government-breach-exposes-62-million-pag-4b51f5",
-      "bulgarian-government-breach-exposes-62-million-pages"
-    ]
-  },
-  {
-    "slug": "weekly-security-roundup-nov-16-22-a07bae89",
-    "title": "Weekly Security Roundup: Nov 16-22",
-    "summary": "Malwarebytes Labs released a weekly security roundup covering topics from Nov 16 to Nov 22, 2026. The report summarizes emerging threats, vulnerability disclosures, and defensive recommendations observed during that period, including zero-day exploits and supply-chain risks. The summary is available for security teams to review trends, update defenses, and threat intelligence.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-16-november-22",
-    "publishedAt": "2026-11-23T08:01:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "weekly-security-roundup-nov-16-22",
-      "article-a07bae89",
-      "a07bae89",
-      "weekly-security-roundup-nov-16-22-b93180"
-    ]
-  },
-  {
-    "slug": "outages-reveal-need-for-robust-recovery-planning-42474264",
-    "title": "Outages Reveal Need for Robust Recovery Planning",
-    "summary": "Outages at Microsoft, the FAA, and major banks highlight the need for robust recovery planning, as lack of resilience caused extended downtime. The incidents exposed gaps in business continuity frameworks, revealing that inadequate failover testing can leave essential services vulnerable to prolonged disruption. Organizations should define downtime thresholds, conduct failover drills, and implement automated recovery workflows to maintain continuity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/why-resilience-has-to-come-first",
-    "publishedAt": "2026-11-23T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "outages-reveal-need-for-robust-recovery-planning",
-      "article-42474264",
-      "42474264",
-      "outages-reveal-need-for-robust-recovery-planning-70868f"
-    ]
-  },
-  {
-    "slug": "virtualbox-process-hardening-on-windows-2026-editi-f1458f09",
-    "title": "VirtualBox Process Hardening on Windows 2026 Edition: What’s a Single Bit Between Friends?",
-    "summary": "Back in 2017 I did some research into Oracle VirtualBox on Windows. The protection was to gate who could open the kernel driver, which might allow for privilege escalation due to the way it was designed. This time I found 3 new bypasses for protected processes, with an additional bug which was a broken fix for the 2020 bypass breaking due to changes in Windows.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Google Project Zero",
-    "sourceUrl": "https://projectzero.google/2026/11/virtualbox-process-hardening.html",
-    "publishedAt": "2026-11-23T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "virtualbox-process-hardening-on-windows-2026-editi",
-      "article-f1458f09",
-      "f1458f09",
-      "virtualbox-process-hardening-on-windows-2026-editi-3e3201",
-      "virtualbox-process-hardening-on-windows-2026-edition-what-s-"
     ]
   }
 ];

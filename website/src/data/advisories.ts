@@ -27,6 +27,33 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-64670",
+    "cveID": "CVE-2026-64670",
+    "slug": "cve-2026-64670",
+    "vendor": "npm",
+    "product": "@waline/client",
+    "name": "@waline/client vulnerable to stored XSS through unsanitized comment edit previews",
+    "dateAdded": "2026-11-25",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "@waline/client renders the comment editor's live preview with marked and no sanitizer (utils/markdown.ts), and the preview is injected with v-html. When a comment is edited, the editor is seeded with the comment's raw, un-sanitized body (orig). Only administrators and the comment owner can edit.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-crj3-q72p-ggqm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64670"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-132224",
     "slug": "cve-2026-132224",
     "vendor": "Optimizely",
@@ -1566,33 +1593,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104199"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115578",
-    "cveID": "CVE-2026-115578",
-    "slug": "cve-2026-115578",
-    "vendor": "Go",
-    "product": "go-guerrilla · phires",
-    "name": "go-guerrilla crashes on a bare XCLIENT command (7-byte slice off-by-one panic)",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-129",
-    "ransomware": false,
-    "description": "The defect ---------- Confirmed at HEAD. server.go: cmdXCLIENT = []byte(\"XCLIENT\") is 7 bytes (line 78), so the dispatch match cmdXCLIENT.match(cmd) only guarantees len(input) >= 7.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hghq-53p7-c582"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115578"
       }
     ],
     "source": "GITHUB"
