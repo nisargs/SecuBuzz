@@ -11,6 +11,26 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "nginx-http-2-use-after-free-cve-2026-123633-0358bc2c",
+    "title": "NGINX HTTP/2 Use-After-Free CVE-2026-123633",
+    "summary": "NGINX’s HTTP/2 implementation contains a use-after-free flaw (CVE-2026-123633) that can be triggered by malformed HTTP/2 frames. The vulnerability may allow attackers to crash the server or execute arbitrary code, depending on the context, and is not yet confirmed as actively exploited. NGINX has released a patch for affected versions; administrators should update or apply the provided mitigations to prevent exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/cve-2026-123633-nginx-http2-vulnerability/",
+    "publishedAt": "2026-11-24T23:00:14.000Z",
+    "cves": [
+      "CVE-2026-123633"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "nginx-http-2-use-after-free-cve-2026-123633",
+      "article-0358bc2c",
+      "0358bc2c",
+      "nginx-http-2-use-after-free-cve-2026-123633-7a4663"
+    ]
+  },
+  {
     "slug": "cia-unclassified-system-breached-47717a35",
     "title": "CIA Unclassified System Breached",
     "summary": "A cyberattack breached an unclassified CIA system, though the specific data compromised and the attacker remain unidentified. The breach indicates potential exploitation of internal network defenses, but no evidence of credential theft or data exfiltration has been disclosed. Security teams should review CIA network hardening measures and monitor for anomalous activity following the incident.",
@@ -288,6 +308,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-qt5-qtdeclarative-security-update-dd61ed48",
+    "title": "Red Hat Issues qt5-qtdeclarative Security Update",
+    "summary": "Red Hat released a security update for qt5-qtdeclarative on RHEL 8.6 Advanced Mission Critical and Extended Update Support platforms. The update addresses unspecified vulnerabilities rated Important by Product Security, with CVSS base scores linked to CVE references. Users should apply the update immediately to mitigate potential exploitation; no workaround is provided.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103373",
+    "publishedAt": "2026-11-24T20:06:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-qt5-qtdeclarative-security-update",
+      "article-dd61ed48",
+      "dd61ed48",
+      "red-hat-issues-qt5-qtdeclarative-security-update-2ee1d7"
+    ]
+  },
+  {
     "slug": "erlang-otp-vulnerabilities-prompt-update-029a9067",
     "title": "Erlang OTP Vulnerabilities Prompt Update",
     "summary": "Erlang OTP multiple versions are affected by security flaws that could allow unauthorized code execution via the runtime system. The advisory, issued by the Canadian Centre for Cyber Security, does not list specific CVE identifiers but notes a CVSS base score indicating moderate severity. Administrators should review the provided web link and apply any available updates to mitigate potential exploitation.",
@@ -303,6 +341,24 @@ export const news: NewsBrief[] = [
       "article-029a9067",
       "029a9067",
       "erlang-otp-vulnerabilities-prompt-update-544801"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-gdm-security-update-0df66551",
+    "title": "Red Hat Issues gdm Security Update",
+    "summary": "Red Hat released a security update for the GDM display manager on RHEL 10. The update addresses unspecified vulnerabilities rated Important by Product Security, with CVSS base scores linked to CVE references. Users should apply the update promptly to mitigate potential exploitation and ensure system integrity; no workaround is provided.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103378",
+    "publishedAt": "2026-11-24T19:53:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-gdm-security-update",
+      "article-0df66551",
+      "0df66551",
+      "red-hat-issues-gdm-security-update-2ee1d7"
     ]
   },
   {
@@ -800,6 +856,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "php-critical-security-update-released-a00c5931",
+    "title": "PHP Critical Security Update Released",
+    "summary": "Red Hat issued a critical security update for php on Enterprise Linux 10.0 Extended Update Support, fixing several high-severity bugs. The patch addresses multiple CVEs that could allow remote code execution or privilege escalation, but no active exploitation has been observed. System administrators should apply the php update or install the vendor’s security fix to eliminate the vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102934",
+    "publishedAt": "2026-11-24T16:06:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-critical-security-update-released",
+      "article-a00c5931",
+      "a00c5931",
+      "php-critical-security-update-released-2ee178"
+    ]
+  },
+  {
     "slug": "microsoft-office-visio-rce-cve-2026-112732-omitted-d6267404",
     "title": "Microsoft Office Visio RCE CVE-2026-112732 Omitted",
     "summary": "Microsoft Office Visio contains a remote code execution flaw identified as CVE-2026-112732, affecting all supported Visio versions. The flaw permits arbitrary code execution via crafted input, but no exploitation has been reported, and it was omitted from the November 2026 Security Updates. Microsoft released the patch in November 2026, and customers who installed those updates need not take further action.",
@@ -835,6 +909,24 @@ export const news: NewsBrief[] = [
       "article-45cf6cec",
       "45cf6cec",
       "carnegie-endowment-donor-data-leaked-by-vendor-4e7787"
+    ]
+  },
+  {
+    "slug": "ruby-2-5-critical-security-update-released-082c3eeb",
+    "title": "Ruby 2.5 Critical Security Update Released",
+    "summary": "Red Hat released a critical security update for the ruby:2.5 module on Enterprise Linux 8, addressing multiple high-severity vulnerabilities. The update mitigates several CVEs that could enable remote code execution or privilege escalation, though no active exploitation has been reported. Administrators should apply the ruby:2.5 update immediately or install the provided security patch to protect against the identified flaws.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102928",
+    "publishedAt": "2026-11-24T15:49:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ruby-2-5-critical-security-update-released",
+      "article-082c3eeb",
+      "082c3eeb",
+      "ruby-2-5-critical-security-update-released-2ee178"
     ]
   },
   {
@@ -1431,6 +1523,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "okta-links-shinyhunters-vishing-cluster-to-incepti-f3157339",
+    "title": "Okta Links ShinyHunters Vishing Cluster to INCEPTION",
+    "summary": "Okta's Threat Intelligence team linked the O-UNC-053 cluster, previously tied to the ShinyHunters extortion crew, to a new INCEPTION data-leak site. The cluster employs voice phishing attacks to coerce victims into entering credentials on phishing pages, facilitating credential theft. Security teams should monitor for vishing indicators and enforce multi-factor authentication to mitigate credential compromise.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+    "publishedAt": "2026-11-24T13:28:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "okta-links-shinyhunters-vishing-cluster-to-incepti",
+      "article-f3157339",
+      "f3157339",
+      "okta-links-shinyhunters-vishing-cluster-to-incepti-58e25a",
+      "okta-links-shinyhunters-vishing-cluster-to-inception"
+    ]
+  },
+  {
     "slug": "codesys-visualization-vulnerabilities-pre-4-11-0-0-a5bd4129",
     "title": "Codesys Visualization Vulnerabilities Pre-4.11.0.0 Advisory",
     "summary": "The Canadian Centre for Cyber Security issued advisory AV26-1199, warning that Codesys Visualization versions prior to 4.11.0.0 contain multiple vulnerabilities. These flaws could allow attackers to gain unauthorized access or execute arbitrary code within the visualization component, potentially compromising industrial control systems. Users should review the provided links and apply available updates or workarounds as soon as patches are released.",
@@ -1693,6 +1804,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "malwarebytes-labs-announces-windows-baseline-check-5b234c95",
+    "title": "Malwarebytes Labs Announces Windows Baseline Check",
+    "summary": "Malwarebytes Labs announced a new Windows baseline protection check that identifies missing safeguards on a PC. The check highlights eight security controls and guides users to enable them, potentially preventing applications from blocking access in Windows 10 and 11. Users should run the baseline check and activate any disabled safeguards to maintain system integrity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/new-windows-security-check-could-let-apps-block-access",
+    "publishedAt": "2026-11-24T12:22:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malwarebytes-labs-announces-windows-baseline-check",
+      "article-5b234c95",
+      "5b234c95",
+      "malwarebytes-labs-announces-windows-baseline-check-22b5b4"
+    ]
+  },
+  {
+    "slug": "openai-cisco-release-shirudo-to-protect-unpatched-eca8506d",
+    "title": "OpenAI, Cisco Release Shirudo to Protect Unpatched Linux",
+    "summary": "OpenAI and Cisco unveiled Shirudo, an open-source AI-driven shield that protects Linux systems still lacking vendor patches. Shirudo generates runtime mitigations to block exploitation of known vulnerabilities until official patches are released, though it remains untested for production use. Security teams can deploy Shirudo as a temporary defense, but should continue applying vendor patches and monitor for tool updates.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems/",
+    "publishedAt": "2026-11-24T12:20:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-cisco-release-shirudo-to-protect-unpatched",
+      "article-eca8506d",
+      "eca8506d",
+      "openai-cisco-release-shirudo-to-protect-unpatched-5f649f",
+      "openai-cisco-release-shirudo-to-protect-unpatched-linux"
+    ]
+  },
+  {
     "slug": "rhel-10-cifs-utils-update-released-ff7b7890",
     "title": "RHEL 10 cifs-utils Update Released",
     "summary": "Red Hat released a security update for cifs-utils on RHEL 10, fixing vulnerabilities that could enable remote code execution via SMB. Each flaw carries a CVSS base score, but the advisory lists no specific CVE identifiers. Apply the patch through standard RHEL update channels immediately; no configuration changes are required.",
@@ -1823,6 +1971,24 @@ export const news: NewsBrief[] = [
       "9d93c4f8",
       "google-researcher-exposes-net-bit-flip-code-integr-54b258",
       "google-researcher-exposes-net-bit-flip-code-integrity-bypass"
+    ]
+  },
+  {
+    "slug": "soc-budget-reset-five-priorities-to-cut-costs-5d8d7142",
+    "title": "SOC Budget Reset: Five Priorities to Cut Costs",
+    "summary": "The article outlines five priorities for SOC budget optimization aimed at reducing analyst time and lowering cyber risk. ANY.RUN estimates that threat analysis and IOC research can recover 450 analyst hours per 1,000 alerts, highlighting inefficiencies from manual investigations and redundant escalations. SOC teams should adopt automated workflows, reduce routine checks, and focus resources on investigations to achieve cost savings.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+    "publishedAt": "2026-11-24T12:01:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "soc-budget-reset-five-priorities-to-cut-costs",
+      "article-5d8d7142",
+      "5d8d7142",
+      "soc-budget-reset-five-priorities-to-cut-costs-7ecfa0"
     ]
   },
   {
@@ -2738,6 +2904,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "crowdstrike-signal-reprioritizes-automated-leads-f01ec9ed",
+    "title": "CrowdStrike Signal Reprioritizes Automated Leads",
+    "summary": "CrowdStrike introduced Signal, a feature within its platform that reprioritizes automated leads for security operations. Signal analyzes lead data in real time to surface the most relevant alerts, improving analyst focus and reducing noise. Users can enable Signal to streamline lead triage and accelerate incident response across the platform daily.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/reprioritizing-automated-leads-crowdstrike-signal/",
+    "publishedAt": "2026-11-24T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-signal-reprioritizes-automated-leads",
+      "article-f01ec9ed",
+      "f01ec9ed",
+      "crowdstrike-signal-reprioritizes-automated-leads-1fa915"
+    ]
+  },
+  {
     "slug": "red-hat-recommends-python-oauthlib-patch-for-rhel-d6553110",
     "title": "Red Hat Recommends Python-OAuthlib Patch for RHEL 10.2",
     "summary": "Red Hat released an important security update for python-oauthlib on RHEL 10.2 Extended Update Support, targeting authentication library flaws. The update fixes multiple high-severity bugs that could allow credential misuse or unauthorized token issuance, though CVE identifiers are not disclosed. Apply RHSA-2026:102851 via the Customer Portal or use yum/dnf to install the latest python-oauthlib package immediately.",
@@ -3078,6 +3262,90 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "autodesk-autocad-dwg-buffer-overflow-enables-remot-dd6a7450",
+    "title": "Autodesk AutoCAD DWG Buffer Overflow Enables Remote RCE",
+    "summary": "A heap-based buffer overflow in Autodesk AutoCAD’s DWG parser allows remote code execution when a user opens a crafted file or visits a malicious page. CVE-2026-85647 carries a CVSS 7.8 score and requires user interaction to trigger, enabling attackers to run arbitrary code with AutoCAD privileges. Apply Autodesk’s patch immediately or restrict DWG file handling as a temporary workaround.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1146/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-85647"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "autodesk-autocad-dwg-buffer-overflow-enables-remot",
+      "article-dd6a7450",
+      "dd6a7450",
+      "autodesk-autocad-dwg-buffer-overflow-enables-remot-77f3bc",
+      "autodesk-autocad-dwg-buffer-overflow-enables-remote-rce"
+    ]
+  },
+  {
+    "slug": "autodesk-autocad-dwf-buffer-overflow-enables-remot-fe326f1a",
+    "title": "Autodesk AutoCAD DWF Buffer Overflow Enables Remote RCE",
+    "summary": "A heap-based buffer overflow in Autodesk AutoCAD’s DWF parser permits remote code execution when a user opens a crafted DWF file or visits a malicious page. CVE-2026-85646 has a CVSS 7.8 rating and requires user interaction to exploit, allowing attackers to run arbitrary code with AutoCAD privileges. Install Autodesk’s patch immediately or limit DWF file handling as a temporary mitigation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1145/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-85646"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "autodesk-autocad-dwf-buffer-overflow-enables-remot",
+      "article-fe326f1a",
+      "fe326f1a",
+      "autodesk-autocad-dwf-buffer-overflow-enables-remot-77f3bc",
+      "autodesk-autocad-dwf-buffer-overflow-enables-remote-rce"
+    ]
+  },
+  {
+    "slug": "autodesk-autocad-dgn-buffer-overflow-enables-remot-7b16dd6b",
+    "title": "Autodesk AutoCAD DGN Buffer Overflow Enables Remote RCE",
+    "summary": "A heap-based buffer overflow in Autodesk AutoCAD’s DGN parser allows remote code execution when a user opens a crafted DGN file or visits a malicious page. CVE-2026-84855 has a CVSS 7.8 score and requires user interaction to exploit, enabling attackers to run arbitrary code with AutoCAD privileges. Apply Autodesk’s patch immediately or restrict DGN file handling as a temporary workaround.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1144/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-84855"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "autodesk-autocad-dgn-buffer-overflow-enables-remot",
+      "article-7b16dd6b",
+      "7b16dd6b",
+      "autodesk-autocad-dgn-buffer-overflow-enables-remot-77f3bc",
+      "autodesk-autocad-dgn-buffer-overflow-enables-remote-rce"
+    ]
+  },
+  {
+    "slug": "autodesk-autocad-dxf-out-of-bounds-write-rce-vulne-73b8c2d9",
+    "title": "Autodesk AutoCAD DXF Out-Of-Bounds Write RCE Vulnerability",
+    "summary": "A remote out-of-bounds write in Autodesk AutoCAD’s DXF parser lets attackers run arbitrary code when a user opens a malicious file or visits a malicious page. The flaw, CVE-2026-77943, scores 7.8 CVSS and needs user interaction; no wild exploit is known. Autodesk released a patch; users should update AutoCAD to the latest version or apply the vendor hotfix.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1141/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-77943"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "autodesk-autocad-dxf-out-of-bounds-write-rce-vulne",
+      "article-73b8c2d9",
+      "73b8c2d9",
+      "autodesk-autocad-dxf-out-of-bounds-write-rce-vulne-77f3bb",
+      "autodesk-autocad-dxf-out-of-bounds-write-rce-vulnerability"
     ]
   },
   {
@@ -5683,6 +5951,24 @@ export const news: NewsBrief[] = [
       "article-c415e070",
       "c415e070",
       "red-hat-releases-critical-php-update-for-rhel-10-2ee161"
+    ]
+  },
+  {
+    "slug": "clickfix-lures-infrastructure-and-payloads-exposed-5b86e534",
+    "title": "ClickFix Lures, Infrastructure, and Payloads Exposed",
+    "summary": "The article reviews ClickFix, a phishing operation that deploys convincing fake verification pages to lure victims. It details the infrastructure used to host the lures, the variety of payloads delivered, and the tactics employed to evade detection. Defenders should block known domains, monitor for credential harvesting attempts, and apply web filtering to mitigate the threat.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/tradecraft-tuesday-clickfix-lures-and-infrastructure",
+    "publishedAt": "2026-11-23T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "clickfix-lures-infrastructure-and-payloads-exposed",
+      "article-5b86e534",
+      "5b86e534",
+      "clickfix-lures-infrastructure-and-payloads-exposed-1565b9"
     ]
   },
   {
@@ -9059,286 +9345,6 @@ export const news: NewsBrief[] = [
       "article-5b8c4e7d",
       "5b8c4e7d",
       "rhsa-2026-100804-critical-nginx-security-update-2ee08b"
-    ]
-  },
-  {
-    "slug": "cisco-products-hit-by-vulnerabilities-cve-added-to-db738bd1",
-    "title": "Cisco Products Hit by Vulnerabilities, CVE Added to KEV",
-    "summary": "Cisco products including IOS XR, Expressway, Snort 3, Cyber Vision, Secure FTD, Secure Client, and several collaboration services are affected by multiple vulnerabilities. CISA added CVE-2026-76466 to its Known Exploited Vulnerabilities database, indicating active exploitation potential for the affected components. Cisco recommends applying the latest firmware and software updates for the listed products immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1073",
-    "publishedAt": "2026-11-20T19:33:11.000Z",
-    "cves": [
-      "CVE-2026-76466"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-products-hit-by-vulnerabilities-cve-added-to",
-      "article-db738bd1",
-      "db738bd1",
-      "cisco-products-hit-by-vulnerabilities-cve-added-to-1b59a6",
-      "cisco-products-hit-by-vulnerabilities-cve-added-to-kev"
-    ]
-  },
-  {
-    "slug": "the-container-store-restores-operations-following-5bb98133",
-    "title": "The Container Store Restores Operations Following Weekend Cyberattack",
-    "summary": "The Container Store experienced a weekend cyberattack that impacted its corporate website and internal IT systems. Parent company Neighborhood Intelligence disclosed that the unauthorized security incident temporarily disrupted operational infrastructure across the retail enterprise. The organization has fully restored its website and core systems following remediation efforts to address the cyber disruption.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/container-store-restores-systems-cyberattack",
-    "publishedAt": "2026-11-20T19:32:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "the-container-store-restores-operations-following",
-      "article-5bb98133",
-      "5bb98133",
-      "the-container-store-restores-operations-following-7f9123",
-      "the-container-store-restores-operations-following-weekend-cy"
-    ]
-  },
-  {
-    "slug": "sap-releases-multi-product-security-updates-7e518ccc",
-    "title": "SAP releases multi-product security updates",
-    "summary": "SAP released a security advisory for SQL Anywhere Monitor, Solution Manager, CommonCryptoLib, HANA JDBC Client, Business Connector, NetWeaver Portal, S/4HANA, HANA 2.0, SAP GUI, and Starter Solution. The patches address memory corruption, authentication bypass, and privilege escalation flaws across 20+ SAP components, with CVE IDs omitted. SAP recommends applying the latest patches for each affected product immediately to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/sap-security-advisory-november-2025-monthly-rollup-av25-738",
-    "publishedAt": "2026-11-20T19:17:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sap-releases-multi-product-security-updates",
-      "article-7e518ccc",
-      "7e518ccc",
-      "sap-releases-multi-product-security-updates-7f945b"
-    ]
-  },
-  {
-    "slug": "google-releases-chrome-dev-160-for-android-aa5356a4",
-    "title": "Google Releases Chrome Dev 160 for Android",
-    "summary": "Google released Chrome Dev version 160.0.8171.0 for Android via the Google Play store, marking the latest development channel milestone. The update incorporates unspecified security patches and feature enhancements documented in the Chromium git log and official blog posts. Android users should install this release promptly to obtain the latest stability improvements and vulnerability mitigations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-android-update_0498913154.html",
-    "publishedAt": "2026-11-20T19:13:32.556Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-releases-chrome-dev-160-for-android",
-      "article-aa5356a4",
-      "aa5356a4",
-      "google-releases-chrome-dev-160-for-android-4d436c"
-    ]
-  },
-  {
-    "slug": "arctic-wolf-reports-record-october-threat-activity-779b4f49",
-    "title": "Arctic Wolf reports record October threat activity",
-    "summary": "Arctic Wolf Aurora Incident Response recorded a 78% rise in non-customer cases and a 96% increase in sophisticated network intrusions, including ransomware, in October 2026. The surge indicates attackers are more active and employing advanced tactics, stressing the importance of rapid detection and response. Teams should update incident response plans, deploy automation, and monitor emerging patterns to reduce future risk.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/blog/incident-response-at-machine-speed-what-black-octobers-record-case-volume-reveals-about-todays-threat-landscape/",
-    "publishedAt": "2026-11-20T19:07:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arctic-wolf-reports-record-october-threat-activity",
-      "article-779b4f49",
-      "779b4f49",
-      "arctic-wolf-reports-record-october-threat-activity-446bc2"
-    ]
-  },
-  {
-    "slug": "bell-canada-breach-exposes-enterprise-customer-dat-b3499ea5",
-    "title": "Bell Canada Breach Exposes Enterprise Customer Data",
-    "summary": "Bell Canada confirmed that an 'agentic' threat actor breached its systems on November 17 2026, accessing enterprise customer data. The intrusion exploited vulnerabilities in the order-and-provisioning platform, allowing attackers to exfiltrate sensitive customer records. Bell Canada has issued a public advisory and is coordinating with security teams to apply patches and strengthen authentication controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
-    "publishedAt": "2026-11-20T18:51:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bell-canada-breach-exposes-enterprise-customer-dat",
-      "article-b3499ea5",
-      "b3499ea5",
-      "bell-canada-breach-exposes-enterprise-customer-dat-716195",
-      "bell-canada-breach-exposes-enterprise-customer-data"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100756-critical-nginx-1-24-security-upda-91d2834b",
-    "title": "RHSA-2026:100756: Critical: nginx:1.24 security update",
-    "summary": "An update for the nginx:1.24 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100756",
-    "publishedAt": "2026-11-20T18:51:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100756-critical-nginx-1-24-security-upda",
-      "article-91d2834b",
-      "91d2834b",
-      "rhsa-2026-100756-critical-nginx-1-24-security-upda-2ee088",
-      "rhsa-2026-100756-critical-nginx-1-24-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100755-critical-nginx-1-24-security-upda-da98cc4b",
-    "title": "RHSA-2026:100755: Critical: nginx:1.24 security update",
-    "summary": "An update for the nginx:1.24 module is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100755",
-    "publishedAt": "2026-11-20T18:48:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100755-critical-nginx-1-24-security-upda",
-      "article-da98cc4b",
-      "da98cc4b",
-      "rhsa-2026-100755-critical-nginx-1-24-security-upda-2ee088",
-      "rhsa-2026-100755-critical-nginx-1-24-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100768-critical-nginx-security-update-14feece7",
-    "title": "RHSA-2026:100768: Critical: nginx security update",
-    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100768",
-    "publishedAt": "2026-11-20T18:47:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100768-critical-nginx-security-update",
-      "article-14feece7",
-      "14feece7",
-      "rhsa-2026-100768-critical-nginx-security-update-2ee088"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100753-critical-nginx-security-update-11db7d6f",
-    "title": "RHSA-2026:100753: Critical: nginx security update",
-    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100753",
-    "publishedAt": "2026-11-20T18:47:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100753-critical-nginx-security-update",
-      "article-11db7d6f",
-      "11db7d6f",
-      "rhsa-2026-100753-critical-nginx-security-update-2ee088"
-    ]
-  },
-  {
-    "slug": "critical-nginx-1-26-update-for-rhel-9-6-eus-b1b3f11d",
-    "title": "Critical Nginx 1.26 Update for RHEL 9.6 EUS",
-    "summary": "Red Hat released a critical security update for nginx:1.26 on RHEL 9.6 Extended Update Support, addressing multiple high-severity vulnerabilities. The CVE references detail remote code execution via crafted HTTP requests, with CVSS scores up to 9.0. Apply the patch immediately or install the errata to mitigate the critical risk today.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100757",
-    "publishedAt": "2026-11-20T18:47:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "critical-nginx-1-26-update-for-rhel-9-6-eus",
-      "article-b1b3f11d",
-      "b1b3f11d",
-      "critical-nginx-1-26-update-for-rhel-9-6-eus-2ee088"
-    ]
-  },
-  {
-    "slug": "critical-nginx-update-for-rhel-9-2-sap-solutions-8c37d851",
-    "title": "Critical Nginx Update for RHEL 9.2 SAP Solutions",
-    "summary": "Red Hat issued a critical security update for nginx on RHEL 9.2 SAP Solutions, fixing several high-severity flaws. The linked CVE entries describe remote code execution via malformed HTTP requests, with CVSS scores up to 9.0. Apply the patch immediately or install the errata to mitigate the critical risk today.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100769",
-    "publishedAt": "2026-11-20T18:45:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "critical-nginx-update-for-rhel-9-2-sap-solutions",
-      "article-8c37d851",
-      "8c37d851",
-      "critical-nginx-update-for-rhel-9-2-sap-solutions-2ee088"
-    ]
-  },
-  {
-    "slug": "cve-2026-130901-improper-limitation-of-a-pathname-825b573f",
-    "title": "CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server",
-    "summary": "Bulletin ID: 2026-195-AWS Publication Date: 11/20/2026 10:30 AM PST Description: Improper limitation of a pathname to a restricted directory in the file access checks in Amazon awslabs.document-loader-mcp-server 1.0.10 through 1.0.20 might allow a context-dependent actor, via crafted document content processed by an MCP client, to read files outside the intended base directory and, in 1.0.12 through 1.0.20, to write PNG slide images outside it.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-195-aws/",
-    "publishedAt": "2026-11-20T18:45:40.000Z",
-    "cves": [
-      "CVE-2026-130901"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-130901-improper-limitation-of-a-pathname",
-      "article-825b573f",
-      "825b573f",
-      "cve-2026-130901-improper-limitation-of-a-pathname-2690c2",
-      "cve-2026-130901-improper-limitation-of-a-pathname-to-a-restr"
-    ]
-  },
-  {
-    "slug": "communication-becomes-frontline-cyber-defense-c9bd5808",
-    "title": "Communication Becomes Frontline Cyber Defense",
-    "summary": "Cybersecurity leaders now assert that clear, disciplined communication is becoming a frontline defense as critical as technical tools. This shift covers conversations about cloud security and AI adoption, underscoring messaging’s strategic role in threat mitigation. Security teams should embed communication best practices into programs, enhancing resilience against evolving cyber threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
-    "publishedAt": "2026-11-20T18:35:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "communication-becomes-frontline-cyber-defense",
-      "article-c9bd5808",
-      "c9bd5808",
-      "communication-becomes-frontline-cyber-defense-497ba2"
-    ]
-  },
-  {
-    "slug": "chrome-dev-channel-updated-to-160-0-8171-0-3230d0ff",
-    "title": "Chrome Dev Channel Updated to 160.0.8171.0",
-    "summary": "Google Chrome's Dev channel updated to version 160.0.8171.0, delivering bug fixes and performance improvements across Windows, macOS, and Linux. Release notes detail changes in rendering, security, and developer tools, with a partial list in the Git log. Users on the Dev channel should install the new build to access the latest features.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update_0667948876.html",
-    "publishedAt": "2026-11-20T17:58:33.217Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-dev-channel-updated-to-160-0-8171-0",
-      "article-3230d0ff",
-      "3230d0ff",
-      "chrome-dev-channel-updated-to-160-0-8171-0-798051"
     ]
   }
 ];
