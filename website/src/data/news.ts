@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "wordpress-blocks-six-backdoored-wp-connect-plugins-1903016d",
+    "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
+    "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account. The WordPress plugins team has independently detected and blocked the threat before it could be officially released.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
+    "publishedAt": "2026-11-25T06:21:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wordpress-blocks-six-backdoored-wp-connect-plugins",
+      "article-1903016d",
+      "1903016d",
+      "wordpress-blocks-six-backdoored-wp-connect-plugins-d9e1bb",
+      "wordpress-blocks-six-backdoored-wp-connect-plugins-before-ma"
+    ]
+  },
+  {
+    "slug": "open-source-gpu-task-manager-released-ef4272a6",
+    "title": "Open-Source GPU Task Manager Released",
+    "summary": "gputaskman is a terminal tool that displays GPU memory usage and AI model attribution on Windows, Linux, WSL, and Apple Silicon Macs. Native task managers report only raw memory; gputaskman shows which processes own GPU resources. The project is on GitHub and can be installed via package managers or built from source; no vendor patch needed.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/25/gputaskman-open-source-gpu-task-manager/",
+    "publishedAt": "2026-11-25T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "open-source-gpu-task-manager-released",
+      "article-ef4272a6",
+      "ef4272a6",
+      "open-source-gpu-task-manager-released-23efa5"
+    ]
+  },
+  {
     "slug": "holiday-scam-victims-cut-essentials-amid-rising-lo-6dd67b45",
     "title": "Holiday Scam Victims Cut Essentials Amid Rising Losses",
     "summary": "McAfee research shows that 42% of Americans have fallen for holiday shopping scams, a near doubling from 22% the previous year. The study indicates a decline in consumer confidence, with only 75% able to recognize online scams compared to 90% in 2025. The findings highlight the need for heightened consumer education and improved fraud-detection tools to mitigate rising losses.",
@@ -3628,6 +3665,69 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "zdi-26-1143-oracle-peoplesoft-peoplesoftlisteningc-6aef0d74",
+    "title": "ZDI-26-1143: Oracle PeopleSoft PeopleSoftListeningConnector Server-Side Request Forgery Vulnerability",
+    "summary": "This vulnerability allows remote attackers to initiate arbitrary server-side requests on affected installations of Oracle PeopleSoft. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-114934.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1143/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114934"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1143-oracle-peoplesoft-peoplesoftlisteningc",
+      "article-6aef0d74",
+      "6aef0d74",
+      "zdi-26-1143-oracle-peoplesoft-peoplesoftlisteningc-77f3bb",
+      "zdi-26-1143-oracle-peoplesoft-peoplesoftlisteningconnector-s"
+    ]
+  },
+  {
+    "slug": "zdi-26-1142-autodesk-autocad-dxf-file-parsing-ntlm-b593930b",
+    "title": "ZDI-26-1142: Autodesk AutoCAD DXF File Parsing NTLM Response Information Disclosure Vulnerability",
+    "summary": "This vulnerability allows remote attackers to disclose NTLM responses on affected installations of Autodesk AutoCAD. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-77944.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1142/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-77944"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1142-autodesk-autocad-dxf-file-parsing-ntlm",
+      "article-b593930b",
+      "b593930b",
+      "zdi-26-1142-autodesk-autocad-dxf-file-parsing-ntlm-77f3bb",
+      "zdi-26-1142-autodesk-autocad-dxf-file-parsing-ntlm-response-"
+    ]
+  },
+  {
+    "slug": "autodesk-autocad-ntlm-response-disclosure-vulnerab-0a9a7151",
+    "title": "Autodesk AutoCAD NTLM Response Disclosure Vulnerability",
+    "summary": "A remote information-disclosure flaw in Autodesk AutoCAD allows attackers to obtain NTLM responses from affected installations. The vulnerability requires user interaction, such as visiting a malicious page or opening a malicious file, and is assigned CVE-2026-77940 with a CVSS score of 3.3.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1138/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-77940"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "autodesk-autocad-ntlm-response-disclosure-vulnerab",
+      "article-0a9a7151",
+      "0a9a7151",
+      "autodesk-autocad-ntlm-response-disclosure-vulnerab-77f3b8",
+      "autodesk-autocad-ntlm-response-disclosure-vulnerability"
     ]
   },
   {
@@ -9257,82 +9357,6 @@ export const news: NewsBrief[] = [
       "article-8096e679",
       "8096e679",
       "debian-13-8-bundles-kernel-and-chromium-fixes-426950"
-    ]
-  },
-  {
-    "slug": "gl-inet-cloud-flaw-enables-router-and-kvm-malware-f26108c9",
-    "title": "GL.iNet Cloud Flaw Enables Router and KVM Malware",
-    "summary": "Hackers leveraged a flaw in GL.iNet’s cloud-based remote-management service to compromise customer routers and KVM devices. The vulnerability permits unauthenticated code execution, enabling attackers to drop custom malware, establish backdoors, and spawn reverse shells for persistent remote control. GL.iNet has released a patch for the cloud service; administrators should apply the update immediately and verify device firmware integrity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
-    "publishedAt": "2026-11-22T18:45:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gl-inet-cloud-flaw-enables-router-and-kvm-malware",
-      "article-f26108c9",
-      "f26108c9",
-      "gl-inet-cloud-flaw-enables-router-and-kvm-malware-630c8c"
-    ]
-  },
-  {
-    "slug": "debian-ubuntu-remove-rsyslogd-timestamp-config-dir-fc4a37ea",
-    "title": "Debian, Ubuntu Remove rsyslogd Timestamp Config Directive",
-    "summary": "Debian and Ubuntu removed a configuration directive from rsyslogd in early 2023, changing syslog timestamp handling. The change removes a legacy option that allowed custom timestamp formatting, potentially causing logs to default to system time zones and reducing forensic precision. Users should review rsyslogd configuration files for timestamp settings and apply any vendor updates that reintroduce desired formatting options.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33530",
-    "publishedAt": "2026-11-22T18:38:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "debian-ubuntu-remove-rsyslogd-timestamp-config-dir",
-      "article-fc4a37ea",
-      "fc4a37ea",
-      "debian-ubuntu-remove-rsyslogd-timestamp-config-dir-57dd81",
-      "debian-ubuntu-remove-rsyslogd-timestamp-config-directive"
-    ]
-  },
-  {
-    "slug": "virustotal-detects-ransomware-missed-by-75-av-engi-c4a5db07",
-    "title": "VirusTotal Detects Ransomware Missed by 75 AV Engines",
-    "summary": "VirusTotal introduced a runtime encryption check that identified a Python ransomware sample previously undetected by 75 antivirus engines. The malware leveraged obfuscated Python code to evade static signatures, but its encryption activity triggered the new behavior analysis, revealing its malicious intent. Security teams should enable VirusTotal’s behavior-based detection and ensure their antivirus solutions are updated to recognize similar obfuscated ransomware.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/virustotal-ransomware-detection/",
-    "publishedAt": "2026-11-22T17:11:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "virustotal-detects-ransomware-missed-by-75-av-engi",
-      "article-c4a5db07",
-      "c4a5db07",
-      "virustotal-detects-ransomware-missed-by-75-av-engi-614dd5",
-      "virustotal-detects-ransomware-missed-by-75-av-engines"
-    ]
-  },
-  {
-    "slug": "optimizely-malware-hits-178-organizations-fb37b3e2",
-    "title": "Optimizely Malware Hits 178 Organizations",
-    "summary": "An attacker exploited a flaw in Optimizely’s web experimentation platform to plant malicious JavaScript on 178 organizations’ websites, such as BBC, CNN, and Zoom. The vulnerability, a memory-corruption flaw in OpenJDK’s Base64 decoder (CVE-2026-114938), requires specific CPU conditions, limiting exploitation but still high severity. Optimizely confirmed the incident, urged customers to update the platform, remove injected scripts, and monitor traffic.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/22/week-in-review-java4shell-proves-tricky-to-exploit-malware-planted-via-optimizely-hits-178-orgs/",
-    "publishedAt": "2026-11-22T09:00:25.000Z",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "optimizely-malware-hits-178-organizations",
-      "article-fb37b3e2",
-      "fb37b3e2",
-      "optimizely-malware-hits-178-organizations-654f99"
     ]
   }
 ];
