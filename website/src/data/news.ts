@@ -606,6 +606,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-important-grafana-pcp-security-upda-7e51e9f4",
+    "title": "Red Hat Issues Important grafana-pcp Security Update",
+    "summary": "Red Hat released an important security update for grafana-pcp on RHEL 9.6 EUS, addressing multiple vulnerabilities in the monitoring plugin. The update mitigates authentication bypass and privilege escalation flaws, though specific CVE identifiers are not listed in the advisory. Administrators should apply the grafana-pcp update immediately to maintain secure monitoring operations on RHEL 9.6.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103287",
+    "publishedAt": "2026-11-24T19:17:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-grafana-pcp-security-upda",
+      "article-7e51e9f4",
+      "7e51e9f4",
+      "red-hat-issues-important-grafana-pcp-security-upda-2ee1d3",
+      "red-hat-issues-important-grafana-pcp-security-update"
+    ]
+  },
+  {
     "slug": "pan-alto-issues-precautionary-fixes-for-oss-cves-460f4aba",
     "title": "Pan-Alto Issues Precautionary Fixes for OSS CVEs",
     "summary": "Palo Alto Networks released PAN-SA-2026-0005, announcing precautionary fixes for non-exploitable open-source software CVEs in PAN-OS. The advisory does not provide CVE identifiers or exploit details, and it is classified as informational. Users should apply the latest PAN-OS update to incorporate the fixes, with no additional workarounds needed to maintain security posture.",
@@ -640,6 +659,42 @@ export const news: NewsBrief[] = [
       "09876e6f",
       "turnitin-reports-unauthorized-activity-on-customer-2283e3",
       "turnitin-reports-unauthorized-activity-on-customer-systems"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-low-impact-dhcp-update-e6090222",
+    "title": "Red Hat Issues Low-Impact DHCP Update",
+    "summary": "Red Hat released a low-impact DHCP security update for Enterprise Linux 9, fixing a flaw that could allow unauthorized lease manipulation. The vulnerability, rated CVSS low, does not require authentication and could disrupt network services by altering DHCP assignments. Administrators should apply the patch via standard update channels to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103290",
+    "publishedAt": "2026-11-24T18:58:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-low-impact-dhcp-update",
+      "article-e6090222",
+      "e6090222",
+      "red-hat-issues-low-impact-dhcp-update-2ee1d3"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-grafana-pcp-update-0163b84d",
+    "title": "Red Hat Issues Important Grafana-PCP Update",
+    "summary": "Red Hat issued an important update for grafana-pcp on Enterprise Linux 9.4 for SAP, fixing a flaw that could allow unauthorized data manipulation. The vulnerability, rated CVSS high, does not require authentication and could enable attackers to read or alter Grafana dashboards, exposing sensitive metrics. Apply the patch through standard update channels to secure Grafana deployments.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103291",
+    "publishedAt": "2026-11-24T18:49:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-grafana-pcp-update",
+      "article-0163b84d",
+      "0163b84d",
+      "red-hat-issues-important-grafana-pcp-update-2ee1d3"
     ]
   },
   {
@@ -3554,6 +3609,89 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "synology-ds925-bypass-vulnerability-exposes-verify-40e5dc4f",
+    "title": "Synology DS925+ Bypass Vulnerability Exposes VerifySamlResponse",
+    "summary": "A network-adjacent authentication bypass flaw in Synology DiskStation DS925+ devices allows attackers to circumvent VerifySamlResponse checks. The root cause is a mis-handled authentication flow, identified as CVE-2025-15716, with a CVSS score of 8.0, enabling unauthenticated remote exploitation without additional credentials. Synology has released a patch; administrators should apply the update immediately to restore proper authentication enforcement.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1116/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2025-15716"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "synology-ds925-bypass-vulnerability-exposes-verify",
+      "article-40e5dc4f",
+      "40e5dc4f",
+      "synology-ds925-bypass-vulnerability-exposes-verify-77f3b1",
+      "synology-ds925-bypass-vulnerability-exposes-verifysamlrespon"
+    ]
+  },
+  {
+    "slug": "chargepoint-home-flex-debug-auth-bypass-vulnerabil-50ee7cc3",
+    "title": "ChargePoint Home Flex Debug Auth Bypass Vulnerability",
+    "summary": "A physically present authentication bypass flaw in ChargePoint Home Flex EV chargers’ debug interface allows attackers to access without credentials. Identified as CVE-2026-131819, the flaw has a CVSS score of 4.3 and requires only physical proximity, with no additional authentication needed. ChargePoint released a patch; users should update firmware promptly to enforce proper authentication on the debug interface.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1115/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-131819"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chargepoint-home-flex-debug-auth-bypass-vulnerabil",
+      "article-50ee7cc3",
+      "50ee7cc3",
+      "chargepoint-home-flex-debug-auth-bypass-vulnerabil-77f3b0",
+      "chargepoint-home-flex-debug-auth-bypass-vulnerability"
+    ]
+  },
+  {
+    "slug": "chargepoint-home-flex-busybox-privilege-escalation-7ba37054",
+    "title": "ChargePoint Home Flex Busybox Privilege Escalation Vulnerability",
+    "summary": "A local privilege escalation flaw in ChargePoint Home Flex EV chargers’ busybox allows attackers with code execution to gain elevated rights. The vulnerability, CVE-2026-131818, carries a CVSS score of 7.8 and requires an attacker to first execute low-privileged code on the device. ChargePoint has issued a patch; users should apply the update to prevent privilege escalation on the busybox subsystem.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1114/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-131818"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chargepoint-home-flex-busybox-privilege-escalation",
+      "article-7ba37054",
+      "7ba37054",
+      "chargepoint-home-flex-busybox-privilege-escalation-77f3b0",
+      "chargepoint-home-flex-busybox-privilege-escalation-vulnerabi"
+    ]
+  },
+  {
+    "slug": "chargepoint-home-flex-rce-via-wpa-passphrase-61d38364",
+    "title": "ChargePoint Home Flex RCE via wpa_passphrase",
+    "summary": "A command-injection flaw in ChargePoint Home Flex EV chargers’ wpa_passphrase handling permits network-adjacent attackers to execute arbitrary code without authentication. The vulnerability, assigned CVE-2026-131817 and rated CVSS 8.8, enables remote code execution that could compromise charging infrastructure and connected devices. ChargePoint has released a firmware patch; users should update to the latest version to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1113/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-131817"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chargepoint-home-flex-rce-via-wpa-passphrase",
+      "article-61d38364",
+      "61d38364",
+      "chargepoint-home-flex-rce-via-wpa-passphrase-77f3b0"
     ]
   },
   {
@@ -9189,134 +9327,6 @@ export const news: NewsBrief[] = [
       "85e5b759",
       "ghostscript-upload2shell-enables-remote-command-ex-4a2f52",
       "ghostscript-upload2shell-enables-remote-command-execution"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-php-8-2-update-efc53ac1",
-    "title": "Red Hat Issues Critical PHP 8.2 Update",
-    "summary": "Red Hat issued a critical update for php:8.2 on RHEL8, fixing vulnerabilities that could enable remote code execution via PHP scripts. The CVE entries show CVSS scores up to 9.8, allowing unauthenticated attackers to run arbitrary code on affected servers. Administrators should apply the php:8.2 patch immediately and confirm the new module version is deployed to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101276",
-    "publishedAt": "2026-11-22T02:24:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-php-8-2-update",
-      "article-efc53ac1",
-      "efc53ac1",
-      "red-hat-issues-critical-php-8-2-update-2ee0ea"
-    ]
-  },
-  {
-    "slug": "entra-connect-health-flaw-exposes-admin-emails-20cbb0e4",
-    "title": "Entra Connect Health Flaw Exposes Admin Emails",
-    "summary": "A flaw in Microsoft Entra Connect Health lets attackers read admin and technical contact email addresses and config data. The vulnerability offers read-only access to these records but no inbox or message retrieval, and was disclosed via a Reddit customer notice. Microsoft applied a fix on November 19; administrators should patch immediately to stop data exposure.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-entra-connect-health-flaw/",
-    "publishedAt": "2026-11-22T02:03:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "entra-connect-health-flaw-exposes-admin-emails",
-      "article-20cbb0e4",
-      "20cbb0e4",
-      "entra-connect-health-flaw-exposes-admin-emails-307435"
-    ]
-  },
-  {
-    "slug": "rackspace-spot-breach-exposes-customer-kubernetes-49607481",
-    "title": "Rackspace Spot Breach Exposes Customer Kubernetes Secrets",
-    "summary": "Hackers breached Rackspace Spot cloud platform using compromised credentials, deploying unauthorized workloads and accessing Kubernetes secrets in customer clusters. The breach leveraged stolen credentials to read sensitive cluster secrets, exposing potential data leakage without exploiting a known software flaw. Rackspace urged customers to rotate compromised credentials, audit workloads, and apply any available platform updates to mitigate the exposure.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
-    "publishedAt": "2026-11-21T22:59:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rackspace-spot-breach-exposes-customer-kubernetes",
-      "article-49607481",
-      "49607481",
-      "rackspace-spot-breach-exposes-customer-kubernetes-43072e",
-      "rackspace-spot-breach-exposes-customer-kubernetes-secrets"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-update-for-php-8-2-ba37de30",
-    "title": "Red Hat Issues Critical Update for PHP 8.2",
-    "summary": "Red Hat released a critical security update for the php:8.2 module on RHEL 9.8 Extended Update Support, addressing high-impact vulnerabilities. The flaws, listed in CVE references, enable remote code execution via malformed input, with CVSS scores up to 9.8. Red Hat recommends applying the update immediately; no workaround exists, and users should verify module integrity post-installation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101253",
-    "publishedAt": "2026-11-21T18:51:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-update-for-php-8-2",
-      "article-ba37de30",
-      "ba37de30",
-      "red-hat-issues-critical-update-for-php-8-2-2ee0ea"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-update-for-php-8-3-647cf248",
-    "title": "Red Hat Issues Critical Update for PHP 8.3",
-    "summary": "Red Hat released a critical security update for the php:8.3 module on RHEL 9.8 Extended Update Support, addressing high-impact vulnerabilities. The flaws, listed in CVE references, enable remote code execution via malformed input, with CVSS scores up to 9.8. Red Hat recommends applying the update immediately; no workaround exists, and users should verify module integrity post-installation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101252",
-    "publishedAt": "2026-11-21T18:28:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-update-for-php-8-3",
-      "article-647cf248",
-      "647cf248",
-      "red-hat-issues-critical-update-for-php-8-3-2ee0ea"
-    ]
-  },
-  {
-    "slug": "microsoft-entra-connect-health-breach-exposes-admi-92d37834",
-    "title": "Microsoft Entra Connect Health Breach Exposes Admin Emails",
-    "summary": "Attackers exploited a flaw in Microsoft Entra Connect Health, gaining unauthorized access to administrator email addresses and tenant configuration data. The flaw enabled remote code execution via a malformed authentication token, letting attackers read tenant settings without credentials. Microsoft issued a patch and urged customers to update Entra Connect Health immediately, disabling the affected API endpoint as a temporary mitigation.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
-    "publishedAt": "2026-11-21T18:01:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-entra-connect-health-breach-exposes-admi",
-      "article-92d37834",
-      "92d37834",
-      "microsoft-entra-connect-health-breach-exposes-admi-33d14e",
-      "microsoft-entra-connect-health-breach-exposes-admin-emails"
-    ]
-  },
-  {
-    "slug": "mcp-servers-pose-new-ai-attack-surface-7fc7f366",
-    "title": "MCP Servers Pose New AI Attack Surface",
-    "summary": "MCP lets AI apps connect to external tools, APIs, and business data, making each server a new attack surface. Misconfigurations or weak authentication allow attackers to gain unauthorized access, potentially compromising corporate systems and data. Apply strict access controls, enable MFA, audit settings, and install vendor patches regularly to mitigate risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/mcp-server-security/",
-    "publishedAt": "2026-11-21T17:24:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mcp-servers-pose-new-ai-attack-surface",
-      "article-7fc7f366",
-      "7fc7f366",
-      "mcp-servers-pose-new-ai-attack-surface-2864c5"
     ]
   }
 ];

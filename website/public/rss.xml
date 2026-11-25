@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 03:45:30 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 04:44:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Microsoft Declares Code Red Over 24-Hour M365 Outage</title>
@@ -296,6 +296,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Issues Important grafana-pcp Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-grafana-pcp-security-upda-7e51e9f4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-grafana-pcp-security-upda-7e51e9f4</guid>
+      <description><![CDATA[Red Hat released an important security update for grafana-pcp on RHEL 9.6 EUS, addressing multiple vulnerabilities in the monitoring plugin. The update mitigates authentication bypass and privilege escalation flaws, though specific CVE identifiers are not listed in the advisory. Administrators should apply the grafana-pcp update immediately to maintain secure monitoring operations on RHEL 9.6.]]></description>
+      <pubDate>Tue, 24 Nov 2026 19:17:21 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103287">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Pan-Alto Issues Precautionary Fixes for OSS CVEs</title>
       <link>https://secubuzz.com/news/pan-alto-issues-precautionary-fixes-for-oss-cves-460f4aba</link>
       <guid isPermaLink="true">https://secubuzz.com/news/pan-alto-issues-precautionary-fixes-for-oss-cves-460f4aba</guid>
@@ -312,6 +321,24 @@
       <pubDate>Tue, 24 Nov 2026 18:59:52 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Low-Impact DHCP Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-low-impact-dhcp-update-e6090222</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-low-impact-dhcp-update-e6090222</guid>
+      <description><![CDATA[Red Hat released a low-impact DHCP security update for Enterprise Linux 9, fixing a flaw that could allow unauthorized lease manipulation. The vulnerability, rated CVSS low, does not require authentication and could disrupt network services by altering DHCP assignments. Administrators should apply the patch via standard update channels to mitigate the risk.]]></description>
+      <pubDate>Tue, 24 Nov 2026 18:58:50 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103290">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Important Grafana-PCP Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-grafana-pcp-update-0163b84d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-grafana-pcp-update-0163b84d</guid>
+      <description><![CDATA[Red Hat issued an important update for grafana-pcp on Enterprise Linux 9.4 for SAP, fixing a flaw that could allow unauthorized data manipulation. The vulnerability, rated CVSS high, does not require authentication and could enable attackers to read or alter Grafana dashboards, exposing sensitive metrics. Apply the patch through standard update channels to secure Grafana deployments.]]></description>
+      <pubDate>Tue, 24 Nov 2026 18:49:12 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103291">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>CVE-2026-134066 - Query injection via schema-derived identifiers in Graph Explorer</title>
@@ -429,33 +456,6 @@
       <pubDate>Tue, 24 Nov 2026 17:49:00 GMT</pubDate>
       <source url="https://therecord.media/idscan-data-breach-warning-congressional-letter">The Record</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important Update for resource-agents</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-update-for-resource-agent-8d7ff866</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-update-for-resource-agent-8d7ff866</guid>
-      <description><![CDATA[Red Hat released an Important security update for the resource-agents package on Enterprise Linux 8, addressing multiple vulnerabilities that could affect cluster resource management. The advisory references CVSS base scores for each flaw, indicating high-severity risks that could lead to unauthorized access or denial of service within the cluster. Administrators should apply the update immediately to mitigate the identified weaknesses.]]></description>
-      <pubDate>Tue, 24 Nov 2026 17:17:07 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103254">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical Fence-Agents Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-fence-agents-update-bc33027c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-fence-agents-update-bc33027c</guid>
-      <description><![CDATA[Red Hat released a critical security update for fence-agents on RHEL 8, fixing vulnerabilities that could let local attackers gain elevated privileges. The advisory cites CVSS base scores for each flaw, indicating high severity, though specific CVE IDs are not listed. Red Hat urges immediate installation of the updated fence-agents package to prevent privilege escalation and potential code execution.]]></description>
-      <pubDate>Tue, 24 Nov 2026 17:16:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103211">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Bots Detect AWS Keys Within Eight Seconds of Exposure</title>
-      <link>https://secubuzz.com/news/bots-detect-aws-keys-within-eight-seconds-of-expos-f38dcebc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bots-detect-aws-keys-within-eight-seconds-of-expos-f38dcebc</guid>
-      <description><![CDATA[A cloud security bot can discover exposed AWS access keys within eight seconds of publication. The rapid detection capability enables attackers to quickly harvest credentials, potentially granting unauthorized access to cloud resources before owners revoke the key. Security teams should enforce strict key rotation, enable automated key monitoring, and immediately revoke any accidentally exposed credentials.]]></description>
-      <pubDate>Tue, 24 Nov 2026 17:08:51 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/ai/2026/11/a-bot-tested-an-aws-key-within-8-seconds-of-exposure">Malwarebytes Labs</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
