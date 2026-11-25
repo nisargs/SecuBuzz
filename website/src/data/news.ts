@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "isc-stormcast-podcast-released-283a6847",
+    "title": "ISC Stormcast Podcast Released",
+    "summary": "The SANS Internet Storm Center released its weekly Stormcast podcast for Wednesday, November 25, 2026. The episode discusses current threat trends, emerging attack techniques, and analyst insights, offering actionable intelligence for security teams. Listeners can access the full recording and supporting materials through the ISC website link provided in the release.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33554",
+    "publishedAt": "2026-11-25T02:00:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-podcast-released",
+      "article-283a6847",
+      "283a6847",
+      "isc-stormcast-podcast-released-57dd81"
+    ]
+  },
+  {
     "slug": "red-hat-satellite-client-critical-update-f951611b",
     "title": "Red Hat Satellite Client Critical Update",
     "summary": "Red Hat released a critical security update for Satellite 6 Client to address multiple vulnerabilities affecting the client component. The update is rated Critical by Red Hat Product Security, though specific CVSS scores are not disclosed in the advisory. Users should apply the patch immediately or upgrade to the latest Satellite 6 Client release to mitigate the risks.",
@@ -416,6 +434,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-important-qt6-qtdeclarative-updat-30fbc220",
+    "title": "Red Hat Releases Important qt6-qtdeclarative Update",
+    "summary": "Red Hat has issued an important security update for the qt6-qtdeclarative package on RHEL 10.0 Extended Update Support. The update addresses multiple vulnerabilities, each referenced by a CVE identifier, and carries a CVSS base score that classifies them as high-severity. Administrators should apply the update immediately to ensure protection against the identified security weaknesses.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103375",
+    "publishedAt": "2026-11-24T19:49:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-important-qt6-qtdeclarative-updat",
+      "article-30fbc220",
+      "30fbc220",
+      "red-hat-releases-important-qt6-qtdeclarative-updat-2ee1d7",
+      "red-hat-releases-important-qt6-qtdeclarative-update"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-curl-security-update-a31d5225",
+    "title": "Red Hat Issues curl Security Update",
+    "summary": "Red Hat released a curl security update for RHEL 9.2 Update Services. The update addresses multiple vulnerabilities rated Important by Red Hat, with CVSS scores available via CVE links, indicating potential remote code execution or privilege escalation risks. Administrators should apply the latest curl package from the RHEL 9.2 Update Services repository to mitigate the identified weaknesses.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103305",
+    "publishedAt": "2026-11-24T19:37:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-curl-security-update",
+      "article-a31d5225",
+      "a31d5225",
+      "red-hat-issues-curl-security-update-2ee1d6"
+    ]
+  },
+  {
     "slug": "california-privacy-agency-director-kemp-resigns-af-bdd646fe",
     "title": "California Privacy Agency Director Kemp Resigns After Two Years",
     "summary": "California Privacy Protection Agency director Charles Kemp announced his departure after a two-year tenure. His exit follows the launch of the agency’s first-in-the-nation platform that enables consumers to opt out of data sharing. The agency will continue to enforce privacy regulations and support consumer data rights under new effective leadership.",
@@ -586,6 +641,25 @@ export const news: NewsBrief[] = [
       "article-39a59a07",
       "39a59a07",
       "wiz-shares-fedramp-vdr-ver-insights-4c453c"
+    ]
+  },
+  {
+    "slug": "grafana-pcp-update-addresses-important-security-is-fe412e6c",
+    "title": "Grafana-pcp Update Addresses Important Security Issue",
+    "summary": "Red Hat released a security update for grafana-pcp on RHEL 10.0 EUS, addressing an important vulnerability. The update mitigates a flaw identified by CVE references, with a CVSS base score indicating significant risk, potentially enabling unauthorized access to system metrics. Red Hat recommends applying the patch immediately to maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103274",
+    "publishedAt": "2026-11-24T18:31:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "grafana-pcp-update-addresses-important-security-is",
+      "article-fe412e6c",
+      "fe412e6c",
+      "grafana-pcp-update-addresses-important-security-is-2ee1d3",
+      "grafana-pcp-update-addresses-important-security-issue"
     ]
   },
   {
@@ -853,6 +927,24 @@ export const news: NewsBrief[] = [
       "310365e0",
       "shinyhunters-claims-to-return-after-fbi-arrests-us-329b20",
       "shinyhunters-claims-to-return-after-fbi-arrests-uses-old-pgp"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-openscap-security-update-d8ca15b6",
+    "title": "Red Hat Issues openscap Security Update",
+    "summary": "Red Hat released a low-severity update for the openscap package on Red Hat Enterprise Linux. The update includes bug fixes and enhancements that address minor critical security issues, with CVSS scores available via CVE references. Administrators should install the latest openscap package from the RHEL repository to apply the fixes.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102890",
+    "publishedAt": "2026-11-24T16:25:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-openscap-security-update",
+      "article-d8ca15b6",
+      "d8ca15b6",
+      "red-hat-issues-openscap-security-update-2ee175"
     ]
   },
   {
@@ -3370,6 +3462,57 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "autodesk-autocad-heap-overflow-enables-remote-code-de2e12e7",
+    "title": "Autodesk AutoCAD Heap Overflow Enables Remote Code Execution",
+    "summary": "A heap-based buffer overflow in Autodesk AutoCAD’s DXF parser lets remote attackers run arbitrary code when a user opens a malicious file. CVE-2026-16780 scores 7.8 on CVSS and requires user interaction but no authentication, posing a high-severity RCE threat. Autodesk has issued a patch in version 24.0.1; users should apply it immediately to mitigate the overflow.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1130/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-16780"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "autodesk-autocad-heap-overflow-enables-remote-code",
+      "article-de2e12e7",
+      "de2e12e7",
+      "autodesk-autocad-heap-overflow-enables-remote-code-77f3b7",
+      "autodesk-autocad-heap-overflow-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "oracle-autonomous-ai-database-cve-2026-114849-allo-c21c6b06",
+    "title": "Oracle Autonomous AI Database CVE-2026-114849 Allows Privilege Escalation and RCE",
+    "summary": "Oracle Autonomous AI Database contains CVE-2026-114849, a missing authorization flaw in wwv_flow.show that lets remote attackers bypass authentication and gain elevated privileges. Exploitation also exposes directories and enables arbitrary code execution. Oracle released patch 23.4.1; administrators should apply it immediately to mitigate privilege escalation and remote code execution risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1127/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114849"
+    ],
+    "additionalSources": [
+      {
+        "source": "ZDI Advisories",
+        "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1126/"
+      },
+      {
+        "source": "ZDI Advisories",
+        "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1124/"
+      }
+    ],
+    "aliases": [
+      "oracle-autonomous-ai-database-cve-2026-114849-allo",
+      "article-c21c6b06",
+      "c21c6b06",
+      "oracle-autonomous-ai-database-cve-2026-114849-allo-77f3b4",
+      "oracle-autonomous-ai-database-cve-2026-114849-allows-privile"
     ]
   },
   {
@@ -9201,143 +9344,6 @@ export const news: NewsBrief[] = [
       "article-5718e2a1",
       "5718e2a1",
       "cisa-adds-vmware-cisco-apache-flaws-to-kev-1580ca"
-    ]
-  },
-  {
-    "slug": "6-critical-f5-big-ip-could-let-hackers-disrupt-web-e1a11be8",
-    "title": "6 Critical F5 BIG-IP . Could Let Hackers Disrupt Websites and Execute Malicious Code",
-    "summary": "F5 released emergency fixes for six critical BIG-IP vulnerabilities that could let remote attackers take websites and other services offline without logging in. The flaws affect specific traffic-handling configurations. An attacker who can reach a vulnerable service could crash the BIG-IP process that handles client traffic.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-f5-big-ip-vulnerabilities/",
-    "publishedAt": "2026-11-21T03:13:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "6-critical-f5-big-ip-could-let-hackers-disrupt-web",
-      "article-e1a11be8",
-      "e1a11be8",
-      "6-critical-f5-big-ip-could-let-hackers-disrupt-web-34cd03",
-      "6-critical-f5-big-ip-could-let-hackers-disrupt-websites-and-"
-    ]
-  },
-  {
-    "slug": "whatsapp-android-flaws-could-let-hackers-delete-us-5e5d25e8",
-    "title": "WhatsApp Android Flaws Could Let Hackers Delete Users’ Files and Expose IP Addresses",
-    "summary": "WhatsApp’s November 2026 security update describes three flaws that could let attackers delete files stored by WhatsApp on Android, expose a user’s IP address, or bypass a security check for Meta AI’s Private Processing service. Of the three, only the IP exposure flaw was flagged for possible abuse.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/whatsapp-android-flaws/",
-    "publishedAt": "2026-11-21T02:36:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "whatsapp-android-flaws-could-let-hackers-delete-us",
-      "article-5e5d25e8",
-      "5e5d25e8",
-      "whatsapp-android-flaws-could-let-hackers-delete-us-8758a5",
-      "whatsapp-android-flaws-could-let-hackers-delete-users-files-"
-    ]
-  },
-  {
-    "slug": "vendors-address-ai-agent-access-control-challenges-628c61df",
-    "title": "Vendors Address AI Agent Access-Control Challenges",
-    "summary": "Security vendors are developing identity, runtime, and development controls to restrict AI agents to authorized tasks. The convergence of controls aims to mitigate risks of agents overstepping boundaries, a gap that could enable data exfiltration or policy violations. CISOs must evaluate vendor solutions and implement layered controls to enforce task constraints, as no single standard exists yet.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
-    "publishedAt": "2026-11-21T01:31:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vendors-address-ai-agent-access-control-challenges",
-      "article-628c61df",
-      "628c61df",
-      "vendors-address-ai-agent-access-control-challenges-6918cc"
-    ]
-  },
-  {
-    "slug": "top-enterprise-risk-management-tools-2027-b701097f",
-    "title": "Top Enterprise Risk Management Tools 2027",
-    "summary": "The 2027 ERM landscape features platforms that enable organizations to identify, assess, and mitigate risks across operational, financial, compliance, and cybersecurity domains. These solutions leverage AI, machine learning, and automation to deliver real-time insights and streamline processes, while prioritizing seamless integration for centralized data views. Vendors emphasize AI-driven analytics and unified dashboards to support holistic risk management.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/enterprise-risk-management-tools/",
-    "publishedAt": "2026-11-21T01:26:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-enterprise-risk-management-tools-2027",
-      "article-b701097f",
-      "b701097f",
-      "top-enterprise-risk-management-tools-2027-7e6161"
-    ]
-  },
-  {
-    "slug": "cto-of-ransomwarehelp-indicted-for-wire-fraud-9b21c3c1",
-    "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
-    "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption key and charging victims a markup for work that was never performed.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-    "publishedAt": "2026-11-21T00:36:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cto-of-ransomwarehelp-indicted-for-wire-fraud",
-      "article-9b21c3c1",
-      "9b21c3c1",
-      "cto-of-ransomwarehelp-indicted-for-wire-fraud-308466"
-    ]
-  },
-  {
-    "slug": "palo-alto-releases-patches-for-two-critical-nginx-c9de6158",
-    "title": "Palo Alto Releases Patches for Two Critical NGINX CVEs",
-    "summary": "Palo Alto Networks issued patches for two critical NGINX vulnerabilities, CVE-2026-123633 and CVE-2026-123007, that affect PAN-OS and Panorama when HTTP/2 is enabled. The flaws allow unauthenticated remote attackers to crash worker processes or execute code, posing a high-severity remote code execution risk. Administrators should apply the updates immediately or enable the temporary workaround to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Palo Alto Networks PSIRT",
-    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-123633",
-    "publishedAt": "2026-11-20T23:00:00.000Z",
-    "cves": [
-      "CVE-2026-123633",
-      "CVE-2026-123007"
-    ],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/palo-alto-confirms-nginx-rce-vulnerabilities/"
-      }
-    ],
-    "aliases": [
-      "palo-alto-releases-patches-for-two-critical-nginx",
-      "article-c9de6158",
-      "c9de6158",
-      "palo-alto-releases-patches-for-two-critical-nginx-4fdfb7",
-      "palo-alto-releases-patches-for-two-critical-nginx-cves"
-    ]
-  },
-  {
-    "slug": "com-group-conducts-vishing-data-theft-extortion-64ff6884",
-    "title": "Com Group Conducts Vishing Data Theft Extortion",
-    "summary": "Com affiliates execute vishing attacks, cloud data theft, and extortion campaigns targeting healthcare and finance organizations. Attackers leverage voice phishing to harvest credentials, exfiltrate cloud-stored data, and demand ransom payments, resulting in operational disruption and sensitive data exposure. Unit 42 recommends phishing-resistant multi-factor authentication, continuous cloud monitoring, and robust incident response planning to mitigate risks.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/com-affiliate-vishing-attacks/",
-    "publishedAt": "2026-11-20T22:00:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "com-group-conducts-vishing-data-theft-extortion",
-      "article-64ff6884",
-      "64ff6884",
-      "com-group-conducts-vishing-data-theft-extortion-184882"
     ]
   }
 ];

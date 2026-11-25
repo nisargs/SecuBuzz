@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 01:44:55 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 02:45:37 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ISC Stormcast Podcast Released</title>
+      <link>https://secubuzz.com/news/isc-stormcast-podcast-released-283a6847</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-podcast-released-283a6847</guid>
+      <description><![CDATA[The SANS Internet Storm Center released its weekly Stormcast podcast for Wednesday, November 25, 2026. The episode discusses current threat trends, emerging attack techniques, and analyst insights, offering actionable intelligence for security teams. Listeners can access the full recording and supporting materials through the ISC website link provided in the release.]]></description>
+      <pubDate>Wed, 25 Nov 2026 02:00:03 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33554">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Satellite Client Critical Update</title>
       <link>https://secubuzz.com/news/red-hat-satellite-client-critical-update-f951611b</link>
@@ -206,6 +215,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Releases Important qt6-qtdeclarative Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-important-qt6-qtdeclarative-updat-30fbc220</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-important-qt6-qtdeclarative-updat-30fbc220</guid>
+      <description><![CDATA[Red Hat has issued an important security update for the qt6-qtdeclarative package on RHEL 10.0 Extended Update Support. The update addresses multiple vulnerabilities, each referenced by a CVE identifier, and carries a CVSS base score that classifies them as high-severity. Administrators should apply the update immediately to ensure protection against the identified security weaknesses.]]></description>
+      <pubDate>Tue, 24 Nov 2026 19:49:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103375">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues curl Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-curl-security-update-a31d5225</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-curl-security-update-a31d5225</guid>
+      <description><![CDATA[Red Hat released a curl security update for RHEL 9.2 Update Services. The update addresses multiple vulnerabilities rated Important by Red Hat, with CVSS scores available via CVE links, indicating potential remote code execution or privilege escalation risks. Administrators should apply the latest curl package from the RHEL 9.2 Update Services repository to mitigate the identified weaknesses.]]></description>
+      <pubDate>Tue, 24 Nov 2026 19:37:32 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103305">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>California Privacy Agency Director Kemp Resigns After Two Years</title>
       <link>https://secubuzz.com/news/california-privacy-agency-director-kemp-resigns-af-bdd646fe</link>
       <guid isPermaLink="true">https://secubuzz.com/news/california-privacy-agency-director-kemp-resigns-af-bdd646fe</guid>
@@ -285,6 +312,15 @@
       <pubDate>Tue, 24 Nov 2026 18:36:13 GMT</pubDate>
       <source url="https://www.wiz.io/blog/fedramp-vdr-ver-event-key-takeaways">Wiz Research</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Grafana-pcp Update Addresses Important Security Issue</title>
+      <link>https://secubuzz.com/news/grafana-pcp-update-addresses-important-security-is-fe412e6c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/grafana-pcp-update-addresses-important-security-is-fe412e6c</guid>
+      <description><![CDATA[Red Hat released a security update for grafana-pcp on RHEL 10.0 EUS, addressing an important vulnerability. The update mitigates a flaw identified by CVE references, with a CVSS base score indicating significant risk, potentially enabling unauthorized access to system metrics. Red Hat recommends applying the patch immediately to maintain system integrity.]]></description>
+      <pubDate>Tue, 24 Nov 2026 18:31:31 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103274">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Chrome Beta Updates Desktop Clients to 159.0.8154.33</title>
@@ -413,48 +449,12 @@
       <category>Ransomware</category>
     </item>
     <item>
-      <title>EU Academy Breach Stole User Data</title>
-      <link>https://secubuzz.com/news/eu-academy-breach-stole-user-data-57513e30</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eu-academy-breach-stole-user-data-57513e30</guid>
-      <description><![CDATA[The European Commission confirmed attackers breached its EU Academy learning hub and stole personal data of an undisclosed number of users. The breach exposed user credentials and demographic details, enabling potential identity theft or phishing attacks against EU staff and students. The Commission must investigate, notify affected users, and reinforce access controls on the EU Academy platform.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:22:44 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>SwarmView Reveals AI Investigation Transparency</title>
-      <link>https://secubuzz.com/news/swarmview-reveals-ai-investigation-transparency-6647b8f8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/swarmview-reveals-ai-investigation-transparency-6647b8f8</guid>
-      <description><![CDATA[Arctic Wolf demonstrates SwarmView, a feature of its Aurora Agentic SOC, that exposes the internal decision process of AI-driven investigations. The tool displays which AI agents contributed, their weighting, and the points at which a human expert intervened, providing auditability for forensic analysis. Security teams can use SwarmView to validate AI conclusions and adjust agent configurations for improved investigative accuracy.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:17:03 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/technical-videos/how-swarmview-provides-transparency-around-ai-driven-investigations-and-trustworthy-results/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Check Point Servers Compromised in 22-Org Campaign</title>
-      <link>https://secubuzz.com/news/check-point-servers-compromised-in-22-org-campaign-4e126213</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/check-point-servers-compromised-in-22-org-campaign-4e126213</guid>
-      <description><![CDATA[Threat actors exploited multiple vulnerabilities to compromise Check Point Security management servers in an ongoing campaign that affected 22 organizations. The exploitation enabled attackers to gain administrative control over the servers, potentially exposing configuration data and internal network traffic. Check Point has released patches for the affected vulnerabilities; administrators should apply updates and review server hardening configurations.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:15:23 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102931: Important: grafana security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102931-important-grafana-security-update-083e714c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102931-important-grafana-security-update-083e714c</guid>
-      <description><![CDATA[An update for grafana is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:11:15 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102931">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat releases fltk update for RHEL 9.6</title>
-      <link>https://secubuzz.com/news/red-hat-releases-fltk-update-for-rhel-9-6-a8022b8a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-fltk-update-for-rhel-9-6-a8022b8a</guid>
-      <description><![CDATA[Red Hat released an important security update for the FLTK library on Enterprise Linux 9.6 Extended Update Support, addressing several memory-corruption and integer-overflow flaws. Each flaw has a CVSS base score, but no active exploitation has been observed. Apply the RHSA-2026:102939 patch via yum/dnf immediately to protect systems and ensure compliance.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:10:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102939">Red Hat Security Advisories</source>
+      <title>Red Hat Issues openscap Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-openscap-security-update-d8ca15b6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-openscap-security-update-d8ca15b6</guid>
+      <description><![CDATA[Red Hat released a low-severity update for the openscap package on Red Hat Enterprise Linux. The update includes bug fixes and enhancements that address minor critical security issues, with CVSS scores available via CVE references. Administrators should install the latest openscap package from the RHEL repository to apply the fixes.]]></description>
+      <pubDate>Tue, 24 Nov 2026 16:25:31 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102890">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
