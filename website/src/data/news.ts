@@ -11,6 +11,101 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "drupal-rce-flaw-exploited-to-hijack-sites-935522ec",
+    "title": "Drupal RCE Flaw Exploited to Hijack Sites",
+    "summary": "A critical Drupal RCE vulnerability is actively exploited in the wild to hijack unpatched sites. The flaw allows unauthenticated remote code execution via crafted requests, giving attackers full site control; it has a CVSS score of 9.8. Drupal released a patch; administrators must update immediately and verify configuration to block exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
+    "publishedAt": "2026-11-25T10:10:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-rce-flaw-exploited-to-hijack-sites",
+      "article-935522ec",
+      "935522ec",
+      "drupal-rce-flaw-exploited-to-hijack-sites-5e2ccd"
+    ]
+  },
+  {
+    "slug": "hex-pm-rce-flaw-compromises-six-package-registry-s-05bc54dc",
+    "title": "Hex.pm RCE Flaw Compromises Six Package Registry Servers",
+    "summary": "An attacker ran OS commands on six Hex.pm servers by exploiting a CVSS 10.0 RCE flaw. The flaw, present since February 2016, allows unauthenticated remote code execution via crafted API requests, enabling full system compromise. Hex.pm applied a patched build within 15 minutes of the first request; administrators should ensure all servers run the latest release.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
+    "publishedAt": "2026-11-25T09:06:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hex-pm-rce-flaw-compromises-six-package-registry-s",
+      "article-05bc54dc",
+      "05bc54dc",
+      "hex-pm-rce-flaw-compromises-six-package-registry-s-7760da",
+      "hex-pm-rce-flaw-compromises-six-package-registry-servers"
+    ]
+  },
+  {
+    "slug": "idunno-anticsrf-library-rce-exploited-via-cve-2026-9368b221",
+    "title": "Idunno AntiCsrf Library RCE Exploited via CVE-2026-131914",
+    "summary": "Attackers exploit CVE-2026-131914 in the defunct Idunno AntiCsrf library to achieve remote code execution. The flaw permits execution of arbitrary code through a single crafted web request, enabling full server compromise without authentication. Since the library is defunct, developers should remove Idunno dependencies and apply the vendor patch or migrate to a maintained CSRF solution.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/",
+    "publishedAt": "2026-11-25T09:05:13.000Z",
+    "cves": [
+      "CVE-2026-131914"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "idunno-anticsrf-library-rce-exploited-via-cve-2026",
+      "article-9368b221",
+      "9368b221",
+      "idunno-anticsrf-library-rce-exploited-via-cve-2026-1b30ee",
+      "idunno-anticsrf-library-rce-exploited-via-cve-2026-131914"
+    ]
+  },
+  {
+    "slug": "microsoft-reports-authentication-issues-post-novem-baf23a74",
+    "title": "Microsoft Reports Authentication Issues Post-November Updates",
+    "summary": "Microsoft customers may experience authentication failures after installing November security updates that fixed a high-severity RCE vulnerability. The updates alter authentication components, causing intermittent login errors for some users; the issue is unrelated to the RCE fix. Microsoft recommends applying the latest cumulative update and monitoring login problems while a hotfix is under investigation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
+    "publishedAt": "2026-11-25T09:02:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-reports-authentication-issues-post-novem",
+      "article-baf23a74",
+      "baf23a74",
+      "microsoft-reports-authentication-issues-post-novem-672b4e",
+      "microsoft-reports-authentication-issues-post-november-update"
+    ]
+  },
+  {
+    "slug": "police-shut-down-57-iptv-services-trace-26m-crypto-42edb05e",
+    "title": "Police Shut Down 57 IPTV Services, Trace €26M Crypto",
+    "summary": "Police from 11 countries disrupted 57 IPTV services and identified 321 pirate sites during a five-day Europol operation in Seville. The operation traced over €26 million in crypto payments, revealing the financial backbone of the streaming network and anonymized wallet usage. No arrests announced; transaction analysis remains ongoing, underscoring the need for continued crypto flow monitoring to deter piracy.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/25/illegal-iptv-disrupted-europol-crypto/",
+    "publishedAt": "2026-11-25T08:59:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "police-shut-down-57-iptv-services-trace-26m-crypto",
+      "article-42edb05e",
+      "42edb05e",
+      "police-shut-down-57-iptv-services-trace-26m-crypto-c5b068"
+    ]
+  },
+  {
     "slug": "palo-alto-releases-patch-for-fragnesia-rooting-fla-9611c196",
     "title": "Palo Alto Releases Patch for Fragnesia Rooting Flaw",
     "summary": "Palo Alto Networks issued a patch for the Fragnesia kernel flaw, CVE-2026-46300, which attackers used to gain root access on PAN-OS firewalls. The flaw enabled unauthenticated code execution via exposed management interfaces, allowing full system compromise in affected devices. Customers should apply the latest PAN-OS update and restrict internet-reachable management interfaces to prevent exploitation.",
@@ -9344,98 +9439,6 @@ export const news: NewsBrief[] = [
       "article-4423a1ec",
       "4423a1ec",
       "qemu-kvm-ma-flaw-allows-local-privilege-escalation-2ee15b"
-    ]
-  },
-  {
-    "slug": "gnome-remote-desktop-vulnerability-enables-remote-ae144d19",
-    "title": "GNOME Remote Desktop Vulnerability Enables Remote Code Execution",
-    "summary": "Red Enterprise Linux 9.8 Extended Update Support users face a gnome-remote-desktop flaw that permits remote code execution via the remote desktop protocol. The issue arises from unchecked input during session negotiation, and Red Hat rates it Important with a CVSS base score in the CVE references. Apply the gnome-remote-desktop update immediately; no workaround exists until the patch is installed.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102169",
-    "publishedAt": "2026-11-23T03:22:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gnome-remote-desktop-vulnerability-enables-remote",
-      "article-ae144d19",
-      "ae144d19",
-      "gnome-remote-desktop-vulnerability-enables-remote-2ee15b",
-      "gnome-remote-desktop-vulnerability-enables-remote-code-execu"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-security-update-for-xdg-desktop-por-4ae5111b",
-    "title": "Red Hat Issues Security Update for xdg-desktop-portal",
-    "summary": "Red Hat released a security update for the xdg-desktop-portal component in Red Enterprise Linux 10, addressing multiple vulnerabilities. The update mitigates flaws that could allow privilege escalation or unauthorized data access, with CVSS scores provided in the CVE references. Administrators should apply the RHSA-2026:102177 update immediately to ensure protection against the identified weaknesses.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102177",
-    "publishedAt": "2026-11-23T03:15:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-security-update-for-xdg-desktop-por",
-      "article-4ae5111b",
-      "4ae5111b",
-      "red-hat-issues-security-update-for-xdg-desktop-por-2ee15b",
-      "red-hat-issues-security-update-for-xdg-desktop-portal"
-    ]
-  },
-  {
-    "slug": "volkswagen-cars-exposed-via-bluetooth-spy-flaws-1dfe3aed",
-    "title": "Volkswagen Cars Exposed via Bluetooth Spy Flaws",
-    "summary": "Researchers demonstrated that Bluetooth flaws in Volkswagen vehicles enable eavesdropping on conversations and GPS tracking. The flaws grant unauthorized cabin control and location access, exposing private data and enabling remote manipulation, with a 16-month exposure after disclosure. Volkswagen should expedite the release of a patch and advise owners to disable Bluetooth or apply the fix immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hack-volkswagen-cars-via-bluetooth/",
-    "publishedAt": "2026-11-23T03:09:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "volkswagen-cars-exposed-via-bluetooth-spy-flaws",
-      "article-1dfe3aed",
-      "1dfe3aed",
-      "volkswagen-cars-exposed-via-bluetooth-spy-flaws-210daa"
-    ]
-  },
-  {
-    "slug": "openai-finds-zero-day-mobile-os-bypass-and-rce-808117f3",
-    "title": "OpenAI Finds Zero-Day Mobile OS Bypass and RCE",
-    "summary": "OpenAI’s GPT-6.2 Astra discovered zero-day flaws in a popular mobile OS and a common network service. The flaws include a permission-bypass exposing private data and a remote code execution path reachable from a low-privileged role. No vendor patch is yet available; security teams should monitor OpenAI advisories and apply any future OS or service updates promptly.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openai-gpt-6-2-astra-0-day-vulnerabilities/",
-    "publishedAt": "2026-11-23T03:06:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-finds-zero-day-mobile-os-bypass-and-rce",
-      "article-808117f3",
-      "808117f3",
-      "openai-finds-zero-day-mobile-os-bypass-and-rce-17f932"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-mingw-expat-for-rhel8-88477b25",
-    "title": "Red Hat Updates mingw-expat for RHEL8",
-    "summary": "Red Hat released an Important security update for mingw-expat on Red Hat Enterprise Linux 8 to fix a kernel-related flaw. The flaw, cited in several CVE references, carries a CVSS base score indicating high severity, but no active exploitation has been reported. The vendor has made the patch available; administrators should apply it immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102193",
-    "publishedAt": "2026-11-23T03:06:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-mingw-expat-for-rhel8",
-      "article-88477b25",
-      "88477b25",
-      "red-hat-updates-mingw-expat-for-rhel8-2ee15b"
     ]
   }
 ];
