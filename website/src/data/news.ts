@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "hackers-use-stolen-ai-prompt-data-to-search-aws-cl-90a4c37c",
+    "title": "Hackers Use Stolen AI Prompt Data to Search AWS Cloud Storage and Secret Management Services",
+    "summary": "Hackers used Amazon Web Services (AWS) access keys stolen from AI prompts to list cloud storage buckets and search services that hold passwords, API tokens, and application settings. Security firm Dragos traced the activity to credentials it had planted in test prompts.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/stolen-ai-prompt-data/",
+    "publishedAt": "2026-11-25T07:46:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-stolen-ai-prompt-data-to-search-aws-cl",
+      "article-90a4c37c",
+      "90a4c37c",
+      "hackers-use-stolen-ai-prompt-data-to-search-aws-cl-3cf0d7",
+      "hackers-use-stolen-ai-prompt-data-to-search-aws-cloud-storag"
+    ]
+  },
+  {
     "slug": "top-10-ptaas-platforms-ranked-for-2026-298a77a5",
     "title": "Top 10 PTaaS Platforms Ranked for 2026",
     "summary": "The article ranks the top PTaaS platforms for 2026, emphasizing on-demand human testing and rapid fix retesting. It assesses platforms on tester quality, tool integration, and how quickly findings feed back into development pipelines. Organizations can use the rankings to choose a provider that matches their deployment cadence and security testing maturity.",
@@ -3721,6 +3740,74 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "oracle-apex-vulnerability-cve-2026-114850-enables-dbe8006f",
+    "title": "Oracle APEX Vulnerability CVE-2026-114850 Enables Session Tampering and Validation Bypass",
+    "summary": "Oracle Autonomous AI Database APEX is affected by CVE-2026-114850, a remote flaw that allows attackers to tamper with session data or bypass validation without authentication. The vulnerability can enable session hijacking or unauthorized workspace manipulation, potentially exposing sensitive user information. Oracle has released a patch; administrators should update the APEX component immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1131/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114850"
+    ],
+    "additionalSources": [
+      {
+        "source": "ZDI Advisories",
+        "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1129/"
+      }
+    ],
+    "aliases": [
+      "oracle-apex-vulnerability-cve-2026-114850-enables",
+      "article-dbe8006f",
+      "dbe8006f",
+      "oracle-apex-vulnerability-cve-2026-114850-enables-77f3b7",
+      "oracle-apex-vulnerability-cve-2026-114850-enables-session-ta"
+    ]
+  },
+  {
+    "slug": "oracle-autonomous-ai-database-apex-signature-verif-20df6311",
+    "title": "Oracle Autonomous AI Database APEX Signature Verification Bypass Vulnerability",
+    "summary": "Oracle Autonomous AI Database APEX suffers a remote URL integrity bypass that lets attackers alter request signatures without authentication. The flaw, CVE-2026-114850, carries a CVSS score of 6.5 and could enable malicious request manipulation. Oracle has issued a patch; applying it will restore proper cryptographic verification of APEX requests securely.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1128/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114850"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-autonomous-ai-database-apex-signature-verif",
+      "article-20df6311",
+      "20df6311",
+      "oracle-autonomous-ai-database-apex-signature-verif-77f3b5",
+      "oracle-autonomous-ai-database-apex-signature-verification-by"
+    ]
+  },
+  {
+    "slug": "oracle-autonomous-ai-database-apex-input-validatio-a8e5db21",
+    "title": "Oracle Autonomous AI Database APEX Input Validation Flaw",
+    "summary": "A remote input validation flaw in Oracle Autonomous AI Database APEX permits attackers to bypass security checks without authentication. CVE-2026-114849 has a CVSS score of 4.8 and may allow attackers to inject malicious data into APEX forms. Oracle has released a patch; updating APEX will eliminate the input validation vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1125/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114849"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-autonomous-ai-database-apex-input-validatio",
+      "article-a8e5db21",
+      "a8e5db21",
+      "oracle-autonomous-ai-database-apex-input-validatio-77f3b4",
+      "oracle-autonomous-ai-database-apex-input-validation-flaw"
     ]
   },
   {
@@ -9292,80 +9379,6 @@ export const news: NewsBrief[] = [
       "article-a34525dd",
       "a34525dd",
       "red-hat-issues-important-libgsf-security-update-2ee15b"
-    ]
-  },
-  {
-    "slug": "red-hat-flatpak-update-fixes-security-vulnerabilit-58f0e68c",
-    "title": "Red Hat Flatpak Update Fixes Security Vulnerabilities",
-    "summary": "Red Hat issued a flatpak patch for RHEL 8.4 to fix multiple security flaws. The update addresses privilege-escalation and information-leak vulnerabilities, each with a CVSS score listed via CVE references, but no exploitation reported. Apply the flatpak update immediately; no workaround exists, and users should confirm the new flatpak version post-install.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102156",
-    "publishedAt": "2026-11-23T01:23:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-flatpak-update-fixes-security-vulnerabilit",
-      "article-58f0e68c",
-      "58f0e68c",
-      "red-hat-flatpak-update-fixes-security-vulnerabilit-2ee15a",
-      "red-hat-flatpak-update-fixes-security-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-patch-addresses-multiple-security-f-74ef8639",
-    "title": "Red Hat Kernel Patch Addresses Multiple Security Flaws",
-    "summary": "Red Hat issued a kernel patch for RHEL 10.2 EUS to fix multiple Linux kernel security flaws. The update addresses privilege-escalation and information-leak flaws, each with a CVSS score listed via CVE references, but no active exploitation has been seen. Red Hat advises applying the kernel update immediately; no workaround exists, and users should confirm the new kernel version post-install.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102090",
-    "publishedAt": "2026-11-23T00:51:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-kernel-patch-addresses-multiple-security-f",
-      "article-74ef8639",
-      "74ef8639",
-      "red-hat-kernel-patch-addresses-multiple-security-f-2ee157",
-      "red-hat-kernel-patch-addresses-multiple-security-flaws"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-fltk-security-patch-743179e1",
-    "title": "Red Hat Issues fltk Security Patch",
-    "summary": "Red Enterprise Linux 9 users receive an important security update for the fltk GUI toolkit. The update addresses one or more vulnerabilities that could allow attackers to execute code or compromise system integrity, as indicated by the CVSS base score linked in the advisory. Red Hat recommends applying the patch immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102089",
-    "publishedAt": "2026-11-23T00:40:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-fltk-security-patch",
-      "article-743179e1",
-      "743179e1",
-      "red-hat-issues-fltk-security-patch-2ee157"
-    ]
-  },
-  {
-    "slug": "google-blocks-ai-tool-calls-with-governance-42e3e322",
-    "title": "Google Blocks AI Tool Calls with Governance",
-    "summary": "Google introduces semantic governance policies on its Gemini platform, allowing enterprises to pre-screen AI agent tool calls. The policies evaluate each proposed tool invocation against user intent and company rules, blocking non-compliant actions at the Agent Gateway enforcement point. Organizations can configure permissions to define allowed actions, enhancing control over AI agent behavior.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/google-semantic-governance-policies/",
-    "publishedAt": "2026-11-23T00:27:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-blocks-ai-tool-calls-with-governance",
-      "article-42e3e322",
-      "42e3e322",
-      "google-blocks-ai-tool-calls-with-governance-1a2d8c"
     ]
   }
 ];
