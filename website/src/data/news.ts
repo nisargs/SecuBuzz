@@ -11,6 +11,120 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "3-5-billion-records-exposed-in-two-public-database-50a29b2b",
+    "title": "3.5 Billion Records Exposed in Two Public Databases",
+    "summary": "Researchers uncovered two publicly exposed databases holding more than 3.5 billion records, including stolen passwords, session cookies, and children’s school data. The exposure stemmed from misconfigured access controls that left the databases unauthenticated, enabling credential-stealing attacks. Affected parties must revoke compromised credentials, enforce stricter access policies, and monitor for credential reuse.",
+    "category": "Breach",
+    "severity": "CRITICAL",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/11/two-exposed-databases-held-over-3-5-billion-records",
+    "publishedAt": "2026-11-25T12:27:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "3-5-billion-records-exposed-in-two-public-database",
+      "article-50a29b2b",
+      "50a29b2b",
+      "3-5-billion-records-exposed-in-two-public-database-62cf0d",
+      "3-5-billion-records-exposed-in-two-public-databases"
+    ]
+  },
+  {
+    "slug": "fake-wordpress-plugin-bypasses-2fa-injects-malicio-4693aa8c",
+    "title": "Fake WordPress Plugin Bypasses 2FA, Injects Malicious Scripts",
+    "summary": "A counterfeit WordPress plugin enables attackers to bypass two-factor authentication and inject malicious JavaScript into visitor browsers. The hidden plugin exploits the WordPress authentication flow, allowing credential theft and cross-site scripting that can compromise user sessions and data. Security teams should remove the rogue plugin, audit the site for other hidden code, and enforce strict plugin vetting and two-factor enforcement.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fake-wordpress-plugin/",
+    "publishedAt": "2026-11-25T12:14:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-wordpress-plugin-bypasses-2fa-injects-malicio",
+      "article-4693aa8c",
+      "4693aa8c",
+      "fake-wordpress-plugin-bypasses-2fa-injects-malicio-6640d7",
+      "fake-wordpress-plugin-bypasses-2fa-injects-malicious-scripts"
+    ]
+  },
+  {
+    "slug": "ai-agents-steal-credentials-breach-corporate-netwo-40969248",
+    "title": "AI Agents Steal Credentials, Breach Corporate Networks",
+    "summary": "Hackers used autonomous AI agents to harvest credentials and infiltrate corporate networks across government, logistics, hospitality, manufacturing, agriculture, and education sectors. Agents exploited vulnerable web applications for initial footholds, installed web shells, and performed lateral movement, exposing sensitive data. Defenders should patch web app flaws, monitor for web shells, enforce least privilege, and deploy AI-driven threat detection.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-autonomous-ai-agents-2/",
+    "publishedAt": "2026-11-25T12:11:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agents-steal-credentials-breach-corporate-netwo",
+      "article-40969248",
+      "40969248",
+      "ai-agents-steal-credentials-breach-corporate-netwo-2eca83",
+      "ai-agents-steal-credentials-breach-corporate-networks"
+    ]
+  },
+  {
+    "slug": "tracking-ai-enhanced-hacking-incidents-858a5cbe",
+    "title": "Tracking AI-Enhanced Hacking Incidents",
+    "summary": "Daniel Meissler tracks incidents of hacking that leverage AI tools, documenting offensive tactics employed by attackers. The analysis highlights how AI accelerates reconnaissance, vulnerability exploitation, and automated attack orchestration, increasing campaign speed and scale. Security teams should adopt AI-aware monitoring, threat intelligence feeds, and defensive automation to detect and mitigate AI-driven attacks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/tracking-incidents-of-hacking-using-ai-tools.html",
+    "publishedAt": "2026-11-25T12:07:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tracking-ai-enhanced-hacking-incidents",
+      "article-858a5cbe",
+      "858a5cbe",
+      "tracking-ai-enhanced-hacking-incidents-651d66"
+    ]
+  },
+  {
+    "slug": "credential-remediation-stalls-without-impact-asses-6883407f",
+    "title": "Credential Remediation Stalls Without Impact Assessment",
+    "summary": "GitGuardian’s State of Secrets Sprawl 2026 report shows that 64% of valid secrets from 2022 remained active in January 2026, highlighting slow remediation. Delays stem from teams lacking visibility into downstream breakage, causing validity-only triage to miss 46% of critical secrets and raising credential misuse risk. Impact-based prioritization and automated breakage testing can accelerate revocation and reduce credential theft exposure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+    "publishedAt": "2026-11-25T11:51:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "credential-remediation-stalls-without-impact-asses",
+      "article-6883407f",
+      "6883407f",
+      "credential-remediation-stalls-without-impact-asses-6e4aaf",
+      "credential-remediation-stalls-without-impact-assessment"
+    ]
+  },
+  {
+    "slug": "drupal-core-rce-cve-2026-132165-exploited-in-wild-cb3acb26",
+    "title": "Drupal Core RCE CVE-2026-132165 Exploited in Wild",
+    "summary": "Drupal core suffers remote code execution via Fail2Install, identified as CVE-2026-132165, actively exploited in the wild. The flaw, rated CVSS 9.8, allows unauthenticated attackers to execute arbitrary PHP code, jeopardizing site integrity and data confidentiality. CISA mandates federal agencies to apply the vendor patch by November 27, 2026, and recommends disabling the vulnerable module until the update is installed.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+    "publishedAt": "2026-11-25T11:23:26.000Z",
+    "cves": [
+      "CVE-2026-132165"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-core-rce-cve-2026-132165-exploited-in-wild",
+      "article-cb3acb26",
+      "cb3acb26",
+      "drupal-core-rce-cve-2026-132165-exploited-in-wild-730bdc"
+    ]
+  },
+  {
     "slug": "bots-exploited-leaked-aws-key-from-docker-image-in-6d0c0177",
     "title": "Bots exploited leaked AWS key from Docker image in under 8 seconds",
     "summary": "A cloud access key left inside a newly published Docker image can be found and used by bots in less than eight seconds, Billy Tsouvalas and Nick Nikiforakis of Stony Brook University discovered after planting 300 decoy images on public container registries.",
@@ -27,6 +141,43 @@ export const news: NewsBrief[] = [
       "6d0c0177",
       "bots-exploited-leaked-aws-key-from-docker-image-in-180aa5",
       "bots-exploited-leaked-aws-key-from-docker-image-in-under-8-s"
+    ]
+  },
+  {
+    "slug": "microsoft-365-bug-blocking-office-apps-fixed-94c71c99",
+    "title": "Microsoft 365 Bug Blocking Office Apps Fixed",
+    "summary": "Microsoft released a patch for a Microsoft 365 bug that prevented certain customers from accessing Office applications. The flaw caused authentication failures in the Office client, leading to denial of service for affected users. Users should install the latest update from Microsoft 365 and verify application access to restore functionality.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/",
+    "publishedAt": "2026-11-25T11:16:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-365-bug-blocking-office-apps-fixed",
+      "article-94c71c99",
+      "94c71c99",
+      "microsoft-365-bug-blocking-office-apps-fixed-17bba1"
+    ]
+  },
+  {
+    "slug": "pierre-cadieux-traces-security-roots-in-help-desk-c319dab9",
+    "title": "Pierre Cadieux Traces Security Roots in Help Desk Logs",
+    "summary": "Pierre Cadieux reflects on his early help-desk career, where he first learned to correlate Windows and Unix logs. This foundational skill sparked his curiosity and ultimately guided him toward a career in cybersecurity. The article highlights the importance of cross-platform log analysis for early security insight and career development today.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/securing-grandmas-groceries-with-pierre-cadieux/",
+    "publishedAt": "2026-11-25T11:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pierre-cadieux-traces-security-roots-in-help-desk",
+      "article-c319dab9",
+      "c319dab9",
+      "pierre-cadieux-traces-security-roots-in-help-desk-359259",
+      "pierre-cadieux-traces-security-roots-in-help-desk-logs"
     ]
   },
   {
@@ -67,6 +218,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "critical-9-9-dell-enterprise-sonic-flaw-could-let-920a1957",
+    "title": "Critical 9.9 Dell Enterprise SONiC Flaw Could Let Hackers Execute Malicious Commands on Network Switches",
+    "summary": "Dell Technologies has patched a critical flaw in Dell Enterprise SONiC Distribution that could let a remote attacker with limited privileges run commands of their choice on an affected network switch. The vulnerability, tracked as CVE-2026-103782, could also expose files and directories the attacker is not authorized to access.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-dell-enterprise-sonic-flaw/",
+    "publishedAt": "2026-11-25T10:20:51.000Z",
+    "cves": [
+      "CVE-2026-103782"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-9-9-dell-enterprise-sonic-flaw-could-let",
+      "article-920a1957",
+      "920a1957",
+      "critical-9-9-dell-enterprise-sonic-flaw-could-let-5358e9",
+      "critical-9-9-dell-enterprise-sonic-flaw-could-let-hackers-ex"
+    ]
+  },
+  {
     "slug": "drupal-rce-flaw-exploited-to-hijack-sites-935522ec",
     "title": "Drupal RCE Flaw Exploited to Hijack Sites",
     "summary": "A critical Drupal RCE vulnerability is actively exploited in the wild to hijack unpatched sites. The flaw allows unauthenticated remote code execution via crafted requests, giving attackers full site control; it has a CVSS score of 9.8. Drupal released a patch; administrators must update immediately and verify configuration to block exploitation.",
@@ -82,6 +254,25 @@ export const news: NewsBrief[] = [
       "article-935522ec",
       "935522ec",
       "drupal-rce-flaw-exploited-to-hijack-sites-5e2ccd"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103485-important-cifs-utils-security-upd-54fa4dcb",
+    "title": "RHSA-2026:103485: Important: cifs-utils security update",
+    "summary": "An update for cifs-utils is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103485",
+    "publishedAt": "2026-11-25T10:09:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103485-important-cifs-utils-security-upd",
+      "article-54fa4dcb",
+      "54fa4dcb",
+      "rhsa-2026-103485-important-cifs-utils-security-upd-2ee1da",
+      "rhsa-2026-103485-important-cifs-utils-security-update"
     ]
   },
   {
@@ -101,6 +292,24 @@ export const news: NewsBrief[] = [
       "def7b5ca",
       "anthropic-beta-release-detects-malicious-ai-activi-316bfa",
       "anthropic-beta-release-detects-malicious-ai-activity-securel"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102933-low-dhcp-security-update-6d989a11",
+    "title": "RHSA-2026:102933: Low: dhcp security update",
+    "summary": "An update for dhcp is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102933",
+    "publishedAt": "2026-11-25T09:10:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102933-low-dhcp-security-update",
+      "article-6d989a11",
+      "6d989a11",
+      "rhsa-2026-102933-low-dhcp-security-update-2ee178"
     ]
   },
   {
@@ -141,6 +350,44 @@ export const news: NewsBrief[] = [
       "9368b221",
       "idunno-anticsrf-library-rce-exploited-via-cve-2026-1b30ee",
       "idunno-anticsrf-library-rce-exploited-via-cve-2026-131914"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102924-important-gdm-security-bug-fix-an-d663037b",
+    "title": "RHSA-2026:102924: Important: gdm security, bug fix, and enhancement update",
+    "summary": "An update for gdm is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102924",
+    "publishedAt": "2026-11-25T09:03:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102924-important-gdm-security-bug-fix-an",
+      "article-d663037b",
+      "d663037b",
+      "rhsa-2026-102924-important-gdm-security-bug-fix-an-2ee178",
+      "rhsa-2026-102924-important-gdm-security-bug-fix-and-enhancem"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-102930-important-qt5-qtdeclarative-secur-c0780108",
+    "title": "RHSA-2026:102930: Important: qt5-qtdeclarative security update",
+    "summary": "An update for qt5-qtdeclarative is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102930",
+    "publishedAt": "2026-11-25T09:03:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-102930-important-qt5-qtdeclarative-secur",
+      "article-c0780108",
+      "c0780108",
+      "rhsa-2026-102930-important-qt5-qtdeclarative-secur-2ee178",
+      "rhsa-2026-102930-important-qt5-qtdeclarative-security-update"
     ]
   },
   {
@@ -9214,227 +9461,6 @@ export const news: NewsBrief[] = [
       "14a0b22d",
       "rhsa-2026-102178-important-xdg-desktop-portal-secu-2ee15b",
       "rhsa-2026-102178-important-xdg-desktop-portal-security-updat"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102190-moderate-openssh-security-update-72816923",
-    "title": "RHSA-2026:102190: Moderate: openssh security update",
-    "summary": "An update for openssh is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102190",
-    "publishedAt": "2026-11-23T04:45:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102190-moderate-openssh-security-update",
-      "article-72816923",
-      "72816923",
-      "rhsa-2026-102190-moderate-openssh-security-update-2ee15b"
-    ]
-  },
-  {
-    "slug": "fence-agents-receives-important-security-update-561939fb",
-    "title": "Fence-Agents Receives Important Security Update",
-    "summary": "Red Hat released an Important security update for the fence-agents package on RHEL 8. The update addresses multiple vulnerabilities that could allow privilege escalation or denial of service, as indicated by the CVSS scores linked in the advisory. Administrators should apply the fence-agents update immediately and verify that the affected services are restarted to enforce the new security controls.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102154",
-    "publishedAt": "2026-11-23T04:41:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fence-agents-receives-important-security-update",
-      "article-561939fb",
-      "561939fb",
-      "fence-agents-receives-important-security-update-2ee15a"
-    ]
-  },
-  {
-    "slug": "matilda-sells-claimed-vmware-vcenter-exploit-3411243b",
-    "title": "Matilda Sells Claimed VMware vCenter Exploit",
-    "summary": "A forum seller named Matilda is offering a claimed exploit for VMware vCenter Server, targeting CVE-2026-123890. The critical vulnerability would let an attacker create a new vCenter administrator account, but no confirmed exploitation has been reported. Broadcom issued a patch on November 19, 2026; administrators should apply it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/alleged-vmware-vcenter-0-day-exploit/",
-    "publishedAt": "2026-11-23T04:30:26.000Z",
-    "cves": [
-      "CVE-2026-123890"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "matilda-sells-claimed-vmware-vcenter-exploit",
-      "article-3411243b",
-      "3411243b",
-      "matilda-sells-claimed-vmware-vcenter-exploit-726bd0"
-    ]
-  },
-  {
-    "slug": "curl-receives-moderate-security-update-eaf8d87e",
-    "title": "Curl Receives Moderate Security Update",
-    "summary": "Red Hat issued a Moderate security update for the curl package on RHEL 8. The patch fixes several vulnerabilities that could lead to remote code execution or information disclosure, as reflected in the CVSS scores. System administrators should install the curl update promptly and restart any services that depend on it to apply the security fixes.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102194",
-    "publishedAt": "2026-11-23T04:16:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "curl-receives-moderate-security-update",
-      "article-eaf8d87e",
-      "eaf8d87e",
-      "curl-receives-moderate-security-update-2ee15b"
-    ]
-  },
-  {
-    "slug": "red-hat-publishes-important-xdg-desktop-portal-pat-470d747d",
-    "title": "Red Hat Publishes Important xdg-desktop-portal Patch",
-    "summary": "Red Hat released an important security update for the xdg-desktop-portal component on RHEL 9, addressing multiple vulnerabilities each with a CVSS base score listed in the CVE references. The update mitigates potential privilege escalation and information disclosure risks that could be exploited via desktop portal interfaces. Red Hat recommends applying the patch promptly to ensure desktop security compliance.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102179",
-    "publishedAt": "2026-11-23T04:13:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-publishes-important-xdg-desktop-portal-pat",
-      "article-470d747d",
-      "470d747d",
-      "red-hat-publishes-important-xdg-desktop-portal-pat-2ee15b",
-      "red-hat-publishes-important-xdg-desktop-portal-patch"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-net-8-0-security-update-480ca2aa",
-    "title": "Red Hat Issues .NET 8.0 Security Update",
-    "summary": "Red Hat issued a security update for .NET 8.0 on RHEL 10.2 Extended Update Support, addressing several platform vulnerabilities. The update is rated Important, with CVSS base scores for each flaw listed via CVE links in the references, indicating high-severity risk if left unpatched. Red Hat urges immediate installation of the update and verification of CVSS scores to prioritize remediation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102173",
-    "publishedAt": "2026-11-23T04:12:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-net-8-0-security-update",
-      "article-480ca2aa",
-      "480ca2aa",
-      "red-hat-issues-net-8-0-security-update-2ee15b"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-openssh-security-update-a1367179",
-    "title": "Red Hat releases openssh security update",
-    "summary": "Red Hat released a critical openssh security update for RHEL 10, addressing several bugs and enhancements. The update fixes multiple critical vulnerabilities, each with a CVSS base score in the CVE references, and is rated Moderate. Apply the update promptly today to mitigate potential exploitation of the affected openssh components.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102195",
-    "publishedAt": "2026-11-23T04:12:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-openssh-security-update",
-      "article-a1367179",
-      "a1367179",
-      "red-hat-releases-openssh-security-update-2ee15b"
-    ]
-  },
-  {
-    "slug": "rhel-9-thunderbird-update-fixes-code-execution-fla-a05946fa",
-    "title": "RHEL 9 Thunderbird Update Fixes Code Execution Flaws",
-    "summary": "Red Hat issued an important security update for Thunderbird on RHEL 9, fixing vulnerabilities that could lead to memory corruption or arbitrary code execution. The patch addresses CVE-linked defects with a CVSS score in the moderate range, and no active exploitation has been observed. Users should install RHSA-2026:102170 promptly to secure their mail clients.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102170",
-    "publishedAt": "2026-11-23T04:11:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhel-9-thunderbird-update-fixes-code-execution-fla",
-      "article-a05946fa",
-      "a05946fa",
-      "rhel-9-thunderbird-update-fixes-code-execution-fla-2ee15b",
-      "rhel-9-thunderbird-update-fixes-code-execution-flaws"
-    ]
-  },
-  {
-    "slug": "rhel-8-xdg-desktop-portal-update-addresses-privile-99bd95c4",
-    "title": "RHEL 8 xdg-desktop-portal Update Addresses Privilege Escalation",
-    "summary": "Red Hat released an important security update for xdg-desktop-portal on RHEL 8, addressing multiple vulnerabilities that could allow privilege escalation or code execution. The update includes patches for CVE-linked flaws, with a CVSS base score indicating moderate to high risk, but no active exploitation reported. Security teams should apply the RHSA-2026:102175 update immediately to mitigate potential attacks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102175",
-    "publishedAt": "2026-11-23T03:45:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhel-8-xdg-desktop-portal-update-addresses-privile",
-      "article-99bd95c4",
-      "99bd95c4",
-      "rhel-8-xdg-desktop-portal-update-addresses-privile-2ee15b",
-      "rhel-8-xdg-desktop-portal-update-addresses-privilege-escalat"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-security-update-for-rhel6-34a6796a",
-    "title": "Red Hat Releases Kernel Security Update for RHEL6",
-    "summary": "A kernel vulnerability affecting Red Hat Enterprise Linux 6 Extended Lifecycle Support prompted an Important security update. The flaw, detailed in multiple CVE references, carries a CVSS base score indicating significant risk, but no active exploitation has been reported. Red Hat has released the patch; administrators should apply the update immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102182",
-    "publishedAt": "2026-11-23T03:44:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-security-update-for-rhel6",
-      "article-34a6796a",
-      "34a6796a",
-      "red-hat-releases-kernel-security-update-for-rhel6-2ee15b"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-thunderbird-security-update-028c3c47",
-    "title": "Red Hat Issues Thunderbird Security Update",
-    "summary": "An Important security update for Thunderbird on Red Hat Enterprise Linux 8 addresses a kernel-level vulnerability. The vulnerability, referenced by multiple CVE entries, has a CVSS base score reflecting high risk, though no active exploitation has been observed. Red Hat has issued the patch; users are advised to install it promptly to prevent potential compromise.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102172",
-    "publishedAt": "2026-11-23T03:41:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-thunderbird-security-update",
-      "article-028c3c47",
-      "028c3c47",
-      "red-hat-issues-thunderbird-security-update-2ee15b"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-libgsf-for-security-50f93d6e",
-    "title": "Red Hat Updates libgsf for Security",
-    "summary": "Red Hat released a security update for libgsf on RHEL 10.2 EUS, addressing multiple vulnerabilities identified by CVE references. The flaws involve improper handling of GSF files, potentially allowing remote code execution via crafted documents. Red Hat has issued a patch; administrators should apply the update immediately to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102162",
-    "publishedAt": "2026-11-23T03:35:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-libgsf-for-security",
-      "article-50f93d6e",
-      "50f93d6e",
-      "red-hat-updates-libgsf-for-security-2ee15b"
     ]
   }
 ];

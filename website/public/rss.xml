@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 11:47:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 12:45:39 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>3.5 Billion Records Exposed in Two Public Databases</title>
+      <link>https://secubuzz.com/news/3-5-billion-records-exposed-in-two-public-database-50a29b2b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/3-5-billion-records-exposed-in-two-public-database-50a29b2b</guid>
+      <description><![CDATA[Researchers uncovered two publicly exposed databases holding more than 3.5 billion records, including stolen passwords, session cookies, and children’s school data. The exposure stemmed from misconfigured access controls that left the databases unauthenticated, enabling credential-stealing attacks. Affected parties must revoke compromised credentials, enforce stricter access policies, and monitor for credential reuse.]]></description>
+      <pubDate>Wed, 25 Nov 2026 12:27:36 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/11/two-exposed-databases-held-over-3-5-billion-records">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Fake WordPress Plugin Bypasses 2FA, Injects Malicious Scripts</title>
+      <link>https://secubuzz.com/news/fake-wordpress-plugin-bypasses-2fa-injects-malicio-4693aa8c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-wordpress-plugin-bypasses-2fa-injects-malicio-4693aa8c</guid>
+      <description><![CDATA[A counterfeit WordPress plugin enables attackers to bypass two-factor authentication and inject malicious JavaScript into visitor browsers. The hidden plugin exploits the WordPress authentication flow, allowing credential theft and cross-site scripting that can compromise user sessions and data. Security teams should remove the rogue plugin, audit the site for other hidden code, and enforce strict plugin vetting and two-factor enforcement.]]></description>
+      <pubDate>Wed, 25 Nov 2026 12:14:08 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fake-wordpress-plugin/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Agents Steal Credentials, Breach Corporate Networks</title>
+      <link>https://secubuzz.com/news/ai-agents-steal-credentials-breach-corporate-netwo-40969248</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-steal-credentials-breach-corporate-netwo-40969248</guid>
+      <description><![CDATA[Hackers used autonomous AI agents to harvest credentials and infiltrate corporate networks across government, logistics, hospitality, manufacturing, agriculture, and education sectors. Agents exploited vulnerable web applications for initial footholds, installed web shells, and performed lateral movement, exposing sensitive data. Defenders should patch web app flaws, monitor for web shells, enforce least privilege, and deploy AI-driven threat detection.]]></description>
+      <pubDate>Wed, 25 Nov 2026 12:11:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-autonomous-ai-agents-2/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Tracking AI-Enhanced Hacking Incidents</title>
+      <link>https://secubuzz.com/news/tracking-ai-enhanced-hacking-incidents-858a5cbe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tracking-ai-enhanced-hacking-incidents-858a5cbe</guid>
+      <description><![CDATA[Daniel Meissler tracks incidents of hacking that leverage AI tools, documenting offensive tactics employed by attackers. The analysis highlights how AI accelerates reconnaissance, vulnerability exploitation, and automated attack orchestration, increasing campaign speed and scale. Security teams should adopt AI-aware monitoring, threat intelligence feeds, and defensive automation to detect and mitigate AI-driven attacks.]]></description>
+      <pubDate>Wed, 25 Nov 2026 12:07:21 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/11/tracking-incidents-of-hacking-using-ai-tools.html">Schneier on Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Credential Remediation Stalls Without Impact Assessment</title>
+      <link>https://secubuzz.com/news/credential-remediation-stalls-without-impact-asses-6883407f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/credential-remediation-stalls-without-impact-asses-6883407f</guid>
+      <description><![CDATA[GitGuardian’s State of Secrets Sprawl 2026 report shows that 64% of valid secrets from 2022 remained active in January 2026, highlighting slow remediation. Delays stem from teams lacking visibility into downstream breakage, causing validity-only triage to miss 46% of critical secrets and raising credential misuse risk. Impact-based prioritization and automated breakage testing can accelerate revocation and reduce credential theft exposure.]]></description>
+      <pubDate>Wed, 25 Nov 2026 11:51:48 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Drupal Core RCE CVE-2026-132165 Exploited in Wild</title>
+      <link>https://secubuzz.com/news/drupal-core-rce-cve-2026-132165-exploited-in-wild-cb3acb26</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-rce-cve-2026-132165-exploited-in-wild-cb3acb26</guid>
+      <description><![CDATA[Drupal core suffers remote code execution via Fail2Install, identified as CVE-2026-132165, actively exploited in the wild. The flaw, rated CVSS 9.8, allows unauthenticated attackers to execute arbitrary PHP code, jeopardizing site integrity and data confidentiality. CISA mandates federal agencies to apply the vendor patch by November 27, 2026, and recommends disabling the vulnerable module until the update is installed.]]></description>
+      <pubDate>Wed, 25 Nov 2026 11:23:26 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Bots exploited leaked AWS key from Docker image in under 8 seconds</title>
       <link>https://secubuzz.com/news/bots-exploited-leaked-aws-key-from-docker-image-in-6d0c0177</link>
@@ -15,6 +69,24 @@
       <pubDate>Wed, 25 Nov 2026 11:22:32 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/25/docker-aws-key-exposure-bots/">Help Net Security</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft 365 Bug Blocking Office Apps Fixed</title>
+      <link>https://secubuzz.com/news/microsoft-365-bug-blocking-office-apps-fixed-94c71c99</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-bug-blocking-office-apps-fixed-94c71c99</guid>
+      <description><![CDATA[Microsoft released a patch for a Microsoft 365 bug that prevented certain customers from accessing Office applications. The flaw caused authentication failures in the Office client, leading to denial of service for affected users. Users should install the latest update from Microsoft 365 and verify application access to restore functionality.]]></description>
+      <pubDate>Wed, 25 Nov 2026 11:16:32 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Pierre Cadieux Traces Security Roots in Help Desk Logs</title>
+      <link>https://secubuzz.com/news/pierre-cadieux-traces-security-roots-in-help-desk-c319dab9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pierre-cadieux-traces-security-roots-in-help-desk-c319dab9</guid>
+      <description><![CDATA[Pierre Cadieux reflects on his early help-desk career, where he first learned to correlate Windows and Unix logs. This foundational skill sparked his curiosity and ultimately guided him toward a career in cybersecurity. The article highlights the importance of cross-platform log analysis for early security insight and career development today.]]></description>
+      <pubDate>Wed, 25 Nov 2026 11:00:00 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/securing-grandmas-groceries-with-pierre-cadieux/">Cisco Talos</source>
+      <category>General</category>
     </item>
     <item>
       <title>OpenAI-Linked Swarm Activity Traceable via Public Records</title>
@@ -35,12 +107,30 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Critical 9.9 Dell Enterprise SONiC Flaw Could Let Hackers Execute Malicious Commands on Network Switches</title>
+      <link>https://secubuzz.com/news/critical-9-9-dell-enterprise-sonic-flaw-could-let-920a1957</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-9-9-dell-enterprise-sonic-flaw-could-let-920a1957</guid>
+      <description><![CDATA[Dell Technologies has patched a critical flaw in Dell Enterprise SONiC Distribution that could let a remote attacker with limited privileges run commands of their choice on an affected network switch. The vulnerability, tracked as CVE-2026-103782, could also expose files and directories the attacker is not authorized to access.]]></description>
+      <pubDate>Wed, 25 Nov 2026 10:20:51 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/critical-dell-enterprise-sonic-flaw/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Drupal RCE Flaw Exploited to Hijack Sites</title>
       <link>https://secubuzz.com/news/drupal-rce-flaw-exploited-to-hijack-sites-935522ec</link>
       <guid isPermaLink="true">https://secubuzz.com/news/drupal-rce-flaw-exploited-to-hijack-sites-935522ec</guid>
       <description><![CDATA[A critical Drupal RCE vulnerability is actively exploited in the wild to hijack unpatched sites. The flaw allows unauthenticated remote code execution via crafted requests, giving attackers full site control; it has a CVSS score of 9.8. Drupal released a patch; administrators must update immediately and verify configuration to block exploitation.]]></description>
       <pubDate>Wed, 25 Nov 2026 10:10:20 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:103485: Important: cifs-utils security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103485-important-cifs-utils-security-upd-54fa4dcb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103485-important-cifs-utils-security-upd-54fa4dcb</guid>
+      <description><![CDATA[An update for cifs-utils is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 25 Nov 2026 10:09:06 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103485">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -51,6 +141,15 @@
       <pubDate>Wed, 25 Nov 2026 09:20:14 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/25/anthropic-enterprise-frontier-safeguards-public-beta/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102933: Low: dhcp security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102933-low-dhcp-security-update-6d989a11</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102933-low-dhcp-security-update-6d989a11</guid>
+      <description><![CDATA[An update for dhcp is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 25 Nov 2026 09:10:49 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102933">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Hex.pm RCE Flaw Compromises Six Package Registry Servers</title>
@@ -69,6 +168,24 @@
       <pubDate>Wed, 25 Nov 2026 09:05:13 GMT</pubDate>
       <source url="https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/">SecurityWeek</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102924: Important: gdm security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102924-important-gdm-security-bug-fix-an-d663037b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102924-important-gdm-security-bug-fix-an-d663037b</guid>
+      <description><![CDATA[An update for gdm is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 25 Nov 2026 09:03:13 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102924">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:102930: Important: qt5-qtdeclarative security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-102930-important-qt5-qtdeclarative-secur-c0780108</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102930-important-qt5-qtdeclarative-secur-c0780108</guid>
+      <description><![CDATA[An update for qt5-qtdeclarative is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Wed, 25 Nov 2026 09:03:02 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102930">Red Hat Security Advisories</source>
+      <category>General</category>
     </item>
     <item>
       <title>Microsoft Reports Authentication Issues Post-November Updates</title>
@@ -339,123 +456,6 @@
       <pubDate>Tue, 24 Nov 2026 21:48:06 GMT</pubDate>
       <source url="https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn">Dark Reading</source>
       <category>Nation State</category>
-    </item>
-    <item>
-      <title>Red Hat updates MariaDB 10.11 for security</title>
-      <link>https://secubuzz.com/news/red-hat-updates-mariadb-10-11-for-security-df8bf358</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-mariadb-10-11-for-security-df8bf358</guid>
-      <description><![CDATA[Red Hat released a security update for the MariaDB 10.11 module on RHEL 9.8 Extended Update Support. The update addresses multiple vulnerabilities with CVSS scores listed in the CVE references, rated as Important by Product Security, though no active exploitation has been reported. Administrators should apply the update immediately via the standard package manager to mitigate potential exploitation.]]></description>
-      <pubDate>Tue, 24 Nov 2026 21:41:45 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103194">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Rackspace Spot Platform Shut Down After Breach</title>
-      <link>https://secubuzz.com/news/rackspace-spot-platform-shut-down-after-breach-a36ba24c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rackspace-spot-platform-shut-down-after-breach-a36ba24c</guid>
-      <description><![CDATA[A security breach in Rackspace Spot cloud platform exposed customer Kubernetes clusters and secrets to attackers. The incident allowed unauthorized access to sensitive configuration data, compromising cluster integrity and potentially exposing customer workloads. Rackspace has shut down the platform and urged customers to migrate services and download data as soon as possible by December 8.]]></description>
-      <pubDate>Tue, 24 Nov 2026 21:37:30 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Vulnerabilities Threaten Visa Systems in Multiple Countries</title>
-      <link>https://secubuzz.com/news/vulnerabilities-threaten-visa-systems-in-multiple-774b5d98</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vulnerabilities-threaten-visa-systems-in-multiple-774b5d98</guid>
-      <description><![CDATA[Vulnerabilities in online visa and immigration systems of Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana could disrupt traveler entry. The flaws allow attackers to manipulate border-control workflows, potentially bypassing authentication and authorization checks, though no confirmed exploitation has been reported. Affected agencies should apply vendor-issued patches, enforce multi-factor authentication, and monitor for anomalous access attempts.]]></description>
-      <pubDate>Tue, 24 Nov 2026 21:36:11 GMT</pubDate>
-      <source url="https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>cifs-utils Update Addresses Security Issues in RHEL9</title>
-      <link>https://secubuzz.com/news/cifs-utils-update-addresses-security-issues-in-rhe-f6105dd0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cifs-utils-update-addresses-security-issues-in-rhe-f6105dd0</guid>
-      <description><![CDATA[Red Hat released a security update for cifs-utils on RHEL 9, fixing vulnerabilities that could enable privilege escalation or data exposure. The advisory cites multiple CVE identifiers with CVSS scores between 7.0 and 8.5, indicating high-severity flaws in SMB client handling. Administrators should apply RHSA-2026:102952 immediately and confirm cifs-utils is at least version 6.0.0-3.el9.]]></description>
-      <pubDate>Tue, 24 Nov 2026 20:55:11 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102952">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>myColorado App Breach Stole Data of 150,000 Users</title>
-      <link>https://secubuzz.com/news/mycolorado-app-breach-stole-data-of-150-000-users-e22aa361</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mycolorado-app-breach-stole-data-of-150-000-users-e22aa361</guid>
-      <description><![CDATA[The state of Colorado confirmed a cyberattack that disabled the myColorado mobile application and compromised personal data of approximately 150,000 residents. The breach exposed identifiers, contact information, and document storage details, potentially enabling identity theft or phishing campaigns against affected users. Colorado authorities urged users to monitor accounts, change passwords, and report suspicious activity while the agency investigates the incident.]]></description>
-      <pubDate>Tue, 24 Nov 2026 20:52:00 GMT</pubDate>
-      <source url="https://therecord.media/mycolorado-app-down-data-breach">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Releases gnome-remote-desktop Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-gnome-remote-desktop-security-upd-fed8c6a1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-gnome-remote-desktop-security-upd-fed8c6a1</guid>
-      <description><![CDATA[A security update for gnome-remote-desktop on Red Hat Enterprise Linux 10 addresses multiple vulnerabilities that could allow remote code execution. The flaws, rated Important by Red Hat Product Security, carry CVSS scores that indicate high exploitation risk, though no active exploits have been reported.]]></description>
-      <pubDate>Tue, 24 Nov 2026 20:29:19 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103408">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Inception Gang Launches Large-Scale Vishing Campaign</title>
-      <link>https://secubuzz.com/news/inception-gang-launches-large-scale-vishing-campai-6668275b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/inception-gang-launches-large-scale-vishing-campai-6668275b</guid>
-      <description><![CDATA[Inception, a new extortion group, launched a large-scale vishing campaign targeting SSO credentials of global brands and firms. The campaign uses social engineering calls to harvest SSO tokens, potentially enabling unauthorized corporate account access; no encryption or exfiltration has been reported. Teams should enforce MFA, monitor login anomalies, and train staff on phishing to mitigate the threat.]]></description>
-      <pubDate>Tue, 24 Nov 2026 20:21:20 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Red Hat Issues openssl Security Patch</title>
-      <link>https://secubuzz.com/news/red-hat-issues-openssl-security-patch-a854ee06</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-openssl-security-patch-a854ee06</guid>
-      <description><![CDATA[An OpenSSL security update for Red Hat Enterprise Linux 10.2 EUS addresses multiple cryptographic flaws that could enable downgrade attacks. The vulnerabilities, rated Moderate by Red Hat Product Security, have CVSS scores indicating moderate risk and no confirmed wild exploitation. Red Hat has issued the patch; users should update OpenSSL to the latest version to prevent potential downgrade exploits.]]></description>
-      <pubDate>Tue, 24 Nov 2026 20:14:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103381">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates OpenTelemetry Collector</title>
-      <link>https://secubuzz.com/news/red-hat-updates-opentelemetry-collector-0b55a8c3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-opentelemetry-collector-0b55a8c3</guid>
-      <description><![CDATA[Red Hat released a security update for OpenTelemetry Collector on RHEL 9, addressing vulnerabilities that could allow attackers to compromise the telemetry service. The update covers flaws with CVSS scores detailed in referenced CVE links, though no specific CVE identifiers are named. Red Hat recommends applying the patch immediately to mitigate exploitation, with no additional workarounds required.]]></description>
-      <pubDate>Tue, 24 Nov 2026 20:11:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102979">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>qt5-qtdeclarative Update Fixes Security Flaws in RHEL8.4</title>
-      <link>https://secubuzz.com/news/qt5-qtdeclarative-update-fixes-security-flaws-in-r-02f9bfd5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/qt5-qtdeclarative-update-fixes-security-flaws-in-r-02f9bfd5</guid>
-      <description><![CDATA[Red Hat issued a security update for qt5-qtdeclarative on RHEL 8.4, addressing vulnerabilities that could lead to memory corruption or denial of service. The advisory references several CVE identifiers with CVSS scores ranging from 6.5 to 8.0, indicating moderate to high severity. Systems should install RHSA-2026:103374 promptly and verify qt5-qtdeclarative is updated to the patched version.]]></description>
-      <pubDate>Tue, 24 Nov 2026 20:06:36 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103374">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues qt5-qtdeclarative Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-qt5-qtdeclarative-security-update-dd61ed48</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-qt5-qtdeclarative-security-update-dd61ed48</guid>
-      <description><![CDATA[Red Hat released a security update for qt5-qtdeclarative on RHEL 8.6 Advanced Mission Critical and Extended Update Support platforms. The update addresses unspecified vulnerabilities rated Important by Product Security, with CVSS base scores linked to CVE references. Users should apply the update immediately to mitigate potential exploitation; no workaround is provided.]]></description>
-      <pubDate>Tue, 24 Nov 2026 20:06:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103373">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Erlang OTP Vulnerabilities Prompt Update</title>
-      <link>https://secubuzz.com/news/erlang-otp-vulnerabilities-prompt-update-029a9067</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/erlang-otp-vulnerabilities-prompt-update-029a9067</guid>
-      <description><![CDATA[Erlang OTP multiple versions are affected by security flaws that could allow unauthorized code execution via the runtime system. The advisory, issued by the Canadian Centre for Cyber Security, does not list specific CVE identifiers but notes a CVSS base score indicating moderate severity. Administrators should review the provided web link and apply any available updates to mitigate potential exploitation.]]></description>
-      <pubDate>Tue, 24 Nov 2026 19:59:34 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/erlang-security-advisory-av26-1204">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues gdm Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-gdm-security-update-0df66551</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-gdm-security-update-0df66551</guid>
-      <description><![CDATA[Red Hat released a security update for the GDM display manager on RHEL 10. The update addresses unspecified vulnerabilities rated Important by Product Security, with CVSS base scores linked to CVE references. Users should apply the update promptly to mitigate potential exploitation and ensure system integrity; no workaround is provided.]]></description>
-      <pubDate>Tue, 24 Nov 2026 19:53:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103378">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
