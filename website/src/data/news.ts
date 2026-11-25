@@ -11,6 +11,61 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "flatpak-update-released-for-rhel7-els-397aa7dc",
+    "title": "Flatpak Update Released for RHEL7 ELS",
+    "summary": "Red Hat issued a flatpak security update for RHEL 7 Extended Lifecycle Support, addressing several vulnerabilities. The update carries an Important security impact rating, with CVSS base scores listed in the CVE references. Apply the patch immediately and to prevent exploitation of the disclosed critical flaws and maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103503",
+    "publishedAt": "2026-11-25T14:34:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "flatpak-update-released-for-rhel7-els",
+      "article-397aa7dc",
+      "397aa7dc",
+      "flatpak-update-released-for-rhel7-els-2ee1dd"
+    ]
+  },
+  {
+    "slug": "grafana-update-released-for-rhel9-8-eus-b6824f8d",
+    "title": "Grafana Update Released for RHEL9.8 EUS",
+    "summary": "Red Hat issued a grafana security update for RHEL 9.8 Extended Update Support, fixing several vulnerabilities. The update carries an Important security impact rating, with CVSS base scores listed in the CVE references. Apply the patch immediately to prevent exploitation of the disclosed critical flaws, maintain system stability, and ensure compliance.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103497",
+    "publishedAt": "2026-11-25T14:33:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "grafana-update-released-for-rhel9-8-eus",
+      "article-b6824f8d",
+      "b6824f8d",
+      "grafana-update-released-for-rhel9-8-eus-2ee1db"
+    ]
+  },
+  {
+    "slug": "shinyhunters-announces-return-inception-denies-tie-65fd194b",
+    "title": "ShinyHunters Announces Return, Inception Denies Ties",
+    "summary": "An account linked to the ShinyHunters hacking group announced its return, while Okta identified potential connections between ShinyHunters and the Inception group. The post, titled 'ShinyHunters Claims Comeback, New Inception Group Rejects Alleged Ties,' was first published on SecurityWeek. Security teams should monitor ShinyHunters activity and review Okta’s findings for potential insider or credential compromise indicators.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/shinyhunters-claims-comeback-new-inception-group-rejects-alleged-ties/",
+    "publishedAt": "2026-11-25T14:15:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "shinyhunters-announces-return-inception-denies-tie",
+      "article-65fd194b",
+      "65fd194b",
+      "shinyhunters-announces-return-inception-denies-tie-f6db98",
+      "shinyhunters-announces-return-inception-denies-ties"
+    ]
+  },
+  {
     "slug": "rhsa-2026-103496-important-grafana-security-update-ed28371c",
     "title": "RHSA-2026:103496: Important: grafana security update",
     "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -26,6 +81,44 @@ export const news: NewsBrief[] = [
       "article-ed28371c",
       "ed28371c",
       "rhsa-2026-103496-important-grafana-security-update-2ee1db"
+    ]
+  },
+  {
+    "slug": "fincen-disconnected-systems-after-cyber-incident-6c23fabf",
+    "title": "FinCEN Disconnected Systems After Cyber Incident",
+    "summary": "FinCEN experienced a cyber incident that caused system disconnections, disrupting filers. The root cause remains under investigation, with no public details on exploitation or vulnerability. FinCEN extended deadlines for affected filers and is conducting a full investigation, urging stakeholders to monitor updates. The incident has prompted a review of security controls and incident response procedures.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/us-treasurys-fincen-disconnects-systems-following-cyber-incident/",
+    "publishedAt": "2026-11-25T13:39:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fincen-disconnected-systems-after-cyber-incident",
+      "article-6c23fabf",
+      "6c23fabf",
+      "fincen-disconnected-systems-after-cyber-incident-15ecf3"
+    ]
+  },
+  {
+    "slug": "drupal-installer-exploit-cve-2026-132165-active-92cc0291",
+    "title": "Drupal Installer Exploit CVE-2026-132165 Active",
+    "summary": "Attackers exploit CVE-2026-132165 to take over unpatched Drupal sites without authentication. The flaw allows remote code execution via the installer, rated CVSS 9.8, and is actively used in the wild since November 19, affecting government, university, media, and enterprise sites. Drupal releases patch 10.0.12; administrators should update immediately or disable the installer to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/25/drupal-installer-rce-cve-2026-132165-exploited/",
+    "publishedAt": "2026-11-25T13:37:28.000Z",
+    "cves": [
+      "CVE-2026-132165"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-installer-exploit-cve-2026-132165-active",
+      "article-92cc0291",
+      "92cc0291",
+      "drupal-installer-exploit-cve-2026-132165-active-9ee127"
     ]
   },
   {
@@ -67,6 +160,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-103506-moderate-glib2-security-update-4f673207",
+    "title": "RHSA-2026:103506: Moderate: glib2 security update",
+    "summary": "An update for glib2 is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103506",
+    "publishedAt": "2026-11-25T13:23:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103506-moderate-glib2-security-update",
+      "article-4f673207",
+      "4f673207",
+      "rhsa-2026-103506-moderate-glib2-security-update-2ee1dd"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103517-important-ghostscript-security-up-a5ce88c0",
+    "title": "RHSA-2026:103517: Important: ghostscript security update",
+    "summary": "An update for ghostscript is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103517",
+    "publishedAt": "2026-11-25T13:22:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103517-important-ghostscript-security-up",
+      "article-a5ce88c0",
+      "a5ce88c0",
+      "rhsa-2026-103517-important-ghostscript-security-up-2ee1dd",
+      "rhsa-2026-103517-important-ghostscript-security-update"
+    ]
+  },
+  {
     "slug": "rhsa-2026-103504-important-libreoffice-security-up-f540383e",
     "title": "RHSA-2026:103504: Important: libreoffice security update",
     "summary": "An update for libreoffice is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
@@ -102,6 +232,28 @@ export const news: NewsBrief[] = [
       "476fde4b",
       "rhsa-2026-103493-important-python-pyasn1-security-2ee1db",
       "rhsa-2026-103493-important-python-pyasn1-security-update"
+    ]
+  },
+  {
+    "slug": "geoserver-flaws-exploited-via-unauthenticated-rce-89f45abd",
+    "title": "GeoServer Flaws Exploited via Unauthenticated RCE Chains",
+    "summary": "Threat actors exploit two patched GeoServer flaws via unauthenticated RCE chains. The flaws, CVE-2026-120705 (CVSS 8.6) and CVE-2026-129243, allow arbitrary file read and potential remote code execution by accessing files readable by the GeoServer process. Red Hat and GeoServer maintainers have released patches; security teams should apply updates immediately and verify configuration hardening.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+    "publishedAt": "2026-11-25T12:48:54.000Z",
+    "cves": [
+      "CVE-2026-120705",
+      "CVE-2026-129243"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "geoserver-flaws-exploited-via-unauthenticated-rce",
+      "article-89f45abd",
+      "89f45abd",
+      "geoserver-flaws-exploited-via-unauthenticated-rce-6a6bbf",
+      "geoserver-flaws-exploited-via-unauthenticated-rce-chains"
     ]
   },
   {
@@ -234,6 +386,25 @@ export const news: NewsBrief[] = [
       "6883407f",
       "credential-remediation-stalls-without-impact-asses-6e4aaf",
       "credential-remediation-stalls-without-impact-assessment"
+    ]
+  },
+  {
+    "slug": "minecraft-mod-steals-session-tokens-deploys-infost-3b4a07ce",
+    "title": "Minecraft Mod Steals Session Tokens, Deploys Infostealer",
+    "summary": "A counterfeit Minecraft mod, Farmutils-Loader.jar, captures session tokens and installs a Python infostealer. The malicious Java archive masquerades as a Fabric library, reading session data from memory and launching a background process that downloads payloads, enabling credential theft. Avoid unverified mods, verify signatures, and monitor anomalous processes; updating to the latest Minecraft client and mod loader mitigates risk.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fake-minecraft-mod-2/",
+    "publishedAt": "2026-11-25T11:45:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "minecraft-mod-steals-session-tokens-deploys-infost",
+      "article-3b4a07ce",
+      "3b4a07ce",
+      "minecraft-mod-steals-session-tokens-deploys-infost-6ee486",
+      "minecraft-mod-steals-session-tokens-deploys-infostealer"
     ]
   },
   {
@@ -385,6 +556,25 @@ export const news: NewsBrief[] = [
       "ee0b0587",
       "former-openai-staff-granted-1m-bail-after-bugging-4e44fb",
       "former-openai-staff-granted-1m-bail-after-bugging-allegation"
+    ]
+  },
+  {
+    "slug": "hisense-tv-continues-tracking-users-despite-ad-set-f9c5e1de",
+    "title": "Hisense TV Continues Tracking Users Despite Ad Settings",
+    "summary": "A Hisense 55U65QEVS smart TV running VIDAA U09.60 sends audio fingerprints to Nexxen even when personalized ads are disabled. The device also keeps an Enhanced Viewing Service enabled, collecting viewing data for third parties without user consent. Disable the Enhanced Viewing Service, apply the latest firmware, and monitor traffic for unauthorized data exfiltration.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hisense-smart-tv-tracking-users/",
+    "publishedAt": "2026-11-25T10:36:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hisense-tv-continues-tracking-users-despite-ad-set",
+      "article-f9c5e1de",
+      "f9c5e1de",
+      "hisense-tv-continues-tracking-users-despite-ad-set-ed2012",
+      "hisense-tv-continues-tracking-users-despite-ad-settings"
     ]
   },
   {
@@ -2297,6 +2487,25 @@ export const news: NewsBrief[] = [
       "7f1fd13c",
       "rhsa-2026-102980-important-opentelemetry-collector-2ee179",
       "rhsa-2026-102980-important-opentelemetry-collector-security-"
+    ]
+  },
+  {
+    "slug": "southeastern-university-improves-data-security-pos-6ed24a48",
+    "title": "Southeastern University Improves Data Security Posture",
+    "summary": "Southeastern University implemented a data security posture management solution to identify sensitive information across its environment. The tool enabled tighter access controls and established a foundation for secure AI deployment by mapping data flows and risk levels. Security teams should adopt similar posture frameworks, conduct regular data mapping, and enforce least-privilege access to mitigate future exposure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/how-southeastern-university-handle-data",
+    "publishedAt": "2026-11-24T15:46:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "southeastern-university-improves-data-security-pos",
+      "article-6ed24a48",
+      "6ed24a48",
+      "southeastern-university-improves-data-security-pos-73a25d",
+      "southeastern-university-improves-data-security-posture"
     ]
   },
   {
@@ -9263,213 +9472,6 @@ export const news: NewsBrief[] = [
       "f1458f09",
       "virtualbox-process-hardening-on-windows-2026-editi-3e3201",
       "virtualbox-process-hardening-on-windows-2026-edition-what-s-"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102221-important-grafana-security-update-d58f0238",
-    "title": "RHSA-2026:102221: Important: grafana security update",
-    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102221",
-    "publishedAt": "2026-11-23T07:50:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102221-important-grafana-security-update",
-      "article-d58f0238",
-      "d58f0238",
-      "rhsa-2026-102221-important-grafana-security-update-2ee15e"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-update-for-rhel-10-0-eus-c676eec0",
-    "title": "Red Hat Kernel Update for RHEL 10.0 EUS",
-    "summary": "Red Hat released a kernel update for Enterprise Linux 10.0 Extended Update Support, addressing multiple security issues. The advisory notes an Important security impact, with CVSS base scores linked to each vulnerability, indicating potential high-severity flaws. Security teams should apply the update immediately to mitigate the identified kernel vulnerabilities, as no workarounds are provided.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102220",
-    "publishedAt": "2026-11-23T07:49:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-kernel-update-for-rhel-10-0-eus",
-      "article-c676eec0",
-      "c676eec0",
-      "red-hat-kernel-update-for-rhel-10-0-eus-2ee15e"
-    ]
-  },
-  {
-    "slug": "cisco-expressway-zero-day-exploit-enables-remote-c-154f46d5",
-    "title": "Cisco Expressway Zero-Day Exploit Enables Remote Code Execution",
-    "summary": "A zero-day vulnerability (CVE-2026-76466) in Cisco Expressway gateways has been exploited by attackers to breach internal networks. The unauthenticated remote flaw permits arbitrary code execution, and it has been confirmed as a critical CVSS-rated zero-day used in the wild. Cisco has released a patch; organizations must apply it immediately and verify CISA’s Known Exploited Vulnerabilities catalog for guidance.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
-    "publishedAt": "2026-11-23T07:44:19.000Z",
-    "cves": [
-      "CVE-2026-76466"
-    ],
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/cisco-expressway-vulnerability-exploited-cve-2026-76466/"
-      }
-    ],
-    "aliases": [
-      "cisco-expressway-zero-day-exploit-enables-remote-c",
-      "article-154f46d5",
-      "154f46d5",
-      "cisco-expressway-zero-day-exploit-enables-remote-c-6aa7cf",
-      "cisco-expressway-zero-day-exploit-enables-remote-code-execut"
-    ]
-  },
-  {
-    "slug": "malicious-ad-domains-steal-iphone-crypto-recovery-a94fe9be",
-    "title": "Malicious Ad Domains Steal iPhone Crypto Recovery Phrases",
-    "summary": "Hackers leveraged over 480 malicious ad domains to compromise iPhones and exfiltrate crypto wallet recovery phrases, passwords, and personal data. The MoldyRoost operation exploited ad rendering engine flaws, enabling credential theft without user interaction across 47+ countries. Apple issued a security advisory urging iOS updates and users to avoid suspicious ads; security teams should monitor ad traffic and enforce sandboxing.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/malicious-ad-domains-target-iphones/",
-    "publishedAt": "2026-11-23T07:32:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malicious-ad-domains-steal-iphone-crypto-recovery",
-      "article-a94fe9be",
-      "a94fe9be",
-      "malicious-ad-domains-steal-iphone-crypto-recovery-5df5ed",
-      "malicious-ad-domains-steal-iphone-crypto-recovery-phrases"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-update-for-rhel-8-7151ae6f",
-    "title": "Red Hat Kernel Update for RHEL 8",
-    "summary": "Red Hat issued a kernel update for Enterprise Linux 8, addressing several security issues. The advisory labels the update as Important, with CVSS base scores linked to each vulnerability, implying high-severity flaws. Apply the update promptly to remediate the kernel vulnerabilities; no workarounds are provided, and ensure system integrity today.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102218",
-    "publishedAt": "2026-11-23T07:27:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-kernel-update-for-rhel-8",
-      "article-7151ae6f",
-      "7151ae6f",
-      "red-hat-kernel-update-for-rhel-8-2ee15e"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-rt-update-for-rhel-8-226ecb49",
-    "title": "Red Hat Kernel-rt Update for RHEL 8",
-    "summary": "Red Hat released a kernel-rt update for Enterprise Linux 8, fixing multiple security defects. The advisory rates the update as Important, with CVSS base scores linked to each vulnerability, indicating high-severity flaws. Security teams should apply the kernel-rt patch immediately; no workarounds exist, and system stability must be verified today.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102219",
-    "publishedAt": "2026-11-23T07:15:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-kernel-rt-update-for-rhel-8",
-      "article-226ecb49",
-      "226ecb49",
-      "red-hat-kernel-rt-update-for-rhel-8-2ee15e"
-    ]
-  },
-  {
-    "slug": "cancer-institute-tackles-shadow-it-in-research-0187d950",
-    "title": "Cancer Institute Tackles Shadow IT in Research",
-    "summary": "Istituto Nazionale Tumori (INT) discusses how to keep a cancer research hospital operational while protecting against cyberattacks. The director explains collaboration with partner hospitals in the Rare Cancer Network, challenges when staff cannot access chemotherapy plans, and why banning shadow IT rarely fixes gaps. INT also highlights the most burdensome EU regulation and outlines its approach to secure research workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/rocco-saviano-istituto-nazionale-tumori-int-hospital-microsegmentation/",
-    "publishedAt": "2026-11-23T07:00:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cancer-institute-tackles-shadow-it-in-research",
-      "article-0187d950",
-      "0187d950",
-      "cancer-institute-tackles-shadow-it-in-research-70aeed"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102211-important-freerdp-security-update-bcc853c0",
-    "title": "RHSA-2026:102211: Important: freerdp security update",
-    "summary": "An update for freerdp is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102211",
-    "publishedAt": "2026-11-23T06:48:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102211-important-freerdp-security-update",
-      "article-bcc853c0",
-      "bcc853c0",
-      "rhsa-2026-102211-important-freerdp-security-update-2ee15e"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-update-for-webkit2gtk3-979f8058",
-    "title": "Red Hat Issues Important Update for webkit2gtk3",
-    "summary": "Red Hat released an important update for webkit2gtk3 on RHEL 8.6, correcting multiple high-severity bugs. The vulnerabilities, cited by CVE references, enable authenticated remote code execution with a CVSS score of 8.7, allowing attackers to execute arbitrary code. Apply the vendor patch immediately; verify installation with rpm -q webkit2gtk3 on affected RHEL 8.6 systems.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102214",
-    "publishedAt": "2026-11-23T06:44:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-update-for-webkit2gtk3",
-      "article-979f8058",
-      "979f8058",
-      "red-hat-issues-important-update-for-webkit2gtk3-2ee15e"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-important-update-for-freerdp-fcbf7de6",
-    "title": "Red Hat Releases Important Update for freerdp",
-    "summary": "Red Hat issued an important update for freerdp on RHEL 9.4 SAP solutions, addressing several critical vulnerabilities. The disclosed flaws, referenced by CVE identifiers, allow authenticated remote code execution with a CVSS score of 8.3, potentially compromising user sessions. Red Hat recommends applying the patch immediately; users should verify the update via rpm -q freerdp on affected RHEL 9.4 systems.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102213",
-    "publishedAt": "2026-11-23T06:44:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-important-update-for-freerdp",
-      "article-fcbf7de6",
-      "fcbf7de6",
-      "red-hat-releases-important-update-for-freerdp-2ee15e"
-    ]
-  },
-  {
-    "slug": "important-freerdp-update-for-rhel-9-2-sap-c0d1994e",
-    "title": "Important freerdp update for RHEL 9.2 SAP",
-    "summary": "An update fixes security vulnerabilities in freerdp affecting RHEL 9.2 Update Services for SAP Solutions and related components. The flaws, referenced by CVE identifiers, could enable remote code execution via malformed RDP packets in the remote desktop protocol stack. Red Hat advises applying the patch promptly to prevent exploitation and ensure all clients are updated.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102212",
-    "publishedAt": "2026-11-23T06:40:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "important-freerdp-update-for-rhel-9-2-sap",
-      "article-c0d1994e",
-      "c0d1994e",
-      "important-freerdp-update-for-rhel-9-2-sap-2ee15e"
     ]
   }
 ];

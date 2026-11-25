@@ -2,6 +2,31 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-103406",
+    "slug": "cve-2026-103406",
+    "vendor": "Hewlett Packard Enterprise (HPE)",
+    "product": "Juniper Session Smart Conductor and Session Smart Router",
+    "name": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
+    "dateAdded": "2026-11-25",
+    "dueDate": "2026-11-28",
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-103406"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
     "cve": "CVE-2026-132224",
     "slug": "cve-2026-132224",
     "vendor": "Optimizely",
