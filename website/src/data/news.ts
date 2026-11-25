@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "top-10-ptaas-platforms-ranked-for-2026-298a77a5",
+    "title": "Top 10 PTaaS Platforms Ranked for 2026",
+    "summary": "The article ranks the top PTaaS platforms for 2026, emphasizing on-demand human testing and rapid fix retesting. It assesses platforms on tester quality, tool integration, and how quickly findings feed back into development pipelines. Organizations can use the rankings to choose a provider that matches their deployment cadence and security testing maturity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-ptaas-platforms/",
+    "publishedAt": "2026-11-25T07:22:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-ptaas-platforms-ranked-for-2026",
+      "article-298a77a5",
+      "298a77a5",
+      "top-10-ptaas-platforms-ranked-for-2026-4b8a04"
+    ]
+  },
+  {
+    "slug": "com-affiliated-hackers-hijack-cloud-accounts-via-v-48d50598",
+    "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
+    "summary": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
+    "publishedAt": "2026-11-25T06:37:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "com-affiliated-hackers-hijack-cloud-accounts-via-v",
+      "article-48d50598",
+      "48d50598",
+      "com-affiliated-hackers-hijack-cloud-accounts-via-v-5e8142",
+      "com-affiliated-hackers-hijack-cloud-accounts-via-vishing-for"
+    ]
+  },
+  {
     "slug": "wordpress-blocks-six-backdoored-wp-connect-plugins-1903016d",
     "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
     "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account. The WordPress plugins team has independently detected and blocked the threat before it could be officially released.",
@@ -45,6 +82,25 @@ export const news: NewsBrief[] = [
       "article-ef4272a6",
       "ef4272a6",
       "open-source-gpu-task-manager-released-23efa5"
+    ]
+  },
+  {
+    "slug": "security-foundations-sscp-demonstrates-practical-r-a030682b",
+    "title": "Security+ Foundations, SSCP Demonstrates Practical Readiness",
+    "summary": "The article argues that Security+ certifications provide essential theoretical knowledge, while SSCP demonstrates the ability to apply that knowledge in real-world scenarios. It stresses that operational readiness demands continuous practice, rapid response, and maintaining a 'ready state' amid escalating threats. Readers are encouraged to pursue both foundational and applied certifications to bridge theory and execution.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/25/isc2-systems-security-certified-practitioner-sscp-certification/",
+    "publishedAt": "2026-11-25T05:30:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "security-foundations-sscp-demonstrates-practical-r",
+      "article-a030682b",
+      "a030682b",
+      "security-foundations-sscp-demonstrates-practical-r-375156",
+      "security-foundations-sscp-demonstrates-practical-readiness"
     ]
   },
   {
@@ -3665,6 +3721,90 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "zdi-26-1137-pwn2own-oracle-autonomous-ai-database-c5bb9c6e",
+    "title": "ZDI-26-1137: (Pwn2Own) Oracle Autonomous AI Database ONNX Runtime Tree Ensemble Use-After-Free Information Disclosure Vulnerability",
+    "summary": "This vulnerability allows remote attackers to disclose sensitive information on affected installations of Oracle Autonomous AI Database. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed. The following CVEs are assigned: CVE-2026-114822.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1137/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114822"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1137-pwn2own-oracle-autonomous-ai-database",
+      "article-c5bb9c6e",
+      "c5bb9c6e",
+      "zdi-26-1137-pwn2own-oracle-autonomous-ai-database-77f3b8",
+      "zdi-26-1137-pwn2own-oracle-autonomous-ai-database-onnx-runti"
+    ]
+  },
+  {
+    "slug": "zdi-26-1136-autodesk-autocad-acpal-ntlm-response-i-8c1504da",
+    "title": "ZDI-26-1136: Autodesk AutoCAD AcPal NTLM Response Information Disclosure Vulnerability",
+    "summary": "This vulnerability allows remote attackers to disclose NTLM responses on affected installations of Autodesk AutoCAD. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-77941.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1136/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-77941"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1136-autodesk-autocad-acpal-ntlm-response-i",
+      "article-8c1504da",
+      "8c1504da",
+      "zdi-26-1136-autodesk-autocad-acpal-ntlm-response-i-77f3b8",
+      "zdi-26-1136-autodesk-autocad-acpal-ntlm-response-information"
+    ]
+  },
+  {
+    "slug": "oracle-autonomous-ai-database-apex-integrity-check-603dd4a2",
+    "title": "Oracle Autonomous AI Database APEX Integrity Check Vulnerability",
+    "summary": "A remote attacker can bypass form integrity controls on Oracle Autonomous AI Database APEX installations via an integrity check interpretation conflict. The flaw, identified as CVE-2026-114850, requires no authentication and carries a CVSS score of 5.9, indicating medium severity. Oracle has released a patch; administrators should apply the update promptly to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1135/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114850"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-autonomous-ai-database-apex-integrity-check",
+      "article-603dd4a2",
+      "603dd4a2",
+      "oracle-autonomous-ai-database-apex-integrity-check-77f3b8",
+      "oracle-autonomous-ai-database-apex-integrity-check-vulnerabi"
+    ]
+  },
+  {
+    "slug": "oracle-autonomous-ai-database-apex-password-change-f3f9490a",
+    "title": "Oracle Autonomous AI Database APEX Password Change Vulnerability",
+    "summary": "A remote attacker can bypass authorization checks on Oracle Autonomous AI Database APEX password change functionality through a missing authorization flaw. The vulnerability, CVE-2026-114850, does not require authentication and has a CVSS score of 5.9, classifying it as medium severity. Oracle has issued a patch; users should update their APEX installations immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1133/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114850"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-autonomous-ai-database-apex-password-change",
+      "article-f3f9490a",
+      "f3f9490a",
+      "oracle-autonomous-ai-database-apex-password-change-77f3b8",
+      "oracle-autonomous-ai-database-apex-password-change-vulnerabi"
     ]
   },
   {
@@ -9226,137 +9366,6 @@ export const news: NewsBrief[] = [
       "article-42e3e322",
       "42e3e322",
       "google-blocks-ai-tool-calls-with-governance-1a2d8c"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-python-oauthlib-security-b56e0807",
-    "title": "Red Hat Updates python-oauthlib Security",
-    "summary": "Red Enterprise Linux 8.8 users receive an important security update for python-oauthlib, a library used for OAuth authentication. The update fixes one or more vulnerabilities that could enable attackers to bypass authentication or inject malicious tokens, as indicated by the CVSS base score referenced in the advisory. Red Hat advises applying the patch promptly to secure authentication flows.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102091",
-    "publishedAt": "2026-11-23T00:18:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-python-oauthlib-security",
-      "article-b56e0807",
-      "b56e0807",
-      "red-hat-updates-python-oauthlib-security-2ee157"
-    ]
-  },
-  {
-    "slug": "red-hat-python-oauthlib-patch-resolves-security-is-fbed9239",
-    "title": "Red Hat python-oauthlib Patch Resolves Security Issues",
-    "summary": "Red Hat released a python-oauthlib patch for RHEL 8.4 to address several security vulnerabilities. The update mitigates privilege-escalation and information-leak flaws, each assigned a CVSS score and referenced via CVE links, with no active exploitation observed. Apply the python-oauthlib update immediately; no workaround is available, and users should verify the new package version after installation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102092",
-    "publishedAt": "2026-11-23T00:16:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-python-oauthlib-patch-resolves-security-is",
-      "article-fbed9239",
-      "fbed9239",
-      "red-hat-python-oauthlib-patch-resolves-security-is-2ee157",
-      "red-hat-python-oauthlib-patch-resolves-security-issues"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-open-vswitch-2-15-security-update-d4e32cc7",
-    "title": "Red Hat Releases Open vSwitch 2.15 Security Update",
-    "summary": "Red Hat released a security update for Open vSwitch 2.15 on RHEL 8 Fast Datapath, addressing a vulnerability that could allow unauthorized traffic manipulation. The advisory rates the issue as Important, with CVSS base scores linked to CVE entries, indicating a high-severity flaw that may enable remote code execution.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102088",
-    "publishedAt": "2026-11-23T00:14:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-open-vswitch-2-15-security-update",
-      "article-d4e32cc7",
-      "d4e32cc7",
-      "red-hat-releases-open-vswitch-2-15-security-update-2ee157"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-openvswitch-3-6-patch-c6abbe2c",
-    "title": "Red Hat Releases openvswitch 3.6 Patch",
-    "summary": "Red Enterprise Linux 10 users receive an important security update for openvswitch 3.6, a software switch used in virtual networking. The update addresses one or more vulnerabilities that could allow attackers to execute code or disrupt network traffic, as indicated by the CVSS base score linked in the advisory. Red Hat recommends applying the patch immediately to protect virtual networks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102087",
-    "publishedAt": "2026-11-23T00:12:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-openvswitch-3-6-patch",
-      "article-c6abbe2c",
-      "c6abbe2c",
-      "red-hat-releases-openvswitch-3-6-patch-2ee157"
-    ]
-  },
-  {
-    "slug": "ghostscript-upload2shell-vulnerability-poc-release-419e4f95",
-    "title": "Ghostscript Upload2Shell Vulnerability PoC Released",
-    "summary": "Ghostscript’s Upload2Shell vulnerability (CVE-2026-125396) allows attackers to execute arbitrary code via crafted PDF uploads. The flaw, rated as a high-severity issue, exploits a buffer overflow in the PDF parsing engine, enabling remote code execution without authentication. Security teams should update Ghostscript to the latest version or apply the vendor-issued patch to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Sophos Threat Research",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/proof-of-concept-available-for-ghostscript-upload2shell",
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-125396"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ghostscript-upload2shell-vulnerability-poc-release",
-      "article-419e4f95",
-      "419e4f95",
-      "ghostscript-upload2shell-vulnerability-poc-release-29be2e",
-      "ghostscript-upload2shell-vulnerability-poc-released"
-    ]
-  },
-  {
-    "slug": "check-point-management-servers-hit-by-intrusion-ca-0d35bd8b",
-    "title": "Check Point Management Servers Hit by Intrusion Campaign",
-    "summary": "GreyNoise discovered an intrusion campaign targeting Check Point Security Management Servers, with confirmed attack activity between October 17 and November 2, 2026. The campaign impacted at least 22 distinct organizations globally. Security teams should investigate exposed management servers and review related logs for signs of compromise.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "GreyNoise Labs",
-    "sourceUrl": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "check-point-management-servers-hit-by-intrusion-ca",
-      "article-0d35bd8b",
-      "0d35bd8b",
-      "check-point-management-servers-hit-by-intrusion-ca-3ef513",
-      "check-point-management-servers-hit-by-intrusion-campaign"
-    ]
-  },
-  {
-    "slug": "debian-13-8-bundles-kernel-and-chromium-fixes-8096e679",
-    "title": "Debian 13.8 Bundles Kernel and Chromium Fixes",
-    "summary": "Debian 13.8 bundles security fixes for the kernel, Chromium, Firefox ESR, OpenJDK 25, nginx, BIND 9, Dovecot, rsync, PostgreSQL 17, and 112 other packages. The update covers 122 advisories, DSA-6408 to DSA-6629, fixing critical bugs that could enable privilege escalation. Users should run 'apt update && apt upgrade' on trixie, verify packages, and monitor Debian Security Advisories for further patches.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/debian-13-8-released/",
-    "publishedAt": "2026-11-22T23:05:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "debian-13-8-bundles-kernel-and-chromium-fixes",
-      "article-8096e679",
-      "8096e679",
-      "debian-13-8-bundles-kernel-and-chromium-fixes-426950"
     ]
   }
 ];

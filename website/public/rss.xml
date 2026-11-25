@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 06:44:44 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 07:46:14 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Top 10 PTaaS Platforms Ranked for 2026</title>
+      <link>https://secubuzz.com/news/top-10-ptaas-platforms-ranked-for-2026-298a77a5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-10-ptaas-platforms-ranked-for-2026-298a77a5</guid>
+      <description><![CDATA[The article ranks the top PTaaS platforms for 2026, emphasizing on-demand human testing and rapid fix retesting. It assesses platforms on tester quality, tool integration, and how quickly findings feed back into development pipelines. Organizations can use the rankings to choose a provider that matches their deployment cadence and security testing maturity.]]></description>
+      <pubDate>Wed, 25 Nov 2026 07:22:12 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-ptaas-platforms/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion</title>
+      <link>https://secubuzz.com/news/com-affiliated-hackers-hijack-cloud-accounts-via-v-48d50598</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/com-affiliated-hackers-hijack-cloud-accounts-via-v-48d50598</guid>
+      <description><![CDATA[Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to "numerous waves of vishing attacks" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts.]]></description>
+      <pubDate>Wed, 25 Nov 2026 06:37:06 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html">The Hacker News</source>
+      <category>Ransomware</category>
+    </item>
     <item>
       <title>WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live</title>
       <link>https://secubuzz.com/news/wordpress-blocks-six-backdoored-wp-connect-plugins-1903016d</link>
@@ -23,6 +41,15 @@
       <description><![CDATA[gputaskman is a terminal tool that displays GPU memory usage and AI model attribution on Windows, Linux, WSL, and Apple Silicon Macs. Native task managers report only raw memory; gputaskman shows which processes own GPU resources. The project is on GitHub and can be installed via package managers or built from source; no vendor patch needed.]]></description>
       <pubDate>Wed, 25 Nov 2026 06:00:00 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/25/gputaskman-open-source-gpu-task-manager/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Security+ Foundations, SSCP Demonstrates Practical Readiness</title>
+      <link>https://secubuzz.com/news/security-foundations-sscp-demonstrates-practical-r-a030682b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/security-foundations-sscp-demonstrates-practical-r-a030682b</guid>
+      <description><![CDATA[The article argues that Security+ certifications provide essential theoretical knowledge, while SSCP demonstrates the ability to apply that knowledge in real-world scenarios. It stresses that operational readiness demands continuous practice, rapid response, and maintaining a 'ready state' amid escalating threats. Readers are encouraged to pursue both foundational and applied certifications to bridge theory and execution.]]></description>
+      <pubDate>Wed, 25 Nov 2026 05:30:30 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/25/isc2-systems-security-certified-practitioner-sscp-certification/">Help Net Security</source>
       <category>General</category>
     </item>
     <item>
@@ -429,33 +456,6 @@
       <pubDate>Tue, 24 Nov 2026 18:31:31 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103274">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome Beta Updates Desktop Clients to 159.0.8154.33</title>
-      <link>https://secubuzz.com/news/chrome-beta-updates-desktop-clients-to-159-0-8154-5a9d70cc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-beta-updates-desktop-clients-to-159-0-8154-5a9d70cc</guid>
-      <description><![CDATA[Google Chrome updated its Beta channel to version 159.0.8154.33 for Windows, Mac, and Linux desktop clients. The release contains minor bug fixes and performance enhancements, with no disclosed security vulnerabilities or CVEs. Beta users should enable auto-update or manually install the new build to stay current with the latest features.]]></description>
-      <pubDate>Tue, 24 Nov 2026 18:28:33 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_0422009936.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Socket Provides Free Patches for All Critical RubyGems CVEs</title>
-      <link>https://secubuzz.com/news/socket-provides-free-patches-for-all-critical-ruby-d62555b9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/socket-provides-free-patches-for-all-critical-ruby-d62555b9</guid>
-      <description><![CDATA[Socket has released free patches that address every critical RubyGems vulnerability without requiring dependency upgrades. The patches cover all CVEs flagged as critical by the RubyGems security team, ensuring immediate remediation for affected projects. Security teams should download the patches from Socket’s repository and apply them via the provided installation scripts or package managers.]]></description>
-      <pubDate>Tue, 24 Nov 2026 18:27:14 GMT</pubDate>
-      <source url="https://socket.dev/blog/free-patches-critical-ruby-cves">Socket.dev</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chrome for Android Update</title>
-      <link>https://secubuzz.com/news/chrome-for-android-update-23c3fa76</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-for-android-update-23c3fa76</guid>
-      <description><![CDATA[We've just released Chrome 159 (159.0.8154.33) for Android to a small percentage of users. It'll become available on Google Play over the next few days. If you find a new issue, please let us know by filing a bug .]]></description>
-      <pubDate>Tue, 24 Nov 2026 18:12:30 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_082592203.html">Google Chrome Releases</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
