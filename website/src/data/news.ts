@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-declares-code-red-over-24-hour-m365-outa-3ccca14e",
+    "title": "Microsoft Declares Code Red Over 24-Hour M365 Outage",
+    "summary": "Microsoft announced an internal Code Red after a nearly 24-hour outage of Microsoft 365 services, affecting Outlook, Teams, Copilot, and Exchange Online on November 12-13, 2026. The incident prompted Microsoft to prioritize rapid recovery and prevent future service disruptions, with CEO Satya Nadella apologizing. Security teams should monitor service health dashboards and review incident response plans for Microsoft 365 deployments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-declares-code-red/",
+    "publishedAt": "2026-11-25T03:05:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-declares-code-red-over-24-hour-m365-outa",
+      "article-3ccca14e",
+      "3ccca14e",
+      "microsoft-declares-code-red-over-24-hour-m365-outa-31672b",
+      "microsoft-declares-code-red-over-24-hour-m365-outage"
+    ]
+  },
+  {
+    "slug": "cia-odni-breach-exposes-unclassified-intelligence-3524fbde",
+    "title": "CIA, ODNI Breach Exposes Unclassified Intelligence Data",
+    "summary": "The CIA and ODNI experienced a cyber intrusion that exposed unclassified intelligence information on a shared analysis network. The attack leveraged vulnerabilities in the shared network’s security controls, allowing attackers to access publicly available material analysis tools without authentication. Investigations are ongoing; agencies are tightening network segmentation, enforcing stricter access controls, and reviewing audit logs to contain the breach.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/cia-and-odni-suffer-cyberattack/",
+    "publishedAt": "2026-11-25T02:32:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cia-odni-breach-exposes-unclassified-intelligence",
+      "article-3524fbde",
+      "3524fbde",
+      "cia-odni-breach-exposes-unclassified-intelligence-5ec1fa",
+      "cia-odni-breach-exposes-unclassified-intelligence-data"
+    ]
+  },
+  {
     "slug": "isc-stormcast-podcast-released-283a6847",
     "title": "ISC Stormcast Podcast Released",
     "summary": "The SANS Internet Storm Center released its weekly Stormcast podcast for Wednesday, November 25, 2026. The episode discusses current threat trends, emerging attack techniques, and analyst insights, offering actionable intelligence for security teams. Listeners can access the full recording and supporting materials through the ISC website link provided in the release.",
@@ -490,6 +528,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-critical-php-7-4-security-update-da566a77",
+    "title": "Red Hat Issues Critical PHP 7.4 Security Update",
+    "summary": "Red Hat released a critical security update for the php:7.4 module on RHEL 8.4 Advanced Mission Critical Update Support and RHEL 8.4 Extended Update Support. The patch addresses multiple high-risk vulnerabilities; Red Hat Product Security rated the impact as Critical, though specific CVE identifiers are not listed. Apply the update immediately to prevent exploitation of the affected PHP 7.4 code.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103276",
+    "publishedAt": "2026-11-24T19:28:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-php-7-4-security-update",
+      "article-da566a77",
+      "da566a77",
+      "red-hat-issues-critical-php-7-4-security-update-2ee1d3"
+    ]
+  },
+  {
     "slug": "cve-2026-135614-sensitive-data-redaction-bypass-in-c7149bd2",
     "title": "CVE-2026-135614 - Sensitive data redaction bypass in the troubleshooting tool in Amazon ECS MCP Server",
     "summary": "Bulletin ID: 2026-200-AWS Publication Date: 11/24/2026 11:00 AM PST Description: Amazon ECS MCP Server is an open-source Model Context Protocol server that lets AI agents and assistants manage and troubleshoot Amazon ECS workloads using the operator's AWS credentials. We identified CVE-2026-135614, an issue in the troubleshooting tool of the Amazon ECS MCP Server (awslabs.ecs-mcp-server) before 0.1.36.",
@@ -529,6 +585,24 @@ export const news: NewsBrief[] = [
       "3f6f69aa",
       "cve-2026-135414-server-side-request-forgery-in-sna-547988",
       "cve-2026-135414-server-side-request-forgery-in-snapshot-repo"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-moderate-cockpit-machines-update-cc46c81c",
+    "title": "Red Hat Issues Moderate Cockpit-Machines Update",
+    "summary": "Red Hat released a moderate security update for the cockpit-machines component on RHEL 10.2 Extended Update Support. The update mitigates several vulnerabilities with CVSS scores indicating moderate risk; specific CVE identifiers are referenced in the advisory. Security teams should apply the patch to maintain the integrity of cockpit-machines critical services.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103325",
+    "publishedAt": "2026-11-24T19:25:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-moderate-cockpit-machines-update",
+      "article-cc46c81c",
+      "cc46c81c",
+      "red-hat-issues-moderate-cockpit-machines-update-2ee1d6"
     ]
   },
   {
@@ -605,6 +679,42 @@ export const news: NewsBrief[] = [
       "article-ec14cfd4",
       "ec14cfd4",
       "vmware-vcenter-vulnerabilities-require-patch-7852ff"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-grafana-pcp-security-patch-65b9c955",
+    "title": "Red Hat Issues grafana-pcp Security Patch",
+    "summary": "An update for grafana-pcp on Red Hat Enterprise Linux 9.2 for SAP Solutions addresses multiple security vulnerabilities. The vulnerabilities, referenced by CVE identifiers, have CVSS scores indicating significant risk, though no active exploitation has been reported. Red Hat advises applying the update promptly to prevent potential authentication bypass or privilege escalation attacks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103289",
+    "publishedAt": "2026-11-24T18:38:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-grafana-pcp-security-patch",
+      "article-65b9c955",
+      "65b9c955",
+      "red-hat-issues-grafana-pcp-security-patch-2ee1d3"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-mariadb-10-11-security-update-8c63d656",
+    "title": "Red Hat Issues MariaDB 10.11 Security Update",
+    "summary": "An update for MariaDB 10.11 on Red Hat Enterprise Linux 10 addresses multiple security vulnerabilities. The vulnerabilities, identified by CVE references, carry a CVSS base score indicating significant risk, but no active exploitation reported. Red Hat recommends applying the update immediately to mitigate potential exploitation of authentication bypass or privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103237",
+    "publishedAt": "2026-11-24T18:37:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-mariadb-10-11-security-update",
+      "article-8c63d656",
+      "8c63d656",
+      "red-hat-issues-mariadb-10-11-security-update-2ee1d2"
     ]
   },
   {
@@ -3384,24 +3494,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "red-hat-issues-critical-php-7-4-security-update-216b4966",
-    "title": "Red Hat Issues Critical PHP 7.4 Security Update",
-    "summary": "Red Hat released a Critical security update for the php:7.4 module on Enterprise Linux 8.6 Advanced Mission Critical and Extended Update Support. The advisory references multiple CVEs with CVSS scores, but no specific CVE ID is provided in the description. Administrators should apply the php:7.4 update immediately to address the critical vulnerabilities and review the CVE links for detailed impact.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102823",
-    "publishedAt": "2026-11-24T06:05:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-php-7-4-security-update",
-      "article-216b4966",
-      "216b4966",
-      "red-hat-issues-critical-php-7-4-security-update-2ee174"
-    ]
-  },
-  {
     "slug": "openai-cisco-launch-ai-assisted-linux-shield-tool-f5687079",
     "title": "OpenAI, Cisco Launch AI-Assisted Linux Shield Tool",
     "summary": "OpenAI and Cisco unveiled Shirudo, an AI-assisted Linux runtime that deploys temporary eBPF controls to block exploit behaviors before patches. The system generates programs that intercept vulnerable system calls, preventing exploitation without rebooting and narrowing the exposure window. Deploy Shirudo on exposed hosts, monitor logs, and apply vendor patches promptly to eliminate the root flaw.",
@@ -3462,6 +3554,89 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "oracle-autonomous-ai-database-bypass-via-pl-sql-ga-d1f461da",
+    "title": "Oracle Autonomous AI Database Bypass via PL/SQL Gateway",
+    "summary": "A PL/SQL Gateway authentication bypass flaw in Oracle Autonomous AI Database permits remote attackers to gain access without credentials. The vulnerability, assigned CVE-2026-114849, carries a CVSS score of 5.3 and requires no authentication to exploit, enabling unauthenticated remote code execution. Oracle has released a patch; administrators should apply the update immediately and verify authentication controls on PL/SQL Gateway endpoints.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1123/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114849"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-autonomous-ai-database-bypass-via-pl-sql-ga",
+      "article-d1f461da",
+      "d1f461da",
+      "oracle-autonomous-ai-database-bypass-via-pl-sql-ga-77f3b4",
+      "oracle-autonomous-ai-database-bypass-via-pl-sql-gateway"
+    ]
+  },
+  {
+    "slug": "oracle-autonomous-ai-database-sso-token-bypass-1f6bbd01",
+    "title": "Oracle Autonomous AI Database SSO Token Bypass",
+    "summary": "An authentication bypass in Oracle Autonomous AI Database’s ORDS APEX SSO token exchange allows remote attackers to authenticate without credentials. The flaw, identified as CVE-2026-114849, has a CVSS score of 8.1, indicating high severity and enabling unauthenticated remote exploitation. Oracle has issued a patch; security teams should apply it promptly and enforce strict token validation on ORDS APEX endpoints.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1122/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114849"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-autonomous-ai-database-sso-token-bypass",
+      "article-1f6bbd01",
+      "1f6bbd01",
+      "oracle-autonomous-ai-database-sso-token-bypass-77f3b4"
+    ]
+  },
+  {
+    "slug": "lm-studio-schema-injection-enables-remote-code-exe-d8568886",
+    "title": "LM Studio Schema Injection Enables Remote Code Execution",
+    "summary": "A schema code injection flaw in LM Studio’s MCP Tool permits remote attackers to execute arbitrary code without authentication. The vulnerability, CVE-2026-133995, carries a CVSS score of 9.8, classifying it as critical and enabling unauthenticated remote code execution. LM Studio has released a patch; administrators should apply the update immediately and restrict schema modification privileges to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1121/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-133995"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "lm-studio-schema-injection-enables-remote-code-exe",
+      "article-d8568886",
+      "d8568886",
+      "lm-studio-schema-injection-enables-remote-code-exe-77f3b4",
+      "lm-studio-schema-injection-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "lm-studio-authentication-bypass-vulnerability-expo-afe7f654",
+    "title": "LM Studio Authentication Bypass Vulnerability Exposed",
+    "summary": "A remote authentication bypass flaw in LM Studio allows attackers to access systems without credentials, as reported in the ZDI-26-1119 advisory. The vulnerability, assigned CVE-2026-133992, carries a CVSS score of 8.1, indicating high-risk exploitation potential and no authentication requirement. Administrators should apply the vendor-issued patch or upgrade to the latest LM Studio version to mitigate the bypass.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1119/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-133992"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "lm-studio-authentication-bypass-vulnerability-expo",
+      "article-afe7f654",
+      "afe7f654",
+      "lm-studio-authentication-bypass-vulnerability-expo-77f3b1",
+      "lm-studio-authentication-bypass-vulnerability-exposed"
     ]
   },
   {
@@ -9142,208 +9317,6 @@ export const news: NewsBrief[] = [
       "article-7fc7f366",
       "7fc7f366",
       "mcp-servers-pose-new-ai-attack-surface-2864c5"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-update-for-php-7-4-09495a8d",
-    "title": "Red Hat Issues Critical Update for PHP 7.4",
-    "summary": "Red Hat released a critical security update for the php:7.4 module on RHEL 8, addressing high-impact vulnerabilities. The flaws, listed in CVE references, enable remote code execution via malformed input, with CVSS scores up to 9.8. Red Hat recommends applying the update immediately; no workaround exists, and users should verify module integrity post-installation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100991",
-    "publishedAt": "2026-11-21T15:34:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-update-for-php-7-4",
-      "article-09495a8d",
-      "09495a8d",
-      "red-hat-issues-critical-update-for-php-7-4-2ee090"
-    ]
-  },
-  {
-    "slug": "fbi-ncic-database-breach-exposes-sensitive-law-enf-1fef14b8",
-    "title": "FBI NCIC Database Breach Exposes Sensitive Law Enforcement Records",
-    "summary": "FBI National Crime Information Center (NCIC) database was breached, exposing case files and personnel records. Attackers exploited an undisclosed flaw to gain unauthorized access, potentially compromising investigative workflows. Investigators are isolating the breach, patching the flaw, urging agencies to review NCIC access controls, and coordinating with federal cybersecurity teams to mitigate further exposure.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
-    "publishedAt": "2026-11-21T14:26:04.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/"
-      }
-    ],
-    "aliases": [
-      "fbi-ncic-database-breach-exposes-sensitive-law-enf",
-      "article-1fef14b8",
-      "1fef14b8",
-      "fbi-ncic-database-breach-exposes-sensitive-law-enf-3a94f2",
-      "fbi-ncic-database-breach-exposes-sensitive-law-enforcement-r"
-    ]
-  },
-  {
-    "slug": "crowdstrike-negotiates-zscaler-acquisition-822c7184",
-    "title": "CrowdStrike Negotiates Zscaler Acquisition",
-    "summary": "CrowdStrike is negotiating a potential acquisition of Zscaler, the cloud-security platform provider that offers zero-trust networking and secure web gateways. The deal could consolidate market share, expand CrowdStrike's cloud security portfolio, and reshape vendor competition by integrating Zscaler's zero-trust solutions. Both firms are conducting due diligence, and the transaction remains unconfirmed pending regulatory review and shareholder approval.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/crowdstrike-to-acquire-zscaler/",
-    "publishedAt": "2026-11-21T13:12:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-negotiates-zscaler-acquisition",
-      "article-822c7184",
-      "822c7184",
-      "crowdstrike-negotiates-zscaler-acquisition-457030"
-    ]
-  },
-  {
-    "slug": "trump-names-kirsten-davies-national-cyber-director-d6ec788a",
-    "title": "Trump Names Kirsten Davies National Cyber Director",
-    "summary": "White House appoints Kirsten Davies as National Cyber Director to steer America First cyber strategy and oversee federal cyber operations. Davies brings experience from previous cyber leadership roles, expected to shape national cyber defense priorities and cybersecurity policy coordination. The appointment signals a shift toward a more aggressive cyber posture; stakeholders should monitor policy developments and regulatory initiatives.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
-    "publishedAt": "2026-11-21T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trump-names-kirsten-davies-national-cyber-director",
-      "article-d6ec788a",
-      "d6ec788a",
-      "trump-names-kirsten-davies-national-cyber-director-6c29ae"
-    ]
-  },
-  {
-    "slug": "china-linked-hackers-exploit-monai-label-zero-day-bc54a5be",
-    "title": "China-Linked Hackers Exploit MONAI Label Zero-Day",
-    "summary": "China-linked threat actors used autonomous Cairn AI agents to locate and exploit a critical vulnerability in MONAI Label medical software. The flaw permits unauthenticated critical remote code execution via malformed input, enabling data exfiltration from imaging systems. Amazon issued an out-of-band patch; all MONAI Label users should apply it immediately.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
-    "publishedAt": "2026-11-21T12:08:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "china-linked-hackers-exploit-monai-label-zero-day",
-      "article-bc54a5be",
-      "bc54a5be",
-      "china-linked-hackers-exploit-monai-label-zero-day-750f66"
-    ]
-  },
-  {
-    "slug": "malicious-webpage-extracts-meta-muse-private-chats-24931218",
-    "title": "Malicious Webpage Extracts Meta Muse Private Chats",
-    "summary": "Researchers showed a single malicious webpage can extract private conversations and stored memories from Meta Muse without approval prompts. The method could also harvest credentials for connected accounts, but the demo was confined to one user and did not impact real users. Meta has not issued a fix; users should avoid untrusted webpages and consider disabling Muse until further guidance.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
-    "publishedAt": "2026-11-21T11:53:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malicious-webpage-extracts-meta-muse-private-chats",
-      "article-24931218",
-      "24931218",
-      "malicious-webpage-extracts-meta-muse-private-chats-2e042a"
-    ]
-  },
-  {
-    "slug": "gpgme-memory-bug-exposes-app-data-via-malicious-ke-95ec495f",
-    "title": "GPGME Memory Bug Exposes App Data via Malicious Keys",
-    "summary": "A malicious OpenPGP key with an unusually long user ID triggers a critical memory bug in GPGME, the core library of GnuPG, exposing application data. The flaw, CVE-2026-129975, affects all software using GPGME before 2.3.0 and lets attackers read memory without authentication. GnuPG released patched versions; users should upgrade to GPGME 2.3.0+ and enforce key-length checks to mitigate the issue.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
-    "publishedAt": "2026-11-21T11:05:53.000Z",
-    "cves": [
-      "CVE-2026-129975"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "gpgme-memory-bug-exposes-app-data-via-malicious-ke",
-      "article-95ec495f",
-      "95ec495f",
-      "gpgme-memory-bug-exposes-app-data-via-malicious-ke-177e2e",
-      "gpgme-memory-bug-exposes-app-data-via-malicious-keys"
-    ]
-  },
-  {
-    "slug": "ai-agents-exploit-monai-label-zero-day-for-root-ac-7d5446ad",
-    "title": "AI Agents Exploit MONAI Label Zero-Day for Root Access",
-    "summary": "AI agents discovered a zero-day in MONAI Label 0.8.5 and earlier, an open-source medical-imaging server, and used it to gain root on a university server. The flaw permits unauthenticated writes outside the server’s storage folder, enabling full system control without credentials. A patch for MONAI Label 0.8.5+ is available; admins should upgrade immediately and restrict default write permissions.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
-    "publishedAt": "2026-11-21T11:03:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-exploit-monai-label-zero-day-for-root-ac",
-      "article-7d5446ad",
-      "7d5446ad",
-      "ai-agents-exploit-monai-label-zero-day-for-root-ac-67265c",
-      "ai-agents-exploit-monai-label-zero-day-for-root-access"
-    ]
-  },
-  {
-    "slug": "signal-blocks-screenshot-functionality-on-ios-and-77d729d8",
-    "title": "Signal Blocks Screenshot Functionality on iOS and Android to Prevent AI Assistant Data Capture",
-    "summary": "Signal has blocked screenshot functionality on iOS and Android to prevent AI assistants from capturing private chat content. The change addresses a privacy flaw that allowed screen-data interception, enabling AI agents to harvest message content without user interaction. Users can now install the patch to safeguard conversations, though protection remains incomplete against advanced AI detection.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
-    "publishedAt": "2026-11-21T08:49:20.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/"
-      },
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/signal-no-screenshots-by-apple-google-operating-systems"
-      }
-    ],
-    "aliases": [
-      "signal-blocks-screenshot-functionality-on-ios-and",
-      "article-77d729d8",
-      "77d729d8",
-      "signal-blocks-screenshot-functionality-on-ios-and-7ae7f9",
-      "signal-blocks-screenshot-functionality-on-ios-and-android-to"
-    ]
-  },
-  {
-    "slug": "cisa-adds-vmware-cisco-apache-flaws-to-kev-5718e2a1",
-    "title": "CISA Adds VMware, Cisco, Apache Flaws to KEV",
-    "summary": "CISA added four actively exploited flaws to its KEV list, including a CVE-2026-129448 vulnerability in Broadcom VMware vCenter. The CVE-2026-129448 flaw, a deserialization of untrusted data with CVSS 9.8, enables remote code execution across VMware, Cisco Expressway, Apache Roller, and SAP NetWeaver systems. Patches are available for all affected products; administrators must apply updates immediately to mitigate the high-risk exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
-    "publishedAt": "2026-11-21T08:49:13.000Z",
-    "cves": [
-      "CVE-2026-129448"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-vmware-cisco-apache-flaws-to-kev",
-      "article-5718e2a1",
-      "5718e2a1",
-      "cisa-adds-vmware-cisco-apache-flaws-to-kev-1580ca"
     ]
   }
 ];

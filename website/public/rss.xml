@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 02:45:37 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 03:45:30 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Declares Code Red Over 24-Hour M365 Outage</title>
+      <link>https://secubuzz.com/news/microsoft-declares-code-red-over-24-hour-m365-outa-3ccca14e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-declares-code-red-over-24-hour-m365-outa-3ccca14e</guid>
+      <description><![CDATA[Microsoft announced an internal Code Red after a nearly 24-hour outage of Microsoft 365 services, affecting Outlook, Teams, Copilot, and Exchange Online on November 12-13, 2026. The incident prompted Microsoft to prioritize rapid recovery and prevent future service disruptions, with CEO Satya Nadella apologizing. Security teams should monitor service health dashboards and review incident response plans for Microsoft 365 deployments.]]></description>
+      <pubDate>Wed, 25 Nov 2026 03:05:16 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsoft-declares-code-red/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CIA, ODNI Breach Exposes Unclassified Intelligence Data</title>
+      <link>https://secubuzz.com/news/cia-odni-breach-exposes-unclassified-intelligence-3524fbde</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cia-odni-breach-exposes-unclassified-intelligence-3524fbde</guid>
+      <description><![CDATA[The CIA and ODNI experienced a cyber intrusion that exposed unclassified intelligence information on a shared analysis network. The attack leveraged vulnerabilities in the shared network’s security controls, allowing attackers to access publicly available material analysis tools without authentication. Investigations are ongoing; agencies are tightening network segmentation, enforcing stricter access controls, and reviewing audit logs to contain the breach.]]></description>
+      <pubDate>Wed, 25 Nov 2026 02:32:38 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/cia-and-odni-suffer-cyberattack/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>ISC Stormcast Podcast Released</title>
       <link>https://secubuzz.com/news/isc-stormcast-podcast-released-283a6847</link>
@@ -242,6 +260,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Red Hat Issues Critical PHP 7.4 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-php-7-4-security-update-da566a77</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-php-7-4-security-update-da566a77</guid>
+      <description><![CDATA[Red Hat released a critical security update for the php:7.4 module on RHEL 8.4 Advanced Mission Critical Update Support and RHEL 8.4 Extended Update Support. The patch addresses multiple high-risk vulnerabilities; Red Hat Product Security rated the impact as Critical, though specific CVE identifiers are not listed. Apply the update immediately to prevent exploitation of the affected PHP 7.4 code.]]></description>
+      <pubDate>Tue, 24 Nov 2026 19:28:22 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103276">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>CVE-2026-135614 - Sensitive data redaction bypass in the troubleshooting tool in Amazon ECS MCP Server</title>
       <link>https://secubuzz.com/news/cve-2026-135614-sensitive-data-redaction-bypass-in-c7149bd2</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-135614-sensitive-data-redaction-bypass-in-c7149bd2</guid>
@@ -258,6 +285,15 @@
       <pubDate>Tue, 24 Nov 2026 19:27:19 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-201-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Moderate Cockpit-Machines Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-moderate-cockpit-machines-update-cc46c81c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-moderate-cockpit-machines-update-cc46c81c</guid>
+      <description><![CDATA[Red Hat released a moderate security update for the cockpit-machines component on RHEL 10.2 Extended Update Support. The update mitigates several vulnerabilities with CVSS scores indicating moderate risk; specific CVE identifiers are referenced in the advisory. Security teams should apply the patch to maintain the integrity of cockpit-machines critical services.]]></description>
+      <pubDate>Tue, 24 Nov 2026 19:25:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103325">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Pan-Alto Issues Precautionary Fixes for OSS CVEs</title>
@@ -293,6 +329,24 @@
       <description><![CDATA[VMware vCenter and Cloud Foundation versions before 9.1.2 and 9.0.2 contain vulnerabilities that could enable remote code execution. The advisory, issued by the Canadian Centre for Cyber Security, references a CVSS base score but does not provide a CVE identifier, indicating moderate risk. VMware has released patches for affected products; administrators should apply the updates promptly to prevent potential exploitation.]]></description>
       <pubDate>Tue, 24 Nov 2026 18:43:41 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1203">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues grafana-pcp Security Patch</title>
+      <link>https://secubuzz.com/news/red-hat-issues-grafana-pcp-security-patch-65b9c955</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-grafana-pcp-security-patch-65b9c955</guid>
+      <description><![CDATA[An update for grafana-pcp on Red Hat Enterprise Linux 9.2 for SAP Solutions addresses multiple security vulnerabilities. The vulnerabilities, referenced by CVE identifiers, have CVSS scores indicating significant risk, though no active exploitation has been reported. Red Hat advises applying the update promptly to prevent potential authentication bypass or privilege escalation attacks.]]></description>
+      <pubDate>Tue, 24 Nov 2026 18:38:26 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103289">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues MariaDB 10.11 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-mariadb-10-11-security-update-8c63d656</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-mariadb-10-11-security-update-8c63d656</guid>
+      <description><![CDATA[An update for MariaDB 10.11 on Red Hat Enterprise Linux 10 addresses multiple security vulnerabilities. The vulnerabilities, identified by CVE references, carry a CVSS base score indicating significant risk, but no active exploitation reported. Red Hat recommends applying the update immediately to mitigate potential exploitation of authentication bypass or privilege escalation.]]></description>
+      <pubDate>Tue, 24 Nov 2026 18:37:16 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103237">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -402,60 +456,6 @@
       <pubDate>Tue, 24 Nov 2026 17:08:51 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/ai/2026/11/a-bot-tested-an-aws-key-within-8-seconds-of-exposure">Malwarebytes Labs</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102942: Important: mariadb:11.8 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102942-important-mariadb-11-8-security-u-4be34062</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102942-important-mariadb-11-8-security-u-4be34062</guid>
-      <description><![CDATA[An update for the mariadb:11.8 module is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 24 Nov 2026 17:00:52 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102942">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Volant Manticore Deploys IPFS-Based KuboShell Backdoor</title>
-      <link>https://secubuzz.com/news/volant-manticore-deploys-ipfs-based-kuboshell-back-dbe30849</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/volant-manticore-deploys-ipfs-based-kuboshell-back-dbe30849</guid>
-      <description><![CDATA[Iran-aligned Volant Manticore has targeted telecommunications firms, airlines, and critical infrastructure in Cyprus, using a custom backdoor named KuboShell. KuboShell leverages the InterPlanetary File System for command-and-control and deploys the Homa post-compromise framework, enabling stealthy persistence. Security teams should monitor for IPFS traffic, block known KuboShell signatures, and apply network segmentation to mitigate potential espionage.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:54:07 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html">The Hacker News</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Tanium Vulnerabilities Span Multiple Product Versions</title>
-      <link>https://secubuzz.com/news/tanium-vulnerabilities-span-multiple-product-versi-f7e47898</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tanium-vulnerabilities-span-multiple-product-versi-f7e47898</guid>
-      <description><![CDATA[Tanium disclosed vulnerabilities in Core Content, Enhanced Tags, Default Content, Endpoint Configuration Toolset, Engage, Zone Server, and Threat Response across multiple versions. Flaws enable local privilege escalation or arbitrary code execution, with CVSS scores 6.5-8.3, but no active exploitation reported. Apply the latest patches or upgrade to the minimum recommended versions to mitigate the risks.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:45:31 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/tanium-security-advisory-av26-1202">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>VMware Patches Critical ESX and vCenter Vulnerabilities</title>
-      <link>https://secubuzz.com/news/vmware-patches-critical-esx-and-vcenter-vulnerabil-a401c0cd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vmware-patches-critical-esx-and-vcenter-vulnerabil-a401c0cd</guid>
-      <description><![CDATA[VMware disclosed a critical authentication bypass in vCenter and code execution flaws on ESX hosts, identified by CVE-2026-123903. The flaw permits unauthenticated attackers to gain control of vCenter and run arbitrary code on ESX servers, threatening virtual infrastructure. VMware issued an out-of-band patch; administrators should apply it immediately to secure affected systems.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:32:56 GMT</pubDate>
-      <source url="https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/">SecurityWeek</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof</title>
-      <link>https://secubuzz.com/news/shinyhunters-claims-to-return-after-fbi-arrests-us-310365e0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/shinyhunters-claims-to-return-after-fbi-arrests-us-310365e0</guid>
-      <description><![CDATA[The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:30:19 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Red Hat Issues openscap Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-openscap-security-update-d8ca15b6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-openscap-security-update-d8ca15b6</guid>
-      <description><![CDATA[Red Hat released a low-severity update for the openscap package on Red Hat Enterprise Linux. The update includes bug fixes and enhancements that address minor critical security issues, with CVSS scores available via CVE references. Administrators should install the latest openscap package from the RHEL repository to apply the fixes.]]></description>
-      <pubDate>Tue, 24 Nov 2026 16:25:31 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102890">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
