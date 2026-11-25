@@ -6614,5 +6614,12 @@
   "https://cybersecuritynews.com/fincen-confirms-cyberattack/",
   "https://access.redhat.com/errata/RHSA-2026:103384",
   "https://access.redhat.com/errata/RHSA-2026:103486",
-  "https://ubuntu.com/security/notices/USN-9196-1"
+  "https://ubuntu.com/security/notices/USN-9196-1",
+  "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209",
+  "https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/",
+  "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+  "https://ubuntu.com/security/notices/USN-9198-1",
+  "https://ubuntu.com/security/notices/USN-9202-1",
+  "https://access.redhat.com/errata/RHSA-2026:103534",
+  "https://access.redhat.com/errata/RHSA-2026:103535"
 ]

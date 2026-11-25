@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "palo-alto-pan-os-targeted-by-fragnesia-exploit-cha-f23ba752",
+    "title": "Palo Alto PAN-OS Targeted by Fragnesia Exploit Chain",
+    "summary": "Threat actors are chaining PHP2Shell and Fragnesia vulnerabilities to compromise Palo Alto Networks PAN-OS devices with internet-exposed management interfaces. The Fragnesia flaw enables attackers to execute arbitrary code, while PHP2Shell facilitates lateral movement, resulting in full device takeover. Administrators should update PAN-OS to the latest release, disable exposed management interfaces, and monitor for suspicious activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+    "publishedAt": "2026-11-25T22:05:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-pan-os-targeted-by-fragnesia-exploit-cha",
+      "article-f23ba752",
+      "f23ba752",
+      "palo-alto-pan-os-targeted-by-fragnesia-exploit-cha-442770",
+      "palo-alto-pan-os-targeted-by-fragnesia-exploit-chain"
+    ]
+  },
+  {
     "slug": "1password-customer-data-stolen-after-employee-gith-845524bb",
     "title": "1Password customer data stolen after employee GitHub account breach",
     "summary": "1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data.",
@@ -45,6 +64,63 @@ export const news: NewsBrief[] = [
       "article-62f1444a",
       "62f1444a",
       "artex-tool-adopted-by-china-north-korea-hackers-6b4060"
+    ]
+  },
+  {
+    "slug": "http-tiny-header-forwarding-flaw-exposes-credentia-b5fe167c",
+    "title": "HTTP::Tiny Header Forwarding Flaw Exposes Credentials",
+    "summary": "The HTTP::Tiny library incorrectly forwards caller-supplied credential headers, such as Authorization, Cookie, and Proxy-Authorization, during cross-origin redirects, including HTTPS to HTTP transitions. This flaw could allow attackers to capture sensitive authentication information when following redirects, potentially compromising downstream services. Users should upgrade to the latest HTTP::Tiny release and review redirect handling to mitigate credential leakage.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9198-1",
+    "publishedAt": "2026-11-25T21:14:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "http-tiny-header-forwarding-flaw-exposes-credentia",
+      "article-b5fe167c",
+      "b5fe167c",
+      "http-tiny-header-forwarding-flaw-exposes-credentia-7e776e",
+      "http-tiny-header-forwarding-flaw-exposes-credentials"
+    ]
+  },
+  {
+    "slug": "usn-9202-1-kerberos-vulnerabilities-631610e3",
+    "title": "USN-9202-1: Kerberos vulnerabilities",
+    "summary": "A remote attacker could possibly use this issue to cause the KDC to crash, resulting in a denial of service. (CVE-2026-107364) It was discovered that the Kerberos KDC incorrectly handled malformed client names in PAC data during S4U2Proxy requests. This issue only affected Ubuntu 24.04 LTS and Ubuntu 26.04 LTS. (CVE-2026-107708) It was discovered that Kerberos incorrectly handled certain KRB-CRED messages.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9202-1",
+    "publishedAt": "2026-11-25T20:37:30.000Z",
+    "cves": [
+      "CVE-2026-107364",
+      "CVE-2026-107708",
+      "CVE-2026-107778",
+      "CVE-2026-107884",
+      "CVE-2026-111423",
+      "CVE-2026-112314",
+      "CVE-2026-112315",
+      "CVE-2026-112316",
+      "CVE-2026-112320",
+      "CVE-2026-112321",
+      "CVE-2026-112317",
+      "CVE-2026-112318",
+      "CVE-2026-112319",
+      "CVE-2026-112322",
+      "CVE-2026-112323",
+      "CVE-2026-118380",
+      "CVE-2026-119079",
+      "CVE-2026-71199",
+      "CVE-2026-71200"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9202-1-kerberos-vulnerabilities",
+      "article-631610e3",
+      "631610e3",
+      "usn-9202-1-kerberos-vulnerabilities-7e6d85"
     ]
   },
   {
@@ -107,6 +183,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-103534-critical-satellite-6-19-security-4456e306",
+    "title": "RHSA-2026:103534: Critical: Satellite 6.19 security update",
+    "summary": "A security update for Red Hat Satellite 6.19 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE links in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103534",
+    "publishedAt": "2026-11-25T19:22:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103534-critical-satellite-6-19-security",
+      "article-4456e306",
+      "4456e306",
+      "rhsa-2026-103534-critical-satellite-6-19-security-2ee1de",
+      "rhsa-2026-103534-critical-satellite-6-19-security-update"
+    ]
+  },
+  {
     "slug": "rhsa-2026-103536-critical-satellite-6-17-security-bbacc4fc",
     "title": "RHSA-2026:103536: Critical: Satellite 6.17 security update",
     "summary": "A security update for Red Hat Satellite 6.17 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE links in the References section.",
@@ -123,6 +218,45 @@ export const news: NewsBrief[] = [
       "bbacc4fc",
       "rhsa-2026-103536-critical-satellite-6-17-security-2ee1de",
       "rhsa-2026-103536-critical-satellite-6-17-security-update"
+    ]
+  },
+  {
+    "slug": "red-hat-satellite-6-19-critical-update-released-19a12c89",
+    "title": "Red Hat Satellite 6.19 Critical Update Released",
+    "summary": "A critical update for Red Hat Satellite 6.19 patches multiple vulnerabilities that could allow unauthenticated remote code execution. The update includes patches for undisclosed flaws, each with a CVSS base score via CVE links, rated Critical by Red Hat Product Security. Red Hat recommends applying the Satellite 6.19 update immediately to mitigate the risk, with no additional workarounds required.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103535",
+    "publishedAt": "2026-11-25T19:22:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-6-19-critical-update-released",
+      "article-19a12c89",
+      "19a12c89",
+      "red-hat-satellite-6-19-critical-update-released-2ee1de"
+    ]
+  },
+  {
+    "slug": "drupal-core-vulnerability-cve-2026-136716-exploite-b1dc9d75",
+    "title": "Drupal Core Vulnerability CVE-2026-136716 Exploited in Wild",
+    "summary": "Drupal core versions prior to 10.6.23, 11.3.23, and 11.4.14 are vulnerable to an access bypass flaw exploited in the wild. The flaw, identified as CVE-2026-136716, allows attackers to bypass authentication and gain unauthorized access, with public exploitation evidence and a high severity rating. Drupal administrators should apply the latest patch releases immediately and review vendor guidance to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209",
+    "publishedAt": "2026-11-25T19:21:44.000Z",
+    "cves": [
+      "CVE-2026-136716"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-core-vulnerability-cve-2026-136716-exploite",
+      "article-b1dc9d75",
+      "b1dc9d75",
+      "drupal-core-vulnerability-cve-2026-136716-exploite-1fb708",
+      "drupal-core-vulnerability-cve-2026-136716-exploited-in-wild"
     ]
   },
   {
@@ -383,6 +517,27 @@ export const news: NewsBrief[] = [
       "25ba4cac",
       "u-s-treasury-s-fincen-confirms-cyberattack-takes-s-5999a5",
       "u-s-treasury-s-fincen-confirms-cyberattack-takes-systems-off"
+    ]
+  },
+  {
+    "slug": "drupal-idunno-optimizely-flaws-exploited-cisa-aler-289fddd4",
+    "title": "Drupal, Idunno, Optimizely Flaws Exploited, CISA Alerts",
+    "summary": "CISA reported active exploitation of a Drupal Core remote code execution flaw, an Idunno AntiCsrf vulnerability, and an Optimizely defect in its Known Exploited Vulnerabilities catalog. CVE-2026-132165 permits arbitrary code execution, with documented attacks already observed and a federal remediation deadline of November 27. Administrators should apply vendor patches immediately and monitor for exploitation indicators to secure affected systems.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/",
+    "publishedAt": "2026-11-25T16:57:24.000Z",
+    "cves": [
+      "CVE-2026-132165"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-idunno-optimizely-flaws-exploited-cisa-aler",
+      "article-289fddd4",
+      "289fddd4",
+      "drupal-idunno-optimizely-flaws-exploited-cisa-aler-1f476b",
+      "drupal-idunno-optimizely-flaws-exploited-cisa-alerts"
     ]
   },
   {
@@ -9432,137 +9587,6 @@ export const news: NewsBrief[] = [
       "83a9fa45",
       "red-hat-updates-containernetworking-plugins-for-se-2ee15f",
       "red-hat-updates-containernetworking-plugins-for-security"
-    ]
-  },
-  {
-    "slug": "ibm-issues-advisory-for-multiple-vulnerabilities-27fd094c",
-    "title": "IBM Issues Advisory for Multiple Vulnerabilities",
-    "summary": "IBM disclosed vulnerabilities in Engineering AI Hub up to 1.4.0 and Guardium Data Protection up to 12.2, enabling unauthorized access. Flaws stem from insufficient input validation and privilege checks, with CVSS 7.0-8.5, though no exploitation reported. Apply the latest firmware updates and review advisory links for mitigation guidance to secure deployments.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/ibm-security-advisory-av26-1189",
-    "publishedAt": "2026-11-23T13:38:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ibm-issues-advisory-for-multiple-vulnerabilities",
-      "article-27fd094c",
-      "27fd094c",
-      "ibm-issues-advisory-for-multiple-vulnerabilities-4d932a"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-xdg-desktop-portal-for-security-8968871e",
-    "title": "Red Hat Updates xdg-desktop-portal for Security",
-    "summary": "Red Hat released a security update for xdg-desktop-portal on RHEL 8.8 Update Services, fixing local privilege escalation via desktop portal. Flaws carry CVSS scores, highest rated Important, indicating high exploitation risk but no active attacks reported. Apply the update immediately and monitor logs for privilege escalation attempts as the patch closes critical paths.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102290",
-    "publishedAt": "2026-11-23T13:33:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-xdg-desktop-portal-for-security",
-      "article-8968871e",
-      "8968871e",
-      "red-hat-updates-xdg-desktop-portal-for-security-2ee15f"
-    ]
-  },
-  {
-    "slug": "microsoft-tests-fix-for-windows-11-bluetooth-audio-654313d2",
-    "title": "Microsoft Tests Fix for Windows 11 Bluetooth Audio Drops",
-    "summary": "Microsoft is testing a fix for a long-standing Windows 11 Bluetooth audio quality drop affecting headphone users. The issue stems from an audio driver mis-handling of Bluetooth codec parameters, causing significant degradation but lacking remote code execution or data exfiltration. Microsoft has released a test build; users should install the forthcoming update once available to restore audio fidelity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/",
-    "publishedAt": "2026-11-23T13:28:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-tests-fix-for-windows-11-bluetooth-audio",
-      "article-654313d2",
-      "654313d2",
-      "microsoft-tests-fix-for-windows-11-bluetooth-audio-2318cc",
-      "microsoft-tests-fix-for-windows-11-bluetooth-audio-drops"
-    ]
-  },
-  {
-    "slug": "gl-inet-devices-compromised-via-remote-management-d318a9d0",
-    "title": "GL.iNet Devices Compromised via Remote Management Flaw",
-    "summary": "Attackers exploited a flaw in GL.iNet’s GoodCloud remote management to push malware onto routers and KVMs, enabling code execution. The flaw stems from insufficient authentication checks, allowing unauthenticated attackers to upload and execute arbitrary firmware. GL.iNet recommends installing the latest firmware and disabling remote management until a patch is applied to mitigate the threat.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/",
-    "publishedAt": "2026-11-23T13:26:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gl-inet-devices-compromised-via-remote-management",
-      "article-d318a9d0",
-      "d318a9d0",
-      "gl-inet-devices-compromised-via-remote-management-4e72f5",
-      "gl-inet-devices-compromised-via-remote-management-flaw"
-    ]
-  },
-  {
-    "slug": "binary-parser-vulnerability-enables-javascript-inj-4dfae943",
-    "title": "binary-parser Vulnerability Enables JavaScript Injection",
-    "summary": "A critical flaw in the binary-parser library (CVE-2026-134814) allows attackers controlling parser definitions to inject and execute arbitrary JavaScript code. The vulnerability, affecting binary-parser versions before 2.3.1, has a CVSS score of 9.2, indicating high exploitation potential and remote code execution. Users should upgrade to binary-parser 2.3.1 or later and apply any vendor-provided patches to mitigate the injection risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
-    "publishedAt": "2026-11-23T13:22:20.000Z",
-    "cves": [
-      "CVE-2026-134814"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "binary-parser-vulnerability-enables-javascript-inj",
-      "article-4dfae943",
-      "4dfae943",
-      "binary-parser-vulnerability-enables-javascript-inj-3a1c13",
-      "binary-parser-vulnerability-enables-javascript-injection"
-    ]
-  },
-  {
-    "slug": "linux-8-8-receives-important-webkit2gtk3-update-96d7cd26",
-    "title": "Linux 8.8 Receives Important webkit2gtk3 Update",
-    "summary": "Red Enterprise Linux 8.8 and SAP/Telecommunications Update Services receive an important security update for the webkit2gtk3 component. The advisory references CVSS base scores for each vulnerability, though specific CVE identifiers are not listed in the release. System administrators should install the update promptly to address the identified weaknesses and maintain platform integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102291",
-    "publishedAt": "2026-11-23T13:12:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-8-8-receives-important-webkit2gtk3-update",
-      "article-96d7cd26",
-      "96d7cd26",
-      "linux-8-8-receives-important-webkit2gtk3-update-2ee15f"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-rt-patch-for-rhel-9-2-f2ae7ef0",
-    "title": "Red Hat Releases Kernel-RT Patch for RHEL 9.2",
-    "summary": "Red Hat released an important kernel-rt update for RHEL 9.2 SAP services, addressing multiple security bugs. The update mitigates vulnerabilities that could allow privilege escalation or denial of service, though no active exploitation has been reported. Security teams should apply the kernel-rt patch immediately and verify kernel integrity to maintain system stability.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102294",
-    "publishedAt": "2026-11-23T13:07:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-rt-patch-for-rhel-9-2",
-      "article-f2ae7ef0",
-      "f2ae7ef0",
-      "red-hat-releases-kernel-rt-patch-for-rhel-9-2-2ee15f"
     ]
   }
 ];

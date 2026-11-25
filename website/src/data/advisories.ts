@@ -252,6 +252,87 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-69179",
+    "cveID": "CVE-2026-69179",
+    "slug": "cve-2026-69179",
+    "vendor": "Composer",
+    "product": "tastyigniter/tastyigniter",
+    "name": "TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager",
+    "dateAdded": "2026-11-25",
+    "dueDate": "",
+    "cvss": 9.1,
+    "severity": "Critical",
+    "cwe": "CWE-434",
+    "ransomware": false,
+    "description": "Media manager accepts .htaccess file which can be used to perform RCE.",
+    "requiredAction": "Upgrade tastyigniter/tastyigniter to version 4.3.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7wwv-x6mc-pxqx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69179"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-69178",
+    "cveID": "CVE-2026-69178",
+    "slug": "cve-2026-69178",
+    "vendor": "Composer",
+    "product": "tastyigniter/tastyigniter",
+    "name": "TastyIgniter mail template editor allows remote code execution via server-side template injection",
+    "dateAdded": "2026-11-25",
+    "dueDate": "",
+    "cvss": 9.1,
+    "severity": "Critical",
+    "cwe": "CWE-1336",
+    "ransomware": false,
+    "description": "Where: POST /admin/mail_templates/edit/{id} → body field Who can trigger: Any admin user with Admin.MailTemplates permission Impact: Arbitrary PHP execution on the server — full RCE",
+    "requiredAction": "Upgrade tastyigniter/tastyigniter to version 4.3.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-743w-g9pf-8p94"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69178"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-69177",
+    "cveID": "CVE-2026-69177",
+    "slug": "cve-2026-69177",
+    "vendor": "Composer",
+    "product": "tastyigniter/tastyigniter",
+    "name": "TastyIgniter allows stored XSS via file upload",
+    "dateAdded": "2026-11-25",
+    "dueDate": "",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "—",
+    "ransomware": false,
+    "description": "Stored XSS via uploading SVG files",
+    "requiredAction": "Upgrade tastyigniter/tastyigniter to version 4.3.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mqg7-fw3f-mhp7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69177"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-68539",
     "cveID": "CVE-2026-68539",
     "slug": "cve-2026-68539",
@@ -1710,87 +1791,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130176"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115463",
-    "cveID": "CVE-2026-115463",
-    "slug": "cve-2026-115463",
-    "vendor": "Composer",
-    "product": "poweradmin/poweradmin",
-    "name": "Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 7.4,
-    "severity": "High",
-    "cwe": "CWE-307",
-    "ransomware": false,
-    "description": "The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout The email second factor is a six-digit code drawn from mt_rand() and verified with no attempt limit, so an attacker who already has the password can brute-force it inside its validity window.",
-    "requiredAction": "Upgrade poweradmin/poweradmin to version 4.2.6 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9657-8vc2-7g2p"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115463"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-104099",
-    "cveID": "CVE-2026-104099",
-    "slug": "cve-2026-104099",
-    "vendor": "Go",
-    "product": "fabio · fabiolb",
-    "name": "Fabio: Access-control bypass through unnormalized request paths",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 9.1,
-    "severity": "Critical",
-    "cwe": "CWE-41",
-    "ransomware": false,
-    "description": "Route selection uses the raw un-normalized request path, and the per-route ACL and basic-auth gates hang off that selection, so a dot-segment, encoded-dot, or double-slash variant of a protected path selects a different route, skips both gates, and is forwarded to the backend which normalizes and serves the protected resource.",
-    "requiredAction": "Upgrade fabio · fabiolb to version 1.7.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4hrh-34w3-5ww8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104099"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-69261",
-    "cveID": "CVE-2026-69261",
-    "slug": "cve-2026-69261",
-    "vendor": "Go",
-    "product": "git-lfs · git-lfs",
-    "name": "Git LFS may leak HTTP headers after redirections",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 7.6,
-    "severity": "High",
-    "cwe": "CWE-522",
-    "ransomware": false,
-    "description": "After receiving an HTTP redirection, Git LFS may forward certain HTTP headers to a host other than the one for which they were intended. While Authorization headers are never forwarded to inappropriate hosts, Cookie headers may be forwarded incorrectly. Git LFS has resolved this issue by never forwarding Cookie headers to hosts other than the ones for which they were intended.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x7xj-4j4f-88xr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69261"
       }
     ],
     "source": "GITHUB"

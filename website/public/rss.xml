@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 21:45:14 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 22:46:30 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Palo Alto PAN-OS Targeted by Fragnesia Exploit Chain</title>
+      <link>https://secubuzz.com/news/palo-alto-pan-os-targeted-by-fragnesia-exploit-cha-f23ba752</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-pan-os-targeted-by-fragnesia-exploit-cha-f23ba752</guid>
+      <description><![CDATA[Threat actors are chaining PHP2Shell and Fragnesia vulnerabilities to compromise Palo Alto Networks PAN-OS devices with internet-exposed management interfaces. The Fragnesia flaw enables attackers to execute arbitrary code, while PHP2Shell facilitates lateral movement, resulting in full device takeover. Administrators should update PAN-OS to the latest release, disable exposed management interfaces, and monitor for suspicious activity.]]></description>
+      <pubDate>Wed, 25 Nov 2026 22:05:09 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>1Password customer data stolen after employee GitHub account breach</title>
       <link>https://secubuzz.com/news/1password-customer-data-stolen-after-employee-gith-845524bb</link>
@@ -24,6 +33,24 @@
       <pubDate>Wed, 25 Nov 2026 21:18:00 GMT</pubDate>
       <source url="https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool">The Record</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>HTTP::Tiny Header Forwarding Flaw Exposes Credentials</title>
+      <link>https://secubuzz.com/news/http-tiny-header-forwarding-flaw-exposes-credentia-b5fe167c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/http-tiny-header-forwarding-flaw-exposes-credentia-b5fe167c</guid>
+      <description><![CDATA[The HTTP::Tiny library incorrectly forwards caller-supplied credential headers, such as Authorization, Cookie, and Proxy-Authorization, during cross-origin redirects, including HTTPS to HTTP transitions. This flaw could allow attackers to capture sensitive authentication information when following redirects, potentially compromising downstream services. Users should upgrade to the latest HTTP::Tiny release and review redirect handling to mitigate credential leakage.]]></description>
+      <pubDate>Wed, 25 Nov 2026 21:14:58 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9198-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>USN-9202-1: Kerberos vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9202-1-kerberos-vulnerabilities-631610e3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9202-1-kerberos-vulnerabilities-631610e3</guid>
+      <description><![CDATA[A remote attacker could possibly use this issue to cause the KDC to crash, resulting in a denial of service. (CVE-2026-107364) It was discovered that the Kerberos KDC incorrectly handled malformed client names in PAC data during S4U2Proxy requests. This issue only affected Ubuntu 24.04 LTS and Ubuntu 26.04 LTS. (CVE-2026-107708) It was discovered that Kerberos incorrectly handled certain KRB-CRED messages.]]></description>
+      <pubDate>Wed, 25 Nov 2026 20:37:30 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9202-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>CVE-2026-134070 - Improper input sanitization in the AWS Config remediation runbook AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3</title>
@@ -53,6 +80,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:103534: Critical: Satellite 6.19 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103534-critical-satellite-6-19-security-4456e306</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103534-critical-satellite-6-19-security-4456e306</guid>
+      <description><![CDATA[A security update for Red Hat Satellite 6.19 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE links in the References section.]]></description>
+      <pubDate>Wed, 25 Nov 2026 19:22:51 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103534">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>RHSA-2026:103536: Critical: Satellite 6.17 security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-103536-critical-satellite-6-17-security-bbacc4fc</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103536-critical-satellite-6-17-security-bbacc4fc</guid>
@@ -60,6 +96,24 @@
       <pubDate>Wed, 25 Nov 2026 19:22:51 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103536">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Satellite 6.19 Critical Update Released</title>
+      <link>https://secubuzz.com/news/red-hat-satellite-6-19-critical-update-released-19a12c89</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-satellite-6-19-critical-update-released-19a12c89</guid>
+      <description><![CDATA[A critical update for Red Hat Satellite 6.19 patches multiple vulnerabilities that could allow unauthenticated remote code execution. The update includes patches for undisclosed flaws, each with a CVSS base score via CVE links, rated Critical by Red Hat Product Security. Red Hat recommends applying the Satellite 6.19 update immediately to mitigate the risk, with no additional workarounds required.]]></description>
+      <pubDate>Wed, 25 Nov 2026 19:22:50 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103535">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Drupal Core Vulnerability CVE-2026-136716 Exploited in Wild</title>
+      <link>https://secubuzz.com/news/drupal-core-vulnerability-cve-2026-136716-exploite-b1dc9d75</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-vulnerability-cve-2026-136716-exploite-b1dc9d75</guid>
+      <description><![CDATA[Drupal core versions prior to 10.6.23, 11.3.23, and 11.4.14 are vulnerable to an access bypass flaw exploited in the wild. The flaw, identified as CVE-2026-136716, allows attackers to bypass authentication and gain unauthorized access, with public exploitation evidence and a high severity rating. Drupal administrators should apply the latest patch releases immediately and review vendor guidance to mitigate the vulnerability.]]></description>
+      <pubDate>Wed, 25 Nov 2026 19:21:44 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209">Canadian Centre for Cyber Security</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Thanksgiving Thanks and Critiques from David</title>
@@ -186,6 +240,15 @@
       <pubDate>Wed, 25 Nov 2026 17:01:30 GMT</pubDate>
       <source url="https://cybersecuritynews.com/fincen-confirms-cyberattack/">Cyber Security News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Drupal, Idunno, Optimizely Flaws Exploited, CISA Alerts</title>
+      <link>https://secubuzz.com/news/drupal-idunno-optimizely-flaws-exploited-cisa-aler-289fddd4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/drupal-idunno-optimizely-flaws-exploited-cisa-aler-289fddd4</guid>
+      <description><![CDATA[CISA reported active exploitation of a Drupal Core remote code execution flaw, an Idunno AntiCsrf vulnerability, and an Optimizely defect in its Known Exploited Vulnerabilities catalog. CVE-2026-132165 permits arbitrary code execution, with documented attacks already observed and a federal remediation deadline of November 27. Administrators should apply vendor patches immediately and monitor for exploitation indicators to secure affected systems.]]></description>
+      <pubDate>Wed, 25 Nov 2026 16:57:24 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Five Holiday-Themed Attacks Target Users and Businesses</title>
@@ -393,69 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 14:32:00 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103502">Red Hat Security Advisories</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Adobe Releases Patches for Critical Experience Manager Flaws</title>
-      <link>https://secubuzz.com/news/adobe-releases-patches-for-critical-experience-man-d9f805d0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/adobe-releases-patches-for-critical-experience-man-d9f805d0</guid>
-      <description><![CDATA[Adobe released security updates on November 24, 2026, addressing critical flaws in Adobe Experience Manager and Adobe Campaign Classic. The vulnerabilities could enable attackers to execute arbitrary code, elevate privileges, or bypass security checks on affected servers. Adobe recommends applying the patches immediately; no workarounds are available, and users should verify installation status.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:28:30 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-adobe-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Intent IDs Leak Into Victim Logs</title>
-      <link>https://secubuzz.com/news/intent-ids-leak-into-victim-logs-47fc12d6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/intent-ids-leak-into-victim-logs-47fc12d6</guid>
-      <description><![CDATA[Intent IDs (iNNNN) from agentic offensive frameworks such as ARTEX and Cairn are inadvertently recorded in victim logs. The leakage exposes attacker identifiers, allowing defenders to track and deconflict malicious activity, though the signal weakens when logs are truncated. Mitigation requires sanitizing logs to remove iNNNN counters or implementing log filtering rules to prevent exposure of offensive framework identifiers.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:27:03 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/agentic-offensive-frameworks-intent-ids-artex-cairn">Wiz Research</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Agents Exploit Unpatched Vulnerability to Control University Server</title>
-      <link>https://secubuzz.com/news/ai-agents-exploit-unpatched-vulnerability-to-contr-c7737e1c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-exploit-unpatched-vulnerability-to-contr-c7737e1c</guid>
-      <description><![CDATA[AI agents discovered an unpatched vulnerability in a university server and subsequently leveraged it to gain control. The flaw allowed remote code execution via an undisclosed mechanism, enabling attackers to execute arbitrary commands without authentication. The university should apply the vendor's patch or update firmware immediately to mitigate the risk.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:24:16 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/ai/2026/11/ai-agents-found-an-unpatched-flaw-after-being-told-to-break-in">Malwarebytes Labs</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103495: Critical: php security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103495-critical-php-security-update-681a61ef</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103495-critical-php-security-update-681a61ef</guid>
-      <description><![CDATA[An update for php is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:20:25 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103495">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ShinyHunters Announces Return, Inception Denies Ties</title>
-      <link>https://secubuzz.com/news/shinyhunters-announces-return-inception-denies-tie-65fd194b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/shinyhunters-announces-return-inception-denies-tie-65fd194b</guid>
-      <description><![CDATA[An account linked to the ShinyHunters hacking group announced its return, while Okta identified potential connections between ShinyHunters and the Inception group. The post, titled 'ShinyHunters Claims Comeback, New Inception Group Rejects Alleged Ties,' was first published on SecurityWeek. Security teams should monitor ShinyHunters activity and review Okta’s findings for potential insider or credential compromise indicators.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:15:25 GMT</pubDate>
-      <source url="https://www.securityweek.com/shinyhunters-claims-comeback-new-inception-group-rejects-alleged-ties/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Use Hugging Face AI to Build Fake Microsoft and Google Login Pages to Steal Passwords</title>
-      <link>https://secubuzz.com/news/hackers-use-hugging-face-ai-to-build-fake-microsof-06518be1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-hugging-face-ai-to-build-fake-microsof-06518be1</guid>
-      <description><![CDATA[Attackers used Hugging Face’s DeepSite AI website builder to create fake sign-in pages and hosted them on the same platform developers use to share AI demos. Aikido Security identified 42 pages on Hugging Face Spaces that impersonated 28 brands, including Microsoft, Google, PayPal, Chase, and Coinbase.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:13:33 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hugging-face-ai-phishing-pages/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Exploit Critical Hex.pm Vulnerability to Execute Commands on Six Servers</title>
-      <link>https://secubuzz.com/news/hackers-exploit-critical-hex-pm-vulnerability-to-e-28b80aed</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-critical-hex-pm-vulnerability-to-e-28b80aed</guid>
-      <description><![CDATA[A critical Hex.pm vulnerability was exploited on November 23, 2026, allowing attackers to execute operating system commands on six web servers. The flaw, tracked as CVE-2026-129514, carries a maximum severity score of 10.0 and required no account.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:05:27 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-exploit-critical-hex-pm-vulnerability/">Cyber Security News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
