@@ -11,6 +11,65 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cisa-alerts-on-critical-danfoss-controller-vulnera-91051535",
+    "title": "CISA Alerts on Critical Danfoss Controller Vulnerability",
+    "summary": "CISA issued a warning about a critical flaw in Danfoss AK-SM 8xxA Series refrigeration controllers used by food retailers, identified as CVE-2026-129713. The vulnerability permits unauthenticated remote code execution, enabling attackers to manipulate temperature controls and potentially disrupt refrigeration operations. CISA recommends applying the vendor’s patch immediately, updating firmware, and monitoring for anomalous activity to mitigate risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/",
+    "publishedAt": "2026-11-25T16:13:40.000Z",
+    "cves": [
+      "CVE-2026-129713"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-alerts-on-critical-danfoss-controller-vulnera",
+      "article-91051535",
+      "91051535",
+      "cisa-alerts-on-critical-danfoss-controller-vulnera-1a00d0",
+      "cisa-alerts-on-critical-danfoss-controller-vulnerability"
+    ]
+  },
+  {
+    "slug": "malicious-nuget-packages-target-net-developers-43c157ec",
+    "title": "Malicious NuGet Packages Target .NET Developers",
+    "summary": "Researchers uncovered 13 malicious NuGet packages distributed through a fake recruitment campaign, designed to infect .NET developers’ machines. The poisoned packages contain malware that grants attackers remote access, enabling credential theft and lateral movement within development environments. Developers should verify package sources, use signed packages, and apply the latest security updates to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
+    "publishedAt": "2026-11-25T15:48:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-nuget-packages-target-net-developers",
+      "article-43c157ec",
+      "43c157ec",
+      "malicious-nuget-packages-target-net-developers-5bc2e4"
+    ]
+  },
+  {
+    "slug": "juniper-adds-cve-2026-103406-to-kev-catalog-27a80b9e",
+    "title": "Juniper Adds CVE-2026-103406 to KEV Catalog",
+    "summary": "Juniper Networks disclosed multiple vulnerabilities in Session Smart Conductor and Session Smart Router prior to 7.0.5, 7.1.7, and 7.2.3 that allow attackers to execute code. CISA listed CVE-2026-103406 as a known exploited vulnerability, indicating active exploitation in the wild, though specific CVSS is not disclosed. Administrators should review Juniper’s advisory links and apply firmware updates to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/juniper-networks-security-advisory-av26-1101",
+    "publishedAt": "2026-11-25T15:32:26.000Z",
+    "cves": [
+      "CVE-2026-103406"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "juniper-adds-cve-2026-103406-to-kev-catalog",
+      "article-27a80b9e",
+      "27a80b9e",
+      "juniper-adds-cve-2026-103406-to-kev-catalog-68f6ca"
+    ]
+  },
+  {
     "slug": "geoserver-cves-2026-120705-2026-129243-exploited-a0f1dffb",
     "title": "GeoServer CVEs 2026-120705, 2026-129243 Exploited",
     "summary": "GeoServer versions before 2.27.7, 2.28.6, and 3.0.2 are vulnerable to two CVEs, CVE-2026-120705 and CVE-2026-129243, which attackers are exploiting in the wild. Both CVEs allow remote code execution through improper input validation in GeoServer's API, resulting in full system compromise. Administrators should immediately apply the latest GeoServer 2.27.7, 2.28.6, or 3.0.2 releases or install the vendor-issued patch to mitigate exploitation.",
@@ -47,6 +106,122 @@ export const news: NewsBrief[] = [
       "article-555042be",
       "555042be",
       "geoserver-high-severity-flaws-targeted-for-rce-61efa8"
+    ]
+  },
+  {
+    "slug": "solarwinds-serv-u-and-dameware-vulnerabilities-dis-4f915205",
+    "title": "SolarWinds Serv-U and Dameware Vulnerabilities Disclosed",
+    "summary": "SolarWinds disclosed two vulnerabilities in Serv-U and Dameware, enabling privilege escalation and command injection. The Serv-U flaw (CVE-2026-123167) permits directory traversal for privilege gain, while Dameware (CVE-2026-28336) allows arbitrary command execution. Apply the latest patches or firmware updates immediately, and review the advisory links for detailed guidance to mitigate risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/solarwinds-security-advisory-av26-1206",
+    "publishedAt": "2026-11-25T15:23:14.000Z",
+    "cves": [
+      "CVE-2026-123167",
+      "CVE-2026-28336"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "solarwinds-serv-u-and-dameware-vulnerabilities-dis",
+      "article-4f915205",
+      "4f915205",
+      "solarwinds-serv-u-and-dameware-vulnerabilities-dis-6ef0c6",
+      "solarwinds-serv-u-and-dameware-vulnerabilities-disclosed"
+    ]
+  },
+  {
+    "slug": "bot-detection-losing-battle-privileged-access-must-d4f20836",
+    "title": "Bot Detection Losing Battle, Privileged Access Must Equal",
+    "summary": "Bot detection has become a losing game as automated actors outpace traditional controls. The root cause is the rapid proliferation of sophisticated bots that mimic legitimate users, making privilege escalation indistinguishable from human activity. Security teams must enforce equal privileged access controls for humans and machines, adopting zero-trust and continuous monitoring to mitigate bot-driven threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/bot-world-just-living",
+    "publishedAt": "2026-11-25T15:20:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bot-detection-losing-battle-privileged-access-must",
+      "article-d4f20836",
+      "d4f20836",
+      "bot-detection-losing-battle-privileged-access-must-2e62cd",
+      "bot-detection-losing-battle-privileged-access-must-equal"
+    ]
+  },
+  {
+    "slug": "ai-reduces-pentester-workload-boosts-engagements-d7abd981",
+    "title": "AI Reduces Pentester Workload, Boosts Engagements",
+    "summary": "Pentesters spend a large portion of engagements on documentation and reporting, limiting test throughput. PentestPad shows AI can automate these peripheral tasks, enabling teams to handle more tests while keeping sensitive client data on their own infrastructure. AI workflow tools cut manual effort, improve consistency, and free pentesters for technical testing, yet demand secure data governance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/more-pentests-without-more-pentesters-where-ai-safely-helps/",
+    "publishedAt": "2026-11-25T15:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-reduces-pentester-workload-boosts-engagements",
+      "article-d7abd981",
+      "d7abd981",
+      "ai-reduces-pentester-workload-boosts-engagements-7d38f1"
+    ]
+  },
+  {
+    "slug": "ai-driven-attacks-rise-speed-and-edge-ai-offer-def-8de0c884",
+    "title": "AI-Driven Attacks Rise; Speed and Edge AI Offer Defense",
+    "summary": "Unit 42 examines AI-powered cyberattacks, noting attackers use machine learning to accelerate reconnaissance and exploitation. The report stresses speed, edge AI, and baseline behavior modeling as essential for detecting and stopping these adaptive threats. Teams should implement real-time anomaly detection, edge analytics, and continuous baseline updates to counter AI-driven attacks while protecting data privacy.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/ai-threat-horizon/",
+    "publishedAt": "2026-11-25T15:00:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-driven-attacks-rise-speed-and-edge-ai-offer-def",
+      "article-8de0c884",
+      "8de0c884",
+      "ai-driven-attacks-rise-speed-and-edge-ai-offer-def-2ab2ea",
+      "ai-driven-attacks-rise-speed-and-edge-ai-offer-defense"
+    ]
+  },
+  {
+    "slug": "infratrust-highlights-exploited-supply-chain-flaws-f86918ec",
+    "title": "InfraTrust Highlights Exploited Supply Chain Flaws in Network Appliances",
+    "summary": "InfraTrust's November report warns that most recent advisories involve exploited third-party software bundled into network appliances, not vendor code. These supply-chain flaws allow attackers to inject malicious code or gain unauthorized access, threatening device integrity and network security. Teams should audit appliance firmware, verify component provenance, and apply vendor patches or mitigations promptly.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/",
+    "publishedAt": "2026-11-25T15:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "infratrust-highlights-exploited-supply-chain-flaws",
+      "article-f86918ec",
+      "f86918ec",
+      "infratrust-highlights-exploited-supply-chain-flaws-1c992c",
+      "infratrust-highlights-exploited-supply-chain-flaws-in-networ"
+    ]
+  },
+  {
+    "slug": "shufti-fraud-hub-reveals-links-among-legitimate-ac-5b444c73",
+    "title": "Shufti Fraud Hub Reveals Links Among Legitimate Accounts",
+    "summary": "Shufti launched its Fraud Hub, linking identity, device, biometric, and behavioral signals to detect suspicious verification attempts. The platform identifies coordinated fraud networks and monitors emerging risks across the user lifecycle, revealing links between accounts that seem legitimate. Teams should use Fraud Hub’s context-aware analytics to supplement individual checks, enabling proactive decisions before fraud escalates and lowering onboarding risk.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/25/shufti-fraud-hub/",
+    "publishedAt": "2026-11-25T14:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "shufti-fraud-hub-reveals-links-among-legitimate-ac",
+      "article-5b444c73",
+      "5b444c73",
+      "shufti-fraud-hub-reveals-links-among-legitimate-ac-73488e",
+      "shufti-fraud-hub-reveals-links-among-legitimate-accounts"
     ]
   },
   {
@@ -9309,173 +9484,6 @@ export const news: NewsBrief[] = [
       "f6106dd4",
       "red-hat-releases-kernel-security-update-for-rhel-8-2ee15e",
       "red-hat-releases-kernel-security-update-for-rhel-8-6"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-liblerc-security-update-3df8ccfe",
-    "title": "Red Hat Releases liblerc Security Update",
-    "summary": "A flaw in liblerc, used by Red Hat Enterprise Linux 10.2 EUS, is now fixed by a security update. Red Hat rates the issue as Important, with a CVSS base score available via CVE links in the advisory, indicating high risk. Apply the liblerc patch for RHEL 10.2 EUS immediately to eliminate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102232",
-    "publishedAt": "2026-11-23T09:12:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-liblerc-security-update",
-      "article-3df8ccfe",
-      "3df8ccfe",
-      "red-hat-releases-liblerc-security-update-2ee15e"
-    ]
-  },
-  {
-    "slug": "microsoft-confirms-printing-issues-on-forcepoint-s-cbc7d4a7",
-    "title": "Microsoft Confirms Printing Issues on Forcepoint Systems",
-    "summary": "Microsoft confirmed that the KB5132043 Windows 11 hotpatch caused printing failures on systems running Forcepoint DLP software. The issue does not represent a security vulnerability but disrupts print functionality for affected users. Microsoft advises users to postpone the hotpatch until a fix is released or to revert to a previous Windows 11 build.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
-    "publishedAt": "2026-11-23T09:11:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-confirms-printing-issues-on-forcepoint-s",
-      "article-cbc7d4a7",
-      "cbc7d4a7",
-      "microsoft-confirms-printing-issues-on-forcepoint-s-7dbc66",
-      "microsoft-confirms-printing-issues-on-forcepoint-systems"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102230-important-liblerc-security-update-06992153",
-    "title": "RHSA-2026:102230: Important: liblerc security update",
-    "summary": "An update for liblerc is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102230",
-    "publishedAt": "2026-11-23T09:04:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102230-important-liblerc-security-update",
-      "article-06992153",
-      "06992153",
-      "rhsa-2026-102230-important-liblerc-security-update-2ee15e"
-    ]
-  },
-  {
-    "slug": "gl-inet-cloud-flaw-exploited-for-malware-1a3f0284",
-    "title": "GL.iNet Cloud flaw exploited for malware",
-    "summary": "Hackers exploited a flaw in GL.iNet's GoodCloud remote-management service to install malware on customer routers and KVM devices. The vulnerability allowed remote code execution via authenticated access, and the attacker leveraged it to deploy malicious binaries before the company patched the flaw. GL.iNet has blocked the attack vector and recommends users apply the firmware update immediately to prevent further infections.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
-    "publishedAt": "2026-11-23T09:04:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gl-inet-cloud-flaw-exploited-for-malware",
-      "article-1a3f0284",
-      "1a3f0284",
-      "gl-inet-cloud-flaw-exploited-for-malware-2dfd25"
-    ]
-  },
-  {
-    "slug": "signal-blocks-ai-assistants-from-accessing-private-29017594",
-    "title": "Signal Blocks AI Assistants From Accessing Private Messages",
-    "summary": "Signal updated its app to block AI assistants on iOS 27 and Android, preventing them from capturing users’ private message content. The change stops assistants like Siri and Google Gemini from reading the screen to answer queries, protecting data stores. No vulnerability is reported; the update is a privacy safeguard that requires installing the latest Signal version.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/signal-blocks-ai-assistants-screenshots/",
-    "publishedAt": "2026-11-23T08:53:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "signal-blocks-ai-assistants-from-accessing-private",
-      "article-29017594",
-      "29017594",
-      "signal-blocks-ai-assistants-from-accessing-private-287530",
-      "signal-blocks-ai-assistants-from-accessing-private-messages"
-    ]
-  },
-  {
-    "slug": "samsung-securities-breach-exposes-8-241-customers-8e25bd81",
-    "title": "Samsung Securities Breach Exposes 8,241 Customers' Data",
-    "summary": "Samsung Securities reported a breach exposing personal data of 8,241 customers after unauthorized access to its Voice of Customer (VOC) website. The breach involved credential theft and internal compromise, but impact was limited to the VOC system. Samsung Securities advised affected customers to monitor accounts, change passwords, and is investigating while notifying regulators.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/samsung-securities-data-breach/",
-    "publishedAt": "2026-11-23T08:53:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "samsung-securities-breach-exposes-8-241-customers",
-      "article-8e25bd81",
-      "8e25bd81",
-      "samsung-securities-breach-exposes-8-241-customers-28fcc5",
-      "samsung-securities-breach-exposes-8-241-customers-data"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102228-important-redhat-ds-12-security-b-06aa9831",
-    "title": "RHSA-2026:102228: Important: redhat-ds:12 security, bug fix, and enhancement update",
-    "summary": "An update for the redhat-ds:12 module is now available for Red Hat Directory Server 12.9 for RHEL 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102228",
-    "publishedAt": "2026-11-23T08:33:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102228-important-redhat-ds-12-security-b",
-      "article-06aa9831",
-      "06aa9831",
-      "rhsa-2026-102228-important-redhat-ds-12-security-b-2ee15e",
-      "rhsa-2026-102228-important-redhat-ds-12-security-bug-fix-and"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102229-important-389-ds-base-and-redhat-6fc27522",
-    "title": "RHSA-2026:102229: Important: 389-ds-base and redhat-ds security, bug fix, and enhancement update",
-    "summary": "An update for multiple packages is now available for Red Hat Directory Server 13.3 for RHEL 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102229",
-    "publishedAt": "2026-11-23T08:31:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102229-important-389-ds-base-and-redhat",
-      "article-6fc27522",
-      "6fc27522",
-      "rhsa-2026-102229-important-389-ds-base-and-redhat-2ee15e",
-      "rhsa-2026-102229-important-389-ds-base-and-redhat-ds-securit"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102224-important-grafana-security-update-caa3d2a4",
-    "title": "RHSA-2026:102224: Important: grafana security update",
-    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102224",
-    "publishedAt": "2026-11-23T08:25:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102224-important-grafana-security-update",
-      "article-caa3d2a4",
-      "caa3d2a4",
-      "rhsa-2026-102224-important-grafana-security-update-2ee15e"
     ]
   }
 ];

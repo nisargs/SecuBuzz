@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 15:44:33 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 16:44:46 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CISA Alerts on Critical Danfoss Controller Vulnerability</title>
+      <link>https://secubuzz.com/news/cisa-alerts-on-critical-danfoss-controller-vulnera-91051535</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-alerts-on-critical-danfoss-controller-vulnera-91051535</guid>
+      <description><![CDATA[CISA issued a warning about a critical flaw in Danfoss AK-SM 8xxA Series refrigeration controllers used by food retailers, identified as CVE-2026-129713. The vulnerability permits unauthenticated remote code execution, enabling attackers to manipulate temperature controls and potentially disrupt refrigeration operations. CISA recommends applying the vendor’s patch immediately, updating firmware, and monitoring for anomalous activity to mitigate risk.]]></description>
+      <pubDate>Wed, 25 Nov 2026 16:13:40 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/">BleepingComputer</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Malicious NuGet Packages Target .NET Developers</title>
+      <link>https://secubuzz.com/news/malicious-nuget-packages-target-net-developers-43c157ec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-nuget-packages-target-net-developers-43c157ec</guid>
+      <description><![CDATA[Researchers uncovered 13 malicious NuGet packages distributed through a fake recruitment campaign, designed to infect .NET developers’ machines. The poisoned packages contain malware that grants attackers remote access, enabling credential theft and lateral movement within development environments. Developers should verify package sources, use signed packages, and apply the latest security updates to mitigate exploitation.]]></description>
+      <pubDate>Wed, 25 Nov 2026 15:48:04 GMT</pubDate>
+      <source url="https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Juniper Adds CVE-2026-103406 to KEV Catalog</title>
+      <link>https://secubuzz.com/news/juniper-adds-cve-2026-103406-to-kev-catalog-27a80b9e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/juniper-adds-cve-2026-103406-to-kev-catalog-27a80b9e</guid>
+      <description><![CDATA[Juniper Networks disclosed multiple vulnerabilities in Session Smart Conductor and Session Smart Router prior to 7.0.5, 7.1.7, and 7.2.3 that allow attackers to execute code. CISA listed CVE-2026-103406 as a known exploited vulnerability, indicating active exploitation in the wild, though specific CVSS is not disclosed. Administrators should review Juniper’s advisory links and apply firmware updates to mitigate the risk.]]></description>
+      <pubDate>Wed, 25 Nov 2026 15:32:26 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/juniper-networks-security-advisory-av26-1101">Canadian Centre for Cyber Security</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>GeoServer CVEs 2026-120705, 2026-129243 Exploited</title>
       <link>https://secubuzz.com/news/geoserver-cves-2026-120705-2026-129243-exploited-a0f1dffb</link>
@@ -24,6 +51,60 @@
       <pubDate>Wed, 25 Nov 2026 15:27:36 GMT</pubDate>
       <source url="https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/">SecurityWeek</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>SolarWinds Serv-U and Dameware Vulnerabilities Disclosed</title>
+      <link>https://secubuzz.com/news/solarwinds-serv-u-and-dameware-vulnerabilities-dis-4f915205</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/solarwinds-serv-u-and-dameware-vulnerabilities-dis-4f915205</guid>
+      <description><![CDATA[SolarWinds disclosed two vulnerabilities in Serv-U and Dameware, enabling privilege escalation and command injection. The Serv-U flaw (CVE-2026-123167) permits directory traversal for privilege gain, while Dameware (CVE-2026-28336) allows arbitrary command execution. Apply the latest patches or firmware updates immediately, and review the advisory links for detailed guidance to mitigate risk.]]></description>
+      <pubDate>Wed, 25 Nov 2026 15:23:14 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/solarwinds-security-advisory-av26-1206">Canadian Centre for Cyber Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Bot Detection Losing Battle, Privileged Access Must Equal</title>
+      <link>https://secubuzz.com/news/bot-detection-losing-battle-privileged-access-must-d4f20836</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bot-detection-losing-battle-privileged-access-must-d4f20836</guid>
+      <description><![CDATA[Bot detection has become a losing game as automated actors outpace traditional controls. The root cause is the rapid proliferation of sophisticated bots that mimic legitimate users, making privilege escalation indistinguishable from human activity. Security teams must enforce equal privileged access controls for humans and machines, adopting zero-trust and continuous monitoring to mitigate bot-driven threats.]]></description>
+      <pubDate>Wed, 25 Nov 2026 15:20:27 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/bot-world-just-living">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI Reduces Pentester Workload, Boosts Engagements</title>
+      <link>https://secubuzz.com/news/ai-reduces-pentester-workload-boosts-engagements-d7abd981</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-reduces-pentester-workload-boosts-engagements-d7abd981</guid>
+      <description><![CDATA[Pentesters spend a large portion of engagements on documentation and reporting, limiting test throughput. PentestPad shows AI can automate these peripheral tasks, enabling teams to handle more tests while keeping sensitive client data on their own infrastructure. AI workflow tools cut manual effort, improve consistency, and free pentesters for technical testing, yet demand secure data governance.]]></description>
+      <pubDate>Wed, 25 Nov 2026 15:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/more-pentests-without-more-pentesters-where-ai-safely-helps/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI-Driven Attacks Rise; Speed and Edge AI Offer Defense</title>
+      <link>https://secubuzz.com/news/ai-driven-attacks-rise-speed-and-edge-ai-offer-def-8de0c884</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-attacks-rise-speed-and-edge-ai-offer-def-8de0c884</guid>
+      <description><![CDATA[Unit 42 examines AI-powered cyberattacks, noting attackers use machine learning to accelerate reconnaissance and exploitation. The report stresses speed, edge AI, and baseline behavior modeling as essential for detecting and stopping these adaptive threats. Teams should implement real-time anomaly detection, edge analytics, and continuous baseline updates to counter AI-driven attacks while protecting data privacy.]]></description>
+      <pubDate>Wed, 25 Nov 2026 15:00:09 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/ai-threat-horizon/">Unit 42</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>InfraTrust Highlights Exploited Supply Chain Flaws in Network Appliances</title>
+      <link>https://secubuzz.com/news/infratrust-highlights-exploited-supply-chain-flaws-f86918ec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/infratrust-highlights-exploited-supply-chain-flaws-f86918ec</guid>
+      <description><![CDATA[InfraTrust's November report warns that most recent advisories involve exploited third-party software bundled into network appliances, not vendor code. These supply-chain flaws allow attackers to inject malicious code or gain unauthorized access, threatening device integrity and network security. Teams should audit appliance firmware, verify component provenance, and apply vendor patches or mitigations promptly.]]></description>
+      <pubDate>Wed, 25 Nov 2026 15:00:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Shufti Fraud Hub Reveals Links Among Legitimate Accounts</title>
+      <link>https://secubuzz.com/news/shufti-fraud-hub-reveals-links-among-legitimate-ac-5b444c73</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/shufti-fraud-hub-reveals-links-among-legitimate-ac-5b444c73</guid>
+      <description><![CDATA[Shufti launched its Fraud Hub, linking identity, device, biometric, and behavioral signals to detect suspicious verification attempts. The platform identifies coordinated fraud networks and monitors emerging risks across the user lifecycle, revealing links between accounts that seem legitimate. Teams should use Fraud Hub’s context-aware analytics to supplement individual checks, enabling proactive decisions before fraud escalates and lowering onboarding risk.]]></description>
+      <pubDate>Wed, 25 Nov 2026 14:45:00 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/25/shufti-fraud-hub/">Help Net Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>Flatpak Update Released for RHEL7 ELS</title>
@@ -375,87 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 10:09:06 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103485">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Anthropic Beta Release Detects Malicious AI Activity Securely</title>
-      <link>https://secubuzz.com/news/anthropic-beta-release-detects-malicious-ai-activi-def7b5ca</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-beta-release-detects-malicious-ai-activi-def7b5ca</guid>
-      <description><![CDATA[Anthropic launched a public beta of Enterprise Frontier Safeguards to help organizations detect harmful artificial intelligence activity. The system analyzes customer-controlled cloud conversations to flag suspicious behaviors while preserving zero data retention through customer-managed encryption keys. Enterprise security teams can implement the platform to monitor multi-interaction threat patterns without exposing sensitive internal data to external retention.]]></description>
-      <pubDate>Wed, 25 Nov 2026 09:20:14 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/25/anthropic-enterprise-frontier-safeguards-public-beta/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102933: Low: dhcp security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102933-low-dhcp-security-update-6d989a11</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102933-low-dhcp-security-update-6d989a11</guid>
-      <description><![CDATA[An update for dhcp is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 09:10:49 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102933">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hex.pm RCE Flaw Compromises Six Package Registry Servers</title>
-      <link>https://secubuzz.com/news/hex-pm-rce-flaw-compromises-six-package-registry-s-05bc54dc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hex-pm-rce-flaw-compromises-six-package-registry-s-05bc54dc</guid>
-      <description><![CDATA[An attacker ran OS commands on six Hex.pm servers by exploiting a CVSS 10.0 RCE flaw. The flaw, present since February 2016, allows unauthenticated remote code execution via crafted API requests, enabling full system compromise. Hex.pm applied a patched build within 15 minutes of the first request; administrators should ensure all servers run the latest release.]]></description>
-      <pubDate>Wed, 25 Nov 2026 09:06:59 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Idunno AntiCsrf Library RCE Exploited via CVE-2026-131914</title>
-      <link>https://secubuzz.com/news/idunno-anticsrf-library-rce-exploited-via-cve-2026-9368b221</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/idunno-anticsrf-library-rce-exploited-via-cve-2026-9368b221</guid>
-      <description><![CDATA[Attackers exploit CVE-2026-131914 in the defunct Idunno AntiCsrf library to achieve remote code execution. The flaw permits execution of arbitrary code through a single crafted web request, enabling full server compromise without authentication. Since the library is defunct, developers should remove Idunno dependencies and apply the vendor patch or migrate to a maintained CSRF solution.]]></description>
-      <pubDate>Wed, 25 Nov 2026 09:05:13 GMT</pubDate>
-      <source url="https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/">SecurityWeek</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102924: Important: gdm security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102924-important-gdm-security-bug-fix-an-d663037b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102924-important-gdm-security-bug-fix-an-d663037b</guid>
-      <description><![CDATA[An update for gdm is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 09:03:13 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102924">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:102930: Important: qt5-qtdeclarative security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-102930-important-qt5-qtdeclarative-secur-c0780108</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-102930-important-qt5-qtdeclarative-secur-c0780108</guid>
-      <description><![CDATA[An update for qt5-qtdeclarative is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Wed, 25 Nov 2026 09:03:02 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102930">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Reports Authentication Issues Post-November Updates</title>
-      <link>https://secubuzz.com/news/microsoft-reports-authentication-issues-post-novem-baf23a74</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-reports-authentication-issues-post-novem-baf23a74</guid>
-      <description><![CDATA[Microsoft customers may experience authentication failures after installing November security updates that fixed a high-severity RCE vulnerability. The updates alter authentication components, causing intermittent login errors for some users; the issue is unrelated to the RCE fix. Microsoft recommends applying the latest cumulative update and monitoring login problems while a hotfix is under investigation.]]></description>
-      <pubDate>Wed, 25 Nov 2026 09:02:57 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Thunderbird Update for Enterprise Linux 8.8</title>
-      <link>https://secubuzz.com/news/red-hat-issues-thunderbird-update-for-enterprise-l-dd235efe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-thunderbird-update-for-enterprise-l-dd235efe</guid>
-      <description><![CDATA[Red Hat released a security, bug fix, and enhancement update for Thunderbird on Red Hat Enterprise Linux 8.8. Red Hat Product Security rated the underlying security flaws with an Important impact severity rating based on CVSS scoring standards. Enterprise security teams utilizing SAP Solutions and Telecommunications Update Service streams should apply the newly issued software update.]]></description>
-      <pubDate>Wed, 25 Nov 2026 09:02:43 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:102922">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Police Shut Down 57 IPTV Services, Trace €26M Crypto</title>
-      <link>https://secubuzz.com/news/police-shut-down-57-iptv-services-trace-26m-crypto-42edb05e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/police-shut-down-57-iptv-services-trace-26m-crypto-42edb05e</guid>
-      <description><![CDATA[Police from 11 countries disrupted 57 IPTV services and identified 321 pirate sites during a five-day Europol operation in Seville. The operation traced over €26 million in crypto payments, revealing the financial backbone of the streaming network and anonymized wallet usage. No arrests announced; transaction analysis remains ongoing, underscoring the need for continued crypto flow monitoring to deter piracy.]]></description>
-      <pubDate>Wed, 25 Nov 2026 08:59:36 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/25/illegal-iptv-disrupted-europol-crypto/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
