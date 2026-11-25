@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 19:35:06 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 20:45:16 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-134070 - Improper input sanitization in the AWS Config remediation runbook AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3</title>
+      <link>https://secubuzz.com/news/cve-2026-134070-improper-input-sanitization-in-the-45dcbcad</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-134070-improper-input-sanitization-in-the-45dcbcad</guid>
+      <description><![CDATA[We identified CVE-2026-134070, where improper input validation in the AWS-managed AWS Systems Manager Automation runbook AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3 might allow an authenticated remote user who is permitted to run the runbook to set unintended configuration in the account's Regional Session Manager preferences document (SSM-SessionManagerRunShell) via a crafted S3KeyPrefix parameter value.]]></description>
+      <pubDate>Wed, 25 Nov 2026 19:41:20 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-203-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Italy, Switzerland Warn of AI-Powered Autonomous Cyberattacks</title>
+      <link>https://secubuzz.com/news/italy-switzerland-warn-of-ai-powered-autonomous-cy-ae3f11f0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/italy-switzerland-warn-of-ai-powered-autonomous-cy-ae3f11f0</guid>
+      <description><![CDATA[Italian and Swiss cybersecurity agencies issued a warning about autonomous cyberattacks driven by AI agents targeting critical infrastructure organizations. The advisory highlights the increasing capability of automated threat actors to launch coordinated attacks without human intervention. Security teams should monitor for anomalous activity, enforce strict access controls, and update AI detection systems to mitigate potential threats.]]></description>
+      <pubDate>Wed, 25 Nov 2026 19:39:31 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/">BleepingComputer</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Thanksgiving Thanks and Critiques from David</title>
       <link>https://secubuzz.com/news/thanksgiving-thanks-and-critiques-from-david-71beab41</link>
@@ -24,6 +42,15 @@
       <pubDate>Wed, 25 Nov 2026 18:52:26 GMT</pubDate>
       <source url="https://socket.dev/blog/socket-syntax-highlighting-theme">Socket.dev</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Ubuntu Discloses elfutils Readelf and Strip CVEs</title>
+      <link>https://secubuzz.com/news/ubuntu-discloses-elfutils-readelf-and-strip-cves-9cf5c27f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-discloses-elfutils-readelf-and-strip-cves-9cf5c27f</guid>
+      <description><![CDATA[Ubuntu reported two elfutils CVEs that affect readelf and strip when handling malformed DWARF data or empty sections. The flaws (CVE-2025-1352 and CVE-2025-1376) could crash the utilities or enable arbitrary code execution if an attacker tricks a user or automated system into processing crafted files. Ubuntu has issued patches; updating elfutils to the latest release will mitigate the vulnerabilities.]]></description>
+      <pubDate>Wed, 25 Nov 2026 18:52:08 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9200-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Ghostscript Vulnerability Updated on RHEL 9</title>
@@ -107,6 +134,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Five Holiday-Themed Attacks Target Users and Businesses</title>
+      <link>https://secubuzz.com/news/five-holiday-themed-attacks-target-users-and-busin-5ccf07cd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/five-holiday-themed-attacks-target-users-and-busin-5ccf07cd</guid>
+      <description><![CDATA[ANY.RUN researchers uncovered five holiday-themed attacks that used credential-phishing emails, unauthorized remote-access tools, and malicious scripts to target users and businesses. The attacks harvested credentials, installed remote-access backdoors, and executed scripts that could exfiltrate sensitive data, exposing endpoints to lateral movement. Teams should enforce MFA, scrutinize email attachments, and deploy endpoint detection to block unauthorized remote-access activity.]]></description>
+      <pubDate>Wed, 25 Nov 2026 16:42:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/beyond-holiday-scams-5-thankssgiving-and-black-friday-cyberattacks-targeting-users-and-businesses/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Task Management App Todoist Hacked, Attackers Breach Production Systems</title>
       <link>https://secubuzz.com/news/task-management-app-todoist-hacked-attackers-breac-869dcc71</link>
       <guid isPermaLink="true">https://secubuzz.com/news/task-management-app-todoist-hacked-attackers-breac-869dcc71</guid>
@@ -123,6 +159,24 @@
       <pubDate>Wed, 25 Nov 2026 16:13:40 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/">BleepingComputer</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Switzerland Reports First AI-Assisted Cyberattacks</title>
+      <link>https://secubuzz.com/news/switzerland-reports-first-ai-assisted-cyberattacks-a8957c99</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/switzerland-reports-first-ai-assisted-cyberattacks-a8957c99</guid>
+      <description><![CDATA[Switzerland’s NCSC confirmed the first AI-agent cyberattacks that breached IT systems of companies and critical infrastructure operators in two sectors. Attackers leveraged generative AI to automate reconnaissance, credential harvesting, and exploit delivery, enabling rapid compromise without human intervention. Security teams should monitor for anomalous AI-driven activity, enforce strict access controls, and apply timely patches to mitigate future incidents.]]></description>
+      <pubDate>Wed, 25 Nov 2026 16:02:38 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/switzerland-ai-agent-cyberattacks/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Ubuntu Reports Speex Oversize Input Vulnerability</title>
+      <link>https://secubuzz.com/news/ubuntu-reports-speex-oversize-input-vulnerability-7db7cf94</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-reports-speex-oversize-input-vulnerability-7db7cf94</guid>
+      <description><![CDATA[Ubuntu identified a Speex library flaw that mishandles oversized input when appending data to an external bit buffer. The defect could crash the decoder or allow an attacker to execute arbitrary code if a crafted file is processed. A patch has been released; users should update Speex to the latest version to eliminate the vulnerability.]]></description>
+      <pubDate>Wed, 25 Nov 2026 15:48:32 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9197-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Malicious NuGet Packages Target .NET Developers</title>
@@ -287,6 +341,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Adobe Releases Patches for Critical Experience Manager Flaws</title>
+      <link>https://secubuzz.com/news/adobe-releases-patches-for-critical-experience-man-d9f805d0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/adobe-releases-patches-for-critical-experience-man-d9f805d0</guid>
+      <description><![CDATA[Adobe released security updates on November 24, 2026, addressing critical flaws in Adobe Experience Manager and Adobe Campaign Classic. The vulnerabilities could enable attackers to execute arbitrary code, elevate privileges, or bypass security checks on affected servers. Adobe recommends applying the patches immediately; no workarounds are available, and users should verify installation status.]]></description>
+      <pubDate>Wed, 25 Nov 2026 14:28:30 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/critical-adobe-vulnerabilities/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Intent IDs Leak Into Victim Logs</title>
       <link>https://secubuzz.com/news/intent-ids-leak-into-victim-logs-47fc12d6</link>
       <guid isPermaLink="true">https://secubuzz.com/news/intent-ids-leak-into-victim-logs-47fc12d6</guid>
@@ -393,69 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 13:37:28 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/25/drupal-installer-rce-cve-2026-132165-exploited/">Help Net Security</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103494: Important: kernel security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103494-important-kernel-security-bug-fix-902e912e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103494-important-kernel-security-bug-fix-902e912e</guid>
-      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 13:31:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103494">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISO Matt Martin Discusses Budget-Free Security Program</title>
-      <link>https://secubuzz.com/news/ciso-matt-martin-discusses-budget-free-security-pr-5c5b28d7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ciso-matt-martin-discusses-budget-free-security-pr-5c5b28d7</guid>
-      <description><![CDATA[Matt Martin, CISO at Western Carolina University, outlines strategies for building a security program without a large budget. He emphasizes leveraging open-source tools, prioritizing risk-based controls, and fostering a security-aware culture to compensate for limited resources. The article offers actionable guidance for small institutions seeking to strengthen defenses while maintaining fiscal discipline.]]></description>
-      <pubDate>Wed, 25 Nov 2026 13:30:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/ground-truth-ciso-matt-martin-on-building-a-real-security-program-without-an-enterprise-budget/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ransomware Attack Disrupts Guadeloupe Hospital Operations</title>
-      <link>https://secubuzz.com/news/ransomware-attack-disrupts-guadeloupe-hospital-ope-026b05b4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-attack-disrupts-guadeloupe-hospital-ope-026b05b4</guid>
-      <description><![CDATA[A suspected ransomware attack disrupted the University Hospital of Guadeloupe’s systems, forcing doctors to postpone surgeries and suspend cancer treatments. The malware was delivered via a phishing vector, encrypting patient data and disabling critical medical software. Investigators urge immediate isolation of affected servers, restoration from backups, and application of vendor security updates to prevent recurrence.]]></description>
-      <pubDate>Wed, 25 Nov 2026 13:30:00 GMT</pubDate>
-      <source url="https://therecord.media/guadeloupe-ransomware-hospital-cyber">The Record</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103505: Important: rsync security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103505-important-rsync-security-bug-fix-c1c1f48c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103505-important-rsync-security-bug-fix-c1c1f48c</guid>
-      <description><![CDATA[An update for rsync is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 13:28:30 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103505">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103506: Moderate: glib2 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103506-moderate-glib2-security-update-4f673207</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103506-moderate-glib2-security-update-4f673207</guid>
-      <description><![CDATA[An update for glib2 is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 13:23:05 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103506">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103517: Important: ghostscript security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103517-important-ghostscript-security-up-a5ce88c0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103517-important-ghostscript-security-up-a5ce88c0</guid>
-      <description><![CDATA[An update for ghostscript is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 13:22:02 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103517">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103504: Important: libreoffice security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103504-important-libreoffice-security-up-f540383e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103504-important-libreoffice-security-up-f540383e</guid>
-      <description><![CDATA[An update for libreoffice is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Wed, 25 Nov 2026 13:22:01 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103504">Red Hat Security Advisories</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

@@ -11,6 +11,46 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-134070-improper-input-sanitization-in-the-45dcbcad",
+    "title": "CVE-2026-134070 - Improper input sanitization in the AWS Config remediation runbook AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3",
+    "summary": "We identified CVE-2026-134070, where improper input validation in the AWS-managed AWS Systems Manager Automation runbook AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3 might allow an authenticated remote user who is permitted to run the runbook to set unintended configuration in the account's Regional Session Manager preferences document (SSM-SessionManagerRunShell) via a crafted S3KeyPrefix parameter value.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-203-aws/",
+    "publishedAt": "2026-11-25T19:41:20.000Z",
+    "cves": [
+      "CVE-2026-134070"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-134070-improper-input-sanitization-in-the",
+      "article-45dcbcad",
+      "45dcbcad",
+      "cve-2026-134070-improper-input-sanitization-in-the-510fd7",
+      "cve-2026-134070-improper-input-sanitization-in-the-aws-confi"
+    ]
+  },
+  {
+    "slug": "italy-switzerland-warn-of-ai-powered-autonomous-cy-ae3f11f0",
+    "title": "Italy, Switzerland Warn of AI-Powered Autonomous Cyberattacks",
+    "summary": "Italian and Swiss cybersecurity agencies issued a warning about autonomous cyberattacks driven by AI agents targeting critical infrastructure organizations. The advisory highlights the increasing capability of automated threat actors to launch coordinated attacks without human intervention. Security teams should monitor for anomalous activity, enforce strict access controls, and update AI detection systems to mitigate potential threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+    "publishedAt": "2026-11-25T19:39:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "italy-switzerland-warn-of-ai-powered-autonomous-cy",
+      "article-ae3f11f0",
+      "ae3f11f0",
+      "italy-switzerland-warn-of-ai-powered-autonomous-cy-7462ef",
+      "italy-switzerland-warn-of-ai-powered-autonomous-cyberattacks"
+    ]
+  },
+  {
     "slug": "thanksgiving-thanks-and-critiques-from-david-71beab41",
     "title": "Thanksgiving Thanks and Critiques from David",
     "summary": "On November 25, 2026, David posted a Thanksgiving-themed note thanking the cybersecurity community and addressing threat actors. The brief message acknowledges community efforts, offers gratitude, and delivers a few pointed remarks toward malicious actors. No technical vulnerabilities or incidents are reported, making it a general commentary on community resilience today.",
@@ -44,6 +84,27 @@ export const news: NewsBrief[] = [
       "article-42ce8e5d",
       "42ce8e5d",
       "socket-calm-theme-launches-for-vs-code-vim-neovim-60b5db"
+    ]
+  },
+  {
+    "slug": "ubuntu-discloses-elfutils-readelf-and-strip-cves-9cf5c27f",
+    "title": "Ubuntu Discloses elfutils Readelf and Strip CVEs",
+    "summary": "Ubuntu reported two elfutils CVEs that affect readelf and strip when handling malformed DWARF data or empty sections. The flaws (CVE-2025-1352 and CVE-2025-1376) could crash the utilities or enable arbitrary code execution if an attacker tricks a user or automated system into processing crafted files. Ubuntu has issued patches; updating elfutils to the latest release will mitigate the vulnerabilities.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9200-1",
+    "publishedAt": "2026-11-25T18:52:08.000Z",
+    "cves": [
+      "CVE-2025-1352",
+      "CVE-2025-1376"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-discloses-elfutils-readelf-and-strip-cves",
+      "article-9cf5c27f",
+      "9cf5c27f",
+      "ubuntu-discloses-elfutils-readelf-and-strip-cves-7e6d8c"
     ]
   },
   {
@@ -213,6 +274,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "five-holiday-themed-attacks-target-users-and-busin-5ccf07cd",
+    "title": "Five Holiday-Themed Attacks Target Users and Businesses",
+    "summary": "ANY.RUN researchers uncovered five holiday-themed attacks that used credential-phishing emails, unauthorized remote-access tools, and malicious scripts to target users and businesses. The attacks harvested credentials, installed remote-access backdoors, and executed scripts that could exfiltrate sensitive data, exposing endpoints to lateral movement. Teams should enforce MFA, scrutinize email attachments, and deploy endpoint detection to block unauthorized remote-access activity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/beyond-holiday-scams-5-thankssgiving-and-black-friday-cyberattacks-targeting-users-and-businesses/",
+    "publishedAt": "2026-11-25T16:42:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "five-holiday-themed-attacks-target-users-and-busin",
+      "article-5ccf07cd",
+      "5ccf07cd",
+      "five-holiday-themed-attacks-target-users-and-busin-2e2bc7",
+      "five-holiday-themed-attacks-target-users-and-businesses"
+    ]
+  },
+  {
     "slug": "task-management-app-todoist-hacked-attackers-breac-869dcc71",
     "title": "Task Management App Todoist Hacked, Attackers Breach Production Systems",
     "summary": "Task management app Todoist said an attacker breached its production systems on November 23, 2026, and downloaded account records for about 6% of its users. The attacker also obtained integration tokens and accessed some data from connected Outlook mailboxes.",
@@ -250,6 +330,42 @@ export const news: NewsBrief[] = [
       "91051535",
       "cisa-alerts-on-critical-danfoss-controller-vulnera-1a00d0",
       "cisa-alerts-on-critical-danfoss-controller-vulnerability"
+    ]
+  },
+  {
+    "slug": "switzerland-reports-first-ai-assisted-cyberattacks-a8957c99",
+    "title": "Switzerland Reports First AI-Assisted Cyberattacks",
+    "summary": "Switzerland’s NCSC confirmed the first AI-agent cyberattacks that breached IT systems of companies and critical infrastructure operators in two sectors. Attackers leveraged generative AI to automate reconnaissance, credential harvesting, and exploit delivery, enabling rapid compromise without human intervention. Security teams should monitor for anomalous AI-driven activity, enforce strict access controls, and apply timely patches to mitigate future incidents.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/switzerland-ai-agent-cyberattacks/",
+    "publishedAt": "2026-11-25T16:02:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "switzerland-reports-first-ai-assisted-cyberattacks",
+      "article-a8957c99",
+      "a8957c99",
+      "switzerland-reports-first-ai-assisted-cyberattacks-5115ee"
+    ]
+  },
+  {
+    "slug": "ubuntu-reports-speex-oversize-input-vulnerability-7db7cf94",
+    "title": "Ubuntu Reports Speex Oversize Input Vulnerability",
+    "summary": "Ubuntu identified a Speex library flaw that mishandles oversized input when appending data to an external bit buffer. The defect could crash the decoder or allow an attacker to execute arbitrary code if a crafted file is processed. A patch has been released; users should update Speex to the latest version to eliminate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9197-1",
+    "publishedAt": "2026-11-25T15:48:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-reports-speex-oversize-input-vulnerability",
+      "article-7db7cf94",
+      "7db7cf94",
+      "ubuntu-reports-speex-oversize-input-vulnerability-7e7772"
     ]
   },
   {
@@ -592,6 +708,25 @@ export const news: NewsBrief[] = [
       "article-ec4afeaa",
       "ec4afeaa",
       "rhsa-2026-103502-important-raptor2-security-update-2ee1dd"
+    ]
+  },
+  {
+    "slug": "adobe-releases-patches-for-critical-experience-man-d9f805d0",
+    "title": "Adobe Releases Patches for Critical Experience Manager Flaws",
+    "summary": "Adobe released security updates on November 24, 2026, addressing critical flaws in Adobe Experience Manager and Adobe Campaign Classic. The vulnerabilities could enable attackers to execute arbitrary code, elevate privileges, or bypass security checks on affected servers. Adobe recommends applying the patches immediately; no workarounds are available, and users should verify installation status.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-adobe-vulnerabilities/",
+    "publishedAt": "2026-11-25T14:28:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "adobe-releases-patches-for-critical-experience-man",
+      "article-d9f805d0",
+      "d9f805d0",
+      "adobe-releases-patches-for-critical-experience-man-74f8df",
+      "adobe-releases-patches-for-critical-experience-manager-flaws"
     ]
   },
   {
@@ -2252,6 +2387,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "pcre-jit-exploit-may-leak-sensitive-data-0aaea4d3",
+    "title": "PCRE JIT Exploit May Leak Sensitive Data",
+    "summary": "Yunho Kim identified a PCRE memory flaw that lets JIT-compiled regexes expose sensitive data in applications. The bug stems from missing bounds checks during JIT compilation, potentially leaking stack or heap contents. Apply the latest PCRE update or disable JIT as a workaround; vendor patches are available for production systems.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9193-1",
+    "publishedAt": "2026-11-24T21:11:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pcre-jit-exploit-may-leak-sensitive-data",
+      "article-0aaea4d3",
+      "0aaea4d3",
+      "pcre-jit-exploit-may-leak-sensitive-data-7e7781"
+    ]
+  },
+  {
     "slug": "cifs-utils-update-addresses-security-issues-in-rhe-f6105dd0",
     "title": "cifs-utils Update Addresses Security Issues in RHEL9",
     "summary": "Red Hat released a security update for cifs-utils on RHEL 9, fixing vulnerabilities that could enable privilege escalation or data exposure. The advisory cites multiple CVE identifiers with CVSS scores between 7.0 and 8.5, indicating high-severity flaws in SMB client handling. Administrators should apply RHSA-2026:102952 immediately and confirm cifs-utils is at least version 6.0.0-3.el9.",
@@ -2997,6 +3150,28 @@ export const news: NewsBrief[] = [
       "dbe30849",
       "volant-manticore-deploys-ipfs-based-kuboshell-back-451f5e",
       "volant-manticore-deploys-ipfs-based-kuboshell-backdoor"
+    ]
+  },
+  {
+    "slug": "ubuntu-fixes-libheif-dos-vulnerabilities-00bda077",
+    "title": "Ubuntu Fixes libheif DoS Vulnerabilities",
+    "summary": "Ubuntu released USN-8846-2 to patch libheif denial-of-service flaws in Ubuntu 22.04, 24.04, and 26.04 LTS. The bugs, CVE-2026-84384, CVE-2026-84446, and CVE-2026-84447, stem from improper handling of compressed metadata, HEIF sequence data, and image references, enabling remote attackers to trigger service crashes. Apply the update from official repositories immediately; the patch corrects parsing logic to prevent DoS.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8846-2",
+    "publishedAt": "2026-11-24T16:53:30.000Z",
+    "cves": [
+      "CVE-2026-84384",
+      "CVE-2026-84446",
+      "CVE-2026-84447"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-fixes-libheif-dos-vulnerabilities",
+      "article-00bda077",
+      "00bda077",
+      "ubuntu-fixes-libheif-dos-vulnerabilities-7fcbf0"
     ]
   },
   {
@@ -9239,6 +9414,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "human-in-the-loop-ai-explained-13e0ddae",
+    "title": "Human-in-the-Loop AI Explained",
+    "summary": "Human-in-the-Loop AI integrates human oversight into machine learning workflows, ensuring critical decision points involve human expertise. The approach mitigates autonomous model drift and reduces erroneous outputs by inserting human validation during training, inference, or action stages. Adoption of HITL frameworks requires clear governance, role definition, and continuous monitoring to maintain model integrity and compliance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/glossary/human-in-the-loop-hitl/",
+    "publishedAt": "2026-11-23T13:00:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "human-in-the-loop-ai-explained",
+      "article-13e0ddae",
+      "13e0ddae",
+      "human-in-the-loop-ai-explained-77087f"
+    ]
+  },
+  {
     "slug": "cleverbridge-reports-credit-card-data-theft-c5388145",
     "title": "Cleverbridge Reports Credit Card Data Theft",
     "summary": "Cleverbridge confirmed a breach on November 4, 2026, during which attackers accessed stored credit card and CVV numbers from its e-commerce platform. The incident involved unauthorized activity detected by the platform, but the extent of affected clients and customer data remains unspecified. Cleverbridge urged affected customers to monitor accounts, change passwords, and contact payment processors for further protection.",
@@ -9351,176 +9544,6 @@ export const news: NewsBrief[] = [
       "article-7b45dcf3",
       "7b45dcf3",
       "crowdstrike-agrees-to-acquire-zscaler-for-43-9b-1750db"
-    ]
-  },
-  {
-    "slug": "screenconnect-cve-2026-84869-enables-msp-technicia-884b5434",
-    "title": "ScreenConnect CVE-2026-84869 Enables MSP Technician Hijack",
-    "summary": "Threat actors exploited a patched flaw in ConnectWise ScreenConnect, identified as CVE-2026-84869, to hijack managed service provider technician workstations. The CVSS 9.9 score marks it as a critical unauthenticated RCE that lets a guest transfer and execute malicious payloads. ConnectWise issued an emergency patch; administrators must apply it immediately and limit guest access to prevent exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
-    "publishedAt": "2026-11-23T12:41:04.000Z",
-    "cves": [
-      "CVE-2026-84869"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "screenconnect-cve-2026-84869-enables-msp-technicia",
-      "article-884b5434",
-      "884b5434",
-      "screenconnect-cve-2026-84869-enables-msp-technicia-1e79ee",
-      "screenconnect-cve-2026-84869-enables-msp-technician-hijack"
-    ]
-  },
-  {
-    "slug": "n-able-exposes-cve-2026-134624-ssrf-in-mail-assure-2650ac11",
-    "title": "N-Able Exposes CVE-2026-134624 SSRF in Mail Assure",
-    "summary": "N-Able disclosed a critical SSRF flaw, CVE-2026-134624, discovered during an investigation of its Mail Assure and SpamExperts Hosted Cloud breach. The vulnerability permits a high-privilege API user to open connections to arbitrary internal systems, enabling potential lateral movement. N-Able recommends applying the vendor patch immediately and restricting API access to mitigate exploitation risks.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
-    "publishedAt": "2026-11-23T12:28:09.000Z",
-    "cves": [
-      "CVE-2026-134624"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-exposes-cve-2026-134624-ssrf-in-mail-assure",
-      "article-2650ac11",
-      "2650ac11",
-      "n-able-exposes-cve-2026-134624-ssrf-in-mail-assure-530267"
-    ]
-  },
-  {
-    "slug": "i4c-warns-against-sharing-confidential-data-on-wha-7d7235d8",
-    "title": "I4C Warns Against Sharing Confidential Data on WhatsApp Web",
-    "summary": "The Indian Cyber Crime Coordination Center cautioned users against sharing confidential data on WhatsApp Web, citing risks of session hijacking. The advisory notes that an attacker with access to a signed-in browser session can read messages and view contacts, compromising privacy. Users should log out manually after each session and avoid sharing sensitive information on the platform to mitigate exposure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/whatsapp-web-confidential-data/",
-    "publishedAt": "2026-11-23T12:19:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "i4c-warns-against-sharing-confidential-data-on-wha",
-      "article-7d7235d8",
-      "7d7235d8",
-      "i4c-warns-against-sharing-confidential-data-on-wha-23ca8e",
-      "i4c-warns-against-sharing-confidential-data-on-whatsapp-web"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-libxrender-security-update-47c1eed1",
-    "title": "Red Hat Issues libXrender Security Update",
-    "summary": "Red Hat released an important security update for libXrender on RHEL 7 Extended Lifecycle Support. The update addresses one or more vulnerabilities with CVSS scores available via linked CVE references, though specific IDs are not listed. Apply the libXrender update immediately, promptly, and follow Red Hat advisories for installation guidance.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102282",
-    "publishedAt": "2026-11-23T12:16:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-libxrender-security-update",
-      "article-47c1eed1",
-      "47c1eed1",
-      "red-hat-issues-libxrender-security-update-2ee15f"
-    ]
-  },
-  {
-    "slug": "dragos-finds-undetected-intrusions-at-ai-providers-6ff8354c",
-    "title": "Dragos Finds Undetected Intrusions at AI Providers",
-    "summary": "Dragos discovered undetected intrusions at three AI inference providers that siphoned nearly two million prompts from AI services. The attackers exploited weaknesses in prompt handling and authentication, enabling data exfiltration without triggering existing monitoring systems. Security teams should review prompt validation, strengthen access controls, and deploy anomaly detection to prevent future theft.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/",
-    "publishedAt": "2026-11-23T12:16:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "dragos-finds-undetected-intrusions-at-ai-providers",
-      "article-6ff8354c",
-      "6ff8354c",
-      "dragos-finds-undetected-intrusions-at-ai-providers-4971dd"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-librabbitmq-security-update-29d2cee6",
-    "title": "Red Hat Issues librabbitmq Security Update",
-    "summary": "Red Hat released an important security update for librabbitmq on RHEL 10. The update mitigates vulnerabilities with CVSS scores available via linked CVE references, though specific IDs are not listed, and it applies to all affected librabbitmq packages. Install the librabbitmq update promptly and consult Red Hat advisories for detailed guidance.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102283",
-    "publishedAt": "2026-11-23T12:13:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-librabbitmq-security-update",
-      "article-29d2cee6",
-      "29d2cee6",
-      "red-hat-issues-librabbitmq-security-update-2ee15f"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-libxrender-security-update-89fe55ea",
-    "title": "Red Hat Releases libXrender Security Update",
-    "summary": "Red Hat released a security update for libXrender on Enterprise Linux 8.8, addressing multiple vulnerabilities rated as Important. The update includes patches for CVEs referenced in the advisory, each with a CVSS base score that informs the severity. Administrators should apply the update promptly and verify that libXrender is at the latest patched version to maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102281",
-    "publishedAt": "2026-11-23T12:12:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-libxrender-security-update",
-      "article-89fe55ea",
-      "89fe55ea",
-      "red-hat-releases-libxrender-security-update-2ee15f"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102288-important-red-hat-amq-broker-7-14-07642452",
-    "title": "RHSA-2026:102288: Important: Red Hat AMQ Broker 7.14.2 release and security update",
-    "summary": "Red Hat AMQ Broker 7.14.2 is now available from the Red Hat Customer Portal. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102288",
-    "publishedAt": "2026-11-23T12:11:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102288-important-red-hat-amq-broker-7-14",
-      "article-07642452",
-      "07642452",
-      "rhsa-2026-102288-important-red-hat-amq-broker-7-14-2ee15f",
-      "rhsa-2026-102288-important-red-hat-amq-broker-7-14-2-release"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-libxrender-security-update-for-rh-eb9e39b2",
-    "title": "Red Hat Releases libXrender Security Update for RHEL 8.6",
-    "summary": "Red Hat released a libXrender security update for RHEL 8.6 Advanced Mission Critical and Extended Update Support, fixing multiple vulnerabilities. The vulnerabilities have CVSS base scores linked via CVE references, indicating significant risk if unpatched. Administrators should apply the update promptly to mitigate the identified security issues across all affected systems.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102280",
-    "publishedAt": "2026-11-23T12:08:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-libxrender-security-update-for-rh",
-      "article-eb9e39b2",
-      "eb9e39b2",
-      "red-hat-releases-libxrender-security-update-for-rh-2ee15f",
-      "red-hat-releases-libxrender-security-update-for-rhel-8-6"
     ]
   }
 ];

@@ -27,6 +27,312 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-133469",
+    "slug": "cve-2026-133469",
+    "vendor": "Vates",
+    "product": "Xen Orchestra",
+    "name": "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
+    "dateAdded": "2026-11-25",
+    "dueDate": "2026-11-28",
+    "severity": "High",
+    "cwe": "CWE-287, CWE-1287",
+    "ransomware": false,
+    "description": "Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via a specially crafted authentication token containing an empty JSON object.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-133469"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2025-41450",
+    "slug": "cve-2025-41450",
+    "vendor": "Danfoss",
+    "product": "AK-SM 800A Series",
+    "name": "Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
+    "dateAdded": "2026-11-25",
+    "dueDate": "2026-12-09",
+    "severity": "High",
+    "cwe": "CWE-305",
+    "ransomware": false,
+    "description": "Danfoss AK-SM 800A Series contains an improper authentication vulnerability that could allow an attacker to generate a web report exposing sensitive information, including internal IP addresses, usernames, and store names.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-41450"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2023-25914",
+    "slug": "cve-2023-25914",
+    "vendor": "Danfoss",
+    "product": "AK-SM 800A Series",
+    "name": "Danfoss AK-SM 800A Series Path Traversal Vulnerability",
+    "dateAdded": "2026-11-25",
+    "dueDate": "2026-11-28",
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "Danfoss AK-SM 800A Series contains a path traversal vulnerability that could allow an attacker to access and read underlying server system files via the XML interface.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25914"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-25914"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2023-25915",
+    "slug": "cve-2023-25915",
+    "vendor": "Danfoss",
+    "product": "AK-SM 800A Series",
+    "name": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+    "dateAdded": "2026-11-25",
+    "dueDate": "2026-11-28",
+    "severity": "High",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "Danfoss AK-SM 800A Series contains an improper input validation vulnerability that could allow a remote attacker to run arbitrary commands on the affected system.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-25915"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-133324",
+    "slug": "cve-2026-133324",
+    "vendor": "Mitel",
+    "product": "MiCollab",
+    "name": "Mitel MiCollab Not Failing Securely Vulnerability",
+    "dateAdded": "2026-11-25",
+    "dueDate": "2026-11-28",
+    "severity": "High",
+    "cwe": "CWE-636",
+    "ransomware": false,
+    "description": "Mitel MiCollab contains a not failing securely vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to bypass authentication controls and perform unauthorized actions.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-133324"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-133275",
+    "slug": "cve-2026-133275",
+    "vendor": "Mitel",
+    "product": "MiCollab",
+    "name": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+    "dateAdded": "2026-11-25",
+    "dueDate": "2026-11-28",
+    "severity": "High",
+    "cwe": "CWE-434",
+    "ransomware": false,
+    "description": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could allow an unauthenticated attacker to upload arbitrary files.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-133275"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-133311",
+    "slug": "cve-2026-133311",
+    "vendor": "Mitel",
+    "product": "MiCollab",
+    "name": "Mitel MiCollab Weak Authentication Vulnerability",
+    "dateAdded": "2026-11-25",
+    "dueDate": "2026-12-09",
+    "severity": "High",
+    "cwe": "CWE-1390",
+    "ransomware": false,
+    "description": "Mitel MiCollab contains a weak authentication vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to access sensitive information using a specific system-generated random identifier or pre-staged content.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133311"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-133311"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-133303",
+    "slug": "cve-2026-133303",
+    "vendor": "Mitel",
+    "product": "MiCollab",
+    "name": "Mitel MiCollab XML Injection Vulnerability",
+    "dateAdded": "2026-11-25",
+    "dueDate": "2026-11-28",
+    "severity": "High",
+    "cwe": "CWE-91",
+    "ransomware": false,
+    "description": "Mitel MiCollab contains an XML injection vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary commands using pre-staged malicious content.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133303"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-133303"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-133323",
+    "slug": "cve-2026-133323",
+    "vendor": "Mitel",
+    "product": "MiCollab",
+    "name": "Mitel MiCollab OS Command Injection Vulnerability",
+    "dateAdded": "2026-11-25",
+    "dueDate": "2026-11-28",
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "Mitel MiCollab contains an improper neutralization of special elements used in an OS command (OS command injection) vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary system commands.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-133323"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-68539",
+    "cveID": "CVE-2026-68539",
+    "slug": "cve-2026-68539",
+    "vendor": "Rust (Cargo)",
+    "product": "fulgur",
+    "name": "fulgur allows Unbounded string-set value accumulation causes memory/CPU exhaustion (denial of service)",
+    "dateAdded": "2026-11-25",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "fulgur converts untrusted HTML/CSS into PDF, commonly on a server that processes input supplied by many tenants. In versions from 0.4.4 up to (but not including) the patched release, the CSS string-set named-string values resolved from a document were accumulated per element with no memory budget, letting a small crafted document amplify into large retained memory (and the CPU to copy it) — a...",
+    "requiredAction": "Upgrade fulgur to version 0.28.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vw2v-g4x7-xcqg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68539"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-65971",
+    "cveID": "CVE-2026-65971",
+    "slug": "cve-2026-65971",
+    "vendor": "Composer",
+    "product": "power-components/livewire-powergrid",
+    "name": "livewire-powergrid: SQL injection via sortDirection in naturalSort queries",
+    "dateAdded": "2026-11-25",
+    "dueDate": "",
+    "cvss": 7.6,
+    "severity": "High",
+    "cwe": "CWE-89",
+    "ransomware": false,
+    "description": "The public Livewire property sortDirection is interpolated verbatim into a raw SQL ORDER BY clause and is not restricted to asc/desc, allowing arbitrary SQL injection through POST /livewire/update.",
+    "requiredAction": "Upgrade power-components/livewire-powergrid to version 6.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7fgc-3h6c-698r"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65971"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-65973",
+    "cveID": "CVE-2026-65973",
+    "slug": "cve-2026-65973",
+    "vendor": "Composer",
+    "product": "petebishwhip/laradocs",
+    "name": "laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR",
+    "dateAdded": "2026-11-25",
+    "dueDate": "",
+    "cvss": 6.4,
+    "severity": "Medium",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "Local command injection (CWE-78) in server-side KaTeX rendering via an unescaped Node.js binary path in a proc_open() command string.",
+    "requiredAction": "Upgrade petebishwhip/laradocs to version 1.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h746-qpxh-ph7g"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65973"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-64670",
     "cveID": "CVE-2026-64670",
     "slug": "cve-2026-64670",
@@ -548,33 +854,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63402"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-133469",
-    "cveID": "CVE-2026-133469",
-    "slug": "cve-2026-133469",
-    "vendor": "npm",
-    "product": "xo-server",
-    "name": "Xen Orchestra: Empty-object login token",
-    "dateAdded": "2026-11-23",
-    "dueDate": "",
-    "cvss": 9.8,
-    "severity": "Critical",
-    "cwe": "CWE-287",
-    "ransomware": false,
-    "description": "REST cookie parsing turns authenticationToken=j:%7B%7D into {}. REST authentication passes that object to the XO token provider without requiring a string. The token collection treats {} as an unfiltered lookup and returns its first token; the provider authenticates as that token's owner if it is unexpired.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2r3w-c2vx-fv5g"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469"
       }
     ],
     "source": "GITHUB"
@@ -1512,87 +1791,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69261"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-69260",
-    "cveID": "CVE-2026-69260",
-    "slug": "cve-2026-69260",
-    "vendor": "Go",
-    "product": "git-lfs · git-lfs",
-    "name": "Git LFS may attempt arbitrary remote commands via crafted SSH URLs",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 7.6,
-    "severity": "High",
-    "cwe": "CWE-78",
-    "ransomware": false,
-    "description": "When Git LFS makes object transfer or authentication requests to a remote host via SSH, it passes the path component of the remote's SSH URL as part of a command to be executed, but does not properly format the URL's path component as a single argument.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-w3f2-pr6x-wwjc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69260"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-103035",
-    "cveID": "CVE-2026-103035",
-    "slug": "cve-2026-103035",
-    "vendor": "Composer",
-    "product": "nilsteampassnet/TeamPass",
-    "name": "TeamPass folder re-parenting authorization bypass",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 8.3,
-    "severity": "High",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "Missing authorization in the update_folder action: any authenticated non-read-only user can rename, re-parent and convert to personal any folder in the instance, moving another team's credential subtree into their own personal space and removing it from the organization. Confirmed at HEAD 2f271cdd (3.2.1.1), and present at 3.1.3.1 and 3.1.7.6.",
-    "requiredAction": "Upgrade nilsteampassnet/TeamPass to version 3.2.2.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-66q9-mxf2-xqw6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103035"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-104199",
-    "cveID": "CVE-2026-104199",
-    "slug": "cve-2026-104199",
-    "vendor": "Pip",
-    "product": "amqtt",
-    "name": "aMQTT: Inefficient Regular Expression Complexity and Uncontrolled Resource Consumption and Improper Input Validation",
-    "dateAdded": "2026-11-20",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "amqtt is vulnerable to a remote denial of service caused by improper MQTT topic-filter validation combined with catastrophic regular-expression backtracking. A single client can freeze the entire broker by sending one specially crafted SUBSCRIBE packet followed by one PUBLISH packet. The vulnerability is caused by two defects: 1.",
-    "requiredAction": "Upgrade amqtt to version 0.11.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2hjf-7455-w946"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104199"
       }
     ],
     "source": "GITHUB"
