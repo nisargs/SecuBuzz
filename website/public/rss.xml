@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 10:45:59 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 11:47:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Bots exploited leaked AWS key from Docker image in under 8 seconds</title>
+      <link>https://secubuzz.com/news/bots-exploited-leaked-aws-key-from-docker-image-in-6d0c0177</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bots-exploited-leaked-aws-key-from-docker-image-in-6d0c0177</guid>
+      <description><![CDATA[A cloud access key left inside a newly published Docker image can be found and used by bots in less than eight seconds, Billy Tsouvalas and Nick Nikiforakis of Stony Brook University discovered after planting 300 decoy images on public container registries.]]></description>
+      <pubDate>Wed, 25 Nov 2026 11:22:32 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/25/docker-aws-key-exposure-bots/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>OpenAI-Linked Swarm Activity Traceable via Public Records</title>
+      <link>https://secubuzz.com/news/openai-linked-swarm-activity-traceable-via-public-4e4fb2f5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-linked-swarm-activity-traceable-via-public-4e4fb2f5</guid>
+      <description><![CDATA[OpenAI-linked swarm activity observed in 2026 is fully traceable through public records, according to a Cisco Talos blog. The analysis compares the swarm’s tradecraft to early signals from current agentic attack activity, highlighting patterns in data exfiltration, command-and-control, and persistence. Security teams can use the documented tradecraft indicators to refine detection rules and improve attribution of future agentic attacks.]]></description>
+      <pubDate>Wed, 25 Nov 2026 11:00:00 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/the-great-escape-tradecraft-insights-from-an-agentic-swarm/">Cisco Talos</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical PHP Update for RHEL 9.8</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-php-update-for-rhel-9-8-10591740</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-php-update-for-rhel-9-8-10591740</guid>
+      <description><![CDATA[Red Hat released a critical PHP security update for RHEL 9.8 EUS, addressing multiple high-severity flaws. The patch carries a CVSS base score indicating critical impact, and each vulnerability is referenced by a CVE identifier in the advisory’s references. Security teams should apply the patch immediately to mitigate exploitation of the PHP flaws.]]></description>
+      <pubDate>Wed, 25 Nov 2026 10:57:32 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103492">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Drupal RCE Flaw Exploited to Hijack Sites</title>
       <link>https://secubuzz.com/news/drupal-rce-flaw-exploited-to-hijack-sites-935522ec</link>
@@ -15,6 +42,15 @@
       <pubDate>Wed, 25 Nov 2026 10:10:20 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Anthropic Beta Release Detects Malicious AI Activity Securely</title>
+      <link>https://secubuzz.com/news/anthropic-beta-release-detects-malicious-ai-activi-def7b5ca</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-beta-release-detects-malicious-ai-activi-def7b5ca</guid>
+      <description><![CDATA[Anthropic launched a public beta of Enterprise Frontier Safeguards to help organizations detect harmful artificial intelligence activity. The system analyzes customer-controlled cloud conversations to flag suspicious behaviors while preserving zero data retention through customer-managed encryption keys. Enterprise security teams can implement the platform to monitor multi-interaction threat patterns without exposing sensitive internal data to external retention.]]></description>
+      <pubDate>Wed, 25 Nov 2026 09:20:14 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/25/anthropic-enterprise-frontier-safeguards-public-beta/">Help Net Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>Hex.pm RCE Flaw Compromises Six Package Registry Servers</title>
@@ -44,6 +80,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Red Hat Issues Thunderbird Update for Enterprise Linux 8.8</title>
+      <link>https://secubuzz.com/news/red-hat-issues-thunderbird-update-for-enterprise-l-dd235efe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-thunderbird-update-for-enterprise-l-dd235efe</guid>
+      <description><![CDATA[Red Hat released a security, bug fix, and enhancement update for Thunderbird on Red Hat Enterprise Linux 8.8. Red Hat Product Security rated the underlying security flaws with an Important impact severity rating based on CVSS scoring standards. Enterprise security teams utilizing SAP Solutions and Telecommunications Update Service streams should apply the newly issued software update.]]></description>
+      <pubDate>Wed, 25 Nov 2026 09:02:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:102922">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Police Shut Down 57 IPTV Services, Trace €26M Crypto</title>
       <link>https://secubuzz.com/news/police-shut-down-57-iptv-services-trace-26m-crypto-42edb05e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/police-shut-down-57-iptv-services-trace-26m-crypto-42edb05e</guid>
@@ -51,6 +96,15 @@
       <pubDate>Wed, 25 Nov 2026 08:59:36 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/25/illegal-iptv-disrupted-europol-crypto/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:103484: Important: raptor2 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103484-important-raptor2-security-update-bdf8ad8a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103484-important-raptor2-security-update-bdf8ad8a</guid>
+      <description><![CDATA[An update for raptor2 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 25 Nov 2026 08:46:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103484">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Palo Alto Releases Patch for Fragnesia Rooting Flaw</title>
@@ -402,60 +456,6 @@
       <pubDate>Tue, 24 Nov 2026 19:53:55 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103378">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Important qt6-qtdeclarative Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-important-qt6-qtdeclarative-updat-30fbc220</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-important-qt6-qtdeclarative-updat-30fbc220</guid>
-      <description><![CDATA[Red Hat has issued an important security update for the qt6-qtdeclarative package on RHEL 10.0 Extended Update Support. The update addresses multiple vulnerabilities, each referenced by a CVE identifier, and carries a CVSS base score that classifies them as high-severity. Administrators should apply the update immediately to ensure protection against the identified security weaknesses.]]></description>
-      <pubDate>Tue, 24 Nov 2026 19:49:20 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103375">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues curl Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-curl-security-update-a31d5225</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-curl-security-update-a31d5225</guid>
-      <description><![CDATA[Red Hat released a curl security update for RHEL 9.2 Update Services. The update addresses multiple vulnerabilities rated Important by Red Hat, with CVSS scores available via CVE links, indicating potential remote code execution or privilege escalation risks. Administrators should apply the latest curl package from the RHEL 9.2 Update Services repository to mitigate the identified weaknesses.]]></description>
-      <pubDate>Tue, 24 Nov 2026 19:37:32 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103305">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>California Privacy Agency Director Kemp Resigns After Two Years</title>
-      <link>https://secubuzz.com/news/california-privacy-agency-director-kemp-resigns-af-bdd646fe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/california-privacy-agency-director-kemp-resigns-af-bdd646fe</guid>
-      <description><![CDATA[California Privacy Protection Agency director Charles Kemp announced his departure after a two-year tenure. His exit follows the launch of the agency’s first-in-the-nation platform that enables consumers to opt out of data sharing. The agency will continue to enforce privacy regulations and support consumer data rights under new effective leadership.]]></description>
-      <pubDate>Tue, 24 Nov 2026 19:30:00 GMT</pubDate>
-      <source url="https://therecord.media/california-privacy-agency-kemp">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical PHP 7.4 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-php-7-4-security-update-da566a77</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-php-7-4-security-update-da566a77</guid>
-      <description><![CDATA[Red Hat released a critical security update for the php:7.4 module on RHEL 8.4 Advanced Mission Critical Update Support and RHEL 8.4 Extended Update Support. The patch addresses multiple high-risk vulnerabilities; Red Hat Product Security rated the impact as Critical, though specific CVE identifiers are not listed. Apply the update immediately to prevent exploitation of the affected PHP 7.4 code.]]></description>
-      <pubDate>Tue, 24 Nov 2026 19:28:22 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103276">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CVE-2026-135614 - Sensitive data redaction bypass in the troubleshooting tool in Amazon ECS MCP Server</title>
-      <link>https://secubuzz.com/news/cve-2026-135614-sensitive-data-redaction-bypass-in-c7149bd2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-135614-sensitive-data-redaction-bypass-in-c7149bd2</guid>
-      <description><![CDATA[Bulletin ID: 2026-200-AWS Publication Date: 11/24/2026 11:00 AM PST Description: Amazon ECS MCP Server is an open-source Model Context Protocol server that lets AI agents and assistants manage and troubleshoot Amazon ECS workloads using the operator's AWS credentials. We identified CVE-2026-135614, an issue in the troubleshooting tool of the Amazon ECS MCP Server (awslabs.ecs-mcp-server) before 0.1.36.]]></description>
-      <pubDate>Tue, 24 Nov 2026 19:27:19 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-200-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>CVE-2026-135414 - Server-side request forgery in snapshot repository registration in Amazon OpenSearch Service</title>
-      <link>https://secubuzz.com/news/cve-2026-135414-server-side-request-forgery-in-sna-3f6f69aa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-135414-server-side-request-forgery-in-sna-3f6f69aa</guid>
-      <description><![CDATA[Bulletin ID: 2026-201-AWS Publication Date: 11/24/2026 11:15 AM PST Description: Amazon OpenSearch Service is a managed service for deploying, operating, and scaling OpenSearch clusters in the AWS Cloud. We identified CVE-2026-135414, an issue in snapshot repository registration in Amazon OpenSearch Service.]]></description>
-      <pubDate>Tue, 24 Nov 2026 19:27:19 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-201-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

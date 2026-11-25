@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "bots-exploited-leaked-aws-key-from-docker-image-in-6d0c0177",
+    "title": "Bots exploited leaked AWS key from Docker image in under 8 seconds",
+    "summary": "A cloud access key left inside a newly published Docker image can be found and used by bots in less than eight seconds, Billy Tsouvalas and Nick Nikiforakis of Stony Brook University discovered after planting 300 decoy images on public container registries.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/25/docker-aws-key-exposure-bots/",
+    "publishedAt": "2026-11-25T11:22:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bots-exploited-leaked-aws-key-from-docker-image-in",
+      "article-6d0c0177",
+      "6d0c0177",
+      "bots-exploited-leaked-aws-key-from-docker-image-in-180aa5",
+      "bots-exploited-leaked-aws-key-from-docker-image-in-under-8-s"
+    ]
+  },
+  {
+    "slug": "openai-linked-swarm-activity-traceable-via-public-4e4fb2f5",
+    "title": "OpenAI-Linked Swarm Activity Traceable via Public Records",
+    "summary": "OpenAI-linked swarm activity observed in 2026 is fully traceable through public records, according to a Cisco Talos blog. The analysis compares the swarm’s tradecraft to early signals from current agentic attack activity, highlighting patterns in data exfiltration, command-and-control, and persistence. Security teams can use the documented tradecraft indicators to refine detection rules and improve attribution of future agentic attacks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/the-great-escape-tradecraft-insights-from-an-agentic-swarm/",
+    "publishedAt": "2026-11-25T11:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-linked-swarm-activity-traceable-via-public",
+      "article-4e4fb2f5",
+      "4e4fb2f5",
+      "openai-linked-swarm-activity-traceable-via-public-5a754c",
+      "openai-linked-swarm-activity-traceable-via-public-records"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-php-update-for-rhel-9-8-10591740",
+    "title": "Red Hat Issues Critical PHP Update for RHEL 9.8",
+    "summary": "Red Hat released a critical PHP security update for RHEL 9.8 EUS, addressing multiple high-severity flaws. The patch carries a CVSS base score indicating critical impact, and each vulnerability is referenced by a CVE identifier in the advisory’s references. Security teams should apply the patch immediately to mitigate exploitation of the PHP flaws.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103492",
+    "publishedAt": "2026-11-25T10:57:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-php-update-for-rhel-9-8",
+      "article-10591740",
+      "10591740",
+      "red-hat-issues-critical-php-update-for-rhel-9-8-2ee1db"
+    ]
+  },
+  {
     "slug": "drupal-rce-flaw-exploited-to-hijack-sites-935522ec",
     "title": "Drupal RCE Flaw Exploited to Hijack Sites",
     "summary": "A critical Drupal RCE vulnerability is actively exploited in the wild to hijack unpatched sites. The flaw allows unauthenticated remote code execution via crafted requests, giving attackers full site control; it has a CVSS score of 9.8. Drupal released a patch; administrators must update immediately and verify configuration to block exploitation.",
@@ -26,6 +82,25 @@ export const news: NewsBrief[] = [
       "article-935522ec",
       "935522ec",
       "drupal-rce-flaw-exploited-to-hijack-sites-5e2ccd"
+    ]
+  },
+  {
+    "slug": "anthropic-beta-release-detects-malicious-ai-activi-def7b5ca",
+    "title": "Anthropic Beta Release Detects Malicious AI Activity Securely",
+    "summary": "Anthropic launched a public beta of Enterprise Frontier Safeguards to help organizations detect harmful artificial intelligence activity. The system analyzes customer-controlled cloud conversations to flag suspicious behaviors while preserving zero data retention through customer-managed encryption keys. Enterprise security teams can implement the platform to monitor multi-interaction threat patterns without exposing sensitive internal data to external retention.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/25/anthropic-enterprise-frontier-safeguards-public-beta/",
+    "publishedAt": "2026-11-25T09:20:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-beta-release-detects-malicious-ai-activi",
+      "article-def7b5ca",
+      "def7b5ca",
+      "anthropic-beta-release-detects-malicious-ai-activi-316bfa",
+      "anthropic-beta-release-detects-malicious-ai-activity-securel"
     ]
   },
   {
@@ -88,6 +163,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-thunderbird-update-for-enterprise-l-dd235efe",
+    "title": "Red Hat Issues Thunderbird Update for Enterprise Linux 8.8",
+    "summary": "Red Hat released a security, bug fix, and enhancement update for Thunderbird on Red Hat Enterprise Linux 8.8. Red Hat Product Security rated the underlying security flaws with an Important impact severity rating based on CVSS scoring standards. Enterprise security teams utilizing SAP Solutions and Telecommunications Update Service streams should apply the newly issued software update.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102922",
+    "publishedAt": "2026-11-25T09:02:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-thunderbird-update-for-enterprise-l",
+      "article-dd235efe",
+      "dd235efe",
+      "red-hat-issues-thunderbird-update-for-enterprise-l-2ee178",
+      "red-hat-issues-thunderbird-update-for-enterprise-linux-8-8"
+    ]
+  },
+  {
     "slug": "police-shut-down-57-iptv-services-trace-26m-crypto-42edb05e",
     "title": "Police Shut Down 57 IPTV Services, Trace €26M Crypto",
     "summary": "Police from 11 countries disrupted 57 IPTV services and identified 321 pirate sites during a five-day Europol operation in Seville. The operation traced over €26 million in crypto payments, revealing the financial backbone of the streaming network and anonymized wallet usage. No arrests announced; transaction analysis remains ongoing, underscoring the need for continued crypto flow monitoring to deter piracy.",
@@ -103,6 +197,24 @@ export const news: NewsBrief[] = [
       "article-42edb05e",
       "42edb05e",
       "police-shut-down-57-iptv-services-trace-26m-crypto-c5b068"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103484-important-raptor2-security-update-bdf8ad8a",
+    "title": "RHSA-2026:103484: Important: raptor2 security update",
+    "summary": "An update for raptor2 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103484",
+    "publishedAt": "2026-11-25T08:46:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103484-important-raptor2-security-update",
+      "article-bdf8ad8a",
+      "bdf8ad8a",
+      "rhsa-2026-103484-important-raptor2-security-update-2ee1da"
     ]
   },
   {
@@ -9323,122 +9435,6 @@ export const news: NewsBrief[] = [
       "article-50f93d6e",
       "50f93d6e",
       "red-hat-updates-libgsf-for-security-2ee15b"
-    ]
-  },
-  {
-    "slug": "git-lfs-security-update-for-red-hat-enterprise-lin-2d84a280",
-    "title": "git-lfs Security Update for Red Hat Enterprise Linux 10",
-    "summary": "Red Hat released a security update for git-lfs on Red Hat Enterprise Linux 10, addressing a vulnerability that could allow code execution. The flaw, referenced by multiple CVEs, permits attackers to inject malicious content during file transfer operations, potentially compromising system integrity. Red Hat recommends applying the latest git-lfs package immediately to mitigate the risk, with no additional workarounds required.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102186",
-    "publishedAt": "2026-11-23T03:32:40.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102184"
-      }
-    ],
-    "aliases": [
-      "git-lfs-security-update-for-red-hat-enterprise-lin",
-      "article-2d84a280",
-      "2d84a280",
-      "git-lfs-security-update-for-red-hat-enterprise-lin-2ee15b",
-      "git-lfs-security-update-for-red-hat-enterprise-linux-10"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-nodejs22-important-security-update-555683a3",
-    "title": "Red Hat issues nodejs22 important security update",
-    "summary": "An important-impact flaw in Red Hat Enterprise Linux 10.0’s nodejs22 runtime was found, enabling remote code execution via malformed JavaScript objects. The vulnerability, with a high CVSS score, permits attackers to execute arbitrary code without authentication, though no public exploits are known. Red Hat has issued a nodejs22 update; security teams must install the patch promptly to prevent potential compromise.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102180",
-    "publishedAt": "2026-11-23T03:32:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-nodejs22-important-security-update",
-      "article-555683a3",
-      "555683a3",
-      "red-hat-issues-nodejs22-important-security-update-2ee15b"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-glib2-moderate-security-update-29f2a9a2",
-    "title": "Red Hat releases glib2 moderate security update",
-    "summary": "A moderate-impact vulnerability in Red Hat Enterprise Linux 8.8’s glib2 library was identified, affecting SAP and Telecommunications Update Services via untrusted input handling. The flaw, rated CVSS moderate, allows local privilege escalation if exploited, but no active exploitation has been reported. Red Hat has released a patch; administrators should apply the glib2 update immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102189",
-    "publishedAt": "2026-11-23T03:30:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-glib2-moderate-security-update",
-      "article-29f2a9a2",
-      "29f2a9a2",
-      "red-hat-releases-glib2-moderate-security-update-2ee15b"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-xdg-desktop-portal-update-for-rhe-099203f6",
-    "title": "Red Hat Releases xdg-desktop-portal Update for RHEL 10.2",
-    "summary": "Red Hat issued a security update for xdg-desktop-portal on RHEL 10.2 Extended Update Support, addressing multiple vulnerabilities. The patch mitigates potential remote code execution and privilege escalation flaws in the portal's sandboxed application handling, with CVSS scores ranging from moderate to high. Red Hat recommends applying the update immediately to secure affected systems.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102176",
-    "publishedAt": "2026-11-23T03:30:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-xdg-desktop-portal-update-for-rhe",
-      "article-099203f6",
-      "099203f6",
-      "red-hat-releases-xdg-desktop-portal-update-for-rhe-2ee15b",
-      "red-hat-releases-xdg-desktop-portal-update-for-rhel-10-2"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-xdg-desktop-portal-security-updat-65044650",
-    "title": "Red Hat Releases xdg-desktop-portal Security Update",
-    "summary": "Red Hat issued a security update for xdg-desktop-portal on RHEL 9.4 for SAP Solutions, addressing multiple vulnerabilities. The update mitigates potential remote code execution and privilege escalation flaws identified in the portal's handling of sandboxed applications, with CVSS scores ranging from moderate to high. Red Hat recommends applying the update immediately to secure affected systems.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102165",
-    "publishedAt": "2026-11-23T03:25:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-xdg-desktop-portal-security-updat",
-      "article-65044650",
-      "65044650",
-      "red-hat-releases-xdg-desktop-portal-security-updat-2ee15b",
-      "red-hat-releases-xdg-desktop-portal-security-update"
-    ]
-  },
-  {
-    "slug": "qemu-kvm-ma-flaw-allows-local-privilege-escalation-4423a1ec",
-    "title": "QEMU KVM MA Flaw Allows Local Privilege Escalation",
-    "summary": "Red Enterprise Linux 7 Extended Lifecycle Support users face a qemu-kvm-ma flaw that may enable local privilege escalation via the virtual machine monitor. The vulnerability stems from improper memory mapping handling, and Red Hat rates it Moderate with a CVSS base score in the CVE references. Apply the qemu-kvm-ma update immediately; no workaround exists until the patch is installed.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102196",
-    "publishedAt": "2026-11-23T03:24:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "qemu-kvm-ma-flaw-allows-local-privilege-escalation",
-      "article-4423a1ec",
-      "4423a1ec",
-      "qemu-kvm-ma-flaw-allows-local-privilege-escalation-2ee15b"
     ]
   }
 ];

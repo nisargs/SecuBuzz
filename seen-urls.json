@@ -7259,5 +7259,11 @@
   "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
   "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/",
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
-  "https://www.helpnetsecurity.com/2026/11/25/illegal-iptv-disrupted-europol-crypto/"
+  "https://www.helpnetsecurity.com/2026/11/25/illegal-iptv-disrupted-europol-crypto/",
+  "https://blog.talosintelligence.com/the-great-escape-tradecraft-insights-from-an-agentic-swarm/",
+  "https://access.redhat.com/errata/RHSA-2026:103492",
+  "https://www.helpnetsecurity.com/2026/11/25/docker-aws-key-exposure-bots/",
+  "https://access.redhat.com/errata/RHSA-2026:103484",
+  "https://access.redhat.com/errata/RHSA-2026:102922",
+  "https://www.helpnetsecurity.com/2026/11/25/anthropic-enterprise-frontier-safeguards-public-beta/"
 ]
