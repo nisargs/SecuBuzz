@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "holiday-scam-victims-cut-essentials-amid-rising-lo-6dd67b45",
+    "title": "Holiday Scam Victims Cut Essentials Amid Rising Losses",
+    "summary": "McAfee research shows that 42% of Americans have fallen for holiday shopping scams, a near doubling from 22% the previous year. The study indicates a decline in consumer confidence, with only 75% able to recognize online scams compared to 90% in 2025. The findings highlight the need for heightened consumer education and improved fraud-detection tools to mitigate rising losses.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/25/mcafee-holiday-shopping-scams-report/",
+    "publishedAt": "2026-11-25T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "holiday-scam-victims-cut-essentials-amid-rising-lo",
+      "article-6dd67b45",
+      "6dd67b45",
+      "holiday-scam-victims-cut-essentials-amid-rising-lo-12dd97",
+      "holiday-scam-victims-cut-essentials-amid-rising-losses"
+    ]
+  },
+  {
     "slug": "microsoft-declares-code-red-over-24-hour-m365-outa-3ccca14e",
     "title": "Microsoft Declares Code Red Over 24-Hour M365 Outage",
     "summary": "Microsoft announced an internal Code Red after a nearly 24-hour outage of Microsoft 365 services, affecting Outlook, Teams, Copilot, and Exchange Online on November 12-13, 2026. The incident prompted Microsoft to prioritize rapid recovery and prevent future service disruptions, with CEO Satya Nadella apologizing. Security teams should monitor service health dashboards and review incident response plans for Microsoft 365 deployments.",
@@ -3609,6 +3628,89 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "chargepoint-home-flex-bypasses-authentication-via-5cb5c716",
+    "title": "ChargePoint Home Flex Bypasses Authentication via Hard-coded SSH",
+    "summary": "A hard-coded SSH credential flaw in ChargePoint Home Flex EV chargers lets network-adjacent attackers bypass authentication without credentials. The vulnerability, assigned CVE-2026-131816 and CVSS 6.3, permits unauthenticated remote exploitation that could lead to full device control. ChargePoint has released a firmware update that removes the hard-coded credentials; security teams should apply the patch immediately.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1112/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-131816"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chargepoint-home-flex-bypasses-authentication-via",
+      "article-5cb5c716",
+      "5cb5c716",
+      "chargepoint-home-flex-bypasses-authentication-via-77f3b0",
+      "chargepoint-home-flex-bypasses-authentication-via-hard-coded"
+    ]
+  },
+  {
+    "slug": "chargepoint-home-flex-uploadsm-exploits-link-follo-ae25fadd",
+    "title": "ChargePoint Home Flex Uploadsm Exploits Link Follow for LPE",
+    "summary": "A file-type link-following flaw in ChargePoint Home Flex EV chargers allows local attackers to trigger a local privilege escalation after executing low-privileged code. The vulnerability, CVE-2026-131815 with CVSS 7.8, can elevate a user to root, enabling full system compromise. ChargePoint has issued a patch that fixes the uploadsm handling; administrators should update firmware promptly.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1111/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-131815"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chargepoint-home-flex-uploadsm-exploits-link-follo",
+      "article-ae25fadd",
+      "ae25fadd",
+      "chargepoint-home-flex-uploadsm-exploits-link-follo-77f3b0",
+      "chargepoint-home-flex-uploadsm-exploits-link-follow-for-lpe"
+    ]
+  },
+  {
+    "slug": "chargepoint-home-flex-dwnldlogsm-enables-command-i-2f72c360",
+    "title": "ChargePoint Home Flex dwnldlogsm Enables Command Injection LPE",
+    "summary": "A tar command injection flaw in the dwnldlogsm component of ChargePoint Home Flex EV chargers permits local attackers to run arbitrary commands after low-privileged code execution. CVE-2026-131814, rated CVSS 7.8, enables privilege escalation to root, exposing the device to full compromise. ChargePoint has released a firmware update that patches the injection vector; security teams should apply it without delay.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1110/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-131814"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chargepoint-home-flex-dwnldlogsm-enables-command-i",
+      "article-2f72c360",
+      "2f72c360",
+      "chargepoint-home-flex-dwnldlogsm-enables-command-i-77f3b0",
+      "chargepoint-home-flex-dwnldlogsm-enables-command-injection-l"
+    ]
+  },
+  {
+    "slug": "x-org-server-pcf-font-parsing-oob-read-leak-747f722a",
+    "title": "X.Org Server PCF Font Parsing OOB Read Leak",
+    "summary": "A local out-of-bounds read flaw in X.Org Server’s PCF font parser allows attackers with low-privileged code execution to read sensitive data. The flaw, identified as CVE-2026-109909, carries a CVSS score of 6.1 and is not currently exploited in the wild. Affected systems should apply the vendor’s latest patch or update X.Org Server to a version that includes the fix.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1159/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-109909"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "x-org-server-pcf-font-parsing-oob-read-leak",
+      "article-747f722a",
+      "747f722a",
+      "x-org-server-pcf-font-parsing-oob-read-leak-77f3c0"
     ]
   },
   {
@@ -9231,102 +9333,6 @@ export const news: NewsBrief[] = [
       "article-fb37b3e2",
       "fb37b3e2",
       "optimizely-malware-hits-178-organizations-654f99"
-    ]
-  },
-  {
-    "slug": "openrouter-removes-providers-after-prompt-theft-di-9940c3f7",
-    "title": "OpenRouter Removes Providers After Prompt Theft Discovery",
-    "summary": "OpenRouter removed three AI inference providers after researchers uncovered months of prompt theft from their internal systems. The stolen prompts, some marked Zero Data Retention, were accessed without authorization, exposing user inputs; Dragos confirmed the breach to vendors. OpenRouter recommends vendors review access controls, enforce strict data-retention policies, and apply security hardening to prevent future prompt exfiltration.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
-    "publishedAt": "2026-11-22T05:06:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openrouter-removes-providers-after-prompt-theft-di",
-      "article-9940c3f7",
-      "9940c3f7",
-      "openrouter-removes-providers-after-prompt-theft-di-799f6a",
-      "openrouter-removes-providers-after-prompt-theft-discovery"
-    ]
-  },
-  {
-    "slug": "ghostscript-sandbox-escape-rce-demonstrated-via-fi-c975302d",
-    "title": "Ghostscript Sandbox Escape RCE Demonstrated via File Uploads",
-    "summary": "Researchers demonstrated a sandbox-escape RCE flaw in Ghostscript, a common PDF/PostScript interpreter on Linux servers, via crafted file uploads. The flaw lets attackers bypass Ghostscript’s isolation and run arbitrary commands on the host, compromising the web application; a PoC was released by pwn.ai. Ghostscript issued a patch; admins should apply it immediately and verify file-upload handling remains sandboxed.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
-    "publishedAt": "2026-11-22T05:03:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ghostscript-sandbox-escape-rce-demonstrated-via-fi",
-      "article-c975302d",
-      "c975302d",
-      "ghostscript-sandbox-escape-rce-demonstrated-via-fi-4d8551",
-      "ghostscript-sandbox-escape-rce-demonstrated-via-file-uploads"
-    ]
-  },
-  {
-    "slug": "openrouter-removes-compromised-ai-hosts-revokes-ze-e5254118",
-    "title": "OpenRouter Removes Compromised AI Hosts, Revokes Zero Data Retention",
-    "summary": "OpenRouter removed three AI hosting providers and revoked Zero Data Retention for 125 endpoints after detecting provider compromise. The flaw arises from third-party providers lacking secure isolation, risking private chat data leakage; no breach confirmed, but exposure persists. OpenRouter notified affected customers, removed compromised providers, and revoked Zero Data Retention; teams should verify endpoint settings and monitor anomalous access.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openrouter-ai-chat-leaks/",
-    "publishedAt": "2026-11-22T03:58:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openrouter-removes-compromised-ai-hosts-revokes-ze",
-      "article-e5254118",
-      "e5254118",
-      "openrouter-removes-compromised-ai-hosts-revokes-ze-2e8006",
-      "openrouter-removes-compromised-ai-hosts-revokes-zero-data-re"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-php-patch-for-rhel7-944c034d",
-    "title": "Red Hat Issues Critical PHP Patch for RHEL7",
-    "summary": "Red Hat released a critical PHP update for RHEL7 Extended Lifecycle Support, fixing high-severity vulnerabilities that could allow remote code execution. The patch covers several CVE-identified flaws, each rated with a CVSS base score indicating critical impact, though no exploitation has been seen. Apply the update immediately via RHSA-2026:101337 to keep PHP secure.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:101337",
-    "publishedAt": "2026-11-22T03:56:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-php-patch-for-rhel7",
-      "article-944c034d",
-      "944c034d",
-      "red-hat-issues-critical-php-patch-for-rhel7-2ee0ed"
-    ]
-  },
-  {
-    "slug": "ghostscript-upload2shell-enables-remote-command-ex-85e5b759",
-    "title": "Ghostscript Upload2Shell Enables Remote Command Execution",
-    "summary": "Ghostscript’s Type 1 font loader flaw, CVE-2026-125396, allows attackers to run arbitrary commands on WordPress, Roundcube, and print servers via file processing. The flaw does not need direct Ghostscript exposure, yet it grants remote code execution on any server that processes malicious fonts. Patches for Ghostscript 10.08.0+ are released; administrators should upgrade immediately to eliminate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/upload2shell-flaw/",
-    "publishedAt": "2026-11-22T02:43:08.000Z",
-    "cves": [
-      "CVE-2026-125396"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ghostscript-upload2shell-enables-remote-command-ex",
-      "article-85e5b759",
-      "85e5b759",
-      "ghostscript-upload2shell-enables-remote-command-ex-4a2f52",
-      "ghostscript-upload2shell-enables-remote-command-execution"
     ]
   }
 ];
