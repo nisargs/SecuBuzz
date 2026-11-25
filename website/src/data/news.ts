@@ -11,6 +11,67 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "palo-alto-releases-patch-for-fragnesia-rooting-fla-9611c196",
+    "title": "Palo Alto Releases Patch for Fragnesia Rooting Flaw",
+    "summary": "Palo Alto Networks issued a patch for the Fragnesia kernel flaw, CVE-2026-46300, which attackers used to gain root access on PAN-OS firewalls. The flaw enabled unauthenticated code execution via exposed management interfaces, allowing full system compromise in affected devices. Customers should apply the latest PAN-OS update and restrict internet-reachable management interfaces to prevent exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/",
+    "publishedAt": "2026-11-25T08:12:24.000Z",
+    "cves": [
+      "CVE-2026-46300"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-releases-patch-for-fragnesia-rooting-fla",
+      "article-9611c196",
+      "9611c196",
+      "palo-alto-releases-patch-for-fragnesia-rooting-fla-350631",
+      "palo-alto-releases-patch-for-fragnesia-rooting-flaw"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-fragnesia-kernel-flaw-for-firewall-96def8a0",
+    "title": "Hackers Exploit Fragnesia Kernel Flaw for Firewall Root Access",
+    "summary": "Hackers are exploiting the Fragnesia Linux kernel flaw, CVE-2026-46300, to gain root access on Palo Alto Networks firewalls running PAN-OS. The flaw allows unauthenticated attackers to execute privileged code via exposed management interfaces, enabling full system compromise. Palo Alto urges immediate patching and restriction of internet-reachable management interfaces to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/palo-alto-confirms-fragnesia-exploitation/",
+    "publishedAt": "2026-11-25T08:08:43.000Z",
+    "cves": [
+      "CVE-2026-46300"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-fragnesia-kernel-flaw-for-firewall",
+      "article-96def8a0",
+      "96def8a0",
+      "hackers-exploit-fragnesia-kernel-flaw-for-firewall-1f23cf",
+      "hackers-exploit-fragnesia-kernel-flaw-for-firewall-root-acce"
+    ]
+  },
+  {
+    "slug": "anthropic-scanner-discovers-drupal-flaw-attacks-ex-466f2d8d",
+    "title": "Anthropic Scanner Discovers Drupal Flaw, Attacks Exploit It",
+    "summary": "CISA added a Drupal core vulnerability, discovered by an Anthropic scanner, to its KEV catalog after attackers exploited it in multiple incidents. The flaw permits remote code execution on affected Drupal installations, enabling attackers to compromise site integrity and data. Federal agencies must apply the latest Drupal security patch within three days to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/",
+    "publishedAt": "2026-11-25T08:01:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-scanner-discovers-drupal-flaw-attacks-ex",
+      "article-466f2d8d",
+      "466f2d8d",
+      "anthropic-scanner-discovers-drupal-flaw-attacks-ex-793d78",
+      "anthropic-scanner-discovers-drupal-flaw-attacks-exploit-it"
+    ]
+  },
+  {
     "slug": "hackers-use-stolen-ai-prompt-data-to-search-aws-cl-90a4c37c",
     "title": "Hackers Use Stolen AI Prompt Data to Search AWS Cloud Storage and Secret Management Services",
     "summary": "Hackers used Amazon Web Services (AWS) access keys stolen from AI prompts to list cloud storage buckets and search services that hold passwords, API tokens, and application settings. Security firm Dragos traced the activity to credentials it had planted in test prompts.",
@@ -30,6 +91,64 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cia-open-source-analysis-system-breached-by-unknow-3bb6b321",
+    "title": "CIA Open-Source Analysis System Breached by Unknown Attackers",
+    "summary": "Unknown attackers breached the CIA’s open-source intelligence analysis system, exposing internal analytical tools. The intrusion leveraged undisclosed vulnerabilities, allowing unauthorized access to classified analytical data, though the exact exploit vector remains unreported. The CIA has not yet issued a public patch or detailed mitigation guidance, leaving security teams uncertain about immediate countermeasures.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/",
+    "publishedAt": "2026-11-25T07:45:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cia-open-source-analysis-system-breached-by-unknow",
+      "article-3bb6b321",
+      "3bb6b321",
+      "cia-open-source-analysis-system-breached-by-unknow-76a9c2",
+      "cia-open-source-analysis-system-breached-by-unknown-attacker"
+    ]
+  },
+  {
+    "slug": "top-10-managed-vulnerability-scanning-services-ran-e0f5380d",
+    "title": "Top 10 Managed Vulnerability Scanning Services Ranked 2026",
+    "summary": "The article ranks the top ten managed vulnerability scanning services for 2026, highlighting credentialed scanning reliability and production-friendly result triage. It discusses how these services filter false positives, streamline triage, and reduce operational overhead for security teams. Readers can compare scoring criteria, pricing models, and integration capabilities to select a solution that aligns with their risk appetite.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-managed-vulnerability-scanning/",
+    "publishedAt": "2026-11-25T07:33:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-managed-vulnerability-scanning-services-ran",
+      "article-e0f5380d",
+      "e0f5380d",
+      "top-10-managed-vulnerability-scanning-services-ran-6a0161",
+      "top-10-managed-vulnerability-scanning-services-ranked-2026"
+    ]
+  },
+  {
+    "slug": "idunno-anticsrf-library-exploited-for-asp-net-rce-f667fef7",
+    "title": "Idunno AntiCsrf Library Exploited for ASP.NET RCE",
+    "summary": "CISA added CVE-2026-131914, a deserialization flaw in the abandoned Idunno AntiCsrf library, to its Known Exploited Vulnerabilities catalog, exposing legacy ASP.NET applications to remote code execution. The vulnerability permits attackers to deserialize untrusted data, enabling arbitrary code execution without authentication on exposed web services.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/25/idunno-anticsrf-rce-cve-2026-131914-exploited/",
+    "publishedAt": "2026-11-25T07:22:32.000Z",
+    "cves": [
+      "CVE-2026-131914"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "idunno-anticsrf-library-exploited-for-asp-net-rce",
+      "article-f667fef7",
+      "f667fef7",
+      "idunno-anticsrf-library-exploited-for-asp-net-rce-72e924"
+    ]
+  },
+  {
     "slug": "top-10-ptaas-platforms-ranked-for-2026-298a77a5",
     "title": "Top 10 PTaaS Platforms Ranked for 2026",
     "summary": "The article ranks the top PTaaS platforms for 2026, emphasizing on-demand human testing and rapid fix retesting. It assesses platforms on tester quality, tool integration, and how quickly findings feed back into development pipelines. Organizations can use the rankings to choose a provider that matches their deployment cadence and security testing maturity.",
@@ -45,6 +164,25 @@ export const news: NewsBrief[] = [
       "article-298a77a5",
       "298a77a5",
       "top-10-ptaas-platforms-ranked-for-2026-4b8a04"
+    ]
+  },
+  {
+    "slug": "remus-stealer-deploys-malicious-chrome-extension-t-52e7dd2d",
+    "title": "Remus Stealer Deploys Malicious Chrome Extension to Steal Gmail Data",
+    "summary": "Remus Stealer malware targets compromised Windows systems running Google Chrome by silently deploying a fake Google Sheets extension. The rogue background extension reads incoming Gmail messages from signed-in accounts and exfiltrates email contents to an attacker-controlled server. Security teams must audit Chrome extensions, remove unauthorized add-ons, and monitor Windows endpoints for unauthorized background processes.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/remus-stealer/",
+    "publishedAt": "2026-11-25T06:48:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "remus-stealer-deploys-malicious-chrome-extension-t",
+      "article-52e7dd2d",
+      "52e7dd2d",
+      "remus-stealer-deploys-malicious-chrome-extension-t-2b22df",
+      "remus-stealer-deploys-malicious-chrome-extension-to-steal-gm"
     ]
   },
   {
@@ -3740,6 +3878,69 @@ export const news: NewsBrief[] = [
       "1498088f",
       "openai-cisco-release-shirudo-to-shield-linux-until-19958a",
       "openai-cisco-release-shirudo-to-shield-linux-until-patches"
+    ]
+  },
+  {
+    "slug": "zdi-26-1120-pwn2own-lm-studio-plugin-sandbox-direc-afad9d7c",
+    "title": "ZDI-26-1120: (Pwn2Own) LM Studio Plugin Sandbox Directory Traversal Arbitrary File Creation Vulnerability",
+    "summary": "This vulnerability allows remote attackers to create arbitrary files on affected installations of LM Studio. Authentication is required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-133994.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1120/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-133994"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1120-pwn2own-lm-studio-plugin-sandbox-direc",
+      "article-afad9d7c",
+      "afad9d7c",
+      "zdi-26-1120-pwn2own-lm-studio-plugin-sandbox-direc-77f3b4",
+      "zdi-26-1120-pwn2own-lm-studio-plugin-sandbox-directory-trave"
+    ]
+  },
+  {
+    "slug": "zdi-26-1118-pwn2own-lm-studio-json-schema-validati-c5f4865a",
+    "title": "ZDI-26-1118: (Pwn2Own) LM Studio JSON Schema Validation Error Message Information Disclosure Vulnerability",
+    "summary": "This vulnerability allows remote attackers to disclose sensitive information on affected installations of LM Studio. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-133991.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1118/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-133991"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1118-pwn2own-lm-studio-json-schema-validati",
+      "article-c5f4865a",
+      "c5f4865a",
+      "zdi-26-1118-pwn2own-lm-studio-json-schema-validati-77f3b1",
+      "zdi-26-1118-pwn2own-lm-studio-json-schema-validation-error-m"
+    ]
+  },
+  {
+    "slug": "zdi-26-1117-pwn2own-lm-studio-json-schema-server-s-e12057d7",
+    "title": "ZDI-26-1117: (Pwn2Own) LM Studio JSON Schema Server-Side Request Forgery Information Disclosure Vulnerability",
+    "summary": "This vulnerability allows remote attackers to disclose sensitive information on affected installations of LM Studio. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-133989.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1117/",
+    "publishedAt": "2026-11-24T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-133989"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1117-pwn2own-lm-studio-json-schema-server-s",
+      "article-e12057d7",
+      "e12057d7",
+      "zdi-26-1117-pwn2own-lm-studio-json-schema-server-s-77f3b1",
+      "zdi-26-1117-pwn2own-lm-studio-json-schema-server-side-reques"
     ]
   },
   {
@@ -9235,150 +9436,6 @@ export const news: NewsBrief[] = [
       "article-88477b25",
       "88477b25",
       "red-hat-updates-mingw-expat-for-rhel8-2ee15b"
-    ]
-  },
-  {
-    "slug": "cleverbridge-reports-card-data-theft-f685ea02",
-    "title": "Cleverbridge Reports Card Data Theft",
-    "summary": "Cleverbridge confirmed that attackers exfiltrated payment card data from its e-commerce platform, including card numbers, expiration dates, and CVV codes. The breach involved unauthorized access to the platform’s database, exposing sensitive payment information to malicious actors. Cleverbridge has begun notifying affected customers and is investigating the incident; affected users should monitor accounts for fraudulent activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/cleverbridge-data-breach/",
-    "publishedAt": "2026-11-23T02:37:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cleverbridge-reports-card-data-theft",
-      "article-f685ea02",
-      "f685ea02",
-      "cleverbridge-reports-card-data-theft-70d8b7"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-librabbitmq-on-rhel-8-3f737d08",
-    "title": "Red Hat Updates librabbitmq on RHEL 8",
-    "summary": "Red Hat issued a security update for librabbitmq on RHEL 8, addressing vulnerabilities rated as Important. The vulnerabilities lack a publicly disclosed CVE identifier in the advisory, but Red Hat provides CVSS base scores for each through referenced CVE links. Security teams should apply the librabbitmq update immediately to mitigate the identified risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102157",
-    "publishedAt": "2026-11-23T02:16:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-librabbitmq-on-rhel-8",
-      "article-3f737d08",
-      "3f737d08",
-      "red-hat-updates-librabbitmq-on-rhel-8-2ee15a"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-libgsf-on-rhel-9-ff7053b1",
-    "title": "Red Hat Updates libgsf on RHEL 9",
-    "summary": "Red Hat released a security update for libgsf on RHEL 9, addressing vulnerabilities rated as Important. No specific CVE identifiers are listed in the advisory, but CVSS base scores are available via referenced CVE links for each vulnerability. Apply the libgsf update promptly to reduce exposure to the identified weaknesses.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102160",
-    "publishedAt": "2026-11-23T02:14:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-libgsf-on-rhel-9",
-      "article-ff7053b1",
-      "ff7053b1",
-      "red-hat-updates-libgsf-on-rhel-9-2ee15b"
-    ]
-  },
-  {
-    "slug": "red-hat-gfs2-utils-security-update-released-cf32cd93",
-    "title": "Red Hat gfs2-utils security update released",
-    "summary": "Red Hat released a gfs2-utils update for Enterprise Linux 9, fixing a flaw that could allow arbitrary code via malformed GFS2 metadata. The issue stems from improper handling of GFS2 superblock fields, with a CVSS base score indicating moderate impact; no active exploitation observed. Apply the patch through the standard update channel to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102183",
-    "publishedAt": "2026-11-23T02:14:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-gfs2-utils-security-update-released",
-      "article-cf32cd93",
-      "cf32cd93",
-      "red-hat-gfs2-utils-security-update-released-2ee15b"
-    ]
-  },
-  {
-    "slug": "red-hat-libgsf-security-update-released-29b1afa8",
-    "title": "Red Hat libgsf security update released",
-    "summary": "Red Hat released a libgsf update for Enterprise Linux 9.8 EUS, fixing a flaw that could allow arbitrary code via malformed GSF files. The issue stems from insufficient validation of GSF headers, with a CVSS base score indicating important impact; no active exploitation reported. Apply the patch via the standard update channel to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102161",
-    "publishedAt": "2026-11-23T02:13:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-libgsf-security-update-released",
-      "article-29b1afa8",
-      "29b1afa8",
-      "red-hat-libgsf-security-update-released-2ee15b"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-monday-november-23-2026-3e9121da",
-    "title": "ISC Stormcast: Monday November 23, 2026",
-    "summary": "The SANS Internet Storm Center releases its weekly Stormcast podcast for Monday, November 23, 2026. The episode covers current threat landscape insights, emerging attack trends, and defensive best practices shared by industry experts. Listeners can access the recording and transcript via the ISC website, providing a resource for security teams to stay informed.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33548",
-    "publishedAt": "2026-11-23T02:00:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-monday-november-23-2026",
-      "article-3e9121da",
-      "3e9121da",
-      "isc-stormcast-monday-november-23-2026-57dd81"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-flatpak-on-rhel-8-8-0270c368",
-    "title": "Red Hat Updates flatpak on RHEL 8.8",
-    "summary": "Red Hat released a security update for flatpak on RHEL 8.8, addressing vulnerabilities rated as Important. The advisory does not list specific CVE identifiers, but CVSS base scores are provided via referenced CVE links for each vulnerability. Security teams should apply the flatpak update promptly to mitigate the identified risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102158",
-    "publishedAt": "2026-11-23T01:58:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-flatpak-on-rhel-8-8",
-      "article-0270c368",
-      "0270c368",
-      "red-hat-updates-flatpak-on-rhel-8-8-2ee15a"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-libgsf-security-update-a34525dd",
-    "title": "Red Hat Issues Important libgsf Security Update",
-    "summary": "Red Hat released a libgsf update on RHEL 10, fixing vulnerabilities that could enable local privilege escalation or denial of service. The advisory lists CVSS base scores and references CVE identifiers, though specific CVE numbers are omitted. Red Hat recommends applying the update immediately via the RPM package or system update tools to mitigate exploitation risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102159",
-    "publishedAt": "2026-11-23T01:47:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-libgsf-security-update",
-      "article-a34525dd",
-      "a34525dd",
-      "red-hat-issues-important-libgsf-security-update-2ee15b"
     ]
   }
 ];
