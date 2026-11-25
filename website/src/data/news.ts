@@ -11,6 +11,46 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-136267-improper-neutralization-of-special-8d7cb035",
+    "title": "CVE-2026-136267 - Improper neutralization of special elements used in an OS command in Kiro Web",
+    "summary": "We are aware of CVE-2026-136267, an issue in Kiro Web where tool-call markup inside content an agent session read, such as a repository file or a web page, could be repeated by certain models and run as a command in the subscriber's hosted development environment without a consent prompt.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-202-aws/",
+    "publishedAt": "2026-11-25T17:08:36.000Z",
+    "cves": [
+      "CVE-2026-136267"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-136267-improper-neutralization-of-special",
+      "article-8d7cb035",
+      "8d7cb035",
+      "cve-2026-136267-improper-neutralization-of-special-52c4af",
+      "cve-2026-136267-improper-neutralization-of-special-elements-"
+    ]
+  },
+  {
+    "slug": "task-management-app-todoist-hacked-attackers-breac-869dcc71",
+    "title": "Task Management App Todoist Hacked, Attackers Breach Production Systems",
+    "summary": "Task management app Todoist said an attacker breached its production systems on November 23, 2026, and downloaded account records for about 6% of its users. The attacker also obtained integration tokens and accessed some data from connected Outlook mailboxes.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/todoist-production-system-breach/",
+    "publishedAt": "2026-11-25T16:39:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "task-management-app-todoist-hacked-attackers-breac",
+      "article-869dcc71",
+      "869dcc71",
+      "task-management-app-todoist-hacked-attackers-breac-170928",
+      "task-management-app-todoist-hacked-attackers-breach-producti"
+    ]
+  },
+  {
     "slug": "cisa-alerts-on-critical-danfoss-controller-vulnera-91051535",
     "title": "CISA Alerts on Critical Danfoss Controller Vulnerability",
     "summary": "CISA issued a warning about a critical flaw in Danfoss AK-SM 8xxA Series refrigeration controllers used by food retailers, identified as CVE-2026-129713. The vulnerability permits unauthenticated remote code execution, enabling attackers to manipulate temperature controls and potentially disrupt refrigeration operations. CISA recommends applying the vendor’s patch immediately, updating firmware, and monitoring for anomalous activity to mitigate risk.",
@@ -128,6 +168,25 @@ export const news: NewsBrief[] = [
       "4f915205",
       "solarwinds-serv-u-and-dameware-vulnerabilities-dis-6ef0c6",
       "solarwinds-serv-u-and-dameware-vulnerabilities-disclosed"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-fortinet-flaws-to-breach-commercia-5ba5ae83",
+    "title": "Hackers Exploit Fortinet Flaws to Breach Commercial Ships and Access Control Networks",
+    "summary": "U.S. authorities are investigating whether Iran was behind cyberattacks that may have compromised up to 50 commercial ships. A U.S. official familiar with the inquiry told NPR that hackers exploited known flaws in Fortinet FortiGate devices used aboard vessels.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fortinet-flaws-to-breach-commercial-ships/",
+    "publishedAt": "2026-11-25T15:22:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-fortinet-flaws-to-breach-commercia",
+      "article-5ba5ae83",
+      "5ba5ae83",
+      "hackers-exploit-fortinet-flaws-to-breach-commercia-907da6",
+      "hackers-exploit-fortinet-flaws-to-breach-commercial-ships-an"
     ]
   },
   {
@@ -276,6 +335,25 @@ export const news: NewsBrief[] = [
       "article-ec4afeaa",
       "ec4afeaa",
       "rhsa-2026-103502-important-raptor2-security-update-2ee1dd"
+    ]
+  },
+  {
+    "slug": "ai-agents-exploit-unpatched-vulnerability-to-contr-c7737e1c",
+    "title": "AI Agents Exploit Unpatched Vulnerability to Control University Server",
+    "summary": "AI agents discovered an unpatched vulnerability in a university server and subsequently leveraged it to gain control. The flaw allowed remote code execution via an undisclosed mechanism, enabling attackers to execute arbitrary commands without authentication. The university should apply the vendor's patch or update firmware immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/ai-agents-found-an-unpatched-flaw-after-being-told-to-break-in",
+    "publishedAt": "2026-11-25T14:24:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agents-exploit-unpatched-vulnerability-to-contr",
+      "article-c7737e1c",
+      "c7737e1c",
+      "ai-agents-exploit-unpatched-vulnerability-to-contr-47056d",
+      "ai-agents-exploit-unpatched-vulnerability-to-control-univers"
     ]
   },
   {
@@ -9409,81 +9487,6 @@ export const news: NewsBrief[] = [
       "article-ee9994d5",
       "ee9994d5",
       "red-hat-releases-webkit2gtk3-security-update-2ee15e"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-update-for-java-21-ibm-sem-75e77b1c",
-    "title": "Red Hat Issues Critical Update for java-21-ibm-semeru JDK",
-    "summary": "Red Hat released a critical update for java-21-ibm-semeru-certified-jdk on RHEL 10.0 and 10.2, fixing multiple high-impact vulnerabilities. The flaws, listed in the advisory’s CVE references, enable unauthenticated remote code execution with a CVSS score of 9.8, giving attackers full system control. Apply the vendor-supplied patch immediately; verify installation with rpm -q java-21-ibm-semeru-certified-jdk on affected systems.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102246",
-    "publishedAt": "2026-11-23T09:45:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-update-for-java-21-ibm-sem",
-      "article-75e77b1c",
-      "75e77b1c",
-      "red-hat-issues-critical-update-for-java-21-ibm-sem-2ee15e",
-      "red-hat-issues-critical-update-for-java-21-ibm-semeru-jdk"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102247-important-java-1-8-0-ibm-security-e5fce34f",
-    "title": "RHSA-2026:102247: Important: java-1.8.0-ibm security update",
-    "summary": "An update for java-1.8.0-ibm is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102247",
-    "publishedAt": "2026-11-23T09:41:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102247-important-java-1-8-0-ibm-security",
-      "article-e5fce34f",
-      "e5fce34f",
-      "rhsa-2026-102247-important-java-1-8-0-ibm-security-2ee15e",
-      "rhsa-2026-102247-important-java-1-8-0-ibm-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-php-8-3-security-update-1131078f",
-    "title": "Red Hat Issues Critical PHP 8.3 Security Update",
-    "summary": "Red Hat released a critical security update for the php:8.3 module on RHEL 9, addressing multiple vulnerabilities. The update is rated Critical, with CVSS base scores provided for each vulnerability via the referenced CVE links, indicating high-severity flaws. Apply the patch promptly; no workarounds are available, and the update should be deployed across all affected systems.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102226",
-    "publishedAt": "2026-11-23T09:16:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-php-8-3-security-update",
-      "article-1131078f",
-      "1131078f",
-      "red-hat-issues-critical-php-8-3-security-update-2ee15e"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-security-update-for-rhel-8-f6106dd4",
-    "title": "Red Hat Releases Kernel Security Update for RHEL 8.6",
-    "summary": "Red Hat issued a kernel security update for RHEL 8.6 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On, addressing multiple vulnerabilities. The update carries an Important impact rating, with CVSS base scores available for each vulnerability via the referenced CVE links. Security teams should apply the patch immediately to mitigate potential exploitation; no workarounds are currently recommended.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102233",
-    "publishedAt": "2026-11-23T09:14:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-security-update-for-rhel-8",
-      "article-f6106dd4",
-      "f6106dd4",
-      "red-hat-releases-kernel-security-update-for-rhel-8-2ee15e",
-      "red-hat-releases-kernel-security-update-for-rhel-8-6"
     ]
   }
 ];

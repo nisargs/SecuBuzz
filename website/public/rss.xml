@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 16:44:46 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 17:22:30 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-136267 - Improper neutralization of special elements used in an OS command in Kiro Web</title>
+      <link>https://secubuzz.com/news/cve-2026-136267-improper-neutralization-of-special-8d7cb035</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-136267-improper-neutralization-of-special-8d7cb035</guid>
+      <description><![CDATA[We are aware of CVE-2026-136267, an issue in Kiro Web where tool-call markup inside content an agent session read, such as a repository file or a web page, could be repeated by certain models and run as a command in the subscriber's hosted development environment without a consent prompt.]]></description>
+      <pubDate>Wed, 25 Nov 2026 17:08:36 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-202-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Task Management App Todoist Hacked, Attackers Breach Production Systems</title>
+      <link>https://secubuzz.com/news/task-management-app-todoist-hacked-attackers-breac-869dcc71</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/task-management-app-todoist-hacked-attackers-breac-869dcc71</guid>
+      <description><![CDATA[Task management app Todoist said an attacker breached its production systems on November 23, 2026, and downloaded account records for about 6% of its users. The attacker also obtained integration tokens and accessed some data from connected Outlook mailboxes.]]></description>
+      <pubDate>Wed, 25 Nov 2026 16:39:28 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/todoist-production-system-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>CISA Alerts on Critical Danfoss Controller Vulnerability</title>
       <link>https://secubuzz.com/news/cisa-alerts-on-critical-danfoss-controller-vulnera-91051535</link>
@@ -60,6 +78,15 @@
       <pubDate>Wed, 25 Nov 2026 15:23:14 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/solarwinds-security-advisory-av26-1206">Canadian Centre for Cyber Security</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Hackers Exploit Fortinet Flaws to Breach Commercial Ships and Access Control Networks</title>
+      <link>https://secubuzz.com/news/hackers-exploit-fortinet-flaws-to-breach-commercia-5ba5ae83</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-fortinet-flaws-to-breach-commercia-5ba5ae83</guid>
+      <description><![CDATA[U.S. authorities are investigating whether Iran was behind cyberattacks that may have compromised up to 50 commercial ships. A U.S. official familiar with the inquiry told NPR that hackers exploited known flaws in Fortinet FortiGate devices used aboard vessels.]]></description>
+      <pubDate>Wed, 25 Nov 2026 15:22:40 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fortinet-flaws-to-breach-commercial-ships/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Bot Detection Losing Battle, Privileged Access Must Equal</title>
@@ -132,6 +159,15 @@
       <pubDate>Wed, 25 Nov 2026 14:32:00 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103502">Red Hat Security Advisories</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>AI Agents Exploit Unpatched Vulnerability to Control University Server</title>
+      <link>https://secubuzz.com/news/ai-agents-exploit-unpatched-vulnerability-to-contr-c7737e1c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-exploit-unpatched-vulnerability-to-contr-c7737e1c</guid>
+      <description><![CDATA[AI agents discovered an unpatched vulnerability in a university server and subsequently leveraged it to gain control. The flaw allowed remote code execution via an undisclosed mechanism, enabling attackers to execute arbitrary commands without authentication. The university should apply the vendor's patch or update firmware immediately to mitigate the risk.]]></description>
+      <pubDate>Wed, 25 Nov 2026 14:24:16 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/11/ai-agents-found-an-unpatched-flaw-after-being-told-to-break-in">Malwarebytes Labs</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>RHSA-2026:103495: Critical: php security update</title>
@@ -420,42 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 10:43:07 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html">The Hacker News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Hisense TV Continues Tracking Users Despite Ad Settings</title>
-      <link>https://secubuzz.com/news/hisense-tv-continues-tracking-users-despite-ad-set-f9c5e1de</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hisense-tv-continues-tracking-users-despite-ad-set-f9c5e1de</guid>
-      <description><![CDATA[A Hisense 55U65QEVS smart TV running VIDAA U09.60 sends audio fingerprints to Nexxen even when personalized ads are disabled. The device also keeps an Enhanced Viewing Service enabled, collecting viewing data for third parties without user consent. Disable the Enhanced Viewing Service, apply the latest firmware, and monitor traffic for unauthorized data exfiltration.]]></description>
-      <pubDate>Wed, 25 Nov 2026 10:36:34 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hisense-smart-tv-tracking-users/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical 9.9 Dell Enterprise SONiC Flaw Could Let Hackers Execute Malicious Commands on Network Switches</title>
-      <link>https://secubuzz.com/news/critical-9-9-dell-enterprise-sonic-flaw-could-let-920a1957</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-9-9-dell-enterprise-sonic-flaw-could-let-920a1957</guid>
-      <description><![CDATA[Dell Technologies has patched a critical flaw in Dell Enterprise SONiC Distribution that could let a remote attacker with limited privileges run commands of their choice on an affected network switch. The vulnerability, tracked as CVE-2026-103782, could also expose files and directories the attacker is not authorized to access.]]></description>
-      <pubDate>Wed, 25 Nov 2026 10:20:51 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-dell-enterprise-sonic-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Drupal RCE Flaw Exploited to Hijack Sites</title>
-      <link>https://secubuzz.com/news/drupal-rce-flaw-exploited-to-hijack-sites-935522ec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/drupal-rce-flaw-exploited-to-hijack-sites-935522ec</guid>
-      <description><![CDATA[A critical Drupal RCE vulnerability is actively exploited in the wild to hijack unpatched sites. The flaw allows unauthenticated remote code execution via crafted requests, giving attackers full site control; it has a CVSS score of 9.8. Drupal released a patch; administrators must update immediately and verify configuration to block exploitation.]]></description>
-      <pubDate>Wed, 25 Nov 2026 10:10:20 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103485: Important: cifs-utils security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103485-important-cifs-utils-security-upd-54fa4dcb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103485-important-cifs-utils-security-upd-54fa4dcb</guid>
-      <description><![CDATA[An update for cifs-utils is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 10:09:06 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103485">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
