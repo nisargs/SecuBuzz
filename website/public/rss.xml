@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 20:45:16 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 21:45:14 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>1Password customer data stolen after employee GitHub account breach</title>
+      <link>https://secubuzz.com/news/1password-customer-data-stolen-after-employee-gith-845524bb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/1password-customer-data-stolen-after-employee-gith-845524bb</guid>
+      <description><![CDATA[1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data.]]></description>
+      <pubDate>Wed, 25 Nov 2026 21:33:33 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Artex Tool Adopted by China, North Korea Hackers</title>
+      <link>https://secubuzz.com/news/artex-tool-adopted-by-china-north-korea-hackers-62f1444a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/artex-tool-adopted-by-china-north-korea-hackers-62f1444a</guid>
+      <description><![CDATA[Microsoft reports that AI tool Artex, used in high-profile breaches, is being incorporated into hacking suites by Chinese and North Korean groups. The integration expands Artex’s credential harvesting and lateral movement capabilities, potentially enabling broader compromise, though no active exploitation has been confirmed. Security teams should monitor for Artex signatures, update detection rules, and apply defensive controls against credential theft.]]></description>
+      <pubDate>Wed, 25 Nov 2026 21:18:00 GMT</pubDate>
+      <source url="https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool">The Record</source>
+      <category>Nation State</category>
+    </item>
     <item>
       <title>CVE-2026-134070 - Improper input sanitization in the AWS Config remediation runbook AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3</title>
       <link>https://secubuzz.com/news/cve-2026-134070-improper-input-sanitization-in-the-45dcbcad</link>
@@ -24,6 +42,24 @@
       <pubDate>Wed, 25 Nov 2026 19:39:31 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:103537: Critical: Satellite 6.16 EUS security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103537-critical-satellite-6-16-eus-secur-e643795d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103537-critical-satellite-6-16-eus-secur-e643795d</guid>
+      <description><![CDATA[A security update for Red Hat Satellite 6.16 EUS is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 25 Nov 2026 19:24:30 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103537">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:103536: Critical: Satellite 6.17 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103536-critical-satellite-6-17-security-bbacc4fc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103536-critical-satellite-6-17-security-bbacc4fc</guid>
+      <description><![CDATA[A security update for Red Hat Satellite 6.17 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE links in the References section.]]></description>
+      <pubDate>Wed, 25 Nov 2026 19:22:51 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103536">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Thanksgiving Thanks and Critiques from David</title>
@@ -107,6 +143,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>USN-9199-1: authd vulnerability</title>
+      <link>https://secubuzz.com/news/usn-9199-1-authd-vulnerability-282818bc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9199-1-authd-vulnerability-282818bc</guid>
+      <description><![CDATA[Adrian Dombeck discovered that authd incorrectly assigned user and group identifiers during first-time SSH logins. A remote authenticated user could possibly use this issue to access or modify files belonging to another user, potentially leading to account takeover or privilege escalation.]]></description>
+      <pubDate>Wed, 25 Nov 2026 17:32:51 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9199-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Florida Ransomware Recovery CEO Indicted</title>
       <link>https://secubuzz.com/news/florida-ransomware-recovery-ceo-indicted-b6e2f558</link>
       <guid isPermaLink="true">https://secubuzz.com/news/florida-ransomware-recovery-ceo-indicted-b6e2f558</guid>
@@ -131,6 +176,15 @@
       <description><![CDATA[Australia's Digital Duty of Care Act mandates online providers to establish protocols that shield users from violence, rape, and other harms. The law obligates tech companies to identify and mitigate foreseeable risks, extending oversight to content moderation and user safety measures. Compliance will require new policy frameworks, risk assessments, and reporting mechanisms, with enforcement provisions pending parliamentary approval.]]></description>
       <pubDate>Wed, 25 Nov 2026 17:07:00 GMT</pubDate>
       <source url="https://therecord.media/australia-passes-online-safety-legislation-preempt-harms">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>U.S. Treasury’s FinCEN Confirms Cyberattack, Takes Systems Offline After Unauthorized Access</title>
+      <link>https://secubuzz.com/news/u-s-treasury-s-fincen-confirms-cyberattack-takes-s-25ba4cac</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/u-s-treasury-s-fincen-confirms-cyberattack-takes-s-25ba4cac</guid>
+      <description><![CDATA[The U.S. Treasury Department’s Financial Crimes Enforcement Network (FinCEN) has taken some systems offline after confirming unauthorized access to a limited part of its network. The bureau said the shutdown was a precaution while it investigates the cyberattack.]]></description>
+      <pubDate>Wed, 25 Nov 2026 17:01:30 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fincen-confirms-cyberattack/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -401,60 +455,6 @@
       <description><![CDATA[A critical Hex.pm vulnerability was exploited on November 23, 2026, allowing attackers to execute operating system commands on six web servers. The flaw, tracked as CVE-2026-129514, carries a maximum severity score of 10.0 and required no account.]]></description>
       <pubDate>Wed, 25 Nov 2026 14:05:27 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-exploit-critical-hex-pm-vulnerability/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Latin America Faces Industrial Cyberattacks</title>
-      <link>https://secubuzz.com/news/latin-america-faces-industrial-cyberattacks-11344ec4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/latin-america-faces-industrial-cyberattacks-11344ec4</guid>
-      <description><![CDATA[Cyberattacks targeting ports, pipelines, and manufacturing facilities have increased across Latin America, affecting critical infrastructure. Attackers exploit known vulnerabilities in industrial control systems, leveraging remote code execution and credential theft to disrupt operations. Operators should apply vendor patches, enforce network segmentation, and monitor for anomalous traffic to mitigate future incidents.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/latin-america-cyberattacks-ports-pipelines-manufacturing">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare Adds AI Agent Search Toggle</title>
-      <link>https://secubuzz.com/news/cloudflare-adds-ai-agent-search-toggle-67f13254</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-adds-ai-agent-search-toggle-67f13254</guid>
-      <description><![CDATA[Cloudflare introduces a toggle that makes sites searchable by AI agents, adding automatic content indexing and a discoverable search API. The feature also supports native HTTP QUERY support, allowing agents to retrieve structured data directly from web pages. Deploying the toggle requires no code changes, but operators should review privacy settings to prevent sensitive content exposure to AI agents.]]></description>
-      <pubDate>Wed, 25 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/search-for-agents/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103496: Important: grafana security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103496-important-grafana-security-update-ed28371c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103496-important-grafana-security-update-ed28371c</guid>
-      <description><![CDATA[An update for grafana is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 13:42:43 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103496">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103500: Important: raptor2 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103500-important-raptor2-security-update-643fa3da</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103500-important-raptor2-security-update-643fa3da</guid>
-      <description><![CDATA[An update for raptor2 is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Wed, 25 Nov 2026 13:41:28 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103500">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>FinCEN Disconnected Systems After Cyber Incident</title>
-      <link>https://secubuzz.com/news/fincen-disconnected-systems-after-cyber-incident-6c23fabf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fincen-disconnected-systems-after-cyber-incident-6c23fabf</guid>
-      <description><![CDATA[FinCEN experienced a cyber incident that caused system disconnections, disrupting filers. The root cause remains under investigation, with no public details on exploitation or vulnerability. FinCEN extended deadlines for affected filers and is conducting a full investigation, urging stakeholders to monitor updates. The incident has prompted a review of security controls and incident response procedures.]]></description>
-      <pubDate>Wed, 25 Nov 2026 13:39:21 GMT</pubDate>
-      <source url="https://www.securityweek.com/us-treasurys-fincen-disconnects-systems-following-cyber-incident/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Drupal Installer Exploit CVE-2026-132165 Active</title>
-      <link>https://secubuzz.com/news/drupal-installer-exploit-cve-2026-132165-active-92cc0291</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/drupal-installer-exploit-cve-2026-132165-active-92cc0291</guid>
-      <description><![CDATA[Attackers exploit CVE-2026-132165 to take over unpatched Drupal sites without authentication. The flaw allows remote code execution via the installer, rated CVSS 9.8, and is actively used in the wild since November 19, affecting government, university, media, and enterprise sites. Drupal releases patch 10.0.12; administrators should update immediately or disable the installer to mitigate the vulnerability.]]></description>
-      <pubDate>Wed, 25 Nov 2026 13:37:28 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/25/drupal-installer-rce-cve-2026-132165-exploited/">Help Net Security</source>
       <category>CVE</category>
     </item>
   </channel>

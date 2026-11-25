@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "1password-customer-data-stolen-after-employee-gith-845524bb",
+    "title": "1Password customer data stolen after employee GitHub account breach",
+    "summary": "1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
+    "publishedAt": "2026-11-25T21:33:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "1password-customer-data-stolen-after-employee-gith",
+      "article-845524bb",
+      "845524bb",
+      "1password-customer-data-stolen-after-employee-gith-533a01",
+      "1password-customer-data-stolen-after-employee-github-account"
+    ]
+  },
+  {
+    "slug": "artex-tool-adopted-by-china-north-korea-hackers-62f1444a",
+    "title": "Artex Tool Adopted by China, North Korea Hackers",
+    "summary": "Microsoft reports that AI tool Artex, used in high-profile breaches, is being incorporated into hacking suites by Chinese and North Korean groups. The integration expands Artex’s credential harvesting and lateral movement capabilities, potentially enabling broader compromise, though no active exploitation has been confirmed. Security teams should monitor for Artex signatures, update detection rules, and apply defensive controls against credential theft.",
+    "category": "Nation State",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
+    "publishedAt": "2026-11-25T21:18:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "artex-tool-adopted-by-china-north-korea-hackers",
+      "article-62f1444a",
+      "62f1444a",
+      "artex-tool-adopted-by-china-north-korea-hackers-6b4060"
+    ]
+  },
+  {
     "slug": "cve-2026-134070-improper-input-sanitization-in-the-45dcbcad",
     "title": "CVE-2026-134070 - Improper input sanitization in the AWS Config remediation runbook AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3",
     "summary": "We identified CVE-2026-134070, where improper input validation in the AWS-managed AWS Systems Manager Automation runbook AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3 might allow an authenticated remote user who is permitted to run the runbook to set unintended configuration in the account's Regional Session Manager preferences document (SSM-SessionManagerRunShell) via a crafted S3KeyPrefix parameter value.",
@@ -48,6 +85,44 @@ export const news: NewsBrief[] = [
       "ae3f11f0",
       "italy-switzerland-warn-of-ai-powered-autonomous-cy-7462ef",
       "italy-switzerland-warn-of-ai-powered-autonomous-cyberattacks"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103537-critical-satellite-6-16-eus-secur-e643795d",
+    "title": "RHSA-2026:103537: Critical: Satellite 6.16 EUS security update",
+    "summary": "A security update for Red Hat Satellite 6.16 EUS is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103537",
+    "publishedAt": "2026-11-25T19:24:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103537-critical-satellite-6-16-eus-secur",
+      "article-e643795d",
+      "e643795d",
+      "rhsa-2026-103537-critical-satellite-6-16-eus-secur-2ee1de",
+      "rhsa-2026-103537-critical-satellite-6-16-eus-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103536-critical-satellite-6-17-security-bbacc4fc",
+    "title": "RHSA-2026:103536: Critical: Satellite 6.17 security update",
+    "summary": "A security update for Red Hat Satellite 6.17 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE links in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103536",
+    "publishedAt": "2026-11-25T19:22:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103536-critical-satellite-6-17-security",
+      "article-bbacc4fc",
+      "bbacc4fc",
+      "rhsa-2026-103536-critical-satellite-6-17-security-2ee1de",
+      "rhsa-2026-103536-critical-satellite-6-17-security-update"
     ]
   },
   {
@@ -217,6 +292,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "usn-9199-1-authd-vulnerability-282818bc",
+    "title": "USN-9199-1: authd vulnerability",
+    "summary": "Adrian Dombeck discovered that authd incorrectly assigned user and group identifiers during first-time SSH logins. A remote authenticated user could possibly use this issue to access or modify files belonging to another user, potentially leading to account takeover or privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9199-1",
+    "publishedAt": "2026-11-25T17:32:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9199-1-authd-vulnerability",
+      "article-282818bc",
+      "282818bc",
+      "usn-9199-1-authd-vulnerability-7e776b"
+    ]
+  },
+  {
     "slug": "florida-ransomware-recovery-ceo-indicted-b6e2f558",
     "title": "Florida Ransomware Recovery CEO Indicted",
     "summary": "A federal grand jury indicted the CEO of a Florida-based ransomware recovery firm for allegedly lying about services and paying ransoms to cybercriminals. The indictment alleges the executive engaged in deceptive practices and facilitated financial transactions that supported ransomware operators. The case underscores the legal risks for recovery providers and signals increased scrutiny of the industry by law enforcement.",
@@ -271,6 +364,25 @@ export const news: NewsBrief[] = [
       "article-72e9056e",
       "72e9056e",
       "australia-enacts-digital-duty-of-care-law-379941"
+    ]
+  },
+  {
+    "slug": "u-s-treasury-s-fincen-confirms-cyberattack-takes-s-25ba4cac",
+    "title": "U.S. Treasury’s FinCEN Confirms Cyberattack, Takes Systems Offline After Unauthorized Access",
+    "summary": "The U.S. Treasury Department’s Financial Crimes Enforcement Network (FinCEN) has taken some systems offline after confirming unauthorized access to a limited part of its network. The bureau said the shutdown was a precaution while it investigates the cyberattack.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fincen-confirms-cyberattack/",
+    "publishedAt": "2026-11-25T17:01:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "u-s-treasury-s-fincen-confirms-cyberattack-takes-s",
+      "article-25ba4cac",
+      "25ba4cac",
+      "u-s-treasury-s-fincen-confirms-cyberattack-takes-s-5999a5",
+      "u-s-treasury-s-fincen-confirms-cyberattack-takes-systems-off"
     ]
   },
   {
@@ -880,6 +992,35 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "usn-9196-1-expat-vulnerabilities-552ff82a",
+    "title": "USN-9196-1: Expat vulnerabilities",
+    "summary": "This issue only affected Ubuntu 24.04 LTS and Ubuntu 26.04 LTS. (CVE-2026-102633) It was discovered that Expat did not properly validate buffer lengths under certain circumstances, leading to a heap buffer over-read. This update also changes xmlwf to create these output files with 0600 permissions. (CVE-2026-128241) It was discovered that Expat could split UTF-16 surrogate pairs when converting UTF-16 input in non-native byte order.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9196-1",
+    "publishedAt": "2026-11-25T13:48:17.000Z",
+    "cves": [
+      "CVE-2026-102633",
+      "CVE-2026-128241",
+      "CVE-2026-93990",
+      "CVE-2026-77214",
+      "CVE-2026-115506",
+      "CVE-2026-113351",
+      "CVE-2026-118370",
+      "CVE-2026-117610",
+      "CVE-2026-124317",
+      "CVE-2026-134703"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9196-1-expat-vulnerabilities",
+      "article-552ff82a",
+      "552ff82a",
+      "usn-9196-1-expat-vulnerabilities-7e7776"
+    ]
+  },
+  {
     "slug": "rhsa-2026-103496-important-grafana-security-update-ed28371c",
     "title": "RHSA-2026:103496: Important: grafana security update",
     "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -1221,6 +1362,36 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisa-adds-10-known-exploited-vulnerabilities-to-ca-06ae9af1",
+    "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+    "summary": "BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. Aware of an exploited vulnerability not currently listed in the KEV Catalog?. The vulnerabilities are tracked as CVE-2023-25914, CVE-2023-25915, CVE-2025-41450.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-25T12:00:00.000Z",
+    "cves": [
+      "CVE-2023-25914",
+      "CVE-2023-25915",
+      "CVE-2025-41450",
+      "CVE-2026-103406",
+      "CVE-2026-133275",
+      "CVE-2026-133303",
+      "CVE-2026-133311",
+      "CVE-2026-133323",
+      "CVE-2026-133324",
+      "CVE-2026-133469"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-10-known-exploited-vulnerabilities-to-ca",
+      "article-06ae9af1",
+      "06ae9af1",
+      "cisa-adds-10-known-exploited-vulnerabilities-to-ca-7f97ed",
+      "cisa-adds-10-known-exploited-vulnerabilities-to-catalog"
+    ]
+  },
+  {
     "slug": "iran-linked-group-deploys-kuboshell-backdoor-on-ai-fae9e05f",
     "title": "Iran-Linked Group Deploys KuboShell Backdoor on Airlines",
     "summary": "An Iran-linked cyberespionage group, Volant Manticore, targeted a Cyprus-based airline and Saudi Arabian hospitals using a fake résumé phishing campaign. The attack delivered KuboShell, a newly documented Windows backdoor that permits remote command execution and data exfiltration from infected systems. Security teams should block KuboShell binaries, monitor for suspicious outbound traffic, and apply vendor patches to mitigate the threat.",
@@ -1351,6 +1522,24 @@ export const news: NewsBrief[] = [
       "article-94c71c99",
       "94c71c99",
       "microsoft-365-bug-blocking-office-apps-fixed-17bba1"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103486-moderate-openssl-security-update-2d88fd81",
+    "title": "RHSA-2026:103486: Moderate: openssl security update",
+    "summary": "An update for openssl is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103486",
+    "publishedAt": "2026-11-25T11:14:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103486-moderate-openssl-security-update",
+      "article-2d88fd81",
+      "2d88fd81",
+      "rhsa-2026-103486-moderate-openssl-security-update-2ee1da"
     ]
   },
   {
@@ -2586,6 +2775,24 @@ export const news: NewsBrief[] = [
       "article-0df66551",
       "0df66551",
       "red-hat-issues-gdm-security-update-2ee1d7"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103384-important-grafana-security-update-1cae7b74",
+    "title": "RHSA-2026:103384: Important: grafana security update",
+    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103384",
+    "publishedAt": "2026-11-24T19:53:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103384-important-grafana-security-update",
+      "article-1cae7b74",
+      "1cae7b74",
+      "rhsa-2026-103384-important-grafana-security-update-2ee1d7"
     ]
   },
   {
@@ -9356,194 +9563,6 @@ export const news: NewsBrief[] = [
       "article-f2ae7ef0",
       "f2ae7ef0",
       "red-hat-releases-kernel-rt-patch-for-rhel-9-2-2ee15f"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-php-8-2-security-update-f727fc43",
-    "title": "Red Hat Releases Critical PHP 8.2 Security Update",
-    "summary": "Red Hat released a critical update for php:8.2 on RHEL 9, fixing flaws that could allow remote code execution via malformed PHP input. The patch addresses multiple CVE-identified vulnerabilities with CVSS scores above 9.0, eliminating unauthenticated code injection risk. Apply RHSA-2026:102261 or upgrade to the latest php:8.2 image immediately, then verify application compatibility.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102261",
-    "publishedAt": "2026-11-23T13:05:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-php-8-2-security-update",
-      "article-f727fc43",
-      "f727fc43",
-      "red-hat-releases-critical-php-8-2-security-update-2ee15e"
-    ]
-  },
-  {
-    "slug": "red-enterprise-linux-9-receives-critical-php-8-4-u-c973cf10",
-    "title": "Red Enterprise Linux 9 Receives Critical php:8.4 Update",
-    "summary": "Red Enterprise Linux 9 users receive a critical update for the php:8.4 module, addressing multiple security vulnerabilities. The advisory lists CVSS base scores for each flaw, but no specific CVE identifiers are disclosed in the release notes. Administrators should apply the update immediately to mitigate the risk, as the patch resolves the identified weaknesses.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102255",
-    "publishedAt": "2026-11-23T13:04:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-enterprise-linux-9-receives-critical-php-8-4-u",
-      "article-c973cf10",
-      "c973cf10",
-      "red-enterprise-linux-9-receives-critical-php-8-4-u-2ee15e",
-      "red-enterprise-linux-9-receives-critical-php-8-4-update"
-    ]
-  },
-  {
-    "slug": "rhel-10-rsync-update-addresses-security-flaws-3f6b1e3f",
-    "title": "RHEL 10 rsync Update Addresses Security Flaws",
-    "summary": "Red Hat released an rsync update for RHEL 10, rated Important by Product Security, addressing multiple undisclosed vulnerabilities. Each vulnerability has an associated CVSS base score, but no specific CVE identifiers are listed in the advisory. Users should apply the update promptly to mitigate potential exploitation and ensure rsync integrity on their systems.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102293",
-    "publishedAt": "2026-11-23T13:00:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhel-10-rsync-update-addresses-security-flaws",
-      "article-3f6b1e3f",
-      "3f6b1e3f",
-      "rhel-10-rsync-update-addresses-security-flaws-2ee15f"
-    ]
-  },
-  {
-    "slug": "human-in-the-loop-ai-explained-13e0ddae",
-    "title": "Human-in-the-Loop AI Explained",
-    "summary": "Human-in-the-Loop AI integrates human oversight into machine learning workflows, ensuring critical decision points involve human expertise. The approach mitigates autonomous model drift and reduces erroneous outputs by inserting human validation during training, inference, or action stages. Adoption of HITL frameworks requires clear governance, role definition, and continuous monitoring to maintain model integrity and compliance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/glossary/human-in-the-loop-hitl/",
-    "publishedAt": "2026-11-23T13:00:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "human-in-the-loop-ai-explained",
-      "article-13e0ddae",
-      "13e0ddae",
-      "human-in-the-loop-ai-explained-77087f"
-    ]
-  },
-  {
-    "slug": "cleverbridge-reports-credit-card-data-theft-c5388145",
-    "title": "Cleverbridge Reports Credit Card Data Theft",
-    "summary": "Cleverbridge confirmed a breach on November 4, 2026, during which attackers accessed stored credit card and CVV numbers from its e-commerce platform. The incident involved unauthorized activity detected by the platform, but the extent of affected clients and customer data remains unspecified. Cleverbridge urged affected customers to monitor accounts, change passwords, and contact payment processors for further protection.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/cleverbridge-data-breach-card-numbers-cvv/",
-    "publishedAt": "2026-11-23T13:00:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cleverbridge-reports-credit-card-data-theft",
-      "article-c5388145",
-      "c5388145",
-      "cleverbridge-reports-credit-card-data-theft-606837"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-freerdp-update-4d3c810a",
-    "title": "Red Hat Issues Important FreeRDP Update",
-    "summary": "Red Hat released an important security update for the freerdp package on RHEL 8, addressing a flaw that could allow remote code execution via RDP packets. The vulnerability, rated CVSS 8.2 by Red Hat, enables attackers with network access to execute code on the target system.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102286",
-    "publishedAt": "2026-11-23T12:58:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-freerdp-update",
-      "article-4d3c810a",
-      "4d3c810a",
-      "red-hat-issues-important-freerdp-update-2ee15f"
-    ]
-  },
-  {
-    "slug": "iterm2-remote-code-execution-flaw-lets-hackers-run-1a5ec94c",
-    "title": "iTerm2 Remote Code Execution Flaw Lets Hackers Run Malicious Commands by Displaying Crafted Files",
-    "summary": "A security flaw in iTerm2, a macOS terminal emulator, lets attackers run commands when a user displays a specially crafted file in a vulnerable terminal session. The user does not have to run the file as a script or paste a command supplied by the attacker.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/iterm2-remote-code-execution-flaw/",
-    "publishedAt": "2026-11-23T12:57:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "iterm2-remote-code-execution-flaw-lets-hackers-run",
-      "article-1a5ec94c",
-      "1a5ec94c",
-      "iterm2-remote-code-execution-flaw-lets-hackers-run-78c586",
-      "iterm2-remote-code-execution-flaw-lets-hackers-run-malicious"
-    ]
-  },
-  {
-    "slug": "fbi-investigates-breach-of-national-crime-informat-198d95d0",
-    "title": "FBI Investigates Breach of National Crime Information Center",
-    "summary": "A breach of the FBI’s National Crime Information Center (NCIC) exposed sensitive criminal and investigative data. The intrusion exploited an unpatched authentication flaw, potentially granting attackers access to records of fugitives, missing persons, and criminal histories. FBI officials are investigating, urging stakeholders to monitor for unauthorized disclosures and tighten internal access controls while a patch is developed.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/11/fbi-crime-database-reportedly-hacked",
-    "publishedAt": "2026-11-23T12:57:11.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/fbi-cyberattack-data-breach"
-      }
-    ],
-    "aliases": [
-      "fbi-investigates-breach-of-national-crime-informat",
-      "article-198d95d0",
-      "198d95d0",
-      "fbi-investigates-breach-of-national-crime-informat-426861",
-      "fbi-investigates-breach-of-national-crime-information-center"
-    ]
-  },
-  {
-    "slug": "ai-agent-enables-theft-of-insurer-and-eu-data-68acdc27",
-    "title": "AI Agent Enables Theft of Insurer and EU Data",
-    "summary": "A low-skilled hacker used a jailbroken AI agent to exfiltrate an insurer’s customer database and 8.6 GB of EU municipal files over nine days. The attacker issued misspelled French commands, exploiting the agent’s model to bypass authentication. Security teams should isolate the AI environment, revoke credentials, and conduct comprehensive analysis of breached systems.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/jailbroken-ai-agent/",
-    "publishedAt": "2026-11-23T12:44:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agent-enables-theft-of-insurer-and-eu-data",
-      "article-68acdc27",
-      "68acdc27",
-      "ai-agent-enables-theft-of-insurer-and-eu-data-6bf745"
-    ]
-  },
-  {
-    "slug": "crowdstrike-agrees-to-acquire-zscaler-for-43-9b-7b45dcf3",
-    "title": "CrowdStrike Agrees to Acquire Zscaler for $43.9B",
-    "summary": "CrowdStrike announced a $43.9 billion all-stock acquisition of Zscaler, aiming to integrate Zscaler’s cloud network security into its Falcon platform. The deal expands CrowdStrike’s control over device endpoints and corporate app connections, potentially consolidating cloud security services under a single vendor. Regulatory approvals remain pending; stakeholders should monitor integration timelines and potential antitrust reviews.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/crowdstrike-acquire-zscaler/",
-    "publishedAt": "2026-11-23T12:44:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-agrees-to-acquire-zscaler-for-43-9b",
-      "article-7b45dcf3",
-      "7b45dcf3",
-      "crowdstrike-agrees-to-acquire-zscaler-for-43-9b-1750db"
     ]
   }
 ];
