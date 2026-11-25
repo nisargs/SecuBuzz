@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "thanksgiving-thanks-and-critiques-from-david-71beab41",
+    "title": "Thanksgiving Thanks and Critiques from David",
+    "summary": "On November 25, 2026, David posted a Thanksgiving-themed note thanking the cybersecurity community and addressing threat actors. The brief message acknowledges community efforts, offers gratitude, and delivers a few pointed remarks toward malicious actors. No technical vulnerabilities or incidents are reported, making it a general commentary on community resilience today.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/oh-is-it-thanksgiving-i-hadnt-noticed/",
+    "publishedAt": "2026-11-25T19:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "thanksgiving-thanks-and-critiques-from-david",
+      "article-71beab41",
+      "71beab41",
+      "thanksgiving-thanks-and-critiques-from-david-7fab34"
+    ]
+  },
+  {
+    "slug": "socket-calm-theme-launches-for-vs-code-vim-neovim-42ce8e5d",
+    "title": "Socket Calm Theme Launches for VS Code, Vim, Neovim",
+    "summary": "Socket Calm, a free open-source syntax highlighting theme, has been released for VS Code, Vim, and Neovim. The theme draws inspiration from Socket's design system, offering consistent color palettes and readability enhancements across editors. Users can install the theme via the respective extension repositories or package managers, with no licensing restrictions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/socket-syntax-highlighting-theme",
+    "publishedAt": "2026-11-25T18:52:26.336Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "socket-calm-theme-launches-for-vs-code-vim-neovim",
+      "article-42ce8e5d",
+      "42ce8e5d",
+      "socket-calm-theme-launches-for-vs-code-vim-neovim-60b5db"
+    ]
+  },
+  {
     "slug": "ghostscript-vulnerability-updated-on-rhel-9-693eac98",
     "title": "Ghostscript Vulnerability Updated on RHEL 9",
     "summary": "Ghostscript on Red Hat Enterprise Linux 9 is affected by a security flaw. The vulnerability, rated Important by Red Hat Product Security, has a CVSS base score detailed in the CVE references; it permits potential exploitation of the Ghostscript interpreter. Red Hat has released an update; administrators should apply the Ghostscript patch immediately to mitigate the risk.",
@@ -44,6 +80,43 @@ export const news: NewsBrief[] = [
       "article-07f53266",
       "07f53266",
       "ghostscript-vulnerability-updated-on-rhel-8-2ee1de"
+    ]
+  },
+  {
+    "slug": "what-defenders-need-to-know-about-artex-the-agenti-2a2ad827",
+    "title": "What defenders need to know about ARTEX, the agentic AI framework threat actors abuse",
+    "summary": "The AI-powered penetration testing framework ARTEX has been abused by threat actors like Storm-0940, Storm-3358, Onyx Sleet, Pearl Sleet, Crystal Typhoon, and Salt Typhoon to accelerate their existing workflows related to network reconnaissance, credential attacks, and web application exploitation.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
+    "publishedAt": "2026-11-25T18:09:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "what-defenders-need-to-know-about-artex-the-agenti",
+      "article-2a2ad827",
+      "2a2ad827",
+      "what-defenders-need-to-know-about-artex-the-agenti-1976b7",
+      "what-defenders-need-to-know-about-artex-the-agentic-ai-frame"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103525-critical-php-security-update-be5c353f",
+    "title": "RHSA-2026:103525: Critical: php security update",
+    "summary": "An update for php is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103525",
+    "publishedAt": "2026-11-25T18:07:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103525-critical-php-security-update",
+      "article-be5c353f",
+      "be5c353f",
+      "rhsa-2026-103525-critical-php-security-update-2ee1de"
     ]
   },
   {
@@ -425,6 +498,27 @@ export const news: NewsBrief[] = [
       "f86918ec",
       "infratrust-highlights-exploited-supply-chain-flaws-1c992c",
       "infratrust-highlights-exploited-supply-chain-flaws-in-networ"
+    ]
+  },
+  {
+    "slug": "drupal-core-exploit-cve-2026-132165-enables-passwo-34e73f87",
+    "title": "Drupal Core Exploit CVE-2026-132165 Enables Passwordless Takeover",
+    "summary": "Hackers are exploiting CVE-2026-132165, a critical flaw in Drupal core, to take over live websites without authentication. The flaw permits unauthenticated remote code execution via HTTP requests, granting full site control; attacks were reported on November 19, 2026, with a CVSS score of 10.0.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/drupal-critical-security-flaw/",
+    "publishedAt": "2026-11-25T14:51:54.000Z",
+    "cves": [
+      "CVE-2026-132165"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-core-exploit-cve-2026-132165-enables-passwo",
+      "article-34e73f87",
+      "34e73f87",
+      "drupal-core-exploit-cve-2026-132165-enables-passwo-191782",
+      "drupal-core-exploit-cve-2026-132165-enables-passwordless-tak"
     ]
   },
   {
@@ -1732,6 +1826,24 @@ export const news: NewsBrief[] = [
       "48d50598",
       "com-affiliated-hackers-hijack-cloud-accounts-via-v-5e8142",
       "com-affiliated-hackers-hijack-cloud-accounts-via-vishing-for"
+    ]
+  },
+  {
+    "slug": "credential-harvesting-surges-to-13-of-exploitation-271d4e14",
+    "title": "Credential Harvesting Surges to 13% of Exploitation",
+    "summary": "Credential harvesting now accounts for 13% of all vulnerability exploitation from January to November 2026, up from 1% in January. VulnCheck’s canary network tracked 694 exploited CVEs, with 127 (18%) used to target database passwords, cloud keys, API tokens, or SSH keys. Security teams should prioritize monitoring credential-related exploits and enforce multi-factor authentication to mitigate this trend.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/25/vulncheck-credential-harvesting-exploitat-records/",
+    "publishedAt": "2026-11-25T06:30:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "credential-harvesting-surges-to-13-of-exploitation",
+      "article-271d4e14",
+      "271d4e14",
+      "credential-harvesting-surges-to-13-of-exploitation-6f1f30"
     ]
   },
   {
@@ -9409,127 +9521,6 @@ export const news: NewsBrief[] = [
       "eb9e39b2",
       "red-hat-releases-libxrender-security-update-for-rh-2ee15f",
       "red-hat-releases-libxrender-security-update-for-rhel-8-6"
-    ]
-  },
-  {
-    "slug": "peruvian-call-center-operator-sentenced-to-eight-y-a9926847",
-    "title": "Peruvian Call Center Operator Sentenced to Eight Years",
-    "summary": "A Peruvian call-center operator received an eight-year sentence for facilitating a government-impersonation fraud that targeted over 30,000 Spanish-speaking U.S. residents. The scheme used deceptive calls to coerce victims into revealing personal data, leading to millions of dollars stolen. The conviction highlights the legal consequences for individuals aiding such fraud operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
-    "publishedAt": "2026-11-23T12:02:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "peruvian-call-center-operator-sentenced-to-eight-y",
-      "article-a9926847",
-      "a9926847",
-      "peruvian-call-center-operator-sentenced-to-eight-y-1172be",
-      "peruvian-call-center-operator-sentenced-to-eight-years"
-    ]
-  },
-  {
-    "slug": "cisco-expressway-cve-2026-76466-enables-remote-roo-ec41c6ad",
-    "title": "Cisco Expressway CVE-2026-76466 Enables Remote Root Access Exploitation",
-    "summary": "Cisco Expressway devices are compromised by CVE-2026-76466, allowing attackers to gain root privileges without authentication. The flaw permits unauthenticated remote code execution via the web interface, enabling full system takeover and potential lateral movement. Cisco has released a patch; administrators must apply it immediately and verify device integrity to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-critical-cisco-expressway-flaw/",
-    "publishedAt": "2026-11-23T12:02:15.000Z",
-    "cves": [
-      "CVE-2026-76466"
-    ],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/cisco-expressway-vulnerability-exploited/"
-      }
-    ],
-    "aliases": [
-      "cisco-expressway-cve-2026-76466-enables-remote-roo",
-      "article-ec41c6ad",
-      "ec41c6ad",
-      "cisco-expressway-cve-2026-76466-enables-remote-roo-2b8cb0",
-      "cisco-expressway-cve-2026-76466-enables-remote-root-access-e"
-    ]
-  },
-  {
-    "slug": "essay-argues-ai-lacks-legal-rights-81502dc3",
-    "title": "Essay Argues AI Lacks Legal Rights",
-    "summary": "Character.AI petitioned a court to dismiss a death suit, claiming chatbot’s speech was protected and the company was a service, not a product. Judge Anne Conway rejected both arguments in May 2025, holding that the chatbot’s content could be subject to product-liability law. The ruling underscores the debate over AI accountability and limits of First Amendment protections for machine-generated speech.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/humans-have-rights-machines-do-not.html",
-    "publishedAt": "2026-11-23T12:00:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "essay-argues-ai-lacks-legal-rights",
-      "article-81502dc3",
-      "81502dc3",
-      "essay-argues-ai-lacks-legal-rights-1dc8c0"
-    ]
-  },
-  {
-    "slug": "cisa-adds-two-known-exploited-vulnerabilities-to-c-ed14a870",
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability CVE-2026-134624 N-able Mail Assure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-11-23T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-133968",
-      "CVE-2026-134624"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-two-known-exploited-vulnerabilities-to-c",
-      "article-ed14a870",
-      "ed14a870",
-      "cisa-adds-two-known-exploited-vulnerabilities-to-c-6d6b67",
-      "cisa-adds-two-known-exploited-vulnerabilities-to-catalog"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-patch-update-for-rhel-10-37b0ef8e",
-    "title": "Red Hat Releases Patch Update for RHEL 10",
-    "summary": "Red Hat released a security update for the patch component on RHEL 10, addressing several vulnerabilities. The vulnerabilities carry CVSS base scores linked via CVE references, indicating moderate risk if unpatched. Administrators should apply the update promptly to mitigate the identified security issues across all affected systems in the production environment.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102274",
-    "publishedAt": "2026-11-23T11:46:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-patch-update-for-rhel-10",
-      "article-37b0ef8e",
-      "37b0ef8e",
-      "red-hat-releases-patch-update-for-rhel-10-2ee15e"
-    ]
-  },
-  {
-    "slug": "badbox-3-0-ad-fraud-operation-disrupted-4267da39",
-    "title": "BadBox 3.0 Ad Fraud Operation Disrupted",
-    "summary": "Backdoors on low-cost consumer devices enabled the BadBox 3.0 ad-fraud operation, delivering modules that generated 40 billion bid requests daily. The operation leveraged residential-proxy capabilities to obfuscate traffic, creating an ad-fraud network that inflated auction volumes and siphoned revenue from publishers. Security teams coordinated a takedown that disrupted the backdoor infrastructure, halting bid-request generation and exposing compromised devices for remediation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/",
-    "publishedAt": "2026-11-23T11:44:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "badbox-3-0-ad-fraud-operation-disrupted",
-      "article-4267da39",
-      "4267da39",
-      "badbox-3-0-ad-fraud-operation-disrupted-2a52b5"
     ]
   }
 ];

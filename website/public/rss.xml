@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 18:44:24 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 19:35:06 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Thanksgiving Thanks and Critiques from David</title>
+      <link>https://secubuzz.com/news/thanksgiving-thanks-and-critiques-from-david-71beab41</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/thanksgiving-thanks-and-critiques-from-david-71beab41</guid>
+      <description><![CDATA[On November 25, 2026, David posted a Thanksgiving-themed note thanking the cybersecurity community and addressing threat actors. The brief message acknowledges community efforts, offers gratitude, and delivers a few pointed remarks toward malicious actors. No technical vulnerabilities or incidents are reported, making it a general commentary on community resilience today.]]></description>
+      <pubDate>Wed, 25 Nov 2026 19:00:00 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/oh-is-it-thanksgiving-i-hadnt-noticed/">Cisco Talos</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Socket Calm Theme Launches for VS Code, Vim, Neovim</title>
+      <link>https://secubuzz.com/news/socket-calm-theme-launches-for-vs-code-vim-neovim-42ce8e5d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/socket-calm-theme-launches-for-vs-code-vim-neovim-42ce8e5d</guid>
+      <description><![CDATA[Socket Calm, a free open-source syntax highlighting theme, has been released for VS Code, Vim, and Neovim. The theme draws inspiration from Socket's design system, offering consistent color palettes and readability enhancements across editors. Users can install the theme via the respective extension repositories or package managers, with no licensing restrictions.]]></description>
+      <pubDate>Wed, 25 Nov 2026 18:52:26 GMT</pubDate>
+      <source url="https://socket.dev/blog/socket-syntax-highlighting-theme">Socket.dev</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Ghostscript Vulnerability Updated on RHEL 9</title>
       <link>https://secubuzz.com/news/ghostscript-vulnerability-updated-on-rhel-9-693eac98</link>
@@ -23,6 +41,24 @@
       <description><![CDATA[Ghostscript on Red Hat Enterprise Linux 8 is affected by a security flaw. The vulnerability, rated Important by Red Hat Product Security, has a CVSS base score detailed in the CVE references; it permits potential exploitation of the Ghostscript interpreter. Red Hat has released an update; administrators should apply the Ghostscript patch immediately to mitigate the risk.]]></description>
       <pubDate>Wed, 25 Nov 2026 18:09:21 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103524">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>What defenders need to know about ARTEX, the agentic AI framework threat actors abuse</title>
+      <link>https://secubuzz.com/news/what-defenders-need-to-know-about-artex-the-agenti-2a2ad827</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/what-defenders-need-to-know-about-artex-the-agenti-2a2ad827</guid>
+      <description><![CDATA[The AI-powered penetration testing framework ARTEX has been abused by threat actors like Storm-0940, Storm-3358, Onyx Sleet, Pearl Sleet, Crystal Typhoon, and Salt Typhoon to accelerate their existing workflows related to network reconnaissance, credential attacks, and web application exploitation.]]></description>
+      <pubDate>Wed, 25 Nov 2026 18:09:06 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/">Microsoft Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:103525: Critical: php security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103525-critical-php-security-update-be5c353f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103525-critical-php-security-update-be5c353f</guid>
+      <description><![CDATA[An update for php is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 25 Nov 2026 18:07:31 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103525">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -204,6 +240,15 @@
       <pubDate>Wed, 25 Nov 2026 15:00:00 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Drupal Core Exploit CVE-2026-132165 Enables Passwordless Takeover</title>
+      <link>https://secubuzz.com/news/drupal-core-exploit-cve-2026-132165-enables-passwo-34e73f87</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-exploit-cve-2026-132165-enables-passwo-34e73f87</guid>
+      <description><![CDATA[Hackers are exploiting CVE-2026-132165, a critical flaw in Drupal core, to take over live websites without authentication. The flaw permits unauthenticated remote code execution via HTTP requests, granting full site control; attacks were reported on November 19, 2026, with a CVSS score of 10.0.]]></description>
+      <pubDate>Wed, 25 Nov 2026 14:51:54 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/drupal-critical-security-flaw/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Shufti Fraud Hub Reveals Links Among Legitimate Accounts</title>
@@ -411,51 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 13:22:01 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103504">Red Hat Security Advisories</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103493: Important: python-pyasn1 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103493-important-python-pyasn1-security-476fde4b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103493-important-python-pyasn1-security-476fde4b</guid>
-      <description><![CDATA[An update for python-pyasn1 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 13:20:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103493">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GeoServer Flaws Exploited via Unauthenticated RCE Chains</title>
-      <link>https://secubuzz.com/news/geoserver-flaws-exploited-via-unauthenticated-rce-89f45abd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/geoserver-flaws-exploited-via-unauthenticated-rce-89f45abd</guid>
-      <description><![CDATA[Threat actors exploit two patched GeoServer flaws via unauthenticated RCE chains. The flaws, CVE-2026-120705 (CVSS 8.6) and CVE-2026-129243, allow arbitrary file read and potential remote code execution by accessing files readable by the GeoServer process. Red Hat and GeoServer maintainers have released patches; security teams should apply updates immediately and verify configuration hardening.]]></description>
-      <pubDate>Wed, 25 Nov 2026 12:48:54 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>U.S. Treasury&apos;s Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion</title>
-      <link>https://secubuzz.com/news/u-s-treasury-s-financial-crimes-agency-takes-some-dcce4df8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/u-s-treasury-s-financial-crimes-agency-takes-some-dcce4df8</guid>
-      <description><![CDATA[The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in "unauthorized access to a limited subset of its systems," the bureau said on Tuesday. As a precaution, it has taken some systems offline.]]></description>
-      <pubDate>Wed, 25 Nov 2026 12:30:08 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>3.5 Billion Records Exposed in Two Public Databases</title>
-      <link>https://secubuzz.com/news/3-5-billion-records-exposed-in-two-public-database-50a29b2b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/3-5-billion-records-exposed-in-two-public-database-50a29b2b</guid>
-      <description><![CDATA[Researchers uncovered two publicly exposed databases holding more than 3.5 billion records, including stolen passwords, session cookies, and children’s school data. The exposure stemmed from misconfigured access controls that left the databases unauthenticated, enabling credential-stealing attacks. Affected parties must revoke compromised credentials, enforce stricter access policies, and monitor for credential reuse.]]></description>
-      <pubDate>Wed, 25 Nov 2026 12:27:36 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/11/two-exposed-databases-held-over-3-5-billion-records">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Fake WordPress Plugin Bypasses 2FA, Injects Malicious Scripts</title>
-      <link>https://secubuzz.com/news/fake-wordpress-plugin-bypasses-2fa-injects-malicio-4693aa8c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-wordpress-plugin-bypasses-2fa-injects-malicio-4693aa8c</guid>
-      <description><![CDATA[A counterfeit WordPress plugin enables attackers to bypass two-factor authentication and inject malicious JavaScript into visitor browsers. The hidden plugin exploits the WordPress authentication flow, allowing credential theft and cross-site scripting that can compromise user sessions and data. Security teams should remove the rogue plugin, audit the site for other hidden code, and enforce strict plugin vetting and two-factor enforcement.]]></description>
-      <pubDate>Wed, 25 Nov 2026 12:14:08 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fake-wordpress-plugin/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
