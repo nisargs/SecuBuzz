@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 10:44:30 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 11:02:03 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Co-founder Indicted for Paying Ransomware Gangs</title>
+      <link>https://secubuzz.com/news/co-founder-indicted-for-paying-ransomware-gangs-e554d7a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/co-founder-indicted-for-paying-ransomware-gangs-e554d7a7</guid>
+      <description><![CDATA[Juan Ricardo Palacio Escobar, co-founder of a Florida data recovery firm, was indicted for allegedly paying ransomware gangs while claiming no involvement. He faces three wire-fraud counts, each punishable by up to 20 years, under a Rhode Island grand jury indictment. The case underscores the need for recovery firms to maintain transparent payment policies and comply with anti-money-laundering regulations.]]></description>
+      <pubDate>Thu, 26 Nov 2026 09:59:07 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/26/ransomware-recovery-fraud-florida-firm-co-founder-charged/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Hacker Servers Expose U.S. Hospital Credentials and Cloud Access</title>
       <link>https://secubuzz.com/news/hacker-servers-expose-u-s-hospital-credentials-and-877e7623</link>
@@ -15,6 +24,15 @@
       <pubDate>Thu, 26 Nov 2026 08:41:41 GMT</pubDate>
       <source url="https://cybersecuritynews.com/exposed-hacker-servers/">Cyber Security News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Apache Commons BCEL Vulnerability Allows Class Cache Manipulation</title>
+      <link>https://secubuzz.com/news/apache-commons-bcel-vulnerability-allows-class-cac-05a6392e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-commons-bcel-vulnerability-allows-class-cac-05a6392e</guid>
+      <description><![CDATA[The Apache Commons BCEL library contains a flaw that permits improper caching of classes under self-declared names. An attacker could exploit this to cause BCEL to return or verify a different class than requested, potentially enabling code execution. Ubuntu recommends applying the updated package that corrects the caching logic to mitigate the vulnerability.]]></description>
+      <pubDate>Thu, 26 Nov 2026 08:23:06 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9207-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>FIFA Breach: 12.2 GB Documents Exposed</title>
@@ -33,6 +51,15 @@
       <pubDate>Thu, 26 Nov 2026 08:00:00 GMT</pubDate>
       <source url="https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers">Dark Reading</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>Insider Threat Management Solutions Ranked for 2026</title>
+      <link>https://secubuzz.com/news/insider-threat-management-solutions-ranked-for-202-940b4ae0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/insider-threat-management-solutions-ranked-for-202-940b4ae0</guid>
+      <description><![CDATA[The article ranks insider threat management solutions for 2026, focusing on tools that detect risky behavior by authenticated users. It compares platforms by detection emphasis, including user behavior, data movement, and analytics, while noting benign actions can trigger alerts. Security teams should evaluate these options against insider risk use cases, deployment needs, and alert triage workflows.]]></description>
+      <pubDate>Thu, 26 Nov 2026 07:42:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-insider-threat-management/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>2026 Phishing Simulation Tools Ranked</title>
@@ -159,6 +186,15 @@
       <pubDate>Thu, 26 Nov 2026 05:00:06 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/26/incogni-online-privacy-concerns-report/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>dav1d Flaw May Enable Code via Large AV1 Frames</title>
+      <link>https://secubuzz.com/news/dav1d-flaw-may-enable-code-via-large-av1-frames-659c5d3e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dav1d-flaw-may-enable-code-via-large-av1-frames-659c5d3e</guid>
+      <description><![CDATA[The dav1d AV1 decoder incorrectly processes streams containing extremely large frame sizes, violating expected bounds. The vulnerability can cause a crash, and in certain configurations may allow attackers to execute arbitrary code. Ubuntu recommends applying the updated dav1d package that corrects the frame-size validation to mitigate the issue for all users.]]></description>
+      <pubDate>Thu, 26 Nov 2026 04:26:04 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9204-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Wiz ADR Enhances Cloud AI Detection with Application Context</title>
@@ -419,42 +455,6 @@
       <description><![CDATA[An update for cockpit is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Moderate.]]></description>
       <pubDate>Wed, 25 Nov 2026 18:06:38 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103527">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103526: Moderate: cockpit security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103526-moderate-cockpit-security-update-8089f5c8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103526-moderate-cockpit-security-update-8089f5c8</guid>
-      <description><![CDATA[An update for cockpit is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Moderate.]]></description>
-      <pubDate>Wed, 25 Nov 2026 18:05:54 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103526">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103528: Moderate: cockpit security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103528-moderate-cockpit-security-update-cc2c43dc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103528-moderate-cockpit-security-update-cc2c43dc</guid>
-      <description><![CDATA[An update for cockpit is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Moderate.]]></description>
-      <pubDate>Wed, 25 Nov 2026 18:04:29 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103528">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>USN-9199-1: authd vulnerability</title>
-      <link>https://secubuzz.com/news/usn-9199-1-authd-vulnerability-282818bc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9199-1-authd-vulnerability-282818bc</guid>
-      <description><![CDATA[Adrian Dombeck discovered that authd incorrectly assigned user and group identifiers during first-time SSH logins. A remote authenticated user could possibly use this issue to access or modify files belonging to another user, potentially leading to account takeover or privilege escalation.]]></description>
-      <pubDate>Wed, 25 Nov 2026 17:32:51 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9199-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Florida Ransomware Recovery CEO Indicted</title>
-      <link>https://secubuzz.com/news/florida-ransomware-recovery-ceo-indicted-b6e2f558</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/florida-ransomware-recovery-ceo-indicted-b6e2f558</guid>
-      <description><![CDATA[A federal grand jury indicted the CEO of a Florida-based ransomware recovery firm for allegedly lying about services and paying ransoms to cybercriminals. The indictment alleges the executive engaged in deceptive practices and facilitated financial transactions that supported ransomware operators. The case underscores the legal risks for recovery providers and signals increased scrutiny of the industry by law enforcement.]]></description>
-      <pubDate>Wed, 25 Nov 2026 17:30:00 GMT</pubDate>
-      <source url="https://therecord.media/ransomware-doj-indictment-recovery">The Record</source>
       <category>General</category>
     </item>
   </channel>

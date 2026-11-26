@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "co-founder-indicted-for-paying-ransomware-gangs-e554d7a7",
+    "title": "Co-founder Indicted for Paying Ransomware Gangs",
+    "summary": "Juan Ricardo Palacio Escobar, co-founder of a Florida data recovery firm, was indicted for allegedly paying ransomware gangs while claiming no involvement. He faces three wire-fraud counts, each punishable by up to 20 years, under a Rhode Island grand jury indictment. The case underscores the need for recovery firms to maintain transparent payment policies and comply with anti-money-laundering regulations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/26/ransomware-recovery-fraud-florida-firm-co-founder-charged/",
+    "publishedAt": "2026-11-26T09:59:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "co-founder-indicted-for-paying-ransomware-gangs",
+      "article-e554d7a7",
+      "e554d7a7",
+      "co-founder-indicted-for-paying-ransomware-gangs-15833f"
+    ]
+  },
+  {
     "slug": "hacker-servers-expose-u-s-hospital-credentials-and-877e7623",
     "title": "Hacker Servers Expose U.S. Hospital Credentials and Cloud Access",
     "summary": "Exposed web directories on hacker servers revealed U.S. hospital credential records, 155,000 cloud storage objects, and a map of law firm remote-access systems. Operators had used a valid cloud token, suggesting credential reuse and potential unauthorized access to sensitive medical and legal data. Teams should secure directories, revoke tokens, enforce MFA, and investigate lateral movement to mitigate data exfiltration risks.",
@@ -27,6 +45,25 @@ export const news: NewsBrief[] = [
       "877e7623",
       "hacker-servers-expose-u-s-hospital-credentials-and-5821f1",
       "hacker-servers-expose-u-s-hospital-credentials-and-cloud-acc"
+    ]
+  },
+  {
+    "slug": "apache-commons-bcel-vulnerability-allows-class-cac-05a6392e",
+    "title": "Apache Commons BCEL Vulnerability Allows Class Cache Manipulation",
+    "summary": "The Apache Commons BCEL library contains a flaw that permits improper caching of classes under self-declared names. An attacker could exploit this to cause BCEL to return or verify a different class than requested, potentially enabling code execution. Ubuntu recommends applying the updated package that corrects the caching logic to mitigate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9207-1",
+    "publishedAt": "2026-11-26T08:23:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apache-commons-bcel-vulnerability-allows-class-cac",
+      "article-05a6392e",
+      "05a6392e",
+      "apache-commons-bcel-vulnerability-allows-class-cac-7e6d72",
+      "apache-commons-bcel-vulnerability-allows-class-cache-manipul"
     ]
   },
   {
@@ -63,6 +100,25 @@ export const news: NewsBrief[] = [
       "article-d56b9d3c",
       "d56b9d3c",
       "cyprus-targeted-by-iranian-espionage-group-7247cd"
+    ]
+  },
+  {
+    "slug": "insider-threat-management-solutions-ranked-for-202-940b4ae0",
+    "title": "Insider Threat Management Solutions Ranked for 2026",
+    "summary": "The article ranks insider threat management solutions for 2026, focusing on tools that detect risky behavior by authenticated users. It compares platforms by detection emphasis, including user behavior, data movement, and analytics, while noting benign actions can trigger alerts. Security teams should evaluate these options against insider risk use cases, deployment needs, and alert triage workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-insider-threat-management/",
+    "publishedAt": "2026-11-26T07:42:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "insider-threat-management-solutions-ranked-for-202",
+      "article-940b4ae0",
+      "940b4ae0",
+      "insider-threat-management-solutions-ranked-for-202-38ca89",
+      "insider-threat-management-solutions-ranked-for-2026"
     ]
   },
   {
@@ -320,6 +376,24 @@ export const news: NewsBrief[] = [
       "article-4dc58a49",
       "4dc58a49",
       "survey-shows-users-will-pay-to-remove-search-data-70bdaa"
+    ]
+  },
+  {
+    "slug": "dav1d-flaw-may-enable-code-via-large-av1-frames-659c5d3e",
+    "title": "dav1d Flaw May Enable Code via Large AV1 Frames",
+    "summary": "The dav1d AV1 decoder incorrectly processes streams containing extremely large frame sizes, violating expected bounds. The vulnerability can cause a crash, and in certain configurations may allow attackers to execute arbitrary code. Ubuntu recommends applying the updated dav1d package that corrects the frame-size validation to mitigate the issue for all users.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9204-1",
+    "publishedAt": "2026-11-26T04:26:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dav1d-flaw-may-enable-code-via-large-av1-frames",
+      "article-659c5d3e",
+      "659c5d3e",
+      "dav1d-flaw-may-enable-code-via-large-av1-frames-7e6d7d"
     ]
   },
   {
@@ -1118,9 +1192,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisa-alerts-on-critical-danfoss-controller-vulnera-91051535",
-    "title": "CISA Alerts on Critical Danfoss Controller Vulnerability",
-    "summary": "CISA issued a warning about a critical flaw in Danfoss AK-SM 8xxA Series refrigeration controllers used by food retailers, identified as CVE-2026-129713. The vulnerability permits unauthenticated remote code execution, enabling attackers to manipulate temperature controls and potentially disrupt refrigeration operations. CISA recommends applying the vendor’s patch immediately, updating firmware, and monitoring for anomalous activity to mitigate risk.",
+    "slug": "cisa-issues-advisory-on-critical-danfoss-controlle-932ccd6a",
+    "title": "CISA Issues Advisory on Critical Danfoss Controller Vulnerability (CVE-2026-129713)",
+    "summary": "CISA has issued an advisory on a critical flaw affecting Danfoss AK-SM 8xxA refrigeration controllers used in food retail facilities. The vulnerability, CVE-2026-129713, allows unauthenticated remote code execution, enabling attackers to alter temperature settings and potentially disrupt refrigeration operations. Operators are urged to apply the vendor’s patch or upgrade to firmware 5.4.1 immediately and monitor for anomalous activity.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
@@ -1129,13 +1203,18 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-129713"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/danfoss-refrigeration-controller-flaw/"
+      }
+    ],
     "aliases": [
-      "cisa-alerts-on-critical-danfoss-controller-vulnera",
-      "article-91051535",
-      "91051535",
-      "cisa-alerts-on-critical-danfoss-controller-vulnera-1a00d0",
-      "cisa-alerts-on-critical-danfoss-controller-vulnerability"
+      "cisa-issues-advisory-on-critical-danfoss-controlle",
+      "article-932ccd6a",
+      "932ccd6a",
+      "cisa-issues-advisory-on-critical-danfoss-controlle-1a00d0",
+      "cisa-issues-advisory-on-critical-danfoss-controller-vulnerab"
     ]
   },
   {
@@ -9559,81 +9638,6 @@ export const news: NewsBrief[] = [
       "article-084e3bca",
       "084e3bca",
       "apache-solr-health-check-vulnerability-disclosed-5d2c79"
-    ]
-  },
-  {
-    "slug": "rhel9-podman-update-fixes-important-security-flaw-88343d44",
-    "title": "RHEL9 Podman Update Fixes Important Security Flaw",
-    "summary": "Red Hat released a security update for the podman container engine on RHEL9 to address a critical flaw. The patch fixes an undisclosed vulnerability rated Important by Red Hat Product Security, with CVSS scores linked through CVE references. Administrators should apply the podman update immediately to prevent exploitation and maintain secure container orchestration environments.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102296",
-    "publishedAt": "2026-11-23T15:32:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhel9-podman-update-fixes-important-security-flaw",
-      "article-88343d44",
-      "88343d44",
-      "rhel9-podman-update-fixes-important-security-flaw-2ee15f"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102507-important-webkit2gtk3-security-up-cac88745",
-    "title": "RHSA-2026:102507: Important: webkit2gtk3 security update",
-    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102507",
-    "publishedAt": "2026-11-23T15:30:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102507-important-webkit2gtk3-security-up",
-      "article-cac88745",
-      "cac88745",
-      "rhsa-2026-102507-important-webkit2gtk3-security-up-2ee169",
-      "rhsa-2026-102507-important-webkit2gtk3-security-update"
-    ]
-  },
-  {
-    "slug": "grafana-update-addresses-remote-code-execution-vul-55e19624",
-    "title": "Grafana Update Addresses Remote Code Execution Vulnerabilities",
-    "summary": "A Grafana security update for Red Hat Enterprise Linux 10 addresses multiple vulnerabilities that could enable remote code execution through the web interface. The vulnerabilities are rated Important, with CVSS base scores listed in the CVE references, indicating high severity potential for exploitation. Red Hat has released the update; administrators should apply the patch immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102502",
-    "publishedAt": "2026-11-23T15:25:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "grafana-update-addresses-remote-code-execution-vul",
-      "article-55e19624",
-      "55e19624",
-      "grafana-update-addresses-remote-code-execution-vul-2ee169",
-      "grafana-update-addresses-remote-code-execution-vulnerabiliti"
-    ]
-  },
-  {
-    "slug": "synology-dsm-vulnerability-affects-versions-before-f780faa3",
-    "title": "Synology DSM Vulnerability Affects Versions Before 7.4.1",
-    "summary": "DiskStation Manager (DSM) versions prior to 7.4.1 contain a vulnerability that could allow unauthorized access or privilege escalation. The flaw permits attackers to exploit a logic error in DSM’s authentication flow, potentially bypassing user credentials and gaining elevated privileges. Administrators should upgrade to the latest DSM release or apply the vendor-issued patch, and enforce strict access controls to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/synology-security-advisory-av26-1193",
-    "publishedAt": "2026-11-23T15:23:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "synology-dsm-vulnerability-affects-versions-before",
-      "article-f780faa3",
-      "f780faa3",
-      "synology-dsm-vulnerability-affects-versions-before-741c15",
-      "synology-dsm-vulnerability-affects-versions-before-7-4-1"
     ]
   }
 ];
