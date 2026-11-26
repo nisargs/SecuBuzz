@@ -11,6 +11,118 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "mitel-juniper-vates-danfoss-vulnerabilities-exploi-3bcf3842",
+    "title": "Mitel, Juniper, Vates, Danfoss Vulnerabilities Exploited",
+    "summary": "CISA added ten known exploited vulnerabilities, including five affecting Mitel MiCollab, to its KEV catalog. The flaws, such as CVE-2026-133275 with CVSS 5.3, enable arbitrary file uploads and other attacks, exposing sensitive data and disrupting communications across Mitel, Juniper, Vates, and Danfoss products. Administrators should apply vendor patches, disable vulnerable features, and monitor for anomalous activity to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+    "publishedAt": "2026-11-26T06:44:46.000Z",
+    "cves": [
+      "CVE-2026-133275"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "mitel-juniper-vates-danfoss-vulnerabilities-exploi",
+      "article-3bcf3842",
+      "3bcf3842",
+      "mitel-juniper-vates-danfoss-vulnerabilities-exploi-7a039c",
+      "mitel-juniper-vates-danfoss-vulnerabilities-exploited"
+    ]
+  },
+  {
+    "slug": "4-200-servers-exposed-to-ai-hacking-frameworks-cd6f234a",
+    "title": "4,200 Servers Exposed to AI Hacking Frameworks",
+    "summary": "Shadowserver Foundation identified over 4,200 internet-exposed servers running AI-powered hacking frameworks, up from 3,700 the day before. The report logged more than 10,000 attack events from 80 IPs between Nov 9 and 23, showing active exploitation of misconfigured AI tools.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/4000-servers-running-ai-hacking-agents-are-exposed/",
+    "publishedAt": "2026-11-26T06:26:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "4-200-servers-exposed-to-ai-hacking-frameworks",
+      "article-cd6f234a",
+      "cd6f234a",
+      "4-200-servers-exposed-to-ai-hacking-frameworks-1df66b"
+    ]
+  },
+  {
+    "slug": "proxmox-9-3-adds-production-snapshots-for-san-vms-c9749e60",
+    "title": "Proxmox 9.3 Adds Production Snapshots for SAN VMs",
+    "summary": "Proxmox Virtual Environment 9.3 introduces snapshots for VMs on shared LVM storage accessed via iSCSI or Fibre Channel SANs. The update builds volume chains on thick-provisioned LVM, preserving guest identities across migrations, backups, and restores for production workloads. Administrators enable the feature via the Proxmox UI or API; no firmware or security patches are needed.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/26/proxmox-9-3-adds-production-snapshots-for-san-backed-vms/",
+    "publishedAt": "2026-11-26T06:07:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "proxmox-9-3-adds-production-snapshots-for-san-vms",
+      "article-c9749e60",
+      "c9749e60",
+      "proxmox-9-3-adds-production-snapshots-for-san-vms-4df62e"
+    ]
+  },
+  {
+    "slug": "roundcube-webmail-flaws-enable-code-execution-395f8464",
+    "title": "Roundcube Webmail Flaws Enable Code Execution",
+    "summary": "Roundcube released versions 1.6.22 and 1.7.7 to patch 12 flaws that could let attackers execute malicious code and expose sensitive data. The vulnerabilities stem from improper handling of attachments, message rendering, and server connections, allowing unauthorized email filter code execution and data leakage. Users should upgrade to the latest releases and verify configuration settings to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/roundcube-webmail-flaws/",
+    "publishedAt": "2026-11-26T06:05:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "roundcube-webmail-flaws-enable-code-execution",
+      "article-395f8464",
+      "395f8464",
+      "roundcube-webmail-flaws-enable-code-execution-231c4b"
+    ]
+  },
+  {
+    "slug": "4-400-malicious-domains-target-holiday-shoppers-3ab655eb",
+    "title": "4,400 Malicious Domains Target Holiday Shoppers",
+    "summary": "FortiGuard Labs reports over 4,400 newly registered malicious domains poised to exploit holiday shoppers. These domains, identified among 24,000 seasonal keyword registrations, facilitate retailer impersonation, payment fraud, and account takeovers, with underground markets trading stolen customer data and e-commerce infrastructure access. Security teams should block these domains, monitor for phishing, and enforce strict domain whitelisting to protect consumers.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/26/fortinet-holiday-shopping-cyber-threats-report/",
+    "publishedAt": "2026-11-26T06:00:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "4-400-malicious-domains-target-holiday-shoppers",
+      "article-3ab655eb",
+      "3ab655eb",
+      "4-400-malicious-domains-target-holiday-shoppers-65a04d"
+    ]
+  },
+  {
+    "slug": "solarwinds-serv-u-2026-4-patch-addresses-root-acce-ee7a0cd3",
+    "title": "SolarWinds Serv-U 2026.4 Patch Addresses Root Access Flaws",
+    "summary": "SolarWinds released Serv-U 2026.4, fixing 18 vulnerabilities, including nine critical flaws that could grant attackers root access on Linux servers, with lower risk on Windows. The patch also eliminates a high-severity command-injection flaw that affects only Windows installations, removing a remote code execution vector. Security teams should apply Serv-U 2026.4 immediately to close the root-access and command-injection vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-solarwinds-serv-u-flaws/",
+    "publishedAt": "2026-11-26T06:00:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "solarwinds-serv-u-2026-4-patch-addresses-root-acce",
+      "article-ee7a0cd3",
+      "ee7a0cd3",
+      "solarwinds-serv-u-2026-4-patch-addresses-root-acce-295b94",
+      "solarwinds-serv-u-2026-4-patch-addresses-root-access-flaws"
+    ]
+  },
+  {
     "slug": "google-requires-mcp-or-cli-for-workspace-ai-agents-c362b12f",
     "title": "Google Requires MCP or CLI for Workspace AI Agents",
     "summary": "Google announced mandatory Model Context Protocol (MCP) or command-line interface access for Workspace AI agents starting February 2027 to secure autonomous agent interactions with enterprise data. New controls include dedicated agent identities, human approval for sensitive operations, prompt injection screening, and restrictions on third-party AI tool data processing.",
@@ -444,16 +556,22 @@ export const news: NewsBrief[] = [
   {
     "slug": "drupal-core-vulnerability-cve-2026-136716-exploite-b1dc9d75",
     "title": "Drupal Core Vulnerability CVE-2026-136716 Exploited in Wild",
-    "summary": "Drupal core versions prior to 10.6.23, 11.3.23, and 11.4.14 are vulnerable to an access bypass flaw exploited in the wild. The flaw, identified as CVE-2026-136716, allows attackers to bypass authentication and gain unauthorized access, with public exploitation evidence and a high severity rating. Drupal administrators should apply the latest patch releases immediately and review vendor guidance to mitigate the vulnerability.",
+    "summary": "Drupal core versions before 10.6.23, 11.3.23, and 11.4.14 are affected by CVE-2026-136716, a critical access-bypass flaw that attackers exploited worldwide. The flaw bypasses authentication, allowing unauthorized access to site administration and potential data exfiltration. Drupal administrators must apply the latest patch releases immediately and review vendor guidance to mitigate the vulnerability.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Canadian Centre for Cyber Security",
     "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209",
     "publishedAt": "2026-11-25T19:21:44.000Z",
     "cves": [
-      "CVE-2026-136716"
+      "CVE-2026-136716",
+      "CVE-2026-132165"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html"
+      }
+    ],
     "aliases": [
       "drupal-core-vulnerability-cve-2026-136716-exploite",
       "article-b1dc9d75",
@@ -2435,6 +2553,24 @@ export const news: NewsBrief[] = [
       "466f2d8d",
       "anthropic-scanner-discovers-drupal-flaw-attacks-ex-793d78",
       "anthropic-scanner-discovers-drupal-flaw-attacks-exploit-it"
+    ]
+  },
+  {
+    "slug": "microsoft-365-compromise-via-user-actions-explored-6e06725b",
+    "title": "Microsoft 365 Compromise via User Actions Explored",
+    "summary": "Three real-world attacks show how ordinary user actions can lead to full Microsoft 365 compromise, exposing sensitive data. The incidents exploit social-engineering and phishing vectors that bypass authentication, enabling attackers to elevate privileges within the tenant. Defenders should enforce multi-factor authentication, conduct user awareness training, and apply the latest Microsoft 365 security updates to mitigate these paths.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/three-attacks-zero-exploits-microsoft-365",
+    "publishedAt": "2026-11-25T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-365-compromise-via-user-actions-explored",
+      "article-6e06725b",
+      "6e06725b",
+      "microsoft-365-compromise-via-user-actions-explored-25d61e"
     ]
   },
   {
@@ -9486,133 +9622,6 @@ export const news: NewsBrief[] = [
       "c6aa16cc",
       "gl-inet-cloud-compromise-deploys-malware-to-router-281202",
       "gl-inet-cloud-compromise-deploys-malware-to-routers-and-kvms"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-update-for-qt5-qtdeclarat-a2de0e52",
-    "title": "Red Hat Issues Important Update for qt5-qtdeclarative",
-    "summary": "Red Hat released an important security update for qt5-qtdeclarative on RHEL9.4, correcting several memory corruption bugs in the Qt Declarative module. These flaws could allow local attackers to crash the application or potentially execute arbitrary code, with CVSS scores up to 8.3. Apply the patch through the standard RHEL9.4 update mechanism; no workarounds are provided.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102406",
-    "publishedAt": "2026-11-23T15:02:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-update-for-qt5-qtdeclarat",
-      "article-a2de0e52",
-      "a2de0e52",
-      "red-hat-issues-important-update-for-qt5-qtdeclarat-2ee165",
-      "red-hat-issues-important-update-for-qt5-qtdeclarative"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-update-for-tigervnc-3d563aba",
-    "title": "Red Hat Issues Important Update for tigervnc",
-    "summary": "Red Hat released an important security update for tigervnc on RHEL9.4, fixing multiple remote code execution flaws in the VNC server. The vulnerabilities enable unauthenticated attackers to run arbitrary code with the VNC service’s privileges, with CVSS scores up to 9.2. Apply the patch via the standard RHEL9.4 update channel; no workarounds are available.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102402",
-    "publishedAt": "2026-11-23T15:02:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-update-for-tigervnc",
-      "article-3d563aba",
-      "3d563aba",
-      "red-hat-issues-important-update-for-tigervnc-2ee165"
-    ]
-  },
-  {
-    "slug": "ai-agent-identity-gaps-span-multiple-platforms-666cfee6",
-    "title": "AI Agent Identity Gaps Span Multiple Platforms",
-    "summary": "AI agents operating across multiple platforms create security gaps when no single vendor can observe or control their actions, according to Token Security. The shared responsibility problem complicates agent identity, permission, and accountability management for organizations. Organizations should assign clear ownership and accountability for agent identities and permissions across platforms.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
-    "publishedAt": "2026-11-23T15:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agent-identity-gaps-span-multiple-platforms",
-      "article-666cfee6",
-      "666cfee6",
-      "ai-agent-identity-gaps-span-multiple-platforms-4aa78c"
-    ]
-  },
-  {
-    "slug": "huntress-begins-eu-data-hosting-in-frankfurt-12ff4d6c",
-    "title": "Huntress Begins EU Data Hosting in Frankfurt",
-    "summary": "Huntress has started European Union data hosting, with Phase 1 storing certain data in Frankfurt. The company said other data currently remains in the United States while Phase 2 is planned. Customers should review the available regional data residency details to fully understand which information is hosted in each location.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/eu-data-hosting",
-    "publishedAt": "2026-11-23T15:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "huntress-begins-eu-data-hosting-in-frankfurt",
-      "article-12ff4d6c",
-      "12ff4d6c",
-      "huntress-begins-eu-data-hosting-in-frankfurt-76a822"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-tigervnc-security-update-822afb48",
-    "title": "Red Hat Issues Tigervnc Security Update",
-    "summary": "Red Hat released a security update for the tigervnc package on RHEL 9.2 for SAP solutions, addressing significant vulnerabilities. The patch fixes flaws that could enable remote code execution or privilege escalation via the VNC protocol, with CVSS scores linked to CVE references. Users should update the tigervnc package promptly to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102400",
-    "publishedAt": "2026-11-23T14:56:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-tigervnc-security-update",
-      "article-822afb48",
-      "822afb48",
-      "red-hat-issues-tigervnc-security-update-2ee165"
-    ]
-  },
-  {
-    "slug": "n-able-mailassure-vulnerability-advisory-9c081c10",
-    "title": "N-Able MailAssure Vulnerability Advisory",
-    "summary": "N-Able issued advisory AV26-1191 for MailAssure before 20261121.1943, noting a vulnerability. The flaw may allow unauthorized access to email data or compromise the integrity of mail transmissions, though no exploitation reports have been confirmed. Administrators are advised to review the provided links, apply available updates, and monitor for any anomalous activity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1191",
-    "publishedAt": "2026-11-23T14:51:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-mailassure-vulnerability-advisory",
-      "article-9c081c10",
-      "9c081c10",
-      "n-able-mailassure-vulnerability-advisory-761d20"
-    ]
-  },
-  {
-    "slug": "nvidia-reinstates-jensen-huang-as-ceo-04e4f5e8",
-    "title": "NVIDIA Reinstates Jensen Huang as CEO",
-    "summary": "NVIDIA reinstated Jensen Huang as president, chief executive officer, and board director on November 23, 2026, after a unanimous board vote. The decision took effect immediately, but an independent board inquiry into reports that a foreign intelligence effort targeted Huang remains open. NVIDIA said the board met with Huang several times and received additional information.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/nvidia-reinstates-jensen-huang/",
-    "publishedAt": "2026-11-23T14:51:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nvidia-reinstates-jensen-huang-as-ceo",
-      "article-04e4f5e8",
-      "04e4f5e8",
-      "nvidia-reinstates-jensen-huang-as-ceo-42eb2b"
     ]
   }
 ];

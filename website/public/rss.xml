@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 06:43:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 07:44:48 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mitel, Juniper, Vates, Danfoss Vulnerabilities Exploited</title>
+      <link>https://secubuzz.com/news/mitel-juniper-vates-danfoss-vulnerabilities-exploi-3bcf3842</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mitel-juniper-vates-danfoss-vulnerabilities-exploi-3bcf3842</guid>
+      <description><![CDATA[CISA added ten known exploited vulnerabilities, including five affecting Mitel MiCollab, to its KEV catalog. The flaws, such as CVE-2026-133275 with CVSS 5.3, enable arbitrary file uploads and other attacks, exposing sensitive data and disrupting communications across Mitel, Juniper, Vates, and Danfoss products. Administrators should apply vendor patches, disable vulnerable features, and monitor for anomalous activity to mitigate exploitation.]]></description>
+      <pubDate>Thu, 26 Nov 2026 06:44:46 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>4,200 Servers Exposed to AI Hacking Frameworks</title>
+      <link>https://secubuzz.com/news/4-200-servers-exposed-to-ai-hacking-frameworks-cd6f234a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/4-200-servers-exposed-to-ai-hacking-frameworks-cd6f234a</guid>
+      <description><![CDATA[Shadowserver Foundation identified over 4,200 internet-exposed servers running AI-powered hacking frameworks, up from 3,700 the day before. The report logged more than 10,000 attack events from 80 IPs between Nov 9 and 23, showing active exploitation of misconfigured AI tools.]]></description>
+      <pubDate>Thu, 26 Nov 2026 06:26:55 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/4000-servers-running-ai-hacking-agents-are-exposed/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Proxmox 9.3 Adds Production Snapshots for SAN VMs</title>
+      <link>https://secubuzz.com/news/proxmox-9-3-adds-production-snapshots-for-san-vms-c9749e60</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/proxmox-9-3-adds-production-snapshots-for-san-vms-c9749e60</guid>
+      <description><![CDATA[Proxmox Virtual Environment 9.3 introduces snapshots for VMs on shared LVM storage accessed via iSCSI or Fibre Channel SANs. The update builds volume chains on thick-provisioned LVM, preserving guest identities across migrations, backups, and restores for production workloads. Administrators enable the feature via the Proxmox UI or API; no firmware or security patches are needed.]]></description>
+      <pubDate>Thu, 26 Nov 2026 06:07:23 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/26/proxmox-9-3-adds-production-snapshots-for-san-backed-vms/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Roundcube Webmail Flaws Enable Code Execution</title>
+      <link>https://secubuzz.com/news/roundcube-webmail-flaws-enable-code-execution-395f8464</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/roundcube-webmail-flaws-enable-code-execution-395f8464</guid>
+      <description><![CDATA[Roundcube released versions 1.6.22 and 1.7.7 to patch 12 flaws that could let attackers execute malicious code and expose sensitive data. The vulnerabilities stem from improper handling of attachments, message rendering, and server connections, allowing unauthorized email filter code execution and data leakage. Users should upgrade to the latest releases and verify configuration settings to prevent exploitation.]]></description>
+      <pubDate>Thu, 26 Nov 2026 06:05:33 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/roundcube-webmail-flaws/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>4,400 Malicious Domains Target Holiday Shoppers</title>
+      <link>https://secubuzz.com/news/4-400-malicious-domains-target-holiday-shoppers-3ab655eb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/4-400-malicious-domains-target-holiday-shoppers-3ab655eb</guid>
+      <description><![CDATA[FortiGuard Labs reports over 4,400 newly registered malicious domains poised to exploit holiday shoppers. These domains, identified among 24,000 seasonal keyword registrations, facilitate retailer impersonation, payment fraud, and account takeovers, with underground markets trading stolen customer data and e-commerce infrastructure access. Security teams should block these domains, monitor for phishing, and enforce strict domain whitelisting to protect consumers.]]></description>
+      <pubDate>Thu, 26 Nov 2026 06:00:53 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/26/fortinet-holiday-shopping-cyber-threats-report/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>SolarWinds Serv-U 2026.4 Patch Addresses Root Access Flaws</title>
+      <link>https://secubuzz.com/news/solarwinds-serv-u-2026-4-patch-addresses-root-acce-ee7a0cd3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/solarwinds-serv-u-2026-4-patch-addresses-root-acce-ee7a0cd3</guid>
+      <description><![CDATA[SolarWinds released Serv-U 2026.4, fixing 18 vulnerabilities, including nine critical flaws that could grant attackers root access on Linux servers, with lower risk on Windows. The patch also eliminates a high-severity command-injection flaw that affects only Windows installations, removing a remote code execution vector. Security teams should apply Serv-U 2026.4 immediately to close the root-access and command-injection vulnerabilities.]]></description>
+      <pubDate>Thu, 26 Nov 2026 06:00:51 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/critical-solarwinds-serv-u-flaws/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Google Requires MCP or CLI for Workspace AI Agents</title>
       <link>https://secubuzz.com/news/google-requires-mcp-or-cli-for-workspace-ai-agents-c362b12f</link>
@@ -200,7 +254,7 @@
       <title>Drupal Core Vulnerability CVE-2026-136716 Exploited in Wild</title>
       <link>https://secubuzz.com/news/drupal-core-vulnerability-cve-2026-136716-exploite-b1dc9d75</link>
       <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-vulnerability-cve-2026-136716-exploite-b1dc9d75</guid>
-      <description><![CDATA[Drupal core versions prior to 10.6.23, 11.3.23, and 11.4.14 are vulnerable to an access bypass flaw exploited in the wild. The flaw, identified as CVE-2026-136716, allows attackers to bypass authentication and gain unauthorized access, with public exploitation evidence and a high severity rating. Drupal administrators should apply the latest patch releases immediately and review vendor guidance to mitigate the vulnerability.]]></description>
+      <description><![CDATA[Drupal core versions before 10.6.23, 11.3.23, and 11.4.14 are affected by CVE-2026-136716, a critical access-bypass flaw that attackers exploited worldwide. The flaw bypasses authentication, allowing unauthorized access to site administration and potential data exfiltration. Drupal administrators must apply the latest patch releases immediately and review vendor guidance to mitigate the vulnerability.]]></description>
       <pubDate>Wed, 25 Nov 2026 19:21:44 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209">Canadian Centre for Cyber Security</source>
       <category>CVE</category>
@@ -401,60 +455,6 @@
       <description><![CDATA[Ubuntu identified a Speex library flaw that mishandles oversized input when appending data to an external bit buffer. The defect could crash the decoder or allow an attacker to execute arbitrary code if a crafted file is processed. A patch has been released; users should update Speex to the latest version to eliminate the vulnerability.]]></description>
       <pubDate>Wed, 25 Nov 2026 15:48:32 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9197-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>13 Malicious NuGet Packages Target .NET Developers via Fake Recruitment Campaign</title>
-      <link>https://secubuzz.com/news/13-malicious-nuget-packages-target-net-developers-5054f44d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/13-malicious-nuget-packages-target-net-developers-5054f44d</guid>
-      <description><![CDATA[13 malicious NuGet packages masquerading as fake .NET job assessment tools infected Windows .NET developers by delivering malware when built or executed. The payload grants attackers remote access, enabling credential theft and lateral movement within development environments. Developers should verify package sources, use signed packages, and apply the latest security updates to mitigate exploitation.]]></description>
-      <pubDate>Wed, 25 Nov 2026 15:48:04 GMT</pubDate>
-      <source url="https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft 365 Bug Causes Blank Screens in Office Apps</title>
-      <link>https://secubuzz.com/news/microsoft-365-bug-causes-blank-screens-in-office-a-5a5d675b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-bug-causes-blank-screens-in-office-a-5a5d675b</guid>
-      <description><![CDATA[A startup issue in Microsoft 365 prevented users from opening Word, Excel, and Outlook, displaying a blank white screen. The bug, identified in a November 23, 2026 support notice, caused the applications to stall without visible controls, blocking access to document functionality. Microsoft released a patch addressing the issue; users should update to the latest version to restore normal operation.]]></description>
-      <pubDate>Wed, 25 Nov 2026 15:37:54 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/microsoft-365-white-screen-bug/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Juniper Adds CVE-2026-103406 to KEV Catalog</title>
-      <link>https://secubuzz.com/news/juniper-adds-cve-2026-103406-to-kev-catalog-27a80b9e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/juniper-adds-cve-2026-103406-to-kev-catalog-27a80b9e</guid>
-      <description><![CDATA[Juniper Networks disclosed multiple vulnerabilities in Session Smart Conductor and Session Smart Router prior to 7.0.5, 7.1.7, and 7.2.3 that allow attackers to execute code. CISA listed CVE-2026-103406 as a known exploited vulnerability, indicating active exploitation in the wild, though specific CVSS is not disclosed. Administrators should review Juniper’s advisory links and apply firmware updates to mitigate the risk.]]></description>
-      <pubDate>Wed, 25 Nov 2026 15:32:26 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/juniper-networks-security-advisory-av26-1101">Canadian Centre for Cyber Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>SOC Management 2027: Five Steps Against AI Threats</title>
-      <link>https://secubuzz.com/news/soc-management-2027-five-steps-against-ai-threats-066166bb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/soc-management-2027-five-steps-against-ai-threats-066166bb</guid>
-      <description><![CDATA[The article outlines five steps for SOCs and MSSPs to manage AI-driven threats in 2027. It highlights the need to balance evolving attack speeds with limited resources, emphasizing detection, threat intelligence, and automation to counter phishing and expanding attack surfaces. The guidance encourages scaling operations, fostering innovation, and adopting AI tools to improve response times and reduce analyst fatigue.]]></description>
-      <pubDate>Wed, 25 Nov 2026 15:30:46 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/soc-management-in-2027/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>GeoServer CVEs 2026-120705, 2026-129243 Exploited</title>
-      <link>https://secubuzz.com/news/geoserver-cves-2026-120705-2026-129243-exploited-a0f1dffb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/geoserver-cves-2026-120705-2026-129243-exploited-a0f1dffb</guid>
-      <description><![CDATA[GeoServer versions before 2.27.7, 2.28.6, and 3.0.2 are vulnerable to two CVEs, CVE-2026-120705 and CVE-2026-129243, which attackers are exploiting in the wild. Both CVEs allow remote code execution through improper input validation in GeoServer's API, resulting in full system compromise. Administrators should immediately apply the latest GeoServer 2.27.7, 2.28.6, or 3.0.2 releases or install the vendor-issued patch to mitigate exploitation.]]></description>
-      <pubDate>Wed, 25 Nov 2026 15:29:23 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/geoserver-security-advisory-av26-1207">Canadian Centre for Cyber Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>GeoServer High-Severity Flaws Targeted for RCE</title>
-      <link>https://secubuzz.com/news/geoserver-high-severity-flaws-targeted-for-rce-555042be</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/geoserver-high-severity-flaws-targeted-for-rce-555042be</guid>
-      <description><![CDATA[Attackers are probing GeoServer instances for two vulnerabilities that can be chained with other bugs to achieve remote code execution. The flaws stem from insufficient input sanitization in GeoServer's configuration handling, allowing attackers to inject malicious payloads that bypass authentication. Administrators should update to the latest GeoServer release or apply the vendor-issued patch to close the vulnerabilities and prevent exploitation.]]></description>
-      <pubDate>Wed, 25 Nov 2026 15:27:36 GMT</pubDate>
-      <source url="https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/">SecurityWeek</source>
       <category>Vulnerability</category>
     </item>
   </channel>
