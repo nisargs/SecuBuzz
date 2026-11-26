@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 11:44:53 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 12:44:29 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SYS010 malware abuses browser management to spy on Gmail, Outlook</title>
+      <link>https://secubuzz.com/news/sys010-malware-abuses-browser-management-to-spy-on-b5865b49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sys010-malware-abuses-browser-management-to-spy-on-b5865b49</guid>
+      <description><![CDATA[A new version of the SYS01 infostealer malware delivered through Meta ads is enrolling browsers into enterprise-style management to force the installation of an extension that steals sensitive data, including Gmail and Outlook emails.]]></description>
+      <pubDate>Thu, 26 Nov 2026 11:50:17 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/">BleepingComputer</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Issues Critical Ruby Update for RHEL 9.4 SAP</title>
       <link>https://secubuzz.com/news/red-hat-issues-critical-ruby-update-for-rhel-9-4-s-604d50c0</link>
@@ -24,6 +33,15 @@
       <pubDate>Thu, 26 Nov 2026 11:05:01 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/26/fincen-breach-systems-offline/">Help Net Security</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Top Phishing Kits Overcoming Security Controls</title>
+      <link>https://secubuzz.com/news/top-phishing-kits-overcoming-security-controls-69ccea01</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-phishing-kits-overcoming-security-controls-69ccea01</guid>
+      <description><![CDATA[Phishing kits that consistently bypass email security, web gateways, and safe browsing controls are identified as high-breakthrough threats. Push Security quantifies this risk by calculating the breakthrough rate-the proportion of attacks that penetrate all three layers before reaching users. Security teams should monitor these kits, adjust filtering rules, and deploy advanced threat detection to mitigate the elevated risk.]]></description>
+      <pubDate>Thu, 26 Nov 2026 10:57:55 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html">The Hacker News</source>
+      <category>General</category>
     </item>
     <item>
       <title>FBI Uses Among Us Chat to Find Missing Teen</title>
@@ -51,6 +69,24 @@
       <pubDate>Thu, 26 Nov 2026 09:59:07 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/26/ransomware-recovery-fraud-florida-firm-co-founder-charged/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>USN-9208-1: alsa-lib vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9208-1-alsa-lib-vulnerabilities-048fc635</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9208-1-alsa-lib-vulnerabilities-048fc635</guid>
+      <description><![CDATA[It was discovered that the ALSA library incorrectly handled certain crafted topology files and control element identifiers. An attacker could possibly use these issues to cause a denial of service or expose sensitive information. These issues were only addressed in Ubuntu 22.04 LTS, Ubuntu 24.04 LTS and Ubuntu 26.04 LTS.]]></description>
+      <pubDate>Thu, 26 Nov 2026 09:37:19 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9208-1">Ubuntu Security Notices</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>USN-9209-1: Simple DirectMedia Layer vulnerability</title>
+      <link>https://secubuzz.com/news/usn-9209-1-simple-directmedia-layer-vulnerability-5cf000c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9209-1-simple-directmedia-layer-vulnerability-5cf000c8</guid>
+      <description><![CDATA[It was discovered that Simple DirectMedia Layer incorrectly handled memory when encountering errors during OpenGL ES streaming texture creation. An attacker could possibly use this issue to cause applications using Simple DirectMedia Layer to consume resources, resulting in a denial of service.]]></description>
+      <pubDate>Thu, 26 Nov 2026 09:14:33 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9209-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Hacker Servers Expose U.S. Hospital Credentials and Cloud Access</title>
@@ -419,42 +455,6 @@
       <description><![CDATA[Drupal core versions before 10.6.23, 11.3.23, and 11.4.14 were compromised by attackers exploiting CVE-2026-136716, a critical access-bypass flaw that allowed unauthenticated takeover of site administration. The vulnerability bypasses authentication, enabling attackers to gain control, exfiltrate data, and disrupt services across affected websites. Drupal administrators must immediately apply the latest patch releases and review vendor guidance to mitigate the risk.]]></description>
       <pubDate>Wed, 25 Nov 2026 19:21:44 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209">Canadian Centre for Cyber Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Hitachi Energy RTU500 Firmware Vulnerabilities Disclosed</title>
-      <link>https://secubuzz.com/news/hitachi-energy-rtu500-firmware-vulnerabilities-dis-e71c0a24</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hitachi-energy-rtu500-firmware-vulnerabilities-dis-e71c0a24</guid>
-      <description><![CDATA[Hitachi Energy disclosed vulnerabilities in RTU500 CMU firmware versions up to 13.9.1, 12.7.8, 13.5.4, 13.6.3, 13.7.8, and 13.8.2 via the Cosminexus component. The flaws may allow attackers to gain unauthorized control or disrupt industrial control system operations, posing safety risks. Hitachi urges users to apply the latest firmware patches promptly and review vendor documentation for update instructions.]]></description>
-      <pubDate>Wed, 25 Nov 2026 19:11:51 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/control-systems-hitachi-security-advisory-av26-1208">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Thanksgiving Thanks and Critiques from David</title>
-      <link>https://secubuzz.com/news/thanksgiving-thanks-and-critiques-from-david-71beab41</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/thanksgiving-thanks-and-critiques-from-david-71beab41</guid>
-      <description><![CDATA[On November 25, 2026, David posted a Thanksgiving-themed note thanking the cybersecurity community and addressing threat actors. The brief message acknowledges community efforts, offers gratitude, and delivers a few pointed remarks toward malicious actors. No technical vulnerabilities or incidents are reported, making it a general commentary on community resilience today.]]></description>
-      <pubDate>Wed, 25 Nov 2026 19:00:00 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/oh-is-it-thanksgiving-i-hadnt-noticed/">Cisco Talos</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Socket Calm Theme Launches for VS Code, Vim, Neovim</title>
-      <link>https://secubuzz.com/news/socket-calm-theme-launches-for-vs-code-vim-neovim-42ce8e5d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/socket-calm-theme-launches-for-vs-code-vim-neovim-42ce8e5d</guid>
-      <description><![CDATA[Socket Calm, a free open-source syntax highlighting theme, has been released for VS Code, Vim, and Neovim. The theme draws inspiration from Socket's design system, offering consistent color palettes and readability enhancements across editors. Users can install the theme via the respective extension repositories or package managers, with no licensing restrictions.]]></description>
-      <pubDate>Wed, 25 Nov 2026 18:52:26 GMT</pubDate>
-      <source url="https://socket.dev/blog/socket-syntax-highlighting-theme">Socket.dev</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ubuntu Discloses elfutils Readelf and Strip CVEs</title>
-      <link>https://secubuzz.com/news/ubuntu-discloses-elfutils-readelf-and-strip-cves-9cf5c27f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-discloses-elfutils-readelf-and-strip-cves-9cf5c27f</guid>
-      <description><![CDATA[Ubuntu reported two elfutils CVEs that affect readelf and strip when handling malformed DWARF data or empty sections. The flaws (CVE-2025-1352 and CVE-2025-1376) could crash the utilities or enable arbitrary code execution if an attacker tricks a user or automated system into processing crafted files. Ubuntu has issued patches; updating elfutils to the latest release will mitigate the vulnerabilities.]]></description>
-      <pubDate>Wed, 25 Nov 2026 18:52:08 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9200-1">Ubuntu Security Notices</source>
       <category>CVE</category>
     </item>
   </channel>

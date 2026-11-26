@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "sys010-malware-abuses-browser-management-to-spy-on-b5865b49",
+    "title": "SYS010 malware abuses browser management to spy on Gmail, Outlook",
+    "summary": "A new version of the SYS01 infostealer malware delivered through Meta ads is enrolling browsers into enterprise-style management to force the installation of an extension that steals sensitive data, including Gmail and Outlook emails.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/",
+    "publishedAt": "2026-11-26T11:50:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sys010-malware-abuses-browser-management-to-spy-on",
+      "article-b5865b49",
+      "b5865b49",
+      "sys010-malware-abuses-browser-management-to-spy-on-4e52a3",
+      "sys010-malware-abuses-browser-management-to-spy-on-gmail-out"
+    ]
+  },
+  {
     "slug": "red-hat-issues-critical-ruby-update-for-rhel-9-4-s-604d50c0",
     "title": "Red Hat Issues Critical Ruby Update for RHEL 9.4 SAP",
     "summary": "Red Hat released a critical security update for Ruby on RHEL 9.4 Update Services for SAP, addressing multiple high-severity flaws. The patch fixes unauthenticated remote code execution and privilege escalation vulnerabilities with CVSS scores up to 9.0, though no active exploitation has been reported. Apply the update immediately and verify Ruby runtime integrity to mitigate potential exploitation.",
@@ -46,6 +65,24 @@ export const news: NewsBrief[] = [
       "93001284",
       "fincen-breach-forces-system-downtime-extends-repor-513d30",
       "fincen-breach-forces-system-downtime-extends-reporting-deadl"
+    ]
+  },
+  {
+    "slug": "top-phishing-kits-overcoming-security-controls-69ccea01",
+    "title": "Top Phishing Kits Overcoming Security Controls",
+    "summary": "Phishing kits that consistently bypass email security, web gateways, and safe browsing controls are identified as high-breakthrough threats. Push Security quantifies this risk by calculating the breakthrough rate-the proportion of attacks that penetrate all three layers before reaching users. Security teams should monitor these kits, adjust filtering rules, and deploy advanced threat detection to mitigate the elevated risk.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+    "publishedAt": "2026-11-26T10:57:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-phishing-kits-overcoming-security-controls",
+      "article-69ccea01",
+      "69ccea01",
+      "top-phishing-kits-overcoming-security-controls-7999cc"
     ]
   },
   {
@@ -101,6 +138,42 @@ export const news: NewsBrief[] = [
       "article-e554d7a7",
       "e554d7a7",
       "co-founder-indicted-for-paying-ransomware-gangs-15833f"
+    ]
+  },
+  {
+    "slug": "usn-9208-1-alsa-lib-vulnerabilities-048fc635",
+    "title": "USN-9208-1: alsa-lib vulnerabilities",
+    "summary": "It was discovered that the ALSA library incorrectly handled certain crafted topology files and control element identifiers. An attacker could possibly use these issues to cause a denial of service or expose sensitive information. These issues were only addressed in Ubuntu 22.04 LTS, Ubuntu 24.04 LTS and Ubuntu 26.04 LTS.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9208-1",
+    "publishedAt": "2026-11-26T09:37:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9208-1-alsa-lib-vulnerabilities",
+      "article-048fc635",
+      "048fc635",
+      "usn-9208-1-alsa-lib-vulnerabilities-7e6d6e"
+    ]
+  },
+  {
+    "slug": "usn-9209-1-simple-directmedia-layer-vulnerability-5cf000c8",
+    "title": "USN-9209-1: Simple DirectMedia Layer vulnerability",
+    "summary": "It was discovered that Simple DirectMedia Layer incorrectly handled memory when encountering errors during OpenGL ES streaming texture creation. An attacker could possibly use this issue to cause applications using Simple DirectMedia Layer to consume resources, resulting in a denial of service.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9209-1",
+    "publishedAt": "2026-11-26T09:14:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9209-1-simple-directmedia-layer-vulnerability",
+      "article-5cf000c8",
+      "5cf000c8",
+      "usn-9209-1-simple-directmedia-layer-vulnerability-7e6d6a"
     ]
   },
   {
@@ -9557,86 +9630,6 @@ export const news: NewsBrief[] = [
       "eca1996d",
       "microsoft-acknowledges-cve-2026-70175-asp-net-core-74506d",
       "microsoft-acknowledges-cve-2026-70175-asp-net-core-privilege"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-cve-2026-96225-net-privileg-773963d1",
-    "title": "Microsoft Acknowledges CVE-2026-96225 .NET Privilege Bug",
-    "summary": "Microsoft has acknowledged CVE-2026-96225, an elevation of privilege flaw in .NET that could allow attackers to gain higher privileges on affected systems. The vulnerability arises from validation errors during authentication, enabling privilege escalation without authentication, though no public exploit has been reported. Microsoft issued an update; users should watch for future patches and apply any subsequent fixes when available.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96225",
-    "publishedAt": "2026-11-23T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-96225"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-cve-2026-96225-net-privileg",
-      "article-773963d1",
-      "773963d1",
-      "microsoft-acknowledges-cve-2026-96225-net-privileg-743181",
-      "microsoft-acknowledges-cve-2026-96225-net-privilege-bug"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-cve-2026-78462-in-vs-code-8068fa08",
-    "title": "Microsoft Acknowledges CVE-2026-78462 in VS Code",
-    "summary": "Microsoft acknowledges CVE-2026-78462, a Visual Studio Code security feature bypass vulnerability. The issue could allow attackers to bypass security controls, but no public exploit or PoC has been disclosed. Microsoft has issued an informational update; no patch or mitigation is required at this time, and the vulnerability is tracked in the Microsoft Security Advisory database.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78462",
-    "publishedAt": "2026-11-23T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-78462"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-cve-2026-78462-in-vs-code",
-      "article-8068fa08",
-      "8068fa08",
-      "microsoft-acknowledges-cve-2026-78462-in-vs-code-744cbf"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-cve-2026-72965-in-windows-b3ad5032",
-    "title": "Microsoft Acknowledges CVE-2026-72965 in Windows",
-    "summary": "Microsoft acknowledges CVE-2026-72965, a Windows WebClient Service elevation of privilege vulnerability. The flaw could allow local users to gain higher privileges, but no public exploit or PoC has been disclosed. Microsoft has issued an informational update; no patch or mitigation is required at this time, and the vulnerability is tracked in the Microsoft Security Advisory database.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72965",
-    "publishedAt": "2026-11-23T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-72965"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-cve-2026-72965-in-windows",
-      "article-b3ad5032",
-      "b3ad5032",
-      "microsoft-acknowledges-cve-2026-72965-in-windows-744f66"
-    ]
-  },
-  {
-    "slug": "splunk-advisory-affects-multiple-products-requires-9d6cde7f",
-    "title": "Splunk Advisory Affects Multiple Products, Requires Upgrade",
-    "summary": "Splunk issued a security advisory (AV26-1196) affecting multiple products, including Enterprise, Enterprise Security, PCI Compliance, and SOAR, with versions prior to specified releases. The vulnerabilities could enable unauthorized access or privilege escalation within Splunk deployments, but no active exploitation has been confirmed. Administrators should review the provided links, upgrade to newer versions, and enforce access controls to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/splunk-security-advisory-av26-1196",
-    "publishedAt": "2026-11-23T15:52:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "splunk-advisory-affects-multiple-products-requires",
-      "article-9d6cde7f",
-      "9d6cde7f",
-      "splunk-advisory-affects-multiple-products-requires-83b887",
-      "splunk-advisory-affects-multiple-products-requires-upgrade"
     ]
   }
 ];
