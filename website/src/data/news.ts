@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fake-paid-expert-interviews-impersonate-brands-to-0b72c299",
+    "title": "Fake paid expert interviews impersonate brands to steal Google logins",
+    "summary": "An ongoing phishing campaign dubbed \"GoodGuys\" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
+    "publishedAt": "2026-11-26T17:15:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-paid-expert-interviews-impersonate-brands-to",
+      "article-0b72c299",
+      "0b72c299",
+      "fake-paid-expert-interviews-impersonate-brands-to-72bf61",
+      "fake-paid-expert-interviews-impersonate-brands-to-steal-goog"
+    ]
+  },
+  {
     "slug": "zero-leakage-consent-management-replaces-static-co-eac9e01b",
     "title": "Zero-Leakage Consent Management Replaces Static Cookie Banners",
     "summary": "Static cookie banners allow data leakage because tag managers load analytics and advertising pixels before users consent. Zero-leakage real-time consent management ensures scripts run only after explicit user approval, cutting pre-settlement exposure. Adopting this robust comprehensive approach requires redesigning tag workflows and inserting consent gates to enforce preferences at runtime.",
@@ -49,6 +68,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "polinrider-poisoned-7-600-github-repositories-49f55d40",
+    "title": "PolinRider Poisoned 7,600 GitHub Repositories",
+    "summary": "North Korea-linked PolinRider actors have planted a Python loader in more than 7,600 GitHub repositories, targeting open-source projects. The loader resides in small utils packages or conftest.py files, executing when Python imports the module and reading the latest transaction data. Security teams should scan repositories for suspicious imports, remove malicious code, and apply the SafeDep advisory to mitigate the spread.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+    "publishedAt": "2026-11-26T15:13:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "polinrider-poisoned-7-600-github-repositories",
+      "article-49f55d40",
+      "49f55d40",
+      "polinrider-poisoned-7-600-github-repositories-31308e"
+    ]
+  },
+  {
     "slug": "rhsa-2026-103843-critical-ruby-2-5-security-update-f210d6ea",
     "title": "RHSA-2026:103843: Critical: ruby:2.5 security update",
     "summary": "An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Critical.",
@@ -64,6 +101,25 @@ export const news: NewsBrief[] = [
       "article-f210d6ea",
       "f210d6ea",
       "rhsa-2026-103843-critical-ruby-2-5-security-update-2ee1e9"
+    ]
+  },
+  {
+    "slug": "github-pull-requests-harbor-password-stealing-malw-aa95ae73",
+    "title": "GitHub Pull Requests Harbor Password-Stealing Malware",
+    "summary": "Hackers embedded password-stealing malware in pull requests for AsyncAPI Generator, CircuitVerse, and Open Food Facts, compromising software builds. The malicious code executed during automated release workflows, allowing attackers to harvest credentials from build environments without user interaction. Maintainers removed 40 installers from GitHub Actions and should audit code reviews, apply the latest security patches, and enforce strict dependency checks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/password-stealing-malware/",
+    "publishedAt": "2026-11-26T14:50:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-pull-requests-harbor-password-stealing-malw",
+      "article-aa95ae73",
+      "aa95ae73",
+      "github-pull-requests-harbor-password-stealing-malw-1f6554",
+      "github-pull-requests-harbor-password-stealing-malware"
     ]
   },
   {
@@ -232,6 +288,24 @@ export const news: NewsBrief[] = [
       "c046e9c8",
       "plexus-utils-path-sanitization-flaw-enables-arbitr-7e6d14",
       "plexus-utils-path-sanitization-flaw-enables-arbitrary-code"
+    ]
+  },
+  {
+    "slug": "linux-kernel-hwe-subsystem-vulnerabilities-fixed-f88fdbfe",
+    "title": "Linux Kernel HWE Subsystem Vulnerabilities Fixed",
+    "summary": "Kernel subsystems S390, x86, block layer, and cryptographic API contain vulnerabilities that could allow attackers to compromise Linux systems. The flaws involve improper privilege checks and memory corruption, but no active exploitation has been reported, and they are addressed in the USN-9190-2 update. Administrators should apply the kernel update immediately to patch affected subsystems and mitigate potential privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9190-2",
+    "publishedAt": "2026-11-26T13:20:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-hwe-subsystem-vulnerabilities-fixed",
+      "article-f88fdbfe",
+      "f88fdbfe",
+      "linux-kernel-hwe-subsystem-vulnerabilities-fixed-7e778c"
     ]
   },
   {
@@ -1117,22 +1191,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fifa-breach-involves-limited-personal-and-business-670d0501",
-    "title": "FIFA Breach Involves Limited Personal and Business Data",
-    "summary": "The Swiss-based FIFA governing body reports that hackers accessed a limited set of personal and business information. The breach does not appear to involve financial data or large-scale credential theft, but the exact scope remains under investigation. FIFA is collaborating with authorities and law enforcement to determine the extent of the compromise and implement remedial measures.",
+    "slug": "fifa-breach-exposes-personal-and-business-data-2e2f7c66",
+    "title": "FIFA Breach Exposes Personal and Business Data",
+    "summary": "In a recent cyberattack, FIFA’s systems were compromised, exposing personal and business information of members and staff. The breach involved limited data, with no financial records or large-scale credential theft reported, and the attack vector remains unknown. FIFA is working with authorities to assess the scope, enforce multi-factor authentication, and monitor for credential leaks while no patch has been released.",
     "category": "Breach",
     "severity": "MEDIUM",
     "source": "The Record",
     "sourceUrl": "https://therecord.media/fifa-data-breach-limited",
     "publishedAt": "2026-11-25T20:40:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information/"
+      }
+    ],
     "aliases": [
-      "fifa-breach-involves-limited-personal-and-business",
-      "article-670d0501",
-      "670d0501",
-      "fifa-breach-involves-limited-personal-and-business-5379de",
-      "fifa-breach-involves-limited-personal-and-business-data"
+      "fifa-breach-exposes-personal-and-business-data",
+      "article-2e2f7c66",
+      "2e2f7c66",
+      "fifa-breach-exposes-personal-and-business-data-5379de"
     ]
   },
   {
@@ -3493,22 +3571,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "remus-stealer-deploys-malicious-chrome-extension-t-52e7dd2d",
-    "title": "Remus Stealer Deploys Malicious Chrome Extension to Steal Gmail Data",
-    "summary": "Remus Stealer malware targets compromised Windows systems running Google Chrome by silently deploying a fake Google Sheets extension. The rogue background extension reads incoming Gmail messages from signed-in accounts and exfiltrates email contents to an attacker-controlled server. Security teams must audit Chrome extensions, remove unauthorized add-ons, and monitor Windows endpoints for unauthorized background processes.",
-    "category": "Breach",
-    "severity": "MEDIUM",
+    "slug": "remus-stealer-uses-malicious-chrome-extension-to-s-66134bac",
+    "title": "Remus Stealer Uses Malicious Chrome Extension to Steal Gmail Data",
+    "summary": "Remus Stealer deployed a fake Google Sheets Chrome extension to harvest Gmail messages from users' accounts. The malware exploited a flaw in Gmail’s authentication flow, enabling credential-less exfiltration of email content without user interaction. Google issued a security advisory, pushed an extension update, and urged users to remove the malicious add-on.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
     "source": "Cyber Security News",
     "sourceUrl": "https://cybersecuritynews.com/remus-stealer/",
     "publishedAt": "2026-11-25T06:48:13.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/"
+      }
+    ],
     "aliases": [
-      "remus-stealer-deploys-malicious-chrome-extension-t",
-      "article-52e7dd2d",
-      "52e7dd2d",
-      "remus-stealer-deploys-malicious-chrome-extension-t-2b22df",
-      "remus-stealer-deploys-malicious-chrome-extension-to-steal-gm"
+      "remus-stealer-uses-malicious-chrome-extension-to-s",
+      "article-66134bac",
+      "66134bac",
+      "remus-stealer-uses-malicious-chrome-extension-to-s-2b22df",
+      "remus-stealer-uses-malicious-chrome-extension-to-steal-gmail"
     ]
   },
   {
@@ -9534,86 +9617,6 @@ export const news: NewsBrief[] = [
       "a22919db",
       "cisco-products-affected-by-php-remote-code-vulnera-6bcf0e",
       "cisco-products-affected-by-php-remote-code-vulnerability"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-moderate-update-for-go-toolset-rhel-9f1b8474",
-    "title": "Red Hat Issues Moderate Update for go-toolset:rhel8",
-    "summary": "Red Hat released a moderate security update for the go-toolset:rhel8 module on RHEL8, fixing multiple Go compiler bugs. The patch addresses local privilege escalation and denial-of-service flaws with CVSS scores up to 7.5, though no active exploitation is known. Red Hat advises applying the update via the standard RHEL8 update channel; no workarounds are required.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102592",
-    "publishedAt": "2026-11-23T20:16:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-moderate-update-for-go-toolset-rhel",
-      "article-9f1b8474",
-      "9f1b8474",
-      "red-hat-issues-moderate-update-for-go-toolset-rhel-2ee16a",
-      "red-hat-issues-moderate-update-for-go-toolset-rhel8"
-    ]
-  },
-  {
-    "slug": "trump-names-industry-veteran-davies-as-acting-cybe-bcd7ff11",
-    "title": "Trump Names Industry Veteran Davies as Acting Cyber Director",
-    "summary": "Trump appointed Kirsten Davies as National Cyber Director, signaling a shift toward industry expertise amid outages and geopolitical tensions. The move follows criticism of cyber leadership and aims to leverage Davies' private sector experience to strengthen U.S. cyber defenses. The appointment is expected to influence policy direction and coordination with industry partners, though no immediate operational changes have been announced.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise",
-    "publishedAt": "2026-11-23T20:13:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trump-names-industry-veteran-davies-as-acting-cybe",
-      "article-bcd7ff11",
-      "bcd7ff11",
-      "trump-names-industry-veteran-davies-as-acting-cybe-5720f2",
-      "trump-names-industry-veteran-davies-as-acting-cyber-director"
-    ]
-  },
-  {
-    "slug": "openrouter-removes-ai-providers-for-data-handling-161bd63a",
-    "title": "OpenRouter Removes AI Providers for Data Handling Violations",
-    "summary": "OpenRouter removed three AI providers after discovering they violated data-handling policies and exposed sensitive user prompts and secrets. The policy breach leaked proprietary prompts, potentially compromising client confidentiality and violating OpenRouter's privacy commitments. OpenRouter suspended the providers, issued a public notice, and is reviewing vetting procedures to prevent future violations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
-    "publishedAt": "2026-11-23T20:00:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openrouter-removes-ai-providers-for-data-handling",
-      "article-161bd63a",
-      "161bd63a",
-      "openrouter-removes-ai-providers-for-data-handling-35ecc2",
-      "openrouter-removes-ai-providers-for-data-handling-violations"
-    ]
-  },
-  {
-    "slug": "ubuntu-oauthlib-multiple-cve-vulnerabilities-discl-55dbba3a",
-    "title": "Ubuntu OAuthLib multiple CVE vulnerabilities disclosed",
-    "summary": "Ubuntu 20.04 to 26.10 releases contain several OAuthLib flaws affecting token revocation, PKCE verification, and client identity validation. CVE-2026-49264 permits arbitrary code execution via JSONP callbacks, CVE-2026-49265 enables token theft through non-constant-time comparison, and CVE-2026-118669 allows unauthorized token acquisition by bypassing client checks. Users should upgrade to Ubuntu releases or apply the security patches to mitigate these OAuthLib vulnerabilities.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9188-1",
-    "publishedAt": "2026-11-23T19:44:23.000Z",
-    "cves": [
-      "CVE-2026-49264",
-      "CVE-2026-49265",
-      "CVE-2026-118669"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-oauthlib-multiple-cve-vulnerabilities-discl",
-      "article-55dbba3a",
-      "55dbba3a",
-      "ubuntu-oauthlib-multiple-cve-vulnerabilities-discl-7e77e3",
-      "ubuntu-oauthlib-multiple-cve-vulnerabilities-disclosed"
     ]
   }
 ];

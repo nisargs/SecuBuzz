@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 17:19:42 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 18:45:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Fake paid expert interviews impersonate brands to steal Google logins</title>
+      <link>https://secubuzz.com/news/fake-paid-expert-interviews-impersonate-brands-to-0b72c299</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-paid-expert-interviews-impersonate-brands-to-0b72c299</guid>
+      <description><![CDATA[An ongoing phishing campaign dubbed "GoodGuys" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars.]]></description>
+      <pubDate>Thu, 26 Nov 2026 17:15:27 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/">BleepingComputer</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Zero-Leakage Consent Management Replaces Static Cookie Banners</title>
       <link>https://secubuzz.com/news/zero-leakage-consent-management-replaces-static-co-eac9e01b</link>
@@ -26,6 +35,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>PolinRider Poisoned 7,600 GitHub Repositories</title>
+      <link>https://secubuzz.com/news/polinrider-poisoned-7-600-github-repositories-49f55d40</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/polinrider-poisoned-7-600-github-repositories-49f55d40</guid>
+      <description><![CDATA[North Korea-linked PolinRider actors have planted a Python loader in more than 7,600 GitHub repositories, targeting open-source projects. The loader resides in small utils packages or conftest.py files, executing when Python imports the module and reading the latest transaction data. Security teams should scan repositories for suspicious imports, remove malicious code, and apply the SafeDep advisory to mitigate the spread.]]></description>
+      <pubDate>Thu, 26 Nov 2026 15:13:41 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html">The Hacker News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
       <title>RHSA-2026:103843: Critical: ruby:2.5 security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-103843-critical-ruby-2-5-security-update-f210d6ea</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103843-critical-ruby-2-5-security-update-f210d6ea</guid>
@@ -33,6 +51,15 @@
       <pubDate>Thu, 26 Nov 2026 14:57:03 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103843">Red Hat Security Advisories</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>GitHub Pull Requests Harbor Password-Stealing Malware</title>
+      <link>https://secubuzz.com/news/github-pull-requests-harbor-password-stealing-malw-aa95ae73</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-pull-requests-harbor-password-stealing-malw-aa95ae73</guid>
+      <description><![CDATA[Hackers embedded password-stealing malware in pull requests for AsyncAPI Generator, CircuitVerse, and Open Food Facts, compromising software builds. The malicious code executed during automated release workflows, allowing attackers to harvest credentials from build environments without user interaction. Maintainers removed 40 installers from GitHub Actions and should audit code reviews, apply the latest security patches, and enforce strict dependency checks.]]></description>
+      <pubDate>Thu, 26 Nov 2026 14:50:20 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/password-stealing-malware/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Red Hat Issues Critical Ruby Update for RHEL 10</title>
@@ -113,6 +140,15 @@
       <description><![CDATA[Plexus Utils does not sanitize file paths during archive extraction, allowing attackers to write arbitrary files and execute code. A crafted archive processed by any user or automated system could trigger this flaw, potentially enabling full system compromise. No CVE is assigned; applying the latest Plexus Utils update or adding path validation mitigates the risk.]]></description>
       <pubDate>Thu, 26 Nov 2026 13:25:00 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9211-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Linux Kernel HWE Subsystem Vulnerabilities Fixed</title>
+      <link>https://secubuzz.com/news/linux-kernel-hwe-subsystem-vulnerabilities-fixed-f88fdbfe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-hwe-subsystem-vulnerabilities-fixed-f88fdbfe</guid>
+      <description><![CDATA[Kernel subsystems S390, x86, block layer, and cryptographic API contain vulnerabilities that could allow attackers to compromise Linux systems. The flaws involve improper privilege checks and memory corruption, but no active exploitation has been reported, and they are addressed in the USN-9190-2 update. Administrators should apply the kernel update immediately to patch affected subsystems and mitigate potential privilege escalation.]]></description>
+      <pubDate>Thu, 26 Nov 2026 13:20:06 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9190-2">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -419,42 +455,6 @@
       <description><![CDATA[An Incogni survey of 1,008 U.S. adults revealed 55% would pay for permanent removal of personal information from public search results, while 53% desire a five-year search history log. The findings highlight growing privacy concerns over data broker exposure, with respondents valuing control over online identity footprints.]]></description>
       <pubDate>Thu, 26 Nov 2026 05:00:06 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/26/incogni-online-privacy-concerns-report/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>dav1d Flaw May Enable Code via Large AV1 Frames</title>
-      <link>https://secubuzz.com/news/dav1d-flaw-may-enable-code-via-large-av1-frames-659c5d3e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dav1d-flaw-may-enable-code-via-large-av1-frames-659c5d3e</guid>
-      <description><![CDATA[The dav1d AV1 decoder incorrectly processes streams containing extremely large frame sizes, violating expected bounds. The vulnerability can cause a crash, and in certain configurations may allow attackers to execute arbitrary code. Ubuntu recommends applying the updated dav1d package that corrects the frame-size validation to mitigate the issue for all users.]]></description>
-      <pubDate>Thu, 26 Nov 2026 04:26:04 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9204-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Wiz ADR Enhances Cloud AI Detection with Application Context</title>
-      <link>https://secubuzz.com/news/wiz-adr-enhances-cloud-ai-detection-with-applicati-ddb95e4c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wiz-adr-enhances-cloud-ai-detection-with-applicati-ddb95e4c</guid>
-      <description><![CDATA[Wiz introduced ADR, a tool that maps runtime alerts to specific code functions in cloud environments. ADR uses agentic investigation to reduce false positives and provides precise file and line-level context for detected anomalies. Security teams can automate remediation actions directly to the affected code, improving response speed and accuracy.]]></description>
-      <pubDate>Thu, 26 Nov 2026 02:26:16 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/introducing-wiz-adr">Wiz Research</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Wiz Agents Celebrate Smarter Security Season</title>
-      <link>https://secubuzz.com/news/wiz-agents-celebrate-smarter-security-season-e367a667</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wiz-agents-celebrate-smarter-security-season-e367a667</guid>
-      <description><![CDATA[Wiz’s Red, Green, and Blue Agents highlight a quieter, smarter security season by sharing insights and achievements. The announcement showcases how the agents use data analytics to reduce noise and improve detection accuracy across cloud workloads. Users can view the agents’ performance metrics in the Wiz console, fostering a more efficient security posture.]]></description>
-      <pubDate>Thu, 26 Nov 2026 02:10:58 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/what-wiz-agents-are-thankful-for">Wiz Research</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>UK Delays National Cyber Action Plan to December</title>
-      <link>https://secubuzz.com/news/uk-delays-national-cyber-action-plan-to-december-8996f237</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uk-delays-national-cyber-action-plan-to-december-8996f237</guid>
-      <description><![CDATA[The UK government postponed the release of its National Cyber Action Plan, originally slated for mid-November, to December 9. The plan aims to strengthen defenses against state-backed and criminal hacking across the wider economy, but the delay may impact preparedness timelines. Stakeholders should monitor the December 9 release for updated strategies and compliance requirements.]]></description>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://therecord.media/britain-delays-national-cyber-action-plan-again">The Record</source>
       <category>General</category>
     </item>
   </channel>
