@@ -11,21 +11,46 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "retailers-face-heightened-black-friday-threats-698e160b",
-    "title": "Retailers Face Heightened Black Friday Threats",
-    "summary": "Black Friday drives attackers to target consumers and retailers with fraud, impersonation, credential theft, and malware. Retailers face amplified bot activity, business-logic abuse, operational disruption, and emerging AI-driven commerce risks that can amplify damage. Security teams should enforce stricter authentication, monitor bot traffic, audit business logic, and prepare AI-aware defenses to mitigate these threats.",
+    "slug": "black-friday-amplifies-existing-consumer-cyber-ris-d6ce5eaa",
+    "title": "Black Friday Amplifies Existing Consumer Cyber Risks",
+    "summary": "During Black Friday, cybercriminals intensify fraud, phishing, malware, and credential theft attacks against consumers and retailers. The surge is driven by high transaction volume, increased link clicking, and bot activity exploiting business logic and AI-driven commerce. Security teams should enforce stricter authentication, monitor bot traffic, audit business logic, and prepare AI-aware defenses to mitigate damage.",
     "category": "General",
-    "severity": "LOW",
+    "severity": "MEDIUM",
     "source": "Arctic Wolf",
     "sourceUrl": "https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-two-retailers/",
     "publishedAt": "2026-11-25T23:02:23.000Z",
     "cves": [],
+    "additionalSources": [
+      {
+        "source": "Arctic Wolf",
+        "sourceUrl": "https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-one-consumers/"
+      }
+    ],
+    "aliases": [
+      "black-friday-amplifies-existing-consumer-cyber-ris",
+      "article-d6ce5eaa",
+      "d6ce5eaa",
+      "black-friday-amplifies-existing-consumer-cyber-ris-601a63",
+      "black-friday-amplifies-existing-consumer-cyber-risks"
+    ]
+  },
+  {
+    "slug": "socket-ceo-discusses-vulnerability-mitigation-with-15a827cf",
+    "title": "Socket CEO Discusses Vulnerability Mitigation Without Upgrades",
+    "summary": "Socket CEO Feross Aboukhadijeh appeared on the Risky Business Podcast to discuss strategies for eliminating open source vulnerabilities at scale. He emphasized that organizations can mitigate risk through runtime monitoring, automated patching, and dependency hygiene without frequent version upgrades. Listeners were encouraged to adopt continuous security practices and leverage tooling that detects vulnerable packages in real time.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/eliminating-vulnerabilities-without-upgrading-dependencies",
+    "publishedAt": "2026-11-25T22:50:32.756Z",
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "retailers-face-heightened-black-friday-threats",
-      "article-698e160b",
-      "698e160b",
-      "retailers-face-heightened-black-friday-threats-601a63"
+      "socket-ceo-discusses-vulnerability-mitigation-with",
+      "article-15a827cf",
+      "15a827cf",
+      "socket-ceo-discusses-vulnerability-mitigation-with-2555e7",
+      "socket-ceo-discusses-vulnerability-mitigation-without-upgrad"
     ]
   },
   {
@@ -334,6 +359,25 @@ export const news: NewsBrief[] = [
       "b1dc9d75",
       "drupal-core-vulnerability-cve-2026-136716-exploite-1fb708",
       "drupal-core-vulnerability-cve-2026-136716-exploited-in-wild"
+    ]
+  },
+  {
+    "slug": "hitachi-energy-rtu500-firmware-vulnerabilities-dis-e71c0a24",
+    "title": "Hitachi Energy RTU500 Firmware Vulnerabilities Disclosed",
+    "summary": "Hitachi Energy disclosed vulnerabilities in RTU500 CMU firmware versions up to 13.9.1, 12.7.8, 13.5.4, 13.6.3, 13.7.8, and 13.8.2 via the Cosminexus component. The flaws may allow attackers to gain unauthorized control or disrupt industrial control system operations, posing safety risks. Hitachi urges users to apply the latest firmware patches promptly and review vendor documentation for update instructions.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/control-systems-hitachi-security-advisory-av26-1208",
+    "publishedAt": "2026-11-25T19:11:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hitachi-energy-rtu500-firmware-vulnerabilities-dis",
+      "article-e71c0a24",
+      "e71c0a24",
+      "hitachi-energy-rtu500-firmware-vulnerabilities-dis-5c7d5d",
+      "hitachi-energy-rtu500-firmware-vulnerabilities-disclosed"
     ]
   },
   {
@@ -2566,6 +2610,28 @@ export const news: NewsBrief[] = [
       "3ccca14e",
       "microsoft-declares-code-red-over-24-hour-m365-outa-31672b",
       "microsoft-declares-code-red-over-24-hour-m365-outage"
+    ]
+  },
+  {
+    "slug": "ubuntu-libxrender-vulnerabilities-allow-potential-7addc5e5",
+    "title": "Ubuntu libXrender Vulnerabilities Allow Potential RCE",
+    "summary": "Ubuntu Security Notices reported two libXrender flaws, CVE-2026-88807 and CVE-2016-7949/7950, that mishandle X server responses, enabling heap buffer overflows. An attacker controlling an X server could exploit these flaws to crash applications or execute arbitrary code, causing denial of service. Ubuntu released patches for Ubuntu 14.04 LTS; users should apply updates immediately to mitigate the vulnerabilities.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9194-1",
+    "publishedAt": "2026-11-25T02:38:24.000Z",
+    "cves": [
+      "CVE-2026-88807",
+      "CVE-2016-7949"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-libxrender-vulnerabilities-allow-potential",
+      "article-7addc5e5",
+      "7addc5e5",
+      "ubuntu-libxrender-vulnerabilities-allow-potential-7e777d",
+      "ubuntu-libxrender-vulnerabilities-allow-potential-rce"
     ]
   },
   {
@@ -9532,62 +9598,6 @@ export const news: NewsBrief[] = [
       "c62fa871",
       "red-hat-issues-qt5-qtdeclarative-update-for-rhel-9-2ee162",
       "red-hat-issues-qt5-qtdeclarative-update-for-rhel-9-2"
-    ]
-  },
-  {
-    "slug": "eu-academy-access-disabled-after-data-exposure-att-13ac5f6c",
-    "title": "EU Academy Access Disabled After Data Exposure Attack",
-    "summary": "The European Commission disabled public access to the EU Academy platform after a cyberattack exposed users’ personal data. The breach involved unauthorized access to the learning platform’s database, potentially compromising contact information and enrollment records. The Commission has not disclosed the number of affected users; security teams should monitor for credential misuse and enforce stricter access controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/eu-academy-disabled/",
-    "publishedAt": "2026-11-23T14:34:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eu-academy-access-disabled-after-data-exposure-att",
-      "article-13ac5f6c",
-      "13ac5f6c",
-      "eu-academy-access-disabled-after-data-exposure-att-af6925",
-      "eu-academy-access-disabled-after-data-exposure-attack"
-    ]
-  },
-  {
-    "slug": "fake-claude-ai-app-distributes-revstealer-infostea-55053197",
-    "title": "Fake Claude AI App Distributes RevStealer Infostealer",
-    "summary": "Hackers distributed RevStealer, a Windows infostealer, via a counterfeit Claude AI desktop application promising free access. The 101 MB archive launches malware that harvests saved passwords, browser sessions, and cryptocurrency wallet data without opening a chat window. Security teams should verify application authenticity, block the download source, and deploy endpoint protection to detect and remove RevStealer.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-hide-revstealer-malware/",
-    "publishedAt": "2026-11-23T14:24:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-claude-ai-app-distributes-revstealer-infostea",
-      "article-55053197",
-      "55053197",
-      "fake-claude-ai-app-distributes-revstealer-infostea-4d4447",
-      "fake-claude-ai-app-distributes-revstealer-infostealer"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-qt6-update-for-rhel-10-0-eus-012d7a37",
-    "title": "Red Hat Issues Qt6 Update for RHEL 10.0 EUS",
-    "summary": "Red Enterprise Linux 10.0 EUS users receive a qt6-qtbase update addressing security issues in the Qt framework. The patch mitigates several vulnerabilities that could enable remote code execution or privilege escalation; CVSS scores are provided, but no public exploit is known. Red Hat recommends installing the update via the package manager; no work-arounds are available.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102350",
-    "publishedAt": "2026-11-23T14:15:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-qt6-update-for-rhel-10-0-eus",
-      "article-012d7a37",
-      "012d7a37",
-      "red-hat-issues-qt6-update-for-rhel-10-0-eus-2ee162"
     ]
   }
 ];

@@ -7380,5 +7380,9 @@
   "https://access.redhat.com/errata/RHSA-2026:103526",
   "https://access.redhat.com/errata/RHSA-2026:103501",
   "https://access.redhat.com/errata/RHSA-2026:103499",
-  "https://access.redhat.com/errata/RHSA-2026:103498"
+  "https://access.redhat.com/errata/RHSA-2026:103498",
+  "https://cyber.gc.ca/en/alerts-advisories/control-systems-hitachi-security-advisory-av26-1208",
+  "https://ubuntu.com/security/notices/USN-9194-1",
+  "https://socket.dev/blog/eliminating-vulnerabilities-without-upgrading-dependencies",
+  "https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-one-consumers/"
 ]
