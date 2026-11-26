@@ -11,6 +11,79 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "postgresql-security-advisory-av26-1211-1711b4e2",
+    "title": "PostgreSQL security advisory (AV26-1211)",
+    "summary": "Serial Number: AV26-1211 Date: November 26, 2026 As of November 25, 2026, PostgreSQL is affected by vulnerabilities in the following product: psqlODBC Prior to or equal to 18.00.0006 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/postgresql-security-advisory-av26-1211",
+    "publishedAt": "2026-11-26T13:09:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "postgresql-security-advisory-av26-1211",
+      "article-1711b4e2",
+      "1711b4e2",
+      "postgresql-security-advisory-av26-1211-3495fe"
+    ]
+  },
+  {
+    "slug": "preinstalled-keenadu-malware-turns-up-on-220-000-a-d0710de2",
+    "title": "Preinstalled Keenadu malware turns up on 220,000+ Android devices",
+    "summary": "A new Android phone can come out of the box with malware already in its firmware, and the number of such devices detected each month has grown more than 2.5 times over the past year, according to Kaspersky.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/26/keenadu-malware-android-devices/",
+    "publishedAt": "2026-11-26T12:57:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "preinstalled-keenadu-malware-turns-up-on-220-000-a",
+      "article-d0710de2",
+      "d0710de2",
+      "preinstalled-keenadu-malware-turns-up-on-220-000-a-309d0f",
+      "preinstalled-keenadu-malware-turns-up-on-220-000-android-dev"
+    ]
+  },
+  {
+    "slug": "ny-bans-ai-chatbot-toys-for-five-years-e6c3bbaf",
+    "title": "NY Bans AI Chatbot Toys for Five Years",
+    "summary": "New York bans the manufacture, distribution, and sale of AI chatbot toys for five years, effective February 22 after the holiday season. The rule targets toys embedding conversational AI, citing child safety, data privacy, and unverified content concerns. Manufacturers must stop production and retailers must halt sales, notifying state authorities of any violations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/why-new-york-is-banning-ai-chatbot-toys",
+    "publishedAt": "2026-11-26T12:20:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ny-bans-ai-chatbot-toys-for-five-years",
+      "article-e6c3bbaf",
+      "e6c3bbaf",
+      "ny-bans-ai-chatbot-toys-for-five-years-3045c2"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103804-critical-ruby-security-update-b75f051f",
+    "title": "RHSA-2026:103804: Critical: ruby security update",
+    "summary": "An update for ruby is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103804",
+    "publishedAt": "2026-11-26T11:56:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103804-critical-ruby-security-update",
+      "article-b75f051f",
+      "b75f051f",
+      "rhsa-2026-103804-critical-ruby-security-update-2ee1e9"
+    ]
+  },
+  {
     "slug": "sys010-malware-abuses-browser-management-to-spy-on-b5865b49",
     "title": "SYS010 malware abuses browser management to spy on Gmail, Outlook",
     "summary": "A new version of the SYS01 infostealer malware delivered through Meta ads is enrolling browsers into enterprise-style management to force the installation of an extension that steals sensitive data, including Gmail and Outlook emails.",
@@ -9548,88 +9621,6 @@ export const news: NewsBrief[] = [
       "ec77efd5",
       "microsoft-security-response-center-acknowledges-cv-745a69",
       "microsoft-security-response-center-acknowledges-cve-2026-692"
-    ]
-  },
-  {
-    "slug": "microsoft-security-response-center-acknowledges-cv-4a4a964b",
-    "title": "Microsoft Security Response Center acknowledges CVE-2026-87697",
-    "summary": "Microsoft Security Response Center acknowledges CVE-2026-87697, a remote code execution flaw in the .NET runtime. The vulnerability permits attackers to run arbitrary code through crafted .NET assemblies that can be triggered by malicious input, potentially compromising affected applications. A patch is available; developers should update .NET to the latest version to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87697",
-    "publishedAt": "2026-11-23T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-87697"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-security-response-center-acknowledges-cv",
-      "article-4a4a964b",
-      "4a4a964b",
-      "microsoft-security-response-center-acknowledges-cv-743f14",
-      "microsoft-security-response-center-acknowledges-cve-2026-876"
-    ]
-  },
-  {
-    "slug": "asp-net-core-denial-of-service-cve-2026-96233-3fd47404",
-    "title": "ASP.NET Core Denial of Service CVE-2026-96233",
-    "summary": "A denial-of-service flaw in ASP.NET Core, CVE-2026-96233, lets attackers exhaust server resources via crafted HTTP requests. The flaw arises from improper input validation in request parsing, and no public exploit is known, but it can cause service interruption. Microsoft released a patch that corrects the parsing logic; administrators should apply the latest ASP.NET Core update or vendor hotfix.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96233",
-    "publishedAt": "2026-11-23T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-96233"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "asp-net-core-denial-of-service-cve-2026-96233",
-      "article-3fd47404",
-      "3fd47404",
-      "asp-net-core-denial-of-service-cve-2026-96233-743180"
-    ]
-  },
-  {
-    "slug": "windows-message-queuing-dos-cve-2026-119848-cf733baf",
-    "title": "Windows Message Queuing DoS CVE-2026-119848",
-    "summary": "CVE-2026-119848 is a denial-of-service flaw in Windows Message Queuing that lets attackers crash the service with malformed queue messages. The vulnerability stems from unchecked bounds during message deserialization, and no active exploitation is known, but it can cause repeated service restarts. Microsoft released a patch that validates message lengths; administrators should apply Windows update or vendor hotfix to mitigate DoS.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119848",
-    "publishedAt": "2026-11-23T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-119848"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-message-queuing-dos-cve-2026-119848",
-      "article-cf733baf",
-      "cf733baf",
-      "windows-message-queuing-dos-cve-2026-119848-1fe894"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-cve-2026-70175-asp-net-core-eca1996d",
-    "title": "Microsoft Acknowledges CVE-2026-70175 ASP.NET Core Privilege Bug",
-    "summary": "Microsoft has acknowledged CVE-2026-70175, an elevation of privilege flaw in ASP.NET Core that could let attackers gain higher privileges on affected systems. The flaw stems from improper validation of user input during authentication, allowing privilege escalation without authentication, though no public exploit exists. Microsoft issued an update; users should watch for future patches and apply any subsequent fixes when available.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70175",
-    "publishedAt": "2026-11-23T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-70175"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-cve-2026-70175-asp-net-core",
-      "article-eca1996d",
-      "eca1996d",
-      "microsoft-acknowledges-cve-2026-70175-asp-net-core-74506d",
-      "microsoft-acknowledges-cve-2026-70175-asp-net-core-privilege"
     ]
   }
 ];

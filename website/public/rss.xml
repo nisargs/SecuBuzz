@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 12:44:29 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 13:45:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>PostgreSQL security advisory (AV26-1211)</title>
+      <link>https://secubuzz.com/news/postgresql-security-advisory-av26-1211-1711b4e2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/postgresql-security-advisory-av26-1211-1711b4e2</guid>
+      <description><![CDATA[Serial Number: AV26-1211 Date: November 26, 2026 As of November 25, 2026, PostgreSQL is affected by vulnerabilities in the following product: psqlODBC Prior to or equal to 18.00.0006 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.]]></description>
+      <pubDate>Thu, 26 Nov 2026 13:09:51 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/postgresql-security-advisory-av26-1211">Canadian Centre for Cyber Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Preinstalled Keenadu malware turns up on 220,000+ Android devices</title>
+      <link>https://secubuzz.com/news/preinstalled-keenadu-malware-turns-up-on-220-000-a-d0710de2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/preinstalled-keenadu-malware-turns-up-on-220-000-a-d0710de2</guid>
+      <description><![CDATA[A new Android phone can come out of the box with malware already in its firmware, and the number of such devices detected each month has grown more than 2.5 times over the past year, according to Kaspersky.]]></description>
+      <pubDate>Thu, 26 Nov 2026 12:57:58 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/26/keenadu-malware-android-devices/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>NY Bans AI Chatbot Toys for Five Years</title>
+      <link>https://secubuzz.com/news/ny-bans-ai-chatbot-toys-for-five-years-e6c3bbaf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ny-bans-ai-chatbot-toys-for-five-years-e6c3bbaf</guid>
+      <description><![CDATA[New York bans the manufacture, distribution, and sale of AI chatbot toys for five years, effective February 22 after the holiday season. The rule targets toys embedding conversational AI, citing child safety, data privacy, and unverified content concerns. Manufacturers must stop production and retailers must halt sales, notifying state authorities of any violations.]]></description>
+      <pubDate>Thu, 26 Nov 2026 12:20:27 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/11/why-new-york-is-banning-ai-chatbot-toys">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:103804: Critical: ruby security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103804-critical-ruby-security-update-b75f051f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103804-critical-ruby-security-update-b75f051f</guid>
+      <description><![CDATA[An update for ruby is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 26 Nov 2026 11:56:22 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103804">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>SYS010 malware abuses browser management to spy on Gmail, Outlook</title>
       <link>https://secubuzz.com/news/sys010-malware-abuses-browser-management-to-spy-on-b5865b49</link>
@@ -420,42 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 19:24:30 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103537">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103534: Critical: Satellite 6.19 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103534-critical-satellite-6-19-security-4456e306</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103534-critical-satellite-6-19-security-4456e306</guid>
-      <description><![CDATA[A security update for Red Hat Satellite 6.19 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE links in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 19:22:51 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103534">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103536: Critical: Satellite 6.17 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103536-critical-satellite-6-17-security-bbacc4fc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103536-critical-satellite-6-17-security-bbacc4fc</guid>
-      <description><![CDATA[A security update for Red Hat Satellite 6.17 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE links in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 19:22:51 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103536">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Satellite 6.19 Critical Update Released</title>
-      <link>https://secubuzz.com/news/red-hat-satellite-6-19-critical-update-released-19a12c89</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-satellite-6-19-critical-update-released-19a12c89</guid>
-      <description><![CDATA[A critical update for Red Hat Satellite 6.19 patches multiple vulnerabilities that could allow unauthenticated remote code execution. The update includes patches for undisclosed flaws, each with a CVSS base score via CVE links, rated Critical by Red Hat Product Security. Red Hat recommends applying the Satellite 6.19 update immediately to mitigate the risk, with no additional workarounds required.]]></description>
-      <pubDate>Wed, 25 Nov 2026 19:22:50 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103535">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Drupal Core Vulnerability CVE-2026-136716 Exploited in Wild</title>
-      <link>https://secubuzz.com/news/drupal-core-vulnerability-cve-2026-136716-exploite-b1dc9d75</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-vulnerability-cve-2026-136716-exploite-b1dc9d75</guid>
-      <description><![CDATA[Drupal core versions before 10.6.23, 11.3.23, and 11.4.14 were compromised by attackers exploiting CVE-2026-136716, a critical access-bypass flaw that allowed unauthenticated takeover of site administration. The vulnerability bypasses authentication, enabling attackers to gain control, exfiltrate data, and disrupt services across affected websites. Drupal administrators must immediately apply the latest patch releases and review vendor guidance to mitigate the risk.]]></description>
-      <pubDate>Wed, 25 Nov 2026 19:21:44 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209">Canadian Centre for Cyber Security</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
