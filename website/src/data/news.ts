@@ -984,6 +984,51 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "guava-vulnerabilities-allow-permission-abuse-and-d-7f2b2beb",
+    "title": "Guava Vulnerabilities Allow Permission Abuse and DoS",
+    "summary": "Guava’s temporary directory permission flaw on Ubuntu 22.04 LTS lets attackers read or alter sensitive data via crafted files, potentially compromising system integrity. CVE-2020-8908, CVE-2023-2976, and a deserialization issue (CVE-2026-102554) can also trigger denial of service. Apply Ubuntu’s latest security updates to prevent data exposure, service interruption, and maintain system integrity.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9206-1",
+    "publishedAt": "2026-11-26T07:08:32.000Z",
+    "cves": [
+      "CVE-2020-8908",
+      "CVE-2023-2976",
+      "CVE-2026-102554"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "guava-vulnerabilities-allow-permission-abuse-and-d",
+      "article-7f2b2beb",
+      "7f2b2beb",
+      "guava-vulnerabilities-allow-permission-abuse-and-d-7e6d76",
+      "guava-vulnerabilities-allow-permission-abuse-and-dos"
+    ]
+  },
+  {
+    "slug": "libtiff-vulnerabilities-enable-arbitrary-code-exec-b1961ec3",
+    "title": "LibTIFF Vulnerabilities Enable Arbitrary Code Execution",
+    "summary": "LibTIFF’s parsing flaw in PixarLog-compressed and TIFF files on Ubuntu allows attackers to execute arbitrary code or cause denial of service when a user opens a crafted image. The vulnerabilities, CVE-2026-12912 and CVE-2026-4775, expose a buffer overflow that can be exploited remotely without authentication. Ubuntu has issued security updates; users should install the latest packages to mitigate code execution risks.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9205-1",
+    "publishedAt": "2026-11-26T06:53:32.000Z",
+    "cves": [
+      "CVE-2026-12912",
+      "CVE-2026-4775"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "libtiff-vulnerabilities-enable-arbitrary-code-exec",
+      "article-b1961ec3",
+      "b1961ec3",
+      "libtiff-vulnerabilities-enable-arbitrary-code-exec-7e6d79",
+      "libtiff-vulnerabilities-enable-arbitrary-code-execution"
+    ]
+  },
+  {
     "slug": "mitel-micollab-zero-day-cve-2026-133275-exploited-d5c94ed5",
     "title": "Mitel MiCollab Zero-Day CVE-2026-133275 Exploited and Added to CISA KEV",
     "summary": "Attackers exploited Mitel MiCollab zero-day CVE-2026-133275 in suspected AI-assisted extortion before Mitel issued an advisory. The flaw enables unauthenticated remote code execution and arbitrary file uploads, risking data exposure and communications disruption. CISA added it to the KEV catalog; administrators should apply vendor patches immediately and monitor for anomalous activity.",
@@ -9584,45 +9629,6 @@ export const news: NewsBrief[] = [
       "65970c74",
       "ot-gateways-reveal-authentication-status-many-unpr-209193",
       "ot-gateways-reveal-authentication-status-many-unprotected"
-    ]
-  },
-  {
-    "slug": "13-malicious-nuget-packages-target-net-developers-81b6e5e1",
-    "title": "13 Malicious NuGet Packages Target .NET Developers",
-    "summary": "Socket researchers identified 13 malicious NuGet packages that lure .NET developers with fake job assessment prompts. The packages perform DLL side-loading, steal credentials, and embed GitHub-based malware, compromising developer environments. Security teams should audit package sources, enforce trusted feeds, and apply the latest .NET security updates to mitigate exposure and monitor for suspicious activity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/malicious-nuget-packages-fake-job-assessments",
-    "publishedAt": "2026-11-23T21:55:22.725Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "13-malicious-nuget-packages-target-net-developers",
-      "article-81b6e5e1",
-      "81b6e5e1",
-      "13-malicious-nuget-packages-target-net-developers-43d711"
-    ]
-  },
-  {
-    "slug": "aws-ssm-agent-default-key-flaw-exposes-role-creden-768216c7",
-    "title": "AWS SSM Agent default key flaw exposes role credentials",
-    "summary": "Amazon SSM Agent on AWS Windows Server AMIs contains a flaw where instances share a default cryptographic key during registration. CVE-2026-134069 allows a local non-admin user to retrieve the instance’s Default Host Management Configuration role credentials, enabling potential credential theft. AWS recommends updating to the latest SSM Agent version or applying the provided patch to eliminate the shared key vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-197-aws/",
-    "publishedAt": "2026-11-23T21:54:18.000Z",
-    "cves": [
-      "CVE-2026-134069"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aws-ssm-agent-default-key-flaw-exposes-role-creden",
-      "article-768216c7",
-      "768216c7",
-      "aws-ssm-agent-default-key-flaw-exposes-role-creden-29fa73",
-      "aws-ssm-agent-default-key-flaw-exposes-role-credentials"
     ]
   }
 ];
