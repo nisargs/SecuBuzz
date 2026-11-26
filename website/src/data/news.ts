@@ -836,21 +836,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "malicious-nuget-packages-target-net-developers-43c157ec",
-    "title": "Malicious NuGet Packages Target .NET Developers",
-    "summary": "Researchers uncovered 13 malicious NuGet packages distributed through a fake recruitment campaign, designed to infect .NET developers’ machines. The poisoned packages contain malware that grants attackers remote access, enabling credential theft and lateral movement within development environments. Developers should verify package sources, use signed packages, and apply the latest security updates to mitigate exploitation.",
-    "category": "Vulnerability",
+    "slug": "13-malicious-nuget-packages-target-net-developers-5054f44d",
+    "title": "13 Malicious NuGet Packages Target .NET Developers via Fake Recruitment Campaign",
+    "summary": "13 malicious NuGet packages masquerading as fake .NET job assessment tools infected Windows .NET developers by delivering malware when built or executed. The payload grants attackers remote access, enabling credential theft and lateral movement within development environments. Developers should verify package sources, use signed packages, and apply the latest security updates to mitigate exploitation.",
+    "category": "General",
     "severity": "HIGH",
     "source": "Dark Reading",
     "sourceUrl": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
     "publishedAt": "2026-11-25T15:48:04.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html"
+      }
+    ],
     "aliases": [
-      "malicious-nuget-packages-target-net-developers",
-      "article-43c157ec",
-      "43c157ec",
-      "malicious-nuget-packages-target-net-developers-5bc2e4"
+      "13-malicious-nuget-packages-target-net-developers",
+      "article-5054f44d",
+      "5054f44d",
+      "13-malicious-nuget-packages-target-net-developers-5bc2e4",
+      "13-malicious-nuget-packages-target-net-developers-via-fake-r"
     ]
   },
   {

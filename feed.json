@@ -723,10 +723,10 @@
   {
     "id": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
     "sourceUrl": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
-    "title": "Malicious NuGet Packages Target .NET Developers",
-    "headline": "Malicious NuGet Packages Target .NET Developers",
-    "summary": "Researchers uncovered 13 malicious NuGet packages distributed through a fake recruitment campaign, designed to infect .NET developers’ machines. The poisoned packages contain malware that grants attackers remote access, enabling credential theft and lateral movement within development environments. Developers should verify package sources, use signed packages, and apply the latest security updates to mitigate exploitation.",
-    "category": "VULNERABILITY",
+    "title": "13 Malicious NuGet Packages Target .NET Developers via Fake Recruitment Campaign",
+    "headline": "13 Malicious NuGet Packages Target .NET Developers via Fake Recruitment Campaign",
+    "summary": "13 malicious NuGet packages masquerading as fake .NET job assessment tools infected Windows .NET developers by delivering malware when built or executed. The payload grants attackers remote access, enabling credential theft and lateral movement within development environments. Developers should verify package sources, use signed packages, and apply the latest security updates to mitigate exploitation.",
+    "category": "GENERAL",
     "severity": "HIGH",
     "source": "Dark Reading",
     "publishedAt": "2026-11-25T15:48:04.000Z",
@@ -734,7 +734,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html"
+      }
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/microsoft-365-white-screen-bug/",

@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 03:44:50 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 04:43:11 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Wiz ADR Enhances Cloud AI Detection with Application Context</title>
@@ -386,13 +386,13 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Malicious NuGet Packages Target .NET Developers</title>
-      <link>https://secubuzz.com/news/malicious-nuget-packages-target-net-developers-43c157ec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-nuget-packages-target-net-developers-43c157ec</guid>
-      <description><![CDATA[Researchers uncovered 13 malicious NuGet packages distributed through a fake recruitment campaign, designed to infect .NET developers’ machines. The poisoned packages contain malware that grants attackers remote access, enabling credential theft and lateral movement within development environments. Developers should verify package sources, use signed packages, and apply the latest security updates to mitigate exploitation.]]></description>
+      <title>13 Malicious NuGet Packages Target .NET Developers via Fake Recruitment Campaign</title>
+      <link>https://secubuzz.com/news/13-malicious-nuget-packages-target-net-developers-5054f44d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/13-malicious-nuget-packages-target-net-developers-5054f44d</guid>
+      <description><![CDATA[13 malicious NuGet packages masquerading as fake .NET job assessment tools infected Windows .NET developers by delivering malware when built or executed. The payload grants attackers remote access, enabling credential theft and lateral movement within development environments. Developers should verify package sources, use signed packages, and apply the latest security updates to mitigate exploitation.]]></description>
       <pubDate>Wed, 25 Nov 2026 15:48:04 GMT</pubDate>
       <source url="https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments">Dark Reading</source>
-      <category>Vulnerability</category>
+      <category>General</category>
     </item>
     <item>
       <title>Microsoft 365 Bug Causes Blank Screens in Office Apps</title>
