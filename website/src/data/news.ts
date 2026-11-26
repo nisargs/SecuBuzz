@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "wiz-adr-enhances-cloud-ai-detection-with-applicati-ddb95e4c",
+    "title": "Wiz ADR Enhances Cloud AI Detection with Application Context",
+    "summary": "Wiz introduced ADR, a tool that maps runtime alerts to specific code functions in cloud environments. ADR uses agentic investigation to reduce false positives and provides precise file and line-level context for detected anomalies. Security teams can automate remediation actions directly to the affected code, improving response speed and accuracy.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/introducing-wiz-adr",
+    "publishedAt": "2026-11-26T02:26:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wiz-adr-enhances-cloud-ai-detection-with-applicati",
+      "article-ddb95e4c",
+      "ddb95e4c",
+      "wiz-adr-enhances-cloud-ai-detection-with-applicati-4b4062",
+      "wiz-adr-enhances-cloud-ai-detection-with-application-context"
+    ]
+  },
+  {
+    "slug": "wiz-agents-celebrate-smarter-security-season-e367a667",
+    "title": "Wiz Agents Celebrate Smarter Security Season",
+    "summary": "Wiz’s Red, Green, and Blue Agents highlight a quieter, smarter security season by sharing insights and achievements. The announcement showcases how the agents use data analytics to reduce noise and improve detection accuracy across cloud workloads. Users can view the agents’ performance metrics in the Wiz console, fostering a more efficient security posture.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/what-wiz-agents-are-thankful-for",
+    "publishedAt": "2026-11-26T02:10:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wiz-agents-celebrate-smarter-security-season",
+      "article-e367a667",
+      "e367a667",
+      "wiz-agents-celebrate-smarter-security-season-30c761"
+    ]
+  },
+  {
     "slug": "black-friday-amplifies-existing-consumer-cyber-ris-d6ce5eaa",
     "title": "Black Friday Amplifies Existing Consumer Cyber Risks",
     "summary": "During Black Friday, cybercriminals intensify fraud, phishing, malware, and credential theft attacks against consumers and retailers. The surge is driven by high transaction volume, increased link clicking, and bot activity exploiting business logic and AI-driven commerce. Security teams should enforce stricter authentication, monitor bot traffic, audit business logic, and prepare AI-aware defenses to mitigate damage.",
@@ -95,22 +132,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "1password-customer-data-stolen-after-employee-gith-845524bb",
-    "title": "1Password customer data stolen after employee GitHub account breach",
-    "summary": "1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data.",
+    "slug": "1password-data-breach-employee-github-account-comp-0bf2285c",
+    "title": "1Password Data Breach: Employee GitHub Account Compromised, Customer Data Exfiltrated",
+    "summary": "1Password suffered a data breach when an attacker compromised an employee’s corporate GitHub account and used it to access backend systems. The intrusion exposed customer names, sign-in emails, and internal account details, but did not reach vault contents or stored passwords. 1Password notified affected customers, is investigating the breach, and advises monitoring account activity and changing passwords.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
     "publishedAt": "2026-11-25T21:33:33.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/1password-hacked-2/"
+      }
+    ],
     "aliases": [
-      "1password-customer-data-stolen-after-employee-gith",
-      "article-845524bb",
-      "845524bb",
-      "1password-customer-data-stolen-after-employee-gith-533a01",
-      "1password-customer-data-stolen-after-employee-github-account"
+      "1password-data-breach-employee-github-account-comp",
+      "article-0bf2285c",
+      "0bf2285c",
+      "1password-data-breach-employee-github-account-comp-533a01",
+      "1password-data-breach-employee-github-account-compromised-cu"
     ]
   },
   {
@@ -9562,42 +9604,6 @@ export const news: NewsBrief[] = [
       "article-18124180",
       "18124180",
       "red-hat-issues-cockpit-security-update-2ee162"
-    ]
-  },
-  {
-    "slug": "red-hat-advises-updates-for-multiple-rhel-versions-5f2cf303",
-    "title": "Red Hat Advises Updates for Multiple RHEL Versions",
-    "summary": "Red Hat issued advisory AV26-1190 affecting all RHEL 6-10, Hardened Images, and OpenShift 4-5. The advisory references multiple undisclosed vulnerabilities across these products, with no CVE IDs provided, implying potential remote code execution or privilege escalation risks. Administrators should review Red Hat’s links and apply available patches as soon as they are released.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1190",
-    "publishedAt": "2026-11-23T14:40:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-advises-updates-for-multiple-rhel-versions",
-      "article-5f2cf303",
-      "5f2cf303",
-      "red-hat-advises-updates-for-multiple-rhel-versions-cc2e06"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-php-update-for-rhel9-ca848282",
-    "title": "Red Hat Releases Critical PHP Update for RHEL9",
-    "summary": "Red Hat released a critical PHP update for RHEL9, addressing multiple vulnerabilities. The update fixes several PHP bugs that could allow remote code execution or privilege escalation; CVSS scores indicate high severity, though specific CVE IDs are not listed. Red Hat has made the update available through standard repositories; administrators should install the latest php package to mitigate the risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102297",
-    "publishedAt": "2026-11-23T14:37:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-php-update-for-rhel9",
-      "article-ca848282",
-      "ca848282",
-      "red-hat-releases-critical-php-update-for-rhel9-2ee15f"
     ]
   }
 ];

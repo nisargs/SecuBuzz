@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 02:43:03 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 03:43:49 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Wiz ADR Enhances Cloud AI Detection with Application Context</title>
+      <link>https://secubuzz.com/news/wiz-adr-enhances-cloud-ai-detection-with-applicati-ddb95e4c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wiz-adr-enhances-cloud-ai-detection-with-applicati-ddb95e4c</guid>
+      <description><![CDATA[Wiz introduced ADR, a tool that maps runtime alerts to specific code functions in cloud environments. ADR uses agentic investigation to reduce false positives and provides precise file and line-level context for detected anomalies. Security teams can automate remediation actions directly to the affected code, improving response speed and accuracy.]]></description>
+      <pubDate>Thu, 26 Nov 2026 02:26:16 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/introducing-wiz-adr">Wiz Research</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Wiz Agents Celebrate Smarter Security Season</title>
+      <link>https://secubuzz.com/news/wiz-agents-celebrate-smarter-security-season-e367a667</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wiz-agents-celebrate-smarter-security-season-e367a667</guid>
+      <description><![CDATA[Wiz’s Red, Green, and Blue Agents highlight a quieter, smarter security season by sharing insights and achievements. The announcement showcases how the agents use data analytics to reduce noise and improve detection accuracy across cloud workloads. Users can view the agents’ performance metrics in the Wiz console, fostering a more efficient security posture.]]></description>
+      <pubDate>Thu, 26 Nov 2026 02:10:58 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/what-wiz-agents-are-thankful-for">Wiz Research</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Black Friday Amplifies Existing Consumer Cyber Risks</title>
       <link>https://secubuzz.com/news/black-friday-amplifies-existing-consumer-cyber-ris-d6ce5eaa</link>
@@ -44,10 +62,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>1Password customer data stolen after employee GitHub account breach</title>
-      <link>https://secubuzz.com/news/1password-customer-data-stolen-after-employee-gith-845524bb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/1password-customer-data-stolen-after-employee-gith-845524bb</guid>
-      <description><![CDATA[1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data.]]></description>
+      <title>1Password Data Breach: Employee GitHub Account Compromised, Customer Data Exfiltrated</title>
+      <link>https://secubuzz.com/news/1password-data-breach-employee-github-account-comp-0bf2285c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/1password-data-breach-employee-github-account-comp-0bf2285c</guid>
+      <description><![CDATA[1Password suffered a data breach when an attacker compromised an employee’s corporate GitHub account and used it to access backend systems. The intrusion exposed customer names, sign-in emails, and internal account details, but did not reach vault contents or stored passwords. 1Password notified affected customers, is investigating the breach, and advises monitoring account activity and changing passwords.]]></description>
       <pubDate>Wed, 25 Nov 2026 21:33:33 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/">BleepingComputer</source>
       <category>Breach</category>
@@ -438,24 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 15:22:40 GMT</pubDate>
       <source url="https://cybersecuritynews.com/fortinet-flaws-to-breach-commercial-ships/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Bot Detection Losing Battle, Privileged Access Must Equal</title>
-      <link>https://secubuzz.com/news/bot-detection-losing-battle-privileged-access-must-d4f20836</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bot-detection-losing-battle-privileged-access-must-d4f20836</guid>
-      <description><![CDATA[Bot detection has become a losing game as automated actors outpace traditional controls. The root cause is the rapid proliferation of sophisticated bots that mimic legitimate users, making privilege escalation indistinguishable from human activity. Security teams must enforce equal privileged access controls for humans and machines, adopting zero-trust and continuous monitoring to mitigate bot-driven threats.]]></description>
-      <pubDate>Wed, 25 Nov 2026 15:20:27 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/bot-world-just-living">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Adobe AEM Vulnerabilities Fixed in Hotfix</title>
-      <link>https://secubuzz.com/news/adobe-aem-vulnerabilities-fixed-in-hotfix-644111b1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/adobe-aem-vulnerabilities-fixed-in-hotfix-644111b1</guid>
-      <description><![CDATA[Adobe Experience Manager Cloud Service, AEM 6.5, and AEM 6.5 LTS are affected by multiple vulnerabilities, including the issue identified as GRANITE-76751. The flaw permits unauthorized access to administrative interfaces and could allow attackers to execute arbitrary code, though no public exploit is confirmed. Adobe has released cumulative hotfixes; administrators should apply the updates promptly to secure their deployments.]]></description>
-      <pubDate>Wed, 25 Nov 2026 15:15:11 GMT</pubDate>
-      <source url="https://cyber.gc.ca/en/alerts-advisories/adobe-security-advisory-av26-1205">Canadian Centre for Cyber Security</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

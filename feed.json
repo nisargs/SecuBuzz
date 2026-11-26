@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://www.wiz.io/blog/introducing-wiz-adr",
+    "sourceUrl": "https://www.wiz.io/blog/introducing-wiz-adr",
+    "title": "Wiz ADR Enhances Cloud AI Detection with Application Context",
+    "headline": "Wiz ADR Enhances Cloud AI Detection with Application Context",
+    "summary": "Wiz introduced ADR, a tool that maps runtime alerts to specific code functions in cloud environments. ADR uses agentic investigation to reduce false positives and provides precise file and line-level context for detected anomalies. Security teams can automate remediation actions directly to the affected code, improving response speed and accuracy.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "publishedAt": "2026-11-26T02:26:16.000Z",
+    "ingestedAt": "2026-11-26T03:43:10.012Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.wiz.io/blog/introducing-wiz-adr",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.wiz.io/blog/what-wiz-agents-are-thankful-for",
+    "sourceUrl": "https://www.wiz.io/blog/what-wiz-agents-are-thankful-for",
+    "title": "Wiz Agents Celebrate Smarter Security Season",
+    "headline": "Wiz Agents Celebrate Smarter Security Season",
+    "summary": "Wiz’s Red, Green, and Blue Agents highlight a quieter, smarter security season by sharing insights and achievements. The announcement showcases how the agents use data analytics to reduce noise and improve detection accuracy across cloud workloads. Users can view the agents’ performance metrics in the Wiz console, fostering a more efficient security posture.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "publishedAt": "2026-11-26T02:10:58.000Z",
+    "ingestedAt": "2026-11-26T03:43:10.012Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.wiz.io/blog/what-wiz-agents-are-thankful-for",
+    "additionalSources": []
+  },
+  {
     "id": "https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-two-retailers/",
     "sourceUrl": "https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-two-retailers/",
     "title": "Black Friday Amplifies Existing Consumer Cyber Risks",
@@ -71,9 +103,9 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
-    "title": "1Password customer data stolen after employee GitHub account breach",
-    "headline": "1Password customer data stolen after employee GitHub account breach",
-    "summary": "1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data.",
+    "title": "1Password Data Breach: Employee GitHub Account Compromised, Customer Data Exfiltrated",
+    "headline": "1Password Data Breach: Employee GitHub Account Compromised, Customer Data Exfiltrated",
+    "summary": "1Password suffered a data breach when an attacker compromised an employee’s corporate GitHub account and used it to access backend systems. The intrusion exposed customer names, sign-in emails, and internal account details, but did not reach vault contents or stored passwords. 1Password notified affected customers, is investigating the breach, and advises monitoring account activity and changing passwords.",
     "category": "BREACH",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -82,7 +114,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/1password-hacked-2/"
+      }
+    ],
     "isFallback": true
   },
   {
@@ -8244,38 +8281,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:102348",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1190",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1190",
-    "title": "Red Hat Advises Updates for Multiple RHEL Versions",
-    "headline": "Red Hat Advises Updates for Multiple RHEL Versions",
-    "summary": "Red Hat issued advisory AV26-1190 affecting all RHEL 6-10, Hardened Images, and OpenShift 4-5. The advisory references multiple undisclosed vulnerabilities across these products, with no CVE IDs provided, implying potential remote code execution or privilege escalation risks. Administrators should review Red Hat’s links and apply available patches as soon as they are released.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "publishedAt": "2026-11-23T14:40:09.000Z",
-    "ingestedAt": "2026-11-23T14:50:35.969Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1190",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:102297",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102297",
-    "title": "Red Hat Releases Critical PHP Update for RHEL9",
-    "headline": "Red Hat Releases Critical PHP Update for RHEL9",
-    "summary": "Red Hat released a critical PHP update for RHEL9, addressing multiple vulnerabilities. The update fixes several PHP bugs that could allow remote code execution or privilege escalation; CVSS scores indicate high severity, though specific CVE IDs are not listed. Red Hat has made the update available through standard repositories; administrators should install the latest php package to mitigate the risks.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-23T14:37:11.000Z",
-    "ingestedAt": "2026-11-24T00:43:56.467Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:102297",
     "additionalSources": []
   }
 ]
