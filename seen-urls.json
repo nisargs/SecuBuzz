@@ -7441,5 +7441,11 @@
   "https://access.redhat.com/errata/RHSA-2026:103817",
   "https://cybersecuritynews.com/cisa-adds-10-flaws-to-kev/",
   "https://access.redhat.com/errata/RHSA-2026:103846",
-  "https://access.redhat.com/errata/RHSA-2026:103851"
+  "https://access.redhat.com/errata/RHSA-2026:103851",
+  "https://access.redhat.com/errata/RHSA-2026:103848",
+  "https://access.redhat.com/errata/RHSA-2026:103843",
+  "https://www.malwarebytes.com/blog/ai/2026/11/anthropic-built-a-honeypot-to-see-if-ai-agents-will-break-out",
+  "https://ubuntu.com/security/notices/USN-9211-1",
+  "https://cybersecuritynews.com/zodia-custody-data-breach/",
+  "https://cybersecuritynews.com/moving-beyond-static-cookie-banners-implementing-zero-leakage-real-time-consent-management/"
 ]

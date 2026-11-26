@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "zero-leakage-consent-management-replaces-static-co-eac9e01b",
+    "title": "Zero-Leakage Consent Management Replaces Static Cookie Banners",
+    "summary": "Static cookie banners allow data leakage because tag managers load analytics and advertising pixels before users consent. Zero-leakage real-time consent management ensures scripts run only after explicit user approval, cutting pre-settlement exposure. Adopting this robust comprehensive approach requires redesigning tag workflows and inserting consent gates to enforce preferences at runtime.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/moving-beyond-static-cookie-banners-implementing-zero-leakage-real-time-consent-management/",
+    "publishedAt": "2026-11-26T15:47:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zero-leakage-consent-management-replaces-static-co",
+      "article-eac9e01b",
+      "eac9e01b",
+      "zero-leakage-consent-management-replaces-static-co-1d950e",
+      "zero-leakage-consent-management-replaces-static-cookie-banne"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103848-moderate-ruby-3-3-security-bug-fi-2463b666",
+    "title": "RHSA-2026:103848: Moderate: ruby:3.3 security, bug fix, and enhancement update",
+    "summary": "An update for the ruby:3.3 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103848",
+    "publishedAt": "2026-11-26T15:20:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103848-moderate-ruby-3-3-security-bug-fi",
+      "article-2463b666",
+      "2463b666",
+      "rhsa-2026-103848-moderate-ruby-3-3-security-bug-fi-2ee1e9",
+      "rhsa-2026-103848-moderate-ruby-3-3-security-bug-fix-and-enha"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103843-critical-ruby-2-5-security-update-f210d6ea",
+    "title": "RHSA-2026:103843: Critical: ruby:2.5 security update",
+    "summary": "An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Critical.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103843",
+    "publishedAt": "2026-11-26T14:57:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103843-critical-ruby-2-5-security-update",
+      "article-f210d6ea",
+      "f210d6ea",
+      "rhsa-2026-103843-critical-ruby-2-5-security-update-2ee1e9"
+    ]
+  },
+  {
     "slug": "red-hat-issues-critical-ruby-update-for-rhel-10-8756c79c",
     "title": "Red Hat Issues Critical Ruby Update for RHEL 10",
     "summary": "Red Hat released a critical security update for the ruby package on RHEL 10.0 Extended Update Support. The patch fixes multiple high-severity vulnerabilities, such as integer overflows and buffer overflows, that could enable local privilege escalation or remote code execution. System administrators should apply the update immediately and confirm that the ruby package is at the latest version.",
@@ -44,6 +100,24 @@ export const news: NewsBrief[] = [
       "article-9f40644a",
       "9f40644a",
       "red-hat-issues-critical-ruby-2-5-security-update-2ee1e9"
+    ]
+  },
+  {
+    "slug": "anthropic-tests-claude-ai-escape-in-honeypot-f0b29504",
+    "title": "Anthropic Tests Claude AI Escape in Honeypot",
+    "summary": "Anthropic built a honeypot to test whether its Claude AI agents could escape containment by seeking a valuable target. The experiment found no exploitation, showing current safeguards stop Claude from breaking out, yet revealing future vectors if access widens. No patch is required, but the study highlights the need for continuous monitoring of AI behavior in controlled environments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/anthropic-built-a-honeypot-to-see-if-ai-agents-will-break-out",
+    "publishedAt": "2026-11-26T14:36:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-tests-claude-ai-escape-in-honeypot",
+      "article-f0b29504",
+      "f0b29504",
+      "anthropic-tests-claude-ai-escape-in-honeypot-5c1d2c"
     ]
   },
   {
@@ -85,6 +159,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "zodia-custody-breach-exposes-client-and-employee-d-7e73252e",
+    "title": "Zodia Custody Breach Exposes Client and Employee Data",
+    "summary": "Standard Chartered’s Zodia Custody unit was breached, exposing client and employee data after probing attempts were detected. No unauthorized transactions were found, but the breach accessed sensitive personal information during the probing phase, highlighting platform security gaps. Affected clients should review activity, change credentials, and Standard Chartered is tightening controls to mitigate future incidents.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/zodia-custody-data-breach/",
+    "publishedAt": "2026-11-26T14:01:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zodia-custody-breach-exposes-client-and-employee-d",
+      "article-7e73252e",
+      "7e73252e",
+      "zodia-custody-breach-exposes-client-and-employee-d-17cd84",
+      "zodia-custody-breach-exposes-client-and-employee-data"
+    ]
+  },
+  {
     "slug": "rhsa-2026-103817-critical-kernel-security-bug-fix-dc2cc921",
     "title": "RHSA-2026:103817: Critical: kernel security, bug fix, and enhancement update",
     "summary": "An update for kernel is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -120,6 +213,25 @@ export const news: NewsBrief[] = [
       "c6c171ad",
       "silver-fox-distributes-gh0strat-via-fake-ocam-inst-46243a",
       "silver-fox-distributes-gh0strat-via-fake-ocam-installer"
+    ]
+  },
+  {
+    "slug": "plexus-utils-path-sanitization-flaw-enables-arbitr-c046e9c8",
+    "title": "Plexus Utils Path Sanitization Flaw Enables Arbitrary Code",
+    "summary": "Plexus Utils does not sanitize file paths during archive extraction, allowing attackers to write arbitrary files and execute code. A crafted archive processed by any user or automated system could trigger this flaw, potentially enabling full system compromise. No CVE is assigned; applying the latest Plexus Utils update or adding path validation mitigates the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9211-1",
+    "publishedAt": "2026-11-26T13:25:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "plexus-utils-path-sanitization-flaw-enables-arbitr",
+      "article-c046e9c8",
+      "c046e9c8",
+      "plexus-utils-path-sanitization-flaw-enables-arbitr-7e6d14",
+      "plexus-utils-path-sanitization-flaw-enables-arbitrary-code"
     ]
   },
   {
@@ -9502,122 +9614,6 @@ export const news: NewsBrief[] = [
       "55dbba3a",
       "ubuntu-oauthlib-multiple-cve-vulnerabilities-discl-7e77e3",
       "ubuntu-oauthlib-multiple-cve-vulnerabilities-disclosed"
-    ]
-  },
-  {
-    "slug": "chrome-ios-stable-158-released-with-stability-impr-cc781fff",
-    "title": "Chrome iOS Stable 158 Released with Stability Improvements",
-    "summary": "Google released Chrome Stable 158 (158.0.8127.86) for iOS, adding stability and performance improvements to the mobile browser. The update addresses minor bugs and optimizes rendering, reducing memory usage and enhancing page load times on iOS devices. The new build will be available on the App Store within hours, and users are encouraged to update to benefit from the fixes.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update_0595441535.html",
-    "publishedAt": "2026-11-23T18:58:34.761Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-ios-stable-158-released-with-stability-impr",
-      "article-cc781fff",
-      "cc781fff",
-      "chrome-ios-stable-158-released-with-stability-impr-5cad3b",
-      "chrome-ios-stable-158-released-with-stability-improvements"
-    ]
-  },
-  {
-    "slug": "laliga-data-breach-exposes-fans-personal-informati-47226265",
-    "title": "LaLiga Data Breach Exposes Fans Personal Information",
-    "summary": "LaLiga disclosed a breach that exposed personal data of its users and some affiliated clubs. The theft included names, email addresses, phone numbers, and other sensitive information, raising significant privacy and regulatory concerns. LaLiga notified affected users, launched incident response, and is cooperating with law enforcement to trace the attack.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
-    "publishedAt": "2026-11-23T18:38:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "laliga-data-breach-exposes-fans-personal-informati",
-      "article-47226265",
-      "47226265",
-      "laliga-data-breach-exposes-fans-personal-informati-2c4a18",
-      "laliga-data-breach-exposes-fans-personal-information"
-    ]
-  },
-  {
-    "slug": "misp-advises-hotfix-for-pre-v2-5-53-vulnerabilitie-92ccdb3b",
-    "title": "MISP Advises Hotfix for Pre-v2.5.53 Vulnerabilities",
-    "summary": "The Canadian Centre for Cyber Security issued advisory AV26-1197, noting that MISP versions prior to 2.5.53 contain multiple security vulnerabilities. A quick hotfix, version 2.5.53, addresses the identified flaws, and administrators are urged to review the provided links and apply updates as soon as possible. Failure to patch may leave MISP installations vulnerable to exploitation of the disclosed weaknesses.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/misp-security-advisory-av26-1197",
-    "publishedAt": "2026-11-23T18:14:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "misp-advises-hotfix-for-pre-v2-5-53-vulnerabilitie",
-      "article-92ccdb3b",
-      "92ccdb3b",
-      "misp-advises-hotfix-for-pre-v2-5-53-vulnerabilitie-30e927",
-      "misp-advises-hotfix-for-pre-v2-5-53-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "ai-detects-new-attacks-by-learning-normal-behavior-7b3d2c9c",
-    "title": "AI Detects New Attacks by Learning Normal Behavior",
-    "summary": "Arctic Wolf's AI threat detection platform identifies new attacks by learning normal user, device, and system behavior. The system flags deviations that may indicate emerging threats, enabling security teams to investigate and respond to previously unseen attacks. This approach expands detection coverage beyond signature-based methods, improving overall security posture for organizations worldwide.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/glossary-uk/what-is-ai-threat-detection/",
-    "publishedAt": "2026-11-23T17:52:11.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Arctic Wolf",
-        "sourceUrl": "https://arcticwolf.com/resources/glossary/ai-threat-detection/"
-      }
-    ],
-    "aliases": [
-      "ai-detects-new-attacks-by-learning-normal-behavior",
-      "article-7b3d2c9c",
-      "7b3d2c9c",
-      "ai-detects-new-attacks-by-learning-normal-behavior-4e86f0"
-    ]
-  },
-  {
-    "slug": "new-framework-traces-decade-of-ransomware-actors-a995d0f9",
-    "title": "New Framework Traces Decade of Ransomware Actors",
-    "summary": "A new attribution framework enables security teams to trace ransomware actors across a decade of operations. The framework aggregates metadata from ransomware campaigns, correlating signatures and infrastructure to identify individual threat actors, thereby improving threat intelligence and response. Security teams can adopt the framework to enhance attribution accuracy, integrate with existing SIEMs, and prioritize defensive measures against identified actors.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
-    "publishedAt": "2026-11-23T17:45:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "new-framework-traces-decade-of-ransomware-actors",
-      "article-a995d0f9",
-      "a995d0f9",
-      "new-framework-traces-decade-of-ransomware-actors-392cc2"
-    ]
-  },
-  {
-    "slug": "webworm-modifies-softether-vpn-to-evade-detection-75f1fbe0",
-    "title": "Webworm Modifies SoftEther VPN to Evade Detection",
-    "summary": "The China-aligned threat actor Webworm is suspected of deploying a custom SoftEther VPN Bridge variant designed to conceal itself from security tools. The modified bridge removes recognizable detection fingerprints and masquerades as network-monitoring software, enabling covert remote access to compromised networks. Defenders should monitor anomalous VPN traffic, verify SoftEther installations against known hashes, and apply patches to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
-    "publishedAt": "2026-11-23T17:45:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "webworm-modifies-softether-vpn-to-evade-detection",
-      "article-75f1fbe0",
-      "75f1fbe0",
-      "webworm-modifies-softether-vpn-to-evade-detection-514f20"
     ]
   }
 ];

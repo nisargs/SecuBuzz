@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 15:48:35 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 16:47:25 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Zero-Leakage Consent Management Replaces Static Cookie Banners</title>
+      <link>https://secubuzz.com/news/zero-leakage-consent-management-replaces-static-co-eac9e01b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zero-leakage-consent-management-replaces-static-co-eac9e01b</guid>
+      <description><![CDATA[Static cookie banners allow data leakage because tag managers load analytics and advertising pixels before users consent. Zero-leakage real-time consent management ensures scripts run only after explicit user approval, cutting pre-settlement exposure. Adopting this robust comprehensive approach requires redesigning tag workflows and inserting consent gates to enforce preferences at runtime.]]></description>
+      <pubDate>Thu, 26 Nov 2026 15:47:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/moving-beyond-static-cookie-banners-implementing-zero-leakage-real-time-consent-management/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:103848: Moderate: ruby:3.3 security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103848-moderate-ruby-3-3-security-bug-fi-2463b666</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103848-moderate-ruby-3-3-security-bug-fi-2463b666</guid>
+      <description><![CDATA[An update for the ruby:3.3 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 26 Nov 2026 15:20:44 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103848">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:103843: Critical: ruby:2.5 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103843-critical-ruby-2-5-security-update-f210d6ea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103843-critical-ruby-2-5-security-update-f210d6ea</guid>
+      <description><![CDATA[An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Critical.]]></description>
+      <pubDate>Thu, 26 Nov 2026 14:57:03 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103843">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Issues Critical Ruby Update for RHEL 10</title>
       <link>https://secubuzz.com/news/red-hat-issues-critical-ruby-update-for-rhel-10-8756c79c</link>
@@ -24,6 +51,15 @@
       <pubDate>Thu, 26 Nov 2026 14:46:37 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103846">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Anthropic Tests Claude AI Escape in Honeypot</title>
+      <link>https://secubuzz.com/news/anthropic-tests-claude-ai-escape-in-honeypot-f0b29504</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-tests-claude-ai-escape-in-honeypot-f0b29504</guid>
+      <description><![CDATA[Anthropic built a honeypot to test whether its Claude AI agents could escape containment by seeking a valuable target. The experiment found no exploitation, showing current safeguards stop Claude from breaking out, yet revealing future vectors if access widens. No patch is required, but the study highlights the need for continuous monitoring of AI behavior in controlled environments.]]></description>
+      <pubDate>Thu, 26 Nov 2026 14:36:43 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/11/anthropic-built-a-honeypot-to-see-if-ai-agents-will-break-out">Malwarebytes Labs</source>
+      <category>General</category>
     </item>
     <item>
       <title>RHSA-2026:103838: Critical: kernel-rt security, bug fix, and enhancement update</title>
@@ -44,6 +80,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Zodia Custody Breach Exposes Client and Employee Data</title>
+      <link>https://secubuzz.com/news/zodia-custody-breach-exposes-client-and-employee-d-7e73252e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zodia-custody-breach-exposes-client-and-employee-d-7e73252e</guid>
+      <description><![CDATA[Standard Chartered’s Zodia Custody unit was breached, exposing client and employee data after probing attempts were detected. No unauthorized transactions were found, but the breach accessed sensitive personal information during the probing phase, highlighting platform security gaps. Affected clients should review activity, change credentials, and Standard Chartered is tightening controls to mitigate future incidents.]]></description>
+      <pubDate>Thu, 26 Nov 2026 14:01:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/zodia-custody-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>RHSA-2026:103817: Critical: kernel security, bug fix, and enhancement update</title>
       <link>https://secubuzz.com/news/rhsa-2026-103817-critical-kernel-security-bug-fix-dc2cc921</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103817-critical-kernel-security-bug-fix-dc2cc921</guid>
@@ -59,6 +104,15 @@
       <description><![CDATA[Silver Fox hackers used a fake oCam installer to deliver a dual-package that silently installed Gh0stRAT on Windows PCs. The secondary installer leveraged supply-chain deception, enabling the RAT to stealthily exfiltrate credentials before endpoint security stopped it in 90 seconds. Teams should verify signatures, enforce whitelisting, and deploy behavioral detection to counter similar attacks.]]></description>
       <pubDate>Thu, 26 Nov 2026 13:35:43 GMT</pubDate>
       <source url="https://cybersecuritynews.com/silver-fox-hackers/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Plexus Utils Path Sanitization Flaw Enables Arbitrary Code</title>
+      <link>https://secubuzz.com/news/plexus-utils-path-sanitization-flaw-enables-arbitr-c046e9c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/plexus-utils-path-sanitization-flaw-enables-arbitr-c046e9c8</guid>
+      <description><![CDATA[Plexus Utils does not sanitize file paths during archive extraction, allowing attackers to write arbitrary files and execute code. A crafted archive processed by any user or automated system could trigger this flaw, potentially enabling full system compromise. No CVE is assigned; applying the latest Plexus Utils update or adding path validation mitigates the risk.]]></description>
+      <pubDate>Thu, 26 Nov 2026 13:25:00 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9211-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -402,60 +456,6 @@
       <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
       <source url="https://therecord.media/britain-delays-national-cyber-action-plan-again">The Record</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Black Friday Amplifies Existing Consumer Cyber Risks</title>
-      <link>https://secubuzz.com/news/black-friday-amplifies-existing-consumer-cyber-ris-d6ce5eaa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/black-friday-amplifies-existing-consumer-cyber-ris-d6ce5eaa</guid>
-      <description><![CDATA[During Black Friday, cybercriminals intensify fraud, phishing, malware, and credential theft attacks against consumers and retailers. The surge is driven by high transaction volume, increased link clicking, and bot activity exploiting business logic and AI-driven commerce. Security teams should enforce stricter authentication, monitor bot traffic, audit business logic, and prepare AI-aware defenses to mitigate damage.]]></description>
-      <pubDate>Wed, 25 Nov 2026 23:02:23 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-two-retailers/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Socket CEO Discusses Vulnerability Mitigation Without Upgrades</title>
-      <link>https://secubuzz.com/news/socket-ceo-discusses-vulnerability-mitigation-with-15a827cf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/socket-ceo-discusses-vulnerability-mitigation-with-15a827cf</guid>
-      <description><![CDATA[Socket CEO Feross Aboukhadijeh appeared on the Risky Business Podcast to discuss strategies for eliminating open source vulnerabilities at scale. He emphasized that organizations can mitigate risk through runtime monitoring, automated patching, and dependency hygiene without frequent version upgrades. Listeners were encouraged to adopt continuous security practices and leverage tooling that detects vulnerable packages in real time.]]></description>
-      <pubDate>Wed, 25 Nov 2026 22:50:32 GMT</pubDate>
-      <source url="https://socket.dev/blog/eliminating-vulnerabilities-without-upgrading-dependencies">Socket.dev</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ubuntu libpcap Vulnerabilities Expose Arbitrary Code Execution</title>
-      <link>https://secubuzz.com/news/ubuntu-libpcap-vulnerabilities-expose-arbitrary-co-0ac048e6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-libpcap-vulnerabilities-expose-arbitrary-co-0ac048e6</guid>
-      <description><![CDATA[Ubuntu 22.04 LTS and 24.04 LTS suffer libpcap flaws that fail to validate MAC addresses in pcap_ether_aton(), causing out-of-bounds reads and writes. CVE-2025-11961 may enable arbitrary code execution or denial of service, while CVE-2026-18238 allows malicious rpcap servers to read sensitive data or crash clients.]]></description>
-      <pubDate>Wed, 25 Nov 2026 22:41:37 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9203-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Palo Alto PAN-OS Targeted by Fragnesia Exploit Chain</title>
-      <link>https://secubuzz.com/news/palo-alto-pan-os-targeted-by-fragnesia-exploit-cha-f23ba752</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-pan-os-targeted-by-fragnesia-exploit-cha-f23ba752</guid>
-      <description><![CDATA[Threat actors are chaining PHP2Shell and Fragnesia vulnerabilities to compromise Palo Alto Networks PAN-OS devices with internet-exposed management interfaces. The Fragnesia flaw enables attackers to execute arbitrary code, while PHP2Shell facilitates lateral movement, resulting in full device takeover. Administrators should update PAN-OS to the latest release, disable exposed management interfaces, and monitor for suspicious activity.]]></description>
-      <pubDate>Wed, 25 Nov 2026 22:05:09 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>1Password Breach: GitHub Account Compromise Exposes Customer Data and Source Code</title>
-      <link>https://secubuzz.com/news/1password-breach-github-account-compromise-exposes-155a479d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/1password-breach-github-account-compromise-exposes-155a479d</guid>
-      <description><![CDATA[1Password suffered a breach when an attacker compromised an employee’s GitHub account, gaining privileged access to private repositories. The intrusion exposed customer names, emails, and internal source code, but did not reach vaults or stored passwords. 1Password responded by issuing a security advisory, rotating credentials, engaging forensic investigators, and releasing a patch to block unauthorized pushes.]]></description>
-      <pubDate>Wed, 25 Nov 2026 21:33:33 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Artex Tool Adopted by China, North Korea Hackers</title>
-      <link>https://secubuzz.com/news/artex-tool-adopted-by-china-north-korea-hackers-62f1444a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/artex-tool-adopted-by-china-north-korea-hackers-62f1444a</guid>
-      <description><![CDATA[Microsoft reports that AI tool Artex, used in high-profile breaches, is being incorporated into hacking suites by Chinese and North Korean groups. The integration expands Artex’s credential harvesting and lateral movement capabilities, potentially enabling broader compromise, though no active exploitation has been confirmed. Security teams should monitor for Artex signatures, update detection rules, and apply defensive controls against credential theft.]]></description>
-      <pubDate>Wed, 25 Nov 2026 21:18:00 GMT</pubDate>
-      <source url="https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool">The Record</source>
-      <category>Nation State</category>
     </item>
   </channel>
 </rss>
