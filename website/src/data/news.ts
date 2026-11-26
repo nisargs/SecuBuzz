@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "openai-fixes-bug-accelerating-gpt-6-2-usage-limits-bcca6676",
+    "title": "OpenAI Fixes Bug Accelerating GPT-6.2 Usage Limits",
+    "summary": "OpenAI announced that a bug fix in GPT-6.2 Astra will cause users to hit usage limits 40% faster. The fix corrected an internal calculation error that previously undercounted usage, thereby accelerating quota depletion without affecting model performance. Users should monitor usage metrics closely, adjust request pacing, and consider upgrading to higher quota plans to mitigate the faster limit hit.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
+    "publishedAt": "2026-11-26T21:06:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-fixes-bug-accelerating-gpt-6-2-usage-limits",
+      "article-bcca6676",
+      "bcca6676",
+      "openai-fixes-bug-accelerating-gpt-6-2-usage-limits-627b31"
+    ]
+  },
+  {
     "slug": "ubuntu-22-04-binutils-vulnerabilities-allow-local-70f9cfe4",
     "title": "Ubuntu 22.04 Binutils Vulnerabilities Allow Local DoS",
     "summary": "A local attacker could exploit multiple GNU binutils vulnerabilities in Ubuntu 22.04 LTS, causing crashes or denial of service. The CVE-2019-1010204, CVE-2022-27943, and CVE-2022-48064 flaws arise from improper handling of ELF, Rust symbols, and DWARF data, causing crashes. Ubuntu has released updates; users should install the latest binutils package to mitigate the issue.",
@@ -34,6 +52,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "threatsday-highlights-10m-nginx-services-malicious-1d37be7a",
+    "title": "ThreatsDay Highlights 10M NGINX Services, Malicious Extensions, AI Hijacking",
+    "summary": "ThreatsDay reports over 10 million NGINX services are vulnerable, with 250+ malicious browser extensions and rising AI server hijacking incidents. The report highlights misconfigured NGINX instances, compromised extensions, and unauthorized AI server access, posing widespread risk to web infrastructure. Security teams should patch NGINX, audit extension sources, and enforce strict AI server access controls to mitigate these threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+    "publishedAt": "2026-11-26T19:39:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "threatsday-highlights-10m-nginx-services-malicious",
+      "article-1d37be7a",
+      "1d37be7a",
+      "threatsday-highlights-10m-nginx-services-malicious-3fe622",
+      "threatsday-highlights-10m-nginx-services-malicious-extension"
+    ]
+  },
+  {
     "slug": "red-hat-releases-critical-ruby-3-3-update-31d53972",
     "title": "Red Hat Releases Critical Ruby 3.3 Update",
     "summary": "Red Hat issued a critical security update for the ruby:3.3 module on Red Hat Enterprise Linux 9.8 Extended Update Support. The update addresses multiple high-severity vulnerabilities, each assigned a CVSS base score, that could allow local or remote attackers to execute arbitrary code or compromise system integrity. Users should apply the ruby:3.3 update immediately to mitigate the identified risks.",
@@ -49,6 +86,24 @@ export const news: NewsBrief[] = [
       "article-31d53972",
       "31d53972",
       "red-hat-releases-critical-ruby-3-3-update-2ee1ed"
+    ]
+  },
+  {
+    "slug": "nordvpn-offers-78-off-black-friday-vpn-plans-0489da05",
+    "title": "NordVPN Offers 78% Off Black Friday VPN Plans",
+    "summary": "NordVPN has launched a Black Friday promotion offering up to 78% off its VPN subscription plans for 2026. The discount includes an additional three months of protection, with plans ranging from basic to premium tiers. Customers can redeem the offer through NordVPN's website or app, and the promotion is valid until the end of the month.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nordvpn-black-friday-deal-get-78-percent-off-vpn-plans-in-2026/",
+    "publishedAt": "2026-11-26T17:58:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nordvpn-offers-78-off-black-friday-vpn-plans",
+      "article-0489da05",
+      "0489da05",
+      "nordvpn-offers-78-off-black-friday-vpn-plans-26d85d"
     ]
   },
   {
@@ -314,6 +369,24 @@ export const news: NewsBrief[] = [
       "ca6a4a3d",
       "rhsa-2026-103838-critical-kernel-rt-security-bug-f-2ee1e9",
       "rhsa-2026-103838-critical-kernel-rt-security-bug-fix-and-enh"
+    ]
+  },
+  {
+    "slug": "bithumb-breach-exposes-passports-bank-wallet-data-6550db8d",
+    "title": "Bithumb Breach Exposes Passports, Bank, Wallet Data",
+    "summary": "Bithumb, a cryptocurrency exchange, was breached after attackers accessed an internal system for 15 days, stealing passport numbers, bank accounts, and wallet addresses. The breach exploited an undisclosed internal access flaw, exfiltrating sensitive personal data beyond the initially reported scope. Bithumb issued a public update, notified affected customers, and is tightening controls to prevent recurrence.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/bithumb-hacked-for-15-days/",
+    "publishedAt": "2026-11-26T14:09:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bithumb-breach-exposes-passports-bank-wallet-data",
+      "article-6550db8d",
+      "6550db8d",
+      "bithumb-breach-exposes-passports-bank-wallet-data-962272"
     ]
   },
   {
@@ -9550,79 +9623,6 @@ export const news: NewsBrief[] = [
       "768216c7",
       "aws-ssm-agent-default-key-flaw-exposes-role-creden-29fa73",
       "aws-ssm-agent-default-key-flaw-exposes-role-credentials"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-golang-update-for-rhel-10-b421f581",
-    "title": "Red Hat Releases Golang Update for RHEL 10",
-    "summary": "Red Hat released a golang update for RHEL 10, fixing multiple security bugs in the Go compiler and runtime. The update addresses several CVE-linked issues, each with a CVSS base score indicating moderate impact; no active exploitation is known. Red Hat advises applying the update via the package manager; no workaround is needed.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102587",
-    "publishedAt": "2026-11-23T21:42:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-golang-update-for-rhel-10",
-      "article-b421f581",
-      "b421f581",
-      "red-hat-releases-golang-update-for-rhel-10-2ee16a"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-golang-security-update-f2d54dcf",
-    "title": "Red Hat Issues Golang Security Update",
-    "summary": "Red Hat released a security update for the golang runtime on RHEL 9, addressing multiple vulnerabilities. The update mitigates unspecified bugs that could allow local privilege escalation or code execution, with CVSS scores available via referenced CVE links. Administrators should apply the golang package update immediately to maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102586",
-    "publishedAt": "2026-11-23T21:41:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-golang-security-update",
-      "article-f2d54dcf",
-      "f2d54dcf",
-      "red-hat-issues-golang-security-update-2ee16a"
-    ]
-  },
-  {
-    "slug": "crowdstrike-acquires-zscaler-for-ai-security-integ-74ee119c",
-    "title": "CrowdStrike Acquires Zscaler for AI Security Integration",
-    "summary": "CrowdStrike announced a $44 billion acquisition of Zscaler, merging endpoint protection with zero-trust network security. The integration aims to centralize AI agent oversight, enabling unified threat detection across device and network layers. Customers will receive combined platform capabilities, but must plan for migration and potential licensing adjustments, ensuring seamless transition.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
-    "publishedAt": "2026-11-23T21:21:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-acquires-zscaler-for-ai-security-integ",
-      "article-74ee119c",
-      "74ee119c",
-      "crowdstrike-acquires-zscaler-for-ai-security-integ-27390e",
-      "crowdstrike-acquires-zscaler-for-ai-security-integration"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-python-3-6-security-update-7ae3d02b",
-    "title": "Red Hat Issues Python 3.6 Security Update",
-    "summary": "Red Hat released a security update for the python36:3.6 module on RHEL 8, addressing several vulnerabilities. The patch fixes bugs that could enable local privilege escalation or arbitrary code execution, with CVSS scores provided via CVE references. System administrators should install the updated python36 package promptly to secure their environments.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102653",
-    "publishedAt": "2026-11-23T21:08:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-python-3-6-security-update",
-      "article-7ae3d02b",
-      "7ae3d02b",
-      "red-hat-issues-python-3-6-security-update-2ee16d"
     ]
   }
 ];
