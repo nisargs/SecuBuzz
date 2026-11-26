@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "hacker-servers-expose-u-s-hospital-credentials-and-877e7623",
+    "title": "Hacker Servers Expose U.S. Hospital Credentials and Cloud Access",
+    "summary": "Exposed web directories on hacker servers revealed U.S. hospital credential records, 155,000 cloud storage objects, and a map of law firm remote-access systems. Operators had used a valid cloud token, suggesting credential reuse and potential unauthorized access to sensitive medical and legal data. Teams should secure directories, revoke tokens, enforce MFA, and investigate lateral movement to mitigate data exfiltration risks.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/exposed-hacker-servers/",
+    "publishedAt": "2026-11-26T08:41:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hacker-servers-expose-u-s-hospital-credentials-and",
+      "article-877e7623",
+      "877e7623",
+      "hacker-servers-expose-u-s-hospital-credentials-and-5821f1",
+      "hacker-servers-expose-u-s-hospital-credentials-and-cloud-acc"
+    ]
+  },
+  {
     "slug": "fifa-breach-12-2-gb-documents-exposed-8230537f",
     "title": "FIFA Breach: 12.2 GB Documents Exposed",
     "summary": "FIFA confirmed unauthorized access to personal and business data by the Handsome Boy Hacking Club. The attackers allegedly exfiltrated 12.2 GB of internal documents, including sensitive personnel records, though the group has not yet published the files. FIFA has not released a remediation plan yet; security teams should monitor for credential leaks and enforce multi-factor authentication.",
@@ -709,7 +728,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "drupal-core-vulnerability-cve-2026-136716-exploite-b1dc9d75",
     "title": "Drupal Core Vulnerability CVE-2026-136716 Exploited in Wild",
-    "summary": "Drupal core versions before 10.6.23, 11.3.23, and 11.4.14 are affected by CVE-2026-136716, a critical access-bypass flaw that attackers exploited worldwide. The flaw bypasses authentication, allowing unauthorized access to site administration and potential data exfiltration. Drupal administrators must apply the latest patch releases immediately and review vendor guidance to mitigate the vulnerability.",
+    "summary": "Drupal core versions before 10.6.23, 11.3.23, and 11.4.14 were compromised by attackers exploiting CVE-2026-136716, a critical access-bypass flaw that allowed unauthenticated takeover of site administration. The vulnerability bypasses authentication, enabling attackers to gain control, exfiltrate data, and disrupt services across affected websites. Drupal administrators must immediately apply the latest patch releases and review vendor guidance to mitigate the risk.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Canadian Centre for Cyber Security",
@@ -723,6 +742,10 @@ export const news: NewsBrief[] = [
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/drupal-website-takeover-flaw/"
       }
     ],
     "aliases": [
@@ -9611,25 +9634,6 @@ export const news: NewsBrief[] = [
       "f780faa3",
       "synology-dsm-vulnerability-affects-versions-before-741c15",
       "synology-dsm-vulnerability-affects-versions-before-7-4-1"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-100561-important-openjdk-11-0-33-1-els-s-966b21de",
-    "title": "RHSA-2026:100561: Important: OpenJDK 11.0.33.1 ELS Security Update For Portable Linux Builds",
-    "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100561",
-    "publishedAt": "2026-11-23T15:22:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-100561-important-openjdk-11-0-33-1-els-s",
-      "article-966b21de",
-      "966b21de",
-      "rhsa-2026-100561-important-openjdk-11-0-33-1-els-s-2ee081",
-      "rhsa-2026-100561-important-openjdk-11-0-33-1-els-security-up"
     ]
   }
 ];

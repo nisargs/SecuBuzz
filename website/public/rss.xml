@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 09:44:48 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 10:44:30 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hacker Servers Expose U.S. Hospital Credentials and Cloud Access</title>
+      <link>https://secubuzz.com/news/hacker-servers-expose-u-s-hospital-credentials-and-877e7623</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hacker-servers-expose-u-s-hospital-credentials-and-877e7623</guid>
+      <description><![CDATA[Exposed web directories on hacker servers revealed U.S. hospital credential records, 155,000 cloud storage objects, and a map of law firm remote-access systems. Operators had used a valid cloud token, suggesting credential reuse and potential unauthorized access to sensitive medical and legal data. Teams should secure directories, revoke tokens, enforce MFA, and investigate lateral movement to mitigate data exfiltration risks.]]></description>
+      <pubDate>Thu, 26 Nov 2026 08:41:41 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/exposed-hacker-servers/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>FIFA Breach: 12.2 GB Documents Exposed</title>
       <link>https://secubuzz.com/news/fifa-breach-12-2-gb-documents-exposed-8230537f</link>
@@ -326,7 +335,7 @@
       <title>Drupal Core Vulnerability CVE-2026-136716 Exploited in Wild</title>
       <link>https://secubuzz.com/news/drupal-core-vulnerability-cve-2026-136716-exploite-b1dc9d75</link>
       <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-vulnerability-cve-2026-136716-exploite-b1dc9d75</guid>
-      <description><![CDATA[Drupal core versions before 10.6.23, 11.3.23, and 11.4.14 are affected by CVE-2026-136716, a critical access-bypass flaw that attackers exploited worldwide. The flaw bypasses authentication, allowing unauthorized access to site administration and potential data exfiltration. Drupal administrators must apply the latest patch releases immediately and review vendor guidance to mitigate the vulnerability.]]></description>
+      <description><![CDATA[Drupal core versions before 10.6.23, 11.3.23, and 11.4.14 were compromised by attackers exploiting CVE-2026-136716, a critical access-bypass flaw that allowed unauthenticated takeover of site administration. The vulnerability bypasses authentication, enabling attackers to gain control, exfiltrate data, and disrupt services across affected websites. Drupal administrators must immediately apply the latest patch releases and review vendor guidance to mitigate the risk.]]></description>
       <pubDate>Wed, 25 Nov 2026 19:21:44 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209">Canadian Centre for Cyber Security</source>
       <category>CVE</category>
@@ -447,15 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 17:30:00 GMT</pubDate>
       <source url="https://therecord.media/ransomware-doj-indictment-recovery">The Record</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>CVE-2026-136267 - Improper neutralization of special elements used in an OS command in Kiro Web</title>
-      <link>https://secubuzz.com/news/cve-2026-136267-improper-neutralization-of-special-8d7cb035</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-136267-improper-neutralization-of-special-8d7cb035</guid>
-      <description><![CDATA[We are aware of CVE-2026-136267, an issue in Kiro Web where tool-call markup inside content an agent session read, such as a repository file or a web page, could be repeated by certain models and run as a command in the subscriber's hosted development environment without a consent prompt.]]></description>
-      <pubDate>Wed, 25 Nov 2026 17:08:36 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-202-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
