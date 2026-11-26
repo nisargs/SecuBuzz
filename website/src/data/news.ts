@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-requires-mcp-or-cli-for-workspace-ai-agents-c362b12f",
+    "title": "Google Requires MCP or CLI for Workspace AI Agents",
+    "summary": "Google announced mandatory Model Context Protocol (MCP) or command-line interface access for Workspace AI agents starting February 2027 to secure autonomous agent interactions with enterprise data. New controls include dedicated agent identities, human approval for sensitive operations, prompt injection screening, and restrictions on third-party AI tool data processing.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/26/google-ai-agent-security-requirements/",
+    "publishedAt": "2026-11-26T05:30:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-requires-mcp-or-cli-for-workspace-ai-agents",
+      "article-c362b12f",
+      "c362b12f",
+      "google-requires-mcp-or-cli-for-workspace-ai-agents-143dda"
+    ]
+  },
+  {
+    "slug": "survey-shows-users-will-pay-to-remove-search-data-4dc58a49",
+    "title": "Survey Shows Users Will Pay to Remove Search Data",
+    "summary": "An Incogni survey of 1,008 U.S. adults revealed 55% would pay for permanent removal of personal information from public search results, while 53% desire a five-year search history log. The findings highlight growing privacy concerns over data broker exposure, with respondents valuing control over online identity footprints.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/26/incogni-online-privacy-concerns-report/",
+    "publishedAt": "2026-11-26T05:00:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "survey-shows-users-will-pay-to-remove-search-data",
+      "article-4dc58a49",
+      "4dc58a49",
+      "survey-shows-users-will-pay-to-remove-search-data-70bdaa"
+    ]
+  },
+  {
     "slug": "wiz-adr-enhances-cloud-ai-detection-with-applicati-ddb95e4c",
     "title": "Wiz ADR Enhances Cloud AI Detection with Application Context",
     "summary": "Wiz introduced ADR, a tool that maps runtime alerts to specific code functions in cloud environments. ADR uses agentic investigation to reduce false positives and provides precise file and line-level context for detected anomalies. Security teams can automate remediation actions directly to the affected code, improving response speed and accuracy.",
@@ -132,9 +168,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "1password-data-breach-employee-github-account-comp-0bf2285c",
-    "title": "1Password Data Breach: Employee GitHub Account Compromised, Customer Data Exfiltrated",
-    "summary": "1Password suffered a data breach when an attacker compromised an employee’s corporate GitHub account and used it to access backend systems. The intrusion exposed customer names, sign-in emails, and internal account details, but did not reach vault contents or stored passwords. 1Password notified affected customers, is investigating the breach, and advises monitoring account activity and changing passwords.",
+    "slug": "1password-backend-breach-exposes-customer-data-via-0ecfb6b2",
+    "title": "1Password Backend Breach Exposes Customer Data via Compromised GitHub Account",
+    "summary": "1Password suffered a backend breach when an attacker compromised an employee’s corporate GitHub account, gaining access to backend systems and exposing customer data. The intrusion also leaked source code and internal account details, but vault contents and stored passwords remained secure. 1Password notified affected customers, rotated credentials, engaged forensic investigators, and advised monitoring account activity and changing passwords.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -145,14 +181,18 @@ export const news: NewsBrief[] = [
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/1password-hacked-2/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html"
       }
     ],
     "aliases": [
-      "1password-data-breach-employee-github-account-comp",
-      "article-0bf2285c",
-      "0bf2285c",
-      "1password-data-breach-employee-github-account-comp-533a01",
-      "1password-data-breach-employee-github-account-compromised-cu"
+      "1password-backend-breach-exposes-customer-data-via",
+      "article-0ecfb6b2",
+      "0ecfb6b2",
+      "1password-backend-breach-exposes-customer-data-via-533a01",
+      "1password-backend-breach-exposes-customer-data-via-compromis"
     ]
   },
   {
@@ -9573,43 +9613,6 @@ export const news: NewsBrief[] = [
       "article-04e4f5e8",
       "04e4f5e8",
       "nvidia-reinstates-jensen-huang-as-ceo-42eb2b"
-    ]
-  },
-  {
-    "slug": "wiz-research-reports-agentic-framework-cloud-intru-dbba3a3a",
-    "title": "Wiz Research Reports Agentic Framework Cloud Intrusions",
-    "summary": "Agentic offensive frameworks such as ARTEX are driving a surge in cloud intrusions, as reported by Wiz Research. These frameworks enable automated, high-velocity attacks that exploit misconfigurations and weak IAM controls, causing unauthorized data exfiltration and service disruption across cloud environments. Security teams should monitor for ARTEX-related activity, enforce least-privilege IAM, and deploy detection rules to spot noisy, machine-speed attacks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks",
-    "publishedAt": "2026-11-23T14:46:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wiz-research-reports-agentic-framework-cloud-intru",
-      "article-dbba3a3a",
-      "dbba3a3a",
-      "wiz-research-reports-agentic-framework-cloud-intru-44fa60",
-      "wiz-research-reports-agentic-framework-cloud-intrusions"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-cockpit-security-update-18124180",
-    "title": "Red Hat Issues Cockpit Security Update",
-    "summary": "Red Hat released a security update for the cockpit web console on RHEL 9.6 EUS, addressing critical vulnerabilities. The update resolves bugs that could allow authenticated users to execute arbitrary commands or elevate privileges, with CVSS scores available via CVE links. Administrators should apply the cockpit package update immediately to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102348",
-    "publishedAt": "2026-11-23T14:44:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-cockpit-security-update",
-      "article-18124180",
-      "18124180",
-      "red-hat-issues-cockpit-security-update-2ee162"
     ]
   }
 ];

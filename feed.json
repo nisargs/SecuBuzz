@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/26/google-ai-agent-security-requirements/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/26/google-ai-agent-security-requirements/",
+    "title": "Google Requires MCP or CLI for Workspace AI Agents",
+    "headline": "Google Requires MCP or CLI for Workspace AI Agents",
+    "summary": "Google announced mandatory Model Context Protocol (MCP) or command-line interface access for Workspace AI agents starting February 2027 to secure autonomous agent interactions with enterprise data. New controls include dedicated agent identities, human approval for sensitive operations, prompt injection screening, and restrictions on third-party AI tool data processing.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-26T05:30:05.000Z",
+    "ingestedAt": "2026-11-26T05:43:45.070Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/26/google-ai-agent-security-requirements/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/26/incogni-online-privacy-concerns-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/26/incogni-online-privacy-concerns-report/",
+    "title": "Survey Shows Users Will Pay to Remove Search Data",
+    "headline": "Survey Shows Users Will Pay to Remove Search Data",
+    "summary": "An Incogni survey of 1,008 U.S. adults revealed 55% would pay for permanent removal of personal information from public search results, while 53% desire a five-year search history log. The findings highlight growing privacy concerns over data broker exposure, with respondents valuing control over online identity footprints.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-26T05:00:06.000Z",
+    "ingestedAt": "2026-11-26T05:43:45.070Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/26/incogni-online-privacy-concerns-report/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.wiz.io/blog/introducing-wiz-adr",
     "sourceUrl": "https://www.wiz.io/blog/introducing-wiz-adr",
     "title": "Wiz ADR Enhances Cloud AI Detection with Application Context",
@@ -103,9 +135,9 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
-    "title": "1Password Data Breach: Employee GitHub Account Compromised, Customer Data Exfiltrated",
-    "headline": "1Password Data Breach: Employee GitHub Account Compromised, Customer Data Exfiltrated",
-    "summary": "1Password suffered a data breach when an attacker compromised an employee’s corporate GitHub account and used it to access backend systems. The intrusion exposed customer names, sign-in emails, and internal account details, but did not reach vault contents or stored passwords. 1Password notified affected customers, is investigating the breach, and advises monitoring account activity and changing passwords.",
+    "title": "1Password Backend Breach Exposes Customer Data via Compromised GitHub Account",
+    "headline": "1Password Backend Breach Exposes Customer Data via Compromised GitHub Account",
+    "summary": "1Password suffered a backend breach when an attacker compromised an employee’s corporate GitHub account, gaining access to backend systems and exposing customer data. The intrusion also leaked source code and internal account details, but vault contents and stored passwords remained secure. 1Password notified affected customers, rotated credentials, engaged forensic investigators, and advised monitoring account activity and changing passwords.",
     "category": "BREACH",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -118,6 +150,10 @@
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/1password-hacked-2/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html"
       }
     ],
     "isFallback": true
@@ -8254,38 +8290,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/nvidia-reinstates-jensen-huang/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks",
-    "sourceUrl": "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks",
-    "title": "Wiz Research Reports Agentic Framework Cloud Intrusions",
-    "headline": "Wiz Research Reports Agentic Framework Cloud Intrusions",
-    "summary": "Agentic offensive frameworks such as ARTEX are driving a surge in cloud intrusions, as reported by Wiz Research. These frameworks enable automated, high-velocity attacks that exploit misconfigurations and weak IAM controls, causing unauthorized data exfiltration and service disruption across cloud environments. Security teams should monitor for ARTEX-related activity, enforce least-privilege IAM, and deploy detection rules to spot noisy, machine-speed attacks.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "publishedAt": "2026-11-23T14:46:19.000Z",
-    "ingestedAt": "2026-11-23T15:43:12.815Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:102348",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102348",
-    "title": "Red Hat Issues Cockpit Security Update",
-    "headline": "Red Hat Issues Cockpit Security Update",
-    "summary": "Red Hat released a security update for the cockpit web console on RHEL 9.6 EUS, addressing critical vulnerabilities. The update resolves bugs that could allow authenticated users to execute arbitrary commands or elevate privileges, with CVSS scores available via CVE links. Administrators should apply the cockpit package update immediately to prevent exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-23T14:44:36.000Z",
-    "ingestedAt": "2026-11-24T01:44:19.588Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:102348",
     "additionalSources": []
   }
 ]
