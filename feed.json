@@ -222,6 +222,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://ubuntu.com/security/notices/USN-9201-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9201-1",
+    "title": "NetworkManager D-Bus Privilege Escalation Exploited",
+    "headline": "NetworkManager D-Bus Privilege Escalation Exploited",
+    "summary": "A flaw in Ubuntu's NetworkManager grants the whoopsie user unrestricted D-Bus access to root-only methods, enabling local privilege escalation. The vulnerability could allow an attacker to disrupt networking, modify logging, or alter connection configurations, potentially impacting system stability. Ubuntu has released an update that restricts whoopsie D-Bus permissions; administrators should apply the patch or disable whoopsie to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-25T19:31:11.000Z",
+    "ingestedAt": "2026-11-26T01:43:07.654Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-9201-1",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:103537",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103537",
     "title": "RHSA-2026:103537: Critical: Satellite 6.16 EUS security update",
@@ -8260,22 +8276,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:102297",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:102398",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102398",
-    "title": "Red Hat Issues qt5-qtdeclarative Update for RHEL 9.2",
-    "headline": "Red Hat Issues qt5-qtdeclarative Update for RHEL 9.2",
-    "summary": "Red Hat released a security update for qt5-qtdeclarative on Red Enterprise Linux 9.2, targeting SAP Solution services. The patch addresses multiple CVE-linked vulnerabilities, each assigned a CVSS base score that denotes an important impact; no active exploitation is reported. Red Hat recommends applying the update through the standard package manager; no workaround is necessary.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-23T14:35:56.000Z",
-    "ingestedAt": "2026-11-24T00:43:49.459Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:102398",
     "additionalSources": []
   }
 ]

@@ -266,6 +266,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "networkmanager-d-bus-privilege-escalation-exploite-f6bc7047",
+    "title": "NetworkManager D-Bus Privilege Escalation Exploited",
+    "summary": "A flaw in Ubuntu's NetworkManager grants the whoopsie user unrestricted D-Bus access to root-only methods, enabling local privilege escalation. The vulnerability could allow an attacker to disrupt networking, modify logging, or alter connection configurations, potentially impacting system stability. Ubuntu has released an update that restricts whoopsie D-Bus permissions; administrators should apply the patch or disable whoopsie to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9201-1",
+    "publishedAt": "2026-11-25T19:31:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "networkmanager-d-bus-privilege-escalation-exploite",
+      "article-f6bc7047",
+      "f6bc7047",
+      "networkmanager-d-bus-privilege-escalation-exploite-7e6d88",
+      "networkmanager-d-bus-privilege-escalation-exploited"
+    ]
+  },
+  {
     "slug": "rhsa-2026-103537-critical-satellite-6-16-eus-secur-e643795d",
     "title": "RHSA-2026:103537: Critical: Satellite 6.16 EUS security update",
     "summary": "A security update for Red Hat Satellite 6.16 EUS is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -9579,25 +9598,6 @@ export const news: NewsBrief[] = [
       "article-ca848282",
       "ca848282",
       "red-hat-releases-critical-php-update-for-rhel9-2ee15f"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-qt5-qtdeclarative-update-for-rhel-9-c62fa871",
-    "title": "Red Hat Issues qt5-qtdeclarative Update for RHEL 9.2",
-    "summary": "Red Hat released a security update for qt5-qtdeclarative on Red Enterprise Linux 9.2, targeting SAP Solution services. The patch addresses multiple CVE-linked vulnerabilities, each assigned a CVSS base score that denotes an important impact; no active exploitation is reported. Red Hat recommends applying the update through the standard package manager; no workaround is necessary.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102398",
-    "publishedAt": "2026-11-23T14:35:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-qt5-qtdeclarative-update-for-rhel-9",
-      "article-c62fa871",
-      "c62fa871",
-      "red-hat-issues-qt5-qtdeclarative-update-for-rhel-9-2ee162",
-      "red-hat-issues-qt5-qtdeclarative-update-for-rhel-9-2"
     ]
   }
 ];

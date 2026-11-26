@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 00:43:44 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 01:45:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Black Friday Amplifies Existing Consumer Cyber Risks</title>
@@ -114,6 +114,15 @@
       <pubDate>Wed, 25 Nov 2026 19:39:31 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>NetworkManager D-Bus Privilege Escalation Exploited</title>
+      <link>https://secubuzz.com/news/networkmanager-d-bus-privilege-escalation-exploite-f6bc7047</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/networkmanager-d-bus-privilege-escalation-exploite-f6bc7047</guid>
+      <description><![CDATA[A flaw in Ubuntu's NetworkManager grants the whoopsie user unrestricted D-Bus access to root-only methods, enabling local privilege escalation. The vulnerability could allow an attacker to disrupt networking, modify logging, or alter connection configurations, potentially impacting system stability. Ubuntu has released an update that restricts whoopsie D-Bus permissions; administrators should apply the patch or disable whoopsie to mitigate the risk.]]></description>
+      <pubDate>Wed, 25 Nov 2026 19:31:11 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9201-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>RHSA-2026:103537: Critical: Satellite 6.16 EUS security update</title>
@@ -447,15 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 15:15:11 GMT</pubDate>
       <source url="https://cyber.gc.ca/en/alerts-advisories/adobe-security-advisory-av26-1205">Canadian Centre for Cyber Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Reduces Pentester Workload, Boosts Engagements</title>
-      <link>https://secubuzz.com/news/ai-reduces-pentester-workload-boosts-engagements-d7abd981</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-reduces-pentester-workload-boosts-engagements-d7abd981</guid>
-      <description><![CDATA[Pentesters spend a large portion of engagements on documentation and reporting, limiting test throughput. PentestPad shows AI can automate these peripheral tasks, enabling teams to handle more tests while keeping sensitive client data on their own infrastructure. AI workflow tools cut manual effort, improve consistency, and free pentesters for technical testing, yet demand secure data governance.]]></description>
-      <pubDate>Wed, 25 Nov 2026 15:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/more-pentests-without-more-pentesters-where-ai-safely-helps/">BleepingComputer</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
