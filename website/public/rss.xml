@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 08:45:11 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 09:44:48 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>FIFA Breach: 12.2 GB Documents Exposed</title>
+      <link>https://secubuzz.com/news/fifa-breach-12-2-gb-documents-exposed-8230537f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fifa-breach-12-2-gb-documents-exposed-8230537f</guid>
+      <description><![CDATA[FIFA confirmed unauthorized access to personal and business data by the Handsome Boy Hacking Club. The attackers allegedly exfiltrated 12.2 GB of internal documents, including sensitive personnel records, though the group has not yet published the files. FIFA has not released a remediation plan yet; security teams should monitor for credential leaks and enforce multi-factor authentication.]]></description>
+      <pubDate>Thu, 26 Nov 2026 08:07:35 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fifa-alleged-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Cyprus Targeted by Iranian Espionage Group</title>
+      <link>https://secubuzz.com/news/cyprus-targeted-by-iranian-espionage-group-d56b9d3c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyprus-targeted-by-iranian-espionage-group-d56b9d3c</guid>
+      <description><![CDATA[Cyprus has become a new espionage target for the Iranian threat group Volant Manticore. The group is conducting intelligence gathering against Cypriot organizations, likely collecting corporate data and credentials, though specific exploits remain undocumented. Security teams should harden network perimeter, monitor for anomalous lateral movement, and apply threat intelligence feeds on Volant Manticore activity.]]></description>
+      <pubDate>Thu, 26 Nov 2026 08:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers">Dark Reading</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>2026 Phishing Simulation Tools Ranked</title>
+      <link>https://secubuzz.com/news/2026-phishing-simulation-tools-ranked-f4785167</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/2026-phishing-simulation-tools-ranked-f4785167</guid>
+      <description><![CDATA[The piece lists the leading phishing simulation tools for 2026, stressing the importance of click-down and report-up metrics. It notes that effective tools combine behavioral scoring, realistic spear-phishing pretexts, and a report-to-triage workflow to improve detection. Organizations should prioritize tools offering per-person risk metrics, leaderboards, and realistic content that adapts to evolving LLM-grade pretexts.]]></description>
+      <pubDate>Thu, 26 Nov 2026 07:40:21 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-phishing-simulation-tools/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Warns of ARTEX AI Credential Theft</title>
+      <link>https://secubuzz.com/news/microsoft-warns-of-artex-ai-credential-theft-cf52a39c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-warns-of-artex-ai-credential-theft-cf52a39c</guid>
+      <description><![CDATA[Microsoft warned that state-backed hackers employ the ARTEX AI framework to locate exposed systems and steal credentials. ARTEX can transition from scanning to privileged persistence within minutes, exploiting misconfigurations and weak authentication, potentially compromising enterprise networks and cloud environments. Organizations should disable unused services, enforce MFA, and monitor for anomalous credential usage to mitigate ARTEX attacks.]]></description>
+      <pubDate>Thu, 26 Nov 2026 07:39:00 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/artex-ai-agents-2/">Cyber Security News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>2026 Security Awareness Training Platforms Ranked</title>
+      <link>https://secubuzz.com/news/2026-security-awareness-training-platforms-ranked-11305b74</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/2026-security-awareness-training-platforms-ranked-11305b74</guid>
+      <description><![CDATA[The article ranks top security awareness training platforms for 2026, focusing on engagement metrics like click-through and reporting rates. It highlights realistic simulations, per-person risk scoring, and content that avoids user fatigue to drive behavioral change. Readers should evaluate platforms offering adaptive content, robust analytics, and proven improvements in click-through and reporting.]]></description>
+      <pubDate>Thu, 26 Nov 2026 07:38:28 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-security-awareness-training/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Top Penetration Testing Firms 2026 Ranked</title>
       <link>https://secubuzz.com/news/top-penetration-testing-firms-2026-ranked-48069a65</link>
@@ -161,10 +206,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>1Password Breach via Compromised GitHub Exposes Customer Data and Source Code</title>
-      <link>https://secubuzz.com/news/1password-breach-via-compromised-github-exposes-cu-1870496b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/1password-breach-via-compromised-github-exposes-cu-1870496b</guid>
-      <description><![CDATA[1Password suffered a breach when an attacker compromised an employee’s GitHub account, injecting code that exposed customer data and source code. The attack did not reach vaults or stored passwords, but revealed sensitive customer information and internal code, indicating credential misuse. 1Password issued a security advisory, rotated credentials, engaged forensic investigators, and released a patch to block unauthorized pushes.]]></description>
+      <title>1Password Breach: GitHub Account Compromise Exposes Customer Data and Source Code</title>
+      <link>https://secubuzz.com/news/1password-breach-github-account-compromise-exposes-155a479d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/1password-breach-github-account-compromise-exposes-155a479d</guid>
+      <description><![CDATA[1Password suffered a breach when an attacker compromised an employee’s GitHub account, gaining privileged access to private repositories. The intrusion exposed customer names, emails, and internal source code, but did not reach vaults or stored passwords. 1Password responded by issuing a security advisory, rotating credentials, engaging forensic investigators, and releasing a patch to block unauthorized pushes.]]></description>
       <pubDate>Wed, 25 Nov 2026 21:33:33 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/">BleepingComputer</source>
       <category>Breach</category>
@@ -411,51 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 17:08:36 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-202-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Australia Enacts Digital Duty of Care Law</title>
-      <link>https://secubuzz.com/news/australia-enacts-digital-duty-of-care-law-72e9056e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/australia-enacts-digital-duty-of-care-law-72e9056e</guid>
-      <description><![CDATA[Australia's Digital Duty of Care Act mandates online providers to establish protocols that shield users from violence, rape, and other harms. The law obligates tech companies to identify and mitigate foreseeable risks, extending oversight to content moderation and user safety measures. Compliance will require new policy frameworks, risk assessments, and reporting mechanisms, with enforcement provisions pending parliamentary approval.]]></description>
-      <pubDate>Wed, 25 Nov 2026 17:07:00 GMT</pubDate>
-      <source url="https://therecord.media/australia-passes-online-safety-legislation-preempt-harms">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>U.S. Treasury’s FinCEN Confirms Cyberattack, Takes Systems Offline After Unauthorized Access</title>
-      <link>https://secubuzz.com/news/u-s-treasury-s-fincen-confirms-cyberattack-takes-s-25ba4cac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/u-s-treasury-s-fincen-confirms-cyberattack-takes-s-25ba4cac</guid>
-      <description><![CDATA[The U.S. Treasury Department’s Financial Crimes Enforcement Network (FinCEN) has taken some systems offline after confirming unauthorized access to a limited part of its network. The bureau said the shutdown was a precaution while it investigates the cyberattack.]]></description>
-      <pubDate>Wed, 25 Nov 2026 17:01:30 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fincen-confirms-cyberattack/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Drupal, Idunno, Optimizely Flaws Exploited, CISA Alerts</title>
-      <link>https://secubuzz.com/news/drupal-idunno-optimizely-flaws-exploited-cisa-aler-289fddd4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/drupal-idunno-optimizely-flaws-exploited-cisa-aler-289fddd4</guid>
-      <description><![CDATA[CISA reported active exploitation of a Drupal Core remote code execution flaw, an Idunno AntiCsrf vulnerability, and an Optimizely defect in its Known Exploited Vulnerabilities catalog. CVE-2026-132165 permits arbitrary code execution, with documented attacks already observed and a federal remediation deadline of November 27. Administrators should apply vendor patches immediately and monitor for exploitation indicators to secure affected systems.]]></description>
-      <pubDate>Wed, 25 Nov 2026 16:57:24 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Five Holiday-Themed Attacks Target Users and Businesses</title>
-      <link>https://secubuzz.com/news/five-holiday-themed-attacks-target-users-and-busin-5ccf07cd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/five-holiday-themed-attacks-target-users-and-busin-5ccf07cd</guid>
-      <description><![CDATA[ANY.RUN researchers uncovered five holiday-themed attacks that used credential-phishing emails, unauthorized remote-access tools, and malicious scripts to target users and businesses. The attacks harvested credentials, installed remote-access backdoors, and executed scripts that could exfiltrate sensitive data, exposing endpoints to lateral movement. Teams should enforce MFA, scrutinize email attachments, and deploy endpoint detection to block unauthorized remote-access activity.]]></description>
-      <pubDate>Wed, 25 Nov 2026 16:42:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/beyond-holiday-scams-5-thankssgiving-and-black-friday-cyberattacks-targeting-users-and-businesses/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Task Management App Todoist Hacked, Attackers Breach Production Systems</title>
-      <link>https://secubuzz.com/news/task-management-app-todoist-hacked-attackers-breac-869dcc71</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/task-management-app-todoist-hacked-attackers-breac-869dcc71</guid>
-      <description><![CDATA[Task management app Todoist said an attacker breached its production systems on November 23, 2026, and downloaded account records for about 6% of its users. The attacker also obtained integration tokens and accessed some data from connected Outlook mailboxes.]]></description>
-      <pubDate>Wed, 25 Nov 2026 16:39:28 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/todoist-production-system-breach/">Cyber Security News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

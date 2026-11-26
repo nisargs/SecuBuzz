@@ -11,6 +11,96 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fifa-breach-12-2-gb-documents-exposed-8230537f",
+    "title": "FIFA Breach: 12.2 GB Documents Exposed",
+    "summary": "FIFA confirmed unauthorized access to personal and business data by the Handsome Boy Hacking Club. The attackers allegedly exfiltrated 12.2 GB of internal documents, including sensitive personnel records, though the group has not yet published the files. FIFA has not released a remediation plan yet; security teams should monitor for credential leaks and enforce multi-factor authentication.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fifa-alleged-breach/",
+    "publishedAt": "2026-11-26T08:07:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fifa-breach-12-2-gb-documents-exposed",
+      "article-8230537f",
+      "8230537f",
+      "fifa-breach-12-2-gb-documents-exposed-e5c0aa"
+    ]
+  },
+  {
+    "slug": "cyprus-targeted-by-iranian-espionage-group-d56b9d3c",
+    "title": "Cyprus Targeted by Iranian Espionage Group",
+    "summary": "Cyprus has become a new espionage target for the Iranian threat group Volant Manticore. The group is conducting intelligence gathering against Cypriot organizations, likely collecting corporate data and credentials, though specific exploits remain undocumented. Security teams should harden network perimeter, monitor for anomalous lateral movement, and apply threat intelligence feeds on Volant Manticore activity.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers",
+    "publishedAt": "2026-11-26T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyprus-targeted-by-iranian-espionage-group",
+      "article-d56b9d3c",
+      "d56b9d3c",
+      "cyprus-targeted-by-iranian-espionage-group-7247cd"
+    ]
+  },
+  {
+    "slug": "2026-phishing-simulation-tools-ranked-f4785167",
+    "title": "2026 Phishing Simulation Tools Ranked",
+    "summary": "The piece lists the leading phishing simulation tools for 2026, stressing the importance of click-down and report-up metrics. It notes that effective tools combine behavioral scoring, realistic spear-phishing pretexts, and a report-to-triage workflow to improve detection. Organizations should prioritize tools offering per-person risk metrics, leaderboards, and realistic content that adapts to evolving LLM-grade pretexts.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-phishing-simulation-tools/",
+    "publishedAt": "2026-11-26T07:40:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-phishing-simulation-tools-ranked",
+      "article-f4785167",
+      "f4785167",
+      "2026-phishing-simulation-tools-ranked-3d4573"
+    ]
+  },
+  {
+    "slug": "microsoft-warns-of-artex-ai-credential-theft-cf52a39c",
+    "title": "Microsoft Warns of ARTEX AI Credential Theft",
+    "summary": "Microsoft warned that state-backed hackers employ the ARTEX AI framework to locate exposed systems and steal credentials. ARTEX can transition from scanning to privileged persistence within minutes, exploiting misconfigurations and weak authentication, potentially compromising enterprise networks and cloud environments. Organizations should disable unused services, enforce MFA, and monitor for anomalous credential usage to mitigate ARTEX attacks.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/artex-ai-agents-2/",
+    "publishedAt": "2026-11-26T07:39:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-warns-of-artex-ai-credential-theft",
+      "article-cf52a39c",
+      "cf52a39c",
+      "microsoft-warns-of-artex-ai-credential-theft-7ccd00"
+    ]
+  },
+  {
+    "slug": "2026-security-awareness-training-platforms-ranked-11305b74",
+    "title": "2026 Security Awareness Training Platforms Ranked",
+    "summary": "The article ranks top security awareness training platforms for 2026, focusing on engagement metrics like click-through and reporting rates. It highlights realistic simulations, per-person risk scoring, and content that avoids user fatigue to drive behavioral change. Readers should evaluate platforms offering adaptive content, robust analytics, and proven improvements in click-through and reporting.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-security-awareness-training/",
+    "publishedAt": "2026-11-26T07:38:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-security-awareness-training-platforms-ranked",
+      "article-11305b74",
+      "11305b74",
+      "2026-security-awareness-training-platforms-ranked-1ab5e6"
+    ]
+  },
+  {
     "slug": "top-penetration-testing-firms-2026-ranked-48069a65",
     "title": "Top Penetration Testing Firms 2026 Ranked",
     "summary": "The 2026 penetration testing market is judged on depth of expertise, reproducible findings, and retest capabilities. The ranking highlights firms that provide actionable reports, clear remediation paths, and measurable security improvements. Security teams should evaluate these firms against engagement scope, industry experience, and post-engagement support before contracting, ensuring they maintain up-to-date testing methodologies.",
@@ -335,9 +425,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "1password-breach-via-compromised-github-exposes-cu-1870496b",
-    "title": "1Password Breach via Compromised GitHub Exposes Customer Data and Source Code",
-    "summary": "1Password suffered a breach when an attacker compromised an employee’s GitHub account, injecting code that exposed customer data and source code. The attack did not reach vaults or stored passwords, but revealed sensitive customer information and internal code, indicating credential misuse. 1Password issued a security advisory, rotated credentials, engaged forensic investigators, and released a patch to block unauthorized pushes.",
+    "slug": "1password-breach-github-account-compromise-exposes-155a479d",
+    "title": "1Password Breach: GitHub Account Compromise Exposes Customer Data and Source Code",
+    "summary": "1Password suffered a breach when an attacker compromised an employee’s GitHub account, gaining privileged access to private repositories. The intrusion exposed customer names, emails, and internal source code, but did not reach vaults or stored passwords. 1Password responded by issuing a security advisory, rotating credentials, engaging forensic investigators, and releasing a patch to block unauthorized pushes.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -356,14 +446,18 @@ export const news: NewsBrief[] = [
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/1password-breach-exposes-customer-data-internal-source-code/"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/26/1password-breach-github-customer-records/"
       }
     ],
     "aliases": [
-      "1password-breach-via-compromised-github-exposes-cu",
-      "article-1870496b",
-      "1870496b",
-      "1password-breach-via-compromised-github-exposes-cu-533a01",
-      "1password-breach-via-compromised-github-exposes-customer-dat"
+      "1password-breach-github-account-compromise-exposes",
+      "article-155a479d",
+      "155a479d",
+      "1password-breach-github-account-compromise-exposes-533a01",
+      "1password-breach-github-account-compromise-exposes-customer-"
     ]
   },
   {
@@ -937,9 +1031,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "drupal-idunno-optimizely-flaws-exploited-cisa-aler-289fddd4",
-    "title": "Drupal, Idunno, Optimizely Flaws Exploited, CISA Alerts",
-    "summary": "CISA reported active exploitation of a Drupal Core remote code execution flaw, an Idunno AntiCsrf vulnerability, and an Optimizely defect in its Known Exploited Vulnerabilities catalog. CVE-2026-132165 permits arbitrary code execution, with documented attacks already observed and a federal remediation deadline of November 27. Administrators should apply vendor patches immediately and monitor for exploitation indicators to secure affected systems.",
+    "slug": "drupal-vulnerability-cve-2026-132165-exploited-cis-6790a457",
+    "title": "Drupal Vulnerability CVE-2026-132165 Exploited, CISA Issues Alert",
+    "summary": "Drupal sites are under attack as attackers exploit CVE-2026-132165, a flaw in the installer that bypasses authentication and grants full control. The vulnerability allows arbitrary code execution, and documented attacks have already compromised multiple websites worldwide. Site owners must apply the latest patch, disable the installer, verify file integrity, and monitor for exploitation indicators.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Cyber Security News",
@@ -948,13 +1042,18 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-132165"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/drupal-installer-patch-left-a-gap-attackers-are-already-exploiting/"
+      }
+    ],
     "aliases": [
-      "drupal-idunno-optimizely-flaws-exploited-cisa-aler",
-      "article-289fddd4",
-      "289fddd4",
-      "drupal-idunno-optimizely-flaws-exploited-cisa-aler-1f476b",
-      "drupal-idunno-optimizely-flaws-exploited-cisa-alerts"
+      "drupal-vulnerability-cve-2026-132165-exploited-cis",
+      "article-6790a457",
+      "6790a457",
+      "drupal-vulnerability-cve-2026-132165-exploited-cis-1f476b",
+      "drupal-vulnerability-cve-2026-132165-exploited-cisa-issues-a"
     ]
   },
   {
@@ -9531,98 +9630,6 @@ export const news: NewsBrief[] = [
       "966b21de",
       "rhsa-2026-100561-important-openjdk-11-0-33-1-els-s-2ee081",
       "rhsa-2026-100561-important-openjdk-11-0-33-1-els-security-up"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-openjdk-11-0-33-1-windows-25229d68",
-    "title": "Red Hat Updates OpenJDK 11.0.33.1 Windows",
-    "summary": "Red Hat released an OpenJDK 11.0.33.1 ELS update for Windows, fixing vulnerabilities that could allow remote code execution via Java. The advisory lists multiple CVEs, each with a CVSS score marked Important, but no specific CVE IDs are named. Red Hat urges immediate application; no work-arounds are provided, and the patch is available through standard ELS channels.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:100562",
-    "publishedAt": "2026-11-23T15:20:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-openjdk-11-0-33-1-windows",
-      "article-25229d68",
-      "25229d68",
-      "red-hat-updates-openjdk-11-0-33-1-windows-2ee081"
-    ]
-  },
-  {
-    "slug": "fbi-ncic-database-targeted-in-second-cyber-inciden-c85df571",
-    "title": "FBI NCIC Database Targeted in Second Cyber Incident",
-    "summary": "The FBI’s National Crime Information Center (NCIC) database was targeted in a second cyber incident reported this month. The attack compromised access to records on fugitives, warrants, criminal histories, and missing persons, potentially exposing sensitive law-enforcement data. Investigators are assessing the breach scope, and security teams should monitor for unauthorized access attempts to similar databases.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Check Point Research",
-    "sourceUrl": "https://research.checkpoint.com/2026/23rd-november-threat-intelligence-report/",
-    "publishedAt": "2026-11-23T15:16:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-ncic-database-targeted-in-second-cyber-inciden",
-      "article-c85df571",
-      "c85df571",
-      "fbi-ncic-database-targeted-in-second-cyber-inciden-119758",
-      "fbi-ncic-database-targeted-in-second-cyber-incident"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102405-important-qt5-qtdeclarative-secur-71c56100",
-    "title": "RHSA-2026:102405: Important: qt5-qtdeclarative security update",
-    "summary": "An update for qt5-qtdeclarative is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102405",
-    "publishedAt": "2026-11-23T15:15:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102405-important-qt5-qtdeclarative-secur",
-      "article-71c56100",
-      "71c56100",
-      "rhsa-2026-102405-important-qt5-qtdeclarative-secur-2ee165",
-      "rhsa-2026-102405-important-qt5-qtdeclarative-security-update"
-    ]
-  },
-  {
-    "slug": "trump-names-davies-national-cyber-czar-8b4bb737",
-    "title": "Trump Names Davies National Cyber Czar",
-    "summary": "President Trump has confirmed appointing Pentagon CIO John Davies as national cyber director after widespread support. Davies, who has served as acting director, will lead DoD cyber strategy and coordinate federal cyber defense efforts. The appointment aims to strengthen overall U.S. cyber posture, contingent on interagency cooperation and resource allocation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/kirsten-davies-trump-intends-nominate-national-cyber-director",
-    "publishedAt": "2026-11-23T15:14:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trump-names-davies-national-cyber-czar",
-      "article-8b4bb737",
-      "8b4bb737",
-      "trump-names-davies-national-cyber-czar-7c9797"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-tigervnc-for-rhel-9-6-51c027f3",
-    "title": "Red Hat Updates tigervnc for RHEL 9.6",
-    "summary": "Red Hat released a tigervnc update for RHEL 9.6 EUS, fixing vulnerabilities that could enable remote code execution via the VNC server. The advisory lists multiple CVEs, each with a CVSS score marked Important, but no specific CVE IDs are named. Red Hat urges immediate application; no work-arounds are offered, and the patch is available through standard EUS channels.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102407",
-    "publishedAt": "2026-11-23T15:12:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-tigervnc-for-rhel-9-6",
-      "article-51c027f3",
-      "51c027f3",
-      "red-hat-updates-tigervnc-for-rhel-9-6-2ee165"
     ]
   }
 ];
