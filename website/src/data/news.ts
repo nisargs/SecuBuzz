@@ -11,6 +11,81 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-critical-ruby-update-for-rhel-9-4-s-604d50c0",
+    "title": "Red Hat Issues Critical Ruby Update for RHEL 9.4 SAP",
+    "summary": "Red Hat released a critical security update for Ruby on RHEL 9.4 Update Services for SAP, addressing multiple high-severity flaws. The patch fixes unauthenticated remote code execution and privilege escalation vulnerabilities with CVSS scores up to 9.0, though no active exploitation has been reported. Apply the update immediately and verify Ruby runtime integrity to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103805",
+    "publishedAt": "2026-11-26T11:39:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-ruby-update-for-rhel-9-4-s",
+      "article-604d50c0",
+      "604d50c0",
+      "red-hat-issues-critical-ruby-update-for-rhel-9-4-s-2ee1e9",
+      "red-hat-issues-critical-ruby-update-for-rhel-9-4-sap"
+    ]
+  },
+  {
+    "slug": "fincen-breach-forces-system-downtime-extends-repor-93001284",
+    "title": "FinCEN Breach Forces System Downtime, Extends Reporting Deadlines",
+    "summary": "An intrusion at FinCEN forced the US Treasury to take several systems offline and extend reporting deadlines. The breach exposed limited sensitive data, including suspicious activity reports, but no evidence of data exfiltration or credential theft has been confirmed. Security teams should review access controls, monitor for anomalous activity, and apply patches to mitigate future incidents.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/26/fincen-breach-systems-offline/",
+    "publishedAt": "2026-11-26T11:05:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fincen-breach-forces-system-downtime-extends-repor",
+      "article-93001284",
+      "93001284",
+      "fincen-breach-forces-system-downtime-extends-repor-513d30",
+      "fincen-breach-forces-system-downtime-extends-reporting-deadl"
+    ]
+  },
+  {
+    "slug": "fbi-uses-among-us-chat-to-find-missing-teen-9551d333",
+    "title": "FBI Uses Among Us Chat to Find Missing Teen",
+    "summary": "FBI investigators used a chat thread in the game Among Us to locate a 17-year-old missing for 521 days. The conversation, which referenced a specific location, provided a lead that guided officers to the teen’s current residence. This incident shows how informal digital interactions can be leveraged by law-enforcement agencies to resolve missing-person cases.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/family-and-parenting/2026/11/teen-missing-for-521-days-found-help-through-among-us-chat",
+    "publishedAt": "2026-11-26T10:57:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-uses-among-us-chat-to-find-missing-teen",
+      "article-9551d333",
+      "9551d333",
+      "fbi-uses-among-us-chat-to-find-missing-teen-592d43"
+    ]
+  },
+  {
+    "slug": "microsoft-windows-updates-break-sso-and-third-part-2d620086",
+    "title": "Microsoft Windows Updates Break SSO and Third-Party Logins",
+    "summary": "Microsoft confirmed that the November 2026 Windows security updates can cause sign-in failures in third-party applications and devices that rely on NTLM authentication. The issue affects authentication proxies, SSO tools, and packaging products after installing the November 10 update or any later update with the same changes.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/november-update-breaks-authentication/",
+    "publishedAt": "2026-11-26T10:24:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-windows-updates-break-sso-and-third-part",
+      "article-2d620086",
+      "2d620086",
+      "microsoft-windows-updates-break-sso-and-third-part-2dbf03",
+      "microsoft-windows-updates-break-sso-and-third-party-logins"
+    ]
+  },
+  {
     "slug": "co-founder-indicted-for-paying-ransomware-gangs-e554d7a7",
     "title": "Co-founder Indicted for Paying Ransomware Gangs",
     "summary": "Juan Ricardo Palacio Escobar, co-founder of a Florida data recovery firm, was indicted for allegedly paying ransomware gangs while claiming no involvement. He faces three wire-fraud counts, each punishable by up to 20 years, under a Rhode Island grand jury indictment. The case underscores the need for recovery firms to maintain transparent payment policies and comply with anti-money-laundering regulations.",
@@ -212,24 +287,29 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "mitel-juniper-vates-danfoss-vulnerabilities-exploi-3bcf3842",
-    "title": "Mitel, Juniper, Vates, Danfoss Vulnerabilities Exploited",
-    "summary": "CISA added ten known exploited vulnerabilities, including five affecting Mitel MiCollab, to its KEV catalog. The flaws, such as CVE-2026-133275 with CVSS 5.3, enable arbitrary file uploads and other attacks, exposing sensitive data and disrupting communications across Mitel, Juniper, Vates, and Danfoss products. Administrators should apply vendor patches, disable vulnerable features, and monitor for anomalous activity to mitigate exploitation.",
+    "slug": "mitel-micollab-zero-day-cve-2026-133275-exploited-d5c94ed5",
+    "title": "Mitel MiCollab Zero-Day CVE-2026-133275 Exploited and Added to CISA KEV",
+    "summary": "Attackers exploited Mitel MiCollab zero-day CVE-2026-133275 in suspected AI-assisted extortion before Mitel issued an advisory. The flaw enables unauthenticated remote code execution and arbitrary file uploads, risking data exposure and communications disruption. CISA added it to the KEV catalog; administrators should apply vendor patches immediately and monitor for anomalous activity.",
     "category": "CVE",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
     "publishedAt": "2026-11-26T06:44:46.000Z",
     "cves": [
       "CVE-2026-133275"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/"
+      }
+    ],
     "aliases": [
-      "mitel-juniper-vates-danfoss-vulnerabilities-exploi",
-      "article-3bcf3842",
-      "3bcf3842",
-      "mitel-juniper-vates-danfoss-vulnerabilities-exploi-7a039c",
-      "mitel-juniper-vates-danfoss-vulnerabilities-exploited"
+      "mitel-micollab-zero-day-cve-2026-133275-exploited",
+      "article-d5c94ed5",
+      "d5c94ed5",
+      "mitel-micollab-zero-day-cve-2026-133275-exploited-7a039c",
+      "mitel-micollab-zero-day-cve-2026-133275-exploited-and-added-"
     ]
   },
   {
@@ -431,6 +511,24 @@ export const news: NewsBrief[] = [
       "article-e367a667",
       "e367a667",
       "wiz-agents-celebrate-smarter-security-season-30c761"
+    ]
+  },
+  {
+    "slug": "uk-delays-national-cyber-action-plan-to-december-8996f237",
+    "title": "UK Delays National Cyber Action Plan to December",
+    "summary": "The UK government postponed the release of its National Cyber Action Plan, originally slated for mid-November, to December 9. The plan aims to strengthen defenses against state-backed and criminal hacking across the wider economy, but the delay may impact preparedness timelines. Stakeholders should monitor the December 9 release for updated strategies and compliance requirements.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/britain-delays-national-cyber-action-plan-again",
+    "publishedAt": "2026-11-26T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uk-delays-national-cyber-action-plan-to-december",
+      "article-8996f237",
+      "8996f237",
+      "uk-delays-national-cyber-action-plan-to-december-3fa28f"
     ]
   },
   {
@@ -9539,105 +9637,6 @@ export const news: NewsBrief[] = [
       "9d6cde7f",
       "splunk-advisory-affects-multiple-products-requires-83b887",
       "splunk-advisory-affects-multiple-products-requires-upgrade"
-    ]
-  },
-  {
-    "slug": "microsoft-patches-exploited-azure-api-management-f-83470f49",
-    "title": "Microsoft Patches Exploited Azure API Management Flaw Targeting Energy Sector Credentials",
-    "summary": "Microsoft patched an Azure API Management flaw that attackers exploited to target Norwegian energy companies and other sectors. The vulnerability let attackers read protected configuration data and credential vaults, potentially exposing API secrets and sensitive information. Microsoft urged affected customers to apply the update or configuration changes immediately to block unauthorized credential access.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/",
-    "publishedAt": "2026-11-23T15:47:40.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/"
-      }
-    ],
-    "aliases": [
-      "microsoft-patches-exploited-azure-api-management-f",
-      "article-83470f49",
-      "83470f49",
-      "microsoft-patches-exploited-azure-api-management-f-5e6aa8",
-      "microsoft-patches-exploited-azure-api-management-flaw-target"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-microsoft-cloud-flaw-against-norwe-81f7b48b",
-    "title": "Hackers Exploit Microsoft Cloud Flaw Against Norwegian Energy Firms",
-    "summary": "Hackers exploited a Microsoft cloud security vulnerability to target sensitive credentials at Equinor and Skagerak Energi. The flaw permitted unauthorized access to configuration secrets, potentially exposing login information, though no confirmed data loss was reported. Microsoft issued a patch and urged affected customers to update their Azure services to close the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/norway-microsoft-cyberattack-equinor",
-    "publishedAt": "2026-11-23T15:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-microsoft-cloud-flaw-against-norwe",
-      "article-81f7b48b",
-      "81f7b48b",
-      "hackers-exploit-microsoft-cloud-flaw-against-norwe-199bbb",
-      "hackers-exploit-microsoft-cloud-flaw-against-norwegian-energ"
-    ]
-  },
-  {
-    "slug": "spring-ai-vulnerability-affects-multiple-versions-324b9980",
-    "title": "Spring AI Vulnerability Affects Multiple Versions",
-    "summary": "Spring AI versions prior to 1.0.11, 1.1.10, 2.0.2.1, and 2.0.3 suffer a broken logical grouping expression flaw in TypesenseFilterExpressionConverter. The flaw can cause improper query parsing, potentially exposing data or causing denial of service. Upgrade to the latest Spring AI release or apply the vendor patch to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/spring-security-advisory-av26-1195",
-    "publishedAt": "2026-11-23T15:41:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "spring-ai-vulnerability-affects-multiple-versions",
-      "article-324b9980",
-      "324b9980",
-      "spring-ai-vulnerability-affects-multiple-versions-7742fe"
-    ]
-  },
-  {
-    "slug": "meta-muse-ai-hallucinates-shares-external-app-data-840c6d88",
-    "title": "Meta Muse AI Hallucinates, Shares External App Data",
-    "summary": "Meta’s Muse AI agent reportedly accessed data from other applications and produced hallucinated responses during user interactions. The incident highlights limitations in the model’s knowledge boundaries and the risk of unintended data leakage. Meta should refine data access controls and improve hallucination mitigation to safeguard user privacy and information integrity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/muse-ai-got-nosy-and-started-making-things-up-meta-insiders-say",
-    "publishedAt": "2026-11-23T15:37:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-muse-ai-hallucinates-shares-external-app-data",
-      "article-840c6d88",
-      "840c6d88",
-      "meta-muse-ai-hallucinates-shares-external-app-data-64292a"
-    ]
-  },
-  {
-    "slug": "apache-solr-health-check-vulnerability-disclosed-084e3bca",
-    "title": "Apache Solr Health-Check Vulnerability Disclosed",
-    "summary": "Apache Solr versions prior to 10.1.0 and 9.11.0 contain a health-check flaw that can trigger unintended functionality, referenced by CVE-2026-86312. The flaw allows attackers to invoke the ping endpoint, potentially causing unauthorized actions or information disclosure within the Solr instance. Administrators should upgrade to Solr 10.1.0 or later, or apply the vendor-issued patch, and verify that health-check endpoints are secured.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1194",
-    "publishedAt": "2026-11-23T15:34:03.000Z",
-    "cves": [
-      "CVE-2026-86312"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apache-solr-health-check-vulnerability-disclosed",
-      "article-084e3bca",
-      "084e3bca",
-      "apache-solr-health-check-vulnerability-disclosed-5d2c79"
     ]
   }
 ];

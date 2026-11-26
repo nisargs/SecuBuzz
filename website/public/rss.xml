@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 11:02:03 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 11:44:53 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues Critical Ruby Update for RHEL 9.4 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-ruby-update-for-rhel-9-4-s-604d50c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-ruby-update-for-rhel-9-4-s-604d50c0</guid>
+      <description><![CDATA[Red Hat released a critical security update for Ruby on RHEL 9.4 Update Services for SAP, addressing multiple high-severity flaws. The patch fixes unauthenticated remote code execution and privilege escalation vulnerabilities with CVSS scores up to 9.0, though no active exploitation has been reported. Apply the update immediately and verify Ruby runtime integrity to mitigate potential exploitation.]]></description>
+      <pubDate>Thu, 26 Nov 2026 11:39:55 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103805">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>FinCEN Breach Forces System Downtime, Extends Reporting Deadlines</title>
+      <link>https://secubuzz.com/news/fincen-breach-forces-system-downtime-extends-repor-93001284</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fincen-breach-forces-system-downtime-extends-repor-93001284</guid>
+      <description><![CDATA[An intrusion at FinCEN forced the US Treasury to take several systems offline and extend reporting deadlines. The breach exposed limited sensitive data, including suspicious activity reports, but no evidence of data exfiltration or credential theft has been confirmed. Security teams should review access controls, monitor for anomalous activity, and apply patches to mitigate future incidents.]]></description>
+      <pubDate>Thu, 26 Nov 2026 11:05:01 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/26/fincen-breach-systems-offline/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>FBI Uses Among Us Chat to Find Missing Teen</title>
+      <link>https://secubuzz.com/news/fbi-uses-among-us-chat-to-find-missing-teen-9551d333</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-uses-among-us-chat-to-find-missing-teen-9551d333</guid>
+      <description><![CDATA[FBI investigators used a chat thread in the game Among Us to locate a 17-year-old missing for 521 days. The conversation, which referenced a specific location, provided a lead that guided officers to the teen’s current residence. This incident shows how informal digital interactions can be leveraged by law-enforcement agencies to resolve missing-person cases.]]></description>
+      <pubDate>Thu, 26 Nov 2026 10:57:25 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/family-and-parenting/2026/11/teen-missing-for-521-days-found-help-through-among-us-chat">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Windows Updates Break SSO and Third-Party Logins</title>
+      <link>https://secubuzz.com/news/microsoft-windows-updates-break-sso-and-third-part-2d620086</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-windows-updates-break-sso-and-third-part-2d620086</guid>
+      <description><![CDATA[Microsoft confirmed that the November 2026 Windows security updates can cause sign-in failures in third-party applications and devices that rely on NTLM authentication. The issue affects authentication proxies, SSO tools, and packaging products after installing the November 10 update or any later update with the same changes.]]></description>
+      <pubDate>Thu, 26 Nov 2026 10:24:22 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/november-update-breaks-authentication/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Co-founder Indicted for Paying Ransomware Gangs</title>
       <link>https://secubuzz.com/news/co-founder-indicted-for-paying-ransomware-gangs-e554d7a7</link>
@@ -107,10 +143,10 @@
       <category>General</category>
     </item>
     <item>
-      <title>Mitel, Juniper, Vates, Danfoss Vulnerabilities Exploited</title>
-      <link>https://secubuzz.com/news/mitel-juniper-vates-danfoss-vulnerabilities-exploi-3bcf3842</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mitel-juniper-vates-danfoss-vulnerabilities-exploi-3bcf3842</guid>
-      <description><![CDATA[CISA added ten known exploited vulnerabilities, including five affecting Mitel MiCollab, to its KEV catalog. The flaws, such as CVE-2026-133275 with CVSS 5.3, enable arbitrary file uploads and other attacks, exposing sensitive data and disrupting communications across Mitel, Juniper, Vates, and Danfoss products. Administrators should apply vendor patches, disable vulnerable features, and monitor for anomalous activity to mitigate exploitation.]]></description>
+      <title>Mitel MiCollab Zero-Day CVE-2026-133275 Exploited and Added to CISA KEV</title>
+      <link>https://secubuzz.com/news/mitel-micollab-zero-day-cve-2026-133275-exploited-d5c94ed5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mitel-micollab-zero-day-cve-2026-133275-exploited-d5c94ed5</guid>
+      <description><![CDATA[Attackers exploited Mitel MiCollab zero-day CVE-2026-133275 in suspected AI-assisted extortion before Mitel issued an advisory. The flaw enables unauthenticated remote code execution and arbitrary file uploads, risking data exposure and communications disruption. CISA added it to the KEV catalog; administrators should apply vendor patches immediately and monitor for anomalous activity.]]></description>
       <pubDate>Thu, 26 Nov 2026 06:44:46 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html">The Hacker News</source>
       <category>CVE</category>
@@ -212,6 +248,15 @@
       <description><![CDATA[Wiz’s Red, Green, and Blue Agents highlight a quieter, smarter security season by sharing insights and achievements. The announcement showcases how the agents use data analytics to reduce noise and improve detection accuracy across cloud workloads. Users can view the agents’ performance metrics in the Wiz console, fostering a more efficient security posture.]]></description>
       <pubDate>Thu, 26 Nov 2026 02:10:58 GMT</pubDate>
       <source url="https://www.wiz.io/blog/what-wiz-agents-are-thankful-for">Wiz Research</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>UK Delays National Cyber Action Plan to December</title>
+      <link>https://secubuzz.com/news/uk-delays-national-cyber-action-plan-to-december-8996f237</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uk-delays-national-cyber-action-plan-to-december-8996f237</guid>
+      <description><![CDATA[The UK government postponed the release of its National Cyber Action Plan, originally slated for mid-November, to December 9. The plan aims to strengthen defenses against state-backed and criminal hacking across the wider economy, but the delay may impact preparedness timelines. Stakeholders should monitor the December 9 release for updated strategies and compliance requirements.]]></description>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://therecord.media/britain-delays-national-cyber-action-plan-again">The Record</source>
       <category>General</category>
     </item>
     <item>
@@ -411,51 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 18:52:08 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9200-1">Ubuntu Security Notices</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Ghostscript Vulnerability Updated on RHEL 9</title>
-      <link>https://secubuzz.com/news/ghostscript-vulnerability-updated-on-rhel-9-693eac98</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostscript-vulnerability-updated-on-rhel-9-693eac98</guid>
-      <description><![CDATA[Ghostscript on Red Hat Enterprise Linux 9 is affected by a security flaw. The vulnerability, rated Important by Red Hat Product Security, has a CVSS base score detailed in the CVE references; it permits potential exploitation of the Ghostscript interpreter. Red Hat has released an update; administrators should apply the Ghostscript patch immediately to mitigate the risk.]]></description>
-      <pubDate>Wed, 25 Nov 2026 18:10:15 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103523">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ghostscript Vulnerability Updated on RHEL 8</title>
-      <link>https://secubuzz.com/news/ghostscript-vulnerability-updated-on-rhel-8-07f53266</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostscript-vulnerability-updated-on-rhel-8-07f53266</guid>
-      <description><![CDATA[Ghostscript on Red Hat Enterprise Linux 8 is affected by a security flaw. The vulnerability, rated Important by Red Hat Product Security, has a CVSS base score detailed in the CVE references; it permits potential exploitation of the Ghostscript interpreter. Red Hat has released an update; administrators should apply the Ghostscript patch immediately to mitigate the risk.]]></description>
-      <pubDate>Wed, 25 Nov 2026 18:09:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103524">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>What defenders need to know about ARTEX, the agentic AI framework threat actors abuse</title>
-      <link>https://secubuzz.com/news/what-defenders-need-to-know-about-artex-the-agenti-2a2ad827</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/what-defenders-need-to-know-about-artex-the-agenti-2a2ad827</guid>
-      <description><![CDATA[The AI-powered penetration testing framework ARTEX has been abused by threat actors like Storm-0940, Storm-3358, Onyx Sleet, Pearl Sleet, Crystal Typhoon, and Salt Typhoon to accelerate their existing workflows related to network reconnaissance, credential attacks, and web application exploitation.]]></description>
-      <pubDate>Wed, 25 Nov 2026 18:09:06 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/">Microsoft Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103525: Critical: php security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103525-critical-php-security-update-be5c353f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103525-critical-php-security-update-be5c353f</guid>
-      <description><![CDATA[An update for php is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 25 Nov 2026 18:07:31 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103525">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103527: Moderate: cockpit security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103527-moderate-cockpit-security-update-498fab66</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103527-moderate-cockpit-security-update-498fab66</guid>
-      <description><![CDATA[An update for cockpit is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Moderate.]]></description>
-      <pubDate>Wed, 25 Nov 2026 18:06:38 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103527">Red Hat Security Advisories</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
