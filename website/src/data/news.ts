@@ -11,6 +11,99 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-critical-ruby-update-for-rhel-10-8756c79c",
+    "title": "Red Hat Issues Critical Ruby Update for RHEL 10",
+    "summary": "Red Hat released a critical security update for the ruby package on RHEL 10.0 Extended Update Support. The patch fixes multiple high-severity vulnerabilities, such as integer overflows and buffer overflows, that could enable local privilege escalation or remote code execution. System administrators should apply the update immediately and confirm that the ruby package is at the latest version.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103851",
+    "publishedAt": "2026-11-26T14:48:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-ruby-update-for-rhel-10",
+      "article-8756c79c",
+      "8756c79c",
+      "red-hat-issues-critical-ruby-update-for-rhel-10-2ee1e9"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-ruby-2-5-security-update-9f40644a",
+    "title": "Red Hat Issues Critical Ruby 2.5 Security Update",
+    "summary": "Red Hat released a critical security update for the ruby:2.5 module on RHEL 8.4 and Extended Update Support platforms. The update addresses high-severity integer and buffer overflows that could allow local privilege escalation or remote code execution. Administrators should apply the patch immediately and ensure the ruby:2.5 package is updated.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103846",
+    "publishedAt": "2026-11-26T14:46:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-ruby-2-5-security-update",
+      "article-9f40644a",
+      "9f40644a",
+      "red-hat-issues-critical-ruby-2-5-security-update-2ee1e9"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103838-critical-kernel-rt-security-bug-f-ca6a4a3d",
+    "title": "RHSA-2026:103838: Critical: kernel-rt security, bug fix, and enhancement update",
+    "summary": "An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103838",
+    "publishedAt": "2026-11-26T14:36:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103838-critical-kernel-rt-security-bug-f",
+      "article-ca6a4a3d",
+      "ca6a4a3d",
+      "rhsa-2026-103838-critical-kernel-rt-security-bug-f-2ee1e9",
+      "rhsa-2026-103838-critical-kernel-rt-security-bug-fix-and-enh"
+    ]
+  },
+  {
+    "slug": "cisa-adds-10-exploited-vulnerabilities-to-kev-cata-c1aec47f",
+    "title": "CISA Adds 10 Exploited Vulnerabilities to KEV Catalog",
+    "summary": "CISA added ten exploited vulnerabilities to its Known Exploited Vulnerabilities catalog, affecting Mitel MiCollab, Danfoss refrigeration controllers, HPE Juniper networking devices, and Vates Xen Orchestra. The flaws include authentication bypasses, privilege escalation paths, and remote code execution vectors, with proof-of-concepts demonstrating successful exploitation in production. Affected vendors have released patches; security teams should apply updates and monitor for anomalous activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/cisa-adds-10-flaws-to-kev/",
+    "publishedAt": "2026-11-26T14:09:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-10-exploited-vulnerabilities-to-kev-cata",
+      "article-c1aec47f",
+      "c1aec47f",
+      "cisa-adds-10-exploited-vulnerabilities-to-kev-cata-6a24d5",
+      "cisa-adds-10-exploited-vulnerabilities-to-kev-catalog"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103817-critical-kernel-security-bug-fix-dc2cc921",
+    "title": "RHSA-2026:103817: Critical: kernel security, bug fix, and enhancement update",
+    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103817",
+    "publishedAt": "2026-11-26T13:55:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103817-critical-kernel-security-bug-fix",
+      "article-dc2cc921",
+      "dc2cc921",
+      "rhsa-2026-103817-critical-kernel-security-bug-fix-2ee1e9",
+      "rhsa-2026-103817-critical-kernel-security-bug-fix-and-enhanc"
+    ]
+  },
+  {
     "slug": "silver-fox-distributes-gh0strat-via-fake-ocam-inst-c6c171ad",
     "title": "Silver Fox Distributes Gh0stRAT via Fake oCam Installer",
     "summary": "Silver Fox hackers used a fake oCam installer to deliver a dual-package that silently installed Gh0stRAT on Windows PCs. The secondary installer leveraged supply-chain deception, enabling the RAT to stealthily exfiltrate credentials before endpoint security stopped it in 90 seconds. Teams should verify signatures, enforce whitelisting, and deploy behavioral detection to counter similar attacks.",
@@ -9525,104 +9618,6 @@ export const news: NewsBrief[] = [
       "article-75f1fbe0",
       "75f1fbe0",
       "webworm-modifies-softether-vpn-to-evade-detection-514f20"
-    ]
-  },
-  {
-    "slug": "usn-9187-1-libssh-vulnerabilities-77c22071",
-    "title": "USN-9187-1: libssh vulnerabilities",
-    "summary": "This issue only affected Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. (CVE-2026-59843) Mikhail Ilin and Saransh Rana discovered that libssh did not correctly sanitize shell metacharacters when expanding usernames in ProxyCommand strings. An attacker could possibly use this issue to obtain sensitive information. (CVE-2026-59846) Ben Smyth discovered that libssh incorrectly verified AES-GCM authentication tags when built with the OpenSSL backend.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9187-1",
-    "publishedAt": "2026-11-23T17:32:05.000Z",
-    "cves": [
-      "CVE-2026-59843",
-      "CVE-2026-59846",
-      "CVE-2026-59847",
-      "CVE-2026-59848",
-      "CVE-2026-59850"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9187-1-libssh-vulnerabilities",
-      "article-77c22071",
-      "77c22071",
-      "usn-9187-1-libssh-vulnerabilities-7e77e6"
-    ]
-  },
-  {
-    "slug": "crowdstrike-acquires-zscaler-for-43-9b-7e7a2503",
-    "title": "CrowdStrike Acquires Zscaler for $43.9B",
-    "summary": "CrowdStrike announced the acquisition of Zscaler in a $43.9 billion deal, aiming to expand its AI-driven security portfolio. The purchase reflects CEO George Kurtz’s vision of building the largest AI safety and security company worldwide. The transaction is expected to integrate Zscaler’s cloud security platform with CrowdStrike’s endpoint protection, pending regulatory approval.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/crowdstrike-zscaler",
-    "publishedAt": "2026-11-23T17:14:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-acquires-zscaler-for-43-9b",
-      "article-7e7a2503",
-      "7e7a2503",
-      "crowdstrike-acquires-zscaler-for-43-9b-36aaca"
-    ]
-  },
-  {
-    "slug": "globetopper-suffers-cyberattack-causing-financial-3f431e41",
-    "title": "GlobeTopper Suffers Cyberattack Causing Financial and Operational Losses",
-    "summary": "B2B top-up solutions provider GlobeTopper suffered a cyberattack that disrupted its business operations and compromised digital assets. Attackers redeemed digital gift cards valued at $70,000, resulting in an estimated total operational revenue loss of $2.5 million for the company. Organizations should review digital asset transaction controls and implement strict access monitoring on top-up management systems.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
-    "publishedAt": "2026-11-23T16:50:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "globetopper-suffers-cyberattack-causing-financial",
-      "article-3f431e41",
-      "3f431e41",
-      "globetopper-suffers-cyberattack-causing-financial-374c76",
-      "globetopper-suffers-cyberattack-causing-financial-and-operat"
-    ]
-  },
-  {
-    "slug": "china-nexus-actor-exploits-medical-imaging-zero-da-91214183",
-    "title": "China-Nexus Actor Exploits Medical Imaging Zero-Day via Cairn",
-    "summary": "A China-nexus threat actor targeted East Asian universities by deploying the Cairn penetration testing tool to execute attacks. The adversary exploited an unpatched zero-day vulnerability in a medical imaging application, escalating privileges from flaw discovery to root access within 11 minutes. Security teams must monitor for unauthorized Cairn execution and audit medical imaging software for unauthenticated access vectors.",
-    "category": "Nation State",
-    "severity": "CRITICAL",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes",
-    "publishedAt": "2026-11-23T16:17:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "china-nexus-actor-exploits-medical-imaging-zero-da",
-      "article-91214183",
-      "91214183",
-      "china-nexus-actor-exploits-medical-imaging-zero-da-268456",
-      "china-nexus-actor-exploits-medical-imaging-zero-day-via-cair"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-freerdp-patch-for-rhel-9-8be1dfa3",
-    "title": "Red Hat Issues freerdp Patch for RHEL 9",
-    "summary": "Red Hat released an important freerdp update for RHEL 9, addressing several security vulnerabilities. The flaws could allow attackers to execute arbitrary code or exfiltrate session data, yet no active exploitation has been reported. Security teams should apply the freerdp patch immediately, verify remote desktop configurations, and monitor for suspicious activity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102399",
-    "publishedAt": "2026-11-23T16:09:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-freerdp-patch-for-rhel-9",
-      "article-8be1dfa3",
-      "8be1dfa3",
-      "red-hat-issues-freerdp-patch-for-rhel-9-2ee162"
     ]
   }
 ];
