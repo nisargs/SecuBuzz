@@ -11,6 +11,47 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ubuntu-22-04-binutils-vulnerabilities-allow-local-70f9cfe4",
+    "title": "Ubuntu 22.04 Binutils Vulnerabilities Allow Local DoS",
+    "summary": "A local attacker could exploit multiple GNU binutils vulnerabilities in Ubuntu 22.04 LTS, causing crashes or denial of service. The CVE-2019-1010204, CVE-2022-27943, and CVE-2022-48064 flaws arise from improper handling of ELF, Rust symbols, and DWARF data, causing crashes. Ubuntu has released updates; users should install the latest binutils package to mitigate the issue.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9214-1",
+    "publishedAt": "2026-11-26T19:39:59.000Z",
+    "cves": [
+      "CVE-2019-1010204",
+      "CVE-2022-27943",
+      "CVE-2022-48064"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-22-04-binutils-vulnerabilities-allow-local",
+      "article-70f9cfe4",
+      "70f9cfe4",
+      "ubuntu-22-04-binutils-vulnerabilities-allow-local-7e6d09",
+      "ubuntu-22-04-binutils-vulnerabilities-allow-local-dos"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-ruby-3-3-update-31d53972",
+    "title": "Red Hat Releases Critical Ruby 3.3 Update",
+    "summary": "Red Hat issued a critical security update for the ruby:3.3 module on Red Hat Enterprise Linux 9.8 Extended Update Support. The update addresses multiple high-severity vulnerabilities, each assigned a CVSS base score, that could allow local or remote attackers to execute arbitrary code or compromise system integrity. Users should apply the ruby:3.3 update immediately to mitigate the identified risks.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103943",
+    "publishedAt": "2026-11-26T19:10:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-ruby-3-3-update",
+      "article-31d53972",
+      "31d53972",
+      "red-hat-releases-critical-ruby-3-3-update-2ee1ed"
+    ]
+  },
+  {
     "slug": "fake-paid-expert-interviews-impersonate-brands-to-0b72c299",
     "title": "Fake paid expert interviews impersonate brands to steal Google logins",
     "summary": "An ongoing phishing campaign dubbed \"GoodGuys\" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars.",
@@ -27,6 +68,29 @@ export const news: NewsBrief[] = [
       "0b72c299",
       "fake-paid-expert-interviews-impersonate-brands-to-72bf61",
       "fake-paid-expert-interviews-impersonate-brands-to-steal-goog"
+    ]
+  },
+  {
+    "slug": "ubuntu-22-04-libxi-vulnerabilities-enable-remote-d-43717447",
+    "title": "Ubuntu 22.04 libXi Vulnerabilities Enable Remote DoS",
+    "summary": "Remote attackers can exploit multiple libXi vulnerabilities in Ubuntu 22.04 LTS, causing buffer overflows or crashes that lead to denial of service. The flaws, identified as CVE-2026-109089, CVE-2026-109090, and CVE-2026-93542, result from improper validation of DEVICE_RESOLUTION, DEVICE_ENABLE, and XI2 reply data, enabling memory corruption. Ubuntu has released patches; users should update libXi to the latest version to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9213-1",
+    "publishedAt": "2026-11-26T16:54:17.000Z",
+    "cves": [
+      "CVE-2026-109089",
+      "CVE-2026-109090",
+      "CVE-2026-93542"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-22-04-libxi-vulnerabilities-enable-remote-d",
+      "article-43717447",
+      "43717447",
+      "ubuntu-22-04-libxi-vulnerabilities-enable-remote-d-7e6d0d",
+      "ubuntu-22-04-libxi-vulnerabilities-enable-remote-dos"
     ]
   },
   {
@@ -65,6 +129,24 @@ export const news: NewsBrief[] = [
       "2463b666",
       "rhsa-2026-103848-moderate-ruby-3-3-security-bug-fi-2ee1e9",
       "rhsa-2026-103848-moderate-ruby-3-3-security-bug-fix-and-enha"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-ruby-update-for-rhel-9-6-8a9648c8",
+    "title": "Red Hat Issues Critical Ruby Update for RHEL 9.6",
+    "summary": "Red Hat released a critical security update for the ruby module on Red Hat Enterprise Linux 9.6 Extended Update Support. The update addresses multiple high-severity vulnerabilities, each with a CVSS base score, that could allow attackers to execute arbitrary code or compromise system integrity. Users should apply the ruby update immediately to mitigate the identified risks.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103850",
+    "publishedAt": "2026-11-26T15:20:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-ruby-update-for-rhel-9-6",
+      "article-8a9648c8",
+      "8a9648c8",
+      "red-hat-issues-critical-ruby-update-for-rhel-9-6-2ee1e9"
     ]
   },
   {
@@ -123,6 +205,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-critical-ruby-2-5-security-update-3230324c",
+    "title": "Red Hat Releases Critical Ruby 2.5 Security Update",
+    "summary": "Red Hat issues a critical security update for the ruby:2.5 module on RHEL 8.6 Advanced Mission Critical and Extended Update Support. The update fixes multiple high-risk vulnerabilities; CVE identifiers and CVSS scores are listed in the advisory references. Administrators should apply the ruby:2.5 update via yum or dnf immediately to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103842",
+    "publishedAt": "2026-11-26T14:48:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-ruby-2-5-security-update",
+      "article-3230324c",
+      "3230324c",
+      "red-hat-releases-critical-ruby-2-5-security-update-2ee1e9"
+    ]
+  },
+  {
     "slug": "red-hat-issues-critical-ruby-update-for-rhel-10-8756c79c",
     "title": "Red Hat Issues Critical Ruby Update for RHEL 10",
     "summary": "Red Hat released a critical security update for the ruby package on RHEL 10.0 Extended Update Support. The patch fixes multiple high-severity vulnerabilities, such as integer overflows and buffer overflows, that could enable local privilege escalation or remote code execution. System administrators should apply the update immediately and confirm that the ruby package is at the latest version.",
@@ -156,6 +256,27 @@ export const news: NewsBrief[] = [
       "article-9f40644a",
       "9f40644a",
       "red-hat-issues-critical-ruby-2-5-security-update-2ee1e9"
+    ]
+  },
+  {
+    "slug": "pyjwt-vulnerabilities-enable-dos-and-token-bypass-8a613118",
+    "title": "PyJWT Vulnerabilities Enable DoS and Token Bypass",
+    "summary": "PyJWT in Ubuntu 22.04 LTS has two vulnerabilities that can trigger denial of service or bypass token claim checks. CVE-2026-102265 exploits improper error handling in nested token headers; CVE-2026-103001 alters options mapping when signature verification is disabled, enabling reuse to bypass expiration. Ubuntu advises installing the patched PyJWT package via apt to mitigate both denial-of-service and authentication-bypass risks.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9212-1",
+    "publishedAt": "2026-11-26T14:45:08.000Z",
+    "cves": [
+      "CVE-2026-102265",
+      "CVE-2026-103001"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "pyjwt-vulnerabilities-enable-dos-and-token-bypass",
+      "article-8a613118",
+      "8a613118",
+      "pyjwt-vulnerabilities-enable-dos-and-token-bypass-7e6d10"
     ]
   },
   {
@@ -641,6 +762,25 @@ export const news: NewsBrief[] = [
       "article-8230537f",
       "8230537f",
       "fifa-breach-12-2-gb-documents-exposed-e5c0aa"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-103790-critical-ruby4-0-security-bug-fix-1ed7eccd",
+    "title": "RHSA-2026:103790: Critical: ruby4.0 security, bug fix, and enhancement update",
+    "summary": "An update for ruby4.0 is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:103790",
+    "publishedAt": "2026-11-26T08:01:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-103790-critical-ruby4-0-security-bug-fix",
+      "article-1ed7eccd",
+      "1ed7eccd",
+      "rhsa-2026-103790-critical-ruby4-0-security-bug-fix-2ee1e6",
+      "rhsa-2026-103790-critical-ruby4-0-security-bug-fix-and-enhan"
     ]
   },
   {
@@ -9483,140 +9623,6 @@ export const news: NewsBrief[] = [
       "article-7ae3d02b",
       "7ae3d02b",
       "red-hat-issues-python-3-6-security-update-2ee16d"
-    ]
-  },
-  {
-    "slug": "aurora-adtp-blocks-modern-attacks-by-continuous-be-f261eb17",
-    "title": "Aurora ADTP Blocks Modern Attacks by Continuous Behavior Tracking",
-    "summary": "Aurora Adaptive Threat Protection (ADTP) monitors endpoint activity to counter attacks that bypass conventional defenses. By linking related behaviors into a full attack narrative, ADTP identifies malicious intent before execution, enabling real-time disruption. Security teams should deploy ADTP alongside existing endpoint solutions and configure behavior thresholds for optimal coverage, reducing blind spots.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-stops-and-reverses-modern-attacks/",
-    "publishedAt": "2026-11-23T21:00:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aurora-adtp-blocks-modern-attacks-by-continuous-be",
-      "article-f261eb17",
-      "f261eb17",
-      "aurora-adtp-blocks-modern-attacks-by-continuous-be-47c4d5",
-      "aurora-adtp-blocks-modern-attacks-by-continuous-behavior-tra"
-    ]
-  },
-  {
-    "slug": "kepco-breach-exposes-1-5-million-customer-records-33ce023b",
-    "title": "KEPCO Breach Exposes 1.5 Million Customer Records",
-    "summary": "A threat actor breached KEPCO’s internal network, accessing two systems that stored customer, employee, and contractor data. The intrusion leveraged an undisclosed vulnerability in the company’s network perimeter, enabling unauthorized data exfiltration and potential credential compromise. KEPCO has issued a security advisory and is conducting a forensic investigation, urging affected users to monitor accounts and change passwords.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
-    "publishedAt": "2026-11-23T20:54:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kepco-breach-exposes-1-5-million-customer-records",
-      "article-33ce023b",
-      "33ce023b",
-      "kepco-breach-exposes-1-5-million-customer-records-2a6e37"
-    ]
-  },
-  {
-    "slug": "chrome-stable-channel-updated-to-158-0-8127-88-d35ce0b3",
-    "title": "Chrome Stable Channel Updated to 158.0.8127.88",
-    "summary": "Google Chrome released a stable channel update to version 158.0.8127.88 for Windows, Mac, and Linux, rolling out over the next weeks. The update includes security fixes, with a detailed change log available; users are encouraged to review the log before upgrading. Administrators should schedule the rollout, verify compatibility, and monitor for any post-upgrade issues via the community help forum.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html",
-    "publishedAt": "2026-11-23T20:52:51.321Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-stable-channel-updated-to-158-0-8127-88",
-      "article-d35ce0b3",
-      "d35ce0b3",
-      "chrome-stable-channel-updated-to-158-0-8127-88-5debed"
-    ]
-  },
-  {
-    "slug": "chrome-extended-stable-channel-updated-to-156-0-80-45d8d596",
-    "title": "Chrome Extended Stable Channel Updated to 156.0.8078.114",
-    "summary": "Google Chrome’s Extended Stable channel updated to 156.0.8078.114 for Windows and macOS, extending the stable release schedule. The update lists changes, with security fixes pending a later release, and will roll out over the next days or weeks. Users may review the change log, file bugs, or use the community forum while awaiting the security patch.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01590513949.html",
-    "publishedAt": "2026-11-23T20:52:47.796Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-extended-stable-channel-updated-to-156-0-80",
-      "article-45d8d596",
-      "45d8d596",
-      "chrome-extended-stable-channel-updated-to-156-0-80-496d05",
-      "chrome-extended-stable-channel-updated-to-156-0-8078-114"
-    ]
-  },
-  {
-    "slug": "cve-2026-134056-out-of-bounds-write-in-padded-bloc-994f1241",
-    "title": "CVE-2026-134056 - Out-of-bounds write in padded block cipher decryption in AWS-LC",
-    "summary": "Bulletin ID: 2026-196-AWS Publication Date: 11/23/2026 12:00 PM PST Description: We identified CVE-2026-134056, an out-of-bounds write issue in AWS-LC's padded block cipher decryption. If the output buffer is the minimum documented size, AWS-LC can write one byte past its end. The aws-lc-rs StreamingDecryptingKey API has a similar issue with cbc_pkcs7 and ecb_pkcs7.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-196-aws/",
-    "publishedAt": "2026-11-23T20:29:41.000Z",
-    "cves": [
-      "CVE-2026-134056"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-134056-out-of-bounds-write-in-padded-bloc",
-      "article-994f1241",
-      "994f1241",
-      "cve-2026-134056-out-of-bounds-write-in-padded-bloc-28459b",
-      "cve-2026-134056-out-of-bounds-write-in-padded-block-cipher-d"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-sqlite-security-update-eb5cc09f",
-    "title": "Red Hat Issues Important SQLite Security Update",
-    "summary": "Red Hat released an important security update for SQLite on Red Hat Enterprise Linux 8, addressing multiple vulnerabilities. The update carries an Important impact rating, with CVSS base scores linked to each CVE in the advisory references. Administrators should apply the update immediately and verify that SQLite components are patched to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102648",
-    "publishedAt": "2026-11-23T20:28:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-sqlite-security-update",
-      "article-eb5cc09f",
-      "eb5cc09f",
-      "red-hat-issues-important-sqlite-security-update-2ee16d"
-    ]
-  },
-  {
-    "slug": "cisco-products-affected-by-php-remote-code-vulnera-a22919db",
-    "title": "Cisco Products Affected by PHP Remote Code Vulnerability",
-    "summary": "Cisco products are vulnerable to a PHP flaw that permits remote code execution, as disclosed by the PHP Foundation on November 19, 2026. The flaw, identified as CVE-2026-126714 and dubbed phpAfterShell, carries a Critical security impact rating and is referenced by GHSA-fm2m-fjf5-v3cp. Cisco recommends applying the available PHP security patches immediately to mitigate the RCE risk and ensure system integrity.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-phpaftershell-nov-2026-kT9pL4Xe?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerability+in+PHP+Affecting+Cisco+Products%3A+November+2026%26vs_k%3D1",
-    "publishedAt": "2026-11-23T20:20:00.000Z",
-    "cves": [
-      "CVE-2026-126714"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-products-affected-by-php-remote-code-vulnera",
-      "article-a22919db",
-      "a22919db",
-      "cisco-products-affected-by-php-remote-code-vulnera-6bcf0e",
-      "cisco-products-affected-by-php-remote-code-vulnerability"
     ]
   }
 ];

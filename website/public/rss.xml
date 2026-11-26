@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 19:43:57 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 20:16:36 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ubuntu 22.04 Binutils Vulnerabilities Allow Local DoS</title>
+      <link>https://secubuzz.com/news/ubuntu-22-04-binutils-vulnerabilities-allow-local-70f9cfe4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-22-04-binutils-vulnerabilities-allow-local-70f9cfe4</guid>
+      <description><![CDATA[A local attacker could exploit multiple GNU binutils vulnerabilities in Ubuntu 22.04 LTS, causing crashes or denial of service. The CVE-2019-1010204, CVE-2022-27943, and CVE-2022-48064 flaws arise from improper handling of ELF, Rust symbols, and DWARF data, causing crashes. Ubuntu has released updates; users should install the latest binutils package to mitigate the issue.]]></description>
+      <pubDate>Thu, 26 Nov 2026 19:39:59 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9214-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Ruby 3.3 Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-ruby-3-3-update-31d53972</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-ruby-3-3-update-31d53972</guid>
+      <description><![CDATA[Red Hat issued a critical security update for the ruby:3.3 module on Red Hat Enterprise Linux 9.8 Extended Update Support. The update addresses multiple high-severity vulnerabilities, each assigned a CVSS base score, that could allow local or remote attackers to execute arbitrary code or compromise system integrity. Users should apply the ruby:3.3 update immediately to mitigate the identified risks.]]></description>
+      <pubDate>Thu, 26 Nov 2026 19:10:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103943">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Fake paid expert interviews impersonate brands to steal Google logins</title>
       <link>https://secubuzz.com/news/fake-paid-expert-interviews-impersonate-brands-to-0b72c299</link>
@@ -15,6 +33,15 @@
       <pubDate>Thu, 26 Nov 2026 17:15:27 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Ubuntu 22.04 libXi Vulnerabilities Enable Remote DoS</title>
+      <link>https://secubuzz.com/news/ubuntu-22-04-libxi-vulnerabilities-enable-remote-d-43717447</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-22-04-libxi-vulnerabilities-enable-remote-d-43717447</guid>
+      <description><![CDATA[Remote attackers can exploit multiple libXi vulnerabilities in Ubuntu 22.04 LTS, causing buffer overflows or crashes that lead to denial of service. The flaws, identified as CVE-2026-109089, CVE-2026-109090, and CVE-2026-93542, result from improper validation of DEVICE_RESOLUTION, DEVICE_ENABLE, and XI2 reply data, enabling memory corruption. Ubuntu has released patches; users should update libXi to the latest version to mitigate the risk.]]></description>
+      <pubDate>Thu, 26 Nov 2026 16:54:17 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9213-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Zero-Leakage Consent Management Replaces Static Cookie Banners</title>
@@ -32,6 +59,15 @@
       <description><![CDATA[An update for the ruby:3.3 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Thu, 26 Nov 2026 15:20:44 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103848">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical Ruby Update for RHEL 9.6</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-ruby-update-for-rhel-9-6-8a9648c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-ruby-update-for-rhel-9-6-8a9648c8</guid>
+      <description><![CDATA[Red Hat released a critical security update for the ruby module on Red Hat Enterprise Linux 9.6 Extended Update Support. The update addresses multiple high-severity vulnerabilities, each with a CVSS base score, that could allow attackers to execute arbitrary code or compromise system integrity. Users should apply the ruby update immediately to mitigate the identified risks.]]></description>
+      <pubDate>Thu, 26 Nov 2026 15:20:15 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103850">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -62,6 +98,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Releases Critical Ruby 2.5 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-ruby-2-5-security-update-3230324c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-ruby-2-5-security-update-3230324c</guid>
+      <description><![CDATA[Red Hat issues a critical security update for the ruby:2.5 module on RHEL 8.6 Advanced Mission Critical and Extended Update Support. The update fixes multiple high-risk vulnerabilities; CVE identifiers and CVSS scores are listed in the advisory references. Administrators should apply the ruby:2.5 update via yum or dnf immediately to mitigate exploitation.]]></description>
+      <pubDate>Thu, 26 Nov 2026 14:48:38 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103842">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Issues Critical Ruby Update for RHEL 10</title>
       <link>https://secubuzz.com/news/red-hat-issues-critical-ruby-update-for-rhel-10-8756c79c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-ruby-update-for-rhel-10-8756c79c</guid>
@@ -78,6 +123,15 @@
       <pubDate>Thu, 26 Nov 2026 14:46:37 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103846">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PyJWT Vulnerabilities Enable DoS and Token Bypass</title>
+      <link>https://secubuzz.com/news/pyjwt-vulnerabilities-enable-dos-and-token-bypass-8a613118</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pyjwt-vulnerabilities-enable-dos-and-token-bypass-8a613118</guid>
+      <description><![CDATA[PyJWT in Ubuntu 22.04 LTS has two vulnerabilities that can trigger denial of service or bypass token claim checks. CVE-2026-102265 exploits improper error handling in nested token headers; CVE-2026-103001 alters options mapping when signature verification is disabled, enabling reuse to bypass expiration. Ubuntu advises installing the patched PyJWT package via apt to mitigate both denial-of-service and authentication-bypass risks.]]></description>
+      <pubDate>Thu, 26 Nov 2026 14:45:08 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9212-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Anthropic Tests Claude AI Escape in Honeypot</title>
@@ -314,6 +368,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>RHSA-2026:103790: Critical: ruby4.0 security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-103790-critical-ruby4-0-security-bug-fix-1ed7eccd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103790-critical-ruby4-0-security-bug-fix-1ed7eccd</guid>
+      <description><![CDATA[An update for ruby4.0 is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 26 Nov 2026 08:01:34 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:103790">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Cyprus Targeted by Iranian Espionage Group</title>
       <link>https://secubuzz.com/news/cyprus-targeted-by-iranian-espionage-group-d56b9d3c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cyprus-targeted-by-iranian-espionage-group-d56b9d3c</guid>
@@ -392,69 +455,6 @@
       <description><![CDATA[Cybersecurity vendors are offering Black Friday 2026 discounts on security tools. The promotion includes discounts on products such as Passwork, a self-hosted password manager, and other daily-use security solutions. Organizations should review the fine print, evaluate the tools' suitability, and purchase during the sale to enhance security posture while saving costs.]]></description>
       <pubDate>Thu, 26 Nov 2026 06:30:33 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/26/black-friday-2026-cybersecurity-deals/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>4,200 Servers Exposed to AI Hacking Frameworks</title>
-      <link>https://secubuzz.com/news/4-200-servers-exposed-to-ai-hacking-frameworks-cd6f234a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/4-200-servers-exposed-to-ai-hacking-frameworks-cd6f234a</guid>
-      <description><![CDATA[Shadowserver Foundation identified over 4,200 internet-exposed servers running AI-powered hacking frameworks, up from 3,700 the day before. The report logged more than 10,000 attack events from 80 IPs between Nov 9 and 23, showing active exploitation of misconfigured AI tools.]]></description>
-      <pubDate>Thu, 26 Nov 2026 06:26:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/4000-servers-running-ai-hacking-agents-are-exposed/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Proxmox 9.3 Adds Production Snapshots for SAN VMs</title>
-      <link>https://secubuzz.com/news/proxmox-9-3-adds-production-snapshots-for-san-vms-c9749e60</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/proxmox-9-3-adds-production-snapshots-for-san-vms-c9749e60</guid>
-      <description><![CDATA[Proxmox Virtual Environment 9.3 introduces snapshots for VMs on shared LVM storage accessed via iSCSI or Fibre Channel SANs. The update builds volume chains on thick-provisioned LVM, preserving guest identities across migrations, backups, and restores for production workloads. Administrators enable the feature via the Proxmox UI or API; no firmware or security patches are needed.]]></description>
-      <pubDate>Thu, 26 Nov 2026 06:07:23 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/26/proxmox-9-3-adds-production-snapshots-for-san-backed-vms/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Roundcube Webmail Flaws Enable Code Execution</title>
-      <link>https://secubuzz.com/news/roundcube-webmail-flaws-enable-code-execution-395f8464</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/roundcube-webmail-flaws-enable-code-execution-395f8464</guid>
-      <description><![CDATA[Roundcube released versions 1.6.22 and 1.7.7 to patch 12 flaws that could let attackers execute malicious code and expose sensitive data. The vulnerabilities stem from improper handling of attachments, message rendering, and server connections, allowing unauthorized email filter code execution and data leakage. Users should upgrade to the latest releases and verify configuration settings to prevent exploitation.]]></description>
-      <pubDate>Thu, 26 Nov 2026 06:05:33 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/roundcube-webmail-flaws/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>4,400 Malicious Domains Target Holiday Shoppers</title>
-      <link>https://secubuzz.com/news/4-400-malicious-domains-target-holiday-shoppers-3ab655eb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/4-400-malicious-domains-target-holiday-shoppers-3ab655eb</guid>
-      <description><![CDATA[FortiGuard Labs reports over 4,400 newly registered malicious domains poised to exploit holiday shoppers. These domains, identified among 24,000 seasonal keyword registrations, facilitate retailer impersonation, payment fraud, and account takeovers, with underground markets trading stolen customer data and e-commerce infrastructure access. Security teams should block these domains, monitor for phishing, and enforce strict domain whitelisting to protect consumers.]]></description>
-      <pubDate>Thu, 26 Nov 2026 06:00:53 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/26/fortinet-holiday-shopping-cyber-threats-report/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SolarWinds Serv-U 2026.4 Patch Addresses Root Access Flaws</title>
-      <link>https://secubuzz.com/news/solarwinds-serv-u-2026-4-patch-addresses-root-acce-ee7a0cd3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/solarwinds-serv-u-2026-4-patch-addresses-root-acce-ee7a0cd3</guid>
-      <description><![CDATA[SolarWinds released Serv-U 2026.4, fixing 18 vulnerabilities, including nine critical flaws that could grant attackers root access on Linux servers, with lower risk on Windows. The patch also eliminates a high-severity command-injection flaw that affects only Windows installations, removing a remote code execution vector. Security teams should apply Serv-U 2026.4 immediately to close the root-access and command-injection vulnerabilities.]]></description>
-      <pubDate>Thu, 26 Nov 2026 06:00:51 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-solarwinds-serv-u-flaws/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Requires MCP or CLI for Workspace AI Agents</title>
-      <link>https://secubuzz.com/news/google-requires-mcp-or-cli-for-workspace-ai-agents-c362b12f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-requires-mcp-or-cli-for-workspace-ai-agents-c362b12f</guid>
-      <description><![CDATA[Google announced mandatory Model Context Protocol (MCP) or command-line interface access for Workspace AI agents starting February 2027 to secure autonomous agent interactions with enterprise data. New controls include dedicated agent identities, human approval for sensitive operations, prompt injection screening, and restrictions on third-party AI tool data processing.]]></description>
-      <pubDate>Thu, 26 Nov 2026 05:30:05 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/26/google-ai-agent-security-requirements/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Survey Shows Users Will Pay to Remove Search Data</title>
-      <link>https://secubuzz.com/news/survey-shows-users-will-pay-to-remove-search-data-4dc58a49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/survey-shows-users-will-pay-to-remove-search-data-4dc58a49</guid>
-      <description><![CDATA[An Incogni survey of 1,008 U.S. adults revealed 55% would pay for permanent removal of personal information from public search results, while 53% desire a five-year search history log. The findings highlight growing privacy concerns over data broker exposure, with respondents valuing control over online identity footprints.]]></description>
-      <pubDate>Thu, 26 Nov 2026 05:00:06 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/26/incogni-online-privacy-concerns-report/">Help Net Security</source>
       <category>General</category>
     </item>
   </channel>
