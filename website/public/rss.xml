@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 07:44:48 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 08:45:11 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Top Penetration Testing Firms 2026 Ranked</title>
+      <link>https://secubuzz.com/news/top-penetration-testing-firms-2026-ranked-48069a65</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-penetration-testing-firms-2026-ranked-48069a65</guid>
+      <description><![CDATA[The 2026 penetration testing market is judged on depth of expertise, reproducible findings, and retest capabilities. The ranking highlights firms that provide actionable reports, clear remediation paths, and measurable security improvements. Security teams should evaluate these firms against engagement scope, industry experience, and post-engagement support before contracting, ensuring they maintain up-to-date testing methodologies.]]></description>
+      <pubDate>Thu, 26 Nov 2026 07:35:19 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-penetration-testing-companies/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Best Anti-Phishing Solutions 2026 Ranked</title>
+      <link>https://secubuzz.com/news/best-anti-phishing-solutions-2026-ranked-66829513</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/best-anti-phishing-solutions-2026-ranked-66829513</guid>
+      <description><![CDATA[The 2026 anti-phishing landscape has evolved with AI-generated lures that mimic brand identities and personalize attacks. The ranking evaluates solutions on detection depth, sender verification, and the ability to block malicious links after delivery. Organizations should review the scores, test solutions against current phishing templates, and deploy the highest-rated tools to reduce credential compromise.]]></description>
+      <pubDate>Thu, 26 Nov 2026 07:31:13 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-anti-phishing/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Mitel, Juniper, Vates, Danfoss Vulnerabilities Exploited</title>
       <link>https://secubuzz.com/news/mitel-juniper-vates-danfoss-vulnerabilities-exploi-3bcf3842</link>
@@ -15,6 +33,15 @@
       <pubDate>Thu, 26 Nov 2026 06:44:46 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html">The Hacker News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Cybersecurity Vendors Offer Black Friday 2026 Discounts</title>
+      <link>https://secubuzz.com/news/cybersecurity-vendors-offer-black-friday-2026-disc-144225c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cybersecurity-vendors-offer-black-friday-2026-disc-144225c8</guid>
+      <description><![CDATA[Cybersecurity vendors are offering Black Friday 2026 discounts on security tools. The promotion includes discounts on products such as Passwork, a self-hosted password manager, and other daily-use security solutions. Organizations should review the fine print, evaluate the tools' suitability, and purchase during the sale to enhance security posture while saving costs.]]></description>
+      <pubDate>Thu, 26 Nov 2026 06:30:33 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/26/black-friday-2026-cybersecurity-deals/">Help Net Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>4,200 Servers Exposed to AI Hacking Frameworks</title>
@@ -134,10 +161,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>1Password Backend Breach Exposes Customer Data via Compromised GitHub Account</title>
-      <link>https://secubuzz.com/news/1password-backend-breach-exposes-customer-data-via-0ecfb6b2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/1password-backend-breach-exposes-customer-data-via-0ecfb6b2</guid>
-      <description><![CDATA[1Password suffered a backend breach when an attacker compromised an employee’s corporate GitHub account, gaining access to backend systems and exposing customer data. The intrusion also leaked source code and internal account details, but vault contents and stored passwords remained secure. 1Password notified affected customers, rotated credentials, engaged forensic investigators, and advised monitoring account activity and changing passwords.]]></description>
+      <title>1Password Breach via Compromised GitHub Exposes Customer Data and Source Code</title>
+      <link>https://secubuzz.com/news/1password-breach-via-compromised-github-exposes-cu-1870496b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/1password-breach-via-compromised-github-exposes-cu-1870496b</guid>
+      <description><![CDATA[1Password suffered a breach when an attacker compromised an employee’s GitHub account, injecting code that exposed customer data and source code. The attack did not reach vaults or stored passwords, but revealed sensitive customer information and internal code, indicating credential misuse. 1Password issued a security advisory, rotated credentials, engaged forensic investigators, and released a patch to block unauthorized pushes.]]></description>
       <pubDate>Wed, 25 Nov 2026 21:33:33 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/">BleepingComputer</source>
       <category>Breach</category>
@@ -429,33 +456,6 @@
       <pubDate>Wed, 25 Nov 2026 16:39:28 GMT</pubDate>
       <source url="https://cybersecuritynews.com/todoist-production-system-breach/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>CISA Alerts on Critical Danfoss Controller Vulnerability</title>
-      <link>https://secubuzz.com/news/cisa-alerts-on-critical-danfoss-controller-vulnera-91051535</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-alerts-on-critical-danfoss-controller-vulnera-91051535</guid>
-      <description><![CDATA[CISA issued a warning about a critical flaw in Danfoss AK-SM 8xxA Series refrigeration controllers used by food retailers, identified as CVE-2026-129713. The vulnerability permits unauthenticated remote code execution, enabling attackers to manipulate temperature controls and potentially disrupt refrigeration operations. CISA recommends applying the vendor’s patch immediately, updating firmware, and monitoring for anomalous activity to mitigate risk.]]></description>
-      <pubDate>Wed, 25 Nov 2026 16:13:40 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/">BleepingComputer</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Switzerland Reports First AI-Assisted Cyberattacks</title>
-      <link>https://secubuzz.com/news/switzerland-reports-first-ai-assisted-cyberattacks-a8957c99</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/switzerland-reports-first-ai-assisted-cyberattacks-a8957c99</guid>
-      <description><![CDATA[Switzerland’s NCSC confirmed the first AI-agent cyberattacks that breached IT systems of companies and critical infrastructure operators in two sectors. Attackers leveraged generative AI to automate reconnaissance, credential harvesting, and exploit delivery, enabling rapid compromise without human intervention. Security teams should monitor for anomalous AI-driven activity, enforce strict access controls, and apply timely patches to mitigate future incidents.]]></description>
-      <pubDate>Wed, 25 Nov 2026 16:02:38 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/switzerland-ai-agent-cyberattacks/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Ubuntu Reports Speex Oversize Input Vulnerability</title>
-      <link>https://secubuzz.com/news/ubuntu-reports-speex-oversize-input-vulnerability-7db7cf94</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-reports-speex-oversize-input-vulnerability-7db7cf94</guid>
-      <description><![CDATA[Ubuntu identified a Speex library flaw that mishandles oversized input when appending data to an external bit buffer. The defect could crash the decoder or allow an attacker to execute arbitrary code if a crafted file is processed. A patch has been released; users should update Speex to the latest version to eliminate the vulnerability.]]></description>
-      <pubDate>Wed, 25 Nov 2026 15:48:32 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9197-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

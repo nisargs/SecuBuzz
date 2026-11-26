@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "top-penetration-testing-firms-2026-ranked-48069a65",
+    "title": "Top Penetration Testing Firms 2026 Ranked",
+    "summary": "The 2026 penetration testing market is judged on depth of expertise, reproducible findings, and retest capabilities. The ranking highlights firms that provide actionable reports, clear remediation paths, and measurable security improvements. Security teams should evaluate these firms against engagement scope, industry experience, and post-engagement support before contracting, ensuring they maintain up-to-date testing methodologies.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-penetration-testing-companies/",
+    "publishedAt": "2026-11-26T07:35:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-penetration-testing-firms-2026-ranked",
+      "article-48069a65",
+      "48069a65",
+      "top-penetration-testing-firms-2026-ranked-3f543b"
+    ]
+  },
+  {
+    "slug": "best-anti-phishing-solutions-2026-ranked-66829513",
+    "title": "Best Anti-Phishing Solutions 2026 Ranked",
+    "summary": "The 2026 anti-phishing landscape has evolved with AI-generated lures that mimic brand identities and personalize attacks. The ranking evaluates solutions on detection depth, sender verification, and the ability to block malicious links after delivery. Organizations should review the scores, test solutions against current phishing templates, and deploy the highest-rated tools to reduce credential compromise.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-anti-phishing/",
+    "publishedAt": "2026-11-26T07:31:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "best-anti-phishing-solutions-2026-ranked",
+      "article-66829513",
+      "66829513",
+      "best-anti-phishing-solutions-2026-ranked-4566bc"
+    ]
+  },
+  {
     "slug": "mitel-juniper-vates-danfoss-vulnerabilities-exploi-3bcf3842",
     "title": "Mitel, Juniper, Vates, Danfoss Vulnerabilities Exploited",
     "summary": "CISA added ten known exploited vulnerabilities, including five affecting Mitel MiCollab, to its KEV catalog. The flaws, such as CVE-2026-133275 with CVSS 5.3, enable arbitrary file uploads and other attacks, exposing sensitive data and disrupting communications across Mitel, Juniper, Vates, and Danfoss products. Administrators should apply vendor patches, disable vulnerable features, and monitor for anomalous activity to mitigate exploitation.",
@@ -29,6 +65,25 @@ export const news: NewsBrief[] = [
       "3bcf3842",
       "mitel-juniper-vates-danfoss-vulnerabilities-exploi-7a039c",
       "mitel-juniper-vates-danfoss-vulnerabilities-exploited"
+    ]
+  },
+  {
+    "slug": "cybersecurity-vendors-offer-black-friday-2026-disc-144225c8",
+    "title": "Cybersecurity Vendors Offer Black Friday 2026 Discounts",
+    "summary": "Cybersecurity vendors are offering Black Friday 2026 discounts on security tools. The promotion includes discounts on products such as Passwork, a self-hosted password manager, and other daily-use security solutions. Organizations should review the fine print, evaluate the tools' suitability, and purchase during the sale to enhance security posture while saving costs.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/26/black-friday-2026-cybersecurity-deals/",
+    "publishedAt": "2026-11-26T06:30:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cybersecurity-vendors-offer-black-friday-2026-disc",
+      "article-144225c8",
+      "144225c8",
+      "cybersecurity-vendors-offer-black-friday-2026-disc-69ce9e",
+      "cybersecurity-vendors-offer-black-friday-2026-discounts"
     ]
   },
   {
@@ -280,9 +335,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "1password-backend-breach-exposes-customer-data-via-0ecfb6b2",
-    "title": "1Password Backend Breach Exposes Customer Data via Compromised GitHub Account",
-    "summary": "1Password suffered a backend breach when an attacker compromised an employee’s corporate GitHub account, gaining access to backend systems and exposing customer data. The intrusion also leaked source code and internal account details, but vault contents and stored passwords remained secure. 1Password notified affected customers, rotated credentials, engaged forensic investigators, and advised monitoring account activity and changing passwords.",
+    "slug": "1password-breach-via-compromised-github-exposes-cu-1870496b",
+    "title": "1Password Breach via Compromised GitHub Exposes Customer Data and Source Code",
+    "summary": "1Password suffered a breach when an attacker compromised an employee’s GitHub account, injecting code that exposed customer data and source code. The attack did not reach vaults or stored passwords, but revealed sensitive customer information and internal code, indicating credential misuse. 1Password issued a security advisory, rotated credentials, engaged forensic investigators, and released a patch to block unauthorized pushes.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -297,14 +352,18 @@ export const news: NewsBrief[] = [
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/1password-breach-exposes-customer-data-internal-source-code/"
       }
     ],
     "aliases": [
-      "1password-backend-breach-exposes-customer-data-via",
-      "article-0ecfb6b2",
-      "0ecfb6b2",
-      "1password-backend-breach-exposes-customer-data-via-533a01",
-      "1password-backend-breach-exposes-customer-data-via-compromis"
+      "1password-breach-via-compromised-github-exposes-cu",
+      "article-1870496b",
+      "1870496b",
+      "1password-breach-via-compromised-github-exposes-cu-533a01",
+      "1password-breach-via-compromised-github-exposes-customer-dat"
     ]
   },
   {
@@ -2553,6 +2612,25 @@ export const news: NewsBrief[] = [
       "466f2d8d",
       "anthropic-scanner-discovers-drupal-flaw-attacks-ex-793d78",
       "anthropic-scanner-discovers-drupal-flaw-attacks-exploit-it"
+    ]
+  },
+  {
+    "slug": "unified-architecture-needed-for-employee-ai-securi-f0baac3c",
+    "title": "Unified Architecture Needed for Employee AI Security",
+    "summary": "Securing employee AI use requires a unified architecture that integrates policy enforcement, monitoring, and risk assessment. The architecture consolidates disparate controls, enabling consistent application of access restrictions, data handling rules, and threat detection across AI workloads. Security teams should adopt frameworks that embed AI governance, enforce least privilege, and provide audit trails to mitigate misuse and compliance gaps.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/securing-employees-ai-use-requires-unified-architecture/",
+    "publishedAt": "2026-11-25T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "unified-architecture-needed-for-employee-ai-securi",
+      "article-f0baac3c",
+      "f0baac3c",
+      "unified-architecture-needed-for-employee-ai-securi-2465f1",
+      "unified-architecture-needed-for-employee-ai-security"
     ]
   },
   {
@@ -9545,83 +9623,6 @@ export const news: NewsBrief[] = [
       "article-51c027f3",
       "51c027f3",
       "red-hat-updates-tigervnc-for-rhel-9-6-2ee165"
-    ]
-  },
-  {
-    "slug": "jetbrains-advises-updates-for-multiple-product-vul-f887450b",
-    "title": "JetBrains Advises Updates for Multiple Product Vulnerabilities",
-    "summary": "JetBrains announced vulnerabilities affecting Junie, Junie CLI, and Junie GitHub Action, with affected versions listed in advisory AV26-1192. The flaws stem from insufficient input validation and insecure configuration defaults, enabling unauthorized code execution or privilege escalation, though no active exploitation has been reported. JetBrains recommends applying the latest patches for all affected versions and reviewing configuration settings to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Canadian Centre for Cyber Security",
-    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1192",
-    "publishedAt": "2026-11-23T15:11:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "jetbrains-advises-updates-for-multiple-product-vul",
-      "article-f887450b",
-      "f887450b",
-      "jetbrains-advises-updates-for-multiple-product-vul-53189a",
-      "jetbrains-advises-updates-for-multiple-product-vulnerabiliti"
-    ]
-  },
-  {
-    "slug": "multiple-high-impact-vulnerabilities-exploit-remot-1431ab6d",
-    "title": "Multiple High-Impact Vulnerabilities Exploit Remote Code Paths",
-    "summary": "This week’s recap highlights several high-impact vulnerabilities, including a VMware 0-Day, Java4Shell, NGINX2Root, and Ruby2Shell, that exploit remote code execution paths. The flaws enable attackers to pivot from one compromised system to another, expanding lateral movement. Vendors have released patches; security teams should apply them promptly and monitor for exploitation attempts.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
-    "publishedAt": "2026-11-23T15:10:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "multiple-high-impact-vulnerabilities-exploit-remot",
-      "article-1431ab6d",
-      "1431ab6d",
-      "multiple-high-impact-vulnerabilities-exploit-remot-18c20e",
-      "multiple-high-impact-vulnerabilities-exploit-remote-code-pat"
-    ]
-  },
-  {
-    "slug": "n-able-releases-patch-for-critical-cve-2026-134624-2c7597c5",
-    "title": "N-Able Releases Patch for Critical CVE-2026-134624",
-    "summary": "N-Able disclosed a critical flaw, CVE-2026-134624, that was exploited during a Mail Assure cyberattack targeting its services. The vulnerability allowed attackers to gain unauthorized access to administrative functions, potentially enabling data exfiltration or service disruption. N-Able released a patch and advised customers to apply the update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
-    "publishedAt": "2026-11-23T15:06:49.000Z",
-    "cves": [
-      "CVE-2026-134624"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-releases-patch-for-critical-cve-2026-134624",
-      "article-2c7597c5",
-      "2c7597c5",
-      "n-able-releases-patch-for-critical-cve-2026-134624-78d0e6"
-    ]
-  },
-  {
-    "slug": "gl-inet-cloud-compromise-deploys-malware-to-router-c6aa16cc",
-    "title": "GL.iNet Cloud Compromise Deploys Malware to Routers and KVMs",
-    "summary": "Attackers compromised GL.iNet’s GoodCloud remote-management service and used it to install malware on connected routers and KVM devices. The breach exploited unauthorized cloud access, enabling remote code execution on device firmware and allowing persistent control and data exfiltration. GL.iNet has not yet released a patch; teams should isolate affected devices, update firmware when available, and monitor for anomalous traffic.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/23/gl-inet-cloud-compromise-malware-backdoors/",
-    "publishedAt": "2026-11-23T15:05:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gl-inet-cloud-compromise-deploys-malware-to-router",
-      "article-c6aa16cc",
-      "c6aa16cc",
-      "gl-inet-cloud-compromise-deploys-malware-to-router-281202",
-      "gl-inet-cloud-compromise-deploys-malware-to-routers-and-kvms"
     ]
   }
 ];
