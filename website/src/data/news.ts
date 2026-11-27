@@ -11,6 +11,106 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "u-s-air-force-cloud-one-platform-breached-by-hacke-3a62d6c0",
+    "title": "U.S. Air Force Cloud One Platform Breached by Hackers, Exposing Classified Data",
+    "summary": "In early 2024, hackers breached the U.S. Air Force’s Cloud One platform, compromising classified military, personnel, and logistics data. The intrusion exploited unpatched vulnerabilities and misconfigurations uncovered during recent upgrade work, allowing unauthorized access to sensitive information. Air Force security teams are conducting a comprehensive audit, applying pending patches, tightening access controls, and monitoring for further anomalous activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
+    "publishedAt": "2026-11-27T15:09:40.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/hackers-break-u-s-air-force-cloud/"
+      }
+    ],
+    "aliases": [
+      "u-s-air-force-cloud-one-platform-breached-by-hacke",
+      "article-3a62d6c0",
+      "3a62d6c0",
+      "u-s-air-force-cloud-one-platform-breached-by-hacke-1b6580",
+      "u-s-air-force-cloud-one-platform-breached-by-hackers-exposin"
+    ]
+  },
+  {
+    "slug": "unmanaged-vms-pose-hidden-security-risks-fe89f965",
+    "title": "Unmanaged VMs Pose Hidden Security Risks",
+    "summary": "Unmanaged virtual machines, often left unpatched with excessive permissions, create security blind spots across IT infrastructures. The flaw arises from incomplete lifecycle management, letting dormant VMs keep open ports and privileged accounts that attackers can exploit for lateral movement. Organizations should adopt centralized management, enforce strict access controls, and automate lifecycle to eliminate orphaned VMs and shrink the attack surface.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms/",
+    "publishedAt": "2026-11-27T15:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "unmanaged-vms-pose-hidden-security-risks",
+      "article-fe89f965",
+      "fe89f965",
+      "unmanaged-vms-pose-hidden-security-risks-64a8bc"
+    ]
+  },
+  {
+    "slug": "drupal-sites-hijacked-via-second-critical-flaw-2e4ce2bb",
+    "title": "Drupal Sites Hijacked via Second Critical Flaw",
+    "summary": "Attackers hijack Drupal sites by exploiting a second critical flaw that remains vulnerable after the first patch. The flaw allows remote code execution via malicious module injection, giving attackers full control of the CMS. Drupal released an emergency patch for the second flaw; administrators must apply it immediately and audit installed modules.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/drupal-sites-are-being-hijacked-and-a-follow-up-flaw-is-already-under-attack",
+    "publishedAt": "2026-11-27T14:53:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-sites-hijacked-via-second-critical-flaw",
+      "article-2e4ce2bb",
+      "2e4ce2bb",
+      "drupal-sites-hijacked-via-second-critical-flaw-58f73f"
+    ]
+  },
+  {
+    "slug": "hackers-raise-freezer-to-100-c-lock-technicians-ou-c1744f43",
+    "title": "Hackers Raise Freezer to 100°C, Lock Technicians Out",
+    "summary": "Hackers set a freezer chamber’s temperature to 100°C at Salamerija Alpija in Slovenia and blocked technician login to the cooling control system. The attackers replaced the login screen with a photo of Italian minister Matteo Salvini, denying legitimate operators and risking food safety. Operators should verify firmware integrity, apply vendor patches, and enforce multi-factor authentication to prevent unauthorized control changes.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/freezer-control-cyberattack/",
+    "publishedAt": "2026-11-27T14:52:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-raise-freezer-to-100-c-lock-technicians-ou",
+      "article-c1744f43",
+      "c1744f43",
+      "hackers-raise-freezer-to-100-c-lock-technicians-ou-13f004",
+      "hackers-raise-freezer-to-100-c-lock-technicians-out"
+    ]
+  },
+  {
+    "slug": "nfs2root-cve-enables-full-control-of-unpatched-ser-4953ca47",
+    "title": "NFS2ROOT CVE Enables Full Control of Unpatched Servers",
+    "summary": "A critical Linux kernel flaw, CVE-2026-99362, lets attackers gain full control of unpatched NFS servers without authentication. The vulnerability affects the NFS server when NFSv4.1 or NFSv4.2 is enabled and the attacker can reach TCP port 2049, enabling remote code execution. Kernel maintainers have released a patch; administrators should update the kernel immediately and disable NFSv4 if possible.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/nfs2root-linux-vulnerability/",
+    "publishedAt": "2026-11-27T14:48:39.000Z",
+    "cves": [
+      "CVE-2026-99362"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "nfs2root-cve-enables-full-control-of-unpatched-ser",
+      "article-4953ca47",
+      "4953ca47",
+      "nfs2root-cve-enables-full-control-of-unpatched-ser-13fceb",
+      "nfs2root-cve-enables-full-control-of-unpatched-servers"
+    ]
+  },
+  {
     "slug": "malwarebytes-offers-50-discount-on-security-subscr-f4ccff5a",
     "title": "Malwarebytes Offers 50% Discount on Security Subscriptions",
     "summary": "Malwarebytes offers a 50% discount on security subscriptions during its 2026 Black Friday and Cyber Monday promotion. The bundle covers antivirus, VPN, identity theft protection, and personal data removal services for individuals, families, and small businesses. Customers should review license terms, confirm activation dates, and monitor renewal schedules to maintain protection after the promotion ends.",
@@ -9506,110 +9606,6 @@ export const news: NewsBrief[] = [
       "9bbf1020",
       "oracle-autonomous-ai-database-vulnerability-enable-77f3bc",
       "oracle-autonomous-ai-database-vulnerability-enables-remote-c"
-    ]
-  },
-  {
-    "slug": "autodesk-autocad-vulnerability-enables-remote-code-91b8a265",
-    "title": "Autodesk AutoCAD Vulnerability Enables Remote Code Execution",
-    "summary": "An integer overflow in Autodesk AutoCAD’s DWG file parser permits remote code execution on affected installations. The flaw, CVE-2026-104868, scores CVSS 7.8 and requires user interaction to open a malicious file, making it a high-severity vulnerability. Autodesk has released a patch; administrators should apply the update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1148/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-104868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "autodesk-autocad-vulnerability-enables-remote-code",
-      "article-91b8a265",
-      "91b8a265",
-      "autodesk-autocad-vulnerability-enables-remote-code-77f3bc",
-      "autodesk-autocad-vulnerability-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "zdi-26-1147-autodesk-autocad-dds-file-parsing-heap-434aaa7d",
-    "title": "ZDI-26-1147: Autodesk AutoCAD DDS File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Autodesk AutoCAD. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-85648.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1147/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-85648"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1147-autodesk-autocad-dds-file-parsing-heap",
-      "article-434aaa7d",
-      "434aaa7d",
-      "zdi-26-1147-autodesk-autocad-dds-file-parsing-heap-77f3bc",
-      "zdi-26-1147-autodesk-autocad-dds-file-parsing-heap-based-buf"
-    ]
-  },
-  {
-    "slug": "oracle-png-parsing-overflow-enables-remote-code-ex-48b4eab1",
-    "title": "Oracle PNG Parsing Overflow Enables Remote Code Execution",
-    "summary": "A PNG file parsing integer overflow in Oracle Outside In Technology lets remote attackers execute arbitrary code, requiring user interaction to trigger. The flaw, CVE-2026-91483, has a CVSS score of 7.8 and is publicly documented, indicating a high-severity remote code execution risk. Oracle released a patch; security teams should apply it immediately or use the documented workaround to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1154/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-91483"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-png-parsing-overflow-enables-remote-code-ex",
-      "article-48b4eab1",
-      "48b4eab1",
-      "oracle-png-parsing-overflow-enables-remote-code-ex-77f3bf",
-      "oracle-png-parsing-overflow-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "oracle-bmp-parsing-out-of-bounds-write-exploitable-d3097312",
-    "title": "Oracle BMP Parsing Out-of-Bounds Write Exploitable",
-    "summary": "A BMP file parsing out-of-bounds write in Oracle Outside In Technology lets remote attackers execute arbitrary code, requiring library interaction. CVE-2026-91459 carries a CVSS score of 7.8, is publicly documented, and poses a high-severity remote code execution risk. Oracle released a patch; teams should apply it promptly or use the documented workaround to stop exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1153/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-91459"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-bmp-parsing-out-of-bounds-write-exploitable",
-      "article-d3097312",
-      "d3097312",
-      "oracle-bmp-parsing-out-of-bounds-write-exploitable-77f3bf"
-    ]
-  },
-  {
-    "slug": "oracle-tiff-parsing-out-of-bounds-write-vulnerabil-f33f3af4",
-    "title": "Oracle TIFF Parsing Out-of-Bounds Write Vulnerability",
-    "summary": "A TIFF file parsing out-of-bounds write in Oracle Outside In Technology allows remote attackers to execute arbitrary code, requiring interaction with the library. CVE-2026-91460 has a CVSS score of 7.8, is publicly documented, and represents a high-severity remote code execution threat. Oracle issued a patch; teams should apply it immediately or use the documented workaround to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1152/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-91460"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-tiff-parsing-out-of-bounds-write-vulnerabil",
-      "article-f33f3af4",
-      "f33f3af4",
-      "oracle-tiff-parsing-out-of-bounds-write-vulnerabil-77f3bf",
-      "oracle-tiff-parsing-out-of-bounds-write-vulnerability"
     ]
   }
 ];
