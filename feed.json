@@ -16,6 +16,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://ubuntu.com/security/notices/USN-9016-2",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9016-2",
+    "title": "Apache HTTP Server Regression Causes DoS and Cookie Leak",
+    "headline": "Apache HTTP Server Regression Causes DoS and Cookie Leak",
+    "summary": "A regression in Apache HTTP Server (CVE-2026-46729) broke cookie handling on Ubuntu LTS, letting attackers trigger DoS or leak session data. The bug stems from memory handling that corrupts cookie state, exposing a DoS vector and a channel for sensitive data, with no active exploitation yet. Ubuntu released USN-9016-2; admins should apply the patch or upgrade to Apache 2.4.60 immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-26T22:34:55.000Z",
+    "ingestedAt": "2026-11-27T03:43:15.480Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-9016-2",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
     "title": "OpenAI Fixes Bug Accelerating GPT-6.2 Usage Limits",
@@ -8318,22 +8334,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:102668",
-    "additionalSources": []
-  },
-  {
-    "id": "https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-stops-clickfix-attacks/",
-    "sourceUrl": "https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-stops-clickfix-attacks/",
-    "title": "Aurora stops ClickFix attacks with intent detection",
-    "headline": "Aurora stops ClickFix attacks with intent detection",
-    "summary": "ClickFix attacks coerce users into executing malicious commands, creating a gray zone that evades traditional security tools. Aurora Adaptive Threat Protection employs intent-based detection to recognize execution patterns, stopping attacks at the moment they occur and mapping activity for visibility. Security teams can integrate Aurora to gain real-time protection against ClickFix and similar command-execution threats.",
-    "category": "GENERAL",
-    "severity": "HIGH",
-    "source": "Arctic Wolf",
-    "publishedAt": "2026-11-23T22:03:44.000Z",
-    "ingestedAt": "2026-11-23T22:43:40.892Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-stops-clickfix-attacks/",
     "additionalSources": []
   }
 ]
