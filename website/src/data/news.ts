@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "sap-reports-token-theft-and-github-code-alteration-075cdf2d",
+    "title": "SAP Reports Token Theft and GitHub Code Alteration",
+    "summary": "SAP detected a security incident where employee authentication tokens were stolen and used to alter GitHub source code. The breach leveraged credential reuse, enabling attackers to impersonate developers, copy code, and modify repositories without triggering audit logs. SAP revoked compromised tokens, notified customers, and is enforcing stricter token rotation and multi-factor authentication to prevent recurrence.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/sap-security-incident/",
+    "publishedAt": "2026-11-27T03:39:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sap-reports-token-theft-and-github-code-alteration",
+      "article-075cdf2d",
+      "075cdf2d",
+      "sap-reports-token-theft-and-github-code-alteration-13ea86"
+    ]
+  },
+  {
+    "slug": "bitcoin-core-flaw-enables-address-to-ip-mapping-de129ac7",
+    "title": "Bitcoin Core Flaw Enables Address-to-IP Mapping",
+    "summary": "Bitcoin Core contains a flaw that lets an observer map a public address to the IP of a tracking node. The weakness uses transaction metadata to perform a low-cost correlation, costing under 35 cents to link wallet addresses to network endpoints. Developers released a patch in the latest Bitcoin Core update; users should upgrade immediately to eliminate the mapping vulnerability.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/bitcoin-privacy-flaw/",
+    "publishedAt": "2026-11-27T03:23:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bitcoin-core-flaw-enables-address-to-ip-mapping",
+      "article-de129ac7",
+      "de129ac7",
+      "bitcoin-core-flaw-enables-address-to-ip-mapping-87e7b8"
+    ]
+  },
+  {
     "slug": "node-js-27-alpha-improves-http-security-deprecates-96fe0b06",
     "title": "Node.js 27 Alpha Improves HTTP Security, Deprecates TLS 1.2",
     "summary": "Node.js 27.0.0-alpha.0.2.0 adds fixes for reused HTTP connections and introduces TLS 1.2 renegotiation controls, targeting the Node.js runtime. The update limits HTTP/2 memory usage and caps HTTPS connection pooling, reducing denial-of-service risk while keeping TLS 1.2 enabled by default. Teams should upgrade to the alpha or wait for the stable 27.0.0 release, monitor advisories, and verify TLS renegotiation settings.",
@@ -9595,42 +9631,6 @@ export const news: NewsBrief[] = [
       "article-f1b40ee0",
       "f1b40ee0",
       "rhsa-2026-102684-critical-php-8-3-security-update-2ee16e"
-    ]
-  },
-  {
-    "slug": "chrome-158-released-for-android-b09b0dcc",
-    "title": "Chrome 158 Released for Android",
-    "summary": "Google has released Chrome 158 (158.0.8127.92) for Android, which will appear on Google Play within days. The update focuses on stability and performance enhancements, while incorporating the same security fixes present in the corresponding desktop releases for Windows, Mac, and Linux. Users should install the new package via Google Play; no additional work-around is required.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0411169060.html",
-    "publishedAt": "2026-11-23T22:09:51.297Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-158-released-for-android",
-      "article-b09b0dcc",
-      "b09b0dcc",
-      "chrome-158-released-for-android-412ac1"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-python-oauthlib-security-update-d0a8cfdf",
-    "title": "Red Hat issues python-oauthlib security update",
-    "summary": "Red Hat released a security update for python-oauthlib on RHEL 9, addressing multiple critical vulnerabilities. The update mitigates flaws that could enable remote code execution or privilege escalation, with CVSS scores linked via CVE references and rated Important by Product Security. Administrators should apply RHSA-2026:102668 immediately to secure affected systems.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102668",
-    "publishedAt": "2026-11-23T22:06:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-python-oauthlib-security-update",
-      "article-d0a8cfdf",
-      "d0a8cfdf",
-      "red-hat-issues-python-oauthlib-security-update-2ee16d"
     ]
   }
 ];

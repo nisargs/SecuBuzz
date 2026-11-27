@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 03:43:20 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 04:43:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SAP Reports Token Theft and GitHub Code Alteration</title>
+      <link>https://secubuzz.com/news/sap-reports-token-theft-and-github-code-alteration-075cdf2d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sap-reports-token-theft-and-github-code-alteration-075cdf2d</guid>
+      <description><![CDATA[SAP detected a security incident where employee authentication tokens were stolen and used to alter GitHub source code. The breach leveraged credential reuse, enabling attackers to impersonate developers, copy code, and modify repositories without triggering audit logs. SAP revoked compromised tokens, notified customers, and is enforcing stricter token rotation and multi-factor authentication to prevent recurrence.]]></description>
+      <pubDate>Fri, 27 Nov 2026 03:39:12 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/sap-security-incident/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Bitcoin Core Flaw Enables Address-to-IP Mapping</title>
+      <link>https://secubuzz.com/news/bitcoin-core-flaw-enables-address-to-ip-mapping-de129ac7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bitcoin-core-flaw-enables-address-to-ip-mapping-de129ac7</guid>
+      <description><![CDATA[Bitcoin Core contains a flaw that lets an observer map a public address to the IP of a tracking node. The weakness uses transaction metadata to perform a low-cost correlation, costing under 35 cents to link wallet addresses to network endpoints. Developers released a patch in the latest Bitcoin Core update; users should upgrade immediately to eliminate the mapping vulnerability.]]></description>
+      <pubDate>Fri, 27 Nov 2026 03:23:06 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/bitcoin-privacy-flaw/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Node.js 27 Alpha Improves HTTP Security, Deprecates TLS 1.2</title>
       <link>https://secubuzz.com/news/node-js-27-alpha-improves-http-security-deprecates-96fe0b06</link>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 26 Nov 2026 08:00:00 GMT</pubDate>
       <source url="https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers">Dark Reading</source>
       <category>Nation State</category>
-    </item>
-    <item>
-      <title>Insider Threat Management Solutions Ranked for 2026</title>
-      <link>https://secubuzz.com/news/insider-threat-management-solutions-ranked-for-202-940b4ae0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/insider-threat-management-solutions-ranked-for-202-940b4ae0</guid>
-      <description><![CDATA[The article ranks insider threat management solutions for 2026, focusing on tools that detect risky behavior by authenticated users. It compares platforms by detection emphasis, including user behavior, data movement, and analytics, while noting benign actions can trigger alerts. Security teams should evaluate these options against insider risk use cases, deployment needs, and alert triage workflows.]]></description>
-      <pubDate>Thu, 26 Nov 2026 07:42:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-insider-threat-management/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>2026 Phishing Simulation Tools Ranked</title>
-      <link>https://secubuzz.com/news/2026-phishing-simulation-tools-ranked-f4785167</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/2026-phishing-simulation-tools-ranked-f4785167</guid>
-      <description><![CDATA[The piece lists the leading phishing simulation tools for 2026, stressing the importance of click-down and report-up metrics. It notes that effective tools combine behavioral scoring, realistic spear-phishing pretexts, and a report-to-triage workflow to improve detection. Organizations should prioritize tools offering per-person risk metrics, leaderboards, and realistic content that adapts to evolving LLM-grade pretexts.]]></description>
-      <pubDate>Thu, 26 Nov 2026 07:40:21 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-phishing-simulation-tools/">Cyber Security News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

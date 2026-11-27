@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://cybersecuritynews.com/sap-security-incident/",
+    "sourceUrl": "https://cybersecuritynews.com/sap-security-incident/",
+    "title": "SAP Reports Token Theft and GitHub Code Alteration",
+    "headline": "SAP Reports Token Theft and GitHub Code Alteration",
+    "summary": "SAP detected a security incident where employee authentication tokens were stolen and used to alter GitHub source code. The breach leveraged credential reuse, enabling attackers to impersonate developers, copy code, and modify repositories without triggering audit logs. SAP revoked compromised tokens, notified customers, and is enforcing stricter token rotation and multi-factor authentication to prevent recurrence.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-27T03:39:12.000Z",
+    "ingestedAt": "2026-11-27T04:43:05.259Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/sap-security-incident/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/bitcoin-privacy-flaw/",
+    "sourceUrl": "https://cybersecuritynews.com/bitcoin-privacy-flaw/",
+    "title": "Bitcoin Core Flaw Enables Address-to-IP Mapping",
+    "headline": "Bitcoin Core Flaw Enables Address-to-IP Mapping",
+    "summary": "Bitcoin Core contains a flaw that lets an observer map a public address to the IP of a tracking node. The weakness uses transaction metadata to perform a low-cost correlation, costing under 35 cents to link wallet addresses to network endpoints. Developers released a patch in the latest Bitcoin Core update; users should upgrade immediately to eliminate the mapping vulnerability.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-27T03:23:06.000Z",
+    "ingestedAt": "2026-11-27T04:43:05.259Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/bitcoin-privacy-flaw/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/node-js-27-alpha/",
     "sourceUrl": "https://cybersecuritynews.com/node-js-27-alpha/",
     "title": "Node.js 27 Alpha Improves HTTP Security, Deprecates TLS 1.2",
@@ -8303,37 +8335,5 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0411169060.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0411169060.html",
-    "title": "Chrome 158 Released for Android",
-    "headline": "Chrome 158 Released for Android",
-    "summary": "Google has released Chrome 158 (158.0.8127.92) for Android, which will appear on Google Play within days. The update focuses on stability and performance enhancements, while incorporating the same security fixes present in the corresponding desktop releases for Windows, Mac, and Linux. Users should install the new package via Google Play; no additional work-around is required.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-11-23T22:09:51.297Z",
-    "ingestedAt": "2026-11-24T00:43:49.459Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0411169060.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:102668",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102668",
-    "title": "Red Hat issues python-oauthlib security update",
-    "headline": "Red Hat issues python-oauthlib security update",
-    "summary": "Red Hat released a security update for python-oauthlib on RHEL 9, addressing multiple critical vulnerabilities. The update mitigates flaws that could enable remote code execution or privilege escalation, with CVSS scores linked via CVE references and rated Important by Product Security. Administrators should apply RHSA-2026:102668 immediately to secure affected systems.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-23T22:06:31.000Z",
-    "ingestedAt": "2026-11-23T22:43:40.892Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:102668",
-    "additionalSources": []
   }
 ]
