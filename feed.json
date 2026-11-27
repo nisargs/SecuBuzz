@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:104048",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:104048",
+    "title": "Red Hat Issues Critical MySQL 8.4 Security Update",
+    "headline": "Red Hat Issues Critical MySQL 8.4 Security Update",
+    "summary": "Red Hat released a critical security update for MySQL 8.4 on RHEL 10, fixing multiple vulnerabilities that could enable remote code execution. Each flaw carries a CVSS base score listed in the references, indicating high severity, though specific CVE identifiers are not disclosed. Security teams should apply the patch immediately; Red Hat provides detailed guidance in the advisory.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-27T12:52:32.000Z",
+    "ingestedAt": "2026-11-27T13:02:39.457Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:104048",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.malwarebytes.com/blog/news/2026/11/malware-steals-gmail-messages-using-a-fake-google-sheets-extension",
     "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/malware-steals-gmail-messages-using-a-fake-google-sheets-extension",
     "title": "Fake Google Sheets Extension Steals Gmail After Password Reset",
@@ -93,6 +109,38 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/27/artex-ai-pentest-framework-china-north-korea-state-hackers/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/27/artex-ai-pentest-framework-china-north-korea-state-hackers/",
+    "title": "State Hackers Adopt ARTEX AI Penetration Tool",
+    "headline": "State Hackers Adopt ARTEX AI Penetration Tool",
+    "summary": "Chinese and North Korean state-sponsored groups have begun deploying the ARTEX AI-driven penetration framework in attacks, per Microsoft Threat Intelligence. ARTEX, released on GitHub by user Autumn-27 in July 2026, autonomously plans and executes attack steps based on operator-defined goals, leveraging large language models. Security teams should monitor for ARTEX-based activity and harden controls against automated AI-driven exploitation.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-27T11:06:57.000Z",
+    "ingestedAt": "2026-11-27T13:02:39.457Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/27/artex-ai-pentest-framework-china-north-korea-state-hackers/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/",
+    "sourceUrl": "https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/",
+    "title": "USDA, Radware Breaches Highlight Rising Cyber Threats",
+    "headline": "USDA, Radware Breaches Highlight Rising Cyber Threats",
+    "summary": "The advisory cites a USDA payment systems breach, a Radware hack, and claims RansomwareHelp profited from ransom payments. The USDA breach exposed payment data, while Radware’s compromise could affect its security services, highlighting the need for strong incident response. Teams should review incident reports, patch affected systems, and enhance monitoring to detect similar breaches.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-11-27T11:00:00.000Z",
+    "ingestedAt": "2026-11-27T13:02:39.457Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/",
     "additionalSources": []
   },
   {
@@ -209,6 +257,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/black-friday-or-black-fraud-day/",
+    "sourceUrl": "https://cybersecuritynews.com/black-friday-or-black-fraud-day/",
+    "title": "Black Friday Brings AI-Driven Phishing and Fraud Traps",
+    "headline": "Black Friday Brings AI-Driven Phishing and Fraud Traps",
+    "summary": "Black Friday 2026 offers massive discounts, but cybercriminals are exploiting the event with AI-driven phishing, brand impersonation, and malicious advertising. Attackers combine social engineering, sophisticated phishing techniques, and AI to craft convincing scams targeting consumers across e-commerce platforms. Security teams should educate users, verify vendor authenticity, and employ multi-factor authentication to mitigate fraud risks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-27T09:28:51.000Z",
+    "ingestedAt": "2026-11-27T13:02:39.457Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/black-friday-or-black-fraud-day/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/telegram-job-posts/",
     "sourceUrl": "https://cybersecuritynews.com/telegram-job-posts/",
     "title": "Telegram Job Ads Linked to Spy Recruitment Campaigns",
@@ -238,6 +302,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62840",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/tor-browser-flaw/",
+    "sourceUrl": "https://cybersecuritynews.com/tor-browser-flaw/",
+    "title": "Tor Browser Flaw Exposes Real IPs With One Click",
+    "headline": "Tor Browser Flaw Exposes Real IPs With One Click",
+    "summary": "A flaw in Tor Browser 15.0.22 lets a malicious site reveal a user’s real IP with one click. The vulnerability exploits a default configuration that fails to isolate the browser’s network context, allowing a DNS request to leak the IP. The Tor Project released version 15.0.23 to disable the leak; users should upgrade immediately.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-27T09:09:49.000Z",
+    "ingestedAt": "2026-11-27T13:02:46.544Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/tor-browser-flaw/",
     "additionalSources": []
   },
   {
@@ -8243,94 +8323,5 @@
     ],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1064/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1064/",
-    "title": "ZDI-26-1064: (0Day) DeepSpeed build_engine_from_ds_checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "headline": "ZDI-26-1064: (0Day) DeepSpeed build_engine_from_ds_checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of DeepSpeed. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-136438.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "ingestedAt": "2026-11-24T19:43:10.792Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-136438"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1063/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1063/",
-    "title": "ZDI-26-1063: (0Day) DeepSpeed parse_optim_states Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "headline": "ZDI-26-1063: (0Day) DeepSpeed parse_optim_states Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of DeepSpeed. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-136437.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "ingestedAt": "2026-11-24T19:43:10.792Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-136437"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1062/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1062/",
-    "title": "ZDI-26-1062: (0Day) DeepSpeed torch_checkpoint_engine Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "headline": "ZDI-26-1062: (0Day) DeepSpeed torch_checkpoint_engine Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of DeepSpeed. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-136436.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "ingestedAt": "2026-11-24T19:44:43.788Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-136436"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1069/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1069/",
-    "title": "BusyBox ftpd Directory Traversal Allows Arbitrary File Access",
-    "headline": "BusyBox ftpd Directory Traversal Allows Arbitrary File Access",
-    "summary": "A directory traversal flaw in BusyBox ftpd lets remote attackers create, delete, or read arbitrary files on affected installations without authentication. The flaw stems from improper path validation, yielding a CVSS score of 6.5 and enabling sensitive data disclosure or file manipulation. No vendor patch exists; isolate affected systems and apply custom workarounds or upgrade to newer BusyBox releases.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "ingestedAt": "2026-11-24T18:43:19.662Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1069/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1068/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1068/",
-    "title": "Firebird SQL SRP Auth Bypass Exposes Unauthenticated Access",
-    "headline": "Firebird SQL SRP Auth Bypass Exposes Unauthenticated Access",
-    "summary": "A zero-day authentication bypass in Firebird SQL SRP permits remote attackers to gain full database access without credentials. The flaw exploits a flaw in the SRP protocol handling, rated CVSS 9.1, enabling unrestricted data read, write, and schema modification. Firebird has released patch 6.0.0.10; administrators should apply the update immediately or isolate vulnerable instances.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "ingestedAt": "2026-11-24T18:43:19.662Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1068/",
-    "additionalSources": []
   }
 ]
