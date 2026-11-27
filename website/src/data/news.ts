@@ -11,6 +11,67 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "pcloud-password-manager-breach-reveals-unauthorize-719cf7cb",
+    "title": "pCloud Password Manager Breach Reveals Unauthorized Device Access",
+    "summary": "An unauthorized intrusion into pCloud Pass exposed user accounts, with attackers logging in from unknown devices despite two-factor authentication. The breach indicates a flaw in the authentication flow that allowed credential reuse or session hijacking. pCloud has notified affected users, reset compromised credentials, and is enhancing its security controls to prevent further unauthorized access.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
+    "publishedAt": "2026-11-27T19:26:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pcloud-password-manager-breach-reveals-unauthorize",
+      "article-719cf7cb",
+      "719cf7cb",
+      "pcloud-password-manager-breach-reveals-unauthorize-38434c",
+      "pcloud-password-manager-breach-reveals-unauthorized-device-a"
+    ]
+  },
+  {
+    "slug": "boston-scientific-breach-exposes-personal-medical-76c8944f",
+    "title": "Boston Scientific Breach Exposes Personal Medical Data",
+    "summary": "A cyberattack compromised Boston Scientific’s systems, exposing personal and medical data of customers. The breach involved unauthorized access to protected health information, though the specific vulnerability remains undisclosed. Boston Scientific has notified affected individuals, is investigating the incident, and is strengthening defenses, including patch management and monitoring, to mitigate future risk.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/",
+    "publishedAt": "2026-11-27T18:57:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "boston-scientific-breach-exposes-personal-medical",
+      "article-76c8944f",
+      "76c8944f",
+      "boston-scientific-breach-exposes-personal-medical-60cb15",
+      "boston-scientific-breach-exposes-personal-medical-data"
+    ]
+  },
+  {
+    "slug": "chromeos-lts-update-addresses-critical-vulnerabili-ff14cb1a",
+    "title": "ChromeOS LTS Update Addresses Critical Vulnerabilities",
+    "summary": "Google Chrome’s LTS-150 update for ChromeOS addresses multiple critical vulnerabilities affecting device authentication and media handling. The release patches CVE-2026-131023, a race condition in Core, CVE-2026-126921, a use-after-free in Accessibility, and CVE-2026-126892, an out-of-bounds read in Media, among other high-severity flaws. ChromeOS users should install the LTS-150 update immediately to eliminate the vulnerabilities and ensure device integrity.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/long-term-support-channel-update-for_01009121915.html",
+    "publishedAt": "2026-11-27T18:52:47.009Z",
+    "cves": [
+      "CVE-2026-131023",
+      "CVE-2026-126921",
+      "CVE-2026-126892"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromeos-lts-update-addresses-critical-vulnerabili",
+      "article-ff14cb1a",
+      "ff14cb1a",
+      "chromeos-lts-update-addresses-critical-vulnerabili-6b6d67",
+      "chromeos-lts-update-addresses-critical-vulnerabilities"
+    ]
+  },
+  {
     "slug": "red-hat-releases-kernel-update-for-rhel-9-d65db2da",
     "title": "Red Hat Releases Kernel Update for RHEL 9",
     "summary": "Red Hat released a kernel update for RHEL 9, fixing several security flaws that could enable privilege escalation or denial of service. The patch addresses multiple vulnerabilities, each with a CVSS base score in the CVE references, though no active exploitation has been reported. Apply the RHSA-2026:104088 package immediately to mitigate potential kernel exploitation.",
@@ -9537,68 +9598,6 @@ export const news: NewsBrief[] = [
       "article-fe702911",
       "fe702911",
       "autocad-dwg-data-link-rce-vulnerability-77f3b8"
-    ]
-  },
-  {
-    "slug": "autocad-rce-via-dxf-type-confusion-72d174e3",
-    "title": "AutoCAD RCE via DXF Type Confusion",
-    "summary": "A type-confusion flaw in AutoCAD’s DXF parser lets remote attackers run arbitrary code when a user opens a crafted file. The vulnerability, identified as CVE-2026-18826, carries a CVSS score of 7.8 and requires user interaction for exploitation. Autodesk recommends applying the latest patch or updating to the newest AutoCAD release to mitigate the risk, with no additional workarounds.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1132/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-18826"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "autocad-rce-via-dxf-type-confusion",
-      "article-72d174e3",
-      "72d174e3",
-      "autocad-rce-via-dxf-type-confusion-77f3b8"
-    ]
-  },
-  {
-    "slug": "autodesk-autocad-dwg-buffer-overflow-enables-remot-dd6a7450",
-    "title": "Autodesk AutoCAD DWG Buffer Overflow Enables Remote RCE",
-    "summary": "A heap-based buffer overflow in Autodesk AutoCAD’s DWG parser allows remote code execution when a user opens a crafted file or visits a malicious page. CVE-2026-85647 carries a CVSS 7.8 score and requires user interaction to trigger, enabling attackers to run arbitrary code with AutoCAD privileges. Apply Autodesk’s patch immediately or restrict DWG file handling as a temporary workaround.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1146/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-85647"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "autodesk-autocad-dwg-buffer-overflow-enables-remot",
-      "article-dd6a7450",
-      "dd6a7450",
-      "autodesk-autocad-dwg-buffer-overflow-enables-remot-77f3bc",
-      "autodesk-autocad-dwg-buffer-overflow-enables-remote-rce"
-    ]
-  },
-  {
-    "slug": "autodesk-autocad-dwf-buffer-overflow-enables-remot-fe326f1a",
-    "title": "Autodesk AutoCAD DWF Buffer Overflow Enables Remote RCE",
-    "summary": "A heap-based buffer overflow in Autodesk AutoCAD’s DWF parser permits remote code execution when a user opens a crafted DWF file or visits a malicious page. CVE-2026-85646 has a CVSS 7.8 rating and requires user interaction to exploit, allowing attackers to run arbitrary code with AutoCAD privileges. Install Autodesk’s patch immediately or limit DWF file handling as a temporary mitigation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1145/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-85646"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "autodesk-autocad-dwf-buffer-overflow-enables-remot",
-      "article-fe326f1a",
-      "fe326f1a",
-      "autodesk-autocad-dwf-buffer-overflow-enables-remot-77f3bc",
-      "autodesk-autocad-dwf-buffer-overflow-enables-remote-rce"
     ]
   }
 ];
