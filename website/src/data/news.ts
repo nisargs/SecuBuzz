@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "node-js-27-alpha-improves-http-security-deprecates-96fe0b06",
+    "title": "Node.js 27 Alpha Improves HTTP Security, Deprecates TLS 1.2",
+    "summary": "Node.js 27.0.0-alpha.0.2.0 adds fixes for reused HTTP connections and introduces TLS 1.2 renegotiation controls, targeting the Node.js runtime. The update limits HTTP/2 memory usage and caps HTTPS connection pooling, reducing denial-of-service risk while keeping TLS 1.2 enabled by default. Teams should upgrade to the alpha or wait for the stable 27.0.0 release, monitor advisories, and verify TLS renegotiation settings.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/node-js-27-alpha/",
+    "publishedAt": "2026-11-27T01:57:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "node-js-27-alpha-improves-http-security-deprecates",
+      "article-96fe0b06",
+      "96fe0b06",
+      "node-js-27-alpha-improves-http-security-deprecates-4bc16c",
+      "node-js-27-alpha-improves-http-security-deprecates-tls-1-2"
+    ]
+  },
+  {
     "slug": "openai-fixes-bug-accelerating-gpt-6-2-usage-limits-bcca6676",
     "title": "OpenAI Fixes Bug Accelerating GPT-6.2 Usage Limits",
     "summary": "OpenAI announced that a bug fix in GPT-6.2 Astra will cause users to hit usage limits 40% faster. The fix corrected an internal calculation error that previously undercounted usage, thereby accelerating quota depletion without affecting model performance. Users should monitor usage metrics closely, adjust request pacing, and consider upgrading to higher quota plans to mitigate the faster limit hit.",
@@ -9610,25 +9629,6 @@ export const news: NewsBrief[] = [
       "c9f21da8",
       "aurora-stops-clickfix-attacks-with-intent-detectio-41f70a",
       "aurora-stops-clickfix-attacks-with-intent-detection"
-    ]
-  },
-  {
-    "slug": "ot-gateways-reveal-authentication-status-many-unpr-65970c74",
-    "title": "OT Gateways Reveal Authentication Status, Many Unprotected",
-    "summary": "Industrial serial gateways reveal whether they are authenticated, exposing a flaw in critical OT access devices. The default configuration broadcasts authentication status, allowing attackers to identify unprotected devices; no exploit is needed, but the disclosure raises credential theft risk. Disable status broadcasts, enforce authentication, and apply vendor firmware updates that conceal authentication state.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
-    "publishedAt": "2026-11-23T22:02:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ot-gateways-reveal-authentication-status-many-unpr",
-      "article-65970c74",
-      "65970c74",
-      "ot-gateways-reveal-authentication-status-many-unpr-209193",
-      "ot-gateways-reveal-authentication-status-many-unprotected"
     ]
   }
 ];

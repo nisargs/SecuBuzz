@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/node-js-27-alpha/",
+    "sourceUrl": "https://cybersecuritynews.com/node-js-27-alpha/",
+    "title": "Node.js 27 Alpha Improves HTTP Security, Deprecates TLS 1.2",
+    "headline": "Node.js 27 Alpha Improves HTTP Security, Deprecates TLS 1.2",
+    "summary": "Node.js 27.0.0-alpha.0.2.0 adds fixes for reused HTTP connections and introduces TLS 1.2 renegotiation controls, targeting the Node.js runtime. The update limits HTTP/2 memory usage and caps HTTPS connection pooling, reducing denial-of-service risk while keeping TLS 1.2 enabled by default. Teams should upgrade to the alpha or wait for the stable 27.0.0 release, monitor advisories, and verify TLS renegotiation settings.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-27T01:57:14.000Z",
+    "ingestedAt": "2026-11-27T02:43:13.257Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/node-js-27-alpha/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
     "title": "OpenAI Fixes Bug Accelerating GPT-6.2 Usage Limits",
@@ -8318,22 +8334,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-stops-clickfix-attacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
-    "sourceUrl": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
-    "title": "OT Gateways Reveal Authentication Status, Many Unprotected",
-    "headline": "OT Gateways Reveal Authentication Status, Many Unprotected",
-    "summary": "Industrial serial gateways reveal whether they are authenticated, exposing a flaw in critical OT access devices. The default configuration broadcasts authentication status, allowing attackers to identify unprotected devices; no exploit is needed, but the disclosure raises credential theft risk. Disable status broadcasts, enforce authentication, and apply vendor firmware updates that conceal authentication state.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-11-23T22:02:46.000Z",
-    "ingestedAt": "2026-11-23T22:43:50.599Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
     "additionalSources": []
   }
 ]

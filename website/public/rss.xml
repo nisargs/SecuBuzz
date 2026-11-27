@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 01:54:23 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 02:43:17 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Node.js 27 Alpha Improves HTTP Security, Deprecates TLS 1.2</title>
+      <link>https://secubuzz.com/news/node-js-27-alpha-improves-http-security-deprecates-96fe0b06</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/node-js-27-alpha-improves-http-security-deprecates-96fe0b06</guid>
+      <description><![CDATA[Node.js 27.0.0-alpha.0.2.0 adds fixes for reused HTTP connections and introduces TLS 1.2 renegotiation controls, targeting the Node.js runtime. The update limits HTTP/2 memory usage and caps HTTPS connection pooling, reducing denial-of-service risk while keeping TLS 1.2 enabled by default. Teams should upgrade to the alpha or wait for the stable 27.0.0 release, monitor advisories, and verify TLS renegotiation settings.]]></description>
+      <pubDate>Fri, 27 Nov 2026 01:57:14 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/node-js-27-alpha/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>OpenAI Fixes Bug Accelerating GPT-6.2 Usage Limits</title>
       <link>https://secubuzz.com/news/openai-fixes-bug-accelerating-gpt-6-2-usage-limits-bcca6676</link>
@@ -447,15 +456,6 @@
       <pubDate>Thu, 26 Nov 2026 07:39:00 GMT</pubDate>
       <source url="https://cybersecuritynews.com/artex-ai-agents-2/">Cyber Security News</source>
       <category>Nation State</category>
-    </item>
-    <item>
-      <title>2026 Security Awareness Training Platforms Ranked</title>
-      <link>https://secubuzz.com/news/2026-security-awareness-training-platforms-ranked-11305b74</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/2026-security-awareness-training-platforms-ranked-11305b74</guid>
-      <description><![CDATA[The article ranks top security awareness training platforms for 2026, focusing on engagement metrics like click-through and reporting rates. It highlights realistic simulations, per-person risk scoring, and content that avoids user fatigue to drive behavioral change. Readers should evaluate platforms offering adaptive content, robust analytics, and proven improvements in click-through and reporting.]]></description>
-      <pubDate>Thu, 26 Nov 2026 07:38:28 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-security-awareness-training/">Cyber Security News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
