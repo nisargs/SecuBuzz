@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 13:45:27 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 14:44:29 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Malwarebytes Offers 50% Discount on Security Subscriptions</title>
+      <link>https://secubuzz.com/news/malwarebytes-offers-50-discount-on-security-subscr-f4ccff5a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malwarebytes-offers-50-discount-on-security-subscr-f4ccff5a</guid>
+      <description><![CDATA[Malwarebytes offers a 50% discount on security subscriptions during its 2026 Black Friday and Cyber Monday promotion. The bundle covers antivirus, VPN, identity theft protection, and personal data removal services for individuals, families, and small businesses. Customers should review license terms, confirm activation dates, and monitor renewal schedules to maintain protection after the promotion ends.]]></description>
+      <pubDate>Fri, 27 Nov 2026 14:22:06 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/malwarebytes-antivirus-get-50-percent-off-during-black-friday-2026/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Japan Education Ministry Exposes Procurement System Breach</title>
+      <link>https://secubuzz.com/news/japan-education-ministry-exposes-procurement-syste-98eb9007</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/japan-education-ministry-exposes-procurement-syste-98eb9007</guid>
+      <description><![CDATA[Hackers breached Japan’s education ministry procurement system, accessing business records and email addresses. The breach exploited an unspecified vulnerability in the ministry’s procurement platform, exposing sensitive corporate data and potentially enabling credential compromise. The ministry has disclosed the incident and is investigating; affected parties should monitor for phishing and consider credential rotation.]]></description>
+      <pubDate>Fri, 27 Nov 2026 14:15:00 GMT</pubDate>
+      <source url="https://therecord.media/japan-education-ministry-cyberattack">The Record</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Mitel Advises Update for OpenScape 4000 Vulnerability</title>
       <link>https://secubuzz.com/news/mitel-advises-update-for-openscape-4000-vulnerabil-d2404ffb</link>
@@ -71,10 +89,19 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Fake Google Sheets Extension Steals Gmail After Password Reset</title>
-      <link>https://secubuzz.com/news/fake-google-sheets-extension-steals-gmail-after-pa-d58a3a21</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-google-sheets-extension-steals-gmail-after-pa-d58a3a21</guid>
-      <description><![CDATA[Remus’s counterfeit Google Sheets Chrome extension can read Gmail messages after a user signs back in following a password change. The malicious extension exploits the browser’s permission model, accessing Gmail data without user consent once the account is re-authenticated. Users should remove the suspicious extension, revoke its permissions, and monitor account activity for unauthorized data access to mitigate the threat.]]></description>
+      <title>SYS010 Malware Steals Meta Business Accounts via Fake Ads</title>
+      <link>https://secubuzz.com/news/sys010-malware-steals-meta-business-accounts-via-f-7f849f4b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sys010-malware-steals-meta-business-accounts-via-f-7f849f4b</guid>
+      <description><![CDATA[Fake Facebook ads distribute SYS010, an information stealer that targets Meta Business accounts and Gmail. The malware installs a wallpaper app that runs background code, forces browsers to install cookie-stealing extensions, and harvests session cookies and advertising data. Users should avoid suspicious ads, uninstall the wallpaper app, and update browsers to block malicious extensions.]]></description>
+      <pubDate>Fri, 27 Nov 2026 12:29:38 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/new-sys010-malware/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Remus Stealer Chrome Extension Compromises Gmail Data</title>
+      <link>https://secubuzz.com/news/remus-stealer-chrome-extension-compromises-gmail-d-a8cd6948</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/remus-stealer-chrome-extension-compromises-gmail-d-a8cd6948</guid>
+      <description><![CDATA[Remus Stealer’s malicious Chrome extension infiltrated Gmail accounts, reading unread messages without requiring password theft. The extension exploits the browser’s permission model, accessing Gmail data after re-authentication or during an open session, enabling covert data exfiltration. Users should immediately remove the extension, revoke its permissions, and monitor account activity for unauthorized access to mitigate the threat.]]></description>
       <pubDate>Fri, 27 Nov 2026 12:09:14 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/11/malware-steals-gmail-messages-using-a-fake-google-sheets-extension">Malwarebytes Labs</source>
       <category>Breach</category>
@@ -429,33 +456,6 @@
       <pubDate>Fri, 27 Nov 2026 03:23:06 GMT</pubDate>
       <source url="https://cybersecuritynews.com/bitcoin-privacy-flaw/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Node.js 27 Alpha Improves HTTP Security, Deprecates TLS 1.2</title>
-      <link>https://secubuzz.com/news/node-js-27-alpha-improves-http-security-deprecates-96fe0b06</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/node-js-27-alpha-improves-http-security-deprecates-96fe0b06</guid>
-      <description><![CDATA[Node.js 27.0.0-alpha.0.2.0 adds fixes for reused HTTP connections and introduces TLS 1.2 renegotiation controls, targeting the Node.js runtime. The update limits HTTP/2 memory usage and caps HTTPS connection pooling, reducing denial-of-service risk while keeping TLS 1.2 enabled by default. Teams should upgrade to the alpha or wait for the stable 27.0.0 release, monitor advisories, and verify TLS renegotiation settings.]]></description>
-      <pubDate>Fri, 27 Nov 2026 01:57:14 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/node-js-27-alpha/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AFP Platform Offline After Cyberattack</title>
-      <link>https://secubuzz.com/news/afp-platform-offline-after-cyberattack-59655a06</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/afp-platform-offline-after-cyberattack-59655a06</guid>
-      <description><![CDATA[Agence France-Presse’s primary global news distribution platform was taken offline following a cyberattack. The attack disrupted content delivery to media partners worldwide, though no data exfiltration or credential compromise was reported. AFP is restoring services and conducting forensic analysis; organizations should monitor for related indicators and ensure backup distribution channels.]]></description>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://therecord.media/france-afp-hit-by-cyberattack">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>UK Dept. Work and Pensions Shuts Services After Incident</title>
-      <link>https://secubuzz.com/news/uk-dept-work-and-pensions-shuts-services-after-inc-2c246a42</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uk-dept-work-and-pensions-shuts-services-after-inc-2c246a42</guid>
-      <description><![CDATA[A cyber incident was reported by the UK Department for Work and Pensions, leading to the shutdown of multiple online services as a precautionary measure. The root cause remains undisclosed, but the disruption indicates potential unauthorized access or system compromise. The department has not released a patch, but recommends monitoring for further updates and applying standard security hardening practices.]]></description>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://therecord.media/uk-department-work-pensions-cyber-incident">The Record</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

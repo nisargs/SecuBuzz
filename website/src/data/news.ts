@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "malwarebytes-offers-50-discount-on-security-subscr-f4ccff5a",
+    "title": "Malwarebytes Offers 50% Discount on Security Subscriptions",
+    "summary": "Malwarebytes offers a 50% discount on security subscriptions during its 2026 Black Friday and Cyber Monday promotion. The bundle covers antivirus, VPN, identity theft protection, and personal data removal services for individuals, families, and small businesses. Customers should review license terms, confirm activation dates, and monitor renewal schedules to maintain protection after the promotion ends.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/malwarebytes-antivirus-get-50-percent-off-during-black-friday-2026/",
+    "publishedAt": "2026-11-27T14:22:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malwarebytes-offers-50-discount-on-security-subscr",
+      "article-f4ccff5a",
+      "f4ccff5a",
+      "malwarebytes-offers-50-discount-on-security-subscr-17788e",
+      "malwarebytes-offers-50-discount-on-security-subscriptions"
+    ]
+  },
+  {
+    "slug": "japan-education-ministry-exposes-procurement-syste-98eb9007",
+    "title": "Japan Education Ministry Exposes Procurement System Breach",
+    "summary": "Hackers breached Japan’s education ministry procurement system, accessing business records and email addresses. The breach exploited an unspecified vulnerability in the ministry’s procurement platform, exposing sensitive corporate data and potentially enabling credential compromise. The ministry has disclosed the incident and is investigating; affected parties should monitor for phishing and consider credential rotation.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/japan-education-ministry-cyberattack",
+    "publishedAt": "2026-11-27T14:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "japan-education-ministry-exposes-procurement-syste",
+      "article-98eb9007",
+      "98eb9007",
+      "japan-education-ministry-exposes-procurement-syste-7aea12",
+      "japan-education-ministry-exposes-procurement-system-breach"
+    ]
+  },
+  {
     "slug": "mitel-advises-update-for-openscape-4000-vulnerabil-d2404ffb",
     "title": "Mitel Advises Update for OpenScape 4000 Vulnerability",
     "summary": "Mitel issued an advisory for a vulnerability affecting OpenScape 4000 and its Manager before version 11 R2.14. The flaw allows unauthorized access to configuration data, potentially enabling attackers to modify system settings; no public exploit is reported. Administrators should review the Mitel links and apply the available patch to secure the affected components.",
@@ -140,22 +178,46 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fake-google-sheets-extension-steals-gmail-after-pa-d58a3a21",
-    "title": "Fake Google Sheets Extension Steals Gmail After Password Reset",
-    "summary": "Remus’s counterfeit Google Sheets Chrome extension can read Gmail messages after a user signs back in following a password change. The malicious extension exploits the browser’s permission model, accessing Gmail data without user consent once the account is re-authenticated. Users should remove the suspicious extension, revoke its permissions, and monitor account activity for unauthorized data access to mitigate the threat.",
+    "slug": "sys010-malware-steals-meta-business-accounts-via-f-7f849f4b",
+    "title": "SYS010 Malware Steals Meta Business Accounts via Fake Ads",
+    "summary": "Fake Facebook ads distribute SYS010, an information stealer that targets Meta Business accounts and Gmail. The malware installs a wallpaper app that runs background code, forces browsers to install cookie-stealing extensions, and harvests session cookies and advertising data. Users should avoid suspicious ads, uninstall the wallpaper app, and update browsers to block malicious extensions.",
     "category": "Breach",
     "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/new-sys010-malware/",
+    "publishedAt": "2026-11-27T12:29:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sys010-malware-steals-meta-business-accounts-via-f",
+      "article-7f849f4b",
+      "7f849f4b",
+      "sys010-malware-steals-meta-business-accounts-via-f-354284",
+      "sys010-malware-steals-meta-business-accounts-via-fake-ads"
+    ]
+  },
+  {
+    "slug": "remus-stealer-chrome-extension-compromises-gmail-d-a8cd6948",
+    "title": "Remus Stealer Chrome Extension Compromises Gmail Data",
+    "summary": "Remus Stealer’s malicious Chrome extension infiltrated Gmail accounts, reading unread messages without requiring password theft. The extension exploits the browser’s permission model, accessing Gmail data after re-authentication or during an open session, enabling covert data exfiltration. Users should immediately remove the extension, revoke its permissions, and monitor account activity for unauthorized access to mitigate the threat.",
+    "category": "Breach",
+    "severity": "HIGH",
     "source": "Malwarebytes Labs",
     "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/malware-steals-gmail-messages-using-a-fake-google-sheets-extension",
     "publishedAt": "2026-11-27T12:09:14.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/hackers-use-hidden-chrome-extension/"
+      }
+    ],
     "aliases": [
-      "fake-google-sheets-extension-steals-gmail-after-pa",
-      "article-d58a3a21",
-      "d58a3a21",
-      "fake-google-sheets-extension-steals-gmail-after-pa-458a5b",
-      "fake-google-sheets-extension-steals-gmail-after-password-res"
+      "remus-stealer-chrome-extension-compromises-gmail-d",
+      "article-a8cd6948",
+      "a8cd6948",
+      "remus-stealer-chrome-extension-compromises-gmail-d-458a5b",
+      "remus-stealer-chrome-extension-compromises-gmail-data"
     ]
   },
   {
@@ -4813,22 +4875,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "com-affiliated-hackers-hijack-cloud-accounts-via-v-48d50598",
-    "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
-    "summary": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
+    "slug": "com-affiliated-threat-actors-hijack-cloud-accounts-62ac9cf0",
+    "title": "Com-Affiliated Threat Actors Hijack Cloud Accounts via Vishing, Stealing Data and Demanding Ransom",
+    "summary": "In August 2026, Com-affiliated threat actors used vishing to compromise cloud accounts, stealing sensitive data and demanding ransom. The attacks exploited weak MFA and social engineering, allowing attackers to bypass authentication and exfiltrate credentials and confidential files. Security teams responded by enforcing MFA, monitoring for vishing, and tightening cloud access controls to prevent future breaches.",
+    "category": "Breach",
+    "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
     "publishedAt": "2026-11-25T06:37:06.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SentinelOne",
+        "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-48-8"
+      }
+    ],
     "aliases": [
-      "com-affiliated-hackers-hijack-cloud-accounts-via-v",
-      "article-48d50598",
-      "48d50598",
-      "com-affiliated-hackers-hijack-cloud-accounts-via-v-5e8142",
-      "com-affiliated-hackers-hijack-cloud-accounts-via-vishing-for"
+      "com-affiliated-threat-actors-hijack-cloud-accounts",
+      "article-62ac9cf0",
+      "62ac9cf0",
+      "com-affiliated-threat-actors-hijack-cloud-accounts-5e8142",
+      "com-affiliated-threat-actors-hijack-cloud-accounts-via-vishi"
     ]
   },
   {
@@ -9543,69 +9610,6 @@ export const news: NewsBrief[] = [
       "f33f3af4",
       "oracle-tiff-parsing-out-of-bounds-write-vulnerabil-77f3bf",
       "oracle-tiff-parsing-out-of-bounds-write-vulnerability"
-    ]
-  },
-  {
-    "slug": "zdi-26-1151-oracle-outside-in-technology-bmp-file-2c0a53e4",
-    "title": "ZDI-26-1151: Oracle Outside In Technology BMP File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Oracle Outside In Technology. Interaction with this library is required to exploit this vulnerability but attack vectors may vary depending on the implementation. The following CVEs are assigned: CVE-2026-91457.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1151/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-91457"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1151-oracle-outside-in-technology-bmp-file",
-      "article-2c0a53e4",
-      "2c0a53e4",
-      "zdi-26-1151-oracle-outside-in-technology-bmp-file-77f3bf",
-      "zdi-26-1151-oracle-outside-in-technology-bmp-file-parsing-ou"
-    ]
-  },
-  {
-    "slug": "x-org-server-privilege-escalation-via-libfontenc-p-772bc9e7",
-    "title": "X.Org Server Privilege Escalation via libfontenc Parsing",
-    "summary": "A local privilege escalation flaw in X.Org Server’s libfontenc encoding file parser allows attackers with code execution to gain elevated rights. The vulnerability, identified as CVE-2026-109908, scores CVSS 7.8 and requires local code execution to exploit, enabling unauthorized privilege escalation. No vendor patch has been released yet; security teams should monitor for updates and apply mitigations when available.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1158/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-109908"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "x-org-server-privilege-escalation-via-libfontenc-p",
-      "article-772bc9e7",
-      "772bc9e7",
-      "x-org-server-privilege-escalation-via-libfontenc-p-77f3c0",
-      "x-org-server-privilege-escalation-via-libfontenc-parsing"
-    ]
-  },
-  {
-    "slug": "asus-control-center-express-user-creation-privileg-c8048976",
-    "title": "ASUS Control Center Express User Creation Privilege Escalation",
-    "summary": "A remote privilege escalation flaw in ASUS Control Center Express’s user-creation module allows attackers to gain elevated rights when authenticated. The vulnerability, identified as CVE-2026-114205, scores CVSS 9.9 and requires authentication, enabling unauthorized privilege escalation. No vendor patch has been released yet; security teams should monitor for updates and apply mitigations when available.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1157/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114205"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "asus-control-center-express-user-creation-privileg",
-      "article-c8048976",
-      "c8048976",
-      "asus-control-center-express-user-creation-privileg-77f3c0",
-      "asus-control-center-express-user-creation-privilege-escalati"
     ]
   }
 ];
