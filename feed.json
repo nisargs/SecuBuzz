@@ -1,5 +1,38 @@
 [
   {
+    "id": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+    "title": "AI Agents Breach Swiss Critical Infrastructure Operators",
+    "headline": "AI Agents Breach Swiss Critical Infrastructure Operators",
+    "summary": "Attackers using AI agents breached computer systems at Swiss organizations, including three critical infrastructure operators, marking incidents in the country. The intrusion leveraged automated threat actors, achieving unauthorized access in two operators without causing major disruptions, though details remain undisclosed. Swiss cybersecurity agency urges operators to review AI threat detection and enforce stricter access controls, but no patch is applicable.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-27T06:04:20.000Z",
+    "ingestedAt": "2026-11-27T06:43:53.543Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/hackers-hide-polinrider-malware/",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-hide-polinrider-malware/",
+    "title": "Hackers Hide PolinRider Malware in 375 GitHub Repositories to Execute Malicious Code",
+    "headline": "Hackers Hide PolinRider Malware in 375 GitHub Repositories to Execute Malicious Code",
+    "summary": "Hackers planted PolinRider malware in 375 GitHub repositories, hiding a Python loader in ordinary-looking project files. The loader retrieves JavaScript stored in an Ethereum transaction and runs it through Node.js. In some projects, running tests is enough to trigger the loader.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-27T05:39:50.000Z",
+    "ingestedAt": "2026-11-27T06:43:40.753Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/27/doj-scam-crackdown-800-scammers/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/27/doj-scam-crackdown-800-scammers/",
     "title": "US DOJ Seizes $17B in Scam Ring Crackdown",
@@ -8299,39 +8332,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/24/cybersecurity-jobs-available-right-now-november-24-2026/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:102695",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102695",
-    "title": "RHSA-2026:102695: Critical: php:8.2 security update",
-    "headline": "RHSA-2026:102695: Critical: php:8.2 security update",
-    "summary": "An update for the php:8.2 module is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-23T23:28:55.000Z",
-    "ingestedAt": "2026-11-24T00:43:38.183Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:102689",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102689",
-    "title": "Red Hat Releases Kernel Update for RHEL 9.2 SAP",
-    "headline": "Red Hat Releases Kernel Update for RHEL 9.2 SAP",
-    "summary": "Red Hat issued a kernel update for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple security bugs. The advisory rates the update as Important, with CVSS base scores linked to individual CVE references, indicating high risk if unpatched. Security teams should apply the update promptly, ensuring kernel version compliance and verifying SAP application compatibility after installation.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-23T23:23:25.000Z",
-    "ingestedAt": "2026-11-23T23:43:16.971Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:102689",
     "additionalSources": []
   }
 ]

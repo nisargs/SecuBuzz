@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-agents-breach-swiss-critical-infrastructure-ope-4b40ae3a",
+    "title": "AI Agents Breach Swiss Critical Infrastructure Operators",
+    "summary": "Attackers using AI agents breached computer systems at Swiss organizations, including three critical infrastructure operators, marking incidents in the country. The intrusion leveraged automated threat actors, achieving unauthorized access in two operators without causing major disruptions, though details remain undisclosed. Swiss cybersecurity agency urges operators to review AI threat detection and enforce stricter access controls, but no patch is applicable.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+    "publishedAt": "2026-11-27T06:04:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agents-breach-swiss-critical-infrastructure-ope",
+      "article-4b40ae3a",
+      "4b40ae3a",
+      "ai-agents-breach-swiss-critical-infrastructure-ope-478acc",
+      "ai-agents-breach-swiss-critical-infrastructure-operators"
+    ]
+  },
+  {
+    "slug": "hackers-hide-polinrider-malware-in-375-github-repo-a4f51842",
+    "title": "Hackers Hide PolinRider Malware in 375 GitHub Repositories to Execute Malicious Code",
+    "summary": "Hackers planted PolinRider malware in 375 GitHub repositories, hiding a Python loader in ordinary-looking project files. The loader retrieves JavaScript stored in an Ethereum transaction and runs it through Node.js. In some projects, running tests is enough to trigger the loader.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-hide-polinrider-malware/",
+    "publishedAt": "2026-11-27T05:39:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-hide-polinrider-malware-in-375-github-repo",
+      "article-a4f51842",
+      "a4f51842",
+      "hackers-hide-polinrider-malware-in-375-github-repo-309352",
+      "hackers-hide-polinrider-malware-in-375-github-repositories-t"
+    ]
+  },
+  {
     "slug": "us-doj-seizes-17b-in-scam-ring-crackdown-72407af0",
     "title": "US DOJ Seizes $17B in Scam Ring Crackdown",
     "summary": "US DOJ seized nearly $17 billion in assets during its largest-ever crackdown on scam rings targeting Americans. The operation encompassed over 800 alleged scammers, 400 cases across 85 federal districts, and 30 extraditions, with coordinated raids in more than ten countries. The action demonstrates the federal government’s expanded enforcement capacity, but no vulnerability or breach is reported.",
@@ -9596,42 +9634,6 @@ export const news: NewsBrief[] = [
       "article-f8135851",
       "f8135851",
       "cybersecurity-jobs-open-now-november-24-2026-60bd08"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102695-critical-php-8-2-security-update-fe9d24bb",
-    "title": "RHSA-2026:102695: Critical: php:8.2 security update",
-    "summary": "An update for the php:8.2 module is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102695",
-    "publishedAt": "2026-11-23T23:28:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102695-critical-php-8-2-security-update",
-      "article-fe9d24bb",
-      "fe9d24bb",
-      "rhsa-2026-102695-critical-php-8-2-security-update-2ee16e"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-update-for-rhel-9-2-sap-0a725d3f",
-    "title": "Red Hat Releases Kernel Update for RHEL 9.2 SAP",
-    "summary": "Red Hat issued a kernel update for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple security bugs. The advisory rates the update as Important, with CVSS base scores linked to individual CVE references, indicating high risk if unpatched. Security teams should apply the update promptly, ensuring kernel version compliance and verifying SAP application compatibility after installation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102689",
-    "publishedAt": "2026-11-23T23:23:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-update-for-rhel-9-2-sap",
-      "article-0a725d3f",
-      "0a725d3f",
-      "red-hat-releases-kernel-update-for-rhel-9-2-sap-2ee16e"
     ]
   }
 ];

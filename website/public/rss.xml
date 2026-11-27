@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 05:43:39 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 06:44:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Agents Breach Swiss Critical Infrastructure Operators</title>
+      <link>https://secubuzz.com/news/ai-agents-breach-swiss-critical-infrastructure-ope-4b40ae3a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-breach-swiss-critical-infrastructure-ope-4b40ae3a</guid>
+      <description><![CDATA[Attackers using AI agents breached computer systems at Swiss organizations, including three critical infrastructure operators, marking incidents in the country. The intrusion leveraged automated threat actors, achieving unauthorized access in two operators without causing major disruptions, though details remain undisclosed. Swiss cybersecurity agency urges operators to review AI threat detection and enforce stricter access controls, but no patch is applicable.]]></description>
+      <pubDate>Fri, 27 Nov 2026 06:04:20 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Hackers Hide PolinRider Malware in 375 GitHub Repositories to Execute Malicious Code</title>
+      <link>https://secubuzz.com/news/hackers-hide-polinrider-malware-in-375-github-repo-a4f51842</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hide-polinrider-malware-in-375-github-repo-a4f51842</guid>
+      <description><![CDATA[Hackers planted PolinRider malware in 375 GitHub repositories, hiding a Python loader in ordinary-looking project files. The loader retrieves JavaScript stored in an Ethereum transaction and runs it through Node.js. In some projects, running tests is enough to trigger the loader.]]></description>
+      <pubDate>Fri, 27 Nov 2026 05:39:50 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-hide-polinrider-malware/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>US DOJ Seizes $17B in Scam Ring Crackdown</title>
       <link>https://secubuzz.com/news/us-doj-seizes-17b-in-scam-ring-crackdown-72407af0</link>
@@ -437,24 +455,6 @@
       <description><![CDATA[Exposed web directories on hacker servers revealed U.S. hospital credential records, 155,000 cloud storage objects, and a map of law firm remote-access systems. Operators had used a valid cloud token, suggesting credential reuse and potential unauthorized access to sensitive medical and legal data. Teams should secure directories, revoke tokens, enforce MFA, and investigate lateral movement to mitigate data exfiltration risks.]]></description>
       <pubDate>Thu, 26 Nov 2026 08:41:41 GMT</pubDate>
       <source url="https://cybersecuritynews.com/exposed-hacker-servers/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Apache Commons BCEL Vulnerability Allows Class Cache Manipulation</title>
-      <link>https://secubuzz.com/news/apache-commons-bcel-vulnerability-allows-class-cac-05a6392e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-commons-bcel-vulnerability-allows-class-cac-05a6392e</guid>
-      <description><![CDATA[The Apache Commons BCEL library contains a flaw that permits improper caching of classes under self-declared names. An attacker could exploit this to cause BCEL to return or verify a different class than requested, potentially enabling code execution. Ubuntu recommends applying the updated package that corrects the caching logic to mitigate the vulnerability.]]></description>
-      <pubDate>Thu, 26 Nov 2026 08:23:06 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9207-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>FIFA Breach: 12.2 GB Documents Exposed</title>
-      <link>https://secubuzz.com/news/fifa-breach-12-2-gb-documents-exposed-8230537f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fifa-breach-12-2-gb-documents-exposed-8230537f</guid>
-      <description><![CDATA[FIFA confirmed unauthorized access to personal and business data by the Handsome Boy Hacking Club. The attackers allegedly exfiltrated 12.2 GB of internal documents, including sensitive personnel records, though the group has not yet published the files. FIFA has not released a remediation plan yet; security teams should monitor for credential leaks and enforce multi-factor authentication.]]></description>
-      <pubDate>Thu, 26 Nov 2026 08:07:35 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fifa-alleged-breach/">Cyber Security News</source>
       <category>Breach</category>
     </item>
   </channel>
