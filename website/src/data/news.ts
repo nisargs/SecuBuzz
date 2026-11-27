@@ -11,6 +11,46 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "flight-centre-travel-group-warns-of-customer-data-98b6cae9",
+    "title": "Flight Centre Travel Group warns of customer data breach involving some passport details",
+    "summary": "In a statement to the Australian Securities Exchange, the Brisbane-based travel company said it is investigating “unusual activity” in a third-party accommodation booking system used by the Flight Centre brand, Travel Associates, Cruiseabout and some independent agents.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/27/flight-centre-travel-group-data-breach-booking-system/",
+    "publishedAt": "2026-11-27T09:31:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "flight-centre-travel-group-warns-of-customer-data",
+      "article-98b6cae9",
+      "98b6cae9",
+      "flight-centre-travel-group-warns-of-customer-data-4eb7ee",
+      "flight-centre-travel-group-warns-of-customer-data-breach-inv"
+    ]
+  },
+  {
+    "slug": "nfs2root-linux-flaw-enables-remote-root-privilege-adaf3868",
+    "title": "NFS2ROOT Linux flaw enables remote root privilege escalation",
+    "summary": "A 12-year-old critical flaw in the Linux kernel’s NFS server, identified as CVE-2026-99362, permits remote attackers to gain root privileges. The flaw stems from improper validation of NFS mount options, allowing unauthenticated privilege escalation and system compromise. Kernel maintainers released an update patching the flaw; administrators should apply the latest kernel or backport the fix.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/",
+    "publishedAt": "2026-11-27T08:06:58.000Z",
+    "cves": [
+      "CVE-2026-99362"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "nfs2root-linux-flaw-enables-remote-root-privilege",
+      "article-adaf3868",
+      "adaf3868",
+      "nfs2root-linux-flaw-enables-remote-root-privilege-455bf6",
+      "nfs2root-linux-flaw-enables-remote-root-privilege-escalation"
+    ]
+  },
+  {
     "slug": "hex-pm-vulnerability-enables-remote-command-execut-abe0e557",
     "title": "Hex.pm Vulnerability Enables Remote Command Execution",
     "summary": "A flaw in hex.pm’s package handling permits attackers to execute arbitrary commands on hosted web servers. The vulnerability bypasses input validation, enabling remote code execution without authentication; no evidence of data alteration has been observed, though database reads remain unlogged. Hex.pm has issued an out-of-band patch and recommends all users upgrade to the latest release immediately to mitigate potential exploitation.",
@@ -65,6 +105,42 @@ export const news: NewsBrief[] = [
       "80d8ca43",
       "tampered-q-dir-installers-deliver-remote-access-tr-1f7dcf",
       "tampered-q-dir-installers-deliver-remote-access-trojans"
+    ]
+  },
+  {
+    "slug": "2026-dmarc-tool-rankings-and-features-60766950",
+    "title": "2026 DMARC Tool Rankings and Features",
+    "summary": "The article lists ten DMARC and email authentication tools for 2026, focusing on their ability to enforce p=reject policies without blocking legitimate mail. It evaluates tools based on aggregate report parsing, automation of SPF/DKIM/DMARC checks, detection of third-party sender sprawl, and pricing tiers. Security teams can use the comparison to choose solutions that streamline policy enforcement and reduce phishing risk.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-dmarc-tools/",
+    "publishedAt": "2026-11-27T07:25:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-dmarc-tool-rankings-and-features",
+      "article-60766950",
+      "60766950",
+      "2026-dmarc-tool-rankings-and-features-63c61e"
+    ]
+  },
+  {
+    "slug": "2026-human-risk-management-platform-rankings-f79195d5",
+    "title": "2026 Human Risk Management Platform Rankings",
+    "summary": "The article ranks ten human risk management platforms for 2026, evaluating them on per-person risk scoring, adaptive intervention, and technical signal integration. It highlights how modern tools incorporate mailbox threat signals and adaptive training to reduce human risk, moving beyond annual compliance videos. Readers can compare platform features and pricing to select solutions that align with organizational risk appetite.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-human-risk-management/",
+    "publishedAt": "2026-11-27T07:20:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-human-risk-management-platform-rankings",
+      "article-f79195d5",
+      "f79195d5",
+      "2026-human-risk-management-platform-rankings-4c97b9"
     ]
   },
   {
@@ -159,6 +235,30 @@ export const news: NewsBrief[] = [
       "5b7cc222",
       "norton-integrates-scam-detection-tools-into-claude-51523c",
       "norton-integrates-scam-detection-tools-into-claude-ai-chatbo"
+    ]
+  },
+  {
+    "slug": "cacti-zero-day-enables-unauthenticated-remote-code-1e65c459",
+    "title": "Cacti Zero-Day Enables Unauthenticated Remote Code Execution via Guest Access",
+    "summary": "Cacti, a popular network monitoring tool, suffered a zero-day vulnerability that lets attackers execute arbitrary OS commands without authentication. The flaw, triggered by four HTTP requests, bypasses the web interface’s authentication, enabling remote code execution through guest access. Cacti developers released a patch; administrators should update to the latest version or disable guest access to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+    "publishedAt": "2026-11-27T05:48:20.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/cacti-4http2root-zero-day/"
+      }
+    ],
+    "aliases": [
+      "cacti-zero-day-enables-unauthenticated-remote-code",
+      "article-1e65c459",
+      "1e65c459",
+      "cacti-zero-day-enables-unauthenticated-remote-code-47f064",
+      "cacti-zero-day-enables-unauthenticated-remote-code-execution"
     ]
   },
   {
@@ -9548,96 +9648,6 @@ export const news: NewsBrief[] = [
       "article-adb54fa3",
       "adb54fa3",
       "chromeos-stable-channel-updated-to-os-16868-29-0-616ab3"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-php-7-4-security-update-99077dba",
-    "title": "Red Hat Releases Critical php:7.4 Security Update",
-    "summary": "Red Hat released a critical security update for the php:7.4 module on RHEL 8.8 Update Services for SAP Solutions and the Telecommunications Update Service. The update addresses high-severity vulnerabilities, each assigned a CVSS base score, but no specific CVE identifiers are listed. Red Hat recommends applying the php:7.4 update immediately to mitigate potential remote code execution risks.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102713",
-    "publishedAt": "2026-11-24T02:38:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-php-7-4-security-update",
-      "article-99077dba",
-      "99077dba",
-      "red-hat-releases-critical-php-7-4-security-update-2ee171"
-    ]
-  },
-  {
-    "slug": "ongoing-scanning-detected-on-banatsync-subnet-baab0068",
-    "title": "Ongoing Scanning Detected on BANATSYNC Subnet",
-    "summary": "SANS Internet Storm Center reports continuous scanning from subnet 109.160.32.0/24, assigned to BANATSYNC SRL, a Romanian web hosting and VPS provider. DShield sensor data shows persistent probing over 90 days, suggesting ongoing reconnaissance or potential exploitation attempts against the subnet's hosts. Security teams should monitor for suspicious activity, enforce rate limiting, and harden hosts to mitigate potential threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33550",
-    "publishedAt": "2026-11-24T02:32:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ongoing-scanning-detected-on-banatsync-subnet",
-      "article-baab0068",
-      "baab0068",
-      "ongoing-scanning-detected-on-banatsync-subnet-57dd81"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-podcast-released-for-nov-24-2026-fe0f5f93",
-    "title": "ISC Stormcast Podcast Released for Nov 24, 2026",
-    "summary": "The ISC Stormcast podcast released for Tuesday, November 24, 2026, delivers a concise briefing on the latest cyber threat landscape. The episode covers emerging malware trends, nation-state activity, and defensive tactics, providing analysts with actionable insights for the week. Listeners can access the recording via the ISC website or subscribe to the podcast feed for real-time updates.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33552",
-    "publishedAt": "2026-11-24T02:00:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-podcast-released-for-nov-24-2026",
-      "article-fe0f5f93",
-      "fe0f5f93",
-      "isc-stormcast-podcast-released-for-nov-24-2026-57dd81"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-update-for-rhel-9-6-eus-b5a282ce",
-    "title": "Red Hat Releases Kernel Update for RHEL 9.6 EUS",
-    "summary": "Red Hat issued a kernel update for RHEL 9.6 EUS to fix multiple security flaws that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, though no CVE IDs or public exploits are referenced. Red Hat advises immediate application of the patch via standard repositories to ensure all security enhancements are installed.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102711",
-    "publishedAt": "2026-11-24T01:25:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-update-for-rhel-9-6-eus",
-      "article-b5a282ce",
-      "b5a282ce",
-      "red-hat-releases-kernel-update-for-rhel-9-6-eus-2ee171"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-kernel-update-for-rhel-9-8-eus-a6f19b1d",
-    "title": "Red Hat Issues Kernel Update for RHEL 9.8 EUS",
-    "summary": "Red Hat issued a kernel update for RHEL 9.8 EUS to fix vulnerabilities that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, but no CVE IDs or public exploits are referenced. Red Hat advises applying the patch via standard repositories immediately to incorporate all security improvements.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102710",
-    "publishedAt": "2026-11-24T01:23:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-kernel-update-for-rhel-9-8-eus",
-      "article-a6f19b1d",
-      "a6f19b1d",
-      "red-hat-issues-kernel-update-for-rhel-9-8-eus-2ee171"
     ]
   }
 ];
