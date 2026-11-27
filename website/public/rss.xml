@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 04:43:58 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 05:43:39 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>US DOJ Seizes $17B in Scam Ring Crackdown</title>
+      <link>https://secubuzz.com/news/us-doj-seizes-17b-in-scam-ring-crackdown-72407af0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-doj-seizes-17b-in-scam-ring-crackdown-72407af0</guid>
+      <description><![CDATA[US DOJ seized nearly $17 billion in assets during its largest-ever crackdown on scam rings targeting Americans. The operation encompassed over 800 alleged scammers, 400 cases across 85 federal districts, and 30 extraditions, with coordinated raids in more than ten countries. The action demonstrates the federal government’s expanded enforcement capacity, but no vulnerability or breach is reported.]]></description>
+      <pubDate>Fri, 27 Nov 2026 05:30:28 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/27/doj-scam-crackdown-800-scammers/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI Adoption Grows in Threat-Led Penetration Testing</title>
+      <link>https://secubuzz.com/news/ai-adoption-grows-in-threat-led-penetration-testin-e7da45c1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-adoption-grows-in-threat-led-penetration-testin-e7da45c1</guid>
+      <description><![CDATA[A CREST study found that 81% of penetration testing providers now use AI beyond experimentation in threat-led testing. The research highlights AI’s expanded threat emulation capabilities, though it raises questions about the validity and assurance of test results. Providers should evaluate AI integration and establish controls to maintain credible assurance in future testing engagements.]]></description>
+      <pubDate>Fri, 27 Nov 2026 05:00:32 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/27/crest-ai-threat-led-penetration-testing/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>SAP Reports Token Theft and GitHub Code Alteration</title>
       <link>https://secubuzz.com/news/sap-reports-token-theft-and-github-code-alteration-075cdf2d</link>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 26 Nov 2026 08:07:35 GMT</pubDate>
       <source url="https://cybersecuritynews.com/fifa-alleged-breach/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103790: Critical: ruby4.0 security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103790-critical-ruby4-0-security-bug-fix-1ed7eccd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103790-critical-ruby4-0-security-bug-fix-1ed7eccd</guid>
-      <description><![CDATA[An update for ruby4.0 is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 26 Nov 2026 08:01:34 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103790">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cyprus Targeted by Iranian Espionage Group</title>
-      <link>https://secubuzz.com/news/cyprus-targeted-by-iranian-espionage-group-d56b9d3c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyprus-targeted-by-iranian-espionage-group-d56b9d3c</guid>
-      <description><![CDATA[Cyprus has become a new espionage target for the Iranian threat group Volant Manticore. The group is conducting intelligence gathering against Cypriot organizations, likely collecting corporate data and credentials, though specific exploits remain undocumented. Security teams should harden network perimeter, monitor for anomalous lateral movement, and apply threat intelligence feeds on Volant Manticore activity.]]></description>
-      <pubDate>Thu, 26 Nov 2026 08:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers">Dark Reading</source>
-      <category>Nation State</category>
     </item>
   </channel>
 </rss>

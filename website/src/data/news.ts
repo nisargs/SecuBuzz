@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "us-doj-seizes-17b-in-scam-ring-crackdown-72407af0",
+    "title": "US DOJ Seizes $17B in Scam Ring Crackdown",
+    "summary": "US DOJ seized nearly $17 billion in assets during its largest-ever crackdown on scam rings targeting Americans. The operation encompassed over 800 alleged scammers, 400 cases across 85 federal districts, and 30 extraditions, with coordinated raids in more than ten countries. The action demonstrates the federal government’s expanded enforcement capacity, but no vulnerability or breach is reported.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/27/doj-scam-crackdown-800-scammers/",
+    "publishedAt": "2026-11-27T05:30:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-doj-seizes-17b-in-scam-ring-crackdown",
+      "article-72407af0",
+      "72407af0",
+      "us-doj-seizes-17b-in-scam-ring-crackdown-fc722b"
+    ]
+  },
+  {
+    "slug": "ai-adoption-grows-in-threat-led-penetration-testin-e7da45c1",
+    "title": "AI Adoption Grows in Threat-Led Penetration Testing",
+    "summary": "A CREST study found that 81% of penetration testing providers now use AI beyond experimentation in threat-led testing. The research highlights AI’s expanded threat emulation capabilities, though it raises questions about the validity and assurance of test results. Providers should evaluate AI integration and establish controls to maintain credible assurance in future testing engagements.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/27/crest-ai-threat-led-penetration-testing/",
+    "publishedAt": "2026-11-27T05:00:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-adoption-grows-in-threat-led-penetration-testin",
+      "article-e7da45c1",
+      "e7da45c1",
+      "ai-adoption-grows-in-threat-led-penetration-testin-2465f1",
+      "ai-adoption-grows-in-threat-led-penetration-testing"
+    ]
+  },
+  {
     "slug": "sap-reports-token-theft-and-github-code-alteration-075cdf2d",
     "title": "SAP Reports Token Theft and GitHub Code Alteration",
     "summary": "SAP detected a security incident where employee authentication tokens were stolen and used to alter GitHub source code. The breach leveraged credential reuse, enabling attackers to impersonate developers, copy code, and modify repositories without triggering audit logs. SAP revoked compromised tokens, notified customers, and is enforcing stricter token rotation and multi-factor authentication to prevent recurrence.",
@@ -9595,42 +9632,6 @@ export const news: NewsBrief[] = [
       "article-0a725d3f",
       "0a725d3f",
       "red-hat-releases-kernel-update-for-rhel-9-2-sap-2ee16e"
-    ]
-  },
-  {
-    "slug": "usn-9189-1-qt5compat-vulnerability-e859a30a",
-    "title": "USN-9189-1: Qt5Compat vulnerability",
-    "summary": "It was discovered that Qt5Compat did not correctly handle certain text codec names, which could lead to an out-of-bounds read. An attacker could possibly use this issue to cause a denial of service.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9189-1",
-    "publishedAt": "2026-11-23T23:21:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9189-1-qt5compat-vulnerability",
-      "article-e859a30a",
-      "e859a30a",
-      "usn-9189-1-qt5compat-vulnerability-7e77df"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102684-critical-php-8-3-security-update-f1b40ee0",
-    "title": "RHSA-2026:102684: Critical: php:8.3 security update",
-    "summary": "An update for the php:8.3 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102684",
-    "publishedAt": "2026-11-23T22:29:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102684-critical-php-8-3-security-update",
-      "article-f1b40ee0",
-      "f1b40ee0",
-      "rhsa-2026-102684-critical-php-8-3-security-update-2ee16e"
     ]
   }
 ];
