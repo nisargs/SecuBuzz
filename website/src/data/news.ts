@@ -11,6 +11,117 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fake-google-sheets-extension-steals-gmail-after-pa-d58a3a21",
+    "title": "Fake Google Sheets Extension Steals Gmail After Password Reset",
+    "summary": "Remus’s counterfeit Google Sheets Chrome extension can read Gmail messages after a user signs back in following a password change. The malicious extension exploits the browser’s permission model, accessing Gmail data without user consent once the account is re-authenticated. Users should remove the suspicious extension, revoke its permissions, and monitor account activity for unauthorized data access to mitigate the threat.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/malware-steals-gmail-messages-using-a-fake-google-sheets-extension",
+    "publishedAt": "2026-11-27T12:09:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-google-sheets-extension-steals-gmail-after-pa",
+      "article-d58a3a21",
+      "d58a3a21",
+      "fake-google-sheets-extension-steals-gmail-after-pa-458a5b",
+      "fake-google-sheets-extension-steals-gmail-after-password-res"
+    ]
+  },
+  {
+    "slug": "outages-at-major-firms-attributed-to-economic-fact-2af56320",
+    "title": "Outages at Major Firms Attributed to Economic Factors",
+    "summary": "Outages at Microsoft, FAA, banks, United Airlines, NSA network, and Apple were reported. Investigations found no coordinated cyberattack or malicious activity; the disruptions stemmed from unrelated economic or operational failures. No security patches or mitigations are required; organizations should review internal resilience and contingency planning to address such economic disruptions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/recent-outages-have-economic-causes.html",
+    "publishedAt": "2026-11-27T12:02:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "outages-at-major-firms-attributed-to-economic-fact",
+      "article-2af56320",
+      "2af56320",
+      "outages-at-major-firms-attributed-to-economic-fact-6a678e",
+      "outages-at-major-firms-attributed-to-economic-factors"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-kernel-security-update-974e1e88",
+    "title": "Red Hat Releases Critical Kernel Security Update",
+    "summary": "Red Hat released a critical kernel security update for RHEL 10.0 EUS, addressing several high-severity kernel flaws. The advisory lists CVSS base scores for each vulnerability, though specific CVE identifiers are not named, indicating potential privilege escalation or denial-of-service risks. Red Hat recommends applying the kernel update immediately; CVE links in the references provide detailed severity information.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:104032",
+    "publishedAt": "2026-11-27T11:50:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-kernel-security-update",
+      "article-974e1e88",
+      "974e1e88",
+      "red-hat-releases-critical-kernel-security-update-2ee23f"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-ruby-3-3-security-update-1b35c94b",
+    "title": "Red Hat Releases Critical Ruby 3.3 Security Update",
+    "summary": "Red Hat issued a critical security update for the ruby:3.3 module on RHEL 9.6 EUS, addressing multiple high-severity vulnerabilities. The advisory provides CVSS base scores for each flaw, though specific CVE identifiers are not listed, indicating potential privilege escalation or denial-of-service risks. Red Hat recommends applying the ruby update immediately; CVE links in the references contain detailed severity information.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:104038",
+    "publishedAt": "2026-11-27T11:46:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-ruby-3-3-security-update",
+      "article-1b35c94b",
+      "1b35c94b",
+      "red-hat-releases-critical-ruby-3-3-security-update-2ee23f"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-ruby-security-update-2181aae0",
+    "title": "Red Hat Issues Critical Ruby Security Update",
+    "summary": "Red Hat released a critical Ruby security update for RHEL 9.2 Update Services for SAP Solutions, addressing multiple high-severity flaws. The advisory lists no CVE IDs but notes each flaw has a CVSS base score, indicating potential unauthenticated remote code execution. Red Hat urges immediate patching via the Customer Portal or automated tools to mitigate the vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:104037",
+    "publishedAt": "2026-11-27T11:44:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-ruby-security-update",
+      "article-2181aae0",
+      "2181aae0",
+      "red-hat-issues-critical-ruby-security-update-2ee23f"
+    ]
+  },
+  {
+    "slug": "microsoft-eliminates-wsus-role-in-windows-server-2-bb4f54f6",
+    "title": "Microsoft Eliminates WSUS Role in Windows Server 2028",
+    "summary": "Microsoft announced the removal of the WSUS server role from its upcoming Windows Server 2028 release. The change eliminates the need for separate WSUS infrastructure, simplifying update management but requiring administrators to adopt alternative patch distribution methods. Administrators should plan migration to Windows Update Services for Business or third-party solutions and update documentation accordingly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/",
+    "publishedAt": "2026-11-27T11:18:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-eliminates-wsus-role-in-windows-server-2",
+      "article-bb4f54f6",
+      "bb4f54f6",
+      "microsoft-eliminates-wsus-role-in-windows-server-2-5d58f2",
+      "microsoft-eliminates-wsus-role-in-windows-server-2028"
+    ]
+  },
+  {
     "slug": "metrics-designed-for-display-not-operational-insig-7df07811",
     "title": "Metrics Designed for Display, Not Operational Insight",
     "summary": "Security metrics are often curated for presentation rather than operational insight, creating a misleading view of an organization’s risk posture. Aggregating data between quarterly reviews and status updates can obscure real-time threats, leaving teams unaware of evolving attack vectors. Continuous, real-time monitoring and transparent reporting frameworks align metrics with actual security events, enabling timely response.",
@@ -121,6 +232,44 @@ export const news: NewsBrief[] = [
       "77dade86",
       "colorado-mycolorado-data-breach-exposes-100-000-us-1b72ac",
       "colorado-mycolorado-data-breach-exposes-100-000-users"
+    ]
+  },
+  {
+    "slug": "q-dir-and-desktopok-downloads-hijacked-for-remote-f6f27228",
+    "title": "Q-Dir and DesktopOK Downloads Hijacked for Remote Access Malware",
+    "summary": "Researchers discovered a supply-chain attack that tampered with Q-Dir and DesktopOK installers from SoftwareOK, delivering remote-access malware. Malicious code was injected during both initial downloads and update processes, bypassing integrity checks and granting attackers persistent remote control. Users should verify installer checksums, apply the latest patched versions, and monitor for unauthorized remote-access activity to mitigate the threat.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+    "publishedAt": "2026-11-27T09:29:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "q-dir-and-desktopok-downloads-hijacked-for-remote",
+      "article-f6f27228",
+      "f6f27228",
+      "q-dir-and-desktopok-downloads-hijacked-for-remote-6ac75d",
+      "q-dir-and-desktopok-downloads-hijacked-for-remote-access-mal"
+    ]
+  },
+  {
+    "slug": "telegram-job-ads-linked-to-spy-recruitment-campaig-fae8daff",
+    "title": "Telegram Job Ads Linked to Spy Recruitment Campaigns",
+    "summary": "Researchers uncovered 3,089 Telegram job posts linked to suspected spy recruitment efforts. The posts repeatedly offered paid gigs, including a 1,500 shekel one-night job, and promoted a U.S. environmental consultancy, enabling attackers to identify and target potential recruits through social engineering. Security teams should monitor Telegram for similar recruitment patterns, block malicious accounts, and educate employees about deceptive job offers.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/telegram-job-posts/",
+    "publishedAt": "2026-11-27T09:22:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "telegram-job-ads-linked-to-spy-recruitment-campaig",
+      "article-fae8daff",
+      "fae8daff",
+      "telegram-job-ads-linked-to-spy-recruitment-campaig-39cb94",
+      "telegram-job-ads-linked-to-spy-recruitment-campaigns"
     ]
   },
   {
@@ -558,6 +707,24 @@ export const news: NewsBrief[] = [
       "96fe0b06",
       "node-js-27-alpha-improves-http-security-deprecates-4bc16c",
       "node-js-27-alpha-improves-http-security-deprecates-tls-1-2"
+    ]
+  },
+  {
+    "slug": "afp-platform-offline-after-cyberattack-59655a06",
+    "title": "AFP Platform Offline After Cyberattack",
+    "summary": "Agence France-Presse’s primary global news distribution platform was taken offline following a cyberattack. The attack disrupted content delivery to media partners worldwide, though no data exfiltration or credential compromise was reported. AFP is restoring services and conducting forensic analysis; organizations should monitor for related indicators and ensure backup distribution channels.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/france-afp-hit-by-cyberattack",
+    "publishedAt": "2026-11-27T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "afp-platform-offline-after-cyberattack",
+      "article-59655a06",
+      "59655a06",
+      "afp-platform-offline-after-cyberattack-74f344"
     ]
   },
   {
@@ -7173,24 +7340,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "red-hat-releases-critical-ruby-3-3-security-update-9eacbea6",
-    "title": "Red Hat Releases Critical Ruby 3.3 Security Update",
-    "summary": "Red Hat released a critical update for the ruby:3.3 module on Enterprise Linux 8, fixing several security bugs. The patch addresses high-severity flaws that could enable remote code execution or privilege escalation, with CVSS scores up to 9.2. Administrators should apply RHSA-2026:102909 immediately and confirm the Ruby runtime is at the patched version.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102909",
-    "publishedAt": "2026-11-24T11:49:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-ruby-3-3-security-update",
-      "article-9eacbea6",
-      "9eacbea6",
-      "red-hat-releases-critical-ruby-3-3-security-update-2ee178"
-    ]
-  },
-  {
     "slug": "eviltokens-phishing-persists-after-microsoft-taked-12d2a0bf",
     "title": "EvilTokens Phishing Persists After Microsoft Takedown",
     "summary": "Despite Microsoft shutting down the EvilTokens phishing-as-a-service kit, attackers continue to deploy new phishing hosts targeting Microsoft 365 accounts. The campaign exploits social engineering to trick users into revealing credentials, potentially granting attackers full access to corporate Microsoft 365 environments. Security teams should enforce multi-factor authentication, monitor for anomalous sign-ins, and educate users about phishing indicators.",
@@ -9495,183 +9644,6 @@ export const news: NewsBrief[] = [
       "9be3795f",
       "firebird-sql-srp-auth-bypass-exposes-unauthenticat-77f34f",
       "firebird-sql-srp-auth-bypass-exposes-unauthenticated-access"
-    ]
-  },
-  {
-    "slug": "bytebase-dbhub-auth-bypass-enables-unauthenticated-836e58a5",
-    "title": "Bytebase DBHub Auth Bypass Enables Unauthenticated Access",
-    "summary": "Bytebase DBHub suffers an authentication bypass that allows remote attackers to access the platform without credentials. The flaw arises from improper authorization checks in the MCP module, rated CVSS 9.8, permitting full data read, write, and configuration changes. Bytebase has issued patch 1.2.3; administrators should update immediately or isolate affected instances.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1067/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bytebase-dbhub-auth-bypass-enables-unauthenticated",
-      "article-836e58a5",
-      "836e58a5",
-      "bytebase-dbhub-auth-bypass-enables-unauthenticated-77f34f",
-      "bytebase-dbhub-auth-bypass-enables-unauthenticated-access"
-    ]
-  },
-  {
-    "slug": "zdi-26-1066-0day-python-packaging-authority-pip-co-2be0e546",
-    "title": "ZDI-26-1066: (0Day) Python Packaging Authority pip Configuration File Incorrect Permission Assignment Local Privilege Escalation Vulnerability",
-    "summary": "This vulnerability allows local attackers to escalate privileges on affected installations of Python Packaging Authority pip. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1066/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1066-0day-python-packaging-authority-pip-co",
-      "article-2be0e546",
-      "2be0e546",
-      "zdi-26-1066-0day-python-packaging-authority-pip-co-77f34f",
-      "zdi-26-1066-0day-python-packaging-authority-pip-configuratio"
-    ]
-  },
-  {
-    "slug": "parallels-desktop-cshashellext-local-privilege-esc-5bbad1a9",
-    "title": "Parallels Desktop CSHAShellExt Local Privilege Escalation Vulnerability",
-    "summary": "A local privilege escalation flaw in Parallels Desktop's CSHAShellExt component allows attackers with low-privileged guest code execution to gain elevated rights. The vulnerability, identified as 'CVE-2026-121756', has a CVSS score of 8.8 and requires local code execution to exploit. Parallels has released a patch for all affected installations; users should update immediately and restrict guest code execution privileges.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1042/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-121756"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "parallels-desktop-cshashellext-local-privilege-esc",
-      "article-5bbad1a9",
-      "5bbad1a9",
-      "parallels-desktop-cshashellext-local-privilege-esc-77f347",
-      "parallels-desktop-cshashellext-local-privilege-escalation-vu"
-    ]
-  },
-  {
-    "slug": "parallels-desktop-vulnerability-enables-local-priv-7b3d10f8",
-    "title": "Parallels Desktop Vulnerability Enables Local Privilege Escalation",
-    "summary": "A local privilege escalation flaw in Parallels Desktop’s inittool2 lets attackers who already execute low-privilege code elevate to full system rights. CVE-2026-121754 carries a CVSS 7.8 score and requires initial local code execution, with no remote or unauthenticated vector. Parallels released a patch in the latest update; administrators should apply it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1040/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-121754"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "parallels-desktop-vulnerability-enables-local-priv",
-      "article-7b3d10f8",
-      "7b3d10f8",
-      "parallels-desktop-vulnerability-enables-local-priv-77f347",
-      "parallels-desktop-vulnerability-enables-local-privilege-esca"
-    ]
-  },
-  {
-    "slug": "zdi-26-1041-parallels-desktop-handle-based-rename-527e807b",
-    "title": "ZDI-26-1041: Parallels Desktop Handle-based Rename Time-Of-Check Time-Of-Use Information Disclosure Vulnerability",
-    "summary": "This vulnerability allows local attackers to disclose sensitive information on affected installations of Parallels Desktop. An attacker must first obtain the ability to execute low-privileged code on the target guest system in order to exploit this vulnerability. The following CVEs are assigned: CVE-2026-121755.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1041/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-121755"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1041-parallels-desktop-handle-based-rename",
-      "article-527e807b",
-      "527e807b",
-      "zdi-26-1041-parallels-desktop-handle-based-rename-77f347",
-      "zdi-26-1041-parallels-desktop-handle-based-rename-time-of-ch"
-    ]
-  },
-  {
-    "slug": "node-js-simple-git-rce-vulnerability-cve-2026-1348-d005401f",
-    "title": "Node.js simple-git RCE Vulnerability CVE-2026-134815",
-    "summary": "A critical flaw in the Node.js simple-git library allows attackers to execute arbitrary commands on servers that pass untrusted input into Git arguments. Tracked as CVE-2026-134815, the vulnerability is an argument injection weakness present in simple-git versions before 4.1.0, enabling remote code execution without authentication. Users should upgrade to simple-git 4.1.0 or later to mitigate the flaw.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/node-js-simple-git-library-flaw/",
-    "publishedAt": "2026-11-24T05:55:37.000Z",
-    "cves": [
-      "CVE-2026-134815"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "node-js-simple-git-rce-vulnerability-cve-2026-1348",
-      "article-d005401f",
-      "d005401f",
-      "node-js-simple-git-rce-vulnerability-cve-2026-1348-26fd16",
-      "node-js-simple-git-rce-vulnerability-cve-2026-134815"
-    ]
-  },
-  {
-    "slug": "it-delegates-password-management-while-maintaining-599336a7",
-    "title": "IT Delegates Password Management While Maintaining Control",
-    "summary": "IT departments often delegate password management to business units, creating accounts that may be unknown to central security teams. This practice can leave IT responsible for credentials it cannot monitor, increasing risk when personnel changes or external contractors access shared accounts. Implementing centralized identity governance, enforcing least-privilege access, and requiring IT involvement in account provisioning can mitigate these risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/passwork-enterprise-password-management/",
-    "publishedAt": "2026-11-24T05:30:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "it-delegates-password-management-while-maintaining",
-      "article-599336a7",
-      "599336a7",
-      "it-delegates-password-management-while-maintaining-2009d9",
-      "it-delegates-password-management-while-maintaining-control"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-libxi-security-update-0dc42e1f",
-    "title": "Red Hat Issues Important libXi Security Update",
-    "summary": "Red Hat released an important security update for the libXi library on RHEL 9.6 Extended Update Support. The update addresses unspecified vulnerabilities in libXi, with Red Hat Product Security rating the fix as Important and providing CVSS scores via CVE references. Administrators should apply the update promptly to mitigate potential exploitation of the libXi flaws.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102798",
-    "publishedAt": "2026-11-24T05:09:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-libxi-security-update",
-      "article-0dc42e1f",
-      "0dc42e1f",
-      "red-hat-issues-important-libxi-security-update-2ee172"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-skopeo-security-update-81f307ba",
-    "title": "Red Hat Issues Important skopeo Security Update",
-    "summary": "Red Hat released an important security update for the skopeo tool on RHEL 9.8 Extended Update Support. The update addresses unspecified vulnerabilities in skopeo, with Red Hat Product Security rating the fix as Important and providing CVSS scores via CVE references. Administrators should apply the update promptly to mitigate potential exploitation of the skopeo flaws.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102806",
-    "publishedAt": "2026-11-24T05:09:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-skopeo-security-update",
-      "article-81f307ba",
-      "81f307ba",
-      "red-hat-issues-important-skopeo-security-update-2ee174"
     ]
   }
 ];

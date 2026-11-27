@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 11:44:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 12:47:47 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Fake Google Sheets Extension Steals Gmail After Password Reset</title>
+      <link>https://secubuzz.com/news/fake-google-sheets-extension-steals-gmail-after-pa-d58a3a21</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-google-sheets-extension-steals-gmail-after-pa-d58a3a21</guid>
+      <description><![CDATA[Remus’s counterfeit Google Sheets Chrome extension can read Gmail messages after a user signs back in following a password change. The malicious extension exploits the browser’s permission model, accessing Gmail data without user consent once the account is re-authenticated. Users should remove the suspicious extension, revoke its permissions, and monitor account activity for unauthorized data access to mitigate the threat.]]></description>
+      <pubDate>Fri, 27 Nov 2026 12:09:14 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/malware-steals-gmail-messages-using-a-fake-google-sheets-extension">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Outages at Major Firms Attributed to Economic Factors</title>
+      <link>https://secubuzz.com/news/outages-at-major-firms-attributed-to-economic-fact-2af56320</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/outages-at-major-firms-attributed-to-economic-fact-2af56320</guid>
+      <description><![CDATA[Outages at Microsoft, FAA, banks, United Airlines, NSA network, and Apple were reported. Investigations found no coordinated cyberattack or malicious activity; the disruptions stemmed from unrelated economic or operational failures. No security patches or mitigations are required; organizations should review internal resilience and contingency planning to address such economic disruptions.]]></description>
+      <pubDate>Fri, 27 Nov 2026 12:02:23 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/11/recent-outages-have-economic-causes.html">Schneier on Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Kernel Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-kernel-security-update-974e1e88</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-kernel-security-update-974e1e88</guid>
+      <description><![CDATA[Red Hat released a critical kernel security update for RHEL 10.0 EUS, addressing several high-severity kernel flaws. The advisory lists CVSS base scores for each vulnerability, though specific CVE identifiers are not named, indicating potential privilege escalation or denial-of-service risks. Red Hat recommends applying the kernel update immediately; CVE links in the references provide detailed severity information.]]></description>
+      <pubDate>Fri, 27 Nov 2026 11:50:11 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:104032">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Ruby 3.3 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-ruby-3-3-security-update-1b35c94b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-ruby-3-3-security-update-1b35c94b</guid>
+      <description><![CDATA[Red Hat issued a critical security update for the ruby:3.3 module on RHEL 9.6 EUS, addressing multiple high-severity vulnerabilities. The advisory provides CVSS base scores for each flaw, though specific CVE identifiers are not listed, indicating potential privilege escalation or denial-of-service risks. Red Hat recommends applying the ruby update immediately; CVE links in the references contain detailed severity information.]]></description>
+      <pubDate>Fri, 27 Nov 2026 11:46:06 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:104038">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical Ruby Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-ruby-security-update-2181aae0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-ruby-security-update-2181aae0</guid>
+      <description><![CDATA[Red Hat released a critical Ruby security update for RHEL 9.2 Update Services for SAP Solutions, addressing multiple high-severity flaws. The advisory lists no CVE IDs but notes each flaw has a CVSS base score, indicating potential unauthenticated remote code execution. Red Hat urges immediate patching via the Customer Portal or automated tools to mitigate the vulnerabilities.]]></description>
+      <pubDate>Fri, 27 Nov 2026 11:44:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:104037">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Eliminates WSUS Role in Windows Server 2028</title>
+      <link>https://secubuzz.com/news/microsoft-eliminates-wsus-role-in-windows-server-2-bb4f54f6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-eliminates-wsus-role-in-windows-server-2-bb4f54f6</guid>
+      <description><![CDATA[Microsoft announced the removal of the WSUS server role from its upcoming Windows Server 2028 release. The change eliminates the need for separate WSUS infrastructure, simplifying update management but requiring administrators to adopt alternative patch distribution methods. Administrators should plan migration to Windows Update Services for Business or third-party solutions and update documentation accordingly.]]></description>
+      <pubDate>Fri, 27 Nov 2026 11:18:36 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/">BleepingComputer</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Metrics Designed for Display, Not Operational Insight</title>
       <link>https://secubuzz.com/news/metrics-designed-for-display-not-operational-insig-7df07811</link>
@@ -60,6 +114,24 @@
       <pubDate>Fri, 27 Nov 2026 09:30:54 GMT</pubDate>
       <source url="https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/">SecurityWeek</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Q-Dir and DesktopOK Downloads Hijacked for Remote Access Malware</title>
+      <link>https://secubuzz.com/news/q-dir-and-desktopok-downloads-hijacked-for-remote-f6f27228</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/q-dir-and-desktopok-downloads-hijacked-for-remote-f6f27228</guid>
+      <description><![CDATA[Researchers discovered a supply-chain attack that tampered with Q-Dir and DesktopOK installers from SoftwareOK, delivering remote-access malware. Malicious code was injected during both initial downloads and update processes, bypassing integrity checks and granting attackers persistent remote control. Users should verify installer checksums, apply the latest patched versions, and monitor for unauthorized remote-access activity to mitigate the threat.]]></description>
+      <pubDate>Fri, 27 Nov 2026 09:29:30 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Telegram Job Ads Linked to Spy Recruitment Campaigns</title>
+      <link>https://secubuzz.com/news/telegram-job-ads-linked-to-spy-recruitment-campaig-fae8daff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/telegram-job-ads-linked-to-spy-recruitment-campaig-fae8daff</guid>
+      <description><![CDATA[Researchers uncovered 3,089 Telegram job posts linked to suspected spy recruitment efforts. The posts repeatedly offered paid gigs, including a 1,500 shekel one-night job, and promoted a U.S. environmental consultancy, enabling attackers to identify and target potential recruits through social engineering. Security teams should monitor Telegram for similar recruitment patterns, block malicious accounts, and educate employees about deceptive job offers.]]></description>
+      <pubDate>Fri, 27 Nov 2026 09:22:53 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/telegram-job-posts/">Cyber Security News</source>
+      <category>Nation State</category>
     </item>
     <item>
       <title>Microsoft Discloses Linux Kernel Privilege-Elevation Vulnerability</title>
@@ -269,6 +341,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>AFP Platform Offline After Cyberattack</title>
+      <link>https://secubuzz.com/news/afp-platform-offline-after-cyberattack-59655a06</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/afp-platform-offline-after-cyberattack-59655a06</guid>
+      <description><![CDATA[Agence France-Presse’s primary global news distribution platform was taken offline following a cyberattack. The attack disrupted content delivery to media partners worldwide, though no data exfiltration or credential compromise was reported. AFP is restoring services and conducting forensic analysis; organizations should monitor for related indicators and ensure backup distribution channels.]]></description>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://therecord.media/france-afp-hit-by-cyberattack">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>UK Dept. Work and Pensions Shuts Services After Incident</title>
       <link>https://secubuzz.com/news/uk-dept-work-and-pensions-shuts-services-after-inc-2c246a42</link>
       <guid isPermaLink="true">https://secubuzz.com/news/uk-dept-work-and-pensions-shuts-services-after-inc-2c246a42</guid>
@@ -374,87 +455,6 @@
       <description><![CDATA[Red Hat released a critical security update for the ruby module on Red Hat Enterprise Linux 9.6 Extended Update Support. The update addresses multiple high-severity vulnerabilities, each with a CVSS base score, that could allow attackers to execute arbitrary code or compromise system integrity. Users should apply the ruby update immediately to mitigate the identified risks.]]></description>
       <pubDate>Thu, 26 Nov 2026 15:20:15 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:103850">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PolinRider Poisoned 7,600 GitHub Repositories</title>
-      <link>https://secubuzz.com/news/polinrider-poisoned-7-600-github-repositories-49f55d40</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/polinrider-poisoned-7-600-github-repositories-49f55d40</guid>
-      <description><![CDATA[North Korea-linked PolinRider actors have planted a Python loader in more than 7,600 GitHub repositories, targeting open-source projects. The loader resides in small utils packages or conftest.py files, executing when Python imports the module and reading the latest transaction data. Security teams should scan repositories for suspicious imports, remove malicious code, and apply the SafeDep advisory to mitigate the spread.]]></description>
-      <pubDate>Thu, 26 Nov 2026 15:13:41 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html">The Hacker News</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103843: Critical: ruby:2.5 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103843-critical-ruby-2-5-security-update-f210d6ea</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103843-critical-ruby-2-5-security-update-f210d6ea</guid>
-      <description><![CDATA[An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Critical.]]></description>
-      <pubDate>Thu, 26 Nov 2026 14:57:03 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103843">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>GitHub Pull Requests Harbor Password-Stealing Malware</title>
-      <link>https://secubuzz.com/news/github-pull-requests-harbor-password-stealing-malw-aa95ae73</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/github-pull-requests-harbor-password-stealing-malw-aa95ae73</guid>
-      <description><![CDATA[Hackers embedded password-stealing malware in pull requests for AsyncAPI Generator, CircuitVerse, and Open Food Facts, compromising software builds. The malicious code executed during automated release workflows, allowing attackers to harvest credentials from build environments without user interaction. Maintainers removed 40 installers from GitHub Actions and should audit code reviews, apply the latest security patches, and enforce strict dependency checks.]]></description>
-      <pubDate>Thu, 26 Nov 2026 14:50:20 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/password-stealing-malware/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical Ruby 2.5 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-ruby-2-5-security-update-3230324c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-ruby-2-5-security-update-3230324c</guid>
-      <description><![CDATA[Red Hat issues a critical security update for the ruby:2.5 module on RHEL 8.6 Advanced Mission Critical and Extended Update Support. The update fixes multiple high-risk vulnerabilities; CVE identifiers and CVSS scores are listed in the advisory references. Administrators should apply the ruby:2.5 update via yum or dnf immediately to mitigate exploitation.]]></description>
-      <pubDate>Thu, 26 Nov 2026 14:48:38 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103842">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical Ruby Update for RHEL 10</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-ruby-update-for-rhel-10-8756c79c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-ruby-update-for-rhel-10-8756c79c</guid>
-      <description><![CDATA[Red Hat released a critical security update for the ruby package on RHEL 10.0 Extended Update Support. The patch fixes multiple high-severity vulnerabilities, such as integer overflows and buffer overflows, that could enable local privilege escalation or remote code execution. System administrators should apply the update immediately and confirm that the ruby package is at the latest version.]]></description>
-      <pubDate>Thu, 26 Nov 2026 14:48:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103851">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical Ruby 2.5 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-ruby-2-5-security-update-9f40644a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-ruby-2-5-security-update-9f40644a</guid>
-      <description><![CDATA[Red Hat released a critical security update for the ruby:2.5 module on RHEL 8.4 and Extended Update Support platforms. The update addresses high-severity integer and buffer overflows that could allow local privilege escalation or remote code execution. Administrators should apply the patch immediately and ensure the ruby:2.5 package is updated.]]></description>
-      <pubDate>Thu, 26 Nov 2026 14:46:37 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103846">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PyJWT Vulnerabilities Enable DoS and Token Bypass</title>
-      <link>https://secubuzz.com/news/pyjwt-vulnerabilities-enable-dos-and-token-bypass-8a613118</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pyjwt-vulnerabilities-enable-dos-and-token-bypass-8a613118</guid>
-      <description><![CDATA[PyJWT in Ubuntu 22.04 LTS has two vulnerabilities that can trigger denial of service or bypass token claim checks. CVE-2026-102265 exploits improper error handling in nested token headers; CVE-2026-103001 alters options mapping when signature verification is disabled, enabling reuse to bypass expiration. Ubuntu advises installing the patched PyJWT package via apt to mitigate both denial-of-service and authentication-bypass risks.]]></description>
-      <pubDate>Thu, 26 Nov 2026 14:45:08 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9212-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Anthropic Tests Claude AI Escape in Honeypot</title>
-      <link>https://secubuzz.com/news/anthropic-tests-claude-ai-escape-in-honeypot-f0b29504</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-tests-claude-ai-escape-in-honeypot-f0b29504</guid>
-      <description><![CDATA[Anthropic built a honeypot to test whether its Claude AI agents could escape containment by seeking a valuable target. The experiment found no exploitation, showing current safeguards stop Claude from breaking out, yet revealing future vectors if access widens. No patch is required, but the study highlights the need for continuous monitoring of AI behavior in controlled environments.]]></description>
-      <pubDate>Thu, 26 Nov 2026 14:36:43 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/ai/2026/11/anthropic-built-a-honeypot-to-see-if-ai-agents-will-break-out">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:103838: Critical: kernel-rt security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-103838-critical-kernel-rt-security-bug-f-ca6a4a3d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-103838-critical-kernel-rt-security-bug-f-ca6a4a3d</guid>
-      <description><![CDATA[An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 26 Nov 2026 14:36:40 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103838">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
