@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "sailpoint-research-highlights-identity-security-ga-7425fe0e",
+    "title": "SailPoint Research Highlights Identity Security Gaps in AI Agents",
+    "summary": "According to research by SailPoint, 79 percent of enterprises have deployed autonomous AI agents into production environments. The report indicates that only 2 percent of organizations have implemented identity security controls specifically designed for these automated systems. Security teams must establish governance, manage access privileges, and prevent operational disruptions as regulators demand accountability.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/27/sailpoint-2027-ai-identity-security-predictions-report/",
+    "publishedAt": "2026-11-27T06:30:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sailpoint-research-highlights-identity-security-ga",
+      "article-7425fe0e",
+      "7425fe0e",
+      "sailpoint-research-highlights-identity-security-ga-ecaf35",
+      "sailpoint-research-highlights-identity-security-gaps-in-ai-a"
+    ]
+  },
+  {
     "slug": "ai-agents-breach-swiss-critical-infrastructure-ope-4b40ae3a",
     "title": "AI Agents Breach Swiss Critical Infrastructure Operators",
     "summary": "Attackers using AI agents breached computer systems at Swiss organizations, including three critical infrastructure operators, marking incidents in the country. The intrusion leveraged automated threat actors, achieving unauthorized access in two operators without causing major disruptions, though details remain undisclosed. Swiss cybersecurity agency urges operators to review AI threat detection and enforce stricter access controls, but no patch is applicable.",
@@ -27,6 +46,25 @@ export const news: NewsBrief[] = [
       "4b40ae3a",
       "ai-agents-breach-swiss-critical-infrastructure-ope-478acc",
       "ai-agents-breach-swiss-critical-infrastructure-operators"
+    ]
+  },
+  {
+    "slug": "norton-integrates-scam-detection-tools-into-claude-5b7cc222",
+    "title": "Norton Integrates Scam Detection Tools into Claude AI Chatbot",
+    "summary": "Gen Digital introduced the Norton connector for the Claude AI chatbot to provide embedded scam detection capabilities. The integration allows users to submit suspicious emails, text messages, screenshots, and web links for automated analysis without requiring a Norton account. Defensive teams and end users can utilize the free connector to evaluate potential fraud indicators and security questions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/27/product-showcase-norton-claude-scam-detection/",
+    "publishedAt": "2026-11-27T06:00:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "norton-integrates-scam-detection-tools-into-claude",
+      "article-5b7cc222",
+      "5b7cc222",
+      "norton-integrates-scam-detection-tools-into-claude-51523c",
+      "norton-integrates-scam-detection-tools-into-claude-ai-chatbo"
     ]
   },
   {
@@ -9598,42 +9636,6 @@ export const news: NewsBrief[] = [
       "article-fcf6ba53",
       "fcf6ba53",
       "gta-vi-hacker-sentenced-released-same-day-47eeb4"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102696-critical-php-8-2-security-update-d2bfc141",
-    "title": "RHSA-2026:102696: Critical: php:8.2 security update",
-    "summary": "An update for the php:8.2 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102696",
-    "publishedAt": "2026-11-23T23:31:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102696-critical-php-8-2-security-update",
-      "article-d2bfc141",
-      "d2bfc141",
-      "rhsa-2026-102696-critical-php-8-2-security-update-2ee16e"
-    ]
-  },
-  {
-    "slug": "cybersecurity-jobs-open-now-november-24-2026-f8135851",
-    "title": "Cybersecurity Jobs Open Now, November 24, 2026",
-    "summary": "A new Applied Cyber, Detections role is listed by Help Net Security, targeting remote positions in the United States. Candidates will support detection operations, develop and refine detection logic, and automate alert triage across web domains, social media, and other digital channels. The posting encourages collaboration with engineering and product teams to enhance detection capabilities and address evolving cyber threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/cybersecurity-jobs-available-right-now-november-24-2026/",
-    "publishedAt": "2026-11-23T23:30:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cybersecurity-jobs-open-now-november-24-2026",
-      "article-f8135851",
-      "f8135851",
-      "cybersecurity-jobs-open-now-november-24-2026-60bd08"
     ]
   }
 ];

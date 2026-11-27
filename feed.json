@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/27/sailpoint-2027-ai-identity-security-predictions-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/27/sailpoint-2027-ai-identity-security-predictions-report/",
+    "title": "SailPoint Research Highlights Identity Security Gaps in AI Agents",
+    "headline": "SailPoint Research Highlights Identity Security Gaps in AI Agents",
+    "summary": "According to research by SailPoint, 79 percent of enterprises have deployed autonomous AI agents into production environments. The report indicates that only 2 percent of organizations have implemented identity security controls specifically designed for these automated systems. Security teams must establish governance, manage access privileges, and prevent operational disruptions as regulators demand accountability.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-27T06:30:14.000Z",
+    "ingestedAt": "2026-11-27T07:45:10.279Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/27/sailpoint-2027-ai-identity-security-predictions-report/",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
     "sourceUrl": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
     "title": "AI Agents Breach Swiss Critical Infrastructure Operators",
@@ -13,6 +29,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/27/product-showcase-norton-claude-scam-detection/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/27/product-showcase-norton-claude-scam-detection/",
+    "title": "Norton Integrates Scam Detection Tools into Claude AI Chatbot",
+    "headline": "Norton Integrates Scam Detection Tools into Claude AI Chatbot",
+    "summary": "Gen Digital introduced the Norton connector for the Claude AI chatbot to provide embedded scam detection capabilities. The integration allows users to submit suspicious emails, text messages, screenshots, and web links for automated analysis without requiring a Norton account. Defensive teams and end users can utilize the free connector to evaluate potential fraud indicators and security questions.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-27T06:00:59.000Z",
+    "ingestedAt": "2026-11-27T07:45:10.279Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/27/product-showcase-norton-claude-scam-detection/",
     "additionalSources": []
   },
   {
@@ -8299,39 +8331,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://therecord.media/gta-vi-hacker-arion-kurtaj-released-on-license",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:102696",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102696",
-    "title": "RHSA-2026:102696: Critical: php:8.2 security update",
-    "headline": "RHSA-2026:102696: Critical: php:8.2 security update",
-    "summary": "An update for the php:8.2 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-23T23:31:55.000Z",
-    "ingestedAt": "2026-11-23T23:43:43.002Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/24/cybersecurity-jobs-available-right-now-november-24-2026/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/cybersecurity-jobs-available-right-now-november-24-2026/",
-    "title": "Cybersecurity Jobs Open Now, November 24, 2026",
-    "headline": "Cybersecurity Jobs Open Now, November 24, 2026",
-    "summary": "A new Applied Cyber, Detections role is listed by Help Net Security, targeting remote positions in the United States. Candidates will support detection operations, develop and refine detection logic, and automate alert triage across web domains, social media, and other digital channels. The posting encourages collaboration with engineering and product teams to enhance detection capabilities and address evolving cyber threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-23T23:30:54.000Z",
-    "ingestedAt": "2026-11-24T00:43:49.459Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/24/cybersecurity-jobs-available-right-now-november-24-2026/",
     "additionalSources": []
   }
 ]

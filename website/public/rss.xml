@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 06:44:52 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 07:45:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SailPoint Research Highlights Identity Security Gaps in AI Agents</title>
+      <link>https://secubuzz.com/news/sailpoint-research-highlights-identity-security-ga-7425fe0e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sailpoint-research-highlights-identity-security-ga-7425fe0e</guid>
+      <description><![CDATA[According to research by SailPoint, 79 percent of enterprises have deployed autonomous AI agents into production environments. The report indicates that only 2 percent of organizations have implemented identity security controls specifically designed for these automated systems. Security teams must establish governance, manage access privileges, and prevent operational disruptions as regulators demand accountability.]]></description>
+      <pubDate>Fri, 27 Nov 2026 06:30:14 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/27/sailpoint-2027-ai-identity-security-predictions-report/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>AI Agents Breach Swiss Critical Infrastructure Operators</title>
       <link>https://secubuzz.com/news/ai-agents-breach-swiss-critical-infrastructure-ope-4b40ae3a</link>
@@ -15,6 +24,15 @@
       <pubDate>Fri, 27 Nov 2026 06:04:20 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html">The Hacker News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Norton Integrates Scam Detection Tools into Claude AI Chatbot</title>
+      <link>https://secubuzz.com/news/norton-integrates-scam-detection-tools-into-claude-5b7cc222</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/norton-integrates-scam-detection-tools-into-claude-5b7cc222</guid>
+      <description><![CDATA[Gen Digital introduced the Norton connector for the Claude AI chatbot to provide embedded scam detection capabilities. The integration allows users to submit suspicious emails, text messages, screenshots, and web links for automated analysis without requiring a Norton account. Defensive teams and end users can utilize the free connector to evaluate potential fraud indicators and security questions.]]></description>
+      <pubDate>Fri, 27 Nov 2026 06:00:59 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/27/product-showcase-norton-claude-scam-detection/">Help Net Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>Hackers Hide PolinRider Malware in 375 GitHub Repositories to Execute Malicious Code</title>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 26 Nov 2026 09:37:19 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9208-1">Ubuntu Security Notices</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>USN-9209-1: Simple DirectMedia Layer vulnerability</title>
-      <link>https://secubuzz.com/news/usn-9209-1-simple-directmedia-layer-vulnerability-5cf000c8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9209-1-simple-directmedia-layer-vulnerability-5cf000c8</guid>
-      <description><![CDATA[It was discovered that Simple DirectMedia Layer incorrectly handled memory when encountering errors during OpenGL ES streaming texture creation. An attacker could possibly use this issue to cause applications using Simple DirectMedia Layer to consume resources, resulting in a denial of service.]]></description>
-      <pubDate>Thu, 26 Nov 2026 09:14:33 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9209-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hacker Servers Expose U.S. Hospital Credentials and Cloud Access</title>
-      <link>https://secubuzz.com/news/hacker-servers-expose-u-s-hospital-credentials-and-877e7623</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hacker-servers-expose-u-s-hospital-credentials-and-877e7623</guid>
-      <description><![CDATA[Exposed web directories on hacker servers revealed U.S. hospital credential records, 155,000 cloud storage objects, and a map of law firm remote-access systems. Operators had used a valid cloud token, suggesting credential reuse and potential unauthorized access to sensitive medical and legal data. Teams should secure directories, revoke tokens, enforce MFA, and investigate lateral movement to mitigate data exfiltration risks.]]></description>
-      <pubDate>Thu, 26 Nov 2026 08:41:41 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/exposed-hacker-servers/">Cyber Security News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
