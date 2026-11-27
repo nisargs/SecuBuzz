@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "matters-ai-secures-largest-indian-cyber-pre-series-e660a747",
+    "title": "Matters.AI Secures Largest Indian Cyber Pre-Series A",
+    "summary": "Matters.AI raised India’s largest cybersecurity pre-Series A round, merging four legacy tools into an autonomous AI platform that traces data lineage, analyzes intent, and remediates threats. It fuses data-loss-prevention, identity-access-management, and threat-intelligence engines for continuous monitoring and automated policy enforcement. Funding will accelerate development, expand market reach, and enhance AI-driven remediation for mid-market enterprises.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks",
+    "publishedAt": "2026-11-27T15:27:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "matters-ai-secures-largest-indian-cyber-pre-series",
+      "article-e660a747",
+      "e660a747",
+      "matters-ai-secures-largest-indian-cyber-pre-series-6a19ed",
+      "matters-ai-secures-largest-indian-cyber-pre-series-a"
+    ]
+  },
+  {
     "slug": "u-s-air-force-cloud-one-platform-breached-by-hacke-3a62d6c0",
     "title": "U.S. Air Force Cloud One Platform Breached by Hackers, Exposing Classified Data",
     "summary": "In early 2024, hackers breached the U.S. Air Force’s Cloud One platform, compromising classified military, personnel, and logistics data. The intrusion exploited unpatched vulnerabilities and misconfigurations uncovered during recent upgrade work, allowing unauthorized access to sensitive information. Air Force security teams are conducting a comprehensive audit, applying pending patches, tightening access controls, and monitoring for further anomalous activity.",
@@ -9587,25 +9606,6 @@ export const news: NewsBrief[] = [
       "8446c119",
       "oracle-outside-in-vulnerability-enables-remote-cod-77f3bf",
       "oracle-outside-in-vulnerability-enables-remote-code-executio"
-    ]
-  },
-  {
-    "slug": "oracle-autonomous-ai-database-vulnerability-enable-9bbf1020",
-    "title": "Oracle Autonomous AI Database Vulnerability Enables Remote Code Execution",
-    "summary": "A command injection flaw in Oracle Autonomous AI Database’s ORDS AutoUpgrade servlet allows remote code execution on affected installations. Authentication is required but can be actively bypassed, and the vulnerability scores CVSS 7.5, indicating high severity. Oracle has issued a patch; users should apply the update promptly to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1149/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-autonomous-ai-database-vulnerability-enable",
-      "article-9bbf1020",
-      "9bbf1020",
-      "oracle-autonomous-ai-database-vulnerability-enable-77f3bc",
-      "oracle-autonomous-ai-database-vulnerability-enables-remote-c"
     ]
   }
 ];

@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks",
+    "title": "Matters.AI Secures Largest Indian Cyber Pre-Series A",
+    "headline": "Matters.AI Secures Largest Indian Cyber Pre-Series A",
+    "summary": "Matters.AI raised India’s largest cybersecurity pre-Series A round, merging four legacy tools into an autonomous AI platform that traces data lineage, analyzes intent, and remediates threats. It fuses data-loss-prevention, identity-access-management, and threat-intelligence engines for continuous monitoring and automated policy enforcement. Funding will accelerate development, expand market reach, and enhance AI-driven remediation for mid-market enterprises.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-11-27T15:27:20.000Z",
+    "ingestedAt": "2026-11-27T16:43:11.606Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
     "title": "U.S. Air Force Cloud One Platform Breached by Hackers, Exposing Classified Data",
@@ -8306,22 +8322,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1150/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1149/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1149/",
-    "title": "Oracle Autonomous AI Database Vulnerability Enables Remote Code Execution",
-    "headline": "Oracle Autonomous AI Database Vulnerability Enables Remote Code Execution",
-    "summary": "A command injection flaw in Oracle Autonomous AI Database’s ORDS AutoUpgrade servlet allows remote code execution on affected installations. Authentication is required but can be actively bypassed, and the vulnerability scores CVSS 7.5, indicating high severity. Oracle has issued a patch; users should apply the update promptly to prevent exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "ingestedAt": "2026-11-24T23:04:26.182Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1149/",
     "additionalSources": []
   }
 ]

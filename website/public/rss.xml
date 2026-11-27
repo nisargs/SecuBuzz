@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 15:44:56 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 16:43:16 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Matters.AI Secures Largest Indian Cyber Pre-Series A</title>
+      <link>https://secubuzz.com/news/matters-ai-secures-largest-indian-cyber-pre-series-e660a747</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/matters-ai-secures-largest-indian-cyber-pre-series-e660a747</guid>
+      <description><![CDATA[Matters.AI raised India’s largest cybersecurity pre-Series A round, merging four legacy tools into an autonomous AI platform that traces data lineage, analyzes intent, and remediates threats. It fuses data-loss-prevention, identity-access-management, and threat-intelligence engines for continuous monitoring and automated policy enforcement. Funding will accelerate development, expand market reach, and enhance AI-driven remediation for mid-market enterprises.]]></description>
+      <pubDate>Fri, 27 Nov 2026 15:27:20 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks">Dark Reading</source>
+      <category>General</category>
+    </item>
     <item>
       <title>U.S. Air Force Cloud One Platform Breached by Hackers, Exposing Classified Data</title>
       <link>https://secubuzz.com/news/u-s-air-force-cloud-one-platform-breached-by-hacke-3a62d6c0</link>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 27 Nov 2026 06:00:59 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/27/product-showcase-norton-claude-scam-detection/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Cacti Zero-Day Enables Unauthenticated Remote Code Execution via Guest Access</title>
-      <link>https://secubuzz.com/news/cacti-zero-day-enables-unauthenticated-remote-code-1e65c459</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cacti-zero-day-enables-unauthenticated-remote-code-1e65c459</guid>
-      <description><![CDATA[Cacti, a popular network monitoring tool, suffered a zero-day vulnerability that lets attackers execute arbitrary OS commands without authentication. The flaw, triggered by four HTTP requests, bypasses the web interface’s authentication, enabling remote code execution through guest access. Cacti developers released a patch; administrators should update to the latest version or disable guest access to mitigate the risk.]]></description>
-      <pubDate>Fri, 27 Nov 2026 05:48:20 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
