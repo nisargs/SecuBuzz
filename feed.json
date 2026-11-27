@@ -394,6 +394,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+    "title": "CISA Adds Three Exploited Vulnerabilities to Catalog",
+    "headline": "CISA Adds Three Exploited Vulnerabilities to Catalog",
+    "summary": "CISA added three vulnerabilities to KEV catalog: OSGeo GeoServer XML injection (CVE-2026-120705), OSGeo GeoServer incorrect authorization (CVE-2026-129243), and Drupal Core improper condition check (CVE-2026-136716). These flaws enable remote code execution or privilege escalation via malformed XML or unauthorized access, confirmed in the wild.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-11-27T12:00:00.000Z",
+    "ingestedAt": "2026-11-27T20:43:11.789Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:104032",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:104032",
     "title": "Red Hat Releases Critical Kernel Security Update",
@@ -8306,22 +8322,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1139/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1134/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1134/",
-    "title": "AutoCAD DWG Data Link RCE Vulnerability",
-    "headline": "AutoCAD DWG Data Link RCE Vulnerability",
-    "summary": "A remote code execution flaw in Autodesk AutoCAD’s DWG file data link handling allows attackers to run arbitrary code when a user opens a malicious file. CVE-2026-18827 carries a CVSS score of 7.8, indicating high severity, and requires user interaction to exploit. Users should apply the vendor’s patch or upgrade to the latest AutoCAD release to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "ingestedAt": "2026-11-25T01:43:21.197Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1134/",
     "additionalSources": []
   }
 ]

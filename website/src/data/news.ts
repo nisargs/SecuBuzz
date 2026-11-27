@@ -476,6 +476,29 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisa-adds-three-exploited-vulnerabilities-to-catal-a6e3e1ce",
+    "title": "CISA Adds Three Exploited Vulnerabilities to Catalog",
+    "summary": "CISA added three vulnerabilities to KEV catalog: OSGeo GeoServer XML injection (CVE-2026-120705), OSGeo GeoServer incorrect authorization (CVE-2026-129243), and Drupal Core improper condition check (CVE-2026-136716). These flaws enable remote code execution or privilege escalation via malformed XML or unauthorized access, confirmed in the wild.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-27T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-120705",
+      "CVE-2026-129243",
+      "CVE-2026-136716"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-three-exploited-vulnerabilities-to-catal",
+      "article-a6e3e1ce",
+      "a6e3e1ce",
+      "cisa-adds-three-exploited-vulnerabilities-to-catal-64c76d",
+      "cisa-adds-three-exploited-vulnerabilities-to-catalog"
+    ]
+  },
+  {
     "slug": "red-hat-releases-critical-kernel-security-update-974e1e88",
     "title": "Red Hat Releases Critical Kernel Security Update",
     "summary": "Red Hat released a critical kernel security update for RHEL 10.0 EUS, addressing several high-severity kernel flaws. The advisory lists CVSS base scores for each vulnerability, though specific CVE identifiers are not named, indicating potential privilege escalation or denial-of-service risks. Red Hat recommends applying the kernel update immediately; CVE links in the references provide detailed severity information.",
@@ -9578,26 +9601,6 @@ export const news: NewsBrief[] = [
       "article-b3f0d970",
       "b3f0d970",
       "oracle-autonomous-ai-db-rce-via-onnx-runtime-77f3b8"
-    ]
-  },
-  {
-    "slug": "autocad-dwg-data-link-rce-vulnerability-fe702911",
-    "title": "AutoCAD DWG Data Link RCE Vulnerability",
-    "summary": "A remote code execution flaw in Autodesk AutoCAD’s DWG file data link handling allows attackers to run arbitrary code when a user opens a malicious file. CVE-2026-18827 carries a CVSS score of 7.8, indicating high severity, and requires user interaction to exploit. Users should apply the vendor’s patch or upgrade to the latest AutoCAD release to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1134/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-18827"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "autocad-dwg-data-link-rce-vulnerability",
-      "article-fe702911",
-      "fe702911",
-      "autocad-dwg-data-link-rce-vulnerability-77f3b8"
     ]
   }
 ];
