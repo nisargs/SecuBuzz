@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "drupal-reports-exploited-site-takeover-vulnerabili-7db66afe",
+    "title": "Drupal Reports Exploited Site Takeover Vulnerability",
+    "summary": "Drupal security team reports a second critical flaw that lets attackers breach and hijack unpatched sites. The vulnerability enables remote code execution and full site takeover, and has already been used in active attacks; no patch is available. Drupal urges immediate application of the latest security release or patch to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+    "publishedAt": "2026-11-27T10:10:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-reports-exploited-site-takeover-vulnerabili",
+      "article-7db66afe",
+      "7db66afe",
+      "drupal-reports-exploited-site-takeover-vulnerabili-1232bf",
+      "drupal-reports-exploited-site-takeover-vulnerability"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-kernel-update-for-rhel-8-4d10dbc2",
+    "title": "Red Hat Releases Critical Kernel Update for RHEL 8.6",
+    "summary": "Red Hat released a critical kernel update for RHEL 8.6 Advanced Mission Critical Update Support and RHEL 8.6 Extended Update Support Long-Life Add-On. The update addresses multiple kernel vulnerabilities with a CVSS base score indicating critical impact; no public exploits are reported. Security teams should apply the patch immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:104030",
+    "publishedAt": "2026-11-27T10:06:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-kernel-update-for-rhel-8",
+      "article-4d10dbc2",
+      "4d10dbc2",
+      "red-hat-releases-critical-kernel-update-for-rhel-8-2ee23f",
+      "red-hat-releases-critical-kernel-update-for-rhel-8-6"
+    ]
+  },
+  {
+    "slug": "sap-reports-security-incident-after-github-anomaly-93b187d0",
+    "title": "SAP Reports Security Incident After GitHub Anomaly",
+    "summary": "SAP detected suspicious activity originating from its GitHub repository, prompting an internal investigation. The incident involved unauthorized code commits and potential credential exposure, though no customer data was confirmed compromised. SAP issued an emergency patch, revoked compromised tokens, and advised customers to review access logs, enforce MFA, and monitor for anomalies.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
+    "publishedAt": "2026-11-27T09:56:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sap-reports-security-incident-after-github-anomaly",
+      "article-93b187d0",
+      "93b187d0",
+      "sap-reports-security-incident-after-github-anomaly-63c23c"
+    ]
+  },
+  {
     "slug": "flight-centre-travel-group-warns-of-customer-data-98b6cae9",
     "title": "Flight Centre Travel Group warns of customer data breach involving some passport details",
     "summary": "In a statement to the Australian Securities Exchange, the Brisbane-based travel company said it is investigating “unusual activity” in a third-party accommodation booking system used by the Flight Centre brand, Travel Associates, Cruiseabout and some independent agents.",
@@ -27,6 +83,65 @@ export const news: NewsBrief[] = [
       "98b6cae9",
       "flight-centre-travel-group-warns-of-customer-data-4eb7ee",
       "flight-centre-travel-group-warns-of-customer-data-breach-inv"
+    ]
+  },
+  {
+    "slug": "colorado-mycolorado-data-breach-exposes-100-000-us-77dade86",
+    "title": "Colorado myColorado Data Breach Exposes 100,000 Users",
+    "summary": "Hackers breached the myColorado digital identification and document storage application, accessing user-uploaded data. The breach exposed personal information of approximately 100,000 users, including documents and identification files, with no indication of credential theft. Security teams should verify account integrity, enforce multi-factor authentication, and monitor for suspicious activity following the incident.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/",
+    "publishedAt": "2026-11-27T09:30:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "colorado-mycolorado-data-breach-exposes-100-000-us",
+      "article-77dade86",
+      "77dade86",
+      "colorado-mycolorado-data-breach-exposes-100-000-us-1b72ac",
+      "colorado-mycolorado-data-breach-exposes-100-000-users"
+    ]
+  },
+  {
+    "slug": "microsoft-discloses-linux-kernel-privilege-elevati-3c462fdd",
+    "title": "Microsoft Discloses Linux Kernel Privilege-Elevation Vulnerability",
+    "summary": "Microsoft disclosed CVE-2026-62840, a Linux kernel privilege-elevation flaw affecting kernel versions in the 5.x series. The vulnerability permits local attackers to gain root privileges without authentication, potentially enabling full system compromise; no public exploit is currently available. Microsoft recommends applying the latest kernel patch or upgrading to the fixed kernel release to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62840",
+    "publishedAt": "2026-11-27T09:10:39.000Z",
+    "cves": [
+      "CVE-2026-62840"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-discloses-linux-kernel-privilege-elevati",
+      "article-3c462fdd",
+      "3c462fdd",
+      "microsoft-discloses-linux-kernel-privilege-elevati-745d82",
+      "microsoft-discloses-linux-kernel-privilege-elevation-vulnera"
+    ]
+  },
+  {
+    "slug": "microsoft-issues-hotpatch-for-windows-server-2025-a6463b79",
+    "title": "Microsoft Issues Hotpatch for Windows Server 2025 Crashes",
+    "summary": "Windows Server 2025 experiences kernel crashes after installing KB5131077 hotpatch, disrupting services. The flaw stems from improper memory handling in the patch, leading to stack corruption and system instability. Microsoft released an emergency hotpatch to resolve the issue; administrators should apply the update immediately to prevent downtime and maintain availability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/",
+    "publishedAt": "2026-11-27T09:08:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-issues-hotpatch-for-windows-server-2025",
+      "article-a6463b79",
+      "a6463b79",
+      "microsoft-issues-hotpatch-for-windows-server-2025-47956d",
+      "microsoft-issues-hotpatch-for-windows-server-2025-crashes"
     ]
   },
   {
@@ -89,6 +204,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "top-sse-solutions-ranked-2026-e38d4499",
+    "title": "Top SSE Solutions Ranked 2026",
+    "summary": "Security Service Edge solutions integrate SWG, CASB, ZTNA, and DLP to provide cloud-based protection. The 2026 ranking evaluates policy engine convergence, data-protection depth, and threat-prevention effectiveness across vendors. Zscaler tops the list, followed by leading providers, offering unified policy management, advanced threat analytics, and seamless integration with existing infrastructure globally.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-sse-solutions/",
+    "publishedAt": "2026-11-27T07:29:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-sse-solutions-ranked-2026",
+      "article-e38d4499",
+      "e38d4499",
+      "top-sse-solutions-ranked-2026-358ee5"
+    ]
+  },
+  {
+    "slug": "2026-ranking-of-top-ten-sase-solutions-0c5337e7",
+    "title": "2026 Ranking of Top Ten SASE Solutions",
+    "summary": "A 2026 ranking lists the top ten SASE solutions, evaluating how vendors integrate SD-WAN and cloud security. The report notes that some providers originated in networking, others in security, and a few built the architecture from the outset, affecting performance and feature parity. The article recommends reviewing vendor scores and aligning them with organizational requirements before procurement.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-sase-solutions-2/",
+    "publishedAt": "2026-11-27T07:27:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-ranking-of-top-ten-sase-solutions",
+      "article-0c5337e7",
+      "0c5337e7",
+      "2026-ranking-of-top-ten-sase-solutions-4b8b3e"
+    ]
+  },
+  {
     "slug": "tampered-q-dir-installers-deliver-remote-access-tr-80d8ca43",
     "title": "Tampered Q-Dir Installers Deliver Remote Access Trojans",
     "summary": "Malicious Q-Dir and DesktopOK installers from SoftwareOK silently launched legitimate apps while injecting a Python-based RAT. The RAT grants remote command execution, letting attackers control PCs without user awareness and exploiting supply-chain trust. SoftwareOK issued a clean installer and urges users to verify checksums and update to the latest version to remove the backdoor.",
@@ -123,6 +274,24 @@ export const news: NewsBrief[] = [
       "article-60766950",
       "60766950",
       "2026-dmarc-tool-rankings-and-features-63c61e"
+    ]
+  },
+  {
+    "slug": "best-bec-protection-tools-ranked-2026-d682f9e6",
+    "title": "Best BEC Protection Tools Ranked 2026",
+    "summary": "Business email compromise attacks target finance teams through crafted phishing messages that appear legitimate. These attacks exploit social engineering rather than malware, requiring behavioral modeling of normal communication patterns to detect deviations. Security vendors provide ranked solutions that analyze sender relationships, transaction history, and contextual risk to mitigate BEC, with the top ten listed for 2026.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-bec-protection/",
+    "publishedAt": "2026-11-27T07:23:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "best-bec-protection-tools-ranked-2026",
+      "article-d682f9e6",
+      "d682f9e6",
+      "best-bec-protection-tools-ranked-2026-5b62f0"
     ]
   },
   {
@@ -370,6 +539,25 @@ export const news: NewsBrief[] = [
       "96fe0b06",
       "node-js-27-alpha-improves-http-security-deprecates-4bc16c",
       "node-js-27-alpha-improves-http-security-deprecates-tls-1-2"
+    ]
+  },
+  {
+    "slug": "uk-dept-work-and-pensions-shuts-services-after-inc-2c246a42",
+    "title": "UK Dept. Work and Pensions Shuts Services After Incident",
+    "summary": "A cyber incident was reported by the UK Department for Work and Pensions, leading to the shutdown of multiple online services as a precautionary measure. The root cause remains undisclosed, but the disruption indicates potential unauthorized access or system compromise. The department has not released a patch, but recommends monitoring for further updates and applying standard security hardening practices.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/uk-department-work-pensions-cyber-incident",
+    "publishedAt": "2026-11-27T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uk-dept-work-and-pensions-shuts-services-after-inc",
+      "article-2c246a42",
+      "2c246a42",
+      "uk-dept-work-and-pensions-shuts-services-after-inc-444f09",
+      "uk-dept-work-and-pensions-shuts-services-after-incident"
     ]
   },
   {
@@ -9483,171 +9671,6 @@ export const news: NewsBrief[] = [
       "article-feaf3316",
       "feaf3316",
       "red-hat-issues-important-libxi-update-for-rhel-9-4-2ee172"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-tigervnc-update-for-rhel-8-6-f2a1fd5e",
-    "title": "Red Hat Releases Tigervnc Update for RHEL 8.6",
-    "summary": "Red Hat issued an important security update for the Tigervnc remote desktop server on RHEL 8.6 Advanced and Extended Update Support. The update addresses multiple vulnerabilities identified in Tigervnc, each assigned a CVSS base score and linked to CVE identifiers in the advisory references. Red Hat recommends applying the patch immediately to mitigate potential exploitation and maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102805",
-    "publishedAt": "2026-11-24T05:07:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-tigervnc-update-for-rhel-8-6",
-      "article-f2a1fd5e",
-      "f2a1fd5e",
-      "red-hat-releases-tigervnc-update-for-rhel-8-6-2ee174"
-    ]
-  },
-  {
-    "slug": "stalwart-1-2-0-adds-full-exchange-protocol-support-23b9d255",
-    "title": "Stalwart 1.2.0 Adds Full Exchange Protocol Support",
-    "summary": "Stalwart 1.2.0 introduces full Exchange-compatible protocols, enabling MAPI over HTTP, EWS, ActiveSync, and Autodiscover for Outlook, Apple Mail, and mobile clients. The open-source mail server ships under the AGPL Community edition, offering mail, calendar, contacts, tasks, and notes. Administrators can deploy Stalwart as a drop-in replacement for Microsoft Exchange, but should evaluate compatibility with existing client configurations before migration.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/24/stalwart-microsoft-exchange-replacement/",
-    "publishedAt": "2026-11-24T05:00:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "stalwart-1-2-0-adds-full-exchange-protocol-support",
-      "article-23b9d255",
-      "23b9d255",
-      "stalwart-1-2-0-adds-full-exchange-protocol-support-1a1a56"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102802-important-libxi-security-update-cfea5ec0",
-    "title": "RHSA-2026:102802: Important: libXi security update",
-    "summary": "An update for libXi is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102802",
-    "publishedAt": "2026-11-24T04:22:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102802-important-libxi-security-update",
-      "article-cfea5ec0",
-      "cfea5ec0",
-      "rhsa-2026-102802-important-libxi-security-update-2ee174"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-libxi-security-update-for-rhel-8-01b8354e",
-    "title": "Red Hat Releases libXi Security Update for RHEL 8.6",
-    "summary": "Red Hat issued a security update for the libXi library on RHEL 8.6 Advanced Mission Critical and Extended Update Support, addressing identified vulnerabilities. The update carries an Important impact rating; CVSS base scores are available via CVE links, but no active exploitation is reported. Red Hat recommends applying the patch through standard update channels immediately.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102803",
-    "publishedAt": "2026-11-24T04:20:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-libxi-security-update-for-rhel-8",
-      "article-01b8354e",
-      "01b8354e",
-      "red-hat-releases-libxi-security-update-for-rhel-8-2ee174",
-      "red-hat-releases-libxi-security-update-for-rhel-8-6"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-libxi-update-for-rhel-9-2-sap-ab037c79",
-    "title": "Red Hat Issues libXi Update for RHEL 9.2 SAP",
-    "summary": "Red Hat released a security update for the libXi library on RHEL 9.2 Update Services for SAP Solutions, addressing identified vulnerabilities. The patch is rated Important; CVSS base scores are provided via CVE links, with no reported active exploitation. Apply the update through standard update channels to mitigate the identified flaws.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102800",
-    "publishedAt": "2026-11-24T04:17:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-libxi-update-for-rhel-9-2-sap",
-      "article-ab037c79",
-      "ab037c79",
-      "red-hat-issues-libxi-update-for-rhel-9-2-sap-2ee174"
-    ]
-  },
-  {
-    "slug": "openai-and-cisco-release-shirudo-to-block-linux-ex-1663e286",
-    "title": "OpenAI and Cisco Release Shirudo to Block Linux Exploits",
-    "summary": "OpenAI and Cisco introduced Shirudo, an open-source AI-driven tool that blocks specific exploits on live Linux servers while teams test and deploy permanent patches. In a controlled test, a Codex-generated shield prevented a Java4Shell exploit against Elasticsearch without service interruption. Security teams should deploy Shirudo immediately to mitigate known exploits and reduce patch deployment windows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openai-and-cisco-launch-shirudo/",
-    "publishedAt": "2026-11-24T03:51:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-and-cisco-release-shirudo-to-block-linux-ex",
-      "article-1663e286",
-      "1663e286",
-      "openai-and-cisco-release-shirudo-to-block-linux-ex-d4a78b",
-      "openai-and-cisco-release-shirudo-to-block-linux-exploits"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-102715-critical-ruby-security-bug-fix-an-93e531fa",
-    "title": "RHSA-2026:102715: Critical: ruby security, bug fix, and enhancement update",
-    "summary": "An update for ruby is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102715",
-    "publishedAt": "2026-11-24T03:09:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-102715-critical-ruby-security-bug-fix-an",
-      "article-93e531fa",
-      "93e531fa",
-      "rhsa-2026-102715-critical-ruby-security-bug-fix-an-2ee171",
-      "rhsa-2026-102715-critical-ruby-security-bug-fix-and-enhancem"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-ruby4-0-security-update-59a21035",
-    "title": "Red Hat Issues Critical ruby4.0 Security Update",
-    "summary": "Red Hat issued a critical security update for the ruby4.0 package on RHEL 10, addressing several high-severity bugs. The advisory references CVSS base scores for each vulnerability, though specific CVE identifiers are not disclosed in the notice. Administrators should apply the ruby4.0 update promptly to prevent exploitation of the identified weaknesses.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102714",
-    "publishedAt": "2026-11-24T03:09:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-ruby4-0-security-update",
-      "article-59a21035",
-      "59a21035",
-      "red-hat-issues-critical-ruby4-0-security-update-2ee171"
-    ]
-  },
-  {
-    "slug": "chromeos-stable-channel-updated-to-os-16868-29-0-adb54fa3",
-    "title": "ChromeOS Stable Channel Updated to OS 16868.29.0",
-    "summary": "Google updated the ChromeOS Stable channel to OS version 16868.29.0 and browser version 158.0.8127.98 for most devices, including ChromeOS Flex. The update includes routine security and stability improvements, with no new vulnerabilities disclosed. Users should apply the update via the standard ChromeOS update mechanism regularly to maintain current security posture.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-chromeos_01679457768.html",
-    "publishedAt": "2026-11-24T02:54:25.241Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromeos-stable-channel-updated-to-os-16868-29-0",
-      "article-adb54fa3",
-      "adb54fa3",
-      "chromeos-stable-channel-updated-to-os-16868-29-0-616ab3"
     ]
   }
 ];
