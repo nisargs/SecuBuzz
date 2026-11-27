@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "metrics-designed-for-display-not-operational-insig-7df07811",
+    "title": "Metrics Designed for Display, Not Operational Insight",
+    "summary": "Security metrics are often curated for presentation rather than operational insight, creating a misleading view of an organization’s risk posture. Aggregating data between quarterly reviews and status updates can obscure real-time threats, leaving teams unaware of evolving attack vectors. Continuous, real-time monitoring and transparent reporting frameworks align metrics with actual security events, enabling timely response.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+    "publishedAt": "2026-11-27T10:32:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "metrics-designed-for-display-not-operational-insig",
+      "article-7df07811",
+      "7df07811",
+      "metrics-designed-for-display-not-operational-insig-192a7c",
+      "metrics-designed-for-display-not-operational-insight"
+    ]
+  },
+  {
     "slug": "drupal-reports-exploited-site-takeover-vulnerabili-7db66afe",
     "title": "Drupal Reports Exploited Site Takeover Vulnerability",
     "summary": "Drupal security team reports a second critical flaw that lets attackers breach and hijack unpatched sites. The vulnerability enables remote code execution and full site takeover, and has already been used in active attacks; no patch is available. Drupal urges immediate application of the latest security release or patch to mitigate exploitation.",
@@ -9653,24 +9672,6 @@ export const news: NewsBrief[] = [
       "article-81f307ba",
       "81f307ba",
       "red-hat-issues-important-skopeo-security-update-2ee174"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-libxi-update-for-rhel-9-4-feaf3316",
-    "title": "Red Hat Issues Important libXi Update for RHEL 9.4",
-    "summary": "Red Hat issued an Important security update for libXi on RHEL 9.4 Update Services for SAP Solutions. The patch addresses libXi vulnerabilities, with CVSS base scores linked via CVE references, and is rated Important by Product Security. Users should apply the update promptly to mitigate the weaknesses and meet SAP solution compliance.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102799",
-    "publishedAt": "2026-11-24T05:08:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-libxi-update-for-rhel-9-4",
-      "article-feaf3316",
-      "feaf3316",
-      "red-hat-issues-important-libxi-update-for-rhel-9-4-2ee172"
     ]
   }
 ];

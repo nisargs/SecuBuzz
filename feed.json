@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+    "title": "Metrics Designed for Display, Not Operational Insight",
+    "headline": "Metrics Designed for Display, Not Operational Insight",
+    "summary": "Security metrics are often curated for presentation rather than operational insight, creating a misleading view of an organization’s risk posture. Aggregating data between quarterly reviews and status updates can obscure real-time threats, leaving teams unaware of evolving attack vectors. Continuous, real-time monitoring and transparent reporting frameworks align metrics with actual security events, enabling timely response.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-27T10:32:18.000Z",
+    "ingestedAt": "2026-11-27T11:43:55.669Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
     "title": "Drupal Reports Exploited Site Takeover Vulnerability",
@@ -8319,22 +8335,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:102806",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:102799",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102799",
-    "title": "Red Hat Issues Important libXi Update for RHEL 9.4",
-    "headline": "Red Hat Issues Important libXi Update for RHEL 9.4",
-    "summary": "Red Hat issued an Important security update for libXi on RHEL 9.4 Update Services for SAP Solutions. The patch addresses libXi vulnerabilities, with CVSS base scores linked via CVE references, and is rated Important by Product Security. Users should apply the update promptly to mitigate the weaknesses and meet SAP solution compliance.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-24T05:08:39.000Z",
-    "ingestedAt": "2026-11-24T07:43:09.549Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:102799",
     "additionalSources": []
   }
 ]
