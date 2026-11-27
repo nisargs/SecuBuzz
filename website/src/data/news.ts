@@ -11,6 +11,100 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "hex-pm-vulnerability-enables-remote-command-execut-abe0e557",
+    "title": "Hex.pm Vulnerability Enables Remote Command Execution",
+    "summary": "A flaw in hex.pm’s package handling permits attackers to execute arbitrary commands on hosted web servers. The vulnerability bypasses input validation, enabling remote code execution without authentication; no evidence of data alteration has been observed, though database reads remain unlogged. Hex.pm has issued an out-of-band patch and recommends all users upgrade to the latest release immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/",
+    "publishedAt": "2026-11-27T07:44:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hex-pm-vulnerability-enables-remote-command-execut",
+      "article-abe0e557",
+      "abe0e557",
+      "hex-pm-vulnerability-enables-remote-command-execut-1e3790",
+      "hex-pm-vulnerability-enables-remote-command-execution"
+    ]
+  },
+  {
+    "slug": "sap-source-code-compromised-via-stolen-github-toke-60a004c0",
+    "title": "SAP Source Code Compromised via Stolen GitHub Tokens",
+    "summary": "SAP detected unauthorized activity on its GitHub repositories, where attackers leveraged stolen employee tokens to duplicate and modify source code. The breach exposed internal codebases but did not yet result in external data exfiltration; the incident highlights token misuse risks. SAP has revoked compromised tokens, increased monitoring, and urged developers to enforce stricter access controls to prevent future intrusions.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+    "publishedAt": "2026-11-27T07:36:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sap-source-code-compromised-via-stolen-github-toke",
+      "article-60a004c0",
+      "60a004c0",
+      "sap-source-code-compromised-via-stolen-github-toke-6b525f",
+      "sap-source-code-compromised-via-stolen-github-tokens"
+    ]
+  },
+  {
+    "slug": "tampered-q-dir-installers-deliver-remote-access-tr-80d8ca43",
+    "title": "Tampered Q-Dir Installers Deliver Remote Access Trojans",
+    "summary": "Malicious Q-Dir and DesktopOK installers from SoftwareOK silently launched legitimate apps while injecting a Python-based RAT. The RAT grants remote command execution, letting attackers control PCs without user awareness and exploiting supply-chain trust. SoftwareOK issued a clean installer and urges users to verify checksums and update to the latest version to remove the backdoor.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-turn-trusted-windows-software/",
+    "publishedAt": "2026-11-27T07:27:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tampered-q-dir-installers-deliver-remote-access-tr",
+      "article-80d8ca43",
+      "80d8ca43",
+      "tampered-q-dir-installers-deliver-remote-access-tr-1f7dcf",
+      "tampered-q-dir-installers-deliver-remote-access-trojans"
+    ]
+  },
+  {
+    "slug": "russian-crew-bypasses-defender-with-revised-malwar-fca927c0",
+    "title": "Russian Crew Bypasses Defender with Revised Malware Build",
+    "summary": "Russian ransomware crew tested Windows malware against Microsoft Defender for Endpoint in a lab to evade detection. The build triggered Defender and isolated the machine, but a later version bypassed alerts, reaching the C&C server without appearing in the timeline, revealing a detection flaw. Microsoft should update heuristics, and teams must apply latest Defender patches and monitor evasion.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/malware-against-microsoft-defender/",
+    "publishedAt": "2026-11-27T06:55:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russian-crew-bypasses-defender-with-revised-malwar",
+      "article-fca927c0",
+      "fca927c0",
+      "russian-crew-bypasses-defender-with-revised-malwar-6eb943",
+      "russian-crew-bypasses-defender-with-revised-malware-build"
+    ]
+  },
+  {
+    "slug": "redops-breaches-southeast-asian-military-networks-8e43d2f7",
+    "title": "RedOps Breaches Southeast Asian Military Networks",
+    "summary": "RedOps, a cyber-espionage campaign, breached military, government, and legislative networks in Thailand and the Philippines, exfiltrating gigabytes of sensitive documents and credentials. The intrusion spanned August-September 2026, involved five confirmed breaches, and included reconnaissance against over 30 Indonesian government entities. Security teams should enforce strict network segmentation, monitor for lateral movement, and apply timely patches to mitigate further exploitation.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/military-and-government-networks/",
+    "publishedAt": "2026-11-27T06:35:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "redops-breaches-southeast-asian-military-networks",
+      "article-8e43d2f7",
+      "8e43d2f7",
+      "redops-breaches-southeast-asian-military-networks-2a4e6a"
+    ]
+  },
+  {
     "slug": "sailpoint-research-highlights-identity-security-ga-7425fe0e",
     "title": "SailPoint Research Highlights Identity Security Gaps in AI Agents",
     "summary": "According to research by SailPoint, 79 percent of enterprises have deployed autonomous AI agents into production environments. The report indicates that only 2 percent of organizations have implemented identity security controls specifically designed for these automated systems. Security teams must establish governance, manage access privileges, and prevent operational disruptions as regulators demand accountability.",
@@ -9544,98 +9638,6 @@ export const news: NewsBrief[] = [
       "article-a6f19b1d",
       "a6f19b1d",
       "red-hat-issues-kernel-update-for-rhel-9-8-eus-2ee171"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-multiple-container-tools-on-rhel-9-ad6179bc",
-    "title": "Red Hat Updates Multiple Container Tools on RHEL 9.4",
-    "summary": "Red Hat released a security update for buildah, conmon, container-selinux, containernetworking-plugins, containers-common, crun, fuse-overlayfs, gvisor-tap-vsock, oci-seccomp-bpf-hook, podman, runc, skopeo, and slirp4netns on RHEL 9.4. The update fixes multiple vulnerabilities, each with a CVSS base score, and is rated as Important by Red Hat Product Security. Apply the update via RHEL 9.4 Update Services for SAP Solutions to maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102708",
-    "publishedAt": "2026-11-24T01:10:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-multiple-container-tools-on-rhel-9",
-      "article-ad6179bc",
-      "ad6179bc",
-      "red-hat-updates-multiple-container-tools-on-rhel-9-2ee170",
-      "red-hat-updates-multiple-container-tools-on-rhel-9-4"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-kernel-for-rhel-8-8-sap-3518b097",
-    "title": "Red Hat Updates Kernel for RHEL 8.8 SAP",
-    "summary": "Red Hat issued a kernel update for RHEL 8.8 SAP and Telecom to fix vulnerabilities that could enable privilege escalation or denial of service. Each fix carries a CVSS base score, but no CVE IDs or public exploits are cited. Red Hat recommends applying the patch via standard repositories immediately to incorporate all security improvements.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102709",
-    "publishedAt": "2026-11-24T01:10:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-kernel-for-rhel-8-8-sap",
-      "article-3518b097",
-      "3518b097",
-      "red-hat-updates-kernel-for-rhel-8-8-sap-2ee170"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-security-update-for-container-too-daf1c6c4",
-    "title": "Red Hat Releases Security Update for Container Tools",
-    "summary": "Red Hat released the 3.3.4 build of Apicurio Registry container images for OpenShift, providing updated components and security patches. The update includes security fixes and enhancements, ensuring compatibility with current OpenShift deployments and aligning with Red Hat's security policy. Security teams should pull the new images from the Red Hat Container Registry and redeploy to maintain compliance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:102699",
-    "publishedAt": "2026-11-24T00:52:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-security-update-for-container-too",
-      "article-daf1c6c4",
-      "daf1c6c4",
-      "red-hat-releases-security-update-for-container-too-2ee16e",
-      "red-hat-releases-security-update-for-container-tools"
-    ]
-  },
-  {
-    "slug": "laliga-data-breach-fans-personal-info-stolen-c566d02d",
-    "title": "LaLiga Data Breach: Fans' Personal Info Stolen",
-    "summary": "Hackers accessed LaLiga digital services and stole personal data of fans, affecting multiple Spanish clubs. The breach exploited unknown vulnerabilities in the league's web infrastructure, enabling unauthorized data exfiltration. LaLiga has notified affected parties and is working with security teams immediately to remediate the vulnerabilities and secure its systems today.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/laliga-hacked-spain-top-professional-league-confirms-cyber-incident",
-    "publishedAt": "2026-11-24T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "laliga-data-breach-fans-personal-info-stolen",
-      "article-c566d02d",
-      "c566d02d",
-      "laliga-data-breach-fans-personal-info-stolen-6d1aa3"
-    ]
-  },
-  {
-    "slug": "gta-vi-hacker-sentenced-released-same-day-fcf6ba53",
-    "title": "GTA VI Hacker Sentenced, Released Same Day",
-    "summary": "A British cybercriminal breached Rockstar Games’ systems, leaking unreleased Grand Theft Auto VI footage in the United Kingdom. The attack exploited internal access controls, but no specific vulnerability was publicly disclosed without evidence of ongoing threat to Rockstar’s operations. He received a seven-year prison sentence and was released on license after serving time.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/gta-vi-hacker-arion-kurtaj-released-on-license",
-    "publishedAt": "2026-11-24T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gta-vi-hacker-sentenced-released-same-day",
-      "article-fcf6ba53",
-      "fcf6ba53",
-      "gta-vi-hacker-sentenced-released-same-day-47eeb4"
     ]
   }
 ];
