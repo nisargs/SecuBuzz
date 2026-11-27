@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-kernel-update-for-rhel-9-d65db2da",
+    "title": "Red Hat Releases Kernel Update for RHEL 9",
+    "summary": "Red Hat released a kernel update for RHEL 9, fixing several security flaws that could enable privilege escalation or denial of service. The patch addresses multiple vulnerabilities, each with a CVSS base score in the CVE references, though no active exploitation has been reported. Apply the RHSA-2026:104088 package immediately to mitigate potential kernel exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:104088",
+    "publishedAt": "2026-11-27T17:31:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-update-for-rhel-9",
+      "article-d65db2da",
+      "d65db2da",
+      "red-hat-releases-kernel-update-for-rhel-9-2ee240"
+    ]
+  },
+  {
+    "slug": "cacti-zero-day-enables-unauthenticated-remote-code-f8e9c0eb",
+    "title": "Cacti Zero-Day Enables Unauthenticated Remote Code Execution",
+    "summary": "A zero-day flaw in the Cacti network monitoring platform permits unauthenticated attackers to execute arbitrary commands on vulnerable servers. The vulnerability, publicly disclosed with a proof-of-concept exploit, lacks a CVE identifier but demonstrates full remote code execution without authentication. Administrators should upgrade to the latest Cacti release or apply the vendor-issued patch immediately to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/",
+    "publishedAt": "2026-11-27T17:06:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cacti-zero-day-enables-unauthenticated-remote-code",
+      "article-f8e9c0eb",
+      "f8e9c0eb",
+      "cacti-zero-day-enables-unauthenticated-remote-code-5914df",
+      "cacti-zero-day-enables-unauthenticated-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "vietnam-group-targets-southeast-asian-military-for-2fabab7d",
+    "title": "Vietnam Group Targets Southeast Asian Military for Espionage",
+    "summary": "Vietnam-sponsored group WeaveLotus carried out five intrusions into Southeast Asian military and government entities to gather South China Sea defense data. SOCRadar links the attacks to credential theft and lateral movement, but no exfiltration or system compromise has been confirmed. Teams should monitor anomalous activity, enforce strict access controls, and apply timely security updates to mitigate espionage risks.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html",
+    "publishedAt": "2026-11-27T16:36:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vietnam-group-targets-southeast-asian-military-for",
+      "article-2fabab7d",
+      "2fabab7d",
+      "vietnam-group-targets-southeast-asian-military-for-1adbac",
+      "vietnam-group-targets-southeast-asian-military-for-espionage"
+    ]
+  },
+  {
     "slug": "matters-ai-secures-largest-indian-cyber-pre-series-e660a747",
     "title": "Matters.AI Secures Largest Indian Cyber Pre-Series A",
     "summary": "Matters.AI raised India’s largest cybersecurity pre-Series A round, merging four legacy tools into an autonomous AI platform that traces data lineage, analyzes intent, and remediates threats. It fuses data-loss-prevention, identity-access-management, and threat-intelligence engines for continuous monitoring and automated policy enforcement. Funding will accelerate development, expand market reach, and enhance AI-driven remediation for mid-market enterprises.",
@@ -9543,69 +9599,6 @@ export const news: NewsBrief[] = [
       "fe326f1a",
       "autodesk-autocad-dwf-buffer-overflow-enables-remot-77f3bc",
       "autodesk-autocad-dwf-buffer-overflow-enables-remote-rce"
-    ]
-  },
-  {
-    "slug": "autodesk-autocad-dgn-buffer-overflow-enables-remot-7b16dd6b",
-    "title": "Autodesk AutoCAD DGN Buffer Overflow Enables Remote RCE",
-    "summary": "A heap-based buffer overflow in Autodesk AutoCAD’s DGN parser allows remote code execution when a user opens a crafted DGN file or visits a malicious page. CVE-2026-84855 has a CVSS 7.8 score and requires user interaction to exploit, enabling attackers to run arbitrary code with AutoCAD privileges. Apply Autodesk’s patch immediately or restrict DGN file handling as a temporary workaround.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1144/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-84855"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "autodesk-autocad-dgn-buffer-overflow-enables-remot",
-      "article-7b16dd6b",
-      "7b16dd6b",
-      "autodesk-autocad-dgn-buffer-overflow-enables-remot-77f3bc",
-      "autodesk-autocad-dgn-buffer-overflow-enables-remote-rce"
-    ]
-  },
-  {
-    "slug": "autodesk-autocad-dxf-out-of-bounds-write-rce-vulne-73b8c2d9",
-    "title": "Autodesk AutoCAD DXF Out-Of-Bounds Write RCE Vulnerability",
-    "summary": "A remote out-of-bounds write in Autodesk AutoCAD’s DXF parser lets attackers run arbitrary code when a user opens a malicious file or visits a malicious page. The flaw, CVE-2026-77943, scores 7.8 CVSS and needs user interaction; no wild exploit is known. Autodesk released a patch; users should update AutoCAD to the latest version or apply the vendor hotfix.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1141/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-77943"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "autodesk-autocad-dxf-out-of-bounds-write-rce-vulne",
-      "article-73b8c2d9",
-      "73b8c2d9",
-      "autodesk-autocad-dxf-out-of-bounds-write-rce-vulne-77f3bb",
-      "autodesk-autocad-dxf-out-of-bounds-write-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "oracle-outside-in-vulnerability-enables-remote-cod-8446c119",
-    "title": "Oracle Outside In Vulnerability Enables Remote Code Execution",
-    "summary": "A stack-based buffer overflow in Oracle Outside In Technology’s XLSX file parser permits remote code execution on affected installations. The flaw, identified as CVE-2026-91458, scores CVSS 7.8 and requires interaction with the library, but attack vectors vary by implementation. Oracle has released a patch; administrators should apply the update immediately to mitigate the remote code execution risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1150/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-91458"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-outside-in-vulnerability-enables-remote-cod",
-      "article-8446c119",
-      "8446c119",
-      "oracle-outside-in-vulnerability-enables-remote-cod-77f3bf",
-      "oracle-outside-in-vulnerability-enables-remote-code-executio"
     ]
   }
 ];

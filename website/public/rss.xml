@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 16:43:16 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 17:45:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases Kernel Update for RHEL 9</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-d65db2da</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-9-d65db2da</guid>
+      <description><![CDATA[Red Hat released a kernel update for RHEL 9, fixing several security flaws that could enable privilege escalation or denial of service. The patch addresses multiple vulnerabilities, each with a CVSS base score in the CVE references, though no active exploitation has been reported. Apply the RHSA-2026:104088 package immediately to mitigate potential kernel exploitation.]]></description>
+      <pubDate>Fri, 27 Nov 2026 17:31:41 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:104088">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cacti Zero-Day Enables Unauthenticated Remote Code Execution</title>
+      <link>https://secubuzz.com/news/cacti-zero-day-enables-unauthenticated-remote-code-f8e9c0eb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cacti-zero-day-enables-unauthenticated-remote-code-f8e9c0eb</guid>
+      <description><![CDATA[A zero-day flaw in the Cacti network monitoring platform permits unauthenticated attackers to execute arbitrary commands on vulnerable servers. The vulnerability, publicly disclosed with a proof-of-concept exploit, lacks a CVE identifier but demonstrates full remote code execution without authentication. Administrators should upgrade to the latest Cacti release or apply the vendor-issued patch immediately to prevent exploitation.]]></description>
+      <pubDate>Fri, 27 Nov 2026 17:06:13 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Vietnam Group Targets Southeast Asian Military for Espionage</title>
+      <link>https://secubuzz.com/news/vietnam-group-targets-southeast-asian-military-for-2fabab7d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vietnam-group-targets-southeast-asian-military-for-2fabab7d</guid>
+      <description><![CDATA[Vietnam-sponsored group WeaveLotus carried out five intrusions into Southeast Asian military and government entities to gather South China Sea defense data. SOCRadar links the attacks to credential theft and lateral movement, but no exfiltration or system compromise has been confirmed. Teams should monitor anomalous activity, enforce strict access controls, and apply timely security updates to mitigate espionage risks.]]></description>
+      <pubDate>Fri, 27 Nov 2026 16:36:11 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html">The Hacker News</source>
+      <category>Nation State</category>
+    </item>
     <item>
       <title>Matters.AI Secures Largest Indian Cyber Pre-Series A</title>
       <link>https://secubuzz.com/news/matters-ai-secures-largest-indian-cyber-pre-series-e660a747</link>
@@ -429,33 +456,6 @@
       <pubDate>Fri, 27 Nov 2026 06:35:33 GMT</pubDate>
       <source url="https://cybersecuritynews.com/military-and-government-networks/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>SailPoint Research Highlights Identity Security Gaps in AI Agents</title>
-      <link>https://secubuzz.com/news/sailpoint-research-highlights-identity-security-ga-7425fe0e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sailpoint-research-highlights-identity-security-ga-7425fe0e</guid>
-      <description><![CDATA[According to research by SailPoint, 79 percent of enterprises have deployed autonomous AI agents into production environments. The report indicates that only 2 percent of organizations have implemented identity security controls specifically designed for these automated systems. Security teams must establish governance, manage access privileges, and prevent operational disruptions as regulators demand accountability.]]></description>
-      <pubDate>Fri, 27 Nov 2026 06:30:14 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/27/sailpoint-2027-ai-identity-security-predictions-report/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Agents Breach Swiss Critical Infrastructure Operators</title>
-      <link>https://secubuzz.com/news/ai-agents-breach-swiss-critical-infrastructure-ope-4b40ae3a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-breach-swiss-critical-infrastructure-ope-4b40ae3a</guid>
-      <description><![CDATA[Attackers using AI agents breached computer systems at Swiss organizations, including three critical infrastructure operators, marking incidents in the country. The intrusion leveraged automated threat actors, achieving unauthorized access in two operators without causing major disruptions, though details remain undisclosed. Swiss cybersecurity agency urges operators to review AI threat detection and enforce stricter access controls, but no patch is applicable.]]></description>
-      <pubDate>Fri, 27 Nov 2026 06:04:20 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Norton Integrates Scam Detection Tools into Claude AI Chatbot</title>
-      <link>https://secubuzz.com/news/norton-integrates-scam-detection-tools-into-claude-5b7cc222</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/norton-integrates-scam-detection-tools-into-claude-5b7cc222</guid>
-      <description><![CDATA[Gen Digital introduced the Norton connector for the Claude AI chatbot to provide embedded scam detection capabilities. The integration allows users to submit suspicious emails, text messages, screenshots, and web links for automated analysis without requiring a Norton account. Defensive teams and end users can utilize the free connector to evaluate potential fraud indicators and security questions.]]></description>
-      <pubDate>Fri, 27 Nov 2026 06:00:59 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/27/product-showcase-norton-claude-scam-detection/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
