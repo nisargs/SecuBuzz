@@ -11,6 +11,117 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "mitel-advises-update-for-openscape-4000-vulnerabil-d2404ffb",
+    "title": "Mitel Advises Update for OpenScape 4000 Vulnerability",
+    "summary": "Mitel issued an advisory for a vulnerability affecting OpenScape 4000 and its Manager before version 11 R2.14. The flaw allows unauthorized access to configuration data, potentially enabling attackers to modify system settings; no public exploit is reported. Administrators should review the Mitel links and apply the available patch to secure the affected components.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Canadian Centre for Cyber Security",
+    "sourceUrl": "https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1212",
+    "publishedAt": "2026-11-27T13:36:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mitel-advises-update-for-openscape-4000-vulnerabil",
+      "article-d2404ffb",
+      "d2404ffb",
+      "mitel-advises-update-for-openscape-4000-vulnerabil-69662a",
+      "mitel-advises-update-for-openscape-4000-vulnerability"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-ruby-4-0-update-for-rhel-9-a3a0ff11",
+    "title": "Red Hat Issues Critical Ruby 4.0 Update for RHEL 9.8",
+    "summary": "Red Hat released a critical security update for the ruby:4.0 module on RHEL 9.8 Extended Update Support. The patch addresses multiple high-severity vulnerabilities with CVSS scores, though specific CVE identifiers are not disclosed; the impact is classified as Critical. System administrators should apply the ruby:4.0 update immediately and verify the CVSS details linked in the advisory.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:104035",
+    "publishedAt": "2026-11-27T13:26:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-ruby-4-0-update-for-rhel-9",
+      "article-a3a0ff11",
+      "a3a0ff11",
+      "red-hat-issues-critical-ruby-4-0-update-for-rhel-9-2ee23f",
+      "red-hat-issues-critical-ruby-4-0-update-for-rhel-9-8"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-ruby-3-3-security-update-1935c625",
+    "title": "Red Hat Releases Critical Ruby 3.3 Security Update",
+    "summary": "Red Hat issued a critical update for ruby:3.3 on RHEL 9.4 for SAP Solutions, fixing multiple high-impact flaws. The patch addresses several CVE-linked vulnerabilities, each with a high CVSS base score, though the advisory does not list specific CVE IDs. System administrators should apply the ruby:3.3 update promptly and verify application compatibility per Red Hat’s deployment guidance.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:104036",
+    "publishedAt": "2026-11-27T13:25:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-ruby-3-3-security-update",
+      "article-1935c625",
+      "1935c625",
+      "red-hat-releases-critical-ruby-3-3-security-update-2ee23f"
+    ]
+  },
+  {
+    "slug": "fifa-systems-breached-personal-data-exposed-d9a1938a",
+    "title": "FIFA Systems Breached, Personal Data Exposed",
+    "summary": "FIFA’s internal systems were compromised, exposing a limited set of personal and business data to attackers. The intrusion involved unauthorized access to protected databases, but the attack vector and exact timing remain undisclosed. FIFA is coordinating with law enforcement and has initiated an internal investigation, urging affected parties to monitor for potential data misuse.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/27/fifa-cyberattack-data-leak/",
+    "publishedAt": "2026-11-27T13:21:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fifa-systems-breached-personal-data-exposed",
+      "article-d9a1938a",
+      "d9a1938a",
+      "fifa-systems-breached-personal-data-exposed-63d470"
+    ]
+  },
+  {
+    "slug": "sap-confirms-source-code-breach-incident-416d8256",
+    "title": "SAP Confirms Source Code Breach Incident",
+    "summary": "SAP confirmed a cybersecurity incident after reports that attackers accessed its software development infrastructure, potentially compromising source code. The breach involved unauthorized intrusion into development environments, raising concerns about intellectual property theft and future product integrity. SAP is investigating the incident, reviewing access controls, and will disclose further remediation steps once the scope is fully understood.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/sap-germany-cyberattack-github",
+    "publishedAt": "2026-11-27T13:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sap-confirms-source-code-breach-incident",
+      "article-416d8256",
+      "416d8256",
+      "sap-confirms-source-code-breach-incident-284d6d"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-kernel-update-for-rhel-10-da4c3b22",
+    "title": "Red Hat Issues Critical Kernel Update for RHEL 10.2",
+    "summary": "Red Hat released a kernel update for RHEL 10.2 EUS addressing critical security issues. The update mitigates several vulnerabilities with CVSS scores, though specific CVE identifiers are not listed; the severity rating is classified as Critical by Product Security. Administrators should apply the kernel patch immediately to eliminate the exposed flaws and review the CVSS details linked in the advisory.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:104044",
+    "publishedAt": "2026-11-27T13:09:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-kernel-update-for-rhel-10",
+      "article-da4c3b22",
+      "da4c3b22",
+      "red-hat-issues-critical-kernel-update-for-rhel-10-2ee23f",
+      "red-hat-issues-critical-kernel-update-for-rhel-10-2"
+    ]
+  },
+  {
     "slug": "red-hat-issues-critical-mysql-8-4-security-update-a32a6b44",
     "title": "Red Hat Issues Critical MySQL 8.4 Security Update",
     "summary": "Red Hat released a critical security update for MySQL 8.4 on RHEL 10, fixing multiple vulnerabilities that could enable remote code execution. Each flaw carries a CVSS base score listed in the references, indicating high severity, though specific CVE identifiers are not disclosed. Security teams should apply the patch immediately; Red Hat provides detailed guidance in the advisory.",
@@ -85,21 +196,21 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "red-hat-releases-critical-ruby-3-3-security-update-1b35c94b",
-    "title": "Red Hat Releases Critical Ruby 3.3 Security Update",
-    "summary": "Red Hat issued a critical security update for the ruby:3.3 module on RHEL 9.6 EUS, addressing multiple high-severity vulnerabilities. The advisory provides CVSS base scores for each flaw, though specific CVE identifiers are not listed, indicating potential privilege escalation or denial-of-service risks. Red Hat recommends applying the ruby update immediately; CVE links in the references contain detailed severity information.",
+    "slug": "microsoft-store-app-distributes-remote-control-rat-e30f06a2",
+    "title": "Microsoft Store App Distributes Remote Control RAT",
+    "summary": "A Microsoft Store app was hijacked to deliver Vinci RAT, granting attackers remote system control. The attack starts with a redirect to a fake snipping tool site, where a signed 'Snipping-Tool.exe' installer runs, installing the RAT silently. Defenders should block the malicious installer, remove the RAT, and monitor for persistence, while Microsoft reviews the store submission process.",
     "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:104038",
-    "publishedAt": "2026-11-27T11:46:06.000Z",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+    "publishedAt": "2026-11-27T11:49:34.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "red-hat-releases-critical-ruby-3-3-security-update",
-      "article-1b35c94b",
-      "1b35c94b",
-      "red-hat-releases-critical-ruby-3-3-security-update-2ee23f"
+      "microsoft-store-app-distributes-remote-control-rat",
+      "article-e30f06a2",
+      "e30f06a2",
+      "microsoft-store-app-distributes-remote-control-rat-7e245a"
     ]
   },
   {
@@ -9495,146 +9606,6 @@ export const news: NewsBrief[] = [
       "c8048976",
       "asus-control-center-express-user-creation-privileg-77f3c0",
       "asus-control-center-express-user-creation-privilege-escalati"
-    ]
-  },
-  {
-    "slug": "asus-control-center-express-authentication-bypass-6536d5b6",
-    "title": "ASUS Control Center Express Authentication Bypass via Hard-coded Key",
-    "summary": "A remote authentication bypass flaw in ASUS Control Center Express uses a hard-coded cryptographic key, allowing attackers to access the system without credentials. The vulnerability, identified as CVE-2026-114204, scores CVSS 9.0 and permits unauthorized access without authentication. No vendor patch has been released yet; security teams should monitor for updates and apply mitigations when available.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1156/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114204"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "asus-control-center-express-authentication-bypass",
-      "article-6536d5b6",
-      "6536d5b6",
-      "asus-control-center-express-authentication-bypass-77f3c0",
-      "asus-control-center-express-authentication-bypass-via-hard-c"
-    ]
-  },
-  {
-    "slug": "zdi-26-1155-asus-control-center-express-use-of-har-603d0777",
-    "title": "ZDI-26-1155: ASUS Control Center Express Use of Hard-coded Cryptographic Key Authentication Bypass Vulnerability",
-    "summary": "This vulnerability allows remote attackers to bypass authentication on affected installations of ASUS Control Center Express. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-114202.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1155/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114202"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1155-asus-control-center-express-use-of-har",
-      "article-603d0777",
-      "603d0777",
-      "zdi-26-1155-asus-control-center-express-use-of-har-77f3bf",
-      "zdi-26-1155-asus-control-center-express-use-of-hard-coded-cr"
-    ]
-  },
-  {
-    "slug": "litellm-pass-through-endpoint-rce-vulnerability-25eb4818",
-    "title": "LiteLLM Pass-Through Endpoint RCE Vulnerability",
-    "summary": "LiteLLM contains a pass-through endpoint flaw that allows remote attackers to execute arbitrary code on affected installations. The vulnerability requires authentication, has a CVSS score of 7.2, and permits code injection via crafted requests. A patch is available from the vendor; administrators should apply the update to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1084/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "litellm-pass-through-endpoint-rce-vulnerability",
-      "article-25eb4818",
-      "25eb4818",
-      "litellm-pass-through-endpoint-rce-vulnerability-77f356"
-    ]
-  },
-  {
-    "slug": "litellm-virtual-key-alias-privilege-escalation-09cfdd26",
-    "title": "LiteLLM Virtual Key Alias Privilege Escalation",
-    "summary": "LiteLLM has a virtual key model alias flaw that permits remote attackers to elevate privileges on the affected installations. The vulnerability requires authentication, carries a CVSS score of 6.5, and allows attackers to bypass authorization checks. The vendor has released a patch; administrators should update LiteLLM to prevent privilege escalation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1083/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "litellm-virtual-key-alias-privilege-escalation",
-      "article-09cfdd26",
-      "09cfdd26",
-      "litellm-virtual-key-alias-privilege-escalation-77f356"
-    ]
-  },
-  {
-    "slug": "rustdesk-client-lpe-cve-2026-131827-4e437ba9",
-    "title": "RustDesk Client LPE CVE-2026-131827",
-    "summary": "RustDesk Client for Windows contains a reg_recovery flaw that allows local attackers to elevate privileges on affected installations. The vulnerability requires low-privileged code execution, has a CVSS score of 7.8, and is identified as CVE-2026-131827. A patch is available; users should update RustDesk Client to mitigate the local privilege escalation risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1080/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-131827"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "rustdesk-client-lpe-cve-2026-131827",
-      "article-4e437ba9",
-      "4e437ba9",
-      "rustdesk-client-lpe-cve-2026-131827-77f356"
-    ]
-  },
-  {
-    "slug": "zdi-26-1079-llama-cpp-server-context-impl-destroy-506d420f",
-    "title": "ZDI-26-1079: llama.cpp server_context_impl destroy vocab Use-After-Free Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of llama.cpp. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-131837.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1079/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-131837"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1079-llama-cpp-server-context-impl-destroy",
-      "article-506d420f",
-      "506d420f",
-      "zdi-26-1079-llama-cpp-server-context-impl-destroy-77f353",
-      "zdi-26-1079-llama-cpp-server-context-impl-destroy-vocab-use-"
-    ]
-  },
-  {
-    "slug": "zdi-26-1065-0day-deepspeed-get-zero-stage-deserial-b4d9d749",
-    "title": "ZDI-26-1065: (0Day) DeepSpeed _get_zero_stage Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of DeepSpeed. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-136439.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1065/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-136439"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-1065-0day-deepspeed-get-zero-stage-deserial",
-      "article-b4d9d749",
-      "b4d9d749",
-      "zdi-26-1065-0day-deepspeed-get-zero-stage-deserial-77f34f",
-      "zdi-26-1065-0day-deepspeed-get-zero-stage-deserialization-of"
     ]
   }
 ];

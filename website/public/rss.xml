@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 13:04:38 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 13:45:27 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mitel Advises Update for OpenScape 4000 Vulnerability</title>
+      <link>https://secubuzz.com/news/mitel-advises-update-for-openscape-4000-vulnerabil-d2404ffb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mitel-advises-update-for-openscape-4000-vulnerabil-d2404ffb</guid>
+      <description><![CDATA[Mitel issued an advisory for a vulnerability affecting OpenScape 4000 and its Manager before version 11 R2.14. The flaw allows unauthorized access to configuration data, potentially enabling attackers to modify system settings; no public exploit is reported. Administrators should review the Mitel links and apply the available patch to secure the affected components.]]></description>
+      <pubDate>Fri, 27 Nov 2026 13:36:37 GMT</pubDate>
+      <source url="https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1212">Canadian Centre for Cyber Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical Ruby 4.0 Update for RHEL 9.8</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-ruby-4-0-update-for-rhel-9-a3a0ff11</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-ruby-4-0-update-for-rhel-9-a3a0ff11</guid>
+      <description><![CDATA[Red Hat released a critical security update for the ruby:4.0 module on RHEL 9.8 Extended Update Support. The patch addresses multiple high-severity vulnerabilities with CVSS scores, though specific CVE identifiers are not disclosed; the impact is classified as Critical. System administrators should apply the ruby:4.0 update immediately and verify the CVSS details linked in the advisory.]]></description>
+      <pubDate>Fri, 27 Nov 2026 13:26:16 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:104035">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Ruby 3.3 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-ruby-3-3-security-update-1935c625</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-ruby-3-3-security-update-1935c625</guid>
+      <description><![CDATA[Red Hat issued a critical update for ruby:3.3 on RHEL 9.4 for SAP Solutions, fixing multiple high-impact flaws. The patch addresses several CVE-linked vulnerabilities, each with a high CVSS base score, though the advisory does not list specific CVE IDs. System administrators should apply the ruby:3.3 update promptly and verify application compatibility per Red Hat’s deployment guidance.]]></description>
+      <pubDate>Fri, 27 Nov 2026 13:25:41 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:104036">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>FIFA Systems Breached, Personal Data Exposed</title>
+      <link>https://secubuzz.com/news/fifa-systems-breached-personal-data-exposed-d9a1938a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fifa-systems-breached-personal-data-exposed-d9a1938a</guid>
+      <description><![CDATA[FIFA’s internal systems were compromised, exposing a limited set of personal and business data to attackers. The intrusion involved unauthorized access to protected databases, but the attack vector and exact timing remain undisclosed. FIFA is coordinating with law enforcement and has initiated an internal investigation, urging affected parties to monitor for potential data misuse.]]></description>
+      <pubDate>Fri, 27 Nov 2026 13:21:50 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/27/fifa-cyberattack-data-leak/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>SAP Confirms Source Code Breach Incident</title>
+      <link>https://secubuzz.com/news/sap-confirms-source-code-breach-incident-416d8256</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sap-confirms-source-code-breach-incident-416d8256</guid>
+      <description><![CDATA[SAP confirmed a cybersecurity incident after reports that attackers accessed its software development infrastructure, potentially compromising source code. The breach involved unauthorized intrusion into development environments, raising concerns about intellectual property theft and future product integrity. SAP is investigating the incident, reviewing access controls, and will disclose further remediation steps once the scope is fully understood.]]></description>
+      <pubDate>Fri, 27 Nov 2026 13:15:00 GMT</pubDate>
+      <source url="https://therecord.media/sap-germany-cyberattack-github">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical Kernel Update for RHEL 10.2</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-kernel-update-for-rhel-10-da4c3b22</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-kernel-update-for-rhel-10-da4c3b22</guid>
+      <description><![CDATA[Red Hat released a kernel update for RHEL 10.2 EUS addressing critical security issues. The update mitigates several vulnerabilities with CVSS scores, though specific CVE identifiers are not listed; the severity rating is classified as Critical by Product Security. Administrators should apply the kernel patch immediately to eliminate the exposed flaws and review the CVSS details linked in the advisory.]]></description>
+      <pubDate>Fri, 27 Nov 2026 13:09:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:104044">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Issues Critical MySQL 8.4 Security Update</title>
       <link>https://secubuzz.com/news/red-hat-issues-critical-mysql-8-4-security-update-a32a6b44</link>
@@ -44,12 +98,12 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Red Hat Releases Critical Ruby 3.3 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-ruby-3-3-security-update-1b35c94b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-ruby-3-3-security-update-1b35c94b</guid>
-      <description><![CDATA[Red Hat issued a critical security update for the ruby:3.3 module on RHEL 9.6 EUS, addressing multiple high-severity vulnerabilities. The advisory provides CVSS base scores for each flaw, though specific CVE identifiers are not listed, indicating potential privilege escalation or denial-of-service risks. Red Hat recommends applying the ruby update immediately; CVE links in the references contain detailed severity information.]]></description>
-      <pubDate>Fri, 27 Nov 2026 11:46:06 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:104038">Red Hat Security Advisories</source>
+      <title>Microsoft Store App Distributes Remote Control RAT</title>
+      <link>https://secubuzz.com/news/microsoft-store-app-distributes-remote-control-rat-e30f06a2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-store-app-distributes-remote-control-rat-e30f06a2</guid>
+      <description><![CDATA[A Microsoft Store app was hijacked to deliver Vinci RAT, granting attackers remote system control. The attack starts with a redirect to a fake snipping tool site, where a signed 'Snipping-Tool.exe' installer runs, installing the RAT silently. Defenders should block the malicious installer, remove the RAT, and monitor for persistence, while Microsoft reviews the store submission process.]]></description>
+      <pubDate>Fri, 27 Nov 2026 11:49:34 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -401,60 +455,6 @@
       <description><![CDATA[A cyber incident was reported by the UK Department for Work and Pensions, leading to the shutdown of multiple online services as a precautionary measure. The root cause remains undisclosed, but the disruption indicates potential unauthorized access or system compromise. The department has not released a patch, but recommends monitoring for further updates and applying standard security hardening practices.]]></description>
       <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
       <source url="https://therecord.media/uk-department-work-pensions-cyber-incident">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apache HTTP Server Regression Causes DoS and Cookie Leak</title>
-      <link>https://secubuzz.com/news/apache-http-server-regression-causes-dos-and-cooki-b192966f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-http-server-regression-causes-dos-and-cooki-b192966f</guid>
-      <description><![CDATA[A regression in Apache HTTP Server (CVE-2026-46729) broke cookie handling on Ubuntu LTS, letting attackers trigger DoS or leak session data. The bug stems from memory handling that corrupts cookie state, exposing a DoS vector and a channel for sensitive data, with no active exploitation yet. Ubuntu released USN-9016-2; admins should apply the patch or upgrade to Apache 2.4.60 immediately.]]></description>
-      <pubDate>Thu, 26 Nov 2026 22:34:55 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9016-2">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>OpenAI Fixes Bug Accelerating GPT-6.2 Usage Limits</title>
-      <link>https://secubuzz.com/news/openai-fixes-bug-accelerating-gpt-6-2-usage-limits-bcca6676</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-fixes-bug-accelerating-gpt-6-2-usage-limits-bcca6676</guid>
-      <description><![CDATA[OpenAI announced that a bug fix in GPT-6.2 Astra will cause users to hit usage limits 40% faster. The fix corrected an internal calculation error that previously undercounted usage, thereby accelerating quota depletion without affecting model performance. Users should monitor usage metrics closely, adjust request pacing, and consider upgrading to higher quota plans to mitigate the faster limit hit.]]></description>
-      <pubDate>Thu, 26 Nov 2026 21:06:22 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ubuntu 22.04 Binutils Vulnerabilities Allow Local DoS</title>
-      <link>https://secubuzz.com/news/ubuntu-22-04-binutils-vulnerabilities-allow-local-70f9cfe4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-22-04-binutils-vulnerabilities-allow-local-70f9cfe4</guid>
-      <description><![CDATA[A local attacker could exploit multiple GNU binutils vulnerabilities in Ubuntu 22.04 LTS, causing crashes or denial of service. The CVE-2019-1010204, CVE-2022-27943, and CVE-2022-48064 flaws arise from improper handling of ELF, Rust symbols, and DWARF data, causing crashes. Ubuntu has released updates; users should install the latest binutils package to mitigate the issue.]]></description>
-      <pubDate>Thu, 26 Nov 2026 19:39:59 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9214-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>ThreatsDay Highlights 10M NGINX Services, Malicious Extensions, AI Hijacking</title>
-      <link>https://secubuzz.com/news/threatsday-highlights-10m-nginx-services-malicious-1d37be7a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/threatsday-highlights-10m-nginx-services-malicious-1d37be7a</guid>
-      <description><![CDATA[ThreatsDay reports over 10 million NGINX services are vulnerable, with 250+ malicious browser extensions and rising AI server hijacking incidents. The report highlights misconfigured NGINX instances, compromised extensions, and unauthorized AI server access, posing widespread risk to web infrastructure. Security teams should patch NGINX, audit extension sources, and enforce strict AI server access controls to mitigate these threats.]]></description>
-      <pubDate>Thu, 26 Nov 2026 19:39:57 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical Ruby 3.3 Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-ruby-3-3-update-31d53972</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-ruby-3-3-update-31d53972</guid>
-      <description><![CDATA[Red Hat issued a critical security update for the ruby:3.3 module on Red Hat Enterprise Linux 9.8 Extended Update Support. The update addresses multiple high-severity vulnerabilities, each assigned a CVSS base score, that could allow local or remote attackers to execute arbitrary code or compromise system integrity. Users should apply the ruby:3.3 update immediately to mitigate the identified risks.]]></description>
-      <pubDate>Thu, 26 Nov 2026 19:10:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:103943">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>NordVPN Offers 78% Off Black Friday VPN Plans</title>
-      <link>https://secubuzz.com/news/nordvpn-offers-78-off-black-friday-vpn-plans-0489da05</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nordvpn-offers-78-off-black-friday-vpn-plans-0489da05</guid>
-      <description><![CDATA[NordVPN has launched a Black Friday promotion offering up to 78% off its VPN subscription plans for 2026. The discount includes an additional three months of protection, with plans ranging from basic to premium tiers. Customers can redeem the offer through NordVPN's website or app, and the promotion is valid until the end of the month.]]></description>
-      <pubDate>Thu, 26 Nov 2026 17:58:42 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/nordvpn-black-friday-deal-get-78-percent-off-vpn-plans-in-2026/">BleepingComputer</source>
       <category>General</category>
     </item>
   </channel>
