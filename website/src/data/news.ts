@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "kenya-ecitizen-data-leak-exposes-32-million-identi-facef1aa",
+    "title": "Kenya eCitizen Data Leak Exposes 32 Million Identities",
+    "summary": "Hackers accessed Kenya’s eCitizen identity platform and began publishing personal records on the dark web. The breach exploited an undisclosed weakness allowing unauthorized extraction of 32,128,394 Kenyan citizen records, exposing sensitive personal information to identity theft. Kenyan authorities have not confirmed a fix; security teams should enforce strict access controls, monitor for credential misuse, and apply any forthcoming platform updates.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/kenya-ecitizen-data-breach/",
+    "publishedAt": "2026-11-28T09:14:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kenya-ecitizen-data-leak-exposes-32-million-identi",
+      "article-facef1aa",
+      "facef1aa",
+      "kenya-ecitizen-data-leak-exposes-32-million-identi-7a8def",
+      "kenya-ecitizen-data-leak-exposes-32-million-identities"
+    ]
+  },
+  {
     "slug": "telegram-alerts-iphone-users-to-safari-vulnerabili-6a284e36",
     "title": "Telegram Alerts iPhone Users to Safari Vulnerability Exploit",
     "summary": "Telegram warns iPhone users on older iOS that a vulnerability lets attackers compromise devices by visiting a malicious website. The flaw exploits Safari’s rendering engine, enabling remote code execution without user interaction, observed in the wild. Apple released an iOS patch; Telegram urges users to update iOS or install the app update to mitigate.",
@@ -9585,26 +9604,6 @@ export const news: NewsBrief[] = [
       "c21c6b06",
       "oracle-autonomous-ai-database-cve-2026-114849-allo-77f3b4",
       "oracle-autonomous-ai-database-cve-2026-114849-allows-privile"
-    ]
-  },
-  {
-    "slug": "autocad-ies-file-rce-vulnerability-12de5d36",
-    "title": "AutoCAD IES File RCE Vulnerability",
-    "summary": "Autodesk AutoCAD’s IES file parser contains a remote code execution flaw that triggers when a user opens a crafted file or visits a malicious page. CVE-2026-77942 carries a CVSS score of 7.8, classifying it as high severity and requiring user interaction for exploitation. Apply the vendor’s patch or upgrade to the latest AutoCAD release to eliminate the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1140/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-77942"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "autocad-ies-file-rce-vulnerability",
-      "article-12de5d36",
-      "12de5d36",
-      "autocad-ies-file-rce-vulnerability-77f3bb"
     ]
   }
 ];

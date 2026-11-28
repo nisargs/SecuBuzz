@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/kenya-ecitizen-data-breach/",
+    "sourceUrl": "https://cybersecuritynews.com/kenya-ecitizen-data-breach/",
+    "title": "Kenya eCitizen Data Leak Exposes 32 Million Identities",
+    "headline": "Kenya eCitizen Data Leak Exposes 32 Million Identities",
+    "summary": "Hackers accessed Kenya’s eCitizen identity platform and began publishing personal records on the dark web. The breach exploited an undisclosed weakness allowing unauthorized extraction of 32,128,394 Kenyan citizen records, exposing sensitive personal information to identity theft. Kenyan authorities have not confirmed a fix; security teams should enforce strict access controls, monitor for credential misuse, and apply any forthcoming platform updates.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-28T09:14:31.000Z",
+    "ingestedAt": "2026-11-28T10:43:06.532Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/kenya-ecitizen-data-breach/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/iphone-users-are-being-hacked/",
     "sourceUrl": "https://cybersecuritynews.com/iphone-users-are-being-hacked/",
     "title": "Telegram Alerts iPhone Users to Safari Vulnerability Exploit",
@@ -8312,21 +8328,5 @@
         "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1124/"
       }
     ]
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1140/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1140/",
-    "title": "AutoCAD IES File RCE Vulnerability",
-    "headline": "AutoCAD IES File RCE Vulnerability",
-    "summary": "Autodesk AutoCAD’s IES file parser contains a remote code execution flaw that triggers when a user opens a crafted file or visits a malicious page. CVE-2026-77942 carries a CVSS score of 7.8, classifying it as high severity and requiring user interaction for exploitation. Apply the vendor’s patch or upgrade to the latest AutoCAD release to eliminate the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "ingestedAt": "2026-11-25T01:43:21.196Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1140/",
-    "additionalSources": []
   }
 ]

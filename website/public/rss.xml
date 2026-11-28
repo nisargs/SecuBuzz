@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Nov 2026 09:43:15 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 10:43:11 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Kenya eCitizen Data Leak Exposes 32 Million Identities</title>
+      <link>https://secubuzz.com/news/kenya-ecitizen-data-leak-exposes-32-million-identi-facef1aa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kenya-ecitizen-data-leak-exposes-32-million-identi-facef1aa</guid>
+      <description><![CDATA[Hackers accessed Kenya’s eCitizen identity platform and began publishing personal records on the dark web. The breach exploited an undisclosed weakness allowing unauthorized extraction of 32,128,394 Kenyan citizen records, exposing sensitive personal information to identity theft. Kenyan authorities have not confirmed a fix; security teams should enforce strict access controls, monitor for credential misuse, and apply any forthcoming platform updates.]]></description>
+      <pubDate>Sat, 28 Nov 2026 09:14:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/kenya-ecitizen-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Telegram Alerts iPhone Users to Safari Vulnerability Exploit</title>
       <link>https://secubuzz.com/news/telegram-alerts-iphone-users-to-safari-vulnerabili-6a284e36</link>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 27 Nov 2026 07:27:39 GMT</pubDate>
       <source url="https://cybersecuritynews.com/best-sase-solutions-2/">Cyber Security News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Tampered Q-Dir Installers Deliver Remote Access Trojans</title>
-      <link>https://secubuzz.com/news/tampered-q-dir-installers-deliver-remote-access-tr-80d8ca43</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tampered-q-dir-installers-deliver-remote-access-tr-80d8ca43</guid>
-      <description><![CDATA[Malicious Q-Dir and DesktopOK installers from SoftwareOK silently launched legitimate apps while injecting a Python-based RAT. The RAT grants remote command execution, letting attackers control PCs without user awareness and exploiting supply-chain trust. SoftwareOK issued a clean installer and urges users to verify checksums and update to the latest version to remove the backdoor.]]></description>
-      <pubDate>Fri, 27 Nov 2026 07:27:11 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-turn-trusted-windows-software/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
