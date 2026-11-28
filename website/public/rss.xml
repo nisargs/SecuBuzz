@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Nov 2026 08:22:28 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 09:43:15 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Telegram Alerts iPhone Users to Safari Vulnerability Exploit</title>
@@ -17,10 +17,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>pCloud Password Manager Breach Reveals Unauthorized Device Access</title>
-      <link>https://secubuzz.com/news/pcloud-password-manager-breach-reveals-unauthorize-719cf7cb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pcloud-password-manager-breach-reveals-unauthorize-719cf7cb</guid>
-      <description><![CDATA[An unauthorized intrusion into pCloud Pass exposed user accounts, with attackers logging in from unknown devices despite two-factor authentication. The breach indicates a flaw in the authentication flow that allowed credential reuse or session hijacking. pCloud has notified affected users, reset compromised credentials, and is enhancing its security controls to prevent further unauthorized access.]]></description>
+      <title>pCloud Pass Password Manager Breach Exposes User Accounts via Unauthorized Device Access</title>
+      <link>https://secubuzz.com/news/pcloud-pass-password-manager-breach-exposes-user-a-84b91be3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pcloud-pass-password-manager-breach-exposes-user-a-84b91be3</guid>
+      <description><![CDATA[pCloud Pass, a cross-platform password manager, suffered a breach that exposed user accounts and email addresses through unauthorized device access. The attack exploited a flaw in the authentication flow, allowing credential reuse or session hijacking despite two-factor authentication. pCloud responded by notifying affected users, resetting compromised credentials, and strengthening security controls to prevent future incidents.]]></description>
       <pubDate>Fri, 27 Nov 2026 19:26:04 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/">BleepingComputer</source>
       <category>Breach</category>

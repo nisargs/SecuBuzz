@@ -30,22 +30,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "pcloud-password-manager-breach-reveals-unauthorize-719cf7cb",
-    "title": "pCloud Password Manager Breach Reveals Unauthorized Device Access",
-    "summary": "An unauthorized intrusion into pCloud Pass exposed user accounts, with attackers logging in from unknown devices despite two-factor authentication. The breach indicates a flaw in the authentication flow that allowed credential reuse or session hijacking. pCloud has notified affected users, reset compromised credentials, and is enhancing its security controls to prevent further unauthorized access.",
+    "slug": "pcloud-pass-password-manager-breach-exposes-user-a-84b91be3",
+    "title": "pCloud Pass Password Manager Breach Exposes User Accounts via Unauthorized Device Access",
+    "summary": "pCloud Pass, a cross-platform password manager, suffered a breach that exposed user accounts and email addresses through unauthorized device access. The attack exploited a flaw in the authentication flow, allowing credential reuse or session hijacking despite two-factor authentication. pCloud responded by notifying affected users, resetting compromised credentials, and strengthening security controls to prevent future incidents.",
     "category": "Breach",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
     "publishedAt": "2026-11-27T19:26:04.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/pcloud-password-manager-hit-by-cyber.html"
+      }
+    ],
     "aliases": [
-      "pcloud-password-manager-breach-reveals-unauthorize",
-      "article-719cf7cb",
-      "719cf7cb",
-      "pcloud-password-manager-breach-reveals-unauthorize-38434c",
-      "pcloud-password-manager-breach-reveals-unauthorized-device-a"
+      "pcloud-pass-password-manager-breach-exposes-user-a",
+      "article-84b91be3",
+      "84b91be3",
+      "pcloud-pass-password-manager-breach-exposes-user-a-38434c",
+      "pcloud-pass-password-manager-breach-exposes-user-accounts-vi"
     ]
   },
   {
