@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "telegram-alerts-iphone-users-to-safari-vulnerabili-6a284e36",
+    "title": "Telegram Alerts iPhone Users to Safari Vulnerability Exploit",
+    "summary": "Telegram warns iPhone users on older iOS that a vulnerability lets attackers compromise devices by visiting a malicious website. The flaw exploits Safari’s rendering engine, enabling remote code execution without user interaction, observed in the wild. Apple released an iOS patch; Telegram urges users to update iOS or install the app update to mitigate.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/iphone-users-are-being-hacked/",
+    "publishedAt": "2026-11-28T04:48:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "telegram-alerts-iphone-users-to-safari-vulnerabili",
+      "article-6a284e36",
+      "6a284e36",
+      "telegram-alerts-iphone-users-to-safari-vulnerabili-70ba4e",
+      "telegram-alerts-iphone-users-to-safari-vulnerability-exploit"
+    ]
+  },
+  {
     "slug": "pcloud-password-manager-breach-reveals-unauthorize-719cf7cb",
     "title": "pCloud Password Manager Breach Reveals Unauthorized Device Access",
     "summary": "An unauthorized intrusion into pCloud Pass exposed user accounts, with attackers logging in from unknown devices despite two-factor authentication. The breach indicates a flaw in the authentication flow that allowed credential reuse or session hijacking. pCloud has notified affected users, reset compromised credentials, and is enhancing its security controls to prevent further unauthorized access.",
@@ -9581,26 +9600,6 @@ export const news: NewsBrief[] = [
       "article-12de5d36",
       "12de5d36",
       "autocad-ies-file-rce-vulnerability-77f3bb"
-    ]
-  },
-  {
-    "slug": "oracle-autonomous-ai-db-rce-via-onnx-runtime-b3f0d970",
-    "title": "Oracle Autonomous AI DB RCE via ONNX Runtime",
-    "summary": "Oracle Autonomous AI Database has a remote code execution flaw in its ONNX Runtime GPT GreedySearch component that can be triggered by authenticated users. CVE-2026-114822 scores 7.2 on CVSS, and the authentication bypass enables exploitation without valid credentials. Oracle recommends applying the latest security patch or upgrading to the patched version to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1139/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114822"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-autonomous-ai-db-rce-via-onnx-runtime",
-      "article-b3f0d970",
-      "b3f0d970",
-      "oracle-autonomous-ai-db-rce-via-onnx-runtime-77f3b8"
     ]
   }
 ];

@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/iphone-users-are-being-hacked/",
+    "sourceUrl": "https://cybersecuritynews.com/iphone-users-are-being-hacked/",
+    "title": "Telegram Alerts iPhone Users to Safari Vulnerability Exploit",
+    "headline": "Telegram Alerts iPhone Users to Safari Vulnerability Exploit",
+    "summary": "Telegram warns iPhone users on older iOS that a vulnerability lets attackers compromise devices by visiting a malicious website. The flaw exploits Safari’s rendering engine, enabling remote code execution without user interaction, observed in the wild. Apple released an iOS patch; Telegram urges users to update iOS or install the app update to mitigate.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-28T04:48:49.000Z",
+    "ingestedAt": "2026-11-28T06:43:09.565Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/iphone-users-are-being-hacked/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
     "title": "pCloud Password Manager Breach Reveals Unauthorized Device Access",
@@ -8306,22 +8322,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1140/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1139/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1139/",
-    "title": "Oracle Autonomous AI DB RCE via ONNX Runtime",
-    "headline": "Oracle Autonomous AI DB RCE via ONNX Runtime",
-    "summary": "Oracle Autonomous AI Database has a remote code execution flaw in its ONNX Runtime GPT GreedySearch component that can be triggered by authenticated users. CVE-2026-114822 scores 7.2 on CVSS, and the authentication bypass enables exploitation without valid credentials. Oracle recommends applying the latest security patch or upgrading to the patched version to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "ingestedAt": "2026-11-25T01:43:21.196Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1139/",
     "additionalSources": []
   }
 ]
