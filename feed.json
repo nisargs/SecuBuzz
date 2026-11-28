@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/critical-erlang-otp-flaw/",
+    "sourceUrl": "https://cybersecuritynews.com/critical-erlang-otp-flaw/",
+    "title": "Erlang/OTP Flaw Enables TLS Server Impersonation",
+    "headline": "Erlang/OTP Flaw Enables TLS Server Impersonation",
+    "summary": "A critical Erlang/OTP flaw (CVE-2026-124286) lets attackers impersonate TLS servers and intercept TLS-1.2 traffic. The flaw bypasses server-certificate validation during the handshake, enabling unauthenticated man-in-the-middle attacks with a CVSS 9.1 score. Erlang/OTP issued an urgent patch on November 24, 2026; update immediately or disable TLS-1.2 until the fix is applied.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-28T10:09:43.000Z",
+    "ingestedAt": "2026-11-28T11:43:10.102Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/critical-erlang-otp-flaw/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/kenya-ecitizen-data-breach/",
     "sourceUrl": "https://cybersecuritynews.com/kenya-ecitizen-data-breach/",
     "title": "Kenya eCitizen Data Leak Exposes 32 Million Identities",
@@ -8303,30 +8319,5 @@
     "isFutureSkew": false,
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1130/",
     "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-1127/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1127/",
-    "title": "Oracle Autonomous AI Database CVE-2026-114849 Allows Privilege Escalation and RCE",
-    "headline": "Oracle Autonomous AI Database CVE-2026-114849 Allows Privilege Escalation and RCE",
-    "summary": "Oracle Autonomous AI Database contains CVE-2026-114849, a missing authorization flaw in wwv_flow.show that lets remote attackers bypass authentication and gain elevated privileges. Exploitation also exposes directories and enables arbitrary code execution. Oracle released patch 23.4.1; administrators should apply it immediately to mitigate privilege escalation and remote code execution risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "ingestedAt": "2026-11-25T02:43:24.049Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1127/",
-    "additionalSources": [
-      {
-        "source": "ZDI Advisories",
-        "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1126/"
-      },
-      {
-        "source": "ZDI Advisories",
-        "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1124/"
-      }
-    ]
   }
 ]

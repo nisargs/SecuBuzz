@@ -11,6 +11,26 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "erlang-otp-flaw-enables-tls-server-impersonation-12abc48b",
+    "title": "Erlang/OTP Flaw Enables TLS Server Impersonation",
+    "summary": "A critical Erlang/OTP flaw (CVE-2026-124286) lets attackers impersonate TLS servers and intercept TLS-1.2 traffic. The flaw bypasses server-certificate validation during the handshake, enabling unauthenticated man-in-the-middle attacks with a CVSS 9.1 score. Erlang/OTP issued an urgent patch on November 24, 2026; update immediately or disable TLS-1.2 until the fix is applied.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-erlang-otp-flaw/",
+    "publishedAt": "2026-11-28T10:09:43.000Z",
+    "cves": [
+      "CVE-2026-124286"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "erlang-otp-flaw-enables-tls-server-impersonation",
+      "article-12abc48b",
+      "12abc48b",
+      "erlang-otp-flaw-enables-tls-server-impersonation-5c58e2"
+    ]
+  },
+  {
     "slug": "kenya-ecitizen-data-leak-exposes-32-million-identi-facef1aa",
     "title": "Kenya eCitizen Data Leak Exposes 32 Million Identities",
     "summary": "Hackers accessed Kenya’s eCitizen identity platform and began publishing personal records on the dark web. The breach exploited an undisclosed weakness allowing unauthorized extraction of 32,128,394 Kenyan citizen records, exposing sensitive personal information to identity theft. Kenyan authorities have not confirmed a fix; security teams should enforce strict access controls, monitor for credential misuse, and apply any forthcoming platform updates.",
@@ -9574,36 +9594,6 @@ export const news: NewsBrief[] = [
       "de2e12e7",
       "autodesk-autocad-heap-overflow-enables-remote-code-77f3b7",
       "autodesk-autocad-heap-overflow-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "oracle-autonomous-ai-database-cve-2026-114849-allo-c21c6b06",
-    "title": "Oracle Autonomous AI Database CVE-2026-114849 Allows Privilege Escalation and RCE",
-    "summary": "Oracle Autonomous AI Database contains CVE-2026-114849, a missing authorization flaw in wwv_flow.show that lets remote attackers bypass authentication and gain elevated privileges. Exploitation also exposes directories and enables arbitrary code execution. Oracle released patch 23.4.1; administrators should apply it immediately to mitigate privilege escalation and remote code execution risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1127/",
-    "publishedAt": "2026-11-24T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114849"
-    ],
-    "additionalSources": [
-      {
-        "source": "ZDI Advisories",
-        "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1126/"
-      },
-      {
-        "source": "ZDI Advisories",
-        "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1124/"
-      }
-    ],
-    "aliases": [
-      "oracle-autonomous-ai-database-cve-2026-114849-allo",
-      "article-c21c6b06",
-      "c21c6b06",
-      "oracle-autonomous-ai-database-cve-2026-114849-allo-77f3b4",
-      "oracle-autonomous-ai-database-cve-2026-114849-allows-privile"
     ]
   }
 ];
